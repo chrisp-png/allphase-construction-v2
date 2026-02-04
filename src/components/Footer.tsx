@@ -376,9 +376,9 @@ export default function Footer() {
                 Accessibility
               </Link>
               <span>|</span>
-              <Link to="/sitemap" className="hover:text-red-600 transition-colors">
+              <a href="/sitemap.html" className="hover:text-red-600 transition-colors">
                 Sitemap
-              </Link>
+              </a>
             </div>
           </div>
         </div>
