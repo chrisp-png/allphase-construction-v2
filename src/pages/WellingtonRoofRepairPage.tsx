@@ -3,34 +3,14 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, AlertTriangle, FileCheck, Shield, ChevronRight, Plus, Minus } from 'lucide-react';
 import Header from '../components/Header';
 import Contact from '../components/Contact';
+import SEO from '../components/SEO';
 
 export default function WellingtonRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    document.title = 'Wellington Roof Repair | Licensed Roofer in Wellington FL';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Expert roof repair in Wellington, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Expert roof repair in Wellington, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
-      document.head.appendChild(meta);
-    }
-
-    const metaRobots = document.querySelector('meta[name="robots"]');
-    if (metaRobots) {
-      metaRobots.setAttribute('content', 'index, follow');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'robots';
-      meta.content = 'index, follow';
-      document.head.appendChild(meta);
-    }}, []);
+  }, []);
 
   const faqItems = [
     {
@@ -73,7 +53,14 @@ export default function WellingtonRoofRepairPage() {
   };
 
   return (
-    <div className="bg-zinc-950 text-white min-h-screen">
+    <>
+      <SEO
+        title="Roof Repair Wellington, FL | Free Roof Inspection"
+        description="Need roof repair in Wellington? Get a free roof inspection. Tile, shingle, metal & flat roofing. Call (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair/wellington"
+        schema={faqSchema}
+      />
+      <div className="bg-zinc-950 text-white min-h-screen">
         <Header />
 
         {/* Hero Section */}
@@ -102,16 +89,16 @@ export default function WellingtonRoofRepairPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+17542275605"
+                  href="#contact"
                   className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-center text-lg shadow-lg shadow-red-600/20"
                 >
-                  Call (754) 227-5605
+                  Schedule a Free Roof Inspection
                 </a>
                 <a
-                  href="#contact"
+                  href="tel:+17542275605"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg"
                 >
-                  Request Inspection
+                  Call (754) 227-5605
                 </a>
               </div>
             </div>
@@ -740,12 +727,7 @@ export default function WellingtonRoofRepairPage() {
 
         {/* Contact Form */}
         <Contact />
-
-        {/* FAQ Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
       </div>
+    </>
   );
 }
