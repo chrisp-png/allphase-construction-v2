@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   Phone,
@@ -25,49 +24,44 @@ import {
   Zap,
   Eye
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function ShingleRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Shingle Roofing Broward & Palm Beach | All Phase';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Shingle roofing experts in South Florida. We install premium underlayments, upgrade ventilation, and document everything for maximum insurance discounts. Tamko Titan XT available. Free consultations.');
-    }
-
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Shingle Roofing Services",
-      "serviceType": "Shingle Roofing",
-      "description": "Shingle roofing installation and replacement services in South Florida. Premium underlayments and wind mitigation documentation for maximum insurance discounts. HVHZ compliant installations.",
-      "url": "https://allphaseconstructionfl.com/shingle-roofing",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Shingle Roofing Services",
+    "serviceType": "Shingle Roofing",
+    "description": "Shingle roofing installation and replacement services in South Florida. Premium underlayments and wind mitigation documentation for maximum insurance discounts. HVHZ compliant installations.",
+    "url": "https://allphaseconstructionfl.com/shingle-roofing",
+    "provider": {
+      "@id": "https://allphaseconstructionfl.com/#business"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Broward County, Florida"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Palm Beach County, Florida"
+      }
+    ]
+  };
+
   return (
-    <><div className="min-h-screen bg-zinc-950 text-white">
+    <>
+      <SEO
+        title="Shingle Roofing Broward & Palm Beach | Free Inspection | All Phase"
+        description="Asphalt shingle roofing in South Florida. Premium underlayments, Class 4 impact resistance. Free inspection. Call (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/shingle-roofing"
+        schema={serviceSchema}
+      />
+      <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
         <div className="max-w-6xl mx-auto">

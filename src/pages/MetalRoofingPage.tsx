@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   Phone,
@@ -24,49 +23,44 @@ import {
   Zap,
   Layers
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function MetalRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Metal Roofing Broward & Palm Beach | HVHZ Certified';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Metal roofing experts in South Florida. We install mechanically seamed standing seam with proper clip spacing — not snap-lock shortcuts. 24-gauge, HVHZ compliant. Free consultations.');
-    }
-
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Metal Roofing Services",
-      "serviceType": "Metal Roofing",
-      "description": "Metal roofing installation services in South Florida. Standing seam and mechanically seamed systems. HVHZ compliant installations with proper clip spacing for residential and commercial properties.",
-      "url": "https://allphaseconstructionfl.com/metal-roofing",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Metal Roofing Services",
+    "serviceType": "Metal Roofing",
+    "description": "Metal roofing installation services in South Florida. Standing seam and mechanically seamed systems. HVHZ compliant installations with proper clip spacing for residential and commercial properties.",
+    "url": "https://allphaseconstructionfl.com/metal-roofing",
+    "provider": {
+      "@id": "https://allphaseconstructionfl.com/#business"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Broward County, Florida"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Palm Beach County, Florida"
+      }
+    ]
+  };
+
   return (
-    <><div className="min-h-screen bg-zinc-950 text-white">
+    <>
+      <SEO
+        title="Metal Roofing Broward & Palm Beach | Free Inspection | All Phase"
+        description="Standing seam metal roofing in South Florida. 24-gauge, HVHZ compliant. Free consultation. Call (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/metal-roofing"
+        schema={serviceSchema}
+      />
+      <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
         <div className="max-w-6xl mx-auto">

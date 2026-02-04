@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   Phone,
@@ -27,46 +26,34 @@ import {
   DollarSign,
   Atom
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function FlatRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Flat Roofing South Florida | TPO & PVC | All Phase';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Flat roofing specialists serving Broward & Palm Beach Counties. TPO, PVC, modified bitumen for homes, condos & commercial. HVHZ compliant. My Safe Florida Condo grant experts. Free assessment.');
-    }
-
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Flat Roofing Services",
-      "serviceType": "Flat Roofing",
-      "description": "Flat roofing installation and repair services in South Florida. TPO, PVC, modified bitumen, and EPDM systems for residential and commercial properties. HVHZ compliant installations.",
-      "url": "https://allphaseconstructionfl.com/flat-roofing",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Flat Roofing Services",
+    "serviceType": "Flat Roofing",
+    "description": "Flat roofing installation and repair services in South Florida. TPO, PVC, modified bitumen, and EPDM systems for residential and commercial properties. HVHZ compliant installations.",
+    "url": "https://allphaseconstructionfl.com/flat-roofing",
+    "provider": {
+      "@id": "https://allphaseconstructionfl.com/#business"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Broward County, Florida"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Palm Beach County, Florida"
+      }
+    ]
+  };
 
   const faqs = [
     {
@@ -124,7 +111,14 @@ export default function FlatRoofingPage() {
   ];
 
   return (
-    <><div className="min-h-screen bg-zinc-950 text-white">
+    <>
+      <SEO
+        title="Flat Roofing Broward & Palm Beach | TPO & PVC | All Phase"
+        description="TPO & PVC flat roofing in South Florida. Commercial & residential. HVHZ compliant. Free assessment. Call (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/flat-roofing"
+        schema={serviceSchema}
+      />
+      <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
         <div className="max-w-6xl mx-auto">

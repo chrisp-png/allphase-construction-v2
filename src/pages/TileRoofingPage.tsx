@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   Phone,
@@ -23,64 +22,64 @@ import {
   Clock,
   BadgeCheck
 } from 'lucide-react';
-import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
+import SEO from '../components/SEO';
+import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
 
 export default function TileRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Tile Roofing Broward & Palm Beach | HVHZ Certified';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Tile roofing experts in South Florida. We install proper flashings and physically verify foam adhesive application. Dual-licensed for stucco work. Free inspections. HVHZ compliant.');
-    }
-
-    // Service Schema
-    const serviceSchema = {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Tile Roofing Services",
-      "serviceType": "Tile Roofing",
-      "description": "Tile roofing installation and repair services in South Florida. Concrete and clay tile systems with proper flashing and adhesive application. HVHZ compliant installations for residential and commercial properties.",
-      "url": "https://allphaseconstructionfl.com/tile-roofing",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    };
-
-    // FAQ Schema for rich snippets
-    const faqSchema = generateFAQSchema([
-      { question: "How long does a tile roof last in Florida?", answer: "Tile itself can last 50-100 years (clay) or 30-50 years (concrete). However, the underlayment typically needs replacement every 20-25 years — and roofs installed without proper flashings often fail much earlier. With proper flashings, correct foam application, and quality installation, your tile roof should last 50+ years before needing major work." },
-      { question: "Why do so many tile roofs in Florida leak within 10-15 years?", answer: "The vast majority of tile roofs in Florida are installed without adequate flashings. Roofers rely on underlayment alone to keep water out, but that was never its intended purpose. Without flashings directing water away from vulnerable areas, the underlayment breaks down prematurely." },
-      { question: "What is foam adhesive and why does it matter?", answer: "Foam adhesive (polyurethane foam) is used to attach tiles to the roof. The size of each foam patty and the application pattern directly determine your roof's wind rating. The same tile can be rated for 100 mph or 225 mph depending on how much foam is used." },
-      { question: "What's the difference between concrete and clay tile?", answer: "Clay tiles are more expensive but last longer (50-100 years vs. 30-50), retain color better, and absorb less water. Concrete tiles are more affordable and come in more profile options. Both require the same attention to flashings, foam adhesive, and installation quality." },
-      { question: "How much does a tile roof cost in South Florida?", answer: "Tile roofs typically range from $15,000 to $50,000+ depending on size, tile type, complexity, and detail work required. Roofs with proper flashings and documented foam application cost more initially but last significantly longer and perform better in storms." }
-    ]);
-
-    // Breadcrumb Schema
-    const breadcrumbSchema = generateBreadcrumbSchema([
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' }
-    ]);
-
-    // Inject all schemas
-    const cleanup = injectMultipleSchemas([serviceSchema, faqSchema, breadcrumbSchema]);
-
-    return cleanup;
   }, []);
 
+  // Service Schema
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Tile Roofing Services",
+    "serviceType": "Tile Roofing",
+    "description": "Tile roofing installation and repair services in South Florida. Concrete and clay tile systems with proper flashing and adhesive application. HVHZ compliant installations for residential and commercial properties.",
+    "url": "https://allphaseconstructionfl.com/tile-roofing",
+    "provider": {
+      "@id": "https://allphaseconstructionfl.com/#business"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Broward County, Florida"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Palm Beach County, Florida"
+      }
+    ]
+  };
+
+  // FAQ Schema for rich snippets
+  const faqSchema = generateFAQSchema([
+    { question: "How long does a tile roof last in Florida?", answer: "Tile itself can last 50-100 years (clay) or 30-50 years (concrete). However, the underlayment typically needs replacement every 20-25 years — and roofs installed without proper flashings often fail much earlier. With proper flashings, correct foam application, and quality installation, your tile roof should last 50+ years before needing major work." },
+    { question: "Why do so many tile roofs in Florida leak within 10-15 years?", answer: "The vast majority of tile roofs in Florida are installed without adequate flashings. Roofers rely on underlayment alone to keep water out, but that was never its intended purpose. Without flashings directing water away from vulnerable areas, the underlayment breaks down prematurely." },
+    { question: "What is foam adhesive and why does it matter?", answer: "Foam adhesive (polyurethane foam) is used to attach tiles to the roof. The size of each foam patty and the application pattern directly determine your roof's wind rating. The same tile can be rated for 100 mph or 225 mph depending on how much foam is used." },
+    { question: "What's the difference between concrete and clay tile?", answer: "Clay tiles are more expensive but last longer (50-100 years vs. 30-50), retain color better, and absorb less water. Concrete tiles are more affordable and come in more profile options. Both require the same attention to flashings, foam adhesive, and installation quality." },
+    { question: "How much does a tile roof cost in South Florida?", answer: "Tile roofs typically range from $15,000 to $50,000+ depending on size, tile type, complexity, and detail work required. Roofs with proper flashings and documented foam application cost more initially but last significantly longer and perform better in storms." }
+  ]);
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+    { name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' }
+  ]);
+
+  // Combined schemas
+  const combinedSchema = [serviceSchema, faqSchema, breadcrumbSchema];
+
   return (
-    <><div className="min-h-screen bg-zinc-950 text-white">
+    <>
+      <SEO
+        title="Tile Roofing Broward & Palm Beach | Free Inspection | All Phase"
+        description="Tile roof installation & repair in South Florida. Clay & concrete tile with proper flashings. Free inspection. Call (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/tile-roofing"
+        schema={combinedSchema}
+      />
+      <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
         <div className="max-w-6xl mx-auto">

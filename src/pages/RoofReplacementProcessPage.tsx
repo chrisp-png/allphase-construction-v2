@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Home, ChevronRight, Shield, Clock, FileCheck, ChevronDown, X, AlertCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 
 import step01Image from '../assets/step-01-inspection-optimized.jpg';
 import step02Image from '../assets/step-02-planning-optimized.jpg';
@@ -21,17 +21,6 @@ export default function RoofReplacementProcessPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = '10-Step Roof Replacement Process | All Phase Construction';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Our proven 10-step roof replacement process for South Florida homes. From inspection to warranty, see what to expect. Licensed, insured teams.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Our proven 10-step roof replacement process for South Florida homes. From inspection to warranty, see what to expect. Licensed, insured teams.';
-      document.head.appendChild(meta);
-    }
   }, []);
 
   const processStepsGrid = [
@@ -123,7 +112,13 @@ export default function RoofReplacementProcessPage() {
   ];
 
   return (
-    <><div className="min-h-screen bg-black text-white">
+    <>
+      <SEO
+        title="Roof Replacement Process South Florida | Free Inspection | All Phase"
+        description="10-step roof replacement process. From inspection to warranty. Licensed, HVHZ-certified teams. Free assessment. Call (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/residential-roofing/roof-replacement-process"
+      />
+      <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-32 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black" />
