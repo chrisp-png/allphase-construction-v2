@@ -77,7 +77,7 @@ export default function RoofRepairPage() {
       { question: "What's the difference between roof repair and roof restoration?", answer: "Repair fixes one specific problem — a leak, a missing shingle, a damaged vent. Restoration addresses an entire section or system comprehensively — replacing all vulnerable components so you're not calling back in six months with another issue." },
       { question: "What is the 5-year certification letter?", answer: "Florida law states that if a licensed roofing contractor certifies your roof has at least 5 years of useful life remaining, your insurance company cannot drop your coverage based on the roof's condition. We provide this letter when a roof qualifies after restoration." },
       { question: "Can a roof repair help me keep my insurance?", answer: "A simple spot repair usually won't qualify for the 5-year certification. But a comprehensive restoration that addresses all vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage." },
-      { question: "How do I know if my roof needs repair or replacement?", answer: "Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer." },
+      { question: "How do I know if my roof needs repair or replacement?", answer: "Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer. Learn about our 10-step roof replacement process." },
       { question: "Will you give me an honest opinion if I need a new roof instead of repair?", answer: "Absolutely. We don't make money selling you repairs that won't last. If replacement makes more sense, we'll tell you — and explain why." },
       { question: "How long does a roof repair take?", answer: "Most repairs are completed in one day. Larger restoration projects may take 2-3 days depending on scope. We'll give you a clear timeline before we start." }
     ]);
@@ -113,7 +113,15 @@ export default function RoofRepairPage() {
     },
     {
       q: "How do I know if my roof needs repair or replacement?",
-      a: "Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer."
+      a: (
+        <>
+          Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer.{' '}
+          <Link to="/residential-roofing/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
+            Learn about our 10-step roof replacement process
+          </Link>
+          .
+        </>
+      )
     },
     {
       q: "Do you help with insurance claims for storm damage?",

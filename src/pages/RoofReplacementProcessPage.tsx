@@ -114,8 +114,8 @@ export default function RoofReplacementProcessPage() {
   return (
     <>
       <SEO
-        title="Roof Replacement Process South Florida | Free Inspection | All Phase"
-        description="10-step roof replacement process. From inspection to warranty. Licensed, HVHZ-certified teams. Free assessment. Call (754) 227-5605."
+        title="10-Step Roof Replacement Process | All Phase Construction USA"
+        description="See our 10-step roof replacement process in South Florida. Know exactly what happens from inspection to final cleanup. Call (754) 227-5605."
         canonical="https://allphaseconstructionfl.com/residential-roofing/roof-replacement-process"
       />
       <div className="min-h-screen bg-black text-white">
@@ -139,7 +139,7 @@ export default function RoofReplacementProcessPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1]">
-            Our Roof Replacement Process
+            Our 10-Step Roof Replacement Process
           </h1>
 
           <p className="text-xl md:text-2xl text-zinc-300 mb-12 leading-relaxed max-w-4xl">

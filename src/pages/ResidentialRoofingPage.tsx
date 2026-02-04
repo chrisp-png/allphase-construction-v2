@@ -174,12 +174,20 @@ export default function ResidentialRoofingPage() {
             </li>
           </ul>
 
-          <p className="text-lg text-zinc-300 leading-relaxed">
+          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
             In many cases, a{' '}
             <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
               professional roof inspection
             </Link>
             {' '}is required to confirm whether replacement is necessary versus repair, based on documented conditions and system performance.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed">
+            Want to know exactly what happens during a roof replacement?{' '}
+            <Link to="/residential-roofing/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
+              See our 10-step roof replacement process
+            </Link>
+            {' '}from initial inspection through final walkthrough.
           </p>
         </div>
       </section>
