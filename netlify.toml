@@ -1,132 +1,115 @@
 [build]
 publish = "dist"
-command = "npm run build"
+command = "npx vite build"
 
-# Enable prerendering for crawler bots
 [build.environment]
-  NODE_VERSION = "20"
+NODE_VERSION = "20"
 
-# NOTE: We generate sitemap.xml via our custom script (scripts/generate-sitemap.mjs)
-# DO NOT add @netlify/plugin-sitemap - it will overwrite our custom sitemap!
-# Our sitemap is built from sheetSitemap.ts and includes all 96+ routes.
-
-[[plugins]]
-  package = "netlify-plugin-cache"
-
-# Post-processing optimizations
 [build.processing]
-  skip_processing = false
+skip_processing = false
 
 [build.processing.css]
-  bundle = true
-  minify = true
+bundle = true
+minify = true
 
 [build.processing.js]
-  bundle = true
-  minify = true
+bundle = true
+minify = true
 
 [build.processing.html]
-  pretty_urls = true
+pretty_urls = true
 
 [build.processing.images]
-  compress = true
+compress = true
 
-# Lighthouse plugin for automated performance testing
 [[plugins]]
-  package = "@netlify/plugin-lighthouse"
+package = "netlify-plugin-cache"
 
-  [plugins.inputs]
-    # Test multiple important pages
-    [[plugins.inputs.audits]]
-      path = "/"
-      output_path = "reports/lighthouse-home.html"
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
 
-    [[plugins.inputs.audits]]
-      path = "/boca-raton"
-      output_path = "reports/lighthouse-boca-raton.html"
+[plugins.inputs]
+[[plugins.inputs.audits]]
+path = "/"
+output_path = "reports/lighthouse-home.html"
 
-    [[plugins.inputs.audits]]
-      path = "/fort-lauderdale"
-      output_path = "reports/lighthouse-fort-lauderdale.html"
+[[plugins.inputs.audits]]
+path = "/boca-raton"
+output_path = "reports/lighthouse-boca-raton.html"
 
-    [[plugins.inputs.audits]]
-      path = "/roof-repair"
-      output_path = "reports/lighthouse-roof-repair.html"
+[[plugins.inputs.audits]]
+path = "/fort-lauderdale"
+output_path = "reports/lighthouse-fort-lauderdale.html"
 
-    # Test both mobile and desktop
-    [[plugins.inputs.audits]]
-      path = "/"
-      output_path = "reports/lighthouse-home-desktop.html"
-      preset = "desktop"
+[[plugins.inputs.audits]]
+path = "/roof-repair"
+output_path = "reports/lighthouse-roof-repair.html"
 
-    # Thresholds - builds will fail if scores drop below these
-    [plugins.inputs.thresholds]
-      performance = 0.7
-      accessibility = 0.9
-      best-practices = 0.8
-      seo = 0.9
+[[plugins.inputs.audits]]
+path = "/"
+output_path = "reports/lighthouse-home-desktop.html"
+preset = "desktop"
 
-# Cache static assets aggressively
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+[plugins.inputs.thresholds]
+performance = 0.7
+accessibility = 0.9
+best-practices = 0.8
+seo = 0.9
 
 [[headers]]
-  for = "*.jpg"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+for = "/assets/*"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "*.png"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+for = "*.jpg"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "*.webp"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+for = "*.png"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+for = "*.webp"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+for = "*.css"
 
-# Edge function disabled - was causing latency on every request
-# [[edge_functions]]
-# function = "normalize-case"
-# path = "/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
 
-# Force HTTPS and non-WWW canonical domain
-# Order matters: Most specific first
+[[headers]]
+for = "*.js"
 
-# HTTPS www → HTTPS non-www (CRITICAL - was missing!)
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
 [[redirects]]
 from = "https://www.allphaseconstructionfl.com/*"
 to = "https://allphaseconstructionfl.com/:splat"
 status = 301
 force = true
 
-# HTTP www → HTTPS non-www
 [[redirects]]
 from = "http://www.allphaseconstructionfl.com/*"
 to = "https://allphaseconstructionfl.com/:splat"
 status = 301
 force = true
 
-# HTTP non-www → HTTPS non-www
 [[redirects]]
 from = "http://allphaseconstructionfl.com/*"
 to = "https://allphaseconstructionfl.com/:splat"
 status = 301
 force = true
 
-# Old service pages that no longer exist
 [[redirects]]
 from = "/spray-foam-roofing"
 to = "/single-ply-roofing"
@@ -177,7 +160,6 @@ from = "/services/"
 to = "/"
 status = 301
 
-# Old blog posts
 [[redirects]]
 from = "/blog/how-much-does-a-screen-enclosure-cost/"
 to = "/blog"
@@ -188,13 +170,11 @@ from = "/blog/our-roofing-company-is-proud-to-be-a-family-owned-business/"
 to = "/blog"
 status = 301
 
-# Old location structure redirects
 [[redirects]]
 from = "/locations/deerfield-beach/service-area-jupiter"
 to = "/jupiter"
 status = 301
 
-# Old roofing contractor URL structure redirects
 [[redirects]]
 from = "/roofing-contractor-cooper-city-fl"
 to = "/locations/deerfield-beach/service-area/cooper-city"
@@ -225,7 +205,6 @@ from = "/roofing-contractor-margate-fl"
 to = "/locations/deerfield-beach/service-area/margate"
 status = 301
 
-# Financing page redirect
 [[redirects]]
 from = "/financing"
 to = "/easy-payments"
@@ -236,7 +215,6 @@ from = "/financing/"
 to = "/easy-payments"
 status = 301
 
-# Publications page - permanently removed
 [[redirects]]
 from = "/publications"
 to = "/blog"
@@ -247,7 +225,6 @@ from = "/publications/"
 to = "/blog"
 status = 410
 
-# Old blog post redirects to blog index
 [[redirects]]
 from = "/blog/is-tar-still-used-in-2024-to-seal-a-roof/"
 to = "/blog"
@@ -283,7 +260,6 @@ from = "/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive/"
 to = "/blog"
 status = 301
 
-# Old blog author pages redirects
 [[redirects]]
 from = "/blog/author/douglas-silva/"
 to = "/blog"
@@ -294,7 +270,6 @@ from = "/blog/author/srl/"
 to = "/blog"
 status = 301
 
-# Testimonials page redirect
 [[redirects]]
 from = "/testimonials"
 to = "/reviews"
@@ -305,7 +280,6 @@ from = "/testimonials/"
 to = "/reviews"
 status = 301
 
-# Old pages that no longer exist (Google Search Console validation)
 [[redirects]]
 from = "/media"
 to = "/projects"
@@ -326,7 +300,6 @@ from = "/government-contracting/"
 to = "/commercial-roofing"
 status = 301
 
-# Fix 5XX errors - Missing pages (GSC reported 1/31/26)
 [[redirects]]
 from = "/faq"
 to = "/contact"
@@ -347,7 +320,6 @@ from = "/media-gallery/"
 to = "/projects"
 status = 301
 
-# Old location URLs → New location structure
 [[redirects]]
 from = "/north-palm-beach"
 to = "/locations/deerfield-beach/service-area/north-palm-beach"
@@ -358,8 +330,6 @@ from = "/north-palm-beach/"
 to = "/locations/deerfield-beach/service-area/north-palm-beach"
 status = 301
 
-# Flat city URLs → New nested structure (Fix 502 errors)
-# Palm Beach County
 [[redirects]]
 from = "/boca-raton"
 to = "/locations/deerfield-beach/service-area/boca-raton"
@@ -460,7 +430,6 @@ from = "/sea-ranch-lakes/"
 to = "/locations/deerfield-beach/service-area/sea-ranch-lakes"
 status = 301
 
-# Broward County
 [[redirects]]
 from = "/fort-lauderdale"
 to = "/locations/deerfield-beach/service-area/fort-lauderdale"
@@ -561,7 +530,6 @@ from = "/weston/"
 to = "/locations/deerfield-beach/service-area/weston"
 status = 301
 
-# /about → /about-us redirect
 [[redirects]]
 from = "/about"
 to = "/about-us"
@@ -572,7 +540,6 @@ from = "/about/"
 to = "/about-us"
 status = 301
 
-# Malformed URLs
 [[redirects]]
 from = "/shingle-ply-roofing"
 to = "/single-ply-roofing"
@@ -583,7 +550,6 @@ from = "/shingle-ply-roofing/"
 to = "/single-ply-roofing"
 status = 301
 
-# Calculator page redirects - flat city URLs with calculator suffixes
 [[redirects]]
 from = "/boca-raton/roof-cost-calculator"
 to = "/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
@@ -839,7 +805,6 @@ from = "/parkland/calculator"
 to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
 status = 301
 
-# Top roofer page redirects - flat city URLs with top-roofer variations
 [[redirects]]
 from = "/boca-raton/top-5-roofer"
 to = "/locations/deerfield-beach/service-area/boca-raton/top-5-roofer"
@@ -900,7 +865,6 @@ from = "/west-palm-beach/top-roofer"
 to = "/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer"
 status = 301
 
-# Old roof repair URL patterns (without /roofing-services prefix)
 [[redirects]]
 from = "/roof-repair/boca-raton"
 to = "/roofing-services/roof-repair/boca-raton"
@@ -986,10 +950,6 @@ from = "/roof-repair/palm-beach-county"
 to = "/roofing-services/roof-repair/palm-beach-county"
 status = 301
 
-# Additional missing city flat URL redirects
-# Cities that had pages but were missing flat URL redirects
-
-# Palm Beach County - Additional Cities
 [[redirects]]
 from = "/greenacres"
 to = "/locations/deerfield-beach/service-area/greenacres"
@@ -1110,7 +1070,6 @@ from = "/westlake/"
 to = "/locations/deerfield-beach/service-area/westlake"
 status = 301
 
-# Broward County - Additional Cities
 [[redirects]]
 from = "/cooper-city"
 to = "/locations/deerfield-beach/service-area/cooper-city"
@@ -1301,7 +1260,6 @@ from = "/deerfield-beach/"
 to = "/locations/deerfield-beach"
 status = 301
 
-# Additional roofing-contractor-{city}-fl patterns (beyond those already added)
 [[redirects]]
 from = "/roofing-contractor-boca-raton-fl"
 to = "/locations/deerfield-beach/service-area/boca-raton"
@@ -1522,7 +1480,6 @@ from = "/roofing-contractor-lauderdale-ranches-fl"
 to = "/locations/deerfield-beach/service-area/lauderdale-ranches"
 status = 301
 
-# Trailing slash redirects for key service pages
 [[redirects]]
 from = "/residential-roofing/"
 to = "/residential-roofing"
@@ -1613,7 +1570,6 @@ from = "/accessibility/"
 to = "/accessibility"
 status = 301
 
-# Missing cities not yet covered
 [[redirects]]
 from = "/south-palm-beach"
 to = "/locations/deerfield-beach/service-area/south-palm-beach"
@@ -1754,7 +1710,6 @@ from = "/hillsboro-pines/"
 to = "/locations/deerfield-beach/service-area/hillsboro-pines"
 status = 301
 
-# Old service-areas URL pattern redirects to new locations structure
 [[redirects]]
 from = "/service-areas/:city"
 to = "/locations/deerfield-beach/service-area/:city"
@@ -1775,7 +1730,6 @@ from = "/service-areas/:city/roof-cost-estimate/"
 to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
 status = 301
 
-# Trailing slash redirects for location pages
 [[redirects]]
 from = "/locations/deerfield-beach/"
 to = "/locations/deerfield-beach"
@@ -1801,7 +1755,6 @@ from = "/locations/deerfield-beach/service-area/:city/top-5-roofer/"
 to = "/locations/deerfield-beach/service-area/:city/top-5-roofer"
 status = 301
 
-# Location hub variants (only deerfield-beach is valid hub)
 [[redirects]]
 from = "/locations/pompano-beach"
 to = "/locations/deerfield-beach/service-area/pompano-beach"
@@ -1822,7 +1775,6 @@ from = "/locations/lighthouse-point/"
 to = "/locations/deerfield-beach/service-area/lighthouse-point"
 status = 301
 
-# Additional roofing contractor patterns for new cities
 [[redirects]]
 from = "/roofing-contractor-manalapan-fl"
 to = "/locations/deerfield-beach/service-area/manalapan"
@@ -1868,7 +1820,6 @@ from = "/roofing-contractor-palm-springs-fl"
 to = "/locations/deerfield-beach/service-area/palm-springs"
 status = 301
 
-# Additional roof repair patterns
 [[redirects]]
 from = "/roof-repair/lighthouse-point"
 to = "/roofing-services/roof-repair/lighthouse-point"
@@ -1904,7 +1855,6 @@ from = "/roof-repair/margate"
 to = "/roofing-services/roof-repair/margate"
 status = 301
 
-# Additional inspection redirects (consolidate to main page)
 [[redirects]]
 from = "/flat-roof-inspection-broward-county"
 to = "/roof-inspection"
@@ -1915,16 +1865,11 @@ from = "/flat-roof-inspection-palm-beach-county"
 to = "/roof-inspection"
 status = 301
 
-# Blog post catch-all - redirect non-existent posts to blog index
-# This handles all the blog posts that don't exist yet
 [[redirects]]
 from = "/blog/*"
 to = "/blog"
 status = 301
 
-# SPA catch-all - MUST BE LAST
-# CRITICAL: No force=true so static files (prerendered HTML) take precedence
-# This allows prerendering plugins to work correctly
 [[redirects]]
 from = "/*"
 to = "/index.html"
