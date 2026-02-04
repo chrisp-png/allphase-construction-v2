@@ -1,11 +1,22 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { createClient } from '@supabase/supabase-js';
+import dotenv from 'dotenv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Load environment variables
+dotenv.config({ path: path.join(__dirname, '../.env') });
+
 const CANONICAL_DOMAIN = 'https://allphaseconstructionfl.com';
+
+// Initialize Supabase client
+const supabase = createClient(
+  process.env.VITE_SUPABASE_URL,
+  process.env.VITE_SUPABASE_ANON_KEY
+);
 
 // Read and parse the sheetSitemap.ts file
 const sitemapPath = path.join(__dirname, '../src/data/sheetSitemap.ts');
@@ -40,6 +51,32 @@ for (const match of entryMatches) {
 }
 
 console.log(`Parsed ${entries.length} indexable entries from sheetSitemap.ts\n`);
+
+// Fetch blog posts from Supabase
+console.log('Fetching blog posts from Supabase...');
+const { data: blogPosts, error } = await supabase
+  .from('blog_posts')
+  .select('slug, published_date')
+  .eq('published', true)
+  .order('published_date', { ascending: false });
+
+if (error) {
+  console.error('❌ Error fetching blog posts:', error.message);
+} else {
+  console.log(`✅ Fetched ${blogPosts.length} published blog posts\n`);
+
+  // Add blog posts to entries
+  for (const post of blogPosts) {
+    entries.push({
+      section: 'Blog Articles',
+      label: post.slug,
+      path: `/blog/${post.slug}`,
+      indexable: true,
+      priority: 0.7,
+      changefreq: 'monthly'
+    });
+  }
+}
 
 // Generate XML
 const urlEntries = entries.map(entry => {
