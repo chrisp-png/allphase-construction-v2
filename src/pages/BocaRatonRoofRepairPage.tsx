@@ -3,34 +3,14 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, AlertTriangle, ChevronRight, Plus, Minus } from 'lucide-react';
 import Header from '../components/Header';
 import Contact from '../components/Contact';
+import SEO from '../components/SEO';
 
 export default function BocaRatonRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    document.title = 'Boca Raton Roof Repair | Licensed Roofer in Boca Raton FL';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Expert roof repair in Boca Raton, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Expert roof repair in Boca Raton, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
-      document.head.appendChild(meta);
-    }
-
-    const metaRobots = document.querySelector('meta[name="robots"]');
-    if (metaRobots) {
-      metaRobots.setAttribute('content', 'index, follow');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'robots';
-      meta.content = 'index, follow';
-      document.head.appendChild(meta);
-    }}, []);
+  }, []);
 
   const faqItems = [
     {
@@ -73,7 +53,14 @@ export default function BocaRatonRoofRepairPage() {
   };
 
   return (
-    <div className="bg-zinc-950 text-white min-h-screen">
+    <>
+      <SEO
+        title="Roof Repair in Boca Raton, FL"
+        description="Expert roof repair in Boca Raton, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605."
+        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair/boca-raton"
+        schema={faqSchema}
+      />
+      <div className="bg-zinc-950 text-white min-h-screen">
         <Header />
 
         {/* Hero Section */}
@@ -526,12 +513,7 @@ export default function BocaRatonRoofRepairPage() {
 
         {/* Contact Form */}
         <Contact />
-
-        {/* FAQ Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
       </div>
+    </>
   );
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   Phone,
@@ -21,162 +20,13 @@ import {
   DollarSign,
   Award,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function RoofRepairHubPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Broward & Palm Beach | All Phase';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Broward and Palm Beach County. Inspection-based evaluations, slope restoration, ventilation upgrades, and Florida Building Code-compliant repairs. Diagnostic inspections available.');
-    }
-
-    const serviceSchema = document.createElement('script');
-    serviceSchema.type = 'application/ld+json';
-    serviceSchema.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Roof Repair Services",
-      "serviceType": "Roof Repair",
-      "description": "Professional roof repair and restoration services in Broward and Palm Beach County, Florida. Diagnostic inspections, slope-based restoration, and Florida Building Code-compliant repairs.",
-      "url": "https://allphaseconstructionfl.com/roofing-services/roof-repair",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    });
-    document.head.appendChild(serviceSchema);
-
-    const faqSchema = document.createElement('script');
-    faqSchema.type = 'application/ld+json';
-    faqSchema.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is it better to repair a roof or replace it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashings—addressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute § 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do roof repairs have to meet Florida Building Code requirements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Roof repairs should be completed in a way that aligns with applicable Florida Building Code requirements for the scope of work and the areas being repaired. Code considerations can vary based on roof type, the extent of the repair, and what components are being disturbed or replaced. A licensed roofing contractor can identify the relevant code requirements during the inspection and repair planning process."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can ventilation upgrades be included as part of a roof repair plan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. In South Florida, excess attic heat and moisture imbalance can accelerate roof aging and contribute to premature material fatigue. When ventilation is a contributing factor, a repair plan may include ventilation improvements such as balanced intake and exhaust adjustments, installed where appropriate and in a code-compliant manner."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can roof repairs help with Florida's 5-year roof certification for insurance renewal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Repairs may address specific deficiencies so the roof can be evaluated based on condition rather than age. Florida Statute § 627.7011(5)(a) addresses renewals related to roof age when a qualified professional provides a roof condition certification indicating remaining useful life. Whether a roof qualifies depends on inspection findings and documentation, and outcomes can vary by insurer."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is it better to repair one spot or restore an entire roof section?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Often, restoring an entire affected section or slope is more reliable than a single spot repair because it addresses adjacent penetrations, flashings, and any nearby underlayment deterioration that may be part of the same failure pattern. The right scope depends on what a diagnostic inspection finds and how the roof system is performing around the problem area."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who are the best roofers in Broward County?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Licensed roofing contractors in Broward County must hold CCC (roofing contractor) or CGC (general contractor) licenses and maintain familiarity with HVHZ requirements. All Phase Construction USA (CCC-1331464, CGC-1526236) serves Coral Springs, Fort Lauderdale, Deerfield Beach, Pompano Beach, Plantation, and surrounding Broward communities with inspection-based roof repair and replacement services."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where can I find roofing contractors in Deerfield Beach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Deerfield Beach roofing contractors should be licensed, familiar with HVHZ fastening requirements, and able to provide diagnostic roof inspections before recommending repair or replacement. All Phase Construction USA is based in Deerfield Beach and serves residential and commercial properties throughout Broward and Palm Beach Counties with tile, metal, flat, and shingle roofing systems."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes a roof hurricane-proof in South Florida?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hurricane-resistant roofs in Broward and southern Palm Beach County must meet HVHZ provisions for wind uplift, including enhanced fastening schedules, approved materials, and proper installation methods. Tile roofs require foam adhesive and mechanical fasteners. Metal roofs need tested clip systems. Shingles require high-wind-rated products with specific nailing patterns. Repairs must maintain or restore these performance standards to preserve wind resistance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I find reliable roofing services in Palm Beach County?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Reliable roofing contractors in Palm Beach County should hold active state licenses (CCC or CGC), provide diagnostic inspections before proposals, and be familiar with both standard Florida Building Code and HVHZ requirements for properties south of the Martin County line. Verify license status through MyFloridaLicense.com and request references from similar projects in Boca Raton, Boynton Beach, Delray Beach, West Palm Beach, or Wellington."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can roof repairs help with insurance renewal in Florida?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Repairs may address deficiencies that prevent a roof from qualifying for condition-based certification under Florida Statute § 627.7011(5)(a). Whether repairs are sufficient depends on the extent of work and inspection outcomes. Results vary by insurer."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can a roof repair help me pass insurance renewal in Florida?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — in many cases, a properly completed roof repair can restore performance and help a roof qualify for a Florida 5-year roof certification letter when eligible. If the issue is isolated (like a localized leak, flashing failure, or a small damaged section), repairing it correctly can be enough to confirm the roof is serviceable without requiring full replacement."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I know if my roof can be repaired instead of replaced?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A roof can often be repaired if the problem is limited to one area and the rest of the roof system is still performing. Repairs are usually the better option when the leak is coming from a specific detail—like a pipe boot, valley, wall flashing, or a small section of damaged materials. Replacement is typically needed when there are widespread failures, recurring leaks in multiple areas, or the roof system is near the end of its service life."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will a roof repair last, or is it just a temporary patch?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A professional roof repair should not be a \"band-aid.\" If the repair is properly designed, installed, and tied into the existing system, it can restore watertight performance and last for years. The key is identifying the true source of the leak and repairing the system correctly—especially in South Florida conditions where wind-driven rain and HVHZ requirements demand higher standards."
-          }
-        }
-      ]
-    });
-    document.head.appendChild(faqSchema);
-
-    return () => {
-      document.head.removeChild(serviceSchema);
-      document.head.removeChild(faqSchema);
-    };
   }, []);
 
   const toggleFaq = (index: number) => {
@@ -206,8 +56,51 @@ export default function RoofRepairHubPage() {
     }
   ];
 
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Roof Repair Services",
+      "serviceType": "Roof Repair",
+      "description": "Professional roof repair and restoration services in Broward and Palm Beach County, Florida. Diagnostic inspections, slope-based restoration, and Florida Building Code-compliant repairs.",
+      "url": "https://allphaseconstructionfl.com/roofing-services/roof-repair",
+      "provider": {
+        "@id": "https://allphaseconstructionfl.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Broward County, Florida"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Palm Beach County, Florida"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    }
+  ];
+
   return (
-    <><div className="min-h-screen bg-zinc-950 text-white">
+    <>
+      <SEO
+        title="Roof Repair Broward & Palm Beach County, FL"
+        description="Professional roof repair services in Broward and Palm Beach County. Inspection-based evaluations, slope restoration, ventilation upgrades, and Florida Building Code-compliant repairs. Diagnostic inspections available."
+        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair"
+        schema={schemas}
+      />
+      <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
         <div className="max-w-6xl mx-auto">
