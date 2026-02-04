@@ -1760,30 +1760,6 @@ from = "/service-areas/:city/roof-cost-estimate/"
 to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
 status = 301
 
-[[redirects]]
-from = "/locations/deerfield-beach/"
-to = "/locations/deerfield-beach"
-status = 301
-
-[[redirects]]
-from = "/locations/deerfield-beach/service-area/"
-to = "/locations/deerfield-beach/service-area"
-status = 301
-
-[[redirects]]
-from = "/locations/deerfield-beach/service-area/:city/"
-to = "/locations/deerfield-beach/service-area/:city"
-status = 301
-
-[[redirects]]
-from = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator/"
-to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
-status = 301
-
-[[redirects]]
-from = "/locations/deerfield-beach/service-area/:city/top-5-roofer/"
-to = "/locations/deerfield-beach/service-area/:city/top-5-roofer"
-status = 301
 
 [[redirects]]
 from = "/locations/pompano-beach"
