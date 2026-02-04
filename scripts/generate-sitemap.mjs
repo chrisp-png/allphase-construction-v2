@@ -52,9 +52,21 @@ for (const match of entryMatches) {
 
 console.log(`Parsed ${entries.length} indexable entries from sheetSitemap.ts\n`);
 
+// Read blog posts from blog-posts.json
+const blogPostsJsonPath = path.join(__dirname, '../src/data/blog-posts.json');
+let jsonBlogPosts = [];
+try {
+  const jsonContent = fs.readFileSync(blogPostsJsonPath, 'utf8');
+  const parsedJson = JSON.parse(jsonContent);
+  jsonBlogPosts = parsedJson.filter(post => post.published === true);
+  console.log(`✅ Found ${jsonBlogPosts.length} published posts in blog-posts.json`);
+} catch (err) {
+  console.log('⚠️  Could not read blog-posts.json:', err.message);
+}
+
 // Fetch blog posts from Supabase
 console.log('Fetching blog posts from Supabase...');
-const { data: blogPosts, error } = await supabase
+const { data: dbBlogPosts, error } = await supabase
   .from('blog_posts')
   .select('slug, published_date')
   .eq('published', true)
@@ -63,19 +75,36 @@ const { data: blogPosts, error } = await supabase
 if (error) {
   console.error('❌ Error fetching blog posts:', error.message);
 } else {
-  console.log(`✅ Fetched ${blogPosts.length} published blog posts\n`);
+  console.log(`✅ Fetched ${dbBlogPosts.length} published blog posts from database\n`);
+}
 
-  // Add blog posts to entries
-  for (const post of blogPosts) {
-    entries.push({
-      section: 'Blog Articles',
-      label: post.slug,
-      path: `/blog/${post.slug}`,
-      indexable: true,
-      priority: 0.7,
-      changefreq: 'monthly'
-    });
+// Merge blog posts from both sources (avoid duplicates)
+const allBlogSlugs = new Set();
+
+// Add JSON blog posts
+for (const post of jsonBlogPosts) {
+  allBlogSlugs.add(post.slug);
+}
+
+// Add database blog posts
+if (dbBlogPosts) {
+  for (const post of dbBlogPosts) {
+    allBlogSlugs.add(post.slug);
   }
+}
+
+console.log(`📝 Total unique blog posts: ${allBlogSlugs.size}\n`);
+
+// Add all blog post URLs to sitemap
+for (const slug of allBlogSlugs) {
+  entries.push({
+    section: 'Blog Articles',
+    label: slug,
+    path: `/blog/${slug}`,
+    indexable: true,
+    priority: 0.7,
+    changefreq: 'monthly'
+  });
 }
 
 // Generate XML
