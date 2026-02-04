@@ -1923,6 +1923,8 @@ to = "/blog"
 status = 301
 
 # SPA catch-all - MUST BE LAST
+# CRITICAL: No force=true so static files (prerendered HTML) take precedence
+# This allows prerendering plugins to work correctly
 [[redirects]]
 from = "/*"
 to = "/index.html"
