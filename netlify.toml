@@ -1,14 +1,14 @@
 [build]
 publish = "dist"
-command = "npx vite build"
+command = "npm run build"
 
 # Enable prerendering for crawler bots
 [build.environment]
   NODE_VERSION = "20"
 
-# Prerendering - Generate static HTML for crawlers
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
+# NOTE: We generate sitemap.xml via our custom script (scripts/generate-sitemap.mjs)
+# DO NOT add @netlify/plugin-sitemap - it will overwrite our custom sitemap!
+# Our sitemap is built from sheetSitemap.ts and includes all 96+ routes.
 
 [[plugins]]
   package = "netlify-plugin-cache"
