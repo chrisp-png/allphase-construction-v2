@@ -1,0 +1,10 @@
+# All Phase Construction USA - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://allphaseconstructionfl.com/sitemap.xml
+
+# Block admin and QA pages
+Disallow: /admin
+Disallow: /qa/

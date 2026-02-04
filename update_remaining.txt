@@ -1,0 +1,20 @@
+Remaining files to update with city names and slugs:
+
+10. LoxahatcheeGrovesPage.tsx - Loxahatchee Groves - loxahatchee-groves - HAS FAQ
+11. MargatePage.tsx - Margate - margate - HAS FAQ
+12. NorthLauderdalePage.tsx - North Lauderdale - north-lauderdale - HAS FAQ
+13. NorthPalmBeachPage.tsx - North Palm Beach - north-palm-beach - NO FAQ
+14. OaklandParkPage.tsx - Oakland Park - oakland-park - NO FAQ
+15. OceanRidgePage.tsx - Ocean Ridge - ocean-ridge - NO FAQ
+16. PalmBeachPage.tsx - Palm Beach - palm-beach - NO FAQ
+17. PalmBeachGardensPage.tsx - Palm Beach Gardens - palm-beach-gardens - NO FAQ
+18. PalmBeachShoresPage.tsx - Palm Beach Shores - palm-beach-shores - HAS FAQ
+19. PembrokeParkPage.tsx - Pembroke Park - pembroke-park - NO FAQ
+20. RoyalPalmBeachPage.tsx - Royal Palm Beach - royal-palm-beach - NO FAQ
+21. SeaRanchLakesPage.tsx - Sea Ranch Lakes - sea-ranch-lakes - NO FAQ
+22. SouthwestRanchesPage.tsx - Southwest Ranches - southwest-ranches - NO FAQ
+23. SunrisePage.tsx - Sunrise - sunrise - NO FAQ (uses React Helmet)
+24. TamaracPage.tsx - Tamarac - tamarac - HAS FAQ
+25. WestonPage.tsx - Weston - weston - HAS FAQ
+26. WestlakePage.tsx - Westlake - westlake - HAS FAQ
+27. WiltonManorsPage.tsx - Wilton Manors - wilton-manors - NO FAQ

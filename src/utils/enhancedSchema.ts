@@ -1,0 +1,261 @@
+/**
+ * Enhanced Schema Markup Utilities for SEO and AI/LLM Understanding
+ *
+ * These utilities generate structured data in JSON-LD format to help:
+ * - Google and search engines better understand our content
+ * - AI/LLMs accurately represent our services and expertise
+ * - Rich results in search (FAQ snippets, breadcrumbs, ratings)
+ */
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface Breadcrumb {
+  name: string;
+  url: string;
+}
+
+export interface ServiceDetails {
+  name: string;
+  description: string;
+  serviceType?: string;
+  areaServed: string[];
+  url: string;
+  provider?: {
+    '@type': string;
+    name: string;
+    '@id'?: string;
+  };
+}
+
+/**
+ * Generate FAQPage schema for better visibility in search results
+ */
+export function generateFAQSchema(faqs: FAQItem[]): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer
+      }
+    }))
+  };
+}
+
+/**
+ * Generate Service schema for service pages
+ */
+export function generateServiceSchema(service: ServiceDetails): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    'name': service.name,
+    'description': service.description,
+    'serviceType': service.serviceType || service.name,
+    'provider': service.provider || {
+      '@type': 'RoofingContractor',
+      '@id': 'https://allphaseconstructionfl.com/#roofing-contractor',
+      'name': 'All Phase Construction USA'
+    },
+    'url': service.url,
+    'areaServed': service.areaServed.map(area => ({
+      '@type': 'City',
+      'name': area,
+      'addressRegion': 'FL',
+      'addressCountry': 'US'
+    })),
+    'hasOfferCatalog': {
+      '@type': 'OfferCatalog',
+      'name': service.name,
+      'itemListElement': [{
+        '@type': 'Offer',
+        'itemOffered': {
+          '@type': 'Service',
+          'name': service.name
+        }
+      }]
+    }
+  };
+}
+
+/**
+ * Generate BreadcrumbList schema for navigation context
+ */
+export function generateBreadcrumbSchema(breadcrumbs: Breadcrumb[]): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      'position': index + 1,
+      'name': crumb.name,
+      'item': crumb.url
+    }))
+  };
+}
+
+/**
+ * Generate enhanced Organization schema with full credentials
+ */
+export function generateOrganizationSchema(): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    '@id': 'https://allphaseconstructionfl.com/#roofing-contractor',
+    'name': 'All Phase Construction USA',
+    'alternateName': 'All Phase Roofing',
+    'description': 'Licensed roofing contractor serving Broward County and Palm Beach County, Florida. Dual-licensed (CCC1331464 & CGC1526236) with 22+ years experience and 2,500+ roofs installed.',
+    'url': 'https://allphaseconstructionfl.com',
+    'logo': 'https://allphaseconstructionfl.com/allphase-logo-white.svg',
+    'telephone': '+1-754-227-5605',
+    'email': 'info@allphaseconstructionfl.com',
+    'priceRange': '$$$$',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': '1280 SW 36th Ave Unit 106',
+      'addressLocality': 'Pompano Beach',
+      'addressRegion': 'FL',
+      'postalCode': '33069',
+      'addressCountry': 'US'
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '26.2370',
+      'longitude': '-80.1248'
+    },
+    'areaServed': [
+      {
+        '@type': 'AdministrativeArea',
+        'name': 'Broward County',
+        'containedInPlace': { '@type': 'State', 'name': 'Florida' }
+      },
+      {
+        '@type': 'AdministrativeArea',
+        'name': 'Palm Beach County',
+        'containedInPlace': { '@type': 'State', 'name': 'Florida' }
+      }
+    ],
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': '4.9',
+      'reviewCount': '250',
+      'bestRating': '5',
+      'worstRating': '1'
+    },
+    'hasCredential': [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'credentialCategory': 'License',
+        'name': 'Florida State Certified Roofing Contractor (CCC1331464)',
+        'recognizedBy': {
+          '@type': 'Organization',
+          'name': 'Florida Department of Business and Professional Regulation'
+        }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'credentialCategory': 'License',
+        'name': 'Florida Certified General Contractor (CGC1526236)',
+        'recognizedBy': {
+          '@type': 'Organization',
+          'name': 'Florida Department of Business and Professional Regulation'
+        }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'credentialCategory': 'Certification',
+        'name': 'HVHZ (High Velocity Hurricane Zone) Certified',
+        'recognizedBy': {
+          '@type': 'Organization',
+          'name': 'Florida Building Commission'
+        }
+      }
+    ],
+    'sameAs': [
+      'https://www.facebook.com/allphaseconstructionusa',
+      'https://www.instagram.com/allphaseconstructionusa',
+      'https://www.linkedin.com/company/allphaseconstructionusa',
+      'https://www.youtube.com/@allphaseconstructionusa'
+    ],
+    'openingHoursSpecification': [
+      {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        'opens': '07:00',
+        'closes': '18:00'
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': 'Saturday',
+        'opens': '08:00',
+        'closes': '16:00'
+      }
+    ]
+  };
+}
+
+/**
+ * Generate LocalBusiness schema for location pages
+ */
+export function generateLocalBusinessSchema(city: string, county: string): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    '@id': `https://allphaseconstructionfl.com/#roofing-contractor-${city.toLowerCase().replace(/\s+/g, '-')}`,
+    'name': `All Phase Construction USA - ${city} Roofing`,
+    'parentOrganization': {
+      '@id': 'https://allphaseconstructionfl.com/#roofing-contractor'
+    },
+    'areaServed': {
+      '@type': 'City',
+      'name': city,
+      'containedInPlace': {
+        '@type': 'AdministrativeArea',
+        'name': county
+      }
+    },
+    'telephone': '+1-754-227-5605',
+    'url': `https://allphaseconstructionfl.com/${city.toLowerCase().replace(/\s+/g, '-')}`,
+    'priceRange': '$$$$'
+  };
+}
+
+/**
+ * Helper to inject schema into page head
+ */
+export function injectSchema(schema: object): void {
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(schema);
+  document.head.appendChild(script);
+}
+
+/**
+ * Helper to inject multiple schemas at once
+ */
+export function injectMultipleSchemas(schemas: object[]): () => void {
+  const scripts: HTMLScriptElement[] = [];
+
+  schemas.forEach(schema => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+    scripts.push(script);
+  });
+
+  // Return cleanup function
+  return () => {
+    scripts.forEach(script => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    });
+  };
+}

@@ -1,0 +1,173 @@
+{
+  "specification_version": "1.0",
+  "job": {
+    "type": "generate_city_rankings_page",
+    "goal": "Create an editorial 'Top 5 Roofers' page for the target city using existing site styling/components and SEO-safe uniqueness rules.",
+    "inputs": {
+      "target_url": "{{PASTE_URL_HERE}}",
+      "ranked_companies_fixed_order": [
+        "All Phase Construction USA",
+        "Legacy Contracting Solutions",
+        "Kelly Roofing",
+        "Allied Roofing and Sheet Metal",
+        "Tiger Team Roofing"
+      ],
+      "cityVariables": {
+        "city_name": "{{CITY_NAME_OR_INFER_FROM_URL}}",
+        "state": "Florida",
+        "county": "{{COUNTY_NAME}}",
+        "local_climate_notes": [
+          "{{CLIMATE_NOTE_1}}",
+          "{{CLIMATE_NOTE_2}}",
+          "{{CLIMATE_NOTE_3}}"
+        ],
+        "local_risk_factors": [
+          "{{RISK_FACTOR_1}}",
+          "{{RISK_FACTOR_2}}",
+          "{{RISK_FACTOR_3}}"
+        ],
+        "common_roof_types": [
+          "{{ROOF_TYPE_1}}",
+          "{{ROOF_TYPE_2}}",
+          "{{ROOF_TYPE_3}}"
+        ],
+        "insurance_considerations": [
+          "{{INSURANCE_NOTE_1}}",
+          "{{INSURANCE_NOTE_2}}",
+          "{{INSURANCE_NOTE_3}}"
+        ]
+      }
+    }
+  },
+  "constraints": {
+    "preserve_site_structure_and_styling": true,
+    "use_existing_components_only": true,
+    "no_new_design_system": true,
+    "roofing_only_positioning": true,
+    "cta_policy": {
+      "soft_cta_only": true,
+      "cta_location": "bottom_only"
+    },
+    "compliance": {
+      "no_fake_reviews_or_star_ratings": true,
+      "no_competitor_disparagement": true,
+      "no_outbound_links_to_competitors": true
+    }
+  },
+  "seo": {
+    "indexable": true,
+    "schema": {
+      "article": true,
+      "faqpage": true,
+      "breadcrumb": true
+    },
+    "title_template": "Top 5 Roofing Companies in {{CITY_NAME}}, Florida (2026 Rankings)",
+    "meta_description_template": "Research-based rankings of the best roofing companies serving {{CITY_NAME}}, FL. Compare licensing, roof systems, inspection approach, warranties, and homeowner decision factors."
+  },
+  "contentBlueprint": {
+    "section_order_locked": true,
+    "sections": [
+      {
+        "id": "hero",
+        "requirements": {
+          "h1": "Top 5 Roofing Companies in {{CITY_NAME}}, Florida (2026 Rankings)",
+          "subheadline_must_include": ["research-based", "{{CITY_NAME}}"]
+        }
+      },
+      {
+        "id": "methodology",
+        "requirements": {
+          "must_include_city_specific_intro": true,
+          "table_required": true
+        }
+      },
+      {
+        "id": "city_reality_check",
+        "requirements": {
+          "must_use_cityVariables": ["local_climate_notes", "common_roof_types"],
+          "min_unique_sentences": 6
+        }
+      },
+      {
+        "id": "rankings_profiles",
+        "requirements": {
+          "fixed_company_order": true,
+          "profile_depth": "detailed",
+          "all_phase_positioning": "technical benchmark without unverifiable superlatives"
+        }
+      },
+      {
+        "id": "comparison_snapshot",
+        "requirements": {
+          "table_required": true,
+          "columns_fixed": true,
+          "include_city_relevant_capability_note": true
+        }
+      },
+      {
+        "id": "buyers_guide",
+        "requirements": {
+          "must_use_cityVariables": ["local_risk_factors", "insurance_considerations"],
+          "min_unique_sentences": 8
+        }
+      },
+      {
+        "id": "faq",
+        "requirements": {
+          "count": 4,
+          "each_answer_must_include": ["{{CITY_NAME}}"],
+          "featured_snippet_formatting": true
+        }
+      },
+      {
+        "id": "cta_bottom",
+        "requirements": {
+          "soft_lead_gen": true,
+          "no_hard_sell": true
+        }
+      }
+    ]
+  },
+  "uniquenessEnforcement": {
+    "nonVerbatimPolicy": {
+      "max_identical_sentence_run": 1,
+      "rewrite_modules_each_city": [
+        "methodology_intro",
+        "city_reality_check",
+        "buyers_guide",
+        "faq_answers"
+      ]
+    },
+    "cityUniquenessChecklist": {
+      "must_mention_county": true,
+      "must_include_one_local_watchout": true,
+      "must_include_hoa_or_permitting_nuance": true
+    }
+  },
+  "internalLinking": {
+    "required": true,
+    "add_links": [
+      { "type": "city_service_page", "infer_from_url": true },
+      { "type": "roof_inspection_page" },
+      { "type": "tile_roofing_page" },
+      { "type": "metal_roofing_page" }
+    ],
+    "no_competitor_outbound_links": true
+  },
+  "publishing": {
+    "create_page_at_target_url": true,
+    "add_route": true,
+    "sitemap": {
+      "update_sheetSitemap_ts": true,
+      "regenerate_xml": true,
+      "priority": 0.6,
+      "verify": true
+    }
+  },
+  "implementation": {
+    "template_component": "/src/components/TopRooferPageTemplate.tsx",
+    "data_directory": "/src/data/top-roofers/",
+    "page_directory": "/src/pages/",
+    "guide_document": "/TOP_ROOFER_TEMPLATE_GUIDE.md"
+  }
+}

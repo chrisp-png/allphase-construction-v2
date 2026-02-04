@@ -1,0 +1,1929 @@
+[build]
+publish = "dist"
+command = "npx vite build"
+
+# Enable prerendering for crawler bots
+[build.environment]
+  NODE_VERSION = "20"
+
+# Prerendering - Generate static HTML for crawlers
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+  package = "netlify-plugin-cache"
+
+# Post-processing optimizations
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Lighthouse plugin for automated performance testing
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs]
+    # Test multiple important pages
+    [[plugins.inputs.audits]]
+      path = "/"
+      output_path = "reports/lighthouse-home.html"
+
+    [[plugins.inputs.audits]]
+      path = "/boca-raton"
+      output_path = "reports/lighthouse-boca-raton.html"
+
+    [[plugins.inputs.audits]]
+      path = "/fort-lauderdale"
+      output_path = "reports/lighthouse-fort-lauderdale.html"
+
+    [[plugins.inputs.audits]]
+      path = "/roof-repair"
+      output_path = "reports/lighthouse-roof-repair.html"
+
+    # Test both mobile and desktop
+    [[plugins.inputs.audits]]
+      path = "/"
+      output_path = "reports/lighthouse-home-desktop.html"
+      preset = "desktop"
+
+    # Thresholds - builds will fail if scores drop below these
+    [plugins.inputs.thresholds]
+      performance = 0.7
+      accessibility = 0.9
+      best-practices = 0.8
+      seo = 0.9
+
+# Cache static assets aggressively
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Edge function disabled - was causing latency on every request
+# [[edge_functions]]
+# function = "normalize-case"
+# path = "/*"
+
+# Force HTTPS and non-WWW canonical domain
+# Order matters: Most specific first
+
+# HTTPS www → HTTPS non-www (CRITICAL - was missing!)
+[[redirects]]
+from = "https://www.allphaseconstructionfl.com/*"
+to = "https://allphaseconstructionfl.com/:splat"
+status = 301
+force = true
+
+# HTTP www → HTTPS non-www
+[[redirects]]
+from = "http://www.allphaseconstructionfl.com/*"
+to = "https://allphaseconstructionfl.com/:splat"
+status = 301
+force = true
+
+# HTTP non-www → HTTPS non-www
+[[redirects]]
+from = "http://allphaseconstructionfl.com/*"
+to = "https://allphaseconstructionfl.com/:splat"
+status = 301
+force = true
+
+# Old service pages that no longer exist
+[[redirects]]
+from = "/spray-foam-roofing"
+to = "/single-ply-roofing"
+status = 301
+
+[[redirects]]
+from = "/spray-foam-roofing/"
+to = "/single-ply-roofing"
+status = 301
+
+[[redirects]]
+from = "/roof-leak-mechanical-equipment"
+to = "/roof-repair"
+status = 301
+
+[[redirects]]
+from = "/roof-leak-mechanical-equipment/"
+to = "/roof-repair"
+status = 301
+
+[[redirects]]
+from = "/solar"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/solar/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/flat-roof-coatings"
+to = "/flat-roofing"
+status = 301
+
+[[redirects]]
+from = "/flat-roof-coatings/"
+to = "/flat-roofing"
+status = 301
+
+[[redirects]]
+from = "/services"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/services/"
+to = "/"
+status = 301
+
+# Old blog posts
+[[redirects]]
+from = "/blog/how-much-does-a-screen-enclosure-cost/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/our-roofing-company-is-proud-to-be-a-family-owned-business/"
+to = "/blog"
+status = 301
+
+# Old location structure redirects
+[[redirects]]
+from = "/locations/deerfield-beach/service-area-jupiter"
+to = "/jupiter"
+status = 301
+
+# Old roofing contractor URL structure redirects
+[[redirects]]
+from = "/roofing-contractor-cooper-city-fl"
+to = "/locations/deerfield-beach/service-area/cooper-city"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-davie-fl"
+to = "/locations/deerfield-beach/service-area/davie"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-highland-beach-fl"
+to = "/locations/deerfield-beach/service-area/highland-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-hollywood-fl"
+to = "/locations/deerfield-beach/service-area/hollywood"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lighthouse-point-fl"
+to = "/locations/deerfield-beach/service-area/lighthouse-point"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-margate-fl"
+to = "/locations/deerfield-beach/service-area/margate"
+status = 301
+
+# Financing page redirect
+[[redirects]]
+from = "/financing"
+to = "/easy-payments"
+status = 301
+
+[[redirects]]
+from = "/financing/"
+to = "/easy-payments"
+status = 301
+
+# Publications page - permanently removed
+[[redirects]]
+from = "/publications"
+to = "/blog"
+status = 410
+
+[[redirects]]
+from = "/publications/"
+to = "/blog"
+status = 410
+
+# Old blog post redirects to blog index
+[[redirects]]
+from = "/blog/is-tar-still-used-in-2024-to-seal-a-roof/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/all-phase-construction-unique-benefits/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-spot-and-fix-roof-leaks-in-south-florida-a-homeowners-guide-to-protecting-your-home/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/choosing-the-best-roofing-materials-for-your-boca-raton-home-with-all-phase-construction-usa/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-3/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/what-to-expect-during-a-roof-replacement-project/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive/"
+to = "/blog"
+status = 301
+
+# Old blog author pages redirects
+[[redirects]]
+from = "/blog/author/douglas-silva/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog/author/srl/"
+to = "/blog"
+status = 301
+
+# Testimonials page redirect
+[[redirects]]
+from = "/testimonials"
+to = "/reviews"
+status = 301
+
+[[redirects]]
+from = "/testimonials/"
+to = "/reviews"
+status = 301
+
+# Old pages that no longer exist (Google Search Console validation)
+[[redirects]]
+from = "/media"
+to = "/projects"
+status = 301
+
+[[redirects]]
+from = "/media/"
+to = "/projects"
+status = 301
+
+[[redirects]]
+from = "/government-contracting"
+to = "/commercial-roofing"
+status = 301
+
+[[redirects]]
+from = "/government-contracting/"
+to = "/commercial-roofing"
+status = 301
+
+# Fix 5XX errors - Missing pages (GSC reported 1/31/26)
+[[redirects]]
+from = "/faq"
+to = "/contact"
+status = 301
+
+[[redirects]]
+from = "/faq/"
+to = "/contact"
+status = 301
+
+[[redirects]]
+from = "/media-gallery"
+to = "/projects"
+status = 301
+
+[[redirects]]
+from = "/media-gallery/"
+to = "/projects"
+status = 301
+
+# Old location URLs → New location structure
+[[redirects]]
+from = "/north-palm-beach"
+to = "/locations/deerfield-beach/service-area/north-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/north-palm-beach/"
+to = "/locations/deerfield-beach/service-area/north-palm-beach"
+status = 301
+
+# Flat city URLs → New nested structure (Fix 502 errors)
+# Palm Beach County
+[[redirects]]
+from = "/boca-raton"
+to = "/locations/deerfield-beach/service-area/boca-raton"
+status = 301
+
+[[redirects]]
+from = "/boca-raton/"
+to = "/locations/deerfield-beach/service-area/boca-raton"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach"
+to = "/locations/deerfield-beach/service-area/boynton-beach"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach/"
+to = "/locations/deerfield-beach/service-area/boynton-beach"
+status = 301
+
+[[redirects]]
+from = "/delray-beach"
+to = "/locations/deerfield-beach/service-area/delray-beach"
+status = 301
+
+[[redirects]]
+from = "/delray-beach/"
+to = "/locations/deerfield-beach/service-area/delray-beach"
+status = 301
+
+[[redirects]]
+from = "/wellington"
+to = "/locations/deerfield-beach/service-area/wellington"
+status = 301
+
+[[redirects]]
+from = "/wellington/"
+to = "/locations/deerfield-beach/service-area/wellington"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach"
+to = "/locations/deerfield-beach/service-area/west-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach/"
+to = "/locations/deerfield-beach/service-area/west-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/palm-beach"
+to = "/locations/deerfield-beach/service-area/palm-beach"
+status = 301
+
+[[redirects]]
+from = "/palm-beach/"
+to = "/locations/deerfield-beach/service-area/palm-beach"
+status = 301
+
+[[redirects]]
+from = "/palm-beach-shores"
+to = "/locations/deerfield-beach/service-area/palm-beach-shores"
+status = 301
+
+[[redirects]]
+from = "/palm-beach-shores/"
+to = "/locations/deerfield-beach/service-area/palm-beach-shores"
+status = 301
+
+[[redirects]]
+from = "/ocean-ridge"
+to = "/locations/deerfield-beach/service-area/ocean-ridge"
+status = 301
+
+[[redirects]]
+from = "/ocean-ridge/"
+to = "/locations/deerfield-beach/service-area/ocean-ridge"
+status = 301
+
+[[redirects]]
+from = "/lantana"
+to = "/locations/deerfield-beach/service-area/lantana"
+status = 301
+
+[[redirects]]
+from = "/lantana/"
+to = "/locations/deerfield-beach/service-area/lantana"
+status = 301
+
+[[redirects]]
+from = "/sea-ranch-lakes"
+to = "/locations/deerfield-beach/service-area/sea-ranch-lakes"
+status = 301
+
+[[redirects]]
+from = "/sea-ranch-lakes/"
+to = "/locations/deerfield-beach/service-area/sea-ranch-lakes"
+status = 301
+
+# Broward County
+[[redirects]]
+from = "/fort-lauderdale"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/fort-lauderdale/"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/pompano-beach"
+to = "/locations/deerfield-beach/service-area/pompano-beach"
+status = 301
+
+[[redirects]]
+from = "/pompano-beach/"
+to = "/locations/deerfield-beach/service-area/pompano-beach"
+status = 301
+
+[[redirects]]
+from = "/coral-springs"
+to = "/locations/deerfield-beach/service-area/coral-springs"
+status = 301
+
+[[redirects]]
+from = "/coral-springs/"
+to = "/locations/deerfield-beach/service-area/coral-springs"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek"
+to = "/locations/deerfield-beach/service-area/coconut-creek"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek/"
+to = "/locations/deerfield-beach/service-area/coconut-creek"
+status = 301
+
+[[redirects]]
+from = "/sunrise"
+to = "/locations/deerfield-beach/service-area/sunrise"
+status = 301
+
+[[redirects]]
+from = "/sunrise/"
+to = "/locations/deerfield-beach/service-area/sunrise"
+status = 301
+
+[[redirects]]
+from = "/davie"
+to = "/locations/deerfield-beach/service-area/davie"
+status = 301
+
+[[redirects]]
+from = "/davie/"
+to = "/locations/deerfield-beach/service-area/davie"
+status = 301
+
+[[redirects]]
+from = "/hollywood"
+to = "/locations/deerfield-beach/service-area/hollywood"
+status = 301
+
+[[redirects]]
+from = "/hollywood/"
+to = "/locations/deerfield-beach/service-area/hollywood"
+status = 301
+
+[[redirects]]
+from = "/miramar"
+to = "/locations/deerfield-beach/service-area/miramar"
+status = 301
+
+[[redirects]]
+from = "/miramar/"
+to = "/locations/deerfield-beach/service-area/miramar"
+status = 301
+
+[[redirects]]
+from = "/plantation"
+to = "/locations/deerfield-beach/service-area/plantation"
+status = 301
+
+[[redirects]]
+from = "/plantation/"
+to = "/locations/deerfield-beach/service-area/plantation"
+status = 301
+
+[[redirects]]
+from = "/weston"
+to = "/locations/deerfield-beach/service-area/weston"
+status = 301
+
+[[redirects]]
+from = "/weston/"
+to = "/locations/deerfield-beach/service-area/weston"
+status = 301
+
+# /about → /about-us redirect
+[[redirects]]
+from = "/about"
+to = "/about-us"
+status = 301
+
+[[redirects]]
+from = "/about/"
+to = "/about-us"
+status = 301
+
+# Malformed URLs
+[[redirects]]
+from = "/shingle-ply-roofing"
+to = "/single-ply-roofing"
+status = 301
+
+[[redirects]]
+from = "/shingle-ply-roofing/"
+to = "/single-ply-roofing"
+status = 301
+
+# Calculator page redirects - flat city URLs with calculator suffixes
+[[redirects]]
+from = "/boca-raton/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/boca-raton/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/boca-raton/calculator"
+to = "/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/boynton-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/boynton-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach/calculator"
+to = "/locations/deerfield-beach/service-area/boynton-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/coral-springs/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/coral-springs/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/coral-springs/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/coral-springs/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/coral-springs/calculator"
+to = "/locations/deerfield-beach/service-area/coral-springs/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/coconut-creek/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/coconut-creek/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek/calculator"
+to = "/locations/deerfield-beach/service-area/coconut-creek/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/fort-lauderdale/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/fort-lauderdale/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/fort-lauderdale/calculator"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/delray-beach/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/delray-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/delray-beach/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/delray-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/delray-beach/calculator"
+to = "/locations/deerfield-beach/service-area/delray-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/pompano-beach/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/pompano-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/pompano-beach/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/pompano-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/pompano-beach/calculator"
+to = "/locations/deerfield-beach/service-area/pompano-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/west-palm-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/west-palm-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach/calculator"
+to = "/locations/deerfield-beach/service-area/west-palm-beach/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/wellington/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/wellington/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/wellington/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/wellington/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/wellington/calculator"
+to = "/locations/deerfield-beach/service-area/wellington/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/sunrise/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/sunrise/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/sunrise/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/sunrise/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/sunrise/calculator"
+to = "/locations/deerfield-beach/service-area/sunrise/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/davie/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/davie/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/davie/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/davie/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/davie/calculator"
+to = "/locations/deerfield-beach/service-area/davie/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/hollywood/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/hollywood/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/hollywood/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/hollywood/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/hollywood/calculator"
+to = "/locations/deerfield-beach/service-area/hollywood/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/miramar/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/miramar/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/miramar/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/miramar/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/miramar/calculator"
+to = "/locations/deerfield-beach/service-area/miramar/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/plantation/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/plantation/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/plantation/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/plantation/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/plantation/calculator"
+to = "/locations/deerfield-beach/service-area/plantation/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/weston/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/weston/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/weston/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/weston/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/weston/calculator"
+to = "/locations/deerfield-beach/service-area/weston/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/cooper-city/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/cooper-city/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/cooper-city/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/cooper-city/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/cooper-city/calculator"
+to = "/locations/deerfield-beach/service-area/cooper-city/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/parkland/roof-cost-calculator"
+to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/parkland/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/parkland/calculator"
+to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
+status = 301
+
+# Top roofer page redirects - flat city URLs with top-roofer variations
+[[redirects]]
+from = "/boca-raton/top-5-roofer"
+to = "/locations/deerfield-beach/service-area/boca-raton/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/boca-raton/top-roofer"
+to = "/locations/deerfield-beach/service-area/boca-raton/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach/top-5-roofer"
+to = "/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/boynton-beach/top-roofer"
+to = "/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/coral-springs/top-5-roofer"
+to = "/locations/deerfield-beach/service-area/coral-springs/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/coral-springs/top-roofer"
+to = "/locations/deerfield-beach/service-area/coral-springs/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek/top-5-roofer"
+to = "/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/coconut-creek/top-roofer"
+to = "/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/fort-lauderdale/top-5-roofer"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/fort-lauderdale/top-roofer"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach/top-5-roofer"
+to = "/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer"
+status = 301
+
+[[redirects]]
+from = "/west-palm-beach/top-roofer"
+to = "/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer"
+status = 301
+
+# Old roof repair URL patterns (without /roofing-services prefix)
+[[redirects]]
+from = "/roof-repair/boca-raton"
+to = "/roofing-services/roof-repair/boca-raton"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/boynton-beach"
+to = "/roofing-services/roof-repair/boynton-beach"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/coral-springs"
+to = "/roofing-services/roof-repair/coral-springs"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/coconut-creek"
+to = "/roofing-services/roof-repair/coconut-creek"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/fort-lauderdale"
+to = "/roofing-services/roof-repair/fort-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/pompano-beach"
+to = "/roofing-services/roof-repair/pompano-beach"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/delray-beach"
+to = "/roofing-services/roof-repair/delray-beach"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/west-palm-beach"
+to = "/roofing-services/roof-repair/west-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/wellington"
+to = "/roofing-services/roof-repair/wellington"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/davie"
+to = "/roofing-services/roof-repair/davie"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/hollywood"
+to = "/roofing-services/roof-repair/hollywood"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/sunrise"
+to = "/roofing-services/roof-repair/sunrise"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/cooper-city"
+to = "/roofing-services/roof-repair/cooper-city"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/parkland"
+to = "/roofing-services/roof-repair/parkland"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/deerfield-beach"
+to = "/roofing-services/roof-repair/deerfield-beach"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/broward-county"
+to = "/roofing-services/roof-repair/broward-county"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/palm-beach-county"
+to = "/roofing-services/roof-repair/palm-beach-county"
+status = 301
+
+# Additional missing city flat URL redirects
+# Cities that had pages but were missing flat URL redirects
+
+# Palm Beach County - Additional Cities
+[[redirects]]
+from = "/greenacres"
+to = "/locations/deerfield-beach/service-area/greenacres"
+status = 301
+
+[[redirects]]
+from = "/greenacres/"
+to = "/locations/deerfield-beach/service-area/greenacres"
+status = 301
+
+[[redirects]]
+from = "/jupiter"
+to = "/locations/deerfield-beach/service-area/jupiter"
+status = 301
+
+[[redirects]]
+from = "/jupiter/"
+to = "/locations/deerfield-beach/service-area/jupiter"
+status = 301
+
+[[redirects]]
+from = "/lake-worth-beach"
+to = "/locations/deerfield-beach/service-area/lake-worth-beach"
+status = 301
+
+[[redirects]]
+from = "/lake-worth-beach/"
+to = "/locations/deerfield-beach/service-area/lake-worth-beach"
+status = 301
+
+[[redirects]]
+from = "/palm-beach-gardens"
+to = "/locations/deerfield-beach/service-area/palm-beach-gardens"
+status = 301
+
+[[redirects]]
+from = "/palm-beach-gardens/"
+to = "/locations/deerfield-beach/service-area/palm-beach-gardens"
+status = 301
+
+[[redirects]]
+from = "/royal-palm-beach"
+to = "/locations/deerfield-beach/service-area/royal-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/royal-palm-beach/"
+to = "/locations/deerfield-beach/service-area/royal-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/jupiter-inlet-colony"
+to = "/locations/deerfield-beach/service-area/jupiter-inlet-colony"
+status = 301
+
+[[redirects]]
+from = "/jupiter-inlet-colony/"
+to = "/locations/deerfield-beach/service-area/jupiter-inlet-colony"
+status = 301
+
+[[redirects]]
+from = "/loxahatchee-groves"
+to = "/locations/deerfield-beach/service-area/loxahatchee-groves"
+status = 301
+
+[[redirects]]
+from = "/loxahatchee-groves/"
+to = "/locations/deerfield-beach/service-area/loxahatchee-groves"
+status = 301
+
+[[redirects]]
+from = "/hypoluxo"
+to = "/locations/deerfield-beach/service-area/hypoluxo"
+status = 301
+
+[[redirects]]
+from = "/hypoluxo/"
+to = "/locations/deerfield-beach/service-area/hypoluxo"
+status = 301
+
+[[redirects]]
+from = "/highland-beach"
+to = "/locations/deerfield-beach/service-area/highland-beach"
+status = 301
+
+[[redirects]]
+from = "/highland-beach/"
+to = "/locations/deerfield-beach/service-area/highland-beach"
+status = 301
+
+[[redirects]]
+from = "/haverhill"
+to = "/locations/deerfield-beach/service-area/haverhill"
+status = 301
+
+[[redirects]]
+from = "/haverhill/"
+to = "/locations/deerfield-beach/service-area/haverhill"
+status = 301
+
+[[redirects]]
+from = "/gulf-stream"
+to = "/locations/deerfield-beach/service-area/gulf-stream"
+status = 301
+
+[[redirects]]
+from = "/gulf-stream/"
+to = "/locations/deerfield-beach/service-area/gulf-stream"
+status = 301
+
+[[redirects]]
+from = "/westlake"
+to = "/locations/deerfield-beach/service-area/westlake"
+status = 301
+
+[[redirects]]
+from = "/westlake/"
+to = "/locations/deerfield-beach/service-area/westlake"
+status = 301
+
+# Broward County - Additional Cities
+[[redirects]]
+from = "/cooper-city"
+to = "/locations/deerfield-beach/service-area/cooper-city"
+status = 301
+
+[[redirects]]
+from = "/cooper-city/"
+to = "/locations/deerfield-beach/service-area/cooper-city"
+status = 301
+
+[[redirects]]
+from = "/parkland"
+to = "/locations/deerfield-beach/service-area/parkland"
+status = 301
+
+[[redirects]]
+from = "/parkland/"
+to = "/locations/deerfield-beach/service-area/parkland"
+status = 301
+
+[[redirects]]
+from = "/tamarac"
+to = "/locations/deerfield-beach/service-area/tamarac"
+status = 301
+
+[[redirects]]
+from = "/tamarac/"
+to = "/locations/deerfield-beach/service-area/tamarac"
+status = 301
+
+[[redirects]]
+from = "/margate"
+to = "/locations/deerfield-beach/service-area/margate"
+status = 301
+
+[[redirects]]
+from = "/margate/"
+to = "/locations/deerfield-beach/service-area/margate"
+status = 301
+
+[[redirects]]
+from = "/pembroke-pines"
+to = "/locations/deerfield-beach/service-area/pembroke-pines"
+status = 301
+
+[[redirects]]
+from = "/pembroke-pines/"
+to = "/locations/deerfield-beach/service-area/pembroke-pines"
+status = 301
+
+[[redirects]]
+from = "/pembroke-park"
+to = "/locations/deerfield-beach/service-area/pembroke-park"
+status = 301
+
+[[redirects]]
+from = "/pembroke-park/"
+to = "/locations/deerfield-beach/service-area/pembroke-park"
+status = 301
+
+[[redirects]]
+from = "/hallandale-beach"
+to = "/locations/deerfield-beach/service-area/hallandale-beach"
+status = 301
+
+[[redirects]]
+from = "/hallandale-beach/"
+to = "/locations/deerfield-beach/service-area/hallandale-beach"
+status = 301
+
+[[redirects]]
+from = "/dania-beach"
+to = "/locations/deerfield-beach/service-area/dania-beach"
+status = 301
+
+[[redirects]]
+from = "/dania-beach/"
+to = "/locations/deerfield-beach/service-area/dania-beach"
+status = 301
+
+[[redirects]]
+from = "/southwest-ranches"
+to = "/locations/deerfield-beach/service-area/southwest-ranches"
+status = 301
+
+[[redirects]]
+from = "/southwest-ranches/"
+to = "/locations/deerfield-beach/service-area/southwest-ranches"
+status = 301
+
+[[redirects]]
+from = "/wilton-manors"
+to = "/locations/deerfield-beach/service-area/wilton-manors"
+status = 301
+
+[[redirects]]
+from = "/wilton-manors/"
+to = "/locations/deerfield-beach/service-area/wilton-manors"
+status = 301
+
+[[redirects]]
+from = "/lauderdale-by-the-sea"
+to = "/locations/deerfield-beach/service-area/lauderdale-by-the-sea"
+status = 301
+
+[[redirects]]
+from = "/lauderdale-by-the-sea/"
+to = "/locations/deerfield-beach/service-area/lauderdale-by-the-sea"
+status = 301
+
+[[redirects]]
+from = "/lauderdale-lakes"
+to = "/locations/deerfield-beach/service-area/lauderdale-lakes"
+status = 301
+
+[[redirects]]
+from = "/lauderdale-lakes/"
+to = "/locations/deerfield-beach/service-area/lauderdale-lakes"
+status = 301
+
+[[redirects]]
+from = "/lauderdale-ranches"
+to = "/locations/deerfield-beach/service-area/lauderdale-ranches"
+status = 301
+
+[[redirects]]
+from = "/lauderdale-ranches/"
+to = "/locations/deerfield-beach/service-area/lauderdale-ranches"
+status = 301
+
+[[redirects]]
+from = "/lauderhill"
+to = "/locations/deerfield-beach/service-area/lauderhill"
+status = 301
+
+[[redirects]]
+from = "/lauderhill/"
+to = "/locations/deerfield-beach/service-area/lauderhill"
+status = 301
+
+[[redirects]]
+from = "/lighthouse-point"
+to = "/locations/deerfield-beach/service-area/lighthouse-point"
+status = 301
+
+[[redirects]]
+from = "/lighthouse-point/"
+to = "/locations/deerfield-beach/service-area/lighthouse-point"
+status = 301
+
+[[redirects]]
+from = "/north-lauderdale"
+to = "/locations/deerfield-beach/service-area/north-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/north-lauderdale/"
+to = "/locations/deerfield-beach/service-area/north-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/oakland-park"
+to = "/locations/deerfield-beach/service-area/oakland-park"
+status = 301
+
+[[redirects]]
+from = "/oakland-park/"
+to = "/locations/deerfield-beach/service-area/oakland-park"
+status = 301
+
+[[redirects]]
+from = "/hillsboro-beach"
+to = "/locations/deerfield-beach/service-area/hillsboro-beach"
+status = 301
+
+[[redirects]]
+from = "/hillsboro-beach/"
+to = "/locations/deerfield-beach/service-area/hillsboro-beach"
+status = 301
+
+[[redirects]]
+from = "/deerfield-beach"
+to = "/locations/deerfield-beach"
+status = 301
+
+[[redirects]]
+from = "/deerfield-beach/"
+to = "/locations/deerfield-beach"
+status = 301
+
+# Additional roofing-contractor-{city}-fl patterns (beyond those already added)
+[[redirects]]
+from = "/roofing-contractor-boca-raton-fl"
+to = "/locations/deerfield-beach/service-area/boca-raton"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-boynton-beach-fl"
+to = "/locations/deerfield-beach/service-area/boynton-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-delray-beach-fl"
+to = "/locations/deerfield-beach/service-area/delray-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-fort-lauderdale-fl"
+to = "/locations/deerfield-beach/service-area/fort-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-pompano-beach-fl"
+to = "/locations/deerfield-beach/service-area/pompano-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-coral-springs-fl"
+to = "/locations/deerfield-beach/service-area/coral-springs"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-coconut-creek-fl"
+to = "/locations/deerfield-beach/service-area/coconut-creek"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-parkland-fl"
+to = "/locations/deerfield-beach/service-area/parkland"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-tamarac-fl"
+to = "/locations/deerfield-beach/service-area/tamarac"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-plantation-fl"
+to = "/locations/deerfield-beach/service-area/plantation"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-sunrise-fl"
+to = "/locations/deerfield-beach/service-area/sunrise"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-weston-fl"
+to = "/locations/deerfield-beach/service-area/weston"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-miramar-fl"
+to = "/locations/deerfield-beach/service-area/miramar"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-pembroke-pines-fl"
+to = "/locations/deerfield-beach/service-area/pembroke-pines"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-dania-beach-fl"
+to = "/locations/deerfield-beach/service-area/dania-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-hallandale-beach-fl"
+to = "/locations/deerfield-beach/service-area/hallandale-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-gulf-stream-fl"
+to = "/locations/deerfield-beach/service-area/gulf-stream"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-greenacres-fl"
+to = "/locations/deerfield-beach/service-area/greenacres"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-haverhill-fl"
+to = "/locations/deerfield-beach/service-area/haverhill"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-hypoluxo-fl"
+to = "/locations/deerfield-beach/service-area/hypoluxo"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-jupiter-fl"
+to = "/locations/deerfield-beach/service-area/jupiter"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lake-worth-fl"
+to = "/locations/deerfield-beach/service-area/lake-worth-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lantana-fl"
+to = "/locations/deerfield-beach/service-area/lantana"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-loxahatchee-groves-fl"
+to = "/locations/deerfield-beach/service-area/loxahatchee-groves"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-ocean-ridge-fl"
+to = "/locations/deerfield-beach/service-area/ocean-ridge"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-palm-beach-fl"
+to = "/locations/deerfield-beach/service-area/palm-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-palm-beach-gardens-fl"
+to = "/locations/deerfield-beach/service-area/palm-beach-gardens"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-royal-palm-beach-fl"
+to = "/locations/deerfield-beach/service-area/royal-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-wellington-fl"
+to = "/locations/deerfield-beach/service-area/wellington"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-west-palm-beach-fl"
+to = "/locations/deerfield-beach/service-area/west-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-westlake-fl"
+to = "/locations/deerfield-beach/service-area/westlake"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-southwest-ranches-fl"
+to = "/locations/deerfield-beach/service-area/southwest-ranches"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-wilton-manors-fl"
+to = "/locations/deerfield-beach/service-area/wilton-manors"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lauderdale-by-the-sea-fl"
+to = "/locations/deerfield-beach/service-area/lauderdale-by-the-sea"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lauderdale-lakes-fl"
+to = "/locations/deerfield-beach/service-area/lauderdale-lakes"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lauderhill-fl"
+to = "/locations/deerfield-beach/service-area/lauderhill"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-north-lauderdale-fl"
+to = "/locations/deerfield-beach/service-area/north-lauderdale"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-oakland-park-fl"
+to = "/locations/deerfield-beach/service-area/oakland-park"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-pembroke-park-fl"
+to = "/locations/deerfield-beach/service-area/pembroke-park"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-sea-ranch-lakes-fl"
+to = "/locations/deerfield-beach/service-area/sea-ranch-lakes"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-hillsboro-beach-fl"
+to = "/locations/deerfield-beach/service-area/hillsboro-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-jupiter-inlet-colony-fl"
+to = "/locations/deerfield-beach/service-area/jupiter-inlet-colony"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-palm-beach-shores-fl"
+to = "/locations/deerfield-beach/service-area/palm-beach-shores"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lauderdale-ranches-fl"
+to = "/locations/deerfield-beach/service-area/lauderdale-ranches"
+status = 301
+
+# Trailing slash redirects for key service pages
+[[redirects]]
+from = "/residential-roofing/"
+to = "/residential-roofing"
+status = 301
+
+[[redirects]]
+from = "/commercial-roofing/"
+to = "/commercial-roofing"
+status = 301
+
+[[redirects]]
+from = "/tile-roofing/"
+to = "/tile-roofing"
+status = 301
+
+[[redirects]]
+from = "/metal-roofing/"
+to = "/metal-roofing"
+status = 301
+
+[[redirects]]
+from = "/shingle-roofing/"
+to = "/shingle-roofing"
+status = 301
+
+[[redirects]]
+from = "/flat-roofing/"
+to = "/flat-roofing"
+status = 301
+
+[[redirects]]
+from = "/single-ply-roofing/"
+to = "/single-ply-roofing"
+status = 301
+
+[[redirects]]
+from = "/roof-inspection/"
+to = "/roof-inspection"
+status = 301
+
+[[redirects]]
+from = "/roof-maintenance-programs/"
+to = "/roof-maintenance-programs"
+status = 301
+
+[[redirects]]
+from = "/easy-payments/"
+to = "/easy-payments"
+status = 301
+
+[[redirects]]
+from = "/contact/"
+to = "/contact"
+status = 301
+
+[[redirects]]
+from = "/reviews/"
+to = "/reviews"
+status = 301
+
+[[redirects]]
+from = "/projects/"
+to = "/projects"
+status = 301
+
+[[redirects]]
+from = "/blog/"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/sitemap/"
+to = "/sitemap"
+status = 301
+
+[[redirects]]
+from = "/privacy/"
+to = "/privacy"
+status = 301
+
+[[redirects]]
+from = "/terms/"
+to = "/terms"
+status = 301
+
+[[redirects]]
+from = "/accessibility/"
+to = "/accessibility"
+status = 301
+
+# Missing cities not yet covered
+[[redirects]]
+from = "/south-palm-beach"
+to = "/locations/deerfield-beach/service-area/south-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/south-palm-beach/"
+to = "/locations/deerfield-beach/service-area/south-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/manalapan"
+to = "/locations/deerfield-beach/service-area/manalapan"
+status = 301
+
+[[redirects]]
+from = "/manalapan/"
+to = "/locations/deerfield-beach/service-area/manalapan"
+status = 301
+
+[[redirects]]
+from = "/glen-ridge"
+to = "/locations/deerfield-beach/service-area/glen-ridge"
+status = 301
+
+[[redirects]]
+from = "/glen-ridge/"
+to = "/locations/deerfield-beach/service-area/glen-ridge"
+status = 301
+
+[[redirects]]
+from = "/juno-beach"
+to = "/locations/deerfield-beach/service-area/juno-beach"
+status = 301
+
+[[redirects]]
+from = "/juno-beach/"
+to = "/locations/deerfield-beach/service-area/juno-beach"
+status = 301
+
+[[redirects]]
+from = "/riviera-beach"
+to = "/locations/deerfield-beach/service-area/riviera-beach"
+status = 301
+
+[[redirects]]
+from = "/riviera-beach/"
+to = "/locations/deerfield-beach/service-area/riviera-beach"
+status = 301
+
+[[redirects]]
+from = "/tequesta"
+to = "/locations/deerfield-beach/service-area/tequesta"
+status = 301
+
+[[redirects]]
+from = "/tequesta/"
+to = "/locations/deerfield-beach/service-area/tequesta"
+status = 301
+
+[[redirects]]
+from = "/mangonia-park"
+to = "/locations/deerfield-beach/service-area/mangonia-park"
+status = 301
+
+[[redirects]]
+from = "/mangonia-park/"
+to = "/locations/deerfield-beach/service-area/mangonia-park"
+status = 301
+
+[[redirects]]
+from = "/palm-springs"
+to = "/locations/deerfield-beach/service-area/palm-springs"
+status = 301
+
+[[redirects]]
+from = "/palm-springs/"
+to = "/locations/deerfield-beach/service-area/palm-springs"
+status = 301
+
+[[redirects]]
+from = "/lake-park"
+to = "/locations/deerfield-beach/service-area/lake-park"
+status = 301
+
+[[redirects]]
+from = "/lake-park/"
+to = "/locations/deerfield-beach/service-area/lake-park"
+status = 301
+
+[[redirects]]
+from = "/briny-breezes"
+to = "/locations/deerfield-beach/service-area/briny-breezes"
+status = 301
+
+[[redirects]]
+from = "/briny-breezes/"
+to = "/locations/deerfield-beach/service-area/briny-breezes"
+status = 301
+
+[[redirects]]
+from = "/lazy-lake"
+to = "/locations/deerfield-beach/service-area/lazy-lake"
+status = 301
+
+[[redirects]]
+from = "/lazy-lake/"
+to = "/locations/deerfield-beach/service-area/lazy-lake"
+status = 301
+
+[[redirects]]
+from = "/belle-glade"
+to = "/locations/deerfield-beach/service-area/belle-glade"
+status = 301
+
+[[redirects]]
+from = "/belle-glade/"
+to = "/locations/deerfield-beach/service-area/belle-glade"
+status = 301
+
+[[redirects]]
+from = "/pahokee"
+to = "/locations/deerfield-beach/service-area/pahokee"
+status = 301
+
+[[redirects]]
+from = "/pahokee/"
+to = "/locations/deerfield-beach/service-area/pahokee"
+status = 301
+
+[[redirects]]
+from = "/hillsboro-pines"
+to = "/locations/deerfield-beach/service-area/hillsboro-pines"
+status = 301
+
+[[redirects]]
+from = "/hillsboro-pines/"
+to = "/locations/deerfield-beach/service-area/hillsboro-pines"
+status = 301
+
+# Old service-areas URL pattern redirects to new locations structure
+[[redirects]]
+from = "/service-areas/:city"
+to = "/locations/deerfield-beach/service-area/:city"
+status = 301
+
+[[redirects]]
+from = "/service-areas/:city/"
+to = "/locations/deerfield-beach/service-area/:city"
+status = 301
+
+[[redirects]]
+from = "/service-areas/:city/roof-cost-estimate"
+to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/service-areas/:city/roof-cost-estimate/"
+to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
+status = 301
+
+# Trailing slash redirects for location pages
+[[redirects]]
+from = "/locations/deerfield-beach/"
+to = "/locations/deerfield-beach"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/"
+to = "/locations/deerfield-beach/service-area"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/:city/"
+to = "/locations/deerfield-beach/service-area/:city"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator/"
+to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/:city/top-5-roofer/"
+to = "/locations/deerfield-beach/service-area/:city/top-5-roofer"
+status = 301
+
+# Location hub variants (only deerfield-beach is valid hub)
+[[redirects]]
+from = "/locations/pompano-beach"
+to = "/locations/deerfield-beach/service-area/pompano-beach"
+status = 301
+
+[[redirects]]
+from = "/locations/pompano-beach/"
+to = "/locations/deerfield-beach/service-area/pompano-beach"
+status = 301
+
+[[redirects]]
+from = "/locations/lighthouse-point"
+to = "/locations/deerfield-beach/service-area/lighthouse-point"
+status = 301
+
+[[redirects]]
+from = "/locations/lighthouse-point/"
+to = "/locations/deerfield-beach/service-area/lighthouse-point"
+status = 301
+
+# Additional roofing contractor patterns for new cities
+[[redirects]]
+from = "/roofing-contractor-manalapan-fl"
+to = "/locations/deerfield-beach/service-area/manalapan"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-south-palm-beach-fl"
+to = "/locations/deerfield-beach/service-area/south-palm-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-juno-beach-fl"
+to = "/locations/deerfield-beach/service-area/juno-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-riviera-beach-fl"
+to = "/locations/deerfield-beach/service-area/riviera-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-tequesta-fl"
+to = "/locations/deerfield-beach/service-area/tequesta"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-briny-breezes-fl"
+to = "/locations/deerfield-beach/service-area/briny-breezes"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-lake-park-fl"
+to = "/locations/deerfield-beach/service-area/lake-park"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-mangonia-park-fl"
+to = "/locations/deerfield-beach/service-area/mangonia-park"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-palm-springs-fl"
+to = "/locations/deerfield-beach/service-area/palm-springs"
+status = 301
+
+# Additional roof repair patterns
+[[redirects]]
+from = "/roof-repair/lighthouse-point"
+to = "/roofing-services/roof-repair/lighthouse-point"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/hallandale-beach"
+to = "/roofing-services/roof-repair/hallandale-beach"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/miramar"
+to = "/roofing-services/roof-repair/miramar"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/plantation"
+to = "/roofing-services/roof-repair/plantation"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/weston"
+to = "/roofing-services/roof-repair/weston"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/tamarac"
+to = "/roofing-services/roof-repair/tamarac"
+status = 301
+
+[[redirects]]
+from = "/roof-repair/margate"
+to = "/roofing-services/roof-repair/margate"
+status = 301
+
+# Additional inspection redirects (consolidate to main page)
+[[redirects]]
+from = "/flat-roof-inspection-broward-county"
+to = "/roof-inspection"
+status = 301
+
+[[redirects]]
+from = "/flat-roof-inspection-palm-beach-county"
+to = "/roof-inspection"
+status = 301
+
+# Blog post catch-all - redirect non-existent posts to blog index
+# This handles all the blog posts that don't exist yet
+[[redirects]]
+from = "/blog/*"
+to = "/blog"
+status = 301
+
+# SPA catch-all - MUST BE LAST
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
