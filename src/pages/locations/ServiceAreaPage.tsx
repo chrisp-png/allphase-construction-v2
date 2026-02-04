@@ -17,9 +17,13 @@
  */
 
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { sheetSitemap, SitemapEntry } from '../../data/sheetSitemap';
 import { MapPin, ArrowRight, Phone, Mail, Calculator, Award } from 'lucide-react';
 import NoIndexMeta from '../../components/NoIndexMeta';
+import InternalLinksBlock from '../../components/InternalLinksBlock';
+import { CITY_COORDINATES } from '../../data/cityCoordinates';
+import { generateLocalBusinessSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../../utils/seoSchemas';
 
 export default function ServiceAreaPage() {
   const { citySlug } = useParams<{ citySlug: string }>();
@@ -44,6 +48,17 @@ export default function ServiceAreaPage() {
   ) : cityEntry;
 
   const finalCity = cityEntry || cityByLabel;
+
+  // Extract clean city name for display
+  const cleanCityName = finalCity
+    ? finalCity.label
+        .replace('Roofing Contractor in', '')
+        .replace('Roofing Contractor', '')
+        .trim()
+    : '';
+
+  // Get city coordinates for schema
+  const cityCoords = citySlug ? CITY_COORDINATES[citySlug] : null;
 
   // Get hub link
   const hubPath = hubSlug ? `/locations/${hubSlug}` : null;
@@ -127,6 +142,59 @@ export default function ServiceAreaPage() {
     new Map(relatedPages.map(page => [page.path, page])).values()
   );
 
+  // City-specific FAQs
+  const cityFAQs = finalCity ? [
+    {
+      question: `Do you provide roofing services in ${cleanCityName}?`,
+      answer: `Yes, we provide comprehensive roofing services throughout ${cleanCityName} and surrounding areas in ${countyName || 'South Florida'}. Our licensed crews regularly service residential and commercial properties in your area.`
+    },
+    {
+      question: `How quickly can you respond to a roofing emergency in ${cleanCityName}?`,
+      answer: `We offer same-day emergency service for ${cleanCityName} residents. Our crews are strategically located to provide fast response times throughout ${countyName || 'the region'}. Call us at (754) 227-5605 for immediate assistance.`
+    },
+    {
+      question: `Are you licensed to work in ${cleanCityName}?`,
+      answer: `Yes, All Phase Construction USA is fully licensed and insured to work throughout ${countyName || 'Broward and Palm Beach Counties'}. We hold all required Florida state contractor licenses and are HVHZ (High Velocity Hurricane Zone) certified.`
+    },
+    {
+      question: `What types of roofs do you install in ${cleanCityName}?`,
+      answer: `We install and repair all major roofing types in ${cleanCityName} including tile roofs, metal roofs, shingle roofs, flat roofs, and single-ply systems. We'll help you choose the best option for your property and budget.`
+    },
+    {
+      question: `Do you offer free estimates in ${cleanCityName}?`,
+      answer: `Yes, we provide free, no-obligation estimates for all roofing projects in ${cleanCityName}. We'll inspect your roof, answer your questions, and provide a detailed written quote with no pressure to buy.`
+    },
+    {
+      question: `What makes your roofing company different in ${cleanCityName}?`,
+      answer: `We're a local, family-owned business with over 15 years of experience serving ${countyName || 'South Florida'}. We offer transparent pricing, quality workmanship, and exceptional customer service. Over 2,500 satisfied customers trust us with their roofing needs.`
+    },
+    {
+      question: `How long does a roof replacement take in ${cleanCityName}?`,
+      answer: `Most residential roof replacements in ${cleanCityName} are completed in 2-5 days depending on the size and complexity of the project. We'll provide a detailed timeline during your free estimate.`
+    },
+    {
+      question: `Do you help with insurance claims in ${cleanCityName}?`,
+      answer: `Yes, we have extensive experience working with insurance companies for storm damage and roof replacement claims. We can inspect your roof, document damage, and provide detailed estimates to support your claim.`
+    }
+  ] : [];
+
+  // Generate schemas
+  const canonicalUrl = finalCity ? `https://allphaseconstructionfl.com${finalCity.path}` : '';
+  const pageTitle = finalCity ? `${cleanCityName} Roofing Contractor | All Phase Construction` : 'Service Area Not Found';
+  const pageDescription = finalCity
+    ? `Licensed roofing contractor serving ${cleanCityName}, ${countyName || 'Florida'}. Expert roof repair, replacement & inspection. Free estimates. HVHZ certified. Call (754) 227-5605.`
+    : 'Service area not found';
+
+  const schemas = finalCity ? [
+    generateLocalBusinessSchema('https://allphaseconstructionfl.com'),
+    generateFAQPageSchema(cityFAQs),
+    generateBreadcrumbSchema([
+      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+      { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/service-areas' },
+      { name: cleanCityName, url: canonicalUrl }
+    ])
+  ] : [];
+
   // If no city found, show error state
   if (!finalCity) {
     return (
@@ -160,6 +228,27 @@ export default function ServiceAreaPage() {
       {/* Apply noindex if the city exists but is not indexable */}
       {finalCity && !finalCity.indexable && <NoIndexMeta />}
 
+      {/* SEO Meta Tags */}
+      {finalCity && finalCity.indexable && (
+        <Helmet>
+          <title>{pageTitle}</title>
+          <meta name="description" content={pageDescription} />
+          <link rel="canonical" href={canonicalUrl} />
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={pageDescription} />
+          <meta property="og:url" content={canonicalUrl} />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={pageTitle} />
+          <meta name="twitter:description" content={pageDescription} />
+          {schemas.length > 0 && (
+            <script type="application/ld+json">
+              {JSON.stringify(schemas)}
+            </script>
+          )}
+        </Helmet>
+      )}
+
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
@@ -170,7 +259,7 @@ export default function ServiceAreaPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Roofing Services in {finalCity.label.replace('Roofing Contractor in', '').replace('Roofing Contractor', '').trim()}
+            Roofing Services in {cleanCityName}
           </h1>
 
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6 font-medium">
@@ -290,7 +379,7 @@ export default function ServiceAreaPage() {
             </h3>
             <p className="text-gray-400">
               Expert installation and repair of tile, metal, shingle, and flat roofs
-              for homes in {finalCity.label.replace('Roofing Contractor', '').trim()}.
+              for homes in {cleanCityName}.
             </p>
           </div>
 
@@ -315,13 +404,54 @@ export default function ServiceAreaPage() {
           </div>
         </div>
 
+        {/* Internal Links Block */}
+        <InternalLinksBlock
+          currentCity={cleanCityName}
+          showCoreServices={true}
+          showNearbyCities={true}
+          nearbyCities={uniqueRelatedPages
+            .filter(page => page.section.includes('Service Areas'))
+            .slice(0, 6)
+            .map(page => ({
+              label: page.label,
+              path: page.path
+            }))}
+        />
+
+        {/* FAQs Section */}
+        {cityFAQs.length > 0 && (
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-4">
+              {cityFAQs.map((faq, index) => (
+                <details
+                  key={index}
+                  className="bg-gray-800/30 rounded-xl border border-gray-700 overflow-hidden group"
+                >
+                  <summary className="p-6 cursor-pointer font-semibold text-white hover:text-red-600 transition-colors flex justify-between items-center">
+                    <span>{faq.question}</span>
+                    <span className="text-red-600 text-xl group-open:rotate-180 transition-transform">
+                      ▼
+                    </span>
+                  </summary>
+                  <div className="px-6 pb-6 text-gray-300 leading-relaxed">
+                    {faq.answer}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-700 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Need Expert Roofing Services?
           </h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Serving {finalCity.label.replace('Roofing Contractor', '').trim()} and surrounding areas.
+            Serving {cleanCityName} and surrounding areas.
             Contact us today for a free inspection and no-obligation estimate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -17,46 +17,17 @@ import {
   ChevronRight,
   BadgeCheck
 } from 'lucide-react';
+import InternalLinksBlock from '../components/InternalLinksBlock';
+import { generateLocalBusinessSchema, generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
 
 export default function ResidentialRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Residential Roofing South Florida | All Phase';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Dual-licensed residential roofing contractor serving Broward & Palm Beach Counties. Building envelope approach extends roof life, lowers energy bills & can reduce insurance premiums. Free inspection.');
-    }
-
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Residential Roofing Services",
-      "serviceType": "Residential Roofing",
-      "description": "Residential roofing services in South Florida. Complete roof replacement and installation for single-family homes, townhomes, and low-rise residential properties. All material types available with HVHZ compliance.",
-      "url": "https://allphaseconstructionfl.com/residential-roofing",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
+
+  const pageTitle = 'Residential Roofing South Florida | All Phase Construction';
+  const pageDescription = 'Dual-licensed residential roofing contractor serving Broward & Palm Beach Counties. Building envelope approach extends roof life, lowers energy bills & can reduce insurance premiums. Free inspection.';
+  const canonicalUrl = 'https://allphaseconstructionfl.com/residential-roofing';
 
   const faqs = [
     {
@@ -85,8 +56,39 @@ export default function ResidentialRoofingPage() {
     }
   ];
 
+  const schemas = [
+    generateLocalBusinessSchema(canonicalUrl),
+    generateServiceSchema(
+      'Residential Roofing Services',
+      'Complete residential roof replacement and installation for single-family homes, townhomes, and low-rise residential properties throughout South Florida. All material types available with HVHZ compliance.',
+      canonicalUrl
+    ),
+    generateFAQPageSchema(faqs),
+    generateBreadcrumbSchema([
+      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+      { name: 'Residential Roofing', url: canonicalUrl }
+    ])
+  ];
+
   return (
-    <><div className="min-h-screen bg-black text-white">
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify(schemas)}
+        </script>
+      </Helmet>
+
+      <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black" />
@@ -582,6 +584,23 @@ export default function ResidentialRoofingPage() {
           >
             Check If We Service Your Area
           </Link>
+        </div>
+      </section>
+
+      {/* Internal Links Section */}
+      <section className="py-12 px-4 bg-zinc-900/50">
+        <div className="max-w-7xl mx-auto">
+          <InternalLinksBlock
+            title="Related Roofing Services & Areas"
+            showCoreServices={true}
+            showNearbyCities={true}
+            additionalLinks={[
+              { label: 'Roof Replacement Process', path: '/residential-roofing/roof-replacement-process', description: 'Our proven 10-step roof replacement process' },
+              { label: 'Tile Roofing', path: '/tile-roofing', description: 'Durable tile roof installation and repair' },
+              { label: 'Metal Roofing', path: '/metal-roofing', description: 'Long-lasting metal roof solutions' },
+              { label: 'Shingle Roofing', path: '/shingle-roofing', description: 'Quality shingle roof services' }
+            ]}
+          />
         </div>
       </section>
 
