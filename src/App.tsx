@@ -294,90 +294,90 @@ function AppContent() {
             <Route path="/service-areas" element={<ServiceAreasPage />} />
             <Route path="/service-areas-index" element={<ServiceAreasIndexPage />} />
             <Route path="/service-areas/:citySlug" element={<ServiceAreaCityPage />} />
-            <Route path="/boca-raton-old" element={<BocaRatonPage />} />
-            <Route path="/wellington-old" element={<WellingtonPage />} />
-            <Route path="/deerfield-beach-old" element={<DeerfieldBeachPage />} />
-            <Route path="/fort-lauderdale-old" element={<FortLauderdalePage />} />
-            <Route path="/coral-springs-old" element={<CoralSpringsPage />} />
-            <Route path="/delray-beach-old" element={<DelrayBeachPage />} />
-            <Route path="/boynton-beach-old" element={<BoyntonBeachPage />} />
-            <Route path="/lake-worth-beach-old" element={<LakeWorthBeachPage />} />
-            <Route path="/pompano-beach-old" element={<PompanoBeachPage />} />
+            <Route path="/boca-raton" element={<BocaRatonPage />} />
+            <Route path="/wellington" element={<WellingtonPage />} />
+            <Route path="/deerfield-beach" element={<DeerfieldBeachPage />} />
+            <Route path="/fort-lauderdale" element={<FortLauderdalePage />} />
+            <Route path="/coral-springs" element={<CoralSpringsPage />} />
+            <Route path="/delray-beach" element={<DelrayBeachPage />} />
+            <Route path="/boynton-beach" element={<BoyntonBeachPage />} />
+            <Route path="/lake-worth-beach" element={<LakeWorthBeachPage />} />
+            <Route path="/pompano-beach" element={<PompanoBeachPage />} />
             <Route path="/pompano-beach/roof-cost-estimate" element={<PompanoBeachCalculatorPage />} />
-            <Route path="/coconut-creek-old" element={<CoconutCreekPage />} />
-            <Route path="/cooper-city-old" element={<CooperCityPage />} />
-            <Route path="/davie-old" element={<DaviePage />} />
-            <Route path="/dania-beach-old" element={<DaniaBeachPage />} />
-            <Route path="/hallandale-beach-old" element={<HallandaleBeachPage />} />
-            <Route path="/hillsboro-beach-old" element={<HillsboroBeachPage />} />
-            <Route path="/hollywood-old" element={<HollywoodPage />} />
-            <Route path="/lauderdale-by-the-sea-old" element={<LauderdaleByTheSeaPage />} />
-            <Route path="/lauderdale-lakes-old" element={<LauderdaleLakesPage />} />
-            <Route path="/lauderhill-old" element={<LauderhillPage />} />
-            <Route path="/lauderdale-ranches-old" element={<LauderdaleRanchesPage />} />
-            <Route path="/lighthouse-point-old" element={<LighthousePointPage />} />
-            <Route path="/margate-old" element={<MargatePage />} />
+            <Route path="/coconut-creek" element={<CoconutCreekPage />} />
+            <Route path="/cooper-city" element={<CooperCityPage />} />
+            <Route path="/davie" element={<DaviePage />} />
+            <Route path="/dania-beach" element={<DaniaBeachPage />} />
+            <Route path="/hallandale-beach" element={<HallandaleBeachPage />} />
+            <Route path="/hillsboro-beach" element={<HillsboroBeachPage />} />
+            <Route path="/hollywood" element={<HollywoodPage />} />
+            <Route path="/lauderdale-by-the-sea" element={<LauderdaleByTheSeaPage />} />
+            <Route path="/lauderdale-lakes" element={<LauderdaleLakesPage />} />
+            <Route path="/lauderhill" element={<LauderhillPage />} />
+            <Route path="/lauderdale-ranches" element={<LauderdaleRanchesPage />} />
+            <Route path="/lighthouse-point" element={<LighthousePointPage />} />
+            <Route path="/margate" element={<MargatePage />} />
             <Route path="/margate/roof-cost-estimate" element={<MargateCalculatorPage />} />
-            <Route path="/miramar-old" element={<MiramarPage />} />
+            <Route path="/miramar" element={<MiramarPage />} />
             <Route path="/miramar/roof-cost-estimate" element={<MiramarCalculatorPage />} />
-            <Route path="/north-lauderdale-old" element={<NorthLauderdalePage />} />
+            <Route path="/north-lauderdale" element={<NorthLauderdalePage />} />
             <Route path="/north-lauderdale/roof-cost-estimate" element={<NorthLauderdaleCalculatorPage />} />
-            <Route path="/oakland-park-old" element={<OaklandParkPage />} />
-            <Route path="/parkland-old" element={<ParklandPage />} />
+            <Route path="/oakland-park" element={<OaklandParkPage />} />
+            <Route path="/parkland" element={<ParklandPage />} />
             <Route path="/parkland/roof-cost-estimate" element={<ParklandCalculatorPage />} />
-            <Route path="/plantation-old" element={<PlantationPage />} />
+            <Route path="/plantation" element={<PlantationPage />} />
             <Route path="/plantation/roof-cost-estimate" element={<PlantationCalculatorPage />} />
-            <Route path="/sunrise-old" element={<SunrisePage />} />
+            <Route path="/sunrise" element={<SunrisePage />} />
             <Route path="/sunrise/roof-cost-estimate" element={<SunriseCalculatorPage />} />
-            <Route path="/tamarac-old" element={<TamaracPage />} />
+            <Route path="/tamarac" element={<TamaracPage />} />
             <Route path="/tamarac/roof-cost-estimate" element={<TamaracCalculatorPage />} />
-            <Route path="/weston-old" element={<WestonPage />} />
+            <Route path="/weston" element={<WestonPage />} />
             <Route path="/weston/roof-cost-estimate" element={<WestonCalculatorPage />} />
-            <Route path="/southwest-ranches-old" element={<SouthwestRanchesPage />} />
+            <Route path="/southwest-ranches" element={<SouthwestRanchesPage />} />
             <Route path="/southwest-ranches/roof-cost-estimate" element={<SouthwestRanchesCalculatorPage />} />
-            <Route path="/haverhill-old" element={<HaverillPage />} />
+            <Route path="/haverhill" element={<HaverillPage />} />
             <Route path="/haverhill/roof-cost-estimate" element={<HaverillCalculatorPage />} />
-            <Route path="/hypoluxo-old" element={<HypoluxoPage />} />
+            <Route path="/hypoluxo" element={<HypoluxoPage />} />
             <Route path="/hypoluxo/roof-cost-estimate" element={<HypoluxoCalculatorPage />} />
-            <Route path="/highland-beach-old" element={<HighlandBeachPage />} />
+            <Route path="/highland-beach" element={<HighlandBeachPage />} />
             <Route path="/highland-beach/roof-cost-estimate" element={<HighlandBeachCalculatorPage />} />
             <Route path="/hillsboro-beach/roof-cost-estimate" element={<HillsboroBeachCalculatorPage />} />
-            <Route path="/jupiter-old" element={<JupiterPage />} />
-            <Route path="/jupiter-inlet-colony-old" element={<JupiterInletColonyPage />} />
+            <Route path="/jupiter" element={<JupiterPage />} />
+            <Route path="/jupiter-inlet-colony" element={<JupiterInletColonyPage />} />
             <Route path="/jupiter-inlet-colony/roof-cost-estimate" element={<JupiterInletColonyCalculatorPage />} />
-            <Route path="/lantana-old" element={<LantanaPage />} />
+            <Route path="/lantana" element={<LantanaPage />} />
             <Route path="/lantana/roof-cost-estimate" element={<LantanaCalculatorPage />} />
             <Route path="/lauderdale-lakes/roof-cost-estimate" element={<LauderdaleLakesCalculatorPage />} />
             <Route path="/lauderdale-ranches/roof-cost-estimate" element={<LauderdaleRanchesCalculatorPage />} />
             <Route path="/lauderdale-by-the-sea/roof-cost-estimate" element={<LauderdaleByTheSeaCalculatorPage />} />
             <Route path="/lauderhill/roof-cost-estimate" element={<LauderhillCalculatorPage />} />
             <Route path="/lighthouse-point/roof-cost-estimate" element={<LighthousePointCalculatorPage />} />
-            <Route path="/loxahatchee-groves-old" element={<LoxahatcheeGrovesPage />} />
+            <Route path="/loxahatchee-groves" element={<LoxahatcheeGrovesPage />} />
             <Route path="/loxahatchee-groves/roof-cost-estimate" element={<LoxahatcheeGrovesCalculatorPage />} />
-            <Route path="/north-palm-beach-old" element={<NorthPalmBeachPage />} />
+            <Route path="/north-palm-beach" element={<NorthPalmBeachPage />} />
             <Route path="/north-palm-beach/roof-cost-estimate" element={<NorthPalmBeachCalculatorPage />} />
-            <Route path="/ocean-ridge-old" element={<OceanRidgePage />} />
+            <Route path="/ocean-ridge" element={<OceanRidgePage />} />
             <Route path="/ocean-ridge/roof-cost-estimate" element={<OceanRidgeCalculatorPage />} />
-            <Route path="/palm-beach-old" element={<PalmBeachPage />} />
+            <Route path="/palm-beach" element={<PalmBeachPage />} />
             <Route path="/palm-beach/roof-cost-estimate" element={<PalmBeachCalculatorPage />} />
-            <Route path="/palm-beach-gardens-old" element={<PalmBeachGardensPage />} />
+            <Route path="/palm-beach-gardens" element={<PalmBeachGardensPage />} />
             <Route path="/palm-beach-gardens/roof-cost-estimate" element={<PalmBeachGardensCalculatorPage />} />
-            <Route path="/palm-beach-shores-old" element={<PalmBeachShoresPage />} />
+            <Route path="/palm-beach-shores" element={<PalmBeachShoresPage />} />
             <Route path="/palm-beach-shores/roof-cost-estimate" element={<PalmBeachShoresCalculatorPage />} />
-            <Route path="/pembroke-park-old" element={<PembrokeParkPage />} />
+            <Route path="/pembroke-park" element={<PembrokeParkPage />} />
             <Route path="/pembroke-park/roof-cost-estimate" element={<PembrokeParkCalculatorPage />} />
-            <Route path="/pembroke-pines-old" element={<PembrokePinesPage />} />
+            <Route path="/pembroke-pines" element={<PembrokePinesPage />} />
             <Route path="/pembroke-pines/roof-cost-estimate" element={<PembrokePinesCalculatorPage />} />
-            <Route path="/royal-palm-beach-old" element={<RoyalPalmBeachPage />} />
+            <Route path="/royal-palm-beach" element={<RoyalPalmBeachPage />} />
             <Route path="/royal-palm-beach/roof-cost-estimate" element={<RoyalPalmBeachCalculatorPage />} />
-            <Route path="/sea-ranch-lakes-old" element={<SeaRanchLakesPage />} />
+            <Route path="/sea-ranch-lakes" element={<SeaRanchLakesPage />} />
             <Route path="/sea-ranch-lakes/roof-cost-estimate" element={<SeaRanchLakesCalculatorPage />} />
-            <Route path="/westlake-old" element={<WestlakePage />} />
+            <Route path="/westlake" element={<WestlakePage />} />
             <Route path="/westlake/roof-cost-estimate" element={<WestlakeCalculatorPage />} />
-            <Route path="/west-palm-beach-old" element={<WestPalmBeachPage />} />
-            <Route path="/wilton-manors-old" element={<WiltonManorsPage />} />
+            <Route path="/west-palm-beach" element={<WestPalmBeachPage />} />
+            <Route path="/wilton-manors" element={<WiltonManorsPage />} />
             <Route path="/wilton-manors/roof-cost-estimate" element={<WiltonManorsCalculatorPage />} />
-            <Route path="/greenacres-old" element={<GreenacresPage />} />
+            <Route path="/greenacres" element={<GreenacresPage />} />
             <Route path="/greenacres/roof-cost-estimate" element={<GreenacresCalculatorPage />} />
             <Route path="/coconut-creek/roof-cost-estimate" element={<CoconutCreekCalculatorPage />} />
             <Route path="/cooper-city/roof-cost-estimate" element={<CooperCityCalculatorPage />} />
@@ -400,17 +400,17 @@ function AppContent() {
             <Route path="/how-to-hire-roofing-contractor" element={<HowToHireRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />
-            <Route path="/broward-county-old" element={<BrowardCountyPage />} />
-            <Route path="/palm-beach-county-old" element={<PalmBeachCountyPage />} />
-            <Route path="/gulf-stream-old" element={<GulfStreamPage />} />
-            <Route path="/roofing-contractor-boca-raton-fl-old" element={<BocaRatonTopRooferPage />} />
-            <Route path="/roofing-contractor-boynton-beach-fl-old" element={<BoyntonBeachTopRooferPage />} />
-            <Route path="/roofing-contractor-coconut-creek-fl-old" element={<CoconutCreekTopRooferPage />} />
-            <Route path="/roofing-contractor-coral-springs-fl-old" element={<CoralSpringsTopRooferPage />} />
-            <Route path="/roofing-contractor-deerfield-beach-fl-old" element={<DeerfieldBeachTopRooferPage />} />
-            <Route path="/roofing-contractor-deerfield-beach-palm-beach-fl-old" element={<DeerfieldBeachPalmBeachTopRooferPage />} />
-            <Route path="/roofing-contractor-fort-lauderdale-fl-old" element={<FortLauderdaleTopRooferPage />} />
-            <Route path="/roofing-contractor-west-palm-beach-fl-old" element={<WestPalmBeachTopRooferPage />} />
+            <Route path="/broward-county" element={<BrowardCountyPage />} />
+            <Route path="/palm-beach-county" element={<PalmBeachCountyPage />} />
+            <Route path="/gulf-stream" element={<GulfStreamPage />} />
+            <Route path="/roofing-contractor-boca-raton-fl" element={<BocaRatonTopRooferPage />} />
+            <Route path="/roofing-contractor-boynton-beach-fl" element={<BoyntonBeachTopRooferPage />} />
+            <Route path="/roofing-contractor-coconut-creek-fl" element={<CoconutCreekTopRooferPage />} />
+            <Route path="/roofing-contractor-coral-springs-fl" element={<CoralSpringsTopRooferPage />} />
+            <Route path="/roofing-contractor-deerfield-beach-fl" element={<DeerfieldBeachTopRooferPage />} />
+            <Route path="/roofing-contractor-deerfield-beach-palm-beach-fl" element={<DeerfieldBeachPalmBeachTopRooferPage />} />
+            <Route path="/roofing-contractor-fort-lauderdale-fl" element={<FortLauderdaleTopRooferPage />} />
+            <Route path="/roofing-contractor-west-palm-beach-fl" element={<WestPalmBeachTopRooferPage />} />
             <Route path="/blog" element={<BlogIndexPage />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/service-areas/:citySlug/service-area/:subCitySlug" element={<ServiceAreaDynamicPage />} />
