@@ -1897,8 +1897,8 @@ status = 301
 
 [[redirects]]
 from = "/blog/*"
-to = "/blog"
-status = 301
+to = "/index.html"
+status = 200
 
 [[redirects]]
 from = "/*"
