@@ -195,7 +195,7 @@ export default function RoofInspectionPage() {
     <>
       <SEO
         title="Roof Inspection Services in Broward & Palm Beach County, FL"
-        description="Professional roof inspections in South Florida. Comprehensive diagnostic evaluations to determine repair versus replacement. Licensed contractors familiar with HVHZ codes and material-specific failure patterns."
+        description="Professional roof inspections in Broward & Palm Beach County by a dual-licensed roofing contractor. Insurance-ready reports. Free inspections available."
         canonical="https://allphaseconstructionfl.com/roof-inspection"
         schema={schemas}
       />
