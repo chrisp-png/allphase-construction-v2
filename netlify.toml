@@ -1872,6 +1872,16 @@ from = "/flat-roof-inspection-palm-beach-county"
 to = "/roof-inspection"
 status = 301
 
+[[redirects]]
+from = "/residential-roofing/roof-replacement-process"
+to = "/roof-replacement-process"
+status = 301
+
+[[redirects]]
+from = "/residential-roofing/roof-replacement-process/"
+to = "/roof-replacement-process"
+status = 301
+
 [[edge_functions]]
 function = "normalize-case"
 path = "/*"

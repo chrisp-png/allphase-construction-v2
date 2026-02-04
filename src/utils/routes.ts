@@ -20,7 +20,7 @@ export const siteRoutes: RouteGroup[] = [
     title: 'Roofing Services',
     routes: [
       { path: '/residential-roofing', name: 'Residential Roofing' },
-      { path: '/residential-roofing/roof-replacement-process', name: 'Roof Replacement Process' },
+      { path: '/roof-replacement-process', name: 'Roof Replacement Process' },
       { path: '/commercial-roofing', name: 'Commercial Roofing' },
       { path: '/tile-roofing', name: 'Tile Roofing' },
       { path: '/metal-roofing', name: 'Metal Roofing' },

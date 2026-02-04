@@ -116,7 +116,7 @@ export default function RoofRepairPage() {
       a: (
         <>
           Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer.{' '}
-          <Link to="/residential-roofing/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
+          <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
             Learn about our 10-step roof replacement process
           </Link>
           .

@@ -186,7 +186,7 @@ export default function ResidentialRoofingPage() {
 
           <p className="text-lg text-zinc-300 leading-relaxed">
             Want to know exactly what happens during a roof replacement?{' '}
-            <Link to="/residential-roofing/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
+            <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
               See our 10-step roof replacement process
             </Link>
             {' '}from initial inspection through final walkthrough.
@@ -595,7 +595,7 @@ export default function ResidentialRoofingPage() {
             showCoreServices={true}
             showNearbyCities={true}
             additionalLinks={[
-              { label: 'Roof Replacement Process', path: '/residential-roofing/roof-replacement-process', description: 'Our proven 10-step roof replacement process' },
+              { label: 'Roof Replacement Process', path: '/roof-replacement-process', description: 'Our proven 10-step roof replacement process' },
               { label: 'Tile Roofing', path: '/tile-roofing', description: 'Durable tile roof installation and repair' },
               { label: 'Metal Roofing', path: '/metal-roofing', description: 'Long-lasting metal roof solutions' },
               { label: 'Shingle Roofing', path: '/shingle-roofing', description: 'Quality shingle roof services' }

@@ -161,7 +161,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/residential-roofing/roof-replacement-process" className="hover:text-red-600 transition-colors">
+                <Link to="/roof-replacement-process" className="hover:text-red-600 transition-colors">
                   Roof Replacement Process
                 </Link>
               </li>
@@ -228,7 +228,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/residential-roofing/roof-replacement-process" className="hover:text-red-600 transition-colors">
+                <Link to="/roof-replacement-process" className="hover:text-red-600 transition-colors">
                   Roof Replacement Process
                 </Link>
               </li>

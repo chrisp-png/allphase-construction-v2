@@ -27,7 +27,7 @@ export default function Header() {
 
   // Residential-specific services (includes Roof Replacement Process)
   const residentialServices = [
-    { name: 'Roof Replacement Process', path: '/residential-roofing/roof-replacement-process' },
+    { name: 'Roof Replacement Process', path: '/roof-replacement-process' },
     { name: 'Tile Roofing', path: '/tile-roofing' },
     { name: 'Metal Roofing', path: '/metal-roofing' },
     { name: 'Shingle Roofing', path: '/shingle-roofing' },

@@ -268,7 +268,7 @@ export default function CaseStudy() {
             Calculate Your Roof's ROI
           </a>
           <a
-            href="/residential-roofing/roof-replacement-process"
+            href="/roof-replacement-process"
             className="inline-block px-8 py-3 border-2 border-red-600 text-red-600 font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors duration-300"
           >
             See Our 10-Step Roof Replacement Process

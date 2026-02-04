@@ -83,10 +83,10 @@ export const sheetSitemap: SitemapEntry[] = [
   {
     section: 'Roofing Services',
     label: 'Roof Replacement Process',
-    path: '/residential-roofing/roof-replacement-process',
-    parent: '/residential-roofing',
+    path: '/roof-replacement-process',
+    parent: null,
     indexable: true,
-    priority: 0.8,
+    priority: 0.9,
     changefreq: 'monthly',
   },
   {
