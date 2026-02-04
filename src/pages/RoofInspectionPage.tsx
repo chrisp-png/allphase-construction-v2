@@ -23,6 +23,7 @@ import {
   ArrowRight,
   Plus,
   Minus,
+  FileCheck,
 } from 'lucide-react';
 
 export default function RoofInspectionPage() {
