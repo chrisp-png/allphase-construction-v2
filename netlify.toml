@@ -57,6 +57,12 @@ best-practices = 0.8
 seo = 0.9
 
 [[headers]]
+for = "/*"
+
+[headers.values]
+X-Robots-Tag = "index, follow"
+
+[[headers]]
 for = "/assets/*"
 
 [headers.values]

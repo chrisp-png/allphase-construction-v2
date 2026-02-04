@@ -1,0 +1,24 @@
+# Global headers for all paths
+/*
+  X-Robots-Tag: index, follow
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Specific headers for HTML pages (allow all crawlers)
+/*.html
+  X-Robots-Tag: index, follow
+
+# API routes and dynamic content
+/api/*
+  X-Robots-Tag: noindex
+
+# Ensure crawlers can access all public pages
+/roofing-services/*
+  X-Robots-Tag: index, follow
+
+/locations/*
+  X-Robots-Tag: index, follow
+
+/blog/*
+  X-Robots-Tag: index, follow
