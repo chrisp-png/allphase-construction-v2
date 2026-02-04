@@ -1481,6 +1481,36 @@ to = "/locations/deerfield-beach/service-area/lauderdale-ranches"
 status = 301
 
 [[redirects]]
+from = "/roofing-contractor-deerfield-beach-fl"
+to = "/locations/deerfield-beach"
+status = 301
+
+[[redirects]]
+from = "/roofing-contractor-deerfield-beach-palm-beach-fl"
+to = "/locations/deerfield-beach"
+status = 301
+
+[[redirects]]
+from = "/broward-county"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
+from = "/broward-county/"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
+from = "/palm-beach-county"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
+from = "/palm-beach-county/"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
 from = "/residential-roofing/"
 to = "/residential-roofing"
 status = 301
