@@ -10,15 +10,15 @@ export default function PalmBeachCountyUnincorporatedRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Palm Beach Unincorporated FL';
+    document.title = 'Palm Beach County Unincorporated Roof Repair | All Phase Construction';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Inspection-first roof repair services for Palm Beach County Unincorporated, FL. Diagnostic approach for tile, flat, metal, and shingle systems. Code-compliant repairs, HOA coordination, clear documentation.');
+      metaDescription.setAttribute('content', 'Professional roof repair throughout Palm Beach County Unincorporated, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Inspection-first roof repair services for Palm Beach County Unincorporated, FL. Diagnostic approach for tile, flat, metal, and shingle systems. Code-compliant repairs, HOA coordination, clear documentation.';
+      meta.content = 'Professional roof repair throughout Palm Beach County Unincorporated, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 

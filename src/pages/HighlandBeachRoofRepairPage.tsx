@@ -21,11 +21,11 @@ export default function HighlandBeachRoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Highland Beach FL | All Phase';
+    document.title = 'Highland Beach Roof Repair | Licensed Roofer in Highland Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Highland Beach, FL. Diagnostic inspections, code-compliant repairs, HOA coordination, and insurance documentation support for coastal properties.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Highland Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     }
 
     const faqSchema = document.createElement('script');

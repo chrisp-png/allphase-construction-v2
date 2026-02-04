@@ -20,11 +20,11 @@ export default function LantanaRoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Lantana FL | All Phase';
+    document.title = 'Lantana Roof Repair | Licensed Roofer in Lantana FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Inspection-first roof repair services in Lantana, FL. Florida Building Code compliance, HOA coordination, and diagnostic leak tracing for South Florida properties.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Lantana, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     }
 
     const faqSchema = document.createElement('script');

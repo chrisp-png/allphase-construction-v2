@@ -36,11 +36,16 @@ export default function RoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair South Florida | All Phase Construction';
+    document.title = 'Roof Repair Services | Broward & Palm Beach Counties';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Roof repair and restoration in Broward & Palm Beach Counties. Comprehensive inspections, full-system restoration, and 5-year certification letters to protect your insurance coverage. Free inspection.');
+      metaDescription.setAttribute('content', 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.';
+      document.head.appendChild(meta);
     }
 
     // Service Schema

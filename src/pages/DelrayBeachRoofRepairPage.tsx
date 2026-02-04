@@ -10,15 +10,15 @@ export default function DelrayBeachRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Delray Beach FL | All Phase';
+    document.title = 'Delray Beach Roof Repair | Licensed Roofer in Delray Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Delray Beach, FL. Inspection-first approach for coastal and near-coastal roofs. Tile, flat, metal, and shingle repairs. Salt-air corrosion management, HOA coordination.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Delray Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Delray Beach, FL. Inspection-first approach for coastal and near-coastal roofs. Tile, flat, metal, and shingle repairs. Salt-air corrosion management, HOA coordination.';
+      meta.content = 'Expert roof repair in Delray Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
@@ -91,7 +91,7 @@ export default function DelrayBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Repair in <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">Delray Beach, FL</span>
+                Roof Repair in Delray Beach, Florida
               </h1>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">

@@ -21,11 +21,16 @@ export default function RoofReplacementProcessPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Replacement Process South Florida | All Phase';
+    document.title = '10-Step Roof Replacement Process | All Phase Construction';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'See our complete 10-step HVHZ roof replacement process. From inspection through final approval, learn how we deliver code-compliant roofing projects in South Florida.');
+      metaDescription.setAttribute('content', 'Our proven 10-step roof replacement process for South Florida homes. From inspection to warranty, see what to expect. Licensed, insured teams.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Our proven 10-step roof replacement process for South Florida homes. From inspection to warranty, see what to expect. Licensed, insured teams.';
+      document.head.appendChild(meta);
     }
   }, []);
 
@@ -139,10 +144,7 @@ export default function RoofReplacementProcessPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1]">
-            Roof Replacement Process Built for{' '}
-            <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-              Broward & Palm Beach County • HVHZ
-            </span>
+            Our Roof Replacement Process
           </h1>
 
           <p className="text-xl md:text-2xl text-zinc-300 mb-12 leading-relaxed max-w-4xl">

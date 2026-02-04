@@ -10,15 +10,15 @@ export default function PalmBeachCountyRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Palm Beach County FL | All Phase';
+    document.title = 'Palm Beach County Roof Repair | All Phase Construction';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Palm Beach County, FL. Inspection-first approach for tile, flat, metal, and shingle roof repairs. Diagnostic inspections, HOA coordination, insurance documentation.');
+      metaDescription.setAttribute('content', 'Professional roof repair throughout Palm Beach County, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Palm Beach County, FL. Inspection-first approach for tile, flat, metal, and shingle roof repairs. Diagnostic inspections, HOA coordination, insurance documentation.';
+      meta.content = 'Professional roof repair throughout Palm Beach County, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 

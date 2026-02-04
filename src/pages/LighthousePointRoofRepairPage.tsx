@@ -21,11 +21,11 @@ export default function LighthousePointRoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Lighthouse Point FL | All Phase';
+    document.title = 'Lighthouse Point Roof Repair | Licensed Roofer in Lighthouse Point FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Lighthouse Point, FL. Diagnostic inspections, code-compliant repairs, HOA coordination, and insurance documentation support.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Lighthouse Point, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     }
 
     const faqSchema = document.createElement('script');

@@ -21,11 +21,11 @@ export default function HypoluxoRoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Hypoluxo FL | All Phase';
+    document.title = 'Hypoluxo Roof Repair | Licensed Roofer in Hypoluxo FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Hypoluxo, FL. Inspection-first diagnostics, Florida Building Code compliance, HOA coordination, and insurance documentation support.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Hypoluxo, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     }
 
     const faqSchema = document.createElement('script');

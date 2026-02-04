@@ -10,15 +10,15 @@ export default function DeerfieldBeachRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Deerfield Beach FL | All Phase';
+    document.title = 'Deerfield Beach Roof Repair | Licensed Roofer in Deerfield Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Deerfield Beach, FL. Diagnostic inspections, code-compliant repairs for tile, shingle, flat, and metal roofs. HOA coordination and insurance documentation support.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Deerfield Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Deerfield Beach, FL. Diagnostic inspections, code-compliant repairs for tile, shingle, flat, and metal roofs. HOA coordination and insurance documentation support.';
+      meta.content = 'Expert roof repair in Deerfield Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
@@ -91,7 +91,7 @@ export default function DeerfieldBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Repair in <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">Deerfield Beach, FL</span>
+                Roof Repair in Deerfield Beach, Florida
               </h1>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">

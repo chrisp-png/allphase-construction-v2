@@ -10,15 +10,15 @@ export default function BoyntonBeachRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Boynton Beach FL | All Phase';
+    document.title = 'Boynton Beach Roof Repair | Licensed Roofer in Boynton Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Boynton Beach, FL. Inspection-first approach for tile, flat, metal, and shingle roof repairs. Diagnostic inspections, HOA coordination, insurance documentation.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Boynton Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Boynton Beach, FL. Inspection-first approach for tile, flat, metal, and shingle roof repairs. Diagnostic inspections, HOA coordination, insurance documentation.';
+      meta.content = 'Expert roof repair in Boynton Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
@@ -91,7 +91,7 @@ export default function BoyntonBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Repair in <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">Boynton Beach, FL</span>
+                Roof Repair in Boynton Beach, Florida
               </h1>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">

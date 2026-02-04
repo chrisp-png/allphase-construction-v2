@@ -21,11 +21,11 @@ export default function LakeParkRoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Lake Park FL | All Phase';
+    document.title = 'Lake Park Roof Repair | Licensed Roofer in Lake Park FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Lake Park, FL. Inspection-first diagnostics, Florida Building Code compliance, HOA coordination, and insurance documentation support.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Lake Park, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     }
 
     const faqSchema = document.createElement('script');

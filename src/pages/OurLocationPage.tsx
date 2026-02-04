@@ -7,15 +7,15 @@ export default function OurLocationPage() {
   const { openModal } = useAssessmentModal();
 
   useEffect(() => {
-    document.title = 'Our Location Deerfield Beach FL | All Phase';
+    document.title = 'Our Office | Deerfield Beach Roofing Contractor Location';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Visit or contact All Phase Construction USA at our Deerfield Beach, FL location. Based at 590 Goolsby Blvd, we serve Broward County and Palm Beach County with residential and commercial roofing services.');
+      metaDescription.setAttribute('content', 'Visit us at 590 Goolsby Blvd, Deerfield Beach, FL. Serving Broward & Palm Beach counties. Call (754) 227-5605 for free roof inspection.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Visit or contact All Phase Construction USA at our Deerfield Beach, FL location. Based at 590 Goolsby Blvd, we serve Broward County and Palm Beach County with residential and commercial roofing services.';
+      meta.content = 'Visit us at 590 Goolsby Blvd, Deerfield Beach, FL. Serving Broward & Palm Beach counties. Call (754) 227-5605 for free roof inspection.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -33,7 +33,7 @@ export default function OurLocationPage() {
 
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our Location in Deerfield Beach, FL
+            Our Deerfield Beach Office
           </h1>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto mb-6">
             All Phase Construction USA operates from our Deerfield Beach office at 590 Goolsby Blvd, Deerfield Beach, FL 33442. While this is our home base, our crews provide on-site roofing inspections, repairs, and replacements throughout Broward County and Palm Beach County. Most appointments happen at your property, but our team is always available by phone if you need help quickly or want to schedule a roof assessment.

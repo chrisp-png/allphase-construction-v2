@@ -10,15 +10,15 @@ export default function HallandaleBeachRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Hallandale Beach FL | All Phase';
+    document.title = 'Hallandale Beach Roof Repair | Licensed Roofer in Hallandale Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Hallandale Beach, FL. Diagnostic inspections, code-compliant repairs for low-slope, tile, shingle, and metal roofs. HOA/condo coordination and insurance documentation support.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Hallandale Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Hallandale Beach, FL. Diagnostic inspections, code-compliant repairs for low-slope, tile, shingle, and metal roofs. HOA/condo coordination and insurance documentation support.';
+      meta.content = 'Expert roof repair in Hallandale Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
@@ -91,7 +91,7 @@ export default function HallandaleBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Repair in <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">Hallandale Beach, FL</span>
+                Roof Repair in Hallandale Beach, Florida
               </h1>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">

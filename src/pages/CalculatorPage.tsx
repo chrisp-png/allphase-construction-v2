@@ -12,15 +12,15 @@ export default function CalculatorPage() {
   };
 
   useEffect(() => {
-    document.title = 'Roof Cost Calculator Broward & Palm Beach | All Phase';
+    document.title = 'Roof Cost Calculator | Free Estimate Tool South Florida';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Instant roof cost calculator for Broward & Palm Beach County. Estimate tile, metal, shingle & flat roof costs. Licensed contractors. Call (754) 227-5605');
+      metaDescription.setAttribute('content', 'Get instant roof replacement cost estimates for Broward & Palm Beach homes. Free calculator, no email required. Licensed contractor pricing. Try now.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Instant roof cost calculator for Broward & Palm Beach County. Estimate tile, metal, shingle & flat roof costs. Licensed contractors. Call (754) 227-5605';
+      meta.content = 'Get instant roof replacement cost estimates for Broward & Palm Beach homes. Free calculator, no email required. Licensed contractor pricing. Try now.';
       document.head.appendChild(meta);
     }
 
@@ -129,7 +129,7 @@ export default function CalculatorPage() {
             <div className="flex items-start gap-4">
               <Calculator className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
               <div>
-                <h1 className="text-2xl font-bold text-white mb-3">Instant Roof Cost Estimate for Broward & Palm Beach County</h1>
+                <h1 className="text-2xl font-bold text-white mb-3">Roof Replacement Cost Calculator</h1>
                 <p className="text-zinc-300 leading-relaxed mb-3">
                   Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline">tile</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline">metal</Link>, <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline">shingle</Link>, and <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline">flat roofing</Link> systems based on roof size and material selection.
                 </p>

@@ -10,15 +10,15 @@ export default function PalmBeachRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Palm Beach FL | All Phase Construction';
+    document.title = 'Palm Beach Roof Repair | Licensed Roofer in Palm Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Inspection-first roof repair services in Palm Beach County, FL. Diagnostic approach for tile, flat, metal, and shingle systems. Code-compliant repairs, HOA coordination, insurance documentation.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Palm Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Inspection-first roof repair services in Palm Beach County, FL. Diagnostic approach for tile, flat, metal, and shingle systems. Code-compliant repairs, HOA coordination, insurance documentation.';
+      meta.content = 'Expert roof repair in Palm Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 

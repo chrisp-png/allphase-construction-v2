@@ -10,15 +10,15 @@ export default function WestPalmBeachRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair West Palm Beach FL | All Phase';
+    document.title = 'West Palm Beach Roof Repair | Licensed Roofer in West Palm Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in West Palm Beach, FL. Inspection-first approach for South Florida roofs. Tile, flat, metal, and shingle repairs. Storm damage assessment, HOA coordination, and code-aware scoping.');
+      metaDescription.setAttribute('content', 'Expert roof repair in West Palm Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in West Palm Beach, FL. Inspection-first approach for South Florida roofs. Tile, flat, metal, and shingle repairs. Storm damage assessment, HOA coordination, and code-aware scoping.';
+      meta.content = 'Expert roof repair in West Palm Beach, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
@@ -91,7 +91,7 @@ export default function WestPalmBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Repair in <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">West Palm Beach, FL</span>
+                Roof Repair in West Palm Beach, Florida
               </h1>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">

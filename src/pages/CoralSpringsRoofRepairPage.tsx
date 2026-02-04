@@ -6,15 +6,15 @@ export default function CoralSpringsRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Coral Springs FL | All Phase';
+    document.title = 'Coral Springs Roof Repair | Licensed Roofer in Coral Springs FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Coral Springs, FL. Diagnostic inspections, HVHZ-compliant repairs for tile, shingle, and flat roofs. Licensed and insured.');
+      metaDescription.setAttribute('content', 'Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Coral Springs, FL. Diagnostic inspections, HVHZ-compliant repairs for tile, shingle, and flat roofs. Licensed and insured.';
+      meta.content = 'Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 

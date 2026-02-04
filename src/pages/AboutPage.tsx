@@ -5,15 +5,15 @@ import { Shield, Award, MapPin, Wind, Phone, CheckCircle } from 'lucide-react';
 
 export default function AboutPage() {
   useEffect(() => {
-    document.title = 'About All Phase | Licensed Roofer Broward & Palm Beach';
+    document.title = 'About Us | Licensed Roofer Deerfield Beach FL';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Dual-licensed roofing contractor serving Broward & Palm Beach County since 2003. 2,500+ projects completed. HVHZ certified. Call (754) 227-5605');
+      metaDescription.setAttribute('content', 'Licensed roofing contractor (CCC1331464 & CGC1526236) serving South Florida since 2003. 2,500+ roofs installed in Broward & Palm Beach counties.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Dual-licensed roofing contractor serving Broward & Palm Beach County since 2003. 2,500+ projects completed. HVHZ certified. Call (754) 227-5605';
+      meta.content = 'Licensed roofing contractor (CCC1331464 & CGC1526236) serving South Florida since 2003. 2,500+ roofs installed in Broward & Palm Beach counties.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -70,7 +70,7 @@ export default function AboutPage() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            A Trusted Roofing Contractor Serving South Florida
+            About All Phase Construction
           </h1>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Roofing Expertise Backed by Dual Licensing

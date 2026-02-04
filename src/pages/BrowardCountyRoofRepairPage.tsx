@@ -10,15 +10,15 @@ export default function BrowardCountyRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Broward County FL | All Phase';
+    document.title = 'Broward County Roof Repair | All Phase Construction';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Broward County, FL. Inspection-first approach for tile, flat, metal, and shingle roof repairs. HVHZ-aware, HOA coordination, insurance documentation.');
+      metaDescription.setAttribute('content', 'Professional roof repair throughout Broward County, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof repair services in Broward County, FL. Inspection-first approach for tile, flat, metal, and shingle roof repairs. HVHZ-aware, HOA coordination, insurance documentation.';
+      meta.content = 'Professional roof repair throughout Broward County, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
