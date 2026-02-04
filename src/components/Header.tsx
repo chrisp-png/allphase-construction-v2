@@ -274,7 +274,7 @@ export default function Header() {
                       Service Areas
                     </Link>
                     <Link
-                      to="/how-to-hire-roofing-contractor"
+                      to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors last:rounded-b-lg"
                     >
                       How to Hire a Roofer
@@ -521,7 +521,7 @@ export default function Header() {
               )}
             </div>
 
-            <Link to="/about-us/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/about-us" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               About
             </Link>
 
