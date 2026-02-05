@@ -400,6 +400,21 @@ export default function PricingGuidePage() {
               Installation Quality, Crew Experience & Jobsite Accountability
             </h2>
 
+            {/* Professional Roofing Crew Image */}
+            <figure className="mb-8">
+              <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                <img
+                  src="https://images.pexels.com/photos/28812507/pexels-photo-28812507.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Professional roofing crew with safety gear working on tiled roof installation demonstrating proper jobsite organization and crew experience"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-gray-600 text-center italic">
+                Professional roofing crews with proper safety equipment and training. Specialized crews, comprehensive safety protocols, and organized jobsite management directly impact installation quality and long-term roof performance.
+              </figcaption>
+            </figure>
+
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 While material selection and code compliance are critical, one of the most important factors affecting roof pricing and long-term performance is who installs the roof and how the job is managed on installation day. The skill level, training, and accountability of installation crews directly determine whether a roof performs as designed or fails prematurely despite proper materials and engineering.
