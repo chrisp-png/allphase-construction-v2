@@ -1,11 +1,52 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { DollarSign, Shield, Wind, Thermometer, Users, Calculator, ClipboardCheck, AlertTriangle, Calendar, FileCheck, HelpCircle } from 'lucide-react';
+import { DollarSign, Shield, Wind, Thermometer, Users, Calculator, ClipboardCheck, AlertTriangle, Calendar, FileCheck, HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import InspectionCTA from '../components/InspectionCTA';
 
 export default function PricingGuidePage() {
+  const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setExpandedFAQ(expandedFAQ === index ? null : index);
+  };
+
+  const faqData = [
+    {
+      question: "Why are roof replacement costs higher in South Florida compared to other parts of the country?",
+      answer: "South Florida's High Velocity Hurricane Zone (HVHZ) designation requires specialized installation methods, enhanced fastening patterns, and hurricane-rated materials that exceed standard building codes in other regions. These stringent requirements increase both material costs and installation labor time. Additionally, contractors must maintain higher insurance coverage levels due to elevated risk exposure, and all products must carry Florida Product Approval or Miami-Dade Notice of Acceptance certifications. The combination of enhanced code requirements, specialized materials, and compliance documentation creates cost differences of 20-40% compared to non-HVHZ markets."
+    },
+    {
+      question: "How much can wind mitigation features reduce my insurance premiums?",
+      answer: "Wind mitigation upgrades typically reduce annual insurance premiums by 20-45%, depending on the specific features installed and your insurance carrier's discount schedule. The most impactful credits come from roof-to-wall connection upgrades (hurricane straps or clips), sealed roof deck (secondary water barrier), and impact-resistant roof coverings. For an average South Florida home, these premium reductions often total $800-2,500 annually. Over a typical 20-30 year roof lifespan, cumulative insurance savings frequently exceed the incremental cost of wind mitigation upgrades, making them a financially sound investment beyond their protective value."
+    },
+    {
+      question: "What should I look for when comparing quotes from different roofing contractors?",
+      answer: "Beyond price, verify that contractors carry current workers' compensation insurance and general liability coverage with certificates you can independently validate with their insurance carriers. Confirm their licensing scope to ensure they can handle structural repairs if roof deck issues are discovered during installation. Ask about crew tenure and specialization in your chosen roofing system, as experienced crews deliver more consistent quality than rotating general labor. Request examples of their project documentation practices, including progress photos and installation records that support warranty claims and insurance verification. Finally, ensure their proposal explicitly addresses ventilation design, wind mitigation documentation, and compliance with local building codes rather than treating these as optional add-ons."
+    },
+    {
+      question: "Are online roof cost calculators accurate for South Florida homes?",
+      answer: "Online calculators provide helpful ballpark estimates but cannot account for critical factors that significantly affect final project costs in South Florida. Concealed roof deck damage requiring replacement, inadequate ventilation systems requiring redesign, structural deficiencies requiring reinforcement, and complex roof geometries with multiple valleys or penetrations all impact pricing but cannot be assessed remotely. Calculators also typically use national average pricing that doesn't reflect HVHZ-specific code requirements and material specifications. Use calculator estimates as preliminary planning tools, but schedule a professional inspection to determine accurate project scope and pricing for your specific property before making financial commitments."
+    },
+    {
+      question: "Does a city building inspection guarantee that my roof was installed correctly?",
+      answer: "Municipal building inspections verify general code compliance but have inherent limitations in scope and thoroughness. Inspectors conduct brief site visits at scheduled milestones and cannot individually verify fastener spacing across entire roof surfaces, confirm proper flashing integration at every penetration, or validate underlayment adhesion quality throughout the installation. Some critical installation stages may be completed and covered before inspection occurs, making verification impossible. For comprehensive quality assurance, rely on contractors who maintain internal documentation practices including progress photography, detailed installation records, and systematic quality control processes that exceed minimum municipal inspection requirements."
+    },
+    {
+      question: "Why do some contractors quote significantly lower prices for the same materials?",
+      answer: "Substantial price differences between contractors quoting identical materials often reflect variations in insurance coverage, installation practices, and code compliance rather than competitive efficiency. Lower-priced contractors may operate with inadequate workers' compensation coverage (transferring injury liability to homeowners), use inexperienced crews or subcontractors without proper insurance verification, or employ installation shortcuts that don't meet full code requirements but aren't visible once the roof is complete. Some contractors exclude essential scope items like proper ventilation design, structural repairs, or wind mitigation documentation from their base proposals. The lowest bid frequently represents the highest long-term risk when these factors aren't transparently addressed in the proposal and verified through due diligence."
+    },
+    {
+      question: "How important is attic ventilation for roof longevity in South Florida?",
+      answer: "Proper attic ventilation is critical for roof performance and longevity in South Florida's extreme heat and humidity. Inadequate ventilation causes heat buildup that accelerates shingle deterioration, increases cooling costs, and promotes moisture accumulation that damages roof decking and structural components. Many roofing material manufacturers require documented ventilation compliance as a warranty condition, meaning insufficient ventilation can void material warranties entirely. Effective ventilation design must be calculated based on attic volume and roof characteristics rather than using arbitrary vent quantities. Solar attic fans provide superior performance compared to passive vents in South Florida's climate, but they must be properly sized and carry HVHZ certifications for legal installation in Miami-Dade and Broward counties."
+    },
+    {
+      question: "When should I schedule a professional roof inspection instead of relying on price estimates?",
+      answer: "Professional inspections are essential when you observe active leaks, visible damage, or interior water stains that require expert diagnosis to determine repair scope and underlying causes. Inspections are also critical when planning roof replacement to accurately assess remaining service life, identify structural issues that affect project cost, verify current code compliance requirements, and document baseline condition for insurance purposes. If you're evaluating insurance policy changes, preparing for property sale, or need wind mitigation documentation for premium discounts, professional inspection provides objective evidence that supports favorable outcomes. While pricing guides and calculators offer helpful context, they cannot replace professional evaluation when making actual repair or replacement decisions that involve significant financial commitments."
+    }
+  ];
   return (
     <>
       <SEO
@@ -697,86 +738,44 @@ export default function PricingGuidePage() {
               </h2>
             </div>
 
-            <div className="space-y-6">
-              {/* FAQ Item 1 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Why are roof replacement costs higher in South Florida compared to other parts of the country?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  South Florida's High Velocity Hurricane Zone (HVHZ) designation requires specialized installation methods, enhanced fastening patterns, and hurricane-rated materials that exceed standard building codes in other regions. These stringent requirements increase both material costs and installation labor time. Additionally, contractors must maintain higher insurance coverage levels due to elevated risk exposure, and all products must carry Florida Product Approval or Miami-Dade Notice of Acceptance certifications. The combination of enhanced code requirements, specialized materials, and compliance documentation creates cost differences of 20-40% compared to non-HVHZ markets.
-                </p>
-              </div>
+            <div className="space-y-4">
+              {faqData.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-red-300 transition-all duration-200 shadow-sm hover:shadow-md"
+                >
+                  <button
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full flex items-center justify-between p-6 text-left focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-inset"
+                    aria-expanded={expandedFAQ === index}
+                  >
+                    <h3 className="text-lg font-bold text-gray-900 pr-8 flex-1">
+                      {faq.question}
+                    </h3>
+                    <div className="flex-shrink-0">
+                      {expandedFAQ === index ? (
+                        <ChevronUp className="w-6 h-6 text-red-600" />
+                      ) : (
+                        <ChevronDown className="w-6 h-6 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
 
-              {/* FAQ Item 2 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  How much can wind mitigation features reduce my insurance premiums?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Wind mitigation upgrades typically reduce annual insurance premiums by 20-45%, depending on the specific features installed and your insurance carrier's discount schedule. The most impactful credits come from roof-to-wall connection upgrades (hurricane straps or clips), sealed roof deck (secondary water barrier), and impact-resistant roof coverings. For an average South Florida home, these premium reductions often total $800-2,500 annually. Over a typical 20-30 year roof lifespan, cumulative insurance savings frequently exceed the incremental cost of wind mitigation upgrades, making them a financially sound investment beyond their protective value.
-                </p>
-              </div>
-
-              {/* FAQ Item 3 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  What should I look for when comparing quotes from different roofing contractors?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Beyond price, verify that contractors carry current workers' compensation insurance and general liability coverage with certificates you can independently validate with their insurance carriers. Confirm their licensing scope to ensure they can handle structural repairs if roof deck issues are discovered during installation. Ask about crew tenure and specialization in your chosen roofing system, as experienced crews deliver more consistent quality than rotating general labor. Request examples of their project documentation practices, including progress photos and installation records that support warranty claims and insurance verification. Finally, ensure their proposal explicitly addresses ventilation design, wind mitigation documentation, and compliance with local building codes rather than treating these as optional add-ons.
-                </p>
-              </div>
-
-              {/* FAQ Item 4 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Are online roof cost calculators accurate for South Florida homes?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Online calculators provide helpful ballpark estimates but cannot account for critical factors that significantly affect final project costs in South Florida. Concealed roof deck damage requiring replacement, inadequate ventilation systems requiring redesign, structural deficiencies requiring reinforcement, and complex roof geometries with multiple valleys or penetrations all impact pricing but cannot be assessed remotely. Calculators also typically use national average pricing that doesn't reflect HVHZ-specific code requirements and material specifications. Use calculator estimates as preliminary planning tools, but schedule a professional inspection to determine accurate project scope and pricing for your specific property before making financial commitments.
-                </p>
-              </div>
-
-              {/* FAQ Item 5 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Does a city building inspection guarantee that my roof was installed correctly?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Municipal building inspections verify general code compliance but have inherent limitations in scope and thoroughness. Inspectors conduct brief site visits at scheduled milestones and cannot individually verify fastener spacing across entire roof surfaces, confirm proper flashing integration at every penetration, or validate underlayment adhesion quality throughout the installation. Some critical installation stages may be completed and covered before inspection occurs, making verification impossible. For comprehensive quality assurance, rely on contractors who maintain internal documentation practices including progress photography, detailed installation records, and systematic quality control processes that exceed minimum municipal inspection requirements.
-                </p>
-              </div>
-
-              {/* FAQ Item 6 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Why do some contractors quote significantly lower prices for the same materials?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Substantial price differences between contractors quoting identical materials often reflect variations in insurance coverage, installation practices, and code compliance rather than competitive efficiency. Lower-priced contractors may operate with inadequate workers' compensation coverage (transferring injury liability to homeowners), use inexperienced crews or subcontractors without proper insurance verification, or employ installation shortcuts that don't meet full code requirements but aren't visible once the roof is complete. Some contractors exclude essential scope items like proper ventilation design, structural repairs, or wind mitigation documentation from their base proposals. The lowest bid frequently represents the highest long-term risk when these factors aren't transparently addressed in the proposal and verified through due diligence.
-                </p>
-              </div>
-
-              {/* FAQ Item 7 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  How important is attic ventilation for roof longevity in South Florida?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Proper attic ventilation is critical for roof performance and longevity in South Florida's extreme heat and humidity. Inadequate ventilation causes heat buildup that accelerates shingle deterioration, increases cooling costs, and promotes moisture accumulation that damages roof decking and structural components. Many roofing material manufacturers require documented ventilation compliance as a warranty condition, meaning insufficient ventilation can void material warranties entirely. Effective ventilation design must be calculated based on attic volume and roof characteristics rather than using arbitrary vent quantities. Solar attic fans provide superior performance compared to passive vents in South Florida's climate, but they must be properly sized and carry HVHZ certifications for legal installation in Miami-Dade and Broward counties.
-                </p>
-              </div>
-
-              {/* FAQ Item 8 */}
-              <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  When should I schedule a professional roof inspection instead of relying on price estimates?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Professional inspections are essential when you observe active leaks, visible damage, or interior water stains that require expert diagnosis to determine repair scope and underlying causes. Inspections are also critical when planning roof replacement to accurately assess remaining service life, identify structural issues that affect project cost, verify current code compliance requirements, and document baseline condition for insurance purposes. If you're evaluating insurance policy changes, preparing for property sale, or need wind mitigation documentation for premium discounts, professional inspection provides objective evidence that supports favorable outcomes. While pricing guides and calculators offer helpful context, they cannot replace professional evaluation when making actual repair or replacement decisions that involve significant financial commitments.
-                </p>
-              </div>
+                  <div
+                    className={`transition-all duration-300 ease-in-out ${
+                      expandedFAQ === index
+                        ? 'max-h-[2000px] opacity-100'
+                        : 'max-h-0 opacity-0'
+                    } overflow-hidden`}
+                  >
+                    <div className="px-6 pb-6 border-t border-gray-100">
+                      <p className="text-gray-700 leading-relaxed pt-4">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* FAQ Schema */}
@@ -784,72 +783,14 @@ export default function PricingGuidePage() {
               {JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "Why are roof replacement costs higher in South Florida compared to other parts of the country?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "South Florida's High Velocity Hurricane Zone (HVHZ) designation requires specialized installation methods, enhanced fastening patterns, and hurricane-rated materials that exceed standard building codes in other regions. These stringent requirements increase both material costs and installation labor time. Additionally, contractors must maintain higher insurance coverage levels due to elevated risk exposure, and all products must carry Florida Product Approval or Miami-Dade Notice of Acceptance certifications. The combination of enhanced code requirements, specialized materials, and compliance documentation creates cost differences of 20-40% compared to non-HVHZ markets."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "How much can wind mitigation features reduce my insurance premiums?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Wind mitigation upgrades typically reduce annual insurance premiums by 20-45%, depending on the specific features installed and your insurance carrier's discount schedule. The most impactful credits come from roof-to-wall connection upgrades (hurricane straps or clips), sealed roof deck (secondary water barrier), and impact-resistant roof coverings. For an average South Florida home, these premium reductions often total $800-2,500 annually. Over a typical 20-30 year roof lifespan, cumulative insurance savings frequently exceed the incremental cost of wind mitigation upgrades."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What should I look for when comparing quotes from different roofing contractors?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Beyond price, verify that contractors carry current workers' compensation insurance and general liability coverage with certificates you can independently validate. Confirm their licensing scope to ensure they can handle structural repairs if roof deck issues are discovered. Ask about crew tenure and specialization in your chosen roofing system. Request examples of their project documentation practices, including progress photos and installation records. Ensure their proposal explicitly addresses ventilation design, wind mitigation documentation, and compliance with local building codes."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Are online roof cost calculators accurate for South Florida homes?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Online calculators provide helpful ballpark estimates but cannot account for critical factors that significantly affect final project costs in South Florida. Concealed roof deck damage, inadequate ventilation systems, structural deficiencies, and complex roof geometries all impact pricing but cannot be assessed remotely. Calculators also typically use national average pricing that doesn't reflect HVHZ-specific code requirements. Use calculator estimates as preliminary planning tools, but schedule a professional inspection to determine accurate project scope and pricing."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Does a city building inspection guarantee that my roof was installed correctly?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Municipal building inspections verify general code compliance but have inherent limitations in scope and thoroughness. Inspectors conduct brief site visits and cannot individually verify every aspect of installation quality. Some critical installation stages may be completed and covered before inspection occurs. For comprehensive quality assurance, rely on contractors who maintain internal documentation practices including progress photography, detailed installation records, and systematic quality control processes that exceed minimum municipal inspection requirements."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Why do some contractors quote significantly lower prices for the same materials?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Substantial price differences often reflect variations in insurance coverage, installation practices, and code compliance rather than competitive efficiency. Lower-priced contractors may operate with inadequate workers' compensation coverage, use inexperienced crews, or employ installation shortcuts that don't meet full code requirements. Some contractors exclude essential scope items like proper ventilation design or wind mitigation documentation from their base proposals. The lowest bid frequently represents the highest long-term risk when these factors aren't transparently addressed."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "How important is attic ventilation for roof longevity in South Florida?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Proper attic ventilation is critical for roof performance and longevity in South Florida's extreme heat and humidity. Inadequate ventilation causes heat buildup that accelerates shingle deterioration, increases cooling costs, and promotes moisture accumulation. Many manufacturers require documented ventilation compliance as a warranty condition. Effective ventilation design must be calculated based on attic volume and roof characteristics. Solar attic fans provide superior performance but must be properly sized and carry HVHZ certifications for legal installation."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "When should I schedule a professional roof inspection instead of relying on price estimates?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Professional inspections are essential when you observe active leaks, visible damage, or when planning roof replacement to accurately assess remaining service life and identify structural issues. Inspections are also critical when evaluating insurance policy changes, preparing for property sale, or need wind mitigation documentation for premium discounts. While pricing guides and calculators offer helpful context, they cannot replace professional evaluation when making actual repair or replacement decisions that involve significant financial commitments."
-                    }
+                "mainEntity": faqData.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
                   }
-                ]
+                }))
               })}
             </script>
           </div>
