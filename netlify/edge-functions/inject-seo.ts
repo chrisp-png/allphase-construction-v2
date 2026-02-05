@@ -59,43 +59,43 @@ export default async (request: Request, context: Context) => {
 
   // Replace title
   html = html.replace(
-    /<title>.*?<\/title>/i,
+    /<title>.*?<\/title>/is,
     `<title>${seoData.title}</title>`
   );
 
-  // Replace meta description
+  // Replace meta description - more flexible regex
   html = html.replace(
-    /<meta name="description" content="[^"]*">/i,
-    `<meta name="description" content="${seoData.description}">`
+    /<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?>/gi,
+    `<meta name="description" content="${seoData.description}" />`
   );
 
-  // Replace og:title
+  // Replace og:title - more flexible regex
   const ogTitle = seoData.ogTitle || seoData.title;
   html = html.replace(
-    /<meta property="og:title" content="[^"]*">/i,
-    `<meta property="og:title" content="${ogTitle}">`
+    /<meta\s+property=["']og:title["']\s+content=["'][^"']*["']\s*\/?>/gi,
+    `<meta property="og:title" content="${ogTitle}" />`
   );
 
-  // Replace og:description
+  // Replace og:description - more flexible regex
   const ogDescription = seoData.ogDescription || seoData.description;
   html = html.replace(
-    /<meta property="og:description" content="[^"]*">/i,
-    `<meta property="og:description" content="${ogDescription}">`
+    /<meta\s+property=["']og:description["']\s+content=["'][^"']*["']\s*\/?>/gi,
+    `<meta property="og:description" content="${ogDescription}" />`
   );
 
-  // Replace twitter:title
+  // Replace twitter:title - more flexible regex
   html = html.replace(
-    /<meta name="twitter:title" content="[^"]*">/i,
-    `<meta name="twitter:title" content="${ogTitle}">`
+    /<meta\s+name=["']twitter:title["']\s+content=["'][^"']*["']\s*\/?>/gi,
+    `<meta name="twitter:title" content="${ogTitle}" />`
   );
 
-  // Replace twitter:description
+  // Replace twitter:description - more flexible regex
   html = html.replace(
-    /<meta name="twitter:description" content="[^"]*">/i,
-    `<meta name="twitter:description" content="${ogDescription}">`
+    /<meta\s+name=["']twitter:description["']\s+content=["'][^"']*["']\s*\/?>/gi,
+    `<meta name="twitter:description" content="${ogDescription}" />`
   );
 
-  // Return modified HTML
+  // Return modified HTML with proper headers
   return new Response(html, {
     status: response.status,
     headers: response.headers,

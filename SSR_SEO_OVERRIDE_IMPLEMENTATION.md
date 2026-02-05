@@ -156,9 +156,32 @@ const seoOverrides: Record<string, {
 
 ## Files Modified
 
-1. ✅ **Created**: `/netlify/edge-functions/inject-seo.ts`
+1. ✅ **Created**: `/netlify/edge-functions/inject-seo.ts` (updated with robust regex patterns)
 2. ✅ **Modified**: `/netlify.toml` (added edge function config)
 3. ✅ **Modified**: `/src/pages/locations/ServiceAreaPage.tsx` (maintained client-side consistency)
+4. ✅ **Created**: `/test-seo-injection.cjs` (local test script for verification)
+
+## Edge Function Update (Feb 5, 2026)
+
+**Issue Fixed**: Initial deployment only replaced title, not meta description and OG/Twitter tags.
+
+**Root Cause**: Original regex patterns were too strict and didn't account for variations in HTML formatting.
+
+**Solution**: Updated all regex patterns to be more flexible:
+- Added `\s+` to match whitespace variations
+- Made self-closing slashes optional with `\/?`
+- Added `gi` flags for global, case-insensitive matching
+- Used more flexible attribute matching with `["']` for both quote types
+
+**Test Results**: Local simulation test confirms all 6 meta tags are now replaced correctly:
+```
+✅ Title matches
+✅ Description matches
+✅ OG Title matches
+✅ OG Description matches
+✅ Twitter Title matches
+✅ Twitter Description matches
+```
 
 ## Deployment Checklist
 
