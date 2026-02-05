@@ -102,6 +102,7 @@ export default function Header() {
   ];
 
   const learningCenter = [
+    { name: 'Roof Cost Calculator', path: '/roof-cost-calculator' },
     { name: 'Pricing Guide', path: '/roof-cost-calculator' },
     { name: 'Financing Options', path: '/easy-payments' },
     { name: 'Education Hub', path: '/blog' },
