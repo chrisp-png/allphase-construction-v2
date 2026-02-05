@@ -215,15 +215,12 @@ export default function BocaRatonPage() {
 
           <div className="max-w-5xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Roofing Services in{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Boca Raton, FL
-              </span>
+              Roof Inspections in Boca Raton for Repairs, Replacement & Insurance
             </h1>
 
             <div className="prose prose-invert max-w-none mb-12">
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                All Phase Construction USA provides professional roofing services across Boca Raton for residential and light commercial properties. From minor roof repairs to full system replacements, our team supports Boca Raton property owners with consistent service and technical oversight. Operating from our Deerfield Beach headquarters, we deliver roofing solutions designed for South Florida conditions with a focus on long-term durability and code compliance.
+                A professional roof inspection is the first step in determining repair needs, replacement planning, or insurance documentation in Boca Raton. Inspections identify leaks, structural concerns, code compliance issues, and wind mitigation opportunities. Whether addressing visible damage, preparing for storm season, or documenting conditions for insurance purposes, a thorough inspection provides the technical foundation for informed decisions about your roofing system.
               </p>
             </div>
 
