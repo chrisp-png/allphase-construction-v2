@@ -255,6 +255,24 @@ export default function CalculatorPage() {
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>
+
+          {/* Financing Options Section */}
+          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+            <h2 className="text-xl font-bold text-white mb-4">Flexible Roof Financing Options</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Roof replacement and repair costs can be managed with flexible financing options designed for homeowners. Whether you need to finance a complete roof replacement, targeted repairs, or only the cost difference when upgrading to premium materials like tile or metal, affordable monthly payment plans are available to qualified homeowners.
+            </p>
+            <p className="text-zinc-300 leading-relaxed mb-6">
+              Financing allows you to address urgent roof needs without depleting savings or delaying necessary work. Payment terms and rates vary based on credit approval, project scope, and selected financing program.
+            </p>
+            <Link
+              to="/easy-payments"
+              className="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition-colors"
+            >
+              View Roofing Financing Options
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </div>
         </div>
       </section>
 
