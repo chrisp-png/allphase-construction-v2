@@ -221,7 +221,7 @@ export default function RoofCalculator() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-slate-700/60 backdrop-blur-sm border border-slate-600/80 rounded-2xl p-8 shadow-[0_0_60px_rgba(0,0,0,0.5),0_0_20px_rgba(71,85,105,0.3)]">
           <div className="mb-8">
             <h3 className="text-2xl font-bold text-white mb-6">Step 1: Select Your Roof Size</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
