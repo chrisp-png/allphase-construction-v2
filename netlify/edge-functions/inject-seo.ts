@@ -1,49 +1,72 @@
 /**
  * SEO Metadata Injection Edge Function
  *
- * Injects page-specific SEO metadata into the HTML head for specific routes.
+ * Dynamically injects city-specific SEO metadata into HTML head for service area pages.
  * This ensures bots/crawlers see the correct metadata in view-source (SSR).
  *
  * - Runs before the response is sent to the client
- * - Replaces default meta tags with page-specific ones
+ * - Dynamically generates metadata based on city slug
+ * - Handles 40+ cities automatically
  * - Works for both bots and regular users
  * - Client-side React Helmet still works for navigation
  */
 
 import type { Context } from "https://edge.netlify.com";
+import { cityNameMapping } from "./city-mapping.ts";
 
-// Define page-specific SEO overrides
-const seoOverrides: Record<string, {
+interface SEOData {
   title: string;
   description: string;
   ogTitle?: string;
   ogDescription?: string;
-}> = {
-  '/locations/deerfield-beach/service-area/boca-raton': {
-    title: 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase',
-    description: 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.',
-    ogTitle: 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase',
-    ogDescription: 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.',
-  },
-  '/locations/deerfield-beach/service-area/boca-raton/': {
-    title: 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase',
-    description: 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.',
-    ogTitle: 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase',
-    ogDescription: 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.',
-  },
-};
+}
+
+/**
+ * Generate SEO metadata for a city service area page
+ */
+function generateCitySEO(cityName: string): SEOData {
+  const title = `Roof Inspection in ${cityName} for Repairs & Replacement | All Phase`;
+  const description = `Get a professional roof inspection in ${cityName} to determine repair needs, replacement options, and insurance documentation before you decide.`;
+
+  return {
+    title,
+    description,
+    ogTitle: title,
+    ogDescription: description,
+  };
+}
+
+/**
+ * Extract city slug from service area path
+ * Matches: /locations/deerfield-beach/service-area/{citySlug}/ or without trailing slash
+ */
+function extractCitySlug(pathname: string): string | null {
+  const match = pathname.match(/^\/locations\/deerfield-beach\/service-area\/([^\/]+)\/?$/);
+  return match ? match[1] : null;
+}
 
 export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
   const pathname = url.pathname;
 
-  // Check if this path has SEO overrides
-  const seoData = seoOverrides[pathname];
+  // Check if this is a city service area page
+  const citySlug = extractCitySlug(pathname);
 
-  if (!seoData) {
-    // No override for this path, continue normally
+  if (!citySlug) {
+    // Not a city service area page, continue normally
     return context.next();
   }
+
+  // Look up the city name
+  const cityName = cityNameMapping[citySlug];
+
+  if (!cityName) {
+    // Unknown city, continue normally (fallback to client-side SEO)
+    return context.next();
+  }
+
+  // Generate SEO data for this city
+  const seoData = generateCitySEO(cityName);
 
   // Fetch the response from origin
   const response = await context.next();
