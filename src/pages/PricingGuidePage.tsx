@@ -54,8 +54,8 @@ export default function PricingGuidePage() {
   return (
     <>
       <SEO
-        title="Roof Replacement Pricing Guide for South Florida (HVHZ) | All Phase Construction USA"
-        description="Complete pricing guide for roof replacement in South Florida's High Velocity Hurricane Zone. Learn about material costs, code requirements, ventilation, wind mitigation, and insurance savings."
+        title="Roof Pricing Guide for South Florida (HVHZ) | All Phase"
+        description="Learn why roof prices vary in South Florida. Compare materials, ventilation, wind mitigation, insurance factors, and installation quality before you buy."
         canonical="https://allphaseconstructionfl.com/pricing-guide"
         keywords="roof replacement cost South Florida, HVHZ roofing prices, Florida roof pricing guide, wind mitigation savings, roof insurance discounts"
       />
