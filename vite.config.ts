@@ -28,12 +28,12 @@ const manualPublicCopyPlugin = () => ({
       }
     });
 
-    // Copy all images from public folder for blog posts
+    // Copy all images and SVG from public folder for blog posts
     const publicDir = path.resolve('public');
     if (fs.existsSync(publicDir)) {
       const files = fs.readdirSync(publicDir);
       files.forEach(file => {
-        if (/\.(jpg|jpeg|png|webp|gif)$/i.test(file)) {
+        if (/\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file)) {
           const src = path.resolve(publicDir, file);
           const dest = path.resolve(distDir, file);
           fs.copyFileSync(src, dest);
