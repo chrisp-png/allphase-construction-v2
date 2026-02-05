@@ -338,12 +338,12 @@ status = 301
 
 [[redirects]]
 from = "/boca-raton"
-to = "/locations/deerfield-beach/service-area/boca-raton"
+to = "/locations/deerfield-beach/service-area/boca-raton/"
 status = 301
 
 [[redirects]]
 from = "/boca-raton/"
-to = "/locations/deerfield-beach/service-area/boca-raton"
+to = "/locations/deerfield-beach/service-area/boca-raton/"
 status = 301
 
 [[redirects]]
@@ -1268,7 +1268,7 @@ status = 301
 
 [[redirects]]
 from = "/roofing-contractor-boca-raton-fl"
-to = "/locations/deerfield-beach/service-area/boca-raton"
+to = "/locations/deerfield-beach/service-area/boca-raton/"
 status = 301
 
 [[redirects]]

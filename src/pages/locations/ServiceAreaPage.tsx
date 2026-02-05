@@ -35,6 +35,7 @@ export default function ServiceAreaPage() {
   const cityEntry = sheetSitemap.find(entry => {
     const pathVariants = [
       `/locations/${hubSlug}/service-area/${citySlug}`,
+      `/locations/${hubSlug}/service-area/${citySlug}/`,
       `/${citySlug}`,
       `/roofing-contractor-${citySlug}`,
       `/roofing-contractor-${citySlug}-fl`,

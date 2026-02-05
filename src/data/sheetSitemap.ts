@@ -579,7 +579,7 @@ export const sheetSitemap: SitemapEntry[] = [
   {
     section: 'Palm Beach County Cities',
     label: 'Boca Raton',
-    path: '/locations/deerfield-beach/service-area/boca-raton',
+    path: '/locations/deerfield-beach/service-area/boca-raton/',
     parent: '/locations/deerfield-beach',
     indexable: true,
     priority: 0.7,
@@ -589,7 +589,7 @@ export const sheetSitemap: SitemapEntry[] = [
     section: 'Palm Beach County Cities',
     label: 'Top 5 Roofer | Boca Raton',
     path: '/locations/deerfield-beach/service-area/boca-raton/top-5-roofer',
-    parent: '/locations/deerfield-beach/service-area/boca-raton',
+    parent: '/locations/deerfield-beach/service-area/boca-raton/',
     indexable: true,
     priority: 0.6,
     changefreq: 'monthly',

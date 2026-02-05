@@ -59,7 +59,7 @@ export const siteRoutes: RouteGroup[] = [
   {
     title: 'Palm Beach County Cities',
     routes: [
-      { path: '/locations/deerfield-beach/service-area/boca-raton', name: 'Boca Raton' },
+      { path: '/locations/deerfield-beach/service-area/boca-raton/', name: 'Boca Raton' },
       { path: '/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator', name: 'Boca Raton Roof Cost Calculator' },
       { path: '/locations/deerfield-beach/service-area/boynton-beach', name: 'Boynton Beach' },
       { path: '/locations/deerfield-beach/service-area/delray-beach', name: 'Delray Beach' },
