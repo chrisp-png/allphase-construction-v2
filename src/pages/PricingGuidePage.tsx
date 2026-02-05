@@ -304,6 +304,21 @@ export default function PricingGuidePage() {
               Wind Mitigation, Code Compliance, and Insurance Risk in South Florida Roofing
             </h2>
 
+            {/* Wind Mitigation Construction Image */}
+            <figure className="mb-8">
+              <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                <img
+                  src="https://images.pexels.com/photos/31763537/pexels-photo-31763537.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Roof construction showing wooden framework and structural connections demonstrating proper roof-to-wall attachment methods for South Florida HVHZ wind mitigation requirements"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-gray-600 text-center italic">
+                Roof structural framework showing critical connection points. In South Florida's High Velocity Hurricane Zone, proper roof-to-wall attachments, fastening patterns, and underlayment installation are essential for wind mitigation and code compliance.
+              </figcaption>
+            </figure>
+
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Roofing costs in South Florida vary significantly between contractors even when identical materials are specified. These price differences often reflect fundamental variations in code compliance practices, installation quality standards, and long-term risk management approaches. Understanding these differences is essential for homeowners evaluating competing proposals and assessing the true value proposition of professional roofing installation.
