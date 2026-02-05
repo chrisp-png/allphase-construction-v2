@@ -45,6 +45,10 @@ export default function PricingGuidePage() {
     {
       question: "When should I schedule a professional roof inspection instead of relying on price estimates?",
       answer: "Professional inspections are essential when you observe active leaks, visible damage, or interior water stains that require expert diagnosis to determine repair scope and underlying causes. In South Florida, inspections become particularly critical before hurricane season to identify vulnerabilities, after tropical storms or hurricanes to document damage for insurance claims, and when planning roof replacement to accurately assess remaining service life while verifying Florida Building Code compliance requirements. Given the stringent insurance requirements in our region, professional inspections provide necessary documentation for policy renewals, claims processing, and wind mitigation certification that can significantly reduce premiums. If you're evaluating insurance policy changes, preparing for property sale, or approaching the end of your roof's expected lifespan in our harsh climate, professional inspection provides objective evidence that supports favorable outcomes. While pricing guides and calculators offer helpful context, they cannot replace professional evaluation when making actual repair or replacement decisions that involve significant financial commitments."
+    },
+    {
+      question: "Should I ask a roofing contractor for references before hiring them?",
+      answer: "Yes — but not just any references. Homeowners should ask to speak with customers from the contractor's most recently completed jobs, ideally from the last 30–90 days, and verified by completion date. Long-term or hand-picked references don't reflect how a company is operating today. At All Phase Construction USA, every customer is offered the opportunity to speak directly with homeowners from our most recent completed projects, so they can ask honest questions about communication, cleanliness, workmanship, and how the job actually went — not just what it cost."
     }
   ];
   return (
