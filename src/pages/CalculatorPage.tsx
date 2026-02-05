@@ -257,6 +257,29 @@ export default function CalculatorPage() {
             </Link>
           </div>
 
+          {/* Wind Mitigation & Insurance Savings Section */}
+          <div className="bg-amber-950/20 border border-amber-900/40 border-l-4 border-l-amber-500 rounded-lg p-6 mb-8">
+            <div className="flex items-start gap-4">
+              <Shield className="w-8 h-8 text-amber-400 flex-shrink-0 mt-1" />
+              <div>
+                <h2 className="text-xl font-bold text-white mb-3">Wind Mitigation & Insurance Savings (Florida Homeowners)</h2>
+                <p className="text-zinc-300 leading-relaxed mb-3">
+                  Properly installed roofing systems in South Florida may qualify for <strong className="text-white">wind mitigation credits</strong> that can reduce homeowners insurance premiums. Features such as <span className="text-amber-400 font-semibold">enhanced roof decking attachment</span>, <span className="text-amber-400 font-semibold">secondary water barriers</span>, <span className="text-amber-400 font-semibold">impact-rated materials</span>, and <span className="text-amber-400 font-semibold">code-compliant fastening patterns</span> are evaluated during wind mitigation inspections.
+                </p>
+                <p className="text-zinc-300 leading-relaxed mb-4">
+                  Investing slightly more during roof replacement to meet enhanced wind resistance standards may result in lower insurance costs over the life of the roof. Annual premium savings can offset incremental installation costs within 3–7 years for many South Florida properties.
+                </p>
+                <Link
+                  to="/roof-inspection"
+                  className="inline-flex items-center justify-center px-6 py-3 border-2 border-amber-600/60 text-amber-100 font-semibold rounded hover:bg-amber-900/30 hover:border-amber-500 transition-colors"
+                >
+                  Learn About Wind Mitigation Inspections
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
           {/* Financing Options Section */}
           <div className="bg-zinc-800/50 border border-zinc-700/40 rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
