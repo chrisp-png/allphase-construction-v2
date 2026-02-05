@@ -139,6 +139,122 @@ export default function CalculatorPage() {
               </div>
             </div>
           </div>
+
+          {/* Authority Introduction */}
+          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
+            <div className="flex items-start gap-4">
+              <Shield className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-zinc-300 leading-relaxed mb-3">
+                  <strong className="text-white">This calculator provides estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, code compliance requirements, and site-specific installation factors.
+                </p>
+                <p className="text-zinc-300 leading-relaxed">
+                  Broward and most coastal Palm Beach County properties are located in the <strong className="text-white">South Florida High Velocity Hurricane Zone (HVHZ)</strong>, which requires enhanced fastening patterns, approved underlayment systems, and Florida Building Code compliance. HVHZ requirements typically add $1–$3 per square foot to installation costs compared to standard installations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Comparison Table */}
+          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
+            <h2 className="text-xl font-bold text-white mb-4">South Florida HVHZ Roof Pricing Comparison</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-zinc-700">
+                    <th className="py-3 px-4 text-white font-semibold">Roof Type</th>
+                    <th className="py-3 px-4 text-white font-semibold">Avg Cost per Sq Ft (South Florida HVHZ)</th>
+                    <th className="py-3 px-4 text-white font-semibold">Typical Lifespan</th>
+                    <th className="py-3 px-4 text-white font-semibold">Best Use Case</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-zinc-800">
+                    <td className="py-3 px-4 text-zinc-300">
+                      <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline">Asphalt Shingle</Link>
+                    </td>
+                    <td className="py-3 px-4 text-zinc-300">$8–$12</td>
+                    <td className="py-3 px-4 text-zinc-300">15–25 years</td>
+                    <td className="py-3 px-4 text-zinc-300">Code-compliant residential replacements</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800">
+                    <td className="py-3 px-4 text-zinc-300">
+                      <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline">Tile (Concrete / Clay)</Link>
+                    </td>
+                    <td className="py-3 px-4 text-zinc-300">$10–$18</td>
+                    <td className="py-3 px-4 text-zinc-300">30–50 years</td>
+                    <td className="py-3 px-4 text-zinc-300">Long-term durability, HOA & coastal homes</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800">
+                    <td className="py-3 px-4 text-zinc-300">
+                      <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline">Metal (Standing Seam)</Link>
+                    </td>
+                    <td className="py-3 px-4 text-zinc-300">$12–$20</td>
+                    <td className="py-3 px-4 text-zinc-300">40–70 years</td>
+                    <td className="py-3 px-4 text-zinc-300">Wind resistance, solar-ready systems</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 text-zinc-300">
+                      <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline">Flat / Low-Slope</Link>
+                    </td>
+                    <td className="py-3 px-4 text-zinc-300">$10–$16</td>
+                    <td className="py-3 px-4 text-zinc-300">20–30 years</td>
+                    <td className="py-3 px-4 text-zinc-300">Commercial & modern residential roofs</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Cost Factors Section */}
+          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
+            <h2 className="text-xl font-bold text-white mb-4">What Factors Affect Roof Replacement Cost?</h2>
+            <ul className="space-y-2 text-zinc-300">
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">Roof size:</strong> Measured in squares (100 sq ft per square) — larger roofs cost more</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">Roof pitch:</strong> Steep roofs require additional safety equipment and labor time</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">Decking condition:</strong> Rotted or damaged plywood sheathing requires replacement before installation</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">HVHZ fastening requirements:</strong> Enhanced nailing patterns and approved fasteners add labor and material costs</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">Florida Building Code compliance:</strong> Tear-off, underlayment, flashing, and ventilation must meet current code standards</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">Material selection:</strong> Shingle, tile, metal, and flat roofing systems have different material and labor costs</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">•</span>
+                <span><strong className="text-white">Upgrades and add-ons:</strong> Solar panel readiness, impact-rated materials, enhanced warranties, and ventilation improvements</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Estimate Clarification */}
+          <div className="bg-zinc-800 border-l-4 border-red-600 rounded p-6 mb-8">
+            <p className="text-zinc-200 font-semibold mb-2">Important: Calculator Results Are Estimates Only</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Accurate roof replacement pricing requires an on-site inspection to evaluate roof condition, identify hidden issues, measure roof dimensions, assess code compliance requirements, and develop a detailed scope of work. Calculator estimates provide general pricing ranges but cannot account for site-specific variables that affect final costs.
+            </p>
+            <Link
+              to="/roof-inspection"
+              className="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition-colors"
+            >
+              Schedule a Roof Inspection
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </div>
         </div>
       </section>
 
