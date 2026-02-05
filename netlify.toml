@@ -2156,6 +2156,10 @@ status = 301
 function = "normalize-case"
 path = "/*"
 
+[[edge_functions]]
+function = "inject-seo"
+path = "/locations/deerfield-beach/service-area/*"
+
 [[redirects]]
 from = "/blog/*"
 to = "/index.html"
