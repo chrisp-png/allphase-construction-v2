@@ -128,7 +128,7 @@ export default function CalculatorPage() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
             <div className="flex items-start gap-4">
-              <Calculator className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
+              <Calculator className="w-10 h-10 text-amber-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]" />
               <div>
                 <h1 className="text-2xl font-bold text-white mb-3">Roof Replacement Cost Calculator</h1>
                 <p className="text-zinc-300 leading-relaxed mb-3">
