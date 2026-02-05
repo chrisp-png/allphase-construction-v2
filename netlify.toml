@@ -811,6 +811,262 @@ from = "/parkland/calculator"
 to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
 status = 301
 
+# Redirect all city-specific calculator pages to main calculator
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/boynton-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/coconut-creek/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/cooper-city/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/coral-springs/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/davie/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/delray-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/fort-lauderdale/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/greenacres/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/gulf-stream/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/hallandale-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/haverhill/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/highland-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/hillsboro-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/hollywood/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/hypoluxo/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/jupiter/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/jupiter-inlet-colony/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lake-worth-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lantana/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lauderdale-by-the-sea/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lauderdale-lakes/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lauderdale-ranches/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lauderhill/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lighthouse-point/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/loxahatchee-groves/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/margate/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/miramar/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/north-lauderdale/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/north-palm-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/oakland-park/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/ocean-ridge/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach-gardens/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach-shores/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/pembroke-park/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/pembroke-pines/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/plantation/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/pompano-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/royal-palm-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/sea-ranch-lakes/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/southwest-ranches/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/sunrise/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/tamarac/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/wellington/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/west-palm-beach/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/westlake/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/weston/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/wilton-manors/roof-cost-calculator"
+to = "/roof-cost-calculator/"
+status = 301
+
 [[redirects]]
 from = "/boca-raton/top-5-roofer"
 to = "/locations/deerfield-beach/service-area/boca-raton/top-5-roofer"
