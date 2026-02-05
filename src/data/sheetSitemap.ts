@@ -931,15 +931,6 @@ export const sheetSitemap: SitemapEntry[] = [
   },
   {
     section: 'Broward County Cities',
-    label: 'Pembroke Park | Roof Cost Calculator',
-    path: '/locations/deerfield-beach/service-area/pembroke-park/roof-cost-calculator',
-    parent: '/locations/deerfield-beach/service-area/pembroke-park',
-    indexable: false,
-    priority: 0.6,
-    changefreq: 'monthly',
-  },
-  {
-    section: 'Broward County Cities',
     label: 'Pembroke Pines',
     path: '/locations/deerfield-beach/service-area/pembroke-pines',
     parent: '/locations/deerfield-beach',

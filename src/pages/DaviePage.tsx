@@ -72,7 +72,7 @@ export default function DaviePage() {
           "name": "How much does a roof cost in Davie?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Roof pricing depends on roof size, roof type, tear-off requirements, and roof complexity. Start with the Davie roof cost calculator for a ballpark estimate and monthly payment range: /locations/deerfield-beach/service-area/davie/roof-cost-calculator."
+            "text": "Roof pricing depends on roof size, roof type, tear-off requirements, and roof complexity. Start with our roof cost calculator for a ballpark estimate and monthly payment range: https://allphaseconstructionfl.com/roof-cost-calculator/"
           }
         },
         {

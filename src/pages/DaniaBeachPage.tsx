@@ -72,7 +72,7 @@ export default function DaniaBeachPage() {
           "name": "How much does a roof cost in Dania Beach?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Roof pricing depends on roof size, roof type, tear-off requirements, and roof complexity. Start with the Dania Beach roof cost calculator for a ballpark estimate and monthly payment range: /locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator."
+            "text": "Roof pricing depends on roof size, roof type, tear-off requirements, and roof complexity. Start with our roof cost calculator for a ballpark estimate and monthly payment range: https://allphaseconstructionfl.com/roof-cost-calculator/"
           }
         },
         {
@@ -118,8 +118,8 @@ export default function DaniaBeachPage() {
     {
       question: 'How much does a roof cost in Dania Beach?',
       answer: 'Roof pricing depends on roof size, roof type, tear-off requirements, and roof complexity.',
-      link: '/locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator',
-      linkText: 'Use the Dania Beach roof cost calculator'
+      link: 'https://allphaseconstructionfl.com/roof-cost-calculator/',
+      linkText: 'Use the roof cost calculator'
     },
     {
       question: 'How do I know if I need a repair or a full replacement?',
