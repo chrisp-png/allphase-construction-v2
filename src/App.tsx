@@ -171,6 +171,7 @@ const WellingtonCalculatorPage = lazy(() => import('./pages/WellingtonCalculator
 const BocaRatonCalculatorPage = lazy(() => import('./pages/BocaRatonCalculatorPage'));
 const BoyntonBeachCalculatorPage = lazy(() => import('./pages/BoyntonBeachCalculatorPage'));
 const EasyPaymentsPage = lazy(() => import('./pages/EasyPaymentsPage'));
+const PricingGuidePage = lazy(() => import('./pages/PricingGuidePage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const AccessibilityPage = lazy(() => import('./pages/AccessibilityPage'));
@@ -294,6 +295,7 @@ function AppContent() {
             <Route path="/service-areas-index" element={<ServiceAreasIndexPage />} />
             <Route path="/service-areas/:citySlug" element={<ServiceAreaCityPage />} />
             <Route path="/easy-payments" element={<EasyPaymentsPage />} />
+            <Route path="/pricing-guide" element={<PricingGuidePage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />

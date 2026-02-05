@@ -1535,6 +1535,15 @@ export const sheetSitemap: SitemapEntry[] = [
   },
   {
     section: 'Learning Center',
+    label: 'Roof Replacement Pricing Guide',
+    path: '/pricing-guide',
+    parent: null,
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+  {
+    section: 'Learning Center',
     label: 'Financing Options',
     path: '/easy-payments',
     parent: null,

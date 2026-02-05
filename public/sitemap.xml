@@ -451,6 +451,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://allphaseconstructionfl.com/pricing-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://allphaseconstructionfl.com/easy-payments</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
