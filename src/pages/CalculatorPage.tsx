@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Calculator, MapPin, Shield, Plus, Minus, ArrowRight } from 'lucide-react';
+import { Calculator, MapPin, Shield, Plus, Minus, ArrowRight, Wallet } from 'lucide-react';
 import RoofCalculator from '../components/RoofCalculator';
 import HVHZText from '../components/HVHZText';
 
@@ -258,8 +258,11 @@ export default function CalculatorPage() {
           </div>
 
           {/* Financing Options Section */}
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
-            <h2 className="text-xl font-bold text-white mb-4">Flexible Roof Financing Options</h2>
+          <div className="bg-zinc-800/50 border border-zinc-700/40 rounded-lg p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <Wallet className="w-6 h-6 text-zinc-400" />
+              <h2 className="text-xl font-bold text-white">Flexible Roof Financing Options</h2>
+            </div>
             <p className="text-zinc-300 leading-relaxed mb-4">
               Roof replacement and repair costs can be managed with flexible financing options designed for homeowners. Whether you need to finance a complete roof replacement, targeted repairs, or only the cost difference when upgrading to premium materials like tile or metal, affordable monthly payment plans are available to qualified homeowners.
             </p>
@@ -268,7 +271,7 @@ export default function CalculatorPage() {
             </p>
             <Link
               to="/easy-payments"
-              className="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-zinc-600 text-zinc-200 font-semibold rounded hover:bg-zinc-700/50 hover:border-zinc-500 transition-colors"
             >
               View Roofing Financing Options
               <ArrowRight className="w-5 h-5 ml-2" />
