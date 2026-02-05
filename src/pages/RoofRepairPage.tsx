@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import { sheetSitemap } from '../data/sheetSitemap';
 import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 export default function RoofRepairPage() {
   const roofRepairPages = useMemo(() => {
@@ -824,6 +825,9 @@ export default function RoofRepairPage() {
           </Link>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* FAQ Section */}
       <section className="py-20 bg-zinc-950">

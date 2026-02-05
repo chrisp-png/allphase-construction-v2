@@ -25,6 +25,7 @@ import {
   Eye
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 export default function ShingleRoofingPage() {
   useEffect(() => {
@@ -1048,6 +1049,9 @@ export default function ShingleRoofingPage() {
           </Link>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* FAQ Section */}
       <section className="py-20 px-4">

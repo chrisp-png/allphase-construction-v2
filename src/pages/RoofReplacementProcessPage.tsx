@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Home, ChevronRight, Shield, Clock, FileCheck, ChevronDown, X, AlertCircle } from 'lucide-react';
 import SEO from '../components/SEO';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 import step01Image from '../assets/step-01-inspection-optimized.jpg';
 import step02Image from '../assets/step-02-planning-optimized.jpg';
@@ -2087,6 +2088,9 @@ export default function RoofReplacementProcessPage() {
           </div>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* FAQ Section */}
       <section className="py-32 px-4 bg-zinc-950">

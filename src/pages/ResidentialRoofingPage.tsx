@@ -18,6 +18,7 @@ import {
   BadgeCheck
 } from 'lucide-react';
 import InternalLinksBlock from '../components/InternalLinksBlock';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import { generateLocalBusinessSchema, generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
 
 export default function ResidentialRoofingPage() {
@@ -586,6 +587,9 @@ export default function ResidentialRoofingPage() {
           </Link>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* Internal Links Section */}
       <section className="py-12 px-4 bg-zinc-900/50">

@@ -23,6 +23,7 @@ import {
   BadgeCheck
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
 
 export default function TileRoofingPage() {
@@ -1048,6 +1049,9 @@ export default function TileRoofingPage() {
           </Link>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* FAQ Section */}
       <section className="py-20 px-4 bg-zinc-900">

@@ -24,6 +24,7 @@ import {
   Layers
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 export default function MetalRoofingPage() {
   useEffect(() => {
@@ -1053,6 +1054,9 @@ export default function MetalRoofingPage() {
           </Link>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* FAQ Section */}
       <section className="py-20 px-4">

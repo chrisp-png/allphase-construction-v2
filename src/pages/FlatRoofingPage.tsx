@@ -27,6 +27,7 @@ import {
   Atom
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 export default function FlatRoofingPage() {
   useEffect(() => {
@@ -717,6 +718,9 @@ export default function FlatRoofingPage() {
           </Link>
         </div>
       </section>
+
+      {/* Roof Cost Resources Section */}
+      <RoofCostResourcesSection />
 
       {/* FAQ Section */}
       <section className="py-20 px-4">
