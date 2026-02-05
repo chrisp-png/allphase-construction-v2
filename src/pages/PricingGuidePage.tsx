@@ -222,14 +222,14 @@ export default function PricingGuidePage() {
             <figure className="mb-8">
               <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-100">
                 <img
-                  src="https://images.pexels.com/photos/22938256/pexels-photo-22938256.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Turbine roof ventilator installed on residential roof showing common passive ventilation technology used in South Florida homes"
-                  className="w-full h-auto object-cover"
+                  src="/solar-attic-fan-diagram.svg"
+                  alt="Technical cutaway diagram of solar attic fan showing airflow patterns with hot air exhaust through roof-mounted solar-powered fan and cool air intake through soffit vents demonstrating proper attic ventilation in South Florida homes"
+                  className="w-full h-auto"
                   loading="lazy"
                 />
               </div>
               <figcaption className="mt-3 text-sm text-gray-600 text-center italic">
-                Example of turbine-style roof ventilation commonly found on South Florida homes. Professional ventilation design considers multiple factors including vent type, quantity, placement, and intake/exhaust balance for optimal attic airflow.
+                Solar attic fan ventilation system diagram showing proper airflow circulation. Hot air is actively exhausted through the solar-powered fan while fresh air enters through soffit vents, creating continuous airflow that reduces attic temperatures and extends roof lifespan in South Florida's climate.
               </figcaption>
             </figure>
 

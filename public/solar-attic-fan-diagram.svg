@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="solar-fan-title">
+  <title id="solar-fan-title">Solar Attic Fan Ventilation Diagram</title>
+  <defs>
+    <!-- Gradient for sky -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B0D4E3;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for roof shingles -->
+    <linearGradient id="shingleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C2C2C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C2C2C;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for plywood -->
+    <linearGradient id="plywoodGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8A882;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for insulation -->
+    <linearGradient id="insulationGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4D03F;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#F39C12;stop-opacity:0.6" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#E74C3C" />
+    </marker>
+
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3498DB" />
+    </marker>
+  </defs>
+
+  <!-- Sky background -->
+  <rect x="0" y="0" width="800" height="250" fill="url(#skyGradient)"/>
+
+  <!-- Attic interior space -->
+  <rect x="0" y="250" width="800" height="350" fill="#F5E6D3" opacity="0.3"/>
+
+  <!-- Roof structure (cutaway view) -->
+  <!-- Left side roof -->
+  <path d="M 0,450 L 300,150 L 300,180 L 0,470 Z" fill="url(#shingleGradient)"/>
+
+  <!-- Right side roof -->
+  <path d="M 500,180 L 800,470 L 800,450 L 500,150 Z" fill="url(#shingleGradient)"/>
+
+  <!-- Roof deck/plywood - left -->
+  <path d="M 0,470 L 300,180 L 300,195 L 0,480 Z" fill="url(#plywoodGradient)"/>
+
+  <!-- Roof deck/plywood - right -->
+  <path d="M 500,195 L 800,480 L 800,470 L 500,180 Z" fill="url(#plywoodGradient)"/>
+
+  <!-- Rafters/Joists -->
+  <rect x="100" y="200" width="20" height="300" fill="#8B4513" opacity="0.8"/>
+  <rect x="240" y="230" width="20" height="280" fill="#8B4513" opacity="0.8"/>
+  <rect x="540" y="230" width="20" height="280" fill="#8B4513" opacity="0.8"/>
+  <rect x="680" y="200" width="20" height="300" fill="#8B4513" opacity="0.8"/>
+
+  <!-- Insulation between rafters -->
+  <path d="M 120,210 L 240,240 L 240,510 L 120,500 Z" fill="url(#insulationGradient)"/>
+  <path d="M 560,240 L 680,210 L 680,500 L 560,510 Z" fill="url(#insulationGradient)"/>
+
+  <!-- Solar panel on fan -->
+  <ellipse cx="400" cy="120" rx="70" ry="15" fill="#1C3B5C"/>
+  <ellipse cx="400" cy="120" rx="65" ry="12" fill="#2C5F8D"/>
+
+  <!-- Grid pattern on solar panel -->
+  <line x1="340" y1="120" x2="460" y2="120" stroke="#1C3B5C" stroke-width="1"/>
+  <line x1="400" y1="108" x2="400" y2="132" stroke="#1C3B5C" stroke-width="1"/>
+  <line x1="370" y1="111" x2="370" y2="129" stroke="#1C3B5C" stroke-width="0.5"/>
+  <line x1="430" y1="111" x2="430" y2="129" stroke="#1C3B5C" stroke-width="0.5"/>
+
+  <!-- Fan housing -->
+  <ellipse cx="400" cy="165" rx="50" ry="12" fill="#2C2C2C"/>
+  <rect x="350" y="135" width="100" height="30" fill="#3C3C3C" rx="5"/>
+  <ellipse cx="400" cy="135" rx="50" ry="12" fill="#4C4C4C"/>
+
+  <!-- Fan opening/vent -->
+  <ellipse cx="400" cy="165" rx="35" ry="8" fill="#1A1A1A"/>
+
+  <!-- Fan blades (simplified) -->
+  <circle cx="400" cy="165" r="25" fill="none" stroke="#555" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="140" x2="400" y2="190" stroke="#555" stroke-width="2" opacity="0.3"/>
+  <line x1="375" y1="165" x2="425" y2="165" stroke="#555" stroke-width="2" opacity="0.3"/>
+
+  <!-- Mounting flashing -->
+  <path d="M 320,180 L 350,165 L 350,195 L 320,210 Z" fill="#8B8B8B"/>
+  <path d="M 480,180 L 450,165 L 450,195 L 480,210 Z" fill="#8B8B8B"/>
+
+  <!-- HOT AIR arrows (red) exiting from fan -->
+  <!-- Center exhaust -->
+  <path d="M 400,170 Q 380,100 360,50" fill="none" stroke="#E74C3C" stroke-width="4" marker-end="url(#arrowRed)" opacity="0.8"/>
+  <path d="M 400,170 Q 400,120 400,60" fill="none" stroke="#E74C3C" stroke-width="4" marker-end="url(#arrowRed)" opacity="0.8"/>
+  <path d="M 400,170 Q 420,100 440,50" fill="none" stroke="#E74C3C" stroke-width="4" marker-end="url(#arrowRed)" opacity="0.8"/>
+
+  <!-- Hot air rising from attic space -->
+  <path d="M 200,400 Q 250,300 280,200" fill="none" stroke="#E74C3C" stroke-width="3" marker-end="url(#arrowRed)" opacity="0.7"/>
+  <path d="M 400,450 Q 400,350 400,220" fill="none" stroke="#E74C3C" stroke-width="3" marker-end="url(#arrowRed)" opacity="0.7"/>
+  <path d="M 600,400 Q 550,300 520,200" fill="none" stroke="#E74C3C" stroke-width="3" marker-end="url(#arrowRed)" opacity="0.7"/>
+
+  <!-- COOL AIR arrows (blue) entering from soffit vents -->
+  <!-- Left soffit intake -->
+  <path d="M 50,500 Q 100,450 150,400" fill="none" stroke="#3498DB" stroke-width="3" marker-end="url(#arrowBlue)" opacity="0.8"/>
+  <path d="M 80,510 Q 120,470 160,430" fill="none" stroke="#3498DB" stroke-width="3" marker-end="url(#arrowBlue)" opacity="0.8"/>
+
+  <!-- Right soffit intake -->
+  <path d="M 750,500 Q 700,450 650,400" fill="none" stroke="#3498DB" stroke-width="3" marker-end="url(#arrowBlue)" opacity="0.8"/>
+  <path d="M 720,510 Q 680,470 640,430" fill="none" stroke="#3498DB" stroke-width="3" marker-end="url(#arrowBlue)" opacity="0.8"/>
+
+  <!-- Soffit vents (simplified) -->
+  <rect x="30" y="500" width="80" height="15" fill="#FFFFFF" opacity="0.6" rx="2"/>
+  <rect x="690" y="500" width="80" height="15" fill="#FFFFFF" opacity="0.6" rx="2"/>
+
+  <!-- Labels -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E74C3C" text-anchor="middle">Hot Air Exhausted</text>
+
+  <text x="60" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#3498DB" text-anchor="start">Fresh Air Intake</text>
+  <text x="740" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#3498DB" text-anchor="end">Fresh Air Intake</text>
+
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="14" fill="#2C5F8D" text-anchor="middle" font-weight="bold">Solar Panel</text>
+
+  <!-- Temperature indicators -->
+  <g>
+    <circle cx="150" cy="350" r="30" fill="#E74C3C" opacity="0.2"/>
+    <text x="150" y="360" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E74C3C" text-anchor="middle">HOT</text>
+  </g>
+
+  <g>
+    <circle cx="650" cy="350" r="30" fill="#E74C3C" opacity="0.2"/>
+    <text x="650" y="360" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E74C3C" text-anchor="middle">HOT</text>
+  </g>
+
+  <g>
+    <circle cx="100" cy="530" r="30" fill="#3498DB" opacity="0.2"/>
+    <text x="100" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3498DB" text-anchor="middle">COOL</text>
+  </g>
+
+  <g>
+    <circle cx="700" cy="530" r="30" fill="#3498DB" opacity="0.2"/>
+    <text x="700" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3498DB" text-anchor="middle">COOL</text>
+  </g>
+</svg>
