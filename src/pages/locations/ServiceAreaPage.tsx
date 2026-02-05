@@ -181,10 +181,24 @@ export default function ServiceAreaPage() {
 
   // Generate schemas
   const canonicalUrl = finalCity ? `https://allphaseconstructionfl.com${finalCity.path}` : '';
-  const pageTitle = finalCity ? `${cleanCityName} Roofing Contractor | All Phase Construction` : 'Service Area Not Found';
-  const pageDescription = finalCity
-    ? `Licensed roofing contractor serving ${cleanCityName}, ${countyName || 'Florida'}. Expert roof repair, replacement & inspection. Free estimates. HVHZ certified. Call (754) 227-5605.`
-    : 'Service area not found';
+
+  // Page-specific SEO overrides (disables template-level defaults)
+  let pageTitle: string;
+  let pageDescription: string;
+
+  if (citySlug === 'boca-raton') {
+    // Boca Raton: Custom SEO metadata (overrides template)
+    pageTitle = 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase';
+    pageDescription = 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.';
+  } else if (finalCity) {
+    // All other cities: Use template-level SEO
+    pageTitle = `${cleanCityName} Roofing Contractor | All Phase Construction`;
+    pageDescription = `Licensed roofing contractor serving ${cleanCityName}, ${countyName || 'Florida'}. Expert roof repair, replacement & inspection. Free estimates. HVHZ certified. Call (754) 227-5605.`;
+  } else {
+    // Not found state
+    pageTitle = 'Service Area Not Found';
+    pageDescription = 'Service area not found';
+  }
 
   const schemas = finalCity ? [
     generateLocalBusinessSchema('https://allphaseconstructionfl.com'),
