@@ -140,6 +140,77 @@ export default function PricingGuidePage() {
           </div>
         </section>
 
+        {/* Why Quotes Vary Section */}
+        <section className="py-12 bg-white border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              Why Roof Quotes Vary So Much — Even With the Same Materials
+            </h2>
+
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Price differences between roofing contractors in South Florida are often driven by factors that extend far beyond material selection. Even when contractors quote the same roofing material, variations in licensing, insurance practices, crew management, and quality control can result in significantly different prices — and different levels of protection for homeowners.
+              </p>
+
+              <div className="space-y-8">
+                {/* Contractor Licensing */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Contractor Licensing and Scope of Work</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Not all roofing contractors are licensed to handle structural or decking issues. Some roofing contractors are also licensed general contractors, which allows them to directly address problems with roof decking, trusses, or structural components as they are discovered during the project. Contractors who hold only a roofing license must subcontract this work to a separate general contractor or carpenter, which can affect project cost, coordination timelines, and liability. Understanding a contractor's licensing scope helps homeowners anticipate how unexpected structural issues will be handled.
+                  </p>
+                </div>
+
+                {/* Subcontracting */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Subcontracting and Insurance Verification</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Many roofing contractors subcontract installation labor rather than employing crews directly. While subcontracting is common industry practice, homeowners should verify that subcontractors carry their own liability insurance and workers' compensation coverage. Most homeowners are unaware they have the right to request certificates of insurance from any subcontractor working on their property. This verification protects homeowners from liability if an uninsured worker is injured on-site.
+                  </p>
+                </div>
+
+                {/* Workers Comp */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Workers' Compensation and Liability Coverage</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Workers' compensation insurance is one of the largest operating costs for roofing contractors. This coverage protects both workers and homeowners by ensuring that injuries sustained on the job are covered by the contractor's insurance rather than the homeowner's. Contractors who do not maintain adequate workers' compensation coverage can offer significantly lower prices, but this shifts financial and legal risk to the property owner. If an uninsured or underinsured worker is injured during the project, the homeowner's insurance may become the primary source of compensation, potentially resulting in claims against the homeowner's policy.
+                  </p>
+                </div>
+
+                {/* Crew Experience */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Crew Experience and Employee Retention</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    While a contractor's years in business matter, the tenure of their installation crews is equally important. Contractors who retain the same crews over multiple years tend to deliver more consistent quality and better adherence to company standards. Long-tenured crews are familiar with the contractor's quality expectations, installation techniques, and project management systems. High crew turnover, conversely, can result in inconsistent workmanship and gaps in quality control. When evaluating contractors, consider asking how long their lead installers and crew members have been with the company.
+                  </p>
+                </div>
+
+                {/* Documentation */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Jobsite Safety and Documentation Practices</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    City inspections are brief and limited in scope, typically verifying permit compliance and basic code requirements rather than inspecting every aspect of installation quality. Quality-focused contractors document their work through progress photos, installation videos, and detailed project records. This documentation serves multiple purposes: it provides accountability, creates a record for future warranty claims, and allows contractors to verify that work was completed to specification. Contractors who invest in thorough documentation practices typically have higher operating costs but provide homeowners with greater transparency and recourse if issues arise.
+                  </p>
+                </div>
+
+                {/* Transparency */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Transparency and Access During Installation</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Some contractors provide homeowners with access to project documentation and progress updates throughout the installation process. This may include photo sharing, project management portals, or regular communication about each phase of work. Transparency practices allow homeowners to monitor progress even when they cannot be present on-site, and they create accountability for quality and timeline adherence. Contractors who offer this level of transparency typically build these systems into their operating costs, which can contribute to higher quotes compared to contractors who provide minimal communication or documentation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mt-8">
+                <p className="text-gray-800 font-medium">
+                  <strong>Key Takeaway:</strong> The lowest quote is not always the best value. Price differences often reflect differences in insurance coverage, crew experience, documentation practices, and the level of protection provided to homeowners. When comparing quotes, consider what is included beyond materials and basic installation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Content Sections - Placeholder Structure */}
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
