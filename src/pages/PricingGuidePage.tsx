@@ -211,6 +211,77 @@ export default function PricingGuidePage() {
           </div>
         </section>
 
+        {/* Roof Ventilation Section */}
+        <section className="py-12 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              Roof Ventilation in South Florida: Why Proper Attic Airflow Matters
+            </h2>
+
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Attic ventilation is a critical but frequently overlooked component of roof system performance in South Florida. Proper ventilation directly affects roof longevity, energy efficiency, indoor comfort, and compliance with building codes and manufacturer warranties. In South Florida's climate, where extreme heat and humidity are constant factors, ventilation design must be approached as a calculated engineering decision rather than an afterthought.
+              </p>
+
+              <div className="space-y-8">
+                {/* Basic Ventilation Methods */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Standard Gooseneck Vents: Common but Limited</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Standard gooseneck vents (also called static roof vents or box vents) are the most commonly installed ventilation solution in South Florida residential construction. These vents rely on passive airflow and convection to exhaust hot air from the attic. While they meet minimum code requirements in many jurisdictions, they provide limited airflow capacity, particularly in larger attic spaces or homes with complex roof geometries. In still air conditions common during summer months, gooseneck vents often fail to move sufficient air volume to prevent heat buildup, even when spaced according to manufacturer recommendations.
+                  </p>
+                </div>
+
+                {/* Turbine Vents */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Turbine Vents: Widespread Use, Declining Performance</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Turbine vents, commonly known as "whirly birds," are highly visible throughout South Florida neighborhoods. These wind-driven vents use rotating turbine blades to draw air from the attic when exterior wind causes the turbine to spin. While turbines can be effective in ideal conditions, their long-term performance in South Florida's coastal environment is often poor. Salt air, high humidity, and extreme heat cause turbines to rust, seize, or lose lubrication. Many turbines stop rotating within a few years of installation, at which point they function only as passive vents with limited airflow. Turbines also require ongoing maintenance and eventual replacement, adding to long-term ownership costs.
+                  </p>
+                </div>
+
+                {/* Solar Attic Fans */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Solar Attic Fans: Effective When Properly Specified</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Solar-powered attic fans can provide significant ventilation performance when properly selected, installed, and matched to the home's attic volume. Unlike passive vents or turbines, solar attic fans actively exhaust hot air using electric motors powered by integrated solar panels. This active ventilation creates consistent airflow regardless of wind conditions, which is particularly valuable in South Florida's humid climate where passive ventilation is often insufficient. However, not all solar attic fans are appropriate for South Florida installation, and improper selection can result in code violations, warranty issues, or equipment failure.
+                  </p>
+                </div>
+
+                {/* HVHZ Requirements */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">High Velocity Hurricane Zone (HVHZ) Code Compliance</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    In Miami-Dade and Broward counties, all roof-mounted equipment including solar attic fans must meet High Velocity Hurricane Zone (HVHZ) requirements. HVHZ-rated products are tested for wind resistance, uplift pressure, and structural attachment under extreme wind conditions. Many solar attic fans sold through retail channels or online marketplaces are not HVHZ-rated and cannot be legally installed in these jurisdictions. Installing non-compliant equipment can result in permit failures, inspection rejections, insurance policy complications, and liability exposure if the equipment fails during a storm. Contractors and homeowners must verify that solar attic fans carry Miami-Dade Notice of Acceptance (NOA) or Florida Product Approval before installation.
+                  </p>
+                </div>
+
+                {/* Sizing and CFM */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Airflow Capacity and Proper Sizing</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Solar attic fans are available with varying motor sizes and airflow capacities, measured in cubic feet per minute (CFM). Proper ventilation design requires calculating the attic's total cubic footage and determining the appropriate CFM rating needed to achieve adequate air exchanges per hour. A common industry guideline calls for 10 air changes per hour in attic spaces, though this can vary based on roof color, insulation levels, and home orientation. Undersized fans will not move sufficient air to reduce attic temperatures meaningfully, while oversized fans may create negative pressure that pulls conditioned air from living spaces. Solar attic fan selection should be based on measured attic dimensions and calculated ventilation requirements, not on assumptions or one-size-fits-all recommendations.
+                  </p>
+                </div>
+
+                {/* Consequences of Poor Ventilation */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Consequences of Inadequate or Incorrect Ventilation</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Inadequate attic ventilation or improperly designed ventilation systems create multiple long-term problems for South Florida homeowners. Trapped heat in the attic can raise interior temperatures, increasing air conditioning runtime and energy costs. Moisture buildup from inadequate airflow accelerates roof deck deterioration, promotes mold growth, and shortens shingle lifespan. Many roofing material manufacturers require documented ventilation compliance as a condition of warranty coverage, meaning inadequate ventilation can void material warranties. Additionally, insurance carriers may scrutinize ventilation systems during underwriting or claims processes, particularly for moisture-related or premature failure claims. Proper ventilation design and installation should be treated as a non-negotiable component of roof system performance rather than an optional upgrade.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mt-8">
+                <p className="text-gray-800 font-medium">
+                  <strong>Industry Standard:</strong> Effective attic ventilation requires engineered calculation based on attic volume, climate conditions, and roof characteristics. When discussing roof replacement, request specific ventilation recommendations with supporting calculations and verify that all equipment meets local code requirements including HVHZ standards where applicable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Content Sections - Placeholder Structure */}
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
