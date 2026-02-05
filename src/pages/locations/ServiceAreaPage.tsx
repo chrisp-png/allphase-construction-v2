@@ -24,6 +24,7 @@ import NoIndexMeta from '../../components/NoIndexMeta';
 import InternalLinksBlock from '../../components/InternalLinksBlock';
 import { CITY_COORDINATES } from '../../data/cityCoordinates';
 import { generateLocalBusinessSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../../utils/seoSchemas';
+import { getCityServiceAreaSEO } from '../../config/cityServiceAreaSEO';
 
 export default function ServiceAreaPage() {
   const { citySlug } = useParams<{ citySlug: string }>();
@@ -182,18 +183,15 @@ export default function ServiceAreaPage() {
   // Generate schemas
   const canonicalUrl = finalCity ? `https://allphaseconstructionfl.com${finalCity.path}` : '';
 
-  // Page-specific SEO overrides (disables template-level defaults)
+  // Get SEO metadata using scalable template system with overrides
   let pageTitle: string;
   let pageDescription: string;
 
-  if (citySlug === 'boca-raton') {
-    // Boca Raton: Custom SEO metadata (overrides template)
-    pageTitle = 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase';
-    pageDescription = 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.';
-  } else if (finalCity) {
-    // All other cities: Use template-level SEO
-    pageTitle = `${cleanCityName} Roofing Contractor | All Phase Construction`;
-    pageDescription = `Licensed roofing contractor serving ${cleanCityName}, ${countyName || 'Florida'}. Expert roof repair, replacement & inspection. Free estimates. HVHZ certified. Call (754) 227-5605.`;
+  if (finalCity && citySlug) {
+    // Use SEO system (checks overrides first, then applies templates)
+    const cityServiceAreaSEO = getCityServiceAreaSEO(citySlug, cleanCityName, countyName);
+    pageTitle = cityServiceAreaSEO.title;
+    pageDescription = cityServiceAreaSEO.description;
   } else {
     // Not found state
     pageTitle = 'Service Area Not Found';
