@@ -2152,14 +2152,6 @@ from = "/residential-roofing/roof-replacement-process/"
 to = "/roof-replacement-process"
 status = 301
 
-[[edge_functions]]
-function = "normalize-case"
-path = "/*"
-
-[[edge_functions]]
-function = "inject-seo"
-path = "/locations/deerfield-beach/service-area/*"
-
 [[redirects]]
 from = "/blog/*"
 to = "/index.html"
