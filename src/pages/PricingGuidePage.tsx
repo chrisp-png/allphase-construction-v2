@@ -218,6 +218,21 @@ export default function PricingGuidePage() {
               Roof Ventilation in South Florida: Why Proper Attic Airflow Matters
             </h2>
 
+            {/* Ventilation Types Image */}
+            <figure className="mb-8">
+              <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                <img
+                  src="https://images.pexels.com/photos/22938256/pexels-photo-22938256.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Turbine roof ventilator installed on residential roof showing common passive ventilation technology used in South Florida homes"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="mt-3 text-sm text-gray-600 text-center italic">
+                Example of turbine-style roof ventilation commonly found on South Florida homes. Professional ventilation design considers multiple factors including vent type, quantity, placement, and intake/exhaust balance for optimal attic airflow.
+              </figcaption>
+            </figure>
+
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Attic ventilation is a critical but frequently overlooked component of roof system performance in South Florida. Proper ventilation directly affects roof longevity, energy efficiency, indoor comfort, and compliance with building codes and manufacturer warranties. In South Florida's climate, where extreme heat and humidity are constant factors, ventilation design must be approached as a calculated engineering decision rather than an afterthought.
