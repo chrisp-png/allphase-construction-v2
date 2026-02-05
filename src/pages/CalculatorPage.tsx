@@ -162,7 +162,7 @@ export default function CalculatorPage() {
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="border-b border-zinc-700">
+                  <tr className="border-b-2 border-zinc-600">
                     <th className="py-3 px-4 text-white font-semibold">Roof Type</th>
                     <th className="py-3 px-4 text-white font-semibold">Avg Cost per Sq Ft (South Florida HVHZ)</th>
                     <th className="py-3 px-4 text-white font-semibold">Typical Lifespan</th>
@@ -170,27 +170,27 @@ export default function CalculatorPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-zinc-800">
+                  <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline">Asphalt Shingle</Link>
                     </td>
-                    <td className="py-3 px-4 text-zinc-300">$8–$12</td>
+                    <td className="py-3 px-4 text-white font-bold">$8–$12</td>
                     <td className="py-3 px-4 text-zinc-300">15–25 years</td>
                     <td className="py-3 px-4 text-zinc-300">Code-compliant residential replacements</td>
                   </tr>
-                  <tr className="border-b border-zinc-800">
+                  <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline">Tile (Concrete / Clay)</Link>
                     </td>
-                    <td className="py-3 px-4 text-zinc-300">$10–$18</td>
+                    <td className="py-3 px-4 text-white font-bold">$10–$18</td>
                     <td className="py-3 px-4 text-zinc-300">30–50 years</td>
                     <td className="py-3 px-4 text-zinc-300">Long-term durability, HOA & coastal homes</td>
                   </tr>
-                  <tr className="border-b border-zinc-800">
+                  <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline">Metal (Standing Seam)</Link>
                     </td>
-                    <td className="py-3 px-4 text-zinc-300">$12–$20</td>
+                    <td className="py-3 px-4 text-white font-bold">$12–$20</td>
                     <td className="py-3 px-4 text-zinc-300">40–70 years</td>
                     <td className="py-3 px-4 text-zinc-300">Wind resistance, solar-ready systems</td>
                   </tr>
@@ -198,7 +198,7 @@ export default function CalculatorPage() {
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline">Flat / Low-Slope</Link>
                     </td>
-                    <td className="py-3 px-4 text-zinc-300">$10–$16</td>
+                    <td className="py-3 px-4 text-white font-bold">$10–$16</td>
                     <td className="py-3 px-4 text-zinc-300">20–30 years</td>
                     <td className="py-3 px-4 text-zinc-300">Commercial & modern residential roofs</td>
                   </tr>
