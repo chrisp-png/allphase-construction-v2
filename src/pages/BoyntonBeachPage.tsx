@@ -208,12 +208,12 @@ export default function BoyntonBeachPage() {
               <p className="text-zinc-300 leading-relaxed mb-6">
                 If you haven't yet estimated your roof cost, start with our roof cost calculator to get a baseline before exploring payment options.
               </p>
-              <Link
-                to="/calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 border border-zinc-700"
               >
                 Use Roof Cost Calculator
-              </Link>
+              </a>
             </div>
           </div>
 
