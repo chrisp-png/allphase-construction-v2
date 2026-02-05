@@ -9,15 +9,15 @@ export default function BocaRatonPage() {
   const [openQuickFaq, setOpenQuickFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Boca Raton Roofer | HVHZ Certified | All Phase';
+    document.title = 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Boca Raton FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Boca Raton FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.';
       document.head.appendChild(meta);
     }
 
