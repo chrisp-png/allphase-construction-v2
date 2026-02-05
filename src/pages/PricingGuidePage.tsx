@@ -103,6 +103,33 @@ export default function PricingGuidePage() {
           </div>
         </section>
 
+        {/* Calculator CTA */}
+        <section className="py-12 bg-gradient-to-br from-red-600 to-red-700">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-6">
+                <Calculator className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Estimate Your Project?
+              </h2>
+              <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+                Once you understand what influences roof pricing in South Florida, you can use our Roof Cost Calculator to see how these factors may apply to your home.
+              </p>
+              <Link
+                to="/calculator"
+                className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg text-lg"
+              >
+                <Calculator className="w-5 h-5" />
+                Use the Roof Cost Calculator
+              </Link>
+              <p className="text-sm text-white/70 mt-4">
+                Get a preliminary estimate in under 2 minutes
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Section Navigation Cards */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
