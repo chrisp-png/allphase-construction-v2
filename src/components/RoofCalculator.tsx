@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Phone, Calendar, Check, Lightbulb } from 'lucide-react';
 import CalculatorLeadCapture from './CalculatorLeadCapture';
+import HVHZText from './HVHZText';
 
 interface RoofSize {
   label: string;
@@ -157,7 +158,7 @@ const priceFactors = [
   'Wind mitigation for insurance discounts',
   'Underlayment quality & type',
   'Installation method & fastening system',
-  'Engineering requirements in HVHZ zones',
+  { text: 'Engineering requirements in ', hvhz: true, suffix: ' zones' },
   'Skilled crew & workmanship quality',
   'Roof flashings',
 ];
@@ -319,7 +320,7 @@ export default function RoofCalculator() {
 
               <div className="bg-amber-900/20 border border-amber-600/40 rounded-lg p-4 mb-8">
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  <span className="font-semibold text-amber-400">Quality matters more than the number.</span> This estimate assumes a properly installed roofing system using code-compliant materials, correct flashing details, and HVHZ-level workmanship—not shortcut labor or 'lowest-bid' installs.
+                  <span className="font-semibold text-amber-400">Quality matters more than the number.</span> This estimate assumes a properly installed roofing system using code-compliant materials, correct flashing details, and <HVHZText variant="acronym" showIcon={false} />-level workmanship—not shortcut labor or 'lowest-bid' installs.
                 </p>
               </div>
 
@@ -402,7 +403,17 @@ export default function RoofCalculator() {
                     {priceFactors.map((factor, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-gray-300">
                         <div className="w-1.5 h-1.5 bg-amber-500 rounded-full"></div>
-                        <span>{factor}</span>
+                        <span>
+                          {typeof factor === 'string' ? (
+                            factor
+                          ) : (
+                            <>
+                              {factor.text}
+                              <HVHZText variant="acronym" className="text-amber-400" />
+                              {factor.suffix}
+                            </>
+                          )}
+                        </span>
                       </div>
                     ))}
                   </div>

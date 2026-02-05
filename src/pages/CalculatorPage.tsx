@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Calculator, MapPin, Shield, Plus, Minus, ArrowRight } from 'lucide-react';
 import RoofCalculator from '../components/RoofCalculator';
+import HVHZText from '../components/HVHZText';
 
 export default function CalculatorPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -149,7 +150,7 @@ export default function CalculatorPage() {
                   <strong className="text-white">This calculator provides estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, code compliance requirements, and site-specific installation factors.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  Broward and most coastal Palm Beach County properties are located in the <strong className="text-white">South Florida High Velocity Hurricane Zone (HVHZ)</strong>, which requires enhanced fastening patterns, approved underlayment systems, and Florida Building Code compliance. HVHZ requirements typically add $1–$3 per square foot to installation costs compared to standard installations.
+                  Broward and most coastal Palm Beach County properties are located in the <HVHZText variant="south-florida" className="text-amber-400" />, which requires enhanced fastening patterns, approved underlayment systems, and Florida Building Code compliance. <HVHZText variant="acronym" showIcon={false} className="text-amber-400" /> requirements typically add $1–$3 per square foot to installation costs compared to standard installations.
                 </p>
               </div>
             </div>
