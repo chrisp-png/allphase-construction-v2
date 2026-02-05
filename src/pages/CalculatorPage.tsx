@@ -12,6 +12,13 @@ export default function CalculatorPage() {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  const scrollToCalculator = () => {
+    const calculatorSection = document.getElementById('roof-calculator-section');
+    if (calculatorSection) {
+      calculatorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useEffect(() => {
     document.title = 'Roof Cost Calculator | Free Estimate Tool South Florida';
 
@@ -134,9 +141,27 @@ export default function CalculatorPage() {
                 <p className="text-zinc-300 leading-relaxed mb-3">
                   Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, and <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> systems based on roof size and material selection.
                 </p>
-                <p className="text-zinc-300 leading-relaxed pb-4 border-b border-zinc-800/50">
+                <p className="text-zinc-300 leading-relaxed mb-6">
                   Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
                 </p>
+
+                {/* Action Buttons */}
+                <div className="flex flex-wrap gap-4 pt-4 border-t border-zinc-800/50">
+                  <button
+                    onClick={scrollToCalculator}
+                    className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl"
+                  >
+                    <Calculator className="w-5 h-5 mr-2" />
+                    Calculate My Roof Cost
+                  </button>
+                  <Link
+                    to="/roof-inspection"
+                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-zinc-600 text-zinc-200 font-semibold rounded-lg hover:bg-zinc-800 hover:border-zinc-500 transition-colors"
+                  >
+                    <Shield className="w-5 h-5 mr-2" />
+                    Schedule a Roof Inspection
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -304,7 +329,9 @@ export default function CalculatorPage() {
       </section>
 
       {/* Calculator Component */}
-      <RoofCalculator />
+      <section id="roof-calculator-section">
+        <RoofCalculator />
+      </section>
 
       {/* People Also Ask Section */}
       <section className="py-20 bg-zinc-950">
