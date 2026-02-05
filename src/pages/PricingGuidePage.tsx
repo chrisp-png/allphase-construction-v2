@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { DollarSign, Shield, Wind, Thermometer, Users, Calculator, ClipboardCheck } from 'lucide-react';
+import { DollarSign, Shield, Wind, Thermometer, Users, Calculator, ClipboardCheck, AlertTriangle, Calendar, FileCheck } from 'lucide-react';
 import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -561,20 +561,80 @@ export default function PricingGuidePage() {
                   <ClipboardCheck className="w-6 h-6 text-red-600" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">
-                  When You Need a Roof Inspection
+                  When You Should Schedule a Roof Inspection
                 </h2>
               </div>
-              <div className="bg-gray-50 rounded-lg p-8 border-l-4 border-red-600">
-                <p className="text-gray-600 italic mb-4">
-                  Content coming soon: This section will explain when homeowners should get a professional roof inspection,
-                  what inspectors look for, and how inspections help with insurance claims and planning.
+
+              <div className="prose prose-lg max-w-none space-y-6">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Understanding roof pricing is valuable, but accurate decision-making requires professional evaluation of your specific roof condition, structural characteristics, and code compliance requirements. A professional roof inspection is recommended in the following situations:
                 </p>
-                <div className="mt-6">
+
+                <div className="space-y-6">
+                  {/* Roof Repairs */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                      <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                        <AlertTriangle className="w-5 h-5 text-red-600" />
+                      </div>
+                      Roof Repairs
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      When leaks, damage, or localized issues are present, a professional evaluation is needed to determine the scope of damage, underlying causes, and appropriate repair options. Visible symptoms such as interior water stains, missing shingles, or damaged flashing often indicate broader underlying problems that require expert assessment. Professional inspectors can identify whether damage is isolated and repairable or indicative of systemic failure requiring replacement. They can also determine whether insurance coverage applies, document pre-existing versus storm-related damage, and provide repair specifications that address root causes rather than superficial symptoms. Attempting repairs without professional evaluation frequently results in incomplete solutions that fail to address underlying issues, leading to recurring problems and higher long-term costs.
+                    </p>
+                  </div>
+
+                  {/* Roof Replacement Planning */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                      <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                        <Calendar className="w-5 h-5 text-red-600" />
+                      </div>
+                      Roof Replacement Planning
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      When a roof is nearing the end of its service life, professional inspection provides essential information for informed replacement decisions. Inspectors evaluate remaining service life based on material condition, granule loss, seal integrity, and structural performance rather than age alone. They assess roof deck condition, structural adequacy for different material types, ventilation system design and code compliance, and current code requirements including wind uplift ratings and attachment specifications. This evaluation determines whether replacement is immediately necessary or can be deferred, which material systems are structurally compatible with your building, what ventilation modifications are required for code compliance, and accurate project scope including deck repairs, structural reinforcement, and accessory replacements. Professional inspections also identify cost factors that online calculators cannot account for including concealed deck damage, inadequate structural capacity requiring reinforcement, and ventilation deficiencies requiring system redesign. This information prevents unexpected costs during installation and ensures replacement projects are scoped and budgeted accurately from the outset.
+                    </p>
+                  </div>
+
+                  {/* Insurance and Documentation */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                      <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                        <FileCheck className="w-5 h-5 text-red-600" />
+                      </div>
+                      Insurance and Documentation
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Professional roof inspections provide documentation that supports insurance renewals, validates premium discounts, and establishes baseline condition for future claim evaluation. Wind mitigation inspections document code-compliant installation features that qualify for insurance premium discounts including roof-to-wall attachment methods, roof deck attachment specifications, roof covering type and wind rating, secondary water resistance barriers, and opening protection systems. These inspections must be performed by licensed inspectors and documented on standardized forms accepted by insurance carriers. Condition assessment inspections provide photographic documentation of current roof condition, remaining service life estimates, identification of pre-existing damage versus new storm damage, and maintenance recommendations that demonstrate responsible property stewardship. This documentation is particularly valuable when insurance companies request roof condition reports during policy renewals, when considering policy changes or carrier switches, after severe weather events when baseline condition documentation supports accurate claim evaluation, and when selling property and buyers or lenders require roof condition verification. Professional documentation provides objective evidence that protects homeowners during insurance disputes and validates the condition and quality of roofing systems.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Professional Inspection Value */}
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mt-8">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    The Value of Professional Inspection
+                  </h3>
+                  <p className="text-gray-800 leading-relaxed">
+                    Online pricing calculators and general information provide helpful context for understanding roofing costs and options. However, they cannot replace professional inspection when making actual repair or replacement decisions. Inspections provide accurate condition assessment based on your specific roof, identification of structural issues and code compliance requirements that affect project scope and cost, photographic documentation that supports insurance claims and validates contractor proposals, and expert guidance on repair-versus-replace decisions based on comprehensive evaluation rather than assumptions. Professional inspections typically cost between $150 and $400 depending on roof size, complexity, and documentation requirements, but this investment provides information that prevents costly mistakes, validates contractor proposals, and supports favorable insurance outcomes potentially worth thousands of dollars.
+                  </p>
+                </div>
+
+                {/* Call to Action */}
+                <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg p-8 mt-8 text-center">
+                  <h3 className="text-2xl font-bold mb-4">
+                    Schedule Your Professional Roof Inspection
+                  </h3>
+                  <p className="text-gray-200 mb-6 text-lg max-w-2xl mx-auto">
+                    Whether you're planning a roof replacement, addressing repairs, or need documentation for insurance purposes, a professional inspection provides the accurate information needed to make informed decisions with confidence.
+                  </p>
                   <Link
                     to="/roof-inspection"
-                    className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors"
+                    className="inline-flex items-center px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
-                    Learn about our inspection services →
+                    <ClipboardCheck className="w-5 h-5 mr-2" />
+                    Schedule an Inspection
                   </Link>
                 </div>
               </div>
