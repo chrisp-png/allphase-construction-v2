@@ -194,7 +194,6 @@ const ServiceAreaDynamicPage = lazy(() => import('./pages/ServiceAreaDynamicPage
 const LocationsIndexPage = lazy(() => import('./pages/locations/LocationsIndexPage'));
 const ServiceAreasHubPage = lazy(() => import('./pages/locations/ServiceAreasHubPage'));
 const ServiceAreaPage = lazy(() => import('./pages/locations/ServiceAreaPage'));
-const LocationCalculatorPage = lazy(() => import('./pages/locations/LocationCalculatorPage'));
 const TopRooferPage = lazy(() => import('./pages/locations/TopRooferPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
@@ -308,7 +307,6 @@ function AppContent() {
             <Route path="/locations/deerfield-beach/service-area" element={<ServiceAreasHubPage />} />
             <Route path="/locations/deerfield-beach" element={<DeerfieldBeachCityPage />} />
             <Route path="/locations/deerfield-beach/service-area/:citySlug" element={<ServiceAreaPage />} />
-            <Route path="/locations/deerfield-beach/service-area/:citySlug/roof-cost-calculator" element={<LocationCalculatorPage />} />
             <Route path="/locations/deerfield-beach/service-area/:citySlug/top-5-roofer" element={<TopRooferPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
