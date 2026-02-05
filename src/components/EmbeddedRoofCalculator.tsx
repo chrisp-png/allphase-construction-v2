@@ -290,13 +290,13 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
           <button
             onClick={handleSeeEstimate}
             disabled={!selectedType}
-            className={`w-full py-4 rounded-full font-bold text-lg transition-all duration-300 ${
+            className={`w-full py-4 rounded-full font-bold text-lg transition-all duration-500 ${
               selectedType
-                ? 'bg-red-600 text-white hover:bg-red-700 shadow-lg hover:shadow-xl hover:scale-105'
-                : 'bg-gray-700 text-gray-400 cursor-not-allowed'
+                ? 'bg-gradient-to-r from-red-600 to-red-500 text-white hover:from-red-500 hover:to-red-600 shadow-[0_0_30px_rgba(220,38,38,0.5)] hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] hover:scale-105 ring-2 ring-red-500/50 animate-pulse-slow'
+                : 'bg-gray-800 text-gray-500 cursor-not-allowed border-2 border-gray-700 opacity-50'
             }`}
           >
-            See My Estimate
+            {selectedType ? '✓ See My Estimate' : 'Select Options Above'}
           </button>
         </div>
 
@@ -496,6 +496,19 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
             opacity: 1;
             transform: translateY(0);
           }
+        }
+
+        @keyframes pulse-slow {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.95;
+          }
+        }
+
+        .animate-pulse-slow {
+          animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
       `}</style>
     </section>
