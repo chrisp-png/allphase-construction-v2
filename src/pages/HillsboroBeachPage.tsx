@@ -363,8 +363,8 @@ export default function HillsboroBeachPage() {
               These tools help Hillsboro Beach property owners estimate roofing costs and explore financing options:
             </p>
             <div className="max-w-2xl mx-auto space-y-4">
-              <Link
-                to="/locations/deerfield-beach/service-area/hillsboro-beach/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="block bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 hover:bg-zinc-800/50 transition-all group"
               >
                 <div className="flex items-center gap-4">
@@ -378,9 +378,9 @@ export default function HillsboroBeachPage() {
                     <p className="text-zinc-400 text-sm">Get a ballpark estimate for your roofing project</p>
                   </div>
                 </div>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/hillsboro-beach/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="block bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 hover:bg-zinc-800/50 transition-all group"
               >
                 <div className="flex items-center gap-4">
@@ -394,7 +394,7 @@ export default function HillsboroBeachPage() {
                     <p className="text-zinc-400 text-sm">Estimate monthly payments for your roofing project</p>
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
 

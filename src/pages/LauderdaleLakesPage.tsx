@@ -358,8 +358,8 @@ export default function LauderdaleLakesPage() {
               Understanding roofing costs helps with planning and decision-making. These tools are available for Lauderdale Lakes property owners:
             </p>
             <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link
-                to="/locations/deerfield-beach/service-area/lauderdale-lakes/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group text-center"
               >
                 <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
@@ -369,9 +369,9 @@ export default function LauderdaleLakesPage() {
                   Roof Cost Calculator
                 </h3>
                 <p className="text-zinc-400 text-sm">Get a ballpark estimate for your roofing project</p>
-              </Link>
+              </a>
               <a
-                href="/locations/deerfield-beach/service-area/lauderdale-lakes/roof-cost-calculator#finance-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group text-center"
               >
                 <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4 mx-auto">

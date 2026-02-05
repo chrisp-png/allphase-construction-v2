@@ -382,18 +382,18 @@ export default function PembrokeParkPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/locations/deerfield-beach/service-area/pembroke-park/roof-cost-calculator"
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                   className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 text-center"
                 >
                   Roof Cost Calculator
-                </Link>
-                <Link
-                  to="/locations/deerfield-beach/service-area/pembroke-park/roof-cost-calculator#finance-calculator"
+                </a>
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 border border-zinc-700 text-center"
                 >
                   Finance Calculator
-                </Link>
+                </a>
               </div>
             </div>
           </div>

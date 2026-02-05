@@ -392,7 +392,7 @@ export default function LauderdaleRanchesPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <Link
-                to="/locations/deerfield-beach/service-area/lauderdale-ranches/roof-cost-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-600 transition-colors">
@@ -403,7 +403,7 @@ export default function LauderdaleRanchesPage() {
                 </p>
               </Link>
               <Link
-                to="/locations/deerfield-beach/service-area/lauderdale-ranches/roof-cost-calculator#finance-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-600 transition-colors">

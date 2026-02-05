@@ -387,7 +387,7 @@ export default function BocaRatonRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-              Property owners can also explore the <Link to="/locations/deerfield-beach/service-area/boca-raton" className="text-red-600 hover:text-red-500 underline transition-colors">Boca Raton service area hub</Link> and use our <Link to="/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Boca Raton roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
+              Property owners can also explore the <Link to="/locations/deerfield-beach/service-area/boca-raton" className="text-red-600 hover:text-red-500 underline transition-colors">Boca Raton service area hub</Link> and use our <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</a> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
             </p>
           </div>
         </section>

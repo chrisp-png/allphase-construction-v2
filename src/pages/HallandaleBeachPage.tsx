@@ -345,8 +345,8 @@ export default function HallandaleBeachPage() {
               These tools help Hallandale Beach property owners estimate roofing costs and explore financing options:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <Link
-                to="/locations/deerfield-beach/service-area/hallandale-beach/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-gradient-to-br from-red-900/20 to-zinc-900/20 border border-red-900/30 rounded-xl p-8 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <Calculator className="w-12 h-12 text-red-500 mb-4" />
@@ -356,10 +356,10 @@ export default function HallandaleBeachPage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Get a fast ballpark estimate based on your roof size and material type.
                 </p>
-              </Link>
+              </a>
 
-              <Link
-                to="/locations/deerfield-beach/service-area/hallandale-beach/roof-cost-calculator#finance-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-gradient-to-br from-red-900/20 to-zinc-900/20 border border-red-900/30 rounded-xl p-8 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <DollarSign className="w-12 h-12 text-red-500 mb-4" />
@@ -369,7 +369,7 @@ export default function HallandaleBeachPage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Estimate monthly payments for your Hallandale Beach roofing project.
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
 

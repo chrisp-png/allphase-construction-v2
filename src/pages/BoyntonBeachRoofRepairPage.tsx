@@ -399,7 +399,7 @@ export default function BoyntonBeachRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-              Explore the <Link to="/locations/deerfield-beach/service-area/boynton-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Boynton Beach service area hub</Link> or use the <Link to="/locations/deerfield-beach/service-area/boynton-beach/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Boynton Beach roof cost estimate tool</Link> for planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
+              Explore the <Link to="/locations/deerfield-beach/service-area/boynton-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Boynton Beach service area hub</Link> or use the <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</a> for planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
             </p>
           </div>
         </section>

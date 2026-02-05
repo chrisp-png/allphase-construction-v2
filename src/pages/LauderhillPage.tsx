@@ -359,8 +359,8 @@ export default function LauderhillPage() {
               These tools help Lauderhill property owners estimate roofing costs and explore financing options:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <Link
-                to="/locations/deerfield-beach/service-area/lauderhill/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 hover:border-red-600 transition-all duration-300 group text-center"
               >
                 <div className="w-16 h-16 bg-red-600/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
@@ -372,9 +372,9 @@ export default function LauderhillPage() {
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   Estimate your roofing project costs
                 </p>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/lauderhill/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 hover:border-red-600 transition-all duration-300 group text-center"
               >
                 <div className="w-16 h-16 bg-red-600/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
@@ -386,7 +386,7 @@ export default function LauderhillPage() {
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   Explore monthly payment options
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
 

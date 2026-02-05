@@ -471,8 +471,8 @@ export default function LakeWorthBeachPage() {
               These tools help Lake Worth Beach property owners estimate roofing costs and explore financing options:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <Link
-                to="/locations/deerfield-beach/service-area/lake-worth-beach/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-gradient-to-br from-blue-900/20 to-blue-800/10 border border-blue-700/30 rounded-xl p-8 hover:border-blue-600 transition-all duration-300 group"
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -490,10 +490,10 @@ export default function LakeWorthBeachPage() {
                   <span>Calculate Costs</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
+              </a>
 
-              <Link
-                to="/locations/deerfield-beach/service-area/lake-worth-beach/roof-cost-calculator#finance-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-gradient-to-br from-green-900/20 to-green-800/10 border border-green-700/30 rounded-xl p-8 hover:border-green-600 transition-all duration-300 group"
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -511,7 +511,7 @@ export default function LakeWorthBeachPage() {
                   <span>View Payment Options</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
 

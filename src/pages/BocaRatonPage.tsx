@@ -412,18 +412,18 @@ export default function BocaRatonPage() {
                 These tools help Boca Raton property owners better understand roofing costs and financing options:
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link
-                  to="/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                   className="px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
                 >
                   Roof Cost Calculator
-                </Link>
-                <Link
-                  to="/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator#finance-calculator"
+                </a>
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                   className="px-6 py-3 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 border border-zinc-700"
                 >
                   Payment Estimator
-                </Link>
+                </a>
               </div>
             </div>
 

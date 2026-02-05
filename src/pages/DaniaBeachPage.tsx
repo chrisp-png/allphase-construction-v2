@@ -230,24 +230,24 @@ export default function DaniaBeachPage() {
               </p>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 mb-6">
                 <h3 className="text-xl font-bold text-white mb-4">Roof cost calculator:</h3>
-                <Link
-                  to="/locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator"
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
-                  /locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator
-                </Link>
+                  https://allphaseconstructionfl.com/roof-cost-calculator/
+                </a>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8">
                 <h3 className="text-xl font-bold text-white mb-4">Monthly payment estimate:</h3>
                 <p className="text-zinc-400 mb-4">
                   If you want to estimate monthly payments, use the financing calculator on that page:
                 </p>
-                <Link
-                  to="/locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator#finance-calculator"
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
-                  /locations/deerfield-beach/service-area/dania-beach/roof-cost-calculator#finance-calculator
-                </Link>
+                  https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator
+                </a>
               </div>
             </div>
           </div>

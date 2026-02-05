@@ -370,7 +370,7 @@ export default function NorthLauderdalePage() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/locations/deerfield-beach/service-area/north-lauderdale/roof-cost-calculator"
+              href="https://allphaseconstructionfl.com/roof-cost-calculator/"
               className="bg-zinc-900 border border-zinc-800 rounded-lg p-8 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10"
             >
               <h3 className="text-xl font-bold text-white mb-3">Roof Cost Calculator</h3>
@@ -380,7 +380,7 @@ export default function NorthLauderdalePage() {
               <span className="text-red-500 font-semibold">Calculate Now →</span>
             </Link>
             <Link
-              to="/locations/deerfield-beach/service-area/north-lauderdale/roof-cost-calculator#finance-calculator"
+              href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
               className="bg-zinc-900 border border-zinc-800 rounded-lg p-8 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10"
             >
               <h3 className="text-xl font-bold text-white mb-3">Financing Calculator</h3>

@@ -353,8 +353,8 @@ export default function HaverillPage() {
               These tools help Haverhill property owners estimate roofing costs and explore financing options:
             </p>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link
-                to="/locations/deerfield-beach/service-area/haverhill/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-gradient-to-br from-red-900/20 to-zinc-900/20 border border-red-900/30 rounded-lg p-8 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <Calculator className="w-10 h-10 text-red-500 mb-4" />
@@ -368,10 +368,10 @@ export default function HaverillPage() {
                   <span>Calculate Now</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
+              </a>
 
-              <Link
-                to="/locations/deerfield-beach/service-area/haverhill/roof-cost-calculator#finance-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-gradient-to-br from-blue-900/20 to-zinc-900/20 border border-blue-900/30 rounded-lg p-8 hover:border-blue-600/50 transition-all duration-300 group"
               >
                 <Calculator className="w-10 h-10 text-blue-500 mb-4" />
@@ -385,7 +385,7 @@ export default function HaverillPage() {
                   <span>View Options</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -443,8 +443,8 @@ export default function WestlakePage() {
               </p>
             </div>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link
-                to="/locations/deerfield-beach/service-area/westlake/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -457,9 +457,9 @@ export default function WestlakePage() {
                   <span>Calculate Now</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/westlake/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -472,7 +472,7 @@ export default function WestlakePage() {
                   <span>View Options</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -126,21 +126,21 @@ export default function DaviePage() {
           <p className="mb-3">
             Roof pricing depends on roof size, roof type, tear-off requirements, and roof complexity. Start here for a ballpark estimate:
           </p>
-          <Link
-            to="/locations/deerfield-beach/service-area/davie/roof-cost-calculator"
+          <a
+            href="https://allphaseconstructionfl.com/roof-cost-calculator/"
             className="text-red-500 hover:text-red-400 underline transition-colors block mb-3"
           >
-            /locations/deerfield-beach/service-area/davie/roof-cost-calculator
-          </Link>
+            https://allphaseconstructionfl.com/roof-cost-calculator/
+          </a>
           <p>
             For monthly payments, jump directly to the financing calculator section:
           </p>
-          <Link
-            to="/locations/deerfield-beach/service-area/davie/roof-cost-calculator#finance-calculator"
+          <a
+            href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
             className="text-red-500 hover:text-red-400 underline transition-colors block"
           >
-            /locations/deerfield-beach/service-area/davie/roof-cost-calculator#finance-calculator
-          </Link>
+            https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator
+          </a>
         </div>
       )
     },
@@ -258,8 +258,8 @@ export default function DaviePage() {
               Roof Cost Tools for Davie
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Link
-                to="/locations/deerfield-beach/service-area/davie/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="flex items-start justify-between mb-4">
@@ -271,9 +271,9 @@ export default function DaviePage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Start with the Davie roof cost calculator to get a ballpark estimate based on roof size and roof type.
                 </p>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/davie/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="flex items-start justify-between mb-4">
@@ -285,7 +285,7 @@ export default function DaviePage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Estimate monthly payments on the same page using the financing calculator.
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
 

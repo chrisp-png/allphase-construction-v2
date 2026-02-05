@@ -318,20 +318,20 @@ export default function LantanaPage() {
               <p>Planning a roofing project? Use our cost tools designed for Lantana properties:</p>
             </div>
             <div className="space-y-4">
-              <Link
-                to="/locations/deerfield-beach/service-area/lantana/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="block bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300"
               >
                 <h3 className="text-xl font-bold text-white mb-2">Roof Cost Calculator</h3>
                 <p className="text-zinc-400">Get instant estimates for your Lantana roofing project</p>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/lantana/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="block bg-gradient-to-r from-blue-600/10 to-blue-500/10 border border-blue-600/20 rounded-lg p-6 hover:border-blue-600/50 transition-all duration-300"
               >
                 <h3 className="text-xl font-bold text-white mb-2">Finance Calculator</h3>
                 <p className="text-zinc-400">Explore financing options for your roof</p>
-              </Link>
+              </a>
             </div>
           </div>
 

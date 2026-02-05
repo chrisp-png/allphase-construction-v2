@@ -257,15 +257,15 @@ export default function GreenacresPage() {
                 Get an instant estimate for your roofing project in Greenacres with our online roof cost calculator.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/locations/deerfield-beach/service-area/greenacres/roof-cost-calculator"
+                <a
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
                 >
                   <Calculator className="w-5 h-5" />
                   Roof Cost Calculator
-                </Link>
+                </a>
                 <a
-                  href="/locations/deerfield-beach/service-area/greenacres/roof-cost-calculator#finance-calculator"
+                  href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 border border-zinc-700"
                 >
                   Finance Calculator

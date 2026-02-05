@@ -317,8 +317,8 @@ export default function MiramarPage() {
               These tools help Miramar property owners estimate roofing costs and explore financing options:
             </p>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link
-                to="/locations/deerfield-beach/service-area/miramar/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
@@ -330,9 +330,9 @@ export default function MiramarPage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Get a ballpark estimate for your roofing project
                 </p>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/miramar/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
@@ -344,7 +344,7 @@ export default function MiramarPage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Estimate monthly payments for financing options
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -349,20 +349,20 @@ export default function TamaracPage() {
             <div className="max-w-3xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
               <ul className="space-y-4 text-zinc-400">
                 <li>
-                  <Link
-                    to="/locations/deerfield-beach/service-area/tamarac/roof-cost-calculator"
+                  <a
+                    href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                     className="text-red-500 hover:text-red-400 underline transition-colors text-lg"
                   >
                     Tamarac Roof Cost Calculator
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/locations/deerfield-beach/service-area/tamarac/roof-cost-calculator#finance-calculator"
+                  <a
+                    href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                     className="text-red-500 hover:text-red-400 underline transition-colors text-lg"
                   >
                     Monthly Payment Estimator
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

@@ -283,8 +283,8 @@ export default function SunrisePage() {
               These tools help Sunrise property owners estimate roofing costs and explore financing options:
             </p>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link
-                to="/locations/deerfield-beach/service-area/sunrise/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group text-center"
               >
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -293,9 +293,9 @@ export default function SunrisePage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Get instant estimates for your Sunrise roofing project
                 </p>
-              </Link>
-              <Link
-                to="/locations/deerfield-beach/service-area/sunrise/roof-cost-calculator#finance-calculator"
+              </a>
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group text-center"
               >
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -304,7 +304,7 @@ export default function SunrisePage() {
                 <p className="text-zinc-400 leading-relaxed">
                   Explore payment options and monthly estimates
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
 

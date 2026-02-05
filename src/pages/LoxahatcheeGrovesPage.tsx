@@ -496,24 +496,24 @@ export default function LoxahatcheeGrovesPage() {
                     <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Roof Cost Calculator</h3>
-                      <Link
-                        to="/locations/deerfield-beach/service-area/loxahatchee-groves/roof-cost-calculator"
+                      <a
+                        href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                         className="text-red-500 hover:text-red-400 transition-colors break-all"
                       >
-                        /locations/deerfield-beach/service-area/loxahatchee-groves/roof-cost-calculator
-                      </Link>
+                        https://allphaseconstructionfl.com/roof-cost-calculator/
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Finance Calculator</h3>
-                      <Link
-                        to="/locations/deerfield-beach/service-area/loxahatchee-groves/roof-cost-calculator#finance-calculator"
+                      <a
+                        href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                         className="text-red-500 hover:text-red-400 transition-colors break-all"
                       >
-                        /locations/deerfield-beach/service-area/loxahatchee-groves/roof-cost-calculator#finance-calculator
-                      </Link>
+                        https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator
+                      </a>
                     </div>
                   </div>
                 </div>

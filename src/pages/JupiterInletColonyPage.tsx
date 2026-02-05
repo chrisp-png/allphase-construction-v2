@@ -396,7 +396,7 @@ export default function JupiterInletColonyPage() {
             </div>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link
-                to="/locations/deerfield-beach/service-area/jupiter-inlet-colony/roof-cost-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
@@ -414,7 +414,7 @@ export default function JupiterInletColonyPage() {
                 </div>
               </Link>
               <Link
-                to="/locations/deerfield-beach/service-area/jupiter-inlet-colony/roof-cost-calculator#finance-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">

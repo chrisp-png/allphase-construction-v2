@@ -317,7 +317,7 @@ export default function PalmBeachShoresPage() {
             </p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
               <Link
-                to="/locations/deerfield-beach/service-area/palm-beach-shores/roof-cost-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <Calculator className="w-10 h-10 text-red-500 mb-4" />
@@ -333,7 +333,7 @@ export default function PalmBeachShoresPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/palm-beach-shores/roof-cost-calculator#finance-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <Calculator className="w-10 h-10 text-red-500 mb-4" />

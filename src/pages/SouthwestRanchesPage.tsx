@@ -289,7 +289,7 @@ export default function SouthwestRanchesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-3xl mx-auto">
               <Link
-                to="/locations/deerfield-beach/service-area/southwest-ranches/roof-cost-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="flex-1 bg-gradient-to-br from-red-600 to-red-500 p-6 rounded-lg text-center hover:from-red-500 hover:to-red-400 transition-all duration-200 shadow-lg hover:shadow-red-500/25"
               >
                 <FileText className="w-8 h-8 text-white mx-auto mb-3" />
@@ -297,7 +297,7 @@ export default function SouthwestRanchesPage() {
                 <p className="text-red-50">Get a ballpark estimate for your roofing project</p>
               </Link>
               <Link
-                to="/locations/deerfield-beach/service-area/southwest-ranches/roof-cost-calculator#finance-calculator"
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
                 className="flex-1 bg-zinc-900 border border-zinc-800 p-6 rounded-lg text-center hover:border-red-500/50 transition-all duration-200"
               >
                 <Clock className="w-8 h-8 text-red-500 mx-auto mb-3" />

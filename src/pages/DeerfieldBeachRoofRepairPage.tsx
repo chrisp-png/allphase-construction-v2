@@ -478,8 +478,8 @@ export default function DeerfieldBeachRoofRepairPage() {
                 </p>
               </Link>
 
-              <Link
-                to="/locations/deerfield-beach/roof-cost-calculator"
+              <a
+                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -488,7 +488,7 @@ export default function DeerfieldBeachRoofRepairPage() {
                 <p className="text-zinc-300">
                   Generate preliminary cost estimates based on property characteristics and repair scope assumptions.
                 </p>
-              </Link>
+              </a>
 
               <Link
                 to="/easy-payments"
