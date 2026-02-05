@@ -812,6 +812,13 @@ to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
 status = 301
 
 # Redirect all city-specific calculator pages to main calculator
+# Wildcard redirect for all cities (present and future)
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/*/roof-cost-calculator"
+to = "https://allphaseconstructionfl.com/roof-cost-calculator/"
+status = 301
+force = true
+
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/boca-raton/roof-cost-calculator"
 to = "/roof-cost-calculator/"
