@@ -404,14 +404,14 @@ export default function PricingGuidePage() {
             <figure className="mb-8">
               <div className="relative rounded-lg overflow-hidden shadow-lg bg-gray-100">
                 <img
-                  src="https://images.pexels.com/photos/28812507/pexels-photo-28812507.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Professional roofing crew with safety gear working on tiled roof installation demonstrating proper jobsite organization and crew experience"
+                  src="https://images.pexels.com/photos/34019842/pexels-photo-34019842.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Professional roofer in safety harness removing debris from roof into dumpster demonstrating proper property protection and organized jobsite management with specialized equipment"
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />
               </div>
               <figcaption className="mt-3 text-sm text-gray-600 text-center italic">
-                Professional roofing crews with proper safety equipment and training. Specialized crews, comprehensive safety protocols, and organized jobsite management directly impact installation quality and long-term roof performance.
+                Organized jobsite management with property protection systems. Professional crews use specialized equipment like debris containment systems, safety harnesses, and organized waste removal to protect the property while maintaining installation quality and safety standards.
               </figcaption>
             </figure>
 
