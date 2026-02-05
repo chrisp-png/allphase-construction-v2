@@ -243,7 +243,7 @@ export default function CalculatorPage() {
           </div>
 
           {/* Estimate Clarification */}
-          <div className="bg-zinc-800 border-l-4 border-red-600 rounded p-6 mb-8">
+          <div className="bg-zinc-800/60 border border-zinc-700/50 border-l-4 border-l-red-600 rounded p-6 mb-8">
             <p className="text-zinc-200 font-semibold mb-2">Important: Calculator Results Are Estimates Only</p>
             <p className="text-zinc-300 leading-relaxed mb-4">
               Accurate roof replacement pricing requires an on-site inspection to evaluate roof condition, identify hidden issues, measure roof dimensions, assess code compliance requirements, and develop a detailed scope of work. Calculator estimates provide general pricing ranges but cannot account for site-specific variables that affect final costs.
