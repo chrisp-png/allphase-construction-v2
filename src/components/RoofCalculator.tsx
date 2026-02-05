@@ -230,11 +230,14 @@ export default function RoofCalculator() {
                 <button
                   key={size.label}
                   onClick={() => setSelectedSize(size)}
-                  className={`p-4 rounded-lg border-2 transition-all duration-300 ${
+                  className={`p-4 rounded-lg border-3 transition-all duration-300 ${
                     selectedSize.label === size.label
-                      ? 'border-red-600 bg-red-600/20 text-white'
-                      : 'border-slate-600 bg-slate-700/50 text-gray-300 hover:border-slate-500'
+                      ? 'border-red-600 bg-red-600/30 text-white shadow-[0_0_20px_rgba(220,38,38,0.4)] ring-2 ring-red-500/50 scale-105 relative z-10'
+                      : 'border-slate-600 bg-slate-700/40 text-gray-400 hover:border-slate-500 hover:bg-slate-700/60 hover:text-gray-300 opacity-70 hover:opacity-90'
                   }`}
+                  style={{
+                    borderWidth: selectedSize.label === size.label ? '3px' : '2px'
+                  }}
                 >
                   <div className="font-semibold mb-1">{size.label}</div>
                   <div className="text-sm opacity-80">~{size.sqft.toLocaleString()} sq ft</div>
@@ -254,11 +257,14 @@ export default function RoofCalculator() {
                 <button
                   key={type.name}
                   onClick={() => setSelectedType(type)}
-                  className={`p-6 rounded-lg border-2 transition-all duration-300 ${
+                  className={`p-6 rounded-lg border-3 transition-all duration-300 ${
                     selectedType?.name === type.name
-                      ? 'border-red-600 bg-red-600/20 text-white'
-                      : 'border-slate-600 bg-slate-700/50 text-gray-300 hover:border-slate-500'
+                      ? 'border-red-600 bg-red-600/30 text-white shadow-[0_0_20px_rgba(220,38,38,0.4)] ring-2 ring-red-500/50 scale-105 relative z-10'
+                      : 'border-slate-600 bg-slate-700/40 text-gray-400 hover:border-slate-500 hover:bg-slate-700/60 hover:text-gray-300 opacity-70 hover:opacity-90'
                   }`}
+                  style={{
+                    borderWidth: selectedType?.name === type.name ? '3px' : '2px'
+                  }}
                 >
                   <div className="text-4xl mb-2">{type.icon}</div>
                   <div className="font-semibold">{type.name}</div>
