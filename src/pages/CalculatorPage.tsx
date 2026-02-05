@@ -135,7 +135,7 @@ export default function CalculatorPage() {
                   Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, and <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> systems based on roof size and material selection.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  Final costs vary based on roof condition, pitch, code requirements, and HVHZ compliance. A <Link to="/roof-inspection" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
+                  Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
                 </p>
               </div>
             </div>
@@ -147,10 +147,10 @@ export default function CalculatorPage() {
               <Shield className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
               <div>
                 <p className="text-zinc-300 leading-relaxed mb-3">
-                  <strong className="text-white">This calculator provides estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, code compliance requirements, and site-specific installation factors.
+                  <strong className="text-white">This calculator provides estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, <span className="text-amber-400 font-semibold">code compliance requirements</span>, and site-specific installation factors.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  Broward and most coastal Palm Beach County properties are located in the <HVHZText variant="south-florida" className="text-amber-400" />, which requires enhanced fastening patterns, approved underlayment systems, and Florida Building Code compliance. <HVHZText variant="acronym" showIcon={false} className="text-amber-400" /> requirements typically add $1–$3 per square foot to installation costs compared to standard installations.
+                  Broward and most coastal Palm Beach County properties are located in the <HVHZText variant="south-florida" className="text-amber-400" />, which requires enhanced fastening patterns, approved underlayment systems, and <span className="text-amber-400 font-semibold">Florida Building Code compliance</span>. <HVHZText variant="acronym" showIcon={false} className="text-amber-400" /> requirements typically add $1–$3 per square foot to installation costs compared to standard installations.
                 </p>
               </div>
             </div>
@@ -225,11 +225,11 @@ export default function CalculatorPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-red-600 mr-2">•</span>
-                <span><strong className="text-white">HVHZ fastening requirements:</strong> Enhanced nailing patterns and approved fasteners add labor and material costs</span>
+                <span><strong className="text-amber-400">HVHZ fastening requirements:</strong> Enhanced nailing patterns and approved fasteners add labor and material costs</span>
               </li>
               <li className="flex items-start">
                 <span className="text-red-600 mr-2">•</span>
-                <span><strong className="text-white">Florida Building Code compliance:</strong> Tear-off, underlayment, flashing, and ventilation must meet current code standards</span>
+                <span><strong className="text-amber-400">Florida Building Code compliance:</strong> Tear-off, underlayment, flashing, and ventilation must meet current code standards</span>
               </li>
               <li className="flex items-start">
                 <span className="text-red-600 mr-2">•</span>
@@ -246,7 +246,7 @@ export default function CalculatorPage() {
           <div className="bg-zinc-800/60 border border-zinc-700/50 border-l-4 border-l-red-600 rounded p-6 mb-8">
             <p className="text-zinc-200 font-semibold mb-2">Important: Calculator Results Are Estimates Only</p>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Accurate roof replacement pricing requires an on-site inspection to evaluate roof condition, identify hidden issues, measure roof dimensions, assess code compliance requirements, and develop a detailed scope of work. Calculator estimates provide general pricing ranges but cannot account for site-specific variables that affect final costs.
+              Accurate roof replacement pricing requires an on-site inspection to evaluate roof condition, identify hidden issues, measure roof dimensions, assess <span className="text-amber-400 font-semibold">code compliance requirements</span>, and develop a detailed scope of work. Calculator estimates provide general pricing ranges but cannot account for site-specific variables that affect final costs.
             </p>
             <Link
               to="/roof-inspection"
@@ -306,7 +306,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 0 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> ($4.50–$16/sq ft) are the most cost-effective, while <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">tile roofs</Link> ($12–$35/sq ft) and <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> ($8–$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000–$22,000 installed. Tile roofs of the same size typically cost $24,000–$48,000. Final pricing depends on roof pitch, layers to remove, HVHZ fastening requirements, and code compliance upgrades.
+                    New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> ($4.50–$16/sq ft) are the most cost-effective, while <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">tile roofs</Link> ($12–$35/sq ft) and <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> ($8–$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000–$22,000 installed. Tile roofs of the same size typically cost $24,000–$48,000. Final pricing depends on roof pitch, layers to remove, <span className="text-amber-400 font-semibold">HVHZ fastening requirements</span>, and <span className="text-amber-400 font-semibold">code compliance upgrades</span>.
                   </p>
                 </div>
               )}
@@ -327,7 +327,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 1 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed mb-4">
-                    Roof replacement cost is driven by the roof system requirements and the quality of installation, not just the material. The biggest pricing factors usually include roof size and complexity, tear-off requirements, HVHZ code compliance, underlayment and flashing details, ventilation upgrades, and any hidden decking repairs.
+                    Roof replacement cost is driven by the roof system requirements and the quality of installation, not just the material. The biggest pricing factors usually include roof size and complexity, tear-off requirements, <span className="text-amber-400 font-semibold">HVHZ code compliance</span>, underlayment and flashing details, ventilation upgrades, and any hidden decking repairs.
                   </p>
                   <p className="text-zinc-300 leading-relaxed">
                     Just as important: the crew installing the roof. Companies with specialized crews, experienced supervision, and consistent workmanship standards typically cost more than low-bid contractors using rotating subcontractors or day labor. In roofing, the cheapest quote often becomes the most expensive once repairs, leaks, and rework show up later.
@@ -351,7 +351,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 2 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Lower quotes are often cheaper because corners are being cut somewhere—labor quality, supervision, underlayment/flashing details, code compliance, or warranty coverage. Roofing isn't just materials; it's a system. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-term—not just the lowest number on paper.
+                    Lower quotes are often cheaper because corners are being cut somewhere—labor quality, supervision, underlayment/flashing details, <span className="text-amber-400 font-semibold">code compliance</span>, or warranty coverage. Roofing isn't just materials; it's a system. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-term—not just the lowest number on paper.
                   </p>
                 </div>
               )}
@@ -402,7 +402,7 @@ export default function CalculatorPage() {
                     <div className="bg-zinc-800 border-l-4 border-red-600 p-4 rounded">
                       <p className="text-zinc-200 font-semibold mb-2">Florida's 5-Year Roof Certification for Insurance Renewal</p>
                       <p className="text-zinc-300 leading-relaxed mb-2">
-                        In Florida, repairs may position a roof for the <strong className="text-white">5-year certification pathway</strong> under Florida Statute § 627.7011(5)(a). This allows insurers to renew based on <strong className="text-white">roof condition rather than age alone</strong> when a qualified professional certifies 5+ years of useful life remaining.
+                        In Florida, repairs may position a roof for the <strong className="text-white">5-year certification pathway</strong> under <span className="text-amber-400 font-semibold">Florida Statute § 627.7011(5)(a)</span>. This allows insurers to renew based on <strong className="text-white">roof condition rather than age alone</strong> when a qualified professional certifies 5+ years of useful life remaining.
                       </p>
                       <p className="text-zinc-300 leading-relaxed">
                         This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition.
@@ -491,7 +491,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 8 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Broward County roof replacement costs average $8–$20 per square foot installed, depending on material type and HVHZ compliance requirements. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> cost $7–$14/sq ft, <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">concrete tile</Link> $14–$22/sq ft, <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> $12–$24/sq ft, and <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">flat membrane systems</Link> $8–$16/sq ft. Broward County properties require HVHZ-compliant fastening, which adds $1–$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings.
+                    Broward County roof replacement costs average $8–$20 per square foot installed, depending on material type and <span className="text-amber-400 font-semibold">HVHZ compliance requirements</span>. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> cost $7–$14/sq ft, <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">concrete tile</Link> $14–$22/sq ft, <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> $12–$24/sq ft, and <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">flat membrane systems</Link> $8–$16/sq ft. Broward County properties require <span className="text-amber-400 font-semibold">HVHZ-compliant fastening</span>, which adds $1–$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings.
                   </p>
                 </div>
               )}
