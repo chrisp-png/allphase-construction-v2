@@ -232,7 +232,10 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
 
         <div className="max-w-4xl mx-auto bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Step 1: Select Your Roof Size</h3>
+            <h3 className="text-3xl font-extrabold mb-6 flex items-center gap-3">
+              <span className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)]">Step 1:</span>
+              <span className="text-white">Select Your Roof Size</span>
+            </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
               {roofSizes.map((size) => (
                 <button
@@ -259,7 +262,10 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
           </div>
 
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Step 2: Select Roof Type</h3>
+            <h3 className="text-3xl font-extrabold mb-6 flex items-center gap-3">
+              <span className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)]">Step 2:</span>
+              <span className="text-white">Select Roof Type</span>
+            </h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {roofTypes.map((type) => (
                 <button
