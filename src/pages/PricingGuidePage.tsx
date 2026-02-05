@@ -33,26 +33,25 @@ export default function PricingGuidePage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Replacing a roof in South Florida is a significant investment that goes far beyond simply installing new shingles or tiles.
-                This comprehensive pricing guide is designed to help homeowners understand the full scope of roof replacement costs in our unique
-                High Velocity Hurricane Zone (HVHZ).
+                This pricing guide is designed to help South Florida homeowners understand how roof replacement and repair costs are determined in High Velocity Hurricane Zone (HVHZ) areas. Unlike other regions, pricing in South Florida is significantly influenced by specialized factors that national averages fail to capture.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Whether you're planning ahead for a future roof replacement or responding to storm damage, this guide will help you understand:
+                Online cost estimates and national averages are often misleading because they don't account for the stringent requirements specific to our region. In South Florida, roof pricing is determined by:
               </p>
-              <ul className="list-disc pl-6 text-gray-700 space-y-3 mb-8">
-                <li>Material differences and their long-term value</li>
-                <li>How South Florida's strict building codes affect pricing</li>
-                <li>The critical role of proper ventilation and attic airflow</li>
-                <li>Wind mitigation upgrades and their insurance savings</li>
-                <li>Installation quality and specialized crew requirements</li>
-                <li>Financing options versus paying cash</li>
-                <li>When you need a professional roof inspection</li>
+              <ul className="list-disc pl-6 text-gray-700 space-y-3 mb-6">
+                <li>Strict HVHZ building codes requiring enhanced structural fastening and installation methods</li>
+                <li>Wind mitigation requirements designed to protect homes from hurricane-force winds</li>
+                <li>Material selection suited for high winds, salt air, and intense UV exposure</li>
+                <li>Proper ventilation systems critical for Florida's heat and humidity</li>
+                <li>Specialized installation techniques required for HVHZ compliance</li>
+                <li>Insurance considerations including wind mitigation credits and coverage requirements</li>
               </ul>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                This guide provides detailed explanations and comparisons to help you understand the factors behind pricing decisions. For homeowners seeking a fast ballpark estimate based on their specific home, our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-700 font-semibold underline">Roof Cost Calculator</Link> provides instant price ranges tailored to South Florida requirements.
+              </p>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8">
                 <p className="text-gray-800 font-medium">
-                  <strong>Important:</strong> The prices and information in this guide are specific to South Florida's unique requirements.
-                  HVHZ building codes, insurance requirements, and weather conditions make our roofing projects more complex than other regions.
+                  <strong>Understanding Regional Differences:</strong> The prices and requirements discussed in this guide are specific to South Florida's HVHZ designation. Building codes, material specifications, and installation standards in this region differ substantially from those in other parts of Florida and the United States.
                 </p>
               </div>
             </div>
