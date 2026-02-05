@@ -282,6 +282,87 @@ export default function PricingGuidePage() {
           </div>
         </section>
 
+        {/* Wind Mitigation and Code Compliance Section */}
+        <section className="py-12 bg-white border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              Wind Mitigation, Code Compliance, and Insurance Risk in South Florida Roofing
+            </h2>
+
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Roofing costs in South Florida vary significantly between contractors even when identical materials are specified. These price differences often reflect fundamental variations in code compliance practices, installation quality standards, and long-term risk management approaches. Understanding these differences is essential for homeowners evaluating competing proposals and assessing the true value proposition of professional roofing installation.
+              </p>
+
+              <div className="space-y-8">
+                {/* Florida Building Code and HVHZ Requirements */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Florida Building Code and High Velocity Hurricane Zone Requirements</h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    South Florida roofing installation is governed by the Florida Building Code (FBC), with additional High Velocity Hurricane Zone (HVHZ) requirements in Miami-Dade and Broward counties. These codes mandate specific installation practices that directly affect roof performance during hurricane-force wind events. Key regulated areas include:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                    <li><strong>Underlayment specifications:</strong> Self-adhering versus mechanically-attached underlayments, overlap requirements, and edge sealing details</li>
+                    <li><strong>Fastening patterns:</strong> Nail or screw spacing, fastener type and length, and penetration depth through roof decking</li>
+                    <li><strong>Roof-to-wall attachments:</strong> Structural connections between roof framing and wall framing, often called tie-down or uplift connectors</li>
+                    <li><strong>Secondary water barriers:</strong> Ice and water shield placement at roof penetrations, valleys, and eaves</li>
+                    <li><strong>Product approvals:</strong> Verification that all materials carry valid Florida Product Approval or Miami-Dade Notice of Acceptance (NOA)</li>
+                  </ul>
+                  <p className="text-gray-700 leading-relaxed mt-4">
+                    Compliance with these requirements increases material costs, labor time, and installation complexity. Non-compliant installation methods may appear identical to code-compliant methods once the roof is finished, making visual inspection by homeowners insufficient for quality verification.
+                  </p>
+                </div>
+
+                {/* Price Differences and Hidden Installation Practices */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Price Differences Reflect Installation Practice Variations</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Two contractors quoting the same roofing material may present significantly different prices because they are not proposing equivalent installation practices. Common areas where installation standards diverge include fastener density (code-compliant fastening requires more nails or screws per square foot), underlayment quality (self-adhering underlayments cost more than felt paper), flashing details (proper flashing requires custom fabrication and careful integration), and roof deck preparation (full deck inspection and selective board replacement versus minimal inspection). These differences are invisible once the roof is complete but have substantial impact on wind resistance, water intrusion risk, and long-term durability. Lower-priced proposals often reflect reduced compliance with code requirements, not competitive efficiency. Homeowners cannot reliably identify these installation shortcuts through casual observation, making contractor reputation and documented quality practices critical selection criteria.
+                  </p>
+                </div>
+
+                {/* Inspection Limitations */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">City Inspection Limitations and Quality Assurance Gaps</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Municipal building inspections are required for permitted roofing work in South Florida, but these inspections have inherent limitations. Building inspectors typically conduct brief site visits at scheduled milestones (such as underlayment installation and final completion) and cannot verify every aspect of installation quality during these limited timeframes. Inspectors may check general compliance with major code requirements but cannot individually verify fastener spacing across the entire roof, confirm proper flashing integration at every penetration, or validate underlayment adhesion quality. Additionally, inspection schedules may require that certain installation stages be completed before inspection occurs, meaning some work is covered and no longer visible during the inspection. This creates quality assurance gaps where installation practices that do not meet code standards may not be identified during municipal inspection. For this reason, contractor internal quality control processes, documented installation procedures, and verifiable track records become essential safeguards for homeowners. Relying solely on municipal inspection as a quality assurance mechanism is insufficient for high-stakes roofing projects.
+                  </p>
+                </div>
+
+                {/* Wind Mitigation and Insurance Discounts */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Wind Mitigation Features and Insurance Premium Reductions</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Properly installed wind mitigation features can qualify homeowners for insurance premium discounts through the Florida wind mitigation inspection process. Common wind mitigation credits include roof covering (newer roofs receive better ratings), roof deck attachment (enhanced fastening patterns reduce premiums), roof-to-wall connection (improved structural ties provide significant discounts), roof geometry (hip roofs rate better than gable roofs), and secondary water resistance (sealed roof deck reduces water intrusion risk). These credits are verified through a certified wind mitigation inspection conducted after roof installation and documented on the OIR-B1-1802 form submitted to insurance carriers. The cumulative effect of multiple wind mitigation credits can reduce annual insurance premiums by hundreds or thousands of dollars, depending on property characteristics and insurance carrier policies. Over a typical 20-30 year roof lifespan, these premium reductions often exceed the incremental cost difference between basic code-compliant installation and installation optimized for wind mitigation credits. However, wind mitigation benefits only accrue when installation practices are documented, verifiable, and meet the specific criteria defined by the insurance industry and state regulations. Contractors who do not understand or prioritize wind mitigation documentation may install roofs that fail to qualify for available discounts, eliminating this long-term value for homeowners.
+                  </p>
+                </div>
+
+                {/* Structural Issues and General Contracting Capability */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Structural Repairs and General Contracting Capability</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Roofing projects frequently uncover underlying structural issues that must be addressed during installation. Common discoveries include damaged or deteriorated roof decking requiring replacement, inadequate roof-to-wall attachment requiring structural connector installation, undersized or damaged roof framing members requiring reinforcement, soffit and fascia damage requiring carpentry repair, and water-damaged interior framing requiring remediation. Addressing these issues requires general contracting capability, including carpentry, structural modification, and building code knowledge beyond basic roofing installation. Roofing contractors who do not maintain general contracting licenses or in-house structural repair capabilities typically subcontract this work to third-party carpenters or general contractors, or defer these repairs by documenting them as "homeowner responsibility" in contract exclusions. Both approaches create risk and complexity for homeowners.
+                  </p>
+                </div>
+
+                {/* Subcontracting Risks */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Subcontracting Risk and Project Coordination Complexity</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    When structural or specialty work is subcontracted to third parties, homeowners face several coordination challenges. Project timeline delays occur when subcontractors must be scheduled separately from the roofing crew, particularly if structural issues are discovered mid-project. Cost uncertainty increases when structural repairs are priced as change orders after the initial contract is signed, often at rates higher than if the work had been included originally. Quality control becomes more difficult when multiple independent contractors are responsible for different aspects of the project, with potential gaps in accountability if problems arise. Warranty coverage may be fragmented between the roofing contractor's warranty on roofing work and separate warranties from structural subcontractors, creating confusion about claims processes. Communication complexity increases when homeowners must coordinate with multiple parties rather than a single point of contact. Contractors who maintain general contracting capability and perform structural work with their own crews eliminate these coordination challenges, provide unified accountability, and can address issues immediately as they are discovered without project interruption. This capability typically commands higher pricing but delivers substantial risk reduction and project efficiency benefits for homeowners.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mt-8">
+                <p className="text-gray-800 font-medium">
+                  <strong>Risk Management Perspective:</strong> The lowest-priced roofing proposal often represents the highest long-term risk when code compliance, wind mitigation documentation, and structural capability are not included. When evaluating proposals, consider not only upfront cost but also insurance premium impact over 20-30 years, structural repair coordination risk, and the long-term value of documented code compliance that can be verified during insurance claims or property sales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Content Sections - Placeholder Structure */}
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
