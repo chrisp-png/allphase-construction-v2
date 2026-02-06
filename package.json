@@ -12,6 +12,7 @@
     "sync-blog": "node sync-blog-posts.js",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "generate-html-sitemap": "node scripts/generate-html-sitemap.mjs",
+    "prerender:poc": "node scripts/prerender-poc.mjs",
     "indexnow": "node scripts/submit-indexnow.mjs",
     "indexnow-all": "node scripts/submit-indexnow.mjs --all"
   },
