@@ -40,9 +40,10 @@ function injectMetaTags(html, metadata) {
   }
 
   // Replace or inject canonical
-  if (html.includes('rel="canonical"')) {
+  const canonicalRegex = /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/;
+  if (html.match(canonicalRegex)) {
     html = html.replace(
-      /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
+      canonicalRegex,
       `<link rel="canonical" href="${metadata.canonical}" />`
     );
   } else {

@@ -17,6 +17,19 @@
     <meta name="twitter:description" content="Dual-licensed roofing contractor serving South Florida. Tile, metal, shingle & flat roofing for homes & businesses." />
     <meta name="twitter:image" content="https://allphaseconstructionfl.com/long-term-piece-of-mind-all-phase-construction-usa.png" />
 
+    <!-- Default canonical tag - dynamically set based on pathname -->
+    <script>
+      (function() {
+        if (!document.querySelector('link[rel="canonical"]')) {
+          var pathname = window.location.pathname.replace(/\/$/, '');
+          var canonical = document.createElement('link');
+          canonical.rel = 'canonical';
+          canonical.href = 'https://allphaseconstructionfl.com' + pathname;
+          document.head.appendChild(canonical);
+        }
+      })();
+    </script>
+
     <!-- Google tag (gtag.js) - Deferred to not block rendering -->
     <script>
       window.dataLayer = window.dataLayer || [];
