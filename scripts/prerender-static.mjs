@@ -7,21 +7,17 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 const distDir = path.resolve(projectRoot, 'dist');
 
-// Routes to prerender with their SEO metadata
-const routes = [
-  {
-    path: '/locations/deerfield-beach/service-area/boca-raton/',
-    title: 'Boca Raton Roofing Services | All Phase Construction USA',
-    description: 'Professional roofing services in Boca Raton, FL. Licensed roofers serving the Deerfield Beach service area with expert roof repair, replacement, and inspection.',
-    canonical: 'https://www.allphaseroofingusa.com/locations/deerfield-beach/service-area/boca-raton/'
-  },
-  {
-    path: '/locations/deerfield-beach/service-area/boynton-beach/',
-    title: 'Boynton Beach Roofing Services | All Phase Construction USA',
-    description: 'Expert roofing services in Boynton Beach, FL. Licensed roofers serving the Deerfield Beach service area with roof repair, replacement, and inspection.',
-    canonical: 'https://www.allphaseroofingusa.com/locations/deerfield-beach/service-area/boynton-beach/'
-  }
-];
+// Load cities data
+const citiesPath = path.join(__dirname, 'cities.json');
+const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
+
+// Generate routes from cities data
+const routes = cities.map(city => ({
+  path: `/locations/${city.parent}/service-area/${city.slug}/`,
+  title: `${city.city} Roofing Services | All Phase Construction USA`,
+  description: `Professional roofing services in ${city.city}, FL. Licensed, insured roofing contractor specializing in repairs, replacements, and inspections.`,
+  canonical: `https://www.allphaseroofingusa.com/locations/${city.parent}/service-area/${city.slug}/`
+}));
 
 function injectMetaTags(html, metadata) {
   // Replace title
