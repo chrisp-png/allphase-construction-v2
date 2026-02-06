@@ -2147,3 +2147,11 @@ status = 301
 from = "/residential-roofing/roof-replacement-process/"
 to = "/roof-replacement-process"
 status = 301
+
+# SPA fallback - only applies when file does NOT exist
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
+conditions = { Missing = ["file"] }
