@@ -44,7 +44,8 @@ function injectSEO(html, route) {
   const canonical = `${LIVE_ORIGIN}${path}`;
   const url = canonical;
 
-  let result = html;
+  // Add marker comment at the very top
+  let result = `<!-- PRERENDERED STATIC SEO FILE - DO NOT REMOVE -->\n${html}`;
 
   // Replace <title>
   result = result.replace(/<title>.*?<\/title>/i, `<title>${title}</title>`);
@@ -155,10 +156,18 @@ for (const route of ROUTES) {
   const outDir = path.join(distDir, routePath);
 
   fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "index.html"), html, "utf8");
+
+  const outputPath = path.join(outDir, "index.html");
+  fs.writeFileSync(outputPath, html, "utf8");
 
   console.log("✅ Generated:", route.path);
+  console.log("📄 WROTE FILE:", outputPath);
+
+  // List directory contents
+  const dirContents = fs.readdirSync(outDir);
+  console.log("📁 FILES IN DIR:", outDir);
+  console.log("   Contents:", dirContents);
 }
 
-console.log("Static SEO injection complete.");
+console.log("\n✅ Static SEO injection complete.");
 console.log("🎉 PRERENDER SCRIPT FINISHED");
