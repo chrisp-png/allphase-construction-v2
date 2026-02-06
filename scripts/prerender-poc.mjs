@@ -4,6 +4,10 @@ import http from "http";
 import puppeteer from "puppeteer";
 import { fileURLToPath } from "url";
 
+console.log("🔥 PRERENDER SCRIPT STARTED");
+console.log("ENV NETLIFY =", process.env.NETLIFY);
+console.log("ENV CI =", process.env.CI);
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, "..", "dist");
 const LIVE_ORIGIN = "https://allphaseconstructionfl.com";
@@ -46,10 +50,19 @@ await new Promise((r) => server.listen(0, "127.0.0.1", r));
 const port = server.address().port;
 const base = `http://127.0.0.1:${port}`;
 
-const browser = await puppeteer.launch({
-  headless: "new",
-  args: ["--no-sandbox", "--disable-setuid-sandbox"],
-});
+let browser;
+try {
+  console.log("🚀 Launching Puppeteer...");
+  browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
+  console.log("✅ Puppeteer launched");
+} catch (err) {
+  console.error("❌ Puppeteer failed to launch");
+  console.error(err);
+  process.exit(1);
+}
 const page = await browser.newPage();
 page.setDefaultNavigationTimeout(120000);
 
@@ -57,6 +70,7 @@ for (const route of ROUTES) {
   const url = base + route;
   console.log("Prerendering:", route);
   await page.goto(url, { waitUntil: "networkidle0" });
+  console.log("✅ Page loaded:", route);
   await page.waitForTimeout(300);
 
   let html = await page.content();
@@ -78,3 +92,4 @@ await browser.close();
 server.close();
 
 console.log("Prerender POC complete.");
+console.log("🎉 PRERENDER SCRIPT FINISHED");
