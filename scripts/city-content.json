@@ -1,0 +1,226 @@
+{
+  "boynton-beach": {
+    "serviceAreaHtml": "<section class=\"mb-16\"><h3 class=\"text-2xl font-bold text-white mb-6\">Roofing Factors in Boynton Beach</h3><div class=\"bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden\"><table class=\"w-full\"><thead><tr class=\"border-b border-zinc-800\"><th class=\"text-left px-6 py-4 text-white font-semibold\">Local Factor</th><th class=\"text-left px-6 py-4 text-white font-semibold\">Impact on Boynton Beach Roofs</th></tr></thead><tbody><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">Aging tile systems</td><td class=\"px-6 py-4 text-zinc-400\">Older homes often need underlayment replacement</td></tr><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">Coastal exposure</td><td class=\"px-6 py-4 text-zinc-400\">Wind and moisture increase long-term wear</td></tr><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">Hurricane codes</td><td class=\"px-6 py-4 text-zinc-400\">Installation quality is critical for compliance</td></tr><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">HOA standards</td><td class=\"px-6 py-4 text-zinc-400\">Materials and aesthetics are often regulated</td></tr><tr class=\"border-b border-zinc-800 last:border-0\"><td class=\"px-6 py-4 text-zinc-300\">Roofing trends</td><td class=\"px-6 py-4 text-zinc-400\">Increasing demand for metal roofing systems</td></tr></tbody></table></div></section><section class=\"mb-16\"><div class=\"bg-gradient-to-r from-red-600/10 to-red-500/5 border border-red-600/20 rounded-lg p-6\"><div class=\"flex items-start gap-4\"><svg class=\"w-6 h-6 text-red-500 flex-shrink-0 mt-1\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z\"></path></svg><div><h3 class=\"text-xl font-bold text-white mb-3\">Team Insight – Boynton Beach Roofing</h3><p class=\"text-zinc-300 leading-relaxed mb-3\">\"Boynton Beach has really been up and coming, and we're seeing a lot of homes being upgraded in the area. It used to be a mix of shingle and tile roofs, but now we're seeing more and more metal roofs being installed every day in Boynton Beach.\"</p><p class=\"text-sm text-zinc-400\">— Chris, All Phase Construction</p></div></div></div></section>",
+    "roofRepairHtml": ""
+  },
+  "delray-beach": {
+    "serviceAreaHtml": "<section class=\"mb-16\"><h2 class=\"text-3xl font-bold text-white mb-6\">Tile Roofing in Delray Beach – Local Factors</h2><div class=\"bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden\"><table class=\"w-full\"><thead><tr class=\"border-b border-zinc-800\"><th class=\"text-left px-6 py-4 text-white font-semibold\">Roofing Factor</th><th class=\"text-left px-6 py-4 text-white font-semibold\">Why It Matters in Delray Beach</th></tr></thead><tbody><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">Tile roof popularity</td><td class=\"px-6 py-4 text-zinc-400\">Matches coastal and Mediterranean-style homes</td></tr><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">Salt air exposure</td><td class=\"px-6 py-4 text-zinc-400\">Requires proper installation and underlayment</td></tr><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">HOA requirements</td><td class=\"px-6 py-4 text-zinc-400\">Material and color consistency enforced</td></tr><tr class=\"border-b border-zinc-800\"><td class=\"px-6 py-4 text-zinc-300\">Storm resistance</td><td class=\"px-6 py-4 text-zinc-400\">Tile performs well in high-wind conditions</td></tr><tr class=\"border-b border-zinc-800 last:border-0\"><td class=\"px-6 py-4 text-zinc-300\">Aging underlayment</td><td class=\"px-6 py-4 text-zinc-400\">Common issue beneath existing tile roofs</td></tr></tbody></table></div></section><section class=\"mb-16\"><div class=\"bg-gradient-to-r from-red-600/10 to-red-500/5 border border-red-600/20 rounded-lg p-6\"><div class=\"flex items-start gap-4\"><svg class=\"w-6 h-6 text-red-500 flex-shrink-0 mt-1\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z\"></path></svg><div><h3 class=\"text-xl font-bold text-white mb-3\">Team Insight – Delray Beach Roofing</h3><p class=\"text-zinc-300 leading-relaxed mb-3\">\"Delray Beach has really changed over the years. The east side has transformed over the last 15 years, and the city has expanded further west with beautiful communities. It's always a pleasure working in Delray Beach.\"</p><p class=\"text-sm text-zinc-400\">— Charly, Field Supervisor, All Phase Construction</p></div></div></div></section>",
+    "roofRepairHtml": ""
+  },
+  "boca-raton": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "pompano-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lighthouse-point": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "coconut-creek": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "margate": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "coral-springs": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "parkland": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "deerfield-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "highland-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "ocean-ridge": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lake-worth": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "greenacres": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "west-palm-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "palm-beach-gardens": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "north-lauderdale": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "oakland-park": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "wilton-manors": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "fort-lauderdale": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "wellington": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "broward-county": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "cooper-city": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "dania-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "davie": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "hallandale-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "haverhill": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "hillsboro-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "hollywood": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "hypoluxo": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "jupiter-inlet-colony": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lake-park": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lantana": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lauderdale-by-the-sea": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lauderhill": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lazy-lake": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "light-house-point": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "lighthouse-point": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "manalapan": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "miramar": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "north-palm-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "palm-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "palm-beach-county": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "pembroke-pines": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "plantation": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "royal-palm-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "south-palm-beach": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "tamarac": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "the-aces": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "westlake": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "weston": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "surfside": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "sunrise": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "west-palm-beach-county": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "boca-raton-county": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  },
+  "boynton-beach-county": {
+    "serviceAreaHtml": "",
+    "roofRepairHtml": ""
+  }
+}
