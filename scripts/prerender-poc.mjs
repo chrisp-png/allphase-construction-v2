@@ -1,7 +1,5 @@
 import fs from "fs";
 import path from "path";
-import http from "http";
-import puppeteer from "puppeteer";
 import { fileURLToPath } from "url";
 
 console.log("🔥 PRERENDER SCRIPT STARTED");
@@ -11,10 +9,6 @@ console.log("ENV CI =", process.env.CI);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, "..", "dist");
 const LIVE_ORIGIN = "https://allphaseconstructionfl.com";
-const ROUTES = [
-  "/locations/deerfield-beach/service-area/boca-raton",
-  "/locations/deerfield-beach/service-area/boynton-beach",
-];
 
 const isNetlify = process.env.NETLIFY === "true" || process.env.CI === "true";
 if (!isNetlify) {
@@ -28,68 +22,143 @@ if (!fs.existsSync(indexPath)) {
   process.exit(1);
 }
 
-function serveFromDist(req, res) {
-  const urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
-  let filePath = path.join(distDir, urlPath);
-  if (urlPath.endsWith("/")) filePath = path.join(filePath, "index.html");
-  if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
-    filePath = indexPath; // SPA fallback
-  }
-  const data = fs.readFileSync(filePath);
-  const type = filePath.endsWith(".js")
-    ? "text/javascript"
-    : filePath.endsWith(".css")
-      ? "text/css"
-      : "text/html; charset=utf-8";
-  res.writeHead(200, { "Content-Type": type });
-  res.end(data);
-}
+console.log("✅ Reading base index.html");
+const baseHtml = fs.readFileSync(indexPath, "utf8");
 
-const server = http.createServer(serveFromDist);
-await new Promise((r) => server.listen(0, "127.0.0.1", r));
-const port = server.address().port;
-const base = `http://127.0.0.1:${port}`;
+// Route configuration
+const ROUTES = [
+  {
+    path: "/locations/deerfield-beach/service-area/boca-raton/",
+    title: "Roof Inspection in Boca Raton for Repairs & Replacement | All Phase",
+    description: "Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.",
+  },
+  {
+    path: "/locations/deerfield-beach/service-area/boynton-beach/",
+    title: "Roof Inspection in Boynton Beach for Repairs & Replacement | All Phase",
+    description: "Get a professional roof inspection in Boynton Beach to determine repair needs, replacement options, and insurance documentation before you decide.",
+  },
+];
 
-let browser;
-try {
-  console.log("🚀 Launching Puppeteer...");
-  browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
-  console.log("✅ Puppeteer launched");
-} catch (err) {
-  console.error("❌ Puppeteer failed to launch");
-  console.error(err);
-  process.exit(1);
-}
-const page = await browser.newPage();
-page.setDefaultNavigationTimeout(120000);
+function injectSEO(html, route) {
+  const { title, description, path } = route;
+  const canonical = `${LIVE_ORIGIN}${path}`;
+  const url = canonical;
 
-for (const route of ROUTES) {
-  const url = base + route;
-  console.log("Prerendering:", route);
-  await page.goto(url, { waitUntil: "networkidle0" });
-  console.log("✅ Page loaded:", route);
-  await page.waitForTimeout(300);
+  let result = html;
 
-  let html = await page.content();
+  // Replace <title>
+  result = result.replace(/<title>.*?<\/title>/i, `<title>${title}</title>`);
 
-  const canonical = `${LIVE_ORIGIN}${route}`;
-  if (!html.includes('rel="canonical"')) {
-    html = html.replace(
+  // Replace or insert description meta tag
+  if (result.includes('<meta name="description"')) {
+    result = result.replace(
+      /<meta name="description"[^>]*>/i,
+      `<meta name="description" content="${description}">`
+    );
+  } else {
+    result = result.replace(
       "</head>",
-      `  <link rel="canonical" href="${canonical}"/>\n</head>`
+      `  <meta name="description" content="${description}">\n</head>`
     );
   }
 
-  const outDir = path.join(distDir, route);
-  fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "index.html"), html, "utf8");
+  // Replace or insert canonical
+  if (result.includes('rel="canonical"')) {
+    result = result.replace(
+      /<link rel="canonical"[^>]*>/i,
+      `<link rel="canonical" href="${canonical}">`
+    );
+  } else {
+    result = result.replace(
+      "</head>",
+      `  <link rel="canonical" href="${canonical}">\n</head>`
+    );
+  }
+
+  // Replace or insert og:title
+  if (result.includes('property="og:title"')) {
+    result = result.replace(
+      /<meta property="og:title"[^>]*>/i,
+      `<meta property="og:title" content="${title}">`
+    );
+  } else {
+    result = result.replace(
+      "</head>",
+      `  <meta property="og:title" content="${title}">\n</head>`
+    );
+  }
+
+  // Replace or insert og:description
+  if (result.includes('property="og:description"')) {
+    result = result.replace(
+      /<meta property="og:description"[^>]*>/i,
+      `<meta property="og:description" content="${description}">`
+    );
+  } else {
+    result = result.replace(
+      "</head>",
+      `  <meta property="og:description" content="${description}">\n</head>`
+    );
+  }
+
+  // Replace or insert og:url
+  if (result.includes('property="og:url"')) {
+    result = result.replace(
+      /<meta property="og:url"[^>]*>/i,
+      `<meta property="og:url" content="${url}">`
+    );
+  } else {
+    result = result.replace(
+      "</head>",
+      `  <meta property="og:url" content="${url}">\n</head>`
+    );
+  }
+
+  // Replace or insert twitter:title
+  if (result.includes('name="twitter:title"')) {
+    result = result.replace(
+      /<meta name="twitter:title"[^>]*>/i,
+      `<meta name="twitter:title" content="${title}">`
+    );
+  } else {
+    result = result.replace(
+      "</head>",
+      `  <meta name="twitter:title" content="${title}">\n</head>`
+    );
+  }
+
+  // Replace or insert twitter:description
+  if (result.includes('name="twitter:description"')) {
+    result = result.replace(
+      /<meta name="twitter:description"[^>]*>/i,
+      `<meta name="twitter:description" content="${description}">`
+    );
+  } else {
+    result = result.replace(
+      "</head>",
+      `  <meta name="twitter:description" content="${description}">\n</head>`
+    );
+  }
+
+  return result;
 }
 
-await browser.close();
-server.close();
+console.log("🚀 Injecting static SEO metadata...");
 
-console.log("Prerender POC complete.");
+for (const route of ROUTES) {
+  console.log("Processing:", route.path);
+
+  const html = injectSEO(baseHtml, route);
+
+  // Remove trailing slash for path creation
+  const routePath = route.path.replace(/\/$/, "");
+  const outDir = path.join(distDir, routePath);
+
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, "index.html"), html, "utf8");
+
+  console.log("✅ Generated:", route.path);
+}
+
+console.log("Static SEO injection complete.");
 console.log("🎉 PRERENDER SCRIPT FINISHED");
