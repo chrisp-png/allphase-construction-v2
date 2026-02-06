@@ -1,4 +1,4 @@
-const SEO_ORIGIN = ""; // intentionally empty until real SEO origin is deployed
+const SEO_ORIGIN = ""; // leave empty until we set the real SEO origin
 
 function normalizePath(pathname: string) {
   return pathname.endsWith("/") ? pathname : pathname + "/";
@@ -21,12 +21,17 @@ export default async (request: Request, context: any) => {
 
     const originUrl = new URL(path, SEO_ORIGIN).toString();
 
-    const res = await fetch(originUrl, {
-      headers: {
-        "accept": "text/html,*/*",
-        "user-agent": request.headers.get("user-agent") || ""
-      }
-    });
+    let res: Response;
+    try {
+      res = await fetch(originUrl, {
+        headers: {
+          accept: "text/html,*/*",
+          "user-agent": request.headers.get("user-agent") || ""
+        }
+      });
+    } catch {
+      return context.next();
+    }
 
     if (!res.ok) return context.next();
 
@@ -39,7 +44,6 @@ export default async (request: Request, context: any) => {
       }
     });
   } catch {
-    // absolutely never allow an edge crash
     return context.next();
   }
 };
