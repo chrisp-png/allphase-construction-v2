@@ -11,13 +11,42 @@ const distDir = path.resolve(projectRoot, 'dist');
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 
-// Generate routes from cities data
-const routes = cities.map(city => ({
-  path: `/locations/${city.parent}/service-area/${city.slug}/`,
-  title: `${city.city} Roofing Services | All Phase Construction USA`,
-  description: `Professional roofing services in ${city.city}, FL. Licensed, insured roofing contractor specializing in repairs, replacements, and inspections.`,
-  canonical: `https://allphaseconstructionfl.com/locations/${city.parent}/service-area/${city.slug}`
-}));
+// Load city content data
+const cityContentPath = path.join(__dirname, 'city-content.json');
+const cityContent = JSON.parse(fs.readFileSync(cityContentPath, 'utf-8'));
+
+// Helper functions for generating default city-templated content
+function defaultServiceAreaHtml(cityName) {
+  return `
+<section id="seo-static-content">
+  <h1>${cityName} Roofing Services</h1>
+  <p>All Phase Construction USA provides licensed, insured roofing services in ${cityName}, FL, including roof repairs, replacements, inspections, and storm-damage support. We serve residential and commercial properties with code-compliant workmanship.</p>
+  <h2>Common Roofing Services in ${cityName}</h2>
+  <ul>
+    <li>Leak detection and roof repairs</li>
+    <li>Shingle, tile, flat, and metal roofing</li>
+    <li>Roof inspections and documentation</li>
+    <li>Storm damage assessment and mitigation</li>
+  </ul>
+</section>
+`.trim();
+}
+
+function defaultRoofRepairHtml(cityName) {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Repair in ${cityName}, FL</h1>
+  <p>Need roof repair in ${cityName}? We handle active leaks, storm-related damage, flashing failures, and roof maintenance issues with fast diagnostics and durable repairs.</p>
+  <h2>What We Repair in ${cityName}</h2>
+  <ul>
+    <li>Roof leaks and water intrusion</li>
+    <li>Damaged shingles, tiles, and underlayment</li>
+    <li>Flashing, vents, and penetrations</li>
+    <li>Storm damage and emergency tarping</li>
+  </ul>
+</section>
+`.trim();
+}
 
 function injectMetaTags(html, metadata) {
   // Replace title
@@ -171,7 +200,14 @@ async function prerenderStaticPages() {
 
   // PASS 1: Generate static HTML for city routes
   console.log('\n📍 Pass 1: Generating city pages...\n');
-  routes.forEach(route => {
+  cities.forEach(city => {
+    const route = {
+      path: `/locations/${city.parent}/service-area/${city.slug}/`,
+      title: `${city.city} Roofing Services | All Phase Construction USA`,
+      description: `Professional roofing services in ${city.city}, FL. Licensed, insured roofing contractor specializing in repairs, replacements, and inspections.`,
+      canonical: `https://allphaseconstructionfl.com/locations/${city.parent}/service-area/${city.slug}`
+    };
+
     const routePath = route.path.replace(/^\//, '').replace(/\/$/, '');
     const targetDir = path.join(distDir, routePath);
     const targetFile = path.join(targetDir, 'index.html');
@@ -179,8 +215,19 @@ async function prerenderStaticPages() {
     // Create directory structure
     fs.mkdirSync(targetDir, { recursive: true });
 
+    // Get content for this city (unique or default)
+    const injectedContent = (cityContent?.[city.slug]?.serviceAreaHtml && cityContent[city.slug].serviceAreaHtml.trim())
+      ? cityContent[city.slug].serviceAreaHtml
+      : defaultServiceAreaHtml(city.city);
+
     // Inject metadata
-    const htmlWithMeta = injectMetaTags(baseHtml, route);
+    let htmlWithMeta = injectMetaTags(baseHtml, route);
+
+    // Inject body content after React root
+    htmlWithMeta = htmlWithMeta.replace(
+      '<div id="root"></div>',
+      `<div id="root"></div>\n    <div id="seo-static">${injectedContent}</div>`
+    );
 
     // Write file
     fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
@@ -206,8 +253,19 @@ async function prerenderStaticPages() {
       canonical: `https://allphaseconstructionfl.com/roofing-services/roof-repair/${city.slug}`
     };
 
+    // Get content for this city (unique or default)
+    const injectedContent = (cityContent?.[city.slug]?.roofRepairHtml && cityContent[city.slug].roofRepairHtml.trim())
+      ? cityContent[city.slug].roofRepairHtml
+      : defaultRoofRepairHtml(city.city);
+
     // Inject metadata
-    const htmlWithMeta = injectMetaTags(baseHtml, roofRepairMeta);
+    let htmlWithMeta = injectMetaTags(baseHtml, roofRepairMeta);
+
+    // Inject body content after React root
+    htmlWithMeta = htmlWithMeta.replace(
+      '<div id="root"></div>',
+      `<div id="root"></div>\n    <div id="seo-static">${injectedContent}</div>`
+    );
 
     // Write file
     fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
