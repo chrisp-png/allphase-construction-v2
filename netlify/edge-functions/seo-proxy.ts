@@ -1,4 +1,4 @@
-const SEO_ORIGIN = ""; // leave empty until we set the real SEO origin
+const SEO_ORIGIN = "https://allphase-seo.netlify.app";
 
 function normalizePath(pathname: string) {
   return pathname.endsWith("/") ? pathname : pathname + "/";
