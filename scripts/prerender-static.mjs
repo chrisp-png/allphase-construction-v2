@@ -93,6 +93,69 @@ function injectMetaTags(html, metadata) {
   return html;
 }
 
+function injectCanonicalOnly(html, canonical) {
+  // Replace or inject canonical only (for sitemap URLs)
+  const canonicalRegex = /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/;
+  if (html.match(canonicalRegex)) {
+    html = html.replace(
+      canonicalRegex,
+      `<link rel="canonical" href="${canonical}" />`
+    );
+  } else {
+    html = html.replace(
+      '</head>',
+      `  <link rel="canonical" href="${canonical}" />\n  </head>`
+    );
+  }
+  return html;
+}
+
+function parseSitemapUrls(sitemapPath) {
+  if (!fs.existsSync(sitemapPath)) {
+    console.log('⚠️  sitemap.html not found, skipping sitemap URL prerendering');
+    return [];
+  }
+
+  const sitemapHtml = fs.readFileSync(sitemapPath, 'utf-8');
+  const hrefRegex = /href="([^"]+)"/g;
+  const urls = new Set();
+  let match;
+
+  while ((match = hrefRegex.exec(sitemapHtml)) !== null) {
+    let url = match[1];
+
+    // Convert full domain URLs to paths
+    if (url.includes('allphaseconstructionfl.com')) {
+      url = url.replace(/https?:\/\/allphaseconstructionfl\.com/, '');
+    }
+
+    // Only process internal paths
+    if (!url.startsWith('/')) {
+      continue;
+    }
+
+    // Remove query strings and hash fragments
+    url = url.split('?')[0].split('#')[0];
+
+    // Remove trailing slash
+    url = url.replace(/\/$/, '');
+
+    // Exclude root path
+    if (url === '' || url === '/') {
+      continue;
+    }
+
+    // Exclude paths with file extensions
+    if (/\.(js|css|png|jpg|jpeg|gif|svg|webp|xml|txt|ico|map|html)$/i.test(url)) {
+      continue;
+    }
+
+    urls.add(url);
+  }
+
+  return Array.from(urls).sort();
+}
+
 async function prerenderStaticPages() {
   console.log('\n🔧 Starting static HTML prerendering...\n');
 
@@ -106,7 +169,8 @@ async function prerenderStaticPages() {
   const baseHtml = fs.readFileSync(indexPath, 'utf-8');
   console.log('✓ Read base index.html');
 
-  // Generate static HTML for each route
+  // PASS 1: Generate static HTML for city routes
+  console.log('\n📍 Pass 1: Generating city pages...\n');
   routes.forEach(route => {
     const routePath = route.path.replace(/^\//, '').replace(/\/$/, '');
     const targetDir = path.join(distDir, routePath);
@@ -124,6 +188,46 @@ async function prerenderStaticPages() {
     console.log(`✓ Generated: ${routePath}/index.html`);
     console.log(`  Title: ${route.title}`);
   });
+
+  // PASS 2: Generate static HTML for all sitemap URLs
+  console.log('\n📄 Pass 2: Generating sitemap pages...\n');
+  const sitemapPath = path.join(distDir, 'sitemap.html');
+  const sitemapUrls = parseSitemapUrls(sitemapPath);
+
+  if (sitemapUrls.length > 0) {
+    console.log(`Found ${sitemapUrls.length} URLs in sitemap\n`);
+
+    let generatedCount = 0;
+    let skippedCount = 0;
+
+    sitemapUrls.forEach(url => {
+      const routePath = url.replace(/^\//, '');
+      const targetDir = path.join(distDir, routePath);
+      const targetFile = path.join(targetDir, 'index.html');
+
+      // Skip if already exists (from city generation)
+      if (fs.existsSync(targetFile)) {
+        skippedCount++;
+        return;
+      }
+
+      // Create directory structure
+      fs.mkdirSync(targetDir, { recursive: true });
+
+      // Inject canonical only
+      const canonical = `https://allphaseconstructionfl.com${url}`;
+      const htmlWithCanonical = injectCanonicalOnly(baseHtml, canonical);
+
+      // Write file
+      fs.writeFileSync(targetFile, htmlWithCanonical, 'utf-8');
+
+      generatedCount++;
+      console.log(`✓ Generated: ${routePath}/index.html`);
+    });
+
+    console.log(`\n✓ Generated ${generatedCount} new pages`);
+    console.log(`✓ Skipped ${skippedCount} existing pages`);
+  }
 
   console.log('\n✅ Static prerendering complete!\n');
 }
