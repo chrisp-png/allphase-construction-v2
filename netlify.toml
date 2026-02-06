@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npx vite build"
+command = "npm run build && npm run prerender:poc"
 
 [build.environment]
 NODE_VERSION = "20"
