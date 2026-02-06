@@ -49,11 +49,16 @@ function defaultRoofRepairHtml(cityName) {
 }
 
 function injectMetaTags(html, metadata) {
-  // Replace title
-  html = html.replace(
-    /<title>.*?<\/title>/,
-    `<title>${metadata.title}</title>`
-  );
+  // Replace or inject title
+  const titleRegex = /<title>.*?<\/title>/;
+  if (html.match(titleRegex)) {
+    html = html.replace(titleRegex, `<title>${metadata.title}</title>`);
+  } else {
+    html = html.replace(
+      '</head>',
+      `  <title>${metadata.title}</title>\n  </head>`
+    );
+  }
 
   // Replace or inject meta description
   if (html.includes('name="description"')) {
