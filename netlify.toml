@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npm run build && npm run prerender:poc"
+command = "npx vite build"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -811,15 +811,12 @@ from = "/parkland/calculator"
 to = "/locations/deerfield-beach/service-area/parkland/roof-cost-calculator"
 status = 301
 
-# Redirect all city-specific calculator pages to main calculator
-# Deerfield Beach main location calculator redirect
 [[redirects]]
 from = "/locations/deerfield-beach/roof-cost-calculator"
 to = "https://allphaseconstructionfl.com/roof-cost-calculator/"
 status = 301
 force = true
 
-# Wildcard redirect for all cities (present and future)
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/*/roof-cost-calculator"
 to = "https://allphaseconstructionfl.com/roof-cost-calculator/"
@@ -2030,7 +2027,6 @@ status = 301
 from = "/service-areas/:city/roof-cost-estimate/"
 to = "/locations/deerfield-beach/service-area/:city/roof-cost-calculator"
 status = 301
-
 
 [[redirects]]
 from = "/locations/pompano-beach"
