@@ -42,8 +42,8 @@ const manualPublicCopyPlugin = () => ({
       });
     }
 
-    // Copy SEO files (robots.txt, sitemap.xml, sitemap.html, and _headers)
-    const seoFiles = ['robots.txt', 'sitemap.xml', 'sitemap.html', '_headers'];
+    // Copy SEO files (robots.txt, sitemap.xml, sitemap.html, _headers, and _prerender.json)
+    const seoFiles = ['robots.txt', 'sitemap.xml', 'sitemap.html', '_headers', '_prerender.json'];
     seoFiles.forEach(file => {
       const src = path.resolve(publicDir, file);
       if (fs.existsSync(src)) {
