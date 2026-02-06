@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
-const distDir = path.resolve(projectRoot, 'dist');
+const publicDir = path.resolve(projectRoot, 'public');
 
 // Load cities data
 const citiesPath = path.join(__dirname, 'cities.json');
@@ -191,17 +191,17 @@ function parseSitemapUrls(sitemapPath) {
 }
 
 async function prerenderStaticPages() {
-  console.log('\n🔧 Starting static HTML prerendering...\n');
+  console.log('\n🔧 Starting static HTML prerendering to public/...\n');
 
-  // Read the base index.html
-  const indexPath = path.join(distDir, 'index.html');
+  // Read the base index.html from project root
+  const indexPath = path.join(projectRoot, 'index.html');
   if (!fs.existsSync(indexPath)) {
-    console.error('❌ Error: dist/index.html not found. Run build first.');
+    console.error('❌ Error: index.html not found in project root.');
     process.exit(1);
   }
 
   const baseHtml = fs.readFileSync(indexPath, 'utf-8');
-  console.log('✓ Read base index.html');
+  console.log('✓ Read base index.html from project root');
 
   // PASS 1: Generate static HTML for city routes
   console.log('\n📍 Pass 1: Generating city pages...\n');
@@ -214,7 +214,7 @@ async function prerenderStaticPages() {
     };
 
     const routePath = route.path.replace(/^\//, '').replace(/\/$/, '');
-    const targetDir = path.join(distDir, routePath);
+    const targetDir = path.join(publicDir, routePath);
     const targetFile = path.join(targetDir, 'index.html');
 
     // Create directory structure
@@ -245,7 +245,7 @@ async function prerenderStaticPages() {
   console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
   cities.forEach(city => {
     const routePath = `roofing-services/roof-repair/${city.slug}`;
-    const targetDir = path.join(distDir, routePath);
+    const targetDir = path.join(publicDir, routePath);
     const targetFile = path.join(targetDir, 'index.html');
 
     // Create directory structure
@@ -281,7 +281,7 @@ async function prerenderStaticPages() {
 
   // PASS 3: Generate static HTML for all sitemap URLs
   console.log('\n📄 Pass 3: Generating sitemap pages...\n');
-  const sitemapPath = path.join(distDir, 'sitemap.html');
+  const sitemapPath = path.join(publicDir, 'sitemap.html');
   const sitemapUrls = parseSitemapUrls(sitemapPath);
 
   if (sitemapUrls.length > 0) {
@@ -292,7 +292,7 @@ async function prerenderStaticPages() {
 
     sitemapUrls.forEach(url => {
       const routePath = url.replace(/^\//, '');
-      const targetDir = path.join(distDir, routePath);
+      const targetDir = path.join(publicDir, routePath);
       const targetFile = path.join(targetDir, 'index.html');
 
       // Skip if already exists (from city generation)
@@ -319,7 +319,8 @@ async function prerenderStaticPages() {
     console.log(`✓ Skipped ${skippedCount} existing pages`);
   }
 
-  console.log('\n✅ Static prerendering complete!\n');
+  console.log('\n✅ Static prerendering to public/ complete!\n');
+  console.log('📦 Files will be copied to dist/ during vite build\n');
 }
 
 prerenderStaticPages().catch(err => {

@@ -52,6 +52,30 @@ const manualPublicCopyPlugin = () => ({
         console.log(`Copied ${file} from public to dist`);
       }
     });
+
+    // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
+    const copyHtmlRecursive = (srcDir, destDir) => {
+      if (!fs.existsSync(srcDir)) return;
+
+      const entries = fs.readdirSync(srcDir, { withFileTypes: true });
+      entries.forEach(entry => {
+        const srcPath = path.join(srcDir, entry.name);
+        const destPath = path.join(destDir, entry.name);
+
+        if (entry.isDirectory()) {
+          // Recursively copy directory
+          fs.mkdirSync(destPath, { recursive: true });
+          copyHtmlRecursive(srcPath, destPath);
+        } else if (entry.isFile() && entry.name.endsWith('.html')) {
+          // Copy HTML files
+          fs.copyFileSync(srcPath, destPath);
+          console.log(`Copied prerendered: ${path.relative(publicDir, srcPath)}`);
+        }
+      });
+    };
+
+    // Copy all prerendered HTML pages from public/ subdirectories
+    copyHtmlRecursive(publicDir, distDir);
   }
 });
 

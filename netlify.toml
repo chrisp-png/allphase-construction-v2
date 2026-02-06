@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npx vite build"
+command = "node scripts/generate-sitemap.mjs && node scripts/generate-html-sitemap.mjs && node scripts/prerender-static.mjs && npx vite build"
 
 [build.environment]
 NODE_VERSION = "20"

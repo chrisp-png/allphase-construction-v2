@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-sitemap && npm run generate-html-sitemap && vite build && node scripts/prerender-static.mjs",
+    "build": "npm run generate-sitemap && npm run generate-html-sitemap && node scripts/prerender-static.mjs && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
