@@ -189,8 +189,35 @@ async function prerenderStaticPages() {
     console.log(`  Title: ${route.title}`);
   });
 
-  // PASS 2: Generate static HTML for all sitemap URLs
-  console.log('\n📄 Pass 2: Generating sitemap pages...\n');
+  // PASS 2: Generate static HTML for roof repair city pages
+  console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
+  cities.forEach(city => {
+    const routePath = `roofing-services/roof-repair/${city.slug}`;
+    const targetDir = path.join(distDir, routePath);
+    const targetFile = path.join(targetDir, 'index.html');
+
+    // Create directory structure
+    fs.mkdirSync(targetDir, { recursive: true });
+
+    // Prepare metadata for roof repair page
+    const roofRepairMeta = {
+      title: `Roof Repair in ${city.city}, FL | All Phase Construction USA`,
+      description: `Expert roof repair services in ${city.city}, FL. Licensed and insured roofing contractor specializing in leak repairs and storm damage.`,
+      canonical: `https://allphaseconstructionfl.com/roofing-services/roof-repair/${city.slug}`
+    };
+
+    // Inject metadata
+    const htmlWithMeta = injectMetaTags(baseHtml, roofRepairMeta);
+
+    // Write file
+    fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
+
+    console.log(`✓ Generated: ${routePath}/index.html`);
+    console.log(`  Title: ${roofRepairMeta.title}`);
+  });
+
+  // PASS 3: Generate static HTML for all sitemap URLs
+  console.log('\n📄 Pass 3: Generating sitemap pages...\n');
   const sitemapPath = path.join(distDir, 'sitemap.html');
   const sitemapUrls = parseSitemapUrls(sitemapPath);
 
