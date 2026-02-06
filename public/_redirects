@@ -1,0 +1,3 @@
+/locations/deerfield-beach/service-area/*  /locations/deerfield-beach/service-area/:splat/index.html  200
+/roofing-services/roof-repair/*            /roofing-services/roof-repair/:splat/index.html            200
+/*                                       /index.html                                                  200
