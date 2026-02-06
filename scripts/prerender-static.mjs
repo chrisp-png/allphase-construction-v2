@@ -16,7 +16,7 @@ const routes = cities.map(city => ({
   path: `/locations/${city.parent}/service-area/${city.slug}/`,
   title: `${city.city} Roofing Services | All Phase Construction USA`,
   description: `Professional roofing services in ${city.city}, FL. Licensed, insured roofing contractor specializing in repairs, replacements, and inspections.`,
-  canonical: `https://www.allphaseroofingusa.com/locations/${city.parent}/service-area/${city.slug}/`
+  canonical: `https://allphaseconstructionfl.com/locations/${city.parent}/service-area/${city.slug}`
 }));
 
 function injectMetaTags(html, metadata) {
