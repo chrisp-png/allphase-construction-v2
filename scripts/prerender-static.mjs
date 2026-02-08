@@ -15,6 +15,83 @@ const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 const cityContentPath = path.join(__dirname, 'city-content.json');
 const cityContent = JSON.parse(fs.readFileSync(cityContentPath, 'utf-8'));
 
+// Load SEO titles configuration
+const seoTitlesPath = path.join(__dirname, 'seo-titles.json');
+const seoTitlesConfig = JSON.parse(fs.readFileSync(seoTitlesPath, 'utf-8'));
+
+/**
+ * Get SEO metadata for a given path
+ * Handles static pages and dynamic routes (city pages, top-5-roofer, etc.)
+ */
+function getSEOMetadata(urlPath) {
+  const normalizedPath = urlPath.toLowerCase().replace(/\/$/, '');
+
+  // Check static titles first
+  if (seoTitlesConfig.staticTitles[normalizedPath]) {
+    return seoTitlesConfig.staticTitles[normalizedPath];
+  }
+
+  // Handle top-5-roofer pages
+  if (normalizedPath.includes('/top-5-roofer') || normalizedPath.includes('/top-roofer')) {
+    const cityMatch = normalizedPath.match(/\/service-area\/([^\/]+)/);
+    if (cityMatch) {
+      const slug = cityMatch[1];
+      const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      return {
+        title: `Top 5 Best Roofers in ${cityName}, FL | All Phase Construction USA`,
+        description: `Compare the top 5 roofers in ${cityName}, FL. See why All Phase Construction USA ranks #1 with dual licensing, HVHZ certification, and proven results.`,
+        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/top-5-roofer`
+      };
+    }
+  }
+
+  // Handle city service area pages
+  if (normalizedPath.startsWith('/locations/deerfield-beach/service-area/')) {
+    const parts = normalizedPath.split('/');
+    const slug = parts[4];
+    if (slug && !slug.includes('top-5-roofer') && !slug.includes('calculator')) {
+      const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      return {
+        title: `${cityName} Roofing Services | All Phase Construction USA`,
+        description: `Looking for a Dual-Licensed Roofing Specialist in ${cityName}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`,
+        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}`
+      };
+    }
+  }
+
+  // Handle calculator pages
+  if (normalizedPath.includes('/calculator')) {
+    const cityMatch = normalizedPath.match(/\/service-area\/([^\/]+)/);
+    if (cityMatch) {
+      const slug = cityMatch[1];
+      const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      return {
+        title: `${cityName} Roof Replacement Cost Calculator | All Phase Construction USA`,
+        description: `Calculate roof replacement costs in ${cityName}, FL. Get instant estimates based on your roof size, material, and pitch. Free quotes available.`,
+        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/calculator`
+      };
+    }
+  }
+
+  // Handle blog posts
+  if (normalizedPath.startsWith('/blog/') && normalizedPath !== '/blog') {
+    const slug = normalizedPath.replace('/blog/', '');
+    const blogTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return {
+      title: `${blogTitle} | All Phase Construction USA Blog`,
+      description: `Read about ${blogTitle.toLowerCase()} from South Florida's dual-licensed roofing experts at All Phase Construction USA.`,
+      canonical: `https://allphaseconstructionfl.com/blog/${slug}`
+    };
+  }
+
+  // Fallback - use homepage title
+  return seoTitlesConfig.staticTitles['/'] || {
+    title: 'All Phase Construction USA | Dual-Licensed Roofing Specialist',
+    description: 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Call (754) 227-5605',
+    canonical: `https://allphaseconstructionfl.com${normalizedPath}`
+  };
+}
+
 // Helper functions for generating default city-templated content
 function defaultServiceAreaHtml(cityName) {
   return `
@@ -203,17 +280,22 @@ async function prerenderStaticPages() {
   const baseHtml = fs.readFileSync(indexPath, 'utf-8');
   console.log('✓ Read base index.html from project root');
 
+  // PASS 0: Generate homepage with correct title
+  console.log('\n🏠 Pass 0: Generating homepage with SEO metadata...\n');
+  const homepageMetadata = getSEOMetadata('/');
+  const homepageHtml = injectMetaTags(baseHtml, homepageMetadata);
+  const homepageFile = path.join(publicDir, 'index.html');
+  fs.writeFileSync(homepageFile, homepageHtml, 'utf-8');
+  console.log(`✓ Generated: public/index.html`);
+  console.log(`  Title: ${homepageMetadata.title}\n`);
+
   // PASS 1: Generate static HTML for city routes
   console.log('\n📍 Pass 1: Generating city pages...\n');
   cities.forEach(city => {
-    const route = {
-      path: `/locations/${city.parent}/service-area/${city.slug}/`,
-      title: `${city.city} Roofing Services | All Phase Construction USA`,
-      description: `Looking for a Dual-Licensed Roofing Specialist in ${city.city}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`,
-      canonical: `https://allphaseconstructionfl.com/locations/${city.parent}/service-area/${city.slug}`
-    };
+    const urlPath = `/locations/${city.parent}/service-area/${city.slug}`;
+    const metadata = getSEOMetadata(urlPath);
 
-    const routePath = route.path.replace(/^\//, '').replace(/\/$/, '');
+    const routePath = urlPath.replace(/^\//, '');
     const targetDir = path.join(publicDir, routePath);
     const targetFile = path.join(targetDir, 'index.html');
 
@@ -226,7 +308,7 @@ async function prerenderStaticPages() {
       : defaultServiceAreaHtml(city.city);
 
     // Inject metadata
-    let htmlWithMeta = injectMetaTags(baseHtml, route);
+    let htmlWithMeta = injectMetaTags(baseHtml, metadata);
 
     // Inject body content after React root
     htmlWithMeta = htmlWithMeta.replace(
@@ -238,19 +320,15 @@ async function prerenderStaticPages() {
     fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
 
     console.log(`✓ Generated: ${routePath}/index.html`);
-    console.log(`  Title: ${route.title}`);
+    console.log(`  Title: ${metadata.title}`);
   });
 
   // PASS 1.5: Generate service area hub page
   console.log('\n📋 Pass 1.5: Generating service area hub page...\n');
-  const hubRoute = {
-    path: '/locations/deerfield-beach/service-area/',
-    title: 'Service Areas | All Phase Construction USA',
-    description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision and code-compliant roofing.',
-    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
-  };
+  const hubUrlPath = '/locations/deerfield-beach/service-area';
+  const hubMetadata = getSEOMetadata(hubUrlPath);
 
-  const hubRoutePath = hubRoute.path.replace(/^\//, '').replace(/\/$/, '');
+  const hubRoutePath = hubUrlPath.replace(/^\//, '');
   const hubTargetDir = path.join(publicDir, hubRoutePath);
   const hubTargetFile = path.join(hubTargetDir, 'index.html');
 
@@ -273,7 +351,7 @@ async function prerenderStaticPages() {
 `.trim();
 
   // Inject metadata
-  let hubHtmlWithMeta = injectMetaTags(baseHtml, hubRoute);
+  let hubHtmlWithMeta = injectMetaTags(baseHtml, hubMetadata);
 
   // Inject body content after React root
   hubHtmlWithMeta = hubHtmlWithMeta.replace(
@@ -285,7 +363,7 @@ async function prerenderStaticPages() {
   fs.writeFileSync(hubTargetFile, hubHtmlWithMeta, 'utf-8');
 
   console.log(`✓ Generated: ${hubRoutePath}/index.html`);
-  console.log(`  Title: ${hubRoute.title}`);
+  console.log(`  Title: ${hubMetadata.title}`);
 
   // PASS 2: Generate static HTML for roof repair city pages
   console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
@@ -350,15 +428,18 @@ async function prerenderStaticPages() {
       // Create directory structure
       fs.mkdirSync(targetDir, { recursive: true });
 
-      // Inject canonical only
-      const canonical = `https://allphaseconstructionfl.com${url}`;
-      const htmlWithCanonical = injectCanonicalOnly(baseHtml, canonical);
+      // Get full SEO metadata for this URL
+      const metadata = getSEOMetadata(url);
+      const htmlWithMetadata = injectMetaTags(baseHtml, metadata);
 
       // Write file
-      fs.writeFileSync(targetFile, htmlWithCanonical, 'utf-8');
+      fs.writeFileSync(targetFile, htmlWithMetadata, 'utf-8');
 
       generatedCount++;
       console.log(`✓ Generated: ${routePath}/index.html`);
+      if (generatedCount <= 5) {
+        console.log(`  Title: ${metadata.title}`);
+      }
     });
 
     console.log(`\n✓ Generated ${generatedCount} new pages`);
