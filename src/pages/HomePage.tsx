@@ -189,7 +189,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    document.title = 'All Phase Construction USA | Dual-Licensed Roofing Specialist';
+    document.title = 'All Phase Construction USA | Dual-Licensed Roofing Specialist in Deerfield Beach';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {

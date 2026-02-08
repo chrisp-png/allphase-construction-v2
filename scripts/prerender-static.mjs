@@ -209,7 +209,7 @@ async function prerenderStaticPages() {
     const route = {
       path: `/locations/${city.parent}/service-area/${city.slug}/`,
       title: `${city.city} Roofing Services | All Phase Construction USA`,
-      description: `Professional roofing services in ${city.city}, FL. Licensed, insured roofing contractor specializing in repairs, replacements, and inspections.`,
+      description: `Looking for a Dual-Licensed Roofing Specialist in ${city.city}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`,
       canonical: `https://allphaseconstructionfl.com/locations/${city.parent}/service-area/${city.slug}`
     };
 
@@ -240,6 +240,52 @@ async function prerenderStaticPages() {
     console.log(`✓ Generated: ${routePath}/index.html`);
     console.log(`  Title: ${route.title}`);
   });
+
+  // PASS 1.5: Generate service area hub page
+  console.log('\n📋 Pass 1.5: Generating service area hub page...\n');
+  const hubRoute = {
+    path: '/locations/deerfield-beach/service-area/',
+    title: 'Service Areas | All Phase Construction USA',
+    description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision and code-compliant roofing.',
+    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
+  };
+
+  const hubRoutePath = hubRoute.path.replace(/^\//, '').replace(/\/$/, '');
+  const hubTargetDir = path.join(publicDir, hubRoutePath);
+  const hubTargetFile = path.join(hubTargetDir, 'index.html');
+
+  // Create directory structure
+  fs.mkdirSync(hubTargetDir, { recursive: true });
+
+  // Generate hub page content
+  const hubContent = `
+<section id="seo-static-content">
+  <h1>Service Areas - Deerfield Beach Headquarters</h1>
+  <p>All Phase Construction USA serves Broward County and Palm Beach County from our Deerfield Beach headquarters at 590 Goolsby Blvd. We provide professional roofing services to all cities in both counties.</p>
+  <h2>Service Coverage</h2>
+  <ul>
+    <li>51 cities across Broward & Palm Beach Counties</li>
+    <li>Same-day inspection availability</li>
+    <li>HVHZ-compliant roofing solutions</li>
+    <li>Licensed & insured (CCC-1331464, CGC-1526236)</li>
+  </ul>
+</section>
+`.trim();
+
+  // Inject metadata
+  let hubHtmlWithMeta = injectMetaTags(baseHtml, hubRoute);
+
+  // Inject body content after React root
+  hubHtmlWithMeta = hubHtmlWithMeta.replace(
+    '<div id="root"></div>',
+    `<div id="root"></div>\n    <div id="seo-static">${hubContent}</div>`
+  );
+
+  // Write file
+  fs.writeFileSync(hubTargetFile, hubHtmlWithMeta, 'utf-8');
+
+  console.log(`✓ Generated: ${hubRoutePath}/index.html`);
+  console.log(`  Title: ${hubRoute.title}`);
 
   // PASS 2: Generate static HTML for roof repair city pages
   console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
