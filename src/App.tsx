@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AccessibilityWidget from './components/AccessibilityWidget';
@@ -226,6 +226,19 @@ const PageLoadingFallback = () => (
 
 function AppContent() {
   const { isOpen, closeModal } = useAssessmentModal();
+  const location = useLocation();
+
+  // IDENTITY LOCK: Force correct titles for Google before any Helmet updates
+  useEffect(() => {
+    const path = location.pathname.toLowerCase();
+
+    if (path === '/') {
+      document.title = 'All Phase Construction USA | Dual-Licensed Roofing Specialist';
+    } else if (path.includes('deerfield-beach')) {
+      document.title = 'Dual-Licensed Roofing Specialist in Deerfield Beach, FL | All Phase Construction USA';
+    }
+    // Other pages will be handled by their individual Helmet components
+  }, [location.pathname]);
 
   return (
     <>
