@@ -19,7 +19,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { sheetSitemap, SitemapEntry } from '../../data/sheetSitemap';
-import { MapPin, ArrowRight, Phone, Mail, Calculator, Award, ChevronRight } from 'lucide-react';
+import { MapPin, ArrowRight, Phone, Mail, Calculator, Award, ChevronRight, Shield, Building2 } from 'lucide-react';
 import NoIndexMeta from '../../components/NoIndexMeta';
 import InternalLinksBlock from '../../components/InternalLinksBlock';
 import { CITY_COORDINATES } from '../../data/cityCoordinates';
@@ -198,6 +198,25 @@ export default function ServiceAreaPage() {
     pageDescription = 'Service area not found';
   }
 
+  // Priority cities get enhanced content blocks
+  const priorityCities = [
+    'boca-raton',
+    'deerfield-beach',
+    'fort-lauderdale',
+    'west-palm-beach',
+    'coral-springs',
+    'coconut-creek',
+    'delray-beach',
+    'boynton-beach',
+    'lake-worth',
+    'wellington',
+    'lauderhill',
+    'north-lauderdale',
+    'margate',
+    'plantation'
+  ];
+  const isPriorityCity = citySlug ? priorityCities.includes(citySlug) : false;
+
   const schemas = finalCity ? [
     generateLocalBusinessSchema('https://allphaseconstructionfl.com'),
     generateFAQPageSchema(cityFAQs),
@@ -295,7 +314,7 @@ export default function ServiceAreaPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Roofing Services in {cleanCityName}
+            {isPriorityCity ? `Expert Roofing Services in ${cleanCityName}, FL` : `Roofing Services in ${cleanCityName}`}
           </h1>
 
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-6 font-medium">
@@ -331,6 +350,89 @@ export default function ServiceAreaPage() {
             </Link>
           </div>
         </div>
+
+        {/* Priority City: High-Value Content Blocks */}
+        {isPriorityCity && (
+          <>
+            {/* HVHZ Compliance Section */}
+            <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 rounded-xl p-8 border border-red-600/30 mb-12">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="p-3 bg-red-600/20 rounded-lg">
+                  <Shield className="w-8 h-8 text-red-600" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-white mb-4">
+                    HVHZ-Compliant Roofing for {cleanCityName}
+                  </h2>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Protecting {cleanCityName} homes requires more than just shingles. As a Dual-Licensed Specialist,
+                    I ensure every roof meets the specific High-Velocity Hurricane Zone (HVHZ) requirements for {cleanCityName}
+                    and {countyName || 'South Florida'} building codes.
+                  </p>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-3 gap-4 pt-6 border-t border-gray-700">
+                <div className="text-center">
+                  <div className="text-red-600 font-bold text-xl mb-1">CCC1331464</div>
+                  <div className="text-gray-400 text-sm">FL Roofing License</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-red-600 font-bold text-xl mb-1">CGC1526236</div>
+                  <div className="text-gray-400 text-sm">FL General Contractor</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-red-600 font-bold text-xl mb-1">HVHZ</div>
+                  <div className="text-gray-400 text-sm">Certified</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Dual-Licensed Advantage Section */}
+            <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 rounded-xl p-8 border border-gray-700 mb-12">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="p-3 bg-red-600/20 rounded-lg">
+                  <Building2 className="w-8 h-8 text-red-600" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-white mb-4">
+                    The "Dual-Licensed" Advantage in {cleanCityName}
+                  </h2>
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                    Most {cleanCityName} roofers only hold a CCC license. My <span className="text-red-600 font-semibold">CGC (General Contractor) license</span> allows
+                    me to oversee the structural integrity of your roof deck and trusses, providing a level of storm-readiness
+                    that standard contractors miss.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed">
+                    This dual certification means I can identify and address structural issues before they compromise your roof's
+                    performance during hurricanes and severe weather events common in {countyName || 'South Florida'}.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Local NAP & Service Hub */}
+            <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700 mb-12">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-bold text-white mb-2">Serving {cleanCityName} from Our Deerfield Beach Headquarters</h3>
+                <p className="text-gray-400">Your Local Roofing Specialist</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="text-center md:text-left">
+                  <div className="text-gray-400 text-sm mb-2">Primary Office Location</div>
+                  <div className="text-white font-semibold mb-1">590 Goolsby Blvd</div>
+                  <div className="text-gray-300">Deerfield Beach, FL 33442</div>
+                </div>
+                <div className="text-center md:text-right">
+                  <div className="text-gray-400 text-sm mb-2">Contact Direct</div>
+                  <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-bold text-2xl block transition-colors">
+                    (754) 227-5605
+                  </a>
+                  <div className="text-gray-400 text-sm mt-1">Click to Call</div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
 
         {/* Hub Link */}
         {hubPath && (

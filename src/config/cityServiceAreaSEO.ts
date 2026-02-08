@@ -29,18 +29,93 @@ export interface CityServiceAreaSEO {
 /**
  * SEO overrides for specific priority cities
  * Add entries here to customize SEO for specific cities without code changes
+ *
+ * PRIORITY CITIES: High-authority titles for local search dominance
  */
 export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO> = {
+  // Priority City: Boca Raton
   'boca-raton': {
-    title: 'Boca Raton Roofing Services | All Phase Construction USA',
-    description: 'Looking for a Dual-Licensed Roofing Specialist in Boca Raton? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!'
+    title: 'Boca Raton Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing services in Boca Raton, FL. Dual-Licensed Roofing Specialist (CCC1331464) & General Contractor (CGC1526236). HVHZ-compliant roof repairs and replacements. Call (754) 227-5605.'
   },
-  // Add more priority cities here as needed
-  // Example:
-  // 'boynton-beach': {
-  //   title: 'Roof Inspection in Boynton Beach for Repairs & Replacement | All Phase',
-  //   description: 'Get a professional roof inspection in Boynton Beach to determine repair needs, replacement options, and insurance documentation before you decide.'
-  // },
+
+  // Priority City: Deerfield Beach
+  'deerfield-beach': {
+    title: 'Deerfield Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Headquartered in Deerfield Beach at 590 Goolsby Blvd. Dual-Licensed Roofing Specialist serving Broward & Palm Beach Counties with HVHZ-compliant roofing solutions. Call (754) 227-5605.'
+  },
+
+  // Priority City: Fort Lauderdale
+  'fort-lauderdale': {
+    title: 'Fort Lauderdale Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing services in Fort Lauderdale, FL. Dual-Licensed specialist with CCC1331464 & CGC1526236. HVHZ-certified roof repairs, replacements, and storm restoration. Call (754) 227-5605.'
+  },
+
+  // Priority City: West Palm Beach
+  'west-palm-beach': {
+    title: 'West Palm Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Professional roofing services in West Palm Beach. Dual-Licensed Roofing Specialist with structural expertise. HVHZ-compliant installations and repairs. Call (754) 227-5605.'
+  },
+
+  // Priority City: Coral Springs
+  'coral-springs': {
+    title: 'Coral Springs Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Trusted roofing contractor in Coral Springs. Dual-Licensed specialist combining roofing and structural expertise for superior storm-ready installations. Call (754) 227-5605.'
+  },
+
+  // Priority City: Coconut Creek
+  'coconut-creek': {
+    title: 'Coconut Creek Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing services in Coconut Creek, FL. Dual-Licensed Roofing Specialist providing HVHZ-compliant roof repairs and replacements. Free estimates. Call (754) 227-5605.'
+  },
+
+  // Priority City: Delray Beach
+  'delray-beach': {
+    title: 'Delray Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Professional roofing contractor in Delray Beach. Dual-Licensed specialist with CCC & CGC credentials ensures structural integrity and HVHZ compliance. Call (754) 227-5605.'
+  },
+
+  // Priority City: Boynton Beach
+  'boynton-beach': {
+    title: 'Boynton Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing services in Boynton Beach. Dual-Licensed Roofing Specialist with superior structural credentials for storm-resistant installations. Call (754) 227-5605.'
+  },
+
+  // Priority City: Lake Worth
+  'lake-worth': {
+    title: 'Lake Worth Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Trusted roofing contractor in Lake Worth, FL. Dual-Licensed specialist providing HVHZ-compliant roof repairs and replacements. Free estimates. Call (754) 227-5605.'
+  },
+
+  // Priority City: Wellington
+  'wellington': {
+    title: 'Wellington Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Professional roofing services in Wellington. Dual-Licensed Roofing Specialist combining roofing and general contracting expertise for superior installations. Call (754) 227-5605.'
+  },
+
+  // Priority City: Lauderhill
+  'lauderhill': {
+    title: 'Lauderhill Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing contractor in Lauderhill, FL. Dual-Licensed specialist with CCC1331464 & CGC1526236 providing HVHZ-compliant roofing solutions. Call (754) 227-5605.'
+  },
+
+  // Priority City: North Lauderdale
+  'north-lauderdale': {
+    title: 'North Lauderdale Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Trusted roofing services in North Lauderdale. Dual-Licensed Roofing Specialist ensuring structural integrity and hurricane readiness. Call (754) 227-5605.'
+  },
+
+  // Priority City: Margate
+  'margate': {
+    title: 'Margate Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Professional roofing contractor in Margate, FL. Dual-Licensed specialist providing HVHZ-compliant roof repairs and replacements. Free estimates. Call (754) 227-5605.'
+  },
+
+  // Priority City: Plantation
+  'plantation': {
+    title: 'Plantation Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing services in Plantation. Dual-Licensed Roofing Specialist with superior structural credentials for storm-resistant installations. Call (754) 227-5605.'
+  },
 };
 
 /**
