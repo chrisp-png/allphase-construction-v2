@@ -10,6 +10,7 @@ import CanonicalManager from './components/CanonicalManager';
 import LowercaseRedirect from './components/LowercaseRedirect';
 import AssessmentModal from './components/AssessmentModal';
 import { AssessmentModalProvider, useAssessmentModal } from './context/AssessmentModalContext';
+import NuclearMetadata from './components/NuclearMetadata';
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -227,10 +228,12 @@ function AppContent() {
   const { isOpen, closeModal } = useAssessmentModal();
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
-      <LowercaseRedirect />
-      <CanonicalManager />
-      <ScrollToTop />
+    <>
+      <NuclearMetadata />
+      <div className="flex flex-col min-h-screen bg-gray-50">
+        <LowercaseRedirect />
+        <CanonicalManager />
+        <ScrollToTop />
       <Header />
       <main className="flex-grow">
         <Suspense fallback={<PageLoadingFallback />}>
@@ -326,7 +329,8 @@ function AppContent() {
           100% { transform: rotate(360deg); }
         }
       `}</style>
-    </div>
+      </div>
+    </>
   );
 }
 

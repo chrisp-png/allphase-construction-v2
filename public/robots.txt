@@ -5,6 +5,7 @@ Allow: /
 # Sitemap location
 Sitemap: https://allphaseconstructionfl.com/sitemap.xml
 
-# Block admin and QA pages
+# Block admin, QA, and source code
 Disallow: /admin
 Disallow: /qa/
+Disallow: /src/
