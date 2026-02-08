@@ -15,10 +15,10 @@ export default function DeerfieldBeachCityPage() {
   return (
     <>
       <Helmet>
-        <title>Dual-Licensed Roofing Specialist in Deerfield Beach | All Phase Construction USA</title>
+        <title>Dual-Licensed Roofing Specialist in Deerfield Beach, FL | All Phase Construction USA</title>
         <meta
           name="description"
-          content="The expert in HVHZ-compliant roofing for Deerfield Beach. Dual-licensed roofing specialist providing superior roof repairs and full replacements. Call (754) 227-5605."
+          content="Your expert in HVHZ-compliant roofing for Deerfield Beach. As a dual-licensed Roofing Specialist and General Contractor, I specialize exclusively in residential and commercial roofing—not general construction. Call (754) 227-5605."
         />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
       </Helmet>
@@ -86,11 +86,11 @@ export default function DeerfieldBeachCityPage() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Deerfield Beach
+              Dual-Licensed Roofing Specialist in Deerfield Beach, FL
             </h1>
 
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              The expert in HVHZ-compliant roofing, serving Deerfield Beach and surrounding communities with superior workmanship and professional roofing solutions.
+              Your expert in HVHZ-compliant roofing, serving Deerfield Beach and surrounding communities with superior workmanship and professional roofing solutions.
             </p>
           </div>
 
@@ -105,10 +105,7 @@ export default function DeerfieldBeachCityPage() {
                 <Shield className="w-8 h-8 text-red-600" />
               </div>
               <p className="text-lg md:text-xl text-gray-300 mb-4">
-                Leveraging General Contracting expertise to provide superior, HVHZ-compliant roofing solutions.
-              </p>
-              <p className="text-base md:text-lg text-gray-400 mb-4">
-                We specialize exclusively in professional roof repairs and full replacements.
+                As a dual-licensed Roofing Specialist and General Contractor, I bring a higher standard of structural integrity to every roofing project. I specialize exclusively in residential and commercial roofing solutions—not general home construction.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base">
                 <div className="flex items-center gap-2 text-gray-300">
@@ -157,10 +154,10 @@ export default function DeerfieldBeachCityPage() {
           {/* Service Areas Grid */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
-              Our Service Areas
+              Service Coverage Area
             </h2>
             <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto">
-              We proudly serve Deerfield Beach and surrounding communities across Palm Beach and Broward Counties with professional roofing services.
+              The contractor proudly serves Deerfield Beach and surrounding communities across Palm Beach and Broward Counties with professional roofing services.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
@@ -303,10 +300,10 @@ export default function DeerfieldBeachCityPage() {
             </div>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Every roofing project requires proper permitting and inspection by the local building department. We handle all permit applications, coordinate required inspections, and ensure full compliance with Deerfield Beach building codes and Florida Building Code requirements.
+                Every roofing project requires proper permitting and inspection by the local building department. The contractor handles all permit applications, coordinates required inspections, and ensures full compliance with Deerfield Beach building codes and Florida Building Code requirements.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Deerfield Beach is located in the High Velocity Hurricane Zone (HVHZ), which mandates enhanced structural requirements for all roofing systems. Our installations meet these stricter standards, including:
+                Deerfield Beach is located in the High Velocity Hurricane Zone (HVHZ), which mandates enhanced structural requirements for all roofing systems. The contractor's installations meet these stricter standards, including:
               </p>
               <ul className="text-gray-400 space-y-2 mb-4">
                 <li className="flex items-start gap-2">
@@ -327,7 +324,7 @@ export default function DeerfieldBeachCityPage() {
                 </li>
               </ul>
               <p className="text-gray-400 text-lg leading-relaxed">
-                All work is inspected by Deerfield Beach building officials, and we provide you with complete permit close-out documentation showing full compliance with local and state building codes.
+                All work is inspected by Deerfield Beach building officials, and the contractor provides complete permit close-out documentation showing full compliance with local and state building codes.
               </p>
             </div>
           </div>
@@ -346,7 +343,7 @@ export default function DeerfieldBeachCityPage() {
             </div>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Insurance carriers in South Florida require verifiable proof of proper roofing installation. We provide comprehensive photo documentation throughout every project, including:
+                Insurance carriers in South Florida require verifiable proof of proper roofing installation. The contractor provides comprehensive photo documentation throughout every project, including:
               </p>
               <ul className="text-gray-400 space-y-2 mb-4">
                 <li className="flex items-start gap-2">
@@ -370,15 +367,15 @@ export default function DeerfieldBeachCityPage() {
                 This documentation package, combined with your building permit close-out and final inspection approval, creates an insurance-defensible record of proper installation. Many Deerfield Beach homeowners use this documentation to qualify for wind mitigation discounts on their homeowners insurance.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Our installations are compatible with wind mitigation inspections, which can reduce your insurance premiums by documenting specific hurricane-resistant features of your roof system.
+                The contractor's installations are compatible with wind mitigation inspections, which can reduce your insurance premiums by documenting specific hurricane-resistant features of your roof system.
               </p>
             </div>
           </div>
 
-          {/* Deerfield Beach Roofing Systems We Install */}
+          {/* Deerfield Beach Roofing Systems Installed */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-              Deerfield Beach Roofing Systems We Install
+              Roofing Systems Installed in Deerfield Beach
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -589,7 +586,7 @@ export default function DeerfieldBeachCityPage() {
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors"
               >
-                Get a Roofing Estimate
+                Request a Roofing Estimate
               </Link>
             </div>
           </div>
