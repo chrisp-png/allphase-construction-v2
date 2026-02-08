@@ -441,6 +441,32 @@ export default function ServiceAreaPage() {
               </div>
             </div>
 
+            {/* Local Building Code Expertise */}
+            <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 rounded-xl p-8 border border-gray-700 mb-12">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="p-3 bg-red-600/20 rounded-lg">
+                  <Award className="w-8 h-8 text-red-600" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-white mb-4">
+                    {countyName || 'Local'} Building Code Expertise
+                  </h2>
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                    Every {countyName || 'county'} building department has unique permitting requirements, inspection protocols, and code interpretations.
+                    Having completed hundreds of roofing projects throughout {cleanCityName} and surrounding communities, I maintain established
+                    relationships with local building officials and understand exactly what documentation, engineering details, and installation
+                    specifications are required for first-pass inspection approval.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed">
+                    This local expertise eliminates costly delays caused by permit rejections, failed inspections, or code violations. Many out-of-area
+                    contractors struggle with {countyName || 'local'} requirements, resulting in project delays of weeks or even months. My proven track record
+                    in {cleanCityName} ensures your roof replacement or repair moves forward smoothly from permit application through final inspection
+                    and certificate of completion—typically within 2-3 weeks for standard residential projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Local NAP & Service Hub */}
             <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700 mb-12">
               <div className="text-center mb-6">
