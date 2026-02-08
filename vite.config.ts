@@ -54,7 +54,8 @@ const manualPublicCopyPlugin = () => ({
     });
 
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
-    const copyHtmlRecursive = (srcDir, destDir) => {
+    // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
+    const copyHtmlRecursive = (srcDir, destDir, isRoot = false) => {
       if (!fs.existsSync(srcDir)) return;
 
       const entries = fs.readdirSync(srcDir, { withFileTypes: true });
@@ -65,9 +66,14 @@ const manualPublicCopyPlugin = () => ({
         if (entry.isDirectory()) {
           // Recursively copy directory
           fs.mkdirSync(destPath, { recursive: true });
-          copyHtmlRecursive(srcPath, destPath);
+          copyHtmlRecursive(srcPath, destPath, false);
         } else if (entry.isFile() && entry.name.endsWith('.html')) {
-          // Copy HTML files
+          // Skip root index.html to preserve Vite's built version with proper asset links
+          if (isRoot && entry.name === 'index.html') {
+            console.log(`Skipped root index.html (preserving Vite build)`);
+            return;
+          }
+          // Copy HTML files from subdirectories
           fs.copyFileSync(srcPath, destPath);
           console.log(`Copied prerendered: ${path.relative(publicDir, srcPath)}`);
         }
@@ -75,7 +81,8 @@ const manualPublicCopyPlugin = () => ({
     };
 
     // Copy all prerendered HTML pages from public/ subdirectories
-    copyHtmlRecursive(publicDir, distDir);
+    // Pass isRoot=true to skip copying root index.html
+    copyHtmlRecursive(publicDir, distDir, true);
   }
 });
 
