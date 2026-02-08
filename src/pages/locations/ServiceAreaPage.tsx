@@ -19,7 +19,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { sheetSitemap, SitemapEntry } from '../../data/sheetSitemap';
-import { MapPin, ArrowRight, Phone, Mail, Calculator, Award } from 'lucide-react';
+import { MapPin, ArrowRight, Phone, Mail, Calculator, Award, ChevronRight } from 'lucide-react';
 import NoIndexMeta from '../../components/NoIndexMeta';
 import InternalLinksBlock from '../../components/InternalLinksBlock';
 import { CITY_COORDINATES } from '../../data/cityCoordinates';
@@ -203,7 +203,8 @@ export default function ServiceAreaPage() {
     generateFAQPageSchema(cityFAQs),
     generateBreadcrumbSchema([
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/service-areas' },
+      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
+      { name: 'Deerfield Beach', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach' },
       { name: cleanCityName, url: canonicalUrl }
     ])
   ] : [];
@@ -264,6 +265,23 @@ export default function ServiceAreaPage() {
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8" aria-label="Breadcrumb">
+            <Link to="/" className="hover:text-red-500 transition-colors">
+              Home
+            </Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link to="/locations" className="hover:text-red-500 transition-colors">
+              Locations
+            </Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link to="/locations/deerfield-beach" className="hover:text-red-500 transition-colors">
+              Deerfield Beach
+            </Link>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-gray-300 font-medium">{cleanCityName}</span>
+          </nav>
+
           {/* Header Section */}
           <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-700/50 text-gray-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">

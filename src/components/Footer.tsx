@@ -353,7 +353,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pt-2 mt-2 border-t border-neutral-800">
-                <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-600 transition-colors hover:underline font-medium">
+                <Link to="/locations" className="hover:text-red-600 transition-colors hover:underline font-medium">
                   View All Service Areas →
                 </Link>
               </li>
