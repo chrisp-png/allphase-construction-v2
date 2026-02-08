@@ -15,6 +15,7 @@
  * ═══════════════════════════════════════════════════════════════════════════
  */
 
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { sheetSitemap } from '../../data/sheetSitemap';
 import { ArrowLeft, Award, Star, Shield, Phone, Mail } from 'lucide-react';
@@ -44,6 +45,13 @@ export default function TopRooferPage() {
     : citySlug
     ? citySlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
     : (hubSlug || '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+  // Set page title
+  useEffect(() => {
+    if (locationName) {
+      document.title = `Top 5 Best Roofers in ${locationName}, FL | All Phase Construction USA`;
+    }
+  }, [locationName]);
 
   // If no page entry found, show error state
   if (!pageEntry) {

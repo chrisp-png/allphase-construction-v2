@@ -32,8 +32,8 @@ export interface CityServiceAreaSEO {
  */
 export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO> = {
   'boca-raton': {
-    title: 'Roof Inspection in Boca Raton for Repairs & Replacement | All Phase',
-    description: 'Get a professional roof inspection in Boca Raton to determine repair needs, replacement options, and insurance documentation before you decide.'
+    title: 'Boca Raton Roofing Services | All Phase Construction USA',
+    description: 'Professional roofing services in Boca Raton, FL. Expert roof replacement, repair & inspection. Licensed, insured, and HVHZ certified. Call (754) 227-5605.'
   },
   // Add more priority cities here as needed
   // Example:
@@ -49,7 +49,7 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
  * @returns SEO-optimized title
  */
 export function getDefaultServiceAreaTitle(cityName: string): string {
-  return `Roof Inspection in ${cityName} for Repairs & Replacement | All Phase`;
+  return `${cityName} Roofing Services | All Phase Construction USA`;
 }
 
 /**

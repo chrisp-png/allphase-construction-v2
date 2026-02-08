@@ -189,7 +189,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    document.title = 'Roofer Broward & Palm Beach County | All Phase';
+    document.title = 'All Phase Construction USA | Professional Roofing & HVHZ General Contractors';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
