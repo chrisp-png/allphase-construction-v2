@@ -33,7 +33,7 @@ export interface CityServiceAreaSEO {
 export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO> = {
   'boca-raton': {
     title: 'Boca Raton Roofing Services | All Phase Construction USA',
-    description: 'Professional roofing services in Boca Raton, FL. Expert roof replacement, repair & inspection. Licensed, insured, and HVHZ certified. Call (754) 227-5605.'
+    description: 'Looking for a Dual-Licensed Roofing Specialist in Boca Raton? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!'
   },
   // Add more priority cities here as needed
   // Example:
@@ -58,7 +58,7 @@ export function getDefaultServiceAreaTitle(cityName: string): string {
  * @returns SEO-optimized description
  */
 export function getDefaultServiceAreaDescription(cityName: string): string {
-  return `Get a professional roof inspection in ${cityName} to determine repair needs, replacement options, and insurance documentation before you decide.`;
+  return `Looking for a Dual-Licensed Roofing Specialist in ${cityName}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`;
 }
 
 /**

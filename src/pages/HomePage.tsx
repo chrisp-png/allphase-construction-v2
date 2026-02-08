@@ -189,7 +189,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    document.title = 'All Phase Construction USA | Professional Roofing & HVHZ General Contractors';
+    document.title = 'All Phase Construction USA | Dual-Licensed Roofing Specialist';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
