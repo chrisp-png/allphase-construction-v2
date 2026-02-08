@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npm run build"
+command = "npx vite build"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -102,7 +102,6 @@ Cache-Control = "public, max-age=31536000, immutable"
 function = "seo-proxy"
 path = "/locations/*"
 
-# SPA redirects - serve index.html for all routes (except static files)
 [[redirects]]
 from = "/*"
 to = "/index.html"
