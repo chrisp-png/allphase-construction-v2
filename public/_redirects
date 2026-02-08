@@ -60,6 +60,9 @@
 /roofing-services/roof-repair/weston                        /locations/deerfield-beach/service-area/weston                    301!
 /roofing-services/roof-repair/wilton-manors                 /locations/deerfield-beach/service-area/wilton-manors             301!
 
+# Wildcard redirect: catch any other roof-repair city pages
+/roofing-services/roof-repair/:city                         /locations/deerfield-beach/service-area/:city                     301!
+
 # Redirect roof-repair hub to main locations page
 /roofing-services/roof-repair                               /locations/deerfield-beach                                        301!
 
