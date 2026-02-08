@@ -198,7 +198,7 @@ export default function ServiceAreaPage() {
     pageDescription = 'Service area not found';
   }
 
-  // Priority cities get enhanced content blocks
+  // Priority cities get enhanced content blocks (15+ cities for local search dominance)
   const priorityCities = [
     'boca-raton',
     'deerfield-beach',
@@ -213,7 +213,10 @@ export default function ServiceAreaPage() {
     'lauderhill',
     'north-lauderdale',
     'margate',
-    'plantation'
+    'plantation',
+    'davie',
+    'hollywood',
+    'pompano-beach'
   ];
   const isPriorityCity = citySlug ? priorityCities.includes(citySlug) : false;
 
@@ -364,10 +367,23 @@ export default function ServiceAreaPage() {
                   <h2 className="text-2xl font-bold text-white mb-4">
                     HVHZ-Compliant Roofing for {cleanCityName}
                   </h2>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Protecting {cleanCityName} homes requires more than just shingles. As a Dual-Licensed Specialist,
-                    I ensure every roof meets the specific High-Velocity Hurricane Zone (HVHZ) requirements for {cleanCityName}
-                    and {countyName || 'South Florida'} building codes.
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                    Protecting {cleanCityName} homes requires more than just shingles and nails. As a Dual-Licensed Roofing Specialist,
+                    I ensure every roof installation meets the specific High-Velocity Hurricane Zone (HVHZ) requirements mandated for {cleanCityName}
+                    and {countyName || 'South Florida'} building codes. These standards aren't optional—they're life-saving requirements designed to protect
+                    your property during Category 3, 4, and 5 hurricanes.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    In {cleanCityName}, HVHZ compliance means every component of your roofing system must be engineered to withstand sustained winds of
+                    120+ mph and wind gusts exceeding 160 mph. This includes enhanced fastening schedules, upgraded underlayment systems, reinforced
+                    flashing details, and impact-resistant materials. Standard roofing practices from other states simply won't pass {countyName || 'South Florida'}
+                    building inspections—and more importantly, they won't protect your family when storms strike.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed">
+                    My CCC1331464 Roofing License combined with CGC1526236 General Contractor credentials means I understand both the roofing specifications
+                    <span className="italic"> and </span>the underlying structural requirements. I don't just install code-compliant roofs—I ensure the entire
+                    roofing assembly integrates properly with your home's structural system, from roof-to-wall connections to truss bracing to proper ventilation
+                    that prevents pressure differentials during hurricanes.
                   </p>
                 </div>
               </div>
@@ -398,13 +414,28 @@ export default function ServiceAreaPage() {
                     The "Dual-Licensed" Advantage in {cleanCityName}
                   </h2>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                    Most {cleanCityName} roofers only hold a CCC license. My <span className="text-red-600 font-semibold">CGC (General Contractor) license</span> allows
-                    me to oversee the structural integrity of your roof deck and trusses, providing a level of storm-readiness
-                    that standard contractors miss.
+                    Most {cleanCityName} roofers only hold a CCC (Certified Roofing Contractor) license, which limits their scope to roofing materials
+                    and surface installations. My <span className="text-red-600 font-semibold">CGC1526236 General Contractor license</span> allows
+                    me to evaluate and oversee the complete structural integrity of your roof system—including the roof deck, truss connections,
+                    load-bearing walls, and structural tie-downs that anchor your roof to your home's foundation.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    This dual certification means I can identify and address structural deficiencies before they compromise your roof's
+                    performance during hurricanes and severe weather events. When I inspect a roof in {cleanCityName}, I'm not just looking at shingles
+                    and flashings—I'm evaluating whether your roof deck has adequate fastening, whether your trusses show signs of stress or damage,
+                    whether your soffit and fascia systems are properly secured, and whether your attic ventilation is designed to prevent pressure buildup
+                    that can literally rip a roof off during a hurricane.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed mb-4">
+                    Standard CCC-only contractors in {countyName || 'South Florida'} are legally prohibited from making structural modifications or even
+                    diagnosing structural issues. If they discover rotted roof decking, compromised trusses, or inadequate hurricane strapping, they must
+                    stop work and refer you to a separate general contractor—adding delays, coordination headaches, and additional costs to your project.
                   </p>
                   <p className="text-gray-400 leading-relaxed">
-                    This dual certification means I can identify and address structural issues before they compromise your roof's
-                    performance during hurricanes and severe weather events common in {countyName || 'South Florida'}.
+                    With my dual licensing, I handle everything in-house. I can replace damaged roof decking, reinforce truss connections, upgrade
+                    hurricane straps to current code, and ensure every structural element meets or exceeds {countyName || 'South Florida'} building
+                    department requirements—all while maintaining full responsibility for your roofing project from start to finish. This integrated
+                    approach delivers superior storm protection and eliminates the finger-pointing that happens when multiple contractors are involved.
                   </p>
                 </div>
               </div>

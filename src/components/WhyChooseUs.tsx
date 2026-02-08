@@ -3,7 +3,7 @@ import { Award, Users, FileCheck, DollarSign } from 'lucide-react';
 const features = [
   {
     icon: Award,
-    title: 'Licensed Roofing Specialists',
+    title: 'Dual-Licensed Roofing Specialist',
     description: 'Dual-Licensed Roofing Contractor (CCC1331464) with General Contractor Certification (CGC1526236). We handle your entire roofing project directly — one point of contact, streamlined permitting, and zero subcontractor handoffs.',
   },
   {

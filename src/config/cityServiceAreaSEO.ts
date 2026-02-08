@@ -116,6 +116,24 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
     title: 'Plantation Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
     description: 'Expert roofing services in Plantation. Dual-Licensed Roofing Specialist with superior structural credentials for storm-resistant installations. Call (754) 227-5605.'
   },
+
+  // Priority City: Davie
+  'davie': {
+    title: 'Davie Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Professional roofing contractor in Davie, FL. Dual-Licensed Roofing Specialist with CCC1331464 & CGC1526236 providing HVHZ-compliant roofing solutions. Call (754) 227-5605.'
+  },
+
+  // Priority City: Hollywood
+  'hollywood': {
+    title: 'Hollywood Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Expert roofing services in Hollywood, FL. Dual-Licensed specialist ensuring structural integrity and HVHZ compliance. Storm-ready installations. Call (754) 227-5605.'
+  },
+
+  // Priority City: Pompano Beach
+  'pompano-beach': {
+    title: 'Pompano Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
+    description: 'Trusted roofing contractor in Pompano Beach. Dual-Licensed Roofing Specialist providing HVHZ-compliant roof repairs and replacements. Call (754) 227-5605.'
+  },
 };
 
 /**
