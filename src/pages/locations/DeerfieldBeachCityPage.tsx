@@ -15,10 +15,10 @@ export default function DeerfieldBeachCityPage() {
   return (
     <>
       <Helmet>
-        <title>Top-Rated Roofing & General Contractor Deerfield Beach | All Phase Construction USA</title>
+        <title>Dual-Licensed Roofing Specialist in Deerfield Beach | All Phase Construction USA</title>
         <meta
           name="description"
-          content="Looking for a dual-licensed roofer in Deerfield Beach? We specialize in HVHZ-compliant roof repairs and replacements. Get a free estimate today!"
+          content="The expert in HVHZ-compliant roofing for Deerfield Beach. Dual-licensed roofing specialist providing superior roof repairs and full replacements. Call (754) 227-5605."
         />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
       </Helmet>
@@ -34,8 +34,8 @@ export default function DeerfieldBeachCityPage() {
                 "@type": "WebPage",
                 "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/#webpage",
                 "url": "https://allphaseconstructionfl.com/locations/deerfield-beach/",
-                "name": "Deerfield Beach Roofing Contractor | All Phase Construction USA",
-                "description": "Explore our comprehensive roofing services based out of Deerfield Beach, serving surrounding communities with consistent standards, supervision, and code-compliant workmanship.",
+                "name": "Dual-Licensed Roofing Specialist | Deerfield Beach | All Phase Construction USA",
+                "description": "The expert in HVHZ-compliant roofing solutions for Deerfield Beach. Dual-licensed roofing specialist providing superior roof repairs and full replacements throughout South Florida.",
                 "about": { "@id": "https://allphaseconstructionfl.com/#roofingcontractor" },
                 "primaryImageOfPage": { "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/#image-city-sign" }
               },
@@ -90,7 +90,7 @@ export default function DeerfieldBeachCityPage() {
             </h1>
 
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Explore our comprehensive roofing services based out of Deerfield Beach, serving surrounding communities with consistent standards, supervision, and code-compliant workmanship.
+              The expert in HVHZ-compliant roofing, serving Deerfield Beach and surrounding communities with superior workmanship and professional roofing solutions.
             </p>
           </div>
 
@@ -100,12 +100,15 @@ export default function DeerfieldBeachCityPage() {
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Shield className="w-8 h-8 text-red-600" />
                 <h2 className="text-2xl md:text-3xl font-bold text-white">
-                  Dual-Licensed Roofing & General Contractors
+                  Dual-Licensed Roofing Specialist
                 </h2>
                 <Shield className="w-8 h-8 text-red-600" />
               </div>
               <p className="text-lg md:text-xl text-gray-300 mb-4">
-                Serving the High-Velocity Hurricane Zone (HVHZ)
+                Leveraging General Contracting expertise to provide superior, HVHZ-compliant roofing solutions.
+              </p>
+              <p className="text-base md:text-lg text-gray-400 mb-4">
+                We specialize exclusively in professional roof repairs and full replacements.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base">
                 <div className="flex items-center gap-2 text-gray-300">
@@ -139,14 +142,14 @@ export default function DeerfieldBeachCityPage() {
           {/* Roofing Services in Deerfield Beach */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-              Roofing Services in Deerfield Beach
+              Professional Roofing Services in Deerfield Beach
             </h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                All Phase Construction USA provides complete residential and commercial roofing services from our Deerfield Beach headquarters. Every installation, repair, and inspection is completed by experienced professionals who understand South Florida's unique roofing requirements.
+                All Phase Construction USA is the dual-licensed roofing specialist serving Deerfield Beach with complete residential and commercial roofing solutions. The contractor leverages extensive General Contracting expertise to deliver superior, HVHZ-compliant roof repairs and full replacements that exceed South Florida's stringent building requirements.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                From tile roof installations on waterfront properties to flat roof systems on commercial buildings, our team delivers consistent workmanship across all service areas. We maintain the same supervisors, crews, and quality standards whether we're working in Deerfield Beach or serving nearby communities.
+                From tile roof installations on waterfront properties to flat roof systems on commercial buildings, the expert delivers consistent workmanship across all service areas. Every project is supervised with the same high standards, whether in Deerfield Beach or serving nearby communities throughout Broward and Palm Beach Counties.
               </p>
             </div>
           </div>
@@ -429,10 +432,10 @@ export default function DeerfieldBeachCityPage() {
                   <MapPin className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Local Headquarters
+                  Local Owner-Operator
                 </h3>
                 <p className="text-gray-400">
-                  Based right here in Deerfield Beach at 590 Goolsby Blvd. We're not a franchise or national chain—we're your local roofing experts.
+                  Based in Deerfield Beach at 590 Goolsby Blvd. Not a franchise or national chain—the contractor personally oversees every roofing project.
                 </p>
               </div>
 
@@ -441,10 +444,10 @@ export default function DeerfieldBeachCityPage() {
                   <Shield className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Licensed & Insured
+                  Dual-Licensed Specialist
                 </h3>
                 <p className="text-gray-400">
-                  Fully licensed, bonded, and insured roofing contractor serving all of Broward and Palm Beach Counties with professional excellence.
+                  FL Roofing License CCC1331464 and General Contractor CGC1526236. The dual licensing ensures superior roofing solutions with comprehensive structural expertise.
                 </p>
               </div>
 
@@ -501,10 +504,10 @@ export default function DeerfieldBeachCityPage() {
           {/* Headquarters Location Map */}
           <div className="mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Visit Our Deerfield Beach Headquarters
+              Deerfield Beach Headquarters
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-3xl">
-              Our headquarters is located in Deerfield Beach, Florida. From here, our team coordinates inspections, permitting, and roofing projects throughout Broward and Palm Beach County.
+              The contractor operates from the Deerfield Beach headquarters at 590 Goolsby Blvd. All roofing inspections, permitting, and project coordination for Broward and Palm Beach County are managed directly from this location.
             </p>
 
             {/* Google Maps Embed */}
@@ -570,10 +573,10 @@ export default function DeerfieldBeachCityPage() {
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-700 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Ready to Get Started?
+              Need a Professional Roof Repair or Replacement?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Contact us today for a free inspection and estimate. Our expert team is ready to help with all your roofing needs in Deerfield Beach and surrounding areas.
+              Contact the dual-licensed roofing specialist today for a professional inspection and estimate. The contractor is ready to provide superior HVHZ-compliant roofing solutions in Deerfield Beach and throughout South Florida.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -586,7 +589,7 @@ export default function DeerfieldBeachCityPage() {
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors"
               >
-                Get Free Estimate
+                Get a Roofing Estimate
               </Link>
             </div>
           </div>
