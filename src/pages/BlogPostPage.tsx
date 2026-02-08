@@ -460,7 +460,7 @@ export default function BlogPostPage() {
                 to="/roof-cost-calculator"
                 className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-xl inline-flex items-center justify-center gap-2"
               >
-                Get a Free Estimate
+                Request a Roofing Estimate
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>

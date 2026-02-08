@@ -177,8 +177,8 @@ export default function ServiceAreasHubPage() {
                   Our Service Coverage Area
                 </h2>
                 <p className="text-zinc-400">
-                  Proudly serving Broward & Palm Beach Counties from our Deerfield Beach headquarters at 590 Goolsby Blvd.
-                  Dual-licensed (CGC-1526236 & CCC-1331464) for complete roofing services throughout South Florida.
+                  The dual-licensed roofing specialist serving Broward & Palm Beach Counties from the Deerfield Beach headquarters at 590 Goolsby Blvd.
+                  Leveraging General Contracting expertise (CGC-1526236) and Roofing License (CCC-1331464) to provide superior HVHZ-compliant roofing solutions throughout South Florida.
                 </p>
               </div>
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
@@ -255,10 +255,10 @@ export default function ServiceAreasHubPage() {
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Need Roofing Services in Your Area?
+              Need Professional Roof Repair or Replacement?
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Contact us today for a free inspection and estimate. Our expert team is ready to help with all your roofing needs.
+              Contact the dual-licensed roofing specialist today for a professional inspection and estimate. The contractor provides superior HVHZ-compliant roofing solutions throughout South Florida.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -271,7 +271,7 @@ export default function ServiceAreasHubPage() {
                 to="/contact"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg border border-zinc-700"
               >
-                Get Free Estimate
+                Request a Roofing Estimate
               </Link>
             </div>
           </div>

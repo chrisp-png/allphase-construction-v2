@@ -309,11 +309,10 @@ export default function LocationHubPage() {
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-700 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Need Roofing Services in This Area?
+            Need Professional Roof Repair or Replacement?
           </h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free inspection and estimate. Our expert team
-            is ready to help with all your roofing needs.
+            Contact the dual-licensed roofing specialist today for a professional inspection and estimate. The contractor provides superior HVHZ-compliant roofing solutions throughout South Florida.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -326,7 +325,7 @@ export default function LocationHubPage() {
               to="/contact"
               className="inline-flex items-center justify-center gap-2 bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors"
             >
-              Get Free Estimate
+              Request a Roofing Estimate
             </Link>
           </div>
         </div>
