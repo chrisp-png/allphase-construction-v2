@@ -205,6 +205,7 @@ export default function ServiceAreaPage() {
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
       { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
       { name: 'Deerfield Beach', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach' },
+      { name: 'Service Area', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
       { name: cleanCityName, url: canonicalUrl }
     ])
   ] : [];
@@ -277,6 +278,10 @@ export default function ServiceAreaPage() {
             <ChevronRight className="w-4 h-4" />
             <Link to="/locations/deerfield-beach" className="hover:text-red-500 transition-colors">
               Deerfield Beach
+            </Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+              Service Area
             </Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-gray-300 font-medium">{cleanCityName}</span>

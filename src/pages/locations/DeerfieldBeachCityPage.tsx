@@ -143,7 +143,7 @@ export default function DeerfieldBeachCityPage() {
             </h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                All Phase Construction USA is the dual-licensed roofing specialist serving Deerfield Beach with complete residential and commercial roofing solutions. The contractor leverages extensive General Contracting expertise to deliver superior, HVHZ-compliant roof repairs and full replacements that exceed South Florida's stringent building requirements.
+                All Phase Construction USA is the dual-licensed Roofing Specialist serving Deerfield Beach with complete residential and commercial roofing solutions. The Roofing Specialist leverages extensive General Contracting expertise to deliver superior, HVHZ-compliant roof repairs and full replacements that exceed South Florida's stringent building requirements.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
                 From tile roof installations on waterfront properties to flat roof systems on commercial buildings, the expert delivers consistent workmanship across all service areas. Every project is supervised with the same high standards, whether in Deerfield Beach or serving nearby communities throughout Broward and Palm Beach Counties.
@@ -157,7 +157,7 @@ export default function DeerfieldBeachCityPage() {
               Service Coverage Area
             </h2>
             <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto">
-              The contractor proudly serves Deerfield Beach and surrounding communities across Palm Beach and Broward Counties with professional roofing services.
+              The Roofing Specialist proudly serves Deerfield Beach and surrounding communities across Palm Beach and Broward Counties with professional roofing services.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
@@ -300,10 +300,10 @@ export default function DeerfieldBeachCityPage() {
             </div>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Every roofing project requires proper permitting and inspection by the local building department. The contractor handles all permit applications, coordinates required inspections, and ensures full compliance with Deerfield Beach building codes and Florida Building Code requirements.
+                Every roofing project requires proper permitting and inspection by the local building department. The Roofing Specialist handles all permit applications, coordinates required inspections, and ensures full compliance with Deerfield Beach building codes and Florida Building Code requirements.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Deerfield Beach is located in the High Velocity Hurricane Zone (HVHZ), which mandates enhanced structural requirements for all roofing systems. The contractor's installations meet these stricter standards, including:
+                Deerfield Beach is located in the High Velocity Hurricane Zone (HVHZ), which mandates enhanced structural requirements for all roofing systems. The Roofing Specialist's installations meet these stricter standards, including:
               </p>
               <ul className="text-gray-400 space-y-2 mb-4">
                 <li className="flex items-start gap-2">
@@ -324,7 +324,7 @@ export default function DeerfieldBeachCityPage() {
                 </li>
               </ul>
               <p className="text-gray-400 text-lg leading-relaxed">
-                All work is inspected by Deerfield Beach building officials, and the contractor provides complete permit close-out documentation showing full compliance with local and state building codes.
+                All work is inspected by Deerfield Beach building officials, and the Roofing Specialist provides complete permit close-out documentation showing full compliance with local and state building codes.
               </p>
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function DeerfieldBeachCityPage() {
             </div>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Insurance carriers in South Florida require verifiable proof of proper roofing installation. The contractor provides comprehensive photo documentation throughout every project, including:
+                Insurance carriers in South Florida require verifiable proof of proper roofing installation. The Roofing Specialist provides comprehensive photo documentation throughout every project, including:
               </p>
               <ul className="text-gray-400 space-y-2 mb-4">
                 <li className="flex items-start gap-2">
@@ -367,7 +367,7 @@ export default function DeerfieldBeachCityPage() {
                 This documentation package, combined with your building permit close-out and final inspection approval, creates an insurance-defensible record of proper installation. Many Deerfield Beach homeowners use this documentation to qualify for wind mitigation discounts on their homeowners insurance.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                The contractor's installations are compatible with wind mitigation inspections, which can reduce your insurance premiums by documenting specific hurricane-resistant features of your roof system.
+                The Roofing Specialist's installations are compatible with wind mitigation inspections, which can reduce your insurance premiums by documenting specific hurricane-resistant features of your roof system.
               </p>
             </div>
           </div>
@@ -432,7 +432,7 @@ export default function DeerfieldBeachCityPage() {
                   Local Owner-Operator
                 </h3>
                 <p className="text-gray-400">
-                  Based in Deerfield Beach at 590 Goolsby Blvd. Not a franchise or national chain—the contractor personally oversees every roofing project.
+                  Based in Deerfield Beach at 590 Goolsby Blvd. Not a franchise or national chain—the Roofing Specialist personally oversees every roofing project.
                 </p>
               </div>
 
@@ -504,7 +504,7 @@ export default function DeerfieldBeachCityPage() {
               Deerfield Beach Headquarters
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-3xl">
-              The contractor operates from the Deerfield Beach headquarters at 590 Goolsby Blvd. All roofing inspections, permitting, and project coordination for Broward and Palm Beach County are managed directly from this location.
+              The Roofing Specialist operates from the Deerfield Beach headquarters at 590 Goolsby Blvd. All roofing inspections, permitting, and project coordination for Broward and Palm Beach County are managed directly from this location.
             </p>
 
             {/* Google Maps Embed */}
@@ -573,7 +573,7 @@ export default function DeerfieldBeachCityPage() {
               Need a Professional Roof Repair or Replacement?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Contact the dual-licensed roofing specialist today for a professional inspection and estimate. The contractor is ready to provide superior HVHZ-compliant roofing solutions in Deerfield Beach and throughout South Florida.
+              Contact the dual-licensed roofing specialist today for a professional inspection and estimate. The Roofing Specialist is ready to provide superior HVHZ-compliant roofing solutions in Deerfield Beach and throughout South Florida.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
