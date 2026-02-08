@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight } from 'lucide-react';
+import Contact from '../../components/Contact';
 
 export default function DeerfieldBeachCityPage() {
   // Force-inject title immediately to prevent blank page
@@ -536,10 +537,15 @@ export default function DeerfieldBeachCityPage() {
                     <MapPin className="w-5 h-5 text-red-600" />
                     <h4 className="font-semibold text-white">Address</h4>
                   </div>
-                  <p className="text-gray-400">
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=590+Goolsby+Blvd+Deerfield+Beach+FL+33442"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-red-600 transition-colors"
+                  >
                     590 Goolsby Blvd<br />
                     Deerfield Beach, FL 33442
-                  </p>
+                  </a>
                 </div>
 
                 <div>
@@ -572,6 +578,29 @@ export default function DeerfieldBeachCityPage() {
               </div>
             </div>
           </div>
+
+          {/* Explore Service Areas Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
+              Explore All Service Areas
+            </h2>
+            <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto text-lg">
+              From our Deerfield Beach headquarters, we provide professional roofing services across 50+ cities in Broward and Palm Beach Counties. View detailed information about each service area, including local building codes, permit requirements, and project portfolios.
+            </p>
+            <div className="text-center">
+              <Link
+                to="/locations/deerfield-beach/service-area"
+                className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors shadow-lg"
+              >
+                <MapPin className="w-5 h-5" />
+                View All Service Areas
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Contact Form Section */}
+          <Contact />
 
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-700 text-center">
