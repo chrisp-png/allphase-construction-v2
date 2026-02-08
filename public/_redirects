@@ -1,3 +1,6 @@
+# Singular to plural location redirect (catch Googlebot and users)
+/location/*                                                  /locations/:splat                                             301!
+
 # 301 Redirects: FORCED redirects to consolidate roof-repair city pages
 /roofing-services/roof-repair/boca-raton                    /locations/deerfield-beach/service-area/boca-raton                301!
 /roofing-services/roof-repair/boca-raton-county             /locations/deerfield-beach/service-area/boca-raton                301!

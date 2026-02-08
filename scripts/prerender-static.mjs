@@ -365,6 +365,53 @@ async function prerenderStaticPages() {
   console.log(`✓ Generated: ${hubRoutePath}/index.html`);
   console.log(`  Title: ${hubMetadata.title}`);
 
+  // PASS 1.6: Generate Deerfield Beach HQ page (PRIMARY GBP LANDING PAGE)
+  console.log('\n🏠 Pass 1.6: Generating Deerfield Beach HQ page (GBP landing)...\n');
+  const hqUrlPath = '/locations/deerfield-beach';
+  const hqMetadata = getSEOMetadata(hqUrlPath);
+
+  const hqRoutePath = hqUrlPath.replace(/^\//, '');
+  const hqTargetDir = path.join(publicDir, hqRoutePath);
+  const hqTargetFile = path.join(hqTargetDir, 'index.html');
+
+  // Create directory structure
+  fs.mkdirSync(hqTargetDir, { recursive: true });
+
+  // Generate HQ page content - hard-coded to NEVER be blank
+  const hqContent = `
+<section id="seo-static-content">
+  <h1>Dual-Licensed Roofing Specialist in Deerfield Beach, FL</h1>
+  <p>Your expert in HVHZ-compliant roofing, serving Deerfield Beach and surrounding communities with superior workmanship and professional roofing solutions.</p>
+  <h2>Dual-Licensed Roofing Specialist</h2>
+  <p>As a dual-licensed Roofing Specialist and General Contractor, All Phase Construction USA brings a higher standard of structural integrity to every roofing project. We specialize exclusively in residential and commercial roofing solutions—not general home construction.</p>
+  <ul>
+    <li>FL Roofing License CCC1331464</li>
+    <li>FL General Contractor CGC1526236</li>
+    <li>HVHZ Certified</li>
+    <li>Based at 590 Goolsby Blvd, Deerfield Beach, FL 33442</li>
+  </ul>
+  <h2>Professional Roofing Services in Deerfield Beach</h2>
+  <p>All Phase Construction USA is the dual-licensed Roofing Specialist serving Deerfield Beach with complete residential and commercial roofing solutions. The Roofing Specialist leverages extensive General Contracting expertise to deliver superior, HVHZ-compliant roof repairs and full replacements that exceed South Florida's stringent building requirements.</p>
+  <p><strong>Call (754) 227-5605 for a Professional Inspection and Estimate</strong></p>
+</section>
+`.trim();
+
+  // Inject metadata
+  let hqHtmlWithMeta = injectMetaTags(baseHtml, hqMetadata);
+
+  // Inject body content after React root
+  hqHtmlWithMeta = hqHtmlWithMeta.replace(
+    '<div id="root"></div>',
+    `<div id="root"></div>\n    <div id="seo-static">${hqContent}</div>`
+  );
+
+  // Write file
+  fs.writeFileSync(hqTargetFile, hqHtmlWithMeta, 'utf-8');
+
+  console.log(`✓ Generated: ${hqRoutePath}/index.html`);
+  console.log(`  Title: ${hqMetadata.title}`);
+  console.log(`  🚨 PRIMARY GBP LANDING PAGE - NEVER BLANK!`);
+
   // PASS 2: Generate static HTML for roof repair city pages
   console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
   cities.forEach(city => {

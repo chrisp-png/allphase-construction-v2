@@ -7,11 +7,17 @@
  * This page focuses on Deerfield Beach itself, not the service areas directory.
  */
 
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight } from 'lucide-react';
 
 export default function DeerfieldBeachCityPage() {
+  // Force-inject title immediately to prevent blank page
+  useEffect(() => {
+    document.title = 'Deerfield Beach Roofing Hub | All Phase Construction USA';
+  }, []);
+
   return (
     <>
       <Helmet>
