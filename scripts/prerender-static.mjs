@@ -39,7 +39,7 @@ function getSEOMetadata(urlPath) {
       const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
       return {
         title: `Top 5 Best Roofers in ${cityName}, FL | All Phase Construction USA`,
-        description: `Compare the top 5 roofers in ${cityName}, FL. See why All Phase Construction USA ranks #1 with dual licensing, HVHZ certification, and proven results.`,
+        description: `Comparing the top 5 roofers in ${cityName}? Discover why local homeowners trust a Dual-Licensed (CCC/CGC) specialist for HVHZ-compliant roofing.`,
         canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/top-5-roofer`
       };
     }
@@ -411,6 +411,69 @@ async function prerenderStaticPages() {
   console.log(`✓ Generated: ${hqRoutePath}/index.html`);
   console.log(`  Title: ${hqMetadata.title}`);
   console.log(`  🚨 PRIMARY GBP LANDING PAGE - NEVER BLANK!`);
+
+  // PASS 1.7: Generate Top 5 Roofer pages
+  console.log('\n⭐ Pass 1.7: Generating Top 5 Roofer pages...\n');
+  const topRooferCities = [
+    'boca-raton',
+    'boynton-beach',
+    'coconut-creek',
+    'coral-springs',
+    'fort-lauderdale',
+    'west-palm-beach',
+    'broward-county',
+    'palm-beach-county'
+  ];
+
+  topRooferCities.forEach(citySlug => {
+    const urlPath = `/locations/deerfield-beach/service-area/${citySlug}/top-5-roofer`;
+    const metadata = getSEOMetadata(urlPath);
+
+    const routePath = urlPath.replace(/^\//, '');
+    const targetDir = path.join(publicDir, routePath);
+    const targetFile = path.join(targetDir, 'index.html');
+
+    // Create directory structure
+    fs.mkdirSync(targetDir, { recursive: true });
+
+    const cityName = seoTitlesConfig.cityNames[citySlug] || citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+    // Generate Top 5 Roofer content with singular "I" and "Specialist" branding
+    const topRooferContent = `
+<section id="seo-static-content">
+  <h1>Top 5 Criteria for Choosing the Best Roofer in ${cityName}</h1>
+  <p><strong>When looking for the top roofing contractors in ${cityName}, licensing is the most critical factor.</strong> As a Dual-Licensed Roofing and General Contractor, I provide structural oversight that standard roofers cannot match.</p>
+
+  <h2>Key Factors I Evaluate</h2>
+  <ol>
+    <li><strong>Dual-Licensing (CCC & CGC)</strong> – As a Dual-Licensed Roofing Specialist (CCC-1331464) and General Contractor (CGC-1526236), I bring structural engineering oversight to every roofing project—something standard roofers cannot provide.</li>
+    <li><strong>HVHZ Compliance Experience</strong> – High Velocity Hurricane Zone certification isn't optional in ${cityName}—it's critical. I specialize in code-compliant installations that pass the strictest wind ratings and building department inspections.</li>
+    <li><strong>Owner-Operator Accountability</strong> – When you hire me, you're working directly with the Specialist—not a sales team or subcontractors. I personally oversee every project from permitting to final inspection.</li>
+    <li><strong>Local Deerfield Beach Headquarters</strong> – Based at 590 Goolsby Blvd in Deerfield Beach, I serve ${cityName} with consistent, local supervision. No out-of-state crews, no franchises—just accountable, local expertise.</li>
+    <li><strong>Hurricane-Ready Material Selection</strong> – I exclusively specify roofing materials engineered for South Florida's extreme weather—high-wind-rated tiles, impact-resistant shingles, and corrosion-resistant metal systems that exceed manufacturer warranties.</li>
+  </ol>
+
+  <h2>Don't Settle for a Basic Roofer</h2>
+  <p><strong>Get a specialized roofing estimate from a Dual-Licensed expert</strong> who brings both roofing and structural expertise to your ${cityName} project.</p>
+  <p><strong>Call (754) 227-5605</strong> for a professional inspection and estimate.</p>
+</section>
+`.trim();
+
+    // Inject metadata
+    let htmlWithMeta = injectMetaTags(baseHtml, metadata);
+
+    // Inject body content after React root
+    htmlWithMeta = htmlWithMeta.replace(
+      '<div id="root"></div>',
+      `<div id="root"></div>\n    <div id="seo-static">${topRooferContent}</div>`
+    );
+
+    // Write file
+    fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
+
+    console.log(`✓ Generated: ${routePath}/index.html`);
+    console.log(`  Title: ${metadata.title}`);
+  });
 
   // PASS 2: Generate static HTML for roof repair city pages
   console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
