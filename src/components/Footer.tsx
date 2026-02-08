@@ -28,6 +28,34 @@ export default function Footer() {
       },
       areaServed: [
         {
+          '@type': 'City',
+          name: 'Deerfield Beach',
+          containedInPlace: {
+            '@type': 'State',
+            name: 'Florida',
+            addressCountry: 'US'
+          }
+        },
+        {
+          '@type': 'City',
+          name: 'Parkland',
+          containedInPlace: {
+            '@type': 'State',
+            name: 'Florida',
+            addressCountry: 'US'
+          }
+        },
+        {
+          '@type': 'GeoCircle',
+          geoMidpoint: {
+            '@type': 'GeoCoordinates',
+            latitude: '26.3186',
+            longitude: '-80.1147'
+          },
+          geoRadius: '25 miles',
+          description: 'Serving Deerfield Beach, Parkland, and surrounding HVHZ areas including Boca Raton, Pompano Beach, Coral Springs, Delray Beach, and Fort Lauderdale'
+        },
+        {
           '@type': 'AdministrativeArea',
           name: 'Palm Beach County, Florida',
         },
@@ -35,6 +63,27 @@ export default function Footer() {
           '@type': 'AdministrativeArea',
           name: 'Broward County, Florida',
         },
+      ],
+      hasCredential: [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'License',
+          name: 'Florida State Certified Roofing Contractor - CCC1331464'
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'License',
+          name: 'Florida State Certified General Contractor - CGC1526236'
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'Certification',
+          name: 'HVHZ (High Velocity Hurricane Zone) Certified',
+          recognizedBy: {
+            '@type': 'Organization',
+            name: 'Florida Building Commission'
+          }
+        }
       ],
       description: 'All Phase Construction USA is a licensed Florida roofing contractor specializing exclusively in roof inspections, roof repairs, and full roof replacements for residential and commercial properties.',
       sameAs: [
@@ -261,6 +310,16 @@ export default function Footer() {
               <li>
                 <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">
                   Deerfield Beach
+                </Link>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/parkland/" className="hover:text-red-600 transition-colors">
+                  Parkland
+                </Link>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/lauderhill/" className="hover:text-red-600 transition-colors">
+                  Lauderhill
                 </Link>
               </li>
               <li>

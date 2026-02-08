@@ -118,16 +118,16 @@ export function generateOrganizationSchema(): object {
     'priceRange': '$$$$',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '1280 SW 36th Ave Unit 106',
-      'addressLocality': 'Pompano Beach',
+      'streetAddress': '590 Goolsby Blvd',
+      'addressLocality': 'Deerfield Beach',
       'addressRegion': 'FL',
-      'postalCode': '33069',
+      'postalCode': '33442',
       'addressCountry': 'US'
     },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': '26.2370',
-      'longitude': '-80.1248'
+      'latitude': '26.3186',
+      'longitude': '-80.1147'
     },
     'areaServed': [
       {

@@ -71,10 +71,10 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
     // Main business address
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '1280 SW 36th Ave Unit 106',
-      addressLocality: 'Pompano Beach',
+      streetAddress: '590 Goolsby Blvd',
+      addressLocality: 'Deerfield Beach',
       addressRegion: 'FL',
-      postalCode: '33069',
+      postalCode: '33442',
       addressCountry: 'US'
     },
 

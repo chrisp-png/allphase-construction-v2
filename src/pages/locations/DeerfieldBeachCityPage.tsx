@@ -8,11 +8,21 @@
  */
 
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle } from 'lucide-react';
 
 export default function DeerfieldBeachCityPage() {
   return (
     <>
+      <Helmet>
+        <title>Expert Roofing & Roof Repair Deerfield Beach, FL | All Phase Construction</title>
+        <meta
+          name="description"
+          content="Looking for a dual-licensed roofer in Deerfield Beach? We specialize in HVHZ-compliant roof repairs and replacements. Get a free estimate today!"
+        />
+        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
+      </Helmet>
+
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
