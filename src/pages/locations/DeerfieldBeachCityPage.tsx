@@ -9,13 +9,13 @@
 
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight } from 'lucide-react';
 
 export default function DeerfieldBeachCityPage() {
   return (
     <>
       <Helmet>
-        <title>Expert Roofing & Roof Repair Deerfield Beach, FL | All Phase Construction</title>
+        <title>Top-Rated Roofing & General Contractor Deerfield Beach | All Phase Construction USA</title>
         <meta
           name="description"
           content="Looking for a dual-licensed roofer in Deerfield Beach? We specialize in HVHZ-compliant roof repairs and replacements. Get a free estimate today!"
@@ -89,16 +89,39 @@ export default function DeerfieldBeachCityPage() {
               Deerfield Beach
             </h1>
 
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Explore our comprehensive roofing services based out of Deerfield Beach, serving surrounding communities with consistent standards, supervision, and code-compliant workmanship.
             </p>
+          </div>
 
-            <Link
-              to="/locations/deerfield-beach/service-area"
-              className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              View Our Service Areas →
-            </Link>
+          {/* HVHZ Dual-Licensed Banner */}
+          <div className="mb-16">
+            <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 border-2 border-red-600 rounded-2xl p-8 md:p-12 text-center">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Shield className="w-8 h-8 text-red-600" />
+                <h2 className="text-2xl md:text-3xl font-bold text-white">
+                  Dual-Licensed Roofing & General Contractors
+                </h2>
+                <Shield className="w-8 h-8 text-red-600" />
+              </div>
+              <p className="text-lg md:text-xl text-gray-300 mb-4">
+                Serving the High-Velocity Hurricane Zone (HVHZ)
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base">
+                <div className="flex items-center gap-2 text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-red-600" />
+                  <span>FL Roofing License CCC1331464</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-red-600" />
+                  <span>FL General Contractor CGC1526236</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-red-600" />
+                  <span>HVHZ Certified</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* City Sign Image */}
@@ -125,6 +148,141 @@ export default function DeerfieldBeachCityPage() {
               <p className="text-gray-400 text-lg leading-relaxed">
                 From tile roof installations on waterfront properties to flat roof systems on commercial buildings, our team delivers consistent workmanship across all service areas. We maintain the same supervisors, crews, and quality standards whether we're working in Deerfield Beach or serving nearby communities.
               </p>
+            </div>
+          </div>
+
+          {/* Service Areas Grid */}
+          <div className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
+              Our Service Areas
+            </h2>
+            <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto">
+              We proudly serve Deerfield Beach and surrounding communities across Palm Beach and Broward Counties with professional roofing services.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+              {/* Palm Beach County Cities */}
+              <Link
+                to="/locations/deerfield-beach/service-area/boca-raton"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Boca Raton</h3>
+                <p className="text-gray-400 text-sm">Palm Beach County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/boynton-beach"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Boynton Beach</h3>
+                <p className="text-gray-400 text-sm">Palm Beach County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/delray-beach"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Delray Beach</h3>
+                <p className="text-gray-400 text-sm">Palm Beach County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/west-palm-beach"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">West Palm Beach</h3>
+                <p className="text-gray-400 text-sm">Palm Beach County</p>
+              </Link>
+
+              {/* Broward County Cities */}
+              <Link
+                to="/locations/deerfield-beach/service-area/coconut-creek"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Coconut Creek</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/coral-springs"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Coral Springs</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/fort-lauderdale"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Fort Lauderdale</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/parkland"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Parkland</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/pompano-beach"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Pompano Beach</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/plantation"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Plantation</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/weston"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Weston</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+
+              <Link
+                to="/locations/deerfield-beach/service-area/davie"
+                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
+              >
+                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
+                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Davie</h3>
+                <p className="text-gray-400 text-sm">Broward County</p>
+              </Link>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-400 mb-4">
+                Serving 50+ cities across Palm Beach and Broward Counties
+              </p>
+              <Link
+                to="/locations"
+                className="inline-flex items-center gap-2 text-red-600 hover:text-red-500 font-semibold transition-colors"
+              >
+                View All Service Areas
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 
