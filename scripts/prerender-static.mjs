@@ -280,14 +280,56 @@ async function prerenderStaticPages() {
   const baseHtml = fs.readFileSync(indexPath, 'utf-8');
   console.log('✓ Read base index.html from project root');
 
-  // PASS 0: Generate homepage with correct title
-  console.log('\n🏠 Pass 0: Generating homepage with SEO metadata...\n');
+  // PASS 0: Generate homepage with correct title and content
+  console.log('\n🏠 Pass 0: Generating homepage with SEO metadata and content...\n');
   const homepageMetadata = getSEOMetadata('/');
-  const homepageHtml = injectMetaTags(baseHtml, homepageMetadata);
+
+  // Generate comprehensive homepage content with high word count
+  const homepageContent = `
+<section id="seo-static-content">
+  <h1>All Phase Construction USA | Dual-Licensed Roofing Specialist</h1>
+  <p><strong>Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.</strong></p>
+
+  <h2>Our Edge</h2>
+  <p>What sets us apart from standard roofing contractors:</p>
+
+  <h3>Dual-Licensed (CCC & CGC)</h3>
+  <p>We bring structural engineering oversight to every roof, ensuring your home is protected from the ground up. Our dual licensing as both a State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) means comprehensive expertise beyond what standard roofers can provide. This unique combination allows us to evaluate the complete structural integrity of your roofing system, from the foundation to the final shingle.</p>
+
+  <h3>HVHZ Certified</h3>
+  <p>Specializing in High-Velocity Hurricane Zone compliance to meet the strictest Florida building codes. Every installation meets or exceeds wind rating requirements for maximum protection against South Florida's severe weather conditions. Our HVHZ certification ensures your roof is engineered to withstand hurricane-force winds, providing peace of mind during storm season.</p>
+
+  <h3>Owner-Operator Lead</h3>
+  <p>Every project is managed directly by the contractor, providing a level of accountability and precision standard roofers can't match. No sales teams—just direct access to expertise. When you work with All Phase Construction USA, you're working with a true specialist who personally oversees every aspect of your roofing project from initial inspection through final installation and beyond.</p>
+
+  <h2>Professional Roofing Services</h2>
+  <p>All Phase Construction USA provides comprehensive roofing services for residential and commercial properties throughout South Florida. Our services include complete roof replacements, emergency roof repairs, professional roof inspections, metal roofing installations, tile roofing systems, shingle roof replacements, flat roofing solutions, and commercial roofing services. We specialize in all major roofing materials including concrete tile, clay tile, asphalt shingles, metal roofing, and TPO flat roofing systems.</p>
+
+  <h2>Service Area Overview</h2>
+  <p>From our central hub in <a href="/locations/deerfield-beach">Deerfield Beach</a>, we provide professional roofing repairs and full replacements across South Florida, including Parkland, Boca Raton, Coconut Creek, Coral Springs, Fort Lauderdale, Pompano Beach, West Palm Beach, Delray Beach, Boynton Beach, and surrounding cities throughout Broward County and Palm Beach County. Our strategic location in Deerfield Beach allows us to efficiently serve over 60 communities across Southeast Florida with prompt response times and consistent, high-quality service.</p>
+
+  <h2>Why Choose All Phase Construction USA</h2>
+  <p>With over 22 years of experience serving South Florida homeowners and businesses, we've completed more than 2,500 successful roofing installations and earned hundreds of 5-star reviews. Our commitment to quality workmanship, transparent pricing, and customer satisfaction has made us one of the most trusted roofing contractors in Broward and Palm Beach Counties. Every project is backed by comprehensive warranties on both materials and workmanship, giving you complete confidence in your roofing investment.</p>
+
+  <p><strong>Licensed and Insured Roofing Contractor:</strong> CCC-1331464 (State Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor). Fully insured with comprehensive liability coverage for your protection.</p>
+
+  <p><strong>Contact us today at (754) 227-5605 for a free roofing inspection and estimate.</strong></p>
+</section>
+`.trim();
+
+  let homepageHtml = injectMetaTags(baseHtml, homepageMetadata);
+
+  // Inject homepage content after React root
+  homepageHtml = homepageHtml.replace(
+    '<div id="root"></div>',
+    `<div id="root"></div>\n    <div id="seo-static">${homepageContent}</div>`
+  );
+
   const homepageFile = path.join(publicDir, 'index.html');
   fs.writeFileSync(homepageFile, homepageHtml, 'utf-8');
   console.log(`✓ Generated: public/index.html`);
-  console.log(`  Title: ${homepageMetadata.title}\n`);
+  console.log(`  Title: ${homepageMetadata.title}`);
+  console.log(`  Word Count: ~500+ words of static content\n`);
 
   // PASS 1: Generate static HTML for city routes
   console.log('\n📍 Pass 1: Generating city pages...\n');

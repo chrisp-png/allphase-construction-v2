@@ -127,12 +127,16 @@ export default function HeroRoofing() {
       <div className="hero-content-wrapper relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ overflow: 'visible', boxSizing: 'border-box', pointerEvents: 'auto' }}>
         <div className="hero-grid grid lg:grid-cols-2 gap-8 lg:items-start" style={{ overflow: 'visible', pointerEvents: 'auto' }}>
           <div className="hero-content-left" style={{ width: '100%', maxWidth: '100%', boxSizing: 'border-box', overflow: 'visible', pointerEvents: 'auto' }}>
-            <h1 className="hero-headline text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-              Broward & Palm Beach County's Trusted Roofing Company
+            <h1 className="hero-headline text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight">
+              All Phase Construction USA | Dual-Licensed Roofing Specialist
             </h1>
 
+            <p className="text-xl sm:text-2xl text-[#C5A572] mb-4 font-semibold leading-snug">
+              Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.
+            </p>
+
             <p className="text-base sm:text-lg text-gray-300 mb-4">
-              Expert roof replacement, roof repair, and emergency roofing services for residential and commercial properties throughout Broward County and Palm Beach County, Florida.
+              Professional roof replacement, roof repair, and emergency roofing services for residential and commercial properties throughout Broward County and Palm Beach County, Florida.
             </p>
 
             <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">

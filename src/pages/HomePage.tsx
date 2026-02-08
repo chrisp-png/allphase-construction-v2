@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import HeroRoofing from '../components/HeroRoofing';
+import OurEdge from '../components/OurEdge';
 import TrustBadges from '../components/TrustBadges';
 import LocalRootedness from '../components/LocalRootedness';
 import Services from '../components/Services';
@@ -9,6 +10,7 @@ import Testimonials from '../components/Testimonials';
 import HappyCustomers from '../components/HappyCustomers';
 import CaseStudy from '../components/CaseStudy';
 import ServiceAreas from '../components/ServiceAreas';
+import ServiceAreaOverview from '../components/ServiceAreaOverview';
 import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
@@ -193,11 +195,11 @@ export default function HomePage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Tile, metal, shingle, flat. Call (754) 227-5605');
+      metaDescription.setAttribute('content', 'All Phase Construction USA is your Dual-Licensed Roofing Specialist in Deerfield Beach. Expert HVHZ-compliant roof repairs and replacements for Broward & Palm Beach Counties. (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Tile, metal, shingle, flat. Call (754) 227-5605';
+      meta.content = 'All Phase Construction USA is your Dual-Licensed Roofing Specialist in Deerfield Beach. Expert HVHZ-compliant roof repairs and replacements for Broward & Palm Beach Counties. (754) 227-5605.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -211,6 +213,7 @@ export default function HomePage() {
         </script>
       </Helmet>
       <HeroRoofing />
+      <OurEdge />
       <TrustBadges />
       <LocalRootedness />
       <Services />
@@ -219,6 +222,7 @@ export default function HomePage() {
       <HappyCustomers />
       <CaseStudy />
       <ServiceAreas />
+      <ServiceAreaOverview />
       <MicroFAQ />
       <FAQ />
       <ChamberBadge />
