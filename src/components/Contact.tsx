@@ -95,7 +95,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-visible relative" style={{ zIndex: 9999, height: 'auto', maxHeight: 'none' }}>
+          <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-visible relative" style={{ zIndex: 9999 }}>
             <h3 className="text-2xl font-bold mb-6">Request a Free Quote</h3>
 
             {submitted ? (
@@ -285,7 +285,7 @@ export default function Contact() {
                   style={{
                     touchAction: 'manipulation',
                     height: '64px',
-                    marginBottom: '60px',
+                    marginBottom: 'max(60px, env(safe-area-inset-bottom))',
                     zIndex: 9999,
                     pointerEvents: 'auto'
                   }}
@@ -293,8 +293,6 @@ export default function Contact() {
                   <span className="text-lg">Send Message</span>
                   <Send className="w-5 h-5" />
                 </button>
-
-                <div style={{ height: '200px', width: '100%' }} aria-hidden="true"></div>
               </form>
             )}
           </div>

@@ -42,12 +42,17 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
         style={{ pointerEvents: 'auto' }}
       />
       <div
-        className="fixed inset-0 z-[101] flex items-start justify-center p-4 overflow-y-auto"
-        style={{ pointerEvents: 'none', paddingTop: '120px' }}
+        className="fixed inset-0 z-[101] flex items-center justify-center p-4"
+        style={{ pointerEvents: 'none' }}
       >
         <div
-          className="bg-white rounded-lg shadow-2xl w-full max-w-2xl my-8 relative"
-          style={{ pointerEvents: 'auto' }}
+          className="bg-white rounded-lg shadow-2xl w-full max-w-2xl my-8 relative overflow-y-auto"
+          style={{
+            pointerEvents: 'auto',
+            maxHeight: '90dvh',
+            WebkitOverflowScrolling: 'touch',
+            overscrollBehavior: 'contain'
+          }}
           onClick={(e) => e.stopPropagation()}
         >
           <button
@@ -59,7 +64,7 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
             <X className="w-6 h-6" />
           </button>
 
-          <div className="p-6 sm:p-8">
+          <div className="p-6 sm:p-8" style={{ paddingBottom: 'max(24px, env(safe-area-inset-bottom))' }}>
             <div className="mb-6">
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -90,7 +95,6 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
               action="https://formspree.io/f/mojakkld"
               method="POST"
               className="space-y-4"
-              style={{ scrollMarginTop: '120px' }}
             >
               <input type="hidden" name="source" value="main-website-modal" />
 
@@ -275,8 +279,6 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
                   (754) 227-5605
                 </a>
               </p>
-
-              <div style={{ height: '200px', width: '100%' }} aria-hidden="true"></div>
             </form>
           </div>
         </div>
