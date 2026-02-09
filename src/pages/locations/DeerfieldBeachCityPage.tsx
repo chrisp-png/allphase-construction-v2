@@ -19,6 +19,11 @@ export default function DeerfieldBeachCityPage() {
     document.title = 'Deerfield Beach Roofing Hub | All Phase Construction USA';
   }, []);
 
+  // Self-referencing canonical using current URL
+  const canonicalUrl = typeof window !== 'undefined'
+    ? window.location.href.split('?')[0].split('#')[0]
+    : 'https://allphaseconstructionfl.com/locations/deerfield-beach';
+
   return (
     <>
       <Helmet>
@@ -27,7 +32,7 @@ export default function DeerfieldBeachCityPage() {
           name="description"
           content="Your expert in HVHZ-compliant roofing for Deerfield Beach. As a dual-licensed Roofing Specialist and General Contractor, All Phase Construction USA specializes exclusively in residential and commercial roofing—not general construction. Call (754) 227-5605."
         />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
+        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
       {/* JSON-LD Structured Data */}

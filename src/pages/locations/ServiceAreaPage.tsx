@@ -168,8 +168,10 @@ export default function ServiceAreaPage() {
     }
   ] : [];
 
-  // Generate schemas
-  const canonicalUrl = finalCity ? `https://allphaseconstructionfl.com${finalCity.path}` : '';
+  // Self-referencing canonical using current URL
+  const canonicalUrl = typeof window !== 'undefined'
+    ? window.location.href.split('?')[0].split('#')[0]
+    : (finalCity ? `https://allphaseconstructionfl.com${finalCity.path}` : '');
 
   // Get SEO metadata using scalable template system with overrides
   let pageTitle: string;

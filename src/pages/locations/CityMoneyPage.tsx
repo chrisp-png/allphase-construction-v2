@@ -41,6 +41,11 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
   // Get city coordinates for local search
   const coordinates = getCityCoordinates(city.name);
 
+  // Self-referencing canonical using current URL (strips query params and hash)
+  const canonicalUrl = typeof window !== 'undefined'
+    ? window.location.href.split('?')[0].split('#')[0]
+    : `https://allphaseconstructionfl.com/locations/${city.slug}`;
+
   // LocalBusiness Schema - Critical for "roofer near me" searches and star ratings
   const localBusinessSchema = generateLocalBusinessSchema({
     cityName: city.name,
@@ -61,7 +66,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           name="description"
           content={`Professional roofing services in ${city.name}, Florida. Dual-licensed contractor (CCC-1331464, CGC-1526236) with HVHZ certification. Expert roof replacement, repair, and inspection services.`}
         />
-        <link rel="canonical" href={`https://allphaseconstructionfl.com/locations/${city.slug}`} />
+        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

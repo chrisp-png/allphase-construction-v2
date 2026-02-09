@@ -24,11 +24,16 @@ import { generateLocalBusinessSchema, generateServiceSchema, generateFAQPageSche
 export default function ResidentialRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'Residential Roofing South Florida | All Phase Construction';
   }, []);
 
   const pageTitle = 'Residential Roofing South Florida | All Phase Construction';
   const pageDescription = 'Dual-licensed residential roofing contractor serving Broward & Palm Beach Counties. Building envelope approach extends roof life, lowers energy bills & can reduce insurance premiums. Free inspection.';
-  const canonicalUrl = 'https://allphaseconstructionfl.com/residential-roofing';
+
+  // Self-referencing canonical using current URL
+  const canonicalUrl = typeof window !== 'undefined'
+    ? window.location.href.split('?')[0].split('#')[0]
+    : 'https://allphaseconstructionfl.com/residential-roofing';
 
   const faqs = [
     {
