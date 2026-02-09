@@ -1,20 +1,16 @@
 /**
- * Generate Pure Static HTML Pages for City Routes
+ * Generate Hybrid Prerendered Pages for City Routes
  *
- * This script generates complete, standalone HTML pages for all city routes:
+ * This script generates hybrid HTML pages that:
+ * - Include the full React app shell (same assets as homepage)
+ * - Wrap SEO content in #seo-static for crawlers
+ * - Hide SEO content when React loads (js-ready class)
+ * - Allow React to mount and take over with full header/footer
+ *
+ * Routes:
  * - /locations/:city/
  * - /roof-repair/:city/
  * - /roof-inspection/:city/
- *
- * Each page includes:
- * - Full header with navigation
- * - Complete page content (500-700 words)
- * - Full footer with links
- * - License numbers (CCC-1331464, CGC-1526236)
- * - Proper SEO metadata
- * - Structured data (LocalBusiness schema)
- * - Compiled CSS from Vite build
- * - NO React dependency
  */
 
 import fs from 'fs';
@@ -29,14 +25,10 @@ const distDir = path.resolve(__dirname, '../dist');
 const citiesPath = path.resolve(__dirname, './cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 
-// Read seoTitles for metadata
-const seoTitlesPath = path.resolve(__dirname, './seo-titles.json');
-const seoTitlesConfig = JSON.parse(fs.readFileSync(seoTitlesPath, 'utf-8'));
-
 /**
- * Extract bundled CSS filename from dist/index.html
+ * Extract bundled CSS and JS filenames from dist/index.html
  */
-function getBundledCSSPath() {
+function getBundledAssets() {
   const mainIndexPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(mainIndexPath)) {
     console.error('❌ dist/index.html not found. Run Vite build first.');
@@ -44,170 +36,20 @@ function getBundledCSSPath() {
   }
 
   const content = fs.readFileSync(mainIndexPath, 'utf-8');
-  const cssMatch = content.match(/href="(\/assets\/index-[^"]+\.css)"/);
 
-  if (!cssMatch) {
-    console.error('❌ Could not find bundled CSS in dist/index.html');
+  const cssMatch = content.match(/href="(\/assets\/index-[^"]+\.css)"/);
+  const jsMatch = content.match(/src="(\/assets\/index-[^"]+\.js)"/);
+
+  if (!cssMatch || !jsMatch) {
+    console.error('❌ Could not find bundled assets in dist/index.html');
+    console.error('CSS found:', !!cssMatch, 'JS found:', !!jsMatch);
     process.exit(1);
   }
 
-  return cssMatch[1];
-}
-
-/**
- * Create static HTML header
- */
-function createStaticHeader() {
-  return `<header class="fixed top-0 left-0 right-0 z-50 bg-black shadow-xl">
-    <div class="bg-zinc-900 border-b border-zinc-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between py-2 text-xs">
-          <div class="flex items-center gap-4 md:gap-6">
-            <span class="text-gray-300 font-medium">OPEN 24/7 / 365 DAYS</span>
-            <span class="hidden md:inline text-gray-400">
-              Dual Licensed Certified Roofing Contractor — CGC-1526236 | CCC-1331464
-            </span>
-            <span class="hidden sm:inline md:hidden text-gray-400">
-              Dual Licensed Contractor
-            </span>
-          </div>
-          <div class="flex items-center gap-3 md:gap-4">
-            <a href="https://g.co/kgs/NsFRCBx" target="_blank" rel="noopener noreferrer"
-               class="flex items-center gap-1 text-white hover:text-red-400 transition-colors font-medium text-xs">
-              <span class="hidden sm:inline">4.8 <span class="text-yellow-400">★</span> Google Reviews</span>
-              <span class="sm:hidden">4.8<span class="text-yellow-400">★</span> Reviews</span>
-            </a>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=590+Goolsby+Blvd+Deerfield+Beach+FL+33442"
-               target="_blank" rel="noopener noreferrer"
-               class="flex items-center gap-1 text-white hover:text-red-400 transition-colors font-medium text-xs">
-              <span class="hidden sm:inline">Get Directions</span>
-            </a>
-            <div class="flex items-center gap-2">
-              <span class="text-white font-medium">Call Now:</span>
-              <a href="tel:+17542275605" class="text-white hover:text-red-400 transition-colors font-bold text-sm">
-                (754) 227-5605
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between py-4">
-        <div class="flex items-center">
-          <a href="/" class="flex flex-col">
-            <span class="text-white font-bold text-xl sm:text-2xl leading-tight">
-              All Phase Construction USA
-            </span>
-            <span class="text-red-600 font-semibold text-xs sm:text-sm">
-              Dual Licensed Roofing Contractor
-            </span>
-          </a>
-        </div>
-
-        <nav class="hidden lg:flex items-center gap-8">
-          <a href="/" class="text-white hover:text-red-600 transition-colors font-medium text-base">Home</a>
-          <a href="/residential-roofing" class="text-white hover:text-red-600 transition-colors font-medium text-base">Residential</a>
-          <a href="/commercial-roofing" class="text-white hover:text-red-600 transition-colors font-medium text-base">Commercial</a>
-          <a href="/roof-inspection" class="text-white hover:text-red-600 transition-colors font-medium text-base">Inspection</a>
-          <a href="/roof-repair" class="text-white hover:text-red-600 transition-colors font-medium text-base">Repair</a>
-          <a href="/locations/service-areas/" class="text-white hover:text-red-600 transition-colors font-medium text-base">Service Areas</a>
-          <a href="/contact" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-semibold">
-            Get Free Estimate
-          </a>
-        </nav>
-      </div>
-    </div>
-  </header>`;
-}
-
-/**
- * Create static HTML footer
- */
-function createStaticFooter() {
-  return `<footer class="bg-black border-t border-red-600">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
-        <div>
-          <div class="text-white font-bold text-xl mb-4">All Phase Construction USA</div>
-          <p class="text-gray-400 text-sm mb-2">
-            Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
-          </p>
-          <p class="text-gray-400 text-sm mb-4 font-semibold">
-            CCC-1331464 • CGC-1526236
-          </p>
-          <div class="space-y-2 text-gray-400 text-sm mb-6">
-            <p>590 Goolsby Blvd</p>
-            <p>Deerfield Beach, FL 33442</p>
-            <p>
-              <a href="tel:+17542275605" class="hover:text-red-600 transition-colors">
-                (754) 227-5605
-              </a>
-            </p>
-            <p>
-              <a href="mailto:leads@allphaseusa.com" class="hover:text-red-600 transition-colors">
-                leads@allphaseusa.com
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="text-white font-semibold mb-4">Services</h3>
-          <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="/residential-roofing" class="hover:text-red-600 transition-colors">Residential Roofing</a></li>
-            <li><a href="/commercial-roofing" class="hover:text-red-600 transition-colors">Commercial Roofing</a></li>
-            <li><a href="/tile-roofing" class="hover:text-red-600 transition-colors">Tile Roofing</a></li>
-            <li><a href="/metal-roofing" class="hover:text-red-600 transition-colors">Metal Roofing</a></li>
-            <li><a href="/shingle-roofing" class="hover:text-red-600 transition-colors">Shingle Roofing</a></li>
-            <li><a href="/flat-roofing" class="hover:text-red-600 transition-colors">Flat Roofing</a></li>
-            <li><a href="/roof-inspection" class="hover:text-red-600 transition-colors">Roof Inspection</a></li>
-            <li><a href="/roof-repair" class="hover:text-red-600 transition-colors">Roof Repair</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-white font-semibold mb-4">Company</h3>
-          <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="/" class="hover:text-red-600 transition-colors">Home</a></li>
-            <li><a href="/about" class="hover:text-red-600 transition-colors">About Us</a></li>
-            <li><a href="/projects" class="hover:text-red-600 transition-colors">Our Work</a></li>
-            <li><a href="/blog" class="hover:text-red-600 transition-colors">Blog</a></li>
-            <li><a href="/contact" class="hover:text-red-600 transition-colors">Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-white font-semibold mb-4">Service Areas</h3>
-          <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="/locations/deerfield-beach/" class="hover:text-red-600 transition-colors">Deerfield Beach</a></li>
-            <li><a href="/locations/boca-raton/" class="hover:text-red-600 transition-colors">Boca Raton</a></li>
-            <li><a href="/locations/pompano-beach/" class="hover:text-red-600 transition-colors">Pompano Beach</a></li>
-            <li><a href="/locations/fort-lauderdale/" class="hover:text-red-600 transition-colors">Fort Lauderdale</a></li>
-            <li><a href="/locations/coral-springs/" class="hover:text-red-600 transition-colors">Coral Springs</a></li>
-            <li><a href="/locations/service-areas/" class="hover:text-red-600 transition-colors">View All Areas</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-white font-semibold mb-4">Resources</h3>
-          <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="/roof-cost-calculator" class="hover:text-red-600 transition-colors">Cost Calculator</a></li>
-            <li><a href="/pricing-guide" class="hover:text-red-600 transition-colors">Pricing Guide</a></li>
-            <li><a href="/easy-payments" class="hover:text-red-600 transition-colors">Financing Options</a></li>
-            <li><a href="/privacy" class="hover:text-red-600 transition-colors">Privacy Policy</a></li>
-            <li><a href="/terms" class="hover:text-red-600 transition-colors">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; ${new Date().getFullYear()} All Phase Construction USA. All rights reserved.</p>
-        <p class="mt-2">Licensed & Insured • CCC-1331464 • CGC-1526236 • HVHZ Certified</p>
-      </div>
-    </div>
-  </footer>`;
+  return {
+    css: cssMatch[1],
+    js: jsMatch[1]
+  };
 }
 
 /**
@@ -302,298 +144,188 @@ function getSEOMetadata(urlPath, cityName = null) {
 }
 
 /**
- * Generate content for Service Hub (/locations/:city)
+ * Generate SEO content for Service Hub (/locations/:city)
  */
 function generateServiceHubContent(cityName, citySlug) {
   return `
-    <div class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-      <article class="prose prose-lg prose-invert max-w-none">
-        <h1 class="text-4xl font-bold text-white mb-6">${cityName} Roofing Services | All Phase Construction USA</h1>
+    <h1>${cityName} Roofing Services | All Phase Construction USA</h1>
 
-        <p class="text-xl text-gray-300 mb-8">
-          <strong>Dispatched from our Deerfield Beach Headquarters.</strong> We serve ${cityName} with comprehensive roofing solutions backed by dual licensing: Florida State Certified Roofing Contractor (CCC-1331464) and General Contractor (CGC-1526236).
-        </p>
+    <p>
+      <strong>Dispatched from our Deerfield Beach Headquarters.</strong> We serve ${cityName} with comprehensive roofing solutions backed by dual licensing: Florida State Certified Roofing Contractor (CCC-1331464) and General Contractor (CGC-1526236).
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Our ${cityName} Roofing Services</h2>
+    <h2>Our ${cityName} Roofing Services</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Emergency Roof Repair</h3>
-        <p class="text-gray-300 mb-4">
-          Storm damage? Leak in your ceiling? We provide 24/7 emergency roof repair services throughout ${cityName}. Our rapid-response team can be on-site quickly to assess damage, implement temporary repairs to prevent further water intrusion, and develop a comprehensive repair plan.
-        </p>
-        <p class="text-gray-300 mb-4">
-          <a href="/roof-repair/${citySlug}/" class="text-red-400 hover:text-red-300 underline">Learn more about emergency roof repair in ${cityName} →</a>
-        </p>
+    <h3>Emergency Roof Repair</h3>
+    <p>
+      Storm damage? Leak in your ceiling? We provide 24/7 emergency roof repair services throughout ${cityName}. Our rapid-response team can be on-site quickly to assess damage, implement temporary repairs to prevent further water intrusion, and develop a comprehensive repair plan.
+    </p>
+    <p>
+      <a href="/roof-repair/${citySlug}/">Learn more about emergency roof repair in ${cityName} →</a>
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Professional Roof Inspection</h3>
-        <p class="text-gray-300 mb-4">
-          Our comprehensive 21-point roof inspection service provides ${cityName} property owners with detailed documentation of their roof's condition. Whether you're buying a home, filing an insurance claim, or conducting routine maintenance, our certified inspectors deliver thorough assessments with photo documentation.
-        </p>
-        <p class="text-gray-300 mb-4">
-          <a href="/roof-inspection/${citySlug}/" class="text-red-400 hover:text-red-300 underline">Schedule a roof inspection in ${cityName} →</a>
-        </p>
+    <h3>Professional Roof Inspection</h3>
+    <p>
+      Our comprehensive 21-point roof inspection service provides ${cityName} property owners with detailed documentation of their roof's condition. Whether you're buying a home, filing an insurance claim, or conducting routine maintenance, our certified inspectors deliver thorough assessments with photo documentation.
+    </p>
+    <p>
+      <a href="/roof-inspection/${citySlug}/">Schedule a roof inspection in ${cityName} →</a>
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Complete Roof Replacement</h3>
-        <p class="text-gray-300 mb-4">
-          When repairs are no longer cost-effective, we provide complete roof replacement services in ${cityName}. We work with all major roofing materials including tile, metal, shingle, and flat roofing systems. Our dual licensing means we can handle both the roofing work and any structural modifications needed.
-        </p>
+    <h3>Complete Roof Replacement</h3>
+    <p>
+      When repairs are no longer cost-effective, we provide complete roof replacement services in ${cityName}. We work with all major roofing materials including tile, metal, shingle, and flat roofing systems. Our dual licensing means we can handle both the roofing work and any structural modifications needed.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Why ${cityName} Property Owners Choose Us</h2>
+    <h2>Why ${cityName} Property Owners Choose Us</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Dual-Licensed Contractor</h3>
-        <p class="text-gray-300 mb-4">
-          Unlike roofing-only contractors, our dual licensing (CCC-1331464 roofing + CGC-1526236 general contracting) means we can address structural issues, handle complex repairs, and coordinate all trades if your roofing project requires additional work.
-        </p>
+    <h3>Dual-Licensed Contractor</h3>
+    <p>
+      Unlike roofing-only contractors, our dual licensing (CCC-1331464 roofing + CGC-1526236 general contracting) means we can address structural issues, handle complex repairs, and coordinate all trades if your roofing project requires additional work.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">HVHZ Certified</h3>
-        <p class="text-gray-300 mb-4">
-          ${cityName} falls within Florida's High Velocity Hurricane Zone, requiring specialized installation techniques and materials. Our HVHZ certification ensures your roof meets or exceeds the stringent building codes designed to protect South Florida properties from hurricane-force winds.
-        </p>
+    <h3>HVHZ Certified</h3>
+    <p>
+      ${cityName} falls within Florida's High Velocity Hurricane Zone, requiring specialized installation techniques and materials. Our HVHZ certification ensures your roof meets or exceeds the stringent building codes designed to protect South Florida properties from hurricane-force winds.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Local Expertise</h3>
-        <p class="text-gray-300 mb-4">
-          Operating from our Deerfield Beach headquarters at 590 Goolsby Blvd, we understand the unique roofing challenges ${cityName} property owners face: salt air corrosion, intense UV exposure, heavy rainfall, and hurricane preparedness. Our solutions are tailored to South Florida's climate.
-        </p>
+    <h3>Local Expertise</h3>
+    <p>
+      Operating from our Deerfield Beach headquarters at 590 Goolsby Blvd, we understand the unique roofing challenges ${cityName} property owners face: salt air corrosion, intense UV exposure, heavy rainfall, and hurricane preparedness. Our solutions are tailored to South Florida's climate.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Service Areas Near ${cityName}</h2>
-        <p class="text-gray-300 mb-4">
-          In addition to ${cityName}, we serve the entire Broward and Palm Beach County region including:
-        </p>
-        <ul class="text-gray-300 space-y-2 mb-4">
-          <li><a href="/locations/boca-raton/" class="text-red-400 hover:text-red-300 underline">Boca Raton</a></li>
-          <li><a href="/locations/pompano-beach/" class="text-red-400 hover:text-red-300 underline">Pompano Beach</a></li>
-          <li><a href="/locations/coral-springs/" class="text-red-400 hover:text-red-300 underline">Coral Springs</a></li>
-          <li><a href="/locations/fort-lauderdale/" class="text-red-400 hover:text-red-300 underline">Fort Lauderdale</a></li>
-          <li><a href="/locations/delray-beach/" class="text-red-400 hover:text-red-300 underline">Delray Beach</a></li>
-        </ul>
-
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Get Started Today</h2>
-        <p class="text-gray-300 mb-4">
-          Ready to schedule a free roof inspection or get an estimate for your ${cityName} roofing project? Call us at <a href="tel:+17542275605" class="text-red-400 hover:text-red-300 font-semibold">(754) 227-5605</a> or visit our office at 590 Goolsby Blvd, Deerfield Beach, FL 33442.
-        </p>
-
-        <div class="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mt-8">
-          <h3 class="text-2xl font-semibold text-white mb-4">Contact All Phase Construction USA</h3>
-          <div class="space-y-3 text-gray-300">
-            <p><strong class="text-white">Phone:</strong> <a href="tel:+17542275605" class="text-red-400 hover:text-red-300">(754) 227-5605</a></p>
-            <p><strong class="text-white">Email:</strong> <a href="mailto:leads@allphaseusa.com" class="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
-            <p><strong class="text-white">Address:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-            <p><strong class="text-white">Licenses:</strong> CCC-1331464 (Roofing) • CGC-1526236 (General Contractor)</p>
-            <p><strong class="text-white">Hours:</strong> 24/7 Emergency Service Available</p>
-          </div>
-        </div>
-      </article>
-    </div>`;
+    <h2>Get Started Today</h2>
+    <p>
+      Ready to schedule a free roof inspection or get an estimate for your ${cityName} roofing project? Call us at <a href="tel:+17542275605">(754) 227-5605</a> or visit our office at 590 Goolsby Blvd, Deerfield Beach, FL 33442.
+    </p>`;
 }
 
 /**
- * Generate content for Roof Repair page (/roof-repair/:city)
+ * Generate SEO content for Roof Repair page (/roof-repair/:city)
  */
 function generateRoofRepairContent(cityName, citySlug) {
   return `
-    <div class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-      <article class="prose prose-lg prose-invert max-w-none">
-        <h1 class="text-4xl font-bold text-white mb-6">Roof Repair in ${cityName}, FL | Emergency Service Available</h1>
+    <h1>Roof Repair in ${cityName}, FL | Emergency Service Available</h1>
 
-        <p class="text-xl text-gray-300 mb-8">
-          <strong>24/7 Emergency Response from Our Deerfield Beach HQ.</strong> When you need fast, reliable roof repair in ${cityName}, All Phase Construction USA responds quickly. We're a dual-licensed contractor (CCC-1331464 & CGC-1526236) equipped to handle any roofing emergency.
-        </p>
+    <p>
+      <strong>24/7 Emergency Response from Our Deerfield Beach HQ.</strong> When you need fast, reliable roof repair in ${cityName}, All Phase Construction USA responds quickly. We're a dual-licensed contractor (CCC-1331464 & CGC-1526236) equipped to handle any roofing emergency.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Common ${cityName} Roof Repairs</h2>
+    <h2>Common ${cityName} Roof Repairs</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Storm Damage Repair</h3>
-        <p class="text-gray-300 mb-4">
-          South Florida storms can cause significant roof damage: missing shingles, torn underlayment, punctured membranes, and water intrusion. Our emergency response team assesses storm damage in ${cityName} and implements immediate repairs to prevent further water damage to your property.
-        </p>
+    <h3>Storm Damage Repair</h3>
+    <p>
+      South Florida storms can cause significant roof damage: missing shingles, torn underlayment, punctured membranes, and water intrusion. Our emergency response team assesses storm damage in ${cityName} and implements immediate repairs to prevent further water damage to your property.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Leak Repair</h3>
-        <p class="text-gray-300 mb-4">
-          A leaking roof requires immediate attention to prevent interior damage, mold growth, and structural deterioration. We use thermal imaging and moisture detection equipment to locate leak sources in ${cityName} properties, then implement permanent repairs using quality materials.
-        </p>
+    <h3>Leak Repair</h3>
+    <p>
+      A leaking roof requires immediate attention to prevent interior damage, mold growth, and structural deterioration. We use thermal imaging and moisture detection equipment to locate leak sources in ${cityName} properties, then implement permanent repairs using quality materials.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Flashing Repairs</h3>
-        <p class="text-gray-300 mb-4">
-          Improperly installed or deteriorated flashing around chimneys, vents, skylights, and roof valleys is a common source of leaks. We specialize in flashing repairs and replacement, ensuring watertight seals at all roof penetrations and transitions.
-        </p>
+    <h3>Flashing Repairs</h3>
+    <p>
+      Improperly installed or deteriorated flashing around chimneys, vents, skylights, and roof valleys is a common source of leaks. We specialize in flashing repairs and replacement, ensuring watertight seals at all roof penetrations and transitions.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Our ${cityName} Repair Process</h2>
+    <h2>Our ${cityName} Repair Process</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">1. Rapid Assessment</h3>
-        <p class="text-gray-300 mb-4">
-          We respond quickly to repair calls in ${cityName}. Our certified inspectors conduct a thorough assessment, documenting all damage with photos and providing you with a detailed repair estimate.
-        </p>
+    <h3>1. Rapid Assessment</h3>
+    <p>
+      We respond quickly to repair calls in ${cityName}. Our certified inspectors conduct a thorough assessment, documenting all damage with photos and providing you with a detailed repair estimate.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">2. Emergency Tarping</h3>
-        <p class="text-gray-300 mb-4">
-          If needed, we provide emergency tarping services to protect your ${cityName} property from further water damage while permanent repairs are scheduled. Our secure tarping methods withstand South Florida weather.
-        </p>
+    <h3>2. Emergency Tarping</h3>
+    <p>
+      If needed, we provide emergency tarping services to protect your ${cityName} property from further water damage while permanent repairs are scheduled. Our secure tarping methods withstand South Florida weather.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">3. Permanent Repair</h3>
-        <p class="text-gray-300 mb-4">
-          We use quality materials and proven techniques to execute permanent repairs. Our work comes with warranty coverage and meets all local building codes for ${cityName} roofing work.
-        </p>
+    <h3>3. Permanent Repair</h3>
+    <p>
+      We use quality materials and proven techniques to execute permanent repairs. Our work comes with warranty coverage and meets all local building codes for ${cityName} roofing work.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Why Choose Us for ${cityName} Roof Repair?</h2>
+    <h2>Why Choose Us for ${cityName} Roof Repair?</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Dual-Licensed Contractor</h3>
-        <p class="text-gray-300 mb-4">
-          Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contracting) means we can address structural issues discovered during roof repairs. If we find underlying problems, we have the credentials to fix them properly.
-        </p>
+    <h3>Dual-Licensed Contractor</h3>
+    <p>
+      Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contracting) means we can address structural issues discovered during roof repairs. If we find underlying problems, we have the credentials to fix them properly.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Insurance Claim Support</h3>
-        <p class="text-gray-300 mb-4">
-          We work directly with insurance adjusters on ${cityName} roofing claims. We document damage thoroughly, provide detailed repair estimates, and can assist with the claim process to ensure you receive fair compensation.
-        </p>
+    <h3>Insurance Claim Support</h3>
+    <p>
+      We work directly with insurance adjusters on ${cityName} roofing claims. We document damage thoroughly, provide detailed repair estimates, and can assist with the claim process to ensure you receive fair compensation.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Quality Workmanship</h3>
-        <p class="text-gray-300 mb-4">
-          Every repair we perform in ${cityName} is executed to the same high standards as our new roof installations. We don't cut corners on materials or installation techniques. Your repair comes with warranty coverage for peace of mind.
-        </p>
-
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Related Services in ${cityName}</h2>
-        <ul class="text-gray-300 space-y-2 mb-4">
-          <li><a href="/locations/${citySlug}/" class="text-red-400 hover:text-red-300 underline">Complete ${cityName} roofing services</a></li>
-          <li><a href="/roof-inspection/${citySlug}/" class="text-red-400 hover:text-red-300 underline">${cityName} roof inspections</a></li>
-          <li><a href="/residential-roofing" class="text-red-400 hover:text-red-300 underline">Residential roofing</a></li>
-          <li><a href="/commercial-roofing" class="text-red-400 hover:text-red-300 underline">Commercial roofing</a></li>
-        </ul>
-
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Emergency Roof Repair in ${cityName}</h2>
-        <p class="text-gray-300 mb-4">
-          Don't wait when you have a roofing emergency. Call <a href="tel:+17542275605" class="text-red-400 hover:text-red-300 font-semibold">(754) 227-5605</a> now for immediate assistance. We provide 24/7 emergency roof repair services throughout ${cityName} and surrounding areas.
-        </p>
-
-        <div class="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mt-8">
-          <h3 class="text-2xl font-semibold text-white mb-4">Get Emergency Roof Repair Now</h3>
-          <div class="space-y-3 text-gray-300">
-            <p><strong class="text-white">24/7 Emergency Line:</strong> <a href="tel:+17542275605" class="text-red-400 hover:text-red-300 text-xl font-bold">(754) 227-5605</a></p>
-            <p><strong class="text-white">Email:</strong> <a href="mailto:leads@allphaseusa.com" class="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
-            <p><strong class="text-white">Office:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-            <p><strong class="text-white">Licenses:</strong> CCC-1331464 (Roofing) • CGC-1526236 (General Contractor)</p>
-            <p class="text-sm">Serving ${cityName} with rapid-response emergency roof repair services</p>
-          </div>
-        </div>
-      </article>
-    </div>`;
+    <h2>Emergency Roof Repair in ${cityName}</h2>
+    <p>
+      Don't wait when you have a roofing emergency. Call <a href="tel:+17542275605">(754) 227-5605</a> now for immediate assistance. We provide 24/7 emergency roof repair services throughout ${cityName} and surrounding areas.
+    </p>`;
 }
 
 /**
- * Generate content for Roof Inspection page (/roof-inspection/:city)
+ * Generate SEO content for Roof Inspection page (/roof-inspection/:city)
  */
 function generateRoofInspectionContent(cityName, citySlug) {
   return `
-    <div class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-      <article class="prose prose-lg prose-invert max-w-none">
-        <h1 class="text-4xl font-bold text-white mb-6">${cityName} Roof Inspection | 21-Point Professional Assessment</h1>
+    <h1>${cityName} Roof Inspection | 21-Point Professional Assessment</h1>
 
-        <p class="text-xl text-gray-300 mb-8">
-          <strong>Comprehensive Roof Inspections from Deerfield Beach HQ.</strong> Our certified inspectors provide detailed 21-point roof assessments for ${cityName} property owners. We're a dual-licensed contractor (CCC-1331464 & CGC-1526236) with expertise in all roofing systems.
-        </p>
+    <p>
+      <strong>Comprehensive Roof Inspections from Deerfield Beach HQ.</strong> Our certified inspectors provide detailed 21-point roof assessments for ${cityName} property owners. We're a dual-licensed contractor (CCC-1331464 & CGC-1526236) with expertise in all roofing systems.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Our 21-Point ${cityName} Roof Inspection</h2>
+    <h2>Our 21-Point ${cityName} Roof Inspection</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Exterior Inspection</h3>
-        <p class="text-gray-300 mb-4">
-          We thoroughly examine all visible roofing components from ground level and roof access (when safe). Our ${cityName} inspection includes:
-        </p>
-        <ul class="text-gray-300 space-y-2 mb-4">
-          <li>Roofing material condition (shingles, tiles, metal, membrane)</li>
-          <li>Flashing at chimneys, vents, skylights, and valleys</li>
-          <li>Gutters and downspouts</li>
-          <li>Roof deck condition and any visible sagging</li>
-          <li>Penetrations and roof-mounted equipment</li>
-          <li>Soffit, fascia, and trim condition</li>
-        </ul>
+    <h3>Exterior Inspection</h3>
+    <p>
+      We thoroughly examine all visible roofing components from ground level and roof access (when safe). Our ${cityName} inspection includes roofing material condition, flashing at chimneys and vents, gutters and downspouts, roof deck condition, penetrations, and soffit and fascia condition.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Interior Inspection</h3>
-        <p class="text-gray-300 mb-4">
-          From inside your ${cityName} property, we check for signs of water intrusion, ventilation issues, and structural concerns:
-        </p>
-        <ul class="text-gray-300 space-y-2 mb-4">
-          <li>Attic ventilation and insulation</li>
-          <li>Water stains on ceilings and walls</li>
-          <li>Attic moisture and mold indicators</li>
-          <li>Roof deck condition from below</li>
-          <li>Proper ventilation system function</li>
-        </ul>
+    <h3>Interior Inspection</h3>
+    <p>
+      From inside your ${cityName} property, we check for signs of water intrusion, ventilation issues, and structural concerns including attic ventilation and insulation, water stains on ceilings and walls, moisture and mold indicators, and roof deck condition from below.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Photo Documentation</h3>
-        <p class="text-gray-300 mb-4">
-          Every ${cityName} inspection includes comprehensive photo documentation. You receive a detailed report with images showing all findings, making it easy to understand your roof's condition and share information with insurance adjusters or real estate agents.
-        </p>
+    <h3>Photo Documentation</h3>
+    <p>
+      Every ${cityName} inspection includes comprehensive photo documentation. You receive a detailed report with images showing all findings, making it easy to understand your roof's condition and share information with insurance adjusters or real estate agents.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Types of ${cityName} Roof Inspections</h2>
+    <h2>Types of ${cityName} Roof Inspections</h2>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Pre-Purchase Inspection</h3>
-        <p class="text-gray-300 mb-4">
-          Buying a home in ${cityName}? Our pre-purchase roof inspection reveals the true condition of the roof, estimates remaining useful life, and identifies any needed repairs. This information helps you negotiate or budget for future roofing work.
-        </p>
+    <h3>Pre-Purchase Inspection</h3>
+    <p>
+      Buying a home in ${cityName}? Our pre-purchase roof inspection reveals the true condition of the roof, estimates remaining useful life, and identifies any needed repairs. This information helps you negotiate or budget for future roofing work.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Insurance Inspection</h3>
-        <p class="text-gray-300 mb-4">
-          Many ${cityName} insurance companies require roof inspections for policy issuance or renewal. We provide detailed documentation that meets insurer requirements and helps you maintain affordable coverage.
-        </p>
+    <h3>Insurance Inspection</h3>
+    <p>
+      Many ${cityName} insurance companies require roof inspections for policy issuance or renewal. We provide detailed documentation that meets insurer requirements and helps you maintain affordable coverage.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Storm Damage Assessment</h3>
-        <p class="text-gray-300 mb-4">
-          After severe weather, our inspectors assess storm damage to ${cityName} roofs. We document all damage thoroughly to support your insurance claim and provide repair estimates.
-        </p>
+    <h3>Storm Damage Assessment</h3>
+    <p>
+      After severe weather, our inspectors assess storm damage to ${cityName} roofs. We document all damage thoroughly to support your insurance claim and provide repair estimates.
+    </p>
 
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Routine Maintenance Inspection</h3>
-        <p class="text-gray-300 mb-4">
-          Regular inspections catch small problems before they become expensive repairs. We recommend annual or bi-annual inspections for ${cityName} commercial properties and routine inspections for residential properties every 2-3 years.
-        </p>
+    <h3>Routine Maintenance Inspection</h3>
+    <p>
+      Regular inspections catch small problems before they become expensive repairs. We recommend annual or bi-annual inspections for ${cityName} commercial properties and routine inspections for residential properties every 2-3 years.
+    </p>
 
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Why Choose Our ${cityName} Inspection Service?</h2>
-
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Certified Inspectors</h3>
-        <p class="text-gray-300 mb-4">
-          Our inspectors are licensed roofing professionals with extensive experience in South Florida roofing systems. We understand the specific challenges ${cityName} properties face: HVHZ requirements, salt air corrosion, UV damage, and hurricane preparedness.
-        </p>
-
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Thermal Imaging Available</h3>
-        <p class="text-gray-300 mb-4">
-          For flat or low-slope roofs in ${cityName}, we offer thermal imaging inspection to detect trapped moisture in the roofing system. This advanced technology identifies problems invisible to the naked eye.
-        </p>
-
-        <h3 class="text-2xl font-semibold text-white mt-6 mb-3">Detailed Reports</h3>
-        <p class="text-gray-300 mb-4">
-          You receive a comprehensive written report with photos, findings, recommendations, and cost estimates for any needed repairs. Our reports are accepted by insurance companies, real estate agents, and lenders throughout ${cityName}.
-        </p>
-
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Related Services in ${cityName}</h2>
-        <ul class="text-gray-300 space-y-2 mb-4">
-          <li><a href="/locations/${citySlug}/" class="text-red-400 hover:text-red-300 underline">Complete ${cityName} roofing services</a></li>
-          <li><a href="/roof-repair/${citySlug}/" class="text-red-400 hover:text-red-300 underline">${cityName} emergency roof repair</a></li>
-          <li><a href="/residential-roofing" class="text-red-400 hover:text-red-300 underline">Residential roofing</a></li>
-          <li><a href="/commercial-roofing" class="text-red-400 hover:text-red-300 underline">Commercial roofing</a></li>
-        </ul>
-
-        <h2 class="text-3xl font-bold text-white mt-8 mb-4">Schedule Your ${cityName} Roof Inspection</h2>
-        <p class="text-gray-300 mb-4">
-          Get peace of mind with a professional roof inspection. Call <a href="tel:+17542275605" class="text-red-400 hover:text-red-300 font-semibold">(754) 227-5605</a> to schedule your ${cityName} roof inspection today. Most inspections can be scheduled within 48 hours.
-        </p>
-
-        <div class="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mt-8">
-          <h3 class="text-2xl font-semibold text-white mb-4">Schedule Your Roof Inspection</h3>
-          <div class="space-y-3 text-gray-300">
-            <p><strong class="text-white">Phone:</strong> <a href="tel:+17542275605" class="text-red-400 hover:text-red-300 text-xl font-bold">(754) 227-5605</a></p>
-            <p><strong class="text-white">Email:</strong> <a href="mailto:leads@allphaseusa.com" class="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
-            <p><strong class="text-white">Office:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-            <p><strong class="text-white">Licenses:</strong> CCC-1331464 (Roofing) • CGC-1526236 (General Contractor)</p>
-            <p class="text-sm">Comprehensive 21-point roof inspections for ${cityName} properties</p>
-          </div>
-        </div>
-      </article>
-    </div>`;
+    <h2>Schedule Your ${cityName} Roof Inspection</h2>
+    <p>
+      Get peace of mind with a professional roof inspection. Call <a href="tel:+17542275605">(754) 227-5605</a> to schedule your ${cityName} roof inspection today. Most inspections can be scheduled within 48 hours.
+    </p>`;
 }
 
 /**
- * Create complete static HTML page
+ * Create hybrid prerendered HTML page
  */
-function createStaticHTMLPage(title, description, canonical, content, cityName, citySlug, pageType, cssPath) {
+function createHybridHTMLPage(title, description, canonical, seoContent, cityName, citySlug, pageType, cssPath, jsPath) {
   const structuredData = generateStructuredData(cityName, citySlug, pageType);
 
-  return `<!DOCTYPE html>
+  return `<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -601,9 +333,6 @@ function createStaticHTMLPage(title, description, canonical, content, cityName, 
     <title>${title}</title>
     <meta name="description" content="${description}">
     <link rel="canonical" href="${canonical}">
-    <link rel="stylesheet" href="${cssPath}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -621,26 +350,94 @@ function createStaticHTMLPage(title, description, canonical, content, cityName, 
     <script type="application/ld+json">
     ${structuredData}
     </script>
+
+    <!-- Preconnect to Supabase -->
+    <link rel="preconnect" href="https://vcqzitallpqgkarklela.supabase.co" crossorigin>
+
+    <!-- Critical CSS for immediate paint -->
+    <style>
+      :root {
+        --header-height: 110px;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px) + 16px);
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        max-width: 100%;
+        margin: 0;
+        padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px));
+      }
+      #root {
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+
+      /* SEO content visibility control */
+      #seo-static {
+        display: block;
+      }
+
+      /* Hide SEO content when React is ready */
+      html.js-ready #seo-static {
+        display: none;
+      }
+    </style>
+
+    <!-- Load Vite-bundled CSS -->
+    <link rel="stylesheet" href="${cssPath}">
 </head>
-<body class="bg-zinc-950 text-white">
-    ${createStaticHeader()}
-    <main>
-        ${content}
-    </main>
-    ${createStaticFooter()}
+<body>
+    <!-- Static navigation for crawlers (hidden from view, visible in source) -->
+    <nav style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+      <a href="/">Home</a>
+      <a href="/about-us">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/roof-inspection">Roof Inspection</a>
+      <a href="/roof-repair">Roof Repair</a>
+      <a href="/blog">Blog</a>
+      <a href="/locations/service-areas/">Service Areas</a>
+    </nav>
+
+    <!-- SEO Content for Crawlers (visible until React loads) -->
+    <div id="seo-static" class="max-w-4xl mx-auto px-4 py-16 prose prose-invert">
+      ${seoContent}
+
+      <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 0.5rem;">
+        <h3>Contact All Phase Construction USA</h3>
+        <p><strong>Phone:</strong> <a href="tel:+17542275605">(754) 227-5605</a></p>
+        <p><strong>Email:</strong> <a href="mailto:leads@allphaseusa.com">leads@allphaseusa.com</a></p>
+        <p><strong>Address:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
+        <p><strong>Licenses:</strong> CCC-1331464 (Roofing) • CGC-1526236 (General Contractor)</p>
+        <p><strong>Hours:</strong> 24/7 Emergency Service Available</p>
+      </div>
+    </div>
+
+    <!-- React Mount Point -->
+    <div id="root"></div>
+
+    <!-- Load React App -->
+    <script type="module" src="${jsPath}"></script>
 </body>
 </html>`;
 }
 
 /**
- * Generate all static city pages
+ * Generate all hybrid city pages
  */
-function generateStaticCityPages() {
-  console.log('\n🏗️  Generating Pure Static HTML City Pages (SSG)...\n');
+function generateHybridCityPages() {
+  console.log('\n🏗️  Generating Hybrid Prerendered City Pages...\n');
 
-  // Get bundled CSS path
-  const cssPath = getBundledCSSPath();
-  console.log(`✅ Found bundled CSS: ${cssPath}\n`);
+  // Get bundled assets
+  const assets = getBundledAssets();
+  console.log(`✅ Found bundled CSS: ${assets.css}`);
+  console.log(`✅ Found bundled JS:  ${assets.js}\n`);
 
   let totalPages = 0;
 
@@ -655,7 +452,7 @@ function generateStaticCityPages() {
     const hubPath = `/locations/${citySlug}`;
     const hubMetadata = getSEOMetadata(hubPath, cityName);
     const hubContent = generateServiceHubContent(cityName, citySlug);
-    const hubHTML = createStaticHTMLPage(
+    const hubHTML = createHybridHTMLPage(
       hubMetadata.title,
       hubMetadata.description,
       hubMetadata.canonical,
@@ -663,7 +460,8 @@ function generateStaticCityPages() {
       cityName,
       citySlug,
       'locations',
-      cssPath
+      assets.css,
+      assets.js
     );
 
     const hubDir = path.join(distDir, 'locations', citySlug);
@@ -676,7 +474,7 @@ function generateStaticCityPages() {
     const repairPath = `/roof-repair/${citySlug}`;
     const repairMetadata = getSEOMetadata(repairPath, cityName);
     const repairContent = generateRoofRepairContent(cityName, citySlug);
-    const repairHTML = createStaticHTMLPage(
+    const repairHTML = createHybridHTMLPage(
       repairMetadata.title,
       repairMetadata.description,
       repairMetadata.canonical,
@@ -684,7 +482,8 @@ function generateStaticCityPages() {
       cityName,
       citySlug,
       'roof-repair',
-      cssPath
+      assets.css,
+      assets.js
     );
 
     const repairDir = path.join(distDir, 'roof-repair', citySlug);
@@ -697,7 +496,7 @@ function generateStaticCityPages() {
     const inspectionPath = `/roof-inspection/${citySlug}`;
     const inspectionMetadata = getSEOMetadata(inspectionPath, cityName);
     const inspectionContent = generateRoofInspectionContent(cityName, citySlug);
-    const inspectionHTML = createStaticHTMLPage(
+    const inspectionHTML = createHybridHTMLPage(
       inspectionMetadata.title,
       inspectionMetadata.description,
       inspectionMetadata.canonical,
@@ -705,7 +504,8 @@ function generateStaticCityPages() {
       cityName,
       citySlug,
       'roof-inspection',
-      cssPath
+      assets.css,
+      assets.js
     );
 
     const inspectionDir = path.join(distDir, 'roof-inspection', citySlug);
@@ -715,17 +515,17 @@ function generateStaticCityPages() {
     totalPages++;
   });
 
-  console.log(`\n✅ Static City Pages Complete! Generated ${totalPages} pure HTML pages.\n`);
+  console.log(`\n✅ Hybrid City Pages Complete! Generated ${totalPages} prerendered pages.\n`);
   console.log(`📊 Breakdown:`);
   console.log(`   - City Service Hubs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Repairs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Inspections: ${totalPages / 3} pages`);
-  console.log(`\n💡 These pages load instantly with NO React dependency!`);
-  console.log(`   ✅ Full header, content, and footer in static HTML`);
-  console.log(`   ✅ Compiled CSS from Vite build`);
-  console.log(`   ✅ Perfect for SEO (crawlable immediately)`);
-  console.log(`   ✅ Fast user experience (no hydration needed)\n`);
+  console.log(`\n💡 How it works:`);
+  console.log(`   ✅ Crawlers see HTML content in #seo-static`);
+  console.log(`   ✅ Users see full React app once JS loads`);
+  console.log(`   ✅ React mounts normally with full header/footer/nav`);
+  console.log(`   ✅ No "business card" look — full branded experience\n`);
 }
 
 // Run the generator
-generateStaticCityPages();
+generateHybridCityPages();

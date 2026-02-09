@@ -6,6 +6,9 @@ import './index.css';
 
 const rootElement = document.getElementById('root')!;
 
+// Add js-ready class to hide SEO static content when React loads
+document.documentElement.classList.add('js-ready');
+
 createRoot(rootElement).render(
   <StrictMode>
     <HelmetProvider>
@@ -13,8 +16,3 @@ createRoot(rootElement).render(
     </HelmetProvider>
   </StrictMode>
 );
-
-const seoStatic = document.getElementById('seo-static');
-if (seoStatic) {
-  seoStatic.remove();
-}
