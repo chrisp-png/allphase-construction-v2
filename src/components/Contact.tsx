@@ -95,7 +95,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-visible relative z-10">
+          <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-visible relative" style={{ zIndex: 9999 }}>
             <h3 className="text-2xl font-bold mb-6">Request a Free Quote</h3>
 
             {submitted ? (
@@ -105,7 +105,7 @@ export default function Contact() {
                 <p className="text-gray-300">We'll get back to you within 24 hours.</p>
               </div>
             ) : (
-              <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleSubmit} className="space-y-6 pb-6 overflow-visible">
+              <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleSubmit} className="space-y-6 overflow-visible">
                 <input type="hidden" name="_subject" value="📧 New Contact Form Submission" />
                 <input type="hidden" name="form_source" value="Contact Us Form" />
                 <div className="grid grid-cols-2 gap-4">
@@ -281,8 +281,14 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full min-h-[56px] py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl relative z-20 touch-manipulation active:scale-[0.98]"
-                  style={{ touchAction: 'manipulation' }}
+                  className="w-full py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl relative touch-manipulation active:scale-[0.98]"
+                  style={{
+                    touchAction: 'manipulation',
+                    height: '60px',
+                    marginBottom: '150px',
+                    zIndex: 9999,
+                    pointerEvents: 'auto'
+                  }}
                 >
                   <span className="text-lg">Send Message</span>
                   <Send className="w-5 h-5" />
