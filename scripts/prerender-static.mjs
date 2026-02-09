@@ -662,38 +662,22 @@ function generateStaticFiles() {
     if (citySlug.includes('county')) return;
 
     // SILO 1: Service Hub - /locations/[city]
-    // SKIP TOP 9 MONEY CITIES - handled exclusively by React routing with force redirects
-    const moneyCities = [
-      'deerfield-beach',
-      'boca-raton',
-      'fort-lauderdale',
-      'coral-springs',
-      'delray-beach',
-      'boynton-beach',
-      'wellington',
-      'west-palm-beach',
-      'coconut-creek'
-    ];
+    // Generate prerendered HTML for ALL cities including Money Pages for SEO
+    const hubPath = `/locations/${citySlug}`;
+    const hubMetadata = getSEOMetadata(hubPath, cityName);
+    const hubContent = generateServiceHubContent(cityName, citySlug);
 
-    if (!moneyCities.includes(citySlug)) {
-      const hubPath = `/locations/${citySlug}`;
-      const hubMetadata = getSEOMetadata(hubPath, cityName);
-      const hubContent = generateServiceHubContent(cityName, citySlug);
-
-      const hubHTML = createHTMLTemplate(
-        hubMetadata.title,
-        hubMetadata.description,
-        hubMetadata.canonical,
-        hubContent
-      );
-      const hubDir = path.join(publicDir, 'locations', citySlug);
-      fs.mkdirSync(hubDir, { recursive: true });
-      fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
-      console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
-      totalPages++;
-    } else {
-      console.log(`⚡ SKIPPED: public/locations/${citySlug}/index.html (React-only Money Page with force redirect)`);
-    }
+    const hubHTML = createHTMLTemplate(
+      hubMetadata.title,
+      hubMetadata.description,
+      hubMetadata.canonical,
+      hubContent
+    );
+    const hubDir = path.join(publicDir, 'locations', citySlug);
+    fs.mkdirSync(hubDir, { recursive: true });
+    fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
+    console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
+    totalPages++;
 
     // SILO 2: Roof Repair - /roof-repair/[city]
     const repairPath = `/roof-repair/${citySlug}`;
