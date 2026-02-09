@@ -1,73 +1,165 @@
-# Singular to plural location redirect (catch Googlebot and users)
-/location/*                                                  /locations/:splat                                             301!
+# ======================================================================
+# MASTER OVERRIDE: SILO ARCHITECTURE 301 REDIRECTS
+# These MUST take precedence over all other routing logic
+# Force = true (!) ensures these override any static files
+# ======================================================================
 
-# 301 Redirects: FORCED redirects to consolidate roof-repair city pages
-/roofing-services/roof-repair/boca-raton                    /locations/deerfield-beach/service-area/boca-raton                301!
-/roofing-services/roof-repair/boca-raton-county             /locations/deerfield-beach/service-area/boca-raton                301!
-/roofing-services/roof-repair/boynton-beach                 /locations/deerfield-beach/service-area/boynton-beach             301!
-/roofing-services/roof-repair/boynton-beach-county          /locations/deerfield-beach/service-area/boynton-beach             301!
-/roofing-services/roof-repair/broward-county                /locations/deerfield-beach/service-area/broward-county            301!
-/roofing-services/roof-repair/coconut-creek                 /locations/deerfield-beach/service-area/coconut-creek             301!
-/roofing-services/roof-repair/cooper-city                   /locations/deerfield-beach/service-area/cooper-city               301!
-/roofing-services/roof-repair/coral-springs                 /locations/deerfield-beach/service-area/coral-springs             301!
-/roofing-services/roof-repair/dania-beach                   /locations/deerfield-beach/service-area/dania-beach               301!
-/roofing-services/roof-repair/davie                         /locations/deerfield-beach/service-area/davie                     301!
-/roofing-services/roof-repair/deerfield-beach               /locations/deerfield-beach/service-area/deerfield-beach           301!
-/roofing-services/roof-repair/delray-beach                  /locations/deerfield-beach/service-area/delray-beach              301!
-/roofing-services/roof-repair/fort-lauderdale               /locations/deerfield-beach/service-area/fort-lauderdale           301!
-/roofing-services/roof-repair/greenacres                    /locations/deerfield-beach/service-area/greenacres                301!
-/roofing-services/roof-repair/gulf-stream                   /locations/deerfield-beach/service-area/gulf-stream               301!
-/roofing-services/roof-repair/hallandale-beach              /locations/deerfield-beach/service-area/hallandale-beach          301!
-/roofing-services/roof-repair/haverhill                     /locations/deerfield-beach/service-area/haverhill                 301!
-/roofing-services/roof-repair/highland-beach                /locations/deerfield-beach/service-area/highland-beach            301!
-/roofing-services/roof-repair/hillsboro-beach               /locations/deerfield-beach/service-area/hillsboro-beach           301!
-/roofing-services/roof-repair/hollywood                     /locations/deerfield-beach/service-area/hollywood                 301!
-/roofing-services/roof-repair/hypoluxo                      /locations/deerfield-beach/service-area/hypoluxo                  301!
-/roofing-services/roof-repair/jupiter-inlet-colony          /locations/deerfield-beach/service-area/jupiter-inlet-colony      301!
-/roofing-services/roof-repair/jupiter                       /locations/deerfield-beach/service-area/jupiter                   301!
-/roofing-services/roof-repair/lake-park                     /locations/deerfield-beach/service-area/lake-park                 301!
-/roofing-services/roof-repair/lake-worth-beach              /locations/deerfield-beach/service-area/lake-worth-beach          301!
-/roofing-services/roof-repair/lake-worth                    /locations/deerfield-beach/service-area/lake-worth                301!
-/roofing-services/roof-repair/lantana                       /locations/deerfield-beach/service-area/lantana                   301!
-/roofing-services/roof-repair/lauderdale-by-the-sea         /locations/deerfield-beach/service-area/lauderdale-by-the-sea     301!
-/roofing-services/roof-repair/lauderhill                    /locations/deerfield-beach/service-area/lauderhill                301!
-/roofing-services/roof-repair/lazy-lake                     /locations/deerfield-beach/service-area/lazy-lake                 301!
-/roofing-services/roof-repair/light-house-point             /locations/deerfield-beach/service-area/lighthouse-point          301!
-/roofing-services/roof-repair/lighthouse-point              /locations/deerfield-beach/service-area/lighthouse-point          301!
-/roofing-services/roof-repair/loxahatchee-groves            /locations/deerfield-beach/service-area/loxahatchee-groves        301!
-/roofing-services/roof-repair/manalapan                     /locations/deerfield-beach/service-area/manalapan                 301!
-/roofing-services/roof-repair/margate                       /locations/deerfield-beach/service-area/margate                   301!
-/roofing-services/roof-repair/miramar                       /locations/deerfield-beach/service-area/miramar                   301!
-/roofing-services/roof-repair/north-lauderdale              /locations/deerfield-beach/service-area/north-lauderdale          301!
-/roofing-services/roof-repair/north-palm-beach              /locations/deerfield-beach/service-area/north-palm-beach          301!
-/roofing-services/roof-repair/oakland-park                  /locations/deerfield-beach/service-area/oakland-park              301!
-/roofing-services/roof-repair/ocean-ridge                   /locations/deerfield-beach/service-area/ocean-ridge               301!
-/roofing-services/roof-repair/palm-beach-county-unincorporated /locations/deerfield-beach/service-area/palm-beach-county      301!
-/roofing-services/roof-repair/palm-beach-county             /locations/deerfield-beach/service-area/palm-beach-county         301!
-/roofing-services/roof-repair/palm-beach-gardens            /locations/deerfield-beach/service-area/palm-beach-gardens        301!
-/roofing-services/roof-repair/palm-beach                    /locations/deerfield-beach/service-area/palm-beach                301!
-/roofing-services/roof-repair/parkland                      /locations/deerfield-beach/service-area/parkland                  301!
-/roofing-services/roof-repair/pembroke-park                 /locations/deerfield-beach/service-area/pembroke-park             301!
-/roofing-services/roof-repair/pembroke-pines                /locations/deerfield-beach/service-area/pembroke-pines            301!
-/roofing-services/roof-repair/plantation                    /locations/deerfield-beach/service-area/plantation                301!
-/roofing-services/roof-repair/pompano-beach                 /locations/deerfield-beach/service-area/pompano-beach             301!
-/roofing-services/roof-repair/royal-palm-beach              /locations/deerfield-beach/service-area/royal-palm-beach          301!
-/roofing-services/roof-repair/south-palm-beach              /locations/deerfield-beach/service-area/south-palm-beach          301!
-/roofing-services/roof-repair/sunrise                       /locations/deerfield-beach/service-area/sunrise                   301!
-/roofing-services/roof-repair/surfside                      /locations/deerfield-beach/service-area/surfside                  301!
-/roofing-services/roof-repair/tamarac                       /locations/deerfield-beach/service-area/tamarac                   301!
-/roofing-services/roof-repair/wellington                    /locations/deerfield-beach/service-area/wellington                301!
-/roofing-services/roof-repair/west-palm-beach-county        /locations/deerfield-beach/service-area/west-palm-beach           301!
-/roofing-services/roof-repair/west-palm-beach               /locations/deerfield-beach/service-area/west-palm-beach           301!
-/roofing-services/roof-repair/westlake                      /locations/deerfield-beach/service-area/westlake                  301!
-/roofing-services/roof-repair/weston                        /locations/deerfield-beach/service-area/weston                    301!
-/roofing-services/roof-repair/wilton-manors                 /locations/deerfield-beach/service-area/wilton-manors             301!
+# === OLD SERVICE-AREA PATHS → NEW CLEAN SILOS ===
 
-# Wildcard redirect: catch any other roof-repair city pages
-/roofing-services/roof-repair/:city                         /locations/deerfield-beach/service-area/:city                     301!
+# Catch-all for any service-area paths (most specific first)
+/locations/deerfield-beach/service-area/boca-raton/top-5-roofer                /locations/boca-raton                     301!
+/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer            /locations/boynton-beach                  301!
+/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer            /locations/coconut-creek                  301!
+/locations/deerfield-beach/service-area/coral-springs/top-5-roofer            /locations/coral-springs                  301!
+/locations/deerfield-beach/service-area/deerfield-beach/top-5-roofer          /locations/deerfield-beach                301!
+/locations/deerfield-beach/service-area/delray-beach/top-5-roofer             /locations/delray-beach                   301!
+/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer          /locations/fort-lauderdale                301!
+/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer          /locations/west-palm-beach                301!
+/locations/deerfield-beach/service-area/wellington/top-5-roofer               /locations/wellington                     301!
+/locations/deerfield-beach/service-area/:city/top-5-roofer                    /locations/:city                          301!
 
-# Redirect roof-repair hub to main locations page
-/roofing-services/roof-repair                               /locations/deerfield-beach                                        301!
+# Service-area city redirects to clean /locations/
+/locations/deerfield-beach/service-area/boca-raton                            /locations/boca-raton                     301!
+/locations/deerfield-beach/service-area/boynton-beach                         /locations/boynton-beach                  301!
+/locations/deerfield-beach/service-area/broward-county                        /locations/broward-county                 301!
+/locations/deerfield-beach/service-area/coconut-creek                         /locations/coconut-creek                  301!
+/locations/deerfield-beach/service-area/cooper-city                           /locations/cooper-city                    301!
+/locations/deerfield-beach/service-area/coral-springs                         /locations/coral-springs                  301!
+/locations/deerfield-beach/service-area/dania-beach                           /locations/dania-beach                    301!
+/locations/deerfield-beach/service-area/davie                                 /locations/davie                          301!
+/locations/deerfield-beach/service-area/deerfield-beach                       /locations/deerfield-beach                301!
+/locations/deerfield-beach/service-area/delray-beach                          /locations/delray-beach                   301!
+/locations/deerfield-beach/service-area/fort-lauderdale                       /locations/fort-lauderdale                301!
+/locations/deerfield-beach/service-area/greenacres                            /locations/greenacres                     301!
+/locations/deerfield-beach/service-area/gulf-stream                           /locations/gulf-stream                    301!
+/locations/deerfield-beach/service-area/hallandale-beach                      /locations/hallandale-beach               301!
+/locations/deerfield-beach/service-area/haverhill                             /locations/haverhill                      301!
+/locations/deerfield-beach/service-area/highland-beach                        /locations/highland-beach                 301!
+/locations/deerfield-beach/service-area/hillsboro-beach                       /locations/hillsboro-beach                301!
+/locations/deerfield-beach/service-area/hollywood                             /locations/hollywood                      301!
+/locations/deerfield-beach/service-area/hypoluxo                              /locations/hypoluxo                       301!
+/locations/deerfield-beach/service-area/jupiter-inlet-colony                  /locations/jupiter-inlet-colony           301!
+/locations/deerfield-beach/service-area/jupiter                               /locations/jupiter                        301!
+/locations/deerfield-beach/service-area/lake-park                             /locations/lake-park                      301!
+/locations/deerfield-beach/service-area/lake-worth-beach                      /locations/lake-worth                     301!
+/locations/deerfield-beach/service-area/lake-worth                            /locations/lake-worth                     301!
+/locations/deerfield-beach/service-area/lantana                               /locations/lantana                        301!
+/locations/deerfield-beach/service-area/lauderdale-by-the-sea                 /locations/lauderdale-by-the-sea          301!
+/locations/deerfield-beach/service-area/lauderhill                            /locations/lauderhill                     301!
+/locations/deerfield-beach/service-area/lazy-lake                             /locations/lazy-lake                      301!
+/locations/deerfield-beach/service-area/lighthouse-point                      /locations/lighthouse-point               301!
+/locations/deerfield-beach/service-area/light-house-point                     /locations/lighthouse-point               301!
+/locations/deerfield-beach/service-area/loxahatchee-groves                    /locations/loxahatchee-groves             301!
+/locations/deerfield-beach/service-area/manalapan                             /locations/manalapan                      301!
+/locations/deerfield-beach/service-area/margate                               /locations/margate                        301!
+/locations/deerfield-beach/service-area/miramar                               /locations/miramar                        301!
+/locations/deerfield-beach/service-area/north-lauderdale                      /locations/north-lauderdale               301!
+/locations/deerfield-beach/service-area/north-palm-beach                      /locations/north-palm-beach               301!
+/locations/deerfield-beach/service-area/oakland-park                          /locations/oakland-park                   301!
+/locations/deerfield-beach/service-area/ocean-ridge                           /locations/ocean-ridge                    301!
+/locations/deerfield-beach/service-area/palm-beach-county-unincorporated      /locations/palm-beach-county              301!
+/locations/deerfield-beach/service-area/palm-beach-county                     /locations/palm-beach-county              301!
+/locations/deerfield-beach/service-area/palm-beach-gardens                    /locations/palm-beach-gardens             301!
+/locations/deerfield-beach/service-area/palm-beach                            /locations/palm-beach                     301!
+/locations/deerfield-beach/service-area/parkland                              /locations/parkland                       301!
+/locations/deerfield-beach/service-area/pembroke-park                         /locations/pembroke-park                  301!
+/locations/deerfield-beach/service-area/pembroke-pines                        /locations/pembroke-pines                 301!
+/locations/deerfield-beach/service-area/plantation                            /locations/plantation                     301!
+/locations/deerfield-beach/service-area/pompano-beach                         /locations/pompano-beach                  301!
+/locations/deerfield-beach/service-area/royal-palm-beach                      /locations/royal-palm-beach               301!
+/locations/deerfield-beach/service-area/south-palm-beach                      /locations/south-palm-beach               301!
+/locations/deerfield-beach/service-area/sunrise                               /locations/sunrise                        301!
+/locations/deerfield-beach/service-area/surfside                              /locations/surfside                       301!
+/locations/deerfield-beach/service-area/tamarac                               /locations/tamarac                        301!
+/locations/deerfield-beach/service-area/wellington                            /locations/wellington                     301!
+/locations/deerfield-beach/service-area/west-palm-beach-county                /locations/west-palm-beach                301!
+/locations/deerfield-beach/service-area/west-palm-beach                       /locations/west-palm-beach                301!
+/locations/deerfield-beach/service-area/westlake                              /locations/westlake                       301!
+/locations/deerfield-beach/service-area/weston                                /locations/weston                         301!
+/locations/deerfield-beach/service-area/wilton-manors                         /locations/wilton-manors                  301!
 
-# SPA fallback - ALL routes go to React app
+# Wildcard catch-all for service-area (must come AFTER specific rules)
+/locations/deerfield-beach/service-area/*                                     /locations/:splat                         301!
+/locations/*/service-area/*                                                   /locations/:splat                         301!
+/service-area/*                                                               /locations/:splat                         301!
+
+# === OLD ROOFING-SERVICES PATHS → NEW ROOF-REPAIR SILO ===
+
+# Roofing-services city redirects to clean /roof-repair/
+/roofing-services/roof-repair/boca-raton                                      /roof-repair/boca-raton                   301!
+/roofing-services/roof-repair/boca-raton-county                               /roof-repair/boca-raton                   301!
+/roofing-services/roof-repair/boynton-beach                                   /roof-repair/boynton-beach                301!
+/roofing-services/roof-repair/boynton-beach-county                            /roof-repair/boynton-beach                301!
+/roofing-services/roof-repair/broward-county                                  /roof-repair/broward-county               301!
+/roofing-services/roof-repair/coconut-creek                                   /roof-repair/coconut-creek                301!
+/roofing-services/roof-repair/cooper-city                                     /roof-repair/cooper-city                  301!
+/roofing-services/roof-repair/coral-springs                                   /roof-repair/coral-springs                301!
+/roofing-services/roof-repair/dania-beach                                     /roof-repair/dania-beach                  301!
+/roofing-services/roof-repair/davie                                           /roof-repair/davie                        301!
+/roofing-services/roof-repair/deerfield-beach                                 /roof-repair/deerfield-beach              301!
+/roofing-services/roof-repair/delray-beach                                    /roof-repair/delray-beach                 301!
+/roofing-services/roof-repair/fort-lauderdale                                 /roof-repair/fort-lauderdale              301!
+/roofing-services/roof-repair/greenacres                                      /roof-repair/greenacres                   301!
+/roofing-services/roof-repair/gulf-stream                                     /roof-repair/gulf-stream                  301!
+/roofing-services/roof-repair/hallandale-beach                                /roof-repair/hallandale-beach             301!
+/roofing-services/roof-repair/haverhill                                       /roof-repair/haverhill                    301!
+/roofing-services/roof-repair/highland-beach                                  /roof-repair/highland-beach               301!
+/roofing-services/roof-repair/hillsboro-beach                                 /roof-repair/hillsboro-beach              301!
+/roofing-services/roof-repair/hollywood                                       /roof-repair/hollywood                    301!
+/roofing-services/roof-repair/hypoluxo                                        /roof-repair/hypoluxo                     301!
+/roofing-services/roof-repair/jupiter-inlet-colony                            /roof-repair/jupiter-inlet-colony         301!
+/roofing-services/roof-repair/jupiter                                         /roof-repair/jupiter                      301!
+/roofing-services/roof-repair/lake-park                                       /roof-repair/lake-park                    301!
+/roofing-services/roof-repair/lake-worth-beach                                /roof-repair/lake-worth                   301!
+/roofing-services/roof-repair/lake-worth                                      /roof-repair/lake-worth                   301!
+/roofing-services/roof-repair/lantana                                         /roof-repair/lantana                      301!
+/roofing-services/roof-repair/lauderdale-by-the-sea                           /roof-repair/lauderdale-by-the-sea        301!
+/roofing-services/roof-repair/lauderhill                                      /roof-repair/lauderhill                   301!
+/roofing-services/roof-repair/lazy-lake                                       /roof-repair/lazy-lake                    301!
+/roofing-services/roof-repair/light-house-point                               /roof-repair/lighthouse-point             301!
+/roofing-services/roof-repair/lighthouse-point                                /roof-repair/lighthouse-point             301!
+/roofing-services/roof-repair/loxahatchee-groves                              /roof-repair/loxahatchee-groves           301!
+/roofing-services/roof-repair/manalapan                                       /roof-repair/manalapan                    301!
+/roofing-services/roof-repair/margate                                         /roof-repair/margate                      301!
+/roofing-services/roof-repair/miramar                                         /roof-repair/miramar                      301!
+/roofing-services/roof-repair/north-lauderdale                                /roof-repair/north-lauderdale             301!
+/roofing-services/roof-repair/north-palm-beach                                /roof-repair/north-palm-beach             301!
+/roofing-services/roof-repair/oakland-park                                    /roof-repair/oakland-park                 301!
+/roofing-services/roof-repair/ocean-ridge                                     /roof-repair/ocean-ridge                  301!
+/roofing-services/roof-repair/palm-beach-county-unincorporated                /roof-repair/palm-beach-county            301!
+/roofing-services/roof-repair/palm-beach-county                               /roof-repair/palm-beach-county            301!
+/roofing-services/roof-repair/palm-beach-gardens                              /roof-repair/palm-beach-gardens           301!
+/roofing-services/roof-repair/palm-beach                                      /roof-repair/palm-beach                   301!
+/roofing-services/roof-repair/parkland                                        /roof-repair/parkland                     301!
+/roofing-services/roof-repair/pembroke-park                                   /roof-repair/pembroke-park                301!
+/roofing-services/roof-repair/pembroke-pines                                  /roof-repair/pembroke-pines               301!
+/roofing-services/roof-repair/plantation                                      /roof-repair/plantation                   301!
+/roofing-services/roof-repair/pompano-beach                                   /roof-repair/pompano-beach                301!
+/roofing-services/roof-repair/royal-palm-beach                                /roof-repair/royal-palm-beach             301!
+/roofing-services/roof-repair/south-palm-beach                                /roof-repair/south-palm-beach             301!
+/roofing-services/roof-repair/sunrise                                         /roof-repair/sunrise                      301!
+/roofing-services/roof-repair/surfside                                        /roof-repair/surfside                     301!
+/roofing-services/roof-repair/tamarac                                         /roof-repair/tamarac                      301!
+/roofing-services/roof-repair/wellington                                      /roof-repair/wellington                   301!
+/roofing-services/roof-repair/west-palm-beach-county                          /roof-repair/west-palm-beach              301!
+/roofing-services/roof-repair/west-palm-beach                                 /roof-repair/west-palm-beach              301!
+/roofing-services/roof-repair/westlake                                        /roof-repair/westlake                     301!
+/roofing-services/roof-repair/weston                                          /roof-repair/weston                       301!
+/roofing-services/roof-repair/wilton-manors                                   /roof-repair/wilton-manors                301!
+
+# Wildcard catch-all for roofing-services (must come AFTER specific rules)
+/roofing-services/roof-repair/:city                                           /roof-repair/:city                        301!
+/roofing-services/roof-repair                                                 /roof-repair                              301!
+/roofing-services/*                                                           /roof-repair/:splat                       301!
+
+# === OTHER CLEANUP REDIRECTS ===
+
+# Singular to plural location redirect
+/location/*                                                                   /locations/:splat                         301!
+
+# ======================================================================
+# END MASTER OVERRIDE REDIRECTS
+# ======================================================================
+
+# SPA fallback - ALL other routes go to React app (200 = rewrite, not redirect)
 /*  /index.html  200

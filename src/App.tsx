@@ -275,36 +275,6 @@ function AppContent() {
             <Route path="/flat-roofing" element={<FlatRoofingPage />} />
             <Route path="/single-ply-roofing" element={<SinglePlyRoofingPage />} />
             <Route path="/roof-repair" element={<RoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair" element={<RoofRepairHubPage />} />
-            <Route path="/roofing-services/roof-repair/boca-raton" element={<BocaRatonRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/boynton-beach" element={<BoyntonBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/broward-county" element={<BrowardCountyRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/coral-springs" element={<CoralSpringsRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/coconut-creek" element={<CoconutCreekRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/cooper-city" element={<CooperCityRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/dania-beach" element={<DaniaBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/davie" element={<DavieRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/deerfield-beach" element={<DeerfieldBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/delray-beach" element={<DelrayBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/greenacres" element={<GreenacresRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/hallandale-beach" element={<HallandaleBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/haverhill" element={<HaverillRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/highland-beach" element={<HighlandBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/hollywood" element={<HollywoodRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/hypoluxo" element={<HypoluxoRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/lake-park" element={<LakeParkRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/lake-worth-beach" element={<LakeWorthBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/lantana" element={<LantanaRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/lighthouse-point" element={<LighthousePointRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/palm-beach" element={<PalmBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/palm-beach-county-unincorporated" element={<PalmBeachCountyUnincorporatedRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/palm-beach-county" element={<PalmBeachCountyRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/parkland" element={<ParklandRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/pompano-beach" element={<PompanoBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/sunrise" element={<SunriseRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/wellington" element={<WellingtonRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/west-palm-beach" element={<WestPalmBeachRoofRepairPage />} />
-            <Route path="/roofing-services/roof-repair/wilton-manors" element={<WiltonManorsRoofRepairPage />} />
             <Route path="/roof-inspection" element={<RoofInspectionPage />} />
             <Route path="/roof-maintenance-programs" element={<RoofMaintenanceProgramsPage />} />
             <Route path="/tile-roof-inspection-broward-county" element={<TileRoofInspectionBrowardCountyPage />} />
@@ -315,9 +285,6 @@ function AppContent() {
             <Route path="/flat-roof-inspection-palm-beach-county" element={<FlatRoofInspectionPalmBeachCountyPage />} />
             <Route path="/flat-roof-moisture-infrared-inspection" element={<FlatRoofMoistureInfraredInspectionPage />} />
             <Route path="/insurance-roof-inspection" element={<InsuranceRoofInspectionPage />} />
-            <Route path="/service-areas" element={<ServiceAreasPage />} />
-            <Route path="/service-areas-index" element={<ServiceAreasIndexPage />} />
-            <Route path="/service-areas/:citySlug" element={<ServiceAreaCityPage />} />
             <Route path="/easy-payments" element={<EasyPaymentsPage />} />
             <Route path="/pricing-guide" element={<PricingGuidePage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
@@ -328,9 +295,7 @@ function AppContent() {
             <Route path="/our-location" element={<OurLocationPage />} />
             <Route path="/blog" element={<BlogIndexPage />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
-            <Route path="/service-areas/:citySlug/service-area/:subCitySlug" element={<ServiceAreaDynamicPage />} />
             <Route path="/locations" element={<LocationsIndexPage />} />
-            <Route path="/locations/deerfield-beach/service-area" element={<ServiceAreasHubPage />} />
             <Route path="/locations/deerfield-beach" element={<DeerfieldBeachCityPage />} />
             <Route path="/locations/boca-raton" element={<BocaRatonMoneyPage />} />
             <Route path="/locations/fort-lauderdale" element={<FortLauderdaleMoneyPage />} />
@@ -340,8 +305,6 @@ function AppContent() {
             <Route path="/locations/wellington" element={<WellingtonMoneyPage />} />
             <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
-            <Route path="/locations/deerfield-beach/service-area/:citySlug" element={<ServiceAreaPage />} />
-            <Route path="/locations/deerfield-beach/service-area/:citySlug/top-5-roofer" element={<TopRooferPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

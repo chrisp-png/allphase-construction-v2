@@ -109,11 +109,6 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Our Deerfield Beach headquarters at 590 Goolsby Blvd serves 51 cities across Broward & Palm Beach Counties. Dual-licensed roofing contractor.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
-  '/locations/deerfield-beach/service-area': {
-    title: 'Service Areas | All Phase Construction USA',
-    description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision and code-compliant roofing.',
-    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
-  },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase Construction USA',
     description: 'Expert guide on hiring a roofing contractor in South Florida. Learn what to look for, questions to ask, and how to avoid scams.',
@@ -197,48 +192,6 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Check static titles first
   if (SEO_TITLES[normalizedPath]) {
     return SEO_TITLES[normalizedPath];
-  }
-
-  // Handle top-5-roofer pages
-  if (normalizedPath.includes('/top-5-roofer') || normalizedPath.includes('/top-roofer')) {
-    const cityMatch = normalizedPath.match(/\/service-area\/([^\/]+)\//);
-    if (cityMatch) {
-      const slug = cityMatch[1];
-      const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      return {
-        title: `Top 5 Best Roofers in ${cityName}, FL | All Phase Construction USA`,
-        description: `Compare the top 5 roofers in ${cityName}, FL. See why All Phase Construction USA ranks #1 with dual licensing, HVHZ certification, and proven results.`,
-        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/top-5-roofer`
-      };
-    }
-  }
-
-  // Handle city service area pages
-  if (normalizedPath.startsWith('/locations/deerfield-beach/service-area/')) {
-    const parts = normalizedPath.split('/');
-    const slug = parts[4];
-    if (slug && !slug.includes('top-5-roofer') && !slug.includes('calculator')) {
-      const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      return {
-        title: `${cityName} Roofing Services | All Phase Construction USA`,
-        description: `Looking for a Dual-Licensed Roofing Specialist in ${cityName}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`,
-        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}`
-      };
-    }
-  }
-
-  // Handle calculator pages
-  if (normalizedPath.includes('/calculator')) {
-    const cityMatch = normalizedPath.match(/\/service-area\/([^\/]+)\//);
-    if (cityMatch) {
-      const slug = cityMatch[1];
-      const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      return {
-        title: `${cityName} Roof Replacement Cost Calculator | All Phase Construction USA`,
-        description: `Calculate roof replacement costs in ${cityName}, FL. Get instant estimates based on your roof size, material, and pitch. Free quotes available.`,
-        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/calculator`
-      };
-    }
   }
 
   // Handle blog posts
