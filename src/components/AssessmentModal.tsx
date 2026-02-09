@@ -42,8 +42,8 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
         style={{ pointerEvents: 'auto' }}
       />
       <div
-        className="fixed inset-0 z-[101] flex items-center justify-center p-4 overflow-y-auto"
-        style={{ pointerEvents: 'none' }}
+        className="fixed inset-0 z-[101] flex items-start justify-center p-4 overflow-y-auto"
+        style={{ pointerEvents: 'none', paddingTop: '120px' }}
       >
         <div
           className="bg-white rounded-lg shadow-2xl w-full max-w-2xl my-8 relative"
@@ -90,6 +90,7 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
               action="https://formspree.io/f/mojakkld"
               method="POST"
               className="space-y-4"
+              style={{ scrollMarginTop: '120px' }}
             >
               <input type="hidden" name="source" value="main-website-modal" />
 

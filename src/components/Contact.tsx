@@ -40,7 +40,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-900 text-white pb-32 lg:pb-24">
+    <section id="contact" className="py-24 bg-slate-900 text-white pb-32 lg:pb-24" style={{ scrollMarginTop: '100px' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
@@ -95,7 +95,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-visible relative" style={{ zIndex: 9999 }}>
+          <div className="bg-slate-800 rounded-xl p-8 shadow-2xl overflow-visible relative" style={{ zIndex: 9999, height: 'auto', maxHeight: 'none' }}>
             <h3 className="text-2xl font-bold mb-6">Request a Free Quote</h3>
 
             {submitted ? (
@@ -105,7 +105,7 @@ export default function Contact() {
                 <p className="text-gray-300">We'll get back to you within 24 hours.</p>
               </div>
             ) : (
-              <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleSubmit} className="space-y-6 overflow-visible">
+              <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleSubmit} className="space-y-6 overflow-visible" style={{ scrollMarginTop: '120px' }}>
                 <input type="hidden" name="_subject" value="📧 New Contact Form Submission" />
                 <input type="hidden" name="form_source" value="Contact Us Form" />
                 <div className="grid grid-cols-2 gap-4">
