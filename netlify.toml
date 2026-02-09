@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npx vite build"
+command = "cp scripts/cities.json src/data/cities.json && npx vite build && node scripts/prerender-static.mjs"
 
 [build.environment]
 NODE_VERSION = "20"
