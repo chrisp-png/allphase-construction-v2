@@ -57,7 +57,6 @@ export default function BocaRatonRoofRepairPage() {
       <SEO
         title="Roof Repair in Boca Raton, FL"
         description="Expert roof repair in Boca Raton, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605."
-        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair/boca-raton"
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">

@@ -97,7 +97,6 @@ export default function RoofRepairHubPage() {
       <SEO
         title="Roof Repair Broward & Palm Beach County, FL"
         description="Professional roof repair services in Broward and Palm Beach County. Inspection-based evaluations, slope restoration, ventilation upgrades, and Florida Building Code-compliant repairs. Diagnostic inspections available."
-        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair"
         schema={schemas}
       />
       <div className="min-h-screen bg-zinc-950 text-white">

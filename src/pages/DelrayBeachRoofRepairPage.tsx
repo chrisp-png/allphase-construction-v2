@@ -57,7 +57,6 @@ export default function DelrayBeachRoofRepairPage() {
       <SEO
         title="Roof Repair Delray Beach, FL | Free Roof Inspection"
         description="Need roof repair in Delray Beach? Get a free roof inspection. Tile, shingle, metal & flat roofing. Call (754) 227-5605."
-        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair/delray-beach"
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">

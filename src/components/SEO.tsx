@@ -18,7 +18,11 @@ export default function SEO({
   schema
 }: SEOProps) {
   const fullTitle = title.includes('All Phase') ? title : `${title} | All Phase Construction`;
-  const canonicalUrl = canonical || `https://allphaseconstructionfl.com${window.location.pathname}`;
+
+  // SELF-REFERENCING CANONICAL: Always use current pathname unless explicitly overridden
+  // This ensures each page points to itself, not the homepage
+  const currentPath = window.location.pathname;
+  const canonicalUrl = canonical || `https://allphaseconstructionfl.com${currentPath}`;
 
   return (
     <Helmet>
@@ -27,7 +31,7 @@ export default function SEO({
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       {!noindex && <meta name="robots" content="index, follow" />}
 
-      {/* Canonical URL */}
+      {/* Self-Referencing Canonical - Each page points to itself */}
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}

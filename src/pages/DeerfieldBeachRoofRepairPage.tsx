@@ -57,7 +57,6 @@ export default function DeerfieldBeachRoofRepairPage() {
       <SEO
         title="Roof Repair Deerfield Beach, FL | Free Roof Inspection"
         description="Need roof repair in Deerfield Beach? Get a free roof inspection. Tile, shingle, metal & flat roofing. Call (754) 227-5605."
-        canonical="https://allphaseconstructionfl.com/roofing-services/roof-repair/deerfield-beach"
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
