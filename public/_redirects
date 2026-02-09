@@ -7,6 +7,15 @@
 # === CALCULATOR REDIRECT ===
 /calculator                                                                    /roof-cost-calculator                     301!
 
+# === LEGACY URL REDIRECTS (Footer/Header Link Fixes) ===
+/roofing-services/roof-repair                                                  /roof-repair                              301!
+/roofing-services/roof-repair/:city                                            /roof-repair/:city                        301!
+/about                                                                         /about-us                                 301!
+/team                                                                          /about-us                                 301!
+/careers                                                                       /contact                                  301!
+/financing                                                                     /easy-payments                            301!
+/locations/deerfield-beach/how-to-hire-a-roofing-contractor                   /how-to-hire-roofing-contractor          301!
+
 # === OLD SERVICE-AREA PATHS → NEW CLEAN SILOS ===
 
 # Catch-all for any service-area paths (most specific first)

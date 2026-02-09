@@ -205,7 +205,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/roofing-services/roof-repair" className="hover:text-red-600 transition-colors">
+                <Link to="/roof-repair" className="hover:text-red-600 transition-colors">
                   Roof Repair
                 </Link>
               </li>
@@ -221,17 +221,12 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link to="/about" className="hover:text-red-600 transition-colors">
+                <Link to="/about-us" className="hover:text-red-600 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="hover:text-red-600 transition-colors">
-                  Our Team
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects/" className="hover:text-red-600 transition-colors">
+                <Link to="/projects" className="hover:text-red-600 transition-colors">
                   Projects
                 </Link>
               </li>
@@ -246,12 +241,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/careers" className="hover:text-red-600 transition-colors">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link to="/financing" className="hover:text-red-600 transition-colors">
+                <Link to="/easy-payments" className="hover:text-red-600 transition-colors">
                   Financing
                 </Link>
               </li>
@@ -267,7 +257,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor" className="hover:text-red-600 transition-colors">
+                <Link to="/how-to-hire-roofing-contractor" className="hover:text-red-600 transition-colors">
                   How to Hire a Roofer
                 </Link>
               </li>
@@ -282,7 +272,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/roofing-services/roof-repair" className="hover:text-red-600 transition-colors">
+                <Link to="/roof-repair" className="hover:text-red-600 transition-colors">
                   Roof Repair Services
                 </Link>
               </li>
@@ -303,7 +293,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Service Areas</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors font-medium">
+                <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors font-medium">
                   Deerfield Beach (HQ)
                 </Link>
               </li>
@@ -311,22 +301,22 @@ export default function Footer() {
                 <span className="text-gray-500 text-xs uppercase tracking-wider">Palm Beach County</span>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/boca-raton" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/boca-raton" className="hover:text-red-600 transition-colors">
                   Boca Raton
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/boynton-beach" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/boynton-beach" className="hover:text-red-600 transition-colors">
                   Boynton Beach
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/delray-beach" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/delray-beach" className="hover:text-red-600 transition-colors">
                   Delray Beach
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/west-palm-beach" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/west-palm-beach" className="hover:text-red-600 transition-colors">
                   West Palm Beach
                 </Link>
               </li>
@@ -334,17 +324,17 @@ export default function Footer() {
                 <span className="text-gray-500 text-xs uppercase tracking-wider">Broward County</span>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/coral-springs" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/coral-springs" className="hover:text-red-600 transition-colors">
                   Coral Springs
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/fort-lauderdale" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/fort-lauderdale" className="hover:text-red-600 transition-colors">
                   Fort Lauderdale
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/pompano-beach" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/pompano-beach" className="hover:text-red-600 transition-colors">
                   Pompano Beach
                 </Link>
               </li>

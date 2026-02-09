@@ -68,34 +68,34 @@ export default function Header() {
     { name: 'Roof Inspection', path: '/roof-inspection' },
     {
       name: 'Roof Repair',
-      path: '/roofing-services/roof-repair',
+      path: '/roof-repair',
       hasSubmenu: true,
       submenu: [
-        { name: 'Boca Raton', path: '/roofing-services/roof-repair/boca-raton' },
-        { name: 'Boynton Beach', path: '/roofing-services/roof-repair/boynton-beach' },
-        { name: 'Broward County', path: '/roofing-services/roof-repair/broward-county' },
-        { name: 'Coconut Creek', path: '/roofing-services/roof-repair/coconut-creek' },
-        { name: 'Cooper City', path: '/roofing-services/roof-repair/cooper-city' },
-        { name: 'Coral Springs', path: '/roofing-services/roof-repair/coral-springs' },
-        { name: 'Dania Beach', path: '/roofing-services/roof-repair/dania-beach' },
-        { name: 'Davie', path: '/roofing-services/roof-repair/davie' },
-        { name: 'Deerfield Beach', path: '/roofing-services/roof-repair/deerfield-beach' },
-        { name: 'Delray Beach', path: '/roofing-services/roof-repair/delray-beach' },
-        { name: 'Greenacres', path: '/roofing-services/roof-repair/greenacres' },
-        { name: 'Hallandale Beach', path: '/roofing-services/roof-repair/hallandale-beach' },
-        { name: 'Haverhill', path: '/roofing-services/roof-repair/haverhill' },
-        { name: 'Hollywood', path: '/roofing-services/roof-repair/hollywood' },
-        { name: 'Lake Worth Beach', path: '/roofing-services/roof-repair/lake-worth-beach' },
-        { name: 'Lantana', path: '/roofing-services/roof-repair/lantana' },
-        { name: 'Palm Beach', path: '/roofing-services/roof-repair/palm-beach' },
-        { name: 'Palm Beach County', path: '/roofing-services/roof-repair/palm-beach-county' },
-        { name: 'Palm Beach County Unincorporated', path: '/roofing-services/roof-repair/palm-beach-county-unincorporated' },
-        { name: 'Parkland', path: '/roofing-services/roof-repair/parkland' },
-        { name: 'Pompano Beach', path: '/roofing-services/roof-repair/pompano-beach' },
-        { name: 'Sunrise', path: '/roofing-services/roof-repair/sunrise' },
-        { name: 'Wellington', path: '/roofing-services/roof-repair/wellington' },
-        { name: 'West Palm Beach', path: '/roofing-services/roof-repair/west-palm-beach' },
-        { name: 'Wilton Manors', path: '/roofing-services/roof-repair/wilton-manors' },
+        { name: 'Boca Raton', path: '/roof-repair/boca-raton' },
+        { name: 'Boynton Beach', path: '/roof-repair/boynton-beach' },
+        { name: 'Broward County', path: '/roof-repair/broward-county' },
+        { name: 'Coconut Creek', path: '/roof-repair/coconut-creek' },
+        { name: 'Cooper City', path: '/roof-repair/cooper-city' },
+        { name: 'Coral Springs', path: '/roof-repair/coral-springs' },
+        { name: 'Dania Beach', path: '/roof-repair/dania-beach' },
+        { name: 'Davie', path: '/roof-repair/davie' },
+        { name: 'Deerfield Beach', path: '/roof-repair/deerfield-beach' },
+        { name: 'Delray Beach', path: '/roof-repair/delray-beach' },
+        { name: 'Greenacres', path: '/roof-repair/greenacres' },
+        { name: 'Hallandale Beach', path: '/roof-repair/hallandale-beach' },
+        { name: 'Haverhill', path: '/roof-repair/haverhill' },
+        { name: 'Hollywood', path: '/roof-repair/hollywood' },
+        { name: 'Lake Worth Beach', path: '/roof-repair/lake-worth' },
+        { name: 'Lantana', path: '/roof-repair/lantana' },
+        { name: 'Palm Beach', path: '/roof-repair/palm-beach' },
+        { name: 'Palm Beach County', path: '/roof-repair/palm-beach-county' },
+        { name: 'Palm Beach County Unincorporated', path: '/roof-repair/palm-beach-county-unincorporated' },
+        { name: 'Parkland', path: '/roof-repair/parkland' },
+        { name: 'Pompano Beach', path: '/roof-repair/pompano-beach' },
+        { name: 'Sunrise', path: '/roof-repair/sunrise' },
+        { name: 'Wellington', path: '/roof-repair/wellington' },
+        { name: 'West Palm Beach', path: '/roof-repair/west-palm-beach' },
+        { name: 'Wilton Manors', path: '/roof-repair/wilton-manors' },
       ]
     },
     { name: 'Roof Maintenance Programs', path: '/roof-maintenance-programs' },
@@ -275,7 +275,7 @@ export default function Header() {
                       Service Areas
                     </Link>
                     <Link
-                      to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor"
+                      to="/how-to-hire-roofing-contractor"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors last:rounded-b-lg"
                     >
                       How to Hire a Roofer
@@ -486,7 +486,7 @@ export default function Header() {
                     Service Areas
                   </Link>
                   <Link
-                    to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor"
+                    to="/how-to-hire-roofing-contractor"
                     className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
