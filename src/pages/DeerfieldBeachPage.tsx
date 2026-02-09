@@ -9,7 +9,7 @@ export default function DeerfieldBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Deerfield Beach Roofer | HVHZ Certified | All Phase';
+    document.title = 'Deerfield Beach Roofing Contractor | Dual-Licensed | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -184,11 +184,14 @@ export default function DeerfieldBeachPage() {
 
           {/* HERO SECTION */}
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roofing Contractor — Dual-Licensed & Code-Compliant
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
+              Roofing Contractor in Deerfield Beach, FL
             </h1>
+            <p className="text-lg sm:text-xl text-zinc-400 mb-8 leading-relaxed">
+              Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236). Serving Deerfield Beach and the High-Velocity Hurricane Zone (HVHZ) with integrity.
+            </p>
             <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
-              Serving <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> homeowners with inspection-driven roofing, HVHZ-compliant installations, and insurance-defensible documentation.
+              All Phase Construction USA is headquartered in <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach, Florida</Link> and serves homeowners throughout the region with inspection-driven roofing, HVHZ-compliant installations, and insurance-defensible documentation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
