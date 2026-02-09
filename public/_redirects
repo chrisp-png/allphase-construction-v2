@@ -69,6 +69,5 @@
 # Redirect roof-repair hub to main locations page
 /roofing-services/roof-repair                               /locations/deerfield-beach                                        301!
 
-# SPA fallback rules (must be last)
-/locations/deerfield-beach/service-area/*  /locations/deerfield-beach/service-area/:splat/index.html  200
-/*                                       /index.html                                                  200
+# SPA fallback - ALL routes go to React app
+/*  /index.html  200
