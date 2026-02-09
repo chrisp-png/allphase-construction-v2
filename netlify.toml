@@ -98,11 +98,9 @@ for = "*.js"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
-[[edge_functions]]
-function = "seo-proxy"
-path = "/locations/*"
-
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
+force = false
+conditions = {Role = ["*"]}

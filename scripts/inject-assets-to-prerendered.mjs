@@ -83,8 +83,30 @@ function processHTMLFiles(dir, basePath = '') {
   });
 }
 
+// SPECIAL CASE: Handle homepage (dist/index.html)
+// The prerendered public/index.html has SEO content, but Vite overwrites it
+// We need to restore the prerendered content with proper asset links
+console.log('\n🔧 Processing homepage (dist/index.html)...\n');
+
+const publicIndexPath = path.resolve(__dirname, '../public/index.html');
+if (fs.existsSync(publicIndexPath)) {
+  let prerenderContent = fs.readFileSync(publicIndexPath, 'utf-8');
+
+  // Replace the development script tag with bundled assets
+  if (prerenderContent.includes('<script type="module" src="/src/main.tsx"></script>')) {
+    prerenderContent = prerenderContent.replace(
+      /<script type="module" src="\/src\/main\.tsx"><\/script>/,
+      assetInjection
+    );
+
+    // Overwrite the Vite-generated dist/index.html with the prerendered version
+    fs.writeFileSync(mainIndexPath, prerenderContent, 'utf-8');
+    console.log('✅ Restored prerendered homepage with bundled assets\n');
+  }
+}
+
 // Process all subdirectories in dist
-console.log('\n🔧 Processing prerendered HTML files...\n');
+console.log('🔧 Processing prerendered HTML files in subdirectories...\n');
 processHTMLFiles(distDir);
 
 console.log('\n✅ Asset injection complete!\n');
