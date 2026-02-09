@@ -93,6 +93,26 @@ function getSEOMetadata(urlPath) {
 }
 
 /**
+ * Get nearby cities for internal linking
+ */
+function getNearbyCities(citySlug) {
+  const cityRelations = {
+    'boca-raton': ['delray-beach', 'deerfield-beach', 'boynton-beach', 'highland-beach'],
+    'delray-beach': ['boca-raton', 'boynton-beach', 'deerfield-beach'],
+    'boynton-beach': ['delray-beach', 'boca-raton', 'lake-worth-beach'],
+    'deerfield-beach': ['boca-raton', 'pompano-beach', 'coconut-creek'],
+    'fort-lauderdale': ['pompano-beach', 'plantation', 'hollywood', 'coral-springs'],
+    'pompano-beach': ['deerfield-beach', 'fort-lauderdale', 'coconut-creek'],
+    'coral-springs': ['parkland', 'coconut-creek', 'fort-lauderdale'],
+    'coconut-creek': ['pompano-beach', 'deerfield-beach', 'coral-springs'],
+    'parkland': ['coral-springs', 'coconut-creek', 'boca-raton'],
+    'west-palm-beach': ['palm-beach-gardens', 'wellington', 'royal-palm-beach'],
+  };
+
+  return cityRelations[citySlug] || ['deerfield-beach', 'boca-raton', 'fort-lauderdale'];
+}
+
+/**
  * Company Authority Footer - Injected on ALL pages to boost word count and E-E-A-T
  * This ensures no page has 0 word count for Screaming Frog
  */
@@ -122,19 +142,29 @@ function companyAuthorityFooter() {
 
   <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Our Service Area</h3>
   <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
-    From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities throughout Broward County and Palm Beach County including Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, Parkland, Coconut Creek, West Palm Beach, Delray Beach, Boynton Beach, Wellington, and surrounding communities.
+    From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities throughout Broward County and Palm Beach County including <a href="/locations/deerfield-beach/service-area/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/deerfield-beach/service-area/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/deerfield-beach/service-area/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/deerfield-beach/service-area/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/deerfield-beach/service-area/parkland" style="color: #dc2626; text-decoration: underline;">Parkland</a>, <a href="/locations/deerfield-beach/service-area/coconut-creek" style="color: #dc2626; text-decoration: underline;">Coconut Creek</a>, <a href="/locations/deerfield-beach/service-area/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/deerfield-beach/service-area/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/deerfield-beach/service-area/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/deerfield-beach/service-area/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and surrounding communities.
   </p>
 
   <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
     <strong>Licensed & Insured:</strong> CCC-1331464 (State Certified Roofing Contractor) | CGC-1526236 (Certified General Contractor)<br>
     <strong>Contact:</strong> (754) 227-5605 | 590 Goolsby Blvd, Deerfield Beach, FL 33442
   </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-top: 1.5rem;">
+    <strong>Quick Links:</strong> <a href="/sitemap.html" style="color: #dc2626; text-decoration: underline;">Full Sitemap</a> | <a href="/locations/deerfield-beach/service-area" style="color: #dc2626; text-decoration: underline;">All Service Areas</a> | <a href="/blog" style="color: #dc2626; text-decoration: underline;">Roofing Blog</a> | <a href="/contact" style="color: #dc2626; text-decoration: underline;">Contact Us</a>
+  </p>
 </section>
 `.trim();
 }
 
 // Helper functions for generating default city-templated content
-function defaultServiceAreaHtml(cityName) {
+function defaultServiceAreaHtml(cityName, citySlug) {
+  const nearbyCities = getNearbyCities(citySlug);
+  const nearbyCityLinks = nearbyCities.map(slug => {
+    const name = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return `<a href="/locations/deerfield-beach/service-area/${slug}" style="color: #dc2626; text-decoration: underline;">${name}</a>`;
+  }).join(', ');
+
   return `
 <section id="seo-static-content">
   <h1>${cityName} Roofing Services</h1>
@@ -146,6 +176,8 @@ function defaultServiceAreaHtml(cityName) {
     <li>Roof inspections and documentation</li>
     <li>Storm damage assessment and mitigation</li>
   </ul>
+  <h2>Nearby Service Areas</h2>
+  <p>We also serve nearby communities: ${nearbyCityLinks}. <a href="/locations/deerfield-beach/service-area" style="color: #dc2626; text-decoration: underline;">View all service areas</a>.</p>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -186,14 +218,22 @@ function injectMetaTags(html, metadata) {
   // FIRST: Inject CSS to ensure static content is visible and properly styled
   const seoStaticCSS = `
   <style id="seo-static-styles">
-    /* Ensure static SEO content is visible to crawlers and styled properly */
+    /* CRITICAL: Ensure static SEO content is ALWAYS visible to crawlers */
     #seo-static {
-      display: block;
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      position: relative !important;
       max-width: 1280px;
       margin: 0 auto;
       padding: 2rem 1rem;
       line-height: 1.75;
       color: #1f2937;
+      background: #ffffff;
+    }
+    #seo-static * {
+      visibility: visible !important;
+      opacity: 1 !important;
     }
     #seo-static h1 {
       font-size: 2.25rem;
@@ -441,10 +481,10 @@ async function prerenderStaticPages() {
 
   let homepageHtml = injectMetaTags(baseHtml, homepageMetadata);
 
-  // Inject homepage content after React root
+  // CRITICAL FIX: Inject homepage content BEFORE React root to prevent React from clearing it
   homepageHtml = homepageHtml.replace(
     '<div id="root"></div>',
-    `<div id="root"></div>\n    <div id="seo-static">${homepageContent}</div>`
+    `<div id="seo-static">${homepageContent}</div>\n    <div id="root"></div>`
   );
 
   const homepageFile = path.join(publicDir, 'index.html');
@@ -469,15 +509,15 @@ async function prerenderStaticPages() {
     // Get content for this city (unique or default)
     const injectedContent = (cityContent?.[city.slug]?.serviceAreaHtml && cityContent[city.slug].serviceAreaHtml.trim())
       ? cityContent[city.slug].serviceAreaHtml
-      : defaultServiceAreaHtml(city.city);
+      : defaultServiceAreaHtml(city.city, city.slug);
 
     // Inject metadata
     let htmlWithMeta = injectMetaTags(baseHtml, metadata);
 
-    // Inject body content after React root
+    // CRITICAL FIX: Inject body content BEFORE React root
     htmlWithMeta = htmlWithMeta.replace(
       '<div id="root"></div>',
-      `<div id="root"></div>\n    <div id="seo-static">${injectedContent}</div>`
+      `<div id="seo-static">${injectedContent}</div>\n    <div id="root"></div>`
     );
 
     // Write file
@@ -518,10 +558,10 @@ async function prerenderStaticPages() {
   // Inject metadata
   let hubHtmlWithMeta = injectMetaTags(baseHtml, hubMetadata);
 
-  // Inject body content after React root
+  // CRITICAL FIX: Inject body content BEFORE React root
   hubHtmlWithMeta = hubHtmlWithMeta.replace(
     '<div id="root"></div>',
-    `<div id="root"></div>\n    <div id="seo-static">${hubContent}</div>`
+    `<div id="seo-static">${hubContent}</div>\n    <div id="root"></div>`
   );
 
   // Write file
@@ -607,10 +647,10 @@ async function prerenderStaticPages() {
     // Inject metadata
     let htmlWithMeta = injectMetaTags(baseHtml, metadata);
 
-    // Inject body content after React root
+    // CRITICAL FIX: Inject body content BEFORE React root
     htmlWithMeta = htmlWithMeta.replace(
       '<div id="root"></div>',
-      `<div id="root"></div>\n    <div id="seo-static">${topRooferContent}</div>`
+      `<div id="seo-static">${topRooferContent}</div>\n    <div id="root"></div>`
     );
 
     // Write file
@@ -645,10 +685,10 @@ async function prerenderStaticPages() {
     // Inject metadata
     let htmlWithMeta = injectMetaTags(baseHtml, roofRepairMeta);
 
-    // Inject body content after React root
+    // CRITICAL FIX: Inject body content BEFORE React root
     htmlWithMeta = htmlWithMeta.replace(
       '<div id="root"></div>',
-      `<div id="root"></div>\n    <div id="seo-static">${injectedContent}</div>`
+      `<div id="seo-static">${injectedContent}</div>\n    <div id="root"></div>`
     );
 
     // Write file
@@ -702,10 +742,10 @@ async function prerenderStaticPages() {
       const pageTitle = metadata.title.replace(' | All Phase Construction USA', '').replace(' | All Phase Construction USA Blog', '');
       const genericContent = defaultGenericPageContent(pageTitle);
 
-      // Inject content after React root
+      // CRITICAL FIX: Inject content BEFORE React root
       htmlWithMetadata = htmlWithMetadata.replace(
         '<div id="root"></div>',
-        `<div id="root"></div>\n    <div id="seo-static">${genericContent}</div>`
+        `<div id="seo-static">${genericContent}</div>\n    <div id="root"></div>`
       );
 
       // Write file
