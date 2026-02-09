@@ -98,9 +98,8 @@ for = "*.js"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
-# === MASTER OVERRIDE: SILO ARCHITECTURE 301 REDIRECTS ===
-# These MUST take precedence over all other routing logic
-# Force = true ensures these override any static files
+# === PERMANENT 301 REDIRECTS ===
+# Clean up old URL patterns before SPA takes over
 
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/*"
@@ -115,13 +114,6 @@ status = 301
 force = true
 
 [[redirects]]
-from = "/locations/deerfield-beach/service-area/:city/top-5-roofer"
-to = "/locations/:city"
-status = 301
-force = true
-
-# Additional cleanup redirects for old patterns
-[[redirects]]
 from = "/service-area/*"
 to = "/locations/:splat"
 status = 301
@@ -133,65 +125,13 @@ to = "/locations/:splat"
 status = 301
 force = true
 
-# === END MASTER OVERRIDE REDIRECTS ===
-
-[[redirects]]
-from = "/locations/deerfield-beach"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/boca-raton"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/fort-lauderdale"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/coral-springs"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/delray-beach"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/boynton-beach"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/wellington"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/west-palm-beach"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/locations/coconut-creek"
-to = "/index.html"
-status = 200
-force = true
+# === NUCLEAR OPTION: FORCE REACT SPA FOR ALL ROUTES ===
+# This ensures the branded React app (with Header/Footer/Layout)
+# loads for EVERY URL, preventing any "business card" ghost pages
+# from appearing even if static HTML somehow survives in dist/
 
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
-force = false
-conditions = {Role = ["*"]}
+force = true

@@ -251,6 +251,19 @@ function AppContent() {
   return (
     <>
       <NuclearMetadata />
+      {/*
+        ═══════════════════════════════════════════════════════════════
+        LAYOUT LOCK: Header and Footer are PERMANENTLY hard-coded here
+        ═══════════════════════════════════════════════════════════════
+
+        DO NOT REMOVE OR CONDITIONALLY RENDER Header/Footer.
+
+        This ensures the branded React app with Header, Logo, and Footer
+        loads for EVERY page, preventing "business card" ghost pages.
+
+        All routes below will ALWAYS have the full branded layout.
+        ═══════════════════════════════════════════════════════════════
+      */}
       <div className="flex flex-col min-h-screen bg-gray-50">
         <LowercaseRedirect />
         <CanonicalManager />
