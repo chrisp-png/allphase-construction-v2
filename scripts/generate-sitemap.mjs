@@ -107,6 +107,50 @@ for (const slug of allBlogSlugs) {
   });
 }
 
+// Load cities data and generate 3-silo city pages
+const citiesPath = path.join(__dirname, 'cities.json');
+const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
+
+console.log('📍 Generating 3-Silo City Pages URLs...\n');
+
+// Filter out county-level entries
+const citiesOnly = cities.filter(c => !c.slug.includes('county'));
+
+// Generate 3-silo pages for each city
+for (const { slug, city } of citiesOnly) {
+  // SILO 1: Service Hub - /locations/[city]
+  entries.push({
+    section: 'Service Hubs',
+    label: `${city} Roofing Services`,
+    path: `/locations/${slug}`,
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  });
+
+  // SILO 2: Roof Repair - /roof-repair/[city]
+  entries.push({
+    section: 'Roof Repair Services',
+    label: `Roof Repair in ${city}`,
+    path: `/roof-repair/${slug}`,
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  });
+
+  // SILO 3: Roof Inspection - /roof-inspection/[city]
+  entries.push({
+    section: 'Roof Inspection Services',
+    label: `${city} Roof Inspection`,
+    path: `/roof-inspection/${slug}`,
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  });
+}
+
+console.log(`✅ Added ${citiesOnly.length * 3} city pages (3 silos × ${citiesOnly.length} cities)\n`);
+
 // Generate XML
 const urlEntries = entries.map(entry => {
   const url = `${CANONICAL_DOMAIN}${entry.path}`;

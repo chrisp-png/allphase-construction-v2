@@ -11,110 +11,12 @@ const publicDir = path.resolve(projectRoot, 'public');
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 
-// Load city content data
-const cityContentPath = path.join(__dirname, 'city-content.json');
-const cityContent = JSON.parse(fs.readFileSync(cityContentPath, 'utf-8'));
-
 // Load SEO titles configuration
 const seoTitlesPath = path.join(__dirname, 'seo-titles.json');
 const seoTitlesConfig = JSON.parse(fs.readFileSync(seoTitlesPath, 'utf-8'));
 
 /**
- * Get SEO metadata for a given path
- * Handles static pages and dynamic routes (city pages, top-5-roofer, etc.)
- */
-function getSEOMetadata(urlPath) {
-  const normalizedPath = urlPath.toLowerCase().replace(/\/$/, '');
-
-  // Check static titles first
-  if (seoTitlesConfig.staticTitles[normalizedPath]) {
-    return seoTitlesConfig.staticTitles[normalizedPath];
-  }
-
-  // Handle top-5-roofer pages
-  if (normalizedPath.includes('/top-5-roofer') || normalizedPath.includes('/top-roofer')) {
-    const cityMatch = normalizedPath.match(/\/service-area\/([^\/]+)/);
-    if (cityMatch) {
-      const slug = cityMatch[1];
-      const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      return {
-        title: `Top 5 Best Roofers in ${cityName}, FL | All Phase Construction USA`,
-        description: `Comparing the top 5 roofers in ${cityName}? Discover why local homeowners trust a Dual-Licensed (CCC/CGC) specialist for HVHZ-compliant roofing.`,
-        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/top-5-roofer`
-      };
-    }
-  }
-
-  // Handle city service area pages
-  if (normalizedPath.startsWith('/locations/deerfield-beach/service-area/')) {
-    const parts = normalizedPath.split('/');
-    const slug = parts[4];
-    if (slug && !slug.includes('top-5-roofer') && !slug.includes('calculator')) {
-      const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      return {
-        title: `${cityName} Roofing Services | All Phase Construction USA`,
-        description: `Looking for a Dual-Licensed Roofing Specialist in ${cityName}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`,
-        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}`
-      };
-    }
-  }
-
-  // Handle calculator pages
-  if (normalizedPath.includes('/calculator')) {
-    const cityMatch = normalizedPath.match(/\/service-area\/([^\/]+)/);
-    if (cityMatch) {
-      const slug = cityMatch[1];
-      const cityName = seoTitlesConfig.cityNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      return {
-        title: `${cityName} Roof Replacement Cost Calculator | All Phase Construction USA`,
-        description: `Calculate roof replacement costs in ${cityName}, FL. Get instant estimates based on your roof size, material, and pitch. Free quotes available.`,
-        canonical: `https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/${slug}/calculator`
-      };
-    }
-  }
-
-  // Handle blog posts
-  if (normalizedPath.startsWith('/blog/') && normalizedPath !== '/blog') {
-    const slug = normalizedPath.replace('/blog/', '');
-    const blogTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return {
-      title: `${blogTitle} | All Phase Construction USA Blog`,
-      description: `Read about ${blogTitle.toLowerCase()} from South Florida's dual-licensed roofing experts at All Phase Construction USA.`,
-      canonical: `https://allphaseconstructionfl.com/blog/${slug}`
-    };
-  }
-
-  // Fallback - use homepage title
-  return seoTitlesConfig.staticTitles['/'] || {
-    title: 'All Phase Construction USA | Dual-Licensed Roofing Specialist',
-    description: 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Call (754) 227-5605',
-    canonical: `https://allphaseconstructionfl.com${normalizedPath}`
-  };
-}
-
-/**
- * Get nearby cities for internal linking
- */
-function getNearbyCities(citySlug) {
-  const cityRelations = {
-    'boca-raton': ['delray-beach', 'deerfield-beach', 'boynton-beach', 'highland-beach'],
-    'delray-beach': ['boca-raton', 'boynton-beach', 'deerfield-beach'],
-    'boynton-beach': ['delray-beach', 'boca-raton', 'lake-worth-beach'],
-    'deerfield-beach': ['boca-raton', 'pompano-beach', 'coconut-creek'],
-    'fort-lauderdale': ['pompano-beach', 'plantation', 'hollywood', 'coral-springs'],
-    'pompano-beach': ['deerfield-beach', 'fort-lauderdale', 'coconut-creek'],
-    'coral-springs': ['parkland', 'coconut-creek', 'fort-lauderdale'],
-    'coconut-creek': ['pompano-beach', 'deerfield-beach', 'coral-springs'],
-    'parkland': ['coral-springs', 'coconut-creek', 'boca-raton'],
-    'west-palm-beach': ['palm-beach-gardens', 'wellington', 'royal-palm-beach'],
-  };
-
-  return cityRelations[citySlug] || ['deerfield-beach', 'boca-raton', 'fort-lauderdale'];
-}
-
-/**
- * Company Authority Footer - Injected on ALL pages to boost word count and E-E-A-T
- * This ensures no page has 0 word count for Screaming Frog
+ * Company Authority Footer - 250+ words of E-E-A-T reinforcement
  */
 function companyAuthorityFooter() {
   return `
@@ -142,69 +44,252 @@ function companyAuthorityFooter() {
 
   <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Our Service Area</h3>
   <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
-    From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities throughout Broward County and Palm Beach County including <a href="/locations/deerfield-beach/service-area/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/deerfield-beach/service-area/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/deerfield-beach/service-area/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/deerfield-beach/service-area/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/deerfield-beach/service-area/parkland" style="color: #dc2626; text-decoration: underline;">Parkland</a>, <a href="/locations/deerfield-beach/service-area/coconut-creek" style="color: #dc2626; text-decoration: underline;">Coconut Creek</a>, <a href="/locations/deerfield-beach/service-area/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/deerfield-beach/service-area/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/deerfield-beach/service-area/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/deerfield-beach/service-area/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and surrounding communities.
+    From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities throughout Broward County and Palm Beach County including <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, and surrounding communities.
   </p>
 
   <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
     <strong>Licensed & Insured:</strong> CCC-1331464 (State Certified Roofing Contractor) | CGC-1526236 (Certified General Contractor)<br>
     <strong>Contact:</strong> (754) 227-5605 | 590 Goolsby Blvd, Deerfield Beach, FL 33442
   </p>
-
-  <p style="color: #374151; line-height: 1.75; margin-top: 1.5rem;">
-    <strong>Quick Links:</strong> <a href="/sitemap.html" style="color: #dc2626; text-decoration: underline;">Full Sitemap</a> | <a href="/locations/deerfield-beach/service-area" style="color: #dc2626; text-decoration: underline;">All Service Areas</a> | <a href="/blog" style="color: #dc2626; text-decoration: underline;">Roofing Blog</a> | <a href="/contact" style="color: #dc2626; text-decoration: underline;">Contact Us</a>
-  </p>
 </section>
 `.trim();
 }
 
-// Helper functions for generating default city-templated content
-function defaultServiceAreaHtml(cityName, citySlug) {
-  const nearbyCities = getNearbyCities(citySlug);
-  const nearbyCityLinks = nearbyCities.map(slug => {
-    const name = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return `<a href="/locations/deerfield-beach/service-area/${slug}" style="color: #dc2626; text-decoration: underline;">${name}</a>`;
-  }).join(', ');
-
+/**
+ * SILO 1: Service Hub Page - /locations/[city]
+ * Broad roofing authority with links to Repair + Inspection spokes
+ */
+function generateServiceHubContent(cityName, citySlug) {
   return `
 <section id="seo-static-content">
-  <h1>${cityName} Roofing Services</h1>
-  <p>All Phase Construction USA provides licensed, insured roofing services in ${cityName}, FL, including roof repairs, replacements, inspections, and storm-damage support. We serve residential and commercial properties with code-compliant workmanship.</p>
-  <h2>Common Roofing Services in ${cityName}</h2>
-  <ul>
-    <li>Leak detection and roof repairs</li>
-    <li>Shingle, tile, flat, and metal roofing</li>
-    <li>Roof inspections and documentation</li>
-    <li>Storm damage assessment and mitigation</li>
-  </ul>
-  <h2>Nearby Service Areas</h2>
-  <p>We also serve nearby communities: ${nearbyCityLinks}. <a href="/locations/deerfield-beach/service-area" style="color: #dc2626; text-decoration: underline;">View all service areas</a>.</p>
-  ${companyAuthorityFooter()}
-</section>
-`.trim();
-}
+  <h1>${cityName} Roofing Services | All Phase Construction USA</h1>
 
-function defaultRoofRepairHtml(cityName) {
-  return `
-<section id="seo-static-content">
-  <h1>Roof Repair in ${cityName}, FL</h1>
-  <p>Need roof repair in ${cityName}? We handle active leaks, storm-related damage, flashing failures, and roof maintenance issues with fast diagnostics and durable repairs.</p>
-  <h2>What We Repair in ${cityName}</h2>
-  <ul>
-    <li>Roof leaks and water intrusion</li>
-    <li>Damaged shingles, tiles, and underlayment</li>
-    <li>Flashing, vents, and penetrations</li>
-    <li>Storm damage and emergency tarping</li>
+  <p><strong>All Phase Construction USA</strong> provides comprehensive roofing services in ${cityName}, Florida. Serving ${cityName} from our Deerfield Beach headquarters, we bring dual-licensed expertise (CCC-1331464 & CGC-1526236) and HVHZ certification to every residential and commercial roofing project.</p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Need Immediate Help in ${cityName}?</h3>
+    <p style="margin-bottom: 1rem; color: #7f1d1d;">
+      📞 <strong>Emergency Roof Repairs:</strong> <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast ${cityName} Repair Service</a> – Active leaks, storm damage, emergency tarping
+    </p>
+    <p style="margin-bottom: 0; color: #7f1d1d;">
+      🔍 <strong>Professional Roof Inspections:</strong> <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point ${cityName} Roof Inspection</a> – Free estimates, insurance documentation
+    </p>
+  </div>
+
+  <h2>Why ${cityName} Homeowners Choose All Phase Construction USA</h2>
+  <p>We're not just another roofing company serving ${cityName}. Here's what sets us apart:</p>
+
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Dual-Licensed Authority:</strong> We hold both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses. This means we bring structural engineering expertise that standard roofers cannot match.</li>
+    <li><strong>HVHZ Certified:</strong> Every installation in ${cityName} meets High Velocity Hurricane Zone compliance with 175+ mph wind ratings and enhanced fastening schedules.</li>
+    <li><strong>Local Deerfield Beach Headquarters:</strong> Our central South Florida location enables same-day inspection availability and rapid emergency response throughout ${cityName}.</li>
+    <li><strong>Owner-Operator Accountability:</strong> Direct contractor involvement on every ${cityName} project ensures precision and quality that large franchise operations cannot match.</li>
   </ul>
+
+  <h2>Complete Roofing Services in ${cityName}</h2>
+  <p>All Phase Construction USA provides full-spectrum roofing solutions for ${cityName} properties:</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Emergency Roof Repairs</h3>
+  <p>Active leaks require immediate attention. Our ${cityName} emergency repair team provides 24/7 response for storm damage, missing shingles, flashing failures, and water intrusion. <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Get emergency repairs in ${cityName}</a>.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Professional Roof Inspections</h3>
+  <p>Our comprehensive 21-point roof inspection covers every critical component including underlayment condition, flashing integrity, ventilation adequacy, and structural soundness. Perfect for pre-purchase evaluations, insurance documentation, and maintenance planning. <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Schedule a ${cityName} roof inspection</a>.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Roof Replacement Systems</h3>
+  <p>We install all major roofing systems in ${cityName} including architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat roofing. Every installation includes manufacturer-backed warranties, building code compliance, and HVHZ certification where required.</p>
+
+  <h2>Serving ${cityName} from Our Deerfield Beach Headquarters</h2>
+  <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing consistent, reliable roofing services throughout ${cityName} and surrounding South Florida communities. Our central location enables rapid response times and efficient project coordination across Broward and Palm Beach Counties.</p>
+
+  <h2>Get Started with Your ${cityName} Roofing Project</h2>
+  <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist. We provide free professional inspections, transparent estimates, and detailed project timelines for all ${cityName} roofing services.</p>
+
   ${companyAuthorityFooter()}
 </section>
 `.trim();
 }
 
 /**
- * Generate generic page content for blogs, service pages, and other routes
- * Ensures minimum 300+ word count on all pages with authoritative voice
+ * SILO 2: Roof Repair Page - /roof-repair/[city]
+ * High-intent repair leads with emergency response focus
  */
-function defaultGenericPageContent(pageTitle) {
+function generateRoofRepairContent(cityName, citySlug) {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Repair in ${cityName}, FL | Emergency Response Available</h1>
+
+  <p><strong>Need roof repair in ${cityName}?</strong> All Phase Construction USA provides fast, professional roof repair services throughout ${cityName}, Florida. Serving ${cityName} from our Deerfield Beach headquarters, we handle emergency leaks, storm damage, flashing failures, and all structural roofing issues with dual-licensed expertise (CCC-1331464 & CGC-1526236).</p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Emergency Roof Repair in ${cityName}</h3>
+    <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">📞 Call (754) 227-5605 for Same-Day Emergency Service</p>
+    <p style="margin-bottom: 1rem; color: #7f1d1d;">Active leaks, storm damage, missing shingles, and emergency tarping available throughout ${cityName}.</p>
+    <p style="margin-bottom: 0; color: #7f1d1d;">
+      💡 <strong>Not sure if you need a repair?</strong> Start with our <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">professional ${cityName} roof inspection</a> – free estimates included.
+    </p>
+  </div>
+
+  <h2>Common Roof Repairs We Handle in ${cityName}</h2>
+  <p>All Phase Construction USA diagnoses and repairs all roofing system failures throughout ${cityName}:</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Active Leak Detection & Repair</h3>
+  <p>Water intrusion requires immediate professional attention. We use advanced moisture detection to locate hidden leaks, trace water paths through the roof assembly, and implement permanent repairs that address both visible symptoms and underlying causes. Our ${cityName} leak repair service includes comprehensive moisture mapping and documentation for insurance claims.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Storm Damage Assessment & Mitigation</h3>
+  <p>South Florida storms can cause significant roofing damage. We provide rapid storm damage assessment throughout ${cityName} including missing shingle replacement, tile re-bedding, flashing reconstruction, and emergency tarping to prevent additional water intrusion. Our detailed documentation supports insurance claim submissions.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Flashing Failures & Penetration Repairs</h3>
+  <p>Roof penetrations (chimneys, vents, skylights) and transition points (walls, valleys, eaves) require specialized flashing systems. We repair failed flashing installations, upgrade inadequate flashing details, and ensure all penetrations are properly sealed and code-compliant for ${cityName} building requirements.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Tile & Shingle Replacement</h3>
+  <p>Individual damaged tiles and shingles can be replaced without full roof replacement. We match existing materials, colors, and profiles to maintain aesthetic continuity while addressing localized damage throughout ${cityName} properties.</p>
+
+  <h2>Why ${cityName} Property Owners Trust Our Repair Service</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Dual-Licensed Expertise:</strong> Our CCC and CGC licenses mean we assess structural integrity alongside surface repairs – critical for identifying hidden damage that standard roofers miss.</li>
+    <li><strong>Same-Day Emergency Response:</strong> Our Deerfield Beach headquarters enables rapid deployment to ${cityName} emergency repair calls with fully-equipped service vehicles.</li>
+    <li><strong>Insurance Documentation:</strong> We provide detailed photo documentation, moisture readings, and scope-of-work reports that support ${cityName} insurance claim submissions.</li>
+    <li><strong>Permanent Solutions:</strong> We address root causes, not just symptoms, ensuring repairs last and preventing recurring problems.</li>
+  </ul>
+
+  <h2>The All Phase Construction USA Repair Process</h2>
+  <p>Our ${cityName} roof repair service follows a proven diagnostic and repair protocol:</p>
+  <ol style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Emergency Response:</strong> We deploy to ${cityName} locations within hours for active leaks and storm damage emergencies.</li>
+    <li><strong>Comprehensive Inspection:</strong> Our technicians perform thorough roof inspections to identify all damage – not just obvious problems.</li>
+    <li><strong>Detailed Estimate:</strong> We provide transparent pricing with itemized repair scopes and photo documentation.</li>
+    <li><strong>Professional Repair:</strong> All work follows manufacturer specifications and building code requirements.</li>
+    <li><strong>Quality Verification:</strong> We test all repairs and provide warranty documentation for ${cityName} customers.</li>
+  </ol>
+
+  <h2>Serving ${cityName} from Our Deerfield Beach Headquarters</h2>
+  <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing consistent, reliable roof repair services throughout ${cityName} and surrounding Broward and Palm Beach County communities. Our central location enables rapid emergency response and efficient project coordination.</p>
+
+  <h2>Schedule Your ${cityName} Roof Repair</h2>
+  <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist. We provide same-day emergency service and free professional inspections for all ${cityName} roof repair needs.</p>
+
+  <p style="margin-top: 1.5rem; padding: 1rem; background: #f3f4f6; border-radius: 0.5rem;">
+    <strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Professional ${cityName} roof inspection</a>
+  </p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * SILO 3: Roof Inspection Page - /roof-inspection/[city]
+ * Top-of-funnel lead capture with 21-point inspection focus
+ */
+function generateRoofInspectionContent(cityName, citySlug) {
+  return `
+<section id="seo-static-content">
+  <h1>${cityName} Roof Inspection | 21-Point Professional Assessment</h1>
+
+  <p><strong>Professional roof inspection in ${cityName}, Florida.</strong> All Phase Construction USA provides comprehensive 21-point roof inspections throughout ${cityName} for pre-purchase evaluations, insurance documentation, maintenance planning, and storm damage assessment. Serving ${cityName} from our Deerfield Beach headquarters with dual-licensed expertise (CCC-1331464 & CGC-1526236).</p>
+
+  <div style="background: #ecfdf5; border-left: 4px solid #059669; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #065f46; margin-bottom: 0.75rem;">Free ${cityName} Roof Inspection</h3>
+    <p style="margin-bottom: 0.5rem; color: #064e3b; font-weight: bold;">📋 Includes: Photo Documentation, Written Report, Cost Estimate</p>
+    <p style="margin-bottom: 1rem; color: #064e3b;">Call (754) 227-5605 to schedule your professional ${cityName} roof inspection. Same-day availability throughout Broward and Palm Beach Counties.</p>
+    <p style="margin-bottom: 0; color: #064e3b;">
+      🔧 <strong>Already know you need repairs?</strong> <a href="/roof-repair/${citySlug}" style="color: #059669; text-decoration: underline; font-weight: bold;">Get fast ${cityName} roof repair service</a>.
+    </p>
+  </div>
+
+  <h2>Why ${cityName} Property Owners Choose Our Inspection Service</h2>
+  <p>All Phase Construction USA's ${cityName} roof inspections go beyond surface-level assessments. Our dual-licensed expertise (CCC & CGC) means we evaluate structural integrity, building code compliance, and long-term performance – not just shingle condition.</p>
+
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>21-Point Comprehensive Assessment:</strong> We inspect every critical roof component from underlayment to ventilation systems.</li>
+    <li><strong>Dual-Licensed Expertise:</strong> Our CCC and CGC licenses provide structural engineering insight that standard roofing inspectors cannot offer.</li>
+    <li><strong>Detailed Photo Documentation:</strong> Every ${cityName} inspection includes comprehensive photo documentation suitable for insurance submissions and real estate transactions.</li>
+    <li><strong>Written Professional Reports:</strong> We provide clear, detailed written reports with findings, recommendations, and cost estimates.</li>
+    <li><strong>HVHZ Compliance Verification:</strong> We assess High Velocity Hurricane Zone compliance for ${cityName} properties requiring enhanced wind protection.</li>
+  </ul>
+
+  <h2>Our 21-Point ${cityName} Roof Inspection Checklist</h2>
+  <p>All Phase Construction USA's comprehensive inspection protocol covers every critical roofing system component:</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Exterior Roof Assessment</h3>
+  <ul style="line-height: 1.75;">
+    <li>Shingle, tile, or membrane condition and remaining lifespan</li>
+    <li>Missing, damaged, or loose roofing materials</li>
+    <li>Flashing integrity at all penetrations and transitions</li>
+    <li>Valley condition and water channeling effectiveness</li>
+    <li>Ridge cap installation and ventilation adequacy</li>
+    <li>Soffit, fascia, and eave condition</li>
+    <li>Gutter and downspout functionality</li>
+  </ul>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Structural Assessment</h3>
+  <ul style="line-height: 1.75;">
+    <li>Decking condition and structural soundness</li>
+    <li>Rafter and truss integrity (where accessible)</li>
+    <li>Load-bearing capacity and deflection concerns</li>
+    <li>Roof-to-wall connection compliance (HVHZ properties)</li>
+  </ul>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Interior Inspection</h3>
+  <ul style="line-height: 1.75;">
+    <li>Attic ventilation adequacy and airflow patterns</li>
+    <li>Insulation condition and R-value compliance</li>
+    <li>Active or historical water intrusion evidence</li>
+    <li>Moisture readings and humidity levels</li>
+    <li>Mold, mildew, or biological growth indicators</li>
+  </ul>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Penetrations & Accessories</h3>
+  <ul style="line-height: 1.75;">
+    <li>Chimney flashing and cap condition</li>
+    <li>Vent pipe boots and seals</li>
+    <li>Skylight integrity and flashing</li>
+    <li>HVAC penetrations and supports</li>
+    <li>Satellite dish and antenna mounting</li>
+  </ul>
+
+  <h2>Common ${cityName} Roof Inspection Scenarios</h2>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Pre-Purchase Home Inspections</h3>
+  <p>Buying a ${cityName} property? Our roof inspection provides accurate remaining lifespan estimates, identifies required repairs, and establishes negotiation leverage. We deliver detailed reports within 24 hours to meet real estate closing timelines.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Insurance Documentation</h3>
+  <p>Insurance companies require professional roof inspections for policy renewals and claim submissions. Our ${cityName} inspections include comprehensive photo documentation, moisture readings, and detailed condition reports that meet insurance adjuster requirements.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Storm Damage Assessment</h3>
+  <p>After severe weather events, our ${cityName} storm damage inspections identify all wind and hail damage including subtle underlayment compromise that untrained observers miss. We provide documentation that supports insurance claim submissions.</p>
+
+  <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Maintenance Planning</h3>
+  <p>Proactive maintenance extends roof lifespan and prevents expensive emergency repairs. Our annual ${cityName} inspection service identifies minor issues before they become major problems.</p>
+
+  <h2>What You Receive with Your ${cityName} Inspection</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Comprehensive Photo Documentation:</strong> Detailed photos of all roof areas including close-ups of any concerns</li>
+    <li><strong>Written Professional Report:</strong> Clear findings with specific recommendations and priority ratings</li>
+    <li><strong>Cost Estimates:</strong> Transparent pricing for any recommended repairs or maintenance</li>
+    <li><strong>Lifespan Assessment:</strong> Realistic remaining lifespan estimate for budget planning</li>
+    <li><strong>Insurance Support:</strong> Documentation formatted for ${cityName} insurance submissions if needed</li>
+  </ul>
+
+  <h2>Serving ${cityName} from Our Deerfield Beach Headquarters</h2>
+  <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing professional roof inspection services throughout ${cityName} and surrounding Broward and Palm Beach County communities. Our central location enables same-day inspection availability and rapid report delivery.</p>
+
+  <h2>Schedule Your Free ${cityName} Roof Inspection</h2>
+  <p><strong>Call (754) 227-5605</strong> to schedule your professional 21-point roof inspection. We provide same-day availability, detailed photo documentation, and written reports within 24 hours for all ${cityName} properties.</p>
+
+  <p style="margin-top: 1.5rem; padding: 1rem; background: #f3f4f6; border-radius: 0.5rem;">
+    <strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Emergency ${cityName} roof repairs</a>
+  </p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * Generate default service page content (residential, commercial, metal, tile, etc.)
+ */
+function defaultServicePageContent(pageTitle) {
   return `
 <section id="seo-static-content">
   <h1>${pageTitle}</h1>
@@ -230,564 +315,301 @@ function defaultGenericPageContent(pageTitle) {
 `.trim();
 }
 
-function injectMetaTags(html, metadata) {
-  // FIRST: Inject CSS to ensure static content is visible and properly styled
-  const seoStaticCSS = `
-  <style id="seo-static-styles">
-    /* CRITICAL: Ensure static SEO content is ALWAYS visible to crawlers */
-    #seo-static {
-      display: block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      position: relative !important;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      line-height: 1.75;
-      color: #1f2937;
-      background: #ffffff;
-    }
-    #seo-static * {
-      visibility: visible !important;
-      opacity: 1 !important;
-    }
-    #seo-static h1 {
-      font-size: 2.25rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      color: #111827;
-    }
-    #seo-static h2 {
-      font-size: 1.875rem;
-      font-weight: bold;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: #111827;
-    }
-    #seo-static h3 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-      color: #111827;
-    }
-    #seo-static p {
-      margin-bottom: 1rem;
-      color: #374151;
-    }
-    #seo-static ul, #seo-static ol {
-      margin-bottom: 1rem;
-      padding-left: 2rem;
-      color: #374151;
-    }
-    #seo-static li {
-      margin-bottom: 0.5rem;
-    }
-    #seo-static strong {
-      font-weight: 600;
-      color: #111827;
-    }
-    #seo-static em {
-      font-style: italic;
-    }
-    #seo-static a {
-      color: #dc2626;
-      text-decoration: underline;
-    }
-    #seo-static a:hover {
-      color: #991b1b;
-    }
-  </style>`;
-
-  // Inject CSS before </head>
-  html = html.replace('</head>', `  ${seoStaticCSS}\n  </head>`);
-
-  // Replace or inject title
-  const titleRegex = /<title>.*?<\/title>/;
-  if (html.match(titleRegex)) {
-    html = html.replace(titleRegex, `<title>${metadata.title}</title>`);
-  } else {
-    html = html.replace(
-      '</head>',
-      `  <title>${metadata.title}</title>\n  </head>`
-    );
-  }
-
-  // Replace or inject meta description
-  if (html.includes('name="description"')) {
-    html = html.replace(
-      /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/,
-      `<meta name="description" content="${metadata.description}" />`
-    );
-  } else {
-    html = html.replace(
-      '</head>',
-      `  <meta name="description" content="${metadata.description}" />\n  </head>`
-    );
-  }
-
-  // Replace or inject canonical
-  const canonicalRegex = /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/;
-  if (html.match(canonicalRegex)) {
-    html = html.replace(
-      canonicalRegex,
-      `<link rel="canonical" href="${metadata.canonical}" />`
-    );
-  } else {
-    html = html.replace(
-      '</head>',
-      `  <link rel="canonical" href="${metadata.canonical}" />\n  </head>`
-    );
-  }
-
-  // Replace or inject Open Graph tags
-  const ogTags = [
-    { property: 'og:title', content: metadata.title },
-    { property: 'og:description', content: metadata.description },
-    { property: 'og:url', content: metadata.canonical }
-  ];
-
-  ogTags.forEach(tag => {
-    const pattern = new RegExp(`<meta\\s+property="${tag.property}"\\s+content="[^"]*"\\s*\/?>`, 'g');
-    if (html.match(pattern)) {
-      html = html.replace(pattern, `<meta property="${tag.property}" content="${tag.content}" />`);
-    } else {
-      html = html.replace(
-        '</head>',
-        `  <meta property="${tag.property}" content="${tag.content}" />\n  </head>`
-      );
-    }
-  });
-
-  // Replace or inject Twitter Card tags
-  const twitterTags = [
-    { name: 'twitter:title', content: metadata.title },
-    { name: 'twitter:description', content: metadata.description }
-  ];
-
-  twitterTags.forEach(tag => {
-    const pattern = new RegExp(`<meta\\s+name="${tag.name}"\\s+content="[^"]*"\\s*\/?>`, 'g');
-    if (html.match(pattern)) {
-      html = html.replace(pattern, `<meta name="${tag.name}" content="${tag.content}" />`);
-    } else {
-      html = html.replace(
-        '</head>',
-        `  <meta name="${tag.name}" content="${tag.content}" />\n  </head>`
-      );
-    }
-  });
-
-  return html;
-}
-
-function injectCanonicalOnly(html, canonical) {
-  // Replace or inject canonical only (for sitemap URLs)
-  const canonicalRegex = /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/;
-  if (html.match(canonicalRegex)) {
-    html = html.replace(
-      canonicalRegex,
-      `<link rel="canonical" href="${canonical}" />`
-    );
-  } else {
-    html = html.replace(
-      '</head>',
-      `  <link rel="canonical" href="${canonical}" />\n  </head>`
-    );
-  }
-  return html;
-}
-
-function parseSitemapUrls(sitemapPath) {
-  if (!fs.existsSync(sitemapPath)) {
-    console.log('⚠️  sitemap.html not found, skipping sitemap URL prerendering');
-    return [];
-  }
-
-  const sitemapHtml = fs.readFileSync(sitemapPath, 'utf-8');
-  const hrefRegex = /href="([^"]+)"/g;
-  const urls = new Set();
-  let match;
-
-  while ((match = hrefRegex.exec(sitemapHtml)) !== null) {
-    let url = match[1];
-
-    // Convert full domain URLs to paths
-    if (url.includes('allphaseconstructionfl.com')) {
-      url = url.replace(/https?:\/\/allphaseconstructionfl\.com/, '');
-    }
-
-    // Only process internal paths
-    if (!url.startsWith('/')) {
-      continue;
-    }
-
-    // Remove query strings and hash fragments
-    url = url.split('?')[0].split('#')[0];
-
-    // Remove trailing slash
-    url = url.replace(/\/$/, '');
-
-    // Exclude root path
-    if (url === '' || url === '/') {
-      continue;
-    }
-
-    // Exclude paths with file extensions
-    if (/\.(js|css|png|jpg|jpeg|gif|svg|webp|xml|txt|ico|map|html)$/i.test(url)) {
-      continue;
-    }
-
-    urls.add(url);
-  }
-
-  return Array.from(urls).sort();
-}
-
-async function prerenderStaticPages() {
-  console.log('\n🔧 Starting static HTML prerendering to public/...\n');
-
-  // Read the base index.html from project root
-  const indexPath = path.join(projectRoot, 'index.html');
-  if (!fs.existsSync(indexPath)) {
-    console.error('❌ Error: index.html not found in project root.');
-    process.exit(1);
-  }
-
-  const baseHtml = fs.readFileSync(indexPath, 'utf-8');
-  console.log('✓ Read base index.html from project root');
-
-  // PASS 0: Generate homepage with correct title and content
-  console.log('\n🏠 Pass 0: Generating homepage with SEO metadata and content...\n');
-  const homepageMetadata = getSEOMetadata('/');
-
-  // Generate comprehensive homepage content with high word count
-  const homepageContent = `
+/**
+ * Generate homepage content
+ */
+function homepageContent() {
+  return `
 <section id="seo-static-content">
   <h1>All Phase Construction USA | Dual-Licensed Roofing Specialist</h1>
   <p><strong>Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.</strong></p>
 
   <h2>Our Edge</h2>
   <p>What sets us apart from standard roofing contractors:</p>
-
-  <h3>Dual-Licensed (CCC & CGC)</h3>
-  <p>We bring structural engineering oversight to every roof, ensuring your home is protected from the ground up. Our dual licensing as both a State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) means comprehensive expertise beyond what standard roofers can provide. This unique combination allows us to evaluate the complete structural integrity of your roofing system, from the foundation to the final shingle.</p>
-
-  <h3>HVHZ Certified</h3>
-  <p>Specializing in High-Velocity Hurricane Zone compliance to meet the strictest Florida building codes. Every installation meets or exceeds wind rating requirements for maximum protection against South Florida's severe weather conditions. Our HVHZ certification ensures your roof is engineered to withstand hurricane-force winds, providing peace of mind during storm season.</p>
-
-  <h3>Owner-Operator Lead</h3>
-  <p>Every project is managed directly by the contractor, providing a level of accountability and precision standard roofers can't match. No sales teams—just direct access to expertise. When you work with All Phase Construction USA, you're working with a true specialist who personally oversees every aspect of your roofing project from initial inspection through final installation and beyond.</p>
-
-  <h2>Professional Roofing Services</h2>
-  <p>All Phase Construction USA provides comprehensive roofing services for residential and commercial properties throughout South Florida. Our services include complete roof replacements, emergency roof repairs, professional roof inspections, metal roofing installations, tile roofing systems, shingle roof replacements, flat roofing solutions, and commercial roofing services. We specialize in all major roofing materials including concrete tile, clay tile, asphalt shingles, metal roofing, and TPO flat roofing systems.</p>
-
-  <h2>Service Area Overview</h2>
-  <p>From our central hub in <a href="/locations/deerfield-beach">Deerfield Beach</a>, we provide professional roofing repairs and full replacements across South Florida, including Parkland, Boca Raton, Coconut Creek, Coral Springs, Fort Lauderdale, Pompano Beach, West Palm Beach, Delray Beach, Boynton Beach, and surrounding cities throughout Broward County and Palm Beach County. Our strategic location in Deerfield Beach allows us to efficiently serve over 60 communities across Southeast Florida with prompt response times and consistent, high-quality service.</p>
-
-  <h2>Why Choose All Phase Construction USA</h2>
-  <p>With over 22 years of experience serving South Florida homeowners and businesses, we've completed more than 2,500 successful roofing installations and earned hundreds of 5-star reviews. Our commitment to quality workmanship, transparent pricing, and customer satisfaction has made us one of the most trusted roofing contractors in Broward and Palm Beach Counties. Every project is backed by comprehensive warranties on both materials and workmanship, giving you complete confidence in your roofing investment.</p>
-
-  <p><strong>Licensed and Insured Roofing Contractor:</strong> CCC-1331464 (State Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor). Fully insured with comprehensive liability coverage for your protection.</p>
-
-  <p><strong>Contact us today at (754) 227-5605 for a free roofing inspection and estimate.</strong></p>
-
-  ${companyAuthorityFooter()}
-</section>
-`.trim();
-
-  let homepageHtml = injectMetaTags(baseHtml, homepageMetadata);
-
-  // CRITICAL FIX: Inject homepage content BEFORE React root to prevent React from clearing it
-  homepageHtml = homepageHtml.replace(
-    '<div id="root"></div>',
-    `<div id="seo-static">${homepageContent}</div>\n    <div id="root"></div>`
-  );
-
-  const homepageFile = path.join(publicDir, 'index.html');
-  fs.writeFileSync(homepageFile, homepageHtml, 'utf-8');
-  console.log(`✓ Generated: public/index.html`);
-  console.log(`  Title: ${homepageMetadata.title}`);
-  console.log(`  Word Count: ~500+ words of static content\n`);
-
-  // PASS 1: Generate static HTML for city routes
-  console.log('\n📍 Pass 1: Generating city pages...\n');
-  cities.forEach(city => {
-    const urlPath = `/locations/${city.parent}/service-area/${city.slug}`;
-    const metadata = getSEOMetadata(urlPath);
-
-    const routePath = urlPath.replace(/^\//, '');
-    const targetDir = path.join(publicDir, routePath);
-    const targetFile = path.join(targetDir, 'index.html');
-
-    // Create directory structure
-    fs.mkdirSync(targetDir, { recursive: true });
-
-    // Get content for this city (unique or default)
-    const injectedContent = (cityContent?.[city.slug]?.serviceAreaHtml && cityContent[city.slug].serviceAreaHtml.trim())
-      ? cityContent[city.slug].serviceAreaHtml
-      : defaultServiceAreaHtml(city.city, city.slug);
-
-    // Inject metadata
-    let htmlWithMeta = injectMetaTags(baseHtml, metadata);
-
-    // CRITICAL FIX: Inject body content BEFORE React root
-    htmlWithMeta = htmlWithMeta.replace(
-      '<div id="root"></div>',
-      `<div id="seo-static">${injectedContent}</div>\n    <div id="root"></div>`
-    );
-
-    // Write file
-    fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
-
-    console.log(`✓ Generated: ${routePath}/index.html`);
-    console.log(`  Title: ${metadata.title}`);
-  });
-
-  // PASS 1.5: Generate service area hub page
-  console.log('\n📋 Pass 1.5: Generating service area hub page...\n');
-  const hubUrlPath = '/locations/deerfield-beach/service-area';
-  const hubMetadata = getSEOMetadata(hubUrlPath);
-
-  const hubRoutePath = hubUrlPath.replace(/^\//, '');
-  const hubTargetDir = path.join(publicDir, hubRoutePath);
-  const hubTargetFile = path.join(hubTargetDir, 'index.html');
-
-  // Create directory structure
-  fs.mkdirSync(hubTargetDir, { recursive: true });
-
-  // Generate hub page content
-  const hubContent = `
-<section id="seo-static-content">
-  <h1>Service Areas - Deerfield Beach Headquarters</h1>
-  <p>All Phase Construction USA serves Broward County and Palm Beach County from our Deerfield Beach headquarters at 590 Goolsby Blvd. We provide professional roofing services to all cities in both counties.</p>
-  <h2>Service Coverage</h2>
   <ul>
-    <li>51 cities across Broward & Palm Beach Counties</li>
-    <li>Same-day inspection availability</li>
-    <li>HVHZ-compliant roofing solutions</li>
-    <li>Licensed & insured (CCC-1331464, CGC-1526236)</li>
+    <li><strong>Dual-Licensed Authority:</strong> Both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses provide structural engineering expertise standard roofers lack.</li>
+    <li><strong>HVHZ Specialist:</strong> Every South Florida installation meets High Velocity Hurricane Zone compliance with 175+ mph wind ratings.</li>
+    <li><strong>Owner-Operator Accountability:</strong> Direct contractor involvement on every project ensures precision and quality franchise operations cannot match.</li>
+    <li><strong>Deerfield Beach Headquarters:</strong> Central location enables same-day inspection availability and rapid emergency response throughout Broward and Palm Beach Counties.</li>
   </ul>
-  ${companyAuthorityFooter()}
-</section>
-`.trim();
 
-  // Inject metadata
-  let hubHtmlWithMeta = injectMetaTags(baseHtml, hubMetadata);
+  <h2>Comprehensive Roofing Services</h2>
+  <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including emergency roof repairs, professional roof inspections, complete roof replacements, tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC), roof maintenance programs, and storm damage restoration.</p>
 
-  // CRITICAL FIX: Inject body content BEFORE React root
-  hubHtmlWithMeta = hubHtmlWithMeta.replace(
-    '<div id="root"></div>',
-    `<div id="seo-static">${hubContent}</div>\n    <div id="root"></div>`
-  );
+  <h2>Service Area</h2>
+  <p>From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities across Broward County and Palm Beach County including Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, Parkland, Coconut Creek, West Palm Beach, Delray Beach, Boynton Beach, Wellington, and all surrounding communities.</p>
 
-  // Write file
-  fs.writeFileSync(hubTargetFile, hubHtmlWithMeta, 'utf-8');
-
-  console.log(`✓ Generated: ${hubRoutePath}/index.html`);
-  console.log(`  Title: ${hubMetadata.title}`);
-
-  // PASS 1.6: Deerfield Beach HQ page - REMOVED FROM PRERENDERING
-  // This page is now handled 100% by React Router so it gets the full Layout wrapper (Header/Footer)
-  // SEO is handled by the DeerfieldBeachCityPage component's Helmet tags
-  console.log('\n🏠 Pass 1.6: Deerfield Beach HQ page - SKIPPED (handled by React Router with full Layout)');
-  console.log('   Route: /locations/deerfield-beach');
-  console.log('   Component: DeerfieldBeachCityPage.tsx');
-  console.log('   Layout: Header + Footer from App.tsx wrapper');
-
-  // PASS 1.7: Generate Top 5 Roofer pages
-  console.log('\n⭐ Pass 1.7: Generating Top 5 Roofer pages...\n');
-  const topRooferCities = [
-    'boca-raton',
-    'boynton-beach',
-    'coconut-creek',
-    'coral-springs',
-    'fort-lauderdale',
-    'west-palm-beach',
-    'broward-county',
-    'palm-beach-county'
-  ];
-
-  topRooferCities.forEach(citySlug => {
-    const urlPath = `/locations/deerfield-beach/service-area/${citySlug}/top-5-roofer`;
-    const metadata = getSEOMetadata(urlPath);
-
-    const routePath = urlPath.replace(/^\//, '');
-    const targetDir = path.join(publicDir, routePath);
-    const targetFile = path.join(targetDir, 'index.html');
-
-    // Create directory structure
-    fs.mkdirSync(targetDir, { recursive: true });
-
-    const cityName = seoTitlesConfig.cityNames[citySlug] || citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-
-    // Generate Top 5 Roofer content with comprehensive dual-licensing explanation
-    const topRooferContent = `
-<section id="seo-static-content">
-  <h1>Top 5 Best Roofers in ${cityName}, FL | All Phase Construction USA</h1>
-  <p><strong>When looking for the top roofing contractors in ${cityName}, licensing is the most critical factor.</strong> As a Dual-Licensed Roofing and General Contractor, All Phase Construction USA provides structural oversight that standard roofers cannot match.</p>
-
-  <p><em>Comparing the top 5 roofers in ${cityName}? Discover why local homeowners trust a Dual-Licensed (CCC/CGC) Specialist for HVHZ-compliant roofing.</em></p>
-
-  <h2>Why Dual-Licensed (CCC/CGC) Contractors Are Top Choices for Hurricane-Zone Roofing</h2>
-
-  <p>When evaluating the top 5 roofers in ${cityName}, Florida, the most critical distinction is whether the contractor holds both a State Certified Roofing Contractor (CCC) license and a Certified General Contractor (CGC) license. This dual-licensing represents a level of expertise and structural knowledge that standard roofing contractors simply cannot provide.</p>
-
-  <p>In South Florida's High Velocity Hurricane Zone (HVHZ), roofing systems must integrate seamlessly with the home's structural framework. A dual-licensed contractor brings comprehensive understanding of load-bearing calculations, wind uplift requirements, and structural engineering principles that go far beyond basic roofing installation. This is especially crucial in ${cityName}, where building codes mandate enhanced fastening patterns, impact-rated materials, and roof-to-wall connections engineered to withstand 175+ mph wind speeds.</p>
-
-  <p>The CCC license (Certified Roofing Contractor) demonstrates mastery of roofing systems, materials, and installation techniques. The CGC license (Certified General Contractor) validates broader construction expertise, including structural assessment, permitting coordination, and multi-trade integration. When combined, these credentials ensure that your roof is not just installed—it's engineered as an integral part of your home's hurricane protection system.</p>
-
-  <p>Most roofing contractors in ${cityName} hold only a CCC license. While they can competently install roofing materials, they lack the structural engineering oversight that a CGC-licensed contractor provides. This distinction becomes critical when evaluating roof deck condition, addressing structural deficiencies, or coordinating with building officials on complex HVHZ compliance issues. A dual-licensed specialist can identify and resolve structural concerns that standard roofers might miss—preventing costly callbacks, failed inspections, or worse, roof failure during hurricane conditions.</p>
-
-  <p>For ${cityName} homeowners researching the top 5 best roofers in their area, prioritizing dual-licensed (CCC/CGC) contractors ensures you're working with a professional who brings both specialized roofing knowledge and comprehensive construction expertise to your project. This combination is particularly valuable for older homes requiring structural upgrades, complex architectural designs, or properties with previous roof issues that require diagnosis beyond surface-level repairs.</p>
-
-  <h2>Key Factors We Evaluate When Ranking Top Roofers</h2>
-  <ol>
-    <li><strong>Dual-Licensing (CCC & CGC)</strong> – As a Dual-Licensed Roofing Specialist (CCC-1331464) and General Contractor (CGC-1526236), our team brings structural engineering oversight to every roofing project—something standard roofers cannot provide.</li>
-    <li><strong>HVHZ Compliance Experience</strong> – High Velocity Hurricane Zone certification isn't optional in ${cityName}—it's critical. Our team specializes in code-compliant installations that pass the strictest wind ratings and building department inspections.</li>
-    <li><strong>Owner-Operator Accountability</strong> – When you hire All Phase Construction USA, you're working directly with the Specialist—not a sales team or subcontractors. Our owner personally oversees every project from permitting to final inspection.</li>
-    <li><strong>Local Deerfield Beach Headquarters</strong> – Based at 590 Goolsby Blvd in Deerfield Beach, we serve ${cityName} with consistent, local supervision. No out-of-state crews, no franchises—just accountable, local expertise.</li>
-    <li><strong>Hurricane-Ready Material Selection</strong> – We exclusively specify roofing materials engineered for South Florida's extreme weather—high-wind-rated tiles, impact-resistant shingles, and corrosion-resistant metal systems that exceed manufacturer warranties.</li>
-  </ol>
-
-  <h2>Comprehensive Roofing Services in ${cityName}</h2>
-  <p>All Phase Construction USA provides complete residential and commercial roofing services including tile roof installation and repair, metal roofing systems, shingle roof replacement, flat roof systems, TPO and PVC roofing, roof maintenance programs, and emergency repairs. Every installation meets or exceeds HVHZ requirements with proper permits, inspections, and manufacturer-backed warranties.</p>
-
-  <h2>Don't Settle for a Basic Roofer</h2>
-  <p><strong>Get a specialized roofing estimate from a Dual-Licensed expert</strong> who brings both roofing and structural expertise to your ${cityName} project.</p>
-  <p><strong>Call (754) 227-5605</strong> for a professional inspection and estimate from All Phase Construction USA.</p>
+  <p><strong>Call (754) 227-5605 for a free professional roof inspection and estimate.</strong></p>
 
   ${companyAuthorityFooter()}
 </section>
 `.trim();
-
-    // Inject metadata
-    let htmlWithMeta = injectMetaTags(baseHtml, metadata);
-
-    // CRITICAL FIX: Inject body content BEFORE React root
-    htmlWithMeta = htmlWithMeta.replace(
-      '<div id="root"></div>',
-      `<div id="seo-static">${topRooferContent}</div>\n    <div id="root"></div>`
-    );
-
-    // Write file
-    fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
-
-    console.log(`✓ Generated: ${routePath}/index.html`);
-    console.log(`  Title: ${metadata.title}`);
-  });
-
-  // PASS 2: Generate static HTML for roof repair city pages
-  console.log('\n🔧 Pass 2: Generating roof repair city pages...\n');
-  cities.forEach(city => {
-    const routePath = `roofing-services/roof-repair/${city.slug}`;
-    const targetDir = path.join(publicDir, routePath);
-    const targetFile = path.join(targetDir, 'index.html');
-
-    // Create directory structure
-    fs.mkdirSync(targetDir, { recursive: true });
-
-    // Prepare metadata for roof repair page
-    const roofRepairMeta = {
-      title: `Roof Repair in ${city.city}, FL | All Phase Construction USA`,
-      description: `Expert roof repair services in ${city.city}, FL. Licensed and insured roofing contractor specializing in leak repairs and storm damage.`,
-      canonical: `https://allphaseconstructionfl.com/roofing-services/roof-repair/${city.slug}`
-    };
-
-    // Get content for this city (unique or default)
-    const injectedContent = (cityContent?.[city.slug]?.roofRepairHtml && cityContent[city.slug].roofRepairHtml.trim())
-      ? cityContent[city.slug].roofRepairHtml
-      : defaultRoofRepairHtml(city.city);
-
-    // Inject metadata
-    let htmlWithMeta = injectMetaTags(baseHtml, roofRepairMeta);
-
-    // CRITICAL FIX: Inject body content BEFORE React root
-    htmlWithMeta = htmlWithMeta.replace(
-      '<div id="root"></div>',
-      `<div id="seo-static">${injectedContent}</div>\n    <div id="root"></div>`
-    );
-
-    // Write file
-    fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
-
-    console.log(`✓ Generated: ${routePath}/index.html`);
-    console.log(`  Title: ${roofRepairMeta.title}`);
-  });
-
-  // PASS 3: Generate static HTML for ALL sitemap URLs (ALWAYS REGENERATE)
-  console.log('\n📄 Pass 3: Generating ALL sitemap pages with full branded content...\n');
-  const sitemapPath = path.join(publicDir, 'sitemap.html');
-  const sitemapUrls = parseSitemapUrls(sitemapPath);
-
-  if (sitemapUrls.length > 0) {
-    console.log(`Found ${sitemapUrls.length} URLs in sitemap\n`);
-
-    let generatedCount = 0;
-    let skippedCount = 0;
-
-    sitemapUrls.forEach(url => {
-      const routePath = url.replace(/^\//, '');
-      const targetDir = path.join(publicDir, routePath);
-      const targetFile = path.join(targetDir, 'index.html');
-
-      // Skip /locations/deerfield-beach - handled by React Router for full Layout (Header/Footer)
-      if (url === '/locations/deerfield-beach' || url === '/locations/deerfield-beach/') {
-        skippedCount++;
-        console.log(`⏭️  Skipped: ${routePath} (React Router handles this with Layout)`);
-        return;
-      }
-
-      // Skip pages already generated by Pass 1 or Pass 2 with specialized content
-      // (city pages and roof repair pages have custom content, don't overwrite)
-      if (url.includes('/service-area/') || url.includes('/roof-repair/')) {
-        if (fs.existsSync(targetFile)) {
-          skippedCount++;
-          return;
-        }
-      }
-
-      // Create directory structure
-      fs.mkdirSync(targetDir, { recursive: true });
-
-      // Get full SEO metadata for this URL
-      const metadata = getSEOMetadata(url);
-      let htmlWithMetadata = injectMetaTags(baseHtml, metadata);
-
-      // CRITICAL: Inject comprehensive body content for ALL pages
-      // This ensures crawlers see 300+ words of branded content on EVERY page
-      const pageTitle = metadata.title.replace(' | All Phase Construction USA', '').replace(' | All Phase Construction USA Blog', '');
-      const genericContent = defaultGenericPageContent(pageTitle);
-
-      // CRITICAL: Inject content BEFORE React root so it's visible to crawlers
-      htmlWithMetadata = htmlWithMetadata.replace(
-        '<div id="root"></div>',
-        `<div id="seo-static">${genericContent}</div>\n    <div id="root"></div>`
-      );
-
-      // Write file (ALWAYS overwrite to ensure latest content)
-      fs.writeFileSync(targetFile, htmlWithMetadata, 'utf-8');
-
-      generatedCount++;
-
-      // Show detailed output for first 10 pages, then summary
-      if (generatedCount <= 10) {
-        console.log(`✓ Generated: ${routePath}/index.html`);
-        console.log(`  Title: ${metadata.title}`);
-        console.log(`  Word Count: ~${genericContent.split(/\s+/).length} words\n`);
-      } else if (generatedCount % 20 === 0) {
-        console.log(`✓ Progress: ${generatedCount} pages generated...`);
-      }
-    });
-
-    console.log(`\n✅ Generated ${generatedCount} pages with full branded content`);
-    console.log(`⏭️  Skipped ${skippedCount} pages (handled by React Router or specialized)`);
-  }
-
-  console.log('\n✅ Static prerendering to public/ complete!\n');
-  console.log('📦 Files will be copied to dist/ during vite build\n');
 }
 
-prerenderStaticPages().catch(err => {
-  console.error('❌ Prerendering failed:', err);
-  process.exit(1);
-});
+/**
+ * Create base HTML template with proper header, meta tags, and styling
+ */
+function createHTMLTemplate(title, description, canonical, content) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${title}</title>
+    <meta name="description" content="${description}">
+    <link rel="canonical" href="${canonical}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="${title}">
+    <meta property="og:description" content="${description}">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:type" content="website">
+
+    <!-- Critical SEO Static Content Styles -->
+    <style id="seo-static-styles">
+      #seo-static {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        line-height: 1.75;
+        color: #1f2937;
+        background: #ffffff;
+      }
+      #seo-static h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #111827;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+      #seo-static h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #111827;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      #seo-static h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #374151;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+      #seo-static p {
+        margin-bottom: 1rem;
+        color: #374151;
+      }
+      #seo-static ul, #seo-static ol {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+      }
+      #seo-static li {
+        margin-bottom: 0.5rem;
+        color: #374151;
+      }
+      #seo-static a {
+        color: #dc2626;
+        text-decoration: underline;
+      }
+      #seo-static a:hover {
+        color: #991b1b;
+      }
+      #seo-static strong {
+        font-weight: 600;
+        color: #111827;
+      }
+    </style>
+</head>
+<body>
+    <div id="seo-static">${content}</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>`;
+}
+
+/**
+ * Get SEO metadata for a page
+ */
+function getSEOMetadata(urlPath, cityName = null) {
+  const normalizedPath = urlPath.toLowerCase().replace(/\/$/, '');
+
+  // Check static titles
+  if (seoTitlesConfig.staticTitles[normalizedPath]) {
+    return seoTitlesConfig.staticTitles[normalizedPath];
+  }
+
+  // Handle dynamic city pages
+  if (cityName) {
+    if (normalizedPath.includes('/roof-repair/')) {
+      return {
+        title: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
+        description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services. Dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
+        canonical: `https://allphaseconstructionfl.com${normalizedPath}`
+      };
+    }
+    if (normalizedPath.includes('/roof-inspection/')) {
+      return {
+        title: `${cityName} Roof Inspection | 21-Point Professional Assessment`,
+        description: `Professional roof inspection in ${cityName}, FL. Free 21-point assessment with photo documentation. Pre-purchase, insurance, storm damage inspections. Call (754) 227-5605.`,
+        canonical: `https://allphaseconstructionfl.com${normalizedPath}`
+      };
+    }
+    if (normalizedPath.includes('/locations/')) {
+      return {
+        title: `${cityName} Roofing Services | All Phase Construction USA`,
+        description: `Professional roofing services in ${cityName}, FL. Dual-licensed CCC/CGC contractor. Roof repair, inspection, replacement. HVHZ certified. Call (754) 227-5605.`,
+        canonical: `https://allphaseconstructionfl.com${normalizedPath}`
+      };
+    }
+  }
+
+  // Fallback
+  return {
+    title: 'All Phase Construction USA | Dual-Licensed Roofing Specialist',
+    description: 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Call (754) 227-5605',
+    canonical: `https://allphaseconstructionfl.com${normalizedPath}`
+  };
+}
+
+/**
+ * Generate all static HTML files
+ */
+function generateStaticFiles() {
+  console.log('🏗️  Generating 3-Silo Lead Generation Architecture...\n');
+
+  // Create public directory if it doesn't exist
+  if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true });
+  }
+
+  let totalPages = 0;
+
+  // 1. Generate Homepage
+  const homeMetadata = getSEOMetadata('/');
+  const homeHTML = createHTMLTemplate(
+    homeMetadata.title,
+    homeMetadata.description,
+    homeMetadata.canonical,
+    homepageContent()
+  );
+  fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
+  console.log('✓ Generated: public/index.html');
+  totalPages++;
+
+  // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
+  const servicePages = [
+    { path: '/residential-roofing', title: 'Residential Roofing Services' },
+    { path: '/commercial-roofing', title: 'Commercial Roofing Services' },
+    { path: '/metal-roofing', title: 'Metal Roofing Installation & Repair' },
+    { path: '/tile-roofing', title: 'Tile Roofing Installation & Repair' },
+    { path: '/shingle-roofing', title: 'Shingle Roofing Installation & Repair' },
+    { path: '/flat-roofing', title: 'Flat Roofing Systems (TPO & PVC)' },
+    { path: '/roof-inspection', title: 'Professional Roof Inspection Services' },
+    { path: '/roof-maintenance-programs', title: 'Roof Maintenance Programs' },
+    { path: '/roof-replacement-process', title: 'Roof Replacement Process' }
+  ];
+
+  servicePages.forEach(({ path: pagePath, title }) => {
+    const metadata = getSEOMetadata(pagePath);
+    const html = createHTMLTemplate(
+      metadata.title || title,
+      metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
+      metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
+      defaultServicePageContent(title)
+    );
+
+    const dir = path.join(publicDir, pagePath.substring(1));
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), html);
+    console.log(`✓ Generated: public${pagePath}/index.html`);
+    totalPages++;
+  });
+
+  // 3. Generate 3-Silo City Pages for all cities
+  const priorityCities = ['boca-raton', 'fort-lauderdale', 'coral-springs', 'pompano-beach',
+                          'west-palm-beach', 'delray-beach', 'boynton-beach', 'deerfield-beach',
+                          'parkland', 'coconut-creek', 'wellington'];
+
+  console.log('\n📍 Generating 3-Silo City Pages (Service Hub + Repair + Inspection)...\n');
+
+  cities.forEach(({ slug, city }) => {
+    const cityName = city;
+    const citySlug = slug;
+
+    // Skip county-level entries for now
+    if (citySlug.includes('county')) return;
+
+    // SILO 1: Service Hub - /locations/[city]
+    const hubPath = `/locations/${citySlug}`;
+    const hubMetadata = getSEOMetadata(hubPath, cityName);
+    const hubHTML = createHTMLTemplate(
+      hubMetadata.title,
+      hubMetadata.description,
+      hubMetadata.canonical,
+      generateServiceHubContent(cityName, citySlug)
+    );
+    const hubDir = path.join(publicDir, 'locations', citySlug);
+    fs.mkdirSync(hubDir, { recursive: true });
+    fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
+    console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
+    totalPages++;
+
+    // SILO 2: Roof Repair - /roof-repair/[city]
+    const repairPath = `/roof-repair/${citySlug}`;
+    const repairMetadata = getSEOMetadata(repairPath, cityName);
+    const repairHTML = createHTMLTemplate(
+      repairMetadata.title,
+      repairMetadata.description,
+      repairMetadata.canonical,
+      generateRoofRepairContent(cityName, citySlug)
+    );
+    const repairDir = path.join(publicDir, 'roof-repair', citySlug);
+    fs.mkdirSync(repairDir, { recursive: true });
+    fs.writeFileSync(path.join(repairDir, 'index.html'), repairHTML);
+    console.log(`✓ Generated: public/roof-repair/${citySlug}/index.html`);
+    totalPages++;
+
+    // SILO 3: Roof Inspection - /roof-inspection/[city]
+    const inspectionPath = `/roof-inspection/${citySlug}`;
+    const inspectionMetadata = getSEOMetadata(inspectionPath, cityName);
+    const inspectionHTML = createHTMLTemplate(
+      inspectionMetadata.title,
+      inspectionMetadata.description,
+      inspectionMetadata.canonical,
+      generateRoofInspectionContent(cityName, citySlug)
+    );
+    const inspectionDir = path.join(publicDir, 'roof-inspection', citySlug);
+    fs.mkdirSync(inspectionDir, { recursive: true });
+    fs.writeFileSync(path.join(inspectionDir, 'index.html'), inspectionHTML);
+    console.log(`✓ Generated: public/roof-inspection/${citySlug}/index.html`);
+    totalPages++;
+  });
+
+  console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
+  console.log(`\n📊 Architecture Breakdown:`);
+  console.log(`   - Homepage: 1 page`);
+  console.log(`   - Service Pages: ${servicePages.length} pages`);
+  console.log(`   - City Service Hubs: ${cities.filter(c => !c.slug.includes('county')).length} pages`);
+  console.log(`   - City Roof Repairs: ${cities.filter(c => !c.slug.includes('county')).length} pages`);
+  console.log(`   - City Roof Inspections: ${cities.filter(c => !c.slug.includes('county')).length} pages`);
+  console.log(`\n🎯 Lead Generation Structure:`);
+  console.log(`   ✅ Service Hubs: /locations/[city] → Broad authority`);
+  console.log(`   ✅ Repair Spokes: /roof-repair/[city] → High-intent leads`);
+  console.log(`   ✅ Inspection Spokes: /roof-inspection/[city] → Top-of-funnel leads`);
+  console.log(`\n💼 Every page includes:`);
+  console.log(`   ✅ 500-700 words of branded content`);
+  console.log(`   ✅ Inter-page lead-gen links (Hub ↔ Repair ↔ Inspection)`);
+  console.log(`   ✅ Dual-licensing emphasis (CCC & CGC)`);
+  console.log(`   ✅ HVHZ certification messaging`);
+  console.log(`   ✅ "Serving from Deerfield Beach HQ" context`);
+  console.log(`   ✅ Company authority footer (250+ words)`);
+}
+
+// Run the generator
+generateStaticFiles();
