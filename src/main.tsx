@@ -4,10 +4,17 @@ import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
+const rootElement = document.getElementById('root')!;
+
+createRoot(rootElement).render(
   <StrictMode>
     <HelmetProvider>
       <App />
     </HelmetProvider>
   </StrictMode>
 );
+
+const seoStatic = document.getElementById('seo-static');
+if (seoStatic) {
+  seoStatic.remove();
+}
