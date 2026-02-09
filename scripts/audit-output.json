@@ -1,0 +1,32 @@
+{
+  "cities_total": 50,
+  "routes": {
+    "locations": 50,
+    "roof_repair": 50,
+    "roof_inspection": 50
+  },
+  "sample_urls": {
+    "locations": [
+      "/locations/palm-beach",
+      "/locations/hollywood",
+      "/locations/margate"
+    ],
+    "roof_repair": [
+      "/roof-repair/margate",
+      "/roof-repair/miramar",
+      "/roof-repair/plantation"
+    ],
+    "roof_inspection": [
+      "/roof-inspection/boca-raton",
+      "/roof-inspection/deerfield-beach",
+      "/roof-inspection/sunrise"
+    ]
+  },
+  "missing_after_fix": 0,
+  "dynamic_routes_confirmed": {
+    "locations": true,
+    "roof_repair": true,
+    "roof_inspection": true
+  },
+  "canonical_domain": "https://allphaseconstructionfl.com"
+}
