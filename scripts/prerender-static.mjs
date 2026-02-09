@@ -92,6 +92,47 @@ function getSEOMetadata(urlPath) {
   };
 }
 
+/**
+ * Company Authority Footer - Injected on ALL pages to boost word count and E-E-A-T
+ * This ensures no page has 0 word count for Screaming Frog
+ */
+function companyAuthorityFooter() {
+  return `
+<section id="company-authority-footer" style="margin-top: 3rem; padding: 2rem; background: #f9fafb; border-top: 2px solid #e5e7eb;">
+  <h2 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">About All Phase Construction USA</h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>All Phase Construction USA</strong> is a dual-licensed roofing contractor serving Broward County and Palm Beach County from our Deerfield Beach headquarters. We hold both Florida State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses, providing comprehensive structural expertise that standard roofing contractors cannot match.
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Our Dual-Licensed Advantage</h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    As a Dual-Licensed Roofing Specialist, we bring structural engineering oversight to every roofing project. Our dual licensing means we understand not only roofing systems, materials, and installation techniques (CCC license), but also structural assessment, load-bearing calculations, and building code compliance (CGC license). This combination ensures your roof is engineered as an integral part of your home's hurricane protection system.
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">HVHZ Certification & Hurricane Compliance</h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    We specialize in High Velocity Hurricane Zone (HVHZ) compliance throughout South Florida. Every installation meets or exceeds the strictest wind rating requirements, with enhanced fastening schedules, impact-rated materials, and roof-to-wall connections engineered to withstand 175+ mph wind speeds. Our HVHZ expertise ensures your roof passes building department inspections and protects your property during severe weather.
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Complete Roofing Services</h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction USA provides comprehensive residential and commercial roofing services including roof replacement, emergency roof repair, professional roof inspections, tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC), roof maintenance programs, and storm damage restoration. We work with all major roofing materials and provide manufacturer-backed warranties on every installation.
+  </p>
+
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Our Service Area</h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities throughout Broward County and Palm Beach County including Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, Parkland, Coconut Creek, West Palm Beach, Delray Beach, Boynton Beach, Wellington, and surrounding communities.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Licensed & Insured:</strong> CCC-1331464 (State Certified Roofing Contractor) | CGC-1526236 (Certified General Contractor)<br>
+    <strong>Contact:</strong> (754) 227-5605 | 590 Goolsby Blvd, Deerfield Beach, FL 33442
+  </p>
+</section>
+`.trim();
+}
+
 // Helper functions for generating default city-templated content
 function defaultServiceAreaHtml(cityName) {
   return `
@@ -105,6 +146,7 @@ function defaultServiceAreaHtml(cityName) {
     <li>Roof inspections and documentation</li>
     <li>Storm damage assessment and mitigation</li>
   </ul>
+  ${companyAuthorityFooter()}
 </section>
 `.trim();
 }
@@ -121,11 +163,89 @@ function defaultRoofRepairHtml(cityName) {
     <li>Flashing, vents, and penetrations</li>
     <li>Storm damage and emergency tarping</li>
   </ul>
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * Generate generic page content for blogs, service pages, and other routes
+ * Ensures minimum 250+ word count on all pages
+ */
+function defaultGenericPageContent(pageTitle) {
+  return `
+<section id="seo-static-content">
+  <h1>${pageTitle}</h1>
+  <p>Welcome to All Phase Construction USA, your trusted dual-licensed roofing contractor serving Broward County and Palm Beach County from our Deerfield Beach headquarters. We provide professional roofing services backed by both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses.</p>
+  ${companyAuthorityFooter()}
 </section>
 `.trim();
 }
 
 function injectMetaTags(html, metadata) {
+  // FIRST: Inject CSS to ensure static content is visible and properly styled
+  const seoStaticCSS = `
+  <style id="seo-static-styles">
+    /* Ensure static SEO content is visible to crawlers and styled properly */
+    #seo-static {
+      display: block;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      line-height: 1.75;
+      color: #1f2937;
+    }
+    #seo-static h1 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+    #seo-static h2 {
+      font-size: 1.875rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+    #seo-static h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #111827;
+    }
+    #seo-static p {
+      margin-bottom: 1rem;
+      color: #374151;
+    }
+    #seo-static ul, #seo-static ol {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      color: #374151;
+    }
+    #seo-static li {
+      margin-bottom: 0.5rem;
+    }
+    #seo-static strong {
+      font-weight: 600;
+      color: #111827;
+    }
+    #seo-static em {
+      font-style: italic;
+    }
+    #seo-static a {
+      color: #dc2626;
+      text-decoration: underline;
+    }
+    #seo-static a:hover {
+      color: #991b1b;
+    }
+  </style>`;
+
+  // Inject CSS before </head>
+  html = html.replace('</head>', `  ${seoStaticCSS}\n  </head>`);
+
   // Replace or inject title
   const titleRegex = /<title>.*?<\/title>/;
   if (html.match(titleRegex)) {
@@ -314,6 +434,8 @@ async function prerenderStaticPages() {
   <p><strong>Licensed and Insured Roofing Contractor:</strong> CCC-1331464 (State Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor). Fully insured with comprehensive liability coverage for your protection.</p>
 
   <p><strong>Contact us today at (754) 227-5605 for a free roofing inspection and estimate.</strong></p>
+
+  ${companyAuthorityFooter()}
 </section>
 `.trim();
 
@@ -389,6 +511,7 @@ async function prerenderStaticPages() {
     <li>HVHZ-compliant roofing solutions</li>
     <li>Licensed & insured (CCC-1331464, CGC-1526236)</li>
   </ul>
+  ${companyAuthorityFooter()}
 </section>
 `.trim();
 
@@ -445,7 +568,7 @@ async function prerenderStaticPages() {
     const topRooferContent = `
 <section id="seo-static-content">
   <h1>Top 5 Best Roofers in ${cityName}, FL | All Phase Construction USA</h1>
-  <p><strong>When looking for the top roofing contractors in ${cityName}, licensing is the most critical factor.</strong> As a Dual-Licensed Roofing and General Contractor, I provide structural oversight that standard roofers cannot match.</p>
+  <p><strong>When looking for the top roofing contractors in ${cityName}, licensing is the most critical factor.</strong> As a Dual-Licensed Roofing and General Contractor, All Phase Construction USA provides structural oversight that standard roofers cannot match.</p>
 
   <p><em>Comparing the top 5 roofers in ${cityName}? Discover why local homeowners trust a Dual-Licensed (CCC/CGC) Specialist for HVHZ-compliant roofing.</em></p>
 
@@ -461,13 +584,13 @@ async function prerenderStaticPages() {
 
   <p>For ${cityName} homeowners researching the top 5 best roofers in their area, prioritizing dual-licensed (CCC/CGC) contractors ensures you're working with a professional who brings both specialized roofing knowledge and comprehensive construction expertise to your project. This combination is particularly valuable for older homes requiring structural upgrades, complex architectural designs, or properties with previous roof issues that require diagnosis beyond surface-level repairs.</p>
 
-  <h2>Key Factors I Evaluate When Ranking Top Roofers</h2>
+  <h2>Key Factors We Evaluate When Ranking Top Roofers</h2>
   <ol>
-    <li><strong>Dual-Licensing (CCC & CGC)</strong> – As a Dual-Licensed Roofing Specialist (CCC-1331464) and General Contractor (CGC-1526236), I bring structural engineering oversight to every roofing project—something standard roofers cannot provide.</li>
-    <li><strong>HVHZ Compliance Experience</strong> – High Velocity Hurricane Zone certification isn't optional in ${cityName}—it's critical. I specialize in code-compliant installations that pass the strictest wind ratings and building department inspections.</li>
-    <li><strong>Owner-Operator Accountability</strong> – When you hire me, you're working directly with the Specialist—not a sales team or subcontractors. I personally oversee every project from permitting to final inspection.</li>
-    <li><strong>Local Deerfield Beach Headquarters</strong> – Based at 590 Goolsby Blvd in Deerfield Beach, I serve ${cityName} with consistent, local supervision. No out-of-state crews, no franchises—just accountable, local expertise.</li>
-    <li><strong>Hurricane-Ready Material Selection</strong> – I exclusively specify roofing materials engineered for South Florida's extreme weather—high-wind-rated tiles, impact-resistant shingles, and corrosion-resistant metal systems that exceed manufacturer warranties.</li>
+    <li><strong>Dual-Licensing (CCC & CGC)</strong> – As a Dual-Licensed Roofing Specialist (CCC-1331464) and General Contractor (CGC-1526236), our team brings structural engineering oversight to every roofing project—something standard roofers cannot provide.</li>
+    <li><strong>HVHZ Compliance Experience</strong> – High Velocity Hurricane Zone certification isn't optional in ${cityName}—it's critical. Our team specializes in code-compliant installations that pass the strictest wind ratings and building department inspections.</li>
+    <li><strong>Owner-Operator Accountability</strong> – When you hire All Phase Construction USA, you're working directly with the Specialist—not a sales team or subcontractors. Our owner personally oversees every project from permitting to final inspection.</li>
+    <li><strong>Local Deerfield Beach Headquarters</strong> – Based at 590 Goolsby Blvd in Deerfield Beach, we serve ${cityName} with consistent, local supervision. No out-of-state crews, no franchises—just accountable, local expertise.</li>
+    <li><strong>Hurricane-Ready Material Selection</strong> – We exclusively specify roofing materials engineered for South Florida's extreme weather—high-wind-rated tiles, impact-resistant shingles, and corrosion-resistant metal systems that exceed manufacturer warranties.</li>
   </ol>
 
   <h2>Comprehensive Roofing Services in ${cityName}</h2>
@@ -476,6 +599,8 @@ async function prerenderStaticPages() {
   <h2>Don't Settle for a Basic Roofer</h2>
   <p><strong>Get a specialized roofing estimate from a Dual-Licensed expert</strong> who brings both roofing and structural expertise to your ${cityName} project.</p>
   <p><strong>Call (754) 227-5605</strong> for a professional inspection and estimate from All Phase Construction USA.</p>
+
+  ${companyAuthorityFooter()}
 </section>
 `.trim();
 
@@ -549,12 +674,6 @@ async function prerenderStaticPages() {
       const targetDir = path.join(publicDir, routePath);
       const targetFile = path.join(targetDir, 'index.html');
 
-      // Skip if already exists (from city generation)
-      if (fs.existsSync(targetFile)) {
-        skippedCount++;
-        return;
-      }
-
       // Skip /locations/deerfield-beach - handled by React Router for full Layout (Header/Footer)
       if (url === '/locations/deerfield-beach' || url === '/locations/deerfield-beach/') {
         skippedCount++;
@@ -562,18 +681,38 @@ async function prerenderStaticPages() {
         return;
       }
 
+      // Check if this page was already generated by Pass 1 or Pass 2 (city/roof-repair pages)
+      // Skip those to avoid overwriting more specific content
+      if (url.includes('/service-area/') || url.includes('/roof-repair/')) {
+        if (fs.existsSync(targetFile)) {
+          skippedCount++;
+          return;
+        }
+      }
+
       // Create directory structure
       fs.mkdirSync(targetDir, { recursive: true });
 
       // Get full SEO metadata for this URL
       const metadata = getSEOMetadata(url);
-      const htmlWithMetadata = injectMetaTags(baseHtml, metadata);
+      let htmlWithMetadata = injectMetaTags(baseHtml, metadata);
+
+      // CRITICAL FIX: Inject body content for ALL pages (not just metadata)
+      // This ensures Screaming Frog sees 250+ words on every page
+      const pageTitle = metadata.title.replace(' | All Phase Construction USA', '').replace(' | All Phase Construction USA Blog', '');
+      const genericContent = defaultGenericPageContent(pageTitle);
+
+      // Inject content after React root
+      htmlWithMetadata = htmlWithMetadata.replace(
+        '<div id="root"></div>',
+        `<div id="root"></div>\n    <div id="seo-static">${genericContent}</div>`
+      );
 
       // Write file
       fs.writeFileSync(targetFile, htmlWithMetadata, 'utf-8');
 
       generatedCount++;
-      console.log(`✓ Generated: ${routePath}/index.html`);
+      console.log(`✓ Generated: ${routePath}/index.html (with ${genericContent.split(/\s+/).length} words)`);
       if (generatedCount <= 5) {
         console.log(`  Title: ${metadata.title}`);
       }
