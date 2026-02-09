@@ -463,6 +463,11 @@ function createHTMLTemplate(title, description, canonical, content) {
     <meta name="description" content="${description}">
     <link rel="canonical" href="${canonical}">
 
+    <!-- License & Contact Information -->
+    <meta name="license" content="CCC-1331464, CGC-1526236">
+    <meta name="phone" content="(754) 227-5605">
+    <meta name="company" content="All Phase Construction USA">
+
     <!-- Open Graph -->
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
@@ -530,7 +535,16 @@ function createHTMLTemplate(title, description, canonical, content) {
     </style>
 </head>
 <body>
-    <div id="seo-static">${content}</div>
+    <div id="seo-static">
+        <!-- Crawler-Visible License & Contact Header -->
+        <div style="background: #dc2626; color: white; padding: 1rem; text-align: center; margin-bottom: 2rem;">
+            <strong>All Phase Construction USA</strong> |
+            Licensed: CCC-1331464 (Roofing Contractor) & CGC-1526236 (General Contractor) |
+            Phone: <a href="tel:7542275605" style="color: white; text-decoration: underline;">(754) 227-5605</a> |
+            590 Goolsby Blvd, Deerfield Beach, FL 33442
+        </div>
+        ${content}
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 </body>
