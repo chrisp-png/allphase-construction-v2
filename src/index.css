@@ -26,6 +26,21 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  /* Touch-optimized button interaction */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Safe area for devices with notches */
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
 }
 
 :root {
@@ -47,9 +62,32 @@ body {
   max-width: 100%;
   /* Global padding to prevent fixed header from overlapping content on all screen sizes */
   padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px));
+  /* Ensure body stays scrollable when mobile keyboard opens */
+  position: relative;
+  min-height: 100vh;
 }
 
 #root {
   overflow-x: hidden;
   max-width: 100%;
+  /* Ensure root element is scrollable */
+  min-height: calc(100vh - var(--header-height));
+}
+
+/* Mobile keyboard handling - ensure forms remain accessible */
+@media (max-width: 1024px) {
+  body {
+    /* iOS Safari viewport fix for keyboard */
+    min-height: -webkit-fill-available;
+  }
+
+  html {
+    /* iOS Safari viewport fix */
+    height: -webkit-fill-available;
+  }
+
+  /* Ensure forms have adequate spacing from bottom on mobile */
+  form {
+    margin-bottom: 6rem;
+  }
 }

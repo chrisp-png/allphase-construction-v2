@@ -178,11 +178,12 @@ export default function CalculatorLeadCapture({
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-4 rounded-lg font-bold text-lg transition-colors ${
+          className={`w-full min-h-[56px] py-4 rounded-lg font-bold text-lg transition-colors relative z-20 touch-manipulation active:scale-[0.98] ${
             isSubmitting
               ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
               : 'bg-red-600 text-white hover:bg-red-700'
           }`}
+          style={{ touchAction: 'manipulation' }}
         >
           Get My Estimate →
         </button>

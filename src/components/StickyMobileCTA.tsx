@@ -10,7 +10,7 @@ export default function StickyMobileCTA() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[60] lg:hidden bg-white border-t-2 border-red-600 shadow-2xl pointer-events-auto" style={{ touchAction: 'manipulation' }}>
+    <div className="fixed bottom-0 left-0 right-0 z-[50] lg:hidden bg-white border-t-2 border-red-600 shadow-2xl pointer-events-auto safe-area-bottom" style={{ touchAction: 'manipulation', paddingBottom: 'env(safe-area-inset-bottom)' }}>
       <div className="flex items-center justify-between px-4 py-3 gap-3">
         <a
           href="tel:+17542275605"
