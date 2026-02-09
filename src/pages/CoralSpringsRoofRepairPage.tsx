@@ -1,51 +1,11 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function CoralSpringsRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    document.title = 'Coral Springs Roof Repair | Licensed Roofer in Coral Springs FL';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605.';
-      document.head.appendChild(meta);
-    }
-
-    const metaRobots = document.querySelector('meta[name="robots"]');
-    if (metaRobots) {
-      metaRobots.setAttribute('content', 'index, follow');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'robots';
-      meta.content = 'index, follow';
-      document.head.appendChild(meta);
-    }
-
-    let linkCanonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-    if (linkCanonical) {
-      linkCanonical.href = 'https://allphaseconstructionfl.com/roofing-services/roof-repair/coral-springs';
-    } else {
-      linkCanonical = document.createElement('link');
-      linkCanonical.rel = 'canonical';
-      linkCanonical.href = 'https://allphaseconstructionfl.com/roofing-services/roof-repair/coral-springs';
-      document.head.appendChild(linkCanonical);
-    }
-
-    const faqSchemaScript = document.createElement('script');
-    faqSchemaScript.type = 'application/ld+json';
-    faqSchemaScript.text = JSON.stringify(faqSchema);
-    document.head.appendChild(faqSchemaScript);
-
-    return () => {
-      document.head.removeChild(faqSchemaScript);
-    };
   }, []);
 
   const faqSchema = {
@@ -96,7 +56,13 @@ export default function CoralSpringsRoofRepairPage() {
   };
 
   return (
-    <main className="flex-grow pt-20">
+    <>
+      <SEO
+        title="Coral Springs Roof Repair | Licensed Roofer in Coral Springs FL"
+        description="Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605."
+        schema={faqSchema}
+      />
+      <main className="flex-grow pt-20">
       <section id="hero" className="bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 text-white py-20">
             <div className="max-w-6xl mx-auto px-6">
               {/* Breadcrumb */}
@@ -482,6 +448,7 @@ export default function CoralSpringsRoofRepairPage() {
               </div>
             </div>
           </section>
-    </main>
+      </main>
+    </>
   );
 }
