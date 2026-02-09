@@ -54,12 +54,12 @@ export default function InternalLinksBlock({
 
   // Major cities - show if no specific nearby cities provided
   const majorCities: InternalLink[] = showNearbyCities && nearbyCities.length === 0 ? [
-    { label: 'Fort Lauderdale', path: '/locations/deerfield-beach/service-area/fort-lauderdale' },
-    { label: 'Boca Raton', path: '/locations/deerfield-beach/service-area/boca-raton/' },
-    { label: 'West Palm Beach', path: '/locations/deerfield-beach/service-area/west-palm-beach' },
-    { label: 'Pompano Beach', path: '/locations/deerfield-beach/service-area/pompano-beach' },
-    { label: 'Coral Springs', path: '/locations/deerfield-beach/service-area/coral-springs' },
-    { label: 'Delray Beach', path: '/locations/deerfield-beach/service-area/delray-beach' }
+    { label: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
+    { label: 'Boca Raton', path: '/locations/boca-raton' },
+    { label: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { label: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { label: 'Coral Springs', path: '/locations/coral-springs' },
+    { label: 'Delray Beach', path: '/locations/delray-beach' }
   ] : [];
 
   const allLinks = [

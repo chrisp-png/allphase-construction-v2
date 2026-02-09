@@ -93,7 +93,7 @@ export default function LocationsIndexPage() {
 
                 <div className="space-y-4">
                   <Link
-                    to="/service-areas"
+                    to="/locations"
                     className="inline-flex items-center justify-center gap-3 bg-[#C5A572] text-black px-10 py-5 rounded-lg font-bold text-lg md:text-xl hover:bg-[#B08D5B] transition-all duration-300 shadow-2xl hover:shadow-[#C5A572]/50 hover:scale-105 w-full sm:w-auto"
                   >
                     View All Service Areas
@@ -102,7 +102,7 @@ export default function LocationsIndexPage() {
 
                   <div>
                     <Link
-                      to="/service-areas"
+                      to="/locations"
                       className="text-sm text-gray-400 hover:text-[#C5A572] transition-colors underline"
                     >
                       See all service areas →
@@ -117,7 +117,7 @@ export default function LocationsIndexPage() {
         {hubEntries.length > 0 && (
           <div className="mt-16 text-center">
             <Link
-              to="/service-areas"
+              to="/locations"
               className="inline-flex items-center gap-2 bg-[#C5A572] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#B08D5B] transition-colors"
             >
               View All Service Areas

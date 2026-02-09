@@ -118,7 +118,7 @@ export default function LocationMap() {
           </div>
           <div className="text-center mt-8">
             <Link
-              to="/service-areas"
+              to="/locations"
               className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors font-semibold"
             >
               View All Service Areas

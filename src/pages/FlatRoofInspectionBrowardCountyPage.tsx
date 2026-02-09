@@ -248,7 +248,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
                 <h3 className="text-xl font-bold text-white">Aging Commercial Roof Inventory</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed mb-4">
-                Many commercial buildings in <Link to="/service-areas" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
+                Many commercial buildings in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
               </p>
               <p className="text-red-400 font-semibold text-sm">
                 Inspection establishes actual remaining service life and informs capital planning for replacement timing.
@@ -901,7 +901,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </p>
 
             <p>
-              Many commercial buildings in <Link to="/service-areas" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> were constructed between 1970 and 2000, when building codes imposed lower wind load requirements. Roofs installed during this period may not meet current HVHZ standards. While these installations are legally grandfathered, property owners should understand the performance gap when evaluating insurance requirements and planning capital expenditures.
+              Many commercial buildings in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> were constructed between 1970 and 2000, when building codes imposed lower wind load requirements. Roofs installed during this period may not meet current HVHZ standards. While these installations are legally grandfathered, property owners should understand the performance gap when evaluating insurance requirements and planning capital expenditures.
             </p>
           </div>
         </div>
@@ -963,7 +963,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
           </div>
 
           <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
-            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout <Link to="/service-areas" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link>, including:
+            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link>, including:
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 text-lg text-zinc-300">

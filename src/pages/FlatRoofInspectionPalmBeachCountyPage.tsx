@@ -205,7 +205,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               <span className="text-red-500">Before You See Any Leak</span>
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-3xl mx-auto">
-              Commercial and low-slope roofing systems in <Link to="/service-areas" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> deteriorate for years before interior damage becomes visible. By the time water appears at a ceiling, the problem has already existed—and spread—far beyond the obvious location.
+              Commercial and low-slope roofing systems in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> deteriorate for years before interior damage becomes visible. By the time water appears at a ceiling, the problem has already existed—and spread—far beyond the obvious location.
             </p>
           </div>
 
@@ -373,7 +373,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <h3 className="text-xl font-bold text-white">Aging Commercial Roof Inventory</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed mb-4">
-                Many commercial buildings in <Link to="/service-areas" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
+                Many commercial buildings in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
               </p>
               <p className="text-red-400 font-semibold text-sm">
                 Inspection establishes actual remaining service life and informs capital planning for replacement timing.

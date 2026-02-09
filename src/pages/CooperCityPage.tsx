@@ -235,7 +235,7 @@ export default function CooperCityPage() {
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -479,7 +479,7 @@ export default function CooperCityPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/service-areas"
+                to="/locations"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas

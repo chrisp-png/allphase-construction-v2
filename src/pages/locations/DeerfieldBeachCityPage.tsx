@@ -274,7 +274,7 @@ export default function DeerfieldBeachCityPage() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
               {/* Palm Beach County Cities */}
               <Link
-                to="/locations/deerfield-beach/service-area/boca-raton"
+                to="/locations/boca-raton"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -283,7 +283,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/boynton-beach"
+                to="/locations/boynton-beach"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -292,7 +292,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/delray-beach"
+                to="/locations/delray-beach"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -301,7 +301,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/west-palm-beach"
+                to="/locations/west-palm-beach"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -311,7 +311,7 @@ export default function DeerfieldBeachCityPage() {
 
               {/* Broward County Cities */}
               <Link
-                to="/locations/deerfield-beach/service-area/coconut-creek"
+                to="/locations/coconut-creek"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -320,7 +320,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/coral-springs"
+                to="/locations/coral-springs"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -329,7 +329,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/fort-lauderdale"
+                to="/locations/fort-lauderdale"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -338,7 +338,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/parkland"
+                to="/locations/parkland"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -347,7 +347,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/pompano-beach"
+                to="/locations/pompano-beach"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -356,7 +356,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/plantation"
+                to="/locations/plantation"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -365,7 +365,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/weston"
+                to="/locations/weston"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
@@ -374,7 +374,7 @@ export default function DeerfieldBeachCityPage() {
               </Link>
 
               <Link
-                to="/locations/deerfield-beach/service-area/davie"
+                to="/locations/davie"
                 className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
               >
                 <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />

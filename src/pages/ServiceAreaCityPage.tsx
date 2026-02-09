@@ -30,7 +30,7 @@ export default function ServiceAreaCityPage() {
                 Service Area Not Found
               </h1>
               <Link
-                to="/service-areas"
+                to="/locations"
                 className="inline-block text-[#C5A572] hover:text-[#B08D5B] transition-colors"
               >
                 ← Back to Service Areas
@@ -59,7 +59,7 @@ export default function ServiceAreaCityPage() {
           </p>
 
           <Link
-            to="/service-areas"
+            to="/locations"
             className="inline-block text-[#C5A572] hover:text-[#B08D5B] transition-colors"
           >
             ← Back to Service Areas

@@ -29,7 +29,7 @@ export default function ServiceAreaOverview() {
 
           <div className="mt-8 text-center">
             <Link
-              to="/service-areas"
+              to="/locations"
               className="inline-flex items-center gap-2 bg-[#C5A572] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#B08D5B] transition-colors"
             >
               <MapPin className="w-5 h-5" />

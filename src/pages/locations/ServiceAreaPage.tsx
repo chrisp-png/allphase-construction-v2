@@ -237,7 +237,7 @@ export default function ServiceAreaPage() {
                 The service area you're looking for doesn't exist.
               </p>
               <Link
-                to="/service-areas"
+                to="/locations"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
                 View All Service Areas

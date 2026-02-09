@@ -76,7 +76,7 @@ export default function TopRooferPage() {
                 The page you're looking for doesn't exist.
               </p>
               <Link
-                to="/service-areas"
+                to="/locations"
                 className="inline-flex items-center gap-2 bg-[#C5A572] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#B08D5B] transition-colors"
               >
                 View Service Areas
