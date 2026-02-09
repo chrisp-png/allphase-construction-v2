@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import StickyConversionBar from '../components/StickyConversionBar';
 import {
   Phone,
   CheckCircle2,
@@ -270,7 +271,9 @@ export default function RoofRepairPage() {
   ];
 
   return (
-    <><div className="bg-zinc-950 text-white min-h-screen">
+    <>
+    <StickyConversionBar />
+    <div className="bg-zinc-950 text-white min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

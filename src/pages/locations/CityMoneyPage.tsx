@@ -15,6 +15,9 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight } from 'lucide-react';
 import Contact from '../../components/Contact';
+import StickyConversionBar from '../../components/StickyConversionBar';
+import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
+import { getCityCoordinates } from '../../data/cityCoordinates';
 
 interface CityData {
   name: string;
@@ -35,6 +38,21 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
     document.title = `${city.name} Roofing Contractor | All Phase Construction USA`;
   }, [city.name]);
 
+  // Get city coordinates for local search
+  const coordinates = getCityCoordinates(city.name);
+
+  // LocalBusiness Schema - Critical for "roofer near me" searches and star ratings
+  const localBusinessSchema = generateLocalBusinessSchema({
+    cityName: city.name,
+    stateName: 'Florida',
+    latitude: coordinates?.latitude,
+    longitude: coordinates?.longitude,
+    aggregateRating: {
+      ratingValue: '4.9',
+      reviewCount: '150'
+    }
+  });
+
   return (
     <>
       <Helmet>
@@ -44,7 +62,12 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           content={`Professional roofing services in ${city.name}, Florida. Dual-licensed contractor (CCC-1331464, CGC-1526236) with HVHZ certification. Expert roof replacement, repair, and inspection services.`}
         />
         <link rel="canonical" href={`https://allphaseconstructionfl.com/locations/${city.slug}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
       </Helmet>
+
+      <StickyConversionBar />
 
       {/* Hero Section with Dual-License Numbers and High-Visibility CTAs */}
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20">
@@ -123,7 +146,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="text-xl leading-relaxed">
-                All Phase Construction USA is a dual-licensed roofing contractor serving {city.name} from our Deerfield Beach headquarters. We hold both <strong>Florida Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match.
+                Dispatched from our Deerfield Beach HQ to provide rapid roofing services in {city.name}, All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority. We hold both <strong>Florida Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">

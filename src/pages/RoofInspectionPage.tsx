@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import StickyConversionBar from '../components/StickyConversionBar';
 import {
   Phone,
   CheckCircle2,
@@ -199,6 +200,7 @@ export default function RoofInspectionPage() {
         canonical="https://allphaseconstructionfl.com/roof-inspection"
         schema={schemas}
       />
+      <StickyConversionBar />
       <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
       <section className="relative pt-44 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
@@ -1226,6 +1228,121 @@ export default function RoofInspectionPage() {
                 Most roofing systems should be inspected every one to two years, and after major storm events, to identify developing issues before they result in failure.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Area Grid - Top 10 Cities */}
+      <section className="py-16 bg-zinc-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Roof Inspection Services Across South Florida
+            </h2>
+            <p className="text-xl text-zinc-300">
+              Professional roof inspections dispatched from our Deerfield Beach headquarters
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <Link
+              to="/locations/boca-raton"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Boca Raton</h3>
+              <p className="text-xs text-zinc-400 mt-1">Palm Beach County</p>
+            </Link>
+
+            <Link
+              to="/locations/deerfield-beach"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Deerfield Beach</h3>
+              <p className="text-xs text-zinc-400 mt-1">HQ Location</p>
+            </Link>
+
+            <Link
+              to="/locations/fort-lauderdale"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Fort Lauderdale</h3>
+              <p className="text-xs text-zinc-400 mt-1">Broward County</p>
+            </Link>
+
+            <Link
+              to="/locations/coral-springs"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Coral Springs</h3>
+              <p className="text-xs text-zinc-400 mt-1">Broward County</p>
+            </Link>
+
+            <Link
+              to="/locations/pompano-beach"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Pompano Beach</h3>
+              <p className="text-xs text-zinc-400 mt-1">Broward County</p>
+            </Link>
+
+            <Link
+              to="/locations/west-palm-beach"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">West Palm Beach</h3>
+              <p className="text-xs text-zinc-400 mt-1">Palm Beach County</p>
+            </Link>
+
+            <Link
+              to="/locations/delray-beach"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Delray Beach</h3>
+              <p className="text-xs text-zinc-400 mt-1">Palm Beach County</p>
+            </Link>
+
+            <Link
+              to="/locations/boynton-beach"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Boynton Beach</h3>
+              <p className="text-xs text-zinc-400 mt-1">Palm Beach County</p>
+            </Link>
+
+            <Link
+              to="/locations/wellington"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Wellington</h3>
+              <p className="text-xs text-zinc-400 mt-1">Palm Beach County</p>
+            </Link>
+
+            <Link
+              to="/locations/coconut-creek"
+              className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
+            >
+              <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold">Coconut Creek</h3>
+              <p className="text-xs text-zinc-400 mt-1">Broward County</p>
+            </Link>
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-zinc-400">
+              Serving 50+ cities across Broward and Palm Beach Counties.{' '}
+              <Link to="/our-location" className="text-red-500 hover:text-red-400 underline">
+                View all service areas
+              </Link>
+            </p>
           </div>
         </div>
       </section>
