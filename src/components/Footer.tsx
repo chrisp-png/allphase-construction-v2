@@ -303,59 +303,55 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Service Areas</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link to="/locations/deerfield-beach/service-area/boca-raton/" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors font-medium">
+                  Deerfield Beach (HQ)
+                </Link>
+              </li>
+              <li className="pt-2">
+                <span className="text-gray-500 text-xs uppercase tracking-wider">Palm Beach County</span>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/boca-raton" className="hover:text-red-600 transition-colors">
                   Boca Raton
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">
-                  Deerfield Beach
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/parkland/" className="hover:text-red-600 transition-colors">
-                  Parkland
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/lauderhill/" className="hover:text-red-600 transition-colors">
-                  Lauderhill
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/pompano-beach/" className="hover:text-red-600 transition-colors">
-                  Pompano Beach
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/fort-lauderdale/" className="hover:text-red-600 transition-colors">
-                  Fort Lauderdale
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/delray-beach/" className="hover:text-red-600 transition-colors">
-                  Delray Beach
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/coral-springs/" className="hover:text-red-600 transition-colors">
-                  Coral Springs
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations/deerfield-beach/service-area/boynton-beach/" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/deerfield-beach/service-area/boynton-beach" className="hover:text-red-600 transition-colors">
                   Boynton Beach
                 </Link>
               </li>
               <li>
-                <Link to="/locations/deerfield-beach/service-area/west-palm-beach/" className="hover:text-red-600 transition-colors">
+                <Link to="/locations/deerfield-beach/service-area/delray-beach" className="hover:text-red-600 transition-colors">
+                  Delray Beach
+                </Link>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/west-palm-beach" className="hover:text-red-600 transition-colors">
                   West Palm Beach
                 </Link>
               </li>
-              <li className="pt-2 mt-2 border-t border-neutral-800">
-                <Link to="/locations" className="hover:text-red-600 transition-colors hover:underline font-medium">
-                  View All Service Areas →
+              <li className="pt-2">
+                <span className="text-gray-500 text-xs uppercase tracking-wider">Broward County</span>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/coral-springs" className="hover:text-red-600 transition-colors">
+                  Coral Springs
                 </Link>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/fort-lauderdale" className="hover:text-red-600 transition-colors">
+                  Fort Lauderdale
+                </Link>
+              </li>
+              <li>
+                <Link to="/locations/deerfield-beach/service-area/pompano-beach" className="hover:text-red-600 transition-colors">
+                  Pompano Beach
+                </Link>
+              </li>
+              <li className="pt-2 mt-2 border-t border-neutral-800">
+                <a href="/sitemap.html#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium">
+                  View All Cities →
+                </a>
               </li>
             </ul>
           </div>

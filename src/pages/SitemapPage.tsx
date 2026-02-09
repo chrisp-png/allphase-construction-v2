@@ -39,7 +39,9 @@ export default function SitemapPage() {
   const sectionOrder = [
     'Home',
     'Roofing Services',
-    'Locations',
+    'Headquarters',
+    'Palm Beach County',
+    'Broward County',
     'Learning Center',
     'About & Contact',
   ];
@@ -48,37 +50,46 @@ export default function SitemapPage() {
     const sections: SectionGroup[] = [];
 
     sectionOrder.forEach(sectionName => {
-      if (sectionName === 'Locations') {
+      if (sectionName === 'Headquarters') {
+        // Just Deerfield Beach headquarters
         const deerfieldBeach = sheetSitemap.find(
           entry => entry.path === '/locations/deerfield-beach'
-        );
-        const serviceAreasIndex = sheetSitemap.find(
-          entry => entry.path === '/service-areas'
-        );
-
-        const palmBeachCities = sheetSitemap.filter(entry => {
-          if (entry.section !== 'Palm Beach County Cities') return false;
-          const pathParts = entry.path.split('/');
-          return pathParts.length === 5 && pathParts[1] === 'locations' && pathParts[3] === 'service-area';
-        });
-        const browardCities = sheetSitemap.filter(entry => {
-          if (entry.section !== 'Broward County Cities') return false;
-          const pathParts = entry.path.split('/');
-          return pathParts.length === 5 && pathParts[1] === 'locations' && pathParts[3] === 'service-area';
-        });
-
-        const allCities = [...palmBeachCities, ...browardCities].sort((a, b) =>
-          a.label.localeCompare(b.label)
         );
 
         const locationEntries: SitemapEntry[] = [];
         if (deerfieldBeach) locationEntries.push(deerfieldBeach);
-        if (serviceAreasIndex) locationEntries.push(serviceAreasIndex);
-        locationEntries.push(...allCities);
 
         sections.push({
           section: sectionName,
           entries: locationEntries,
+        });
+      } else if (sectionName === 'Palm Beach County') {
+        // Filter Palm Beach County cities - main city pages only (no sub-pages)
+        const palmBeachCities = sheetSitemap.filter(entry => {
+          if (entry.section !== 'Palm Beach County Cities') return false;
+          const pathParts = entry.path.split('/');
+          // Only include main city pages (5 parts) and exclude top-5-roofer sub-pages
+          return pathParts.length === 5 && pathParts[1] === 'locations' &&
+                 pathParts[3] === 'service-area' && !entry.path.includes('top-5-roofer');
+        }).sort((a, b) => a.label.localeCompare(b.label));
+
+        sections.push({
+          section: sectionName,
+          entries: palmBeachCities,
+        });
+      } else if (sectionName === 'Broward County') {
+        // Filter Broward County cities - main city pages only (no sub-pages)
+        const browardCities = sheetSitemap.filter(entry => {
+          if (entry.section !== 'Broward County Cities') return false;
+          const pathParts = entry.path.split('/');
+          // Only include main city pages (5 parts) and exclude top-5-roofer sub-pages
+          return pathParts.length === 5 && pathParts[1] === 'locations' &&
+                 pathParts[3] === 'service-area' && !entry.path.includes('top-5-roofer');
+        }).sort((a, b) => a.label.localeCompare(b.label));
+
+        sections.push({
+          section: sectionName,
+          entries: browardCities,
         });
       } else {
         const entries = sheetSitemap.filter(entry => entry.section === sectionName);
@@ -132,36 +143,53 @@ export default function SitemapPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-2">
           Sitemap
         </h1>
-        <p className="text-lg text-zinc-600 mb-12">
-          Browse all pages on our website.
+        <p className="text-lg text-zinc-600 mb-8">
+          Browse all pages on our website - organized by category for easy navigation.
         </p>
 
+        {/* Quick Navigation */}
+        <div className="mb-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
+          <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
+            Quick Navigation
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            <a href="#home" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Home
+            </a>
+            <a href="#roofing-services" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Roofing Services
+            </a>
+            <a href="#headquarters" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Headquarters
+            </a>
+            <a href="#palm-beach-county" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Palm Beach County
+            </a>
+            <a href="#broward-county" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Broward County
+            </a>
+            <a href="#learning-center" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Learning Center
+            </a>
+            <a href="#blog" className="px-4 py-2 bg-white border border-gray-300 rounded-md text-sm text-gray-700 hover:border-red-600 hover:text-red-600 transition-colors">
+              Blog
+            </a>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {groupedSections.map((group) => (
-            <div key={group.section}>
-              <h2 className="text-xl font-semibold text-zinc-900 mb-4 border-b-2 border-red-600 pb-2">
-                {group.section}
-              </h2>
-              <ul className="space-y-2">
-                {group.entries.map((entry, index) => {
-                  const isDeerfieldBeach = entry.path === '/locations/deerfield-beach';
-                  const isServiceAreasIndex = entry.path === '/service-areas';
-                  const isCityPage = entry.path.startsWith('/locations/deerfield-beach/service-area/');
-                  const isRoofRepairCity = entry.parent === '/roof-repair';
+          {groupedSections.map((group) => {
+            // Generate anchor ID from section name
+            const anchorId = group.section.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
 
-                  let indentClass = '';
-                  if (group.section === 'Locations') {
-                    if (isServiceAreasIndex) {
-                      indentClass = 'pl-4';
-                    } else if (isCityPage) {
-                      indentClass = 'pl-8';
-                    }
-                  } else if (group.section === 'Roofing Services' && isRoofRepairCity) {
-                    indentClass = 'pl-4';
-                  }
-
-                  return (
-                    <li key={entry.path} className={indentClass}>
+            return (
+              <div key={group.section} id={anchorId}>
+                <h2 className="text-xl font-semibold text-zinc-900 mb-4 border-b-2 border-red-600 pb-2">
+                  {group.section}
+                </h2>
+                <ul className="space-y-2">
+                  {group.entries.map((entry) => (
+                    <li key={entry.path}>
                       <Link
                         to={entry.path}
                         className="text-zinc-600 hover:text-red-600 transition-colors"
@@ -169,14 +197,14 @@ export default function SitemapPage() {
                         {entry.label}
                       </Link>
                     </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
 
           {!loading && blogPosts.length > 0 && (
-            <div>
+            <div id="blog">
               <h2 className="text-xl font-semibold text-zinc-900 mb-4 border-b-2 border-red-600 pb-2">
                 Blog Articles
               </h2>
