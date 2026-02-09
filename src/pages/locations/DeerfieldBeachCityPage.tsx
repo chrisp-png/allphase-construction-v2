@@ -25,7 +25,7 @@ export default function DeerfieldBeachCityPage() {
         <title>Dual-Licensed Roofing Specialist in Deerfield Beach, FL | All Phase Construction USA</title>
         <meta
           name="description"
-          content="Your expert in HVHZ-compliant roofing for Deerfield Beach. As a dual-licensed Roofing Specialist and General Contractor, I specialize exclusively in residential and commercial roofing—not general construction. Call (754) 227-5605."
+          content="Your expert in HVHZ-compliant roofing for Deerfield Beach. As a dual-licensed Roofing Specialist and General Contractor, All Phase Construction USA specializes exclusively in residential and commercial roofing—not general construction. Call (754) 227-5605."
         />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
       </Helmet>
@@ -211,7 +211,7 @@ export default function DeerfieldBeachCityPage() {
                 <Shield className="w-8 h-8 text-red-600" />
               </div>
               <p className="text-lg md:text-xl text-gray-300 mb-4">
-                As a dual-licensed Roofing Specialist and General Contractor, I bring a higher standard of structural integrity to every roofing project. I specialize exclusively in residential and commercial roofing solutions—not general home construction.
+                As a dual-licensed Roofing Specialist and General Contractor, All Phase Construction USA brings a higher standard of structural integrity to every roofing project. We specialize exclusively in residential and commercial roofing solutions—not general home construction.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base">
                 <div className="flex items-center gap-2 text-gray-300">

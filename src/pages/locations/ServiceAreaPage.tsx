@@ -375,7 +375,7 @@ export default function ServiceAreaPage() {
                   </h2>
                   <p className="text-gray-300 text-lg leading-relaxed mb-4">
                     Protecting {cleanCityName} homes requires more than just shingles and nails. As a Dual-Licensed Roofing Specialist,
-                    I ensure every roof installation meets the specific High-Velocity Hurricane Zone (HVHZ) requirements mandated for {cleanCityName}
+                    All Phase Construction USA ensures every roof installation meets the specific High-Velocity Hurricane Zone (HVHZ) requirements mandated for {cleanCityName}
                     and {countyName || 'South Florida'} building codes. These standards aren't optional—they're life-saving requirements designed to protect
                     your property during Category 3, 4, and 5 hurricanes.
                   </p>
@@ -386,8 +386,8 @@ export default function ServiceAreaPage() {
                     building inspections—and more importantly, they won't protect your family when storms strike.
                   </p>
                   <p className="text-gray-400 leading-relaxed">
-                    My CCC1331464 Roofing License combined with CGC1526236 General Contractor credentials means I understand both the roofing specifications
-                    <span className="italic"> and </span>the underlying structural requirements. I don't just install code-compliant roofs—I ensure the entire
+                    Our CCC1331464 Roofing License combined with CGC1526236 General Contractor credentials means we understand both the roofing specifications
+                    <span className="italic"> and </span>the underlying structural requirements. We don't just install code-compliant roofs—we ensure the entire
                     roofing assembly integrates properly with your home's structural system, from roof-to-wall connections to truss bracing to proper ventilation
                     that prevents pressure differentials during hurricanes.
                   </p>

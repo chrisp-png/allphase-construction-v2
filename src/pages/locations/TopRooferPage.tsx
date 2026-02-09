@@ -116,7 +116,7 @@ export default function TopRooferPage() {
           </h1>
 
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            When looking for the top roofing contractors in {locationName}, <strong className="text-white">licensing is the most critical factor</strong>. As a Dual-Licensed Roofing and General Contractor, I provide structural oversight that standard roofers cannot match.
+            When looking for the top roofing contractors in {locationName}, <strong className="text-white">licensing is the most critical factor</strong>. As a Dual-Licensed Roofing and General Contractor, All Phase Construction USA provides structural oversight that standard roofers cannot match.
           </p>
 
           <p className="text-lg text-gray-400 max-w-2xl mx-auto italic mb-8">
@@ -153,7 +153,7 @@ export default function TopRooferPage() {
         {/* Top 5 Criteria */}
         <div className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            Key Factors I Evaluate
+            Key Factors We Evaluate
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -167,7 +167,7 @@ export default function TopRooferPage() {
                 </h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                As a Dual-Licensed Roofing Specialist (CCC-1331464) and General Contractor (CGC-1526236), I bring structural engineering oversight to every roofing project—something standard roofers cannot provide.
+                As a Dual-Licensed Roofing Specialist (CCC-1331464) and General Contractor (CGC-1526236), our team brings structural engineering oversight to every roofing project—something standard roofers cannot provide.
               </p>
             </div>
 
@@ -181,7 +181,7 @@ export default function TopRooferPage() {
                 </h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                High Velocity Hurricane Zone certification isn't optional in {locationName}—it's critical. I specialize in code-compliant installations that pass the strictest wind ratings and building department inspections.
+                High Velocity Hurricane Zone certification isn't optional in {locationName}—it's critical. Our team specializes in code-compliant installations that pass the strictest wind ratings and building department inspections.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function TopRooferPage() {
                 </h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                When you hire me, you're working directly with the Specialist—not a sales team or subcontractors. I personally oversee every project from permitting to final inspection.
+                When you hire All Phase Construction USA, you're working directly with the Specialist—not a sales team or subcontractors. Our owner personally oversees every project from permitting to final inspection.
               </p>
             </div>
 
