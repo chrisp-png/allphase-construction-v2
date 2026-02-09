@@ -275,6 +275,35 @@ function AppContent() {
             <Route path="/flat-roofing" element={<FlatRoofingPage />} />
             <Route path="/single-ply-roofing" element={<SinglePlyRoofingPage />} />
             <Route path="/roof-repair" element={<RoofRepairPage />} />
+            <Route path="/roof-repair/boca-raton" element={<BocaRatonRoofRepairPage />} />
+            <Route path="/roof-repair/boynton-beach" element={<BoyntonBeachRoofRepairPage />} />
+            <Route path="/roof-repair/broward-county" element={<BrowardCountyRoofRepairPage />} />
+            <Route path="/roof-repair/coconut-creek" element={<CoconutCreekRoofRepairPage />} />
+            <Route path="/roof-repair/cooper-city" element={<CooperCityRoofRepairPage />} />
+            <Route path="/roof-repair/coral-springs" element={<CoralSpringsRoofRepairPage />} />
+            <Route path="/roof-repair/dania-beach" element={<DaniaBeachRoofRepairPage />} />
+            <Route path="/roof-repair/davie" element={<DavieRoofRepairPage />} />
+            <Route path="/roof-repair/deerfield-beach" element={<DeerfieldBeachRoofRepairPage />} />
+            <Route path="/roof-repair/delray-beach" element={<DelrayBeachRoofRepairPage />} />
+            <Route path="/roof-repair/greenacres" element={<GreenacresRoofRepairPage />} />
+            <Route path="/roof-repair/hallandale-beach" element={<HallandaleBeachRoofRepairPage />} />
+            <Route path="/roof-repair/haverhill" element={<HaverillRoofRepairPage />} />
+            <Route path="/roof-repair/highland-beach" element={<HighlandBeachRoofRepairPage />} />
+            <Route path="/roof-repair/hollywood" element={<HollywoodRoofRepairPage />} />
+            <Route path="/roof-repair/hypoluxo" element={<HypoluxoRoofRepairPage />} />
+            <Route path="/roof-repair/lake-park" element={<LakeParkRoofRepairPage />} />
+            <Route path="/roof-repair/lake-worth" element={<LakeWorthBeachRoofRepairPage />} />
+            <Route path="/roof-repair/lantana" element={<LantanaRoofRepairPage />} />
+            <Route path="/roof-repair/lighthouse-point" element={<LighthousePointRoofRepairPage />} />
+            <Route path="/roof-repair/palm-beach" element={<PalmBeachRoofRepairPage />} />
+            <Route path="/roof-repair/palm-beach-county" element={<PalmBeachCountyRoofRepairPage />} />
+            <Route path="/roof-repair/palm-beach-county-unincorporated" element={<PalmBeachCountyUnincorporatedRoofRepairPage />} />
+            <Route path="/roof-repair/parkland" element={<ParklandRoofRepairPage />} />
+            <Route path="/roof-repair/pompano-beach" element={<PompanoBeachRoofRepairPage />} />
+            <Route path="/roof-repair/sunrise" element={<SunriseRoofRepairPage />} />
+            <Route path="/roof-repair/wellington" element={<WellingtonRoofRepairPage />} />
+            <Route path="/roof-repair/west-palm-beach" element={<WestPalmBeachRoofRepairPage />} />
+            <Route path="/roof-repair/wilton-manors" element={<WiltonManorsRoofRepairPage />} />
             <Route path="/roof-inspection" element={<RoofInspectionPage />} />
             <Route path="/roof-maintenance-programs" element={<RoofMaintenanceProgramsPage />} />
             <Route path="/tile-roof-inspection-broward-county" element={<TileRoofInspectionBrowardCountyPage />} />
