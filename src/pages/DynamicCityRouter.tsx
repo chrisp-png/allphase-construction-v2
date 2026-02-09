@@ -46,6 +46,7 @@ const RoofInspectionPage = lazy(() => import('./RoofInspectionPage'));
 
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
+const GenericRoofInspectionTemplate = lazy(() => import('./templates/GenericRoofInspectionTemplate'));
 
 const citySlugs = new Set(cities.map(c => c.slug.toLowerCase().trim()));
 
@@ -159,7 +160,7 @@ export function DynamicRoofInspectionPage() {
 
   return (
     <Suspense fallback={<PageLoadingFallback />}>
-      <RoofInspectionPage />
+      <GenericRoofInspectionTemplate />
     </Suspense>
   );
 }

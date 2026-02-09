@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
 import cities from '../../data/cities.json';
+import { isCityIndexable } from '../../config/indexableCities';
 
 export default function GenericLocationTemplate() {
   const { city: citySlug } = useParams<{ city: string }>();
@@ -12,6 +13,9 @@ export default function GenericLocationTemplate() {
   const cityData = cities.find(c => c.slug === citySlug);
   const cityName = cityData?.city || citySlug;
   const county = cityData?.county || 'South Florida';
+
+  // Check if this city should be indexed
+  const isIndexable = citySlug ? isCityIndexable(citySlug) : false;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,6 +58,7 @@ export default function GenericLocationTemplate() {
         title={`${cityName} Roofing Contractor | Licensed Roofing Services`}
         description={`Professional roofing services in ${cityName}, FL. Licensed ${county} contractor specializing in residential & commercial roofing. Free inspection: (754) 227-5605.`}
         schema={localBusinessSchema}
+        noindex={!isIndexable}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
         <Header />
