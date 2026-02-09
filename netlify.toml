@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npm run build"
+command = "npx vite build"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -98,9 +98,6 @@ for = "*.js"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
-# === PERMANENT 301 REDIRECTS ===
-# Clean up old URL patterns before SPA takes over
-
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/*"
 to = "/locations/:splat"
@@ -124,10 +121,6 @@ from = "/locations/*/service-area/*"
 to = "/locations/:splat"
 status = 301
 force = true
-
-# === SPA FALLBACK (SERVE STATIC FILES FIRST) ===
-# Netlify will serve static HTML files if they exist (city pages)
-# and only fallback to React SPA for routes without static files
 
 [[redirects]]
 from = "/*"
