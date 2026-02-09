@@ -347,6 +347,7 @@ function AppContent() {
             <Route path="/locations/wellington" element={<WellingtonMoneyPage />} />
             <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
+            <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

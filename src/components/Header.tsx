@@ -269,7 +269,7 @@ export default function Header() {
                   </Link>
                   <div className="absolute left-full top-0 ml-1 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-200">
                     <Link
-                      to="/locations/deerfield-beach/service-area"
+                      to="/locations/service-areas"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg"
                     >
                       Service Areas
@@ -479,7 +479,7 @@ export default function Header() {
                     Deerfield Beach
                   </Link>
                   <Link
-                    to="/locations/deerfield-beach/service-area"
+                    to="/locations/service-areas"
                     className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

@@ -15,7 +15,7 @@ import { MapPin } from 'lucide-react';
 
 export default function ServiceAreasHubPage() {
   useEffect(() => {
-    document.title = 'Service Areas | All Phase Construction USA';
+    document.title = 'Roofing Service Areas | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -27,13 +27,23 @@ export default function ServiceAreasHubPage() {
       document.head.appendChild(meta);
     }
 
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', 'https://allphaseconstructionfl.com/locations/service-areas/');
+    } else {
+      const link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = 'https://allphaseconstructionfl.com/locations/service-areas/';
+      document.head.appendChild(link);
+    }
+
     const schemas = [
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/#collectionpage",
-        "url": "https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/",
-        "name": "Service Areas | All Phase Construction USA",
+        "@id": "https://allphaseconstructionfl.com/locations/service-areas/#collectionpage",
+        "url": "https://allphaseconstructionfl.com/locations/service-areas/",
+        "name": "Roofing Service Areas | All Phase Construction USA",
         "description": "All service areas listed below are served from our Deerfield Beach office and warehouse, with consistent standards, supervision, and code-compliant workmanship.",
         "breadcrumb": {
           "@type": "BreadcrumbList",
@@ -47,14 +57,8 @@ export default function ServiceAreasHubPage() {
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Deerfield Beach Headquarters",
-              "item": "https://allphaseconstructionfl.com/locations/deerfield-beach/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
               "name": "Service Areas",
-              "item": "https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/"
+              "item": "https://allphaseconstructionfl.com/locations/service-areas/"
             }
           ]
         }
