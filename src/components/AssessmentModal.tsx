@@ -256,8 +256,8 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
                 className="w-full px-6 py-3 bg-red-600 text-white font-semibold text-lg rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 relative touch-manipulation active:scale-[0.98]"
                 style={{
                   touchAction: 'manipulation',
-                  height: '60px',
-                  marginBottom: '150px',
+                  height: '64px',
+                  marginBottom: '60px',
                   zIndex: 9999,
                   pointerEvents: 'auto'
                 }}
@@ -274,6 +274,8 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
                   (754) 227-5605
                 </a>
               </p>
+
+              <div style={{ height: '200px', width: '100%' }} aria-hidden="true"></div>
             </form>
           </div>
         </div>

@@ -284,8 +284,8 @@ export default function Contact() {
                   className="w-full py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl relative touch-manipulation active:scale-[0.98]"
                   style={{
                     touchAction: 'manipulation',
-                    height: '60px',
-                    marginBottom: '150px',
+                    height: '64px',
+                    marginBottom: '60px',
                     zIndex: 9999,
                     pointerEvents: 'auto'
                   }}
@@ -293,6 +293,8 @@ export default function Contact() {
                   <span className="text-lg">Send Message</span>
                   <Send className="w-5 h-5" />
                 </button>
+
+                <div style={{ height: '200px', width: '100%' }} aria-hidden="true"></div>
               </form>
             )}
           </div>

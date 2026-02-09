@@ -185,8 +185,8 @@ export default function CalculatorLeadCapture({
           }`}
           style={{
             touchAction: 'manipulation',
-            height: '60px',
-            marginBottom: '150px',
+            height: '64px',
+            marginBottom: '60px',
             zIndex: 9999,
             pointerEvents: 'auto'
           }}
@@ -197,6 +197,8 @@ export default function CalculatorLeadCapture({
         <p className="text-gray-500 text-sm text-center">
           🔒 Your info is secure and never shared
         </p>
+
+        <div style={{ height: '200px', width: '100%' }} aria-hidden="true"></div>
       </form>
     </div>
   );
