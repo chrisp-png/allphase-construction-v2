@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, CheckCircle2, Home, ChevronRight, Shield, Clock, FileCheck, ChevronDown, X, AlertCircle } from 'lucide-react';
+import { Phone, CheckCircle2, Home, ChevronRight, Shield, Clock, FileCheck, ChevronDown, X, AlertCircle, Award } from 'lucide-react';
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
@@ -182,12 +182,34 @@ export default function RoofReplacementProcessPage() {
             From engineering to final inspection, see exactly how we navigate Florida's strictest building codes to deliver roofs that meet HVHZ compliance — and exceed your expectations.
           </p>
 
+          {/* Dual-License Badge */}
+          <div className="max-w-3xl mb-8">
+            <div className="bg-zinc-900/80 backdrop-blur-sm border-2 border-[#C5A572] rounded-lg p-6">
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <Award className="w-8 h-8 text-[#C5A572]" />
+                <h3 className="text-2xl font-bold text-white">Dual-Licensed Roofing Specialist</h3>
+              </div>
+              <div className="text-center space-y-2">
+                <p className="text-lg text-zinc-200">
+                  <span className="font-semibold text-[#C5A572]">CCC-1331464</span> - Florida Certified Roofing Contractor
+                </p>
+                <p className="text-lg text-zinc-200">
+                  <span className="font-semibold text-[#C5A572]">CGC-1526236</span> - Certified General Contractor
+                </p>
+                <p className="text-sm text-zinc-300 mt-3">
+                  HVHZ Certified • Full Structural Authority • Complete Permitting
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
+              to="/roof-inspection"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
-              Schedule Free Inspection
+              <FileCheck className="w-5 h-5" />
+              Request 21-Point Inspection
             </Link>
             <a
               href="tel:+17542275605"

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
+import { Calendar, User, ArrowRight, Tag, Award } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 
@@ -92,9 +92,30 @@ export default function BlogIndexPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Roofing Insights & Industry News
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
               Expert advice, maintenance tips, and the latest trends in residential and commercial roofing
             </p>
+
+            {/* Dual-License Badge */}
+            <div className="max-w-3xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm border-2 border-[#C5A572] rounded-lg p-6">
+                <div className="flex items-center justify-center gap-3 mb-3">
+                  <Award className="w-8 h-8 text-[#C5A572]" />
+                  <h2 className="text-2xl font-bold text-white">Dual-Licensed Roofing Specialist</h2>
+                </div>
+                <div className="text-center space-y-2">
+                  <p className="text-lg text-gray-200">
+                    <span className="font-semibold text-[#C5A572]">CCC-1331464</span> - Florida Certified Roofing Contractor
+                  </p>
+                  <p className="text-lg text-gray-200">
+                    <span className="font-semibold text-[#C5A572]">CGC-1526236</span> - Certified General Contractor
+                  </p>
+                  <p className="text-sm text-gray-300 mt-3">
+                    HVHZ Certified • Industry Expertise • Complete Permitting
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

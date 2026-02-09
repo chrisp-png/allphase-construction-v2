@@ -623,8 +623,12 @@ function generateStaticFiles() {
     { path: '/shingle-roofing', title: 'Shingle Roofing Installation & Repair' },
     { path: '/flat-roofing', title: 'Flat Roofing Systems (TPO & PVC)' },
     { path: '/roof-inspection', title: 'Professional Roof Inspection Services' },
+    { path: '/roof-repair', title: 'Emergency Roof Repair Services' },
     { path: '/roof-maintenance-programs', title: 'Roof Maintenance Programs' },
-    { path: '/roof-replacement-process', title: 'Roof Replacement Process' }
+    { path: '/roof-replacement-process', title: 'Roof Replacement Process' },
+    { path: '/pricing-guide', title: 'Roof Pricing Guide for South Florida' },
+    { path: '/easy-payments', title: 'Easy Payments & Financing Options' },
+    { path: '/blog', title: 'Roofing Insights & Industry News' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {

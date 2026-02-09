@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { DollarSign, Calculator, TrendingUp, ExternalLink, Lightbulb } from 'lucide-react';
+import { DollarSign, Calculator, TrendingUp, ExternalLink, Lightbulb, Award } from 'lucide-react';
 
 export default function EasyPaymentsPage() {
   useEffect(() => {
@@ -133,9 +133,30 @@ export default function EasyPaymentsPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
             Easy Payments for Roofing Projects
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
             Explore flexible payment options to fit your budget. Calculate your potential monthly payments and understand the upgrade costs for premium roofing solutions.
           </p>
+
+          {/* Dual-License Badge */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm border-2 border-[#C5A572] rounded-lg p-6">
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <Award className="w-8 h-8 text-[#C5A572]" />
+                <h2 className="text-2xl font-bold text-white">Dual-Licensed Roofing Specialist</h2>
+              </div>
+              <div className="text-center space-y-2">
+                <p className="text-lg text-gray-200">
+                  <span className="font-semibold text-[#C5A572]">CCC-1331464</span> - Florida Certified Roofing Contractor
+                </p>
+                <p className="text-lg text-gray-200">
+                  <span className="font-semibold text-[#C5A572]">CGC-1526236</span> - Certified General Contractor
+                </p>
+                <p className="text-sm text-gray-300 mt-3">
+                  Flexible Financing • Transparent Pricing • Complete Permitting
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
