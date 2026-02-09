@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npx vite build"
+command = "npm run build"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -125,13 +125,11 @@ to = "/locations/:splat"
 status = 301
 force = true
 
-# === NUCLEAR OPTION: FORCE REACT SPA FOR ALL ROUTES ===
-# This ensures the branded React app (with Header/Footer/Layout)
-# loads for EVERY URL, preventing any "business card" ghost pages
-# from appearing even if static HTML somehow survives in dist/
+# === SPA FALLBACK (SERVE STATIC FILES FIRST) ===
+# Netlify will serve static HTML files if they exist (city pages)
+# and only fallback to React SPA for routes without static files
 
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
-force = true
