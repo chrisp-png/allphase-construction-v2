@@ -32,7 +32,9 @@ export const INDEXABLE_CITIES: string[] = [
   'palm-beach',
   'coconut-creek',
   'coral-springs',
-  'wellington'
+  'wellington',
+  'pompano-beach',
+  'lake-worth'
 ];
 
 /**
