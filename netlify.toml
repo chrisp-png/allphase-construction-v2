@@ -105,6 +105,54 @@ status = 200
 force = true
 
 [[redirects]]
+from = "/locations/boca-raton"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/fort-lauderdale"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/coral-springs"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/delray-beach"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/boynton-beach"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/wellington"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/west-palm-beach"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/locations/coconut-creek"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

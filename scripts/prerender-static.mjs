@@ -658,8 +658,20 @@ function generateStaticFiles() {
     if (citySlug.includes('county')) return;
 
     // SILO 1: Service Hub - /locations/[city]
-    // SKIP Deerfield Beach - handled exclusively by React routing with force redirect
-    if (citySlug !== 'deerfield-beach') {
+    // SKIP TOP 9 MONEY CITIES - handled exclusively by React routing with force redirects
+    const moneyCities = [
+      'deerfield-beach',
+      'boca-raton',
+      'fort-lauderdale',
+      'coral-springs',
+      'delray-beach',
+      'boynton-beach',
+      'wellington',
+      'west-palm-beach',
+      'coconut-creek'
+    ];
+
+    if (!moneyCities.includes(citySlug)) {
       const hubPath = `/locations/${citySlug}`;
       const hubMetadata = getSEOMetadata(hubPath, cityName);
       const hubContent = generateServiceHubContent(cityName, citySlug);
@@ -676,7 +688,7 @@ function generateStaticFiles() {
       console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
       totalPages++;
     } else {
-      console.log(`⚡ SKIPPED: public/locations/${citySlug}/index.html (React-only with force redirect)`);
+      console.log(`⚡ SKIPPED: public/locations/${citySlug}/index.html (React-only Money Page with force redirect)`);
     }
 
     // SILO 2: Roof Repair - /roof-repair/[city]

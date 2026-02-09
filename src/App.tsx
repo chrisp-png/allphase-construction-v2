@@ -198,6 +198,14 @@ const ServiceAreasHubPage = lazy(() => import('./pages/locations/ServiceAreasHub
 const ServiceAreaPage = lazy(() => import('./pages/locations/ServiceAreaPage'));
 const TopRooferPage = lazy(() => import('./pages/locations/TopRooferPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
+const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
+const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderdaleMoneyPage'));
+const CoralSpringsMoneyPage = lazy(() => import('./pages/locations/CoralSpringsMoneyPage'));
+const DelrayBeachMoneyPage = lazy(() => import('./pages/locations/DelrayBeachMoneyPage'));
+const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
+const WellingtonMoneyPage = lazy(() => import('./pages/locations/WellingtonMoneyPage'));
+const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
+const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
 
 // Loading fallback that is SEO-friendly
@@ -324,6 +332,14 @@ function AppContent() {
             <Route path="/locations" element={<LocationsIndexPage />} />
             <Route path="/locations/deerfield-beach/service-area" element={<ServiceAreasHubPage />} />
             <Route path="/locations/deerfield-beach" element={<DeerfieldBeachCityPage />} />
+            <Route path="/locations/boca-raton" element={<BocaRatonMoneyPage />} />
+            <Route path="/locations/fort-lauderdale" element={<FortLauderdaleMoneyPage />} />
+            <Route path="/locations/coral-springs" element={<CoralSpringsMoneyPage />} />
+            <Route path="/locations/delray-beach" element={<DelrayBeachMoneyPage />} />
+            <Route path="/locations/boynton-beach" element={<BoyntonBeachMoneyPage />} />
+            <Route path="/locations/wellington" element={<WellingtonMoneyPage />} />
+            <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
+            <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
             <Route path="/locations/deerfield-beach/service-area/:citySlug" element={<ServiceAreaPage />} />
             <Route path="/locations/deerfield-beach/service-area/:citySlug/top-5-roofer" element={<TopRooferPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
