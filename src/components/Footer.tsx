@@ -287,7 +287,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/calculator" className="hover:text-red-600 transition-colors">
+                <Link to="/roof-cost-calculator" className="hover:text-red-600 transition-colors">
                   Roof Cost Calculator
                 </Link>
               </li>

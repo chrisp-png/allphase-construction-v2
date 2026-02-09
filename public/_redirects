@@ -4,6 +4,9 @@
 # Force = true (!) ensures these override any static files
 # ======================================================================
 
+# === CALCULATOR REDIRECT ===
+/calculator                                                                    /roof-cost-calculator                     301!
+
 # === OLD SERVICE-AREA PATHS → NEW CLEAN SILOS ===
 
 # Catch-all for any service-area paths (most specific first)
@@ -161,10 +164,65 @@
 # END MASTER OVERRIDE REDIRECTS
 # ======================================================================
 
+# === SLUG NORMALIZATION REDIRECTS ===
+# Canonicalize "light-house-point" to "lighthouse-point"
+/light-house-point                                                         /locations/lighthouse-point               301!
+/locations/light-house-point                                               /locations/lighthouse-point               301!
+/roof-repair/light-house-point                                             /roof-repair/lighthouse-point             301!
+/roof-inspection/light-house-point                                         /roof-inspection/lighthouse-point         301!
+
 # === LEGACY ROOT-LEVEL CITY URL REDIRECTS ===
 # Redirect old root-level city pages to canonical /locations/ structure
 /boca-raton                                                                /locations/boca-raton                     301!
+/boynton-beach                                                             /locations/boynton-beach                  301!
+/broward-county                                                            /locations/broward-county                 301!
+/coconut-creek                                                             /locations/coconut-creek                  301!
+/cooper-city                                                               /locations/cooper-city                    301!
+/coral-springs                                                             /locations/coral-springs                  301!
+/dania-beach                                                               /locations/dania-beach                    301!
+/davie                                                                     /locations/davie                          301!
+/deerfield-beach                                                           /locations/deerfield-beach                301!
+/delray-beach                                                              /locations/delray-beach                   301!
+/fort-lauderdale                                                           /locations/fort-lauderdale                301!
+/greenacres                                                                /locations/greenacres                     301!
+/hallandale-beach                                                          /locations/hallandale-beach               301!
+/haverhill                                                                 /locations/haverhill                      301!
+/highland-beach                                                            /locations/highland-beach                 301!
+/hillsboro-beach                                                           /locations/hillsboro-beach                301!
+/hollywood                                                                 /locations/hollywood                      301!
+/hypoluxo                                                                  /locations/hypoluxo                       301!
+/jupiter-inlet-colony                                                      /locations/jupiter-inlet-colony           301!
+/lake-park                                                                 /locations/lake-park                      301!
+/lake-worth                                                                /locations/lake-worth                     301!
+/lantana                                                                   /locations/lantana                        301!
+/lauderdale-by-the-sea                                                     /locations/lauderdale-by-the-sea          301!
+/lauderhill                                                                /locations/lauderhill                     301!
+/lazy-lake                                                                 /locations/lazy-lake                      301!
+/lighthouse-point                                                          /locations/lighthouse-point               301!
+/manalapan                                                                 /locations/manalapan                      301!
+/margate                                                                   /locations/margate                        301!
+/miramar                                                                   /locations/miramar                        301!
+/north-lauderdale                                                          /locations/north-lauderdale               301!
+/north-palm-beach                                                          /locations/north-palm-beach               301!
+/oakland-park                                                              /locations/oakland-park                   301!
+/ocean-ridge                                                               /locations/ocean-ridge                    301!
 /palm-beach                                                                /locations/palm-beach                     301!
+/palm-beach-county                                                         /locations/palm-beach-county              301!
+/palm-beach-gardens                                                        /locations/palm-beach-gardens             301!
+/parkland                                                                  /locations/parkland                       301!
+/pembroke-pines                                                            /locations/pembroke-pines                 301!
+/plantation                                                                /locations/plantation                     301!
+/pompano-beach                                                             /locations/pompano-beach                  301!
+/royal-palm-beach                                                          /locations/royal-palm-beach               301!
+/south-palm-beach                                                          /locations/south-palm-beach               301!
+/sunrise                                                                   /locations/sunrise                        301!
+/surfside                                                                  /locations/surfside                       301!
+/tamarac                                                                   /locations/tamarac                        301!
+/wellington                                                                /locations/wellington                     301!
+/west-palm-beach                                                           /locations/west-palm-beach                301!
+/westlake                                                                  /locations/westlake                       301!
+/weston                                                                    /locations/weston                         301!
+/wilton-manors                                                             /locations/wilton-manors                  301!
 
 # SPA fallback - ALL other routes go to React app (200 = rewrite, not redirect)
 /*  /index.html  200

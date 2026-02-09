@@ -209,6 +209,8 @@ const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekM
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
+import { DynamicLocationPage, DynamicRoofRepairPage, DynamicRoofInspectionPage } from './pages/DynamicCityRouter';
+
 // Loading fallback that is SEO-friendly
 const PageLoadingFallback = () => (
   <div style={{
@@ -275,6 +277,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/roof-cost-calculator" element={<CalculatorPage />} />
+            <Route path="/calculator" element={<Navigate to="/roof-cost-calculator" replace />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about-us" element={<AboutPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
@@ -349,6 +352,9 @@ function AppContent() {
             <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
+            <Route path="/locations/:city" element={<DynamicLocationPage />} />
+            <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
+            <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
