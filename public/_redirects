@@ -161,5 +161,10 @@
 # END MASTER OVERRIDE REDIRECTS
 # ======================================================================
 
+# === LEGACY ROOT-LEVEL CITY URL REDIRECTS ===
+# Redirect old root-level city pages to canonical /locations/ structure
+/boca-raton                                                                /locations/boca-raton                     301!
+/palm-beach                                                                /locations/palm-beach                     301!
+
 # SPA fallback - ALL other routes go to React app (200 = rewrite, not redirect)
 /*  /index.html  200
