@@ -144,39 +144,27 @@ export default function ServiceAreaPage() {
     new Map(relatedPages.map(page => [page.path, page])).values()
   );
 
-  // City-specific FAQs
+  // City-specific FAQs optimized for AI Snippets (Cost, Materials, Timing, Permits, Licensing)
   const cityFAQs = finalCity ? [
     {
-      question: `Do you provide roofing services in ${cleanCityName}?`,
-      answer: `Yes, we provide comprehensive roofing services throughout ${cleanCityName} and surrounding areas in ${countyName || 'South Florida'}. Our licensed crews regularly service residential and commercial properties in your area.`
+      question: `How much does a roof replacement cost in ${cleanCityName}, Florida?`,
+      answer: `Typical residential roof replacement costs in ${cleanCityName} range from $8,000 to $35,000 depending on roof size, material selection, and structural complexity. Asphalt shingle roofs start around $8,000-$15,000 for standard homes, while tile roofs range $15,000-$25,000, and metal roofs cost $18,000-$35,000. These prices include HVHZ-compliant installation, ${countyName || 'county'} permitting, structural inspection, and warranty coverage. All Phase Construction USA provides free detailed estimates with transparent pricing and financing options.`
     },
     {
-      question: `How quickly can you respond to a roofing emergency in ${cleanCityName}?`,
-      answer: `We offer same-day emergency service for ${cleanCityName} residents. Our crews are strategically located to provide fast response times throughout ${countyName || 'the region'}. Call us at (754) 227-5605 for immediate assistance.`
+      question: `What roofing materials are best for ${cleanCityName} hurricanes?`,
+      answer: `${cleanCityName} is located in Florida's High Velocity Hurricane Zone (HVHZ), requiring impact-resistant roofing materials tested to withstand 120+ mph winds. Best options include concrete or clay tile roofs (rated for 150+ mph winds with proper installation), metal roofing systems with mechanically-attached panels (160+ mph ratings), and architectural shingles meeting Miami-Dade County NOA approvals. All materials must pass Florida Product Approval testing. Tile roofs offer superior wind resistance and longevity (50+ years), while metal roofs provide lightweight hurricane protection with 40+ year lifespans.`
     },
     {
-      question: `Are you licensed to work in ${cleanCityName}?`,
-      answer: `Yes, All Phase Construction USA is fully licensed and insured to work throughout ${countyName || 'Broward and Palm Beach Counties'}. We hold all required Florida state contractor licenses and are HVHZ (High Velocity Hurricane Zone) certified.`
+      question: `How long does roof replacement take in ${cleanCityName}?`,
+      answer: `Complete roof replacement in ${cleanCityName} typically requires 2-3 weeks from permit application to final inspection. The process includes: permit submission to ${countyName || 'county'} building department (3-7 business days for approval), tear-off and installation (2-5 working days depending on roof size and complexity), and final building inspection (scheduled within 1-2 days of completion). Weather delays may extend timelines during summer rainy season. All Phase Construction coordinates all permitting and inspections, keeping projects on schedule.`
     },
     {
-      question: `What types of roofs do you install in ${cleanCityName}?`,
-      answer: `We install and repair all major roofing types in ${cleanCityName} including tile roofs, metal roofs, shingle roofs, flat roofs, and single-ply systems. We'll help you choose the best option for your property and budget.`
+      question: `Do I need a permit for roof replacement in ${cleanCityName}?`,
+      answer: `Yes, ${countyName || 'All Florida counties'} require building permits for all roof replacements, repairs exceeding 100 square feet, and structural modifications. ${countyName} Building Department enforces strict permitting requirements including engineered drawings for HVHZ compliance, Florida Product Approval documentation for materials, contractor license verification (CCC or CGC required), and multiple field inspections during installation. Unpermitted roofing work violates Florida Building Code, voids insurance coverage, prevents property sales, and subjects homeowners to code enforcement penalties. All Phase Construction handles all permit applications and inspections.`
     },
     {
-      question: `Do you offer free estimates in ${cleanCityName}?`,
-      answer: `Yes, we provide free, no-obligation estimates for all roofing projects in ${cleanCityName}. We'll inspect your roof, answer your questions, and provide a detailed written quote with no pressure to buy.`
-    },
-    {
-      question: `What makes your roofing company different in ${cleanCityName}?`,
-      answer: `We're a local, family-owned business with over 15 years of experience serving ${countyName || 'South Florida'}. We offer transparent pricing, quality workmanship, and exceptional customer service. Over 2,500 satisfied customers trust us with their roofing needs.`
-    },
-    {
-      question: `How long does a roof replacement take in ${cleanCityName}?`,
-      answer: `Most residential roof replacements in ${cleanCityName} are completed in 2-5 days depending on the size and complexity of the project. We'll provide a detailed timeline during your free estimate.`
-    },
-    {
-      question: `Do you help with insurance claims in ${cleanCityName}?`,
-      answer: `Yes, we have extensive experience working with insurance companies for storm damage and roof replacement claims. We can inspect your roof, document damage, and provide detailed estimates to support your claim.`
+      question: `What roofing licenses are required in ${cleanCityName}, Florida?`,
+      answer: `${countyName || 'Florida law'} requires roofing contractors to hold either a Florida Certified Roofing Contractor (CCC) license or Florida Certified General Contractor (CGC) license. All Phase Construction USA holds both licenses: CCC-1331464 (Roofing Contractor) and CGC-1526236 (General Contractor). Dual licensing is significant because CCC-only contractors cannot repair structural components like trusses, decking, or roof-to-wall connections—requiring separate contractors and creating delays. Our CGC license authorizes complete structural evaluation and repair, eliminating these problems. Verify any contractor's license at MyFloridaLicense.com before hiring.`
     }
   ] : [];
 
@@ -353,6 +341,24 @@ export default function ServiceAreaPage() {
             </Link>
           </div>
         </div>
+
+        {/* Priority City: AI Snippet Direct Answer */}
+        {isPriorityCity && (
+          <div className="bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-xl p-8 border border-red-700/50 mb-12">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold text-white mb-4 text-center">
+                Why Choose All Phase Construction USA for {cleanCityName} Roofing?
+              </h2>
+              <p className="text-lg text-gray-200 leading-relaxed text-center">
+                All Phase Construction USA serves {cleanCityName} from our Deerfield Beach headquarters with dual Florida licenses
+                (CCC-1331464 Roofing Contractor and CGC-1526236 General Contractor), enabling comprehensive structural roof repairs
+                that single-licensed competitors cannot perform. Our HVHZ-certified installations withstand Category 4-5 hurricanes
+                while our established relationships with {countyName || 'local'} building departments ensure first-pass permit approvals,
+                eliminating common project delays. We complete typical residential roof replacements in 2-3 weeks from permit to final inspection.
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Priority City: High-Value Content Blocks */}
         {isPriorityCity && (
