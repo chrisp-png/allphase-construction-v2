@@ -77,8 +77,13 @@ export default function GenericLocationTemplate() {
               <div className="flex items-center gap-3 mb-6">
                 <MapPin className="w-8 h-8 text-red-600" />
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  {cityName} Roofing Contractor
+                  Roofing Contractor in {cityName}, FL
                 </h1>
+              </div>
+
+              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+                <Shield className="w-4 h-4" />
+                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
               </div>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
