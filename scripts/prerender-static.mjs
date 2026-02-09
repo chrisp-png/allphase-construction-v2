@@ -658,25 +658,26 @@ function generateStaticFiles() {
     if (citySlug.includes('county')) return;
 
     // SILO 1: Service Hub - /locations/[city]
-    const hubPath = `/locations/${citySlug}`;
-    const hubMetadata = getSEOMetadata(hubPath, cityName);
+    // SKIP Deerfield Beach - handled exclusively by React routing with force redirect
+    if (citySlug !== 'deerfield-beach') {
+      const hubPath = `/locations/${citySlug}`;
+      const hubMetadata = getSEOMetadata(hubPath, cityName);
+      const hubContent = generateServiceHubContent(cityName, citySlug);
 
-    // Special handling for Deerfield Beach HQ page (Google Business Profile landing page)
-    const hubContent = citySlug === 'deerfield-beach'
-      ? generateDeerfieldBeachHQContent()
-      : generateServiceHubContent(cityName, citySlug);
-
-    const hubHTML = createHTMLTemplate(
-      hubMetadata.title,
-      hubMetadata.description,
-      hubMetadata.canonical,
-      hubContent
-    );
-    const hubDir = path.join(publicDir, 'locations', citySlug);
-    fs.mkdirSync(hubDir, { recursive: true });
-    fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
-    console.log(`✓ Generated: public/locations/${citySlug}/index.html${citySlug === 'deerfield-beach' ? ' (HQ AUTHORITY PAGE - 800+ words)' : ''}`);
-    totalPages++;
+      const hubHTML = createHTMLTemplate(
+        hubMetadata.title,
+        hubMetadata.description,
+        hubMetadata.canonical,
+        hubContent
+      );
+      const hubDir = path.join(publicDir, 'locations', citySlug);
+      fs.mkdirSync(hubDir, { recursive: true });
+      fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
+      console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
+      totalPages++;
+    } else {
+      console.log(`⚡ SKIPPED: public/locations/${citySlug}/index.html (React-only with force redirect)`);
+    }
 
     // SILO 2: Roof Repair - /roof-repair/[city]
     const repairPath = `/roof-repair/${citySlug}`;

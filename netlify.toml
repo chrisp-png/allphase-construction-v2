@@ -99,6 +99,12 @@ for = "*.js"
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
+from = "/locations/deerfield-beach"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
