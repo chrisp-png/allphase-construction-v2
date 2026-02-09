@@ -207,6 +207,7 @@ const WellingtonMoneyPage = lazy(() => import('./pages/locations/WellingtonMoney
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Loading fallback that is SEO-friendly
 const PageLoadingFallback = () => (
@@ -349,7 +350,7 @@ function AppContent() {
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
       </main>

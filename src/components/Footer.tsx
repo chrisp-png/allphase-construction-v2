@@ -115,8 +115,8 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-2">
               Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
             </p>
-            <p className="text-gray-500 text-xs mb-4">
-              CCC1331464 • CGC1526236
+            <p className="text-gray-400 text-sm mb-4 font-semibold">
+              CCC-1331464 • CGC-1526236
             </p>
             <div className="space-y-2 text-gray-400 text-sm mb-6">
               <p>590 Goolsby Blvd</p>
