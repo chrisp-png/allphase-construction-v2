@@ -176,7 +176,7 @@ export default function BocaRatonPage() {
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                If you're searching for a roof in Boca Raton, Florida, you want one thing:
+                Why Boca Raton Homeowners Hire All Phase Construction USA
               </h2>
 
               <h3 className="text-xl font-semibold text-white mb-4">
@@ -196,7 +196,7 @@ export default function BocaRatonPage() {
                 South Florida roofing is not only about materials. It is about details that pass inspection and hold up when storms start pushing water sideways.
               </p>
               <p className="text-zinc-300 leading-relaxed mb-12">
-                Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team is committed to strict safety protocols and ensures all work meets or exceeds safety standards to protect your home and everyone involved.
+                Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team follows strict safety protocols and ensures all work meets or exceeds safety standards.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-4">
@@ -218,7 +218,7 @@ export default function BocaRatonPage() {
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Manufacturer certifications, including Tamko Platinum Preferred, plus multiple major system credentials</span>
+                  <span>Manufacturer certifications including Tamko Platinum Preferred and multiple major system credentials</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -226,29 +226,20 @@ export default function BocaRatonPage() {
                 </li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.
-              </h3>
-              <p className="text-zinc-300 leading-relaxed mb-4">
-                Our roofing contractors are skilled in the installation of various roofing systems, ensuring each project meets the highest standards. The installation process uses premium materials sourced from leading manufacturers to guarantee durability and protection. Boca Raton Roofing Company uses premium materials and proven techniques to ensure lasting protection and energy efficiency.
-              </p>
               <p className="text-zinc-300 leading-relaxed mb-6">
+                Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.
+              </p>
+              <p className="text-zinc-300 leading-relaxed mb-4">
                 Shingle crew for shingles. Tile crew for tile. Metal crew for metal. Flat crew for flat systems.
               </p>
               <p className="text-zinc-300 leading-relaxed mb-4">
-                All Phase Construction USA installs code-compliant roofing systems in Boca Raton.
-              </p>
-              <p className="text-zinc-300 leading-relaxed mb-4">
-                Our team handles permits and inspections for reroof projects.
-              </p>
-              <p className="text-zinc-300 leading-relaxed mb-4">
-                Boca Raton storms create wind-driven rain that exposes weak flashing and underlayment
+                All Phase Construction USA installs code-compliant roofing systems in Boca Raton and handles permits and inspections for reroof projects.
               </p>
             </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                Roofing company in Boca Raton FL with a "show-you" inspection process
+                Roofing Company in Boca Raton FL with a "Show-You" Inspection Process
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-6">
                 Most roof problems are invisible from the driveway. Our inspection is designed to reduce guesswork and help you make a clean decision.
@@ -260,20 +251,20 @@ export default function BocaRatonPage() {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Photos of key roof areas (edges, penetrations, valleys, transitions)</span>
+                  <span>Photos of key roof areas</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Clear notes on what is failed vs what is aging</span>
+                  <span>Clear notes on what is failed vs. what is aging</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>A recommendation that matches the roof's condition and your timeline</span>
+                  <span>Recommendations matched to the roof's condition and your timeline</span>
                 </li>
               </ul>
 
               <h3 className="text-xl font-semibold text-white mb-4">
-                Repair vs replacement (how we decide):
+                Repair vs Replacement (how we decide):
               </h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
@@ -304,19 +295,19 @@ export default function BocaRatonPage() {
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                Roofing contractor in Boca Raton FL: what we do
+                Roofing Contractor in Boca Raton FL: What We Do
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-6">
-                We deliver roofing services that are permit-ready, inspection-ready, and storm-ready, including complete roof replacements and specialized commercial roofing solutions. Our roof repair services are designed to keep your home or business covered and protected from the elements. That includes residential and commercial projects.
+                We deliver permit-ready, inspection-ready, storm-ready roofing services for residential and commercial properties.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-4">
-                Our core services
+                Core Services
               </h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Roof inspection and leak investigations</span>
+                  <span>Roof inspections and leak investigations</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -335,59 +326,24 @@ export default function BocaRatonPage() {
                   <span>Preventive maintenance for aging roofs</span>
                 </li>
               </ul>
-
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Quick service fit guide
-              </h3>
-              <div className="overflow-x-auto mb-8">
-                <table className="w-full border border-zinc-800 rounded-lg overflow-hidden">
-                  <thead className="bg-[#27272a]">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Service</th>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Best for</th>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Typical outcome</th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-zinc-900/50">
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Roof inspection</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Leaks, stains, insurance letters, "something feels off"</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Photos + options + next steps; well-managed project assessment with attention to detail throughout the project lifecycle</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Roof repair</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Localized damage, flashing issues, minor storm damage</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Stop leaks and extend roof life; each repair project is handled with expertise and careful project management</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300">Roof replacement</td>
-                      <td className="px-6 py-4 text-zinc-300">Widespread wear, recurring leaks, failed underlayment</td>
-                      <td className="px-6 py-4 text-zinc-300">New system, updated code, warranty; comprehensive project oversight ensures customer satisfaction at every stage</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                What we typically find during Boca Raton roof inspections
+                What We Typically Find During Boca Raton Roof Inspections
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-6">
-                Boca Raton roofs take heat, UV, salt air, and storm-driven rain. The failures tend to repeat.
+                Common findings include:
               </p>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Common inspection findings in Boca Raton:
-              </h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Cracked or slipped tiles that expose underlayment</span>
+                  <span>Cracked or slipped tiles exposing underlayment</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Nail pops, lifted shingles, and perimeter edge issues</span>
+                  <span>Nail pops and lifted shingles</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -399,28 +355,21 @@ export default function BocaRatonPage() {
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Flat roof seam issues and ponding stress points</span>
+                  <span>Flat roof seam and drainage issues</span>
                 </li>
               </ul>
-
-              <p className="text-zinc-300 leading-relaxed">
-                At the first sign of roof leaks or a leaky roof, prompt professional intervention is crucial to prevent further damage and avoid costly repairs. A small leak can be a small fix, or it can be the symptom of a tired system. The inspection tells the truth.
-              </p>
             </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                Roof repair in Boca Raton FL
+                Roof Repair in Boca Raton FL
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-6">
-                If you need roof repair in Boca Raton, speed matters, but correctness matters more. A rushed patch often becomes a repeat leak.
-              </p>
-              <p className="text-zinc-300 leading-relaxed mb-6">
-                Maintaining your roof is essential for ongoing protection against harsh weather and storm damage, especially in South Florida. Regular maintenance allows homeowners to rest assured that their roof is in good condition, providing peace of mind and long-term security for your home.
+                Speed matters—but correctness matters more. A rushed patch often becomes a repeat leak.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-4">
-                Common roof repairs we handle
+                Common repairs we handle:
               </h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
@@ -429,195 +378,61 @@ export default function BocaRatonPage() {
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Flashing repair at chimneys, walls, and transitions</span>
+                  <span>Flashing repair</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Tile replacement and reset work</span>
+                  <span>Tile reset and replacement</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Shingle repair, blow-off replacement, and edge reinforcement</span>
+                  <span>Shingle blow-off repair</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Flat roof repairs (seams, penetrations, drains)</span>
+                  <span>Flat roof seam and penetration repairs</span>
                 </li>
               </ul>
-
-              <p className="text-zinc-300 leading-relaxed italic">
-                Wind-driven rain finds weak flashing near roof penetrations.
-              </p>
             </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                Roof replacement in Boca Raton FL: systems, materials, and wind performance
+                Roof Replacement in Boca Raton FL
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-6">
-                A roof replacement is not "just shingles." In South Florida, the system details matter as much as the surface. Professional installation is crucial to ensure the quality, durability, and energy efficiency of your new roof, providing long-lasting protection for your home.
-              </p>
-              <p className="text-zinc-300 leading-relaxed mb-8">
-                When selecting roofing materials, it's important to choose options that offer lasting protection and energy efficiency. Metal roofs are known for their exceptional durability and can enhance the strength of your home, providing value for decades. Tile roofing systems are commonly used in South Florida because they withstand harsh weather conditions, while concrete tiles are a top-rated material in Boca Raton, FL, thanks to their impressive 50+ year lifespan. Asphalt shingles remain one of the more affordable roofing options available, making them a popular choice for many homeowners.
+                Roof replacements are system builds, not surface swaps. We install:
               </p>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Roofing materials we install (match the roof to the building)
-              </h3>
-              <div className="overflow-x-auto mb-12">
-                <table className="w-full border border-zinc-800 rounded-lg overflow-hidden">
-                  <thead className="bg-[#27272a]">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Roofing material</th>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Best for</th>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Strengths in Boca Raton</th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-zinc-900/50">
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Architectural shingles</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Budget-to-mid projects</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Fast installs, good value, broad color options</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Tile (clay or concrete)</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Many South FL homes</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Long life, strong curb appeal, great heat performance</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Metal roofing</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Storm-focused owners</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">High wind performance, longevity, energy benefits</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300">Flat roofing systems</td>
-                      <td className="px-6 py-4 text-zinc-300">Commercial and modern homes</td>
-                      <td className="px-6 py-4 text-zinc-300">Seam control, drainage solutions, durable membranes</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <h3 className="text-xl font-semibold text-white mb-4">
-                160 MPH wind-rated shingles (when it fits the roof)
-              </h3>
-              <p className="text-zinc-300 leading-relaxed mb-8">
-                If your home is a good match for shingles, we can spec high wind-rated systems designed for severe weather performance. Ask about wind ratings, fastening patterns, and the full system build, not only the brand name.
-              </p>
-
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Warranties and certifications
-              </h3>
-              <p className="text-zinc-300 leading-relaxed">
-                Manufacturer certifications can unlock stronger warranty options when the full system is installed to spec. That is one reason certifications matter, beyond the logo.
-              </p>
-            </div>
-
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-white mb-6">
-                Roof cost in Boca Raton: what drives price
-              </h2>
-              <p className="text-zinc-300 leading-relaxed mb-6">
-                Roof pricing in South Florida depends on the roof design and the code requirements, not just square footage. As a leading roofer in Boca Raton FL, we are committed to transparent pricing, ensuring you receive clear and upfront cost information for your roofing project. A professional quote should always be itemized and specify material brands, labor costs, permit fees, and timelines so you know exactly what to expect.
-              </p>
-
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Big drivers of roof cost:
-              </h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Roof size and pitch</span>
+                  <span>Architectural shingles</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Material choice (shingle vs tile vs metal vs flat)</span>
+                  <span>Clay and concrete tile</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Tear-off layers and deck condition</span>
+                  <span>Metal roofing systems</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Permits and inspections</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Ventilation upgrades and flashing complexity</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Hurricane-rated enhancements and fastening requirements</span>
+                  <span>Flat roofing membranes</span>
                 </li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Realistic Florida price context (ranges, not hype)
-              </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Industry sources commonly cite Florida roof replacement pricing that varies widely by material and scope, and many calculators show higher statewide averages for full replacements on typical homes.
+                High-wind-rated systems are available when appropriate.
               </p>
             </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                Service areas: Boca Raton plus Palm Beach and Broward County
+                Service Areas
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-8">
-                We serve Boca Raton and the surrounding region with the same process: inspect, document, scope, permit, install, and close out clean. Protecting your house with reliable roofing solutions is our priority in every community we serve, ensuring your home and its occupants are safe and secure.
-              </p>
-
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Palm Beach County (partial list)
-              </h3>
-              <p className="text-zinc-300 leading-relaxed mb-6">
-                Boca Raton, Delray Beach, Boynton Beach, Lake Worth, Wellington, West Palm Beach, Palm Beach Gardens, Jupiter
-              </p>
-
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Broward County (partial list)
-              </h3>
-              <p className="text-zinc-300 leading-relaxed mb-8">
-                Deerfield Beach, Pompano Beach, Fort Lauderdale, Coral Springs, Coconut Creek, Parkland, Oakland Park, Sunrise, Weston
-              </p>
-
-              <div className="overflow-x-auto mb-8">
-                <table className="w-full border border-zinc-800 rounded-lg overflow-hidden">
-                  <thead className="bg-[#27272a]">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">County</th>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Core cities we serve</th>
-                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-800">Typical projects</th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-zinc-900/50">
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Palm Beach</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Boca Raton, Delray, Boynton, West Palm</td>
-                      <td className="px-6 py-4 text-zinc-300 border-b border-zinc-800">Tile resets, reroofs, leak repairs</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 text-zinc-300">Broward</td>
-                      <td className="px-6 py-4 text-zinc-300">Deerfield, Pompano, Fort Lauderdale, Coral Springs</td>
-                      <td className="px-6 py-4 text-zinc-300">Repairs, replacements, commercial systems</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-white mb-6">
-                Florida's "25% rule" and reroof decisions in plain English
-              </h2>
-              <p className="text-zinc-300 leading-relaxed mb-4">
-                Homeowners ask this nonstop because it affects repair vs replacement.
-              </p>
-              <p className="text-zinc-300 leading-relaxed mb-4">
-                Florida's older "25% rule" language appears in Florida Building Code references, but SB 4-D revised how this is applied for many roofs. In many cases, when 25% or more is repaired, only that portion must be brought up to current code if the existing roof complies with the 2007 Florida Building Code or later.
-              </p>
-              <p className="text-zinc-300 leading-relaxed">
-                Local enforcement can still vary, so we treat this as a permit-and-inspection conversation, not a guess.
+                We serve Boca Raton plus surrounding areas in Palm Beach and Broward County, including Deerfield Beach, Delray Beach, Boynton Beach, Pompano Beach, Fort Lauderdale, and more.
               </p>
             </div>
 
