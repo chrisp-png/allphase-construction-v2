@@ -46,8 +46,57 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="py-16 bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-16 overflow-hidden bg-[#0a0a0a]">
+      {/* Real Customer Photo Collage Background */}
+      <div className="absolute inset-0 opacity-20">
+        {/* Photo Grid with Slow Drift Animation */}
+        <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 animate-[drift_60s_ease-in-out_infinite]">
+          {/* Top Row */}
+          <div
+            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            style={{ backgroundImage: 'url(/step-01-inspection-optimized.jpg)' }}
+          />
+          <div
+            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            style={{ backgroundImage: 'url(/step-10-piece-of-mind-optimized.jpg)' }}
+          />
+          <div
+            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            style={{ backgroundImage: 'url(/step-02-planning-optimized.jpg)' }}
+          />
+
+          {/* Bottom Row */}
+          <div
+            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            style={{ backgroundImage: 'url(/step-08-install.jpg)' }}
+          />
+          <div
+            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            style={{ backgroundImage: 'url(/step-09-installed.jpg)' }}
+          />
+          <div
+            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            style={{ backgroundImage: 'url(/tear-off-responsible-disposal-all-phase-construction-usa.jpg)' }}
+          />
+        </div>
+      </div>
+
+      {/* Dark Gradient Overlay - Darkest in center, lighter at edges */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/95 via-[#0a0a0a]/98 to-[#0a0a0a]/95" />
+
+      {/* Radial Vignette */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(10,10,10,0.6)_70%,rgba(10,10,10,0.9)_100%)]" />
+
+      {/* Film Grain Texture */}
+      <div
+        className="absolute inset-0 opacity-[0.015] mix-blend-overlay pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+          backgroundRepeat: 'repeat',
+        }}
+      />
+      {/* Content Layer - Above Background */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
             What Our Customers Say
@@ -61,7 +110,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-neutral-900 rounded-lg p-6 border border-neutral-800"
+              className="bg-neutral-900/95 backdrop-blur-sm rounded-lg p-6 border border-neutral-800"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
