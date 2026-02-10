@@ -1,4 +1,4 @@
-import { Phone, Clock, CheckCircle, Award, Users, Star, Flame, MapPin } from 'lucide-react';
+import { Phone, Clock, CheckCircle, Award, Users, Star, Flame } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useAssessmentModal } from '../context/AssessmentModalContext';
 
@@ -135,27 +135,9 @@ export default function HeroRoofing() {
               Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.
             </p>
 
-            <p className="text-base sm:text-lg text-gray-300 mb-4">
+            <p className="text-base sm:text-lg text-gray-300 mb-6">
               What makes All Phase Construction USA different is proof. We are BBB A+ rated; a Tamko Platinum Preferred Contractor; an IB Roof Preferred Contractor; a GAF Gold Certified Contractor; credentialed by Carlisle; and JM credentialed, along with many other leading manufacturers. We are trusted across Palm Beach and Broward County with a 4.8-star reputation and over 135 Google reviews. You are not hiring a random crew — you are hiring a system that shows up and stands behind the work.
             </p>
-
-            <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
-              <span className="inline-flex items-center gap-1.5 bg-red-600/20 border border-red-600 text-white px-3 py-1.5 rounded-lg font-semibold">
-                <MapPin className="w-4 h-4" />
-                Service Areas:
-              </span>
-              <span className="text-gray-300">Fort Lauderdale</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-gray-300">Boca Raton</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-gray-300">West Palm Beach</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-gray-300">Pompano Beach</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-gray-300">Delray Beach</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-gray-300 font-semibold">60+ Cities</span>
-            </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-600 mb-6">
               All Phase Construction USA
