@@ -4,7 +4,7 @@
  */
 
 export const EXTERNAL_LINKS = {
-  GOOGLE_REVIEWS: 'https://www.google.com/search?sca_esv=fc1c730d332ca106&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOcRoy0r0GEHTgnf7pf-R63pvNBgNehKK3_KvutBMMYtJv3k1tRFG4HzmWER2I_GJosRh9heSz2U2uyK_ympqemiM90rXp1GDvg6MBWc_szkDhy6BOw%3D%3D&q=All+Phase+Construction+USA,+LLC+Reviews&sa=X&ved=2ahUKEwjC_qe2maqSAxUsTTABHTAKPWoQ0bkNegQIQxAH&biw=1795&bih=845&dpr=1.07&aic=0',
+  GOOGLE_REVIEWS: 'https://www.google.com/maps/place/All+Phase+Construction+USA/@26.3087535,-80.3291243,11z/data=!4m6!3m5!1s0x88d91d982b569be1:0xc298661959b65cbf!8m2!3d26.3107856!4d-80.1251381!16s%2Fg%2F11c5045_rv?entry=ttu',
   FACEBOOK: 'https://www.facebook.com/AllPhaseConstructionUsA',
   BBB: 'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640/#sealclick',
   GOOGLE_MAPS: 'https://www.google.com/maps/search/?api=1&query=590%20Goolsby%20Blvd%2C%20Deerfield%20Beach%2C%20FL%2033442',
