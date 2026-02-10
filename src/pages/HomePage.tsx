@@ -4,7 +4,6 @@ import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock } f
 import HeroRoofing from '../components/HeroRoofing';
 import OurEdge from '../components/OurEdge';
 import TrustBadges from '../components/TrustBadges';
-import LocalRootedness from '../components/LocalRootedness';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
@@ -346,7 +345,6 @@ export default function HomePage() {
 
       <OurEdge />
       <TrustBadges />
-      <LocalRootedness />
       <Services />
       <WhyChooseUs />
       <Testimonials />
