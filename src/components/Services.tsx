@@ -119,7 +119,11 @@ export default function Services() {
 
               {/* Bottom Affordance: "Explore →" */}
               <div className="flex items-center justify-end gap-1.5 text-sm font-medium text-gray-500 group-hover:text-red-500 transition-colors pt-4 border-t border-neutral-800/50 group-hover:border-red-900/30">
-                <span>Explore</span>
+                <span className="relative">
+                  Explore
+                  {/* Animated Underline */}
+                  <span className="absolute left-0 bottom-0 h-[1.5px] w-0 bg-gradient-to-r from-red-500 to-red-600 group-hover:w-full transition-all duration-300 ease-out"></span>
+                </span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
             </a>
