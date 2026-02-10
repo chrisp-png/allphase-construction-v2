@@ -214,14 +214,50 @@ export default function HomePage() {
       </Helmet>
       <HeroRoofing />
 
-      {/* Location Clarification */}
+      {/* Service Navigation Buttons */}
       <section className="py-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-700 leading-relaxed">
-            <strong>Deerfield Beach, FL</strong>
-            <br />
-            Based at 590 Goolsby Boulevard, Deerfield Beach, Florida 33442. We serve Deerfield Beach, Florida and the surrounding areas in Palm Beach and Broward County.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <a
+              href="https://allphaseconstructionfl.com/roof-inspection"
+              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              ROOF INSPECTIONS
+            </a>
+            <a
+              href="https://allphaseconstructionfl.com/roof-repair"
+              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              ROOF REPAIR
+            </a>
+            <a
+              href="https://allphaseconstructionfl.com/residential-roofing"
+              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              ROOF REPLACEMENT
+            </a>
+            <a
+              href="https://allphaseconstructionfl.com/commercial-roofing"
+              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              COMMERCIAL ROOFING
+            </a>
+            <a
+              href="https://allphaseconstructionfl.com/roof-maintenance-programs"
+              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              ROOF MAINTENANCE PROGRAMS
+            </a>
+          </div>
+
+          {/* Location Clarification */}
+          <div className="text-center">
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Deerfield Beach, FL</strong>
+              <br />
+              Based at 590 Goolsby Boulevard, Deerfield Beach, Florida 33442. We serve Deerfield Beach, Florida and the surrounding areas in Palm Beach and Broward County.
+            </p>
+          </div>
         </div>
       </section>
 
