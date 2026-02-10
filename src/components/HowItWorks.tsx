@@ -97,8 +97,26 @@ const processSteps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-20 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: 'url(/step-09-installed.jpg)',
+            willChange: 'transform',
+          }}
+          role="presentation"
+          aria-hidden="true"
+        />
+        {/* Dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/90 to-black/95" />
+        {/* Additional vignette effect for edge depth */}
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/50" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -114,7 +132,7 @@ export default function HowItWorks() {
           {processSteps.map((step) => (
             <div
               key={step.number}
-              className="group bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-2xl p-7 border border-gray-700/50 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm"
+              className="group bg-gradient-to-br from-gray-900/95 to-black/95 rounded-2xl p-7 border border-gray-700/60 hover:border-red-600/60 hover:shadow-2xl hover:shadow-red-900/30 hover:-translate-y-2 transition-all duration-300 backdrop-blur-md"
             >
               {/* Step Number Badge */}
               <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-gray-900 to-black border-2 border-red-600/60 rounded-xl mb-5 shadow-lg shadow-red-900/30">
@@ -132,7 +150,7 @@ export default function HowItWorks() {
               </p>
 
               {/* Review Snippet */}
-              <div className="relative bg-black/40 border border-gray-700/40 rounded-xl p-5 mb-4 hover:border-gray-600/60 transition-colors">
+              <div className="relative bg-black/60 border border-gray-700/50 rounded-xl p-5 mb-4 hover:border-gray-600/70 transition-colors backdrop-blur-sm">
                 {/* Quote Icon */}
                 <Quote className="absolute top-3 right-3 w-5 h-5 text-red-600/20" />
 
