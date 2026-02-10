@@ -2,7 +2,7 @@
   "meta": {
     "created": "2026-02-10",
     "purpose": "Asset tracking for All Phase Construction USA social proof images",
-    "total_images": 0,
+    "total_images": 5,
     "last_updated": "2026-02-10"
   },
   "categories": {
@@ -19,20 +19,71 @@
       "images": []
     },
     "projects": {
-      "count": 0,
-      "images": []
+      "count": 4,
+      "images": [
+        "terra-cotta-tile-install.jpg",
+        "attic-fan-rafter-image.jpg",
+        "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
+        "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg"
+      ]
     },
     "drone": {
-      "count": 0,
-      "images": []
+      "count": 1,
+      "images": [
+        "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg"
+      ]
     }
   },
   "usage_guidelines": {
     "testimonials_background": [],
     "about_page": [],
-    "process_steps": [],
-    "service_pages": [],
-    "hero_backgrounds": []
+    "process_steps": [
+      "attic-fan-rafter-image.jpg"
+    ],
+    "service_pages": [
+      "terra-cotta-tile-install.jpg",
+      "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
+      "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg"
+    ],
+    "hero_backgrounds": [
+      "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg"
+    ]
   },
-  "images": []
+  "images": [
+    {
+      "filename": "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg",
+      "category": "drone",
+      "alt": "Aerial drone view of shingle roof installation in Broward County with All Phase Construction USA branded truck on site",
+      "type": "project",
+      "location": "Broward County"
+    },
+    {
+      "filename": "terra-cotta-tile-install.jpg",
+      "category": "projects",
+      "alt": "Terra cotta tile roof installation project with All Phase Construction USA branded truck in driveway",
+      "type": "project",
+      "location": "South Florida"
+    },
+    {
+      "filename": "attic-fan-rafter-image.jpg",
+      "category": "projects",
+      "alt": "Attic ventilation system showing proper airflow with solar attic fan installation",
+      "type": "technical_diagram",
+      "location": null
+    },
+    {
+      "filename": "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
+      "category": "projects",
+      "alt": "Commercial metal roof installation on bus shelter in Palm Beach and Broward County",
+      "type": "commercial_project",
+      "location": "Palm Beach/Broward County"
+    },
+    {
+      "filename": "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg",
+      "category": "projects",
+      "alt": "Standing seam metal roof installation in progress on commercial bus shelter",
+      "type": "commercial_project",
+      "location": "South Florida"
+    }
+  ]
 }
