@@ -469,7 +469,7 @@ export default function BocaRatonPage() {
 
             <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                CTA
+                Schedule a Roof Inspection
               </h2>
               <p className="text-zinc-300 text-lg mb-8 max-w-2xl mx-auto">
                 If you need a roofer in Boca Raton FL, start with an inspection that shows you what is happening and what it costs to fix correctly.
