@@ -55,6 +55,7 @@ const manualPublicCopyPlugin = () => ({
 
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
+    // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)
     const copyHtmlRecursive = (srcDir, destDir, isRoot = false) => {
       if (!fs.existsSync(srcDir)) return;
 
@@ -62,9 +63,21 @@ const manualPublicCopyPlugin = () => ({
       entries.forEach(entry => {
         const srcPath = path.join(srcDir, entry.name);
         const destPath = path.join(destDir, entry.name);
+        const relativePath = path.relative(publicDir, srcPath);
+
+        // DENYLIST: Skip SPA routes that must be handled by React
+        const spaRoutePrefixes = ['locations/', 'roof-repair/', 'roof-inspection/'];
+        const isSpaRoute = spaRoutePrefixes.some(prefix =>
+          relativePath.startsWith(prefix) || entry.name === 'locations' || entry.name === 'roof-repair' || entry.name === 'roof-inspection'
+        );
 
         if (entry.isDirectory()) {
-          // Recursively copy directory
+          // Skip creating SPA route directories entirely
+          if (isRoot && isSpaRoute) {
+            console.log(`Skipped SPA route directory: ${entry.name}/ (React handles routing)`);
+            return;
+          }
+          // Recursively copy non-SPA directories
           fs.mkdirSync(destPath, { recursive: true });
           copyHtmlRecursive(srcPath, destPath, false);
         } else if (entry.isFile() && entry.name.endsWith('.html')) {
@@ -73,9 +86,14 @@ const manualPublicCopyPlugin = () => ({
             console.log(`Skipped root index.html (preserving Vite build)`);
             return;
           }
-          // Copy HTML files from subdirectories
+          // Skip HTML files within SPA routes
+          if (isSpaRoute) {
+            console.log(`Skipped SPA route: ${relativePath} (React handles routing)`);
+            return;
+          }
+          // Copy static service pages only
           fs.copyFileSync(srcPath, destPath);
-          console.log(`Copied prerendered: ${path.relative(publicDir, srcPath)}`);
+          console.log(`Copied prerendered: ${relativePath}`);
         }
       });
     };
