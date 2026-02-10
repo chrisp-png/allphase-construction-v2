@@ -136,7 +136,7 @@ export default function HeroRoofing() {
             </p>
 
             <p className="text-base sm:text-lg text-gray-300 mb-6">
-              What makes All Phase Construction USA different is proof. We are BBB A+ rated; a Tamko Platinum Preferred Contractor; an IB Roof Preferred Contractor; a GAF Gold Certified Contractor; credentialed by Carlisle; and JM credentialed, along with many other leading manufacturers. We are trusted across Palm Beach and Broward County with a 4.8-star reputation and over 135 Google reviews. You are not hiring a random crew — you are hiring a system that shows up and stands behind the work.
+              What makes All Phase Construction USA different is proof. We are BBB A+ rated; a Tamko Platinum Preferred Contractor; an IB Roof Preferred Contractor; a GAF Gold Certified Contractor; credentialed by Carlisle; and JM credentialed, along with many other leading manufacturers. We are trusted in Deerfield Beach and across Palm Beach and Broward Counties with a 4.8-star reputation and over 135 Google reviews. You are not hiring a random crew — you are hiring a system that shows up and stands behind the work.
             </p>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-600 mb-6">
