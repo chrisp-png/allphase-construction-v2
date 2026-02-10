@@ -61,24 +61,48 @@ export default function AboutPage() {
   ];
 
   return (
-    <><div className="min-h-screen bg-black pt-36 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <div className="inline-block px-4 py-2 bg-red-600/10 border border-red-600/20 rounded-full mb-6">
-            <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">
-              Broward & Palm Beach's Trusted Roofing Experts
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            About All Phase Construction
-          </h1>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Roofing Expertise Backed by Dual Licensing
-          </h2>
-          <p className="text-xl text-gray-400 max-w-4xl mx-auto">
-            Led by Chris Porosky, a Certified Roofing and General Contractor with over 20 years of experience in the construction industry.
-          </p>
+    <>
+      {/* Hero Section with Team Photo Background */}
+      <div className="relative min-h-[600px] overflow-hidden bg-black pt-36 pb-16">
+        {/* Team Photo Background */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center grayscale-[40%] brightness-[0.35] animate-[drift_45s_ease-in-out_infinite]"
+            style={{ backgroundImage: 'url(/images.jpg)' }}
+          />
         </div>
+
+        {/* Gradient Overlays for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+
+        {/* Vignette */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.5)_70%,rgba(0,0,0,0.8)_100%)]" />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-block px-4 py-2 bg-red-600/20 border border-red-600/40 rounded-full mb-6 backdrop-blur-sm">
+              <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">
+                Broward & Palm Beach's Trusted Roofing Experts
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
+              About All Phase Construction
+            </h1>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 drop-shadow-lg">
+              Roofing Expertise Backed by Dual Licensing
+            </h2>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto drop-shadow-lg">
+              Led by Chris Porosky, a Certified Roofing and General Contractor with over 20 years of experience in the construction industry.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="min-h-screen bg-black pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
@@ -126,9 +150,9 @@ export default function AboutPage() {
                 Schedule Your Free Inspection
               </Link>
             </div>
-            <div className="rounded-xl overflow-hidden">
+            <div className="rounded-xl overflow-hidden border-2 border-zinc-800">
               <img
-                src="/team-photo.jpg"
+                src="/images.jpg"
                 alt="All Phase Construction team in front of company truck"
                 width="800"
                 height="600"
