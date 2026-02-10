@@ -1,6 +1,26 @@
 import { Star } from 'lucide-react';
 import { useEffect } from 'react';
 
+// PEOPLE PHOTOS FOR COLLAGE BACKGROUND
+// Explicit list to ensure NO DUPLICATES
+const collageImages = [
+  '/long-term-piece-of-mind-all-phase-construction-usa.png', // Team photo with All Phase truck
+  '/step-10-piece-of-mind-optimized.jpg', // Happy customers/completion
+  '/step-01-inspection-optimized.jpg', // Inspector with customer
+  '/step-02-planning-optimized.jpg', // Planning meeting with people
+  '/step-03-materials-selection-optimized.jpg', // Materials selection with people
+  '/step-04-permitting-optimized.jpg', // Permitting office with people
+  '/tear-off-responsible-disposal-all-phase-construction-usa.jpg', // Work crew
+];
+
+// Deduplication helper (safety check)
+const uniqueCollageImages = Array.from(new Set(collageImages));
+
+// Ensure we have no duplicates
+if (uniqueCollageImages.length !== collageImages.length) {
+  console.error('Duplicate images detected in testimonials collage!');
+}
+
 const testimonials = [
   {
     name: 'Evelyn T.',
@@ -47,52 +67,52 @@ export default function Testimonials() {
 
   return (
     <section className="relative py-16 overflow-hidden">
-      {/* Background Image with Overlay - SAME PATTERN AS HOWITWORKS */}
+      {/* Background Image with Overlay - PEOPLE PHOTOS ONLY */}
       <div className="absolute inset-0 z-0">
-        {/* Photo Collage Background */}
+        {/* Photo Collage Background - 6 UNIQUE PEOPLE PHOTOS */}
         <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1">
-          {/* Top Row */}
+          {/* Top Row - People Photos */}
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
-            style={{ backgroundImage: 'url(/step-01-inspection-optimized.jpg)' }}
+            style={{ backgroundImage: `url(${uniqueCollageImages[0]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
-            style={{ backgroundImage: 'url(/step-10-piece-of-mind-optimized.jpg)' }}
+            style={{ backgroundImage: `url(${uniqueCollageImages[1]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
-            style={{ backgroundImage: 'url(/step-02-planning-optimized.jpg)' }}
+            style={{ backgroundImage: `url(${uniqueCollageImages[2]})` }}
             role="presentation"
             aria-hidden="true"
           />
 
-          {/* Bottom Row */}
+          {/* Bottom Row - People Photos */}
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
-            style={{ backgroundImage: 'url(/step-08-install.jpg)' }}
+            style={{ backgroundImage: `url(${uniqueCollageImages[3]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
-            style={{ backgroundImage: 'url(/step-09-installed.jpg)' }}
+            style={{ backgroundImage: `url(${uniqueCollageImages[4]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
-            style={{ backgroundImage: 'url(/images.jpg)' }}
+            style={{ backgroundImage: `url(${uniqueCollageImages[5]})` }}
             role="presentation"
             aria-hidden="true"
           />
         </div>
-        {/* Lighter gradient overlay for enhanced background visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/65" />
+        {/* Slightly lighter overlay for better collage visibility (reduced by ~12%) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/52 via-black/44 to-black/57" />
         {/* Subtle vignette effect for edge depth */}
         <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30" />
       </div>
