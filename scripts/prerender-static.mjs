@@ -166,10 +166,199 @@ function generateBocaRatonServiceHubContent() {
   return `
 <section id="seo-static-content">
   <h1>Roofer in Boca Raton FL</h1>
-
   <h2>All Phase Construction USA | Roofing Contractor Serving Boca Raton, Palm Beach, and Broward County</h2>
-
-  <p>Custom Boca Raton content will be inserted here in Step 4.</p>
+  <p>If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That is what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community.</p>
+  <p>All Phase Construction USA is a licensed Florida roofing contractor—fully insured and bonded for your peace of mind. We are proud to have an expert team of professional roofers dedicated to delivering reliable, high-quality workmanship. Our team takes pride in serving the Boca Raton community and building lasting relationships with our customers.</p>
+  <p><strong>Call 24/7:</strong> (754) 227-5605<br>
+  <strong>Address:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442<br>
+  <strong>Google Rating:</strong> 4.8★ with 137 reviews</p>
+  <p>As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage—crucial for maintaining the safety and comfort of your home. We are proud of our strong BBB rating (A+) and recent positive Google reviews. When choosing a roofer in Boca Raton, always prioritize local, licensed, insured, and bonded contractors with a proven commitment to customer satisfaction and community trust.</p>
+  <h2>Why Boca Raton homeowners hire All Phase Construction USA</h2>
+  <h3>Not a "random crew with a ladder"</h3>
+  <p>In Boca Raton, the roof that "looks fine" can still fail the moment wind-driven rain hits a weak transition. That's why we run our jobs like a code-and-inspection system, not a patch-and-pray operation.</p>
+  <p>Our experienced and trained contractors handle all aspects of roof installation and repair, ensuring every project meets the highest standards. We plan the build, document the condition, pull permits correctly, and execute with specialized crews by roofing system.</p>
+  <h3>Built for permits, inspections, and hurricane reality</h3>
+  <p>South Florida roofing is not only about materials. It is about details that pass inspection and hold up when storms start pushing water sideways.</p>
+  <p>Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team is committed to strict safety protocols and ensures all work meets or exceeds safety standards to protect your home and everyone involved.</p>
+  <h2>The Proof Stack</h2>
+  <ul>
+    <li>BBB A+ rated</li>
+    <li>4.8★ Google rating (137 reviews)</li>
+    <li>Dual-licensed: Roofing Contractor CCC-1331464 + General Contractor CGC-1526236</li>
+    <li>Manufacturer certifications, including Tamko Platinum Preferred, plus multiple major system credentials</li>
+    <li>Specialized crews by system</li>
+  </ul>
+  <p>Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.</p>
+  <p>Shingle crew for shingles. Tile crew for tile. Metal crew for metal. Flat crew for flat systems.</p>
+  <p>All Phase Construction USA installs code-compliant roofing systems in Boca Raton.</p>
+  <p>Our team handles permits and inspections for reroof projects.</p>
+  <p>Boca Raton storms create wind-driven rain that exposes weak flashing and underlayment</p>
+  <h2>Roofing company in Boca Raton FL with a "show-you" inspection process</h2>
+  <p>Most roof problems are invisible from the driveway. Our inspection is designed to reduce guesswork and help you make a clean decision.</p>
+  <h3>What you get from a real roof inspection:</h3>
+  <ul>
+    <li>Photos of key roof areas (edges, penetrations, valleys, transitions)</li>
+    <li>Clear notes on what is failed vs what is aging</li>
+    <li>A recommendation that matches the roof's condition and your timeline</li>
+  </ul>
+  <h3>Repair vs replacement (how we decide):</h3>
+  <ul>
+    <li>A roof can be repaired when the system is stable and failures are isolated</li>
+    <li>A roof should be replaced when the system is at end-of-life or failing in multiple zones</li>
+  </ul>
+  <h2>About All Phase Construction USA</h2>
+  <p>All Phase Construction USA is a Florida roofing contractor based in Deerfield Beach, serving Boca Raton and the surrounding region with repairs, replacements, and inspections.</p>
+  <p>We operate like a builder, not a sales script. You get direct oversight, clear scope, and a roof system designed for South Florida weather.</p>
+  <p><strong>Find us:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
+  <h2>Roofing contractor in Boca Raton FL: what we do</h2>
+  <p>We deliver roofing services that are permit-ready, inspection-ready, and storm-ready, including complete roof replacements and specialized commercial roofing solutions. Our roof repair services are designed to keep your home or business covered and protected from the elements. That includes residential and commercial projects.</p>
+  <h3>Our core services</h3>
+  <ul>
+    <li>Roof inspection and leak investigations</li>
+    <li>Roof repair (tile, shingle, metal, flat)</li>
+    <li>Full roof replacement and reroofing</li>
+    <li>Storm and hurricane damage assessments</li>
+    <li>Preventive maintenance for aging roofs</li>
+  </ul>
+  <h3>Quick service fit guide</h3>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>Best for</th><th>Typical outcome</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Roof inspection</td>
+        <td>Leaks, stains, insurance letters, "something feels off"</td>
+        <td>Photos + options + next steps; well-managed project assessment with attention to detail throughout the project lifecycle</td>
+      </tr>
+      <tr>
+        <td>Roof repair</td>
+        <td>Localized damage, flashing issues, minor storm damage</td>
+        <td>Stop leaks and extend roof life; each repair project is handled with expertise and careful project management</td>
+      </tr>
+      <tr>
+        <td>Roof replacement</td>
+        <td>Widespread wear, recurring leaks, failed underlayment</td>
+        <td>New system, updated code, warranty; comprehensive project oversight ensures customer satisfaction at every stage</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>What we typically find during Boca Raton roof inspections</h2>
+  <p>Boca Raton roofs take heat, UV, salt air, and storm-driven rain. The failures tend to repeat.</p>
+  <h3>Common inspection findings in Boca Raton:</h3>
+  <ul>
+    <li>Cracked or slipped tiles that expose underlayment</li>
+    <li>Nail pops, lifted shingles, and perimeter edge issues</li>
+    <li>Failed pipe boots and vent flashings</li>
+    <li>Valley and wall transition leaks</li>
+    <li>Flat roof seam issues and ponding stress points</li>
+  </ul>
+  <p>At the first sign of roof leaks or a leaky roof, prompt professional intervention is crucial to prevent further damage and avoid costly repairs. A small leak can be a small fix, or it can be the symptom of a tired system. The inspection tells the truth.</p>
+  <h2>Roof repair in Boca Raton FL</h2>
+  <p>If you need roof repair in Boca Raton, speed matters, but correctness matters more. A rushed patch often becomes a repeat leak.</p>
+  <p>Maintaining your roof is essential for ongoing protection against harsh weather and storm damage, especially in South Florida. Regular maintenance allows homeowners to rest assured that their roof is in good condition, providing peace of mind and long-term security for your home.</p>
+  <h3>Common roof repairs we handle</h3>
+  <ul>
+    <li>Leak detection and targeted sealing</li>
+    <li>Flashing repair at chimneys, walls, and transitions</li>
+    <li>Tile replacement and reset work</li>
+    <li>Shingle repair, blow-off replacement, and edge reinforcement</li>
+    <li>Flat roof repairs (seams, penetrations, drains)</li>
+  </ul>
+  <p><strong>Semantic triple:</strong><br>
+  Wind-driven rain finds weak flashing near roof penetrations.</p>
+  <h2>Roof replacement in Boca Raton FL: systems, materials, and wind performance</h2>
+  <p>A roof replacement is not "just shingles." In South Florida, the system details matter as much as the surface. Professional installation is crucial to ensure the quality, durability, and energy efficiency of your new roof, providing long-lasting protection for your home.</p>
+  <p>When selecting roofing materials, it's important to choose options that offer lasting protection and energy efficiency. Metal roofs are known for their exceptional durability and can enhance the strength of your home, providing value for decades. Tile roofing systems are commonly used in South Florida because they withstand harsh weather conditions, while concrete tiles are a top-rated material in Boca Raton, FL, thanks to their impressive 50+ year lifespan. Asphalt shingles remain one of the more affordable roofing options available, making them a popular choice for many homeowners.</p>
+  <h3>Roofing materials we install (match the roof to the building)</h3>
+  <table>
+    <thead>
+      <tr><th>Roofing material</th><th>Best for</th><th>Strengths in Boca Raton</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Architectural shingles</td>
+        <td>Budget-to-mid projects</td>
+        <td>Fast installs, good value, broad color options</td>
+      </tr>
+      <tr>
+        <td>Tile (clay or concrete)</td>
+        <td>Many South FL homes</td>
+        <td>Long life, strong curb appeal, great heat performance</td>
+      </tr>
+      <tr>
+        <td>Metal roofing</td>
+        <td>Storm-focused owners</td>
+        <td>High wind performance, longevity, energy benefits</td>
+      </tr>
+      <tr>
+        <td>Flat roofing systems</td>
+        <td>Commercial and modern homes</td>
+        <td>Seam control, drainage solutions, durable membranes</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>160 MPH wind-rated shingles (when it fits the roof)</h3>
+  <p>If your home is a good match for shingles, we can spec high wind-rated systems designed for severe weather performance. Ask about wind ratings, fastening patterns, and the full system build, not only the brand name.</p>
+  <h3>Warranties and certifications</h3>
+  <p>Manufacturer certifications can unlock stronger warranty options when the full system is installed to spec. That is one reason certifications matter, beyond the logo.</p>
+  <h2>Roof cost in Boca Raton: what drives price</h2>
+  <p>Roof pricing in South Florida depends on the roof design and the code requirements, not just square footage. As a leading roofer in Boca Raton FL, we are committed to transparent pricing, ensuring you receive clear and upfront cost information for your roofing project. A professional quote should always be itemized and specify material brands, labor costs, permit fees, and timelines so you know exactly what to expect.</p>
+  <h3>Big drivers of roof cost:</h3>
+  <ul>
+    <li>Roof size and pitch</li>
+    <li>Material choice (shingle vs tile vs metal vs flat)</li>
+    <li>Tear-off layers and deck condition</li>
+    <li>Permits and inspections</li>
+    <li>Ventilation upgrades and flashing complexity</li>
+    <li>Hurricane-rated enhancements and fastening requirements</li>
+  </ul>
+  <h3>Realistic Florida price context (ranges, not hype)</h3>
+  <p>Industry sources commonly cite Florida roof replacement pricing that varies widely by material and scope, and many calculators show higher statewide averages for full replacements on typical homes.</p>
+  <h2>Service areas: Boca Raton plus Palm Beach and Broward County</h2>
+  <p>We serve Boca Raton and the surrounding region with the same process: inspect, document, scope, permit, install, and close out clean. Protecting your house with reliable roofing solutions is our priority in every community we serve, ensuring your home and its occupants are safe and secure.</p>
+  <h3>Palm Beach County (partial list)</h3>
+  <p>Boca Raton, Delray Beach, Boynton Beach, Lake Worth, Wellington, West Palm Beach, Palm Beach Gardens, Jupiter</p>
+  <h3>Broward County (partial list)</h3>
+  <p>Deerfield Beach, Pompano Beach, Fort Lauderdale, Coral Springs, Coconut Creek, Parkland, Oakland Park, Sunrise, Weston</p>
+  <h3>County</h3>
+  <table>
+    <thead>
+      <tr><th>County</th><th>Core cities we serve</th><th>Typical projects</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Palm Beach</td>
+        <td>Boca Raton, Delray, Boynton, West Palm</td>
+        <td>Tile resets, reroofs, leak repairs</td>
+      </tr>
+      <tr>
+        <td>Broward</td>
+        <td>Deerfield, Pompano, Fort Lauderdale, Coral Springs</td>
+        <td>Repairs, replacements, commercial systems</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Florida's "25% rule" and reroof decisions in plain English</h2>
+  <p>Homeowners ask this nonstop because it affects repair vs replacement.</p>
+  <p>Florida's older "25% rule" language appears in Florida Building Code references, but SB 4-D revised how this is applied for many roofs. In many cases, when 25% or more is repaired, only that portion must be brought up to current code if the existing roof complies with the 2007 Florida Building Code or later.</p>
+  <p>Local enforcement can still vary, so we treat this as a permit-and-inspection conversation, not a guess.</p>
+  <h2>FAQ</h2>
+  <h3>What is the 25% reroofing rule in Florida?</h3>
+  <p>It refers to code language about how much of a roof can be repaired or replaced within a 12-month period before additional code compliance may be required. SB 4-D revised application for many roofs, often allowing compliance work to be limited to the repaired portion when conditions are met.</p>
+  <h3>What is the average cost for a new roof in Florida?</h3>
+  <p>It varies heavily by material and scope. Statewide averages published by remodeling and roofing cost sources commonly show broad ranges, with full replacements on typical homes often landing in the tens of thousands depending on system choice and tear-off needs.</p>
+  <h3>How much does a 2,000 sq ft shingle roof cost?</h3>
+  <p>"2,000 sq ft" can mean home size, not roof area, so pricing needs a measurement. Many pricing references estimate asphalt systems by cost per square foot or per square (100 sq ft), then adjust for pitch, tear-off, deck work, and code items.</p>
+  <h3>What is the hourly rate for a roofer in Florida?</h3>
+  <p>Worker pay and contractor billing are different numbers. Wage datasets and salary aggregators often show Florida roofer wages around the low-to-mid $20s per hour on average, but contractor labor billed to a job is typically higher because it includes overhead, insurance, supervision, and warranty risk.</p>
+  <h3>Do you handle permits and inspections in Boca Raton?</h3>
+  <p>Yes. We manage permits and coordinate inspections as part of a proper reroof process.</p>
+  <h3>How fast can you inspect a leak?</h3>
+  <p>We prioritize active leaks and storm-related damage. Call and we will schedule the fastest available inspection slot.</p>
+  <h2>CTA</h2>
+  <p><strong>If you need a roofer in Boca Raton FL, start with an inspection that shows you what is happening and what it costs to fix correctly.</strong></p>
+  <p><strong>Call All Phase Construction USA 24/7: (754) 227-5605</strong></p>
 
   ${companyAuthorityFooter()}
 </section>
