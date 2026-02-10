@@ -213,6 +213,18 @@ export default function HomePage() {
         </script>
       </Helmet>
       <HeroRoofing />
+
+      {/* Location Clarification */}
+      <section className="py-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Deerfield Beach, FL</strong>
+            <br />
+            Based at 590 Goolsby Boulevard, Deerfield Beach, Florida 33442. We serve Deerfield Beach, Florida and the surrounding areas in Palm Beach and Broward County.
+          </p>
+        </div>
+      </section>
+
       <OurEdge />
       <TrustBadges />
       <LocalRootedness />
