@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "created": "2026-02-10",
+    "purpose": "Asset tracking for All Phase Construction USA social proof images",
+    "total_images": 0,
+    "last_updated": "2026-02-10"
+  },
+  "categories": {
+    "people": {
+      "count": 0,
+      "images": []
+    },
+    "teams": {
+      "count": 0,
+      "images": []
+    },
+    "customers": {
+      "count": 0,
+      "images": []
+    },
+    "projects": {
+      "count": 0,
+      "images": []
+    },
+    "drone": {
+      "count": 0,
+      "images": []
+    }
+  },
+  "usage_guidelines": {
+    "testimonials_background": [],
+    "about_page": [],
+    "process_steps": [],
+    "service_pages": [],
+    "hero_backgrounds": []
+  },
+  "images": []
+}
