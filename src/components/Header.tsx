@@ -53,18 +53,6 @@ export default function Header() {
   ];
 
   const roofTypes = [
-    {
-      name: 'Residential Roofing',
-      path: '/residential-roofing',
-      hasSubmenu: true,
-      submenu: residentialServices
-    },
-    {
-      name: 'Commercial Roofing',
-      path: '/commercial-roofing',
-      hasSubmenu: true,
-      submenu: materialBasedServices
-    },
     { name: 'Roof Inspection', path: '/roof-inspection' },
     {
       name: 'Roof Repair',
@@ -97,6 +85,18 @@ export default function Header() {
         { name: 'West Palm Beach', path: '/roof-repair/west-palm-beach' },
         { name: 'Wilton Manors', path: '/roof-repair/wilton-manors' },
       ]
+    },
+    {
+      name: 'Residential Roofing',
+      path: '/residential-roofing',
+      hasSubmenu: true,
+      submenu: residentialServices
+    },
+    {
+      name: 'Commercial Roofing',
+      path: '/commercial-roofing',
+      hasSubmenu: true,
+      submenu: materialBasedServices
     },
     { name: 'Roof Maintenance Programs', path: '/roof-maintenance-programs' },
   ];
