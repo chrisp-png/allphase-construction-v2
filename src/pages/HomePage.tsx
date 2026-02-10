@@ -15,6 +15,7 @@ import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
 import LocationMap from '../components/LocationMap';
+import HomeServiceTilesNav from '../components/HomeServiceTilesNav';
 
 export default function HomePage() {
   const localBusinessSchema = {
@@ -368,48 +369,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Service Buttons - Rectangular Style */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a
-              href="https://allphaseconstructionfl.com/roof-repair"
-              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-red-600 hover:text-white hover:border-red-600 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="flex items-center justify-center gap-2">
-                <Wrench className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Roof Repair
-              </span>
-            </a>
-
-            <a
-              href="https://allphaseconstructionfl.com/residential-roofing"
-              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="flex items-center justify-center gap-2">
-                <Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Roof Replacement
-              </span>
-            </a>
-
-            <a
-              href="https://allphaseconstructionfl.com/roof-inspection"
-              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="flex items-center justify-center gap-2">
-                <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Roof Inspection
-              </span>
-            </a>
-
-            <a
-              href="https://allphaseconstructionfl.com/commercial-roofing"
-              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="flex items-center justify-center gap-2">
-                <Building2 className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Commercial Roofing
-              </span>
-            </a>
-          </div>
+          {/* Premium Service Tiles Navigation */}
+          <HomeServiceTilesNav />
         </div>
       </section>
 
