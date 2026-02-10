@@ -47,45 +47,45 @@ export default function Testimonials() {
 
   return (
     <section className="relative py-16 overflow-hidden bg-[#0a0a0a]">
-      {/* Real Customer Photo Collage Background */}
-      <div className="absolute inset-0 opacity-20">
+      {/* Real Customer Photo Collage Background - VISIBLE */}
+      <div className="absolute inset-0 opacity-70">
         {/* Photo Grid with Slow Drift Animation */}
         <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 animate-[drift_60s_ease-in-out_infinite]">
           {/* Top Row */}
           <div
-            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            className="bg-cover bg-center grayscale-[30%]"
             style={{ backgroundImage: 'url(/step-01-inspection-optimized.jpg)' }}
           />
           <div
-            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            className="bg-cover bg-center grayscale-[30%]"
             style={{ backgroundImage: 'url(/step-10-piece-of-mind-optimized.jpg)' }}
           />
           <div
-            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            className="bg-cover bg-center grayscale-[30%]"
             style={{ backgroundImage: 'url(/step-02-planning-optimized.jpg)' }}
           />
 
           {/* Bottom Row */}
           <div
-            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            className="bg-cover bg-center grayscale-[30%]"
             style={{ backgroundImage: 'url(/step-08-install.jpg)' }}
           />
           <div
-            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            className="bg-cover bg-center grayscale-[30%]"
             style={{ backgroundImage: 'url(/step-09-installed.jpg)' }}
           />
           <div
-            className="bg-cover bg-center grayscale-[70%] blur-[2px]"
+            className="bg-cover bg-center grayscale-[30%]"
             style={{ backgroundImage: 'url(/tear-off-responsible-disposal-all-phase-construction-usa.jpg)' }}
           />
         </div>
       </div>
 
-      {/* Dark Gradient Overlay - Darkest in center, lighter at edges */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/95 via-[#0a0a0a]/98 to-[#0a0a0a]/95" />
+      {/* Lighter Gradient Overlay - Only behind review cards */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-[#0a0a0a]/70 to-[#0a0a0a]/60" />
 
-      {/* Radial Vignette */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(10,10,10,0.6)_70%,rgba(10,10,10,0.9)_100%)]" />
+      {/* Subtle Radial Vignette - Keep edges lighter */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(10,10,10,0.4)_80%)]" />
 
       {/* Film Grain Texture */}
       <div
@@ -110,7 +110,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-neutral-900/95 backdrop-blur-sm rounded-lg p-6 border border-neutral-800"
+              className="bg-neutral-900/98 backdrop-blur-md rounded-lg p-6 border border-neutral-800 shadow-xl"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
