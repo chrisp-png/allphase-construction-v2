@@ -68,7 +68,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center grayscale-[40%] brightness-[0.35] animate-[drift_45s_ease-in-out_infinite]"
-            style={{ backgroundImage: 'url(/images.jpg)' }}
+            style={{ backgroundImage: 'url(/long-term-piece-of-mind-all-phase-construction-usa.png)' }}
           />
         </div>
 
@@ -103,6 +103,30 @@ export default function AboutPage() {
       {/* Main Content */}
       <div className="min-h-screen bg-black pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+
+        {/* Prominent Team Photo Section */}
+        <div className="mb-16 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 md:p-6 shadow-2xl">
+          <div className="relative rounded-xl overflow-hidden">
+            <img
+              src="/long-term-piece-of-mind-all-phase-construction-usa.png"
+              alt="All Phase Construction USA team in front of branded work truck in Deerfield Beach, FL"
+              width="1200"
+              height="600"
+              loading="eager"
+              decoding="async"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent px-6 py-8 md:px-12 md:py-10">
+              <h3 className="text-white font-bold text-2xl md:text-3xl mb-3">
+                The All Phase Team
+              </h3>
+              <div className="h-1 w-24 bg-red-600 mb-4 rounded-full"></div>
+              <p className="text-gray-200 text-base md:text-lg max-w-2xl">
+                Built to handle South Florida roofing the right way — serving Broward and Palm Beach Counties from our Deerfield Beach headquarters.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
@@ -150,16 +174,25 @@ export default function AboutPage() {
                 Schedule Your Free Inspection
               </Link>
             </div>
-            <div className="rounded-xl overflow-hidden border-2 border-zinc-800">
+            <div className="relative rounded-2xl overflow-hidden border-2 border-red-600/30 shadow-2xl shadow-red-900/20 hover:border-red-600/60 transition-all duration-300">
               <img
-                src="/images.jpg"
-                alt="All Phase Construction team in front of company truck"
+                src="/long-term-piece-of-mind-all-phase-construction-usa.png"
+                alt="All Phase Construction USA team in front of branded work truck in Deerfield Beach, FL"
                 width="800"
                 height="600"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover"
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-6">
+                <p className="text-white font-semibold text-lg mb-1">
+                  The All Phase Team
+                </p>
+                <div className="h-0.5 w-16 bg-red-600 mb-2"></div>
+                <p className="text-gray-300 text-sm">
+                  Built to handle South Florida roofing the right way
+                </p>
+              </div>
             </div>
           </div>
         </div>
