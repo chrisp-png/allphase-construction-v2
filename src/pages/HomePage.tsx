@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock } from 'lucide-react';
 import HeroRoofing from '../components/HeroRoofing';
-import OurEdge from '../components/OurEdge';
+import HowItWorks from '../components/HowItWorks';
 import TrustBadges from '../components/TrustBadges';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
@@ -374,7 +374,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <OurEdge />
+      <HowItWorks />
       <TrustBadges />
       <Services />
       <WhyChooseUs />
