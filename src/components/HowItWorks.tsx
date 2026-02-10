@@ -101,7 +101,7 @@ export default function HowItWorks() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 bg-cover bg-center bg-fixed brightness-110 contrast-90 saturate-90"
           style={{
             backgroundImage: 'url(/step-09-installed.jpg)',
             willChange: 'transform',
@@ -109,10 +109,10 @@ export default function HowItWorks() {
           role="presentation"
           aria-hidden="true"
         />
-        {/* Dark gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/90 to-black/95" />
-        {/* Additional vignette effect for edge depth */}
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/50" />
+        {/* Lighter gradient overlay for enhanced background visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/65" />
+        {/* Subtle vignette effect for edge depth */}
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30" />
       </div>
 
       {/* Content */}
