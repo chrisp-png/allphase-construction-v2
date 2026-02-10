@@ -1,27 +1,7 @@
-import { MapPin } from 'lucide-react';
-
-const browardCities = [
-  'Fort Lauderdale', 'Hollywood', 'Pembroke Pines', 'Miramar', 'Coral Springs',
-  'Pompano Beach', 'Davie', 'Plantation', 'Sunrise', 'Deerfield Beach',
-  'Lauderhill', 'Weston', 'Tamarac', 'Margate', 'Coconut Creek',
-  'North Lauderdale', 'Lauderdale Lakes', 'Oakland Park', 'Wilton Manors', 'Hallandale Beach',
-  'Parkland', 'Cooper City', 'Lighthouse Point', 'Dania Beach', 'Southwest Ranches',
-  'Hillsboro Beach', 'Lauderdale-by-the-Sea', 'Sea Ranch Lakes', 'Lazy Lake', 'Hillsboro Pines'
-];
-
-const palmBeachCities = [
-  'West Palm Beach', 'Boca Raton', 'Boynton Beach', 'Delray Beach', 'Palm Beach Gardens',
-  'Jupiter', 'Wellington', 'Royal Palm Beach', 'Lake Worth Beach', 'Greenacres',
-  'Palm Beach', 'Riviera Beach', 'North Palm Beach', 'Palm Springs', 'Lantana',
-  'Lake Park', 'Mangonia Park', 'Tequesta', 'Juno Beach', 'Palm Beach Shores',
-  'Glen Ridge', 'Hypoluxo', 'Manalapan', 'Ocean Ridge', 'Briny Breezes',
-  'Gulf Stream', 'Highland Beach', 'South Palm Beach', 'Loxahatchee', 'Pahokee', 'Belle Glade'
-];
+import { MapPin, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ServiceAreas() {
-  const formatCityUrl = (city: string) => {
-    return `/${city.toLowerCase().replace(/\s+/g, '-')}`;
-  };
 
   return (
     <section className="py-16 bg-gradient-to-b from-black to-gray-900">
@@ -42,46 +22,45 @@ export default function ServiceAreas() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-red-600 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-white">Broward County</h3>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {browardCities.map((city) => (
-                <a
-                  key={city}
-                  href={formatCityUrl(city)}
-                  className="text-gray-300 hover:text-red-600 transition-colors text-sm py-1 hover:translate-x-1 transform duration-200 flex items-center gap-1"
-                >
-                  <span className="w-1 h-1 bg-red-600 rounded-full"></span>
-                  {city}
-                </a>
-              ))}
-            </div>
-          </div>
+        {/* Premium Service Areas CTA */}
+        <div className="relative overflow-hidden bg-gradient-to-br from-gray-800/90 via-gray-900/90 to-black/90 backdrop-blur-sm rounded-2xl border border-gray-700/60 shadow-2xl hover:border-red-600/60 hover:shadow-red-900/20 transition-all duration-500 group">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-          <div className="bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-red-600 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-white">Palm Beach County</h3>
+          <div className="relative z-10 px-8 py-12 md:px-12 md:py-16 text-center">
+            {/* Icon */}
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl mb-6 shadow-lg shadow-red-900/30 group-hover:scale-110 transition-transform duration-300">
+              <MapPin className="w-8 h-8 text-white" />
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {palmBeachCities.map((city) => (
-                <a
-                  key={city}
-                  href={formatCityUrl(city)}
-                  className="text-gray-300 hover:text-red-600 transition-colors text-sm py-1 hover:translate-x-1 transform duration-200 flex items-center gap-1"
-                >
-                  <span className="w-1 h-1 bg-red-600 rounded-full"></span>
-                  {city}
-                </a>
-              ))}
+
+            {/* Title */}
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors duration-300">
+              View Our Full Service Area Coverage
+            </h3>
+
+            {/* Supporting Copy */}
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+              See every city we serve across Broward & Palm Beach Counties — from residential neighborhoods to commercial districts.
+            </p>
+
+            {/* Primary Button */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                to="/locations/service-areas"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold text-lg rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/60 hover:scale-105 transform"
+              >
+                Service Areas Hub
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+
+              {/* Secondary Link */}
+              <Link
+                to="/locations/service-areas"
+                className="inline-flex items-center gap-2 text-gray-400 hover:text-red-500 transition-colors duration-300 font-medium"
+              >
+                Browse by county and city
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>
