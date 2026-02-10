@@ -46,56 +46,58 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="relative py-16 overflow-hidden bg-[#0a0a0a]">
-      {/* Real Customer Photo Collage Background - VISIBLE */}
-      <div className="absolute inset-0 opacity-70">
-        {/* Photo Grid with Slow Drift Animation */}
-        <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 animate-[drift_60s_ease-in-out_infinite]">
+    <section className="relative py-16 overflow-hidden">
+      {/* Background Image with Overlay - SAME PATTERN AS HOWITWORKS */}
+      <div className="absolute inset-0 z-0">
+        {/* Photo Collage Background */}
+        <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1">
           {/* Top Row */}
           <div
-            className="bg-cover bg-center grayscale-[30%]"
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: 'url(/step-01-inspection-optimized.jpg)' }}
+            role="presentation"
+            aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center grayscale-[30%]"
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: 'url(/step-10-piece-of-mind-optimized.jpg)' }}
+            role="presentation"
+            aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center grayscale-[30%]"
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: 'url(/step-02-planning-optimized.jpg)' }}
+            role="presentation"
+            aria-hidden="true"
           />
 
           {/* Bottom Row */}
           <div
-            className="bg-cover bg-center grayscale-[30%]"
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: 'url(/step-08-install.jpg)' }}
+            role="presentation"
+            aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center grayscale-[30%]"
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: 'url(/step-09-installed.jpg)' }}
+            role="presentation"
+            aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center grayscale-[30%]"
-            style={{ backgroundImage: 'url(/tear-off-responsible-disposal-all-phase-construction-usa.jpg)' }}
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            style={{ backgroundImage: 'url(/images.jpg)' }}
+            role="presentation"
+            aria-hidden="true"
           />
         </div>
+        {/* Lighter gradient overlay for enhanced background visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/65" />
+        {/* Subtle vignette effect for edge depth */}
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30" />
       </div>
 
-      {/* Lighter Gradient Overlay - Only behind review cards */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-[#0a0a0a]/70 to-[#0a0a0a]/60" />
-
-      {/* Subtle Radial Vignette - Keep edges lighter */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(10,10,10,0.4)_80%)]" />
-
-      {/* Film Grain Texture */}
-      <div
-        className="absolute inset-0 opacity-[0.015] mix-blend-overlay pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-          backgroundRepeat: 'repeat',
-        }}
-      />
-      {/* Content Layer - Above Background */}
+      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
@@ -110,7 +112,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-neutral-900/98 backdrop-blur-md rounded-lg p-6 border border-neutral-800 shadow-xl"
+              className="bg-gradient-to-br from-gray-900/95 to-black/95 rounded-2xl p-7 border border-gray-700/60 hover:border-red-600/60 hover:shadow-2xl hover:shadow-red-900/30 hover:-translate-y-2 transition-all duration-300 backdrop-blur-md"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -120,7 +122,7 @@ export default function Testimonials() {
               <p className="text-gray-300 leading-relaxed mb-6">
                 "{testimonial.text}"
               </p>
-              <div className="border-t border-neutral-800 pt-4">
+              <div className="border-t border-gray-700/50 pt-4">
                 <p className="text-white font-semibold">{testimonial.name}</p>
                 <p className="text-gray-400 text-sm">{testimonial.location}</p>
               </div>
