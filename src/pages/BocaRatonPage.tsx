@@ -4,6 +4,28 @@ import { Phone, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
 
+interface PhotoBreakProps {
+  src: string;
+  alt: string;
+  loading?: 'lazy' | 'eager';
+}
+
+function PhotoBreak({ src, alt, loading = 'lazy' }: PhotoBreakProps) {
+  return (
+    <div className="my-12 max-w-4xl mx-auto">
+      <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden shadow-lg hover:border-zinc-700 transition-all duration-300">
+        <img
+          src={src}
+          alt={alt}
+          loading={loading}
+          decoding="async"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function BocaRatonPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -174,6 +196,12 @@ export default function BocaRatonPage() {
               </p>
             </div>
 
+            <PhotoBreak
+              src="/step-01-inspection-optimized.jpg"
+              alt="Roof inspection in Boca Raton FL documenting conditions before repair or replacement"
+              loading="eager"
+            />
+
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
                 Why Boca Raton Homeowners Hire All Phase Construction USA
@@ -236,6 +264,11 @@ export default function BocaRatonPage() {
                 All Phase Construction USA installs code-compliant roofing systems in Boca Raton and handles permits and inspections for reroof projects.
               </p>
             </div>
+
+            <PhotoBreak
+              src="/deck-inspection.jpg"
+              alt="Roof deck inspection during Boca Raton roof replacement by All Phase Construction USA"
+            />
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
@@ -360,6 +393,11 @@ export default function BocaRatonPage() {
               </ul>
             </div>
 
+            <PhotoBreak
+              src="/flashing-details.jpg"
+              alt="Flashing detail repair on Boca Raton home to prevent wind-driven rain leaks"
+            />
+
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
                 Roof Repair in Boca Raton FL
@@ -394,6 +432,11 @@ export default function BocaRatonPage() {
                 </li>
               </ul>
             </div>
+
+            <PhotoBreak
+              src="/step-06-tearoff.jpg"
+              alt="Roof tear-off in progress at Boca Raton residential roofing project"
+            />
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
@@ -435,6 +478,11 @@ export default function BocaRatonPage() {
                 We serve Boca Raton plus surrounding areas in Palm Beach and Broward County, including Deerfield Beach, Delray Beach, Boynton Beach, Pompano Beach, Fort Lauderdale, and more.
               </p>
             </div>
+
+            <PhotoBreak
+              src="/step-09-installed.jpg"
+              alt="Completed residential roof installation in Boca Raton FL by All Phase Construction USA"
+            />
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-8">
