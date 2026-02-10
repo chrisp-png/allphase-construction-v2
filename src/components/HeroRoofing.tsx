@@ -136,7 +136,7 @@ export default function HeroRoofing() {
             </p>
 
             <p className="text-base sm:text-lg text-gray-300 mb-4">
-              Professional roof replacement, roof repair, and emergency roofing services for residential and commercial properties throughout Broward County and Palm Beach County, Florida.
+              What makes All Phase Construction USA different is proof. We are BBB A+ rated, a Tamko Platinum Preferred Contractor, and trusted across Palm Beach and Broward County with a 4.8-star reputation and over 135 Google reviews. You are not hiring a random crew — you are hiring a system that shows up and stands behind the work.
             </p>
 
             <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
