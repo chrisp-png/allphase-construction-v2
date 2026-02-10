@@ -161,7 +161,7 @@ export default function TrustBadges() {
             <div className="flex items-center justify-center gap-2 mb-3">
               <Award className="w-6 h-6 text-red-600" />
               <h2 className="text-2xl md:text-3xl font-bold text-white">
-                Certified & Authorized Installer
+                Certified and Authorized Installer in Deerfield Beach and Surrounding Areas
               </h2>
             </div>
             <p className="text-gray-400 max-w-2xl mx-auto">
