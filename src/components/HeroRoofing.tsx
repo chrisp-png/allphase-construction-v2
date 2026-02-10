@@ -144,7 +144,7 @@ export default function HeroRoofing() {
             </h2>
 
             <p className="text-lg sm:text-xl text-gray-300 mb-6 leading-relaxed">
-              All Phase Construction USA is a licensed roofing contractor, backed by dual Roofing (CCC) and General Contractor (CGC) licenses, serving residential and commercial properties throughout Broward and Palm Beach County. Specialized crews for every roof type. One point of contact from permit to final inspection. Built to South Florida's hurricane standards with wind mitigation features that cut your insurance costs.
+              All Phase Construction USA is a licensed roofing contractor backed by dual Roofing (CCC) and General Contractor (CGC) licenses.
             </p>
 
             <p className="text-sm text-gray-400 mb-6">
