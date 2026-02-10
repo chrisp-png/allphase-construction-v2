@@ -167,15 +167,16 @@ export default function HowItWorks() {
                 </p>
               </div>
 
-              {/* Google Review Link */}
+              {/* Google Review Link - Premium Pill CTA */}
               <a
                 href={GOOGLE_REVIEWS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-red-500 transition-colors group/link"
+                aria-label="See this review on Google (opens in a new tab)"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-medium text-gray-400 border border-gray-700/60 rounded-full hover:text-white hover:border-red-500 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 group/link"
               >
                 <span>See this review on Google</span>
-                <ExternalLink className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                <ExternalLink className="w-3.5 h-3.5 opacity-60 group-hover/link:opacity-100 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-all" />
               </a>
             </div>
           ))}
