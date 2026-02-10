@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 const publicDir = path.resolve(projectRoot, 'public');
+const distDir = path.resolve(projectRoot, 'dist');
 
 // Load cities data
 const citiesPath = path.join(__dirname, 'cities.json');
@@ -810,6 +811,25 @@ function getSEOMetadata(urlPath, cityName = null) {
 }
 
 /**
+ * Helper function to write file to both public and dist directories
+ */
+function writeToPublicAndDist(relativePath, content) {
+  // Write to public/ (for dev and as source)
+  const publicPath = path.join(publicDir, relativePath);
+  const publicDirPath = path.dirname(publicPath);
+  fs.mkdirSync(publicDirPath, { recursive: true });
+  fs.writeFileSync(publicPath, content);
+
+  // Write to dist/ if it exists (for production build)
+  if (fs.existsSync(distDir)) {
+    const distPath = path.join(distDir, relativePath);
+    const distDirPath = path.dirname(distPath);
+    fs.mkdirSync(distDirPath, { recursive: true });
+    fs.writeFileSync(distPath, content);
+  }
+}
+
+/**
  * Generate all static HTML files
  */
 function generateStaticFiles() {
@@ -884,7 +904,15 @@ function generateStaticFiles() {
     // SILO 1: Service Hub - /locations/[city]
     // Generate prerendered HTML for ALL cities including Money Pages for SEO
     const hubPath = `/locations/${citySlug}`;
-    const hubMetadata = getSEOMetadata(hubPath, cityName);
+
+    // Override metadata for Boca Raton to match custom content
+    const hubMetadata = citySlug === 'boca-raton'
+      ? {
+          title: 'Roofer in Boca Raton FL | All Phase Construction USA',
+          description: 'Licensed Florida roofing contractor serving Boca Raton. BBB A+ rated, 4.8★ Google reviews. Dual-licensed CCC-1331464 & CGC-1526236. Call 24/7: (754) 227-5605.',
+          canonical: 'https://allphaseconstructionfl.com/locations/boca-raton'
+        }
+      : getSEOMetadata(hubPath, cityName);
 
     // Route to Boca Raton override if applicable
     const hubContent = citySlug === 'boca-raton'
@@ -897,9 +925,9 @@ function generateStaticFiles() {
       hubMetadata.canonical,
       hubContent
     );
-    const hubDir = path.join(publicDir, 'locations', citySlug);
-    fs.mkdirSync(hubDir, { recursive: true });
-    fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
+
+    // Write to both public/ and dist/ (if dist exists)
+    writeToPublicAndDist(`locations/${citySlug}/index.html`, hubHTML);
     console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
     totalPages++;
 
