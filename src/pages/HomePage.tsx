@@ -343,6 +343,76 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Local Expert Section - Home Page Only */}
+      <section className="py-16 bg-neutral-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Headline */}
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+            Local, Expert Roofing Contractor in Deerfield Beach, FL and Surrounding Areas
+          </h2>
+
+          {/* Callout Box */}
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-8 mb-10 shadow-xl">
+            <p className="text-lg text-gray-200 leading-relaxed text-center">
+              When it comes to finding a{' '}
+              <span className="relative inline-block">
+                <span className="relative z-10">reliable roofing company near you</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600"></span>
+              </span>
+              , look no further than All Phase Construction USA. Serving the communities of{' '}
+              <span className="relative inline-block">
+                <span className="relative z-10">Deerfield Beach</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600"></span>
+              </span>
+              {' '}and surrounding areas, we are your trusted local roofers for all your roofing needs.
+            </p>
+          </div>
+
+          {/* Service Buttons - Rectangular Style */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a
+              href="https://allphaseconstructionfl.com/roof-repair"
+              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-red-600 hover:text-white hover:border-red-600 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <span className="flex items-center justify-center gap-2">
+                <Wrench className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Roof Repair
+              </span>
+            </a>
+
+            <a
+              href="https://allphaseconstructionfl.com/residential-roofing"
+              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <span className="flex items-center justify-center gap-2">
+                <Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Roof Replacement
+              </span>
+            </a>
+
+            <a
+              href="https://allphaseconstructionfl.com/roof-inspection"
+              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <span className="flex items-center justify-center gap-2">
+                <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Roof Inspection
+              </span>
+            </a>
+
+            <a
+              href="https://allphaseconstructionfl.com/commercial-roofing"
+              className="group relative bg-white border-2 border-gray-300 rounded-lg px-6 py-4 text-center font-semibold text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <span className="flex items-center justify-center gap-2">
+                <Building2 className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Commercial Roofing
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <OurEdge />
       <TrustBadges />
       <Services />
