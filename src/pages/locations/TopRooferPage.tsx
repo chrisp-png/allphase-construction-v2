@@ -90,9 +90,6 @@ export default function TopRooferPage() {
 
   return (
     <>
-      {/* Apply noindex if the page exists but is not indexable */}
-      {pageEntry && !pageEntry.indexable && <NoIndexMeta />}
-
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back Link */}

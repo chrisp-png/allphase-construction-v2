@@ -68,7 +68,7 @@ export default function GenericRoofRepairTemplate() {
         title={`Roof Repair in ${cityName}, FL`}
         description={`Expert roof repair in ${cityName}, Florida. Tile, shingle, metal & flat roof repairs. Licensed ${county} contractor. Free inspection: (754) 227-5605.`}
         schema={faqSchema}
-        noindex={!isIndexable}
+        noindex={false}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
         <Header />

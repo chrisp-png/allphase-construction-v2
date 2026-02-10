@@ -68,7 +68,7 @@ export default function GenericRoofInspectionTemplate() {
         title={`Roof Inspection in ${cityName}, FL`}
         description={`Professional roof inspection services in ${cityName}, Florida. Licensed ${county} contractor. Detailed reports for home sales, insurance, and maintenance planning: (754) 227-5605.`}
         schema={faqSchema}
-        noindex={!isIndexable}
+        noindex={false}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
         <Header />

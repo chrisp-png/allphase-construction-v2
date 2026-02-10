@@ -115,9 +115,6 @@ export default function LocationHubPage() {
 
   return (
     <>
-      {/* Apply noindex if the hub exists but is not indexable */}
-      {finalHub && !finalHub.indexable && <NoIndexMeta />}
-
       {/* JSON-LD Structured Data for Deerfield Beach */}
       {hubSlug === 'deerfield-beach' && (
         <script

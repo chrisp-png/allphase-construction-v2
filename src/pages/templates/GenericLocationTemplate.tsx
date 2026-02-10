@@ -58,7 +58,7 @@ export default function GenericLocationTemplate() {
         title={`${cityName} Roofing Contractor | Licensed Roofing Services`}
         description={`Professional roofing services in ${cityName}, FL. Licensed ${county} contractor specializing in residential & commercial roofing. Free inspection: (754) 227-5605.`}
         schema={localBusinessSchema}
-        noindex={!isIndexable}
+        noindex={false}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
         <Header />
