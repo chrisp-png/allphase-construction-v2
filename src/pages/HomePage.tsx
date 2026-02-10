@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock } from 'lucide-react';
 import HeroRoofing from '../components/HeroRoofing';
 import OurEdge from '../components/OurEdge';
 import TrustBadges from '../components/TrustBadges';
@@ -214,67 +215,130 @@ export default function HomePage() {
       </Helmet>
       <HeroRoofing />
 
-      {/* Service Navigation Buttons */}
-      <section className="py-8 bg-gray-50">
+      {/* Service Navigation Pills */}
+      <section className="py-12 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {/* Modern Pill-Style Service Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
             <a
               href="https://allphaseconstructionfl.com/roof-inspection"
-              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              ROOF INSPECTIONS
+              <Search className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span>ROOF INSPECTIONS</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/roof-repair"
-              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-red-600 hover:text-white hover:border-red-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              ROOF REPAIR
+              <Wrench className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span>ROOF REPAIR</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/residential-roofing"
-              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              ROOF REPLACEMENT
+              <Home className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span>ROOF REPLACEMENT</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/commercial-roofing"
-              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              COMMERCIAL ROOFING
+              <Building2 className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span>COMMERCIAL ROOFING</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/roof-maintenance-programs"
-              className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              ROOF MAINTENANCE PROGRAMS
+              <Shield className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span>MAINTENANCE PROGRAMS</span>
             </a>
           </div>
 
-          {/* Location with Map - 2 Column Layout */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left Column - Text */}
-            <div>
-              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-3">
-                Deerfield Beach, FL
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Based at 590 Goolsby Boulevard, Deerfield Beach, Florida 33442. We serve Deerfield Beach, Florida and the surrounding areas in Palm Beach and Broward County.
-              </p>
+          {/* HQ Location Card + Map - 2 Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Left Column - HQ Location Card */}
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-2xl p-8 shadow-2xl">
+              {/* Title */}
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-red-600 p-2 rounded-lg">
+                  <MapPin className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Deerfield Beach</h3>
+                  <p className="text-red-500 text-sm font-semibold">Headquarters</p>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="mb-6 pb-6 border-b border-gray-700">
+                <p className="text-gray-300 text-base leading-relaxed">
+                  590 Goolsby Boulevard<br />
+                  Deerfield Beach, FL 33442
+                </p>
+                <p className="text-gray-400 text-sm mt-3">
+                  Serving Palm Beach + Broward County
+                </p>
+              </div>
+
+              {/* Trust Row */}
+              <div className="mb-6 pb-6 border-b border-gray-700">
+                <div className="flex flex-wrap gap-4 text-sm">
+                  <div className="flex items-center gap-1 text-yellow-400">
+                    <Star className="w-4 h-4 fill-current" />
+                    <span className="text-white font-semibold">4.8</span>
+                    <span className="text-gray-400">Google Reviews</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-gray-300">
+                    <Shield className="w-4 h-4 text-red-500" />
+                    <span className="text-white font-semibold">Dual-Licensed</span>
+                    <span className="text-gray-400 text-xs">(CCC/CGC)</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-gray-300">
+                    <Clock className="w-4 h-4 text-red-500" />
+                    <span className="text-white font-semibold">Open 24/7</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Actions */}
+              <div className="grid sm:grid-cols-2 gap-4">
+                <a
+                  href="https://www.google.com/maps/place/All+Phase+Construction+USA,+LLC/@26.310786,-80.127335,15z/data=!4m6!3m5!1s0x88d91d982b569be1:0xc298661959b65cbf!8m2!3d26.3107856!4d-80.1273349!16s%2Fg%2F11qpj3rkr8?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white text-gray-900 rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  <MapPin className="w-4 h-4" />
+                  Get Directions
+                </a>
+                <a
+                  href="tel:+17542275605"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-red-600 text-white rounded-lg font-semibold text-sm hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  <Phone className="w-4 h-4" />
+                  Call Now
+                </a>
+              </div>
             </div>
 
-            {/* Right Column - Google Map */}
-            <div className="relative w-full overflow-hidden rounded-lg shadow-lg" style={{ paddingBottom: '75%', minHeight: '300px' }}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3071856042744!2d-80.12733492403144!3d26.310785577038298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91d982b569be1%3A0xc298661959b65cbf!2sAll%20Phase%20Construction%20USA%2C%20LLC!5e0!3m2!1sen!2sus!4v1738436000000!5m2!1sen!2sus"
-                width="600"
-                height="450"
-                className="absolute top-0 left-0 w-full h-full border-0"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="All Phase Construction USA, LLC - 590 Goolsby Blvd, Deerfield Beach, FL 33442"
-              />
+            {/* Right Column - Styled Google Map */}
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-2xl p-2 shadow-2xl">
+              <div className="relative w-full overflow-hidden rounded-xl" style={{ paddingBottom: '75%', minHeight: '400px' }}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3071856042744!2d-80.12733492403144!3d26.310785577038298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91d982b569be1%3A0xc298661959b65cbf!2sAll%20Phase%20Construction%20USA%2C%20LLC!5e0!3m2!1sen!2sus!4v1738436000000!5m2!1sen!2sus"
+                  width="600"
+                  height="450"
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="All Phase Construction USA, LLC - 590 Goolsby Blvd, Deerfield Beach, FL 33442"
+                />
+              </div>
             </div>
           </div>
         </div>
