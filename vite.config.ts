@@ -36,8 +36,13 @@ const manualPublicCopyPlugin = () => ({
         if (/\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file)) {
           const src = path.resolve(publicDir, file);
           const dest = path.resolve(distDir, file);
-          fs.copyFileSync(src, dest);
-          console.log(`Copied ${file} from public to dist`);
+          try {
+            fs.copyFileSync(src, dest);
+            console.log(`Copied ${file} from public to dist`);
+          } catch (error) {
+            // Skip files that are temporarily locked or inaccessible
+            console.warn(`Skipped ${file}: ${error.message}`);
+          }
         }
       });
     }
