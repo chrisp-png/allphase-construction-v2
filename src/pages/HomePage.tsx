@@ -217,7 +217,7 @@ export default function HomePage() {
       {/* Service Navigation Buttons */}
       <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
             <a
               href="https://allphaseconstructionfl.com/roof-inspection"
               className="px-6 py-3 bg-transparent text-gray-900 border-2 border-gray-900 rounded-lg font-semibold text-base hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -250,13 +250,32 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Location Clarification */}
-          <div className="text-center">
-            <p className="text-gray-700 leading-relaxed">
-              <strong>Deerfield Beach, FL</strong>
-              <br />
-              Based at 590 Goolsby Boulevard, Deerfield Beach, Florida 33442. We serve Deerfield Beach, Florida and the surrounding areas in Palm Beach and Broward County.
-            </p>
+          {/* Location with Map - 2 Column Layout */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Left Column - Text */}
+            <div>
+              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-3">
+                Deerfield Beach, FL
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Based at 590 Goolsby Boulevard, Deerfield Beach, Florida 33442. We serve Deerfield Beach, Florida and the surrounding areas in Palm Beach and Broward County.
+              </p>
+            </div>
+
+            {/* Right Column - Google Map */}
+            <div className="relative w-full overflow-hidden rounded-lg shadow-lg" style={{ paddingBottom: '75%', minHeight: '300px' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3071856042744!2d-80.12733492403144!3d26.310785577038298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91d982b569be1%3A0xc298661959b65cbf!2sAll%20Phase%20Construction%20USA%2C%20LLC!5e0!3m2!1sen!2sus!4v1738436000000!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                className="absolute top-0 left-0 w-full h-full border-0"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="All Phase Construction USA, LLC - 590 Goolsby Blvd, Deerfield Beach, FL 33442"
+              />
+            </div>
           </div>
         </div>
       </section>
