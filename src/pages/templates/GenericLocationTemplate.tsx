@@ -69,7 +69,7 @@ export default function GenericLocationTemplate() {
               <nav className="flex items-center space-x-2 text-sm text-zinc-400 mb-8">
                 <Link to="/" className="hover:text-red-600 transition-colors">Home</Link>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/locations" className="hover:text-red-600 transition-colors">Service Areas</Link>
+                <Link to="/locations/service-areas" className="hover:text-red-600 transition-colors">Service Areas</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{cityName}</span>
               </nav>

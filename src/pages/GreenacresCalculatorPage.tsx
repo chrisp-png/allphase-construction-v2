@@ -152,7 +152,7 @@ export default function GreenacresCalculatorPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations" className="text-zinc-500 hover:text-white transition-colors">
+            <Link to="/locations/service-areas" className="text-zinc-500 hover:text-white transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>

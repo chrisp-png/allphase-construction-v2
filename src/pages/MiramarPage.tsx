@@ -183,7 +183,7 @@ export default function MiramarPage() {
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
