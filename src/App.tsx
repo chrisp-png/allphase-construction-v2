@@ -343,7 +343,7 @@ function AppContent() {
             <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/locations" element={<LocationsIndexPage />} />
             <Route path="/locations/deerfield-beach" element={<DeerfieldBeachCityPage />} />
-            <Route path="/locations/boca-raton" element={<BocaRatonMoneyPage />} />
+            <Route path="/locations/boca-raton" element={<BocaRatonPage />} />
             <Route path="/locations/fort-lauderdale" element={<FortLauderdaleMoneyPage />} />
             <Route path="/locations/coral-springs" element={<CoralSpringsMoneyPage />} />
             <Route path="/locations/delray-beach" element={<DelrayBeachMoneyPage />} />

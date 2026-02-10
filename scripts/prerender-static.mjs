@@ -811,16 +811,31 @@ function getSEOMetadata(urlPath, cityName = null) {
 }
 
 /**
- * Helper function to write file to both public and dist directories
+ * Helper function to write file to public (and optionally dist)
+ * Routes under /locations/*, /roof-repair/*, /roof-inspection/* should NOT go to dist
+ * because they need to be handled by React SPA for browser users.
+ * Bots get prerendered content via Netlify Edge Function → Prerender.io
  */
 function writeToPublicAndDist(relativePath, content) {
-  // Write to public/ (for dev and as source)
+  // Always write to public/ (for dev and reference)
   const publicPath = path.join(publicDir, relativePath);
   const publicDirPath = path.dirname(publicPath);
   fs.mkdirSync(publicDirPath, { recursive: true });
   fs.writeFileSync(publicPath, content);
 
-  // Write to dist/ if it exists (for production build)
+  // DO NOT write dynamic city routes to dist/ - let React handle them
+  // Static files in dist/ would override SPA routing
+  const isDynamicRoute =
+    relativePath.startsWith('locations/') ||
+    relativePath.startsWith('roof-repair/') ||
+    relativePath.startsWith('roof-inspection/');
+
+  if (isDynamicRoute) {
+    // Skip dist/ write for dynamic routes - React will handle these
+    return;
+  }
+
+  // Write static service pages to dist/ (these don't have React routes)
   if (fs.existsSync(distDir)) {
     const distPath = path.join(distDir, relativePath);
     const distDirPath = path.dirname(distPath);

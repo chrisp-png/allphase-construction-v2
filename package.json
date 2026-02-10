@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-sitemap && npm run generate-html-sitemap && vite build && npm run prerender",
+    "build": "npm run generate-sitemap && npm run generate-html-sitemap && vite build && npm run prerender && npm run cleanup-dist",
+    "cleanup-dist": "rm -rf dist/locations dist/roof-repair dist/roof-inspection",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
