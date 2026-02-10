@@ -184,9 +184,9 @@ export default function TrustBadges() {
           <div className="mt-12 pt-8 border-t border-neutral-800">
             <div className="flex flex-col items-center justify-center gap-3">
               <img
-                src="/tamko-platinum-pro-logo.png"
+                src="/TAMKO_Pro_Platinum_(color)_horizontal.png"
                 alt="TAMKO Platinum Pro certified roofing contractor logo"
-                className="h-16 w-auto opacity-90"
+                className="h-20 w-auto opacity-90"
                 loading="lazy"
                 decoding="async"
               />
