@@ -160,6 +160,23 @@ function generateDeerfieldBeachHQContent() {
 }
 
 /**
+ * SPECIAL: Boca Raton Service Hub Override - Custom content for Boca Raton location
+ */
+function generateBocaRatonServiceHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Roofer in Boca Raton FL</h1>
+
+  <h2>All Phase Construction USA | Roofing Contractor Serving Boca Raton, Palm Beach, and Broward County</h2>
+
+  <p>Custom Boca Raton content will be inserted here in Step 4.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * SILO 1: Service Hub Page - /locations/[city]
  * Broad roofing authority with links to Repair + Inspection spokes
  */
@@ -679,7 +696,11 @@ function generateStaticFiles() {
     // Generate prerendered HTML for ALL cities including Money Pages for SEO
     const hubPath = `/locations/${citySlug}`;
     const hubMetadata = getSEOMetadata(hubPath, cityName);
-    const hubContent = generateServiceHubContent(cityName, citySlug);
+
+    // Route to Boca Raton override if applicable
+    const hubContent = citySlug === 'boca-raton'
+      ? generateBocaRatonServiceHubContent()
+      : generateServiceHubContent(cityName, citySlug);
 
     const hubHTML = createHTMLTemplate(
       hubMetadata.title,
