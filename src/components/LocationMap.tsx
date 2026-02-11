@@ -33,6 +33,39 @@ export default function LocationMap() {
           </p>
         </div>
 
+        {/* Two-Column Office Photo + Map Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12">
+          {/* Left Column - Office Photo */}
+          <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full" style={{ paddingBottom: '62.5%' }}>
+              <img
+                src="/deerfield-beach-all-phase-construction-office-building.JPG"
+                alt="All Phase Construction USA office building in Deerfield Beach, Florida"
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          {/* Right Column - Map Embed */}
+          <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full" style={{ paddingBottom: '62.5%' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3071856042744!2d-80.12733492403144!3d26.310785577038298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91d982b569be1%3A0xc298661959b65cbf!2sAll%20Phase%20Construction%20USA%2C%20LLC!5e0!3m2!1sen!2sus!4v1738436000000!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                className="absolute top-0 left-0 w-full h-full border-0"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="All Phase Construction USA, LLC Location Map"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden mb-12">
           <div className="p-6 border-b border-zinc-800">
             <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-3">
