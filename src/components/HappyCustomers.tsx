@@ -146,18 +146,28 @@ const customerPhotos = allCustomerPhotos
     return true;
   })
   .map((photo): CustomerPhoto => {
-    // Apply fallback for missing or invalid linkTo
-    let linkTo = photo.linkTo;
-    if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
-      console.warn('⚠️ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
-      linkTo = '/locations/service-areas';
-    }
-
     // Apply fallback for missing alt text
     const alt = photo.alt || 'Happy roofing customer with All Phase Construction USA';
 
     // Apply fallback for missing city
     const city = photo.city || 'South Florida';
+
+    // HARD OVERRIDES FOR NON-CITY LOCATION LABELS
+    // Override routing for county/region labels to valid city pages
+    let linkTo = photo.linkTo;
+
+    if (city === 'Broward County') {
+      linkTo = '/locations/pompano-beach';
+    } else if (city === 'South Florida') {
+      linkTo = '/locations/boca-raton';
+    } else if (city === 'Palm Beach County') {
+      // Palm Beach County → fallback to service areas hub
+      linkTo = '/locations';
+    } else if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
+      // Global fallback for missing or invalid linkTo
+      console.warn('⚠️ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
+      linkTo = '/locations';
+    }
 
     return {
       ...photo,
