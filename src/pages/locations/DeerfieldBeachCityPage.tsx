@@ -463,18 +463,6 @@ export default function DeerfieldBeachCityPage() {
             </div>
           </div>
 
-          {/* City Sign Image */}
-          <div className="mb-16">
-            <img
-              src="/deerfield-beach-fl-roofing-services.png"
-              alt="Deerfield Beach Florida city sign representing the local service area for a Deerfield Beach roofing contractor"
-              title="Deerfield Beach Roofing Contractor – Local Service Area"
-              loading="lazy"
-              decoding="async"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl"
-            />
-          </div>
-
           {/* Roofing Services in Deerfield Beach */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
