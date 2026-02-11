@@ -102,6 +102,28 @@ const manualPublicCopyPlugin = () => ({
       });
     }
 
+    // Copy case-studies directory recursively
+    const caseStudiesSrc = path.resolve(publicDir, 'case-studies');
+    const caseStudiesDest = path.resolve(distDir, 'case-studies');
+    if (fs.existsSync(caseStudiesSrc)) {
+      if (!fs.existsSync(caseStudiesDest)) {
+        fs.mkdirSync(caseStudiesDest, { recursive: true });
+      }
+      const caseStudiesFiles = fs.readdirSync(caseStudiesSrc);
+      caseStudiesFiles.forEach(file => {
+        const src = path.resolve(caseStudiesSrc, file);
+        const dest = path.resolve(caseStudiesDest, file);
+        try {
+          if (fs.statSync(src).isFile()) {
+            fs.copyFileSync(src, dest);
+            console.log(`Copied case-studies/${file}`);
+          }
+        } catch (error) {
+          console.warn(`Skipped case-studies/${file}: ${error.message}`);
+        }
+      });
+    }
+
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
     // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)

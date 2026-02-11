@@ -1,183 +1,70 @@
-# Our Happy Customers Carousel - Image Updates Complete
+# Featured Project Carousel - Image Updates Complete
 
-## Issue Resolved
-Fixed 3 blank placeholders in the "Our Happy Customers" carousel by adding 3 new verified customer photos.
+## Overview
+Updated the Featured Project carousel to use the correct images for each case study and made image rendering bulletproof with fail-safe fallbacks.
 
-## Actions Taken
+## Changes Implemented
 
-### 1. Normalized New Customer Photos
-Renamed 5 uploaded images to lowercase, hyphenated .jpg format:
+### 1. Added New Case Study Images
 
-**Before → After:**
-- `graham-with-happy-customer-all-phase-usa.JPG` → `graham-with-happy-customer-all-phase-usa.jpg`
-- `happy-new-roof-customer-delray-beach-all-phase-usa.JPG` → `happy-new-roof-customer-delray-beach-all-phase-usa.jpg`
-- `happy-tile_-roof-customers-all-phase-usa.JPG` → `happy-tile-roof-customers-all-phase-usa.jpg` (fixed underscore)
-- `new-roof-coming-soon-broward-county-all-phase-usa.JPG` → `new-roof-coming-soon-broward-county-all-phase-usa.jpg`
-- `new-tile-roof-customer-all-phase-usa.JPG` → `new-tile-roof-customer-all-phase-usa.jpg`
+**Location:** `/public/case-studies/`
 
-All files stored in: `/public/social-proof/`
+**Files Added:**
+- `featured-shingle-roof-all-phase-construction-usa.jpg` (1.5 MB) - Shingle roof with All Phase truck
+- `new-tile-roof-all-phase-construction-usa.jpg` (1.1 MB) - Barrel tile roof aerial view
 
-### 2. Selected Best 3 Customer Photos for Carousel
+### 2. Updated Carousel Data (CaseStudy.tsx)
 
-Analyzed all 5 images and selected the 3 with clearest people/customer visibility:
+**Barrel Tile Roof Replacement (Slide 1):**
+- **Image:** `/case-studies/new-tile-roof-all-phase-construction-usa.jpg` ✅
+- **Alt Text:** "Completed barrel tile roof installation by All Phase Construction"
+- **Customer:** Maria T. — Boca Raton, FL
+- **Investment:** $49,999
+- **20-Year Savings:** $109,200
 
-**✅ Added to Carousel:**
+**Shingle Roof Replacement (Slide 2):**
+- **Image:** `/case-studies/featured-shingle-roof-all-phase-construction-usa.jpg` ✅
+- **Alt Text:** "Completed shingle roof installation by All Phase Construction"
+- **Customer:** Robert M. — Fort Lauderdale, FL
+- **Investment:** $24,999
+- **20-Year Savings:** $42,800
 
-1. **graham-with-happy-customer-all-phase-usa.jpg** (512 KB)
-   - Rep with female homeowner holding "NEW ROOF COMING SOON" sign
-   - Clear outdoor shot, excellent branding visibility
-   - Location: South Florida
+### 3. Added Fail-Safe Image Rendering
 
-2. **happy-new-roof-customer-delray-beach-all-phase-usa.jpg** (250 KB)
-   - Rep with elderly couple indoors
-   - Professional consultation setting
-   - Location: Delray Beach
+**Error Handling:**
+- Added imageErrors state to track failed images
+- Added handleImageError function to switch to fallback
+- Fallback image: All Phase headquarters photo
+- Background color prevents blank space during loading
 
-3. **new-tile-roof-customer-all-phase-usa.jpg** (858 KB)
-   - Rep with female homeowner in front of yellow tile roof house
-   - Shows completed project in background
-   - Location: South Florida
+### 4. Updated Build Configuration (vite.config.ts)
 
-**📦 Stored for Future Use:**
+Added case-studies directory copying to ensure images are included in dist during build.
 
-4. **happy-tile-roof-customers-all-phase-usa.jpg** (671 KB)
-   - Available in `/public/social-proof/`
-   
-5. **new-roof-coming-soon-broward-county-all-phase-usa.jpg** (547 KB)
-   - Available in `/public/social-proof/`
+## Build Verification
 
-### 3. Updated Carousel Array
-
-**Total Carousel Images:** 18 (was 15, added 3)
-
-All 18 entries include:
-- ✅ Valid src path
-- ✅ Descriptive alt text
-- ✅ City attribution
-- ✅ City-specific routing link
-- ✅ File exists in both `/public/` and `/dist/`
-
-### 4. Defensive Filtering Maintained
-
-The existing triple-layer validation remains active:
-
-**Layer 1: Pre-Render Validation**
-- Checks src is non-empty string
-- Validates file extension (.jpg, .jpeg, .JPG, .JPEG, .png, .webp)
-- Confirms all required fields present
-
-**Layer 2: Render-Time Filter**
-```typescript
-{customerPhotos
-  .filter(photo => photo && photo.src && photo.src.trim().length > 0)
-  .map((photo, index) => (...))}
+### Images in Dist
+```
+✅ dist/case-studies/featured-shingle-roof-all-phase-construction-usa.jpg (1.5 MB)
+✅ dist/case-studies/new-tile-roof-all-phase-construction-usa.jpg (1.1 MB)
+✅ dist/social-proof/all-phase-construction-usa-headquarters.jpg (1019 KB) [fallback]
 ```
 
-**Layer 3: Image Error Handler**
-```typescript
-<img
-  onError={(e) => {
-    console.error('❌ Carousel: Failed to load image', photo.src);
-    e.currentTarget.style.display = 'none';
-  }}
-/>
+### Build Output
 ```
-
-## Verification Results
-
-### ✅ All 18 Carousel Images Valid
-| # | Image | Size | Status |
-|---|-------|------|--------|
-| 1 | all-phase-construction-happy-customer-broward-county.JPG | 116 KB | ✅ Valid |
-| 2 | all-phase-customer-fort-lauderdale-roofing.JPEG | 690 KB | ✅ Valid |
-| 3 | all-phase-customer-luxury-home-boca-raton.JPG | 110 KB | ✅ Valid |
-| 4 | all-phase-customer-new-roof-pompano-beach.JPEG | 1201 KB | ✅ Valid |
-| 5 | all-phase-customer-roof-installation-delray-beach.JPEG | 532 KB | ✅ Valid |
-| 6 | all-phase-customer-shingle-roof-deerfield-beach.JPEG | 1091 KB | ✅ Valid |
-| 7 | all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG | 660 KB | ✅ Valid |
-| 8 | all-phase-roofing-satisfied-customers-palm-beach.jpg | 87 KB | ✅ Valid |
-| 9 | all-phase-roofing-satisified-customers-coralsprings.jpg | 92 KB | ✅ Valid |
-| 10 | all-phase-satisfied-customer-coral-springs.JPEG | 649 KB | ✅ Valid |
-| 11 | Karl_at_Valencia_pointe_homeowner_event.JPEG | 183 KB | ✅ Valid |
-| 12 | all-phase-roofing-happy-homeowner-south-florida.JPEG | 896 KB | ✅ Valid |
-| 13 | all-phase-customer-luxury-home-palm-beach-county.JPEG | 768 KB | ✅ Valid |
-| 14 | all-phase-customer-roof-replacement-broward.JPEG | 681 KB | ✅ Valid |
-| 15 | all-phase-customer-shingle-roof-south-florida.jpg | 85 KB | ✅ Valid |
-| 16 | **graham-with-happy-customer-all-phase-usa.jpg** | **512 KB** | **✅ NEW** |
-| 17 | **happy-new-roof-customer-delray-beach-all-phase-usa.jpg** | **250 KB** | **✅ NEW** |
-| 18 | **new-tile-roof-customer-all-phase-usa.jpg** | **858 KB** | **✅ NEW** |
-
-### Direct URL Verification
-Test any of these URLs after deployment:
+✓ built in 23.58s
+Copied case-studies/featured-shingle-roof-all-phase-construction-usa.jpg
+Copied case-studies/new-tile-roof-all-phase-construction-usa.jpg
 ```
-/social-proof/graham-with-happy-customer-all-phase-usa.jpg
-/social-proof/happy-new-roof-customer-delray-beach-all-phase-usa.jpg
-/social-proof/new-tile-roof-customer-all-phase-usa.jpg
-```
-
-## What Wasn't Changed
-- ❌ Carousel layout or styling
-- ❌ Navigation arrows
-- ❌ Auto-scroll behavior
-- ❌ Hover effects or overlays
-- ❌ "View All Projects" button
-- ❌ Responsive breakpoints
-
-## Expected Console Output
-
-After page load, the browser console should display:
-
-```
-=== Happy Customers Carousel Diagnostic ===
-Total photos after filtering: 18/18
-
-All carousel images:
-  [1] /social-proof/all-phase-construction-happy-customer-broward-county.JPG
-  [2] /social-proof/all-phase-customer-fort-lauderdale-roofing.JPEG
-  [3] /social-proof/all-phase-customer-luxury-home-boca-raton.JPG
-  [4] /social-proof/all-phase-customer-new-roof-pompano-beach.JPEG
-  [5] /social-proof/all-phase-customer-roof-installation-delray-beach.JPEG
-  [6] /social-proof/all-phase-customer-shingle-roof-deerfield-beach.JPEG
-  [7] /social-proof/all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG
-  [8] /social-proof/all-phase-roofing-satisfied-customers-palm-beach.jpg
-  [9] /social-proof/all-phase-roofing-satisified-customers-coralsprings.jpg
-  [10] /social-proof/all-phase-satisfied-customer-coral-springs.JPEG
-  [11] /social-proof/Karl_at_Valencia_pointe_homeowner_event.JPEG
-  [12] /social-proof/all-phase-roofing-happy-homeowner-south-florida.JPEG
-  [13] /social-proof/all-phase-customer-luxury-home-palm-beach-county.JPEG
-  [14] /social-proof/all-phase-customer-roof-replacement-broward.JPEG
-  [15] /social-proof/all-phase-customer-shingle-roof-south-florida.jpg
-  [16] /social-proof/graham-with-happy-customer-all-phase-usa.jpg
-  [17] /social-proof/happy-new-roof-customer-delray-beach-all-phase-usa.jpg
-  [18] /social-proof/new-tile-roof-customer-all-phase-usa.jpg
-==========================================
-```
-
-## Deployment Checklist
-
-After deploying, verify:
-
-- [ ] Console shows "Total photos after filtering: 18/18"
-- [ ] All 18 image paths listed in console
-- [ ] No warning or error messages
-- [ ] **Zero blank placeholders in carousel**
-- [ ] All 18 customer photos render correctly
-- [ ] Hover effects work on all images
-- [ ] Navigation arrows function properly
-- [ ] Auto-scroll works smoothly
-- [ ] New images accessible via direct URL test
-
-## Files Modified
-
-1. **src/components/HappyCustomers.tsx**
-   - Added 3 new customer photos to `allCustomerPhotos` array
-   - Total entries: 18
-   - All defensive filtering maintained
-
-2. **public/social-proof/** (5 files renamed)
-   - Normalized to lowercase .jpg
-   - Fixed underscore in one filename
-   - All 5 files stored for current/future use
 
 ## Status
-✅ **COMPLETE** - Carousel now has 18 valid customer photos with zero blank placeholders
+
+✅ **COMPLETE** - Featured Project carousel updated:
+- New case study images added to `/case-studies/` directory
+- Each slide uses correct, unique image
+- Image paths are bulletproof with fail-safe fallbacks
+- Build process copies images to dist automatically
+- Background color prevents blank spaces
+- Error handling switches to fallback if needed
+
+Ready for deployment to Netlify.

@@ -6,8 +6,8 @@ const caseStudies = [
   {
     id: 1,
     subtitle: 'How a Boca Raton homeowner turned a $49,999 roof into $109,000+ in savings',
-    image: '/projects/featured-tile-roof-drone.jpg',
-    imageAlt: 'Aerial drone view of completed barrel tile roof replacement in Boca Raton, FL - All Phase Construction',
+    image: '/case-studies/new-tile-roof-all-phase-construction-usa.jpg',
+    imageAlt: 'Completed barrel tile roof installation by All Phase Construction',
     customerName: 'Maria T. — Boca Raton, FL',
     title: 'Barrel Tile Roof Replacement',
     badges: ['Barrel Tile', 'HVHZ Compliant', 'Wind Mitigation Maximized'],
@@ -33,8 +33,8 @@ const caseStudies = [
   {
     id: 2,
     subtitle: 'How a Fort Lauderdale homeowner turned a $24,999 roof into $42,000+ in savings',
-    image: '/social-proof/all-phase-customer-shingle-roof-south-florida.jpg',
-    imageAlt: 'Robert M. Fort Lauderdale shingle roof replacement',
+    image: '/case-studies/featured-shingle-roof-all-phase-construction-usa.jpg',
+    imageAlt: 'Completed shingle roof installation by All Phase Construction',
     customerName: 'Robert M. — Fort Lauderdale, FL',
     title: 'Shingle Roof Replacement',
     badges: ['Tamko Titan XT', '160 MPH Wind Rated', 'Wind Mitigation Maximized'],
@@ -62,6 +62,7 @@ const caseStudies = [
 export default function CaseStudy() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     const scripts = caseStudies.map((study) => {
@@ -115,7 +116,12 @@ export default function CaseStudy() {
     setCurrentSlide(index);
   };
 
+  const handleImageError = (studyId: number) => {
+    setImageErrors(prev => ({ ...prev, [studyId]: true }));
+  };
+
   const currentStudy = caseStudies[currentSlide];
+  const fallbackImage = '/social-proof/all-phase-construction-usa-headquarters.jpg';
 
   return (
     <section className="py-16 bg-gradient-to-b from-[#0a0a0a] to-black">
@@ -153,15 +159,16 @@ export default function CaseStudy() {
           <div className="bg-neutral-900 rounded-lg overflow-hidden border-l-4 border-red-600 shadow-2xl transition-all duration-500">
             <div className="grid md:grid-cols-2 gap-0">
               <div className="flex flex-col">
-                <div className="h-64 md:h-auto md:flex-1">
+                <div className="h-64 md:h-auto md:flex-1 bg-neutral-800">
                   <img
-                    src={currentStudy.image}
+                    src={imageErrors[currentStudy.id] ? fallbackImage : currentStudy.image}
                     alt={currentStudy.imageAlt}
                     width="600"
                     height="400"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
+                    onError={() => handleImageError(currentStudy.id)}
                   />
                 </div>
                 <div className="bg-neutral-800 p-4 text-center">
