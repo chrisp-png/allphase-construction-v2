@@ -165,13 +165,13 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-6">
+        <div className="flex items-center justify-between min-h-[70px] sm:min-h-[80px] lg:min-h-[100px] py-4 sm:py-5 lg:py-6">
           <div className="flex items-center lg:min-w-[280px]">
             <Link to="/" className="flex items-center gap-3" aria-label="All Phase Construction USA - Home">
               <img
                 src="/UI_Logo_Version_(no_blur).png"
                 alt="All Phase Construction USA"
-                className="h-12 sm:h-14 md:h-16 lg:h-[72px] w-auto object-contain"
+                className="h-14 sm:h-[72px] md:h-[84px] lg:h-[100px] w-auto object-contain"
                 width="160"
                 height="40"
               />
