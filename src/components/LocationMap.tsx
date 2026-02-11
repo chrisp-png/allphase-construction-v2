@@ -55,7 +55,7 @@ export default function LocationMap() {
         </div>
 
         {/* Business Address and Contact Information */}
-        <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden">
+        <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden mb-12">
           <div className="p-6 border-b border-zinc-800">
             <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-3">
               <Building2 className="w-7 h-7 text-red-500" />
@@ -101,6 +101,45 @@ export default function LocationMap() {
                 <p className="text-zinc-400 text-sm">Serving Broward & Palm Beach Counties</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Conversion-Focused CTA Section */}
+        <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-2xl p-8 sm:p-12 text-center shadow-2xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            Schedule Your Roof Inspection Before the Next Storm
+          </h2>
+
+          <div className="max-w-2xl mx-auto mb-8 space-y-2">
+            <p className="text-gray-300 text-base sm:text-lg">
+              Licensed Roofing Contractor (CCC-1331464).
+            </p>
+            <p className="text-gray-300 text-base sm:text-lg">
+              Enhanced structural licensing authority.
+            </p>
+            <p className="text-gray-300 text-base sm:text-lg">
+              HVHZ-compliant roofing systems and documentation.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4">
+            <a
+              href="/roof-inspection"
+              className="inline-block px-8 py-4 bg-red-600 text-white text-lg font-bold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            >
+              Request Your Free Roof Assessment
+            </a>
+
+            <a
+              href="tel:+17542275605"
+              className="text-gray-300 hover:text-red-400 transition-colors text-lg font-semibold"
+            >
+              Call (754) 227-5605
+            </a>
+
+            <p className="text-gray-500 text-sm mt-2">
+              Same-day inspections available when scheduling permits.
+            </p>
           </div>
         </div>
       </div>
