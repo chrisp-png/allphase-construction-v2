@@ -23,7 +23,7 @@ export default function MicroFAQ() {
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <MapPin className="w-6 h-6 text-red-600" />
             <h2 className="text-2xl md:text-3xl font-bold text-white">
-              South Florida Roofing — Common Questions
+              Deerfield Beach & High Velocity Hurricane Zone — Common Questions
             </h2>
           </div>
         </div>

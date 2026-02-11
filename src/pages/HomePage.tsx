@@ -10,7 +10,6 @@ import Testimonials from '../components/Testimonials';
 import HappyCustomers from '../components/HappyCustomers';
 import CaseStudy from '../components/CaseStudy';
 import ServiceAreas from '../components/ServiceAreas';
-import ServiceAreaOverview from '../components/ServiceAreaOverview';
 import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
@@ -382,7 +381,6 @@ export default function HomePage() {
       <HappyCustomers />
       <CaseStudy />
       <ServiceAreas />
-      <ServiceAreaOverview />
       <MicroFAQ />
       <FAQ />
       <ChamberBadge />
