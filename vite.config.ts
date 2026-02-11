@@ -80,6 +80,28 @@ const manualPublicCopyPlugin = () => ({
       });
     }
 
+    // Copy projects directory recursively
+    const projectsSrc = path.resolve(publicDir, 'projects');
+    const projectsDest = path.resolve(distDir, 'projects');
+    if (fs.existsSync(projectsSrc)) {
+      if (!fs.existsSync(projectsDest)) {
+        fs.mkdirSync(projectsDest, { recursive: true });
+      }
+      const projectsFiles = fs.readdirSync(projectsSrc);
+      projectsFiles.forEach(file => {
+        const src = path.resolve(projectsSrc, file);
+        const dest = path.resolve(projectsDest, file);
+        try {
+          if (fs.statSync(src).isFile()) {
+            fs.copyFileSync(src, dest);
+            console.log(`Copied projects/${file}`);
+          }
+        } catch (error) {
+          console.warn(`Skipped projects/${file}: ${error.message}`);
+        }
+      });
+    }
+
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
     // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)

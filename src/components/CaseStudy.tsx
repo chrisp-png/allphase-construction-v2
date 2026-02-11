@@ -6,8 +6,8 @@ const caseStudies = [
   {
     id: 1,
     subtitle: 'How a Boca Raton homeowner turned a $49,999 roof into $109,000+ in savings',
-    image: '/all-phase-customer-luxury-home-boca-raton.jpg',
-    imageAlt: 'Maria T. Boca Raton barrel tile roof replacement',
+    image: '/projects/featured-tile-roof-drone.jpg',
+    imageAlt: 'Aerial drone view of completed barrel tile roof replacement in Boca Raton, FL - All Phase Construction',
     customerName: 'Maria T. — Boca Raton, FL',
     title: 'Barrel Tile Roof Replacement',
     badges: ['Barrel Tile', 'HVHZ Compliant', 'Wind Mitigation Maximized'],
@@ -33,7 +33,7 @@ const caseStudies = [
   {
     id: 2,
     subtitle: 'How a Fort Lauderdale homeowner turned a $24,999 roof into $42,000+ in savings',
-    image: '/all-phase-customer-shingle-roof-south-florida.jpg',
+    image: '/social-proof/all-phase-customer-shingle-roof-south-florida.jpg',
     imageAlt: 'Robert M. Fort Lauderdale shingle roof replacement',
     customerName: 'Robert M. — Fort Lauderdale, FL',
     title: 'Shingle Roof Replacement',
