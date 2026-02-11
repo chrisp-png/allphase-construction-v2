@@ -94,6 +94,27 @@ const customerPhotos: CustomerPhoto[] = [
     city: 'South Florida',
     citySlug: 'service-areas',
     linkTo: '/service-areas'
+  },
+  {
+    src: '/social-proof/all-phase-customer-luxury-home-palm-beach-county.JPEG',
+    alt: 'Happy homeowner with luxury home in Palm Beach County after roof completion',
+    city: 'Palm Beach County',
+    citySlug: 'palm-beach-county',
+    linkTo: '/service-areas'
+  },
+  {
+    src: '/social-proof/all-phase-customer-roof-replacement-broward.JPEG',
+    alt: 'Satisfied homeowner in Broward County after roof replacement by All Phase Construction USA',
+    city: 'Broward County',
+    citySlug: 'broward-county',
+    linkTo: '/service-areas'
+  },
+  {
+    src: '/social-proof/all-phase-customer-shingle-roof-south-florida.jpg',
+    alt: 'Happy homeowner in South Florida after shingle roof installation',
+    city: 'South Florida',
+    citySlug: 'service-areas',
+    linkTo: '/service-areas'
   }
 ];
 
