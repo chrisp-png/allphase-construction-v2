@@ -2,21 +2,44 @@
   "meta": {
     "created": "2026-02-10",
     "purpose": "Asset tracking for All Phase Construction USA social proof images",
-    "total_images": 5,
-    "last_updated": "2026-02-10"
+    "total_images": 24,
+    "last_updated": "2026-02-11"
   },
   "categories": {
     "people": {
-      "count": 0,
-      "images": []
+      "count": 3,
+      "images": [
+        "all-phase-construction-usa-Team-photo.JPG",
+        "all-phase-construction-usa-personnel.JPG",
+        "Karl_at_Valencia_pointe_homeowner_event.JPEG"
+      ]
     },
     "teams": {
-      "count": 0,
-      "images": []
+      "count": 2,
+      "images": [
+        "all-phase-construction-usa-Team-photo.JPG",
+        "all-phase-construction-usa-flat-roof-crew.jpeg"
+      ]
     },
     "customers": {
-      "count": 0,
-      "images": []
+      "count": 15,
+      "images": [
+        "all-phase-construction-happy-customer-broward-county.JPG",
+        "all-phase-customer-fort-lauderdale-roofing.JPEG",
+        "all-phase-customer-luxury-home-boca-raton.JPG",
+        "all-phase-customer-luxury-home-palm-beach-county.JPEG",
+        "all-phase-customer-new-roof-pompano-beach.JPEG",
+        "all-phase-customer-roof-installation-delray-beach.JPEG",
+        "all-phase-customer-roof-replacement-broward.JPEG",
+        "all-phase-customer-shingle-roof-deerfield-beach.JPEG",
+        "all-phase-customer-shingle-roof-south-florida.jpg",
+        "all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG",
+        "all-phase-roofing-happy-homeowner-south-florida.JPEG",
+        "all-phase-roofing-satisfied-customers-palm-beach.jpg",
+        "all-phase-roofing-satisified-customers-coralsprings.jpg",
+        "all-phase-satisfied-customer-coral-springs.JPEG",
+        "Karl_at_Valencia_pointe_homeowner_event.JPEG"
+      ]
     },
     "projects": {
       "count": 4,
@@ -35,7 +58,17 @@
     }
   },
   "usage_guidelines": {
-    "testimonials_background": [],
+    "testimonials_background": [
+      "all-phase-construction-happy-customer-broward-county.JPG",
+      "all-phase-roofing-satisfied-customers-palm-beach.jpg",
+      "all-phase-roofing-happy-homeowner-south-florida.JPEG",
+      "all-phase-satisfied-customer-coral-springs.JPEG",
+      "Karl_at_Valencia_pointe_homeowner_event.JPEG",
+      "all-phase-customer-fort-lauderdale-roofing.JPEG",
+      "all-phase-roofing-satisified-customers-coralsprings.jpg",
+      "all-phase-customer-new-roof-pompano-beach.JPEG",
+      "all-phase-customer-luxury-home-boca-raton.JPG"
+    ],
     "about_page": [],
     "process_steps": [
       "attic-fan-rafter-image.jpg"

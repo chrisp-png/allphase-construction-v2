@@ -1,16 +1,18 @@
 import { Star } from 'lucide-react';
 import { useEffect } from 'react';
 
-// PEOPLE PHOTOS FOR COLLAGE BACKGROUND
-// Explicit list to ensure NO DUPLICATES
+// CUSTOMER PHOTOS FOR COLLAGE BACKGROUND
+// Explicit list to ensure NO DUPLICATES - ONLY photos showing customers with sales reps/team
 const collageImages = [
-  '/long-term-piece-of-mind-all-phase-construction-usa.png', // Team photo with All Phase truck
-  '/step-10-piece-of-mind-optimized.jpg', // Happy customers/completion
-  '/step-01-inspection-optimized.jpg', // Inspector with customer
-  '/step-02-planning-optimized.jpg', // Planning meeting with people
-  '/step-03-materials-selection-optimized.jpg', // Materials selection with people
-  '/step-04-permitting-optimized.jpg', // Permitting office with people
-  '/tear-off-responsible-disposal-all-phase-construction-usa.jpg', // Work crew
+  '/social-proof/all-phase-construction-happy-customer-broward-county.JPG', // Happy customer with team
+  '/social-proof/all-phase-roofing-satisfied-customers-palm-beach.jpg', // Satisfied customers Palm Beach
+  '/social-proof/all-phase-roofing-happy-homeowner-south-florida.JPEG', // Happy homeowner South Florida
+  '/social-proof/all-phase-satisfied-customer-coral-springs.JPEG', // Satisfied customer Coral Springs
+  '/social-proof/Karl_at_Valencia_pointe_homeowner_event.JPEG', // Karl at homeowner event
+  '/social-proof/all-phase-customer-fort-lauderdale-roofing.JPEG', // Customer Fort Lauderdale
+  '/social-proof/all-phase-roofing-satisified-customers-coralsprings.jpg', // Satisfied customers Coral Springs
+  '/social-proof/all-phase-customer-new-roof-pompano-beach.JPEG', // Customer new roof Pompano Beach
+  '/social-proof/all-phase-customer-luxury-home-boca-raton.JPG', // Customer luxury home Boca Raton
 ];
 
 // Deduplication helper (safety check)
@@ -67,11 +69,11 @@ export default function Testimonials() {
 
   return (
     <section className="relative py-16 overflow-hidden">
-      {/* Background Image with Overlay - PEOPLE PHOTOS ONLY */}
+      {/* Background Image with Overlay - CUSTOMER PHOTOS ONLY */}
       <div className="absolute inset-0 z-0">
-        {/* Photo Collage Background - 6 UNIQUE PEOPLE PHOTOS */}
-        <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1">
-          {/* Top Row - People Photos */}
+        {/* Photo Collage Background - 9 UNIQUE CUSTOMER PHOTOS */}
+        <div className="absolute inset-0 grid grid-cols-3 grid-rows-3 gap-1">
+          {/* Row 1 - Customer Photos */}
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: `url(${uniqueCollageImages[0]})` }}
@@ -91,7 +93,7 @@ export default function Testimonials() {
             aria-hidden="true"
           />
 
-          {/* Bottom Row - People Photos */}
+          {/* Row 2 - Customer Photos */}
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: `url(${uniqueCollageImages[3]})` }}
@@ -107,6 +109,26 @@ export default function Testimonials() {
           <div
             className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
             style={{ backgroundImage: `url(${uniqueCollageImages[5]})` }}
+            role="presentation"
+            aria-hidden="true"
+          />
+
+          {/* Row 3 - Customer Photos */}
+          <div
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            style={{ backgroundImage: `url(${uniqueCollageImages[6]})` }}
+            role="presentation"
+            aria-hidden="true"
+          />
+          <div
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            style={{ backgroundImage: `url(${uniqueCollageImages[7]})` }}
+            role="presentation"
+            aria-hidden="true"
+          />
+          <div
+            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            style={{ backgroundImage: `url(${uniqueCollageImages[8]})` }}
             role="presentation"
             aria-hidden="true"
           />
