@@ -1,5 +1,6 @@
-import { Star } from 'lucide-react';
+import { Star, ExternalLink } from 'lucide-react';
 import { useEffect } from 'react';
+import { EXTERNAL_LINKS } from '../config/links';
 
 // CUSTOMER PHOTOS FOR COLLAGE BACKGROUND
 // Explicit list to ensure NO DUPLICATES - ONLY photos showing customers with sales reps/team
@@ -71,23 +72,23 @@ export default function Testimonials() {
     <section className="relative py-16 overflow-hidden">
       {/* Background Image with Overlay - CUSTOMER PHOTOS ONLY */}
       <div className="absolute inset-0 z-0">
-        {/* Photo Collage Background - 9 UNIQUE CUSTOMER PHOTOS */}
-        <div className="absolute inset-0 grid grid-cols-3 grid-rows-3 gap-1">
+        {/* Photo Collage Background - 9 UNIQUE CUSTOMER PHOTOS with 40% opacity and 60% saturation */}
+        <div className="absolute inset-0 grid grid-cols-3 grid-rows-3 gap-1 opacity-40">
           {/* Row 1 - Customer Photos */}
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[0]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[1]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[2]})` }}
             role="presentation"
             aria-hidden="true"
@@ -95,19 +96,19 @@ export default function Testimonials() {
 
           {/* Row 2 - Customer Photos */}
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[3]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[4]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[5]})` }}
             role="presentation"
             aria-hidden="true"
@@ -115,39 +116,34 @@ export default function Testimonials() {
 
           {/* Row 3 - Customer Photos */}
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[6]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[7]})` }}
             role="presentation"
             aria-hidden="true"
           />
           <div
-            className="bg-cover bg-center brightness-110 contrast-90 saturate-90"
+            className="bg-cover bg-center saturate-[60%]"
             style={{ backgroundImage: `url(${uniqueCollageImages[8]})` }}
             role="presentation"
             aria-hidden="true"
           />
         </div>
-        {/* Slightly lighter overlay for better collage visibility (reduced by ~12%) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/52 via-black/44 to-black/57" />
-        {/* Subtle vignette effect for edge depth */}
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30" />
+        {/* Dark overlay at 85% to maintain readability while showing collage */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/85 to-black/90" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             What Our Customers Say
           </h2>
-          <p className="text-red-600 text-lg font-semibold">
-            108+ Five-Star Google Reviews
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -166,7 +162,16 @@ export default function Testimonials() {
               </p>
               <div className="border-t border-gray-700/50 pt-4">
                 <p className="text-white font-semibold">{testimonial.name}</p>
-                <p className="text-gray-400 text-sm">{testimonial.location}</p>
+                <p className="text-gray-400 text-sm mb-3">{testimonial.location}</p>
+                <a
+                  href={EXTERNAL_LINKS.GOOGLE_REVIEWS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-red-600 hover:text-red-500 text-sm font-medium transition-colors duration-200"
+                >
+                  See this review on Google
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
           ))}
