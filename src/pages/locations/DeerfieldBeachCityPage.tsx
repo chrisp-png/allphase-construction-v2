@@ -711,7 +711,7 @@ export default function DeerfieldBeachCityPage() {
                   Local Owner-Operator
                 </h3>
                 <p className="text-gray-400">
-                  Based in Deerfield Beach at 590 Goolsby Blvd. Not a franchise or national chain—the Roofing Specialist personally oversees every roofing project.
+                  Owned and operated in Deerfield Beach, we oversee projects directly to ensure every roof meets HVHZ and Broward County standards.
                 </p>
               </div>
 
@@ -720,10 +720,10 @@ export default function DeerfieldBeachCityPage() {
                   <Shield className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Dual-Licensed Specialist
+                  Dual-Licensed Roofing Specialist
                 </h3>
                 <p className="text-gray-400">
-                  FL Roofing License CCC1331464 and General Contractor CGC1526236. The dual licensing ensures superior roofing solutions with comprehensive structural expertise.
+                  Our roofing projects are evaluated beyond surface installation — ensuring structural integrity, compliance, and long-term durability.
                 </p>
               </div>
 
@@ -735,7 +735,7 @@ export default function DeerfieldBeachCityPage() {
                   Quality Craftsmanship
                 </h3>
                 <p className="text-gray-400">
-                  Every project is completed to the highest standards with proper permits, inspections, and manufacturer-backed warranties.
+                  Every system is installed with hurricane-resistant fasteners, code-approved materials, and inspection-ready documentation.
                 </p>
               </div>
 
@@ -747,7 +747,7 @@ export default function DeerfieldBeachCityPage() {
                   Years of Experience
                 </h3>
                 <p className="text-gray-400">
-                  Decades of combined roofing experience in South Florida's unique climate and building requirements.
+                  Decades of roofing experience in South Florida's coastal climate means we understand wind uplift, salt exposure, and long-term performance.
                 </p>
               </div>
 
@@ -759,7 +759,7 @@ export default function DeerfieldBeachCityPage() {
                   Customer Focused
                 </h3>
                 <p className="text-gray-400">
-                  Outstanding customer service with clear communication, transparent pricing, and respect for your property throughout the project.
+                  Clear communication, transparent estimates, and documented inspections — no pressure tactics.
                 </p>
               </div>
 
@@ -771,7 +771,7 @@ export default function DeerfieldBeachCityPage() {
                   Always Available
                 </h3>
                 <p className="text-gray-400">
-                  Quick response times for emergencies and prompt scheduling for routine inspections, repairs, and replacements.
+                  Fast response times for roof inspections, storm damage evaluations, and urgent repair needs in Deerfield Beach.
                 </p>
               </div>
             </div>
