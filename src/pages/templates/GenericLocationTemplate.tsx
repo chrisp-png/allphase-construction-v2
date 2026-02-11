@@ -44,9 +44,13 @@ export default function GenericLocationTemplate() {
     "areaServed": {
       "@type": "City",
       "name": cityName,
-      "containedIn": {
-        "@type": "State",
-        "name": "Florida"
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "Florida",
+        "containedInPlace": {
+          "@type": "Country",
+          "name": "US"
+        }
       }
     },
     "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-16:00"

@@ -31,18 +31,24 @@ export default function Footer() {
           '@type': 'City',
           name: 'Deerfield Beach',
           containedInPlace: {
-            '@type': 'State',
+            '@type': 'AdministrativeArea',
             name: 'Florida',
-            addressCountry: 'US'
+            containedInPlace: {
+              '@type': 'Country',
+              name: 'US'
+            }
           }
         },
         {
           '@type': 'City',
           name: 'Parkland',
           containedInPlace: {
-            '@type': 'State',
+            '@type': 'AdministrativeArea',
             name: 'Florida',
-            addressCountry: 'US'
+            containedInPlace: {
+              '@type': 'Country',
+              name: 'US'
+            }
           }
         },
         {

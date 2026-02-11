@@ -34,9 +34,13 @@ export default function HallandaleBeachCalculatorPage() {
           "areaServed": {
             "@type": "City",
             "name": "Hallandale Beach",
-            "containedIn": {
-              "@type": "State",
-              "name": "Florida"
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Florida",
+              "containedInPlace": {
+                "@type": "Country",
+                "name": "US"
+              }
             }
           }
         }

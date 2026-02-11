@@ -48,7 +48,7 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
       '@type': 'City',
       name: cityName,
       containedInPlace: {
-        '@type': 'State',
+        '@type': 'AdministrativeArea',
         name: stateName,
         containedInPlace: {
           '@type': 'Country',
@@ -207,8 +207,12 @@ export function generateRoofRepairServiceSchema(cityName: string) {
       '@type': 'City',
       name: cityName,
       containedInPlace: {
-        '@type': 'State',
-        name: 'Florida'
+        '@type': 'AdministrativeArea',
+        name: 'Florida',
+        containedInPlace: {
+          '@type': 'Country',
+          name: 'United States'
+        }
       }
     },
     hasOfferCatalog: {

@@ -34,9 +34,13 @@ export default function GreenacresCalculatorPage() {
           "areaServed": {
             "@type": "City",
             "name": "Greenacres",
-            "containedIn": {
-              "@type": "State",
-              "name": "Florida"
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Florida",
+              "containedInPlace": {
+                "@type": "Country",
+                "name": "US"
+              }
             }
           }
         }

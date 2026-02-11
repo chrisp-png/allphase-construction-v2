@@ -67,8 +67,14 @@ export function generateServiceSchema(service: ServiceDetails): object {
     'areaServed': service.areaServed.map(area => ({
       '@type': 'City',
       'name': area,
-      'addressRegion': 'FL',
-      'addressCountry': 'US'
+      'containedInPlace': {
+        '@type': 'AdministrativeArea',
+        'name': 'Florida',
+        'containedInPlace': {
+          '@type': 'Country',
+          'name': 'US'
+        }
+      }
     })),
     'hasOfferCatalog': {
       '@type': 'OfferCatalog',
@@ -133,12 +139,26 @@ export function generateOrganizationSchema(): object {
       {
         '@type': 'AdministrativeArea',
         'name': 'Broward County',
-        'containedInPlace': { '@type': 'State', 'name': 'Florida' }
+        'containedInPlace': {
+          '@type': 'AdministrativeArea',
+          'name': 'Florida',
+          'containedInPlace': {
+            '@type': 'Country',
+            'name': 'US'
+          }
+        }
       },
       {
         '@type': 'AdministrativeArea',
         'name': 'Palm Beach County',
-        'containedInPlace': { '@type': 'State', 'name': 'Florida' }
+        'containedInPlace': {
+          '@type': 'AdministrativeArea',
+          'name': 'Florida',
+          'containedInPlace': {
+            '@type': 'Country',
+            'name': 'US'
+          }
+        }
       }
     ],
     'aggregateRating': {

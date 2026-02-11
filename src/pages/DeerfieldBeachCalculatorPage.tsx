@@ -33,9 +33,13 @@ export default function DeerfieldBeachCalculatorPage() {
           "areaServed": {
             "@type": "City",
             "name": "Deerfield Beach",
-            "containedIn": {
-              "@type": "State",
-              "name": "Florida"
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Florida",
+              "containedInPlace": {
+                "@type": "Country",
+                "name": "US"
+              }
             }
           }
         }

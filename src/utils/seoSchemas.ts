@@ -43,12 +43,26 @@ export function generateLocalBusinessSchema(pageUrl: string) {
       {
         '@type': 'AdministrativeArea',
         name: 'Broward County',
-        containedInPlace: { '@type': 'State', name: 'Florida' }
+        containedInPlace: {
+          '@type': 'AdministrativeArea',
+          name: 'Florida',
+          containedInPlace: {
+            '@type': 'Country',
+            name: 'US'
+          }
+        }
       },
       {
         '@type': 'AdministrativeArea',
         name: 'Palm Beach County',
-        containedInPlace: { '@type': 'State', name: 'Florida' }
+        containedInPlace: {
+          '@type': 'AdministrativeArea',
+          name: 'Florida',
+          containedInPlace: {
+            '@type': 'Country',
+            name: 'US'
+          }
+        }
       }
     ],
     aggregateRating: {

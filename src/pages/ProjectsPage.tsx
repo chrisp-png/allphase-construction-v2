@@ -105,8 +105,12 @@ export default function ProjectsPage() {
         "@type": "City",
         "name": project.city,
         "containedInPlace": {
-          "@type": "State",
-          "name": "Florida"
+          "@type": "AdministrativeArea",
+          "name": "Florida",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "US"
+          }
         }
       },
       "serviceType": `${project.roof_type} Roofing`,
