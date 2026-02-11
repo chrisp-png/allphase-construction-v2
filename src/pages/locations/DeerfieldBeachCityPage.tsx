@@ -778,7 +778,7 @@ export default function DeerfieldBeachCityPage() {
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
                 <div className="flex justify-center mb-4">
                   <img
-                    src="/image copy copy.png"
+                    src="/broward-chamber-of-commerce-member-all-phase-construction-usa.png"
                     alt="Broward County Chamber of Commerce Member – All Phase Construction USA"
                     className="h-24 w-auto object-contain"
                   />
@@ -804,10 +804,13 @@ export default function DeerfieldBeachCityPage() {
           {/* Headquarters Location Map */}
           <div className="mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Deerfield Beach Headquarters
+              Deerfield Beach Headquarters – Serving Broward & Palm Beach Counties
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-3xl">
-              The Roofing Specialist operates from the Deerfield Beach headquarters at 590 Goolsby Blvd. All roofing inspections, permitting, and project coordination for Broward and Palm Beach County are managed directly from this location.
+              All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Established in 2006, our office serves as the operational base for roof inspections, roof repair, and roof replacement projects throughout Deerfield Beach, Boca Raton, and surrounding communities in Broward and Palm Beach Counties.
+            </p>
+            <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-3xl">
+              Located near the Deerfield Beach and Boca Raton border, our team provides fast response times for homeowners seeking hurricane-compliant roofing systems and wind mitigation documentation.
             </p>
 
             {/* Google Maps Embed */}
@@ -873,6 +876,18 @@ export default function DeerfieldBeachCityPage() {
                 </div>
               </div>
             </div>
+
+            {/* CTA Line */}
+            <p className="text-gray-400 text-center mt-6 text-sm">
+              Need directions or want to schedule an inspection? Call{' '}
+              <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-semibold transition-colors">
+                (754) 227-5605
+              </a>{' '}
+              or{' '}
+              <a href="/roof-inspection" className="text-red-600 hover:text-red-500 font-semibold transition-colors">
+                request a roof assessment online
+              </a>.
+            </p>
           </div>
 
           {/* Explore Service Areas Section */}
