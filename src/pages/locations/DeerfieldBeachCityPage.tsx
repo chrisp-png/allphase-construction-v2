@@ -586,6 +586,32 @@ export default function DeerfieldBeachCityPage() {
             </div>
           </div>
 
+          {/* Compact CTA Block */}
+          <div className="mb-16 bg-gray-800/30 rounded-xl p-8 border border-gray-700 text-center shadow-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Ready to Schedule a Roof Inspection?
+            </h2>
+            <p className="text-gray-400 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+              Get a documented, inspection-ready roofing assessment from a licensed HVHZ roofing specialist serving Deerfield Beach.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                to="/roof-inspection"
+                className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+              >
+                Schedule My Roof Inspection
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a
+                href="tel:7542275605"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                Call (754) 227-5605
+              </a>
+            </div>
+          </div>
+
           {/* Deerfield Beach Roofing Systems Installed */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
