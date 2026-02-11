@@ -790,7 +790,7 @@ export default function DeerfieldBeachCityPage() {
                   Official member of the Broward County Chamber of Commerce, listed as a licensed roofing contractor serving Deerfield Beach since 2006. Our membership reinforces our commitment to local accountability and professional standards.
                 </p>
                 <a
-                  href="https://www.browardchamber.org"
+                  href="https://www.browardbiz.com/search_results?q=all+phase+construction+usa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-600 hover:text-red-500 text-sm font-medium inline-flex items-center gap-1 transition-colors"
