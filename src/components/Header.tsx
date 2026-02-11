@@ -165,19 +165,21 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-5">
-          <div className="flex items-center">
+        <div className="flex items-center justify-between py-6">
+          <div className="flex items-center lg:min-w-[280px]">
             <Link to="/" className="flex items-center gap-3" aria-label="All Phase Construction USA - Home">
               <img
                 src="/LOGO_black_background.png"
                 alt="All Phase Construction USA"
-                className="h-10 sm:h-11 md:h-[52px] lg:h-[60px] w-auto object-contain"
+                className="h-11 sm:h-[52px] md:h-[60px] lg:h-[72px] w-auto object-contain"
                 width="160"
                 height="40"
               />
               <div className="flex flex-col">
-                <span className="sr-only">All Phase Construction USA</span>
-                <span className="text-red-600 font-semibold text-xs sm:text-sm">
+                <span className="hidden lg:block text-white font-bold text-base xl:text-lg whitespace-nowrap leading-tight">
+                  All Phase Construction USA
+                </span>
+                <span className="text-red-600 font-semibold text-xs sm:text-sm whitespace-nowrap">
                   Dual Licensed Roofing Contractor
                 </span>
               </div>
