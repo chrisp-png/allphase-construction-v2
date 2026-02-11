@@ -32,17 +32,17 @@ export default function DeerfieldBeachCityPage() {
   const recentProjects = [
     {
       src: '/social-proof/CELESTIAL_BRONZE_METAL_STANDING_SEAM_ROOF_DEERFIELD_BEACH_FL_ALL_PHASE_CONSTRUCTION_USA.jpg',
-      alt: 'Standing Seam Metal Roof Installation in Deerfield Beach, FL',
+      alt: 'Deerfield Beach roof replacement - HVHZ standing seam metal roofing in Broward County',
       caption: 'Celestial Bronze Standing Seam Metal Roof - Deerfield Beach'
     },
     {
       src: '/social-proof/all-phase-customer-shingle-roof-deerfield-beach.JPEG',
-      alt: 'Architectural Shingle Roof Replacement in Deerfield Beach',
+      alt: 'Deerfield Beach roof replacement - HVHZ architectural shingle roofing in Broward County',
       caption: 'HVHZ-Compliant Architectural Shingle Roof - Deerfield Beach'
     },
     {
       src: '/social-proof/Celestial_Bronze_MetaL_Roof__Deerfield_Beach_All_Phase_Construction_USA.jpg',
-      alt: 'Metal Roof Installation by All Phase Construction in Deerfield Beach',
+      alt: 'Deerfield Beach roof replacement - HVHZ metal roofing system in Broward County',
       caption: 'Premium Metal Roofing System - Deerfield Beach'
     }
   ];
