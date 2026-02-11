@@ -23,63 +23,63 @@ const allCustomerPhotos: CustomerPhoto[] = [
     alt: 'Happy roofing customer in Fort Lauderdale, FL with All Phase Construction USA',
     city: 'Fort Lauderdale',
     citySlug: 'fort-lauderdale',
-    linkTo: '/locations/fort-lauderdale'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-customer-luxury-home-boca-raton.JPG',
     alt: 'Happy roofing customer in Boca Raton, FL with All Phase Construction USA',
     city: 'Boca Raton',
     citySlug: 'boca-raton',
-    linkTo: '/locations/boca-raton'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-customer-new-roof-pompano-beach.JPEG',
     alt: 'Happy roofing customer in Pompano Beach, FL with All Phase Construction USA',
     city: 'Pompano Beach',
     citySlug: 'pompano-beach',
-    linkTo: '/locations/pompano-beach'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-customer-roof-installation-delray-beach.JPEG',
     alt: 'Happy roofing customer in Delray Beach, FL with All Phase Construction USA',
     city: 'Delray Beach',
     citySlug: 'delray-beach',
-    linkTo: '/locations/delray-beach'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-customer-shingle-roof-deerfield-beach.JPEG',
     alt: 'Happy roofing customer in Deerfield Beach, FL with All Phase Construction USA',
     city: 'Deerfield Beach',
     citySlug: 'deerfield-beach',
-    linkTo: '/locations/deerfield-beach'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG',
     alt: 'Happy roofing customer in Loxahatchee, FL with All Phase Construction USA',
     city: 'Loxahatchee',
     citySlug: 'loxahatchee-groves',
-    linkTo: '/locations/loxahatchee-groves'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-roofing-satisfied-customers-palm-beach.jpg',
     alt: 'Happy roofing customer in Palm Beach, FL with All Phase Construction USA',
     city: 'Palm Beach',
     citySlug: 'palm-beach',
-    linkTo: '/locations/palm-beach'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-roofing-satisified-customers-coralsprings.jpg',
     alt: 'Happy roofing customer in Coral Springs, FL with All Phase Construction USA',
     city: 'Coral Springs',
     citySlug: 'coral-springs',
-    linkTo: '/locations/coral-springs'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/all-phase-satisfied-customer-coral-springs.JPEG',
     alt: 'Roofing customer and consultant in Coral Springs, FL — All Phase Construction USA',
     city: 'Coral Springs',
     citySlug: 'coral-springs',
-    linkTo: '/locations/coral-springs'
+    linkTo: '/locations'
   },
   {
     src: '/social-proof/Karl_at_Valencia_pointe_homeowner_event.JPEG',
@@ -122,20 +122,6 @@ const allCustomerPhotos: CustomerPhoto[] = [
     city: 'South Florida',
     citySlug: 'service-areas',
     linkTo: '/service-areas'
-  },
-  {
-    src: '/social-proof/happy-new-roof-customer-delray-beach-all-phase-usa.jpg',
-    alt: 'Happy roofing customers in Delray Beach with All Phase Construction representative',
-    city: 'Delray Beach',
-    citySlug: 'delray-beach',
-    linkTo: '/locations/delray-beach'
-  },
-  {
-    src: '/social-proof/new-tile-roof-customer-all-phase-usa.jpg',
-    alt: 'Satisfied tile roof customer in South Florida with All Phase Construction representative',
-    city: 'South Florida',
-    citySlug: 'service-areas',
-    linkTo: '/service-areas'
   }
 ];
 
@@ -143,7 +129,8 @@ const allCustomerPhotos: CustomerPhoto[] = [
 // Only include photos where:
 // 1. src exists and is a non-empty string
 // 2. src has valid file extension
-// 3. All required fields are present
+// 3. linkTo exists and is a valid path
+// 4. All required fields are present
 const customerPhotos = allCustomerPhotos.filter((photo): photo is CustomerPhoto => {
   // Validate src exists and is non-empty
   if (!photo || typeof photo.src !== 'string' || photo.src.trim().length === 0) {
@@ -159,14 +146,33 @@ const customerPhotos = allCustomerPhotos.filter((photo): photo is CustomerPhoto 
     return false;
   }
 
+  // Validate linkTo exists, is non-empty, and starts with '/'
+  if (!photo.linkTo || typeof photo.linkTo !== 'string' || photo.linkTo.trim().length === 0) {
+    console.warn('⚠️ Carousel: Filtered photo with missing or empty linkTo', photo);
+    return false;
+  }
+
+  if (!photo.linkTo.startsWith('/')) {
+    console.warn('⚠️ Carousel: Filtered photo with invalid linkTo path', photo.linkTo);
+    return false;
+  }
+
   // Validate all required fields are present
-  if (!photo.alt || !photo.city || !photo.linkTo) {
+  if (!photo.alt || !photo.city) {
     console.warn('⚠️ Carousel: Filtered photo with missing required fields', photo);
     return false;
   }
 
   return true;
 });
+
+// Diagnostic log to track carousel health
+if (typeof window !== 'undefined') {
+  console.log('=== Happy Customers Carousel Diagnostic ===');
+  console.log(`Total photos after filtering: ${customerPhotos.length}/${allCustomerPhotos.length}`);
+  console.log('All carousel images:', customerPhotos.map((p, i) => `\n  [${i+1}] ${p.src} → ${p.linkTo}`).join(''));
+  console.log('==========================================');
+}
 
 export default function HappyCustomers() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -313,7 +319,14 @@ export default function HappyCustomers() {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {customerPhotos
-              .filter(photo => photo && photo.src && photo.src.trim().length > 0)
+              .filter(photo =>
+                photo &&
+                photo.src &&
+                photo.src.trim().length > 0 &&
+                photo.linkTo &&
+                photo.linkTo.trim().length > 0 &&
+                photo.linkTo.startsWith('/')
+              )
               .map((photo, index) => (
               <a
                 key={`${photo.src}-${index}`}
