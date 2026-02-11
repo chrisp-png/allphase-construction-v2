@@ -211,6 +211,78 @@ export default function HomePage() {
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does a new roof cost in Broward or Palm Beach County?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A new roof in South Florida varies based on size, material, and code requirements. Shingle roofs cost less than tile or metal systems. Pricing includes tear-off, underlayment, HVHZ fastening, permits, inspections, and disposal. A written estimate provides exact project cost."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a roof replacement take from start to finish?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Roof installation typically takes 2–5 working days once permits and materials are ready. From contract signing to final inspection, most projects take 4–6 weeks, depending on permitting timelines, HOA approval, inspections, and material scheduling."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you handle roofing permits and inspections?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We handle all roofing permits, inspections, and code compliance requirements. Projects are submitted to the local building department and installed to Florida Building Code and High Velocity Hurricane Zone (HVHZ) standards for safety and approval."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you licensed and insured in South Florida?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All Phase Construction USA is fully licensed and insured in Florida. Roofing License CCC-1331464 and General Contractor License CGC-1526236. We carry liability and workers' compensation coverage and meet all state and local regulatory requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I know if I need roof repair or full replacement?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Roof replacement is recommended when underlayment fails, leaks occur in multiple areas, or the roof reaches the end of its service life. Isolated damage may qualify for repair. A professional inspection determines the correct solution."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What roofing materials work best in the High Velocity Hurricane Zone?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In Broward County's High Velocity Hurricane Zone, roofing systems must meet strict wind uplift and fastening standards. Shingle, tile, and metal roofs require approved assemblies and secondary water resistance. Proper installation ensures hurricane performance and inspection approval."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is roof replacement covered by homeowners insurance?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Insurance may cover roof replacement if damage results from a covered peril such as wind or storm impact. Approval depends on policy terms, roof age, and documented damage. Inspection reports support the claims process."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you serve Deerfield Beach and surrounding cities?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We are headquartered in Deerfield Beach and serve Broward and Palm Beach Counties, including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Delray Beach, Boynton Beach, and surrounding communities throughout South Florida."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <HeroRoofing />
 
