@@ -48,12 +48,12 @@ export default function ServiceAreas() {
             </h3>
 
             {/* Supporting Copy */}
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
               See every city we serve across Broward & Palm Beach Counties — from residential neighborhoods to commercial districts.
             </p>
 
             {/* Primary Button */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex justify-center">
               <Link
                 to="/locations/service-areas"
                 onMouseEnter={handlePrefetch}
@@ -62,17 +62,6 @@ export default function ServiceAreas() {
               >
                 Service Areas Hub
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-
-              {/* Secondary Link */}
-              <Link
-                to="/locations/service-areas"
-                onMouseEnter={handlePrefetch}
-                onFocus={handlePrefetch}
-                className="inline-flex items-center gap-2 text-gray-400 hover:text-red-500 transition-colors duration-300 font-medium"
-              >
-                Browse by county and city
-                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
