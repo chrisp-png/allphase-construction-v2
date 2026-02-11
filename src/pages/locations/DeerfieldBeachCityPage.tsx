@@ -7,11 +7,12 @@
  * This page focuses on Deerfield Beach itself, not the service areas directory.
  */
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight, Star } from 'lucide-react';
 import Contact from '../../components/Contact';
+import Lightbox from '../../components/Lightbox';
 
 export default function DeerfieldBeachCityPage() {
   // Force-inject title immediately to prevent blank page
@@ -23,6 +24,45 @@ export default function DeerfieldBeachCityPage() {
   const canonicalUrl = typeof window !== 'undefined'
     ? window.location.href.split('?')[0].split('#')[0]
     : 'https://allphaseconstructionfl.com/locations/deerfield-beach';
+
+  // Lightbox state for recent projects
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const recentProjects = [
+    {
+      src: '/social-proof/CELESTIAL_BRONZE_METAL_STANDING_SEAM_ROOF_DEERFIELD_BEACH_FL_ALL_PHASE_CONSTRUCTION_USA.jpg',
+      alt: 'Standing Seam Metal Roof Installation in Deerfield Beach, FL',
+      caption: 'Celestial Bronze Standing Seam Metal Roof - Deerfield Beach'
+    },
+    {
+      src: '/social-proof/all-phase-customer-shingle-roof-deerfield-beach.JPEG',
+      alt: 'Architectural Shingle Roof Replacement in Deerfield Beach',
+      caption: 'HVHZ-Compliant Architectural Shingle Roof - Deerfield Beach'
+    },
+    {
+      src: '/social-proof/Celestial_Bronze_MetaL_Roof__Deerfield_Beach_All_Phase_Construction_USA.jpg',
+      alt: 'Metal Roof Installation by All Phase Construction in Deerfield Beach',
+      caption: 'Premium Metal Roofing System - Deerfield Beach'
+    }
+  ];
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setLightboxIndex((prev) => (prev + 1) % recentProjects.length);
+  };
+
+  const previousImage = () => {
+    setLightboxIndex((prev) => (prev - 1 + recentProjects.length) % recentProjects.length);
+  };
 
   return (
     <>
@@ -190,20 +230,92 @@ export default function DeerfieldBeachCityPage() {
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-gray-700/50 text-gray-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <MapPin className="w-4 h-4" />
               Primary Location
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Dual-Licensed Roofing Specialist in Deerfield Beach, FL
+              Roofer in Deerfield Beach, FL — HVHZ Roofing & Wind Mitigation Specialists
             </h1>
 
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Your expert in HVHZ-compliant roofing, serving Deerfield Beach and surrounding communities with superior workmanship and professional roofing solutions.
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+              Serving Deerfield Beach (33441/33442) and Broward County with code-compliant roof repair, roof replacement, and insurance-defensible documentation.
             </p>
+
+            {/* Proof Row */}
+            <div className="flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm md:text-base mb-8">
+              <div className="flex items-center gap-2">
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <span className="font-medium">4.8 Rating • 137+ Reviews</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-red-600" />
+                <span className="font-medium">HQ in Deerfield Beach</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-red-600" />
+                <span className="font-medium">Same-day inspections when scheduling permits</span>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <a
+                href="#contact-form"
+                className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors shadow-lg"
+              >
+                Request a Free Roof Assessment
+              </a>
+              <a
+                href="tel:+17542275605"
+                className="inline-flex items-center justify-center gap-2 border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                Call (754) 227-5605
+              </a>
+            </div>
           </div>
+
+          {/* Recent Deerfield Beach Roofs Photo Strip */}
+          <div className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              Recent Deerfield Beach Roofs
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {recentProjects.map((project, index) => (
+                <div
+                  key={index}
+                  className="relative cursor-pointer rounded-xl overflow-hidden shadow-xl border border-gray-700 group"
+                  onClick={() => openLightbox(index)}
+                >
+                  <img
+                    src={project.src}
+                    alt={project.alt}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Camera className="w-12 h-12 text-white" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Lightbox */}
+          {lightboxOpen && (
+            <Lightbox
+              images={recentProjects}
+              currentIndex={lightboxIndex}
+              onClose={closeLightbox}
+              onNext={nextImage}
+              onPrevious={previousImage}
+            />
+          )}
 
           {/* HVHZ Dual-Licensed Banner */}
           <div className="mb-16">
@@ -704,7 +816,9 @@ export default function DeerfieldBeachCityPage() {
           </div>
 
           {/* Contact Form Section */}
-          <Contact />
+          <div id="contact-form">
+            <Contact />
+          </div>
 
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-700 text-center">
