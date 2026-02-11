@@ -287,6 +287,30 @@ export default function HomePage() {
                   "@type": "Answer",
                   "text": "We are headquartered in Deerfield Beach and serve Broward and Palm Beach Counties, including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Delray Beach, Boynton Beach, and surrounding communities throughout South Florida."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "Can a roofer do my wind mitigation report?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Usually, no — a wind mitigation report generally must be completed by a properly licensed inspector (often a home inspector, engineer, architect, or a Florida-licensed general contractor, depending on the credential). Many roofing contractors can't sign that form unless they also hold the appropriate license. If your roofer is also a GC, it can simplify coordination because the same firm can evaluate roofing + related structural mitigation opportunities."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Palm Beach County part of Florida's HVHZ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Florida's HVHZ designation applies to Miami-Dade and Broward counties. Palm Beach County is outside the HVHZ, but many Palm Beach jurisdictions follow very strict high-wind standards and product approval requirements that can be close to HVHZ-level intent, especially for uplift resistance and opening protection."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will a new roof help lower my insurance?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — a new roof can reduce insurance costs, especially when paired with documented wind mitigation features (improved roof-to-deck attachment, secondary water barrier, enhanced fastening patterns, and approved assemblies). If your roofing contractor also holds a GC license, you may be able to address certain structural upgrades more efficiently, which can unlock additional mitigation credits depending on your home and insurer."
+                }
               }
             ]
           })}
