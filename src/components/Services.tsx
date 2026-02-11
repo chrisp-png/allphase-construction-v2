@@ -92,6 +92,17 @@ export default function Services() {
           <p className="text-gray-400 sm:text-gray-500 text-sm mt-6 max-w-2xl mx-auto">
             Select a service to view details and pricing guidance.
           </p>
+
+          {/* Secondary CTA Button */}
+          <div className="mt-5">
+            <a
+              href="https://allphaseconstructionfl.com/roof-replacement-process"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-red-500 bg-transparent border-2 border-red-500/50 rounded-lg hover:bg-red-500/10 hover:border-red-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-[#0a0a0a]"
+            >
+              10-Step Roof Replacement Process
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
