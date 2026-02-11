@@ -1,7 +1,16 @@
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState, useCallback } from 'react';
 
 export default function ServiceAreas() {
+  const [isPrefetched, setIsPrefetched] = useState(false);
+
+  const handlePrefetch = useCallback(() => {
+    if (!isPrefetched) {
+      setIsPrefetched(true);
+      import('../pages/locations/ServiceAreasHubPage').catch(() => {});
+    }
+  }, [isPrefetched]);
 
   return (
     <section className="py-16 bg-gradient-to-b from-black to-gray-900">
@@ -10,7 +19,7 @@ export default function ServiceAreas() {
           <div className="inline-flex items-center justify-center gap-2 mb-4">
             <MapPin className="w-8 h-8 text-red-600" />
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Proudly Serving All of Broward & Palm Beach Counties
+              Proudly serving Deerfield Beach and all of Broward & Palm Beach counties.
             </h2>
           </div>
           <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
@@ -47,6 +56,8 @@ export default function ServiceAreas() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/locations/service-areas"
+                onMouseEnter={handlePrefetch}
+                onFocus={handlePrefetch}
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold text-lg rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/60 hover:scale-105 transform"
               >
                 Service Areas Hub
@@ -56,6 +67,8 @@ export default function ServiceAreas() {
               {/* Secondary Link */}
               <Link
                 to="/locations/service-areas"
+                onMouseEnter={handlePrefetch}
+                onFocus={handlePrefetch}
                 className="inline-flex items-center gap-2 text-gray-400 hover:text-red-500 transition-colors duration-300 font-medium"
               >
                 Browse by county and city

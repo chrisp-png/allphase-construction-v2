@@ -11,6 +11,7 @@ import LowercaseRedirect from './components/LowercaseRedirect';
 import AssessmentModal from './components/AssessmentModal';
 import { AssessmentModalProvider, useAssessmentModal } from './context/AssessmentModalContext';
 import NuclearMetadata from './components/NuclearMetadata';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -379,9 +380,11 @@ function AppContent() {
 function App() {
   return (
     <Router>
-      <AssessmentModalProvider>
-        <AppContent />
-      </AssessmentModalProvider>
+      <ErrorBoundary>
+        <AssessmentModalProvider>
+          <AppContent />
+        </AssessmentModalProvider>
+      </ErrorBoundary>
     </Router>
   );
 }
