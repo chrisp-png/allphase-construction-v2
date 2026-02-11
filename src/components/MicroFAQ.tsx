@@ -17,8 +17,8 @@ const microFaqs = [
 
 export default function MicroFAQ() {
   return (
-    <section className="py-16 bg-neutral-900">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="hv-hurricane-section py-16 bg-neutral-900 relative overflow-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <MapPin className="w-6 h-6 text-red-600" />

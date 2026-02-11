@@ -91,3 +91,21 @@ body {
     margin-bottom: 6rem;
   }
 }
+
+/* Hurricane Zone FAQ Section - Subtle Background */
+.hv-hurricane-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(23, 23, 23, 0.95), rgba(23, 23, 23, 0.92)),
+    url('/tile-roof-installation-foam-adhesive-hvhz-broward-palm-beach.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
