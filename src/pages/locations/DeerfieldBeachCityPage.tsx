@@ -394,6 +394,31 @@ export default function DeerfieldBeachCityPage() {
             </div>
           </div>
 
+          {/* Service Pills Row */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            <Link
+              to="/roof-inspection"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
+            >
+              <FileCheck className="w-4 h-4" />
+              Roof Inspections
+            </Link>
+            <Link
+              to="/roof-repair"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
+            >
+              <CheckCircle className="w-4 h-4" />
+              Roof Repair
+            </Link>
+            <Link
+              to="/roof-replacement-process"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
+            >
+              <ArrowRight className="w-4 h-4" />
+              Roof Replacement
+            </Link>
+          </div>
+
           {/* Recent Deerfield Beach Roofs Photo Strip */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
