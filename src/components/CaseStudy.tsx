@@ -130,7 +130,7 @@ export default function CaseStudy() {
         </div>
 
         <div
-          className="max-w-5xl mx-auto mb-12 relative"
+          className="max-w-6xl mx-auto mb-12 relative"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -252,7 +252,7 @@ export default function CaseStudy() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-8">
+        <div className="max-w-5xl mx-auto mb-8">
           <div className="bg-neutral-900 rounded-lg p-8 border-2 border-red-600 text-center">
             <p className="text-white text-lg leading-relaxed italic">
               {currentStudy.quote}

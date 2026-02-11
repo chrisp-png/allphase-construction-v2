@@ -222,7 +222,7 @@ export default function RoofCalculator() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-slate-700/60 backdrop-blur-sm border border-slate-600/80 rounded-2xl p-8 shadow-[0_0_60px_rgba(0,0,0,0.5),0_0_20px_rgba(71,85,105,0.3)]">
+        <div className="max-w-5xl mx-auto bg-slate-700/60 backdrop-blur-sm border border-slate-600/80 rounded-2xl p-8 shadow-[0_0_60px_rgba(0,0,0,0.5),0_0_20px_rgba(71,85,105,0.3)]">
           <div className="mb-8">
             <h3 className="text-3xl font-extrabold mb-6 flex items-center gap-3">
               <span className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)]">Step 1:</span>
@@ -477,14 +477,14 @@ export default function RoofCalculator() {
               </div>
             </div>
 
-            <div className="text-center text-xs text-gray-500 max-w-4xl mx-auto">
+            <div className="text-center text-xs text-gray-500 max-w-5xl mx-auto">
               * Estimates are for informational purposes only and do not constitute a quote or contract. Actual pricing
               may vary based on roof condition, accessibility, local codes, material availability, and other factors
               determined during inspection.
             </div>
 
             <div
-              className="max-w-4xl mx-auto mt-16"
+              className="max-w-5xl mx-auto mt-16"
               style={{
                 animation: 'fadeInUp 0.6s ease-out 1.2s both',
               }}

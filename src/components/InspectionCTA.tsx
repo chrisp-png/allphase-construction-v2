@@ -5,7 +5,7 @@ export default function InspectionCTA() {
   const { openModal } = useAssessmentModal();
   return (
     <section className="py-16 bg-zinc-950">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl md:text-3xl font-normal mb-8 text-center text-zinc-200">
           Request a Roof Inspection
         </h2>

@@ -16,7 +16,7 @@ export default function ServiceAreaOverview() {
             Service Area Overview
           </h2>
 
-          <p className="text-xl text-gray-300 leading-relaxed text-center max-w-4xl mx-auto">
+          <p className="text-xl text-gray-300 leading-relaxed text-center max-w-5xl mx-auto">
             From our central hub in{' '}
             <Link
               to="/locations/deerfield-beach"

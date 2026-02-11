@@ -195,7 +195,7 @@ export default function TopRooferPageTemplate({ data }: TopRooferPageTemplatePro
             <span className="text-white">Top 5 Roofer</span>
           </nav>
 
-          <div className="text-center max-w-4xl mx-auto mb-16">
+          <div className="text-center max-w-5xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-600/20">
               <Award className="w-4 h-4" />
               2026 Rankings
@@ -485,7 +485,7 @@ export default function TopRooferPageTemplate({ data }: TopRooferPageTemplatePro
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
               Frequently Asked Questions About Roofing in {cityVariables.city_name}
             </h2>
-            <div className="max-w-4xl mx-auto space-y-4">
+            <div className="max-w-5xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
                 <div key={index} className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden">
                   <button

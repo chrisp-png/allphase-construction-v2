@@ -212,7 +212,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
 
   return (
     <section className="relative bg-gradient-to-b from-zinc-900 via-slate-900 to-zinc-900 py-16 mb-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <div className="inline-block bg-red-600/10 border border-red-600/30 rounded-full px-4 py-1.5 mb-4">
             <span className="text-red-500 text-sm font-semibold uppercase tracking-wide">
@@ -230,7 +230,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl">
+        <div className="max-w-5xl mx-auto bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl">
           <div className="mb-8">
             <h3 className="text-3xl font-extrabold mb-6 flex items-center gap-3">
               <span className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)]">Step 1:</span>
@@ -477,7 +477,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
               </div>
             </div>
 
-            <div className="text-center text-xs text-gray-500 max-w-4xl mx-auto">
+            <div className="text-center text-xs text-gray-500 max-w-5xl mx-auto">
               * Estimates are for informational purposes only and do not constitute a quote or contract. Actual pricing
               may vary based on roof condition, accessibility, local codes, material availability, and other factors
               determined during inspection.
