@@ -10,7 +10,7 @@ interface CustomerPhoto {
 }
 
 // CUSTOMER PHOTOS WITH CITY-SPECIFIC ROUTING
-const customerPhotos: CustomerPhoto[] = [
+const allCustomerPhotos: CustomerPhoto[] = [
   {
     src: '/social-proof/all-phase-construction-happy-customer-broward-county.JPG',
     alt: 'Happy roofing customer in Broward County, FL with All Phase Construction USA',
@@ -118,6 +118,35 @@ const customerPhotos: CustomerPhoto[] = [
   }
 ];
 
+// DEFENSIVE FILTER: Remove any invalid entries before rendering
+// Only include photos where:
+// 1. src exists and is a non-empty string
+// 2. src has valid file extension
+// 3. All required fields are present
+const customerPhotos = allCustomerPhotos.filter((photo): photo is CustomerPhoto => {
+  // Validate src exists and is non-empty
+  if (!photo || typeof photo.src !== 'string' || photo.src.trim().length === 0) {
+    console.warn('⚠️ Carousel: Filtered invalid photo (missing or empty src)', photo);
+    return false;
+  }
+
+  // Validate has proper image extension
+  const validExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.webp', '.WEBP'];
+  const hasValidExtension = validExtensions.some(ext => photo.src.endsWith(ext));
+  if (!hasValidExtension) {
+    console.warn('⚠️ Carousel: Filtered photo with invalid extension', photo.src);
+    return false;
+  }
+
+  // Validate all required fields are present
+  if (!photo.alt || !photo.city || !photo.linkTo) {
+    console.warn('⚠️ Carousel: Filtered photo with missing required fields', photo);
+    return false;
+  }
+
+  return true;
+});
+
 export default function HappyCustomers() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -159,15 +188,23 @@ export default function HappyCustomers() {
     }
   }, []);
 
-  // Diagnostic: Log first 3 image URLs on mount
+  // Diagnostic: Log full carousel array on mount
   useEffect(() => {
-    console.log('=== Happy Customers Image URLs ===');
-    customerPhotos.slice(0, 3).forEach((photo, index) => {
-      console.log(`Image ${index + 1}: ${photo.src}`);
-      console.log(`  Alt: ${photo.alt}`);
-      console.log(`  City: ${photo.city}`);
+    console.log('=== Happy Customers Carousel Diagnostic ===');
+    console.log(`Total photos after filtering: ${customerPhotos.length}/${allCustomerPhotos.length}`);
+    console.log('\nAll carousel images:');
+    customerPhotos.forEach((photo, index) => {
+      console.log(`  [${index + 1}] ${photo.src}`);
     });
-    console.log('==================================');
+    console.log('\nFirst 3 images (detailed):');
+    customerPhotos.slice(0, 3).forEach((photo, index) => {
+      console.log(`  Image ${index + 1}:`);
+      console.log(`    src: ${photo.src}`);
+      console.log(`    alt: ${photo.alt}`);
+      console.log(`    city: ${photo.city}`);
+      console.log(`    linkTo: ${photo.linkTo}`);
+    });
+    console.log('==========================================');
   }, []);
 
   useEffect(() => {
@@ -254,9 +291,11 @@ export default function HappyCustomers() {
             className="flex overflow-x-auto gap-4 scrollbar-hide scroll-smooth px-2"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {customerPhotos.map((photo, index) => (
+            {customerPhotos
+              .filter(photo => photo && photo.src && photo.src.trim().length > 0)
+              .map((photo, index) => (
               <a
-                key={index}
+                key={`${photo.src}-${index}`}
                 href={photo.linkTo}
                 className="flex-shrink-0 w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[280px] aspect-square rounded-2xl overflow-hidden group relative border border-gray-700/40 shadow-lg hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
@@ -269,6 +308,10 @@ export default function HappyCustomers() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  onError={(e) => {
+                    console.error('❌ Carousel: Failed to load image', photo.src);
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
 
                 {/* Hover Overlay with City Badge */}
