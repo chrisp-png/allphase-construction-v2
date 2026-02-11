@@ -1,18 +1,6 @@
 import { MapPin, Phone, Building2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function LocationMap() {
-  const nearbyCities = [
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl' },
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl' },
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl' },
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl' },
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl' },
-  ];
-
   return (
     <section className="py-20 px-6 bg-[#09090b]">
       <div className="max-w-7xl mx-auto">
@@ -66,7 +54,8 @@ export default function LocationMap() {
           </div>
         </div>
 
-        <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden mb-12">
+        {/* Business Address and Contact Information */}
+        <div className="bg-[#27272a] border border-zinc-800 rounded-2xl overflow-hidden">
           <div className="p-6 border-b border-zinc-800">
             <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-3">
               <Building2 className="w-7 h-7 text-red-500" />
@@ -85,21 +74,7 @@ export default function LocationMap() {
             </div>
           </div>
 
-          <div className="relative w-full overflow-hidden" style={{ paddingBottom: '56.25%', minHeight: '300px' }}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3071856042744!2d-80.12733492403144!3d26.310785577038298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91d982b569be1%3A0xc298661959b65cbf!2sAll%20Phase%20Construction%20USA%2C%20LLC!5e0!3m2!1sen!2sus!4v1738436000000!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              className="absolute top-0 left-0 w-full h-full border-0"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="All Phase Construction USA, LLC - 590 Goolsby Blvd, Deerfield Beach, FL 33442"
-            />
-          </div>
-
-          <div className="p-8 bg-[#1a1a1d] border-t border-zinc-800">
+          <div className="p-8 bg-[#1a1a1d]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
@@ -126,39 +101,6 @@ export default function LocationMap() {
                 <p className="text-zinc-400 text-sm">Serving Broward & Palm Beach Counties</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-[#27272a] border border-zinc-800 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-white mb-6 text-center">
-            Nearby Service Areas
-          </h3>
-          <p className="text-zinc-400 text-center mb-8">
-            We provide professional roofing services to these nearby communities
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {nearbyCities.map((city) => (
-              <Link
-                key={city.path}
-                to={city.path}
-                className="text-center py-3 px-4 bg-[#1a1a1d] border border-zinc-700 rounded-lg hover:border-red-600 hover:bg-[#0f0f11] transition-all duration-300 group"
-              >
-                <span className="text-zinc-300 group-hover:text-red-500 transition-colors font-medium">
-                  {city.name}
-                </span>
-              </Link>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              to="/locations"
-              className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors font-semibold"
-            >
-              View All Service Areas
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
           </div>
         </div>
       </div>
