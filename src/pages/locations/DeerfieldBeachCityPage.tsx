@@ -374,137 +374,21 @@ export default function DeerfieldBeachCityPage() {
             </div>
           </div>
 
-          {/* Service Areas Grid */}
+          {/* Service Areas Section */}
           <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
-              Service Coverage Area
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              Service Areas from Our Deerfield Beach Headquarters
             </h2>
-            <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto">
-              The Roofing Specialist proudly serves Deerfield Beach and surrounding communities across Palm Beach and Broward Counties with professional roofing services.
+            <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto text-lg">
+              Based at 590 Goolsby Blvd in Deerfield Beach, our roofing team serves homeowners and property managers throughout Broward and Palm Beach Counties. View our complete service area coverage to see all cities we serve.
             </p>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-              {/* Palm Beach County Cities */}
-              <Link
-                to="/locations/boca-raton"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Boca Raton</h3>
-                <p className="text-gray-400 text-sm">Palm Beach County</p>
-              </Link>
-
-              <Link
-                to="/locations/boynton-beach"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Boynton Beach</h3>
-                <p className="text-gray-400 text-sm">Palm Beach County</p>
-              </Link>
-
-              <Link
-                to="/locations/delray-beach"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Delray Beach</h3>
-                <p className="text-gray-400 text-sm">Palm Beach County</p>
-              </Link>
-
-              <Link
-                to="/locations/west-palm-beach"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">West Palm Beach</h3>
-                <p className="text-gray-400 text-sm">Palm Beach County</p>
-              </Link>
-
-              {/* Broward County Cities */}
-              <Link
-                to="/locations/coconut-creek"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Coconut Creek</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/coral-springs"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Coral Springs</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/fort-lauderdale"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Fort Lauderdale</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/parkland"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Parkland</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/pompano-beach"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Pompano Beach</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/plantation"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Plantation</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/weston"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Weston</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-
-              <Link
-                to="/locations/davie"
-                className="bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-red-600 rounded-lg p-4 text-center transition-all duration-300 group"
-              >
-                <MapPin className="w-5 h-5 text-red-600 mx-auto mb-2" />
-                <h3 className="text-white font-semibold group-hover:text-red-600 transition-colors">Davie</h3>
-                <p className="text-gray-400 text-sm">Broward County</p>
-              </Link>
-            </div>
-
             <div className="text-center">
-              <p className="text-gray-400 mb-4">
-                Serving 50+ cities across Palm Beach and Broward Counties
-              </p>
               <Link
                 to="/locations"
-                className="inline-flex items-center gap-2 text-red-600 hover:text-red-500 font-semibold transition-colors"
+                className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors shadow-lg"
               >
                 View All Service Areas
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
