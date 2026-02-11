@@ -153,18 +153,20 @@ const customerPhotos = allCustomerPhotos
     const city = photo.city || 'South Florida';
 
     // HARD OVERRIDES FOR NON-CITY LOCATION LABELS
-    // Override routing for county/region labels to valid city pages
+    // Override routing for county/region labels to valid pages
     let linkTo = photo.linkTo;
 
-    if (city === 'Broward County') {
-      linkTo = '/locations/pompano-beach';
-    } else if (city === 'South Florida') {
+    if (city === 'South Florida') {
+      // South Florida → Boca Raton city page
       linkTo = '/locations/boca-raton';
+    } else if (city === 'Broward County') {
+      // Broward County → Keep county page
+      linkTo = '/locations/broward-county';
     } else if (city === 'Palm Beach County') {
-      // Palm Beach County → fallback to service areas hub
-      linkTo = '/locations';
+      // Palm Beach County → Keep county page
+      linkTo = '/locations/palm-beach-county';
     } else if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
-      // Global fallback for missing or invalid linkTo
+      // Global fallback for missing or invalid linkTo → Service Areas Hub
       console.warn('⚠️ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
       linkTo = '/locations';
     }
@@ -333,9 +335,14 @@ export default function HappyCustomers() {
               <a
                 key={`${photo.src}-${index}`}
                 href={photo.linkTo}
-                className="flex-shrink-0 w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[280px] aspect-square rounded-2xl overflow-hidden group relative border border-gray-700/40 shadow-lg hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                className="flex-shrink-0 w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[280px] rounded-2xl overflow-hidden group relative border border-gray-700/40 shadow-lg hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                style={{
+                  aspectRatio: '1/1',
+                  minHeight: '280px',
+                  height: '280px'
+                }}
               >
-                {/* Image */}
+                {/* Image - Always render for desktop */}
                 <img
                   src={photo.src}
                   alt={photo.alt}
@@ -344,6 +351,7 @@ export default function HappyCustomers() {
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  style={{ display: 'block' }}
                   onError={(e) => {
                     console.error('❌ Carousel: Failed to load image', photo.src);
                     e.currentTarget.style.display = 'none';
