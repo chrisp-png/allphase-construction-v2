@@ -167,13 +167,20 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <Link to="/" className="flex flex-col">
-              <span className="text-white font-bold text-xl sm:text-2xl leading-tight">
-                All Phase Construction USA
-              </span>
-              <span className="text-red-600 font-semibold text-xs sm:text-sm">
-                Dual Licensed Roofing Contractor
-              </span>
+            <Link to="/" className="flex items-center gap-3" aria-label="All Phase Construction USA - Home">
+              <img
+                src="/LOGO_black_background.png"
+                alt="All Phase Construction USA"
+                className="h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain"
+                width="160"
+                height="40"
+              />
+              <div className="flex flex-col">
+                <span className="sr-only">All Phase Construction USA</span>
+                <span className="text-red-600 font-semibold text-xs sm:text-sm">
+                  Dual Licensed Roofing Contractor
+                </span>
+              </div>
             </Link>
           </div>
 
