@@ -115,6 +115,27 @@ const allCustomerPhotos: CustomerPhoto[] = [
     city: 'South Florida',
     citySlug: 'service-areas',
     linkTo: '/service-areas'
+  },
+  {
+    src: '/social-proof/graham-with-happy-customer-all-phase-usa.jpg',
+    alt: 'All Phase Construction representative Graham with happy customer holding new roof sign in South Florida',
+    city: 'South Florida',
+    citySlug: 'service-areas',
+    linkTo: '/service-areas'
+  },
+  {
+    src: '/social-proof/happy-new-roof-customer-delray-beach-all-phase-usa.jpg',
+    alt: 'Happy roofing customers in Delray Beach with All Phase Construction representative',
+    city: 'Delray Beach',
+    citySlug: 'delray-beach',
+    linkTo: '/locations/delray-beach'
+  },
+  {
+    src: '/social-proof/new-tile-roof-customer-all-phase-usa.jpg',
+    alt: 'Satisfied tile roof customer in South Florida with All Phase Construction representative',
+    city: 'South Florida',
+    citySlug: 'service-areas',
+    linkTo: '/service-areas'
   }
 ];
 
