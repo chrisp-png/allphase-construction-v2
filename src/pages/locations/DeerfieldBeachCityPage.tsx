@@ -612,19 +612,21 @@ export default function DeerfieldBeachCityPage() {
             </div>
           </div>
 
-          {/* Deerfield Beach Roofing Systems Installed */}
+          {/* Hurricane-Resistant Roofing Systems */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-              Roofing Systems Installed in Deerfield Beach
+              Hurricane-Resistant Roofing Systems in Deerfield Beach
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Architectural Shingle Roofs
-                </h3>
+                <Link to="/shingle-roofing" className="block group">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
+                    Architectural Shingle Roofs
+                  </h3>
+                </Link>
                 <p className="text-gray-400 mb-4">
-                  TAMKO and GAF architectural shingles installed to HVHZ standards with enhanced wind resistance ratings. Ideal for residential properties requiring cost-effective, durable protection.
+                  HVHZ-compliant TAMKO and GAF architectural shingles engineered for extreme wind resistance up to 130+ mph. Installed to Broward County inspection standards, these systems qualify for insurance wind mitigation credits and provide proven coastal durability.
                 </p>
                 <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 font-semibold">
                   Learn More →
@@ -632,11 +634,13 @@ export default function DeerfieldBeachCityPage() {
               </div>
 
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Concrete and Clay Tile Roofs
-                </h3>
+                <Link to="/tile-roofing" className="block group">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
+                    Concrete and Clay Tile Roofs
+                  </h3>
+                </Link>
                 <p className="text-gray-400 mb-4">
-                  Flat, barrel, and S-tile profiles installed with mortar or foam adhesive systems. Popular for Deerfield Beach's Mediterranean-style homes and waterfront properties.
+                  Hurricane-rated tile systems installed with foam adhesive or mortar meeting HVHZ wind uplift requirements. Exceeds Broward County's stringent installation standards for coastal properties and qualifies for maximum insurance wind mitigation discounts.
                 </p>
                 <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 font-semibold">
                   Learn More →
@@ -644,17 +648,27 @@ export default function DeerfieldBeachCityPage() {
               </div>
 
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Mechanically Seamed Metal Roofs
-                </h3>
+                <Link to="/metal-roofing" className="block group">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
+                    Standing Seam Metal Roofs
+                  </h3>
+                </Link>
                 <p className="text-gray-400 mb-4">
-                  Standing seam metal roofing systems with concealed fasteners. Offers superior wind resistance, long-term durability, and modern aesthetics for both residential and commercial applications.
+                  Mechanically seamed metal roofing systems with concealed fasteners rated for extreme wind resistance and salt air exposure. HVHZ-compliant installations meet Broward County's highest structural standards for coastal durability and insurance eligibility.
                 </p>
                 <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 font-semibold">
                   Learn More →
                 </Link>
               </div>
             </div>
+
+            <p className="text-center text-gray-400">
+              Not sure which roofing system is right for your property?{' '}
+              <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 font-semibold">
+                Schedule a professional roof inspection
+              </Link>
+              .
+            </p>
           </div>
 
           {/* Why Choose Us Section */}
