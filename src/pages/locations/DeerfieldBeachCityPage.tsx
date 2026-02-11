@@ -514,31 +514,31 @@ export default function DeerfieldBeachCityPage() {
             </div>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Every roofing project requires proper permitting and inspection by the local building department. The Roofing Specialist handles all permit applications, coordinates required inspections, and ensures full compliance with Deerfield Beach building codes and Florida Building Code requirements.
+                All roofing projects in Deerfield Beach require proper permitting and inspection under Florida Building Code and High Velocity Hurricane Zone (HVHZ) standards. Our team manages the full permit process, coordinates required inspections, and ensures every roofing system meets or exceeds Broward County requirements.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Deerfield Beach is located in the High Velocity Hurricane Zone (HVHZ), which mandates enhanced structural requirements for all roofing systems. The Roofing Specialist's installations meet these stricter standards, including:
+                HVHZ roofing in Deerfield Beach includes strict standards for:
               </p>
               <ul className="text-gray-400 space-y-2 mb-4">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                  <span>Enhanced fastening patterns for tile, metal, and shingle roofs</span>
+                  <span>Roof-to-deck attachment and fastener spacing</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                  <span>Impact-rated underlayment systems</span>
+                  <span>Secondary water resistance (SWR) systems</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                  <span>Roof-to-wall connections with hurricane straps</span>
+                  <span>Corrosion-resistant materials</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                  <span>NOA (Notice of Acceptance) approved products and installation methods</span>
+                  <span>Approved underlayment and installation methods</span>
                 </li>
               </ul>
-              <p className="text-gray-400 text-lg leading-relaxed">
-                All work is inspected by Deerfield Beach building officials, and the Roofing Specialist provides complete permit close-out documentation showing full compliance with local and state building codes.
+              <p className="text-gray-400 text-lg leading-relaxed mb-4">
+                Every installation is documented and completed to pass inspection without delays. We provide clear photo documentation and compliance records when required for insurance or property transactions.
               </p>
             </div>
           </div>
