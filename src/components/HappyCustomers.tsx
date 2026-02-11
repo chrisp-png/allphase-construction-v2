@@ -16,155 +16,156 @@ const allCustomerPhotos: CustomerPhoto[] = [
     alt: 'Happy roofing customer in Broward County, FL with All Phase Construction USA',
     city: 'Broward County',
     citySlug: 'broward-county',
-    linkTo: '/service-areas'
+    linkTo: '/locations/fort-lauderdale'
   },
   {
     src: '/social-proof/all-phase-customer-fort-lauderdale-roofing.JPEG',
     alt: 'Happy roofing customer in Fort Lauderdale, FL with All Phase Construction USA',
     city: 'Fort Lauderdale',
     citySlug: 'fort-lauderdale',
-    linkTo: '/locations'
+    linkTo: '/locations/fort-lauderdale'
   },
   {
     src: '/social-proof/all-phase-customer-luxury-home-boca-raton.JPG',
     alt: 'Happy roofing customer in Boca Raton, FL with All Phase Construction USA',
     city: 'Boca Raton',
     citySlug: 'boca-raton',
-    linkTo: '/locations'
+    linkTo: '/locations/boca-raton'
   },
   {
     src: '/social-proof/all-phase-customer-new-roof-pompano-beach.JPEG',
     alt: 'Happy roofing customer in Pompano Beach, FL with All Phase Construction USA',
     city: 'Pompano Beach',
     citySlug: 'pompano-beach',
-    linkTo: '/locations'
+    linkTo: '/locations/pompano-beach'
   },
   {
     src: '/social-proof/all-phase-customer-roof-installation-delray-beach.JPEG',
     alt: 'Happy roofing customer in Delray Beach, FL with All Phase Construction USA',
     city: 'Delray Beach',
     citySlug: 'delray-beach',
-    linkTo: '/locations'
+    linkTo: '/locations/delray-beach'
   },
   {
     src: '/social-proof/all-phase-customer-shingle-roof-deerfield-beach.JPEG',
     alt: 'Happy roofing customer in Deerfield Beach, FL with All Phase Construction USA',
     city: 'Deerfield Beach',
     citySlug: 'deerfield-beach',
-    linkTo: '/locations'
+    linkTo: '/locations/deerfield-beach'
   },
   {
     src: '/social-proof/all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG',
     alt: 'Happy roofing customer in Loxahatchee, FL with All Phase Construction USA',
     city: 'Loxahatchee',
     citySlug: 'loxahatchee-groves',
-    linkTo: '/locations'
+    linkTo: '/locations/loxahatchee-groves'
   },
   {
     src: '/social-proof/all-phase-roofing-satisfied-customers-palm-beach.jpg',
     alt: 'Happy roofing customer in Palm Beach, FL with All Phase Construction USA',
     city: 'Palm Beach',
     citySlug: 'palm-beach',
-    linkTo: '/locations'
+    linkTo: '/locations/boynton-beach'
   },
   {
     src: '/social-proof/all-phase-roofing-satisified-customers-coralsprings.jpg',
     alt: 'Happy roofing customer in Coral Springs, FL with All Phase Construction USA',
     city: 'Coral Springs',
     citySlug: 'coral-springs',
-    linkTo: '/locations'
+    linkTo: '/locations/delray-beach'
   },
   {
     src: '/social-proof/all-phase-satisfied-customer-coral-springs.JPEG',
     alt: 'Roofing customer and consultant in Coral Springs, FL — All Phase Construction USA',
     city: 'Coral Springs',
     citySlug: 'coral-springs',
-    linkTo: '/locations'
+    linkTo: '/locations/coral-springs'
   },
   {
     src: '/social-proof/Karl_at_Valencia_pointe_homeowner_event.JPEG',
     alt: 'Happy roofing customer in South Florida with All Phase Construction USA',
     city: 'South Florida',
     citySlug: 'service-areas',
-    linkTo: '/service-areas'
+    linkTo: '/locations/service-areas'
   },
   {
     src: '/social-proof/all-phase-roofing-happy-homeowner-south-florida.JPEG',
     alt: 'Happy roofing customer in South Florida with All Phase Construction USA',
     city: 'South Florida',
     citySlug: 'service-areas',
-    linkTo: '/service-areas'
+    linkTo: '/locations/service-areas'
   },
   {
     src: '/social-proof/all-phase-customer-luxury-home-palm-beach-county.JPEG',
     alt: 'Happy homeowner with luxury home in Palm Beach County after roof completion',
     city: 'Palm Beach County',
     citySlug: 'palm-beach-county',
-    linkTo: '/service-areas'
+    linkTo: '/locations/service-areas'
   },
   {
     src: '/social-proof/all-phase-customer-roof-replacement-broward.JPEG',
     alt: 'Satisfied homeowner in Broward County after roof replacement by All Phase Construction USA',
     city: 'Broward County',
     citySlug: 'broward-county',
-    linkTo: '/service-areas'
+    linkTo: '/locations/service-areas'
   },
   {
     src: '/social-proof/all-phase-customer-shingle-roof-south-florida.jpg',
     alt: 'Happy homeowner in South Florida after shingle roof installation',
     city: 'South Florida',
     citySlug: 'service-areas',
-    linkTo: '/service-areas'
+    linkTo: '/locations/pompano-beach'
   },
   {
     src: '/social-proof/graham-with-happy-customer-all-phase-usa.jpg',
     alt: 'All Phase Construction representative Graham with happy customer holding new roof sign in South Florida',
     city: 'South Florida',
     citySlug: 'service-areas',
-    linkTo: '/service-areas'
+    linkTo: '/locations/service-areas'
   }
 ];
 
-// DEFENSIVE FILTER: Remove any invalid entries before rendering
-// Only include photos where:
-// 1. src exists and is a non-empty string
-// 2. src has valid file extension
-// 3. linkTo exists and is a valid path
-// 4. All required fields are present
-const customerPhotos = allCustomerPhotos.filter((photo): photo is CustomerPhoto => {
-  // Validate src exists and is non-empty
-  if (!photo || typeof photo.src !== 'string' || photo.src.trim().length === 0) {
-    console.warn('⚠️ Carousel: Filtered invalid photo (missing or empty src)', photo);
-    return false;
-  }
+// DEFENSIVE FILTER: Validate and fix entries before rendering
+// Apply fallbacks for invalid data to ensure images always render
+const customerPhotos = allCustomerPhotos
+  .filter((photo): photo is CustomerPhoto => {
+    // Only reject if src is completely missing or invalid
+    if (!photo || typeof photo.src !== 'string' || photo.src.trim().length === 0) {
+      console.warn('⚠️ Carousel: Rejected photo (missing or empty src)', photo);
+      return false;
+    }
 
-  // Validate has proper image extension
-  const validExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.webp', '.WEBP'];
-  const hasValidExtension = validExtensions.some(ext => photo.src.endsWith(ext));
-  if (!hasValidExtension) {
-    console.warn('⚠️ Carousel: Filtered photo with invalid extension', photo.src);
-    return false;
-  }
+    // Validate has proper image extension
+    const validExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.webp', '.WEBP'];
+    const hasValidExtension = validExtensions.some(ext => photo.src.endsWith(ext));
+    if (!hasValidExtension) {
+      console.warn('⚠️ Carousel: Rejected photo with invalid extension', photo.src);
+      return false;
+    }
 
-  // Validate linkTo exists, is non-empty, and starts with '/'
-  if (!photo.linkTo || typeof photo.linkTo !== 'string' || photo.linkTo.trim().length === 0) {
-    console.warn('⚠️ Carousel: Filtered photo with missing or empty linkTo', photo);
-    return false;
-  }
+    return true;
+  })
+  .map((photo): CustomerPhoto => {
+    // Apply fallback for missing or invalid linkTo
+    let linkTo = photo.linkTo;
+    if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
+      console.warn('⚠️ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
+      linkTo = '/locations/service-areas';
+    }
 
-  if (!photo.linkTo.startsWith('/')) {
-    console.warn('⚠️ Carousel: Filtered photo with invalid linkTo path', photo.linkTo);
-    return false;
-  }
+    // Apply fallback for missing alt text
+    const alt = photo.alt || 'Happy roofing customer with All Phase Construction USA';
 
-  // Validate all required fields are present
-  if (!photo.alt || !photo.city) {
-    console.warn('⚠️ Carousel: Filtered photo with missing required fields', photo);
-    return false;
-  }
+    // Apply fallback for missing city
+    const city = photo.city || 'South Florida';
 
-  return true;
-});
+    return {
+      ...photo,
+      linkTo,
+      alt,
+      city
+    };
+  });
 
 // Diagnostic log to track carousel health
 if (typeof window !== 'undefined') {
@@ -318,16 +319,7 @@ export default function HappyCustomers() {
             className="flex overflow-x-auto gap-4 scrollbar-hide scroll-smooth px-2"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {customerPhotos
-              .filter(photo =>
-                photo &&
-                photo.src &&
-                photo.src.trim().length > 0 &&
-                photo.linkTo &&
-                photo.linkTo.trim().length > 0 &&
-                photo.linkTo.startsWith('/')
-              )
-              .map((photo, index) => (
+            {customerPhotos.map((photo, index) => (
               <a
                 key={`${photo.src}-${index}`}
                 href={photo.linkTo}
