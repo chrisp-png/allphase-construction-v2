@@ -37,15 +37,15 @@ export default function WhyChooseUs() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="bg-neutral-900/50 backdrop-blur-sm rounded-lg p-6 border-l-4 border-red-600"
+              className="bg-neutral-900 sm:bg-neutral-900/50 backdrop-blur-sm rounded-lg p-6 sm:p-6 md:p-7 border-l-4 border-red-600"
             >
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-lg flex-shrink-0">
                   <feature.icon className="w-6 h-6 text-red-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-2 leading-tight">{feature.title}</h3>
+                  <p className="text-gray-300 sm:text-gray-400 leading-relaxed text-base">{feature.description}</p>
                 </div>
               </div>
             </div>

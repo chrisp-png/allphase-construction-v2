@@ -127,74 +127,74 @@ export default function HeroRoofing() {
       <div className="hero-content-wrapper relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ overflow: 'visible', boxSizing: 'border-box', pointerEvents: 'auto' }}>
         <div className="hero-grid grid lg:grid-cols-2 gap-8 lg:items-start" style={{ overflow: 'visible', pointerEvents: 'auto' }}>
           <div className="hero-content-left" style={{ width: '100%', maxWidth: '100%', boxSizing: 'border-box', overflow: 'visible', pointerEvents: 'auto' }}>
-            <h1 className="hero-headline text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight">
+            <h1 className="hero-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-3 leading-[1.2] sm:leading-tight">
               All Phase Construction USA | Dual-Licensed Roofing Specialist
             </h1>
 
-            <p className="text-xl sm:text-2xl text-[#C5A572] mb-4 font-semibold leading-snug">
+            <p className="text-lg sm:text-xl md:text-2xl text-[#C5A572] mb-5 sm:mb-4 font-semibold leading-[1.5] sm:leading-snug">
               Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.
             </p>
 
-            <p className="text-base sm:text-lg text-gray-300 mb-6">
+            <p className="text-base sm:text-base md:text-lg text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
               What makes All Phase Construction USA different is proof. We are BBB A+ rated; a Tamko Platinum Preferred Contractor; an IB Roof Preferred Contractor; a GAF Gold Certified Contractor; credentialed by Carlisle; and JM credentialed, along with many other leading manufacturers. We are trusted in Deerfield Beach and across Palm Beach and Broward Counties with a 4.8-star reputation and over 135 Google reviews. You are not hiring a random crew — you are hiring a system that shows up and stands behind the work.
             </p>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-red-600 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-red-600 mb-6 leading-tight">
               All Phase Construction USA
             </h2>
 
-            <p className="text-lg sm:text-xl text-gray-300 mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
               All Phase Construction USA is a licensed roofing contractor backed by dual Roofing (CCC) and General Contractor (CGC) licenses.
             </p>
 
-            <p className="text-sm text-gray-400 mb-6">
+            <p className="text-sm text-gray-300 sm:text-gray-400 mb-6 leading-relaxed">
               CCC1331464 • CGC1526236 • Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
             </p>
 
-            <div className="grid grid-cols-3 gap-4 mb-8 bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-8 bg-black/80 sm:bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
               <div className="text-center">
                 <div className="flex items-center justify-center mb-1">
                   <Award className="w-5 h-5 text-red-600 mr-1" />
-                  <p className="text-2xl font-bold text-white">22+</p>
+                  <p className="text-xl sm:text-2xl font-bold text-white">22+</p>
                 </div>
-                <p className="text-xs text-gray-400">Years Experience</p>
+                <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Years Experience</p>
               </div>
               <div className="text-center border-l border-r border-gray-700">
                 <div className="flex items-center justify-center mb-1">
                   <Users className="w-5 h-5 text-red-600 mr-1" />
-                  <p className="text-2xl font-bold text-white">2,500+</p>
+                  <p className="text-xl sm:text-2xl font-bold text-white">2,500+</p>
                 </div>
-                <p className="text-xs text-gray-400">Roofs Installed</p>
+                <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Roofs Installed</p>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-1">
                   <Star className="w-5 h-5 text-red-600 mr-1" />
-                  <p className="text-2xl font-bold text-white">Hundreds</p>
+                  <p className="text-xl sm:text-2xl font-bold text-white">Hundreds</p>
                 </div>
-                <p className="text-xs text-gray-400">of 5-Star Reviews</p>
+                <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">of 5-Star Reviews</p>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4" style={{ position: 'relative', zIndex: 20, pointerEvents: 'auto' }}>
+            <div className="flex flex-col sm:flex-row gap-4 mt-2" style={{ position: 'relative', zIndex: 20, pointerEvents: 'auto' }}>
               <button
                 onClick={(e) => {
                   e.preventDefault();
                   openModal();
                 }}
                 type="button"
-                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
+                className="px-6 sm:px-8 py-4 bg-red-600 text-white rounded-lg font-semibold text-base sm:text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
                 style={{ pointerEvents: 'auto' }}
               >
                 Schedule a Roof Assessment
               </button>
               <a
                 href="tel:+17542275605"
-                className="px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
+                className="px-6 sm:px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
                 aria-label="Call us now at 754-227-5605"
                 style={{ pointerEvents: 'auto' }}
               >
-                <Phone className="w-5 h-5" aria-hidden="true" />
-                Call Now: (754) 227-5605
+                <Phone className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
+                <span className="whitespace-nowrap">Call Now: (754) 227-5605</span>
               </a>
             </div>
           </div>

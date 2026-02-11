@@ -219,84 +219,84 @@ export default function HomePage() {
       <section className="py-12 bg-gradient-to-b from-[#0a0a0a] to-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Modern Pill-Style Service Buttons */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-16">
             <a
               href="https://allphaseconstructionfl.com/roof-inspection"
-              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
+              className="group inline-flex items-center gap-2 px-4 sm:px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              <Search className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>ROOF INSPECTIONS</span>
+              <Search className="w-4 h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
+              <span className="whitespace-nowrap">ROOF INSPECTIONS</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/roof-repair"
-              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-red-600 hover:text-white hover:border-red-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
+              className="group inline-flex items-center gap-2 px-4 sm:px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-xs sm:text-sm hover:bg-red-600 hover:text-white hover:border-red-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              <Wrench className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>ROOF REPAIR</span>
+              <Wrench className="w-4 h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
+              <span className="whitespace-nowrap">ROOF REPAIR</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/residential-roofing"
-              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
+              className="group inline-flex items-center gap-2 px-4 sm:px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              <Home className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>ROOF REPLACEMENT</span>
+              <Home className="w-4 h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
+              <span className="whitespace-nowrap">ROOF REPLACEMENT</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/commercial-roofing"
-              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
+              className="group inline-flex items-center gap-2 px-4 sm:px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              <Building2 className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>COMMERCIAL ROOFING</span>
+              <Building2 className="w-4 h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
+              <span className="whitespace-nowrap">COMMERCIAL ROOFING</span>
             </a>
             <a
               href="https://allphaseconstructionfl.com/roof-maintenance-programs"
-              className="group inline-flex items-center gap-2 px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
+              className="group inline-flex items-center gap-2 px-4 sm:px-5 py-3 bg-white text-gray-800 border border-gray-300 rounded-full font-semibold text-xs sm:text-sm hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 min-h-[44px]"
             >
-              <Shield className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>MAINTENANCE PROGRAMS</span>
+              <Shield className="w-4 h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
+              <span className="whitespace-nowrap">MAINTENANCE PROGRAMS</span>
             </a>
           </div>
 
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
-            <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-2xl p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-2xl p-6 sm:p-8 shadow-2xl">
               {/* Title */}
               <div className="flex items-center gap-3 mb-6">
                 <div className="bg-red-600 p-2 rounded-lg">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">Deerfield Beach</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">Deerfield Beach</h3>
                   <p className="text-red-500 text-sm font-semibold">Headquarters</p>
                 </div>
               </div>
 
               {/* Address */}
               <div className="mb-6 pb-6 border-b border-gray-700">
-                <p className="text-gray-300 text-base leading-relaxed">
+                <p className="text-gray-200 text-base leading-relaxed">
                   590 Goolsby Boulevard<br />
                   Deerfield Beach, FL 33442
                 </p>
-                <p className="text-gray-400 text-sm mt-3">
+                <p className="text-gray-300 text-sm mt-3">
                   Serving Palm Beach + Broward County
                 </p>
               </div>
 
               {/* Trust Row */}
               <div className="mb-6 pb-6 border-b border-gray-700">
-                <div className="flex flex-wrap gap-4 text-sm">
+                <div className="flex flex-wrap gap-3 sm:gap-4 text-sm">
                   <div className="flex items-center gap-1 text-yellow-400">
                     <Star className="w-4 h-4 fill-current" />
                     <span className="text-white font-semibold">4.8</span>
-                    <span className="text-gray-400">Google Reviews</span>
+                    <span className="text-gray-300 sm:text-gray-400">Google Reviews</span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-gray-300">
+                  <div className="flex items-center gap-1.5 text-gray-200">
                     <Shield className="w-4 h-4 text-red-500" />
                     <span className="text-white font-semibold">Dual-Licensed</span>
-                    <span className="text-gray-400 text-xs">(CCC/CGC)</span>
+                    <span className="text-gray-300 sm:text-gray-400 text-xs">(CCC/CGC)</span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-gray-300">
+                  <div className="flex items-center gap-1.5 text-gray-200">
                     <Clock className="w-4 h-4 text-red-500" />
                     <span className="text-white font-semibold">Open 24/7</span>
                   </div>
@@ -348,13 +348,13 @@ export default function HomePage() {
       <section className="py-16 bg-neutral-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Headline */}
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-8 leading-tight px-2">
             Local, Expert Roofing Contractor in Deerfield Beach, FL and Surrounding Areas
           </h2>
 
           {/* Callout Box */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-8 mb-10 shadow-xl">
-            <p className="text-lg text-gray-200 leading-relaxed text-center">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-6 sm:p-8 mb-10 shadow-xl">
+            <p className="text-base sm:text-lg text-gray-100 leading-relaxed text-center">
               When it comes to finding a{' '}
               <span className="relative inline-block">
                 <span className="relative z-10">reliable roofing company near you</span>
