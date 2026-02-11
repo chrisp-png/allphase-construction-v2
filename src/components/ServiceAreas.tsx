@@ -78,8 +78,14 @@ export default function ServiceAreas() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="bg-gray-800 border border-red-600 rounded-lg p-6 inline-block">
+        {/* Subtle Divider */}
+        <div className="mt-12 flex justify-center">
+          <div className="w-28 h-px bg-white/10"></div>
+        </div>
+
+        {/* Inspection CTA Block */}
+        <div className="mt-8 text-center">
+          <div className="bg-[#0a0f1a] rounded-2xl p-8 sm:p-10 inline-block shadow-[0_8px_30px_rgb(0,0,0,0.3)]">
             <p className="text-gray-300 mb-4">
               Schedule your free roof inspection today.
             </p>
