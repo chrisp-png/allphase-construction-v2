@@ -466,17 +466,17 @@ export default function DeerfieldBeachCityPage() {
           {/* Roofing Services in Deerfield Beach */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-              Roof Repair & Roof Replacement in Deerfield Beach, FL
+              Roof Inspection, Repair & Replacement in Deerfield Beach, FL
             </h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                All Phase Construction USA provides roof repair and roof replacement services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. From storm damage repairs to full roof replacements, every system is installed to exceed South Florida building code requirements.
+                All Phase Construction USA provides <Link to="/roof-inspection" className="underline hover:text-white">roof inspections</Link>, <Link to="/roof-repair" className="underline hover:text-white">roof repair</Link>, and <Link to="/roof-replacement-process" className="underline hover:text-white">roof replacement</Link> services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. Every roofing system is evaluated for storm damage, structural integrity, and wind mitigation eligibility before recommendations are made.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                Our team specializes in hurricane-resistant roofing systems, secondary water barriers, and documentation required for wind mitigation inspections. Homeowners throughout 33441 and 33442 rely on our code-compliant installations to protect their property and improve long-term insurance eligibility.
+                We install and service <Link to="/roofing/shingle-roofing" className="underline hover:text-white">shingle roofs</Link>, <Link to="/roofing/tile-roofing" className="underline hover:text-white">tile roofs</Link>, <Link to="/roofing/metal-roofing" className="underline hover:text-white">metal roofs</Link>, and <Link to="/roofing/flat-roofing" className="underline hover:text-white">flat roofing systems</Link> throughout 33441 and 33442. Each installation is completed with hurricane-resistant fasteners, secondary water barriers, and inspection-ready documentation.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Based in Deerfield Beach, we serve residential and commercial properties throughout Broward and Palm Beach Counties with responsive service and inspection-ready roofing systems.
+                Based at our Deerfield Beach headquarters, our roofing team serves residential and commercial properties throughout Broward and Palm Beach Counties with code-compliant systems built for long-term performance.
               </p>
             </div>
           </div>
