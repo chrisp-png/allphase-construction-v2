@@ -58,6 +58,28 @@ const manualPublicCopyPlugin = () => ({
       }
     });
 
+    // Copy social-proof directory recursively
+    const socialProofSrc = path.resolve(publicDir, 'social-proof');
+    const socialProofDest = path.resolve(distDir, 'social-proof');
+    if (fs.existsSync(socialProofSrc)) {
+      if (!fs.existsSync(socialProofDest)) {
+        fs.mkdirSync(socialProofDest, { recursive: true });
+      }
+      const socialProofFiles = fs.readdirSync(socialProofSrc);
+      socialProofFiles.forEach(file => {
+        const src = path.resolve(socialProofSrc, file);
+        const dest = path.resolve(socialProofDest, file);
+        try {
+          if (fs.statSync(src).isFile()) {
+            fs.copyFileSync(src, dest);
+            console.log(`Copied social-proof/${file}`);
+          }
+        } catch (error) {
+          console.warn(`Skipped social-proof/${file}: ${error.message}`);
+        }
+      });
+    }
+
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
     // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)

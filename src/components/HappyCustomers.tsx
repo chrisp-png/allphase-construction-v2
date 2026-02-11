@@ -159,6 +159,17 @@ export default function HappyCustomers() {
     }
   }, []);
 
+  // Diagnostic: Log first 3 image URLs on mount
+  useEffect(() => {
+    console.log('=== Happy Customers Image URLs ===');
+    customerPhotos.slice(0, 3).forEach((photo, index) => {
+      console.log(`Image ${index + 1}: ${photo.src}`);
+      console.log(`  Alt: ${photo.alt}`);
+      console.log(`  City: ${photo.city}`);
+    });
+    console.log('==================================');
+  }, []);
+
   useEffect(() => {
     const autoScrollInterval = setInterval(() => {
       if (!isHovering && scrollContainerRef.current) {
