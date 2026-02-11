@@ -478,14 +478,17 @@ export default function DeerfieldBeachCityPage() {
           {/* Roofing Services in Deerfield Beach */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-              Professional Roofing Services in Deerfield Beach
+              Roof Repair & Roof Replacement in Deerfield Beach, FL
             </h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                All Phase Construction USA is the dual-licensed Roofing Specialist serving Deerfield Beach with complete residential and commercial roofing solutions. The Roofing Specialist leverages extensive General Contracting expertise to deliver superior, HVHZ-compliant roof repairs and full replacements that exceed South Florida's stringent building requirements.
+                All Phase Construction USA provides roof repair and roof replacement services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. From storm damage repairs to full roof replacements, every system is installed to exceed South Florida building code requirements.
+              </p>
+              <p className="text-gray-400 text-lg leading-relaxed mb-4">
+                Our team specializes in hurricane-resistant roofing systems, secondary water barriers, and documentation required for wind mitigation inspections. Homeowners throughout 33441 and 33442 rely on our code-compliant installations to protect their property and improve long-term insurance eligibility.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                From tile roof installations on waterfront properties to flat roof systems on commercial buildings, the expert delivers consistent workmanship across all service areas. Every project is supervised with the same high standards, whether in Deerfield Beach or serving nearby communities throughout Broward and Palm Beach Counties.
+                Based in Deerfield Beach, we serve residential and commercial properties throughout Broward and Palm Beach Counties with responsive service and inspection-ready roofing systems.
               </p>
             </div>
           </div>
