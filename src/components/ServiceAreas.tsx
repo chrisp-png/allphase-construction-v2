@@ -81,7 +81,7 @@ export default function ServiceAreas() {
         <div className="mt-12 text-center">
           <div className="bg-gray-800 border border-red-600 rounded-lg p-6 inline-block">
             <p className="text-gray-300 mb-4">
-              Don't see your city listed? We serve the entire South Florida region!
+              Schedule your free roof inspection today.
             </p>
             <a
               href="tel:+17542275605"
