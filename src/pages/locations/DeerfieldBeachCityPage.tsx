@@ -281,7 +281,7 @@ export default function DeerfieldBeachCityPage() {
           {/* Recent Deerfield Beach Roofs Photo Strip */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
-              Recent Deerfield Beach Roofs
+              Recent Deerfield Beach Roof
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {recentProjects.map((project, index) => (
