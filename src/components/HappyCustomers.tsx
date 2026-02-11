@@ -1,59 +1,99 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
-// ADD NEW CUSTOMER PHOTOS TO THIS ARRAY
-const customerPhotos = [
+interface CustomerPhoto {
+  src: string;
+  alt: string;
+  city: string;
+  citySlug: string;
+  linkTo: string;
+}
+
+// CUSTOMER PHOTOS WITH CITY-SPECIFIC ROUTING
+const customerPhotos: CustomerPhoto[] = [
   {
-    src: '/all-phase-construction-happy-customer-broward-county.jpg',
-    alt: 'Happy customer after roof installation in Broward County by All Phase Construction'
+    src: '/social-proof/all-phase-construction-happy-customer-broward-county.JPG',
+    alt: 'Happy roofing customer in Broward County, FL with All Phase Construction USA',
+    city: 'Broward County',
+    citySlug: 'broward-county',
+    linkTo: '/service-areas'
   },
   {
-    src: '/all-phase-customer-fort-lauderdale-roofing.jpeg',
-    alt: 'Satisfied homeowner with new roof in Fort Lauderdale, Florida'
+    src: '/social-proof/all-phase-customer-fort-lauderdale-roofing.JPEG',
+    alt: 'Happy roofing customer in Fort Lauderdale, FL with All Phase Construction USA',
+    city: 'Fort Lauderdale',
+    citySlug: 'fort-lauderdale',
+    linkTo: '/locations/fort-lauderdale'
   },
   {
-    src: '/all-phase-customer-luxury-home-boca-raton.jpg',
-    alt: 'All Phase Construction customer at luxury home in Boca Raton'
+    src: '/social-proof/all-phase-customer-luxury-home-boca-raton.JPG',
+    alt: 'Happy roofing customer in Boca Raton, FL with All Phase Construction USA',
+    city: 'Boca Raton',
+    citySlug: 'boca-raton',
+    linkTo: '/locations/boca-raton'
   },
   {
-    src: '/all-phase-customer-new-roof-pompano-beach.jpeg',
-    alt: 'Happy customer after new roof installation in Pompano Beach'
+    src: '/social-proof/all-phase-customer-new-roof-pompano-beach.JPEG',
+    alt: 'Happy roofing customer in Pompano Beach, FL with All Phase Construction USA',
+    city: 'Pompano Beach',
+    citySlug: 'pompano-beach',
+    linkTo: '/locations/pompano-beach'
   },
   {
-    src: '/all-phase-customer-roof-installation-delray-beach.jpeg',
-    alt: 'Satisfied customer after roof installation in Delray Beach'
+    src: '/social-proof/all-phase-customer-roof-installation-delray-beach.JPEG',
+    alt: 'Happy roofing customer in Delray Beach, FL with All Phase Construction USA',
+    city: 'Delray Beach',
+    citySlug: 'delray-beach',
+    linkTo: '/locations/delray-beach'
   },
   {
-    src: '/all-phase-customer-roof-replacement-broward.jpeg',
-    alt: 'Happy homeowner after roof replacement in Broward County'
+    src: '/social-proof/all-phase-customer-shingle-roof-deerfield-beach.JPEG',
+    alt: 'Happy roofing customer in Deerfield Beach, FL with All Phase Construction USA',
+    city: 'Deerfield Beach',
+    citySlug: 'deerfield-beach',
+    linkTo: '/locations/deerfield-beach'
   },
   {
-    src: '/all-phase-customer-shingle-roof-deerfield-beach.jpeg',
-    alt: 'Customer with new shingle roof in Deerfield Beach, Florida'
+    src: '/social-proof/all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG',
+    alt: 'Happy roofing customer in Loxahatchee, FL with All Phase Construction USA',
+    city: 'Loxahatchee',
+    citySlug: 'loxahatchee-groves',
+    linkTo: '/locations/loxahatchee-groves'
   },
   {
-    src: '/all-phase-customer-shingle-roof-south-florida.jpg',
-    alt: 'Happy customer with shingle roof in South Florida'
+    src: '/social-proof/all-phase-roofing-satisfied-customers-palm-beach.jpg',
+    alt: 'Happy roofing customer in Palm Beach, FL with All Phase Construction USA',
+    city: 'Palm Beach',
+    citySlug: 'palm-beach',
+    linkTo: '/locations/palm-beach'
   },
   {
-    src: '/all-phase-customer-standing-seam-metal-roof-loxahatchee.jpeg',
-    alt: 'Customer with new standing seam metal roof in Loxahatchee, Florida'
+    src: '/social-proof/all-phase-roofing-satisified-customers-coralsprings.jpg',
+    alt: 'Happy roofing customer in Coral Springs, FL with All Phase Construction USA',
+    city: 'Coral Springs',
+    citySlug: 'coral-springs',
+    linkTo: '/locations/coral-springs'
   },
   {
-    src: '/all-phase-roofing-happy-homeowner-south-florida.jpeg',
-    alt: 'Happy homeowner after roof replacement in South Florida'
+    src: '/social-proof/all-phase-satisfied-customer-coral-springs.JPEG',
+    alt: 'Roofing customer and consultant in Coral Springs, FL — All Phase Construction USA',
+    city: 'Coral Springs',
+    citySlug: 'coral-springs',
+    linkTo: '/locations/coral-springs'
   },
   {
-    src: '/all-phase-roofing-satisfied-customers-palm-beach.jpg',
-    alt: 'Satisfied roofing customers in Palm Beach County'
+    src: '/social-proof/Karl_at_Valencia_pointe_homeowner_event.JPEG',
+    alt: 'Happy roofing customer in South Florida with All Phase Construction USA',
+    city: 'South Florida',
+    citySlug: 'service-areas',
+    linkTo: '/service-areas'
   },
   {
-    src: '/all-phase-roofing-satisified-customers-coralsprings.jpg',
-    alt: 'Happy customer after roof installation in Coral Springs'
-  },
-  {
-    src: '/all-phase-satisfied-customer-coral-springs.jpeg',
-    alt: 'Satisfied customer with new roof in Coral Springs, Florida'
+    src: '/social-proof/all-phase-roofing-happy-homeowner-south-florida.JPEG',
+    alt: 'Happy roofing customer in South Florida with All Phase Construction USA',
+    city: 'South Florida',
+    citySlug: 'service-areas',
+    linkTo: '/service-areas'
   }
 ];
 
@@ -125,8 +165,12 @@ export default function HappyCustomers() {
       'description': 'Real homeowners. Real roofs. Real results.',
       'image': customerPhotos.map(photo => ({
         '@type': 'ImageObject',
-        'url': `https://allphase.com${photo.src}`,
-        'description': photo.alt
+        'url': `https://allphaseconstructionfl.com${photo.src}`,
+        'description': photo.alt,
+        'contentLocation': {
+          '@type': 'Place',
+          'name': photo.city
+        }
       }))
     });
     document.head.appendChild(script);
@@ -179,10 +223,12 @@ export default function HappyCustomers() {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {customerPhotos.map((photo, index) => (
-              <div
+              <a
                 key={index}
-                className="flex-shrink-0 w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[280px] aspect-square rounded-lg overflow-hidden group"
+                href={photo.linkTo}
+                className="flex-shrink-0 w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-[280px] aspect-square rounded-2xl overflow-hidden group relative border border-gray-700/40 shadow-lg hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
+                {/* Image */}
                 <img
                   src={photo.src}
                   alt={photo.alt}
@@ -192,7 +238,27 @@ export default function HappyCustomers() {
                   decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-              </div>
+
+                {/* Hover Overlay with City Badge */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                    <span className="text-white font-semibold text-sm drop-shadow-lg">
+                      {photo.city}
+                    </span>
+                    <div className="bg-red-600 text-white p-1.5 rounded-full">
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Top-right "View" badge - Always visible on hover */}
+                <div className="absolute top-3 right-3 bg-red-600 text-white px-2.5 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+                  View
+                </div>
+
+                {/* Subtle red glow on hover */}
+                <div className="absolute inset-0 rounded-2xl ring-2 ring-red-600/0 group-hover:ring-red-600/40 transition-all duration-300 pointer-events-none" />
+              </a>
             ))}
           </div>
         </div>
