@@ -169,7 +169,7 @@ export default function Header() {
           <div className="flex items-center lg:min-w-[280px]">
             <Link to="/" className="flex items-center gap-3" aria-label="All Phase Construction USA - Home">
               <img
-                src="/LOGO_black_background.png"
+                src="/Transparent_logo_on_black.png"
                 alt="All Phase Construction USA"
                 className="h-11 sm:h-[52px] md:h-[60px] lg:h-[72px] w-auto object-contain"
                 width="160"
