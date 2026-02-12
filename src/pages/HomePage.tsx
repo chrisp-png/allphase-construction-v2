@@ -775,6 +775,23 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Commercial Roofing Solutions Section */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Commercial Roofing Solutions for South Florida Businesses
+            </h2>
+
+            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+              <p>
+                For South <span className="text-blue-400 font-medium">Florida businesses</span>, a dependable <span className="text-blue-400 font-medium">roofing system</span> is more than just a necessity—it's a <span className="text-orange-400 font-medium">critical investment</span> in the <span className="text-orange-400 font-medium">safety and success</span> of your operations. Our company understands that every <span className="text-blue-400 font-medium">commercial building</span> has <span className="text-blue-400 font-medium">unique requirements</span>, from the <span className="text-blue-400 font-medium">type of materials</span> used to the level of <span className="text-orange-400 font-medium">energy efficiency</span> needed to keep costs down and performance high. That's why we offer a full suite of <span className="text-orange-400 font-medium">commercial roofing</span> solutions, <span className="text-blue-400 font-medium">including</span> expert installation, timely repairs, and <span className="text-blue-400 font-medium">complete roof replacements</span>, all <span className="text-orange-400 font-medium">tailored</span> to meet the <span className="text-blue-400 font-medium">specific needs</span> of your business.
+              </p>
+
+              <p>
+                Our team of <span className="text-blue-400 font-medium">experienced contractors</span> works closely with <span className="text-blue-400 font-medium">business owners</span> to design and install <span className="text-orange-400 font-medium">roofing systems</span> that <span className="text-blue-400 font-medium">not only protect</span> your building but also <span className="text-orange-400 font-medium">support</span> your long-term goals. We use only <span className="text-orange-400 font-medium">premium, durable materials</span> to <span className="text-blue-400 font-medium">ensure</span> your new roof stands up to <span className="text-blue-400 font-medium">South Florida's challenging conditions</span>, and we're <span className="text-blue-400 font-medium">committed</span> to delivering results that <span className="text-blue-400 font-medium">meet or exceed</span> all relevant <span className="text-blue-400 font-medium">building codes</span>. Whether you need a <span className="text-blue-400 font-medium">minor repair</span> or a <span className="text-orange-400 font-medium">full-scale installation</span>, you can count on us for <span className="text-orange-400 font-medium">reliable support</span>, clear communication, and a <span className="text-blue-400 font-medium">commitment to quality</span> that keeps your business covered—today and for decades to come.
+              </p>
+            </div>
+          </div>
+
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
