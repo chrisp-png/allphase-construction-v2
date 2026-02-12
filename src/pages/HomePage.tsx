@@ -524,6 +524,129 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Our Roofing Services Section */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
+              Our Roofing Services in South Florida
+            </h2>
+
+            <div className="space-y-4 text-gray-300 leading-relaxed mb-10">
+              <p>
+                From full roof replacements to emergency leak repairs, our team handles every phase of your roofing project—residential and commercial. You can find a list of our roofing services and products, including custom-fabricated accessories that enhance installation, waterproofing, and aesthetics. We pay close attention to details, ensuring precise fitting and tailored solutions for every client.
+              </p>
+
+              <p>
+                Our service workflow includes helping you order the right materials and submit any required documentation or permits. We have recently received a significant increase in inquiries about metal roof installations, reflecting current trends in the industry. Our ongoing research keeps us up-to-date with industry best practices and safety standards. Visit our website to learn more about our offerings and how we can help with your roofing needs.
+              </p>
+            </div>
+
+            {/* Services Grid */}
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Roof Replacement */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Roof Replacement
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Whether your roof is aging out or storm-damaged beyond repair, we manage complete tear-off and replacement to current Florida Building Code standards. In the proper order of the roof replacement process, contractors should perform a complete tear-off of the old roof to inspect for rotting decking before installing new materials. It is also essential to ask your roofing contractor for a detailed written estimate that includes itemized costs for labor, materials, permits, and disposal.
+                </p>
+              </div>
+
+              {/* Roof Repair */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Roof Repair
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Leaks, missing shingles, cracked tiles, damaged flashing—we diagnose the issue and fix it right the first time so small problems don't become big ones.
+                </p>
+              </div>
+
+              {/* Storm Damage Restoration */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Storm Damage Restoration
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-3">
+                  After a hurricane or severe weather event, we provide full damage assessments, insurance documentation, and restoration—from tarping to final inspection.
+                </p>
+                <p className="text-sm text-gray-400 leading-relaxed italic">
+                  It is important to note that failure to pull permits and skipping inspections are common legal issues faced by a roofing contractor. In such cases, contractors can face civil penalties and be required to pay restitution for failing to meet contractual obligations. For example, in the case of a well known roofing company, they faced significant legal consequences for non-compliance with permitting and inspection requirements.
+                </p>
+              </div>
+
+              {/* Roof Inspections & Maintenance */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Roof Inspections & Maintenance
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Routine inspections catch problems early. To ensure you choose the right roofing contractor for inspections and maintenance, find and review at least three detailed, written bids to compare services and pricing. Requesting references from past clients can also help verify the contractor's professionalism and quality of work. Our preventative maintenance programs extend your roof's lifespan and protect your warranty.
+                </p>
+              </div>
+
+              {/* Shingle Roofing */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Shingle Roofing
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We install premium shingle systems from Owens Corning, GAF, TAMKO, and CertainTeed—engineered for wind resistance and long-term durability.
+                </p>
+              </div>
+
+              {/* Tile Roofing */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Tile Roofing
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Concrete and clay tile installations certified by Eagle, Westlake, and Brava. Tile roofing delivers superior wind and impact performance for South Florida homes.
+                </p>
+              </div>
+
+              {/* Metal Roofing */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Metal Roofing
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Certified by Englert and backed by Metal Alliance, our metal roof systems offer exceptional longevity, energy efficiency, and wind resistance. We have recently received a significant increase in inquiries from homeowners interested in metal roof installations, reflecting the growing demand for this durable and efficient roofing option.
+                </p>
+              </div>
+
+              {/* Flat Roofing Systems */}
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Flat Roofing Systems
+                </h3>
+                <p className="text-gray-400 text-sm mb-2">(TPO, EPDM, PVC, Modified Cap Sheet)</p>
+                <p className="text-gray-300 leading-relaxed">
+                  Certified installers for IB Roof Systems, Soprema, Fibertite, Mule-Hide, and Conklin. Ideal for commercial properties and modern residential designs.
+                </p>
+              </div>
+
+              {/* Additional Services */}
+              <div className="md:col-span-2 bg-gradient-to-br from-red-900/20 to-gray-900/80 border border-red-700/30 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                  Additional Services
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We also provide solar-ready roofing integration, waterproofing, gutter systems, wind mitigation documentation, and full permit coordination.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
