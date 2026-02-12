@@ -908,6 +908,27 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Storm Chasers vs. Established Roofers Section */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Storm Chasers vs. Established Roofers — How to Tell the Difference in South Florida
+            </h2>
+
+            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+              <p>
+                After every major storm, South Florida sees an influx of out-of-state roofing companies. They knock on doors, offer fast repairs, and pressure homeowners to sign over insurance claims. They're called <span className="text-red-400 font-medium">storm chasers</span>—and they're a serious problem.
+              </p>
+
+              <p>
+                These companies often lack proper Florida licensing, use substandard materials, skip permits, and disappear before warranty issues surface. When something goes wrong, there's no one to call.
+              </p>
+
+              <p>
+                <span className="text-orange-400 font-semibold">All Phase Construction USA</span> has been rooted in Deerfield Beach since 2005. We're <span className="text-blue-400 font-medium">dual-licensed in Florida</span>, backed by <span className="text-blue-400 font-medium">manufacturer certifications</span>, and accountable to our community. We don't chase storms—<span className="text-orange-400 font-medium">we protect homes from them</span>.
+              </p>
+            </div>
+          </div>
+
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
