@@ -572,6 +572,127 @@ export default function DeerfieldBeachCityPage() {
             </div>
           </div>
 
+          {/* Why Hiring a Dual-Licensed Roofing Contractor Matters */}
+          <div className="mb-16 bg-gray-800/30 rounded-xl p-8 border border-gray-700">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              Why Hiring a Dual-Licensed Roofing Contractor Matters in Deerfield Beach
+            </h2>
+
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-gray-600">
+                    <th className="text-left py-4 px-4 text-white font-bold text-lg bg-gray-800/50">
+                      Scope of Work
+                    </th>
+                    <th className="text-center py-4 px-4 text-white font-bold text-lg bg-gray-800/50">
+                      Standard Roofing Contractor
+                    </th>
+                    <th className="text-center py-4 px-4 text-white font-bold text-lg bg-gray-800/50">
+                      Dual-Licensed Roofing Contractor
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-700">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Roof Replacement
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-700 bg-gray-800/20">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Structural Permit Work
+                    </td>
+                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                      Requires separate contractor
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-700">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Hurricane Strap Upgrades
+                    </td>
+                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                      Requires separate contractor
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-700 bg-gray-800/20">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Roof-to-Wall Reinforcement
+                    </td>
+                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                      Requires separate contractor
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-700">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Flashing Cut-Out & Stucco Repair
+                    </td>
+                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                      Requires separate contractor
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-700 bg-gray-800/20">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Structural Load Adjustments
+                    </td>
+                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                      Requires separate contractor
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-700">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Wind Mitigation Documentation
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-800/20">
+                    <td className="py-4 px-4 text-gray-300 font-medium">
+                      Insurance Upgrade Coordination
+                    </td>
+                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                      Limited scope
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <CheckCircle className="w-6 h-6 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="bg-gray-900/50 rounded-lg p-6 border border-gray-600">
+              <p className="text-gray-300 text-lg leading-relaxed">
+                When roofing upgrades involve structural reinforcement or insurance-driven improvements, working with a dual-licensed roofing contractor reduces delays, eliminates trade coordination issues, and ensures full code compliance under one responsible party.
+              </p>
+            </div>
+          </div>
+
           {/* Insurance-Defensible Roofing Documentation */}
           <div className="mb-16 bg-gray-800/30 rounded-xl p-8 border border-gray-700">
             <div className="flex items-start gap-4 mb-6">
