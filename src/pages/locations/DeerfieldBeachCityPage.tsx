@@ -65,7 +65,7 @@ export default function DeerfieldBeachCityPage() {
         <title>Roofer in Deerfield Beach, FL | Roof Repair & Replacement | All Phase Construction USA</title>
         <meta
           name="description"
-          content="Your expert in HVHZ-compliant roofing for Deerfield Beach. As a dual-licensed Roofing Specialist and General Contractor, All Phase Construction USA specializes exclusively in residential and commercial roofing—not general construction. Call (754) 227-5605."
+          content="Need a roofer in Deerfield Beach, FL 33441 or 33442? We specialize in roof repair, roof replacement, and inspection-first diagnostics for HVHZ properties. Dual-licensed (Roofing + GC) for roofing-related structural/insurance upgrades. Request your roof inspection — we respond within 45 minutes during business hours."
         />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
       </Helmet>
