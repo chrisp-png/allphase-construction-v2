@@ -222,28 +222,6 @@ export default function HeroRoofing() {
               <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/30 to-transparent"></div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-6" style={{ position: 'relative', zIndex: 20, pointerEvents: 'auto' }}>
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  openModal();
-                }}
-                type="button"
-                className="px-6 sm:px-8 py-4 bg-red-600 text-white rounded-lg font-semibold text-base sm:text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
-                style={{ pointerEvents: 'auto' }}
-              >
-                Schedule a Roof Assessment
-              </button>
-              <a
-                href="tel:+17542275605"
-                className="px-6 sm:px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
-                aria-label="Call us now at 754-227-5605"
-                style={{ pointerEvents: 'auto' }}
-              >
-                <Phone className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
-                <span className="whitespace-nowrap">Call Now: (754) 227-5605</span>
-              </a>
-            </div>
           </div>
 
           <div id="request-assessment" className="hero-content-right bg-white rounded-lg shadow-2xl p-6 sm:p-8" style={{ overflow: 'visible', position: 'relative', zIndex: 20, pointerEvents: 'auto', scrollMarginTop: 'calc(var(--header-height) + env(safe-area-inset-top, 0px) + 16px)' }}>
