@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock } from 'lucide-react';
+import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Award } from 'lucide-react';
 import HeroRoofing from '../components/HeroRoofing';
 import HowItWorks from '../components/HowItWorks';
 import TrustBadges from '../components/TrustBadges';
