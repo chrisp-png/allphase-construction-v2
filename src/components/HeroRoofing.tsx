@@ -148,52 +148,80 @@ export default function HeroRoofing() {
               CCC1331464 • CGC1526236 • Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
             </p>
 
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8 border border-gray-200">
-              <div className="grid grid-cols-2 sm:grid-cols-5 divide-x divide-y sm:divide-y-0 divide-gray-200">
+            <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
+              {/* Gradient background overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-black/90 to-gray-900/90 backdrop-blur-md"></div>
+
+              {/* Subtle top border glow */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
+
+              <div className="relative grid grid-cols-2 sm:grid-cols-5 divide-x divide-y sm:divide-y-0 divide-red-900/30">
                 <a
                   href={EXTERNAL_LINKS.GOOGLE_REVIEWS}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 sm:p-4 text-center hover:bg-gray-50 transition-colors duration-200 group"
+                  className="p-4 sm:p-5 text-center relative group overflow-hidden transition-all duration-300 hover:bg-red-950/30"
                 >
-                  <div className="flex items-center justify-center mb-1">
-                    <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 fill-yellow-500 mr-1" />
-                    <p className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">4.8+</p>
+                  {/* Hover effect background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                  <div className="relative">
+                    <div className="flex items-center justify-center mb-1.5">
+                      <Star className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400 fill-yellow-400 mr-1.5 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                      <p className="text-xl sm:text-2xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">4.8+</p>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide uppercase">Stars</p>
                   </div>
-                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Stars</p>
                 </a>
+
                 <a
                   href="tel:+17542275605"
-                  className="p-3 sm:p-4 text-center hover:bg-gray-50 transition-colors duration-200 group"
+                  className="p-4 sm:p-5 text-center relative group overflow-hidden transition-all duration-300 hover:bg-red-950/30"
                 >
-                  <div className="flex items-center justify-center mb-1">
-                    <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
-                    <p className="text-sm sm:text-base font-bold text-gray-900 group-hover:text-red-600 transition-colors">(754)</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                  <div className="relative">
+                    <div className="flex items-center justify-center mb-1.5">
+                      <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                      <p className="text-base sm:text-lg font-bold text-white group-hover:text-red-400 transition-colors duration-300">(754)</p>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">227-5605</p>
                   </div>
-                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">227-5605</p>
                 </a>
-                <div className="p-3 sm:p-4 text-center">
-                  <div className="flex items-center justify-center mb-1">
-                    <Award className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
-                    <p className="text-sm sm:text-base font-bold text-gray-900">Tamko Pro</p>
+
+                <div className="p-4 sm:p-5 text-center relative group overflow-hidden">
+                  <div className="relative">
+                    <div className="flex items-center justify-center mb-1.5">
+                      <Award className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg" />
+                      <p className="text-base sm:text-lg font-bold text-white">Tamko</p>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">Pro Platinum</p>
                   </div>
-                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Platinum</p>
                 </div>
-                <div className="p-3 sm:p-4 text-center">
-                  <div className="flex items-center justify-center mb-1">
-                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
-                    <p className="text-sm sm:text-base font-bold text-gray-900">Broward &</p>
+
+                <div className="p-4 sm:p-5 text-center relative group overflow-hidden">
+                  <div className="relative">
+                    <div className="flex items-center justify-center mb-1.5">
+                      <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg" />
+                      <p className="text-base sm:text-lg font-bold text-white">Broward &</p>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">Palm Beach</p>
                   </div>
-                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Palm Beach</p>
                 </div>
-                <div className="p-3 sm:p-4 text-center">
-                  <div className="flex items-center justify-center mb-1">
-                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-1" />
-                    <p className="text-lg sm:text-xl font-bold text-gray-900">20+</p>
+
+                <div className="p-4 sm:p-5 text-center relative group overflow-hidden">
+                  <div className="relative">
+                    <div className="flex items-center justify-center mb-1.5">
+                      <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 mr-1.5 drop-shadow-lg" />
+                      <p className="text-xl sm:text-2xl font-bold text-white">20+</p>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide uppercase">Years</p>
                   </div>
-                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Years</p>
                 </div>
               </div>
+
+              {/* Bottom border glow */}
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/30 to-transparent"></div>
             </div>
 
             <div className="bg-black/80 sm:bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-700 mb-8">
