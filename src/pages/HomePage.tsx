@@ -12,7 +12,6 @@ import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
 import LocationMap from '../components/LocationMap';
-import HomeServiceTilesNav from '../components/HomeServiceTilesNav';
 import { EXTERNAL_LINKS } from '../config/links';
 
 export default function HomePage() {
@@ -1094,36 +1093,6 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Local Expert Section - Home Page Only */}
-      <section className="py-16 bg-neutral-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Headline */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-8 leading-tight px-2">
-            Local, Expert Roofing Contractor in Deerfield Beach, FL and Surrounding Areas
-          </h2>
-
-          {/* Callout Box */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-6 sm:p-8 mb-10 shadow-xl">
-            <p className="text-base sm:text-lg text-gray-100 leading-relaxed text-center">
-              When it comes to finding a{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">reliable roofing company near you</span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600"></span>
-              </span>
-              , look no further than All Phase Construction USA. Serving the communities of{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">Deerfield Beach</span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-red-600"></span>
-              </span>
-              {' '}and surrounding areas, we are your trusted local roofers for all your roofing needs.
-            </p>
-          </div>
-
-          {/* Premium Service Tiles Navigation */}
-          <HomeServiceTilesNav />
         </div>
       </section>
 
