@@ -8,6 +8,7 @@ import HappyCustomers from '../components/HappyCustomers';
 import CaseStudy from '../components/CaseStudy';
 import ServiceAreas from '../components/ServiceAreas';
 import CommonServiceAreasTable from '../components/CommonServiceAreasTable';
+import ServiceAreasCTA from '../components/ServiceAreasCTA';
 import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
@@ -1102,6 +1103,7 @@ export default function HomePage() {
       <CaseStudy />
       <ServiceAreas />
       <CommonServiceAreasTable />
+      <ServiceAreasCTA />
       <MicroFAQ />
       <FAQ />
       <ChamberBadge />
