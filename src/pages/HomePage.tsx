@@ -15,6 +15,7 @@ import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
 import LocationMap from '../components/LocationMap';
 import HomeServiceTilesNav from '../components/HomeServiceTilesNav';
+import { EXTERNAL_LINKS } from '../config/links';
 
 export default function HomePage() {
   const localBusinessSchema = {
@@ -792,20 +793,118 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Safety Precautions Section */}
+          {/* Customer Testimonials Section */}
           <div className="max-w-6xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Safety Precautions and Our Commitment to Jobsite Safety
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
+              What South Florida Homeowners Are Saying About All Phase Construction USA
             </h2>
 
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-              <p>
-                At All Phase Construction USA, <span className="text-orange-400 font-medium">safety is at the core</span> of everything we do. We believe that a <span className="text-blue-400 font-medium">safe jobsite</span> is essential for delivering <span className="text-blue-400 font-medium">quality roofing work</span> and for protecting our employees, clients, and the communities we serve. That's why we conduct regular <span className="text-orange-400 font-medium">toolbox talks</span> and ongoing <span className="text-orange-400 font-medium">safety training</span> to keep our crews informed about the latest <span className="text-blue-400 font-medium">safety protocols</span> and potential hazards. To ensure every team member can fully participate, we provide <span className="text-blue-400 font-medium">resources and support</span> in additional languages, making safety accessible to all.
+            <div className="text-center mb-6">
+              <p className="text-xl text-yellow-400 font-semibold mb-2">
+                ⭐ 4.8+ out of 5 — Based on 100+ verified Google reviews
               </p>
+              <p className="text-gray-300 text-lg">
+                Our customers consistently highlight the same things: clear communication, professional crews, clean job sites, and a process that takes the stress out of roofing.
+              </p>
+            </div>
 
-              <p>
-                Our safety measures include the use of <span className="text-blue-400 font-medium">personal protective equipment</span>, thorough inspection of all materials and equipment before and during installation, and strict adherence to <span className="text-blue-400 font-medium">local building codes</span> and <span className="text-blue-400 font-medium">industry regulations</span>. We maintain a <span className="text-orange-400 font-medium">comprehensive safety plan</span> for every project, complete with <span className="text-blue-400 font-medium">emergency procedures</span> and clear protocols for <span className="text-blue-400 font-medium">incident response</span>. This commitment to safety means our clients enjoy <span className="text-orange-400 font-medium">peace of mind</span>, knowing their roofing project is managed by a company that puts <span className="text-orange-400 font-medium">well-being and quality first</span>. By upholding the highest standards of safety and professionalism, we continue to set the benchmark for responsible roofing practices in the <span className="text-blue-400 font-medium">South Florida roofing industry</span>.
+            {/* Testimonial Cards Grid */}
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Testimonial 1 */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-xl p-6 shadow-lg">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
+                  "All Phase Construction replaced our entire roof after Hurricane Irma. From the initial inspection through the final walkthrough, every step was communicated clearly. The crew was professional, the job site was spotless every evening, and they handled our insurance paperwork seamlessly. I would recommend them to anyone in Broward County."
+                </p>
+                <p className="text-white font-semibold">— Robert M.</p>
+                <p className="text-gray-400 text-sm">Deerfield Beach</p>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-xl p-6 shadow-lg">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
+                  "We had three other roofing companies come out for estimates, and All Phase was the only one that took the time to explain the code requirements for our area. They didn't just sell us a roof—they educated us on what we actually needed. The 160 MPH wind warranty sealed the deal."
+                </p>
+                <p className="text-white font-semibold">— Jennifer K.</p>
+                <p className="text-gray-400 text-sm">Coral Springs</p>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-xl p-6 shadow-lg">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
+                  "Professional from start to finish. They pulled all permits, coordinated the inspection, and cleaned up like they were never there. Our new tile roof looks incredible and we have complete peace of mind going into hurricane season."
+                </p>
+                <p className="text-white font-semibold">— Carlos D.</p>
+                <p className="text-gray-400 text-sm">Boca Raton</p>
+              </div>
+
+              {/* Testimonial 4 */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-xl p-6 shadow-lg">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
+                  "I've used All Phase for two properties now—one residential and one commercial flat roof. Both projects were completed on time and on budget. Their certification stack is real, and it shows in the quality of the installation."
+                </p>
+                <p className="text-white font-semibold">— David L.</p>
+                <p className="text-gray-400 text-sm">Pompano Beach</p>
+              </div>
+            </div>
+
+            {/* Closing Statement */}
+            <div className="text-center mb-8">
+              <p className="text-gray-300 text-lg font-medium">
+                The pattern is clear: homeowners trust All Phase Construction USA because we deliver on our promises—every permit pulled, every code met, every warranty backed.
               </p>
+            </div>
+
+            {/* Review Platform Links */}
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+              <a
+                href={EXTERNAL_LINKS.GOOGLE_REVIEWS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-medium text-base sm:text-lg"
+              >
+                <span className="text-2xl">🔵</span>
+                <span>Read more reviews on Google →</span>
+              </a>
+
+              <a
+                href={EXTERNAL_LINKS.BBB}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors font-medium text-base sm:text-lg"
+              >
+                <span className="text-2xl">🟡</span>
+                <span>See our BBB A+ profile →</span>
+              </a>
+
+              <a
+                href="https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-red-400 hover:text-red-300 transition-colors font-medium text-base sm:text-lg"
+              >
+                <span className="text-2xl">🔴</span>
+                <span>Check us out on Directorii →</span>
+              </a>
             </div>
           </div>
 
