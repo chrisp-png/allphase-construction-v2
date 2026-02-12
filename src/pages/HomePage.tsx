@@ -429,6 +429,101 @@ export default function HomePage() {
             </a>
           </div>
 
+          {/* Why Choose Us Section */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
+              Why South Florida Homeowners Choose All Phase Construction USA for Roofing
+            </h2>
+
+            <div className="space-y-4 text-gray-300 leading-relaxed mb-8">
+              <p>
+                Choosing a roofing company in South Florida is a decision that directly affects your home's safety, insurance standing, and long-term value. We built our business on doing it right—not doing it fast.
+              </p>
+
+              <p>
+                Every project we take on is backed by dual state licensing (Certified Roofing Contractor + Certified General Contractor), elite manufacturer certifications, and a commitment to HVHZ code compliance that most roofers simply can't match. As a skilled trade, roofing contractors must be licensed by the appropriate local authorities to operate legally. Reputable contractors should also manage the permitting process and ensure compliance with local building codes. Contractors certified by GAF are trusted to offer the strongest guarantees and warranties, and only the world's best contractors are authorized to install Duro-Last roofing systems. Contractors should provide comprehensive warranties on both workmanship and materials. Standard payment terms typically involve a deposit of 10–30% and the balance due after project completion; always review contract terms carefully to understand your obligations.
+              </p>
+
+              <p>
+                We're members of the Broward County, Coral Springs, and Boca Raton Chambers of Commerce. Our roots run deep here—and so does our accountability.
+              </p>
+            </div>
+
+            {/* Comparison Table */}
+            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="grid md:grid-cols-2">
+                {/* Table Headers */}
+                <div className="bg-gradient-to-r from-red-600 to-red-700 p-4 border-b border-gray-700">
+                  <h3 className="text-xl font-bold text-white text-center">What We Do</h3>
+                </div>
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-4 border-b border-gray-700 md:border-l border-l-gray-700">
+                  <h3 className="text-xl font-bold text-white text-center">Why It Matters</h3>
+                </div>
+
+                {/* Row 1 */}
+                <div className="p-6 border-b border-gray-700">
+                  <p className="text-gray-200 leading-relaxed">
+                    <span className="font-semibold text-white">Dual-Licensed:</span> <span className="text-red-400">Roofing + General Contractor</span>
+                  </p>
+                </div>
+                <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700 bg-gray-900/30">
+                  <p className="text-gray-300 leading-relaxed">
+                    No scope gaps, no permit confusion—one company handles everything legally
+                  </p>
+                </div>
+
+                {/* Row 2 */}
+                <div className="p-6 border-b border-gray-700 bg-gray-900/30">
+                  <p className="text-gray-200 leading-relaxed">
+                    <span className="font-semibold text-white">160 MPH</span> Wind Warranty for shingles<br />
+                    <span className="font-semibold text-white">200 MPH</span> Wind Warranty for Metal
+                  </p>
+                </div>
+                <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700">
+                  <p className="text-gray-300 leading-relaxed">
+                    One of the <span className="text-red-400 font-semibold">strongest wind-protection warranties</span> available in the South Florida market
+                  </p>
+                </div>
+
+                {/* Row 3 */}
+                <div className="p-6 border-b border-gray-700">
+                  <p className="text-gray-200 leading-relaxed">
+                    <span className="font-semibold text-white">Elite Manufacturer Certifications</span> (Carlisle, GAF Gold, CertainTeed, TAMKO, IB Roof Systems, and more)
+                  </p>
+                </div>
+                <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700 bg-gray-900/30">
+                  <p className="text-gray-300 leading-relaxed">
+                    <span className="text-red-400 font-semibold">Manufacturer-backed warranties</span> and verified installation standards on every project
+                  </p>
+                </div>
+
+                {/* Row 4 */}
+                <div className="p-6 border-b border-gray-700 bg-gray-900/30">
+                  <p className="text-gray-200 leading-relaxed">
+                    <span className="font-semibold text-white">Directorii $25,000 Workmanship Guarantee</span>
+                  </p>
+                </div>
+                <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700">
+                  <p className="text-gray-300 leading-relaxed">
+                    <span className="text-red-400 font-semibold">Third-party-backed financial protection</span> that proves we stand behind our work
+                  </p>
+                </div>
+
+                {/* Row 5 */}
+                <div className="p-6">
+                  <p className="text-gray-200 leading-relaxed">
+                    <span className="font-semibold text-white">Certified MySafeFloridaHome Contractor</span>
+                  </p>
+                </div>
+                <div className="p-6 md:border-l border-l-gray-700 bg-gray-900/30">
+                  <p className="text-gray-300 leading-relaxed">
+                    Qualified to help homeowners access <span className="text-red-400 font-semibold">wind mitigation discounts and state programs</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
