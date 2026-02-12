@@ -322,27 +322,71 @@ export default function HomePage() {
       <section className="py-12 bg-gradient-to-b from-[#0a0a0a] to-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Roofing Industry Overview */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
+          <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
               Roofing Industry Overview in South Florida
             </h2>
 
-            <div className="space-y-4 text-gray-300 leading-relaxed">
-              <p>
-                The roofing industry in South Florida is one of the most dynamic and demanding in the country, shaped by the region's unique weather conditions and strict building codes. With frequent heavy rains, intense sun, and the ever-present threat of hurricanes, homeowners and businesses alike require roofing systems that deliver maximum durability and energy efficiency.
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Card 1 */}
+              <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 border border-gray-700/50 rounded-xl p-6 hover:border-red-500/30 transition-all duration-300 group">
+                <div className="flex items-start gap-4">
+                  <div className="bg-red-600/10 p-3 rounded-lg group-hover:bg-red-600/20 transition-colors">
+                    <Shield className="w-6 h-6 text-red-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">Dynamic & Demanding Environment</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      The roofing industry in South Florida is one of the most dynamic and demanding in the country, shaped by the region's unique weather conditions and strict building codes. With frequent heavy rains, intense sun, and the ever-present threat of hurricanes, homeowners and businesses alike require roofing systems that deliver maximum durability and energy efficiency.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <p>
-                This means that roofing professionals must be highly skilled and up-to-date on the latest materials and installation techniques to ensure every roof can withstand the elements.
-              </p>
+              {/* Card 2 */}
+              <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 border border-gray-700/50 rounded-xl p-6 hover:border-red-500/30 transition-all duration-300 group">
+                <div className="flex items-start gap-4">
+                  <div className="bg-red-600/10 p-3 rounded-lg group-hover:bg-red-600/20 transition-colors">
+                    <Award className="w-6 h-6 text-red-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">Skilled Professionals Required</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      This means that roofing professionals must be highly skilled and up-to-date on the latest materials and installation techniques to ensure every roof can withstand the elements.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <p>
-                Asphalt shingles remain a popular choice for their cost-effectiveness and resilience, while advanced materials and innovative designs are increasingly being adopted to boost both performance and energy savings. The cost of roof replacement is a significant investment, so it's essential for homeowners to hire a reputable roofer who understands local building codes and can ensure the job is done right the first time.
-              </p>
+              {/* Card 3 */}
+              <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 border border-gray-700/50 rounded-xl p-6 hover:border-red-500/30 transition-all duration-300 group">
+                <div className="flex items-start gap-4">
+                  <div className="bg-red-600/10 p-3 rounded-lg group-hover:bg-red-600/20 transition-colors">
+                    <Building2 className="w-6 h-6 text-red-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">Material Innovation & Quality</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Asphalt shingles remain a popular choice for their cost-effectiveness and resilience, while advanced materials and innovative designs are increasingly being adopted to boost both performance and energy savings. The cost of roof replacement is a significant investment, so it's essential for homeowners to hire a reputable roofer who understands local building codes and can ensure the job is done right the first time.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <p>
-                In recent years, there's been a noticeable shift toward eco-friendly and energy-efficient roofing solutions, as more homeowners look to reduce their energy bills and environmental impact. Whether you're considering a new roof or maintaining an existing one, working with experienced roofing professionals is the best way to ensure your roof remains durable, compliant, and ready to protect your home for years to come.
-              </p>
+              {/* Card 4 */}
+              <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 border border-gray-700/50 rounded-xl p-6 hover:border-red-500/30 transition-all duration-300 group">
+                <div className="flex items-start gap-4">
+                  <div className="bg-red-600/10 p-3 rounded-lg group-hover:bg-red-600/20 transition-colors">
+                    <Home className="w-6 h-6 text-red-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">Energy-Efficient Solutions</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      In recent years, there's been a noticeable shift toward eco-friendly and energy-efficient roofing solutions, as more homeowners look to reduce their energy bills and environmental impact. Whether you're considering a new roof or maintaining an existing one, working with experienced roofing professionals is the best way to ensure your roof remains durable, compliant, and ready to protect your home for years to come.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
