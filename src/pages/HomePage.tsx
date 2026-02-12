@@ -792,6 +792,23 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Safety Precautions Section */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Safety Precautions and Our Commitment to Jobsite Safety
+            </h2>
+
+            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+              <p>
+                At All Phase Construction USA, <span className="text-orange-400 font-medium">safety is at the core</span> of everything we do. We believe that a <span className="text-blue-400 font-medium">safe jobsite</span> is essential for delivering <span className="text-blue-400 font-medium">quality roofing work</span> and for protecting our employees, clients, and the communities we serve. That's why we conduct regular <span className="text-orange-400 font-medium">toolbox talks</span> and ongoing <span className="text-orange-400 font-medium">safety training</span> to keep our crews informed about the latest <span className="text-blue-400 font-medium">safety protocols</span> and potential hazards. To ensure every team member can fully participate, we provide <span className="text-blue-400 font-medium">resources and support</span> in additional languages, making safety accessible to all.
+              </p>
+
+              <p>
+                Our safety measures include the use of <span className="text-blue-400 font-medium">personal protective equipment</span>, thorough inspection of all materials and equipment before and during installation, and strict adherence to <span className="text-blue-400 font-medium">local building codes</span> and <span className="text-blue-400 font-medium">industry regulations</span>. We maintain a <span className="text-orange-400 font-medium">comprehensive safety plan</span> for every project, complete with <span className="text-blue-400 font-medium">emergency procedures</span> and clear protocols for <span className="text-blue-400 font-medium">incident response</span>. This commitment to safety means our clients enjoy <span className="text-orange-400 font-medium">peace of mind</span>, knowing their roofing project is managed by a company that puts <span className="text-orange-400 font-medium">well-being and quality first</span>. By upholding the highest standards of safety and professionalism, we continue to set the benchmark for responsible roofing practices in the <span className="text-blue-400 font-medium">South Florida roofing industry</span>.
+              </p>
+            </div>
+          </div>
+
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
