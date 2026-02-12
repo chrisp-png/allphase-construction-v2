@@ -74,6 +74,11 @@ export default function DeerfieldBeachCityPage() {
         <meta property="og:description" content="Need a roofer in Deerfield Beach, FL 33441 or 33442? We specialize in roof repair, roof replacement, and inspection-first diagnostics for HVHZ properties. Dual-licensed (Roofing + GC) for roofing-related structural/insurance upgrades. Request your roof inspection — we respond within 45 minutes during business hours." />
         <meta property="og:url" content="https://allphaseconstructionfl.com/locations/deerfield-beach" />
         <meta property="og:type" content="website" />
+
+        {/* Twitter Card - Deerfield Beach Money Page */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Roofer in Deerfield Beach, FL | Roof Repair & Replacement" />
+        <meta name="twitter:description" content="Need roof repair or replacement in Deerfield Beach? Inspection-first diagnostics for HVHZ homes. Dual-licensed. Fast response during business hours." />
       </Helmet>
 
       {/* JSON-LD Structured Data */}
