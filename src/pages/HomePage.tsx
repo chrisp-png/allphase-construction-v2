@@ -4,7 +4,6 @@ import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Aw
 import HeroRoofing from '../components/HeroRoofing';
 import HowItWorks from '../components/HowItWorks';
 import TrustBadges from '../components/TrustBadges';
-import Testimonials from '../components/Testimonials';
 import HappyCustomers from '../components/HappyCustomers';
 import CaseStudy from '../components/CaseStudy';
 import ServiceAreas from '../components/ServiceAreas';
@@ -1098,7 +1097,6 @@ export default function HomePage() {
 
       <HowItWorks />
       <TrustBadges />
-      <Testimonials />
       <HappyCustomers />
       <CaseStudy />
       <ServiceAreas />
