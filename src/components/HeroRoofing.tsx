@@ -183,9 +183,8 @@ export default function HeroRoofing() {
                   <div className="relative">
                     <div className="flex items-center justify-center mb-1.5">
                       <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
-                      <p className="text-base sm:text-lg font-bold text-white group-hover:text-red-400 transition-colors duration-300">(754)</p>
                     </div>
-                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">227-5605</p>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide group-hover:text-red-400 transition-colors duration-300">(754) 227-5605</p>
                   </div>
                 </a>
 
@@ -203,9 +202,8 @@ export default function HeroRoofing() {
                   <div className="relative">
                     <div className="flex items-center justify-center mb-1.5">
                       <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg" />
-                      <p className="text-base sm:text-lg font-bold text-white">Broward &</p>
                     </div>
-                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">Palm Beach</p>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">Broward & Palm Beach</p>
                   </div>
                 </div>
 
@@ -224,33 +222,7 @@ export default function HeroRoofing() {
               <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/30 to-transparent"></div>
             </div>
 
-            <div className="bg-black/80 sm:bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-700 mb-8">
-              <div className="grid grid-cols-3 gap-3 sm:gap-4">
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-1">
-                    <Award className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
-                    <p className="text-xl sm:text-2xl font-bold text-white">22+</p>
-                  </div>
-                  <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Years Experience</p>
-                </div>
-                <div className="text-center border-l border-r border-gray-700">
-                  <div className="flex items-center justify-center mb-1">
-                    <Users className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
-                    <p className="text-xl sm:text-2xl font-bold text-white">2,500+</p>
-                  </div>
-                  <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Roofs Installed</p>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-1">
-                    <Star className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
-                    <p className="text-xl sm:text-2xl font-bold text-white">Hundreds</p>
-                  </div>
-                  <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">of 5-Star Reviews</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 mt-2" style={{ position: 'relative', zIndex: 20, pointerEvents: 'auto' }}>
+            <div className="flex flex-col sm:flex-row gap-4 mt-6" style={{ position: 'relative', zIndex: 20, pointerEvents: 'auto' }}>
               <button
                 onClick={(e) => {
                   e.preventDefault();
