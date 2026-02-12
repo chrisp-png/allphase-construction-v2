@@ -930,83 +930,85 @@ export default function HomePage() {
 
             {/* Comparison Table */}
             <div className="mt-8 overflow-x-auto">
-              <table className="w-full border-collapse bg-white rounded-lg shadow-xl">
-                <thead>
-                  <tr className="bg-gray-100">
-                    <th className="text-left p-4 font-bold text-gray-900 border-b-2 border-gray-300">Factor</th>
-                    <th className="text-left p-4 font-bold text-gray-900 border-b-2 border-gray-300">Storm Chaser</th>
-                    <th className="text-left p-4 font-bold text-gray-900 border-b-2 border-gray-300">All Phase Construction USA</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {/* Warranty Row */}
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium text-gray-900">Warranty</td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-orange-600">Little to none—gone before you need it</span>
-                    </td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-blue-700 font-medium">160 MPH wind warranty for shingles</span><br />
-                      <span className="text-blue-700 font-medium">200 MPH wind warranty for metal</span> + manufacturer-backed coverage
-                    </td>
-                  </tr>
+              <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-xl shadow-2xl overflow-hidden">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-red-900/30 to-red-800/20">
+                      <th className="text-left p-4 sm:p-5 font-bold text-white border-b-2 border-red-600/50 text-base sm:text-lg">Factor</th>
+                      <th className="text-left p-4 sm:p-5 font-bold text-white border-b-2 border-red-600/50 text-base sm:text-lg">Storm Chaser</th>
+                      <th className="text-left p-4 sm:p-5 font-bold text-white border-b-2 border-red-600/50 text-base sm:text-lg">All Phase Construction USA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* Warranty Row */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/30 transition-colors">
+                      <td className="p-4 sm:p-5 font-semibold text-gray-200">Warranty</td>
+                      <td className="p-4 sm:p-5 text-gray-300">
+                        <span className="text-red-400 font-medium">Little to none—gone before you need it</span>
+                      </td>
+                      <td className="p-4 sm:p-5 text-gray-200">
+                        <span className="text-blue-400 font-semibold">160 MPH wind warranty for shingles</span><br />
+                        <span className="text-blue-400 font-semibold">200 MPH wind warranty for metal</span> + manufacturer-backed coverage
+                      </td>
+                    </tr>
 
-                  {/* Licensing Row */}
-                  <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="p-4 font-medium text-gray-900">Licensing</td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-orange-600">Often out-of-state or unlicensed in FL</span>
-                    </td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-blue-700 font-medium">Dual FL State Certified: Roofing + General Contractor</span>
-                    </td>
-                  </tr>
+                    {/* Licensing Row */}
+                    <tr className="border-b border-gray-700/50 bg-gray-800/20 hover:bg-gray-800/40 transition-colors">
+                      <td className="p-4 sm:p-5 font-semibold text-gray-200">Licensing</td>
+                      <td className="p-4 sm:p-5 text-gray-300">
+                        <span className="text-red-400 font-medium">Often out-of-state or unlicensed in FL</span>
+                      </td>
+                      <td className="p-4 sm:p-5 text-gray-200">
+                        <span className="text-blue-400 font-semibold">Dual FL State Certified: Roofing + General Contractor</span>
+                      </td>
+                    </tr>
 
-                  {/* Local Presence Row */}
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium text-gray-900">Local Presence</td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-orange-600">No office, no roots, no accountability</span>
-                    </td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-blue-700 font-medium">Deerfield Beach HQ, 20+ years local, chamber member</span>
-                    </td>
-                  </tr>
+                    {/* Local Presence Row */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/30 transition-colors">
+                      <td className="p-4 sm:p-5 font-semibold text-gray-200">Local Presence</td>
+                      <td className="p-4 sm:p-5 text-gray-300">
+                        <span className="text-red-400 font-medium">No office, no roots, no accountability</span>
+                      </td>
+                      <td className="p-4 sm:p-5 text-gray-200">
+                        <span className="text-blue-400 font-semibold">Deerfield Beach HQ, 20+ years local, chamber member</span>
+                      </td>
+                    </tr>
 
-                  {/* Insurance Handling Row */}
-                  <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="p-4 font-medium text-gray-900">Insurance Handling</td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-orange-600">Pressures you to sign over your claim</span>
-                    </td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-blue-700 font-medium">Guides you transparently through the process</span>
-                    </td>
-                  </tr>
+                    {/* Insurance Handling Row */}
+                    <tr className="border-b border-gray-700/50 bg-gray-800/20 hover:bg-gray-800/40 transition-colors">
+                      <td className="p-4 sm:p-5 font-semibold text-gray-200">Insurance Handling</td>
+                      <td className="p-4 sm:p-5 text-gray-300">
+                        <span className="text-red-400 font-medium">Pressures you to sign over your claim</span>
+                      </td>
+                      <td className="p-4 sm:p-5 text-gray-200">
+                        <span className="text-blue-400 font-semibold">Guides you transparently through the process</span>
+                      </td>
+                    </tr>
 
-                  {/* Materials Row */}
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium text-gray-900">Materials</td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-orange-600">Whatever is cheapest and available</span>
-                    </td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-blue-700 font-medium">Manufacturer-spec, premium systems (Tamko, GAF, etc.)</span>
-                    </td>
-                  </tr>
+                    {/* Materials Row */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/30 transition-colors">
+                      <td className="p-4 sm:p-5 font-semibold text-gray-200">Materials</td>
+                      <td className="p-4 sm:p-5 text-gray-300">
+                        <span className="text-red-400 font-medium">Whatever is cheapest and available</span>
+                      </td>
+                      <td className="p-4 sm:p-5 text-gray-200">
+                        <span className="text-blue-400 font-semibold">Manufacturer-spec, premium systems (Tamko, GAF, etc.)</span>
+                      </td>
+                    </tr>
 
-                  {/* After the Job Row */}
-                  <tr>
-                    <td className="p-4 font-medium text-gray-900">After the Job</td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-orange-600">Gone—number disconnected</span>
-                    </td>
-                    <td className="p-4 text-gray-700">
-                      <span className="text-blue-700 font-medium">Ongoing support, follow-up, and Directorii $25K guarantee</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    {/* After the Job Row */}
+                    <tr className="bg-gray-800/20 hover:bg-gray-800/40 transition-colors">
+                      <td className="p-4 sm:p-5 font-semibold text-gray-200">After the Job</td>
+                      <td className="p-4 sm:p-5 text-gray-300">
+                        <span className="text-red-400 font-medium">Gone—number disconnected</span>
+                      </td>
+                      <td className="p-4 sm:p-5 text-gray-200">
+                        <span className="text-blue-400 font-semibold">Ongoing support, follow-up, and Directorii $25K guarantee</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
