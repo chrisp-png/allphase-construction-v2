@@ -107,6 +107,76 @@ export default function Footer() {
 
   return (
     <footer className="bg-black border-t border-red-600">
+      {/* Premium CTA Section */}
+      <div className="bg-gradient-to-br from-neutral-900 via-black to-neutral-900 border-b border-neutral-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+            Ready to Get Started?<br />
+            <span className="text-red-600">Talk to South Florida's Most Trusted Roofers</span>
+          </h2>
+
+          <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Whether you need a full roof replacement, a storm damage assessment, or just want a professional opinion on your roof's condition—All Phase Construction USA is here to help.
+          </p>
+
+          <p className="text-base text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+            We're the roofing contractor South Florida homeowners trust for honest assessments, code-compliant installations, and warranties that actually mean something. To find a list of trusted roofing contractors and learn more about our services, visit our website today.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <a
+              href="tel:+17542275605"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Call (754) 227-5605
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-neutral-800 hover:bg-neutral-700 border border-neutral-600 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Request Free Estimate
+            </Link>
+          </div>
+
+          {/* Trust Badges */}
+          <div className="border-t border-neutral-800 pt-10">
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 text-sm text-gray-400">
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium text-white">BBB A+ Accredited</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium text-white">Directorii $25,000 Guarantee</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium text-white">Tamko Pro Platinum</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium text-white">GAF Gold Certified</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="font-medium text-white">20+ Years in Business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div>
