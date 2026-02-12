@@ -2,6 +2,10 @@ import { MapPin } from 'lucide-react';
 
 const microFaqs = [
   {
+    question: 'What is a wind mitigation inspection and why does it matter?',
+    answer: 'A wind mitigation inspection documents the wind-resistant features of your home\'s roof—such as roof shape, attachment method, and secondary water barrier. This report can qualify you for significant insurance premium discounts. As a Certified Wind Loss Mitigator, we can perform this inspection and provide the documentation your insurer needs.',
+  },
+  {
     question: 'Can a roofer do my wind mitigation report?',
     answer: 'Usually, no — a wind mitigation report generally must be completed by a properly licensed inspector (often a home inspector, engineer, architect, or a Florida-licensed general contractor, depending on the credential). Many roofing contractors can\'t sign that form unless they also hold the appropriate license. If your roofer is also a GC, it can simplify coordination because the same firm can evaluate roofing + related structural mitigation opportunities.',
   },
@@ -23,7 +27,7 @@ export default function MicroFAQ() {
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <MapPin className="w-6 h-6 text-red-600" />
             <h2 className="text-2xl md:text-3xl font-bold text-white">
-              Deerfield Beach & High Velocity Hurricane Zone — Common Questions
+              Common questions homeowners have about their roofs in the High Velocity Hurricane Zone.
             </h2>
           </div>
         </div>
