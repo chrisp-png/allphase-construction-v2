@@ -647,6 +647,134 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Services at a Glance Table */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
+              Services at a Glance
+            </h2>
+
+            <div className="bg-gradient-to-br from-gray-900/90 to-gray-800/70 border border-gray-700/50 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-red-600/20 border-b border-gray-700">
+                      <th className="px-6 py-4 text-left text-white font-bold text-lg">Service</th>
+                      <th className="px-6 py-4 text-left text-white font-bold text-lg">Best For</th>
+                      <th className="px-6 py-4 text-left text-white font-bold text-lg">Why South Florida Homeowners Need It</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* Roof Replacement */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <a href="/roof-replacement-process" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                          Roof Replacement
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Aging or storm-damaged roofs
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        HVHZ-compliant systems that meet current Florida wind codes
+                      </td>
+                    </tr>
+
+                    {/* Roof Repair */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <a href="/roof-repair" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                          Roof Repair
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Leaks, missing shingles, flashing damage
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Prevents water intrusion and protects interior during rainy season
+                      </td>
+                    </tr>
+
+                    {/* Storm Damage Restoration */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <span className="text-red-400 font-semibold">
+                          Storm Damage Restoration
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Post-hurricane and severe weather
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Insurance coordination and full restoration under one contractor
+                      </td>
+                    </tr>
+
+                    {/* Tile Roofing */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <a href="/tile-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                          Tile Roofing
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        High-wind zones, HOA-regulated communities
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Superior impact resistance and Florida-approved aesthetics
+                      </td>
+                    </tr>
+
+                    {/* Metal Roofing */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <a href="/metal-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                          Metal Roofing
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Energy-conscious homeowners
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Reflects heat, resists wind, and lasts 40–70 years
+                      </td>
+                    </tr>
+
+                    {/* Flat Roofing */}
+                    <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <a href="/flat-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                          Flat Roofing
+                        </a>
+                        <span className="text-gray-400 text-sm block mt-1">(TPO/PVC/EPDM)</span>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Commercial and modern residential
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Waterproof membrane systems designed for low-slope applications
+                      </td>
+                    </tr>
+
+                    {/* Inspections & Maintenance */}
+                    <tr className="hover:bg-gray-800/50 transition-colors duration-200">
+                      <td className="px-6 py-4">
+                        <a href="/roof-inspection" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                          Inspections & Maintenance
+                        </a>
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        All roof types and ages
+                      </td>
+                      <td className="px-6 py-4 text-gray-300">
+                        Catches problems early, protects warranties, extends roof life
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
           {/* HQ Location Card + Map - 2 Column Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Column - HQ Location Card */}
