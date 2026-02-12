@@ -128,23 +128,19 @@ export default function HeroRoofing() {
         <div className="hero-grid grid lg:grid-cols-2 gap-8 lg:items-start" style={{ overflow: 'visible', pointerEvents: 'auto' }}>
           <div className="hero-content-left" style={{ width: '100%', maxWidth: '100%', boxSizing: 'border-box', overflow: 'visible', pointerEvents: 'auto' }}>
             <h1 className="hero-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-3 leading-[1.2] sm:leading-tight">
-              All Phase Construction USA | Dual-Licensed Roofing Specialist
+              Roofing Contractor — All Phase Construction USA
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-[#C5A572] mb-5 sm:mb-4 font-semibold leading-[1.5] sm:leading-snug">
-              Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.
-            </p>
-
-            <p className="text-base sm:text-base md:text-lg text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              What makes All Phase Construction USA different is proof. We are BBB A+ rated; a Tamko Platinum Preferred Contractor; an IB Roof Preferred Contractor; a GAF Gold Certified Contractor; credentialed by Carlisle; and JM credentialed, along with many other leading manufacturers. We are trusted in Deerfield Beach and across Palm Beach and Broward Counties with a 4.8-star reputation and over 135 Google reviews. You are not hiring a random crew — you are hiring a system that shows up and stands behind the work.
-            </p>
-
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-red-600 mb-6 leading-tight">
-              All Phase Construction USA
+            <h2 className="text-lg sm:text-xl md:text-2xl text-[#C5A572] mb-5 sm:mb-4 font-semibold leading-[1.5] sm:leading-snug">
+              South Florida's Trusted Roofers — Locally Owned, 20+ Years in Business
             </h2>
 
+            <p className="text-base sm:text-base md:text-lg text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
+              All Phase Construction USA delivers hurricane-compliant roofing for Broward and Palm Beach homeowners and businesses, built for South Florida's HVHZ wind codes, proper fastening, and manufacturer-spec installation.
+            </p>
+
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              All Phase Construction USA is a licensed roofing contractor backed by dual Roofing (CCC) and General Contractor (CGC) licenses.
+              Based in Deerfield Beach, FL 33441, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.
             </p>
 
             <p className="text-sm text-gray-300 sm:text-gray-400 mb-6 leading-relaxed">
