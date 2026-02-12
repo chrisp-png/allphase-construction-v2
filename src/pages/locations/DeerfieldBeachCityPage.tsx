@@ -246,7 +246,7 @@ export default function DeerfieldBeachCityPage() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Roofer in Deerfield Beach, FL — HVHZ Roofing & Wind Mitigation Specialists
+                Roofer in Deerfield Beach, FL — Roof Repair, Replacement & Inspection-First Diagnostics
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
