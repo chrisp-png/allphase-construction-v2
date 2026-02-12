@@ -927,6 +927,87 @@ export default function HomePage() {
                 <span className="text-orange-400 font-semibold">All Phase Construction USA</span> has been rooted in Deerfield Beach since 2005. We're <span className="text-blue-400 font-medium">dual-licensed in Florida</span>, backed by <span className="text-blue-400 font-medium">manufacturer certifications</span>, and accountable to our community. We don't chase storms—<span className="text-orange-400 font-medium">we protect homes from them</span>.
               </p>
             </div>
+
+            {/* Comparison Table */}
+            <div className="mt-8 overflow-x-auto">
+              <table className="w-full border-collapse bg-white rounded-lg shadow-xl">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="text-left p-4 font-bold text-gray-900 border-b-2 border-gray-300">Factor</th>
+                    <th className="text-left p-4 font-bold text-gray-900 border-b-2 border-gray-300">Storm Chaser</th>
+                    <th className="text-left p-4 font-bold text-gray-900 border-b-2 border-gray-300">All Phase Construction USA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* Warranty Row */}
+                  <tr className="border-b border-gray-200">
+                    <td className="p-4 font-medium text-gray-900">Warranty</td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-orange-600">Little to none—gone before you need it</span>
+                    </td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-blue-700 font-medium">160 MPH wind warranty for shingles</span><br />
+                      <span className="text-blue-700 font-medium">200 MPH wind warranty for metal</span> + manufacturer-backed coverage
+                    </td>
+                  </tr>
+
+                  {/* Licensing Row */}
+                  <tr className="border-b border-gray-200 bg-gray-50">
+                    <td className="p-4 font-medium text-gray-900">Licensing</td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-orange-600">Often out-of-state or unlicensed in FL</span>
+                    </td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-blue-700 font-medium">Dual FL State Certified: Roofing + General Contractor</span>
+                    </td>
+                  </tr>
+
+                  {/* Local Presence Row */}
+                  <tr className="border-b border-gray-200">
+                    <td className="p-4 font-medium text-gray-900">Local Presence</td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-orange-600">No office, no roots, no accountability</span>
+                    </td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-blue-700 font-medium">Deerfield Beach HQ, 20+ years local, chamber member</span>
+                    </td>
+                  </tr>
+
+                  {/* Insurance Handling Row */}
+                  <tr className="border-b border-gray-200 bg-gray-50">
+                    <td className="p-4 font-medium text-gray-900">Insurance Handling</td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-orange-600">Pressures you to sign over your claim</span>
+                    </td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-blue-700 font-medium">Guides you transparently through the process</span>
+                    </td>
+                  </tr>
+
+                  {/* Materials Row */}
+                  <tr className="border-b border-gray-200">
+                    <td className="p-4 font-medium text-gray-900">Materials</td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-orange-600">Whatever is cheapest and available</span>
+                    </td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-blue-700 font-medium">Manufacturer-spec, premium systems (Tamko, GAF, etc.)</span>
+                    </td>
+                  </tr>
+
+                  {/* After the Job Row */}
+                  <tr>
+                    <td className="p-4 font-medium text-gray-900">After the Job</td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-orange-600">Gone—number disconnected</span>
+                    </td>
+                    <td className="p-4 text-gray-700">
+                      <span className="text-blue-700 font-medium">Ongoing support, follow-up, and Directorii $25K guarantee</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           {/* HQ Location Card + Map - 2 Column Layout */}
