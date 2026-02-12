@@ -321,6 +321,31 @@ export default function HomePage() {
       {/* Service Navigation Pills */}
       <section className="py-12 bg-gradient-to-b from-[#0a0a0a] to-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Roofing Industry Overview */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
+              Roofing Industry Overview in South Florida
+            </h2>
+
+            <div className="space-y-4 text-gray-300 leading-relaxed">
+              <p>
+                The roofing industry in South Florida is one of the most dynamic and demanding in the country, shaped by the region's unique weather conditions and strict building codes. With frequent heavy rains, intense sun, and the ever-present threat of hurricanes, homeowners and businesses alike require roofing systems that deliver maximum durability and energy efficiency.
+              </p>
+
+              <p>
+                This means that roofing professionals must be highly skilled and up-to-date on the latest materials and installation techniques to ensure every roof can withstand the elements.
+              </p>
+
+              <p>
+                Asphalt shingles remain a popular choice for their cost-effectiveness and resilience, while advanced materials and innovative designs are increasingly being adopted to boost both performance and energy savings. The cost of roof replacement is a significant investment, so it's essential for homeowners to hire a reputable roofer who understands local building codes and can ensure the job is done right the first time.
+              </p>
+
+              <p>
+                In recent years, there's been a noticeable shift toward eco-friendly and energy-efficient roofing solutions, as more homeowners look to reduce their energy bills and environmental impact. Whether you're considering a new roof or maintaining an existing one, working with experienced roofing professionals is the best way to ensure your roof remains durable, compliant, and ready to protect your home for years to come.
+              </p>
+            </div>
+          </div>
+
           {/* Modern Pill-Style Service Buttons */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-16">
             <a
