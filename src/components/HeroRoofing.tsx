@@ -1,6 +1,7 @@
-import { Phone, Clock, CheckCircle, Award, Users, Star, Flame } from 'lucide-react';
+import { Phone, Clock, CheckCircle, Award, Users, Star, Flame, MapPin } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useAssessmentModal } from '../context/AssessmentModalContext';
+import { EXTERNAL_LINKS } from '../config/links';
 
 const urgencyMessages = [
   'Only 3 inspection slots remaining this week',
@@ -143,31 +144,81 @@ export default function HeroRoofing() {
               Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.
             </p>
 
-            <p className="text-sm text-gray-300 sm:text-gray-400 mb-6 leading-relaxed">
+            <p className="text-xs sm:text-sm text-gray-300 sm:text-gray-400 mb-4 leading-relaxed">
               CCC1331464 • CGC1526236 • Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
             </p>
 
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-8 bg-black/80 sm:bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-1">
-                  <Award className="w-5 h-5 text-red-600 mr-1" />
-                  <p className="text-xl sm:text-2xl font-bold text-white">22+</p>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8 border border-gray-200">
+              <div className="grid grid-cols-2 sm:grid-cols-5 divide-x divide-y sm:divide-y-0 divide-gray-200">
+                <a
+                  href={EXTERNAL_LINKS.GOOGLE_REVIEWS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 sm:p-4 text-center hover:bg-gray-50 transition-colors duration-200 group"
+                >
+                  <div className="flex items-center justify-center mb-1">
+                    <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 fill-yellow-500 mr-1" />
+                    <p className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">4.8+</p>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Stars</p>
+                </a>
+                <a
+                  href="tel:+17542275605"
+                  className="p-3 sm:p-4 text-center hover:bg-gray-50 transition-colors duration-200 group"
+                >
+                  <div className="flex items-center justify-center mb-1">
+                    <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
+                    <p className="text-sm sm:text-base font-bold text-gray-900 group-hover:text-red-600 transition-colors">(754)</p>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">227-5605</p>
+                </a>
+                <div className="p-3 sm:p-4 text-center">
+                  <div className="flex items-center justify-center mb-1">
+                    <Award className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
+                    <p className="text-sm sm:text-base font-bold text-gray-900">Tamko Pro</p>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Platinum</p>
                 </div>
-                <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Years Experience</p>
+                <div className="p-3 sm:p-4 text-center">
+                  <div className="flex items-center justify-center mb-1">
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
+                    <p className="text-sm sm:text-base font-bold text-gray-900">Broward &</p>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Palm Beach</p>
+                </div>
+                <div className="p-3 sm:p-4 text-center">
+                  <div className="flex items-center justify-center mb-1">
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-1" />
+                    <p className="text-lg sm:text-xl font-bold text-gray-900">20+</p>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-gray-600 leading-tight font-medium">Years</p>
+                </div>
               </div>
-              <div className="text-center border-l border-r border-gray-700">
-                <div className="flex items-center justify-center mb-1">
-                  <Users className="w-5 h-5 text-red-600 mr-1" />
-                  <p className="text-xl sm:text-2xl font-bold text-white">2,500+</p>
+            </div>
+
+            <div className="bg-black/80 sm:bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-700 mb-8">
+              <div className="grid grid-cols-3 gap-3 sm:gap-4">
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-1">
+                    <Award className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
+                    <p className="text-xl sm:text-2xl font-bold text-white">22+</p>
+                  </div>
+                  <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Years Experience</p>
                 </div>
-                <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Roofs Installed</p>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-1">
-                  <Star className="w-5 h-5 text-red-600 mr-1" />
-                  <p className="text-xl sm:text-2xl font-bold text-white">Hundreds</p>
+                <div className="text-center border-l border-r border-gray-700">
+                  <div className="flex items-center justify-center mb-1">
+                    <Users className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
+                    <p className="text-xl sm:text-2xl font-bold text-white">2,500+</p>
+                  </div>
+                  <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">Roofs Installed</p>
                 </div>
-                <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">of 5-Star Reviews</p>
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-1">
+                    <Star className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 mr-1" />
+                    <p className="text-xl sm:text-2xl font-bold text-white">Hundreds</p>
+                  </div>
+                  <p className="text-xs text-gray-300 sm:text-gray-400 leading-tight">of 5-Star Reviews</p>
+                </div>
               </div>
             </div>
 
