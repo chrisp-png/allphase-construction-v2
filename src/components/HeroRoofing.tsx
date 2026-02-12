@@ -140,7 +140,7 @@ export default function HeroRoofing() {
             </p>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              Based in Deerfield Beach, FL 33441, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.
+              Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.
             </p>
 
             <p className="text-sm text-gray-300 sm:text-gray-400 mb-6 leading-relaxed">
