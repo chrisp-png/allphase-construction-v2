@@ -144,10 +144,6 @@ export default function HeroRoofing() {
               Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.
             </p>
 
-            <p className="text-xs sm:text-sm text-gray-300 sm:text-gray-400 mb-4 leading-relaxed">
-              CCC1331464 • CGC1526236 • Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
-            </p>
-
             <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
               {/* Gradient background overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-black/90 to-gray-900/90 backdrop-blur-md"></div>
