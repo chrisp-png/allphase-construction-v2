@@ -238,19 +238,6 @@ const PageLoadingFallback = () => (
 
 function AppContent() {
   const { isOpen, closeModal } = useAssessmentModal();
-  const location = useLocation();
-
-  // IDENTITY LOCK: Force correct titles for Google before any Helmet updates
-  useEffect(() => {
-    const path = location.pathname.toLowerCase();
-
-    if (path === '/') {
-      document.title = 'All Phase Construction USA | Dual-Licensed Roofing Specialist';
-    } else if (path.includes('deerfield-beach')) {
-      document.title = 'Dual-Licensed Roofing Specialist in Deerfield Beach, FL | All Phase Construction USA';
-    }
-    // Other pages will be handled by their individual Helmet components
-  }, [location.pathname]);
 
   return (
     <>

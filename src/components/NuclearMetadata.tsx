@@ -17,6 +17,12 @@ export default function NuclearMetadata() {
   useEffect(() => {
     const path = location.pathname;
 
+    // HOMEPAGE IDENTITY LOCK: Skip homepage entirely - preserve hard-coded tags from index.html
+    if (path === '/') {
+      console.log('[NUCLEAR METADATA] Skipping homepage - preserving identity lock from index.html');
+      return;
+    }
+
     // Get SEO metadata from centralized configuration
     const metadata = generateSEOMetadata(path);
     const { title, description, canonical } = metadata;
@@ -55,7 +61,8 @@ export default function NuclearMetadata() {
     updateOrCreateMetaTag('name', 'twitter:title', title);
     updateOrCreateMetaTag('name', 'twitter:description', description);
 
-    // INJECT GLOBAL LOCALBUSINESS SCHEMA (Authority Layer)
+    // INJECT GLOBAL LOCALBUSINESS SCHEMA (Authority Layer) - Not needed on homepage
+    // Homepage has its own LocalBusiness schema from HomePage component
     let schemaScript = document.querySelector('script[data-schema="global-business"]');
     if (!schemaScript) {
       schemaScript = document.createElement('script');
