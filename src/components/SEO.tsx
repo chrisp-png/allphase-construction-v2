@@ -1,56 +1,57 @@
 import { Helmet } from 'react-helmet-async';
 
+function absUrl(pathOrUrl?: string): string | undefined {
+  if (!pathOrUrl) return undefined;
+  if (pathOrUrl.startsWith('http://') || pathOrUrl.startsWith('https://')) return pathOrUrl;
+  const origin =
+    (typeof window !== 'undefined' && window.location && window.location.origin)
+      ? window.location.origin
+      : '';
+  return origin + pathOrUrl;
+}
+
 interface SEOProps {
-  title: string;
-  description: string;
-  canonical?: string;
-  ogType?: string;
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  ogImagePath?: string;
   noindex?: boolean;
-  schema?: object | object[];
 }
 
 export default function SEO({
   title,
   description,
-  canonical,
-  ogType = 'website',
+  canonicalPath,
+  ogImagePath,
   noindex = false,
-  schema
 }: SEOProps) {
-  const fullTitle = title.includes('All Phase') ? title : `${title} | All Phase Construction`;
-
-  // SELF-REFERENCING CANONICAL: Always use current pathname unless explicitly overridden
-  // This ensures each page points to itself, not the homepage
-  const currentPath = window.location.pathname;
-  const canonicalUrl = canonical || `https://allphaseconstructionfl.com${currentPath}`;
+  const canonicalUrl = canonicalPath ? absUrl(canonicalPath) : undefined;
+  const ogImageUrl = ogImagePath ? absUrl(ogImagePath) : undefined;
 
   return (
     <Helmet>
-      <title>{fullTitle}</title>
-      <meta name="description" content={description} />
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
-      {!noindex && <meta name="robots" content="index, follow" />}
+      {/* Primary */}
+      {title ? <title>{title}</title> : null}
+      {description ? <meta name="description" content={description} /> : null}
 
-      {/* Self-Referencing Canonical - Each page points to itself */}
-      <link rel="canonical" href={canonicalUrl} />
+      {/* Robots */}
+      <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
+
+      {/* Canonical */}
+      {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
 
       {/* Open Graph */}
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:type" content="website" />
+      {title ? <meta property="og:title" content={title} /> : null}
+      {description ? <meta property="og:description" content={description} /> : null}
+      {canonicalUrl ? <meta property="og:url" content={canonicalUrl} /> : null}
+      {ogImageUrl ? <meta property="og:image" content={ogImageUrl} /> : null}
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-
-      {/* Structured Data */}
-      {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(Array.isArray(schema) ? schema : [schema])}
-        </script>
-      )}
+      {/* Twitter (optional but clean) */}
+      <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+      {title ? <meta name="twitter:title" content={title} /> : null}
+      {description ? <meta name="twitter:description" content={description} /> : null}
+      {ogImageUrl ? <meta name="twitter:image" content={ogImageUrl} /> : null}
     </Helmet>
   );
 }
