@@ -169,13 +169,15 @@ export default function Header() {
           <div className="flex items-center lg:min-w-[280px]">
             <Link to="/" className="flex items-center gap-3" aria-label="All Phase Construction USA - Home">
               <img
-                src="/logo-optimized.webp"
+                src="/ui-logo-320.webp"
+                srcSet="/ui-logo-240.webp 240w, /ui-logo-320.webp 320w, /ui-logo-480.webp 480w"
+                sizes="(max-width: 640px) 160px, 280px"
                 alt="All Phase Construction USA"
                 className="h-14 sm:h-[72px] md:h-[84px] lg:h-[100px] w-auto object-contain"
-                width="800"
-                height="533"
+                width="320"
+                height="213"
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
               />
               <div className="flex flex-col">
                 <span className="hidden lg:block text-white font-bold text-base xl:text-lg whitespace-nowrap leading-tight">
