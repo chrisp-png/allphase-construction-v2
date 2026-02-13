@@ -56,6 +56,19 @@ accessibility = 0.9
 best-practices = 0.8
 seo = 0.9
 
+[[plugins]]
+package = "netlify-plugin-prerenderio"
+
+  [plugins.inputs]
+  crawlerUserAgents = [
+    "googlebot",
+    "bingbot",
+    "yandex",
+    "baiduspider",
+    "duckduckbot",
+    "slurp"
+  ]
+
 [[headers]]
 for = "/*"
 
