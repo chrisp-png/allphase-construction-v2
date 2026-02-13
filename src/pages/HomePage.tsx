@@ -1,3 +1,4 @@
+// Bolt-GitHub-Netlify Connection Test - 2026-02-13
 import { Helmet } from 'react-helmet-async';
 import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Award } from 'lucide-react';
 import HeroRoofing from '../components/HeroRoofing';
