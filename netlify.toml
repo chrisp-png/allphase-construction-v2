@@ -56,10 +56,6 @@ accessibility = 0.9
 best-practices = 0.8
 seo = 0.9
 
-[[edge_functions]]
-path = "/*"
-function = "prerender"
-
 [[headers]]
 for = "/*"
 
