@@ -127,6 +127,12 @@ status = 301
 force = true
 
 [[redirects]]
+from = "/roofing-contractor-deerfield-beach-fl"
+to = "/locations/deerfield-beach"
+status = 301
+force = true
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
