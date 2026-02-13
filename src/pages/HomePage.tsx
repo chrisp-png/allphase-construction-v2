@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Award } from 'lucide-react';
 import HeroRoofing from '../components/HeroRoofing';
@@ -197,24 +196,12 @@ export default function HomePage() {
     ]
   };
 
-  useEffect(() => {
-    document.title = 'All Phase Construction USA | Dual-Licensed Roofing Specialist in Deerfield Beach';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'All Phase Construction USA is your Dual-Licensed Roofing Specialist in Deerfield Beach. Expert HVHZ-compliant roof repairs and replacements for Broward & Palm Beach Counties. (754) 227-5605.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'All Phase Construction USA is your Dual-Licensed Roofing Specialist in Deerfield Beach. Expert HVHZ-compliant roof repairs and replacements for Broward & Palm Beach Counties. (754) 227-5605.';
-      document.head.appendChild(meta);
-    }
-  }, []);
+  // Static SEO metadata is set in index.html for optimal crawling performance
+  // React Helmet is used only for structured data (schemas) below
 
   return (
     <>
       <Helmet>
-        <link rel="canonical" href="https://allphaseconstructionfl.com/" />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
