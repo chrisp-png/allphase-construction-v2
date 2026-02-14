@@ -288,13 +288,62 @@ export default function DeerfieldBeachCityPage() {
             </div>
 
             {/* Right Column - Content Card */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700 flex flex-col justify-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Introduction to Roofing Services
-              </h2>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                Your roof is your home's first line of defense against the elements, making roofing services a top priority for every homeowner. Whether you're dealing with a leaky roof, need a thorough roof inspection, or are considering a full roof replacement, working with a highly skilled contractor is essential. Professional roofing services cover everything from minor roof repair to the installation of a brand new roof, ensuring that every job is completed to the highest quality standards. A reputable contractor will provide expert guidance, help you explore your options, and ensure your roof is installed or repaired correctly the first time. If you're looking to find a reliable provider for your next roofing project, start by researching local contractors with a proven track record for quality and customer satisfaction. The right team will provide the services you need to protect your home and give you peace of mind.
-              </p>
+            <div className="relative bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700/50 flex flex-col justify-center overflow-hidden">
+              {/* Subtle accent gradient */}
+              <div className="absolute top-0 right-0 w-48 h-48 bg-red-600/5 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-red-600/5 rounded-full blur-3xl"></div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 bg-red-600/10 border border-red-600/20 text-red-500 px-3 py-1 rounded-full text-xs font-semibold mb-4 w-fit">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></span>
+                  Expert Guidance
+                </div>
+
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                  Introduction to Roofing Services
+                </h2>
+
+                <div className="w-12 h-1 bg-gradient-to-r from-red-600 to-transparent rounded-full mb-6"></div>
+
+                <p className="text-base text-gray-300 leading-relaxed mb-6">
+                  Your roof is your home's first line of defense against the elements, making roofing services a top priority for every homeowner.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-red-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-2 h-2 rounded-full bg-red-600"></div>
+                    </div>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      Whether you're dealing with a leaky roof, need a thorough roof inspection, or are considering a full roof replacement, working with a highly skilled contractor is essential.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-red-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-2 h-2 rounded-full bg-red-600"></div>
+                    </div>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      Professional roofing services cover everything from minor roof repair to the installation of a brand new roof, ensuring every job is completed to the highest quality standards.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-red-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-2 h-2 rounded-full bg-red-600"></div>
+                    </div>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      A reputable contractor will provide expert guidance, help you explore your options, and ensure your roof is installed or repaired correctly the first time.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-gray-700/50">
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    If you're looking to find a reliable provider for your next roofing project, start by researching local contractors with a proven track record for quality and customer satisfaction.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
