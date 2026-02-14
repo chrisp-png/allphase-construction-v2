@@ -207,8 +207,8 @@ export function generateSEOMetadata(path: string): SEOMetadata {
 
   // Fallback
   return {
-    title: 'All Phase Construction USA | Dual-Licensed Roofing Specialist',
-    description: 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Call (754) 227-5605',
+    title: 'Roofing Contractor — All Phase Construction USA | Broward & Palm Beach',
+    description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
     canonical: `https://allphaseconstructionfl.com${path}`
   };
 }

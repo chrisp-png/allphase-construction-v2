@@ -632,8 +632,8 @@ function defaultServicePageContent(pageTitle) {
 function homepageContent() {
   return `
 <section id="seo-static-content">
-  <h1>All Phase Construction USA | Dual-Licensed Roofing Specialist</h1>
-  <p><strong>Expert Roofing Solutions backed by General Contracting Authority. Serving Broward & Palm Beach Counties from our Deerfield Beach Headquarters.</strong></p>
+  <h1>Roofing Contractor — All Phase Construction USA | Broward & Palm Beach</h1>
+  <p><strong>Hurricane-compliant HVHZ roofing installation for Broward and Palm Beach County. Dual-licensed contractor specializing in wind-code compliant roofing systems.</strong></p>
 
   <h2>Our Edge</h2>
   <p>What sets us apart from standard roofing contractors:</p>
@@ -804,8 +804,8 @@ function getSEOMetadata(urlPath, cityName = null) {
 
   // Fallback
   return {
-    title: 'All Phase Construction USA | Dual-Licensed Roofing Specialist',
-    description: 'Licensed roofing company in Broward & Palm Beach County. Expert roof replacement, repair & inspection. Call (754) 227-5605',
+    title: 'Roofing Contractor — All Phase Construction USA | Broward & Palm Beach',
+    description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
     canonical: `https://allphaseconstructionfl.com${normalizedPath}`
   };
 }
