@@ -185,7 +185,7 @@ export default function DeerfieldBeachPage() {
           {/* HERO SECTION */}
           <div className="text-center max-w-4xl mx-auto mb-20">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Roofing Contractor in Deerfield Beach, FL
+              Roofing Contractor in Deerfield Beach, FL — Roof Repair, Replacement & Inspection-First Diagnostics
             </h1>
 
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-8 border border-red-600/20">
@@ -194,7 +194,7 @@ export default function DeerfieldBeachPage() {
             </div>
 
             <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
-              All Phase Construction USA is headquartered in <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach, Florida</Link> and serves homeowners throughout the region with inspection-driven roofing, HVHZ-compliant installations, and insurance-defensible documentation.
+              Serving Deerfield Beach (33441/33442) and Broward & Palm Beach Counties with code-compliant roof repair and roof replacement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
