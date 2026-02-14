@@ -151,12 +151,16 @@ for (const { slug, city } of citiesOnly) {
 
 console.log(`✅ Added ${citiesOnly.length * 3} city pages (3 silos × ${citiesOnly.length} cities)\n`);
 
-// Generate XML
+// Generate XML with lastmod
+// Use current build date for all URLs (ISO 8601 YYYY-MM-DD format)
+const buildDate = new Date().toISOString().slice(0, 10);
+
 const urlEntries = entries.map(entry => {
   const url = `${CANONICAL_DOMAIN}${entry.path}`;
 
   let urlEntry = `  <url>\n`;
   urlEntry += `    <loc>${url}</loc>\n`;
+  urlEntry += `    <lastmod>${buildDate}</lastmod>\n`;
 
   if (entry.changefreq) {
     urlEntry += `    <changefreq>${entry.changefreq}</changefreq>\n`;
@@ -183,7 +187,8 @@ fs.writeFileSync(outputPath, xml, 'utf8');
 console.log('✅ Sitemap generated successfully!\n');
 console.log(`Location: public/sitemap.xml`);
 console.log(`Total URLs: ${entries.length}`);
-console.log(`Domain: ${CANONICAL_DOMAIN}\n`);
+console.log(`Domain: ${CANONICAL_DOMAIN}`);
+console.log(`Build Date (lastmod): ${buildDate}\n`);
 
 // Statistics
 const weekly = entries.filter(r => r.changefreq === 'weekly').length;

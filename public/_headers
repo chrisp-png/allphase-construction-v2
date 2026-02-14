@@ -7,6 +7,11 @@
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
   Netlify-CDN-Cache-Control: no-store
 
+# Sitemap - ensure proper Content-Type
+/sitemap.xml
+  Content-Type: application/xml; charset=UTF-8
+  X-Robots-Tag: index, follow
+
 # Global headers for all paths
 /*
   X-Robots-Tag: index, follow
