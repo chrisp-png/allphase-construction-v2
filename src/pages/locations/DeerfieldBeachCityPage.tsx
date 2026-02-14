@@ -287,122 +287,132 @@ export default function DeerfieldBeachCityPage() {
               </div>
             </div>
 
-            {/* Right Column - Hero Form */}
-            <div id="hero-form" className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Request a Free Roof Assessment
+            {/* Right Column - Content Card */}
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700 flex flex-col justify-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                Introduction to Roofing Services
               </h2>
-              <p className="text-gray-400 mb-6">
-                HVHZ-compliant roof repair and replacement in Broward & Palm Beach Counties.
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Your roof is your home's first line of defense against the elements, making roofing services a top priority for every homeowner. Whether you're dealing with a leaky roof, need a thorough roof inspection, or are considering a full roof replacement, working with a highly skilled contractor is essential. Professional roofing services cover everything from minor roof repair to the installation of a brand new roof, ensuring that every job is completed to the highest quality standards. A reputable contractor will provide expert guidance, help you explore your options, and ensure your roof is installed or repaired correctly the first time. If you're looking to find a reliable provider for your next roofing project, start by researching local contractors with a proven track record for quality and customer satisfaction. The right team will provide the services you need to protect your home and give you peace of mind.
+              </p>
+            </div>
+          </div>
+
+          {/* Request a Free Roof Assessment Form */}
+          <div id="hero-form" className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700 mb-12 max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              Request a Free Roof Assessment
+            </h2>
+            <p className="text-gray-400 mb-6">
+              HVHZ-compliant roof repair and replacement in Broward & Palm Beach Counties.
+            </p>
+
+            <form action="https://formspree.io/f/mzdbydvv" method="POST" className="space-y-4">
+              <input type="hidden" name="source_page" value="Deerfield Beach Location Page" />
+              <input type="hidden" name="_subject" value="🏠 Deerfield Beach Hero Form Submission" />
+
+              <div>
+                <label htmlFor="hero-full-name" className="block text-sm font-medium text-gray-300 mb-2">
+                  Full Name *
+                </label>
+                <input
+                  type="text"
+                  id="hero-full-name"
+                  name="full_name"
+                  required
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
+                  placeholder="John Smith"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="hero-phone" className="block text-sm font-medium text-gray-300 mb-2">
+                  Phone *
+                </label>
+                <input
+                  type="tel"
+                  id="hero-phone"
+                  name="phone"
+                  required
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
+                  placeholder="(754) 227-5605"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="hero-email" className="block text-sm font-medium text-gray-300 mb-2">
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  id="hero-email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="hero-city" className="block text-sm font-medium text-gray-300 mb-2">
+                  City *
+                </label>
+                <input
+                  type="text"
+                  id="hero-city"
+                  name="city"
+                  required
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
+                  placeholder="Deerfield Beach"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="hero-roof-type" className="block text-sm font-medium text-gray-300 mb-2">
+                  Roof Type
+                </label>
+                <select
+                  id="hero-roof-type"
+                  name="roof_type"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white"
+                >
+                  <option value="">Select roof type</option>
+                  <option value="Shingle">Shingle</option>
+                  <option value="Tile">Tile</option>
+                  <option value="Metal">Metal</option>
+                  <option value="Flat">Flat</option>
+                  <option value="Not Sure">Not Sure</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="hero-message" className="block text-sm font-medium text-gray-300 mb-2">
+                  Message (Optional)
+                </label>
+                <textarea
+                  id="hero-message"
+                  name="message"
+                  rows={3}
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all resize-none text-white placeholder-gray-500"
+                  placeholder="Tell us about your roofing needs..."
+                ></textarea>
+              </div>
+
+              <p className="text-sm text-gray-400 text-center">
+                No obligation. No pressure. Just a professional evaluation.
               </p>
 
-              <form action="https://formspree.io/f/mzdbydvv" method="POST" className="space-y-4">
-                <input type="hidden" name="source_page" value="Deerfield Beach Location Page" />
-                <input type="hidden" name="_subject" value="🏠 Deerfield Beach Hero Form Submission" />
+              <button
+                type="submit"
+                className="w-full py-4 bg-red-600 text-white rounded-lg font-semibold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Schedule My Inspection
+              </button>
 
-                <div>
-                  <label htmlFor="hero-full-name" className="block text-sm font-medium text-gray-300 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="hero-full-name"
-                    name="full_name"
-                    required
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                    placeholder="John Smith"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="hero-phone" className="block text-sm font-medium text-gray-300 mb-2">
-                    Phone *
-                  </label>
-                  <input
-                    type="tel"
-                    id="hero-phone"
-                    name="phone"
-                    required
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                    placeholder="(754) 227-5605"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="hero-email" className="block text-sm font-medium text-gray-300 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="hero-email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                    placeholder="john@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="hero-city" className="block text-sm font-medium text-gray-300 mb-2">
-                    City *
-                  </label>
-                  <input
-                    type="text"
-                    id="hero-city"
-                    name="city"
-                    required
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                    placeholder="Deerfield Beach"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="hero-roof-type" className="block text-sm font-medium text-gray-300 mb-2">
-                    Roof Type
-                  </label>
-                  <select
-                    id="hero-roof-type"
-                    name="roof_type"
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white"
-                  >
-                    <option value="">Select roof type</option>
-                    <option value="Shingle">Shingle</option>
-                    <option value="Tile">Tile</option>
-                    <option value="Metal">Metal</option>
-                    <option value="Flat">Flat</option>
-                    <option value="Not Sure">Not Sure</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="hero-message" className="block text-sm font-medium text-gray-300 mb-2">
-                    Message (Optional)
-                  </label>
-                  <textarea
-                    id="hero-message"
-                    name="message"
-                    rows={3}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all resize-none text-white placeholder-gray-500"
-                    placeholder="Tell us about your roofing needs..."
-                  ></textarea>
-                </div>
-
-                <p className="text-sm text-gray-400 text-center">
-                  No obligation. No pressure. Just a professional evaluation.
-                </p>
-
-                <button
-                  type="submit"
-                  className="w-full py-4 bg-red-600 text-white rounded-lg font-semibold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Schedule My Inspection
-                </button>
-
-                <p className="text-xs text-gray-400 text-center leading-relaxed">
-                  We respond within 45 minutes during normal business hours. After hours, we'll call you the next morning to speak with a live roofing specialist.
-                </p>
-              </form>
-            </div>
+              <p className="text-xs text-gray-400 text-center leading-relaxed">
+                We respond within 45 minutes during normal business hours. After hours, we'll call you the next morning to speak with a live roofing specialist.
+              </p>
+            </form>
           </div>
 
           {/* Service Pills Row */}
