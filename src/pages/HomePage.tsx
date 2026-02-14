@@ -1,6 +1,7 @@
 // Bolt-GitHub-Netlify Connection Test - 2026-02-13
 import { Helmet } from 'react-helmet-async';
 import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Award } from 'lucide-react';
+import SEO from '../components/SEO';
 import HeroRoofing from '../components/HeroRoofing';
 import HowItWorks from '../components/HowItWorks';
 import TrustBadges from '../components/TrustBadges';
@@ -202,6 +203,11 @@ export default function HomePage() {
 
   return (
     <>
+      <SEO
+        title="Roofing Contractor – All Phase Construction USA | Broward & Palm Beach"
+        description="All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems."
+        canonicalPath="/"
+      />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
