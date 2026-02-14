@@ -208,6 +208,7 @@ export default function HomePage() {
         description="All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems."
         canonicalPath="/"
       />
+      {/* NuclearMetadata now controls homepage SEO alongside React Helmet */}
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}

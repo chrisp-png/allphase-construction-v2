@@ -17,12 +17,7 @@ export default function NuclearMetadata() {
   useEffect(() => {
     const path = location.pathname;
 
-    // HOMEPAGE IDENTITY LOCK: Skip homepage entirely - preserve hard-coded tags from index.html
-    if (path === '/') {
-      console.log('[NUCLEAR METADATA] Skipping homepage - preserving identity lock from index.html');
-      return;
-    }
-
+    // React now controls homepage SEO - no skip needed
     // Get SEO metadata from centralized configuration
     const metadata = generateSEOMetadata(path);
     const { title, description, canonical } = metadata;
