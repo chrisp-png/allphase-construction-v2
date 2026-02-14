@@ -136,11 +136,13 @@ function getSEOMetadata(urlPath, cityName = null) {
     }
   }
 
-  return {
-    title: 'Roofing Contractor — All Phase Construction USA | Broward & Palm Beach',
-    description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
-    canonical: `https://allphaseconstructionfl.com${normalizedPath}/`
-  };
+  // Fallback - FAIL LOUDLY if metadata missing
+  // This prevents silent injection of wrong metadata at build time
+  throw new Error(
+    `❌ MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
+    `Add explicit metadata to scripts/seo-titles.json or handle this route in getSEOMetadata().\n` +
+    `Routes should NOT rely on fallback metadata - every route must be explicitly defined.`
+  );
 }
 
 /**
