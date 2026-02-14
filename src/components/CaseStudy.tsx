@@ -64,35 +64,8 @@ export default function CaseStudy() {
   const [isPaused, setIsPaused] = useState(false);
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
 
-  useEffect(() => {
-    const scripts = caseStudies.map((study) => {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Article',
-        headline: study.schema.headline,
-        description: study.schema.description,
-        datePublished: study.schema.datePublished,
-        author: {
-          '@type': 'Organization',
-          name: 'All Phase Construction USA',
-          url: 'https://allphaseusa.com'
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: 'All Phase Construction USA',
-          url: 'https://allphaseusa.com'
-        }
-      });
-      document.head.appendChild(script);
-      return script;
-    });
-
-    return () => {
-      scripts.forEach(script => document.head.removeChild(script));
-    };
-  }, []);
+  // Article schema removed from homepage per SEO requirements
+  // Article schema should only appear on individual case study detail pages
 
   useEffect(() => {
     if (isPaused) return;
