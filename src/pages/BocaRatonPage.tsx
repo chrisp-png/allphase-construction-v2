@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Phone, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
+import SEO from '../components/SEO';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
+import { CITY_SERVICE_AREA_SEO_OVERRIDES } from '../config/cityServiceAreaSEO';
 
 interface PhotoBreakProps {
   src: string;
@@ -29,95 +32,16 @@ function PhotoBreak({ src, alt, loading = 'lazy' }: PhotoBreakProps) {
 export default function BocaRatonPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  useEffect(() => {
-    document.title = 'Roofer in Boca Raton FL | All Phase Construction USA';
+  // City configuration
+  const citySlug = 'boca-raton';
+  const cityName = 'Boca Raton';
 
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Licensed roofer in Boca Raton FL providing inspections, repairs, and roof replacement. Dual-licensed, permit-ready, hurricane-rated systems.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Licensed roofer in Boca Raton FL providing inspections, repairs, and roof replacement. Dual-licensed, permit-ready, hurricane-rated systems.';
-      document.head.appendChild(meta);
-    }
+  // Get SEO data with override system
+  const seoOverride = CITY_SERVICE_AREA_SEO_OVERRIDES[citySlug];
+  const seoTitle = seoOverride?.title || `Roofer in ${cityName} FL | All Phase Construction USA`;
+  const seoDescription = seoOverride?.description || `Licensed roofer in ${cityName} FL providing inspections, repairs, and roof replacement. Dual-licensed, permit-ready, hurricane-rated systems.`;
 
-    const coordinates = getCityCoordinates('Boca Raton');
-
-    const localBusinessSchema = generateLocalBusinessSchema({
-      cityName: 'Boca Raton',
-      stateName: 'Florida',
-      latitude: coordinates?.latitude,
-      longitude: coordinates?.longitude,
-      aggregateRating: {
-        ratingValue: '4.8',
-        reviewCount: '137'
-      }
-    });
-
-    const faqs = [
-      {
-        question: 'What is the 25% reroofing rule in Florida?',
-        answer: 'It refers to code language about how much of a roof can be repaired or replaced within a 12-month period before additional code compliance may be required. SB 4-D revised application for many roofs, often allowing compliance work to be limited to the repaired portion when conditions are met.'
-      },
-      {
-        question: 'What is the average cost for a new roof in Florida?',
-        answer: 'It varies heavily by material and scope. Statewide averages published by remodeling and roofing cost sources commonly show broad ranges, with full replacements on typical homes often landing in the tens of thousands depending on system choice and tear-off needs.'
-      },
-      {
-        question: 'How much does a 2,000 sq ft shingle roof cost?',
-        answer: '"2,000 sq ft" can mean home size, not roof area, so pricing needs a measurement. Many pricing references estimate asphalt systems by cost per square foot or per square (100 sq ft), then adjust for pitch, tear-off, deck work, and code items.'
-      },
-      {
-        question: 'What is the hourly rate for a roofer in Florida?',
-        answer: 'Worker pay and contractor billing are different numbers. Wage datasets and salary aggregators often show Florida roofer wages around the low-to-mid $20s per hour on average, but contractor labor billed to a job is typically higher because it includes overhead, insurance, supervision, and warranty risk.'
-      },
-      {
-        question: 'Do you handle permits and inspections in Boca Raton?',
-        answer: 'Yes. We manage permits and coordinate inspections as part of a proper reroof process.'
-      },
-      {
-        question: 'How fast can you inspect a leak?',
-        answer: 'We prioritize active leaks and storm-related damage. Call and we will schedule the fastest available inspection slot.'
-      }
-    ];
-
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer
-        }
-      }))
-    };
-
-    const breadcrumbSchema = generateBreadcrumbSchema([
-      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
-      { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Boca Raton', url: 'https://allphaseconstructionfl.com/locations/boca-raton' }
-    ]);
-
-    const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
-    existingSchemas.forEach(schema => schema.remove());
-
-    const schemas = [localBusinessSchema, faqSchema, breadcrumbSchema];
-    schemas.forEach(schema => {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(schema);
-      document.head.appendChild(script);
-    });
-
-    return () => {
-      const schemaScripts = document.querySelectorAll('script[type="application/ld+json"]');
-      schemaScripts.forEach(script => script.remove());
-    };
-  }, []);
-
+  // FAQ data for the page
   const faqData = [
     {
       question: 'What is the 25% reroofing rule in Florida?',
@@ -145,9 +69,58 @@ export default function BocaRatonPage() {
     }
   ];
 
+  // Generate schemas
+  const coordinates = getCityCoordinates(cityName);
+  const localBusinessSchema = generateLocalBusinessSchema({
+    cityName: cityName,
+    stateName: 'Florida',
+    latitude: coordinates?.latitude,
+    longitude: coordinates?.longitude,
+    aggregateRating: {
+      ratingValue: '4.8',
+      reviewCount: '137'
+    }
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+    { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/locations' },
+    { name: cityName, url: `https://allphaseconstructionfl.com/locations/${citySlug}` }
+  ]);
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
-    <div className="min-h-screen bg-[#09090b]">
-      <div className="pt-36">
+    <>
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        canonicalPath={`/locations/${citySlug}`}
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-[#09090b]">
+        <div className="pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <nav className="flex items-center space-x-2 text-sm mb-8">
             <Link to="/" className="text-zinc-400 hover:text-red-600 transition-colors">
@@ -535,6 +508,7 @@ export default function BocaRatonPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
