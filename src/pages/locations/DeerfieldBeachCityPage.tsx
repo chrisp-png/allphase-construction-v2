@@ -165,11 +165,31 @@ export default function DeerfieldBeachCityPage() {
                   "postalCode": "33442",
                   "addressCountry": "US"
                 },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 26.3185,
+                  "longitude": -80.1174
+                },
                 "areaServed": [
                   { "@type": "City", "name": "Deerfield Beach" },
                   { "@type": "AdministrativeArea", "name": "Broward County" },
                   { "@type": "AdministrativeArea", "name": "Palm Beach County" }
                 ],
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                  }
+                ],
+                "priceRange": "$$",
                 "hasMap": "https://maps.app.goo.gl/BTfj3TnSfJztJE4x6",
                 "sameAs": [
                   "https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381"
