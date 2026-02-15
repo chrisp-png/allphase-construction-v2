@@ -673,20 +673,17 @@ export default function DeerfieldBeachCityPage() {
               </table>
             </div>
 
-            <div className="bg-gray-900/50 rounded-lg p-6 border border-gray-600">
-              <p className="text-gray-300 text-lg leading-relaxed">
+            <div className="mt-6">
+              <p className="text-gray-400 text-lg leading-relaxed mb-4">
                 When roofing upgrades involve structural reinforcement or insurance-driven improvements, working with a dual-licensed roofing contractor reduces delays, eliminates trade coordination issues, and ensures full code compliance under one responsible party.
               </p>
+              <p className="text-gray-400 text-lg leading-relaxed mb-4">
+                It's also important to hire professional roofers for proper assessment, quality workmanship, and safety throughout the roofing process.
+              </p>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                Learn more about what to look for when <Link to="/how-to-hire-roofing-contractor" className="underline hover:text-white">selecting a roofing contractor in South Florida</Link>.
+              </p>
             </div>
-
-            <p className="text-gray-400 text-center mt-6">
-              <Link
-                to="/how-to-hire-roofing-contractor"
-                className="text-red-600 hover:text-red-500 transition-colors"
-              >
-                Learn more about what to look for when selecting a roofing contractor in South Florida.
-              </Link>
-            </p>
           </div>
 
           {/* Insurance-Defensible Roofing Documentation */}
