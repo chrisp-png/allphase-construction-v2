@@ -14,12 +14,21 @@ import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCir
 import Contact from '../../components/Contact';
 import Lightbox from '../../components/Lightbox';
 import ChamberBadges from '../../components/ChamberBadges';
+import { getLocationBySlug } from '../../data/locations';
+import { buildLocationSeo, generateDeerfieldBeachSchema } from '../../lib/locationSeo';
 
 export default function DeerfieldBeachCityPage() {
+  // Get location data and SEO from single source of truth
+  const location = getLocationBySlug('deerfield-beach');
+  const seo = location ? buildLocationSeo(location) : null;
+  const schema = generateDeerfieldBeachSchema();
+
   // Force-inject title immediately to prevent blank page
   useEffect(() => {
-    document.title = 'Deerfield Beach Roofing Contractor | All Phase Construction USA';
-  }, []);
+    if (seo) {
+      document.title = seo.title;
+    }
+  }, [seo]);
 
   // Lightbox state for recent projects
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -102,90 +111,33 @@ export default function DeerfieldBeachCityPage() {
     setLightboxIndex((prev) => (prev - 1 + recentProjects.length) % recentProjects.length);
   };
 
+  // Fallback if location not found
+  if (!seo) {
+    return <div>Location not found</div>;
+  }
+
   return (
     <>
       <Helmet>
-        <title>Deerfield Beach Roofing Contractor | All Phase Construction USA</title>
-        <meta
-          name="description"
-          content="All Phase Construction USA is a licensed roofing contractor serving Deerfield Beach, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair."
-        />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta name="robots" content={seo.robots} />
+        <link rel="canonical" href={seo.canonical} />
 
-        {/* Open Graph - Deerfield Beach Money Page */}
-        <meta property="og:title" content="Deerfield Beach Roofing Contractor | All Phase Construction USA" />
-        <meta property="og:description" content="Licensed Deerfield Beach roofing contractor specializing in hurricane-compliant installations and repairs." />
-        <meta property="og:url" content="https://allphaseconstructionfl.com/locations/deerfield-beach" />
+        {/* Open Graph */}
+        <meta property="og:title" content={seo.ogTitle} />
+        <meta property="og:description" content={seo.ogDescription} />
+        <meta property="og:url" content={seo.ogUrl} />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Card - Deerfield Beach Money Page */}
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Deerfield Beach Roofing Contractor | All Phase Construction USA" />
-        <meta name="twitter:description" content="Licensed Deerfield Beach roofing contractor specializing in hurricane-compliant installations and repairs." />
+        <meta name="twitter:title" content={seo.ogTitle} />
+        <meta name="twitter:description" content={seo.ogDescription} />
 
+        {/* JSON-LD Schema */}
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "RoofingContractor",
-            "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach#roofingcontractor",
-            "name": "All Phase Construction USA",
-            "url": "https://allphaseconstructionfl.com/locations/deerfield-beach",
-            "telephone": "+1-754-227-5605",
-            "priceRange": "$$",
-            "foundingDate": "2006",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "590 Goolsby Blvd",
-              "addressLocality": "Deerfield Beach",
-              "addressRegion": "FL",
-              "postalCode": "33442",
-              "addressCountry": "US"
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Deerfield Beach",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressRegion": "FL",
-                  "addressCountry": "US"
-                }
-              },
-              {
-                "@type": "AdministrativeArea",
-                "name": "Broward County",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressRegion": "FL",
-                  "addressCountry": "US"
-                }
-              },
-              {
-                "@type": "AdministrativeArea",
-                "name": "Palm Beach County",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressRegion": "FL",
-                  "addressCountry": "US"
-                }
-              }
-            ],
-            "hasMap": "https://www.google.com/maps/place/590+Goolsby+Blvd,+Deerfield+Beach,+FL+33442",
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-                "opens": "08:00",
-                "closes": "17:00"
-              }
-            ],
-            "sameAs": [
-              "https://www.allphaseconstructionfl.com/",
-              "https://www.youtube.com/@allphaseconstructionusa5626",
-              "https://share.google/GoLG8dytlgHgXVjKK"
-            ]
-          })}
+          {JSON.stringify(schema)}
         </script>
       </Helmet>
 

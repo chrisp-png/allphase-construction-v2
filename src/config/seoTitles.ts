@@ -104,11 +104,6 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Commercial and residential flat roofing in South Florida. TPO, EPDM, modified bitumen, and built-up roofing systems.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
-  '/locations/deerfield-beach': {
-    title: 'Deerfield Beach Roofing Contractor | All Phase Construction USA',
-    description: 'All Phase Construction USA is a licensed roofing contractor serving Deerfield Beach, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.',
-    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
-  },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase Construction USA',
     description: 'Expert guide on hiring a roofing contractor in South Florida. Learn what to look for, questions to ask, and how to avoid scams.',

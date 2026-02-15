@@ -8,13 +8,65 @@ const projectRoot = path.resolve(__dirname, '..');
 const publicDir = path.resolve(projectRoot, 'public');
 const distDir = path.resolve(projectRoot, 'dist');
 
-// Load cities data
+// Load cities data (for roof-repair and roof-inspection pages only)
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 
-// Load SEO titles configuration
+// Load SEO titles configuration (for non-location pages only)
 const seoTitlesPath = path.join(__dirname, 'seo-titles.json');
 const seoTitlesConfig = JSON.parse(fs.readFileSync(seoTitlesPath, 'utf-8'));
+
+// Load location data (SINGLE SOURCE OF TRUTH for /locations/:slug pages)
+const locationsDataPath = path.join(projectRoot, 'src', 'data', 'locations.ts');
+const locationsRaw = fs.readFileSync(locationsDataPath, 'utf-8');
+// Parse locations array from TypeScript file
+const locationsMatch = locationsRaw.match(/export const locations: Location\[\] = \[([\s\S]*?)\];/);
+if (!locationsMatch) {
+  throw new Error('Could not parse locations from src/data/locations.ts');
+}
+const locationsArrayText = '[' + locationsMatch[1] + ']';
+// Convert TypeScript object notation to JSON-compatible format
+const locationsJson = locationsArrayText
+  .replace(/\/\/[^\n]*/g, '') // Remove single-line comments
+  .replace(/\/\*[\s\S]*?\*\//g, '') // Remove multi-line comments
+  .replace(/(\w+):/g, '"$1":') // Quote keys
+  .replace(/'/g, '"') // Convert single quotes to double quotes
+  .replace(/,(\s*[}\]])/g, '$1'); // Remove trailing commas
+const LOCATIONS = JSON.parse(locationsJson);
+
+/**
+ * Build SEO metadata for a location (matches src/lib/locationSeo.ts logic)
+ */
+function buildLocationSeo(location) {
+  const { slug, city, state } = location;
+
+  // Generate defaults from templates
+  const defaultTitle = `${city} Roofing Contractor | All Phase Construction USA`;
+  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.`;
+  const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
+  const defaultRobots = 'index, follow';
+
+  // Apply overrides or use defaults
+  const title = location.titleOverride || defaultTitle;
+  const description = location.descriptionOverride || defaultDescription;
+  const canonical = location.canonicalOverride || defaultCanonical;
+  const robots = location.robotsOverride || defaultRobots;
+
+  // Open Graph defaults to same as standard meta unless overridden
+  const ogTitle = location.ogTitleOverride || title;
+  const ogDescription = location.ogDescriptionOverride || description;
+  const ogUrl = canonical;
+
+  return {
+    title,
+    description,
+    canonical,
+    robots,
+    ogTitle,
+    ogDescription,
+    ogUrl
+  };
+}
 
 /**
  * Company Authority Footer - 250+ words of E-E-A-T reinforcement
@@ -848,7 +900,8 @@ function getSEOMetadata(urlPath, cityName = null) {
     };
   }
 
-  // Handle dynamic city pages
+  // Handle dynamic city pages (roof-repair and roof-inspection only)
+  // NOTE: /locations/:slug pages are handled by buildLocationSeo() and should NOT use this function
   if (cityName) {
     if (normalizedPath.includes('/roof-repair/')) {
       return {
@@ -861,21 +914,6 @@ function getSEOMetadata(urlPath, cityName = null) {
       return {
         title: `${cityName} Roof Inspection | 21-Point Professional Assessment`,
         description: `Professional roof inspection in ${cityName}, FL. Free 21-point assessment with photo documentation. Pre-purchase, insurance, storm damage inspections. Call (754) 227-5605.`,
-        canonical: `https://allphaseconstructionfl.com${normalizedPath}`
-      };
-    }
-    if (normalizedPath.includes('/locations/')) {
-      // Special SEO for Deerfield Beach HQ page
-      if (normalizedPath === '/locations/deerfield-beach') {
-        return {
-          title: `Deerfield Beach Roofing Contractor | All Phase Construction USA HQ`,
-          description: `All Phase Construction USA headquarters in Deerfield Beach, FL. Dual-licensed roofing contractor (CCC-1331464 & CGC-1526236). 590 Goolsby Blvd. Call (754) 227-5605 for emergency repairs & inspections.`,
-          canonical: `https://allphaseconstructionfl.com${normalizedPath}`
-        };
-      }
-      return {
-        title: `${cityName} Roofing Services | All Phase Construction USA`,
-        description: `Professional roofing services in ${cityName}, FL. Dual-licensed CCC/CGC contractor. Roof repair, inspection, replacement. HVHZ certified. Call (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
@@ -992,54 +1030,51 @@ function generateStaticFiles() {
                           'west-palm-beach', 'delray-beach', 'boynton-beach', 'deerfield-beach',
                           'parkland', 'coconut-creek', 'wellington'];
 
-  console.log('\n📍 Generating 3-Silo City Pages (Service Hub + Repair + Inspection)...\n');
+  console.log('\n📍 Generating Location Pages from Single Source of Truth...\n');
 
+  // Generate /locations/:slug pages from LOCATIONS (single source of truth)
+  LOCATIONS.forEach((location) => {
+    const { slug, city, state } = location;
+
+    // Build SEO from single source of truth
+    const seo = buildLocationSeo(location);
+
+    // Special content for specific cities
+    let hubContent, hubSchema = null;
+
+    if (slug === 'boca-raton') {
+      hubContent = generateBocaRatonServiceHubContent();
+    } else if (slug === 'deerfield-beach') {
+      hubContent = generateDeerfieldBeachHQContent();
+      hubSchema = generateDeerfieldBeachSchema();
+    } else {
+      hubContent = generateServiceHubContent(city, slug);
+    }
+
+    const hubHTML = createHTMLTemplate(
+      seo.title,
+      seo.description,
+      seo.canonical,
+      hubContent,
+      hubSchema,
+      seo.ogDescription
+    );
+
+    // Write to both public/ and dist/ (if dist exists)
+    writeToPublicAndDist(`locations/${slug}/index.html`, hubHTML);
+    console.log(`✓ Generated: public/locations/${slug}/index.html`);
+    totalPages++;
+  });
+
+  console.log('\n📍 Generating 3-Silo City Pages (Repair + Inspection spokes)...\n');
+
+  // Generate /roof-repair/:slug and /roof-inspection/:slug pages
   cities.forEach(({ slug, city }) => {
     const cityName = city;
     const citySlug = slug;
 
     // Skip county-level entries for now
     if (citySlug.includes('county')) return;
-
-    // SILO 1: Service Hub - /locations/[city]
-    // Generate prerendered HTML for ALL cities including Money Pages for SEO
-    const hubPath = `/locations/${citySlug}`;
-
-    // Override metadata for special pages
-    let hubMetadata, hubContent, hubSchema = null;
-
-    if (citySlug === 'boca-raton') {
-      // Boca Raton override
-      hubMetadata = {
-        title: 'Roofer in Boca Raton FL | All Phase Construction USA',
-        description: 'Licensed Florida roofing contractor serving Boca Raton. BBB A+ rated, 4.8★ Google reviews. Dual-licensed CCC-1331464 & CGC-1526236. Call 24/7: (754) 227-5605.',
-        canonical: 'https://allphaseconstructionfl.com/locations/boca-raton'
-      };
-      hubContent = generateBocaRatonServiceHubContent();
-    } else if (citySlug === 'deerfield-beach') {
-      // Deerfield Beach HQ with JSON-LD schema
-      hubMetadata = getSEOMetadata(hubPath, cityName);
-      hubContent = generateDeerfieldBeachHQContent();
-      hubSchema = generateDeerfieldBeachSchema();
-    } else {
-      // All other cities
-      hubMetadata = getSEOMetadata(hubPath, cityName);
-      hubContent = generateServiceHubContent(cityName, citySlug);
-    }
-
-    const hubHTML = createHTMLTemplate(
-      hubMetadata.title,
-      hubMetadata.description,
-      hubMetadata.canonical,
-      hubContent,
-      hubSchema,
-      hubMetadata.ogDescription
-    );
-
-    // Write to both public/ and dist/ (if dist exists)
-    writeToPublicAndDist(`locations/${citySlug}/index.html`, hubHTML);
-    console.log(`✓ Generated: public/locations/${citySlug}/index.html`);
-    totalPages++;
 
     // SILO 2: Roof Repair - /roof-repair/[city]
     const repairPath = `/roof-repair/${citySlug}`;
