@@ -17,10 +17,10 @@ export default function NuclearMetadata() {
   useEffect(() => {
     const path = location.pathname;
 
-    // React now controls homepage SEO - no skip needed
     // Get SEO metadata from centralized configuration
+    // For /locations/:slug pages, this now uses src/data/locations.ts and src/lib/locationSeo.ts
     const metadata = generateSEOMetadata(path);
-    const { title, description, canonical } = metadata;
+    const { title, description, canonical, ogTitle, ogDescription } = metadata;
 
     // FORCE UPDATE DOCUMENT TITLE - NO DELAYS
     if (title) {
@@ -45,16 +45,16 @@ export default function NuclearMetadata() {
     }
     canonicalLink.setAttribute('href', canonical);
 
-    // FORCE UPDATE OG TAGS
-    updateOrCreateMetaTag('property', 'og:title', title);
-    updateOrCreateMetaTag('property', 'og:description', description);
+    // FORCE UPDATE OG TAGS (use overrides if provided)
+    updateOrCreateMetaTag('property', 'og:title', ogTitle || title);
+    updateOrCreateMetaTag('property', 'og:description', ogDescription || description);
     updateOrCreateMetaTag('property', 'og:url', canonical);
     updateOrCreateMetaTag('property', 'og:type', 'website');
 
-    // FORCE UPDATE TWITTER TAGS
+    // FORCE UPDATE TWITTER TAGS (use overrides if provided)
     updateOrCreateMetaTag('name', 'twitter:card', 'summary_large_image');
-    updateOrCreateMetaTag('name', 'twitter:title', title);
-    updateOrCreateMetaTag('name', 'twitter:description', description);
+    updateOrCreateMetaTag('name', 'twitter:title', ogTitle || title);
+    updateOrCreateMetaTag('name', 'twitter:description', ogDescription || description);
 
     // INJECT GLOBAL LOCALBUSINESS SCHEMA (Authority Layer) - Not needed on homepage
     // Homepage has its own LocalBusiness schema from HomePage component

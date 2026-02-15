@@ -7,12 +7,19 @@
  * 2. Runtime metadata updates (components/NuclearMetadata.tsx)
  *
  * Single source of truth for all page titles.
+ *
+ * NOTE: /locations/:slug pages use src/data/locations.ts and src/lib/locationSeo.ts
  */
+
+import { getLocationBySlug } from '../data/locations';
+import { buildLocationSeo } from '../lib/locationSeo';
 
 export interface SEOMetadata {
   title: string;
   description: string;
   canonical: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
 /**
@@ -189,6 +196,31 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     return SEO_TITLES[normalizedPath];
   }
 
+  // Handle /locations/:slug pages - Use the single source of truth
+  if (normalizedPath.startsWith('/locations/') && normalizedPath !== '/locations') {
+    const slug = normalizedPath.replace('/locations/', '').replace(/\/$/, '');
+
+    // Use the location SEO builder (single source of truth)
+    const location = getLocationBySlug(slug);
+    if (location) {
+      const seo = buildLocationSeo(location);
+      return {
+        title: seo.title,
+        description: seo.description,
+        canonical: seo.canonical,
+        ogTitle: seo.ogTitle,
+        ogDescription: seo.ogDescription
+      };
+    }
+
+    // Fallback if location not found in locations.ts
+    return {
+      title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
+      description: `All Phase Construction USA is a licensed roofing contractor serving ${CITY_NAMES[slug] || slug}, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.`,
+      canonical: `https://allphaseconstructionfl.com/locations/${slug}`
+    };
+  }
+
   // Handle blog posts
   if (normalizedPath.startsWith('/blog/') && normalizedPath !== '/blog') {
     const slug = normalizedPath.replace('/blog/', '');
@@ -200,7 +232,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     };
   }
 
-  // Fallback
+  // Fallback - ONLY for unmatched routes (not location pages)
   return {
     title: 'Roofing Contractor — All Phase Construction USA | Broward & Palm Beach',
     description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
