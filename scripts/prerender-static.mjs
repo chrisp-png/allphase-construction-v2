@@ -1179,7 +1179,8 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
   // ============================================================
   const locationsDistDir = path.join(distDir, 'locations');
   if (fs.existsSync(locationsDistDir)) {
-    const locationSlugs = fs.readdirSync(locationsDistDir);
+        // Only check locations that are in the LOCATIONS array (single source of truth)
+    const locationSlugs = LOCATIONS.map(loc => loc.slug);
     for (const slug of locationSlugs) {
       const locationIndexPath = path.join(locationsDistDir, slug, 'index.html');
       if (fs.existsSync(locationIndexPath)) {
