@@ -1148,28 +1148,11 @@ export default function DeerfieldBeachCityPage() {
             <Contact />
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 border border-gray-700 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Schedule Your Roof Inspection in Deerfield Beach Today
-            </h2>
-            <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Get a licensed, HVHZ-compliant roofing evaluation from a local Deerfield Beach specialist.
+          {/* Final Content Section */}
+          <div className="mb-16">
+            <p className="text-gray-400 text-lg leading-relaxed">
+              When facing roof issues, the decision between repair and replacement can be challenging. It's important to consult a professional roofing contractor to assess the extent of the damage. In some cases, minor issues can be fixed with repairs, but if the damage is extensive or affects the underlayment, it may be necessary to replace the entire roof. Finally, working with an experienced contractor ensures you receive expert advice and quality workmanship, giving you peace of mind about your home's protection.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
-              >
-                Schedule My Inspection
-              </Link>
-              <a
-                href="tel:+17542275605"
-                className="inline-flex items-center justify-center gap-2 bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors"
-              >
-                Call (754) 227-5605
-              </a>
-            </div>
           </div>
         </div>
       </div>
