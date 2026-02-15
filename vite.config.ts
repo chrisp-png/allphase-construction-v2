@@ -137,9 +137,10 @@ const manualPublicCopyPlugin = () => ({
         const relativePath = path.relative(publicDir, srcPath);
 
         // DENYLIST: Skip SPA routes that must be handled by React
-        const spaRoutePrefixes = ['locations/', 'roof-repair/', 'roof-inspection/'];
+        // NOTE: 'locations/' is NOT in this list - we have prerendered static HTML for location pages
+        const spaRoutePrefixes = ['roof-repair/', 'roof-inspection/'];
         const isSpaRoute = spaRoutePrefixes.some(prefix =>
-          relativePath.startsWith(prefix) || entry.name === 'locations' || entry.name === 'roof-repair' || entry.name === 'roof-inspection'
+          relativePath.startsWith(prefix) || entry.name === 'roof-repair' || entry.name === 'roof-inspection'
         );
 
         if (entry.isDirectory()) {
