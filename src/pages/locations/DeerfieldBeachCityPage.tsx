@@ -13,6 +13,7 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react';
 import Contact from '../../components/Contact';
 import Lightbox from '../../components/Lightbox';
+import ChamberBadges from '../../components/ChamberBadges';
 
 export default function DeerfieldBeachCityPage() {
   // Force-inject title immediately to prevent blank page
@@ -903,30 +904,9 @@ export default function DeerfieldBeachCityPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <div className="flex justify-center mb-4">
-                  <img
-                    src="/broward-chamber-of-commerce-member-all-phase-construction-usa.png"
-                    alt="Broward County Chamber of Commerce Member – All Phase Construction USA"
-                    className="h-24 w-auto object-contain"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 text-center">
-                  Broward County Chamber of Commerce Member
-                </h3>
-                <p className="text-gray-400 mb-4">
-                  Official member of the Broward County Chamber of Commerce, listed as a licensed roofing contractor serving Deerfield Beach since 2006. Our membership reinforces our commitment to local accountability and professional standards.
-                </p>
-                <a
-                  href="https://www.browardbiz.com/search_results?q=all+phase+construction+usa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 hover:text-red-500 text-sm font-medium inline-flex items-center gap-1 transition-colors"
-                >
-                  View our Chamber profile →
-                </a>
-              </div>
             </div>
+
+            <ChamberBadges />
           </div>
 
           {/* Headquarters Location Map */}
