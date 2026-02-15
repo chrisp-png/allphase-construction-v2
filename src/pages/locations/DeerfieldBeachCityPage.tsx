@@ -181,7 +181,9 @@ export default function DeerfieldBeachCityPage() {
               }
             ],
             "sameAs": [
-              "https://www.allphaseconstructionfl.com/"
+              "https://www.allphaseconstructionfl.com/",
+              "https://www.youtube.com/@allphaseconstructionusa5626",
+              "https://share.google/GoLG8dytlgHgXVjKK"
             ]
           })}
         </script>
