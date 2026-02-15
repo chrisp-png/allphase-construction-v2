@@ -406,7 +406,7 @@ export default function DeerfieldBeachCityPage() {
           </div>
 
           {/* Introduction to Roofing Services Section */}
-          <div className="mb-16 max-w-4xl mx-auto">
+          <div className="mb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Introduction to Roofing Services
             </h2>
