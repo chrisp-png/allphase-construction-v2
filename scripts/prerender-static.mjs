@@ -938,7 +938,7 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
     </div>
         `;
 
-    html = html.replace(/<div\s+id="root">\s*<\/div>/i, `<div id="root">${seoContent}</div>`);
+      html = html.replace('<div id="root"></div>', `<div id="root">${seoContent}</div>`);
 
   return html;
 }
@@ -1185,7 +1185,7 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
       if (fs.existsSync(locationIndexPath)) {
         const locationHTML = fs.readFileSync(locationIndexPath, 'utf-8');
         // FAIL if root is empty (prerender content not injected inside root)
-        if (/<div\s+id="root">\s*<\/div>/i.test(locationHTML)) {
+                if (locationHTML.includes('<div id="root"></div>')) {
           throw new Error(
             `❌ REGRESSION: dist/locations/${slug}/index.html has EMPTY root!\n` +
             'Prerender content must be injected INSIDE <div id="root">, not outside.\n' +
