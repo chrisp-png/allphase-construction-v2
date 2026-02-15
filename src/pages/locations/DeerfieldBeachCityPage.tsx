@@ -124,7 +124,7 @@ export default function DeerfieldBeachCityPage() {
         <meta name="twitter:description" content="Need roof repair or replacement in Deerfield Beach? Inspection-first diagnostics for HVHZ homes. Dual-licensed. Fast response during business hours." />
       </Helmet>
 
-      {/* JSON-LD Structured Data */}
+      {/* JSON-LD Structured Data - Local SEO Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -132,27 +132,31 @@ export default function DeerfieldBeachCityPage() {
             "@context": "https://schema.org",
             "@graph": [
               {
+                "@type": "WebSite",
+                "@id": "https://allphaseconstructionfl.com/#website",
+                "url": "https://allphaseconstructionfl.com/",
+                "name": "All Phase Construction USA",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://allphaseconstructionfl.com/search?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              },
+              {
                 "@type": "WebPage",
-                "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/#webpage",
-                "url": "https://allphaseconstructionfl.com/locations/deerfield-beach/",
-                "name": "Dual-Licensed Roofing Specialist | Deerfield Beach | All Phase Construction USA",
-                "description": "The expert in HVHZ-compliant roofing solutions for Deerfield Beach. Dual-licensed roofing specialist providing superior roof repairs and full replacements throughout South Florida.",
-                "about": { "@id": "https://allphaseconstructionfl.com/#roofingcontractor" },
-                "primaryImageOfPage": { "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/#image-city-sign" }
+                "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach#webpage",
+                "url": "https://allphaseconstructionfl.com/locations/deerfield-beach",
+                "name": "Roofing Contractor in Deerfield Beach, FL | All Phase Construction USA",
+                "isPartOf": { "@id": "https://allphaseconstructionfl.com/#website" }
               },
               {
                 "@type": "RoofingContractor",
                 "@id": "https://allphaseconstructionfl.com/#roofingcontractor",
                 "name": "All Phase Construction USA",
-                "alternateName": "All Phase Roofing",
-                "image": "https://allphaseconstructionfl.com/deerfield-beach-fl-roofing-services.png",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://allphaseconstructionfl.com/logo.png"
-                },
-                "url": "https://allphaseconstructionfl.com",
-                "telephone": "+17542275605",
-                "priceRange": "$$",
+                "url": "https://allphaseconstructionfl.com/locations/deerfield-beach",
+                "telephone": "+1-754-227-5605",
+                "image": "https://allphaseconstructionfl.com/ui-logo-480.webp",
+                "logo": "https://allphaseconstructionfl.com/ui-logo-480.webp",
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "590 Goolsby Blvd",
@@ -161,115 +165,38 @@ export default function DeerfieldBeachCityPage() {
                   "postalCode": "33442",
                   "addressCountry": "US"
                 },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 26.3184,
-                  "longitude": -80.0998
-                },
-                "openingHoursSpecification": [
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "07:00",
-                    "closes": "18:00"
-                  },
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Saturday",
-                    "opens": "08:00",
-                    "closes": "15:00"
-                  }
+                "areaServed": [
+                  { "@type": "City", "name": "Deerfield Beach" },
+                  { "@type": "AdministrativeArea", "name": "Broward County" },
+                  { "@type": "AdministrativeArea", "name": "Palm Beach County" }
                 ],
                 "sameAs": [
-                  "https://www.facebook.com/allphaseconstructionusa",
-                  "https://www.google.com/maps/place/All+Phase+Construction+USA"
-                ],
-                "hasCredential": [
-                  {
-                    "@type": "EducationalOccupationalCredential",
-                    "credentialCategory": "State License",
-                    "recognizedBy": {
-                      "@type": "GovernmentOrganization",
-                      "name": "Florida Department of Business and Professional Regulation"
-                    },
-                    "name": "Florida Certified Roofing Contractor",
-                    "identifier": "CCC1331464"
-                  },
-                  {
-                    "@type": "EducationalOccupationalCredential",
-                    "credentialCategory": "State License",
-                    "recognizedBy": {
-                      "@type": "GovernmentOrganization",
-                      "name": "Florida Department of Business and Professional Regulation"
-                    },
-                    "name": "Florida Certified General Contractor",
-                    "identifier": "CGC1526236"
-                  }
-                ],
-                "areaServed": [
-                  { "@type": "City", "name": "Boca Raton", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Fort Lauderdale", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "West Palm Beach", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Delray Beach", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Boynton Beach", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Lake Worth", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Coconut Creek", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Coral Springs", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Davie", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Lauderhill", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "North Lauderdale", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Margate", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Plantation", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Hollywood", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Pompano Beach", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Deerfield Beach", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } },
-                  { "@type": "City", "name": "Wellington", "containedInPlace": { "@type": "AdministrativeArea", "name": "Florida", "containedInPlace": { "@type": "Country", "name": "US" } } }
-                ],
-                "knowsAbout": [
-                  "Roof Repair",
-                  "Roof Replacement",
-                  "Hurricane-Resistant Roofing",
-                  "HVHZ Compliance",
-                  "Shingle Roofing",
-                  "Tile Roofing",
-                  "Metal Roofing",
-                  "Flat Roofing",
-                  "Commercial Roofing",
-                  "Residential Roofing"
-                ],
-                "description": "All Phase Construction USA is a dual-licensed roofing specialist (CCC1331464 & CGC1526236) serving South Florida with HVHZ-compliant roofing solutions. Headquartered in Deerfield Beach at 590 Goolsby Blvd."
-              },
-              {
-                "@type": "Service",
-                "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/#service-roofing",
-                "name": "Residential and Commercial Roofing Services in Deerfield Beach, FL",
-                "provider": { "@id": "https://allphaseconstructionfl.com/#roofingcontractor" },
-                "areaServed": [
-                  { "@type": "City", "name": "Deerfield Beach", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Boca Raton", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Pompano Beach", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Lighthouse Point", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Delray Beach", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Boynton Beach", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Coconut Creek", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Coral Springs", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Fort Lauderdale", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "West Palm Beach", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Wellington", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Davie", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Parkland", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Plantation", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } },
-                  { "@type": "City", "name": "Weston", "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" } }
+                  "https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381"
                 ]
               },
               {
-                "@type": "ImageObject",
-                "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach/#image-city-sign",
-                "url": "https://allphaseconstructionfl.com/deerfield-beach-fl-roofing-services.png",
-                "contentUrl": "https://allphaseconstructionfl.com/deerfield-beach-fl-roofing-services.png",
-                "caption": "Deerfield Beach, Florida city sign",
-                "name": "Deerfield Beach city sign",
-                "description": "Deerfield Beach, Florida city sign representing the local service area for a Deerfield Beach roofing contractor"
+                "@type": "BreadcrumbList",
+                "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach#breadcrumbs",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://allphaseconstructionfl.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Locations",
+                    "item": "https://allphaseconstructionfl.com/locations"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Deerfield Beach",
+                    "item": "https://allphaseconstructionfl.com/locations/deerfield-beach"
+                  }
+                ]
               }
             ]
           })
