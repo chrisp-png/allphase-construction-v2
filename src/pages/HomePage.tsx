@@ -13,6 +13,7 @@ import ServiceAreasCTA from '../components/ServiceAreasCTA';
 import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
+import ChamberBadges from '../components/ChamberBadges';
 import LocationMap from '../components/LocationMap';
 import { EXTERNAL_LINKS } from '../config/links';
 
@@ -420,6 +421,8 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+
+            <ChamberBadges />
           </div>
 
           {/* Our Roofing Services Section */}
