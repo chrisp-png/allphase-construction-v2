@@ -658,9 +658,87 @@ function homepageContent() {
 }
 
 /**
+ * Generate Deerfield Beach Local SEO JSON-LD Schema
+ */
+function generateDeerfieldBeachSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://allphaseconstructionfl.com/#website",
+        "url": "https://allphaseconstructionfl.com/",
+        "name": "All Phase Construction USA",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://allphaseconstructionfl.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach#webpage",
+        "url": "https://allphaseconstructionfl.com/locations/deerfield-beach",
+        "name": "Roofing Contractor in Deerfield Beach, FL | All Phase Construction USA",
+        "isPartOf": { "@id": "https://allphaseconstructionfl.com/#website" }
+      },
+      {
+        "@type": "RoofingContractor",
+        "@id": "https://allphaseconstructionfl.com/#roofingcontractor",
+        "name": "All Phase Construction USA",
+        "url": "https://allphaseconstructionfl.com/locations/deerfield-beach",
+        "telephone": "+1-754-227-5605",
+        "image": "https://allphaseconstructionfl.com/ui-logo-480.webp",
+        "logo": "https://allphaseconstructionfl.com/ui-logo-480.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "590 Goolsby Blvd",
+          "addressLocality": "Deerfield Beach",
+          "addressRegion": "FL",
+          "postalCode": "33442",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Deerfield Beach" },
+          { "@type": "AdministrativeArea", "name": "Broward County" },
+          { "@type": "AdministrativeArea", "name": "Palm Beach County" }
+        ],
+        "sameAs": [
+          "https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://allphaseconstructionfl.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Deerfield Beach",
+            "item": "https://allphaseconstructionfl.com/locations/deerfield-beach"
+          }
+        ]
+      }
+    ]
+  };
+}
+
+/**
  * Create base HTML template with proper header, meta tags, and styling
  */
-function createHTMLTemplate(title, description, canonical, content) {
+function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -680,6 +758,11 @@ function createHTMLTemplate(title, description, canonical, content) {
     <meta property="og:description" content="${description}">
     <meta property="og:url" content="${canonical}">
     <meta property="og:type" content="website">
+${jsonLdSchema ? `
+    <!-- Local SEO JSON-LD Schema -->
+    <script type="application/ld+json">
+${JSON.stringify(jsonLdSchema, null, 2)}
+    </script>` : ''}
 
     <!-- Critical SEO Static Content Styles -->
     <style id="seo-static-styles">
@@ -824,14 +907,18 @@ function writeToPublicAndDist(relativePath, content) {
   fs.mkdirSync(publicDirPath, { recursive: true });
   fs.writeFileSync(publicPath, content);
 
-  // DO NOT write dynamic city routes to dist/ - let React handle them
+  // SPECIAL CASE: Deerfield Beach HQ page MUST be in dist/ for SEO (has JSON-LD schema)
+  // This is the GBP landing page and needs to be crawlable in raw HTML
+  const isDeerfieldBeachHQ = relativePath === 'locations/deerfield-beach/index.html';
+
+  // DO NOT write other dynamic city routes to dist/ - let React handle them
   // Static files in dist/ would override SPA routing
   const isDynamicRoute =
     relativePath.startsWith('locations/') ||
     relativePath.startsWith('roof-repair/') ||
     relativePath.startsWith('roof-inspection/');
 
-  if (isDynamicRoute) {
+  if (isDynamicRoute && !isDeerfieldBeachHQ) {
     // Skip dist/ write for dynamic routes - React will handle these
     return;
   }
@@ -922,25 +1009,34 @@ function generateStaticFiles() {
     // Generate prerendered HTML for ALL cities including Money Pages for SEO
     const hubPath = `/locations/${citySlug}`;
 
-    // Override metadata for Boca Raton to match custom content
-    const hubMetadata = citySlug === 'boca-raton'
-      ? {
-          title: 'Roofer in Boca Raton FL | All Phase Construction USA',
-          description: 'Licensed Florida roofing contractor serving Boca Raton. BBB A+ rated, 4.8★ Google reviews. Dual-licensed CCC-1331464 & CGC-1526236. Call 24/7: (754) 227-5605.',
-          canonical: 'https://allphaseconstructionfl.com/locations/boca-raton'
-        }
-      : getSEOMetadata(hubPath, cityName);
+    // Override metadata for special pages
+    let hubMetadata, hubContent, hubSchema = null;
 
-    // Route to Boca Raton override if applicable
-    const hubContent = citySlug === 'boca-raton'
-      ? generateBocaRatonServiceHubContent()
-      : generateServiceHubContent(cityName, citySlug);
+    if (citySlug === 'boca-raton') {
+      // Boca Raton override
+      hubMetadata = {
+        title: 'Roofer in Boca Raton FL | All Phase Construction USA',
+        description: 'Licensed Florida roofing contractor serving Boca Raton. BBB A+ rated, 4.8★ Google reviews. Dual-licensed CCC-1331464 & CGC-1526236. Call 24/7: (754) 227-5605.',
+        canonical: 'https://allphaseconstructionfl.com/locations/boca-raton'
+      };
+      hubContent = generateBocaRatonServiceHubContent();
+    } else if (citySlug === 'deerfield-beach') {
+      // Deerfield Beach HQ with JSON-LD schema
+      hubMetadata = getSEOMetadata(hubPath, cityName);
+      hubContent = generateDeerfieldBeachHQContent();
+      hubSchema = generateDeerfieldBeachSchema();
+    } else {
+      // All other cities
+      hubMetadata = getSEOMetadata(hubPath, cityName);
+      hubContent = generateServiceHubContent(cityName, citySlug);
+    }
 
     const hubHTML = createHTMLTemplate(
       hubMetadata.title,
       hubMetadata.description,
       hubMetadata.canonical,
-      hubContent
+      hubContent,
+      hubSchema
     );
 
     // Write to both public/ and dist/ (if dist exists)
