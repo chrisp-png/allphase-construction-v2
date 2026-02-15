@@ -703,6 +703,7 @@ function generateDeerfieldBeachSchema() {
           { "@type": "AdministrativeArea", "name": "Broward County" },
           { "@type": "AdministrativeArea", "name": "Palm Beach County" }
         ],
+        "hasMap": "https://maps.app.goo.gl/BTfj3TnSfJztJE4x6",
         "sameAs": [
           "https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381"
         ]
