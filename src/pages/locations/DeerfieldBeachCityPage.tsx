@@ -10,7 +10,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight, Star } from 'lucide-react';
+import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react';
 import Contact from '../../components/Contact';
 import Lightbox from '../../components/Lightbox';
 
@@ -23,6 +23,13 @@ export default function DeerfieldBeachCityPage() {
   // Lightbox state for recent projects
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  // FAQ accordion state
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
 
   const recentProjects = [
     {
@@ -39,6 +46,41 @@ export default function DeerfieldBeachCityPage() {
       src: '/social-proof/Celestial_Bronze_MetaL_Roof__Deerfield_Beach_All_Phase_Construction_USA.jpg',
       alt: 'Deerfield Beach roof replacement - HVHZ metal roofing system in Broward County',
       caption: 'Premium Metal Roofing System - Deerfield Beach'
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: 'How do I know if I need roof repair or a full roof replacement?',
+      answer: 'Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A professional roof inspection by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.'
+    },
+    {
+      question: 'What factors affect the cost of a roofing project in Deerfield Beach?',
+      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price.'
+    },
+    {
+      question: 'How long does it take to install a new roof?',
+      answer: 'Most residential roofing projects in Deerfield Beach can be completed in a few days, depending on the size of the house and weather conditions. Your contractor will provide a clear timeline before work begins.'
+    },
+    {
+      question: 'What should I look for when hiring a roofing contractor?',
+      answer: 'Choose a contractor who is licensed, insured, and experienced with local building codes. Look for clear communication, positive reviews, and a willingness to provide references and a detailed quote. A great contractor will offer a strong warranty and prioritize quality workmanship.'
+    },
+    {
+      question: 'Is financing available for roof repair or replacement?',
+      answer: 'Many contractors offer financing options to help make roof repair or replacement more affordable. Ask your contractor about available plans and how to apply.'
+    },
+    {
+      question: 'How often should I schedule a roof inspection?',
+      answer: 'It\'s recommended to have your roof inspected at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.'
+    },
+    {
+      question: 'What is underlayment, and why is it important?',
+      answer: 'Underlayment is a protective layer installed beneath your roofing material. It acts as a secondary barrier against water intrusion, helping to prevent leaks and extend the life of your roof.'
+    },
+    {
+      question: 'Do I need a permit for roof work in Deerfield Beach?',
+      answer: 'Yes, most roofing projects require permits and inspections to ensure compliance with local and state building codes. Your contractor should handle the permitting process and provide all necessary documentation.'
     }
   ];
 
@@ -1044,78 +1086,42 @@ export default function DeerfieldBeachCityPage() {
               FAQs about Roofing in Deerfield Beach
             </h2>
 
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  How do I know if I need roof repair or a full roof replacement?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A professional roof inspection by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.
-                </p>
-              </div>
+            <div className="space-y-4">
+              {faqItems.map((faq, index) => {
+                const isOpen = openFaqIndex === index;
+                const faqId = `faq-answer-${index}`;
 
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  What factors affect the cost of a roofing project in Deerfield Beach?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor's experience can also influence the final price.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  How long does it take to install a new roof?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Most residential roofing projects in Deerfield Beach can be completed in a few days, depending on the size of the house and weather conditions. Your contractor will provide a clear timeline before work begins.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  What should I look for when hiring a roofing contractor?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Choose a contractor who is licensed, insured, and experienced with local building codes. Look for clear communication, positive reviews, and a willingness to provide references and a detailed quote. A great contractor will offer a strong warranty and prioritize quality workmanship.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Is financing available for roof repair or replacement?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Many contractors offer financing options to help make roof repair or replacement more affordable. Ask your contractor about available plans and how to apply.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  How often should I schedule a roof inspection?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  It's recommended to have your roof inspected at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  What is underlayment, and why is it important?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Underlayment is a protective layer installed beneath your roofing material. It acts as a secondary barrier against water intrusion, helping to prevent leaks and extend the life of your roof.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Do I need a permit for roof work in Deerfield Beach?
-                </h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Yes, most roofing projects require permits and inspections to ensure compliance with local and state building codes. Your contractor should handle the permitting process and provide all necessary documentation.
-                </p>
-              </div>
+                return (
+                  <div key={index} className="border border-gray-700 rounded-lg overflow-hidden">
+                    <h3>
+                      <button
+                        onClick={() => toggleFaq(index)}
+                        aria-expanded={isOpen}
+                        aria-controls={faqId}
+                        className="w-full flex items-center justify-between text-left px-6 py-4 bg-gray-800/30 hover:bg-gray-800/50 transition-colors"
+                      >
+                        <span className="text-lg md:text-xl font-bold text-white pr-4">
+                          {faq.question}
+                        </span>
+                        <ChevronDown
+                          className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </h3>
+                    <div
+                      id={faqId}
+                      className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}
+                    >
+                      <div className="px-6 py-4 bg-gray-900/20">
+                        <p className="text-gray-400 text-lg leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             <p className="text-gray-400 text-lg leading-relaxed mt-8">
