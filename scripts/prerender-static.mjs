@@ -213,52 +213,225 @@ function generateDeerfieldBeachHQContent() {
 }
 
 /**
- * SPECIAL: Boca Raton Service Hub Override - Custom content for Boca Raton location
+ * SPECIAL: Boca Raton Service Hub Override - Premium design with enhanced hierarchy
  */
 function generateBocaRatonServiceHubContent() {
   return `
 <section id="seo-static-content">
-  <h1>Roofer in Boca Raton FL</h1>
-  <h2>All Phase Construction USA | Roofing Contractor Serving Boca Raton, Palm Beach, and Broward County</h2>
-  <p>If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That is what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community.</p>
-  <p>All Phase Construction USA is a licensed Florida roofing contractor—fully insured and bonded for your peace of mind. We are proud to have an expert team of professional roofers dedicated to delivering reliable, high-quality workmanship. Our team takes pride in serving the Boca Raton community and building lasting relationships with our customers.</p>
-  <p><strong>Call 24/7:</strong> (754) 227-5605<br>
-  <strong>Address:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442<br>
-  <strong>Google Rating:</strong> 4.8★ with 137 reviews</p>
-  <p>As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage—crucial for maintaining the safety and comfort of your home. We are proud of our strong BBB rating (A+) and recent positive Google reviews. When choosing a roofer in Boca Raton, always prioritize local, licensed, insured, and bonded contractors with a proven commitment to customer satisfaction and community trust.</p>
-  <h2>Why Boca Raton homeowners hire All Phase Construction USA</h2>
-  <h3>Not a "random crew with a ladder"</h3>
-  <p>In Boca Raton, the roof that "looks fine" can still fail the moment wind-driven rain hits a weak transition. That's why we run our jobs like a code-and-inspection system, not a patch-and-pray operation.</p>
-  <p>Our experienced and trained contractors handle all aspects of roof installation and repair, ensuring every project meets the highest standards. We plan the build, document the condition, pull permits correctly, and execute with specialized crews by roofing system.</p>
-  <h3>Built for permits, inspections, and hurricane reality</h3>
-  <p>South Florida roofing is not only about materials. It is about details that pass inspection and hold up when storms start pushing water sideways.</p>
-  <p>Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team is committed to strict safety protocols and ensures all work meets or exceeds safety standards to protect your home and everyone involved.</p>
-  <h2>The Proof Stack</h2>
-  <ul>
-    <li>BBB A+ rated</li>
-    <li>4.8★ Google rating (137 reviews)</li>
-    <li>Dual-licensed: Roofing Contractor CCC-1331464 + General Contractor CGC-1526236</li>
-    <li>Manufacturer certifications, including Tamko Platinum Preferred, plus multiple major system credentials</li>
-    <li>Specialized crews by system</li>
-  </ul>
-  <p>Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.</p>
-  <p>Shingle crew for shingles. Tile crew for tile. Metal crew for metal. Flat crew for flat systems.</p>
-  <p>All Phase Construction USA installs code-compliant roofing systems in Boca Raton.</p>
-  <p>Our team handles permits and inspections for reroof projects.</p>
-  <p>Boca Raton storms create wind-driven rain that exposes weak flashing and underlayment</p>
-  <h2>Roofing company in Boca Raton FL with a "show-you" inspection process</h2>
-  <p>Most roof problems are invisible from the driveway. Our inspection is designed to reduce guesswork and help you make a clean decision.</p>
-  <h3>What you get from a real roof inspection:</h3>
-  <ul>
-    <li>Photos of key roof areas (edges, penetrations, valleys, transitions)</li>
-    <li>Clear notes on what is failed vs what is aging</li>
-    <li>A recommendation that matches the roof's condition and your timeline</li>
-  </ul>
-  <h3>Repair vs replacement (how we decide):</h3>
-  <ul>
-    <li>A roof can be repaired when the system is stable and failures are isolated</li>
-    <li>A roof should be replaced when the system is at end-of-life or failing in multiple zones</li>
-  </ul>
+  <!-- SECTION 1: HERO (Dark Background) -->
+  <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; padding: 4rem 2rem; margin: -2rem -1rem 3rem; border-radius: 0;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h1 style="color: white; font-size: 2.75rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.1;">Roofer in Boca Raton FL</h1>
+
+      <h2 style="color: #e5e7eb; font-size: 1.35rem; font-weight: 400; margin-bottom: 2rem; line-height: 1.4; opacity: 0.95;">
+        All Phase Construction USA | Roofing Contractor Serving Boca Raton, Palm Beach, and Broward County
+      </h2>
+
+      <p style="max-width: 750px; color: #d1d5db; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem;">
+        If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That's what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community.
+      </p>
+
+      <!-- Premium CTA Row -->
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.15); border-bottom: 1px solid rgba(255,255,255,0.15);">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 0.9rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em;">Call 24/7:</span>
+          <a href="tel:7542275605" style="color: #dc2626; font-size: 1.35rem; font-weight: 700; text-decoration: none;">(754) 227-5605</a>
+        </div>
+        <div style="width: 1px; height: 30px; background: rgba(255,255,255,0.15);"></div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="color: #fbbf24; font-size: 1.25rem;">★★★★★</span>
+          <span style="color: #e5e7eb; font-weight: 600;">4.8 Google Rating</span>
+          <span style="color: #9ca3af;">(137 reviews)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: TRUST BLOCK (Light Background Contrast) -->
+  <div style="background: #f9fafb; padding: 3.5rem 2rem; margin: 3rem -1rem; border-left: 4px solid #dc2626;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">Licensed Florida Roofing Contractor in Boca Raton</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <!-- Benefit Block 1 -->
+        <div style="display: flex; gap: 1rem; align-items: start;">
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">✓</div>
+          <div>
+            <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">Fully Licensed & Insured</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">Licensed, insured, and bonded for your complete peace of mind</p>
+          </div>
+        </div>
+
+        <!-- Benefit Block 2 -->
+        <div style="display: flex; gap: 1rem; align-items: start;">
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">★</div>
+          <div>
+            <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">In-House Expert Team</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">All work performed by our trained, professional roofing crew</p>
+          </div>
+        </div>
+
+        <!-- Benefit Block 3 -->
+        <div style="display: flex; gap: 1rem; align-items: start;">
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">⌂</div>
+          <div>
+            <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">Local Boca Raton Expertise</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">Years of experience serving Boca Raton homeowners</p>
+          </div>
+        </div>
+
+        <!-- Benefit Block 4 -->
+        <div style="display: flex; gap: 1rem; align-items: start;">
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">◆</div>
+          <div>
+            <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">Consistent Quality</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">Reliable workmanship backed by our BBB A+ rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: COMMUNITY & SERVICE -->
+  <div style="max-width: 900px; margin: 3rem auto; padding: 0 1rem;">
+    <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Dedicated to the Boca Raton Community</h2>
+
+    <p style="max-width: 750px; color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 3rem;">
+      As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage—crucial for maintaining the safety and comfort of your home.
+    </p>
+
+    <!-- 2-Column Service Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <!-- Left Column -->
+      <div style="background: white; padding: 2rem; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; color: #1f2937; font-weight: 500;">Emergency Roof Repairs</li>
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; color: #1f2937; font-weight: 500;">Storm Damage Response</li>
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; color: #1f2937; font-weight: 500;">Roof Leak Detection</li>
+          <li style="padding: 0.75rem 0; color: #1f2937; font-weight: 500;">Residential & Commercial Roofing</li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div style="background: white; padding: 2rem; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; color: #1f2937; font-weight: 500;">Licensed & Insured</li>
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; color: #1f2937; font-weight: 500;">Local Boca Raton Expertise</li>
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; color: #1f2937; font-weight: 500;">Insurance-Compliant Installations</li>
+          <li style="padding: 0.75rem 0; color: #1f2937; font-weight: 500;">High-Quality Craftsmanship</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- SECTION 4: WHY CHOOSE US -->
+  <div style="background: white; padding: 4rem 2rem; margin: 3rem -1rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 3rem; text-align: center;">Why Boca Raton Homeowners Choose All Phase Construction USA</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+        <!-- Feature 1 -->
+        <div style="border-left: 3px solid #dc2626; padding-left: 1.5rem;">
+          <h3 style="color: #111827; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;">Not a "Random Crew with a Ladder"</h3>
+          <p style="color: #4b5563; line-height: 1.7; margin-bottom: 1rem;">
+            In Boca Raton, the roof that "looks fine" can still fail the moment wind-driven rain hits a weak transition. That's why we run our jobs like a code-and-inspection system, not a patch-and-pray operation.
+          </p>
+          <p style="color: #4b5563; line-height: 1.7; margin: 0;">
+            Our experienced contractors handle all aspects of roof installation and repair. We plan the build, document the condition, pull permits correctly, and execute with specialized crews by roofing system.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div style="border-left: 3px solid #dc2626; padding-left: 1.5rem;">
+          <h3 style="color: #111827; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;">Built for Permits, Inspections & Hurricane Reality</h3>
+          <p style="color: #4b5563; line-height: 1.7; margin-bottom: 1rem;">
+            South Florida roofing is not only about materials. It's about details that pass inspection and hold up when storms start pushing water sideways.
+          </p>
+          <p style="color: #4b5563; line-height: 1.7; margin: 0;">
+            Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: THE PROOF STACK (Dark Accent) -->
+  <div style="background: #111827; color: white; padding: 4rem 2rem; margin: 3rem -1rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="color: white; font-size: 2rem; font-weight: 700; margin-bottom: 2.5rem; text-align: center;">The Proof Stack</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2.5rem;">
+        <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+          <div style="color: #dc2626; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">A+</div>
+          <div style="color: #e5e7eb; font-weight: 600;">BBB Rated</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+          <div style="color: #fbbf24; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">4.8★</div>
+          <div style="color: #e5e7eb; font-weight: 600;">Google Rating (137 reviews)</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+          <div style="color: #dc2626; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Dual-Licensed</div>
+          <div style="color: #e5e7eb; font-weight: 600; font-size: 0.9rem;">CCC-1331464 + CGC-1526236</div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+        <h3 style="color: white; font-size: 1.3rem; font-weight: 600; margin-bottom: 1.5rem;">Specialized Crews by System</h3>
+        <p style="color: #d1d5db; line-height: 1.7; margin-bottom: 1.5rem;">
+          Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+          <span style="background: rgba(220,38,38,0.2); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 500;">Shingle Crew</span>
+          <span style="background: rgba(220,38,38,0.2); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 500;">Tile Crew</span>
+          <span style="background: rgba(220,38,38,0.2); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 500;">Metal Crew</span>
+          <span style="background: rgba(220,38,38,0.2); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 500;">Flat Roof Crew</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SECTION 6: INSPECTION PROCESS -->
+  <div style="max-width: 900px; margin: 4rem auto; padding: 0 1rem;">
+    <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Roofing Company in Boca Raton FL with a "Show-You" Inspection Process</h2>
+
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; max-width: 750px; margin-bottom: 3rem;">
+      Most roof problems are invisible from the driveway. Our inspection is designed to reduce guesswork and help you make a clean decision.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+      <!-- What You Get -->
+      <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-top: 4px solid #dc2626;">
+        <h3 style="color: #111827; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem;">What You Get from a Real Roof Inspection:</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem;">
+            <span style="color: #dc2626; font-weight: bold;">✓</span>
+            <span>Photos of key roof areas (edges, penetrations, valleys, transitions)</span>
+          </li>
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem;">
+            <span style="color: #dc2626; font-weight: bold;">✓</span>
+            <span>Clear notes on what is failed vs what is aging</span>
+          </li>
+          <li style="padding: 0.75rem 0; color: #374151; display: flex; gap: 0.75rem;">
+            <span style="color: #dc2626; font-weight: bold;">✓</span>
+            <span>A recommendation that matches the roof's condition and your timeline</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Repair vs Replacement -->
+      <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-top: 4px solid #dc2626;">
+        <h3 style="color: #111827; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem;">Repair vs Replacement (How We Decide):</h3>
+        <div style="margin-bottom: 1.5rem;">
+          <div style="color: #059669; font-weight: 700; margin-bottom: 0.5rem;">✓ Repair When:</div>
+          <p style="color: #374151; margin: 0; padding-left: 1.5rem;">The system is stable and failures are isolated</p>
+        </div>
+        <div>
+          <div style="color: #dc2626; font-weight: 700; margin-bottom: 0.5rem;">⚠ Replace When:</div>
+          <p style="color: #374151; margin: 0; padding-left: 1.5rem;">The system is at end-of-life or failing in multiple zones</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <h2>About All Phase Construction USA</h2>
   <p>All Phase Construction USA is a Florida roofing contractor based in Deerfield Beach, serving Boca Raton and the surrounding region with repairs, replacements, and inspections.</p>
   <p>We operate like a builder, not a sales script. You get direct oversight, clear scope, and a roof system designed for South Florida weather.</p>
