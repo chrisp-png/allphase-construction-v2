@@ -1028,6 +1028,16 @@ export default function DeerfieldBeachCityPage() {
             </p>
           </div>
 
+          {/* Warranty and Guarantee Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Warranty and Guarantee
+            </h2>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              When planning a roofing project, understanding the warranty and guarantee offered by your contractor is essential. A reputable contractor will provide a clear, comprehensive warranty that covers both materials and labor, giving you peace of mind throughout the life of your roof. This warranty ensures that if any issues arise, your investment is protected and the contractor will address problems promptly. Always review the warranty details before work begins, and don't hesitate to ask for clarification on what is and isn't covered. A strong warranty is a sign of a contractor's confidence in their work and their commitment to quality—make it a priority when selecting your roofing partner.
+            </p>
+          </div>
+
           {/* Explore Service Areas Section */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
