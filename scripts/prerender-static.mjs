@@ -436,50 +436,88 @@ function generateBocaRatonServiceHubContent() {
   <p>All Phase Construction USA is a Florida roofing contractor based in Deerfield Beach, serving Boca Raton and the surrounding region with repairs, replacements, and inspections.</p>
   <p>We operate like a builder, not a sales script. You get direct oversight, clear scope, and a roof system designed for South Florida weather.</p>
   <p><strong>Find us:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-  <h2>Roofing contractor in Boca Raton FL: what we do</h2>
-  <p>We deliver roofing services that are permit-ready, inspection-ready, and storm-ready, including complete roof replacements and specialized commercial roofing solutions. Our roof repair services are designed to keep your home or business covered and protected from the elements. That includes residential and commercial projects.</p>
-  <h3>Our core services</h3>
-  <ul>
-    <li>Roof inspection and leak investigations</li>
-    <li>Roof repair (tile, shingle, metal, flat)</li>
-    <li>Full roof replacement and reroofing</li>
-    <li>Storm and hurricane damage assessments</li>
-    <li>Preventive maintenance for aging roofs</li>
-  </ul>
-  <h3>Quick service fit guide</h3>
-  <table>
-    <thead>
-      <tr><th>Service</th><th>Best for</th><th>Typical outcome</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Roof inspection</td>
-        <td>Leaks, stains, insurance letters, "something feels off"</td>
-        <td>Photos + options + next steps; well-managed project assessment with attention to detail throughout the project lifecycle</td>
-      </tr>
-      <tr>
-        <td>Roof repair</td>
-        <td>Localized damage, flashing issues, minor storm damage</td>
-        <td>Stop leaks and extend roof life; each repair project is handled with expertise and careful project management</td>
-      </tr>
-      <tr>
-        <td>Roof replacement</td>
-        <td>Widespread wear, recurring leaks, failed underlayment</td>
-        <td>New system, updated code, warranty; comprehensive project oversight ensures customer satisfaction at every stage</td>
-      </tr>
-    </tbody>
-  </table>
-  <h2>What we typically find during Boca Raton roof inspections</h2>
-  <p>Boca Raton roofs take heat, UV, salt air, and storm-driven rain. The failures tend to repeat.</p>
-  <h3>Common inspection findings in Boca Raton:</h3>
-  <ul>
-    <li>Cracked or slipped tiles that expose underlayment</li>
-    <li>Nail pops, lifted shingles, and perimeter edge issues</li>
-    <li>Failed pipe boots and vent flashings</li>
-    <li>Valley and wall transition leaks</li>
-    <li>Flat roof seam issues and ponding stress points</li>
-  </ul>
-  <p>At the first sign of roof leaks or a leaky roof, prompt professional intervention is crucial to prevent further damage and avoid costly repairs. A small leak can be a small fix, or it can be the symptom of a tired system. The inspection tells the truth.</p>
+  <!-- SECTION 10: ROOFING CONTRACTOR - WHAT WE DO (Dark Premium Background) -->
+  <div style="background: linear-gradient(135deg, #1f1f1f 0%, #0a0a0a 100%); color: white; padding: 4rem 2rem; margin: 4rem -1rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="color: white; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Roofing Contractor in Boca Raton FL: What We Do</h2>
+
+      <p style="max-width: 750px; color: #d1d5db; font-size: 1.05rem; line-height: 1.75; margin-bottom: 3.5rem;">
+        We deliver roofing services that are permit-ready, inspection-ready, and storm-ready. Our work includes complete roof replacements, targeted repairs, and specialized commercial roofing solutions designed for South Florida conditions.
+      </p>
+
+      <h3 style="color: white; font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem;">Our Core Services</h3>
+
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">✓</span>
+          <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Roof inspections and leak investigations</span>
+        </li>
+        <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">✓</span>
+          <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Roof repair (tile, shingle, metal, flat)</span>
+        </li>
+        <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">✓</span>
+          <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Full roof replacement and reroofing</span>
+        </li>
+        <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">✓</span>
+          <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Storm and hurricane damage assessments</span>
+        </li>
+        <li style="padding: 1.25rem 0; display: flex; align-items: center; gap: 1rem;">
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">✓</span>
+          <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Preventive maintenance for aging roofs</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 11: TYPICAL INSPECTION FINDINGS -->
+  <div style="max-width: 900px; margin: 4rem auto; padding: 0 1rem;">
+    <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">What We Typically Find During Boca Raton Roof Inspections</h2>
+
+    <p style="max-width: 750px; color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 3rem;">
+      Common roofing issues we uncover include:
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+      <!-- Column 1 -->
+      <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-left: 4px solid #dc2626;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">•</span>
+            <span style="font-size: 1rem; line-height: 1.6;">Cracked or slipped tiles exposing underlayment</span>
+          </li>
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">•</span>
+            <span style="font-size: 1rem; line-height: 1.6;">Nail pops and lifted shingles</span>
+          </li>
+          <li style="padding: 0.75rem 0; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">•</span>
+            <span style="font-size: 1rem; line-height: 1.6;">Failed pipe boots and vent flashings</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-left: 4px solid #dc2626;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">•</span>
+            <span style="font-size: 1rem; line-height: 1.6;">Valley and wall transition leaks</span>
+          </li>
+          <li style="padding: 0.75rem 0; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">•</span>
+            <span style="font-size: 1rem; line-height: 1.6;">Flat roof seam and drainage issues</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="max-width: 750px; color: #374151; font-size: 1rem; line-height: 1.75; padding: 1.5rem; background: #fef2f2; border-left: 4px solid #dc2626; border-radius: 4px;">
+      At the first sign of roof leaks, prompt professional intervention is crucial to prevent further damage and avoid costly repairs. A small leak can be a small fix, or it can be the symptom of a tired system. The inspection tells the truth.
+    </p>
+  </div>
   <h2>Roof repair in Boca Raton FL</h2>
   <p>If you need roof repair in Boca Raton, speed matters, but correctness matters more. A rushed patch often becomes a repeat leak.</p>
   <p>Maintaining your roof is essential for ongoing protection against harsh weather and storm damage, especially in South Florida. Regular maintenance allows homeowners to rest assured that their roof is in good condition, providing peace of mind and long-term security for your home.</p>
