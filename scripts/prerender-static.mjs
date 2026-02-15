@@ -777,35 +777,79 @@ function generateDeerfieldBeachSchema() {
 }
 
 /**
- * Create base HTML template with proper header, meta tags, and styling
+ * Load the production-built dist/index.html template
+ */
+function loadProductionTemplate() {
+  const distIndexPath = path.join(distDir, 'index.html');
+
+  if (!fs.existsSync(distIndexPath)) {
+    throw new Error(
+      '❌ dist/index.html not found!\n' +
+      'Run `npm run build` before prerendering.\n' +
+      'The prerender script needs dist/index.html to extract production asset references.'
+    );
+  }
+
+  return fs.readFileSync(distIndexPath, 'utf-8');
+}
+
+/**
+ * Create HTML from production template with prerendered content
+ * This replaces SEO meta tags but preserves all production script/style tags
  */
 function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null, ogDescription = null) {
   const ogDesc = ogDescription || description;
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${title}</title>
-    <meta name="description" content="${description}">
-    <link rel="canonical" href="${canonical}">
 
-    <!-- License & Contact Information -->
-    <meta name="license" content="CCC-1331464, CGC-1526236">
-    <meta name="phone" content="(754) 227-5605">
-    <meta name="company" content="All Phase Construction USA">
+  // Load the production template
+  const productionHTML = loadProductionTemplate();
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="${title}">
-    <meta property="og:description" content="${ogDesc}">
-    <meta property="og:url" content="${canonical}">
-    <meta property="og:type" content="website">
-${jsonLdSchema ? `
+  // Replace the <title> tag
+  let html = productionHTML.replace(
+    /<title>.*?<\/title>/,
+    `<title>${title}</title>`
+  );
+
+  // Replace meta description
+  html = html.replace(
+    /<meta name="description" content=".*?">/,
+    `<meta name="description" content="${description}">`
+  );
+
+  // Replace canonical link
+  html = html.replace(
+    /<link rel="canonical" href=".*?" \/>/,
+    `<link rel="canonical" href="${canonical}" />`
+  );
+
+  // Replace Open Graph tags
+  html = html.replace(
+    /<meta property="og:title" content=".*?">/,
+    `<meta property="og:title" content="${title}">`
+  );
+
+  html = html.replace(
+    /<meta property="og:description" content=".*?">/,
+    `<meta property="og:description" content="${ogDesc}">`
+  );
+
+  html = html.replace(
+    /<meta property="og:url" content=".*?" \/>/,
+    `<meta property="og:url" content="${canonical}" />`
+  );
+
+  // Add JSON-LD schema if provided (before </head>)
+  if (jsonLdSchema) {
+    const schemaScript = `
     <!-- Local SEO JSON-LD Schema -->
     <script type="application/ld+json">
 ${JSON.stringify(jsonLdSchema, null, 2)}
-    </script>` : ''}
+    </script>
+  </head>`;
+    html = html.replace('</head>', schemaScript);
+  }
 
+  // Add SEO static content styles (before </head>)
+  const seoStyles = `
     <!-- Critical SEO Static Content Styles -->
     <style id="seo-static-styles">
       #seo-static {
@@ -865,8 +909,12 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
         color: #111827;
       }
     </style>
-</head>
-<body>
+  </head>`;
+
+  html = html.replace('</head>', seoStyles);
+
+  // Inject prerendered content before <div id="root"></div>
+  const seoContent = `
     <div id="seo-static">
         <!-- Crawler-Visible License & Contact Header -->
         <div style="background: #dc2626; color: white; padding: 1rem; text-align: center; margin-bottom: 2rem;">
@@ -877,10 +925,11 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
         </div>
         ${content}
     </div>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-</body>
-</html>`;
+    <div id="root"></div>`;
+
+  html = html.replace('<div id="root"></div>', seoContent);
+
+  return html;
 }
 
 /**

@@ -1,24 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="msvalidate.01" content="3938FD4BCC881B5AF6F9156E605CF637" />
+
+    <!-- Google tag (gtag.js) - Deferred to not block rendering -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Defer analytics initialization until after page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10809361088';
+          document.head.appendChild(script);
+          script.onload = function() {
+            gtag('js', new Date());
+            gtag('config', 'AW-10809361088');
+          };
+        });
+      } else {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10809361088';
+        document.head.appendChild(script);
+        script.onload = function() {
+          gtag('js', new Date());
+          gtag('config', 'AW-10809361088');
+        };
+      }
+    </script>
+
+    <!-- Preload hero image - mobile needs aggressive optimization, desktop relies on browser defaults -->
+    <link rel="preload" as="image" href="/team_drone_photo-mobile.webp" media="(max-width: 800px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/team_drone_photo-tablet.webp" media="(min-width: 801px) and (max-width: 1280px)">
+    <link rel="preload" as="image" href="/team_drone_photo-desktop.webp" media="(min-width: 1281px)">
+
+    <!-- DNS prefetch for third-party resources (low priority) -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//cdn.callrail.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+
+    <!-- Preconnect to Supabase (higher priority - used by app) -->
+    <link rel="preconnect" href="https://vcqzitallpqgkarklela.supabase.co" crossorigin>
+
+    <!-- Critical CSS - Inline for immediate paint -->
+    <style>
+      :root {
+        --header-height: 110px;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px) + 16px);
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        max-width: 100%;
+        margin: 0;
+        padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px));
+      }
+      #root {
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      /* Prevent layout shift during initial load */
+      .min-h-screen {
+        min-height: 100vh;
+      }
+    </style>
+
+    <script type="text/javascript" src="//cdn.callrail.com/companies/650182589/e3a1759b5f327970b7ca/12/swap.js" defer></script>
+
+    <!-- Homepage SEO defaults -->
     <title>Margate Roofing Contractor | All Phase Construction USA</title>
     <meta name="description" content="All Phase Construction USA is a licensed roofing contractor serving Margate, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.">
-    <link rel="canonical" href="https://allphaseconstructionfl.com/locations/margate">
+    <link rel="canonical" href="https://allphaseconstructionfl.com/locations/margate" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
 
-    <!-- License & Contact Information -->
-    <meta name="license" content="CCC-1331464, CGC-1526236">
-    <meta name="phone" content="(754) 227-5605">
-    <meta name="company" content="All Phase Construction USA">
-
-    <!-- Open Graph -->
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Margate Roofing Contractor | All Phase Construction USA">
     <meta property="og:description" content="All Phase Construction USA is a licensed roofing contractor serving Margate, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.">
-    <meta property="og:url" content="https://allphaseconstructionfl.com/locations/margate">
-    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allphaseconstructionfl.com/locations/margate" />
 
-
+    <script type="module" crossorigin src="/assets/index-DLN5VtU4.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-CTc1fkrV.js">
+    <link rel="preload" as="style" href="/assets/index-TF_6SNWw.css" crossorigin><link rel="stylesheet" crossorigin href="/assets/index-TF_6SNWw.css" media="print" onload="this.media='all';this.onload=null;"><noscript><link rel="stylesheet" crossorigin href="/assets/index-TF_6SNWw.css"></noscript>
+  
     <!-- Critical SEO Static Content Styles -->
     <style id="seo-static-styles">
       #seo-static {
@@ -78,8 +155,20 @@
         color: #111827;
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Static navigation for crawlers (hidden from view, visible in source) -->
+    <nav style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+      <a href="/">Home</a>
+      <a href="/about-us">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/roof-inspection">Roof Inspection</a>
+      <a href="/blog">Blog</a>
+      <a href="/calculator">Roof Calculator</a>
+      <a href="/locations/deerfield-beach/service-area">Service Areas</a>
+      <a href="/sitemap.html">Sitemap</a>
+    </nav>
+    
     <div id="seo-static">
         <!-- Crawler-Visible License & Contact Header -->
         <div style="background: #dc2626; color: white; padding: 1rem; text-align: center; margin-bottom: 2rem;">
@@ -166,6 +255,5 @@
 </section>
     </div>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-</body>
+  </body>
 </html>
