@@ -776,7 +776,7 @@ export default function DeerfieldBeachCityPage() {
                   Local Owner-Operator
                 </h3>
                 <p className="text-gray-400">
-                  Owned and operated in Deerfield Beach, we oversee projects directly to ensure every roof meets HVHZ and Broward County standards.
+                  Owned and operated in Deerfield Beach, we have a complete professional team to oversee projects directly to ensure every roof meets HVHZ and Broward County standards.
                 </p>
               </div>
 
