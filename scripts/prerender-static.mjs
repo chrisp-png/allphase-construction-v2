@@ -790,7 +790,18 @@ function loadProductionTemplate() {
     );
   }
 
-  return fs.readFileSync(distIndexPath, 'utf-8');
+    const template = fs.readFileSync(distIndexPath, 'utf-8');
+
+  // SAFETY: Reject dev template -- must contain production Vite assets
+  if (template.includes('/src/main.tsx')) {
+    throw new Error(
+      '❌ dist/index.html still references /src/main.tsx!\n' +
+      'This is a dev template, not a production build.\n' +
+      'Run `npm run build` (not `vite build --mode development`) before prerendering.'
+    );
+  }
+
+  return template;
 }
 
 /**
@@ -978,10 +989,8 @@ function getSEOMetadata(urlPath, cityName = null) {
 }
 
 /**
- * Helper function to write file to public (and optionally dist)
- * Routes under /locations/*, /roof-repair/*, /roof-inspection/* should NOT go to dist
- * because they need to be handled by React SPA for browser users.
- * Bots get prerendered content via Netlify Edge Function → Prerender.io
+  * Helper function to write file to both public/ and dist/
+ * ALL prerendered pages go to BOTH directories for deployment
  */
 function writeToPublicAndDist(relativePath, content) {
   // Always write to public/ (for dev and reference)
@@ -989,24 +998,8 @@ function writeToPublicAndDist(relativePath, content) {
   const publicDirPath = path.dirname(publicPath);
   fs.mkdirSync(publicDirPath, { recursive: true });
   fs.writeFileSync(publicPath, content);
-
-  // SPECIAL CASE: Deerfield Beach HQ page MUST be in dist/ for SEO (has JSON-LD schema)
-  // This is the GBP landing page and needs to be crawlable in raw HTML
-  const isDeerfieldBeachHQ = relativePath === 'locations/deerfield-beach/index.html';
-
-  // DO NOT write other dynamic city routes to dist/ - let React handle them
-  // Static files in dist/ would override SPA routing
-  const isDynamicRoute =
-    relativePath.startsWith('locations/') ||
-    relativePath.startsWith('roof-repair/') ||
-    relativePath.startsWith('roof-inspection/');
-
-  if (isDynamicRoute && !isDeerfieldBeachHQ) {
-    // Skip dist/ write for dynamic routes - React will handle these
-    return;
-  }
-
-  // Write static service pages to dist/ (these don't have React routes)
+  
+  // Write ALL prerendered pages to dist/ for deployment
   if (fs.existsSync(distDir)) {
     const distPath = path.join(distDir, relativePath);
     const distDirPath = path.dirname(distPath);
@@ -1037,7 +1030,9 @@ function generateStaticFiles() {
     'https://allphaseconstructionfl.com',
     homepageContent()
   );
-  fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
+    // HOMEPAGE SAFETY: Write to public/ ONLY — do NOT overwrite dist/index.html
+  // dist/index.html is the Vite-built shell and must be preserved as-is
+fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
   console.log('✓ Generated: public/index.html');
   totalPages++;
 
@@ -1156,7 +1151,29 @@ function generateStaticFiles() {
     totalPages++;
   });
 
-  console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
+  
+  // ============================================================
+  // REGRESSION SAFEGUARD: Verify dist/index.html wasn't corrupted
+  // ============================================================
+  const distIndex = path.join(distDir, 'index.html');
+  if (fs.existsSync(distIndex)) {
+    const distHTML = fs.readFileSync(distIndex, 'utf-8');
+    if (distHTML.includes('/src/main.tsx')) {
+      throw new Error(
+        '❌ REGRESSION: dist/index.html references /src/main.tsx!\n' +
+        'The Vite production build was overwritten with dev content.\n' +
+        'This would break the live site. Build aborted.'
+      );
+    }
+    if (!distHTML.includes('/assets/')) {
+      throw new Error(
+        '❌ REGRESSION: dist/index.html missing /assets/ references!\n' +
+        'Production Vite bundles are gone. Build aborted.'
+      );
+    }
+    console.log('\n✅ Safeguard passed: dist/index.html contains production assets');
+  }
+console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
   console.log(`\n📊 Architecture Breakdown:`);
   console.log(`   - Homepage: 1 page`);
   console.log(`   - Service Pages: ${servicePages.length} pages`);
