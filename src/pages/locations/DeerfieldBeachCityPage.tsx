@@ -18,7 +18,7 @@ import ChamberBadges from '../../components/ChamberBadges';
 export default function DeerfieldBeachCityPage() {
   // Force-inject title immediately to prevent blank page
   useEffect(() => {
-    document.title = 'Roofing Contractor in Deerfield Beach, FL | Roof Repair & Replacement | All Phase Construction USA';
+    document.title = 'Deerfield Beach Roofing Contractor | All Phase Construction USA';
   }, []);
 
   // Lightbox state for recent projects
@@ -105,24 +105,24 @@ export default function DeerfieldBeachCityPage() {
   return (
     <>
       <Helmet>
-        <title>Roofing Contractor in Deerfield Beach, FL | Roof Repair & Replacement | All Phase Construction USA</title>
+        <title>Deerfield Beach Roofing Contractor | All Phase Construction USA</title>
         <meta
           name="description"
-          content="Need a roofing contractor in Deerfield Beach, FL 33441 or 33442? We specialize in roof repair, roof replacement, and inspection-first diagnostics for HVHZ properties. Dual-licensed (Roofing + GC) for roofing-related structural/insurance upgrades. Request your roof inspection — we respond within 45 minutes during business hours."
+          content="All Phase Construction USA is a licensed roofing contractor serving Deerfield Beach, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair."
         />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
 
         {/* Open Graph - Deerfield Beach Money Page */}
-        <meta property="og:title" content="Roofing Contractor in Deerfield Beach, FL | Roof Repair & Replacement" />
-        <meta property="og:description" content="Need a roofing contractor in Deerfield Beach, FL 33441 or 33442? We specialize in roof repair, roof replacement, and inspection-first diagnostics for HVHZ properties. Dual-licensed (Roofing + GC) for roofing-related structural/insurance upgrades. Request your roof inspection — we respond within 45 minutes during business hours." />
+        <meta property="og:title" content="Deerfield Beach Roofing Contractor | All Phase Construction USA" />
+        <meta property="og:description" content="Licensed Deerfield Beach roofing contractor specializing in hurricane-compliant installations and repairs." />
         <meta property="og:url" content="https://allphaseconstructionfl.com/locations/deerfield-beach" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card - Deerfield Beach Money Page */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Roofing Contractor in Deerfield Beach, FL | Roof Repair & Replacement" />
-        <meta name="twitter:description" content="Need roof repair or replacement in Deerfield Beach? Inspection-first diagnostics for HVHZ homes. Dual-licensed. Fast response during business hours." />
+        <meta name="twitter:title" content="Deerfield Beach Roofing Contractor | All Phase Construction USA" />
+        <meta name="twitter:description" content="Licensed Deerfield Beach roofing contractor specializing in hurricane-compliant installations and repairs." />
 
         <script type="application/ld+json">
           {JSON.stringify({

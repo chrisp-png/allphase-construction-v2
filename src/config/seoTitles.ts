@@ -105,8 +105,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
   '/locations/deerfield-beach': {
-    title: 'Deerfield Beach Roofing Hub | All Phase Construction USA',
-    description: 'Our Deerfield Beach headquarters at 590 Goolsby Blvd serves 51 cities across Broward & Palm Beach Counties. Dual-licensed roofing contractor.',
+    title: 'Deerfield Beach Roofing Contractor | All Phase Construction USA',
+    description: 'All Phase Construction USA is a licensed roofing contractor serving Deerfield Beach, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {

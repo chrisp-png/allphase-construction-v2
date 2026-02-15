@@ -727,7 +727,8 @@ function generateDeerfieldBeachSchema() {
 /**
  * Create base HTML template with proper header, meta tags, and styling
  */
-function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null) {
+function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null, ogDescription = null) {
+  const ogDesc = ogDescription || description;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -744,7 +745,7 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
 
     <!-- Open Graph -->
     <meta property="og:title" content="${title}">
-    <meta property="og:description" content="${description}">
+    <meta property="og:description" content="${ogDesc}">
     <meta property="og:url" content="${canonical}">
     <meta property="og:type" content="website">
 ${jsonLdSchema ? `
@@ -838,7 +839,13 @@ function getSEOMetadata(urlPath, cityName = null) {
 
   // Check static titles
   if (seoTitlesConfig.staticTitles[normalizedPath]) {
-    return seoTitlesConfig.staticTitles[normalizedPath];
+    const config = seoTitlesConfig.staticTitles[normalizedPath];
+    return {
+      title: config.title,
+      description: config.description,
+      canonical: config.canonical,
+      ogDescription: config.ogDescription || config.description
+    };
   }
 
   // Handle dynamic city pages
@@ -1025,7 +1032,8 @@ function generateStaticFiles() {
       hubMetadata.description,
       hubMetadata.canonical,
       hubContent,
-      hubSchema
+      hubSchema,
+      hubMetadata.ogDescription
     );
 
     // Write to both public/ and dist/ (if dist exists)
