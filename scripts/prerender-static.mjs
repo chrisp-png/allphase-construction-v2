@@ -924,7 +924,7 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
 
   html = html.replace('</head>', seoStyles);
 
-  // Inject prerendered content before <div id="root"></div>
+  // Inject prerendered content INSIDE <div id="root"></div>
   const seoContent = `
     <div id="seo-static">
         <!-- Crawler-Visible License & Contact Header -->
@@ -936,9 +936,9 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
         </div>
         ${content}
     </div>
-    <div id="root"></div>`;
+        `;
 
-  html = html.replace('<div id="root"></div>', seoContent);
+    html = html.replace(/<div\s+id="root">\s*<\/div>/i, `<div id="root">${seoContent}</div>`);
 
   return html;
 }
@@ -1172,6 +1172,29 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
       );
     }
     console.log('\n✅ Safeguard passed: dist/index.html contains production assets');
+  }
+
+    // ============================================================
+  // REGRESSION SAFEGUARD 2: Verify location pages have non-empty root
+  // ============================================================
+  const locationsDistDir = path.join(distDir, 'locations');
+  if (fs.existsSync(locationsDistDir)) {
+    const locationSlugs = fs.readdirSync(locationsDistDir);
+    for (const slug of locationSlugs) {
+      const locationIndexPath = path.join(locationsDistDir, slug, 'index.html');
+      if (fs.existsSync(locationIndexPath)) {
+        const locationHTML = fs.readFileSync(locationIndexPath, 'utf-8');
+        // FAIL if root is empty (prerender content not injected inside root)
+        if (/<div\s+id="root">\s*<\/div>/i.test(locationHTML)) {
+          throw new Error(
+            `❌ REGRESSION: dist/locations/${slug}/index.html has EMPTY root!\n` +
+            'Prerender content must be injected INSIDE <div id="root">, not outside.\n' +
+            'Build aborted.'
+          );
+        }
+      }
+    }
+    console.log('\n✅ Safeguard 2 passed: All location pages have non-empty root divs');
   }
 console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
   console.log(`\n📊 Architecture Breakdown:`);
