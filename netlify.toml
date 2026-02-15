@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npx vite build"
+  command = "npm run build"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -134,6 +134,13 @@ force = true
 from = "/locations/deerfield-beach"
 to = "/locations/deerfield-beach/index.html"
 status = 200
+
+# Serve ALL prerendered location pages (wildcard after Deerfield Beach)
+# Netlify checks static files in dist/ first; this redirect ensures clean URLs resolve
+[[redirects]]
+  from = "/locations/*"
+  to = "/locations/:splat/index.html"
+  status = 200
 
 [[redirects]]
 from = "/*"
