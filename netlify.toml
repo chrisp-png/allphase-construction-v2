@@ -116,9 +116,17 @@ to = "/locations/:splat"
 status = 301
 force = true
 
+# Legacy service-area URLs redirect to city pages (Rule A - without trailing slash)
 [[redirects]]
-from = "/locations/*/service-area/*"
-to = "/locations/:splat"
+from = "/locations/:parent/service-area/:city"
+to = "/locations/:city"
+status = 301
+force = true
+
+# Legacy service-area URLs redirect to city pages (Rule B - with trailing slash)
+[[redirects]]
+from = "/locations/:parent/service-area/:city/"
+to = "/locations/:city"
 status = 301
 force = true
 
