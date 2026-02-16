@@ -137,7 +137,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roof-inspection" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
+            <Link to="/roof-inspection/" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Flat Roof Inspection — Broward County</span>
           </div>
@@ -152,13 +152,13 @@ export default function FlatRoofInspectionBrowardCountyPage() {
 
           {/* Subhead */}
           <p className="text-xl text-zinc-300 leading-relaxed mb-8 max-w-4xl">
-            <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic evaluation</Link> of commercial and low-slope residential roofing systems. Material-specific inspection protocols for <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">TPO, PVC, EPDM, modified bitumen, and built-up roofing</Link> assemblies. Licensed contractor analysis focused on drainage performance, fastening integrity, and code compliance in High Velocity Hurricane Zone jurisdictions.
+            <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic evaluation</Link> of commercial and low-slope residential roofing systems. Material-specific inspection protocols for <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">TPO, PVC, EPDM, modified bitumen, and built-up roofing</Link> assemblies. Licensed contractor analysis focused on drainage performance, fastening integrity, and code compliance in High Velocity Hurricane Zone jurisdictions.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Schedule Inspection
@@ -199,7 +199,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             Flat Roof Risks Specific to Broward County
           </h2>
           <p className="text-xl text-zinc-300 mb-12 text-center max-w-4xl mx-auto leading-relaxed">
-            Regional climate conditions, wind exposure, and building code requirements create accelerated deterioration patterns that require <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">specialized inspection protocols</Link> and documentation strategies.
+            Regional climate conditions, wind exposure, and building code requirements create accelerated deterioration patterns that require <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">specialized inspection protocols</Link> and documentation strategies.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -248,7 +248,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
                 <h3 className="text-xl font-bold text-white">Aging Commercial Roof Inventory</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed mb-4">
-                Many commercial buildings in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
+                Many commercial buildings in <Link to="/locations/" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
               </p>
               <p className="text-red-400 font-semibold text-sm">
                 Inspection establishes actual remaining service life and informs capital planning for replacement timing.
@@ -274,7 +274,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               Inspection as Risk Mitigation
             </h3>
             <p className="text-xl text-zinc-200 leading-relaxed max-w-4xl mx-auto">
-              <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic inspection</Link> before failure occurs provides the documentation needed to schedule replacement during favorable weather windows, secure financing on planned terms, and maintain continuous insurance coverage—rather than responding to emergency conditions under time pressure with limited contractor availability and uncertain insurance claim outcomes.
+              <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic inspection</Link> before failure occurs provides the documentation needed to schedule replacement during favorable weather windows, secure financing on planned terms, and maintain continuous insurance coverage—rather than responding to emergency conditions under time pressure with limited contractor availability and uncertain insurance claim outcomes.
             </p>
           </div>
         </div>
@@ -374,7 +374,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-12 py-5 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition-all duration-300 text-xl shadow-xl shadow-red-600/30 inline-block"
               >
                 Schedule Diagnostic Inspection
@@ -538,7 +538,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
           </h2>
 
           <p className="text-xl text-zinc-300 mb-10 text-center leading-relaxed">
-            Our inspectors have material-specific expertise in evaluating the condition, attachment integrity, and remaining service life of all <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial and low-slope residential roofing systems</Link> common to South Florida.
+            Our inspectors have material-specific expertise in evaluating the condition, attachment integrity, and remaining service life of all <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">commercial and low-slope residential roofing systems</Link> common to South Florida.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -901,7 +901,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </p>
 
             <p>
-              Many commercial buildings in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> were constructed between 1970 and 2000, when building codes imposed lower wind load requirements. Roofs installed during this period may not meet current HVHZ standards. While these installations are legally grandfathered, property owners should understand the performance gap when evaluating insurance requirements and planning capital expenditures.
+              Many commercial buildings in <Link to="/locations/" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link> were constructed between 1970 and 2000, when building codes imposed lower wind load requirements. Roofs installed during this period may not meet current HVHZ standards. While these installations are legally grandfathered, property owners should understand the performance gap when evaluating insurance requirements and planning capital expenditures.
             </p>
           </div>
         </div>
@@ -915,7 +915,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               Flat & Single-Ply Roofing Systems We Inspect
             </h2>
             <p className="text-xl text-zinc-300 leading-relaxed max-w-3xl mx-auto">
-              Our inspectors possess material-specific expertise across all <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial and low-slope residential roofing systems</Link> common to South Florida.
+              Our inspectors possess material-specific expertise across all <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">commercial and low-slope residential roofing systems</Link> common to South Florida.
             </p>
           </div>
 
@@ -963,21 +963,21 @@ export default function FlatRoofInspectionBrowardCountyPage() {
           </div>
 
           <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
-            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link>, including:
+            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout <Link to="/locations/" className="text-red-500 hover:text-red-400 underline transition-colors">Broward County</Link>, including:
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 text-lg text-zinc-300">
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-fort-lauderdale-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
+              <Link to="/roofing-contractor-fort-lauderdale-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-pompano-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
+              <Link to="/roofing-contractor-pompano-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-coral-springs-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
+              <Link to="/roofing-contractor-coral-springs-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -985,7 +985,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-plantation-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
+              <Link to="/roofing-contractor-plantation-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1001,7 +1001,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-davie-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
+              <Link to="/roofing-contractor-davie-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1134,7 +1134,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <Link to="/roof-inspection" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/roof-inspection/" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Search className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 General Roof Inspection Services
@@ -1147,7 +1147,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               </div>
             </Link>
 
-            <Link to="/commercial-roofing" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/commercial-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Building2 className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Commercial Roofing Services
@@ -1160,7 +1160,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               </div>
             </Link>
 
-            <Link to="/flat-roofing" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/flat-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Layers className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Flat Roofing Installation & Repair
@@ -1173,7 +1173,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               </div>
             </Link>
 
-            <Link to="/roofing-services/roof-repair" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/roofing-services/roof-repair/" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Shield className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Roof Repair Services
@@ -1201,7 +1201,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1213,7 +1213,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/insurance-roof-inspection"
+              to="/insurance-roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1225,7 +1225,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/tile-roof-inspection-broward-county"
+              to="/tile-roof-inspection-broward-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1237,7 +1237,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/metal-roof-inspection-broward-county"
+              to="/metal-roof-inspection-broward-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1249,7 +1249,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/flat-roof-inspection-palm-beach-county"
+              to="/flat-roof-inspection-palm-beach-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1275,7 +1275,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Schedule Inspection

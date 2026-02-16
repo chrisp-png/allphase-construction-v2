@@ -68,7 +68,7 @@ export default function DelrayBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -82,7 +82,7 @@ export default function DelrayBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Delray Beach properties face coastal and near-coastal conditions that can accelerate roof wear, including salt-air exposure, wind-driven rain, sustained UV cycling, and seasonal storm impacts. All Phase Construction USA provides inspection-first roof repair services designed to identify root causes of leaks, tile displacement, or material failures before recommending corrective work. Every project begins with a <Link to="/roofing-services/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate for the observed issues and site exposure.
+                  Delray Beach properties face coastal and near-coastal conditions that can accelerate roof wear, including salt-air exposure, wind-driven rain, sustained UV cycling, and seasonal storm impacts. All Phase Construction USA provides inspection-first roof repair services designed to identify root causes of leaks, tile displacement, or material failures before recommending corrective work. Every project begins with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate for the observed issues and site exposure.
                 </p>
               </div>
 
@@ -339,7 +339,7 @@ export default function DelrayBeachRoofRepairPage() {
               </p>
 
               <p>
-                Property owners in <Link to="/service-areas/delray-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/service-areas/delray-beach/roof-cost-estimate" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/financing" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
+                Property owners in <Link to="/service-areas/delray-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/service-areas/delray-beach/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
               </p>
             </div>
           </div>

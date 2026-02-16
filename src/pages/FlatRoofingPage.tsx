@@ -150,7 +150,7 @@ export default function FlatRoofingPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Roof Assessment
@@ -202,14 +202,14 @@ export default function FlatRoofingPage() {
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-6">
             In these conditions, a{' '}
-            <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
+            <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">
               diagnostic roof inspection
             </Link>
             {' '}is required to determine whether membrane repair, section replacement, or full system replacement is technically appropriate.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed">
-            We provide material-specific diagnostic <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> for single-ply and built-up roofing systems, including infrared thermography for concealed moisture detection, systematic seam evaluation, and drainage assessment throughout Broward County and Palm Beach County. Our commercial roof inspection protocols establish factual membrane condition and substrate integrity before repair or replacement decisions.
+            We provide material-specific diagnostic <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> for single-ply and built-up roofing systems, including infrared thermography for concealed moisture detection, systematic seam evaluation, and drainage assessment throughout Broward County and Palm Beach County. Our commercial roof inspection protocols establish factual membrane condition and substrate integrity before repair or replacement decisions.
           </p>
         </div>
       </section>
@@ -642,7 +642,7 @@ export default function FlatRoofingPage() {
 
           <div className="text-center">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Check If Your Association Qualifies
@@ -711,7 +711,7 @@ export default function FlatRoofingPage() {
           </div>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
           >
             Check If We Service Your Area
@@ -757,7 +757,7 @@ export default function FlatRoofingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Roof Assessment

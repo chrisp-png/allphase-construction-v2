@@ -453,13 +453,13 @@ export default function EasyPaymentsPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="/contact"
+              href="/contact/"
               className="flex-1 px-6 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-center"
             >
               Schedule a Free Roof Inspection
             </a>
             <a
-              href="/calculator"
+              href="/calculator/"
               className="flex-1 px-6 py-4 bg-zinc-700 text-white rounded-lg font-semibold hover:bg-zinc-600 transition-all duration-300 text-center border border-zinc-600"
             >
               Estimate Your Roof Cost
@@ -546,7 +546,7 @@ export default function EasyPaymentsPage() {
                 <span>Call (754) 227-5605</span>
               </a>
               <a
-                href="/contact"
+                href="/contact/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-slate-700 text-white rounded-lg font-semibold hover:bg-slate-600 transition-all duration-300"
               >
                 Request Free Assessment

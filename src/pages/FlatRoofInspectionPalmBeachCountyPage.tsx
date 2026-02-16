@@ -138,7 +138,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roof-inspection" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
+            <Link to="/roof-inspection/" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Flat Roof Inspection — Palm Beach County</span>
           </div>
@@ -153,13 +153,13 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
 
           {/* Subhead */}
           <p className="text-xl text-zinc-300 leading-relaxed mb-8 max-w-4xl">
-            <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic evaluation</Link> of commercial and low-slope residential roofing systems. Material-specific inspection protocols for <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">TPO, PVC, EPDM, modified bitumen, and built-up roofing</Link> assemblies. Licensed contractor analysis focused on drainage performance, fastening integrity, and code compliance in High Velocity Hurricane Zone jurisdictions.
+            <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic evaluation</Link> of commercial and low-slope residential roofing systems. Material-specific inspection protocols for <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">TPO, PVC, EPDM, modified bitumen, and built-up roofing</Link> assemblies. Licensed contractor analysis focused on drainage performance, fastening integrity, and code compliance in High Velocity Hurricane Zone jurisdictions.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Schedule Inspection
@@ -205,7 +205,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               <span className="text-red-500">Before You See Any Leak</span>
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-3xl mx-auto">
-              Commercial and low-slope roofing systems in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> deteriorate for years before interior damage becomes visible. By the time water appears at a ceiling, the problem has already existed—and spread—far beyond the obvious location.
+              Commercial and low-slope roofing systems in <Link to="/locations/" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> deteriorate for years before interior damage becomes visible. By the time water appears at a ceiling, the problem has already existed—and spread—far beyond the obvious location.
             </p>
           </div>
 
@@ -293,11 +293,11 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               Inspection Establishes Facts Before Capital Decisions
             </h3>
             <p className="text-xl text-zinc-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Diagnostic inspection by a licensed contractor identifies actual failure mechanisms, documents concealed moisture extent, and establishes whether your <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">flat or single-ply roofing system</Link> requires localized repair or full replacement. Insurance-defensible documentation. Material-specific analysis. No sales pressure—technical findings only.
+              Diagnostic inspection by a licensed contractor identifies actual failure mechanisms, documents concealed moisture extent, and establishes whether your <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">flat or single-ply roofing system</Link> requires localized repair or full replacement. Insurance-defensible documentation. Material-specific analysis. No sales pressure—technical findings only.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-10 py-5 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition-all duration-300 text-xl shadow-xl shadow-red-600/30 inline-block"
               >
                 Schedule Diagnostic Inspection
@@ -324,7 +324,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             Flat Roof Risks Specific to Palm Beach County
           </h2>
           <p className="text-xl text-zinc-300 mb-12 text-center max-w-4xl mx-auto leading-relaxed">
-            Regional climate conditions, wind exposure, and building code requirements create accelerated deterioration patterns that require <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">specialized inspection protocols</Link> and documentation strategies.
+            Regional climate conditions, wind exposure, and building code requirements create accelerated deterioration patterns that require <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">specialized inspection protocols</Link> and documentation strategies.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -373,7 +373,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <h3 className="text-xl font-bold text-white">Aging Commercial Roof Inventory</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed mb-4">
-                Many commercial buildings in <Link to="/locations" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
+                Many commercial buildings in <Link to="/locations/" className="text-red-500 hover:text-red-400 underline transition-colors">Palm Beach County</Link> contain roofing systems installed in the 1990s or early 2000s that have exceeded design service life. Material formulations used during that era—particularly early TPO generations—show premature deterioration patterns not anticipated during original installation.
               </p>
               <p className="text-red-400 font-semibold text-sm">
                 Inspection establishes actual remaining service life and informs capital planning for replacement timing.
@@ -399,7 +399,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               Inspection as Risk Mitigation
             </h3>
             <p className="text-xl text-zinc-200 leading-relaxed max-w-4xl mx-auto">
-              <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic inspection</Link> before failure occurs provides the documentation needed to schedule replacement during favorable weather windows, secure financing on planned terms, and maintain continuous insurance coverage—rather than responding to emergency conditions under time pressure with limited contractor availability and uncertain insurance claim outcomes.
+              <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic inspection</Link> before failure occurs provides the documentation needed to schedule replacement during favorable weather windows, secure financing on planned terms, and maintain continuous insurance coverage—rather than responding to emergency conditions under time pressure with limited contractor availability and uncertain insurance claim outcomes.
             </p>
           </div>
         </div>
@@ -550,7 +550,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               </div>
             </div>
             <p className="text-xl text-zinc-200 leading-relaxed text-center max-w-4xl mx-auto">
-              These diagnostic methods—combined with systematic documentation of seam integrity, fastening patterns, and flashing condition—establish factual basis for determining whether <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">flat or single-ply roofing systems</Link> require localized repair, restorative coating, or full replacement.
+              These diagnostic methods—combined with systematic documentation of seam integrity, fastening patterns, and flashing condition—establish factual basis for determining whether <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">flat or single-ply roofing systems</Link> require localized repair, restorative coating, or full replacement.
             </p>
           </div>
         </div>
@@ -578,7 +578,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-3">Lateral Moisture Migration</h3>
                   <p className="text-zinc-300 leading-relaxed text-lg">
-                    Water does not travel vertically through <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">flat roofing assemblies</Link>. It enters through a compromised seam, flashing separation, or puncture—then migrates horizontally beneath the membrane, sometimes traveling 20, 50, or 100 feet before saturating insulation and penetrating the deck. The interior leak location bears no relationship to the actual point of entry.
+                    Water does not travel vertically through <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roofing assemblies</Link>. It enters through a compromised seam, flashing separation, or puncture—then migrates horizontally beneath the membrane, sometimes traveling 20, 50, or 100 feet before saturating insulation and penetrating the deck. The interior leak location bears no relationship to the actual point of entry.
                   </p>
                 </div>
               </div>
@@ -650,7 +650,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-12 py-5 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition-all duration-300 text-xl shadow-xl shadow-red-600/30 inline-block"
               >
                 Schedule Diagnostic Inspection
@@ -702,7 +702,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                     Surface-level observations identify obvious conditions like ponding water, blistered membrane, or exposed fastener plates. But the majority of leak sources on flat roofs are not visible from above: seam separation beneath overlap joints, fastener penetrations through membrane into wet insulation, sealant failure at metal terminations, or bond loss between flashing and vertical surfaces.
                   </p>
                   <p className="text-zinc-300 leading-relaxed text-lg mt-4">
-                    <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Professional inspection protocols</Link> include systematic probing of seams, infrared thermography for concealed moisture, and evaluation of conditions that cannot be assessed through visual observation alone.
+                    <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Professional inspection protocols</Link> include systematic probing of seams, infrared thermography for concealed moisture, and evaluation of conditions that cannot be assessed through visual observation alone.
                   </p>
                 </div>
               </div>
@@ -714,7 +714,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-4">Coatings Conceal Underlying Failure</h3>
                   <p className="text-zinc-300 leading-relaxed text-lg">
-                    Elastomeric coatings, silicone systems, and acrylic sealants are frequently applied to aging <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">flat roofing systems</Link> as temporary measures to extend service life. These coatings create a uniform surface appearance that conceals the condition of the underlying membrane, seams, and substrate.
+                    Elastomeric coatings, silicone systems, and acrylic sealants are frequently applied to aging <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roofing systems</Link> as temporary measures to extend service life. These coatings create a uniform surface appearance that conceals the condition of the underlying membrane, seams, and substrate.
                   </p>
                   <p className="text-zinc-300 leading-relaxed text-lg mt-4">
                     A recently coated roof may appear serviceable while the base membrane beneath has separated seams, saturated insulation, or deteriorated flashings. Diagnostic inspection establishes actual conditions beneath surface treatments and determines whether coating application addressed or merely masked existing defects.
@@ -900,10 +900,10 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                       Objective Technical Analysis—No Repair Sales Pressure
                     </h3>
                     <p className="text-zinc-200 text-lg leading-relaxed mb-4">
-                      Our <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">inspection service</Link> provides factual documentation of existing conditions and identification of failure mechanisms. We do not default to replacement recommendations or pressure property owners toward unnecessary capital expenditure.
+                      Our <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">inspection service</Link> provides factual documentation of existing conditions and identification of failure mechanisms. We do not default to replacement recommendations or pressure property owners toward unnecessary capital expenditure.
                     </p>
                     <p className="text-zinc-200 text-lg leading-relaxed">
-                      The inspection report establishes whether your <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">flat or single-ply roofing system</Link> requires localized repair, restorative maintenance, or full replacement—based on technical findings rather than contractor preference.
+                      The inspection report establishes whether your <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">flat or single-ply roofing system</Link> requires localized repair, restorative maintenance, or full replacement—based on technical findings rather than contractor preference.
                     </p>
                   </div>
                 </div>
@@ -913,7 +913,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
 
           <div className="mt-12 text-center">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-block px-12 py-5 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition-all duration-300 text-xl shadow-xl shadow-red-600/30"
             >
               Schedule Comprehensive Roof Inspection
@@ -951,7 +951,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               Flat & Single-Ply Roofing Systems We Inspect
             </h2>
             <p className="text-xl text-zinc-300 leading-relaxed max-w-3xl mx-auto">
-              Our inspectors possess material-specific expertise across all <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial and low-slope residential roofing systems</Link> common to South Florida.
+              Our inspectors possess material-specific expertise across all <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">commercial and low-slope residential roofing systems</Link> common to South Florida.
             </p>
           </div>
 
@@ -1172,25 +1172,25 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
           </div>
 
           <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
-            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, and surrounding municipalities:
+            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, and surrounding municipalities:
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 text-lg text-zinc-300">
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-west-palm-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
+              <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-boca-raton-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
+              <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-delray-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
+              <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-boynton-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
+              <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1198,7 +1198,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-wellington-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
+              <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1320,7 +1320,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1332,7 +1332,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/insurance-roof-inspection"
+              to="/insurance-roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1344,7 +1344,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/tile-roof-inspection-palm-beach-county"
+              to="/tile-roof-inspection-palm-beach-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1356,7 +1356,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/metal-roof-inspection-palm-beach-county"
+              to="/metal-roof-inspection-palm-beach-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1368,7 +1368,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/flat-roof-inspection-broward-county"
+              to="/flat-roof-inspection-broward-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1394,7 +1394,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Schedule Inspection

@@ -70,7 +70,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roof-inspection" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
+            <Link to="/roof-inspection/" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Flat Roof Moisture & Infrared Inspection</span>
           </div>
@@ -93,7 +93,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Schedule Infrared Inspection
@@ -1285,7 +1285,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
               detail and confirmation necessary for remediation planning.
             </p>
             <p className="text-zinc-200 text-lg leading-relaxed">
-              Professional <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection services</Link> integrate multiple diagnostic methods
+              Professional <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection services</Link> integrate multiple diagnostic methods
               to establish comprehensive understanding of roof conditions. Infrared thermography serves as
               one component of thorough evaluation—not a standalone solution.
             </p>
@@ -1530,14 +1530,14 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
                 Broward County
               </h3>
               <div className="grid grid-cols-2 gap-3 text-lg text-zinc-300">
-                <Link to="/roofing-contractor-fort-lauderdale-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
-                <Link to="/roofing-contractor-pompano-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
-                <Link to="/roofing-contractor-coral-springs-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
+                <Link to="/roofing-contractor-fort-lauderdale-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
+                <Link to="/roofing-contractor-pompano-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
+                <Link to="/roofing-contractor-coral-springs-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
                 <span>Deerfield Beach</span>
-                <Link to="/roofing-contractor-plantation-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
-                <Link to="/roofing-contractor-hollywood-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Hollywood</Link>
-                <Link to="/roofing-contractor-davie-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
-                <Link to="/roofing-contractor-weston-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Weston</Link>
+                <Link to="/roofing-contractor-plantation-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
+                <Link to="/roofing-contractor-hollywood-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Hollywood</Link>
+                <Link to="/roofing-contractor-davie-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
+                <Link to="/roofing-contractor-weston-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Weston</Link>
                 <span>Parkland</span>
                 <span>Miramar</span>
                 <span>Pembroke Pines</span>
@@ -1551,11 +1551,11 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
                 Palm Beach County
               </h3>
               <div className="grid grid-cols-2 gap-3 text-lg text-zinc-300">
-                <Link to="/roofing-contractor-west-palm-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
-                <Link to="/roofing-contractor-boca-raton-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
-                <Link to="/roofing-contractor-delray-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
-                <Link to="/roofing-contractor-boynton-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
-                <Link to="/roofing-contractor-wellington-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
+                <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
+                <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
+                <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
+                <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
+                <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
                 <span>Palm Beach Gardens</span>
                 <span>Jupiter</span>
                 <span>Royal Palm Beach</span>
@@ -1581,7 +1581,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/flat-roof-inspection-broward-county"
+              to="/flat-roof-inspection-broward-county/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1593,7 +1593,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
             </Link>
 
             <Link
-              to="/flat-roof-inspection-palm-beach-county"
+              to="/flat-roof-inspection-palm-beach-county/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1605,7 +1605,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
             </Link>
 
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1617,7 +1617,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
             </Link>
 
             <Link
-              to="/insurance-roof-inspection"
+              to="/insurance-roof-inspection/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1629,7 +1629,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
             </Link>
 
             <Link
-              to="/flat-roofing"
+              to="/flat-roofing/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1641,7 +1641,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
             </Link>
 
             <Link
-              to="/commercial-roofing"
+              to="/commercial-roofing/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -1671,7 +1671,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Pillar Page Link */}
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-gradient-to-br from-zinc-950 to-zinc-900 border-2 border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
             >
               <div className="flex items-start gap-4 mb-4">
@@ -1693,7 +1693,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
             {/* Broward County Flat Roof */}
             <Link
-              to="/flat-roof-inspection-broward-county"
+              to="/flat-roof-inspection-broward-county/"
               className="bg-gradient-to-br from-zinc-950 to-zinc-900 border-2 border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
             >
               <div className="flex items-start gap-4 mb-4">
@@ -1715,7 +1715,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
             {/* Palm Beach County Flat Roof */}
             <Link
-              to="/flat-roof-inspection-palm-beach-county"
+              to="/flat-roof-inspection-palm-beach-county/"
               className="bg-gradient-to-br from-zinc-950 to-zinc-900 border-2 border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
             >
               <div className="flex items-start gap-4 mb-4">
