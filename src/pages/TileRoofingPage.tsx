@@ -164,7 +164,7 @@ export default function TileRoofingPage() {
             <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
               diagnostic roof inspection
             </Link>
-            {' '}is necessary to determine whether tile roof repair, partial remediation, or full replacement is technically appropriate. Tile roofing systems throughout South Florida often require professional diagnostic evaluation to assess underlayment condition, attachment integrity, and concealed failure mechanisms before repair or replacement decisions are made. Our <Link to="/tile-roof-inspection-broward-county" className="text-red-600 hover:text-red-500 underline transition-colors">Tile Roof Inspection Services in Broward County</Link> and <Link to="/tile-roof-inspection-palm-beach-county" className="text-red-600 hover:text-red-500 underline transition-colors">Tile Roof Inspection Services in Palm Beach County</Link> provide the material-specific technical assessment required for these evaluations.
+            {' '}is necessary to determine whether tile roof repair, partial remediation, or full replacement is technically appropriate. Tile roofing systems throughout South Florida require professional diagnostic evaluation to assess underlayment condition, attachment integrity, and concealed failure mechanisms before repair or replacement decisions are made. Our <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> provide material-specific technical assessment of tile condition, underlayment performance, and structural attachment throughout Broward County and Palm Beach County.
           </p>
         </div>
       </section>

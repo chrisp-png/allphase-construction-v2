@@ -140,11 +140,7 @@ export default function MetalRoofingPage() {
           </ul>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-            Metal roofing systems often require professional inspection to evaluate attachment performance, thermal movement accommodation, and wind resistance characteristics before repair or replacement decisions are made. For properties in HVHZ jurisdictions, our <Link to="/metal-roof-inspection-broward-county" className="text-red-600 hover:text-red-500 underline transition-colors">Metal Roof Inspection Services in Broward County</Link> provide system-wide evaluation of concealed fastener integrity, clip performance, and code compliance.
-          </p>
-
-          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-            Metal roofing systems in Palm Beach County often require professional inspection to evaluate attachment performance, thermal movement, and wind resistance before repair, retrofit, or replacement decisions are made. Our <Link to="/metal-roof-inspection-palm-beach-county" className="text-red-600 hover:text-red-500 underline transition-colors">Metal Roof Inspection Services in Palm Beach County</Link> provide diagnostic assessment of concealed attachment systems, panel integrity, and structural performance characteristics specific to coastal wind exposure and thermal cycling conditions.
+            Metal roofing systems often require professional inspection to evaluate attachment performance, thermal movement accommodation, and wind resistance characteristics before repair or replacement decisions are made. Our <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> provide system-wide evaluation of concealed fastener integrity, clip performance, panel condition, and code compliance throughout Broward County and Palm Beach County—including specialized assessment protocols for properties in HVHZ jurisdictions.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed">

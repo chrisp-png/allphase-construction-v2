@@ -209,7 +209,7 @@ export default function FlatRoofingPage() {
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed">
-            We provide material-specific diagnostic inspection services for single-ply and built-up roofing systems, including infrared thermography for concealed moisture detection, systematic seam evaluation, and drainage assessment. Our <Link to="/flat-roof-inspection-broward-county" className="text-red-600 hover:text-red-500 underline transition-colors">Flat & Single-Ply Roof Inspection Services in Broward County</Link> and <Link to="/flat-roof-inspection-palm-beach-county" className="text-red-600 hover:text-red-500 underline transition-colors">Flat & Single-Ply Roof Inspection Services in Palm Beach County</Link> establish factual membrane condition and substrate integrity before repair or replacement decisions.
+            We provide material-specific diagnostic <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> for single-ply and built-up roofing systems, including infrared thermography for concealed moisture detection, systematic seam evaluation, and drainage assessment throughout Broward County and Palm Beach County. Our commercial roof inspection protocols establish factual membrane condition and substrate integrity before repair or replacement decisions.
           </p>
         </div>
       </section>
