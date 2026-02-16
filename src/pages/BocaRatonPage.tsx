@@ -628,6 +628,20 @@ export default function BocaRatonPage() {
               <p className="text-zinc-300 leading-relaxed mb-8">
                 We serve Boca Raton and the surrounding region with the same process: inspect, document, scope, permit, install, and close out clean. Protecting your house with reliable roofing solutions is our priority in every community we serve, ensuring your home and its occupants are safe and secure.
               </p>
+
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Palm Beach County (partial list)
+              </h3>
+              <p className="text-zinc-300 leading-relaxed mb-8">
+                <a href="/locations/boca-raton" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</a>, <a href="/locations/delray-beach" className="text-red-600 hover:text-red-500 transition-colors">Delray Beach</a>, <a href="/locations/boynton-beach" className="text-red-600 hover:text-red-500 transition-colors">Boynton Beach</a>, <a href="/locations/lake-worth" className="text-red-600 hover:text-red-500 transition-colors">Lake Worth</a>, <a href="/locations/wellington" className="text-red-600 hover:text-red-500 transition-colors">Wellington</a>, <a href="/locations/west-palm-beach" className="text-red-600 hover:text-red-500 transition-colors">West Palm Beach</a>, <a href="/locations/palm-beach-gardens" className="text-red-600 hover:text-red-500 transition-colors">Palm Beach Gardens</a>, <a href="/locations/jupiter" className="text-red-600 hover:text-red-500 transition-colors">Jupiter</a>
+              </p>
+
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Broward County (partial list)
+              </h3>
+              <p className="text-zinc-300 leading-relaxed mb-8">
+                <a href="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 transition-colors">Deerfield Beach</a>, <a href="/locations/pompano-beach" className="text-red-600 hover:text-red-500 transition-colors">Pompano Beach</a>, <a href="/locations/fort-lauderdale" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</a>, <a href="/locations/coral-springs" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</a>, <a href="/locations/coconut-creek" className="text-red-600 hover:text-red-500 transition-colors">Coconut Creek</a>, <a href="/locations/parkland" className="text-red-600 hover:text-red-500 transition-colors">Parkland</a>, <a href="/locations/oakland-park" className="text-red-600 hover:text-red-500 transition-colors">Oakland Park</a>, <a href="/locations/sunrise" className="text-red-600 hover:text-red-500 transition-colors">Sunrise</a>, <a href="/locations/weston" className="text-red-600 hover:text-red-500 transition-colors">Weston</a>
+              </p>
             </div>
 
             <PhotoBreak
