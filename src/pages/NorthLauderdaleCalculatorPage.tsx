@@ -201,7 +201,7 @@ export default function NorthLauderdaleCalculatorPage() {
                       Call (754) 227-5605
                     </a>
                     <Link
-                      to="/contact"
+                      to="/contact/"
                       className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-all border border-zinc-700"
                     >
                       Request Consultation
@@ -242,7 +242,7 @@ export default function NorthLauderdaleCalculatorPage() {
 
           <div className="text-center">
             <Link
-              to="/locations/deerfield-beach/service-area/north-lauderdale"
+              to="/locations/deerfield-beach/service-area/north-lauderdale/"
               className="inline-flex items-center text-red-500 hover:text-red-400 font-semibold transition-colors"
             >
               ← Back to North Lauderdale Roofing Services

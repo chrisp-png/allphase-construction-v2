@@ -142,7 +142,7 @@ export default function NorthLauderdalePage() {
               Call (754) 227-5605
             </a>
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-all border border-zinc-700"
             >
               Schedule Free Inspection
@@ -438,7 +438,7 @@ export default function NorthLauderdalePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 rounded-lg hover:from-red-700 hover:to-red-800 transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               Schedule Free Inspection

@@ -106,49 +106,49 @@ export default function NorthPalmBeachPage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and aging components in North Palm Beach properties.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Roof Replacement',
       description: "Complete roofing system replacements built to current Florida Building Code standards for North Palm Beach.",
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Shingle Roofing',
       description: "Wind-rated shingle systems suitable for South Florida homes in North Palm Beach.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Tile Roofing',
       description: "Clay and concrete tile systems designed for durability and longevity in North Palm Beach conditions.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Shield
     },
     {
       title: 'Metal Roofing',
       description: "Long-lasting, wind-resistant metal roofing solutions for North Palm Beach properties.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Flat Roofing',
       description: "Low-slope roofing systems designed for proper drainage and sealing in North Palm Beach.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Emergency Roof Repair',
       description: "Prompt response for active leaks or storm-related damage throughout North Palm Beach.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wind
     },
     {
       title: 'Leak Detection & Prevention',
       description: "Identification of moisture entry points and preventative solutions for North Palm Beach roofs.",
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       icon: Droplets
     }
   ];
@@ -192,12 +192,12 @@ export default function NorthPalmBeachPage() {
   ];
 
   const nearbyCities = [
-    { name: 'West Palm Beach', path: '/locations/deerfield-beach/service-area/west-palm-beach' },
-    { name: 'Palm Beach Gardens', path: '/locations/deerfield-beach/service-area/palm-beach-gardens' },
-    { name: 'Jupiter', path: '/locations/deerfield-beach/service-area/jupiter' },
-    { name: 'Lake Worth Beach', path: '/locations/deerfield-beach/service-area/lake-worth-beach' },
-    { name: 'Royal Palm Beach', path: '/locations/deerfield-beach/service-area/royal-palm-beach' },
-    { name: 'Greenacres', path: '/locations/deerfield-beach/service-area/greenacres' }
+    { name: 'West Palm Beach', path: '/locations/deerfield-beach/service-area/west-palm-beach/' },
+    { name: 'Palm Beach Gardens', path: '/locations/deerfield-beach/service-area/palm-beach-gardens/' },
+    { name: 'Jupiter', path: '/locations/deerfield-beach/service-area/jupiter/' },
+    { name: 'Lake Worth Beach', path: '/locations/deerfield-beach/service-area/lake-worth-beach/' },
+    { name: 'Royal Palm Beach', path: '/locations/deerfield-beach/service-area/royal-palm-beach/' },
+    { name: 'Greenacres', path: '/locations/deerfield-beach/service-area/greenacres/' }
   ];
 
   const businessFaqs = [
@@ -251,11 +251,11 @@ export default function NorthPalmBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -298,7 +298,7 @@ export default function NorthPalmBeachPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
@@ -543,7 +543,7 @@ export default function NorthPalmBeachPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -561,7 +561,7 @@ export default function NorthPalmBeachPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

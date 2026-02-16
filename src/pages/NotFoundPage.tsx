@@ -53,7 +53,7 @@ export default function NotFoundPage() {
           </Link>
 
           <Link
-            to="/locations/service-areas"
+            to="/locations/service-areas/"
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow group"
           >
             <MapPin className="w-12 h-12 text-red-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
@@ -64,7 +64,7 @@ export default function NotFoundPage() {
           </Link>
 
           <Link
-            to="/residential-roofing"
+            to="/residential-roofing/"
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow group"
           >
             <Wrench className="w-12 h-12 text-red-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
@@ -82,7 +82,7 @@ export default function NotFoundPage() {
               (954) 400-6393
             </a>{' '}
             or{' '}
-            <Link to="/contact" className="text-red-600 font-bold hover:underline">
+            <Link to="/contact/" className="text-red-600 font-bold hover:underline">
               contact us online
             </Link>
             .
