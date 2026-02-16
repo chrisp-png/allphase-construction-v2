@@ -562,6 +562,38 @@ export default function BocaRatonPage() {
               <p className="text-zinc-300 text-lg leading-relaxed italic">
                 High-wind-rated systems are available when appropriate.
               </p>
+
+              <div className="mt-12 space-y-10">
+                <div className="bg-zinc-900/60 border border-zinc-800 rounded-lg p-8">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    160 MPH wind-rated shingles (when it fits the roof)
+                  </h3>
+                  <p className="text-zinc-300 text-lg leading-relaxed">
+                    If your home is a good match for shingles, we can spec high wind-rated systems designed for severe weather performance. Ask about wind ratings, fastening patterns, and the full system build, not only the brand name.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-900/60 border border-zinc-800 rounded-lg p-8">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    Warranties and certifications
+                  </h3>
+                  <p className="text-zinc-300 text-lg leading-relaxed">
+                    Manufacturer certifications can unlock stronger warranty options when the full system is installed to spec. That is one reason certifications matter, beyond the logo.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-900/60 border border-zinc-800 rounded-lg p-8">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    Roof cost in Boca Raton: what drives price
+                  </h3>
+                  <p className="text-zinc-300 text-lg leading-relaxed mb-4">
+                    Roof pricing in South Florida depends on the roof design and the code requirements, not just square footage. As a leading roofer in Boca Raton FL, we understand the importance of time in project scheduling and timely completion, ensuring your roofing project is completed efficiently and within the agreed timeline. Roofing costs can vary significantly based on the type of roofing service required, such as repairs or replacements. Many roofing companies in Boca Raton offer free estimates to help homeowners understand potential costs. Financing options are available from various roofing contractors to help manage the costs of roofing projects. Homeowners can also work with their insurance companies to cover some of the costs associated with roofing repairs or replacements. The total cost of a roofing project can be influenced by factors such as the size of the roof, the materials used, and the complexity of the installation.
+                  </p>
+                  <p className="text-zinc-300 text-lg leading-relaxed">
+                    We are committed to transparent pricing, ensuring you receive clear and upfront cost information for your roofing project. A professional quote should always be itemized and specify material brands, labor costs, permit fees, and timelines so you know exactly what to expect.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="mb-16">
