@@ -165,7 +165,7 @@ export default function BocaRatonPage() {
               </div>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-12">
-                As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage—crucial for maintaining the safety and comfort of your home. We are proud of our strong BBB rating (A+) and recent positive Google reviews. When choosing a roofer in Boca Raton, always prioritize local, licensed, insured, and bonded contractors with a proven commitment to customer satisfaction and community trust.
+                As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage—crucial for maintaining the safety and comfort of your home. We are proud of our strong BBB rating (A+) and recent positive Google reviews. As licensed and insured roofing contractors, we treat every project with care and attention to detail to ensure your satisfaction. While Latite Roofing has extensive experience in all types of roofing applications for both residential and commercial properties in Boca Raton, All Phase Construction USA matches this expertise and is committed to providing comprehensive roofing solutions tailored to your needs. When choosing a roofer in Boca Raton, always prioritize local, licensed, insured, and bonded contractors with a proven commitment to customer satisfaction and community trust.
               </p>
             </div>
 
