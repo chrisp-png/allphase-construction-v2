@@ -118,7 +118,7 @@ export default function RoofRepairPage() {
       a: (
         <>
           Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer.{' '}
-          <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
+          <Link to="/roof-replacement-process/" className="text-red-600 hover:text-red-500 underline transition-colors font-semibold">
             Learn about our 10-step roof replacement process
           </Link>
           .
@@ -296,7 +296,7 @@ export default function RoofRepairPage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-center text-lg shadow-lg shadow-red-600/20"
               >
                 Schedule Free Roof Inspection
@@ -349,7 +349,7 @@ export default function RoofRepairPage() {
 
           <p className="text-lg text-zinc-300 leading-relaxed">
             If the condition or cause of a roofing issue is uncertain, a diagnostic evaluation should be performed first.{' '}
-            <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
+            <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">
               Learn more about our Roof Inspection Services
             </Link>
             .
@@ -526,7 +526,7 @@ export default function RoofRepairPage() {
               </p>
 
               <p>
-                For commercial buildings and properties requiring ongoing monitoring to maximize roof life and reduce emergency repair costs, consider enrolling in a <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">preventative roof maintenance program</Link> that includes scheduled inspections and documentation to support insurance requirements.
+                For commercial buildings and properties requiring ongoing monitoring to maximize roof life and reduce emergency repair costs, consider enrolling in a <Link to="/roof-maintenance-programs/" className="text-red-600 hover:text-red-500 underline transition-colors">preventative roof maintenance program</Link> that includes scheduled inspections and documentation to support insurance requirements.
               </p>
 
               <div className="bg-zinc-950 border border-zinc-700 rounded-lg p-6 my-8">
@@ -548,7 +548,7 @@ export default function RoofRepairPage() {
 
               <div className="pt-6">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
                 >
                   Find Out If Your Roof Qualifies
@@ -636,7 +636,7 @@ export default function RoofRepairPage() {
 
             <div className="pt-4">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
               >
                 Report Storm Damage
@@ -821,7 +821,7 @@ export default function RoofRepairPage() {
           </div>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
           >
             Schedule Your Free Inspection
@@ -864,7 +864,7 @@ export default function RoofRepairPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Schedule Free Inspection

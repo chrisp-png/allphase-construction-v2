@@ -133,7 +133,7 @@ export default function RoofMaintenanceProgramsPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Request Program Information
@@ -437,7 +437,7 @@ export default function RoofMaintenanceProgramsPage() {
           <p className="text-lg text-zinc-300 leading-relaxed">
             For comprehensive information about our commercial roofing services, visit our{" "}
             <Link
-              to="/commercial-roofing"
+              to="/commercial-roofing/"
               className="text-red-500 hover:text-red-400 underline"
             >
               Commercial Roofing page
@@ -514,7 +514,7 @@ export default function RoofMaintenanceProgramsPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Request Program Information

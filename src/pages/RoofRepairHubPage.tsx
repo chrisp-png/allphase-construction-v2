@@ -122,13 +122,13 @@ export default function RoofRepairHubPage() {
 
           {/* Hero Paragraph */}
           <p className="text-xl text-zinc-300 mb-8 max-w-4xl leading-relaxed">
-            In Broward and Palm Beach County, many roofs are replaced years before the system has reached the end of its useful life. In South Florida's heat, humidity, and storm-driven conditions, roof issues most often begin at penetrations, flashings, ventilation points, or entire slopes — not across the entire roof at once. A professional, <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> can determine whether strategic repairs and restoration can extend roof life, support insurance eligibility, and delay full replacement. We service all roofing systems including <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal</Link>, <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle</Link>, <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat</Link>, and <Link to="/single-ply-roofing" className="text-red-500 hover:text-red-400 underline">single-ply</Link> roofs.
+            In Broward and Palm Beach County, many roofs are replaced years before the system has reached the end of its useful life. In South Florida's heat, humidity, and storm-driven conditions, roof issues most often begin at penetrations, flashings, ventilation points, or entire slopes — not across the entire roof at once. A professional, <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> can determine whether strategic repairs and restoration can extend roof life, support insurance eligibility, and delay full replacement. We service all roofing systems including <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">tile</Link>, <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">metal</Link>, <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">shingle</Link>, <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline">flat</Link>, and <Link to="/single-ply-roofing/" className="text-red-500 hover:text-red-400 underline">single-ply</Link> roofs.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Roof Inspection
@@ -158,7 +158,7 @@ export default function RoofRepairHubPage() {
                   All of Broward County and Palm Beach County properties south of the Martin County line fall within Florida's High Velocity Hurricane Zone (HVHZ). This designation requires enhanced fastening schedules, wind-rated material approvals, and specific installation methods for all roof repairs and replacements.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  Roof repairs in HVHZ areas must meet Florida Building Code Section 1511 requirements and applicable HVHZ provisions to maintain wind resistance performance. All <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile roof</Link> repairs require both foam adhesive and mechanical fastening. <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">Metal roofing</Link> systems need tested clip or panel attachment methods. <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">Shingle repairs</Link> must use high-wind-rated products with enhanced nailing patterns.
+                  Roof repairs in HVHZ areas must meet Florida Building Code Section 1511 requirements and applicable HVHZ provisions to maintain wind resistance performance. All <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">tile roof</Link> repairs require both foam adhesive and mechanical fastening. <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">Metal roofing</Link> systems need tested clip or panel attachment methods. <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">Shingle repairs</Link> must use high-wind-rated products with enhanced nailing patterns.
                 </p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function RoofRepairHubPage() {
                 The 25% Rule (Pre-2009 Roofs)
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Florida Statute 553.844(5) requires that pre-2009 roofs exceeding 25% repair within a 12-month period may trigger full code-compliant replacement. Licensed contractors calculate repair scope during <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">inspection</Link> to verify compliance.
+                Florida Statute 553.844(5) requires that pre-2009 roofs exceeding 25% repair within a 12-month period may trigger full code-compliant replacement. Licensed contractors calculate repair scope during <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">inspection</Link> to verify compliance.
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function RoofRepairHubPage() {
               </div>
               <div className="flex gap-3">
                 <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                <p className="text-zinc-300"><strong><Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">Flat</Link> & <Link to="/single-ply-roofing" className="text-red-500 hover:text-red-400 underline">Single-Ply</Link> Systems:</strong> Membrane attachments and base sheet fastening must meet uplift ratings for exposure zone</p>
+                <p className="text-zinc-300"><strong><Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline">Flat</Link> & <Link to="/single-ply-roofing/" className="text-red-500 hover:text-red-400 underline">Single-Ply</Link> Systems:</strong> Membrane attachments and base sheet fastening must meet uplift ratings for exposure zone</p>
               </div>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function RoofRepairHubPage() {
               <Wrench className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-bold mb-3">Replace Multiple Penetrations at Once</h3>
               <p className="text-zinc-300">
-                When one vent or pipe boot has failed, replacing all penetrations on the same slope prevents recurring service calls and extends the repair lifespan. This approach works for all roofing systems including <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile</Link>, <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle</Link>, and <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal roofs</Link>.
+                When one vent or pipe boot has failed, replacing all penetrations on the same slope prevents recurring service calls and extends the repair lifespan. This approach works for all roofing systems including <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">tile</Link>, <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">shingle</Link>, and <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">metal roofs</Link>.
               </p>
             </div>
 
@@ -306,7 +306,7 @@ export default function RoofRepairHubPage() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Excess Attic Heat Accelerates Shingle Aging</h3>
                 <p className="text-zinc-300">
-                  High attic temperatures cause <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingles</Link> to become brittle and lose flexibility, reducing their resistance to wind and thermal stress.
+                  High attic temperatures cause <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">shingles</Link> to become brittle and lose flexibility, reducing their resistance to wind and thermal stress.
                 </p>
               </div>
             </div>
@@ -563,7 +563,7 @@ export default function RoofRepairHubPage() {
               <DollarSign className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-bold mb-3">Estimate Your Roof Costs</h3>
               <p className="text-zinc-300 mb-4">
-                Use our <Link to="/service-areas/deerfield-beach/roof-cost-estimate" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to get a preliminary estimate based on your roof type, square footage, and scope of work.
+                Use our <Link to="/service-areas/deerfield-beach/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to get a preliminary estimate based on your roof type, square footage, and scope of work.
               </p>
             </div>
 
@@ -571,7 +571,7 @@ export default function RoofRepairHubPage() {
               <Calendar className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-bold mb-3">Explore Financing Options</h3>
               <p className="text-zinc-300 mb-4">
-                We offer <Link to="/financing" className="text-red-500 hover:text-red-400 underline">financing options</Link> and flexible payment plans to help you manage the cost of roof repairs and restorations.
+                We offer <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing options</Link> and flexible payment plans to help you manage the cost of roof repairs and restorations.
               </p>
             </div>
           </div>
@@ -628,7 +628,7 @@ export default function RoofRepairHubPage() {
               {openFaqIndex === 11 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Deerfield Beach roofing contractors should be licensed, familiar with HVHZ fastening requirements, and able to provide <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspections</Link> before recommending repair or replacement. All Phase Construction USA is based in Deerfield Beach and serves residential and commercial properties throughout Broward and Palm Beach Counties with <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal</Link>, <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat</Link>, and <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle</Link> roofing systems.
+                    Deerfield Beach roofing contractors should be licensed, familiar with HVHZ fastening requirements, and able to provide <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspections</Link> before recommending repair or replacement. All Phase Construction USA is based in Deerfield Beach and serves residential and commercial properties throughout Broward and Palm Beach Counties with <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">tile</Link>, <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">metal</Link>, <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline">flat</Link>, and <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">shingle</Link> roofing systems.
                   </p>
                 </div>
               )}
@@ -649,7 +649,7 @@ export default function RoofRepairHubPage() {
               {openFaqIndex === 12 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Hurricane-resistant roofs in Broward and southern Palm Beach County must meet HVHZ provisions for wind uplift, including enhanced fastening schedules, approved materials, and proper installation methods. <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofs</Link> require foam adhesive and mechanical fasteners. <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">Metal roofs</Link> need tested clip systems. <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">Shingles</Link> require high-wind-rated products with specific nailing patterns. Repairs must maintain or restore these performance standards to preserve wind resistance.
+                    Hurricane-resistant roofs in Broward and southern Palm Beach County must meet HVHZ provisions for wind uplift, including enhanced fastening schedules, approved materials, and proper installation methods. <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">Tile roofs</Link> require foam adhesive and mechanical fasteners. <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">Metal roofs</Link> need tested clip systems. <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">Shingles</Link> require high-wind-rated products with specific nailing patterns. Repairs must maintain or restore these performance standards to preserve wind resistance.
                   </p>
                 </div>
               )}
@@ -878,7 +878,7 @@ export default function RoofRepairHubPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule an Inspection

@@ -373,7 +373,7 @@ export default function RoofInspectionPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Schedule Free Inspection
@@ -443,7 +443,7 @@ export default function RoofInspectionPage() {
                   Before you hire anyone to work on your roof, read our comprehensive guide covering HVHZ requirements, dual licensing, wind mitigation reports, insurance documentation, and what to verify for different roof types.
                 </p>
                 <Link
-                  to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor"
+                  to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor/"
                   className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   <span>Read the Complete Hiring Guide</span>
@@ -717,7 +717,7 @@ export default function RoofInspectionPage() {
 
           <div className="space-y-6">
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/roofing-services/roof-repair" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/roofing-services/roof-repair/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Roof Repair
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -726,7 +726,7 @@ export default function RoofInspectionPage() {
             </div>
 
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/residential-roofing" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/residential-roofing/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Residential Roofing
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -735,7 +735,7 @@ export default function RoofInspectionPage() {
             </div>
 
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/commercial-roofing" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/commercial-roofing/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Commercial Roofing
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -744,7 +744,7 @@ export default function RoofInspectionPage() {
             </div>
 
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/tile-roofing" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/tile-roofing/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Tile Roofing
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -753,7 +753,7 @@ export default function RoofInspectionPage() {
             </div>
 
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/metal-roofing" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/metal-roofing/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Metal Roofing
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -762,7 +762,7 @@ export default function RoofInspectionPage() {
             </div>
 
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/shingle-roofing" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/shingle-roofing/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Shingle Roofing
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -954,7 +954,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed">
-            For commercial properties requiring ongoing condition monitoring and early problem detection, scheduled inspections through a <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">preventative roof maintenance program</Link> provide consistent documentation, reduce emergency repair costs, and support insurance compliance requirements.
+            For commercial properties requiring ongoing condition monitoring and early problem detection, scheduled inspections through a <Link to="/roof-maintenance-programs/" className="text-red-600 hover:text-red-500 underline transition-colors">preventative roof maintenance program</Link> provide consistent documentation, reduce emergency repair costs, and support insurance compliance requirements.
           </p>
         </div>
       </section>
@@ -1247,7 +1247,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/roofing-services/roof-repair" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/roofing-services/roof-repair/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Wrench className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Roof Repair & Restoration
@@ -1260,7 +1260,7 @@ export default function RoofInspectionPage() {
               </div>
             </Link>
 
-            <Link to="/residential-roofing" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/residential-roofing/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Home className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Residential Roof Replacement
@@ -1273,7 +1273,7 @@ export default function RoofInspectionPage() {
               </div>
             </Link>
 
-            <Link to="/commercial-roofing" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/commercial-roofing/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Building2 className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Commercial Roofing
@@ -1286,7 +1286,7 @@ export default function RoofInspectionPage() {
               </div>
             </Link>
 
-            <Link to="/tile-roofing" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/tile-roofing/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Layers className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Tile Roofing
@@ -1299,7 +1299,7 @@ export default function RoofInspectionPage() {
               </div>
             </Link>
 
-            <Link to="/metal-roofing" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/metal-roofing/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Shield className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Metal Roofing
@@ -1312,7 +1312,7 @@ export default function RoofInspectionPage() {
               </div>
             </Link>
 
-            <Link to="/shingle-roofing" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/shingle-roofing/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Home className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Shingle Roofing
@@ -1343,7 +1343,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
           >
             Schedule Your Free Inspection
@@ -1664,7 +1664,7 @@ export default function RoofInspectionPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <Link
-              to="/locations/boca-raton"
+              to="/locations/boca-raton/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1673,7 +1673,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/deerfield-beach"
+              to="/locations/deerfield-beach/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1682,7 +1682,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/fort-lauderdale"
+              to="/locations/fort-lauderdale/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1691,7 +1691,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/coral-springs"
+              to="/locations/coral-springs/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1700,7 +1700,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/pompano-beach"
+              to="/locations/pompano-beach/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1709,7 +1709,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/west-palm-beach"
+              to="/locations/west-palm-beach/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1718,7 +1718,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/delray-beach"
+              to="/locations/delray-beach/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1727,7 +1727,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/boynton-beach"
+              to="/locations/boynton-beach/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1736,7 +1736,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/wellington"
+              to="/locations/wellington/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1745,7 +1745,7 @@ export default function RoofInspectionPage() {
             </Link>
 
             <Link
-              to="/locations/coconut-creek"
+              to="/locations/coconut-creek/"
               className="bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-500 rounded-lg p-6 text-center transition-all duration-300 group"
             >
               <MapPin className="w-8 h-8 text-red-500 group-hover:text-white mx-auto mb-3" />
@@ -1757,7 +1757,7 @@ export default function RoofInspectionPage() {
           <div className="text-center mt-8">
             <p className="text-zinc-400">
               Serving 50+ cities across Broward and Palm Beach Counties.{' '}
-              <Link to="/our-location" className="text-red-500 hover:text-red-400 underline">
+              <Link to="/our-location/" className="text-red-500 hover:text-red-400 underline">
                 View all service areas
               </Link>
             </p>
@@ -1776,7 +1776,7 @@ export default function RoofInspectionPage() {
               Before hiring a roofing contractor for repairs or replacement, learn what to look for in South Florida's High Velocity Hurricane Zone. Our comprehensive guide covers HVHZ requirements, wind mitigation, documentation, dual licensing, and what to verify before you sign.
             </p>
             <Link
-              to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor"
+              to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor/"
               className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
             >
               Read: How to Hire a Roofing Contractor in South Florida
@@ -1798,7 +1798,7 @@ export default function RoofInspectionPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Schedule Free Inspection

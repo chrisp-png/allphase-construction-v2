@@ -160,7 +160,7 @@ export default function RoofReplacementProcessPage() {
               Home
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/residential-roofing" className="hover:text-red-500 transition-colors">
+            <Link to="/residential-roofing/" className="hover:text-red-500 transition-colors">
               Residential Roofing
             </Link>
             <ChevronRight className="w-4 h-4" />
@@ -205,7 +205,7 @@ export default function RoofReplacementProcessPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
               <FileCheck className="w-5 h-5" />
@@ -441,7 +441,7 @@ export default function RoofReplacementProcessPage() {
                 </ul>
                 <p className="text-sm text-zinc-500 mt-6">
                   Learn more about our{' '}
-                  <Link to="/roof-inspection" className="text-zinc-400 hover:text-red-500 underline transition-colors">
+                  <Link to="/roof-inspection/" className="text-zinc-400 hover:text-red-500 underline transition-colors">
                     professional roof inspection services
                   </Link>
                   .
@@ -572,7 +572,7 @@ export default function RoofReplacementProcessPage() {
                 </div>
                 <p className="text-sm text-zinc-500 mt-6">
                   Want to estimate your project cost? Try our{' '}
-                  <Link to="/calculator" className="text-zinc-400 hover:text-red-500 underline transition-colors">
+                  <Link to="/calculator/" className="text-zinc-400 hover:text-red-500 underline transition-colors">
                     roof calculator
                   </Link>
                   {' '}for an instant preliminary estimate.
@@ -607,7 +607,7 @@ export default function RoofReplacementProcessPage() {
                     <h4 className="font-bold text-white mb-3">Financing Options</h4>
                     <p className="text-sm text-zinc-400 leading-relaxed">
                       We discuss payment structures, financing availability, and insurance claim coordination if applicable.{' '}
-                      <Link to="/easy-payments" className="text-zinc-500 hover:text-red-500 underline transition-colors">
+                      <Link to="/easy-payments/" className="text-zinc-500 hover:text-red-500 underline transition-colors">
                         Learn about financing options
                       </Link>
                       .
@@ -810,7 +810,7 @@ export default function RoofReplacementProcessPage() {
                 </ul>
                 <p className="text-sm text-zinc-500 mt-6">
                   Explore our{' '}
-                  <Link to="/residential-roofing" className="text-zinc-400 hover:text-red-500 underline transition-colors">
+                  <Link to="/residential-roofing/" className="text-zinc-400 hover:text-red-500 underline transition-colors">
                     residential roofing services
                   </Link>
                   {' '}and material options.
@@ -1662,7 +1662,7 @@ export default function RoofReplacementProcessPage() {
                 </ul>
                 <p className="text-sm text-zinc-500 mt-6">
                   Learn about our{' '}
-                  <Link to="/roof-repair" className="text-zinc-400 hover:text-red-500 underline transition-colors">
+                  <Link to="/roof-repair/" className="text-zinc-400 hover:text-red-500 underline transition-colors">
                     roof repair
                   </Link>
                   {' '}and maintenance services to protect your investment.
@@ -1916,7 +1916,7 @@ export default function RoofReplacementProcessPage() {
                   <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-zinc-400 font-semibold mb-1">You want a "quick patch job"</p>
-                    <p className="text-zinc-500 text-sm">If you just need targeted repairs, check our <Link to="/roof-repair" className="text-zinc-400 hover:text-red-500 underline">roof repair services</Link> instead.</p>
+                    <p className="text-zinc-500 text-sm">If you just need targeted repairs, check our <Link to="/roof-repair/" className="text-zinc-400 hover:text-red-500 underline">roof repair services</Link> instead.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -1936,7 +1936,7 @@ export default function RoofReplacementProcessPage() {
               We offer free inspections with honest assessments. If repair makes more sense than replacement, we'll tell you. If your roof needs replacement, we'll explain exactly why and what's involved. No pressure, no sales tactics—just experienced guidance.
             </p>
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50"
             >
               Schedule Free Inspection
@@ -2161,7 +2161,7 @@ export default function RoofReplacementProcessPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
               Schedule Free Inspection
