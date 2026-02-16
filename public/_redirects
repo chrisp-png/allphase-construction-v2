@@ -4,4 +4,13 @@
 /locations/:parent/service-area/:city  /locations/:city  301!
 /locations/:parent/service-area/:city/  /locations/:city  301!
 
+
+# Legacy inspection URLs redirect to /roof-inspection/
+/tile-roof-inspection-broward-county /roof-inspection/ 301
+/tile-roof-inspection-palm-beach-county /roof-inspection/ 301
+/metal-roof-inspection-broward-county /roof-inspection/ 301
+/metal-roof-inspection-palm-beach-county /roof-inspection/ 301
+/flat-roof-inspection-broward-county /roof-inspection/ 301
+/flat-roof-inspection-palm-beach-county /roof-inspection/ 301
+/insurance-roof-inspection /roof-inspection/ 301
 /*    /index.html   200
