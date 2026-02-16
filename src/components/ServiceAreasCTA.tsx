@@ -39,7 +39,7 @@ export default function ServiceAreasCTA() {
             {/* Primary Button */}
             <div className="flex justify-center">
               <Link
-                to="/locations/service-areas"
+                to="/locations/service-areas/"
                 onMouseEnter={handlePrefetch}
                 onFocus={handlePrefetch}
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold text-lg rounded-xl hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg shadow-red-900/50 hover:shadow-xl hover:shadow-red-900/60 hover:scale-105 transform"
@@ -64,7 +64,7 @@ export default function ServiceAreasCTA() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 transform hover:scale-105"
               >
                 Get Started

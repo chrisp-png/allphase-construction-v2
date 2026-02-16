@@ -506,13 +506,13 @@ export default function RoofCalculator() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="/contact"
+                    href="/contact/"
                     className="flex-1 px-6 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-center"
                   >
                     Schedule a Free Roof Inspection
                   </a>
                   <a
-                    href="/easy-payments"
+                    href="/easy-payments/"
                     className="flex-1 px-6 py-4 bg-zinc-700 text-white rounded-lg font-semibold hover:bg-zinc-600 transition-all duration-300 text-center border border-zinc-600"
                   >
                     Explore Financing Options

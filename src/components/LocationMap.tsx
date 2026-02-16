@@ -124,7 +124,7 @@ export default function LocationMap() {
 
           <div className="flex flex-col items-center gap-4">
             <a
-              href="/roof-inspection"
+              href="/roof-inspection/"
               className="inline-block px-8 py-4 bg-red-600 text-white text-lg font-bold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Request Your Free Roof Assessment

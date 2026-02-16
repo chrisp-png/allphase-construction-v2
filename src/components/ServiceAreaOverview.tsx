@@ -19,7 +19,7 @@ export default function ServiceAreaOverview() {
           <p className="text-xl text-gray-300 leading-relaxed text-center max-w-5xl mx-auto">
             From our central hub in{' '}
             <Link
-              to="/locations/deerfield-beach"
+              to="/locations/deerfield-beach/"
               className="text-[#C5A572] hover:text-[#B08D5B] font-semibold underline decoration-[#C5A572]/30 hover:decoration-[#C5A572] transition-colors"
             >
               Deerfield Beach
@@ -29,7 +29,7 @@ export default function ServiceAreaOverview() {
 
           <div className="mt-8 text-center">
             <Link
-              to="/locations"
+              to="/locations/"
               className="inline-flex items-center gap-2 bg-[#C5A572] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#B08D5B] transition-colors"
             >
               <MapPin className="w-5 h-5" />

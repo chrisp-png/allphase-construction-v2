@@ -38,13 +38,13 @@ export default function Navigation() {
             <Link to="/" className="text-white hover:text-red-600 transition-colors font-medium">
               Home
             </Link>
-            <Link to="/projects" className="text-white hover:text-red-600 transition-colors font-medium">
+            <Link to="/projects/" className="text-white hover:text-red-600 transition-colors font-medium">
               Projects
             </Link>
-            <Link to="/blog" className="text-white hover:text-red-600 transition-colors font-medium">
+            <Link to="/blog/" className="text-white hover:text-red-600 transition-colors font-medium">
               Blog
             </Link>
-            <Link to="/contact" className="text-white hover:text-red-600 transition-colors font-medium">
+            <Link to="/contact/" className="text-white hover:text-red-600 transition-colors font-medium">
               Contact
             </Link>
           </div>
@@ -64,13 +64,13 @@ export default function Navigation() {
             <Link to="/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               Home
             </Link>
-            <Link to="/projects" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/projects/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               Projects
             </Link>
-            <Link to="/blog" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/blog/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               Blog
             </Link>
-            <Link to="/contact" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/contact/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               Contact
             </Link>
           </div>
