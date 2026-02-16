@@ -77,37 +77,37 @@ export default function CoconutCreekPage() {
     {
       title: 'Tile Roofing',
       description: "Concrete and clay tile installations popular throughout Coconut Creek's upscale neighborhoods. Built for beauty and hurricane resilience.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Standing seam and metal panel systems that last 50+ years in South Florida's climate. Energy-efficient and low-maintenance.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Architectural shingle installations that meet HVHZ requirements. The most common roof type in Coconut Creek.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "TPO, PVC, and modified bitumen for commercial and modern residential properties throughout Coconut Creek.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Extending roof life and protecting insurance coverage with professional repairs and 5-year certification letters.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Serving Coconut Creek's commercial corridor along Sample Road and Lyons Road.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -151,12 +151,12 @@ export default function CoconutCreekPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl' },
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl' }
+    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
+    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
+    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
+    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
+    { name: 'Parkland', path: '/roofing-contractor-parkland-fl/' },
+    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' }
   ];
 
   const faqs = [
@@ -195,11 +195,11 @@ export default function CoconutCreekPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -239,7 +239,7 @@ export default function CoconutCreekPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Coconut Creek
@@ -266,7 +266,7 @@ export default function CoconutCreekPage() {
                 We're headquartered just minutes away in Deerfield Beach, making Coconut Creek one of our most active service areas. Whether you're in the older communities near Hillsboro Boulevard, the family neighborhoods off Lyons Road, or the newer homes in the northern sections, we know your area well.
               </p>
               <p>
-                Many Coconut Creek homes were built in the 1970s through 1990s and are now reaching the age where roof replacement becomes necessary. When evaluating your options, schedule a <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess underlayment condition, a <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic metal roof inspection</Link> for energy-efficient systems, or a <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> for commercial properties and modern homes.
+                Many Coconut Creek homes were built in the 1970s through 1990s and are now reaching the age where roof replacement becomes necessary. When evaluating your options, schedule a <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess underlayment condition, a <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic metal roof inspection</Link> for energy-efficient systems, or a <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> for commercial properties and modern homes.
               </p>
             </div>
           </div>
@@ -412,7 +412,7 @@ export default function CoconutCreekPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -467,7 +467,7 @@ export default function CoconutCreekPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

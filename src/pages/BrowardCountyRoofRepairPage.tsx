@@ -86,7 +86,7 @@ export default function BrowardCountyRoofRepairPage() {
               <ChevronRight className="w-4 h-4" />
               <span className="text-zinc-500">Roofing</span>
               <ChevronRight className="w-4 h-4" />
-              <Link to="/roofing-services/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+              <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">Broward County</span>
             </nav>
@@ -97,7 +97,7 @@ export default function BrowardCountyRoofRepairPage() {
 
             <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
               <p>
-                Properties throughout Broward County are exposed to intense sun, seasonal storms, and prolonged heat cycling that can gradually compromise roof systems. All Phase Construction USA provides inspection-first roof repair services focused on identifying the underlying cause of leaks, material failure, or structural stress before recommending repairs. Every project begins with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to evaluate conditions under the Florida Building Code and determine whether targeted roof repair is appropriate.
+                Properties throughout Broward County are exposed to intense sun, seasonal storms, and prolonged heat cycling that can gradually compromise roof systems. All Phase Construction USA provides inspection-first roof repair services focused on identifying the underlying cause of leaks, material failure, or structural stress before recommending repairs. Every project begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to evaluate conditions under the Florida Building Code and determine whether targeted roof repair is appropriate.
               </p>
             </div>
 
@@ -400,7 +400,7 @@ export default function BrowardCountyRoofRepairPage() {
           </div>
 
           <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-            Visit the <Link to="/service-areas/broward-county" className="text-red-600 hover:text-red-500 underline transition-colors">Broward County service area hub</Link> or use the Broward County roof cost estimate tool to support early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
+            Visit the <Link to="/service-areas/broward-county/" className="text-red-600 hover:text-red-500 underline transition-colors">Broward County service area hub</Link> or use the Broward County roof cost estimate tool to support early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
           </p>
         </div>
       </section>

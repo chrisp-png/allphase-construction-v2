@@ -147,49 +147,49 @@ export default function BrowardCountyPage() {
     {
       title: 'Roof Inspections & Forensic Assessments',
       description: 'Comprehensive condition assessments for residential, commercial, and multi-family properties with detailed documentation.',
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       icon: ClipboardCheck
     },
     {
       title: 'Storm Damage & Insurance Inspections',
       description: 'Professional storm damage evaluations with insurance-aligned reporting and photo documentation.',
-      path: '/insurance-roof-inspection',
+      path: '/insurance-roof-inspection/',
       icon: FileText
     },
     {
       title: 'Roof Repairs & Active Leak Resolution',
       description: 'Fast emergency repairs and systematic leak remediation for all roofing system types.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Full Roof Replacements',
       description: 'Complete roof replacement services for urban residential, commercial, and multi-family buildings.',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing Systems',
       description: 'TPO, modified bitumen, and built-up flat roofing for commercial and multi-family properties.',
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Metal Roofing Systems',
       description: 'Standing seam and metal panel installations for long-term durability and hurricane resistance.',
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Tile Roofing Systems',
       description: 'Concrete and clay tile installations and repairs for residential properties throughout Broward County.',
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Commercial & Multi-Family Roofing',
       description: 'Condominium buildings, commercial properties, and phased project execution with coordinated inspections.',
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -233,28 +233,28 @@ export default function BrowardCountyPage() {
   ];
 
   const cities = [
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl' },
-    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl' },
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl' },
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl' },
-    { name: 'Tamarac', path: '/roofing-contractor-tamarac-fl' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl' },
-    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl' },
-    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl' },
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl' },
-    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl' },
-    { name: 'Hallandale Beach', path: '/roofing-contractor-hallandale-beach-fl' },
-    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl' },
-    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl' },
-    { name: 'Lauderdale-By-The-Sea', path: '/roofing-contractor-lauderdale-by-the-sea-fl' },
-    { name: 'Lighthouse Point', path: '/roofing-contractor-lighthouse-point-fl' }
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl/' },
+    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
+    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
+    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
+    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
+    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
+    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' },
+    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
+    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
+    { name: 'Tamarac', path: '/roofing-contractor-tamarac-fl/' },
+    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
+    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' },
+    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl/' },
+    { name: 'Parkland', path: '/roofing-contractor-parkland-fl/' },
+    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl/' },
+    { name: 'Hallandale Beach', path: '/roofing-contractor-hallandale-beach-fl/' },
+    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl/' },
+    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl/' },
+    { name: 'Lauderdale-By-The-Sea', path: '/roofing-contractor-lauderdale-by-the-sea-fl/' },
+    { name: 'Lighthouse Point', path: '/roofing-contractor-lighthouse-point-fl/' }
   ];
 
   const peopleAlsoAsk = [
@@ -322,7 +322,7 @@ export default function BrowardCountyPage() {
             <span className="text-zinc-600">/</span>
             <span className="text-zinc-500">Roofing</span>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -365,7 +365,7 @@ export default function BrowardCountyPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Request Assessment
@@ -670,7 +670,7 @@ export default function BrowardCountyPage() {
             </div>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
               <Link
-                to="/roofing-services/roof-repair/broward-county"
+                to="/roofing-services/roof-repair/broward-county/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -679,7 +679,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">Emergency repairs and leak resolution for all roof types</p>
               </Link>
               <Link
-                to="/roof-inspection"
+                to="/roof-inspection/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -688,7 +688,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">Professional roof assessments and condition reports</p>
               </Link>
               <Link
-                to="/tile-roofing"
+                to="/tile-roofing/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -697,7 +697,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">Concrete and clay tile installations and repairs</p>
               </Link>
               <Link
-                to="/metal-roofing"
+                to="/metal-roofing/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -706,7 +706,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">Standing seam and metal panel systems</p>
               </Link>
               <Link
-                to="/shingle-roofing"
+                to="/shingle-roofing/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -715,7 +715,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">Architectural and dimensional shingle roofing</p>
               </Link>
               <Link
-                to="/flat-roofing"
+                to="/flat-roofing/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -724,7 +724,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">TPO, modified bitumen, and built-up flat roofs</p>
               </Link>
               <Link
-                to="/single-ply-roofing"
+                to="/single-ply-roofing/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -733,7 +733,7 @@ export default function BrowardCountyPage() {
                 <p className="text-zinc-400 text-sm">Modern single-ply membrane solutions</p>
               </Link>
               <Link
-                to="/locations"
+                to="/locations/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -754,7 +754,7 @@ export default function BrowardCountyPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="px-8 py-4 bg-white text-red-600 rounded-lg font-semibold hover:bg-zinc-100 transition-all duration-300 text-lg"
                 >
                   Request Assessment

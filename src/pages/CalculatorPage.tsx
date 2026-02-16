@@ -139,10 +139,10 @@ export default function CalculatorPage() {
               <div>
                 <h1 className="text-2xl font-bold text-white mb-3">Roof Replacement Cost Calculator</h1>
                 <p className="text-zinc-300 leading-relaxed mb-3">
-                  Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, and <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> systems based on roof size and material selection.
+                  Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, and <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> systems based on roof size and material selection.
                 </p>
                 <p className="text-zinc-300 leading-relaxed mb-6">
-                  Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
+                  Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
                 </p>
 
                 {/* Action Buttons */}
@@ -155,7 +155,7 @@ export default function CalculatorPage() {
                     Calculate My Roof Cost
                   </button>
                   <Link
-                    to="/roof-inspection"
+                    to="/roof-inspection/"
                     className="inline-flex items-center justify-center px-8 py-4 border-2 border-zinc-600 text-zinc-200 font-semibold rounded-lg hover:bg-zinc-800 hover:border-zinc-500 transition-colors"
                   >
                     <Shield className="w-5 h-5 mr-2" />
@@ -197,7 +197,7 @@ export default function CalculatorPage() {
                 <tbody>
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-zinc-300">
-                      <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Asphalt Shingle</Link>
+                      <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Asphalt Shingle</Link>
                     </td>
                     <td className="py-3 px-4 text-white font-bold">$8–$12</td>
                     <td className="py-3 px-4 text-zinc-300">15–25 years</td>
@@ -205,7 +205,7 @@ export default function CalculatorPage() {
                   </tr>
                   <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-zinc-300">
-                      <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Tile (Concrete / Clay)</Link>
+                      <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile (Concrete / Clay)</Link>
                     </td>
                     <td className="py-3 px-4 text-white font-bold">$10–$18</td>
                     <td className="py-3 px-4 text-zinc-300">30–50 years</td>
@@ -213,7 +213,7 @@ export default function CalculatorPage() {
                   </tr>
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-zinc-300">
-                      <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Metal (Standing Seam)</Link>
+                      <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Metal (Standing Seam)</Link>
                     </td>
                     <td className="py-3 px-4 text-white font-bold">$12–$20</td>
                     <td className="py-3 px-4 text-zinc-300">40–70 years</td>
@@ -221,7 +221,7 @@ export default function CalculatorPage() {
                   </tr>
                   <tr>
                     <td className="py-3 px-4 text-zinc-300">
-                      <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Flat / Low-Slope</Link>
+                      <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Flat / Low-Slope</Link>
                     </td>
                     <td className="py-3 px-4 text-white font-bold">$10–$16</td>
                     <td className="py-3 px-4 text-zinc-300">20–30 years</td>
@@ -274,7 +274,7 @@ export default function CalculatorPage() {
               Accurate roof replacement pricing requires an on-site inspection to evaluate roof condition, identify hidden issues, measure roof dimensions, assess <span className="text-amber-400 font-semibold">code compliance requirements</span>, and develop a detailed scope of work. Calculator estimates provide general pricing ranges but cannot account for site-specific variables that affect final costs.
             </p>
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-700 transition-colors"
             >
               Schedule a Roof Inspection
@@ -295,7 +295,7 @@ export default function CalculatorPage() {
                   Investing slightly more during roof replacement to meet enhanced wind resistance standards may result in lower insurance costs over the life of the roof. Annual premium savings can offset incremental installation costs within 3–7 years for many South Florida properties.
                 </p>
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/"
                   className="inline-flex items-center justify-center px-6 py-3 border-2 border-amber-600/60 text-amber-100 font-semibold rounded hover:bg-amber-900/30 hover:border-amber-500 transition-colors"
                 >
                   Learn About Wind Mitigation Inspections
@@ -318,7 +318,7 @@ export default function CalculatorPage() {
               Financing allows you to address urgent roof needs without depleting savings or delaying necessary work. Payment terms and rates vary based on credit approval, project scope, and selected financing program.
             </p>
             <Link
-              to="/easy-payments"
+              to="/easy-payments/"
               className="inline-flex items-center justify-center px-6 py-3 border-2 border-zinc-600 text-zinc-200 font-semibold rounded hover:bg-zinc-700/50 hover:border-zinc-500 transition-colors"
             >
               View Roofing Financing Options
@@ -356,7 +356,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 0 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> ($4.50–$16/sq ft) are the most cost-effective, while <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">tile roofs</Link> ($12–$35/sq ft) and <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> ($8–$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000–$22,000 installed. Tile roofs of the same size typically cost $24,000–$48,000. Final pricing depends on roof pitch, layers to remove, <span className="text-amber-400 font-semibold">HVHZ fastening requirements</span>, and <span className="text-amber-400 font-semibold">code compliance upgrades</span>.
+                    New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> ($4.50–$16/sq ft) are the most cost-effective, while <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile roofs</Link> ($12–$35/sq ft) and <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> ($8–$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000–$22,000 installed. Tile roofs of the same size typically cost $24,000–$48,000. Final pricing depends on roof pitch, layers to remove, <span className="text-amber-400 font-semibold">HVHZ fastening requirements</span>, and <span className="text-amber-400 font-semibold">code compliance upgrades</span>.
                   </p>
                 </div>
               )}
@@ -444,7 +444,7 @@ export default function CalculatorPage() {
                 <div className="px-6 pb-6">
                   <div className="space-y-4">
                     <p className="text-zinc-300 leading-relaxed">
-                      Start with a <Link to="/roof-inspection" className="text-white font-semibold hover:text-zinc-100 underline">diagnostic roof inspection</Link> to evaluate <strong className="text-white">localized failure versus widespread deterioration</strong>. <Link to="/roofing-services/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">Repair</Link> is often the better first option when damage is confined to specific slopes, penetrations, or flashings—addressing the failure pattern without replacing sound areas.
+                      Start with a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">diagnostic roof inspection</Link> to evaluate <strong className="text-white">localized failure versus widespread deterioration</strong>. <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">Repair</Link> is often the better first option when damage is confined to specific slopes, penetrations, or flashings—addressing the failure pattern without replacing sound areas.
                     </p>
                     <p className="text-zinc-300 leading-relaxed">
                       Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably.
@@ -478,7 +478,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 5 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Yes. <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Tile roofs</Link> cost 2–3 times more than <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">asphalt shingle roofs</Link> due to material weight, installation complexity, and enhanced underlayment requirements. Concrete tile systems cost $12–$24 per square foot installed, while premium clay tile can reach $22–$35 per square foot. Shingle roofs range from $4.50–$16 per square foot. However, tile roofs typically last 40–50+ years compared to 20–30 years for shingles, offering better long-term value despite higher upfront cost.
+                    Yes. <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile roofs</Link> cost 2–3 times more than <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">asphalt shingle roofs</Link> due to material weight, installation complexity, and enhanced underlayment requirements. Concrete tile systems cost $12–$24 per square foot installed, while premium clay tile can reach $22–$35 per square foot. Shingle roofs range from $4.50–$16 per square foot. However, tile roofs typically last 40–50+ years compared to 20–30 years for shingles, offering better long-term value despite higher upfront cost.
                   </p>
                 </div>
               )}
@@ -499,7 +499,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 6 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Insurance covers roof replacement in Florida only when damage results from a covered peril (wind, hail, fire) rather than normal wear and age-related deterioration. Wind damage from hurricanes or tropical storms is commonly covered, subject to deductibles and policy limits. Age-related granule loss, UV degradation, and general wear are not covered. Many Florida policies now include special hurricane deductibles (percentage of dwelling coverage) and depreciation schedules that reduce coverage as roofs age. Always obtain a professional <Link to="/roof-inspection" className="text-white font-semibold hover:text-zinc-100 underline">roof inspection</Link> to document storm damage before filing claims.
+                    Insurance covers roof replacement in Florida only when damage results from a covered peril (wind, hail, fire) rather than normal wear and age-related deterioration. Wind damage from hurricanes or tropical storms is commonly covered, subject to deductibles and policy limits. Age-related granule loss, UV degradation, and general wear are not covered. Many Florida policies now include special hurricane deductibles (percentage of dwelling coverage) and depreciation schedules that reduce coverage as roofs age. Always obtain a professional <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">roof inspection</Link> to document storm damage before filing claims.
                   </p>
                 </div>
               )}
@@ -520,7 +520,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 7 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Most residential roof replacements in South Florida take 2–7 days depending on roof size, material type, weather, and system complexity. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> on homes under 2,500 sq ft typically complete in 2–3 days. <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Tile roof</Link> installations require 4–7 days due to weight, fastening requirements, and underlayment installation. <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Metal roofs</Link> take 3–5 days for proper panel seaming and clip attachment. <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Flat or low-slope</Link> commercial roofs vary widely based on membrane type and roof area. Permit processing adds 1–3 weeks before work begins. Weather delays are common during Florida's rainy season (June–September).
+                    Most residential roof replacements in South Florida take 2–7 days depending on roof size, material type, weather, and system complexity. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> on homes under 2,500 sq ft typically complete in 2–3 days. <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile roof</Link> installations require 4–7 days due to weight, fastening requirements, and underlayment installation. <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Metal roofs</Link> take 3–5 days for proper panel seaming and clip attachment. <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Flat or low-slope</Link> commercial roofs vary widely based on membrane type and roof area. Permit processing adds 1–3 weeks before work begins. Weather delays are common during Florida's rainy season (June–September).
                   </p>
                 </div>
               )}
@@ -541,7 +541,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 8 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Broward County roof replacement costs average $8–$20 per square foot installed, depending on material type and <span className="text-amber-400 font-semibold">HVHZ compliance requirements</span>. <Link to="/shingle-roofing" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> cost $7–$14/sq ft, <Link to="/tile-roofing" className="text-white font-semibold hover:text-zinc-100 underline">concrete tile</Link> $14–$22/sq ft, <Link to="/metal-roofing" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> $12–$24/sq ft, and <Link to="/flat-roofing" className="text-white font-semibold hover:text-zinc-100 underline">flat membrane systems</Link> $8–$16/sq ft. Broward County properties require <span className="text-amber-400 font-semibold">HVHZ-compliant fastening</span>, which adds $1–$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings.
+                    Broward County roof replacement costs average $8–$20 per square foot installed, depending on material type and <span className="text-amber-400 font-semibold">HVHZ compliance requirements</span>. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> cost $7–$14/sq ft, <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">concrete tile</Link> $14–$22/sq ft, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> $12–$24/sq ft, and <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat membrane systems</Link> $8–$16/sq ft. Broward County properties require <span className="text-amber-400 font-semibold">HVHZ-compliant fastening</span>, which adds $1–$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings.
                   </p>
                 </div>
               )}
@@ -596,7 +596,7 @@ export default function CalculatorPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-6">Learn More About Roofing Options</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/tile-roofing" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
+            <Link to="/tile-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Tile Roofing</h3>
               <p className="text-zinc-400 mb-4">Concrete and clay tile systems for South Florida homes</p>
               <div className="flex items-center text-red-600 font-medium">
@@ -604,7 +604,7 @@ export default function CalculatorPage() {
               </div>
             </Link>
 
-            <Link to="/metal-roofing" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
+            <Link to="/metal-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Metal Roofing</h3>
               <p className="text-zinc-400 mb-4">Standing seam metal roofs designed for hurricane resistance</p>
               <div className="flex items-center text-red-600 font-medium">
@@ -612,7 +612,7 @@ export default function CalculatorPage() {
               </div>
             </Link>
 
-            <Link to="/shingle-roofing" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
+            <Link to="/shingle-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Shingle Roofing</h3>
               <p className="text-zinc-400 mb-4">High-wind rated asphalt shingle systems</p>
               <div className="flex items-center text-red-600 font-medium">
@@ -620,7 +620,7 @@ export default function CalculatorPage() {
               </div>
             </Link>
 
-            <Link to="/flat-roofing" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
+            <Link to="/flat-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Flat Roofing</h3>
               <p className="text-zinc-400 mb-4">TPO, PVC, and modified bitumen membrane systems</p>
               <div className="flex items-center text-red-600 font-medium">
@@ -628,7 +628,7 @@ export default function CalculatorPage() {
               </div>
             </Link>
 
-            <Link to="/single-ply-roofing" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
+            <Link to="/single-ply-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Single-Ply Roofing</h3>
               <p className="text-zinc-400 mb-4">Commercial membrane roofing systems</p>
               <div className="flex items-center text-red-600 font-medium">
@@ -636,7 +636,7 @@ export default function CalculatorPage() {
               </div>
             </Link>
 
-            <Link to="/roof-inspection" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
+            <Link to="/roof-inspection/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Roof Inspection</h3>
               <p className="text-zinc-400 mb-4">Professional diagnostic evaluations</p>
               <div className="flex items-center text-red-600 font-medium">
