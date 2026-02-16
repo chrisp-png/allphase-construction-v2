@@ -1,8 +1,8 @@
-/roofing-contractor-deerfield-beach-fl  /locations/deerfield-beach  301!
+/roofing-contractor-deerfield-beach-fl /locations/deerfield-beach 301!
 
 # Legacy service-area URLs redirect to city pages
-/locations/:parent/service-area/:city  /locations/:city  301!
-/locations/:parent/service-area/:city/  /locations/:city  301!
+/locations/:parent/service-area/:city /locations/:city 301!
+/locations/:parent/service-area/:city/ /locations/:city 301!
 
 
 # Legacy inspection URLs redirect to /roof-inspection/
@@ -58,24 +58,25 @@
 /roof-inspection/boca-raton-county /roof-inspection/ 301
 /roof-inspection/boynton-beach-county /roof-inspection/ 301
 
-# Roof repair city pages - whitelist (serve normally)
-/roof-repair/boca-raton /roof-repair/boca-raton 200!
-/roof-repair/coral-springs /roof-repair/coral-springs 200!
-/roof-repair/lake-worth-beach /roof-repair/lake-worth-beach 200!
-/roof-repair/boynton-beach /roof-repair/boynton-beach 200!
-/roof-repair/delray-beach /roof-repair/delray-beach 200!
-/roof-repair/fort-lauderdale /roof-repair/fort-lauderdale 200!
-/roof-repair/west-palm-beach /roof-repair/west-palm-beach 200!
-/roof-repair/deerfield-beach /roof-repair/deerfield-beach 200!
-/roof-repair/coconut-creek /roof-repair/coconut-creek 200!
-/roof-repair/parkland /roof-repair/parkland 200!
-/roof-repair/pompano-beach /roof-repair/pompano-beach 200!
-/roof-repair/hollywood /roof-repair/hollywood 200!
-/roof-repair/plantation /roof-repair/plantation 200!
-/roof-repair/lauderhill /roof-repair/lauderhill 200!
-/roof-repair/lake-worth /roof-repair/lake-worth 200!
-/roof-repair/wellington /roof-repair/wellington 200!
-/roof-repair/tamarac /roof-repair/tamarac 200!
+# Roof repair city pages - whitelist (serve via SPA)
+/roof-repair/boca-raton /index.html 200!
+/roof-repair/coral-springs /index.html 200!
+/roof-repair/lake-worth-beach /index.html 200!
+/roof-repair/boynton-beach /index.html 200!
+/roof-repair/delray-beach /index.html 200!
+/roof-repair/fort-lauderdale /index.html 200!
+/roof-repair/west-palm-beach /index.html 200!
+/roof-repair/deerfield-beach /index.html 200!
+/roof-repair/coconut-creek /index.html 200!
+/roof-repair/parkland /index.html 200!
+/roof-repair/pompano-beach /index.html 200!
+/roof-repair/hollywood /index.html 200!
+/roof-repair/plantation /index.html 200!
+/roof-repair/lauderhill /index.html 200!
+/roof-repair/lake-worth /index.html 200!
+/roof-repair/wellington /index.html 200!
+/roof-repair/tamarac /index.html 200!
 # Catch-all: redirect all other roof-repair city pages to /roof-repair/
 /roof-repair/* /roof-repair/ 301
-/*    /index.html   200
+
+/* /index.html 200
