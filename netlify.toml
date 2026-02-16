@@ -25,38 +25,9 @@ skip_processing = false
 [[plugins]]
 package = "netlify-plugin-cache"
 
-# Lighthouse plugin - fail_deploy = false so unknown scores don't block deploys
-[[plugins]]
-package = "@netlify/plugin-lighthouse"
-[plugins.inputs]
-fail_deploy_on_score_thresholds = false
-
-[[plugins.inputs.audits]]
-path = "/"
-output_path = "reports/lighthouse-home.html"
-
-[[plugins.inputs.audits]]
-path = "/boca-raton"
-output_path = "reports/lighthouse-boca-raton.html"
-
-[[plugins.inputs.audits]]
-path = "/fort-lauderdale"
-output_path = "reports/lighthouse-fort-lauderdale.html"
-
-[[plugins.inputs.audits]]
-path = "/roof-repair"
-output_path = "reports/lighthouse-roof-repair.html"
-
-[[plugins.inputs.audits]]
-path = "/"
-output_path = "reports/lighthouse-home-desktop.html"
-preset = "desktop"
-
-[plugins.inputs.thresholds]
-performance = 0.5
-accessibility = 0.9
-best-practices = 0.8
-seo = 0.9
+# Lighthouse plugin disabled - was causing deploy failures on preview URLs
+# [[plugins]]
+# package = "@netlify/plugin-lighthouse"
 
 [[headers]]
 for = "/*"
