@@ -1,4 +1,15 @@
-/roofing-contractor-deerfield-beach-fl /locations/deerfield-beach 301!
+# ======================================================================
+# HOST CANONICALIZATION - www -> non-www, http -> https
+# These MUST be first. Processed before all other rules.
+# ======================================================================
+https://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
+http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
+http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
+
+# ======================================================================
+# LEGACY REDIRECTS
+# ======================================================================
+/roofing-contractor-deerfield-beach-fl /locations/deerfield-beach/ 301!
 
 # Legacy service-area URLs redirect to city pages
 /locations/:parent/service-area/:city /locations/:city 301!
