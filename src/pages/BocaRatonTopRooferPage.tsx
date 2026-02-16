@@ -161,11 +161,11 @@ export default function BocaRatonTopRooferPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/service-area/boca-raton" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/boca-raton/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Boca Raton
             </Link>
             <span className="text-zinc-600">/</span>
@@ -247,7 +247,7 @@ export default function BocaRatonTopRooferPage() {
                 Boca Raton roofs face a combination of high ultraviolet exposure, humidity, and seasonal storm risk. Over time, these conditions can accelerate aging in underlayments, sealants, and roof-to-wall transitions—areas where leaks often begin.
               </p>
               <p>
-                Because many Boca Raton communities feature <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile roofing</Link> and HOA-driven aesthetics, contractor selection is not just about price. It's about systems knowledge, permit discipline, and the ability to document the roof's condition before and after work for long-term risk management.
+                Because many Boca Raton communities feature <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">tile roofing</Link> and HOA-driven aesthetics, contractor selection is not just about price. It's about systems knowledge, permit discipline, and the ability to document the roof's condition before and after work for long-term risk management.
               </p>
             </div>
           </div>
@@ -547,13 +547,13 @@ export default function BocaRatonTopRooferPage() {
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                In Boca Raton, the most expensive roof is often the one that fails early due to weak transitions—valleys, penetrations, roof-to-wall intersections, and drainage details. These areas should be inspected and documented before any <Link to="/locations/deerfield-beach/service-area/boca-raton" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Boca Raton</Link> decision is made.
+                In Boca Raton, the most expensive roof is often the one that fails early due to weak transitions—valleys, penetrations, roof-to-wall intersections, and drainage details. These areas should be inspected and documented before any <Link to="/locations/deerfield-beach/service-area/boca-raton/" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Boca Raton</Link> decision is made.
               </p>
               <p>
                 If your neighborhood has HOA requirements (common in Boca Raton), confirm material profiles, color rules, and submission timelines before ordering. A good contractor will anticipate these constraints rather than discovering them after materials are staged.
               </p>
               <p>
-                Finally, do not treat permitting as optional. Permit discipline protects resale value, reduces insurance disputes, and creates a paper trail that clarifies responsibility if future issues arise. Learn more about <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspections</Link> and their role in protecting your investment.
+                Finally, do not treat permitting as optional. Permit discipline protects resale value, reduces insurance disputes, and creates a paper trail that clarifies responsibility if future issues arise. Learn more about <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspections</Link> and their role in protecting your investment.
               </p>
             </div>
           </div>
@@ -598,7 +598,7 @@ export default function BocaRatonTopRooferPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Request a Roof Evaluation

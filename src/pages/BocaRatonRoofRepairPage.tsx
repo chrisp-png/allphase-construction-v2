@@ -72,7 +72,7 @@ export default function BocaRatonRoofRepairPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roofing-services/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+                <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Boca Raton</span>
               </nav>
@@ -83,7 +83,7 @@ export default function BocaRatonRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Homes and commercial properties in Boca Raton face intense UV exposure, seasonal storm activity, and long-term heat cycling that can accelerate roof wear. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, fastener failure, or material deterioration before recommending a repair approach. Every project begins with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate versus broader corrective work.
+                  Homes and commercial properties in Boca Raton face intense UV exposure, seasonal storm activity, and long-term heat cycling that can accelerate roof wear. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, fastener failure, or material deterioration before recommending a repair approach. Every project begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate versus broader corrective work.
                 </p>
               </div>
 
@@ -386,7 +386,7 @@ export default function BocaRatonRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-              Property owners can also explore the <Link to="/locations/deerfield-beach/service-area/boca-raton" className="text-red-600 hover:text-red-500 underline transition-colors">Boca Raton service area hub</Link> and use our <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</a> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
+              Property owners can also explore the <Link to="/locations/deerfield-beach/service-area/boca-raton/" className="text-red-600 hover:text-red-500 underline transition-colors">Boca Raton service area hub</Link> and use our <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</a> for early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
             </p>
           </div>
         </section>

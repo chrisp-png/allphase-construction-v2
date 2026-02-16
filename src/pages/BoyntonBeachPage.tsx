@@ -88,11 +88,11 @@ export default function BoyntonBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -164,7 +164,7 @@ export default function BoyntonBeachPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
                 >
                   Schedule Free Inspection
@@ -189,7 +189,7 @@ export default function BoyntonBeachPage() {
                 Many homeowners are surprised how affordable a higher-quality roof can be when monthly payment options are available. Use our financing calculator to see how small the monthly difference can be when upgrading to tile or metal roofing.
               </p>
               <Link
-                to="/easy-payments"
+                to="/easy-payments/"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
               >
                 View Financing Options

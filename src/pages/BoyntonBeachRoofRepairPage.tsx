@@ -82,7 +82,7 @@ export default function BoyntonBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -96,7 +96,7 @@ export default function BoyntonBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Boynton Beach properties are exposed to strong sun, coastal humidity, and seasonal storm patterns that can gradually compromise roof systems. All Phase Construction USA provides inspection-first roof repair services focused on identifying the source of damage before determining the appropriate repair scope. Every project begins with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to evaluate roof conditions under the Florida Building Code and determine whether localized repair is viable.
+                  Boynton Beach properties are exposed to strong sun, coastal humidity, and seasonal storm patterns that can gradually compromise roof systems. All Phase Construction USA provides inspection-first roof repair services focused on identifying the source of damage before determining the appropriate repair scope. Every project begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to evaluate roof conditions under the Florida Building Code and determine whether localized repair is viable.
                 </p>
               </div>
 
@@ -399,7 +399,7 @@ export default function BoyntonBeachRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-              Explore the <Link to="/locations/deerfield-beach/service-area/boynton-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Boynton Beach service area hub</Link> or use the <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</a> for planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
+              Explore the <Link to="/locations/deerfield-beach/service-area/boynton-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">Boynton Beach service area hub</Link> or use the <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</a> for planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
             </p>
           </div>
         </section>
