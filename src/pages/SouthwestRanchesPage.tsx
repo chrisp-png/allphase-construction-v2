@@ -170,7 +170,7 @@ export default function SouthwestRanchesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-red-600 to-red-500 rounded-lg hover:from-red-500 hover:to-red-400 transition-all duration-200"
                 >
                   Schedule Free Inspection
@@ -353,7 +353,7 @@ export default function SouthwestRanchesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-red-600 bg-white rounded-lg hover:bg-red-50 transition-all duration-200 shadow-lg"
               >
                 Schedule Free Inspection
