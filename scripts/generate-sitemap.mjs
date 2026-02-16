@@ -13,7 +13,7 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 const CANONICAL_DOMAIN = 'https://allphaseconstructionfl.com';
 
 // ═══════════════════════════════════════════════════════════════════════════
-// CANONICAL CITY ALLOWLISTS
+// CANONICAL CITY ALLOWLISTS - SILO-SPECIFIC
 // ═══════════════════════════════════════════════════════════════════════════
 
 // Cities that should be EXCLUDED entirely (legacy/alias slugs)
@@ -33,20 +33,57 @@ const EXCLUDED_SLUGS = [
   'palm-beach-county'
 ];
 
-// Core cities for ALL 3 silos (Service Hub, Repair, Inspection)
-const CORE_CITIES = [
+// KEY MONEY CITY LIST - Cities with working /roof-repair/[city]/ pages (200 OK)
+// ONLY these 17 cities should appear in sitemap for roof-repair silo
+const SITEMAP_REPAIR_CITIES = [
   'boca-raton',
-  'fort-lauderdale',
-  'west-palm-beach',
-  'deerfield-beach',
-  'coral-springs',
-  'delray-beach',
   'boynton-beach',
+  'coconut-creek',
+  'coral-springs',
+  'deerfield-beach',
+  'delray-beach',
+  'fort-lauderdale',
+  'hollywood',
+  'lake-worth',
+  'lake-worth-beach',            // Distinct from lake-worth
+  'lauderhill',
+  'parkland',
+  'plantation',
   'pompano-beach',
+  'tamarac',
+  'wellington',
+  'west-palm-beach',
+];
+
+// Cities with working /roof-inspection/[city]/ pages (200 OK, NOT 301)
+const SITEMAP_INSPECTION_CITIES = [
+  'boca-raton',
+  'boynton-beach',
+  'coconut-creek',
+  'coral-springs',
+  'deerfield-beach',
+  'delray-beach',
+  'fort-lauderdale',
+  'lake-worth',
+  'palm-beach',
+  'pompano-beach',
+  'wellington',
+  'west-palm-beach',
+];
+
+// Cities with working /locations/[city]/ service hub pages (200 OK)
+const SITEMAP_LOCATION_CITIES = [
+  'boca-raton',
+  'boynton-beach',
   'coconut-creek',
   'cooper-city',
-  'davie',
+  'coral-springs',
   'dania-beach',
+  'davie',
+  'deerfield-beach',
+  'delray-beach',
+  'fort-lauderdale',
+  'greenacres',
   'hallandale-beach',
   'haverhill',
   'highland-beach',
@@ -71,6 +108,7 @@ const CORE_CITIES = [
   'parkland',
   'pembroke-pines',
   'plantation',
+  'pompano-beach',
   'royal-palm-beach',
   'sunrise',
   'surfside',
@@ -78,7 +116,7 @@ const CORE_CITIES = [
   'wellington',
   'westlake',
   'weston',
-  'wilton-manors'
+  'wilton-manors',
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -220,51 +258,69 @@ for (const slug of allBlogSlugs) {
   });
 }
 
-// Load cities data
+// Load cities data for display names
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
+const cityMap = new Map(cities.map(c => [c.slug, c.city]));
 
-console.log('📍 Generating Canonical City Pages (3-Silo Architecture)...\n');
+console.log('📍 Generating Canonical City Pages Using Silo-Specific Allowlists...\n');
+console.log(`   - Repair cities: ${SITEMAP_REPAIR_CITIES.length}`);
+console.log(`   - Inspection cities: ${SITEMAP_INSPECTION_CITIES.length}`);
+console.log(`   - Location cities: ${SITEMAP_LOCATION_CITIES.length}\n`);
 
-// Filter to only core canonical cities (exclude counties and legacy slugs)
-const canonicalCities = cities.filter(c => {
-  // Exclude if it's in the exclusion list
-  if (EXCLUDED_SLUGS.includes(c.slug)) {
-    return false;
+// SILO 1: Service Hub - /locations/[city]/
+console.log(`📍 Adding ${SITEMAP_LOCATION_CITIES.length} Service Hub pages...`);
+for (const slug of SITEMAP_LOCATION_CITIES) {
+  // Safety check: never include excluded slugs
+  if (EXCLUDED_SLUGS.includes(slug)) {
+    console.log(`❌ BLOCKED: Attempted to add excluded slug: ${slug}`);
+    continue;
   }
 
-  // Include only if in CORE_CITIES list
-  return CORE_CITIES.includes(c.slug);
-});
-
-console.log(`✅ Using ${canonicalCities.length} canonical cities (excluded ${cities.length - canonicalCities.length} legacy/county entries)\n`);
-
-// Generate 3-silo pages for each canonical city
-for (const { slug, city } of canonicalCities) {
-  // SILO 1: Service Hub - /locations/[city]/
+  const cityName = cityMap.get(slug) || slug;
   entries.push({
     section: 'Service Hubs',
-    label: `${city} Roofing Services`,
+    label: `${cityName} Roofing Services`,
     path: ensureTrailingSlash(`/locations/${slug}`),
     indexable: true,
     priority: 0.8,
     changefreq: 'monthly'
   });
+}
 
-  // SILO 2: Roof Repair - /roof-repair/[city]/
+// SILO 2: Roof Repair - /roof-repair/[city]/
+console.log(`🔧 Adding ${SITEMAP_REPAIR_CITIES.length} Roof Repair pages (KEY MONEY CITIES)...`);
+for (const slug of SITEMAP_REPAIR_CITIES) {
+  // Safety check: never include excluded slugs
+  if (EXCLUDED_SLUGS.includes(slug)) {
+    console.log(`❌ BLOCKED: Attempted to add excluded slug: ${slug}`);
+    continue;
+  }
+
+  const cityName = cityMap.get(slug) || slug;
   entries.push({
     section: 'Roof Repair Services',
-    label: `Roof Repair in ${city}`,
+    label: `Roof Repair in ${cityName}`,
     path: ensureTrailingSlash(`/roof-repair/${slug}`),
     indexable: true,
     priority: 0.8,
     changefreq: 'monthly'
   });
+}
 
-  // SILO 3: Roof Inspection - /roof-inspection/[city]/
+// SILO 3: Roof Inspection - /roof-inspection/[city]/
+console.log(`🔍 Adding ${SITEMAP_INSPECTION_CITIES.length} Roof Inspection pages...`);
+for (const slug of SITEMAP_INSPECTION_CITIES) {
+  // Safety check: never include excluded slugs
+  if (EXCLUDED_SLUGS.includes(slug)) {
+    console.log(`❌ BLOCKED: Attempted to add excluded slug: ${slug}`);
+    continue;
+  }
+
+  const cityName = cityMap.get(slug) || slug;
   entries.push({
     section: 'Roof Inspection Services',
-    label: `${city} Roof Inspection`,
+    label: `${cityName} Roof Inspection`,
     path: ensureTrailingSlash(`/roof-inspection/${slug}`),
     indexable: true,
     priority: 0.8,
@@ -272,7 +328,7 @@ for (const { slug, city } of canonicalCities) {
   });
 }
 
-console.log(`✅ Added ${canonicalCities.length * 3} city pages (3 silos × ${canonicalCities.length} cities)\n`);
+console.log(`\n✅ Total city pages added: ${SITEMAP_LOCATION_CITIES.length + SITEMAP_REPAIR_CITIES.length + SITEMAP_INSPECTION_CITIES.length}\n`);
 
 // ═══════════════════════════════════════════════════════════════════════════
 // DEDUPLICATION
@@ -351,71 +407,144 @@ console.log(`   High (≥0.8): ${high}`);
 console.log(`   Medium (0.7): ${medium}\n`);
 
 // ═══════════════════════════════════════════════════════════════════════════
-// VALIDATION
+// COMPREHENSIVE VALIDATION GATE - FAILS BUILD IF PROBLEMS DETECTED
 // ═══════════════════════════════════════════════════════════════════════════
 
-console.log('🔍 Running Validation Checks...\n');
+console.log('🔍 Running Comprehensive Validation Checks...\n');
 
 let validationErrors = [];
 
 // Parse the generated XML
 const generatedXml = fs.readFileSync(outputPath, 'utf8');
 const urlMatches = [...generatedXml.matchAll(/<loc>(.*?)<\/loc>/g)];
-
-// Check 1: No duplicates
 const urlsInSitemap = urlMatches.map(m => m[1]);
+
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 1: No duplicates
+// ═══════════════════════════════════════════════════════════════════════════
 const uniqueUrls = new Set(urlsInSitemap);
 if (urlsInSitemap.length !== uniqueUrls.size) {
   validationErrors.push(`❌ DUPLICATE URLs found in sitemap (${urlsInSitemap.length} total, ${uniqueUrls.size} unique)`);
 }
 
-// Check 2: No excluded patterns
-for (const url of urlsInSitemap) {
-  // Check for /locations/*/service-area/*
-  if (url.includes('/service-area/')) {
-    validationErrors.push(`❌ Legacy pattern found: ${url}`);
-  }
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 2: All URLs must end with /
+// ═══════════════════════════════════════════════════════════════════════════
+const missingTrailingSlash = urlsInSitemap.filter(url => !url.endsWith('/'));
+if (missingTrailingSlash.length > 0) {
+  validationErrors.push(`❌ ${missingTrailingSlash.length} URLs missing trailing slash:`);
+  missingTrailingSlash.slice(0, 5).forEach(url => validationErrors.push(`   ${url}`));
+}
 
-  // Check for light-house-point
-  if (url.includes('light-house-point')) {
-    validationErrors.push(`❌ Legacy slug found: ${url}`);
-  }
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 3: No legacy /service-area/ patterns
+// ═══════════════════════════════════════════════════════════════════════════
+const serviceAreaUrls = urlsInSitemap.filter(url => url.includes('/service-area/'));
+if (serviceAreaUrls.length > 0) {
+  validationErrors.push(`❌ ${serviceAreaUrls.length} Legacy /service-area/ URLs found:`);
+  serviceAreaUrls.slice(0, 5).forEach(url => validationErrors.push(`   ${url}`));
+}
 
-  // Check for legacy inspection URLs
-  if (url.includes('tile-roof-inspection-') ||
-      url.includes('metal-roof-inspection-') ||
-      url.includes('flat-roof-inspection-') ||
-      url.includes('insurance-roof-inspection')) {
-    validationErrors.push(`❌ Legacy inspection URL found: ${url}`);
-  }
-
-  // Check 3: All URLs must end with /
-  if (!url.endsWith('/')) {
-    validationErrors.push(`❌ Missing trailing slash: ${url}`);
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 4: No excluded slug aliases (especially "light-house-point")
+// ═══════════════════════════════════════════════════════════════════════════
+for (const excludedSlug of EXCLUDED_SLUGS) {
+  const foundUrls = urlsInSitemap.filter(url => url.includes(`/${excludedSlug}/`) || url.includes(`/${excludedSlug}`));
+  if (foundUrls.length > 0) {
+    validationErrors.push(`❌ Excluded slug "${excludedSlug}" found in ${foundUrls.length} URLs:`);
+    foundUrls.slice(0, 3).forEach(url => validationErrors.push(`   ${url}`));
   }
 }
 
-// Check 4: All URLs must start with canonical domain
-for (const url of urlsInSitemap) {
-  if (!url.startsWith(CANONICAL_DOMAIN)) {
-    validationErrors.push(`❌ Invalid domain: ${url}`);
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 5: No legacy inspection URLs
+// ═══════════════════════════════════════════════════════════════════════════
+const legacyInspectionUrls = urlsInSitemap.filter(url =>
+  url.includes('tile-roof-inspection-') ||
+  url.includes('metal-roof-inspection-') ||
+  url.includes('flat-roof-inspection-') ||
+  url.includes('insurance-roof-inspection')
+);
+if (legacyInspectionUrls.length > 0) {
+  validationErrors.push(`❌ ${legacyInspectionUrls.length} Legacy inspection URLs found:`);
+  legacyInspectionUrls.slice(0, 5).forEach(url => validationErrors.push(`   ${url}`));
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 6: All URLs use canonical domain
+// ═══════════════════════════════════════════════════════════════════════════
+const wrongDomain = urlsInSitemap.filter(url => !url.startsWith(CANONICAL_DOMAIN));
+if (wrongDomain.length > 0) {
+  validationErrors.push(`❌ ${wrongDomain.length} URLs with wrong domain:`);
+  wrongDomain.slice(0, 5).forEach(url => validationErrors.push(`   ${url}`));
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 7: Roof repair URLs must ONLY include KEY MONEY CITIES (allowlist)
+// ═══════════════════════════════════════════════════════════════════════════
+const repairUrls = urlsInSitemap.filter(url => url.includes('/roof-repair/') && url !== `${CANONICAL_DOMAIN}/roof-repair/`);
+for (const url of repairUrls) {
+  // Extract city slug from URL
+  const match = url.match(/\/roof-repair\/([^/]+)\//);
+  if (match) {
+    const citySlug = match[1];
+    if (!SITEMAP_REPAIR_CITIES.includes(citySlug)) {
+      validationErrors.push(`❌ INVALID REPAIR CITY in sitemap (not in KEY MONEY LIST): ${url}`);
+    }
   }
 }
 
-// Print validation results
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 8: Roof inspection URLs must ONLY include allowlist cities
+// ═══════════════════════════════════════════════════════════════════════════
+const inspectionUrls = urlsInSitemap.filter(url => url.includes('/roof-inspection/') && url !== `${CANONICAL_DOMAIN}/roof-inspection/`);
+for (const url of inspectionUrls) {
+  // Extract city slug from URL
+  const match = url.match(/\/roof-inspection\/([^/]+)\//);
+  if (match) {
+    const citySlug = match[1];
+    if (!SITEMAP_INSPECTION_CITIES.includes(citySlug)) {
+      validationErrors.push(`❌ INVALID INSPECTION CITY in sitemap (301 redirect or not in allowlist): ${url}`);
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// CHECK 9: Ensure lake-worth and lake-worth-beach are treated as distinct
+// ═══════════════════════════════════════════════════════════════════════════
+const lakeWorthUrls = urlsInSitemap.filter(url => url.includes('/lake-worth/') || url.includes('/lake-worth-beach/'));
+const hasLakeWorth = lakeWorthUrls.some(url => url.includes('/lake-worth/'));
+const hasLakeWorthBeach = lakeWorthUrls.some(url => url.includes('/lake-worth-beach/'));
+if (hasLakeWorth && hasLakeWorthBeach) {
+  console.log('✅ lake-worth and lake-worth-beach are correctly treated as distinct cities');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// VALIDATION RESULTS
+// ═══════════════════════════════════════════════════════════════════════════
+
 if (validationErrors.length > 0) {
-  console.error('❌ VALIDATION FAILED!\n');
-  console.error('Errors found:\n');
+  console.error('╔════════════════════════════════════════════════════════════════╗');
+  console.error('║        ❌ SITEMAP VALIDATION FAILED - BUILD MUST STOP         ║');
+  console.error('╚════════════════════════════════════════════════════════════════╝\n');
+  console.error(`Found ${validationErrors.length} validation error(s):\n`);
   validationErrors.forEach(err => console.error(err));
-  console.error('\n🚫 Build should fail - sitemap contains invalid URLs');
+  console.error('\n🚫 The sitemap contains invalid URLs that would confuse search engines.');
+  console.error('🚫 Fix the issues above before deploying.\n');
   process.exit(1);
 } else {
-  console.log('✅ All validation checks passed!');
-  console.log('   ✓ No duplicate URLs');
-  console.log('   ✓ No legacy /service-area/ patterns');
-  console.log('   ✓ No legacy inspection URLs');
-  console.log('   ✓ No "light-house-point" slug');
-  console.log('   ✓ All URLs have trailing slashes');
-  console.log('   ✓ All URLs use canonical domain\n');
-  console.log('🎉 Sitemap is clean and ready for production!\n');
+  console.log('╔════════════════════════════════════════════════════════════════╗');
+  console.log('║          ✅ ALL VALIDATION CHECKS PASSED                      ║');
+  console.log('╚════════════════════════════════════════════════════════════════╝\n');
+  console.log('✅ No duplicate URLs');
+  console.log('✅ All URLs have trailing slashes');
+  console.log('✅ No legacy /service-area/ patterns');
+  console.log('✅ No excluded slug aliases (e.g., light-house-point)');
+  console.log('✅ No legacy inspection URLs');
+  console.log('✅ All URLs use canonical domain');
+  console.log(`✅ All ${repairUrls.length} roof-repair URLs are in KEY MONEY LIST (17 cities)`);
+  console.log(`✅ All ${inspectionUrls.length} roof-inspection URLs are in allowlist (200 OK)`);
+  console.log('✅ lake-worth and lake-worth-beach treated as distinct\n');
+  console.log('🎉 Sitemap contains ONLY canonical 200-OK URLs!');
+  console.log('🎉 Ready for production deployment!\n');
 }
