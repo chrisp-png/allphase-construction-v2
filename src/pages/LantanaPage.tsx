@@ -116,12 +116,12 @@ export default function LantanaPage() {
   ];
 
   const relatedServices = [
-    { name: 'Roof Repair', path: '/roofing-services/roof-repair' },
-    { name: 'Roof Replacement', path: '/roofing-services/roof-replacement' },
-    { name: 'Shingle Roofing', path: '/shingle-roofing' },
-    { name: 'Tile Roofing', path: '/tile-roofing' },
-    { name: 'Metal Roofing', path: '/metal-roofing' },
-    { name: 'Emergency Roofing', path: '/roofing-services/emergency-roofing' }
+    { name: 'Roof Repair', path: '/roofing-services/roof-repair/' },
+    { name: 'Roof Replacement', path: '/roofing-services/roof-replacement/' },
+    { name: 'Shingle Roofing', path: '/shingle-roofing/' },
+    { name: 'Tile Roofing', path: '/tile-roofing/' },
+    { name: 'Metal Roofing', path: '/metal-roofing/' },
+    { name: 'Emergency Roofing', path: '/roofing-services/emergency-roofing/' }
   ];
 
   const quickFaqs = [
@@ -175,7 +175,7 @@ export default function LantanaPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -194,7 +194,7 @@ export default function LantanaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg text-center"
               >
                 Schedule Free Inspection
@@ -375,7 +375,7 @@ export default function LantanaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

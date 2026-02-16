@@ -118,7 +118,7 @@ export default function LantanaRoofRepairPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roofing-services/roof-repair" className="hover:text-red-500 transition-colors">Roof Repair</Link>
+            <Link to="/roofing-services/roof-repair/" className="hover:text-red-500 transition-colors">Roof Repair</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Lantana</span>
           </div>
@@ -130,17 +130,17 @@ export default function LantanaRoofRepairPage() {
 
           {/* Hero Paragraph */}
           <p className="text-xl text-zinc-300 mb-6 max-w-4xl leading-relaxed">
-            All Phase Construction USA provides inspection-first roof repair services for Lantana properties, focusing on accurate leak diagnostics, Florida Building Code compliance, and repair details designed for South Florida heat, wind-driven rain, and moisture exposure near the Intracoastal corridor. Every project begins with a <Link to="/roofing-services/roof-inspection" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> to confirm the source of the issue and determine whether a targeted repair is appropriate.
+            All Phase Construction USA provides inspection-first roof repair services for Lantana properties, focusing on accurate leak diagnostics, Florida Building Code compliance, and repair details designed for South Florida heat, wind-driven rain, and moisture exposure near the Intracoastal corridor. Every project begins with a <Link to="/roofing-services/roof-inspection/" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> to confirm the source of the issue and determine whether a targeted repair is appropriate.
           </p>
 
           <p className="text-lg text-zinc-300 mb-8 max-w-4xl">
-            Local planning resources: <Link to="/service-areas/lantana" className="text-red-500 hover:text-red-400 underline">Lantana service area hub</Link> • <Link to="/service-areas/lantana/roof-cost-estimate" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> • <Link to="/financing" className="text-red-500 hover:text-red-400 underline">financing</Link>.
+            Local planning resources: <Link to="/service-areas/lantana/" className="text-red-500 hover:text-red-400 underline">Lantana service area hub</Link> • <Link to="/service-areas/lantana/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> • <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing</Link>.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Inspection
@@ -411,7 +411,7 @@ export default function LantanaRoofRepairPage() {
           {/* Planning Links */}
           <div className="bg-zinc-950 p-8 rounded-lg border border-zinc-800">
             <p className="text-zinc-300 leading-relaxed mb-6">
-              For budgeting and planning, use the <Link to="/service-areas/lantana/roof-cost-estimate" className="text-red-500 hover:text-red-400 underline">Lantana roof cost estimate</Link> and review <Link to="/financing" className="text-red-500 hover:text-red-400 underline">financing options</Link>. Area coverage and related services are listed on the <Link to="/service-areas/lantana" className="text-red-500 hover:text-red-400 underline">Lantana service area hub</Link>.
+              For budgeting and planning, use the <Link to="/service-areas/lantana/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">Lantana roof cost estimate</Link> and review <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing options</Link>. Area coverage and related services are listed on the <Link to="/service-areas/lantana/" className="text-red-500 hover:text-red-400 underline">Lantana service area hub</Link>.
             </p>
           </div>
         </div>
@@ -559,7 +559,7 @@ export default function LantanaRoofRepairPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule an Inspection

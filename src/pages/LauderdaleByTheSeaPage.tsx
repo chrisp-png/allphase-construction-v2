@@ -98,49 +98,49 @@ export default function LauderdaleByTheSeaPage() {
     {
       title: 'Roof Repair',
       description: 'Targeted repairs addressing storm damage, leaks, and wear.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Roof Replacement',
       description: 'Full system replacements designed for durability and code compliance.',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Shingle Roofing',
       description: 'Cost-effective systems with modern wind-rated options.',
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Tile Roofing',
       description: 'Clay and concrete tile solutions suited for coastal conditions.',
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: 'Long-lasting, wind-resistant systems ideal for South Florida.',
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Flat Roofing',
       description: 'Modified bitumen and other low-slope roofing applications.',
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Emergency Roof Repair',
       description: 'Rapid response for active leaks or storm-related issues.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: AlertTriangle
     },
     {
       title: 'Leak Detection & Prevention',
       description: 'Moisture intrusion diagnostics and preventative solutions.',
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       icon: Wrench
     }
   ];
@@ -218,11 +218,11 @@ export default function LauderdaleByTheSeaPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/service-area" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -241,7 +241,7 @@ export default function LauderdaleByTheSeaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
@@ -442,7 +442,7 @@ export default function LauderdaleByTheSeaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
