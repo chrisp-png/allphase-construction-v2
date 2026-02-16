@@ -71,7 +71,7 @@ export default function CoralSpringsRoofRepairPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roofing-services/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+                <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Coral Springs</span>
               </nav>
@@ -82,10 +82,10 @@ export default function CoralSpringsRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Roof repair in Coral Springs should start with a diagnosis—not a guess. All Phase Construction USA performs an inspection-first evaluation to confirm the leak path, quantify wind or wear-related damage, and identify any code or installation issues before recommending a repair scope. If you're seeing staining, missing components, or recurring leaks, schedule a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> so repairs target the cause (not just the symptom) and remain compatible with Florida Building Code requirements, including High Velocity Hurricane Zone (HVHZ) detailing used across Broward County.
+                  Roof repair in Coral Springs should start with a diagnosis—not a guess. All Phase Construction USA performs an inspection-first evaluation to confirm the leak path, quantify wind or wear-related damage, and identify any code or installation issues before recommending a repair scope. If you're seeing staining, missing components, or recurring leaks, schedule a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> so repairs target the cause (not just the symptom) and remain compatible with Florida Building Code requirements, including High Velocity Hurricane Zone (HVHZ) detailing used across Broward County.
                 </p>
                 <p className="text-base">
-                  Service area resources: <Link to="/service-areas/coral-springs" className="text-red-600 hover:text-red-500 underline transition-colors">Coral Springs service area</Link> • <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate</a> • <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">financing options</Link>
+                  Service area resources: <Link to="/service-areas/coral-springs/" className="text-red-600 hover:text-red-500 underline transition-colors">Coral Springs service area</Link> • <a href="https://allphaseconstructionfl.com/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate</a> • <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">financing options</Link>
                 </p>
               </div>
 
@@ -98,7 +98,7 @@ export default function CoralSpringsRoofRepairPage() {
                   (754) 227-5605
                 </a>
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-zinc-900 font-semibold rounded-lg hover:bg-zinc-100 transition-colors"
                 >
                   Schedule Inspection
@@ -440,7 +440,7 @@ export default function CoralSpringsRoofRepairPage() {
                   Call Now
                 </a>
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center justify-center px-8 py-4 bg-zinc-900 text-white font-semibold rounded-lg hover:bg-zinc-800 transition-colors"
                 >
                   Request Inspection

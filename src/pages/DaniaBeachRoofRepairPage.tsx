@@ -82,7 +82,7 @@ export default function DaniaBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -96,7 +96,7 @@ export default function DaniaBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Dania Beach is a coastal South Florida community where roof systems face wind-driven rain penetration during seasonal storm events, accelerated UV and heat cycling, and potential corrosion risk on exposed metal components depending on proximity and prevailing wind patterns. The city features a diverse mix of single-family homes, multi-family properties, and condominium communities requiring HOA and association coordination, with roof systems ranging from asphalt shingle and tile to metal and low-slope configurations. All Phase Construction USA provides inspection-first roof repair in Dania Beach, beginning with a <Link to="/roofing-services/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/dania-beach" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Dania Beach</Link>, or use our <Link to="/service-areas/dania-beach/roof-cost-estimate" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
+                  Dania Beach is a coastal South Florida community where roof systems face wind-driven rain penetration during seasonal storm events, accelerated UV and heat cycling, and potential corrosion risk on exposed metal components depending on proximity and prevailing wind patterns. The city features a diverse mix of single-family homes, multi-family properties, and condominium communities requiring HOA and association coordination, with roof systems ranging from asphalt shingle and tile to metal and low-slope configurations. All Phase Construction USA provides inspection-first roof repair in Dania Beach, beginning with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/dania-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Dania Beach</Link>, or use our <Link to="/service-areas/dania-beach/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
                 </p>
               </div>
 
@@ -562,7 +562,7 @@ export default function DaniaBeachRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/dania-beach"
+                to="/service-areas/dania-beach/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -574,7 +574,7 @@ export default function DaniaBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/dania-beach/roof-cost-estimate"
+                to="/service-areas/dania-beach/roof-cost-estimate/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -586,7 +586,7 @@ export default function DaniaBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing"
+                to="/financing/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

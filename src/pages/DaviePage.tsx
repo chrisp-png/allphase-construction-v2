@@ -160,11 +160,11 @@ export default function DaviePage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -183,7 +183,7 @@ export default function DaviePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
@@ -228,21 +228,21 @@ export default function DaviePage() {
                 <p className="text-white font-semibold mb-3">Explore services:</p>
                 <div className="flex flex-wrap gap-3">
                   <Link
-                    to="/roofing-services/roof-repair"
+                    to="/roofing-services/roof-repair/"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700 hover:border-red-600"
                   >
                     <Wrench className="w-4 h-4" />
                     Roof Repair
                   </Link>
                   <Link
-                    to="/roof-inspection"
+                    to="/roof-inspection/"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700 hover:border-red-600"
                   >
                     <Search className="w-4 h-4" />
                     Roof Inspection
                   </Link>
                   <Link
-                    to="/metal-roofing"
+                    to="/metal-roofing/"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700 hover:border-red-600"
                   >
                     <Shield className="w-4 h-4" />
@@ -295,7 +295,7 @@ export default function DaviePage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                to="/roof-inspection"
+                to="/roof-inspection/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors">
@@ -308,7 +308,7 @@ export default function DaviePage() {
                 </div>
               </Link>
               <Link
-                to="/roofing-services/roof-repair"
+                to="/roofing-services/roof-repair/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors">
@@ -321,7 +321,7 @@ export default function DaviePage() {
                 </div>
               </Link>
               <Link
-                to="/residential-roofing"
+                to="/residential-roofing/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors">
@@ -399,7 +399,7 @@ export default function DaviePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

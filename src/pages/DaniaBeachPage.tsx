@@ -136,7 +136,7 @@ export default function DaniaBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
@@ -190,28 +190,28 @@ export default function DaniaBeachPage() {
               </ul>
               <div className="flex flex-wrap gap-4 justify-center mt-8">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Roof Repair
                 </Link>
                 <span className="text-zinc-600">·</span>
                 <Link
-                  to="/tile-roofing"
+                  to="/tile-roofing/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Roof Replacement
                 </Link>
                 <span className="text-zinc-600">·</span>
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Roof Inspection
                 </Link>
                 <span className="text-zinc-600">·</span>
                 <Link
-                  to="/metal-roofing"
+                  to="/metal-roofing/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Metal Roofing
@@ -352,7 +352,7 @@ export default function DaniaBeachPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
