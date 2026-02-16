@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Phone, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
+import { Phone, CheckCircle2, ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
 import SEO from '../components/SEO';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
@@ -476,11 +476,19 @@ export default function BocaRatonPage() {
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <span>Shingle blow-off repair</span>
                 </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Flat roof seam and penetration repairs</span>
-                </li>
               </ul>
+
+              <div className="mt-6 bg-gradient-to-r from-red-900/30 to-red-800/20 border-l-4 border-red-500 p-6 rounded-r-lg">
+                <div className="flex items-start gap-4">
+                  <AlertTriangle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="text-white font-bold text-lg mb-2">Critical Issue in Boca Raton</h4>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Wind-driven rain finds weak flashing near roof penetrations.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <PhotoBreak
