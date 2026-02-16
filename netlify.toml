@@ -253,6 +253,18 @@ to = "/roof-repair/tamarac/index.html"
 status = 200
 force = true
 
+# Serve /roof-repair/ hub page via SPA (prevent catch-all loop)
+[[redirects]]
+from = "/roof-repair"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/roof-repair/"
+to = "/index.html"
+status = 200
+force = true
 # Catch-all: redirect all other roof-repair city pages to /roof-repair/
 [[redirects]]
 from = "/roof-repair/*"
