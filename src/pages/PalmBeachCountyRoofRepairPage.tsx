@@ -86,7 +86,7 @@ export default function PalmBeachCountyRoofRepairPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roofing-services/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+                <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Palm Beach County</span>
               </nav>
@@ -97,7 +97,7 @@ export default function PalmBeachCountyRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Properties across Palm Beach County face sustained UV cycling, coastal humidity, and seasonal storm exposure that can accelerate roof deterioration. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, material failures, or component distress before recommending a corrective approach. Every project begins with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate for the observed issues.
+                  Properties across Palm Beach County face sustained UV cycling, coastal humidity, and seasonal storm exposure that can accelerate roof deterioration. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, material failures, or component distress before recommending a corrective approach. Every project begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate for the observed issues.
                 </p>
               </div>
 
@@ -354,7 +354,7 @@ export default function PalmBeachCountyRoofRepairPage() {
               </p>
 
               <p>
-                Property owners across <Link to="/roofing-contractor-palm-beach-county-fl" className="text-red-600 hover:text-red-500 underline transition-colors">Palm Beach County</Link> can explore our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
+                Property owners across <Link to="/roofing-contractor-palm-beach-county-fl/" className="text-red-600 hover:text-red-500 underline transition-colors">Palm Beach County</Link> can explore our <Link to="/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> for early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
               </p>
             </div>
           </div>

@@ -82,7 +82,7 @@ export default function PalmBeachCountyUnincorporatedRoofRepairPage() {
           <div className="max-w-4xl">
             <div className="mb-6">
               <Link
-                to="/roofing-services/roof-repair"
+                to="/roofing-services/roof-repair/"
                 className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
               >
                 <ChevronRight className="w-4 h-4 rotate-180" />
@@ -96,7 +96,7 @@ export default function PalmBeachCountyUnincorporatedRoofRepairPage() {
 
             <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
               <p>
-                All Phase Construction USA provides inspection-first roof repair services for properties located in unincorporated areas of Palm Beach County, FL. Our process begins with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to determine the actual source of leaks, storm-related damage, or material failure before defining any repair scope. Repairs are evaluated for compliance with the Florida Building Code (and HVHZ requirements where applicable), while accounting for coastal exposure, heat-driven expansion, and mixed residential zoning common in unincorporated communities.
+                All Phase Construction USA provides inspection-first roof repair services for properties located in unincorporated areas of Palm Beach County, FL. Our process begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to determine the actual source of leaks, storm-related damage, or material failure before defining any repair scope. Repairs are evaluated for compliance with the Florida Building Code (and HVHZ requirements where applicable), while accounting for coastal exposure, heat-driven expansion, and mixed residential zoning common in unincorporated communities.
               </p>
             </div>
 
@@ -396,7 +396,7 @@ export default function PalmBeachCountyUnincorporatedRoofRepairPage() {
 
           <div className="flex flex-wrap gap-4 mb-8">
             <Link
-              to="/easy-payments"
+              to="/easy-payments/"
               className="text-red-600 hover:text-red-500 underline transition-colors"
             >
               Financing Options

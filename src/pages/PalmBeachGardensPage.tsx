@@ -67,37 +67,37 @@ export default function PalmBeachGardensPage() {
     {
       title: 'Tile Roofing',
       description: "Popular choice throughout Palm Beach Gardens. Premium concrete and clay tile installations for the city's diverse neighborhoods.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Energy-efficient metal roofing gaining popularity in Palm Beach Gardens for durability and lower cooling costs.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Quality architectural shingles for Palm Beach Gardens homes — from starter properties to family estates.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Modern flat roofing systems for Palm Beach Gardens commercial properties and contemporary home designs.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Expert repairs and maintenance extending Palm Beach Gardens roof lifespans. Includes required 5-year certification letters.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Office buildings, retail centers, and commercial properties throughout Palm Beach Gardens and PGA Boulevard corridor.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -141,12 +141,12 @@ export default function PalmBeachGardensPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl' },
-    { name: 'Juno Beach', path: '/roofing-contractor-juno-beach-fl' },
-    { name: 'Riviera Beach', path: '/roofing-contractor-riviera-beach-fl' },
-    { name: 'Lake Park', path: '/roofing-contractor-lake-park-fl' }
+    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl/' },
+    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
+    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
+    { name: 'Juno Beach', path: '/roofing-contractor-juno-beach-fl/' },
+    { name: 'Riviera Beach', path: '/roofing-contractor-riviera-beach-fl/' },
+    { name: 'Lake Park', path: '/roofing-contractor-lake-park-fl/' }
   ];
 
   const faqs = [
@@ -185,11 +185,11 @@ export default function PalmBeachGardensPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -232,7 +232,7 @@ export default function PalmBeachGardensPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Palm Beach Gardens
@@ -259,7 +259,7 @@ export default function PalmBeachGardensPage() {
                 Palm Beach Gardens presents typical South Florida roofing challenges: intense year-round sun exposure that degrades materials, hurricane threats during storm season, daily afternoon thunderstorms testing drainage systems, and HOA requirements in many communities. Whether you own a home in Mirasol, BallenIsles, Old Palm, or any of the city's many neighborhoods, your roof faces conditions that demand proper installation and quality materials.
               </p>
               <p>
-                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
+                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
               </p>
             </div>
           </div>
@@ -408,7 +408,7 @@ export default function PalmBeachGardensPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -463,7 +463,7 @@ export default function PalmBeachGardensPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

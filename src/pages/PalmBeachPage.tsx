@@ -67,37 +67,37 @@ export default function PalmBeachPage() {
     {
       title: 'Tile Roofing',
       description: "Premium tile roofing for Palm Beach's historic estates. Clay and concrete tile installations that honor architectural heritage while providing modern hurricane protection.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "High-end standing seam metal roofing for Palm Beach's contemporary estates. Marine-grade materials engineered for oceanfront luxury properties.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Premium architectural shingles for Palm Beach properties requiring specific aesthetic requirements or budget considerations.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Modern flat roofing systems for Palm Beach's contemporary architectural designs and multi-level estates.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Expert restoration of historic roofs and preservation of architectural details on Palm Beach's landmark properties.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "High-end commercial roofing for Palm Beach's exclusive clubs, retail establishments, and luxury properties.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -141,12 +141,12 @@ export default function PalmBeachPage() {
   ];
 
   const nearbyCities = [
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl' },
-    { name: 'Lake Worth', path: '/roofing-contractor-lake-worth-fl' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl' },
-    { name: 'Manalapan', path: '/roofing-contractor-manalapan-fl' },
-    { name: 'South Palm Beach', path: '/roofing-contractor-south-palm-beach-fl' }
+    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
+    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
+    { name: 'Lake Worth', path: '/roofing-contractor-lake-worth-fl/' },
+    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
+    { name: 'Manalapan', path: '/roofing-contractor-manalapan-fl/' },
+    { name: 'South Palm Beach', path: '/roofing-contractor-south-palm-beach-fl/' }
   ];
 
   const faqs = [
@@ -185,11 +185,11 @@ export default function PalmBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -232,7 +232,7 @@ export default function PalmBeachPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Consultation in Palm Beach
@@ -259,7 +259,7 @@ export default function PalmBeachPage() {
                 Property owners in Palm Beach rely on experienced, dual-licensed roofing contractors who understand coastal construction requirements, historic considerations, and the importance of premium materials and workmanship.
               </p>
               <p>
-                Before making major roofing decisions, schedule a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive roof inspection</Link> to evaluate your roof's condition and compliance, explore <Link to="/tile-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection services</Link> for historic estates, or review <Link to="/metal-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection options</Link> for coastal durability assessment.
+                Before making major roofing decisions, schedule a <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive roof inspection</Link> to evaluate your roof's condition and compliance, explore <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection services</Link> for historic estates, or review <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection options</Link> for coastal durability assessment.
               </p>
             </div>
           </div>
@@ -461,7 +461,7 @@ export default function PalmBeachPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -516,7 +516,7 @@ export default function PalmBeachPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Consultation
