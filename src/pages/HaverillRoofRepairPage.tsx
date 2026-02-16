@@ -82,7 +82,7 @@ export default function HaverillRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -96,7 +96,7 @@ export default function HaverillRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Haverhill is an inland Palm Beach County community where roof systems experience strong seasonal storm and wind-driven rain risk, heat and UV cycling degradation, and where applicable, HOA and community management coordination requirements. The area features a mix of shingle and tile roofs with some low-slope patio and addition sections on residential properties. All Phase Construction USA provides inspection-first roof repair in Haverhill, beginning with a <Link to="/roofing-services/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/haverhill" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Haverhill</Link>, or use our <Link to="/service-areas/haverhill/roof-cost-estimate" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
+                  Haverhill is an inland Palm Beach County community where roof systems experience strong seasonal storm and wind-driven rain risk, heat and UV cycling degradation, and where applicable, HOA and community management coordination requirements. The area features a mix of shingle and tile roofs with some low-slope patio and addition sections on residential properties. All Phase Construction USA provides inspection-first roof repair in Haverhill, beginning with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/haverhill/" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Haverhill</Link>, or use our <Link to="/service-areas/haverhill/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
                 </p>
               </div>
 
@@ -562,7 +562,7 @@ export default function HaverillRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/haverhill"
+                to="/service-areas/haverhill/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -574,7 +574,7 @@ export default function HaverillRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/haverhill/roof-cost-estimate"
+                to="/service-areas/haverhill/roof-cost-estimate/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -586,7 +586,7 @@ export default function HaverillRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing"
+                to="/financing/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
