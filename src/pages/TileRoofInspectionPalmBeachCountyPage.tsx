@@ -61,7 +61,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roof-inspection" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
+            <Link to="/roof-inspection/" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Tile Roof Inspection Palm Beach County</span>
           </div>
@@ -82,7 +82,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Schedule Tile Roof Inspection
@@ -434,7 +434,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <Link to="/roof-inspection" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/roof-inspection/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <ClipboardCheck className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Professional Roof Inspection Services
@@ -447,7 +447,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
               </div>
             </Link>
 
-            <Link to="/tile-roofing" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/tile-roofing/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Layers className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Tile Roofing Installation & Restoration
@@ -475,7 +475,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
 
           <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
             <p>
-              All Phase Construction USA provides professional tile roof inspection services throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, Jupiter, Palm Beach Gardens, Lake Worth Beach, Royal Palm Beach, and all surrounding municipalities.
+              All Phase Construction USA provides professional tile roof inspection services throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, Jupiter, Palm Beach Gardens, Lake Worth Beach, Royal Palm Beach, and all surrounding municipalities.
             </p>
 
             <p>
@@ -491,7 +491,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
             </p>
 
             <p>
-              All Phase Construction USA holds both General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) licenses. Our tile roof inspections are performed by personnel with direct installation experience in tile roofing systems, familiarity with HVHZ requirements applicable throughout coastal Palm Beach County, and the statutory authorization to provide insurance certification under Florida Statute 627.7011(5). For properties requiring insurance-compliant certification for Citizens Property Insurance or private carriers, our <Link to="/insurance-roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Insurance Roof Inspection & Certification Services</Link> provide carrier-accepted documentation and remaining useful life attestation.
+              All Phase Construction USA holds both General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) licenses. Our tile roof inspections are performed by personnel with direct installation experience in tile roofing systems, familiarity with HVHZ requirements applicable throughout coastal Palm Beach County, and the statutory authorization to provide insurance certification under Florida Statute 627.7011(5). For properties requiring insurance-compliant certification for Citizens Property Insurance or private carriers, our <Link to="/insurance-roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Insurance Roof Inspection & Certification Services</Link> provide carrier-accepted documentation and remaining useful life attestation.
             </p>
           </div>
         </div>
@@ -509,7 +509,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -521,7 +521,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/insurance-roof-inspection"
+              to="/insurance-roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -533,7 +533,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/metal-roof-inspection-palm-beach-county"
+              to="/metal-roof-inspection-palm-beach-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -545,7 +545,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/flat-roof-inspection-palm-beach-county"
+              to="/flat-roof-inspection-palm-beach-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -557,7 +557,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/tile-roof-inspection-broward-county"
+              to="/tile-roof-inspection-broward-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -583,7 +583,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Schedule a Tile Roof Inspection

@@ -68,7 +68,7 @@ export default function WellingtonRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -82,7 +82,7 @@ export default function WellingtonRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Wellington's inland suburban environment subjects roof systems to intense seasonal storm activity, wind-driven rain intrusion, and sustained heat/UV cycling. The community's HOA-governed residential areas feature a mix of tile and shingle roofing with low-slope sections on additions and patio covers. All Phase Construction USA provides inspection-first roof repair in Wellington, starting with a <Link to="/roofing-services/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak sources, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable.
+                  Wellington's inland suburban environment subjects roof systems to intense seasonal storm activity, wind-driven rain intrusion, and sustained heat/UV cycling. The community's HOA-governed residential areas feature a mix of tile and shingle roofing with low-slope sections on additions and patio covers. All Phase Construction USA provides inspection-first roof repair in Wellington, starting with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak sources, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable.
                 </p>
               </div>
 
@@ -536,7 +536,7 @@ export default function WellingtonRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/wellington"
+                to="/service-areas/wellington/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -548,7 +548,7 @@ export default function WellingtonRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/wellington/roof-cost-estimate"
+                to="/service-areas/wellington/roof-cost-estimate/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -560,7 +560,7 @@ export default function WellingtonRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing"
+                to="/financing/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

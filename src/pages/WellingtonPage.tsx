@@ -77,37 +77,37 @@ export default function WellingtonPage() {
     {
       title: 'Tile Roofing',
       description: "The signature of Wellington homes. Concrete and clay tile installations for estates, single-family homes, and detached structures. Foam adhesive for superior wind resistance.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Standing seam and metal panels for Wellington homeowners seeking 50+ year durability. Popular for equestrian facilities and accessory structures.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Quality architectural shingles for Wellington's family neighborhoods. Excellent value with proper wind ratings.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Commercial properties, barns, and accessory buildings. TPO, PVC, and modified bitumen systems with proper drainage engineering.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Extending the life of Wellington's tile roofs — and protecting your insurance coverage with 5-year certification letters.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Retail centers, professional buildings, and equestrian facilities throughout Wellington.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -151,12 +151,12 @@ export default function WellingtonPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Royal Palm Beach', path: '/locations/deerfield-beach/service-area/royal-palm-beach' },
-    { name: 'West Palm Beach', path: '/locations/deerfield-beach/service-area/west-palm-beach' },
-    { name: 'Lake Worth Beach', path: '/locations/deerfield-beach/service-area/lake-worth-beach' },
-    { name: 'Boynton Beach', path: '/locations/deerfield-beach/service-area/boynton-beach' },
-    { name: 'Palm Beach Gardens', path: '/locations/deerfield-beach/service-area/palm-beach-gardens' },
-    { name: 'Boca Raton', path: '/locations/deerfield-beach/service-area/boca-raton' }
+    { name: 'Royal Palm Beach', path: '/locations/deerfield-beach/service-area/royal-palm-beach/' },
+    { name: 'West Palm Beach', path: '/locations/deerfield-beach/service-area/west-palm-beach/' },
+    { name: 'Lake Worth Beach', path: '/locations/deerfield-beach/service-area/lake-worth-beach/' },
+    { name: 'Boynton Beach', path: '/locations/deerfield-beach/service-area/boynton-beach/' },
+    { name: 'Palm Beach Gardens', path: '/locations/deerfield-beach/service-area/palm-beach-gardens/' },
+    { name: 'Boca Raton', path: '/locations/deerfield-beach/service-area/boca-raton/' }
   ];
 
   const faqs = [
@@ -195,11 +195,11 @@ export default function WellingtonPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -242,7 +242,7 @@ export default function WellingtonPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Wellington
@@ -495,7 +495,7 @@ export default function WellingtonPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -549,7 +549,7 @@ export default function WellingtonPage() {
                 </Link>
 
                 <Link
-                  to="/blog/roof-pricing-financing-guide"
+                  to="/blog/roof-pricing-financing-guide/"
                   className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
                 >
                   <div className="flex items-start gap-4">
@@ -620,7 +620,7 @@ export default function WellingtonPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

@@ -109,7 +109,7 @@ export default function TileRoofingPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Tile Roof Inspection
@@ -161,10 +161,10 @@ export default function TileRoofingPage() {
 
           <p className="text-lg text-zinc-300 leading-relaxed">
             In these situations, a{' '}
-            <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
+            <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">
               diagnostic roof inspection
             </Link>
-            {' '}is necessary to determine whether tile roof repair, partial remediation, or full replacement is technically appropriate. Tile roofing systems throughout South Florida require professional diagnostic evaluation to assess underlayment condition, attachment integrity, and concealed failure mechanisms before repair or replacement decisions are made. Our <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> provide material-specific technical assessment of tile condition, underlayment performance, and structural attachment throughout Broward County and Palm Beach County.
+            {' '}is necessary to determine whether tile roof repair, partial remediation, or full replacement is technically appropriate. Tile roofing systems throughout South Florida require professional diagnostic evaluation to assess underlayment condition, attachment integrity, and concealed failure mechanisms before repair or replacement decisions are made. Our <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> provide material-specific technical assessment of tile condition, underlayment performance, and structural attachment throughout Broward County and Palm Beach County.
           </p>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function TileRoofingPage() {
           </div>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold text-lg transition-colors"
           >
             Get a free inspection to see if your roof has proper flashings
@@ -1042,7 +1042,7 @@ export default function TileRoofingPage() {
           </div>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
           >
             Schedule Your Free Tile Roof Inspection
@@ -1135,7 +1135,7 @@ export default function TileRoofingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Tile Roof Inspection
