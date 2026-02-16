@@ -501,18 +501,6 @@ export default function BocaRatonPage() {
                 Roof Replacement in Boca Raton FL
               </h2>
 
-              <div className="mb-8 bg-gradient-to-r from-red-900/30 to-red-800/20 border-l-4 border-red-500 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <AlertTriangle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="text-white font-bold text-lg mb-2">Critical Issue</h4>
-                    <p className="text-zinc-200 leading-relaxed">
-                      Wind-driven rain finds weak flashing near roof penetrations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               <h3 className="text-2xl font-bold text-white mb-6">
                 Roof replacement in Boca Raton FL: systems, materials, and wind performance
               </h3>
