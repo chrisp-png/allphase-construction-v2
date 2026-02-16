@@ -45,23 +45,23 @@ export default function BocaRatonPage() {
   const faqData = [
     {
       question: 'What is the 25% reroofing rule in Florida?',
-      answer: 'It refers to code language about how much of a roof can be repaired or replaced within a 12-month period before additional code compliance may be required. SB 4-D revised application for many roofs, often allowing compliance work to be limited to the repaired portion when conditions are met.'
+      answer: 'The 25% rule under the Florida Building Code states that if more than 25% of a roof area is repaired or replaced within a 12-month period, the entire roofing system may need to be brought into compliance with current code requirements. In Boca Raton and throughout Palm Beach County, this rule is reviewed during permitting to determine whether partial repair or full code compliance is required. Recent updates, including SB 4-D, allow certain repairs to remain limited in scope when structural and underlayment conditions meet code.'
     },
     {
       question: 'What is the average cost for a new roof in Florida?',
-      answer: 'It varies heavily by material and scope. Statewide averages published by remodeling and roofing cost sources commonly show broad ranges, with full replacements on typical homes often landing in the tens of thousands depending on system choice and tear-off needs.'
+      answer: 'Roof replacement costs vary based on material type, roof complexity, and tear-off requirements. In Boca Raton, pricing is influenced by Florida Building Code standards, wind-load requirements, and permitting costs specific to Palm Beach County. Most full roof replacements fall within broad five-figure ranges depending on system selection, decking condition, and upgrade requirements. A professional inspection is required to provide an accurate scope and estimate.'
     },
     {
       question: 'How much does a 2,000 sq ft shingle roof cost?',
-      answer: '"2,000 sq ft" can mean home size, not roof area, so pricing needs a measurement. Many pricing references estimate asphalt systems by cost per square foot or per square (100 sq ft), then adjust for pitch, tear-off, deck work, and code items.'
+      answer: 'A "2,000 sq ft" home does not always equal 2,000 sq ft of roof area, as pitch and design increase actual roofing surface. In Boca Raton, asphalt shingle pricing is typically calculated per roofing square (100 sq ft) and adjusted for tear-off, deck repairs, ventilation upgrades, and code-required enhancements. A field measurement is necessary to determine accurate project cost.'
     },
     {
       question: 'What is the hourly rate for a roofer in Florida?',
-      answer: 'Worker pay and contractor billing are different numbers. Wage datasets and salary aggregators often show Florida roofer wages around the low-to-mid $20s per hour on average, but contractor labor billed to a job is typically higher because it includes overhead, insurance, supervision, and warranty risk.'
+      answer: 'Individual worker wages and contractor billing rates are different. While Florida roofer wages often average in the low-to-mid $20s per hour, professional roofing contractors in Boca Raton bill per project rather than hourly. Project pricing includes labor, supervision, insurance, equipment, permitting coordination, inspections, and warranty coverage — all required for compliant installation in Palm Beach County.'
     },
     {
       question: 'Do you handle permits and inspections in Boca Raton?',
-      answer: 'Yes. We manage permits and coordinate inspections as part of a proper reroof process.'
+      answer: 'Yes. All Phase Construction USA manages the permitting and inspection process for roof repairs and replacements in Boca Raton. We coordinate directly with local building departments to ensure compliance with Florida Building Code requirements and Palm Beach County regulations. This includes submitting documentation, scheduling inspections, and ensuring final approval.'
     },
     {
       question: 'How fast can you inspect a leak?',
