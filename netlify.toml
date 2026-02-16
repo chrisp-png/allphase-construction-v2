@@ -8,19 +8,19 @@ NODE_VERSION = "20"
 [build.processing]
 skip_processing = false
 
-[build.processing.css]
-bundle = true
-minify = true
+  [build.processing.css]
+  bundle = true
+  minify = true
 
-[build.processing.js]
-bundle = true
-minify = true
+  [build.processing.js]
+  bundle = true
+  minify = true
 
-[build.processing.html]
-pretty_urls = true
+  [build.processing.html]
+  pretty_urls = false
 
-[build.processing.images]
-compress = true
+  [build.processing.images]
+  compress = true
 
 [[plugins]]
 package = "netlify-plugin-cache"
@@ -161,11 +161,21 @@ force = true
 # NOTE: All roof-repair redirect rules are managed in _redirects file
 # (whitelist, hub page, catch-all, and SPA fallback)
 
-# NOTE: Removed /locations/deerfield-beach -> index.html and /locations/* -> :splat/index.html
-# rewrites. With pretty_urls = true, Netlify automatically serves
-# /locations/deerfield-beach/ from dist/locations/deerfield-beach/index.html.
-# The old 200 rewrites conflicted with _redirects trailing-slash 301! rules,
-# causing ERR_TOO_MANY_REDIRECTS.
+# ═══════════════════════════════════════════════════════════════════════════
+# REWRITES - Serve pre-rendered location pages (pretty_urls is OFF)
+# With pretty_urls = false, we need explicit rewrites to serve index.html
+# from pre-rendered location directories.
+# ═══════════════════════════════════════════════════════════════════════════
+
+[[redirects]]
+from = "/locations/:city/"
+to = "/locations/:city/index.html"
+status = 200
+
+[[redirects]]
+from = "/locations/:city/:sub/"
+to = "/locations/:city/:sub/index.html"
+status = 200
 
 [[headers]]
   for = "/robots.txt"
