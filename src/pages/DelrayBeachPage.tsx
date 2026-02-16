@@ -95,11 +95,11 @@ export default function DelrayBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -172,25 +172,25 @@ export default function DelrayBeachPage() {
               <p className="text-zinc-400 mb-4">Explore our services:</p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700"
                 >
                   Roof Repair
                 </Link>
                 <Link
-                  to="/residential-roofing"
+                  to="/residential-roofing/"
                   className="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700"
                 >
                   Roof Replacement
                 </Link>
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/"
                   className="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700"
                 >
                   Roof Inspection
                 </Link>
                 <Link
-                  to="/tile-roofing"
+                  to="/tile-roofing/"
                   className="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700"
                 >
                   Tile Roofing
@@ -241,7 +241,7 @@ export default function DelrayBeachPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
                 >
                   Schedule Free Inspection

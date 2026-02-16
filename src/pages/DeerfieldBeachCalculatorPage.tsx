@@ -200,7 +200,7 @@ export default function DeerfieldBeachCalculatorPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
@@ -238,14 +238,14 @@ export default function DeerfieldBeachCalculatorPage() {
           {/* Pricing Tables Section */}
           <div className="mb-20 mt-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
-              <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+              <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
                 Deerfield Beach
               </Link>{' '}
               Roof Replacement Cost Ranges
             </h2>
             <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
               Below are realistic, code-aware budget ranges for a roof replacement served from our{' '}
-              <Link to="/locations/deerfield-beach/service-area" className="text-red-500 hover:text-red-400 underline transition-colors">
+              <Link to="/locations/deerfield-beach/service-area/" className="text-red-500 hover:text-red-400 underline transition-colors">
                 Deerfield Beach
               </Link>{' '}
               office and warehouse. These ranges help homeowners understand typical costs before using the calculator, and they may vary based on roof size, complexity, materials, permit requirements, and any decking (wood) replacement.
@@ -255,7 +255,7 @@ export default function DeerfieldBeachCalculatorPage() {
             <div className="max-w-6xl mx-auto mb-16">
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Asphalt Shingle Roof Cost Ranges in{' '}
-                <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+                <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
                   Deerfield Beach
                 </Link>
               </h3>
@@ -325,7 +325,7 @@ export default function DeerfieldBeachCalculatorPage() {
             <div className="max-w-6xl mx-auto mb-16">
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Tile Roof Cost Ranges in{' '}
-                <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+                <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
                   Deerfield Beach
                 </Link>
               </h3>
@@ -384,7 +384,7 @@ export default function DeerfieldBeachCalculatorPage() {
             <div className="max-w-6xl mx-auto mb-16">
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Metal Roof Cost Ranges in{' '}
-                <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+                <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
                   Deerfield Beach
                 </Link>
               </h3>
@@ -443,7 +443,7 @@ export default function DeerfieldBeachCalculatorPage() {
             <div className="max-w-6xl mx-auto mb-12">
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Flat Roof Cost Ranges in{' '}
-                <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+                <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
                   Deerfield Beach
                 </Link>
               </h3>
@@ -550,7 +550,7 @@ export default function DeerfieldBeachCalculatorPage() {
                   <div className="mt-4 pt-4 border-t border-zinc-800">
                     <p className="text-xs text-zinc-500">
                       Includes HVHZ installation, underlayment, flashing, and permitting for{' '}
-                      <Link to="/locations/deerfield-beach/service-area" className="text-red-500 hover:text-red-400 underline">
+                      <Link to="/locations/deerfield-beach/service-area/" className="text-red-500 hover:text-red-400 underline">
                         Deerfield Beach
                       </Link>
                       .
@@ -684,7 +684,7 @@ export default function DeerfieldBeachCalculatorPage() {
               <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-red-500" />
                 What's Included in Every{' '}
-                <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-400 transition-colors underline">
+                <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-400 transition-colors underline">
                   Deerfield Beach
                 </Link>{' '}
                 Roof Replacement
@@ -739,7 +739,7 @@ export default function DeerfieldBeachCalculatorPage() {
                 </p>
                 <p className="text-zinc-300 mb-4 leading-relaxed">
                   If decking replacement is needed during your{' '}
-                  <Link to="/locations/deerfield-beach/service-area" className="text-red-500 hover:text-red-400 underline transition-colors">
+                  <Link to="/locations/deerfield-beach/service-area/" className="text-red-500 hover:text-red-400 underline transition-colors">
                     Deerfield Beach
                   </Link>{' '}
                   roof replacement, it must be priced in advance as a clearly defined per-sheet or per-linear-foot rate in the contract. Transparent pricing eliminates surprises and ensures you understand exactly what you're paying for.
@@ -767,14 +767,14 @@ export default function DeerfieldBeachCalculatorPage() {
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
               Why{' '}
-              <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+              <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
                 Deerfield Beach
               </Link>{' '}
               Homeowners Choose All Phase Construction
             </h2>
             <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
               We're a dual-licensed roofing contractor serving{' '}
-              <Link to="/locations/deerfield-beach/service-area" className="text-red-500 hover:text-red-400 underline transition-colors">
+              <Link to="/locations/deerfield-beach/service-area/" className="text-red-500 hover:text-red-400 underline transition-colors">
                 Deerfield Beach
               </Link>{' '}
               with over 25 years of experience. Our certifications, ratings, and local expertise deliver exceptional results.
@@ -921,7 +921,7 @@ export default function DeerfieldBeachCalculatorPage() {
                 Contact us to discuss financing options and payment plans for your roofing project.
               </p>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
               >
                 Request Financing Information
@@ -972,7 +972,7 @@ export default function DeerfieldBeachCalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

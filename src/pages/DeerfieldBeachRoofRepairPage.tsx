@@ -68,7 +68,7 @@ export default function DeerfieldBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair"
+                  to="/roofing-services/roof-repair/"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -82,7 +82,7 @@ export default function DeerfieldBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Deerfield Beach roofs experience constant exposure to salt air, UV intensity, seasonal storms, and rapid heat cycling. These conditions can accelerate wear across tile, shingle, flat, and metal roof systems. All Phase Construction USA provides inspection-first roof repair in Deerfield Beach, starting with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to determine whether targeted repairs are appropriate under the Florida Building Code and applicable HVHZ requirements.
+                  Deerfield Beach roofs experience constant exposure to salt air, UV intensity, seasonal storms, and rapid heat cycling. These conditions can accelerate wear across tile, shingle, flat, and metal roof systems. All Phase Construction USA provides inspection-first roof repair in Deerfield Beach, starting with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to determine whether targeted repairs are appropriate under the Florida Building Code and applicable HVHZ requirements.
                 </p>
               </div>
 
@@ -466,7 +466,7 @@ export default function DeerfieldBeachRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/locations/deerfield-beach"
+                to="/locations/deerfield-beach/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -490,7 +490,7 @@ export default function DeerfieldBeachRoofRepairPage() {
               </a>
 
               <Link
-                to="/easy-payments"
+                to="/easy-payments/"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

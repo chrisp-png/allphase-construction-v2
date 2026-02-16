@@ -110,25 +110,25 @@ export default function DeerfieldBeachPage() {
       title: 'Shingle Roofing for Deerfield Beach Homes',
       description: 'Engineered for Deerfield Beach wind exposure and municipal inspection requirements. HVHZ-rated shingles with proper fastening patterns ensure insurance compliance and long-term performance for Deerfield Beach properties.',
       icon: Home,
-      path: '/shingle-roofing'
+      path: '/shingle-roofing/'
     },
     {
       title: 'Tile Roofing Systems Engineered for Deerfield Beach',
       description: 'Concrete and clay tile systems designed for Deerfield Beach coastal conditions. Foam-set installation meets HVHZ standards and satisfies insurance carrier documentation requirements for Deerfield Beach homes.',
       icon: Home,
-      path: '/tile-roofing'
+      path: '/tile-roofing/'
     },
     {
       title: 'Mechanically Seamed Metal Roofing for Deerfield Beach',
       description: 'Standing seam metal roofing systems approved for Deerfield Beach hurricane zones. Corrosion-resistant materials withstand salt exposure while meeting strict Deerfield Beach inspection criteria and insurance underwriting standards.',
       icon: Shield,
-      path: '/metal-roofing'
+      path: '/metal-roofing/'
     },
     {
       title: 'Flat Roofing Systems for Deerfield Beach Properties',
       description: 'TPO, PVC, and modified bitumen installations for Deerfield Beach commercial buildings and modern homes. Systems engineered for ponding water management and Deerfield Beach inspection compliance.',
       icon: Building2,
-      path: '/flat-roofing'
+      path: '/flat-roofing/'
     }
   ];
 
@@ -141,10 +141,10 @@ export default function DeerfieldBeachPage() {
   ];
 
   const serviceAreas = [
-    { name: 'Boca Raton', path: '/locations/boca-raton' },
-    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
-    { name: 'Lighthouse Point', path: '/locations/lighthouse-point' },
-    { name: 'Delray Beach', path: '/locations/delray-beach' }
+    { name: 'Boca Raton', path: '/locations/boca-raton/' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach/' },
+    { name: 'Lighthouse Point', path: '/locations/lighthouse-point/' },
+    { name: 'Delray Beach', path: '/locations/delray-beach/' }
   ];
 
   const faqs = [
@@ -175,7 +175,7 @@ export default function DeerfieldBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -198,7 +198,7 @@ export default function DeerfieldBeachPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule a Roof Assessment
@@ -239,7 +239,7 @@ export default function DeerfieldBeachPage() {
                     Learn what to look for when selecting a roofer in the High Velocity Hurricane Zone. Our comprehensive guide covers HVHZ requirements, dual licensing, wind mitigation, insurance documentation, and the questions you should ask before signing a contract.
                   </p>
                   <Link
-                    to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor"
+                    to="/locations/deerfield-beach/how-to-hire-a-roofing-contractor/"
                     className="inline-flex items-center gap-2 text-white bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300"
                   >
                     <span>Read the Complete Hiring Guide</span>
@@ -254,10 +254,10 @@ export default function DeerfieldBeachPage() {
           <div className="mb-20">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Services Designed for <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Homes
+                Roofing Services Designed for <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Homes
               </h2>
               <p className="text-zinc-400 leading-relaxed text-lg">
-                All Phase Construction USA provides roofing systems engineered specifically for <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> properties, where municipal inspections, High Velocity Hurricane Zone (HVHZ) standards, and insurance carrier scrutiny demand precision. Our <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing process is built around local code enforcement, material performance, and long-term risk mitigation.
+                All Phase Construction USA provides roofing systems engineered specifically for <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> properties, where municipal inspections, High Velocity Hurricane Zone (HVHZ) standards, and insurance carrier scrutiny demand precision. Our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing process is built around local code enforcement, material performance, and long-term risk mitigation.
               </p>
             </div>
           </div>
@@ -266,10 +266,10 @@ export default function DeerfieldBeachPage() {
           <div className="mb-20">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roofing Permits, Inspections, and HVHZ Compliance
+                <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roofing Permits, Inspections, and HVHZ Compliance
               </h2>
               <p className="text-zinc-400 leading-relaxed text-lg">
-                Roofing work in <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> requires strict adherence to Broward County and municipal requirements. Our team manages <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing permits, inspection scheduling, and documentation to ensure every project passes inspection without delay. From underlayment selection to fastening patterns, our <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> installations are executed to meet HVHZ standards.
+                Roofing work in <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> requires strict adherence to Broward County and municipal requirements. Our team manages <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing permits, inspection scheduling, and documentation to ensure every project passes inspection without delay. From underlayment selection to fastening patterns, our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> installations are executed to meet HVHZ standards.
               </p>
             </div>
           </div>
@@ -278,7 +278,7 @@ export default function DeerfieldBeachPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roof Systems Approved for <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Conditions
+                Roof Systems Approved for <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Conditions
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -311,10 +311,10 @@ export default function DeerfieldBeachPage() {
           <div className="mb-20">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Insurance-Defensible Roofing for <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Properties
+                Insurance-Defensible Roofing for <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Properties
               </h2>
               <p className="text-zinc-400 leading-relaxed text-lg">
-                Insurance carriers evaluating <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofs require clear proof of compliance. Our <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing projects include photo documentation, permit records, fastening verification, and material approvals to support underwriting, claims, and wind mitigation reporting.
+                Insurance carriers evaluating <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofs require clear proof of compliance. Our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing projects include photo documentation, permit records, fastening verification, and material approvals to support underwriting, claims, and wind mitigation reporting.
               </p>
             </div>
           </div>
@@ -323,10 +323,10 @@ export default function DeerfieldBeachPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roofing Service Areas Near <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
+                Roofing Service Areas Near <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
               </h2>
               <p className="text-zinc-400 max-w-3xl mx-auto mb-8">
-                Our <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing operations extend outward to nearby communities, with <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> serving as the central inspection, permitting, and logistics hub.
+                Our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing operations extend outward to nearby communities, with <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> serving as the central inspection, permitting, and logistics hub.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-6">
@@ -341,7 +341,7 @@ export default function DeerfieldBeachPage() {
               ))}
             </div>
             <p className="text-zinc-500 text-center text-sm italic max-w-2xl mx-auto">
-              All service areas operate under the same <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link>-based standards, supervision, and documentation protocols.
+              All service areas operate under the same <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link>-based standards, supervision, and documentation protocols.
             </p>
           </div>
 
@@ -349,7 +349,7 @@ export default function DeerfieldBeachPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Why <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Homeowners Choose All Phase Construction USA
+                Why <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Homeowners Choose All Phase Construction USA
               </h2>
             </div>
             <div className="max-w-3xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
@@ -362,7 +362,7 @@ export default function DeerfieldBeachPage() {
                         <span key={i}>
                           {part}
                           {i < arr.length - 1 && (
-                            <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">
+                            <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">
                               Deerfield Beach
                             </Link>
                           )}
@@ -385,7 +385,7 @@ export default function DeerfieldBeachPage() {
           {/* FAQ SECTION */}
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roofing Questions from Homeowners
+              <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roofing Questions from Homeowners
             </h2>
             <div className="max-w-4xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
@@ -411,7 +411,7 @@ export default function DeerfieldBeachPage() {
                           <span key={i}>
                             {part}
                             {i < arr.length - 1 && (
-                              <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">
+                              <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">
                                 Deerfield Beach
                               </Link>
                             )}
@@ -428,14 +428,14 @@ export default function DeerfieldBeachPage() {
           {/* FINAL CTA */}
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Schedule a <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roof Assessment
+              Schedule a <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link> Roof Assessment
             </h2>
             <p className="text-zinc-300 text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
-              Schedule a comprehensive roof assessment with a <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing contractor who understands local code, inspections, and insurance requirements.
+              Schedule a comprehensive roof assessment with a <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline transition-colors">Deerfield Beach</Link> roofing contractor who understands local code, inspections, and insurance requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Assessment
