@@ -519,7 +519,7 @@ export default function TopRooferPageTemplate({ data }: TopRooferPageTemplatePro
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Request a Roof Evaluation

@@ -179,7 +179,7 @@ export default function Testimonials() {
 
         <div className="text-center">
           <a
-            href="/reviews"
+            href="/reviews/"
             className="inline-block px-8 py-3 border-2 border-red-600 text-red-600 font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors duration-300"
           >
             Read More Reviews
