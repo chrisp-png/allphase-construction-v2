@@ -117,76 +117,217 @@ export default function RoofInspectionPage() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Roof Inspection Services",
-      "serviceType": "Roof Inspection",
-      "description": "Professional roof inspection services in Broward and Palm Beach Counties. Comprehensive diagnostic evaluations for all roofing systems including tile, metal, flat, and shingle roofs.",
-      "url": "https://allphaseconstructionfl.com/roof-inspection",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
+      "@graph": [
         {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
+          "@type": "RoofingContractor",
+          "@id": "https://allphaseconstructionfl.com/#business",
+          "name": "All Phase Construction USA",
+          "url": "https://allphaseconstructionfl.com/",
+          "logo": "https://allphaseconstructionfl.com/ui-logo-320.webp",
+          "image": "https://allphaseconstructionfl.com/ui-logo-320.webp",
+          "telephone": "754-227-5605",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "590 Goolsby Blvd",
+            "addressLocality": "Deerfield Beach",
+            "addressRegion": "FL",
+            "postalCode": "33442",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://www.facebook.com/AllPhaseConstructionUsA",
+            "https://www.instagram.com/all_phase_construction_usa/",
+            "https://www.linkedin.com/company/all-phase-construction-usa-llc",
+            "https://www.google.com/maps/place/All+Phase+Construction+USA/@26.3087535,-80.3291243,11z/data=!4m6!3m5!1s0x88d91d982b569be1:0xc298661959b65cbf!8m2!3d26.3107856!4d-80.1251381!16s%2Fg%2F11c5045_rv?entry=ttu"
+          ],
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Broward County",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Palm Beach County",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Boca Raton",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Delray Beach",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Coral Springs",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Margate",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Fort Lauderdale",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "West Palm Beach",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Deerfield Beach",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            }
+          ]
         },
         {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the difference between a roof inspection and a free roof estimate?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A roof inspection is a diagnostic evaluation intended to identify conditions, failure mechanisms, and system performance. A free estimate is typically a pricing exercise based on visible symptoms and does not involve comprehensive diagnostic analysis."
+          "@type": "Service",
+          "@id": "https://allphaseconstructionfl.com/roof-inspection/#service",
+          "name": "Roof Inspection Services",
+          "serviceType": "Roof Inspection",
+          "description": "Professional roof inspection services in Broward and Palm Beach Counties. Comprehensive diagnostic evaluations for all roofing systems including tile, metal, flat, and shingle roofs. Licensed contractor assessments for insurance compliance, storm damage evaluation, and repair versus replacement decisions.",
+          "url": "https://allphaseconstructionfl.com/roof-inspection/",
+          "provider": {
+            "@id": "https://allphaseconstructionfl.com/#business"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Broward County",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Palm Beach County",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Boca Raton",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Delray Beach",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Coral Springs",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Margate",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "Fort Lauderdale",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            },
+            {
+              "@type": "City",
+              "name": "West Palm Beach",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://allphaseconstructionfl.com/roof-inspection/",
+            "availability": "https://schema.org/InStock"
           }
         },
         {
-          "@type": "Question",
-          "name": "Do I need a roof inspection before repairing a leak?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Roof leaks often originate far from the point where damage becomes visible. A professional inspection identifies the actual cause of water intrusion so repairs address the defect rather than the symptom."
+          "@type": "WebPage",
+          "@id": "https://allphaseconstructionfl.com/roof-inspection/#webpage",
+          "url": "https://allphaseconstructionfl.com/roof-inspection/",
+          "name": "Roof Inspection Services in Broward & Palm Beach County",
+          "isPartOf": {
+            "@id": "https://allphaseconstructionfl.com/#business"
+          },
+          "about": {
+            "@id": "https://allphaseconstructionfl.com/roof-inspection/#service"
           }
         },
         {
-          "@type": "Question",
-          "name": "How long does a professional roof inspection take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most roof inspections take between 60 and 90 minutes, depending on roof size, system complexity, and accessibility. Additional time may be required for documentation and analysis."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will a roof inspection tell me if I need repair or replacement?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. A professional roof inspection evaluates material condition, attachment integrity, and remaining service life to determine whether repair is technically sufficient or full replacement is warranted."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are roof inspections used for insurance or underwriting purposes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In many cases, yes. Inspection documentation may be used to support insurance evaluations, underwriting decisions, or post-storm damage assessments, depending on insurer requirements."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should a roof be professionally inspected?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most roofing systems should be inspected every one to two years, and after major storm events, to identify developing issues before they result in failure."
-          }
+          "@type": "FAQPage",
+          "@id": "https://allphaseconstructionfl.com/roof-inspection/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the difference between a roof inspection and a free roof estimate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A roof inspection is a diagnostic evaluation intended to identify conditions, failure mechanisms, and system performance. A free estimate is typically a pricing exercise based on visible symptoms and does not involve comprehensive diagnostic analysis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a roof inspection before repairing a leak?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Roof leaks often originate far from the point where damage becomes visible. A professional inspection identifies the actual cause of water intrusion so repairs address the defect rather than the symptom."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a professional roof inspection take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most roof inspections take between 60 and 90 minutes, depending on roof size, system complexity, and accessibility. Additional time may be required for documentation and analysis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will a roof inspection tell me if I need repair or replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A professional roof inspection evaluates material condition, attachment integrity, and remaining service life to determine whether repair is technically sufficient or full replacement is warranted."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are roof inspections used for insurance or underwriting purposes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In many cases, yes. Inspection documentation may be used to support insurance evaluations, underwriting decisions, or post-storm damage assessments, depending on insurer requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often should a roof be professionally inspected?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most roofing systems should be inspected every one to two years, and after major storm events, to identify developing issues before they result in failure."
+              }
+            }
+          ]
         }
       ]
     }
