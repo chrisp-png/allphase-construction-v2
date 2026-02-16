@@ -265,7 +265,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/roof-cost-calculator" element={<CalculatorPage />} />
-            <Route path="/calculator" element={<Navigate to="/roof-cost-calculator" replace />} />
+            <Route path="/calculator" element={<Navigate to="/roof-cost-calculator/" replace />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about-us" element={<AboutPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />

@@ -443,7 +443,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
-                  href="/contact"
+                  href="/contact/"
                   className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
                 >
                   <Calendar className="w-5 h-5" />

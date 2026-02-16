@@ -242,13 +242,13 @@ export default function CaseStudy() {
 
         <div className="text-center flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="/roof-cost-calculator"
+            href="/roof-cost-calculator/"
             className="inline-block px-8 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-lg"
           >
             Calculate Your Roof's ROI
           </a>
           <a
-            href="/roof-replacement-process"
+            href="/roof-replacement-process/"
             className="inline-block px-8 py-3 border-2 border-red-600 text-red-600 font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors duration-300"
           >
             See Our 10-Step Roof Replacement Process

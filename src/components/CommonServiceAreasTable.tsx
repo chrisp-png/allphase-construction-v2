@@ -88,7 +88,7 @@ export default function CommonServiceAreasTable() {
             Don't see your city listed? We serve many more communities across Broward and Palm Beach Counties.
           </p>
           <Link
-            to="/locations/service-areas"
+            to="/locations/service-areas/"
             className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
           >
             View All Service Areas

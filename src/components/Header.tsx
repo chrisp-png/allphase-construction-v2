@@ -27,85 +27,85 @@ export default function Header() {
 
   // Residential-specific services (includes Roof Replacement Process)
   const residentialServices = [
-    { name: 'Roof Replacement Process', path: '/roof-replacement-process' },
-    { name: 'Tile Roofing', path: '/tile-roofing' },
-    { name: 'Metal Roofing', path: '/metal-roofing' },
-    { name: 'Shingle Roofing', path: '/shingle-roofing' },
-    { name: 'Built-Up Roofing (BUR)', path: '/flat-roofing' },
+    { name: 'Roof Replacement Process', path: '/roof-replacement-process/' },
+    { name: 'Tile Roofing', path: '/tile-roofing/' },
+    { name: 'Metal Roofing', path: '/metal-roofing/' },
+    { name: 'Shingle Roofing', path: '/shingle-roofing/' },
+    { name: 'Built-Up Roofing (BUR)', path: '/flat-roofing/' },
     {
       name: 'Single-Ply Roofing',
-      path: '/single-ply-roofing',
+      path: '/single-ply-roofing/',
       hasSubmenu: false
     },
   ];
 
   // Material-based services that appear under Commercial
   const materialBasedServices = [
-    { name: 'Tile Roofing', path: '/tile-roofing' },
-    { name: 'Metal Roofing', path: '/metal-roofing' },
-    { name: 'Shingle Roofing', path: '/shingle-roofing' },
-    { name: 'Built-Up Roofing (BUR)', path: '/flat-roofing' },
+    { name: 'Tile Roofing', path: '/tile-roofing/' },
+    { name: 'Metal Roofing', path: '/metal-roofing/' },
+    { name: 'Shingle Roofing', path: '/shingle-roofing/' },
+    { name: 'Built-Up Roofing (BUR)', path: '/flat-roofing/' },
     {
       name: 'Single-Ply Roofing',
-      path: '/single-ply-roofing',
+      path: '/single-ply-roofing/',
       hasSubmenu: false
     },
   ];
 
   const roofTypes = [
-    { name: 'Roof Inspection', path: '/roof-inspection' },
+    { name: 'Roof Inspection', path: '/roof-inspection/' },
     {
       name: 'Roof Repair',
-      path: '/roof-repair',
+      path: '/roof-repair/',
       hasSubmenu: true,
       submenu: [
-        { name: 'Boca Raton', path: '/roof-repair/boca-raton' },
-        { name: 'Boynton Beach', path: '/roof-repair/boynton-beach' },
-        { name: 'Broward County', path: '/roof-repair/broward-county' },
-        { name: 'Coconut Creek', path: '/roof-repair/coconut-creek' },
-        { name: 'Cooper City', path: '/roof-repair/cooper-city' },
-        { name: 'Coral Springs', path: '/roof-repair/coral-springs' },
-        { name: 'Dania Beach', path: '/roof-repair/dania-beach' },
-        { name: 'Davie', path: '/roof-repair/davie' },
-        { name: 'Deerfield Beach', path: '/roof-repair/deerfield-beach' },
-        { name: 'Delray Beach', path: '/roof-repair/delray-beach' },
-        { name: 'Greenacres', path: '/roof-repair/greenacres' },
-        { name: 'Hallandale Beach', path: '/roof-repair/hallandale-beach' },
-        { name: 'Haverhill', path: '/roof-repair/haverhill' },
-        { name: 'Hollywood', path: '/roof-repair/hollywood' },
-        { name: 'Lake Worth Beach', path: '/roof-repair/lake-worth' },
-        { name: 'Lantana', path: '/roof-repair/lantana' },
-        { name: 'Palm Beach', path: '/roof-repair/palm-beach' },
-        { name: 'Palm Beach County', path: '/roof-repair/palm-beach-county' },
-        { name: 'Palm Beach County Unincorporated', path: '/roof-repair/palm-beach-county-unincorporated' },
-        { name: 'Parkland', path: '/roof-repair/parkland' },
-        { name: 'Pompano Beach', path: '/roof-repair/pompano-beach' },
-        { name: 'Sunrise', path: '/roof-repair/sunrise' },
-        { name: 'Wellington', path: '/roof-repair/wellington' },
-        { name: 'West Palm Beach', path: '/roof-repair/west-palm-beach' },
-        { name: 'Wilton Manors', path: '/roof-repair/wilton-manors' },
+        { name: 'Boca Raton', path: '/roof-repair/boca-raton/' },
+        { name: 'Boynton Beach', path: '/roof-repair/boynton-beach/' },
+        { name: 'Broward County', path: '/roof-repair/broward-county/' },
+        { name: 'Coconut Creek', path: '/roof-repair/coconut-creek/' },
+        { name: 'Cooper City', path: '/roof-repair/cooper-city/' },
+        { name: 'Coral Springs', path: '/roof-repair/coral-springs/' },
+        { name: 'Dania Beach', path: '/roof-repair/dania-beach/' },
+        { name: 'Davie', path: '/roof-repair/davie/' },
+        { name: 'Deerfield Beach', path: '/roof-repair/deerfield-beach/' },
+        { name: 'Delray Beach', path: '/roof-repair/delray-beach/' },
+        { name: 'Greenacres', path: '/roof-repair/greenacres/' },
+        { name: 'Hallandale Beach', path: '/roof-repair/hallandale-beach/' },
+        { name: 'Haverhill', path: '/roof-repair/haverhill/' },
+        { name: 'Hollywood', path: '/roof-repair/hollywood/' },
+        { name: 'Lake Worth Beach', path: '/roof-repair/lake-worth/' },
+        { name: 'Lantana', path: '/roof-repair/lantana/' },
+        { name: 'Palm Beach', path: '/roof-repair/palm-beach/' },
+        { name: 'Palm Beach County', path: '/roof-repair/palm-beach-county/' },
+        { name: 'Palm Beach County Unincorporated', path: '/roof-repair/palm-beach-county-unincorporated/' },
+        { name: 'Parkland', path: '/roof-repair/parkland/' },
+        { name: 'Pompano Beach', path: '/roof-repair/pompano-beach/' },
+        { name: 'Sunrise', path: '/roof-repair/sunrise/' },
+        { name: 'Wellington', path: '/roof-repair/wellington/' },
+        { name: 'West Palm Beach', path: '/roof-repair/west-palm-beach/' },
+        { name: 'Wilton Manors', path: '/roof-repair/wilton-manors/' },
       ]
     },
     {
       name: 'Residential Roofing',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       hasSubmenu: true,
       submenu: residentialServices
     },
     {
       name: 'Commercial Roofing',
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       hasSubmenu: true,
       submenu: materialBasedServices
     },
-    { name: 'Roof Maintenance Programs', path: '/roof-maintenance-programs' },
+    { name: 'Roof Maintenance Programs', path: '/roof-maintenance-programs/' },
   ];
 
   const learningCenter = [
-    { name: 'Roof Cost Calculator', path: '/roof-cost-calculator' },
-    { name: 'Pricing Guide', path: '/pricing-guide' },
-    { name: 'Financing Options', path: '/easy-payments' },
-    { name: 'Education Hub', path: '/blog' },
+    { name: 'Roof Cost Calculator', path: '/roof-cost-calculator/' },
+    { name: 'Pricing Guide', path: '/pricing-guide/' },
+    { name: 'Financing Options', path: '/easy-payments/' },
+    { name: 'Education Hub', path: '/blog/' },
   ];
 
   return (
@@ -274,7 +274,7 @@ export default function Header() {
               <div className="absolute top-full left-0 mt-2 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="relative group/item">
                   <Link
-                    to="/locations/deerfield-beach"
+                    to="/locations/deerfield-beach/"
                     className="flex items-center justify-between px-4 py-3 text-white hover:bg-red-600 transition-colors cursor-pointer first:rounded-t-lg last:rounded-b-lg"
                   >
                     <span>Deerfield Beach</span>
@@ -282,13 +282,13 @@ export default function Header() {
                   </Link>
                   <div className="absolute left-full top-0 ml-1 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-200">
                     <Link
-                      to="/locations/service-areas"
+                      to="/locations/service-areas/"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg"
                     >
                       Service Areas
                     </Link>
                     <Link
-                      to="/how-to-hire-roofing-contractor"
+                      to="/how-to-hire-roofing-contractor/"
                       className="block px-4 py-3 text-white hover:bg-red-600 transition-colors last:rounded-b-lg"
                     >
                       How to Hire a Roofer
@@ -320,7 +320,7 @@ export default function Header() {
               </div>
             </div>
 
-            <Link to="/about-us" className="text-white hover:text-red-600 transition-colors font-medium text-base whitespace-nowrap">
+            <Link to="/about-us/" className="text-white hover:text-red-600 transition-colors font-medium text-base whitespace-nowrap">
               About
             </Link>
           </nav>
@@ -485,21 +485,21 @@ export default function Header() {
               {isLocationsOpen && (
                 <div className="pl-4 mt-2 space-y-2">
                   <Link
-                    to="/locations/deerfield-beach"
+                    to="/locations/deerfield-beach/"
                     className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Deerfield Beach
                   </Link>
                   <Link
-                    to="/locations/service-areas"
+                    to="/locations/service-areas/"
                     className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Service Areas
                   </Link>
                   <Link
-                    to="/how-to-hire-roofing-contractor"
+                    to="/how-to-hire-roofing-contractor/"
                     className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -535,7 +535,7 @@ export default function Header() {
               )}
             </div>
 
-            <Link to="/about-us" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/about-us/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               About
             </Link>
 

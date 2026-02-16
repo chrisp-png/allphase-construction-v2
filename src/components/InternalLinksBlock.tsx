@@ -32,34 +32,34 @@ export default function InternalLinksBlock({
   const coreServices: InternalLink[] = showCoreServices ? [
     {
       label: 'Roof Repair Services',
-      path: '/roof-repair',
+      path: '/roof-repair/',
       description: 'Expert roof repair throughout South Florida'
     },
     {
       label: 'Residential Roofing',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       description: 'Complete residential roof replacement'
     },
     {
       label: 'Roof Inspection',
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       description: 'Professional roof inspection services'
     },
     {
       label: 'Commercial Roofing',
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       description: 'Commercial roofing solutions'
     }
   ] : [];
 
   // Major cities - show if no specific nearby cities provided
   const majorCities: InternalLink[] = showNearbyCities && nearbyCities.length === 0 ? [
-    { label: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
-    { label: 'Boca Raton', path: '/locations/boca-raton' },
-    { label: 'West Palm Beach', path: '/locations/west-palm-beach' },
-    { label: 'Pompano Beach', path: '/locations/pompano-beach' },
-    { label: 'Coral Springs', path: '/locations/coral-springs' },
-    { label: 'Delray Beach', path: '/locations/delray-beach' }
+    { label: 'Fort Lauderdale', path: '/locations/fort-lauderdale/' },
+    { label: 'Boca Raton', path: '/locations/boca-raton/' },
+    { label: 'West Palm Beach', path: '/locations/west-palm-beach/' },
+    { label: 'Pompano Beach', path: '/locations/pompano-beach/' },
+    { label: 'Coral Springs', path: '/locations/coral-springs/' },
+    { label: 'Delray Beach', path: '/locations/delray-beach/' }
   ] : [];
 
   const allLinks = [
@@ -112,7 +112,7 @@ export default function InternalLinksBlock({
         <div className="mt-6 pt-6 border-t border-gray-700">
           <p className="text-gray-400 text-sm">
             Serving {currentCity} and surrounding communities with professional roofing services.
-            <Link to="/contact" className="text-red-600 hover:text-red-500 ml-1">
+            <Link to="/contact/" className="text-red-600 hover:text-red-500 ml-1">
               Contact us for a free estimate →
             </Link>
           </p>
