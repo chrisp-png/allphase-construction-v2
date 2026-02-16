@@ -77,37 +77,37 @@ export default function ParklandPage() {
     {
       title: 'Tile Roofing',
       description: "The signature look of Parkland homes. We install concrete and clay tile roofs with foam adhesive and proper underlayment for maximum wind resistance.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "A premium choice for Parkland's luxury homes. Metal roofs offer 50+ year lifespans, energy efficiency, and modern aesthetics.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "High-quality architectural shingles for Parkland homes. We install HVHZ-rated products with proper ventilation and underlayment.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Modern Parkland homes with contemporary flat roof designs. TPO, PVC, and modified bitumen systems.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Extending the life of premium Parkland roofs. We also provide 5-year certification letters for qualifying roofs to maintain insurance coverage.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Office buildings, medical facilities, and commercial properties throughout Parkland and the surrounding area.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -151,12 +151,12 @@ export default function ParklandPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl' }
+    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
+    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
+    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' },
+    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
+    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
+    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' }
   ];
 
   const faqs = [
@@ -195,11 +195,11 @@ export default function ParklandPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -242,7 +242,7 @@ export default function ParklandPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Parkland
@@ -272,7 +272,7 @@ export default function ParklandPage() {
                 Most Parkland homes were built from the 1990s onward, with construction standards that reflect the community's quality expectations. These homes often feature tile roofs, complex architectural details, and larger footprints that require experienced contractors.
               </p>
               <p>
-                When your roof shows signs of aging or damage, schedule a <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to evaluate underlayment and tile condition, a <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to assess panel integrity and fasteners, or a <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial properties to identify membrane issues before leaks develop.
+                When your roof shows signs of aging or damage, schedule a <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to evaluate underlayment and tile condition, a <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to assess panel integrity and fasteners, or a <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial properties to identify membrane issues before leaks develop.
               </p>
             </div>
           </div>
@@ -470,7 +470,7 @@ export default function ParklandPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -525,7 +525,7 @@ export default function ParklandPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
