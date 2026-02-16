@@ -214,15 +214,19 @@ export default function RoofInspectionPage() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Professional Roof Inspection Services in{' '}
+            Roof Inspection Services in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
-              Palm Beach County & Broward County, Florida
+              Broward & Palm Beach County
             </span>
           </h1>
 
           {/* Subhead */}
-          <p className="text-xl text-zinc-300 leading-relaxed mb-8 max-w-4xl">
+          <p className="text-xl text-zinc-300 leading-relaxed mb-6 max-w-4xl">
             Diagnostic roof evaluations performed by licensed roofing contractors. Evidence-based assessments to determine condition, identify deficiencies, and provide the information needed to make informed decisions about repair versus replacement.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-8 max-w-4xl">
+            All Phase Construction USA provides residential and commercial roof inspection services throughout Broward County and Palm Beach County, including major cities such as Boca Raton, Delray Beach, Coral Springs, Margate, and surrounding communities.
           </p>
 
           {/* CTA Buttons */}
@@ -792,7 +796,7 @@ export default function RoofInspectionPage() {
             </li>
             <li className="flex gap-3 text-zinc-300">
               <span className="text-red-600 mt-1">•</span>
-              <span>Insurance documentation or underwriting requirements</span>
+              <span>Insurance documentation, wind mitigation inspection reports, or underwriting requirements</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
               <span className="text-red-600 mt-1">•</span>
@@ -1381,6 +1385,61 @@ export default function RoofInspectionPage() {
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Roof Inspection Services in Broward County and Palm Beach County */}
+      <section className="py-20 bg-zinc-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12">
+            Roof Inspection Services in Broward County and Palm Beach County
+          </h2>
+
+          <div className="space-y-12">
+            {/* Broward County Roof Inspection */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-white">
+                Broward County Roof Inspection
+              </h3>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Roof inspection Broward County services must address the county's position within Florida's High Velocity Hurricane Zone, which imposes enhanced wind resistance requirements beyond standard Florida Building Code provisions. Broward County encompasses municipalities from Fort Lauderdale to Coral Springs, all subject to HVHZ fastening schedules, material approval protocols, and installation methods designed for 175 mph wind exposure. Licensed contractors performing roof inspection in Broward County verify compliance with these provisions, assess wind mitigation features for insurance credit eligibility, and document attachment integrity for systems installed under current and prior code cycles.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Coastal exposure affects roofing systems differently than inland installations, even within the same county. Properties within one mile of the Atlantic Ocean experience accelerated deterioration from salt-laden air, UV radiation intensified by reflective water surfaces, and higher sustained wind loads during tropical weather events. Commercial roof inspection protocols for Broward County warehouses and retail centers evaluate flat roof membrane performance, parapet wall securement, and rooftop equipment attachment—all critical failure points during hurricane-force wind events documented in post-storm forensic analyses.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                Insurance carriers operating in Broward County increasingly require wind mitigation inspection reports documenting roof-to-wall connection methods, roof deck attachment, roof covering type and attachment, secondary water resistance, and opening protection. These mitigation features directly affect premium calculations under Florida's residential property insurance framework. Residential roof inspection services in Broward County provide the documentation necessary to support mitigation credits while simultaneously identifying deficiencies that may affect policy renewals for older roof systems approaching the 15-20 year threshold where coverage becomes difficult to obtain.
+              </p>
+            </div>
+
+            {/* Palm Beach County Roof Inspection */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-white">
+                Palm Beach County Roof Inspection
+              </h3>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Roof inspection Palm Beach County encompasses municipalities from Boca Raton through Wellington, Jupiter, and coastal communities along 47 miles of Atlantic shoreline. While portions of southern Palm Beach County fall within the High Velocity Hurricane Zone, northern areas follow standard Florida Building Code wind load provisions—creating variation in installation requirements based on project location. Professional inspections account for these jurisdictional differences when evaluating code compliance, particularly for properties constructed near the HVHZ boundary where installation standards change significantly over short distances.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Palm Beach County maintains robust permit oversight and inspection protocols for roofing work, requiring licensed contractors to demonstrate code knowledge and installation competence through the permitting process. Commercial roof inspection services evaluate whether existing roof systems meet current standards for drainage, structural attachment, and fire resistance classification. Properties considering significant repairs must understand Florida Building Code Section 706 requirements, which historically mandated full replacement when repairs exceeded 25% of a roof section. However, Florida Statute 553.844(5) now exempts roofs permitted after March 1, 2009, from this provision—allowing repairs of any size provided the repaired area complies with current code.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                Storm preparedness represents a practical consideration for Palm Beach County property owners. Hurricane season extends from June through November, with peak activity occurring August through October when sea surface temperatures support tropical development. Roof inspection services identify vulnerable components before hurricane warnings are issued—loose tiles, deteriorating flashings, inadequate fastening, and compromised penetrations that become critical failure points during sustained wind events. The repair versus replacement evaluation considers both current condition and the roof system's ability to withstand future storm exposure without catastrophic failure requiring emergency tarping and interior restoration.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-zinc-950 border-l-4 border-red-600 p-8 rounded-r-lg">
+            <p className="text-lg text-zinc-300 leading-relaxed">
+              Regional code requirements, coastal exposure conditions, and insurance documentation standards vary between Broward County and Palm Beach County. Our dual-licensed contractors (CGC-1526236 and CCC-1331464) maintain current knowledge of jurisdiction-specific provisions and perform inspections appropriate for the property's location, construction date, and roofing system type.
+            </p>
           </div>
         </div>
       </section>
