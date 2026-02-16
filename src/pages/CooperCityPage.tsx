@@ -117,37 +117,37 @@ export default function CooperCityPage() {
     {
       title: 'Tile Roofing',
       description: "Concrete and clay tile roofs are extremely popular in Cooper City's upscale neighborhoods. We install them to HVHZ standards with proper adhesive and fastening.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Standing seam metal roofs that last 50+ years. Increasingly popular with Cooper City homeowners seeking long-term value.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "High-wind rated architectural shingles that meet HVHZ requirements. Common throughout Cooper City's residential areas.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "TPO, PVC, and modified bitumen systems for Cooper City's commercial properties and modern homes.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Professional repairs that extend roof life and may qualify for 5-year certification letters under Florida law.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Serving Cooper City's commercial properties along Stirling Road and Griffin Road.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -191,12 +191,12 @@ export default function CooperCityPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Davie', path: '/roofing-contractor-davie-fl' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl' },
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl' },
-    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl' }
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
+    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
+    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
+    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl/' }
   ];
 
   const faqs = [
@@ -231,11 +231,11 @@ export default function CooperCityPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -275,7 +275,7 @@ export default function CooperCityPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Cooper City
@@ -305,7 +305,7 @@ export default function CooperCityPage() {
                 <li>Preventative maintenance to extend roof life and reduce leak risk</li>
               </ul>
               <p className="pt-4">
-                Explore our services: <Link to="/roofing-services/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link> · <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing</Link> · <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link> · <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing</Link>
+                Explore our services: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link> · <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing</Link> · <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link> · <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing</Link>
               </p>
             </div>
           </div>
@@ -317,13 +317,13 @@ export default function CooperCityPage() {
             <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
               <ul className="space-y-3 text-zinc-400 leading-relaxed">
                 <li>
-                  Learn what to expect during a replacement: <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Replacement</Link>
+                  Learn what to expect during a replacement: <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Replacement</Link>
                 </li>
                 <li>
-                  Need a fast fix for a leak: <Link to="/roofing-services/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link>
+                  Need a fast fix for a leak: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link>
                 </li>
                 <li>
-                  Not sure what you need yet: <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link>
+                  Not sure what you need yet: <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link>
                 </li>
               </ul>
             </div>
@@ -479,7 +479,7 @@ export default function CooperCityPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -515,7 +515,7 @@ export default function CooperCityPage() {
                 <span className="font-semibold text-white">Quick link:</span> How much does a roof cost in Cooper City?
               </p>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
               >
                 Request Financing Information
@@ -563,7 +563,7 @@ export default function CooperCityPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

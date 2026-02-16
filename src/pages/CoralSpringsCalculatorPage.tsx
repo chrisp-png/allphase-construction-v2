@@ -104,11 +104,11 @@ export default function CoralSpringsCalculatorPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/service-area/coral-springs" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/coral-springs/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Coral Springs
             </Link>
             <span className="text-zinc-600">/</span>
@@ -155,7 +155,7 @@ export default function CoralSpringsCalculatorPage() {
                 Contact us to discuss financing options and payment plans for your roofing project.
               </p>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
               >
                 Request Financing Information
@@ -170,13 +170,13 @@ export default function CoralSpringsCalculatorPage() {
             <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
               <ul className="space-y-3 text-zinc-400 leading-relaxed">
                 <li>
-                  Schedule a roof inspection: <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-inspection</Link>
+                  Schedule a roof inspection: <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-inspection</Link>
                 </li>
                 <li>
-                  Roof replacement services: <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-replacement</Link>
+                  Roof replacement services: <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-replacement</Link>
                 </li>
                 <li>
-                  Roof repair services: <Link to="/roofing-services/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-repair</Link>
+                  Roof repair services: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-repair</Link>
                 </li>
               </ul>
             </div>
@@ -231,7 +231,7 @@ export default function CoralSpringsCalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
