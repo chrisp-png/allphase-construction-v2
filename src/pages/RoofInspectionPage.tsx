@@ -214,9 +214,9 @@ export default function RoofInspectionPage() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Roof Inspection Services in{' '}
+            Professional Roof Inspection Services in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
-              Broward & Palm Beach County
+              Palm Beach County & Broward County, Florida
             </span>
           </h1>
 
@@ -321,7 +321,7 @@ export default function RoofInspectionPage() {
             A professional roof inspection is a systematic, evidence-based diagnostic evaluation of a roof system performed to identify material degradation, structural vulnerabilities, moisture intrusion pathways, and code compliance issues. Unlike visual walk-throughs, a true inspection assesses how the roof performs as an integrated system under wind, water, and thermal stress conditions.
           </p>
 
-          <ul className="space-y-3 text-lg text-zinc-300">
+          <ul className="space-y-3 text-lg text-zinc-300 mb-8">
             <li className="flex items-start gap-3">
               <span className="text-red-600 mt-1">•</span>
               <span>Roofing material condition and failure patterns</span>
@@ -355,6 +355,18 @@ export default function RoofInspectionPage() {
               <span>Photographic documentation for engineering, insurance, or remediation use</span>
             </li>
           </ul>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+            A roof repair inspection evaluates isolated deficiencies to determine whether targeted intervention can restore system performance without full replacement. This diagnostic process assesses the extent of damage, identifies root causes, and estimates remaining service life after correction. When leaks, material failures, or fastening deficiencies are limited in scope, a repair or replace inspection determines whether the cost and longevity of repairs justify preserving the existing system.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+            A roof replacement inspection, by contrast, documents conditions that indicate system-level failure requiring complete removal and reinstallation. This evaluation identifies widespread material degradation, structural inadequacy, or code compliance deficiencies that cannot be economically corrected through targeted repairs. The findings establish whether long-term cost efficiency favors preserving an aging system or investing in a new installation with extended service life and warranty protection.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed">
+            Residential roof inspection protocols differ from commercial roof inspection requirements due to variations in system complexity, accessibility, and regulatory oversight. Residential inspections typically evaluate steep-slope systems with tile, shingle, or metal assemblies, focusing on attic ventilation, fastening adequacy, and HVHZ compliance for single-family applications. Commercial roof inspection procedures address low-slope or flat membrane systems, structural load distribution, internal drainage networks, and life-safety requirements for multi-occupant buildings.
+          </p>
         </div>
       </section>
 
@@ -369,7 +381,7 @@ export default function RoofInspectionPage() {
             A professional roof inspection is designed to identify both visible and hidden conditions that affect roof performance, lifespan, and insurability. These findings are evaluated as part of a system, not isolated symptoms.
           </p>
 
-          <ul className="space-y-3 text-lg text-zinc-300">
+          <ul className="space-y-3 text-lg text-zinc-300 mb-8">
             <li className="flex items-start gap-3">
               <span className="text-red-600 mt-1">•</span>
               <span>Material wear, aging, and manufacturing failure indicators</span>
@@ -395,6 +407,22 @@ export default function RoofInspectionPage() {
               <span>Conditions that may require repair versus full replacement</span>
             </li>
           </ul>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+            <strong className="text-white">Shingle roof inspection</strong> findings commonly include granule loss patterns indicating UV degradation, seal failure causing wind uplift risk, nail placement deficiencies, and inadequate starter strip installation. South Florida's intense solar exposure accelerates shingle deterioration, making periodic inspection essential for identifying premature aging.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+            <strong className="text-white">Tile roof inspection</strong> procedures evaluate underlayment integrity beneath intact tiles, mortar deterioration at hips and ridges, tile breakage from thermal stress or impact, and foam adhesive coverage required for wind mitigation inspection compliance. Concealed underlayment failure often occurs years before visible tile damage becomes apparent.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+            <strong className="text-white">Flat roof inspection</strong> protocols address membrane seam integrity, ponding water accumulation, drainage obstruction, parapet wall flashing failure, and substrate moisture infiltration not detectable from interior examination. Low-slope systems require specialized diagnostic techniques to identify trapped moisture and membrane delamination.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed">
+            Wind-related vulnerabilities constitute a primary concern for roof inspection in Palm Beach County and roof inspection in Broward County due to hurricane exposure and HVHZ code requirements. Inspections evaluate fastening patterns, edge securement, hip and ridge attachment, penetration sealing, and uplift resistance to identify deficiencies that compromise wind performance during severe weather events.
+          </p>
         </div>
       </section>
 
@@ -409,7 +437,7 @@ export default function RoofInspectionPage() {
             Roof inspections, repairs, and replacements serve different purposes and should not be conflated. An inspection is a diagnostic process, while repair and replacement are corrective actions based on documented findings.
           </p>
 
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto mb-8">
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b border-zinc-700">
@@ -464,6 +492,10 @@ export default function RoofInspectionPage() {
               </tbody>
             </table>
           </div>
+
+          <p className="text-lg text-zinc-300 leading-relaxed">
+            The distinction between a roof repair inspection and a roof replacement inspection directly influences permitting scope and code compliance requirements in Palm Beach County and Broward County. When inspection findings document isolated deficiencies affecting less than 25% of a roof section, targeted repairs may proceed under repair permits with limited code upgrade obligations. Conversely, when a roof replacement inspection identifies system-level failure requiring complete removal, full compliance with current Florida Building Code provisions becomes mandatory, including HVHZ fastening standards, underlayment specifications, and edge securement details that differ substantially from older installations.
+          </p>
         </div>
       </section>
 
