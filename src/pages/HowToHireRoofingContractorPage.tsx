@@ -217,9 +217,9 @@ export default function HowToHireRoofingContractorPage() {
             <nav className="flex items-center space-x-2 text-sm text-zinc-400 mb-8">
               <Link to="/" className="hover:text-red-600 transition-colors">Home</Link>
               <ChevronRight className="w-4 h-4" />
-              <Link to="/locations" className="hover:text-red-600 transition-colors">Locations</Link>
+              <Link to="/locations/" className="hover:text-red-600 transition-colors">Locations</Link>
               <ChevronRight className="w-4 h-4" />
-              <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
+              <Link to="/locations/deerfield-beach/" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">How to Hire a Roofing Contractor in South Florida</span>
             </nav>

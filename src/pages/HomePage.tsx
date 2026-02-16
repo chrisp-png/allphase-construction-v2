@@ -568,7 +568,7 @@ export default function HomePage() {
                     {/* Roof Replacement */}
                     <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
                       <td className="px-6 py-4">
-                        <a href="/roof-replacement-process" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                        <a href="/roof-replacement-process/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Roof Replacement
                         </a>
                       </td>
@@ -583,7 +583,7 @@ export default function HomePage() {
                     {/* Roof Repair */}
                     <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
                       <td className="px-6 py-4">
-                        <a href="/roof-repair" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                        <a href="/roof-repair/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Roof Repair
                         </a>
                       </td>
@@ -613,7 +613,7 @@ export default function HomePage() {
                     {/* Tile Roofing */}
                     <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
                       <td className="px-6 py-4">
-                        <a href="/tile-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                        <a href="/tile-roofing/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Tile Roofing
                         </a>
                       </td>
@@ -628,7 +628,7 @@ export default function HomePage() {
                     {/* Metal Roofing */}
                     <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
                       <td className="px-6 py-4">
-                        <a href="/metal-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                        <a href="/metal-roofing/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Metal Roofing
                         </a>
                       </td>
@@ -643,7 +643,7 @@ export default function HomePage() {
                     {/* Flat Roofing */}
                     <tr className="border-b border-gray-700/50 hover:bg-gray-800/50 transition-colors duration-200">
                       <td className="px-6 py-4">
-                        <a href="/flat-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                        <a href="/flat-roofing/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Flat Roofing
                         </a>
                         <span className="text-gray-400 text-sm block mt-1">(TPO/PVC/EPDM)</span>
@@ -659,7 +659,7 @@ export default function HomePage() {
                     {/* Inspections & Maintenance */}
                     <tr className="hover:bg-gray-800/50 transition-colors duration-200">
                       <td className="px-6 py-4">
-                        <a href="/roof-inspection" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
+                        <a href="/roof-inspection/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Inspections & Maintenance
                         </a>
                       </td>

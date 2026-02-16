@@ -70,37 +70,37 @@ export default function HollywoodPage() {
     {
       title: 'Tile Roofing',
       description: "Classic tile roofing for Hollywood's Mediterranean and Spanish-style architecture. Built for coastal conditions and HVHZ wind requirements.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Corrosion-resistant metal roofing ideal for Hollywood's salt air environment. Energy efficient with 50+ year performance.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "High-wind architectural shingles for Hollywood's diverse neighborhoods — from beachside to downtown. HVHZ compliant and built to last.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Commercial flat roofing throughout Hollywood's business districts. TPO, PVC, and modified bitumen for retail, office, and industrial properties.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Extending roof life for Hollywood properties with targeted repairs and restoration. 5-year certification letters when roofs qualify.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Full-service commercial roofing from Hollywood Beach to the western neighborhoods. Buildings of all sizes and types.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -144,12 +144,12 @@ export default function HollywoodPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Hallandale Beach', path: '/roofing-contractor-hallandale-beach-fl' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl' },
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl' },
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl' },
-    { name: 'Aventura', path: '/roofing-contractor-aventura-fl' }
+    { name: 'Hallandale Beach', path: '/roofing-contractor-hallandale-beach-fl/' },
+    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' },
+    { name: 'Aventura', path: '/roofing-contractor-aventura-fl/' }
   ];
 
   const faqs = [
@@ -188,11 +188,11 @@ export default function HollywoodPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -235,7 +235,7 @@ export default function HollywoodPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Hollywood
@@ -262,7 +262,7 @@ export default function HollywoodPage() {
                 We've worked throughout Hollywood for over 20 years — from beachfront homes along the Broadwalk to historic properties downtown, from high-rise condos on Hollywood Beach to family homes in the western neighborhoods near Pembroke Pines. Each area has different roofing needs, and we bring the right approach to every project.
               </p>
               <p>
-                Hollywood's building stock ranges from 1920s Mediterranean Revival homes requiring <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">specialized tile roof inspection</Link> to assess historic materials, to beachfront properties needing <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to detect salt air corrosion, to modern commercial buildings benefiting from <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> to identify membrane deterioration early.
+                Hollywood's building stock ranges from 1920s Mediterranean Revival homes requiring <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">specialized tile roof inspection</Link> to assess historic materials, to beachfront properties needing <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to detect salt air corrosion, to modern commercial buildings benefiting from <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> to identify membrane deterioration early.
               </p>
               <p>
                 Whether you own a beachfront condo, a downtown historic home, or a suburban property near the Hard Rock, we have the experience and materials to protect your investment.
@@ -414,7 +414,7 @@ export default function HollywoodPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -469,7 +469,7 @@ export default function HollywoodPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
