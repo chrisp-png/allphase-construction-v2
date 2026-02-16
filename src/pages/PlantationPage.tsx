@@ -70,37 +70,37 @@ export default function PlantationPage() {
     {
       title: 'Tile Roofing',
       description: "Concrete and clay tile installations for Plantation homes. We use foam adhesive and proper underlayment for maximum hurricane protection.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Standing seam and metal shingle systems for Plantation properties. Energy efficient, durable, and built to last 50+ years.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "The most popular choice for Plantation homes. We install HVHZ-rated architectural shingles designed to withstand Florida's extreme weather.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Commercial buildings and modern residential designs throughout Plantation. TPO, PVC, and built-up roofing systems.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Keeping Plantation roofs functional longer. We provide 5-year certification letters for qualifying roofs to help maintain insurance coverage.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Retail centers, office parks, and commercial properties throughout Plantation — from University Drive to the Sawgrass Expressway.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -144,12 +144,12 @@ export default function PlantationPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl' },
-    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl' },
-    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl' }
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
+    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl/' },
+    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
+    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' },
+    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' }
   ];
 
   const faqs = [
@@ -188,11 +188,11 @@ export default function PlantationPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -235,7 +235,7 @@ export default function PlantationPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Plantation
@@ -262,7 +262,7 @@ export default function PlantationPage() {
                 Located about 10 miles from our Deerfield Beach headquarters, Plantation has been one of our core service areas for over two decades. We've worked throughout the city — from the established neighborhoods near Plantation Central Park to the homes along Pine Island Road and the developments near the Sawgrass Expressway.
               </p>
               <p>
-                Many Plantation homes were built between the 1960s and 1980s, which means they're at the age where original roofs are reaching end of life. When your roof shows signs of aging or storm damage, schedule a <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspection</Link> to evaluate underlayment condition beneath tile, a <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic metal roof inspection</Link> to assess panel integrity, or a <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> to identify membrane deterioration early.
+                Many Plantation homes were built between the 1960s and 1980s, which means they're at the age where original roofs are reaching end of life. When your roof shows signs of aging or storm damage, schedule a <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspection</Link> to evaluate underlayment condition beneath tile, a <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic metal roof inspection</Link> to assess panel integrity, or a <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> to identify membrane deterioration early.
               </p>
               <p>
                 Plantation residents value quality and reliability. That's exactly what we deliver — no shortcuts, no surprises, just solid roofing work.
@@ -414,7 +414,7 @@ export default function PlantationPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -469,7 +469,7 @@ export default function PlantationPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

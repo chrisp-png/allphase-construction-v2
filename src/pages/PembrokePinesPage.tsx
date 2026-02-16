@@ -70,37 +70,37 @@ export default function PembrokePinesPage() {
     {
       title: 'Tile Roofing',
       description: "Popular throughout Pembroke Pines neighborhoods. We install concrete and clay tiles with proper underlayment and foam adhesive for maximum wind uplift resistance.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "A growing choice for Pembroke Pines homeowners seeking longevity and energy efficiency. Built to last 50+ years.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "The most common roof type in Pembroke Pines. We install HVHZ-rated architectural shingles designed for Florida's climate.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Commercial buildings and modern residential properties throughout Pembroke Pines. TPO, PVC, and modified bitumen systems.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Extending roof lifespan for Pembroke Pines properties. We can provide 5-year certification letters for qualifying roofs to maintain insurance coverage.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Retail centers, office buildings, and commercial properties along Pines Boulevard and throughout the city.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -144,12 +144,12 @@ export default function PembrokePinesPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl' },
-    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl' },
-    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl' }
+    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' },
+    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl/' },
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
+    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
+    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl/' },
+    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' }
   ];
 
   const faqs = [
@@ -188,11 +188,11 @@ export default function PembrokePinesPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -235,7 +235,7 @@ export default function PembrokePinesPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Pembroke Pines
@@ -262,7 +262,7 @@ export default function PembrokePinesPage() {
                 Located about 20 miles from our Deerfield Beach headquarters, Pembroke Pines has been one of our most active service areas for over two decades. We've worked throughout the city — from the established neighborhoods near Pembroke Lakes Mall to the newer developments in Chapel Trail and Silver Lakes.
               </p>
               <p>
-                Much of Pembroke Pines was built during the explosive growth period of the 1980s and 1990s. These homes are now reaching the age where original roofs need replacement. Before making decisions, schedule a <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic tile roof inspection</Link> to assess remaining service life, a <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional metal roof inspection</Link> for energy-efficient metal systems, or a <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> for commercial properties and modern homes.
+                Much of Pembroke Pines was built during the explosive growth period of the 1980s and 1990s. These homes are now reaching the age where original roofs need replacement. Before making decisions, schedule a <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic tile roof inspection</Link> to assess remaining service life, a <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional metal roof inspection</Link> for energy-efficient metal systems, or a <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> for commercial properties and modern homes.
               </p>
               <p>
                 Pembroke Pines is a community where families put down roots. We make sure those roots stay protected from the top down.
@@ -414,7 +414,7 @@ export default function PembrokePinesPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -469,7 +469,7 @@ export default function PembrokePinesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
