@@ -175,7 +175,7 @@ export default function SinglePlyRoofingPage() {
               Home
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/commercial-roofing" className="hover:text-red-500 transition-colors">
+            <Link to="/commercial-roofing/" className="hover:text-red-500 transition-colors">
               Commercial Roofing
             </Link>
             <ChevronRight className="w-4 h-4" />
@@ -198,7 +198,7 @@ export default function SinglePlyRoofingPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
               Request Roof Assessment
@@ -913,7 +913,7 @@ export default function SinglePlyRoofingPage() {
             </p>
           </div>
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30"
           >
             Get Your Free Commercial Roof Assessment
@@ -935,7 +935,7 @@ export default function SinglePlyRoofingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
               Request Free Assessment

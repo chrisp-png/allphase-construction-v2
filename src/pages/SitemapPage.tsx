@@ -143,7 +143,7 @@ export default function SitemapPage() {
           <p className="text-sm text-zinc-500">
             Looking for the XML sitemap?{' '}
             <a
-              href="/sitemap.xml"
+              href="/sitemap.xml/"
               className="text-red-500 hover:text-red-400 inline-flex items-center gap-1 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

@@ -70,12 +70,12 @@ export default function ServiceAreasPage() {
     }));
 
   const services = [
-    { name: 'Tile Roofing', path: '/tile-roofing', icon: Home },
-    { name: 'Metal Roofing', path: '/metal-roofing', icon: Shield },
-    { name: 'Shingle Roofing', path: '/shingle-roofing', icon: Home },
-    { name: 'Flat Roofing', path: '/flat-roofing', icon: Building2 },
-    { name: 'Roof Repair & Restoration', path: '/roofing-services/roof-repair', icon: Wrench },
-    { name: 'Commercial Roofing', path: '/commercial-roofing', icon: Building2 }
+    { name: 'Tile Roofing', path: '/tile-roofing/', icon: Home },
+    { name: 'Metal Roofing', path: '/metal-roofing/', icon: Shield },
+    { name: 'Shingle Roofing', path: '/shingle-roofing/', icon: Home },
+    { name: 'Flat Roofing', path: '/flat-roofing/', icon: Building2 },
+    { name: 'Roof Repair & Restoration', path: '/roofing-services/roof-repair/', icon: Wrench },
+    { name: 'Commercial Roofing', path: '/commercial-roofing/', icon: Building2 }
   ];
 
   const whyLocalReasons = [
@@ -120,7 +120,7 @@ export default function ServiceAreasPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
@@ -294,7 +294,7 @@ export default function ServiceAreasPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
