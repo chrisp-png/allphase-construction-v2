@@ -580,16 +580,53 @@ export default function BocaRatonPage() {
                   <p className="text-zinc-300 text-lg leading-relaxed">
                     We are committed to transparent pricing, ensuring you receive clear and upfront cost information for your roofing project. A professional quote should always be itemized and specify material brands, labor costs, permit fees, and timelines so you know exactly what to expect.
                   </p>
+
+                  <h3 className="text-xl font-bold text-white mt-8 mb-4">
+                    Big drivers of roof cost:
+                  </h3>
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-start gap-3 text-zinc-300">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span>Roof size and pitch</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-zinc-300">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span>Material choice (shingle vs tile vs metal vs flat)</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-zinc-300">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span>Tear-off layers and deck condition</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-zinc-300">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span>Permits and inspections</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-zinc-300">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span>Ventilation upgrades and flashing complexity</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-zinc-300">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span>Hurricane-rated enhancements and fastening requirements</span>
+                    </li>
+                  </ul>
+
+                  <h3 className="text-xl font-bold text-white mb-4">
+                    Realistic Florida price context (ranges, not hype)
+                  </h3>
+                  <p className="text-zinc-300 text-lg leading-relaxed">
+                    Industry sources commonly cite Florida roof replacement pricing that varies widely by material and scope, and many calculators show higher statewide averages for full replacements on typical homes.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
-                Service Areas
+                Service areas: Boca Raton plus Palm Beach and Broward County
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-8">
-                We serve Boca Raton plus surrounding areas in Palm Beach and Broward County, including Deerfield Beach, Delray Beach, Boynton Beach, Pompano Beach, Fort Lauderdale, and more.
+                We serve Boca Raton and the surrounding region with the same process: inspect, document, scope, permit, install, and close out clean. Protecting your house with reliable roofing solutions is our priority in every community we serve, ensuring your home and its occupants are safe and secure.
               </p>
             </div>
 
