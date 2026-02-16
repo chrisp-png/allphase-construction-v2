@@ -921,6 +921,129 @@ export default function RoofInspectionPage() {
         </div>
       </section>
 
+      {/* Residential and Commercial Roof Inspection Services */}
+      <section className="py-20 bg-zinc-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12">
+            Residential and Commercial Roof Inspection Services
+          </h2>
+
+          <div className="space-y-12">
+            {/* Residential Roof Inspection */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-white">
+                Residential Roof Inspection
+              </h3>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Residential roof inspection services address the specific requirements of single-family homes, townhomes, and HOA-governed communities throughout Palm Beach County and Broward County. Single-family properties typically feature either tile, shingle, or metal roofing systems, each requiring material-specific evaluation protocols. Inspections assess roof covering condition, underlayment integrity where accessible, flashing performance at all penetrations and transitions, and compliance with High Velocity Hurricane Zone fastening requirements for properties south of the Martin County line.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Townhome inspections present unique considerations due to shared roof assemblies and multi-unit construction. Association-maintained roofing systems may involve scheduled replacement cycles that affect individual unit owners differently depending on their location within the structure. Documentation of localized deficiencies versus systemic failures becomes critical when determining whether repairs fall under individual or association responsibility. Our inspections clearly delineate unit-specific issues from structure-wide concerns.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                HOA communities often require roof inspection documentation for architectural review committee approval before repairs or replacements proceed. These inspections verify that proposed work addresses actual deficiencies rather than cosmetic preferences, support capital reserve planning for association-maintained structures, and provide independent third-party evaluation when disputes arise between owners and management regarding necessity of work.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-8">
+                The repair versus replacement evaluation constitutes a critical component of residential inspections. Age alone does not determine whether replacement becomes necessary—material condition, attachment integrity, and remaining service life drive the recommendation. A properly maintained concrete tile roof may provide 50+ years of service, while a neglected asphalt shingle system might fail within 15 years. Our assessment considers both current condition and projected longevity to support informed decision-making rather than predetermined sales outcomes.
+              </p>
+
+              <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-8">
+                <h4 className="text-xl font-bold text-white mb-4">
+                  Residential Inspection Scope Includes
+                </h4>
+                <ul className="space-y-3 text-zinc-300">
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Single-family home roof systems of all material types (tile, shingle, metal, flat)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Townhome and condominium unit inspections with shared structure considerations</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>HOA architectural review documentation and reserve study support</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Repair feasibility analysis versus full replacement cost-benefit evaluation</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Insurance certification under Florida Statute 627.7011(5) for remaining useful life documentation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Commercial Roof Inspection */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-white">
+                Commercial Roof Inspection
+              </h3>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Commercial roof inspection services accommodate the diverse roofing systems found on retail centers, office buildings, warehouses, multi-family complexes, and institutional facilities across Broward County and Palm Beach County. Low-slope and flat roof systems dominate commercial construction, with modified bitumen, thermoplastic polyolefin (TPO), and built-up roofing (BUR) representing the most common assemblies in South Florida's climate.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Modified bitumen inspection evaluates seam integrity, surface granule retention, blister formation, and fastener performance. These torch-applied or cold-adhesive systems commonly develop localized failures at penetrations and terminations before widespread deterioration occurs. Early detection through scheduled inspections prevents minor deficiencies from escalating into emergency leak scenarios requiring extensive interior restoration in addition to roof repair.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                TPO and single-ply membrane systems require assessment of heat-welded or chemically bonded seam strength, mechanical fastener backup, and edge securement performance. These lightweight systems perform well in Florida's climate but demand proper installation to achieve their design service life. Inspections identify premature failures attributable to installation deficiencies versus normal weathering, supporting warranty claims when applicable and guiding repair specifications when warranty coverage does not apply.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Commercial properties with tile and shingle roofing—common on multi-structure apartment complexes and mixed-use developments—require evaluation across multiple buildings with potentially different installation dates and condition states. Our inspections document building-by-building condition, prioritize structures requiring immediate attention, and provide multi-year planning recommendations that support capital budgeting and reserve allocation for portfolio owners and property management companies.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-8">
+                Preventative maintenance inspections represent a critical service for commercial property owners seeking to maximize roof system longevity and avoid unexpected capital expenditures. Biannual or annual scheduled inspections identify minor deficiencies before they cause leaks, document condition trends over time, support insurance compliance requirements, and provide the factual basis for budget forecasting. Properties under 10-20 year roof warranties often require documented maintenance to preserve coverage—scheduled inspections satisfy these obligations while simultaneously protecting the owner's investment.
+              </p>
+
+              <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-8">
+                <h4 className="text-xl font-bold text-white mb-4">
+                  Commercial Inspection Scope Includes
+                </h4>
+                <ul className="space-y-3 text-zinc-300">
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Flat and low-slope roof systems: modified bitumen, TPO, EPDM, and built-up roofing</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Multi-structure commercial complexes with varied roof types and installation dates</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Tile and shingle apartment buildings requiring building-by-building assessment</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Preventative maintenance inspection programs with scheduled recurring evaluations</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-red-600 mt-1">•</span>
+                    <span>Warranty compliance documentation and capital planning support for property managers</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-zinc-950 border-l-4 border-red-600 p-8 rounded-r-lg">
+            <p className="text-lg text-zinc-300 leading-relaxed">
+              Whether you require residential roof inspection in Palm Beach County for a single-family home or commercial roof inspection in Broward County for a multi-building retail center, our licensed contractors provide material-specific expertise, code compliance knowledge, and documentation appropriate for insurance certification, due diligence, or maintenance planning purposes.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Licensed Contractors Matter */}
       <section className="py-20 bg-zinc-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
