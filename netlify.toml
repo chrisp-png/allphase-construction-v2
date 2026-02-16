@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-      command = "npx vite build && node scripts/prerender-static.mjs"
+  command = "npx vite build && node scripts/prerender-static.mjs"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -29,6 +29,7 @@ package = "netlify-plugin-cache"
 package = "@netlify/plugin-lighthouse"
 
 [plugins.inputs]
+
 [[plugins.inputs.audits]]
 path = "/"
 output_path = "reports/lighthouse-home.html"
@@ -146,11 +147,11 @@ status = 200
 # Serve ALL prerendered location pages (wildcard after Deerfield Beach)
 # Netlify checks static files in dist/ first; this redirect ensures clean URLs resolve
 [[redirects]]
-  from = "/locations/*"
-  to = "/locations/:splat/index.html"
-  status = 200
+ from = "/locations/*"
+ to = "/locations/:splat/index.html"
+ status = 200
 
-  # Roof repair city pages - whitelist (serve prerendered HTML)
+ # Roof repair city pages - whitelist (serve prerendered HTML)
 [[redirects]]
 from = "/roof-repair/boca-raton"
 to = "/roof-repair/boca-raton/index.html"
@@ -265,6 +266,7 @@ from = "/roof-repair/"
 to = "/index.html"
 status = 200
 force = true
+
 # Catch-all: redirect all other roof-repair city pages to /roof-repair/
 [[redirects]]
 from = "/roof-repair/*"
@@ -280,5 +282,5 @@ status = 200
 [[headers]]
   for = "/robots.txt"
   [headers.values]
-    Content-Type = "text/plain"
-    Cache-Control = "public, max-age=3600"
+  Content-Type = "text/plain"
+  Cache-Control = "public, max-age=3600"
