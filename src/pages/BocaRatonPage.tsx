@@ -346,6 +346,11 @@ export default function BocaRatonPage() {
                   <span>Storm and hurricane damage assessments</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <span>Preventive maintenance for aging roofs</span>
+                </li>
+              </ul>
+
             <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
               <h3 className="text-3xl font-bold text-white mb-8">
                 Quick Service Fit Guide
@@ -397,12 +402,7 @@ export default function BocaRatonPage() {
                 </table>
               </div>
             </div>
-
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Preventive maintenance for aging roofs</span>
-                </li>
-              </ul>
-            </div>
+          </div>
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-6">
