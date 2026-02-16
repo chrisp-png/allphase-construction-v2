@@ -1199,8 +1199,71 @@ export default function RoofInspectionPage() {
         </div>
       </section>
 
-      {/* Roof Inspection FAQs */}
+      {/* Wind Mitigation and Code Compliance Inspections */}
       <section className="py-20 bg-zinc-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8">
+            Wind Mitigation and Code Compliance Inspections
+          </h2>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+            A wind mitigation inspection differs from a standard roof inspection in scope and purpose. Standard inspections evaluate overall condition, material degradation, and service life remaining. Wind mitigation inspections specifically document construction features that reduce wind damage risk under Florida's uniform mitigation verification form (OIR-B1-1802). These inspections focus exclusively on code-compliant features that qualify for insurance premium discounts rather than comprehensive condition assessment.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+            Insurance carriers in Florida provide premium discounts for documented wind-resistant features, with reductions ranging from 10% to 45% depending on the specific construction attributes verified. Properties with proper roof-to-wall connections, secondary water resistance barriers, enhanced roof deck attachment, and compliant opening protection can achieve substantial annual savings. Citizens Property Insurance Corporation and private carriers both recognize wind mitigation reports completed by licensed inspectors, making these inspections cost-effective investments for most homeowners.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+            Florida Building Code requirements have evolved significantly since 1994, with particularly stringent provisions introduced for construction after 2002 when the current code was adopted. Properties built under older code editions may lack features now required for new construction—including enhanced fastening schedules, impact-resistant materials, and secondary water barriers. Understanding which code edition governed original construction helps property owners identify retrofit opportunities that improve both storm performance and insurance eligibility.
+          </p>
+
+          <p className="text-lg text-zinc-300 leading-relaxed mb-8">
+            Properties in Palm Beach County and Broward County face heightened scrutiny due to High Velocity Hurricane Zone designation, which imposes fastening requirements and material approvals exceeding standard Florida Building Code provisions. Wind mitigation inspections in these jurisdictions must verify HVHZ-specific installation methods, including tile foam adhesive coverage percentages, metal roof clip spacing, and enhanced edge securement. Demonstrating compliance with these elevated standards maximizes available premium discounts and documents risk reduction for underwriters.
+          </p>
+
+          <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-8">
+            <h3 className="text-xl font-bold text-white mb-6">
+              Wind Mitigation Inspection Components
+            </h3>
+            <ul className="space-y-4 text-lg text-zinc-300">
+              <li className="flex items-start gap-3">
+                <span className="text-red-600 mt-1">•</span>
+                <div>
+                  <strong className="text-white">Roof-to-wall connections:</strong> Evaluation of attachment method (clips, toe-nails, single wraps, or double wraps) and documentation of uplift resistance
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-red-600 mt-1">•</span>
+                <div>
+                  <strong className="text-white">Secondary water resistance:</strong> Verification of sealed roof deck or self-adhering polymer-modified bitumen underlayment beneath primary roofing
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-red-600 mt-1">•</span>
+                <div>
+                  <strong className="text-white">Deck attachment:</strong> Assessment of fastener spacing between roof deck and supporting structure (6-inch vs 6d/8d spacing)
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-red-600 mt-1">•</span>
+                <div>
+                  <strong className="text-white">Opening protection:</strong> Documentation of impact-rated windows, shutters, or opening protection systems meeting current code
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-red-600 mt-1">•</span>
+                <div>
+                  <strong className="text-white">Roof covering age and compliance:</strong> Confirmation of installation date and adherence to Florida Product Approval standards for wind resistance
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Roof Inspection FAQs */}
+      <section className="py-20 bg-zinc-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-12">
             Roof Inspection FAQs
