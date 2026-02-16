@@ -500,30 +500,66 @@ export default function BocaRatonPage() {
               <h2 className="text-3xl font-bold text-white mb-6">
                 Roof Replacement in Boca Raton FL
               </h2>
-              <p className="text-zinc-300 leading-relaxed mb-6">
-                Roof replacements are system builds, not surface swaps. We install:
+
+              <div className="mb-8 bg-gradient-to-r from-red-900/30 to-red-800/20 border-l-4 border-red-500 p-6 rounded-r-lg">
+                <div className="flex items-start gap-4">
+                  <AlertTriangle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="text-white font-bold text-lg mb-2">Critical Issue</h4>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Wind-driven rain finds weak flashing near roof penetrations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Roof replacement in Boca Raton FL: systems, materials, and wind performance
+              </h3>
+
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                A roof replacement is not "just shingles." In South Florida, the system details matter as much as the surface. Statewide Windows & Doors takes a unique approach to roof replacement by tailoring solutions to each property, ensuring optimal results. Professional installation is crucial to ensure the quality, durability, and energy efficiency of your new roof, providing long-lasting protection for your home. Compared to others, Statewide Windows & Doors provides professional roof replacement services that enhance both property value and safety. Quality roofing installation also requires skilled professionals who are familiar with local building codes and regulations.
               </p>
 
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Architectural shingles</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Clay and concrete tile</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Metal roofing systems</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Flat roofing membranes</span>
-                </li>
-              </ul>
+              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                When selecting roofing materials, it's important to choose options that offer lasting protection and energy efficiency. Metal roofs are known for their exceptional durability and can enhance the strength of your home, providing value for decades. Tile roofing systems are commonly used in South Florida because they withstand harsh weather conditions, while concrete tiles are a top-rated material in Boca Raton, FL, thanks to their impressive 50+ year lifespan. Asphalt shingles remain one of the more affordable roofing options available, making them a popular choice for many homeowners.
+              </p>
 
-              <p className="text-zinc-300 leading-relaxed">
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse bg-zinc-900/50 rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-zinc-800/80 border-b border-zinc-700">
+                      <th className="text-left p-4 text-white font-bold text-lg">Roofing material</th>
+                      <th className="text-left p-4 text-white font-bold text-lg">Best for</th>
+                      <th className="text-left p-4 text-white font-bold text-lg">Strengths in Boca Raton</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-zinc-800/50 hover:bg-zinc-800/30 transition-colors">
+                      <td className="p-4 text-red-400 font-semibold">Architectural shingles</td>
+                      <td className="p-4 text-zinc-300">Budget-to-mid projects</td>
+                      <td className="p-4 text-zinc-300">Fast installs, good value, broad color options</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800/50 hover:bg-zinc-800/30 transition-colors">
+                      <td className="p-4 text-red-400 font-semibold">Tile (clay or concrete)</td>
+                      <td className="p-4 text-zinc-300">Many South FL homes</td>
+                      <td className="p-4 text-zinc-300">Long life, strong curb appeal, great heat performance</td>
+                    </tr>
+                    <tr className="border-b border-zinc-800/50 hover:bg-zinc-800/30 transition-colors">
+                      <td className="p-4 text-red-400 font-semibold">Metal roofing</td>
+                      <td className="p-4 text-zinc-300">Storm-focused owners</td>
+                      <td className="p-4 text-zinc-300">High wind performance, longevity, energy benefits</td>
+                    </tr>
+                    <tr className="hover:bg-zinc-800/30 transition-colors">
+                      <td className="p-4 text-red-400 font-semibold">Flat roofing systems</td>
+                      <td className="p-4 text-zinc-300">Commercial and modern homes</td>
+                      <td className="p-4 text-zinc-300">Seam control, drainage solutions, durable membranes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p className="text-zinc-300 text-lg leading-relaxed italic">
                 High-wind-rated systems are available when appropriate.
               </p>
             </div>
