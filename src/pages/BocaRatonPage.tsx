@@ -255,60 +255,66 @@ export default function BocaRatonPage() {
               alt="Roof deck inspection during Boca Raton roof replacement by All Phase Construction USA"
             />
 
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-white mb-6">
+            <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
+              <h2 className="text-4xl font-bold text-white mb-6">
                 Roofing Company in Boca Raton FL with a "Show-You" Inspection Process
               </h2>
-              <p className="text-zinc-300 leading-relaxed mb-6">
+              <p className="text-zinc-300 text-lg leading-relaxed mb-10">
                 Most roof problems are invisible from the driveway. Our inspection is designed to reduce guesswork and help you make a clean decision.
               </p>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                What you get from a real roof inspection:
-              </h3>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Photos of key roof areas</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Clear notes on what is failed vs. what is aging</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Recommendations matched to the roof's condition and your timeline</span>
-                </li>
-              </ul>
+              <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 mb-8">
+                <h3 className="text-2xl font-bold text-white mb-6">
+                  What you get from a real roof inspection:
+                </h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-4 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                    <span className="text-lg">Photos of key roof areas (edges, penetrations, valleys, transitions)</span>
+                  </li>
+                  <li className="flex items-start gap-4 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                    <span className="text-lg">Clear notes on what is failed vs what is aging</span>
+                  </li>
+                  <li className="flex items-start gap-4 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                    <span className="text-lg">A recommendation that matches the roof's condition and your timeline</span>
+                  </li>
+                </ul>
+              </div>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Repair vs Replacement (how we decide):
-              </h3>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>A roof can be repaired when the system is stable and failures are isolated</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>A roof should be replaced when the system is at end-of-life or failing in multiple zones</span>
-                </li>
-              </ul>
+              <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">
+                  Repair vs Replacement (how we decide):
+                </h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-4 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                    <span className="text-lg">A roof can be repaired when the system is stable and failures are isolated</span>
+                  </li>
+                  <li className="flex items-start gap-4 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                    <span className="text-lg">A roof should be replaced when the system is at end-of-life or failing in multiple zones</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-white mb-6">
+            <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
+              <h2 className="text-4xl font-bold text-white mb-8">
                 About All Phase Construction USA
               </h2>
-              <p className="text-zinc-300 leading-relaxed mb-4">
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
                 All Phase Construction USA is a Florida roofing contractor based in Deerfield Beach, serving Boca Raton and the surrounding region with repairs, replacements, and inspections.
               </p>
-              <p className="text-zinc-300 leading-relaxed mb-4">
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
                 We operate like a builder, not a sales script. You get direct oversight, clear scope, and a roof system designed for South Florida weather.
               </p>
-              <p className="text-zinc-300 leading-relaxed mb-8">
-                <strong>Find us:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442
-              </p>
+              <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 inline-block">
+                <p className="text-zinc-300 text-lg">
+                  <strong className="text-white">Find us:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442
+                </p>
+              </div>
             </div>
 
             <div className="mb-16">
