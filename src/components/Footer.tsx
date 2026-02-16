@@ -407,9 +407,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pt-2 mt-2 border-t border-neutral-800">
-                <a href="/sitemap.html#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium">
+                <Link to="/sitemap#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium">
                   View All Cities →
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -489,9 +489,9 @@ export default function Footer() {
                 Accessibility
               </Link>
               <span>|</span>
-              <a href="/sitemap.html" className="hover:text-red-600 transition-colors">
+              <Link to="/sitemap" className="hover:text-red-600 transition-colors">
                 Sitemap
-              </a>
+              </Link>
             </div>
           </div>
         </div>
