@@ -449,12 +449,15 @@ export default function BocaRatonPage() {
               <h2 className="text-3xl font-bold text-white mb-6">
                 Roof Repair in Boca Raton FL
               </h2>
-              <p className="text-zinc-300 leading-relaxed mb-6">
-                Speed matters—but correctness matters more. A rushed patch often becomes a repeat leak.
+              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                If you need roof repair in Boca Raton, speed matters, but correctness matters more. Even leaving roof damage unaddressed for just one day can lead to more complex problems. A rushed patch often becomes a repeat leak.
+              </p>
+              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                Maintaining your roof is essential for ongoing protection against harsh weather and storm damage, especially in South Florida. Premium roofing materials can enhance your home's curb appeal. A comprehensive roofing project includes not only installation but also ongoing maintenance to ensure longevity. Regular maintenance allows homeowners to rest assured that their roof is in good condition, providing peace of mind and long-term security for your home.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-4">
-                Common repairs we handle:
+                Common Repairs We Handle in Boca Raton
               </h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
