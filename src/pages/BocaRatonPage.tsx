@@ -145,11 +145,11 @@ export default function BocaRatonPage() {
 
             <div className="prose prose-invert max-w-none mb-12">
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That is what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community.
+                If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That is what we build. As a leading boca raton roofing company with deep local expertise, we understand the unique needs of homes and businesses in this area. Our commitment to quality, customer satisfaction, care, and safety standards sets us apart as a trusted member of the local community.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                All Phase Construction USA is a licensed Florida roofing contractor—fully insured and bonded for your peace of mind. We are proud to have an expert team of professional roofers dedicated to delivering reliable, high-quality workmanship. Our team takes pride in serving the Boca Raton community and building lasting relationships with our customers.
+                All Phase Construction USA is a licensed Florida roofing contractor—fully insured and bonded for your peace of mind. As your neighbors in the Boca Raton community, we value building strong local relationships and supporting our fellow residents. We are proud to have an expert team of professional roofers, and all roofing work is performed by our own employees to ensure consistent quality and reliability. With many years of experience, our team delivers reliable, high-quality workmanship that benefits every customer. Our team takes pride in serving the Boca Raton community and building lasting relationships with our customers.
               </p>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-6">
