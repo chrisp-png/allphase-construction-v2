@@ -346,6 +346,58 @@ export default function BocaRatonPage() {
                   <span>Storm and hurricane damage assessments</span>
                 </li>
                 <li className="flex items-start gap-3 text-zinc-300">
+            <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
+              <h3 className="text-3xl font-bold text-white mb-8">
+                Quick Service Fit Guide
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="border-b border-zinc-700">
+                      <th className="text-left py-5 px-6 text-lg font-semibold text-white">Service</th>
+                      <th className="text-left py-5 px-6 text-lg font-semibold text-white">Best for</th>
+                      <th className="text-left py-5 px-6 text-lg font-semibold text-red-500">Typical outcome</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-zinc-800 hover:bg-zinc-900/50 transition-colors">
+                      <td className="py-6 px-6">
+                        <span className="text-lg font-medium text-white">Roof inspection</span>
+                      </td>
+                      <td className="py-6 px-6">
+                        <span className="text-zinc-300">Leaks, stains, insurance letters, "something feels off"</span>
+                      </td>
+                      <td className="py-6 px-6">
+                        <span className="text-zinc-300">Photos + options + next steps; well-managed project assessment with attention to detail throughout the project lifecycle</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-zinc-800 hover:bg-zinc-900/50 transition-colors">
+                      <td className="py-6 px-6">
+                        <span className="text-lg font-medium text-white">Roof repair</span>
+                      </td>
+                      <td className="py-6 px-6">
+                        <span className="text-zinc-300">Localized damage, flashing issues, minor storm damage</span>
+                      </td>
+                      <td className="py-6 px-6">
+                        <span className="text-zinc-300">Stop leaks and extend roof life; each repair project is handled with expertise and careful project management</span>
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-zinc-900/50 transition-colors">
+                      <td className="py-6 px-6">
+                        <span className="text-lg font-medium text-white">Roof replacement</span>
+                      </td>
+                      <td className="py-6 px-6">
+                        <span className="text-zinc-300">Widespread wear, recurring leaks, failed underlayment</span>
+                      </td>
+                      <td className="py-6 px-6">
+                        <span className="text-zinc-300">New system, updated code, warranty; comprehensive project oversight ensures customer satisfaction at every stage</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <span>Preventive maintenance for aging roofs</span>
                 </li>
