@@ -58,30 +58,162 @@
 /roof-inspection/boca-raton-county /roof-inspection/ 301
 /roof-inspection/boynton-beach-county /roof-inspection/ 301
 
-# Roof repair city pages - whitelist (serve via SPA)
-/roof-repair/boca-raton /index.html 200!
-/roof-repair/coral-springs /index.html 200!
-/roof-repair/lake-worth-beach /index.html 200!
-/roof-repair/boynton-beach /index.html 200!
-/roof-repair/delray-beach /index.html 200!
-/roof-repair/fort-lauderdale /index.html 200!
-/roof-repair/west-palm-beach /index.html 200!
-/roof-repair/deerfield-beach /index.html 200!
-/roof-repair/coconut-creek /index.html 200!
-/roof-repair/parkland /index.html 200!
-/roof-repair/pompano-beach /index.html 200!
-/roof-repair/hollywood /index.html 200!
-/roof-repair/plantation /index.html 200!
-/roof-repair/lauderhill /index.html 200!
-/roof-repair/lake-worth /index.html 200!
-/roof-repair/wellington /index.html 200!
-/roof-repair/tamarac /index.html 200!
+# ═══════════════════════════════════════════════════════════════════════════
+# TRAILING SLASH ENFORCEMENT - Redirect no-slash to trailing-slash
+# ═══════════════════════════════════════════════════════════════════════════
 
-# Serve /roof-repair/ hub page via SPA (prevent catch-all loop)
-/roof-repair /index.html 200!
-/roof-repair/ /index.html 200!
+# Roof repair city pages - redirect no-slash to trailing-slash (KEY MONEY LIST)
+/roof-repair/boca-raton            /roof-repair/boca-raton/ 301!
+/roof-repair/coral-springs         /roof-repair/coral-springs/ 301!
+/roof-repair/lake-worth-beach      /roof-repair/lake-worth-beach/ 301!
+/roof-repair/boynton-beach         /roof-repair/boynton-beach/ 301!
+/roof-repair/delray-beach          /roof-repair/delray-beach/ 301!
+/roof-repair/fort-lauderdale       /roof-repair/fort-lauderdale/ 301!
+/roof-repair/west-palm-beach       /roof-repair/west-palm-beach/ 301!
+/roof-repair/deerfield-beach       /roof-repair/deerfield-beach/ 301!
+/roof-repair/coconut-creek         /roof-repair/coconut-creek/ 301!
+/roof-repair/parkland              /roof-repair/parkland/ 301!
+/roof-repair/pompano-beach         /roof-repair/pompano-beach/ 301!
+/roof-repair/hollywood             /roof-repair/hollywood/ 301!
+/roof-repair/plantation            /roof-repair/plantation/ 301!
+/roof-repair/lauderhill            /roof-repair/lauderhill/ 301!
+/roof-repair/lake-worth            /roof-repair/lake-worth/ 301!
+/roof-repair/wellington            /roof-repair/wellington/ 301!
+/roof-repair/tamarac               /roof-repair/tamarac/ 301!
+
+# Serve roof repair city pages with trailing slash (KEY MONEY LIST)
+/roof-repair/boca-raton/           /index.html 200!
+/roof-repair/coral-springs/        /index.html 200!
+/roof-repair/lake-worth-beach/     /index.html 200!
+/roof-repair/boynton-beach/        /index.html 200!
+/roof-repair/delray-beach/         /index.html 200!
+/roof-repair/fort-lauderdale/      /index.html 200!
+/roof-repair/west-palm-beach/      /index.html 200!
+/roof-repair/deerfield-beach/      /index.html 200!
+/roof-repair/coconut-creek/        /index.html 200!
+/roof-repair/parkland/             /index.html 200!
+/roof-repair/pompano-beach/        /index.html 200!
+/roof-repair/hollywood/            /index.html 200!
+/roof-repair/plantation/           /index.html 200!
+/roof-repair/lauderhill/           /index.html 200!
+/roof-repair/lake-worth/           /index.html 200!
+/roof-repair/wellington/           /index.html 200!
+/roof-repair/tamarac/              /index.html 200!
+
+# Serve /roof-repair/ hub page via SPA
+/roof-repair                       /roof-repair/ 301!
+/roof-repair/                      /index.html 200!
 
 # Catch-all: redirect all other roof-repair city pages to /roof-repair/
-/roof-repair/* /roof-repair 301!
+/roof-repair/*                     /roof-repair/ 301!
 
+# ═══════════════════════════════════════════════════════════════════════════
+# UNIVERSAL TRAILING SLASH REDIRECTS (Catch-all for all other paths)
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Redirect /roof-inspection (no slash) to /roof-inspection/
+/roof-inspection                   /roof-inspection/ 301!
+
+# Redirect /roof-inspection/{city} (no slash) to /roof-inspection/{city}/
+/roof-inspection/boca-raton        /roof-inspection/boca-raton/ 301!
+/roof-inspection/boynton-beach     /roof-inspection/boynton-beach/ 301!
+/roof-inspection/coconut-creek     /roof-inspection/coconut-creek/ 301!
+/roof-inspection/coral-springs     /roof-inspection/coral-springs/ 301!
+/roof-inspection/deerfield-beach   /roof-inspection/deerfield-beach/ 301!
+/roof-inspection/delray-beach      /roof-inspection/delray-beach/ 301!
+/roof-inspection/fort-lauderdale   /roof-inspection/fort-lauderdale/ 301!
+/roof-inspection/lake-worth        /roof-inspection/lake-worth/ 301!
+/roof-inspection/palm-beach        /roof-inspection/palm-beach/ 301!
+/roof-inspection/pompano-beach     /roof-inspection/pompano-beach/ 301!
+/roof-inspection/wellington        /roof-inspection/wellington/ 301!
+/roof-inspection/west-palm-beach   /roof-inspection/west-palm-beach/ 301!
+
+# Redirect /locations (no slash) to /locations/
+/locations                         /locations/ 301!
+
+# Redirect /locations/{city} (no slash) to /locations/{city}/ - comprehensive list
+/locations/boca-raton              /locations/boca-raton/ 301!
+/locations/boynton-beach           /locations/boynton-beach/ 301!
+/locations/coconut-creek           /locations/coconut-creek/ 301!
+/locations/cooper-city             /locations/cooper-city/ 301!
+/locations/coral-springs           /locations/coral-springs/ 301!
+/locations/dania-beach             /locations/dania-beach/ 301!
+/locations/davie                   /locations/davie/ 301!
+/locations/deerfield-beach         /locations/deerfield-beach/ 301!
+/locations/delray-beach            /locations/delray-beach/ 301!
+/locations/fort-lauderdale         /locations/fort-lauderdale/ 301!
+/locations/greenacres              /locations/greenacres/ 301!
+/locations/gulf-stream             /locations/gulf-stream/ 301!
+/locations/hallandale-beach        /locations/hallandale-beach/ 301!
+/locations/haverhill               /locations/haverhill/ 301!
+/locations/highland-beach          /locations/highland-beach/ 301!
+/locations/hillsboro-beach         /locations/hillsboro-beach/ 301!
+/locations/hollywood               /locations/hollywood/ 301!
+/locations/hypoluxo                /locations/hypoluxo/ 301!
+/locations/jupiter                 /locations/jupiter/ 301!
+/locations/jupiter-inlet-colony    /locations/jupiter-inlet-colony/ 301!
+/locations/lake-park               /locations/lake-park/ 301!
+/locations/lake-worth              /locations/lake-worth/ 301!
+/locations/lake-worth-beach        /locations/lake-worth-beach/ 301!
+/locations/lantana                 /locations/lantana/ 301!
+/locations/lauderdale-by-the-sea   /locations/lauderdale-by-the-sea/ 301!
+/locations/lauderdale-lakes        /locations/lauderdale-lakes/ 301!
+/locations/lauderdale-ranches      /locations/lauderdale-ranches/ 301!
+/locations/lauderhill              /locations/lauderhill/ 301!
+/locations/lighthouse-point        /locations/lighthouse-point/ 301!
+/locations/loxahatchee-groves      /locations/loxahatchee-groves/ 301!
+/locations/margate                 /locations/margate/ 301!
+/locations/miramar                 /locations/miramar/ 301!
+/locations/north-lauderdale        /locations/north-lauderdale/ 301!
+/locations/north-palm-beach        /locations/north-palm-beach/ 301!
+/locations/oakland-park            /locations/oakland-park/ 301!
+/locations/ocean-ridge             /locations/ocean-ridge/ 301!
+/locations/palm-beach              /locations/palm-beach/ 301!
+/locations/palm-beach-gardens      /locations/palm-beach-gardens/ 301!
+/locations/palm-beach-shores       /locations/palm-beach-shores/ 301!
+/locations/parkland                /locations/parkland/ 301!
+/locations/pembroke-park           /locations/pembroke-park/ 301!
+/locations/pembroke-pines          /locations/pembroke-pines/ 301!
+/locations/plantation              /locations/plantation/ 301!
+/locations/pompano-beach           /locations/pompano-beach/ 301!
+/locations/royal-palm-beach        /locations/royal-palm-beach/ 301!
+/locations/sea-ranch-lakes         /locations/sea-ranch-lakes/ 301!
+/locations/southwest-ranches       /locations/southwest-ranches/ 301!
+/locations/sunrise                 /locations/sunrise/ 301!
+/locations/surfside                /locations/surfside/ 301!
+/locations/tamarac                 /locations/tamarac/ 301!
+/locations/wellington              /locations/wellington/ 301!
+/locations/west-palm-beach         /locations/west-palm-beach/ 301!
+/locations/westlake                /locations/westlake/ 301!
+/locations/weston                  /locations/weston/ 301!
+/locations/wilton-manors           /locations/wilton-manors/ 301!
+
+# Redirect all other static pages (no slash) to trailing slash version
+/about-us                          /about-us/ 301!
+/accessibility                     /accessibility/ 301!
+/blog                              /blog/ 301!
+/commercial-roofing                /commercial-roofing/ 301!
+/contact                           /contact/ 301!
+/easy-payments                     /easy-payments/ 301!
+/flat-roofing                      /flat-roofing/ 301!
+/how-to-hire-roofing-contractor    /how-to-hire-roofing-contractor/ 301!
+/metal-roofing                     /metal-roofing/ 301!
+/our-location                      /our-location/ 301!
+/pricing-guide                     /pricing-guide/ 301!
+/privacy                           /privacy/ 301!
+/projects                          /projects/ 301!
+/residential-roofing               /residential-roofing/ 301!
+/reviews                           /reviews/ 301!
+/roof-cost-calculator              /roof-cost-calculator/ 301!
+/roof-maintenance-programs         /roof-maintenance-programs/ 301!
+/roof-replacement-process          /roof-replacement-process/ 301!
+/shingle-roofing                   /shingle-roofing/ 301!
+/single-ply-roofing                /single-ply-roofing/ 301!
+/sitemap                           /sitemap/ 301!
+/terms                             /terms/ 301!
+/tile-roofing                      /tile-roofing/ 301!
+/roofing-contractor-broward-county-fl        /roofing-contractor-broward-county-fl/ 301!
+/roofing-contractor-palm-beach-county-fl     /roofing-contractor-palm-beach-county-fl/ 301!
+
+# SPA fallback - MUST BE LAST
 /* /index.html 200
