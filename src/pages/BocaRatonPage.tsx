@@ -408,9 +408,13 @@ export default function BocaRatonPage() {
               <h2 className="text-3xl font-bold text-white mb-6">
                 What We Typically Find During Boca Raton Roof Inspections
               </h2>
-              <p className="text-zinc-300 leading-relaxed mb-6">
-                Common findings include:
+              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                Boca Raton roofs take heat, UV, salt air, and storm-driven rain. The failures tend to repeat. Depending on the inspection findings, certain repairs or replacements may require more extensive work to address underlying issues. During the roofing process, the old roofing material is often removed to allow for proper installation of the new roof.
               </p>
+
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Common inspection findings in Boca Raton
+              </h3>
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-zinc-300">
