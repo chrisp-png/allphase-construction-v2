@@ -325,21 +325,21 @@ export default function DeerfieldBeachCityPage() {
           {/* Service Pills Row */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <FileCheck className="w-4 h-4" />
               Roof Inspections
             </Link>
             <Link
-              to="/roof-repair"
+              to="/roof-repair/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <CheckCircle className="w-4 h-4" />
               Roof Repair
             </Link>
             <Link
-              to="/roof-replacement-process"
+              to="/roof-replacement-process/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <ArrowRight className="w-4 h-4" />
@@ -393,10 +393,10 @@ export default function DeerfieldBeachCityPage() {
             </h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                All Phase Construction USA provides <Link to="/roof-inspection" className="underline hover:text-white">roof inspections</Link>, <Link to="/roof-repair" className="underline hover:text-white">roof repair</Link>, and <Link to="/roof-replacement-process" className="underline hover:text-white">roof replacement</Link> services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. Every roofing system is evaluated for storm damage, structural integrity, and wind mitigation eligibility before recommendations are made. Every project begins with a thorough roof inspection to determine the most cost-effective and code-compliant solution.
+                All Phase Construction USA provides <Link to="/roof-inspection/" className="underline hover:text-white">roof inspections</Link>, <Link to="/roof-repair/" className="underline hover:text-white">roof repair</Link>, and <Link to="/roof-replacement-process/" className="underline hover:text-white">roof replacement</Link> services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. Every roofing system is evaluated for storm damage, structural integrity, and wind mitigation eligibility before recommendations are made. Every project begins with a thorough roof inspection to determine the most cost-effective and code-compliant solution.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                We install and service <Link to="/roofing/shingle-roofing" className="underline hover:text-white">shingle roofs</Link>, <Link to="/roofing/tile-roofing" className="underline hover:text-white">tile roofs</Link>, <Link to="/roofing/metal-roofing" className="underline hover:text-white">metal roofs</Link>, and <Link to="/roofing/flat-roofing" className="underline hover:text-white">flat roofing systems</Link> throughout 33441 and 33442. Each installation is completed with hurricane-resistant fasteners, secondary water barriers, and inspection-ready documentation.
+                We install and service <Link to="/roofing/shingle-roofing/" className="underline hover:text-white">shingle roofs</Link>, <Link to="/roofing/tile-roofing/" className="underline hover:text-white">tile roofs</Link>, <Link to="/roofing/metal-roofing/" className="underline hover:text-white">metal roofs</Link>, and <Link to="/roofing/flat-roofing/" className="underline hover:text-white">flat roofing systems</Link> throughout 33441 and 33442. Each installation is completed with hurricane-resistant fasteners, secondary water barriers, and inspection-ready documentation.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
                 Based at our Deerfield Beach headquarters, our roofing team serves residential and commercial properties throughout Broward and Palm Beach Counties with code-compliant systems built for long-term performance.
@@ -414,7 +414,7 @@ export default function DeerfieldBeachCityPage() {
             </p>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors shadow-lg"
               >
                 View All Service Areas
@@ -588,7 +588,7 @@ export default function DeerfieldBeachCityPage() {
                 It's also important to hire professional roofers for proper assessment, quality workmanship, and safety throughout the roofing process.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Learn more about what to look for when <Link to="/how-to-hire-roofing-contractor" className="underline hover:text-white">selecting a roofing contractor in South Florida</Link>.
+                Learn more about what to look for when <Link to="/how-to-hire-roofing-contractor/" className="underline hover:text-white">selecting a roofing contractor in South Florida</Link>.
               </p>
             </div>
           </div>
@@ -646,7 +646,7 @@ export default function DeerfieldBeachCityPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                to="/roof-inspection"
+                to="/roof-inspection/"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
                 Schedule My Roof Inspection
@@ -680,7 +680,7 @@ export default function DeerfieldBeachCityPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <Link to="/shingle-roofing" className="block group">
+                <Link to="/shingle-roofing/" className="block group">
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
                     Architectural Shingle Roofs
                   </h3>
@@ -688,13 +688,13 @@ export default function DeerfieldBeachCityPage() {
                 <p className="text-gray-400 mb-4">
                   HVHZ-compliant TAMKO and GAF architectural shingles engineered for extreme wind resistance up to 130+ mph. Installed to Broward County inspection standards, these systems qualify for insurance wind mitigation credits and provide proven coastal durability.
                 </p>
-                <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 font-semibold">
+                <Link to="/shingle-roofing/" className="text-red-600 hover:text-red-500 font-semibold">
                   Learn More →
                 </Link>
               </div>
 
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <Link to="/tile-roofing" className="block group">
+                <Link to="/tile-roofing/" className="block group">
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
                     Concrete and Clay Tile Roofs
                   </h3>
@@ -702,13 +702,13 @@ export default function DeerfieldBeachCityPage() {
                 <p className="text-gray-400 mb-4">
                   Hurricane-rated tile systems installed with foam adhesive or mortar meeting HVHZ wind uplift requirements. Exceeds Broward County's stringent installation standards for coastal properties and qualifies for maximum insurance wind mitigation discounts.
                 </p>
-                <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 font-semibold">
+                <Link to="/tile-roofing/" className="text-red-600 hover:text-red-500 font-semibold">
                   Learn More →
                 </Link>
               </div>
 
               <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
-                <Link to="/metal-roofing" className="block group">
+                <Link to="/metal-roofing/" className="block group">
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
                     Standing Seam Metal Roofs
                   </h3>
@@ -716,7 +716,7 @@ export default function DeerfieldBeachCityPage() {
                 <p className="text-gray-400 mb-4">
                   Mechanically seamed metal roofing systems with concealed fasteners rated for extreme wind resistance and salt air exposure. HVHZ-compliant installations meet Broward County's highest structural standards for coastal durability and insurance eligibility.
                 </p>
-                <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 font-semibold">
+                <Link to="/metal-roofing/" className="text-red-600 hover:text-red-500 font-semibold">
                   Learn More →
                 </Link>
               </div>
@@ -724,7 +724,7 @@ export default function DeerfieldBeachCityPage() {
 
             <p className="text-center text-gray-400">
               Not sure which roofing system is right for your property?{' '}
-              <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 font-semibold">
+              <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 font-semibold">
                 Schedule a professional roof inspection
               </Link>
               .
@@ -928,7 +928,7 @@ export default function DeerfieldBeachCityPage() {
                 (754) 227-5605
               </a>{' '}
               or{' '}
-              <a href="/roof-inspection" className="text-red-600 hover:text-red-500 font-semibold transition-colors">
+              <a href="/roof-inspection/" className="text-red-600 hover:text-red-500 font-semibold transition-colors">
                 request a roof assessment online
               </a>.
             </p>
@@ -1023,7 +1023,7 @@ export default function DeerfieldBeachCityPage() {
             </p>
             <div className="text-center">
               <Link
-                to="/locations/deerfield-beach/service-area"
+                to="/locations/deerfield-beach/service-area/"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors shadow-lg"
               >
                 <MapPin className="w-5 h-5" />

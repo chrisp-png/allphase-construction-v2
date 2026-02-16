@@ -68,7 +68,7 @@ export default function LocationCalculatorPage() {
                 The calculator page you're looking for doesn't exist.
               </p>
               <Link
-                to="/roof-cost-calculator"
+                to="/roof-cost-calculator/"
                 className="inline-flex items-center gap-2 bg-[#C5A572] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#B08D5B] transition-colors"
               >
                 <Calculator className="w-5 h-5" />
@@ -195,7 +195,7 @@ export default function LocationCalculatorPage() {
               Call (754) 227-5605
             </a>
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-600 transition-colors text-lg"
             >
               <Mail className="w-5 h-5" />

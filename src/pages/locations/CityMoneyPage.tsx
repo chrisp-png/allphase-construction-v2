@@ -114,14 +114,14 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           {/* High-Visibility CTA Buttons - TWO REQUIRED BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="inline-flex items-center gap-2 bg-[#C5A572] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#B08D5B] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <FileCheck className="w-6 h-6" />
               Schedule 21-Point Inspection
             </Link>
             <Link
-              to="/roof-repair"
+              to="/roof-repair/"
               className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <Phone className="w-6 h-6" />
@@ -256,7 +256,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                     Call (754) 227-5605
                   </a>
                   <Link
-                    to="/contact"
+                    to="/contact/"
                     className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition-colors"
                   >
                     <ArrowRight className="w-5 h-5" />

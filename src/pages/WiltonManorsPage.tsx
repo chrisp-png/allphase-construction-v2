@@ -67,37 +67,37 @@ export default function WiltonManorsPage() {
     {
       title: 'Tile Roofing',
       description: "Classic tile roofs for Wilton Manors' historic and renovated properties. Installed with proper underlayment and foam adhesive for hurricane protection.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Modern metal roofing systems for Wilton Manors homes. Energy efficient, durable, and perfect for contemporary renovations.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "The most practical choice for Wilton Manors' diverse housing stock. We install HVHZ-rated architectural shingles built for South Florida.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Commercial buildings and modern residential designs throughout Wilton Manors. TPO, PVC, and modified bitumen systems.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Maintaining Wilton Manors roofs economically. We provide 5-year certification letters for qualifying roofs to help protect insurance coverage.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Retail spaces, mixed-use buildings, and commercial properties along Wilton Drive and throughout the city.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -141,12 +141,12 @@ export default function WiltonManorsPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl' },
-    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl' },
-    { name: 'Lauderdale Lakes', path: '/roofing-contractor-lauderdale-lakes-fl' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl' },
-    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl' }
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl/' },
+    { name: 'Lauderdale Lakes', path: '/roofing-contractor-lauderdale-lakes-fl/' },
+    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
+    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
+    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' }
   ];
 
   const faqs = [
@@ -185,11 +185,11 @@ export default function WiltonManorsPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -232,7 +232,7 @@ export default function WiltonManorsPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Wilton Manors
@@ -265,7 +265,7 @@ export default function WiltonManorsPage() {
                 Wilton Manors residents value authenticity and quality work. That's what we deliver — straightforward service, honest pricing, and work that lasts.
               </p>
               <p>
-                When roof concerns arise, schedule a <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate system performance, or a <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial properties to identify issues early.
+                When roof concerns arise, schedule a <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate system performance, or a <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial properties to identify issues early.
               </p>
             </div>
           </div>
@@ -414,7 +414,7 @@ export default function WiltonManorsPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -469,7 +469,7 @@ export default function WiltonManorsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
