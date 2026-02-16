@@ -89,7 +89,7 @@ export default function MetalRoofingPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Metal Roof Consultation
@@ -140,12 +140,12 @@ export default function MetalRoofingPage() {
           </ul>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-            Metal roofing systems often require professional inspection to evaluate attachment performance, thermal movement accommodation, and wind resistance characteristics before repair or replacement decisions are made. Our <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> provide system-wide evaluation of concealed fastener integrity, clip performance, panel condition, and code compliance throughout Broward County and Palm Beach County—including specialized assessment protocols for properties in HVHZ jurisdictions.
+            Metal roofing systems often require professional inspection to evaluate attachment performance, thermal movement accommodation, and wind resistance characteristics before repair or replacement decisions are made. Our <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection services</Link> provide system-wide evaluation of concealed fastener integrity, clip performance, panel condition, and code compliance throughout Broward County and Palm Beach County—including specialized assessment protocols for properties in HVHZ jurisdictions.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed">
             In these scenarios, a{' '}
-            <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
+            <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">
               diagnostic roof inspection
             </Link>
             {' '}is required to determine whether metal roof repair, retrofit, or full system replacement is technically appropriate.
@@ -247,7 +247,7 @@ export default function MetalRoofingPage() {
           </div>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold text-lg transition-colors"
           >
             Get a consultation to learn what your metal roof options really are
@@ -1043,7 +1043,7 @@ export default function MetalRoofingPage() {
           </div>
 
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
           >
             Schedule Your Free Metal Roof Consultation
@@ -1134,7 +1134,7 @@ export default function MetalRoofingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Consultation

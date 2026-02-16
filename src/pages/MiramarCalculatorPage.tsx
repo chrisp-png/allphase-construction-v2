@@ -151,11 +151,11 @@ export default function MiramarCalculatorPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/service-area/miramar" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/miramar/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Miramar
             </Link>
             <span className="text-zinc-600">/</span>
@@ -235,7 +235,7 @@ export default function MiramarCalculatorPage() {
                   Contact us to discuss financing options and payment plans for your roofing project.
                 </p>
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
                 >
                   Request Financing Information
@@ -315,7 +315,7 @@ export default function MiramarCalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

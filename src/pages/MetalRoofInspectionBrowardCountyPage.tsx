@@ -57,7 +57,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roof-inspection" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
+            <Link to="/roof-inspection/" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Metal Roof Inspection — Broward County</span>
           </div>
@@ -78,7 +78,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Metal Roof Inspection
@@ -441,7 +441,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
               </p>
               <p className="text-sm text-zinc-400">
                 For more information, see our{' '}
-                <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">
+                <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">
                   diagnostic roof inspection services
                 </Link>.
               </p>
@@ -457,7 +457,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
               </p>
               <p className="text-sm text-zinc-400">
                 For more information, see our{' '}
-                <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">
+                <Link to="/metal-roofing/" className="text-red-600 hover:text-red-500 underline transition-colors">
                   metal roofing services
                 </Link>.
               </p>
@@ -482,7 +482,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
 
           <div className="space-y-6 text-lg text-zinc-300 max-w-4xl mb-8">
             <p>
-              All Phase Construction provides metal roof inspection services throughout Broward County, including <Link to="/roofing-contractor-fort-lauderdale-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>, <Link to="/roofing-contractor-coral-springs-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>, <Link to="/roofing-contractor-pompano-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>, <Link to="/roofing-contractor-plantation-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>, <Link to="/roofing-contractor-davie-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>, and all municipalities subject to High Velocity Hurricane Zone requirements and local building code enforcement.
+              All Phase Construction provides metal roof inspection services throughout Broward County, including <Link to="/roofing-contractor-fort-lauderdale-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>, <Link to="/roofing-contractor-coral-springs-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>, <Link to="/roofing-contractor-pompano-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>, <Link to="/roofing-contractor-plantation-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>, <Link to="/roofing-contractor-davie-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>, and all municipalities subject to High Velocity Hurricane Zone requirements and local building code enforcement.
             </p>
 
             <p>
@@ -501,7 +501,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
           <div className="flex items-start gap-3 text-zinc-400">
             <MapPin className="w-6 h-6 text-red-500 mt-1 flex-shrink-0" />
             <p>
-              Service area includes <Link to="/roofing-contractor-fort-lauderdale-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>, <Link to="/roofing-contractor-pompano-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>, <Link to="/roofing-contractor-coral-springs-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>, Deerfield Beach, <Link to="/roofing-contractor-plantation-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>, <Link to="/roofing-contractor-davie-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>, Parkland, Weston, Miramar, Hollywood, and all Broward County municipalities.
+              Service area includes <Link to="/roofing-contractor-fort-lauderdale-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>, <Link to="/roofing-contractor-pompano-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>, <Link to="/roofing-contractor-coral-springs-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>, Deerfield Beach, <Link to="/roofing-contractor-plantation-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>, <Link to="/roofing-contractor-davie-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>, Parkland, Weston, Miramar, Hollywood, and all Broward County municipalities.
             </p>
           </div>
         </div>
@@ -519,7 +519,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -531,7 +531,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/insurance-roof-inspection"
+              to="/insurance-roof-inspection/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -543,7 +543,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/tile-roof-inspection-broward-county"
+              to="/tile-roof-inspection-broward-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -555,7 +555,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/flat-roof-inspection-broward-county"
+              to="/flat-roof-inspection-broward-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -567,7 +567,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
             </Link>
 
             <Link
-              to="/metal-roof-inspection-palm-beach-county"
+              to="/metal-roof-inspection-palm-beach-county/"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -595,7 +595,7 @@ export default function MetalRoofInspectionBrowardCountyPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Metal Roof Inspection

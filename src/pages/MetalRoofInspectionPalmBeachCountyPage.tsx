@@ -79,7 +79,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roof-inspection" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
+            <Link to="/roof-inspection/" className="hover:text-red-500 transition-colors">Roof Inspection</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Metal Roof Inspection Palm Beach County</span>
           </div>
@@ -100,7 +100,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20 text-center"
             >
               Schedule Metal Roof Inspection
@@ -314,10 +314,10 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
 
           <div className="mt-12 bg-zinc-950 border-l-4 border-red-600 p-8">
             <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-              For comprehensive information about roof inspection services for all material types, including diagnostic methodology and Florida Building Code requirements, see our main <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Inspection Services</Link> page.
+              For comprehensive information about roof inspection services for all material types, including diagnostic methodology and Florida Building Code requirements, see our main <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Inspection Services</Link> page.
             </p>
             <p className="text-lg text-zinc-300 leading-relaxed">
-              For detailed information about metal roofing systems, installation methods, and material specifications, see our <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Metal Roofing Services</Link> page.
+              For detailed information about metal roofing systems, installation methods, and material specifications, see our <Link to="/metal-roofing/" className="text-red-600 hover:text-red-500 underline transition-colors">Metal Roofing Services</Link> page.
             </p>
           </div>
         </div>
@@ -332,7 +332,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
 
           <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
             <p>
-              All Phase Construction USA provides metal roof inspection services throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, Palm Beach Gardens, Jupiter, Lake Worth Beach, and surrounding communities.
+              All Phase Construction USA provides metal roof inspection services throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, Palm Beach Gardens, Jupiter, Lake Worth Beach, and surrounding communities.
             </p>
 
             <p>
@@ -361,7 +361,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
           </div>
 
           <p className="text-xl text-zinc-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            <Link to="/roofing-contractor-west-palm-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link> • <Link to="/roofing-contractor-boca-raton-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link> • <Link to="/roofing-contractor-delray-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link> • <Link to="/roofing-contractor-boynton-beach-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link> • <Link to="/roofing-contractor-wellington-fl" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link> • Palm Beach Gardens • Jupiter • Lake Worth Beach • Royal Palm Beach • Lantana • Palm Beach • and surrounding communities
+            <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link> • <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link> • <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link> • <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link> • <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link> • Palm Beach Gardens • Jupiter • Lake Worth Beach • Royal Palm Beach • Lantana • Palm Beach • and surrounding communities
           </p>
         </div>
       </section>
@@ -378,7 +378,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -390,7 +390,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/insurance-roof-inspection"
+              to="/insurance-roof-inspection/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -402,7 +402,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/tile-roof-inspection-palm-beach-county"
+              to="/tile-roof-inspection-palm-beach-county/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -414,7 +414,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/flat-roof-inspection-palm-beach-county"
+              to="/flat-roof-inspection-palm-beach-county/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -426,7 +426,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
             </Link>
 
             <Link
-              to="/metal-roof-inspection-broward-county"
+              to="/metal-roof-inspection-broward-county/"
               className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-red-600 transition-all duration-300 group"
             >
               <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors mb-3">
@@ -452,7 +452,7 @@ export default function MetalRoofInspectionPalmBeachCountyPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-xl shadow-lg shadow-red-600/20"
             >
               Schedule Metal Roof Inspection
