@@ -107,49 +107,49 @@ export default function LoxahatcheeGrovesPage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and material wear.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Roof Replacement',
       description: "Complete roofing system replacements built to current Florida code standards.",
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Shingle Roofing',
       description: "Wind-rated shingle systems suitable for residential structures.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Tile Roofing',
       description: "Clay and concrete tile systems designed for durability and longevity.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Long-lasting, wind-resistant roofing solutions well-suited for open-area exposure.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Flat Roofing',
       description: "Low-slope roofing systems designed for proper drainage and sealing.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Emergency Roof Repair',
       description: "Prompt response for active leaks or storm-related damage.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Leak Detection & Prevention',
       description: "Identification of moisture entry points and preventative solutions.",
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       icon: Shield
     }
   ];
@@ -197,12 +197,12 @@ export default function LoxahatcheeGrovesPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Royal Palm Beach', path: '/roofing-contractor-royal-palm-beach-fl' },
-    { name: 'Wellington', path: '/roofing-contractor-wellington-fl' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl' },
-    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl' },
-    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-fl' }
+    { name: 'Royal Palm Beach', path: '/roofing-contractor-royal-palm-beach-fl/' },
+    { name: 'Wellington', path: '/roofing-contractor-wellington-fl/' },
+    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
+    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
+    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl/' },
+    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-fl/' }
   ];
 
   const questions = [
@@ -256,11 +256,11 @@ export default function LoxahatcheeGrovesPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -303,7 +303,7 @@ export default function LoxahatcheeGrovesPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Loxahatchee Groves
@@ -467,7 +467,7 @@ export default function LoxahatcheeGrovesPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -592,7 +592,7 @@ export default function LoxahatcheeGrovesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

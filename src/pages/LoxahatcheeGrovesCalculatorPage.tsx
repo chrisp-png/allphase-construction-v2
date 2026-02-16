@@ -128,15 +128,15 @@ export default function LoxahatcheeGrovesCalculatorPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/service-area/loxahatchee-groves" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/loxahatchee-groves/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Loxahatchee Groves
             </Link>
             <span className="text-zinc-600">/</span>
@@ -233,7 +233,7 @@ export default function LoxahatcheeGrovesCalculatorPage() {
                 Contact us to discuss financing options and payment plans for your roofing project.
               </p>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
               >
                 Request Financing Information
@@ -312,7 +312,7 @@ export default function LoxahatcheeGrovesCalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
