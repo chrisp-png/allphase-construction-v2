@@ -67,37 +67,37 @@ export default function OceanRidgePage() {
     {
       title: 'Tile Roofing',
       description: "Premium concrete and clay tile systems for Ocean Ridge's upscale coastal homes. Engineered for salt air and hurricane resistance.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "High-performance standing seam metal roofing with marine-grade coatings for Ocean Ridge's oceanfront properties.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Premium architectural shingles for Ocean Ridge homes requiring versatility and proven coastal performance.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Modern flat roofing systems for Ocean Ridge's contemporary coastal homes and low-slope designs.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Expert restoration and repair to protect Ocean Ridge's valuable beachfront investments.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Specialized roofing for Ocean Ridge's limited commercial properties and town facilities.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -141,12 +141,12 @@ export default function OceanRidgePage() {
   ];
 
   const nearbyCities = [
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl' },
-    { name: 'Lantana', path: '/roofing-contractor-lantana-fl' },
-    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl' },
-    { name: 'Briny Breezes', path: '/roofing-contractor-briny-breezes-fl' },
-    { name: 'Manalapan', path: '/roofing-contractor-manalapan-fl' },
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl' }
+    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
+    { name: 'Lantana', path: '/roofing-contractor-lantana-fl/' },
+    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl/' },
+    { name: 'Briny Breezes', path: '/roofing-contractor-briny-breezes-fl/' },
+    { name: 'Manalapan', path: '/roofing-contractor-manalapan-fl/' },
+    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' }
   ];
 
   const faqs = [
@@ -185,11 +185,11 @@ export default function OceanRidgePage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -232,7 +232,7 @@ export default function OceanRidgePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Ocean Ridge
@@ -259,7 +259,7 @@ export default function OceanRidgePage() {
                 Oceanfront roofing in Ocean Ridge demands specialized expertise. Direct Atlantic Ocean exposure means constant salt spray, accelerated corrosion on metal components, hurricane-force wind threats, and UV degradation that happens faster than inland areas. Standard roofing materials and generic installation techniques fail prematurely in this environment.
               </p>
               <p>
-                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
+                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
               </p>
             </div>
           </div>
@@ -408,7 +408,7 @@ export default function OceanRidgePage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -463,7 +463,7 @@ export default function OceanRidgePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

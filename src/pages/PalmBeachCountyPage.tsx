@@ -82,49 +82,49 @@ export default function PalmBeachCountyPage() {
     {
       title: 'Roof Inspections & Condition Assessments',
       description: 'Comprehensive roof evaluations with detailed documentation for insurance, HOA compliance, and property maintenance planning.',
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       icon: ClipboardCheck
     },
     {
       title: 'Storm Damage & Insurance Inspections',
       description: 'Professional storm damage assessments with insurance-defensible documentation and photo evidence.',
-      path: '/insurance-roof-inspection',
+      path: '/insurance-roof-inspection/',
       icon: FileText
     },
     {
       title: 'Roof Repairs & Leak Remediation',
       description: 'Fast, effective roof repairs addressing leaks, damage, and deterioration across all roofing system types.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Full Roof Replacements',
       description: 'Complete roof replacement services designed for South Florida climate and building codes.',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Tile Roofing Systems',
       description: 'Concrete and clay tile installations and repairs, the signature roofing system throughout Palm Beach County.',
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing Systems',
       description: 'TPO, modified bitumen, and built-up flat roofing for commercial properties and modern residential homes.',
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Metal Roofing Systems',
       description: 'Standing seam and metal panel roofing for long-term durability and energy efficiency.',
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Commercial Roofing',
       description: 'Multi-family, condominium, and commercial property roofing with phased project management.',
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -168,19 +168,19 @@ export default function PalmBeachCountyPage() {
   ];
 
   const cities = [
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl' },
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl' },
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl' },
-    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl' },
-    { name: 'Wellington', path: '/roofing-contractor-wellington-fl' },
-    { name: 'Royal Palm Beach', path: '/roofing-contractor-royal-palm-beach-fl' },
-    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-beach-fl' },
-    { name: 'Palm Beach', path: '/roofing-contractor-palm-beach-fl' },
-    { name: 'Lantana', path: '/roofing-contractor-lantana-fl' },
-    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl' },
-    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl' }
+    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' },
+    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' },
+    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
+    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
+    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl/' },
+    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
+    { name: 'Wellington', path: '/roofing-contractor-wellington-fl/' },
+    { name: 'Royal Palm Beach', path: '/roofing-contractor-royal-palm-beach-fl/' },
+    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-beach-fl/' },
+    { name: 'Palm Beach', path: '/roofing-contractor-palm-beach-fl/' },
+    { name: 'Lantana', path: '/roofing-contractor-lantana-fl/' },
+    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl/' },
+    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl/' }
   ];
 
   const faqs = [
@@ -213,7 +213,7 @@ export default function PalmBeachCountyPage() {
             <span className="text-zinc-600">/</span>
             <span className="text-zinc-500">Roofing</span>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -253,7 +253,7 @@ export default function PalmBeachCountyPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Request Assessment
@@ -463,7 +463,7 @@ export default function PalmBeachCountyPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="px-8 py-4 bg-white text-red-600 rounded-lg font-semibold hover:bg-zinc-100 transition-all duration-300 text-lg"
                 >
                   Request Assessment

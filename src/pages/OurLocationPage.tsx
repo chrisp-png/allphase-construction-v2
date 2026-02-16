@@ -147,7 +147,7 @@ export default function OurLocationPage() {
           <ul className="space-y-3 mb-6">
             <li>
               <Link
-                to="/roofing-contractor-palm-beach-county-fl"
+                to="/roofing-contractor-palm-beach-county-fl/"
                 className="text-red-600 hover:text-red-500 transition-colors font-semibold"
               >
                 Palm Beach County
@@ -155,7 +155,7 @@ export default function OurLocationPage() {
             </li>
             <li>
               <Link
-                to="/roofing-contractor-broward-county-fl"
+                to="/roofing-contractor-broward-county-fl/"
                 className="text-red-600 hover:text-red-500 transition-colors font-semibold"
               >
                 Broward County
