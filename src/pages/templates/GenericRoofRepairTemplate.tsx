@@ -81,7 +81,7 @@ export default function GenericRoofRepairTemplate() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+                <Link to="/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{cityName}</span>
               </nav>
@@ -92,7 +92,7 @@ export default function GenericRoofRepairTemplate() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Homes and commercial properties in {cityName} face intense UV exposure, seasonal storm activity, and long-term heat cycling that can accelerate roof wear. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, fastener failure, or material deterioration before recommending a repair approach. Every project begins with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate versus broader corrective work.
+                  Homes and commercial properties in {cityName} face intense UV exposure, seasonal storm activity, and long-term heat cycling that can accelerate roof wear. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, fastener failure, or material deterioration before recommending a repair approach. Every project begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate versus broader corrective work.
                 </p>
               </div>
 

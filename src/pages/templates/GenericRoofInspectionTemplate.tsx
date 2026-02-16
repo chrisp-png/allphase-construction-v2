@@ -81,7 +81,7 @@ export default function GenericRoofInspectionTemplate() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roof-inspection" className="hover:text-red-600 transition-colors">Roof Inspection</Link>
+                <Link to="/roof-inspection/" className="hover:text-red-600 transition-colors">Roof Inspection</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{cityName}</span>
               </nav>

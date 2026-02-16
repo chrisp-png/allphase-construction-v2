@@ -237,7 +237,7 @@ export default function ServiceAreaPage() {
                 The service area you're looking for doesn't exist.
               </p>
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
                 View All Service Areas
@@ -284,15 +284,15 @@ export default function ServiceAreaPage() {
               Home
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/locations" className="hover:text-red-500 transition-colors">
+            <Link to="/locations/" className="hover:text-red-500 transition-colors">
               Locations
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/locations/deerfield-beach" className="hover:text-red-500 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="hover:text-red-500 transition-colors">
               Deerfield Beach
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/locations/deerfield-beach/service-area" className="hover:text-red-500 transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/" className="hover:text-red-500 transition-colors">
               Service Area
             </Link>
             <ChevronRight className="w-4 h-4" />
@@ -335,7 +335,7 @@ export default function ServiceAreaPage() {
             </a>
             <div className="hidden md:block w-px h-6 bg-gray-700"></div>
             <Link
-              to="/contact"
+              to="/contact/"
               className="flex items-center gap-3 text-white hover:text-red-500 transition-colors"
             >
               <Mail className="w-5 h-5" />
@@ -666,7 +666,7 @@ export default function ServiceAreaPage() {
               Call (754) 227-5605
             </a>
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-600 transition-colors text-lg"
             >
               <Mail className="w-5 h-5" />

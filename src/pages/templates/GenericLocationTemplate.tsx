@@ -73,7 +73,7 @@ export default function GenericLocationTemplate() {
               <nav className="flex items-center space-x-2 text-sm text-zinc-400 mb-8">
                 <Link to="/" className="hover:text-red-600 transition-colors">Home</Link>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/locations/service-areas" className="hover:text-red-600 transition-colors">Service Areas</Link>
+                <Link to="/locations/service-areas/" className="hover:text-red-600 transition-colors">Service Areas</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{cityName}</span>
               </nav>
@@ -148,7 +148,7 @@ export default function GenericLocationTemplate() {
               </Link>
 
               <Link
-                to="/residential-roofing"
+                to="/residential-roofing/"
                 className="bg-black border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 bg-red-600/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600/20 transition-colors">
@@ -161,7 +161,7 @@ export default function GenericLocationTemplate() {
               </Link>
 
               <Link
-                to="/tile-roofing"
+                to="/tile-roofing/"
                 className="bg-black border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 bg-red-600/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600/20 transition-colors">
@@ -174,7 +174,7 @@ export default function GenericLocationTemplate() {
               </Link>
 
               <Link
-                to="/flat-roofing"
+                to="/flat-roofing/"
                 className="bg-black border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 bg-red-600/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600/20 transition-colors">
@@ -187,7 +187,7 @@ export default function GenericLocationTemplate() {
               </Link>
 
               <Link
-                to="/commercial-roofing"
+                to="/commercial-roofing/"
                 className="bg-black border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 bg-red-600/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600/20 transition-colors">

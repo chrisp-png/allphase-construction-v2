@@ -128,14 +128,14 @@ export default function SitemapAuditPage() {
             <h2 className="text-xl font-bold text-white mb-4">Quick Links</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Link
-                to="/sitemap"
+                to="/sitemap/"
                 className="flex items-center gap-2 p-3 bg-gray-700/50 rounded-lg hover:bg-gray-700 transition-colors text-white"
               >
                 <ExternalLink className="w-4 h-4" />
                 <span>/sitemap</span>
               </Link>
               <a
-                href="/sitemap.xml"
+                href="/sitemap.xml/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 p-3 bg-gray-700/50 rounded-lg hover:bg-gray-700 transition-colors text-white"
@@ -144,7 +144,7 @@ export default function SitemapAuditPage() {
                 <span>/sitemap.xml</span>
               </a>
               <a
-                href="/robots.txt"
+                href="/robots.txt/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 p-3 bg-gray-700/50 rounded-lg hover:bg-gray-700 transition-colors text-white"
@@ -153,7 +153,7 @@ export default function SitemapAuditPage() {
                 <span>/robots.txt</span>
               </a>
               <Link
-                to="/locations"
+                to="/locations/"
                 className="flex items-center gap-2 p-3 bg-gray-700/50 rounded-lg hover:bg-gray-700 transition-colors text-white"
               >
                 <ExternalLink className="w-4 h-4" />

@@ -82,60 +82,60 @@ export default function ServiceAreasHubPage() {
   }, []);
 
   const browardCountyAreas = [
-    { name: 'Broward County', path: '/locations/broward-county' },
-    { name: 'Coconut Creek', path: '/locations/coconut-creek' },
-    { name: 'Cooper City', path: '/locations/cooper-city' },
-    { name: 'Coral Springs', path: '/locations/coral-springs' },
-    { name: 'Dania Beach', path: '/locations/dania-beach' },
-    { name: 'Davie', path: '/locations/davie' },
-    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
-    { name: 'Hallandale Beach', path: '/locations/hallandale-beach' },
-    { name: 'Hillsboro Beach', path: '/locations/hillsboro-beach' },
-    { name: 'Hollywood', path: '/locations/hollywood' },
-    { name: 'Lauderdale-by-the-Sea', path: '/locations/lauderdale-by-the-sea' },
-    { name: 'Lauderdale Lakes', path: '/locations/lauderdale-lakes' },
-    { name: 'Lauderdale Ranches', path: '/locations/lauderdale-ranches' },
-    { name: 'Lauderhill', path: '/locations/lauderhill' },
-    { name: 'Lighthouse Point', path: '/locations/lighthouse-point' },
-    { name: 'Margate', path: '/locations/margate' },
-    { name: 'Miramar', path: '/locations/miramar' },
-    { name: 'North Lauderdale', path: '/locations/north-lauderdale' },
-    { name: 'Oakland Park', path: '/locations/oakland-park' },
-    { name: 'Parkland', path: '/locations/parkland' },
-    { name: 'Pembroke Park', path: '/locations/pembroke-park' },
-    { name: 'Pembroke Pines', path: '/locations/pembroke-pines' },
-    { name: 'Plantation', path: '/locations/plantation' },
-    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
-    { name: 'Sea Ranch Lakes', path: '/locations/sea-ranch-lakes' },
-    { name: 'Southwest Ranches', path: '/locations/southwest-ranches' },
-    { name: 'Sunrise', path: '/locations/sunrise' },
-    { name: 'Tamarac', path: '/locations/tamarac' },
-    { name: 'Weston', path: '/locations/weston' },
-    { name: 'Wilton Manors', path: '/locations/wilton-manors' }
+    { name: 'Broward County', path: '/locations/broward-county/' },
+    { name: 'Coconut Creek', path: '/locations/coconut-creek/' },
+    { name: 'Cooper City', path: '/locations/cooper-city/' },
+    { name: 'Coral Springs', path: '/locations/coral-springs/' },
+    { name: 'Dania Beach', path: '/locations/dania-beach/' },
+    { name: 'Davie', path: '/locations/davie/' },
+    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale/' },
+    { name: 'Hallandale Beach', path: '/locations/hallandale-beach/' },
+    { name: 'Hillsboro Beach', path: '/locations/hillsboro-beach/' },
+    { name: 'Hollywood', path: '/locations/hollywood/' },
+    { name: 'Lauderdale-by-the-Sea', path: '/locations/lauderdale-by-the-sea/' },
+    { name: 'Lauderdale Lakes', path: '/locations/lauderdale-lakes/' },
+    { name: 'Lauderdale Ranches', path: '/locations/lauderdale-ranches/' },
+    { name: 'Lauderhill', path: '/locations/lauderhill/' },
+    { name: 'Lighthouse Point', path: '/locations/lighthouse-point/' },
+    { name: 'Margate', path: '/locations/margate/' },
+    { name: 'Miramar', path: '/locations/miramar/' },
+    { name: 'North Lauderdale', path: '/locations/north-lauderdale/' },
+    { name: 'Oakland Park', path: '/locations/oakland-park/' },
+    { name: 'Parkland', path: '/locations/parkland/' },
+    { name: 'Pembroke Park', path: '/locations/pembroke-park/' },
+    { name: 'Pembroke Pines', path: '/locations/pembroke-pines/' },
+    { name: 'Plantation', path: '/locations/plantation/' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach/' },
+    { name: 'Sea Ranch Lakes', path: '/locations/sea-ranch-lakes/' },
+    { name: 'Southwest Ranches', path: '/locations/southwest-ranches/' },
+    { name: 'Sunrise', path: '/locations/sunrise/' },
+    { name: 'Tamarac', path: '/locations/tamarac/' },
+    { name: 'Weston', path: '/locations/weston/' },
+    { name: 'Wilton Manors', path: '/locations/wilton-manors/' }
   ];
 
   const palmBeachCountyAreas = [
-    { name: 'Palm Beach County', path: '/locations/palm-beach-county' },
-    { name: 'Boca Raton', path: '/locations/boca-raton' },
-    { name: 'Boynton Beach', path: '/locations/boynton-beach' },
-    { name: 'Delray Beach', path: '/locations/delray-beach' },
-    { name: 'Greenacres', path: '/locations/greenacres' },
-    { name: 'Haverhill', path: '/locations/haverhill' },
-    { name: 'Highland Beach', path: '/locations/highland-beach' },
-    { name: 'Hypoluxo', path: '/locations/hypoluxo' },
-    { name: 'Jupiter Inlet Colony', path: '/locations/jupiter-inlet-colony' },
-    { name: 'Lake Worth Beach', path: '/locations/lake-worth-beach' },
-    { name: 'Lantana', path: '/locations/lantana' },
-    { name: 'Loxahatchee Groves', path: '/locations/loxahatchee-groves' },
-    { name: 'North Palm Beach', path: '/locations/north-palm-beach' },
-    { name: 'Ocean Ridge', path: '/locations/ocean-ridge' },
-    { name: 'Palm Beach', path: '/locations/palm-beach' },
-    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens' },
-    { name: 'Palm Beach Shores', path: '/locations/palm-beach-shores' },
-    { name: 'Royal Palm Beach', path: '/locations/royal-palm-beach' },
-    { name: 'Wellington', path: '/locations/wellington' },
-    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
-    { name: 'Westlake', path: '/locations/westlake' }
+    { name: 'Palm Beach County', path: '/locations/palm-beach-county/' },
+    { name: 'Boca Raton', path: '/locations/boca-raton/' },
+    { name: 'Boynton Beach', path: '/locations/boynton-beach/' },
+    { name: 'Delray Beach', path: '/locations/delray-beach/' },
+    { name: 'Greenacres', path: '/locations/greenacres/' },
+    { name: 'Haverhill', path: '/locations/haverhill/' },
+    { name: 'Highland Beach', path: '/locations/highland-beach/' },
+    { name: 'Hypoluxo', path: '/locations/hypoluxo/' },
+    { name: 'Jupiter Inlet Colony', path: '/locations/jupiter-inlet-colony/' },
+    { name: 'Lake Worth Beach', path: '/locations/lake-worth-beach/' },
+    { name: 'Lantana', path: '/locations/lantana/' },
+    { name: 'Loxahatchee Groves', path: '/locations/loxahatchee-groves/' },
+    { name: 'North Palm Beach', path: '/locations/north-palm-beach/' },
+    { name: 'Ocean Ridge', path: '/locations/ocean-ridge/' },
+    { name: 'Palm Beach', path: '/locations/palm-beach/' },
+    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens/' },
+    { name: 'Palm Beach Shores', path: '/locations/palm-beach-shores/' },
+    { name: 'Royal Palm Beach', path: '/locations/royal-palm-beach/' },
+    { name: 'Wellington', path: '/locations/wellington/' },
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach/' },
+    { name: 'Westlake', path: '/locations/westlake/' }
   ];
 
   return (
@@ -148,7 +148,7 @@ export default function ServiceAreasHubPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-500 hover:text-white transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-500 hover:text-white transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
@@ -272,7 +272,7 @@ export default function ServiceAreasHubPage() {
                 Call (754) 227-5605
               </a>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg border border-zinc-700"
               >
                 Request a Roofing Estimate
