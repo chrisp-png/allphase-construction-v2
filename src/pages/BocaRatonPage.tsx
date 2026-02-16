@@ -642,6 +642,64 @@ export default function BocaRatonPage() {
               <p className="text-zinc-300 leading-relaxed mb-8">
                 <a href="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 transition-colors">Deerfield Beach</a>, <a href="/locations/pompano-beach" className="text-red-600 hover:text-red-500 transition-colors">Pompano Beach</a>, <a href="/locations/fort-lauderdale" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</a>, <a href="/locations/coral-springs" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</a>, <a href="/locations/coconut-creek" className="text-red-600 hover:text-red-500 transition-colors">Coconut Creek</a>, <a href="/locations/parkland" className="text-red-600 hover:text-red-500 transition-colors">Parkland</a>, <a href="/locations/oakland-park" className="text-red-600 hover:text-red-500 transition-colors">Oakland Park</a>, <a href="/locations/sunrise" className="text-red-600 hover:text-red-500 transition-colors">Sunrise</a>, <a href="/locations/weston" className="text-red-600 hover:text-red-500 transition-colors">Weston</a>
               </p>
+
+              <h3 className="text-2xl font-bold text-white mb-6">
+                County
+              </h3>
+              <div className="overflow-x-auto mb-12">
+                <table className="w-full border-collapse bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-zinc-800">
+                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-700">County</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-700">Core cities we serve</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold border-b border-zinc-700">Typical projects</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-zinc-800 hover:bg-zinc-800/50 transition-colors">
+                      <td className="px-6 py-4 text-red-600 font-semibold">Palm Beach</td>
+                      <td className="px-6 py-4 text-zinc-300">
+                        <a href="/locations/boca-raton" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</a>, <a href="/locations/delray-beach" className="text-red-600 hover:text-red-500 transition-colors">Delray</a>, <a href="/locations/boynton-beach" className="text-red-600 hover:text-red-500 transition-colors">Boynton</a>, <a href="/locations/west-palm-beach" className="text-red-600 hover:text-red-500 transition-colors">West Palm</a>
+                      </td>
+                      <td className="px-6 py-4 text-zinc-300">Tile resets, reroofs, leak repairs</td>
+                    </tr>
+                    <tr className="hover:bg-zinc-800/50 transition-colors">
+                      <td className="px-6 py-4 text-red-600 font-semibold">Broward</td>
+                      <td className="px-6 py-4 text-zinc-300">
+                        <a href="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 transition-colors">Deerfield</a>, <a href="/locations/pompano-beach" className="text-red-600 hover:text-red-500 transition-colors">Pompano</a>, <a href="/locations/fort-lauderdale" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</a>, <a href="/locations/coral-springs" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</a>
+                      </td>
+                      <td className="px-6 py-4 text-zinc-300">Repairs, replacements, commercial systems</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Florida's "25% rule" and reroof decisions in plain English
+              </h2>
+              <p className="text-zinc-300 leading-relaxed mb-4">
+                Homeowners ask this nonstop because it affects repair vs replacement.
+              </p>
+              <p className="text-zinc-300 leading-relaxed mb-4">
+                Florida's older "25% rule" language appears in Florida Building Code references, but SB 4-D revised how this is applied for many roofs. In many cases, when 25% or more is repaired, only that portion must be brought up to current code if the existing roof complies with the 2007 Florida Building Code or later.
+              </p>
+              <p className="text-zinc-300 leading-relaxed mb-8">
+                Local enforcement can still vary, so we treat this as a permit-and-inspection conversation, not a guess.
+              </p>
+
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Palm Beach County (partial list)
+              </h3>
+              <p className="text-zinc-300 leading-relaxed mb-8">
+                <a href="/locations/boca-raton" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</a>, <a href="/locations/delray-beach" className="text-red-600 hover:text-red-500 transition-colors">Delray Beach</a>, <a href="/locations/boynton-beach" className="text-red-600 hover:text-red-500 transition-colors">Boynton Beach</a>, <a href="/locations/lake-worth" className="text-red-600 hover:text-red-500 transition-colors">Lake Worth</a>, <a href="/locations/wellington" className="text-red-600 hover:text-red-500 transition-colors">Wellington</a>, <a href="/locations/west-palm-beach" className="text-red-600 hover:text-red-500 transition-colors">West Palm Beach</a>, <a href="/locations/palm-beach-gardens" className="text-red-600 hover:text-red-500 transition-colors">Palm Beach Gardens</a>, <a href="/locations/jupiter" className="text-red-600 hover:text-red-500 transition-colors">Jupiter</a>
+              </p>
+
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Broward County (partial list)
+              </h3>
+              <p className="text-zinc-300 leading-relaxed mb-8">
+                <a href="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 transition-colors">Deerfield Beach</a>, <a href="/locations/pompano-beach" className="text-red-600 hover:text-red-500 transition-colors">Pompano Beach</a>, <a href="/locations/fort-lauderdale" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</a>, <a href="/locations/coral-springs" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</a>, <a href="/locations/coconut-creek" className="text-red-600 hover:text-red-500 transition-colors">Coconut Creek</a>, <a href="/locations/parkland" className="text-red-600 hover:text-red-500 transition-colors">Parkland</a>, <a href="/locations/oakland-park" className="text-red-600 hover:text-red-500 transition-colors">Oakland Park</a>, <a href="/locations/sunrise" className="text-red-600 hover:text-red-500 transition-colors">Sunrise</a>, <a href="/locations/weston" className="text-red-600 hover:text-red-500 transition-colors">Weston</a>
+              </p>
             </div>
 
             <PhotoBreak
