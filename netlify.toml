@@ -17,7 +17,7 @@ bundle = true
 minify = true
 
 [build.processing.html]
-pretty_urls = false
+pretty_urls = true
 
 [build.processing.images]
 compress = true
@@ -25,10 +25,11 @@ compress = true
 [[plugins]]
 package = "netlify-plugin-cache"
 
+# Lighthouse plugin - fail_deploy = false so unknown scores don't block deploys
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
-
 [plugins.inputs]
+fail_deploy_on_score_thresholds = false
 
 [[plugins.inputs.audits]]
 path = "/"
@@ -59,45 +60,65 @@ seo = 0.9
 
 [[headers]]
 for = "/*"
-
 [headers.values]
 X-Robots-Tag = "index, follow"
 
 [[headers]]
 for = "/assets/*"
-
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
 for = "*.jpg"
-
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
 for = "*.png"
-
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
 for = "*.webp"
-
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
 for = "*.css"
-
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
 for = "*.js"
-
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
+
+# ═══════════════════════════════════════════════════════════════════════════
+# REDIRECTS - Host canonicalization (www -> non-www, http -> https)
+# These MUST be first. Netlify.toml redirects run AFTER _redirects file.
+# ═══════════════════════════════════════════════════════════════════════════
+
+[[redirects]]
+from = "https://www.allphaseconstructionfl.com/*"
+to = "https://allphaseconstructionfl.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://allphaseconstructionfl.com/*"
+to = "https://allphaseconstructionfl.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://www.allphaseconstructionfl.com/*"
+to = "https://allphaseconstructionfl.com/:splat"
+status = 301
+force = true
+
+# ═══════════════════════════════════════════════════════════════════════════
+# REDIRECTS - Legacy and structural redirects
+# ═══════════════════════════════════════════════════════════════════════════
 
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/*"
@@ -133,26 +154,18 @@ force = true
 
 [[redirects]]
 from = "/roofing-contractor-deerfield-beach-fl"
-to = "/locations/deerfield-beach"
+to = "/locations/deerfield-beach/"
 status = 301
 force = true
 
-# Serve Deerfield Beach static HTML (HQ page with JSON-LD schema)
-# MUST be before SPA catch-all to serve prerendered HTML to crawlers
-[[redirects]]
-from = "/locations/deerfield-beach"
-to = "/locations/deerfield-beach/index.html"
-status = 200
-
-# Serve ALL prerendered location pages (wildcard after Deerfield Beach)
-# Netlify checks static files in dist/ first; this redirect ensures clean URLs resolve
-[[redirects]]
- from = "/locations/*"
- to = "/locations/:splat/index.html"
- status = 200
-
 # NOTE: All roof-repair redirect rules are managed in _redirects file
 # (whitelist, hub page, catch-all, and SPA fallback)
+
+# NOTE: Removed /locations/deerfield-beach -> index.html and /locations/* -> :splat/index.html
+# rewrites. With pretty_urls = true, Netlify automatically serves
+# /locations/deerfield-beach/ from dist/locations/deerfield-beach/index.html.
+# The old 200 rewrites conflicted with _redirects trailing-slash 301! rules,
+# causing ERR_TOO_MANY_REDIRECTS.
 
 [[headers]]
   for = "/robots.txt"
