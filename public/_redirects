@@ -77,6 +77,6 @@
 /roof-repair/wellington /index.html 200!
 /roof-repair/tamarac /index.html 200!
 # Catch-all: redirect all other roof-repair city pages to /roof-repair/
-/roof-repair/* /roof-repair/ 301
+/roof-repair/* /roof-repair/ 301!
 
 /* /index.html 200
