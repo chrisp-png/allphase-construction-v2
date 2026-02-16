@@ -125,37 +125,37 @@ export default function PompanoBeachPage() {
     {
       title: 'Tile Roofing',
       description: "Concrete and clay tile for Pompano Beach homes. Foam adhesive installation for superior wind resistance in our coastal environment.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Standing seam and metal shingles for Pompano Beach properties seeking maximum durability and salt air resistance.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "High-wind rated architectural shingles for Pompano Beach's residential neighborhoods. HVHZ compliant installation.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "TPO, PVC, and modified bitumen for Pompano Beach's condos, commercial buildings, and flat-roof homes. Proper drainage and seam welding expertise.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Comprehensive repairs for Pompano Beach's aging properties. 5-year certification letters available to protect your insurance.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Retail, office, and multi-family properties throughout Pompano Beach. From small buildings to large commercial projects.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -199,12 +199,12 @@ export default function PompanoBeachPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl' },
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl' },
-    { name: 'Lighthouse Point', path: '/roofing-contractor-lighthouse-point-fl' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl' }
+    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Lighthouse Point', path: '/roofing-contractor-lighthouse-point-fl/' },
+    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
+    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
+    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' }
   ];
 
   const faqs = [
@@ -239,11 +239,11 @@ export default function PompanoBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -286,7 +286,7 @@ export default function PompanoBeachPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Pompano Beach
@@ -310,7 +310,7 @@ export default function PompanoBeachPage() {
                 While our main office is located in Deerfield Beach, our licensed roofing crews regularly service homes and commercial properties throughout Pompano Beach and nearby communities. Pompano Beach is a city in transition — a mix of longtime residents, new developments, and everything in between. From the beachfront condos along A1A to the established neighborhoods west of Federal Highway, from the commercial corridors to the residential streets of Cypress Creek, we've been roofing Pompano Beach properties for over two decades.
               </p>
               <p>
-                Located just 3 miles south of our Deerfield Beach headquarters, Pompano Beach is one of our closest and most active service areas. We know this city's roofs — the <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> needed for mid-rise condos, the aging shingle roofs on 1970s homes, the <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> required for newer construction, and everything in between. Coastal properties with metal roofing systems need regular <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to detect salt air corrosion early.
+                Located just 3 miles south of our Deerfield Beach headquarters, Pompano Beach is one of our closest and most active service areas. We know this city's roofs — the <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> needed for mid-rise condos, the aging shingle roofs on 1970s homes, the <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> required for newer construction, and everything in between. Coastal properties with metal roofing systems need regular <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to detect salt air corrosion early.
               </p>
               <p>
                 Pompano Beach is also undergoing significant redevelopment. Older buildings are being renovated, new construction is rising, and property owners are investing in their buildings. Whether you're maintaining an existing property or upgrading for the future, we deliver roofing that meets HVHZ standards and stands up to Pompano's coastal environment.
@@ -510,7 +510,7 @@ export default function PompanoBeachPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    to="/roof-cost-calculator"
+                    to="/roof-cost-calculator/"
                     className="flex-1 bg-zinc-800 border border-zinc-700 rounded-lg p-4 hover:border-red-600 transition-all duration-300 group"
                   >
                     <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -521,7 +521,7 @@ export default function PompanoBeachPage() {
                     </p>
                   </Link>
                   <Link
-                    to="/blog/roof-pricing-financing-guide"
+                    to="/blog/roof-pricing-financing-guide/"
                     className="flex-1 bg-zinc-800 border border-zinc-700 rounded-lg p-4 hover:border-red-600 transition-all duration-300 group"
                   >
                     <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -586,7 +586,7 @@ export default function PompanoBeachPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -641,7 +641,7 @@ export default function PompanoBeachPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

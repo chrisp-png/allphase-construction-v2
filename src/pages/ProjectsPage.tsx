@@ -251,7 +251,7 @@ export default function ProjectsPage() {
                     Call <a href="tel:+17542275605" className="font-bold hover:underline">(754) 227-5605</a> for a Free Estimate
                   </p>
                   <a
-                    href="/contact"
+                    href="/contact/"
                     className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
                     <Phone className="w-5 h-5" />

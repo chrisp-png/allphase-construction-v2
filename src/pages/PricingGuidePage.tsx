@@ -113,7 +113,7 @@ export default function PricingGuidePage() {
                 <li>Insurance considerations including wind mitigation credits and coverage requirements</li>
               </ul>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                This guide provides detailed explanations and comparisons to help you understand the factors behind pricing decisions. For homeowners seeking a fast ballpark estimate based on their specific home, our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-700 font-semibold underline">Roof Cost Calculator</Link> provides instant price ranges tailored to South Florida requirements.
+                This guide provides detailed explanations and comparisons to help you understand the factors behind pricing decisions. For homeowners seeking a fast ballpark estimate based on their specific home, our <Link to="/roof-cost-calculator/" className="text-red-600 hover:text-red-700 font-semibold underline">Roof Cost Calculator</Link> provides instant price ranges tailored to South Florida requirements.
               </p>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8">
                 <p className="text-gray-800 font-medium">
@@ -138,7 +138,7 @@ export default function PricingGuidePage() {
                 Once you understand what influences roof pricing in South Florida, you can use our Roof Cost Calculator to see how these factors may apply to your home.
               </p>
               <Link
-                to="/calculator"
+                to="/calculator/"
                 className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg text-lg"
               >
                 <Calculator className="w-5 h-5" />
@@ -683,7 +683,7 @@ export default function PricingGuidePage() {
                 </p>
                 <div className="mt-6">
                   <Link
-                    to="/easy-payments"
+                    to="/easy-payments/"
                     className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors"
                   >
                     Learn about our financing options →
@@ -768,7 +768,7 @@ export default function PricingGuidePage() {
                     Whether you're planning a roof replacement, addressing repairs, or need documentation for insurance purposes, a professional inspection provides the accurate information needed to make informed decisions with confidence.
                   </p>
                   <Link
-                    to="/roof-inspection"
+                    to="/roof-inspection/"
                     className="inline-flex items-center px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     <ClipboardCheck className="w-5 h-5 mr-2" />
@@ -859,7 +859,7 @@ export default function PricingGuidePage() {
               Use our free roof cost calculator to get an estimated price range for your specific home and material preferences.
             </p>
             <Link
-              to="/roof-cost-calculator"
+              to="/roof-cost-calculator/"
               className="inline-block px-8 py-4 bg-white text-red-600 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Calculate Your Roof Cost
