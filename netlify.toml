@@ -161,22 +161,6 @@ force = true
 # NOTE: All roof-repair redirect rules are managed in _redirects file
 # (whitelist, hub page, catch-all, and SPA fallback)
 
-# ═══════════════════════════════════════════════════════════════════════════
-# REWRITES - Serve pre-rendered location pages (pretty_urls is OFF)
-# With pretty_urls = false, we need explicit rewrites to serve index.html
-# from pre-rendered location directories.
-# ═══════════════════════════════════════════════════════════════════════════
-
-[[redirects]]
-from = "/locations/:city/"
-to = "/locations/:city/index.html"
-status = 200
-
-[[redirects]]
-from = "/locations/:city/:sub/"
-to = "/locations/:city/:sub/index.html"
-status = 200
-
 [[headers]]
   for = "/robots.txt"
   [headers.values]
