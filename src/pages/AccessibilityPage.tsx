@@ -187,7 +187,7 @@ export default function AccessibilityPage() {
 
         <div className="mt-12 pt-8 border-t border-zinc-800">
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
           >
             Contact Us About Accessibility

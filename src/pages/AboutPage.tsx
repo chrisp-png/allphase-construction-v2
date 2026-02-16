@@ -168,7 +168,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-block mt-8 px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
               >
                 Schedule Your Free Inspection
@@ -342,7 +342,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
             >
               Schedule Free Inspection

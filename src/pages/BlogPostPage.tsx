@@ -271,7 +271,7 @@ export default function BlogPostPage() {
             The blog post you're looking for doesn't exist or has been removed.
           </p>
           <Link
-            to="/blog"
+            to="/blog/"
             className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -301,7 +301,7 @@ export default function BlogPostPage() {
         <div className="bg-gradient-to-br from-black via-zinc-900 to-black text-white py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link
-              to="/blog"
+              to="/blog/"
               className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-6 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -457,7 +457,7 @@ export default function BlogPostPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/roof-cost-calculator"
+                to="/roof-cost-calculator/"
                 className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-xl inline-flex items-center justify-center gap-2"
               >
                 Request a Roofing Estimate

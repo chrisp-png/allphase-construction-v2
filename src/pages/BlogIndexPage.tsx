@@ -247,14 +247,14 @@ export default function BlogIndexPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-xl inline-flex items-center justify-center gap-2"
               >
                 Contact Us Today
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                to="/roof-cost-calculator"
+                to="/roof-cost-calculator/"
                 className="bg-black text-white px-8 py-4 rounded-lg font-bold hover:bg-zinc-900 transition-all shadow-xl border border-white/20"
               >
                 Request a Roofing Estimate
