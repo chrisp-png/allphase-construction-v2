@@ -200,41 +200,53 @@ export default function BocaRatonPage() {
                 Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team follows strict safety protocols and ensures all work meets or exceeds safety standards.
               </p>
 
-              <h3 className="text-xl font-semibold text-white mb-4">
-                The Proof Stack
-              </h3>
-              <p className="text-zinc-300 mb-4">Trust is not a slogan. It is receipts you can verify.</p>
-              <ul className="space-y-3 mb-12">
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>BBB A+ rated</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>4.8★ Google rating (137 reviews)</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Dual-licensed: Roofing Contractor CCC-1331464 + General Contractor CGC-1526236</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Manufacturer certifications including Tamko Platinum Preferred and multiple major system credentials</span>
-                </li>
-                <li className="flex items-start gap-3 text-zinc-300">
-                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span>Specialized crews by system</span>
-                </li>
-              </ul>
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8 mb-8">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  The Proof Stack
+                </h3>
+                <p className="text-zinc-300 text-lg mb-6">Trust is not a slogan. It is receipts you can verify.</p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">BBB A+ rated</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">4.8★ Google rating (137 reviews)</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Dual-licensed: Roofing Contractor CCC-1331464 + General Contractor CGC-1526236</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Manufacturer certifications, including Tamko Platinum Preferred, plus multiple major system credentials</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-zinc-300">
+                    <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">Specialized crews by system</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-zinc-300 leading-relaxed mb-6 text-lg">
+                Certified roofing solutions and quality work are provided to all customers, ensuring every project meets the highest standards.
+              </p>
 
               <p className="text-zinc-300 leading-relaxed mb-6">
-                Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.
+                Boca Raton storms create wind-driven rain that exposes weak flashing and underlayment. Different roof types fail in different ways. We assign the right crew to the right system so installs are cleaner, repairs are tighter, and callbacks drop.
               </p>
-              <p className="text-zinc-300 leading-relaxed mb-4">
+
+              <p className="text-zinc-300 leading-relaxed mb-6">
                 Shingle crew for shingles. Tile crew for tile. Metal crew for metal. Flat crew for flat systems.
               </p>
+
+              <p className="text-zinc-300 leading-relaxed mb-6">
+                All Phase Construction USA installs code-compliant roofing systems in Boca Raton.
+              </p>
+
               <p className="text-zinc-300 leading-relaxed mb-4">
-                All Phase Construction USA installs code-compliant roofing systems in Boca Raton and handles permits and inspections for reroof projects.
+                Our team handles permits and inspections for reroof projects.
               </p>
             </div>
 
