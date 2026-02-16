@@ -70,37 +70,37 @@ export default function JupiterPage() {
     {
       title: 'Tile Roofing',
       description: "Jupiter's most popular choice. Premium concrete and clay tile installations built for Florida's climate and architectural styles.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Growing in popularity across Jupiter for energy efficiency, durability, and modern aesthetics. 50+ year lifespan.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Quality architectural shingles for Jupiter's diverse neighborhoods — from starter homes to family estates.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Modern flat roofing systems for Jupiter's commercial buildings and contemporary residential designs.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Extending the life of Jupiter roofs with expert repairs and required 5-year certification letters.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Retail centers, office buildings, and commercial properties throughout Jupiter and Abacoa.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -144,12 +144,12 @@ export default function JupiterPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl' },
-    { name: 'Juno Beach', path: '/roofing-contractor-juno-beach-fl' },
-    { name: 'Tequesta', path: '/roofing-contractor-tequesta-fl' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl' },
-    { name: 'Jupiter Inlet Colony', path: '/roofing-contractor-jupiter-inlet-colony-fl' }
+    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
+    { name: 'Juno Beach', path: '/roofing-contractor-juno-beach-fl/' },
+    { name: 'Tequesta', path: '/roofing-contractor-tequesta-fl/' },
+    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
+    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
+    { name: 'Jupiter Inlet Colony', path: '/roofing-contractor-jupiter-inlet-colony-fl/' }
   ];
 
   const faqs = [
@@ -188,11 +188,11 @@ export default function JupiterPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -235,7 +235,7 @@ export default function JupiterPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Jupiter
@@ -262,7 +262,7 @@ export default function JupiterPage() {
                 Jupiter presents unique roofing challenges. Coastal properties face salt air corrosion and direct ocean exposure. Inland neighborhoods deal with intense UV exposure and hurricane-force wind threats. Whether you own a home near Jupiter Beach, in Abacoa's master-planned community, or in western Jupiter's growing neighborhoods, your roof faces conditions that demand expertise and proper installation.
               </p>
               <p>
-                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
+                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
               </p>
             </div>
           </div>
@@ -411,7 +411,7 @@ export default function JupiterPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -466,7 +466,7 @@ export default function JupiterPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

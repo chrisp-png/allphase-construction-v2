@@ -132,49 +132,49 @@ export default function LakeWorthBeachPage() {
     {
       title: 'Roof Repair',
       description: 'Focused repairs addressing leaks, storm damage, and material wear.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Roof Replacement',
       description: 'Full roofing system replacements built to current Florida code standards.',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Shingle Roofing',
       description: 'Wind-rated shingle systems suitable for South Florida homes.',
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Tile Roofing',
       description: 'Clay and concrete tile systems designed for durability and longevity.',
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: 'Long-lasting, wind-resistant roofing solutions.',
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Flat Roofing',
       description: 'Low-slope roofing systems designed for proper drainage and sealing.',
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Emergency Roof Repair',
       description: 'Prompt response for active leaks or storm-related damage.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Leak Detection & Prevention',
       description: 'Identification of moisture entry points and preventative solutions.',
-      path: '/roof-inspection',
+      path: '/roof-inspection/',
       icon: Shield
     }
   ];
@@ -281,11 +281,11 @@ export default function LakeWorthBeachPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -300,7 +300,7 @@ export default function LakeWorthBeachPage() {
               </span>
             </h1>
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-              All Phase Construction USA provides professional roofing services throughout Lake Worth Beach for residential and light commercial properties. From targeted <Link to="/roofing-services/roof-repair" className="text-red-500 hover:text-red-400 underline">roof repairs</Link> to complete <Link to="/residential-roofing" className="text-red-500 hover:text-red-400 underline">roof replacements</Link>, our team supports Lake Worth Beach property owners with dependable service and consistent oversight. Operating from our <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline">Deerfield Beach headquarters</Link>, we deliver roofing systems designed for South Florida weather exposure, longevity, and Florida code compliance.
+              All Phase Construction USA provides professional roofing services throughout Lake Worth Beach for residential and light commercial properties. From targeted <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline">roof repairs</Link> to complete <Link to="/residential-roofing/" className="text-red-500 hover:text-red-400 underline">roof replacements</Link>, our team supports Lake Worth Beach property owners with dependable service and consistent oversight. Operating from our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline">Deerfield Beach headquarters</Link>, we deliver roofing systems designed for South Florida weather exposure, longevity, and Florida code compliance.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
@@ -325,7 +325,7 @@ export default function LakeWorthBeachPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
@@ -349,10 +349,10 @@ export default function LakeWorthBeachPage() {
                 Our roofing teams regularly serve Lake Worth Beach from our Deerfield Beach headquarters, allowing for efficient scheduling and direct jobsite supervision. This regional coverage supports familiarity with Lake Worth Beach permitting processes, inspection requirements, and Florida Building Code standards. Each project is completed with attention to wind resistance, moisture control, and accurate documentation.
               </p>
               <p>
-                Lake Worth Beach is part of <Link to="/palm-beach-county" className="text-red-500 hover:text-red-400 underline">Palm Beach County</Link>, where we provide comprehensive roofing services to neighboring communities including <Link to="/locations/deerfield-beach/service-area/boynton-beach" className="text-red-500 hover:text-red-400 underline">Boynton Beach</Link>, <Link to="/locations/deerfield-beach/service-area/lantana" className="text-red-500 hover:text-red-400 underline">Lantana</Link>, and <Link to="/locations/deerfield-beach/service-area/hypoluxo" className="text-red-500 hover:text-red-400 underline">Hypoluxo</Link>. Our familiarity with local building codes and coastal requirements ensures every installation meets or exceeds regional standards.
+                Lake Worth Beach is part of <Link to="/palm-beach-county/" className="text-red-500 hover:text-red-400 underline">Palm Beach County</Link>, where we provide comprehensive roofing services to neighboring communities including <Link to="/locations/deerfield-beach/service-area/boynton-beach/" className="text-red-500 hover:text-red-400 underline">Boynton Beach</Link>, <Link to="/locations/deerfield-beach/service-area/lantana/" className="text-red-500 hover:text-red-400 underline">Lantana</Link>, and <Link to="/locations/deerfield-beach/service-area/hypoluxo/" className="text-red-500 hover:text-red-400 underline">Hypoluxo</Link>. Our familiarity with local building codes and coastal requirements ensures every installation meets or exceeds regional standards.
               </p>
               <p>
-                Whether you need a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">professional roof inspection</Link>, emergency storm damage repairs, or a complete roof system replacement, our licensed contractors provide detailed assessments and transparent recommendations. We specialize in <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile roofing systems</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal roofs</Link>, <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">wind-rated shingles</Link>, and <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat roofing applications</Link>.
+                Whether you need a <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">professional roof inspection</Link>, emergency storm damage repairs, or a complete roof system replacement, our licensed contractors provide detailed assessments and transparent recommendations. We specialize in <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">tile roofing systems</Link>, <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">metal roofs</Link>, <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">wind-rated shingles</Link>, and <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline">flat roofing applications</Link>.
               </p>
             </div>
           </div>
@@ -540,11 +540,11 @@ export default function LakeWorthBeachPage() {
                     <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
                       {faq.answer === 'roofing_systems_answer' ? (
                         <p className="text-zinc-400 leading-relaxed">
-                          <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal</Link>, wind-rated <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle</Link>, and properly installed <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat roofing systems</Link> perform well in Lake Worth Beach conditions.
+                          <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">Tile</Link>, <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">metal</Link>, wind-rated <Link to="/shingle-roofing/" className="text-red-500 hover:text-red-400 underline">shingle</Link>, and properly installed <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline">flat roofing systems</Link> perform well in Lake Worth Beach conditions.
                         </p>
                       ) : faq.answer === 'roof_inspections_answer' ? (
                         <p className="text-zinc-400 leading-relaxed">
-                          Yes. Free <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> are available for Lake Worth Beach property owners.
+                          Yes. Free <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> are available for Lake Worth Beach property owners.
                         </p>
                       ) : (
                         <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
@@ -581,15 +581,15 @@ export default function LakeWorthBeachPage() {
                     <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
                       {faq.answer === 'inspection_frequency_answer' ? (
                         <p className="text-zinc-400 leading-relaxed">
-                          Roofs in Lake Worth Beach should be <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">inspected</Link> annually and after major storms to identify early signs of damage.
+                          Roofs in Lake Worth Beach should be <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">inspected</Link> annually and after major storms to identify early signs of damage.
                         </p>
                       ) : faq.answer === 'longevity_answer' ? (
                         <p className="text-zinc-400 leading-relaxed">
-                          <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">Metal</Link> and <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile roofing systems</Link> typically provide the longest lifespan in Lake Worth Beach due to their resistance to wind, heat, and moisture.
+                          <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline">Metal</Link> and <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline">tile roofing systems</Link> typically provide the longest lifespan in Lake Worth Beach due to their resistance to wind, heat, and moisture.
                         </p>
                       ) : faq.answer === 'leak_causes_answer' ? (
                         <p className="text-zinc-400 leading-relaxed">
-                          Yes, wind-driven rain can expose flashing or transition weaknesses even when surface materials appear intact. A <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">professional roof inspection</Link> can identify these vulnerabilities before they cause interior damage.
+                          Yes, wind-driven rain can expose flashing or transition weaknesses even when surface materials appear intact. A <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline">professional roof inspection</Link> can identify these vulnerabilities before they cause interior damage.
                         </p>
                       ) : (
                         <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
@@ -610,7 +610,7 @@ export default function LakeWorthBeachPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

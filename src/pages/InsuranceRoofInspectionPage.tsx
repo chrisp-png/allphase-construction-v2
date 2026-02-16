@@ -65,7 +65,7 @@ export default function InsuranceRoofInspectionPage() {
               Home
             </Link>
             <ChevronRight className="w-4 h-4 text-slate-400" />
-            <Link to="/roof-inspection" className="text-slate-300 hover:text-white transition-colors">
+            <Link to="/roof-inspection/" className="text-slate-300 hover:text-white transition-colors">
               Roof Inspection
             </Link>
             <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -89,7 +89,7 @@ export default function InsuranceRoofInspectionPage() {
                 (754) 227-5605
               </a>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center justify-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-slate-700 transition-colors border border-slate-700"
               >
                 Request Inspection
@@ -589,28 +589,28 @@ export default function InsuranceRoofInspectionPage() {
                     Broward County
                   </h3>
                   <div className="space-y-2">
-                    <Link to="/roofing-contractor-fort-lauderdale-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-fort-lauderdale-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Fort Lauderdale
                     </Link>
-                    <Link to="/roofing-contractor-coral-springs-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-coral-springs-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Coral Springs
                     </Link>
-                    <Link to="/roofing-contractor-pompano-beach-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-pompano-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Pompano Beach
                     </Link>
-                    <Link to="/roofing-contractor-deerfield-beach-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-deerfield-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Deerfield Beach
                     </Link>
-                    <Link to="/roofing-contractor-plantation-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-plantation-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Plantation
                     </Link>
-                    <Link to="/roofing-contractor-hollywood-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-hollywood-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Hollywood
                     </Link>
-                    <Link to="/roofing-contractor-davie-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-davie-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Davie
                     </Link>
-                    <Link to="/roofing-contractor-weston-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-weston-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Weston
                     </Link>
                   </div>
@@ -621,28 +621,28 @@ export default function InsuranceRoofInspectionPage() {
                     Palm Beach County
                   </h3>
                   <div className="space-y-2">
-                    <Link to="/roofing-contractor-boca-raton-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-boca-raton-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Boca Raton
                     </Link>
-                    <Link to="/roofing-contractor-delray-beach-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-delray-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Delray Beach
                     </Link>
-                    <Link to="/roofing-contractor-boynton-beach-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-boynton-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Boynton Beach
                     </Link>
-                    <Link to="/roofing-contractor-west-palm-beach-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-west-palm-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       West Palm Beach
                     </Link>
-                    <Link to="/roofing-contractor-wellington-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-wellington-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Wellington
                     </Link>
-                    <Link to="/roofing-contractor-lake-worth-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-lake-worth-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Lake Worth
                     </Link>
-                    <Link to="/roofing-contractor-palm-beach-gardens-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-palm-beach-gardens-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Palm Beach Gardens
                     </Link>
-                    <Link to="/roofing-contractor-jupiter-fl" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/roofing-contractor-jupiter-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Jupiter
                     </Link>
                   </div>
@@ -680,7 +680,7 @@ export default function InsuranceRoofInspectionPage() {
                 (754) 227-5605
               </a>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="block text-center bg-slate-800 text-white px-6 py-4 rounded-lg font-semibold hover:bg-slate-700 transition-colors border border-slate-700"
               >
                 Request Online
@@ -693,31 +693,31 @@ export default function InsuranceRoofInspectionPage() {
                 </h3>
                 <div className="space-y-2">
                   <Link
-                    to="/roof-inspection"
+                    to="/roof-inspection/"
                     className="block text-slate-300 hover:text-white transition-colors"
                   >
                     Standard Roof Inspection
                   </Link>
                   <Link
-                    to="/tile-roof-inspection-broward-county"
+                    to="/tile-roof-inspection-broward-county/"
                     className="block text-slate-300 hover:text-white transition-colors"
                   >
                     Tile Roof Inspection
                   </Link>
                   <Link
-                    to="/metal-roof-inspection-broward-county"
+                    to="/metal-roof-inspection-broward-county/"
                     className="block text-slate-300 hover:text-white transition-colors"
                   >
                     Metal Roof Inspection
                   </Link>
                   <Link
-                    to="/flat-roof-inspection-broward-county"
+                    to="/flat-roof-inspection-broward-county/"
                     className="block text-slate-300 hover:text-white transition-colors"
                   >
                     Flat Roof Inspection
                   </Link>
                   <Link
-                    to="/roofing-services/roof-repair"
+                    to="/roofing-services/roof-repair/"
                     className="block text-slate-300 hover:text-white transition-colors"
                   >
                     Roof Repair Services

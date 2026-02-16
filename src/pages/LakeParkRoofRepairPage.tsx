@@ -119,7 +119,7 @@ export default function LakeParkRoofRepairPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roofing-services/roof-repair" className="hover:text-red-500 transition-colors">Roof Repair</Link>
+            <Link to="/roofing-services/roof-repair/" className="hover:text-red-500 transition-colors">Roof Repair</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Lake Park</span>
           </div>
@@ -131,7 +131,7 @@ export default function LakeParkRoofRepairPage() {
 
           {/* Hero Paragraph */}
           <p className="text-xl text-zinc-300 mb-6 max-w-4xl leading-relaxed">
-            In Lake Park, where properties can see intense sun and heat cycling, seasonal storm-driven rain, and mixed roof types, leaks often originate at penetrations, flashing transitions, drainage points, or specific slopes rather than the entire roof system at once. All Phase Construction USA provides <Link to="/roofing-services/roof-inspection" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> services that identify root causes before repair work begins, supporting code-aware decisions tailored to the observed condition.
+            In Lake Park, where properties can see intense sun and heat cycling, seasonal storm-driven rain, and mixed roof types, leaks often originate at penetrations, flashing transitions, drainage points, or specific slopes rather than the entire roof system at once. All Phase Construction USA provides <Link to="/roofing-services/roof-inspection/" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> services that identify root causes before repair work begins, supporting code-aware decisions tailored to the observed condition.
           </p>
 
           {/* Hero Bullets */}
@@ -157,7 +157,7 @@ export default function LakeParkRoofRepairPage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule Free Inspection
@@ -413,7 +413,7 @@ export default function LakeParkRoofRepairPage() {
               </li>
             </ul>
             <p className="text-zinc-300 leading-relaxed mt-6">
-              For more information on <Link to="/service-areas/lake-park" className="text-red-500 hover:text-red-400 underline">service area coverage in Lake Park</Link>, visit the local service area hub.
+              For more information on <Link to="/service-areas/lake-park/" className="text-red-500 hover:text-red-400 underline">service area coverage in Lake Park</Link>, visit the local service area hub.
             </p>
           </div>
 
@@ -513,15 +513,15 @@ export default function LakeParkRoofRepairPage() {
             <ul className="space-y-3">
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Get a preliminary <Link to="/service-areas/lake-park/roof-cost-estimate" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> based on your Lake Park property details and repair scope.</span>
+                <span>Get a preliminary <Link to="/service-areas/lake-park/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> based on your Lake Park property details and repair scope.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Review available <Link to="/financing" className="text-red-500 hover:text-red-400 underline">easy payment options</Link> to manage repair costs with flexible financing plans.</span>
+                <span>Review available <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">easy payment options</Link> to manage repair costs with flexible financing plans.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Additional coverage details are available on the <Link to="/service-areas/lake-park" className="text-red-500 hover:text-red-400 underline">Lake Park service area hub</Link>.</span>
+                <span>Additional coverage details are available on the <Link to="/service-areas/lake-park/" className="text-red-500 hover:text-red-400 underline">Lake Park service area hub</Link>.</span>
               </li>
             </ul>
           </div>
@@ -680,7 +680,7 @@ export default function LakeParkRoofRepairPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Schedule an Inspection

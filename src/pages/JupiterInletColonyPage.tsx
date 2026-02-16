@@ -98,37 +98,37 @@ export default function JupiterInletColonyPage() {
     {
       title: 'Roof Repair',
       description: 'Targeted repairs addressing leaks, storm damage, and material deterioration.',
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Roof Replacement',
       description: 'Complete roofing system replacements built to Florida code standards.',
-      path: '/residential-roofing',
+      path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Shingle Roofing',
       description: 'Wind-rated shingle systems suitable for coastal environments.',
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Tile Roofing',
       description: 'Clay and concrete tile systems designed for coastal durability.',
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Shield
     },
     {
       title: 'Metal Roofing',
       description: 'Long-lasting, wind-resistant roofing solutions ideal for salt exposure.',
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Flat Roofing',
       description: 'Low-slope roofing systems for residential and multi-unit structures.',
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     }
   ];
@@ -218,11 +218,11 @@ export default function JupiterInletColonyPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -265,7 +265,7 @@ export default function JupiterInletColonyPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
@@ -488,7 +488,7 @@ export default function JupiterInletColonyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection
