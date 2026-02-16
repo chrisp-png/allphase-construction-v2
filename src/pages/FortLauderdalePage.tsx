@@ -125,37 +125,37 @@ export default function FortLauderdalePage() {
     {
       title: 'Tile Roofing',
       description: "Classic barrel and flat tile for Fort Lauderdale's Mediterranean, Spanish, and contemporary homes. Foam adhesive installation for superior wind resistance.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "Standing seam and architectural metal panels for Fort Lauderdale's waterfront properties and modern builds. Corrosion-resistant for coastal exposure.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "High-wind rated architectural shingles for Fort Lauderdale's residential neighborhoods. HVHZ compliant installation.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "TPO, PVC, and modified bitumen for Fort Lauderdale's condos, commercial buildings, and flat-roof homes. Proper drainage engineering included.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Comprehensive repairs for Fort Lauderdale's aging housing stock. 5-year certification letters available to protect your insurance.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Office parks, retail centers, restaurants, and multi-family properties throughout Fort Lauderdale.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -199,12 +199,12 @@ export default function FortLauderdalePage() {
   ];
 
   const nearbyCities = [
-    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl' },
-    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl' },
-    { name: 'Lauderdale-by-the-Sea', path: '/roofing-contractor-lauderdale-by-the-sea-fl' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl' }
+    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl/' },
+    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl/' },
+    { name: 'Lauderdale-by-the-Sea', path: '/roofing-contractor-lauderdale-by-the-sea-fl/' },
+    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
+    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' }
   ];
 
   const faqs = [
@@ -239,11 +239,11 @@ export default function FortLauderdalePage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -283,7 +283,7 @@ export default function FortLauderdalePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Fort Lauderdale
@@ -310,10 +310,10 @@ export default function FortLauderdalePage() {
                 Located just 10 miles from our Deerfield Beach headquarters, Fort Lauderdale represents one of our most active service areas. We've built relationships with property managers, HOA boards, and homeowners across the city — from Wilton Manors to Lauderdale-by-the-Sea, from Plantation to the Rio Vista neighborhood.
               </p>
               <p>
-                Fort Lauderdale's mix of architecture means we work with every roof type: barrel tile on Mediterranean revivals requiring <Link to="/tile-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess underlayment condition, flat roofs on mid-century moderns needing <Link to="/flat-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> for membrane integrity, shingles on ranch homes, and commercial membrane systems on everything from strip malls to office towers. Whatever your property needs, we've installed it here before.
+                Fort Lauderdale's mix of architecture means we work with every roof type: barrel tile on Mediterranean revivals requiring <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess underlayment condition, flat roofs on mid-century moderns needing <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> for membrane integrity, shingles on ranch homes, and commercial membrane systems on everything from strip malls to office towers. Whatever your property needs, we've installed it here before.
               </p>
               <p>
-                Metal roofing systems in Broward County require diagnostic inspection due to HVHZ wind exposure, thermal movement stresses, and concealed attachment systems that cannot be evaluated through surface observation alone. For properties with standing seam or exposed fastener systems, our <Link to="/metal-roof-inspection-broward-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> provide comprehensive evaluation of panel condition, fastener performance, and code compliance.
+                Metal roofing systems in Broward County require diagnostic inspection due to HVHZ wind exposure, thermal movement stresses, and concealed attachment systems that cannot be evaluated through surface observation alone. For properties with standing seam or exposed fastener systems, our <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> provide comprehensive evaluation of panel condition, fastener performance, and code compliance.
               </p>
             </div>
           </div>
@@ -520,7 +520,7 @@ export default function FortLauderdalePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    to="/roof-cost-calculator"
+                    to="/roof-cost-calculator/"
                     className="flex-1 bg-zinc-800 border border-zinc-700 rounded-lg p-4 hover:border-red-600 transition-all duration-300 group"
                   >
                     <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -531,7 +531,7 @@ export default function FortLauderdalePage() {
                     </p>
                   </Link>
                   <Link
-                    to="/blog/roof-pricing-financing-guide"
+                    to="/blog/roof-pricing-financing-guide/"
                     className="flex-1 bg-zinc-800 border border-zinc-700 rounded-lg p-4 hover:border-red-600 transition-all duration-300 group"
                   >
                     <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
@@ -557,7 +557,7 @@ export default function FortLauderdalePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <Link
-                to="/roof-cost-calculator"
+                to="/roof-cost-calculator/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="text-center">
@@ -580,7 +580,7 @@ export default function FortLauderdalePage() {
               </Link>
 
               <Link
-                to="/blog/roof-pricing-financing-guide"
+                to="/blog/roof-pricing-financing-guide/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 hover:border-red-600 transition-all duration-300 group"
               >
                 <div className="text-center">
@@ -657,7 +657,7 @@ export default function FortLauderdalePage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -737,7 +737,7 @@ export default function FortLauderdalePage() {
                   👉 Read: Understanding Roof Costs, Financing Options, and Why Monthly Payments Often Make Sense
                 </p>
                 <Link
-                  to="/blog/roof-pricing-financing-guide"
+                  to="/blog/roof-pricing-financing-guide/"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all"
                 >
                   View Complete Guide
@@ -787,7 +787,7 @@ export default function FortLauderdalePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

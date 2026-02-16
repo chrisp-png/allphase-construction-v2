@@ -175,11 +175,11 @@ export default function HallandaleBeachCalculatorPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-500 hover:text-white transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-500 hover:text-white transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/service-area/hallandale-beach" className="text-zinc-500 hover:text-white transition-colors">
+            <Link to="/locations/deerfield-beach/service-area/hallandale-beach/" className="text-zinc-500 hover:text-white transition-colors">
               Hallandale Beach
             </Link>
             <span className="text-zinc-600">/</span>

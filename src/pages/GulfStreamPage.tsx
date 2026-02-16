@@ -70,37 +70,37 @@ export default function GulfStreamPage() {
     {
       title: 'Tile Roofing',
       description: "Premium concrete and clay tile systems for Gulf Stream's oceanfront estates. Engineered for salt air resistance and architectural beauty.",
-      path: '/tile-roofing',
+      path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
       description: "High-end standing seam metal roofing with superior corrosion resistance for Gulf Stream's coastal environment.",
-      path: '/metal-roofing',
+      path: '/metal-roofing/',
       icon: Shield
     },
     {
       title: 'Shingle Roofing',
       description: "Premium architectural shingles with extended warranties for Gulf Stream properties requiring aesthetic versatility.",
-      path: '/shingle-roofing',
+      path: '/shingle-roofing/',
       icon: Home
     },
     {
       title: 'Flat Roofing',
       description: "Modern flat roofing systems for contemporary Gulf Stream homes. TPO, PVC, and modified bitumen.",
-      path: '/flat-roofing',
+      path: '/flat-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair & Restoration',
       description: "Expert restoration and repair services to protect Gulf Stream's valuable real estate investments.",
-      path: '/roofing-services/roof-repair',
+      path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Commercial Roofing',
       description: "Specialized commercial roofing for Gulf Stream's limited commercial properties and club facilities.",
-      path: '/commercial-roofing',
+      path: '/commercial-roofing/',
       icon: Building2
     }
   ];
@@ -144,12 +144,12 @@ export default function GulfStreamPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl' },
-    { name: 'Highland Beach', path: '/roofing-contractor-highland-beach-fl' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl' },
-    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl' },
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl' },
-    { name: 'Briny Breezes', path: '/roofing-contractor-briny-breezes-fl' }
+    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' },
+    { name: 'Highland Beach', path: '/roofing-contractor-highland-beach-fl/' },
+    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' },
+    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl/' },
+    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
+    { name: 'Briny Breezes', path: '/roofing-contractor-briny-breezes-fl/' }
   ];
 
   const faqs = [
@@ -188,11 +188,11 @@ export default function GulfStreamPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -235,7 +235,7 @@ export default function GulfStreamPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection in Gulf Stream
@@ -262,7 +262,7 @@ export default function GulfStreamPage() {
                 We understand what Gulf Stream properties require: premium materials that can withstand direct Atlantic Ocean exposure, flawless installation that matches the caliber of your estate, and the professionalism and discretion expected in South Florida's luxury market.
               </p>
               <p>
-                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
+                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
               </p>
             </div>
           </div>
@@ -411,7 +411,7 @@ export default function GulfStreamPage() {
             </div>
             <div className="text-center">
               <Link
-                to="/locations"
+                to="/locations/"
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 View All Service Areas
@@ -466,7 +466,7 @@ export default function GulfStreamPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
                 Schedule Free Inspection

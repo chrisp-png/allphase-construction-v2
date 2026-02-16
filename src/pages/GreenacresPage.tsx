@@ -109,55 +109,55 @@ export default function GreenacresPage() {
       title: 'Roof Repair',
       description: 'Fast, reliable roof repair services in Greenacres to fix leaks, damaged shingles, and storm damage.',
       icon: Wrench,
-      path: '/roofing-services/roof-repair'
+      path: '/roofing-services/roof-repair/'
     },
     {
       title: 'Roof Replacement',
       description: 'Complete roof replacement services with durable materials built for Florida weather conditions.',
       icon: Home,
-      path: '/residential-roofing'
+      path: '/residential-roofing/'
     },
     {
       title: 'New Roof Installation',
       description: 'Professional new roof installation for residential and commercial properties in Greenacres.',
       icon: Building2,
-      path: '/residential-roofing'
+      path: '/residential-roofing/'
     },
     {
       title: 'Shingle Roofing',
       description: 'High-quality asphalt shingle roofing systems engineered for Florida hurricane zones.',
       icon: Home,
-      path: '/shingle-roofing'
+      path: '/shingle-roofing/'
     },
     {
       title: 'Metal Roofing',
       description: 'Durable standing seam metal roofing systems with superior wind resistance and longevity.',
       icon: Shield,
-      path: '/metal-roofing'
+      path: '/metal-roofing/'
     },
     {
       title: 'Tile Roofing',
       description: 'Concrete and clay tile roofing systems designed for Florida coastal conditions.',
       icon: Home,
-      path: '/tile-roofing'
+      path: '/tile-roofing/'
     },
     {
       title: 'Flat & Low-Slope Roofing',
       description: 'TPO, PVC, and modified bitumen flat roofing systems for commercial and residential properties.',
       icon: Building2,
-      path: '/flat-roofing'
+      path: '/flat-roofing/'
     },
     {
       title: 'Storm & Hurricane Damage Repair',
       description: 'Emergency storm damage repair and hurricane damage restoration services.',
       icon: Wind,
-      path: '/roofing-services/roof-repair'
+      path: '/roofing-services/roof-repair/'
     },
     {
       title: 'Roof Inspections & Maintenance',
       description: 'Professional roof inspections and preventive maintenance programs.',
       icon: FileCheck,
-      path: '/roof-inspection'
+      path: '/roof-inspection/'
     }
   ];
 
@@ -203,7 +203,7 @@ export default function GreenacresPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas" className="text-zinc-500 hover:text-white transition-colors">
+            <Link to="/locations/service-areas/" className="text-zinc-500 hover:text-white transition-colors">
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
@@ -337,7 +337,7 @@ export default function GreenacresPage() {
                 (754) 227-5605
               </a>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 border border-zinc-700"
               >
                 Request Free Inspection
