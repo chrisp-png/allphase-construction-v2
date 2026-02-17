@@ -13,19 +13,29 @@ function absUrl(pathOrUrl?: string): string | undefined {
 interface SEOProps {
   title?: string;
   description?: string;
+  /** @deprecated Canonical is now managed solely by NuclearMetadata. This prop is ignored. */
   canonicalPath?: string;
   ogImagePath?: string;
   noindex?: boolean;
 }
 
+/**
+ * Per-page SEO overrides via react-helmet-async.
+ *
+ * CANONICAL OWNERSHIP: NuclearMetadata.tsx is the single owner of
+ * <link rel="canonical"> and <meta property="og:url">.
+ * This component intentionally does NOT emit either tag to prevent
+ * duplicate canonical / og:url entries and race conditions.
+ */
 export default function SEO({
   title,
   description,
+  // canonicalPath is accepted but ignored — NuclearMetadata owns canonical
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   canonicalPath,
   ogImagePath,
   noindex = false,
 }: SEOProps) {
-  const canonicalUrl = canonicalPath ? absUrl(canonicalPath) : undefined;
   const ogImageUrl = ogImagePath ? absUrl(ogImagePath) : undefined;
 
   return (
@@ -37,14 +47,13 @@ export default function SEO({
       {/* Robots */}
       <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
 
-      {/* Canonical */}
-      {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
+      {/* NOTE: <link rel="canonical"> and <meta og:url> are NOT set here.
+          NuclearMetadata.tsx is the single owner — see comment above. */}
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       {title ? <meta property="og:title" content={title} /> : null}
       {description ? <meta property="og:description" content={description} /> : null}
-      {canonicalUrl ? <meta property="og:url" content={canonicalUrl} /> : null}
       {ogImageUrl ? <meta property="og:image" content={ogImageUrl} /> : null}
 
       {/* Twitter (optional but clean) */}
