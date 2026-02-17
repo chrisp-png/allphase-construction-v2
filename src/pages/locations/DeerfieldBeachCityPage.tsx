@@ -157,7 +157,7 @@ export default function DeerfieldBeachCityPage() {
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
-                Serving Deerfield Beach (33441/33442) and Broward & Palm Beach Counties with code-compliant roof repair and roof replacement.
+                We diagnose before we quote. Every project starts with a free inspection-first assessment — no pressure, no obligation.
               </p>
 
               {/* Proof Row */}
