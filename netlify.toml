@@ -70,6 +70,11 @@ from = "/sitemap.html"
 to = "/sitemap.html"
 status = 200
 
+[[redirects]]
+from = "/favicon.svg"
+to = "/favicon.svg"
+status = 200
+
 # --- SPA fallback — MUST be last ---
 [[redirects]]
 from = "/*"
