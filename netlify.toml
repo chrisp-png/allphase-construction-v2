@@ -1,3 +1,6 @@
+# ══════════════════════════════════════════════════════════════════
+# BUILD
+# ══════════════════════════════════════════════════════════════════
 [build]
 publish = "dist"
   command = "npx vite build && node scripts/prerender-static.mjs"
@@ -22,6 +25,9 @@ skip_processing = false
   [build.processing.images]
   compress = true
 
+# ══════════════════════════════════════════════════════════════════
+# PLUGINS
+# ══════════════════════════════════════════════════════════════════
 [[plugins]]
 package = "netlify-plugin-cache"
 
@@ -29,6 +35,50 @@ package = "netlify-plugin-cache"
 # [[plugins]]
 # package = "@netlify/plugin-lighthouse"
 
+# ══════════════════════════════════════════════════════════════════
+# EDGE FUNCTIONS
+# Netlify redirect rules CANNOT add or remove trailing slashes
+# (CDN normalises URLs before rules fire). Use an edge function.
+# ══════════════════════════════════════════════════════════════════
+[[edge_functions]]
+function = "strip-slash"
+path = "/*"
+
+# ══════════════════════════════════════════════════════════════════
+# REDIRECTS  (processed AFTER _redirects file)
+# Order: static-file passthrough → SPA fallback (last)
+#
+# NOTE: http→https is handled automatically by Netlify (HTTPS enabled).
+# NOTE: www→non-www is handled automatically (www is domain alias).
+# NOTE: Trailing slash removal is handled by the edge function above.
+# NOTE: Host canonicalization + legacy redirects live in public/_redirects.
+# ══════════════════════════════════════════════════════════════════
+
+# --- Explicit 200 for critical static files (prevent SPA fallback) ---
+[[redirects]]
+from = "/sitemap.xml"
+to = "/sitemap.xml"
+status = 200
+
+[[redirects]]
+from = "/robots.txt"
+to = "/robots.txt"
+status = 200
+
+[[redirects]]
+from = "/sitemap.html"
+to = "/sitemap.html"
+status = 200
+
+# --- SPA fallback — MUST be last ---
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+# ══════════════════════════════════════════════════════════════════
+# HEADERS
+# ══════════════════════════════════════════════════════════════════
 [[headers]]
 for = "/*"
 [headers.values]
@@ -64,10 +114,14 @@ for = "*.js"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
-# All redirects managed in public/_redirects file
-
 [[headers]]
   for = "/robots.txt"
   [headers.values]
   Content-Type = "text/plain"
+  Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+  Content-Type = "application/xml"
   Cache-Control = "public, max-age=3600"
