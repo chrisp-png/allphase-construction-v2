@@ -1286,6 +1286,128 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     totalPages++;
   });
 
+  // 2.3. Generate Additional Location Pages (not in main LOCATIONS array)
+  console.log('\n📍 Generating Additional Location Pages...\n');
+
+  const additionalLocations = [
+    { path: '/locations/gulf-stream', title: 'Gulf Stream, FL Roofing Services', city: 'Gulf Stream' },
+    { path: '/locations/jupiter', title: 'Jupiter, FL Roofing Services', city: 'Jupiter' },
+    { path: '/locations/lake-worth-beach', title: 'Lake Worth Beach, FL Roofing Services', city: 'Lake Worth Beach' },
+    { path: '/locations/loxahatchee-groves', title: 'Loxahatchee Groves, FL Roofing Services', city: 'Loxahatchee Groves' },
+    { path: '/locations/pembroke-park', title: 'Pembroke Park, FL Roofing Services', city: 'Pembroke Park' }
+  ];
+
+  additionalLocations.forEach(({ path: pagePath, title, city }) => {
+    const canonical = `https://allphaseconstructionfl.com${pagePath}`;
+    const description = `Professional roofing services in ${city}, Florida. Expert roof installation, repair, and maintenance from All Phase Construction USA. Licensed, insured, and serving South Florida.`;
+
+    const content = `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+  <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
+    Professional Roofing Services in ${city}, Florida
+  </h1>
+
+  <p style="color: #374151; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">
+    All Phase Construction USA provides expert roofing services to ${city} residents and businesses. As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we bring over two decades of roofing expertise to South Florida, ensuring every project meets the highest standards of quality and hurricane compliance.
+  </p>
+
+  <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
+    <h2 style="color: #111827; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Our ${city} Roofing Services</h2>
+    <ul style="color: #374151; font-size: 1.05rem; line-height: 2; margin: 0; padding-left: 1.5rem;">
+      <li><strong>Roof Repair</strong> — Emergency and scheduled repairs for all roof types</li>
+      <li><strong>Roof Replacement</strong> — Complete reroof with HVHZ-compliant materials</li>
+      <li><strong>Roof Inspection</strong> — Thorough assessments for insurance and peace of mind</li>
+      <li><strong>Preventive Maintenance</strong> — Programs to extend your roof's lifespan</li>
+    </ul>
+  </div>
+
+  <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Why Choose All Phase Construction USA?</h2>
+
+  <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+    Based in nearby Deerfield Beach, we've served the ${city} community for over 20 years. Our team understands South Florida's unique roofing challenges, from hurricane-force winds to intense UV exposure and heavy rainfall. Every roof we install or repair is built to protect your property for decades.
+  </p>
+
+  <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+    <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Schedule Your Free Roofing Consultation</h3>
+    <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA today for expert roofing service in ${city}.</p>
+    <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+    `.trim();
+
+    const html = createHTMLTemplate(title, description, canonical, content);
+    const dir = path.join(publicDir, pagePath.substring(1));
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), html);
+    console.log(`✓ Generated: dist${pagePath}/index.html`);
+    totalPages++;
+  });
+
+  // 2.4. Generate Top-5-Roofer Service Area Pages
+  console.log('\n🏆 Generating Top-5-Roofer Service Area Pages...\n');
+
+  const topRooferPages = [
+    { path: '/locations/deerfield-beach/service-area/boca-raton/top-5-roofer', city: 'Boca Raton' },
+    { path: '/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer', city: 'Boynton Beach' },
+    { path: '/locations/deerfield-beach/service-area/broward-county/top-5-roofer', city: 'Broward County' },
+    { path: '/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer', city: 'Coconut Creek' },
+    { path: '/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer', city: 'Fort Lauderdale' },
+    { path: '/locations/deerfield-beach/service-area/palm-beach-county/top-5-roofer', city: 'Palm Beach County' },
+    { path: '/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer', city: 'West Palm Beach' }
+  ];
+
+  topRooferPages.forEach(({ path: pagePath, city }) => {
+    const canonical = `https://allphaseconstructionfl.com${pagePath}`;
+    const title = `Top 5 Roofer in ${city}, FL | All Phase Construction USA`;
+    const description = `All Phase Construction USA ranks among the top 5 roofers in ${city}, Florida. Dual-licensed (CCC & CGC), A+ BBB rated, and trusted by thousands of South Florida homeowners.`;
+
+    const content = `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+  <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
+    Top 5 Roofer in ${city}, Florida
+  </h1>
+
+  <p style="color: #374151; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">
+    All Phase Construction USA is proud to be recognized as one of the top 5 roofing contractors serving ${city}. With over 20 years of experience, dual licensing (CCC-1331464 & CGC-1526236), and an A+ BBB rating, we've earned the trust of thousands of South Florida homeowners and businesses.
+  </p>
+
+  <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
+    <h2 style="color: #111827; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">What Makes Us a Top-Rated Roofer?</h2>
+    <ul style="color: #374151; font-size: 1.05rem; line-height: 2; margin: 0; padding-left: 1.5rem;">
+      <li><strong>Dual Licensing</strong> — Both roofing (CCC) and general contracting (CGC) licenses</li>
+      <li><strong>HVHZ Certified</strong> — Approved for High-Velocity Hurricane Zone installations</li>
+      <li><strong>Manufacturer Warranties</strong> — Premium warranties on all materials and workmanship</li>
+      <li><strong>Local Expertise</strong> — Based in Deerfield Beach, serving South Florida since 2003</li>
+      <li><strong>A+ BBB Rating</strong> — Consistent 5-star reviews and customer satisfaction</li>
+    </ul>
+  </div>
+
+  <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Comprehensive Roofing Services</h2>
+
+  <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+    From emergency roof repairs to complete roof replacements, All Phase Construction USA delivers superior workmanship on every project. We specialize in all roofing systems including asphalt shingles, metal roofing, tile roofing, and flat roof systems (TPO & PVC).
+  </p>
+
+  <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+    <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Experience Top-Tier Roofing Service</h3>
+    <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact one of ${city}'s top-rated roofing contractors today for a free consultation.</p>
+    <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+    `.trim();
+
+    const html = createHTMLTemplate(title, description, canonical, content);
+    const dir = path.join(publicDir, pagePath.substring(1));
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), html);
+    console.log(`✓ Generated: dist${pagePath}/index.html`);
+    totalPages++;
+  });
+
   // 2.5. Generate Blog Post Pages from Sitemap
   console.log('\n📝 Generating Blog Post Pages from Sitemap...\n');
 
