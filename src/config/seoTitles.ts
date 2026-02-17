@@ -233,9 +233,11 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   }
 
   // Fallback - ONLY for unmatched routes (not location pages)
+  // Ensure canonical uses normalizedPath and strips trailing slash (except root)
+  const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
     title: 'Roofing Contractor — All Phase Construction USA | HVHZ-Compliant Roof Repair, Replacement & Inspections | Tile, Metal, Shingle & Flat Roofing | Broward & Palm Beach County',
     description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
-    canonical: `https://allphaseconstructionfl.com${path}`
+    canonical: `https://allphaseconstructionfl.com${cleanPath}`
   };
 }

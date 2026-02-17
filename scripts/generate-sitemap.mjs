@@ -339,6 +339,7 @@ const urlEntries = dedupedEntries.map(entry => {
   let urlEntry = `  <url>\n`;
   urlEntry += `    <loc>${url}</loc>\n`;
   urlEntry += `  </url>`;
+  return urlEntry;
 }).join('\n');
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>`;
