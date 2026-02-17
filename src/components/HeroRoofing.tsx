@@ -40,7 +40,7 @@ export default function HeroRoofing() {
             display: flex !important;
             align-items: flex-start !important;
             justify-content: flex-start !important;
-            overflow: visible !important;
+            overflow: hidden !important;
             scroll-margin-top: 0 !important;
             scroll-snap-type: none !important;
             scroll-snap-align: none !important;
