@@ -1264,7 +1264,10 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     { path: '/reviews', title: 'Customer Reviews & Testimonials' },
     { path: '/projects', title: 'Roofing Projects Gallery' },
     { path: '/our-location', title: 'Our Deerfield Beach Location' },
-    { path: '/blog', title: 'Roofing Insights & Industry News' }
+    { path: '/blog', title: 'Roofing Insights & Industry News' },
+    { path: '/contact', title: 'Contact Our Roofing Team' },
+    { path: '/about-us', title: 'About All Phase Construction' },
+    { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
@@ -1282,6 +1285,93 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     console.log(`✓ Generated: dist${pagePath}/index.html`);
     totalPages++;
   });
+
+  // 2.5. Generate Blog Post Pages from Sitemap
+  console.log('\n📝 Generating Blog Post Pages from Sitemap...\n');
+
+  try {
+    const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
+    if (fs.existsSync(sitemapPath)) {
+      const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+
+      // Extract all blog URLs from sitemap
+      const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
+
+      if (blogUrlMatches && blogUrlMatches.length > 0) {
+        const blogSlugs = blogUrlMatches
+          .map(match => {
+            const urlMatch = match.match(/\/blog\/([^<]+)</);
+            return urlMatch ? urlMatch[1] : null;
+          })
+          .filter(slug => slug && slug !== 'index.html');
+
+        console.log(`Found ${blogSlugs.length} blog posts in sitemap\n`);
+
+        blogSlugs.forEach(slug => {
+          // Generate title from slug
+          const blogTitle = slug
+            .split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+
+          const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
+          const blogDescription = `Expert roofing insights on ${blogTitle.toLowerCase()} from All Phase Construction USA, South Florida's dual-licensed roofing contractor.`;
+
+          const blogContent = `
+<section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+  <article>
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${blogTitle}</h1>
+
+    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
+
+    <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
+      <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">
+        <strong>Expert Roofing Insights</strong> from All Phase Construction USA — Your trusted dual-licensed roofing contractor serving Broward and Palm Beach County.
+      </p>
+    </div>
+
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+      At All Phase Construction USA, we bring decades of roofing expertise to South Florida homeowners and businesses. As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we understand both roofing systems and structural engineering, ensuring every project meets the highest standards of quality and hurricane compliance.
+    </p>
+
+    <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Professional Roofing Services</h2>
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+      Whether you need roof repair, roof replacement, roof inspection, or preventive maintenance, our team delivers HVHZ-compliant workmanship backed by manufacturer warranties and our A+ BBB rating.
+    </p>
+
+    <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+      <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
+      <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
+      <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
+    </div>
+  </article>
+
+  ${companyAuthorityFooter()}
+</section>
+          `.trim();
+
+          const blogHTML = createHTMLTemplate(
+            `${blogTitle} | All Phase Construction USA Blog`,
+            blogDescription,
+            blogCanonical,
+            blogContent
+          );
+
+          const blogDir = path.join(publicDir, 'blog', slug);
+          fs.mkdirSync(blogDir, { recursive: true });
+          fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
+          console.log(`✓ Generated: dist/blog/${slug}/index.html`);
+          totalPages++;
+        });
+      } else {
+        console.log('ℹ️ No blog posts found in sitemap\n');
+      }
+    } else {
+      console.log('⚠️ Sitemap not found at public/sitemap.xml\n');
+    }
+  } catch (err) {
+    console.log('⚠️ Error generating blog posts:', err.message);
+  }
 
   // 3. Generate 3-Silo City Pages for all cities
   const priorityCities = ['boca-raton', 'fort-lauderdale', 'coral-springs', 'pompano-beach',
