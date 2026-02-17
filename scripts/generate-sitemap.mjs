@@ -284,11 +284,11 @@ if (lhpUrls.length > 0) {
   lhpUrls.forEach(u => validationErrors.push(`  ${u}`));
 }
 
-// CHECK 5: All URLs must end with /
-const noSlash = allUrls.filter(u => !u.endsWith('/'));
-if (noSlash.length > 0) {
-  validationErrors.push(`FAIL: ${noSlash.length} URLs missing trailing slash:`);
-  noSlash.slice(0, 5).forEach(u => validationErrors.push(`  ${u}`));
+// CHECK 5: No URLs should end with / (except root)
+const withSlash = allUrls.filter(u => u.endsWith('/') && u !== `${CANONICAL_DOMAIN}/`);
+if (withSlash.length > 0) {
+  validationErrors.push(`FAIL: ${withSlash.length} URLs have unwanted trailing slash:`);
+  withSlash.slice(0, 5).forEach(u => validationErrors.push(`  ${u}`));
 }
 
 // CHECK 6: No duplicates (Set size mismatch)
@@ -351,4 +351,4 @@ console.log('Sitemap generated successfully!');
 console.log(`Location: public/sitemap.xml`);
 console.log(`Total URLs: ${dedupedEntries.length}`);
 console.log(`Domain: ${CANONICAL_DOMAIN}`);
-console.log(`Build Date: ${buildDate}`);
+console.log(`Build Date: ${new Date().toISOString()}`);

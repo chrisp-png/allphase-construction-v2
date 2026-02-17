@@ -17,10 +17,10 @@
     "inject-assets": "node scripts/inject-assets-to-prerendered.mjs",
     "prerender:poc": "node scripts/prerender-poc.mjs",
     "indexnow": "node scripts/submit-indexnow.mjs",
-    "indexnow-all": "node scripts/submit-indexnow.mjs --all"
+    "indexnow-all": "node scripts/submit-indexnow.mjs --all",
     "sitemap:generate": "node scripts/generate-sitemap.mjs",
     "sitemap:validate": "node scripts/validate-sitemap.mjs",
-    "sitemap": "npm run sitemap:generate && npm run sitemap:validate",
+    "sitemap": "npm run sitemap:generate && npm run sitemap:validate"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",

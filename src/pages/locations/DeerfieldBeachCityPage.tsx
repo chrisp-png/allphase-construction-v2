@@ -120,7 +120,7 @@ export default function DeerfieldBeachCityPage() {
     <>
       <Helmet>
         <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
+        <meta name="description" content="Trusted roofing contractor serving Deerfield Beach & surrounding Palm Beach and Broward communities. Hurricane-rated roof repair, replacement & free inspection-first diagnostics." />
         <meta name="robots" content={seo.robots} />
         <link rel="canonical" href={seo.canonical} />
 
@@ -153,7 +153,7 @@ export default function DeerfieldBeachCityPage() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Roofing Contractor Serving Deerfield Beach, Boca Raton & the Greater Palm Beach–Broward Area
+                Roofing Contractor Serving Deerfield Beach, FL & Surrounding Palm Beach and Broward Communities
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
@@ -197,7 +197,7 @@ export default function DeerfieldBeachCityPage() {
             {/* Right Column - Form */}
             <div id="hero-form" className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700 flex flex-col justify-center">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Request a Free Roof Assessment
+                Roof Repair, Replacement & Inspection-First Diagnostics
               </h2>
               <p className="text-gray-400 mb-6">
                 HVHZ-compliant roof repair and replacement in Broward & Palm Beach Counties.
