@@ -130,3 +130,9 @@ Cache-Control = "public, max-age=31536000, immutable"
   [headers.values]
   Content-Type = "application/xml"
   Cache-Control = "public, max-age=3600"
+
+  [[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+  Content-Type = "image/svg+xml"
+  Cache-Control = "public, max-age=86400"
