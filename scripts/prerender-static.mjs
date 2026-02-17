@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
-const publicDir = path.resolve(projectRoot, 'public');
+const publicDir = path.resolve(projectRoot, 'dist'); // Changed from 'public' - prerender to dist for Netlify deployment
 const distDir = path.resolve(projectRoot, 'dist');
 
 // Load cities data (for roof-repair and roof-inspection pages only)
@@ -1241,10 +1241,10 @@ function generateStaticFiles() {
     'https://allphaseconstructionfl.com',
     homepageContent()
   );
-    // HOMEPAGE SAFETY: Write to public/ ONLY — do NOT overwrite dist/index.html
-  // dist/index.html is the Vite-built shell and must be preserved as-is
+    // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
+  // This WILL overwrite the Vite shell, which is intentional for prerendering
 fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
-  console.log('✓ Generated: public/index.html');
+  console.log('✓ Generated: dist/index.html');
   totalPages++;
 
   // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
@@ -1261,6 +1261,9 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     { path: '/roof-replacement-process', title: 'Roof Replacement Process' },
     { path: '/pricing-guide', title: 'Roof Pricing Guide for South Florida' },
     { path: '/easy-payments', title: 'Easy Payments & Financing Options' },
+    { path: '/reviews', title: 'Customer Reviews & Testimonials' },
+    { path: '/projects', title: 'Roofing Projects Gallery' },
+    { path: '/our-location', title: 'Our Deerfield Beach Location' },
     { path: '/blog', title: 'Roofing Insights & Industry News' }
   ];
 
@@ -1276,7 +1279,7 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     const dir = path.join(publicDir, pagePath.substring(1));
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), html);
-    console.log(`✓ Generated: public${pagePath}/index.html`);
+    console.log(`✓ Generated: dist${pagePath}/index.html`);
     totalPages++;
   });
 
@@ -1317,7 +1320,7 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
 
     // Write to both public/ and dist/ (if dist exists)
     writeToPublicAndDist(`locations/${slug}/index.html`, hubHTML);
-    console.log(`✓ Generated: public/locations/${slug}/index.html`);
+    console.log(`✓ Generated: dist/locations/${slug}/index.html`);
     totalPages++;
   });
 
@@ -1343,7 +1346,7 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     const repairDir = path.join(publicDir, 'roof-repair', citySlug);
     fs.mkdirSync(repairDir, { recursive: true });
     fs.writeFileSync(path.join(repairDir, 'index.html'), repairHTML);
-    console.log(`✓ Generated: public/roof-repair/${citySlug}/index.html`);
+    console.log(`✓ Generated: dist/roof-repair/${citySlug}/index.html`);
     totalPages++;
 
     // SILO 3: Roof Inspection - /roof-inspection/[city]
@@ -1358,7 +1361,7 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     const inspectionDir = path.join(publicDir, 'roof-inspection', citySlug);
     fs.mkdirSync(inspectionDir, { recursive: true });
     fs.writeFileSync(path.join(inspectionDir, 'index.html'), inspectionHTML);
-    console.log(`✓ Generated: public/roof-inspection/${citySlug}/index.html`);
+    console.log(`✓ Generated: dist/roof-inspection/${citySlug}/index.html`);
     totalPages++;
   });
 
