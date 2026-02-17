@@ -153,7 +153,7 @@ export default function DeerfieldBeachCityPage() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Roofing Contractor in Deerfield Beach, FL — Roof Repair, Replacement & Inspection-First Diagnostics
+                Roofing Contractor Serving Deerfield Beach, Boca Raton & the Greater Palm Beach–Broward Area
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
