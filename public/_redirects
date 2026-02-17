@@ -11,8 +11,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # Legacy subdomains -> main site canonical URLs.
 # Requires each subdomain to be added as a Netlify domain alias.
 # ======================================================================
-https://tileroof.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/tile-roofing 301!
-http://tileroof.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/tile-roofing 301!
 https://roofrepair.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-repair 301!
 http://roofrepair.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-repair 301!
 https://landing.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/ 301!
