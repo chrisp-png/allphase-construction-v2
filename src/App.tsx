@@ -6,7 +6,6 @@ import AccessibilityWidget from './components/AccessibilityWidget';
 import StickyMobileCTA from './components/StickyMobileCTA';
 import ExitIntentPopup from './components/ExitIntentPopup';
 import ScrollToTop from './components/ScrollToTop';
-import CanonicalManager from './components/CanonicalManager';
 import LowercaseRedirect from './components/LowercaseRedirect';
 import AssessmentModal from './components/AssessmentModal';
 import { AssessmentModalProvider, useAssessmentModal } from './context/AssessmentModalContext';
@@ -257,7 +256,6 @@ function AppContent() {
       */}
       <div className="flex flex-col min-h-screen bg-gray-50">
         <LowercaseRedirect />
-        <CanonicalManager />
         <ScrollToTop />
       <Header />
       <main className="flex-grow">
