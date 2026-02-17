@@ -1,11 +1,59 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
 import { X, CheckCircle } from 'lucide-react';
+
+/**
+ * Helper: returns true on mobile / touch devices.
+ * Uses pointer:coarse (touch) OR viewport < 1024 px.
+ */
+function isMobileDevice(): boolean {
+  if (typeof window === 'undefined') return true;
+  const isTouch = window.matchMedia('(pointer: coarse)').matches;
+  const isNarrow = window.innerWidth < 1024;
+  return isTouch || isNarrow;
+}
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
+  const location = useLocation();
 
+  // ---- scroll-lock helpers ----
+  const lockScroll = useCallback(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
+
+  const unlockScroll = useCallback(() => {
+    document.body.style.overflow = '';
+  }, []);
+
+  // ---- close handler ----
+  const handleClose = useCallback(() => {
+    setIsVisible(false);
+    unlockScroll();
+  }, [unlockScroll]);
+
+  // ---- close modal on route change ----
   useEffect(() => {
+    if (isVisible) {
+      handleClose();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname]);
+
+  // ---- apply / remove scroll lock when visibility changes ----
+  useEffect(() => {
+    if (isVisible) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
+  }, [isVisible, lockScroll, unlockScroll]);
+
+  // ---- exit-intent listener (desktop only) ----
+  useEffect(() => {
+    // HARD MOBILE GUARD: never attach listeners on mobile / touch
+    if (isMobileDevice()) return;
     if (hasShown) return;
 
     const handleMouseLeave = (e: MouseEvent) => {
@@ -15,31 +63,32 @@ export default function ExitIntentPopup() {
       }
     };
 
-    const isMobile = window.innerWidth < 768;
+    document.addEventListener('mouseleave', handleMouseLeave);
 
-    if (isMobile) {
-      const timer = setTimeout(() => {
-        if (!hasShown) {
-          setIsVisible(true);
-          setHasShown(true);
-        }
-      }, 45000);
-
-      return () => clearTimeout(timer);
-    } else {
-      document.addEventListener('mouseleave', handleMouseLeave);
-      return () => document.removeEventListener('mouseleave', handleMouseLeave);
-    }
+    // ---- safety cleanup: always reset overflow & remove listener ----
+    return () => {
+      document.removeEventListener('mouseleave', handleMouseLeave);
+      document.body.style.overflow = '';
+    };
   }, [hasShown]);
 
-  const handleClose = () => {
-    setIsVisible(false);
-  };
+  // ---- final safety: reset overflow on unmount no matter what ----
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
 
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-fade-in">
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-fade-in"
+      onClick={(e) => { if (e.target === e.currentTarget) handleClose(); }}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Exit intent offer"
+    >
       <div className="bg-white rounded-xl shadow-2xl max-w-md w-full relative animate-slide-up">
         <button
           onClick={handleClose}
@@ -83,7 +132,6 @@ export default function ExitIntentPopup() {
                   placeholder="John"
                 />
               </div>
-
               <div>
                 <label htmlFor="popup-last-name" className="block text-sm font-medium text-gray-700 mb-1">
                   Last Name
