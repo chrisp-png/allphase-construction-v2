@@ -10,17 +10,35 @@ import { generateSEOMetadata } from '../config/seoTitles';
  * build-time prerendering.
  *
  * This runs BEFORE any other component can interfere with the title.
+ *
+ * CANONICAL OWNERSHIP:
+ * This is the SINGLE OWNER of <link rel="canonical"> and <meta og:url>.
+ * No other component (including SEO.tsx / Helmet) should emit these tags.
+ * Policy: NO trailing slash except root "/". Origin + pathname only (no query/hash).
  */
 export default function NuclearMetadata() {
   const location = useLocation();
 
   useEffect(() => {
-    const path = location.pathname;
+    const rawPath = location.pathname;
+
+    // Normalize path: strip trailing slash except root
+    const path = rawPath === '/' ? '/' : rawPath.replace(/\/+$/, '');
 
     // Get SEO metadata from centralized configuration
     // For /locations/:slug pages, this now uses src/data/locations.ts and src/lib/locationSeo.ts
     const metadata = generateSEOMetadata(path);
     const { title, description, canonical, ogTitle, ogDescription } = metadata;
+
+    // Normalize canonical URL: origin + pathname only, no trailing slash (except root), no query/hash
+    let normalizedCanonical = canonical;
+    try {
+      const url = new URL(canonical);
+      const p = url.pathname === '/' ? '/' : url.pathname.replace(/\/+$/, '');
+      normalizedCanonical = url.origin + p;
+    } catch {
+      // If URL parsing fails, keep as-is
+    }
 
     // FORCE UPDATE DOCUMENT TITLE - NO DELAYS
     if (title) {
@@ -36,19 +54,19 @@ export default function NuclearMetadata() {
     }
     metaDesc.setAttribute('content', description);
 
-    // FORCE UPDATE CANONICAL
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    // FORCE UPDATE CANONICAL (single owner — no other component emits this tag)
+    let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
       canonicalLink.setAttribute('rel', 'canonical');
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.setAttribute('href', canonical);
+    canonicalLink.setAttribute('href', normalizedCanonical);
 
     // FORCE UPDATE OG TAGS (use overrides if provided)
     updateOrCreateMetaTag('property', 'og:title', ogTitle || title);
     updateOrCreateMetaTag('property', 'og:description', ogDescription || description);
-    updateOrCreateMetaTag('property', 'og:url', canonical);
+    updateOrCreateMetaTag('property', 'og:url', normalizedCanonical);
     updateOrCreateMetaTag('property', 'og:type', 'website');
 
     // FORCE UPDATE TWITTER TAGS (use overrides if provided)
@@ -164,7 +182,7 @@ export default function NuclearMetadata() {
 
     schemaScript.textContent = JSON.stringify(businessSchema);
 
-    console.log('[NUCLEAR METADATA] Applied:', { path, title });
+    console.log('[NUCLEAR METADATA] Applied:', { path, title, canonical: normalizedCanonical });
   }, [location.pathname]);
 
   return null;
