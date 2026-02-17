@@ -71,3 +71,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 # ═══════════════════════════════════════════════════════════════════════════
 # TRAILING SLASH ENFORCEMENT - Redirect no-slash to trailing-slash
+/roof-inspection /roof-inspection/ 301!
+
+# SPA fallback for /roof-inspection/ to serve the React app
+/roof-inspection/ /index.html 200
