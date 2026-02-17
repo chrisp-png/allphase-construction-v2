@@ -230,6 +230,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # LOCATION REWRITES - Serve pre-rendered pages (pretty_urls is OFF)
 # ═══════════════════════════════════════════════════════════════════════════
 
+/locations/*/ /locations/:splat/index.html 200
 
 
 # SPA fallback - MUST BE LAST
