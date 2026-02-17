@@ -64,73 +64,7 @@ for = "*.js"
 [headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
-# ═══════════════════════════════════════════════════════════════════════════
-# REDIRECTS - Host canonicalization (www -> non-www, http -> https)
-# These MUST be first. Netlify.toml redirects run AFTER _redirects file.
-# ═══════════════════════════════════════════════════════════════════════════
-
-[[redirects]]
-from = "https://www.allphaseconstructionfl.com/*"
-to = "https://allphaseconstructionfl.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "http://allphaseconstructionfl.com/*"
-to = "https://allphaseconstructionfl.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "http://www.allphaseconstructionfl.com/*"
-to = "https://allphaseconstructionfl.com/:splat"
-status = 301
-force = true
-
-# ═══════════════════════════════════════════════════════════════════════════
-# REDIRECTS - Legacy and structural redirects
-# ═══════════════════════════════════════════════════════════════════════════
-
-[[redirects]]
-from = "/locations/deerfield-beach/service-area/*"
-to = "/locations/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "/roofing-services/*"
-to = "/roof-repair/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "/service-area/*"
-to = "/locations/:splat"
-status = 301
-force = true
-
-# Legacy service-area URLs redirect to city pages (Rule A - without trailing slash)
-[[redirects]]
-from = "/locations/:parent/service-area/:city"
-to = "/locations/:city"
-status = 301
-force = true
-
-# Legacy service-area URLs redirect to city pages (Rule B - with trailing slash)
-[[redirects]]
-from = "/locations/:parent/service-area/:city/"
-to = "/locations/:city"
-status = 301
-force = true
-
-[[redirects]]
-from = "/roofing-contractor-deerfield-beach-fl"
-to = "/locations/deerfield-beach/"
-status = 301
-force = true
-
-# NOTE: All roof-repair redirect rules are managed in _redirects file
-# (whitelist, hub page, catch-all, and SPA fallback)
+# All redirects managed in public/_redirects file
 
 [[headers]]
   for = "/robots.txt"
