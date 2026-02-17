@@ -74,6 +74,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 
 
+/roof-inspection /roof-inspection/ 301!
 # SPA fallback - serve index.html for all unmatched routes
 /*    /index.html   200
 /*    /index.html   200
