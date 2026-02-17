@@ -8,73 +8,69 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 # ======================================================================
 # LEGACY REDIRECTS
+# All targets use NO trailing slash (matches canonical policy).
 # ======================================================================
-/roofing-contractor-deerfield-beach-fl /locations/deerfield-beach/ 301!
+/roofing-contractor-deerfield-beach-fl /locations/deerfield-beach 301!
 
 # Legacy service-area URLs redirect to city pages
 /locations/:parent/service-area/:city /locations/:city 301!
 /locations/:parent/service-area/:city/ /locations/:city 301!
 
+# Legacy inspection URLs redirect to /roof-inspection
+/tile-roof-inspection-broward-county /roof-inspection 301!
+/tile-roof-inspection-palm-beach-county /roof-inspection 301!
+/metal-roof-inspection-broward-county /roof-inspection 301!
+/metal-roof-inspection-palm-beach-county /roof-inspection 301!
+/flat-roof-inspection-broward-county /roof-inspection 301!
+/flat-roof-inspection-palm-beach-county /roof-inspection 301!
+/insurance-roof-inspection /roof-inspection 301!
 
-# Legacy inspection URLs redirect to /roof-inspection/
-/tile-roof-inspection-broward-county /roof-inspection/ 301!
-/tile-roof-inspection-palm-beach-county /roof-inspection/ 301!
-/metal-roof-inspection-broward-county /roof-inspection/ 301!
-/metal-roof-inspection-palm-beach-county /roof-inspection/ 301!
-/flat-roof-inspection-broward-county /roof-inspection/ 301!
-/flat-roof-inspection-palm-beach-county /roof-inspection/ 301!
-/insurance-roof-inspection /roof-inspection/ 301!
+# Non-indexable city inspection pages redirect to /roof-inspection
+/roof-inspection/broward-county /roof-inspection 301!
+/roof-inspection/cooper-city /roof-inspection 301!
+/roof-inspection/dania-beach /roof-inspection 301!
+/roof-inspection/davie /roof-inspection 301!
+/roof-inspection/greenacres /roof-inspection 301!
+/roof-inspection/hallandale-beach /roof-inspection 301!
+/roof-inspection/haverhill /roof-inspection 301!
+/roof-inspection/highland-beach /roof-inspection 301!
+/roof-inspection/hillsboro-beach /roof-inspection 301!
+/roof-inspection/hollywood /roof-inspection 301!
+/roof-inspection/hypoluxo /roof-inspection 301!
+/roof-inspection/jupiter-inlet-colony /roof-inspection 301!
+/roof-inspection/lake-park /roof-inspection 301!
+/roof-inspection/lantana /roof-inspection 301!
+/roof-inspection/lauderdale-by-the-sea /roof-inspection 301!
+/roof-inspection/lauderhill /roof-inspection 301!
+/roof-inspection/lazy-lake /roof-inspection 301!
+/roof-inspection/light-house-point /roof-inspection 301!
+/roof-inspection/lighthouse-point /roof-inspection 301!
+/roof-inspection/manalapan /roof-inspection 301!
+/roof-inspection/margate /roof-inspection 301!
+/roof-inspection/miramar /roof-inspection 301!
+/roof-inspection/north-lauderdale /roof-inspection 301!
+/roof-inspection/north-palm-beach /roof-inspection 301!
+/roof-inspection/oakland-park /roof-inspection 301!
+/roof-inspection/ocean-ridge /roof-inspection 301!
+/roof-inspection/palm-beach-county /roof-inspection 301!
+/roof-inspection/palm-beach-gardens /roof-inspection 301!
+/roof-inspection/parkland /roof-inspection 301!
+/roof-inspection/pembroke-pines /roof-inspection 301!
+/roof-inspection/plantation /roof-inspection 301!
+/roof-inspection/royal-palm-beach /roof-inspection 301!
+/roof-inspection/south-palm-beach /roof-inspection 301!
+/roof-inspection/tamarac /roof-inspection 301!
+/roof-inspection/westlake /roof-inspection 301!
+/roof-inspection/weston /roof-inspection 301!
+/roof-inspection/wilton-manors /roof-inspection 301!
+/roof-inspection/surfside /roof-inspection 301!
+/roof-inspection/sunrise /roof-inspection 301!
+/roof-inspection/west-palm-beach-county /roof-inspection 301!
+/roof-inspection/boca-raton-county /roof-inspection 301!
+/roof-inspection/boynton-beach-county /roof-inspection 301!
 
-# Non-indexable city inspection pages redirect to /roof-inspection/
-/roof-inspection/broward-county /roof-inspection/ 301!
-/roof-inspection/cooper-city /roof-inspection/ 301!
-/roof-inspection/dania-beach /roof-inspection/ 301!
-/roof-inspection/davie /roof-inspection/ 301!
-/roof-inspection/greenacres /roof-inspection/ 301!
-/roof-inspection/hallandale-beach /roof-inspection/ 301!
-/roof-inspection/haverhill /roof-inspection/ 301!
-/roof-inspection/highland-beach /roof-inspection/ 301!
-/roof-inspection/hillsboro-beach /roof-inspection/ 301!
-/roof-inspection/hollywood /roof-inspection/ 301!
-/roof-inspection/hypoluxo /roof-inspection/ 301!
-/roof-inspection/jupiter-inlet-colony /roof-inspection/ 301!
-/roof-inspection/lake-park /roof-inspection/ 301!
-/roof-inspection/lantana /roof-inspection/ 301!
-/roof-inspection/lauderdale-by-the-sea /roof-inspection/ 301!
-/roof-inspection/lauderhill /roof-inspection/ 301!
-/roof-inspection/lazy-lake /roof-inspection/ 301!
-/roof-inspection/light-house-point /roof-inspection/ 301!
-/roof-inspection/lighthouse-point /roof-inspection/ 301!
-/roof-inspection/manalapan /roof-inspection/ 301!
-/roof-inspection/margate /roof-inspection/ 301!
-/roof-inspection/miramar /roof-inspection/ 301!
-/roof-inspection/north-lauderdale /roof-inspection/ 301!
-/roof-inspection/north-palm-beach /roof-inspection/ 301!
-/roof-inspection/oakland-park /roof-inspection/ 301!
-/roof-inspection/ocean-ridge /roof-inspection/ 301!
-/roof-inspection/palm-beach-county /roof-inspection/ 301!
-/roof-inspection/palm-beach-gardens /roof-inspection/ 301!
-/roof-inspection/parkland /roof-inspection/ 301!
-/roof-inspection/pembroke-pines /roof-inspection/ 301!
-/roof-inspection/plantation /roof-inspection/ 301!
-/roof-inspection/royal-palm-beach /roof-inspection/ 301!
-/roof-inspection/south-palm-beach /roof-inspection/ 301!
-/roof-inspection/tamarac /roof-inspection/ 301!
-/roof-inspection/westlake /roof-inspection/ 301!
-/roof-inspection/weston /roof-inspection/ 301!
-/roof-inspection/wilton-manors /roof-inspection/ 301!
-/roof-inspection/surfside /roof-inspection/ 301!
-/roof-inspection/sunrise /roof-inspection/ 301!
-/roof-inspection/west-palm-beach-county /roof-inspection/ 301!
-/roof-inspection/boca-raton-county /roof-inspection/ 301!
-/roof-inspection/boynton-beach-county /roof-inspection/ 301!
-
-# ═══════════════════════════════════════════════════════════════════════════
-# TRAILING SLASH ENFORCEMENT - Redirect no-slash to trailing-slash
-
-
-
-/roof-inspection /roof-inspection/ 301!
-# SPA fallback - serve index.html for all unmatched routes
-/*    /index.html   200
-/*    /index.html   200
+# ======================================================================
+# SPA FALLBACK + STATIC FILES
+# Handled in netlify.toml [[redirects]] section.
+# Do NOT duplicate /* /index.html 200 here.
+# ======================================================================
