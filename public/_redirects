@@ -7,6 +7,46 @@ http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 30
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
 
 # ======================================================================
+# SUBDOMAIN REDIRECTS
+# Legacy subdomains -> main site canonical URLs.
+# Requires each subdomain to be added as a Netlify domain alias.
+# ======================================================================
+https://tileroof.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/tile-roofing 301!
+http://tileroof.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/tile-roofing 301!
+https://roofrepair.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-repair 301!
+http://roofrepair.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-repair 301!
+https://landing.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/ 301!
+http://landing.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/ 301!
+https://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-replacement-process 301!
+http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-replacement-process 301!
+
+# ======================================================================
+# DEAD / RENAMED ROUTE REDIRECTS (GSC 5xx top offenders)
+# These catch legacy URLs that no longer have a route in the SPA.
+# All targets use NO trailing slash (matches canonical policy).
+# ======================================================================
+/financing https://allphaseconstructionfl.com/easy-payments 301!
+/financing/ https://allphaseconstructionfl.com/easy-payments 301!
+/about https://allphaseconstructionfl.com/about-us 301!
+/about/ https://allphaseconstructionfl.com/about-us 301!
+/services https://allphaseconstructionfl.com/residential-roofing 301!
+/services/ https://allphaseconstructionfl.com/residential-roofing 301!
+/service-areas https://allphaseconstructionfl.com/locations 301!
+/service-areas/ https://allphaseconstructionfl.com/locations 301!
+/gallery https://allphaseconstructionfl.com/projects 301!
+/gallery/ https://allphaseconstructionfl.com/projects 301!
+/testimonials https://allphaseconstructionfl.com/reviews 301!
+/testimonials/ https://allphaseconstructionfl.com/reviews 301!
+/roof-types https://allphaseconstructionfl.com/residential-roofing 301!
+/roof-types/ https://allphaseconstructionfl.com/residential-roofing 301!
+/estimate https://allphaseconstructionfl.com/contact 301!
+/estimate/ https://allphaseconstructionfl.com/contact 301!
+/free-estimate https://allphaseconstructionfl.com/contact 301!
+/free-estimate/ https://allphaseconstructionfl.com/contact 301!
+/quote https://allphaseconstructionfl.com/contact 301!
+/quote/ https://allphaseconstructionfl.com/contact 301!
+
+# ======================================================================
 # LEGACY REDIRECTS
 # All targets use NO trailing slash (matches canonical policy).
 # ======================================================================
