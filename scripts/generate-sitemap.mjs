@@ -84,9 +84,9 @@ function isExcludedUrl(urlPath) {
   return false;
 }
 
-function ensureTrailingSlash(urlPath) {
-  return urlPath.endsWith('/') ? urlPath : `${urlPath}/`;
-}
+function stripTrailingSlash(urlPath) {
+  if (urlPath === '/') return '/';
+  return urlPath.endsWith('/') ? urlPath.slice(0, -1) : urlPath;}
 
 // ═══════════════════════════════════════════════════════════════════════════
 // SITEMAP GENERATION
@@ -126,7 +126,7 @@ for (const match of entryMatches) {
     entries.push({
       section,
       label,
-      path: ensureTrailingSlash(pathValue),
+      path: stripTrailingSlash(pathValue),
       parent,
       indexable: true,
       priority: priority ? parseFloat(priority) : undefined,
@@ -181,7 +181,7 @@ for (const slug of allBlogSlugs) {
   entries.push({
     section: 'Blog Articles',
     label: slug,
-    path: ensureTrailingSlash(`/blog/${slug}`),
+    path: stripTrailingSlash(`/blog/${slug}`),
     indexable: true,
     priority: 0.7,
     changefreq: 'monthly'
@@ -212,7 +212,7 @@ for (const slug of APPROVED_REPAIR_CITIES) {
   entries.push({
     section: 'Roof Repair Services',
     label: `Roof Repair in ${cityName}`,
-    path: ensureTrailingSlash(`/roof-repair/${slug}`),
+    path: stripTrailingSlash(`/roof-repair/${slug}`),
     indexable: true,
     priority: 0.8,
     changefreq: 'monthly'
@@ -315,14 +315,13 @@ if (wrongDomain.length > 0) {
 // VALIDATION RESULTS
 if (validationErrors.length > 0) {
   console.error('SITEMAP VALIDATION FAILED - BUILD MUST STOP');
-  console.error(`Found ${validationErrors.length} validation error(s):`);
-  validationErrors.forEach(err => console.error(err));
+  console.log('All URLs have NO trailing slash (except root)');  validationErrors.forEach(err => console.error(err));
   console.error('The sitemap contains invalid URLs. Fix the issues above before deploying.');
   process.exit(1);
 } else {
   console.log('ALL VALIDATION CHECKS PASSED');
   console.log('No duplicate URLs');
-  console.log('All URLs have trailing slashes');
+  console.log('stripTrailingSAll URLs have NO trailing slash (except root)lash');
   console.log('No /locations/ URLs');
   console.log('No /roof-inspection/{city}/ URLs');
   console.log(`All ${repairCityUrls.length} roof-repair URLs are in APPROVED list (16 cities)`);
@@ -334,21 +333,12 @@ if (validationErrors.length > 0) {
 // XML GENERATION
 // ═══════════════════════════════════════════════════════════════════════════
 
-const buildDate = new Date().toISOString().slice(0, 10);
 
 const urlEntries = dedupedEntries.map(entry => {
   const url = `${CANONICAL_DOMAIN}${entry.path}`;
   let urlEntry = `  <url>\n`;
   urlEntry += `    <loc>${url}</loc>\n`;
-  urlEntry += `    <lastmod>${buildDate}</lastmod>\n`;
-  if (entry.changefreq) {
-    urlEntry += `    <changefreq>${entry.changefreq}</changefreq>\n`;
-  }
-  if (entry.priority !== undefined) {
-    urlEntry += `    <priority>${entry.priority.toFixed(1)}</priority>\n`;
-  }
   urlEntry += `  </url>`;
-  return urlEntry;
 }).join('\n');
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>`;
