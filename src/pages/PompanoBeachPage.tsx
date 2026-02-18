@@ -123,39 +123,39 @@ export default function PompanoBeachPage() {
 
   const services = [
     {
-      title: 'Tile Roofing',
-      description: "Concrete and clay tile for Pompano Beach homes. Foam adhesive installation for superior wind resistance in our coastal environment.",
-      path: '/tile-roofing/',
-      icon: Home
+      title: 'Roof Repair',
+      description: "Expert repair services for tile, shingle, metal, and flat roofing systems — including repair and replacement of critical components such as roof flashing — in Pompano Beach. We also provide ongoing maintenance services to help prolong the lifespan of your roof.",
+      path: '/roof-repair/pompano-beach',
+      icon: Wrench
     },
     {
-      title: 'Metal Roofing',
-      description: "Standing seam and metal shingles for Pompano Beach properties seeking maximum durability and salt air resistance.",
-      path: '/metal-roofing/',
+      title: 'Roof Inspection',
+      description: "Comprehensive diagnostic inspections for residential and commercial properties. Regular inspections catch small issues before they become costly repairs, especially after severe weather events common in coastal Pompano Beach.",
+      path: '/roof-inspection',
       icon: Shield
     },
     {
-      title: 'Shingle Roofing',
-      description: "High-wind rated architectural shingles for Pompano Beach's residential neighborhoods. HVHZ compliant installation.",
-      path: '/shingle-roofing/',
+      title: 'New Roof Installation',
+      description: "Most homeowners will eventually need to replace their old roof when it reaches the end of its lifespan or suffers extensive damage. A full roof replacement involves removing the entire existing roof and installing new materials to ensure long-term protection. The average roof replacement cost ranges from $5,800 to over $47,000, depending on roof size, material, and complexity. For example, replacing a typical 1,700-square-foot asphalt shingle roof costs between $6,000 to $9,000. Metal roofs and tile roofs are premium options with longer lifespans — metal roofing offers exceptional longevity, while clay tile roofs can last 50 to 100 years and slate tile roofs up to 150 years. Many homeowners choose financing options to manage the total cost over time. Explore our financing plans to budget for a new roof without compromising on quality.",
+      path: '/roof-replacement-process',
+      icon: Home
+    },
+    {
+      title: 'Tile Roofing',
+      description: "Concrete and clay tile installation, repair, and maintenance services. Clay tile roofs are a premium roofing material known for exceptional durability, lasting 50 to 100 years, and providing excellent noise isolation from wind and rain — making them ideal for Pompano Beach homes.",
+      path: '/tile-roofing',
       icon: Home
     },
     {
       title: 'Flat Roofing',
-      description: "TPO, PVC, and modified bitumen for Pompano Beach's condos, commercial buildings, and flat-roof homes. Proper drainage and seam welding expertise.",
-      path: '/flat-roofing/',
+      description: "TPO, modified bitumen, and built-up roofing for commercial properties. We also install Spray Polyurethane Foam (SPF) roof systems, which enhance energy efficiency, improve interior comfort, and can last 30 years or more with proper maintenance.",
+      path: '/flat-roofing',
       icon: Building2
     },
     {
-      title: 'Roof Repair & Restoration',
-      description: "Comprehensive repairs for Pompano Beach's aging properties. 5-year certification letters available to protect your insurance.",
-      path: '/roofing-services/roof-repair/',
-      icon: Wrench
-    },
-    {
       title: 'Commercial Roofing',
-      description: "Retail, office, and multi-family properties throughout Pompano Beach. From small buildings to large commercial projects.",
-      path: '/commercial-roofing/',
+      description: "Large-scale commercial roofing projects where the complexity of the roof structure can significantly affect the overall cost and scope, completed with minimal business disruption.",
+      path: '/commercial-roofing',
       icon: Building2
     }
   ];
@@ -252,16 +252,19 @@ export default function PompanoBeachPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Roofing Services in{' '}
+              Roofing Contractor in{' '}
               <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Pompano Beach, Florida
+                Pompano Beach, FL
               </span>
             </h1>
             <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Serviced by All Phase Construction USA — Based in Deerfield Beach
+              Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
             </p>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              From the beach to the boulevard — Pompano Beach roofing specialists. Condos, homes, and commercial.
+              All Phase Construction USA serves Pompano Beach with comprehensive residential and commercial roofing services. Our team of experienced local roofers delivers quality workmanship and reliable service backed by dual licensing in both Broward and Palm Beach counties. We specialize in tile, shingle, metal, and flat roofing systems designed for South Florida's climate challenges.
+            </p>
+            <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
+              Homeowners are invited to request a free estimate to explore options and receive transparent pricing. Working with a local contractor with a verified physical office at 590 Goolsby Blvd in Deerfield Beach ensures accountability and compliance with local building codes.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
@@ -289,7 +292,7 @@ export default function PompanoBeachPage() {
                 to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
-                Schedule Free Inspection in Pompano Beach
+                Get Free Inspection
               </Link>
               <a
                 href="tel:+17542275605"
@@ -303,17 +306,14 @@ export default function PompanoBeachPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Your Trusted Roofer in Pompano Beach
+              Introduction to Roofing Services
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                While our main office is located in Deerfield Beach, our licensed roofing crews regularly service homes and commercial properties throughout Pompano Beach and nearby communities. Pompano Beach is a city in transition — a mix of longtime residents, new developments, and everything in between. From the beachfront condos along A1A to the established neighborhoods west of Federal Highway, from the commercial corridors to the residential streets of Cypress Creek, we've been roofing Pompano Beach properties for over two decades.
+                Roofing services are essential for maintaining the safety, value, and comfort of your home or business. Whether you need a roof replacement, roof repair, or a completely new roof installation, working with a licensed roofing contractor ensures that your project is handled with expertise and care. The scope of roofing services includes everything from minor repairs to full roof replacements, using a variety of materials to suit your needs and budget.
               </p>
               <p>
-                Located just 3 miles south of our Deerfield Beach headquarters, Pompano Beach is one of our closest and most active service areas. We know this city's roofs — the <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection and evaluation</Link> needed for mid-rise condos, the aging shingle roofs on 1970s homes, the <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> required for newer construction, and everything in between. Coastal properties with metal roofing systems need regular <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to detect salt air corrosion early.
-              </p>
-              <p>
-                Pompano Beach is also undergoing significant redevelopment. Older buildings are being renovated, new construction is rising, and property owners are investing in their buildings. Whether you're maintaining an existing property or upgrading for the future, we deliver roofing that meets HVHZ standards and stands up to Pompano's coastal environment.
+                For most homeowners, the average cost of a new shingle roof on a 1,700-square-foot house ranges from $6,000 to $9,000, with asphalt roof replacements typically costing between $3.50 to $6.00 per square foot. Labor costs, materials, and the complexity of the installation all play a role in determining the final price. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a personalized estimate, or call (754) 227-5605 to discuss your project.
               </p>
             </div>
           </div>
