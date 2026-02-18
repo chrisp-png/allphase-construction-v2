@@ -105,7 +105,7 @@ export default function Header() {
     { name: 'Roof Cost Calculator', path: '/roof-cost-calculator/' },
     { name: 'Pricing Guide', path: '/pricing-guide/' },
     { name: 'Financing Options', path: '/easy-payments/' },
-    { name: 'Education Hub', path: '/blog/' },
+    { name: 'All Articles', path: '/blog/' },
   ];
 
   return (
@@ -299,14 +299,15 @@ export default function Header() {
             </div>
 
             <div className="relative group">
-              <button
+              <Link
+                to="/learning-center/"
                 className="text-white hover:text-red-600 transition-colors font-medium flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-red-600 rounded px-2 py-3 text-base whitespace-nowrap"
                 aria-label="Learning Center menu"
                 aria-haspopup="true"
               >
                 Learning Center
                 <ChevronDown className="w-4 h-4" />
-              </button>
+              </Link>
               <div className="absolute top-full left-0 mt-2 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {learningCenter.map((item) => (
                   <Link
@@ -510,15 +511,23 @@ export default function Header() {
             </div>
 
             <div>
-              <button
-                onClick={() => setIsLearningCenterOpen(!isLearningCenterOpen)}
-                className="flex items-center justify-between w-full text-white hover:text-red-600 transition-colors py-3 font-medium focus:outline-none focus:ring-2 focus:ring-red-600 rounded px-2"
-                aria-expanded={isLearningCenterOpen}
-                aria-label="Toggle learning center menu"
-              >
-                Learning Center
-                <ChevronDown className={`w-4 h-4 transition-transform ${isLearningCenterOpen ? 'rotate-180' : ''}`} />
-              </button>
+              <div className="flex items-center justify-between w-full">
+                <Link
+                  to="/learning-center/"
+                  className="flex-1 text-white hover:text-red-600 transition-colors py-3 font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Learning Center
+                </Link>
+                <button
+                  onClick={() => setIsLearningCenterOpen(!isLearningCenterOpen)}
+                  className="px-2 text-white hover:text-red-600 transition-colors py-3 focus:outline-none"
+                  aria-expanded={isLearningCenterOpen}
+                  aria-label="Toggle learning center menu"
+                >
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isLearningCenterOpen ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
               {isLearningCenterOpen && (
                 <div className="pl-4 mt-2 space-y-2">
                   {learningCenter.map((item) => (

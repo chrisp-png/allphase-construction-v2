@@ -1260,6 +1260,7 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     { path: '/roof-maintenance-programs', title: 'Roof Maintenance Programs' },
     { path: '/roof-replacement-process', title: 'Roof Replacement Process' },
     { path: '/pricing-guide', title: 'Roof Pricing Guide for South Florida' },
+    { path: '/learning-center', title: 'Learning Center - Roofing Guides & Resources' },
     { path: '/easy-payments', title: 'Easy Payments & Financing Options' },
     { path: '/reviews', title: 'Customer Reviews & Testimonials' },
     { path: '/projects', title: 'Roofing Projects Gallery' },
