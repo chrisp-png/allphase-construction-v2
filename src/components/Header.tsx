@@ -196,14 +196,15 @@ export default function Header() {
             </Link>
 
             <div className="relative group">
-              <button
+              <Link
+                to="/roofing-services"
                 className="text-white hover:text-red-600 transition-colors font-medium flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-red-600 rounded px-2 py-3 text-base whitespace-nowrap"
                 aria-label="Roofing services menu"
                 aria-haspopup="true"
               >
                 Roofing
                 <ChevronDown className="w-4 h-4" />
-              </button>
+              </Link>
               <div className="absolute top-full left-0 mt-2 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {roofTypes.map((type) => (
                   <div key={type.name} className="relative group/item">

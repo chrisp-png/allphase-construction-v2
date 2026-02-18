@@ -174,6 +174,7 @@ const BoyntonBeachCalculatorPage = lazy(() => import('./pages/BoyntonBeachCalcul
 const EasyPaymentsPage = lazy(() => import('./pages/EasyPaymentsPage'));
 const PricingGuidePage = lazy(() => import('./pages/PricingGuidePage'));
 const LearningCenterPage = lazy(() => import('./pages/LearningCenterPage'));
+const RoofingServicesPage = lazy(() => import('./pages/RoofingServicesPage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const AccessibilityPage = lazy(() => import('./pages/AccessibilityPage'));
@@ -321,6 +322,7 @@ function AppContent() {
             <Route path="/easy-payments" element={<EasyPaymentsPage />} />
             <Route path="/pricing-guide" element={<PricingGuidePage />} />
             <Route path="/learning-center" element={<LearningCenterPage />} />
+            <Route path="/roofing-services" element={<RoofingServicesPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />

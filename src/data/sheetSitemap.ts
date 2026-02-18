@@ -1543,6 +1543,15 @@ export const sheetSitemap: SitemapEntry[] = [
     changefreq: 'weekly',
   },
   {
+    section: 'Services',
+    label: 'Roofing Services Hub',
+    path: '/roofing-services/',
+    parent: null,
+    indexable: true,
+    priority: 1.0,
+    changefreq: 'weekly',
+  },
+  {
     section: 'Learning Center',
     label: 'Roof Replacement Pricing Guide',
     path: '/pricing-guide/',
