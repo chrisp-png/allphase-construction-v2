@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, User, ArrowRight, ArrowLeft, ChevronDown, ChevronUp, Clock } from 'lucide-react';
+import { Calendar, User, ArrowRight, ArrowLeft, ChevronDown, ChevronUp, Clock, ExternalLink } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 
@@ -29,6 +29,143 @@ interface RelatedPost {
   slug: string;
   excerpt: string;
   featured_image: string;
+}
+
+interface ServiceLink {
+  path: string;
+  title: string;
+  description: string;
+}
+
+const SERVICE_LINKS: Record<string, ServiceLink> = {
+  'tile-roofing': {
+    path: '/tile-roofing',
+    title: 'Tile Roofing',
+    description: 'Expert tile roof installation and restoration'
+  },
+  'metal-roofing': {
+    path: '/metal-roofing',
+    title: 'Metal Roofing',
+    description: 'Durable standing seam metal roof systems'
+  },
+  'shingle-roofing': {
+    path: '/shingle-roofing',
+    title: 'Shingle Roofing',
+    description: 'High-quality asphalt shingle installations'
+  },
+  'flat-roofing': {
+    path: '/flat-roofing',
+    title: 'Flat Roofing',
+    description: 'Commercial flat roof systems and repairs'
+  },
+  'commercial-roofing': {
+    path: '/commercial-roofing',
+    title: 'Commercial Roofing',
+    description: 'Complete commercial roofing solutions'
+  },
+  'residential-roofing': {
+    path: '/residential-roofing',
+    title: 'Residential Roofing',
+    description: 'Trusted home roofing services'
+  },
+  'roof-inspection': {
+    path: '/roof-inspection',
+    title: 'Free Roof Inspection',
+    description: 'Professional roof assessments at no cost'
+  },
+  'roof-repair': {
+    path: '/roof-repair',
+    title: 'Roof Repair',
+    description: 'Fast and reliable roof repair services'
+  },
+  'calculator': {
+    path: '/calculator',
+    title: 'Roof Cost Calculator',
+    description: 'Get an instant estimate for your roof'
+  },
+  'easy-payments': {
+    path: '/easy-payments',
+    title: 'Financing Options',
+    description: 'Flexible payment plans available'
+  },
+  'pricing-guide': {
+    path: '/pricing-guide',
+    title: 'Pricing Guide',
+    description: 'Transparent roofing cost breakdown'
+  },
+  'roof-maintenance': {
+    path: '/roof-maintenance-programs',
+    title: 'Roof Maintenance',
+    description: 'Preventive maintenance programs'
+  },
+  'roof-replacement': {
+    path: '/roof-replacement-process',
+    title: 'Roof Replacement Process',
+    description: 'Step-by-step guide to your new roof'
+  },
+  'roofing-services': {
+    path: '/roofing-services',
+    title: 'All Roofing Services',
+    description: 'Complete range of roofing solutions'
+  },
+  'contact': {
+    path: '/contact',
+    title: 'Request Free Assessment',
+    description: 'Get started with a free consultation'
+  }
+};
+
+const DEFAULT_SERVICES = ['roofing-services', 'roof-inspection', 'calculator', 'contact'];
+
+function getMatchedServices(post: BlogPost): ServiceLink[] {
+  const matched = new Set<string>();
+  const allText = `${post.title} ${post.categories.join(' ')} ${post.tags.join(' ')}`.toLowerCase();
+
+  if (allText.includes('tile')) matched.add('tile-roofing');
+  if (allText.includes('metal')) matched.add('metal-roofing');
+  if (allText.includes('shingle') || allText.includes('asphalt')) matched.add('shingle-roofing');
+  if (allText.includes('flat') || allText.includes('bur') || allText.includes('tpo')) matched.add('flat-roofing');
+  if (allText.includes('commercial') || allText.includes('hoa') || allText.includes('multi-family') || allText.includes('condo')) {
+    matched.add('commercial-roofing');
+  }
+  if (allText.includes('residential')) matched.add('residential-roofing');
+  if (allText.includes('inspection') || allText.includes('storm')) matched.add('roof-inspection');
+  if (allText.includes('repair') || allText.includes('leak') || allText.includes('damage')) matched.add('roof-repair');
+  if (allText.includes('cost') || allText.includes('price') || allText.includes('budget') || allText.includes('financing')) {
+    matched.add('calculator');
+    matched.add('easy-payments');
+    matched.add('pricing-guide');
+  }
+  if (allText.includes('maintenance')) matched.add('roof-maintenance');
+  if (allText.includes('replacement') || allText.includes('process')) matched.add('roof-replacement');
+  if (allText.includes('hurricane') || allText.includes('wind') || allText.includes('hvhz')) {
+    matched.add('roof-inspection');
+    matched.add('residential-roofing');
+  }
+  if (allText.includes('insurance') || allText.includes('claim')) {
+    matched.add('roof-inspection');
+    matched.add('contact');
+  }
+  if (allText.includes('solar') || allText.includes('energy')) {
+    matched.add('residential-roofing');
+    matched.add('commercial-roofing');
+  }
+  if (allText.includes('warranty') || allText.includes('owens corning') || allText.includes('certainteed')) {
+    matched.add('roofing-services');
+  }
+
+  const matchedArray = Array.from(matched).slice(0, 4);
+
+  while (matchedArray.length < 4) {
+    const nextDefault = DEFAULT_SERVICES.find(s => !matchedArray.includes(s));
+    if (nextDefault) {
+      matchedArray.push(nextDefault);
+    } else {
+      break;
+    }
+  }
+
+  return matchedArray.map(key => SERVICE_LINKS[key]).filter(Boolean);
 }
 
 export default function BlogPostPage() {
@@ -412,42 +549,100 @@ export default function BlogPostPage() {
           </div>
         )}
 
-        {relatedPosts.length > 0 && (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <h2 className="text-3xl font-bold text-white mb-8">Related Articles</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {relatedPosts.map(relatedPost => (
+        <div className="bg-zinc-950 py-16 border-t border-zinc-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-white mb-3">Our Roofing Services</h2>
+            <p className="text-gray-400 mb-8">Explore our professional roofing solutions</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {getMatchedServices(post).map(service => (
                 <Link
-                  key={relatedPost.id}
-                  to={`/blog/${relatedPost.slug}`}
-                  className="bg-zinc-900 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all group border border-zinc-800"
+                  key={service.path}
+                  to={service.path}
+                  className="bg-zinc-900 rounded-lg p-6 border border-zinc-800 hover:border-red-600 hover:bg-zinc-800 transition-all group"
                 >
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={relatedPost.featured_image}
-                      alt={relatedPost.title}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors line-clamp-2">
-                      {relatedPost.title}
-                    </h3>
-                    <p className="text-gray-400 text-sm line-clamp-2 mb-3">
-                      {relatedPost.excerpt}
-                    </p>
-                    <div className="flex items-center text-red-600 font-semibold text-sm">
-                      Read More
-                      <ArrowRight className="w-4 h-4 ml-1" />
-                    </div>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4">
+                    {service.description}
+                  </p>
+                  <div className="flex items-center text-red-600 font-semibold text-sm">
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               ))}
             </div>
           </div>
+        </div>
+
+        {relatedPosts.length > 0 && (
+          <div className="bg-black py-16 border-t border-zinc-800">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-white mb-3">Related Articles</h2>
+              <p className="text-gray-400 mb-8">Continue learning about roofing</p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {relatedPosts.map(relatedPost => (
+                  <Link
+                    key={relatedPost.id}
+                    to={`/blog/${relatedPost.slug}`}
+                    className="bg-zinc-900 rounded-xl overflow-hidden hover:shadow-xl transition-all group border border-zinc-800 hover:border-red-600"
+                  >
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={relatedPost.featured_image}
+                        alt={relatedPost.title}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors line-clamp-2">
+                        {relatedPost.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm line-clamp-2 mb-3">
+                        {relatedPost.excerpt}
+                      </p>
+                      <div className="flex items-center text-red-600 font-semibold text-sm">
+                        Read More
+                        <ArrowRight className="w-4 h-4 ml-1" />
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
         )}
+
+        <div className="bg-zinc-950 py-12 border-t border-zinc-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-center gap-6 text-gray-400">
+              <Link
+                to="/learning-center"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Learning Center
+              </Link>
+              <span className="text-zinc-700">|</span>
+              <Link
+                to="/blog"
+                className="hover:text-white transition-colors"
+              >
+                All Articles
+              </Link>
+              <span className="text-zinc-700">|</span>
+              <Link
+                to="/roofing-services"
+                className="hover:text-white transition-colors"
+              >
+                Roofing Services
+              </Link>
+            </div>
+          </div>
+        </div>
 
         <div className="bg-gradient-to-br from-red-600 to-red-700 text-white py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
