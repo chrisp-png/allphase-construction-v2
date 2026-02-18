@@ -338,6 +338,12 @@ const urlEntries = dedupedEntries.map(entry => {
   const url = `${CANONICAL_DOMAIN}${entry.path}`;
   let urlEntry = `  <url>\n`;
   urlEntry += `    <loc>${url}</loc>\n`;
+  if (entry.priority !== undefined) {
+    urlEntry += `    <priority>${entry.priority}</priority>\n`;
+  }
+  if (entry.changefreq) {
+    urlEntry += `    <changefreq>${entry.changefreq}</changefreq>\n`;
+  }
   urlEntry += `  </url>`;
   return urlEntry;
 }).join('\n');
