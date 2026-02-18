@@ -10,6 +10,7 @@ import CaseStudy from '../components/CaseStudy';
 import ServiceAreas from '../components/ServiceAreas';
 import CommonServiceAreasTable from '../components/CommonServiceAreasTable';
 import ServiceAreasCTA from '../components/ServiceAreasCTA';
+import HomeownerResources from '../components/HomeownerResources';
 import MicroFAQ from '../components/MicroFAQ';
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
@@ -1006,6 +1007,7 @@ export default function HomePage() {
       <ServiceAreas />
       <CommonServiceAreasTable />
       <ServiceAreasCTA />
+      <HomeownerResources />
       <MicroFAQ />
       <FAQ />
       <ChamberBadge />
