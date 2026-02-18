@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function ShingleRoofingPage() {
   useEffect(() => {
@@ -1163,6 +1164,33 @@ export default function ShingleRoofingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Shingle Roofing Resources"
+        sectionIntro="Understand shingle options, compare costs, and learn what to look for in a quality shingle installation."
+        blogPosts={[
+          {
+            title: "Metal Roof vs Shingles in Florida (2026)",
+            url: "/blog/metal-roof-vs-shingles-florida-2026",
+            excerpt: "Compare asphalt shingles with metal roofing to understand which material offers the best value for your South Florida home."
+          },
+          {
+            title: "Architectural Shingles vs Three-Tab Shingles",
+            url: "/blog/the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles",
+            excerpt: "Learn the key differences between architectural and three-tab shingles, including cost, durability, and aesthetic appeal."
+          },
+          {
+            title: "Roof Replacement Cost in Broward County (2026 Guide)",
+            url: "/blog/roof-replacement-cost-broward-county-2026",
+            excerpt: "Get accurate pricing information for shingle roof replacement in Broward County, including material and labor costs."
+          },
+          {
+            title: "What Is Roof Underlayment and Why Does It Matter?",
+            url: "/blog/what-is-roof-underlayment-and-why-does-it-matter",
+            excerpt: "Understand the critical role underlayment plays in protecting your shingle roof from water damage and extending its lifespan."
+          }
+        ]}
+      />
     </div>
     </>
   );

@@ -18,6 +18,7 @@ import {
   BadgeCheck
 } from 'lucide-react';
 import InternalLinksBlock from '../components/InternalLinksBlock';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import { generateLocalBusinessSchema, generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
 
@@ -685,6 +686,33 @@ export default function ResidentialRoofingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Homeowner Roofing Resources"
+        sectionIntro="Essential guides for South Florida homeowners planning a roof replacement or repair."
+        blogPosts={[
+          {
+            title: "Roof Replacement Cost in Broward County (2026 Guide)",
+            url: "/blog/roof-replacement-cost-broward-county-2026",
+            excerpt: "Comprehensive pricing guide for residential roof replacement in Broward County, including material options and labor costs."
+          },
+          {
+            title: "What Questions to Ask Your Roofing Contractor Before Hiring",
+            url: "/blog/what-questions-to-ask-your-roofing-contractor-before-hiring",
+            excerpt: "Essential questions to ask before hiring a roofing contractor to ensure you choose a qualified, reputable company."
+          },
+          {
+            title: "Wind Mitigation for South Florida Roofs: Save on Insurance",
+            url: "/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home",
+            excerpt: "Learn how wind mitigation features can significantly reduce your insurance premiums while protecting your home."
+          },
+          {
+            title: "Complete Roof Replacement Process: 10 Steps",
+            url: "/blog/complete-roof-replacement-process-10-steps",
+            excerpt: "A detailed walkthrough of what to expect during a residential roof replacement from inspection to final cleanup."
+          }
+        ]}
+      />
     </div>
     </>
   );

@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
 
 export default function TileRoofingPage() {
@@ -1165,6 +1166,33 @@ export default function TileRoofingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Tile Roofing Resources"
+        sectionIntro="Learn more about tile roof costs, maintenance, and how tile performs in South Florida's hurricane zone."
+        blogPosts={[
+          {
+            title: "Metal Roof vs Tile Roof: South Florida Hurricanes",
+            url: "/blog/metal-roof-vs-tile-roof-south-florida-hurricanes",
+            excerpt: "Compare how metal and tile roofing systems perform against hurricanes, salt air, and extreme heat in South Florida's demanding climate."
+          },
+          {
+            title: "Roof Replacement Cost in Broward County (2026 Guide)",
+            url: "/blog/roof-replacement-cost-broward-county-2026",
+            excerpt: "Understand current pricing for tile roof replacement, including material costs, labor, and permit requirements specific to Broward County."
+          },
+          {
+            title: "How Often Should I Replace My Roof in South Florida?",
+            url: "/blog/how-often-should-i-replace-my-roof-in-south-florida",
+            excerpt: "Learn about tile roof lifespan in South Florida's climate and what factors affect when you'll need a replacement."
+          },
+          {
+            title: "What Makes a Roof Hurricane Resistant?",
+            url: "/blog/what-makes-a-roof-hurricane-resistant",
+            excerpt: "Discover the key features that make tile roofs one of the most hurricane-resistant options, including proper installation techniques and HVHZ compliance."
+          }
+        ]}
+      />
     </div>
     </>
   );

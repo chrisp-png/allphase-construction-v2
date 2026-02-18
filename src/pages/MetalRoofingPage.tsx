@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function MetalRoofingPage() {
   useEffect(() => {
@@ -1164,6 +1165,33 @@ export default function MetalRoofingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Metal Roofing Resources"
+        sectionIntro="Compare metal roofing options, understand costs, and learn how metal performs against hurricanes."
+        blogPosts={[
+          {
+            title: "Metal Roof vs Shingles in Florida (2026)",
+            url: "/blog/metal-roof-vs-shingles-florida-2026",
+            excerpt: "Compare the performance, cost, and lifespan of metal roofs versus asphalt shingles in Florida's demanding climate."
+          },
+          {
+            title: "Metal Roof vs Tile Roof: South Florida Hurricanes",
+            url: "/blog/metal-roof-vs-tile-roof-south-florida-hurricanes",
+            excerpt: "Understand how metal and tile roofing systems compare for hurricane protection, longevity, and overall value in South Florida."
+          },
+          {
+            title: "Comparing Asphalt vs Metal Roofs: Which Is Right for You?",
+            url: "/blog/comparing-asphalt-vs-metal-roofs-which-is-right-for-you",
+            excerpt: "A detailed comparison of asphalt and metal roofing materials to help you make an informed decision for your property."
+          },
+          {
+            title: "What Is a Cool Roof and Can It Save You Money?",
+            url: "/blog/what-is-a-cool-roof-and-can-it-save-you-money",
+            excerpt: "Learn how reflective metal roofing systems can reduce cooling costs and improve energy efficiency in South Florida's hot climate."
+          }
+        ]}
+      />
     </div>
     </>
   );

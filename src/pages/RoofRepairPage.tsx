@@ -30,6 +30,7 @@ import {
 import { sheetSitemap } from '../data/sheetSitemap';
 import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function RoofRepairPage() {
   const roofRepairPages = useMemo(() => {
@@ -894,6 +895,33 @@ export default function RoofRepairPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Roof Repair Resources"
+        sectionIntro="Learn when to repair vs replace, how to handle storm damage, and what to expect from a professional repair."
+        blogPosts={[
+          {
+            title: "Choosing Between Roof Repair and Full Replacement",
+            url: "/blog/choosing-between-roof-repair-and-full-replacement",
+            excerpt: "Understand the factors that determine whether repair or replacement is the right choice for your roof."
+          },
+          {
+            title: "What to Do When Your Roof Leaks",
+            url: "/blog/what-to-do-when-your-roof-leaks",
+            excerpt: "Immediate steps to take when you discover a roof leak, plus guidance on emergency repairs and long-term solutions."
+          },
+          {
+            title: "The Cost of Waiting: Why Delaying Roof Replacement Hurts Your Wallet",
+            url: "/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet",
+            excerpt: "Learn how postponing necessary roof repairs can lead to significantly higher costs and more extensive damage."
+          },
+          {
+            title: "Don't Replace Your Roof — Restore It Instead",
+            url: "/blog/dont-replace-your-roof-restore-it-instead",
+            excerpt: "Discover when roof restoration is a viable alternative to full replacement, saving you money while extending roof life."
+          }
+        ]}
+      />
     </div>
     </>
   );

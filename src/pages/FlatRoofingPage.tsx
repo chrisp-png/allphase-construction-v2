@@ -27,6 +27,7 @@ import {
   Atom
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 export default function FlatRoofingPage() {
@@ -787,6 +788,33 @@ export default function FlatRoofingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Flat Roofing Resources"
+        sectionIntro="Learn about flat roof systems, maintenance needs, and cost considerations for South Florida properties."
+        blogPosts={[
+          {
+            title: "The Pros and Cons of Flat Roofs for Florida Homes",
+            url: "/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes",
+            excerpt: "Understand the advantages and challenges of flat roofing systems in South Florida's unique climate and weather conditions."
+          },
+          {
+            title: "Commercial Roof Coatings: Are They Worth the Investment?",
+            url: "/blog/commercial-roof-coatings-are-they-worth-the-investment",
+            excerpt: "Learn how roof coatings can extend the life of your flat roof and improve energy efficiency while reducing maintenance costs."
+          },
+          {
+            title: "How to Protect Roof Decking from Moisture Damage",
+            url: "/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction",
+            excerpt: "Discover essential techniques for preventing water damage to roof decking during flat roof installation and repairs."
+          },
+          {
+            title: "Why Proper Roof Ventilation Is Critical in Hot Climates",
+            url: "/blog/why-proper-roof-ventilation-is-critical-in-hot-climates",
+            excerpt: "Understand how proper ventilation prevents moisture buildup and extends the lifespan of your flat roofing system."
+          }
+        ]}
+      />
     </div>
     </>
   );

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import StickyConversionBar from '../components/StickyConversionBar';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 import {
   Phone,
   CheckCircle2,
@@ -1828,6 +1829,33 @@ export default function RoofInspectionPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Roof Inspection Resources"
+        sectionIntro="Understand what happens during a professional roof inspection and when you need one."
+        blogPosts={[
+          {
+            title: "Professional Roof Inspection in South Florida",
+            url: "/blog/professional-roof-inspection-south-florida",
+            excerpt: "Learn what a comprehensive professional roof inspection includes and why it's critical for South Florida properties."
+          },
+          {
+            title: "Do I Need a Roof Inspection After a Storm?",
+            url: "/blog/do-i-need-a-roof-inspection-after-a-storm",
+            excerpt: "Understand when storm damage requires a professional inspection and how to document issues for insurance claims."
+          },
+          {
+            title: "How to File a Roof Insurance Claim After Storm Damage",
+            url: "/blog/how-to-file-a-roof-insurance-claim-after-storm-damage",
+            excerpt: "Step-by-step guidance on filing insurance claims for roof damage, including documentation and inspection requirements."
+          },
+          {
+            title: "How to Spot Early Signs of Roof Damage Before It Gets Expensive",
+            url: "/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive",
+            excerpt: "Learn to identify warning signs of roof problems early, before minor issues become major repairs."
+          }
+        ]}
+      />
     </div>
     </>
   );

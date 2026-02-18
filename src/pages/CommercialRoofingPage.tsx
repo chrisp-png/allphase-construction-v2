@@ -25,6 +25,7 @@ import {
   TrendingUp,
   Zap
 } from 'lucide-react';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
 
 export default function CommercialRoofingPage() {
@@ -945,6 +946,33 @@ export default function CommercialRoofingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedBlogResources
+        sectionTitle="Commercial Roofing Resources"
+        sectionIntro="Guides for property managers, HOA boards, and commercial building owners planning a roofing project."
+        blogPosts={[
+          {
+            title: "Roofing Solutions for Multi-Family and HOA Communities",
+            url: "/blog/roofing-solutions-for-multi-family-and-hoa-communities",
+            excerpt: "Specialized roofing strategies for multi-family properties, condominiums, and HOA communities in South Florida."
+          },
+          {
+            title: "How to Plan Long-Term Roofing Budgets for Your Condo Association",
+            url: "/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association",
+            excerpt: "Financial planning guidance for HOA boards and property managers preparing for major roofing projects."
+          },
+          {
+            title: "Commercial Roof Coatings: Are They Worth the Investment?",
+            url: "/blog/commercial-roof-coatings-are-they-worth-the-investment",
+            excerpt: "Evaluate the ROI of commercial roof coatings for extending roof life and reducing long-term maintenance costs."
+          },
+          {
+            title: "How to Choose Roofing Materials for Large-Scale Projects",
+            url: "/blog/how-to-choose-roofing-materials-for-large-scale-projects",
+            excerpt: "A decision-making guide for selecting the right roofing materials for commercial and multi-family properties."
+          }
+        ]}
+      />
     </div>
     </>
   );
