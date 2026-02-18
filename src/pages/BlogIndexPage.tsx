@@ -22,6 +22,7 @@ export default function BlogIndexPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [categories, setCategories] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const postsPerPage = 12;
 
@@ -48,7 +49,10 @@ export default function BlogIndexPage() {
         .eq('published', true)
         .order('published_date', { ascending: false });
 
-      if (error) throw error;
+      if (error) {
+        console.error('Supabase error:', error);
+        throw new Error(`Database error: ${error.message}`);
+      }
 
       if (data) {
         setPosts(data);
@@ -62,8 +66,11 @@ export default function BlogIndexPage() {
         });
         setCategories(Array.from(allCategories));
       }
-    } catch (error) {
-      console.error('Error fetching blog posts:', error);
+      setError(null);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error occurred';
+      console.error('Error fetching blog posts:', err);
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -150,7 +157,24 @@ export default function BlogIndexPage() {
             </div>
           )}
 
-          {loading ? (
+          {error ? (
+            <div className="text-center py-20">
+              <div className="bg-red-50 border border-red-200 rounded-lg p-6 max-w-2xl mx-auto">
+                <h3 className="text-xl font-semibold text-red-800 mb-2">Error Loading Blog Posts</h3>
+                <p className="text-red-600 mb-4">{error}</p>
+                <button
+                  onClick={() => {
+                    setError(null);
+                    setLoading(true);
+                    fetchPosts();
+                  }}
+                  className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors"
+                >
+                  Try Again
+                </button>
+              </div>
+            </div>
+          ) : loading ? (
             <div className="text-center py-20">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
               <p className="mt-4 text-slate-600">Loading posts...</p>

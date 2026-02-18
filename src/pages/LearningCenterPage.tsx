@@ -122,7 +122,7 @@ function ArticleCard({ title, href }: ArticleCardProps) {
   );
 }
 
-export function LearningCenterPage() {
+export default function LearningCenterPage() {
   return (
     <>
       <SEO
