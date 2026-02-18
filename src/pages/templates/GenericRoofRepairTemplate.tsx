@@ -4,8 +4,10 @@ import { CheckCircle2, AlertTriangle, ChevronRight, Plus, Minus } from 'lucide-r
 import Header from '../../components/Header';
 import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
+import NearbyServiceAreas from '../../components/NearbyServiceAreas';
 import cities from '../../data/cities.json';
 import { isCityIndexable } from '../../config/indexableCities';
+import { getNearbyCities } from '../../data/nearbyRoofRepairCities';
 
 export default function GenericRoofRepairTemplate() {
   const { city: citySlug } = useParams<{ city: string }>();
@@ -17,6 +19,9 @@ export default function GenericRoofRepairTemplate() {
 
   // Check if this city should be indexed
   const isIndexable = citySlug ? isCityIndexable(citySlug) : false;
+
+  // Get nearby cities for this location
+  const nearbyCities = citySlug ? getNearbyCities(citySlug, cities) : [];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -253,6 +258,8 @@ export default function GenericRoofRepairTemplate() {
             </div>
           </div>
         </section>
+
+        <NearbyServiceAreas nearbyCities={nearbyCities} serviceType="roof-repair" />
 
         <section id="contact" className="py-20 bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

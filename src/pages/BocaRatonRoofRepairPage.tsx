@@ -4,9 +4,13 @@ import { CheckCircle2, AlertTriangle, ChevronRight, Plus, Minus } from 'lucide-r
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 import SEO from '../components/SEO';
+import NearbyServiceAreas from '../components/NearbyServiceAreas';
+import cities from '../data/cities.json';
+import { getNearbyCities } from '../data/nearbyRoofRepairCities';
 
 export default function BocaRatonRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const nearbyCities = getNearbyCities('boca-raton', cities);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -509,6 +513,8 @@ export default function BocaRatonRoofRepairPage() {
             </div>
           </div>
         </section>
+
+        <NearbyServiceAreas nearbyCities={nearbyCities} serviceType="roof-repair" />
 
         {/* Contact Form */}
         <Contact />
