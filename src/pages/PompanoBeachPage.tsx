@@ -391,6 +391,148 @@ export default function PompanoBeachPage() {
           </div>
 
           <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Project Planning
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  Proper planning is the foundation of any successful roofing project, whether you're considering a <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">full roof replacement</Link> or a targeted repair. The process starts with a thorough assessment of your existing roof to determine its current condition and identify underlying issues. All Phase Construction USA works closely with you to understand your specific needs, preferences, and budget, developing a detailed plan for your project.
+                </p>
+                <p>
+                  Key factors such as roof size, pitch, and structure are carefully evaluated to ensure the right approach and selection of quality roofing materials. During this stage, we review local building codes and Broward County regulations to guarantee compliance and avoid hidden costs. Permits for roof replacement in Pompano Beach typically range from $100 to $500. By investing in comprehensive project planning, homeowners can feel confident their roofing project will be completed efficiently, on budget, and to the highest standards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Consultation and Advice
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  All Phase Construction USA offers more than just installation — we provide expert consultation and advice tailored to your specific needs. During a roofing consultation, our team will thoroughly assess your existing roof, identify any issues such as leaks or damaged shingles, and recommend the most effective solution, whether it's roof repair, roof replacement, or routine maintenance. You'll receive guidance on selecting the best roofing materials and gain a clear understanding of the costs involved.
+                </p>
+                <p>
+                  Consultations also cover the importance of regular <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">roof inspections</Link> and <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation inspections</Link>, which help protect your property from severe weather and can lower your insurance premiums by 20–45%. By working with All Phase Construction USA, you'll receive honest recommendations, cost-effective solutions, and the peace of mind that comes from making informed decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Materials and Options
+              </h2>
+              <p className="text-zinc-400 leading-relaxed mb-8">
+                Choosing the right roofing materials is a crucial decision that affects the performance, appearance, and longevity of your roof. Homeowners in Pompano Beach have access to a wide variety of options, each offering unique benefits:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    <Link to="/shingle-roofing" className="hover:text-red-500 transition-colors">Asphalt Shingles</Link>
+                  </h3>
+                  <p className="text-zinc-400 leading-relaxed">
+                    The most common and affordable roofing material, ideal for budget-conscious homeowners. Lifespan: 15–30 years.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    <Link to="/shingle-roofing" className="hover:text-red-500 transition-colors">Architectural Shingles</Link>
+                  </h3>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Added dimension and style compared to standard three-tab shingles, with improved wind resistance.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    <Link to="/metal-roofing" className="hover:text-red-500 transition-colors">Metal Roofing</Link>
+                  </h3>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Excellent durability and energy efficiency that can withstand Florida's challenging weather. Lifespan: up to 70 years.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    <Link to="/tile-roofing" className="hover:text-red-500 transition-colors">Concrete and Clay Tile</Link>
+                  </h3>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Resilient and classic, known for their longevity. Clay tile roofs can last 50–100 years.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">Slate Tile</h3>
+                  <p className="text-zinc-400 leading-relaxed">
+                    Luxurious, long-lasting solution with lifespans up to 150 years.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    <Link to="/flat-roofing" className="hover:text-red-500 transition-colors">Flat Roofing Systems</Link>
+                  </h3>
+                  <p className="text-zinc-400 leading-relaxed">
+                    TPO, modified bitumen, and SPF options for commercial and low-slope residential applications.
+                  </p>
+                </div>
+              </div>
+              <p className="text-zinc-400 leading-relaxed mt-8">
+                Our team can help you compare these materials, taking into account your budget, climate considerations, and personal style preferences. Energy-efficient materials like metal roofs can help reduce energy bills over time.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Safety and Wind Mitigation
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  Safety is paramount during any roofing project, both for homeowners and contractors. A damaged roof can lead to serious issues such as roof leaks, structural problems, or even collapse if not addressed properly. Before any work begins, a comprehensive <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">roof inspection</Link> is conducted to identify potential hazards and ensure the roof is safe to access.
+                </p>
+                <p>
+                  Implementing <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation measures</Link> is especially important for Pompano Beach properties located in Florida's High Velocity Hurricane Zone. Wind mitigation upgrades can lower homeowner insurance premiums by 20–45% while strengthening your roof against storm damage. All Phase Construction USA is a certified wind mitigator and can perform both the upgrades and the inspection documentation your insurance company requires.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Maintenance and Inspection
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  Regular maintenance and inspection are key to maximizing the lifespan of your roof and preventing unexpected expenses. Scheduling <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">annual roof inspections</Link> allows homeowners to catch small issues — such as missing shingles or loose flashing — before they turn into costly repairs. These inspections are especially important after severe weather, as they can reveal hidden damage that might otherwise go unnoticed.
+                </p>
+                <p>
+                  Homeowners can also take simple steps to protect their roof, such as cleaning gutters and downspouts to prevent water buildup and trimming overhanging branches. All Phase Construction USA offers comprehensive <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline transition-colors">roof maintenance programs</Link> designed specifically for South Florida conditions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Removal and Cleanup
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  The removal and cleanup phase is a critical part of any roof replacement project. All Phase Construction USA carefully removes your old roof, including all shingles, underlayment, and other materials, ensuring the process is safe and efficient. The cost for roofing removal typically ranges from $0.40 to $2.00 per square foot, depending on the type of material and complexity of the job.
+                </p>
+                <p>
+                  Proper cleanup is just as important as the installation itself. All debris is thoroughly cleared away, and the roof deck and structure are inspected for any hidden damage that could affect the new installation. This attention to detail ensures your new roof is built on a solid, reliable foundation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 What Pompano Beach Roofs Face
@@ -554,6 +696,54 @@ export default function PompanoBeachPage() {
           </div>
 
           <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Partnerships and Certifications
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  All Phase Construction USA holds certifications from leading manufacturers including GAF, Owens Corning Platinum, CertainTeed Master, and Tamko Pro Platinum. These partnerships give us access to top-tier roofing materials and advanced installation techniques.
+                </p>
+                <p>
+                  In addition to manufacturer certifications, we hold credentials for specialized services including wind mitigation inspection and architectural shingle installation. These certifications reflect our commitment to ongoing training and excellence in roofing services. When you work with All Phase Construction USA, you benefit from quality roofing materials, expert installation, and comprehensive warranties.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Education and Resources
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  All Phase Construction USA is dedicated to empowering homeowners and business owners with the knowledge they need to make informed decisions about their roofing needs. Our <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> provides clear information on different types of roofing materials, guidance on selecting the best option for your budget and climate, and tips for maintaining your roof.
+                </p>
+                <p>
+                  Resources cover topics like how to <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline transition-colors">spot early signs of roof damage</Link>, <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline transition-colors">understanding your roofing warranty</Link>, how to <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline transition-colors">file an insurance claim</Link> after storm damage, and how <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation</Link> can lower your insurance premiums. Visit our <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> to explore all of our roofing guides and educational content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roofing Permits and Compliance
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  Securing the <Link to="/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida" className="text-red-500 hover:text-red-400 underline transition-colors">proper permits</Link> and ensuring compliance with local regulations are essential steps in any roofing project. Homeowners should always verify that their roofing contractor obtains all necessary permits and adheres to building codes, including wind mitigation and energy efficiency standards.
+                </p>
+                <p>
+                  All Phase Construction USA manages the permitting process from start to finish, submitting all required documentation and ensuring work is performed according to code. As GAF Certified, Owens Corning Platinum, CertainTeed Master, and Tamko Pro Platinum certified contractors, we meet the highest manufacturer standards for installation quality. By prioritizing permits and compliance, you avoid costly fines, guarantee a safe and reliable installation, and safeguard your investment for the long term.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
             <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Pompano Beach Zip Codes We Serve
@@ -567,10 +757,10 @@ export default function PompanoBeachPage() {
           <div className="mb-20">
             <div className="text-center mb-8">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Also Serving Nearby Communities
+                Serving Pompano Beach & Surrounding Areas
               </h2>
               <p className="text-zinc-400 max-w-3xl mx-auto">
-                In addition to Pompano Beach, we provide roofing services throughout Broward County:
+                Based in Deerfield Beach, we provide roofing services throughout South Florida including Pompano Beach and surrounding communities. Our local presence means faster response times and familiarity with regional building requirements. We proudly serve nearby areas including <Link to="/locations/fort-lauderdale" className="text-red-500 hover:text-red-400 transition-colors">Fort Lauderdale</Link>, <Link to="/locations/coral-springs" className="text-red-500 hover:text-red-400 transition-colors">Coral Springs</Link>, <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 transition-colors">Deerfield Beach</Link>, <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 transition-colors">Boca Raton</Link>, <Link to="/locations/delray-beach" className="text-red-500 hover:text-red-400 transition-colors">Delray Beach</Link>, and <Link to="/locations/boynton-beach" className="text-red-500 hover:text-red-400 transition-colors">Boynton Beach</Link>.
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
@@ -634,10 +824,10 @@ export default function PompanoBeachPage() {
 
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready for a Free Roof Inspection in Pompano Beach?
+              Get In Touch
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule your inspection today. We'll assess your roof's condition, identify any issues, and give you honest recommendations — no pressure, no obligation. And since we're right next door in Deerfield Beach, we can usually get there quickly.
+              Ready to start your project? Contact us today for a free estimate on your roofing project and explore your options with transparent pricing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
