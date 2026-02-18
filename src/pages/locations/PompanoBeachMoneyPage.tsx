@@ -112,7 +112,7 @@ export default function PompanoBeachMoneyPage() {
               <nav className="flex items-center space-x-2 text-sm text-zinc-400 mb-8">
                 <Link to="/" className="hover:text-red-600 transition-colors">Home</Link>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/locations/service-areas/" className="hover:text-red-600 transition-colors">Service Areas</Link>
+                <Link to="/locations/service-areas" className="hover:text-red-600 transition-colors">Service Areas</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{cityName}</span>
               </nav>
@@ -267,10 +267,10 @@ export default function PompanoBeachMoneyPage() {
                 </h2>
                 <div className="space-y-4 text-zinc-300 leading-relaxed">
                   <p>
-                    Every successful roofing project in Pompano Beach begins with meticulous planning. Our experienced project managers work closely with you to understand your goals, budget, and timeline, developing a detailed roadmap that ensures your project proceeds smoothly from start to finish.
+                    Every successful roofing project in Pompano Beach begins with meticulous planning. Our experienced project managers work closely with you to understand your goals, budget, and timeline, developing a detailed roadmap that ensures your project proceeds smoothly from start to finish. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and square footage.
                   </p>
                   <p>
-                    We evaluate your property's specific needs, considering factors like roof age, condition, architectural style, and local building requirements. Our planning process includes material selection guidance, weather scheduling considerations, and coordination with HOA requirements where applicable. We provide transparent timelines and keep you informed at every stage.
+                    We evaluate your property's specific needs, considering factors like roof age, condition, architectural style, and local building requirements. Our planning process includes material selection guidance, weather scheduling considerations, and coordination with HOA requirements where applicable. We provide transparent timelines and keep you informed at every stage. <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">Financing options</Link> are available to help manage the total cost of your roofing project.
                   </p>
                   <p>
                     For commercial projects, we understand the importance of minimizing business disruption. Our strategic planning includes phased installation options, after-hours work schedules, and coordination with your operational needs. Whether residential or commercial, our thorough planning approach eliminates surprises and ensures predictable, successful outcomes.
@@ -368,26 +368,30 @@ export default function PompanoBeachMoneyPage() {
                 {
                   title: 'Concrete & Clay Tile',
                   description: 'Premium tile roofing systems offering exceptional durability, energy efficiency, and Mediterranean aesthetic appeal. Ideal for luxury homes and historic properties.',
-                  features: ['50+ year lifespan', 'Class A fire rating', 'Energy Star certified']
+                  features: ['50+ year lifespan', 'Class A fire rating', 'Energy Star certified'],
+                  link: '/tile-roofing'
                 },
                 {
                   title: 'Architectural Shingles',
                   description: 'High-performance asphalt shingles with superior wind resistance and comprehensive warranty coverage. Cost-effective solution with excellent durability.',
-                  features: ['130+ mph wind ratings', '30-50 year warranties', 'Algae resistance']
+                  features: ['130+ mph wind ratings', '30-50 year warranties', 'Algae resistance'],
+                  link: '/shingle-roofing'
                 },
                 {
                   title: 'Metal Roofing Systems',
                   description: 'Standing seam and mechanically seamed metal roofs providing maximum wind protection and modern aesthetics. Excellent for coastal environments.',
-                  features: ['Lifetime durability', 'Maximum wind protection', 'Cool roof technology']
+                  features: ['Lifetime durability', 'Maximum wind protection', 'Cool roof technology'],
+                  link: '/metal-roofing'
                 },
                 {
                   title: 'Flat Roof Systems',
                   description: 'Advanced TPO, modified bitumen, and built-up roofing systems for commercial properties. Superior water drainage and leak protection.',
-                  features: ['20-30 year systems', 'Energy efficient', 'Minimal maintenance']
+                  features: ['20-30 year systems', 'Energy efficient', 'Minimal maintenance'],
+                  link: '/flat-roofing'
                 }
               ].map((material, index) => (
-                <div key={index} className="bg-zinc-950 border border-zinc-800 rounded-xl p-6">
-                  <h3 className="text-xl font-bold mb-3">{material.title}</h3>
+                <Link key={index} to={material.link} className="group bg-zinc-950 border border-zinc-800 hover:border-red-600 rounded-xl p-6 transition-all">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors">{material.title}</h3>
                   <p className="text-zinc-400 mb-4 leading-relaxed">
                     {material.description}
                   </p>
@@ -399,7 +403,7 @@ export default function PompanoBeachMoneyPage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -671,6 +675,13 @@ export default function PompanoBeachMoneyPage() {
                 </div>
               </Link>
             </div>
+
+            <div className="mt-12 bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+              <h3 className="text-xl font-bold mb-4">Popular Roofing Guides</h3>
+              <p className="text-zinc-300 leading-relaxed">
+                Explore our most popular guides: <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline">How Wind Mitigation Saves on Insurance</Link>, <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline">Filing a Roof Insurance Claim After Storm Damage</Link>, <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline">Understanding Your Roofing Warranty</Link>, <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline">Spotting Early Signs of Roof Damage</Link>, and <Link to="/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid" className="text-red-500 hover:text-red-400 underline">How to Hire a Roofer in South Florida</Link>.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -688,7 +699,7 @@ export default function PompanoBeachMoneyPage() {
                 </h2>
                 <div className="space-y-4 text-zinc-300 leading-relaxed">
                   <p>
-                    Navigating local building codes and permit requirements can be complex. Our team handles all permitting requirements for your Pompano Beach roofing project, ensuring full compliance with {county} building codes, Florida Building Code, and HVHZ regulations where applicable.
+                    Navigating local building codes and permit requirements can be complex. Our team handles all <Link to="/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida" className="text-red-500 hover:text-red-400 underline">permitting requirements</Link> for your Pompano Beach roofing project, ensuring full compliance with {county} building codes, Florida Building Code, and HVHZ regulations where applicable.
                   </p>
                   <p>
                     We manage the entire permitting process from application through final inspection. Our experience with local building departments ensures efficient approval and proper documentation. We coordinate required inspections, address any concerns, and ensure your project meets or exceeds all code requirements.
@@ -756,7 +767,7 @@ export default function PompanoBeachMoneyPage() {
 
             <div className="mt-8 text-center">
               <Link
-                to="/locations/service-areas/"
+                to="/locations/service-areas"
                 className="inline-flex items-center gap-2 text-red-600 font-semibold hover:gap-3 transition-all"
               >
                 View All Service Areas

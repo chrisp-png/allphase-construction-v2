@@ -325,21 +325,21 @@ export default function DeerfieldBeachCityPage() {
           {/* Service Pills Row */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             <Link
-              to="/roof-inspection/"
+              to="/roof-inspection"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <FileCheck className="w-4 h-4" />
               Roof Inspections
             </Link>
             <Link
-              to="/roof-repair/"
+              to="/roof-repair"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <CheckCircle className="w-4 h-4" />
               Roof Repair
             </Link>
             <Link
-              to="/roof-replacement-process/"
+              to="/roof-replacement-process"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <ArrowRight className="w-4 h-4" />
@@ -646,7 +646,7 @@ export default function DeerfieldBeachCityPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                to="/roof-inspection/"
+                to="/roof-inspection"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
                 Schedule My Roof Inspection
