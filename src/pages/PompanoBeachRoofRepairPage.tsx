@@ -55,8 +55,8 @@ export default function PompanoBeachRoofRepairPage() {
   return (
     <>
       <SEO
-        title="Roof Repair Pompano Beach, FL | Free Roof Inspection"
-        description="Need roof repair in Pompano Beach? Get a free roof inspection. Tile, shingle, metal & flat roofing. Call (754) 227-5605."
+        title="Roofing Contractor Pompano Beach, FL | Free Roof Inspection | All Phase"
+        description="Licensed roofing contractor serving Pompano Beach, FL. Residential & commercial roof repair, replacement, inspection. Dual-county licensed. Call (754) 227-5605."
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
@@ -77,12 +77,16 @@ export default function PompanoBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Repair in Pompano Beach, Florida
+                Roofing Contractor in Pompano Beach, FL
               </h1>
+
+              <p className="text-xl text-zinc-400 mb-8">
+                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+              </p>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Pompano Beach roofs experience sustained exposure to coastal salt air, UV intensity, canal-adjacent humidity, and seasonal storm patterns that accelerate wear on tile, shingle, flat, and metal roof systems. All Phase Construction USA provides inspection-first roof repair in Pompano Beach, starting with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak pathways, document moisture patterns, and determine whether targeted repairs are appropriate under the Florida Building Code and HVHZ requirements where applicable.
+                  All Phase Construction USA serves Pompano Beach with comprehensive residential and commercial roofing services. Licensed in both Broward and Palm Beach counties, we specialize in tile, shingle, metal, and flat roofing systems designed for South Florida's climate challenges. Pompano Beach roofs experience sustained exposure to coastal salt air, UV intensity, canal-adjacent humidity, and seasonal storm patterns that accelerate wear on all roof systems. We start every project with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak pathways, document moisture patterns, and determine whether targeted repairs or full replacement is appropriate under the Florida Building Code and HVHZ requirements.
                 </p>
               </div>
 
@@ -100,6 +104,111 @@ export default function PompanoBeachRoofRepairPage() {
                   Call (754) 227-5605
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Roof Replacement Cost Section */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Roof Replacement Cost in Pompano Beach
+            </h2>
+
+            <div className="text-lg text-zinc-300 leading-relaxed space-y-6 mb-10">
+              <p>
+                The average cost to replace a roof is around $9,500, but it can range from $5,800 to $46,000 depending on several factors. The actual cost of roof replacement includes labor, materials, removal and disposal of old materials, permits, and your geographic location. Labor costs typically account for more than half of the total cost, and permits can range from $100 to $1,400 depending on the city. Removing and disposing of old roofing materials usually adds $0.40 to $2.00 per square foot to the price.
+              </p>
+
+              <p>
+                The overall cost of your roof project will also depend on the size and square footage of the roof, complexity such as chimneys or skylights, and whether you are replacing the entire roof or just a section. Larger roofs with more complex designs require more materials and labor, which increases installation costs. Roof height and accessibility also impact costs — a two-story home will have higher labor costs than a single-story home.
+              </p>
+            </div>
+
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              Roofing Materials and Lifespan
+            </h3>
+
+            <div className="text-lg text-zinc-300 leading-relaxed space-y-6 mb-10">
+              <p>
+                When considering roofing materials, asphalt shingles are the most common and affordable option, with a lifespan of 15–30 years and low maintenance needs. Metal roofs are a premium option lasting up to 70 years, offering energy efficiency and long-term savings. Clay tiles are exceptionally durable and typically last 50–100 years, providing excellent noise insulation from wind and rain. Slate roofs are the longest-lasting option with lifespans up to 150 years and minimal maintenance. Energy-efficient materials like metal roofs can help reduce energy bills over time. New underlayment is often required during roof replacement to prevent water damage and should be included in your total cost estimate.
+              </p>
+            </div>
+
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              Getting Quotes and Understanding Warranties
+            </h3>
+
+            <div className="text-lg text-zinc-300 leading-relaxed space-y-6">
+              <p>
+                To get a better idea of the price range and value, homeowners should get multiple quotes from roofing contractors. Roof replacement costs can sometimes be offset by homeowner's insurance, local or federal grants, or by negotiating with your contractor. Workmanship warranties from contractors typically last 1–10 years, while manufacturer warranties for roofing materials usually last 25–50 years. All Phase Construction USA provides both warranty types on every project.
+              </p>
+
+              <p>
+                The decision to repair or replace a roof depends on the age, condition, and extent of damage to your existing roof. Acting quickly on roof issues can help you avoid higher costs and protect your property investment. Use our free <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> to estimate your project, or call (754) 227-5605 for an in-person assessment. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Explore our financing options</Link> to make your roof replacement more manageable.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Signs of a Failing Roof Section */}
+        <section className="py-20 bg-black">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Signs of a Failing Roof
+            </h2>
+
+            <div className="text-lg text-zinc-300 leading-relaxed space-y-6 mb-8">
+              <p>
+                Recognizing the early signs of a failing roof is essential for homeowners who want to protect their property and avoid costly repairs. A roof in poor condition can lead to water damage, structural issues, and increased energy costs. Common indicators your roof needs attention:
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                <h4 className="text-xl font-semibold text-white mb-3">Water Stains on Ceilings or Walls</h4>
+                <p className="text-zinc-300">
+                  These often point to a leaky roof and can signal water damage inside your home.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                <h4 className="text-xl font-semibold text-white mb-3">Cracked or Broken Shingles</h4>
+                <p className="text-zinc-300">
+                  Damaged shingles compromise the integrity of your roof and can allow moisture to seep in.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                <h4 className="text-xl font-semibold text-white mb-3">Sagging or Uneven Rooflines</h4>
+                <p className="text-zinc-300">
+                  This may indicate underlying structural problems that require immediate attention.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                <h4 className="text-xl font-semibold text-white mb-3">Missing or Loose Shingles</h4>
+                <p className="text-zinc-300">
+                  Gaps in your roofing material can lead to further leaks and damage, especially during extreme weather.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                <h4 className="text-xl font-semibold text-white mb-3">Roof Age</h4>
+                <p className="text-zinc-300">
+                  Most asphalt shingle roofs last 20–30 years. If your roof is approaching this age, it may be time to consider roof replacement.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-lg text-zinc-300 leading-relaxed space-y-6">
+              <p>
+                Addressing these issues promptly can help you avoid more extensive and expensive repairs. Regular <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">inspections by professional roofers</Link> can catch problems early, ensuring your roof remains in good condition and continues to protect your home.
+              </p>
+
+              <p>
+                If only certain areas of your roof are damaged, partial roof replacement can be a cost-effective solution, helping you save money on materials and labor. Homeowners can also reduce costs by scheduling their roof replacement project during the off season when labor expenses may be lower.
+              </p>
             </div>
           </div>
         </section>
@@ -574,6 +683,104 @@ export default function PompanoBeachRoofRepairPage() {
           </div>
         </section>
 
+        {/* Roofing Services Section */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Roofing Services in Pompano Beach
+            </h2>
+            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
+              All Phase Construction USA provides comprehensive roofing services for residential and commercial properties in Pompano Beach and throughout Broward and Palm Beach counties.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link
+                to="/roofing-services/roof-repair/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Roof Repair
+                </h3>
+                <p className="text-zinc-300">
+                  Targeted repairs for leaks, damage, and wear on all roof systems with code-compliant materials and methods.
+                </p>
+              </Link>
+
+              <Link
+                to="/roofing-services/roof-inspection/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Roof Inspection
+                </h3>
+                <p className="text-zinc-300">
+                  Comprehensive diagnostic inspections identifying leak sources, damage patterns, and repair needs.
+                </p>
+              </Link>
+
+              <Link
+                to="/roofing-services/residential-roofing/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  New Roof Installation
+                </h3>
+                <p className="text-zinc-300">
+                  Complete roof replacement with high-wind rated materials meeting Florida's HVHZ requirements for Pompano Beach homes and businesses.
+                </p>
+              </Link>
+
+              <Link
+                to="/roofing-services/tile-roofing/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Tile Roofing
+                </h3>
+                <p className="text-zinc-300">
+                  Concrete and clay tile installation and repair. Clay tiles are a premium roofing material known for exceptional durability and longevity, with clay tile roofs typically lasting 50 to 100 years. Tile roofing also offers excellent noise isolation from wind and rain.
+                </p>
+              </Link>
+
+              <Link
+                to="/roofing-services/metal-roofing/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Metal Roofing
+                </h3>
+                <p className="text-zinc-300">
+                  Standing seam and exposed-fastener metal roofing systems with superior wind resistance and longevity up to 70 years.
+                </p>
+              </Link>
+
+              <Link
+                to="/roofing-services/flat-roofing/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Flat Roofing
+                </h3>
+                <p className="text-zinc-300">
+                  Modified bitumen, TPO, and low-slope membrane systems for commercial and residential flat roof applications.
+                </p>
+              </Link>
+
+              <Link
+                to="/roofing-services/commercial-roofing/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Commercial Roofing
+                </h3>
+                <p className="text-zinc-300">
+                  Commercial roof systems for multi-family properties, businesses, and HOA communities throughout South Florida.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose All Phase */}
         <section className="py-20 bg-black">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -629,12 +836,130 @@ export default function PompanoBeachRoofRepairPage() {
                   <p className="text-zinc-300">Florida-licensed roofing contractor maintaining full compliance with state regulatory requirements and comprehensive liability insurance coverage.</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-white text-lg mb-2">Dual-County Licensing</h4>
+                  <p className="text-zinc-300">Licensed and insured in both Broward and Palm Beach counties, ensuring compliance with all local building codes and regulations.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-white text-lg mb-2">Hurricane-Rated Installations</h4>
+                  <p className="text-zinc-300">All roofing systems meet Florida's High Velocity Hurricane Zone requirements with proper wind uplift ratings and installation standards.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-white text-lg mb-2">Comprehensive Warranties</h4>
+                  <p className="text-zinc-300">We provide both manufacturer warranties on materials and workmanship warranties on installation. Our workmanship warranty typically covers 1 to 10 years, while manufacturer warranties usually last 25–50 years covering defects in materials.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-white text-lg mb-2">Direct Communication</h4>
+                  <p className="text-zinc-300">Work directly with licensed professionals throughout your project. No subcontractors, no middlemen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Serving Pompano Beach Section */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Serving Pompano Beach & Surrounding Areas
+            </h2>
+            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
+              All Phase Construction USA provides roofing services throughout Pompano Beach and neighboring South Florida communities. Our dual-county licensing in Broward and Palm Beach counties enables us to serve residential and commercial properties across the region with consistent quality and code compliance.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link
+                to="/roof-repair/fort-lauderdale/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Fort Lauderdale Roof Repair
+                </h3>
+                <p className="text-zinc-300 text-sm">
+                  Comprehensive roof repair and replacement services for Fort Lauderdale properties.
+                </p>
+              </Link>
+
+              <Link
+                to="/roof-repair/coral-springs/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Coral Springs Roof Repair
+                </h3>
+                <p className="text-zinc-300 text-sm">
+                  Expert roofing services for Coral Springs homes and businesses.
+                </p>
+              </Link>
+
+              <Link
+                to="/roof-repair/deerfield-beach/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Deerfield Beach Roof Repair
+                </h3>
+                <p className="text-zinc-300 text-sm">
+                  Local roofing contractor serving Deerfield Beach from our headquarters.
+                </p>
+              </Link>
+
+              <Link
+                to="/roof-repair/boca-raton/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Boca Raton Roof Repair
+                </h3>
+                <p className="text-zinc-300 text-sm">
+                  Premium roofing services for Boca Raton residential and commercial properties.
+                </p>
+              </Link>
+
+              <Link
+                to="/roof-repair/delray-beach/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Delray Beach Roof Repair
+                </h3>
+                <p className="text-zinc-300 text-sm">
+                  Trusted roofing contractor for Delray Beach area properties.
+                </p>
+              </Link>
+
+              <Link
+                to="/roof-repair/boynton-beach/"
+                className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
+                  Boynton Beach Roof Repair
+                </h3>
+                <p className="text-zinc-300 text-sm">
+                  Complete roofing solutions for Boynton Beach homes and businesses.
+                </p>
+              </Link>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-zinc-900">
+        <section className="py-20 bg-black">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
               Roof Repair FAQs – Pompano Beach, FL
