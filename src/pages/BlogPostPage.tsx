@@ -341,36 +341,38 @@ export default function BlogPostPage() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="mb-12">
-            <img
-              src={post.featured_image}
-              alt={post.title}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-auto rounded-xl shadow-2xl"
-            />
-          </div>
-
-          <div
-            className="prose prose-lg prose-invert max-w-none prose-headings:font-bold prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-img:shadow-lg"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-
-          {post.tags && post.tags.length > 0 && (
-            <div className="mt-12 pt-8 border-t border-zinc-800">
-              <div className="flex flex-wrap gap-2">
-                {post.tags.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="bg-zinc-800 text-white px-3 py-1 rounded-full text-sm"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
+        <div className="bg-gradient-to-br from-black via-zinc-900 to-black">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="mb-12">
+              <img
+                src={post.featured_image}
+                alt={post.title}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
             </div>
-          )}
+
+            <div
+              className="prose prose-lg prose-invert max-w-none prose-headings:font-bold prose-headings:text-white prose-p:text-gray-200 prose-li:text-gray-200 prose-strong:text-white prose-a:text-red-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-red-400 prose-img:rounded-lg prose-img:shadow-lg"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
+
+            {post.tags && post.tags.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-zinc-800">
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="bg-zinc-800 text-white px-3 py-1 rounded-full text-sm"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         {post.faqs && post.faqs.length > 0 && (
