@@ -36,6 +36,29 @@ export default function BocaRatonPage() {
   const citySlug = 'boca-raton';
   const cityName = 'Boca Raton';
 
+  // Helper function to render FAQ answers with links
+  const renderFaqAnswer = (question: string, answer: string) => {
+    if (question.includes('average cost for a new roof')) {
+      const parts = answer.split('Use our Roof Cost Calculator');
+      return (
+        <>
+          {parts[0]}
+          Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a personalized estimate based on your specific roof type and size.
+        </>
+      );
+    }
+    if (question.includes('permits and inspections')) {
+      const parts = answer.split('Learn more about');
+      return (
+        <>
+          {parts[0]}
+          Learn more about <Link to="/blog/why-permitting-matters-in-roofing-and-construction-projects" className="text-red-500 hover:text-red-400 underline transition-colors">why permitting matters</Link> and why homeowners should never pull their own roofing permit.
+        </>
+      );
+    }
+    return answer;
+  };
+
   // Get SEO data with override system
   const seoOverride = CITY_SERVICE_AREA_SEO_OVERRIDES[citySlug];
   const seoTitle = seoOverride?.title || `Roofer in ${cityName} FL | All Phase Construction USA`;
@@ -49,7 +72,7 @@ export default function BocaRatonPage() {
     },
     {
       question: 'What is the average cost for a new roof in Florida?',
-      answer: 'Roof replacement costs vary based on material type, roof complexity, and tear-off requirements. In Boca Raton, pricing is influenced by Florida Building Code standards, wind-load requirements, and permitting costs specific to Palm Beach County. Most full roof replacements fall within broad five-figure ranges depending on system selection, decking condition, and upgrade requirements. A professional inspection is required to provide an accurate scope and estimate.'
+      answer: 'Roof replacement costs vary based on material type, roof complexity, and tear-off requirements. In Boca Raton, pricing is influenced by Florida Building Code standards, wind-load requirements, and permitting costs specific to Palm Beach County. Most full roof replacements fall within broad five-figure ranges depending on system selection, decking condition, and upgrade requirements. A professional inspection is required to provide an accurate scope and estimate. Use our Roof Cost Calculator for a personalized estimate based on your specific roof type and size.'
     },
     {
       question: 'How much does a 2,000 sq ft shingle roof cost?',
@@ -61,7 +84,7 @@ export default function BocaRatonPage() {
     },
     {
       question: 'Do you handle permits and inspections in Boca Raton?',
-      answer: 'Yes. All Phase Construction USA manages the permitting and inspection process for roof repairs and replacements in Boca Raton. We coordinate directly with local building departments to ensure compliance with Florida Building Code requirements and Palm Beach County regulations. This includes submitting documentation, scheduling inspections, and ensuring final approval.'
+      answer: 'Yes. We manage permits and coordinate inspections as part of a proper reroof process. Learn more about why permitting matters and why homeowners should never pull their own roofing permit.'
     },
     {
       question: 'How fast can you inspect a leak?',
@@ -145,11 +168,11 @@ export default function BocaRatonPage() {
 
             <div className="prose prose-invert max-w-none mb-12">
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That is what we build. As a leading boca raton roofing company with deep local expertise, we understand the unique needs of homes and businesses in this area. Our commitment to quality, customer satisfaction, care, and safety standards sets us apart as a trusted member of the local community.
+                If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That is what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community. With years of experience in all types of roofing applications and a dedication to excellence, we ensure every project meets the highest standards for both residential and commercial properties.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                All Phase Construction USA is a licensed Florida roofing contractor—fully insured and bonded for your peace of mind. As your neighbors in the Boca Raton community, we value building strong local relationships and supporting our fellow residents. We are proud to have an expert team of professional roofers, and all roofing work is performed by our own employees to ensure consistent quality and reliability. With many years of experience, our team delivers reliable, high-quality workmanship that benefits every customer. Our team takes pride in serving the Boca Raton community and building lasting relationships with our customers.
+                All Phase Construction USA is a licensed Florida roofing contractor — fully insured and bonded for your peace of mind. We are proud to have an expert team of professional roofers. All roofing work is performed by our own employees, who are covered by workers' compensation insurance to ensure quality and safety on every job. Our team takes pride in serving the Boca Raton community and building lasting relationships with our customers. We care deeply about our clients and their homes, treating every project with the trust and respect our neighbors deserve.
               </p>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-6">
@@ -165,7 +188,7 @@ export default function BocaRatonPage() {
               </div>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-12">
-                As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage—crucial for maintaining the safety and comfort of your home. We are proud of our strong BBB rating (A+) and recent positive Google reviews. As licensed and insured roofing contractors, we treat every project with care and attention to detail to ensure your satisfaction. All Phase Construction USA has extensive experience in all types of roofing applications for both residential and commercial properties in Boca Raton and is committed to providing comprehensive roofing solutions tailored to your needs. When choosing a roofer in Boca Raton, always prioritize local, licensed, insured, and bonded contractors with a proven commitment to customer satisfaction and community trust.
+                As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damage — crucial for maintaining the safety and comfort of your home. When choosing a roofer in Boca Raton, look for companies with a proven history in South Florida, as they understand local building codes and hurricane-resistant materials. Always ensure your contractor holds a valid Florida roofing license and carries both general liability and workers' compensation insurance, as required by Florida law. We are proud of our strong BBB rating (A+) and recent positive Google reviews. When choosing a roofer in Boca Raton, always prioritize local, licensed, insured, and bonded contractors with a proven commitment to customer satisfaction and community trust.
               </p>
             </div>
 
@@ -197,7 +220,7 @@ export default function BocaRatonPage() {
                 South Florida roofing is not only about materials. It is about details that pass inspection and hold up when storms start pushing water sideways.
               </p>
               <p className="text-zinc-300 leading-relaxed mb-12">
-                Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team follows strict safety protocols and ensures all work meets or exceeds safety standards.
+                Boca Raton weather stresses edges, flashings, valleys, penetrations, and underlayment first. We focus there because that's where roofs usually lose. Our team follows strict safety protocols and ensures all work meets or exceeds safety standards. Our team is committed to strict safety protocols and ensures all work meets or exceeds safety standards to protect your home and everyone involved.
               </p>
 
               <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8 mb-8">
@@ -298,6 +321,10 @@ export default function BocaRatonPage() {
                   </li>
                 </ul>
               </div>
+
+              <p className="text-zinc-300 text-lg leading-relaxed mt-8">
+                When reviewing a roofing proposal, look for a line-itemed, detailed quote and a written contract that clearly breaks down materials, underlayment type, flashing, ventilation, and a specific cleanup plan. All Phase Construction USA presents every homeowner with multiple options — from good to better to best — so you understand the different materials, installation methods, and price points available for your specific roof. This approach lets you make an informed decision without guesswork. Financing options are available to help manage the costs — explore our <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline transition-colors">financing plans</Link> for flexible payment options.
+              </p>
             </div>
 
             <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
@@ -322,7 +349,7 @@ export default function BocaRatonPage() {
                 Roofing Contractor in Boca Raton FL: What We Do
               </h2>
               <p className="text-zinc-300 leading-relaxed mb-6">
-                We deliver permit-ready, inspection-ready, storm-ready roofing services for residential and commercial properties.
+                We deliver roofing services that are permit-ready, inspection-ready, and storm-ready, including complete roof replacements and specialized commercial roofing solutions for residential and commercial properties. During the roofing process, the old roofing material is removed to allow for proper installation of the new roof. Homeowners should prepare for potential noise and disruption during the roofing installation process.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-4">
@@ -438,6 +465,10 @@ export default function BocaRatonPage() {
                   <span>Flat roof seam and drainage issues</span>
                 </li>
               </ul>
+
+              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                At the first sign of roof leaks, prompt professional intervention is crucial to prevent further damage and avoid costly repairs. A small leak can be a small fix, or it can be the symptom of a tired system. The inspection tells the truth. Schedule a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">free roof inspection</Link> to get a clear picture of your roof's condition.
+              </p>
             </div>
 
             <PhotoBreak
@@ -450,10 +481,7 @@ export default function BocaRatonPage() {
                 Roof Repair in Boca Raton FL
               </h2>
               <p className="text-zinc-300 text-lg leading-relaxed mb-8">
-                If you need roof repair in Boca Raton, speed matters, but correctness matters more. Even leaving roof damage unaddressed for just one day can lead to more complex problems. A rushed patch often becomes a repeat leak.
-              </p>
-              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
-                Maintaining your roof is essential for ongoing protection against harsh weather and storm damage, especially in South Florida. Premium roofing materials can enhance your home's curb appeal. A comprehensive roofing project includes not only installation but also ongoing maintenance to ensure longevity. Regular maintenance allows homeowners to rest assured that their roof is in good condition, providing peace of mind and long-term security for your home.
+                If you need roof repair in Boca Raton, speed matters, but correctness matters more. A rushed patch often becomes a repeat leak. All roof repair projects are completed on time and in full, ensuring reliability and customer satisfaction. Repairs are handled by experienced, licensed, and insured roofing contractors, guaranteeing professional results.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-4">
@@ -476,7 +504,15 @@ export default function BocaRatonPage() {
                   <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <span>Shingle blow-off repair</span>
                 </li>
+                <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <span>Flat roof repairs (seams, penetrations, drains)</span>
+                </li>
               </ul>
+
+              <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                Maintaining your roof is essential for ongoing protection against harsh weather and storm damage, especially in South Florida. Regular maintenance allows homeowners to rest assured that their roof is in good condition, providing peace of mind and long-term security. Learn more about our <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline transition-colors">roof maintenance programs</Link> designed for South Florida conditions.
+              </p>
 
               <div className="mt-6 bg-gradient-to-r from-red-900/30 to-red-800/20 border-l-4 border-red-500 p-6 rounded-r-lg">
                 <div className="flex items-start gap-4">
@@ -510,7 +546,7 @@ export default function BocaRatonPage() {
               </p>
 
               <p className="text-zinc-300 text-lg leading-relaxed mb-8">
-                When selecting roofing materials, it's important to choose options that offer lasting protection and energy efficiency. Metal roofs are known for their exceptional durability and can enhance the strength of your home, providing value for decades. Tile roofing systems are commonly used in South Florida because they withstand harsh weather conditions, while concrete tiles are a top-rated material in Boca Raton, FL, thanks to their impressive 50+ year lifespan. Asphalt shingles remain one of the more affordable roofing options available, making them a popular choice for many homeowners.
+                When selecting roofing materials, it's important to choose options that offer lasting protection and energy efficiency. <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Metal roofs</Link> are known for their exceptional durability and can enhance the strength of your home, providing value for decades. <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Tile roofing systems</Link> are commonly used in South Florida because they withstand harsh weather conditions, while concrete tiles are a top-rated material in Boca Raton, FL, thanks to their impressive 50+ year lifespan. <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Asphalt shingles</Link> remain one of the more affordable roofing options available, making them a popular choice for many homeowners.
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -539,7 +575,7 @@ export default function BocaRatonPage() {
                       <td className="p-4 text-zinc-300">High wind performance, longevity, energy benefits</td>
                     </tr>
                     <tr className="hover:bg-zinc-800/30 transition-colors">
-                      <td className="p-4 text-red-400 font-semibold">Flat roofing systems</td>
+                      <td className="p-4 text-red-400 font-semibold"><Link to="/flat-roofing" className="hover:text-red-300 transition-colors">Flat roofing systems</Link></td>
                       <td className="p-4 text-zinc-300">Commercial and modern homes</td>
                       <td className="p-4 text-zinc-300">Seam control, drainage solutions, durable membranes</td>
                     </tr>
@@ -611,6 +647,10 @@ export default function BocaRatonPage() {
                     </li>
                   </ul>
 
+                  <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                    Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and square footage, or call (754) 227-5605 for a detailed in-person assessment. <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline transition-colors">Financing options</Link> are available to help manage the total cost of your roofing project over time.
+                  </p>
+
                   <h3 className="text-xl font-bold text-white mb-4">
                     Realistic Florida price context (ranges, not hype)
                   </h3>
@@ -633,14 +673,14 @@ export default function BocaRatonPage() {
                 Palm Beach County (partial list)
               </h3>
               <p className="text-zinc-300 leading-relaxed mb-8">
-                <a href="/locations/boca-raton/" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</a>, <a href="/locations/delray-beach/" className="text-red-600 hover:text-red-500 transition-colors">Delray Beach</a>, <a href="/locations/boynton-beach/" className="text-red-600 hover:text-red-500 transition-colors">Boynton Beach</a>, <a href="/locations/lake-worth/" className="text-red-600 hover:text-red-500 transition-colors">Lake Worth</a>, <a href="/locations/wellington/" className="text-red-600 hover:text-red-500 transition-colors">Wellington</a>, <a href="/locations/west-palm-beach/" className="text-red-600 hover:text-red-500 transition-colors">West Palm Beach</a>, <a href="/locations/palm-beach-gardens/" className="text-red-600 hover:text-red-500 transition-colors">Palm Beach Gardens</a>, <a href="/locations/jupiter/" className="text-red-600 hover:text-red-500 transition-colors">Jupiter</a>
+                <Link to="/locations/boca-raton" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</Link>, <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 transition-colors">Delray Beach</Link>, <Link to="/locations/boynton-beach" className="text-red-600 hover:text-red-500 transition-colors">Boynton Beach</Link>, Lake Worth, <Link to="/locations/wellington" className="text-red-600 hover:text-red-500 transition-colors">Wellington</Link>, <Link to="/locations/west-palm-beach" className="text-red-600 hover:text-red-500 transition-colors">West Palm Beach</Link>, Palm Beach Gardens, Jupiter
               </p>
 
               <h3 className="text-2xl font-bold text-white mb-4">
                 Broward County (partial list)
               </h3>
               <p className="text-zinc-300 leading-relaxed mb-8">
-                <a href="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500 transition-colors">Deerfield Beach</a>, <a href="/locations/pompano-beach/" className="text-red-600 hover:text-red-500 transition-colors">Pompano Beach</a>, <a href="/locations/fort-lauderdale/" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</a>, <a href="/locations/coral-springs/" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</a>, <a href="/locations/coconut-creek/" className="text-red-600 hover:text-red-500 transition-colors">Coconut Creek</a>, <a href="/locations/parkland/" className="text-red-600 hover:text-red-500 transition-colors">Parkland</a>, <a href="/locations/oakland-park/" className="text-red-600 hover:text-red-500 transition-colors">Oakland Park</a>, <a href="/locations/sunrise/" className="text-red-600 hover:text-red-500 transition-colors">Sunrise</a>, <a href="/locations/weston/" className="text-red-600 hover:text-red-500 transition-colors">Weston</a>
+                <Link to="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 transition-colors">Deerfield Beach</Link>, <Link to="/locations/pompano-beach" className="text-red-600 hover:text-red-500 transition-colors">Pompano Beach</Link>, <Link to="/locations/fort-lauderdale" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</Link>, <Link to="/locations/coral-springs" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</Link>, <Link to="/locations/coconut-creek" className="text-red-600 hover:text-red-500 transition-colors">Coconut Creek</Link>, <Link to="/locations/parkland" className="text-red-600 hover:text-red-500 transition-colors">Parkland</Link>, Oakland Park, Sunrise, Weston
               </p>
 
               <h3 className="text-2xl font-bold text-white mb-6">
@@ -659,14 +699,14 @@ export default function BocaRatonPage() {
                     <tr className="border-b border-zinc-800 hover:bg-zinc-800/50 transition-colors">
                       <td className="px-6 py-4 text-red-600 font-semibold">Palm Beach</td>
                       <td className="px-6 py-4 text-zinc-300">
-                        <a href="/locations/boca-raton/" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</a>, <a href="/locations/delray-beach/" className="text-red-600 hover:text-red-500 transition-colors">Delray</a>, <a href="/locations/boynton-beach/" className="text-red-600 hover:text-red-500 transition-colors">Boynton</a>, <a href="/locations/west-palm-beach/" className="text-red-600 hover:text-red-500 transition-colors">West Palm</a>
+                        <Link to="/locations/boca-raton" className="text-red-600 hover:text-red-500 transition-colors">Boca Raton</Link>, <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 transition-colors">Delray</Link>, <Link to="/locations/boynton-beach" className="text-red-600 hover:text-red-500 transition-colors">Boynton</Link>, <Link to="/locations/west-palm-beach" className="text-red-600 hover:text-red-500 transition-colors">West Palm</Link>
                       </td>
                       <td className="px-6 py-4 text-zinc-300">Tile resets, reroofs, leak repairs</td>
                     </tr>
                     <tr className="hover:bg-zinc-800/50 transition-colors">
                       <td className="px-6 py-4 text-red-600 font-semibold">Broward</td>
                       <td className="px-6 py-4 text-zinc-300">
-                        <a href="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500 transition-colors">Deerfield</a>, <a href="/locations/pompano-beach/" className="text-red-600 hover:text-red-500 transition-colors">Pompano</a>, <a href="/locations/fort-lauderdale/" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</a>, <a href="/locations/coral-springs/" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</a>
+                        <Link to="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 transition-colors">Deerfield</Link>, <Link to="/locations/pompano-beach" className="text-red-600 hover:text-red-500 transition-colors">Pompano</Link>, <Link to="/locations/fort-lauderdale" className="text-red-600 hover:text-red-500 transition-colors">Fort Lauderdale</Link>, <Link to="/locations/coral-springs" className="text-red-600 hover:text-red-500 transition-colors">Coral Springs</Link>
                       </td>
                       <td className="px-6 py-4 text-zinc-300">Repairs, replacements, commercial systems</td>
                     </tr>
@@ -708,6 +748,45 @@ export default function BocaRatonPage() {
             />
 
             <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Roofing Education and Resources
+              </h2>
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                All Phase Construction USA is dedicated to empowering Boca Raton homeowners with the knowledge they need to make informed roofing decisions. Our <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> provides in-depth guides on topics like roof replacement costs, wind mitigation savings, insurance claim processes, and how to choose the right roofing materials for South Florida.
+              </p>
+
+              <h3 className="text-xl font-semibold text-white mb-4">
+                Popular resources for Boca Raton homeowners:
+              </h3>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <Link to="/blog/roof-replacement-cost-broward-county-2026" className="text-red-500 hover:text-red-400 underline transition-colors">How Much Does a Roof Replacement Cost in Broward County?</Link>
+                </li>
+                <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <Link to="/blog/what-makes-a-roof-hurricane-resistant" className="text-red-500 hover:text-red-400 underline transition-colors">What Makes a Roof Hurricane Resistant?</Link>
+                </li>
+                <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">Wind Mitigation for South Florida Roofs: Save on Insurance</Link>
+                </li>
+                <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline transition-colors">How to File a Roof Insurance Claim After Storm Damage</Link>
+                </li>
+                <li className="flex items-start gap-3 text-zinc-300">
+                  <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline transition-colors">Understanding Your Roofing Warranty: What's Covered</Link>
+                </li>
+              </ul>
+
+              <p className="text-zinc-300 text-lg leading-relaxed">
+                Visit our <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> to explore all roofing guides.
+              </p>
+            </div>
+
+            <div className="mb-16">
               <h2 className="text-3xl font-bold text-white mb-8">
                 FAQ
               </h2>
@@ -730,7 +809,7 @@ export default function BocaRatonPage() {
                     </button>
                     {openFaq === index && (
                       <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
-                        <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
+                        <p className="text-zinc-400 leading-relaxed">{renderFaqAnswer(faq.question, faq.answer)}</p>
                       </div>
                     )}
                   </div>
