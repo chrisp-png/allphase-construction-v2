@@ -29,6 +29,8 @@ interface RelatedPost {
   slug: string;
   excerpt: string;
   featured_image: string;
+  published_date?: string;
+  categories?: string[];
 }
 
 interface ServiceLink {
@@ -219,39 +221,69 @@ export default function BlogPostPage() {
     try {
       const { data, error } = await supabase
         .from('blog_posts')
-        .select('id, title, slug, excerpt, featured_image')
+        .select('id, title, slug, excerpt, featured_image, published_date, categories')
         .in('id', postIds)
         .eq('published', true)
         .limit(4);
 
       if (error) throw error;
-      if (data) setRelatedPosts(data);
+
+      if (data && data.length >= 3) {
+        setRelatedPosts(data);
+      } else {
+        await fetchRelatedPostsByCategory(post?.categories || []);
+      }
     } catch (error) {
       console.error('Error fetching related posts:', error);
+      await fetchRelatedPostsByCategory(post?.categories || []);
     }
   };
 
   const fetchRelatedPostsByCategory = async (categories: string[]) => {
-    if (!categories || categories.length === 0) return;
-
     try {
       const { data, error } = await supabase
         .from('blog_posts')
-        .select('id, title, slug, excerpt, featured_image, categories')
+        .select('id, title, slug, excerpt, featured_image, published_date, categories')
         .eq('published', true)
         .neq('slug', slug)
-        .limit(10);
+        .order('published_date', { ascending: false })
+        .limit(20);
 
       if (error) throw error;
 
-      if (data) {
-        const filtered = data
-          .filter(p => p.categories.some((cat: string) => categories.includes(cat)))
-          .slice(0, 4);
-        setRelatedPosts(filtered);
+      if (data && data.length > 0) {
+        let selectedPosts: RelatedPost[] = [];
+
+        if (categories && categories.length > 0) {
+          const categoryMatches = data.filter(p =>
+            p.categories && p.categories.some((cat: string) => categories.includes(cat))
+          );
+          selectedPosts = categoryMatches.slice(0, 4);
+        }
+
+        if (selectedPosts.length < 3) {
+          const titleKeywords = post?.title.toLowerCase().split(' ').filter(w => w.length > 4) || [];
+          const keywordMatches = data.filter(p => {
+            const postTitle = p.title.toLowerCase();
+            return titleKeywords.some(keyword => postTitle.includes(keyword)) &&
+                   !selectedPosts.some(sp => sp.id === p.id);
+          });
+
+          selectedPosts = [...selectedPosts, ...keywordMatches].slice(0, 4);
+        }
+
+        if (selectedPosts.length < 3) {
+          const remaining = data.filter(p => !selectedPosts.some(sp => sp.id === p.id));
+          selectedPosts = [...selectedPosts, ...remaining].slice(0, 4);
+        }
+
+        console.log(`Related posts for "${post?.title}": Found ${selectedPosts.length} posts`);
+        setRelatedPosts(selectedPosts);
+      } else {
+        console.warn('No published blog posts found for related articles');
       }
     } catch (error) {
-      console.error('Error fetching related posts:', error);
+      console.error('Error fetching related posts by category:', error);
     }
   };
 
@@ -576,11 +608,11 @@ export default function BlogPostPage() {
           </div>
         </div>
 
-        {relatedPosts.length > 0 && (
-          <div className="bg-black py-16 border-t border-zinc-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-3xl font-bold text-white mb-3">Related Articles</h2>
-              <p className="text-gray-400 mb-8">Continue learning about roofing</p>
+        <div className="bg-black py-16 border-t border-zinc-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-white mb-3">Related Articles</h2>
+            <p className="text-gray-400 mb-8">Continue learning about roofing</p>
+            {relatedPosts.length > 0 ? (
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {relatedPosts.map(relatedPost => (
                   <Link
@@ -596,6 +628,13 @@ export default function BlogPostPage() {
                         decoding="async"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
+                      {relatedPost.categories && relatedPost.categories.length > 0 && (
+                        <div className="absolute top-3 left-3">
+                          <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                            {relatedPost.categories[0]}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <div className="p-6">
                       <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors line-clamp-2">
@@ -612,9 +651,13 @@ export default function BlogPostPage() {
                   </Link>
                 ))}
               </div>
-            </div>
+            ) : (
+              <div className="text-center py-12">
+                <p className="text-gray-400">Loading related articles...</p>
+              </div>
+            )}
           </div>
-        )}
+        </div>
 
         <div className="bg-zinc-950 py-12 border-t border-zinc-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
