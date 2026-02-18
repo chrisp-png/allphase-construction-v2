@@ -46,11 +46,16 @@ class ErrorBoundary extends Component<Props, State> {
                 We encountered an unexpected error while loading this page. Please try refreshing or return to the homepage.
               </p>
 
-              {process.env.NODE_ENV === 'development' && this.state.error && (
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 mb-8 text-left">
-                  <p className="text-red-400 text-sm font-mono">
-                    {this.state.error.message}
+              {this.state.error && (
+                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 mb-8 text-left overflow-auto max-h-64">
+                  <p className="text-red-400 text-sm font-mono mb-2 font-bold">
+                    Error: {this.state.error.message}
                   </p>
+                  {this.state.error.stack && (
+                    <pre className="text-zinc-400 text-xs font-mono whitespace-pre-wrap">
+                      {this.state.error.stack}
+                    </pre>
+                  )}
                 </div>
               )}
 
