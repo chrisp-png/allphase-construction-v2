@@ -205,7 +205,6 @@ const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderd
 const CoralSpringsMoneyPage = lazy(() => import('./pages/locations/CoralSpringsMoneyPage'));
 const DelrayBeachMoneyPage = lazy(() => import('./pages/locations/DelrayBeachMoneyPage'));
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
-const WellingtonMoneyPage = lazy(() => import('./pages/locations/WellingtonMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
@@ -319,7 +318,7 @@ function AppContent() {
             <Route path="/locations/coral-springs" element={<CoralSpringsMoneyPage />} />
             <Route path="/locations/delray-beach" element={<DelrayBeachMoneyPage />} />
             <Route path="/locations/boynton-beach" element={<BoyntonBeachMoneyPage />} />
-            <Route path="/locations/wellington" element={<WellingtonMoneyPage />} />
+            <Route path="/locations/wellington" element={<WellingtonPage />} />
             <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />

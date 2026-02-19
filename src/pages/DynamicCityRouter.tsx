@@ -11,7 +11,7 @@ const DeerfieldBeachCityPage = lazy(() => import('./locations/DeerfieldBeachCity
 const DelrayBeachMoneyPage = lazy(() => import('./locations/DelrayBeachMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./locations/FortLauderdaleMoneyPage'));
 const PompanoBeachMoneyPage = lazy(() => import('./locations/PompanoBeachMoneyPage'));
-const WellingtonMoneyPage = lazy(() => import('./locations/WellingtonMoneyPage'));
+const WellingtonPage = lazy(() => import('./WellingtonPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./locations/WestPalmBeachMoneyPage'));
 
 const BocaRatonRoofRepairPage = lazy(() => import('./BocaRatonRoofRepairPage'));
@@ -60,7 +60,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'delray-beach': DelrayBeachMoneyPage,
   'fort-lauderdale': FortLauderdaleMoneyPage,
   'pompano-beach': PompanoBeachMoneyPage,
-  'wellington': WellingtonMoneyPage,
+  'wellington': WellingtonPage,
   'west-palm-beach': WestPalmBeachMoneyPage,
 };
 
