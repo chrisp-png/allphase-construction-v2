@@ -32,6 +32,30 @@ export default function DelrayBeachRoofRepairPage() {
     {
       question: "Will getting a roof repair affect insurance coverage or a claim?",
       answer: "Insurance coverage varies by policy terms. Inspection documentation can support carrier discussions by clearly separating observed storm-related damage from age-related wear patterns, though we do not provide insurance or legal advice."
+    },
+    {
+      question: "How much does roof repair cost in Delray Beach?",
+      answer: "Minor repairs typically range from $300 to $1,200, while extensive repairs can cost $1,500 to $5,000 or more depending on roof type, damage extent, and material requirements. Use our roof cost calculator for a preliminary estimate, and financing options are available for larger projects."
+    },
+    {
+      question: "How quickly can you respond to emergency roof repairs in Delray Beach?",
+      answer: "We offer 24/7 emergency response with same-day dispatching from our Deerfield Beach headquarters. For active leaks or storm damage, call (754) 227-5605 immediately."
+    },
+    {
+      question: "How often should I have my roof inspected in Delray Beach?",
+      answer: "Due to coastal exposure and storm frequency, we recommend annual roof inspections for Delray Beach properties, plus inspections after any named storm or hurricane event. Regular inspections catch small issues before they become expensive repairs."
+    },
+    {
+      question: "Do you repair all types of roofing materials?",
+      answer: "Yes. We repair tile roofing (concrete and clay), asphalt shingles, metal roofing, and flat/low-slope systems (TPO, modified bitumen, EPDM). Our dual license also allows us to address structural issues discovered during repairs."
+    },
+    {
+      question: "What should I do if I find a roof leak during a storm?",
+      answer: "Place containers under active drips, move valuables away from affected areas, and call us at (754) 227-5605 for emergency tarping service. Do not attempt to access your roof during active weather. Document damage with photos for your insurance claim."
+    },
+    {
+      question: "Can roof repairs help lower my insurance premiums?",
+      answer: "Repairs that bring your roof into compliance with current HVHZ standards can qualify for wind mitigation discounts of 20-60% on wind coverage. We coordinate wind mitigation inspections after qualifying repairs."
     }
   ];
 
@@ -52,6 +76,42 @@ export default function DelrayBeachRoofRepairPage() {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  const blogResources = [
+    {
+      title: 'Spotting Early Signs of Roof Damage',
+      url: '/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive'
+    },
+    {
+      title: 'Filing a Roof Insurance Claim',
+      url: '/blog/how-to-file-a-roof-insurance-claim-after-storm-damage'
+    },
+    {
+      title: 'Understanding Your Roofing Warranty',
+      url: '/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not'
+    },
+    {
+      title: 'Wind Mitigation Savings',
+      url: '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home'
+    },
+    {
+      title: 'How to Hire a Roofer in South Florida',
+      url: '/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid'
+    },
+    {
+      title: 'Visit Our Learning Center',
+      url: '/learning-center'
+    }
+  ];
+
+  const nearbyCities = [
+    { name: 'Boynton Beach', url: '/locations/boynton-beach' },
+    { name: 'Boca Raton', url: '/locations/boca-raton' },
+    { name: 'Lake Worth', url: '/locations/lake-worth' },
+    { name: 'Wellington', url: '/locations/wellington' },
+    { name: 'Deerfield Beach', url: '/locations/deerfield-beach' },
+    { name: 'Pompano Beach', url: '/locations/pompano-beach' }
+  ];
+
   return (
     <>
       <SEO
@@ -68,7 +128,7 @@ export default function DelrayBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair/"
+                  to="/roof-repair"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -82,7 +142,13 @@ export default function DelrayBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Delray Beach properties face coastal and near-coastal conditions that can accelerate roof wear, including salt-air exposure, wind-driven rain, sustained UV cycling, and seasonal storm impacts. All Phase Construction USA provides inspection-first roof repair services designed to identify root causes of leaks, tile displacement, or material failures before recommending corrective work. Every project begins with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate for the observed issues and site exposure.
+                  Delray Beach properties face coastal and near-coastal conditions that can accelerate roof wear, including salt-air exposure, wind-driven rain, sustained UV cycling, and seasonal storm impacts. As a trusted roofing company with deep roots in the community, All Phase Construction USA offers comprehensive roof repair services in Delray Beach, tailored to the unique needs of local residents and businesses. Our services address the specific challenges of the coastal climate, historic district guidelines, and waterfront properties.
+                </p>
+                <p>
+                  All Phase Construction USA provides inspection-first roof repair services designed to identify root causes of leaks, tile displacement, or material failures before recommending corrective work. Every project begins with a diagnostic <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate for the observed issues and site exposure. Roof inspections are essential for property maintenance and are often required for insurance purposes, helping to ensure the roof's integrity and compliance with local standards.
+                </p>
+                <p>
+                  Homeowners insurance may cover some or all of the costs associated with roof repairs, depending on the nature of the damage. A thorough roof inspection can help in the <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-600 hover:text-red-500 underline transition-colors">insurance claims process</Link> by providing detailed documentation of damage. Regular roof inspections help maintain the integrity of the roof and prolong its lifespan.
                 </p>
               </div>
 
@@ -272,7 +338,11 @@ export default function DelrayBeachRoofRepairPage() {
               </div>
             </div>
 
-            <p className="mt-8 text-zinc-400 italic">
+            <p className="mt-8 text-zinc-300 leading-relaxed">
+              We maintain constant communication with our clients throughout the diagnostic and repair process, ensuring you are informed and comfortable at every stage. Our team takes detailed pictures of any damage and the overall condition of your roof, providing visual documentation for your records and to assist with insurance claims. Timely and professional roof repairs are essential for maintaining the safety and structural integrity of your home. Delaying repairs can lead to increased costs, further damage, and risks such as pest infestations or mold growth. Learn more about <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">how to spot early signs of roof damage</Link> before problems become expensive.
+            </p>
+
+            <p className="mt-6 text-zinc-400 italic">
               This diagnostic approach helps property owners understand options before committing to broader roofing work.
             </p>
           </div>
@@ -293,30 +363,218 @@ export default function DelrayBeachRoofRepairPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold">Concrete and clay tile systems:</span> tile replacement, underlayment tie-ins, flashing integration, and compatibility checks
+                    <span className="font-semibold">Concrete and clay <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile</Link> systems:</span> tile replacement, underlayment tie-ins, flashing integration, and compatibility checks
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold">Asphalt shingles:</span> storm damage repairs, flashing and boot repairs, localized deck issues where found
+                    <span className="font-semibold">Asphalt <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingles</Link>:</span> storm damage repairs, flashing and boot repairs, localized deck issues where found
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold">Metal roofing:</span> fasteners, sealants, penetration details, and corrosion or oxidation management where present
+                    <span className="font-semibold"><Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Metal roofing</Link>:</span> fasteners, sealants, penetration details, and corrosion or oxidation management where present
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold">Flat and low-slope systems:</span> modified bitumen and TPO, focusing on seams, drains and scuppers, edges, and penetrations
+                    <span className="font-semibold"><Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Flat</Link> and low-slope systems:</span> modified bitumen and TPO, focusing on seams, drains and scuppers, edges, and penetrations
                   </div>
                 </li>
               </ul>
               <p className="mt-6 text-zinc-400 italic">
                 Repair recommendations are always tied to system age, observed condition, coastal exposure factors, and code considerations.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* NEW: Roof Repair Cost */}
+        <section className="py-20 bg-black">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Roof Repair Cost in Delray Beach, FL
+            </h2>
+
+            <div className="text-lg text-zinc-300 mb-8 leading-relaxed space-y-4">
+              <p>
+                The cost of roof repair in Delray Beach varies based on the type of roofing system, extent of damage, material costs, and whether permits are required under the Florida Building Code. Minor repairs such as replacing a few cracked tiles or re-sealing a flashing detail may cost between $300 and $1,200, while more extensive repairs involving underlayment replacement, structural deck work, or large-area shingle replacement can range from $1,500 to $5,000 or more.
+              </p>
+              <p>
+                Factors that influence roof repair costs in Delray Beach include:
+              </p>
+            </div>
+
+            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-8 mb-8">
+              <ul className="space-y-4 text-zinc-300">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Roof type:</span> <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Tile roof repairs</Link> are typically more expensive than <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle repairs</Link> due to material weight, fragility during access, and underlayment complexity.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Coastal exposure:</span> Properties east of I-95 often require corrosion-resistant fasteners and specialized sealants, adding to material costs.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Permit requirements:</span> Repairs exceeding certain thresholds require building permits and may trigger HVHZ compliance upgrades.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Roof accessibility:</span> Multi-story homes, steep pitches, and tile roofs requiring specialized equipment increase labor costs.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Emergency vs. scheduled:</span> After-hours and storm-response repairs may carry premium pricing due to urgency and demand.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <p className="text-lg text-zinc-300 leading-relaxed">
+              Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available for larger repair projects that exceed initial budgets.
+            </p>
+          </div>
+        </section>
+
+        {/* NEW: Emergency Roof Repair */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Emergency Roof Repair in Delray Beach
+            </h2>
+
+            <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
+              When storm damage, active leaks, or sudden material failure compromises your roof, immediate response is critical. All Phase Construction USA provides 24/7 emergency roof repair service for Delray Beach properties, including:
+            </p>
+
+            <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-8 mb-8">
+              <ul className="space-y-4 text-zinc-300">
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Emergency tarping</span> to prevent further water intrusion during active weather events
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Active leak response</span> with same-day dispatching from our Deerfield Beach headquarters
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Storm damage assessment</span> with photo documentation for insurance claims
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Temporary structural stabilization</span> for compromised decking or trusses — our dual CGC/CCC license allows us to address structural issues that standard roofers cannot
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <p className="text-lg text-zinc-300 leading-relaxed">
+              Delaying emergency repairs risks mold growth, electrical hazards, ceiling collapse, and exponentially higher restoration costs. If your roof is actively leaking or has sustained storm damage, call us immediately at <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-semibold transition-colors">(754) 227-5605</a>.
+            </p>
+          </div>
+        </section>
+
+        {/* NEW: Signs You Need Roof Repair */}
+        <section className="py-20 bg-black">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Signs You Need Roof Repair in Delray Beach
+            </h2>
+
+            <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
+              Many roof problems develop gradually and become visible only after significant damage has occurred. Watch for these warning signs common to Delray Beach properties:
+            </p>
+
+            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-8 mb-8">
+              <ul className="space-y-4 text-zinc-300">
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Water stains on ceilings or walls</span> — often indicates flashing failure or underlayment deterioration, especially after heavy rain events
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Missing, cracked, or displaced tiles</span> — common after tropical storms and high-wind events; exposes underlayment to UV and moisture damage
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Shingle curling, buckling, or granule loss</span> — signs of age-related wear accelerated by South Florida's intense UV exposure
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Visible rust or corrosion on metal components</span> — salt-air exposure in coastal Delray Beach accelerates metal deterioration on flashings, vents, and fasteners
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Sagging or soft spots on the roof surface</span> — may indicate deck rot or structural issues requiring immediate attention
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Unexplained increase in energy bills</span> — compromised roofing can reduce insulation performance and increase cooling costs
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="font-semibold">Algae, moss, or dark streaks</span> — humidity-driven growth common in Delray Beach that can trap moisture against roofing materials
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <p className="text-lg text-zinc-300 leading-relaxed">
+              If you notice any of these signs, schedule a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">free roof inspection</Link> before minor issues become major repairs.
+            </p>
+          </div>
+        </section>
+
+        {/* NEW: Roof Maintenance */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Roof Maintenance to Prevent Costly Repairs
+            </h2>
+
+            <div className="text-lg text-zinc-300 leading-relaxed space-y-4 mb-8">
+              <p>
+                The most cost-effective approach to roof repair is preventing problems before they start. All Phase Construction USA offers <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">roof maintenance programs</Link> designed for Delray Beach's coastal climate conditions.
+              </p>
+              <p>
+                Regular maintenance extends roof lifespan, preserves warranty coverage, and catches small issues before they escalate. Our maintenance services include annual inspections, debris removal from valleys and gutters, sealant checks at penetrations and flashings, and documentation for insurance and HOA compliance. Homeowners who invest in regular maintenance typically spend 50-70% less on emergency repairs over their roof's lifetime.
+              </p>
+              <p>
+                Learn about <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-600 hover:text-red-500 underline transition-colors">wind mitigation inspections</Link> that can reduce your insurance premiums by 20-60% while ensuring your roof meets current HVHZ standards.
               </p>
             </div>
           </div>
@@ -335,11 +593,11 @@ export default function DelrayBeachRoofRepairPage() {
               </p>
 
               <p>
-                For insurance-related inspections, we provide condition documentation that clearly separates observed storm-related impacts from wear indications, without making coverage determinations. This documentation can support discussions with carriers and adjusters, though we do not provide insurance or legal advice. Inspection reporting may include photos, moisture mapping, and material condition notes depending on policy requirements and adjuster requests.
+                For insurance-related inspections, we provide condition documentation that clearly separates observed storm-related impacts from wear indications, without making coverage determinations. This documentation can support discussions with carriers and adjusters, though we do not provide insurance or legal advice. Inspection reporting may include photos, moisture mapping, and material condition notes depending on policy requirements and adjuster requests. Learn more about the <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-600 hover:text-red-500 underline transition-colors">insurance claims process</Link>.
               </p>
 
               <p>
-                Property owners in <Link to="/service-areas/delray-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/service-areas/delray-beach/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
+                Property owners in <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
               </p>
             </div>
           </div>
@@ -473,7 +731,7 @@ export default function DelrayBeachRoofRepairPage() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">Local Experience with Coastal Communities</h4>
+                  <h4 className="font-semibold text-white text-lg mb-2">All Phase Construction USA is recognized for our local expertise in handling hurricane-rated, moisture-resistant materials in Delray Beach, setting a high standard for quality and durability in the area.</h4>
                   <p className="text-zinc-300">Understanding of tile, metal, flat, and shingle systems common to Delray Beach's coastal and near-coastal neighborhoods.</p>
                 </div>
               </div>
@@ -481,8 +739,58 @@ export default function DelrayBeachRoofRepairPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
+        {/* NEW: Serving Delray Beach Neighborhoods */}
         <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Roof Repair Across Delray Beach Neighborhoods
+            </h2>
+
+            <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
+              All Phase Construction USA provides roof repair services throughout Delray Beach and surrounding communities. From the historic homes of Del-Ida Park and the waterfront estates along A1A to the retirement communities of High Point and Kings Point, we understand the unique roofing requirements of each neighborhood.
+            </p>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-white mb-4">
+                We also serve nearby communities:
+              </h3>
+              <div className="flex flex-wrap items-center gap-2 text-zinc-300">
+                {nearbyCities.map((city, index) => (
+                  <span key={index} className="flex items-center gap-2">
+                    <Link
+                      to={city.url}
+                      className="text-red-600 hover:text-red-500 transition-colors"
+                    >
+                      {city.name}
+                    </Link>
+                    {index < nearbyCities.length - 1 && (
+                      <span className="text-zinc-600">•</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/locations/delray-beach"
+                className="text-red-600 hover:text-red-500 transition-colors font-medium"
+              >
+                View all Delray Beach roofing services →
+              </Link>
+              <span className="hidden sm:inline text-zinc-600">|</span>
+              <Link
+                to="/locations/service-areas"
+                className="text-red-600 hover:text-red-500 transition-colors font-medium"
+              >
+                View all service areas →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-black">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
               Roof Repair FAQs – Delray Beach, FL
@@ -492,7 +800,7 @@ export default function DelrayBeachRoofRepairPage() {
               {faqItems.map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-zinc-800 rounded-lg border border-zinc-700 overflow-hidden"
+                  className="bg-zinc-900 rounded-lg border border-zinc-700 overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFaq(index)}
@@ -517,6 +825,30 @@ export default function DelrayBeachRoofRepairPage() {
                     </div>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* NEW: Helpful Resources */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              Helpful Resources for Delray Beach Homeowners
+            </h2>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {blogResources.map((resource, index) => (
+                <Link
+                  key={index}
+                  to={resource.url}
+                  className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 hover:bg-black transition-all duration-300"
+                >
+                  <h3 className="text-white font-semibold mb-2">{resource.title}</h3>
+                  <span className="text-red-500 text-sm hover:text-red-400 transition-colors">
+                    Read more →
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
