@@ -18,8 +18,8 @@ export default function WellingtonRoofRepairPage() {
       answer: "A diagnostic inspection evaluates damage extent, system age, and code thresholds to determine whether repairs are viable. Material condition, underlayment integrity, and compliance considerations inform the recommendation."
     },
     {
-      question: "Do roof repairs in Wellington have to meet Florida Building Code or HVHZ rules?",
-      answer: "Yes. All repairs must comply with the Florida Building Code applicable at the time of work. High Velocity Hurricane Zone (HVHZ) requirements may apply depending on jurisdiction and roof system scope."
+      question: "Do roof repairs in Wellington have to meet Florida Building Code requirements?",
+      answer: "Yes. All repairs must comply with the Florida Building Code applicable at the time of work. Palm Beach County wind zone requirements apply to all roof system repairs and replacements."
     },
     {
       question: "Can a tile roof be repaired without full replacement?",
@@ -82,7 +82,7 @@ export default function WellingtonRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Wellington's inland suburban environment subjects roof systems to intense seasonal storm activity, wind-driven rain intrusion, and sustained heat/UV cycling. The community's HOA-governed residential areas feature a mix of tile and shingle roofing with low-slope sections on additions and patio covers. All Phase Construction USA provides inspection-first roof repair in Wellington, starting with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak sources, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable.
+                  Wellington's inland suburban environment subjects roof systems to intense seasonal storm activity, wind-driven rain intrusion, and sustained heat/UV cycling. The community's HOA-governed residential areas feature a mix of tile and shingle roofing with low-slope sections on additions and patio covers. All Phase Construction USA provides inspection-first roof repair in Wellington, starting with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak sources, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and Palm Beach County wind zone requirements where applicable.
                 </p>
               </div>
 
@@ -197,7 +197,7 @@ export default function WellingtonRoofRepairPage() {
               Diagnostic Roof Repair Process
             </h2>
             <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
-              All Phase Construction USA follows a structured diagnostic process before recommending any roof repair. The process begins with interior symptom review and moisture pattern mapping, followed by attic evaluation where accessible, exterior field survey by roof system type, and comprehensive documentation. Findings are reviewed against current Florida Building Code standards, including HVHZ considerations where applicable. Only repair scopes that can be completed without triggering unnecessary system-wide replacement are recommended, allowing property owners to make informed, code-aware decisions.
+              All Phase Construction USA follows a structured diagnostic process before recommending any roof repair. The process begins with interior symptom review and moisture pattern mapping, followed by attic evaluation where accessible, exterior field survey by roof system type, and comprehensive documentation. Findings are reviewed against current Florida Building Code standards, including Palm Beach County wind zone considerations where applicable. Only repair scopes that can be completed without triggering unnecessary system-wide replacement are recommended, allowing property owners to make informed, code-aware decisions.
             </p>
 
             <div className="space-y-6">
@@ -307,7 +307,7 @@ export default function WellingtonRoofRepairPage() {
                       Florida Building Code Considerations
                     </h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Assessment of repair scope against current Florida Building Code standards, including HVHZ detailing where applicable, to ensure compliance and insurability without triggering unnecessary replacement thresholds.
+                      Assessment of repair scope against current Florida Building Code standards, including Palm Beach County wind zone provisions where applicable, to ensure compliance and insurability without triggering unnecessary replacement thresholds.
                     </p>
                   </div>
                 </div>
@@ -602,7 +602,7 @@ export default function WellingtonRoofRepairPage() {
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-white text-lg mb-2">Code-Aware Repair Detailing</h4>
-                  <p className="text-zinc-300">Repair planning aligned to Florida Building Code requirements with HVHZ provisions applied where applicable, ensuring compliance and insurability.</p>
+                  <p className="text-zinc-300">Repair planning aligned to Florida Building Code requirements with Palm Beach County wind zone provisions applied where applicable, ensuring compliance and insurability.</p>
                 </div>
               </div>
 

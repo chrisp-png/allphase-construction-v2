@@ -11,11 +11,11 @@ export default function WellingtonCalculatorPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Use this calculator for a ballpark estimate only. Roof pricing in South Florida is influenced by HVHZ requirements, Florida Building Code compliance, roof complexity, and material availability.');
+      metaDescription.setAttribute('content', 'Use this calculator for a ballpark estimate only. Roof pricing in South Florida is influenced by Palm Beach County wind zone requirements, Florida Building Code compliance, roof complexity, and material availability.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Use this calculator for a ballpark estimate only. Roof pricing in South Florida is influenced by HVHZ requirements, Florida Building Code compliance, roof complexity, and material availability.';
+      meta.content = 'Use this calculator for a ballpark estimate only. Roof pricing in South Florida is influenced by Palm Beach County wind zone requirements, Florida Building Code compliance, roof complexity, and material availability.';
       document.head.appendChild(meta);
     }
 
@@ -28,7 +28,7 @@ export default function WellingtonCalculatorPage() {
           "name": "How accurate is the Wellington roof cost calculator?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The calculator provides a general estimate based on typical Florida homes and HVHZ pricing. Final costs require an on-site inspection."
+            "text": "The calculator provides a general estimate based on typical Florida homes and Palm Beach County wind zone pricing. Final costs require an on-site inspection."
           }
         },
         {
@@ -79,7 +79,7 @@ export default function WellingtonCalculatorPage() {
   const faqs = [
     {
       question: 'How accurate is the Wellington roof cost calculator?',
-      answer: "The calculator provides a general estimate based on typical Florida homes and HVHZ pricing. Final costs require an on-site inspection."
+      answer: "The calculator provides a general estimate based on typical Florida homes and Palm Beach County wind zone pricing. Final costs require an on-site inspection."
     },
     {
       question: 'What factors affect roof cost in Wellington?',
@@ -98,11 +98,11 @@ export default function WellingtonCalculatorPage() {
   const costQuestions = [
     {
       question: 'How much does a new roof cost in Wellington, FL?',
-      answer: 'Most homes range from $14,000 to over $40,000 depending on roofing system and HVHZ requirements.'
+      answer: 'Most homes range from $14,000 to over $40,000 depending on roofing system and Palm Beach County wind zone requirements.'
     },
     {
       question: 'What is the cheapest roofing option in Wellington?',
-      answer: 'Architectural shingles usually have the lowest upfront cost, though HVHZ standards can increase pricing.'
+      answer: 'Architectural shingles usually have the lowest upfront cost, though Palm Beach County wind zone standards can increase pricing.'
     },
     {
       question: "How long does a roof last in Wellington's climate?",
@@ -150,7 +150,7 @@ export default function WellingtonCalculatorPage() {
               </span>
             </h1>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Use this calculator for a ballpark estimate only. Roof pricing in South Florida is influenced by High Velocity Hurricane Zone (HVHZ) requirements, Florida Building Code compliance, roof complexity, and material availability. Estimates are not guarantees.
+              Use this calculator for a ballpark estimate only. Roof pricing in South Florida is influenced by High Velocity Hurricane Zone (Palm Beach County wind zone) requirements, Florida Building Code compliance, roof complexity, and material availability. Estimates are not guarantees.
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export default function WellingtonCalculatorPage() {
           <EmbeddedRoofCalculator
             city="Wellington"
             county="Palm Beach"
-            isHVHZ={true}
+            isHVHZ={false}
           />
 
           <div className="mb-20 mt-20">
@@ -171,7 +171,7 @@ export default function WellingtonCalculatorPage() {
               Roof Cost Estimates in Wellington by Roofing System
             </h2>
             <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              These are typical installed price ranges for homes in Wellington, FL. Actual costs vary by roof size, slope, tear-off requirements, decking condition, and HVHZ code compliance.
+              These are typical installed price ranges for homes in Wellington, FL. Actual costs vary by roof size, slope, tear-off requirements, decking condition, and Palm Beach County wind zone code compliance.
             </p>
             <div className="max-w-5xl mx-auto overflow-x-auto">
               <table className="w-full bg-[#27272a] border border-zinc-800 rounded-lg">
@@ -184,7 +184,7 @@ export default function WellingtonCalculatorPage() {
                 </thead>
                 <tbody>
                   <tr className="border-b border-zinc-800">
-                    <td className="px-6 py-4 text-zinc-300">Architectural Shingle Roof (HVHZ Rated)</td>
+                    <td className="px-6 py-4 text-zinc-300">Architectural Shingle Roof (Palm Beach County wind zone Rated)</td>
                     <td className="px-6 py-4 text-zinc-300">$550 – $1,200</td>
                     <td className="px-6 py-4 text-zinc-300">$14,000 – $30,000+</td>
                   </tr>
