@@ -172,6 +172,28 @@ export default function ShingleRoofingPage() {
         </div>
       </section>
 
+      {/* Featured Project Photo */}
+      <section className="py-16 px-4 bg-zinc-950">
+        <div className="max-w-6xl mx-auto">
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/social-proof/new-shingle-install-boca-raton-600w.webp" />
+            <source srcSet="/social-proof/new-shingle-install-boca-raton-1200w.webp" />
+            <img
+              src="/social-proof/new-shingle-install-boca-raton-1200w.webp"
+              alt="Completed shingle roof installation in Boca Raton FL with All Phase Construction USA branded work truck - new architectural shingle roof replacement"
+              width="1200"
+              height="900"
+              loading="lazy"
+              decoding="async"
+              className="w-full max-w-5xl mx-auto rounded-lg border border-zinc-700"
+            />
+          </picture>
+          <p className="text-sm text-zinc-400 text-center mt-2">
+            Completed architectural shingle roof replacement in Boca Raton, FL
+          </p>
+        </div>
+      </section>
+
       {/* The Problem Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
