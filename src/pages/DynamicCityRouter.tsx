@@ -96,26 +96,7 @@ const roofRepairPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elem
 };
 
 const PageLoadingFallback = () => (
-  <div style={{
-    minHeight: '60vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '2rem'
-  }}>
-    <div style={{ textAlign: 'center' }}>
-      <div style={{
-        width: '50px',
-        height: '50px',
-        border: '3px solid #f3f3f3',
-        borderTop: '3px solid #ef4444',
-        borderRadius: '50%',
-        animation: 'spin 1s linear infinite',
-        margin: '0 auto 1rem'
-      }}></div>
-      <p>Loading...</p>
-    </div>
-  </div>
+  <div className="min-h-screen bg-[#09090b]" />
 );
 
 export function DynamicLocationPage() {

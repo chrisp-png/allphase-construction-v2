@@ -213,28 +213,9 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 import { DynamicLocationPage, DynamicRoofRepairPage, DynamicRoofInspectionPage } from './pages/DynamicCityRouter';
 
-// Loading fallback that is SEO-friendly
+// Loading fallback with dark theme to prevent flash
 const PageLoadingFallback = () => (
-  <div style={{
-    minHeight: '60vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '2rem'
-  }}>
-    <div style={{ textAlign: 'center' }}>
-      <div style={{
-        width: '50px',
-        height: '50px',
-        border: '3px solid #f3f3f3',
-        borderTop: '3px solid #ef4444',
-        borderRadius: '50%',
-        animation: 'spin 1s linear infinite',
-        margin: '0 auto 1rem'
-      }}></div>
-      <p>Loading...</p>
-    </div>
-  </div>
+  <div className="min-h-screen bg-[#09090b]" />
 );
 
 function AppContent() {
@@ -355,12 +336,6 @@ function AppContent() {
       <StickyMobileCTA />
       <ExitIntentPopup />
       <AssessmentModal isOpen={isOpen} onClose={closeModal} />
-      <style>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
       </div>
     </>
   );
