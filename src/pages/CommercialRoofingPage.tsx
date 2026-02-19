@@ -734,7 +734,82 @@ export default function CommercialRoofingPage() {
             </div>
           </div>
 
-          <p className="text-lg text-zinc-300 mt-8 leading-relaxed">
+          {/* Photo Gallery - Real PVC Membrane Project in Boca Raton */}
+          <div className="mt-16">
+            <h3 className="text-3xl font-bold mb-4 text-red-500">Commercial PVC Membrane Installation — Boca Raton</h3>
+            <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
+              Recent PVC membrane commercial roof installation in <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 underline">Boca Raton</Link>, demonstrating our HVHZ-compliant installation methods, enhanced fastening systems, and attention to detail on active commercial properties.
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Photo 1 */}
+              <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+                <img
+                  src="/social-proof/adding-enhanced-fastening-for-maximum-uplift-resistance.jpg"
+                  alt="Commercial PVC roof installation in Boca Raton showing enhanced mechanical fastening and crew installing membrane - All Phase Construction USA"
+                  className="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-zinc-400">Enhanced mechanical fastening for maximum wind uplift resistance on a commercial PVC roof in Boca Raton</p>
+                </div>
+              </div>
+
+              {/* Photo 2 */}
+              <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+                <img
+                  src="/social-proof/enhanced-fastening-in-perimeter-of-roof-all-phase-construction-usa.jpg"
+                  alt="Enhanced perimeter fastening on commercial flat roof with mechanical attachment plates and screws - All Phase Construction USA Boca Raton"
+                  className="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-zinc-400">Enhanced perimeter fastening pattern for HVHZ wind uplift compliance</p>
+                </div>
+              </div>
+
+              {/* Photo 3 */}
+              <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+                <img
+                  src="/social-proof/pvc-roof-boca-raton-all-phase-construction-usa.jpg"
+                  alt="Completed PVC membrane commercial roof with HVAC units and rooftop equipment in Boca Raton - All Phase Construction USA"
+                  className="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-zinc-400">Completed PVC membrane roof with proper equipment flashing and drainage on a Boca Raton commercial property</p>
+                </div>
+              </div>
+
+              {/* Photo 4 */}
+              <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+                <img
+                  src="/social-proof/tpatch-weld-membrane-commercial-roof-boca-raton-all-phase-usa.jpg"
+                  alt="Technician heat-welding PVC membrane patch on commercial roof in Boca Raton - All Phase Construction USA"
+                  className="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-zinc-400">Heat-welding PVC membrane for watertight seam integrity</p>
+                </div>
+              </div>
+
+              {/* Photo 5 */}
+              <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+                <img
+                  src="/social-proof/PVC-membrane-boca-raton-all-phase-construction-usa.jpg"
+                  alt="Finished PVC membrane commercial roof installation in Boca Raton FL - All Phase Construction USA"
+                  className="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-zinc-400">Completed commercial PVC membrane roof installation in Boca Raton, FL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-lg text-zinc-300 mt-12 leading-relaxed">
             These projects demonstrate our ability to handle the complexity, compliance requirements, and stakeholder coordination that commercial roofing demands. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate, or review our <Link to="/pricing-guide" className="text-red-500 hover:text-red-400 underline">Pricing Guide</Link> for detailed cost breakdowns. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> for commercial projects.
           </p>
         </div>
@@ -760,12 +835,21 @@ export default function CommercialRoofingPage() {
                   TPO & PVC Membrane
                 </Link>
               </h3>
-              <ul className="space-y-2 text-zinc-400 text-sm">
+              <ul className="space-y-2 text-zinc-400 text-sm mb-4">
                 <li>• Single-ply systems for <Link to="/flat-roofing" className="text-zinc-400 hover:text-red-500 transition-colors">flat roofs</Link></li>
                 <li>• Heat-welded seams</li>
                 <li>• Energy-efficient options</li>
                 <li>• 15-30+ year warranties</li>
               </ul>
+              <div className="mt-4">
+                <img
+                  src="/social-proof/tpatch-weld-membrane-commercial-roof-boca-raton-all-phase-usa.jpg"
+                  alt="Technician heat-welding PVC membrane patch on commercial roof in Boca Raton - All Phase Construction USA"
+                  className="w-full h-32 object-cover rounded-lg border border-zinc-700"
+                  loading="lazy"
+                />
+                <p className="text-xs text-zinc-500 mt-2">Heat-welded seam detail</p>
+              </div>
             </div>
 
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-900/50 transition-all duration-300">
