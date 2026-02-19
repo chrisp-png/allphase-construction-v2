@@ -36,7 +36,7 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Boca Raton
   'boca-raton': {
     title: 'Boca Raton Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Boca Raton Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'All Phase Construction USA is a dual-licensed roofing contractor serving Boca Raton, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.'
   },
 
   // Priority City: Deerfield Beach
@@ -54,7 +54,7 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: West Palm Beach
   'west-palm-beach': {
     title: 'West Palm Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert West Palm Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'All Phase Construction USA is a dual-licensed roofing contractor serving West Palm Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.'
   },
 
   // Priority City: Coral Springs
@@ -72,13 +72,13 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Delray Beach
   'delray-beach': {
     title: 'Delray Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Delray Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'All Phase Construction USA is a dual-licensed roofing contractor serving Delray Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.'
   },
 
   // Priority City: Boynton Beach
   'boynton-beach': {
     title: 'Boynton Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Boynton Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'All Phase Construction USA is a dual-licensed roofing contractor serving Boynton Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.'
   },
 
   // Priority City: Lake Worth
@@ -90,7 +90,7 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Wellington
   'wellington': {
     title: 'Wellington Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Wellington Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'All Phase Construction USA is a dual-licensed roofing contractor serving Wellington, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.'
   },
 
   // Priority City: Lauderhill

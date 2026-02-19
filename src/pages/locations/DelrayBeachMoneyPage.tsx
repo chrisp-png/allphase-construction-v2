@@ -12,11 +12,11 @@ export default function DelrayBeachMoneyPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Delray Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'All Phase Construction USA is a dual-licensed roofing contractor serving Delray Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Delray Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'All Phase Construction USA is a dual-licensed roofing contractor serving Delray Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.';
       document.head.appendChild(meta);
     }
 

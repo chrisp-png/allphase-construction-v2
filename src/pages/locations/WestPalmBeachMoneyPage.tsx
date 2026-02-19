@@ -45,7 +45,7 @@ export default function WestPalmBeachMoneyPage() {
         <title>{cityName} Roofing Contractor | All Phase Construction USA</title>
         <meta
           name="description"
-          content={`Professional roofing services in ${cityName}, Florida. Dual-licensed contractor (CCC-1331464, CGC-1526236) with HVHZ certification. Expert roof replacement, repair, and inspection services.`}
+          content="All Phase Construction USA is a dual-licensed roofing contractor serving West Palm Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair."
         />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
