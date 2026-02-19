@@ -1,202 +1,124 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, CheckCircle2, Shield, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp, Calculator, DollarSign } from 'lucide-react';
-import EmbeddedRoofCalculator from '../components/EmbeddedRoofCalculator';
+import { Helmet } from 'react-helmet-async';
+import { Phone, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
+import SEO from '../components/SEO';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
+
+interface PhotoBreakProps {
+  src: string;
+  alt: string;
+  loading?: 'lazy' | 'eager';
+}
+
+function PhotoBreak({ src, alt, loading = 'lazy' }: PhotoBreakProps) {
+  return (
+    <div className="my-12 max-w-4xl mx-auto">
+      <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden shadow-lg hover:border-zinc-700 transition-all duration-300">
+        <img
+          src={src}
+          alt={alt}
+          loading={loading}
+          decoding="async"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function WellingtonPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  useEffect(() => {
-    document.title = 'Wellington Roofer | HVHZ Certified | All Phase';
+  // City configuration
+  const citySlug = 'wellington';
+  const cityName = 'Wellington';
 
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Wellington FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Wellington FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
-      document.head.appendChild(meta);
+  // SEO metadata
+  const seoTitle = 'Wellington Roofer | All Phase Construction USA';
+  const seoDescription = 'All Phase Construction USA is Wellington\'s dual-licensed roofing contractor. Roof replacement, repair, metal, tile & shingle roofing serving Wellington, FL and Palm Beach County.';
+
+  // FAQ data for the page
+  const faqData = [
+    {
+      question: 'How much does a roof replacement cost in Wellington, FL?',
+      answer: 'The cost of a roof replacement in Wellington varies based on home size, roofing material, and any structural repairs needed. Tile roofing typically costs more than shingle or metal. All Phase Construction USA offers a free on-site estimate and an online roof cost calculator to help you plan your budget.'
+    },
+    {
+      question: 'Does All Phase Construction USA handle insurance claims for storm damage in Wellington?',
+      answer: 'Yes. We work directly with homeowners and their insurance adjusters throughout Palm Beach County. Our team documents all storm damage during our 21-point inspection and provides detailed reports to support your claim.'
+    },
+    {
+      question: 'How do I know if I need a roof repair or a full roof replacement?',
+      answer: 'It depends on the age of your roof, extent of damage, and roofing material. Minor issues can often be repaired cost-effectively, but if your roof is over 15-20 years old or has widespread damage, a full replacement is usually the smarter long-term investment. Our free inspection gives you an honest assessment.'
+    },
+    {
+      question: 'Are you licensed to work in Wellington and Palm Beach County?',
+      answer: 'Yes. All Phase Construction USA holds a Florida Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), both active and valid throughout Palm Beach County including Wellington. Our dual-license means we handle roofing and structural work under one contract and one warranty.'
+    },
+    {
+      question: 'What roofing materials work best for homes in Wellington, FL?',
+      answer: 'Wellington\'s climate demands materials built for South Florida conditions. Concrete and clay tile are popular for longevity and curb appeal. Metal roofing offers superior wind resistance and energy efficiency. Architectural shingles provide a cost-effective option with good storm performance when installed to Florida Building Code standards.'
     }
+  ];
 
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'roofing contractor Wellington FL, roofer Wellington Florida, roof replacement Wellington, Wellington roofing company, tile roof Wellington, estate roofing Palm Beach County');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'keywords';
-      meta.content = 'roofing contractor Wellington FL, roofer Wellington Florida, roof replacement Wellington, Wellington roofing company, tile roof Wellington, estate roofing Palm Beach County';
-      document.head.appendChild(meta);
+  // Generate schemas
+  const coordinates = getCityCoordinates(cityName);
+  const localBusinessSchema = generateLocalBusinessSchema({
+    cityName: cityName,
+    stateName: 'Florida',
+    latitude: coordinates?.latitude,
+    longitude: coordinates?.longitude,
+    aggregateRating: {
+      ratingValue: '4.8',
+      reviewCount: '137'
     }
+  });
 
-    // Get city coordinates for local search
-    const coordinates = getCityCoordinates('Wellington');
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+    { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/locations' },
+    { name: cityName, url: `https://allphaseconstructionfl.com/locations/${citySlug}` }
+  ]);
 
-    // LocalBusiness Schema - Critical for "roofer near me" searches
-    const localBusinessSchema = generateLocalBusinessSchema({
-      cityName: 'Wellington',
-      stateName: 'Florida',
-      latitude: coordinates?.latitude,
-      longitude: coordinates?.longitude,
-      aggregateRating: {
-        ratingValue: '4.9',
-        reviewCount: '150'
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
       }
-    });
-
-    // Breadcrumb Schema
-    const breadcrumbSchema = generateBreadcrumbSchema([
-      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
-      { name: 'Deerfield Beach Hub', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach' },
-      { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
-      { name: 'Wellington', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/wellington' }
-    ]);
-
-    // Remove existing schemas
-    const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
-    existingSchemas.forEach(schema => schema.remove());
-
-    // Add all schemas
-    const schemas = [localBusinessSchema, breadcrumbSchema];
-    schemas.forEach(schema => {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(schema);
-      document.head.appendChild(script);
-    });
-
-    return () => {
-      const schemaScripts = document.querySelectorAll('script[type="application/ld+json"]');
-      schemaScripts.forEach(script => script.remove());
-    };
-  }, []);
-
-  const services = [
-    {
-      title: 'Tile Roofing',
-      description: "The signature of Wellington homes. Concrete and clay tile installations for estates, single-family homes, and detached structures. Foam adhesive for superior wind resistance.",
-      path: '/tile-roofing/',
-      icon: Home
-    },
-    {
-      title: 'Metal Roofing',
-      description: "Standing seam and metal panels for Wellington homeowners seeking 50+ year durability. Popular for equestrian facilities and accessory structures.",
-      path: '/metal-roofing/',
-      icon: Shield
-    },
-    {
-      title: 'Shingle Roofing',
-      description: "Quality architectural shingles for Wellington's family neighborhoods. Excellent value with proper wind ratings.",
-      path: '/shingle-roofing/',
-      icon: Home
-    },
-    {
-      title: 'Flat Roofing',
-      description: "Commercial properties, barns, and accessory buildings. TPO, PVC, and modified bitumen systems with proper drainage engineering.",
-      path: '/flat-roofing/',
-      icon: Building2
-    },
-    {
-      title: 'Roof Repair & Restoration',
-      description: "Extending the life of Wellington's tile roofs — and protecting your insurance coverage with 5-year certification letters.",
-      path: '/roofing-services/roof-repair/',
-      icon: Wrench
-    },
-    {
-      title: 'Commercial Roofing',
-      description: "Retail centers, professional buildings, and equestrian facilities throughout Wellington.",
-      path: '/commercial-roofing/',
-      icon: Building2
-    }
-  ];
-
-  const challenges = [
-    {
-      title: 'Large Roof Areas',
-      description: "Wellington homes are bigger than typical South Florida properties. Larger roof areas mean more material, more labor, and more opportunities for problems if not installed correctly. We're experienced with large-scale residential projects."
-    },
-    {
-      title: 'Multiple Structures',
-      description: "Many Wellington properties include detached garages, guest houses, pool cabanas, or equestrian facilities. We can roof all structures on your property with consistent quality and coordinated scheduling."
-    },
-    {
-      title: 'Hurricane Season',
-      description: "Wellington may be inland, but it's not immune to hurricanes. When major storms cross South Florida, they bring damaging winds well past the coast. Our installations are engineered for high winds."
-    },
-    {
-      title: 'Estate-Level Expectations',
-      description: "Wellington homeowners expect premium quality. We deliver — from material selection to installation precision to final cleanup. Your property will look as good when we leave as when we arrived."
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: 'Dual Licensed',
-      description: "We hold both a General Contractor license (CGC-1526236) and Roofing Contractor license (CCC-1331464). When we find rotted decking, structural issues, or fascia damage, we fix it — no waiting for another contractor."
-    },
-    {
-      title: 'Large Project Experience',
-      description: "Wellington's estate homes are larger than typical South Florida properties. We're equipped for these projects — with crews, equipment, and scheduling capacity to handle significant roof areas."
-    },
-    {
-      title: 'Complete Property Service',
-      description: "Main house, guest house, pool cabana, barn — we can roof every structure on your property. One contractor, one timeline, consistent quality."
-    },
-    {
-      title: '5-Year Certification Letters',
-      description: "If your roof qualifies, we provide the certification letter required under Florida Statute 627.7011 to protect your insurance coverage."
-    }
-  ];
-
-  const nearbyCities = [
-    { name: 'Royal Palm Beach', path: '/locations/deerfield-beach/service-area/royal-palm-beach/' },
-    { name: 'West Palm Beach', path: '/locations/deerfield-beach/service-area/west-palm-beach/' },
-    { name: 'Lake Worth Beach', path: '/locations/deerfield-beach/service-area/lake-worth-beach/' },
-    { name: 'Boynton Beach', path: '/locations/deerfield-beach/service-area/boynton-beach/' },
-    { name: 'Palm Beach Gardens', path: '/locations/deerfield-beach/service-area/palm-beach-gardens/' },
-    { name: 'Boca Raton', path: '/locations/deerfield-beach/service-area/boca-raton/' }
-  ];
-
-  const faqs = [
-    {
-      question: 'How much does a new roof cost in Wellington?',
-      answer: "Due to Wellington's larger home sizes, roof replacement costs here are typically higher than other areas — often $20,000 to $60,000+ depending on size, material, and complexity. Tile roofs on estate homes can exceed $80,000. We provide free inspections and detailed quotes based on your specific property."
-    },
-    {
-      question: 'Can you roof multiple buildings on my property?',
-      answer: "Absolutely. We frequently work on Wellington properties with multiple structures — main house, guest house, garage, pool cabana, or equestrian buildings. We can coordinate all work under a single project or phase it based on your preferences."
-    },
-    {
-      question: 'Do you work on equestrian facilities?',
-      answer: "Yes. Barns, covered arenas, and stable buildings often have flat or metal roofing systems. We install and repair these commercial-style roofs alongside residential work."
-    },
-    {
-      question: 'How long does a large roof replacement take?',
-      answer: "A typical Wellington tile roof on a larger home takes 3-5 days, sometimes longer for estates or complex roof lines. We'll provide a specific timeline after our inspection."
-    },
-    {
-      question: 'What roofing material do you recommend for Wellington homes?',
-      answer: "Tile is the traditional choice for Wellington estates — it matches the architecture, handles Florida's climate, and lasts 50+ years. For accessory structures or homes seeking a different aesthetic, standing seam metal offers exceptional durability. We'll discuss options during your free inspection."
-    },
-    {
-      question: 'Do you pull permits in Wellington?',
-      answer: "Yes, always. Wellington (Village of Wellington) requires permits for roof replacements. We handle all permit applications and inspection scheduling."
-    }
-  ];
+    }))
+  };
 
   return (
-    <><div className="min-h-screen bg-[#09090b]">
-      <div className="pt-36">
+    <>
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        canonicalPath={`/locations/${citySlug}`}
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+      <div className="min-h-screen bg-[#09090b]">
+        <div className="pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <nav className="flex items-center space-x-2 text-sm mb-8">
             <Link to="/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Home
-            </Link>
-            <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
-              Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
             <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
@@ -206,453 +128,300 @@ export default function WellingtonPage() {
             <span className="text-white">Wellington</span>
           </nav>
 
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Roofing Services in{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Wellington, Florida
-              </span>
+          <div className="max-w-5xl mx-auto">
+            {/* Hero Section */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Wellington's Trusted Roofing Contractor
             </h1>
-            <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Serviced by All Phase Construction USA — Based in Deerfield Beach
-            </p>
-            <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Master-planned communities and equestrian properties with HOA coordination expertise.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>20+ Years Experience</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Florida Licensed</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>HOA Coordination</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Community Projects</span>
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+              Dual-Licensed. Storm-Ready. Serving the Equestrian Capital of Florida.
+            </h2>
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link
-                to="/contact/"
-                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
+                to="/contact"
+                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg text-center"
               >
-                Schedule Free Inspection in Wellington
+                Get a Free Estimate
               </Link>
               <a
                 href="tel:+17542275605"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
               >
                 <Phone className="w-5 h-5" />
-                (754) 227-5605
+                Call Now
               </a>
             </div>
-          </div>
 
-          <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Your Trusted Roofer in Wellington
-            </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
-              <p>
-                While our main office is located in Deerfield Beach, our licensed roofing crews regularly service homes and commercial properties throughout Wellington and nearby communities. Wellington is known for its master-planned communities, equestrian properties, and well-maintained residential neighborhoods governed by active HOAs. Roofing systems in Wellington must meet strict aesthetic standards while also performing under South Florida's heat, wind, and storm conditions.
+            {/* Section 1 - Intro */}
+            <div className="prose prose-invert max-w-none mb-12">
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Wellington, FL is a rapidly growing village that requires durable roofing solutions tailored to its unique climate. All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority, proudly serving Wellington, Palm Beach, and the greater Palm Beach County area. Our expertise in this region allows us to deliver high-quality roofing services to both commercial and residential customers, including homeowners in communities like Olympia, Versailles, Southfields, Binks Forest, and Palm Beach Point.
               </p>
-              <p>
-                Homeowners and associations in Wellington rely on experienced, dual-licensed roofing contractors who understand HOA coordination, large community projects, and long-term roof maintenance requirements.
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                We are dedicated to building long-term relationships with our customers and strive to achieve complete customer satisfaction on every project. With over twenty years of experience serving the Wellington community, we hold both a Florida Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236) — providing comprehensive roofing and structural expertise that standard roofing contractors simply cannot match.
               </p>
             </div>
-          </div>
 
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Conditions Unique to Wellington
+            {/* Section 2 - Introduction to Our Company */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Introduction to Our Company
               </h2>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-8">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b border-zinc-700">
-                        <th className="text-left py-3 px-4 text-white font-semibold">Community Factor</th>
-                        <th className="text-left py-3 px-4 text-white font-semibold">Impact on Wellington Roofs</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-zinc-400">
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">HOA-governed communities</td>
-                        <td className="py-3 px-4">Strict material and appearance standards</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Clubhouses & amenities</td>
-                        <td className="py-3 px-4">Larger, more complex roofing systems</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Tile-dominant neighborhoods</td>
-                        <td className="py-3 px-4">Underlayment longevity is critical</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Planned developments</td>
-                        <td className="py-3 px-4">Consistency across homes is required</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-medium text-white">Preventive maintenance</td>
-                        <td className="py-3 px-4">Ongoing care extends roof lifespan</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
 
-              <div className="space-y-6 text-zinc-400 leading-relaxed mb-8">
-                <h3 className="text-2xl font-bold text-white">Roofing Services for Wellington Communities</h3>
-                <p>
-                  Roofing projects in Wellington often involve close coordination with HOAs, property managers, and community boards. From individual homes to shared community structures, proper planning and communication are essential.
-                </p>
-                <p>
-                  Our roofing services in Wellington include:
-                </p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Tile roof repair and replacement</li>
-                  <li>Roofing for clubhouses and community buildings</li>
-                  <li>Metal and shingle roofing systems</li>
-                  <li>Preventive roof maintenance and cleaning</li>
-                  <li>Roof inspections for HOA and insurance needs</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                At All Phase Construction USA, we take pride in delivering exceptional roofing services to homeowners and businesses throughout Wellington, FL. Our experienced team is dedicated to providing top-quality workmanship and ensuring complete customer satisfaction on every project. We understand the unique roofing needs of Wellington residents — from protecting estate homes near the Wellington International equestrian showgrounds to safeguarding luxury communities along the National Polo Center corridor.
+              </p>
 
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-lg p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-red-600/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Building2 className="w-6 h-6 text-red-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Team Insight – Wellington Roofing</h3>
-                    <div className="text-zinc-300 leading-relaxed space-y-3">
-                      <p>
-                        "We've had the privilege of working closely with many Wellington communities over the years, including completing multiple community clubhouses and then continuing to support those neighborhoods long-term. We originally completed the Buena Vida clubhouse a few years ago. We still return annually to clean and maintain it, which is something we take a lot of pride in."
-                      </p>
-                      <p className="text-red-400 font-semibold">
-                        — Chris, Owner, All Phase Construction
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6 text-zinc-400 leading-relaxed">
-                <h3 className="text-2xl font-bold text-white">HOA Coordination & Long-Term Roof Care</h3>
-                <p>
-                  In Wellington, roofing projects often extend beyond a single installation. Ongoing maintenance, cleaning, and inspections play an important role in preserving appearance and performance, especially for tile roofing systems.
-                </p>
-                <p>
-                  Many communities and homeowners begin by reviewing roofing options and planning upgrades early to ensure compliance with HOA standards and long-term durability.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <span className="inline-block px-4 py-2 bg-red-600/10 text-red-500 rounded-full text-sm font-semibold mb-4 border border-red-600/20">
-                  Florida Code Compliant
-                </span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                  Roofing Code & Compliance in Wellington
-                </h2>
-              </div>
-              <div className="space-y-6 text-zinc-400 leading-relaxed">
-                <p>
-                  Roofing projects in Wellington must comply with Florida Building Code requirements and any additional HOA guidelines. Proper documentation, inspections, and material approvals are essential for community-based projects.
-                </p>
-                <p>
-                  Working with a dual-licensed roofing contractor helps ensure roofing systems are installed correctly and managed efficiently from approval through completion.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roofing Services in Wellington
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                Full-service residential and commercial roofing — from repairs to complete replacements.
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Whether you require a <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">roof repair</Link>, <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">new roof</Link>, or a full <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement</Link>, our team will guide you through every step of the process. Trust our expertise to keep your Wellington property safe, secure, and looking its best year-round.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Link
-                    key={service.title}
-                    to={service.path}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
+
+            {/* Section 3 - The Dual-License Advantage */}
+            <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                The Dual-License Advantage for Wellington Properties
+              </h2>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Our CGC license (Certified General Contractor) authorizes us to evaluate and repair the complete structural system supporting your roof. During every Wellington <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement</Link>, we inspect roof deck fastening, assess truss integrity, verify proper connections between the roof structure and exterior walls, and ensure the entire system meets current <Link to="/how-to-hire-roofing-contractor" className="text-red-500 hover:text-red-400 underline transition-colors">Florida Building Code</Link> requirements.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                When we identify structural deficiencies, we repair them immediately — keeping your project on schedule under one comprehensive warranty. This is especially critical for Wellington's larger estate properties in communities like Southfields and Palm Beach Point, where roof systems are more complex and require a higher level of structural oversight.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                Routine inspections and maintenance are crucial for preventing small issues from escalating into costly repairs. Our comprehensive approach helps Wellington property owners protect their investment before minor problems become major expenses.
+              </p>
+            </div>
+
+            <PhotoBreak
+              src="/step-01-inspection-optimized.jpg"
+              alt="Professional roof inspection in Wellington FL by All Phase Construction USA"
+              loading="eager"
+            />
+
+            {/* Section 4 - Hurricane Wind Zone Compliance */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Palm Beach County Wind Mitigation for Wellington Homes
+              </h2>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Wellington sits in Palm Beach County's High-Wind Zone, where roofing systems must be engineered and installed to meet strict Florida Building Code wind resistance standards. Every roof we install in Wellington is designed to handle the sustained winds and impact conditions that South Florida homeowners face each hurricane season.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Our installation teams use FBC-approved fastening patterns, code-compliant underlayments, and manufacturer-certified installation methods that preserve your warranty and protect your home when storms hit. For homeowners in Wellington's equestrian communities and estate neighborhoods, we also provide <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation</Link> reports that can significantly reduce your homeowner's insurance premiums.
+              </p>
+            </div>
+
+            {/* Section 5 - Local Expertise */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Understanding Wellington's Unique Roofing Needs
+              </h2>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Wellington is unlike any other South Florida community. As the recognized "Winter Equestrian Capital of the World," it attracts high-net-worth seasonal and year-round residents who demand premium materials and meticulous workmanship. The village's upscale residential communities — including Olympia, Versailles, and Southfields — feature larger homes, <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile roofing</Link> systems, and architectural details that require experienced contractors who understand the local aesthetic and code requirements.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                We know Wellington's building department, permit process, and inspection requirements inside and out. From the rural equestrian estates of Palm Beach Point to the Mediterranean-style homes near the Mall at Wellington Green, All Phase Construction USA has the local knowledge and licensing to handle every roofing project the right way.
+              </p>
+            </div>
+
+            <PhotoBreak
+              src="/deck-inspection.jpg"
+              alt="Roof deck inspection during Wellington roof replacement"
+            />
+
+            {/* Section 6 - Comprehensive Roofing Services */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-8">
+                Comprehensive Roofing Services in Wellington, FL
+              </h2>
+
+              {/* Roof Replacement */}
+              <div className="mb-10">
+                <h3 className="text-2xl font-bold text-white mb-4">Roof Replacement</h3>
+                <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+                  When Wellington's extreme heat, humidity, and storm exposure take their toll, a full roof replacement is often the most cost-effective long-term solution. All Phase Construction USA manages the entire <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement process</Link> — from permit pulling and material selection to installation and final inspection. We work with all major roofing systems including <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal</Link>, and <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">shingle</Link>, and our dual-license means structural repairs are handled in-house without delays or subcontractors.
+                </p>
+              </div>
+
+              {/* Emergency Repairs */}
+              <div className="mb-10">
+                <h3 className="text-2xl font-bold text-white mb-4">Emergency Repairs</h3>
+                <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+                  Storm damage doesn't wait for business hours. All Phase Construction USA provides emergency roof repair services throughout Wellington and Palm Beach County. Whether you've experienced wind damage near the Wellington Environmental Preserve or a fallen limb in Binks Forest, our team responds quickly to protect your home and document damage for your insurance claim.
+                </p>
+              </div>
+
+              {/* Professional Inspections */}
+              <div className="mb-10">
+                <h3 className="text-2xl font-bold text-white mb-4">Professional Inspections</h3>
+                <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+                  Our comprehensive <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">21-point roof inspections</Link> give Wellington homeowners the documentation they need — whether for insurance purposes, pre-purchase evaluations, or routine maintenance assessments. A thorough inspection is the first step to understanding your roof's condition and planning ahead.
+                </p>
+              </div>
+
+              {/* All Roof Types */}
+              <div className="mb-10">
+                <h3 className="text-2xl font-bold text-white mb-4">All Roof Types</h3>
+                <p className="text-lg text-zinc-300 leading-relaxed mb-4">
+                  We install and repair all major roofing systems common to Wellington's residential and commercial properties — including concrete and clay <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>, standing seam <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal</Link>, flat/low-slope systems, and architectural <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">shingles</Link>. Whatever your home or building requires, we have the crew, the licensing, and the manufacturer certifications to do it right.
+                </p>
+              </div>
+            </div>
+
+            {/* Section 7 - Metal Roofing */}
+            <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Metal Roofing Options for Wellington Homes
+              </h2>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                Metal roofing has become an increasingly popular choice for Wellington homes, thanks to its outstanding durability, energy efficiency, and ability to withstand severe weather conditions. We offer a variety of <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal roofing options</Link> — including standing seam, corrugated panels, and metal shingles — allowing homeowners to select the perfect style and performance level for their property.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                We use only high-quality materials from trusted manufacturers, ensuring your new metal roof delivers long-lasting protection and superior resistance to storm damage. Our experienced team will help you choose the best metal roofing solution to match your budget and aesthetic preferences, so you can enjoy peace of mind and enhanced curb appeal for years to come.
+              </p>
+            </div>
+
+            <PhotoBreak
+              src="/flashing-details.jpg"
+              alt="Professional flashing installation on Wellington home"
+            />
+
+            {/* Section 8 - Commercial Roofing */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Commercial Roofing Services in Wellington, FL
+              </h2>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                We understand that Wellington businesses — from retail centers near the Mall at Wellington Green to professional offices throughout the village — need reliable roofing solutions that minimize disruption and protect their investments. Our <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial roofing</Link> services cover everything from repair and replacement to new installation and ongoing maintenance.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                Our team works closely with each commercial client to develop a customized plan that fits your schedule and budget, ensuring your property remains safe and operational. With a full range of commercial roofing services and a commitment to quality workmanship, we help Wellington businesses maintain their roofs efficiently and effectively.
+              </p>
+            </div>
+
+            {/* Section 9 - Roofing Process */}
+            <div className="mb-16 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-10">
+              <h2 className="text-3xl font-bold text-white mb-6">
+                Our Roofing Process — Simple, Transparent, Stress-Free
+              </h2>
+
+              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                From your initial consultation to final inspection, All Phase Construction USA makes the roofing process straightforward for Wellington homeowners and business owners. Our team conducts a thorough on-site inspection and provides a detailed estimate tailored to your specific needs. We walk you through every step — material selection, permitting, installation scheduling, and final walkthrough — keeping you informed with regular updates throughout.
+              </p>
+
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                Our goal is to complete every Wellington project on time, within budget, and to your total satisfaction. With our dual-license advantage, structural repairs are handled in-house with no delays, no subcontractors, and no surprises.
+              </p>
+            </div>
+
+            <PhotoBreak
+              src="/step-06-tearoff.jpg"
+              alt="Roof tear-off in progress at Wellington property"
+            />
+
+            {/* Section 10 - Reviews */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-8">
+                What Wellington Homeowners Say
+              </h2>
+
+              <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-lg p-6 text-center">
+                <p className="text-zinc-300 text-lg">
+                  <strong className="text-white">Google Rating:</strong> 4.8★ based on 137 verified reviews
+                </p>
+                <p className="text-zinc-400 text-sm mt-2">
+                  Read our authentic Google reviews to learn about Wellington homeowners' experiences with All Phase Construction USA
+                </p>
+              </div>
+            </div>
+
+            {/* Section 11 - FAQs */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-white mb-8">
+                Frequently Asked Questions — Roofing in Wellington, FL
+              </h2>
+              <div className="space-y-4">
+                {faqData.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden"
                   >
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-red-500" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-zinc-400 mb-4 leading-relaxed">{service.description}</p>
-                    <div className="flex items-center text-red-500 font-medium">
-                      <span>Learn More</span>
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                What Wellington Roofs Face
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                Wellington's unique properties create unique roofing challenges:
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {challenges.map((challenge, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{challenge.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{challenge.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Why Wellington Homeowners Choose All Phase Construction
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {whyChooseUs.map((reason, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-                Wellington Zip Codes We Serve
-              </h2>
-              <p className="text-zinc-400 leading-relaxed">
-                We serve all Wellington zip codes including: 33414, 33449, and surrounding areas including Royal Palm Beach, Loxahatchee, and western Lake Worth.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Also Serving Nearby Communities
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                In addition to Wellington, we provide roofing services throughout western Palm Beach County:
-              </p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
-              {nearbyCities.map((city) => (
-                <Link
-                  key={city.name}
-                  to={city.path}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 text-center text-sm"
-                >
-                  {city.name}
-                </Link>
-              ))}
-            </div>
-            <div className="text-center">
-              <Link
-                to="/locations/"
-                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
-              >
-                View All Service Areas
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                  Roofing Costs & Payment Options for Wellington Homeowners
-                </h2>
-                <p className="text-zinc-400 leading-relaxed">
-                  Roofing projects in Wellington can vary in cost depending on material selection, HOA requirements, roof size, and long-term maintenance considerations. Many homeowners and communities begin by reviewing estimated costs before planning repairs or full replacements.
-                </p>
-              </div>
-
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 mb-8">
-                <p className="text-zinc-400 leading-relaxed mb-6">
-                  To help with early planning, homeowners can start with a roof cost calculator to get a realistic ballpark estimate. From there, exploring financing options can make upgrading to higher-quality roofing materials more manageable, especially for larger homes and HOA-governed communities.
-                </p>
-                <p className="text-zinc-400 leading-relaxed">
-                  In some cases, monthly payments may be offset by insurance savings after installing a new, code-compliant roofing system.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Link
-                  to="/learning-center/roof-cost-calculator/"
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Calculator className="w-6 h-6 text-red-500" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-600 transition-colors">
-                        Estimate Your Roof Cost
-                      </h3>
-                      <p className="text-zinc-400 mb-3 leading-relaxed">
-                        Get a realistic ballpark estimate for your Wellington roofing project with our interactive calculator.
-                      </p>
-                      <div className="flex items-center text-red-500 font-medium">
-                        <span>Try Calculator</span>
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    <button
+                      onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                      className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-zinc-800/50 transition-colors"
+                    >
+                      <span className="font-semibold text-white pr-4">{faq.question}</span>
+                      {openFaq === index ? (
+                        <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      )}
+                    </button>
+                    {openFaq === index && (
+                      <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
+                        <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
                       </div>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link
-                  to="/blog/roof-pricing-financing-guide/"
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <DollarSign className="w-6 h-6 text-red-500" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-600 transition-colors">
-                        Understanding Roof Financing
-                      </h3>
-                      <p className="text-zinc-400 mb-3 leading-relaxed">
-                        Learn about roof costs, financing options, and why monthly payments often make sense for Wellington homeowners.
-                      </p>
-                      <div className="flex items-center text-red-500 font-medium">
-                        <span>Read Article</span>
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <EmbeddedRoofCalculator
-            city="Wellington"
-            county="Palm Beach"
-            isHVHZ={false}
-          />
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing Questions from Wellington Homeowners
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden"
-                >
-                  <button
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-zinc-800/50 transition-colors"
-                  >
-                    <span className="font-semibold text-white pr-4">{faq.question}</span>
-                    {openFaq === index ? (
-                      <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
                     )}
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
-                      <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready for a Free Roof Inspection in Wellington?
-            </h2>
-            <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule your inspection today. We'll assess your roof's condition, identify any issues, and give you honest recommendations — no pressure, no obligation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <Link
-                to="/contact/"
-                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
-              >
-                Schedule Free Inspection
-              </Link>
-              <a
-                href="tel:+17542275605"
-                className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
-              >
-                <Phone className="w-5 h-5" />
-                (754) 227-5605
-              </a>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspection</span>
+            <PhotoBreak
+              src="/step-09-installed.jpg"
+              alt="Completed roof installation in Wellington FL"
+            />
+
+            {/* Section 13 - Closing CTA */}
+            <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                Ready to Get Started in Wellington?
+              </h2>
+              <p className="text-zinc-300 text-lg mb-8 max-w-2xl mx-auto">
+                Whether you're dealing with storm damage, planning a roof replacement, or simply want a professional inspection, All Phase Construction USA is ready to help. We serve all of Wellington's communities — from Olympia and Versailles to Palm Beach Point and Southfields — with the dual-licensed expertise that South Florida's most discerning homeowners trust.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                <Link
+                  to="/contact"
+                  className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
+                >
+                  Get Your Free Estimate
+                </Link>
+                <a
+                  href="tel:+17542275605"
+                  className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
+                >
+                  <Phone className="w-5 h-5" />
+                  Call Now
+                </a>
               </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>No Obligation</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Same-Week Scheduling Available</span>
+
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white mb-4">Also Serving Nearby Communities:</h3>
+                <p className="text-zinc-300 leading-relaxed mb-4">
+                  <Link to="/boynton-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link> | <Link to="/boca-raton" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link> | <Link to="/west-palm-beach" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link> | <Link to="/fort-lauderdale" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
     </>
   );
 }
