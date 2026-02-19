@@ -35,7 +35,7 @@ export default function DelrayBeachRoofRepairPage() {
     },
     {
       question: "How much does roof repair cost in Delray Beach?",
-      answer: "Minor repairs typically range from $300 to $1,200, while extensive repairs can cost $1,500 to $5,000 or more depending on roof type, damage extent, and material requirements. Use our roof cost calculator for a preliminary estimate, and financing options are available for larger projects."
+      answer: "Typical repair costs range from $750 to $1,500 for asphalt shingles, $750 to $2,000 for tile roofing, and $750 to $2,500 for metal roofing. More extensive repairs involving underlayment replacement or structural deck work can exceed these ranges. Use our roof cost calculator for a preliminary estimate, and financing options are available for larger projects."
     },
     {
       question: "How quickly can you respond to emergency roof repairs in Delray Beach?",
@@ -401,7 +401,7 @@ export default function DelrayBeachRoofRepairPage() {
 
             <div className="text-lg text-zinc-300 mb-8 leading-relaxed space-y-4">
               <p>
-                The cost of roof repair in Delray Beach varies based on the type of roofing system, extent of damage, material costs, and whether permits are required under the Florida Building Code. Minor repairs such as replacing a few cracked tiles or re-sealing a flashing detail may cost between $300 and $1,200, while more extensive repairs involving underlayment replacement, structural deck work, or large-area shingle replacement can range from $1,500 to $5,000 or more.
+                The cost of roof repair in Delray Beach varies based on the type of roofing system, extent of damage, material costs, and whether permits are required under the Florida Building Code. Typical repair costs by material type range from $750 to $1,500 for <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">asphalt shingles</Link>, $750 to $2,000 for <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile roofing</Link>, and $750 to $2,500 for <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>. More extensive repairs involving underlayment replacement, structural deck work, or large-area damage can exceed these ranges significantly.
               </p>
               <p>
                 Factors that influence roof repair costs in Delray Beach include:
