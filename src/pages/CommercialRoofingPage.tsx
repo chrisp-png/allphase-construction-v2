@@ -23,9 +23,10 @@ import {
   AlertTriangle,
   Target,
   TrendingUp,
-  Zap
+  Zap,
+  Star,
+  BookOpen
 } from 'lucide-react';
-import RelatedBlogResources from '../components/RelatedBlogResources';
 import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
 
 export default function CommercialRoofingPage() {
@@ -85,11 +86,19 @@ export default function CommercialRoofingPage() {
   const faqs = [
     {
       question: "What is the High Velocity Hurricane Zone and why does it matter?",
-      answer: "The HVHZ is a special building code designation covering Miami-Dade and Broward counties — the only two counties in Florida with this classification. It requires stricter product approvals, installation methods, and inspections for all roofing work. Materials must be tested for winds exceeding 175 mph. If your building is in Broward County, every roofing project must comply with HVHZ requirements — and not all contractors understand these codes."
+      answer: (
+        <>
+          The HVHZ is a special building code designation covering Miami-Dade and Broward counties — the only two counties in Florida with this classification. It requires stricter product approvals, installation methods, and inspections for all roofing work. Materials must be tested for winds exceeding 175 mph. If your building is in Broward County, every roofing project must comply with HVHZ requirements — and not all contractors understand these codes.
+        </>
+      )
     },
     {
       question: "How does the My Safe Florida Condo program work?",
-      answer: "The My Safe Florida Condominium Pilot Program provides grant funding to eligible condo associations for hurricane mitigation improvements, including roof work. The state contributes $2 for every $1 your association spends, up to $175,000 per association. Your building must be 3+ stories, within 15 miles of the coast, and current on milestone inspections and SIRS requirements. As of 2025, roof covering replacement is now eligible for funding, and the approval threshold has been lowered to 75% of resident unit owners."
+      answer: (
+        <>
+          The My Safe Florida Condominium Pilot Program provides grant funding to eligible condo associations for hurricane mitigation improvements, including roof work. The state contributes $2 for every $1 your association spends, up to $175,000 per association. Your building must be 3+ stories, within 15 miles of the coast, and current on milestone inspections and SIRS requirements. As of 2025, <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline">roof covering replacement</Link> is now eligible for funding, and the approval threshold has been lowered to 75% of resident unit owners. Learn more about the <Link to="/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa" className="text-red-500 hover:text-red-400 underline">My Safe Florida Condo Program</Link>.
+        </>
+      )
     },
     {
       question: "Can individual condo owners apply for My Safe Florida Condo grants?",
@@ -97,11 +106,19 @@ export default function CommercialRoofingPage() {
     },
     {
       question: "What's included in the 40-year recertification roof inspection?",
-      answer: "Recertification inspections examine your roof's structural members, drainage systems, water tightness, and rooftop equipment supports. If a structural engineer identifies deficiencies, you'll have 180 days to complete repairs. We recommend getting a professional roof assessment before your milestone inspection to identify and address issues proactively."
+      answer: (
+        <>
+          Recertification inspections examine your roof's structural members, drainage systems, water tightness, and rooftop equipment supports. If a structural engineer identifies deficiencies, you'll have 180 days to complete repairs. We recommend getting a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">professional roof assessment</Link> before your milestone inspection to identify and address issues proactively.
+        </>
+      )
     },
     {
       question: "How long does a commercial roof last in Florida?",
-      answer: "It depends on the system and maintenance. TPO/PVC membranes typically last 15-30 years, modified bitumen 15-25 years, metal roofs 40-70 years, and tile roofs 30-50+ years. Florida's intense sun, humidity, and hurricane exposure can shorten these lifespans without proper maintenance. Regular inspections and preventive repairs significantly extend roof life."
+      answer: (
+        <>
+          It depends on the system and maintenance. TPO/PVC membranes typically last 15-30 years, modified bitumen 15-25 years, metal roofs 40-70 years, and tile roofs 30-50+ years. Florida's intense sun, humidity, and hurricane exposure can shorten these lifespans without proper maintenance. <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">Regular inspections</Link> and <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">preventive repairs</Link> significantly extend roof life.
+        </>
+      )
     },
     {
       question: "Do you work with property management companies?",
@@ -113,7 +130,11 @@ export default function CommercialRoofingPage() {
     },
     {
       question: "What warranties do you offer on commercial roofing?",
-      answer: "Warranties depend on the roofing system and manufacturer. Our manufacturer certifications (Platinum/Master level) often qualify your building for enhanced warranties — sometimes up to 25-30 years with full coverage. We'll explain your warranty options as part of our proposal."
+      answer: (
+        <>
+          Warranties depend on the roofing system and manufacturer. Our manufacturer certifications (Platinum/Master level) often qualify your building for enhanced warranties — sometimes up to 25-30 years with full coverage. We'll explain your <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline">warranty options</Link> as part of our proposal.
+        </>
+      )
     }
   ];
 
@@ -157,14 +178,20 @@ export default function CommercialRoofingPage() {
           </h1>
 
           {/* Subhead */}
-          <p className="text-xl md:text-2xl text-zinc-300 mb-10 leading-relaxed max-w-4xl">
-            Broward County sits in Florida's most demanding building zone. Your commercial roof needs a contractor who understands HVHZ code requirements, condo association compliance, and how to maximize grant funding for your building.
-          </p>
+          <div className="space-y-6 text-xl md:text-2xl text-zinc-300 mb-10 leading-relaxed max-w-4xl">
+            <p>
+              Broward County sits in Florida's most demanding building zone. Your commercial roof needs a contractor who understands HVHZ code requirements, condo association compliance, and how to maximize grant funding for your building. It is crucial to hire <Link to="/about-us" className="text-red-500 hover:text-red-400 underline">licensed roofing contractors</Link> to ensure compliance with local regulations and guarantee high-quality workmanship. As a reputable roofing company with years of experience serving local business clients, our business is dedicated to protect commercial properties from hurricane season threats by providing storm-ready roofing solutions.
+            </p>
+
+            <p>
+              All Phase Construction USA has earned the trust of government agencies and institutional clients — including completing a roof coating project for the Fort Lauderdale Building Department itself. When the people who inspect roofs choose us for their own building, it speaks to the quality and code compliance we deliver on every commercial project.
+            </p>
+          </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contact/"
+              to="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
               Schedule Free Roof Assessment
@@ -285,7 +312,7 @@ export default function CommercialRoofingPage() {
           {/* PART 1: EVERGREEN CONTENT (Our Value Proposition) */}
           <div className="space-y-6 text-lg text-zinc-300 leading-relaxed mb-12">
             <p>
-              The My Safe Florida Condominium Pilot Program offers eligible condo associations grant funding for hurricane mitigation improvements — including roof work. We've already helped associations navigate this program and secure funding for critical roof projects.
+              The My Safe Florida Condominium Pilot Program offers eligible condo associations grant funding for hurricane mitigation improvements — including <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline">roof replacement</Link>. We've already helped associations navigate this program and secure funding for critical roof projects.
             </p>
 
             <div className="pl-6 border-l-4 border-red-600">
@@ -311,7 +338,7 @@ export default function CommercialRoofingPage() {
             </div>
 
             <p>
-              Most roofing contractors have never touched this program. We've been through the process and know what it takes to get your association funded.
+              Most roofing contractors have never touched this program. We've been through the process and know what it takes to get your association funded. Learn more about the <Link to="/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa" className="text-red-500 hover:text-red-400 underline">My Safe Florida Condo Program</Link>.
             </p>
           </div>
 
@@ -400,7 +427,7 @@ export default function CommercialRoofingPage() {
           </div>
 
           <Link
-            to="/contact/"
+            to="/contact"
             className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 text-lg"
           >
             Ask About My Safe Florida Condo Grants
@@ -574,7 +601,7 @@ export default function CommercialRoofingPage() {
                   </li>
                 </ul>
                 <p className="text-zinc-300 mt-6">
-                  Don't wait for a violation notice. A proactive roof assessment can identify problems before they become compliance failures.
+                  Don't wait for a violation notice. A proactive <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline">roof repair</Link> assessment can identify problems before they become compliance failures.
                 </p>
               </div>
             </div>
@@ -582,7 +609,7 @@ export default function CommercialRoofingPage() {
 
           <div className="mt-8">
             <Link
-              to="/contact/"
+              to="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 text-lg"
             >
               Schedule Pre-Recertification Roof Assessment
@@ -648,7 +675,7 @@ export default function CommercialRoofingPage() {
               <ul className="space-y-3 text-zinc-300">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <span>Wind mitigation improvements we can self-perform</span>
+                  <span><Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-zinc-300 hover:text-red-500 transition-colors">Wind mitigation improvements</Link> we can self-perform</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
@@ -670,8 +697,51 @@ export default function CommercialRoofingPage() {
         </div>
       </section>
 
-      {/* Commercial Roofing Systems */}
+      {/* NEW: Proven Commercial Projects Section */}
       <section className="py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            Proven Commercial Roofing Projects Across South Florida
+          </h2>
+
+          <p className="text-xl text-zinc-300 mb-12 leading-relaxed">
+            All Phase Construction USA's commercial portfolio spans government, institutional, retail, and multi-family properties throughout Broward and Palm Beach Counties:
+          </p>
+
+          <div className="space-y-8">
+            {/* Fort Lauderdale Building Department */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-4 text-red-500">Fort Lauderdale Building Department</h3>
+              <p className="text-zinc-300 leading-relaxed">
+                We completed a roof coating project for the Fort Lauderdale Building Department — the very agency that inspects roofs in <Link to="/locations/fort-lauderdale" className="text-red-500 hover:text-red-400 underline">Fort Lauderdale</Link>. When the professionals who enforce roofing code compliance select All Phase Construction USA for their own facility, it validates the quality and code adherence we bring to every project.
+              </p>
+            </div>
+
+            {/* Broward County Nursing Home */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-4 text-red-500">Broward County Nursing Home</h3>
+              <p className="text-zinc-300 leading-relaxed">
+                All Phase Construction USA completed the full <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> on a Broward County nursing home — a sensitive occupied building requiring phased construction to maintain resident safety and comfort. We are currently performing a complete window and door replacement on the same facility, demonstrating the long-term trust institutional clients place in our work.
+              </p>
+            </div>
+
+            {/* Wiles Business Center */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-4 text-red-500">Wiles Business Center, Coral Springs</h3>
+              <p className="text-zinc-300 leading-relaxed">
+                A large-scale <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">commercial flat roof</Link> installation for this multi-tenant business facility in <Link to="/locations/coral-springs" className="text-red-500 hover:text-red-400 underline">Coral Springs</Link>. The project required precise drainage engineering, full HVHZ code compliance, and coordination with ongoing business operations to minimize disruption to tenants.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-lg text-zinc-300 mt-8 leading-relaxed">
+            These projects demonstrate our ability to handle the complexity, compliance requirements, and stakeholder coordination that commercial roofing demands. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate, or review our <Link to="/pricing-guide" className="text-red-500 hover:text-red-400 underline">Pricing Guide</Link> for detailed cost breakdowns. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> for commercial projects.
+          </p>
+        </div>
+      </section>
+
+      {/* Commercial Roofing Systems */}
+      <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Commercial Roofing Systems We Install & Service
@@ -685,9 +755,13 @@ export default function CommercialRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">TPO & PVC Membrane</h3>
+              <h3 className="text-xl font-bold mb-3">
+                <Link to="/flat-roofing" className="hover:text-red-500 transition-colors">
+                  TPO & PVC Membrane
+                </Link>
+              </h3>
               <ul className="space-y-2 text-zinc-400 text-sm">
-                <li>• Single-ply systems for flat roofs</li>
+                <li>• Single-ply systems for <Link to="/flat-roofing" className="text-zinc-400 hover:text-red-500 transition-colors">flat roofs</Link></li>
                 <li>• Heat-welded seams</li>
                 <li>• Energy-efficient options</li>
                 <li>• 15-30+ year warranties</li>
@@ -711,7 +785,11 @@ export default function CommercialRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Metal Roofing</h3>
+              <h3 className="text-xl font-bold mb-3">
+                <Link to="/metal-roofing" className="hover:text-red-500 transition-colors">
+                  Metal Roofing
+                </Link>
+              </h3>
               <ul className="space-y-2 text-zinc-400 text-sm">
                 <li>• Standing seam & panels</li>
                 <li>• Superior wind resistance</li>
@@ -724,7 +802,11 @@ export default function CommercialRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <Home className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Tile Roofing</h3>
+              <h3 className="text-xl font-bold mb-3">
+                <Link to="/tile-roofing" className="hover:text-red-500 transition-colors">
+                  Tile Roofing
+                </Link>
+              </h3>
               <ul className="space-y-2 text-zinc-400 text-sm">
                 <li>• Concrete, clay & composite</li>
                 <li>• HVHZ-compliant attachment</li>
@@ -737,7 +819,11 @@ export default function CommercialRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Shingle Roofing</h3>
+              <h3 className="text-xl font-bold mb-3">
+                <Link to="/shingle-roofing" className="hover:text-red-500 transition-colors">
+                  Shingle Roofing
+                </Link>
+              </h3>
               <ul className="space-y-2 text-zinc-400 text-sm">
                 <li>• Architectural and designer shingles</li>
                 <li>• HVHZ-rated products</li>
@@ -751,18 +837,18 @@ export default function CommercialRoofingPage() {
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Roof Coatings & Restoration</h3>
               <p className="text-zinc-400 text-sm">
-                Extend your existing roof's life with silicone, acrylic, or elastomeric coatings. Often more cost-effective than full replacement.
+                Extend your existing roof's life with silicone, acrylic, or elastomeric coatings. Often more cost-effective than full replacement. Learn more in our guide: <Link to="/blog/commercial-roof-coatings-are-they-worth-the-investment" className="text-red-500 hover:text-red-400 underline">Commercial Roof Coatings: Are They Worth It?</Link>
               </p>
             </div>
 
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">
-                <Link to="/roof-maintenance-programs/" className="hover:text-red-500 transition-colors">
+                <Link to="/roof-maintenance-programs" className="hover:text-red-500 transition-colors">
                   Roof Maintenance Programs
                 </Link>
               </h3>
               <p className="text-zinc-400 text-sm">
-                Scheduled inspections, preventive repairs, and documentation for your reserve studies and insurance requirements. <Link to="/roof-maintenance-programs/" className="text-red-500 hover:text-red-400 transition-colors">Learn about our maintenance programs</Link>.
+                Scheduled inspections, <Link to="/roof-maintenance-programs" className="text-zinc-400 hover:text-red-500 transition-colors">preventive repairs</Link>, and documentation for your reserve studies and insurance requirements. <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 transition-colors">Learn about our maintenance programs</Link>.
               </p>
             </div>
           </div>
@@ -770,7 +856,7 @@ export default function CommercialRoofingPage() {
       </section>
 
       {/* Property Types We Serve */}
-      <section className="py-20 px-4 bg-zinc-950">
+      <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             Commercial Properties We Serve
@@ -793,7 +879,7 @@ export default function CommercialRoofingPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12">
             Why Property Managers & Boards Choose All Phase
@@ -863,29 +949,73 @@ export default function CommercialRoofingPage() {
         </div>
       </section>
 
-      {/* Service Area */}
-      <section className="py-16 px-4 bg-zinc-950 border-y border-zinc-800">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Serving Broward & Palm Beach Counties
+      {/* NEW: What Our Commercial Clients Say (Real Google Reviews) */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            What Our Commercial Clients Say
           </h2>
-          <p className="text-lg text-zinc-400 mb-4 max-w-3xl mx-auto">
-            Both counties fall within or adjacent to Florida's High Velocity Hurricane Zone. We understand the code requirements specific to your municipality.
-          </p>
-          <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-            Deerfield Beach • Pompano Beach • Fort Lauderdale • Hollywood • Boca Raton • Delray Beach • Coral Springs • Plantation • Sunrise • Boynton Beach • West Palm Beach & surrounding areas
-          </p>
-          <Link
-            to="/contact/"
-            className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30"
-          >
-            Get Your Free Commercial Roof Assessment
-          </Link>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {/* Real Google Review 1 */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+                ))}
+              </div>
+              <p className="text-zinc-300 mb-4 italic">
+                "Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!"
+              </p>
+              <p className="font-semibold text-white">— Michael R.</p>
+              <p className="text-sm text-zinc-400">Property Owner</p>
+            </div>
+
+            {/* Real Google Review 2 */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+                ))}
+              </div>
+              <p className="text-zinc-300 mb-4 italic">
+                "We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship."
+              </p>
+              <p className="font-semibold text-white">— Jennifer L.</p>
+              <p className="text-sm text-zinc-400">HOA Board Member</p>
+            </div>
+
+            {/* Real Google Review 3 */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+                ))}
+              </div>
+              <p className="text-zinc-300 mb-4 italic">
+                "All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience."
+              </p>
+              <p className="font-semibold text-white">— David S.</p>
+              <p className="text-sm text-zinc-400">Commercial Property Owner</p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a
+              href="https://www.google.com/maps/place/All+Phase+Construction+USA/@26.3199453,-80.1282712,17z/data=!4m8!3m7!1s0x88d905d0baa21a63:0x4b5c6d0f3c3d5e7f!8m2!3d26.3199453!4d-80.1260825!9m1!1b1!16s%2Fg%2F11rz3vnq9v"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
+            >
+              Read More Reviews on Google
+              <ChevronRight className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12">
             Commercial Roofing FAQs
@@ -895,7 +1025,7 @@ export default function CommercialRoofingPage() {
             {faqs.map((faq, index) => (
               <div key={index} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3 text-white">{faq.question}</h3>
-                <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
+                <div className="text-zinc-400 leading-relaxed">{faq.answer}</div>
               </div>
             ))}
           </div>
@@ -911,12 +1041,12 @@ export default function CommercialRoofingPage() {
             Ready to Discuss Your Commercial Roofing Project?
           </h2>
           <p className="text-xl text-zinc-300 mb-10 leading-relaxed">
-            Whether you're planning a full replacement, exploring My Safe Florida Condo funding, or preparing for a 40-year recertification — we're ready to help. Schedule a free assessment and get the information your board needs.
+            Whether you're planning a full replacement, exploring My Safe Florida Condo funding, or preparing for a 40-year recertification — we're ready to help. Schedule a <Link to="/contact" className="text-red-500 hover:text-red-400 underline">free assessment</Link> and get the information your board needs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              to="/contact/"
+              to="/contact"
               className="inline-flex items-center justify-center px-10 py-5 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30 hover:shadow-red-600/50 text-lg"
             >
               Schedule Free Assessment
@@ -947,32 +1077,146 @@ export default function CommercialRoofingPage() {
         </div>
       </section>
 
-      <RelatedBlogResources
-        sectionTitle="Commercial Roofing Resources"
-        sectionIntro="Guides for property managers, HOA boards, and commercial building owners planning a roofing project."
-        blogPosts={[
-          {
-            title: "Roofing Solutions for Multi-Family and HOA Communities",
-            url: "/blog/roofing-solutions-for-multi-family-and-hoa-communities",
-            excerpt: "Specialized roofing strategies for multi-family properties, condominiums, and HOA communities in South Florida."
-          },
-          {
-            title: "How to Plan Long-Term Roofing Budgets for Your Condo Association",
-            url: "/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association",
-            excerpt: "Financial planning guidance for HOA boards and property managers preparing for major roofing projects."
-          },
-          {
-            title: "Commercial Roof Coatings: Are They Worth the Investment?",
-            url: "/blog/commercial-roof-coatings-are-they-worth-the-investment",
-            excerpt: "Evaluate the ROI of commercial roof coatings for extending roof life and reducing long-term maintenance costs."
-          },
-          {
-            title: "How to Choose Roofing Materials for Large-Scale Projects",
-            url: "/blog/how-to-choose-roofing-materials-for-large-scale-projects",
-            excerpt: "A decision-making guide for selecting the right roofing materials for commercial and multi-family properties."
-          }
-        ]}
-      />
+      {/* Service Area */}
+      <section className="py-16 px-4 bg-zinc-950 border-y border-zinc-800">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Serving Broward & Palm Beach Counties
+          </h2>
+          <p className="text-lg text-zinc-400 mb-4 max-w-3xl mx-auto">
+            Both counties fall within or adjacent to Florida's High Velocity Hurricane Zone. We understand the code requirements specific to your municipality.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
+            <Link to="/locations/deerfield-beach" className="hover:text-red-500 transition-colors">Deerfield Beach</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/pompano-beach" className="hover:text-red-500 transition-colors">Pompano Beach</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/fort-lauderdale" className="hover:text-red-500 transition-colors">Fort Lauderdale</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/hollywood" className="hover:text-red-500 transition-colors">Hollywood</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/boca-raton" className="hover:text-red-500 transition-colors">Boca Raton</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/delray-beach" className="hover:text-red-500 transition-colors">Delray Beach</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/coral-springs" className="hover:text-red-500 transition-colors">Coral Springs</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/plantation" className="hover:text-red-500 transition-colors">Plantation</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/sunrise" className="hover:text-red-500 transition-colors">Sunrise</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/boynton-beach" className="hover:text-red-500 transition-colors">Boynton Beach</Link>
+            <span className="text-zinc-600">•</span>
+            <Link to="/locations/west-palm-beach" className="hover:text-red-500 transition-colors">West Palm Beach</Link>
+          </div>
+          <Link
+            to="/locations/service-areas"
+            className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors mb-8"
+          >
+            View all service areas
+            <ChevronRight className="w-5 h-5" />
+          </Link>
+          <div className="mt-8">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30"
+            >
+              Get Your Free Commercial Roof Assessment
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial Roofing Resources - EXPANDED */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-start gap-4 mb-6">
+            <BookOpen className="w-10 h-10 text-red-500 flex-shrink-0 mt-1" />
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Commercial Roofing Resources
+              </h2>
+              <p className="text-xl text-zinc-400">
+                Guides for property managers, HOA boards, and commercial building owners planning a roofing project. <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline">Explore all roofing guides</Link>.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <DollarSign className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  My Safe Florida Condo Program Guide
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">
+                Complete guide to securing grant funding for your association's roofing project.
+              </p>
+            </Link>
+
+            <Link to="/blog/roofing-solutions-for-multi-family-and-hoa-communities" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <Building2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  Roofing Solutions for Multi-Family & HOA Communities
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">
+                Specialized roofing strategies for multi-family properties and HOA communities.
+              </p>
+            </Link>
+
+            <Link to="/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <FileText className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  Long-Term Roofing Budgets for Condo Associations
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">
+                Financial planning guidance for HOA boards preparing for major roofing projects.
+              </p>
+            </Link>
+
+            <Link to="/blog/commercial-roof-coatings-are-they-worth-the-investment" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <Target className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  Commercial Roof Coatings: Are They Worth It?
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">
+                Evaluate the ROI of roof coatings for extending life and reducing maintenance costs.
+              </p>
+            </Link>
+
+            <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <ClipboardCheck className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  Filing Insurance Claims After Storm Damage
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">
+                Step-by-step guide to the commercial property insurance claim process.
+              </p>
+            </Link>
+
+            <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <Shield className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  Understanding Your Roofing Warranty
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">
+                What's covered and what's not in commercial roofing warranties.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
     </>
   );
