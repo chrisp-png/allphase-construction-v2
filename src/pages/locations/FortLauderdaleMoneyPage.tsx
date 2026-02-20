@@ -19,7 +19,7 @@ export default function FortLauderdaleMoneyPage() {
   const slug = 'fort-lauderdale';
 
   useEffect(() => {
-    document.title = `${cityName} Roofing Contractor | All Phase Construction USA`;
+    document.title = 'Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA';
   }, []);
 
   const coordinates = getCityCoordinates(cityName);
@@ -42,10 +42,10 @@ export default function FortLauderdaleMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>{cityName} Roofing Contractor | All Phase Construction USA</title>
+        <title>Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA</title>
         <meta
           name="description"
-          content={`Professional roofing services in ${cityName}, Florida. Dual-licensed contractor (CCC-1331464, CGC-1526236) with HVHZ certification. Expert roof replacement, repair, and inspection services.`}
+          content="Trusted roofing contractor in Fort Lauderdale, FL. HVHZ certified, dual-licensed (CCC & CGC). Tile, metal, shingle, flat & commercial roofing. 20+ years experience. Free inspections."
         />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
