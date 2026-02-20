@@ -290,9 +290,15 @@ export default function Header() {
                     </Link>
                     <Link
                       to="/how-to-hire-roofing-contractor/"
-                      className="block px-4 py-3 text-white hover:bg-red-600 transition-colors last:rounded-b-lg"
+                      className="block px-4 py-3 text-white hover:bg-red-600 transition-colors"
                     >
                       How to Hire a Roofer
+                    </Link>
+                    <Link
+                      to="/locations/deerfield-beach/best-roofers-deerfield-beach/"
+                      className="block px-4 py-3 text-white hover:bg-red-600 transition-colors last:rounded-b-lg"
+                    >
+                      Best Roofers in Deerfield Beach
                     </Link>
                   </div>
                 </div>
@@ -506,6 +512,13 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     How to Hire a Roofer
+                  </Link>
+                  <Link
+                    to="/locations/deerfield-beach/best-roofers-deerfield-beach/"
+                    className="block text-gray-400 hover:text-red-600 transition-colors py-3"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Best Roofers in Deerfield Beach
                   </Link>
                 </div>
               )}
