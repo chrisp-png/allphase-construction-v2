@@ -39,7 +39,7 @@ export default function BestRoofersDeerfieldBeachPage() {
           <div className="prose prose-invert prose-lg max-w-none mb-12">
             <h2 className="text-3xl font-bold text-white mb-6">Finding a Roofer in Deerfield Beach You Can Actually Trust</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Deerfield Beach roofers protect homes from one of the most punishing climates in America.
+              <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline">Deerfield Beach roofing services</Link> protect homes from one of the most punishing climates in America.
             </p>
             <p className="text-zinc-300 leading-relaxed mb-4">
               Located in Broward County's HVHZ zone, every roof replacement here must meet strict Florida Building Code wind standards.
@@ -414,7 +414,7 @@ export default function BestRoofersDeerfieldBeachPage() {
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Roof replacement (shingle, tile, metal, flat, modified cap sheet), full re-roofing services, roof decking inspection and repair, roof repair and emergency leak response, storm damage restoration, wind mitigation inspections and documentation, structural upgrades using GC license, commercial roofing (TPO, EPDM, PVC, Conklin, IB, Soprema), roof inspections, preventative maintenance programs, solar-ready roofing integration, waterproofing and gutter systems, permit coordination and inspection management, certified MySafeFloridaHome inspections.
+              Roof replacement (<Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">tile roofing</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat roofing</Link>, modified cap sheet), full re-roofing services, roof decking inspection and repair, roof repair and emergency leak response, storm damage restoration, <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 underline">wind mitigation inspection</Link>s and documentation, structural upgrades using GC license, commercial roofing (TPO, EPDM, PVC, Conklin, IB, Soprema), roof inspections, preventative maintenance programs, solar-ready roofing integration, waterproofing and gutter systems, permit coordination and inspection management, certified MySafeFloridaHome inspections.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Certifications:</h3>
@@ -1084,8 +1084,11 @@ export default function BestRoofersDeerfieldBeachPage() {
           </div>
 
           <div className="prose prose-invert prose-lg max-w-none mb-16">
-            <p className="text-zinc-300 leading-relaxed">
+            <p className="text-zinc-300 leading-relaxed mb-4">
               Any quote significantly below these ranges in Deerfield Beach deserves close scrutiny.
+            </p>
+            <p className="text-zinc-300 leading-relaxed">
+              Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to estimate your project before calling.
             </p>
           </div>
 
