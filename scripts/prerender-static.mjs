@@ -35,14 +35,30 @@ const locationsJson = locationsArrayText
 const LOCATIONS = JSON.parse(locationsJson);
 
 /**
+ * Broward County cities (HVHZ-compliant)
+ */
+const BROWARD_CITIES = [
+  'fort-lauderdale', 'deerfield-beach', 'coral-springs', 'pompano-beach',
+  'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
+  'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
+  'lauderdale-by-the-sea', 'lighthouse-point', 'miramar', 'north-lauderdale',
+  'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
+  'parkland'
+];
+
+/**
  * Build SEO metadata for a location (matches src/lib/locationSeo.ts logic)
  */
 function buildLocationSeo(location) {
   const { slug, city, state } = location;
 
+  // Determine compliance language based on county
+  const isBrowardCounty = BROWARD_CITIES.includes(slug);
+  const complianceLanguage = isBrowardCounty ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
+
   // Generate defaults from templates
   const defaultTitle = `${city} Roofing Contractor | All Phase Construction USA`;
-  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.`;
+  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide ${complianceLanguage} metal, tile, and shingle roofing installation, replacement, and repair.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 

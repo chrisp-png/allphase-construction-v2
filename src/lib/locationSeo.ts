@@ -22,6 +22,18 @@ export interface LocationSEO {
 }
 
 /**
+ * Broward County cities (HVHZ-compliant)
+ */
+const BROWARD_CITIES = [
+  'fort-lauderdale', 'deerfield-beach', 'coral-springs', 'pompano-beach',
+  'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
+  'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
+  'lauderdale-by-the-sea', 'lighthouse-point', 'miramar', 'north-lauderdale',
+  'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
+  'parkland'
+];
+
+/**
  * Build complete SEO metadata for a location page
  *
  * Uses templates with city/state substitution, unless overrides are provided.
@@ -29,9 +41,13 @@ export interface LocationSEO {
 export function buildLocationSeo(location: Location): LocationSEO {
   const { slug, city, state } = location;
 
+  // Determine compliance language based on county
+  const isBrowardCounty = BROWARD_CITIES.includes(slug);
+  const complianceLanguage = isBrowardCounty ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
+
   // Generate defaults from templates
   const defaultTitle = `${city} Roofing Contractor | All Phase Construction USA`;
-  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.`;
+  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide ${complianceLanguage} metal, tile, and shingle roofing installation, replacement, and repair.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 
