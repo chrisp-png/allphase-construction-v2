@@ -120,7 +120,7 @@ export default function DeerfieldBeachCityPage() {
     <>
       <Helmet>
         <title>{seo.title}</title>
-        <meta name="description" content="Trusted roofing contractor serving Deerfield Beach & surrounding Palm Beach and Broward communities. Hurricane-rated roof repair, replacement & free inspection-first diagnostics." />
+        <meta name="description" content={seo.description} />
         <meta name="robots" content={seo.robots} />
         <link rel="canonical" href={seo.canonical} />
 
