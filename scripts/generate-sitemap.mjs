@@ -84,9 +84,10 @@ function isExcludedUrl(urlPath) {
   return false;
 }
 
-function stripTrailingSlash(urlPath) {
+function ensureTrailingSlash(urlPath) {
   if (urlPath === '/') return '/';
-  return urlPath.endsWith('/') ? urlPath.slice(0, -1) : urlPath;}
+  return urlPath.endsWith('/') ? urlPath : urlPath + '/';
+}
 
 // ═══════════════════════════════════════════════════════════════════════════
 // SITEMAP GENERATION
@@ -126,7 +127,7 @@ for (const match of entryMatches) {
     entries.push({
       section,
       label,
-      path: stripTrailingSlash(pathValue),
+      path: ensureTrailingSlash(pathValue),
       parent,
       indexable: true,
       priority: priority ? parseFloat(priority) : undefined,
@@ -181,7 +182,7 @@ for (const slug of allBlogSlugs) {
   entries.push({
     section: 'Blog Articles',
     label: slug,
-    path: stripTrailingSlash(`/blog/${slug}`),
+    path: ensureTrailingSlash(`/blog/${slug}`),
     indexable: true,
     priority: 0.7,
     changefreq: 'monthly'
@@ -234,7 +235,7 @@ for (const slug of APPROVED_REPAIR_CITIES) {
   entries.push({
     section: 'Roof Repair Services',
     label: `Roof Repair in ${cityName}`,
-    path: stripTrailingSlash(`/roof-repair/${slug}`),
+    path: ensureTrailingSlash(`/roof-repair/${slug}`),
     indexable: true,
     priority: 0.8,
     changefreq: 'monthly'
@@ -257,7 +258,7 @@ for (const slug of LOCATION_MONEY_PAGES) {
   entries.push({
     section: 'Location Money Pages',
     label: `${cityName} Roofing Services`,
-    path: stripTrailingSlash(`/locations/${slug}`),
+    path: ensureTrailingSlash(`/locations/${slug}`),
     indexable: true,
     priority: 0.9,
     changefreq: 'weekly'
@@ -273,7 +274,7 @@ for (const page of LOCATION_SUB_PAGES) {
   entries.push({
     section: 'Location Sub-Pages',
     label: page.label,
-    path: stripTrailingSlash(page.path),
+    path: ensureTrailingSlash(page.path),
     indexable: true,
     priority: 0.8,
     changefreq: 'monthly'
@@ -349,11 +350,11 @@ if (lhpUrls.length > 0) {
   lhpUrls.forEach(u => validationErrors.push(`  ${u}`));
 }
 
-// CHECK 5: No URLs should end with / (except root)
-const withSlash = allUrls.filter(u => u.endsWith('/') && u !== `${CANONICAL_DOMAIN}/`);
-if (withSlash.length > 0) {
-  validationErrors.push(`FAIL: ${withSlash.length} URLs have unwanted trailing slash:`);
-  withSlash.slice(0, 5).forEach(u => validationErrors.push(`  ${u}`));
+// CHECK 5: All URLs should end with / (consistent trailing slash policy)
+const withoutSlash = allUrls.filter(u => !u.endsWith('/'));
+if (withoutSlash.length > 0) {
+  validationErrors.push(`FAIL: ${withoutSlash.length} URLs missing trailing slash:`);
+  withoutSlash.slice(0, 5).forEach(u => validationErrors.push(`  ${u}`));
 }
 
 // CHECK 6: No duplicates (Set size mismatch)
@@ -387,7 +388,7 @@ if (validationErrors.length > 0) {
 } else {
   console.log('ALL VALIDATION CHECKS PASSED');
   console.log('No duplicate URLs');
-  console.log('All URLs have NO trailing slash (except root)');
+  console.log('All URLs have consistent trailing slashes');
   console.log(`Correct number of /locations/ URLs: ${locationUrls.length} (${LOCATION_MONEY_PAGES.length} money pages + ${LOCATION_SUB_PAGES.length} sub-pages)`);
   console.log('No /roof-inspection/{city}/ URLs');
   console.log(`All ${repairCityUrls.length} roof-repair URLs are in APPROVED list (16 cities)`);

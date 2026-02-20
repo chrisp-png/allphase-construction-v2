@@ -1562,6 +1562,15 @@ export const sheetSitemap: SitemapEntry[] = [
   },
   {
     section: 'Learning Center',
+    label: 'Frequently Asked Questions',
+    path: '/frequently-asked-questions/',
+    parent: null,
+    indexable: true,
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+  {
+    section: 'Learning Center',
     label: 'Financing Options',
     path: '/easy-payments/',
     parent: null,

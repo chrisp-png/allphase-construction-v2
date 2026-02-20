@@ -209,6 +209,7 @@ const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachM
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
+const FrequentlyAskedQuestionsPage = lazy(() => import('./pages/FrequentlyAskedQuestionsPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 import { DynamicLocationPage, DynamicRoofRepairPage, DynamicRoofInspectionPage } from './pages/DynamicCityRouter';
@@ -302,6 +303,7 @@ function AppContent() {
             <Route path="/insurance-roof-inspection" element={<InsuranceRoofInspectionPage />} />
             <Route path="/easy-payments" element={<EasyPaymentsPage />} />
             <Route path="/pricing-guide" element={<PricingGuidePage />} />
+            <Route path="/frequently-asked-questions" element={<FrequentlyAskedQuestionsPage />} />
             <Route path="/learning-center" element={<LearningCenterPage />} />
             <Route path="/roofing-services" element={<RoofingServicesPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />

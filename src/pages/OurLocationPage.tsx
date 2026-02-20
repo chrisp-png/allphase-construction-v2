@@ -144,27 +144,94 @@ export default function OurLocationPage() {
           <p className="text-gray-400 mb-6">
             Because our teams are mobile and equipped for residential and commercial roofing work, we can service surrounding communities quickly and efficiently. Our primary service areas include:
           </p>
-          <ul className="space-y-3 mb-6">
-            <li>
-              <Link
-                to="/roofing-contractor-palm-beach-county-fl/"
-                className="text-red-600 hover:text-red-500 transition-colors font-semibold"
-              >
-                Palm Beach County
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/roofing-contractor-broward-county-fl/"
-                className="text-red-600 hover:text-red-500 transition-colors font-semibold"
-              >
-                Broward County
-              </Link>
-            </li>
-          </ul>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-zinc-800 border border-zinc-700 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-white mb-4">Broward County Cities</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/locations/fort-lauderdale/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Fort Lauderdale
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/pompano-beach/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Pompano Beach
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/coral-springs/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Coral Springs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Deerfield Beach
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/coconut-creek/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Coconut Creek
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/hollywood/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Hollywood
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-800 border border-zinc-700 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-white mb-4">Palm Beach County Cities</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/locations/boca-raton/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Boca Raton
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/west-palm-beach/" className="text-red-600 hover:text-red-500 transition-colors">
+                    West Palm Beach
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/delray-beach/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Delray Beach
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/boynton-beach/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Boynton Beach
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/wellington/" className="text-red-600 hover:text-red-500 transition-colors">
+                    Wellington
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <p className="text-gray-400 text-sm">
-            These county pages outline local considerations, documentation needs, and the communities we serve across each area.
+            These are our primary service areas. Contact us to confirm availability for your specific location.
           </p>
+        </div>
+
+        <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 lg:p-12 mb-16">
+          <h2 className="text-3xl font-bold text-white mb-6">Why Deerfield Beach?</h2>
+          <div className="space-y-4 text-gray-300">
+            <p>
+              Our Deerfield Beach location was chosen strategically. Positioned right on the border between North Broward and South Palm Beach counties, we can reach most of our service areas within 30 minutes.
+            </p>
+            <p>
+              This central location means faster response times for emergency repairs, more flexibility in scheduling, and lower overhead costs that we pass on to our customers. Whether you need a roof inspection in Boca Raton or a complete replacement in Fort Lauderdale, our crews can be there quickly.
+            </p>
+            <p>
+              Our proximity to I-95, the Sawgrass Expressway, and the Florida Turnpike makes it easy to reach both coastal and inland communities efficiently. This logistical advantage helps us serve more customers better while maintaining competitive pricing.
+            </p>
+          </div>
         </div>
 
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 lg:p-12 mb-16">
