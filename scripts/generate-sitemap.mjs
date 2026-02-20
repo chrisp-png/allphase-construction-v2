@@ -64,13 +64,13 @@ const APPROVED_REPAIR_CITIES = new Set([
 // ═══════════════════════════════════════════════════════════════════════════
 
 const EXCLUDED_PATTERNS = [
-  /\/locations\//,                          // ALL /locations/ URLs excluded
   /\/roof-inspection\/[^/]+/,               // ALL /roof-inspection/{city} excluded
   /\/tile-roof-inspection-/,
   /\/metal-roof-inspection-/,
   /\/flat-roof-inspection-/,
   /\/insurance-roof-inspection/,
-  /\/flat-roof-moisture-infrared-inspection/
+  /\/flat-roof-moisture-infrared-inspection/,
+  /^\/locations\//                          // Exclude all /locations/ URLs from sheetSitemap (we add them programmatically)
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -193,14 +193,36 @@ const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 const cityMap = new Map(cities.map(c => [c.slug, c.city]));
 
+// ═══════════════════════════════════════════════════════════════════════════
+// LOCATION PAGES CONFIGURATION
+// ═══════════════════════════════════════════════════════════════════════════
+
+const LOCATION_MONEY_PAGES = [
+  'deerfield-beach',
+  'fort-lauderdale',
+  'boca-raton',
+  'coral-springs',
+  'pompano-beach',
+  'hollywood',
+  'coconut-creek',
+  'west-palm-beach',
+  'delray-beach',
+  'boynton-beach',
+  'wellington'
+];
+
+const LOCATION_SUB_PAGES = [
+  { path: '/locations/deerfield-beach/best-roofers-deerfield-beach', label: 'Best Roofers in Deerfield Beach' }
+];
+
 console.log('Generating Canonical City Pages...\n');
 console.log(`  Approved repair cities: ${APPROVED_REPAIR_CITIES.size}`);
-console.log(`  Location cities: 0 (ALL /locations/ removed from sitemap)`);
+console.log(`  Location money pages: ${LOCATION_MONEY_PAGES.length}`);
+console.log(`  Location sub-pages: ${LOCATION_SUB_PAGES.length}`);
 console.log(`  Inspection city pages: 0 (ALL /roof-inspection/{city} removed from sitemap)\n`);
 
-// SILO 2 ONLY: Roof Repair - /roof-repair/[city]/
-// NO SILO 1 (/locations/) - removed from sitemap entirely
-// NO SILO 3 (/roof-inspection/{city}/) - removed from sitemap entirely
+// SILO 2: Roof Repair - /roof-repair/[city]/
+// SILO 3: /roof-inspection/{city}/ - removed from sitemap entirely
 console.log(`Adding ${APPROVED_REPAIR_CITIES.size} Roof Repair pages (APPROVED CITIES ONLY)...`);
 for (const slug of APPROVED_REPAIR_CITIES) {
   // Guard: never include excluded or redirect/alias slugs
@@ -220,6 +242,45 @@ for (const slug of APPROVED_REPAIR_CITIES) {
 }
 
 console.log(`Total city pages added: ${APPROVED_REPAIR_CITIES.size}\n`);
+
+// ═══════════════════════════════════════════════════════════════════════════
+// LOCATION MONEY PAGES - Priority 0.9 (Main Money Pages)
+// ═══════════════════════════════════════════════════════════════════════════
+
+console.log(`Adding ${LOCATION_MONEY_PAGES.length} Location Money Pages (Priority 0.9)...`);
+for (const slug of LOCATION_MONEY_PAGES) {
+  if (EXCLUDED_SLUGS.has(slug) || REDIRECT_OR_ALIAS_SLUGS.has(slug)) {
+    console.log(`BLOCKED: Attempted to add excluded/redirect slug: ${slug}`);
+    continue;
+  }
+  const cityName = cityMap.get(slug) || slug;
+  entries.push({
+    section: 'Location Money Pages',
+    label: `${cityName} Roofing Services`,
+    path: stripTrailingSlash(`/locations/${slug}`),
+    indexable: true,
+    priority: 0.9,
+    changefreq: 'weekly'
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// LOCATION SUB-PAGES - Priority 0.8 (Sub-Pages)
+// ═══════════════════════════════════════════════════════════════════════════
+
+console.log(`Adding ${LOCATION_SUB_PAGES.length} Location Sub-Pages (Priority 0.8)...`);
+for (const page of LOCATION_SUB_PAGES) {
+  entries.push({
+    section: 'Location Sub-Pages',
+    label: page.label,
+    path: stripTrailingSlash(page.path),
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  });
+}
+
+console.log(`Total location pages added: ${LOCATION_MONEY_PAGES.length + LOCATION_SUB_PAGES.length}\n`);
 
 // ═══════════════════════════════════════════════════════════════════════════
 // DEDUPLICATION
@@ -249,11 +310,15 @@ let validationErrors = [];
 // Build full URL list for validation
 const allUrls = dedupedEntries.map(e => `${CANONICAL_DOMAIN}${e.path}`);
 
-// CHECK 1: No /locations/ URLs
+// CHECK 1: /locations/ URLs must only be approved money pages
 const locationUrls = allUrls.filter(u => u.includes('/locations/'));
-if (locationUrls.length > 0) {
-  validationErrors.push(`FAIL: ${locationUrls.length} /locations/ URLs found in sitemap:`);
-  locationUrls.forEach(u => validationErrors.push(`  ${u}`));
+const expectedLocationCount = LOCATION_MONEY_PAGES.length + LOCATION_SUB_PAGES.length;
+if (locationUrls.length !== expectedLocationCount) {
+  validationErrors.push(`FAIL: Expected ${expectedLocationCount} /locations/ URLs but found ${locationUrls.length}`);
+  if (locationUrls.length > 0) {
+    validationErrors.push('Found URLs:');
+    locationUrls.slice(0, 10).forEach(u => validationErrors.push(`  ${u}`));
+  }
 }
 
 // CHECK 2: No /roof-inspection/{city}/ URLs (parent /roof-inspection/ is OK)
@@ -315,14 +380,15 @@ if (wrongDomain.length > 0) {
 // VALIDATION RESULTS
 if (validationErrors.length > 0) {
   console.error('SITEMAP VALIDATION FAILED - BUILD MUST STOP');
-  console.log('All URLs have NO trailing slash (except root)');  validationErrors.forEach(err => console.error(err));
+  console.log('All URLs have NO trailing slash (except root)');
+  validationErrors.forEach(err => console.error(err));
   console.error('The sitemap contains invalid URLs. Fix the issues above before deploying.');
   process.exit(1);
 } else {
   console.log('ALL VALIDATION CHECKS PASSED');
   console.log('No duplicate URLs');
-  console.log('stripTrailingSAll URLs have NO trailing slash (except root)lash');
-  console.log('No /locations/ URLs');
+  console.log('All URLs have NO trailing slash (except root)');
+  console.log(`Correct number of /locations/ URLs: ${locationUrls.length} (${LOCATION_MONEY_PAGES.length} money pages + ${LOCATION_SUB_PAGES.length} sub-pages)`);
   console.log('No /roof-inspection/{city}/ URLs');
   console.log(`All ${repairCityUrls.length} roof-repair URLs are in APPROVED list (16 cities)`);
   console.log('No lake-worth-beach or light-house-point');
