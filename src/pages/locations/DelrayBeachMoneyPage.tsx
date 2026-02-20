@@ -8,7 +8,7 @@ import { EXTERNAL_LINKS } from '../../config/links';
 
 export default function DelrayBeachMoneyPage() {
   useEffect(() => {
-    document.title = 'Delray Beach Roofer | HVHZ Certified | All Phase';
+    document.title = 'Delray Beach Roofer | Palm Beach County Wind-Compliant | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
