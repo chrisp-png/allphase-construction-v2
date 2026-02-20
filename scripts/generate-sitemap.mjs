@@ -284,6 +284,16 @@ for (const page of LOCATION_SUB_PAGES) {
 console.log(`Total location pages added: ${LOCATION_MONEY_PAGES.length + LOCATION_SUB_PAGES.length}\n`);
 
 // ═══════════════════════════════════════════════════════════════════════════
+// ADDITIONAL HARDCODED PAGES
+// ═══════════════════════════════════════════════════════════════════════════
+
+entries.push(
+  { section: 'Resources', label: 'How to Hire Roofing Contractor', path: '/how-to-hire-roofing-contractor/', indexable: true, priority: 0.8, changefreq: 'monthly' },
+  { section: 'Services', label: 'Single Ply Roofing', path: '/single-ply-roofing/', indexable: true, priority: 0.8, changefreq: 'monthly' },
+  { section: 'Tools', label: 'Roof Cost Calculator', path: '/roof-cost-calculator/', indexable: true, priority: 0.8, changefreq: 'monthly' }
+);
+
+// ═══════════════════════════════════════════════════════════════════════════
 // DEDUPLICATION
 // ═══════════════════════════════════════════════════════════════════════════
 
