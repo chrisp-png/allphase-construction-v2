@@ -201,7 +201,7 @@ export default function BoyntonBeachMoneyPage() {
                 </h2>
                 <div className="space-y-4 text-zinc-300 leading-relaxed">
                   <p>
-                    {cityName} is located in Florida's High Velocity Hurricane Zone (HVHZ), requiring specialized installation techniques, enhanced materials, and specific building code compliance. All Phase Construction USA specializes in HVHZ-compliant roofing systems designed to withstand extreme wind events.
+                    {cityName} is located in Florida's High Velocity Hurricane Zone (HVHZ), requiring specialized installation techniques, enhanced materials, and specific building code compliance. All Phase Construction USA specializes in Palm Beach County wind-compliant roofing systems designed to withstand extreme wind events.
                   </p>
                   <p>
                     Our team is trained in HVHZ installation requirements, including enhanced fastening patterns, sealed roof decks, and impact-resistant materials. We use only products with valid Miami-Dade County Notices of Acceptance (NOA) and ensure every installation meets or exceeds Florida Building Code requirements for high-wind zones.

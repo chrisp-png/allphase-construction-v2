@@ -31,7 +31,7 @@ export function buildLocationSeo(location: Location): LocationSEO {
 
   // Generate defaults from templates
   const defaultTitle = `${city} Roofing Contractor | All Phase Construction USA`;
-  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.`;
+  const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 

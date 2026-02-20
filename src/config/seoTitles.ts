@@ -216,7 +216,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     // Fallback if location not found in locations.ts
     return {
       title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
-      description: `All Phase Construction USA is a licensed roofing contractor serving ${CITY_NAMES[slug] || slug}, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.`,
+      description: `All Phase Construction USA is a licensed roofing contractor serving ${CITY_NAMES[slug] || slug}, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
     };
   }

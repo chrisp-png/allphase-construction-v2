@@ -42,13 +42,13 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Deerfield Beach
   'deerfield-beach': {
     title: 'Deerfield Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Deerfield Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Deerfield Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Fort Lauderdale
   'fort-lauderdale': {
     title: 'Fort Lauderdale Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Fort Lauderdale Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Fort Lauderdale Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: West Palm Beach
@@ -60,13 +60,13 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Coral Springs
   'coral-springs': {
     title: 'Coral Springs Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Coral Springs Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Coral Springs Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Coconut Creek
   'coconut-creek': {
     title: 'Coconut Creek Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Coconut Creek Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Coconut Creek Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Delray Beach
@@ -84,7 +84,7 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Lake Worth
   'lake-worth': {
     title: 'Lake Worth Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Lake Worth Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Lake Worth Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Wellington
@@ -96,43 +96,43 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
   // Priority City: Lauderhill
   'lauderhill': {
     title: 'Lauderhill Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Lauderhill Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Lauderhill Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: North Lauderdale
   'north-lauderdale': {
     title: 'North Lauderdale Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert North Lauderdale Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert North Lauderdale Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Margate
   'margate': {
     title: 'Margate Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Margate Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Margate Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Plantation
   'plantation': {
     title: 'Plantation Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Plantation Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Plantation Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Davie
   'davie': {
     title: 'Davie Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Davie Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Davie Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Hollywood
   'hollywood': {
     title: 'Hollywood Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Hollywood Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Hollywood Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 
   // Priority City: Pompano Beach
   'pompano-beach': {
     title: 'Pompano Beach Roofing Specialist | Dual-Licensed (CCC/CGC) | All Phase Construction USA',
-    description: 'Expert Pompano Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and HVHZ-compliant roof repairs and replacements. (754) 227-5605.'
+    description: 'Expert Pompano Beach Roofing Specialist. Dual-Licensed (CCC/CGC) and Palm Beach County wind-compliant roof repairs and replacements. (754) 227-5605.'
   },
 };
 
@@ -151,7 +151,7 @@ export function getDefaultServiceAreaTitle(cityName: string): string {
  * @returns SEO-optimized description
  */
 export function getDefaultServiceAreaDescription(cityName: string): string {
-  return `Looking for a Dual-Licensed Roofing Specialist in ${cityName}? We provide HVHZ-compliant roof repairs and replacements. Get a free estimate!`;
+  return `Looking for a Dual-Licensed Roofing Specialist in ${cityName}? We provide Palm Beach County wind-compliant roof repairs and replacements. Get a free estimate!`;
 }
 
 /**

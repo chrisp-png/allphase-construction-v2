@@ -34,7 +34,7 @@ export const locations: Location[] = [
     city: "Deerfield Beach",
     state: "FL",
     titleOverride: "Deerfield Beach Roofing Contractor | All Phase Construction USA",
-    descriptionOverride: "All Phase Construction USA is a licensed roofing contractor serving Deerfield Beach, FL. We provide HVHZ-compliant metal, tile, and shingle roofing installation, replacement, and repair.",
+    descriptionOverride: "All Phase Construction USA is a licensed roofing contractor serving Deerfield Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.",
     ogTitleOverride: "Deerfield Beach Roofing Contractor | All Phase Construction USA",
     ogDescriptionOverride: "Licensed Deerfield Beach roofing contractor specializing in hurricane-compliant installations and repairs."
   },
