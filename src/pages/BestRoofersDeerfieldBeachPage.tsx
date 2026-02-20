@@ -10,6 +10,132 @@ export default function BestRoofersDeerfieldBeachPage() {
         <title>5 Best Rated Roofers in Deerfield Beach FL (2025) | All Phase Construction USA</title>
         <meta name="description" content="Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach" />
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://allphaseconstructionfl.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Locations",
+                  "item": "https://allphaseconstructionfl.com/locations"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Deerfield Beach",
+                  "item": "https://allphaseconstructionfl.com/locations/deerfield-beach"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Best Roofers in Deerfield Beach",
+                  "item": "https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How much does a new roof cost in Deerfield Beach?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most residential roof replacements in Deerfield Beach range from $9,000 to $45,000+ depending on roof type, size, and materials. HVHZ compliance and Broward County permitting add cost that is unavoidable and non-negotiable for code-compliant work."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do I need a permit for roofing work in Deerfield Beach / Broward County?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes — virtually all roofing work in Broward County requires a permit pulled by your licensed contractor. Your contractor should handle this entirely. If a roofer tells you permits aren't needed for your project, that is a serious red flag."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is HVHZ and does it apply to Deerfield Beach?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "HVHZ stands for High Velocity Hurricane Zone. Deerfield Beach is in Broward County, which is designated HVHZ. Every roofing material and installation method must meet Florida Building Code Section 1504 wind resistance requirements and carry a Notice of Acceptance (NOA)."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is a wind mitigation inspection and why does it matter?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A wind mitigation inspection documents how your roof is built relative to Florida's wind standards. Insurance companies use this report to calculate premium discounts. A strong wind mitigation report can reduce your homeowner's insurance by several hundred to several thousand dollars annually."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the difference between a roofing license and a general contractor license in Florida?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A Certified Roofing Contractor (CRC) license authorizes a contractor to install and repair roof systems. A Certified General Contractor (CGC) license authorizes structural, framing, and broader construction scope. A dual-licensed contractor — like All Phase Construction USA — can legally handle both the roof and any structural issues discovered during the project."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I know if I need repair or full replacement?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "General rule: if damage is localized and the roof system is under 15 years old, repair often makes sense. If the roof is 20+ years old, has multiple problem areas, or if repair cost approaches 25-30% of replacement cost, full replacement provides better long-term value."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does homeowner's insurance cover roof damage in Florida?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It depends on the cause and your policy. Storm damage, wind damage, and sudden events are typically covered. Gradual wear, maintenance issues, and pre-existing damage are generally not. Strong documentation and a contractor familiar with the claims process can significantly improve outcomes."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can a Deerfield Beach homeowner pull their own roof permit?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. In Broward County, roofing permits must be pulled by a licensed contractor, not the homeowner. Any contractor who asks you to pull the permit is either unlicensed or attempting to avoid accountability for the work."
+                  }
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "All Phase Construction USA",
+              "telephone": "(754) 227-5605",
+              "url": "https://allphaseconstructionfl.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "159 NW 1st St",
+                "addressLocality": "Deerfield Beach",
+                "addressRegion": "FL",
+                "postalCode": "33441",
+                "addressCountry": "US"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "138"
+              },
+              "description": "Dual-licensed roofing and general contractor serving Deerfield Beach and Broward County since 2005. Specializing in HVHZ-compliant roof systems, wind mitigation upgrades, and insurance premium reduction.",
+              "areaServed": ["Deerfield Beach", "Broward County", "Palm Beach County"]
+            }
+          ])}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -1088,7 +1214,7 @@ export default function BestRoofersDeerfieldBeachPage() {
               Any quote significantly below these ranges in Deerfield Beach deserves close scrutiny.
             </p>
             <p className="text-zinc-300 leading-relaxed">
-              Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to estimate your project before calling.
+              Use our <Link to="/roof-cost-calculator/" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to estimate your project before calling.
             </p>
           </div>
 
