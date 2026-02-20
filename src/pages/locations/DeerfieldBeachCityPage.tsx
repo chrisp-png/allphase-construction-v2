@@ -398,8 +398,13 @@ export default function DeerfieldBeachCityPage() {
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
                 We install and service <Link to="/shingle-roofing" className="underline hover:text-white">shingle roofs</Link>, <Link to="/tile-roofing" className="underline hover:text-white">tile roofs</Link>, <Link to="/metal-roofing" className="underline hover:text-white">metal roofs</Link>, and <Link to="/flat-roofing" className="underline hover:text-white">flat roofing systems</Link> throughout 33441 and 33442. Each installation is completed with hurricane-resistant fasteners, secondary water barriers, and inspection-ready documentation.
               </p>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <p className="text-gray-400 text-lg leading-relaxed mb-4">
                 Based at our Deerfield Beach headquarters, our roofing team serves residential and commercial properties throughout Broward and Palm Beach Counties with code-compliant systems built for long-term performance.
+              </p>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                <Link to="/locations/deerfield-beach/best-roofers-deerfield-beach" className="text-red-500 hover:text-red-400 underline font-medium">
+                  See our guide to the 5 best rated roofers in Deerfield Beach →
+                </Link>
               </p>
             </div>
           </div>

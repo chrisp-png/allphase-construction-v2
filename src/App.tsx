@@ -197,6 +197,7 @@ const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const ServiceAreaDynamicPage = lazy(() => import('./pages/ServiceAreaDynamicPage'));
 const LocationsIndexPage = lazy(() => import('./pages/locations/LocationsIndexPage'));
 const ServiceAreasHubPage = lazy(() => import('./pages/locations/ServiceAreasHubPage'));
+const BestRoofersDeerfieldBeachPage = lazy(() => import('./pages/BestRoofersDeerfieldBeachPage'));
 const ServiceAreaPage = lazy(() => import('./pages/locations/ServiceAreaPage'));
 const TopRooferPage = lazy(() => import('./pages/locations/TopRooferPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
@@ -313,6 +314,7 @@ function AppContent() {
             <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/locations" element={<LocationsIndexPage />} />
             <Route path="/locations/deerfield-beach" element={<DeerfieldBeachCityPage />} />
+            <Route path="/locations/deerfield-beach/best-roofers-deerfield-beach" element={<BestRoofersDeerfieldBeachPage />} />
             <Route path="/locations/boca-raton" element={<BocaRatonPage />} />
             <Route path="/locations/fort-lauderdale" element={<FortLauderdaleMoneyPage />} />
             <Route path="/locations/coral-springs" element={<CoralSpringsMoneyPage />} />
