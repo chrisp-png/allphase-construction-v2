@@ -115,6 +115,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'How to Hire a Roofing Contractor | All Phase Construction USA',
     description: 'Expert guide on hiring a roofing contractor in South Florida. Learn what to look for, questions to ask, and how to avoid scams.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/how-to-hire-a-roofing-contractor'
+  },
+  '/locations/deerfield-beach/best-roofers-deerfield-beach': {
+    title: '5 Best Rated Roofers in Deerfield Beach FL (2025) | All Phase Construction USA',
+    description: 'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   }
 };
 
