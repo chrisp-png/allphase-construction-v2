@@ -1089,7 +1089,68 @@ export default function BestRoofersDeerfieldBeachPage() {
             </p>
           </div>
 
-          {/* Section 14: FAQ - To be added in build due to length */}
+          {/* Section 14: FAQ */}
+          <div className="prose prose-invert prose-lg max-w-none mb-16">
+            <h2 className="text-3xl font-bold text-white mb-8">FAQ — Frequently Asked Questions About Roofing in Deerfield Beach, FL</h2>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">How much does a new roof cost in Deerfield Beach?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  Most residential roof replacements in Deerfield Beach range from $9,000 to $45,000+ depending on roof type, size, and materials. HVHZ compliance and Broward County permitting add cost that is unavoidable and non-negotiable for code-compliant work.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">Do I need a permit for roofing work in Deerfield Beach / Broward County?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  Yes — virtually all roofing work in Broward County requires a permit pulled by your licensed contractor. Your contractor should handle this entirely. If a roofer tells you permits aren't needed for your project, that is a serious red flag.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">What is HVHZ and does it apply to Deerfield Beach?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  HVHZ stands for High Velocity Hurricane Zone. Deerfield Beach is in Broward County, which is designated HVHZ. Every roofing material and installation method must meet Florida Building Code Section 1504 wind resistance requirements and carry a Notice of Acceptance (NOA).
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">What is a wind mitigation inspection and why does it matter?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  A wind mitigation inspection documents how your roof is built relative to Florida's wind standards. Insurance companies use this report to calculate premium discounts. A strong wind mitigation report can reduce your homeowner's insurance by several hundred to several thousand dollars annually.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">What is the difference between a roofing license and a general contractor license in Florida?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  A Certified Roofing Contractor (CRC) license authorizes a contractor to install and repair roof systems. A Certified General Contractor (CGC) license authorizes structural, framing, and broader construction scope. A dual-licensed contractor — like All Phase Construction USA — can legally handle both the roof and any structural issues discovered during the project.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">How do I know if I need repair or full replacement?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  General rule: if damage is localized and the roof system is under 15 years old, repair often makes sense. If the roof is 20+ years old, has multiple problem areas, or if repair cost approaches 25-30% of replacement cost, full replacement provides better long-term value.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">Does homeowner's insurance cover roof damage in Florida?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  It depends on the cause and your policy. Storm damage, wind damage, and sudden events are typically covered. Gradual wear, maintenance issues, and pre-existing damage are generally not. Strong documentation and a contractor familiar with the claims process can significantly improve outcomes.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-white mb-3">Can a Deerfield Beach homeowner pull their own roof permit?</h3>
+                <p className="text-zinc-300 leading-relaxed">
+                  No. In Broward County, roofing permits must be pulled by a licensed contractor, not the homeowner. Any contractor who asks you to pull the permit is either unlicensed or attempting to avoid accountability for the work.
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* Section 15: Closing CTA - moved to proper CTA section below */}
 
