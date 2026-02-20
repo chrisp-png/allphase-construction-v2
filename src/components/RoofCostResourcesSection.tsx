@@ -16,7 +16,7 @@ export default function RoofCostResourcesSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Calculator Link */}
           <Link
-            to="/calculator/"
+            to="/roof-cost-calculator/"
             className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 group"
           >
             <div className="flex items-start gap-4">

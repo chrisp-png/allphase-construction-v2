@@ -32,11 +32,17 @@ export const locations: Location[] = [
   {
     slug: "deerfield-beach",
     city: "Deerfield Beach",
-    state: "FL"
+    state: "FL",
+    descriptionOverride: "Licensed roofing contractor in Deerfield Beach, FL. HVHZ-compliant. Tile, metal, shingle & flat roofing. Dual-licensed (CCC & CGC). Free inspections."
   },
 
   // ALL OTHER CITIES (use template-based SEO)
-  { slug: "boca-raton", city: "Boca Raton", state: "FL" },
+  {
+    slug: "boca-raton",
+    city: "Boca Raton",
+    state: "FL",
+    descriptionOverride: "Licensed roofing contractor in Boca Raton, FL. Palm Beach County wind-compliant. Tile, metal, shingle & flat roofing. Free inspections."
+  },
   { slug: "boynton-beach", city: "Boynton Beach", state: "FL" },
   { slug: "coconut-creek", city: "Coconut Creek", state: "FL" },
   { slug: "cooper-city", city: "Cooper City", state: "FL" },
@@ -49,7 +55,12 @@ export const locations: Location[] = [
     state: "FL",
     titleOverride: "Delray Beach Roofer | Palm Beach County Wind-Compliant | All Phase Construction USA"
   },
-  { slug: "fort-lauderdale", city: "Fort Lauderdale", state: "FL" },
+  {
+    slug: "fort-lauderdale",
+    city: "Fort Lauderdale",
+    state: "FL",
+    descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-compliant. Tile, metal, shingle & flat roofing. Dual-licensed (CCC & CGC). Free inspections."
+  },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
   { slug: "hallandale-beach", city: "Hallandale Beach", state: "FL" },
   { slug: "haverhill", city: "Haverhill", state: "FL" },
@@ -80,7 +91,12 @@ export const locations: Location[] = [
   { slug: "sunrise", city: "Sunrise", state: "FL" },
   { slug: "tamarac", city: "Tamarac", state: "FL" },
   { slug: "wellington", city: "Wellington", state: "FL" },
-  { slug: "west-palm-beach", city: "West Palm Beach", state: "FL" },
+  {
+    slug: "west-palm-beach",
+    city: "West Palm Beach",
+    state: "FL",
+    descriptionOverride: "Licensed roofing contractor in West Palm Beach, FL. Palm Beach County wind-compliant. Tile, metal, shingle & flat roofing. Free inspections."
+  },
   { slug: "westlake", city: "Westlake", state: "FL" },
   { slug: "weston", city: "Weston", state: "FL" },
   { slug: "wilton-manors", city: "Wilton Manors", state: "FL" }

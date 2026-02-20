@@ -27,8 +27,8 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roofing Contractor — All Phase Construction USA | HVHZ-Compliant Roof Repair, Replacement & Inspections | Tile, Metal, Shingle & Flat Roofing | Broward & Palm Beach County',
-    description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
+    title: 'Roofing Contractor | Broward & Palm Beach County | All Phase Construction USA',
+    description: 'HVHZ-certified roofing contractor serving Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Dual-licensed (CCC & CGC). Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
@@ -125,6 +125,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA',
     description: 'Trusted roofing contractor in Fort Lauderdale, FL. HVHZ certified, dual-licensed (CCC & CGC). Tile, metal, shingle, flat & commercial roofing. 20+ years experience. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
+  },
+  '/roof-repair/fort-lauderdale': {
+    title: 'Fort Lauderdale Roof Repair | HVHZ-Certified | All Phase Construction USA',
+    description: 'Expert roof repair in Fort Lauderdale, FL. HVHZ-certified, fast response, licensed & insured. Tile, shingle, metal & flat roof repairs. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
   }
 };
 
