@@ -47,7 +47,12 @@ export const locations: Location[] = [
   { slug: "coral-springs", city: "Coral Springs", state: "FL" },
   { slug: "dania-beach", city: "Dania Beach", state: "FL" },
   { slug: "davie", city: "Davie", state: "FL" },
-  { slug: "delray-beach", city: "Delray Beach", state: "FL" },
+  {
+    slug: "delray-beach",
+    city: "Delray Beach",
+    state: "FL",
+    titleOverride: "Delray Beach Roofer | Palm Beach County Wind-Compliant | All Phase Construction USA"
+  },
   { slug: "fort-lauderdale", city: "Fort Lauderdale", state: "FL" },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
   { slug: "hallandale-beach", city: "Hallandale Beach", state: "FL" },
