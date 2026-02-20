@@ -1566,7 +1566,7 @@ export const sheetSitemap: SitemapEntry[] = [
     path: '/frequently-asked-questions/',
     parent: null,
     indexable: true,
-    priority: 0.7,
+    priority: 0.8,
     changefreq: 'monthly',
   },
   {
