@@ -161,7 +161,7 @@ export default function LearningCenterPage() {
         {/* Featured Project Photo */}
         <section className="w-full">
           <img
-            src="/images/projects/project-luxury-tile-aerial-1.jpg"
+            src="/projects/featured-tile-roof-drone.jpg"
             alt="Luxury tile roof installation in South Florida by All Phase Construction USA"
             className="w-full h-auto object-cover"
             style={{ maxHeight: '380px' }}
@@ -393,7 +393,7 @@ export default function LearningCenterPage() {
             {/* Customer Photo */}
             <div className="mb-8">
               <img
-                src="/images/projects/Graham and happy customer.jpg"
+                src="/social-proof/graham-with-happy-customer-all-phase-usa.jpg"
                 alt="All Phase Construction USA team with satisfied roofing customer South Florida"
                 className="mx-auto rounded-lg"
                 style={{ maxWidth: '600px' }}
