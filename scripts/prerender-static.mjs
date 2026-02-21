@@ -8,6 +8,12 @@ const projectRoot = path.resolve(__dirname, '..');
 const publicDir = path.resolve(projectRoot, 'dist'); // Changed from 'public' - prerender to dist for Netlify deployment
 const distDir = path.resolve(projectRoot, 'dist');
 
+console.log('🔍 DEBUG: Directory paths:');
+console.log('  projectRoot:', projectRoot);
+console.log('  publicDir:', publicDir);
+console.log('  distDir:', distDir);
+console.log('  distDir exists?', fs.existsSync(distDir));
+
 // Load cities data (for roof-repair and roof-inspection pages only)
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
@@ -1257,10 +1263,18 @@ function generateStaticFiles() {
     'https://allphaseconstructionfl.com',
     homepageContent()
   );
-    // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
+  // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering
-fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
-  console.log('✓ Generated: dist/index.html');
+  const homePath = path.join(publicDir, 'index.html');
+  console.log('🔍 DEBUG: About to write homepage to:', homePath);
+  try {
+    fs.writeFileSync(homePath, homeHTML);
+    console.log('✓ Generated: dist/index.html');
+    console.log('  File exists after write?', fs.existsSync(homePath));
+    console.log('  File size:', fs.statSync(homePath).size, 'bytes');
+  } catch (err) {
+    console.error('❌ ERROR writing homepage:', err);
+  }
   totalPages++;
 
   // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
@@ -1300,9 +1314,16 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     );
 
     const dir = path.join(publicDir, pagePath.substring(1));
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'index.html'), html);
-    console.log(`✓ Generated: dist${pagePath}/index.html`);
+    const filePath = path.join(dir, 'index.html');
+    console.log(`🔍 DEBUG: Writing service page to: ${filePath}`);
+    try {
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(filePath, html);
+      console.log(`✓ Generated: dist${pagePath}/index.html`);
+      console.log(`  File exists? ${fs.existsSync(filePath)}, Size: ${fs.statSync(filePath).size} bytes`);
+    } catch (err) {
+      console.error(`❌ ERROR writing ${pagePath}:`, err);
+    }
     totalPages++;
   });
 
