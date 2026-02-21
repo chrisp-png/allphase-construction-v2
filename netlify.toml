@@ -27,7 +27,7 @@ package = "netlify-plugin-cache"
 
 [[edge_functions]]
 function = "strip-slash"
-path = "/*"
+path = "/*/"
 
 [[redirects]]
 from = "/sitemap.xml"
@@ -53,6 +53,7 @@ status = 200
 from = "/*"
 to = "/index.html"
 status = 200
+force = false
 
 [[headers]]
 for = "/*"
