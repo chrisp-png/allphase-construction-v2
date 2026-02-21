@@ -1633,8 +1633,8 @@ function generateStaticFiles() {
 `;
   fs.writeFileSync(path.join(bestRoofersDFBDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
-    '',
-    '',
+    'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach',
     bestRoofersDFBContent
   ));
   console.log('✅ Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
