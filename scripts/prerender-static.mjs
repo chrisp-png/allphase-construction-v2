@@ -1045,17 +1045,21 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     `<title>${title}</title>`
   );
 
-  // Replace meta description
-  html = html.replace(
-    /<meta name="description" content=".*?">/,
-    `<meta name="description" content="${description}">`
-  );
+  // Replace meta description (skip if empty - let Helmet handle it)
+  if (description) {
+    html = html.replace(
+      /<meta name="description" content=".*?">/,
+      `<meta name="description" content="${description}">`
+    );
+  }
 
-  // Replace canonical link
-  html = html.replace(
-    /<link rel="canonical" href=".*?" \/>/,
-    `<link rel="canonical" href="${canonical}" />`
-  );
+  // Replace canonical link (skip if empty - let Helmet handle it)
+  if (canonical) {
+    html = html.replace(
+      /<link rel="canonical" href=".*?" \/>/,
+      `<link rel="canonical" href="${canonical}" />`
+    );
+  }
 
   // Replace Open Graph tags
   html = html.replace(
@@ -1628,9 +1632,9 @@ function generateStaticFiles() {
   <p>All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Dual licensed: CCC-1331464 (Roofing Contractor) &amp; CGC-1526236 (General Contractor). Rated 4.8/5 from 138 verified reviews. Call (754) 227-5605 for a free roof assessment.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersDFBDir, 'index.html'), createHTMLTemplate(
-    '5 Best Rated Roofers in Deerfield Beach FL (2026) | All Phase Construction USA',
-    'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
-    'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach',
+    'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
+    '',
+    '',
     bestRoofersDFBContent
   ));
   console.log('✅ Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
