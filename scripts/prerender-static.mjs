@@ -1012,29 +1012,24 @@ function generateDeerfieldBeachSchema() {
 /**
  * Load the production-built dist/index.html template
  */
+let CLEAN_VITE_TEMPLATE = null;
+
 function loadProductionTemplate() {
+  if (CLEAN_VITE_TEMPLATE) return CLEAN_VITE_TEMPLATE;
   const distIndexPath = path.join(distDir, 'index.html');
-
   if (!fs.existsSync(distIndexPath)) {
-    throw new Error(
-      '❌ dist/index.html not found!\n' +
-      'Run `npm run build` before prerendering.\n' +
-      'The prerender script needs dist/index.html to extract production asset references.'
-    );
+    throw new Error('❌ dist/index.html not found. Run npm run build first.');
   }
-
-    const template = fs.readFileSync(distIndexPath, 'utf-8');
-
-  // SAFETY: Reject dev template -- must contain production Vite assets
+  const template = fs.readFileSync(distIndexPath, 'utf-8');
   if (template.includes('/src/main.tsx')) {
-    throw new Error(
-      '❌ dist/index.html still references /src/main.tsx!\n' +
-      'This is a dev template, not a production build.\n' +
-      'Run `npm run build` (not `vite build --mode development`) before prerendering.'
-    );
+    throw new Error('❌ Dev build detected. Run npm run build first.');
   }
-
-  return template;
+  if (!template.includes('<div id="root"></div>')) {
+    throw new Error('❌ Template already corrupted before prerender started.');
+  }
+  CLEAN_VITE_TEMPLATE = template;
+  console.log('✅ Clean Vite template locked in memory.');
+  return CLEAN_VITE_TEMPLATE;
 }
 
 /**
