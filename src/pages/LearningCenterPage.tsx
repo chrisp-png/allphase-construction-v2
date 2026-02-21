@@ -127,7 +127,7 @@ export default function LearningCenterPage() {
     <>
       <SEO
         title="Learning Center | Roofing Guides & Resources | All Phase Construction USA"
-        description="Expert roofing guides, cost calculators, and homeowner education from All Phase Construction USA. Everything you need to know about roofing in South Florida."
+        description="Your complete South Florida roofing resource hub. Get accurate 2025–2026 cost estimates, financing options, contractor hiring guides, and step-by-step replacement process info for Broward & Palm Beach County homeowners."
       />
 
       <div className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950">
@@ -156,6 +156,17 @@ export default function LearningCenterPage() {
               </Link>
             </div>
           </div>
+        </section>
+
+        {/* Featured Project Photo */}
+        <section className="w-full">
+          <img
+            src="/images/projects/project-luxury-tile-aerial-1.jpg"
+            alt="Luxury tile roof installation in South Florida by All Phase Construction USA"
+            className="w-full h-auto object-cover"
+            style={{ maxHeight: '380px' }}
+            loading="lazy"
+          />
         </section>
 
         {/* Tools & Resources - Featured Cards */}
@@ -378,6 +389,18 @@ export default function LearningCenterPage() {
             <p className="text-xl text-zinc-300 mb-8">
               Request your free roof assessment today.
             </p>
+
+            {/* Customer Photo */}
+            <div className="mb-8">
+              <img
+                src="/images/projects/Graham and happy customer.jpg"
+                alt="All Phase Construction USA team with satisfied roofing customer South Florida"
+                className="mx-auto rounded-lg"
+                style={{ maxWidth: '600px' }}
+                loading="lazy"
+              />
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
