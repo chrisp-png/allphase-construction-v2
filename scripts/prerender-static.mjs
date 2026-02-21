@@ -1329,6 +1329,25 @@ function generateStaticFiles() {
     totalPages++;
   });
 
+
+    // Roof Replacement - Custom Service Page
+  const roofReplacementDir = path.join(distDir, 'roof-replacement');
+  fs.mkdirSync(roofReplacementDir, { recursive: true });
+  const roofReplacementContent = `
+<h1>Roof Replacement Contractor in South Florida | All Phase Construction USA</h1>
+<p>All Phase Construction USA is a licensed roof replacement contractor serving Broward County and Palm Beach County. We specialize in HVHZ-compliant tile, metal, shingle, and flat roof replacement systems engineered for South Florida hurricane conditions.</p>
+<p>As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we provide structural engineering oversight on every roof replacement project. Call (754) 227-5605 for a free estimate.</p>
+
+${companyAuthorityFooter()}
+`.trim();
+  fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), createHTMLTemplate(
+    'Roof Replacement South Florida | Licensed Contractor | All Phase',
+    'Licensed roof replacement contractor in South Florida. Serving Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. Free estimates. Call (754) 227-5605.',
+    'https://allphaseconstructionfl.com/roof-replacement',
+    roofReplacementContent
+  ));
+  console.log('✅ Prerendered: roof-replacement/index.html');
+  totalPages++;
   // 2.3. Generate Additional Location Pages (not in main LOCATIONS array)
   console.log('\n📍 Generating Additional Location Pages...\n');
 
