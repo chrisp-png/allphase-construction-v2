@@ -1462,7 +1462,7 @@ function generateStaticFiles() {
         const blogSlugs = blogUrlMatches
           .map(match => {
             const urlMatch = match.match(/\/blog\/([^<]+)</);
-            return urlMatch ? urlMatch[1] : null;
+            return urlMatch ? urlMatch[1].replace(/\/$/, '') : null;
           })
           .filter(slug => slug && slug !== 'index.html');
 
