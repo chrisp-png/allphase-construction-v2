@@ -23,6 +23,7 @@ const AdminPage = lazy(() => import('./pages/AdminPage'));
 const ResidentialRoofingPage = lazy(() => import('./pages/ResidentialRoofingPage'));
 const CommercialRoofingPage = lazy(() => import('./pages/CommercialRoofingPage'));
 const RoofReplacementProcessPage = lazy(() => import('./pages/RoofReplacementProcessPage'));
+const RoofReplacementPage = lazy(() => import('./pages/RoofReplacementPage'));
 const TileRoofingPage = lazy(() => import('./pages/TileRoofingPage'));
 const MetalRoofingPage = lazy(() => import('./pages/MetalRoofingPage'));
 const ShingleRoofingPage = lazy(() => import('./pages/ShingleRoofingPage'));
@@ -256,6 +257,7 @@ function AppContent() {
             <Route path="/residential-roofing" element={<ResidentialRoofingPage />} />
             <Route path="/commercial-roofing" element={<CommercialRoofingPage />} />
             <Route path="/roof-replacement-process" element={<RoofReplacementProcessPage />} />
+            <Route path="/roof-replacement" element={<RoofReplacementPage />} />
             <Route path="/tile-roofing" element={<TileRoofingPage />} />
             <Route path="/metal-roofing" element={<MetalRoofingPage />} />
             <Route path="/shingle-roofing" element={<ShingleRoofingPage />} />

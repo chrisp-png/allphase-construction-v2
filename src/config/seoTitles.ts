@@ -86,6 +86,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Learn our proven 10-step roof replacement process. From inspection to final warranty, see how we deliver quality roofing projects in South Florida.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
+  '/roof-replacement': {
+    title: 'Roof Replacement South Florida | Licensed Contractor | All Phase',
+    description: 'Roof replacement in Broward & Palm Beach County. Licensed CCC/CGC contractor. HVHZ-compliant installation. Call (754) 227-5605 for free estimate.',
+    canonical: 'https://allphaseconstructionfl.com/roof-replacement'
+  },
   '/roof-maintenance-programs': {
     title: 'Roof Maintenance Programs | All Phase Construction USA',
     description: 'Proactive roof maintenance programs for South Florida properties. Extend roof life, prevent leaks, and maintain warranty compliance.',
