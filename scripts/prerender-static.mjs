@@ -1024,9 +1024,6 @@ function loadProductionTemplate() {
   if (template.includes('/src/main.tsx')) {
     throw new Error('❌ Dev build detected. Run npm run build first.');
   }
-  if (!template.includes('<div id="root"></div>')) {
-    throw new Error('❌ Template already corrupted before prerender started.');
-  }
   CLEAN_VITE_TEMPLATE = template;
   console.log('✅ Clean Vite template locked in memory.');
   return CLEAN_VITE_TEMPLATE;
