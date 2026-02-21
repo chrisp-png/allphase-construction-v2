@@ -1163,7 +1163,13 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
     </div>
         `;
 
-      html = html.replace('<div id="root"></div>', `<div id="root">${seoContent}</div>`);
+          const rootStart = html.indexOf('<div id="root">');
+    const bodyEnd = html.indexOf('</body>');
+    if (rootStart !== -1 && bodyEnd !== -1) {
+      html = html.slice(0, rootStart) + `<div id="root">${seoContent}</div>` + html.slice(bodyEnd);
+    } else {
+      throw new Error('❌ Could not find root div or closing body tag in template.');
+    }
 
   return html;
 }
