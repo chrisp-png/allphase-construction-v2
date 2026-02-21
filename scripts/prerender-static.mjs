@@ -1286,7 +1286,8 @@ fs.writeFileSync(path.join(publicDir, 'index.html'), homeHTML);
     { path: '/contact', title: 'Contact Our Roofing Team' },
     { path: '/about-us', title: 'About All Phase Construction' },
     { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' },
-    { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' }
+    { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
+    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
