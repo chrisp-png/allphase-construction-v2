@@ -315,6 +315,14 @@ export default function BlogPostPage() {
     if (metaDescription) {
       metaDescription.setAttribute('content', post.meta_description || post.excerpt);
     }
+
+        let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', `https://allphaseconstructionfl.com/blog/${post.slug}`);
   };
 
   const formatDate = (dateString: string) => {
@@ -350,19 +358,19 @@ export default function BlogPostPage() {
       author: {
         '@type': 'Organization',
         name: 'All Phase Construction USA',
-        url: 'https://allphaseusa.com'
+        url: 'https://allphaseconstructionfl.com'
       },
       publisher: {
         '@type': 'Organization',
         name: 'All Phase Construction USA',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://allphaseusa.com/allphase-logo-white.svg'
+          url: 'https://allphaseconstructionfl.com/allphase-logo-white.svg'
         }
       },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://allphaseusa.com/blog/${post.slug}`
+        '@id': `https://allphaseconstructionfl.com/blog/${post.slug}`
       },
       about: {
         '@type': 'Thing',
