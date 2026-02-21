@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-sitemap && npm run generate-html-sitemap && vite build && npm run prerender",
+    "build": "npm run optimize-images && npm run generate-sitemap && npm run generate-html-sitemap && vite build && npm run prerender",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "sync-blog": "node sync-blog-posts.js",
+    "optimize-images": "node scripts/optimize-images.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "generate-html-sitemap": "node scripts/generate-html-sitemap.mjs",
     "generate-static-cities": "node scripts/generate-static-city-pages.mjs",
