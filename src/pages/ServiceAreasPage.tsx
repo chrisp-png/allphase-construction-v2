@@ -36,18 +36,17 @@ export default function ServiceAreasPage() {
       !entry.path.includes('/top-5-roofer')
   );
 
-      const browardCitiesFromSitemap = sheetSitemap
+        const browardCities = sheetSitemap
     .filter((entry) =>
       entry.section === 'Broward County Cities' &&
       entry.indexable === true &&
       !entry.path.includes('/top-5-roofer')
     )
-    .map((entry) => ({ name: entry.label, path: entry.path }));
-
-  const deerfieldEntry = { name: 'Deerfield Beach', path: '/locations/deerfield-beach/' };
-
-  const browardCities = [...browardCitiesFromSitemap, deerfieldEntry]
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => a.label.localeCompare(b.label))
+    .map((entry) => ({
+      name: entry.label,
+      path: entry.path,
+    }));
 
   const palmBeachCities = sheetSitemap
     .filter((entry) =>
@@ -199,17 +198,19 @@ export default function ServiceAreasPage() {
                 All of Broward County falls within Florida's High Velocity Hurricane Zone (HVHZ), requiring stricter building codes and specialized installation methods. We're fully equipped for HVHZ compliance.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-              {browardCities.map((city) => (
-                <Link
-                  key={city.name}
-                  to={city.path}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 flex items-center justify-between group"
-                >
-                  <span>{city.name}</span>
-                  <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-red-600 group-hover:translate-x-1 transition-all" />
-                </Link>
-              ))}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              {[...browardCities, { name: 'Deerfield Beach', path: '/locations/deerfield-beach/' }]
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((city) => (
+                  <Link
+                    key={city.name}
+                    to={city.path}
+                    className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 flex items-center justify-between group"
+                  >
+                    <span>{city.name}</span>
+                    <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-red-600 group-hover:translate-x-1 transition-all" />
+                  </Link>
+                ))}
             </div>
           </div>
 
