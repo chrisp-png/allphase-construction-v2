@@ -287,7 +287,7 @@ export default function BoyntonBeachMoneyPage() {
                   <h3 className="text-2xl font-bold">Roof Replacement</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed mb-4">
-                  Complete roof replacement for {cityName} residential and commercial properties begins with a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">thorough inspection</Link> of your existing roof. After the inspection, a detailed plan is developed to replace your old roof, taking into account the specific needs of your property and ensuring compliance with HVHZ standards. The existing roofing material is carefully removed and disposed of, and the roof deck is inspected for damage before installation of the new roofing system. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. A final inspection ensures your roof is watertight and meets all safety and quality standards. The cost to have your roof replaced varies depending on the size and complexity of the job.
+                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400">roof replacement</Link> for {cityName} residential and commercial properties begins with a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">thorough inspection</Link> of your existing roof. After the inspection, a detailed plan is developed to replace your old roof, taking into account the specific needs of your property and ensuring compliance with HVHZ standards. The existing roofing material is carefully removed and disposed of, and the roof deck is inspected for damage before installation of the new roofing system. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. A final inspection ensures your roof is watertight and meets all safety and quality standards. The cost to have your roof replaced varies depending on the size and complexity of the job.
                 </p>
               </div>
 
@@ -298,7 +298,7 @@ export default function BoyntonBeachMoneyPage() {
                   <h3 className="text-2xl font-bold">Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed mb-4">
-                  Our experienced roofers in {cityName} are available 24/7 to get your roof fixed quickly, providing same-day response for active leaks, storm damage, missing shingles, and emergency tarping. Prompt repair of any roof leak is essential to prevent further deterioration and significant damage, including mold growth and structural issues. Delaying roof repairs can lead to more severe problems such as structural damage and health risks. Contact us immediately when noticing any roof damage.
+                  Our experienced roofers in {cityName} are available 24/7 to get your roof fixed quickly, providing same-day response for active leaks, storm damage, missing shingles, and <Link to="/roof-repair/boynton-beach" className="text-red-500 hover:text-red-400">emergency tarping</Link>. Prompt repair of any roof leak is essential to prevent further deterioration and significant damage, including mold growth and structural issues. Delaying roof repairs can lead to more severe problems such as structural damage and health risks. Contact us immediately when noticing any roof damage.
                 </p>
               </div>
 
@@ -309,7 +309,7 @@ export default function BoyntonBeachMoneyPage() {
                   <h3 className="text-2xl font-bold">Professional Inspections</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed mb-4">
-                  Comprehensive 21-point roof inspections for {cityName} properties help maintain your roof's condition and prevent damage by identifying issues early. Regular roof inspections are critical to assess and address problems before they escalate, saving you money by extending your roof's lifespan and preventing costly repairs. Insurance documentation, pre-purchase evaluations, and maintenance assessments are included. Schedule your <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">free inspection</Link> today.
+                  Comprehensive 21-point roof inspections for {cityName} properties help maintain your roof's condition and prevent damage by identifying issues early. Regular roof inspections are critical to assess and address problems before they escalate, saving you money by extending your roof's lifespan and preventing costly repairs. Insurance documentation, pre-purchase evaluations, and maintenance assessments are included. Schedule your <Link to="/roof-inspection/boynton-beach" className="text-red-500 hover:text-red-400 underline">free inspection</Link> today.
                 </p>
               </div>
 
