@@ -193,16 +193,15 @@ export default function ServiceAreasPage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 Broward County Service Areas
               </h2>
+                      <div className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-start gap-3">
+                                  <span className="text-red-500 text-xl mt-0.5">📍</span>
+                                  <p className="text-zinc-300 text-sm">
+                                                <Link to="/locations/deerfield-beach/" className="text-red-500 font-semibold hover:text-red-400 transition-colors">Deerfield Beach</Link>
+                                                {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info. The grid below covers all other Broward County service areas.
+                                              </p>
+                                </div>
               <p className="text-zinc-400 max-w-4xl">
                 All of Broward County falls within Florida's High Velocity Hurricane Zone (HVHZ), requiring stricter building codes and specialized installation methods. We're fully equipped for HVHZ compliance.
-              </p>
-            </div>
-                                    <div className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-start gap-3">
-              <span className="text-red-500 text-xl mt-0.5">📍</span>
-              <p className="text-zinc-300 text-sm">
-                <Link to="/locations/deerfield-beach/" className="text-red-500 font-semibold hover:text-red-400 transition-colors">Deerfield Beach</Link>
-                {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info.
-                The grid below covers all other Broward County service areas.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
