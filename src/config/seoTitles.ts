@@ -116,6 +116,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Commercial and residential flat roofing in South Florida. TPO, EPDM, modified bitumen, and built-up roofing systems.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
+    '/roof-repair': {
+    title: 'Roof Repair Services | Broward & Palm Beach Counties',
+    description: 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.',
+    canonical: 'https://allphaseconstructionfl.com/roof-repair'
+  },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase Construction USA',
     description: 'Expert guide on hiring a roofing contractor in South Florida. Learn what to look for, questions to ask, and how to avoid scams.',
