@@ -35,17 +35,20 @@ export default function ServiceAreasPage() {
       !entry.path.includes('/top-5-roofer')
   );
 
-  const browardCities = sheetSitemap
-    .filter((entry) =>
-      entry.section === 'Broward County Cities' &&
-      entry.indexable === true &&
-      !entry.path.includes('/top-5-roofer')
-    )
-    .sort((a, b) => a.label.localeCompare(b.label))
-    .map((entry) => ({
-      name: entry.label,
-      path: entry.path,
-    }));
+    const browardCities = [
+    ...sheetSitemap
+      .filter((entry) =>
+        entry.section === 'Broward County Cities' &&
+        entry.indexable === true &&
+        !entry.path.includes('/top-5-roofer')
+      )
+      .sort((a, b) => a.label.localeCompare(b.label))
+      .map((entry) => ({
+        name: entry.label,
+        path: entry.path,
+      })),
+    { name: 'Deerfield Beach', path: '/locations/deerfield-beach/' },
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   const palmBeachCities = sheetSitemap
     .filter((entry) =>
