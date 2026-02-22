@@ -1,4 +1,3 @@
-/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt  /a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt  200
 # ======================================================================
 # HOST CANONICALIZATION - www -> non-www, http -> https
 # These MUST be first. Processed before all other rules.
