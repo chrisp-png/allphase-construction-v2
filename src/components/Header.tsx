@@ -274,35 +274,30 @@ export default function Header() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="relative group/item">
-                  <Link
-                    to="/locations/deerfield-beach/"
-                    className="flex items-center justify-between px-4 py-3 text-white hover:bg-red-600 transition-colors cursor-pointer first:rounded-t-lg last:rounded-b-lg"
-                  >
-                    <span>Deerfield Beach</span>
-                    <ChevronRight className="w-4 h-4" />
-                  </Link>
-                  <div className="absolute left-full top-0 ml-1 w-56 bg-black border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-200">
-                    <Link
-                      to="/locations/service-areas/"
-                      className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg"
-                    >
-                      Service Areas
-                    </Link>
-                    <Link
-                      to="/how-to-hire-roofing-contractor/"
-                      className="block px-4 py-3 text-white hover:bg-red-600 transition-colors"
-                    >
-                      How to Hire a Roofer
-                    </Link>
-                    <Link
-                      to="/locations/deerfield-beach/best-roofers-deerfield-beach/"
-                      className="block px-4 py-3 text-white hover:bg-red-600 transition-colors last:rounded-b-lg"
-                    >
-                      Best Roofers in Deerfield Beach
-                    </Link>
-                  </div>
-                </div>
+                <Link
+              to="/locations/deerfield-beach/"
+              className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
+            >
+              Deerfield Beach
+            </Link>
+            <Link
+              to="/locations/service-areas/"
+              className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
+            >
+              Service Areas
+            </Link>
+            <Link
+              to="/how-to-hire-roofing-contractor/"
+              className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
+            >
+              How to Hire a Roofer
+            </Link>
+            <Link
+              to="/locations/deerfield-beach/best-roofers-deerfield-beach/"
+              className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
+            >
+              Best Roofers in Deerfield Beach
+            </Link>
               </div>
             </div>
 
