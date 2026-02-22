@@ -39,18 +39,7 @@ export default function RoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Repair Services | Broward & Palm Beach Counties';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.';
-      document.head.appendChild(meta);
-    }
-
+    
     // Service Schema
     const serviceSchema = {
       "@context": "https://schema.org",
@@ -58,7 +47,7 @@ export default function RoofRepairPage() {
       "name": "Roof Repair & Restoration Services",
       "serviceType": "Roof Repair",
       "description": "Roof repair and restoration services in Broward and Palm Beach Counties. Comprehensive inspections, full-system restoration, and certification letters for insurance compliance.",
-      "url": "https://allphaseconstructionfl.com/roof-repair",
+      "url": "https://allphaseconstructionfl.com/roof-repair/",
       "provider": {
         "@id": "https://allphaseconstructionfl.com/#business"
       },
