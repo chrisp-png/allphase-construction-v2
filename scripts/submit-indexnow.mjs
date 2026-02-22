@@ -1,4 +1,4 @@
-const key = 'a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4';
+const key = '1864f0fe7c93447e946f774adbe8e54a';
 const host = 'allphaseconstructionfl.com';
 const sitemapUrl = `https://${host}/sitemap.xml`;
 
