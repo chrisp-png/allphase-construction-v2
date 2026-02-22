@@ -67,17 +67,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
-    title: 'Residential Roofing Services | All Phase Construction USA',
+    title: 'Residential Roofing Deerfield Beach | Licensed Contractor | All Phase Construction USA',
     description: 'Expert residential roofing in Broward & Palm Beach Counties. Tile, shingle, metal, and flat roofing for homes. Licensed, insured, HVHZ certified.',
     canonical: 'https://allphaseconstructionfl.com/residential-roofing'
   },
   '/commercial-roofing': {
-    title: 'Commercial Roofing Services | All Phase Construction USA',
+    title: 'Commercial Roofing Deerfield Beach | Licensed Contractor | All Phase Construction USA',
     description: 'Professional commercial roofing contractor in South Florida. Flat roofs, TPO, modified bitumen, and metal roofing systems for businesses.',
     canonical: 'https://allphaseconstructionfl.com/commercial-roofing'
   },
   '/roof-inspection': {
-    title: 'Professional Roof Inspection Services | All Phase Construction USA',
+    title: 'Roof Inspection Deerfield Beach | 21-Point Professional Assessment | All Phase Construction USA',
     description: 'Comprehensive roof inspections in South Florida. Insurance documentation, storm damage assessment, and pre-purchase inspections by licensed professionals.',
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
@@ -87,7 +87,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
-    title: 'Roof Replacement South Florida | Licensed Contractor | All Phase',
+    title: 'Roof Replacement Deerfield Beach | Licensed Contractor | All Phase Construction USA',
     description: 'Roof replacement in Broward & Palm Beach County. Licensed CCC/CGC contractor. HVHZ-compliant installation. Call (754) 227-5605 for free estimate.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement'
   },
@@ -97,22 +97,22 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-maintenance-programs'
   },
   '/tile-roofing': {
-    title: 'Tile Roofing Installation & Repair | All Phase Construction USA',
+    title: 'Tile Roof Repair & Replacement Deerfield Beach | All Phase Construction USA',
     description: 'Expert tile roofing services in South Florida. Concrete and clay tile installation, repair, and maintenance. HVHZ compliant workmanship.',
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
-    title: 'Metal Roofing Installation & Repair | All Phase Construction USA',
+    title: 'Metal Roof Installation Deerfield Beach | Repair & Replacement | All Phase Construction USA',
     description: 'Standing seam and metal roofing systems in South Florida. Energy-efficient, hurricane-resistant metal roofs with superior longevity.',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
-    title: 'Shingle Roofing Installation & Repair | All Phase Construction USA',
+    title: 'Shingle Roof Repair & Replacement Deerfield Beach | All Phase Construction USA',
     description: 'Asphalt shingle roofing services in Broward & Palm Beach Counties. Architectural shingles, 3-tab shingles, and impact-resistant options.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
-    title: 'Flat Roofing Services | All Phase Construction USA',
+    title: 'Flat & Low Slope Roofing Deerfield Beach | TPO/PVC | All Phase Construction USA',
     description: 'Commercial and residential flat roofing in South Florida. TPO, EPDM, modified bitumen, and built-up roofing systems.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
@@ -120,6 +120,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'Roof Repair Services | Broward & Palm Beach Counties',
     description: 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
+  },
+    '/roofing-services': {
+    title: 'Roofing Services Deerfield Beach | Residential & Commercial | All Phase Construction USA',
+    description: 'Full-service roofing contractor in Deerfield Beach. Residential and commercial roofing, repair, replacement, and maintenance. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase Construction USA',
