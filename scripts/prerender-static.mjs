@@ -1724,3 +1724,8 @@ console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTM
 
 // Run the generator
 generateStaticFiles();
+
+// Copy IndexNow key file to dist
+import { copyFileSync } from 'fs';
+copyFileSync('public/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt', 'dist/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt');
+console.log('IndexNow key file copied to dist');
