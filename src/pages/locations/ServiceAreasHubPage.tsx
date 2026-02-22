@@ -11,7 +11,7 @@
 
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 
 export default function ServiceAreasHubPage() {
   useEffect(() => {
@@ -219,13 +219,19 @@ export default function ServiceAreasHubPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
               Broward County Service Areas
             </h2>
-                      <div className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-start gap-3">
-            <span className="text-red-500 text-xl mt-0.5">📍</span>
-            <p className="text-zinc-300 text-sm">
-              <Link to="/locations/deerfield-beach/" className="text-red-500 font-semibold hover:text-red-400 transition-colors">Deerfield Beach</Link>
-              {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info. The grid below covers all other Broward County service areas.
-            </p>
-          </div>
+                                <Link
+            to="/locations/deerfield-beach/"
+            className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-center justify-between group hover:bg-red-950/50 hover:border-red-600 transition-all duration-300 cursor-pointer"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-red-500 text-xl mt-0.5">📍</span>
+              <p className="text-zinc-300 text-sm">
+                <span className="text-red-500 font-semibold group-hover:text-red-400 transition-colors">Deerfield Beach</span>
+                {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info. The grid below covers all other Broward County service areas.
+              </p>
+            </div>
+            <ArrowRight className="w-5 h-5 text-red-500 group-hover:translate-x-1 transition-all ml-4 shrink-0" />
+          </Link>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {browardCountyAreas.map((area) => (
