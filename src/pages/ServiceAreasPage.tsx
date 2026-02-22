@@ -1,3 +1,4 @@
+// Service Areas Page
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, MapPin, Shield, CloudRain, Home, ArrowRight, Wrench, Building2 } from 'lucide-react';
