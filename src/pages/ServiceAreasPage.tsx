@@ -1,4 +1,3 @@
-// Service Areas Page
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, MapPin, Shield, CloudRain, Home, ArrowRight, Wrench, Building2 } from 'lucide-react';
@@ -198,19 +197,25 @@ export default function ServiceAreasPage() {
                 All of Broward County falls within Florida's High Velocity Hurricane Zone (HVHZ), requiring stricter building codes and specialized installation methods. We're fully equipped for HVHZ compliance.
               </p>
             </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-              {[...browardCities, { name: 'Deerfield Beach', path: '/locations/deerfield-beach/' }]
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((city) => (
-                  <Link
-                    key={city.name}
-                    to={city.path}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 flex items-center justify-between group"
-                  >
-                    <span>{city.name}</span>
-                    <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-red-600 group-hover:translate-x-1 transition-all" />
-                  </Link>
-                ))}
+                                    <div className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-start gap-3">
+              <span className="text-red-500 text-xl mt-0.5">📍</span>
+              <p className="text-zinc-300 text-sm">
+                <Link to="/locations/deerfield-beach/" className="text-red-500 font-semibold hover:text-red-400 transition-colors">Deerfield Beach</Link>
+                {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info.
+                The grid below covers all other Broward County service areas.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              {browardCities.map((city) => (
+                <Link
+                  key={city.name}
+                  to={city.path}
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 flex items-center justify-between group"
+                >
+                  <span>{city.name}</span>
+                  <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-red-600 group-hover:translate-x-1 transition-all" />
+                </Link>
+              ))}
             </div>
           </div>
 
