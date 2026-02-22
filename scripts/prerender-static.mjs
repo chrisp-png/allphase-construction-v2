@@ -1726,5 +1726,5 @@ console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTM
 generateStaticFiles();
 
 // Copy IndexNow key file to dist
-fs.copyFileSync('public/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt', 'dist/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4.txt');
+fs.copyFileSync('public/1864f0fe7c93447e946f774adbe8e54a.txt', 'dist/1864f0fe7c93447e946f774adbe8e54a.txt');
 console.log('IndexNow key file copied to dist');
