@@ -96,7 +96,7 @@ export default function BoyntonBeachMoneyPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/boynton-beach"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
                 >
                   <FileCheck className="w-6 h-6" />
@@ -145,7 +145,7 @@ export default function BoyntonBeachMoneyPage() {
                     This dual-license capability means we can address structural issues, handle complex repairs involving roof decking and trusses, and provide complete building envelope solutions. When other contractors must stop and call in structural specialists, we have the authority and expertise to handle everything in-house.
                   </p>
                   <p>
-                    Each roofing job is unique in scope, size, and complexity, and our dual license allows us to handle all aspects of the job efficiently and effectively. The cost of roof replacement can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
+                    Each roofing job is unique in scope, size, and complexity, and our dual license allows us to handle all aspects of the job efficiently and effectively. The cost of roof replacement can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
                   </p>
                 </div>
               </div>
@@ -339,7 +339,7 @@ export default function BoyntonBeachMoneyPage() {
               </p>
 
               <p>
-                When it's time for a roof replacement or repair, our team conducts a thorough <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">roof inspection</Link> to assess the condition of your existing roof. We provide a detailed estimate outlining the scope, cost, and timeline of your project. We use only premium roofing materials and proven installation techniques, ensuring your new roof delivers superior performance and longevity.
+                When it's time for a roof replacement or repair, our team conducts a thorough <Link to="/roof-inspection/boynton-beach" className="text-red-500 hover:text-red-400 underline">roof inspection</Link> to assess the condition of your existing roof. We provide a detailed estimate outlining the scope, cost, and timeline of your project. We use only premium roofing materials and proven installation techniques, ensuring your new roof delivers superior performance and longevity.
               </p>
 
               <p>
@@ -511,7 +511,7 @@ export default function BoyntonBeachMoneyPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/boynton-beach"
                   className="inline-flex items-center justify-center gap-2 bg-white text-red-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-100 transition-all"
                 >
                   <FileCheck className="w-6 h-6" />
