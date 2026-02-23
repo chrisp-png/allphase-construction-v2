@@ -279,7 +279,7 @@ export default function FortLauderdaleMoneyPage() {
               </p>
 
               <p>
-                All Phase Construction USA helps you navigate these choices, taking into account your budget, maintenance preferences, and the specific needs of your property. Whether you require a complete <Link to="/roof-replacement/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> or a minor repair, our roofing professionals guide you through the process, ensuring your new roof is the perfect fit for your home and lifestyle.
+                All Phase Construction USA helps you navigate these choices, taking into account your budget, maintenance preferences, and the specific needs of your property. Whether you require a complete <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> or a minor repair, our roofing professionals guide you through the process, ensuring your new roof is the perfect fit for your home and lifestyle.
               </p>
 
               <p>
@@ -303,7 +303,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Roof Replacement</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Complete roof replacement for {cityName} residential and commercial properties, including individual houses. All materials, all roof types, HVHZ compliant with manufacturer warranties. Our team is experienced in replacing flat roofs, which are more prone to leaks due to material degradation, especially because of their low pitch or flat design. View our detailed <Link to="/roof-replacement/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">10-step roof replacement process</Link>.
+                      Complete roof replacement for {cityName} residential and commercial properties, including individual houses. All materials, all roof types, HVHZ compliant with manufacturer warranties. Our team is experienced in replacing flat roofs, which are more prone to leaks due to material degradation, especially because of their low pitch or flat design. View our detailed <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">10-step roof replacement process</Link>.
                     </p>
                   </div>
                 </div>
