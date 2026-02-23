@@ -317,7 +317,7 @@ function AppContent() {
             <Route path="/locations" element={<Navigate to="/locations/deerfield-beach/" replace />} />
             <Route path="/locations/deerfield-beach" element={<DeerfieldBeachCityPage />} />
             <Route path="/locations/deerfield-beach/best-roofers-deerfield-beach" element={<BestRoofersDeerfieldBeachPage />} />
-            <Route path="/locations/boca-raton" element={<BocaRatonPage />} />
+            <Route path="/locations/boca-raton" element={<BocaRatonMoneyPage />} />
             <Route path="/locations/fort-lauderdale" element={<FortLauderdaleMoneyPage />} />
             <Route path="/locations/coral-springs" element={<CoralSpringsMoneyPage />} />
             <Route path="/locations/delray-beach" element={<DelrayBeachMoneyPage />} />
