@@ -239,7 +239,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                   </h4>
                   <p className="text-gray-700">
                     Complete {city.slug === 'boca-raton' ? (
-                      <Link to="/roof-replacement/boca-raton" className="text-red-600 hover:text-red-700 underline font-semibold">roof replacement</Link>
+                      <Link to="/roof-replacement" className="text-red-600 hover:text-red-700 underline font-semibold">roof replacement</Link>
                     ) : 'roof replacement'} for {city.name} residential and commercial properties. All materials, all roof types, HVHZ compliant with manufacturer warranties.
                   </p>
                 </div>
