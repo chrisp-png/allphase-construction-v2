@@ -252,7 +252,7 @@ export default function FortLauderdaleMoneyPage() {
               </p>
 
               <p>
-                All Phase Construction USA helps you navigate these choices, taking into account your budget, maintenance preferences, and the specific needs of your property. Whether you require a complete <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> or a minor repair, our roofing professionals guide you through the process, ensuring your new roof is the perfect fit for your home and lifestyle.
+                All Phase Construction USA helps you navigate these choices, taking into account your budget, maintenance preferences, and the specific needs of your property. Whether you require a complete <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> or a minor repair, our roofing professionals guide you through the process, ensuring your new roof is the perfect fit for your home and lifestyle.
               </p>
 
               <p>
@@ -276,7 +276,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Roof Replacement</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Complete roof replacement for {cityName} residential and commercial properties, including individual houses. All materials, all roof types, HVHZ compliant with manufacturer warranties. Our team is experienced in replacing flat roofs, which are more prone to leaks due to material degradation, especially because of their low pitch or flat design. View our detailed <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">10-step roof replacement process</Link>.
+                      Complete roof replacement for {cityName} residential and commercial properties, including individual houses. All materials, all roof types, HVHZ compliant with manufacturer warranties. Our team is experienced in replacing flat roofs, which are more prone to leaks due to material degradation, especially because of their low pitch or flat design. View our detailed <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">10-step roof replacement process</Link>.
                     </p>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Professional Inspections</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Comprehensive 21-point <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>. These inspections can also reveal other <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">signs of roof damage</Link> or installation problems that may not be immediately visible.
+                      Comprehensive 21-point <Link to="/roof-inspection/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>. These inspections can also reveal other <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">signs of roof damage</Link> or installation problems that may not be immediately visible.
                     </p>
                   </div>
                 </div>
