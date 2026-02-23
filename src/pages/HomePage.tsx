@@ -261,7 +261,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-red-600 rounded-full"></div>
-                  Roof Replacement
+                                  <a href="/roof-replacement" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">Roof Replacement</a>
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
                   Whether your roof is aging out or storm-damaged beyond repair, we manage complete tear-off and replacement to current Florida Building Code standards. In the proper order of the roof replacement process, contractors should perform a complete tear-off of the old roof to inspect for rotting decking before installing new materials. It is also essential to ask your roofing contractor for a detailed written estimate that includes itemized costs for labor, materials, permits, and disposal.
@@ -272,7 +272,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-red-600 rounded-full"></div>
-                  Roof Repair
+                                  <a href="/roof-repair" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">Roof Repair</a>
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
                   Leaks, missing shingles, cracked tiles, damaged flashing—we diagnose the issue and fix it right the first time so small problems don't become big ones.
@@ -297,7 +297,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 border border-gray-700/50 rounded-xl p-6 hover:border-red-600/50 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-red-600 rounded-full"></div>
-                  Roof Inspections & Maintenance
+                                  <a href="/roof-inspection" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">Roof Inspections & Maintenance</a>
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
                   Routine inspections catch problems early. To ensure you choose the right roofing contractor for inspections and maintenance, find and review at least three detailed, written bids to compare services and pricing. Requesting references from past clients can also help verify the contractor's professionalism and quality of work. Our preventative maintenance programs extend your roof's lifespan and protect your warranty.
@@ -498,7 +498,7 @@ export default function HomePage() {
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                For South <span className="text-blue-400 font-medium">Florida businesses</span>, a dependable <span className="text-blue-400 font-medium">roofing system</span> is more than just a necessity—it's a <span className="text-orange-400 font-medium">critical investment</span> in the <span className="text-orange-400 font-medium">safety and success</span> of your operations. Our company understands that every <span className="text-blue-400 font-medium">commercial building</span> has <span className="text-blue-400 font-medium">unique requirements</span>, from the <span className="text-blue-400 font-medium">type of materials</span> used to the level of <span className="text-orange-400 font-medium">energy efficiency</span> needed to keep costs down and performance high. That's why we offer a full suite of <span className="text-orange-400 font-medium">commercial roofing</span> solutions, <span className="text-blue-400 font-medium">including</span> expert installation, timely repairs, and <span className="text-blue-400 font-medium">complete roof replacements</span>, all <span className="text-orange-400 font-medium">tailored</span> to meet the <span className="text-blue-400 font-medium">specific needs</span> of your business.
+                For South <span className="text-blue-400 font-medium">Florida businesses</span>, a dependable <span className="text-blue-400 font-medium">roofing system</span> is more than just a necessity—it's a <span className="text-orange-400 font-medium">critical investment</span> in the <span className="text-orange-400 font-medium">safety and success</span> of your operations. Our company understands that every <span className="text-blue-400 font-medium">commercial building</span> has <span className="text-blue-400 font-medium">unique requirements</span>, from the <span className="text-blue-400 font-medium">type of materials</span> used to the level of <span className="text-orange-400 font-medium">energy efficiency</span> needed to keep costs down and performance high. That's why we offer a full suite of <a href="/commercial-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">commercial roofing</a> solutions, <span className="text-blue-400 font-medium">including</span> expert installation, timely repairs, and <span className="text-blue-400 font-medium">complete roof replacements</span>, all <span className="text-orange-400 font-medium">tailored</span> to meet the <span className="text-blue-400 font-medium">specific needs</span> of your business.
               </p>
 
               <p>
