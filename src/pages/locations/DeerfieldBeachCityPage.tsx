@@ -62,7 +62,7 @@ export default function DeerfieldBeachCityPage() {
   const faqItems = [
     {
       question: 'How do I know if I need roof repair or a full roof replacement?',
-      answer: 'Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A <Link to="/roof-inspection" className="underline hover:text-white">professional roof inspection</Link> by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.'
+      answer: 'Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">professional roof inspection</Link> by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.'
     },
     {
       question: 'What factors affect the cost of a roofing project in Deerfield Beach?',
@@ -82,7 +82,7 @@ export default function DeerfieldBeachCityPage() {
     },
     {
       question: 'How often should I schedule a roof inspection?',
-      answer: 'It\'s recommended to have your <Link to="/roof-inspection" className="underline hover:text-white">roof inspected</Link> at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.'
+      answer: 'It\'s recommended to have your <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">roof inspected</Link> at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.'
     },
     {
       question: 'What is underlayment, and why is it important?',
@@ -325,14 +325,14 @@ export default function DeerfieldBeachCityPage() {
           {/* Service Pills Row */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             <Link
-              to="/roof-inspection"
+              to="/roof-inspection/deerfield-beach"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <FileCheck className="w-4 h-4" />
               Roof Inspections
             </Link>
             <Link
-              to="/roof-repair"
+              to="/roof-repair/deerfield-beach"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700/70 border border-gray-600/50 hover:border-red-600/50 rounded-full text-white font-medium transition-all duration-300 hover:shadow-lg"
             >
               <CheckCircle className="w-4 h-4" />
@@ -393,7 +393,7 @@ export default function DeerfieldBeachCityPage() {
             </h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                All Phase Construction USA provides <Link to="/roof-inspection" className="underline hover:text-white">roof inspections</Link>, <Link to="/roof-repair" className="underline hover:text-white">roof repair</Link>, and <Link to="/roof-replacement-process" className="underline hover:text-white">roof replacement</Link> services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. Every roofing system is evaluated for storm damage, structural integrity, and wind mitigation eligibility before recommendations are made. Every project begins with a thorough <Link to="/roof-inspection" className="underline hover:text-white">roof inspection</Link> to determine the most cost-effective and code-compliant solution.
+                All Phase Construction USA provides <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">roof inspections</Link>, <Link to="/roof-repair/deerfield-beach" className="underline hover:text-white">roof repair</Link>, and <Link to="/roof-replacement-process" className="underline hover:text-white">roof replacement</Link> services in Deerfield Beach designed to meet High Velocity Hurricane Zone (HVHZ) standards. Every roofing system is evaluated for storm damage, structural integrity, and wind mitigation eligibility before recommendations are made. Every project begins with a thorough <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">roof inspection</Link> to determine the most cost-effective and code-compliant solution.
               </p>
               <p className="text-gray-400 text-lg leading-relaxed mb-4">
                 We install and service <Link to="/shingle-roofing" className="underline hover:text-white">shingle roofs</Link>, <Link to="/tile-roofing" className="underline hover:text-white">tile roofs</Link>, <Link to="/metal-roofing" className="underline hover:text-white">metal roofs</Link>, and <Link to="/flat-roofing" className="underline hover:text-white">flat roofing systems</Link> throughout 33441 and 33442. Each installation is completed with hurricane-resistant fasteners, secondary water barriers, and inspection-ready documentation.
@@ -651,7 +651,7 @@ export default function DeerfieldBeachCityPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                to="/roof-inspection"
+                to="/roof-inspection/deerfield-beach"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
                 Schedule My Roof Inspection
@@ -729,7 +729,7 @@ export default function DeerfieldBeachCityPage() {
 
             <p className="text-center text-gray-400">
               Not sure which roofing system is right for your property?{' '}
-              <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 font-semibold">
+              <Link to="/roof-inspection/deerfield-beach" className="text-red-600 hover:text-red-500 font-semibold">
                 Schedule a professional roof inspection
               </Link>
               .
@@ -742,7 +742,7 @@ export default function DeerfieldBeachCityPage() {
               Importance of Regular Roof Maintenance
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Regular roof maintenance is the key to preventing costly problems and extending the life of your roof. Scheduling a <Link to="/roof-inspection" className="underline hover:text-white">professional roof inspection</Link> allows a contractor to perform a detailed assessment, identifying any issues before they escalate. With a tailored <Link to="/roof-maintenance-programs" className="underline hover:text-white">maintenance plan</Link>, you can ensure your roof remains in top condition year after year. Proactive inspections and timely repairs help protect your investment, prevent leaks, and avoid unexpected expenses. Don't overlook the importance of routine care—have a qualified contractor provide regular inspections and maintenance to keep your roof performing at its best and your home protected.
+              Regular roof maintenance is the key to preventing costly problems and extending the life of your roof. Scheduling a <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">professional roof inspection</Link> allows a contractor to perform a detailed assessment, identifying any issues before they escalate. With a tailored <Link to="/roof-maintenance-programs" className="underline hover:text-white">maintenance plan</Link>, you can ensure your roof remains in top condition year after year. Proactive inspections and timely repairs help protect your investment, prevent leaks, and avoid unexpected expenses. Don't overlook the importance of routine care—have a qualified contractor provide regular inspections and maintenance to keep your roof performing at its best and your home protected.
             </p>
           </div>
 
