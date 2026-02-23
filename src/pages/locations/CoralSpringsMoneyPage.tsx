@@ -92,7 +92,7 @@ export default function CoralSpringsMoneyPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/coral-springs"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
                 >
                   <FileCheck className="w-6 h-6" />
@@ -132,7 +132,7 @@ export default function CoralSpringsMoneyPage() {
               </p>
 
               <p>
-                Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
+                Use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
               </p>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function CoralSpringsMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Roof Replacement</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Complete <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> for {cityName} residential and commercial properties. All materials, all roof types, HVHZ compliant with manufacturer warranties. From <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile</Link> and <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle</Link> to <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal</Link> and <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link> systems, we deliver quality installations backed by comprehensive warranties.
+                      Complete <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> for {cityName} residential and commercial properties. All materials, all roof types, HVHZ compliant with manufacturer warranties. From <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile</Link> and <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle</Link> to <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal</Link> and <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link> systems, we deliver quality installations backed by comprehensive warranties.
                     </p>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ export default function CoralSpringsMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Professional Inspections</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Comprehensive 21-point <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>. Regular inspections save money by catching small issues before they become expensive problems.
+                      Comprehensive 21-point <Link to="/roof-inspection/coral-springs" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>. Regular inspections save money by catching small issues before they become expensive problems.
                     </p>
                   </div>
                 </div>
