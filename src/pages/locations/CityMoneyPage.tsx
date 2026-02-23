@@ -114,14 +114,14 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           {/* High-Visibility CTA Buttons - TWO REQUIRED BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Link
-              to="/roof-inspection/"
+              to={city.slug === 'boca-raton' ? '/roof-inspection/boca-raton' : '/roof-inspection/'}
               className="inline-flex items-center gap-2 bg-[#C5A572] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#B08D5B] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <FileCheck className="w-6 h-6" />
               Schedule 21-Point Inspection
             </Link>
             <Link
-              to="/roof-repair/"
+              to={city.slug === 'boca-raton' ? '/roof-repair/boca-raton' : '/roof-repair/'}
               className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <Phone className="w-6 h-6" />
@@ -194,6 +194,39 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                 Our established relationships with {city.county} building officials and our proven track record of first-pass inspection approvals mean your {city.name} roof replacement moves forward smoothly from permit application through final certificate of completion. Out-of-area contractors struggle with county-specific requirements, resulting in project delays of weeks or months. Our local expertise eliminates these costly delays.
               </p>
 
+              {/* Boca Raton Neighborhoods Section - Only shown for Boca Raton */}
+              {city.slug === 'boca-raton' && (
+                <>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Boca Raton Neighborhoods We Serve
+                  </h3>
+
+                  <p className="leading-relaxed">
+                    All Phase Construction USA works across the full spectrum of Boca Raton's residential communities — from historic 1920s neighborhoods to modern luxury estates — each with its own roofing demands, HOA requirements, and material standards.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    In Broken Sound Country Club, Boca Raton's largest private club community with 1,600 Mediterranean-style homes spread across 27 villages on 1,000 acres, we navigate strict architectural review board requirements for every roofing project. The community's mandatory HOA standards govern material selection, color approval, and installation methods — and our team is experienced in meeting those requirements while delivering fully HVHZ-compliant systems. The same applies to Boca West Country Club, one of the largest private clubs in the region with four golf courses and world-class amenities, and Woodfield Country Club, where family-focused luxury living comes with equally detailed HOA oversight.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Along Boca Raton's Intracoastal corridor, Royal Palm Yacht & Country Club and Golden Harbour represent the highest-value roofing projects we handle — waterfront estates with private docks and marina access where salt air corrosion, constant humidity, and direct coastal wind exposure demand corrosion-resistant fasteners, sealed roof decks, and materials rated for permanent marine-environment exposure. Royal Palm Polo estates and Fieldbrook Estates similarly require premium systems and materials that match the caliber of these properties.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Old Floresta Historic District is one of the most distinctive roofing environments in all of South Florida. Designed by legendary architect Addison Mizner in the early 1920s for his own executives, Old Floresta is specifically characterized by its original barrel tile roofs — the same Mediterranean Revival profile that defined Boca Raton's architectural identity. Restoring, replacing, or repairing these original barrel tile systems requires sourcing period-appropriate profiles, understanding Mizner-era underlayment construction, and bringing the roof to current Florida Building Code and HVHZ standards without compromising the historic character. Our CGC license gives us the structural authority to address the aging trusses and original roof-to-wall connections common in these 100-year-old structures.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    In central and west Boca communities — The Oaks at Boca Raton, New Floresta along the St. Andrews corridor, Millpond, and the newer Lotus and Lotus Palms communities — we serve a mix of 1980s-2000s construction that is entering its first or second full roof replacement cycle, often with flat roof systems, modified bitumen, and shingle systems that need to be upgraded to current HVHZ standards.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    As a proud member of the Greater Boca Raton Chamber of Commerce, All Phase Construction USA is a verified community business embedded in the Boca Raton area — not a contractor that shows up from out of town. When you hire us, you're hiring a company that has ongoing relationships and standing in the same community where your home is.
+                  </p>
+                </>
+              )}
+
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                 Comprehensive Roofing Services in {city.name}
               </h3>
@@ -205,7 +238,9 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                     Roof Replacement
                   </h4>
                   <p className="text-gray-700">
-                    Complete roof replacement for {city.name} residential and commercial properties. All materials, all roof types, HVHZ compliant with manufacturer warranties.
+                    Complete {city.slug === 'boca-raton' ? (
+                      <Link to="/roof-replacement" className="text-red-600 hover:text-red-700 underline font-semibold">roof replacement</Link>
+                    ) : 'roof replacement'} for {city.name} residential and commercial properties. All materials, all roof types, HVHZ compliant with manufacturer warranties.
                   </p>
                 </div>
 
@@ -215,7 +250,9 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                     Emergency Repairs
                   </h4>
                   <p className="text-gray-700">
-                    24/7 emergency roof repair service for {city.name}. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response.
+                    24/7 emergency {city.slug === 'boca-raton' ? (
+                      <Link to="/roof-repair/boca-raton" className="text-red-600 hover:text-red-700 underline font-semibold">roof repair</Link>
+                    ) : 'roof repair'} service for {city.name}. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response.
                   </p>
                 </div>
 
@@ -225,7 +262,9 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                     Professional Inspections
                   </h4>
                   <p className="text-gray-700">
-                    Comprehensive 21-point roof inspections for {city.name} properties. Insurance documentation, pre-purchase evaluations, and maintenance assessments.
+                    Comprehensive 21-point roof {city.slug === 'boca-raton' ? (
+                      <Link to="/roof-inspection/boca-raton" className="text-red-600 hover:text-red-700 underline font-semibold">inspections</Link>
+                    ) : 'inspections'} for {city.name} properties. Insurance documentation, pre-purchase evaluations, and maintenance assessments.
                   </p>
                 </div>
 
@@ -235,7 +274,9 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                     All Roof Types
                   </h4>
                   <p className="text-gray-700">
-                    Tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC). Expert installation and repair for all roofing systems in {city.name}.
+                    Tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC), and {city.slug === 'boca-raton' ? (
+                      <Link to="/commercial-roofing" className="text-red-600 hover:text-red-700 underline font-semibold">commercial roofing</Link>
+                    ) : 'commercial roofing'}. Expert installation and repair for all roofing systems in {city.name}.
                   </p>
                 </div>
               </div>
