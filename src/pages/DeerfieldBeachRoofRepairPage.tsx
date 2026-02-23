@@ -345,7 +345,7 @@ export default function DeerfieldBeachRoofRepairPage() {
                 </table>
               </div>
               <p className="text-zinc-400 mt-8 text-base">
-                Property owners can also explore the Deerfield Beach service area hub and use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost estimate tool</Link> for early planning. Financing options are available.
+                Property owners can also explore the <Link to="/locations/deerfield-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Deerfield Beach service area hub</Link> and use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
               </p>
             </div>
           </div>
