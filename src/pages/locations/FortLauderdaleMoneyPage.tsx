@@ -96,7 +96,7 @@ export default function FortLauderdaleMoneyPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/fort-lauderdale"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
                 >
                   <FileCheck className="w-6 h-6" />
@@ -279,7 +279,7 @@ export default function FortLauderdaleMoneyPage() {
               </p>
 
               <p>
-                All Phase Construction USA helps you navigate these choices, taking into account your budget, maintenance preferences, and the specific needs of your property. Whether you require a complete <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> or a minor repair, our roofing professionals guide you through the process, ensuring your new roof is the perfect fit for your home and lifestyle.
+                All Phase Construction USA helps you navigate these choices, taking into account your budget, maintenance preferences, and the specific needs of your property. Whether you require a complete <Link to="/roof-replacement/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> or a minor repair, our roofing professionals guide you through the process, ensuring your new roof is the perfect fit for your home and lifestyle.
               </p>
 
               <p>
@@ -303,7 +303,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Roof Replacement</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Complete roof replacement for {cityName} residential and commercial properties, including individual houses. All materials, all roof types, HVHZ compliant with manufacturer warranties. Our team is experienced in replacing flat roofs, which are more prone to leaks due to material degradation, especially because of their low pitch or flat design. View our detailed <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">10-step roof replacement process</Link>.
+                      Complete roof replacement for {cityName} residential and commercial properties, including individual houses. All materials, all roof types, HVHZ compliant with manufacturer warranties. Our team is experienced in replacing flat roofs, which are more prone to leaks due to material degradation, especially because of their low pitch or flat design. View our detailed <Link to="/roof-replacement/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">10-step roof replacement process</Link>.
                     </p>
                   </div>
                 </div>
@@ -380,7 +380,7 @@ export default function FortLauderdaleMoneyPage() {
               </p>
 
               <p>
-                Our roofing professionals begin with a thorough <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">inspection</Link> to pinpoint the source of any problem, then recommend the most effective solution — whether it's a quick repair, ongoing maintenance, or a complete replacement. With our commitment to quality and customer satisfaction, you can trust that your roof will be restored to optimal condition, protecting your home from water damage and the elements for years to come.
+                Our roofing professionals begin with a thorough <Link to="/roof-inspection/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">inspection</Link> to pinpoint the source of any problem, then recommend the most effective solution — whether it's a quick repair, ongoing maintenance, or a complete replacement. With our commitment to quality and customer satisfaction, you can trust that your roof will be restored to optimal condition, protecting your home from water damage and the elements for years to come.
               </p>
             </div>
           </div>
