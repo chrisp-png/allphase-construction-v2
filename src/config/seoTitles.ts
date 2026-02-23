@@ -156,6 +156,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Licensed roof repair in Pompano Beach, FL. Inspection-first diagnostics, HVHZ-compliant repairs, HOA documentation, and insurance coordination. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
   },
+    '/frequently-asked-questions': {
+    title: 'Roofing FAQ South Florida | HVHZ Roofing Questions Answered | All Phase Construction USA',
+    description: 'Answers to common roofing questions for South Florida homeowners — repair vs replacement, insurance, HVHZ requirements, materials, and costs. Licensed contractor. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/frequently-asked-questions'
+  },
   // ══════════════════════════════════════════════════════════════
   // ROOF INSPECTION CITY PAGES — /roof-inspection/:city
   // ══════════════════════════════════════════════════════════════
