@@ -636,7 +636,7 @@ export default function PompanoBeachMoneyPage() {
                 </div>
               </Link>
 
-              <Link to="/roof-replacement-process" className="group bg-zinc-900 border border-zinc-800 hover:border-red-600 rounded-xl p-8 transition-all">
+              <Link to="/roof-replacement/pompano-beach" className="group bg-zinc-900 border border-zinc-800 hover:border-red-600 rounded-xl p-8 transition-all">
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-red-600 transition-colors">
                   Roof Replacement Process
                 </h3>
