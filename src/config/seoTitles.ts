@@ -145,6 +145,69 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'Fort Lauderdale Roof Repair | HVHZ-Certified | All Phase Construction USA',
     description: 'Expert roof repair in Fort Lauderdale, FL. HVHZ-certified, fast response, licensed & insured. Tile, shingle, metal & flat roof repairs. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
+  },
+  // ══════════════════════════════════════════════════════════════
+  // ROOF INSPECTION CITY PAGES — /roof-inspection/:city
+  // ══════════════════════════════════════════════════════════════
+  '/roof-inspection/boca-raton': {
+    title: 'Boca Raton Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Boca Raton, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/boca-raton'
+  },
+  '/roof-inspection/deerfield-beach': {
+    title: 'Deerfield Beach Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Deerfield Beach, FL. Licensed Broward County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/deerfield-beach'
+  },
+  '/roof-inspection/fort-lauderdale': {
+    title: 'Fort Lauderdale Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Fort Lauderdale, FL. Licensed Broward County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/fort-lauderdale'
+  },
+  '/roof-inspection/west-palm-beach': {
+    title: 'West Palm Beach Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in West Palm Beach, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/west-palm-beach'
+  },
+  '/roof-inspection/delray-beach': {
+    title: 'Delray Beach Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Delray Beach, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/delray-beach'
+  },
+  '/roof-inspection/boynton-beach': {
+    title: 'Boynton Beach Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Boynton Beach, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/boynton-beach'
+  },
+  '/roof-inspection/palm-beach': {
+    title: 'Palm Beach Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Palm Beach, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/palm-beach'
+  },
+  '/roof-inspection/coconut-creek': {
+    title: 'Coconut Creek Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Coconut Creek, FL. Licensed Broward County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/coconut-creek'
+  },
+  '/roof-inspection/coral-springs': {
+    title: 'Coral Springs Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Coral Springs, FL. Licensed Broward County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/coral-springs'
+  },
+  '/roof-inspection/wellington': {
+    title: 'Wellington Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Wellington, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/wellington'
+  },
+  '/roof-inspection/pompano-beach': {
+    title: 'Pompano Beach Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Pompano Beach, FL. Licensed Broward County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/pompano-beach'
+  },
+  '/roof-inspection/lake-worth': {
+    title: 'Lake Worth Roof Inspection | Licensed & Insured | All Phase Construction USA',
+    description: 'Professional roof inspection in Lake Worth, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-inspection/lake-worth'
   }
 };
 
