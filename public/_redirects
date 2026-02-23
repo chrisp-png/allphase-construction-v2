@@ -115,6 +115,14 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /roof-inspection/boca-raton-county /roof-inspection 301!
 /roof-inspection/boynton-beach-county /roof-inspection 301!
 
+# Broken /roof-replacement/[city] URLs — these pages do not exist
+/roof-replacement/pompano-beach /roof-replacement 301!
+/roof-replacement/delray-beach /roof-replacement 301!
+/roof-replacement/fort-lauderdale /roof-replacement 301!
+/roof-replacement/deerfield-beach /roof-replacement 301!
+/roof-replacement/coral-springs /roof-replacement 301!
+/roof-replacement/coconut-creek /roof-replacement 301!
+
 # ======================================================================
 # SPA FALLBACK + STATIC FILES
 # Handled in netlify.toml [[redirects]] section.
