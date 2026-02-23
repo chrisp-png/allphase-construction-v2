@@ -234,6 +234,33 @@ export default function FortLauderdaleMoneyPage() {
           </div>
         </section>
 
+                {/* Fort Lauderdale Neighborhoods & Local Expertise */}
+        <section className="py-20 bg-[#27272a]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-start gap-4 mb-6">
+              <MapPin className="w-10 h-10 text-red-600 flex-shrink-0 mt-1" />
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Fort Lauderdale Neighborhoods & Local Expertise
+                </h2>
+              </div>
+            </div>
+            <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
+              <p>
+                All Phase Construction USA works across Fort Lauderdale's full range of residential and commercial properties — from historic waterfront estates to institutional facilities.
+              </p>
+              <p>
+                Along Fort Lauderdale's Intracoastal corridor, Harbor Beach and Seven Isles represent the highest-value roofing work we perform — exclusive gated communities with deep-water docks where salt air corrosion, constant coastal wind exposure, and storm surge risk demand corrosion-resistant fasteners, sealed roof decks, and premium marine-grade materials on every project. Rio Vista and Las Olas-area estates carry the same coastal exposure demands, paired with HOA architectural standards that govern material selection and color approval. Victoria Park, with its mix of craftsman-style homes and mid-century properties, regularly requires sourcing period-appropriate materials while bringing roof systems to current HVHZ code. Along the New River, River Oaks and Tarpon River properties represent Fort Lauderdale's established residential core — homes that are entering their first or second full replacement cycle and require full HVHZ compliance upgrades.
+              </p>
+              <p>
+                For historic properties, Fort Lauderdale's Stranahan House — built in 1901 and the oldest surviving structure in the city — represents the kind of century-old construction that demands both historic preservation sensitivity and full Florida Building Code compliance. Our CGC license gives us the structural authority to address original roof-to-wall connections, aging trusses, and non-standard decking that predate modern wind codes entirely.
+              </p>
+              <p>
+                Our commercial portfolio in Fort Lauderdale extends to some of the most demanding institutional projects in South Florida. Beyond the Fort Lauderdale Building Department facility and the Broward County nursing home, All Phase Construction USA completed <a href='/commercial-roofing' className='text-red-600 hover:text-red-500 underline transition-colors'>commercial roofing</a> work at Fort Lauderdale-Hollywood International Airport (FLL) — one of the most stringent contractor qualification processes in South Florida, requiring security clearance, specialized insurance, and full FAA facility compliance. Most roofing contractors cannot qualify for airport work. The combination of municipal, healthcare, airport, and residential projects across Fort Lauderdale demonstrates a depth of institutional trust that sets All Phase Construction USA apart from every competitor in the market.
+              </p>
+            </div>
+          </div>
+        </section>
         {/* Choosing the Right Roofing Material */}
         <section className="py-20 bg-[#27272a]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
