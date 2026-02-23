@@ -114,14 +114,14 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           {/* High-Visibility CTA Buttons - TWO REQUIRED BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Link
-              to={city.slug === 'boca-raton' ? '/roof-inspection/boca-raton' : '/roof-inspection/'}
+              to={`/roof-inspection/${city.slug}`}
               className="inline-flex items-center gap-2 bg-[#C5A572] text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#B08D5B] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <FileCheck className="w-6 h-6" />
               Schedule 21-Point Inspection
             </Link>
             <Link
-              to={city.slug === 'boca-raton' ? '/roof-repair/boca-raton' : '/roof-repair/'}
+              to={`/roof-repair/${city.slug}`}
               className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <Phone className="w-6 h-6" />
@@ -239,7 +239,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                   </h4>
                   <p className="text-gray-700">
                     Complete {city.slug === 'boca-raton' ? (
-                      <Link to="/roof-replacement" className="text-red-600 hover:text-red-700 underline font-semibold">roof replacement</Link>
+                      <Link to="/roof-replacement/boca-raton" className="text-red-600 hover:text-red-700 underline font-semibold">roof replacement</Link>
                     ) : 'roof replacement'} for {city.name} residential and commercial properties. All materials, all roof types, HVHZ compliant with manufacturer warranties.
                   </p>
                 </div>
