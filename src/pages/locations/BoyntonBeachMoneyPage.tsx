@@ -82,11 +82,15 @@ export default function BoyntonBeachMoneyPage() {
 
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  Dispatched from our Deerfield Beach HQ to provide rapid roofing services in {cityName}, All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority. As a leader in {cityName} roofing, we are local experts familiar with regional roofing styles, building codes, and laws. If you are searching for a roofer {cityName} residents trust for emergency services, inspections, repairs, and replacements, our team is ready to respond quickly and professionally. With extensive experience in the roofing industry, we have built a reputation as a reliable roofing contractor trusted by the {cityName} community. We hold both Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match. Roofing contractors in Florida must hold a Certified Roofing Contractor (CCC) or Registered Roofing Contractor license issued by the Florida Department of Business and Professional Regulation (DBPR). Our commitment to serving the local community and supporting neighborhood needs sets us apart.
+                  All Phase Construction USA is a proud member of the Greater Boca Raton Chamber of Commerce, serving both the Boca Raton and Boynton Beach business communities. Known as the "Gateway to the Gulfstream," Boynton Beach is the third largest city in Palm Beach County — a diverse coastal community of 80,000+ residents spanning waterfront estates along the Intracoastal Waterway, gated golf communities like Hunters Run and Aberdeen, historic neighborhoods like Heart of Boynton and Downtown Boynton, resort-style communities like Renaissance Commons, and active 55+ communities throughout the city. Every one of these property types sits squarely in Palm Beach County's High Velocity Hurricane Zone — and every one has unique roofing demands that require a contractor with genuine local expertise.
+                </p>
+
+                <p className="text-xl text-zinc-300 leading-relaxed mb-6">
+                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 and CGC-1526236) serving Boynton Beach from our Deerfield Beach headquarters. If you are searching for a roofing contractor Boynton Beach residents trust for emergency repairs, inspections, and replacements, our team is ready to respond same-day. We hold both a Florida Certified Roofing Contractor and Certified General Contractor license — providing structural expertise that standard roofing contractors cannot match.
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  When hiring a roofing contractor in {cityName}, it is essential to verify that the contractor is fully licensed, bonded, and insured. Homeowners may be held liable for on-site injuries if a roofing contractor is uninsured. Roofing contractors in Florida are required to maintain at least $100,000 public liability and $25,000 property damage coverage, plus workers' compensation insurance. Always verify proof of general liability and workers' compensation insurance to avoid liability for accidents. All Phase Construction USA exceeds these minimums and provides full documentation upon request.
+                  When hiring a roofing contractor in Boynton Beach, always verify full licensing, bonding, and insurance. Florida requires at least $100,000 public liability and $25,000 property damage coverage plus workers' compensation. All Phase Construction USA exceeds these minimums and provides full documentation upon request.
                 </p>
               </div>
 
@@ -215,49 +219,34 @@ export default function BoyntonBeachMoneyPage() {
           </div>
         </section>
 
-        {/* Local Expertise */}
+        {/* Boynton Beach Local Expertise */}
         <section className="py-20 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
                 <MapPin className="w-4 h-4" />
-                Local Knowledge
+                Boynton Beach Local Expertise
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Local Expertise in {cityName}
+                Deep Knowledge of Boynton Beach Properties
               </h2>
-              <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-                Serving {cityName} from our Deerfield Beach headquarters with intimate knowledge of {county} building codes, permit requirements, and regional roofing challenges.
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6 text-zinc-300 leading-relaxed">
+              <p>
+                We have completed roofing projects across Boynton Beach's full property spectrum. In the Heart of Boynton and Downtown Boynton neighborhoods, we work regularly with 1950s-1970s ranch homes and pastel stucco residences whose original roofing systems are well past their expected lifespan — many predating current HVHZ wind codes entirely. Along the Intracoastal Waterway, we install and replace premium tile and metal roofing systems on waterfront estates where salt air corrosion, wind-driven rain, and storm surge exposure are year-round realities. In HOA-governed golf communities like Hunters Run Country Club and Aberdeen, we navigate strict material and color approval requirements while delivering fully HVHZ-compliant systems.
               </p>
-            </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: 'Permit Expertise',
-                  description: 'Complete knowledge of Palm Beach County building department requirements, permit processing, and inspection protocols.'
-                },
-                {
-                  title: 'Code Compliance',
-                  description: 'Full compliance with Florida Building Code, HVHZ requirements, and local building regulations specific to Boynton Beach.'
-                },
-                {
-                  title: 'Regional Materials',
-                  description: 'Deep understanding of which roofing materials perform best in South Florida\'s coastal climate and salt air environment.'
-                }
-              ].map((item, index) => (
-                <div key={index} className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
-                  <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+              <p>
+                The Boynton Beach coastline — from Oceanfront Park at 6415 N Ocean Blvd to Ocean Inlet Park where the Intracoastal meets the Atlantic at the Boynton Inlet — creates a uniquely aggressive roofing environment. Salt air accelerates fastener corrosion, UV intensity degrades membrane systems faster than inland properties, and direct Atlantic exposure means wind loads exceed even standard South Florida requirements. We specify materials and fastening schedules that account for this specific coastal exposure on every Boynton Beach project.
+              </p>
 
-            <div className="mt-12 prose prose-invert max-w-none">
-              <p className="text-zinc-300 leading-relaxed text-center">
-                We have extensive experience managing all types of roofing work in {cityName}, including installation, repair, and maintenance for various roof types. Local regulations and building codes can significantly impact the roof replacement process and the materials used, so working with a knowledgeable roofing contractor is essential.
+              <p>
+                Boynton Beach's historic properties present additional challenges. The Boynton Woman's Club at 1010 Federal Hwy — a 1920s Mediterranean Revival building — and the Schoolhouse Children's Museum at 129 E Ocean Ave — housed in the original 1913 Boynton School — represent the kind of historic construction that requires sourcing period-appropriate materials while bringing the roof structure up to current Florida Building Code and HVHZ standards. Our CGC license gives us the structural authority to address aging trusses, non-standard decking, and original roof-to-wall connections that predate modern wind codes.
+              </p>
+
+              <p>
+                As a member of the Greater Boca Raton Chamber of Commerce serving both Boca Raton and Boynton Beach, All Phase Construction USA is a verified community business — not a distant contractor that disappears after the job. When you hire us, you're hiring a company invested in the same community you live in.
               </p>
             </div>
           </div>
@@ -287,7 +276,7 @@ export default function BoyntonBeachMoneyPage() {
                   <h3 className="text-2xl font-bold">Roof Replacement</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed mb-4">
-                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400">roof replacement</Link> for {cityName} residential and commercial properties begins with a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">thorough inspection</Link> of your existing roof. After the inspection, a detailed plan is developed to replace your old roof, taking into account the specific needs of your property and ensuring compliance with HVHZ standards. The existing roofing material is carefully removed and disposed of, and the roof deck is inspected for damage before installation of the new roofing system. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. A final inspection ensures your roof is watertight and meets all safety and quality standards. The cost to have your roof replaced varies depending on the size and complexity of the job.
+                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> for Boynton Beach residential and commercial properties begins with a thorough inspection of your existing roof. After the inspection, a detailed plan is developed to replace your old roof, taking into account the specific needs of your property and ensuring compliance with HVHZ standards. The existing roofing material is carefully removed and disposed of, and the roof deck is inspected for damage before installation of the new roofing system. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. A final inspection ensures your roof is watertight and meets all safety and quality standards. The cost to have your roof replaced varies depending on the size and complexity of the job.
                 </p>
               </div>
 
@@ -355,6 +344,21 @@ export default function BoyntonBeachMoneyPage() {
 
               <p>
                 In addition to replacement and repair, we offer emergency repairs, routine <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">maintenance</Link>, and gutter cleaning. Our goal is to help you avoid costly repairs and extend the lifespan of your roof, keeping your property safe year-round.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Chamber of Commerce Badge */}
+        <section className="py-12 bg-zinc-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-br from-zinc-950 to-zinc-900 border border-zinc-800 rounded-xl p-8 text-center">
+              <div className="inline-flex items-center justify-center gap-3 bg-red-600/10 text-red-500 px-6 py-4 rounded-lg text-lg font-bold border border-red-600/20">
+                <Award className="w-6 h-6" />
+                <span>Proud Member — Greater Boca Raton Chamber of Commerce</span>
+              </div>
+              <p className="text-zinc-400 mt-4 text-sm">
+                Serving Boca Raton & Boynton Beach
               </p>
             </div>
           </div>
