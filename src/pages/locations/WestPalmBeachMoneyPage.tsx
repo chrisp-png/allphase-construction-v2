@@ -92,7 +92,7 @@ export default function WestPalmBeachMoneyPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/west-palm-beach"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
                 >
                   <FileCheck className="w-6 h-6" />
@@ -132,7 +132,7 @@ export default function WestPalmBeachMoneyPage() {
               </p>
 
               <p>
-                Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size. Our roof replacement solutions are designed to last for decades, providing long-term durability and peace of mind.
+                Use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size. Our roof replacement solutions are designed to last for decades, providing long-term durability and peace of mind.
               </p>
             </div>
           </div>
