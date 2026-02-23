@@ -460,10 +460,7 @@ export default function DeerfieldBeachRoofRepairPage() {
         {/* Nearby Service Areas */}
         {nearbyCities.length > 0 && (
           <NearbyServiceAreas
-            cities={nearbyCities}
-            currentCity="Deerfield Beach"
-            serviceType="roof-repair"
-            serviceLabel="Roof Repair"
+            nearbyCities={nearbyCities} serviceType="roof-repair"
           />
         )}
       </div>
