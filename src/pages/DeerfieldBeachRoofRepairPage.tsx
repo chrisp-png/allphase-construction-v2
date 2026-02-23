@@ -112,6 +112,20 @@ export default function DeerfieldBeachRoofRepairPage() {
           </div>
         </section>
 
+        {/* Why Deerfield Beach Is Our Home City */}
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Why Deerfield Beach Is Our Home City
+              </h2>
+              <p className="text-zinc-300 text-lg leading-relaxed">
+                All Phase Construction USA is headquartered at 590 Goolsby Boulevard in Deerfield Beach — not a satellite office, not a regional outpost. This is where we operate from every day. From our 26,000 square foot facility, we dispatch crews, manage materials, coordinate permits with Broward County, and have done so since 2005. No roofing contractor in Deerfield Beach has deeper roots or longer accountability in this community than we do. We are proud members of the Broward County Chamber of Commerce, reinforcing our commitment to local business standards and community accountability. Our institutional project portfolio extends across Broward County — including commercial facilities, healthcare buildings, and municipal properties — all managed from our Deerfield Beach headquarters. When you hire All Phase Construction USA for roof repair in Deerfield Beach, you are hiring the contractor that has been your neighbor for over 20 years.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Common Deerfield Beach Repair Problems */}
         <section className="py-20 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
