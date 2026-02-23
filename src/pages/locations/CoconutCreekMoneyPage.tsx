@@ -92,7 +92,7 @@ export default function CoconutCreekMoneyPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
-                  to="/roof-inspection"
+                  to="/roof-inspection/coconut-creek"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
                 >
                   <FileCheck className="w-6 h-6" />
@@ -132,7 +132,7 @@ export default function CoconutCreekMoneyPage() {
               </p>
 
               <p>
-                Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
+                Use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function CoconutCreekMoneyPage() {
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
               <p>
-                As a leading roofing company serving {cityName}, FL, All Phase Construction USA delivers specialized <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial roof solutions</Link> tailored to the needs of local businesses. Our experienced professionals take pride in offering a full range of roofing services, from <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> and repairs to ongoing <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance</Link>, ensuring your business property is always protected. We specialize in <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofs</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>, and a variety of other commercial roof systems designed to withstand South Florida's demanding climate.
+                As a leading roofing company serving {cityName}, FL, All Phase Construction USA delivers specialized <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial roof solutions</Link> tailored to the needs of local businesses. Our experienced professionals take pride in offering a full range of roofing services, from <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> and repairs to ongoing <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance</Link>, ensuring your business property is always protected. We specialize in <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofs</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>, and a variety of other commercial roof systems designed to withstand South Florida's demanding climate.
               </p>
 
               <p>
@@ -236,7 +236,7 @@ export default function CoconutCreekMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Roof Replacement</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      We install new roofs and replace old or damaged roofing systems for {cityName} residential and commercial properties, offering full <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">replacement services</Link> for all roof types, including <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile</Link>, <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal</Link>, and <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link>. All materials, HVHZ compliant with manufacturer warranties.
+                      We install new roofs and replace old or damaged roofing systems for {cityName} residential and commercial properties, offering full <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">replacement services</Link> for all roof types, including <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile</Link>, <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal</Link>, and <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link>. All materials, HVHZ compliant with manufacturer warranties.
                     </p>
                   </div>
                 </div>
@@ -248,7 +248,7 @@ export default function CoconutCreekMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Emergency Repairs</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      24/7 emergency <Link to="/roof-repair" className="text-red-600 hover:text-red-500 underline transition-colors">roof repair</Link> service for {cityName}, responding quickly to any roof leak emergencies. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response. Our proximity to {cityName} — just 8 miles from our Deerfield Beach HQ — means faster emergency response than competitors across the county. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link>.
+                      24/7 emergency <Link to="/roof-repair/coconut-creek" className="text-red-600 hover:text-red-500 underline transition-colors">roof repair</Link> service for {cityName}, responding quickly to any roof leak emergencies. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response. Our proximity to {cityName} — just 8 miles from our Deerfield Beach HQ — means faster emergency response than competitors across the county. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link>.
                     </p>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ export default function CoconutCreekMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Professional Inspections</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Comprehensive 21-point <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Our inspections include a thorough assessment of roof vents to ensure proper ventilation and roof longevity. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>.
+                      Comprehensive 21-point <Link to="/roof-inspection/coconut-creek" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Our inspections include a thorough assessment of roof vents to ensure proper ventilation and roof longevity. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>.
                     </p>
                   </div>
                 </div>
@@ -290,7 +290,7 @@ export default function CoconutCreekMoneyPage() {
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
               <p>
-                At All Phase Construction USA, we recognize that a roofing project is a big job — one that requires careful planning, skilled execution, and constant communication. Our highly skilled team is dedicated to providing seamless project management for every roofing need in {cityName}, FL. From your initial free estimate to the final inspection, our experienced professionals keep you informed at every stage, ensuring you always know the status of your <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link>, <Link to="/roof-repair" className="text-red-600 hover:text-red-500 underline transition-colors">roof repairs</Link>, or new installations.
+                At All Phase Construction USA, we recognize that a roofing project is a big job — one that requires careful planning, skilled execution, and constant communication. Our highly skilled team is dedicated to providing seamless project management for every roofing need in {cityName}, FL. From your initial free estimate to the final inspection, our experienced professionals keep you informed at every stage, ensuring you always know the status of your <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link>, <Link to="/roof-repair/coconut-creek" className="text-red-600 hover:text-red-500 underline transition-colors">roof repairs</Link>, or new installations.
               </p>
 
               <p>
