@@ -86,7 +86,7 @@ export default function PompanoBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  All Phase Construction USA serves Pompano Beach with comprehensive residential and commercial roofing services. Licensed in both Broward and Palm Beach counties, we specialize in tile, shingle, metal, and flat roofing systems designed for South Florida's climate challenges. Pompano Beach roofs experience sustained exposure to coastal salt air, UV intensity, canal-adjacent humidity, and seasonal storm patterns that accelerate wear on all roof systems. We start every project with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak pathways, document moisture patterns, and determine whether targeted repairs or full replacement is appropriate under the Florida Building Code and HVHZ requirements.
+                  All Phase Construction USA serves Pompano Beach with comprehensive residential and <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial roofing</Link> services. Licensed in both Broward and Palm Beach counties, we specialize in tile, shingle, metal, and <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link> systems designed for South Florida's climate challenges. Pompano Beach roofs experience sustained exposure to coastal salt air, UV intensity, canal-adjacent humidity, and seasonal storm patterns that accelerate wear on all roof systems. We start every project with a <Link to="/roof-inspection/pompano-beach" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to identify leak pathways, document moisture patterns, and determine whether targeted repairs or full replacement is appropriate under the Florida Building Code and HVHZ requirements.
                 </p>
               </div>
 
@@ -117,7 +117,7 @@ export default function PompanoBeachRoofRepairPage() {
 
             <div className="text-lg text-zinc-300 leading-relaxed space-y-6 mb-10">
               <p>
-                The average cost to replace a roof is around $9,500, but it can range from $5,800 to $46,000 depending on several factors. The actual cost of roof replacement includes labor, materials, removal and disposal of old materials, permits, and your geographic location. Labor costs typically account for more than half of the total cost, and permits can range from $100 to $1,400 depending on the city. Removing and disposing of old roofing materials usually adds $0.40 to $2.00 per square foot to the price.
+                The average cost to replace a roof is around $9,500, but it can range from $5,800 to $46,000 depending on several factors. The actual cost of <Link to="/roof-replacement" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> includes labor, materials, removal and disposal of old materials, permits, and your geographic location. Labor costs typically account for more than half of the total cost, and permits can range from $100 to $1,400 depending on the city. Removing and disposing of old roofing materials usually adds $0.40 to $2.00 per square foot to the price.
               </p>
 
               <p>
@@ -203,7 +203,7 @@ export default function PompanoBeachRoofRepairPage() {
 
             <div className="text-lg text-zinc-300 leading-relaxed space-y-6">
               <p>
-                Addressing these issues promptly can help you avoid more extensive and expensive repairs. Regular <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">inspections by professional roofers</Link> can catch problems early, ensuring your roof remains in good condition and continues to protect your home.
+                Addressing these issues promptly can help you avoid more extensive and expensive repairs. Regular <Link to="/roof-inspection/pompano-beach" className="text-red-600 hover:text-red-500 underline transition-colors">inspections by professional roofers</Link> can catch problems early, ensuring your roof remains in good condition and continues to protect your home.
               </p>
 
               <p>
@@ -707,7 +707,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/roof-inspection/"
+                to="/roof-inspection/pompano-beach"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
