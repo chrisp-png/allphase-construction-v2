@@ -64,7 +64,7 @@ const APPROVED_REPAIR_CITIES = new Set([
 // ═══════════════════════════════════════════════════════════════════════════
 
 const EXCLUDED_PATTERNS = [
-  /\/roof-inspection\/[^/]+/,               // ALL /roof-inspection/{city} excluded
+  /\/roof-inspection\/(?!hollywood|davie|greenacres|miramar|pembroke-pines|plantation|sunrise)[^/]+/,               // ALL /roof-inspection/{city} excluded
   /\/tile-roof-inspection-/,
   /\/metal-roof-inspection-/,
   /\/flat-roof-inspection-/,
@@ -333,7 +333,7 @@ if (locationUrls.length !== expectedLocationCount) {
 }
 
 // CHECK 2: No /roof-inspection/{city}/ URLs (parent /roof-inspection/ is OK)
-const inspCityUrls = allUrls.filter(u => /\/roof-inspection\/[^/]+\/$/.test(u) && !u.endsWith('/roof-inspection/'));
+const inspCityUrls = allUrls.filter(u => /\/roof-inspection\/(?!hollywood|davie|greenacres|miramar|pembroke-pines|plantation|sunrise)[^/]+\/$/.test(u) && !u.endsWith('/roof-inspection/'));
 if (inspCityUrls.length > 0) {
   validationErrors.push(`FAIL: ${inspCityUrls.length} /roof-inspection/{city}/ URLs found:`);
   inspCityUrls.forEach(u => validationErrors.push(`  ${u}`));
