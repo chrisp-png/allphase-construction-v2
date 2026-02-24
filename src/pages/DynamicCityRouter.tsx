@@ -44,7 +44,6 @@ const WestPalmBeachRoofRepairPage = lazy(() => import('./WestPalmBeachRoofRepair
 const WiltonManorsRoofRepairPage = lazy(() => import('./WiltonManorsRoofRepairPage'));
 
 const RoofInspectionPage = lazy(() => import('./RoofInspectionPage'));
-const HollywoodRoofInspectionPage = lazy(() => import('./HollywoodRoofInspectionPage'));
 
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
@@ -97,7 +96,6 @@ const roofRepairPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elem
 };
 
 const roofInspectionPageMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
-  'hollywood': HollywoodRoofInspectionPage,
 };
 
 const PageLoadingFallback = () => (
