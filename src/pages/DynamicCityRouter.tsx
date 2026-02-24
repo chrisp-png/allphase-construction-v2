@@ -44,6 +44,7 @@ const WestPalmBeachRoofRepairPage = lazy(() => import('./WestPalmBeachRoofRepair
 const WiltonManorsRoofRepairPage = lazy(() => import('./WiltonManorsRoofRepairPage'));
 
 const RoofInspectionPage = lazy(() => import('./RoofInspectionPage'));
+const HollywoodRoofInspectionPage = lazy(() => import('./HollywoodRoofInspectionPage'));
 
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
@@ -95,6 +96,10 @@ const roofRepairPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elem
   'wilton-manors': WiltonManorsRoofRepairPage,
 };
 
+const roofInspectionPageMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
+  'hollywood': HollywoodRoofInspectionPage,
+};
+
 const PageLoadingFallback = () => (
   <div className="min-h-screen bg-[#09090b]" />
 );
@@ -141,9 +146,11 @@ export function DynamicRoofInspectionPage() {
     return <NotFoundPage />;
   }
 
+  const PageComponent = roofInspectionPageMap[normalizedCity] || GenericRoofInspectionTemplate;
+
   return (
     <Suspense fallback={<PageLoadingFallback />}>
-      <GenericRoofInspectionTemplate />
+      <PageComponent />
     </Suspense>
   );
 }
