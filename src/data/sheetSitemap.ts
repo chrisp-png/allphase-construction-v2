@@ -498,6 +498,15 @@ export const sheetSitemap: SitemapEntry[] = [
     priority: 0.8,
     changefreq: 'monthly',
   },
+    {
+    section: 'Roof Inspections',
+    label: 'Roof Inspection in Hollywood',
+    path: '/roof-inspection/hollywood/',
+    parent: '/roof-inspection/',
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
 
   // Locations
   {
