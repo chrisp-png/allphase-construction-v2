@@ -794,7 +794,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
   </div>
 
   <h2>Why ${cityName} Property Owners Choose Our Inspection Service</h2>
-  <p>All Phase Construction USA's ${cityName} roof inspections go beyond surface-level assessments. Our dual-licensed expertise (CCC & CGC) means we evaluate structural integrity, building code compliance, and long-term performance – not just shingle condition.</p>
+  <p>All Phase Construction USA's ${cityName} roof inspections go beyond surface-level assessments. Our dual-licensed expertise (CCC & CGC) means we evaluate <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">structural integrity, building code compliance</a>, and long-term performance – not just shingle condition.</p>
 
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>21-Point Comprehensive Assessment:</strong> We inspect every critical roof component from underlayment to ventilation systems.</li>
@@ -847,7 +847,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
   <h2>Common ${cityName} Roof Inspection Scenarios</h2>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Pre-Purchase Home Inspections</h3>
-  <p>Buying a ${cityName} property? Our roof inspection provides accurate remaining lifespan estimates, identifies required repairs, and establishes negotiation leverage. We deliver detailed reports within 24 hours to meet real estate closing timelines.</p>
+  <p>Buying a ${cityName} property? Our roof inspection provides accurate remaining lifespan estimates, identifies required repairs, and establishes negotiation leverage. We deliver detailed reports within 24 hours to meet <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">real estate closing timelines</a>.</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Insurance Documentation</h3>
   <p>Insurance companies require professional roof inspections for policy renewals and claim submissions. Our ${cityName} inspections include comprehensive photo documentation, moisture readings, and detailed condition reports that meet insurance adjuster requirements.</p>
@@ -856,7 +856,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
   <p>After severe weather events, our ${cityName} storm damage inspections identify all wind and hail damage including subtle underlayment compromise that untrained observers miss. We provide documentation that supports insurance claim submissions.</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Maintenance Planning</h3>
-  <p>Proactive maintenance extends roof lifespan and prevents expensive emergency repairs. Our annual ${cityName} inspection service identifies minor issues before they become major problems.</p>
+  <p>Proactive maintenance extends roof lifespan and prevents expensive emergency repairs. Our <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">annual ${cityName} inspection service</a> identifies minor issues before they become major problems.</p>
 
   <h2>What You Receive with Your ${cityName} Inspection</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
@@ -868,7 +868,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
   </ul>
 
   <h2>Serving ${cityName} from Our Deerfield Beach Headquarters</h2>
-  <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing professional roof inspection services throughout ${cityName} and surrounding Broward and Palm Beach County communities. Our central location enables same-day inspection availability and rapid report delivery.</p>
+  <p>All Phase Construction USA operates from <a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">590 Goolsby Blvd in Deerfield Beach</a>, providing professional roof inspection services throughout ${cityName} and surrounding Broward and Palm Beach County communities. Our central location enables same-day inspection availability and rapid report delivery.</p>
 
   <h2>Schedule Your Free ${cityName} Roof Inspection</h2>
   <p><strong>Call (754) 227-5605</strong> to schedule your professional 21-point roof inspection. We provide same-day availability, detailed photo documentation, and written reports within 24 hours for all ${cityName} properties.</p>
