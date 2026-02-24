@@ -69,6 +69,7 @@ export default function Header() {
         { name: 'Davie', path: '/roof-repair/davie/' },
         { name: 'Deerfield Beach', path: '/roof-repair/deerfield-beach/' },
         { name: 'Delray Beach', path: '/roof-repair/delray-beach/' },
+        { name: 'Fort Lauderdale', path: '/roof-repair/fort-lauderdale/' },
         { name: 'Greenacres', path: '/roof-repair/greenacres/' },
         { name: 'Hallandale Beach', path: '/roof-repair/hallandale-beach/' },
         { name: 'Haverhill', path: '/roof-repair/haverhill/' },
