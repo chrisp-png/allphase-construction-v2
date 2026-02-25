@@ -25,19 +25,19 @@ export default function DavieRoofInspectionPage() {
     },
     {
       question: 'What specific issues do you look for in South Florida roofs?',
-      answer: "We examine for storm damage from high winds and rain, UV degradation, humidity-related wear, granule loss, cracking tiles, corrosion on metal roofing, membrane damage on flat roofs, ventilation systems function, and water infiltration signs. South Florida's climate creates unique challenges we're trained to identify.",
+      answer: "We examine for storm damage from high winds and rain, UV degradation, humidity-related wear, granule loss, cracking tiles, corrosion on metal roofing, membrane damage on flat roofs, ventilation systems function, and water infiltration signs. South Florida\'s climate creates unique challenges we\'re trained to identify.",
     },
     {
       question: 'Will the inspection tell me if I need repair or full replacement?',
-      answer: "Yes. Your roof replacement depends on multiple factors including your roof's age, extent of damage, structural integrity, and cost effectiveness of repairs versus replacement. We provide clear recommendations so you can make an informed choice.",
+      answer: "Yes. Your roof replacement depends on multiple factors including your roof\'s age, extent of damage, structural integrity, and cost effectiveness of repairs versus replacement. We provide clear recommendations so you can make an informed choice.",
     },
     {
       question: 'Do you inspect tile, metal, and shingle roofs common in Davie?',
-      answer: "Absolutely. Our experienced roofers inspect all roofing materials found in Davie homes \u2014 asphalt shingles, tile roofing, metal roofing, and flat roofs on both residential and commercial properties. Each material requires specific inspection techniques we've mastered.",
+      answer: "Absolutely. Our experienced roofers inspect all roofing materials found in Davie homes \u2014 asphalt shingles, tile roofing, metal roofing, and flat roofs on both residential and commercial properties. Each material requires specific inspection techniques we\'ve mastered.",
     },
     {
       question: 'How long does a typical roof inspection take?',
-      answer: "Most thorough assessments take 45 minutes to 90 minutes, varying depending on roof size, complexity, and accessibility. We don't rush \u2014 finding minor issues now prevents costly repairs later.",
+      answer: "Most thorough assessments take 45 minutes to 90 minutes, varying depending on roof size, complexity, and accessibility. We don\'t rush \u2014 finding minor issues now prevents costly repairs later.",
     },
     {
       question: 'Can inspection reports help with insurance claims after storms?',
@@ -84,7 +84,7 @@ export default function DavieRoofInspectionPage() {
             Roof Inspection Davie FL — <span className="text-red-500">Know Before You Repair or Replace</span>
           </h1>
           <p className="text-xl text-zinc-300 mb-8 max-w-3xl">
-            Get the facts about your roof's condition before spending thousands on repairs or replacement you may not need.
+            Get the facts about your roof\'s condition before spending thousands on repairs or replacement you may not need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
@@ -101,13 +101,13 @@ export default function DavieRoofInspectionPage() {
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto space-y-5 text-lg text-zinc-300">
           <p>
-            That water stain on your ceiling has you worried. Water stains on your ceilings are a clear indication of a leaky roof. Maybe missing shingles after last month's storm have you searching for answers. Before you commit to expensive roof repairs or a full replacement, there's a smarter first step &mdash; a professional roof inspection in Davie, FL.
+            That water stain on your ceiling has you worried. Water stains on your ceilings are a clear indication of a leaky roof. Maybe missing shingles after last month\'s storm have you searching for answers. Before you commit to expensive roof repairs or a full replacement, there\'s a smarter first step &mdash; a professional roof inspection in Davie, FL.
           </p>
           <p>
-            Many homeowners in the Davie area face a frustrating dilemma &mdash; they know something's wrong with their roof, but they don't know whether they need minor repairs or an entire roof replacement. Without a thorough inspection, you're essentially guessing with your money. Some contractors push full replacements when targeted repairs would solve the problem. Others recommend quick fixes on a damaged roof that's beyond saving.
+            Many homeowners in the Davie area face a frustrating dilemma &mdash; they know something\'s wrong with their roof, but they don\'t know whether they need minor repairs or an entire roof replacement. Without a thorough inspection, you\'re essentially guessing with your money. Some contractors push full replacements when targeted repairs would solve the problem. Others recommend quick fixes on a damaged roof that\'s beyond saving.
           </p>
           <p>
-            A professional inspection eliminates this uncertainty. In South Florida's climate, where intense UV rays, humidity, hurricane season, and heavy rains constantly test your roofing materials, understanding your roof's true condition isn't optional &mdash; it's essential for making cost-effective decisions that protect both your home's interior and your wallet. The unique climate of Davie, Florida, requires roofing solutions that can withstand intense sun and heavy rainfall. Regular roof inspections can help maintain the value of your home &mdash; a well-maintained roof can last for decades, but neglecting regular inspections can significantly shorten its lifespan.
+            A professional inspection eliminates this uncertainty. In South Florida\'s climate, where intense UV rays, humidity, hurricane season, and heavy rains constantly test your roofing materials, understanding your roof\'s true condition isn\'t optional &mdash; it\'s essential for making cost-effective decisions that protect both your home\'s interior and your wallet. The unique climate of Davie, Florida, requires roofing solutions that can withstand intense sun and heavy rainfall. Regular roof inspections can help maintain the value of your home &mdash; a well-maintained roof can last for decades, but neglecting regular inspections can significantly shorten its lifespan.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function DavieRoofInspectionPage() {
               },
               {
                 title: 'Accurate Assessment of Repair vs. Replacement Needs',
-                body: "A roof inspector provides objective analysis of your roof's condition and specifically evaluates your roof's integrity. This assessment determines whether targeted roof repairs will restore your roof's integrity or if a full replacement is truly necessary.",
+                body: "A roof inspector provides objective analysis of your roof\'s condition and specifically evaluates your roof\'s integrity. This assessment determines whether targeted roof repairs will restore your roof\'s integrity or if a full replacement is truly necessary.",
               },
               {
                 title: 'Storm Damage Documentation for Insurance Claims',
@@ -132,7 +132,7 @@ export default function DavieRoofInspectionPage() {
               },
               {
                 title: 'South Florida Climate Expertise',
-                body: "Experienced roofers understand how South Florida's climate accelerates wear on tile roofing, metal roofing, shingle systems, and flat roofs differently than northern climates.",
+                body: "Experienced roofers understand how South Florida\'s climate accelerates wear on tile roofing, metal roofing, shingle systems, and flat roofs differently than northern climates.",
               },
               {
                 title: 'Free Inspection Eliminates Guesswork',
@@ -155,7 +155,7 @@ export default function DavieRoofInspectionPage() {
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-white">Repair vs. Replace Decision Guide</h2>
-          <p className="text-zinc-400 mb-8">Not sure whether you need a repair or a full replacement? Here's how we evaluate your situation:</p>
+          <p className="text-zinc-400 mb-8">Not sure whether you need a repair or a full replacement? Here\'s how we evaluate your situation:</p>
           <div className="overflow-x-auto rounded-lg border border-zinc-700">
             <table className="w-full text-sm">
               <thead>
@@ -202,7 +202,7 @@ export default function DavieRoofInspectionPage() {
               {
                 step: '02',
                 title: 'Comprehensive Interior Inspection and Structural Evaluation',
-                body: "The interior inspection reveals problems invisible from outside. We examine your attic space for water infiltration signs, proper ventilation, mold indicators, and structural integrity issues. Ceiling stains, active leaks, and moisture damage in your home's interior tell us what's happening beneath the surface.",
+                body: "The interior inspection reveals problems invisible from outside. We examine your attic space for water infiltration signs, proper ventilation, mold indicators, and structural integrity issues. Ceiling stains, active leaks, and moisture damage in your home\'s interior tell us what\'s happening beneath the surface.",
               },
               {
                 step: '03',
@@ -212,7 +212,7 @@ export default function DavieRoofInspectionPage() {
               {
                 step: '04',
                 title: 'Clear Explanation of Repair vs. Replacement Options',
-                body: "We sit down with you to explain findings honestly. You'll understand whether minor repairs will fix leaks and extend your roof's life, or if your roof's age and extensive damage make replacement the smarter investment. No pressure \u2014 just facts to guide your decision.",
+                body: "We sit down with you to explain findings honestly. You\'ll understand whether minor repairs will fix leaks and extend your roof\'s life, or if your roof\'s age and extensive damage make replacement the smarter investment. No pressure \u2014 just facts to guide your decision.",
               },
             ].map((item, i) => (
               <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
@@ -242,7 +242,7 @@ export default function DavieRoofInspectionPage() {
               },
               {
                 title: 'Sun and Heat Degradation',
-                body: "Intense sunlight and high temperatures accelerate the aging of roofing materials. Over time, shingles become brittle, tiles crack, and flat roofs develop blisters or splits &mdash; all of which compromise your roof's integrity.",
+                body: "Intense sunlight and high temperatures accelerate the aging of roofing materials. Over time, shingles become brittle, tiles crack, and flat roofs develop blisters or splits &mdash; all of which compromise your roof\'s integrity.",
               },
               {
                 title: 'Mold, Algae, and Mildew Growth',
@@ -254,7 +254,7 @@ export default function DavieRoofInspectionPage() {
               },
               {
                 title: 'Aging Roof Systems',
-                body: "As roofs age, their ability to withstand South Florida's harsh weather conditions diminishes. Regular roof inspections help homeowners monitor their roof's condition and plan for timely repairs or replacement before extensive damage occurs.",
+                body: "As roofs age, their ability to withstand South Florida\'s harsh weather conditions diminishes. Regular roof inspections help homeowners monitor their roof\'s condition and plan for timely repairs or replacement before extensive damage occurs.",
               },
             ].map((item, i) => (
               <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
@@ -274,11 +274,11 @@ export default function DavieRoofInspectionPage() {
             {[
               {
                 title: 'Local Neighborhood Expertise',
-                body: "We understand Davie's diverse housing stock, from ranch style homes in Pine Island Ridge to newer construction in Forest Ridge and established properties throughout the Davie community. We also serve properties near Nova Southeastern University, Tree Tops Park, the Bergeron Rodeo Grounds, and along the Orange Drive corridor.",
+                body: "We understand Davie\'s diverse housing stock, from ranch style homes in Pine Island Ridge to newer construction in Forest Ridge and established properties throughout the Davie community. We also serve properties near Nova Southeastern University, Tree Tops Park, the Bergeron Rodeo Grounds, and along the Orange Drive corridor.",
               },
               {
                 title: 'Florida Building Code Knowledge',
-                body: 'Post-Hurricane Andrew codes require specific wind-resistant standards. We verify whether your roof meets current Broward County HVHZ requirements &mdash; critical information if you're planning any roofing project or selling your home.',
+                body: 'Post-Hurricane Andrew codes require specific wind-resistant standards. We verify whether your roof meets current Broward County HVHZ requirements &mdash; critical information if you\'re planning any roofing project or selling your home.',
               },
               {
                 title: 'No-Pressure, Best-Interest Approach',
@@ -286,7 +286,7 @@ export default function DavieRoofInspectionPage() {
               },
               {
                 title: 'Documentation That Works For You',
-                body: 'Our inspection reports support insurance claims after storms, provide leverage in real estate negotiations, and give you proof of your roof's condition for any purpose you need.',
+                body: 'Our inspection reports support insurance claims after storms, provide leverage in real estate negotiations, and give you proof of your roof\'s condition for any purpose you need.',
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-zinc-800 rounded-lg">
@@ -316,7 +316,7 @@ export default function DavieRoofInspectionPage() {
                 name: 'Betty Fronizer',
               },
               {
-                text: 'I had a tile roof installed with a solar attic fan by All Phase Construction, and I couldn't be happier with the results. From start to finish, the communication was clear and thorough. I had plenty of choices when it came to companies, and yes, some were less expensive, but the professionalism, quality, and peace of mind I got with All Phase made it absolutely worth it. A special shoutout to Graham, my salesman, and to Matt, the project manager. Highly recommend this team if you want it done right the first time!',
+                text: 'I had a tile roof installed with a solar attic fan by All Phase Construction, and I couldn\'t be happier with the results. From start to finish, the communication was clear and thorough. I had plenty of choices when it came to companies, and yes, some were less expensive, but the professionalism, quality, and peace of mind I got with All Phase made it absolutely worth it. A special shoutout to Graham, my salesman, and to Matt, the project manager. Highly recommend this team if you want it done right the first time!',
                 name: 'Mom',
               },
             ].map((review, i) => (
@@ -339,10 +339,10 @@ export default function DavieRoofInspectionPage() {
           <h2 className="text-3xl font-bold mb-4 text-white">Inspection Investment Value</h2>
           <h3 className="text-xl font-semibold text-red-500 mb-4">Free Initial Roof Inspection for Davie Homeowners</h3>
           <p className="text-zinc-300 mb-6">
-            We believe every homeowner deserves to know their roof's condition without financial barriers. That's why we offer a free roof inspection to residents throughout Davie and surrounding Broward County communities.
+            We believe every homeowner deserves to know their roof\'s condition without financial barriers. That\'s why we offer a free roof inspection to residents throughout Davie and surrounding Broward County communities.
           </p>
           <p className="text-zinc-300 mb-8">
-            Consider the math: The average roof replacement costs $8,000 to $20,000 for typical Davie homes. Meanwhile, targeted roof repairs often range from $500 to $5,000 depending on the issue. A thorough inspection ensures you're investing in the right solution.
+            Consider the math: The average roof replacement costs $8,000 to $20,000 for typical Davie homes. Meanwhile, targeted roof repairs often range from $500 to $5,000 depending on the issue. A thorough inspection ensures you\'re investing in the right solution.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -350,7 +350,7 @@ export default function DavieRoofInspectionPage() {
               'Documentation that strengthens insurance claims &mdash; potentially recovering 70&ndash;100% of repair costs',
               'Negotiating power for real estate transactions',
               'Prevention of further damage from undetected problems',
-              'Peace of mind about your roof's condition',
+              'Peace of mind about your roof\'s condition',
             ].map((item, i) => (
               <div key={i} className="flex gap-3 items-start">
                 <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={18} />
@@ -395,7 +395,7 @@ export default function DavieRoofInspectionPage() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">Schedule Your Free Davie Roof Inspection Today</h2>
           <p className="text-zinc-300 mb-4 max-w-3xl mx-auto">
-            Stop guessing about your roof's condition. Whether you're seeing warning signs like roof leaks, noticing missing or damaged shingles, or simply want to prevent costly repairs before they happen, a professional inspection gives you the answers you need.
+            Stop guessing about your roof\'s condition. Whether you\'re seeing warning signs like roof leaks, noticing missing or damaged shingles, or simply want to prevent costly repairs before they happen, a professional inspection gives you the answers you need.
           </p>
           <p className="text-zinc-400 mb-8 max-w-3xl mx-auto text-sm">
             We serve all Davie neighborhoods including Pine Island Ridge, Forest Ridge, Shenandoah, and throughout the Davie community including properties near Tree Tops Park, the Bergeron Rodeo Grounds, and Nova Southeastern University.
