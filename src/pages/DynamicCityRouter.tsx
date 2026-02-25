@@ -47,6 +47,7 @@ const RoofInspectionPage = lazy(() => import('./RoofInspectionPage'));
 const DavieRoofInspectionPage = lazy(() => import('./DavieRoofInspectionPage'));
 const MiramarRoofInspectionPage = lazy(() => import('./MiramarRoofInspectionPage'));
 const PembrokePinesRoofInspectionPage = lazy(() => import('./PembrokePinesRoofInspectionPage'));
+const PlantationRoofInspectionPage = lazy(() => import('./PlantationRoofInspectionPage'));
 
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
@@ -102,6 +103,7 @@ const roofInspectionPageMap: Record<string, React.LazyExoticComponent<() => JSX.
     'davie': DavieRoofInspectionPage,
       'miramar': MiramarRoofInspectionPage,
         'pembroke-pines': PembrokePinesRoofInspectionPage,
+          'plantation': PlantationRoofInspectionPage,
 };
 
 const PageLoadingFallback = () => (
