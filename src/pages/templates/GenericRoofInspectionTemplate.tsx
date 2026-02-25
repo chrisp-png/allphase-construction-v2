@@ -65,7 +65,7 @@ export default function GenericRoofInspectionTemplate() {
   return (
     <>
       <SEO
-        title={`Roof Inspection in ${cityName}, FL`}
+        title={`Roof Inspection ${cityName} FL | All Phase Construction USA`}
         description={`Professional roof inspection services in ${cityName}, Florida. Licensed ${county} contractor. Detailed reports for home sales, insurance, and maintenance planning: (754) 227-5605.`}
         schema={faqSchema}
         noindex={false}
