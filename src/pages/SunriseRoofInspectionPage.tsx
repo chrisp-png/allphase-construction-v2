@@ -200,7 +200,7 @@ export default function SunriseRoofInspectionPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-white">Sunrise Roof Inspection Process &mdash; Step by Step</h2>
           <p className="text-zinc-400 mb-8">
-            The inspection process is straightforward and usually takes 45\u201390 minutes for a typical single-family home in Sunrise.
+            The inspection process is straightforward and usually takes 45–90 minutes for a typical single-family home in Sunrise.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -226,7 +226,7 @@ export default function SunriseRoofInspectionPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-white">Types of Roof Systems We Commonly Inspect in Sunrise</h2>
           <p className="text-zinc-300 mb-8">
-            Sunrise neighborhoods &mdash; from Inverrary and Sunrise Golf Village (1970s\u20131980s stock) to newer developments near Sawgrass Mills and Amerant Bank Arena, home of the Florida Panthers &mdash; include a mix of roofing systems. All Phase tailors each inspection checklist based on the exact system and year of last replacement.
+            Sunrise neighborhoods &mdash; from Inverrary and Sunrise Golf Village (1970s–1980s stock) to newer developments near Sawgrass Mills and Amerant Bank Arena, home of the Florida Panthers &mdash; include a mix of roofing systems. All Phase tailors each inspection checklist based on the exact system and year of last replacement.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -249,7 +249,7 @@ export default function SunriseRoofInspectionPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-white">Maximizing Insurance Discounts With the Right Roof</h2>
           <p className="text-zinc-300 mb-8">
-            Florida insurance companies offer significant credits for specific roof features and installation methods, especially in Broward County where high winds are a documented risk. Upgrades can reduce premiums by 25\u201350% in some cases.
+            Florida insurance companies offer significant credits for specific roof features and installation methods, especially in Broward County where high winds are a documented risk. Upgrades can reduce premiums by 25–50% in some cases.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
