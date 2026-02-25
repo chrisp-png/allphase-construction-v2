@@ -9,47 +9,55 @@ export default function PembrokePinesRoofInspectionPage() {
     document.title = 'Roof Inspection Pembroke Pines FL | All Phase Construction USA';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof inspection in Pembroke Pines FL. Maximize insurance discounts and know if you need repair or replacement. Licensed & insured. Free inspection. Call 754 227-5605.');
+      metaDescription.setAttribute('content', 'Professional roof inspection in Pembroke Pines FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof inspection in Pembroke Pines FL. Maximize insurance discounts and know if you need repair or replacement. Licensed & insured. Free inspection. Call 754 227-5605.';
+      meta.content = 'Professional roof inspection in Pembroke Pines FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 227-5605.';
       document.head.appendChild(meta);
     }
   }, []);
 
   const faqs = [
     {
-      question: 'How often should I inspect my roof in Pembroke Pines?',
-      answer: 'Every 3-5 years for roofs under 10 years old, annually for older roofs. Florida\'s extreme weather conditions &mdash; intense UV, heavy rain, and hurricane winds &mdash; accelerate wear faster than northern climates. Regular inspections catch storm damage early, prevent leaks, and satisfy insurance requirements.',
+      question: 'How often should I get my roof inspected in Pembroke Pines?',
+      answer: 'Every 1\u20132 years for routine maintenance, plus after any major tropical storms or hurricanes that affect Broward County.',
     },
     {
-      question: 'What insurance discounts am I currently eligible for?',
-      answer: 'That depends on several factors including roof age, materials, installation date, and mitigation features like hurricane straps and secondary water barriers. Our inspection identifies exactly which credits apply to your situation.',
+      question: 'Do I need an inspection if my roof is only 5\u201310 years old?',
+      answer: 'Yes. Even newer roofs can develop issues from storm damage or installation problems. Identifying problems early prevents larger failures later.',
     },
     {
-      question: 'How much can roof upgrades save on insurance premiums?',
-      answer: 'Upgrading to HVHZ-compliant materials and adding features like reinforced decking can qualify you for 10-40% premium reductions &mdash; potentially $1,000-$5,000 in annual savings depending on your home\'s value and current coverage.',
+      question: 'Will the inspection report help with my insurance company?',
+      answer: 'Absolutely. Detailed reports with photos support maintenance claims and can help demonstrate proper upkeep if coverage questions arise.',
     },
     {
-      question: 'When should I repair vs. replace my roof?',
-      answer: 'Generally, repairs covering less than 25% of roof area avoid permit requirements and make sense for localized issues. Roofs with widespread granule loss, curling shingles, or multiple existing issues typically warrant replacement for maximum durability and insurance benefits.',
+      question: 'Do you walk the roof or use drones?',
+      answer: 'Our inspectors typically perform walk-overs for thorough hands-on evaluation. Advanced technology like thermal imaging may be used to detect moisture not visible to the naked eye.',
     },
     {
-      question: 'What documentation do I need for insurance claims?',
-      answer: 'Insurers require detailed photos of damage, professional assessment of cause and scope, repair cost estimates from a licensed roofing contractor, and often wind mitigation reports. Our comprehensive inspection provides all necessary documentation.',
+      question: 'Is the inspection really free?',
+      answer: 'Yes. All Phase offers complimentary inspections with no obligation. The goal is helping you understand your options before you need them.',
+    },
+    {
+      question: 'What if you find serious damage?',
+      answer: 'We\u2019ll explain the issue clearly, provide repair or replacement options with estimated costs, and answer your questions. You decide if and when to move forward.',
+    },
+    {
+      question: 'How does this help me plan for energy efficiency?',
+      answer: 'Inspections can identify ventilation issues and recommend roofing materials that improve energy-efficient performance, potentially lowering cooling costs in Pembroke Pines\u2019s hot climate.',
     },
   ];
 
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    'mainEntity': faqs.map(faq => ({
+    mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
-      'name': faq.question,
-      'acceptedAnswer': {
+      name: faq.question,
+      acceptedAnswer: {
         '@type': 'Answer',
-        'text': faq.answer,
+        text: faq.answer,
       },
     })),
   };
@@ -77,14 +85,14 @@ export default function PembrokePinesRoofInspectionPage() {
       <section className="py-16 px-4 bg-gradient-to-b from-zinc-900 to-[#09090b]">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Roof Inspection Pembroke Pines FL — <span className="text-red-500">Maximize Insurance Discounts & Protect Your Home</span>
+            Roof Inspection Pembroke Pines FL &mdash; <span className="text-red-500">Catch Hidden Damage Before It Becomes an Emergency</span>
           </h1>
           <p className="text-xl text-zinc-300 mb-8 max-w-3xl">
-            Get the facts about your roof's condition before spending thousands on repairs or replacement you may not need.
+            All Phase Construction USA offers complimentary, professional roof inspections for homeowners throughout Pembroke Pines, FL &mdash; tailored to the storm, heat, and high humidity conditions that affect roofs in Broward County.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
-              <Phone size={20} /> 754 227-5605
+              <Phone size={20} /> (754) 227-5605
             </a>
             <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
               Schedule Free Inspection
@@ -93,89 +101,63 @@ export default function PembrokePinesRoofInspectionPage() {
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Why Pembroke Pines Needs Inspections */}
       <section className="py-12 px-4">
-        <div className="max-w-6xl mx-auto space-y-5 text-lg text-zinc-300">
-          <p>
-            That water stain on your ceiling has you worried. Water stains on your ceilings are a clear indication of a leaky roof. Maybe missing shingles after last month's storm have you searching for answers. Before you commit to expensive roof repairs or a full replacement, there's a smarter first step &mdash; a professional roof inspection in Pembroke Pines, FL.
-          </p>
-          <p>
-            Many homeowners in the Pembroke Pines area face a frustrating dilemma &mdash; they know something's wrong with their roof, but they don't know whether they need minor repairs or an entire roof replacement. Without a thorough inspection, you're essentially guessing with your money. Some contractors push full replacements when targeted repairs would solve the problem. Others recommend quick fixes on a damaged roof that's beyond saving.
-          </p>
-          <p>
-            A professional inspection eliminates this uncertainty. In South Florida's climate, where intense UV rays, humidity, hurricane season, and heavy rains constantly test your roofing materials, understanding your roof's true condition isn't optional &mdash; it's essential for making cost-effective decisions that protect both your home's interior and your wallet. The unique climate of Pembroke Pines, Florida, requires roofing solutions that can withstand intense sun and heavy rainfall. Regular roof inspections can help maintain the value of your home &mdash; a well-maintained roof can last for decades, but neglecting regular inspections can significantly shorten its lifespan.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Choose */}
-      <section className="py-12 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-white">Why Choose Our Pembroke Pines Roof Inspection Service?</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <h2 className="text-3xl font-bold mb-4 text-white">Why Pembroke Pines, Florida Homeowners Need Regular Roof Inspections</h2>
+          <p className="text-zinc-300 mb-8">
+            Pembroke Pines sits in one of the most demanding climates for roofing materials in the country. Located in western Broward County with direct wind exposure off the Everglades, and home to communities surrounding Amerant Bank Arena and Sawgrass Mills Mall, Pembroke Pines properties face year-round UV exposure, daily humidity levels exceeding 70%, and frequent summer storms that create constant stress on every roofing system.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {[
-              {
-                title: 'Early Detection Prevents Costly Repairs',
-                body: 'Small cracks, minor issues with flashing, and damaged shingles caught early cost hundreds to fix. Left undetected, they escalate into structural damage requiring thousands in repairs or full replacement.',
-              },
-              {
-                title: 'Accurate Assessment of Repair vs. Replacement Needs',
-                body: "A roof inspector provides objective analysis of your roof\'s condition and specifically evaluates your roof\'s integrity. This assessment determines whether targeted roof repairs will restore your roof\'s integrity or if a full replacement is truly necessary.",
-              },
-              {
-                title: 'Storm Damage Documentation for Insurance Claims',
-                body: 'After high winds, hail, or hurricane season events, a thorough assessment with detailed photos streamlines the claims process and helps you recover maximum reimbursement.',
-              },
-              {
-                title: 'South Florida Climate Expertise',
-                body: "Experienced roofers understand how South Florida\'s climate accelerates wear on tile roofing, metal roofing, shingle systems, and flat roofs differently than northern climates.",
-              },
-              {
-                title: 'Free Inspection Eliminates Guesswork',
-                body: 'A free roof inspection removes the financial barrier to getting answers, preventing contractor overselling and ensuring you invest only in work your roof actually needs.',
-              },
+              { title: 'UV Degradation', body: 'Intense South Florida sun breaks down roofing materials 2\u20133 times faster than in moderate climates.' },
+              { title: 'Daily Thermal Expansion', body: 'Temperature swings cause materials to expand and contract, loosening fasteners and cracking sealants.' },
+              { title: 'Wind-Driven Rain', body: 'Tropical storms and afternoon thunderstorms push water under shingles and tiles, especially on the western Broward edge.' },
+              { title: 'Hurricane-Season Gusts', body: 'Even outer bands from distant storms can lift shingles and displace tiles on Pembroke Pines homes.' },
+              { title: 'High Humidity', body: 'Constant moisture accelerates mold growth in attics and beneath roofing materials throughout the year.' },
+              { title: 'Insurance Requirements', body: 'Florida insurers increasingly require clear documentation of roof condition to maintain coverage and control premiums.' },
             ].map((item, i) => (
-              <div key={i} className="flex gap-4 p-6 bg-zinc-800 rounded-lg">
-                <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={22} />
-                <div>
-                  <h3 className="font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-zinc-400 text-sm">{item.body}</p>
-                </div>
+              <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
+                <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-zinc-400 text-sm">{item.body}</p>
               </div>
             ))}
           </div>
+          <p className="text-zinc-300 text-sm bg-zinc-800 p-4 rounded-lg border border-zinc-700">
+            Even roofs installed between 2010 and 2018 in neighborhoods like Pembroke Pines Golf Village and Inverrary can already show hidden issues like loose fasteners, cracked tiles, or dried sealant. Minor problems are often invisible from the yard but can lead to costly repairs if ignored.
+          </p>
         </div>
       </section>
 
-      {/* Repair vs Replace Table */}
-      <section className="py-12 px-4">
+      {/* Inspection vs Waiting Table */}
+      <section className="py-12 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-white">Repair vs. Replace Decision Guide</h2>
-          <p className="text-zinc-400 mb-8">Not sure whether you need a repair or a full replacement? Here's how we evaluate your situation:</p>
+          <h2 className="text-3xl font-bold mb-4 text-white">Proactive Inspection vs. Waiting for a Leak</h2>
+          <p className="text-zinc-400 mb-8">
+            Many Pembroke Pines homeowners call only after a roof leak appears &mdash; which is usually the most expensive time to discover a problem. Water damage that reaches ceilings and walls can cost thousands more than catching issues early.
+          </p>
           <div className="overflow-x-auto rounded-lg border border-zinc-700">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-zinc-800">
-                  <th className="text-left py-4 px-6 text-white font-semibold">Situation</th>
-                  <th className="text-left py-4 px-6 text-white font-semibold">Recommended Action</th>
+                  <th className="text-left py-4 px-6 text-white font-semibold">Factor</th>
+                  <th className="text-left py-4 px-6 text-green-400 font-semibold">With Regular Inspections</th>
+                  <th className="text-left py-4 px-6 text-red-400 font-semibold">Waiting Until You See a Leak</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ['Isolated damaged shingles or tiles', 'Repair'],
-                  ['Storm damage affecting under 30% of surface', 'Repair'],
-                  ['Roof age under 15 years with good structure', 'Repair'],
-                  ['Multiple active leaks with widespread damage', 'Replace'],
-                  ['Roof age 20+ years with significant granule loss', 'Replace'],
-                  ['Failed deck or structural damage present', 'Replace'],
-                ].map(([situation, action], i) => (
+                  ['Average repair cost', '$350\u2013$1,200 for minor fixes', '$3,000\u2013$8,000+ including interior damage'],
+                  ['Interior damage likelihood', 'Low \u2014 caught before water intrusion', 'High \u2014 damage to ceilings, walls, insulation'],
+                  ['Insurance claim denial risk', 'Low \u2014 documented maintenance history', 'Higher \u2014 lack of maintenance can void claims'],
+                  ['Impact on premiums', 'Stable or reduced with mitigation docs', 'Potential increases after claim filing'],
+                  ['Roof lifespan', 'Extended through early intervention', 'Shortened by unaddressed deterioration'],
+                  ['Homeowner stress', 'Low \u2014 planned maintenance, no emergencies', 'High \u2014 emergency repairs, displaced schedules'],
+                ].map(([factor, proactive, reactive], i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-800/50'}>
-                    <td className="py-4 px-6 text-zinc-300">{situation}</td>
-                    <td className="py-4 px-6">
-                      <span className={`font-semibold ${action === 'Repair' ? 'text-green-400' : 'text-red-400'}`}>
-                        {action}
-                      </span>
-                    </td>
+                    <td className="py-4 px-6 text-zinc-300 font-medium">{factor}</td>
+                    <td className="py-4 px-6 text-green-400 text-xs">{proactive}</td>
+                    <td className="py-4 px-6 text-red-400 text-xs">{reactive}</td>
                   </tr>
                 ))}
               </tbody>
@@ -184,36 +166,54 @@ export default function PembrokePinesRoofInspectionPage() {
         </div>
       </section>
 
+      {/* What We Check */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-white">What All Phase Checks During a Pembroke Pines Roof Inspection</h2>
+          <p className="text-zinc-300 mb-8">
+            All Phase performs a systematic, on-roof and attic review &mdash; not just a quick glance from the street. Our inspectors work from the bottom up around the entire perimeter, documenting every component that affects your roof's performance.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { title: 'Roof Coverings', items: ['Asphalt shingles (1980s\u20132020s homes)', 'Concrete and clay tile roofs', 'Metal panels (standing seam)', 'Flat systems (TPO, modified bitumen)'] },
+              { title: 'Key Components', items: ['Missing shingles, cracks, wind damage', 'Fasteners and nailing patterns', 'Flashing around chimneys and vents', 'Ridge caps, hip caps, drip edge'] },
+              { title: 'Attic & Underlayment', items: ['Moisture staining on decking or rafters', 'Soft or deteriorated decking', 'Mold growth or musty odors', 'Ventilation adequacy'] },
+            ].map((section, i) => (
+              <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
+                <h3 className="font-semibold text-white mb-4">{section.title}</h3>
+                <ul className="space-y-2">
+                  {section.items.map((item, j) => (
+                    <li key={j} className="flex gap-2 items-start text-sm text-zinc-400">
+                      <CheckCircle2 className="text-red-500 flex-shrink-0 mt-0.5" size={16} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Inspection Process */}
       <section className="py-12 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-white">How Our Pembroke Pines Roof Inspection Process Works</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <h2 className="text-3xl font-bold mb-8 text-white">Pembroke Pines Roof Inspection Process &mdash; Step by Step</h2>
+          <p className="text-zinc-400 mb-8">
+            The inspection process is straightforward and usually takes 45–90 minutes for a typical single-family home in Pembroke Pines.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              {
-                step: '01',
-                title: 'Free Consultation and Exterior Visual Assessment',
-                body: "We start with a ground-level evaluation and careful exterior examination of your entire roof. This includes checking for missing or damaged shingles, granule loss, sagging sections, and visible storm damage. We assess all roofing materials \u2014 whether you have asphalt shingles, tile roofing, metal roofing, or flat roofs common throughout Pembroke Pines neighborhoods.",
-              },
-              {
-                step: '02',
-                title: 'Comprehensive Interior Inspection and Structural Evaluation',
-                body: "The interior inspection reveals problems invisible from outside. We examine your attic space for water infiltration signs, proper ventilation, mold indicators, and structural integrity issues. Ceiling stains, active leaks, and moisture damage in your home\'s interior tell us what\'s happening beneath the surface.",
-              },
-              {
-                step: '03',
-                title: 'Detailed Report with Photos Showing Exact Issues',
-                body: 'You receive documentation showing precisely what we found \u2014 nail pops, cracking tiles, sealant degradation, ventilation systems problems, and any areas needing immediate attention. This thorough inspection report becomes valuable for insurance claims, home sales, and warranty purposes.',
-              },
-              {
-                step: '04',
-                title: 'Clear Explanation of Repair vs. Replacement Options',
-                body: "We sit down with you to explain findings honestly. You\'ll understand whether minor repairs will fix leaks and extend your roof\'s life, or if your roof\'s age and extensive damage make replacement the smarter investment. No pressure \u2014 just facts to guide your decision.",
-              },
+              { step: '01', title: 'Scheduling', body: 'Call or submit an online request and choose a morning or late-afternoon slot to avoid mid-day heat. Same-week availability for most Pembroke Pines properties.' },
+              { step: '02', title: 'Arrival & Safety Setup', body: 'Uniformed All Phase inspector arrives, reviews your concerns, and sets up safety equipment before beginning the evaluation.' },
+              { step: '03', title: 'Ground-Level Review', body: 'Visual scan of roof from multiple angles to identify obvious issues before climbing &mdash; including checking for displaced tiles and obvious storm damage.' },
+              { step: '04', title: 'On-Roof Inspection', body: 'Systematic check of covering materials, flashing, penetrations, and drainage paths. Every finding is photographed and documented.' },
+              { step: '05', title: 'Attic Inspection', body: 'Checking underside of decking, insulation condition, moisture signs, and ventilation airflow where accessible.' },
+              { step: '06', title: 'Review with Homeowner', body: 'Inspector sits down with you (same visit or later that day) to review a clear written summary and actionable recommendations.' },
             ].map((item, i) => (
               <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
                 <div className="text-4xl font-bold text-red-500 mb-3">{item.step}</div>
-                <h3 className="font-semibold text-white mb-3">{item.title}</h3>
+                <h3 className="font-semibold text-white mb-2">{item.title}</h3>
                 <p className="text-zinc-400 text-sm">{item.body}</p>
               </div>
             ))}
@@ -221,37 +221,19 @@ export default function PembrokePinesRoofInspectionPage() {
         </div>
       </section>
 
-      {/* Common Roof Problems */}
+      {/* Roof Types */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-white">Common Roof Problems in Pembroke Pines Homes</h2>
-          <p className="text-zinc-400 mb-8">Pembroke Pines homes face unique roofing challenges due to the subtropical climate &mdash; high winds, heavy rainfall, and intense sunlight. Here are the most common issues we find:</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-4 text-white">Types of Roof Systems We Commonly Inspect in Pembroke Pines</h2>
+          <p className="text-zinc-300 mb-8">
+            Pembroke Pines neighborhoods &mdash; from Silver Lakes and Chapel Trail to Pembroke Falls and Pembroke Isles &mdash; include a mix of roofing systems. All Phase tailors each inspection checklist based on the exact system and year of last replacement.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
             {[
-              {
-                title: 'Wind and Storm Damage',
-                body: 'High winds during hurricane season can lift shingles, dislodge tiles, or tear sections of roofing material from the roof. This leaves your home vulnerable to water infiltration and further damage, especially if not caught early.',
-              },
-              {
-                title: 'Water Leaks and Moisture Intrusion',
-                body: 'Heavy rainfall common in South Florida can exploit even the smallest vulnerabilities in your roof. Leaky roofs often start as minor issues &mdash; small cracks or missing shingles &mdash; but can quickly lead to structural damage and costly repairs.',
-              },
-              {
-                title: 'Sun and Heat Degradation',
-                body: "Intense sunlight and high temperatures accelerate the aging of roofing materials. Over time, shingles become brittle, tiles crack, and flat roofs develop blisters or splits &mdash; all of which compromise your roof\'s integrity.",
-              },
-              {
-                title: 'Mold, Algae, and Mildew Growth',
-                body: 'The combination of humidity and frequent rain creates ideal conditions for mold and algae to thrive on Pembroke Pines roofs. These growths weaken roofing materials and lead to further damage if left untreated.',
-              },
-              {
-                title: 'Clogged or Damaged Gutters',
-                body: 'Blocked gutters prevent proper drainage, causing water to back up and seep under roofing materials. This can result in rot, leaks, and even foundation issues if not addressed promptly.',
-              },
-              {
-                title: 'Aging Roof Systems',
-                body: "As roofs age, their ability to withstand South Florida\'s harsh weather conditions diminishes. Regular roof inspections help homeowners monitor their roof\'s condition and plan for timely repairs or replacement before extensive damage occurs.",
-              },
+              { title: 'Asphalt Shingle Roofs', body: 'Common on 1- and 2-story homes built 1980s\u20132000s. Common issues include granule loss, lifted shingles, and aging sealant around penetrations.' },
+              { title: 'Concrete or Clay Tile Roofs', body: 'Found in many Pembroke Pines subdivisions. Watch for cracked tiles, slipped tiles, and underlayment aging around the 15\u201320 year mark.' },
+              { title: 'Metal Roofing', body: 'Increasingly popular after major storm seasons. Focus on fastener integrity, panel anchoring, and seam leaks. 40\u201360 year lifespan with proper maintenance.' },
+              { title: 'Flat or Low-Slope Roofs', body: 'Common on additions, patios, and modern homes throughout western Broward. Concerns include ponding water, membrane blisters, and seal failures around plumbing penetrations.' },
             ].map((item, i) => (
               <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
                 <h3 className="font-semibold text-white mb-3">{item.title}</h3>
@@ -262,62 +244,96 @@ export default function PembrokePinesRoofInspectionPage() {
         </div>
       </section>
 
-      {/* What Makes Us Different */}
+      {/* Insurance / Wind Mitigation */}
       <section className="py-12 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-white">What Makes Our Pembroke Pines Roof Inspections Different?</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                title: 'Drone Technology Integration',
-                body: 'Advanced aerial inspection capabilities provide complete roof surface evaluation without risking damage to your roof or landscaping — perfect for steep metal roofing, flat roofing systems, and multi-story homes.',
-              },
-              {
-                title: 'Hurricane Damage Specialists',
-                body: 'Post-Hurricane Andrew codes require specific wind-resistant standards. We verify whether your roof meets current Broward County HVHZ requirements &mdash; critical information if you\'re planning any roofing project or selling your home.',
-              },
-              {
-                title: 'No-Pressure, Best-Interest Approach',
-                body: 'Extensive experience identifying wind, hail, and water leak damage specific to South Florida storms, including subtle red flags that untrained eyes miss. We know what Pembroke Pines’s weather does to roofs.',
-              },
-              {
-                title: 'Restoration-First Philosophy',
-                body: 'We prioritize cost-effective roofing solutions over expensive full replacements whenever your roof remains structurally sound. A well-maintained roof can often be restored rather than replaced — saving you thousands.',
-              },
-            ].map((item, i) => (
-              <div key={i} className="flex gap-4 p-6 bg-zinc-800 rounded-lg">
-                <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={22} />
-                <div>
-                  <h3 className="font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-zinc-400 text-sm">{item.body}</p>
-                </div>
-              </div>
-            ))}
+          <h2 className="text-3xl font-bold mb-4 text-white">Maximizing Insurance Discounts With the Right Roof</h2>
+          <p className="text-zinc-300 mb-8">
+            Florida insurance companies offer significant credits for specific roof features and installation methods, especially in Broward County where high winds are a documented risk. Upgrades can reduce premiums by 25–50% in some cases.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="font-semibold text-white mb-4">What We Review</h3>
+              <ul className="space-y-3">
+                {[
+                  'Existing roof-to-wall connections (clips, straps, or toe-nails)',
+                  'Underlayment type and condition',
+                  'Nailing patterns and fastener spacing',
+                  'Secondary water barriers (when visible)',
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 items-start text-sm text-zinc-300">
+                    <CheckCircle2 className="text-red-500 flex-shrink-0 mt-0.5" size={16} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-white mb-4">Features That Improve Wind Mitigation Results</h3>
+              <ul className="space-y-3">
+                {[
+                  'Upgraded self-adhering underlayment',
+                  'Enhanced nailing patterns (6-nail vs. 4-nail)',
+                  'Hurricane clips or straps at roof-to-wall connections',
+                  'Hip roof designs (more wind-resistant than gable)',
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 items-start text-sm text-zinc-300">
+                    <CheckCircle2 className="text-red-500 flex-shrink-0 mt-0.5" size={16} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Storm Season */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-white">Pembroke Pines Storm Season &amp; Post-Storm Evaluations</h2>
+          <p className="text-zinc-300 mb-6">
+            Atlantic hurricane season runs June 1 through November 30, with late-summer storms posing the greatest threat to Pembroke Pines properties. Even when a named storm does not make a direct hit, outer bands and strong thunderstorms can still damage roofs through high winds and flying debris.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
+              <h3 className="font-semibold text-white mb-4">Post-Storm Inspection Focus</h3>
+              <ul className="space-y-2">
+                {[
+                  'Wind damage patterns (creased or lifted materials)',
+                  'Impact marks from debris',
+                  'Missing materials or displaced tiles',
+                  'New leaks not yet visible inside the home',
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2 items-start text-sm text-zinc-400">
+                    <CheckCircle2 className="text-red-500 flex-shrink-0 mt-0.5" size={16} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="p-6 bg-red-950 rounded-lg border border-red-800">
+              <h3 className="font-semibold text-red-400 mb-3">Safety Warning</h3>
+              <p className="text-zinc-300 text-sm">
+                Do not go on the roof yourself after a storm. Wet surfaces, hidden structural damage, and downed power lines create serious hazards. Rely on trained inspectors with proper equipment to evaluate damage safely.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Real Google Reviews */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-white">What Our Customers Are Saying</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              {
-                text: 'Last month I had my roof replaced by All Phase Construction. From the beginning of the project to the end I have nothing to say other than I love dealing with every member of that team. Karl Walczak came to the house, went on the roof into the crawl space and presented a very clear picture of what had to be done and the cost. From that moment on I knew that I could trust him. They kept me informed every step of the way, were on time, and did exactly what they were supposed to. My roof is beautiful and well done. I would recommend you 100%.',
-                name: 'Evelyn Tainsky',
-              },
-              {
-                text: 'Recently I had a roof put on my house by All Phase USA. I cannot say enough good about this company. Matt and Dillon brought in all the materials and showed me by computer how it was going to be installed. I got a call every week from Carissa letting me know where we were in the process. Matt was the project manager and kept on top of things. The crew covered all my plants and cleaned everything up at the end of the day. If you need a new roof call All Phase USA.',
-                name: 'Betty Fronizer',
-              },
-              {
-                text: 'I had a tile roof installed with a solar attic fan by All Phase Construction, and I couldn\'t be happier with the results. From start to finish, the communication was clear and thorough. I had plenty of choices when it came to companies, and yes, some were less expensive, but the professionalism, quality, and peace of mind I got with All Phase made it absolutely worth it. A special shoutout to Graham, my salesman, and to Matt, the project manager. Highly recommend this team if you want it done right the first time!',
-                name: 'Mom',
-              },
+              { text: 'Last month I had my roof replaced by All Phase Construction. From the beginning of the project to the end I have nothing to say other than I love dealing with every member of that team. Karl Walczak came to the house, went on the roof into the crawl space and presented a very clear picture of what had to be done and the cost. From that moment on I knew that I could trust him. They kept me informed every step of the way, were on time, and did exactly what they were supposed to. My roof is beautiful and well done. I would recommend you 100%.', name: 'Evelyn Tainsky' },
+              { text: 'Recently I had a roof put on my house by All Phase USA. I cannot say enough good about this company. Matt and Dillon brought in all the materials and showed me by computer how it was going to be installed. I got a call every week from Carissa letting me know where we were in the process. Matt was the project manager and kept on top of things. The crew covered all my plants and cleaned everything up at the end of the day. If you need a new roof call All Phase USA.', name: 'Betty Fronizer' },
+              { text: 'I had a tile roof installed with a solar attic fan by All Phase Construction, and I could not be happier with the results. From start to finish, the communication was clear and thorough. I had plenty of choices when it came to companies, and yes, some were less expensive, but the professionalism, quality, and peace of mind I got with All Phase made it absolutely worth it. A special shoutout to Graham, my salesman, and to Matt, the project manager. Highly recommend this team if you want it done right the first time!', name: 'Mom' },
             ].map((review, i) => (
               <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700 flex flex-col gap-4">
-                <div className="flex gap-1 text-yellow-400 text-lg">{'★'.repeat(5)}</div>
+                <div className="text-yellow-400 text-lg">&star;&star;&star;&star;&star;</div>
                 <p className="text-zinc-300 text-sm leading-relaxed">{review.text}</p>
                 <div className="mt-auto">
                   <p className="font-semibold text-white">{review.name}</p>
@@ -329,28 +345,25 @@ export default function PembrokePinesRoofInspectionPage() {
         </div>
       </section>
 
-      {/* Investment Value */}
-      <section className="py-12 px-4 bg-zinc-900">
+      {/* Inspection Report */}
+      <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-white">Inspection Investment Value</h2>
-          <h3 className="text-xl font-semibold text-red-500 mb-4">Free Initial Roof Inspection for Pembroke Pines Homeowners</h3>
-          <p className="text-zinc-300 mb-6">
-            We believe every homeowner deserves to know their roof's condition without financial barriers. That's why we offer a free roof inspection to residents throughout Pembroke Pines and surrounding Broward County communities.
-          </p>
+          <h2 className="text-3xl font-bold mb-4 text-white">What to Expect From Your Inspection Report</h2>
           <p className="text-zinc-300 mb-8">
-            Consider the math: The average roof replacement costs $8,000 to $20,000 for typical Pembroke Pines homes. Meanwhile, targeted roof repairs often range from $500 to $5,000 depending on the issue. A thorough inspection ensures you're investing in the right solution.
+            Homeowners receive clear, actionable information &mdash; not technical jargon that requires a contractor to interpret.
           </p>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'Clear understanding of whether you need repair or replacement',
-              'Documentation that strengthens insurance claims &mdash; potentially recovering 70&ndash;100% of repair costs',
-              'Negotiating power for real estate transactions',
-              'Prevention of further damage from undetected problems',
-              'Peace of mind about your roof\'s condition',
+              { title: 'Condition Summary', body: 'Overall assessment of your roof using plain language ratings &mdash; no confusing contractor-speak.' },
+              { title: 'Estimated Service Life', body: 'Range of remaining years based on material condition and local Pembroke Pines climate factors.' },
+              { title: 'Prioritized Recommendations', body: 'Which issues need immediate attention versus which can wait &mdash; so you can budget accordingly.' },
+              { title: 'Annotated Photos', body: 'Images showing exact locations of concern (e.g., rear left slope above patio, front valley near garage).' },
+              { title: 'Review Session', body: 'All Phase walks through findings, answers questions, and outlines next steps &mdash; whether simple maintenance, a small repair, or planning for replacement.' },
+              { title: 'Saved Documentation', body: 'Reports can be referenced later when comparing bids, planning budgets, or filing insurance claims.' },
             ].map((item, i) => (
-              <div key={i} className="flex gap-3 items-start">
-                <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={18} />
-                <p className="text-zinc-300 text-sm">{item}</p>
+              <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
+                <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-zinc-400 text-sm">{item.body}</p>
               </div>
             ))}
           </div>
@@ -358,7 +371,7 @@ export default function PembrokePinesRoofInspectionPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-white">Frequently Asked Questions About Pembroke Pines Roof Inspections</h2>
           <div className="space-y-3">
@@ -389,27 +402,26 @@ export default function PembrokePinesRoofInspectionPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">Schedule Your Pembroke Pines Roof Inspection Today</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Schedule Your Complimentary Pembroke Pines Roof Inspection Today</h2>
           <p className="text-zinc-300 mb-4 max-w-3xl mx-auto">
-            Stop guessing about your roof's condition. Whether you're seeing warning signs like roof leaks, noticing missing or damaged shingles, or simply want to prevent costly repairs before they happen, a professional inspection gives you the answers you need.
+            Do not wait for leaks, water damage, or insurance complications to learn what condition your roof is in. A complimentary inspection from All Phase Construction USA gives Pembroke Pines homeowners the peace of mind that comes from knowing exactly where they stand.
           </p>
           <p className="text-zinc-400 mb-8 max-w-3xl mx-auto text-sm">
-            We serve all Pembroke Pines neighborhoods including Chapel Trail, Pembroke Falls, Silver Lakes, Nautica, Pines City Center, and properties along the Pembroke Road corridor near the western Broward edge.
+            We serve all Pembroke Pines neighborhoods including Silver Lakes, Chapel Trail, Pembroke Falls, Pembroke Isles, Towngate, and communities throughout western Broward County near I-75.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
-              <Phone size={20} /> 754 227-5605
+              <Phone size={20} /> (754) 227-5605
             </a>
             <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
               Request Free Inspection
             </Link>
           </div>
           <p className="text-zinc-500 text-sm">
-            Dual Licensed: CGC-1526236 &amp; CCC-1331464 &nbsp;&nbsp;|&nbsp;&nbsp; Fully Insured &nbsp;&nbsp;|&nbsp;&nbsp; Serving Pembroke Pines, FL and Broward County
+            Dual Licensed (CGC-1526236 &amp; CCC-1331464) &nbsp;&nbsp;|&nbsp;&nbsp; Fully Insured &nbsp;&nbsp;|&nbsp;&nbsp; Serving Pembroke Pines, FL and Broward County
           </p>
         </div>
       </section>
-
     </div>
   );
 }
