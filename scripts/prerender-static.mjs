@@ -1207,7 +1207,7 @@ function getSEOMetadata(urlPath, cityName = null) {
     }
     if (normalizedPath.includes('/roof-inspection/')) {
       return {
-        title: `${cityName} Roof Inspection | 21-Point Professional Assessment`,
+        title: `Roof Inspection ${cityName} FL | All Phase Construction USA`,
         description: `Professional roof inspection in ${cityName}, FL. Free 21-point assessment with photo documentation. Pre-purchase, insurance, storm damage inspections. Call (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
