@@ -1,763 +1,419 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, AlertTriangle, FileCheck, Shield, ChevronRight, Plus, Minus } from 'lucide-react';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
+import { CheckCircle2, ChevronRight, Plus, Minus, Phone, Home } from 'lucide-react';
 
 export default function DavieRoofInspectionPage() {
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     document.title = 'Roof Inspection Davie FL | All Phase Construction USA';
-
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof inspection in Davie, Florida. 21-point diagnostic assessment for shingle, tile, metal & flat roofs. Licensed Broward County contractor. Schedule: (754) 227-5605.');
+      metaDescription.setAttribute('content', 'Professional roof inspection in Davie FL. Know if you need repair or replacement before spending thousands. Licensed & insured. Free inspection. Call (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof inspection in Davie, Florida. 21-point diagnostic assessment for shingle, tile, metal & flat roofs. Licensed Broward County contractor. Schedule: (754) 227-5605.';
+      meta.content = 'Professional roof inspection in Davie FL. Know if you need repair or replacement before spending thousands. Licensed & insured. Free inspection. Call (754) 227-5605.';
       document.head.appendChild(meta);
     }
+  }, []);
 
-    const metaRobots = document.querySelector('meta[name="robots"]');
-    if (metaRobots) {
-      metaRobots.setAttribute('content', 'index, follow');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'robots';
-      meta.content = 'index, follow';
-      document.head.appendChild(meta);
-    }}, []);
-
-  const faqItems = [
+  const faqs = [
     {
-      question: "How do I know if my Davie roof needs inspection or replacement?",
-      answer: "A diagnostic inspection evaluates damage extent, system age, and code thresholds to determine whether inspections are viable. Material condition, underlayment integrity, and compliance considerations inform the recommendation."
+      question: 'How often should I have my Davie roof inspected?',
+      answer: 'Regular inspections every one to two years keep your roof in optimal condition. Additionally, schedule an inspection after severe weather, before and after hurricane season, and if you notice any roof problems like a leaky roof or missing shingles.',
     },
     {
-      question: "Do roof inspections in Davie have to meet Florida Building Code or HVHZ rules?",
-      answer: "Yes. All inspections must comply with the Florida Building Code applicable at the time of work. High Velocity Hurricane Zone (HVHZ) requirements may apply depending on jurisdiction and roof system scope."
+      question: 'What specific issues do you look for in South Florida roofs?',
+      answer: "We examine for storm damage from high winds and rain, UV degradation, humidity-related wear, granule loss, cracking tiles, corrosion on metal roofing, membrane damage on flat roofs, ventilation systems function, and water infiltration signs. South Florida's climate creates unique challenges we're trained to identify.",
     },
     {
-      question: "Can a tile roof be inspected without full replacement?",
-      answer: "In many cases, individual tiles and localized underlayment sections can be inspected if the surrounding system remains sound and materials can be properly matched."
+      question: 'Will the inspection tell me if I need repair or full replacement?',
+      answer: "Yes. Your roof replacement depends on multiple factors including your roof's age, extent of damage, structural integrity, and cost effectiveness of repairs versus replacement. We provide clear recommendations so you can make an informed choice.",
     },
     {
-      question: "How do you handle HOA approvals for roof inspections in Davie?",
-      answer: "We prepare documentation packages including photos, roof system details, and material specifications for HOA submittal. Coordination and scheduling support is provided where required."
+      question: 'Do you inspect tile, metal, and shingle roofs common in Davie?',
+      answer: "Absolutely. Our experienced roofers inspect all roofing materials found in Davie homes \u2014 asphalt shingles, tile roofing, metal roofing, and flat roofs on both residential and commercial properties. Each material requires specific inspection techniques we've mastered.",
     },
     {
-      question: "Will a roof inspection affect my insurance claim?",
-      answer: "Coverage decisions are made by the insurer. Our documentation can support claim discussions by clearly separating observed damage from wear patterns, though we do not provide insurance advice or guarantees."
-    }
+      question: 'How long does a typical roof inspection take?',
+      answer: "Most thorough assessments take 45 minutes to 90 minutes, varying depending on roof size, complexity, and accessibility. We don't rush \u2014 finding minor issues now prevents costly repairs later.",
+    },
+    {
+      question: 'Can inspection reports help with insurance claims after storms?',
+      answer: 'Definitely. Detailed documentation with photos showing roof damage, damaged shingles, and other storm-related issues streamlines the claims process significantly. Many homeowners have used our reports to successfully file claims and receive coverage for repairs or replacement.',
+    },
   ];
 
   const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  };
-
-  const toggleFaq = (index: number) => {
-    setOpenFaqIndex(openFaqIndex === index ? null : index);
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer,
+      },
+    })),
   };
 
   return (
-    <div className="bg-zinc-950 text-white min-h-screen">
-        <Header />
+    <div className="min-h-screen bg-[#09090b] text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl">
-              <div className="mb-6">
-                <Link
-                  to="/roofing-services/roof-inspection/"
-                  className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
-                >
-                  <ChevronRight className="w-4 h-4 rotate-180" />
-                  Back to Roof Inspection Services
-                </Link>
-              </div>
-
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roof Inspection in Davie, Florida
-              </h1>
-
-              <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
-                <p>
-                  Davie is an inland Broward County community where roof systems experience strong seasonal storm exposure with wind-driven rain intrusion, accelerated heat and UV deterioration, and debris accumulation from mature landscaping where present. The town features a mix of single-family homes and HOA-governed neighborhoods with predominantly shingle and tile roofing systems, along with low-slope sections on patios and additions where applicable. All Phase Construction USA provides professional roof inspection services in Davie, beginning with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted inspections meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/davie/" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Davie</Link>, or use our <Link to="/service-areas/davie/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="tel:+17542275605"
-                  className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-center text-lg shadow-lg shadow-red-600/20"
-                >
-                  Call (754) 227-5605
-                </a>
-                <a
-                  href="#contact"
-                  className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg"
-                >
-                  Request Inspection
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Common Davie Inspection Problems */}
-        <section className="py-20 bg-zinc-900">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              What Our 21-Point Roof Inspection Covers in Davie
-            </h2>
-            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
-              Davie roof systems are exposed to seasonal storms with strong wind-driven rain, prolonged UV and heat exposure causing material deterioration, and debris accumulation in valleys and gutters from mature tree canopies where present. Roof inspection issues commonly include wind-driven rain intrusion at flashing and wall transitions after storm events, shingle lifting or creasing from gust forces and thermal movement, UV-driven sealant failure at pipe boots and penetrations, tile cracking or displacement where applicable, granule loss and brittle shingles from heat cycling, valley and gutter congestion from tree debris leading to overflow and fascia or soffit moisture exposure, and drainage restrictions on low-slope patio or addition roofs causing ponding marks and membrane stress.
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    Wind-Driven Rain at Flashing and Wall Transitions
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Seasonal storm patterns drive rainfall through compromised flashing seams and wall transitions, requiring targeted flashing inspections to eliminate moisture pathways and prevent interior damage.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    Shingle Lifting and Fastener Back-Out
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Gust forces and thermal cycling cause shingle lifting, creasing, and fastener back-out, creating blow-off risk and exposed underlayment requiring shingle replacement and perimeter reinforcement.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    UV-Driven Sealant Breakdown at Penetrations
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Prolonged UV exposure and thermal cycling deteriorate sealants around pipe boots, vents, and skylights, causing intermittent leaks that require component replacement and manufacturer-specified resealing.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    Granule Loss and Brittle Shingles
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Heat cycling and UV exposure accelerate shingle aging, causing granule loss and brittleness that increases crack and leak risk, requiring targeted shingle replacement before system-wide failure.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    Valley and Gutter Congestion From Tree Debris
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Mature landscaping contributes to debris accumulation in valleys and gutters where present, causing overflow and fascia or soffit moisture exposure requiring clearance and drainage verification.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    Low-Slope Drainage Restrictions on Patios and Additions
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Partial blockage or low-slope areas on patio and addition roofs cause ponding marks and accelerated membrane wear, requiring drainage clearance and localized membrane reinforcement.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-colors">
-                <div className="flex items-start gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                  <h3 className="text-xl font-semibold text-white">
-                    Tile Cracking and Displacement
-                  </h3>
-                </div>
-                <p className="text-zinc-300">
-                  Tile systems experience cracking or displacement from foot traffic, aging fasteners, and underlayment wear, creating localized underlayment stress and leak pathways requiring tile replacement and underlayment inspection.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Inspection Process */}
-        <section className="py-20 bg-black">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              21-Point Diagnostic Inspection Process
-            </h2>
-            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
-              All Phase Construction USA follows a structured diagnostic process before recommending any roof inspection. The process begins with interior symptom review and moisture pattern mapping, followed by attic evaluation where accessible, exterior field survey by roof system type, and comprehensive documentation. Findings are reviewed against current Florida Building Code standards, including HVHZ considerations where applicable. Only inspection scopes that can be completed without triggering unnecessary system-wide replacement are recommended, allowing property owners to make informed, code-aware decisions.
-            </p>
-
-            <div className="space-y-6">
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Interior Symptom Review and Moisture Pattern Mapping
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Documentation of ceiling staining, wall moisture, and leak timing patterns to establish diagnostic focus areas and guide field investigation priorities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Attic Evaluation (If Accessible)
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Inspection of attic staining patterns, ventilation adequacy, and decking condition to identify concealed moisture travel and structural concerns requiring attention.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Exterior Field Survey by Roof System Type
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Comprehensive examination of roof surface conditions, material integrity, and visible damage patterns specific to tile, shingle, metal, or flat roof assemblies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    4
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Detailed Inspection of Penetrations and Transitions
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Assessment of flashing, valleys, penetrations, edges, and wall transitions where complexity increases leak potential and inspection intervention is frequently needed.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    5
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Drainage Review for Low-Slope Areas
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Inspection of scuppers, drains, slope adequacy, and ponding indicators on flat and low-slope systems to identify drainage restrictions contributing to membrane stress.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    6
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Photo Documentation and Measured Scope
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Photographic documentation of conditions and preparation of measured inspection scope suitable for HOA review, insurance coordination, and permit requirements where applicable.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    7
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Florida Building Code Considerations
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Assessment of inspection scope against current Florida Building Code standards, including HVHZ detailing where applicable, to ensure compliance and insurability without triggering unnecessary replacement thresholds.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-900 border-l-4 border-red-600 p-6 rounded-r-lg">
-                <div className="flex items-start gap-4">
-                  <div className="bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                    8
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      Inspection Recommendations Based on Findings
-                    </h3>
-                    <p className="text-zinc-300 leading-relaxed">
-                      Preparation of inspection options ranging from targeted intervention to larger sectional remediation, based on diagnostic findings and property owner priorities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Roof Types Inspected */}
-        <section className="py-20 bg-zinc-900">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Roof Systems Inspected in Davie
-            </h2>
-            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
-              All Phase Construction USA performs code-compliant inspections on the following roof systems commonly found in Davie:
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Asphalt Shingle Roofs
-                </h3>
-                <p className="text-zinc-300 mb-3">
-                  Shingle replacement, fastener correction, and flashing inspections addressing wind uplift damage, sealant failure, and localized deterioration from UV exposure. Inspection approaches maintain manufacturer warranty coverage when materials are properly matched.
-                </p>
-                <p className="text-sm text-zinc-400 italic">
-                  Shingle inspections prove cost-effective when damage remains localized and surrounding materials maintain adequate service life.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Concrete and Clay Tile Roofing Systems
-                </h3>
-                <p className="text-zinc-300 mb-3">
-                  Individual tile replacement, underlayment section inspection, hip and ridge component restoration, and flashing upgrades for concrete and clay tile systems where present across Davie properties. Inspection feasibility depends on tile availability and underlayment condition assessment.
-                </p>
-                <p className="text-sm text-zinc-400 italic">
-                  Tile inspections avoid full replacement costs when structural components remain sound and materials can be properly matched.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Metal Roofing Systems
-                </h3>
-                <p className="text-zinc-300 mb-3">
-                  Panel replacement, fastener correction, and sealant restoration for standing seam and exposed-fastener metal roofing systems where present. Metal roof inspections accommodate thermal movement and maintain wind resistance ratings critical during storm events.
-                </p>
-                <p className="text-sm text-zinc-400 italic">
-                  Metal inspections must address thermal expansion cycles and maintain manufacturer-specified detailing protocols.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  Flat and Low-Slope Systems
-                </h3>
-                <p className="text-zinc-300 mb-3">
-                  Membrane inspections, seam correction, and drainage improvements for modified bitumen, TPO, and other flat and low-slope systems on patios, additions, and covered areas. Inspection techniques address both surface symptoms and underlying causal factors including drainage restrictions.
-                </p>
-                <p className="text-sm text-zinc-400 italic">
-                  Flat roof inspections require proper drainage correction and substrate preparation to achieve long-term performance.
-                </p>
-              </div>
-            </div>
-
-            <p className="mt-8 text-sm text-zinc-400 italic">
-              Inspection feasibility is evaluated based on system age, prior installation methods, and current code requirements.
-            </p>
-          </div>
-        </section>
-
-        {/* HOA & Insurance Considerations */}
-        <section className="py-20 bg-black">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              HOA and Insurance Coordination
-            </h2>
-            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
-              Davie includes numerous homeowner associations with specific architectural standards and approval processes for roof inspections. All Phase Construction USA coordinates documentation, scope clarity, and material specifications to support HOA compliance. When inspections involve insurance claims, inspection findings and photo documentation are provided to support the claim review process without offering legal or coverage determinations.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-10">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <FileCheck className="w-8 h-8 text-red-600" />
-                  <h3 className="text-2xl font-semibold text-white">
-                    HOA Coordination
-                  </h3>
-                </div>
-                <div className="space-y-4 text-zinc-300 leading-relaxed">
-                  <p>
-                    HOAs maintain architectural control standards governing material selection, color matching, and installation methodology for visible roof inspections. Inspection proposals require documentation demonstrating compliance with community aesthetic requirements.
-                  </p>
-                  <p>
-                    We provide comprehensive submission packages including material specifications, manufacturer data sheets, color samples, and installation methodology descriptions addressing common review criteria. Work scheduling and access coordination is routinely handled for HOA-governed properties and property manager requirements.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Shield className="w-8 h-8 text-red-600" />
-                  <h3 className="text-2xl font-semibold text-white">
-                    Insurance Documentation Requirements
-                  </h3>
-                </div>
-                <div className="space-y-4 text-zinc-300 leading-relaxed">
-                  <p>
-                    Insurance carriers scrutinize roof condition through inspection protocols identifying deficiencies requiring correction. Properly documented inspections addressing cited deficiencies demonstrate responsive property maintenance.
-                  </p>
-                  <p>
-                    Inspection documentation includes pre-inspection condition photography, detailed scope descriptions, material certifications, and post-inspection verification suitable for insurance submission. Documentation can support claim discussions by clearly separating observed storm-related damage from wear patterns, though coverage decisions remain with the insurer. Property owners should confirm carrier-specific requirements before proceeding.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-8">
-              <h4 className="text-xl font-semibold text-white mb-6">
-                Documentation Use Cases
-              </h4>
-              <ul className="space-y-3 text-zinc-300">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-white">HOA Submission Support:</strong> Material specifications and installation methodology for architectural review</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Insurance Coordination:</strong> Pre/post-inspection photography and scope documentation for carrier verification</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Property Management:</strong> Coordinated scheduling and documentation for property managers</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Warranty Records:</strong> Work completion documentation with material and labor warranty terms</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Planning Tools Table */}
-        <section className="py-20 bg-zinc-900">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              Roof Inspection Planning Tools
-            </h2>
-
-            <div className="overflow-x-auto">
-              <table className="w-full bg-zinc-800 border border-zinc-700 rounded-lg">
-                <thead>
-                  <tr className="bg-zinc-900 border-b border-zinc-700">
-                    <th className="px-6 py-4 text-left text-white font-semibold">What You're Seeing</th>
-                    <th className="px-6 py-4 text-left text-white font-semibold">Common Davie Cause</th>
-                    <th className="px-6 py-4 text-left text-white font-semibold">Why It Matters</th>
-                    <th className="px-6 py-4 text-left text-white font-semibold">Typical Inspection Approach</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-zinc-700">
-                    <td className="px-6 py-4 text-zinc-300">Ceiling staining after summer downpours</td>
-                    <td className="px-6 py-4 text-zinc-300">Wind-driven rain at step flashing or wall transition</td>
-                    <td className="px-6 py-4 text-zinc-300">Moisture migration into decking and insulation cavities</td>
-                    <td className="px-6 py-4 text-zinc-300">Targeted flashing reconstruction and reseal transitions</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="px-6 py-4 text-zinc-300">Drips around vent stack after storms</td>
-                    <td className="px-6 py-4 text-zinc-300">UV-cracked pipe boot collar from prolonged heat exposure</td>
-                    <td className="px-6 py-4 text-zinc-300">Intermittent leak path difficult to trace</td>
-                    <td className="px-6 py-4 text-zinc-300">Replace boot, reseat flashing, seal per system specs</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="px-6 py-4 text-zinc-300">Lifted shingles at corners or edges</td>
-                    <td className="px-6 py-4 text-zinc-300">Gust uplift combined with aged adhesive strips</td>
-                    <td className="px-6 py-4 text-zinc-300">Blow-off risk and exposed underlayment</td>
-                    <td className="px-6 py-4 text-zinc-300">Replace damaged shingles and reinforce perimeter detailing as appropriate</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="px-6 py-4 text-zinc-300">Granule piles in gutters with brittle tabs</td>
-                    <td className="px-6 py-4 text-zinc-300">Heat and UV cycling aging shingles</td>
-                    <td className="px-6 py-4 text-zinc-300">Higher leak risk at cracks and edges</td>
-                    <td className="px-6 py-4 text-zinc-300">Replace damaged shingles and evaluate adjacent field condition</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="px-6 py-4 text-zinc-300">Overflow staining at fascia or soffit line</td>
-                    <td className="px-6 py-4 text-zinc-300">Valley or gutter congestion from tree debris</td>
-                    <td className="px-6 py-4 text-zinc-300">Wood rot and interior moisture risk</td>
-                    <td className="px-6 py-4 text-zinc-300">Clear flow paths, adjust drainage as needed, verify edge flashing</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="px-6 py-4 text-zinc-300">Cracked or slipped tiles near valleys or walkway</td>
-                    <td className="px-6 py-4 text-zinc-300">Foot traffic combined with aging fasteners</td>
-                    <td className="px-6 py-4 text-zinc-300">Underlayment stress and accelerated wear at tile locations</td>
-                    <td className="px-6 py-4 text-zinc-300">Replace tiles and inspect/inspection localized underlayment as needed</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-zinc-300">Ponding marks on patio or flat section</td>
-                    <td className="px-6 py-4 text-zinc-300">Partial blockage or low-slope area restriction</td>
-                    <td className="px-6 py-4 text-zinc-300">Accelerated membrane wear at stress points from standing water</td>
-                    <td className="px-6 py-4 text-zinc-300">Clear drainage, reinforce membrane at stress points</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 mt-10">
-              <Link
-                to="/service-areas/davie/"
-                className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
-              >
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
-                  Davie Roofing Services
-                </h3>
-                <p className="text-zinc-300">
-                  Comprehensive roofing services including inspection and replacement for Davie properties.
-                </p>
-              </Link>
-
-              <Link
-                to="/service-areas/davie/roof-cost-estimate/"
-                className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
-              >
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
-                  Roof Cost Estimate
-                </h3>
-                <p className="text-zinc-300">
-                  Generate preliminary cost estimates based on property characteristics and inspection scope assumptions.
-                </p>
-              </Link>
-
-              <Link
-                to="/financing/"
-                className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
-              >
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
-                  Financing Options
-                </h3>
-                <p className="text-zinc-300">
-                  Explore financing options and flexible payment plans for roof inspection projects.
-                </p>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose All Phase */}
-        <section className="py-20 bg-black">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              Why Davie Property Owners Choose All Phase Construction USA for Roof Inspections
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">Inspection-First Diagnostic Approach</h4>
-                  <p className="text-zinc-300">Comprehensive evaluation pinpointing leak pathways and root causes rather than surface symptoms, providing property owners with accurate condition understanding and scope clarity.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">Photo Documentation and Clear Scopes</h4>
-                  <p className="text-zinc-300">Detailed photo documentation and measured inspection scopes suitable for HOA submissions, insurance coordination, and informed decision-making.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">Code-Aware Inspection Detailing</h4>
-                  <p className="text-zinc-300">Inspection planning aligned to Florida Building Code requirements with HVHZ provisions applied where applicable, ensuring compliance and insurability.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">Experience Across Multiple Roof Systems</h4>
-                  <p className="text-zinc-300">Technical competence with shingle, tile, metal, and flat/low-slope roof systems common to Davie residential properties.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">HOA-Conscious Workflows</h4>
-                  <p className="text-zinc-300">Proven experience coordinating with HOA boards and architectural review committees to meet approval processes and scheduling requirements.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold text-white text-lg mb-2">Licensed and Insured</h4>
-                  <p className="text-zinc-300">Florida-licensed roofing contractor maintaining full compliance with state regulatory requirements and comprehensive liability insurance coverage.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-20 bg-zinc-900">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              Roof Inspection FAQs – Davie, FL
-            </h2>
-
-            <div className="space-y-4">
-              {faqItems.map((faq, index) => (
-                <div
-                  key={index}
-                  className="bg-zinc-800 rounded-lg border border-zinc-700 overflow-hidden"
-                >
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full flex items-center justify-between p-6 text-left hover:bg-zinc-800/50 transition-colors duration-200"
-                  >
-                    <span className="text-lg font-semibold text-white pr-8">
-                      {faq.question}
-                    </span>
-                    {openFaqIndex === index ? (
-                      <Minus className="w-5 h-5 text-red-600 flex-shrink-0" />
-                    ) : (
-                      <Plus className="w-5 h-5 text-red-600 flex-shrink-0" />
-                    )}
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openFaqIndex === index ? 'max-h-[400px]' : 'max-h-0'
-                    }`}
-                  >
-                    <div className="px-6 pb-6 text-zinc-300 leading-relaxed">
-                      {faq.answer}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-zinc-950 via-black to-zinc-900 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-transparent"></div>
-          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Schedule a Professional Roof Inspection
-            </h2>
-            <p className="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Active leaks, visible damage, or suspected roof deterioration require prompt diagnostic assessment. Contact All Phase Construction USA for comprehensive roof inspection and code-compliant inspection scoping in Davie.
-            </p>
-
-            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-8 mb-8 max-w-xl mx-auto">
-              <div className="text-left space-y-2">
-                <p className="text-white font-semibold text-lg">All Phase Construction USA</p>
-                <p className="text-zinc-300">590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-                <p className="text-zinc-300">
-                  <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 transition-colors">
-                    (754) 227-5605
-                  </a>
-                </p>
-                <p className="text-zinc-300">
-                  <a href="mailto:leads@allphaseusa.com" className="text-red-600 hover:text-red-500 transition-colors">
-                    leads@allphaseusa.com
-                  </a>
-                </p>
-                <p className="text-zinc-300">
-                  <a href="https://allphaseconstructionfl.com" className="text-red-600 hover:text-red-500 transition-colors">
-                    allphaseconstructionfl.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+17542275605"
-                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
-              >
-                Call (754) 227-5605
-              </a>
-              <a
-                href="#contact"
-                className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg border border-zinc-700"
-              >
-                Request Inspection
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Form */}
-        <Contact />
-
-        {/* FAQ Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+      {/* Breadcrumb */}
+      <div className="bg-[#09090b] border-b border-zinc-800 py-3">
+        <div className="max-w-6xl mx-auto px-4">
+          <nav className="flex items-center gap-2 text-sm text-zinc-400">
+            <Link to="/" className="hover:text-white flex items-center gap-1"><Home size={14} /> Home</Link>
+            <ChevronRight size={14} />
+            <Link to="/roofing-services" className="hover:text-white">Roofing</Link>
+            <ChevronRight size={14} />
+            <Link to="/roof-inspection" className="hover:text-white">Roof Inspection</Link>
+            <ChevronRight size={14} />
+            <span className="text-white">Davie</span>
+          </nav>
+        </div>
       </div>
+
+      {/* Hero */}
+      <section className="py-16 px-4 bg-gradient-to-b from-zinc-900 to-[#09090b]">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Roof Inspection Davie FL — <span className="text-red-500">Know Before You Repair or Replace</span>
+          </h1>
+          <p className="text-xl text-zinc-300 mb-8 max-w-3xl">
+            Get the facts about your roof's condition before spending thousands on repairs or replacement you may not need.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              <Phone size={20} /> (754) 227-5605
+            </a>
+            <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              Schedule Free Inspection
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto space-y-5 text-lg text-zinc-300">
+          <p>
+            That water stain on your ceiling has you worried. Water stains on your ceilings are a clear indication of a leaky roof. Maybe missing shingles after last month's storm have you searching for answers. Before you commit to expensive roof repairs or a full replacement, there's a smarter first step &mdash; a professional roof inspection in Davie, FL.
+          </p>
+          <p>
+            Many homeowners in the Davie area face a frustrating dilemma &mdash; they know something's wrong with their roof, but they don't know whether they need minor repairs or an entire roof replacement. Without a thorough inspection, you're essentially guessing with your money. Some contractors push full replacements when targeted repairs would solve the problem. Others recommend quick fixes on a damaged roof that's beyond saving.
+          </p>
+          <p>
+            A professional inspection eliminates this uncertainty. In South Florida's climate, where intense UV rays, humidity, hurricane season, and heavy rains constantly test your roofing materials, understanding your roof's true condition isn't optional &mdash; it's essential for making cost-effective decisions that protect both your home's interior and your wallet. The unique climate of Davie, Florida, requires roofing solutions that can withstand intense sun and heavy rainfall. Regular roof inspections can help maintain the value of your home &mdash; a well-maintained roof can last for decades, but neglecting regular inspections can significantly shorten its lifespan.
+          </p>
+        </div>
+      </section>
+
+      {/* Why Choose */}
+      <section className="py-12 px-4 bg-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-white">Why Choose Professional Roof Inspections in Davie?</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: 'Early Detection Prevents Costly Repairs',
+                body: 'Small cracks, minor issues with flashing, and damaged shingles caught early cost hundreds to fix. Left undetected, they escalate into structural damage requiring thousands in repairs or full replacement.',
+              },
+              {
+                title: 'Accurate Assessment of Repair vs. Replacement Needs',
+                body: "A roof inspector provides objective analysis of your roof's condition and specifically evaluates your roof's integrity. This assessment determines whether targeted roof repairs will restore your roof's integrity or if a full replacement is truly necessary.",
+              },
+              {
+                title: 'Storm Damage Documentation for Insurance Claims',
+                body: 'After high winds, hail, or hurricane season events, a thorough assessment with detailed photos streamlines the claims process and helps you recover maximum reimbursement.',
+              },
+              {
+                title: 'South Florida Climate Expertise',
+                body: "Experienced roofers understand how South Florida's climate accelerates wear on tile roofing, metal roofing, shingle systems, and flat roofs differently than northern climates.",
+              },
+              {
+                title: 'Free Inspection Eliminates Guesswork',
+                body: 'A free roof inspection removes the financial barrier to getting answers, preventing contractor overselling and ensuring you invest only in work your roof actually needs.',
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 p-6 bg-zinc-800 rounded-lg">
+                <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={22} />
+                <div>
+                  <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-zinc-400 text-sm">{item.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Repair vs Replace Table */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-white">Repair vs. Replace Decision Guide</h2>
+          <p className="text-zinc-400 mb-8">Not sure whether you need a repair or a full replacement? Here's how we evaluate your situation:</p>
+          <div className="overflow-x-auto rounded-lg border border-zinc-700">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-zinc-800">
+                  <th className="text-left py-4 px-6 text-white font-semibold">Situation</th>
+                  <th className="text-left py-4 px-6 text-white font-semibold">Recommended Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Isolated damaged shingles or tiles', 'Repair'],
+                  ['Storm damage affecting under 30% of surface', 'Repair'],
+                  ['Roof age under 15 years with good structure', 'Repair'],
+                  ['Multiple active leaks with widespread damage', 'Replace'],
+                  ['Roof age 20+ years with significant granule loss', 'Replace'],
+                  ['Failed deck or structural damage present', 'Replace'],
+                ].map(([situation, action], i) => (
+                  <tr key={i} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-800/50'}>
+                    <td className="py-4 px-6 text-zinc-300">{situation}</td>
+                    <td className="py-4 px-6">
+                      <span className={`font-semibold ${action === 'Repair' ? 'text-green-400' : 'text-red-400'}`}>
+                        {action}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Inspection Process */}
+      <section className="py-12 px-4 bg-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-white">How Our Davie Roof Inspection Process Works</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                step: '01',
+                title: 'Free Consultation and Exterior Visual Assessment',
+                body: "We start with a ground-level evaluation and careful exterior examination of your entire roof. This includes checking for missing or damaged shingles, granule loss, sagging sections, and visible storm damage. We assess all roofing materials \u2014 whether you have asphalt shingles, tile roofing, metal roofing, or flat roofs common throughout Davie neighborhoods.",
+              },
+              {
+                step: '02',
+                title: 'Comprehensive Interior Inspection and Structural Evaluation',
+                body: "The interior inspection reveals problems invisible from outside. We examine your attic space for water infiltration signs, proper ventilation, mold indicators, and structural integrity issues. Ceiling stains, active leaks, and moisture damage in your home's interior tell us what's happening beneath the surface.",
+              },
+              {
+                step: '03',
+                title: 'Detailed Report with Photos Showing Exact Issues',
+                body: 'You receive documentation showing precisely what we found \u2014 nail pops, cracking tiles, sealant degradation, ventilation systems problems, and any areas needing immediate attention. This thorough inspection report becomes valuable for insurance claims, home sales, and warranty purposes.',
+              },
+              {
+                step: '04',
+                title: 'Clear Explanation of Repair vs. Replacement Options',
+                body: "We sit down with you to explain findings honestly. You'll understand whether minor repairs will fix leaks and extend your roof's life, or if your roof's age and extensive damage make replacement the smarter investment. No pressure \u2014 just facts to guide your decision.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
+                <div className="text-4xl font-bold text-red-500 mb-3">{item.step}</div>
+                <h3 className="font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-zinc-400 text-sm">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Common Roof Problems */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-white">Common Roof Problems in Davie Homes</h2>
+          <p className="text-zinc-400 mb-8">Davie homes face unique roofing challenges due to the subtropical climate &mdash; high winds, heavy rainfall, and intense sunlight. Here are the most common issues we find:</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Wind and Storm Damage',
+                body: 'High winds during hurricane season can lift shingles, dislodge tiles, or tear sections of roofing material from the roof. This leaves your home vulnerable to water infiltration and further damage, especially if not caught early.',
+              },
+              {
+                title: 'Water Leaks and Moisture Intrusion',
+                body: 'Heavy rainfall common in South Florida can exploit even the smallest vulnerabilities in your roof. Leaky roofs often start as minor issues &mdash; small cracks or missing shingles &mdash; but can quickly lead to structural damage and costly repairs.',
+              },
+              {
+                title: 'Sun and Heat Degradation',
+                body: "Intense sunlight and high temperatures accelerate the aging of roofing materials. Over time, shingles become brittle, tiles crack, and flat roofs develop blisters or splits &mdash; all of which compromise your roof's integrity.",
+              },
+              {
+                title: 'Mold, Algae, and Mildew Growth',
+                body: 'The combination of humidity and frequent rain creates ideal conditions for mold and algae to thrive on Davie roofs. These growths weaken roofing materials and lead to further damage if left untreated.',
+              },
+              {
+                title: 'Clogged or Damaged Gutters',
+                body: 'Blocked gutters prevent proper drainage, causing water to back up and seep under roofing materials. This can result in rot, leaks, and even foundation issues if not addressed promptly.',
+              },
+              {
+                title: 'Aging Roof Systems',
+                body: "As roofs age, their ability to withstand South Florida's harsh weather conditions diminishes. Regular roof inspections help homeowners monitor their roof's condition and plan for timely repairs or replacement before extensive damage occurs.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700">
+                <h3 className="font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-zinc-400 text-sm">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What Makes Us Different */}
+      <section className="py-12 px-4 bg-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-white">What Makes Our Davie Roof Inspections Different?</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: 'Local Neighborhood Expertise',
+                body: "We understand Davie's diverse housing stock, from ranch style homes in Pine Island Ridge to newer construction in Forest Ridge and established properties throughout the Davie community. We also serve properties near Nova Southeastern University, Tree Tops Park, the Bergeron Rodeo Grounds, and along the Orange Drive corridor.",
+              },
+              {
+                title: 'Florida Building Code Knowledge',
+                body: 'Post-Hurricane Andrew codes require specific wind-resistant standards. We verify whether your roof meets current Broward County HVHZ requirements &mdash; critical information if you're planning any roofing project or selling your home.',
+              },
+              {
+                title: 'No-Pressure, Best-Interest Approach',
+                body: 'Our roof inspector focuses on what your roof actually needs. If minor problems can be addressed with targeted repairs, we tell you. If your damaged roof requires replacement for long lasting protection, we explain why honestly.',
+              },
+              {
+                title: 'Documentation That Works For You',
+                body: 'Our inspection reports support insurance claims after storms, provide leverage in real estate negotiations, and give you proof of your roof's condition for any purpose you need.',
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 p-6 bg-zinc-800 rounded-lg">
+                <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={22} />
+                <div>
+                  <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-zinc-400 text-sm">{item.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Real Google Reviews */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-white">What Our Customers Are Saying</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                text: 'Last month I had my roof replaced by All Phase Construction. From the beginning of the project to the end I have nothing to say other than I love dealing with every member of that team. Karl Walczak came to the house, went on the roof into the crawl space and presented a very clear picture of what had to be done and the cost. From that moment on I knew that I could trust him. They kept me informed every step of the way, were on time, and did exactly what they were supposed to. My roof is beautiful and well done. I would recommend you 100%.',
+                name: 'Evelyn Tainsky',
+              },
+              {
+                text: 'Recently I had a roof put on my house by All Phase USA. I cannot say enough good about this company. Matt and Dillon brought in all the materials and showed me by computer how it was going to be installed. I got a call every week from Carissa letting me know where we were in the process. Matt was the project manager and kept on top of things. The crew covered all my plants and cleaned everything up at the end of the day. If you need a new roof call All Phase USA.',
+                name: 'Betty Fronizer',
+              },
+              {
+                text: 'I had a tile roof installed with a solar attic fan by All Phase Construction, and I couldn't be happier with the results. From start to finish, the communication was clear and thorough. I had plenty of choices when it came to companies, and yes, some were less expensive, but the professionalism, quality, and peace of mind I got with All Phase made it absolutely worth it. A special shoutout to Graham, my salesman, and to Matt, the project manager. Highly recommend this team if you want it done right the first time!',
+                name: 'Mom',
+              },
+            ].map((review, i) => (
+              <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700 flex flex-col gap-4">
+                <div className="flex gap-1 text-yellow-400 text-lg">{'★'.repeat(5)}</div>
+                <p className="text-zinc-300 text-sm leading-relaxed">{review.text}</p>
+                <div className="mt-auto">
+                  <p className="font-semibold text-white">{review.name}</p>
+                  <p className="text-xs text-zinc-500">Google Review</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Value */}
+      <section className="py-12 px-4 bg-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-white">Inspection Investment Value</h2>
+          <h3 className="text-xl font-semibold text-red-500 mb-4">Free Initial Roof Inspection for Davie Homeowners</h3>
+          <p className="text-zinc-300 mb-6">
+            We believe every homeowner deserves to know their roof's condition without financial barriers. That's why we offer a free roof inspection to residents throughout Davie and surrounding Broward County communities.
+          </p>
+          <p className="text-zinc-300 mb-8">
+            Consider the math: The average roof replacement costs $8,000 to $20,000 for typical Davie homes. Meanwhile, targeted roof repairs often range from $500 to $5,000 depending on the issue. A thorough inspection ensures you're investing in the right solution.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              'Clear understanding of whether you need repair or replacement',
+              'Documentation that strengthens insurance claims &mdash; potentially recovering 70&ndash;100% of repair costs',
+              'Negotiating power for real estate transactions',
+              'Prevention of further damage from undetected problems',
+              'Peace of mind about your roof's condition',
+            ].map((item, i) => (
+              <div key={i} className="flex gap-3 items-start">
+                <CheckCircle2 className="text-red-500 flex-shrink-0 mt-1" size={18} />
+                <p className="text-zinc-300 text-sm">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-white">Frequently Asked Questions About Roof Inspections in Davie</h2>
+          <div className="space-y-3">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border border-zinc-700 rounded-lg overflow-hidden">
+                <button
+                  className="w-full flex items-center justify-between p-5 text-left bg-zinc-800 hover:bg-zinc-700 transition-colors"
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                >
+                  <span className="font-semibold text-white pr-4">{faq.question}</span>
+                  {openFaq === i ? (
+                    <Minus className="text-red-500 flex-shrink-0" size={20} />
+                  ) : (
+                    <Plus className="text-red-500 flex-shrink-0" size={20} />
+                  )}
+                </button>
+                {openFaq === i && (
+                  <div className="p-5 bg-zinc-900 text-zinc-300 text-sm leading-relaxed">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-4 bg-zinc-900">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4 text-white">Schedule Your Free Davie Roof Inspection Today</h2>
+          <p className="text-zinc-300 mb-4 max-w-3xl mx-auto">
+            Stop guessing about your roof's condition. Whether you're seeing warning signs like roof leaks, noticing missing or damaged shingles, or simply want to prevent costly repairs before they happen, a professional inspection gives you the answers you need.
+          </p>
+          <p className="text-zinc-400 mb-8 max-w-3xl mx-auto text-sm">
+            We serve all Davie neighborhoods including Pine Island Ridge, Forest Ridge, Shenandoah, and throughout the Davie community including properties near Tree Tops Park, the Bergeron Rodeo Grounds, and Nova Southeastern University.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              <Phone size={20} /> (754) 227-5605
+            </a>
+            <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              Request Free Inspection
+            </Link>
+          </div>
+          <p className="text-zinc-500 text-sm">
+            Dual Licensed: CGC-1526236 &amp; CCC-1331464 &nbsp;&nbsp;|&nbsp;&nbsp; Fully Insured &nbsp;&nbsp;|&nbsp;&nbsp; Serving Davie, FL and Broward County
+          </p>
+        </div>
+      </section>
+
+    </div>
   );
 }
