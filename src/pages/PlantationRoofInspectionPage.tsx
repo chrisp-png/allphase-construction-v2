@@ -80,7 +80,7 @@ export default function PlantationRoofInspectionPage() {
             Roof Inspection Plantation FL — <span className="text-red-500">Maximize Insurance Discounts & Protect Your Home</span>
           </h1>
           <p className="text-xl text-zinc-300 mb-8 max-w-3xl">
-            Get the facts about your roof\'s condition before spending thousands on repairs or replacement you may not need.
+            Get the facts about your roof's condition before spending thousands on repairs or replacement you may not need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
@@ -97,13 +97,13 @@ export default function PlantationRoofInspectionPage() {
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto space-y-5 text-lg text-zinc-300">
           <p>
-            That water stain on your ceiling has you worried. Water stains on your ceilings are a clear indication of a leaky roof. Maybe missing shingles after last month\'s storm have you searching for answers. Before you commit to expensive roof repairs or a full replacement, there\'s a smarter first step &mdash; a professional roof inspection in Plantation, FL.
+            That water stain on your ceiling has you worried. Water stains on your ceilings are a clear indication of a leaky roof. Maybe missing shingles after last month's storm have you searching for answers. Before you commit to expensive roof repairs or a full replacement, there's a smarter first step &mdash; a professional roof inspection in Plantation, FL.
           </p>
           <p>
-            Many homeowners in the Plantation area face a frustrating dilemma &mdash; they know something\'s wrong with their roof, but they don\'t know whether they need minor repairs or an entire roof replacement. Without a thorough inspection, you\'re essentially guessing with your money. Some contractors push full replacements when targeted repairs would solve the problem. Others recommend quick fixes on a damaged roof that\'s beyond saving.
+            Many homeowners in the Plantation area face a frustrating dilemma &mdash; they know something's wrong with their roof, but they don't know whether they need minor repairs or an entire roof replacement. Without a thorough inspection, you're essentially guessing with your money. Some contractors push full replacements when targeted repairs would solve the problem. Others recommend quick fixes on a damaged roof that's beyond saving.
           </p>
           <p>
-            A professional inspection eliminates this uncertainty. In South Florida\'s climate, where intense UV rays, humidity, hurricane season, and heavy rains constantly test your roofing materials, understanding your roof\'s true condition isn\'t optional &mdash; it\'s essential for making cost-effective decisions that protect both your home\'s interior and your wallet. The unique climate of Plantation, Florida, requires roofing solutions that can withstand intense sun and heavy rainfall. Regular roof inspections can help maintain the value of your home &mdash; a well-maintained roof can last for decades, but neglecting regular inspections can significantly shorten its lifespan.
+            A professional inspection eliminates this uncertainty. In South Florida's climate, where intense UV rays, humidity, hurricane season, and heavy rains constantly test your roofing materials, understanding your roof's true condition isn't optional &mdash; it's essential for making cost-effective decisions that protect both your home's interior and your wallet. The unique climate of Plantation, Florida, requires roofing solutions that can withstand intense sun and heavy rainfall. Regular roof inspections can help maintain the value of your home &mdash; a well-maintained roof can last for decades, but neglecting regular inspections can significantly shorten its lifespan.
           </p>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function PlantationRoofInspectionPage() {
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-white">Repair vs. Replace Decision Guide</h2>
-          <p className="text-zinc-400 mb-8">Not sure whether you need a repair or a full replacement? Here\'s how we evaluate your situation:</p>
+          <p className="text-zinc-400 mb-8">Not sure whether you need a repair or a full replacement? Here's how we evaluate your situation:</p>
           <div className="overflow-x-auto rounded-lg border border-zinc-700">
             <table className="w-full text-sm">
               <thead>
@@ -335,10 +335,10 @@ export default function PlantationRoofInspectionPage() {
           <h2 className="text-3xl font-bold mb-4 text-white">Inspection Investment Value</h2>
           <h3 className="text-xl font-semibold text-red-500 mb-4">Free Initial Roof Inspection for Plantation Homeowners</h3>
           <p className="text-zinc-300 mb-6">
-            We believe every homeowner deserves to know their roof\'s condition without financial barriers. That\'s why we offer a free roof inspection to residents throughout Plantation and surrounding Broward County communities.
+            We believe every homeowner deserves to know their roof's condition without financial barriers. That's why we offer a free roof inspection to residents throughout Plantation and surrounding Broward County communities.
           </p>
           <p className="text-zinc-300 mb-8">
-            Consider the math: The average roof replacement costs $8,000 to $20,000 for typical Plantation homes. Meanwhile, targeted roof repairs often range from $500 to $5,000 depending on the issue. A thorough inspection ensures you\'re investing in the right solution.
+            Consider the math: The average roof replacement costs $8,000 to $20,000 for typical Plantation homes. Meanwhile, targeted roof repairs often range from $500 to $5,000 depending on the issue. A thorough inspection ensures you're investing in the right solution.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -391,7 +391,7 @@ export default function PlantationRoofInspectionPage() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">Schedule Your Plantation Roof Inspection Today</h2>
           <p className="text-zinc-300 mb-4 max-w-3xl mx-auto">
-            Stop guessing about your roof\'s condition. Whether you\'re seeing warning signs like roof leaks, noticing missing or damaged shingles, or simply want to prevent costly repairs before they happen, a professional inspection gives you the answers you need.
+            Stop guessing about your roof's condition. Whether you're seeing warning signs like roof leaks, noticing missing or damaged shingles, or simply want to prevent costly repairs before they happen, a professional inspection gives you the answers you need.
           </p>
           <p className="text-zinc-400 mb-8 max-w-3xl mx-auto text-sm">
             We serve all Plantation neighborhoods including Chapel Trail, Pembroke Falls, Silver Lakes, Nautica, Pines City Center, and properties along the Pembroke Road corridor near the western Broward edge.
