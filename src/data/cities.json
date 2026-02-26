@@ -11,6 +11,7 @@
   { "slug": "delray-beach", "city": "Delray Beach", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "fort-lauderdale", "city": "Fort Lauderdale", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "greenacres", "city": "Greenacres", "state": "FL", "parent": "deerfield-beach" },
+  { "slug": "gulf-stream", "city": "Gulf Stream", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "hallandale-beach", "city": "Hallandale Beach", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "haverhill", "city": "Haverhill", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "highland-beach", "city": "Highland Beach", "state": "FL", "parent": "deerfield-beach" },

@@ -62,6 +62,7 @@ export const locations: Location[] = [
     descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-compliant. Tile, metal, shingle & flat roofing. Dual-licensed (CCC & CGC). Free inspections."
   },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
+  { slug: "gulf-stream", city: "Gulf Stream", state: "FL" },
   { slug: "hallandale-beach", city: "Hallandale Beach", state: "FL" },
   { slug: "haverhill", city: "Haverhill", state: "FL" },
   { slug: "highland-beach", city: "Highland Beach", state: "FL" },
