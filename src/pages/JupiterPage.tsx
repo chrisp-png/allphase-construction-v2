@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, CheckCircle2, Shield, CloudRain, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp, Star } from 'lucide-react';
+import { Phone, CheckCircle2, Shield, Home, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp, Star } from 'lucide-react';
 import EmbeddedRoofCalculator from '../components/EmbeddedRoofCalculator';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
