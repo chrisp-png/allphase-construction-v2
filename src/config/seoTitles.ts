@@ -20,6 +20,7 @@ export interface SEOMetadata {
   canonical: string;
   ogTitle?: string;
   ogDescription?: string;
+  ogUrl?: string;
 }
 
 /**
@@ -326,6 +327,34 @@ export function generateSEOMetadata(path: string): SEOMetadata {
       title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
       description: `All Phase Construction USA is a licensed roofing contractor serving ${CITY_NAMES[slug] || slug}, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
+    };
+  }
+
+    // Dynamic /roof-repair/:slug handler
+  if (normalizedPath.startsWith('/roof-repair/')) {
+    const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
+    const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return {
+      title: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
+      description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services from All Phase Construction USA. Licensed & insured. Call today.`,
+      canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
+      ogTitle: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
+      ogDescription: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services from All Phase Construction USA.`,
+      ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
+    };
+  }
+
+  // Dynamic /roof-inspection/:slug handler
+  if (normalizedPath.startsWith('/roof-inspection/')) {
+    const slug = normalizedPath.replace('/roof-inspection/', '').replace(/\/$/, '');
+    const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return {
+      title: `Roof Inspection ${cityName} FL | Certified Roof Inspectors`,
+      description: `Professional roof inspection in ${cityName}, FL. Catch hidden damage before it becomes an emergency. Licensed inspectors, same-week scheduling. All Phase Construction USA.`,
+      canonical: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
+      ogTitle: `Roof Inspection ${cityName} FL | Certified Roof Inspectors`,
+      ogDescription: `Professional roof inspection in ${cityName}, FL. Licensed inspectors, same-week scheduling. All Phase Construction USA.`,
+      ogUrl: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
     };
   }
 
