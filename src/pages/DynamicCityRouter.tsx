@@ -10,6 +10,7 @@ const CoralSpringsMoneyPage = lazy(() => import('./locations/CoralSpringsMoneyPa
 const DeerfieldBeachCityPage = lazy(() => import('./locations/DeerfieldBeachCityPage'));
 const DelrayBeachMoneyPage = lazy(() => import('./locations/DelrayBeachMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./locations/FortLauderdaleMoneyPage'));
+const JupiterPage = lazy(() => import('./JupiterPage'));
 const PompanoBeachMoneyPage = lazy(() => import('./locations/PompanoBeachMoneyPage'));
 const WellingtonPage = lazy(() => import('./WellingtonPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./locations/WestPalmBeachMoneyPage'));
@@ -30,6 +31,7 @@ const HaverillRoofRepairPage = lazy(() => import('./HaverillRoofRepairPage'));
 const HighlandBeachRoofRepairPage = lazy(() => import('./HighlandBeachRoofRepairPage'));
 const HollywoodRoofRepairPage = lazy(() => import('./HollywoodRoofRepairPage'));
 const HypoluxoRoofRepairPage = lazy(() => import('./HypoluxoRoofRepairPage'));
+const JupiterRoofRepairPage = lazy(() => import('./locations/JupiterRoofRepairPage'));
 const LakeParkRoofRepairPage = lazy(() => import('./LakeParkRoofRepairPage'));
 const LakeWorthBeachRoofRepairPage = lazy(() => import('./LakeWorthBeachRoofRepairPage'));
 const LantanaRoofRepairPage = lazy(() => import('./LantanaRoofRepairPage'));
@@ -66,6 +68,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'deerfield-beach': DeerfieldBeachCityPage,
   'delray-beach': DelrayBeachMoneyPage,
   'fort-lauderdale': FortLauderdaleMoneyPage,
+  'jupiter': JupiterPage,
   'pompano-beach': PompanoBeachMoneyPage,
   'wellington': WellingtonPage,
   'west-palm-beach': WestPalmBeachMoneyPage,
@@ -88,6 +91,7 @@ const roofRepairPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elem
   'highland-beach': HighlandBeachRoofRepairPage,
   'hollywood': HollywoodRoofRepairPage,
   'hypoluxo': HypoluxoRoofRepairPage,
+  'jupiter': JupiterRoofRepairPage,
   'lake-park': LakeParkRoofRepairPage,
   'lake-worth': LakeWorthBeachRoofRepairPage,
   'lantana': LantanaRoofRepairPage,

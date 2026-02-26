@@ -18,6 +18,7 @@
   { "slug": "hillsboro-beach", "city": "Hillsboro Beach", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "hollywood", "city": "Hollywood", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "hypoluxo", "city": "Hypoluxo", "state": "FL", "parent": "deerfield-beach" },
+  { "slug": "jupiter", "city": "Jupiter", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "jupiter-inlet-colony", "city": "Jupiter Inlet Colony", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "lake-park", "city": "Lake Park", "state": "FL", "parent": "deerfield-beach" },
     { "slug": "lake-worth-beach", "city": "Lake Worth Beach", "state": "FL", "parent": "deerfield-beach" },
