@@ -123,6 +123,7 @@ export default function ServiceAreasHubPage() {
     { name: 'Haverhill', path: '/locations/haverhill/' },
     { name: 'Highland Beach', path: '/locations/highland-beach/' },
     { name: 'Hypoluxo', path: '/locations/hypoluxo/' },
+    { name: 'Jupiter', path: '/locations/jupiter/' },
     { name: 'Jupiter Inlet Colony', path: '/locations/jupiter-inlet-colony/' },
     { name: 'Lake Worth Beach', path: '/locations/lake-worth-beach/' },
     { name: 'Lantana', path: '/locations/lantana/' },
