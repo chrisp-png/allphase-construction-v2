@@ -10,7 +10,7 @@ export default function JupiterPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Jupiter Roofer | HVHZ Certified | All Phase';
+    document.title = 'Jupiter Roofing Contractor | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -182,23 +182,23 @@ export default function JupiterPage() {
 
   const testimonials = [
     {
-      name: 'Robert M.',
+      name: 'Betty Fronizer',
       location: 'Jupiter, FL',
       rating: 5,
-      text: 'All Phase Construction replaced our tile roof after Hurricane Ian damage. Professional crew, great communication, and they handled all the insurance paperwork. Highly recommend for any Jupiter homeowner.',
+      text: 'Recently I had a roof put on my house by All Phase USA. I cannot say enough good about this company. Matt and Dillon brought in all the materials and showed me by computer how it was going to be installed. I got a call every week from Carissa letting me know where we were in the process. The crew covered all my plants and cleaned everything up at the end of the day. If you need a new roof call All Phase USA.'
     },
     {
-      name: 'Sandra K.',
-      location: 'Jupiter Inlet Colony, FL',
+      name: 'Anthony Colarusso',
+      location: 'Palm Beach County, FL',
       rating: 5,
-      text: 'Outstanding work on our flat roof repair. The team was punctual, respectful of our property, and completed the job ahead of schedule. Quality workmanship at a fair price.',
+      text: 'Just had my roof completed by All Phase. From start to finish they did everything they said they would. Once I signed with them they were way more communicative than I expected. Matt in production kept me in the loop from start to finish and Charly was there to walk me through the tear off and answered all the questions I had. Highly recommend.'
     },
     {
-      name: 'Michael T.',
-      location: 'Jupiter Farms, FL',
+      name: 'Douglas Dolphy',
+      location: 'Jupiter, FL',
       rating: 5,
-      text: 'We had a metal roof installed by All Phase and could not be happier. They helped us choose the right material for our home and the installation was flawless. Five stars across the board.',
-    },
+      text: 'Awesome team work. Discussion held with us as to expectations from start to finish. Very professional and addressed promptly any concerns we had. Great attention paid to safety of our property and their own workers. Thanks Dylan and Graham, team leader Israel, for keeping things together. Great assets to All Phase Construction Company.'
+    }
   ];
 
   return (
@@ -285,6 +285,9 @@ export default function JupiterPage() {
               </p>
               <p>
                 Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
+              </p>
+              <p className="text-gray-300 mb-4">
+                We serve Jupiter's most prestigious communities — from the waterfront estates of Admiral's Cove and The Bear's Club to the custom homes of Ranch Colony, Jonathan's Landing, Loxahatchee Club, Ritz Carlton Residences, Jupiter Inlet Colony, and Seminole Landing. Whether your property sits on the Intracoastal or on a multi-acre lot in Jupiter Farms, we bring the same precision and professionalism to every project.
               </p>
             </div>
           </div>
@@ -556,6 +559,12 @@ export default function JupiterPage() {
                 <span>Same-Week Scheduling Available</span>
               </div>
             </div>
+              <div className="mt-8 text-center text-sm text-gray-400">
+                <p className="font-semibold text-white">All Phase Construction USA</p>
+                <p>590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
+                <p>📞 <a href="tel:7542275605" className="text-red-400 hover:text-red-300">754-227-5605</a></p>
+                <p>✉️ <a href="mailto:leads@allphaseusa.com" className="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
+              </div>
           </div>
         </div>
       </div>
