@@ -229,6 +229,15 @@ function generateDeerfieldBeachHQContent() {
 
   <p><strong>Call (754) 227-5605</strong> to schedule your free professional roof inspection or to speak with a licensed roofing specialist about your Deerfield Beach roofing project. We provide same-day inspection availability, transparent estimates, and comprehensive project documentation for all residential and commercial roofing services.</p>
 
+
+<div class="seo-service-links">
+  <h2>Roofing Services in Deerfield Beach, FL</h2>
+  <ul>
+    <li><a href="/roof-repair/deerfield-beach">Roof Repair in Deerfield Beach, FL</a></li>
+    <li><a href="/roof-inspection/deerfield-beach">Roof Inspection in Deerfield Beach, FL</a></li>
+    <li><a href="/roof-replacement-process">Roof Replacement in Deerfield Beach, FL</a></li>
+  </ul>
+</div>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -646,6 +655,15 @@ function generateBocaRatonServiceHubContent() {
   <p><strong>If you need a roofer in Boca Raton FL, start with an inspection that shows you what is happening and what it costs to fix correctly.</strong></p>
   <p><strong>Call All Phase Construction USA 24/7: (754) 227-5605</strong></p>
 
+
+<div class="seo-service-links">
+  <h2>Roofing Services in Boca Raton, FL</h2>
+  <ul>
+    <li><a href="/roof-repair/boca-raton">Roof Repair in Boca Raton, FL</a></li>
+    <li><a href="/roof-inspection/boca-raton">Roof Inspection in Boca Raton, FL</a></li>
+    <li><a href="/roof-replacement-process">Roof Replacement in Boca Raton, FL</a></li>
+  </ul>
+</div>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -700,6 +718,15 @@ function generateServiceHubContent(cityName, citySlug) {
   <h2>Get Started with Your ${cityName} Roofing Project</h2>
   <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist. We provide free professional inspections, transparent estimates, and detailed project timelines for all ${cityName} roofing services.</p>
 
+
+<div class="seo-service-links">
+  <h2>Roofing Services in ${cityName}, FL</h2>
+  <ul>
+    <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
+    <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
+    <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
+  </ul>
+</div>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -768,6 +795,14 @@ function generateRoofRepairContent(cityName, citySlug) {
     <strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Professional ${cityName} roof inspection</a>
   </p>
 
+
+<div class="seo-service-links">
+  <h2>More Roofing Services in ${cityName}, FL</h2>
+  <ul>
+    <li><a href="/locations/${citySlug}">Roofing Contractor in ${cityName}, FL</a></li>
+    <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
+  </ul>
+</div>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -877,6 +912,14 @@ function generateRoofInspectionContent(cityName, citySlug) {
     <strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Emergency ${cityName} roof repairs</a>
   </p>
 
+
+<div class="seo-service-links">
+  <h2>More Roofing Services in ${cityName}, FL</h2>
+  <ul>
+    <li><a href="/locations/${citySlug}">Roofing Contractor in ${cityName}, FL</a></li>
+    <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
+  </ul>
+</div>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
