@@ -94,6 +94,9 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /roof-inspection/surfside /roof-inspection 301!
 /roof-repair/light-house-point /roof-repair/lighthouse-point 301!
 /roof-inspection/light-house-point /roof-inspection/lighthouse-point 301!
+/locations/lake-worth /locations/lake-worth-beach 301!
+/roof-repair/lake-worth /roof-repair/lake-worth-beach 301!
+/roof-inspection/lake-worth /roof-inspection/lake-worth-beach 301!
 
 # ======================================================================
 # SPA FALLBACK + STATIC FILES

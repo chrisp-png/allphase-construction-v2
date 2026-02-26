@@ -71,7 +71,6 @@ export const locations: Location[] = [
   { slug: "hypoluxo", city: "Hypoluxo", state: "FL" },
   { slug: "jupiter-inlet-colony", city: "Jupiter Inlet Colony", state: "FL" },
   { slug: "lake-park", city: "Lake Park", state: "FL" },
-  { slug: "lake-worth", city: "Lake Worth", state: "FL" },
   { slug: "lantana", city: "Lantana", state: "FL" },
   { slug: "lauderdale-by-the-sea", city: "Lauderdale-By-The-Sea", state: "FL" },
   { slug: "lauderhill", city: "Lauderhill", state: "FL" },
