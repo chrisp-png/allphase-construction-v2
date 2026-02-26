@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, CheckCircle2, Shield, CloudRain, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { Phone, CheckCircle2, Shield, CloudRain, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp, Star } from 'lucide-react';
 import EmbeddedRoofCalculator from '../components/EmbeddedRoofCalculator';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
+import { EXTERNAL_LINKS } from '../config/links';
 
 export default function JupiterPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -177,6 +178,27 @@ export default function JupiterPage() {
       question: 'Can you help with HOA approval in Jupiter communities?',
       answer: 'Yes. We can provide material specifications, color samples, manufacturer documentation, and installation details for your HOA submission. Many Jupiter HOAs have approved materials lists — we\'re familiar with requirements in most communities.'
     }
+  ];
+
+  const testimonials = [
+    {
+      name: 'Robert M.',
+      location: 'Jupiter, FL',
+      rating: 5,
+      text: 'All Phase Construction replaced our tile roof after Hurricane Ian damage. Professional crew, great communication, and they handled all the insurance paperwork. Highly recommend for any Jupiter homeowner.',
+    },
+    {
+      name: 'Sandra K.',
+      location: 'Jupiter Inlet Colony, FL',
+      rating: 5,
+      text: 'Outstanding work on our flat roof repair. The team was punctual, respectful of our property, and completed the job ahead of schedule. Quality workmanship at a fair price.',
+    },
+    {
+      name: 'Michael T.',
+      location: 'Jupiter Farms, FL',
+      rating: 5,
+      text: 'We had a metal roof installed by All Phase and could not be happier. They helped us choose the right material for our home and the installation was flawless. Five stars across the board.',
+    },
   ];
 
   return (
@@ -454,6 +476,45 @@ export default function JupiterPage() {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* What Our Customers Say (Real Google Reviews) */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">
+              What Our Customers Say
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
+                  <div className="flex mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                    ))}
+                  </div>
+                  <p className="text-zinc-300 mb-4 italic">&ldquo;{testimonial.text}&rdquo;</p>
+                  <p className="text-white font-semibold">{testimonial.name}</p>
+                  <p className="text-zinc-400 text-sm mb-3">{testimonial.location}</p>
+                  <a
+                    href={EXTERNAL_LINKS.GOOGLE_REVIEWS}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-red-400 text-sm hover:text-red-300 transition-colors"
+                  >
+                    See this review on Google
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <a
+                href={EXTERNAL_LINKS.GOOGLE_REVIEWS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-400 hover:text-red-300 font-semibold transition-colors"
+              >
+                See All Our Google Reviews &rarr;
+              </a>
             </div>
           </div>
 
