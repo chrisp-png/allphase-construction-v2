@@ -23,10 +23,7 @@
   { "slug": "lantana", "city": "Lantana", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "lauderdale-by-the-sea", "city": "Lauderdale-By-The-Sea", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "lauderhill", "city": "Lauderhill", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "lazy-lake", "city": "Lazy Lake", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "light-house-point", "city": "Light House Point", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "lighthouse-point", "city": "Lighthouse Point", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "manalapan", "city": "Manalapan", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "margate", "city": "Margate", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "miramar", "city": "Miramar", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "north-lauderdale", "city": "North Lauderdale", "state": "FL", "parent": "deerfield-beach" },
@@ -41,16 +38,11 @@
   { "slug": "plantation", "city": "Plantation", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "pompano-beach", "city": "Pompano Beach", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "royal-palm-beach", "city": "Royal Palm Beach", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "south-palm-beach", "city": "South Palm Beach", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "tamarac", "city": "Tamarac", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "west-palm-beach", "city": "West Palm Beach", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "wellington", "city": "Wellington", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "westlake", "city": "Westlake", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "weston", "city": "Weston", "state": "FL", "parent": "deerfield-beach" },
   { "slug": "wilton-manors", "city": "Wilton Manors", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "surfside", "city": "Surfside", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "sunrise", "city": "Sunrise", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "west-palm-beach-county", "city": "West Palm Beach County", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "boca-raton-county", "city": "Boca Raton County", "state": "FL", "parent": "deerfield-beach" },
-  { "slug": "boynton-beach-county", "city": "Boynton Beach County", "state": "FL", "parent": "deerfield-beach" }
+  { "slug": "sunrise", "city": "Sunrise", "state": "FL", "parent": "deerfield-beach" }
 ]

@@ -80,6 +80,21 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /roof-replacement/coral-springs /roof-replacement 301!
 /roof-replacement/coconut-creek /roof-replacement 301!
 
+# Removed cities from cities.json — redirect to service hub
+/roof-repair/lazy-lake /roof-repair 301!
+/roof-repair/manalapan /roof-repair 301!
+/roof-repair/south-palm-beach /roof-repair 301!
+/roof-repair/surfside /roof-repair 301!
+/roof-repair/west-palm-beach-county /roof-repair 301!
+/roof-repair/boca-raton-county /roof-repair 301!
+/roof-repair/boynton-beach-county /roof-repair 301!
+/roof-inspection/lazy-lake /roof-inspection 301!
+/roof-inspection/manalapan /roof-inspection 301!
+/roof-inspection/south-palm-beach /roof-inspection 301!
+/roof-inspection/surfside /roof-inspection 301!
+/roof-repair/light-house-point /roof-repair/lighthouse-point 301!
+/roof-inspection/light-house-point /roof-inspection/lighthouse-point 301!
+
 # ======================================================================
 # SPA FALLBACK + STATIC FILES
 # Handled in netlify.toml [[redirects]] section.

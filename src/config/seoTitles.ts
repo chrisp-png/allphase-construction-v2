@@ -142,6 +142,31 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Trusted roofing contractor in Fort Lauderdale, FL. HVHZ certified, dual-licensed (CCC & CGC). Tile, metal, shingle, flat & commercial roofing. 20+ years experience. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
   },
+  '/locations/gulf-stream': {
+    title: 'Gulf Stream Roofing Contractor | All Phase Construction USA',
+    description: 'Licensed roofing contractor serving Gulf Stream, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/gulf-stream',
+  },
+  '/locations/jupiter': {
+    title: 'Jupiter Roofing Contractor | All Phase Construction USA',
+    description: 'Licensed roofing contractor serving Jupiter, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/jupiter',
+  },
+  '/locations/lake-worth-beach': {
+    title: 'Lake Worth Beach Roofing Contractor | All Phase Construction USA',
+    description: 'Licensed roofing contractor serving Lake Worth Beach, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach',
+  },
+  '/locations/loxahatchee-groves': {
+    title: 'Loxahatchee Groves Roofing Contractor | All Phase Construction USA',
+    description: 'Licensed roofing contractor serving Loxahatchee Groves, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves',
+  },
+  '/locations/pembroke-park': {
+    title: 'Pembroke Park Roofing Contractor | All Phase Construction USA',
+    description: 'Licensed roofing contractor serving Pembroke Park, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
+  },
   '/roof-repair/fort-lauderdale': {
     title: 'Fort Lauderdale Roof Repair | HVHZ-Certified | All Phase Construction USA',
     description: 'Expert roof repair in Fort Lauderdale, FL. HVHZ-certified, fast response, licensed & insured. Tile, shingle, metal & flat roof repairs. Free inspection.',
