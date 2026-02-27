@@ -35,28 +35,33 @@ const EXCLUDED_SLUGS = new Set([
 
 // Redirect/alias slugs that return 301 - NEVER include in sitemap
 const REDIRECT_OR_ALIAS_SLUGS = new Set([
-  'lake-worth-beach',
   'light-house-point'
 ]);
 
-// APPROVED 16 canonical repair cities (200 OK) for /roof-repair/{city}/
+// APPROVED canonical repair cities (200 OK) for /roof-repair/{city}/
 const APPROVED_REPAIR_CITIES = new Set([
-  'boca-raton',
-  'coral-springs',
-  'boynton-beach',
-  'delray-beach',
-  'fort-lauderdale',
-  'west-palm-beach',
-  'deerfield-beach',
-  'coconut-creek',
-  'parkland',
-  'pompano-beach',
-  'hollywood',
-  'plantation',
-  'lauderhill',
-  'lake-worth',
-  'wellington',
-  'tamarac',
+  'boca-raton', 'boynton-beach', 'coconut-creek', 'cooper-city',
+  'coral-springs', 'davie', 'deerfield-beach', 'delray-beach',
+  'fort-lauderdale', 'greenacres', 'gulf-stream', 'hallandale-beach',
+  'haverhill', 'highland-beach', 'hollywood', 'hypoluxo',
+  'lake-worth', 'lake-worth-beach', 'lantana', 'lauderdale-by-the-sea',
+  'lauderhill', 'lighthouse-point', 'margate', 'miramar',
+  'oakland-park', 'ocean-ridge', 'palm-beach', 'palm-beach-gardens',
+  'parkland', 'pembroke-pines', 'plantation', 'pompano-beach',
+  'royal-palm-beach', 'sunrise', 'tamarac', 'wellington',
+  'west-palm-beach', 'weston', 'wilton-manors'
+]);
+
+// APPROVED canonical inspection cities (200 OK) for /roof-inspection/{city}/
+const APPROVED_INSPECTION_CITIES = new Set([
+  'boca-raton', 'boynton-beach', 'coconut-creek', 'cooper-city', 'coral-springs',
+  'davie', 'deerfield-beach', 'delray-beach', 'fort-lauderdale', 'greenacres',
+  'gulf-stream', 'hallandale-beach', 'haverhill', 'highland-beach', 'hollywood',
+  'hypoluxo', 'lake-worth-beach', 'lantana', 'lauderdale-by-the-sea', 'lauderhill',
+  'lighthouse-point', 'margate', 'miramar', 'oakland-park', 'ocean-ridge',
+  'palm-beach', 'palm-beach-gardens', 'parkland', 'pembroke-pines', 'plantation',
+  'pompano-beach', 'royal-palm-beach', 'sunrise', 'tamarac', 'wellington',
+  'west-palm-beach', 'weston', 'wilton-manors'
 ]);
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -64,7 +69,6 @@ const APPROVED_REPAIR_CITIES = new Set([
 // ═══════════════════════════════════════════════════════════════════════════
 
 const EXCLUDED_PATTERNS = [
-  /\/roof-inspection\/(?!hollywood|davie|greenacres|miramar|pembroke-pines|plantation|sunrise)[^/]+/,               // ALL /roof-inspection/{city} excluded
   /\/tile-roof-inspection-/,
   /\/metal-roof-inspection-/,
   /\/flat-roof-inspection-/,
@@ -218,12 +222,11 @@ const LOCATION_SUB_PAGES = [
 
 console.log('Generating Canonical City Pages...\n');
 console.log(`  Approved repair cities: ${APPROVED_REPAIR_CITIES.size}`);
+console.log(`  Approved inspection cities: ${APPROVED_INSPECTION_CITIES.size}`);
 console.log(`  Location money pages: ${LOCATION_MONEY_PAGES.length}`);
-console.log(`  Location sub-pages: ${LOCATION_SUB_PAGES.length}`);
-console.log(`  Inspection city pages: 0 (ALL /roof-inspection/{city} removed from sitemap)\n`);
+console.log(`  Location sub-pages: ${LOCATION_SUB_PAGES.length}\n`);
 
 // SILO 2: Roof Repair - /roof-repair/[city]/
-// SILO 3: /roof-inspection/{city}/ - removed from sitemap entirely
 console.log(`Adding ${APPROVED_REPAIR_CITIES.size} Roof Repair pages (APPROVED CITIES ONLY)...`);
 for (const slug of APPROVED_REPAIR_CITIES) {
   // Guard: never include excluded or redirect/alias slugs
@@ -242,7 +245,26 @@ for (const slug of APPROVED_REPAIR_CITIES) {
   });
 }
 
-console.log(`Total city pages added: ${APPROVED_REPAIR_CITIES.size}\n`);
+// SILO 3: Roof Inspection - /roof-inspection/{city}/
+console.log(`Adding ${APPROVED_INSPECTION_CITIES.size} Roof Inspection pages (APPROVED CITIES ONLY)...`);
+for (const slug of APPROVED_INSPECTION_CITIES) {
+  // Guard: never include excluded or redirect/alias slugs
+  if (EXCLUDED_SLUGS.has(slug) || REDIRECT_OR_ALIAS_SLUGS.has(slug)) {
+    console.log(`BLOCKED: Attempted to add excluded/redirect slug: ${slug}`);
+    continue;
+  }
+  const cityName = cityMap.get(slug) || slug;
+  entries.push({
+    section: 'Roof Inspection Services',
+    label: `Roof Inspection in ${cityName}`,
+    path: ensureTrailingSlash(`/roof-inspection/${slug}`),
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly'
+  });
+}
+
+console.log(`Total city pages added: ${APPROVED_REPAIR_CITIES.size + APPROVED_INSPECTION_CITIES.size}\n`);
 
 // ═══════════════════════════════════════════════════════════════════════════
 // LOCATION MONEY PAGES - Priority 0.9 (Main Money Pages)
@@ -290,6 +312,7 @@ console.log(`Total location pages added: ${LOCATION_MONEY_PAGES.length + LOCATIO
 entries.push(
   { section: 'Resources', label: 'How to Hire Roofing Contractor', path: '/how-to-hire-roofing-contractor/', indexable: true, priority: 0.8, changefreq: 'monthly' },
   { section: 'Services', label: 'Single Ply Roofing', path: '/single-ply-roofing/', indexable: true, priority: 0.8, changefreq: 'monthly' },
+  { section: 'Services', label: 'Roof Repair', path: '/roof-repair/', indexable: true, priority: 0.9, changefreq: 'monthly' },
   { section: 'Tools', label: 'Roof Cost Calculator', path: '/roof-cost-calculator/', indexable: true, priority: 0.8, changefreq: 'monthly' }
 );
 
@@ -332,11 +355,13 @@ if (locationUrls.length !== expectedLocationCount) {
   }
 }
 
-// CHECK 2: No /roof-inspection/{city}/ URLs (parent /roof-inspection/ is OK)
-const inspCityUrls = allUrls.filter(u => /\/roof-inspection\/(?!hollywood|davie|greenacres|miramar|pembroke-pines|plantation|sunrise)[^/]+\/$/.test(u) && !u.endsWith('/roof-inspection/'));
-if (inspCityUrls.length > 0) {
-  validationErrors.push(`FAIL: ${inspCityUrls.length} /roof-inspection/{city}/ URLs found:`);
-  inspCityUrls.forEach(u => validationErrors.push(`  ${u}`));
+// CHECK 2: /roof-inspection/{city}/ must ONLY contain approved cities
+const inspCityUrls = allUrls.filter(u => u.includes('/roof-inspection/') && !u.endsWith('/roof-inspection/'));
+for (const u of inspCityUrls) {
+  const m = u.match(/\/roof-inspection\/([^/]+)\//);
+  if (m && !APPROVED_INSPECTION_CITIES.has(m[1])) {
+    validationErrors.push(`FAIL: Unapproved inspection city in sitemap: ${u}`);
+  }
 }
 
 // CHECK 3: /roof-repair/{city}/ must ONLY contain approved cities
@@ -348,12 +373,7 @@ for (const u of repairCityUrls) {
   }
 }
 
-// CHECK 4: No lake-worth-beach or light-house-point anywhere
-const lwbUrls = allUrls.filter(u => u.includes('lake-worth-beach'));
-if (lwbUrls.length > 0) {
-  validationErrors.push(`FAIL: lake-worth-beach found in ${lwbUrls.length} URLs:`);
-  lwbUrls.forEach(u => validationErrors.push(`  ${u}`));
-}
+// CHECK 4: No light-house-point anywhere
 const lhpUrls = allUrls.filter(u => u.includes('light-house-point'));
 if (lhpUrls.length > 0) {
   validationErrors.push(`FAIL: light-house-point found in ${lhpUrls.length} URLs:`);
@@ -400,9 +420,9 @@ if (validationErrors.length > 0) {
   console.log('No duplicate URLs');
   console.log('All URLs have consistent trailing slashes');
   console.log(`Correct number of /locations/ URLs: ${locationUrls.length} (${LOCATION_MONEY_PAGES.length} money pages + ${LOCATION_SUB_PAGES.length} sub-pages)`);
-  console.log('No /roof-inspection/{city}/ URLs');
-  console.log(`All ${repairCityUrls.length} roof-repair URLs are in APPROVED list (16 cities)`);
-  console.log('No lake-worth-beach or light-house-point');
+  console.log(`All ${inspCityUrls.length} roof-inspection URLs are in APPROVED list (${APPROVED_INSPECTION_CITIES.size} cities)`);
+  console.log(`All ${repairCityUrls.length} roof-repair URLs are in APPROVED list (${APPROVED_REPAIR_CITIES.size} cities)`);
+  console.log('No light-house-point alias URLs');
   console.log('Sitemap contains ONLY canonical 200-OK URLs!\n');
 }
 
