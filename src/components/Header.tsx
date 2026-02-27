@@ -265,6 +265,10 @@ export default function Header() {
               </div>
             </div>
 
+            <Link to="/roof-repair/" className="text-white hover:text-red-600 transition-colors font-medium text-base whitespace-nowrap">
+              Roof Repair
+            </Link>
+
             <div className="relative group">
               <button
                 className="text-white hover:text-red-600 transition-colors font-medium flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-red-600 rounded px-2 py-3 text-base whitespace-nowrap"
@@ -476,6 +480,10 @@ export default function Header() {
                 </div>
               )}
             </div>
+
+            <Link to="/roof-repair/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+              Roof Repair
+            </Link>
 
             <div>
               <button
