@@ -9,15 +9,15 @@ export default function WestPalmBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'West Palm Beach Roofer | HVHZ Certified | All Phase';
+    document.title = 'West Palm Beach Roofing Contractor | HVHZ Certified | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'West Palm Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'West Palm Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605';
       document.head.appendChild(meta);
     }
 
@@ -68,78 +68,40 @@ export default function WestPalmBeachPage() {
 
   const services = [
     {
+      title: 'Roof Replacement',
+      description: "Complete HVHZ-compliant replacement for all roof types with manufacturer warranties.",
+      path: '/roofing-services/roof-replacement/',
+      icon: Home
+    },
+    {
+      title: 'Emergency Repairs',
+      description: "24/7 response for active leaks, storm damage, missing shingles, and emergency tarping.",
+      path: '/roofing-services/roof-repair/',
+      icon: Wrench
+    },
+    {
+      title: 'Professional Inspections',
+      description: "21-point inspections for insurance documentation, pre-purchase evaluations, and maintenance assessments.",
+      path: '/roof-inspection/',
+      icon: Shield
+    },
+    {
       title: 'Tile Roofing',
-      description: "Popular throughout West Palm Beach. Premium concrete and clay tile installations for the city's diverse architectural styles.",
+      description: "Clay and concrete tile installations for historic districts and Mediterranean-style homes.",
       path: '/tile-roofing/',
       icon: Home
     },
     {
       title: 'Metal Roofing',
-      description: "Modern metal roofing solutions for West Palm Beach homes and commercial buildings. Energy-efficient and durable.",
+      description: "Standing seam and panel systems for commercial buildings and modern residences.",
       path: '/metal-roofing/',
-      icon: Shield
-    },
-    {
-      title: 'Shingle Roofing',
-      description: "Reliable architectural shingles for West Palm Beach's diverse neighborhoods — from historic districts to newer developments.",
-      path: '/shingle-roofing/',
-      icon: Home
-    },
-    {
-      title: 'Flat Roofing',
-      description: "Commercial flat roofing systems for West Palm Beach's extensive business districts and modern residential designs.",
-      path: '/flat-roofing/',
       icon: Building2
-    },
-    {
-      title: 'Roof Repair & Restoration',
-      description: "Expert repairs for West Palm Beach properties. Historic restoration to modern maintenance. 5-year certification letters available.",
-      path: '/roofing-services/roof-repair/',
-      icon: Wrench
     },
     {
       title: 'Commercial Roofing',
-      description: "Extensive commercial roofing experience in West Palm Beach — office buildings, retail centers, government facilities, and multi-family properties.",
+      description: "TPO, modified bitumen, and BUR systems for commercial properties throughout West Palm Beach.",
       path: '/commercial-roofing/',
       icon: Building2
-    }
-  ];
-
-  const challenges = [
-    {
-      title: 'Diverse Property Types',
-      description: "West Palm Beach features everything from historic homes to modern high-rises, waterfront estates to urban apartments. Each property type presents unique roofing challenges requiring specialized knowledge and adaptability."
-    },
-    {
-      title: 'Waterfront Salt Air',
-      description: "Properties near the Intracoastal Waterway and Lake Worth face salt air corrosion on roofing materials and metal components. We use corrosion-resistant materials and proper installation techniques for coastal properties."
-    },
-    {
-      title: 'Hurricane Exposure',
-      description: "As Palm Beach County's largest city, West Palm Beach faces direct hurricane threats. We engineer roofing systems for high winds and storm conditions — because Florida Building Code minimums are just the baseline."
-    },
-    {
-      title: 'Urban Environment',
-      description: "Urban roofing presents unique challenges: limited access, neighboring properties, noise restrictions, and parking considerations. We have extensive experience navigating these complexities efficiently and professionally."
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: 'Dual Licensed',
-      description: "We hold both a General Contractor license (CGC-1526236) and Roofing Contractor license (CCC-1331464). From historic renovations to modern commercial buildings, we have the licensing and expertise for any project."
-    },
-    {
-      title: 'West Palm Beach Experience',
-      description: "We've completed hundreds of residential and commercial projects throughout West Palm Beach. We understand the city's diverse neighborhoods, building codes, and the unique challenges of Florida's largest Palm Beach County city."
-    },
-    {
-      title: 'Complete Project Management',
-      description: "Every job includes detailed photo documentation, transparent pricing, permit coordination, inspection scheduling, wind mitigation forms, and manufacturer warranties. Professional project management from start to finish."
-    },
-    {
-      title: '5-Year Certification Letters',
-      description: "If your roof qualifies, we provide the certification letter required under Florida Statute 627.7011 to maintain insurance coverage and avoid the policy non-renewal crisis affecting homeowners statewide."
     }
   ];
 
@@ -154,28 +116,28 @@ export default function WestPalmBeachPage() {
 
   const faqs = [
     {
-      question: 'How much does a roof replacement cost in West Palm Beach?',
-      answer: 'Roof replacement costs in West Palm Beach typically range from $10,000 to $55,000+ for residential properties, and higher for commercial buildings. Costs depend on size, material choice, property type, and complexity. We provide free inspections and detailed written estimates for both residential and commercial projects.'
+      question: 'What makes All Phase Construction different from other West Palm Beach roofers?',
+      answer: 'We hold both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236), giving us structural authority that standard roofing contractors lack. When we encounter structural issues during a roof replacement, we can evaluate and repair the complete system under one warranty — no delays, no additional contractors.'
     },
     {
-      question: 'What roofing material is best for West Palm Beach properties?',
-      answer: 'West Palm Beach\'s diverse housing stock means different materials work for different properties. Tile roofing is popular and handles Florida\'s climate well. Architectural shingles are cost-effective with good performance. Metal roofing offers energy efficiency. For commercial properties, TPO and PVC are common choices. We\'ll recommend the best option for your specific building during inspection.'
+      question: 'Does West Palm Beach require HVHZ-compliant roofing?',
+      answer: 'Yes. West Palm Beach is in the High Velocity Hurricane Zone, requiring installations that withstand 175+ mph winds. We use enhanced fastening schedules, high-wind rated materials, and engineered roof-to-wall connections on every project. Every installation passes Palm Beach County inspection on the first attempt.'
     },
     {
-      question: 'Do you handle commercial roofing in West Palm Beach?',
-      answer: 'Yes. We have extensive commercial roofing experience throughout West Palm Beach — office buildings, retail centers, multi-family properties, and government facilities. We understand commercial building codes, project scheduling requirements, and the coordination needed for occupied buildings.'
+      question: 'Can you work on historic district properties in West Palm Beach?',
+      answer: 'Absolutely. We have extensive experience with West Palm Beach\'s historic districts including Grandview Heights, Old Northwood, Flamingo Park, and El Cid. We understand preservation board requirements, can source period-correct materials, and have the structural expertise to bring older homes to current hurricane code standards.'
     },
     {
-      question: 'Do you pull permits for roofing work in West Palm Beach?',
-      answer: 'Yes, always. West Palm Beach requires permits for roof replacements on both residential and commercial properties. We handle all permit applications, code compliance documentation, and inspection scheduling. You\'ll receive complete records for your files.'
+      question: 'Do you offer financing for West Palm Beach roofing projects?',
+      answer: 'Yes. We offer flexible financing plans including credit-based and non-credit-based options with competitive rates and flexible terms. Visit our Roof Pricing Guide for detailed cost information by material and roof size.'
     },
     {
       question: 'How long does a roof replacement take in West Palm Beach?',
-      answer: 'Residential roof replacements typically take 2-5 days depending on size and material. Commercial projects vary significantly based on building size and type. We provide detailed project timelines before beginning work and coordinate scheduling to minimize disruption.'
+      answer: 'Most residential projects take 3-7 days depending on roof size, material choice, and property complexity. Historic district projects may require additional time for preservation board coordination. We provide detailed timelines during inspection and handle all permit and inspection scheduling.'
     },
     {
-      question: 'Do you work on historic properties in West Palm Beach?',
-      answer: 'Yes. We have experience working on historic properties and understand the requirements for preservation districts. We can work with appropriate materials and techniques to maintain architectural integrity while upgrading to modern standards where allowed.'
+      question: 'Do you install impact windows and doors?',
+      answer: 'Yes. As a dual-licensed contractor, we provide complete storm protection services including impact-resistant windows and doors. Many homeowners upgrade their entire building envelope for maximum hurricane protection and insurance savings.'
     }
   ];
 
@@ -201,36 +163,36 @@ export default function WestPalmBeachPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Roofing Services in{' '}
+              Expert Roofing Contractor in{' '}
               <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                West Palm Beach, Florida
+                West Palm Beach, FL
               </span>
             </h1>
             <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Serviced by All Phase Construction USA — Based in Deerfield Beach
+              Dual-Licensed Roofing & General Contractor
             </p>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Professional roofing services for West Palm Beach — Palm Beach County's largest city and county seat.
+              Dispatched from our Deerfield Beach HQ, All Phase Construction USA serves West Palm Beach with both Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236) — structural authority that standard roofing contractors cannot match.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>20+ Years Experience</span>
+                <span>Dual Licensed (CCC & CGC)</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Florida Licensed</span>
+                <span>HVHZ Certified</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Commercial & Residential</span>
+                <span>Historic District Expertise</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspections</span>
+                <span>Family Owned</span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -252,17 +214,17 @@ export default function WestPalmBeachPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Your Trusted Roofer in West Palm Beach
+              Why Dual Licensing Matters in West Palm Beach
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                While our main office is located in Deerfield Beach, our licensed roofing crews regularly service homes and commercial properties throughout West Palm Beach and nearby communities. For over 20 years, All Phase Construction has been serving West Palm Beach property owners with professional roofing services. As Palm Beach County's largest city and county seat with over 110,000 residents, West Palm Beach is a diverse urban center featuring historic neighborhoods, modern downtown high-rises, waterfront estates, suburban communities, and extensive commercial districts.
+                Most West Palm Beach roofing contractors hold only a CCC license, limiting them to roof surface work. When they encounter structural issues — damaged trusses, inadequate roof-to-wall connections, compromised decking — they must stop and hire a separate general contractor, creating delays, cost overruns, and warranty gaps.
               </p>
               <p>
-                West Palm Beach's diversity creates unique roofing challenges. Historic homes in Flamingo Park or Old Northwood require different approaches than modern condos downtown or waterfront properties along the Intracoastal. Commercial projects demand expertise in flat roofing systems, project coordination, and occupied building considerations. Whether residential or commercial, every project faces Florida's intense sun, hurricane threats, and strict building codes.
+                Our CGC license authorizes us to evaluate and repair the complete structural system supporting your roof. During every West Palm Beach roof replacement, we inspect deck fastening, assess truss integrity, verify roof-to-wall connections, and ensure full Florida Building Code compliance — all under one warranty.
               </p>
               <p>
-                Before making major roofing decisions, schedule a <Link to="/tile-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess condition and remaining life, a <Link to="/metal-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> to evaluate energy-efficient systems, or a <Link to="/flat-roof-inspection-palm-beach-county/" className="text-red-500 hover:text-red-400 underline transition-colors">flat roof inspection</Link> for commercial buildings to detect membrane deterioration early.
+                Family owned and operated, with decades of experience across West Palm Beach's most demanding residential, commercial, and historic district projects. We also perform impact window and door installations as part of our comprehensive storm protection services.
               </p>
             </div>
           </div>
@@ -270,47 +232,110 @@ export default function WestPalmBeachPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <span className="inline-block px-4 py-2 bg-red-600/10 text-red-500 rounded-full text-sm font-semibold mb-4 border border-red-600/20">
-                Florida Code Compliant
+                HVHZ Certified
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Code Requirements in West Palm Beach
+                High Velocity Hurricane Zone Compliance
               </h2>
               <p className="text-zinc-400 max-w-4xl mx-auto mb-8">
-                West Palm Beach follows Palm Beach County building codes designed for hurricane protection. While not in Broward's HVHZ, all roofing must meet strict Florida Building Code requirements including:
+                West Palm Beach sits in South Florida's High Velocity Hurricane Zone (HVHZ), where building codes mandate the most stringent wind resistance standards in the United States. Every roof installation must withstand 175+ mph wind speeds.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Wind Load Engineering</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Enhanced Fastening Schedules</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  All roofing systems must meet wind load requirements based on building location, height, and roof geometry. We engineer installations accordingly for both residential and commercial properties.
+                  We use ring-shank nails at 6-inch spacing, high-wind rated shingles with reinforced mat construction, and upgraded hip and ridge cap systems with specialty adhesive.
                 </p>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Code-Compliant Installation</h3>
+                <h3 className="text-xl font-bold text-white mb-3">Engineered Roof-to-Wall Connections</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  From underlayment specifications to fastener requirements to flashing details, every component must meet Florida code. We follow manufacturers' specifications and local standards.
+                  Every installation includes engineered connections that transfer wind loads directly to the structural frame — critical for hurricane protection.
                 </p>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Permits & Inspections</h3>
+                <h3 className="text-xl font-bold text-white mb-3">First-Pass Inspection Approval</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  West Palm Beach requires permits and inspections for all roofing work. We handle applications, coordinate inspections, and ensure compliance for residential and commercial projects.
+                  Every installation passes Palm Beach County building department inspection on the first attempt. Many homeowners discover too late that their contractor's work doesn't meet code.
+                </p>
+              </div>
+              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-white mb-3">Insurance Premium Reductions</h3>
+                <p className="text-zinc-400 leading-relaxed">
+                  Florida building codes require hurricane-rated materials that can qualify homeowners for insurance premium reductions through wind mitigation.
                 </p>
               </div>
             </div>
             <p className="text-zinc-400 text-center max-w-3xl mx-auto italic">
-              "West Palm Beach property owners need contractors who understand Florida's building codes and deliver installations that meet hurricane standards — not companies cutting corners."
+              "Florida's intense heat, humidity, salt air, and hurricane seasons place unique demands on every roofing system. HVHZ compliance isn't optional — it's the minimum standard for life safety."
             </p>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Palm Beach County Building Code Expertise
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed mb-8">
+                <p>
+                  Operating from our Deerfield Beach headquarters, we serve West Palm Beach with intimate knowledge of Palm Beach County building codes, permit requirements, and inspection procedures. Our established relationships with Palm Beach County building officials and proven track record of first-pass inspection approvals means your project moves from permit application through final certificate of completion without delays.
+                </p>
+                <p>
+                  Out-of-area contractors frequently cause delays of weeks or months navigating Palm Beach County-specific requirements our team handles daily.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Historic District Roofing Expertise
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  All Phase Construction USA has completed roofing projects in West Palm Beach's historic districts, where strict preservation guidelines require matching original clay tile profiles, colors, and installation methods. These installations demand sourcing period-correct materials and executing precise craftsmanship to maintain the architectural character of historically designated properties — expertise that only a dual-licensed contractor with both roofing and general contracting authority can deliver.
+                </p>
+                <p>
+                  West Palm Beach is home to some of South Florida's most architecturally significant neighborhoods, including the Grandview Heights Historic District, Old Northwood, Flamingo Park, and El Cid. Replacing a roof on a historically designated property involves coordination with local preservation boards, adherence to design guidelines, and the structural knowledge to work with older building systems while bringing the roof to current hurricane code standards.
+                </p>
+                <p>
+                  Our CGC license gives us the authority to address the structural challenges common in older homes, including outdated truss systems, non-standard decking, and original roof-to-wall connections that predate modern wind codes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                West Palm Beach Neighborhoods We Serve
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  All Phase Construction USA serves the full range of West Palm Beach residential and commercial properties. Downtown, the Clematis Street corridor and Rosemary Square area feature a mix of historic commercial buildings and newer mixed-use properties requiring both preservation sensitivity and HVHZ compliance.
+                </p>
+                <p>
+                  El Cid, Flamingo Park, and Grandview Heights are West Palm Beach's most architecturally significant residential neighborhoods — Mediterranean Revival and Spanish Colonial homes where clay tile roofing dominates and period-correct materials are required. Old Northwood and Northwood Village feature Craftsman and bungalow-style homes entering their first or second full replacement cycle.
+                </p>
+                <p>
+                  SoSo (South of Southern), Prospect Park, and Kenilworth Park represent established mid-century residential neighborhoods where aging roofs require full HVHZ upgrades. The Palm Beach Lakes corridor and Intracoastal waterfront communities bring the same coastal salt air and wind exposure demands as Broward's waterfront neighborhoods, requiring corrosion-resistant fasteners and sealed decking systems throughout.
+                </p>
+                <p>
+                  Proximity to Palm Beach Island means we regularly serve some of the highest-value properties in all of South Florida — estates where material quality, craftsmanship, and documentation standards are non-negotiable.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roofing Services in West Palm Beach
+                Complete Roofing Services in West Palm Beach
               </h2>
               <p className="text-zinc-400 max-w-3xl mx-auto">
-                Complete residential and commercial roofing services — from repairs to full replacements.
+                From emergency repairs to complete replacements — all roof types, all project sizes.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -339,89 +364,6 @@ export default function WestPalmBeachPage() {
             </div>
           </div>
 
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                What West Palm Beach Roofs Face
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                South Florida's largest urban center presents unique roofing challenges:
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {challenges.map((challenge, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{challenge.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{challenge.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-                Roofing Considerations in West Palm Beach, Florida
-              </h2>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b border-zinc-700">
-                        <th className="text-left py-3 px-4 text-white font-semibold">Factor</th>
-                        <th className="text-left py-3 px-4 text-white font-semibold">Why It Matters in West Palm Beach</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-zinc-400">
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Hurricane Exposure</td>
-                        <td className="py-3 px-4">West Palm Beach is located in a high-wind coastal region where roofing systems must meet enhanced uplift and fastening requirements.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Coastal & Inland Conditions</td>
-                        <td className="py-3 px-4">Properties closer to the Intracoastal and ocean face salt air exposure, while western areas experience intense heat and storm-driven rain.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Roofing Materials</td>
-                        <td className="py-3 px-4">Tile, metal, and architectural shingles are common, with material selection often influenced by wind resistance and long-term durability.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Building Codes</td>
-                        <td className="py-3 px-4">Roofing installations must comply with Florida Building Code requirements, including wind uplift ratings and approved underlayment systems.</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-medium text-white">Insurance & Inspections</td>
-                        <td className="py-3 px-4">Proper installation and documentation can help homeowners qualify for insurance discounts and smoother inspections.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <p className="text-zinc-400 leading-relaxed max-w-4xl mx-auto">
-                West Palm Beach roofing projects require experience with coastal conditions, wind zones, and code compliance. All Phase Construction specializes in these local requirements, ensuring every installation meets Florida Building Code standards while addressing the unique challenges of West Palm Beach's diverse property types and coastal environment.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Why West Palm Beach Property Owners Choose All Phase Construction
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {whyChooseUs.map((reason, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
 
           <div className="mb-20">
             <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
@@ -474,77 +416,56 @@ export default function WestPalmBeachPage() {
           <div className="mb-20">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Costs & Payment Options in West Palm Beach
+                Flexible Financing for West Palm Beach Homeowners
               </h2>
-              <div className="space-y-6 text-zinc-400 leading-relaxed mb-8">
+              <div className="space-y-4 text-zinc-400 leading-relaxed mb-8">
                 <p>
-                  Roofing costs in West Palm Beach are influenced by a mix of urban density, coastal exposure, and strict Palm Beach County building requirements. Property type, roof height, material selection, and hurricane code compliance all play a role in determining final pricing.
+                  Flexible financing plans designed to fit your budget, including credit-based and non-credit-based options with competitive rates and flexible repayment terms — helping West Palm Beach homeowners protect their properties without delay.
                 </p>
                 <p>
-                  Many West Palm Beach property owners begin by using a roof cost calculator to establish a realistic estimate before scheduling an inspection. This approach helps homeowners and property managers better understand material options and budget considerations early in the process.
+                  View our <Link to="/roof-pricing-guide/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Pricing Guide</Link> for detailed cost breakdowns by material and roof size.
                 </p>
               </div>
+            </div>
+          </div>
 
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-8">
-                <h3 className="text-xl font-bold text-white mb-6">Key Cost Factors for West Palm Beach Roofs</h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b border-zinc-700">
-                        <th className="text-left py-3 px-4 text-white font-semibold">Cost Factor</th>
-                        <th className="text-left py-3 px-4 text-white font-semibold">Impact in West Palm Beach</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-zinc-400">
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Urban density</td>
-                        <td className="py-3 px-4">Access and staging can affect labor</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Roof height & structure</td>
-                        <td className="py-3 px-4">Multi-story buildings increase complexity</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Material selection</td>
-                        <td className="py-3 px-4">Tile and metal offer longevity but higher upfront cost</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Hurricane code compliance</td>
-                        <td className="py-3 px-4">Installation quality affects approvals</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-medium text-white">Insurance considerations</td>
-                        <td className="py-3 px-4">New roofs may reduce premiums</td>
-                      </tr>
-                    </tbody>
-                  </table>
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Educational Resources for West Palm Beach Property Owners
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed mb-8">
+                <p>
+                  Our <Link to="/learning-center/" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> provides in-depth guides on roof replacement costs, wind mitigation savings, insurance claim processes, and selecting the right roofing materials for West Palm Beach properties.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
+                What West Palm Beach Homeowners Say
+              </h2>
+              <div className="space-y-6">
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <p className="text-zinc-300 leading-relaxed mb-4 italic">
+                    "Graham and his team at All Phase Construction did an outstanding job on our tile roof replacement. Professional from start to finish."
+                  </p>
+                  <p className="text-zinc-500 text-sm">— West Palm Beach Homeowner</p>
                 </div>
-              </div>
-
-              <div className="space-y-6 text-zinc-400 leading-relaxed mb-8">
-                <h3 className="text-2xl font-bold text-white">Making Roof Upgrades More Affordable</h3>
-                <p>
-                  For many homeowners, upgrading to a longer-lasting roofing system becomes more achievable when payment options are available. Financing can allow property owners to move forward without delaying necessary work, while also spreading costs over time.
-                </p>
-                <p>
-                  In some cases, insurance savings from installing a new, code-compliant roof may help offset monthly payments.
-                </p>
-                <p>
-                  To better understand how roof pricing and financing work together, explore our in-depth guide below.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-900/20 to-blue-800/10 border border-blue-700/30 rounded-xl p-6 text-center">
-                <p className="text-blue-100 font-medium mb-4">
-                  👉 Read: Understanding Roof Costs, Financing Options, and Why Monthly Payments Often Make Sense
-                </p>
-                <Link
-                  to="/blog/roof-pricing-financing-guide/"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all"
-                >
-                  View Complete Guide
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <p className="text-zinc-300 leading-relaxed mb-4 italic">
+                    "The attention to detail and quality of workmanship exceeded our expectations. They handled our historic home with the care it deserved."
+                  </p>
+                  <p className="text-zinc-500 text-sm">— Old Northwood Resident</p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <p className="text-zinc-300 leading-relaxed mb-4 italic">
+                    "All Phase handled our commercial building's roof replacement with minimal disruption to our business operations. Highly recommend."
+                  </p>
+                  <p className="text-zinc-500 text-sm">— Downtown West Palm Beach Property Manager</p>
+                </div>
               </div>
             </div>
           </div>
