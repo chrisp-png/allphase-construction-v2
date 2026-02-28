@@ -9,15 +9,15 @@ export default function PompanoBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Pompano Beach Roofing Contractor | HVHZ Certified | All Phase Construction USA';
+    document.title = 'Pompano Beach Roofing Contractor | Broward County Licensed | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Dual-licensed Pompano Beach roofing contractor (CCC-1331464 & CGC-1526236). Coastal HVHZ expertise. 20+ years. Minutes from Deerfield Beach HQ. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Pompano Beach roofing contractor. Dual-licensed Broward County (CCC-1331464, CGC-1526236). Minutes from Deerfield Beach HQ. Salt air and HVHZ specialist. Since 2006. (754) 227-5605');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Dual-licensed Pompano Beach roofing contractor (CCC-1331464 & CGC-1526236). Coastal HVHZ expertise. 20+ years. Minutes from Deerfield Beach HQ. (754) 227-5605';
+      meta.content = 'Pompano Beach roofing contractor. Dual-licensed Broward County (CCC-1331464, CGC-1526236). Minutes from Deerfield Beach HQ. Salt air and HVHZ specialist. Since 2006. (754) 227-5605';
       document.head.appendChild(meta);
     }
 
@@ -53,42 +53,42 @@ export default function PompanoBeachPage() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does a new roof cost in Pompano Beach?",
+          "name": "How close are you to Pompano Beach?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Roof replacement costs in Pompano Beach vary based on roof size, material, and building type. Because the city is in Florida's High Velocity Hurricane Zone (HVHZ), roofing systems must meet stricter standards, which can affect pricing."
+            "text": "Our headquarters is at 590 Goolsby Blvd in Deerfield Beach — minutes from Pompano Beach. We offer same-day response for emergencies throughout Pompano Beach and surrounding Broward County communities."
           }
         },
         {
           "@type": "Question",
-          "name": "Is Pompano Beach located in Florida's High Velocity Hurricane Zone (HVHZ)?",
+          "name": "Do you handle salt air corrosion damage on Intracoastal properties?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Pompano Beach falls within the HVHZ, meaning all roofing installations must meet enhanced wind uplift, fastening, and material approval requirements under Florida Building Code."
+            "text": "Yes — waterfront and canal-adjacent properties in Hillsboro Shores, Cypress Harbor, Snug Harbor, and Garden Isles are a specialty. We assess existing corrosion damage and specify materials engineered for constant salt air exposure."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you work with condo associations and property managers in Pompano Beach?",
+          "name": "What are Pompano Beach's HVHZ roofing requirements?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We regularly work with condo associations, HOAs, and property managers, coordinating inspections, documentation, and phased roofing projects for multi-family properties."
+            "text": "Every roofing installation in Pompano Beach must meet Broward County's High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation."
           }
         },
         {
           "@type": "Question",
-          "name": "What roofing materials are best for coastal properties in Pompano Beach?",
+          "name": "Do you work with insurance companies for storm damage claims?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tile, metal, and flat roofing systems are commonly used. Coastal exposure often makes corrosion-resistant materials and proper underlayment systems especially important."
+            "text": "Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you help with insurance documentation and inspections?",
+          "name": "What roofing materials work best in Pompano Beach's coastal environment?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We assist with inspections, permits, and documentation needed for insurance purposes and code compliance."
+            "text": "Standing seam metal with Kynar coatings, concrete tile with protective sealants, and impact-resistant shingles rated for coastal environments. We guide every Pompano Beach customer toward materials proven to withstand both salt air corrosion and HVHZ wind loads."
           }
         }
       ]
@@ -209,13 +209,28 @@ export default function PompanoBeachPage() {
 
   const faqs = [
     {
-      question: 'What makes All Phase Construction different from other Pompano Beach roofers?',
-      answer: "We hold both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236). When we encounter structural issues during a roof replacement, we can evaluate and repair the complete system under one warranty — no delays, no additional contractors, no warranty gaps."
+      question: 'How close are you to Pompano Beach?',
+      answer: "Our headquarters is at 590 Goolsby Blvd in Deerfield Beach — minutes from Pompano Beach. We offer same-day response for emergencies throughout Pompano Beach and surrounding Broward County communities."
     },
     {
-      question: 'Does Pompano Beach require HVHZ-compliant roofing?',
-      answer: "Yes. Pompano Beach is in the High Velocity Hurricane Zone, requiring installations that withstand 175+ mph winds. We use enhanced fastening schedules, high-wind rated materials, and engineered roof-to-wall connections on every project. Every installation passes Broward County inspection on the first attempt."
+      question: 'Do you handle salt air corrosion damage on Intracoastal properties?',
+      answer: "Yes — waterfront and canal-adjacent properties in Hillsboro Shores, Cypress Harbor, Snug Harbor, and Garden Isles are a specialty. We assess existing corrosion damage and specify materials engineered for constant salt air exposure."
     },
+    {
+      question: 'What are Pompano Beach\'s HVHZ roofing requirements?',
+      answer: "Every roofing installation in Pompano Beach must meet Broward County's High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation."
+    },
+    {
+      question: 'Do you work with insurance companies for storm damage claims?',
+      answer: "Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims."
+    },
+    {
+      question: 'What roofing materials work best in Pompano Beach\'s coastal environment?',
+      answer: "Standing seam metal with Kynar coatings, concrete tile with protective sealants, and impact-resistant shingles rated for coastal environments. We guide every Pompano Beach customer toward materials proven to withstand both salt air corrosion and HVHZ wind loads."
+    }
+  ];
+
+  const testimonials = [
     {
       question: 'How does salt air affect roofs in Pompano Beach?',
       answer: "Salt air accelerates corrosion of fasteners, flashing, and metal components. We use marine-grade corrosion-resistant materials and sealed deck systems on all coastal properties. Every fastener, every flashing, every underlayment we specify accounts for salt air exposure."
@@ -265,10 +280,7 @@ export default function PompanoBeachPage() {
               Dual-Licensed Roofing & General Contractor
             </p>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Operating from our Deerfield Beach headquarters just minutes away, All Phase Construction USA brings over two decades of roofing excellence to Pompano Beach — serving residential and commercial property owners throughout Broward County with both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236).
-            </p>
-            <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Locally owned and operated, our dual-licensed team delivers comprehensive roofing solutions that meet South Florida's demanding building codes and withstand our region's most intense weather conditions. We specialize in tile, shingle, metal, and flat roofing systems, with particular expertise in HVHZ installations that provide maximum protection for Pompano Beach's coastal properties.
+              All Phase Construction USA has served Pompano Beach homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters, just minutes away. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Pompano Beach roofing project that standard roofing-only contractors cannot match.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
@@ -310,31 +322,33 @@ export default function PompanoBeachPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Why Dual Licensing Matters in Pompano Beach
+              The Dual-License Advantage for Pompano Beach Properties
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Most Pompano Beach roofing contractors hold only a CCC license, limiting them to roof surface work. When they encounter structural issues — damaged trusses, inadequate roof-to-wall connections, compromised decking — they must stop and hire a separate general contractor, creating delays, cost overruns, and warranty gaps.
-              </p>
-              <p>
-                Our CGC license authorizes us to evaluate and repair the complete structural system. During every Pompano Beach roof replacement, we inspect deck fastening, assess truss integrity, verify roof-to-wall connections, and ensure full Florida Building Code compliance — all under one warranty, one contractor, one point of responsibility.
+                Most Pompano Beach roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability.
               </p>
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Coastal Roofing Challenges in Pompano Beach
+              Salt Air and Coastal Corrosion Expertise
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Pompano Beach sits directly on the Atlantic coast and Intracoastal Waterway, creating a combination of roofing challenges that inland properties never face. Salt air corrosion accelerates fastener and flashing degradation — requiring corrosion-resistant materials and sealed deck systems on every coastal installation.
+                Pompano Beach properties face dual salt air exposure — from the Atlantic Ocean to the east and the Intracoastal Waterway running through the city. Constant salt air accelerates fastener corrosion, flashing degradation, and underlayment failure on any roofing system not specifically specified for coastal environments. We specify salt-resistant, high-performance materials proven in Pompano Beach's demanding conditions. The Hillsboro Inlet Lighthouse, built in 1907, has stood at the northern tip of Pompano Beach for over a century — a reminder of how long coastal exposure has been the defining environmental challenge for every structure on this coastline.
               </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              HVHZ Compliance for Pompano Beach
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Wind exposure from both the ocean and Intracoastal demands full HVHZ compliance, with every roof engineered to withstand 175+ mph wind speeds. We use enhanced fastening schedules with ring-shank nails at 6-inch spacing, high-wind rated shingles with reinforced mat construction, upgraded hip and ridge cap systems with specialty adhesive, and engineered roof-to-wall connections that transfer wind loads directly to the structural frame.
-              </p>
-              <p>
-                Pompano Beach's position as a premier diving destination — with Shipwreck Park's 17 artificial reefs just offshore — is a testament to the marine environment these homes and businesses sit in daily. Every fastener, every flashing, every underlayment we specify accounts for that salt air exposure. Every installation passes Broward County building department inspection on the first attempt.
+                Pompano Beach is located in Broward County's High Velocity Hurricane Zone. Every roof installation must be engineered for 175+ mph wind resistance with HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase Construction USA's dual licensure enables us to engineer the complete roofing system — surface and structure — for full HVHZ compliance in a single project.
               </p>
             </div>
           </div>
@@ -342,20 +356,11 @@ export default function PompanoBeachPage() {
           <div className="mb-20">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Pompano Beach Neighborhoods We Serve
+                Serving All Pompano Beach Communities
               </h2>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
-                  All Phase Construction USA serves the full range of Pompano Beach residential and commercial properties. Along the Intracoastal, Cypress Harbor, Snug Harbor, Garden Isles, and Boulevard Park Isles feature canal-front homes with private docks where salt air corrosion and coastal wind exposure demand premium marine-grade materials and corrosion-resistant fasteners on every project.
-                </p>
-                <p>
-                  Hillsboro Shores provides oceanfront properties with direct Atlantic exposure — the most demanding roofing environment in all of Broward County. Santa Barbara Estates and Palm Aire offer a mix of Mediterranean-style homes and country club properties where tile roofing dominates and HOA color and material guidelines must be navigated alongside HVHZ code requirements.
-                </p>
-                <p>
-                  Cresthaven and Highlands represent Pompano Beach's established residential core — mid-century ranch homes and newer builds entering full replacement cycles. Old Pompano and Downtown Pompano Beach are experiencing active revitalization, with the Bailey Contemporary Arts Center and Pompano Beach Cultural Center anchoring a growing arts district where commercial roofing demand is rising alongside residential.
-                </p>
-                <p>
-                  The historic Hillsboro Inlet Lighthouse, standing just north of the city since 1907, marks the northern boundary of our Pompano Beach service area — a reminder of how long this coastline has demanded structures built to withstand the Atlantic.
+                  All Phase Construction USA serves the full range of Pompano Beach neighborhoods. <strong>Hillsboro Shores</strong> and <strong>Cypress Harbor</strong> offer waterfront properties with direct Intracoastal exposure requiring salt-resistant specifications. <strong>Snug Harbor</strong> and <strong>Garden Isles</strong> are established canal-front communities where aging housing stock is entering replacement cycles. <strong>Boulevard Park Isles</strong> and <strong>Santa Barbara Estates</strong> represent mid-century residential areas with significant deferred maintenance. <strong>Palm Aire's</strong> golf course community demands HOA-compliant tile and metal installations. <strong>Cresthaven</strong> and <strong>the Highlands</strong> offer family neighborhoods with 1970s-80s construction. <strong>Old Pompano</strong> and <strong>Downtown Pompano Beach</strong> are experiencing revitalization with both residential and commercial roofing demand. Shipwreck Park's 17 artificial reefs and the Fisher Family Pier reflect the city's deep connection to the Atlantic — the same ocean exposure that makes coastal-grade roofing non-negotiable throughout Pompano Beach. The Bailey Contemporary Arts Center anchors a growing downtown arts district where commercial roofing demand continues to grow.
                 </p>
               </div>
             </div>
