@@ -30,6 +30,18 @@ function = "strip-slash"
 path = "/*/"
 
 [[redirects]]
+from = "/wind-mitigation-inspection"
+to = "/roof-inspection/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/roofing-services/residential-roofing"
+to = "/roofing-services/"
+status = 301
+force = true
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/:city/top-5-roofer"
 to = "/locations/:city/"
 status = 301

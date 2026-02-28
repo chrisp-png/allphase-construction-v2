@@ -719,7 +719,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/residential-roofing/"
+                to="/roofing-services/"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
