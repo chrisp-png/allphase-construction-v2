@@ -30,6 +30,41 @@ function = "strip-slash"
 path = "/*/"
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer*"
+to = "/locations/boynton-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer*"
+to = "/locations/west-palm-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/boca-raton/top-5-roofer*"
+to = "/locations/boca-raton/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer*"
+to = "/locations/fort-lauderdale/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer*"
+to = "/locations/coconut-creek/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach-county/top-5-roofer*"
+to = "/locations/palm-beach-county/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/broward-county/top-5-roofer*"
+to = "/locations/broward-county/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/:city"
 to = "/locations/:city/"
 status = 301
