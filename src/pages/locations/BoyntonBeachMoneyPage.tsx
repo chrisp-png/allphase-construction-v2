@@ -19,7 +19,7 @@ export default function BoyntonBeachMoneyPage() {
   const slug = 'boynton-beach';
 
   useEffect(() => {
-    document.title = `${cityName} Roofing Contractor | All Phase Construction USA`;
+    document.title = `${cityName} Roofing Contractor | Palm Beach County Licensed | All Phase Construction USA`;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);
@@ -42,10 +42,10 @@ export default function BoyntonBeachMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>{cityName} Roofing Contractor | All Phase Construction USA</title>
+        <title>{cityName} Roofing Contractor | Palm Beach County Licensed | All Phase Construction USA</title>
         <meta
           name="description"
-          content="All Phase Construction USA is a dual-licensed roofing contractor serving Boynton Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair."
+          content="Boynton Beach roofing contractor. Dual-licensed Palm Beach & Broward Counties (CCC-1331464, CGC-1526236). Hunters Run, Aberdeen, Leisureville specialist. Since 2006. (754) 227-5605"
         />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
@@ -81,16 +81,8 @@ export default function BoyntonBeachMoneyPage() {
               </div>
 
               <div className="prose prose-invert max-w-none mb-8">
-                <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  All Phase Construction USA is a proud member of the Greater Boca Raton Chamber of Commerce, serving both the Boca Raton and Boynton Beach business communities. Known as the "Gateway to the Gulfstream," Boynton Beach is the third largest city in Palm Beach County — a diverse coastal community of 80,000+ residents spanning waterfront estates along the Intracoastal Waterway, gated golf communities like Hunters Run and Aberdeen, historic neighborhoods like Heart of Boynton and Downtown Boynton, resort-style communities like Renaissance Commons, and active 55+ communities throughout the city. Every one of these property types sits squarely in Palm Beach County's High Velocity Hurricane Zone — and every one has unique roofing demands that require a contractor with genuine local expertise.
-                </p>
-
-                <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 and CGC-1526236) serving Boynton Beach from our Deerfield Beach headquarters. If you are searching for a roofing contractor Boynton Beach residents trust for emergency repairs, inspections, and replacements, our team is ready to respond same-day. We hold both a Florida Certified Roofing Contractor and Certified General Contractor license — providing structural expertise that standard roofing contractors cannot match.
-                </p>
-
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  When hiring a roofing contractor in Boynton Beach, always verify full licensing, bonding, and insurance. Florida requires at least $100,000 public liability and $25,000 property damage coverage plus workers' compensation. All Phase Construction USA exceeds these minimums and provides full documentation upon request.
+                  All Phase Construction USA has served Boynton Beach homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), licensed in both Palm Beach County and Broward County, we bring capabilities to every Boynton Beach roofing project that standard roofing-only contractors cannot match.
                 </p>
               </div>
 
@@ -135,17 +127,11 @@ export default function BoyntonBeachMoneyPage() {
                   Dual-Licensed Authority
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  The Dual-License Advantage
+                  The Dual-License Advantage for Boynton Beach Properties
                 </h2>
                 <div className="space-y-4 text-zinc-300 leading-relaxed">
                   <p>
-                    Most roofing contractors in {cityName} hold only a Certified Roofing Contractor (CCC) license. All Phase Construction USA holds both CCC-1331464 and CGC-1526236 licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match.
-                  </p>
-                  <p>
-                    This dual-license capability means we can address structural issues, handle complex repairs involving roof decking and trusses, and provide complete building envelope solutions. When other contractors must stop and call in structural specialists, we have the authority and expertise to handle everything in-house.
-                  </p>
-                  <p>
-                    Each roofing job is unique in scope, size, and complexity, and our dual license allows us to handle all aspects of the job efficiently and effectively. The cost of roof replacement can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
+                    Most Boynton Beach roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems beneath the surface — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. In aging neighborhoods like Heart of Boynton, San Castle, and Manor Forest where original roofs are well past their service life, structural issues are the rule, not the exception. All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability.
                   </p>
                 </div>
               </div>
@@ -201,20 +187,35 @@ export default function BoyntonBeachMoneyPage() {
                   Hurricane Protection
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  HVHZ Mastery
+                  Palm Beach County Coastal Wind Requirements
                 </h2>
                 <div className="space-y-4 text-zinc-300 leading-relaxed">
                   <p>
-                    {cityName} is located in Florida's High Velocity Hurricane Zone (HVHZ), requiring specialized installation techniques, enhanced materials, and specific building code compliance. All Phase Construction USA specializes in Palm Beach County wind-compliant roofing systems designed to withstand extreme wind events.
-                  </p>
-                  <p>
-                    Our team is trained in HVHZ installation requirements, including enhanced fastening patterns, sealed roof decks, and impact-resistant materials. We use only products with valid Miami-Dade County Notices of Acceptance (NOA) and ensure every installation meets or exceeds Florida Building Code requirements for high-wind zones.
-                  </p>
-                  <p>
-                    Improper installation can lead to significant roof damage, putting your home at risk. It is important to address roof problems immediately to prevent further damage to the home. Learn more about <Link to="/blog/what-makes-a-roof-hurricane-resistant" className="text-red-500 hover:text-red-400 underline">what makes a roof hurricane resistant</Link> in our detailed guide.
+                    Boynton Beach sits on the Atlantic coast where the Gulf Stream runs close to shore. Salt air corrosion from Atlantic and Intracoastal exposure accelerates fastener and flashing degradation. The flat terrain extending west toward Loxahatchee National Wildlife Refuge creates unobstructed wind corridors that amplify storm forces across the city. Palm Beach County's coastal zone enforces HVHZ-equivalent wind load standards requiring every roofing installation to be engineered for 175+ mph wind resistance with enhanced fastening schedules and engineered roof-to-wall connections. All Phase Construction USA holds active licenses in Palm Beach County — not just Broward — meaning we know this jurisdiction's specific permit requirements and building department expectations.
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Golf Community and HOA Specialists */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+                <Award className="w-4 h-4" />
+                HOA Expertise
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Golf Community and HOA Roofing Specialists
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6 text-zinc-300 leading-relaxed">
+              <p>
+                Boynton Beach has one of South Florida's highest concentrations of luxury golf communities. <strong>Hunters Run</strong> (3 championship courses, mandatory country club membership), <strong>Aberdeen</strong> (18-hole, 24+ subdivisions), <strong>Pine Tree Golf Club</strong> (Dick Wilson-designed, gated), <strong>Quail Ridge Country Club</strong>, and <strong>Cypress Creek Country Club</strong> all maintain strict architectural guidelines governing roofing materials, colors, and installation. <strong>Melrose Park's</strong> gated estates with 4,000+ square foot homes on acre-plus lots add another tier of luxury specification. We navigate HOA architectural review processes, prepare all documentation, and coordinate directly with review committees.
+              </p>
             </div>
           </div>
         </section>
@@ -228,25 +229,17 @@ export default function BoyntonBeachMoneyPage() {
                 Boynton Beach Local Expertise
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Deep Knowledge of Boynton Beach Properties
+                Serving All Boynton Beach Communities
               </h2>
             </div>
 
             <div className="max-w-4xl mx-auto space-y-6 text-zinc-300 leading-relaxed">
               <p>
-                We have completed roofing projects across Boynton Beach's full property spectrum. In the Heart of Boynton and Downtown Boynton neighborhoods, we work regularly with 1950s-1970s ranch homes and pastel stucco residences whose original roofing systems are well past their expected lifespan — many predating current HVHZ wind codes entirely. Along the Intracoastal Waterway, we install and replace premium tile and metal roofing systems on waterfront estates where salt air corrosion, wind-driven rain, and storm surge exposure are year-round realities. In HOA-governed golf communities like Hunters Run Country Club and Aberdeen, we navigate strict material and color approval requirements while delivering fully HVHZ-compliant systems.
+                From the luxury golf corridor — <strong>Hunters Run</strong>, <strong>Aberdeen</strong>, <strong>Pine Tree Golf Club</strong>, <strong>Quail Ridge</strong>, <strong>Cypress Creek Country Club</strong>, and <strong>Melrose Park</strong> — to the canal-front homes of <strong>Golfview Harbour</strong> and Downtown Boynton's Intracoastal-adjacent revitalization zone. <strong>Renaissance Commons</strong> offers resort-style condo living where flat roofing expertise matters.
               </p>
 
               <p>
-                The Boynton Beach coastline — from Oceanfront Park at 6415 N Ocean Blvd to Ocean Inlet Park where the Intracoastal meets the Atlantic at the Boynton Inlet — creates a uniquely aggressive roofing environment. Salt air accelerates fastener corrosion, UV intensity degrades membrane systems faster than inland properties, and direct Atlantic exposure means wind loads exceed even standard South Florida requirements. We specify materials and fastening schedules that account for this specific coastal exposure on every Boynton Beach project.
-              </p>
-
-              <p>
-                Boynton Beach's historic properties present additional challenges. The Boynton Woman's Club at 1010 Federal Hwy — a 1920s Mediterranean Revival building — and the Schoolhouse Children's Museum at 129 E Ocean Ave — housed in the original 1913 Boynton School — represent the kind of historic construction that requires sourcing period-appropriate materials while bringing the roof structure up to current Florida Building Code and HVHZ standards. Our CGC license gives us the structural authority to address aging trusses, non-standard decking, and original roof-to-wall connections that predate modern wind codes.
-              </p>
-
-              <p>
-                As a member of the Greater Boca Raton Chamber of Commerce serving both Boca Raton and Boynton Beach, All Phase Construction USA is a verified community business — not a distant contractor that disappears after the job. When you hire us, you're hiring a company invested in the same community you live in.
+                The 55+ communities of <strong>Leisureville</strong> (3 clubhouses), <strong>Valencia</strong>, <strong>The Club</strong>, and <strong>Palm Chase Lakes</strong> represent significant flat roofing and modified bitumen demand. Family neighborhoods including <strong>Meadows</strong>, <strong>Knollwood</strong>, and <strong>Manor Forest</strong> offer well-maintained 1980s housing stock. <strong>Heart of Boynton</strong> and <strong>San Castle</strong> are the city's original residential core — 1950s-60s ranch homes well into replacement cycles. Loxahatchee National Wildlife Refuge borders the city to the west, its open sawgrass and cypress terrain creating the unobstructed wind exposure that makes proper wind-rated installation non-negotiable throughout Boynton Beach.
               </p>
             </div>
           </div>
