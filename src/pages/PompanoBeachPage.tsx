@@ -9,15 +9,15 @@ export default function PompanoBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Pompano Beach Roofer | HVHZ Certified | All Phase';
+    document.title = 'Pompano Beach Roofing Contractor | HVHZ Certified | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Pompano Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Dual-licensed Pompano Beach roofing contractor (CCC-1331464 & CGC-1526236). Coastal HVHZ expertise. 20+ years. Minutes from Deerfield Beach HQ. (754) 227-5605');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Pompano Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'Dual-licensed Pompano Beach roofing contractor (CCC-1331464 & CGC-1526236). Coastal HVHZ expertise. 20+ years. Minutes from Deerfield Beach HQ. (754) 227-5605';
       document.head.appendChild(meta);
     }
 
@@ -123,39 +123,39 @@ export default function PompanoBeachPage() {
 
   const services = [
     {
-      title: 'Roof Repair',
-      description: "Expert repair services for tile, shingle, metal, and flat roofing systems — including repair and replacement of critical components such as roof flashing — in Pompano Beach. We also provide ongoing maintenance services to help prolong the lifespan of your roof.",
-      path: '/roof-repair/pompano-beach',
-      icon: Wrench
-    },
-    {
-      title: 'Roof Inspection',
-      description: "Comprehensive diagnostic inspections for residential and commercial properties. Regular inspections catch small issues before they become costly repairs, especially after severe weather events common in coastal Pompano Beach.",
-      path: '/roof-inspection',
-      icon: Shield
-    },
-    {
-      title: 'New Roof Installation',
-      description: "Most homeowners will eventually need to replace their old roof when it reaches the end of its lifespan or suffers extensive damage. A full roof replacement involves removing the entire existing roof and installing new materials to ensure long-term protection. The average roof replacement cost ranges from $5,800 to over $47,000, depending on roof size, material, and complexity. For example, replacing a typical 1,700-square-foot asphalt shingle roof costs between $6,000 to $9,000. Metal roofs and tile roofs are premium options with longer lifespans — metal roofing offers exceptional longevity, while clay tile roofs can last 50 to 100 years and slate tile roofs up to 150 years. Many homeowners choose financing options to manage the total cost over time. Explore our financing plans to budget for a new roof without compromising on quality.",
-      path: '/roof-replacement-process',
+      title: 'Residential Roofing',
+      description: "Complete solutions for Pompano Beach homes — from single-family residences to luxury estates. Tile, shingle, metal, and flat systems, all HVHZ compliant with manufacturer warranties.",
+      path: '/roofing-services/roof-replacement/',
       icon: Home
-    },
-    {
-      title: 'Tile Roofing',
-      description: "Concrete and clay tile installation, repair, and maintenance services. Clay tile roofs are a premium roofing material known for exceptional durability, lasting 50 to 100 years, and providing excellent noise isolation from wind and rain — making them ideal for Pompano Beach homes.",
-      path: '/tile-roofing',
-      icon: Home
-    },
-    {
-      title: 'Flat Roofing',
-      description: "TPO, modified bitumen, and built-up roofing for commercial properties. We also install Spray Polyurethane Foam (SPF) roof systems, which enhance energy efficiency, improve interior comfort, and can last 30 years or more with proper maintenance.",
-      path: '/flat-roofing',
-      icon: Building2
     },
     {
       title: 'Commercial Roofing',
-      description: "Large-scale commercial roofing projects where the complexity of the roof structure can significantly affect the overall cost and scope, completed with minimal business disruption.",
-      path: '/commercial-roofing',
+      description: "Flat, TPO, modified bitumen, and standing seam metal roofs for Pompano Beach retail centers, office buildings, and industrial facilities. Minimal disruption to operations during installation.",
+      path: '/commercial-roofing/',
+      icon: Building2
+    },
+    {
+      title: 'Roof Repair',
+      description: "Emergency and scheduled repairs for leaks, storm damage, missing shingles, and coastal corrosion damage. Same-day response for active leaks and storm emergencies.",
+      path: '/roof-repair/pompano-beach/',
+      icon: Wrench
+    },
+    {
+      title: 'Roof Inspections',
+      description: "Comprehensive 21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.",
+      path: '/roof-inspection/',
+      icon: Shield
+    },
+    {
+      title: 'Tile Roofing',
+      description: "Concrete and clay tile installations for Mediterranean-style homes and coastal properties. HVHZ foam-set installation methods for maximum wind resistance.",
+      path: '/tile-roofing/',
+      icon: Home
+    },
+    {
+      title: 'Metal Roofing',
+      description: "Standing seam and panel systems rated for 200+ mph winds. 50+ year lifespan with exceptional energy efficiency and salt air corrosion resistance.",
+      path: '/metal-roofing/',
       icon: Building2
     }
   ];
@@ -209,24 +209,28 @@ export default function PompanoBeachPage() {
 
   const faqs = [
     {
-      question: 'How much does a new roof cost in Pompano Beach?',
-      answer: "Roof replacement costs in Pompano Beach vary based on roof size, material, and building type. Because the city is in Florida's High Velocity Hurricane Zone (HVHZ), roofing systems must meet stricter standards, which can affect pricing."
+      question: 'What makes All Phase Construction different from other Pompano Beach roofers?',
+      answer: "We hold both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236). When we encounter structural issues during a roof replacement, we can evaluate and repair the complete system under one warranty — no delays, no additional contractors, no warranty gaps."
     },
     {
-      question: "Is Pompano Beach located in Florida's High Velocity Hurricane Zone (HVHZ)?",
-      answer: "Yes. Pompano Beach falls within the HVHZ, meaning all roofing installations must meet enhanced wind uplift, fastening, and material approval requirements under Florida Building Code."
+      question: 'Does Pompano Beach require HVHZ-compliant roofing?',
+      answer: "Yes. Pompano Beach is in the High Velocity Hurricane Zone, requiring installations that withstand 175+ mph winds. We use enhanced fastening schedules, high-wind rated materials, and engineered roof-to-wall connections on every project. Every installation passes Broward County inspection on the first attempt."
     },
     {
-      question: 'Do you work with condo associations and property managers in Pompano Beach?',
-      answer: "Yes. We regularly work with condo associations, HOAs, and property managers, coordinating inspections, documentation, and phased roofing projects for multi-family properties."
+      question: 'How does salt air affect roofs in Pompano Beach?',
+      answer: "Salt air accelerates corrosion of fasteners, flashing, and metal components. We use marine-grade corrosion-resistant materials and sealed deck systems on all coastal properties. Every fastener, every flashing, every underlayment we specify accounts for salt air exposure."
     },
     {
-      question: 'What roofing materials are best for coastal properties in Pompano Beach?',
-      answer: "Tile, metal, and flat roofing systems are commonly used. Coastal exposure often makes corrosion-resistant materials and proper underlayment systems especially important."
+      question: 'Do you work with condo associations and property managers?',
+      answer: "Absolutely. We regularly serve Pompano Beach's condo associations and commercial property managers. We understand board approval processes, phased scheduling, resident communication, and the unique requirements of multi-family properties."
     },
     {
-      question: 'Can you help with insurance documentation and inspections?',
-      answer: "Yes. We assist with inspections, permits, and documentation needed for insurance purposes and code compliance."
+      question: 'Do you offer financing for Pompano Beach roofing projects?',
+      answer: "Yes. We offer flexible financing plans including credit-based and non-credit-based options with competitive rates. Use our Roof Cost Calculator for a preliminary estimate based on your roof type and square footage."
+    },
+    {
+      question: 'How quickly can you respond to emergency repairs?',
+      answer: "We provide same-day response for active leaks and storm emergencies. Our Deerfield Beach headquarters is just minutes from Pompano Beach, allowing us to respond quickly when you need us most."
     }
   ];
 
@@ -252,24 +256,24 @@ export default function PompanoBeachPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Roofing Contractor in{' '}
+              Expert Roofing Contractor in{' '}
               <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
                 Pompano Beach, FL
               </span>
             </h1>
             <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+              Dual-Licensed Roofing & General Contractor
             </p>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              All Phase Construction USA serves Pompano Beach with comprehensive residential and commercial roofing services. Our team of experienced local roofers delivers quality workmanship and reliable service backed by dual licensing in both Broward and Palm Beach counties. We specialize in tile, shingle, metal, and flat roofing systems designed for South Florida's climate challenges.
+              Operating from our Deerfield Beach headquarters just minutes away, All Phase Construction USA brings over two decades of roofing excellence to Pompano Beach — serving residential and commercial property owners throughout Broward County with both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236).
             </p>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Homeowners are invited to request a free estimate to explore options and receive transparent pricing. Working with a local contractor with a verified physical office at 590 Goolsby Blvd in Deerfield Beach ensures accountability and compliance with local building codes.
+              Locally owned and operated, our dual-licensed team delivers comprehensive roofing solutions that meet South Florida's demanding building codes and withstand our region's most intense weather conditions. We specialize in tile, shingle, metal, and flat roofing systems, with particular expertise in HVHZ installations that provide maximum protection for Pompano Beach's coastal properties.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>20+ Years Experience</span>
+                <span>Dual Licensed (CCC & CGC)</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
@@ -279,12 +283,12 @@ export default function PompanoBeachPage() {
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspections</span>
+                <span>Coastal Expertise</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Locally Owned</span>
+                <span>Family Owned</span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -306,15 +310,54 @@ export default function PompanoBeachPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Introduction to Roofing Services
+              Why Dual Licensing Matters in Pompano Beach
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Roofing services are essential for maintaining the safety, value, and comfort of your home or business. Whether you need a roof replacement, roof repair, or a completely new roof installation, working with a licensed roofing contractor ensures that your project is handled with expertise and care. The scope of roofing services includes everything from minor repairs to full roof replacements, using a variety of materials to suit your needs and budget.
+                Most Pompano Beach roofing contractors hold only a CCC license, limiting them to roof surface work. When they encounter structural issues — damaged trusses, inadequate roof-to-wall connections, compromised decking — they must stop and hire a separate general contractor, creating delays, cost overruns, and warranty gaps.
               </p>
               <p>
-                For most homeowners, the average cost of a new shingle roof on a 1,700-square-foot house ranges from $6,000 to $9,000, with asphalt roof replacements typically costing between $3.50 to $6.00 per square foot. Labor costs, materials, and the complexity of the installation all play a role in determining the final price. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a personalized estimate, or call (754) 227-5605 to discuss your project.
+                Our CGC license authorizes us to evaluate and repair the complete structural system. During every Pompano Beach roof replacement, we inspect deck fastening, assess truss integrity, verify roof-to-wall connections, and ensure full Florida Building Code compliance — all under one warranty, one contractor, one point of responsibility.
               </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Coastal Roofing Challenges in Pompano Beach
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Pompano Beach sits directly on the Atlantic coast and Intracoastal Waterway, creating a combination of roofing challenges that inland properties never face. Salt air corrosion accelerates fastener and flashing degradation — requiring corrosion-resistant materials and sealed deck systems on every coastal installation.
+              </p>
+              <p>
+                Wind exposure from both the ocean and Intracoastal demands full HVHZ compliance, with every roof engineered to withstand 175+ mph wind speeds. We use enhanced fastening schedules with ring-shank nails at 6-inch spacing, high-wind rated shingles with reinforced mat construction, upgraded hip and ridge cap systems with specialty adhesive, and engineered roof-to-wall connections that transfer wind loads directly to the structural frame.
+              </p>
+              <p>
+                Pompano Beach's position as a premier diving destination — with Shipwreck Park's 17 artificial reefs just offshore — is a testament to the marine environment these homes and businesses sit in daily. Every fastener, every flashing, every underlayment we specify accounts for that salt air exposure. Every installation passes Broward County building department inspection on the first attempt.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Pompano Beach Neighborhoods We Serve
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed">
+                <p>
+                  All Phase Construction USA serves the full range of Pompano Beach residential and commercial properties. Along the Intracoastal, Cypress Harbor, Snug Harbor, Garden Isles, and Boulevard Park Isles feature canal-front homes with private docks where salt air corrosion and coastal wind exposure demand premium marine-grade materials and corrosion-resistant fasteners on every project.
+                </p>
+                <p>
+                  Hillsboro Shores provides oceanfront properties with direct Atlantic exposure — the most demanding roofing environment in all of Broward County. Santa Barbara Estates and Palm Aire offer a mix of Mediterranean-style homes and country club properties where tile roofing dominates and HOA color and material guidelines must be navigated alongside HVHZ code requirements.
+                </p>
+                <p>
+                  Cresthaven and Highlands represent Pompano Beach's established residential core — mid-century ranch homes and newer builds entering full replacement cycles. Old Pompano and Downtown Pompano Beach are experiencing active revitalization, with the Bailey Contemporary Arts Center and Pompano Beach Cultural Center anchoring a growing arts district where commercial roofing demand is rising alongside residential.
+                </p>
+                <p>
+                  The historic Hillsboro Inlet Lighthouse, standing just north of the city since 1907, marks the northern boundary of our Pompano Beach service area — a reminder of how long this coastline has demanded structures built to withstand the Atlantic.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -324,7 +367,7 @@ export default function PompanoBeachPage() {
                 HVHZ Compliant
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Pompano Beach Falls Within Florida's High Velocity Hurricane Zone
+                High Velocity Hurricane Zone Compliance
               </h2>
               <p className="text-zinc-400 max-w-4xl mx-auto mb-8">
                 As part of Broward County, Pompano Beach is designated a High Velocity Hurricane Zone (HVHZ) under the Florida Building Code. This means stricter requirements for:
@@ -358,10 +401,10 @@ export default function PompanoBeachPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roofing Services in Pompano Beach
+                Complete Roofing Services in Pompano Beach
               </h2>
               <p className="text-zinc-400 max-w-3xl mx-auto">
-                Full-service residential and commercial roofing — from repairs to complete replacements.
+                From emergency repairs to complete replacements — serving residential and commercial properties.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
