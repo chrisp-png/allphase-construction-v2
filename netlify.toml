@@ -30,8 +30,18 @@ function = "strip-slash"
 path = "/*/"
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/boynton-beach"
+to = "/locations/boynton-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/boynton-beach/*"
 to = "/locations/boynton-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lauderhill"
+to = "/locations/lauderhill/"
 status = 301
 
 [[redirects]]
@@ -40,8 +50,18 @@ to = "/locations/lauderhill/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/tamarac"
+to = "/locations/tamarac/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/tamarac/*"
 to = "/locations/tamarac/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/coconut-creek"
+to = "/locations/coconut-creek/"
 status = 301
 
 [[redirects]]
@@ -50,8 +70,18 @@ to = "/locations/coconut-creek/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/west-palm-beach"
+to = "/locations/west-palm-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/west-palm-beach/*"
 to = "/locations/west-palm-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/margate"
+to = "/locations/margate/"
 status = 301
 
 [[redirects]]
@@ -60,8 +90,18 @@ to = "/locations/margate/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/hypoluxo"
+to = "/locations/hypoluxo/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/hypoluxo/*"
 to = "/locations/hypoluxo/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/gulf-stream"
+to = "/locations/gulf-stream/"
 status = 301
 
 [[redirects]]
@@ -70,8 +110,18 @@ to = "/locations/gulf-stream/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach"
+to = "/locations/palm-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/palm-beach/*"
 to = "/locations/palm-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/pembroke-pines"
+to = "/locations/pembroke-pines/"
 status = 301
 
 [[redirects]]
@@ -80,8 +130,18 @@ to = "/locations/pembroke-pines/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/lighthouse-point"
+to = "/locations/lighthouse-point/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/lighthouse-point/*"
 to = "/locations/lighthouse-point/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/wilton-manors"
+to = "/locations/wilton-manors/"
 status = 301
 
 [[redirects]]
@@ -90,8 +150,18 @@ to = "/locations/wilton-manors/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/highland-beach"
+to = "/locations/highland-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/highland-beach/*"
 to = "/locations/highland-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/loxahatchee-groves"
+to = "/locations/loxahatchee-groves/"
 status = 301
 
 [[redirects]]
@@ -100,8 +170,18 @@ to = "/locations/loxahatchee-groves/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/parkland"
+to = "/locations/parkland/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/parkland/*"
 to = "/locations/parkland/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/hollywood"
+to = "/locations/hollywood/"
 status = 301
 
 [[redirects]]
@@ -110,8 +190,18 @@ to = "/locations/hollywood/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/hallandale-beach"
+to = "/locations/hallandale-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/hallandale-beach/*"
 to = "/locations/hallandale-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/wellington"
+to = "/locations/wellington/"
 status = 301
 
 [[redirects]]
@@ -120,8 +210,18 @@ to = "/locations/wellington/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/lantana"
+to = "/locations/lantana/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/lantana/*"
 to = "/locations/lantana/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/weston"
+to = "/locations/weston/"
 status = 301
 
 [[redirects]]
@@ -130,8 +230,18 @@ to = "/locations/weston/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/davie"
+to = "/locations/davie/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/davie/*"
 to = "/locations/davie/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/cooper-city"
+to = "/locations/cooper-city/"
 status = 301
 
 [[redirects]]
@@ -140,8 +250,18 @@ to = "/locations/cooper-city/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/lake-worth-beach"
+to = "/locations/lake-worth-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/lake-worth-beach/*"
 to = "/locations/lake-worth-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/lauderdale-by-the-sea"
+to = "/locations/lauderdale-by-the-sea/"
 status = 301
 
 [[redirects]]
@@ -150,8 +270,18 @@ to = "/locations/lauderdale-by-the-sea/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/haverhill"
+to = "/locations/haverhill/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/haverhill/*"
 to = "/locations/haverhill/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/sunrise"
+to = "/locations/sunrise/"
 status = 301
 
 [[redirects]]
@@ -160,8 +290,18 @@ to = "/locations/sunrise/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/jupiter"
+to = "/locations/jupiter/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/jupiter/*"
 to = "/locations/jupiter/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/ocean-ridge"
+to = "/locations/ocean-ridge/"
 status = 301
 
 [[redirects]]
@@ -170,8 +310,18 @@ to = "/locations/ocean-ridge/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/fort-lauderdale"
+to = "/locations/fort-lauderdale/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/fort-lauderdale/*"
 to = "/locations/fort-lauderdale/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/pembroke-park"
+to = "/locations/pembroke-park/"
 status = 301
 
 [[redirects]]
@@ -180,8 +330,18 @@ to = "/locations/pembroke-park/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/delray-beach"
+to = "/locations/delray-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/delray-beach/*"
 to = "/locations/delray-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/pompano-beach"
+to = "/locations/pompano-beach/"
 status = 301
 
 [[redirects]]
@@ -190,8 +350,18 @@ to = "/locations/pompano-beach/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/coral-springs"
+to = "/locations/coral-springs/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/coral-springs/*"
 to = "/locations/coral-springs/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach-gardens"
+to = "/locations/palm-beach-gardens/"
 status = 301
 
 [[redirects]]
@@ -200,8 +370,18 @@ to = "/locations/palm-beach-gardens/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/oakland-park"
+to = "/locations/oakland-park/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/oakland-park/*"
 to = "/locations/oakland-park/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/plantation"
+to = "/locations/plantation/"
 status = 301
 
 [[redirects]]
@@ -210,8 +390,18 @@ to = "/locations/plantation/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/royal-palm-beach"
+to = "/locations/royal-palm-beach/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/royal-palm-beach/*"
 to = "/locations/royal-palm-beach/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/miramar"
+to = "/locations/miramar/"
 status = 301
 
 [[redirects]]
@@ -220,8 +410,18 @@ to = "/locations/miramar/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/boca-raton"
+to = "/locations/boca-raton/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/boca-raton/*"
 to = "/locations/boca-raton/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/greenacres"
+to = "/locations/greenacres/"
 status = 301
 
 [[redirects]]
@@ -230,8 +430,18 @@ to = "/locations/greenacres/"
 status = 301
 
 [[redirects]]
+from = "/locations/deerfield-beach/service-area/palm-beach-county"
+to = "/locations/palm-beach-county/"
+status = 301
+
+[[redirects]]
 from = "/locations/deerfield-beach/service-area/palm-beach-county/*"
 to = "/locations/palm-beach-county/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/broward-county"
+to = "/locations/broward-county/"
 status = 301
 
 [[redirects]]
@@ -240,8 +450,13 @@ to = "/locations/broward-county/"
 status = 301
 
 [[redirects]]
-from = "/locations/deerfield-beach/service-area/*"
-to = "/locations/:splat"
+from = "/locations/deerfield-beach/service-area/:city"
+to = "/locations/:city/"
+status = 301
+
+[[redirects]]
+from = "/locations/deerfield-beach/service-area/:city/*"
+to = "/locations/:city/"
 status = 301
 
 [[redirects]]
