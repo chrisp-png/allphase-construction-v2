@@ -13,901 +13,256 @@ export default function PompanoBeachPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Pompano Beach roofing contractor. Dual-licensed Broward County (CCC-1331464, CGC-1526236). Minutes from Deerfield Beach HQ. Salt air and HVHZ specialist. Since 2006. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Pompano Beach roofing contractor since 2006. Dual-licensed CCC-1331464 & CGC-1526236. HVHZ 175+ mph rated. Salt air coastal specialists serving Hillsboro Shores, Cypress Harbor, Palm Aire. Free inspection (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Pompano Beach roofing contractor. Dual-licensed Broward County (CCC-1331464, CGC-1526236). Minutes from Deerfield Beach HQ. Salt air and HVHZ specialist. Since 2006. (754) 227-5605';
+      meta.content = 'Pompano Beach roofing contractor since 2006. Dual-licensed CCC-1331464 & CGC-1526236. HVHZ 175+ mph rated. Salt air coastal specialists serving Hillsboro Shores, Cypress Harbor, Palm Aire. Free inspection (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'roofing contractor Pompano Beach, roofer Pompano Beach FL, roof replacement Pompano Beach, Pompano Beach roofing company, condo roofing Pompano Beach, commercial roofing Pompano Beach');
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute('href', 'https://allphaseconstructionfl.com/locations/pompano-beach');
     } else {
-      const meta = document.createElement('meta');
-      meta.name = 'keywords';
-      meta.content = 'roofing contractor Pompano Beach, roofer Pompano Beach FL, roof replacement Pompano Beach, Pompano Beach roofing company, condo roofing Pompano Beach, commercial roofing Pompano Beach';
-      document.head.appendChild(meta);
+      const link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = 'https://allphaseconstructionfl.com/locations/pompano-beach';
+      document.head.appendChild(link);
     }
 
-    // Get city coordinates for local search
-    const coordinates = getCityCoordinates('Pompano Beach');
-
-    // LocalBusiness Schema - Critical for "roofer near me" searches
+    const coords = getCityCoordinates('pompano-beach');
     const localBusinessSchema = generateLocalBusinessSchema({
-      cityName: 'Pompano Beach',
-      stateName: 'Florida',
-      latitude: coordinates?.latitude,
-      longitude: coordinates?.longitude,
-      aggregateRating: {
-        ratingValue: '4.9',
-        reviewCount: '150'
-      }
+      city: 'Pompano Beach',
+      slug: 'pompano-beach',
+      description: 'Dual-licensed roofing contractor serving Pompano Beach since 2006. HVHZ certified, salt air coastal specialists.',
+      coordinates: coords
     });
-
-    // FAQ Schema
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How close are you to Pompano Beach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our headquarters is at 590 Goolsby Blvd in Deerfield Beach — minutes from Pompano Beach. We offer same-day response for emergencies throughout Pompano Beach and surrounding Broward County communities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you handle salt air corrosion damage on Intracoastal properties?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — waterfront and canal-adjacent properties in Hillsboro Shores, Cypress Harbor, Snug Harbor, and Garden Isles are a specialty. We assess existing corrosion damage and specify materials engineered for constant salt air exposure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are Pompano Beach's HVHZ roofing requirements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Every roofing installation in Pompano Beach must meet Broward County's High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with insurance companies for storm damage claims?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What roofing materials work best in Pompano Beach's coastal environment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Standing seam metal with Kynar coatings, concrete tile with protective sealants, and impact-resistant shingles rated for coastal environments. We guide every Pompano Beach customer toward materials proven to withstand both salt air corrosion and HVHZ wind loads."
-          }
-        }
-      ]
-    };
-
-    // Breadcrumb Schema
     const breadcrumbSchema = generateBreadcrumbSchema([
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
-      { name: 'Deerfield Beach Hub', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach' },
-      { name: 'Service Areas', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
-      { name: 'Pompano Beach', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/pompano-beach' }
+      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
+      { name: 'Pompano Beach', url: 'https://allphaseconstructionfl.com/locations/pompano-beach' }
     ]);
 
-    // Remove existing schemas
-    const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
-    existingSchemas.forEach(schema => schema.remove());
+    const existingSchemas = document.querySelectorAll('script[data-city-schema]');
+    existingSchemas.forEach(s => s.remove());
 
-    // Add all schemas
-    const schemas = [localBusinessSchema, faqSchema, breadcrumbSchema];
-    schemas.forEach(schema => {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(schema);
-      document.head.appendChild(script);
-    });
+    const schemaScript1 = document.createElement('script');
+    schemaScript1.type = 'application/ld+json';
+    schemaScript1.setAttribute('data-city-schema', 'true');
+    schemaScript1.textContent = JSON.stringify(localBusinessSchema);
+    document.head.appendChild(schemaScript1);
 
-    return () => {
-      const schemaScripts = document.querySelectorAll('script[type="application/ld+json"]');
-      schemaScripts.forEach(script => script.remove());
-    };
+    const schemaScript2 = document.createElement('script');
+    schemaScript2.type = 'application/ld+json';
+    schemaScript2.setAttribute('data-city-schema', 'true');
+    schemaScript2.textContent = JSON.stringify(breadcrumbSchema);
+    document.head.appendChild(schemaScript2);
   }, []);
-
-  const services = [
-    {
-      title: 'Residential Roofing',
-      description: "Complete solutions for Pompano Beach homes — from single-family residences to luxury estates. Tile, shingle, metal, and flat systems, all HVHZ compliant with manufacturer warranties.",
-      path: '/roofing-services/roof-replacement/',
-      icon: Home
-    },
-    {
-      title: 'Commercial Roofing',
-      description: "Flat, TPO, modified bitumen, and standing seam metal roofs for Pompano Beach retail centers, office buildings, and industrial facilities. Minimal disruption to operations during installation.",
-      path: '/commercial-roofing/',
-      icon: Building2
-    },
-    {
-      title: 'Roof Repair',
-      description: "Emergency and scheduled repairs for leaks, storm damage, missing shingles, and coastal corrosion damage. Same-day response for active leaks and storm emergencies.",
-      path: '/roof-repair/pompano-beach/',
-      icon: Wrench
-    },
-    {
-      title: 'Roof Inspections',
-      description: "Comprehensive 21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.",
-      path: '/roof-inspection/',
-      icon: Shield
-    },
-    {
-      title: 'Tile Roofing',
-      description: "Concrete and clay tile installations for Mediterranean-style homes and coastal properties. HVHZ foam-set installation methods for maximum wind resistance.",
-      path: '/tile-roofing/',
-      icon: Home
-    },
-    {
-      title: 'Metal Roofing',
-      description: "Standing seam and panel systems rated for 200+ mph winds. 50+ year lifespan with exceptional energy efficiency and salt air corrosion resistance.",
-      path: '/metal-roofing/',
-      icon: Building2
-    }
-  ];
-
-  const challenges = [
-    {
-      title: 'Salt Air & Coastal Exposure',
-      description: "With the Atlantic Ocean right there, Pompano Beach properties — especially east of Federal Highway — face constant salt air exposure. We specify corrosion-resistant fasteners and materials rated for coastal environments."
-    },
-    {
-      title: 'Condo & Multi-Family Buildings',
-      description: "Pompano Beach has significant condo inventory, from beachfront towers to garden-style communities. We understand board approval processes, phased scheduling, and resident communication."
-    },
-    {
-      title: 'Aging Building Stock',
-      description: "Many Pompano Beach buildings date from the 1960s-1980s and are now facing major roof work. We assess these older systems thoroughly and bring them up to current HVHZ standards."
-    },
-    {
-      title: 'Hurricane Season',
-      description: "June through November, Pompano Beach is in the crosshairs. Our HVHZ-compliant installations are engineered for high winds and flying debris — because building code is the minimum, not the goal."
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: 'Just Down the Road',
-      description: "Our headquarters is in Deerfield Beach — just 3 miles away. We're practically neighbors. When you need us, we're there fast."
-    },
-    {
-      title: 'Dual Licensed',
-      description: "We hold both a General Contractor license (CGC-1526236) and Roofing Contractor license (CCC-1331464). When we find structural issues, deck rot, or stucco damage, we fix it — no waiting for another contractor."
-    },
-    {
-      title: 'Condo & Commercial Experience',
-      description: "We work with Pompano Beach condo associations and commercial property managers regularly. We know how to navigate board approvals, phase projects, and communicate with residents."
-    },
-    {
-      title: '5-Year Certification Letters',
-      description: "If your roof qualifies, we provide the certification letter required under Florida Statute 627.7011 to protect your insurance coverage."
-    }
-  ];
-
-  const nearbyCities = [
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
-    { name: 'Lighthouse Point', path: '/roofing-contractor-lighthouse-point-fl/' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' }
-  ];
 
   const faqs = [
     {
       question: 'How close are you to Pompano Beach?',
-      answer: "Our headquarters is at 590 Goolsby Blvd in Deerfield Beach — minutes from Pompano Beach. We offer same-day response for emergencies throughout Pompano Beach and surrounding Broward County communities."
+      answer: 'Our headquarters is at 590 Goolsby Blvd in Deerfield Beach — minutes from Pompano Beach. We offer same-day response for emergencies throughout Pompano Beach and all of Broward County.'
     },
     {
       question: 'Do you handle salt air corrosion damage on Intracoastal properties?',
-      answer: "Yes — waterfront and canal-adjacent properties in Hillsboro Shores, Cypress Harbor, Snug Harbor, and Garden Isles are a specialty. We assess existing corrosion damage and specify materials engineered for constant salt air exposure."
+      answer: 'Yes — waterfront and canal-adjacent properties in Hillsboro Shores, Cypress Harbor, Snug Harbor, and Garden Isles are a specialty. We assess existing corrosion damage and specify materials engineered for constant salt air exposure.'
     },
     {
-      question: 'What are Pompano Beach\'s HVHZ roofing requirements?',
-      answer: "Every roofing installation in Pompano Beach must meet Broward County's High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation."
+      question: 'What are Pompano Beach HVHZ roofing requirements?',
+      answer: 'Every roofing installation in Pompano Beach must meet Broward County High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation.'
     },
     {
       question: 'Do you work with insurance companies for storm damage claims?',
-      answer: "Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims."
+      answer: 'Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims.'
     },
     {
-      question: 'What roofing materials work best in Pompano Beach\'s coastal environment?',
-      answer: "Standing seam metal with Kynar coatings, concrete tile with protective sealants, and impact-resistant shingles rated for coastal environments. We guide every Pompano Beach customer toward materials proven to withstand both salt air corrosion and HVHZ wind loads."
-    }
-  ];
-
-  const testimonials = [
-    {
-      question: 'How does salt air affect roofs in Pompano Beach?',
-      answer: "Salt air accelerates corrosion of fasteners, flashing, and metal components. We use marine-grade corrosion-resistant materials and sealed deck systems on all coastal properties. Every fastener, every flashing, every underlayment we specify accounts for salt air exposure."
-    },
-    {
-      question: 'Do you work with condo associations and property managers?',
-      answer: "Absolutely. We regularly serve Pompano Beach's condo associations and commercial property managers. We understand board approval processes, phased scheduling, resident communication, and the unique requirements of multi-family properties."
-    },
-    {
-      question: 'Do you offer financing for Pompano Beach roofing projects?',
-      answer: "Yes. We offer flexible financing plans including credit-based and non-credit-based options with competitive rates. Use our Roof Cost Calculator for a preliminary estimate based on your roof type and square footage."
-    },
-    {
-      question: 'How quickly can you respond to emergency repairs?',
-      answer: "We provide same-day response for active leaks and storm emergencies. Our Deerfield Beach headquarters is just minutes from Pompano Beach, allowing us to respond quickly when you need us most."
+      question: 'What roofing materials work best in Pompano Beach coastal environment?',
+      answer: 'Standing seam metal with Kynar coatings, concrete tile with protective sealants, and impact-resistant shingles rated for coastal environments. We guide every Pompano Beach customer toward materials proven to withstand both salt air corrosion and HVHZ wind loads.'
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#09090b]">
-      <div className="pt-36">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <nav className="flex items-center space-x-2 text-sm mb-8">
-            <Link to="/" className="text-zinc-400 hover:text-red-600 transition-colors">
-              Home
-            </Link>
-            <span className="text-zinc-600">/</span>
-            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
-              Deerfield Beach
-            </Link>
-            <span className="text-zinc-600">/</span>
-            <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
-              Service Areas
-            </Link>
-            <span className="text-zinc-600">/</span>
-            <span className="text-white">Pompano Beach</span>
+    <div className="min-h-screen bg-white">
+      {/* Breadcrumb */}
+      <div className="bg-gray-50 border-b border-gray-200 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center space-x-2 text-sm text-gray-500">
+            <Link to="/" className="hover:text-red-600 flex items-center gap-1"><Home className="w-3 h-3" />Home</Link>
+            <span>/</span>
+            <Link to="/locations" className="hover:text-red-600">Service Areas</Link>
+            <span>/</span>
+            <span className="text-gray-900 font-medium">Pompano Beach</span>
           </nav>
+        </div>
+      </div>
 
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Expert Roofing Contractor in{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Pompano Beach, FL
-              </span>
-            </h1>
-            <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Dual-Licensed Roofing & General Contractor
-            </p>
-            <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              All Phase Construction USA has served Pompano Beach homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters, just minutes away. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Pompano Beach roofing project that standard roofing-only contractors cannot match.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Dual Licensed (CCC & CGC)</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>HVHZ Certified</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Coastal Expertise</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Family Owned</span>
-              </div>
+      {/* Hero */}
+      <div className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-2 text-red-400 text-sm font-medium mb-4">
+              <Shield className="w-4 h-4" />
+              <span>Dual-Licensed CCC-1331464 | CGC-1526236</span>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact/"
-                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
-              >
-                Get Free Inspection
-              </Link>
-              <a
-                href="tel:+17542275605"
-                className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
-              >
-                <Phone className="w-5 h-5" />
-                (754) 227-5605
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Expert Roofing Contractor in Pompano Beach, FL</h1>
+            <p className="text-xl text-gray-300 mb-8">All Phase Construction USA has served Pompano Beach homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters, just minutes away. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Pompano Beach roofing project that standard roofing-only contractors cannot match.</p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="tel:7542275605" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+                <Phone className="w-5 h-5" />(754) 227-5605
               </a>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              The Dual-License Advantage for Pompano Beach Properties
-            </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
-              <p>
-                Most Pompano Beach roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability.
-              </p>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Salt Air and Coastal Corrosion Expertise
-            </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
-              <p>
-                Pompano Beach properties face dual salt air exposure — from the Atlantic Ocean to the east and the Intracoastal Waterway running through the city. Constant salt air accelerates fastener corrosion, flashing degradation, and underlayment failure on any roofing system not specifically specified for coastal environments. We specify salt-resistant, high-performance materials proven in Pompano Beach's demanding conditions. The Hillsboro Inlet Lighthouse, built in 1907, has stood at the northern tip of Pompano Beach for over a century — a reminder of how long coastal exposure has been the defining environmental challenge for every structure on this coastline.
-              </p>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              HVHZ Compliance for Pompano Beach
-            </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
-              <p>
-                Pompano Beach is located in Broward County's High Velocity Hurricane Zone. Every roof installation must be engineered for 175+ mph wind resistance with HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase Construction USA's dual licensure enables us to engineer the complete roofing system — surface and structure — for full HVHZ compliance in a single project.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Serving All Pompano Beach Communities
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  All Phase Construction USA serves the full range of Pompano Beach neighborhoods. <strong>Hillsboro Shores</strong> and <strong>Cypress Harbor</strong> offer waterfront properties with direct Intracoastal exposure requiring salt-resistant specifications. <strong>Snug Harbor</strong> and <strong>Garden Isles</strong> are established canal-front communities where aging housing stock is entering replacement cycles. <strong>Boulevard Park Isles</strong> and <strong>Santa Barbara Estates</strong> represent mid-century residential areas with significant deferred maintenance. <strong>Palm Aire's</strong> golf course community demands HOA-compliant tile and metal installations. <strong>Cresthaven</strong> and <strong>the Highlands</strong> offer family neighborhoods with 1970s-80s construction. <strong>Old Pompano</strong> and <strong>Downtown Pompano Beach</strong> are experiencing revitalization with both residential and commercial roofing demand. Shipwreck Park's 17 artificial reefs and the Fisher Family Pier reflect the city's deep connection to the Atlantic — the same ocean exposure that makes coastal-grade roofing non-negotiable throughout Pompano Beach. The Bailey Contemporary Arts Center anchors a growing downtown arts district where commercial roofing demand continues to grow.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <span className="inline-block px-4 py-2 bg-red-600/10 text-red-500 rounded-full text-sm font-semibold mb-4 border border-red-600/20">
-                HVHZ Compliant
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                High Velocity Hurricane Zone Compliance
-              </h2>
-              <p className="text-zinc-400 max-w-4xl mx-auto mb-8">
-                As part of Broward County, Pompano Beach is designated a High Velocity Hurricane Zone (HVHZ) under the Florida Building Code. This means stricter requirements for:
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Materials</h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  All roofing materials must have specific Florida Product Approvals for HVHZ use. We only install products that meet these requirements.
-                </p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Installation</h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  Fastener patterns, wind uplift calculations, and attachment methods must meet HVHZ standards. Our crews are trained specifically for these requirements.
-                </p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Documentation</h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  HVHZ projects require detailed permit applications, wind load calculations, and inspection documentation. We handle all of it.
-                </p>
-              </div>
-            </div>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto italic">
-              "Pompano Beach has taken direct hits from major hurricanes. HVHZ codes exist because we've learned what happens when roofs aren't built to withstand these storms. We install every roof as if the next one is coming this season."
-            </p>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Complete Roofing Services in Pompano Beach
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                From emergency repairs to complete replacements — serving residential and commercial properties.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Link
-                    key={service.title}
-                    to={service.path}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
-                  >
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-red-500" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-zinc-400 mb-4 leading-relaxed">{service.description}</p>
-                    <div className="flex items-center text-red-500 font-medium">
-                      <span>Learn More</span>
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Project Planning
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  Proper planning is the foundation of any successful roofing project, whether you're considering a <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">full roof replacement</Link> or a targeted repair. The process starts with a thorough assessment of your existing roof to determine its current condition and identify underlying issues. All Phase Construction USA works closely with you to understand your specific needs, preferences, and budget, developing a detailed plan for your project.
-                </p>
-                <p>
-                  Key factors such as roof size, pitch, and structure are carefully evaluated to ensure the right approach and selection of quality roofing materials. During this stage, we review local building codes and Broward County regulations to guarantee compliance and avoid hidden costs. Permits for roof replacement in Pompano Beach typically range from $100 to $500. By investing in comprehensive project planning, homeowners can feel confident their roofing project will be completed efficiently, on budget, and to the highest standards.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Consultation and Advice
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  All Phase Construction USA offers more than just installation — we provide expert consultation and advice tailored to your specific needs. During a roofing consultation, our team will thoroughly assess your existing roof, identify any issues such as leaks or damaged shingles, and recommend the most effective solution, whether it's roof repair, roof replacement, or routine maintenance. You'll receive guidance on selecting the best roofing materials and gain a clear understanding of the costs involved.
-                </p>
-                <p>
-                  Consultations also cover the importance of regular <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">roof inspections</Link> and <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation inspections</Link>, which help protect your property from severe weather and can lower your insurance premiums by 20–45%. By working with All Phase Construction USA, you'll receive honest recommendations, cost-effective solutions, and the peace of mind that comes from making informed decisions.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Materials and Options
-              </h2>
-              <p className="text-zinc-400 leading-relaxed mb-8">
-                Choosing the right roofing materials is a crucial decision that affects the performance, appearance, and longevity of your roof. Homeowners in Pompano Beach have access to a wide variety of options, each offering unique benefits:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    <Link to="/shingle-roofing" className="hover:text-red-500 transition-colors">Asphalt Shingles</Link>
-                  </h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    The most common and affordable roofing material, ideal for budget-conscious homeowners. Lifespan: 15–30 years.
-                  </p>
-                </div>
-                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    <Link to="/shingle-roofing" className="hover:text-red-500 transition-colors">Architectural Shingles</Link>
-                  </h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Added dimension and style compared to standard three-tab shingles, with improved wind resistance.
-                  </p>
-                </div>
-                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    <Link to="/metal-roofing" className="hover:text-red-500 transition-colors">Metal Roofing</Link>
-                  </h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Excellent durability and energy efficiency that can withstand Florida's challenging weather. Lifespan: up to 70 years.
-                  </p>
-                </div>
-                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    <Link to="/tile-roofing" className="hover:text-red-500 transition-colors">Concrete and Clay Tile</Link>
-                  </h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Resilient and classic, known for their longevity. Clay tile roofs can last 50–100 years.
-                  </p>
-                </div>
-                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
-                  <h3 className="text-xl font-bold text-white mb-3">Slate Tile</h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Luxurious, long-lasting solution with lifespans up to 150 years.
-                  </p>
-                </div>
-                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    <Link to="/flat-roofing" className="hover:text-red-500 transition-colors">Flat Roofing Systems</Link>
-                  </h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    TPO, modified bitumen, and SPF options for commercial and low-slope residential applications.
-                  </p>
-                </div>
-              </div>
-              <p className="text-zinc-400 leading-relaxed mt-8">
-                Our team can help you compare these materials, taking into account your budget, climate considerations, and personal style preferences. Energy-efficient materials like metal roofs can help reduce energy bills over time.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Safety and Wind Mitigation
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  Safety is paramount during any roofing project, both for homeowners and contractors. A damaged roof can lead to serious issues such as roof leaks, structural problems, or even collapse if not addressed properly. Before any work begins, a comprehensive <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">roof inspection</Link> is conducted to identify potential hazards and ensure the roof is safe to access.
-                </p>
-                <p>
-                  Implementing <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation measures</Link> is especially important for Pompano Beach properties located in Florida's High Velocity Hurricane Zone. Wind mitigation upgrades can lower homeowner insurance premiums by 20–45% while strengthening your roof against storm damage. All Phase Construction USA is a certified wind mitigator and can perform both the upgrades and the inspection documentation your insurance company requires.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Maintenance and Inspection
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  Regular maintenance and inspection are key to maximizing the lifespan of your roof and preventing unexpected expenses. Scheduling <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">annual roof inspections</Link> allows homeowners to catch small issues — such as missing shingles or loose flashing — before they turn into costly repairs. These inspections are especially important after severe weather, as they can reveal hidden damage that might otherwise go unnoticed.
-                </p>
-                <p>
-                  Homeowners can also take simple steps to protect their roof, such as cleaning gutters and downspouts to prevent water buildup and trimming overhanging branches. All Phase Construction USA offers comprehensive <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline transition-colors">roof maintenance programs</Link> designed specifically for South Florida conditions.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Removal and Cleanup
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  The removal and cleanup phase is a critical part of any roof replacement project. All Phase Construction USA carefully removes your old roof, including all shingles, underlayment, and other materials, ensuring the process is safe and efficient. The cost for roofing removal typically ranges from $0.40 to $2.00 per square foot, depending on the type of material and complexity of the job.
-                </p>
-                <p>
-                  Proper cleanup is just as important as the installation itself. All debris is thoroughly cleared away, and the roof deck and structure are inspected for any hidden damage that could affect the new installation. This attention to detail ensures your new roof is built on a solid, reliable foundation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                What Pompano Beach Roofs Face
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                Pompano Beach's coastal location and building mix create specific challenges:
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {challenges.map((challenge, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{challenge.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{challenge.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-                Roofing Considerations in Pompano Beach, Florida
-              </h2>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b border-zinc-700">
-                        <th className="text-left py-3 px-4 text-white font-semibold">Factor</th>
-                        <th className="text-left py-3 px-4 text-white font-semibold">Why It Matters in Pompano Beach</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-zinc-400">
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">High Velocity Hurricane Zone (HVHZ)</td>
-                        <td className="py-3 px-4">Pompano Beach is located within Florida's HVHZ, requiring stricter wind uplift ratings, fastening schedules, and approved roofing assemblies.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Coastal & Salt Air Exposure</td>
-                        <td className="py-3 px-4">Properties closer to the ocean and Intracoastal are exposed to salt air, increasing the importance of corrosion-resistant materials and proper coatings.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Condos & Multi-Family Buildings</td>
-                        <td className="py-3 px-4">Pompano Beach has a high concentration of condos and multi-family properties, requiring experience with large-scale roofing systems and HOA coordination.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Roofing Materials</td>
-                        <td className="py-3 px-4">Tile, metal, and flat roofing systems are common, with material selection often influenced by wind resistance, building height, and long-term durability.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Metal Roofing Requirements</td>
-                        <td className="py-3 px-4">Metal roofing systems must meet HVHZ approval standards, including UL listings, enhanced underlayment systems, and fire barrier requirements.</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-medium text-white">Storm & Rain Exposure</td>
-                        <td className="py-3 px-4">Heavy rain events and tropical systems make proper drainage, flashing, and waterproofing critical to roof performance.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <p className="text-zinc-400 leading-relaxed max-w-4xl mx-auto">
-                Roofing in Pompano Beach requires specialized HVHZ expertise, coastal material knowledge, and experience with both residential and multi-family properties. All Phase Construction brings over 20 years of local experience to every project, ensuring your roof meets strict wind codes, resists salt air corrosion, and delivers long-term performance in South Florida's demanding coastal environment.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-                Condo & Multi-Family Roofing in Pompano Beach
-              </h2>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b border-zinc-700">
-                        <th className="text-left py-3 px-4 text-white font-semibold">Consideration</th>
-                        <th className="text-left py-3 px-4 text-white font-semibold">What It Means for Pompano Beach Condos</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-zinc-400">
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">High-Rise Wind Exposure</td>
-                        <td className="py-3 px-4">Many Pompano Beach condos are mid- and high-rise structures exposed to elevated wind pressures requiring enhanced uplift-rated systems.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">HVHZ Compliance</td>
-                        <td className="py-3 px-4">All condo roofing systems must meet Florida HVHZ standards, including approved assemblies and fastening schedules.</td>
-                      </tr>
-                      <tr className="border-b border-zinc-800">
-                        <td className="py-3 px-4 font-medium text-white">Flat & Low-Slope Roofing</td>
-                        <td className="py-3 px-4">TPO, modified bitumen, and other flat roofing systems are common and must be designed for drainage and long-term performance.</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-medium text-white">HOA & Board Coordination</td>
-                        <td className="py-3 px-4">Condo projects often require phased scheduling, documentation, and coordination with associations and property managers.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">
-                Roofing Costs & Payment Options in Pompano Beach
-              </h2>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <p className="text-zinc-400 leading-relaxed mb-4">
-                  Many Pompano Beach homeowners and condo associations explore costs and financing before committing to a roofing project. Understanding your budget and available payment options helps you plan effectively and make informed decisions about your property's most important investment.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    to="/roof-cost-calculator/"
-                    className="flex-1 bg-zinc-800 border border-zinc-700 rounded-lg p-4 hover:border-red-600 transition-all duration-300 group"
-                  >
-                    <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
-                      Roof Cost Calculator
-                    </h3>
-                    <p className="text-zinc-400 text-sm">
-                      Get an instant estimate for your Pompano Beach roofing project based on your property details and material preferences.
-                    </p>
-                  </Link>
-                  <Link
-                    to="/blog/roof-pricing-financing-guide/"
-                    className="flex-1 bg-zinc-800 border border-zinc-700 rounded-lg p-4 hover:border-red-600 transition-all duration-300 group"
-                  >
-                    <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">
-                      Roof Pricing & Financing Guide
-                    </h3>
-                    <p className="text-zinc-400 text-sm">
-                      Learn about typical roofing costs, financing options, and payment plans available for South Florida properties.
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Why Pompano Beach Property Owners Choose All Phase Construction
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {whyChooseUs.map((reason, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Partnerships and Certifications
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  All Phase Construction USA holds certifications from leading manufacturers including GAF, Owens Corning Platinum, CertainTeed Master, and Tamko Pro Platinum. These partnerships give us access to top-tier roofing materials and advanced installation techniques.
-                </p>
-                <p>
-                  In addition to manufacturer certifications, we hold credentials for specialized services including wind mitigation inspection and architectural shingle installation. These certifications reflect our commitment to ongoing training and excellence in roofing services. When you work with All Phase Construction USA, you benefit from quality roofing materials, expert installation, and comprehensive warranties.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Education and Resources
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  All Phase Construction USA is dedicated to empowering homeowners and business owners with the knowledge they need to make informed decisions about their roofing needs. Our <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> provides clear information on different types of roofing materials, guidance on selecting the best option for your budget and climate, and tips for maintaining your roof.
-                </p>
-                <p>
-                  Resources cover topics like how to <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline transition-colors">spot early signs of roof damage</Link>, <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline transition-colors">understanding your roofing warranty</Link>, how to <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline transition-colors">file an insurance claim</Link> after storm damage, and how <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation</Link> can lower your insurance premiums. Visit our <Link to="/learning-center" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> to explore all of our roofing guides and educational content.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Roofing Permits and Compliance
-              </h2>
-              <div className="space-y-4 text-zinc-400 leading-relaxed">
-                <p>
-                  Securing the <Link to="/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida" className="text-red-500 hover:text-red-400 underline transition-colors">proper permits</Link> and ensuring compliance with local regulations are essential steps in any roofing project. Homeowners should always verify that their roofing contractor obtains all necessary permits and adheres to building codes, including wind mitigation and energy efficiency standards.
-                </p>
-                <p>
-                  All Phase Construction USA manages the permitting process from start to finish, submitting all required documentation and ensuring work is performed according to code. As GAF Certified, Owens Corning Platinum, CertainTeed Master, and Tamko Pro Platinum certified contractors, we meet the highest manufacturer standards for installation quality. By prioritizing permits and compliance, you avoid costly fines, guarantee a safe and reliable installation, and safeguard your investment for the long term.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-                Pompano Beach Zip Codes We Serve
-              </h2>
-              <p className="text-zinc-400 leading-relaxed">
-                We serve all Pompano Beach zip codes including: 33060, 33061, 33062, 33063, 33064, 33068, 33069, 33072, 33074, and surrounding areas.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Serving Pompano Beach & Surrounding Areas
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                Based in Deerfield Beach, we provide roofing services throughout South Florida including Pompano Beach and surrounding communities. Our local presence means faster response times and familiarity with regional building requirements. We proudly serve nearby areas including <Link to="/locations/fort-lauderdale" className="text-red-500 hover:text-red-400 transition-colors">Fort Lauderdale</Link>, <Link to="/locations/coral-springs" className="text-red-500 hover:text-red-400 transition-colors">Coral Springs</Link>, <Link to="/locations/deerfield-beach" className="text-red-500 hover:text-red-400 transition-colors">Deerfield Beach</Link>, <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 transition-colors">Boca Raton</Link>, <Link to="/locations/delray-beach" className="text-red-500 hover:text-red-400 transition-colors">Delray Beach</Link>, and <Link to="/locations/boynton-beach" className="text-red-500 hover:text-red-400 transition-colors">Boynton Beach</Link>.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
-              {nearbyCities.map((city) => (
-                <Link
-                  key={city.name}
-                  to={city.path}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 text-center text-sm"
-                >
-                  {city.name}
-                </Link>
-              ))}
-            </div>
-            <div className="text-center">
-              <Link
-                to="/locations/"
-                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
-              >
-                View All Service Areas
-                <ArrowRight className="w-4 h-4" />
+              <Link to="/contact" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+                Get Free Inspection <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
+        </div>
+      </div>
 
-          <EmbeddedRoofCalculator
-            city="Pompano Beach"
-            county="Broward"
-            isHVHZ={true}
-          />
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="lg:col-span-2 space-y-12">
 
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing Questions from Pompano Beach Property Owners
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden"
-                >
-                  <button
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-zinc-800/50 transition-colors"
-                  >
-                    <span className="font-semibold text-white pr-4">{faq.question}</span>
-                    {openFaq === index ? (
-                      <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+            {/* Dual License Section */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">The Dual-License Advantage for Pompano Beach Properties</h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">Most Pompano Beach roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. That means delays, split warranties, and cost overruns.</p>
+              <p className="text-gray-700 text-lg leading-relaxed">All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability. We inspect deck fastening patterns, assess truss integrity, verify roof-to-wall connections, and confirm full Florida Building Code compliance before the first new material goes down.</p>
+            </section>
+
+            {/* Salt Air Section */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Salt Air and Coastal Corrosion Expertise</h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">Pompano Beach properties face dual salt air exposure — from the Atlantic Ocean to the east and the Intracoastal Waterway running through the city. Constant salt air accelerates fastener corrosion, flashing degradation, and underlayment failure on any roofing system not specifically specified for coastal environments.</p>
+              <p className="text-gray-700 text-lg leading-relaxed">We specify salt-resistant, high-performance materials proven in Pompano Beach's demanding conditions. The Hillsboro Inlet Lighthouse, built in 1907, has stood at the northern tip of Pompano Beach for over a century — a reminder of how long coastal exposure has been the defining environmental challenge for every structure on this coastline.</p>
+            </section>
+
+            {/* HVHZ Section */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">HVHZ Compliance for Pompano Beach</h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">Pompano Beach is located in Broward County's High Velocity Hurricane Zone. Every roof installation must be engineered for 175+ mph wind resistance with HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections.</p>
+              <p className="text-gray-700 text-lg leading-relaxed">Our dual licensure enables us to engineer the complete roofing system — surface and structure — for full HVHZ compliance in a single project. We handle all Broward County permitting and HVHZ compliance documentation in-house, preventing the delays that plague contractors unfamiliar with local requirements.</p>
+            </section>
+
+            {/* Neighborhoods Section */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Serving All Pompano Beach Communities</h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">All Phase Construction USA serves the full range of Pompano Beach neighborhoods. Hillsboro Shores and Cypress Harbor offer waterfront properties with direct Intracoastal exposure requiring salt-resistant specifications. Snug Harbor and Garden Isles are established canal-front communities where aging housing stock is entering replacement cycles. Boulevard Park Isles and Santa Barbara Estates represent mid-century residential areas with significant deferred maintenance.</p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">Palm Aire's golf course community demands HOA-compliant tile and metal installations. Cresthaven and the Highlands offer family neighborhoods with 1970s-80s construction. Old Pompano and Downtown Pompano Beach are experiencing revitalization with both residential and commercial roofing demand.</p>
+              <p className="text-gray-700 text-lg leading-relaxed">Shipwreck Park's 17 artificial reefs and the Fisher Family Pier reflect the city's deep connection to the Atlantic — the same ocean exposure that makes coastal-grade roofing non-negotiable throughout Pompano Beach. The Bailey Contemporary Arts Center anchors a growing downtown arts district where commercial roofing demand continues to grow.</p>
+            </section>
+
+            {/* Services */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Roofing Services in Pompano Beach</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {[
+                  { icon: <Home className="w-6 h-6" />, title: 'Residential Roofing', desc: 'Complete replacement and repair for all Pompano Beach home types. Tile, shingle, metal, and flat systems. HOA approval coordination for Palm Aire and golf communities.' },
+                  { icon: <Building2 className="w-6 h-6" />, title: 'Commercial Roofing', desc: 'Flat, TPO, modified bitumen, and standing seam metal for Pompano Beach commercial properties. Energy-efficient systems for Broward County properties.' },
+                  { icon: <Wrench className="w-6 h-6" />, title: 'Roof Repair', desc: 'Emergency and scheduled repairs for leaks, storm damage, salt air corrosion damage, and aging material failures. 24/7 response for active leaks.' },
+                  { icon: <Shield className="w-6 h-6" />, title: 'Inspections & Permitting', desc: '21-point inspections for insurance claims, pre-purchase evaluations, and post-storm documentation. All Broward County permitting handled in-house.' }
+                ].map((service, i) => (
+                  <div key={i} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                    <div className="text-red-600 mb-3">{service.icon}</div>
+                    <h3 className="font-bold text-gray-900 mb-2">{service.title}</h3>
+                    <p className="text-gray-600 text-sm">{service.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Testimonials */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">What Our Pompano Beach Customers Say</h2>
+              <div className="space-y-6">
+                {[
+                  { text: 'Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!', author: 'Michael R.', location: 'Pompano Beach Homeowner' },
+                  { text: 'We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship.', author: 'Jennifer L.', location: 'Broward County' },
+                  { text: 'All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience.', author: 'David S.', location: 'Commercial Property Owner' }
+                ].map((review, i) => (
+                  <div key={i} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                    <div className="flex gap-1 mb-3">{[...Array(5)].map((_, j) => <span key={j} className="text-yellow-400">★</span>)}</div>
+                    <p className="text-gray-700 italic mb-4">"{review.text}"</p>
+                    <p className="font-semibold text-gray-900">— {review.author}, <span className="text-gray-600 font-normal">{review.location}</span></p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* FAQ */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                {faqs.map((faq, i) => (
+                  <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-gray-50 transition-colors"
+                    >
+                      <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                      {openFaq === i ? <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />}
+                    </button>
+                    {openFaq === i && (
+                      <div className="px-6 pb-6 bg-white">
+                        <p className="text-gray-700">{faq.answer}</p>
+                      </div>
                     )}
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
-                      <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
           </div>
 
-          <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Get In Touch
-            </h2>
-            <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Ready to start your project? Contact us today for a free estimate on your roofing project and explore your options with transparent pricing.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <Link
-                to="/contact/"
-                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
-              >
-                Schedule Free Inspection
-              </Link>
-              <a
-                href="tel:+17542275605"
-                className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
-              >
-                <Phone className="w-5 h-5" />
-                (754) 227-5605
+          {/* Sidebar */}
+          <div className="lg:col-span-1 space-y-8">
+            <div className="bg-gray-900 text-white rounded-xl p-8 sticky top-6">
+              <h3 className="text-xl font-bold mb-2">Free Pompano Beach Roof Inspection</h3>
+              <p className="text-gray-300 text-sm mb-6">Same-day response available. Licensed in Broward County.</p>
+              <a href="tel:7542275605" className="w-full bg-red-600 hover:bg-red-700 text-white py-4 px-6 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors mb-4">
+                <Phone className="w-5 h-5" />(754) 227-5605
               </a>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspection</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>No Obligation</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Same-Week Scheduling Available</span>
+              <Link to="/contact" className="w-full bg-white text-gray-900 hover:bg-gray-100 py-4 px-6 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+                Request Free Estimate <ArrowRight className="w-5 h-5" />
+              </Link>
+              <div className="mt-6 pt-6 border-t border-gray-700 space-y-2 text-sm text-gray-400">
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-400" /><span>Licensed CCC-1331464 | CGC-1526236</span></div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-400" /><span>HVHZ 175+ mph Certified</span></div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-400" /><span>Serving Pompano Beach Since 2006</span></div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-400" /><span>24/7 Emergency Response</span></div>
               </div>
             </div>
+
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h3 className="font-bold text-gray-900 mb-4">Related Services</h3>
+              <div className="space-y-2">
+                <Link to="/roof-repair/pompano-beach" className="flex items-center gap-2 text-red-600 hover:text-red-700 font-medium text-sm"><ArrowRight className="w-4 h-4" />Pompano Beach Roof Repair</Link>
+                <Link to="/roof-inspection/pompano-beach" className="flex items-center gap-2 text-red-600 hover:text-red-700 font-medium text-sm"><ArrowRight className="w-4 h-4" />Pompano Beach Roof Inspection</Link>
+                <Link to="/metal-roofing" className="flex items-center gap-2 text-red-600 hover:text-red-700 font-medium text-sm"><ArrowRight className="w-4 h-4" />Metal Roofing</Link>
+                <Link to="/tile-roofing" className="flex items-center gap-2 text-red-600 hover:text-red-700 font-medium text-sm"><ArrowRight className="w-4 h-4" />Tile Roofing</Link>
+                <Link to="/flat-roofing" className="flex items-center gap-2 text-red-600 hover:text-red-700 font-medium text-sm"><ArrowRight className="w-4 h-4" />Flat Roofing</Link>
+              </div>
+            </div>
+
+            <EmbeddedRoofCalculator />
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom CTA */}
+      <div className="bg-red-600 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready for Your Free Pompano Beach Roof Inspection?</h2>
+          <p className="text-red-100 mb-8 max-w-2xl mx-auto">Serving all of Pompano Beach from our Deerfield Beach headquarters since 2006. Licenses CCC-1331464 | CGC-1526236.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:7542275605" className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+              <Phone className="w-5 h-5" />Call (754) 227-5605
+            </a>
+            <Link to="/contact" className="border-2 border-white text-white hover:bg-red-700 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors">
+              Request Free Estimate <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </div>
