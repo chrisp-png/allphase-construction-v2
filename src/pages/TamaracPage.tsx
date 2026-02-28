@@ -17,135 +17,92 @@ export default function TamaracPage() {
 
   const services = [
     {
+      title: 'Residential Roofing',
+      description: 'Complete solutions for Tamarac homes — tile, shingle, metal, and flat systems, all HVHZ compliant. Special expertise in aging housing stock (40-50 year replacements) and moisture-resistant material selection for canal-adjacent properties.'
+    },
+    {
+      title: 'Flat Roof Repair and Replacement',
+      description: 'Specialized services for Kings Point and other 55+ condo communities. TPO, EPDM, and modified bitumen systems installed with proper drainage design and seam integrity to eliminate ponding. HOA coordination and property management company communication included.'
+    },
+    {
+      title: 'Commercial Roofing',
+      description: 'Flat, TPO, modified bitumen, and standing seam metal roofs for Tamarac Commerce Park and surrounding commercial properties. Minimal disruption to operations.'
+    },
+    {
       title: 'Roof Repair',
-      description: 'Focused repairs addressing leaks, storm damage, and aging components.',
-      icon: Wrench
+      description: 'Emergency and scheduled repairs for leaks, storm damage, missing shingles, and moisture-related damage. 24/7 response for active leaks and storm emergencies.'
     },
     {
-      title: 'Roof Replacement',
-      description: 'Complete roofing system replacements built to current Florida code standards.',
-      icon: Home
+      title: 'Roof Inspections',
+      description: '21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.'
     },
     {
-      title: 'Shingle Roofing',
-      description: 'Wind-rated shingle systems suitable for South Florida homes.',
-      icon: Home
-    },
-    {
-      title: 'Tile Roofing',
-      description: 'Clay and concrete tile systems designed for durability and longevity.',
-      icon: Home
-    },
-    {
-      title: 'Metal Roofing',
-      description: 'Long-lasting, wind-resistant roofing solutions.',
-      icon: Shield
-    },
-    {
-      title: 'Flat Roofing',
-      description: 'Low-slope roofing systems designed for proper drainage and sealing.',
-      icon: Building2
-    },
-    {
-      title: 'Emergency Roof Repair',
-      description: 'Prompt response for active leaks or storm-related damage.',
-      icon: AlertTriangle
-    },
-    {
-      title: 'Leak Detection & Prevention',
-      description: 'Identification of moisture entry points and preventative solutions.',
-      icon: Wind
+      title: 'Permitting',
+      description: 'Complete permit application and processing, HVHZ compliance documentation, inspection scheduling, and final approval — all handled by our team.'
     }
   ];
 
-  const conditions = [
+  const processSteps = [
     {
-      title: 'Seasonal Storms',
-      description: 'Producing strong winds and heavy rainfall'
+      title: 'Free Inspection and Estimate',
+      description: 'Scheduled within 24 hours. Comprehensive inspection covering surface materials, moisture damage, ventilation, deck condition, and canal-proximity concerns specific to Tamarac. Detailed written estimate, no pressure, no hidden fees.'
     },
     {
-      title: 'Intense Heat & UV Exposure',
-      description: 'Accelerating material aging'
+      title: 'Material Selection and Insurance Assistance',
+      description: 'Full photo documentation for insurance claims. Material selection guidance accounting for Tamarac\'s humidity, canal exposure, HOA requirements, and HVHZ wind standards.'
     },
     {
-      title: 'High Humidity',
-      description: 'Increasing moisture-related risks'
+      title: 'Professional Installation with Permits',
+      description: 'All Phase Construction USA handles all permitting, HVHZ compliance documentation, and coordination with Broward County building officials. Complete tear-off, deck inspection, and your approval before any additional structural repairs proceed.'
     },
     {
-      title: 'Common Roofing Systems',
-      description: 'Including shingle, tile, metal, and flat roofs'
+      title: 'Final Inspection and Warranty',
+      description: 'Comprehensive final inspection, full warranty documentation, and wind mitigation certification — potentially reducing homeowners insurance premiums significantly.'
     }
   ];
 
-  const challenges = [
-    'Wind uplift impacting shingles, tiles, flashing, and edge details',
-    'Water intrusion at penetrations, valleys, and roof transitions',
-    'Accelerated material aging from prolonged sun exposure',
-    'Installation vulnerabilities revealed during heavy rain events'
-  ];
-
-  const whyChooseUs = [
+  const testimonials = [
     {
-      title: 'Dual-Licensed Credentials',
-      description: 'Supporting roofing and structural expertise'
+      name: 'Michael R.',
+      location: 'Tamarac Homeowner',
+      text: 'Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!'
     },
     {
-      title: 'Extensive South Florida Experience',
-      description: 'Decades of roofing expertise in the region'
+      name: 'Jennifer L.',
+      location: 'Broward County',
+      text: 'We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship.'
     },
     {
-      title: 'Code-Compliant Practices',
-      description: 'Installation and repair practices meeting all requirements'
-    },
-    {
-      title: 'Insurance-Defensible Documentation',
-      description: 'Inspection and project documentation'
-    },
-    {
-      title: 'Supervised Job Sites',
-      description: 'With consistent cleanliness standards'
-    }
-  ];
-
-  const homeownerQuestions = [
-    {
-      question: 'Do you have a roofing office in Tamarac?',
-      answer: 'Our primary office is located in Deerfield Beach, and we provide full roofing service coverage throughout Tamarac.'
-    },
-    {
-      question: 'How fast can you respond to roof issues in Tamarac?',
-      answer: 'Our proximity allows for efficient response times and flexible scheduling.'
-    },
-    {
-      question: 'Do you pull permits in Tamarac?',
-      answer: 'Yes. We handle permitting and coordinate inspections in accordance with local and state requirements.'
-    },
-    {
-      question: 'What roofing systems work best in Tamarac?',
-      answer: 'Tile, metal, wind-rated shingle, and properly installed flat roofing systems perform well in Tamarac conditions.'
-    },
-    {
-      question: 'Are roof inspections free in Tamarac?',
-      answer: 'Yes. Free roof inspections are available for Tamarac property owners.'
+      name: 'David S.',
+      location: 'Commercial Property Owner',
+      text: 'All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience.'
     }
   ];
 
   const faqs = [
     {
-      question: 'How often should roofs in Tamarac be inspected?',
-      answer: 'Roofs in Tamarac should be inspected annually and after major storms to identify early signs of damage.'
+      question: 'How do you handle Tamarac\'s humidity and moisture challenges?',
+      answer: 'We select materials specifically rated for high-humidity environments — algae-resistant shingles, Kynar-coated metal, TPO membranes — and install enhanced ventilation systems to combat moisture accumulation. Tamarac\'s 500+ acres of canals and lakes create persistent conditions that generic material selections can\'t handle long-term.'
     },
     {
-      question: 'Are permits required for roofing work in Tamarac?',
-      answer: 'Yes, most roofing projects in Tamarac require permits and inspections to meet Florida Building Code standards.'
+      question: 'What\'s the best roofing material for homes near Tamarac\'s canals?',
+      answer: 'Metal roofing with corrosion-resistant coatings performs best for moisture exposure. Algae-resistant architectural shingles are strong performers for pitched roofs at better price points. For flat roof applications in condo communities, TPO membranes offer superior reflectivity and moisture resistance. We\'ll recommend the right option during your inspection.'
     },
     {
-      question: 'What roofing materials last longest in Tamarac?',
-      answer: 'Metal and tile roofing systems typically provide the longest lifespan in Tamarac due to their durability and wind resistance.'
+      question: 'Do you work on flat roofs in Kings Point and other 55+ communities?',
+      answer: 'Yes — flat roof systems for Tamarac\'s condo communities are a core specialty. We understand HOA requirements, work with property management companies, and have extensive experience with multi-unit buildings throughout Kings Point\'s 13 subdivisions.'
     },
     {
-      question: 'Can heavy rain cause roof leaks in Tamarac even without visible damage?',
-      answer: 'Yes, wind-driven rain can expose flashing or transition weaknesses even when surface materials appear intact.'
+      question: 'How quickly can you respond to storm damage in Tamarac?',
+      answer: 'We provide 24/7 emergency response throughout Tamarac and Broward County. Most emergency calls receive same-day service to secure the property from further damage.'
+    },
+    {
+      question: 'Do you help with insurance claims?',
+      answer: 'Yes. We document damage thoroughly, meet with adjusters, and provide detailed estimates. Nearly two decades of experience with Broward County insurance companies means faster approvals and fair coverage.'
+    },
+    {
+      question: 'Which Tamarac neighborhoods do you serve?',
+      answer: 'All of Tamarac — Woodlands, Kings Point, Mainlands of Tamarac Lakes, Tamarac Lakes, Heathgate, Sunflower, Sherwood Forest, and every neighborhood within city limits, plus commercial properties throughout Tamarac Commerce Park.'
     }
   ];
 
@@ -181,10 +138,10 @@ export default function TamaracPage() {
   return (
     <div className="min-h-screen bg-[#09090b]">
       <Helmet>
-        <title>Tamarac Roofer | HVHZ Certified | All Phase</title>
+        <title>Tamarac FL Roofing Contractor | HVHZ Certified | All Phase Construction USA</title>
         <meta
           name="description"
-          content="Tamarac FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605"
+          content="Tamarac FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Serving Woodlands, Kings Point, Tamarac Commerce Park since 2006. (754) 227-5605"
         />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -219,13 +176,10 @@ export default function TamaracPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Roofing Services in{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Tamarac, FL
-              </span>
+              Expert Roofing Contractor in Tamarac, FL
             </h1>
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-              All Phase Construction USA provides dependable roofing services throughout Tamarac for residential and light commercial properties. From targeted roof repairs to complete roof replacements, our team supports Tamarac property owners with consistent service and technical oversight. Operating from our Deerfield Beach headquarters, we deliver roofing systems designed for South Florida weather exposure, durability, and Florida code compliance.
+              All Phase Construction USA has served Tamarac homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Tamarac roofing project that standard roofing-only contractors cannot match. Whether you own a single-family home in Woodlands, a condo in Kings Point, or commercial property in Tamarac Commerce Park, our team delivers comprehensive roofing solutions engineered for the specific demands of this community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -246,154 +200,99 @@ export default function TamaracPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Your Trusted Roofing Services Team in Tamarac
+              Dual-License Advantage: CGC and CCC
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Our roofing teams regularly work in Tamarac with crews dispatched from our Deerfield Beach headquarters. This proximity allows for efficient scheduling and familiarity with Tamarac permitting processes, inspection requirements, and Florida Building Code standards. Each project is completed with attention to wind resistance, moisture protection, and accurate documentation.
+                Most Tamarac roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems beneath the surface — rotted decking from moisture intrusion, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. That means delays, coordination headaches, split warranties, and cost overruns.
+              </p>
+              <p>
+                All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability. In a city where much of the housing stock dates to the 1960s and 1970s, that structural capability matters on nearly every roof replacement we perform.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              HVHZ and Moisture Management
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Tamarac sits fully within South Florida's High Velocity Hurricane Zone, where every roofing installation must meet Florida's most demanding wind load standards — engineered to withstand 175+ mph wind speeds. But Tamarac has an additional roofing challenge that most Broward County cities don't: over 500 acres of freshwater canals and lakes woven throughout the city's residential neighborhoods.
+              </p>
+              <p>
+                That water coverage keeps humidity levels elevated year-round, accelerating algae growth on shingles, accelerating wood rot in decking and fascia, and creating persistent moisture intrusion risks that inland properties don't face. We address both challenges on every job — HVHZ-compliant fastening and wind load engineering, plus material selections and installation techniques specifically chosen for high-humidity environments. Every installation passes Broward County building department inspection on the first attempt.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Tamarac Neighborhoods We Serve
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                All Phase Construction USA serves the full range of Tamarac's residential and commercial properties. <strong>Woodlands</strong>, one of Tamarac's most established neighborhoods, features 1970s-era homes now entering full replacement cycles — many with original roofing systems well past their service life. <strong>Kings Point</strong>, the city's premier active 55+ gated community with 13 subdivisions and thousands of condo units, represents a significant flat roofing market where TPO, EPDM, and modified bitumen systems require specialized installation and ongoing maintenance.
+              </p>
+              <p>
+                <strong>Mainlands of Tamarac Lakes</strong> and <strong>Tamarac Lakes</strong> offer the city's original residential development — canal-adjacent homes where moisture management is a primary roofing concern. <strong>Heathgate</strong>, <strong>Sunflower</strong> near the Stranahan River, and <strong>Sherwood Forest</strong> round out the residential landscape.
+              </p>
+              <p>
+                <strong>Tamarac Commerce Park</strong>, the city's 500-acre commercial district home to Amazon, City Furniture, and approximately 80 companies, represents the commercial roofing demand of one of Broward County's major employment centers. Colony West Golf Club — the city-owned 36-hole facility — and Woodmont Country Club anchor the community's recreational identity.
               </p>
             </div>
           </div>
 
           <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Roofing Conditions Unique to Tamarac
-            </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Roofing systems in Tamarac are influenced by inland South Florida conditions that affect long-term performance:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {conditions.map((condition, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6"
-                >
-                  <h3 className="text-xl font-bold text-white mb-2">{condition.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{condition.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
               Roofing Services for Tamarac Properties
             </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              We provide a full range of roofing services tailored to Tamarac properties:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <div
-                    key={service.title}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                  >
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-red-500" />
-                    </div>
-                    <h3 className="text-lg font-bold text-white mb-2">
-                      {service.title}
-                    </h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed">{service.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              What Tamarac Roofs Commonly Face
-            </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Property owners in Tamarac often encounter roofing challenges such as:
-            </p>
-            <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
-              <ul className="space-y-3">
-                {challenges.map((challenge, index) => (
-                  <li key={index} className="flex items-start gap-3 text-zinc-400">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="leading-relaxed">{challenge}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Why Tamarac Homeowners Choose All Phase Construction USA
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {whyChooseUs.map((reason, index) => (
+              {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6"
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
                 >
-                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{service.description}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Roof Cost Tools for Tamarac
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              Materials for Tamarac's Climate
             </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              These tools help Tamarac property owners estimate roofing costs and explore financing options:
-            </p>
-            <div className="max-w-3xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
-              <ul className="space-y-4 text-zinc-400">
-                <li>
-                  <a
-                    href="https://allphaseconstructionfl.com/roof-cost-calculator/"
-                    className="text-red-500 hover:text-red-400 underline transition-colors text-lg"
-                  >
-                    Tamarac Roof Cost Calculator
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
-                    className="text-red-500 hover:text-red-400 underline transition-colors text-lg"
-                  >
-                    Monthly Payment Estimator
-                  </a>
-                </li>
-              </ul>
+            <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
+              <p className="text-zinc-400 leading-relaxed mb-6">
+                Metal roofing with corrosion-resistant Kynar-coated panels performs best for canal-adjacent properties — resisting the moisture and algae that accelerate degradation. Architectural shingles with algae-resistant granules and impact-rated mat construction provide strong value for pitched roof applications. TPO and EPDM single-ply membrane systems for flat roof applications in condo communities and commercial properties. Tile for communities with HOA aesthetic requirements.
+              </p>
+              <p className="text-zinc-400 text-sm">
+                Certified installer status with GAF, CertainTeed, Owens Corning, TAMKO, Eagle Roofing, Boral, FT Synthetics, Johns Manville, and Firestone.
+              </p>
             </div>
           </div>
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing Questions from Tamarac Homeowners
+              Our Tamarac Roofing Process
             </h2>
-            <div className="max-w-4xl mx-auto space-y-4">
-              {homeownerQuestions.map((question, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {processSteps.map((step, index) => (
                 <div
                   key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden"
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
                 >
-                  <button
-                    onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
-                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-zinc-800/50 transition-colors"
-                  >
-                    <span className="font-semibold text-white pr-4">{question.question}</span>
-                    {openQuestion === index ? (
-                      <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
-                    )}
-                  </button>
-                  {openQuestion === index && (
-                    <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
-                      <p className="text-zinc-400 leading-relaxed">{question.answer}</p>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                      {index + 1}
                     </div>
-                  )}
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
+                      <p className="text-zinc-400 leading-relaxed">{step.description}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -401,7 +300,42 @@ export default function TamaracPage() {
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing FAQs for Tamarac
+              What Tamarac Homeowners Say
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <div className="mb-4">
+                    <div className="flex text-red-500 mb-2">
+                      {'★★★★★'.split('').map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-zinc-400 leading-relaxed mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="text-white font-semibold">— {testimonial.name}</p>
+                  <p className="text-zinc-500 text-sm">{testimonial.location}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <h2 className="text-2xl font-bold text-white mb-4">
+                Flexible Financing Available
+              </h2>
+              <p className="text-zinc-400 leading-relaxed">
+                Flexible financing plans including credit-based and non-credit-based options. Use our Roof Cost Calculator for a preliminary estimate.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              Frequently Asked Questions
             </h2>
             <div className="max-w-4xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
@@ -430,19 +364,36 @@ export default function TamaracPage() {
             </div>
           </div>
 
+          <div className="mb-20">
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <div className="mb-6">
+                <p className="text-zinc-400 text-sm mb-2">Licensed & Insured</p>
+                <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
+                <div>
+                  <span className="text-white font-semibold">FL CCC License:</span> CCC-1331464
+                </div>
+                <div>
+                  <span className="text-white font-semibold">FL CGC License:</span> CGC-1526236
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready for Roofing Services in Tamarac?
+              Call (754) 227-5605 or Request Free Estimate
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule a free roof inspection with our South Florida roofing team today.
+              Serving all of Tamarac from our Deerfield Beach headquarters — protecting South Florida properties since 2006.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
                 to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
-                Schedule Free Inspection
+                Request Free Estimate
               </Link>
               <a
                 href="tel:+17542275605"
@@ -455,17 +406,17 @@ export default function TamaracPage() {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspection</span>
+                <span>Dual Licensed</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>No Obligation</span>
+                <span>HVHZ Certified</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Same-Week Scheduling Available</span>
+                <span>Since 2006</span>
               </div>
             </div>
           </div>
