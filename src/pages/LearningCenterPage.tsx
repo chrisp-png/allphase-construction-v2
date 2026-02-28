@@ -26,26 +26,21 @@ const toolsAndResources = [
 const costAndBudgeting = [
   { title: 'Roof Replacement Cost in Broward County (2026 Guide)', href: '/blog/roof-replacement-cost-broward-county-2026' },
   { title: 'Roof Pricing & Financing Guide', href: '/blog/roof-pricing-financing-guide' },
-  { title: 'How to Budget for a New Roof Without Surprises', href: '/blog/how-to-budget-for-a-new-roof-without-surprises' },
   { title: 'The Cost of Waiting: Why Delaying Roof Replacement Hurts Your Wallet', href: '/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet' }
 ];
 
 const hurricanePreparedness = [
   { title: 'What Makes a Roof Hurricane Resistant?', href: '/blog/what-makes-a-roof-hurricane-resistant' },
-  { title: 'Wind Mitigation for South Florida Roofs: Save on Insurance', href: '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home' },
-  { title: 'The Ultimate Guide to Hurricane-Proofing Your Roof', href: '/blog/the-ultimate-guide-to-hurricane-proofing-your-roof-in-south-florida-expert-tips-from-all-phase-construction-usa' },
-  { title: 'Do I Need a Roof Inspection After a Storm?', href: '/blog/do-i-need-a-roof-inspection-after-a-storm' },
-  { title: 'How to File a Roof Insurance Claim After Storm Damage', href: '/blog/how-to-file-a-roof-insurance-claim-after-storm-damage' }
+  { title: 'Wind Mitigation for South Florida Roofs', href: '/blog/wind-mitigation-roof-south-florida' },
+  { title: 'Do I Need a Roof Inspection After a Storm?', href: '/blog/do-i-need-a-roof-inspection-after-a-storm' }
 ];
 
 const roofingMaterials = [
   { title: 'Metal Roof vs Shingles in Florida (2026)', href: '/blog/metal-roof-vs-shingles-florida-2026' },
   { title: 'Metal Roof vs Tile Roof: South Florida Hurricanes', href: '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes' },
-  { title: 'Comparing Asphalt vs Metal Roofs: Which Is Right for You?', href: '/blog/comparing-asphalt-vs-metal-roofs-which-is-right-for-you' },
   { title: 'The Pros and Cons of Flat Roofs for Florida Homes', href: '/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes' },
   { title: 'Architectural Shingles vs Three-Tab Shingles', href: '/blog/the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles' },
   { title: 'What Is Roof Underlayment and Why Does It Matter?', href: '/blog/what-is-roof-underlayment-and-why-does-it-matter' },
-  { title: 'What Is a Cool Roof and Can It Save You Money?', href: '/blog/what-is-a-cool-roof-and-can-it-save-you-money' },
   { title: 'How to Choose Roofing Materials for Large-Scale Projects', href: '/blog/how-to-choose-roofing-materials-for-large-scale-projects' }
 ];
 
@@ -57,36 +52,22 @@ const roofReplacementRepair = [
 
 const maintenanceInspections = [
   { title: 'Professional Roof Inspection in South Florida', href: '/blog/professional-roof-inspection-south-florida' },
-  { title: 'Seasonal Roof Maintenance Checklist for Florida Homes', href: '/blog/seasonal-roof-maintenance-checklist-for-florida-homes' },
-  { title: 'Top Roof Maintenance Tips for South Florida Homes', href: '/blog/top-roof-maintenance-tips-for-south-florida-homes' },
   { title: 'How to Spot Early Signs of Roof Damage Before It Gets Expensive', href: '/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive' },
-  { title: 'What to Do When Your Roof Leaks', href: '/blog/what-to-do-when-your-roof-leaks' },
-  { title: 'How Often Should I Replace My Roof in South Florida?', href: '/blog/how-often-should-i-replace-my-roof-in-south-florida' },
   { title: 'The Importance of Proper Flashing Installation', href: '/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks' },
   { title: 'How to Protect Roof Decking from Moisture Damage', href: '/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction' },
-  { title: 'Why Proper Roof Ventilation Is Critical in Hot Climates', href: '/blog/why-proper-roof-ventilation-is-critical-in-hot-climates' },
   { title: 'The Role of Roof Pitch in Water Drainage and Design', href: '/blog/the-role-of-roof-pitch-in-water-drainage-and-design' }
 ];
 
 const homeownerGuides = [
-  { title: 'What Questions to Ask Your Roofing Contractor Before Hiring', href: '/blog/what-questions-to-ask-your-roofing-contractor-before-hiring' },
-  { title: 'Why Permitting Matters in Roofing and Construction Projects', href: '/blog/why-permitting-matters-in-roofing-and-construction-projects' },
-  { title: 'Why Homeowners Should Avoid Pulling Their Own Roofing Permit', href: '/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida' },
-  { title: 'Understanding Your Roofing Warranty: What\'s Covered?', href: '/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not' },
   { title: 'Common Roofing Myths Homeowners Still Believe', href: '/blog/common-roofing-myths-that-homeowners-still-believe' },
-  { title: 'Top 5 Roofing Mistakes South Florida Homeowners Make', href: '/blog/top-5-roofing-mistakes-south-florida-homeowners-make-and-how-to-avoid-them' },
-  { title: 'Why Choosing an Owens Corning Certified Contractor Matters', href: '/blog/why-choosing-an-owens-corning-certified-contractor-like-all-phase-construction-usa-matters-for-your-roofing-project' },
   { title: 'How to Prepare Your Roof for the Real Estate Market', href: '/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home' },
   { title: 'Visualize Your New Roof with AI-Powered Tools', href: '/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview' },
   { title: 'Why Palm Beach and Broward County Building Codes Differ', href: '/blog/why-palm-beach-and-broward-county-building-codes-differ-a-south-florida-guide-by-all-phase-construction-usa' }
 ];
 
 const commercialHOA = [
-  { title: 'Roofing Solutions for Multi-Family and HOA Communities', href: '/blog/roofing-solutions-for-multi-family-and-hoa-communities' },
-  { title: 'Commercial Roof Coatings: Are They Worth the Investment?', href: '/blog/commercial-roof-coatings-are-they-worth-the-investment' },
   { title: 'How to Plan Long-Term Roofing Budgets for Your Condo Association', href: '/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association' },
-  { title: 'Soffit Repair in South Florida', href: '/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa' },
-  { title: 'My Safe Florida Condo Program: Prepare for the 2025 Reopening', href: '/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa' }
+  { title: 'Soffit Repair in South Florida', href: '/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa' }
 ];
 
 const solarEnergy = [
@@ -94,13 +75,10 @@ const solarEnergy = [
   { title: 'How Solar Impacts Property Taxes in Florida', href: '/blog/how-solar-impacts-property-taxes-in-florida' },
   { title: 'How to Combine Solar and a New Roof for Maximum Efficiency', href: '/blog/how-to-combine-solar-and-a-new-roof-for-maximum-efficiency' },
   { title: 'What\'s the Lifespan of a Solar-Ready Roof?', href: '/blog/whats-the-lifespan-of-a-solar-ready-roof' },
-  { title: 'Can Solar Panels Void My Roof Warranty?', href: '/blog/can-solar-panels-void-my-roof-warranty' },
   { title: 'How Climate Change Is Impacting Roofing Choices in Coastal Areas', href: '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas' }
 ];
 
 const aboutAllPhase = [
-  { title: 'Top Roofers in Broward and Palm Beach Counties', href: '/blog/top-roofers-in-broward-and-palm-beach-counties' },
-  { title: 'All Phase Construction USA — Roofing Experts in Deerfield Beach', href: '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-6' },
   { title: 'Can a Screen Room Add to My Property Value?', href: '/blog/can-a-screen-room-add-to-my-property-value' }
 ];
 
