@@ -17,6 +17,7 @@ interface SEOProps {
   canonicalPath?: string;
   ogImagePath?: string;
   noindex?: boolean;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 /**
@@ -35,6 +36,7 @@ export default function SEO({
   canonicalPath,
   ogImagePath,
   noindex = false,
+  schema,
 }: SEOProps) {
   const ogImageUrl = ogImagePath ? absUrl(ogImagePath) : undefined;
 
@@ -61,6 +63,13 @@ export default function SEO({
       {title ? <meta name="twitter:title" content={title} /> : null}
       {description ? <meta name="twitter:description" content={description} /> : null}
       {ogImageUrl ? <meta name="twitter:image" content={ogImageUrl} /> : null}
+
+      {/* Schema.org JSON-LD */}
+      {schema ? (
+        <script type="application/ld+json">
+          {JSON.stringify(Array.isArray(schema) ? schema : [schema])}
+        </script>
+      ) : null}
     </Helmet>
   );
 }
