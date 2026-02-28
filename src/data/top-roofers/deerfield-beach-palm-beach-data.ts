@@ -147,7 +147,7 @@ export const deerfieldBeachPalmBeachTopRooferData: TopRooferPageData = {
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/palm-beach-county/top-5-roofer",
+  urlPath: "/locations/palm-beach-county/top-5-roofer",
   datePublished: "2026-01-29",
   dateModified: "2026-01-29"
 };

@@ -109,7 +109,7 @@ export const boyntonBeachTopRooferData: TopRooferPageData = {
     homeOffice: "Deerfield Beach",
     homeOfficePath: "/locations/deerfield-beach",
     city: "Boynton Beach",
-    cityPath: "/locations/deerfield-beach/service-area/boynton-beach"
+    cityPath: "/locations/boynton-beach"
   },
 
   uniqueContent: {
@@ -123,7 +123,7 @@ export const boyntonBeachTopRooferData: TopRooferPageData = {
     ],
 
     buyersGuideParagraphs: [
-      'When selecting contractors for <a href="/locations/deerfield-beach/service-area/boynton-beach/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Boynton Beach</a>, the critical long-term risk centers on insufficient roof deck assessment before material installation. Boynton Beach\'s mixed-age housing stock means underlying deck condition varies substantially—older properties may require deck reinforcement or sheathing replacement that becomes evident only during tear-off. Contractors who perform thorough pre-installation deck inspections identify these conditions during the estimate phase rather than discovering them mid-project, which prevents scope disputes and budget overruns.',
+      'When selecting contractors for <a href="/locations/boynton-beach/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Boynton Beach</a>, the critical long-term risk centers on insufficient roof deck assessment before material installation. Boynton Beach\'s mixed-age housing stock means underlying deck condition varies substantially—older properties may require deck reinforcement or sheathing replacement that becomes evident only during tear-off. Contractors who perform thorough pre-installation deck inspections identify these conditions during the estimate phase rather than discovering them mid-project, which prevents scope disputes and budget overruns.',
       'HOA coordination represents a significant project variable in Boynton Beach\'s planned communities. Architectural review boards typically require material samples, color specifications, and manufacturer documentation before granting installation approval. Contractors familiar with Boynton Beach HOA processes factor approval lead time into project schedules and maintain relationships with local architectural review coordinators. Failure to secure HOA approval before material ordering can delay projects by weeks and create expensive material restocking scenarios. Coastal insurance requirements have become increasingly stringent—many carriers now require wind mitigation verification and impact-resistant material specifications to maintain coverage. Confirm your contractor understands current underwriting requirements and can provide the documentation insurers mandate.',
       'Permit compliance through Palm Beach County Building Department is mandatory and unambiguous in Boynton Beach. The inspection sequence—initial deck inspection, underlayment review, and final approval—requires contractor coordination with Building Department schedules. Your contractor must explain this inspection workflow with written confirmation that all work will follow permitted procedures. Unpermitted roofing work creates legal liability during property sale, refinancing, and insurance claim processing. For comprehensive guidance on pre-installation assessment and condition documentation, consult our detailed resource on <a href="/roof-inspection/" class="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspection services</a>.'
     ],
@@ -141,13 +141,13 @@ export const boyntonBeachTopRooferData: TopRooferPageData = {
   },
 
   internalLinks: {
-    cityServicePage: "/locations/deerfield-beach/service-area/boynton-beach",
+    cityServicePage: "/locations/boynton-beach",
     roofInspectionPage: "/roof-inspection",
     tileRoofingPage: "/tile-roofing",
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer",
+  urlPath: "/locations/boynton-beach/top-5-roofer",
   datePublished: "2026-01-24",
   dateModified: "2026-01-24"
 };

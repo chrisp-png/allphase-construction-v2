@@ -147,7 +147,7 @@ export const deerfieldBeachTopRooferData: TopRooferPageData = {
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/broward-county/top-5-roofer",
+  urlPath: "/locations/broward-county/top-5-roofer",
   datePublished: "2026-01-29",
   dateModified: "2026-01-29"
 };

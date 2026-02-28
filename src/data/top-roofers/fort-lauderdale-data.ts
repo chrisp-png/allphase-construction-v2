@@ -109,7 +109,7 @@ export const fortLauderdaleTopRooferData: TopRooferPageData = {
     homeOffice: "Deerfield Beach",
     homeOfficePath: "/locations/deerfield-beach",
     city: "Fort Lauderdale",
-    cityPath: "/locations/deerfield-beach/service-area/fort-lauderdale"
+    cityPath: "/locations/fort-lauderdale"
   },
 
   uniqueContent: {
@@ -123,7 +123,7 @@ export const fortLauderdaleTopRooferData: TopRooferPageData = {
     ],
 
     buyersGuideParagraphs: [
-      'When assessing <a href="/locations/deerfield-beach/service-area/fort-lauderdale/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Fort Lauderdale</a>, the primary long-term risk stems from inadequate attention to drainage pathways and wind uplift resistance at roof perimeters. Coastal properties face concentrated water volume during tropical systems, and flat roofs common in Fort Lauderdale\'s commercial corridors require engineered drainage with properly sized outlets and overflow provisions. Failure at these critical details drives the majority of catastrophic water intrusion events.',
+      'When assessing <a href="/locations/fort-lauderdale/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Fort Lauderdale</a>, the primary long-term risk stems from inadequate attention to drainage pathways and wind uplift resistance at roof perimeters. Coastal properties face concentrated water volume during tropical systems, and flat roofs common in Fort Lauderdale\'s commercial corridors require engineered drainage with properly sized outlets and overflow provisions. Failure at these critical details drives the majority of catastrophic water intrusion events.',
       'Urban density in Fort Lauderdale creates unique installation challenges. Tight property lines, shared walls, and neighboring structures constrain equipment access and material staging. A contractor experienced with Fort Lauderdale\'s urban context will address these logistical factors during project planning rather than discovering them mid-installation. Coastal insurance requirements have intensified—many carriers now mandate wind mitigation documentation and impact-resistant material specifications. Confirm your contractor understands these underwriting requirements and can provide the documentation insurers require.',
       'Building permit compliance in Fort Lauderdale is absolute and non-negotiable. The Building Department maintains consistent enforcement, and unpermitted roofing work creates documented liability during property transactions and insurance claims. Your contractor must explain Fort Lauderdale\'s inspection sequence—initial roof deck inspection, mid-installation progress review, and final closeout approval—with written confirmation that all work will follow permitted procedures. For detailed guidance on inspection requirements and documentation standards, consult our comprehensive resource on <a href="/roof-inspection/" class="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspections</a>.'
     ],
@@ -141,13 +141,13 @@ export const fortLauderdaleTopRooferData: TopRooferPageData = {
   },
 
   internalLinks: {
-    cityServicePage: "/locations/deerfield-beach/service-area/fort-lauderdale",
+    cityServicePage: "/locations/fort-lauderdale",
     roofInspectionPage: "/roof-inspection",
     tileRoofingPage: "/tile-roofing",
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer",
+  urlPath: "/locations/fort-lauderdale/top-5-roofer",
   datePublished: "2026-01-24",
   dateModified: "2026-01-24"
 };

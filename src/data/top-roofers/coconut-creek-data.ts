@@ -109,7 +109,7 @@ export const coconutCreekTopRooferData: TopRooferPageData = {
     homeOffice: "Deerfield Beach",
     homeOfficePath: "/locations/deerfield-beach",
     city: "Coconut Creek",
-    cityPath: "/locations/deerfield-beach/service-area/coconut-creek"
+    cityPath: "/locations/coconut-creek"
   },
 
   uniqueContent: {
@@ -123,7 +123,7 @@ export const coconutCreekTopRooferData: TopRooferPageData = {
     ],
 
     buyersGuideParagraphs: [
-      'Selecting contractors for <a href="/locations/deerfield-beach/service-area/coconut-creek/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Coconut Creek</a> requires careful assessment of their HOA coordination experience and architectural review board familiarity. Contractors unfamiliar with Coconut Creek\'s planned community processes frequently underestimate approval lead times, resulting in project delays and scheduling conflicts once permits are finally secured. Verify your contractor maintains documented relationships with local architectural review coordinators and can provide examples of successfully completed projects in similar HOA-governed communities. Request a written timeline that explicitly accounts for both architectural approval and permit acquisition phases before material ordering begins.',
+      'Selecting contractors for <a href="/locations/coconut-creek/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Coconut Creek</a> requires careful assessment of their HOA coordination experience and architectural review board familiarity. Contractors unfamiliar with Coconut Creek\'s planned community processes frequently underestimate approval lead times, resulting in project delays and scheduling conflicts once permits are finally secured. Verify your contractor maintains documented relationships with local architectural review coordinators and can provide examples of successfully completed projects in similar HOA-governed communities. Request a written timeline that explicitly accounts for both architectural approval and permit acquisition phases before material ordering begins.',
       'The multi-generational housing stock throughout Coconut Creek creates significant variability in underlying structural conditions. Properties built during the 1970s and 1980s may have roof deck attachment systems that no longer meet current hurricane code requirements, necessitating deck reinforcement or complete sheathing replacement during re-roofing projects. Contractors who perform thorough pre-installation structural assessments identify these conditions during the estimate phase with written documentation, preventing mid-project scope disputes and unexpected cost increases. Tree proximity represents another Coconut Creek-specific consideration—properties with mature tree canopy require contractors to address access logistics, implement comprehensive debris protection protocols, and account for increased valley loading from organic accumulation.',
       'Broward County Building Department requires formal permits for roof replacement work in Coconut Creek, with inspection sequences that contractors must coordinate according to departmental scheduling. The standard inspection workflow—initial structural deck review, underlayment verification, and final installation approval—demands contractor familiarity with Broward County procedures and inspector expectations. Unpermitted work creates documented liability during property transactions and insurance claims. For thorough guidance on comprehensive condition assessment before project initiation, review our detailed resource on <a href="/roof-inspection/" class="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspection services</a>.'
     ],
@@ -141,13 +141,13 @@ export const coconutCreekTopRooferData: TopRooferPageData = {
   },
 
   internalLinks: {
-    cityServicePage: "/locations/deerfield-beach/service-area/coconut-creek",
+    cityServicePage: "/locations/coconut-creek",
     roofInspectionPage: "/roof-inspection",
     tileRoofingPage: "/tile-roofing",
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer",
+  urlPath: "/locations/coconut-creek/top-5-roofer",
   datePublished: "2026-01-24",
   dateModified: "2026-01-24"
 };

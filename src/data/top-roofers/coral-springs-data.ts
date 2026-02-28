@@ -109,7 +109,7 @@ export const coralSpringsTopRooferData: TopRooferPageData = {
     homeOffice: "Deerfield Beach",
     homeOfficePath: "/locations/deerfield-beach",
     city: "Coral Springs",
-    cityPath: "/locations/deerfield-beach/service-area/coral-springs"
+    cityPath: "/locations/coral-springs"
   },
 
   uniqueContent: {
@@ -123,7 +123,7 @@ export const coralSpringsTopRooferData: TopRooferPageData = {
     ],
 
     buyersGuideParagraphs: [
-      'When evaluating <a href="/locations/deerfield-beach/service-area/coral-springs/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Coral Springs</a>, the greatest long-term risk comes from poor drainage strategy and insufficient attention to roof-to-parapet transitions. Properties with flat or low-slope sections are particularly vulnerable during Florida\'s afternoon storms, where sudden water volume can overwhelm improperly sized drains or clogged scuppers.',
+      'When evaluating <a href="/locations/coral-springs/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in Coral Springs</a>, the greatest long-term risk comes from poor drainage strategy and insufficient attention to roof-to-parapet transitions. Properties with flat or low-slope sections are particularly vulnerable during Florida\'s afternoon storms, where sudden water volume can overwhelm improperly sized drains or clogged scuppers.',
       'If your property is governed by an HOA, request the association\'s architectural guidelines before soliciting quotes. Material selection, color palettes, and installation timelines may require written approval—delays here can stall your entire project. A contractor familiar with Coral Springs HOA workflows will factor approval lead time into the schedule rather than treating it as an afterthought.',
       'Permit compliance is not negotiable in Coral Springs. The Building Department enforces roofing codes methodically, and unpermitted work creates liability during resale, refinancing, or insurance claims. Your contractor should explain the inspection sequence—deck inspection, rough inspection, final inspection—and provide written confirmation that all work will be permitted. For more on the inspection process, review our guide to <a href="/roof-inspection/" class="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspections</a>.'
     ],
@@ -141,13 +141,13 @@ export const coralSpringsTopRooferData: TopRooferPageData = {
   },
 
   internalLinks: {
-    cityServicePage: "/locations/deerfield-beach/service-area/coral-springs",
+    cityServicePage: "/locations/coral-springs",
     roofInspectionPage: "/roof-inspection",
     tileRoofingPage: "/tile-roofing",
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/coral-springs/top-5-roofer",
+  urlPath: "/locations/coral-springs/top-5-roofer",
   datePublished: "2026-01-24",
   dateModified: "2026-01-24"
 };

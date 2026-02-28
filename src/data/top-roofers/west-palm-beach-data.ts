@@ -109,7 +109,7 @@ export const westPalmBeachTopRooferData: TopRooferPageData = {
     homeOffice: "Deerfield Beach",
     homeOfficePath: "/locations/deerfield-beach",
     city: "West Palm Beach",
-    cityPath: "/locations/deerfield-beach/service-area/west-palm-beach"
+    cityPath: "/locations/west-palm-beach"
   },
 
   uniqueContent: {
@@ -123,7 +123,7 @@ export const westPalmBeachTopRooferData: TopRooferPageData = {
     ],
 
     buyersGuideParagraphs: [
-      'Selecting contractors for <a href="/locations/deerfield-beach/service-area/west-palm-beach/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in West Palm Beach</a> requires careful verification of their Palm Beach County permitting experience and Building Department coordination capabilities. Contractors lacking familiarity with West Palm Beach\'s permit application procedures and inspection scheduling requirements create project delays when their submitted plans fail initial review or when they misestimate approval timelines. Request specific examples of recently completed projects where they successfully navigated Palm Beach County\'s permitting process, ask detailed questions about their inspection coordination methodology, and obtain written project timelines that explicitly account for permit acquisition and scheduled inspection phases before material ordering begins.',
+      'Selecting contractors for <a href="/locations/west-palm-beach/" class="text-red-500 hover:text-red-400 underline transition-colors">roof replacement in West Palm Beach</a> requires careful verification of their Palm Beach County permitting experience and Building Department coordination capabilities. Contractors lacking familiarity with West Palm Beach\'s permit application procedures and inspection scheduling requirements create project delays when their submitted plans fail initial review or when they misestimate approval timelines. Request specific examples of recently completed projects where they successfully navigated Palm Beach County\'s permitting process, ask detailed questions about their inspection coordination methodology, and obtain written project timelines that explicitly account for permit acquisition and scheduled inspection phases before material ordering begins.',
       'The coastal exposure characteristic of West Palm Beach properties—particularly those near the Intracoastal Waterway or Atlantic coastline—creates installation specification requirements that differ substantially from inland jurisdiction standards. Salt-air exposure accelerates corrosion of standard galvanized fasteners and metal flashing components, necessitating corrosion-resistant material specifications that contractors must implement proactively rather than reactively after premature failure occurs. Hurricane wind zone classification mandates enhanced attachment schedules, impact-rated material selection, and installation techniques that contractors document through wind mitigation inspection reports required by insurance carriers. Verify your contractor maintains current knowledge of Florida Building Code wind resistance requirements and can provide detailed explanation of how their installation methodology addresses West Palm Beach\'s specific wind exposure classification.',
       'Insurance carrier underwriting policies have intensified roof condition documentation requirements following recent policy changes, with many carriers now demanding comprehensive condition assessments and wind mitigation verification before policy issuance or renewal. Contractors familiar with current insurance documentation requirements provide thorough pre-installation condition photography, detailed scope proposals that enumerate every component replacement, and post-installation wind mitigation inspection coordination. For comprehensive guidance on thorough condition assessment before project initiation, review our detailed resource on <a href="/roof-inspection/" class="text-red-500 hover:text-red-400 underline transition-colors">professional roof inspection services</a>. Urban density introduces access logistics that contractors must address during estimate preparation—equipment positioning on narrow lot lines, material staging in areas with limited street parking, and debris management that minimizes neighbor impact throughout multi-day installation sequences.'
     ],
@@ -141,13 +141,13 @@ export const westPalmBeachTopRooferData: TopRooferPageData = {
   },
 
   internalLinks: {
-    cityServicePage: "/locations/deerfield-beach/service-area/west-palm-beach",
+    cityServicePage: "/locations/west-palm-beach",
     roofInspectionPage: "/roof-inspection",
     tileRoofingPage: "/tile-roofing",
     metalRoofingPage: "/metal-roofing"
   },
 
-  urlPath: "/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer",
+  urlPath: "/locations/west-palm-beach/top-5-roofer",
   datePublished: "2026-01-24",
   dateModified: "2026-01-24"
 };
