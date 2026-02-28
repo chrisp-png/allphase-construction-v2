@@ -1787,6 +1787,249 @@ export default function RoofInspectionPage() {
         </div>
       </section>
 
+      {/* Roof Inspection Services by City */}
+      <section className="py-20 bg-zinc-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+            Roof Inspection Services by City
+          </h2>
+          <p className="text-lg text-zinc-300 mb-12 text-center max-w-3xl mx-auto">
+            Professional roof inspection services available throughout Broward and Palm Beach Counties
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <Link
+              to="/roof-inspection/boca-raton/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Boca Raton
+            </Link>
+            <Link
+              to="/roof-inspection/boynton-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Boynton Beach
+            </Link>
+            <Link
+              to="/roof-inspection/coconut-creek/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Coconut Creek
+            </Link>
+            <Link
+              to="/roof-inspection/cooper-city/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Cooper City
+            </Link>
+            <Link
+              to="/roof-inspection/coral-springs/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Coral Springs
+            </Link>
+            <Link
+              to="/roof-inspection/davie/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Davie
+            </Link>
+            <Link
+              to="/roof-inspection/deerfield-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Deerfield Beach
+            </Link>
+            <Link
+              to="/roof-inspection/delray-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Delray Beach
+            </Link>
+            <Link
+              to="/roof-inspection/fort-lauderdale/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Fort Lauderdale
+            </Link>
+            <Link
+              to="/roof-inspection/greenacres/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Greenacres
+            </Link>
+            <Link
+              to="/roof-inspection/gulf-stream/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Gulf Stream
+            </Link>
+            <Link
+              to="/roof-inspection/hallandale-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Hallandale Beach
+            </Link>
+            <Link
+              to="/roof-inspection/haverhill/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Haverhill
+            </Link>
+            <Link
+              to="/roof-inspection/highland-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Highland Beach
+            </Link>
+            <Link
+              to="/roof-inspection/hollywood/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Hollywood
+            </Link>
+            <Link
+              to="/roof-inspection/hypoluxo/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Hypoluxo
+            </Link>
+            <Link
+              to="/roof-inspection/lake-worth-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Lake Worth Beach
+            </Link>
+            <Link
+              to="/roof-inspection/lantana/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Lantana
+            </Link>
+            <Link
+              to="/roof-inspection/lauderdale-by-the-sea/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Lauderdale-by-the-Sea
+            </Link>
+            <Link
+              to="/roof-inspection/lauderhill/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Lauderhill
+            </Link>
+            <Link
+              to="/roof-inspection/lighthouse-point/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Lighthouse Point
+            </Link>
+            <Link
+              to="/roof-inspection/margate/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Margate
+            </Link>
+            <Link
+              to="/roof-inspection/miramar/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Miramar
+            </Link>
+            <Link
+              to="/roof-inspection/oakland-park/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Oakland Park
+            </Link>
+            <Link
+              to="/roof-inspection/ocean-ridge/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Ocean Ridge
+            </Link>
+            <Link
+              to="/roof-inspection/palm-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Palm Beach
+            </Link>
+            <Link
+              to="/roof-inspection/palm-beach-gardens/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Palm Beach Gardens
+            </Link>
+            <Link
+              to="/roof-inspection/parkland/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Parkland
+            </Link>
+            <Link
+              to="/roof-inspection/pembroke-pines/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Pembroke Pines
+            </Link>
+            <Link
+              to="/roof-inspection/plantation/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Plantation
+            </Link>
+            <Link
+              to="/roof-inspection/pompano-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Pompano Beach
+            </Link>
+            <Link
+              to="/roof-inspection/royal-palm-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Royal Palm Beach
+            </Link>
+            <Link
+              to="/roof-inspection/sunrise/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Sunrise
+            </Link>
+            <Link
+              to="/roof-inspection/tamarac/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Tamarac
+            </Link>
+            <Link
+              to="/roof-inspection/wellington/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Wellington
+            </Link>
+            <Link
+              to="/roof-inspection/west-palm-beach/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              West Palm Beach
+            </Link>
+            <Link
+              to="/roof-inspection/weston/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Weston
+            </Link>
+            <Link
+              to="/roof-inspection/wilton-manors/"
+              className="px-4 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-center transition-colors border border-zinc-700 hover:border-red-600"
+            >
+              Wilton Manors
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-b from-zinc-900 to-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
