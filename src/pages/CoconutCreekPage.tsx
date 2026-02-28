@@ -9,15 +9,15 @@ export default function CoconutCreekPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Coconut Creek Roofer | HVHZ Certified | All Phase';
+    document.title = 'Coconut Creek FL Roofing Contractor | HVHZ Certified | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Coconut Creek FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Coconut Creek FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Chamber member. Serving Wynmoor, Winston Park, Regency Lakes since 2006. (754) 227-5605');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Coconut Creek FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'Coconut Creek FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Chamber member. Serving Wynmoor, Winston Park, Regency Lakes since 2006. (754) 227-5605';
       document.head.appendChild(meta);
     }
 
@@ -75,78 +75,50 @@ export default function CoconutCreekPage() {
 
   const services = [
     {
-      title: 'Tile Roofing',
-      description: "Concrete and clay tile installations popular throughout Coconut Creek's upscale neighborhoods. Built for beauty and hurricane resilience.",
-      path: '/tile-roofing/',
-      icon: Home
+      title: 'Residential Roofing',
+      description: 'Complete solutions for Coconut Creek homes — tile, shingle, metal, and flat systems, all HVHZ compliant. Special expertise in canal-adjacent moisture management and aging housing stock replacements. HOA approval coordination included.'
     },
     {
-      title: 'Metal Roofing',
-      description: "Standing seam and metal panel systems that last 50+ years in South Florida's climate. Energy-efficient and low-maintenance.",
-      path: '/metal-roofing/',
-      icon: Shield
-    },
-    {
-      title: 'Shingle Roofing',
-      description: "Architectural shingle installations that meet HVHZ requirements. The most common roof type in Coconut Creek.",
-      path: '/shingle-roofing/',
-      icon: Home
-    },
-    {
-      title: 'Flat Roofing',
-      description: "TPO, PVC, and modified bitumen for commercial and modern residential properties throughout Coconut Creek.",
-      path: '/flat-roofing/',
-      icon: Building2
-    },
-    {
-      title: 'Roof Repair & Restoration',
-      description: "Extending roof life and protecting insurance coverage with professional repairs and 5-year certification letters.",
-      path: '/roofing-services/roof-repair/',
-      icon: Wrench
+      title: 'Flat Roof Repair and Replacement',
+      description: 'Core specialty for Wynmoor, Regency Lakes, and other condo communities. TPO, EPDM, and modified bitumen systems with proper drainage design. HOA and property management coordination on every job.'
     },
     {
       title: 'Commercial Roofing',
-      description: "Serving Coconut Creek's commercial corridor along Sample Road and Lyons Road.",
-      path: '/commercial-roofing/',
-      icon: Building2
+      description: 'Flat, TPO, modified bitumen, and standing seam metal for Coconut Creek commercial properties throughout the Promenade corridor and surrounding districts. Minimal disruption to operations.'
+    },
+    {
+      title: 'Roof Repair',
+      description: 'Emergency and scheduled repairs for leaks, storm damage, and moisture-related deterioration. 24/7 response for active leaks.'
+    },
+    {
+      title: 'Roof Inspections',
+      description: '21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports.'
+    },
+    {
+      title: 'Wind Mitigation Certifications',
+      description: 'Form A and Form B certifications documenting wind-resistant features — potentially reducing homeowners insurance premiums 20-40%.'
+    },
+    {
+      title: 'Permitting',
+      description: 'Complete permit application, HVHZ compliance documentation, inspection scheduling, and final approval — all handled in-house.'
     }
   ];
 
-  const challenges = [
+  const testimonials = [
     {
-      title: 'High-End Home Expectations',
-      description: "Coconut Creek has a mix of upscale communities and established neighborhoods. Homeowners expect quality work, clean job sites, and professional service. We deliver on all three."
+      name: 'Michael R.',
+      location: 'Coconut Creek Homeowner',
+      text: 'Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!'
     },
     {
-      title: 'HVHZ Requirements',
-      description: "All of Coconut Creek falls within the High Velocity Hurricane Zone, requiring stricter installation methods, materials, and documentation. We're fully trained and equipped."
+      name: 'Jennifer L.',
+      location: 'Broward County',
+      text: 'We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship.'
     },
     {
-      title: 'Mature Landscaping',
-      description: "Many Coconut Creek properties have mature trees and landscaping. We protect your property during roofing projects and factor tree coverage into our roof assessments."
-    },
-    {
-      title: 'HOA Compliance',
-      description: "Several Coconut Creek communities have HOA architectural guidelines. We provide all necessary documentation and can help you navigate the approval process."
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: 'Dual Licensed',
-      description: "We hold both a General Contractor license (CGC-1526236) and Roofing Contractor license (CCC-1331464). We can handle structural repairs, not just the roof surface."
-    },
-    {
-      title: 'Close to You',
-      description: "Based in Deerfield Beach, just minutes from Coconut Creek. We're your neighbors, not a national chain or storm chaser operation."
-    },
-    {
-      title: 'HVHZ Experts',
-      description: "All Broward County requires HVHZ-compliant installation. We've been doing it for 20+ years. It's not special for us — it's standard."
-    },
-    {
-      title: 'Insurance Protection',
-      description: "If your roof qualifies after restoration, we provide the 5-year certification letter required under Florida law to protect your coverage."
+      name: 'David S.',
+      location: 'Commercial Property Owner',
+      text: 'All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience.'
     }
   ];
 
@@ -161,28 +133,28 @@ export default function CoconutCreekPage() {
 
   const faqs = [
     {
-      question: 'How much does a new roof cost in Coconut Creek?',
-      answer: "Roof replacement in Coconut Creek typically ranges from $10,000 to $35,000+ depending on size, material, and complexity. Tile roofs cost more than shingles but offer better longevity. We provide free, detailed estimates."
+      question: 'How do you handle Coconut Creek\'s humidity and moisture challenges?',
+      answer: 'We select materials rated for high-humidity environments — algae-resistant shingles, Kynar-coated metal, TPO membranes — and install enhanced ventilation systems. Coconut Creek\'s canal system and adjacent wetlands create conditions that generic material selections can\'t handle long-term. Our approach addresses the elevated decay rates experienced in canal-adjacent properties throughout the city.'
     },
     {
-      question: 'Do you work with Coconut Creek HOAs?',
-      answer: "Yes. We regularly work with HOA-governed communities in Coconut Creek. We can provide all necessary documentation including licenses, insurance certificates, material specifications, and color samples."
+      question: 'What\'s the best roofing material for homes near Coconut Creek\'s canals?',
+      answer: 'Metal roofing with Kynar 500 coatings performs best for direct moisture exposure near the Hillsboro Canal system. Algae-resistant architectural shingles deliver strong performance at better price points. For flat roof applications in communities like Wynmoor and Regency Lakes, TPO membranes offer superior reflectivity and moisture resistance.'
     },
     {
-      question: 'How long does roof replacement take?',
-      answer: "Most residential roof replacements in Coconut Creek are completed in 1-3 days depending on size and material. Shingle roofs typically take 1-2 days, tile roofs 2-3 days."
+      question: 'Do you work on flat roofs in Wynmoor and other 55+ communities?',
+      answer: 'Yes — flat roof systems for Coconut Creek\'s condo communities are a core specialty. We understand HOA requirements, work with property management companies, and have extensive experience with Wynmoor\'s 7,000+ units and Regency Lakes\' 9 subdivisions.'
     },
     {
-      question: 'Can you help me keep my insurance?',
-      answer: "Possibly. Under Florida Statute 627.7011, if we certify your roof has 5+ years of remaining useful life, your insurer cannot drop you based solely on roof age. If your roof qualifies, we'll provide the certification."
+      question: 'How quickly can you respond to storm damage?',
+      answer: '24/7 emergency response throughout Coconut Creek from our Deerfield Beach headquarters. Most emergency calls receive same-day service to secure the property. Emergency tarping within hours, permanent repair once conditions allow.'
     },
     {
-      question: 'What type of roof is best for Coconut Creek?',
-      answer: "It depends on your home, budget, and goals. Tile offers the longest life and best curb appeal. Metal is extremely durable and energy-efficient. Shingles are cost-effective and widely used. We'll help you choose what's right for your property."
+      question: 'Do you help with insurance claims?',
+      answer: 'Yes — full documentation, adjuster meetings, and detailed estimates. Nearly two decades of Broward County experience means faster approvals. Wind mitigation certifications can reduce premiums 20-40% going forward.'
     },
     {
-      question: 'Are you licensed for HVHZ work?',
-      answer: "Yes. Coconut Creek is in the High Velocity Hurricane Zone. Our contractors are trained and licensed specifically for HVHZ installations, which require different methods than standard roofing."
+      question: 'How can I verify your licensing?',
+      answer: 'Florida Certified Roofing Contractor CCC-1331464 and Certified General Contractor CGC-1526236 are both verifiable through the Florida DBPR website at myfloridalicense.com.'
     }
   ];
 
@@ -208,41 +180,17 @@ export default function CoconutCreekPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Roofing Services in Coconut Creek, FL
+              Expert Roofing Contractor in Coconut Creek, FL
             </h1>
-            <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Serviced by All Phase Construction USA — Based in Deerfield Beach
+            <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
+              All Phase Construction USA has served Coconut Creek homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters at 590 Goolsby Blvd. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Coconut Creek roofing project that standard roofing-only contractors cannot match. As proud members of the Coral Springs Coconut Creek Regional Chamber of Commerce, we're not just a contractor serving this community — we're invested in it. Whether you own a single-family home in Winston Park, a condo in Wynmoor, or commercial property near the Coconut Creek Promenade, our team delivers comprehensive roofing solutions engineered for this community's unique demands.
             </p>
-            <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              While our main office is located in Deerfield Beach, our licensed roofing crews regularly service homes and commercial properties throughout Coconut Creek and nearby communities. Quality roofing for Coconut Creek's diverse neighborhoods. HVHZ compliant. Licensed and insured.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>20+ Years Experience</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>HVHZ Certified</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspections</span>
-              </div>
-              <span className="text-zinc-600">•</span>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Locally Owned</span>
-              </div>
-            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
-                Schedule Free Inspection in Coconut Creek
+                Request Free Estimate
               </Link>
               <a
                 href="tel:+17542275605"
@@ -256,107 +204,75 @@ export default function CoconutCreekPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Trusted Roofer in Coconut Creek
+              Dual-License Advantage: CGC and CCC
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Coconut Creek is known as "Butterfly Capital of the World" — but we're more concerned with keeping your roof intact during hurricane season. Located in northern Broward County, Coconut Creek offers a mix of established neighborhoods, newer developments, and growing commercial areas along Sample Road.
+                Most Coconut Creek roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems beneath the surface — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. In a city where 60%+ of homes exceed 30-40 years on original roofs, that happens on nearly every complete roof replacement. That means delays, coordination headaches, split warranties, and cost overruns.
               </p>
               <p>
-                We're headquartered just minutes away in Deerfield Beach, making Coconut Creek one of our most active service areas. Whether you're in the older communities near Hillsboro Boulevard, the family neighborhoods off Lyons Road, or the newer homes in the northern sections, we know your area well.
+                All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability. We inspect deck fastening patterns, assess truss integrity, verify roof-to-wall connections, and confirm full Florida Building Code compliance before the first new material goes down.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              HVHZ and Moisture Management
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Coconut Creek sits fully within South Florida's High Velocity Hurricane Zone, where every roofing installation must withstand 175+ mph wind speeds. But Coconut Creek adds a layer of complexity that most Broward cities don't face: the community is built around an extensive canal system with adjacent wetlands — creating year-round humidity conditions that accelerate algae growth on shingles, wood rot in decking and fascia, and persistent moisture intrusion risks.
               </p>
               <p>
-                Many Coconut Creek homes were built in the 1970s through 1990s and are now reaching the age where roof replacement becomes necessary. When evaluating your options, schedule a <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess underlayment condition, a <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">diagnostic metal roof inspection</Link> for energy-efficient systems, or a <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> for commercial properties and modern homes.
+                Properties near the Hillsboro Canal and the wetland habitats surrounding Butterfly World — the world's largest butterfly aviary — experience measurably higher decay rates than inland Broward properties. We address both challenges simultaneously: HVHZ-compliant fastening and wind engineering, plus material selections specifically chosen for high-humidity canal-adjacent environments. Every installation passes Broward County building department inspection on the first attempt.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              The Butterfly Capital of the World — and More
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Coconut Creek earned the nickname "Butterfly Capital of the World" and was the first city in Florida certified as a Community Wildlife Habitat — a designation that reflects the city's commitment to its natural environment. Tradewinds Park & Stables, at 625 acres one of Broward County's largest parks, anchors the western end of the city. The Coconut Creek Promenade — a LEED-certified open-air shopping and dining district that received the Florida APA Award of Excellence for design — and Seminole Casino Coconut Creek define the city's MainStreet corridor. Fern Forest Nature Center preserves 247 acres of native plant communities including 30+ fern species.
+              </p>
+              <p>
+                This environmental consciousness extends to roofing material selection — we help homeowners choose reflective, energy-efficient systems that align with the community's green values.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Coconut Creek Neighborhoods We Serve
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                All Phase Construction USA serves the full range of Coconut Creek's residential and commercial properties. <strong>Wynmoor</strong>, the premier 55+ gated community with 7,000+ condo units across multiple subdivisions, represents the city's largest flat roofing concentration — TPO, EPDM, and modified bitumen systems with HOA coordination and property management communication on every project. <strong>Regency Lakes</strong>, the gated master community with 717 units across 9 subdivisions, features newer construction with HOA approval requirements.
+              </p>
+              <p>
+                <strong>Winston Park</strong>, known for its family-friendly environment and strong schools, offers single-family homes from the 1980s-1990s now entering replacement cycles. <strong>Coral Gate</strong> provides canal-front waterfront homes where moisture management is the primary roofing concern. <strong>Banyan Trails</strong> represents the early 2000s development wave with lakes adjacent to most homes. <strong>Palm Beach Farms</strong> and <strong>Cocoplum</strong> round out the residential spectrum.
+              </p>
+              <p>
+                Commercial properties throughout the Promenade corridor, Seminole Casino district, and surrounding business areas require flat and metal roofing systems meeting full HVHZ standards.
               </p>
             </div>
           </div>
 
           <div className="mb-20">
-            <div className="text-center mb-12">
-              <span className="inline-block px-4 py-2 bg-red-600/10 text-red-500 rounded-full text-sm font-semibold mb-4 border border-red-600/20">
-                HVHZ Compliant
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Coconut Creek is in the High Velocity Hurricane Zone
-              </h2>
-              <p className="text-zinc-400 max-w-4xl mx-auto mb-8">
-                As part of Broward County, all of Coconut Creek is designated HVHZ under the Florida Building Code. This means stricter requirements for materials, installation methods, and documentation. We're trained and equipped to meet these standards.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Materials</h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  All roofing materials must have specific Florida Product Approvals for HVHZ use. We only install approved products.
-                </p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Installation</h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  Enhanced fastening patterns, wind uplift calculations, and attachment methods designed for extreme wind events.
-                </p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-white mb-3">Documentation</h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  Detailed permits, wind load calculations, and inspection records. We handle all HVHZ paperwork requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roofing Services in Coconut Creek
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                Complete residential and commercial roofing services throughout Coconut Creek.
-              </p>
-            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              Roofing Services for Coconut Creek Properties
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Link
-                    key={service.title}
-                    to={service.path}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
-                  >
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-red-500" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-zinc-400 mb-4 leading-relaxed">{service.description}</p>
-                    <div className="flex items-center text-red-500 font-medium">
-                      <span>Learn More</span>
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Roofing Challenges in Coconut Creek
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                What Coconut Creek roofs face:
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {challenges.map((challenge, index) => (
+              {services.map((service, index) => (
                 <div
                   key={index}
                   className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
                 >
-                  <h3 className="text-xl font-bold text-white mb-3">{challenge.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{challenge.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{service.description}</p>
                 </div>
               ))}
             </div>
@@ -364,16 +280,37 @@ export default function CoconutCreekPage() {
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Why Coconut Creek Homeowners Choose All Phase Construction
+              Materials for Coconut Creek's Climate
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {whyChooseUs.map((reason, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
+            <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
+              <p className="text-zinc-400 leading-relaxed mb-6">
+                Metal roofing with Kynar-coated standing seam panels — best performer for canal-adjacent moisture exposure, 50+ year lifespan, 175+ mph rated, superior corrosion resistance. Algae-resistant architectural shingles with Class 4 impact ratings for pitched roofs at accessible price points. Tile roofing for communities with HOA aesthetic requirements — structural verification included given tile weight. TPO membranes (30-60 mil) with 85% reflectivity for condo and commercial flat roof applications.
+              </p>
+              <p className="text-zinc-400 text-sm">
+                Certified installer status with GAF, CertainTeed, Owens Corning, TAMKO, Eagle Roofing, Boral, FT Synthetics, Johns Manville, and Firestone.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              What Coconut Creek Homeowners Say
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <div className="mb-4">
+                    <div className="flex text-red-500 mb-2">
+                      {'★★★★★'.split('').map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-zinc-400 leading-relaxed mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="text-white font-semibold">— {testimonial.name}</p>
+                  <p className="text-zinc-500 text-sm">{testimonial.location}</p>
                 </div>
               ))}
             </div>
@@ -381,43 +318,12 @@ export default function CoconutCreekPage() {
 
           <div className="mb-20">
             <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-                Coconut Creek Zip Codes We Serve
+              <h2 className="text-2xl font-bold text-white mb-4">
+                Flexible Financing Available
               </h2>
               <p className="text-zinc-400 leading-relaxed">
-                We serve all Coconut Creek zip codes including: 33063, 33066, 33073, 33097, and surrounding areas.
+                Flexible financing including credit-based and non-credit-based options. Insurance claim coordination — we work directly with adjusters to maximize your coverage. Use our Roof Cost Calculator for a preliminary estimate.
               </p>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Also Serving Nearby Communities
-              </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                In addition to Coconut Creek, we provide roofing services throughout Broward County:
-              </p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
-              {nearbyCities.map((city) => (
-                <Link
-                  key={city.name}
-                  to={city.path}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 text-center text-sm"
-                >
-                  {city.name}
-                </Link>
-              ))}
-            </div>
-            <div className="text-center">
-              <Link
-                to="/locations/"
-                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
-              >
-                View All Service Areas
-                <ArrowRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
 
@@ -429,7 +335,7 @@ export default function CoconutCreekPage() {
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing Questions from Coconut Creek Homeowners
+              Frequently Asked Questions
             </h2>
             <div className="max-w-4xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
@@ -458,19 +364,36 @@ export default function CoconutCreekPage() {
             </div>
           </div>
 
+          <div className="mb-20">
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <div className="mb-6">
+                <p className="text-zinc-400 text-sm mb-2">Licensed & Insured</p>
+                <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
+                <div>
+                  <span className="text-white font-semibold">FL CCC License:</span> CCC-1331464
+                </div>
+                <div>
+                  <span className="text-white font-semibold">FL CGC License:</span> CGC-1526236
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready for a Free Roof Inspection in Coconut Creek?
+              Call (754) 227-5605 or Request Free Estimate
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule your inspection today. We'll assess your roof's condition, identify any issues, and give you honest recommendations.
+              Proud members of the Coral Springs Coconut Creek Regional Chamber of Commerce. Serving all of Coconut Creek from our Deerfield Beach headquarters since 2006.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
                 to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
-                Schedule Free Inspection
+                Request Free Estimate
               </Link>
               <a
                 href="tel:+17542275605"
@@ -483,17 +406,17 @@ export default function CoconutCreekPage() {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Free Inspection</span>
+                <span>Dual Licensed</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>No Obligation</span>
+                <span>HVHZ Certified</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Same-Week Scheduling Available</span>
+                <span>Since 2006</span>
               </div>
             </div>
           </div>
