@@ -23,70 +23,104 @@ export default function SunrisePage() {
   ];
 
   const services = [
-    'Roof Repair – Focused repairs addressing leaks, storm damage, and aging components.',
-    'Roof Replacement – Complete roofing system replacements built to current Florida code standards.',
-    'Shingle Roofing – Wind-rated shingle systems suitable for South Florida homes.',
-    'Tile Roofing – Clay and concrete tile systems designed for durability and longevity.',
-    'Metal Roofing – Long-lasting, wind-resistant roofing solutions.',
-    'Flat Roofing – Low-slope roofing systems designed for proper drainage and sealing.',
-    'Emergency Roof Repair – Prompt response for active leaks or storm-related damage.',
-    'Leak Detection & Prevention – Identification of moisture entry points and preventative solutions.'
+    {
+      title: 'Residential Roofing',
+      description: 'Complete solutions for Sunrise homes — tile, shingle, metal, and flat systems, all HVHZ compliant with manufacturer warranties. HOA approval coordination included where required.'
+    },
+    {
+      title: 'Commercial Roofing',
+      description: 'Flat, TPO, modified bitumen, and standing seam metal roofs for Sunrise commercial properties — retail centers along Sawgrass, office parks, warehouses, and multi-family buildings. Minimal disruption to operations.'
+    },
+    {
+      title: 'Roof Repair',
+      description: 'Emergency and scheduled repairs for leaks, storm damage, missing shingles, and debris impact damage. 24/7 response for active leaks and storm emergencies.'
+    },
+    {
+      title: 'Roof Inspections',
+      description: '21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.'
+    },
+    {
+      title: 'Permitting',
+      description: 'Complete permit application and processing, HVHZ compliance documentation, inspection scheduling, and final approval — all handled by our team.'
+    }
   ];
 
-  const commonChallenges = [
-    'Wind uplift impacting shingles, tiles, flashing, and edge details',
-    'Water intrusion at penetrations, valleys, and roof transitions',
-    'Accelerated material aging from prolonged sun exposure',
-    'Installation vulnerabilities revealed during heavy rain events'
+  const materials = [
+    {
+      title: 'Tile Roofing',
+      description: 'Concrete and clay, 40-60 year lifespan, Class A fire rating, superior thermal mass for cooling cost reduction.'
+    },
+    {
+      title: 'Metal Roofing',
+      description: 'Standing seam aluminum and steel, 175+ mph rated, 50-70 year lifespan, 70% solar reflectivity.'
+    },
+    {
+      title: 'Shingle Roofing',
+      description: 'Impact-resistant architectural shingles, algae-resistant, UV-stabilized, 130+ mph wind warranty.'
+    },
+    {
+      title: 'Flat/TPO Roofing',
+      description: 'Single-ply membrane systems for commercial and residential flat sections, 80-90% solar reflectivity.'
+    }
   ];
 
-  const whyChooseUs = [
-    'Dual-licensed credentials supporting roofing and structural expertise',
-    'Extensive South Florida roofing experience',
-    'Code-compliant installation and repair practices',
-    'Insurance-defensible inspection and project documentation',
-    'Supervised job sites with consistent cleanliness standards'
+  const processSteps = [
+    {
+      title: 'Free Inspection and Estimate',
+      description: 'Scheduled within 24 hours. Comprehensive inspection covering surface materials, flashing, underlayment, ventilation, deck condition, and any penetrations. Detailed written estimate, no pressure, no hidden fees.'
+    },
+    {
+      title: 'Material Selection and Insurance Assistance',
+      description: 'Full photo documentation for insurance claims. Material selection guidance for Sunrise\'s HVHZ requirements and HOA standards where applicable.'
+    },
+    {
+      title: 'Professional Installation with Permits',
+      description: 'All Phase Construction USA handles all permitting, HVHZ compliance documentation, and coordination with Broward County building officials. Complete tear-off, deck inspection, and your approval before any additional structural repairs proceed.'
+    },
+    {
+      title: 'Final Inspection and Warranty',
+      description: 'Comprehensive final inspection, full warranty documentation, and wind mitigation certification — potentially reducing homeowners insurance premiums significantly.'
+    }
   ];
 
-  const costQuestions = [
+  const testimonials = [
     {
-      question: 'Do you have a roofing office in Sunrise?',
-      answer: 'Our primary office is located in Deerfield Beach, and we provide full roofing service coverage throughout Sunrise.'
+      name: 'Michael R.',
+      location: 'Sunrise Homeowner',
+      text: 'Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!'
     },
     {
-      question: 'How fast can you respond to roof issues in Sunrise?',
-      answer: 'Our proximity allows for efficient response times and flexible scheduling.'
+      name: 'Jennifer L.',
+      location: 'Broward County',
+      text: 'We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship.'
     },
     {
-      question: 'Do you pull permits in Sunrise?',
-      answer: 'Yes. We handle permitting and coordinate inspections in accordance with local and state requirements.'
-    },
-    {
-      question: 'What roofing systems work best in Sunrise?',
-      answer: 'Tile, metal, wind-rated shingle, and properly installed flat roofing systems perform well in Sunrise conditions.'
-    },
-    {
-      question: 'Are roof inspections free in Sunrise?',
-      answer: 'Yes. Free roof inspections are available for Sunrise property owners.'
+      name: 'David S.',
+      location: 'Commercial Property Owner',
+      text: 'All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience.'
     }
   ];
 
   const faqs = [
     {
-      question: 'How often should roofs in Sunrise be inspected?',
-      answer: 'Roofs in Sunrise should be inspected annually and after major storms to identify early signs of damage.'
+      question: 'How long does roof replacement take in Sunrise?',
+      answer: 'Most residential replacements complete in 1-3 days for shingles, 3-7 days for tile, and 2-5 days for metal. Commercial projects vary by square footage. We provide accurate timelines during your free inspection.'
     },
     {
-      question: 'Are permits required for roofing work in Sunrise?',
-      answer: 'Yes, most roofing projects in Sunrise require permits and inspections to meet Florida Building Code standards.'
+      question: 'What roofing materials work best in Sunrise\'s climate?',
+      answer: 'All materials we install are HVHZ compliant and rated for Broward County\'s wind requirements. Tile offers the best longevity (40-60 years) and thermal performance. Metal provides the best hurricane resistance and energy efficiency. Architectural shingles deliver the best value. HOA guidelines factor into material selection in communities like Sunrise Golf Village.'
     },
     {
-      question: 'What roofing materials last longest in Sunrise?',
-      answer: 'Metal and tile roofing systems typically provide the longest lifespan in Sunrise due to their durability and wind resistance.'
+      question: 'Do you help with insurance claims for storm damage?',
+      answer: 'Yes. We document damage thoroughly with photos and detailed reports, and our nearly two decades of experience with Broward County adjusters means faster approvals and fair coverage for repairs.'
     },
     {
-      question: 'Can heavy rain cause roof leaks in Sunrise even without visible damage?',
-      answer: 'Yes, wind-driven rain can expose flashing or transition weaknesses even when surface materials appear intact.'
+      question: 'How often should Sunrise roofs be inspected?',
+      answer: 'Annually, plus after any named storm event. Regular inspections catch minor issues — missing shingles, flashing gaps, debris impact damage — before they become major repairs.'
+    },
+    {
+      question: 'Which Sunrise neighborhoods do you serve?',
+      answer: 'All of Sunrise — Sunrise Golf Village, Welleby, Springtree Lakes, Sunrise Lakes, New River Estates, and every neighborhood within city limits, plus commercial properties throughout the Sawgrass corridor.'
     }
   ];
 
@@ -122,10 +156,10 @@ export default function SunrisePage() {
   return (
     <div className="min-h-screen bg-[#09090b]">
       <Helmet>
-        <title>Sunrise Roofer | HVHZ Certified | All Phase</title>
+        <title>Sunrise FL Roofing Contractor | HVHZ Certified | All Phase Construction USA</title>
         <meta
           name="description"
-          content="Sunrise FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605"
+          content="Sunrise FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Serving Sawgrass Mills, Sunrise Lakes, Welleby since 2006. (754) 227-5605"
         />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -160,13 +194,10 @@ export default function SunrisePage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Roofing Services in{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-500 text-transparent bg-clip-text">
-                Sunrise, FL
-              </span>
+              Expert Roofing Contractor in Sunrise, FL
             </h1>
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-              All Phase Construction USA provides dependable roofing services throughout Sunrise for residential and light commercial properties. From focused roof repairs to complete roof replacements, our team supports Sunrise property owners with consistent service and technical oversight. Operating from our Deerfield Beach headquarters, we deliver roofing systems designed for South Florida weather exposure, durability, and Florida code compliance.
+              All Phase Construction USA has served Sunrise homeowners and businesses since 2006 — nearly two decades of roofing excellence delivered from our Deerfield Beach headquarters. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Sunrise roofing project that standard roofing-only contractors cannot match. From the established communities near Sawgrass Mills to the canal-front homes of Sunrise Lakes and the family neighborhoods of Welleby, our team delivers comprehensive roofing solutions engineered for Broward County's demanding HVHZ requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -187,153 +218,61 @@ export default function SunrisePage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Your Trusted Roofing Services Team in Sunrise
+              Dual-License Advantage: CGC and CCC
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Our roofing teams regularly work in Sunrise with crews dispatched from our Deerfield Beach headquarters. This proximity allows for efficient scheduling and familiarity with Sunrise permitting processes, inspection requirements, and Florida Building Code standards. Each project is completed with attention to wind resistance, moisture protection, and accurate documentation.
+                Most Sunrise roofing contractors hold only a CCC license — authorizing them to install and repair roof surfaces and nothing more. When they uncover structural problems beneath the surface — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. That means delays, coordination headaches, split warranties, and cost overruns.
+              </p>
+              <p>
+                All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability. During every Sunrise roof replacement, we inspect deck fastening patterns, assess truss integrity, verify roof-to-wall connections, and confirm full Florida Building Code compliance before the first new shingle goes down.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              High Velocity Hurricane Zone — 175+ MPH Wind Ratings
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Sunrise sits fully within South Florida's High Velocity Hurricane Zone, where every roofing installation must meet Florida's most demanding wind load standards — engineered to withstand 175+ mph wind speeds. Sunrise's location at the western edge of Broward County, where the suburban grid meets the open sawgrass marshlands of the Everglades, creates unobstructed wind corridors that can accelerate storm-force winds across flat terrain.
+              </p>
+              <p>
+                The 612-acre Sawgrass International Corporate Park and the surrounding commercial district generate significant commercial roofing demand — flat, TPO, and standing seam metal systems that must perform under the same HVHZ standards as every residential installation. We use ring-shank nails at enhanced fastening schedules, high-wind rated materials with reinforced construction, and engineered roof-to-wall connections that transfer wind loads directly to the structural frame. Every installation passes Broward County building department inspection on the first attempt.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Sunrise Neighborhoods We Serve
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                All Phase Construction USA serves the full range of Sunrise's residential and commercial properties. <strong>Sunrise Golf Village</strong>, the city's founding neighborhood dating to 1961, features mid-century ranch homes and canal-view properties entering full replacement cycles. <strong>Welleby</strong> offers a central Sunrise community with diverse housing stock surrounding Welleby Park.
+              </p>
+              <p>
+                <strong>Springtree Lakes</strong> combines 1980s-era single-family homes with easy Everglades access — homes here benefit from enhanced debris-impact resistance given the tree coverage. <strong>Sunrise Lakes</strong>, the established 55+ canal community near Markham Park, features a mix of condos and ranch homes where flat roofing and tile systems dominate. <strong>New River Estates</strong> rounds out the city's residential core.
+              </p>
+              <p>
+                Sunrise's commercial zone along the Sawgrass Expressway — anchored by Amerant Bank Arena (home of the 2-time Stanley Cup champion Florida Panthers) and Sawgrass Mills, one of the largest outlet malls in the United States — represents a significant commercial roofing market where TPO, modified bitumen, and standing seam metal roofing all require HVHZ compliance.
               </p>
             </div>
           </div>
 
           <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Roofing Conditions Unique to Sunrise
-            </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Roofing systems in Sunrise are influenced by inland South Florida conditions that affect long-term performance:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {roofingConditions.map((condition, index) => {
-                const Icon = condition.icon;
-                return (
-                  <div
-                    key={index}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 flex items-start gap-4"
-                  >
-                    <div className="w-10 h-10 bg-red-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-red-500" />
-                    </div>
-                    <p className="text-zinc-300 leading-relaxed">{condition.text}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
               Roofing Services for Sunrise Properties
             </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              We provide a full range of roofing services tailored to Sunrise properties:
-            </p>
-            <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
-              <ul className="space-y-3">
-                {services.map((service, index) => (
-                  <li key={index} className="flex items-start gap-3 text-zinc-300">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="leading-relaxed">{service}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              What Sunrise Roofs Commonly Face
-            </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Property owners in Sunrise often encounter roofing challenges such as:
-            </p>
-            <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
-              <ul className="space-y-3">
-                {commonChallenges.map((challenge, index) => (
-                  <li key={index} className="flex items-start gap-3 text-zinc-300">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="leading-relaxed">{challenge}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Why Sunrise Homeowners Choose All Phase Construction USA
-            </h2>
-            <div className="max-w-4xl mx-auto bg-[#27272a] border border-zinc-800 rounded-lg p-8">
-              <ul className="space-y-3">
-                {whyChooseUs.map((reason, index) => (
-                  <li key={index} className="flex items-start gap-3 text-zinc-300">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="leading-relaxed">{reason}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Roof Cost Tools for Sunrise
-            </h2>
-            <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              These tools help Sunrise property owners estimate roofing costs and explore financing options:
-            </p>
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <a
-                href="https://allphaseconstructionfl.com/roof-cost-calculator/"
-                className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group text-center"
-              >
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
-                  Roof Cost Calculator
-                </h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  Get instant estimates for your Sunrise roofing project
-                </p>
-              </a>
-              <a
-                href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
-                className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group text-center"
-              >
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
-                  Financing Calculator
-                </h3>
-                <p className="text-zinc-400 leading-relaxed">
-                  Explore payment options and monthly estimates
-                </p>
-              </a>
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing Questions from Sunrise Homeowners
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-4">
-              {costQuestions.map((question, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden"
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
                 >
-                  <button
-                    onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
-                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-zinc-800/50 transition-colors"
-                  >
-                    <span className="font-semibold text-white pr-4">{question.question}</span>
-                    {openQuestion === index ? (
-                      <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
-                    )}
-                  </button>
-                  {openQuestion === index && (
-                    <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
-                      <p className="text-zinc-400 leading-relaxed">{question.answer}</p>
-                    </div>
-                  )}
+                  <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{service.description}</p>
                 </div>
               ))}
             </div>
@@ -341,7 +280,86 @@ export default function SunrisePage() {
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Roofing FAQs for Sunrise
+              HVHZ-Compliant Roofing Materials
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {materials.map((material, index) => (
+                <div
+                  key={index}
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-white mb-3">{material.title}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{material.description}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-zinc-400 text-center max-w-3xl mx-auto mt-8 text-sm">
+              Certified installer status with GAF, CertainTeed, Owens Corning, TAMKO, Eagle Roofing, Boral, FT Synthetics, Johns Manville, and Firestone.
+            </p>
+          </div>
+
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              Our Sunrise Roofing Process
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {processSteps.map((step, index) => (
+                <div
+                  key={index}
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
+                      <p className="text-zinc-400 leading-relaxed">{step.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              What Sunrise Homeowners Say
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <div className="mb-4">
+                    <div className="flex text-red-500 mb-2">
+                      {'★★★★★'.split('').map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-zinc-400 leading-relaxed mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="text-white font-semibold">— {testimonial.name}</p>
+                  <p className="text-zinc-500 text-sm">{testimonial.location}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <h2 className="text-2xl font-bold text-white mb-4">
+                Flexible Financing Available
+              </h2>
+              <p className="text-zinc-400 leading-relaxed">
+                Flexible financing plans including credit-based and non-credit-based options. Use our Roof Cost Calculator for a preliminary estimate.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              Frequently Asked Questions
             </h2>
             <div className="max-w-4xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
@@ -370,27 +388,60 @@ export default function SunrisePage() {
             </div>
           </div>
 
+          <div className="mb-20">
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <div className="mb-6">
+                <p className="text-zinc-400 text-sm mb-2">Licensed & Insured</p>
+                <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
+                <div>
+                  <span className="text-white font-semibold">FL CCC License:</span> CCC-1331464
+                </div>
+                <div>
+                  <span className="text-white font-semibold">FL CGC License:</span> CGC-1526236
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready for Roofing Services in Sunrise?
+              Call (754) 227-5605 or Request Free Estimate
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule a free roof inspection with our South Florida roofing team today.
+              Serving all of Sunrise from our Deerfield Beach headquarters — protecting South Florida properties since 2006.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
                 to="/contact/"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
-                Schedule Free Inspection
+                Request Free Estimate
               </Link>
               <a
                 href="tel:+17542275605"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
               >
                 <Phone className="w-5 h-5" />
-                Call (754) 227-5605
+                (754) 227-5605
               </a>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-red-500" />
+                <span>Dual Licensed</span>
+              </div>
+              <span className="text-zinc-600">•</span>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-red-500" />
+                <span>HVHZ Certified</span>
+              </div>
+              <span className="text-zinc-600">•</span>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-red-500" />
+                <span>Since 2006</span>
+              </div>
             </div>
           </div>
         </div>
