@@ -9,15 +9,15 @@ export default function FortLauderdalePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Fort Lauderdale Roofer | HVHZ Certified | All Phase';
+    document.title = 'Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Fort Lauderdale FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Fort Lauderdale roofing contractor with dual licensing (CCC-1331464, CGC-1526236). HVHZ certified. Served Fort Lauderdale Building Dept, Mai-Kai restoration, FLL Airport. (754) 227-5605');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Fort Lauderdale FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'Fort Lauderdale roofing contractor with dual licensing (CCC-1331464, CGC-1526236). HVHZ certified. Served Fort Lauderdale Building Dept, Mai-Kai restoration, FLL Airport. (754) 227-5605';
       document.head.appendChild(meta);
     }
 
@@ -123,40 +123,40 @@ export default function FortLauderdalePage() {
 
   const services = [
     {
-      title: 'Tile Roofing',
-      description: "Classic barrel and flat tile for Fort Lauderdale's Mediterranean, Spanish, and contemporary homes. Foam adhesive installation for superior wind resistance.",
-      path: '/tile-roofing/',
+      title: 'Roof Replacement',
+      description: "Complete HVHZ-compliant replacement for all roof types with manufacturer warranties. See our 10-step replacement process.",
+      path: '/roofing-services/roof-replacement/',
       icon: Home
     },
     {
-      title: 'Metal Roofing',
-      description: "Standing seam and architectural metal panels for Fort Lauderdale's waterfront properties and modern builds. Corrosion-resistant for coastal exposure.",
-      path: '/metal-roofing/',
-      icon: Shield
-    },
-    {
-      title: 'Shingle Roofing',
-      description: "High-wind rated architectural shingles for Fort Lauderdale's residential neighborhoods. HVHZ compliant installation.",
-      path: '/shingle-roofing/',
-      icon: Home
-    },
-    {
-      title: 'Flat Roofing',
-      description: "TPO, PVC, and modified bitumen for Fort Lauderdale's condos, commercial buildings, and flat-roof homes. Proper drainage engineering included.",
-      path: '/flat-roofing/',
-      icon: Building2
-    },
-    {
-      title: 'Roof Repair & Restoration',
-      description: "Comprehensive repairs for Fort Lauderdale's aging housing stock. 5-year certification letters available to protect your insurance.",
+      title: 'Emergency Repairs',
+      description: "24/7 response for active leaks, storm damage, missing shingles, and emergency tarping.",
       path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
-      title: 'Commercial Roofing',
-      description: "Office parks, retail centers, restaurants, and multi-family properties throughout Fort Lauderdale.",
-      path: '/commercial-roofing/',
+      title: 'Professional Inspections',
+      description: "21-point inspections for insurance documentation, pre-purchase evaluations, and maintenance assessments.",
+      path: '/roofing-services/roof-inspection/',
+      icon: Shield
+    },
+    {
+      title: 'Metal Roofing',
+      description: "Standing seam systems rated 200+ mph, 50-year lifespan, solar heat reflection for reduced cooling costs.",
+      path: '/metal-roofing/',
       icon: Building2
+    },
+    {
+      title: 'Flat Roofing',
+      description: "TPO, modified bitumen, and built-up roofing for Fort Lauderdale commercial properties.",
+      path: '/flat-roofing/',
+      icon: Building2
+    },
+    {
+      title: 'Impact Windows & Doors',
+      description: "Complete storm protection upgrades for full envelope protection.",
+      path: '/contact/',
+      icon: Shield
     }
   ];
 
@@ -189,12 +189,30 @@ export default function FortLauderdalePage() {
       description: "Headquartered in Deerfield Beach, just 10 miles north. We've served Fort Lauderdale for over 20 years. We're not storm chasers — we're your long-term roofing partner."
     },
     {
-      title: 'All Property Types',
-      description: "Single-family, multi-family, condos, commercial — we do it all in Fort Lauderdale. One contractor for every roofing need."
+      title: 'Major Project Experience',
+      description: "Trusted by Fort Lauderdale Building Department, FLL Airport, Mai-Kai Historic Restoration, and Broward County facilities. If institutions trust us with their most critical projects, you can too."
     },
     {
-      title: '5-Year Certification Letters',
-      description: "If your roof qualifies, we provide the certification letter required under Florida Statute 627.7011 to protect your insurance coverage."
+      title: 'First-Pass Inspections',
+      description: "Our established relationships with Broward County building officials and proven track record means your project moves from permit application through final certificate of completion without delays."
+    }
+  ];
+
+  const testimonials = [
+    {
+      quote: "Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!",
+      author: "Michael R.",
+      location: "Fort Lauderdale Homeowner"
+    },
+    {
+      quote: "We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship.",
+      author: "Jennifer L.",
+      location: "Broward County"
+    },
+    {
+      quote: "All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience.",
+      author: "David S.",
+      location: "Commercial Property Owner"
     }
   ];
 
@@ -252,13 +270,13 @@ export default function FortLauderdalePage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Roofing Services in Fort Lauderdale, FL
+              Expert Roofing Contractor in Fort Lauderdale, FL
             </h1>
             <p className="text-xl text-zinc-400 mb-6 font-medium">
-              Serviced by All Phase Construction USA — Based in Deerfield Beach
+              Dual-Licensed HVHZ Specialist — Dispatched from Deerfield Beach HQ
             </p>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              While our main office is located in Deerfield Beach, our licensed roofing crews regularly service homes and commercial properties throughout Fort Lauderdale and nearby communities. From Las Olas to the Landings, Victoria Park to Coral Ridge — Fort Lauderdale's trusted roofing contractor for over 20 years.
+              Dispatched from our Deerfield Beach HQ, All Phase Construction USA is a dual-licensed roofing contractor serving Fort Lauderdale with both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236) — structural authority that standard roofing contractors cannot match. Family owned and operated, with decades of experience across Fort Lauderdale's most demanding residential, commercial, and institutional projects.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
@@ -299,21 +317,66 @@ export default function FortLauderdalePage() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Fort Lauderdale's Trusted Roofing Contractor
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Dual-License Authority: Why It Matters
             </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
+            <div className="space-y-6 text-zinc-400 leading-relaxed">
               <p>
-                Fort Lauderdale is one of the most diverse roofing markets in South Florida — and that's exactly why you need a contractor who can handle anything. From the historic homes of Sailboat Bend to the waterfront estates along the Intracoastal, from the high-rise condos on the beach to the commercial corridors of Cypress Creek, we've done it all.
+                Most Fort Lauderdale roofing contractors hold only a CCC license, limiting them to roof surface work. When they encounter structural issues — damaged trusses, inadequate roof-to-wall connections, compromised decking — they must stop and hire a separate general contractor, creating delays, cost overruns, and warranty gaps.
               </p>
               <p>
-                Located just 10 miles from our Deerfield Beach headquarters, Fort Lauderdale represents one of our most active service areas. We've built relationships with property managers, HOA boards, and homeowners across the city — from Wilton Manors to Lauderdale-by-the-Sea, from Plantation to the Rio Vista neighborhood.
+                Our CGC license authorizes us to evaluate and repair the complete structural system supporting your roof. During every Fort Lauderdale roof replacement, we inspect deck fastening, assess truss integrity, verify roof-to-wall connections, and ensure full Florida Building Code compliance — all under one warranty.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              HVHZ Compliance in Fort Lauderdale
+            </h2>
+            <div className="space-y-6 text-zinc-400 leading-relaxed">
+              <p>
+                Fort Lauderdale sits in South Florida's High Velocity Hurricane Zone (HVHZ), where building codes mandate the most stringent wind resistance standards in the United States. Every roof must withstand 175+ mph wind speeds.
               </p>
               <p>
-                Fort Lauderdale's mix of architecture means we work with every roof type: barrel tile on Mediterranean revivals requiring <Link to="/tile-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">professional tile roof inspection</Link> to assess underlayment condition, flat roofs on mid-century moderns needing <Link to="/flat-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">comprehensive flat roof inspection</Link> for membrane integrity, shingles on ranch homes, and commercial membrane systems on everything from strip malls to office towers. Whatever your property needs, we've installed it here before.
+                We use enhanced fastening schedules with ring-shank nails at 6-inch spacing, high-wind rated shingles with reinforced mat construction, upgraded hip and ridge cap systems with specialty adhesive, and engineered roof-to-wall connections that transfer wind loads directly to the structural frame. Every installation passes Broward County inspection on the first attempt.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Institutional Trust & Major Projects
+            </h2>
+            <div className="space-y-6 text-zinc-400 leading-relaxed">
+              <p>
+                All Phase Construction USA was selected to install a roof coating system on the Fort Lauderdale Building Department facility itself — a direct endorsement from the team responsible for inspecting every roofing project in the city. We completed the roof on the Broward County nursing home in Fort Lauderdale and are currently replacing all windows and doors at that same facility.
               </p>
               <p>
-                Metal roofing systems in Broward County require diagnostic inspection due to HVHZ wind exposure, thermal movement stresses, and concealed attachment systems that cannot be evaluated through surface observation alone. For properties with standing seam or exposed fastener systems, our <Link to="/metal-roof-inspection-broward-county/" className="text-red-500 hover:text-red-400 underline transition-colors">metal roof inspection services</Link> provide comprehensive evaluation of panel condition, fastener performance, and code compliance.
+                Our commercial portfolio includes roofing work at Fort Lauderdale-Hollywood International Airport (FLL), one of the most stringent contractor qualification processes in South Florida, requiring security clearance, specialized insurance, and FAA facility compliance.
+              </p>
+              <p>
+                In 2024, All Phase Construction USA served as the roofing subcontractor on the restoration of the Mai-Kai — Fort Lauderdale's iconic Polynesian landmark at 3599 N. Federal Highway, open since 1956 and listed on the National Register of Historic Places. The project was led by general contractor J.B. Construction as part of the $20 million renovation that brought South Florida's most storied restaurant back to life. Executing precision roofing work on a nationally registered historic structure — preserving original architectural character while meeting current Florida Building Code — represents the highest level of trust a Fort Lauderdale property can place in a roofing contractor.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Fort Lauderdale Neighborhoods We Serve
+            </h2>
+            <div className="space-y-6 text-zinc-400 leading-relaxed">
+              <p>
+                All Phase Construction USA works across Fort Lauderdale's full range of residential and commercial properties. Along the Intracoastal corridor, Harbor Beach, Bay Colony, Seven Isles, Las Olas Isles, Nurmi Isles, and Idlewyld represent our highest-value roofing work — exclusive waterfront communities where salt air corrosion, coastal wind exposure, and storm surge risk demand corrosion-resistant fasteners, sealed roof decks, and premium marine-grade materials on every project.
+              </p>
+              <p>
+                Rio Vista and Colee Hammock estates carry the same coastal exposure demands, paired with HOA architectural standards governing material selection and color approval. Coral Ridge, with its canal-front homes and proximity to the Intracoastal, regularly requires materials meeting both HVHZ code and community design guidelines.
+              </p>
+              <p>
+                Victoria Park, with its craftsman-style and mid-century properties, demands period-appropriate materials brought to current HVHZ standards. Along the New River, Tarpon River and Sailboat Bend represent Fort Lauderdale's established residential core — homes entering their first or second full replacement cycle requiring complete HVHZ compliance upgrades. Imperial Point, Flagler Village, and Lauderdale Beach round out our residential coverage across the city.
+              </p>
+              <p>
+                For historic properties, Fort Lauderdale's Stranahan House — built in 1901 and the oldest surviving structure in the city — represents the kind of century-old construction requiring both historic preservation sensitivity and full Florida Building Code compliance. Our CGC license gives us the structural authority to address original roof-to-wall connections, aging trusses, and non-standard decking that predate modern wind codes entirely.
               </p>
             </div>
           </div>
@@ -353,6 +416,56 @@ export default function FortLauderdalePage() {
             <p className="text-zinc-400 text-center max-w-3xl mx-auto italic">
               "Fort Lauderdale has been hit by major hurricanes before, and it will be again. HVHZ codes exist because of what we've learned from storms like Wilma and Irma. We install roofs that meet — and exceed — these requirements."
             </p>
+          </div>
+
+          <div className="mb-20 max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Roofing Materials for Fort Lauderdale
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                <strong className="text-white">Shingle roofs</strong> (cost-effective, HVHZ-rated) | <strong className="text-white">Metal roofing</strong> (50+ year lifespan, 200+ mph rated) | <strong className="text-white">Tile roofing</strong> (concrete and clay, HVHZ foam-set installation) | <strong className="text-white">Flat roofing</strong> (TPO, modified bitumen, BUR)
+              </p>
+              <p>
+                All materials selected for Fort Lauderdale's coastal salt air, UV exposure, and HVHZ wind requirements.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20 max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Permits & Local Expertise
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Every roofing project in Fort Lauderdale requires permitting and inspection under Florida Building Code and HVHZ standards. Our established relationships with Broward County building officials and proven track record of first-pass inspection approvals means your project moves from permit application through final certificate of completion without delays.
+              </p>
+              <p>
+                Out-of-area contractors frequently cause project delays of weeks or months navigating county-specific requirements our team handles daily.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20 max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Flexible Financing Options
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Flexible financing options including credit-based and non-credit-based plans with competitive rates — helping Fort Lauderdale homeowners protect their properties without delay.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20 max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Learning Center Resources
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed">
+              <p>
+                Our <Link to="/learning-center/" className="text-red-500 hover:text-red-400 underline transition-colors">Learning Center</Link> provides in-depth guides on roof replacement costs, wind mitigation savings, insurance claim processes, and selecting the right roofing materials for Fort Lauderdale properties.
+              </p>
+            </div>
           </div>
 
           <div className="mb-20">
@@ -625,6 +738,28 @@ export default function FortLauderdalePage() {
           </div>
 
           <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              What Fort Lauderdale Homeowners Say
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6"
+                >
+                  <p className="text-zinc-400 leading-relaxed mb-4 italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="border-t border-zinc-700 pt-4">
+                    <p className="text-white font-semibold">{testimonial.author}</p>
+                    <p className="text-zinc-500 text-sm">{testimonial.location}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-20">
             <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Fort Lauderdale Zip Codes We Serve
@@ -780,10 +915,10 @@ export default function FortLauderdalePage() {
 
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready for a Free Roof Inspection in Fort Lauderdale?
+              Call (754) 227-5605 or Request Free Estimate
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Schedule your inspection today. We'll assess your roof's condition, identify any issues, and give you honest recommendations — no pressure, no obligation.
+              Free roof inspection from a dual-licensed HVHZ specialist serving Fort Lauderdale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
