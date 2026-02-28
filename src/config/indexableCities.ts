@@ -34,7 +34,10 @@ export const INDEXABLE_CITIES: string[] = [
   'coral-springs',
   'wellington',
   'pompano-beach',
-  'lake-worth'
+  'lake-worth',
+  'weston',
+  'lauderdale-by-the-sea',
+  'wilton-manors'
 ];
 
 /**
