@@ -9,7 +9,7 @@ export default function PlantationPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Plantation Roofing Contractor | Broward County Licensed | All Phase Construction USA';
+    document.title = 'Plantation FL Roofing Contractor | HVHZ Certified | All Phase Construction USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -23,16 +23,15 @@ export default function PlantationPage() {
 
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'roofing contractor Plantation FL, roofer Plantation, roof replacement Plantation, Plantation roofing company, best roofer in Plantation, shingle roof Plantation Florida');
+      metaKeywords.setAttribute('content', 'roofing contractor Plantation, roofer Plantation FL, roof replacement Plantation, Plantation roofing company, best roofer in Plantation, shingle roof Plantation');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'keywords';
-      meta.content = 'roofing contractor Plantation FL, roofer Plantation, roof replacement Plantation, Plantation roofing company, best roofer in Plantation, shingle roof Plantation Florida';
+      meta.content = 'roofing contractor Plantation, roofer Plantation FL, roof replacement Plantation, Plantation roofing company, best roofer in Plantation, shingle roof Plantation';
       document.head.appendChild(meta);
     }
 
     const coordinates = getCityCoordinates('Plantation');
-
     const localBusinessSchema = generateLocalBusinessSchema({
       cityName: 'Plantation',
       stateName: 'Florida',
@@ -54,8 +53,7 @@ export default function PlantationPage() {
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
     existingSchemas.forEach(schema => schema.remove());
 
-    const schemas = [localBusinessSchema, breadcrumbSchema];
-    schemas.forEach(schema => {
+    [localBusinessSchema, breadcrumbSchema].forEach(schema => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.text = JSON.stringify(schema);
@@ -71,37 +69,31 @@ export default function PlantationPage() {
   const services = [
     {
       title: 'Residential Roofing',
-      description: 'Complete solutions for Plantation homes — tile, shingle, metal, and flat systems, all HVHZ compliant with manufacturer warranties. HOA approval coordination for Hawk\'s Landing, Jacaranda Country Club, and all gated communities included.',
+      description: "Complete solutions for Plantation homes — tile, shingle, metal, and flat systems, all HVHZ compliant with manufacturer warranties. HOA approval coordination included.",
       path: '/residential-roofing/',
       icon: Home
     },
     {
       title: 'Commercial Roofing',
-      description: 'Flat, TPO, modified bitumen, and standing seam metal roofs for Plantation retail centers, office buildings along University Drive and Broward Boulevard, and commercial facilities including Westfield Broward area properties.',
+      description: "Flat, TPO, modified bitumen, and standing seam metal roofs for Plantation retail centers, office buildings along University Drive and Broward Boulevard, and industrial facilities. Minimal disruption to operations.",
       path: '/commercial-roofing/',
       icon: Building2
     },
     {
       title: 'Roof Repair',
-      description: 'Emergency and scheduled repairs for leaks, storm damage, and debris impact. 24/7 response for active leaks and storm emergencies throughout Plantation.',
+      description: "Emergency and scheduled repairs for leaks, storm damage, missing shingles, and debris impact damage. 24/7 response for active leaks and storm emergencies.",
       path: '/roofing-services/roof-repair/',
       icon: Wrench
     },
     {
       title: 'Roof Inspections',
-      description: '21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation with detailed photo reports.',
+      description: "21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.",
       path: '/roof-inspection/',
       icon: Shield
     },
     {
-      title: 'Impact Windows & Doors',
-      description: 'Complete storm protection upgrades for Plantation properties.',
-      path: '/contact/',
-      icon: Wind
-    },
-    {
       title: 'Permitting',
-      description: 'Full permit application, HVHZ documentation, Broward County code compliance verification, and final approval — all handled by our team.',
+      description: "Complete permit application and processing, Florida Building Code and HVHZ compliance, HOA approval coordination, inspection scheduling, and final approval documentation — all handled by our team.",
       path: '/contact/',
       icon: Building2
     }
@@ -110,78 +102,73 @@ export default function PlantationPage() {
   const processSteps = [
     {
       title: 'Free Inspection and Estimate',
-      description: 'Scheduled within 24-48 hours. Thorough inspection covering sagging sections, damaged flashing, deteriorated underlayment, hidden water damage, and signs of active leaks. Detailed written estimate, no pressure, no hidden fees.'
+      description: "Scheduled within 24 hours. Thorough inspection covering sagging sections, damaged flashing, deteriorated underlayment, debris impact damage, and hidden water damage. Detailed written estimate, no pressure, no hidden fees."
     },
     {
-      title: 'Insurance Claim Assistance and Material Selection',
-      description: 'Full photo documentation for insurance claims. Material selection guidance for Plantation\'s unique conditions — elevated humidity from the Everglades border demands proper ventilation systems, and HOA guidelines in gated communities govern material and color selection.'
+      title: 'Material Selection and Insurance Assistance',
+      description: "Full photo documentation for insurance claims. Material selection guidance for Plantation's climate and HOA standards — reflective metal roofing that reduces cooling costs 10-25%, impact-resistant shingles, or community-approved tile."
     },
     {
       title: 'Professional Installation with Permits',
-      description: 'All Phase Construction USA handles all permitting requirements, ensuring compliance with Florida Building Code and HVHZ wind mitigation standards. Complete tear-off, deck inspection, and your approval before any additional repairs proceed.'
+      description: "All Phase Construction USA handles all permitting, HVHZ compliance documentation, and HOA approval coordination. Complete tear-off, deck inspection, and your approval before any additional structural repairs proceed."
     },
     {
       title: 'Final Inspection and Warranty',
-      description: 'Comprehensive final inspection, warranty documentation, and wind mitigation certification — potentially saving up to 40% on homeowners insurance premiums with a qualified system.'
+      description: "Comprehensive final inspection, full warranty documentation, and wind mitigation certification — potentially reducing homeowners insurance premiums by up to 40%."
     }
   ];
 
   const whyChooseUs = [
     {
       title: 'Dual-License Advantage',
-      description: 'Most Plantation roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems, they must stop and hire a separate general contractor. Our CGC license (CGC-1526236) authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability.'
+      description: "Most Plantation roofing contractors hold only a CCC license — authorizing them to install and repair roof surfaces, but nothing more. All Phase Construction USA's CGC license (CGC-1526236) authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability."
     },
     {
-      title: 'Tree City USA Expertise',
-      description: 'Plantation is designated "Tree City USA" — its signature oak-lined streets and mature tree canopy create debris impact conditions that make roof quality non-negotiable. In Plantation Acres and estate communities where large mature trees border rooflines, we regularly find structural issues caused by debris impact and root-driven moisture intrusion during tear-off.'
-    },
-    {
-      title: 'Everglades Border Microclimate',
-      description: 'Plantation\'s western boundary borders the Everglades — one of the most humidity-intensive environments in North America. We specify materials and ventilation systems designed for Plantation\'s unique microclimate, not just standard South Florida conditions.'
-    },
-    {
-      title: 'HOA Coordination',
-      description: 'We coordinate with HOA architectural review boards for Hawk\'s Landing, Jacaranda Country Club, Jacaranda Cay, and all Plantation gated communities. We prepare all documentation and ensure material selections meet community guidelines before work begins.'
+      title: 'HVHZ Certified',
+      description: "Every installation meets Florida's most demanding wind load standards — engineered to withstand 175+ mph wind speeds with ring-shank nails at enhanced 6-inch fastening schedules, high-wind rated shingles, and engineered roof-to-wall connections."
     },
     {
       title: 'Nearly Two Decades of Experience',
-      description: 'All Phase Construction USA has served Plantation homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters, just minutes away.'
+      description: "Serving Plantation homeowners and businesses since 2006 — nearly two decades of roofing excellence delivered from our Deerfield Beach headquarters."
+    },
+    {
+      title: 'HOA Approval Coordination',
+      description: "We navigate Plantation's strict HOA guidelines in communities like Hawk's Landing, Jacaranda Country Club, and Jacaranda Cay — ensuring your new roof satisfies both HVHZ code and community standards simultaneously."
     },
     {
       title: 'Flexible Financing',
-      description: 'Credit-based and non-credit-based financing options with competitive rates. Visit our easy payments page for current options.'
+      description: "Credit-based and non-credit-based financing options with competitive rates. Use our Roof Cost Calculator for a preliminary estimate."
     }
   ];
 
   const nearbyCities = [
-    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale/' },
-    { name: 'Sunrise', path: '/locations/sunrise/' },
-    { name: 'Davie', path: '/locations/davie/' },
-    { name: 'Cooper City', path: '/locations/cooper-city/' },
-    { name: 'Deerfield Beach', path: '/locations/deerfield-beach/' },
-    { name: 'Weston', path: '/locations/weston/' }
+    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
+    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
+    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl/' },
+    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
+    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' }
   ];
 
   const faqs = [
     {
-      question: 'Do you handle HOA approvals for Plantation golf communities?',
-      answer: 'Yes — we coordinate with HOA architectural review boards for Hawk\'s Landing, Jacaranda Country Club, Jacaranda Cay, and all Plantation gated communities. We prepare all documentation and ensure material selections meet community guidelines before work begins.'
+      question: 'How long does roof replacement take in Plantation?',
+      answer: "Most residential replacements complete in 1-3 days. We minimize disruption to your property and communicate throughout."
     },
     {
-      question: 'Does Plantation\'s proximity to the Everglades affect roofing?',
-      answer: 'Significantly. Properties near Plantation\'s western edge face elevated humidity levels that accelerate underlayment degradation and promote mold beneath roofing materials. We specify materials and ventilation systems designed for Plantation\'s unique microclimate.'
+      question: 'What roofing materials work best in Plantation\'s climate?',
+      answer: "Impact-resistant shingles, metal roofing (175+ mph rated standing seam systems), and HVHZ-approved concrete or clay tile all perform well. HOA guidelines in communities like Hawk's Landing and Jacaranda Country Club also factor into material selection — we help you find the option that satisfies both code and community standards."
     },
     {
-      question: 'What HVHZ requirements apply in Plantation?',
-      answer: 'Every roofing installation in Plantation must meet Broward County\'s High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation.'
+      question: 'Do you help with insurance claims for storm damage?',
+      answer: "Yes. We document damage thoroughly with photos and detailed reports, and our nearly two decades of experience with Broward County adjusters means faster approvals for you."
     },
     {
-      question: 'Do you work with insurance companies for storm damage claims?',
-      answer: 'Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades navigating Florida storm damage claims.'
+      question: 'How often should Plantation roofs be inspected?',
+      answer: "Annually, plus after any named storm event. Regular inspections catch minor issues — debris impact damage, flashing gaps, sealant wear — before they become major repairs."
     },
     {
-      question: 'What\'s the risk of delaying roof replacement on older Plantation homes?',
-      answer: 'In Plantation Acres and other neighborhoods with 1970s-80s construction, delaying replacement allows water intrusion to spread beneath the surface — rotting decking, compromising trusses, and turning a straightforward replacement into a structural project. Our CGC license means we can address whatever we find without stopping the job.'
+      question: 'Which Plantation neighborhoods do you serve?',
+      answer: "All of Plantation — Hawk's Landing, Plantation Acres, Plantation Isles, Jacaranda Country Club, Jacaranda Cay, Plantation Park, and every neighborhood within city limits, plus surrounding Broward County communities."
     }
   ];
 
@@ -194,7 +181,9 @@ export default function PlantationPage() {
               Home
             </Link>
             <span className="text-zinc-600">/</span>
-            <span className="text-zinc-500">Roofing</span>
+            <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
+              Deerfield Beach
+            </Link>
             <span className="text-zinc-600">/</span>
             <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
@@ -208,12 +197,12 @@ export default function PlantationPage() {
               Expert Roofing Contractor in Plantation, FL
             </h1>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              All Phase Construction USA has served Plantation homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Plantation roofing project that standard roofing-only contractors cannot match. Plantation is a planned community designated "Tree City USA" — its signature oak-lined streets and mature tree canopy create the debris impact conditions that make roof quality non-negotiable here.
+              All Phase Construction USA has served Plantation homeowners and businesses since 2006 — nearly two decades of roofing excellence delivered from our Deerfield Beach headquarters, just a short drive east. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Plantation roofing project that standard roofing-only contractors simply cannot match. Whether you own a luxury estate in Hawk's Landing, an equestrian property in Plantation Acres, or a commercial building along University Drive, our team delivers comprehensive roofing solutions engineered for South Florida's demands.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Nearly Two Decades Experience</span>
+                <span>20+ Years Experience</span>
               </div>
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
@@ -228,7 +217,7 @@ export default function PlantationPage() {
               <span className="text-zinc-600">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
-                <span>Dual Licensed</span>
+                <span>Locally Owned</span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -250,89 +239,55 @@ export default function PlantationPage() {
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              The Dual-License Advantage for Plantation Properties
+              Dual-License Advantage: CGC and CCC
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Most Plantation roofing contractors hold only a CCC license — authorizing roof surface work and nothing more. When they uncover structural problems — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop and hire a separate general contractor. That means delays, split warranties, and cost overruns.
+                Most Plantation roofing contractors hold only a CCC license — authorizing them to install and repair roof surfaces, but nothing more. The moment they uncover structural issues — rotted decking, compromised trusses, inadequate roof-to-wall connections — they must stop work and bring in a separate general contractor. That means delays, coordination headaches, split warranties, and cost overruns.
               </p>
               <p>
-                All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability. In Plantation's equestrian and estate communities where large mature trees border rooflines, structural issues caused by debris impact and root-driven moisture intrusion are common findings during tear-off.
+                All Phase Construction USA's CGC license authorizes us to assess and repair the complete structural system under one contract, one warranty, and one point of accountability. During every Plantation roof replacement, we inspect deck fastening patterns, assess truss integrity, verify roof-to-wall connections, and confirm full Florida Building Code compliance before the first new shingle goes down.
               </p>
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              HVHZ Compliance for Plantation
+              Plantation Neighborhoods We Serve
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
               <p>
-                Plantation is located in Broward County's High Velocity Hurricane Zone. Every roof installation must be engineered for 175+ mph wind resistance with HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase Construction USA's dual licensure enables us to engineer the complete roofing system — surface and structure — for full HVHZ compliance in a single project, with all Broward County permitting handled in-house.
-              </p>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Plantation's Western Edge and What It Means for Your Roof
-            </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
-              <p>
-                Plantation's western boundary borders the Everglades — one of the most humidity-intensive environments in North America. Properties along Plantation's western edge face elevated ambient moisture levels that accelerate underlayment degradation, promote mold growth under roofing materials, and demand ventilation systems designed for extreme humidity. We specify materials and installation methods that account for this unique microclimate, not just standard South Florida conditions.
-              </p>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Serving All Plantation Communities
-            </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
-              <p>
-                All Phase Construction USA serves every Plantation neighborhood. <strong>Hawk's Landing</strong> is a gated estate community where luxury tile roofing and HOA approval requirements are standard on every project. <strong>Plantation Acres</strong> is Plantation's equestrian community — one-acre-plus lots, mature tree canopy, and aging housing stock entering replacement cycles.
+                All Phase Construction USA serves the full range of Plantation's residential and commercial properties. <strong>Hawk's Landing</strong>, the luxury gated community west of Jacaranda Golf Club, features 550+ estate homes ranging from 3,000 to 9,000 square feet — high-end tile and metal roofing systems with 24-hour security and HOA approval requirements on all exterior work.
               </p>
               <p>
-                <strong>Plantation Isles</strong> offers private-dock waterfront homes with direct humidity and salt air exposure. <strong>Jacaranda Country Club</strong> and <strong>Jacaranda Cay</strong> represent the golf community tier where HOA architectural guidelines govern material selection. <strong>Plantation Park</strong> and <strong>Midtown Plantation</strong> offer more accessible residential neighborhoods with 1970s-80s construction.
+                <strong>Plantation Acres</strong>, the city's equestrian community with large lots and ranch-style homes, borders the Everglades and faces the unobstructed wind exposure that comes with it. <strong>Plantation Isles</strong> features waterfront homes with private docks where Intracoastal proximity demands corrosion-resistant fastener and flashing systems.
               </p>
               <p>
-                The Plantation Historical Museum and Plantation Preserve Golf Course — an 18-hole course alongside Everglades wetlands — define a community that takes its identity seriously. The Equestrian Center at Volunteer Park and the Frank Veltri Tennis Center reflect Plantation's commitment to its planned community character. Westfield Broward Mall serves as the commercial anchor for a community that balances suburban living with significant commercial roofing demand.
+                <strong>Jacaranda Country Club</strong> and <strong>Jacaranda Cay</strong> offer golf course-adjacent properties where tile roofing dominates and community design guidelines are strictly enforced. <strong>Plantation Park</strong> provides affordable single-family housing stock entering replacement cycles.
+              </p>
+              <p>
+                The Plantation Historical Museum, Plantation Preserve Golf Course and Linear Park — which runs alongside 55 acres of Everglades-adjacent wetlands — and the Equestrian Center at Volunteer Park define the community character of a city that takes both its green spaces and its standards seriously.
               </p>
             </div>
           </div>
 
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Complete Roofing Services for Plantation
+              <span className="inline-block px-4 py-2 bg-red-600/10 text-red-500 rounded-full text-sm font-semibold mb-4 border border-red-600/20">
+                HVHZ Compliant
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                High Velocity Hurricane Zone — 175+ MPH Wind Ratings
               </h2>
-              <p className="text-zinc-400 max-w-3xl mx-auto">
-                From emergency repairs to complete roof replacement — we handle every aspect of your roofing project.
+              <p className="text-zinc-400 max-w-4xl mx-auto mb-8">
+                Plantation sits fully within South Florida's High Velocity Hurricane Zone, where every roofing installation must meet Florida's most demanding wind load standards — engineered to withstand 175+ mph wind speeds. Plantation's western border meets the Everglades, and the flat terrain between the coast and the Everglades creates unobstructed wind corridors that accelerate storm-force winds across the city. We use ring-shank nails at enhanced 6-inch fastening schedules, high-wind rated shingles with reinforced mat construction, upgraded hip and ridge cap systems with specialty adhesive, and engineered roof-to-wall connections that transfer wind loads directly to the structural frame. Every installation passes Broward County building department inspection on the first attempt.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Link
-                    key={service.title}
-                    to={service.path}
-                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
-                  >
-                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-red-500" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-zinc-400 mb-4 leading-relaxed">{service.description}</p>
-                    <div className="flex items-center text-red-500 font-medium">
-                      <span>Learn More</span>
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </Link>
-                );
-              })}
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-bold text-white mb-3">Plantation's Tree Canopy and HOA Requirements</h3>
+              <p className="text-zinc-400 leading-relaxed">
+                Plantation was designated a "Tree City USA" by the Arbor Day Foundation — the city's oak-lined streets and mature canopy are a point of civic pride. That canopy also means debris impact is a real roofing concern after every storm: branches, limbs, and windblown material accelerate surface wear on shingles and tile. Plantation's strict exterior standards — including HOA guidelines in communities like Hawk's Landing, Jacaranda Country Club, and Jacaranda Cay — require roofing material and color selections to be coordinated with community standards alongside HVHZ code requirements. Our team navigates both simultaneously on every project.
+              </p>
             </div>
           </div>
 
@@ -361,50 +316,37 @@ export default function PlantationPage() {
           </div>
 
           <div className="mb-20">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-              Why Plantation Homeowners Choose All Phase Construction
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {whyChooseUs.map((reason, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
-                >
-                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="text-center mb-8">
+            <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Also Serving Nearby Communities
+                Roofing Services in Plantation
               </h2>
               <p className="text-zinc-400 max-w-3xl mx-auto">
-                In addition to Plantation, we provide roofing services throughout Broward County:
+                Full-service residential and commercial roofing — from repairs to complete replacements.
               </p>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
-              {nearbyCities.map((city) => (
-                <Link
-                  key={city.name}
-                  to={city.path}
-                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 text-center text-sm"
-                >
-                  {city.name}
-                </Link>
-              ))}
-            </div>
-            <div className="text-center">
-              <Link
-                to="/locations/"
-                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
-              >
-                View All Service Areas
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Link
+                    key={service.title}
+                    to={service.path}
+                    className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-red-500" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-600 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-zinc-400 mb-4 leading-relaxed">{service.description}</p>
+                    <div className="flex items-center text-red-500 font-medium">
+                      <span>Learn More</span>
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
@@ -458,7 +400,70 @@ export default function PlantationPage() {
             </div>
           </div>
 
-          <EmbeddedRoofCalculator city="Plantation" county="Broward" isHVHZ={true} />
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+              Why Plantation Homeowners Choose All Phase Construction
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {whyChooseUs.map((reason, index) => (
+                <div
+                  key={index}
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300"
+                >
+                  <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{reason.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                Plantation Zip Codes We Serve
+              </h2>
+              <p className="text-zinc-400 leading-relaxed">
+                We serve all Plantation zip codes including: 33311, 33312, 33313, 33317, 33322, 33323, 33324, 33325, 33388, and surrounding areas.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                Also Serving Nearby Communities
+              </h2>
+              <p className="text-zinc-400 max-w-3xl mx-auto">
+                In addition to Plantation, we provide roofing services throughout Broward County:
+              </p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
+              {nearbyCities.map((city) => (
+                <Link
+                  key={city.name}
+                  to={city.path}
+                  className="bg-[#27272a] border border-zinc-800 rounded-lg px-4 py-3 hover:border-red-600 hover:bg-zinc-800/50 transition-all duration-300 text-zinc-300 hover:text-red-500 text-center text-sm"
+                >
+                  {city.name}
+                </Link>
+              ))}
+            </div>
+            <div className="text-center">
+              <Link
+                to="/locations/"
+                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
+              >
+                View All Service Areas
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
+          <EmbeddedRoofCalculator
+            city="Plantation"
+            county="Broward"
+            isHVHZ={true}
+          />
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
@@ -493,15 +498,16 @@ export default function PlantationPage() {
 
           <div className="mb-20">
             <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-8 text-center">
+              <div className="mb-6">
+                <p className="text-zinc-400 text-sm mb-2">Licensed & Insured</p>
+                <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
+              </div>
               <div className="flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
                 <div>
                   <span className="text-white font-semibold">FL CCC License:</span> CCC-1331464
                 </div>
                 <div>
                   <span className="text-white font-semibold">FL CGC License:</span> CGC-1526236
-                </div>
-                <div>
-                  <span className="text-white font-semibold">Headquarters:</span> 590 Goolsby Blvd, Deerfield Beach, FL 33442
                 </div>
               </div>
             </div>
@@ -512,7 +518,7 @@ export default function PlantationPage() {
               Call (754) 227-5605 or Request Free Estimate
             </h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-              Serving all of Plantation from our Deerfield Beach headquarters since 2006. Licenses CCC-1331464 | CGC-1526236.
+              Serving all of Plantation from our Deerfield Beach headquarters — protecting South Florida properties since 2006.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link
@@ -546,7 +552,6 @@ export default function PlantationPage() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
