@@ -681,6 +681,21 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://allphaseconstructionfl.com/locations/plantation/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://allphaseconstructionfl.com/locations/sunrise/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://allphaseconstructionfl.com/locations/tamarac/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://allphaseconstructionfl.com/locations/west-palm-beach/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
