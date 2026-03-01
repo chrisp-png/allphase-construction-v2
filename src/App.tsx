@@ -203,6 +203,7 @@ const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBea
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderdaleMoneyPage'));
 const CoralSpringsMoneyPage = lazy(() => import('./pages/locations/CoralSpringsMoneyPage'));
+const PlantationMoneyPage = lazy(() => import('./pages/locations/PlantationMoneyPage'));
 const DelrayBeachMoneyPage = lazy(() => import('./pages/locations/DelrayBeachMoneyPage'));
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
@@ -320,6 +321,7 @@ function AppContent() {
             <Route path="/locations/boca-raton" element={<BocaRatonMoneyPage />} />
             <Route path="/locations/fort-lauderdale" element={<FortLauderdaleMoneyPage />} />
             <Route path="/locations/coral-springs" element={<CoralSpringsMoneyPage />} />
+            <Route path="/locations/plantation" element={<PlantationMoneyPage />} />
             <Route path="/locations/delray-beach" element={<DelrayBeachMoneyPage />} />
             <Route path="/locations/boynton-beach" element={<BoyntonBeachMoneyPage />} />
             <Route path="/locations/wellington" element={<WellingtonPage />} />
