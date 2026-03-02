@@ -43,13 +43,13 @@ force = true
 
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/:city/top-5-roofer"
-to = "/locations/:city/"
+to = "/locations/:city"
 status = 301
 force = true
 
 [[redirects]]
 from = "/locations/deerfield-beach/service-area/:city/top-5-roofer/*"
-to = "/locations/:city/"
+to = "/locations/:city"
 status = 301
 force = true
 
