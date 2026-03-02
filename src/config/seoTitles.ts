@@ -33,7 +33,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
-    title: 'Contact Our Roofing Team | All Phase Construction USA',
+    title: 'Contact Our Roofing Team | All Phase USA',
     description: 'Contact All Phase Construction USA for roofing services in Broward & Palm Beach Counties. Call (754) 227-5605 or request a free estimate online.',
     canonical: 'https://allphaseconstructionfl.com/contact'
   },
@@ -43,12 +43,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'Roof Cost Calculator | All Phase Construction USA',
+    title: 'Roof Cost Calculator | All Phase USA',
     description: 'Calculate roof replacement costs in South Florida. Get instant estimates based on your roof size, material, and pitch. Free quotes available.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
-    title: 'Roof Cost Calculator | All Phase Construction USA',
+        title: 'Roof Pricing Guide | All Phase USA',
     description: 'Calculate roof replacement costs in South Florida. Get instant estimates based on your roof size, material, and pitch. Free quotes available.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
@@ -58,32 +58,32 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog'
   },
   '/reviews': {
-    title: 'Customer Reviews | All Phase Construction USA',
+    title: 'Customer Reviews | All Phase USA',
     description: 'Read verified customer reviews and testimonials from homeowners across Broward and Palm Beach Counties who trust All Phase Construction USA.',
     canonical: 'https://allphaseconstructionfl.com/reviews'
   },
   '/projects': {
-    title: 'Our Projects | All Phase Construction USA',
+    title: 'Our Projects | All Phase USA',
     description: 'View completed roofing projects across South Florida. See our quality workmanship on residential and commercial properties.',
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
-    title: 'Residential Roofing Deerfield Beach | Licensed Contractor | All Phase Construction USA',
+    title: 'Residential Roofing Services | All Phase USA',
     description: 'Expert residential roofing in Broward & Palm Beach Counties. Tile, shingle, metal, and flat roofing for homes. Licensed, insured, HVHZ certified.',
     canonical: 'https://allphaseconstructionfl.com/residential-roofing'
   },
   '/commercial-roofing': {
-    title: 'Commercial Roofing Deerfield Beach | Licensed Contractor | All Phase Construction USA',
+    title: 'Commercial Roofing Services | All Phase USA',
     description: 'Professional commercial roofing contractor in South Florida. Flat roofs, TPO, modified bitumen, and metal roofing systems for businesses.',
     canonical: 'https://allphaseconstructionfl.com/commercial-roofing'
   },
   '/roof-inspection': {
-    title: 'Roof Inspection Deerfield Beach | 21-Point Professional Assessment | All Phase Construction USA',
+    title: 'Professional Roof Inspection Services | All Phase USA',
     description: 'Comprehensive roof inspections in South Florida. Insurance documentation, storm damage assessment, and pre-purchase inspections by licensed professionals.',
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
   '/roof-replacement-process': {
-    title: 'Roof Replacement Process | All Phase Construction USA',
+    title: 'Roof Replacement Process | All Phase USA',
     description: 'Learn our proven 10-step roof replacement process. From inspection to final warranty, see how we deliver quality roofing projects in South Florida.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
@@ -93,42 +93,42 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-replacement'
   },
   '/roof-maintenance-programs': {
-    title: 'Roof Maintenance Programs | All Phase Construction USA',
+    title: 'Roof Maintenance Programs | All Phase USA',
     description: 'Proactive roof maintenance programs for South Florida properties. Extend roof life, prevent leaks, and maintain warranty compliance.',
     canonical: 'https://allphaseconstructionfl.com/roof-maintenance-programs'
   },
   '/tile-roofing': {
-    title: 'Tile Roof Repair & Replacement Deerfield Beach | All Phase Construction USA',
+    title: 'Tile Roofing Installation & Repair | All Phase USA',
     description: 'Expert tile roofing services in South Florida. Concrete and clay tile installation, repair, and maintenance. HVHZ compliant workmanship.',
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
-    title: 'Metal Roof Installation Deerfield Beach | Repair & Replacement | All Phase Construction USA',
+    title: 'Metal Roofing Installation & Repair | All Phase USA',
     description: 'Standing seam and metal roofing systems in South Florida. Energy-efficient, hurricane-resistant metal roofs with superior longevity.',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
-    title: 'Shingle Roof Repair & Replacement Deerfield Beach | All Phase Construction USA',
+    title: 'Shingle Roofing Broward & Palm Beach | All Phase USA',
     description: 'Asphalt shingle roofing services in Broward & Palm Beach Counties. Architectural shingles, 3-tab shingles, and impact-resistant options.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
-    title: 'Flat & Low Slope Roofing Deerfield Beach | TPO/PVC | All Phase Construction USA',
+    title: 'Flat Roofing Services | All Phase USA',
     description: 'Commercial and residential flat roofing in South Florida. TPO, EPDM, modified bitumen, and built-up roofing systems.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
     '/roof-repair': {
-    title: 'Roof Repair Services | Broward & Palm Beach Counties',
+    title: 'Emergency Roof Repair Services | All Phase USA',
     description: 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/roofing-services': {
-    title: 'Roofing Services Deerfield Beach | Residential & Commercial | All Phase Construction USA',
+    title: 'Roofing Services | Residential & Commercial | All Phase USA',
     description: 'Full-service roofing contractor in Deerfield Beach. Residential and commercial roofing, repair, replacement, and maintenance. Licensed & insured.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
-    title: 'How to Hire a Roofing Contractor | All Phase Construction USA',
+    title: 'How to Hire a Roofing Contractor | All Phase USA',
     description: 'Expert guide on hiring a roofing contractor in South Florida. Learn what to look for, questions to ask, and how to avoid scams.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/how-to-hire-a-roofing-contractor'
   },
@@ -183,9 +183,34 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
   },
     '/frequently-asked-questions': {
-    title: 'Roofing FAQ South Florida | HVHZ Roofing Questions Answered | All Phase Construction USA',
+    title: 'Roofing FAQ South Florida | All Phase USA',
     description: 'Answers to common roofing questions for South Florida homeowners — repair vs replacement, insurance, HVHZ requirements, materials, and costs. Licensed contractor. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/frequently-asked-questions'
+  },
+    '/easy-payments': {
+    title: 'Easy Payments & Financing Options | All Phase USA',
+    description: 'Flexible financing options for roofing projects in South Florida. Easy payment plans available for roof replacement, repair, and maintenance.',
+    canonical: 'https://allphaseconstructionfl.com/easy-payments'
+  },
+  '/our-location': {
+    title: 'Our Deerfield Beach Location | All Phase USA',
+    description: 'Visit All Phase Construction USA at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving Broward and Palm Beach Counties.',
+    canonical: 'https://allphaseconstructionfl.com/our-location'
+  },
+  '/learning-center': {
+    title: 'Learning Center | Roofing Guides & Resources | All Phase USA',
+    description: 'Roofing guides, resources, and educational content for South Florida homeowners from All Phase Construction USA.',
+    canonical: 'https://allphaseconstructionfl.com/learning-center'
+  },
+  '/locations/deerfield-beach/service-area': {
+    title: 'Service Areas | All Phase USA',
+    description: 'All Phase Construction USA serves over 50 cities throughout Broward County and Palm Beach County from our Deerfield Beach headquarters.',
+    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
+  },
+  '/how-to-hire-roofing-contractor': {
+    title: 'How to Hire a Roofing Contractor in Florida | Expert Guide',
+    description: 'Expert guide on hiring a roofing contractor in Florida. Learn what to look for, questions to ask, and red flags to avoid.',
+    canonical: 'https://allphaseconstructionfl.com/how-to-hire-roofing-contractor'
   },
   // ══════════════════════════════════════════════════════════════
   // ROOF INSPECTION CITY PAGES — /roof-inspection/:city
@@ -360,10 +385,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
+      title: `${cityName} Roof Repair | All Phase USA`,
       description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services from All Phase Construction USA. Licensed & insured. Call today.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
-      ogTitle: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
+      ogTitle: `${cityName} Roof Repair | All Phase USA`,
       ogDescription: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services from All Phase Construction USA.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
@@ -374,10 +399,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/roof-inspection/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `Roof Inspection ${cityName} FL | Certified Roof Inspectors`,
+      title: `${cityName} Roof Inspection | All Phase USA`,
       description: `Professional roof inspection in ${cityName}, FL. Catch hidden damage before it becomes an emergency. Licensed inspectors, same-week scheduling. All Phase Construction USA.`,
       canonical: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
-      ogTitle: `Roof Inspection ${cityName} FL | Certified Roof Inspectors`,
+      ogTitle: `${cityName} Roof Inspection | All Phase USA`,
       ogDescription: `Professional roof inspection in ${cityName}, FL. Licensed inspectors, same-week scheduling. All Phase Construction USA.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
     };
