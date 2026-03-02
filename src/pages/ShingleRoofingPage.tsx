@@ -27,6 +27,7 @@ import {
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
+import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
 import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function ShingleRoofingPage() {
@@ -44,7 +45,20 @@ export default function ShingleRoofingPage() {
     pageUrl
   );
 
-  const combinedSchema = [localBusinessSchema, serviceSchema];
+  const faqSchema = generateFAQSchema([
+    { question: "Are shingle roofs a good choice for South Florida hurricanes?", answer: "Yes — when installed properly. Premium architectural shingles like Tamko Titan XT carry 160 mph wind warranties. The key factors are proper nailing patterns, deck re-nailing, and quality underlayment. Many shingle failures in storms result from installation shortcuts, not material deficiencies." },
+    { question: "How long do shingle roofs last in Florida?", answer: "With proper ventilation and premium materials, 20-30 years is realistic. Without proper ventilation, thermal shock can reduce that to 12-15 years. The underlayment and deck are often the limiting factors, not the shingles themselves." },
+    { question: "What is a secondary water barrier and why does it matter?", answer: "A secondary water barrier is a self-adhered (peel and stick) underlayment that provides waterproofing even if shingles blow off. It qualifies for approximately 8% discount on your windstorm insurance — but only if you can document that it was installed. We photograph this installation on every job." },
+    { question: "How do I get insurance discounts for my roof?", answer: "After installation, a licensed inspector performs a wind mitigation inspection (form OIR-B1-1802). They evaluate roof covering, deck attachment, secondary water resistance, and other factors. If your contractor did not document what is under the shingles, the inspector marks unknown and you do not get the discount. We provide documentation during installation so you can prove what is there." },
+    { question: "Why does ventilation matter for shingle roofs?", answer: "Shingle surfaces can reach 160 degrees on sunny days. Without proper ventilation, that heat builds up in the attic and cooks the shingles from below. This thermal shock dries out the asphalt, causing cracking, curling, and premature failure. Proper ventilation can extend shingle life by 30-50%." }
+  ]);
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+    { name: 'Shingle Roofing', url: 'https://allphaseconstructionfl.com/shingle-roofing' }
+  ]);
+
+  const combinedSchema = [localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema];
 
   return (
     <>
