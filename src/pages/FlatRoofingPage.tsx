@@ -29,33 +29,22 @@ import {
 import SEO from '../components/SEO';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
+import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function FlatRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Flat Roofing Services",
-    "serviceType": "Flat Roofing",
-    "description": "Flat roofing installation and repair services in South Florida. TPO, PVC, modified bitumen, and EPDM systems for residential and commercial properties. HVHZ compliant installations.",
-    "url": "https://allphaseconstructionfl.com/flat-roofing",
-    "provider": {
-      "@id": "https://allphaseconstructionfl.com/#business"
-    },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Broward County, Florida"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Palm Beach County, Florida"
-      }
-    ]
-  };
+  const pageUrl = 'https://allphaseconstructionfl.com/flat-roofing';
+  const pageDescription = 'Flat roofing installation and repair services in South Florida. TPO, PVC, modified bitumen, and EPDM systems for residential and commercial properties. HVHZ compliant installations.';
+
+  const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+  const serviceSchema = generateServiceSchema(
+    'Flat Roofing Installation',
+    pageDescription,
+    pageUrl
+  );
 
   const faqs = [
     {
@@ -112,13 +101,15 @@ export default function FlatRoofingPage() {
     }
   ];
 
+  const combinedSchema = [localBusinessSchema, serviceSchema];
+
   return (
     <>
       <SEO
         title="Flat Roofing Broward & Palm Beach | TPO & PVC | All Phase"
-        description="TPO & PVC flat roofing in South Florida. Commercial & residential. HVHZ compliant. Free assessment. Call (754) 227-5605."
-        canonical="https://allphaseconstructionfl.com/flat-roofing"
-        schema={serviceSchema}
+        description={pageDescription}
+        canonical={pageUrl}
+        schema={combinedSchema}
       />
       <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}

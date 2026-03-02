@@ -29,6 +29,7 @@ import {
 } from 'lucide-react';
 import { sheetSitemap } from '../data/sheetSitemap';
 import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
+import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 
@@ -39,29 +40,19 @@ export default function RoofRepairPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+
+    const pageUrl = 'https://allphaseconstructionfl.com/roof-repair';
+    const pageDescription = 'Roof repair and restoration services in Broward and Palm Beach Counties. Comprehensive inspections, full-system restoration, and certification letters for insurance compliance.';
+
+    // Local Business Schema with AggregateRating
+    const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+
     // Service Schema
-    const serviceSchema = {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Roof Repair & Restoration Services",
-      "serviceType": "Roof Repair",
-      "description": "Roof repair and restoration services in Broward and Palm Beach Counties. Comprehensive inspections, full-system restoration, and certification letters for insurance compliance.",
-      "url": "https://allphaseconstructionfl.com/roof-repair/",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    };
+    const serviceSchema = generateServiceSchema(
+      'Roof Repair & Restoration Services',
+      pageDescription,
+      pageUrl
+    );
 
     // FAQ Schema for rich snippets
     const faqSchema = generateFAQSchema([
@@ -81,7 +72,7 @@ export default function RoofRepairPage() {
     ]);
 
     // Inject all schemas
-    const cleanup = injectMultipleSchemas([serviceSchema, faqSchema, breadcrumbSchema]);
+    const cleanup = injectMultipleSchemas([localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema]);
 
     return cleanup;
   }, []);

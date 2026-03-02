@@ -26,34 +26,25 @@ import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
+import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function TileRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const pageUrl = 'https://allphaseconstructionfl.com/tile-roofing';
+  const pageDescription = 'Tile roof installation & repair in South Florida. Clay & concrete tile with proper flashings. Free inspection. Call (754) 227-5605.';
+
+  // Local Business Schema with AggregateRating
+  const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+
   // Service Schema
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Tile Roofing Services",
-    "serviceType": "Tile Roofing",
-    "description": "Tile roofing installation and repair services in South Florida. Concrete and clay tile systems with proper flashing and adhesive application. HVHZ compliant installations for residential and commercial properties.",
-    "url": "https://allphaseconstructionfl.com/tile-roofing",
-    "provider": {
-      "@id": "https://allphaseconstructionfl.com/#business"
-    },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Broward County, Florida"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Palm Beach County, Florida"
-      }
-    ]
-  };
+  const serviceSchema = generateServiceSchema(
+    'Tile Roofing Installation',
+    pageDescription,
+    pageUrl
+  );
 
   // FAQ Schema for rich snippets
   const faqSchema = generateFAQSchema([
@@ -71,7 +62,7 @@ export default function TileRoofingPage() {
   ]);
 
   // Combined schemas
-  const combinedSchema = [serviceSchema, faqSchema, breadcrumbSchema];
+  const combinedSchema = [localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema];
 
   return (
     <>

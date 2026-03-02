@@ -26,41 +26,32 @@ import {
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
+import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function MetalRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Metal Roofing Services",
-    "serviceType": "Metal Roofing",
-    "description": "Metal roofing installation services in South Florida. Standing seam and mechanically seamed systems. HVHZ compliant installations with proper clip spacing for residential and commercial properties.",
-    "url": "https://allphaseconstructionfl.com/metal-roofing",
-    "provider": {
-      "@id": "https://allphaseconstructionfl.com/#business"
-    },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Broward County, Florida"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Palm Beach County, Florida"
-      }
-    ]
-  };
+  const pageUrl = 'https://allphaseconstructionfl.com/metal-roofing';
+  const pageDescription = 'Standing seam metal roofing in South Florida. 24-gauge, HVHZ compliant. Free consultation. Call (754) 227-5605.';
+
+  const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+  const serviceSchema = generateServiceSchema(
+    'Metal Roofing Installation',
+    pageDescription,
+    pageUrl
+  );
+
+  const combinedSchema = [localBusinessSchema, serviceSchema];
 
   return (
     <>
       <SEO
         title="Metal Roofing Broward & Palm Beach | Free Inspection | All Phase"
-        description="Standing seam metal roofing in South Florida. 24-gauge, HVHZ compliant. Free consultation. Call (754) 227-5605."
-        canonical="https://allphaseconstructionfl.com/metal-roofing"
-        schema={serviceSchema}
+        description={pageDescription}
+        canonical={pageUrl}
+        schema={combinedSchema}
       />
       <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}

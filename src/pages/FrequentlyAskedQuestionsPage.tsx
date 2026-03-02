@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import { generateLocalBusinessSchema } from '../utils/seoSchemas';
 
 interface FAQItem {
   question: string;
@@ -397,6 +398,11 @@ export default function FrequentlyAskedQuestionsPage() {
     window.scrollTo(0, 0);
   }, []);
 
+  const pageUrl = 'https://allphaseconstructionfl.com/frequently-asked-questions';
+
+  // Local Business Schema with AggregateRating
+  const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+
   // Generate FAQPage schema
   const faqSchema = {
     "@context": "https://schema.org",
@@ -411,14 +417,16 @@ export default function FrequentlyAskedQuestionsPage() {
     }))
   };
 
+  const combinedSchemas = [localBusinessSchema, faqSchema];
+
   return (
     <>
       <Helmet>
         <title>Roofing FAQ South Florida | HVHZ Roofing Questions Answered | All Phase Construction USA</title>
         <meta name="description" content="Expert answers to South Florida roofing FAQs. HVHZ requirements, roof replacement costs, permits, insurance, hurricane prep, and contractor selection. Broward & Palm Beach County." />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/frequently-asked-questions/" />
+        <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
+          {JSON.stringify(combinedSchemas)}
         </script>
       </Helmet>
 

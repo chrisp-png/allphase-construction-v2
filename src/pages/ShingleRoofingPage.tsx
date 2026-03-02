@@ -27,41 +27,32 @@ import {
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
+import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function ShingleRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Shingle Roofing Services",
-    "serviceType": "Shingle Roofing",
-    "description": "Shingle roofing installation and replacement services in South Florida. Premium underlayments and wind mitigation documentation for maximum insurance discounts. HVHZ compliant installations.",
-    "url": "https://allphaseconstructionfl.com/shingle-roofing",
-    "provider": {
-      "@id": "https://allphaseconstructionfl.com/#business"
-    },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Broward County, Florida"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Palm Beach County, Florida"
-      }
-    ]
-  };
+  const pageUrl = 'https://allphaseconstructionfl.com/shingle-roofing';
+  const pageDescription = 'Asphalt shingle roofing in South Florida. Premium underlayments, Class 4 impact resistance. Free inspection. Call (754) 227-5605.';
+
+  const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+  const serviceSchema = generateServiceSchema(
+    'Shingle Roofing Installation',
+    pageDescription,
+    pageUrl
+  );
+
+  const combinedSchema = [localBusinessSchema, serviceSchema];
 
   return (
     <>
       <SEO
         title="Shingle Roofing Broward & Palm Beach | Free Inspection | All Phase"
-        description="Asphalt shingle roofing in South Florida. Premium underlayments, Class 4 impact resistance. Free inspection. Call (754) 227-5605."
-        canonical="https://allphaseconstructionfl.com/shingle-roofing"
-        schema={serviceSchema}
+        description={pageDescription}
+        canonical={pageUrl}
+        schema={combinedSchema}
       />
       <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}

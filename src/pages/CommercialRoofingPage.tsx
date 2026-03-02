@@ -28,6 +28,7 @@ import {
   BookOpen
 } from 'lucide-react';
 import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
+import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function CommercialRoofingPage() {
   useEffect(() => {
@@ -39,28 +40,18 @@ export default function CommercialRoofingPage() {
       metaDescription.setAttribute('content', 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance. Dual-licensed contractor. Free assessments.');
     }
 
+    const pageUrl = 'https://allphaseconstructionfl.com/commercial-roofing';
+    const pageDescription = 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance. Dual-licensed contractor. Free assessments.';
+
+    // Local Business Schema with AggregateRating
+    const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
+
     // Service Schema
-    const serviceSchema = {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Commercial Roofing Services",
-      "serviceType": "Commercial Roofing",
-      "description": "Commercial roofing services for condos, HOAs, and property managers in Broward and Palm Beach Counties. HVHZ code experts specializing in multi-family and commercial properties.",
-      "url": "https://allphaseconstructionfl.com/commercial-roofing",
-      "provider": {
-        "@id": "https://allphaseconstructionfl.com/#business"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Broward County, Florida"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County, Florida"
-        }
-      ]
-    };
+    const serviceSchema = generateServiceSchema(
+      'Commercial Roofing Installation',
+      pageDescription,
+      pageUrl
+    );
 
     // FAQ Schema for rich snippets
     const faqSchema = generateFAQSchema([
@@ -78,7 +69,7 @@ export default function CommercialRoofingPage() {
     ]);
 
     // Inject all schemas
-    const cleanup = injectMultipleSchemas([serviceSchema, faqSchema, breadcrumbSchema]);
+    const cleanup = injectMultipleSchemas([localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema]);
 
     return cleanup;
   }, []);
