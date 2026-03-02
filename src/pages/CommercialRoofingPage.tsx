@@ -741,6 +741,22 @@ export default function CommercialRoofingPage() {
               Recent PVC membrane commercial roof installation in <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 underline">Boca Raton</Link>, demonstrating our HVHZ-compliant installation methods, enhanced fastening systems, and attention to detail on active commercial properties.
             </p>
 
+            {/* Hero Image - Full Width */}
+            <div className="mb-8 rounded-xl overflow-hidden border border-zinc-800">
+              <img
+                src="/social-proof/commerical-pvc-single-ply-all-phase-construction-usa.jpg"
+                alt="Commercial PVC single-ply roofing system installation in Boca Raton Florida by All Phase Construction USA"
+                className="w-full h-auto"
+                loading="eager"
+                decoding="async"
+                width="1200"
+                height="900"
+              />
+              <div className="bg-zinc-900 p-4">
+                <p className="text-sm text-zinc-400">Commercial PVC membrane roof installation in Boca Raton, FL — complete HVHZ-compliant system with enhanced drainage and rooftop equipment integration</p>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Photo 1 */}
               <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
