@@ -1322,6 +1322,68 @@ function generateStaticFiles() {
   }
   totalPages++;
 
+    // ============================================================
+  // FAQ & Breadcrumb schema data for service pages
+  // Matches what React components render client-side
+  // ============================================================
+  const SERVICE_PAGE_SCHEMAS = {
+    '/shingle-roofing': {
+      faqs: [
+        { question: "Are shingle roofs a good choice for South Florida hurricanes?", answer: "Yes \u2014 when installed properly. Premium architectural shingles like Tamko Titan XT carry 160 mph wind warranties. The key factors are proper nailing patterns, deck re-nailing, and quality underlayment. Many shingle failures in storms result from installation shortcuts, not material deficiencies." },
+        { question: "How long do shingle roofs last in Florida?", answer: "With proper ventilation and premium materials, 20-30 years is realistic. Without proper ventilation, thermal shock can reduce that to 12-15 years. The underlayment and deck are often the limiting factors, not the shingles themselves." },
+        { question: "What is a secondary water barrier and why does it matter?", answer: "A secondary water barrier is a self-adhered (peel and stick) underlayment that provides waterproofing even if shingles blow off. It qualifies for approximately 8% discount on your windstorm insurance \u2014 but only if you can document that it was installed. We photograph this installation on every job." },
+        { question: "How do I get insurance discounts for my roof?", answer: "After installation, a licensed inspector performs a wind mitigation inspection (form OIR-B1-1802). They evaluate roof covering, deck attachment, secondary water resistance, and other factors. If your contractor did not document what is under the shingles, the inspector marks unknown and you do not get the discount. We provide documentation during installation so you can prove what is there." },
+        { question: "Why does ventilation matter for shingle roofs?", answer: "Shingle surfaces can reach 160 degrees on sunny days. Without proper ventilation, that heat builds up in the attic and cooks the shingles from below. This thermal shock dries out the asphalt, causing cracking, curling, and premature failure. Proper ventilation can extend shingle life by 30-50%." }
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Shingle Roofing', url: 'https://allphaseconstructionfl.com/shingle-roofing' }
+      ]
+    },
+    '/metal-roofing': {
+      faqs: [
+        { question: "What's the difference between standing seam and exposed fastener metal roofing?", answer: "Standing seam has concealed fasteners with panels that interlock at raised seams, providing superior wind resistance and no exposed penetrations. Exposed fastener systems use visible screws through the panel face \u2014 lower cost but require washer maintenance and are more vulnerable to wind uplift in HVHZ jurisdictions." },
+        { question: "Is mechanically seamed better than snap-lock for hurricanes?", answer: "Yes. Mechanically seamed panels are physically crimped together, creating a stronger interlock than snap-lock systems that rely on tension alone. For HVHZ applications in Broward and Palm Beach Counties, mechanically seamed standing seam provides superior uplift resistance and is the preferred system for high-wind exposure." },
+        { question: "What does clip spacing mean and why does it matter?", answer: "Clip spacing refers to how frequently the hidden clips that attach standing seam panels to the roof deck are installed. Tighter clip spacing increases wind uplift resistance. Florida's High Velocity Hurricane Zone requires specific clip spacing based on wind load calculations \u2014 improper spacing is one of the most common installation deficiencies we find during inspections." },
+        { question: "What gauge or thickness metal should I choose?", answer: "For residential standing seam in South Florida, 24-gauge steel is the standard for quality installations. 26-gauge is acceptable for some applications but offers less dent resistance. Thicker gauge (lower number) provides better performance in hail, impact, and high-wind conditions. Aluminum panels are also common in coastal areas for corrosion resistance." },
+        { question: "How long does a metal roof last?", answer: "Properly installed metal roofing systems last 40-70 years in Florida conditions. The limiting factor is usually the substrate and fastening system, not the metal panels themselves. Galvalume and Kynar-coated steel panels are particularly durable in South Florida's UV and salt air environment." }
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Metal Roofing', url: 'https://allphaseconstructionfl.com/metal-roofing' }
+      ]
+    },
+    '/flat-roofing': {
+      faqs: [
+        { question: "How long does a flat roof last in Florida?", answer: "With proper installation and materials, TPO and PVC systems last 20-30 years, and modified bitumen 15-20 years. Poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation." },
+        { question: "What causes flat roof leaks?", answer: "The most common causes are seam failures from improper heat welding, flashing failures around penetrations such as HVAC units, vents, and pipes, and ponding water that breaks down the membrane over time. In Florida, UV exposure and thermal cycling also accelerate wear if the system is not designed for our climate." },
+        { question: "What's the real difference between TPO and PVC?", answer: "When TPO is heat-welded, the seam bonds through adhesion and can be separated with enough force. TPO also requires chalk fillers for fire ratings, which bleed to the surface over time making repairs harder. When PVC is heat-welded, the material molecularly fuses into one continuous piece \u2014 the seam becomes the strongest part of the roof. PVC is naturally Class A fire rated with no fillers, so repairs decades later weld just as cleanly as day one." },
+        { question: "How do you prevent ponding water on flat roofs?", answer: "We design drainage into every system \u2014 tapered insulation to create slope toward drains, properly sized primary drains, and secondary overflow scuppers as code requires. Florida Building Code defines positive drainage as water clearing within 48 hours. We engineer for complete drainage, not good enough." },
+        { question: "Why does seam welding matter so much on flat roofs?", answer: "Because the seams are the weak point. A properly heat-welded seam is actually stronger than the membrane itself. But if the welder runs too hot, it destroys the stabilizers in the material. Too cold, and the bond fails over time. Our crews calibrate daily, test welds, and document everything \u2014 because this is where most flat roofs fail." }
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Flat Roofing', url: 'https://allphaseconstructionfl.com/flat-roofing' }
+      ]
+    },
+    '/roof-inspection': {
+      faqs: [
+        { question: "What is the difference between a roof inspection and a free roof estimate?", answer: "A roof inspection is a diagnostic evaluation intended to identify conditions, failure mechanisms, and system performance. A free estimate is typically a pricing exercise based on visible symptoms and does not involve comprehensive diagnostic analysis." },
+        { question: "Do I need a roof inspection before repairing a leak?", answer: "Yes. Roof leaks often originate far from the point where damage becomes visible. A professional inspection identifies the actual cause of water intrusion so repairs address the defect rather than the symptom." },
+        { question: "How long does a professional roof inspection take?", answer: "Most roof inspections take between 60 and 90 minutes, depending on roof size, system complexity, and accessibility. Additional time may be required for documentation and analysis." },
+        { question: "Will a roof inspection tell me if I need repair or replacement?", answer: "Yes. A professional roof inspection evaluates material condition, attachment integrity, and remaining service life to determine whether repair is technically sufficient or full replacement is warranted." },
+        { question: "Are roof inspections used for insurance or underwriting purposes?", answer: "In many cases, yes. Inspection documentation may be used to support insurance evaluations, underwriting decisions, or post-storm damage assessments, depending on insurer requirements." },
+        { question: "How often should a roof be professionally inspected?", answer: "Most roofing systems should be inspected every one to two years, and after major storm events, to identify developing issues before they result in failure." }
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Roof Inspection', url: 'https://allphaseconstructionfl.com/roof-inspection' }
+      ]
+    }
+  };
+
+  
+  
   // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
   const servicePages = [
     { path: '/residential-roofing', title: 'Residential Roofing Services' },
@@ -1351,11 +1413,41 @@ function generateStaticFiles() {
 
   servicePages.forEach(({ path: pagePath, title }) => {
     const metadata = getSEOMetadata(pagePath);
+
+        // Build JSON-LD schema array for pages that have FAQ/Breadcrumb data
+    let jsonLdSchema = null;
+    const schemaConfig = SERVICE_PAGE_SCHEMAS[pagePath];
+    if (schemaConfig) {
+      jsonLdSchema = [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: schemaConfig.faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer', text: faq.answer
+            }
+          }))
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: schemaConfig.breadcrumbs.map((crumb, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: crumb.name,
+            item: crumb.url
+          }))
+        }
+      ];
+    }
     const html = createHTMLTemplate(
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      defaultServicePageContent(title)
+      defaultServicePageContent(title),
+      jsonLdSchema
     );
 
     const dir = path.join(publicDir, pagePath.substring(1));
