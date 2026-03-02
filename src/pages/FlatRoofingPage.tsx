@@ -29,6 +29,7 @@ import {
 import SEO from '../components/SEO';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
+import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
 import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function FlatRoofingPage() {
@@ -101,7 +102,20 @@ export default function FlatRoofingPage() {
     }
   ];
 
-  const combinedSchema = [localBusinessSchema, serviceSchema];
+  const faqSchema = generateFAQSchema([
+    { question: faqs[0].q, answer: "With proper installation and materials, TPO and PVC systems last 20-30 years, and modified bitumen 15-20 years. Poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation." },
+    { question: faqs[1].q, answer: "The most common causes are seam failures from improper heat welding, flashing failures around penetrations such as HVAC units, vents, and pipes, and ponding water that breaks down the membrane over time. In Florida, UV exposure and thermal cycling also accelerate wear if the system is not designed for our climate." },
+    { question: faqs[2].q, answer: "When TPO is heat-welded, the seam bonds through adhesion and can be separated with enough force. TPO also requires chalk fillers for fire ratings, which bleed to the surface over time making repairs harder. When PVC is heat-welded, the material molecularly fuses into one continuous piece — the seam becomes the strongest part of the roof. PVC is naturally Class A fire rated with no fillers, so repairs decades later weld just as cleanly as day one." },
+    { question: faqs[5].q, answer: "We design drainage into every system — tapered insulation to create slope toward drains, properly sized primary drains, and secondary overflow scuppers as code requires. Florida Building Code defines positive drainage as water clearing within 48 hours. We engineer for complete drainage, not good enough." },
+    { question: faqs[12].q, answer: "Because the seams are the weak point. A properly heat-welded seam is actually stronger than the membrane itself. But if the welder runs too hot, it destroys the stabilizers in the material. Too cold, and the bond fails over time. Our crews calibrate daily, test welds, and document everything — because this is where most flat roofs fail." }
+  ]);
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+    { name: 'Flat Roofing', url: 'https://allphaseconstructionfl.com/flat-roofing' }
+  ]);
+
+  const combinedSchema = [localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema];
 
   return (
     <>
