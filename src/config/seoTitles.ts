@@ -28,7 +28,7 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roofing Contractor | Broward & Palm Beach County | All Phase Construction USA',
+    title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
     description: 'HVHZ-certified roofing contractor serving Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Dual-licensed (CCC & CGC). Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
@@ -398,7 +398,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Ensure canonical uses normalizedPath and strips trailing slash (except root)
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
-    title: 'Roofing Contractor | Broward & Palm Beach County | All Phase Construction USA',
+    title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
     description: 'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
     canonical: `https://allphaseconstructionfl.com${cleanPath}`
   };
