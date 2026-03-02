@@ -1243,14 +1243,14 @@ function getSEOMetadata(urlPath, cityName = null) {
   if (cityName) {
     if (normalizedPath.includes('/roof-repair/')) {
       return {
-        title: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
+        title: `${cityName} Roof Repair | All Phase USA`,
         description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services. Dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
     if (normalizedPath.includes('/roof-inspection/')) {
       return {
-        title: `Roof Inspection ${cityName} FL | All Phase Construction USA`,
+        title: `${cityName} Roof Inspection | All Phase USA`,
         description: `Professional roof inspection in ${cityName}, FL. Free 21-point assessment with photo documentation. Pre-purchase, insurance, storm damage inspections. Call (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
