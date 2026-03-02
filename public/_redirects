@@ -165,8 +165,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # Missing legacy redirects — added 2026-02-27
 /Blog /blog 301!
 /Blog/ /blog 301!
-/roofing-services /residential-roofing 301!
-/roofing-services/ /residential-roofing 301!
 /roofing-services/roof-inspection /roof-inspection 301!
 /roofing-services/roof-inspection/ /roof-inspection 301!
 /roofing-services/roof-repair/hypoluxo /roof-repair/hypoluxo 301!
@@ -176,10 +174,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /our-location/ /contact 301!
 /media-gallery / 301!
 /media-gallery/ / 301!
-/residential-roofing / 301!
-/residential-roofing/ / 301!
-/projects / 301!
-/projects/ / 301!
 /lunch-learn-roofing-event / 301!
 /lunch-learn-roofing-event/ / 301!
 /roofing-contractor-hollywood-fl /locations/hollywood 301!
