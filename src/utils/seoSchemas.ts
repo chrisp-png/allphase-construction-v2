@@ -67,8 +67,8 @@ export function generateLocalBusinessSchema(pageUrl: string) {
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '250',
+      ratingValue: '4.8',
+      reviewCount: '137',
       bestRating: '5',
       worstRating: '1'
     },
@@ -188,8 +188,8 @@ export function generateCityLocalBusinessSchema(
     },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '250',
+      ratingValue: '4.8',
+      reviewCount: '137',
       bestRating: '5',
       worstRating: '1'
     }

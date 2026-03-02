@@ -22,12 +22,35 @@ export default function HomePage() {
   // Static SEO metadata controlled by NuclearMetadata component
   // Schema.org markup handled by NuclearMetadata and Footer components
 
+  const roofingContractorSchema = {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "All Phase Construction USA",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "137",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "590 Goolsby Blvd",
+      "addressLocality": "Deerfield Beach",
+      "addressRegion": "FL",
+      "postalCode": "33442"
+    },
+    "telephone": "754-227-5605",
+    "url": "https://allphaseconstructionfl.com"
+  };
+
   return (
     <>
       <SEO
         title="Roofing Contractor | Broward & Palm Beach County | All Phase Construction USA"
         description="HVHZ-certified roofing contractor serving Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Dual-licensed (CCC & CGC). Free inspections."
         canonicalPath="/"
+        schema={roofingContractorSchema}
       />
       <HeroRoofing />
 

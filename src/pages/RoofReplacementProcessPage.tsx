@@ -144,12 +144,82 @@ export default function RoofReplacementProcessPage() {
     }
   ];
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Complete Roof Replacement Process",
+    "description": "The 10-step roof replacement process used by All Phase Construction USA serving Broward and Palm Beach County, FL.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Initial Inspection & Assessment",
+        "text": "Comprehensive roof evaluation using thermal imaging, moisture detection, and detailed documentation of all roofing materials, structural deck, flashing systems, and ventilation."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Detailed Estimate & Planning",
+        "text": "Transparent pricing with itemized breakdown of materials, labor, timeline, and HVHZ compliance requirements including engineering fees and permit costs."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Material Selection & Ordering",
+        "text": "Choose from premium manufacturer-certified materials. We order HVHZ-approved products that meet Miami-Dade and Broward County building codes and schedule delivery."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Permitting & Engineering",
+        "text": "We handle all permits, engineering calculations, product approvals (NOA), and municipal submittals required for HVHZ compliance in South Florida."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Site Protection & Preparation",
+        "text": "Comprehensive property protection setup including ground tarps, magnetic sweepers, landscaping shields, and equipment staging before any roofing work begins."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 6,
+        "name": "Tear-Off & Deck Inspection",
+        "text": "Complete removal of existing roofing materials down to structural decking with verification, hidden damage documentation, and repairs as needed."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 7,
+        "name": "Underlayment Installation",
+        "text": "Secondary water barrier installation per HVHZ requirements with enhanced protection in vulnerable areas using self-adhering or synthetic underlayment."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 8,
+        "name": "Flashing & Waterproofing",
+        "text": "Critical metal flashing installation at all transitions, penetrations, valleys, walls, and vulnerable areas using custom-fabricated aluminum or copper materials."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 9,
+        "name": "Final Roofing Installation",
+        "text": "Precision installation of finish roofing materials (shingles, tile, or metal) per manufacturer specifications and HVHZ fastening requirements with enhanced nail patterns."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 10,
+        "name": "Final Inspection & Walkthrough",
+        "text": "Building department inspection for code compliance, certificate of completion issuance, comprehensive project closeout with warranty documentation and maintenance guidelines."
+      }
+    ]
+  };
+
   return (
     <>
       <SEO
         title="10-Step Roof Replacement Process | All Phase Construction USA"
         description="See our 10-step roof replacement process in South Florida. Know exactly what happens from inspection to final cleanup. Call (754) 227-5605."
         canonical="https://allphaseconstructionfl.com/roof-replacement-process"
+        schema={howToSchema}
       />
       <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
