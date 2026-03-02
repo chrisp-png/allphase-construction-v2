@@ -960,7 +960,7 @@ function defaultServicePageContent(pageTitle) {
 function homepageContent() {
   return `
 <section id="seo-static-content">
-  <h1>Roofing Contractor — All Phase Construction USA | Broward & Palm Beach</h1>
+  <h1>Roofing Contractor | Broward & Palm Beach | All Phase USA</h1>
   <p><strong>Hurricane-compliant HVHZ roofing installation for Broward and Palm Beach County. Dual-licensed contractor specializing in wind-code compliant roofing systems.</strong></p>
 
   <h2>Our Edge</h2>
@@ -1303,7 +1303,7 @@ function generateStaticFiles() {
   // Homepage uses explicit metadata (NOT from getSEOMetadata fallback)
   // This ensures title is controlled by index.html + runtime metadata
   const homeHTML = createHTMLTemplate(
-    'Roofing Contractor — All Phase Construction USA | Broward & Palm Beach',
+    'Roofing Contractor | Broward & Palm Beach | All Phase USA',
     'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
     'https://allphaseconstructionfl.com',
     homepageContent()
