@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, CheckCircle2, Shield, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp, FileCheck, ClipboardCheck } from 'lucide-react';
+import { Phone, CheckCircle2, Shield, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp, FileCheck, ClipboardCheck, MapPin } from 'lucide-react';
 import EmbeddedRoofCalculator from '../components/EmbeddedRoofCalculator';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
@@ -189,9 +189,33 @@ export default function DeerfieldBeachPage() {
 
           {/* HERO SECTION */}
           <div className="text-center max-w-4xl mx-auto mb-20">
+                      <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-6">
+            <MapPin className="w-4 h-4 text-[#C5A572]" />
+            <span className="text-[#C5A572] text-sm font-medium">Deerfield Beach, FL — Broward County HQ</span>
+          </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
               Roofing Contractor in Deerfield Beach, FL
             </h1>
+
+                      <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-[#C5A572] text-lg">🛡</span>
+              <span className="text-white font-bold text-base">Dual-Licensed Roofing & General Contractor</span>
+            </div>
+            <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 — Florida Certified Roofing Contractor</div>
+            <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 — Certified General Contractor</div>
+            <div className="text-gray-400 text-xs">HVHZ Certified • Serving South Florida Since 2005 • 2,500+ Projects</div>
+          </div>
+
+          <div className="flex flex-wrap gap-3 mt-6">
+            <a href="/contact" className="inline-flex items-center gap-2 bg-[#C5A572] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#b8935f] transition-colors">Schedule 21-Point Inspection</a>
+            <a href="/contact" className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">Emergency Roof Repair</a>
+          </div>
+
+          <div className="mt-5">
+            <a href="tel:7542275605" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">(754) 227-5605</a>
+            <p className="text-gray-400 text-sm mt-1">24/7 Emergency Service Available • Free Estimates</p>
+          </div>
 
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-8 border border-red-600/20">
               <Shield className="w-4 h-4" />
