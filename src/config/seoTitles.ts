@@ -88,8 +88,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
-    title: 'Roof Replacement Deerfield Beach | Licensed Contractor | All Phase Construction USA',
-    description: 'Roof replacement in Broward & Palm Beach County. Licensed CCC/CGC contractor. HVHZ-compliant installation. Call (754) 227-5605 for free estimate.',
+    title: 'Roof Replacement South Florida | All Phase',
+    description: 'Licensed roof replacement contractor in Broward & Palm Beach County. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement'
   },
   '/roof-maintenance-programs': {
@@ -126,6 +126,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'Roofing Services | Residential & Commercial | All Phase USA',
     description: 'Full-service roofing contractor in Deerfield Beach. Residential and commercial roofing, repair, replacement, and maintenance. Licensed & insured.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
+  },
+    '/services': {
+    title: 'Roofing Services | All Phase Construction USA',
+    description: 'Complete roofing services in Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Repair, replacement & inspections. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/services'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase USA',
