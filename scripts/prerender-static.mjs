@@ -925,6 +925,53 @@ function generateRoofInspectionContent(cityName, citySlug) {
 `.trim();
 }
 
+
+/**
+ * CUSTOM: Roofing Services Page - /roofing-services
+ * Rich prerender content matching RoofingServicesPage.tsx
+ */
+function generateRoofingServicesContent() {
+  return `
+    <section id="seo-static-content">
+      <h1>Roofing Services | Broward &amp; Palm Beach County</h1>
+
+      <p>All Phase Construction USA is a dual-licensed roofing and general contractor serving Broward and Palm Beach Counties since 2005. With over 2,500 completed projects and certifications from Owens Corning, CertainTeed, and Tamko, we specialize in HVHZ-compliant roofing built to South Florida&rsquo;s 146 mph wind load requirements.</p>
+
+      <h2>Residential Roofing Services</h2>
+      <p>Complete roof replacement, repair, and inspection services for South Florida homeowners. Every residential project includes HVHZ-compliant installation, proper permitting, and manufacturer warranty documentation.</p>
+      <ul>
+        <li><strong><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a></strong> &mdash; Concrete and clay tile installation and repair with proper foam adhesive application, verified flashing, and HVHZ wind-code compliance.</li>
+        <li><strong><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a></strong> &mdash; Standing seam and corrugated metal roof systems rated for 150+ mph winds in South Florida.</li>
+        <li><strong><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Shingle Roofing</a></strong> &mdash; Architectural and impact-resistant shingle installation. Owens Corning Platinum and CertainTeed Master certified contractor.</li>
+        <li><strong><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing</a></strong> &mdash; Built-up roofing (BUR), TPO, modified bitumen, and single-ply systems for flat and low-slope residential roofs.</li>
+        <li><strong><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Roof Replacement</a></strong> &mdash; Full reroof with HVHZ-compliant materials, manufacturer-backed warranties, and complete permit documentation.</li>
+        <li><strong><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair</a></strong> &mdash; Emergency and scheduled repairs including leak detection, flashing repair, tile replacement, and storm damage restoration.</li>
+      </ul>
+
+      <h2>Commercial Roofing Services</h2>
+      <p>All Phase Construction USA holds dual licenses &mdash; General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) &mdash; allowing us to handle structural and roofing work under one contract. We serve commercial buildings, multi-family properties, HOA communities, and condo associations throughout Broward and Palm Beach Counties.</p>
+      <ul>
+        <li><strong>Flat Roof Systems</strong> &mdash; TPO, EPDM, PVC, and built-up roofing for commercial properties with proper drainage design and seam welding.</li>
+        <li><strong>Single-Ply Membrane</strong> &mdash; Energy-efficient single-ply roofing systems engineered for South Florida&rsquo;s UV exposure and wind loads.</li>
+        <li><strong>HOA &amp; Condo Associations</strong> &mdash; We work directly with property managers and HOA boards to minimize disruption and keep projects on schedule.</li>
+        <li><strong><a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">Roof Maintenance Programs</a></strong> &mdash; Preventive maintenance plans for commercial properties. Extend your roof&rsquo;s life and catch problems before they become emergencies.</li>
+      </ul>
+
+      <h2>Free Professional Roof Inspections</h2>
+      <p>Our licensed inspectors perform comprehensive 21-point roof assessments covering material condition, structural integrity, flashing details, ventilation, and HVHZ compliance. Every inspection includes detailed photo documentation suitable for insurance submissions and real estate transactions.</p>
+      <ul>
+        <li><strong>HVHZ Compliance Checks</strong> &mdash; Verify your roof meets High Velocity Hurricane Zone requirements for 146+ mph wind loads.</li>
+        <li><strong>Insurance Documentation</strong> &mdash; Detailed reports with photos, moisture readings, and condition assessments that meet insurance adjuster requirements.</li>
+        <li><strong>Pre-Purchase Evaluations</strong> &mdash; Accurate remaining lifespan estimates and repair cost projections for real estate transactions.</li>
+        <li><strong>Storm Damage Assessment</strong> &mdash; Post-storm inspections identifying wind and hail damage including subtle underlayment compromise.</li>
+      </ul>
+      <p><strong><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Schedule a free roof inspection</a></strong> or call <strong>(754) 227-5605</strong> to speak with a licensed roofing specialist.</p>
+
+      ${companyAuthorityFooter()}
+    </section>
+  `.trim();
+}
+
 /**
  * Generate default service page content (residential, commercial, metal, tile, etc.)
  */
@@ -1446,7 +1493,7 @@ function generateStaticFiles() {
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      defaultServicePageContent(title),
+      pagePath === '/roofing-services' ? generateRoofingServicesContent() : defaultServicePageContent(title),
       jsonLdSchema
     );
 
