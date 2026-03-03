@@ -1426,7 +1426,19 @@ function generateStaticFiles() {
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
         { name: 'Roof Inspection', url: 'https://allphaseconstructionfl.com/roof-inspection' }
       ]
-    }
+    },
+  '/roofing-services': {
+    faqs: [
+      { question: "What roofing services does All Phase Construction USA offer?", answer: "All Phase Construction USA offers tile, metal, shingle, flat, and commercial roofing, plus roof replacement, repair, and inspection services throughout Broward and Palm Beach Counties." },
+      { question: "Is All Phase Construction USA licensed for commercial roofing?", answer: "Yes. All Phase holds dual licenses \u2014 General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) \u2014 allowing us to handle both structural and roofing work under one contract." },
+      { question: "Do you offer free roof inspections?", answer: "Yes. All Phase Construction USA provides free roof inspections for homeowners and commercial property owners throughout Broward and Palm Beach Counties. Call (754) 227-5605 to schedule." },
+      { question: "Are your roofs built to South Florida hurricane codes?", answer: "Yes. Every roof we install meets High-Velocity Hurricane Zone (HVHZ) requirements and is rated for 146 mph wind loads as required by Broward and Palm Beach County building codes." }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+      { name: 'Roofing Services', url: 'https://allphaseconstructionfl.com/roofing-services' }
+    ]
+  }
   };
 
   
