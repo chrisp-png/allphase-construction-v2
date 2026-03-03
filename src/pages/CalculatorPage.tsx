@@ -20,15 +20,15 @@ export default function CalculatorPage() {
   };
 
   useEffect(() => {
-    document.title = 'Roof Cost Calculator | Free Estimate Tool South Florida';
+    document.title = 'Roof Cost Calculator | South Florida | All Phase';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Get instant roof replacement cost estimates for Broward & Palm Beach homes. Free calculator, no email required. Licensed contractor pricing. Try now.');
+      metaDescription.setAttribute('content', 'Estimate roof replacement costs in Broward & Palm Beach County. Instant estimates by roof size, material, and pitch. Free, no obligation. Call (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Get instant roof replacement cost estimates for Broward & Palm Beach homes. Free calculator, no email required. Licensed contractor pricing. Try now.';
+      meta.content = 'Estimate roof replacement costs in Broward & Palm Beach County. Instant estimates by roof size, material, and pitch. Free, no obligation. Call (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
