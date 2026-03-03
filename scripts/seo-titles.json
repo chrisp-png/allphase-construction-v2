@@ -39,6 +39,16 @@
       "title": "Roofing Blog | Expert Tips from All Phase Construction USA",
       "description": "Roofing tips, cost guides, and hurricane prep for South Florida homeowners. Written by a dual-licensed contractor with 20+ years experience.",
       "canonical": "https://allphaseconstructionfl.com/blog"
+          },
+          "/services": {
+      "title": "Roofing Services | All Phase Construction USA",
+      "description": "Complete roofing services in Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Repair, replacement & inspections. Call (754) 227-5605.",
+      "canonical": "https://allphaseconstructionfl.com/services"
+    },
+    "/roof-replacement": {
+      "title": "Roof Replacement South Florida | All Phase",
+      "description": "Licensed roof replacement contractor in Broward & Palm Beach County. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat. Call (754) 227-5605.",
+      "canonical": "https://allphaseconstructionfl.com/roof-replacement"
     },
     "/reviews": {
       "title": "Customer Reviews | All Phase USA",
