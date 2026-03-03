@@ -11,7 +11,7 @@ import ServiceAreas from '../components/ServiceAreas';
 import CommonServiceAreasTable from '../components/CommonServiceAreasTable';
 import ServiceAreasCTA from '../components/ServiceAreasCTA';
 import HomeownerResources from '../components/HomeownerResources';
-import MicroFAQ from '../components/MicroFAQ';
+import MicroFAQ from '../components/MicroFAQ';h
 import FAQ from '../components/FAQ';
 import ChamberBadge from '../components/ChamberBadge';
 import ChamberBadges from '../components/ChamberBadges';
@@ -48,7 +48,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Roofing Contractor | Broward & Palm Beach County | All Phase Construction USA"
-        description="HVHZ-certified roofing contractor serving Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Dual-licensed (CCC & CGC). Free inspections."
+        description="HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605."
         canonicalPath="/"
         schema={roofingContractorSchema}
       />
