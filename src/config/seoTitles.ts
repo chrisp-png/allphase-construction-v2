@@ -43,14 +43,14 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'Roof Cost Calculator | All Phase USA',
-    description: 'Calculate roof replacement costs in South Florida. Get instant estimates based on your roof size, material, and pitch. Free quotes available.',
+    title: 'Roof Cost Calculator | South Florida | All Phase',
+    description: 'Estimate roof replacement costs in Broward & Palm Beach County. Instant estimates by roof size, material, and pitch. Free, no obligation. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
         title: 'Roof Pricing Guide | All Phase USA',
     description: 'Calculate roof replacement costs in South Florida. Get instant estimates based on your roof size, material, and pitch. Free quotes available.',
-    canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
+    canonical: 'https://allphaseconstructionfl.com/pricing-guide'
   },
   '/blog': {
     title: 'Roofing Blog | Expert Tips from All Phase Construction USA',
