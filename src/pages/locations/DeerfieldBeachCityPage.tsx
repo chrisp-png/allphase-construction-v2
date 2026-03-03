@@ -122,7 +122,7 @@ export default function DeerfieldBeachCityPage() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <meta name="robots" content={seo.robots} />
-        <link rel="canonical" href={seo.canonical} />
+        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/deerfield-beach" />
 
         {/* Open Graph */}
         <meta property="og:title" content={seo.ogTitle} />
@@ -147,9 +147,9 @@ export default function DeerfieldBeachCityPage() {
           <div className="grid lg:grid-cols-2 gap-12 mb-12">
             {/* Left Column - Hero Content */}
             <div className="flex flex-col justify-center">
-              <div className="inline-flex items-center gap-2 bg-gray-700/50 text-gray-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 w-fit">
+              <div className="inline-flex items-center gap-2 bg-gray-700/50 text-[#C5A572] px-4 py-2 rounded-full text-sm font-semibold mb-6 w-fit">
                 <MapPin className="w-4 h-4" />
-                Primary Location
+                Deerfield Beach, FL — Broward County HQ
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -159,6 +159,29 @@ export default function DeerfieldBeachCityPage() {
               <p className="text-xl text-gray-400 mb-8">
                 We diagnose before we quote. Every project starts with a free inspection-first assessment — no pressure, no obligation.
               </p>
+
+                            {/* Credential Box */}
+              <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-[#C5A572] text-lg">🛡</span>
+                  <span className="text-white font-bold text-base">Dual-Licensed Roofing & General Contractor</span>
+                </div>
+                <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 — Florida Certified Roofing Contractor</div>
+                <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 — Certified General Contractor</div>
+                <div className="text-gray-400 text-xs">HVHZ Certified • Serving South Florida Since 2005 • 2,500+ Projects</div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-3 mt-6">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-[#C5A572] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#b8935f] transition-colors">Schedule 21-Point Inspection</a>
+                <a href="/contact" className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">Emergency Roof Repair</a>
+              </div>
+
+              {/* Gold Phone Number */}
+              <div className="mt-5">
+                <a href="tel:7542275605" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">(754) 227-5605</a>
+                <p className="text-gray-400 text-sm mt-1">24/7 Emergency Service Available • Free Estimates</p>
+              </div>
 
               {/* Proof Row */}
               <div className="flex flex-wrap items-center gap-6 text-gray-300 text-sm md:text-base mb-8">
