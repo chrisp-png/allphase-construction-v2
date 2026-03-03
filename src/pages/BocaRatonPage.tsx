@@ -250,6 +250,10 @@ export default function BocaRatonPage() {
                     <span className="text-lg">Specialized crews by system</span>
                   </li>
                 </ul>
+              <div className="flex items-center gap-3 mt-3 pt-3 border-t border-white/10">
+                <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified" width="40" height="40" loading="lazy" decoding="async" />
+                <span className="text-[#C5A572] text-xs font-medium">TRI Alliance Florida High Wind Certified</span>
+              </div>
               </div>
 
               <p className="text-zinc-300 leading-relaxed mb-6 text-lg">

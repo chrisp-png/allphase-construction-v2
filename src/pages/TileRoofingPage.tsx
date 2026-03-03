@@ -954,6 +954,14 @@ export default function TileRoofingPage() {
             Why Homeowners Trust All Phase for Tile Roofing
           </h2>
 
+            <div className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl p-5 my-6">
+              <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified" width="80" height="80" loading="lazy" decoding="async" />
+              <div>
+                <h3 className="text-white font-bold text-base mb-1">TRI Alliance Florida High Wind Certified</h3>
+                <p className="text-gray-400 text-sm">All Phase Construction USA holds the TRI Alliance Florida High Wind Certification — the tile roofing industry's highest credential for hurricane-zone installation. Certified through February 2028, our team installs concrete and clay tile to the code-approved standards of the Tile Roofing Industry Alliance, founded in 1971.</p>
+              </div>
+            </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6">
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
