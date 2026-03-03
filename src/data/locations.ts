@@ -33,7 +33,8 @@ export const locations: Location[] = [
     slug: "deerfield-beach",
     city: "Deerfield Beach",
     state: "FL",
-    descriptionOverride: "Licensed roofing contractor in Deerfield Beach, FL. HVHZ-compliant. Tile, metal, shingle & flat roofing. Dual-licensed (CCC & CGC). Free inspections."
+        titleOverride: "Roofing Contractor Deerfield Beach FL | All Phase",
+    descriptionOverride: "Licensed roofing contractor in Deerfield Beach, FL since 2005. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605."
   },
 
   // ALL OTHER CITIES (use template-based SEO)
@@ -59,7 +60,7 @@ export const locations: Location[] = [
     slug: "fort-lauderdale",
     city: "Fort Lauderdale",
     state: "FL",
-    descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-compliant. Tile, metal, shingle & flat roofing. Dual-licensed (CCC & CGC). Free inspections."
+    descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605."
   },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
   { slug: "gulf-stream", city: "Gulf Stream", state: "FL" },
