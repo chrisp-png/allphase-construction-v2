@@ -123,8 +123,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/roofing-services': {
-    title: 'Roofing Services | Residential & Commercial | All Phase USA',
-    description: 'Full-service roofing contractor in Deerfield Beach. Residential and commercial roofing, repair, replacement, and maintenance. Licensed & insured.',
+    title: 'Roofing Services | All Phase Construction USA',
+    description: 'Tile, metal, shingle, flat & commercial roofing in Broward & Palm Beach County. HVHZ-certified, dual-licensed. Free inspections. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
     '/services': {
