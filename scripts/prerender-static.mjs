@@ -1304,7 +1304,7 @@ function generateStaticFiles() {
   // This ensures title is controlled by index.html + runtime metadata
   const homeHTML = createHTMLTemplate(
     'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    'All Phase Construction USA provides hurricane-compliant roofing in Broward and Palm Beach County. Dual-licensed contractor specializing in HVHZ wind-code installation and manufacturer-spec roofing systems.',
+        'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent()
   );
