@@ -26,7 +26,7 @@ import {
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
-import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
+import { generateBreadcrumbSchema } from '../utils/enhancedSchema';
 import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function MetalRoofingPage() {
@@ -44,20 +44,12 @@ export default function MetalRoofingPage() {
     pageUrl
   );
 
-  const faqSchema = generateFAQSchema([
-    { question: "What's the difference between standing seam and exposed fastener metal roofing?", answer: "Standing seam has raised seams where panels interlock, with all fasteners hidden underneath. Exposed fastener roofs (like 5V crimp) have screws driven directly through the panel surface. Standing seam is more weather-tight and requires less maintenance, but costs more. Exposed fastener systems are cheaper but the rubber washers eventually fail, creating potential leak points." },
-    { question: "Is mechanically seamed better than snap-lock for hurricanes?", answer: "Yes. Mechanically seamed panels are physically crimped together — they cannot be pulled apart by wind. Snap-lock panels can unsnap under extreme uplift pressure. For South Florida's HVHZ, we strongly recommend mechanically seamed standing seam." },
-    { question: "What does clip spacing mean and why does it matter?", answer: "Clips are what attach standing seam panels to your roof deck. Closer spacing (like 18 or 12 inches on-center) means more attachment points and higher wind resistance. Wider spacing (36 inches) reduces wind resistance significantly. Many contractors space clips too far apart to save time and materials — which can lead to roof failure in a storm." },
-    { question: "What gauge or thickness metal should I choose?", answer: "For steel standing seam, 24-gauge is the industry standard for quality residential and commercial applications. For aluminum, .032 inch thickness is standard residential, with .040 inch used for commercial applications. Thicker is better. Avoid 29-gauge steel for primary roofing applications — it is too thin for Florida's conditions." },
-    { question: "How long does a metal roof last?", answer: "A quality standing seam metal roof can last 40-70 years with minimal maintenance. Exposed fastener roofs typically last 20-30 years before significant maintenance is needed. Lifespan depends heavily on material quality, gauge, and installation quality." }
-  ]);
-
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
     { name: 'Metal Roofing', url: 'https://allphaseconstructionfl.com/metal-roofing' }
   ]);
 
-  const combinedSchema = [localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema];
+  const combinedSchema = [localBusinessSchema, serviceSchema, breadcrumbSchema];
 
   return (
     <>
