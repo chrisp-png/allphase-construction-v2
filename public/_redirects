@@ -235,3 +235,12 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /blog/how-to-file-a-roof-insurance-claim-after-storm-damage /blog 301!
 /blog/sunnova-sunsafe-benefits/ /blog 301!
 /blog/why-permitting-matters-in-roofing-and-construction-projects /blog 301!
+
+# /roofing-services/roof-repair wildcard catch-all (old URL structure)
+/roofing-services/roof-repair/:city  /roof-repair/:city  301!
+/roofing-services/roof-repair  /roof-repair  301!
+
+# Trailing slash removal - catch-all wildcard
+/*/  /:splat  301
+
+/* /index.html 200
