@@ -386,10 +386,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${cityName} Roof Repair | All Phase USA`,
-      description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services from All Phase Construction USA. Licensed & insured. Call today.`,
+            description: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
       ogTitle: `${cityName} Roof Repair | All Phase USA`,
-      ogDescription: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services from All Phase Construction USA.`,
+            ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
   }
@@ -400,10 +400,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${cityName} Roof Inspection | All Phase USA`,
-      description: `Professional roof inspection in ${cityName}, FL. Catch hidden damage before it becomes an emergency. Licensed inspectors, same-week scheduling. All Phase Construction USA.`,
+            description: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
       ogTitle: `${cityName} Roof Inspection | All Phase USA`,
-      ogDescription: `Professional roof inspection in ${cityName}, FL. Licensed inspectors, same-week scheduling. All Phase Construction USA.`,
+            ogDescription: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
     };
   }
