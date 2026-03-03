@@ -6,6 +6,9 @@ https://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spl
 http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
 
+
+# Sitemap consolidation — redirect legacy sitemap_index.xml to sitemap.xml
+/sitemap_index.xml    /sitemap.xml    301!
 # ======================================================================
 # SUBDOMAIN REDIRECTS
 # Legacy subdomains -> main site canonical URLs.
