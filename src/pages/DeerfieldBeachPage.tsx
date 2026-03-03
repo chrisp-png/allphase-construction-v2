@@ -9,15 +9,15 @@ export default function DeerfieldBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Deerfield Beach Roofing Contractor | Dual-Licensed | All Phase Construction USA';
+    document.title = 'Roofing Contractor Deerfield Beach FL | All Phase';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Deerfield Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Licensed roofing contractor in Deerfield Beach, FL since 2005. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Deerfield Beach FL roofing contractor. HVHZ certified. Tile, metal, shingle systems. Free inspections. (754) 227-5605';
+      meta.content = 'Licensed roofing contractor in Deerfield Beach, FL since 2005. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605.';
       document.head.appendChild(meta);
     }
 
