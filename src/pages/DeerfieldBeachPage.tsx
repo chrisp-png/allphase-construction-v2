@@ -11,6 +11,11 @@ export default function DeerfieldBeachPage() {
   useEffect(() => {
     document.title = 'Roofing Contractor Deerfield Beach FL | All Phase';
 
+        // Canonical tag
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) { canonical = document.createElement('link'); canonical.setAttribute('rel', 'canonical'); document.head.appendChild(canonical); }
+    canonical.setAttribute('href', 'https://allphaseconstructionfl.com/locations/deerfield-beach');
+
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Licensed roofing contractor in Deerfield Beach, FL since 2005. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605.');
@@ -185,7 +190,7 @@ export default function DeerfieldBeachPage() {
           {/* HERO SECTION */}
           <div className="text-center max-w-4xl mx-auto mb-20">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Roofing Contractor in Deerfield Beach, FL — Roof Repair, Replacement & Inspection-First Diagnostics
+              Roofing Contractor in Deerfield Beach, FL
             </h1>
 
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-8 border border-red-600/20">
