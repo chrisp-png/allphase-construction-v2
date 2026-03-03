@@ -149,7 +149,7 @@ export default function RoofingServicesPage() {
               Roofing Services — Residential & Commercial Solutions for South Florida
             </h1>
             <p className="text-xl text-zinc-300 mb-8 max-w-4xl mx-auto">
-              Dual-licensed roofing and general contractor serving Broward and Palm Beach Counties. From tile and metal to flat roofs and full replacements — every project is built to HVHZ wind codes with manufacturer-spec installation.
+              All Phase Construction USA is a dual-licensed roofing and general contractor serving Broward and Palm Beach Counties since 2005. With over 2,500 completed projects and certifications from Owens Corning, CertainTeed, and Tamko, we specialize in HVHZ-compliant roofing built to South Florida's 146 mph wind load requirements. From single-family homes to commercial properties and HOA communities — every project is permitted, inspected, and backed by manufacturer warranty documentation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -209,7 +209,7 @@ export default function RoofingServicesPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Commercial Roofing</h2>
               </div>
               <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-                Roofing solutions for commercial buildings, multi-family properties, HOA communities, and condo associations throughout Broward and Palm Beach Counties.
+                All Phase Construction USA holds dual licenses — General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) — allowing us to handle structural and roofing work under one contract. We serve commercial buildings, multi-family properties, HOA communities, and condo associations throughout Broward and Palm Beach Counties. Our team works directly with property managers and HOA boards to minimize disruption and keep projects on schedule.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -311,7 +311,7 @@ export default function RoofingServicesPage() {
                 Areas We Serve
               </h2>
               <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-                Licensed and insured across Broward and Palm Beach Counties. We serve residential and commercial properties in these communities:
+                Licensed and insured across Broward and Palm Beach Counties, FL. We serve residential and commercial properties in every municipality we work in — pulling all permits, meeting local wind codes, and ensuring full code compliance on every project. Want to see how All Phase stacks up? Read our independent review of the <Link to="/locations/deerfield-beach/best-roofers-deerfield-beach/" className="text-red-400 hover:text-red-300 underline">top-rated roofers in Deerfield Beach</Link>.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
