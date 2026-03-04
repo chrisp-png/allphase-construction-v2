@@ -188,17 +188,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
   },
   '/roof-repair/fort-lauderdale': {
-    title: 'Fort Lauderdale Roof Repair | HVHZ-Certified | All Phase Construction USA',
+    title: 'Fort Lauderdale Roof Repair | All Phase USA',
     description: 'Expert roof repair in Fort Lauderdale, FL. HVHZ-certified, fast response, licensed & insured. Tile, shingle, metal & flat roof repairs. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
   },
     '/roof-repair/deerfield-beach': {
-    title: 'Deerfield Beach Roof Repair | Licensed Contractor | All Phase Construction USA',
+    title: 'Deerfield Beach Roof Repair | All Phase USA',
     description: 'Licensed roof repair in Deerfield Beach, FL. Inspection-first diagnostics, HVHZ-compliant repairs, HOA documentation, and insurance coordination. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/deerfield-beach'
   },
     '/roof-repair/pompano-beach': {
-    title: 'Pompano Beach Roof Repair | Licensed Contractor | All Phase Construction USA',
+    title: 'Pompano Beach Roof Repair | All Phase USA',
     description: 'Licensed roof repair in Pompano Beach, FL. Inspection-first diagnostics, HVHZ-compliant repairs, HOA documentation, and insurance coordination. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
   },
