@@ -420,6 +420,100 @@ export default function BestRoofersFortLauderdalePage() {
             </ul>
           </section>
 
+          {/* Storm Chasers Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Storm Chasers vs. Established Roofers in Fort Lauderdale — Know the Difference</h2>
+            <div className="space-y-4 text-lg text-slate-700">
+              <p>
+                After every named storm, Fort Lauderdale gets an influx of out-of-state roofing crews. They typically work door-to-door in affected neighborhoods, offer to perform "free inspections," and push insurance claims. Some are legitimate. Many are not.
+              </p>
+              <p>
+                Warning signs of a storm chaser operation: out-of-state license plates and no Florida address, pressure to sign an Assignment of Benefits (AOB) before you have had your roof independently assessed, inability to provide a Florida roofing contractor license number, no local permit history, and requests for large upfront deposits before any work begins.
+              </p>
+              <p>
+                Florida law allows homeowners to assign their insurance benefits to a contractor, but doing so gives the contractor authority to negotiate with your insurance company directly and removes your control over the claims process. This practice has a well-documented history of abuse in Broward County, and your insurer may treat it as a red flag.
+              </p>
+              <p>
+                If you need to file a storm claim, contact your insurance company first. Have an independent inspection before signing any documentation with a roofing contractor. Use a contractor you can verify through DBPR and the City of Fort Lauderdale's permit portal.
+              </p>
+            </div>
+          </section>
+
+          {/* Professional Job Process Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">What a Professional Roofing Job Looks Like in Fort Lauderdale From Start to Finish</h2>
+            <div className="space-y-4 text-lg text-slate-700">
+              <p>
+                A legitimate roofing replacement or significant repair project in Fort Lauderdale follows a predictable sequence. Understanding this helps you evaluate whether a contractor is running a proper operation.
+              </p>
+              <p>
+                <strong>Inspection and scope definition:</strong> The process starts with a roof inspection — a physical assessment of the existing system to determine condition, identify failure points, and determine whether repair or replacement is appropriate. A contractor who quotes a replacement without getting on the roof has not done an inspection.
+              </p>
+              <p>
+                <strong>Permit application:</strong> The contractor applies for a permit with the City of Fort Lauderdale Building Services Department before any work begins. The permit application identifies the contractor, the property, the scope of work, and the materials to be used. If a contractor starts work without a permit, stop the project.
+              </p>
+              <p>
+                <strong>Material delivery and setup:</strong> Materials are delivered to the site, typically the day before or the morning of the installation. The crew sets up tarps and protective coverings over landscaping, HVAC equipment, and pool areas before tear-off begins.
+              </p>
+              <p>
+                <strong>Tear-off and decking inspection:</strong> The existing roof system is removed and the decking is inspected. Damaged or rotted decking sections must be replaced before the new system is installed. Any contractor who refuses to discuss decking replacement until after the job is underway should be approached with caution.
+              </p>
+              <p>
+                <strong>Installation to code:</strong> The new system is installed to HVHZ standards — specific fastening patterns, underlayment requirements, flashing details, and ridge and hip finishing. In Fort Lauderdale, this means the installation must meet the Florida Building Code requirements for Broward County's wind exposure category.
+              </p>
+              <p>
+                <strong>Inspection:</strong> The City of Fort Lauderdale schedules a building department inspection of the completed work. The inspector verifies that the installation meets code. Final inspection approval closes the permit.
+              </p>
+              <p>
+                <strong>Wind mitigation report:</strong> After inspection approval, the contractor or a licensed inspector produces a wind mitigation report documenting the roof's construction features. This report can be submitted to your homeowner's insurance company for premium review — a properly installed HVHZ-compliant roof can produce meaningful insurance savings.
+              </p>
+            </div>
+          </section>
+
+          {/* Understanding Pricing Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding Roofing Pricing in Fort Lauderdale — Cheap, Fair, and Overpriced</h2>
+            <div className="space-y-4 text-lg text-slate-700">
+              <p>
+                Fort Lauderdale roofing prices fall into roughly three categories, and the lowest bid rarely represents the best value.
+              </p>
+              <p>
+                Cheap bids typically involve unlicensed labor, inferior materials, no permit, or some combination of all three. In Fort Lauderdale, an unpermitted roof creates liability problems when you sell the property, file an insurance claim, or face a code enforcement inquiry. A roof that fails prematurely also costs more over its life than a proper installation at fair market price.
+              </p>
+              <p>
+                Fair market pricing for a complete tile roof replacement on a typical Fort Lauderdale home runs roughly $18,000 to $30,000 depending on size, pitch, and material specification. Shingle replacements run $12,000 to $22,000. Metal roofing runs $20,000 to $40,000 for residential systems. These ranges reflect HVHZ-compliant installation with permits, decking inspection, and manufacturer-warranty-eligible materials.
+              </p>
+              <p>
+                Overpriced bids are common in the post-storm market and in neighborhoods where contractors assume homeowners are running insurance claims and therefore less price-sensitive. Get at least three written bids before committing to any project over $5,000.
+              </p>
+            </div>
+          </section>
+
+          {/* Roofing Costs Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Roofing Costs in Fort Lauderdale — What Should You Expect to Pay?</h2>
+            <div className="space-y-4 text-lg text-slate-700">
+              <p>
+                Roof repair costs in Fort Lauderdale vary significantly by scope and system type. Minor repairs — sealing a single penetration, replacing a handful of tiles, re-bedding ridge caps — typically run $300 to $1,200. More extensive repairs involving underlayment damage, flashing replacement, or structural issues can run $2,000 to $8,000.
+              </p>
+              <p>
+                Full roof replacement costs depend primarily on roof type, size, and material specification:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Asphalt shingle replacement:</strong> $12,000–$22,000 for a typical 2,000–2,500 SF Fort Lauderdale home</li>
+                <li><strong>Concrete tile replacement:</strong> $18,000–$32,000 depending on tile weight, profile, and existing structural condition</li>
+                <li><strong>Metal roofing (standing seam or metal tile):</strong> $22,000–$45,000 for residential systems</li>
+                <li><strong>Flat roofing (modified bitumen or TPO):</strong> $8,000–$18,000 for typical residential flat sections</li>
+              </ul>
+              <p>
+                These figures reflect licensed, permitted, HVHZ-compliant installation with inspection. They do not include decking replacement, which adds $2–$5 per square foot for damaged sections discovered during tear-off.
+              </p>
+              <p>
+                Insurance-covered replacements typically follow the same cost structure, with the insurance payout covering actual cash value (ACV) or replacement cost value (RCV) depending on your policy. Understanding the difference between ACV and RCV before you file a claim can significantly affect your out-of-pocket costs.
+              </p>
+            </div>
+          </section>
+
           {/* FAQ Section */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — Frequently Asked Questions About Roofing in Fort Lauderdale</h2>
