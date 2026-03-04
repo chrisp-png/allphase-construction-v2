@@ -29,7 +29,7 @@ export default function ResidentialRoofingPage() {
   }, []);
 
   const pageTitle = 'Residential Roofing South Florida | All Phase Construction';
-  const pageDescription = 'Dual-licensed residential roofing contractor serving Broward & Palm Beach Counties. Building envelope approach extends roof life, lowers energy bills & can reduce insurance premiums. Free inspection.';
+  const pageDescription = 'Expert residential roofing in Broward & Palm Beach Counties. Tile, shingle, metal, and flat roofing for homes. Licensed, insured, HVHZ certified.';
 
   // Self-referencing canonical using current URL
   const canonicalUrl = typeof window !== 'undefined'
