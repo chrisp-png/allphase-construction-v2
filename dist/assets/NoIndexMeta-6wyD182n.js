@@ -1,1 +1,0 @@
-import{r as t}from"./react-vendor-CTc1fkrV.js";function o(){return t.useEffect(()=>{const e=document.createElement("meta");return e.name="robots",e.content="noindex, nofollow",document.head.appendChild(e),()=>{document.head.removeChild(e)}},[]),null}export{o as N};
