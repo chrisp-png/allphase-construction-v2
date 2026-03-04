@@ -35,7 +35,7 @@ export default function MetalRoofingPage() {
   }, []);
 
   const pageUrl = 'https://allphaseconstructionfl.com/metal-roofing';
-  const pageDescription = 'Standing seam metal roofing in South Florida. 24-gauge, HVHZ compliant. Free consultation. Call (754) 227-5605.';
+  const pageDescription = 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener systems. HOA-approved options. HVHZ-certified. Free estimate. (754) 227-5605.';
 
   const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
   const serviceSchema = generateServiceSchema(
@@ -54,7 +54,7 @@ export default function MetalRoofingPage() {
   return (
     <>
       <SEO
-        title="Metal Roofing Broward & Palm Beach | Free Inspection | All Phase"
+        title="Metal Roofing Deerfield Beach & South Florida | All Phase"
         description={pageDescription}
         canonical={pageUrl}
         schema={combinedSchema}
