@@ -6,6 +6,8 @@ on:
 jobs:
   build-and-prerender:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -14,22 +16,22 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: npm install
+        run: npm install
 
       - name: Install Puppeteer browser
         run: npx puppeteer browsers install chrome
 
-      - name: Run vite build
+      - name: Build with Vite
         run: npx vite build
 
-      - name: Run prerender
+      - name: Run prerender script
         run: node scripts/prerender-static.mjs
 
-      - name: Commit and push prerendered files
+      - name: Commit and push dist
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/ public/ -f
-          git diff --cached --quiet || git commit -m "chore: regenerate prerendered static HTML"
-          git push
+          git add dist/
+          git diff --cached --quiet || git commit -m "chore: rebuild prerendered HTML with updated nav, footer, and SEO title changes"
+          git push origin main
