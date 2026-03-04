@@ -9,7 +9,7 @@ import {
   Award,
   FileText,
   AlertTriangle,
-  Wrench,
+  Wrench,Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener. HOA-approved. HVHZ-certified. Free estimate.
   Camera,
   Building2,
   ClipboardCheck,
@@ -35,7 +35,7 @@ export default function MetalRoofingPage() {
   }, []);
 
   const pageUrl = 'https://allphaseconstructionfl.com/metal-roofing';
-  const pageDescription = 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener systems. HOA-approved options. HVHZ-certified. Free estimate. (754) 227-5605.';
+  const pageDescription = 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener. HOA-approved. HVHZ-certified. Free estimate.';
 
   const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
   const serviceSchema = generateServiceSchema(
