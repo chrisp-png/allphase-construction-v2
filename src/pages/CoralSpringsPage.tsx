@@ -9,15 +9,15 @@ export default function CoralSpringsPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Coral Springs Roofing Contractor | Local Chamber Member | All Phase Construction USA';
+    document.title = 'Coral Springs Roofing Contractor | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Coral Springs roofing contractor and Coral Springs Coconut Creek Regional Chamber member since 2006. Dual-licensed (CCC-1331464, CGC-1526236). Post-Wilma experience. HVHZ compliant. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Coral Springs roofing contractor and Coral Springs Coconut Creek Regional Chamber member since 2006. Dual-licensed (CCC-1331464, CGC-1526236). Post-Wilma experience. HVHZ compliant. (754) 227-5605';
+      meta.content = 'Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.';
       document.head.appendChild(meta);
     }
 
