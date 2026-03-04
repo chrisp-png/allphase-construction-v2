@@ -29,17 +29,17 @@ export interface SEOMetadata {
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    description: 'HVHZ-certified roofing contractor serving Broward & Palm Beach County. Tile, metal, shingle, flat & commercial roofing. Dual-licensed (CCC & CGC). Free inspections.',
+    description: 'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
     title: 'Contact Our Roofing Team | All Phase USA',
-    description: 'Contact All Phase Construction USA for roofing services in Broward & Palm Beach Counties. Call (754) 227-5605 or request a free estimate online.',
+    description: 'Call (754) 227-5605 or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.',
     canonical: 'https://allphaseconstructionfl.com/contact'
   },
   '/about-us': {
     title: 'About All Phase Construction | Expert Roofing Specialist',
-    description: 'Dual-licensed roofing contractor serving South Florida since 2005. State Certified Roofing Contractor (CCC1331464) and General Contractor (CGC1526236).',
+    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 138 reviews.',
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
