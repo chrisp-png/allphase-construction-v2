@@ -56,8 +56,8 @@ export default function ShingleRoofingPage() {
   return (
     <>
       <SEO
-        title="Shingle Roofing Broward & Palm Beach | Free Inspection | All Phase"
-        description={pageDescription}
+        title="Shingle Roofing Deerfield Beach & South Florida | All Phase"
+        description="Licensed shingle roof installation & replacement in Broward & Palm Beach County. Architectural, 3-tab & impact-resistant options. HVHZ-compliant. Free estimate. (754) 227-5605."
         canonical={pageUrl}
         schema={combinedSchema}
       />
