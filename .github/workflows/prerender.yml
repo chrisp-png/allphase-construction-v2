@@ -1,0 +1,35 @@
+name: Build and Prerender
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-prerender:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Puppeteer browser
+        run: npx puppeteer browsers install chrome
+
+      - name: Run vite build
+        run: npx vite build
+
+      - name: Run prerender
+        run: node scripts/prerender-static.mjs
+
+      - name: Commit and push prerendered files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/ public/ -f
+          git diff --cached --quiet || git commit -m "chore: regenerate prerendered static HTML"
+          git push
