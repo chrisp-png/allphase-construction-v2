@@ -242,6 +242,11 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
+                            <li>
+                <Link to="/roofing-services" className="hover:text-red-600 transition-colors">
+                  All Services
+                </Link>
+              </li>
               <li>
                 <Link to="/residential-roofing/" className="hover:text-red-600 transition-colors">
                   Residential Roofing
@@ -277,9 +282,14 @@ export default function Footer() {
                   Roof Repair
                 </Link>
               </li>
+                            <li>
+                <Link to="/roof-inspection" className="hover:text-red-600 transition-colors">
+                  Roof Inspection
+                </Link>
+              </li>
               <li>
                 <Link to="/roof-replacement-process/" className="hover:text-red-600 transition-colors">
-                  Roof Replacement Process
+                  Replacement Process
                 </Link>
               </li>
             </ul>
@@ -295,7 +305,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/projects/" className="hover:text-red-600 transition-colors">
-                  Projects
+                  Our Projects
                 </Link>
               </li>
               <li>
@@ -309,8 +319,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/easy-payments/" className="hover:text-red-600 transition-colors">
-                  Financing
+                                <Link to="/frequently-asked-questions/" className="hover:text-red-600 transition-colors">
+                  FAQ
                 </Link>
               </li>
               <li>
