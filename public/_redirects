@@ -26,6 +26,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 # These catch legacy URLs that no longer have a route in the SPA.
 # All targets use NO trailing slash (matches canonical policy).
 # ======================================================================
+/roof-repair/Delray-Beach  /roof-repair/delray-beach  301!
 /financing https://allphaseconstructionfl.com/easy-payments 301!
 /financing/ https://allphaseconstructionfl.com/easy-payments 301!
 /about https://allphaseconstructionfl.com/about-us 301!
