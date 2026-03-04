@@ -49,22 +49,22 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/pricing-guide': {
         title: 'Roof Pricing Guide | All Phase USA',
-    description: 'Calculate roof replacement costs in South Florida. Get instant estimates based on your roof size, material, and pitch. Free quotes available.',
+    description: 'South Florida roof replacement costs broken down by material, size, and scope. Know what to expect before you call a contractor.',
     canonical: 'https://allphaseconstructionfl.com/pricing-guide'
   },
   '/blog': {
     title: 'Roofing Blog | Expert Tips from All Phase Construction USA',
-    description: 'Expert roofing tips, guides, and news for South Florida homeowners. Learn about roof maintenance, materials, costs, and hurricane preparation.',
+    description: 'Roofing tips, cost guides, and hurricane prep for South Florida homeowners. Written by a dual-licensed contractor with 20+ years experience.',
     canonical: 'https://allphaseconstructionfl.com/blog'
   },
   '/reviews': {
     title: 'Customer Reviews | All Phase USA',
-    description: 'Read verified customer reviews and testimonials from homeowners across Broward and Palm Beach Counties who trust All Phase Construction USA.',
+    description: '4.8 stars from 138 verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.',
     canonical: 'https://allphaseconstructionfl.com/reviews'
   },
   '/projects': {
     title: 'Our Projects | All Phase USA',
-    description: 'View completed roofing projects across South Florida. See our quality workmanship on residential and commercial properties.',
+    description: 'Completed roofing projects across South Florida — tile, metal, shingle, and flat. See the quality before you call. Licensed & insured.',
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
@@ -74,17 +74,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/commercial-roofing': {
     title: 'Commercial Roofing Services | All Phase USA',
-    description: 'Professional commercial roofing contractor in South Florida. Flat roofs, TPO, modified bitumen, and metal roofing systems for businesses.',
+    description: 'TPO, PVC, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.',
     canonical: 'https://allphaseconstructionfl.com/commercial-roofing'
   },
   '/roof-inspection': {
     title: 'Professional Roof Inspection Services | All Phase USA',
-    description: 'Comprehensive roof inspections in South Florida. Insurance documentation, storm damage assessment, and pre-purchase inspections by licensed professionals.',
+    description: '21-point roof inspections in South Florida. Insurance docs, storm damage, pre-purchase. Dual-licensed contractor. Free. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
   '/roof-replacement-process': {
     title: 'Roof Replacement Process | All Phase USA',
-    description: 'Learn our proven 10-step roof replacement process. From inspection to final warranty, see how we deliver quality roofing projects in South Florida.',
+    description: 'See our 10-step roof replacement process — from inspection to final warranty. No surprises. South Florida's dual-licensed roofing contractor.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
@@ -94,12 +94,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-maintenance-programs': {
     title: 'Roof Maintenance Programs | All Phase USA',
-    description: 'Proactive roof maintenance programs for South Florida properties. Extend roof life, prevent leaks, and maintain warranty compliance.',
+    description: 'Extend your roof's life with a proactive maintenance plan. Prevent leaks, maintain warranties, stay code-compliant in South Florida.',
     canonical: 'https://allphaseconstructionfl.com/roof-maintenance-programs'
   },
   '/tile-roofing': {
     title: 'Tile Roofing Installation & Repair | All Phase USA',
-    description: 'Expert tile roofing services in South Florida. Concrete and clay tile installation, repair, and maintenance. HVHZ compliant workmanship.',
+    description: 'Concrete & clay tile roofing in South Florida. HVHZ-compliant installation, repair & maintenance. Dual-licensed contractor. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
@@ -114,7 +114,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/flat-roofing': {
     title: 'Flat Roofing Services | All Phase USA',
-    description: 'Commercial and residential flat roofing in South Florida. TPO, EPDM, modified bitumen, and built-up roofing systems.',
+    description: 'TPO, PVC, EPDM & modified bitumen flat roofing in South Florida. Residential & commercial. Dual-licensed CCC/CGC. Free assessment.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
     '/roof-repair': {
@@ -189,22 +189,22 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/frequently-asked-questions': {
     title: 'Roofing FAQ South Florida | All Phase USA',
-    description: 'Answers to common roofing questions for South Florida homeowners — repair vs replacement, insurance, HVHZ requirements, materials, and costs. Licensed contractor. Call (754) 227-5605.',
+    description: 'South Florida roofing FAQs — repair vs replacement, HVHZ, insurance, materials & costs. Licensed contractor answers. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/frequently-asked-questions'
   },
     '/easy-payments': {
     title: 'Easy Payments & Financing Options | All Phase USA',
-    description: 'Flexible financing options for roofing projects in South Florida. Easy payment plans available for roof replacement, repair, and maintenance.',
+    description: 'Financing available for your South Florida roofing project. Major credit cards accepted and payment plans to fit any budget.',
     canonical: 'https://allphaseconstructionfl.com/easy-payments'
   },
   '/our-location': {
     title: 'Our Deerfield Beach Location | All Phase USA',
-    description: 'Visit All Phase Construction USA at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving Broward and Palm Beach Counties.',
+    description: 'All Phase Construction USA — 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/our-location'
   },
   '/learning-center': {
     title: 'Learning Center | Roofing Guides & Resources | All Phase USA',
-    description: 'Roofing guides, resources, and educational content for South Florida homeowners from All Phase Construction USA.',
+    description: 'Roofing guides, cost breakdowns, and homeowner tips for South Florida. Hurricane prep, materials, inspections — all in one place.',
     canonical: 'https://allphaseconstructionfl.com/learning-center'
   },
   '/locations/deerfield-beach/service-area': {
@@ -212,9 +212,14 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'All Phase Construction USA serves over 50 cities throughout Broward County and Palm Beach County from our Deerfield Beach headquarters.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
   },
+        '/locations/deerfield-beach': {
+    title: 'Roofing Contractor Deerfield Beach FL | All Phase',
+    description: 'Licensed roofing contractor in Deerfield Beach, FL since 2005. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
+  },
   '/how-to-hire-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor in Florida | Expert Guide',
-    description: 'Expert guide on hiring a roofing contractor in Florida. Learn what to look for, questions to ask, and red flags to avoid.',
+    description: 'How to hire a roofing contractor in Florida — licenses to verify, questions to ask, red flags to avoid. Free guide from a licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/how-to-hire-roofing-contractor'
   },
   // ══════════════════════════════════════════════════════════════
