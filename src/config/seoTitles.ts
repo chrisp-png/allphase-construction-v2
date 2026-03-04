@@ -118,7 +118,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
     '/roof-repair': {
-    title: 'Emergency Roof Repair Services | All Phase USA',
+    title: 'Roof Repair Deerfield Beach & South Florida | All Phase',
     description: 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
