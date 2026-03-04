@@ -109,7 +109,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/shingle-roofing': {
     title: 'Shingle Roofing Deerfield Beach & South Florida | All Phase',
-    description: 'Asphalt shingle roofing services in Broward & Palm Beach Counties. Architectural shingles, 3-tab shingles, and impact-resistant options.',
+    description: 'Licensed shingle roof installation & replacement in Broward & Palm Beach County. Architectural, 3-tab & impact-resistant options. HVHZ-compliant. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
