@@ -55,8 +55,6 @@ export default function PompanoBeachRoofRepairPage() {
   return (
     <>
       <SEO
-        title="Roofing Contractor Pompano Beach, FL | Free Roof Inspection | All Phase"
-        description="Licensed roofing contractor serving Pompano Beach, FL. Residential & commercial roof repair, replacement, inspection. Dual-county licensed. Call (754) 227-5605."
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">

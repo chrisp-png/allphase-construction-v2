@@ -55,8 +55,6 @@ export default function WellingtonRoofRepairPage() {
   return (
     <>
       <SEO
-        title="Roof Repair Wellington, FL | Free Roof Inspection"
-        description="Need roof repair in Wellington? Get a free roof inspection. Tile, shingle, metal & flat roofing. Call (754) 227-5605."
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">

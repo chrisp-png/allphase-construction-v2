@@ -59,8 +59,6 @@ export default function DeerfieldBeachRoofRepairPage() {
   return (
     <>
       <SEO
-        title="Roof Repair Deerfield Beach, FL | Licensed Contractor | All Phase Construction USA"
-        description="Licensed roof repair in Deerfield Beach, FL. Inspection-first diagnostics, HVHZ-compliant repairs, HOA documentation support. Free inspection. Call (754) 227-5605."
         schema={faqSchema}
         canonical="/roof-repair/deerfield-beach"
       />
