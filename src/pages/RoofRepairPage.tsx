@@ -254,6 +254,11 @@ export default function RoofRepairPage() {
   return (
     <>
     <StickyConversionBar />
+            <Helmet>
+                      <title>Roof Repair Deerfield Beach &amp; South Florida | All Phase</title>
+                      <meta name="description" content="Roof repair in Deerfield Beach, FL. Leak detection, tile, shingle &amp; flat restoration. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605." />
+                      <link rel="canonical" href="https://allphaseconstructionfl.com/roof-repair" />
+                    </Helmet>
     <div className="bg-zinc-950 text-white min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">
