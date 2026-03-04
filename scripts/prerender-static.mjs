@@ -1265,6 +1265,31 @@ ${JSON.stringify(jsonLdSchema, null, 2)}
       throw new Error('❌ Could not find root div or closing body tag in template.');
     }
 
+    // Inject static crawler links before </body>
+  const staticCrawlerLinks = `
+<!-- Static internal links for crawlers -->
+<div style="display:none" aria-hidden="true">
+  <a href="/roofing-services">Roofing Services</a>
+  <a href="/residential-roofing">Residential Roofing</a>
+  <a href="/commercial-roofing">Commercial Roofing</a>
+  <a href="/shingle-roofing">Shingle Roofing</a>
+  <a href="/metal-roofing">Metal Roofing</a>
+  <a href="/flat-roofing">Flat Roofing</a>
+  <a href="/tile-roofing">Tile Roofing</a>
+  <a href="/roof-repair">Roof Repair</a>
+  <a href="/roof-inspection">Roof Inspection</a>
+  <a href="/roof-replacement-process">Roof Replacement Process</a>
+  <a href="/roof-maintenance-programs">Roof Maintenance Programs</a>
+  <a href="/reviews">Reviews</a>
+  <a href="/projects">Our Projects</a>
+  <a href="/frequently-asked-questions">FAQ</a>
+  <a href="/about-us">About Us</a>
+  <a href="/contact">Contact</a>
+  <a href="/blog">Blog</a>
+</div>
+`;
+  html = html.replace('</body>', staticCrawlerLinks + '</body>');
+
   return html;
 }
 
