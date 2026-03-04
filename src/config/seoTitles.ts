@@ -103,8 +103,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
-    title: 'Metal Roofing Installation & Repair | All Phase USA',
-    description: 'Standing seam and metal roofing systems in South Florida. Energy-efficient, hurricane-resistant metal roofs with superior longevity.',
+    title: 'Metal Roofing Deerfield Beach & South Florida | All Phase',
+    description: 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener systems. HOA-approved options. HVHZ-certified. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
