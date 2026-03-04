@@ -108,7 +108,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
-    title: 'Shingle Roofing Broward & Palm Beach | All Phase USA',
+    title: 'Shingle Roofing Deerfield Beach & South Florida | All Phase',
     description: 'Asphalt shingle roofing services in Broward & Palm Beach Counties. Architectural shingles, 3-tab shingles, and impact-resistant options.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
