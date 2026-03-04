@@ -33,5 +33,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add dist/ -f
-          git diff --cached --quiet || git commit -m "seo: inject static crawler links into all prerendered pages"
+          git diff --cached --quiet || git commit -m "seo: fix location page title template in prerender script"
           git push origin main
