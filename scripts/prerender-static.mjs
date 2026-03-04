@@ -1876,6 +1876,31 @@ ${companyAuthorityFooter()}
     bestRoofersDFBContent
   ));
   console.log('✅ Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
+
+  // Best Roofers Fort Lauderdale - Premium Money Page
+  const bestRoofersFTLDir = path.join(distDir, 'locations/fort-lauderdale/best-roofers-fort-lauderdale');
+  fs.mkdirSync(bestRoofersFTLDir, { recursive: true });
+  const bestRoofersFTLContent = `
+  <h1>Top 5 Best Rated Roofers in Fort Lauderdale, FL (2026)</h1>
+  <p>Finding a Roofer in Fort Lauderdale You Can Actually Trust. Fort Lauderdale falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <h2>Your List of the Top 5 Best Roofers in Fort Lauderdale, FL</h2>
+  <ol>
+    <li>All Phase Construction USA</li>
+    <li>Allied Roofing &amp; Sheet Metal</li>
+    <li>Tiger Team Roofing</li>
+    <li>Nast Roofing</li>
+    <li>Paul Bange Roofing</li>
+  </ol>
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Broward and Palm Beach County, with significant project history in Fort Lauderdale. Call (754) 227-5605 for a free roof inspection.</p>
+`;
+  fs.writeFileSync(path.join(bestRoofersFTLDir, 'index.html'), createHTMLTemplate(
+    'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
+    'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale',
+    bestRoofersFTLContent
+  ));
+  console.log('✅ Prerendered: locations/fort-lauderdale/best-roofers-fort-lauderdale/index.html');
+
   // ============================================================
   // REGRESSION SAFEGUARD: Verify dist/index.html wasn't corrupted
   // ============================================================

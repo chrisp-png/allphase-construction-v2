@@ -220,7 +220,8 @@ const LOCATION_MONEY_PAGES = [
 ];
 
 const LOCATION_SUB_PAGES = [
-  { path: '/locations/deerfield-beach/best-roofers-deerfield-beach', label: 'Best Roofers in Deerfield Beach' }
+  { path: '/locations/deerfield-beach/best-roofers-deerfield-beach', label: 'Best Roofers in Deerfield Beach' },
+  { path: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Best Roofers in Fort Lauderdale' }
 ];
 
 console.log('Generating Canonical City Pages...\n');

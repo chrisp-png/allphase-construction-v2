@@ -141,6 +141,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://allphaseconstructionfl.com/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://allphaseconstructionfl.com/blog/residential-flat-roofs-types-options-and-florida-considerations</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
@@ -722,6 +727,11 @@
   </url>
   <url>
     <loc>https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
