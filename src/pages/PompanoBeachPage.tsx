@@ -9,15 +9,15 @@ export default function PompanoBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Pompano Beach Roofing Contractor | Broward County Licensed | All Phase Construction USA';
+    document.title = 'Pompano Beach Roofing Contractor | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Pompano Beach roofing contractor since 2006. Dual-licensed CCC-1331464 & CGC-1526236. HVHZ 175+ mph rated. Salt air coastal specialists serving Hillsboro Shores, Cypress Harbor, Palm Aire. Free inspection (754) 227-5605.');
+      metaDescription.setAttribute('content', 'Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Pompano Beach roofing contractor since 2006. Dual-licensed CCC-1331464 & CGC-1526236. HVHZ 175+ mph rated. Salt air coastal specialists serving Hillsboro Shores, Cypress Harbor, Palm Aire. Free inspection (754) 227-5605.';
+      meta.content = 'Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.';
       document.head.appendChild(meta);
     }
 
