@@ -9,7 +9,7 @@ import {
   Award,
   FileText,
   AlertTriangle,
-  Wrench,Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener. HOA-approved. HVHZ-certified. Free estimate.
+  Wrench,
   Camera,
   Building2,
   ClipboardCheck,
