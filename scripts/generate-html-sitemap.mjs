@@ -111,6 +111,7 @@ const sectionOrder = [
   'Broward County Cities',
   'Palm Beach County Cities',
   'Locations',
+  'Best Roofers by City',
   'Learning Center',
   'About & Contact'
 ];

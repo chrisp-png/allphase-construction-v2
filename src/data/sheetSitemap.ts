@@ -600,6 +600,26 @@ export const sheetSitemap: SitemapEntry[] = [
     changefreq: 'monthly',
   },
 
+  // Best Roofers by City
+  {
+    section: 'Best Roofers by City',
+    label: 'Best Roofers in Deerfield Beach',
+    path: '/locations/deerfield-beach/best-roofers-deerfield-beach',
+    parent: '/locations/deerfield-beach',
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+  {
+    section: 'Best Roofers by City',
+    label: 'Best Roofers in Fort Lauderdale',
+    path: '/locations/fort-lauderdale/best-roofers-fort-lauderdale',
+    parent: '/locations/fort-lauderdale',
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
   // County Pages (Not displayed in sitemap navigation but remain accessible)
   {
     section: 'County Pages',
@@ -632,15 +652,6 @@ export const sheetSitemap: SitemapEntry[] = [
   // Deerfield Beach Service Areas - Palm Beach County (17 cities)
   {
     section: 'Palm Beach County Cities',
-    label: 'Top 5 Roofer | Deerfield Beach (Palm Beach County)',
-    path: '/locations/deerfield-beach/service-area/palm-beach-county/top-5-roofer/',
-    parent: '/locations/deerfield-beach',
-    indexable: true,
-    priority: 0.7,
-    changefreq: 'monthly',
-  },
-  {
-    section: 'Palm Beach County Cities',
     label: 'Boca Raton',
     path: '/locations/deerfield-beach/service-area/boca-raton/',
     parent: '/locations/deerfield-beach',
@@ -650,29 +661,11 @@ export const sheetSitemap: SitemapEntry[] = [
   },
   {
     section: 'Palm Beach County Cities',
-    label: 'Top 5 Roofer | Boca Raton',
-    path: '/locations/deerfield-beach/service-area/boca-raton/top-5-roofer/',
-    parent: '/locations/deerfield-beach/service-area/boca-raton/',
-    indexable: true,
-    priority: 0.6,
-    changefreq: 'monthly',
-  },
-  {
-    section: 'Palm Beach County Cities',
     label: 'Boynton Beach',
     path: '/locations/deerfield-beach/service-area/boynton-beach/',
     parent: '/locations/deerfield-beach',
     indexable: true,
     priority: 0.7,
-    changefreq: 'monthly',
-  },
-  {
-    section: 'Palm Beach County Cities',
-    label: 'Top 5 Roofer | Boynton Beach',
-    path: '/locations/deerfield-beach/service-area/boynton-beach/top-5-roofer/',
-    parent: '/locations/deerfield-beach/service-area/boynton-beach',
-    indexable: true,
-    priority: 0.6,
     changefreq: 'monthly',
   },
   {
@@ -819,26 +812,8 @@ export const sheetSitemap: SitemapEntry[] = [
     priority: 0.7,
     changefreq: 'monthly',
   },
-  {
-    section: 'Palm Beach County Cities',
-    label: 'Top 5 Roofer | West Palm Beach',
-    path: '/locations/deerfield-beach/service-area/west-palm-beach/top-5-roofer/',
-    parent: '/locations/deerfield-beach/service-area/west-palm-beach',
-    indexable: true,
-    priority: 0.6,
-    changefreq: 'monthly',
-  },
 
   // Deerfield Beach Service Areas - Broward County (22 cities)
-  {
-    section: 'Broward County Cities',
-    label: 'Top 5 Roofer | Deerfield Beach',
-    path: '/locations/deerfield-beach/service-area/broward-county/top-5-roofer/',
-    parent: '/locations/deerfield-beach',
-    indexable: true,
-    priority: 0.7,
-    changefreq: 'monthly',
-  },
   {
     section: 'Broward County Cities',
     label: 'Coconut Creek',
@@ -846,15 +821,6 @@ export const sheetSitemap: SitemapEntry[] = [
     parent: '/locations/deerfield-beach',
     indexable: true,
     priority: 0.7,
-    changefreq: 'monthly',
-  },
-  {
-    section: 'Broward County Cities',
-    label: 'Top 5 Roofer | Coconut Creek',
-    path: '/locations/deerfield-beach/service-area/coconut-creek/top-5-roofer/',
-    parent: '/locations/deerfield-beach/service-area/coconut-creek',
-    indexable: true,
-    priority: 0.6,
     changefreq: 'monthly',
   },
   {
@@ -891,15 +857,6 @@ export const sheetSitemap: SitemapEntry[] = [
     parent: '/locations/deerfield-beach',
     indexable: true,
     priority: 0.7,
-    changefreq: 'monthly',
-  },
-  {
-    section: 'Broward County Cities',
-    label: 'Top 5 Roofer | Fort Lauderdale',
-    path: '/locations/deerfield-beach/service-area/fort-lauderdale/top-5-roofer/',
-    parent: '/locations/deerfield-beach/service-area/fort-lauderdale',
-    indexable: true,
-    priority: 0.6,
     changefreq: 'monthly',
   },
   {
