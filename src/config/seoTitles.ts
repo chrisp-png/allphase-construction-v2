@@ -142,6 +142,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
+  '/locations/fort-lauderdale/best-roofers-fort-lauderdale': {
+    title: 'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
+    description: 'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale'
+  },
   '/locations/fort-lauderdale': {
     title: 'Fort Lauderdale Roofing Contractor | All Phase USA',
     description: 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.',

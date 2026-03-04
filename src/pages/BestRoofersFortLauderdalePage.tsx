@@ -6,13 +6,6 @@ export default function BestRoofersFortLauderdalePage() {
   return (
     <>
       <Helmet>
-        <title>Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase</title>
-        <meta
-          name="description"
-          content="Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list."
-        />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale" />
-
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
