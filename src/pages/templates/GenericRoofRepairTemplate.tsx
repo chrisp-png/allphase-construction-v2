@@ -70,8 +70,6 @@ export default function GenericRoofRepairTemplate() {
   return (
     <>
       <SEO
-        title={`Roof Repair in ${cityName}, FL`}
-        description={`Expert roof repair in ${cityName}, Florida. Tile, shingle, metal & flat roof repairs. Licensed ${county} contractor. Free inspection: (754) 227-5605.`}
         schema={faqSchema}
         noindex={false}
       />
