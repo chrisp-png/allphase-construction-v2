@@ -41,6 +41,9 @@ export default function Navigation() {
             <Link to="/projects/" className="text-white hover:text-red-600 transition-colors font-medium">
               Projects
             </Link>
+                          <Link to="/roofing-services" className="text-white hover:text-red-600 transition-colors font-medium">
+                Services
+              </Link>
             <Link to="/blog/" className="text-white hover:text-red-600 transition-colors font-medium">
               Blog
             </Link>
@@ -67,6 +70,9 @@ export default function Navigation() {
             <Link to="/projects/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               Projects
             </Link>
+                            <Link to="/roofing-services" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                  Services
+                </Link>
             <Link to="/blog/" className="block text-white hover:text-red-600 transition-colors py-3 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
               Blog
             </Link>
