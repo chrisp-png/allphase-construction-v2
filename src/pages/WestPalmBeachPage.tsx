@@ -9,7 +9,7 @@ export default function WestPalmBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'West Palm Beach Roofing Contractor | HVHZ Certified | All Phase Construction USA';
+    document.title = 'West Palm Beach Roofing Contractor | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
