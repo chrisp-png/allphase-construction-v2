@@ -49,7 +49,7 @@ export default function ChamberBadges() {
 
   return (
     <section aria-label="Chamber memberships" className="mt-8">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-3 gap-6">
         <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
           <div className="flex justify-center mb-4">
             <img
@@ -88,6 +88,11 @@ export default function ChamberBadges() {
             </p>
           </noscript>
         </div>
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col items-center text-center">
+            <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified — Tile Roofing Industry Alliance Member" width="80" height="80" loading="lazy" decoding="async" />
+            <h3 className="text-white font-bold text-base mt-3">TRI Alliance Member</h3>
+            <p className="text-gray-400 text-sm mt-1">Florida High Wind Certified — Tile Roofing Industry Alliance</p>
+          </div>
       </div>
     </section>
   );
