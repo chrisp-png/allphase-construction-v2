@@ -9,15 +9,15 @@ export default function FortLauderdalePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA';
+    document.title = 'Fort Lauderdale Roofing Contractor | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Fort Lauderdale roofing contractor with dual licensing (CCC-1331464, CGC-1526236). HVHZ certified. Served Fort Lauderdale Building Dept, Mai-Kai restoration, FLL Airport. (754) 227-5605');
+      metaDescription.setAttribute('content', 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Fort Lauderdale roofing contractor with dual licensing (CCC-1331464, CGC-1526236). HVHZ certified. Served Fort Lauderdale Building Dept, Mai-Kai restoration, FLL Airport. (754) 227-5605';
+      meta.content = 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.';
       document.head.appendChild(meta);
     }
 
