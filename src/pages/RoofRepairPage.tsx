@@ -42,7 +42,7 @@ export default function RoofRepairPage() {
     window.scrollTo(0, 0);
 
     const pageUrl = 'https://allphaseconstructionfl.com/roof-repair';
-    const pageDescription = 'Roof repair and restoration services in Broward and Palm Beach Counties. Comprehensive inspections, full-system restoration, and certification letters for insurance compliance.';
+      const pageDescription = 'Roof repair in Deerfield Beach & South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle & flat roof repairs. Free inspections.';
 
     // Local Business Schema with AggregateRating
     const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
@@ -256,7 +256,7 @@ export default function RoofRepairPage() {
     <StickyConversionBar />
             <Helmet>
                       <title>Roof Repair Deerfield Beach &amp; South Florida | All Phase</title>
-                      <meta name="description" content="Roof repair in Deerfield Beach, FL. Leak detection, tile, shingle &amp; flat restoration. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605." />
+            <meta name="description" content="Roof repair in Deerfield Beach &amp; South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle &amp; flat roof repairs. Free inspections." />
                       <link rel="canonical" href="https://allphaseconstructionfl.com/roof-repair" />
                     </Helmet>
     <div className="bg-zinc-950 text-white min-h-screen">
