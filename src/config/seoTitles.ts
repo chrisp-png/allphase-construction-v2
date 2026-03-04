@@ -84,7 +84,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-replacement-process': {
     title: 'Roof Replacement Process | All Phase USA',
-    description: 'See our 10-step roof replacement process — from inspection to final warranty. No surprises. South Florida's dual-licensed roofing contractor.',
+    description: 'See our 10-step roof replacement process - from inspection to final warranty. No surprises. South Florida dual-licensed roofing contractor.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
@@ -94,7 +94,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-maintenance-programs': {
     title: 'Roof Maintenance Programs | All Phase USA',
-    description: 'Extend your roof's life with a proactive maintenance plan. Prevent leaks, maintain warranties, stay code-compliant in South Florida.',
+    description: 'Extend your roof life with a proactive maintenance plan. Prevent leaks, maintain warranties, stay code-compliant in South Florida.',
     canonical: 'https://allphaseconstructionfl.com/roof-maintenance-programs'
   },
   '/tile-roofing': {
