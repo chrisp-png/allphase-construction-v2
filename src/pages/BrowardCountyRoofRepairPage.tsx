@@ -10,18 +10,6 @@ export default function BrowardCountyRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Broward County Roof Repair | All Phase Construction';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair throughout Broward County, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Professional roof repair throughout Broward County, FL. Licensed contractor serving 30+ cities. Free estimates: (754) 227-5605.';
-      document.head.appendChild(meta);
-    }
-
     const metaRobots = document.querySelector('meta[name="robots"]');
     if (metaRobots) {
       metaRobots.setAttribute('content', 'index, follow');

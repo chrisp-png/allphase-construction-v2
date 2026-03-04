@@ -255,8 +255,6 @@ export default function RoofRepairPage() {
     <>
     <StickyConversionBar />
             <Helmet>
-                      <title>Roof Repair Deerfield Beach &amp; South Florida | All Phase</title>
-            <meta name="description" content="Roof repair in Deerfield Beach &amp; South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle &amp; flat roof repairs. Free inspections." />
                       <link rel="canonical" href="https://allphaseconstructionfl.com/roof-repair" />
                     </Helmet>
     <div className="bg-zinc-950 text-white min-h-screen">

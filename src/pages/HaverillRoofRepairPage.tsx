@@ -10,18 +10,6 @@ export default function HaverillRoofRepairPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'Roof Repair Haverhill FL | All Phase';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof repair services in Haverhill, FL. Diagnostic inspections, code-compliant repairs for shingle, tile, metal, and low-slope roofs. HOA coordination and insurance documentation support.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Professional roof repair services in Haverhill, FL. Diagnostic inspections, code-compliant repairs for shingle, tile, metal, and low-slope roofs. HOA coordination and insurance documentation support.';
-      document.head.appendChild(meta);
-    }
-
     const metaRobots = document.querySelector('meta[name="robots"]');
     if (metaRobots) {
       metaRobots.setAttribute('content', 'index, follow');
