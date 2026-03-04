@@ -285,6 +285,10 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                 </div>
               </div>
 
+                          <p className="text-gray-700 mt-6">
+              Whether you need <Link to={`/roof-repair/${city.slug}`} className="text-red-600 hover:text-red-700 underline font-semibold">roof repair in {city.name}</Link> or a comprehensive <Link to={`/roof-inspection/${city.slug}`} className="text-red-600 hover:text-red-700 underline font-semibold">roof inspection in {city.name}</Link>, our dual-licensed team delivers expert service backed by manufacturer warranties.
+            </p>
+
               <div className="bg-red-50 border-l-4 border-red-600 p-6 mt-8 rounded-r-lg">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Ready to Get Started in {city.name}?
