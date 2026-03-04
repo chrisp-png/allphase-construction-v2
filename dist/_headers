@@ -1,0 +1,38 @@
+# Homepage cache control - prevent edge caching for real-time updates
+/
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+  Netlify-CDN-Cache-Control: no-store
+
+/index.html
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+  Netlify-CDN-Cache-Control: no-store
+
+# Sitemap - ensure proper Content-Type
+/sitemap.xml
+  Content-Type: application/xml; charset=UTF-8
+  X-Robots-Tag: index, follow
+
+# Global headers for all paths
+/*
+  X-Robots-Tag: index, follow
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Specific headers for HTML pages (allow all crawlers)
+/*.html
+  X-Robots-Tag: index, follow
+
+# API routes and dynamic content
+/api/*
+  X-Robots-Tag: noindex
+
+# Ensure crawlers can access all public pages
+/roofing-services/*
+  X-Robots-Tag: index, follow
+
+/locations/*
+  X-Robots-Tag: index, follow
+
+/blog/*
+  X-Robots-Tag: index, follow

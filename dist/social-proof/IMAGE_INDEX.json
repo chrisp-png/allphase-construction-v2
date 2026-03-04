@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "created": "2026-02-10",
+    "purpose": "Asset tracking for All Phase Construction USA social proof images",
+    "total_images": 24,
+    "last_updated": "2026-02-11"
+  },
+  "categories": {
+    "people": {
+      "count": 3,
+      "images": [
+        "all-phase-construction-usa-Team-photo.JPG",
+        "all-phase-construction-usa-personnel.JPG",
+        "Karl_at_Valencia_pointe_homeowner_event.JPEG"
+      ]
+    },
+    "teams": {
+      "count": 2,
+      "images": [
+        "all-phase-construction-usa-Team-photo.JPG",
+        "all-phase-construction-usa-flat-roof-crew.jpeg"
+      ]
+    },
+    "customers": {
+      "count": 15,
+      "images": [
+        "all-phase-construction-happy-customer-broward-county.JPG",
+        "all-phase-customer-fort-lauderdale-roofing.JPEG",
+        "all-phase-customer-luxury-home-boca-raton.JPG",
+        "all-phase-customer-luxury-home-palm-beach-county.JPEG",
+        "all-phase-customer-new-roof-pompano-beach.JPEG",
+        "all-phase-customer-roof-installation-delray-beach.JPEG",
+        "all-phase-customer-roof-replacement-broward.JPEG",
+        "all-phase-customer-shingle-roof-deerfield-beach.JPEG",
+        "all-phase-customer-shingle-roof-south-florida.jpg",
+        "all-phase-customer-standing-seam-metal-roof-loxahatchee.JPEG",
+        "all-phase-roofing-happy-homeowner-south-florida.JPEG",
+        "all-phase-roofing-satisfied-customers-palm-beach.jpg",
+        "all-phase-roofing-satisified-customers-coralsprings.jpg",
+        "all-phase-satisfied-customer-coral-springs.JPEG",
+        "Karl_at_Valencia_pointe_homeowner_event.JPEG"
+      ]
+    },
+    "projects": {
+      "count": 4,
+      "images": [
+        "terra-cotta-tile-install.jpg",
+        "attic-fan-rafter-image.jpg",
+        "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
+        "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg"
+      ]
+    },
+    "drone": {
+      "count": 1,
+      "images": [
+        "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg"
+      ]
+    }
+  },
+  "usage_guidelines": {
+    "testimonials_background": [
+      "all-phase-construction-happy-customer-broward-county.JPG",
+      "all-phase-roofing-satisfied-customers-palm-beach.jpg",
+      "all-phase-roofing-happy-homeowner-south-florida.JPEG",
+      "all-phase-satisfied-customer-coral-springs.JPEG",
+      "Karl_at_Valencia_pointe_homeowner_event.JPEG",
+      "all-phase-customer-fort-lauderdale-roofing.JPEG",
+      "all-phase-roofing-satisified-customers-coralsprings.jpg",
+      "all-phase-customer-new-roof-pompano-beach.JPEG",
+      "all-phase-customer-luxury-home-boca-raton.JPG"
+    ],
+    "about_page": [],
+    "process_steps": [
+      "attic-fan-rafter-image.jpg"
+    ],
+    "service_pages": [
+      "terra-cotta-tile-install.jpg",
+      "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
+      "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg"
+    ],
+    "hero_backgrounds": [
+      "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg"
+    ]
+  },
+  "images": [
+    {
+      "filename": "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg",
+      "category": "drone",
+      "alt": "Aerial drone view of shingle roof installation in Broward County with All Phase Construction USA branded truck on site",
+      "type": "project",
+      "location": "Broward County"
+    },
+    {
+      "filename": "terra-cotta-tile-install.jpg",
+      "category": "projects",
+      "alt": "Terra cotta tile roof installation project with All Phase Construction USA branded truck in driveway",
+      "type": "project",
+      "location": "South Florida"
+    },
+    {
+      "filename": "attic-fan-rafter-image.jpg",
+      "category": "projects",
+      "alt": "Attic ventilation system showing proper airflow with solar attic fan installation",
+      "type": "technical_diagram",
+      "location": null
+    },
+    {
+      "filename": "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
+      "category": "projects",
+      "alt": "Commercial metal roof installation on bus shelter in Palm Beach and Broward County",
+      "type": "commercial_project",
+      "location": "Palm Beach/Broward County"
+    },
+    {
+      "filename": "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg",
+      "category": "projects",
+      "alt": "Standing seam metal roof installation in progress on commercial bus shelter",
+      "type": "commercial_project",
+      "location": "South Florida"
+    }
+  ]
+}
