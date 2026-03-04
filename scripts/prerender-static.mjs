@@ -63,7 +63,7 @@ function buildLocationSeo(location) {
   const complianceLanguage = isBrowardCounty ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
 
   // Generate defaults from templates
-  const defaultTitle = `${city} Roofing Contractor | All Phase Construction USA`;
+  const defaultTitle = `${city} Roofing Contractor | All Phase USA`;
   const defaultDescription = `All Phase Construction USA is a licensed roofing contractor serving ${city}, ${state}. We provide ${complianceLanguage} metal, tile, and shingle roofing installation, replacement, and repair.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
