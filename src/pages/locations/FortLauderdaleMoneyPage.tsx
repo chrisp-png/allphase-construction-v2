@@ -601,6 +601,27 @@ export default function FortLauderdaleMoneyPage() {
           </div>
         </section>
 
+        {/* Best Roofers Callout */}
+        <section className="py-12 bg-[#09090b]">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-r from-zinc-800/50 to-zinc-900/50 border border-zinc-700 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-white mb-3">
+                Looking for the Best Roofers in Fort Lauderdale?
+              </h3>
+              <p className="text-zinc-400 leading-relaxed mb-4">
+                Learn how to identify the most qualified roofing contractors in Fort Lauderdale, what credentials matter, and what questions to ask before hiring.
+              </p>
+              <Link
+                to="/locations/fort-lauderdale/best-roofers-fort-lauderdale"
+                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
+              >
+                <span>Best Roofers in Fort Lauderdale</span>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Ready to Get Started CTA */}
         <section className="py-20 bg-gradient-to-b from-[#27272a] to-[#09090b]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
