@@ -119,7 +119,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/roof-repair': {
     title: 'Roof Repair Deerfield Beach & South Florida | All Phase',
-    description: 'Professional roof repair across South Florida. Leak detection, tile repair, shingle replacement. Licensed, same-day service. Call (754) 227-5605 now.',
+        description: 'Roof repair in Deerfield Beach & South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle & flat roof repairs. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/roofing-services': {
