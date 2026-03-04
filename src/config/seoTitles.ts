@@ -104,12 +104,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/metal-roofing': {
     title: 'Metal Roofing Deerfield Beach & South Florida | All Phase',
-    description: 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener systems. HOA-approved options. HVHZ-certified. Free estimate. (754) 227-5605.',
+    description: 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener. HOA-approved. HVHZ-certified. Free estimate.',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
     title: 'Shingle Roofing Deerfield Beach & South Florida | All Phase',
-    description: 'Licensed shingle roof installation & replacement in Broward & Palm Beach County. Architectural, 3-tab & impact-resistant options. HVHZ-compliant. Free estimate. (754) 227-5605.',
+    description: 'Licensed shingle roof installation & replacement in Broward & Palm Beach County. Architectural, 3-tab & impact-resistant. HVHZ-compliant. Free estimate.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
@@ -143,9 +143,24 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
   '/locations/fort-lauderdale': {
-    title: 'Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA',
-    description: 'Trusted roofing contractor in Fort Lauderdale, FL. HVHZ certified, dual-licensed (CCC & CGC). Tile, metal, shingle, flat & commercial roofing. 20+ years experience. Free inspections.',
+    title: 'Fort Lauderdale Roofing Contractor | All Phase USA',
+    description: 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
+  },
+  '/locations/west-palm-beach': {
+    title: 'West Palm Beach Roofing Contractor | All Phase USA',
+    description: 'Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605',
+    canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach'
+  },
+  '/locations/pompano-beach': {
+    title: 'Pompano Beach Roofing Contractor | All Phase USA',
+    description: 'Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.',
+    canonical: 'https://allphaseconstructionfl.com/locations/pompano-beach'
+  },
+  '/locations/coral-springs': {
+    title: 'Coral Springs Roofing Contractor | All Phase USA',
+    description: 'Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.',
+    canonical: 'https://allphaseconstructionfl.com/locations/coral-springs'
   },
   '/locations/gulf-stream': {
     title: 'Gulf Stream Roofing Contractor | All Phase Construction USA',
