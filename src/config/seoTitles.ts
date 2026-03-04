@@ -438,7 +438,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/blog/', '');
     const blogTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `${blogTitle} | All Phase Construction USA Blog`,
+      title: `${blogTitle} | All Phase USA Blog`,
       description: `Read about ${blogTitle.toLowerCase()} from South Florida's dual-licensed roofing experts at All Phase Construction USA.`,
       canonical: `https://allphaseconstructionfl.com/blog/${slug}`
     };
