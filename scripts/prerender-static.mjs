@@ -1729,7 +1729,7 @@ ${companyAuthorityFooter()}
           `.trim();
 
           const blogHTML = createHTMLTemplate(
-            `${blogTitle} | All Phase Construction USA Blog`,
+            `${blogTitle} | All Phase USA Blog`,
             blogDescription,
             blogCanonical,
             blogContent
