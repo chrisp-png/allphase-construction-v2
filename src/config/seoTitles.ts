@@ -68,7 +68,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
-    title: 'Residential Roofing Services | All Phase USA',
+    title: 'Residential Roofing South Florida | All Phase Construction',
     description: 'Expert residential roofing in Broward & Palm Beach Counties. Tile, shingle, metal, and flat roofing for homes. Licensed, insured, HVHZ certified.',
     canonical: 'https://allphaseconstructionfl.com/residential-roofing'
   },
