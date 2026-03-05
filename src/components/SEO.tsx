@@ -31,7 +31,7 @@ interface SEOProps {
 export default function SEO({
   title,
   description,
-  // canonicalPath is accepted but ignored — NuclearMetadata owns canonical
+  // canonicalPath is accepted but ignored â NuclearMetadata owns canonical
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   canonicalPath,
   ogImagePath,
@@ -43,14 +43,14 @@ export default function SEO({
   return (
     <Helmet>
       {/* Primary */}
-      {title ? <title>{title}</title> : null}
-      {description ? <meta name="description" content={description} /> : null}
+      {/* title owned by NuclearMetadata — SEO component no longer sets this */}
+      {/* desc owned by NuclearMetadata — SEO component no longer sets this */}
 
       {/* Robots */}
       <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
 
       {/* NOTE: <link rel="canonical"> and <meta og:url> are NOT set here.
-          NuclearMetadata.tsx is the single owner — see comment above. */}
+          NuclearMetadata.tsx is the single owner â see comment above. */}
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
