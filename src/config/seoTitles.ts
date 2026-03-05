@@ -64,7 +64,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/projects': {
     title: 'Our Projects | All Phase USA',
-    description: 'Completed roofing projects across South Florida â tile, metal, shingle, and flat. See the quality before you call. Licensed & insured.',
+    description: 'Completed roofing projects across South Florida Ã¢ÂÂ tile, metal, shingle, and flat. See the quality before you call. Licensed & insured.',
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
@@ -78,8 +78,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/commercial-roofing'
   },
   '/roof-inspection': {
-    title: 'Professional Roof Inspection Services | All Phase USA',
-    description: '21-point roof inspections in South Florida. Insurance docs, storm damage, pre-purchase. Dual-licensed contractor. Free. Call (754) 227-5605.',
+    title: 'Free Roof Inspection South Florida | All Phase Construction',
+    description: 'Free 21-point roof inspections in South Florida. Storm damage, insurance docs & pre-purchase evaluations. Dual-licensed, HVHZ-certified. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
   '/roof-replacement-process': {
@@ -108,8 +108,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
-    title: 'Shingle Roofing Deerfield Beach & South Florida | All Phase',
-    description: 'Licensed shingle roof installation & replacement in Broward & Palm Beach County. Architectural, 3-tab & impact-resistant. HVHZ-compliant. Free estimate.',
+    title: 'Shingle Roofing South Florida | HVHZ-Certified | All Phase',
+    description: 'South Florida shingle roofing — architectural, 3-tab & impact-rated systems. HVHZ-certified installation, free estimate. Broward & Palm Beach County. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
@@ -209,7 +209,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/frequently-asked-questions': {
     title: 'Roofing FAQ South Florida | All Phase USA',
-    description: 'South Florida roofing FAQs â repair vs replacement, HVHZ, insurance, materials & costs. Licensed contractor answers. Call (754) 227-5605.',
+    description: 'South Florida roofing FAQs Ã¢ÂÂ repair vs replacement, HVHZ, insurance, materials & costs. Licensed contractor answers. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/frequently-asked-questions'
   },
     '/easy-payments': {
@@ -219,12 +219,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/our-location': {
     title: 'Our Deerfield Beach Location | All Phase USA',
-    description: 'All Phase Construction USA â 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 227-5605.',
+    description: 'All Phase Construction USA Ã¢ÂÂ 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/our-location'
   },
   '/learning-center': {
     title: 'Learning Center | Roofing Guides & Resources | All Phase USA',
-    description: 'Roofing guides, cost breakdowns, and homeowner tips for South Florida. Hurricane prep, materials, inspections â all in one place.',
+    description: 'Roofing guides, cost breakdowns, and homeowner tips for South Florida. Hurricane prep, materials, inspections Ã¢ÂÂ all in one place.',
     canonical: 'https://allphaseconstructionfl.com/learning-center'
   },
   '/locations/deerfield-beach/service-area': {
@@ -239,12 +239,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/how-to-hire-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor in Florida | Expert Guide',
-    description: 'How to hire a roofing contractor in Florida â licenses to verify, questions to ask, red flags to avoid. Free guide from a licensed contractor.',
+    description: 'How to hire a roofing contractor in Florida Ã¢ÂÂ licenses to verify, questions to ask, red flags to avoid. Free guide from a licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/how-to-hire-roofing-contractor'
   },
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // ROOF INSPECTION CITY PAGES â /roof-inspection/:city
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+  // ROOF INSPECTION CITY PAGES Ã¢ÂÂ /roof-inspection/:city
+  // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   '/roof-inspection/boca-raton': {
     title: 'Boca Raton Roof Inspection | Licensed & Insured | All Phase Construction USA',
     description: 'Professional roof inspection in Boca Raton, FL. Licensed Palm Beach County contractor. 21-point assessment, insurance documentation, storm damage reports. Call (754) 227-5605.',
