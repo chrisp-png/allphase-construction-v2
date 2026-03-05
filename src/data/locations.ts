@@ -54,7 +54,7 @@ export const locations: Location[] = [
     slug: "delray-beach",
     city: "Delray Beach",
     state: "FL",
-    titleOverride: "Delray Beach Roofer | Palm Beach County Wind-Compliant | All Phase Construction USA"
+    titleOverride: "Delray Beach Roofer | Palm Beach County | All Phase"
   },
   {
     slug: "fort-lauderdale",
