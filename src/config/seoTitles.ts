@@ -127,11 +127,6 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Tile, metal, shingle, flat & commercial roofing in Broward & Palm Beach County. HVHZ-certified, dual-licensed. Free inspections. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
-    '/services': {
-    title: 'Roofing Services | All Phase Construction USA',
-    description: 'Tile, metal, shingle, flat & commercial roofing in Broward & Palm Beach County. Repair, replacement & inspections. Dual-licensed. Call (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/services'
-  },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase USA',
     description: 'Hiring a roofer in South Florida? Know what licenses to check, questions to ask, and scams to avoid. Free advice from a licensed contractor.',
