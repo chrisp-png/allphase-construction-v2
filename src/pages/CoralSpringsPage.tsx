@@ -523,6 +523,25 @@ export default function CoralSpringsPage() {
             </div>
           </div>
 
+          {/* Best Roofers Callout */}
+          <div className="mb-20">
+            <div className="bg-gradient-to-r from-zinc-800/50 to-zinc-900/50 border border-zinc-700 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-white mb-3">
+                Looking for the Best Roofers in Coral Springs?
+              </h3>
+              <p className="text-zinc-400 leading-relaxed mb-4">
+                Learn how to identify the most qualified roofing contractors in Coral Springs, what credentials matter, and what questions to ask before hiring.
+              </p>
+              <Link
+                to="/locations/coral-springs/best-roofers-coral-springs"
+                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
+              >
+                <span>Best Roofers in Coral Springs</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Call (754) 227-5605 or Request Free Estimate

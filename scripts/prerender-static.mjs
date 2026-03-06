@@ -1925,6 +1925,54 @@ ${companyAuthorityFooter()}
   ));
   console.log('✅ Prerendered: locations/west-palm-beach/best-roofers-west-palm-beach/index.html');
 
+  // Best Roofers Boca Raton - Premium Money Page
+  const bestRoofersBocaDir = path.join(distDir, 'locations/boca-raton/best-roofers-boca-raton');
+  fs.mkdirSync(bestRoofersBocaDir, { recursive: true });
+  const bestRoofersBocaContent = `
+  <h1>Top 5 Best Rated Roofers in Boca Raton, FL (2026)</h1>
+  <p>Finding a Roofer in Boca Raton You Can Actually Trust. Boca Raton falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <h2>Your List of the Top 5 Best Roofers in Boca Raton, FL</h2>
+  <ol>
+    <li>All Phase Construction USA</li>
+    <li>Istueta Roofing</li>
+    <li>Roof Top Services</li>
+    <li>Kelly Roofing</li>
+    <li>Crowther Roofing</li>
+  </ol>
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Boca Raton. Call (754) 227-5605 for a free roof inspection.</p>
+`;
+  fs.writeFileSync(path.join(bestRoofersBocaDir, 'index.html'), createHTMLTemplate(
+    'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
+    'Looking for the best roofers in Boca Raton? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton',
+    bestRoofersBocaContent
+  ));
+  console.log('✅ Prerendered: locations/boca-raton/best-roofers-boca-raton/index.html');
+
+  // Best Roofers Coral Springs - Premium Money Page
+  const bestRoofersCoralDir = path.join(distDir, 'locations/coral-springs/best-roofers-coral-springs');
+  fs.mkdirSync(bestRoofersCoralDir, { recursive: true });
+  const bestRoofersCoralContent = `
+  <h1>Top 5 Best Rated Roofers in Coral Springs, FL (2026)</h1>
+  <p>Finding a Roofer in Coral Springs You Can Actually Trust. Coral Springs falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <h2>Your List of the Top 5 Best Roofers in Coral Springs, FL</h2>
+  <ol>
+    <li>All Phase Construction USA</li>
+    <li>Allied Roofing</li>
+    <li>Tiger Team Roofing</li>
+    <li>Nast Roofing</li>
+    <li>Paul Bange Roofing</li>
+  </ol>
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Coral Springs. Call (754) 227-5605 for a free roof inspection.</p>
+`;
+  fs.writeFileSync(path.join(bestRoofersCoralDir, 'index.html'), createHTMLTemplate(
+    'Top 5 Roofers in Coral Springs FL (2026) | All Phase',
+    'Looking for the best roofers in Coral Springs? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs',
+    bestRoofersCoralContent
+  ));
+  console.log('✅ Prerendered: locations/coral-springs/best-roofers-coral-springs/index.html');
+
   // ============================================================
   // REGRESSION SAFEGUARD: Verify dist/index.html wasn't corrupted
   // ============================================================

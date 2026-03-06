@@ -354,6 +354,29 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
         </div>
       </section>
 
+      {/* Best Roofers Callout - Conditional for Boca Raton */}
+      {city.slug === 'boca-raton' && (
+        <section className="py-12 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-r from-[#C5A572]/10 to-amber-50 border border-[#C5A572]/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Looking for the Best Roofers in Boca Raton?
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Learn how to identify the most qualified roofing contractors in Boca Raton, what credentials matter, and what questions to ask before hiring.
+              </p>
+              <Link
+                to="/locations/boca-raton/best-roofers-boca-raton"
+                className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold transition-colors"
+              >
+                <span>Best Roofers in Boca Raton</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Contact Form */}
       <Contact />
     </>
