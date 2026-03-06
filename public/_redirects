@@ -7,7 +7,7 @@ http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 30
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
 
 
-# Sitemap consolidation Ã¢ÂÂ redirect legacy sitemap_index.xml to sitemap.xml
+# Sitemap consolidation ÃÂ¢ÃÂÃÂ redirect legacy sitemap_index.xml to sitemap.xml
 /sitemap_index.xml    /sitemap.xml    301!
 # ======================================================================
 # SUBDOMAIN REDIRECTS
@@ -76,7 +76,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /insurance-roof-inspection /roof-inspection 301!
 
 
-# Broken /roof-replacement/[city] URLs Ã¢ÂÂ these pages do not exist
+# Broken /roof-replacement/[city] URLs ÃÂ¢ÃÂÃÂ these pages do not exist
 /roof-replacement/pompano-beach /roof-replacement 301!
 /roof-replacement/delray-beach /roof-replacement 301!
 /roof-replacement/fort-lauderdale /roof-replacement 301!
@@ -84,7 +84,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /roof-replacement/coral-springs /roof-replacement 301!
 /roof-replacement/coconut-creek /roof-replacement 301!
 
-# Removed cities from cities.json Ã¢ÂÂ redirect to service hub
+# Removed cities from cities.json ÃÂ¢ÃÂÃÂ redirect to service hub
 /roof-repair/lazy-lake /roof-repair 301!
 /roof-repair/manalapan /roof-repair 301!
 /roof-repair/south-palm-beach /roof-repair 301!
@@ -108,7 +108,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 # Do NOT duplicate /* /index.html 200 here.
 # ======================================================================
 
-# Legacy blog redirects Ã¢ÂÂ WordPress URLs causing 5xx errors
+# Legacy blog redirects ÃÂ¢ÃÂÃÂ WordPress URLs causing 5xx errors
 /blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home /blog/wind-mitigation-roof-south-florida 301
 /blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida/ /blog/metal-roof-vs-shingles-florida-2026 301
 /blog/why-choose-tile-roofing-in-south-florida/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301
@@ -152,7 +152,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /financing/ /financing 301
 /accessibility / 301
 
-# Legacy HTTP and www Ã¢ÂÂ force HTTPS
+# Legacy HTTP and www ÃÂ¢ÃÂÃÂ force HTTPS
 http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301
 
@@ -192,7 +192,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services /roof-repair 301!
 /roofing-services/ /roof-repair 301!
 
-# Missing legacy redirects Ã¢ÂÂ added 2026-02-27
+# Missing legacy redirects ÃÂ¢ÃÂÃÂ added 2026-02-27
 /Blog /blog 301!
 /Blog/ /blog 301!
 /roofing-services/roof-inspection /roof-inspection 301!
@@ -228,7 +228,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /locations/light-house-point /locations/lighthouse-point 301!
 
 
-# Legacy WordPress blog redirects Ã¢ÂÂ added 2026-02-27
+# Legacy WordPress blog redirects ÃÂ¢ÃÂÃÂ added 2026-02-27
 /blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida/ /blog/metal-roof-vs-shingles-florida-2026 301!
 /blog/why-choose-tile-roofing-in-south-florida/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
 /blog/impact-of-tariffs-on-metal-roofing-prices/ /blog/metal-roof-vs-shingles-florida-2026 301!
@@ -271,7 +271,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services/roof-repair  /roof-repair  301!
 
 # Trailing slash removal - catch-all wildcard
-/*/  /:splat  301!
+# trailing slash catch-all removed — was causing root redirect loop
 
 /blog/*/ /blog/:splat 301!
 /* /index.html 200
