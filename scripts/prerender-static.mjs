@@ -1901,6 +1901,30 @@ ${companyAuthorityFooter()}
   ));
   console.log('✅ Prerendered: locations/fort-lauderdale/best-roofers-fort-lauderdale/index.html');
 
+  // Best Roofers West Palm Beach - Premium Money Page
+  const bestRoofersWPBDir = path.join(distDir, 'locations/west-palm-beach/best-roofers-west-palm-beach');
+  fs.mkdirSync(bestRoofersWPBDir, { recursive: true });
+  const bestRoofersWPBContent = `
+  <h1>Top 5 Best Rated Roofers in West Palm Beach, FL (2026)</h1>
+  <p>Finding a Roofer in West Palm Beach You Can Actually Trust. West Palm Beach falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <h2>Your List of the Top 5 Best Roofers in West Palm Beach, FL</h2>
+  <ol>
+    <li>All Phase Construction USA</li>
+    <li>Istueta Roofing</li>
+    <li>Roof Top Services</li>
+    <li>Kelly Roofing</li>
+    <li>Crowther Roofing</li>
+  </ol>
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in West Palm Beach. Call (754) 227-5605 for a free roof inspection.</p>
+`;
+  fs.writeFileSync(path.join(bestRoofersWPBDir, 'index.html'), createHTMLTemplate(
+    'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
+    'Looking for the best roofers in West Palm Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach',
+    bestRoofersWPBContent
+  ));
+  console.log('✅ Prerendered: locations/west-palm-beach/best-roofers-west-palm-beach/index.html');
+
   // ============================================================
   // REGRESSION SAFEGUARD: Verify dist/index.html wasn't corrupted
   // ============================================================
