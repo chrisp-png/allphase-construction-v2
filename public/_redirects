@@ -263,4 +263,5 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # Trailing slash removal - catch-all wildcard
 /*/  /:splat  301
 
+/blog/*/ /blog/:splat 301!
 /* /index.html 200
