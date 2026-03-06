@@ -527,7 +527,7 @@ export default function PompanoBeachMoneyPage() {
                     Proper roof removal is critical to the success of your replacement project. Our experienced crews in Pompano Beach use systematic removal techniques that protect your property's structure, landscaping, and surrounding areas while efficiently removing old roofing materials.
                   </p>
                   <p>
-                    We utilize professional equipment including roofing carts, debris chutes, and protective barriers to contain materials and minimize mess. Our magnetic sweepers ensure thorough nail cleanup, while our careful handling prevents damage to gutters, siding, and architectural details.
+                    We utilize professional equipment including roofing carts, debris chutes, and protective barriers to contain materials and minimize mess. Our magnetic sweepers ensure thorough nail cleanup, while our careful handling prevents damage to gutters, fascia boards, and architectural details.
                   </p>
                   <p>
                     Environmental responsibility guides our disposal practices. We recycle materials whenever possible and ensure proper disposal of all waste in accordance with local regulations. Our efficient removal process keeps projects on schedule while maintaining the highest standards of cleanliness and property protection.
