@@ -54,7 +54,7 @@ export default function NuclearMetadata() {
     }
     metaDesc.setAttribute('content', description);
 
-    // FORCE UPDATE CANONICAL (single owner — no other component emits this tag)
+    // FORCE UPDATE CANONICAL (single owner â no other component emits this tag)
     let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -177,7 +177,14 @@ export default function NuclearMetadata() {
         "Commercial Roofing",
         "Residential Roofing"
       ],
-      "description": "All Phase Construction USA is a dual-licensed roofing specialist (CCC1331464 & CGC1526236) serving South Florida with HVHZ-compliant roofing solutions. Headquartered in Deerfield Beach at 590 Goolsby Blvd."
+      "description": "All Phase Construction USA is a dual-licensed roofing specialist (CCC1331464 & CGC1526236) serving South Florida with HVHZ-compliant roofing solutions. Headquartered in Deerfield Beach at 590 Goolsby Blvd.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "137",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
     };
 
     schemaScript.textContent = JSON.stringify(businessSchema);
