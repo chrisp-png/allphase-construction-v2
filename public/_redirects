@@ -181,6 +181,16 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /faq /frequently-asked-questions 301!
 /flat-roof-coatings /single-ply-roofing 301!
 /media-gallery /projects 301!
+/roofing-contractor-boca-raton-fl /locations/boca-raton 301!
+/roofing-contractor-delray-beach-fl /locations/delray-beach 301!
+/roofing-contractor-lake-worth-fl /locations/lake-worth-beach 301!
+/roofing-contractor-broward-county-fl /locations/deerfield-beach 301!
+/roofing-contractor-gulf-stream-fl /roof-repair/gulf-stream 301!
+/roofing-contractor-lauderhill-fl /locations/lauderhill 301!
+/roofing-contractor-west-palm-beach-fl /locations/west-palm-beach 301!
+/roofing-contractor-wellington-fl /locations/wellington 301!
+/roofing-services /roof-repair 301!
+/roofing-services/ /roof-repair 301!
 
 # Missing legacy redirects â added 2026-02-27
 /Blog /blog 301!
@@ -261,7 +271,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services/roof-repair  /roof-repair  301!
 
 # Trailing slash removal - catch-all wildcard
-/.+/ /:splat 301!
+/*/  /:splat  301!
 
 /blog/*/ /blog/:splat 301!
 /* /index.html 200
