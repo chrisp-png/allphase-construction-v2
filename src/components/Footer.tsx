@@ -1,110 +1,8 @@
-import { useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function Footer() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'RoofingContractor',
-      '@id': 'https://allphaseconstructionfl.com/#business',
-      name: 'All Phase Construction USA',
-      alternateName: [
-        'All Phase USA',
-        'All Phase Roofing',
-        'All Phase Roofing USA',
-      ],
-      url: 'https://allphaseconstructionfl.com/',
-      telephone: '754-227-5605',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '590 Goolsby Blvd',
-        addressLocality: 'Deerfield Beach',
-        addressRegion: 'FL',
-        postalCode: '33442',
-        addressCountry: 'US',
-      },
-      areaServed: [
-        {
-          '@type': 'City',
-          name: 'Deerfield Beach',
-          containedInPlace: {
-            '@type': 'AdministrativeArea',
-            name: 'Florida',
-            containedInPlace: {
-              '@type': 'Country',
-              name: 'US'
-            }
-          }
-        },
-        {
-          '@type': 'City',
-          name: 'Parkland',
-          containedInPlace: {
-            '@type': 'AdministrativeArea',
-            name: 'Florida',
-            containedInPlace: {
-              '@type': 'Country',
-              name: 'US'
-            }
-          }
-        },
-        {
-          '@type': 'GeoCircle',
-          geoMidpoint: {
-            '@type': 'GeoCoordinates',
-            latitude: '26.3186',
-            longitude: '-80.1147'
-          },
-          geoRadius: '25 miles',
-          description: 'Serving Deerfield Beach, Parkland, and surrounding HVHZ areas including Boca Raton, Pompano Beach, Coral Springs, Delray Beach, and Fort Lauderdale'
-        },
-        {
-          '@type': 'AdministrativeArea',
-          name: 'Palm Beach County, Florida',
-        },
-        {
-          '@type': 'AdministrativeArea',
-          name: 'Broward County, Florida',
-        },
-      ],
-      hasCredential: [
-        {
-          '@type': 'EducationalOccupationalCredential',
-          credentialCategory: 'License',
-          name: 'Florida State Certified Roofing Contractor - CCC1331464'
-        },
-        {
-          '@type': 'EducationalOccupationalCredential',
-          credentialCategory: 'License',
-          name: 'Florida State Certified General Contractor - CGC1526236'
-        },
-        {
-          '@type': 'EducationalOccupationalCredential',
-          credentialCategory: 'Certification',
-          name: 'HVHZ (High Velocity Hurricane Zone) Certified',
-          recognizedBy: {
-            '@type': 'Organization',
-            name: 'Florida Building Commission'
-          }
-        }
-      ],
-      description: 'All Phase Construction USA is a licensed Florida roofing contractor specializing exclusively in roof inspections, roof repairs, and full roof replacements for residential and commercial properties.',
-      sameAs: [
-        'https://www.allphaseusa.com',
-      ],
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      if (script.parentNode === document.head) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <footer className="bg-black border-t border-red-600">
       {/* Premium CTA Section */}
@@ -116,7 +14,7 @@ export default function Footer() {
           </h2>
 
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Whether you need a full roof replacement, a storm damage assessment, or just want a professional opinion on your roof's condition—All Phase Construction USA is here to help.
+            Whether you need a full roof replacement, a storm damage assessment, or just want a professional opinion on your roof's conditionâAll Phase Construction USA is here to help.
           </p>
 
           <p className="text-base text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -184,7 +82,7 @@ export default function Footer() {
               Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
             </p>
             <p className="text-gray-400 text-sm mb-4 font-semibold">
-              CCC-1331464 • CGC-1526236
+              CCC-1331464 â¢ CGC-1526236
             </p>
             <div className="space-y-2 text-gray-400 text-sm mb-6">
               <p>590 Goolsby Blvd</p>
@@ -418,7 +316,7 @@ export default function Footer() {
               </li>
               <li className="pt-2 mt-2 border-t border-neutral-800">
                 <Link to="/sitemap/#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium">
-                  View All Cities →
+                  View All Cities â
                 </Link>
               </li>
             </ul>
@@ -484,7 +382,7 @@ export default function Footer() {
         <div className="border-t border-neutral-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © 2025 All Phase Construction USA, LLC. All rights reserved.
+              Â© 2025 All Phase Construction USA, LLC. All rights reserved.
             </p>
             <div className="flex gap-6 text-gray-500 text-sm">
               <Link to="/privacy/" className="hover:text-red-600 transition-colors">
