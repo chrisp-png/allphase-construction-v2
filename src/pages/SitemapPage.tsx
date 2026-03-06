@@ -124,6 +124,17 @@ export default function SitemapPage() {
         { to: '/locations/broward-county', label: 'Broward County' },
         { to: '/locations/palm-beach-county', label: 'Palm Beach County' }
       ]
+    },
+    {
+      id: 'best-roofers',
+      title: 'Best Roofers',
+      links: [
+        { to: '/locations/deerfield-beach/best-roofers-deerfield-beach', label: 'Best Roofers in Deerfield Beach' },
+        { to: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Best Roofers in Fort Lauderdale' },
+        { to: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'Best Roofers in West Palm Beach' },
+        { to: '/locations/boca-raton/best-roofers-boca-raton', label: 'Best Roofers in Boca Raton' },
+        { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' }
+      ]
     }
   ];
 
