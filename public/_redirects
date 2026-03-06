@@ -149,7 +149,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 # Legacy trailing slash fixes
 /blog/ /blog 301
 /commercial-roofing/ /commercial-roofing 301
-/financing/ / 301
+/financing/ /financing 301
 /accessibility / 301
 
 # Legacy HTTP and www — force HTTPS
@@ -165,6 +165,22 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /flat-roof-inspection-broward-county /roof-inspection 301
 /margate /locations/margate 301
 /locations/deerfield-beach/service-area/pembroke-park /locations/pembroke-park 301
+/roofing-contractor-coral-springs-fl /locations/coral-springs 301!
+/roofing-contractor-tamarac-fl /locations/tamarac 301!
+/roofing-contractor-oakland-park-fl /roof-repair/oakland-park 301!
+/weston /roof-repair/weston 301!
+/west-palm-beach /locations/west-palm-beach 301!
+/plantation /locations/plantation 301!
+/lake-worth-beach /roof-repair/lake-worth-beach 301!
+/palm-springs /locations/west-palm-beach 301!
+/palm-beach-shores /locations/west-palm-beach 301!
+/service-areas/west-palm-beach /locations/west-palm-beach 301!
+/contact-roofing-contractor-deerfield-beach /contact 301!
+/locations/wilton-manors /roof-repair/wilton-manors 301!
+/locations/palm-springs /locations/west-palm-beach 301!
+/faq /frequently-asked-questions 301!
+/flat-roof-coatings /single-ply-roofing 301!
+/media-gallery /projects 301!
 
 # Missing legacy redirects — added 2026-02-27
 /Blog /blog 301!
