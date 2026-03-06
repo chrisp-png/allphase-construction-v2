@@ -142,6 +142,21 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale'
   },
+  '/locations/west-palm-beach/best-roofers-west-palm-beach': {
+    title: 'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
+    description: 'Looking for the best roofers in West Palm Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach'
+  },
+  '/locations/boca-raton/best-roofers-boca-raton': {
+    title: 'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
+    description: 'Looking for the best roofers in Boca Raton? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    canonical: 'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton'
+  },
+  '/locations/coral-springs/best-roofers-coral-springs': {
+    title: 'Top 5 Roofers in Coral Springs FL (2026) | All Phase',
+    description: 'Looking for the best roofers in Coral Springs? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    canonical: 'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs'
+  },
   '/locations/fort-lauderdale': {
     title: 'Fort Lauderdale Roofing Contractor | All Phase USA',
     description: 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.',
@@ -348,7 +363,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${cityName} Roof Repair | All Phase USA`,
-            description: `Roof repair in ${cityName}, FL — storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. Call (754) 227-5605.`,
+            description: `Roof repair in ${cityName}, FL â storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. Call (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
       ogTitle: `${cityName} Roof Repair | All Phase USA`,
             ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
