@@ -158,13 +158,13 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 # Legacy city URL format from old site
 /roofing-contractor-boynton-beach-fl /locations/boynton-beach 301
-/roofing-contractor-coconut-creek-fl /locations/coconut-creek 301
-/roofing-contractor-lantana-fl /locations/lantana 301
+/roofing-services/roof-repair/Coconut-Creek /roof-repair/coconut-creek 301!
+/roofing-contractor-lantana-fl /locations/lantana 301!
+/roofing-contractor-coconut-creek-fl /locations/coconut-creek 301!
+/margate /locations/margate 301!
+/flat-roof-inspection-broward-county /roof-inspection 301!
+/locations/deerfield-beach/service-area/pembroke-park /locations/pembroke-park 301!
 /roofing-contractor-pompano-beach-fl /locations/pompano-beach 301
-/roofing-services/roof-repair/Coconut-Creek /roof-repair/coconut-creek 301
-/flat-roof-inspection-broward-county /roof-inspection 301
-/margate /locations/margate 301
-/locations/deerfield-beach/service-area/pembroke-park /locations/pembroke-park 301
 /roofing-contractor-coral-springs-fl /locations/coral-springs 301!
 /roofing-contractor-tamarac-fl /locations/tamarac 301!
 /roofing-contractor-oakland-park-fl /roof-repair/oakland-park 301!
