@@ -8,7 +8,7 @@ const projectRoot = path.resolve(__dirname, '..');
 const publicDir = path.resolve(projectRoot, 'dist'); // Changed from 'public' - prerender to dist for Netlify deployment
 const distDir = path.resolve(projectRoot, 'dist');
 
-console.log('ð DEBUG: Directory paths:');
+console.log('Ã°ÂÂÂ DEBUG: Directory paths:');
 console.log('  projectRoot:', projectRoot);
 console.log('  publicDir:', publicDir);
 console.log('  distDir:', distDir);
@@ -144,10 +144,10 @@ function generateDeerfieldBeachHQContent() {
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Need Immediate Roofing Help in Deerfield Beach?</h3>
     <p style="margin-bottom: 1rem; color: #7f1d1d;">
-      ð <strong>Emergency Roof Repairs:</strong> <a href="/roof-repair/deerfield-beach" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast Deerfield Beach Repair Service</a> â Active leaks, storm damage, emergency tarping available 24/7
+      Ã°ÂÂÂ <strong>Emergency Roof Repairs:</strong> <a href="/roof-repair/deerfield-beach" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast Deerfield Beach Repair Service</a> Ã¢ÂÂ Active leaks, storm damage, emergency tarping available 24/7
     </p>
     <p style="margin-bottom: 0; color: #7f1d1d;">
-      ð <strong>Free Professional Roof Inspections:</strong> <a href="/roof-inspection/deerfield-beach" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point Deerfield Beach Roof Inspection</a> â Comprehensive assessment with photo documentation
+      Ã°ÂÂÂ <strong>Free Professional Roof Inspections:</strong> <a href="/roof-inspection/deerfield-beach" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point Deerfield Beach Roof Inspection</a> Ã¢ÂÂ Comprehensive assessment with photo documentation
     </p>
   </div>
 
@@ -158,9 +158,9 @@ function generateDeerfieldBeachHQContent() {
   <p>What sets us apart from standard roofing contractors operating in Deerfield Beach:</p>
 
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
-    <li><strong>Dual-Licensed Roofing Authority:</strong> We hold both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses. This dual-licensing provides structural engineering oversight that standard CCC-only contractors cannot match. Our CGC license means we understand building structure, load-bearing requirements, and comprehensive building code compliance â not just roofing materials and installation.</li>
+    <li><strong>Dual-Licensed Roofing Authority:</strong> We hold both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses. This dual-licensing provides structural engineering oversight that standard CCC-only contractors cannot match. Our CGC license means we understand building structure, load-bearing requirements, and comprehensive building code compliance Ã¢ÂÂ not just roofing materials and installation.</li>
     <li><strong>HVHZ Certified & Hurricane Compliant:</strong> Every Deerfield Beach installation meets High Velocity Hurricane Zone (HVHZ) compliance with 175+ mph wind ratings, enhanced fastening schedules, and reinforced roof-to-wall connections. We specialize in hurricane-resistant roofing systems engineered to protect your property during severe weather events.</li>
-    <li><strong>Local Deerfield Beach Presence:</strong> Operating from our Deerfield Beach headquarters at 590 Goolsby Blvd enables rapid response to emergency calls, same-day inspection scheduling, and direct contractor oversight on every project. We're not a remote franchise â we're your local roofing experts.</li>
+    <li><strong>Local Deerfield Beach Presence:</strong> Operating from our Deerfield Beach headquarters at 590 Goolsby Blvd enables rapid response to emergency calls, same-day inspection scheduling, and direct contractor oversight on every project. We're not a remote franchise Ã¢ÂÂ we're your local roofing experts.</li>
     <li><strong>Owner-Operator Accountability:</strong> Direct contractor involvement on every Deerfield Beach project ensures quality control, transparent communication, and accountability that large franchise operations and lead-generation companies cannot provide.</li>
   </ul>
 
@@ -270,7 +270,7 @@ function generateBocaRatonServiceHubContent() {
         </div>
         <div style="width: 1px; height: 30px; background: rgba(255,255,255,0.15);"></div>
         <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <span style="color: #fbbf24; font-size: 1.25rem;">âââââ</span>
+          <span style="color: #fbbf24; font-size: 1.25rem;">Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ</span>
           <span style="color: #e5e7eb; font-weight: 600;">4.8 Google Rating</span>
           <span style="color: #9ca3af;">(137 reviews)</span>
         </div>
@@ -286,7 +286,7 @@ function generateBocaRatonServiceHubContent() {
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
         <!-- Benefit Block 1 -->
         <div style="display: flex; gap: 1rem; align-items: start;">
-          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">â</div>
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">Ã¢ÂÂ</div>
           <div>
             <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">Fully Licensed & Insured</h3>
             <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">Licensed, insured, and bonded for your complete peace of mind</p>
@@ -295,7 +295,7 @@ function generateBocaRatonServiceHubContent() {
 
         <!-- Benefit Block 2 -->
         <div style="display: flex; gap: 1rem; align-items: start;">
-          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">â</div>
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">Ã¢ÂÂ</div>
           <div>
             <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">In-House Expert Team</h3>
             <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">All work performed by our trained, professional roofing crew</p>
@@ -304,7 +304,7 @@ function generateBocaRatonServiceHubContent() {
 
         <!-- Benefit Block 3 -->
         <div style="display: flex; gap: 1rem; align-items: start;">
-          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">â</div>
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">Ã¢ÂÂ</div>
           <div>
             <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">Local Boca Raton Expertise</h3>
             <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">Years of experience serving Boca Raton homeowners</p>
@@ -313,7 +313,7 @@ function generateBocaRatonServiceHubContent() {
 
         <!-- Benefit Block 4 -->
         <div style="display: flex; gap: 1rem; align-items: start;">
-          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">â</div>
+          <div style="flex-shrink: 0; width: 40px; height: 40px; background: #dc2626; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">Ã¢ÂÂ</div>
           <div>
             <h3 style="color: #111827; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">Consistent Quality</h3>
             <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin: 0;">Reliable workmanship backed by our BBB A+ rating</p>
@@ -328,7 +328,7 @@ function generateBocaRatonServiceHubContent() {
     <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Dedicated to the Boca Raton Community</h2>
 
     <p style="max-width: 750px; color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 3rem;">
-      As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damageâcrucial for maintaining the safety and comfort of your home.
+      As a long-standing business in the area, we are dedicated to the local community and our customers. Emergency roofing services are available 24/7, providing fast response for roof leaks and storm damageÃ¢ÂÂcrucial for maintaining the safety and comfort of your home.
     </p>
 
     <!-- 2-Column Service Grid -->
@@ -397,7 +397,7 @@ function generateBocaRatonServiceHubContent() {
         </div>
 
         <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-          <div style="color: #fbbf24; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">4.8â</div>
+          <div style="color: #fbbf24; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">4.8Ã¢ÂÂ</div>
           <div style="color: #e5e7eb; font-weight: 600;">Google Rating (137 reviews)</div>
         </div>
 
@@ -435,15 +435,15 @@ function generateBocaRatonServiceHubContent() {
         <h3 style="color: #111827; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem;">What You Get from a Real Roof Inspection:</h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem;">
-            <span style="color: #dc2626; font-weight: bold;">â</span>
+            <span style="color: #dc2626; font-weight: bold;">Ã¢ÂÂ</span>
             <span>Photos of key roof areas (edges, penetrations, valleys, transitions)</span>
           </li>
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem;">
-            <span style="color: #dc2626; font-weight: bold;">â</span>
+            <span style="color: #dc2626; font-weight: bold;">Ã¢ÂÂ</span>
             <span>Clear notes on what is failed vs what is aging</span>
           </li>
           <li style="padding: 0.75rem 0; color: #374151; display: flex; gap: 0.75rem;">
-            <span style="color: #dc2626; font-weight: bold;">â</span>
+            <span style="color: #dc2626; font-weight: bold;">Ã¢ÂÂ</span>
             <span>A recommendation that matches the roof's condition and your timeline</span>
           </li>
         </ul>
@@ -453,11 +453,11 @@ function generateBocaRatonServiceHubContent() {
       <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-top: 4px solid #dc2626;">
         <h3 style="color: #111827; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem;">Repair vs Replacement (How We Decide):</h3>
         <div style="margin-bottom: 1.5rem;">
-          <div style="color: #059669; font-weight: 700; margin-bottom: 0.5rem;">â Repair When:</div>
+          <div style="color: #059669; font-weight: 700; margin-bottom: 0.5rem;">Ã¢ÂÂ Repair When:</div>
           <p style="color: #374151; margin: 0; padding-left: 1.5rem;">The system is stable and failures are isolated</p>
         </div>
         <div>
-          <div style="color: #dc2626; font-weight: 700; margin-bottom: 0.5rem;">â  Replace When:</div>
+          <div style="color: #dc2626; font-weight: 700; margin-bottom: 0.5rem;">Ã¢ÂÂ  Replace When:</div>
           <p style="color: #374151; margin: 0; padding-left: 1.5rem;">The system is at end-of-life or failing in multiple zones</p>
         </div>
       </div>
@@ -480,23 +480,23 @@ function generateBocaRatonServiceHubContent() {
 
       <ul style="list-style: none; padding: 0; margin: 0;">
         <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
-          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">â</span>
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">Ã¢ÂÂ</span>
           <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Roof inspections and leak investigations</span>
         </li>
         <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
-          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">â</span>
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">Ã¢ÂÂ</span>
           <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Roof repair (tile, shingle, metal, flat)</span>
         </li>
         <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
-          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">â</span>
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">Ã¢ÂÂ</span>
           <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Full roof replacement and reroofing</span>
         </li>
         <li style="padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 1rem;">
-          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">â</span>
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">Ã¢ÂÂ</span>
           <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Storm and hurricane damage assessments</span>
         </li>
         <li style="padding: 1.25rem 0; display: flex; align-items: center; gap: 1rem;">
-          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">â</span>
+          <span style="color: #dc2626; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">Ã¢ÂÂ</span>
           <span style="color: #e5e7eb; font-size: 1.05rem; font-weight: 500;">Preventive maintenance for aging roofs</span>
         </li>
       </ul>
@@ -516,15 +516,15 @@ function generateBocaRatonServiceHubContent() {
       <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-left: 4px solid #dc2626;">
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
-            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">â¢</span>
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">Ã¢ÂÂ¢</span>
             <span style="font-size: 1rem; line-height: 1.6;">Cracked or slipped tiles exposing underlayment</span>
           </li>
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
-            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">â¢</span>
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">Ã¢ÂÂ¢</span>
             <span style="font-size: 1rem; line-height: 1.6;">Nail pops and lifted shingles</span>
           </li>
           <li style="padding: 0.75rem 0; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
-            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">â¢</span>
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">Ã¢ÂÂ¢</span>
             <span style="font-size: 1rem; line-height: 1.6;">Failed pipe boots and vent flashings</span>
           </li>
         </ul>
@@ -534,11 +534,11 @@ function generateBocaRatonServiceHubContent() {
       <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; border-left: 4px solid #dc2626;">
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
-            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">â¢</span>
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">Ã¢ÂÂ¢</span>
             <span style="font-size: 1rem; line-height: 1.6;">Valley and wall transition leaks</span>
           </li>
           <li style="padding: 0.75rem 0; color: #374151; display: flex; gap: 0.75rem; align-items: start;">
-            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">â¢</span>
+            <span style="color: #dc2626; font-weight: bold; font-size: 1.2rem; flex-shrink: 0;">Ã¢ÂÂ¢</span>
             <span style="font-size: 1rem; line-height: 1.6;">Flat roof seam and drainage issues</span>
           </li>
         </ul>
@@ -683,10 +683,10 @@ function generateServiceHubContent(cityName, citySlug) {
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Need Immediate Help in ${cityName}?</h3>
     <p style="margin-bottom: 1rem; color: #7f1d1d;">
-      ð <strong>Emergency Roof Repairs:</strong> <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast ${cityName} Repair Service</a> â Active leaks, storm damage, emergency tarping
+      Ã°ÂÂÂ <strong>Emergency Roof Repairs:</strong> <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast ${cityName} Repair Service</a> Ã¢ÂÂ Active leaks, storm damage, emergency tarping
     </p>
     <p style="margin-bottom: 0; color: #7f1d1d;">
-      ð <strong>Professional Roof Inspections:</strong> <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point ${cityName} Roof Inspection</a> â Free estimates, insurance documentation
+      Ã°ÂÂÂ <strong>Professional Roof Inspections:</strong> <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point ${cityName} Roof Inspection</a> Ã¢ÂÂ Free estimates, insurance documentation
     </p>
   </div>
 
@@ -745,10 +745,10 @@ function generateRoofRepairContent(cityName, citySlug) {
 
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Emergency Roof Repair in ${cityName}</h3>
-    <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">ð Call (754) 227-5605 for Same-Day Emergency Service</p>
+    <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">Ã°ÂÂÂ Call (754) 227-5605 for Same-Day Emergency Service</p>
     <p style="margin-bottom: 1rem; color: #7f1d1d;">Active leaks, storm damage, missing shingles, and emergency tarping available throughout ${cityName}.</p>
     <p style="margin-bottom: 0; color: #7f1d1d;">
-      ð¡ <strong>Not sure if you need a repair?</strong> Start with our <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">professional ${cityName} roof inspection</a> â free estimates included.
+      Ã°ÂÂÂ¡ <strong>Not sure if you need a repair?</strong> Start with our <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">professional ${cityName} roof inspection</a> Ã¢ÂÂ free estimates included.
     </p>
   </div>
 
@@ -769,7 +769,7 @@ function generateRoofRepairContent(cityName, citySlug) {
 
   <h2>Why ${cityName} Property Owners Trust Our Repair Service</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
-    <li><strong>Dual-Licensed Expertise:</strong> Our CCC and CGC licenses mean we assess structural integrity alongside surface repairs â critical for identifying hidden damage that standard roofers miss.</li>
+    <li><strong>Dual-Licensed Expertise:</strong> Our CCC and CGC licenses mean we assess structural integrity alongside surface repairs Ã¢ÂÂ critical for identifying hidden damage that standard roofers miss.</li>
     <li><strong>Same-Day Emergency Response:</strong> Our Deerfield Beach headquarters enables rapid deployment to ${cityName} emergency repair calls with fully-equipped service vehicles.</li>
     <li><strong>Insurance Documentation:</strong> We provide detailed photo documentation, moisture readings, and scope-of-work reports that support ${cityName} insurance claim submissions.</li>
     <li><strong>Permanent Solutions:</strong> We address root causes, not just symptoms, ensuring repairs last and preventing recurring problems.</li>
@@ -779,7 +779,7 @@ function generateRoofRepairContent(cityName, citySlug) {
   <p>Our ${cityName} roof repair service follows a proven diagnostic and repair protocol:</p>
   <ol style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>Emergency Response:</strong> We deploy to ${cityName} locations within hours for active leaks and storm damage emergencies.</li>
-    <li><strong>Comprehensive Inspection:</strong> Our technicians perform thorough roof inspections to identify all damage â not just obvious problems.</li>
+    <li><strong>Comprehensive Inspection:</strong> Our technicians perform thorough roof inspections to identify all damage Ã¢ÂÂ not just obvious problems.</li>
     <li><strong>Detailed Estimate:</strong> We provide transparent pricing with itemized repair scopes and photo documentation.</li>
     <li><strong>Professional Repair:</strong> All work follows manufacturer specifications and building code requirements.</li>
     <li><strong>Quality Verification:</strong> We test all repairs and provide warranty documentation for ${cityName} customers.</li>
@@ -821,15 +821,15 @@ function generateRoofInspectionContent(cityName, citySlug) {
 
   <div style="background: #ecfdf5; border-left: 4px solid #059669; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #065f46; margin-bottom: 0.75rem;">Free ${cityName} Roof Inspection</h3>
-    <p style="margin-bottom: 0.5rem; color: #064e3b; font-weight: bold;">ð Includes: Photo Documentation, Written Report, Cost Estimate</p>
+    <p style="margin-bottom: 0.5rem; color: #064e3b; font-weight: bold;">Ã°ÂÂÂ Includes: Photo Documentation, Written Report, Cost Estimate</p>
     <p style="margin-bottom: 1rem; color: #064e3b;">Call (754) 227-5605 to schedule your professional ${cityName} roof inspection. Same-day availability throughout Broward and Palm Beach Counties.</p>
     <p style="margin-bottom: 0; color: #064e3b;">
-      ð§ <strong>Already know you need repairs?</strong> <a href="/roof-repair/${citySlug}" style="color: #059669; text-decoration: underline; font-weight: bold;">Get fast ${cityName} roof repair service</a>.
+      Ã°ÂÂÂ§ <strong>Already know you need repairs?</strong> <a href="/roof-repair/${citySlug}" style="color: #059669; text-decoration: underline; font-weight: bold;">Get fast ${cityName} roof repair service</a>.
     </p>
   </div>
 
   <h2>Why ${cityName} Property Owners Choose Our Inspection Service</h2>
-  <p>All Phase Construction USA's ${cityName} roof inspections go beyond surface-level assessments. Our dual-licensed expertise (CCC & CGC) means we evaluate <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">structural integrity, building code compliance</a>, and long-term performance â not just shingle condition.</p>
+  <p>All Phase Construction USA's ${cityName} roof inspections go beyond surface-level assessments. Our dual-licensed expertise (CCC & CGC) means we evaluate <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">structural integrity, building code compliance</a>, and long-term performance Ã¢ÂÂ not just shingle condition.</p>
 
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>21-Point Comprehensive Assessment:</strong> We inspect every critical roof component from underlayment to ventilation systems.</li>
@@ -1108,14 +1108,14 @@ function loadProductionTemplate() {
   if (CLEAN_VITE_TEMPLATE) return CLEAN_VITE_TEMPLATE;
   const distIndexPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(distIndexPath)) {
-    throw new Error('â dist/index.html not found. Run npm run build first.');
+    throw new Error('Ã¢ÂÂ dist/index.html not found. Run npm run build first.');
   }
   const template = fs.readFileSync(distIndexPath, 'utf-8');
   if (template.includes('/src/main.tsx')) {
-    throw new Error('â Dev build detected. Run npm run build first.');
+    throw new Error('Ã¢ÂÂ Dev build detected. Run npm run build first.');
   }
   CLEAN_VITE_TEMPLATE = template;
-  console.log('â Clean Vite template locked in memory.');
+  console.log('Ã¢ÂÂ Clean Vite template locked in memory.');
   return CLEAN_VITE_TEMPLATE;
 }
 
@@ -1193,7 +1193,13 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
     ]
   };
-  let schemasBlock = `\n    <script type="application/ld+json">\n${JSON.stringify(baseOrgSchema, null, 2)}\n    </script>`;
+  // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
+  const schemaToInject = (jsonLdSchema && (jsonLdSchema['@type'] === 'RoofingContractor' || (Array.isArray(jsonLdSchema) && jsonLdSchema[0]?.['@type'] === 'RoofingContractor')))
+    ? null
+    : baseOrgSchema;
+  let schemasBlock = schemaToInject
+    ? `\n    <script type="application/ld+json">\n${JSON.stringify(schemaToInject, null, 2)}\n    </script>`
+    : '';
   if (jsonLdSchema) {
     schemasBlock += `\n    <!-- Page-Specific JSON-LD Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(jsonLdSchema, null, 2)}\n    </script>`;
   }
@@ -1283,7 +1289,7 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     if (rootStart !== -1 && bodyEnd !== -1) {
       html = html.slice(0, rootStart) + `<div id="root">${seoContent}</div>` + html.slice(bodyEnd);
     } else {
-      throw new Error('â Could not find root div or closing body tag in template.');
+      throw new Error('Ã¢ÂÂ Could not find root div or closing body tag in template.');
     }
 
     // Inject static crawler links before </body>
@@ -1353,7 +1359,7 @@ function getSEOMetadata(urlPath, cityName = null) {
   // Fallback - FAIL LOUDLY if metadata missing
   // This prevents silent injection of wrong metadata at build time
   throw new Error(
-    `â MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
+    `Ã¢ÂÂ MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
     `Add explicit metadata to scripts/seo-titles.json or handle this route in getSEOMetadata().\n` +
     `Routes should NOT rely on fallback metadata - every route must be explicitly defined.`
   );
@@ -1383,7 +1389,7 @@ function writeToPublicAndDist(relativePath, content) {
  * Generate all static HTML files
  */
 function generateStaticFiles() {
-  console.log('ðï¸  Generating 3-Silo Lead Generation Architecture...\n');
+  console.log('Ã°ÂÂÂÃ¯Â¸Â  Generating 3-Silo Lead Generation Architecture...\n');
 
   // Create public directory if it doesn't exist
   if (!fs.existsSync(publicDir)) {
@@ -1404,14 +1410,14 @@ function generateStaticFiles() {
   // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering
   const homePath = path.join(publicDir, 'index.html');
-  console.log('ð DEBUG: About to write homepage to:', homePath);
+  console.log('Ã°ÂÂÂ DEBUG: About to write homepage to:', homePath);
   try {
     fs.writeFileSync(homePath, homeHTML);
-    console.log('â Generated: dist/index.html');
+    console.log('Ã¢ÂÂ Generated: dist/index.html');
     console.log('  File exists after write?', fs.existsSync(homePath));
     console.log('  File size:', fs.statSync(homePath).size, 'bytes');
   } catch (err) {
-    console.error('â ERROR writing homepage:', err);
+    console.error('Ã¢ÂÂ ERROR writing homepage:', err);
   }
   totalPages++;
 
@@ -1557,14 +1563,14 @@ function generateStaticFiles() {
 
     const dir = path.join(publicDir, pagePath.substring(1));
     const filePath = path.join(dir, 'index.html');
-    console.log(`ð DEBUG: Writing service page to: ${filePath}`);
+    console.log(`Ã°ÂÂÂ DEBUG: Writing service page to: ${filePath}`);
     try {
       fs.mkdirSync(dir, { recursive: true });
       fs.writeFileSync(filePath, html);
-      console.log(`â Generated: dist${pagePath}/index.html`);
+      console.log(`Ã¢ÂÂ Generated: dist${pagePath}/index.html`);
       console.log(`  File exists? ${fs.existsSync(filePath)}, Size: ${fs.statSync(filePath).size} bytes`);
     } catch (err) {
-      console.error(`â ERROR writing ${pagePath}:`, err);
+      console.error(`Ã¢ÂÂ ERROR writing ${pagePath}:`, err);
     }
     totalPages++;
   });
@@ -1586,10 +1592,10 @@ ${companyAuthorityFooter()}
     'https://allphaseconstructionfl.com/roof-replacement',
     roofReplacementContent
   ));
-  console.log('â Prerendered: roof-replacement/index.html');
+  console.log('Ã¢ÂÂ Prerendered: roof-replacement/index.html');
   totalPages++;
   // 2.3. Generate Additional Location Pages (not in main LOCATIONS array)
-  console.log('\nð Generating Additional Location Pages...\n');
+  console.log('\nÃ°ÂÂÂ Generating Additional Location Pages...\n');
 
   const additionalLocations = [
     { path: '/locations/gulf-stream', title: 'Gulf Stream, FL Roofing Services', city: 'Gulf Stream' },
@@ -1616,10 +1622,10 @@ ${companyAuthorityFooter()}
   <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
     <h2 style="color: #111827; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Our ${city} Roofing Services</h2>
     <ul style="color: #374151; font-size: 1.05rem; line-height: 2; margin: 0; padding-left: 1.5rem;">
-      <li><strong>Roof Repair</strong> â Emergency and scheduled repairs for all roof types</li>
-      <li><strong>Roof Replacement</strong> â Complete reroof with HVHZ-compliant materials</li>
-      <li><strong>Roof Inspection</strong> â Thorough assessments for insurance and peace of mind</li>
-      <li><strong>Preventive Maintenance</strong> â Programs to extend your roof's lifespan</li>
+      <li><strong>Roof Repair</strong> Ã¢ÂÂ Emergency and scheduled repairs for all roof types</li>
+      <li><strong>Roof Replacement</strong> Ã¢ÂÂ Complete reroof with HVHZ-compliant materials</li>
+      <li><strong>Roof Inspection</strong> Ã¢ÂÂ Thorough assessments for insurance and peace of mind</li>
+      <li><strong>Preventive Maintenance</strong> Ã¢ÂÂ Programs to extend your roof's lifespan</li>
     </ul>
   </div>
 
@@ -1643,12 +1649,12 @@ ${companyAuthorityFooter()}
     const dir = path.join(publicDir, pagePath.substring(1));
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), html);
-    console.log(`â Generated: dist${pagePath}/index.html`);
+    console.log(`Ã¢ÂÂ Generated: dist${pagePath}/index.html`);
     totalPages++;
   });
 
   // 2.4. Generate Top-5-Roofer Service Area Pages
-  console.log('\nð Generating Top-5-Roofer Service Area Pages...\n');
+  console.log('\nÃ°ÂÂÂ Generating Top-5-Roofer Service Area Pages...\n');
 
   const topRooferPages = [
     { path: '/locations/deerfield-beach/service-area/boca-raton/top-5-roofer', city: 'Boca Raton' },
@@ -1678,11 +1684,11 @@ ${companyAuthorityFooter()}
   <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
     <h2 style="color: #111827; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">What Makes Us a Top-Rated Roofer?</h2>
     <ul style="color: #374151; font-size: 1.05rem; line-height: 2; margin: 0; padding-left: 1.5rem;">
-      <li><strong>Dual Licensing</strong> â Both roofing (CCC) and general contracting (CGC) licenses</li>
-      <li><strong>HVHZ Certified</strong> â Approved for High-Velocity Hurricane Zone installations</li>
-      <li><strong>Manufacturer Warranties</strong> â Premium warranties on all materials and workmanship</li>
-      <li><strong>Local Expertise</strong> â Based in Deerfield Beach, serving South Florida since 2003</li>
-      <li><strong>A+ BBB Rating</strong> â Consistent 5-star reviews and customer satisfaction</li>
+      <li><strong>Dual Licensing</strong> Ã¢ÂÂ Both roofing (CCC) and general contracting (CGC) licenses</li>
+      <li><strong>HVHZ Certified</strong> Ã¢ÂÂ Approved for High-Velocity Hurricane Zone installations</li>
+      <li><strong>Manufacturer Warranties</strong> Ã¢ÂÂ Premium warranties on all materials and workmanship</li>
+      <li><strong>Local Expertise</strong> Ã¢ÂÂ Based in Deerfield Beach, serving South Florida since 2003</li>
+      <li><strong>A+ BBB Rating</strong> Ã¢ÂÂ Consistent 5-star reviews and customer satisfaction</li>
     </ul>
   </div>
 
@@ -1706,12 +1712,12 @@ ${companyAuthorityFooter()}
     const dir = path.join(publicDir, pagePath.substring(1));
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), html);
-    console.log(`â Generated: dist${pagePath}/index.html`);
+    console.log(`Ã¢ÂÂ Generated: dist${pagePath}/index.html`);
     totalPages++;
   });
 
   // 2.5. Generate Blog Post Pages from Sitemap
-  console.log('\nð Generating Blog Post Pages from Sitemap...\n');
+  console.log('\nÃ°ÂÂÂ Generating Blog Post Pages from Sitemap...\n');
 
   try {
     const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
@@ -1750,7 +1756,7 @@ ${companyAuthorityFooter()}
 
     <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
       <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">
-        <strong>Expert Roofing Insights</strong> from All Phase Construction USA â Your trusted dual-licensed roofing contractor serving Broward and Palm Beach County.
+        <strong>Expert Roofing Insights</strong> from All Phase Construction USA Ã¢ÂÂ Your trusted dual-licensed roofing contractor serving Broward and Palm Beach County.
       </p>
     </div>
 
@@ -1784,17 +1790,17 @@ ${companyAuthorityFooter()}
           const blogDir = path.join(publicDir, 'blog', slug);
           fs.mkdirSync(blogDir, { recursive: true });
           fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
-          console.log(`â Generated: dist/blog/${slug}/index.html`);
+          console.log(`Ã¢ÂÂ Generated: dist/blog/${slug}/index.html`);
           totalPages++;
         });
       } else {
-        console.log('â¹ï¸ No blog posts found in sitemap\n');
+        console.log('Ã¢ÂÂ¹Ã¯Â¸Â No blog posts found in sitemap\n');
       }
     } else {
-      console.log('â ï¸ Sitemap not found at public/sitemap.xml\n');
+      console.log('Ã¢ÂÂ Ã¯Â¸Â Sitemap not found at public/sitemap.xml\n');
     }
   } catch (err) {
-    console.log('â ï¸ Error generating blog posts:', err.message);
+    console.log('Ã¢ÂÂ Ã¯Â¸Â Error generating blog posts:', err.message);
   }
 
   // 3. Generate 3-Silo City Pages for all cities
@@ -1802,7 +1808,7 @@ ${companyAuthorityFooter()}
                           'west-palm-beach', 'delray-beach', 'boynton-beach', 'deerfield-beach',
                           'parkland', 'coconut-creek', 'wellington'];
 
-  console.log('\nð Generating Location Pages from Single Source of Truth...\n');
+  console.log('\nÃ°ÂÂÂ Generating Location Pages from Single Source of Truth...\n');
 
   // Generate /locations/:slug pages from LOCATIONS (single source of truth)
   LOCATIONS.forEach((location) => {
@@ -1834,11 +1840,11 @@ ${companyAuthorityFooter()}
 
     // Write to both public/ and dist/ (if dist exists)
     writeToPublicAndDist(`locations/${slug}/index.html`, hubHTML);
-    console.log(`â Generated: dist/locations/${slug}/index.html`);
+    console.log(`Ã¢ÂÂ Generated: dist/locations/${slug}/index.html`);
     totalPages++;
   });
 
-  console.log('\nð Generating 3-Silo City Pages (Repair + Inspection spokes)...\n');
+  console.log('\nÃ°ÂÂÂ Generating 3-Silo City Pages (Repair + Inspection spokes)...\n');
 
   // Generate /roof-repair/:slug and /roof-inspection/:slug pages
   cities.forEach(({ slug, city }) => {
@@ -1860,7 +1866,7 @@ ${companyAuthorityFooter()}
     const repairDir = path.join(publicDir, 'roof-repair', citySlug);
     fs.mkdirSync(repairDir, { recursive: true });
     fs.writeFileSync(path.join(repairDir, 'index.html'), repairHTML);
-    console.log(`â Generated: dist/roof-repair/${citySlug}/index.html`);
+    console.log(`Ã¢ÂÂ Generated: dist/roof-repair/${citySlug}/index.html`);
     totalPages++;
 
     // SILO 3: Roof Inspection - /roof-inspection/[city]
@@ -1875,7 +1881,7 @@ ${companyAuthorityFooter()}
     const inspectionDir = path.join(publicDir, 'roof-inspection', citySlug);
     fs.mkdirSync(inspectionDir, { recursive: true });
     fs.writeFileSync(path.join(inspectionDir, 'index.html'), inspectionHTML);
-    console.log(`â Generated: dist/roof-inspection/${citySlug}/index.html`);
+    console.log(`Ã¢ÂÂ Generated: dist/roof-inspection/${citySlug}/index.html`);
     totalPages++;
   });
 
@@ -1896,7 +1902,7 @@ ${companyAuthorityFooter()}
     'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach',
     bestRoofersDFBContent
   ));
-  console.log('â Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
+  console.log('Ã¢ÂÂ Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
 
   // Best Roofers Fort Lauderdale - Premium Money Page
   const bestRoofersFTLDir = path.join(distDir, 'locations/fort-lauderdale/best-roofers-fort-lauderdale');
@@ -1920,7 +1926,7 @@ ${companyAuthorityFooter()}
     'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale',
     bestRoofersFTLContent
   ));
-  console.log('â Prerendered: locations/fort-lauderdale/best-roofers-fort-lauderdale/index.html');
+  console.log('Ã¢ÂÂ Prerendered: locations/fort-lauderdale/best-roofers-fort-lauderdale/index.html');
 
   // Best Roofers West Palm Beach - Premium Money Page
   const bestRoofersWPBDir = path.join(distDir, 'locations/west-palm-beach/best-roofers-west-palm-beach');
@@ -1944,7 +1950,7 @@ ${companyAuthorityFooter()}
     'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach',
     bestRoofersWPBContent
   ));
-  console.log('â Prerendered: locations/west-palm-beach/best-roofers-west-palm-beach/index.html');
+  console.log('Ã¢ÂÂ Prerendered: locations/west-palm-beach/best-roofers-west-palm-beach/index.html');
 
   // Best Roofers Boca Raton - Premium Money Page
   const bestRoofersBocaDir = path.join(distDir, 'locations/boca-raton/best-roofers-boca-raton');
@@ -1968,7 +1974,7 @@ ${companyAuthorityFooter()}
     'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton',
     bestRoofersBocaContent
   ));
-  console.log('â Prerendered: locations/boca-raton/best-roofers-boca-raton/index.html');
+  console.log('Ã¢ÂÂ Prerendered: locations/boca-raton/best-roofers-boca-raton/index.html');
 
   // Best Roofers Coral Springs - Premium Money Page
   const bestRoofersCoralDir = path.join(distDir, 'locations/coral-springs/best-roofers-coral-springs');
@@ -1992,7 +1998,7 @@ ${companyAuthorityFooter()}
     'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs',
     bestRoofersCoralContent
   ));
-  console.log('â Prerendered: locations/coral-springs/best-roofers-coral-springs/index.html');
+  console.log('Ã¢ÂÂ Prerendered: locations/coral-springs/best-roofers-coral-springs/index.html');
 
   // ============================================================
   // REGRESSION SAFEGUARD: Verify dist/index.html wasn't corrupted
@@ -2002,18 +2008,18 @@ ${companyAuthorityFooter()}
     const distHTML = fs.readFileSync(distIndex, 'utf-8');
     if (distHTML.includes('/src/main.tsx')) {
       throw new Error(
-        'â REGRESSION: dist/index.html references /src/main.tsx!\n' +
+        'Ã¢ÂÂ REGRESSION: dist/index.html references /src/main.tsx!\n' +
         'The Vite production build was overwritten with dev content.\n' +
         'This would break the live site. Build aborted.'
       );
     }
     if (!distHTML.includes('/assets/')) {
       throw new Error(
-        'â REGRESSION: dist/index.html missing /assets/ references!\n' +
+        'Ã¢ÂÂ REGRESSION: dist/index.html missing /assets/ references!\n' +
         'Production Vite bundles are gone. Build aborted.'
       );
     }
-    console.log('\nâ Safeguard passed: dist/index.html contains production assets');
+    console.log('\nÃ¢ÂÂ Safeguard passed: dist/index.html contains production assets');
   }
 
     // ============================================================
@@ -2030,33 +2036,33 @@ ${companyAuthorityFooter()}
         // FAIL if root is empty (prerender content not injected inside root)
                 if (locationHTML.includes('<div id="root"></div>')) {
           throw new Error(
-            `â REGRESSION: dist/locations/${slug}/index.html has EMPTY root!\n` +
+            `Ã¢ÂÂ REGRESSION: dist/locations/${slug}/index.html has EMPTY root!\n` +
             'Prerender content must be injected INSIDE <div id="root">, not outside.\n' +
             'Build aborted.'
           );
         }
       }
     }
-    console.log('\nâ Safeguard 2 passed: All location pages have non-empty root divs');
+    console.log('\nÃ¢ÂÂ Safeguard 2 passed: All location pages have non-empty root divs');
   }
-console.log(`\nâ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
-  console.log(`\nð Architecture Breakdown:`);
+console.log(`\nÃ¢ÂÂ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
+  console.log(`\nÃ°ÂÂÂ Architecture Breakdown:`);
   console.log(`   - Homepage: 1 page`);
   console.log(`   - Service Pages: ${servicePages.length} pages`);
   console.log(`   - City Service Hubs: ${cities.filter(c => !c.slug.includes('county')).length} pages`);
   console.log(`   - City Roof Repairs: ${cities.filter(c => !c.slug.includes('county')).length} pages`);
   console.log(`   - City Roof Inspections: ${cities.filter(c => !c.slug.includes('county')).length} pages`);
-  console.log(`\nð¯ Lead Generation Structure:`);
-  console.log(`   â Service Hubs: /locations/[city] â Broad authority`);
-  console.log(`   â Repair Spokes: /roof-repair/[city] â High-intent leads`);
-  console.log(`   â Inspection Spokes: /roof-inspection/[city] â Top-of-funnel leads`);
-  console.log(`\nð¼ Every page includes:`);
-  console.log(`   â 500-700 words of branded content`);
-  console.log(`   â Inter-page lead-gen links (Hub â Repair â Inspection)`);
-  console.log(`   â Dual-licensing emphasis (CCC & CGC)`);
-  console.log(`   â HVHZ certification messaging`);
-  console.log(`   â "Serving from Deerfield Beach HQ" context`);
-  console.log(`   â Company authority footer (250+ words)`);
+  console.log(`\nÃ°ÂÂÂ¯ Lead Generation Structure:`);
+  console.log(`   Ã¢ÂÂ Service Hubs: /locations/[city] Ã¢ÂÂ Broad authority`);
+  console.log(`   Ã¢ÂÂ Repair Spokes: /roof-repair/[city] Ã¢ÂÂ High-intent leads`);
+  console.log(`   Ã¢ÂÂ Inspection Spokes: /roof-inspection/[city] Ã¢ÂÂ Top-of-funnel leads`);
+  console.log(`\nÃ°ÂÂÂ¼ Every page includes:`);
+  console.log(`   Ã¢ÂÂ 500-700 words of branded content`);
+  console.log(`   Ã¢ÂÂ Inter-page lead-gen links (Hub Ã¢ÂÂ Repair Ã¢ÂÂ Inspection)`);
+  console.log(`   Ã¢ÂÂ Dual-licensing emphasis (CCC & CGC)`);
+  console.log(`   Ã¢ÂÂ HVHZ certification messaging`);
+  console.log(`   Ã¢ÂÂ "Serving from Deerfield Beach HQ" context`);
+  console.log(`   Ã¢ÂÂ Company authority footer (250+ words)`);
 }
 
 // Run the generator
