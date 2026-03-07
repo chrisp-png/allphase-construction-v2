@@ -1405,7 +1405,8 @@ function generateStaticFiles() {
     'Roofing Contractor | Broward & Palm Beach | All Phase USA',
         'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com',
-    homepageContent()
+    homepageContent(),
+    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
   );
   // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering
@@ -1491,7 +1492,78 @@ function generateStaticFiles() {
       { name: 'Roofing Services', url: 'https://allphaseconstructionfl.com/roofing-services' }
     ]
   }
-  };
+  ,
+  '/roof-repair': {
+    faqs: [
+      { question: 'How quickly can you respond to emergency roof repairs?', answer: 'We offer same-day emergency response throughout Broward and Palm Beach County. Call (754) 227-5605 and we can dispatch a crew within 2-4 hours for an active leak.' },
+      { question: 'Does homeowner insurance cover roof repair in Florida?', answer: 'Most Florida homeowner policies cover storm and wind damage. We work directly with insurance adjusters and can document damage for your claim at no extra charge.' },
+      { question: 'How do I know if I need a repair or full replacement?', answer: 'If your roof is under 15 years old and damage is localized, repair is usually the right call. Our free inspection identifies whether targeted repair or full replacement delivers better value.' },
+      { question: 'Are you licensed for roof repairs in Broward and Palm Beach County?', answer: 'Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464, covering all repair work in Broward and Palm Beach County.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Roof Repair', url: 'https://allphaseconstructionfl.com/roof-repair' }
+    ]
+  },
+  '/tile-roofing': {
+    faqs: [
+      { question: 'How long does tile roofing last in South Florida?', answer: 'Concrete and clay tile roofs typically last 40-50 years in South Florida when properly maintained. Their mass and profile provide excellent wind resistance in HVHZ conditions.' },
+      { question: 'Can broken roof tiles be replaced individually?', answer: 'Yes. Individual tiles can be replaced without disturbing the full roof, making repairs cost-effective. We stock a wide range of profiles and colors to match existing installations.' },
+      { question: 'Are tile roofs approved in HVHZ areas like Broward County?', answer: 'Yes. Concrete and clay tile systems with compliant underlayments and fastening patterns meet Broward and Palm Beach County 146 mph wind load requirements.' },
+      { question: 'How much does tile roofing cost in South Florida?', answer: 'Tile roofing typically runs $10-$18 per square foot installed, depending on profile and material. Concrete tile is generally less expensive than clay while offering comparable durability.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' }
+    ]
+  },
+  '/commercial-roofing': {
+    faqs: [
+      { question: 'What commercial roofing systems do you install?', answer: 'We install TPO, PVC, modified bitumen, metal panel, and built-up roofing systems for flat and low-slope commercial buildings throughout Broward and Palm Beach County.' },
+      { question: 'Do you handle commercial roofing in HVHZ zones?', answer: 'Yes. All our commercial installations meet Florida Building Code HVHZ requirements. We carry Florida General Contractor license CGC-1526236 in addition to our roofing license.' },
+      { question: 'Can commercial roofing be done without disrupting business operations?', answer: 'In most cases yes. We schedule commercial work around your operating hours and can phase large projects to minimize disruption to tenants and customers.' },
+      { question: 'How long does a commercial roof installation take?', answer: 'A typical commercial roof replacement takes 3-7 days depending on square footage and system type. We provide a detailed project schedule before work begins.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Commercial Roofing', url: 'https://allphaseconstructionfl.com/commercial-roofing' }
+    ]
+  },
+  '/residential-roofing': {
+    faqs: [
+      { question: 'What roofing materials are best for South Florida homes?', answer: 'Metal, tile, and PVC flat systems perform best in HVHZ conditions. Architectural shingles are also popular for their cost and appearance when properly wind-rated for 130+ mph.' },
+      { question: 'How long does a residential roof replacement take?', answer: 'Most residential replacements are completed in 1-3 days. We protect your property with tarps and complete full debris removal before the final walkthrough.' },
+      { question: 'Do you offer financing for residential roofing projects?', answer: 'Yes. We offer flexible financing options for residential roofing. Call (754) 227-5605 to discuss payment plans that work within your budget.' },
+      { question: 'Are you licensed to work on homes in Broward and Palm Beach County?', answer: 'Yes. All Phase holds Florida Certified Roofing Contractor license CCC-1331464 covering all residential roofing work throughout Broward and Palm Beach County.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Residential Roofing', url: 'https://allphaseconstructionfl.com/residential-roofing' }
+    ]
+  },
+  '/roof-replacement-process': {
+    howToName: 'Roof Replacement Process in South Florida',
+    howToDescription: 'How All Phase Construction USA replaces a roof in Broward and Palm Beach County, from free inspection through final permit sign-off.',
+    howToSteps: [
+      { name: 'Free Roof Inspection', text: 'We assess your current roof condition, document all damage, and provide a detailed written estimate at no charge. Most inspections are completed within 24-48 hours of your call.' },
+      { name: 'Insurance and Permit Coordination', text: 'We work directly with your insurance adjuster if a claim is involved, then pull all required Broward or Palm Beach County building permits before any work begins.' },
+      { name: 'Material Selection', text: 'Choose from shingle, tile, metal, or flat roofing systems. We present HVHZ-compliant options at multiple price points and order materials once you approve the scope.' },
+      { name: 'Tear-Off and Deck Inspection', text: 'We remove the existing roof system down to the deck and inspect for rot, soft spots, or damaged sheathing, making all necessary repairs before re-roofing begins.' },
+      { name: 'Underlayment Installation', text: 'HVHZ-compliant underlayment is installed and nailed per Florida Building Code to provide a secondary water barrier before the finish roofing system is applied.' },
+      { name: 'New Roof Installation', text: 'Your selected roofing system is installed by our licensed crews following Florida Building Code specifications and manufacturer installation requirements.' },
+      { name: 'Final Inspection and Cleanup', text: 'A county inspector signs off on the permit, we complete full magnetic nail sweep and debris removal, and conduct a final walkthrough with you before collecting final payment.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Roof Replacement Process', url: 'https://allphaseconstructionfl.com/roof-replacement-process' }
+    ]
+  }
+};
 
   
   
@@ -1529,8 +1601,9 @@ function generateStaticFiles() {
     let jsonLdSchema = null;
     const schemaConfig = SERVICE_PAGE_SCHEMAS[pagePath];
     if (schemaConfig) {
-      jsonLdSchema = [
-        {
+      const schemaItems = [];
+      if (schemaConfig.faqs) {
+        schemaItems.push({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: schemaConfig.faqs.map(faq => ({
@@ -1540,20 +1613,34 @@ function generateStaticFiles() {
               '@type': 'Answer', text: faq.answer
             }
           }))
-        },
-        {
+        });
+      }
+      if (schemaConfig.howToSteps) {
+        schemaItems.push({
           '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: schemaConfig.breadcrumbs.map((crumb, index) => ({
-            '@type': 'ListItem',
-            position: index + 1,
-            name: crumb.name,
-            item: crumb.url
+          '@type': 'HowTo',
+          name: schemaConfig.howToName,
+          description: schemaConfig.howToDescription,
+          step: schemaConfig.howToSteps.map((s, i) => ({
+            '@type': 'HowToStep',
+            position: i + 1,
+            name: s.name,
+            text: s.text
           }))
-        }
-      ];
-    }
-    const html = createHTMLTemplate(
+        });
+      }
+      schemaItems.push({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: schemaConfig.breadcrumbs.map((crumb, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: crumb.name,
+          item: crumb.url
+        }))
+      });
+      jsonLdSchema = schemaItems;
+    }    const html = createHTMLTemplate(
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
