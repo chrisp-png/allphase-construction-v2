@@ -54,7 +54,7 @@ export default function NuclearMetadata() {
     }
     metaDesc.setAttribute('content', description);
 
-    // FORCE UPDATE CANONICAL (single owner â no other component emits this tag)
+    // FORCE UPDATE CANONICAL (single owner Ã¢ÂÂ no other component emits this tag)
     let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -188,6 +188,93 @@ export default function NuclearMetadata() {
     };
 
     schemaScript.textContent = JSON.stringify(businessSchema);
+
+    // --- Service Schema Injection for service pages ---
+    const serviceSchemaData: Record<string, object> = {
+      '/shingle-roofing': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Shingle Roofing Installation', serviceType: 'Roof Installation',
+        description: 'HVHZ-certified asphalt shingle roofing installation for Broward and Palm Beach County homes. Impact-rated systems, Florida Building Code compliant.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/shingle-roofing',
+        offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$8-$12 per sq ft', availability: 'https://schema.org/InStock' }
+      },
+      '/metal-roofing': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Metal Roofing Installation', serviceType: 'Roof Installation',
+        description: 'Standing seam and metal panel roofing systems for South Florida. 40-70 year lifespan, hurricane-rated, HVHZ compliant.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/metal-roofing',
+        offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$12-$20 per sq ft', availability: 'https://schema.org/InStock' }
+      },
+      '/tile-roofing': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Tile Roofing Installation', serviceType: 'Roof Installation',
+        description: 'Concrete and clay tile roofing for South Florida homes. HOA-approved, HVHZ-rated, 30-50 year lifespan.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/tile-roofing',
+        offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$10-$18 per sq ft', availability: 'https://schema.org/InStock' }
+      },
+      '/flat-roofing': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Flat Roofing Installation', serviceType: 'Roof Installation',
+        description: 'PVC and TPO flat roofing systems for South Florida residential and commercial properties. HVHZ-compliant, UV-resistant.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/flat-roofing',
+        offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$8-$14 per sq ft', availability: 'https://schema.org/InStock' }
+      },
+      '/roof-repair': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Roof Repair Services', serviceType: 'Roof Repair',
+        description: 'Emergency and scheduled roof repair for Broward and Palm Beach County. Leak repairs, storm damage, flashing, and HVHZ-compliant patch work.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/roof-repair'
+      },
+      '/roof-replacement': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Roof Replacement', serviceType: 'Roof Replacement',
+        description: 'Full roof replacement for South Florida homes. Shingle, tile, and metal systems. HVHZ-certified, dual-licensed contractor.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/roof-replacement'
+      },
+      '/residential-roofing': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Residential Roofing Services', serviceType: 'Residential Roofing',
+        description: 'Complete residential roofing services for Broward and Palm Beach County. Replacement, repair, and maintenance by dual-licensed HVHZ-certified contractor.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/residential-roofing'
+      },
+      '/commercial-roofing': {
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Commercial Roofing Services', serviceType: 'Commercial Roofing',
+        description: 'Commercial flat and low-slope roofing for Broward and Palm Beach County. PVC, TPO, and modified bitumen systems. CGC-licensed contractor.',
+        provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+        url: 'https://allphaseconstructionfl.com/commercial-roofing'
+      }
+    };
+    const cleanPath = location.pathname.replace(/\/$/, '');
+    const serviceData = serviceSchemaData[cleanPath];
+    if (serviceData) {
+      let serviceScript = document.querySelector('#service-schema-ld') as HTMLScriptElement | null;
+      if (!serviceScript) {
+        serviceScript = document.createElement('script');
+        serviceScript.type = 'application/ld+json';
+        serviceScript.id = 'service-schema-ld';
+        document.head.appendChild(serviceScript);
+      }
+      serviceScript.textContent = JSON.stringify(serviceData);
+    } else {
+      const stale = document.querySelector('#service-schema-ld');
+      if (stale) stale.remove();
+    }
 
     console.log('[NUCLEAR METADATA] Applied:', { path, title, canonical: normalizedCanonical });
   }, [location.pathname]);
