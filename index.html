@@ -22,6 +22,23 @@
       gtag('config', 'G-PBMBD8QKK7');
     </script>
 
+    <!-- Conversion Event Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('click', function(e) {
+          var el = e.target.closest('a[href^="tel:"]');
+          if (el) {
+            gtag('event', 'phone_call', { event_category: 'engagement', event_label: 'phone_click' });
+            gtag('event', 'conversion', { send_to: 'AW-10809361088' });
+          }
+        });
+        document.addEventListener('submit', function(e) {
+          gtag('event', 'generate_lead', { event_category: 'engagement', event_label: 'contact_form' });
+          gtag('event', 'conversion', { send_to: 'AW-10809361088' });
+        });
+      });
+    </script>
+
     <!-- Preload hero image - mobile needs aggressive optimization, desktop relies on browser defaults -->
     <link rel="preload" as="image" href="/team_drone_photo-mobile.webp" media="(max-width: 800px)" fetchpriority="high">
     <link rel="preload" as="image" href="/team_drone_photo-tablet.webp" media="(min-width: 801px) and (max-width: 1280px)">
@@ -94,7 +111,7 @@
     <div id="root">
       <div id="seo-static">
         <h1>Roofing Contractor | Broward & Palm Beach | All Phase USA</h1>
-        <h2>South Florida's Trusted Roofers â Locally Owned, 20+ Years in Business</h2>
+        <h2>South Florida's Trusted Roofers Ã¢ÂÂ Locally Owned, 20+ Years in Business</h2>
         <p>All Phase Construction USA delivers hurricane-compliant roofing for Broward and Palm Beach homeowners and businesses, built for South Florida's HVHZ wind codes, proper fastening, and manufacturer-spec installation.</p>
         <p>Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.</p>
         <p>Dual Licensed: CGC-1526236 (General Contractor) | CCC-1331464 (Roofing Contractor)</p>
