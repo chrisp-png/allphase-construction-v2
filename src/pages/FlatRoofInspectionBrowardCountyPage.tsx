@@ -683,7 +683,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8">
               <div className="flex items-center gap-3 mb-4">
                 <CheckCircle className="w-10 h-10 text-green-500 flex-shrink-0" />
-                <h3 className="text-2xl font-bold text-white">Inspection ≠ Replacement</h3>
+                <h3 className="text-2xl font-bold text-white">Inspection â  Replacement</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed text-lg mb-4">
                 Diagnostic inspection does not automatically mean your roof requires replacement. Many flat and single-ply roofing systems we evaluate are structurally sound, functionally adequate, and appropriate candidates for localized repair or restoration—not full tear-off.
