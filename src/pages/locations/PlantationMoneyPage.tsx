@@ -416,7 +416,7 @@ export default function PlantationPage() {
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
                 <div className="mb-4">
                   <div className="flex text-red-500 mb-2">
-                    {'âââââ'.split('').map((star, i) => (
+                    {'★★★★★'.split('').map((star, i) => (
                       <span key={i}>{star}</span>
                     ))}
                   </div>
@@ -430,7 +430,7 @@ export default function PlantationPage() {
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
                 <div className="mb-4">
                   <div className="flex text-red-500 mb-2">
-                    {'âââââ'.split('').map((star, i) => (
+                    {'★★★★★'.split('').map((star, i) => (
                       <span key={i}>{star}</span>
                     ))}
                   </div>
@@ -444,7 +444,7 @@ export default function PlantationPage() {
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
                 <div className="mb-4">
                   <div className="flex text-red-500 mb-2">
-                    {'âââââ'.split('').map((star, i) => (
+                    {'★★★★★'.split('').map((star, i) => (
                       <span key={i}>{star}</span>
                     ))}
                   </div>
