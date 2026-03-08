@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, BookOpen, Users } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
+import MoneyPageStatBar from '../../components/MoneyPageStatBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
@@ -69,7 +70,7 @@ export default function BocaRatonMoneyPage() {
                   Expert Roofing Contractor in {cityName}, FL
                 </h1>
               </div>
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+              <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />
                 Dual-Licensed Roofing &amp; General Contractors (CCC-1331464, CGC-1526236)
               </div>
@@ -111,12 +112,14 @@ export default function BocaRatonMoneyPage() {
           </div>
         </section>
 
+        <MoneyPageStatBar />
+
         {/* The Dual-License Advantage */}
         <section className="py-20 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+                <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                   <Award className="w-4 h-4" />
                   Dual-Licensed Authority
                 </div>
@@ -131,7 +134,7 @@ export default function BocaRatonMoneyPage() {
                     This dual-license capability means we can address structural issues, handle complex repairs involving roof decking and trusses, and provide complete building envelope solutions. When other contractors must stop and call in structural specialists, we have the authority and expertise to handle everything in-house.
                   </p>
                   <p>
-                    Each roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className=\"text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
+                    Each roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
                   </p>
                 </div>
               </div>
@@ -182,7 +185,7 @@ export default function BocaRatonMoneyPage() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+                <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                   <Shield className="w-4 h-4" />
                   Hurricane Protection
                 </div>
@@ -209,7 +212,7 @@ export default function BocaRatonMoneyPage() {
         <section className="py-20 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+              <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <MapPin className="w-4 h-4" />
                 Local Knowledge
               </div>
@@ -253,7 +256,7 @@ export default function BocaRatonMoneyPage() {
         <section className="py-20 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+              <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <MapPin className="w-4 h-4" />
                 Boca Raton Neighborhoods
               </div>
@@ -291,7 +294,7 @@ export default function BocaRatonMoneyPage() {
         <section className="py-20 bg-zinc-950">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+              <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Users className="w-4 h-4" />
                 Community Involvement
               </div>
@@ -322,7 +325,7 @@ export default function BocaRatonMoneyPage() {
         <section className="py-20 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+              <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Hammer className="w-4 h-4" />
                 Full-Service Roofing
               </div>
@@ -340,7 +343,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Roof Replacement</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> for {cityName} residential and commercial properties begins with a thorough <Link to="/roof-inspection/boca-raton" className=\"text-red-500 hover:text-red-400 underline">inspection</Link>. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. Learn <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className=\"text-red-500 hover:text-red-400 underline">how to spot early signs of roof damage</Link> before they become costly.
+                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> for {cityName} residential and commercial properties begins with a thorough <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">inspection</Link>. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. Learn <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline">how to spot early signs of roof damage</Link> before they become costly.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
@@ -349,7 +352,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className=\"text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
+                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
@@ -358,7 +361,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Professional Inspections</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Comprehensive 21-point <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> for {cityName} properties identify issues early, saving you money and extending your roof's lifespan. Includes insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className=\"text-red-500 hover:text-red-400 underline">maintenance assessments</Link>. Understand <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className=\"text-red-500 hover:text-red-400 underline">your roofing warranty</Link> before you sign.
+                  Comprehensive 21-point <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> for {cityName} properties identify issues early, saving you money and extending your roof's lifespan. Includes insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">maintenance assessments</Link>. Understand <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline">your roofing warranty</Link> before you sign.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
@@ -367,7 +370,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">All Roof Types</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofing</Link>, <Link to="/metal-roofing" className=\"text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/shingle-roofing" className=\"text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/flat-roofing" className=\"text-red-500 hover:text-red-400 underline">flat roofing</Link>, and <Link to="/commercial-roofing" className=\"text-red-500 hover:text-red-400 underline">commercial roofing</Link> (TPO, PVC, modified bitumen, EPDM) — all expertly installed for {cityName} homes and businesses. We also offer flexible <Link to="/easy-payments" className=\"text-red-500 hover:text-red-400 underline">financing options</Link> to fit any budget.
+                  <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofing</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat roofing</Link>, and <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline">commercial roofing</Link> (TPO, PVC, modified bitumen, EPDM) — all expertly installed for {cityName} homes and businesses. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> to fit any budget.
                 </p>
               </div>
             </div>
@@ -445,7 +448,7 @@ export default function BocaRatonMoneyPage() {
         <section className="py-12 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-br from-zinc-950 to-zinc-900 border border-zinc-800 rounded-xl p-8 text-center">
-              <div className="inline-flex items-center justify-center gap-3 bg-red-600/10 text-red-500 px-6 py-4 rounded-lg text-lg font-bold border border-red-600/20">
+              <div className="inline-flex items-center justify-center gap-3 bg-[#C5A572]/10 text-[#C5A572] px-6 py-4 rounded-lg text-lg font-bold border border-[#C5A572]/20">
                 <Award className="w-6 h-6" />
                 <span>Proud Member — Greater Boca Raton Chamber of Commerce</span>
               </div>
