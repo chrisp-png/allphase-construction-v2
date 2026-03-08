@@ -39,7 +39,7 @@ export default function OurLocationPage() {
             All Phase Construction USA operates from our Deerfield Beach office at 590 Goolsby Blvd, Deerfield Beach, FL 33442. While this is our home base, our crews provide on-site roofing inspections, repairs, and replacements throughout Broward County and Palm Beach County. Most appointments happen at your property, but our team is always available by phone if you need help quickly or want to schedule a roof assessment.
           </p>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto">
-            Our Deerfield Beach location is especially convenient because it sits near the border of North Broward and South Palm Beach. We're positioned just west of I‑95, east of the Sawgrass Expressway, and with easy access to the Florida Turnpike—so our crews can reach Broward County and Palm Beach County service areas quickly for inspections, repairs, and scheduled roofing work.
+            Our Deerfield Beach location is especially convenient because it sits near the border of North Broward and South Palm Beach. We're positioned just west of Iâ95, east of the Sawgrass Expressway, and with easy access to the Florida Turnpike—so our crews can reach Broward County and Palm Beach County service areas quickly for inspections, repairs, and scheduled roofing work.
           </p>
         </div>
 
@@ -260,7 +260,7 @@ export default function OurLocationPage() {
           <h2 className="text-3xl font-bold text-white mb-6">A Note From Our Team</h2>
           <blockquote className="border-l-4 border-red-600 pl-6 py-4">
             <p className="text-xl text-gray-300 italic mb-4">
-              "Being based right on the line between North Broward and South Palm Beach gives us an advantage. We're just west of I‑95, close to the Sawgrass, and convenient to the Turnpike—so getting to our customers quickly across both counties is straightforward."
+              "Being based right on the line between North Broward and South Palm Beach gives us an advantage. We're just west of Iâ95, close to the Sawgrass, and convenient to the Turnpike—so getting to our customers quickly across both counties is straightforward."
             </p>
             <footer className="text-gray-400">
               — Chris Porosky, Owner, All Phase Construction USA
