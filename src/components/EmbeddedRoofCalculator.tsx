@@ -40,10 +40,10 @@ const roofSizes: RoofSize[] = [
 ];
 
 const roofTypes: RoofType[] = [
-  { name: 'Shingle', icon: '◢' },
-  { name: 'Tile', icon: '◠' },
-  { name: 'Metal', icon: '▬' },
-  { name: 'Flat', icon: '▭' },
+  { name: 'Shingle', icon: 'â¢' },
+  { name: 'Tile', icon: 'â ' },
+  { name: 'Metal', icon: 'â¬' },
+  { name: 'Flat', icon: 'â­' },
 ];
 
 const pricingData: PricingData = {
@@ -256,7 +256,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
               ))}
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-400 bg-slate-900/50 rounded-lg p-3">
-              <span className="text-lg">💡</span>
+              <span className="text-lg">ð¡</span>
               <p>Not sure? Most homes in {city} have 2,000 - 3,500 sq ft of roof area.</p>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
 
               <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-4 mb-6">
                 <p className="text-white">
-                  📞 We'll call within 1 hour of Business hours or if after hours, the very next day to schedule your <span className="text-red-500 font-semibold">FREE in-home consultation</span>
+                  ð We'll call within 1 hour of Business hours or if after hours, the very next day to schedule your <span className="text-red-500 font-semibold">FREE in-home consultation</span>
                 </p>
               </div>
 
