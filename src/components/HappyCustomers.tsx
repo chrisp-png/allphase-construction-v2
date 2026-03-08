@@ -131,7 +131,7 @@ const customerPhotos = allCustomerPhotos
   .filter((photo): photo is CustomerPhoto => {
     // Only reject if src is completely missing or invalid
     if (!photo || typeof photo.src !== 'string' || photo.src.trim().length === 0) {
-      console.warn('⚠️ Carousel: Rejected photo (missing or empty src)', photo);
+      console.warn('â ï¸ Carousel: Rejected photo (missing or empty src)', photo);
       return false;
     }
 
@@ -139,7 +139,7 @@ const customerPhotos = allCustomerPhotos
     const validExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.webp', '.WEBP'];
     const hasValidExtension = validExtensions.some(ext => photo.src.endsWith(ext));
     if (!hasValidExtension) {
-      console.warn('⚠️ Carousel: Rejected photo with invalid extension', photo.src);
+      console.warn('â ï¸ Carousel: Rejected photo with invalid extension', photo.src);
       return false;
     }
 
@@ -157,17 +157,17 @@ const customerPhotos = allCustomerPhotos
     let linkTo = photo.linkTo;
 
     if (city === 'South Florida') {
-      // South Florida → Boca Raton city page
+      // South Florida â Boca Raton city page
       linkTo = '/locations/boca-raton';
     } else if (city === 'Broward County') {
-      // Broward County → Keep county page
+      // Broward County â Keep county page
       linkTo = '/locations/broward-county';
     } else if (city === 'Palm Beach County') {
-      // Palm Beach County → Keep county page
+      // Palm Beach County â Keep county page
       linkTo = '/locations/palm-beach-county';
     } else if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
-      // Global fallback for missing or invalid linkTo → Service Areas Hub
-      console.warn('⚠️ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
+      // Global fallback for missing or invalid linkTo â Service Areas Hub
+      console.warn('â ï¸ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
       linkTo = '/locations';
     }
 
@@ -183,7 +183,7 @@ const customerPhotos = allCustomerPhotos
 if (typeof window !== 'undefined') {
   console.log('=== Happy Customers Carousel Diagnostic ===');
   console.log(`Total photos after filtering: ${customerPhotos.length}/${allCustomerPhotos.length}`);
-  console.log('All carousel images:', customerPhotos.map((p, i) => `\n  [${i+1}] ${p.src} → ${p.linkTo}`).join(''));
+  console.log('All carousel images:', customerPhotos.map((p, i) => `\n  [${i+1}] ${p.src} â ${p.linkTo}`).join(''));
   console.log('==========================================');
 }
 
@@ -353,7 +353,7 @@ export default function HappyCustomers() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   style={{ display: 'block' }}
                   onError={(e) => {
-                    console.error('❌ Carousel: Failed to load image', photo.src);
+                    console.error('â Carousel: Failed to load image', photo.src);
                     e.currentTarget.style.display = 'none';
                   }}
                 />
