@@ -20,7 +20,10 @@
 
   function fireAdsConversion() {
     if (typeof gtag === 'function') {
-      gtag('event', 'conversion', { send_to: 'AW-10809361088' });
+      // TODO: Add your conversion label from Google Ads → Goals → Conversions → Tag setup
+      // Format should be: 'AW-10809361088/YOUR_CONVERSION_LABEL'
+      // Example: 'AW-10809361088/AbC1DeFgHiJkLmNoPqRs'
+      gtag('event', 'conversion', { send_to: 'AW-10809361088/CONVERSION_LABEL_NEEDED' });
     }
   }
 
