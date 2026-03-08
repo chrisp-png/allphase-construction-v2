@@ -278,7 +278,7 @@ export default function FortLauderdaleMoneyPage() {
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
               <p>
-                Selecting the right roofing material is a crucial step in ensuring the longevity, energy efficiency, and overall appearance of your home. In {cityName}, homeowners can choose from a range of options, including <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle roofs</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>, and <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile</Link>. Each material offers unique benefits — shingle roofs are cost-effective and versatile, metal roofing provides superior durability and energy efficiency, while tile roofs offer timeless beauty and excellent resistance to the Florida sun.
+                Selecting the right roofing material is a crucial step in ensuring the longevity, energy efficiency, and overall appearance of your home. In {cityName}, homeowners can choose from a range of options, including <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle roofs</Link>, <Link to="/metal-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>, and <Link to="/tile-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">tile</Link>. Each material offers unique benefits — shingle roofs are cost-effective and versatile, metal roofing provides superior durability and energy efficiency, while tile roofs offer timeless beauty and excellent resistance to the Florida sun.
               </p>
 
               <p>
@@ -286,7 +286,7 @@ export default function FortLauderdaleMoneyPage() {
               </p>
 
               <p>
-                For <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing systems</Link>, we offer TPO, modified bitumen, and built-up roofing options ideal for {cityName}'s <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial properties</Link>.
+                For <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing systems</Link>, we offer TPO, modified bitumen, and built-up roofing options ideal for {cityName}'s <Link to="/commercial-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">commercial properties</Link>.
               </p>
             </div>
           </div>
@@ -330,7 +330,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Professional Inspections</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      Comprehensive 21-point <Link to="/roof-inspection/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>. These inspections can also reveal other <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">signs of roof damage</Link> or installation problems that may not be immediately visible.
+                      Comprehensive 21-point <Link to="/roof-inspection/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof inspections</Link> for {cityName} properties. Insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className=\"text-red-600 hover:text-red-500 underline transition-colors">maintenance assessments</Link>. These inspections can also reveal other <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className=\"text-red-600 hover:text-red-500 underline transition-colors">signs of roof damage</Link> or installation problems that may not be immediately visible.
                     </p>
                   </div>
                 </div>
@@ -342,7 +342,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">All Roof Types</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Tile roofing</Link>, <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>, <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle roofing</Link>, <Link to="/flat-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link> (TPO/PVC). Expert installation and repair for all roofing systems in {cityName}. Each material offers unique benefits for South Florida's climate.
+                      <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Tile roofing</Link>, <Link to="/metal-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>, <Link to="/shingle-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">shingle roofing</Link>, <Link to="/flat-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">flat roofing</Link> (TPO/PVC). Expert installation and repair for all roofing systems in {cityName}. Each material offers unique benefits for South Florida's climate.
                     </p>
                   </div>
                 </div>
@@ -379,7 +379,7 @@ export default function FortLauderdaleMoneyPage() {
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
               <p>
-                Homeowners in {cityName} often face a variety of roofing challenges, from leaky roofs and damaged shingles to sagging structures and general wear and tear. All Phase Construction USA addresses these common issues with a comprehensive range of services, including <Link to="/roof-repair/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof repair</Link>, roof replacement, and preventative <Link to="/roof-maintenance-programs" className="text-red-600 hover:text-red-500 underline transition-colors">maintenance</Link>.
+                Homeowners in {cityName} often face a variety of roofing challenges, from leaky roofs and damaged shingles to sagging structures and general wear and tear. All Phase Construction USA addresses these common issues with a comprehensive range of services, including <Link to="/roof-repair/fort-lauderdale" className="text-red-600 hover:text-red-500 underline transition-colors">roof repair</Link>, roof replacement, and preventative <Link to="/roof-maintenance-programs" className=\"text-red-600 hover:text-red-500 underline transition-colors">maintenance</Link>.
               </p>
 
               <p>
