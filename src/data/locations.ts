@@ -42,7 +42,8 @@ export const locations: Location[] = [
     slug: "boca-raton",
     city: "Boca Raton",
     state: "FL",
-    descriptionOverride: "Licensed roofing contractor in Boca Raton, FL. Palm Beach County wind-compliant. Tile, metal, shingle & flat roofing. Free inspections."
+    titleOverride: "Roofing Company Boca Raton FL | All Phase USA",
+    descriptionOverride: "Boca Raton's trusted roofing company since 2005. Palm Beach County wind-compliant, 2,500+ projects. Free inspection. Call (754) 227-5605."
   },
   { slug: "boynton-beach", city: "Boynton Beach", state: "FL" },
   { slug: "coconut-creek", city: "Coconut Creek", state: "FL" },
