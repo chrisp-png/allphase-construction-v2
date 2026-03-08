@@ -100,7 +100,7 @@ async function optimizeImage(imagePath) {
 
     // Skip placeholder files (very small files, likely text placeholders)
     if (originalSize < 1000) {
-      console.log(`   ⏭️  Skipped ${fileName} (placeholder file)`);
+      console.log(`   â­ï¸  Skipped ${fileName} (placeholder file)`);
       stats.skipped++;
       return;
     }
@@ -116,9 +116,9 @@ async function optimizeImage(imagePath) {
 
       try {
         await copyFile(imagePath, backupPath);
-        console.log(`   📦 Backed up original: ${fileName}`);
+        console.log(`   ð¦ Backed up original: ${fileName}`);
       } catch (error) {
-        console.error(`   ⚠️  Could not backup ${fileName}: ${error.message}`);
+        console.error(`   â ï¸  Could not backup ${fileName}: ${error.message}`);
         return;
       }
     } else {
@@ -154,11 +154,11 @@ async function optimizeImage(imagePath) {
     stats.savedBytes += savedBytes;
     stats.processed++;
 
-    console.log(`   ✓ ${fileName} → ${basename(webpPath)}`);
-    console.log(`     ${formatBytes(originalSize)} → ${formatBytes(optimizedSize)} (${percentSaved}% smaller)`);
+    console.log(`   ✓ ${fileName} â ${basename(webpPath)}`);
+    console.log(`     ${formatBytes(originalSize)} â ${formatBytes(optimizedSize)} (${percentSaved}% smaller)`);
 
   } catch (error) {
-    console.error(`   ✗ Error processing ${basename(imagePath)}: ${error.message}`);
+    console.error(`   â Error processing ${basename(imagePath)}: ${error.message}`);
     stats.errors++;
   }
 }
@@ -172,7 +172,7 @@ function formatBytes(bytes) {
 }
 
 async function processFolder(folderPath) {
-  console.log(`\n📁 Processing ${folderPath}...`);
+  console.log(`\nð Processing ${folderPath}...`);
 
   const images = await getImageFiles(folderPath);
 
@@ -183,7 +183,7 @@ async function processFolder(folderPath) {
 
   for (const imagePath of images) {
     if (await isAlreadyOptimized(imagePath)) {
-      console.log(`   ⏭️  Skipped ${basename(imagePath)} (already optimized)`);
+      console.log(`   â­ï¸  Skipped ${basename(imagePath)} (already optimized)`);
       stats.skipped++;
       continue;
     }
@@ -193,7 +193,7 @@ async function processFolder(folderPath) {
 }
 
 async function main() {
-  console.log('🖼️  Image Optimization Workflow');
+  console.log('ð¼ï¸  Image Optimization Workflow');
   console.log('================================\n');
   console.log(`Max Width: ${MAX_WIDTH}px`);
   console.log(`WebP Quality: ${WEBP_QUALITY}`);
@@ -208,26 +208,26 @@ async function main() {
   const duration = ((Date.now() - startTime) / 1000).toFixed(2);
 
   console.log('\n================================');
-  console.log('📊 Optimization Summary');
+  console.log('ð Optimization Summary');
   console.log('================================');
   console.log(`✓ Processed: ${stats.processed} images`);
-  console.log(`⏭️  Skipped: ${stats.skipped} images (already optimized)`);
-  console.log(`✗ Errors: ${stats.errors} images`);
-  console.log(`💾 Total saved: ${formatBytes(stats.savedBytes)}`);
-  console.log(`⏱️  Duration: ${duration}s`);
+  console.log(`â­ï¸  Skipped: ${stats.skipped} images (already optimized)`);
+  console.log(`â Errors: ${stats.errors} images`);
+  console.log(`ð¾ Total saved: ${formatBytes(stats.savedBytes)}`);
+  console.log(`â±ï¸  Duration: ${duration}s`);
   console.log('================================\n');
 
   if (stats.errors > 0) {
-    console.warn('⚠️  Some images could not be optimized. Check errors above.');
+    console.warn('â ï¸  Some images could not be optimized. Check errors above.');
   }
 
   if (stats.processed > 0) {
-    console.log('✨ Images optimized successfully!');
+    console.log('â¨ Images optimized successfully!');
     console.log('   Original files backed up to /originals subdirectories');
   } else if (stats.skipped > 0) {
-    console.log('✨ All images already optimized!');
+    console.log('â¨ All images already optimized!');
   } else {
-    console.log('ℹ️  No images found to optimize');
+    console.log('â¹ï¸  No images found to optimize');
   }
 }
 
