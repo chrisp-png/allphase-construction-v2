@@ -5,6 +5,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      colors: {
+        gold: '#C5A572',
+      },
       keyframes: {
         drift: {
           '0%, 100%': { transform: 'translate(0, 0) scale(1)' },

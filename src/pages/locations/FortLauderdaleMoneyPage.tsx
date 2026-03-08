@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, FileText, BookOpen, Star } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
+import MoneyPageStatBar from '../../components/MoneyPageStatBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
@@ -75,7 +76,7 @@ export default function FortLauderdaleMoneyPage() {
                 </h1>
               </div>
 
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+              <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />
                 Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
               </div>
@@ -113,6 +114,8 @@ export default function FortLauderdaleMoneyPage() {
             </div>
           </div>
         </section>
+
+        <MoneyPageStatBar />
 
         {/* The Dual-License Advantage */}
         <section className="py-20 bg-[#27272a]">
