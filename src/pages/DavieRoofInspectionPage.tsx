@@ -321,7 +321,7 @@ export default function DavieRoofInspectionPage() {
               },
             ].map((review, i) => (
               <div key={i} className="p-6 bg-zinc-800 rounded-lg border border-zinc-700 flex flex-col gap-4">
-                <div className="flex gap-1 text-yellow-400 text-lg">{'â'.repeat(5)}</div>
+                <div className="flex gap-1 text-yellow-400 text-lg">{'★'.repeat(5)}</div>
                 <p className="text-zinc-300 text-sm leading-relaxed">{review.text}</p>
                 <div className="mt-auto">
                   <p className="font-semibold text-white">{review.name}</p>
