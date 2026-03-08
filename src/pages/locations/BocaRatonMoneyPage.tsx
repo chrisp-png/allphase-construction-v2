@@ -131,7 +131,7 @@ export default function BocaRatonMoneyPage() {
                     This dual-license capability means we can address structural issues, handle complex repairs involving roof decking and trusses, and provide complete building envelope solutions. When other contractors must stop and call in structural specialists, we have the authority and expertise to handle everything in-house.
                   </p>
                   <p>
-                    Each roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
+                    Each roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className=\"text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
                   </p>
                 </div>
               </div>
@@ -340,7 +340,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Roof Replacement</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> for {cityName} residential and commercial properties begins with a thorough <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">inspection</Link>. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. Learn <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline">how to spot early signs of roof damage</Link> before they become costly.
+                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> for {cityName} residential and commercial properties begins with a thorough <Link to="/roof-inspection/boca-raton" className=\"text-red-500 hover:text-red-400 underline">inspection</Link>. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. Learn <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className=\"text-red-500 hover:text-red-400 underline">how to spot early signs of roof damage</Link> before they become costly.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
@@ -349,7 +349,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
+                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className=\"text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
@@ -358,7 +358,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Professional Inspections</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Comprehensive 21-point <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> for {cityName} properties identify issues early, saving you money and extending your roof's lifespan. Includes insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">maintenance assessments</Link>. Understand <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline">your roofing warranty</Link> before you sign.
+                  Comprehensive 21-point <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> for {cityName} properties identify issues early, saving you money and extending your roof's lifespan. Includes insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className=\"text-red-500 hover:text-red-400 underline">maintenance assessments</Link>. Understand <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className=\"text-red-500 hover:text-red-400 underline">your roofing warranty</Link> before you sign.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
@@ -367,7 +367,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">All Roof Types</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofing</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat roofing</Link>, and <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline">commercial roofing</Link> (TPO, PVC, modified bitumen, EPDM) — all expertly installed for {cityName} homes and businesses. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> to fit any budget.
+                  <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofing</Link>, <Link to="/metal-roofing" className=\"text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/shingle-roofing" className=\"text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/flat-roofing" className=\"text-red-500 hover:text-red-400 underline">flat roofing</Link>, and <Link to="/commercial-roofing" className=\"text-red-500 hover:text-red-400 underline">commercial roofing</Link> (TPO, PVC, modified bitumen, EPDM) — all expertly installed for {cityName} homes and businesses. We also offer flexible <Link to="/easy-payments" className=\"text-red-500 hover:text-red-400 underline">financing options</Link> to fit any budget.
                 </p>
               </div>
             </div>
