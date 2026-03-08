@@ -151,15 +151,15 @@ export default function HomePage() {
 
             <div className="space-y-4 text-gray-300 leading-relaxed mb-8">
               <p>
-                Choosing a roofing company in South Florida is a decision that directly affects your home's safety, insurance standing, and long-term value. We built our business on doing it rightânot doing it fast.
+                Choosing a roofing company in South Florida is a decision that directly affects your home's safety, insurance standing, and long-term value. We built our business on doing it right—not doing it fast.
               </p>
 
               <p>
-                Every project we take on is backed by dual state licensing (Certified Roofing Contractor + Certified General Contractor), elite manufacturer certifications, and a commitment to HVHZ code compliance that most roofers simply can't match. As a skilled trade, roofing contractors must be licensed by the appropriate local authorities to operate legally. Reputable contractors should also manage the permitting process and ensure compliance with local building codes. Contractors certified by GAF are trusted to offer the strongest guarantees and warranties, and only the world's best contractors are authorized to install Duro-Last roofing systems. Contractors should provide comprehensive warranties on both workmanship and materials. Standard payment terms typically involve a deposit of 10â30% and the balance due after project completion; always review contract terms carefully to understand your obligations.
+                Every project we take on is backed by dual state licensing (Certified Roofing Contractor + Certified General Contractor), elite manufacturer certifications, and a commitment to HVHZ code compliance that most roofers simply can't match. As a skilled trade, roofing contractors must be licensed by the appropriate local authorities to operate legally. Reputable contractors should also manage the permitting process and ensure compliance with local building codes. Contractors certified by GAF are trusted to offer the strongest guarantees and warranties, and only the world's best contractors are authorized to install Duro-Last roofing systems. Contractors should provide comprehensive warranties on both workmanship and materials. Standard payment terms typically involve a deposit of 10–30% and the balance due after project completion; always review contract terms carefully to understand your obligations.
               </p>
 
               <p>
-                We're members of the Broward County, Coral Springs, and Boca Raton Chambers of Commerce. Our roots run deep hereâand so does our accountability.
+                We're members of the Broward County, Coral Springs, and Boca Raton Chambers of Commerce. Our roots run deep here—and so does our accountability.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700 bg-gray-900/30">
                   <p className="text-gray-300 leading-relaxed">
-                    No scope gaps, no permit confusionâone company handles everything legally
+                    No scope gaps, no permit confusion—one company handles everything legally
                   </p>
                 </div>
 
@@ -248,7 +248,7 @@ export default function HomePage() {
 
             <div className="space-y-4 text-gray-300 leading-relaxed mb-10">
               <p>
-                From full roof replacements to emergency leak repairs, our team handles every phase of your roofing projectâresidential and commercial. You can find a list of our roofing services and products, including custom-fabricated accessories that enhance installation, waterproofing, and aesthetics. We pay close attention to details, ensuring precise fitting and tailored solutions for every client.
+                From full roof replacements to emergency leak repairs, our team handles every phase of your roofing project—residential and commercial. You can find a list of our roofing services and products, including custom-fabricated accessories that enhance installation, waterproofing, and aesthetics. We pay close attention to details, ensuring precise fitting and tailored solutions for every client.
               </p>
 
               <p>
@@ -276,7 +276,7 @@ export default function HomePage() {
                                   <a href="/roof-repair" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">Roof Repair</a>
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Leaks, missing shingles, cracked tiles, damaged flashingâwe diagnose the issue and fix it right the first time so small problems don't become big ones.
+                  Leaks, missing shingles, cracked tiles, damaged flashing—we diagnose the issue and fix it right the first time so small problems don't become big ones.
                 </p>
               </div>
 
@@ -287,7 +287,7 @@ export default function HomePage() {
                   Storm Damage Restoration
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-3">
-                  After a hurricane or severe weather event, we provide full damage assessments, insurance documentation, and restorationâfrom tarping to final inspection.
+                  After a hurricane or severe weather event, we provide full damage assessments, insurance documentation, and restoration—from tarping to final inspection.
                 </p>
                 <p className="text-sm text-gray-400 leading-relaxed italic">
                   It is important to note that failure to pull permits and skipping inspections are common legal issues faced by a roofing contractor. In such cases, contractors can face civil penalties and be required to pay restitution for failing to meet contractual obligations. For example, in the case of a well known roofing company, they faced significant legal consequences for non-compliance with permitting and inspection requirements.
@@ -312,7 +312,7 @@ export default function HomePage() {
                   Shingle Roofing
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  We install premium shingle systems from Owens Corning, GAF, TAMKO, and CertainTeedâengineered for wind resistance and long-term durability.
+                  We install premium shingle systems from Owens Corning, GAF, TAMKO, and CertainTeed—engineered for wind resistance and long-term durability.
                 </p>
               </div>
 
@@ -451,7 +451,7 @@ export default function HomePage() {
                         Energy-conscious homeowners
                       </td>
                       <td className="px-6 py-4 text-gray-300">
-                        Reflects heat, resists wind, and lasts 40â70 years
+                        Reflects heat, resists wind, and lasts 40–70 years
                       </td>
                     </tr>
 
@@ -499,11 +499,11 @@ export default function HomePage() {
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                For South <span className="text-blue-400 font-medium">Florida businesses</span>, a dependable <span className="text-blue-400 font-medium">roofing system</span> is more than just a necessityâit's a <span className="text-orange-400 font-medium">critical investment</span> in the <span className="text-orange-400 font-medium">safety and success</span> of your operations. Our company understands that every <span className="text-blue-400 font-medium">commercial building</span> has <span className="text-blue-400 font-medium">unique requirements</span>, from the <span className="text-blue-400 font-medium">type of materials</span> used to the level of <span className="text-orange-400 font-medium">energy efficiency</span> needed to keep costs down and performance high. That's why we offer a full suite of <a href="/commercial-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">commercial roofing</a> solutions, <span className="text-blue-400 font-medium">including</span> expert installation, timely repairs, and <span className="text-blue-400 font-medium">complete roof replacements</span>, all <span className="text-orange-400 font-medium">tailored</span> to meet the <span className="text-blue-400 font-medium">specific needs</span> of your business.
+                For South <span className="text-blue-400 font-medium">Florida businesses</span>, a dependable <span className="text-blue-400 font-medium">roofing system</span> is more than just a necessity—it's a <span className="text-orange-400 font-medium">critical investment</span> in the <span className="text-orange-400 font-medium">safety and success</span> of your operations. Our company understands that every <span className="text-blue-400 font-medium">commercial building</span> has <span className="text-blue-400 font-medium">unique requirements</span>, from the <span className="text-blue-400 font-medium">type of materials</span> used to the level of <span className="text-orange-400 font-medium">energy efficiency</span> needed to keep costs down and performance high. That's why we offer a full suite of <a href="/commercial-roofing" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">commercial roofing</a> solutions, <span className="text-blue-400 font-medium">including</span> expert installation, timely repairs, and <span className="text-blue-400 font-medium">complete roof replacements</span>, all <span className="text-orange-400 font-medium">tailored</span> to meet the <span className="text-blue-400 font-medium">specific needs</span> of your business.
               </p>
 
               <p>
-                Our team of <span className="text-blue-400 font-medium">experienced contractors</span> works closely with <span className="text-blue-400 font-medium">business owners</span> to design and install <span className="text-orange-400 font-medium">roofing systems</span> that <span className="text-blue-400 font-medium">not only protect</span> your building but also <span className="text-orange-400 font-medium">support</span> your long-term goals. We use only <span className="text-orange-400 font-medium">premium, durable materials</span> to <span className="text-blue-400 font-medium">ensure</span> your new roof stands up to <span className="text-blue-400 font-medium">South Florida's challenging conditions</span>, and we're <span className="text-blue-400 font-medium">committed</span> to delivering results that <span className="text-blue-400 font-medium">meet or exceed</span> all relevant <span className="text-blue-400 font-medium">building codes</span>. Whether you need a <span className="text-blue-400 font-medium">minor repair</span> or a <span className="text-orange-400 font-medium">full-scale installation</span>, you can count on us for <span className="text-orange-400 font-medium">reliable support</span>, clear communication, and a <span className="text-blue-400 font-medium">commitment to quality</span> that keeps your business coveredâtoday and for decades to come.
+                Our team of <span className="text-blue-400 font-medium">experienced contractors</span> works closely with <span className="text-blue-400 font-medium">business owners</span> to design and install <span className="text-orange-400 font-medium">roofing systems</span> that <span className="text-blue-400 font-medium">not only protect</span> your building but also <span className="text-orange-400 font-medium">support</span> your long-term goals. We use only <span className="text-orange-400 font-medium">premium, durable materials</span> to <span className="text-blue-400 font-medium">ensure</span> your new roof stands up to <span className="text-blue-400 font-medium">South Florida's challenging conditions</span>, and we're <span className="text-blue-400 font-medium">committed</span> to delivering results that <span className="text-blue-400 font-medium">meet or exceed</span> all relevant <span className="text-blue-400 font-medium">building codes</span>. Whether you need a <span className="text-blue-400 font-medium">minor repair</span> or a <span className="text-orange-400 font-medium">full-scale installation</span>, you can count on us for <span className="text-orange-400 font-medium">reliable support</span>, clear communication, and a <span className="text-blue-400 font-medium">commitment to quality</span> that keeps your business covered—today and for decades to come.
               </p>
             </div>
           </div>
@@ -516,7 +516,7 @@ export default function HomePage() {
 
             <div className="text-center mb-6">
               <p className="text-xl text-yellow-400 font-semibold mb-2">
-                â­ 4.8+ out of 5 â Based on 100+ verified Google reviews
+                ⭐ 4.8+ out of 5 — Based on 100+ verified Google reviews
               </p>
               <p className="text-gray-300 text-lg">
                 Our customers consistently highlight the same things: clear communication, professional crews, clean job sites, and a process that takes the stress out of roofing.
@@ -535,7 +535,7 @@ export default function HomePage() {
                 <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
                   "All Phase Construction replaced our entire roof after Hurricane Irma. From the initial inspection through the final walkthrough, every step was communicated clearly. The crew was professional, the job site was spotless every evening, and they handled our insurance paperwork seamlessly. I would recommend them to anyone in Broward County."
                 </p>
-                <p className="text-white font-semibold">â Robert M.</p>
+                <p className="text-white font-semibold">— Robert M.</p>
                 <p className="text-gray-400 text-sm">Deerfield Beach</p>
               </div>
 
@@ -547,9 +547,9 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
-                  "We had three other roofing companies come out for estimates, and All Phase was the only one that took the time to explain the code requirements for our area. They didn't just sell us a roofâthey educated us on what we actually needed. The 160 MPH wind warranty sealed the deal."
+                  "We had three other roofing companies come out for estimates, and All Phase was the only one that took the time to explain the code requirements for our area. They didn't just sell us a roof—they educated us on what we actually needed. The 160 MPH wind warranty sealed the deal."
                 </p>
-                <p className="text-white font-semibold">â Jennifer K.</p>
+                <p className="text-white font-semibold">— Jennifer K.</p>
                 <p className="text-gray-400 text-sm">Coral Springs</p>
               </div>
 
@@ -563,7 +563,7 @@ export default function HomePage() {
                 <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
                   "Professional from start to finish. They pulled all permits, coordinated the inspection, and cleaned up like they were never there. Our new tile roof looks incredible and we have complete peace of mind going into hurricane season."
                 </p>
-                <p className="text-white font-semibold">â Carlos D.</p>
+                <p className="text-white font-semibold">— Carlos D.</p>
                 <p className="text-gray-400 text-sm">Boca Raton</p>
               </div>
 
@@ -575,9 +575,9 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-base leading-relaxed mb-4 italic">
-                  "I've used All Phase for two properties nowâone residential and one commercial flat roof. Both projects were completed on time and on budget. Their certification stack is real, and it shows in the quality of the installation."
+                  "I've used All Phase for two properties now—one residential and one commercial flat roof. Both projects were completed on time and on budget. Their certification stack is real, and it shows in the quality of the installation."
                 </p>
-                <p className="text-white font-semibold">â David L.</p>
+                <p className="text-white font-semibold">— David L.</p>
                 <p className="text-gray-400 text-sm">Pompano Beach</p>
               </div>
             </div>
@@ -585,7 +585,7 @@ export default function HomePage() {
             {/* Closing Statement */}
             <div className="text-center mb-8">
               <p className="text-gray-300 text-lg font-medium">
-                The pattern is clear: homeowners trust All Phase Construction USA because we deliver on our promisesâevery permit pulled, every code met, every warranty backed.
+                The pattern is clear: homeowners trust All Phase Construction USA because we deliver on our promises—every permit pulled, every code met, every warranty backed.
               </p>
             </div>
 
@@ -626,12 +626,12 @@ export default function HomePage() {
           {/* Storm Chasers vs. Established Roofers Section */}
           <div className="max-w-6xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Storm Chasers vs. Established Roofers â How to Tell the Difference in South Florida
+              Storm Chasers vs. Established Roofers — How to Tell the Difference in South Florida
             </h2>
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                After every major storm, South Florida sees an influx of out-of-state roofing companies. They knock on doors, offer fast repairs, and pressure homeowners to sign over insurance claims. They're called <span className="text-red-400 font-medium">storm chasers</span>âand they're a serious problem.
+                After every major storm, South Florida sees an influx of out-of-state roofing companies. They knock on doors, offer fast repairs, and pressure homeowners to sign over insurance claims. They're called <span className="text-red-400 font-medium">storm chasers</span>—and they're a serious problem.
               </p>
 
               <p>
@@ -639,7 +639,7 @@ export default function HomePage() {
               </p>
 
               <p>
-                <span className="text-orange-400 font-semibold">All Phase Construction USA</span> has been rooted in Deerfield Beach since 2005. We're <span className="text-blue-400 font-medium">dual-licensed in Florida</span>, backed by <span className="text-blue-400 font-medium">manufacturer certifications</span>, and accountable to our community. We don't chase stormsâ<span className="text-orange-400 font-medium">we protect homes from them</span>.
+                <span className="text-orange-400 font-semibold">All Phase Construction USA</span> has been rooted in Deerfield Beach since 2005. We're <span className="text-blue-400 font-medium">dual-licensed in Florida</span>, backed by <span className="text-blue-400 font-medium">manufacturer certifications</span>, and accountable to our community. We don't chase storms—<span className="text-orange-400 font-medium">we protect homes from them</span>.
               </p>
             </div>
 
@@ -659,7 +659,7 @@ export default function HomePage() {
                     <tr className="border-b border-gray-700/50 hover:bg-gray-800/30 transition-colors">
                       <td className="p-4 sm:p-5 font-semibold text-gray-200">Warranty</td>
                       <td className="p-4 sm:p-5 text-gray-300">
-                        <span className="text-red-400 font-medium">Little to noneâgone before you need it</span>
+                        <span className="text-red-400 font-medium">Little to none—gone before you need it</span>
                       </td>
                       <td className="p-4 sm:p-5 text-gray-200">
                         <span className="text-blue-400 font-semibold">160 MPH wind warranty for shingles</span><br />
@@ -715,7 +715,7 @@ export default function HomePage() {
                     <tr className="bg-gray-800/20 hover:bg-gray-800/40 transition-colors">
                       <td className="p-4 sm:p-5 font-semibold text-gray-200">After the Job</td>
                       <td className="p-4 sm:p-5 text-gray-300">
-                        <span className="text-red-400 font-medium">Goneânumber disconnected</span>
+                        <span className="text-red-400 font-medium">Gone—number disconnected</span>
                       </td>
                       <td className="p-4 sm:p-5 text-gray-200">
                         <span className="text-blue-400 font-semibold">Ongoing support, follow-up, and Directorii $25K guarantee</span>
