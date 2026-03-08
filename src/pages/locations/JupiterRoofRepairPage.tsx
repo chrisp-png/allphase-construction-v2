@@ -146,7 +146,7 @@ export default function JupiterRoofRepairPage() {
             <div key={i} className="bg-zinc-900 rounded-lg p-6">
               <div className="flex mb-3">
                 {[...Array(t.rating)].map((_, s) => (
-                  <span key={s} className="text-yellow-400">â</span>
+                  <span key={s} className="text-yellow-400">★</span>
                 ))}
               </div>
               <p className="text-gray-300 mb-4 text-sm">“{t.text}”</p>
@@ -193,7 +193,7 @@ export default function JupiterRoofRepairPage() {
         <div className="text-sm text-gray-400">
           <p className="font-semibold text-white">All Phase Construction USA</p>
           <p>590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-          <p>ð <a href="tel:7542275605" className="text-red-400 hover:text-red-300">754-227-5605</a></p>
+          <p>📞 <a href="tel:7542275605" className="text-red-400 hover:text-red-300">754-227-5605</a></p>
           <p>âï¸ <a href="mailto:leads@allphaseusa.com" className="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
         </div>
         <p className="mt-6 text-xs text-gray-500">ð Fully Licensed | Insured | Family Owned | Serving Jupiter and Palm Beach County</p>
