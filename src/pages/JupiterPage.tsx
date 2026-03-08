@@ -562,8 +562,8 @@ export default function JupiterPage() {
               <div className="mt-8 text-center text-sm text-gray-400">
                 <p className="font-semibold text-white">All Phase Construction USA</p>
                 <p>590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-                <p>📞 <a href="tel:7542275605" className="text-red-400 hover:text-red-300">754-227-5605</a></p>
-                <p>✉️ <a href="mailto:leads@allphaseusa.com" className="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
+                <p>ð <a href="tel:7542275605" className="text-red-400 hover:text-red-300">754-227-5605</a></p>
+                <p>âï¸ <a href="mailto:leads@allphaseusa.com" className="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
               </div>
           </div>
         </div>
