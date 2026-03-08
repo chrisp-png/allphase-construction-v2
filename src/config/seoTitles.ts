@@ -363,7 +363,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${cityName} Roof Repair | All Phase USA`,
-            description: `Roof repair in ${cityName}, FL â storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. Call (754) 227-5605.`,
+            description: `Roof repair in ${cityName}, FL Ã¢ÂÂ storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. Call (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
       ogTitle: `${cityName} Roof Repair | All Phase USA`,
             ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
