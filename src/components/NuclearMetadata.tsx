@@ -54,7 +54,7 @@ export default function NuclearMetadata() {
     }
     metaDesc.setAttribute('content', description);
 
-    // FORCE UPDATE CANONICAL (single owner Ã¢ÂÂ no other component emits this tag)
+    // FORCE UPDATE CANONICAL (single owner Ã¢ no other component emits this tag)
     let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
