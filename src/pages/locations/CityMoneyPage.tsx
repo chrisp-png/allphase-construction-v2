@@ -226,8 +226,34 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                   </p>
 
                   <p className="leading-relaxed">
-                    As a proud member of the Greater Boca Raton Chamber of Commerce, All Phase Construction USA is a verified community business embedded in the Boca Raton area — not a contractor that shows up from out of town. When you hire us, you're hiring a company that has ongoing relationships and standing in the same community where your home is.
+                    As a proud member of the Greater Boca Raton Chamber of Commerce, All Phase Construction USA is an active presence in this community — not a contractor that drives down from elsewhere when storm season hits.
                   </p>
+
+                  {/* Chamber / Community Trust Callout */}
+                  <div className="bg-amber-50 border border-[#C5A572]/40 rounded-xl p-6 mt-6 not-prose">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 bg-[#C5A572]/20 rounded-full p-3">
+                        <Users className="w-7 h-7 text-[#C5A572]" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-bold text-gray-900 mb-2">Boca Raton Chamber of Commerce Member</h4>
+                        <p className="text-gray-700 leading-relaxed">
+                          We were out at the <strong>Greater Boca Raton Chamber of Commerce chili cook-off at the YMCA</strong> — meeting neighbors, homeowners, and local business owners face-to-face. That's the kind of contractor we are. When you call us, you're calling someone who shook hands in your community last week, not a national franchise routing calls through a call center.
+                        </p>
+                        <p className="text-sm text-[#C5A572] font-semibold mt-3">Greater Boca Raton Chamber of Commerce — Verified Member</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Mid-Page Phone CTA */}
+                  <div className="bg-gray-900 rounded-xl p-6 mt-6 not-prose text-center">
+                    <p className="text-white font-semibold text-lg mb-1">Ready to talk to a local Boca Raton roofer?</p>
+                    <p className="text-gray-400 text-sm mb-4">Free inspection — no obligation. We answer 24/7.</p>
+                    <a href="tel:754-227-5605" className="inline-flex items-center gap-3 bg-[#C5A572] text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-[#B08D5B] transition-colors">
+                      <Phone className="w-6 h-6" />
+                      (754) 227-5605
+                    </a>
+                  </div>
                 </>
               )}
 
