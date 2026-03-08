@@ -342,7 +342,7 @@ export default function WellingtonPage() {
 
               <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-lg p-6 text-center">
                 <p className="text-zinc-300 text-lg">
-                  <strong className="text-white">Google Rating:</strong> 4.8★ based on 137 verified reviews
+                  <strong className="text-white">Google Rating:</strong> 4.8â based on 137 verified reviews
                 </p>
                 <p className="text-zinc-400 text-sm mt-2">
                   Read our authentic Google reviews to learn about Wellington homeowners' experiences with All Phase Construction USA
