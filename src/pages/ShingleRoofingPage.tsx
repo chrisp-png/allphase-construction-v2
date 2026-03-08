@@ -68,7 +68,7 @@ export default function ShingleRoofingPage() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Shingle Roofing Done Right â With Documentation That{' '}
+            Shingle Roofing Done Right — With Documentation That{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
               Saves You Money on Insurance
             </span>
@@ -76,7 +76,7 @@ export default function ShingleRoofingPage() {
 
           {/* Subhead */}
           <p className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-4xl leading-relaxed">
-            Most shingle roofs in South Florida are installed to minimum code â then forgotten. We upgrade underlayments, address ventilation, and document everything during installation. That documentation translates directly into insurance discounts you won't get from a typical roofer.
+            Most shingle roofs in South Florida are installed to minimum code — then forgotten. We upgrade underlayments, address ventilation, and document everything during installation. That documentation translates directly into insurance discounts you won't get from a typical roofer.
           </p>
 
           {/* CTAs */}
@@ -111,23 +111,23 @@ export default function ShingleRoofingPage() {
 
           <ul className="space-y-4 mb-10">
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Granule loss, curling, blistering, or surface deterioration</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Fastener exposure or attachment degradation beneath intact shingles</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Leak symptoms without obvious shingle displacement or damage</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Wind uplift vulnerability in aging shingle systems</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Shingle roofs approaching or exceeding expected service life</span>
             </li>
           </ul>
@@ -194,12 +194,12 @@ export default function ShingleRoofingPage() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            It's Not the Shingles â It's How They're Installed
+            It's Not the Shingles — It's How They're Installed
           </h2>
 
           <div className="space-y-6 text-lg text-zinc-300 mb-12 max-w-4xl">
             <p>
-              Shingle roofs in Florida often get dismissed as "cheap" or "not hurricane-rated." And honestly? When installed the way most contractors do it â minimum code, basic underlayment, inadequate ventilation â that criticism is fair.
+              Shingle roofs in Florida often get dismissed as "cheap" or "not hurricane-rated." And honestly? When installed the way most contractors do it — minimum code, basic underlayment, inadequate ventilation — that criticism is fair.
             </p>
 
             <p className="text-xl font-semibold text-white">
@@ -220,7 +220,7 @@ export default function ShingleRoofingPage() {
                 <div>
                   <h4 className="font-bold text-white mb-2">Upgraded Underlayment</h4>
                   <p className="text-zinc-400">
-                    Code requires basic felt or synthetic underlayment. But a premium self-adhered secondary water barrier provides real protection if shingles blow off â and qualifies you for insurance discounts.
+                    Code requires basic felt or synthetic underlayment. But a premium self-adhered secondary water barrier provides real protection if shingles blow off — and qualifies you for insurance discounts.
                   </p>
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default function ShingleRoofingPage() {
                 <div>
                   <h4 className="font-bold text-white mb-2">Ventilation Assessment</h4>
                   <p className="text-zinc-400">
-                    Asphalt shingles are more susceptible to thermal shock than any other roofing material. Without proper ventilation, Florida's heat cooks shingles from above AND below â dramatically shortening their lifespan.
+                    Asphalt shingles are more susceptible to thermal shock than any other roofing material. Without proper ventilation, Florida's heat cooks shingles from above AND below — dramatically shortening their lifespan.
                   </p>
                 </div>
               </div>
@@ -256,7 +256,7 @@ export default function ShingleRoofingPage() {
                 <div>
                   <h4 className="font-bold text-white mb-2">Six-Nail Patterns</h4>
                   <p className="text-zinc-400">
-                    In high-wind areas and on steep slopes, shingles require six nails instead of four. Contractors rushing through jobs often stick with four â reducing wind resistance.
+                    In high-wind areas and on steep slopes, shingles require six nails instead of four. Contractors rushing through jobs often stick with four — reducing wind resistance.
                   </p>
                 </div>
               </div>
@@ -268,7 +268,7 @@ export default function ShingleRoofingPage() {
                 <div>
                   <h4 className="font-bold text-white mb-2">Documentation</h4>
                   <p className="text-zinc-400">
-                    When a wind mitigation inspector visits after your roof is installed, they can't see what's underneath. If your contractor didn't document the secondary water barrier, deck attachment, and other features, the inspector marks "unknown" â and you lose insurance discounts you paid for.
+                    When a wind mitigation inspector visits after your roof is installed, they can't see what's underneath. If your contractor didn't document the secondary water barrier, deck attachment, and other features, the inspector marks "unknown" — and you lose insurance discounts you paid for.
                   </p>
                 </div>
               </div>
@@ -299,12 +299,12 @@ export default function ShingleRoofingPage() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            As a General Contractor, We Document Your Roof During Installation â Not After
+            As a General Contractor, We Document Your Roof During Installation — Not After
           </h2>
 
           <div className="space-y-6 text-lg text-zinc-300 mb-12 max-w-4xl">
             <p>
-              Here's something most roofing contractors won't mention: <span className="font-semibold text-white">Florida law requires insurance companies to offer discounts for wind-resistant construction features.</span> These can save you 30-45% on the windstorm portion of your homeowners insurance â every year.
+              Here's something most roofing contractors won't mention: <span className="font-semibold text-white">Florida law requires insurance companies to offer discounts for wind-resistant construction features.</span> These can save you 30-45% on the windstorm portion of your homeowners insurance — every year.
             </p>
 
             <p className="text-xl font-semibold text-white">
@@ -324,12 +324,12 @@ export default function ShingleRoofingPage() {
               </p>
 
               <ul className="space-y-2 ml-6">
-                <li>â¢ Roof covering (meets Florida Building Code?)</li>
-                <li>â¢ Roof deck attachment (how is plywood attached to trusses?)</li>
-                <li>â¢ Roof-to-wall attachment (clips, straps, or toe nails?)</li>
-                <li>â¢ Secondary water resistance (peel-and-stick underlayment?)</li>
-                <li>â¢ Opening protection (hurricane shutters/windows?)</li>
-                <li>â¢ Roof shape (hip vs. gable?)</li>
+                <li>• Roof covering (meets Florida Building Code?)</li>
+                <li>• Roof deck attachment (how is plywood attached to trusses?)</li>
+                <li>• Roof-to-wall attachment (clips, straps, or toe nails?)</li>
+                <li>• Secondary water resistance (peel-and-stick underlayment?)</li>
+                <li>• Opening protection (hurricane shutters/windows?)</li>
+                <li>• Roof shape (hip vs. gable?)</li>
               </ul>
             </div>
 
@@ -404,17 +404,17 @@ export default function ShingleRoofingPage() {
           </h2>
 
           <p className="text-xl text-zinc-300 mb-12 max-w-4xl">
-            Asphalt shingles are the most common roofing material in America â but they face a unique challenge in South Florida.
+            Asphalt shingles are the most common roofing material in America — but they face a unique challenge in South Florida.
           </p>
 
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 mb-8">
             <h3 className="text-2xl font-bold mb-6 text-white">The Science:</h3>
             <div className="space-y-4 text-zinc-300">
               <p>
-                On a sunny day, your shingle surface can reach 160Â°F or higher. The shingles absorb this heat and radiate it downward into your attic.
+                On a sunny day, your shingle surface can reach 160°F or higher. The shingles absorb this heat and radiate it downward into your attic.
               </p>
               <p>
-                Without proper ventilation, that attic becomes a furnace â often exceeding 140Â°F.
+                Without proper ventilation, that attic becomes a furnace — often exceeding 140°F.
               </p>
               <p className="text-xl font-semibold text-white">
                 Now your shingles are being cooked from both sides.
@@ -432,11 +432,11 @@ export default function ShingleRoofingPage() {
                 Effects of Thermal Shock:
               </h4>
               <ul className="space-y-2 text-zinc-400 text-sm">
-                <li>â¢ The asphalt dries out and becomes brittle</li>
-                <li>â¢ Shingles crack and curl at the edges</li>
-                <li>â¢ Granules loosen and wash away (exposing asphalt to UV damage)</li>
-                <li>â¢ Adhesive strips that hold shingles together fail</li>
-                <li>â¢ Underlayment degrades prematurely</li>
+                <li>• The asphalt dries out and becomes brittle</li>
+                <li>• Shingles crack and curl at the edges</li>
+                <li>• Granules loosen and wash away (exposing asphalt to UV damage)</li>
+                <li>• Adhesive strips that hold shingles together fail</li>
+                <li>• Underlayment degrades prematurely</li>
               </ul>
             </div>
 
@@ -513,7 +513,7 @@ export default function ShingleRoofingPage() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Why We Install Tamko Titan XT â The Shingle That Was Redesigned for Real Performance
+            Why We Install Tamko Titan XT — The Shingle That Was Redesigned for Real Performance
           </h2>
 
           <div className="space-y-6 text-lg text-zinc-300 mb-12 max-w-4xl">
@@ -522,7 +522,7 @@ export default function ShingleRoofingPage() {
             </p>
 
             <p>
-              When Tamko released the Titan XT, we paid attention. This isn't a marketing refresh â it's a genuinely redesigned shingle built on contractor feedback.
+              When Tamko released the Titan XT, we paid attention. This isn't a marketing refresh — it's a genuinely redesigned shingle built on contractor feedback.
             </p>
           </div>
 
@@ -533,26 +533,26 @@ export default function ShingleRoofingPage() {
               <div className="bg-black/40 rounded-lg p-6">
                 <h4 className="text-xl font-bold text-white mb-3">160 MPH Wind Warranty</h4>
                 <p className="text-zinc-300">
-                  Most architectural shingles offer 110-130 mph wind warranties â and some require special 6-nail installation to reach those ratings. Titan XT achieves 160 mph wind protection with standard 4-nail installation using Tamko starter strips. That's an industry first.
+                  Most architectural shingles offer 110-130 mph wind warranties — and some require special 6-nail installation to reach those ratings. Titan XT achieves 160 mph wind protection with standard 4-nail installation using Tamko starter strips. That's an industry first.
                 </p>
               </div>
 
               <div className="bg-black/40 rounded-lg p-6">
-                <h4 className="text-xl font-bold text-white mb-3">AnchorLockâ¢ Technology</h4>
+                <h4 className="text-xl font-bold text-white mb-3">AnchorLock™ Technology</h4>
                 <p className="text-zinc-300">
-                  A reinforced poly-fabric layer is applied through the common bond area of the shingle. This creates an anchor for nails to embed in, locking them tightly to the deck â not just the shingle.
+                  A reinforced poly-fabric layer is applied through the common bond area of the shingle. This creates an anchor for nails to embed in, locking them tightly to the deck — not just the shingle.
                 </p>
               </div>
 
               <div className="bg-black/40 rounded-lg p-6">
-                <h4 className="text-xl font-bold text-white mb-3">Rapid Fire Zoneâ¢ â 5x Larger Nailing Zone</h4>
+                <h4 className="text-xl font-bold text-white mb-3">Rapid Fire Zone™ — 5x Larger Nailing Zone</h4>
                 <p className="text-zinc-300">
                   Traditional architectural shingles have a narrow nailing zone. Miss it by half an inch, and you've compromised wind resistance. Titan XT's nailing zone is up to 500% larger than previous generations. This means faster installation and fewer mistakes.
                 </p>
               </div>
 
               <div className="bg-black/40 rounded-lg p-6">
-                <h4 className="text-xl font-bold text-white mb-3">Advanced Fusionâ¢ Sealant</h4>
+                <h4 className="text-xl font-bold text-white mb-3">Advanced Fusion™ Sealant</h4>
                 <p className="text-zinc-300">
                   A polymer-modified asphalt sealant bonds shingles together more aggressively than standard products. Combined with AnchorLock, this keeps shingles locked down through thermal cycling and high winds.
                 </p>
@@ -561,7 +561,7 @@ export default function ShingleRoofingPage() {
               <div className="bg-black/40 rounded-lg p-6">
                 <h4 className="text-xl font-bold text-white mb-3">Class 3 Impact Rating</h4>
                 <p className="text-zinc-300">
-                  Titan XT meets UL 2218 Class 3 impact resistance standards â protecting against hail damage without requiring an upgrade to a specialty product.
+                  Titan XT meets UL 2218 Class 3 impact resistance standards — protecting against hail damage without requiring an upgrade to a specialty product.
                 </p>
               </div>
             </div>
@@ -610,7 +610,7 @@ export default function ShingleRoofingPage() {
               <h3 className="text-2xl font-bold mb-6 text-white">Secondary Water Barrier<br />(What We Install)</h3>
               <div className="space-y-4 text-zinc-300">
                 <p>
-                  A secondary water barrier â also called "peel and stick" underlayment â is a self-adhered modified bitumen membrane. It seals around nail penetrations, bonds directly to the roof deck, and provides genuine waterproofing even if the shingles above are completely removed.
+                  A secondary water barrier — also called "peel and stick" underlayment — is a self-adhered modified bitumen membrane. It seals around nail penetrations, bonds directly to the roof deck, and provides genuine waterproofing even if the shingles above are completely removed.
                 </p>
               </div>
             </div>
@@ -634,7 +634,7 @@ export default function ShingleRoofingPage() {
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
             <h3 className="text-xl font-bold mb-4 text-white">Our Approach:</h3>
             <p className="text-zinc-300">
-              We install premium self-adhered underlayment on every shingle roof â and we photograph the installation before the shingles go on. When you need your wind mitigation inspection, you'll have documentation proving your secondary water barrier is in place.
+              We install premium self-adhered underlayment on every shingle roof — and we photograph the installation before the shingles go on. When you need your wind mitigation inspection, you'll have documentation proving your secondary water barrier is in place.
             </p>
           </div>
         </div>
@@ -730,12 +730,12 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Premium Architectural Shingles (Recommended)</h3>
               <ul className="space-y-3 text-zinc-300 text-sm">
-                <li>â¢ Our recommendation: Tamko Titan XT (160 mph wind warranty)</li>
-                <li>â¢ Also available: GAF Timberline HDZ, Owens Corning Duration</li>
-                <li>â¢ Multi-layer dimensional appearance</li>
-                <li>â¢ Higher wind ratings than 3-tab</li>
-                <li>â¢ 30-50 year manufacturer warranties</li>
-                <li>â¢ Class 3 or Class 4 impact ratings available</li>
+                <li>• Our recommendation: Tamko Titan XT (160 mph wind warranty)</li>
+                <li>• Also available: GAF Timberline HDZ, Owens Corning Duration</li>
+                <li>• Multi-layer dimensional appearance</li>
+                <li>• Higher wind ratings than 3-tab</li>
+                <li>• 30-50 year manufacturer warranties</li>
+                <li>• Class 3 or Class 4 impact ratings available</li>
               </ul>
             </div>
 
@@ -745,11 +745,11 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Standard Architectural Shingles</h3>
               <ul className="space-y-3 text-zinc-400 text-sm">
-                <li>â¢ Quality laminated construction</li>
-                <li>â¢ 110-130 mph wind ratings</li>
-                <li>â¢ Good option for budget-conscious homeowners</li>
-                <li>â¢ 25-30 year manufacturer warranties</li>
-                <li>â¢ Variety of colors and styles</li>
+                <li>• Quality laminated construction</li>
+                <li>• 110-130 mph wind ratings</li>
+                <li>• Good option for budget-conscious homeowners</li>
+                <li>• 25-30 year manufacturer warranties</li>
+                <li>• Variety of colors and styles</li>
               </ul>
             </div>
 
@@ -759,11 +759,11 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">3-Tab Shingles (Limited Applications)</h3>
               <ul className="space-y-3 text-zinc-400 text-sm">
-                <li>â¢ Flat, uniform appearance</li>
-                <li>â¢ Lower wind ratings (typically 60-70 mph)</li>
-                <li>â¢ Shorter lifespan than architectural shingles</li>
-                <li>â¢ <span className="font-semibold text-white">Not recommended for primary residences in HVHZ</span></li>
-                <li>â¢ May be appropriate for utility structures or covered areas</li>
+                <li>• Flat, uniform appearance</li>
+                <li>• Lower wind ratings (typically 60-70 mph)</li>
+                <li>• Shorter lifespan than architectural shingles</li>
+                <li>• <span className="font-semibold text-white">Not recommended for primary residences in HVHZ</span></li>
+                <li>• May be appropriate for utility structures or covered areas</li>
               </ul>
             </div>
 
@@ -773,11 +773,11 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Impact-Resistant Shingles</h3>
               <ul className="space-y-3 text-zinc-400 text-sm">
-                <li>â¢ Class 4 impact rating (highest available)</li>
-                <li>â¢ Designed to withstand large hail</li>
-                <li>â¢ May qualify for additional insurance discounts</li>
-                <li>â¢ Options: Tamko StormFighter IR, GAF Timberline AS II</li>
-                <li>â¢ Good choice for exposed roof areas</li>
+                <li>• Class 4 impact rating (highest available)</li>
+                <li>• Designed to withstand large hail</li>
+                <li>• May qualify for additional insurance discounts</li>
+                <li>• Options: Tamko StormFighter IR, GAF Timberline AS II</li>
+                <li>• Good choice for exposed roof areas</li>
               </ul>
             </div>
           </div>
@@ -799,14 +799,14 @@ export default function ShingleRoofingPage() {
 
           <div className="space-y-6 text-lg text-zinc-300 mb-12 max-w-4xl">
             <p>
-              The plywood or OSB sheathing that forms your roof deck is attached to the trusses or rafters with nails. Over time â and especially in older homes â these nails can work loose, corrode, or simply be inadequate for current code requirements.
+              The plywood or OSB sheathing that forms your roof deck is attached to the trusses or rafters with nails. Over time — and especially in older homes — these nails can work loose, corrode, or simply be inadequate for current code requirements.
             </p>
           </div>
 
           <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 mb-8">
             <h3 className="text-2xl font-bold mb-6 text-white">Why Deck Re-Nailing Matters:</h3>
             <p className="text-zinc-300">
-              In a hurricane, wind doesn't just push on your roof â it creates uplift pressure that tries to pull the roof off from below. If your deck isn't properly attached, the shingles may stay in place while entire sections of plywood tear away.
+              In a hurricane, wind doesn't just push on your roof — it creates uplift pressure that tries to pull the roof off from below. If your deck isn't properly attached, the shingles may stay in place while entire sections of plywood tear away.
             </p>
           </div>
 
@@ -816,23 +816,23 @@ export default function ShingleRoofingPage() {
               During a roof replacement in Broward County, the existing roof deck must be re-nailed to current standards:
             </p>
             <ul className="space-y-2 text-zinc-400 ml-6">
-              <li>â¢ 8d ring-shank nails</li>
-              <li>â¢ Specific spacing patterns based on roof zone</li>
-              <li>â¢ Supplemental fasteners in high-stress areas</li>
+              <li>• 8d ring-shank nails</li>
+              <li>• Specific spacing patterns based on roof zone</li>
+              <li>• Supplemental fasteners in high-stress areas</li>
             </ul>
           </div>
 
           <div className="bg-red-950/20 border border-red-900/30 rounded-xl p-8 mb-8">
             <h3 className="text-xl font-bold mb-4 text-white">The Documentation Problem:</h3>
             <p className="text-zinc-300 mb-4">
-              Once your new shingles are installed, no one can see whether the deck was re-nailed properly. The wind mitigation inspector evaluates "roof deck attachment" â but they can only verify it if documentation exists.
+              Once your new shingles are installed, no one can see whether the deck was re-nailed properly. The wind mitigation inspector evaluates "roof deck attachment" — but they can only verify it if documentation exists.
             </p>
           </div>
 
           <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 mb-8">
             <h3 className="text-xl font-bold mb-4 text-white">Our Approach:</h3>
             <p className="text-zinc-300">
-              We photograph the deck re-nailing process before underlayment is applied. This documentation proves your roof deck attachment meets the highest category on the wind mitigation form â potentially qualifying you for up to 35% discount on the windstorm portion of your insurance.
+              We photograph the deck re-nailing process before underlayment is applied. This documentation proves your roof deck attachment meets the highest category on the wind mitigation form — potentially qualifying you for up to 35% discount on the windstorm portion of your insurance.
             </p>
           </div>
 
@@ -869,7 +869,7 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Shingle Roof Repair</h3>
               <p className="text-zinc-400 text-sm">
-                Wind damage, leaks, missing shingles, flashing failures. We diagnose the actual problem and fix it properly â not just patch over symptoms.
+                Wind damage, leaks, missing shingles, flashing failures. We diagnose the actual problem and fix it properly — not just patch over symptoms.
               </p>
             </div>
 
@@ -947,7 +947,7 @@ export default function ShingleRoofingPage() {
               },
               {
                 problem: "Dark streaks on roof",
-                cause: "Algae growth (Gloeocapsa magma) â cosmetic but can indicate moisture retention",
+                cause: "Algae growth (Gloeocapsa magma) — cosmetic but can indicate moisture retention",
                 fix: "Professional cleaning; recommend algae-resistant shingles for replacement"
               },
               {
@@ -984,7 +984,7 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Wind Mitigation Documentation Included</h3>
               <p className="text-zinc-400 text-sm">
-                We photograph deck re-nailing, secondary water barrier installation, and nail patterns. You'll have proof for your insurance company â not "unknowns."
+                We photograph deck re-nailing, secondary water barrier installation, and nail patterns. You'll have proof for your insurance company — not "unknowns."
               </p>
             </div>
 
@@ -1024,7 +1024,7 @@ export default function ShingleRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Dual Licensed (GC + CCC)</h3>
               <p className="text-zinc-400 text-sm">
-                Structural repairs, stucco work, ventilation upgrades â we handle everything without subcontractors.
+                Structural repairs, stucco work, ventilation upgrades — we handle everything without subcontractors.
               </p>
             </div>
 
@@ -1051,8 +1051,8 @@ export default function ShingleRoofingPage() {
           <div className="flex items-center justify-center gap-2 mb-8">
             <MapPin className="w-6 h-6 text-red-500" />
             <p className="text-xl text-zinc-400">
-              Boca Raton â¢ Deerfield Beach â¢ Pompano Beach â¢ Fort Lauderdale â¢ Coral Springs â¢ Parkland â¢
-              Delray Beach â¢ Boynton Beach â¢ West Palm Beach â¢ Lighthouse Point â¢ Hillsboro Beach â¢ Coconut Creek â¢ Margate & surrounding areas
+              Boca Raton • Deerfield Beach • Pompano Beach • Fort Lauderdale • Coral Springs • Parkland •
+              Delray Beach • Boynton Beach • West Palm Beach • Lighthouse Point • Hillsboro Beach • Coconut Creek • Margate & surrounding areas
             </p>
           </div>
 
@@ -1079,7 +1079,7 @@ export default function ShingleRoofingPage() {
             {[
               {
                 q: "Are shingle roofs a good choice for South Florida hurricanes?",
-                a: "Yes â when installed properly. Premium architectural shingles like Tamko Titan XT carry 160 mph wind warranties. The key factors are proper nailing patterns, deck re-nailing, and quality underlayment. Many shingle failures in storms result from installation shortcuts, not material deficiencies."
+                a: "Yes — when installed properly. Premium architectural shingles like Tamko Titan XT carry 160 mph wind warranties. The key factors are proper nailing patterns, deck re-nailing, and quality underlayment. Many shingle failures in storms result from installation shortcuts, not material deficiencies."
               },
               {
                 q: "How long do shingle roofs last in Florida?",
@@ -1087,7 +1087,7 @@ export default function ShingleRoofingPage() {
               },
               {
                 q: "What is a secondary water barrier and why does it matter?",
-                a: "A secondary water barrier is a self-adhered (peel and stick) underlayment that provides waterproofing even if shingles blow off. It qualifies for approximately 8% discount on your windstorm insurance â but only if you can document that it was installed. We photograph this installation on every job."
+                a: "A secondary water barrier is a self-adhered (peel and stick) underlayment that provides waterproofing even if shingles blow off. It qualifies for approximately 8% discount on your windstorm insurance — but only if you can document that it was installed. We photograph this installation on every job."
               },
               {
                 q: "How do I get insurance discounts for my roof?",
@@ -1099,7 +1099,7 @@ export default function ShingleRoofingPage() {
               },
               {
                 q: "Why does ventilation matter for shingle roofs?",
-                a: "Shingle surfaces can reach 160Â°F on sunny days. Without proper ventilation, that heat builds up in the attic and \"cooks\" the shingles from below. This thermal shock dries out the asphalt, causing cracking, curling, and premature failure. Proper ventilation can extend shingle life by 30-50%."
+                a: "Shingle surfaces can reach 160°F on sunny days. Without proper ventilation, that heat builds up in the attic and \"cooks\" the shingles from below. This thermal shock dries out the asphalt, causing cracking, curling, and premature failure. Proper ventilation can extend shingle life by 30-50%."
               },
               {
                 q: "What is Tamko Titan XT and why do you recommend it?",
@@ -1143,7 +1143,7 @@ export default function ShingleRoofingPage() {
           </h2>
 
           <p className="text-xl text-zinc-300 mb-8 max-w-3xl mx-auto">
-            Schedule a free consultation. We'll explain the upgrades that make a real difference â the ventilation, the underlayment, the documentation that saves you money on insurance. Whether you hire us or not, you'll understand what to look for.
+            Schedule a free consultation. We'll explain the upgrades that make a real difference — the ventilation, the underlayment, the documentation that saves you money on insurance. Whether you hire us or not, you'll understand what to look for.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
