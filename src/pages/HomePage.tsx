@@ -597,8 +597,8 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-medium text-base sm:text-lg"
               >
-                <span className="text-2xl">ðµ</span>
-                <span>Read more reviews on Google â</span>
+                <span className="text-2xl">🔵</span>
+                <span>Read more reviews on Google →</span>
               </a>
 
               <a
@@ -607,8 +607,8 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors font-medium text-base sm:text-lg"
               >
-                <span className="text-2xl">ð¡</span>
-                <span>See our BBB A+ profile â</span>
+                <span className="text-2xl">🟡</span>
+                <span>See our BBB A+ profile →</span>
               </a>
 
               <a
@@ -617,8 +617,8 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-red-400 hover:text-red-300 transition-colors font-medium text-base sm:text-lg"
               >
-                <span className="text-2xl">ð´</span>
-                <span>Check us out on Directorii â</span>
+                <span className="text-2xl">🔴</span>
+                <span>Check us out on Directorii →</span>
               </a>
             </div>
           </div>
