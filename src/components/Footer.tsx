@@ -14,7 +14,7 @@ export default function Footer() {
           </h2>
 
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Whether you need a full roof replacement, a storm damage assessment, or just want a professional opinion on your roof's conditionâAll Phase Construction USA is here to help.
+            Whether you need a full roof replacement, a storm damage assessment, or just want a professional opinion on your roof's condition—All Phase Construction USA is here to help.
           </p>
 
           <p className="text-base text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -82,7 +82,7 @@ export default function Footer() {
               Dual-Licensed Roofing Contractor (CCC) with General Contractor (CGC) Certification
             </p>
             <p className="text-gray-400 text-sm mb-4 font-semibold">
-              CCC-1331464 â¢ CGC-1526236
+              CCC-1331464 • CGC-1526236
             </p>
             <div className="space-y-2 text-gray-400 text-sm mb-6">
               <p>590 Goolsby Blvd</p>
@@ -382,7 +382,7 @@ export default function Footer() {
         <div className="border-t border-neutral-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              Â© 2025 All Phase Construction USA, LLC. All rights reserved.
+              © 2025 All Phase Construction USA, LLC. All rights reserved.
             </p>
             <div className="flex gap-6 text-gray-500 text-sm">
               <Link to="/privacy/" className="hover:text-red-600 transition-colors">
