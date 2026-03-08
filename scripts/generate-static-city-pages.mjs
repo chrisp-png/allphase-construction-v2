@@ -438,8 +438,8 @@ function generateHybridCityPages() {
 
   // Get bundled assets
   const assets = getBundledAssets();
-  console.log(`â Found bundled CSS: ${assets.css}`);
-  console.log(`â Found bundled JS:  ${assets.js}\n`);
+  console.log(`✅ Found bundled CSS: ${assets.css}`);
+  console.log(`✅ Found bundled JS:  ${assets.js}\n`);
 
   let totalPages = 0;
 
@@ -469,7 +469,7 @@ function generateHybridCityPages() {
     const hubDir = path.join(distDir, 'locations', citySlug);
     fs.mkdirSync(hubDir, { recursive: true });
     fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
-    console.log(`â Generated: dist/locations/${citySlug}/index.html`);
+    console.log(`✅ Generated: dist/locations/${citySlug}/index.html`);
     totalPages++;
 
     // 2. Roof Repair - /roof-repair/:city/
@@ -491,7 +491,7 @@ function generateHybridCityPages() {
     const repairDir = path.join(distDir, 'roof-repair', citySlug);
     fs.mkdirSync(repairDir, { recursive: true });
     fs.writeFileSync(path.join(repairDir, 'index.html'), repairHTML);
-    console.log(`â Generated: dist/roof-repair/${citySlug}/index.html`);
+    console.log(`✅ Generated: dist/roof-repair/${citySlug}/index.html`);
     totalPages++;
 
     // 3. Roof Inspection - /roof-inspection/:city/
@@ -513,20 +513,20 @@ function generateHybridCityPages() {
     const inspectionDir = path.join(distDir, 'roof-inspection', citySlug);
     fs.mkdirSync(inspectionDir, { recursive: true });
     fs.writeFileSync(path.join(inspectionDir, 'index.html'), inspectionHTML);
-    console.log(`â Generated: dist/roof-inspection/${citySlug}/index.html`);
+    console.log(`✅ Generated: dist/roof-inspection/${citySlug}/index.html`);
     totalPages++;
   });
 
-  console.log(`\nâ Hybrid City Pages Complete! Generated ${totalPages} prerendered pages.\n`);
+  console.log(`\n✅ Hybrid City Pages Complete! Generated ${totalPages} prerendered pages.\n`);
   console.log(`ð Breakdown:`);
   console.log(`   - City Service Hubs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Repairs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Inspections: ${totalPages / 3} pages`);
-  console.log(`\nð¡ How it works:`);
-  console.log(`   â Crawlers see HTML content in #seo-static`);
-  console.log(`   â Users see full React app once JS loads`);
-  console.log(`   â React mounts normally with full header/footer/nav`);
-  console.log(`   â No "business card" look — full branded experience\n`);
+  console.log(`\n💡 How it works:`);
+  console.log(`   ✅ Crawlers see HTML content in #seo-static`);
+  console.log(`   ✅ Users see full React app once JS loads`);
+  console.log(`   ✅ React mounts normally with full header/footer/nav`);
+  console.log(`   ✅ No "business card" look — full branded experience\n`);
 }
 
 // Run the generator
