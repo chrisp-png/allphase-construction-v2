@@ -316,7 +316,7 @@ export default function Footer() {
               </li>
               <li className="pt-2 mt-2 border-t border-neutral-800">
                 <Link to="/sitemap/#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium inline-flex items-center gap-1">
-                  View All Cities <ArrowRight size={14} />ÂÂ
+                  View All Cities <ArrowRight size={14} />
                 </Link>
               </li>
             </ul>
