@@ -195,21 +195,21 @@ export default function DaniaBeachPage() {
                 >
                   Roof Repair
                 </Link>
-                <span className="text-zinc-600">·</span>
+                <span className="text-zinc-600">Â·</span>
                 <Link
                   to="/tile-roofing/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Roof Replacement
                 </Link>
-                <span className="text-zinc-600">·</span>
+                <span className="text-zinc-600">Â·</span>
                 <Link
                   to="/roof-inspection/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Roof Inspection
                 </Link>
-                <span className="text-zinc-600">·</span>
+                <span className="text-zinc-600">Â·</span>
                 <Link
                   to="/metal-roofing/"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
