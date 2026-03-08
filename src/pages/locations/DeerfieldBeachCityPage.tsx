@@ -403,7 +403,7 @@ export default function DeerfieldBeachCityPage() {
               </p>
               <p className="text-gray-400 text-lg leading-relaxed">
                 <Link to="/locations/deerfield-beach/best-roofers-deerfield-beach" className="text-red-500 hover:text-red-400 underline font-medium">
-                  See our guide to the 5 best rated roofers in Deerfield Beach â
+                  See our guide to the 5 best rated roofers in Deerfield Beach →
                 </Link>
               </p>
             </div>
@@ -713,7 +713,7 @@ export default function DeerfieldBeachCityPage() {
                   HVHZ-compliant TAMKO and GAF architectural shingles engineered for extreme wind resistance up to 130+ mph. Installed to Broward County inspection standards, these systems qualify for insurance wind mitigation credits and provide proven coastal durability.
                 </p>
                 <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 font-semibold">
-                  Learn More â
+                  Learn More →
                 </Link>
               </div>
 
@@ -727,7 +727,7 @@ export default function DeerfieldBeachCityPage() {
                   Hurricane-rated tile systems installed with foam adhesive or mortar meeting HVHZ wind uplift requirements. Exceeds Broward County's stringent installation standards for coastal properties and qualifies for maximum insurance wind mitigation discounts.
                 </p>
                 <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 font-semibold">
-                  Learn More â
+                  Learn More →
                 </Link>
               </div>
 
@@ -741,7 +741,7 @@ export default function DeerfieldBeachCityPage() {
                   Mechanically seamed metal roofing systems with concealed fasteners rated for extreme wind resistance and salt air exposure. HVHZ-compliant installations meet Broward County's highest structural standards for coastal durability and insurance eligibility.
                 </p>
                 <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 font-semibold">
-                  Learn More â
+                  Learn More →
                 </Link>
               </div>
             </div>
@@ -939,7 +939,7 @@ export default function DeerfieldBeachCityPage() {
                     rel="noopener noreferrer"
                     className="text-red-600 hover:text-red-500 font-semibold transition-colors"
                   >
-                    Get Directions â
+                    Get Directions →
                   </a>
                 </div>
               </div>
