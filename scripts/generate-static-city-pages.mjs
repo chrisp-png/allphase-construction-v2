@@ -31,7 +31,7 @@ const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 function getBundledAssets() {
   const mainIndexPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(mainIndexPath)) {
-    console.error('❌ dist/index.html not found. Run Vite build first.');
+    console.error('â dist/index.html not found. Run Vite build first.');
     process.exit(1);
   }
 
@@ -41,7 +41,7 @@ function getBundledAssets() {
   const jsMatch = content.match(/src="(\/assets\/index-[^"]+\.js)"/);
 
   if (!cssMatch || !jsMatch) {
-    console.error('❌ Could not find bundled assets in dist/index.html');
+    console.error('â Could not find bundled assets in dist/index.html');
     console.error('CSS found:', !!cssMatch, 'JS found:', !!jsMatch);
     process.exit(1);
   }
@@ -139,7 +139,7 @@ function getSEOMetadata(urlPath, cityName = null) {
   // Fallback - FAIL LOUDLY if metadata missing
   // This prevents silent injection of wrong metadata at build time
   throw new Error(
-    `❌ MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
+    `â MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
     `Add explicit metadata to scripts/seo-titles.json or handle this route in getSEOMetadata().\n` +
     `Routes should NOT rely on fallback metadata - every route must be explicitly defined.`
   );
@@ -163,7 +163,7 @@ function generateServiceHubContent(cityName, citySlug) {
       Storm damage? Leak in your ceiling? We provide 24/7 emergency roof repair services throughout ${cityName}. Our rapid-response team can be on-site quickly to assess damage, implement temporary repairs to prevent further water intrusion, and develop a comprehensive repair plan.
     </p>
     <p>
-      <a href="/roof-repair/${citySlug}/">Learn more about emergency roof repair in ${cityName} →</a>
+      <a href="/roof-repair/${citySlug}/">Learn more about emergency roof repair in ${cityName} â</a>
     </p>
 
     <h3>Professional Roof Inspection</h3>
@@ -171,7 +171,7 @@ function generateServiceHubContent(cityName, citySlug) {
       Our comprehensive 21-point roof inspection service provides ${cityName} property owners with detailed documentation of their roof's condition. Whether you're buying a home, filing an insurance claim, or conducting routine maintenance, our certified inspectors deliver thorough assessments with photo documentation.
     </p>
     <p>
-      <a href="/roof-inspection/${citySlug}/">Schedule a roof inspection in ${cityName} →</a>
+      <a href="/roof-inspection/${citySlug}/">Schedule a roof inspection in ${cityName} â</a>
     </p>
 
     <h3>Complete Roof Replacement</h3>
@@ -434,12 +434,12 @@ function createHybridHTMLPage(title, description, canonical, seoContent, cityNam
  * Generate all hybrid city pages
  */
 function generateHybridCityPages() {
-  console.log('\n🏗️  Generating Hybrid Prerendered City Pages...\n');
+  console.log('\nðï¸  Generating Hybrid Prerendered City Pages...\n');
 
   // Get bundled assets
   const assets = getBundledAssets();
-  console.log(`✅ Found bundled CSS: ${assets.css}`);
-  console.log(`✅ Found bundled JS:  ${assets.js}\n`);
+  console.log(`â Found bundled CSS: ${assets.css}`);
+  console.log(`â Found bundled JS:  ${assets.js}\n`);
 
   let totalPages = 0;
 
@@ -469,7 +469,7 @@ function generateHybridCityPages() {
     const hubDir = path.join(distDir, 'locations', citySlug);
     fs.mkdirSync(hubDir, { recursive: true });
     fs.writeFileSync(path.join(hubDir, 'index.html'), hubHTML);
-    console.log(`✅ Generated: dist/locations/${citySlug}/index.html`);
+    console.log(`â Generated: dist/locations/${citySlug}/index.html`);
     totalPages++;
 
     // 2. Roof Repair - /roof-repair/:city/
@@ -491,7 +491,7 @@ function generateHybridCityPages() {
     const repairDir = path.join(distDir, 'roof-repair', citySlug);
     fs.mkdirSync(repairDir, { recursive: true });
     fs.writeFileSync(path.join(repairDir, 'index.html'), repairHTML);
-    console.log(`✅ Generated: dist/roof-repair/${citySlug}/index.html`);
+    console.log(`â Generated: dist/roof-repair/${citySlug}/index.html`);
     totalPages++;
 
     // 3. Roof Inspection - /roof-inspection/:city/
@@ -513,20 +513,20 @@ function generateHybridCityPages() {
     const inspectionDir = path.join(distDir, 'roof-inspection', citySlug);
     fs.mkdirSync(inspectionDir, { recursive: true });
     fs.writeFileSync(path.join(inspectionDir, 'index.html'), inspectionHTML);
-    console.log(`✅ Generated: dist/roof-inspection/${citySlug}/index.html`);
+    console.log(`â Generated: dist/roof-inspection/${citySlug}/index.html`);
     totalPages++;
   });
 
-  console.log(`\n✅ Hybrid City Pages Complete! Generated ${totalPages} prerendered pages.\n`);
-  console.log(`📊 Breakdown:`);
+  console.log(`\nâ Hybrid City Pages Complete! Generated ${totalPages} prerendered pages.\n`);
+  console.log(`ð Breakdown:`);
   console.log(`   - City Service Hubs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Repairs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Inspections: ${totalPages / 3} pages`);
-  console.log(`\n💡 How it works:`);
-  console.log(`   ✅ Crawlers see HTML content in #seo-static`);
-  console.log(`   ✅ Users see full React app once JS loads`);
-  console.log(`   ✅ React mounts normally with full header/footer/nav`);
-  console.log(`   ✅ No "business card" look — full branded experience\n`);
+  console.log(`\nð¡ How it works:`);
+  console.log(`   â Crawlers see HTML content in #seo-static`);
+  console.log(`   â Users see full React app once JS loads`);
+  console.log(`   â React mounts normally with full header/footer/nav`);
+  console.log(`   â No "business card" look — full branded experience\n`);
 }
 
 // Run the generator
