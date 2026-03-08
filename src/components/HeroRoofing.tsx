@@ -141,7 +141,7 @@ export default function HeroRoofing() {
             </p>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, Tamko Pro Platinum status, and real local experience.
+              Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, TRI Alliance High Wind Certification, and real local experience.
             </p>
 
             <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
@@ -185,12 +185,13 @@ export default function HeroRoofing() {
                 </a>
 
                 <div className="p-4 sm:p-5 text-center relative group overflow-hidden">
-                  <div className="relative">
-                    <div className="flex items-center justify-center mb-1.5">
-                      <Award className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg" />
-                      <p className="text-base sm:text-lg font-bold text-white">Tamko</p>
-                    </div>
-                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">Pro Platinum</p>
+                  <div className="relative flex flex-col items-center justify-center">
+                    <img
+                      src="/tri-alliance-logo.jpg"
+                      alt="TRI Alliance Florida High Wind Certified"
+                      className="h-10 sm:h-12 w-auto object-contain mb-1"
+                    />
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">High Wind Certified</p>
                   </div>
                 </div>
 
