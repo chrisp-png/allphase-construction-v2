@@ -1185,7 +1185,6 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     },
     geo: { '@type': 'GeoCoordinates', latitude: 26.3184, longitude: -80.0998 },
     areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '137', bestRating: '5', worstRating: '1' },
     priceRange: '$$',
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
