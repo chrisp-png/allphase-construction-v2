@@ -1562,7 +1562,7 @@ function generateStaticFiles() {
       { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
       { name: 'Roof Replacement Process', url: 'https://allphaseconstructionfl.com/roof-replacement-process' }
     ]
-  },
+  }
   '/roof-replacement': {
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
@@ -1590,15 +1590,7 @@ function generateStaticFiles() {
         answer: 'Yes. We work with financing partners to offer flexible payment options so South Florida homeowners can get the roof they need without waiting. Ask about current financing programs during your free estimate.'
       }
     ]
-      { name: 'New Roof Installation', text: 'Your selected roofing system is installed by our licensed crews following Florida Building Code specifications and manufacturer installation requirements.' },
-      { name: 'Final Inspection and Cleanup', text: 'A county inspector signs off on the permit, we complete full magnetic nail sweep and debris removal, and conduct a final walkthrough with you before collecting final payment.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
-      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
-      { name: 'Roof Replacement Process', url: 'https://allphaseconstructionfl.com/roof-replacement-process' }
-    ]
-  }
+  },
 };
 
 const CITY_PAGE_SCHEMAS = {
