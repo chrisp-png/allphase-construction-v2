@@ -212,7 +212,7 @@ export default function RoofInspectionPage() {
                   Broward County and portions of Palm Beach County fall within Florida's High Velocity Hurricane Zone (HVHZ), where roof inspections must verify compliance with enhanced wind-resistance standards. HVHZ provisions require specific fastening patterns, material approvals, and installation methods that differ from standard Florida Building Code requirements. Inspections in these jurisdictions evaluate whether roofs meet HVHZ fastening schedules, tile foam adhesive coverage, metal roof clip spacing, and shingle nailing patterns.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  Licensed roofing contractors familiar with HVHZ code provisions can identify non-compliant installations that may affect insurance eligibility, wind mitigation credits, or future repair requirements. Florida Statute 627.7011(5) authorizes licensed contractors, engineers, and architects to certify remaining roof life for insurance renewalsâa process requiring detailed knowledge of both material condition and code compliance status.
+                  Licensed roofing contractors familiar with HVHZ code provisions can identify non-compliant installations that may affect insurance eligibility, wind mitigation credits, or future repair requirements. Florida Statute 627.7011(5) authorizes licensed contractors, engineers, and architects to certify remaining roof life for insurance renewals—a process requiring detailed knowledge of both material condition and code compliance status.
                 </p>
               </div>
             </div>
@@ -261,35 +261,35 @@ export default function RoofInspectionPage() {
 
           <ul className="space-y-3 text-lg text-zinc-300 mb-8">
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Roofing material condition and failure patterns</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Fastening, attachment, and uplift resistance evaluation</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Flashing, penetration, and transition integrity</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Active and latent water intrusion indicators</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Drainage performance and ponding risk</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Structural deck condition and load behavior</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Florida Building Code and HVHZ compliance verification</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Photographic documentation for engineering, insurance, or remediation use</span>
             </li>
           </ul>
@@ -321,27 +321,27 @@ export default function RoofInspectionPage() {
 
           <ul className="space-y-3 text-lg text-zinc-300 mb-8">
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Material wear, aging, and manufacturing failure indicators</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Improper installation or fastening deficiencies</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Moisture intrusion paths not visible from the interior</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Wind uplift vulnerabilities and attachment risks</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Code compliance issues affecting insurance eligibility</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Conditions that may require repair versus full replacement</span>
             </li>
           </ul>
@@ -450,27 +450,27 @@ export default function RoofInspectionPage() {
 
           <ul className="space-y-4 text-lg text-zinc-300 leading-relaxed mb-8">
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Water migration occurring far from the point of interior staining</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Capillary action and hydrostatic pressure beneath roofing assemblies</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Improper flashing integration at transitions and penetrations</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Fastener back-out and attachment failure not visible from grade</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Thermal expansion, contraction, and ventilation imbalance</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Deck deflection or substrate deterioration concealed by underlayment</span>
             </li>
           </ul>
@@ -505,7 +505,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-8">
-            <strong className="text-white">Insurance Roof Inspection & Certification:</strong> Insurance carriersâincluding Citizens Property Insurance Corporationârequire specific inspection protocols and contractor certifications for coverage underwriting, renewal eligibility, and premium determination. Insurance-driven inspections differ from standard condition assessments in documentation requirements, remaining useful life certification, and regulatory compliance standards. Our licensed contractor attestation services meet Florida property insurance carrier requirements for both residential and commercial properties throughout Broward County and Palm Beach County.
+            <strong className="text-white">Insurance Roof Inspection & Certification:</strong> Insurance carriers—including Citizens Property Insurance Corporation—require specific inspection protocols and contractor certifications for coverage underwriting, renewal eligibility, and premium determination. Insurance-driven inspections differ from standard condition assessments in documentation requirements, remaining useful life certification, and regulatory compliance standards. Our licensed contractor attestation services meet Florida property insurance carrier requirements for both residential and commercial properties throughout Broward County and Palm Beach County.
           </p>
 
           <div className="space-y-6">
@@ -694,10 +694,10 @@ export default function RoofInspectionPage() {
           <div className="mt-12 bg-zinc-900 border border-zinc-800 rounded-lg p-6">
             <blockquote className="border-l-4 border-red-600 pl-6 py-4">
               <p className="text-xl text-zinc-300 italic mb-4">
-                "Most roof problems aren't obvious from the ground. We get on the roof, into the attic when needed, and document what we see with photos so the condition is clear, defensible, and actionableâwhether the next step is a repair, a replacement, or an insurance conversation."
+                "Most roof problems aren't obvious from the ground. We get on the roof, into the attic when needed, and document what we see with photos so the condition is clear, defensible, and actionable—whether the next step is a repair, a replacement, or an insurance conversation."
               </p>
               <footer className="text-zinc-400">
-                â Karl W., Roof Inspector, All Phase Construction USA
+                — Karl W., Roof Inspector, All Phase Construction USA
               </footer>
             </blockquote>
           </div>
@@ -717,27 +717,27 @@ export default function RoofInspectionPage() {
 
           <ul className="space-y-4 mb-10">
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Water intrusion with no visible exterior damage</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Conflicting symptoms such as leaks without material failure</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Post-storm evaluation where damage extent is unclear</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Insurance documentation, wind mitigation inspection reports, or underwriting requirements</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Property transactions requiring condition verification</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">â¢</span>
+              <span className="text-red-600 mt-1">•</span>
               <span>Preventive assessment for aging roofing systems</span>
             </li>
           </ul>
@@ -814,7 +814,7 @@ export default function RoofInspectionPage() {
                     A diagnostic evaluation performed to assess current condition and identify deficiencies. The inspection process produces documentation of existing conditions but does not include repair or replacement work.
                   </p>
                   <p className="text-zinc-300 leading-relaxed">
-                    Inspections serve multiple purposes: pre-purchase due diligence, insurance certification under Florida Statute 627.7011(5), post-storm damage assessment, or proactive maintenance planning. The deliverable is information â not construction work.
+                    Inspections serve multiple purposes: pre-purchase due diligence, insurance certification under Florida Statute 627.7011(5), post-storm damage assessment, or proactive maintenance planning. The deliverable is information — not construction work.
                   </p>
                 </div>
               </div>
@@ -832,7 +832,7 @@ export default function RoofInspectionPage() {
                     Repair becomes the appropriate path when the underlying roofing material retains sufficient service life and the deficiencies are localized or can be systematically addressed without disturbing the entire assembly. Cost-effectiveness depends on the extent of work required relative to the remaining roof lifespan.
                   </p>
                   <p className="text-zinc-300 leading-relaxed">
-                    Florida Building Code Section 706 (based on IBC Section 1511) historically required full roof replacement when repairs exceed 25% of a roof section within 12 months. However, Florida Statute 553.844(5) now exempts roofs permitted after March 1, 2009, from this provision â allowing repairs of any size as long as the repaired area meets current code.
+                    Florida Building Code Section 706 (based on IBC Section 1511) historically required full roof replacement when repairs exceed 25% of a roof section within 12 months. However, Florida Statute 553.844(5) now exempts roofs permitted after March 1, 2009, from this provision — allowing repairs of any size as long as the repaired area meets current code.
                   </p>
                 </div>
               </div>
@@ -850,7 +850,7 @@ export default function RoofInspectionPage() {
                     Age alone does not dictate replacement. A 20-year-old tile roof with intact tiles, properly functioning flashings, and adequate underlayment may retain years of service life. Conversely, a 10-year-old asphalt shingle roof with widespread granule loss, multiple failed penetrations, and compromised deck may warrant full replacement.
                   </p>
                   <p className="text-zinc-300 leading-relaxed">
-                    The inspection process provides the data necessary to make an informed decision. We assess material condition, evaluate repair options, estimate costs for both approaches, and provide guidance based on the specific circumstances of your roof â not predetermined sales objectives.
+                    The inspection process provides the data necessary to make an informed decision. We assess material condition, evaluate repair options, estimate costs for both approaches, and provide guidance based on the specific circumstances of your roof — not predetermined sales objectives.
                   </p>
                 </div>
               </div>
@@ -886,7 +886,7 @@ export default function RoofInspectionPage() {
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-8">
-                The repair versus replacement evaluation constitutes a critical component of residential inspections. Age alone does not determine whether replacement becomes necessaryâmaterial condition, attachment integrity, and remaining service life drive the recommendation. A properly maintained concrete tile roof may provide 50+ years of service, while a neglected asphalt shingle system might fail within 15 years. Our assessment considers both current condition and projected longevity to support informed decision-making rather than predetermined sales outcomes.
+                The repair versus replacement evaluation constitutes a critical component of residential inspections. Age alone does not determine whether replacement becomes necessary—material condition, attachment integrity, and remaining service life drive the recommendation. A properly maintained concrete tile roof may provide 50+ years of service, while a neglected asphalt shingle system might fail within 15 years. Our assessment considers both current condition and projected longevity to support informed decision-making rather than predetermined sales outcomes.
               </p>
 
               <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-8">
@@ -895,23 +895,23 @@ export default function RoofInspectionPage() {
                 </h4>
                 <ul className="space-y-3 text-zinc-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Single-family home roof systems of all material types (tile, shingle, metal, flat)</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Townhome and condominium unit inspections with shared structure considerations</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>HOA architectural review documentation and reserve study support</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Repair feasibility analysis versus full replacement cost-benefit evaluation</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Insurance certification under Florida Statute 627.7011(5) for remaining useful life documentation</span>
                   </li>
                 </ul>
@@ -937,11 +937,11 @@ export default function RoofInspectionPage() {
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Commercial properties with tile and shingle roofingâcommon on multi-structure apartment complexes and mixed-use developmentsârequire evaluation across multiple buildings with potentially different installation dates and condition states. Our inspections document building-by-building condition, prioritize structures requiring immediate attention, and provide multi-year planning recommendations that support capital budgeting and reserve allocation for portfolio owners and property management companies.
+                Commercial properties with tile and shingle roofing—common on multi-structure apartment complexes and mixed-use developments—require evaluation across multiple buildings with potentially different installation dates and condition states. Our inspections document building-by-building condition, prioritize structures requiring immediate attention, and provide multi-year planning recommendations that support capital budgeting and reserve allocation for portfolio owners and property management companies.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-8">
-                Preventative maintenance inspections represent a critical service for commercial property owners seeking to maximize roof system longevity and avoid unexpected capital expenditures. Biannual or annual scheduled inspections identify minor deficiencies before they cause leaks, document condition trends over time, support insurance compliance requirements, and provide the factual basis for budget forecasting. Properties under 10-20 year roof warranties often require documented maintenance to preserve coverageâscheduled inspections satisfy these obligations while simultaneously protecting the owner's investment.
+                Preventative maintenance inspections represent a critical service for commercial property owners seeking to maximize roof system longevity and avoid unexpected capital expenditures. Biannual or annual scheduled inspections identify minor deficiencies before they cause leaks, document condition trends over time, support insurance compliance requirements, and provide the factual basis for budget forecasting. Properties under 10-20 year roof warranties often require documented maintenance to preserve coverage—scheduled inspections satisfy these obligations while simultaneously protecting the owner's investment.
               </p>
 
               <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-8">
@@ -950,23 +950,23 @@ export default function RoofInspectionPage() {
                 </h4>
                 <ul className="space-y-3 text-zinc-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Flat and low-slope roof systems: modified bitumen, TPO, EPDM, and built-up roofing</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Multi-structure commercial complexes with varied roof types and installation dates</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Tile and shingle apartment buildings requiring building-by-building assessment</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Preventative maintenance inspection programs with scheduled recurring evaluations</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-red-600 mt-1">â¢</span>
+                    <span className="text-red-600 mt-1">•</span>
                     <span>Warranty compliance documentation and capital planning support for property managers</span>
                   </li>
                 </ul>
@@ -994,7 +994,7 @@ export default function RoofInspectionPage() {
               Florida's High Velocity Hurricane Zone encompasses Broward and Miami-Dade Counties, with portions of Palm Beach County also subject to enhanced wind load requirements. HVHZ provisions impose specific fastening schedules, material approvals, and installation methods that differ substantially from standard code requirements.
             </p>
             <p>
-              Contractors who primarily work outside the HVHZ may lack familiarity with these requirements. A tile roof that appears properly installed may have inadequate foam adhesive coverage or incorrect fastening patterns â deficiencies not apparent from visual inspection alone but critical to wind performance. Metal roofing systems require specific clip spacing and attachment methods in the HVHZ. Single-ply membrane installations demand higher seam strength and perimeter attachment loads.
+              Contractors who primarily work outside the HVHZ may lack familiarity with these requirements. A tile roof that appears properly installed may have inadequate foam adhesive coverage or incorrect fastening patterns — deficiencies not apparent from visual inspection alone but critical to wind performance. Metal roofing systems require specific clip spacing and attachment methods in the HVHZ. Single-ply membrane installations demand higher seam strength and perimeter attachment loads.
             </p>
             <p>
               Licensed roofing contractors maintain current knowledge of Florida Building Code provisions, local amendments, and HVHZ-specific requirements through continuing education mandated for license renewal. This regulatory familiarity informs the inspection process and ensures that identified deficiencies reflect actual code violations rather than stylistic preferences.
@@ -1011,7 +1011,7 @@ export default function RoofInspectionPage() {
           </div>
 
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-white">Florida Statute 627.7011(5) â Roof Certification Authority</h3>
+            <h3 className="text-2xl font-bold mb-6 text-white">Florida Statute 627.7011(5) — Roof Certification Authority</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
               Under Florida law, insurance companies cannot non-renew a policy solely based on roof age if an authorized inspector certifies the roof has at least 5 years of remaining useful life. Authorized inspectors include:
             </p>
@@ -1132,7 +1132,7 @@ export default function RoofInspectionPage() {
           </div>
 
           <p className="text-xl text-zinc-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Boca Raton â¢ Deerfield Beach â¢ Pompano Beach â¢ Fort Lauderdale â¢ Delray Beach â¢ Coral Springs â¢ Boynton Beach â¢ West Palm Beach â¢ Hollywood â¢ Plantation â¢ and surrounding communities in Broward and Palm Beach Counties
+            Boca Raton • Deerfield Beach • Pompano Beach • Fort Lauderdale • Delray Beach • Coral Springs • Boynton Beach • West Palm Beach • Hollywood • Plantation • and surrounding communities in Broward and Palm Beach Counties
           </p>
 
           <Link
@@ -1276,7 +1276,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-            Florida Building Code requirements have evolved significantly since 1994, with particularly stringent provisions introduced for construction after 2002 when the current code was adopted. Properties built under older code editions may lack features now required for new constructionâincluding enhanced fastening schedules, impact-resistant materials, and secondary water barriers. Understanding which code edition governed original construction helps property owners identify retrofit opportunities that improve both storm performance and insurance eligibility.
+            Florida Building Code requirements have evolved significantly since 1994, with particularly stringent provisions introduced for construction after 2002 when the current code was adopted. Properties built under older code editions may lack features now required for new construction—including enhanced fastening schedules, impact-resistant materials, and secondary water barriers. Understanding which code edition governed original construction helps property owners identify retrofit opportunities that improve both storm performance and insurance eligibility.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-8">
@@ -1289,31 +1289,31 @@ export default function RoofInspectionPage() {
             </h3>
             <ul className="space-y-4 text-lg text-zinc-300">
               <li className="flex items-start gap-3">
-                <span className="text-red-600 mt-1">â¢</span>
+                <span className="text-red-600 mt-1">•</span>
                 <div>
                   <strong className="text-white">Roof-to-wall connections:</strong> Evaluation of attachment method (clips, toe-nails, single wraps, or double wraps) and documentation of uplift resistance
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-red-600 mt-1">â¢</span>
+                <span className="text-red-600 mt-1">•</span>
                 <div>
                   <strong className="text-white">Secondary water resistance:</strong> Verification of sealed roof deck or self-adhering polymer-modified bitumen underlayment beneath primary roofing
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-red-600 mt-1">â¢</span>
+                <span className="text-red-600 mt-1">•</span>
                 <div>
                   <strong className="text-white">Deck attachment:</strong> Assessment of fastener spacing between roof deck and supporting structure (6-inch vs 6d/8d spacing)
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-red-600 mt-1">â¢</span>
+                <span className="text-red-600 mt-1">•</span>
                 <div>
                   <strong className="text-white">Opening protection:</strong> Documentation of impact-rated windows, shutters, or opening protection systems meeting current code
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-red-600 mt-1">â¢</span>
+                <span className="text-red-600 mt-1">•</span>
                 <div>
                   <strong className="text-white">Roof covering age and compliance:</strong> Confirmation of installation date and adherence to Florida Product Approval standards for wind resistance
                 </div>
@@ -1342,7 +1342,7 @@ export default function RoofInspectionPage() {
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Coastal exposure affects roofing systems differently than inland installations, even within the same county. Properties within one mile of the Atlantic Ocean experience accelerated deterioration from salt-laden air, UV radiation intensified by reflective water surfaces, and higher sustained wind loads during tropical weather events. Commercial roof inspection protocols for Broward County warehouses and retail centers evaluate flat roof membrane performance, parapet wall securement, and rooftop equipment attachmentâall critical failure points during hurricane-force wind events documented in post-storm forensic analyses.
+                Coastal exposure affects roofing systems differently than inland installations, even within the same county. Properties within one mile of the Atlantic Ocean experience accelerated deterioration from salt-laden air, UV radiation intensified by reflective water surfaces, and higher sustained wind loads during tropical weather events. Commercial roof inspection protocols for Broward County warehouses and retail centers evaluate flat roof membrane performance, parapet wall securement, and rooftop equipment attachment—all critical failure points during hurricane-force wind events documented in post-storm forensic analyses.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed">
@@ -1357,15 +1357,15 @@ export default function RoofInspectionPage() {
               </h3>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Roof inspection Palm Beach County encompasses municipalities from Boca Raton through Wellington, Jupiter, and coastal communities along 47 miles of Atlantic shoreline. While portions of southern Palm Beach County fall within the High Velocity Hurricane Zone, northern areas follow standard Florida Building Code wind load provisionsâcreating variation in installation requirements based on project location. Professional inspections account for these jurisdictional differences when evaluating code compliance, particularly for properties constructed near the HVHZ boundary where installation standards change significantly over short distances.
+                Roof inspection Palm Beach County encompasses municipalities from Boca Raton through Wellington, Jupiter, and coastal communities along 47 miles of Atlantic shoreline. While portions of southern Palm Beach County fall within the High Velocity Hurricane Zone, northern areas follow standard Florida Building Code wind load provisions—creating variation in installation requirements based on project location. Professional inspections account for these jurisdictional differences when evaluating code compliance, particularly for properties constructed near the HVHZ boundary where installation standards change significantly over short distances.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Palm Beach County maintains robust permit oversight and inspection protocols for roofing work, requiring licensed contractors to demonstrate code knowledge and installation competence through the permitting process. Commercial roof inspection services evaluate whether existing roof systems meet current standards for drainage, structural attachment, and fire resistance classification. Properties considering significant repairs must understand Florida Building Code Section 706 requirements, which historically mandated full replacement when repairs exceeded 25% of a roof section. However, Florida Statute 553.844(5) now exempts roofs permitted after March 1, 2009, from this provisionâallowing repairs of any size provided the repaired area complies with current code.
+                Palm Beach County maintains robust permit oversight and inspection protocols for roofing work, requiring licensed contractors to demonstrate code knowledge and installation competence through the permitting process. Commercial roof inspection services evaluate whether existing roof systems meet current standards for drainage, structural attachment, and fire resistance classification. Properties considering significant repairs must understand Florida Building Code Section 706 requirements, which historically mandated full replacement when repairs exceeded 25% of a roof section. However, Florida Statute 553.844(5) now exempts roofs permitted after March 1, 2009, from this provision—allowing repairs of any size provided the repaired area complies with current code.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed">
-                Storm preparedness represents a practical consideration for Palm Beach County property owners. Hurricane season extends from June through November, with peak activity occurring August through October when sea surface temperatures support tropical development. Roof inspection services identify vulnerable components before hurricane warnings are issuedâloose tiles, deteriorating flashings, inadequate fastening, and compromised penetrations that become critical failure points during sustained wind events. The repair versus replacement evaluation considers both current condition and the roof system's ability to withstand future storm exposure without catastrophic failure requiring emergency tarping and interior restoration.
+                Storm preparedness represents a practical consideration for Palm Beach County property owners. Hurricane season extends from June through November, with peak activity occurring August through October when sea surface temperatures support tropical development. Roof inspection services identify vulnerable components before hurricane warnings are issued—loose tiles, deteriorating flashings, inadequate fastening, and compromised penetrations that become critical failure points during sustained wind events. The repair versus replacement evaluation considers both current condition and the roof system's ability to withstand future storm exposure without catastrophic failure requiring emergency tarping and interior restoration.
               </p>
             </div>
           </div>
