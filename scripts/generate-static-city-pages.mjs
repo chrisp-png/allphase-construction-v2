@@ -163,7 +163,7 @@ function generateServiceHubContent(cityName, citySlug) {
       Storm damage? Leak in your ceiling? We provide 24/7 emergency roof repair services throughout ${cityName}. Our rapid-response team can be on-site quickly to assess damage, implement temporary repairs to prevent further water intrusion, and develop a comprehensive repair plan.
     </p>
     <p>
-      <a href="/roof-repair/${citySlug}/">Learn more about emergency roof repair in ${cityName} â</a>
+      <a href="/roof-repair/${citySlug}/">Learn more about emergency roof repair in ${cityName} →</a>
     </p>
 
     <h3>Professional Roof Inspection</h3>
@@ -171,7 +171,7 @@ function generateServiceHubContent(cityName, citySlug) {
       Our comprehensive 21-point roof inspection service provides ${cityName} property owners with detailed documentation of their roof's condition. Whether you're buying a home, filing an insurance claim, or conducting routine maintenance, our certified inspectors deliver thorough assessments with photo documentation.
     </p>
     <p>
-      <a href="/roof-inspection/${citySlug}/">Schedule a roof inspection in ${cityName} â</a>
+      <a href="/roof-inspection/${citySlug}/">Schedule a roof inspection in ${cityName} →</a>
     </p>
 
     <h3>Complete Roof Replacement</h3>
