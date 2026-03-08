@@ -245,7 +245,7 @@ export default function NorthLauderdaleCalculatorPage() {
               to="/locations/deerfield-beach/service-area/north-lauderdale/"
               className="inline-flex items-center text-red-500 hover:text-red-400 font-semibold transition-colors"
             >
-              ← Back to North Lauderdale Roofing Services
+              â Back to North Lauderdale Roofing Services
             </Link>
           </div>
         </div>
