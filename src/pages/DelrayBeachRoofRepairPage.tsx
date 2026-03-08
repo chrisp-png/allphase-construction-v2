@@ -401,7 +401,7 @@ export default function DelrayBeachRoofRepairPage() {
 
             <div className="text-lg text-zinc-300 mb-8 leading-relaxed space-y-4">
               <p>
-                The cost of roof repair in Delray Beach varies based on the type of roofing system, extent of damage, material costs, and whether permits are required under the Florida Building Code. Typical repair costs by material type range from $750 to $1,500 for <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">asphalt shingles</Link>, $750 to $2,000 for <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">tile roofing</Link>, and $750 to $2,500 for <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>. More extensive repairs involving underlayment replacement, structural deck work, or large-area damage can exceed these ranges significantly.
+                The cost of roof repair in Delray Beach varies based on the type of roofing system, extent of damage, material costs, and whether permits are required under the Florida Building Code. Typical repair costs by material type range from $750 to $1,500 for <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">asphalt shingles</Link>, $750 to $2,000 for <Link to="/tile-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">tile roofing</Link>, and $750 to $2,500 for <Link to="/metal-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">metal roofing</Link>. More extensive repairs involving underlayment replacement, structural deck work, or large-area damage can exceed these ranges significantly.
               </p>
               <p>
                 Factors that influence roof repair costs in Delray Beach include:
@@ -413,7 +413,7 @@ export default function DelrayBeachRoofRepairPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <span className="font-semibold">Roof type:</span> <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">Tile roof repairs</Link> are typically more expensive than <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">shingle repairs</Link> due to material weight, fragility during access, and underlayment complexity.
+                    <span className="font-semibold">Roof type:</span> <Link to="/tile-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">Tile roof repairs</Link> are typically more expensive than <Link to="/shingle-roofing" className=\"text-red-600 hover:text-red-500 underline transition-colors">shingle repairs</Link> due to material weight, fragility during access, and underlayment complexity.
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -444,7 +444,7 @@ export default function DelrayBeachRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 leading-relaxed">
-              Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available for larger repair projects that exceed initial budgets.
+              Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate. <Link to="/easy-payments" className=\"text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available for larger repair projects that exceed initial budgets.
             </p>
           </div>
         </section>
@@ -597,7 +597,7 @@ export default function DelrayBeachRoofRepairPage() {
               </p>
 
               <p>
-                Property owners in <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
+                Property owners in <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/calculator" className=\"text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className=\"text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
               </p>
             </div>
           </div>
