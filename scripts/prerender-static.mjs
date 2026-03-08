@@ -36,7 +36,6 @@ const locationsJson = locationsArrayText
   .replace(/\/\/[^\n]*/g, '') // Remove single-line comments
   .replace(/\/\*[\s\S]*?\*\//g, '') // Remove multi-line comments
   .replace(/(\w+):/g, '"$1":') // Quote keys
-  .replace(/'/g, '"') // Convert single quotes to double quotes
   .replace(/,(\s*[}\]])/g, '$1'); // Remove trailing commas
 const LOCATIONS = JSON.parse(locationsJson);
 
