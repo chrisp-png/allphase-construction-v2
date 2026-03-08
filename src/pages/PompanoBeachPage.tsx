@@ -185,7 +185,7 @@ export default function PompanoBeachPage() {
                   { text: 'All Phase Construction installed a metal roof on our commercial property. The team was professional, the installation was flawless, and they handled all the permitting with the building department. Very impressed with the entire experience.', author: 'David S.', location: 'Commercial Property Owner' }
                 ].map((review, i) => (
                   <div key={i} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                    <div className="flex gap-1 mb-3">{[...Array(5)].map((_, j) => <span key={j} className="text-yellow-400">â</span>)}</div>
+                    <div className="flex gap-1 mb-3">{[...Array(5)].map((_, j) => <span key={j} className="text-yellow-400">★</span>)}</div>
                     <p className="text-gray-700 italic mb-4">"{review.text}"</p>
                     <p className="font-semibold text-gray-900">— {review.author}, <span className="text-gray-600 font-normal">{review.location}</span></p>
                   </div>
