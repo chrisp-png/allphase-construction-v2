@@ -28,8 +28,8 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    description: 'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
+    title: 'Roofing Company | Broward & Palm Beach County | All Phase USA',
+    description: 'South Florida\'s top-rated roofing company since 2005. 2,500+ projects, HVHZ-certified. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
