@@ -34,7 +34,7 @@ export default function CalculatorPage() {
           "name": "How much does a new roof cost in South Florida?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. Shingle roofs ($4.50ÃÂ¢ÃÂÃÂ$16/sq ft) are the most cost-effective, while tile roofs ($12ÃÂ¢ÃÂÃÂ$35/sq ft) and metal roofs ($8ÃÂ¢ÃÂÃÂ$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000ÃÂ¢ÃÂÃÂ$22,000 installed. Tile roofs of the same size typically cost $24,000ÃÂ¢ÃÂÃÂ$48,000. Final pricing depends on roof pitch, layers to remove, HVHZ fastening requirements, and code compliance upgrades."
+            "text": "New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. Shingle roofs ($4.50ÃÂ¢ÃÃ$16/sq ft) are the most cost-effective, while tile roofs ($12ÃÂ¢ÃÃ$35/sq ft) and metal roofs ($8ÃÂ¢ÃÃ$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000ÃÂ¢ÃÃ$22,000 installed. Tile roofs of the same size typically cost $24,000ÃÂ¢ÃÃ$48,000. Final pricing depends on roof pitch, layers to remove, HVHZ fastening requirements, and code compliance upgrades."
           }
         },
         {
@@ -50,7 +50,7 @@ export default function CalculatorPage() {
           "name": "Why are some roofing quotes so much cheaper than others?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Lower quotes are often cheaper because corners are being cut somewhereÃÂ¢ÃÂÃÂlabor quality, supervision, underlayment/flashing details, code compliance, or warranty coverage. Roofing isn't just materials; it's a system. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-termÃÂ¢ÃÂÃÂnot just the lowest number on paper."
+            "text": "Lower quotes are often cheaper because corners are being cut somewhereÃÂ¢ÃÃlabor quality, supervision, underlayment/flashing details, code compliance, or warranty coverage. Roofing isn't just materials; it's a system. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-termÃÂ¢ÃÃnot just the lowest number on paper."
           }
         },
         {
@@ -58,7 +58,7 @@ export default function CalculatorPage() {
           "name": "Does it matter how long a roofing company has been in business?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Longevity often signals that a company has stable crews, repeatable installation processes, and accountability after the job is done. Roofing problems don't always show up on day oneÃÂ¢ÃÂÃÂso choosing a company with a proven history can reduce the risk of callbacks, ongoing leaks, and \"can't get them back out here\" situations."
+            "text": "Yes. Longevity often signals that a company has stable crews, repeatable installation processes, and accountability after the job is done. Roofing problems don't always show up on day oneÃÂ¢ÃÃso choosing a company with a proven history can reduce the risk of callbacks, ongoing leaks, and \"can't get them back out here\" situations."
           }
         },
         {
@@ -66,7 +66,7 @@ export default function CalculatorPage() {
           "name": "Is it better to repair a roof or replace it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashingsÃÂ¢ÃÂÃÂaddressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute ÃÂÃÂ§ 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
+            "text": "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashingsÃÂ¢ÃÃaddressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute ÃÃÂ§ 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
           }
         },
         {
@@ -74,7 +74,7 @@ export default function CalculatorPage() {
           "name": "Do tile roofs cost more than shingles?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Tile roofs cost 2ÃÂ¢ÃÂÃÂ3 times more than asphalt shingle roofs due to material weight, installation complexity, and enhanced underlayment requirements. Concrete tile systems cost $12ÃÂ¢ÃÂÃÂ$24 per square foot installed, while premium clay tile can reach $22ÃÂ¢ÃÂÃÂ$35 per square foot. Shingle roofs range from $4.50ÃÂ¢ÃÂÃÂ$16 per square foot. However, tile roofs typically last 40ÃÂ¢ÃÂÃÂ50+ years compared to 20ÃÂ¢ÃÂÃÂ30 years for shingles, offering better long-term value despite higher upfront cost."
+            "text": "Yes. Tile roofs cost 2ÃÂ¢ÃÃ3 times more than asphalt shingle roofs due to material weight, installation complexity, and enhanced underlayment requirements. Concrete tile systems cost $12ÃÂ¢ÃÃ$24 per square foot installed, while premium clay tile can reach $22ÃÂ¢ÃÃ$35 per square foot. Shingle roofs range from $4.50ÃÂ¢ÃÃ$16 per square foot. However, tile roofs typically last 40ÃÂ¢ÃÃ50+ years compared to 20ÃÂ¢ÃÃ30 years for shingles, offering better long-term value despite higher upfront cost."
           }
         },
         {
@@ -90,7 +90,7 @@ export default function CalculatorPage() {
           "name": "How long does a roof replacement take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most residential roof replacements in South Florida take 2ÃÂ¢ÃÂÃÂ7 days depending on roof size, material type, weather, and system complexity. Shingle roofs on homes under 2,500 sq ft typically complete in 2ÃÂ¢ÃÂÃÂ3 days. Tile roof installations require 4ÃÂ¢ÃÂÃÂ7 days due to weight, fastening requirements, and underlayment installation. Metal roofs take 3ÃÂ¢ÃÂÃÂ5 days for proper panel seaming and clip attachment. Flat or low-slope commercial roofs vary widely based on membrane type and roof area. Permit processing adds 1ÃÂ¢ÃÂÃÂ3 weeks before work begins. Weather delays are common during Florida's rainy season (JuneÃÂ¢ÃÂÃÂSeptember)."
+            "text": "Most residential roof replacements in South Florida take 2ÃÂ¢ÃÃ7 days depending on roof size, material type, weather, and system complexity. Shingle roofs on homes under 2,500 sq ft typically complete in 2ÃÂ¢ÃÃ3 days. Tile roof installations require 4ÃÂ¢ÃÃ7 days due to weight, fastening requirements, and underlayment installation. Metal roofs take 3ÃÂ¢ÃÃ5 days for proper panel seaming and clip attachment. Flat or low-slope commercial roofs vary widely based on membrane type and roof area. Permit processing adds 1ÃÂ¢ÃÃ3 weeks before work begins. Weather delays are common during Florida's rainy season (JuneÃÂ¢ÃÃSeptember)."
           }
         },
         {
@@ -98,7 +98,7 @@ export default function CalculatorPage() {
           "name": "What is the average cost per square foot for a new roof in Broward County?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Broward County roof replacement costs average $8ÃÂ¢ÃÂÃÂ$20 per square foot installed, depending on material type and HVHZ compliance requirements. Shingle roofs cost $7ÃÂ¢ÃÂÃÂ$14/sq ft, concrete tile $14ÃÂ¢ÃÂÃÂ$22/sq ft, metal roofs $12ÃÂ¢ÃÂÃÂ$24/sq ft, and flat membrane systems $8ÃÂ¢ÃÂÃÂ$16/sq ft. Broward County properties require HVHZ-compliant fastening, which adds $1ÃÂ¢ÃÂÃÂ$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings."
+            "text": "Broward County roof replacement costs average $8ÃÂ¢ÃÃ$20 per square foot installed, depending on material type and HVHZ compliance requirements. Shingle roofs cost $7ÃÂ¢ÃÃ$14/sq ft, concrete tile $14ÃÂ¢ÃÃ$22/sq ft, metal roofs $12ÃÂ¢ÃÃ$24/sq ft, and flat membrane systems $8ÃÂ¢ÃÃ$16/sq ft. Broward County properties require HVHZ-compliant fastening, which adds $1ÃÂ¢ÃÃ$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings."
           }
         },
         {
@@ -106,7 +106,7 @@ export default function CalculatorPage() {
           "name": "Can I get financing for a roof replacement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Most roofing contractors in South Florida offer financing options through third-party lenders with approved credit. Monthly payment plans typically range from 12ÃÂ¢ÃÂÃÂ180 months with interest rates from 0% (promotional) to 12%+ depending on credit score and term length. Financing allows homeowners to address urgent roof needs without depleting savings. Home equity lines of credit (HELOCs) and cash-out refinancing are alternative options that may offer lower interest rates for qualified borrowers."
+            "text": "Yes. Most roofing contractors in South Florida offer financing options through third-party lenders with approved credit. Monthly payment plans typically range from 12ÃÂ¢ÃÃ180 months with interest rates from 0% (promotional) to 12%+ depending on credit score and term length. Financing allows homeowners to address urgent roof needs without depleting savings. Home equity lines of credit (HELOCs) and cash-out refinancing are alternative options that may offer lower interest rates for qualified borrowers."
           }
         }
       ]
@@ -165,7 +165,7 @@ export default function CalculatorPage() {
                   <strong className="text-white">This calculator provides estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, <span className="text-amber-400 font-semibold">code compliance requirements</span>, and site-specific installation factors.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  Broward and most coastal Palm Beach County properties are located in the <HVHZText variant="south-florida" className="text-amber-400" />, which requires enhanced fastening patterns, approved underlayment systems, and <span className="text-amber-400 font-semibold">Florida Building Code compliance</span>. <HVHZText variant="acronym" showIcon={false} className="text-amber-400" /> requirements typically add $1ÃÂ¢ÃÂÃÂ$3 per square foot to installation costs compared to standard installations.
+                  Broward and most coastal Palm Beach County properties are located in the <HVHZText variant="south-florida" className="text-amber-400" />, which requires enhanced fastening patterns, approved underlayment systems, and <span className="text-amber-400 font-semibold">Florida Building Code compliance</span>. <HVHZText variant="acronym" showIcon={false} className="text-amber-400" /> requirements typically add $1ÃÂ¢ÃÃ$3 per square foot to installation costs compared to standard installations.
                 </p>
               </div>
             </div>
@@ -189,32 +189,32 @@ export default function CalculatorPage() {
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Asphalt Shingle</Link>
                     </td>
-                    <td className="py-3 px-4 text-white font-bold">$8ÃÂ¢ÃÂÃÂ$12</td>
-                    <td className="py-3 px-4 text-zinc-300">15ÃÂ¢ÃÂÃÂ25 years</td>
+                    <td className="py-3 px-4 text-white font-bold">$8ÃÂ¢ÃÃ$12</td>
+                    <td className="py-3 px-4 text-zinc-300">15ÃÂ¢ÃÃ25 years</td>
                     <td className="py-3 px-4 text-zinc-300">Code-compliant residential replacements</td>
                   </tr>
                   <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile (Concrete / Clay)</Link>
                     </td>
-                    <td className="py-3 px-4 text-white font-bold">$10ÃÂ¢ÃÂÃÂ$18</td>
-                    <td className="py-3 px-4 text-zinc-300">30ÃÂ¢ÃÂÃÂ50 years</td>
+                    <td className="py-3 px-4 text-white font-bold">$10ÃÂ¢ÃÃ$18</td>
+                    <td className="py-3 px-4 text-zinc-300">30ÃÂ¢ÃÃ50 years</td>
                     <td className="py-3 px-4 text-zinc-300">Long-term durability, HOA & coastal homes</td>
                   </tr>
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Metal (Standing Seam)</Link>
                     </td>
-                    <td className="py-3 px-4 text-white font-bold">$12ÃÂ¢ÃÂÃÂ$20</td>
-                    <td className="py-3 px-4 text-zinc-300">40ÃÂ¢ÃÂÃÂ70 years</td>
+                    <td className="py-3 px-4 text-white font-bold">$12ÃÂ¢ÃÃ$20</td>
+                    <td className="py-3 px-4 text-zinc-300">40ÃÂ¢ÃÃ70 years</td>
                     <td className="py-3 px-4 text-zinc-300">Wind resistance, solar-ready systems</td>
                   </tr>
                   <tr>
                     <td className="py-3 px-4 text-zinc-300">
                       <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Flat / Low-Slope</Link>
                     </td>
-                    <td className="py-3 px-4 text-white font-bold">$10ÃÂ¢ÃÂÃÂ$16</td>
-                    <td className="py-3 px-4 text-zinc-300">20ÃÂ¢ÃÂÃÂ30 years</td>
+                    <td className="py-3 px-4 text-white font-bold">$10ÃÂ¢ÃÃ$16</td>
+                    <td className="py-3 px-4 text-zinc-300">20ÃÂ¢ÃÃ30 years</td>
                     <td className="py-3 px-4 text-zinc-300">Commercial & modern residential roofs</td>
                   </tr>
                 </tbody>
@@ -224,7 +224,7 @@ export default function CalculatorPage() {
 
           {/* 2026 City Cost Guide */}
           <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
-            <h2 className="text-xl font-bold text-white mb-2">2026 Roof Replacement Cost by City Ã¢ÂÂ South Florida</h2>
+            <h2 className="text-xl font-bold text-white mb-2">2026 Roof Replacement Cost by City Ã¢ South Florida</h2>
             <p className="text-zinc-400 text-sm mb-4">Average total installed cost for a 2,000 sq ft residential roof. Prices reflect current HVHZ material and labor rates across Broward and Palm Beach County as of 2026.</p>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse text-sm">
@@ -241,58 +241,58 @@ export default function CalculatorPage() {
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-white font-medium">Deerfield Beach</td>
                     <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ÂÂ $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ÂÂ $40,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $24,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ $36,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ $40,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-white font-medium">Boca Raton</td>
                     <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$22,000 Ã¢ÂÂ $38,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ÂÂ $42,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $24,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$22,000 Ã¢ $38,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ $42,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-white font-medium">Fort Lauderdale</td>
                     <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $26,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ÂÂ $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$26,000 Ã¢ÂÂ $44,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $26,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ $36,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$26,000 Ã¢ $44,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-white font-medium">Delray Beach</td>
                     <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$22,000 Ã¢ÂÂ $38,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ÂÂ $40,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $24,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$22,000 Ã¢ $38,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ $40,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-white font-medium">West Palm Beach</td>
                     <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $26,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$22,000 Ã¢ÂÂ $38,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$26,000 Ã¢ÂÂ $44,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $26,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$22,000 Ã¢ $38,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$26,000 Ã¢ $44,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-white font-medium">Coral Springs</td>
                     <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ÂÂ $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ÂÂ $40,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $24,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ $36,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ $40,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700 bg-zinc-800/30">
                     <td className="py-3 px-4 text-white font-medium">Boynton Beach</td>
                     <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ÂÂ $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ÂÂ $40,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $24,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ $36,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ $40,000</td>
                   </tr>
                   <tr className="border-b border-zinc-700">
                     <td className="py-3 px-4 text-white font-medium">Pompano Beach</td>
                     <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ÂÂ $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ÂÂ $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ÂÂ $40,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$16,000 Ã¢ $24,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$20,000 Ã¢ $36,000</td>
+                    <td className="py-3 px-4 text-zinc-300">$24,000 Ã¢ $40,000</td>
                   </tr>
                 </tbody>
               </table>
@@ -305,31 +305,31 @@ export default function CalculatorPage() {
             <h2 className="text-xl font-bold text-white mb-4">What Factors Affect Roof Replacement Cost?</h2>
             <ul className="space-y-2 text-zinc-300">
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
-                <span><strong className="text-white">Roof size:</strong> Measured in squares (100 sq ft per square) ÃÂ¢ÃÂÃÂ larger roofs cost more</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
+                <span><strong className="text-white">Roof size:</strong> Measured in squares (100 sq ft per square) ÃÂ¢ÃÃ larger roofs cost more</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
                 <span><strong className="text-white">Roof pitch:</strong> Steep roofs require additional safety equipment and labor time</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
                 <span><strong className="text-white">Decking condition:</strong> Rotted or damaged plywood sheathing requires replacement before installation</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
                 <span><strong className="text-amber-400">HVHZ fastening requirements:</strong> Enhanced nailing patterns and approved fasteners add labor and material costs</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
                 <span><strong className="text-amber-400">Florida Building Code compliance:</strong> Tear-off, underlayment, flashing, and ventilation must meet current code standards</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
                 <span><strong className="text-white">Material selection:</strong> Shingle, tile, metal, and flat roofing systems have different material and labor costs</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-2">ÃÂ¢ÃÂÃÂ¢</span>
+                <span className="text-red-600 mr-2">ÃÂ¢ÃÃÂ¢</span>
                 <span><strong className="text-white">Upgrades and add-ons:</strong> Solar panel readiness, impact-rated materials, enhanced warranties, and ventilation improvements</span>
               </li>
             </ul>
@@ -360,7 +360,7 @@ export default function CalculatorPage() {
                   Properly installed roofing systems in South Florida may qualify for <strong className="text-white">wind mitigation credits</strong> that can reduce homeowners insurance premiums. Features such as <span className="text-amber-400 font-semibold">enhanced roof decking attachment</span>, <span className="text-amber-400 font-semibold">secondary water barriers</span>, <span className="text-amber-400 font-semibold">impact-rated materials</span>, and <span className="text-amber-400 font-semibold">code-compliant fastening patterns</span> are evaluated during wind mitigation inspections.
                 </p>
                 <p className="text-zinc-300 leading-relaxed mb-4">
-                  Investing slightly more during roof replacement to meet enhanced wind resistance standards may result in lower insurance costs over the life of the roof. Annual premium savings can offset incremental installation costs within 3ÃÂ¢ÃÂÃÂ7 years for many South Florida properties.
+                  Investing slightly more during roof replacement to meet enhanced wind resistance standards may result in lower insurance costs over the life of the roof. Annual premium savings can offset incremental installation costs within 3ÃÂ¢ÃÃ7 years for many South Florida properties.
                 </p>
                 <Link
                   to="/roof-inspection/"
@@ -424,7 +424,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 0 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> ($4.50ÃÂ¢ÃÂÃÂ$16/sq ft) are the most cost-effective, while <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile roofs</Link> ($12ÃÂ¢ÃÂÃÂ$35/sq ft) and <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> ($8ÃÂ¢ÃÂÃÂ$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000ÃÂ¢ÃÂÃÂ$22,000 installed. Tile roofs of the same size typically cost $24,000ÃÂ¢ÃÂÃÂ$48,000. Final pricing depends on roof pitch, layers to remove, <span className="text-amber-400 font-semibold">HVHZ fastening requirements</span>, and <span className="text-amber-400 font-semibold">code compliance upgrades</span>.
+                    New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> ($4.50ÃÂ¢ÃÃ$16/sq ft) are the most cost-effective, while <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile roofs</Link> ($12ÃÂ¢ÃÃ$35/sq ft) and <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> ($8ÃÂ¢ÃÃ$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000ÃÂ¢ÃÃ$22,000 installed. Tile roofs of the same size typically cost $24,000ÃÂ¢ÃÃ$48,000. Final pricing depends on roof pitch, layers to remove, <span className="text-amber-400 font-semibold">HVHZ fastening requirements</span>, and <span className="text-amber-400 font-semibold">code compliance upgrades</span>.
                   </p>
                 </div>
               )}
@@ -469,7 +469,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 2 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Lower quotes are often cheaper because corners are being cut somewhereÃÂ¢ÃÂÃÂlabor quality, supervision, underlayment/flashing details, <span className="text-amber-400 font-semibold">code compliance</span>, or warranty coverage. Roofing isn't just materials; it's a system. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-termÃÂ¢ÃÂÃÂnot just the lowest number on paper.
+                    Lower quotes are often cheaper because corners are being cut somewhereÃÂ¢ÃÃlabor quality, supervision, underlayment/flashing details, <span className="text-amber-400 font-semibold">code compliance</span>, or warranty coverage. Roofing isn't just materials; it's a system. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-termÃÂ¢ÃÃnot just the lowest number on paper.
                   </p>
                 </div>
               )}
@@ -490,7 +490,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 3 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Yes. Longevity often signals that a company has stable crews, repeatable installation processes, and accountability after the job is done. Roofing problems don't always show up on day oneÃÂ¢ÃÂÃÂso choosing a company with a proven history can reduce the risk of callbacks, ongoing leaks, and "can't get them back out here" situations.
+                    Yes. Longevity often signals that a company has stable crews, repeatable installation processes, and accountability after the job is done. Roofing problems don't always show up on day oneÃÂ¢ÃÃso choosing a company with a proven history can reduce the risk of callbacks, ongoing leaks, and "can't get them back out here" situations.
                   </p>
                 </div>
               )}
@@ -512,7 +512,7 @@ export default function CalculatorPage() {
                 <div className="px-6 pb-6">
                   <div className="space-y-4">
                     <p className="text-zinc-300 leading-relaxed">
-                      Start with a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">diagnostic roof inspection</Link> to evaluate <strong className="text-white">localized failure versus widespread deterioration</strong>. <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">Repair</Link> is often the better first option when damage is confined to specific slopes, penetrations, or flashingsÃÂ¢ÃÂÃÂaddressing the failure pattern without replacing sound areas.
+                      Start with a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">diagnostic roof inspection</Link> to evaluate <strong className="text-white">localized failure versus widespread deterioration</strong>. <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">Repair</Link> is often the better first option when damage is confined to specific slopes, penetrations, or flashingsÃÂ¢ÃÃaddressing the failure pattern without replacing sound areas.
                     </p>
                     <p className="text-zinc-300 leading-relaxed">
                       Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably.
@@ -520,7 +520,7 @@ export default function CalculatorPage() {
                     <div className="bg-zinc-800 border-l-4 border-red-600 p-4 rounded">
                       <p className="text-zinc-200 font-semibold mb-2">Florida's 5-Year Roof Certification for Insurance Renewal</p>
                       <p className="text-zinc-300 leading-relaxed mb-2">
-                        In Florida, repairs may position a roof for the <strong className="text-white">5-year certification pathway</strong> under <span className="text-amber-400 font-semibold">Florida Statute ÃÂÃÂ§ 627.7011(5)(a)</span>. This allows insurers to renew based on <strong className="text-white">roof condition rather than age alone</strong> when a qualified professional certifies 5+ years of useful life remaining.
+                        In Florida, repairs may position a roof for the <strong className="text-white">5-year certification pathway</strong> under <span className="text-amber-400 font-semibold">Florida Statute ÃÃÂ§ 627.7011(5)(a)</span>. This allows insurers to renew based on <strong className="text-white">roof condition rather than age alone</strong> when a qualified professional certifies 5+ years of useful life remaining.
                       </p>
                       <p className="text-zinc-300 leading-relaxed">
                         This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition.
@@ -546,7 +546,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 5 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Yes. <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile roofs</Link> cost 2ÃÂ¢ÃÂÃÂ3 times more than <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">asphalt shingle roofs</Link> due to material weight, installation complexity, and enhanced underlayment requirements. Concrete tile systems cost $12ÃÂ¢ÃÂÃÂ$24 per square foot installed, while premium clay tile can reach $22ÃÂ¢ÃÂÃÂ$35 per square foot. Shingle roofs range from $4.50ÃÂ¢ÃÂÃÂ$16 per square foot. However, tile roofs typically last 40ÃÂ¢ÃÂÃÂ50+ years compared to 20ÃÂ¢ÃÂÃÂ30 years for shingles, offering better long-term value despite higher upfront cost.
+                    Yes. <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile roofs</Link> cost 2ÃÂ¢ÃÃ3 times more than <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">asphalt shingle roofs</Link> due to material weight, installation complexity, and enhanced underlayment requirements. Concrete tile systems cost $12ÃÂ¢ÃÃ$24 per square foot installed, while premium clay tile can reach $22ÃÂ¢ÃÃ$35 per square foot. Shingle roofs range from $4.50ÃÂ¢ÃÃ$16 per square foot. However, tile roofs typically last 40ÃÂ¢ÃÃ50+ years compared to 20ÃÂ¢ÃÃ30 years for shingles, offering better long-term value despite higher upfront cost.
                   </p>
                 </div>
               )}
@@ -588,7 +588,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 7 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Most residential roof replacements in South Florida take 2ÃÂ¢ÃÂÃÂ7 days depending on roof size, material type, weather, and system complexity. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> on homes under 2,500 sq ft typically complete in 2ÃÂ¢ÃÂÃÂ3 days. <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile roof</Link> installations require 4ÃÂ¢ÃÂÃÂ7 days due to weight, fastening requirements, and underlayment installation. <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Metal roofs</Link> take 3ÃÂ¢ÃÂÃÂ5 days for proper panel seaming and clip attachment. <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Flat or low-slope</Link> commercial roofs vary widely based on membrane type and roof area. Permit processing adds 1ÃÂ¢ÃÂÃÂ3 weeks before work begins. Weather delays are common during Florida's rainy season (JuneÃÂ¢ÃÂÃÂSeptember).
+                    Most residential roof replacements in South Florida take 2ÃÂ¢ÃÃ7 days depending on roof size, material type, weather, and system complexity. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> on homes under 2,500 sq ft typically complete in 2ÃÂ¢ÃÃ3 days. <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Tile roof</Link> installations require 4ÃÂ¢ÃÃ7 days due to weight, fastening requirements, and underlayment installation. <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Metal roofs</Link> take 3ÃÂ¢ÃÃ5 days for proper panel seaming and clip attachment. <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Flat or low-slope</Link> commercial roofs vary widely based on membrane type and roof area. Permit processing adds 1ÃÂ¢ÃÃ3 weeks before work begins. Weather delays are common during Florida's rainy season (JuneÃÂ¢ÃÃSeptember).
                   </p>
                 </div>
               )}
@@ -609,7 +609,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 8 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Broward County roof replacement costs average $8ÃÂ¢ÃÂÃÂ$20 per square foot installed, depending on material type and <span className="text-amber-400 font-semibold">HVHZ compliance requirements</span>. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> cost $7ÃÂ¢ÃÂÃÂ$14/sq ft, <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">concrete tile</Link> $14ÃÂ¢ÃÂÃÂ$22/sq ft, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> $12ÃÂ¢ÃÂÃÂ$24/sq ft, and <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat membrane systems</Link> $8ÃÂ¢ÃÂÃÂ$16/sq ft. Broward County properties require <span className="text-amber-400 font-semibold">HVHZ-compliant fastening</span>, which adds $1ÃÂ¢ÃÂÃÂ$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings.
+                    Broward County roof replacement costs average $8ÃÂ¢ÃÃ$20 per square foot installed, depending on material type and <span className="text-amber-400 font-semibold">HVHZ compliance requirements</span>. <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">Shingle roofs</Link> cost $7ÃÂ¢ÃÃ$14/sq ft, <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">concrete tile</Link> $14ÃÂ¢ÃÃ$22/sq ft, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal roofs</Link> $12ÃÂ¢ÃÃ$24/sq ft, and <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat membrane systems</Link> $8ÃÂ¢ÃÃ$16/sq ft. Broward County properties require <span className="text-amber-400 font-semibold">HVHZ-compliant fastening</span>, which adds $1ÃÂ¢ÃÃ$3 per square foot compared to non-HVHZ installations. These ranges include tear-off, disposal, new underlayment, installation, and all required flashings.
                   </p>
                 </div>
               )}
@@ -630,7 +630,7 @@ export default function CalculatorPage() {
               {openFaqIndex === 9 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Yes. Most roofing contractors in South Florida offer financing options through third-party lenders with approved credit. Monthly payment plans typically range from 12ÃÂ¢ÃÂÃÂ180 months with interest rates from 0% (promotional) to 12%+ depending on credit score and term length. Financing allows homeowners to address urgent roof needs without depleting savings. Home equity lines of credit (HELOCs) and cash-out refinancing are alternative options that may offer lower interest rates for qualified borrowers.
+                    Yes. Most roofing contractors in South Florida offer financing options through third-party lenders with approved credit. Monthly payment plans typically range from 12ÃÂ¢ÃÃ180 months with interest rates from 0% (promotional) to 12%+ depending on credit score and term length. Financing allows homeowners to address urgent roof needs without depleting savings. Home equity lines of credit (HELOCs) and cash-out refinancing are alternative options that may offer lower interest rates for qualified borrowers.
                   </p>
                 </div>
               )}
@@ -651,7 +651,7 @@ export default function CalculatorPage() {
                   All Phase Construction USA provides licensed roofing services throughout South Florida, including Boca Raton, Deerfield Beach, Pompano Beach, Fort Lauderdale, Coral Springs, Delray Beach, Boynton Beach, West Palm Beach, Plantation, and surrounding communities in Broward and Palm Beach Counties.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  CCC-1331464 (Roofing Contractor) ÃÂ¢ÃÂÃÂ¢ CGC-1526236 (General Contractor)
+                  CCC-1331464 (Roofing Contractor) ÃÂ¢ÃÃÂ¢ CGC-1526236 (General Contractor)
                 </p>
               </div>
             </div>
