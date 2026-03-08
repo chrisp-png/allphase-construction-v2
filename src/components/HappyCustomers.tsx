@@ -157,16 +157,16 @@ const customerPhotos = allCustomerPhotos
     let linkTo = photo.linkTo;
 
     if (city === 'South Florida') {
-      // South Florida â Boca Raton city page
+      // South Florida → Boca Raton city page
       linkTo = '/locations/boca-raton';
     } else if (city === 'Broward County') {
-      // Broward County â Keep county page
+      // Broward County → Keep county page
       linkTo = '/locations/broward-county';
     } else if (city === 'Palm Beach County') {
-      // Palm Beach County â Keep county page
+      // Palm Beach County → Keep county page
       linkTo = '/locations/palm-beach-county';
     } else if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
-      // Global fallback for missing or invalid linkTo â Service Areas Hub
+      // Global fallback for missing or invalid linkTo → Service Areas Hub
       console.warn('â ï¸ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
       linkTo = '/locations';
     }
@@ -183,7 +183,7 @@ const customerPhotos = allCustomerPhotos
 if (typeof window !== 'undefined') {
   console.log('=== Happy Customers Carousel Diagnostic ===');
   console.log(`Total photos after filtering: ${customerPhotos.length}/${allCustomerPhotos.length}`);
-  console.log('All carousel images:', customerPhotos.map((p, i) => `\n  [${i+1}] ${p.src} â ${p.linkTo}`).join(''));
+  console.log('All carousel images:', customerPhotos.map((p, i) => `\n  [${i+1}] ${p.src} → ${p.linkTo}`).join(''));
   console.log('==========================================');
 }
 
