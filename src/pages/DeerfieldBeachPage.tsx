@@ -199,7 +199,7 @@ export default function DeerfieldBeachPage() {
 
                       <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-[#C5A572] text-lg">ð¡</span>
+              <span className="text-[#C5A572] text-lg">🛡</span>
               <span className="text-white font-bold text-base">Dual-Licensed Roofing & General Contractor</span>
             </div>
             <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 — Florida Certified Roofing Contractor</div>
