@@ -184,28 +184,28 @@ export default function ContactPage() {
                       onClick={() => handleRoofTypeSelect('Tile')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">◠</div>
+                      <div className="text-4xl mb-4">â </div>
                       <h3 className="text-xl font-semibold text-white">Tile</h3>
                     </button>
                     <button
                       onClick={() => handleRoofTypeSelect('Metal')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">▬</div>
+                      <div className="text-4xl mb-4">â¬</div>
                       <h3 className="text-xl font-semibold text-white">Metal</h3>
                     </button>
                     <button
                       onClick={() => handleRoofTypeSelect('Shingle')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">◢</div>
+                      <div className="text-4xl mb-4">â¢</div>
                       <h3 className="text-xl font-semibold text-white">Shingle</h3>
                     </button>
                     <button
                       onClick={() => handleRoofTypeSelect('Flat')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">▭</div>
+                      <div className="text-4xl mb-4">â­</div>
                       <h3 className="text-xl font-semibold text-white">Flat</h3>
                     </button>
                   </div>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                   </button>
                   <h2 className="text-2xl font-bold text-white mb-6">Let's get your inspection scheduled</h2>
                   <form action="https://formspree.io/f/mvzodbwp" method="POST" onSubmit={handleSubmit} className="space-y-6">
-                    <input type="hidden" name="_subject" value="📋 New Contact Page Submission" />
+                    <input type="hidden" name="_subject" value="ð New Contact Page Submission" />
                     <input type="hidden" name="form_source" value="Contact Page Multi-Step Form" />
                     <input type="hidden" name="projectType" value={`${jobType} - ${roofType}`} />
 
