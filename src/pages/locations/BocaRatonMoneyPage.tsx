@@ -7,7 +7,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, FileText, BookOpen, Users } from 'lucide-react';
+import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, BookOpen, Users } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
@@ -75,7 +75,7 @@ export default function BocaRatonMoneyPage() {
               </div>
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  Dispatched from our Deerfield Beach HQ to provide rapid roofing services in {cityName}, All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority. As a leader in {cityName} roofing, we are local experts familiar with regional roofing styles, building codes, and laws. If you are searching for a roofer {cityName} residents trust for emergency services, inspections, <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">roof repairs</Link>, and replacements, our team is ready to respond quickly and professionally. With extensive experience in the roofing industry, we have built a reputation as a reliable roofing contractor trusted by the {cityName} community. We hold both Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match. Roofing contractors in Florida must hold a Certified Roofing Contractor (CCC) or Registered Roofing Contractor license issued by the Florida Department of Business and Professional Regulation (DBPR). Our commitment to serving the local community and supporting neighborhood needs sets us apart.
+                  Dispatched from our Deerfield Beach HQ to provide rapid roofing services in {cityName}, All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority. As a leader in {cityName} roofing, we are local experts familiar with regional roofing styles, building codes, and laws. If you are searching for a roofer {cityName} residents trust for emergency services, inspections, <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">roof repairs</Link>, and replacements, our team is ready to respond quickly and professionally. We hold both Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match. Roofing contractors in Florida must hold a Certified Roofing Contractor (CCC) or Registered Roofing Contractor license issued by the Florida Department of Business and Professional Regulation (DBPR). Our commitment to serving the local community and supporting neighborhood needs sets us apart.
                 </p>
                 <p className="text-xl text-zinc-300 leading-relaxed">
                   When hiring a roofing contractor in {cityName}, it is essential to verify that the contractor is fully licensed, bonded, and insured. Homeowners may be held liable for on-site injuries if a roofing contractor is uninsured. Roofing contractors in Florida are required to maintain at least $100,000 public liability and $25,000 property damage coverage, plus workers' compensation insurance. Always verify proof of general liability and workers' compensation insurance to avoid liability for accidents. All Phase Construction USA exceeds these minimums and provides full documentation upon request.
@@ -131,7 +131,7 @@ export default function BocaRatonMoneyPage() {
                     This dual-license capability means we can address structural issues, handle complex repairs involving roof decking and trusses, and provide complete building envelope solutions. When other contractors must stop and call in structural specialists, we have the authority and expertise to handle everything in-house.
                   </p>
                   <p>
-                    Each roofing job is unique in scope, size, and complexity, and our dual license allows us to handle all aspects of the job efficiently and effectively. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/calculator" className=\"text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
+                    Each roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> can vary depending on the size of the job, the materials selected, and the time required to complete the work. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
                   </p>
                 </div>
               </div>
@@ -194,10 +194,10 @@ export default function BocaRatonMoneyPage() {
                     {cityName} is located in Florida's High Velocity Hurricane Zone (HVHZ), requiring specialized installation techniques, enhanced materials, and specific building code compliance. All Phase Construction USA specializes in Palm Beach County wind-compliant roofing systems designed to withstand extreme wind events.
                   </p>
                   <p>
-                    Our team is trained in HVHZ installation requirements, including enhanced fastening patterns, sealed roof decks, and impact-resistant materials. We use only products with valid Miami-Dade County Notices of Acceptance (NOA) and ensure every installation meets or exceeds Florida Building Code requirements for high-wind zones.
+                    Our team is trained in HVHZ installation requirements, including enhanced fastening patterns, sealed roof decks, and impact-resistant materials. We use only products with valid Miami-Dade County Notices of Acceptance (NOA) and ensure every installation meets or exceeds Florida Building Code requirements for high-wind zones. Learn more about <Link to="/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home" className="text-red-500 hover:text-red-400 underline">wind mitigation savings</Link> for your home.
                   </p>
                   <p>
-                    Improper installation can lead to significant roof damage, putting your home at risk. It is important to address roof problems immediately to prevent further damage to the home. Learn more about <Link to="/blog/what-makes-a-roof-hurricane-resistant" className="text-red-500 hover:text-red-400 underline">what makes a roof hurricane resistant</Link> in our detailed guide.
+                    Improper installation can lead to significant roof damage. Learn more about <Link to="/blog/what-makes-a-roof-hurricane-resistant" className="text-red-500 hover:text-red-400 underline">what makes a roof hurricane resistant</Link> in our detailed guide.
                   </p>
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function BocaRatonMoneyPage() {
           </div>
         </section>
 
-        {/* Why Boca Raton Homeowners Hire All Phase Construction USA */}
+        {/* Why Boca Raton Homeowners Hire All Phase */}
         <section className="py-20 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -237,15 +237,13 @@ export default function BocaRatonMoneyPage() {
               ].map((item, index) => (
                 <div key={index} className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
                   <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    {item.description}
-                  </p>
+                  <p className="text-zinc-400 leading-relaxed">{item.description}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-12 prose prose-invert max-w-none">
-              <p className="text-zinc-300 leading-relaxed text-center">
-                We have extensive experience managing all types of roofing work in {cityName}, including installation, repair, and maintenance for various roof types. Local regulations and building codes can significantly impact the roof replacement process and the materials used, so working with a knowledgeable roofing contractor is essential.
+            <div className="mt-12 text-center">
+              <p className="text-zinc-300 leading-relaxed max-w-3xl mx-auto">
+                We have extensive experience managing all types of roofing work in {cityName}. Don't just take our word for it — learn <Link to="/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid" className="text-red-500 hover:text-red-400 underline">how to hire a roofer in South Florida</Link> and see why homeowners across {county} choose All Phase Construction USA.
               </p>
             </div>
           </div>
@@ -271,19 +269,19 @@ export default function BocaRatonMoneyPage() {
                 All Phase Construction USA works across the full spectrum of Boca Raton's residential communities — from historic 1920s neighborhoods to modern luxury estates — each with its own roofing demands, HOA requirements, and material standards.
               </p>
               <p>
-                In Broken Sound Country Club, Boca Raton's largest private club community with 1,600 Mediterranean-style homes spread across 27 villages on 1,000 acres, we navigate strict architectural review board requirements for every roofing project. The community's mandatory HOA standards govern material selection, color approval, and installation methods — and our team is experienced in meeting those requirements while delivering fully HVHZ-compliant systems. The same applies to Boca West Country Club, one of the largest private clubs in the region with four golf courses and world-class amenities, and Woodfield Country Club, where family-focused luxury living comes with equally detailed HOA oversight.
+                In Broken Sound Country Club, Boca Raton's largest private club community with 1,600 Mediterranean-style homes spread across 27 villages on 1,000 acres, we navigate strict architectural review board requirements for every roofing project. The community's mandatory HOA standards govern material selection, color approval, and installation methods — and our team is experienced in meeting those requirements while delivering fully HVHZ-compliant systems. The same applies to Boca West Country Club and Woodfield Country Club, where family-focused luxury living comes with equally detailed HOA oversight.
               </p>
               <p>
-                Along Boca Raton's Intracoastal corridor, Royal Palm Yacht &amp; Country Club and Golden Harbour represent the highest-value roofing projects we handle — waterfront estates with private docks and marina access where salt air corrosion, constant humidity, and direct coastal wind exposure demand corrosion-resistant fasteners, sealed roof decks, and materials rated for permanent marine-environment exposure. Royal Palm Polo estates and Fieldbrook Estates similarly require premium systems and materials that match the caliber of these properties.
+                Along Boca Raton's Intracoastal corridor, Royal Palm Yacht &amp; Country Club and Golden Harbour represent the highest-value roofing projects we handle — waterfront estates where salt air corrosion, constant humidity, and direct coastal wind exposure demand corrosion-resistant fasteners, sealed roof decks, and materials rated for permanent marine-environment exposure.
               </p>
               <p>
-                Old Floresta Historic District is one of the most distinctive roofing environments in all of South Florida. Designed by legendary architect Addison Mizner in the early 1920s for his own executives, Old Floresta is specifically characterized by its original barrel tile roofs — the same Mediterranean Revival profile that defined Boca Raton's architectural identity. Restoring, replacing, or repairing these original barrel tile systems requires sourcing period-appropriate profiles, understanding Mizner-era underlayment construction, and bringing the roof to current Florida Building Code and HVHZ standards without compromising the historic character. Our CGC license gives us the structural authority to address the aging trusses and original roof-to-wall connections common in these 100-year-old structures.
+                Old Floresta Historic District is one of the most distinctive roofing environments in all of South Florida. Designed by legendary architect Addison Mizner in the early 1920s, Old Floresta is characterized by its original barrel tile roofs — the same Mediterranean Revival profile that defined Boca Raton's architectural identity. Restoring these systems requires sourcing period-appropriate profiles, understanding Mizner-era underlayment construction, and bringing the roof to current HVHZ standards without compromising historic character. Our CGC license gives us the structural authority to address aging trusses and original roof-to-wall connections common in these 100-year-old structures.
               </p>
               <p>
-                In central and west Boca communities — The Oaks at Boca Raton, New Floresta along the St. Andrews corridor, Millpond, and the newer Lotus and Lotus Palms communities — we serve a mix of 1980s-2000s construction that is entering its first or second full roof replacement cycle, often with flat roof systems, modified bitumen, and shingle systems that need to be upgraded to current HVHZ standards.
+                In central and west Boca communities — The Oaks at Boca Raton, New Floresta, Millpond, and the newer Lotus and Lotus Palms communities — we serve a mix of 1980s–2000s construction entering its first or second full <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> cycle, often with flat roof systems, modified bitumen, and shingle systems that need upgrading to current HVHZ standards.
               </p>
               <p>
-                As a proud member of the Greater Boca Raton Chamber of Commerce, All Phase Construction USA is a verified community business embedded in the Boca Raton area — not a contractor that shows up from out of town. When you hire us, you're hiring a company that has ongoing relationships and standing in the same community where your home is.
+                As a proud member of the Greater Boca Raton Chamber of Commerce, All Phase Construction USA is a verified community business embedded in the Boca Raton area. When you hire us, you're hiring a company with ongoing relationships and standing in the same community where your home is.
               </p>
             </div>
           </div>
@@ -303,7 +301,7 @@ export default function BocaRatonMoneyPage() {
             </div>
             <div className="mb-8">
               <img
-                src="/images/chamber-boca-raton-chili-cookoff-2026.jpg"
+                src="/social-proof/chamber-boca-raton-chili-cookoff-2026.jpg"
                 alt="All Phase Construction USA booth at the 13th Annual Boca Chamber Community Cookout &amp; Chili Cook-Off, March 2026 — Peter Blum Family YMCA, Boca Raton"
                 width="1200"
                 height="900"
@@ -336,46 +334,109 @@ export default function BocaRatonMoneyPage() {
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Roof Replacement */}
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <Building2 className="w-8 h-8 text-red-600" />
                   <h3 className="text-2xl font-bold">Roof Replacement</h3>
                 </div>
-                <p className="text-zinc-300 leading-relaxed mb-4">
-                  Complete roof replacement for {cityName} residential and commercial properties begins with a thorough <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">inspection</Link> of your existing roof. After the inspection, a detailed plan is developed to replace your old roof, taking into account the specific needs of your property and ensuring compliance with HVHZ standards. The existing roofing material is carefully removed and disposed of, and the roof deck is inspected for damage before installation of the new roofing system. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. A final inspection ensures your roof is watertight and meets all safety and quality standards.
+                <p className="text-zinc-300 leading-relaxed">
+                  Complete <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> for {cityName} residential and commercial properties begins with a thorough <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">inspection</Link>. Our experienced team installs high-quality materials suitable for all roof types, backed by manufacturer warranties. Learn <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline">how to spot early signs of roof damage</Link> before they become costly.
                 </p>
               </div>
-              {/* Emergency Repairs */}
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <Wrench className="w-8 h-8 text-red-600" />
                   <h3 className="text-2xl font-bold">Emergency Repairs</h3>
                 </div>
-                <p className="text-zinc-300 leading-relaxed mb-4">
-                  Our experienced roofers in {cityName} are available 24/7 to get your roof fixed quickly, providing same-day response for active leaks, storm damage, missing shingles, and emergency roof repair. Prompt repair of any roof leak is essential to prevent further deterioration and significant damage, including mold growth and structural issues. Delaying roof repairs can lead to more severe problems such as structural damage and health risks. Contact us immediately when noticing any roof damage.
+                <p className="text-zinc-300 leading-relaxed">
+                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
                 </p>
               </div>
-              {/* Professional Inspections */}
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <Camera className="w-8 h-8 text-red-600" />
                   <h3 className="text-2xl font-bold">Professional Inspections</h3>
                 </div>
-                <p className="text-zinc-300 leading-relaxed mb-4">
-                  Comprehensive 21-point roof inspections for {cityName} properties help maintain your roof's condition and prevent damage by identifying issues early. Regular roof inspections are critical to assess and address problems before they escalate, saving you money by extending your roof's lifespan and preventing costly repairs. Insurance documentation, pre-purchase evaluations, and maintenance assessments are included.
+                <p className="text-zinc-300 leading-relaxed">
+                  Comprehensive 21-point <Link to="/roof-inspection/boca-raton" className="text-red-500 hover:text-red-400 underline">roof inspections</Link> for {cityName} properties identify issues early, saving you money and extending your roof's lifespan. Includes insurance documentation, pre-purchase evaluations, and <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">maintenance assessments</Link>. Understand <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="text-red-500 hover:text-red-400 underline">your roofing warranty</Link> before you sign.
                 </p>
               </div>
-              {/* All Roof Types */}
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <Shield className="w-8 h-8 text-red-600" />
                   <h3 className="text-2xl font-bold">All Roof Types</h3>
                 </div>
-                <p className="text-zinc-300 leading-relaxed mb-4">
-                  <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofing</Link>, <Link to="/metal-roofing" className=\"text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/shingle-roofing" className=\"text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/flat-roofing" className=\"text-red-500 hover:text-red-400 underline">flat roofing</Link>, and <Link to="/commercial-roofing" className=\"text-red-500 hover:text-red-400 underline">commercial roofing</Link> (including TPO, PVC, modified bitumen, and EPDM) are all expertly installed and repaired for homes and businesses in {cityName}. Metal roofs are extremely durable and can last 50 years or more. Tile roofing is favored for its aesthetic appeal and longevity. Asphalt shingles remain popular due to their cost-effectiveness and durability. Energy-efficient roofing systems can help reduce ongoing energy costs.
+                <p className="text-zinc-300 leading-relaxed">
+                  <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline">Tile roofing</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline">metal roofing</Link>, <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline">shingle roofing</Link>, <Link to="/flat-roofing" className="text-red-500 hover:text-red-400 underline">flat roofing</Link>, and <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline">commercial roofing</Link> (TPO, PVC, modified bitumen, EPDM) — all expertly installed for {cityName} homes and businesses. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> to fit any budget.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Roofing Education and Resources */}
+        <section className="py-20 bg-[#09090b]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-start gap-4 mb-6">
+              <BookOpen className="w-10 h-10 text-red-600 flex-shrink-0 mt-1" />
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Roofing Education and Resources
+                </h2>
+              </div>
+            </div>
+            <p className="text-lg text-zinc-300 leading-relaxed mb-8">
+              All Phase Construction USA is dedicated to empowering {cityName} homeowners with the knowledge to make informed roofing decisions. Our <Link to="/learning-center" className="text-red-600 hover:text-red-500 underline transition-colors">Learning Center</Link> provides in-depth guides on roof replacement costs, wind mitigation savings, insurance claims, and selecting the right roofing materials.
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                { to: '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home', label: 'Wind Mitigation: Save on Insurance & Protect Your Home' },
+                { to: '/blog/how-to-file-a-roof-insurance-claim-after-storm-damage', label: 'How to File a Roof Insurance Claim After Storm Damage' },
+                { to: '/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive', label: 'How to Spot Early Signs of Roof Damage' },
+                { to: '/blog/roof-replacement-cost-broward-county-2026', label: 'Roof Replacement Cost Guide — South Florida 2026' },
+                { to: '/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not', label: 'Understanding Your Roofing Warranty' },
+                { to: '/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid', label: 'How to Hire a Roofer in South Florida' },
+                { to: '/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida', label: 'Why You Should Never Pull Your Own Roofing Permit' },
+                { to: '/locations/boca-raton/best-roofers-boca-raton', label: 'Best Roofers in Boca Raton — Top Picks for 2026' },
+              ].map((item, i) => (
+                <Link key={i} to={item.to} className="flex items-center gap-3 bg-zinc-900 border border-zinc-800 rounded-lg px-5 py-4 hover:border-red-600/40 transition-colors group">
+                  <ChevronRight className="w-4 h-4 text-red-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-zinc-300 group-hover:text-white transition-colors text-sm">{item.label}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Service Area - Nearby Communities */}
+        <section className="py-20 bg-[#09090b]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Serving {cityName} and Surrounding Communities
+            </h2>
+            <p className="text-lg text-zinc-300 text-center mb-8 max-w-3xl mx-auto">
+              All Phase Construction USA proudly serves the entire {cityName} region, extending throughout {county} and into Broward County. Our extensive service area ensures that homeowners and businesses can access our top-tier roofing services.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
+              <Link to="/locations/delray-beach" className="hover:text-red-600 transition-colors">Delray Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/boynton-beach" className="hover:text-red-600 transition-colors">Boynton Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/west-palm-beach" className="hover:text-red-600 transition-colors">West Palm Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/pompano-beach" className="hover:text-red-600 transition-colors">Pompano Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/coral-springs" className="hover:text-red-600 transition-colors">Coral Springs</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/fort-lauderdale" className="hover:text-red-600 transition-colors">Fort Lauderdale</Link>
+            </div>
+            <div className="text-center">
+              <Link to="/locations/boca-raton/best-roofers-boca-raton" className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-6 py-3 rounded-lg font-semibold border border-red-600/20 hover:bg-red-600/20 transition-colors">
+                <Award className="w-4 h-4" />
+                See the Best Roofers in Boca Raton →
+              </Link>
             </div>
           </div>
         </section>
@@ -389,7 +450,7 @@ export default function BocaRatonMoneyPage() {
                 <span>Proud Member — Greater Boca Raton Chamber of Commerce</span>
               </div>
               <p className="text-zinc-400 mt-4 text-sm">
-                Serving Boca Raton &amp; South Florida
+                Serving Boca Raton &amp; South Florida since 2005
               </p>
             </div>
           </div>
