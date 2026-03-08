@@ -1554,6 +1554,14 @@ function generateStaticFiles() {
       { name: 'Material Selection', text: 'Choose from shingle, tile, metal, or flat roofing systems. We present HVHZ-compliant options at multiple price points and order materials once you approve the scope.' },
       { name: 'Tear-Off and Deck Inspection', text: 'We remove the existing roof system down to the deck and inspect for rot, soft spots, or damaged sheathing, making all necessary repairs before re-roofing begins.' },
       { name: 'Underlayment Installation', text: 'HVHZ-compliant underlayment is installed and nailed per Florida Building Code to provide a secondary water barrier before the finish roofing system is applied.' },
+      { name: 'New Roof Installation', text: 'Your selected roofing system is installed by our licensed crews following Florida Building Code specifications and manufacturer installation requirements.' },
+      { name: 'Final Inspection and Cleanup', text: 'A county inspector signs off on the permit, we complete full magnetic nail sweep and debris removal, and conduct a final walkthrough with you before collecting final payment.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Roof Replacement Process', url: 'https://allphaseconstructionfl.com/roof-replacement-process' }
+    ]
   },
   '/roof-replacement': {
     breadcrumbs: [
