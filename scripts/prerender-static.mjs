@@ -1554,6 +1554,34 @@ function generateStaticFiles() {
       { name: 'Material Selection', text: 'Choose from shingle, tile, metal, or flat roofing systems. We present HVHZ-compliant options at multiple price points and order materials once you approve the scope.' },
       { name: 'Tear-Off and Deck Inspection', text: 'We remove the existing roof system down to the deck and inspect for rot, soft spots, or damaged sheathing, making all necessary repairs before re-roofing begins.' },
       { name: 'Underlayment Installation', text: 'HVHZ-compliant underlayment is installed and nailed per Florida Building Code to provide a secondary water barrier before the finish roofing system is applied.' },
+  },
+  '/roof-replacement': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+      { name: 'Roof Replacement', url: 'https://allphaseconstructionfl.com/roof-replacement' }
+    ],
+    faqs: [
+      {
+        question: 'How do I know if I need a full roof replacement vs. a repair?',
+        answer: 'If your roof is over 20 years old, has widespread shingle damage, persistent leaks, or significant decking rot, replacement is typically more cost-effective than repeated repairs. We provide free inspections to give you an honest assessment.'
+      },
+      {
+        question: 'How long does a roof replacement take in South Florida?',
+        answer: 'Most residential roof replacements in Broward and Palm Beach Counties take 1–3 days depending on roof size, pitch, and material. We work efficiently to minimize disruption to your household.'
+      },
+      {
+        question: 'What roofing materials are best for South Florida homes?',
+        answer: 'Asphalt shingles, concrete tile, and metal roofing are the most popular choices for South Florida. Each has different cost, longevity, and wind resistance profiles — we help homeowners choose based on their budget and HOA requirements.'
+      },
+      {
+        question: 'Is a permit required for roof replacement in Broward County?',
+        answer: 'Yes, Florida law requires a permit for full roof replacements. As licensed contractor CCC-1331464, All Phase Construction USA pulls all required permits and ensures full code compliance on every project.'
+      },
+      {
+        question: 'Do you offer financing for roof replacement?',
+        answer: 'Yes. We work with financing partners to offer flexible payment options so South Florida homeowners can get the roof they need without waiting. Ask about current financing programs during your free estimate.'
+      }
+    ]
       { name: 'New Roof Installation', text: 'Your selected roofing system is installed by our licensed crews following Florida Building Code specifications and manufacturer installation requirements.' },
       { name: 'Final Inspection and Cleanup', text: 'A county inspector signs off on the permit, we complete full magnetic nail sweep and debris removal, and conduct a final walkthrough with you before collecting final payment.' }
     ],
