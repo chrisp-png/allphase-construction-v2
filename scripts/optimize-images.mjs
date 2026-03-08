@@ -154,8 +154,8 @@ async function optimizeImage(imagePath) {
     stats.savedBytes += savedBytes;
     stats.processed++;
 
-    console.log(`   ✓ ${fileName} â ${basename(webpPath)}`);
-    console.log(`     ${formatBytes(originalSize)} â ${formatBytes(optimizedSize)} (${percentSaved}% smaller)`);
+    console.log(`   ✓ ${fileName} → ${basename(webpPath)}`);
+    console.log(`     ${formatBytes(originalSize)} → ${formatBytes(optimizedSize)} (${percentSaved}% smaller)`);
 
   } catch (error) {
     console.error(`   â Error processing ${basename(imagePath)}: ${error.message}`);
