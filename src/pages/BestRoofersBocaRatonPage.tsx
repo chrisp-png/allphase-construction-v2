@@ -41,7 +41,7 @@ export default function BestRoofersBocaRatonPage() {
                 "name": "Can I use my homeowner's insurance to pay for a new roof in Boca Raton?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value Ã¢ the difference can be substantial on an older roof."
+                  "text": "If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value — the difference can be substantial on an older roof."
                 }
               },
               {
@@ -49,7 +49,7 @@ export default function BestRoofersBocaRatonPage() {
                 "name": "What roofing materials are best for Boca Raton's climate?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Concrete tile is the most common residential roofing material in Boca Raton and performs well in South Florida's climate Ã¢ it's impact-resistant, has a long service life, and has established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment."
+                  "text": "Concrete tile is the most common residential roofing material in Boca Raton and performs well in South Florida's climate — it's impact-resistant, has a long service life, and has established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment."
                 }
               },
               {
@@ -65,7 +65,7 @@ export default function BestRoofersBocaRatonPage() {
                 "name": "What should I do immediately after a storm damages my roof?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Document the damage with photographs before any temporary repairs are made. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage Ã¢ this is typically covered under your policy's emergency repair provision. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment."
+                  "text": "Document the damage with photographs before any temporary repairs are made. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage — this is typically covered under your policy's emergency repair provision. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment."
                 }
               }
             ]
@@ -157,10 +157,10 @@ export default function BestRoofersBocaRatonPage() {
               Boca Raton has no shortage of roofing contractors. Drive through downtown or any residential neighborhood after a storm and you'll see door hangers from out-of-state crews who materialized overnight. Search Google and you'll get a mix of national lead aggregators, unlicensed outfits running Facebook ads, and a handful of legitimate local contractors buried somewhere in the results.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed">
-              The problem isn't finding a roofer Ã¢ it's knowing which ones are worth trusting with a $15,000 to $40,000 investment on a home that sits in one of the most demanding climate zones in North America.
+              The problem isn't finding a roofer — it's knowing which ones are worth trusting with a $15,000 to $40,000 investment on a home that sits in one of the most demanding climate zones in North America.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed">
-              Boca Raton falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience. HVHZ compliance isn't optional Ã¢ it's code, and it's enforced by Palm Beach County Building Division, which runs a rigorous permitting and inspection process.
+              Boca Raton falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience. HVHZ compliance isn't optional — it's code, and it's enforced by Palm Beach County Building Division, which runs a rigorous permitting and inspection process.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed">
               We've put together this list to give Boca Raton homeowners a starting point: five contractors we consider worth evaluating, ranked based on licensing, track record, and demonstrated capability in the specific demands of this market.
@@ -231,7 +231,7 @@ export default function BestRoofersBocaRatonPage() {
                   <MapPin className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Scope of services</h3>
-                    <p>Boca Raton's housing stock ranges from historic Mediterranean Revival homes in Broken Sound and Royal Palm Yacht & CC to newer developments in West Boca and waterfront properties along the Intracoastal. We prioritized contractors who can work across multiple roof system types Ã¢ tile, shingle, metal, and flat/modified bitumen.</p>
+                    <p>Boca Raton's housing stock ranges from historic Mediterranean Revival homes in Broken Sound and Royal Palm Yacht & CC to newer developments in West Boca and waterfront properties along the Intracoastal. We prioritized contractors who can work across multiple roof system types — tile, shingle, metal, and flat/modified bitumen.</p>
                   </div>
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function BestRoofersBocaRatonPage() {
                 1
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-slate-900">All Phase Construction USA Ã¢ Boca Raton, FL</h2>
+                <h2 className="text-3xl font-bold text-slate-900">All Phase Construction USA — Boca Raton, FL</h2>
               </div>
             </div>
 
@@ -309,13 +309,13 @@ export default function BestRoofersBocaRatonPage() {
                 All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Boca Raton across multiple neighborhoods and roof system types.
               </p>
               <p>
-                The dual-license structure matters in Boca Raton specifically. Roofing projects on older homes in historic districts like Royal Palm Yacht & CC, Broken Sound, or Woodfield often involve structural repairs Ã¢ rotted decking, damaged rafters, deteriorated fascia Ã¢ that require a general contractor license to address legally. Many roofing-only contractors encounter these issues mid-project and either perform work outside their license scope or ask the homeowner to hire a second contractor. All Phase handles both under one license.
+                The dual-license structure matters in Boca Raton specifically. Roofing projects on older homes in historic districts like Royal Palm Yacht & CC, Broken Sound, or Woodfield often involve structural repairs — rotted decking, damaged rafters, deteriorated fascia — that require a general contractor license to address legally. Many roofing-only contractors encounter these issues mid-project and either perform work outside their license scope or ask the homeowner to hire a second contractor. All Phase handles both under one license.
               </p>
               <p>
                 Palm Beach County's building department requires HVHZ-compliant materials and installation methods. All Phase installs roofing systems with Florida Product Approval numbers applicable to Palm Beach County's wind speed requirements, and routinely works with the county's inspection scheduling process.
               </p>
               <p>
-                The company also has specific experience in the waterfront neighborhoods that make Boca Raton's roofing environment uniquely challenging. Properties along the Intracoastal and near Palm Beach Island face accelerated salt-air corrosion on metal components Ã¢ flashing, drip edge, fasteners Ã¢ that requires attention to material specification that goes beyond what standard inland installation requires.
+                The company also has specific experience in the waterfront neighborhoods that make Boca Raton's roofing environment uniquely challenging. Properties along the Intracoastal and near Palm Beach Island face accelerated salt-air corrosion on metal components — flashing, drip edge, fasteners — that requires attention to material specification that goes beyond what standard inland installation requires.
               </p>
 
               <div className="bg-white rounded-lg p-6 mt-6">
@@ -347,11 +347,11 @@ export default function BestRoofersBocaRatonPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">2</div>
-                <h2 className="text-2xl font-bold text-slate-900">Whale Roofing Ã¢ Boca Raton, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Whale Roofing — Boca Raton, FL</h2>
               </div>
               <div className="space-y-3 text-slate-700">
                 <p>
-                  Whale Roofing is a family-owned roofing contractor based in Palm Beach County with over 30 years of operation. Their longevity in the Boca Raton market Ã¢ through multiple hurricane seasons, code cycles, and insurance market disruptions Ã¢ is itself a signal of operational stability that newer entrants can't offer.
+                  Whale Roofing is a family-owned roofing contractor based in Palm Beach County with over 30 years of operation. Their longevity in the Boca Raton market — through multiple hurricane seasons, code cycles, and insurance market disruptions — is itself a signal of operational stability that newer entrants can't offer.
                 </p>
                 <p>
                   What distinguishes Istueta in the Boca Raton context is their explicit specialization in tile roofing systems. Their team is built around clay and concrete tile installations, covering the historic districts where period-correct materials and craftsmanship are essential.
@@ -363,7 +363,7 @@ export default function BestRoofersBocaRatonPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">3</div>
-                <h2 className="text-2xl font-bold text-slate-900">Tiger Team Roofing Ã¢ Boca Raton, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Tiger Team Roofing — Boca Raton, FL</h2>
               </div>
               <p className="text-slate-700">
                 Tiger Team Roofing is a Palm Beach County contractor with a consistent presence in Boca Raton. The company has built a reputation for reliable service and quality workmanship across residential and commercial properties.
@@ -374,7 +374,7 @@ export default function BestRoofersBocaRatonPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">4</div>
-                <h2 className="text-2xl font-bold text-slate-900">Tiger Team Roofing Ã¢ Boca Raton, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Tiger Team Roofing — Boca Raton, FL</h2>
               </div>
               <p className="text-slate-700">
                 Tiger Team Roofing is one of the larger regional roofing contractors operating throughout South Florida. With multiple locations and a substantial crew capacity, they handle high-volume residential and commercial projects across Palm Beach County.
@@ -385,7 +385,7 @@ export default function BestRoofersBocaRatonPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">5</div>
-                <h2 className="text-2xl font-bold text-slate-900">Boca Roofing Ã¢ Boca Raton, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Boca Roofing — Boca Raton, FL</h2>
               </div>
               <p className="text-slate-700">
                 Boca Roofing has been operating in Palm Beach County for multiple decades, making them one of the longer-tenured residential roofing contractors with a specifically local focus. Their experience includes work on historic properties and modern installations.
@@ -422,7 +422,7 @@ export default function BestRoofersBocaRatonPage() {
 
           {/* Storm Chasers Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Storm Chasers vs. Established Roofers in Boca Raton Ã¢ Know the Difference</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Storm Chasers vs. Established Roofers in Boca Raton — Know the Difference</h2>
             <div className="space-y-4 text-lg text-slate-700">
               <p>
                 After every named storm, Boca Raton gets an influx of out-of-state roofing crews. They typically work door-to-door in affected neighborhoods, offer to perform "free inspections," and push insurance claims. Some are legitimate. Many are not.
@@ -447,7 +447,7 @@ export default function BestRoofersBocaRatonPage() {
                 A legitimate roofing replacement or significant repair project in Boca Raton follows a predictable sequence. Understanding this helps you evaluate whether a contractor is running a proper operation.
               </p>
               <p>
-                <strong>Inspection and scope definition:</strong> The process starts with a roof inspection Ã¢ a physical assessment of the existing system to determine condition, identify failure points, and determine whether repair or replacement is appropriate. A contractor who quotes a replacement without getting on the roof has not done an inspection.
+                <strong>Inspection and scope definition:</strong> The process starts with a roof inspection — a physical assessment of the existing system to determine condition, identify failure points, and determine whether repair or replacement is appropriate. A contractor who quotes a replacement without getting on the roof has not done an inspection.
               </p>
               <p>
                 <strong>Permit application:</strong> The contractor applies for a permit with Palm Beach County Building Division before any work begins. The permit application identifies the contractor, the property, the scope of work, and the materials to be used. If a contractor starts work without a permit, stop the project.
@@ -459,20 +459,20 @@ export default function BestRoofersBocaRatonPage() {
                 <strong>Tear-off and decking inspection:</strong> The existing roof system is removed and the decking is inspected. Damaged or rotted decking sections must be replaced before the new system is installed. Any contractor who refuses to discuss decking replacement until after the job is underway should be approached with caution.
               </p>
               <p>
-                <strong>Installation to code:</strong> The new system is installed to HVHZ standards Ã¢ specific fastening patterns, underlayment requirements, flashing details, and ridge and hip finishing. In Boca Raton, this means the installation must meet the Florida Building Code requirements for Palm Beach County's wind exposure category.
+                <strong>Installation to code:</strong> The new system is installed to HVHZ standards — specific fastening patterns, underlayment requirements, flashing details, and ridge and hip finishing. In Boca Raton, this means the installation must meet the Florida Building Code requirements for Palm Beach County's wind exposure category.
               </p>
               <p>
                 <strong>Inspection:</strong> Palm Beach County schedules a building department inspection of the completed work. The inspector verifies that the installation meets code. Final inspection approval closes the permit.
               </p>
               <p>
-                <strong>Wind mitigation report:</strong> After inspection approval, the contractor or a licensed inspector produces a wind mitigation report documenting the roof's construction features. This report can be submitted to your homeowner's insurance company for premium review Ã¢ a properly installed HVHZ-compliant roof can produce meaningful insurance savings.
+                <strong>Wind mitigation report:</strong> After inspection approval, the contractor or a licensed inspector produces a wind mitigation report documenting the roof's construction features. This report can be submitted to your homeowner's insurance company for premium review — a properly installed HVHZ-compliant roof can produce meaningful insurance savings.
               </p>
             </div>
           </section>
 
           {/* Understanding Pricing Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding Roofing Pricing in Boca Raton Ã¢ Cheap, Fair, and Overpriced</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding Roofing Pricing in Boca Raton — Cheap, Fair, and Overpriced</h2>
             <div className="space-y-4 text-lg text-slate-700">
               <p>
                 Boca Raton roofing prices fall into roughly three categories, and the lowest bid rarely represents the best value.
@@ -491,10 +491,10 @@ export default function BestRoofersBocaRatonPage() {
 
           {/* Roofing Costs Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Roofing Costs in Boca Raton Ã¢ What Should You Expect to Pay?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Roofing Costs in Boca Raton — What Should You Expect to Pay?</h2>
             <div className="space-y-4 text-lg text-slate-700">
               <p>
-                Roof repair costs in Boca Raton vary significantly by scope and system type. Minor repairs Ã¢ sealing a single penetration, replacing a handful of tiles, re-bedding ridge caps Ã¢ typically run $300 to $1,200. More extensive repairs involving underlayment damage, flashing replacement, or structural issues can run $2,000 to $8,000.
+                Roof repair costs in Boca Raton vary significantly by scope and system type. Minor repairs — sealing a single penetration, replacing a handful of tiles, re-bedding ridge caps — typically run $300 to $1,200. More extensive repairs involving underlayment damage, flashing replacement, or structural issues can run $2,000 to $8,000.
               </p>
               <p>
                 Full roof replacement costs depend primarily on roof type, size, and material specification:
@@ -516,7 +516,7 @@ export default function BestRoofersBocaRatonPage() {
 
           {/* FAQ Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ Ã¢ Frequently Asked Questions About Roofing in Boca Raton</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — Frequently Asked Questions About Roofing in Boca Raton</h2>
             <div className="space-y-6">
               {[
                 {
