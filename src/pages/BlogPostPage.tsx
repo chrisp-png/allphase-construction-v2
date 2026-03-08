@@ -511,7 +511,7 @@ export default function BlogPostPage() {
               </div>
               {post.categories.length > 0 && (
                 <div className="flex items-center gap-2">
-                  <span>â¢</span>
+                  <span>•</span>
                   <span>{post.categories[0]}</span>
                 </div>
               )}
