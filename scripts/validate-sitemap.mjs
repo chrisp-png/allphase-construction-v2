@@ -17,7 +17,7 @@ console.log('\nð Validating sitemap.xml...\n');
 let sitemap;
 try {
   sitemap = fs.readFileSync(SITEMAP_PATH, 'utf-8');
-  console.log(`â Successfully read ${SITEMAP_PATH}`);
+  console.log(`✅ Successfully read ${SITEMAP_PATH}`);
 } catch (err) {
   console.error(`â FAIL: Could not read sitemap.xml`);
   console.error(`   Path: ${SITEMAP_PATH}`);
@@ -63,7 +63,7 @@ if (matches.length === 0) {
     
     // Special case: root URL must have trailing slash
     if (url === ROOT_URL_WITH_SLASH) {
-      console.log(`   â ${url} (root - trailing slash OK)`);
+      console.log(`   ✅ ${url} (root - trailing slash OK)`);
       continue;
     }
     
@@ -72,7 +72,7 @@ if (matches.length === 0) {
       errors.push(`URL has forbidden trailing slash: ${url}`);
       console.log(`   â ${url} (INVALID: trailing slash)`);
     } else if (url.startsWith(CANONICAL_DOMAIN)) {
-      console.log(`   â ${url}`);
+      console.log(`   ✅ ${url}`);
     } else {
       warnings.push(`URL does not start with canonical domain: ${url}`);
       console.log(`   â ï¸  ${url} (wrong domain)`);
@@ -88,7 +88,7 @@ console.log('VALIDATION RESULTS');
 console.log('='.repeat(70) + '\n');
 
 if (errors.length === 0 && warnings.length === 0) {
-  console.log('â â â  ALL CHECKS PASSED  â â â\n');
+  console.log('✅ ✅ ✅  ALL CHECKS PASSED  ✅ ✅ ✅\n');
   console.log('Sitemap is canonical-clean:');
   console.log('  • Starts with proper XML header or <urlset>');
   console.log('  • No <lastmod>, <changefreq>, or <priority> tags');
