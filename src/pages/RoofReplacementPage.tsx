@@ -175,7 +175,7 @@ export default function RoofReplacementPage() {
                 {/* Introduction */}
                 <div className="prose prose-lg max-w-none mb-12">
                   <p className="text-xl text-gray-700 leading-relaxed">
-                    When your roof reaches the end of its serviceable life, proper replacement isn't optionalâit's essential
+                    When your roof reaches the end of its serviceable life, proper replacement isn't optional—it's essential
                     for protecting your property investment, maintaining insurance coverage, and ensuring occupant safety.
                     All Phase Construction USA provides complete roof replacement services throughout Broward and Palm Beach
                     Counties with dual-licensed expertise (State Certified Roofing Contractor CCC-1331464 and Certified
@@ -431,7 +431,7 @@ export default function RoofReplacementPage() {
                   <p className="text-gray-700 mb-6 leading-relaxed">
                     All roof replacements in Broward and Palm Beach Counties must meet High Velocity Hurricane Zone (HVHZ)
                     building code requirements. HVHZ certification ensures your new roof system can withstand 175+ mph wind
-                    speeds during hurricane eventsâa critical requirement that affects insurance coverage, property value,
+                    speeds during hurricane events—a critical requirement that affects insurance coverage, property value,
                     and occupant safety.
                   </p>
 
@@ -533,7 +533,7 @@ export default function RoofReplacementPage() {
                       <h4 className="font-bold text-gray-900 mb-3">5. Understand Warranty Coverage</h4>
                       <p className="text-gray-700 text-sm">
                         Differentiate between manufacturer material warranties (20-50 years) and contractor workmanship warranties
-                        (typically 2-10 years). Get both in writing. Manufacturer warranties only cover material defectsânot
+                        (typically 2-10 years). Get both in writing. Manufacturer warranties only cover material defects—not
                         installation errors. Your contractor's workmanship warranty protects against leaks caused by improper installation.
                       </p>
                     </div>
@@ -542,7 +542,7 @@ export default function RoofReplacementPage() {
                       <h4 className="font-bold text-gray-900 mb-3">6. Verify Permit Handling</h4>
                       <p className="text-gray-700 text-sm">
                         Confirm that the contractor pulls all required building permits in their company name and schedules
-                        inspections. If a contractor suggests skipping permits to "save money," walk away immediatelyâyou'll
+                        inspections. If a contractor suggests skipping permits to "save money," walk away immediately—you'll
                         face fines, insurance claim denials, and potential re-roofing requirements when discovered.
                       </p>
                     </div>
@@ -593,7 +593,7 @@ export default function RoofReplacementPage() {
                       <p className="text-gray-700 text-sm">
                         Direct contractor involvement on every project ensures quality control and precision that franchise
                         operations with high-turnover crews cannot match. Your roof replacement is supervised by licensed
-                        professionalsânot subcontracted to the lowest bidder.
+                        professionals—not subcontracted to the lowest bidder.
                       </p>
                     </div>
 
@@ -604,7 +604,7 @@ export default function RoofReplacementPage() {
                       <h3 className="text-xl font-bold text-gray-900 mb-3">Comprehensive Permitting</h3>
                       <p className="text-gray-700 text-sm">
                         We handle all building permit applications, engineering coordination, NOA documentation, and inspection
-                        scheduling for every roof replacement. No shortcuts, no permit skippingâjust legal, code-compliant
+                        scheduling for every roof replacement. No shortcuts, no permit skipping—just legal, code-compliant
                         installation that protects your insurance coverage and property value.
                       </p>
                     </div>
@@ -615,7 +615,7 @@ export default function RoofReplacementPage() {
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">Lifetime Workmanship Warranty</h3>
                       <p className="text-gray-700 text-sm">
-                        Our lifetime workmanship warranty covers installation defects for as long as you own the propertyânot
+                        Our lifetime workmanship warranty covers installation defects for as long as you own the property—not
                         just 2-5 years like most contractors. Combined with manufacturer material warranties up to 50 years,
                         your investment is comprehensively protected.
                       </p>
