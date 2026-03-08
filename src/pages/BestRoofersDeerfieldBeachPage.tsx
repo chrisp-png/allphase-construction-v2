@@ -185,8 +185,8 @@ export default function BestRoofersDeerfieldBeachPage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-zinc-800">
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">✅ What to Look For</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">🚩 Red Flags</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">â What to Look For</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">ð© Red Flags</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-zinc-800">
@@ -893,13 +893,13 @@ export default function BestRoofersDeerfieldBeachPage() {
 
             <h3 className="text-2xl font-bold text-white mb-4">Warning signs of a storm chaser:</h3>
             <ul className="space-y-2 mb-8">
-              <li className="text-zinc-300">🚩 Showed up at your door after a storm — you didn't call them</li>
-              <li className="text-zinc-300">🚩 Pressures you to sign an Assignment of Benefits (AOB) on the spot</li>
-              <li className="text-zinc-300">🚩 Out-of-state license plate or no verifiable local office</li>
-              <li className="text-zinc-300">🚩 Can't provide a Florida State license number for immediate verification</li>
-              <li className="text-zinc-300">🚩 Offers to "waive your deductible" (this is insurance fraud in Florida)</li>
-              <li className="text-zinc-300">🚩 No BBB profile or recent Broward County permit history</li>
-              <li className="text-zinc-300">🚩 Quote is dramatically below every other bid you've received</li>
+              <li className="text-zinc-300">ð© Showed up at your door after a storm — you didn't call them</li>
+              <li className="text-zinc-300">ð© Pressures you to sign an Assignment of Benefits (AOB) on the spot</li>
+              <li className="text-zinc-300">ð© Out-of-state license plate or no verifiable local office</li>
+              <li className="text-zinc-300">ð© Can't provide a Florida State license number for immediate verification</li>
+              <li className="text-zinc-300">ð© Offers to "waive your deductible" (this is insurance fraud in Florida)</li>
+              <li className="text-zinc-300">ð© No BBB profile or recent Broward County permit history</li>
+              <li className="text-zinc-300">ð© Quote is dramatically below every other bid you've received</li>
             </ul>
           </div>
 
@@ -1096,16 +1096,16 @@ export default function BestRoofersDeerfieldBeachPage() {
             <h2 className="text-3xl font-bold text-white mb-6">Common Red Flags When Choosing a Roofer in Deerfield Beach, FL</h2>
 
             <ul className="space-y-3 mb-8">
-              <li className="text-zinc-300">🚩 No Florida State Certified Roofing Contractor license (verify at myfloridalicense.com)</li>
-              <li className="text-zinc-300">🚩 Demands full payment before work begins</li>
-              <li className="text-zinc-300">🚩 No written estimate or contract before signing</li>
-              <li className="text-zinc-300">🚩 Cannot provide proof of liability insurance and workers' comp</li>
-              <li className="text-zinc-300">🚩 No verifiable Deerfield Beach or Broward County office</li>
-              <li className="text-zinc-300">🚩 Pressure to decide same day — "this price is only good today"</li>
-              <li className="text-zinc-300">🚩 Offers to waive your deductible (insurance fraud under Florida law)</li>
-              <li className="text-zinc-300">🚩 Can't explain what NOA compliance means for your roof system</li>
-              <li className="text-zinc-300">🚩 No permit mentioned — "we handle it different here"</li>
-              <li className="text-zinc-300">🚩 No mention of wind mitigation documentation</li>
+              <li className="text-zinc-300">ð© No Florida State Certified Roofing Contractor license (verify at myfloridalicense.com)</li>
+              <li className="text-zinc-300">ð© Demands full payment before work begins</li>
+              <li className="text-zinc-300">ð© No written estimate or contract before signing</li>
+              <li className="text-zinc-300">ð© Cannot provide proof of liability insurance and workers' comp</li>
+              <li className="text-zinc-300">ð© No verifiable Deerfield Beach or Broward County office</li>
+              <li className="text-zinc-300">ð© Pressure to decide same day — "this price is only good today"</li>
+              <li className="text-zinc-300">ð© Offers to waive your deductible (insurance fraud under Florida law)</li>
+              <li className="text-zinc-300">ð© Can't explain what NOA compliance means for your roof system</li>
+              <li className="text-zinc-300">ð© No permit mentioned — "we handle it different here"</li>
+              <li className="text-zinc-300">ð© No mention of wind mitigation documentation</li>
             </ul>
           </div>
 
