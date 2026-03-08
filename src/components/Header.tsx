@@ -137,8 +137,8 @@ export default function Header() {
                 className="flex items-center gap-1 text-white hover:text-red-400 transition-colors font-medium text-xs"
                 aria-label="Read our 4.8 star Google reviews"
               >
-                <span className="hidden sm:inline">4.8 <span className="text-yellow-400">â</span> Google Reviews</span>
-                <span className="sm:hidden">4.8<span className="text-yellow-400">â</span> Reviews</span>
+                <span className="hidden sm:inline">4.8 <span className="text-yellow-400">★</span> Google Reviews</span>
+                <span className="sm:hidden">4.8<span className="text-yellow-400">★</span> Reviews</span>
               </a>
               <a
                 href={EXTERNAL_LINKS.GOOGLE_MAPS}
@@ -568,7 +568,7 @@ export default function Header() {
                   className="flex items-center justify-center gap-1 px-4 py-3 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 focus:ring-offset-black"
                   aria-label="Read our 4.8 star Google reviews"
                 >
-                  4.8<span className="text-yellow-400">â</span> Reviews
+                  4.8<span className="text-yellow-400">★</span> Reviews
                 </a>
                 <a
                   href={EXTERNAL_LINKS.GOOGLE_MAPS}
