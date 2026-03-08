@@ -183,7 +183,7 @@ export default function BocaRatonPage() {
                   <strong>Address:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442
                 </p>
                 <p className="text-white text-lg">
-                  <strong>Google Rating:</strong> 4.8★ with 137 reviews
+                  <strong>Google Rating:</strong> 4.8â with 137 reviews
                 </p>
               </div>
 
@@ -235,7 +235,7 @@ export default function BocaRatonPage() {
                   </li>
                   <li className="flex items-start gap-3 text-zinc-300">
                     <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-lg">4.8★ Google rating (137 reviews)</span>
+                    <span className="text-lg">4.8â Google rating (137 reviews)</span>
                   </li>
                   <li className="flex items-start gap-3 text-zinc-300">
                     <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
