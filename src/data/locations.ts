@@ -33,8 +33,8 @@ export const locations: Location[] = [
     slug: "deerfield-beach",
     city: "Deerfield Beach",
     state: "FL",
-        titleOverride: "Roofing Contractor Deerfield Beach FL | All Phase",
-    descriptionOverride: "Licensed roofing contractor in Deerfield Beach, FL since 2005. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605."
+        titleOverride: "Roofing Company Deerfield Beach FL | All Phase USA",
+    descriptionOverride: "Deerfield Beach's top-rated roofing company since 2005. HVHZ-certified, 2,500+ projects. Free same-day inspection. Call (754) 227-5605."
   },
 
   // ALL OTHER CITIES (use template-based SEO)
