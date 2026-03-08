@@ -1,7 +1,7 @@
 /**
- * ═══════════════════════════════════════════════════════════════════════════
- * ⚠️  STRUCTURE LOCKED — DO NOT MODIFY WITHOUT SEO REVIEW
- * ═══════════════════════════════════════════════════════════════════════════
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+ * â ï¸  STRUCTURE LOCKED — DO NOT MODIFY WITHOUT SEO REVIEW
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
  *
  * This is a DYNAMIC TEMPLATE for city service area pages
  *
@@ -13,7 +13,7 @@
  *
  * This template serves multiple URLs dynamically from sheetSitemap.ts
  *
- * ═══════════════════════════════════════════════════════════════════════════
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
  */
 
 import { useParams, Link } from 'react-router-dom';
@@ -631,7 +631,7 @@ export default function ServiceAreaPage() {
                   <summary className="p-6 cursor-pointer font-semibold text-white hover:text-red-600 transition-colors flex justify-between items-center">
                     <span>{faq.question}</span>
                     <span className="text-red-600 text-xl group-open:rotate-180 transition-transform">
-                      ▼
+                      â¼
                     </span>
                   </summary>
                   <div className="px-6 pb-6 text-gray-300 leading-relaxed">
