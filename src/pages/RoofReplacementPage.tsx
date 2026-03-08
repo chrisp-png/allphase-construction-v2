@@ -735,22 +735,22 @@ export default function RoofReplacementPage() {
                     <h4 className="font-bold text-gray-900 mb-4">Related Services</h4>
                     <div className="space-y-2">
                       <a href="/roof-inspection" className="block text-red-600 hover:text-red-700 font-medium text-sm">
-                        â Professional Roof Inspection
+                        → Professional Roof Inspection
                       </a>
                       <a href="/roof-repair" className="block text-red-600 hover:text-red-700 font-medium text-sm">
-                        â Emergency Roof Repair
+                        → Emergency Roof Repair
                       </a>
                       <a href="/tile-roofing" className="block text-red-600 hover:text-red-700 font-medium text-sm">
-                        â Tile Roofing Installation
+                        → Tile Roofing Installation
                       </a>
                       <a href="/metal-roofing" className="block text-red-600 hover:text-red-700 font-medium text-sm">
-                        â Metal Roofing Systems
+                        → Metal Roofing Systems
                       </a>
                       <a href="/flat-roofing" className="block text-red-600 hover:text-red-700 font-medium text-sm">
-                        â Commercial Flat Roofing
+                        → Commercial Flat Roofing
                       </a>
                       <a href="/roof-cost-calculator" className="block text-red-600 hover:text-red-700 font-medium text-sm">
-                        â Roof Cost Calculator
+                        → Roof Cost Calculator
                       </a>
                     </div>
                   </div>
