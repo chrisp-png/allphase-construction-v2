@@ -1562,7 +1562,7 @@ function generateStaticFiles() {
       { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
       { name: 'Roof Replacement Process', url: 'https://allphaseconstructionfl.com/roof-replacement-process' }
     ]
-  }
+  },
   '/roof-replacement': {
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
