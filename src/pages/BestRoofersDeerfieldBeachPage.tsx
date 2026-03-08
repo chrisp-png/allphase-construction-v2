@@ -185,7 +185,7 @@ export default function BestRoofersDeerfieldBeachPage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-zinc-800">
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">â What to Look For</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">✅ What to Look For</th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-white">ð© Red Flags</th>
                   </tr>
                 </thead>
