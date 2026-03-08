@@ -1,7 +1,7 @@
 /**
- * ═══════════════════════════════════════════════════════════════════════════
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
  * Service Areas Hub Page
- * ═══════════════════════════════════════════════════════════════════════════
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
  *
  * CANONICAL Service Areas Hub - This is the primary service areas listing page.
  * Footer link "View All Service Areas" points here.
@@ -225,7 +225,7 @@ export default function ServiceAreasHubPage() {
             className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-center justify-between group hover:bg-red-950/50 hover:border-red-600 transition-all duration-300 cursor-pointer"
           >
             <div className="flex items-start gap-3">
-              <span className="text-red-500 text-xl mt-0.5">📍</span>
+              <span className="text-red-500 text-xl mt-0.5">ð</span>
               <p className="text-zinc-300 text-sm">
                 <span className="text-red-500 font-semibold group-hover:text-red-400 transition-colors">Deerfield Beach</span>
                 {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info. The grid below covers all other Broward County service areas.
