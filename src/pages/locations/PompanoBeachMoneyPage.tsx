@@ -795,7 +795,7 @@ export default function PompanoBeachMoneyPage() {
                   Our Deerfield Beach headquarters positions us to serve Pompano Beach and surrounding communities with rapid response times for both emergency repairs and scheduled services. We maintain a fleet of fully-equipped service vehicles, employ certified roofing professionals, and utilize advanced equipment that enables us to handle projects of any size or complexity with equal expertise.
                 </p>
                 <p>
-                  What sets us apart is our comprehensive approach to roofing. We don't simply install roofsâwe provide complete roofing solutions that address your property's specific needs, climate challenges, and aesthetic goals. Our team includes specialists in residential and commercial roofing, HVHZ installations, flat roofing systems, and historic restoration, ensuring expert guidance regardless of your project requirements.
+                  What sets us apart is our comprehensive approach to roofing. We don't simply install roofs—we provide complete roofing solutions that address your property's specific needs, climate challenges, and aesthetic goals. Our team includes specialists in residential and commercial roofing, HVHZ installations, flat roofing systems, and historic restoration, ensuring expert guidance regardless of your project requirements.
                 </p>
                 <p>
                   Quality materials form the foundation of every lasting roof. We maintain certified installer status with leading manufacturers including GAF, CertainTeed, Owens Corning, TAMKO, Eagle Roofing, and Boral, providing access to premium products backed by industry-leading warranties. Our manufacturer partnerships also ensure we stay current with the latest roofing technologies and installation techniques.
@@ -807,7 +807,7 @@ export default function PompanoBeachMoneyPage() {
                   From initial consultation through final inspection and beyond, we maintain clear communication and professional standards. Our project managers keep you informed of progress, our crews respect your property, and our quality control processes ensure every detail meets our exacting standards. We stand behind our work with comprehensive warranties and responsive service.
                 </p>
                 <p>
-                  For homeowners in Pompano Beach seeking reliable roofing services, emergency repairs, or planning future roof replacement, All Phase Construction USA delivers the expertise, professionalism, and quality craftsmanship your property deserves. Contact us today at (754) 227-5605 for your free consultation and inspection. Let us show you why Pompano Beach residents trust us with their most important investmentâprotecting their property from above.
+                  For homeowners in Pompano Beach seeking reliable roofing services, emergency repairs, or planning future roof replacement, All Phase Construction USA delivers the expertise, professionalism, and quality craftsmanship your property deserves. Contact us today at (754) 227-5605 for your free consultation and inspection. Let us show you why Pompano Beach residents trust us with their most important investment—protecting their property from above.
                 </p>
               </div>
             </div>
