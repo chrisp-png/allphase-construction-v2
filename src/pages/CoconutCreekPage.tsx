@@ -301,7 +301,7 @@ export default function CoconutCreekPage() {
                 <div key={index} className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
                   <div className="mb-4">
                     <div className="flex text-red-500 mb-2">
-                      {'★★★★★'.split('').map((star, i) => (
+                      {'âââââ'.split('').map((star, i) => (
                         <span key={i}>{star}</span>
                       ))}
                     </div>
