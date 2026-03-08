@@ -372,19 +372,19 @@ export default function TamaracMoneyPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">What Tamarac Homeowners Say</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <div className="flex text-red-500 mb-2">{'★★★★★'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
+                <div className="flex text-red-500 mb-2">{'âââââ'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
                 <p className="text-zinc-400 leading-relaxed mb-4">"Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!"</p>
                 <p className="text-white font-semibold">— Michael R.</p>
                 <p className="text-zinc-500 text-sm">Tamarac Homeowner</p>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <div className="flex text-red-500 mb-2">{'★★★★★'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
+                <div className="flex text-red-500 mb-2">{'âââââ'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
                 <p className="text-zinc-400 leading-relaxed mb-4">"We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship."</p>
                 <p className="text-white font-semibold">— Jennifer L.</p>
                 <p className="text-zinc-500 text-sm">Broward County</p>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
-                <div className="flex text-red-500 mb-2">{'★★★★★'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
+                <div className="flex text-red-500 mb-2">{'âââââ'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
                 <p className="text-zinc-400 leading-relaxed mb-4">"All Phase found structural damage under our old roof that two other contractors missed. They fixed everything under one contract and the new roof passed inspection first try. Worth every penny to have a contractor with both licenses."</p>
                 <p className="text-white font-semibold">— Robert M.</p>
                 <p className="text-zinc-500 text-sm">Mainlands Homeowner</p>
