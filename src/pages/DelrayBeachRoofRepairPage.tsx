@@ -776,14 +776,14 @@ export default function DelrayBeachRoofRepairPage() {
                 to="/locations/delray-beach"
                 className="text-red-600 hover:text-red-500 transition-colors font-medium"
               >
-                View all Delray Beach roofing services →
+                View all Delray Beach roofing services
               </Link>
               <span className="hidden sm:inline text-zinc-600">|</span>
               <Link
                 to="/locations/service-areas"
                 className="text-red-600 hover:text-red-500 transition-colors font-medium"
               >
-                View all service areas →
+                View all service areas
               </Link>
             </div>
           </div>
@@ -846,7 +846,7 @@ export default function DelrayBeachRoofRepairPage() {
                 >
                   <h3 className="text-white font-semibold mb-2">{resource.title}</h3>
                   <span className="text-red-500 text-sm hover:text-red-400 transition-colors">
-                    Read more →
+                    Read more
                   </span>
                 </Link>
               ))}

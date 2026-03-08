@@ -191,7 +191,7 @@ export default function CalculatorLeadCapture({
             pointerEvents: 'auto'
           }}
         >
-          Get My Estimate →
+          Get My Estimate
         </button>
 
         <p className="text-gray-500 text-sm text-center">

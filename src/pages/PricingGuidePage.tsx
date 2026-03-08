@@ -686,7 +686,7 @@ export default function PricingGuidePage() {
                     to="/easy-payments/"
                     className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors"
                   >
-                    Learn about our financing options →
+                    Learn about our financing options
                   </Link>
                 </div>
               </div>

@@ -156,7 +156,7 @@ export default function JupiterRoofRepairPage() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <a href={EXTERNAL_LINKS.GOOGLE_REVIEWS} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300 font-semibold">See All Our Google Reviews →</a>
+          <a href={EXTERNAL_LINKS.GOOGLE_REVIEWS} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300 font-semibold">See All Our Google Reviews</a>
         </div>
       </section>
 
@@ -177,8 +177,8 @@ export default function JupiterRoofRepairPage() {
       <section className="px-6 py-12 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-6">Related Jupiter Roofing Services</h2>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link to="/locations/jupiter" className="text-red-400 hover:text-red-300 font-semibold">Jupiter Roofing Contractor →</Link>
-          <Link to="/roof-inspection/jupiter" className="text-red-400 hover:text-red-300 font-semibold">Jupiter Roof Inspection →</Link>
+          <Link to="/locations/jupiter" className="text-red-400 hover:text-red-300 font-semibold">Jupiter Roofing Contractor</Link>
+          <Link to="/roof-inspection/jupiter" className="text-red-400 hover:text-red-300 font-semibold">Jupiter Roof Inspection</Link>
         </div>
       </section>
 

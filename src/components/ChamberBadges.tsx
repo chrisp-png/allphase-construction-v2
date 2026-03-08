@@ -70,7 +70,7 @@ export default function ChamberBadges() {
             rel="noopener noreferrer"
             className="text-red-600 hover:text-red-500 text-sm font-medium inline-flex items-center gap-1 transition-colors"
           >
-            View our Chamber profile →
+            View our Chamber profile
           </a>
         </div>
 

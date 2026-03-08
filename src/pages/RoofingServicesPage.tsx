@@ -332,7 +332,7 @@ export default function RoofingServicesPage() {
                 to="/locations/service-areas"
                 className="inline-flex items-center gap-2 text-red-500 font-semibold hover:text-red-400 transition-colors"
               >
-                View all service areas →
+                View all service areas
               </Link>
             </div>
           </div>

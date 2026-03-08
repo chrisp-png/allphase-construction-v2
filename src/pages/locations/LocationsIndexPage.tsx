@@ -105,7 +105,7 @@ export default function LocationsIndexPage() {
                       to="/locations/"
                       className="text-sm text-gray-400 hover:text-[#C5A572] transition-colors underline"
                     >
-                      See all service areas →
+                      See all service areas
                     </Link>
                   </div>
                 </div>

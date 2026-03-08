@@ -377,7 +377,7 @@ export default function NorthLauderdalePage() {
               <p className="text-zinc-400 mb-4">
                 Get a ballpark estimate for your North Lauderdale roofing project
               </p>
-              <span className="text-red-500 font-semibold">Calculate Now →</span>
+              <span className="text-red-500 font-semibold">Calculate Now</span>
             </Link>
             <Link
               href="https://allphaseconstructionfl.com/roof-cost-calculator/#finance-calculator"
@@ -387,7 +387,7 @@ export default function NorthLauderdalePage() {
               <p className="text-zinc-400 mb-4">
                 Explore monthly payment options for your roofing project
               </p>
-              <span className="text-red-500 font-semibold">View Options →</span>
+              <span className="text-red-500 font-semibold">View Options</span>
             </Link>
           </div>
         </div>

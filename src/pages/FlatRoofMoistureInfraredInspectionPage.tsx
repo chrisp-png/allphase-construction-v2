@@ -1443,7 +1443,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
           </div>
 
           <div className="bg-gradient-to-br from-zinc-950 to-zinc-900 border-2 border-zinc-800 rounded-2xl p-10">
-            <h3 className="text-2xl font-bold text-white mb-6">The Complete Process: Diagnosis → Planning → Remediation</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">The Complete Process: Diagnosis {'\u2192'} Planning {'\u2192'} Remediation</h3>
 
             <div className="space-y-8">
               <div>

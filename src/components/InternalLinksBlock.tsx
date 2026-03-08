@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { Wrench, Home, FileSearch, MapPin } from 'lucide-react';
 
 interface InternalLink {
@@ -112,8 +113,8 @@ export default function InternalLinksBlock({
         <div className="mt-6 pt-6 border-t border-gray-700">
           <p className="text-gray-400 text-sm">
             Serving {currentCity} and surrounding communities with professional roofing services.
-            <Link to="/contact/" className="text-red-600 hover:text-red-500 ml-1">
-              Contact us for a free estimate →
+            <Link to="/contact/" className="text-red-600 hover:text-red-500 ml-1 inline-flex items-center gap-1">
+              Contact us for a free estimate <ArrowRight size={14} />
             </Link>
           </p>
         </div>

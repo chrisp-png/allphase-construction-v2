@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Linkedin, ArrowRight } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -315,8 +315,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pt-2 mt-2 border-t border-neutral-800">
-                <Link to="/sitemap/#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium">
-                  View All Cities â
+                <Link to="/sitemap/#palm-beach-county" className="hover:text-red-600 transition-colors hover:underline font-medium inline-flex items-center gap-1">
+                  View All Cities <ArrowRight size={14} />
                 </Link>
               </li>
             </ul>

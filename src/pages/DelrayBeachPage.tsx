@@ -386,7 +386,7 @@ export default function DelrayBeachPage() {
                   >
                     <h3 className="text-white font-semibold mb-2">{resource.title}</h3>
                     <span className="text-red-500 text-sm hover:text-red-400 transition-colors">
-                      Read more →
+                      Read more
                     </span>
                   </Link>
                 ))}
@@ -468,7 +468,7 @@ export default function DelrayBeachPage() {
                   to="/locations/service-areas"
                   className="text-red-500 hover:text-red-400 transition-colors"
                 >
-                  View all service areas →
+                  View all service areas
                 </Link>
               </div>
             </div>
