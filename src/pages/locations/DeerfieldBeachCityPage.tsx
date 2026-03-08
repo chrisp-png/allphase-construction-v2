@@ -122,7 +122,7 @@ export default function DeerfieldBeachCityPage() {
             <div className="flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 bg-gray-700/50 text-[#C5A572] px-4 py-2 rounded-full text-sm font-semibold mb-6 w-fit">
                 <MapPin className="w-4 h-4" />
-                Deerfield Beach, FL â Broward County HQ
+                Deerfield Beach, FL — Broward County HQ
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -130,18 +130,18 @@ export default function DeerfieldBeachCityPage() {
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
-                We diagnose before we quote. Every project starts with a free inspection-first assessment â no pressure, no obligation.
+                We diagnose before we quote. Every project starts with a free inspection-first assessment — no pressure, no obligation.
               </p>
 
                             {/* Credential Box */}
               <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-[#C5A572] text-lg">ð¡</span>
+                  <span className="text-[#C5A572] text-lg">🛡</span>
                   <span className="text-white font-bold text-base">Dual-Licensed Roofing & General Contractor</span>
                 </div>
-                <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 â Florida Certified Roofing Contractor</div>
-                <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 â Certified General Contractor</div>
-                <div className="text-gray-400 text-xs">HVHZ Certified â¢ Serving South Florida Since 2005 â¢ 2,500+ Projects</div>
+                <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 — Florida Certified Roofing Contractor</div>
+                <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 — Certified General Contractor</div>
+                <div className="text-gray-400 text-xs">HVHZ Certified • Serving South Florida Since 2005 • 2,500+ Projects</div>
                 <div className="flex items-center gap-3 mt-3 pt-3 border-t border-white/10">
                   <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified" width="40" height="40" loading="lazy" decoding="async" />
                   <span className="text-[#C5A572] text-xs font-medium">TRI Alliance Florida High Wind Certified</span>
@@ -157,14 +157,14 @@ export default function DeerfieldBeachCityPage() {
               {/* Gold Phone Number */}
               <div className="mt-5">
                 <a href="tel:7542275605" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">(754) 227-5605</a>
-                <p className="text-gray-400 text-sm mt-1">24/7 Emergency Service Available â¢ Free Estimates</p>
+                <p className="text-gray-400 text-sm mt-1">24/7 Emergency Service Available • Free Estimates</p>
               </div>
 
               {/* Proof Row */}
               <div className="flex flex-wrap items-center gap-6 text-gray-300 text-sm md:text-base mb-8">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                  <span className="font-medium">4.8 Rating â¢ 137+ Reviews</span>
+                  <span className="font-medium">4.8 Rating • 137+ Reviews</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-red-600" />
@@ -205,7 +205,7 @@ export default function DeerfieldBeachCityPage() {
 
               <form action="https://formspree.io/f/mzdbydvv" method="POST" className="space-y-4">
               <input type="hidden" name="source_page" value="Deerfield Beach Location Page" />
-              <input type="hidden" name="_subject" value="ð  Deerfield Beach Hero Form Submission" />
+              <input type="hidden" name="_subject" value="🏠 Deerfield Beach Hero Form Submission" />
 
               <div>
                 <label htmlFor="hero-full-name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -318,7 +318,7 @@ export default function DeerfieldBeachCityPage() {
               Introduction to Roofing Services
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Your roof is your home's first line of defense against the elements, making roofing services a top priority for every homeowner. Whether you're dealing with a leaky roof, need a thorough roof inspection, or are considering a full roof replacement, working with a highly skilled contractor is essential. You may want a licensed professional to inspect your roof when you're buying or selling a home. Professional roofing services cover everything from minor roof repair to the installation of a brand new roof, ensuring that every job is completed to the highest quality standards. During a roof inspection, the professional will typically look for issues that may have occurred during installation and manufacturing. A reputable contractor will provide expert guidance, help you explore your optionsâincluding the ability to select specific roofing materials and system components to tailor the project to your needsâand ensure your roof is installed or repaired correctly the first time. If you're looking to find a reliable provider for your next roofing project, start by researching local contractors with a proven track record for quality and customer satisfaction. The right team will provide the services you need to protect your home and give you peace of mind.
+              Your roof is your home's first line of defense against the elements, making roofing services a top priority for every homeowner. Whether you're dealing with a leaky roof, need a thorough roof inspection, or are considering a full roof replacement, working with a highly skilled contractor is essential. You may want a licensed professional to inspect your roof when you're buying or selling a home. Professional roofing services cover everything from minor roof repair to the installation of a brand new roof, ensuring that every job is completed to the highest quality standards. During a roof inspection, the professional will typically look for issues that may have occurred during installation and manufacturing. A reputable contractor will provide expert guidance, help you explore your options—including the ability to select specific roofing materials and system components to tailor the project to your needs—and ensure your roof is installed or repaired correctly the first time. If you're looking to find a reliable provider for your next roofing project, start by researching local contractors with a proven track record for quality and customer satisfaction. The right team will provide the services you need to protect your home and give you peace of mind.
             </p>
           </div>
 
@@ -692,7 +692,7 @@ export default function DeerfieldBeachCityPage() {
               Storm Damage and Restoration in Deerfield Beach
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Living in Deerfield Beach means your roof is exposed to the threat of severe storms and hurricanes. When storm damage strikesâwhether it's missing shingles, leaks, or more extensive problemsâit's crucial to act quickly. A certified contractor can assess the extent of the damage, provide a clear quote for repairs, and help you develop a restoration plan tailored to your home's needs. They'll also guide you through the <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="underline hover:text-white">insurance claims process</Link>, ensuring you have the documentation required for a smooth experience. By choosing a qualified professional, you can be confident that your roof will be restored to its original condition, protecting your home and providing lasting peace of mind. Don't wait for small issues to become major headachesâfind a trusted contractor in Deerfield Beach to provide the expertise and support you need after a storm.
+              Living in Deerfield Beach means your roof is exposed to the threat of severe storms and hurricanes. When storm damage strikes—whether it's missing shingles, leaks, or more extensive problems—it's crucial to act quickly. A certified contractor can assess the extent of the damage, provide a clear quote for repairs, and help you develop a restoration plan tailored to your home's needs. They'll also guide you through the <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="underline hover:text-white">insurance claims process</Link>, ensuring you have the documentation required for a smooth experience. By choosing a qualified professional, you can be confident that your roof will be restored to its original condition, protecting your home and providing lasting peace of mind. Don't wait for small issues to become major headaches—find a trusted contractor in Deerfield Beach to provide the expertise and support you need after a storm.
             </p>
           </div>
 
@@ -761,7 +761,7 @@ export default function DeerfieldBeachCityPage() {
               Importance of Regular Roof Maintenance
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Regular roof maintenance is the key to preventing costly problems and extending the life of your roof. Scheduling a <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">professional roof inspection</Link> allows a contractor to perform a detailed assessment, identifying any issues before they escalate. With a tailored <Link to="/roof-maintenance-programs" className="underline hover:text-white">maintenance plan</Link>, you can ensure your roof remains in top condition year after year. Proactive inspections and timely repairs help protect your investment, prevent leaks, and avoid unexpected expenses. Don't overlook the importance of routine careâhave a qualified contractor provide regular inspections and maintenance to keep your roof performing at its best and your home protected.
+              Regular roof maintenance is the key to preventing costly problems and extending the life of your roof. Scheduling a <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">professional roof inspection</Link> allows a contractor to perform a detailed assessment, identifying any issues before they escalate. With a tailored <Link to="/roof-maintenance-programs" className="underline hover:text-white">maintenance plan</Link>, you can ensure your roof remains in top condition year after year. Proactive inspections and timely repairs help protect your investment, prevent leaks, and avoid unexpected expenses. Don't overlook the importance of routine care—have a qualified contractor provide regular inspections and maintenance to keep your roof performing at its best and your home protected.
             </p>
           </div>
 
@@ -771,7 +771,7 @@ export default function DeerfieldBeachCityPage() {
               Managing a Roofing Project in Deerfield Beach
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Managing a roofing project in Deerfield Beach starts with selecting a highly skilled contractor who specializes in roof repair and replacement. Homeowners should expect their contractor to thoroughly assess the roof and provide a detailed quote outlining the cost of materials, labor, and the scope of services. Before the project begins, it's important to review the contract and warranty to verify that the contractor is certified and authorized to deliver quality work. Throughout the job, clear communication is keyâyour contractor should keep you updated on progress and any changes to the plan. By working with a reputable professional, you can ensure that your roofing project is completed efficiently, meets all local standards, and results in a durable roof that will protect your home for years to come. Always prioritize quality and transparency to get the best value and peace of mind from your investment.
+              Managing a roofing project in Deerfield Beach starts with selecting a highly skilled contractor who specializes in roof repair and replacement. Homeowners should expect their contractor to thoroughly assess the roof and provide a detailed quote outlining the cost of materials, labor, and the scope of services. Before the project begins, it's important to review the contract and warranty to verify that the contractor is certified and authorized to deliver quality work. Throughout the job, clear communication is key—your contractor should keep you updated on progress and any changes to the plan. By working with a reputable professional, you can ensure that your roofing project is completed efficiently, meets all local standards, and results in a durable roof that will protect your home for years to come. Always prioritize quality and transparency to get the best value and peace of mind from your investment.
             </p>
           </div>
 
@@ -812,7 +812,7 @@ export default function DeerfieldBeachCityPage() {
                   Dual-Licensed Roofing Specialist
                 </h3>
                 <p className="text-gray-400">
-                  Our roofing projects are evaluated beyond surface installation â ensuring structural integrity, compliance, and long-term durability.
+                  Our roofing projects are evaluated beyond surface installation — ensuring structural integrity, compliance, and long-term durability.
                 </p>
               </div>
 
@@ -848,7 +848,7 @@ export default function DeerfieldBeachCityPage() {
                   Customer Focused
                 </h3>
                 <p className="text-gray-400">
-                  Clear communication, transparent estimates, and documented inspections â no pressure tactics.
+                  Clear communication, transparent estimates, and documented inspections — no pressure tactics.
                 </p>
               </div>
 
@@ -872,7 +872,7 @@ export default function DeerfieldBeachCityPage() {
           {/* Headquarters Location Map */}
           <div className="mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Deerfield Beach Headquarters â Serving Broward & Palm Beach Counties
+              Deerfield Beach Headquarters – Serving Broward & Palm Beach Counties
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-3xl">
               All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Established in 2006, our office serves as the operational base for roof inspections, roof repair, and roof replacement projects throughout Deerfield Beach, Boca Raton, and surrounding communities in Broward and Palm Beach Counties.
@@ -984,7 +984,7 @@ export default function DeerfieldBeachCityPage() {
               Warranty and Guarantee
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              When planning a roofing project, understanding the <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="underline hover:text-white">warranty</Link> and guarantee offered by your contractor is essential. A reputable contractor will provide a clear, comprehensive warranty that covers both materials and labor, giving you peace of mind throughout the life of your roof. This warranty ensures that if any issues arise, your investment is protected and the contractor will address problems promptly. Always review the warranty details before work begins, and don't hesitate to ask for clarification on what is and isn't covered. A strong warranty is a sign of a contractor's confidence in their work and their commitment to qualityâmake it a priority when selecting your roofing partner.
+              When planning a roofing project, understanding the <Link to="/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not" className="underline hover:text-white">warranty</Link> and guarantee offered by your contractor is essential. A reputable contractor will provide a clear, comprehensive warranty that covers both materials and labor, giving you peace of mind throughout the life of your roof. This warranty ensures that if any issues arise, your investment is protected and the contractor will address problems promptly. Always review the warranty details before work begins, and don't hesitate to ask for clarification on what is and isn't covered. A strong warranty is a sign of a contractor's confidence in their work and their commitment to quality—make it a priority when selecting your roofing partner.
             </p>
           </div>
 
@@ -1044,13 +1044,13 @@ export default function DeerfieldBeachCityPage() {
             </h3>
             <div className="flex flex-wrap items-center justify-center gap-2 text-gray-400">
               <Link to="/locations/boca-raton" className="hover:text-red-500 transition-colors">Boca Raton</Link>
-              <span className="text-gray-600">â¢</span>
+              <span className="text-gray-600">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-500 transition-colors">Pompano Beach</Link>
-              <span className="text-gray-600">â¢</span>
+              <span className="text-gray-600">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-500 transition-colors">Coral Springs</Link>
-              <span className="text-gray-600">â¢</span>
+              <span className="text-gray-600">•</span>
               <Link to="/locations/coconut-creek" className="hover:text-red-500 transition-colors">Coconut Creek</Link>
-              <span className="text-gray-600">â¢</span>
+              <span className="text-gray-600">•</span>
               <Link to="/locations/parkland" className="hover:text-red-500 transition-colors">Parkland</Link>
             </div>
           </div>
