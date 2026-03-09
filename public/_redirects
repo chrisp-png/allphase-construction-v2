@@ -276,6 +276,16 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # Sitemap canonicalization
 /sitemap/  /sitemap  301!
 /sitemap.html  /sitemap  301!
+# Ghost URLs bleeding GSC impressions
+/ventilation/  /residential-roofing  301!
+/publications/  /blog  301!
+/newsletters/  /blog  301!
+/maintenance/  /roof-maintenance-programs  301!
+/fort-lauderdale  /locations/fort-lauderdale  301!
+/delray-beach  /locations/delray-beach  301!
+/loxahatchee  /locations/west-palm-beach  301!
+/residential-roofing/roof-replacement-process  /roof-replacement-process  301!
+/sitemap  /sitemap.xml  301!
 
 /blog/*/ /blog/:splat 301!
 /* /index.html 200
