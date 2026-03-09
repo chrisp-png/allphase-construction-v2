@@ -58,7 +58,7 @@ export default function CalculatorPage() {
           "name": "Does it matter how long a roofing company has been in business?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Longevity often signals that a company has stable crews, repeatable installation processes, and accountability after the job is done. Roofing problems don't always show up on day one–so choosing a company with a proven history can reduce the risk of callbacks, ongoing leaks, and \"can't get them back out here\" situations."
+            "text": "Yes. Longevity often signals that a company has stable crews, repeatable installation processes, and accountability after the job is done. Roofing problems don't always show up on day one–so choosing a company with a proven history can reduce the risk of callbacks, ongoing leaks, and "can't get them back out here" situations."
           }
         },
         {
