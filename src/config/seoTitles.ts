@@ -144,12 +144,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/west-palm-beach/best-roofers-west-palm-beach': {
     title: 'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
-    description: 'Looking for the best roofers in West Palm Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    description: 'Looking for the best roofers in West Palm Beach? Top 5 HVHZ-compliant roofing contractors in Palm Beach County reviewed. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach'
   },
   '/locations/boca-raton/best-roofers-boca-raton': {
     title: 'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
-    description: 'Looking for the best roofers in Boca Raton? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    description: 'Looking for the best roofers in Boca Raton? Top 5 HVHZ-compliant roofing contractors in Palm Beach County reviewed. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton'
   },
   '/locations/coral-springs/best-roofers-coral-springs': {
@@ -179,7 +179,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/gulf-stream': {
     title: 'Gulf Stream Roofing Contractor | All Phase Construction USA',
-    description: 'HVHZ-certified roofing in Gulf Stream, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. Call (754) 227-5605.',
+    description: 'HVHZ-certified roofing in Gulf Stream, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/gulf-stream',
   },
   '/locations/jupiter': {
@@ -189,7 +189,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/lake-worth-beach': {
     title: 'Lake Worth Beach Roofing Contractor | All Phase Construction USA',
-    description: 'HVHZ-certified roofing in Lake Worth Beach, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. Call (754) 227-5605.',
+    description: 'HVHZ-certified roofing in Lake Worth Beach, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach',
   },
   '/locations/loxahatchee-groves': {
@@ -199,7 +199,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/pembroke-park': {
     title: 'Pembroke Park Roofing Contractor | All Phase Construction USA',
-    description: 'HVHZ-certified roofing in Pembroke Park, FL. Tile, metal & shingle. Licensed Broward County contractor. Free inspection. Call (754) 227-5605.',
+    description: 'HVHZ-certified roofing in Pembroke Park, FL. Tile, metal & shingle. Licensed Broward County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
   },
   '/roof-repair/fort-lauderdale': {
@@ -352,7 +352,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     // Fallback if location not found in locations.ts
     return {
       title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
-      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection. Call (754) 227-5605.`,
+      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
     };
   }
@@ -363,7 +363,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${cityName} Roof Repair | All Phase USA`,
-            description: `Roof repair in ${cityName}, FL Ã¢ storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. Call (754) 227-5605.`,
+            description: `Roof repair in ${cityName}, FL Ã¢ storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
       ogTitle: `${cityName} Roof Repair | All Phase USA`,
             ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
