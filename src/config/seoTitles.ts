@@ -9,7 +9,7 @@
  * Single source of truth for all page titles.
  *
  * NOTE: /locations/:slug pages use src/data/locations.ts and src/lib/locationSeo.ts
- */
+ */h
 
 import { getLocationBySlug } from '../data/locations';
 import { buildLocationSeo } from '../lib/locationSeo';
