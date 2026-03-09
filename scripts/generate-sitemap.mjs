@@ -99,11 +99,16 @@ function removeTrailingSlash(urlPath) {
 
 console.log('Generating Clean Canonical Sitemap...\n');
 
-// Initialize Supabase client
-const supabase = createClient(
-  process.env.VITE_SUPABASE_URL,
-  process.env.VITE_SUPABASE_ANON_KEY
-);
+// Initialize Supabase client (optional - gracefully skip if credentials missing)
+let supabase = null;
+if (process.env.VITE_SUPABASE_URL && process.env.VITE_SUPABASE_ANON_KEY) {
+  supabase = createClient(
+    process.env.VITE_SUPABASE_URL,
+    process.env.VITE_SUPABASE_ANON_KEY
+  );
+} else {
+  console.warn('⚠️  Supabase credentials not found. Skipping blog post fetch from database.\n');
+}
 
 // Read and parse the sheetSitemap.ts file
 const sitemapPath = path.join(__dirname, '../src/data/sheetSitemap.ts');
@@ -155,17 +160,23 @@ try {
 }
 
 // Fetch blog posts from Supabase
-console.log('Fetching blog posts from Supabase...');
-const { data: dbBlogPosts, error } = await supabase
-  .from('blog_posts')
-  .select('slug, published_date')
-  .eq('published', true)
-  .order('published_date', { ascending: false });
+let dbBlogPosts = null;
+if (supabase) {
+  console.log('Fetching blog posts from Supabase...');
+  const { data, error } = await supabase
+    .from('blog_posts')
+    .select('slug, published_date')
+    .eq('published', true)
+    .order('published_date', { ascending: false });
 
-if (error) {
-  console.error('Error fetching blog posts:', error.message);
+  if (error) {
+    console.error('Error fetching blog posts:', error.message);
+  } else {
+    dbBlogPosts = data;
+    console.log(`Fetched ${dbBlogPosts.length} published blog posts from database\n`);
+  }
 } else {
-  console.log(`Fetched ${dbBlogPosts.length} published blog posts from database\n`);
+  console.log('Skipping Supabase blog post fetch (no credentials).\n');
 }
 
 // Merge blog posts from both sources (avoid duplicates)
