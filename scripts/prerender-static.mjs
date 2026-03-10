@@ -926,6 +926,376 @@ function generateRoofInspectionContent(cityName, citySlug) {
 
 
 /**
+ * CUSTOM: Shingle Roofing Page - /shingle-roofing
+ * Rich prerender content matching ShingleRoofingPage.tsx (1,256 lines)
+ */
+function generateShingleRoofingContent() {
+  return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem; background: white; color: #111827;">
+  <h1 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem; line-height: 1.2;">
+    Shingle Roofing Done Right — With Documentation That Saves You Money on Insurance
+  </h1>
+
+  <p style="font-size: 1.25rem; color: #374151; line-height: 1.75; margin-bottom: 2rem;">
+    Most shingle roofs in South Florida are installed to minimum code — then forgotten. We upgrade underlayments, address ventilation, and document everything during installation. That documentation translates directly into insurance discounts you won't get from a typical roofer.
+  </p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <p style="font-size: 1.125rem; font-weight: 600; color: #991b1b; margin-bottom: 0.5rem;">
+      Free Shingle Roof Consultation: <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+    <p style="color: #374151; line-height: 1.75;">
+      Licensed roofing contractor serving Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    The Real Problem: Thermal Shock Damage in South Florida
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Asphalt shingles in South Florida face a brutal reality: <strong>surface temperatures exceeding 160°F during summer months</strong>. But the real damage doesn't come from the sun alone — it's the combination of radiant heat from above and superheated attic air from below that creates thermal shock conditions.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    When your attic becomes a <strong>furnace (140°F+ in poorly ventilated spaces)</strong>, asphalt shingles are literally cooked from both sides. This accelerates granule loss, causes premature brittleness, and reduces your shingle roof's expected lifespan by <strong>30-50%</strong> compared to moderate climates.
+  </p>
+
+  <div style="background: #fffbeb; border: 2px solid #f59e0b; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #92400e; margin-bottom: 0.75rem;">Why Most Contractors Skip This</h3>
+    <p style="color: #374151; line-height: 1.75;">
+      Proper attic ventilation requires soffit vents, ridge vents, and sometimes powered exhaust fans. It adds cost and complexity. Most contractors install the bare minimum required by code, then move on to the next job. The shingles look fine at installation — but the accelerated aging starts immediately.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Installation Quality: What Actually Matters
+  </h2>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    1. Six-Nail Patterns vs. Four-Nail Shortcuts
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Florida Building Code requires six nails per shingle in high-wind areas and on steep slopes (7:12 pitch or greater). But here's the catch: four nails will pass inspection on most residential roofs. Contractors rushing through jobs stick with four nails because it's 33% faster.
+  </p>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The consequence?</strong> Reduced wind resistance. In a Category 3 hurricane, those missing nails are the difference between minor uplift damage and catastrophic shingle blow-off.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    2. Proper Deck Re-Nailing (The Hidden Requirement)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    When you replace a shingle roof, Florida's HVHZ requirements mandate that the roof deck itself must be re-nailed to current standards — typically 8d ring-shank nails at 6 inches on-center along the perimeter and 12 inches in the field.
+  </p>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Why contractors skip it:</strong> You can't see deck attachment once the roof is on. It's labor-intensive. And building inspectors don't tear off your new roof to verify it was done. But that deck attachment is what keeps your entire roof structure from separating during extreme wind events.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    3. Premium Underlayment Upgrades
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Code requires basic #30 felt or synthetic underlayment. But a <strong>self-adhered secondary water barrier</strong> (applied at eaves, valleys, and penetrations) provides real protection if shingles blow off during a storm — and qualifies you for significant insurance discounts.
+  </p>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Here's the problem:</strong> If you don't document this upgrade with photos during installation, a wind mitigation inspector visiting your completed roof marks "unknown" on the OIR-B1-1802 form. That means no insurance discount — even though you paid for the upgrade.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Wind Mitigation Documentation: Why It Must Happen During Installation
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Florida's wind mitigation inspection form (OIR-B1-1802) asks about roof deck attachment, secondary water barrier, roof-to-wall connections, and other features that <strong>cannot be verified once the roof is complete</strong>.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Most homeowners hire an inspector after the roof is done. The inspector takes photos of the finished roof, shrugs, and marks "unknown" for anything they can't see. You lose thousands in potential insurance savings.
+  </p>
+
+  <div style="background: #dcfce7; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #166534; margin-bottom: 0.75rem;">How We Handle It</h3>
+    <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+      We photograph every wind mitigation feature <strong>during installation</strong> — before it's covered up. That includes:
+    </p>
+    <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+      <li>Roof deck attachment with ring-shank nails at code-required spacing</li>
+      <li>Secondary water barrier application at eaves and valleys</li>
+      <li>Hurricane straps and clips connecting roof to walls</li>
+      <li>Proper flashing details at penetrations and transitions</li>
+    </ul>
+    <p style="color: #374151; line-height: 1.75;">
+      You receive this documentation package at project completion. Hand it to your wind mitigation inspector or insurance agent — they mark "verified" instead of "unknown," and your premium drops accordingly.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Dual Licensing Matters for Shingle Roofs
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction USA holds both <strong>State Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses. Here's why that matters for your shingle roof:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Structural Assessment:</strong> A CCC-only contractor can replace your roof. But if there's truss damage, inadequate framing, or structural concerns, they must stop work and call a general contractor. We handle both — no project delays.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Permit Authority:</strong> CGC licensing gives us broader permit-pulling authority, which matters when structural repairs coincide with roof replacement.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Insurance Claims:</strong> When insurance companies dispute structural vs. roofing damage, dual licensing means we can provide authoritative assessment and complete repairs under one scope.</li>
+  </ul>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Shingle Roofing Investment Range
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Residential shingle roof replacement in Broward and Palm Beach Counties typically ranges from <strong>$15,000 to $50,000+</strong> depending on:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li>Home size and roof complexity (hip vs. gable, pitch, valleys)</li>
+    <li>Shingle grade (architectural vs. luxury vs. Class 4 impact-rated)</li>
+    <li>Underlayment upgrades (basic synthetic vs. premium self-adhered)</li>
+    <li>Deck condition and required re-nailing/replacement</li>
+    <li>Ventilation system upgrades (soffit vents, ridge vents, attic fans)</li>
+    <li>HVHZ compliance features and documentation</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    We provide transparent, itemized estimates showing exactly what you're paying for — including the upgrades that will save you money on insurance.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Related Roofing Services
+  </h2>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Professional Roof Inspection</a> — Comprehensive 21-point evaluation including ventilation assessment and HVHZ compliance verification</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Emergency Roof Repair</a> — Shingle blow-off, leak detection, flashing repair, and storm damage restoration</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/residential-roofing" style="color: #dc2626; text-decoration: underline;">Residential Roofing Services</a> — Complete home roofing solutions for South Florida properties</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Roof Replacement Process</a> — What to expect during your shingle roof replacement project</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a> — Compare metal vs. shingle performance for South Florida hurricanes</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a> — Concrete and clay tile installation with HVHZ compliance</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border: 2px solid #dc2626; padding: 2rem; margin: 3rem 0; border-radius: 8px; text-align: center;">
+    <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+      Schedule Your Free Shingle Roof Consultation
+    </h3>
+    <p style="font-size: 1.125rem; color: #374151; margin-bottom: 1.5rem;">
+      Licensed roofing contractor serving Broward County and Palm Beach County. CCC-1331464 | CGC-1526236
+    </p>
+    <p style="font-size: 1.5rem; font-weight: bold; color: #dc2626;">
+      Call <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * CUSTOM: Metal Roofing Page - /metal-roofing
+ * Rich prerender content matching MetalRoofingPage.tsx (1,240 lines)
+ */
+function generateMetalRoofingContent() {
+  return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem; background: white; color: #111827;">
+  <h1 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem; line-height: 1.2;">
+    Metal Roofing That's Actually Engineered for South Florida Hurricanes
+  </h1>
+
+  <p style="font-size: 1.25rem; color: #374151; line-height: 1.75; margin-bottom: 2rem;">
+    Not all metal roofs are created equal. The difference between a roof that survives a Category 5 and one that peels off in a tropical storm comes down to details most contractors skip: gauge thickness, clip spacing, seam type, and how thermal expansion is managed. We build metal roofs that perform.
+  </p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <p style="font-size: 1.125rem; font-weight: 600; color: #991b1b; margin-bottom: 0.5rem;">
+      Free Metal Roof Consultation: <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+    <p style="color: #374151; line-height: 1.75;">
+      HVHZ-certified metal roofing contractor. Licensed in Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Metal Roofing Performance Varies So Widely in Florida
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Metal roofs in South Florida face two extreme forces that work against each other: <strong>175+ mph hurricane winds</strong> trying to tear the roof off, and <strong>daily thermal expansion cycles</strong> from temperature swings of 80°F or more between night and day.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    A metal roof must be anchored tightly enough to resist wind uplift — but flexible enough to expand and contract without tearing fasteners loose or buckling panels. This is <strong>engineering, not installation</strong>. And most roofing contractors don't understand the difference.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Standing Seam vs. Exposed Fastener: What Actually Matters
+  </h2>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Standing Seam Metal Roofing (The Premium Choice)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Standing seam systems use <strong>concealed clips</strong> that allow panels to float and expand without stressing fasteners. The panels are mechanically seamed or snapped together, creating continuous waterproof ribs that run from ridge to eave.
+  </p>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Why it performs better:</strong> The clips are attached to the roof deck, but the panels themselves slide within the clip as they expand. This means thermal stress doesn't transfer to fasteners. Wind uplift is resisted by the continuous seam — not individual screws.
+  </p>
+
+  <div style="background: #dcfce7; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #166534; margin-bottom: 0.5rem;">Standing Seam Wind Rating</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      Properly installed standing seam metal roofs are rated for <strong>150-200+ mph wind speeds</strong> when using 24-gauge or thicker panels with clips spaced per engineering specifications. This exceeds South Florida's 175 mph HVHZ requirements with margin to spare.
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Exposed Fastener Systems (Budget-Friendly Alternative)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Exposed fastener metal roofs use screws driven directly through the panels into the roof deck. They're less expensive, faster to install, and suitable for many applications — but require more maintenance and careful fastener selection.
+  </p>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The thermal expansion problem:</strong> As panels expand and contract, they move against the screws. If screws are over-tightened or rubber washers degrade, you get leaks. This is why exposed fastener roofs require periodic fastener inspection and re-sealing.
+  </p>
+
+  <div style="background: #fffbeb; border: 2px solid #f59e0b; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #92400e; margin-bottom: 0.5rem;">When Exposed Fastener Makes Sense</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      For budget-conscious projects, agricultural buildings, sheds, or structures where maintenance access is easy, exposed fastener systems perform well. We use high-quality stainless steel fasteners with EPDM washers and proper panel gauge to maximize lifespan.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Material Gauge: Why Thicker Actually Matters
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Metal roofing panels are measured in gauge (lower number = thicker metal). The most common residential options are:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>29-gauge:</strong> Economy-grade. Suitable for small residential applications with minimal foot traffic. More susceptible to denting from hail or debris.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>26-gauge:</strong> Standard residential. Good balance of cost and durability. Handles moderate foot traffic and resists most storm debris.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>24-gauge:</strong> Premium residential. Significantly more dent-resistant. Recommended for areas with large trees or high hail risk.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>22-gauge:</strong> Commercial-grade. Rarely necessary for residential, but used where extreme durability is required.</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Here's what contractors won't tell you:</strong> Thinner panels cost less and install faster. A 29-gauge roof might be $2-3 per square foot cheaper than 24-gauge — but it will dent during the first moderate hailstorm, and wind uplift resistance drops proportionally.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Clip Spacing and Fastener Schedules: The Engineering Detail That Matters Most
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Standing seam metal roofs rely on clips to resist wind uplift. Manufacturer specifications require specific clip spacing based on wind zone, roof slope, and panel width. In South Florida's HVHZ, that typically means:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>12-inch clip spacing</strong> in the field of the roof</li>
+    <li style="margin-bottom: 0.5rem;"><strong>6-inch clip spacing</strong> within 4 feet of perimeter edges (wind uplift zone)</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Enhanced fastening</strong> at corners and ridges where wind forces concentrate</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The problem:</strong> Clips cost money and slow installation. Contractors cutting corners will space clips at 18 or 24 inches, which voids the manufacturer warranty and dramatically reduces wind resistance. You won't know until a hurricane tests it.
+  </p>
+
+  <div style="background: #fee2e2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">How to Verify Proper Installation</h3>
+    <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+      Ask your contractor for the <strong>engineering specifications</strong> matching your roof's wind zone and slope. Then physically count clips during installation. If the spacing doesn't match specs, your roof isn't hurricane-rated — regardless of what the contract says.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Coating and Finish: Kynar 500 vs. Polyester
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Metal roofing panels use either <strong>Kynar 500 (PVDF)</strong> or <strong>polyester</strong> paint coatings. The difference is dramatic:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Kynar 500:</strong> Premium resin-based coating. Resists UV degradation, chalk, and color fade for 30+ years. Required for manufacturer warranties exceeding 25 years.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Polyester (SMP):</strong> Budget coating. Fades noticeably within 10-15 years in Florida's intense UV exposure. Suitable for structures where appearance isn't critical.</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    For residential applications where you care about curb appeal and resale value, <strong>Kynar 500 is worth the 10-15% premium</strong>. Polyester roofs look aged and faded within a decade.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Dual Licensing Matters for Metal Roofing
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction USA holds both <strong>State Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses. This dual licensing is especially important for metal roofing because:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Structural Load Assessment:</strong> Metal roofs are significantly lighter than tile (2-3 lbs/sq ft vs. 10-12 lbs/sq ft). When replacing tile with metal, structural modification may be needed. Our CGC license allows us to perform these assessments and modifications in-house.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Engineering Calculations:</strong> Proper clip spacing and fastener schedules require load calculations. General contractor licensing includes structural expertise that pure roofing contractors lack.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Complex Integration:</strong> Metal roofs interacting with solar panel mounts, HVAC penetrations, or structural additions require both roofing and general construction knowledge.</li>
+  </ul>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Metal Roofing Investment Range
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Residential metal roof installation in Broward and Palm Beach Counties typically ranges from <strong>$18,000 to $65,000+</strong> depending on:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li>System type (standing seam vs. exposed fastener)</li>
+    <li>Material gauge (29-gauge vs. 24-gauge)</li>
+    <li>Coating quality (Kynar 500 vs. polyester)</li>
+    <li>Roof complexity (hip vs. gable, pitch, valleys)</li>
+    <li>Underlayment and insulation requirements</li>
+    <li>HVHZ engineering and enhanced fastening schedules</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Metal roofing costs more upfront than shingles but typically lasts <strong>50+ years with minimal maintenance</strong> — making it cost-effective over the building's lifetime.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Related Roofing Services
+  </h2>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Professional Roof Inspection</a> — Pre-installation structural assessment and metal roof condition evaluation</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Metal Roof Repair</a> — Fastener replacement, panel re-sealing, and storm damage restoration</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/residential-roofing" style="color: #dc2626; text-decoration: underline;">Residential Roofing Services</a> — Complete home roofing solutions for South Florida properties</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Roof Replacement Process</a> — What to expect during your metal roof installation project</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Shingle Roofing</a> — Compare metal vs. shingle cost and performance</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a> — Concrete and clay tile as an alternative to metal</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border: 2px solid #dc2626; padding: 2rem; margin: 3rem 0; border-radius: 8px; text-align: center;">
+    <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+      Schedule Your Free Metal Roof Consultation
+    </h3>
+    <p style="font-size: 1.125rem; color: #374151; margin-bottom: 1.5rem;">
+      HVHZ-certified metal roofing contractor. Licensed in Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+    <p style="font-size: 1.5rem; font-weight: bold; color: #dc2626;">
+      Call <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * CUSTOM: Roofing Services Page - /roofing-services
  * Rich prerender content matching RoofingServicesPage.tsx
  */
@@ -2244,7 +2614,7 @@ ${companyAuthorityFooter()}
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/how-to-hire-roofing-contractor' ? generateHowToHireContent() : pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() : defaultServicePageContent(title),
+      pagePath === '/how-to-hire-roofing-contractor' ? generateHowToHireContent() : pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() : pagePath === '/shingle-roofing' ? generateShingleRoofingContent() : pagePath === '/metal-roofing' ? generateMetalRoofingContent() : defaultServicePageContent(title),
       jsonLdSchema
     );
 
