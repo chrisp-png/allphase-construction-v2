@@ -1296,6 +1296,754 @@ function generateMetalRoofingContent() {
 }
 
 /**
+ * CUSTOM: Residential Roofing Page - /residential-roofing
+ * 800+ words covering building envelope concept, thermal shock, dual licensing
+ */
+function generateResidentialRoofingContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Your Roof Is the 5th Wall of Your Home</h1>
+
+  <p>Most homeowners think of their roof as a separate component sitting on top of their house. But the reality is more sophisticated: your roof is the fifth wall of your building envelope—an integrated protective shell that works in concert with your four vertical walls to defend against South Florida's extreme climate conditions.</p>
+
+  <p>At All Phase Construction USA, we approach residential roofing as <strong>building envelope contractors</strong>, not just roofers. This distinction matters because your roof doesn't exist in isolation. It's part of a continuous thermal and moisture control system that includes your walls, windows, doors, and foundation. When one component fails, the entire envelope is compromised.</p>
+
+  <h2>The 5 Walls of Protection Model</h2>
+
+  <p>Your home's building envelope consists of five critical barriers working together:</p>
+
+  <ul>
+    <li><strong>Wall 1 (North):</strong> Faces morning sun, experiences moderate thermal stress</li>
+    <li><strong>Wall 2 (East):</strong> Receives intense afternoon heat, highest UV exposure</li>
+    <li><strong>Wall 3 (South):</strong> Mid-day solar gain, moderate wind pressure during storms</li>
+    <li><strong>Wall 4 (West):</strong> Sunset exposure, evening thermal release</li>
+    <li><strong>Wall 5 (Roof):</strong> Absorbs 60-70% of total solar heat gain, faces maximum wind uplift during hurricanes</li>
+  </ul>
+
+  <p>The roof experiences the most extreme conditions of any building component. Summer surface temperatures reach <strong>160°F on dark shingles</strong> and <strong>140-150°F on tile and metal roofs</strong>. This creates a thermal gradient of 80-90°F between the roof surface and the conditioned interior space. That temperature differential drives heat transfer, moisture migration, and material degradation—which is why proper roof design is critical to your home's overall energy efficiency and structural integrity.</p>
+
+  <h2>Thermal Shock: The Hidden Killer of Florida Roofs</h2>
+
+  <p>Thermal shock is the silent assassin of roofing systems in South Florida. Here's what most homeowners never learn:</p>
+
+  <p>Every afternoon, your roof surface reaches 150-160°F. Then a summer thunderstorm rolls through, dropping 1-2 inches of rain at 75-80°F onto that superheated surface. The instantaneous temperature drop of 70-80°F causes rapid contraction of roofing materials. This cycle repeats <strong>200+ days per year</strong> in South Florida.</p>
+
+  <p>Over time, this constant expansion and contraction causes:</p>
+
+  <ul>
+    <li><strong>Shingle granule loss</strong> – Protective granules separate from the asphalt backing</li>
+    <li><strong>Tile micro-cracking</strong> – Hairline fractures that allow water infiltration</li>
+    <li><strong>Metal fastener fatigue</strong> – Screws and clips loosen from repeated stress cycles</li>
+    <li><strong>Sealant breakdown</strong> – Adhesives fail prematurely, leading to blow-offs</li>
+    <li><strong>Underlayment degradation</strong> – Secondary water barriers become brittle and crack</li>
+  </ul>
+
+  <p>Industry studies show that thermal shock reduces roof lifespan by <strong>30-50%</strong> compared to the same materials installed in moderate climates. A 30-year shingle in South Florida realistically lasts 15-20 years. A tile roof rated for 50 years might need significant repairs or replacement at 25-30 years.</p>
+
+  <p>This is why proper material selection, installation quality, and engineered ventilation are non-negotiable for residential roofing in this region.</p>
+
+  <h2>Why Dual Licensing Delivers Better Outcomes (And Lower Insurance Premiums)</h2>
+
+  <p>All Phase Construction USA holds both a <strong>Roofing Contractor license (CCC-1331464)</strong> and a <strong>General Contractor license (CGC-1526236)</strong>. This dual licensing matters for three critical reasons:</p>
+
+  <h3>1. Structural Authority for HVHZ Compliance</h3>
+
+  <p>The High Velocity Hurricane Zone code requires roof-to-wall connections that exceed the scope of standard roofing work. Specifically:</p>
+
+  <ul>
+    <li>Hurricane strap installation or reinforcement</li>
+    <li>Structural deck fastening at 6" on-center along perimeter zones</li>
+    <li>Rafter-to-plate connections meeting uplift ratings</li>
+    <li>Truss repair or reinforcement when needed</li>
+  </ul>
+
+  <p>A roofing-only contractor cannot legally perform this work. They must hire a separate general contractor, which adds cost, delays inspections, and creates divided accountability. When one contractor holds both licenses, the entire scope of work proceeds under a single permit with unified responsibility.</p>
+
+  <h3>2. Wind Mitigation Documentation During Installation</h3>
+
+  <p>Here's what most homeowners don't realize: the time to optimize your wind mitigation discounts is <strong>during roof replacement</strong>, not after. Once the roof is installed, it's too late to add the structural features that qualify for maximum insurance savings.</p>
+
+  <p>Wind mitigation features include:</p>
+
+  <ul>
+    <li>Roof-to-wall connection upgrades (clips, straps, or toe-nails)</li>
+    <li>Roof deck attachment upgrades (enhanced nailing patterns)</li>
+    <li>Secondary water resistance (sealed deck vs. standard underlayment)</li>
+    <li>Roof covering type and installation method</li>
+    <li>Opening protection (impact windows or code-compliant shutters)</li>
+  </ul>
+
+  <p>A dual-licensed contractor can install these features as part of the roof replacement project and provide the documentation required for wind mitigation certification. This typically reduces homeowners' windstorm insurance premiums by <strong>30-45%</strong>—thousands of dollars in annual savings that offset the cost of the roof over its lifespan.</p>
+
+  <h3>3. Seamless Project Management</h3>
+
+  <p>Roof replacement often uncovers unexpected issues: rotted decking, compromised trusses, inadequate ventilation, or structural deficiencies. With dual licensing, we address these issues immediately without stopping the project to bring in a second contractor. One permit. One schedule. One point of accountability.</p>
+
+  <h2>Engineered Ventilation: Not an Afterthought</h2>
+
+  <p>Proper attic ventilation is critical in South Florida's climate. When attic temperatures reach 140-150°F, three problems occur:</p>
+
+  <ol>
+    <li><strong>Accelerated shingle aging</strong> – Heat cooks the asphalt from below</li>
+    <li><strong>Increased cooling costs</strong> – Your AC works harder to overcome radiant heat transfer</li>
+    <li><strong>Moisture accumulation</strong> – Condensation forms when humid air contacts cooler surfaces</li>
+  </ol>
+
+  <p>We design ventilation systems based on <strong>net free area (NFA) calculations</strong>, not guesswork. This means balanced intake ventilation (soffit vents) and exhaust ventilation (ridge vents, gable vents, or powered attic fans) to achieve the required 1:150 or 1:300 ventilation ratios specified by Florida Building Code.</p>
+
+  <h2>Residential Roofing Services We Provide</h2>
+
+  <ul>
+    <li><strong><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a></strong> – Concrete and clay tile with foam adhesive application, mechanical fastening, and verified flashing details</li>
+    <li><strong><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a></strong> – Standing seam and corrugated metal systems rated for 150+ mph wind resistance</li>
+    <li><strong><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Shingle Roofing</a></strong> – Architectural and impact-resistant shingles with proper underlayment and enhanced fastening</li>
+    <li><strong><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing</a></strong> – Built-up roofing (BUR), TPO, modified bitumen, and single-ply systems for low-slope residential roofs</li>
+    <li><strong><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Roof Replacement</a></strong> – Complete tear-off and replacement with HVHZ-compliant installation and manufacturer warranties</li>
+    <li><strong><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair</a></strong> – Emergency leak repair, storm damage restoration, and preventive maintenance</li>
+  </ul>
+
+  <h2>Why Experience Matters in HVHZ Roofing</h2>
+
+  <p>All Phase Construction USA has completed <strong>2,500+ residential roofing projects</strong> across Broward and Palm Beach Counties since 2005. We are:</p>
+
+  <ul>
+    <li><strong>Dual-licensed</strong> (CCC-1331464 Roofing / CGC-1526236 General Contractor)</li>
+    <li><strong>Manufacturer-certified</strong> by Owens Corning, CertainTeed, and Tamko</li>
+    <li><strong>5-star rated</strong> on Google, Angi, and HomeAdvisor</li>
+    <li><strong>HVHZ-compliant</strong> – Every installation meets Florida Building Code for High Velocity Hurricane Zones</li>
+    <li><strong>Fully insured</strong> with general liability and workers' compensation coverage</li>
+  </ul>
+
+  <h2>Residential Roof Replacement Cost: What to Expect</h2>
+
+  <p>Residential roof replacement in Broward and Palm Beach Counties typically ranges from <strong>$15,000 to $50,000+</strong> depending on:</p>
+
+  <ul>
+    <li>Roof size (square footage and complexity)</li>
+    <li>Material type (shingle, tile, metal, or flat roofing systems)</li>
+    <li>Pitch and accessibility</li>
+    <li>Structural repairs or deck replacement</li>
+    <li>HVHZ upgrade requirements</li>
+    <li>Manufacturer warranty level (standard vs. lifetime coverage)</li>
+  </ul>
+
+  <p>Use our <strong><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a></strong> to get a preliminary estimate based on your home's specifications. Then schedule a free inspection for an exact quote with detailed line-item pricing.</p>
+
+  <div style="background: #f3f4f6; border-left: 4px solid #dc2626; padding: 1rem; margin: 2rem 0;">
+    <p style="margin: 0; font-weight: 600;">📞 Ready to discuss your residential roofing project?</p>
+    <p style="margin: 0.5rem 0 0 0;">Call <strong style="color: #dc2626;">(754) 227-5605</strong> or <a href="/contact" style="color: #dc2626; text-decoration: underline;">schedule a free inspection online</a>. Licensed, insured, and HVHZ-certified since 2005.</p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * CUSTOM: Commercial Roofing Page - /commercial-roofing
+ * 800+ words covering HVHZ, My Safe Florida Condo, HOA management
+ */
+function generateCommercialRoofingContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Commercial Roofing Built for the High Velocity Hurricane Zone</h1>
+
+  <p>Commercial roofing in Broward and Palm Beach Counties operates under the most stringent building codes in the United States. The High Velocity Hurricane Zone (HVHZ) provisions of the Florida Building Code mandate design wind speeds of <strong>146 mph for Broward County</strong> and <strong>140-146 mph for Palm Beach County</strong>—far exceeding the requirements in most of Florida and the rest of the country.</p>
+
+  <p>All Phase Construction USA holds dual licenses—<strong>General Contractor (CGC-1526236)</strong> and <strong>Roofing Contractor (CCC-1331464)</strong>—allowing us to handle both structural and roofing work under one contract. This is particularly important for commercial projects where roof-to-wall connections, structural decking, and load-bearing components often require modification during roof replacement.</p>
+
+  <h2>HVHZ Code Requirements for Commercial Buildings</h2>
+
+  <p>Commercial roofing systems in the HVHZ must meet specific performance standards that go beyond residential requirements:</p>
+
+  <h3>Wind Uplift Ratings</h3>
+
+  <p>The Florida Building Code requires commercial roofs to achieve specific wind uplift ratings based on building height, exposure category, and roof geometry. These ratings are expressed as:</p>
+
+  <ul>
+    <li><strong>Class 90</strong> – 90 psf uplift resistance (for lower-risk buildings)</li>
+    <li><strong>Class 120</strong> – 120 psf uplift resistance (standard for most commercial buildings)</li>
+    <li><strong>Class 180</strong> – 180 psf uplift resistance (required for high-rise and coastal buildings)</li>
+  </ul>
+
+  <p>Achieving these ratings requires engineered fastening patterns, proper insulation attachment, and membrane securement methods verified by third-party testing. Not all roofing contractors understand these requirements or have experience passing HVHZ inspections.</p>
+
+  <h3>Secondary Water Barriers</h3>
+
+  <p>HVHZ code mandates continuous secondary water barriers on all commercial roofs. This means a fully sealed underlayment system—typically self-adhered modified bitumen or fully torched base sheets—beneath the primary roof covering. This requirement exists because hurricane-force winds can drive rain horizontally under flashing and through seams that would normally remain dry.</p>
+
+  <h3>Flashing and Edge Details</h3>
+
+  <p>Perimeter edge flashing must be mechanically fastened at closer spacing than standard installations. Coping caps, gravel stops, and parapet wall flashing all require enhanced securement and often structural blocking to prevent blow-off during high-wind events.</p>
+
+  <h2>My Safe Florida Condo Program: Up to $175,000 in Grant Funding</h2>
+
+  <p>The <strong>My Safe Florida Condo Program</strong> provides matching grants to condominium and cooperative associations for hurricane mitigation improvements, including roof replacement and reinforcement. Here's how it works:</p>
+
+  <h3>Grant Basics</h3>
+
+  <ul>
+    <li><strong>Matching ratio:</strong> $2 in grant funding for every $1 contributed by the association</li>
+    <li><strong>Maximum grant:</strong> $175,000 per association</li>
+    <li><strong>Approval requirement:</strong> 75% of unit owners must approve the project</li>
+    <li><strong>Eligible expenses:</strong> Roof replacement, opening protection (impact windows/shutters), structural reinforcement</li>
+  </ul>
+
+  <h3>How to Apply</h3>
+
+  <p>Applications are submitted through the Florida Department of Emergency Management. The process involves:</p>
+
+  <ol>
+    <li>Scheduling a professional wind mitigation inspection to identify deficiencies</li>
+    <li>Obtaining detailed cost estimates from licensed contractors</li>
+    <li>Securing 75% owner approval via formal vote</li>
+    <li>Submitting the application with supporting documentation</li>
+    <li>Receiving grant award notification (applications are processed on a rolling basis)</li>
+  </ol>
+
+  <p>All Phase Construction USA can assist with the inspection, cost estimation, and scope-of-work documentation required for successful grant applications. We've helped multiple condo associations secure funding through this program.</p>
+
+  <h2>Condo & HOA Board Management: What Sets Us Apart</h2>
+
+  <p>Working with condominium associations and homeowners' associations requires specialized project management skills that go beyond standard commercial roofing:</p>
+
+  <h3>Competitive Bidding Compliance</h3>
+
+  <p>Most HOA governing documents require competitive bidding for projects exceeding specific dollar thresholds (typically $10,000-$25,000). We provide detailed, line-item proposals that allow boards to compare bids accurately. Our estimates include:</p>
+
+  <ul>
+    <li>Material specifications with manufacturer names and model numbers</li>
+    <li>Labor breakdown by phase (tear-off, deck prep, installation, cleanup)</li>
+    <li>Permit costs and inspection fees</li>
+    <li>Warranty coverage (workmanship and manufacturer)</li>
+    <li>Project timeline with milestone dates</li>
+  </ul>
+
+  <h3>Phased Project Scheduling</h3>
+
+  <p>Large condo complexes often require phased roof replacement to minimize disruption and spread costs across multiple budget cycles. We work with boards to develop multi-year plans that:</p>
+
+  <ul>
+    <li>Prioritize buildings with the most critical roof damage</li>
+    <li>Schedule work during low-occupancy periods (avoiding holidays and peak season)</li>
+    <li>Coordinate with reserve fund planning and special assessments</li>
+    <li>Maintain consistent pricing across phases (protecting against future price increases)</li>
+  </ul>
+
+  <h3>Resident Communication</h3>
+
+  <p>We provide regular project updates to residents, including:</p>
+
+  <ul>
+    <li>Pre-construction notices explaining project scope and timeline</li>
+    <li>Daily work schedules posted in common areas</li>
+    <li>24-hour advance notice for any work directly affecting individual units</li>
+    <li>Direct contact information for our project manager</li>
+    <li>Post-completion walkthrough with board representatives</li>
+  </ul>
+
+  <h2>Commercial Property Types We Serve</h2>
+
+  <p>All Phase Construction USA provides commercial roofing services for a wide range of property types:</p>
+
+  <ul>
+    <li><strong>Retail Centers</strong> – Strip malls, shopping plazas, standalone retail buildings</li>
+    <li><strong>Office Buildings</strong> – Low-rise and mid-rise commercial office space</li>
+    <li><strong>Warehouse & Industrial</strong> – Distribution centers, manufacturing facilities, flex space</li>
+    <li><strong>Medical Facilities</strong> – Medical offices, urgent care centers, outpatient clinics</li>
+    <li><strong>Schools & Institutions</strong> – Private schools, religious facilities, community centers</li>
+    <li><strong>Multi-Family Housing</strong> – Apartment complexes, condominium associations, townhome communities</li>
+  </ul>
+
+  <h2>Why Dual Licensing Matters for Commercial Projects</h2>
+
+  <p>Commercial roof replacement often reveals structural issues that require immediate attention:</p>
+
+  <ul>
+    <li><strong>Rotted roof decking</strong> – Water damage requiring deck replacement</li>
+    <li><strong>Inadequate structural fastening</strong> – Deck boards nailed at 12" instead of required 6" on-center</li>
+    <li><strong>Compromised parapet walls</strong> – Structural repairs needed before new flashing can be installed</li>
+    <li><strong>HVAC equipment support issues</strong> – Roof-mounted units requiring reinforced curbs or structural upgrades</li>
+  </ul>
+
+  <p>When your roofing contractor also holds a general contractor license, these issues are addressed immediately without stopping the project to hire a separate structural contractor. This saves time, reduces costs, and ensures unified accountability for the entire scope of work.</p>
+
+  <h2>Commercial Roofing Systems We Install</h2>
+
+  <ul>
+    <li><strong><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">TPO Roofing</a></strong> – Single-ply thermoplastic membranes with heat-welded seams, rated for Class 90-180 wind uplift</li>
+    <li><strong>EPDM Roofing</strong> – Rubber membrane systems ideal for flat and low-slope roofs</li>
+    <li><strong>PVC Roofing</strong> – Premium single-ply membrane with superior chemical resistance and longevity</li>
+    <li><strong>Built-Up Roofing (BUR)</strong> – Traditional tar-and-gravel systems with proven performance in South Florida</li>
+    <li><strong>Modified Bitumen</strong> – Torch-applied or self-adhered systems for demanding commercial applications</li>
+    <li><strong>Metal Roofing</strong> – Standing seam and corrugated metal for warehouse and industrial buildings</li>
+  </ul>
+
+  <h2>Preventive Maintenance Programs</h2>
+
+  <p>Commercial roofs require regular maintenance to maximize lifespan and prevent costly emergency repairs. Our <strong><a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">commercial roof maintenance programs</a></strong> include:</p>
+
+  <ul>
+    <li>Quarterly inspections with photo documentation</li>
+    <li>Drain and gutter cleaning</li>
+    <li>Minor repairs completed during routine visits</li>
+    <li>Annual roof condition reports for property managers and owners</li>
+    <li>Priority emergency response for active leaks</li>
+  </ul>
+
+  <p>Preventive maintenance extends roof lifespan by 5-10 years and allows building owners to plan for replacement on their timeline—not when an emergency forces immediate action.</p>
+
+  <h2>Flexible Payment Options for Commercial Projects</h2>
+
+  <p>We understand that commercial roof replacement represents a significant capital expenditure. <strong><a href="/easy-payments" style="color: #dc2626; text-decoration: underline;">Flexible financing options</a></strong> are available including:</p>
+
+  <ul>
+    <li>Progress billing tied to project milestones</li>
+    <li>Extended payment terms for qualified commercial clients</li>
+    <li>Third-party financing for associations and property management companies</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border-left: 4px solid #dc2626; padding: 1rem; margin: 2rem 0;">
+    <p style="margin: 0; font-weight: 600;">📞 Need a commercial roofing proposal or HOA grant assistance?</p>
+    <p style="margin: 0.5rem 0 0 0;">Call <strong style="color: #dc2626;">(754) 227-5605</strong> or <a href="/contact" style="color: #dc2626; text-decoration: underline;">request a commercial roofing consultation online</a>. Dual-licensed (CGC/CCC) and HVHZ-certified.</p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * CUSTOM: Roof Repair Hub Page - /roof-repair
+ * 800+ words covering systemic restoration, 5-year certs, 25% rule
+ */
+function generateRoofRepairHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>We Don't Just Repair Your Roof — We Restore It</h1>
+
+  <p>Most roofing companies approach repairs as isolated patches: fix the visible leak, collect payment, and move on. This spot-repair mentality fails to address the underlying conditions that caused the failure in the first place—which is why the same homeowners end up calling back six months later when a new leak appears three feet away from the "repaired" area.</p>
+
+  <p>At All Phase Construction USA, we take a <strong>systemic restoration approach</strong> to roof repair. When we're called to fix a leak, we don't just patch the immediate problem. We identify the root cause, evaluate surrounding areas with similar conditions, and restore the entire affected section to prevent future failures.</p>
+
+  <h2>Why Spot Repairs Fail in South Florida</h2>
+
+  <p>Roof damage in this region is rarely isolated. The combination of extreme heat, UV exposure, thermal shock, and hurricane-force winds creates conditions that affect large sections of roofing systems simultaneously. Here's what typically happens:</p>
+
+  <h3>The Cascade Effect</h3>
+
+  <p>When one area of your roof fails, adjacent areas are often in similar condition. If one shingle is losing granules due to thermal degradation, the surrounding shingles are experiencing the same stress. If one tile cracks from thermal shock, nearby tiles have the same micro-fractures that will fail within months.</p>
+
+  <p>Spot repairs address the symptom (the visible leak) but ignore the disease (systemic material degradation). This is why we evaluate the entire roof zone—not just the leak location—and provide honest assessments of what needs immediate attention versus what can be monitored.</p>
+
+  <h3>Flashing Failures vs. Material Failures</h3>
+
+  <p>Approximately 70% of roof leaks in South Florida stem from flashing failures, not material failures. The most common problem areas include:</p>
+
+  <ul>
+    <li><strong>Chimney flashing</strong> – Counter-flashing separating from masonry</li>
+    <li><strong>Pipe boot penetrations</strong> – Rubber boots cracking and separating from pipe collars</li>
+    <li><strong>Valley flashing</strong> – Open valleys accumulating debris and allowing water backup</li>
+    <li><strong>Dormer connections</strong> – Step flashing failing at wall-to-roof transitions</li>
+    <li><strong>Skylight curbs</strong> – Sealant breakdown allowing water infiltration</li>
+  </ul>
+
+  <p>Proper repair requires removing the surrounding roof covering, installing new base flashing properly integrated with the underlayment, and reinstalling the roof material with correct overlap and fastening. This is not a "quick patch" job—it's skilled reconstruction work that requires roofing expertise and attention to HVHZ code requirements.</p>
+
+  <h2>The 5-Year Certification Letter: Protecting Your Insurance Coverage</h2>
+
+  <p>Here's something most Florida homeowners don't know: if your roof is older than a certain threshold (typically 15-20 years), insurance carriers may require a roof certification letter to maintain full coverage or avoid non-renewal.</p>
+
+  <p><strong>Florida Statute 627.7011(5)</strong> establishes the framework for roof certification. The statute allows licensed roofing contractors to provide written certification that a roof has at least 5 years of remaining useful life, which can prevent insurance carriers from requiring immediate replacement.</p>
+
+  <h3>What a 5-Year Certification Requires</h3>
+
+  <p>To issue a valid certification letter, the contractor must:</p>
+
+  <ul>
+    <li>Hold an active Florida roofing contractor license (CCC)</li>
+    <li>Perform a comprehensive roof inspection covering all material, structural, and water-resistance components</li>
+    <li>Verify that the roof is watertight and properly maintained</li>
+    <li>Confirm that all deficiencies have been repaired to code-compliant standards</li>
+    <li>Provide written documentation including photos and a signed affidavit</li>
+  </ul>
+
+  <p>All Phase Construction USA provides 5-year roof certification letters after completing qualified repair work. This certification can save homeowners thousands of dollars by preventing forced roof replacement as a condition of insurance coverage.</p>
+
+  <h2>Florida's 25% Roof Repair Rule: What You Need to Know</h2>
+
+  <p><strong>Florida Statute 553.844(5)</strong> establishes the "25% rule" for roof repairs. Here's what it means:</p>
+
+  <p>If roof repairs or replacement affect more than 25% of the total roof area within a 12-month period, the <strong>entire roof must be brought up to current building code</strong>—including HVHZ requirements for wind uplift, secondary water barriers, and structural fastening.</p>
+
+  <h3>Why This Matters</h3>
+
+  <p>This statute exists to prevent homeowners from perpetually patching failing roofs without ever addressing underlying code deficiencies. It protects both homeowners (by ensuring proper wind resistance) and future buyers (by preventing homes from being sold with substandard roofing systems).</p>
+
+  <p>From a practical standpoint, this means:</p>
+
+  <ul>
+    <li>Keep repair receipts to track cumulative work over the past 12 months</li>
+    <li>If you're approaching the 25% threshold, consider full replacement to avoid partial upgrades</li>
+    <li>Work with a licensed contractor who understands code implications and can guide your decision</li>
+  </ul>
+
+  <h2>Roof Repair Services We Provide</h2>
+
+  <h3>Leak Detection & Repair</h3>
+
+  <p>Not all leaks are obvious. We use thermal imaging, moisture meters, and systematic water testing to pinpoint leak sources—including hard-to-find issues like underlayment breaches, deck rot, and wind-driven rain infiltration.</p>
+
+  <h3>Shingle Restoration</h3>
+
+  <p>Shingle repairs include replacing damaged or missing shingles, addressing granule loss, sealing lifted tabs, and ensuring proper adhesion. We match existing shingle colors and styles to maintain aesthetic consistency.</p>
+
+  <h3>Flashing Repairs</h3>
+
+  <p>Comprehensive flashing repair including chimney reflashing, pipe boot replacement, valley flashing installation, dormer step flashing, and skylight curb sealing. All flashing work integrates with existing underlayment or includes new underlayment installation where required.</p>
+
+  <h3>Tile Re-Setting & Replacement</h3>
+
+  <p>Tile roofs often require individual tile replacement due to cracking or impact damage. We maintain an inventory of common tile profiles and colors to ensure proper matches. All tile work includes proper foam adhesive application and mechanical fastening per HVHZ requirements.</p>
+
+  <h3>Flat Roof Repairs</h3>
+
+  <p>Flat and low-slope roofs develop issues including membrane punctures, seam separation, ponding water, and blister formation. We repair TPO, EPDM, modified bitumen, and built-up roofing systems using manufacturer-approved materials and methods.</p>
+
+  <h3>Storm Damage Restoration</h3>
+
+  <p>Hurricane and severe weather damage requires immediate response. We provide emergency tarping services, temporary weatherproofing, and complete storm damage restoration. We work directly with insurance adjusters and provide detailed photo documentation to support claims.</p>
+
+  <h3>Gutter Repairs</h3>
+
+  <p>Gutters are part of your roof's water management system. We repair damaged gutters, replace missing sections, correct improper slope, and ensure proper drainage to protect your roof and foundation.</p>
+
+  <h2>Roof Repair Service Areas</h2>
+
+  <p>All Phase Construction USA provides roof repair services throughout Broward and Palm Beach Counties. Our primary service areas include:</p>
+
+  <ul>
+    <li><strong><a href="/roof-repair/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Roof Repair in Deerfield Beach</a></strong> – Our headquarters location with same-day emergency response</li>
+    <li><strong><a href="/roof-repair/boca-raton" style="color: #dc2626; text-decoration: underline;">Roof Repair in Boca Raton</a></strong> – Tile, metal, shingle, and flat roof repair for residential and commercial properties</li>
+    <li><strong><a href="/roof-repair/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Roof Repair in Fort Lauderdale</a></strong> – Emergency leak repair and storm damage restoration</li>
+    <li><strong><a href="/roof-repair/coral-springs" style="color: #dc2626; text-decoration: underline;">Roof Repair in Coral Springs</a></strong> – Flashing repair, tile replacement, and shingle restoration</li>
+  </ul>
+
+  <p>We also serve Pompano Beach, Delray Beach, Boynton Beach, West Palm Beach, Plantation, Sunrise, and all surrounding communities.</p>
+
+  <h2>When to Repair vs. When to Replace</h2>
+
+  <p>The decision between repair and replacement depends on several factors:</p>
+
+  <h3>Repair Makes Sense When:</h3>
+
+  <ul>
+    <li>The roof is less than 50% through its expected lifespan</li>
+    <li>Damage is localized to a specific area (less than 25% of total roof area)</li>
+    <li>The underlying structure and underlayment are sound</li>
+    <li>Matching materials are available</li>
+    <li>Repair costs are less than 30-40% of replacement cost</li>
+  </ul>
+
+  <h3>Replacement Is Better When:</h3>
+
+  <ul>
+    <li>The roof has exceeded its expected lifespan</li>
+    <li>Multiple areas show similar deterioration</li>
+    <li>Previous repairs have failed in multiple locations</li>
+    <li>The roof shows systemic issues (widespread granule loss, multiple tile cracks, etc.)</li>
+    <li>You're approaching the 25% cumulative repair threshold</li>
+    <li>Insurance certification is required and the roof cannot be certified</li>
+  </ul>
+
+  <p>We provide honest assessments and never recommend replacement when quality repairs will extend your roof's life. That said, we also won't patch a failing roof just to collect a repair fee when replacement is the right long-term decision.</p>
+
+  <h2>Related Resources</h2>
+
+  <ul>
+    <li><strong><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Professional Roof Inspections</a></strong> – Comprehensive assessment before deciding on repair vs. replacement</li>
+    <li><strong><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Roof Replacement Process</a></strong> – What to expect when repair is no longer viable</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border-left: 4px solid #dc2626; padding: 1rem; margin: 2rem 0;">
+    <p style="margin: 0; font-weight: 600;">📞 Need roof repair or a 5-year certification letter?</p>
+    <p style="margin: 0.5rem 0 0 0;">Call <strong style="color: #dc2626;">(754) 227-5605</strong> for same-day emergency response or <a href="/contact" style="color: #dc2626; text-decoration: underline;">schedule a repair assessment online</a>. Licensed CCC-1331464 / CGC-1526236.</p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * CUSTOM: Roof Inspection Hub Page - /roof-inspection
+ * 800+ words covering 8 components, 6 reasons, HVHZ, 5-year certification
+ */
+function generateRoofInspectionHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Inspection Services in Broward & Palm Beach County</h1>
+
+  <p>A professional roof inspection is far more than a visual walkthrough. It's a comprehensive evaluation of your roof's structural integrity, water resistance, material condition, and code compliance—delivered by licensed contractors who understand South Florida's unique High Velocity Hurricane Zone requirements.</p>
+
+  <p>All Phase Construction USA provides detailed roof inspections with photo documentation, moisture readings, and written reports suitable for insurance submissions, real estate transactions, and maintenance planning. Every inspection is performed by state-licensed roofing contractors (CCC-1331464) with authority to issue 5-year roof certification letters under Florida Statute 627.7011(5).</p>
+
+  <h2>Our 8-Component Inspection Process</h2>
+
+  <p>Our roof inspections evaluate every aspect of your roofing system using a standardized 21-point checklist covering eight major categories:</p>
+
+  <h3>1. Roofing Material Assessment</h3>
+
+  <p>We evaluate the condition and remaining lifespan of your primary roof covering:</p>
+
+  <ul>
+    <li><strong>Shingle roofs:</strong> Granule loss, curling, cracking, missing shingles, seal failure</li>
+    <li><strong>Tile roofs:</strong> Cracked or broken tiles, improper fastening, foam adhesive condition</li>
+    <li><strong>Metal roofs:</strong> Fastener condition, seam integrity, rust or corrosion, panel movement</li>
+    <li><strong>Flat roofs:</strong> Membrane condition, seam separation, blistering, ponding water</li>
+  </ul>
+
+  <h3>2. Water Intrusion Detection</h3>
+
+  <p>Active and historical water intrusion is identified using multiple diagnostic methods:</p>
+
+  <ul>
+    <li>Interior ceiling inspection for staining, discoloration, and soft spots</li>
+    <li>Attic inspection for water staining on decking and rafters</li>
+    <li>Moisture meter readings to detect elevated moisture levels</li>
+    <li>Thermal imaging (when available) to identify hidden moisture</li>
+  </ul>
+
+  <h3>3. Flashing Evaluation</h3>
+
+  <p>Flashing is the most common source of roof leaks in South Florida. We inspect:</p>
+
+  <ul>
+    <li>Chimney flashing and counter-flashing</li>
+    <li>Pipe boot penetrations (plumbing vents, electrical masts)</li>
+    <li>Valley flashing and debris accumulation</li>
+    <li>Dormer step flashing and sidewall transitions</li>
+    <li>Skylight curbs and head flashing</li>
+    <li>Drip edge and starter strip installation</li>
+  </ul>
+
+  <h3>4. Wind Resistance & HVHZ Compliance</h3>
+
+  <p>South Florida roofs must meet High Velocity Hurricane Zone standards. We verify:</p>
+
+  <ul>
+    <li>Proper fastening patterns for primary roof covering</li>
+    <li>Secondary water barrier installation (required in HVHZ)</li>
+    <li>Edge metal securement and spacing</li>
+    <li>Tile foam adhesive application (required for HVHZ tile roofs)</li>
+    <li>Roof-to-wall connection adequacy</li>
+    <li>Exposure category compliance for your building's location</li>
+  </ul>
+
+  <h3>5. Structural Deck Integrity</h3>
+
+  <p>The roof deck is the foundation of your roofing system. We assess:</p>
+
+  <ul>
+    <li>Deck board condition (rot, deterioration, warping)</li>
+    <li>Proper fastening of decking to rafters or trusses</li>
+    <li>Spacing between deck boards (critical for proper ventilation)</li>
+    <li>Load-bearing capacity for tile and concrete roof systems</li>
+    <li>Evidence of previous repairs or modifications</li>
+  </ul>
+
+  <h3>6. Drainage & Water Management</h3>
+
+  <p>Proper water drainage prevents premature roof failure. We evaluate:</p>
+
+  <ul>
+    <li>Gutter condition, attachment, and proper slope</li>
+    <li>Downspout routing and drainage away from foundation</li>
+    <li>Valley drainage and debris accumulation</li>
+    <li>Flat roof drainage (scuppers, internal drains, ponding water)</li>
+    <li>Splash blocks and drainage extensions</li>
+  </ul>
+
+  <h3>7. Attic Ventilation & Code Compliance</h3>
+
+  <p>Inadequate ventilation accelerates roof aging. We verify:</p>
+
+  <ul>
+    <li>Soffit vent installation and blockage</li>
+    <li>Ridge vent, gable vent, or roof vent adequacy</li>
+    <li>Net free area (NFA) calculations per Florida Building Code</li>
+    <li>Balanced intake and exhaust ventilation</li>
+    <li>Attic insulation depth and R-value</li>
+  </ul>
+
+  <h3>8. Comprehensive Photo Documentation</h3>
+
+  <p>Every inspection includes detailed photography:</p>
+
+  <ul>
+    <li>Overall roof condition from multiple angles</li>
+    <li>Close-up shots of problem areas</li>
+    <li>Flashing details and penetration conditions</li>
+    <li>Interior water damage or staining</li>
+    <li>Attic conditions and ventilation</li>
+    <li>Documented code deficiencies</li>
+  </ul>
+
+  <p>Photos are provided digitally and can be submitted directly to insurance carriers, real estate agents, or mortgage lenders.</p>
+
+  <h2>6 Reasons to Schedule a Professional Roof Inspection</h2>
+
+  <h3>1. Home Purchase or Sale</h3>
+
+  <p>Real estate transactions require accurate roof assessments. Buyers need to know remaining lifespan and repair costs before closing. Sellers benefit from pre-listing inspections that identify issues before they become negotiation points. Our inspection reports provide:</p>
+
+  <ul>
+    <li>Estimated remaining useful life (in years)</li>
+    <li>Current condition rating (excellent, good, fair, poor)</li>
+    <li>Required repairs with cost estimates</li>
+    <li>Code compliance status</li>
+  </ul>
+
+  <h3>2. Insurance Requirements</h3>
+
+  <p>Many insurance carriers require roof inspections or certifications for:</p>
+
+  <ul>
+    <li>Policy renewal for roofs over 15-20 years old</li>
+    <li>New policy applications</li>
+    <li>Wind mitigation discount verification</li>
+    <li>Post-storm damage assessment</li>
+  </ul>
+
+  <p>We provide insurance-compliant reports that meet carrier requirements and can issue 5-year certification letters when roofs qualify.</p>
+
+  <h3>3. Post-Storm Assessment</h3>
+
+  <p>After hurricanes or severe weather, professional inspection identifies:</p>
+
+  <ul>
+    <li>Missing or damaged shingles, tiles, or metal panels</li>
+    <li>Lifted flashing or compromised seals</li>
+    <li>Underlayment damage (not visible from ground level)</li>
+    <li>Structural damage to decking or rafters</li>
+    <li>Secondary damage (gutters, fascia, soffit)</li>
+  </ul>
+
+  <p>Post-storm inspections should be completed promptly to prevent water intrusion and to document damage for insurance claims while evidence is fresh.</p>
+
+  <h3>4. Preventive Maintenance</h3>
+
+  <p>Annual or bi-annual inspections catch small problems before they become major repairs:</p>
+
+  <ul>
+    <li>Early detection of material deterioration</li>
+    <li>Identification of potential leak sources</li>
+    <li>Gutter cleaning and debris removal recommendations</li>
+    <li>Verification of previous repair quality</li>
+    <li>Extend roof lifespan by 5-10 years through proactive maintenance</li>
+  </ul>
+
+  <h3>5. Active Leaks or Water Damage</h3>
+
+  <p>When leaks occur, finding the source requires professional expertise:</p>
+
+  <ul>
+    <li>Water often travels along rafters before entering the interior</li>
+    <li>Visible interior damage may be 10-20 feet from the actual roof breach</li>
+    <li>Multiple leak sources can exist simultaneously</li>
+    <li>Proper repair requires understanding the root cause, not just patching symptoms</li>
+  </ul>
+
+  <h3>6. Pre-Renovation Planning</h3>
+
+  <p>If you're planning home improvements (solar panels, HVAC replacement, additions), a roof inspection ensures:</p>
+
+  <ul>
+    <li>The roof can support additional loads (solar panel weight, equipment)</li>
+    <li>Remaining roof life justifies deferring replacement</li>
+    <li>Coordination of roof work with other projects</li>
+    <li>Avoid installing expensive equipment on a roof that needs replacement in 2-3 years</li>
+  </ul>
+
+  <h2>HVHZ Inspection Requirements</h2>
+
+  <p>High Velocity Hurricane Zone compliance is mandatory for all roofs in Broward and Palm Beach Counties. Our inspections specifically verify:</p>
+
+  <ul>
+    <li><strong>146 mph wind rating compliance</strong> for Broward County (140-146 mph for Palm Beach County)</li>
+    <li><strong>Secondary water barrier installation</strong> – Continuous sealed underlayment required by HVHZ code</li>
+    <li><strong>Fastening pattern compliance</strong> – Enhanced nailing or foam adhesive per manufacturer specifications</li>
+    <li><strong>Edge metal securement</strong> – Proper spacing and fastening of drip edge and starter strips</li>
+    <li><strong>Opening protection</strong> – Impact-rated windows or code-compliant shutters (affects wind mitigation rating)</li>
+  </ul>
+
+  <h2>5-Year Roof Certification Authority</h2>
+
+  <p>Under <strong>Florida Statute 627.7011(5)</strong>, licensed roofing contractors can provide written certification that a roof has at least 5 years of remaining useful life. This certification can:</p>
+
+  <ul>
+    <li>Prevent insurance carriers from requiring immediate roof replacement</li>
+    <li>Maintain full coverage without roof-exclusion riders</li>
+    <li>Avoid policy non-renewal due to roof age</li>
+    <li>Provide documentation for real estate transactions</li>
+  </ul>
+
+  <p>To qualify for a 5-year certification, the roof must:</p>
+
+  <ul>
+    <li>Be watertight with no active leaks</li>
+    <li>Have adequate remaining material life</li>
+    <li>Be structurally sound with no significant deck deterioration</li>
+    <li>Have properly functioning flashing and drainage</li>
+    <li>Be code-compliant or have deficiencies corrected</li>
+  </ul>
+
+  <p>All Phase Construction USA is authorized to issue these certifications after completing a comprehensive inspection and any required repairs.</p>
+
+  <h2>Roof Inspection Service Areas</h2>
+
+  <p>We provide professional roof inspections throughout Broward and Palm Beach Counties, including:</p>
+
+  <ul>
+    <li><strong><a href="/roof-inspection/boca-raton" style="color: #dc2626; text-decoration: underline;">Roof Inspection in Boca Raton</a></strong></li>
+    <li><strong><a href="/roof-inspection/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Roof Inspection in Fort Lauderdale</a></strong></li>
+    <li><strong><a href="/roof-inspection/coral-springs" style="color: #dc2626; text-decoration: underline;">Roof Inspection in Coral Springs</a></strong></li>
+  </ul>
+
+  <p>We also serve Deerfield Beach, Pompano Beach, Delray Beach, Boynton Beach, West Palm Beach, Plantation, Sunrise, and all surrounding communities.</p>
+
+  <h2>What Happens After the Inspection?</h2>
+
+  <p>Within 24-48 hours of your inspection, you'll receive:</p>
+
+  <ul>
+    <li><strong>Written inspection report</strong> with detailed findings</li>
+    <li><strong>Digital photo documentation</strong> organized by roof section</li>
+    <li><strong>Repair recommendations</strong> prioritized by urgency (immediate, near-term, monitor)</li>
+    <li><strong>Cost estimates</strong> for recommended repairs</li>
+    <li><strong>Certification letter</strong> (if roof qualifies for 5-year certification)</li>
+  </ul>
+
+  <p>If repairs are needed, we provide detailed proposals with line-item pricing. If your roof is in good condition, we'll document that and provide maintenance recommendations to maximize its lifespan.</p>
+
+  <h2>Related Services</h2>
+
+  <ul>
+    <li><strong><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair Services</a></strong> – Address issues identified during inspection</li>
+    <li><strong><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Roof Replacement Process</a></strong> – When repair is no longer viable</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border-left: 4px solid #dc2626; padding: 1rem; margin: 2rem 0;">
+    <p style="margin: 0; font-weight: 600;">📞 Schedule a professional roof inspection today</p>
+    <p style="margin: 0.5rem 0 0 0;">Call <strong style="color: #dc2626;">(754) 227-5605</strong> or <a href="/contact" style="color: #dc2626; text-decoration: underline;">request an inspection online</a>. Licensed CCC-1331464 with 5-year certification authority.</p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * CUSTOM: Roofing Services Page - /roofing-services
  * Rich prerender content matching RoofingServicesPage.tsx
  */
@@ -2614,7 +3362,16 @@ ${companyAuthorityFooter()}
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/how-to-hire-roofing-contractor' ? generateHowToHireContent() : pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() : pagePath === '/shingle-roofing' ? generateShingleRoofingContent() : pagePath === '/metal-roofing' ? generateMetalRoofingContent() : defaultServicePageContent(title),
+      pagePath === '/how-to-hire-roofing-contractor' ? generateHowToHireContent() :
+      pagePath === '/roofing-services' ? generateRoofingServicesContent() :
+      pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() :
+      pagePath === '/shingle-roofing' ? generateShingleRoofingContent() :
+      pagePath === '/metal-roofing' ? generateMetalRoofingContent() :
+      pagePath === '/residential-roofing' ? generateResidentialRoofingContent() :
+      pagePath === '/commercial-roofing' ? generateCommercialRoofingContent() :
+      pagePath === '/roof-repair' ? generateRoofRepairHubContent() :
+      pagePath === '/roof-inspection' ? generateRoofInspectionHubContent() :
+      defaultServicePageContent(title),
       jsonLdSchema
     );
 
