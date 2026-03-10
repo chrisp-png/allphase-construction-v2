@@ -330,6 +330,55 @@ export default function WestPalmBeachPage() {
           </div>
 
           <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Roof Replacement Cost in West Palm Beach (2026)
+              </h2>
+              <div className="space-y-4 text-zinc-400 leading-relaxed mb-8">
+                <p>
+                  Roof replacement costs in West Palm Beach run higher than state averages due to HVHZ compliance requirements, Palm Beach County permit fees, and material specifications mandated by the Florida Building Code. Here's what homeowners should budget for in 2026 based on material type and a standard 2,000-square-foot residential roof:
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">Architectural Shingles</h3>
+                  <p className="text-red-500 text-2xl font-bold mb-3">$12,000 – $18,000</p>
+                  <p className="text-zinc-400 leading-relaxed text-sm">
+                    Most affordable option for West Palm Beach homes. Impact-resistant Class 4 shingles recommended for maximum insurance savings. Typical lifespan: 20–30 years with proper installation and maintenance.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">Concrete Tile</h3>
+                  <p className="text-red-500 text-2xl font-bold mb-3">$22,000 – $38,000</p>
+                  <p className="text-zinc-400 leading-relaxed text-sm">
+                    The dominant material in West Palm Beach's historic districts and Mediterranean-style homes. Requires structural verification due to weight. Lifespan: 40–50+ years. Often required by HOAs and preservation boards.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">Standing Seam Metal</h3>
+                  <p className="text-red-500 text-2xl font-bold mb-3">$25,000 – $42,000</p>
+                  <p className="text-zinc-400 leading-relaxed text-sm">
+                    Highest wind resistance and energy efficiency. Popular for waterfront properties along the Intracoastal and Palm Beach Island. Lifespan: 40–60+ years. Excellent ROI through insurance premium reductions.
+                  </p>
+                </div>
+                <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">Flat Roof (TPO/Modified)</h3>
+                  <p className="text-red-500 text-2xl font-bold mb-3">$16,000 – $30,000</p>
+                  <p className="text-zinc-400 leading-relaxed text-sm">
+                    Common for commercial properties and modern residential designs in downtown West Palm Beach. TPO and modified bitumen systems with proper drainage design. Lifespan: 20–30 years.
+                  </p>
+                </div>
+              </div>
+              <p className="text-zinc-400 leading-relaxed mb-4">
+                These ranges include materials, labor, permits, debris removal, and all required Palm Beach County inspections. Costs vary based on roof complexity (number of penetrations, pitch, accessibility), decking condition, and whether structural repairs are needed. Our dual-licensing means we can handle structural work under the same contract — no separate general contractor needed if we find truss or decking issues during tear-off.
+              </p>
+              <p className="text-zinc-400 leading-relaxed">
+                Get a quick ballpark estimate with our <Link to="/roof-cost-calculator/" className="text-red-500 hover:text-red-400 underline transition-colors">free online roof cost calculator</Link>, or call <a href="tel:+17542275605" className="text-red-500 hover:text-red-400 underline transition-colors">(754) 227-5605</a> for a detailed, no-obligation assessment at your West Palm Beach property.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 Complete Roofing Services in West Palm Beach

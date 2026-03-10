@@ -434,6 +434,50 @@ export default function FortLauderdalePage() {
 
           <div className="mb-20 max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+              Roof Replacement Cost in Fort Lauderdale (2026)
+            </h2>
+            <div className="space-y-4 text-zinc-400 leading-relaxed mb-8">
+              <p>
+                Fort Lauderdale roof replacement costs reflect the city's HVHZ requirements, Broward County permit fees, and coastal-grade material specifications. For a standard 2,000-square-foot home, here are 2026 pricing ranges by material:
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Architectural Shingles</h3>
+                <p className="text-red-500 text-2xl font-bold mb-3">$12,000 – $18,000</p>
+                <p className="text-zinc-400 leading-relaxed text-sm">
+                  Most budget-friendly for Fort Lauderdale homes. Impact-resistant Class 4 shingles recommended for insurance discounts. 20–30 year lifespan with proper HVHZ-compliant installation.
+                </p>
+              </div>
+              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Concrete Tile</h3>
+                <p className="text-red-500 text-2xl font-bold mb-3">$22,000 – $38,000</p>
+                <p className="text-zinc-400 leading-relaxed text-sm">
+                  Popular in Fort Lauderdale's established neighborhoods. HVHZ foam-adhesive installation required. Structural evaluation included — our CGC license covers any truss reinforcement needed for tile weight. 40–50+ year lifespan.
+                </p>
+              </div>
+              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Standing Seam Metal</h3>
+                <p className="text-red-500 text-2xl font-bold mb-3">$25,000 – $42,000</p>
+                <p className="text-zinc-400 leading-relaxed text-sm">
+                  Ideal for Fort Lauderdale's coastal and waterfront properties. Rated for 200+ mph winds. Corrosion-resistant coatings essential for salt air exposure. 40–60+ year lifespan with the best insurance premium reductions.
+                </p>
+              </div>
+              <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Flat Roof (TPO/Modified)</h3>
+                <p className="text-red-500 text-2xl font-bold mb-3">$16,000 – $30,000</p>
+                <p className="text-zinc-400 leading-relaxed text-sm">
+                  Common for Fort Lauderdale condos, commercial buildings, and modern residences. TPO and modified bitumen with engineered drainage. 20–30 year lifespan.
+                </p>
+              </div>
+            </div>
+            <p className="text-zinc-400 leading-relaxed">
+              All pricing includes materials, labor, Broward County permits, debris removal, and required inspections. Get a quick estimate with our <Link to="/roof-cost-calculator/" className="text-red-500 hover:text-red-400 underline transition-colors">free roof cost calculator</Link>, or call <a href="tel:+17542275605" className="text-red-500 hover:text-red-400 underline transition-colors">(754) 227-5605</a> for a detailed assessment.
+            </p>
+          </div>
+
+          <div className="mb-20 max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
               Permits & Local Expertise
             </h2>
             <div className="space-y-4 text-zinc-400 leading-relaxed">
