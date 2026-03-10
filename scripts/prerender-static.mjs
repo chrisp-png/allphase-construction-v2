@@ -1296,6 +1296,464 @@ function generateMetalRoofingContent() {
 }
 
 /**
+ * CUSTOM: Tile Roofing Page - /tile-roofing
+ * 900+ words covering flashing as primary waterproofing, foam adhesive engineering, installation failures
+ */
+function generateTileRoofingContent() {
+  return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem; background: white; color: #111827;">
+  <h1 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem; line-height: 1.2;">
+    Tile Roofs in South Florida: Why Most Fail Early
+  </h1>
+
+  <p style="font-size: 1.25rem; color: #374151; line-height: 1.75; margin-bottom: 2rem;">
+    Tile roofs in South Florida should last 40-50 years. Yet most homeowners experience leaks within the first decade. The problem isn't the tile — it's the installation. Specifically, the flashings that 90% of tile roofs are missing. And the foam adhesive that determines whether your roof survives at 100 mph or 225 mph.
+  </p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <p style="font-size: 1.125rem; font-weight: 600; color: #991b1b; margin-bottom: 0.5rem;">
+      Free Tile Roof Consultation: <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+    <p style="color: #374151; line-height: 1.75;">
+      HVHZ-certified tile roofing contractor. Dual-licensed in Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    The Flashing Problem: Why 90% of Florida Tile Roofs Leak Prematurely
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Here's what most homeowners don't understand: <strong>tile is not your waterproofing layer</strong>. Tile is a sacrificial UV shield that protects the actual waterproofing system underneath. That waterproofing system is your <strong>flashing network</strong> — metal channels, boots, and transitions that direct water flow around every roof penetration and detail.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    The underlayment (the synthetic barrier under the tile) is <strong>secondary waterproofing</strong>. It's designed to catch occasional water intrusion from wind-driven rain that gets past tile. But if flashings are missing or improperly installed, underlayment degrades rapidly from constant water exposure.
+  </p>
+
+  <div style="background: #fee2e2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">The 90% Problem</h3>
+    <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+      In our inspections of existing tile roofs in Broward and Palm Beach Counties, <strong>9 out of 10 roofs are missing critical flashings</strong>. Not because they failed — because they were never installed. Valley flashings terminate 6 inches short of the eave. Wall flashings aren't integrated into stucco. Pipe boots are missing kick-out flanges. These aren't "acceptable shortcuts" — they're code violations.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Where Flashings Are Required (And Typically Missing)
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Every one of these roof details requires <strong>custom-fabricated metal flashing</strong> to function properly:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Valley Flashings:</strong> Must extend from ridge to eave with continuous metal channel. The metal must turn up at least 8 inches on each side of the valley center. 90% of Florida valleys terminate short of the eave, dumping water onto fascia.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Roof-to-Wall Transitions:</strong> Require step flashing integrated into the wall's water-resistive barrier (behind stucco or siding). Most installations use caulk or pan flashing — both fail within 5 years.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Pipe and Vent Penetrations:</strong> Require two-piece boot systems with base flashing and storm collar. Most roofs use one-piece EPDM boots that crack from UV exposure within 10 years.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Chimney Flashings:</strong> Require counter-flashing reglets cut into masonry and full perimeter step flashing. Most chimneys use sealant and hope.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Ridge and Hip Flashings:</strong> Require vented closure strips and metal saddles at transitions. Most installations rely on mortar — which cracks from thermal expansion.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Drip Edge:</strong> Required at all eaves and rakes per Florida Building Code. Directs water into gutter without back-siphoning under tile. Often omitted entirely.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Skylight Flashings:</strong> Require four-piece pan assemblies with curb integration. Most leaks around skylights are flashing failures, not skylight failures.</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The labor reality:</strong> Proper flashing installation requires custom fabrication, precise measurements, and integration with structural elements during installation — not after the fact. It's time-consuming and requires skill. Contractors skip flashings to reduce labor costs and installation time.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Foam Adhesive: The Difference Between 100 MPH and 225 MPH
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    In South Florida's High Velocity Hurricane Zone (HVHZ), tile roofs must withstand <strong>175 mph sustained winds with gusts exceeding 200 mph</strong>. The only way to achieve this with concrete or clay tile is <strong>foam adhesive at every tile</strong>.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Mechanical fasteners alone (nails or screws) provide approximately <strong>90-110 mph wind resistance</strong>. Adding foam adhesive increases wind resistance to <strong>200-250 mph</strong> depending on tile profile and foam coverage.
+  </p>
+
+  <div style="background: #dcfce7; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #166534; margin-bottom: 0.5rem;">How Foam Adhesive Works</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      Polyurethane foam adhesive (not the same as spray foam insulation) is applied in a specific bead pattern to the underside of each tile during installation. As it cures, it bonds the tile to both the underlayment and adjacent tiles, creating a <strong>monolithic shell</strong> that resists wind uplift as a unified system rather than individual tiles fighting independently.
+    </p>
+  </div>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    The Application Pattern Matters
+  </h3>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Manufacturer specifications require specific foam bead patterns based on tile profile. For example:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Flat Concrete Tile:</strong> Two parallel beads plus perimeter bead at head and tail</li>
+    <li style="margin-bottom: 0.5rem;"><strong>S-Profile Tile:</strong> Center bead following tile contour plus head/tail adhesion</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Barrel Tile:</strong> Full contact adhesive across pan tiles; spot adhesive on cap tiles</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The verification problem:</strong> Once a roof is complete, you cannot verify foam adhesive was applied correctly without removing tiles. This is why project manager oversight during installation is critical.
+  </p>
+
+  <div style="background: #fffbeb; border: 2px solid #f59e0b; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #92400e; margin-bottom: 0.5rem;">Our Verification Process</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      All Phase Construction USA project managers <strong>randomly break installed tiles during each installation day</strong> to verify foam adhesive coverage and adhesion strength. If adhesive pattern is incorrect or adhesion is weak, the entire section is reinstalled. This destructive testing is the only way to verify proper installation before the roof is complete.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Roof-to-Wall Transitions: Where Most Tile Roofs Fail
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    When a tile roof meets a vertical wall (common on two-story homes, dormers, and chimney surrounds), proper integration requires <strong>step flashing behind the wall's water-resistive barrier</strong>. This means:
+  </p>
+
+  <ol style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">Remove stucco or siding at the transition zone (6 inches minimum)</li>
+    <li style="margin-bottom: 0.5rem;">Install step flashing that extends under the wall's weather barrier and over the roof underlayment</li>
+    <li style="margin-bottom: 0.5rem;">Reinstall and seal stucco/siding over the flashing's vertical leg</li>
+  </ol>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>What actually happens on most jobs:</strong> Contractors apply "pan flashing" (a single L-shaped piece of metal) over the finished stucco and caulk the joint. This works for 2-3 years until the caulk fails, UV degrades the sealant, or thermal expansion cracks the stucco. Water then runs behind the flashing and into the wall assembly.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Proper step flashing installation requires coordination with stucco contractors and adds 1-2 days to project duration. But it's the difference between a roof-to-wall transition that lasts 40 years versus one that fails in 5.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Concrete vs. Clay Tile: Functional Differences
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Both concrete and clay tile can be engineered to the same wind ratings when properly installed. The practical differences:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Weight:</strong> Clay tile (8-10 lbs/sq ft) vs. Concrete tile (10-12 lbs/sq ft). Older homes built for shingles may require structural reinforcement for either option.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Color Retention:</strong> Clay tile is through-body colored; concrete tile uses surface coatings that may fade over 20-30 years depending on pigment quality.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Thermal Performance:</strong> Clay tile has slightly better thermal mass and UV reflectivity, reducing attic heat gain by 3-5°F compared to concrete.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Cost:</strong> Clay tile typically costs 20-30% more than concrete for equivalent profiles due to material cost and manufacturing complexity.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Repairability:</strong> Both are brittle and crack if walked on improperly. Clay tile shatters more cleanly; concrete tile can chip/spall at edges.</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    For most residential applications in South Florida, <strong>concrete tile provides the best value</strong> when proper installation techniques (foam adhesive and complete flashing) are followed. Clay tile is preferred for historic preservation, high-end custom homes, or where through-body color is architecturally important.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Dual Licensing Matters for Tile Roofing
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction USA holds both <strong>State Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses. For tile roofing, this dual licensing is essential because:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Structural Load Assessment:</strong> Tile roofs weigh 5-6x more than shingles. When replacing shingles with tile, structural evaluation is required to verify roof framing can handle the load. Our CGC license qualifies us to perform these assessments and engineer reinforcements if needed.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Wall Integration:</strong> Proper roof-to-wall flashing requires stucco removal and integration with wall framing. This is general contracting work that roofing-only contractors cannot legally perform.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Permits and Inspections:</strong> Major tile roof installations require structural permits in addition to roofing permits. Dual licensing ensures we can pull all required permits and coordinate inspections across trades.</li>
+  </ul>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Tile Roof Investment Range
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Residential tile roof installation in Broward and Palm Beach Counties typically ranges from <strong>$25,000 to $75,000+</strong> depending on:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li>Tile material (concrete vs. clay)</li>
+    <li>Tile profile (flat, S-tile, barrel, custom)</li>
+    <li>Roof complexity (hip/valley count, pitch, wall transitions)</li>
+    <li>Structural reinforcement requirements</li>
+    <li>Flashing scope (simple gable roof vs. complex multi-plane design)</li>
+    <li>HVHZ enhanced installation requirements (foam adhesive labor)</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Properly installed tile roofs last <strong>40-50+ years</strong> and provide superior hurricane protection, fire resistance (Class A), and curb appeal compared to alternative materials. The upfront investment is higher than shingles but provides better long-term value.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Related Roofing Services
+  </h2>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Professional Roof Inspection</a> — Structural assessment and tile roof condition evaluation</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Tile Roof Repair</a> — Broken tile replacement, flashing repair, and leak diagnosis</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/residential-roofing" style="color: #dc2626; text-decoration: underline;">Residential Roofing Services</a> — Complete home roofing solutions for South Florida properties</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Shingle Roofing</a> — Compare tile vs. shingle cost and performance</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a> — Standing seam metal as an alternative to tile</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing</a> — TPO and PVC systems for low-slope applications</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border: 2px solid #dc2626; padding: 2rem; margin: 3rem 0; border-radius: 8px; text-align: center;">
+    <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+      Schedule Your Free Tile Roof Consultation
+    </h3>
+    <p style="font-size: 1.125rem; color: #374151; margin-bottom: 1.5rem;">
+      HVHZ-certified tile roofing contractor. Dual-licensed in Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+    <p style="font-size: 1.5rem; font-weight: bold; color: #dc2626;">
+      Call <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * CUSTOM: Flat Roofing Page - /flat-roofing
+ * 900+ words covering seam failures, TPO vs PVC chemistry, My Safe Florida Condo program
+ */
+function generateFlatRoofingContent() {
+  return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem; background: white; color: #111827;">
+  <h1 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem; line-height: 1.2;">
+    Flat Roofing Done Right — Where the Seams Make or Break Your Roof
+  </h1>
+
+  <p style="font-size: 1.25rem; color: #374151; line-height: 1.75; margin-bottom: 2rem;">
+    Flat roofs in South Florida fail at the seams. Not because the membrane material degrades — but because <strong>95% of commercial flat roofs are installed with adhesion welding when they should use cohesion welding</strong>. The difference is molecular. And it determines whether your roof lasts 15 years or 40.
+  </p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <p style="font-size: 1.125rem; font-weight: 600; color: #991b1b; margin-bottom: 0.5rem;">
+      Free Flat Roof Consultation: <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+    <p style="color: #374151; line-height: 1.75;">
+      Commercial flat roofing specialist. Dual-licensed in Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Flat Roofs Fail in South Florida: The Three Failure Modes
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Commercial flat roofs experience three primary failure mechanisms, all accelerated by South Florida's climate:
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    1. Seam Failures (70% of All Leaks)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Single-ply membrane roofs (TPO and PVC) are installed in rolls that must be seamed together. These seams experience <strong>constant thermal expansion/contraction cycles</strong> as roof surface temperatures swing from 85°F at night to 170°F+ during peak sun exposure. Poor seam welding is the primary cause of flat roof failure.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    2. Ponding Water (20% of Failures)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Flat roofs are actually <strong>low-slope roofs</strong> with minimum 1/4" per foot pitch required for drainage. When structural deflection, settlement, or improper installation creates areas where water ponds for more than 48 hours, UV accelerates membrane degradation. Biological growth (algae) and chemical breakdown occur in ponding zones.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    3. Flashing Failures (10% of Failures)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Penetrations (HVAC curbs, drains, vents) and perimeter terminations require custom flashing details. These are <strong>hand-fabricated field conditions</strong> where most installers take shortcuts. Improper flashing installation causes premature failures at every roof penetration.
+  </p>
+
+  <div style="background: #fee2e2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">The 70% Problem: Seam Integrity</h3>
+    <p style="color: #374151; line-height: 1.75;">
+      If you have a commercial flat roof in Florida and it's leaking, there's a <strong>70% chance the leak is at a seam</strong> — not from membrane puncture, not from UV degradation, but from <strong>poor seam welding during installation</strong>. This is preventable with proper material selection and installation technique.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    TPO vs. PVC: The Molecular Difference
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Both TPO (Thermoplastic Polyolefin) and PVC (Polyvinyl Chloride) are single-ply thermoplastic membranes that are heat-welded during installation. They look similar. But at the molecular level, they behave very differently when welded.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    TPO: Adhesion Welding (Surface Bonding)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    TPO is a polyolefin polymer — chemically similar to polyethylene. When heat-welded, TPO sheets bond through <strong>adhesion</strong>: the polymer chains at the surface melt and stick together, but the two sheets remain distinct layers.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The problem with adhesion welding:</strong> As the membrane expands and contracts with temperature changes, differential thermal stress concentrates at the seam interface. Over time, this <strong>peels the adhesion bond apart</strong> like two pieces of tape separating. TPO seams typically begin separating after 10-15 years of Florida UV and thermal cycling.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    PVC: Cohesion Welding (Molecular Fusion)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    PVC contains <strong>plasticizers</strong> that make the polymer flexible. When heat-welded, these plasticizers migrate across the seam interface and allow polymer chains from both sheets to <strong>intermingle and fuse</strong> at the molecular level. The two sheets become <strong>one monolithic piece</strong> with no interface layer.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Why cohesion welding performs better:</strong> Because there's no interface layer, thermal stress is distributed across the entire seam zone rather than concentrated at a bond line. PVC seams don't "peel apart" — because there's nothing to peel. The seam becomes as strong as the base membrane itself.
+  </p>
+
+  <div style="background: #dcfce7; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #166534; margin-bottom: 0.5rem;">Field Performance Data</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      In South Florida's harsh UV environment, properly installed PVC roofs routinely achieve <strong>30-40+ year service life</strong>. TPO roofs typically require seam repair or replacement at <strong>12-18 years</strong>. The cost difference at installation is 10-15%. The performance difference is 20+ years of service life.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    The KEE Factor: Why Some PVC Roofs Fail Early
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Not all PVC roofing membranes perform equally. The performance difference comes down to the <strong>plasticizer chemistry</strong> used to make PVC flexible.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Traditional PVC uses <strong>phthalate plasticizers</strong>. These work well initially, but in South Florida's heat and UV exposure, phthalates <strong>slowly migrate out of the membrane over time</strong> — a process called plasticizer loss. As plasticizers leave, the PVC becomes brittle and cracks.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Some manufacturers add <strong>KEE (Ketone Ethylene Ester)</strong> copolymers to slow plasticizer migration. KEE acts as a "plasticizer trap" that reduces the rate at which phthalates escape. This extends service life from 20-25 years to 30-35 years.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    IB Roof Systems: No KEE Required
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction USA primarily installs <strong>IB Roof Systems</strong> PVC membranes, which use a proprietary plasticizer formulation that doesn't require KEE stabilization. IB achieves exceptional long-term flexibility and heat-weld strength without relying on KEE chemistry to hold plasticizers in place.
+  </p>
+
+  <div style="background: #fffbeb; border: 2px solid #f59e0b; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #92400e; margin-bottom: 0.5rem;">Why We Prefer IB Roof Systems</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      IB Roof Systems PVC membranes have documented 40+ year installations in Florida with no plasticizer loss, excellent seam integrity, and minimal UV degradation. The membrane remains flexible and heat-weldable even after decades of UV exposure — which matters when repairs or additions are needed.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    My Safe Florida Condo Program: 2:1 Matching Grant for Condominium Roof Replacement
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    The <strong>My Safe Florida Condo Program</strong> provides matching grants up to <strong>$175,000 per building</strong> (2:1 match) for condominium associations replacing roofs with improved hurricane resistance. This program specifically funds:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">Roof replacement with enhanced wind-rated systems</li>
+    <li style="margin-bottom: 0.5rem;">Roof-to-wall connection upgrades</li>
+    <li style="margin-bottom: 0.5rem;">Opening protection (impact windows/shutters) as part of roof projects</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>How the 2:1 match works:</strong> For every $1 the condominium association spends on an eligible roof project, the State of Florida provides $2 in grant funding, up to a maximum state contribution of $175,000 per building. This means:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">If your project costs $75,000 total, you pay $25,000 and receive $50,000 in grant funding</li>
+    <li style="margin-bottom: 0.5rem;">If your project costs $250,000 total, you pay $83,333 and receive $166,667 in grant funding (capped at $175,000 max grant)</li>
+  </ul>
+
+  <div style="background: #dcfce7; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #166534; margin-bottom: 0.5rem;">Grant Requirements</h4>
+    <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+      To qualify, the condominium association must:
+    </p>
+    <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem;">
+      <li>Be located in Florida</li>
+      <li>Have 75% owner approval (not renter approval)</li>
+      <li>Replace existing roof with a system rated for higher wind resistance</li>
+      <li>Use a state-licensed contractor (CCC or CGC license required)</li>
+    </ul>
+  </div>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Condo/HOA Execution: Phased Approach and Resident Communication
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Multi-building condominium roof replacements require specialized execution to minimize resident disruption and maintain building access. All Phase Construction USA's approach includes:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Phased Scheduling:</strong> Buildings are re-roofed sequentially so residents maintain access to parking, amenities, and entry/exit routes</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Resident Notification:</strong> Door hangers 48 hours before work begins on each building detailing noise, access restrictions, and completion timeline</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Board Coordination:</strong> Weekly progress reports to HOA board with photo documentation and schedule updates</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Safety Protocols:</strong> Perimeter fencing, signage, and designated material staging areas away from resident walkways</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Weather Contingency:</strong> Each building is weatherproofed daily so rain doesn't cause interior damage if schedule shifts</li>
+  </ul>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Dual Licensing Matters for Commercial Flat Roofing
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction USA holds both <strong>State Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses. For commercial flat roofing, this dual licensing is essential because:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Structural Integration:</strong> Flat roof drainage systems often require structural modifications (roof crickets, tapered insulation systems, drain relocation). CGC licensing allows us to perform these modifications in-house.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>HVAC Coordination:</strong> Commercial flat roofs interact with rooftop HVAC units, exhaust vents, and equipment curbs. Proper coordination requires general contracting expertise.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Multi-Trade Projects:</strong> Large commercial re-roofs often include parapet repairs, coping replacement, and building envelope upgrades that fall under general contracting scope.</li>
+  </ul>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Commercial Flat Roof Investment Range
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Commercial flat roof installation in Broward and Palm Beach Counties typically ranges from <strong>$5 to $15 per square foot</strong> depending on:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li>Membrane type (TPO vs. PVC)</li>
+    <li>Membrane thickness (45-mil vs. 60-mil vs. 80-mil)</li>
+    <li>Insulation type and R-value requirements</li>
+    <li>Roof complexity (penetrations, parapet height, drainage modifications)</li>
+    <li>Access challenges (high-rise buildings requiring crane access)</li>
+    <li>Scope of work (recover vs. tear-off vs. repair)</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    For condominium associations eligible for the My Safe Florida Condo Program, the 2:1 matching grant can reduce net project cost by approximately <strong>60-70%</strong>.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Related Roofing Services
+  </h2>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><a href="/commercial-roofing" style="color: #dc2626; text-decoration: underline;">Commercial Roofing Services</a> — Complete commercial roofing solutions for multi-tenant buildings</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Professional Roof Inspection</a> — Infrared moisture scanning and flat roof condition assessment</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Flat Roof Repair</a> — Emergency leak repair and seam rehabilitation</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">Roof Maintenance Programs</a> — Preventive maintenance contracts for commercial properties</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a> — Standing seam metal for low-slope applications</li>
+  </ul>
+
+  <div style="background: #f3f4f6; border: 2px solid #dc2626; padding: 2rem; margin: 3rem 0; border-radius: 8px; text-align: center;">
+    <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+      Schedule Your Free Commercial Roof Consultation
+    </h3>
+    <p style="font-size: 1.125rem; color: #374151; margin-bottom: 1.5rem;">
+      Commercial flat roofing specialist. Dual-licensed in Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+    <p style="font-size: 1.5rem; font-weight: bold; color: #dc2626;">
+      Call <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * CUSTOM: Residential Roofing Page - /residential-roofing
  * 800+ words covering building envelope concept, thermal shock, dual licensing
  */
@@ -3386,6 +3844,8 @@ ${companyAuthorityFooter()}
       pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() :
       pagePath === '/shingle-roofing' ? generateShingleRoofingContent() :
       pagePath === '/metal-roofing' ? generateMetalRoofingContent() :
+      pagePath === '/tile-roofing' ? generateTileRoofingContent() :
+      pagePath === '/flat-roofing' ? generateFlatRoofingContent() :
       pagePath === '/residential-roofing' ? generateResidentialRoofingContent() :
       pagePath === '/commercial-roofing' ? generateCommercialRoofingContent() :
       pagePath === '/roof-repair' ? generateRoofRepairHubContent() :
