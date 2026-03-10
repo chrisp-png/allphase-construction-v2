@@ -283,7 +283,7 @@ const faqData: FAQItem[] = [
           <li>What hurricane-specific details will your proposal include (fastener schedules, underlayment type, wind rating)?</li>
           <li>What is your process if an inspector requires corrections?</li>
         </ul>
-        Read our complete <Link to="/how-to-hire-roofing-contractor/" className="text-red-600 hover:text-red-500">guide to hiring a roofing contractor</Link>.
+        Read our complete <Link to="/how-to-hire-roofing-contractor/" className="text-red-600 hover:text-red-500">guide to hiring a roofing contractor</Link> and learn <Link to="/licensed-roofing-contractor" className="text-red-600 hover:text-red-500">how to verify a roofer's license</Link> before signing.
       </>
     )
   },

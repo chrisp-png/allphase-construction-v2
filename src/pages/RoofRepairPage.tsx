@@ -139,7 +139,7 @@ export default function RoofRepairPage() {
             <li>If your roof is 15 years or older, you have the right to an inspection before they can require replacement</li>
             <li>If that inspection shows 5+ years of useful life remaining, they cannot non-renew your policy based on roof age</li>
           </ul>
-          <p>As a licensed roofing and general contractor, we're authorized under the statute to perform this inspection and provide the certification letter. A comprehensive roof restoration that addresses vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage and buying you time before a full replacement.</p>
+          <p>As a <Link to="/licensed-roofing-contractor" className="text-red-600 hover:text-red-500 underline transition-colors">licensed roofing and general contractor</Link>, we're authorized under the statute to perform this inspection and provide the certification letter. A comprehensive roof restoration that addresses vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage and buying you time before a full replacement.</p>
           <a
             href="https://www.flsenate.gov/Laws/Statutes/2022/0627.7011"
             target="_blank"

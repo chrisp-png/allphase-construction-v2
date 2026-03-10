@@ -50,10 +50,20 @@ export default function WestPalmBeachPage() {
       { name: 'West Palm Beach', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/west-palm-beach' }
     ]);
 
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+      }))
+    };
+
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
     existingSchemas.forEach(schema => schema.remove());
 
-    [localBusinessSchema, breadcrumbSchema].forEach(schema => {
+    [localBusinessSchema, breadcrumbSchema, faqSchema].forEach(schema => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.text = JSON.stringify(schema);

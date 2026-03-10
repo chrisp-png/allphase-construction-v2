@@ -364,7 +364,7 @@ export default function HowToHireRoofingContractorPage() {
             </div>
 
             <p className="text-lg text-zinc-300 leading-relaxed">
-              Not all roofers are qualified to work in this environment. A contractor licensed in another state—or even in North Florida—may not understand HVHZ requirements. Always verify that your contractor is licensed specifically for work in Southeast Florida and has a demonstrated track record of passing inspections in Broward or Palm Beach County.
+              Not all roofers are qualified to work in this environment. A contractor licensed in another state—or even in North Florida—may not understand HVHZ requirements. Always <Link to="/licensed-roofing-contractor" className="text-red-500 hover:text-red-400 underline transition-colors">verify that your contractor is licensed</Link> specifically for work in Southeast Florida and has a demonstrated track record of passing inspections in Broward or Palm Beach County.
             </p>
           </div>
         </div>

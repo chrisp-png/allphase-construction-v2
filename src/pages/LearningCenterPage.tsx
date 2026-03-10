@@ -59,6 +59,7 @@ const maintenanceInspections = [
 ];
 
 const homeownerGuides = [
+  { title: 'How to Verify a Licensed Roofing Contractor in Florida', href: '/licensed-roofing-contractor' },
   { title: 'Common Roofing Myths Homeowners Still Believe', href: '/blog/common-roofing-myths-that-homeowners-still-believe' },
   { title: 'How to Prepare Your Roof for the Real Estate Market', href: '/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home' },
   { title: 'Visualize Your New Roof with AI-Powered Tools', href: '/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview' },
