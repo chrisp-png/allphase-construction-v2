@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import MidPageCTA from '../components/MidPageCTA';
 import { Phone, CheckCircle2, Home, ChevronRight, Shield, Clock, FileCheck, ChevronDown, X, AlertCircle, Award } from 'lucide-react';
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
@@ -895,6 +896,11 @@ export default function RoofReplacementProcessPage() {
         </div>
       </section>
 
+      {/* Mid-Page CTA */}
+      <div className="max-w-6xl mx-auto px-4">
+        <MidPageCTA headline="Questions About the Process?" subtext="Talk to a dual-licensed contractor who can walk you through every step — no pressure." />
+      </div>
+
       {/* Step 04 */}
       <section className="py-32 px-4 bg-zinc-950">
         <div className="max-w-7xl mx-auto">
@@ -1495,6 +1501,11 @@ export default function RoofReplacementProcessPage() {
           </div>
         </div>
       </section>
+
+      {/* Mid-Page CTA 2 */}
+      <div className="max-w-6xl mx-auto px-4">
+        <MidPageCTA headline="Ready for a New Roof?" subtext="Get a detailed written estimate with material specs, timeline, and warranty information." />
+      </div>
 
       {/* Step 09 - Final Installation */}
       <section className="py-32 px-4">

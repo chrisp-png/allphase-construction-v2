@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import MidPageCTA from '../components/MidPageCTA';
 import {
   Phone,
   CheckCircle2,
@@ -532,6 +533,11 @@ export default function MetalRoofingPage() {
           </div>
         </div>
       </section>
+
+      {/* Mid-Page CTA */}
+      <div className="max-w-6xl mx-auto px-4">
+        <MidPageCTA headline="Get a Free Metal Roof Estimate" subtext="Standing seam or exposed fastener — get an accurate quote for your property." />
+      </div>
 
       {/* Gauge Section */}
       <section className="py-20 px-4">
