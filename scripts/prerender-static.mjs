@@ -2366,7 +2366,109 @@ ${companyAuthorityFooter()}
     'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
     'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach',
-    bestRoofersDFBContent
+    bestRoofersDFBContent,
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://allphaseconstructionfl.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Deerfield Beach",
+            "item": "https://allphaseconstructionfl.com/locations/deerfield-beach"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best Roofers in Deerfield Beach",
+            "item": "https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a new roof cost in Deerfield Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most residential roof replacements in Deerfield Beach range from $9,000 to $45,000+ depending on roof type, size, and materials. HVHZ compliance and Broward County permitting add cost that is unavoidable and non-negotiable for code-compliant work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a permit for roofing work in Deerfield Beach / Broward County?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — virtually all roofing work in Broward County requires a permit pulled by your licensed contractor. Your contractor should handle this entirely. If a roofer tells you permits aren't needed for your project, that is a serious red flag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HVHZ and does it apply to Deerfield Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HVHZ stands for High Velocity Hurricane Zone. Deerfield Beach is in Broward County, which is designated HVHZ. Every roofing material and installation method must meet Florida Building Code Section 1504 wind resistance requirements and carry a Notice of Acceptance (NOA)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a wind mitigation inspection and why does it matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A wind mitigation inspection documents how your roof is built relative to Florida's wind standards. Insurance companies use this report to calculate premium discounts. A strong wind mitigation report can reduce your homeowner's insurance by several hundred to several thousand dollars annually."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a roofing license and a general contractor license in Florida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Certified Roofing Contractor (CRC) license authorizes a contractor to install and repair roof systems. A Certified General Contractor (CGC) license authorizes structural, framing, and broader construction scope. A dual-licensed contractor — like All Phase Construction USA — can legally handle both the roof and any structural issues discovered during the project."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I know if I need repair or full replacement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "General rule: if damage is localized and the roof system is under 15 years old, repair often makes sense. If the roof is 20+ years old, has multiple problem areas, or if repair cost approaches 25-30% of replacement cost, full replacement provides better long-term value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does homeowner's insurance cover roof damage in Florida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the cause and your policy. Storm damage, wind damage, and sudden events are typically covered. Gradual wear, maintenance issues, and pre-existing damage are generally not. Strong documentation and a contractor familiar with the claims process can significantly improve outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a Deerfield Beach homeowner pull their own roof permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. In Broward County, roofing permits must be pulled by a licensed contractor, not the homeowner. Any contractor who asks you to pull the permit is either unlicensed or attempting to avoid accountability for the work."
+            }
+          }
+        ]
+      }
+    ]
   ));
   console.log('ÃÂ¢ÃÃ Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
 
@@ -2478,7 +2580,101 @@ ${companyAuthorityFooter()}
     'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
     'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale',
-    bestRoofersFTLContent
+    bestRoofersFTLContent,
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://allphaseconstructionfl.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fort Lauderdale",
+            "item": "https://allphaseconstructionfl.com/locations/fort-lauderdale"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best Roofers Fort Lauderdale",
+            "item": "https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I verify a roofing contractor's license in Fort Lauderdale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by the contractor's name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and that it is not suspended or under disciplinary action."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my roof replacement in Fort Lauderdale need a permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Any roof replacement or significant repair in Fort Lauderdale requires a permit from the City of Fort Lauderdale Building Services Department. The permit triggers a final inspection by a city building inspector. Work performed without a permit is a code violation and can create complications with insurance claims and property sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HVHZ and why does it matter in Fort Lauderdale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HVHZ stands for High Velocity Hurricane Zone. Fort Lauderdale and all of Broward County fall within this designation under the Florida Building Code. HVHZ requirements specify more stringent fastening schedules, approved product lists, and installation methods than the standard Florida Building Code. Any roofing contractor working in Fort Lauderdale must be familiar with and comply with HVHZ requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my homeowner's insurance to pay for a new roof in Fort Lauderdale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value — the difference can be substantial on an older roof."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What roofing materials are best for Fort Lauderdale's climate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile is the most common residential roofing material in Fort Lauderdale and performs well in South Florida's climate — it's impact-resistant, has a long service life, and has established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a roof last in Fort Lauderdale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile roofs in Fort Lauderdale typically last 25–40 years with proper maintenance, though underlayment replacement is often needed in the 15–20 year range. Asphalt shingles last 15–20 years under South Florida conditions. Metal roofing has a 40–50 year service life. Flat roofing systems (modified bitumen, TPO) typically require maintenance every 10–15 years and full replacement after 20–25 years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do immediately after a storm damages my roof?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Document the damage with photographs before any temporary repairs are made. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage — this is typically covered under your policy's emergency repair provision. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment."
+            }
+          }
+        ]
+      }
+    ]
   ));
   console.log('ÃÂ¢ÃÃ Prerendered: locations/fort-lauderdale/best-roofers-fort-lauderdale/index.html');
 
@@ -2585,7 +2781,101 @@ ${companyAuthorityFooter()}
     'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
     'Looking for the best roofers in West Palm Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach',
-    bestRoofersWPBContent
+    bestRoofersWPBContent,
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://allphaseconstructionfl.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "West Palm Beach",
+            "item": "https://allphaseconstructionfl.com/locations/west-palm-beach"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best Roofers West Palm Beach",
+            "item": "https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I verify a roofing contractor's license in West Palm Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by the contractor's name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and that it is not suspended or under disciplinary action."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my roof replacement in West Palm Beach need a permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Any roof replacement or significant repair in West Palm Beach requires a permit from Palm Beach County Building Division. The permit triggers a final inspection by a county building inspector. Work performed without a permit is a code violation and can create complications with insurance claims and property sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HVHZ and why does it matter in West Palm Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HVHZ stands for High Velocity Hurricane Zone. West Palm Beach and all of Palm Beach County fall within this designation under the Florida Building Code. HVHZ requirements specify more stringent fastening schedules, approved product lists, and installation methods than the standard Florida Building Code. Any roofing contractor working in West Palm Beach must be familiar with and comply with HVHZ requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my homeowner's insurance to pay for a new roof in West Palm Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value — the difference can be substantial on an older roof."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What roofing materials are best for West Palm Beach's climate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile is the most common residential roofing material in West Palm Beach and performs well in South Florida's climate — it's impact-resistant, has a long service life, and has established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a roof last in West Palm Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile roofs in West Palm Beach typically last 25–40 years with proper maintenance, though underlayment replacement is often needed in the 15–20 year range. Asphalt shingles last 15–20 years under South Florida conditions. Metal roofing has a 40–50 year service life. Flat roofing systems (modified bitumen, TPO) typically require maintenance every 10–15 years and full replacement after 20–25 years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do immediately after a storm damages my roof?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Document the damage with photographs before any temporary repairs are made. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage — this is typically covered under your policy's emergency repair provision. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment."
+            }
+          }
+        ]
+      }
+    ]
   ));
   console.log('ÃÂ¢ÃÃ Prerendered: locations/west-palm-beach/best-roofers-west-palm-beach/index.html');
 
@@ -2695,7 +2985,101 @@ ${companyAuthorityFooter()}
     'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
     'Looking for the best roofers in Boca Raton? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton',
-    bestRoofersBocaContent
+    bestRoofersBocaContent,
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://allphaseconstructionfl.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Boca Raton",
+            "item": "https://allphaseconstructionfl.com/locations/boca-raton"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best Roofers Boca Raton",
+            "item": "https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I verify a roofing contractor's license in Boca Raton?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by the contractor's name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and that it is not suspended or under disciplinary action."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my roof replacement in Boca Raton need a permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Any roof replacement or significant repair in Boca Raton requires a permit from Palm Beach County Building Division. The permit triggers a final inspection by a county building inspector. Work performed without a permit is a code violation and can create complications with insurance claims and property sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HVHZ and why does it matter in Boca Raton?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HVHZ stands for High Velocity Hurricane Zone. Boca Raton and all of Palm Beach County fall within this designation under the Florida Building Code. HVHZ requirements specify more stringent fastening schedules, approved product lists, and installation methods than the standard Florida Building Code. Any roofing contractor working in Boca Raton must be familiar with and comply with HVHZ requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my homeowner's insurance to pay for a new roof in Boca Raton?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value — the difference can be substantial on an older roof."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What roofing materials are best for Boca Raton's climate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile is the most common residential roofing material in Boca Raton and performs well in South Florida's climate — it's impact-resistant, has a long service life, and has established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a roof last in Boca Raton?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile roofs in Boca Raton typically last 25–40 years with proper maintenance, though underlayment replacement is often needed in the 15–20 year range. Asphalt shingles last 15–20 years under South Florida conditions. Metal roofing has a 40–50 year service life. Flat roofing systems (modified bitumen, TPO) typically require maintenance every 10–15 years and full replacement after 20–25 years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do immediately after a storm damages my roof?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Document the damage with photographs before any temporary repairs are made. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage — this is typically covered under your policy's emergency repair provision. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment."
+            }
+          }
+        ]
+      }
+    ]
   ));
   console.log('ÃÂ¢ÃÃ Prerendered: locations/boca-raton/best-roofers-boca-raton/index.html');
 
@@ -2807,7 +3191,101 @@ ${companyAuthorityFooter()}
     'Top 5 Roofers in Coral Springs FL (2026) | All Phase',
     'Looking for the best roofers in Coral Springs? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs',
-    bestRoofersCoralContent
+    bestRoofersCoralContent,
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://allphaseconstructionfl.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Coral Springs",
+            "item": "https://allphaseconstructionfl.com/locations/coral-springs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best Roofers Coral Springs",
+            "item": "https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I verify a roofing contractor's license in Coral Springs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by the contractor's name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and that it is not suspended or under disciplinary action."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my roof replacement in Coral Springs need a permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Any roof replacement or significant repair in Coral Springs requires a permit from Broward County Building Division. The permit triggers a final inspection by a county building inspector. Work performed without a permit is a code violation and can create complications with insurance claims and property sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HVHZ and why does it matter in Coral Springs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HVHZ stands for High Velocity Hurricane Zone. Coral Springs and all of Broward County fall within this designation under the Florida Building Code. HVHZ requirements specify more stringent fastening schedules, approved product lists, and installation methods than the standard Florida Building Code. Any roofing contractor working in Coral Springs must be familiar with and comply with HVHZ requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my homeowner's insurance to pay for a new roof in Coral Springs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value — the difference can be substantial on an older roof."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What roofing materials are best for Coral Springs's climate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile is the most common residential roofing material in Coral Springs and performs well in South Florida's climate — it's impact-resistant, has a long service life, and has established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a roof last in Coral Springs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete tile roofs in Coral Springs typically last 25–40 years with proper maintenance, though underlayment replacement is often needed in the 15–20 year range. Asphalt shingles last 15–20 years under South Florida conditions. Metal roofing has a 40–50 year service life. Flat roofing systems (modified bitumen, TPO) typically require maintenance every 10–15 years and full replacement after 20–25 years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do immediately after a storm damages my roof?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Document the damage with photographs before any temporary repairs are made. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage — this is typically covered under your policy's emergency repair provision. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment."
+            }
+          }
+        ]
+      }
+    ]
   ));
   console.log('ÃÂ¢ÃÃ Prerendered: locations/coral-springs/best-roofers-coral-springs/index.html');
 
