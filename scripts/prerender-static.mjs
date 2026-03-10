@@ -1609,8 +1609,183 @@ const CITY_PAGE_SCHEMAS = {
 };
 
 
-  
-  
+  /**
+   * Generate comprehensive content for Roof Replacement Process page
+   * Matches the 2,385-line React component content
+   */
+  function generateRoofReplacementProcessContent() {
+    return `
+  <h1>Our 10-Step Roof Replacement Process in South Florida</h1>
+
+  <p>Replacing a roof in South Florida requires more than just removing old shingles and installing new ones. Every project must meet High Velocity Hurricane Zone (HVHZ) standards with engineered calculations, product approvals, building permits, and municipal inspections. The process typically takes 4-6 weeks from initial inspection through final approval, with 3-7 days of active construction.</p>
+
+  <p>Our 10-step system ensures code compliance, proper material selection, thorough documentation, and zero surprises — protecting your investment with permits, warranties, and third-party verification that standard contractors often skip. From engineering to final inspection, see exactly how we navigate Florida's strictest building codes to deliver roofs that meet HVHZ compliance and exceed your expectations.</p>
+
+  <h2>Step 1: Initial Inspection & Assessment</h2>
+
+  <p>Comprehensive roof evaluation using thermal imaging, moisture detection, and detailed documentation of all roofing materials, structural deck, flashing systems, and ventilation. We inspect:</p>
+
+  <ul>
+    <li><strong>Roof Surface & Materials:</strong> Shingle, tile, or metal condition assessment, missing or damaged material documentation, granule loss and UV degradation evaluation, wind and storm damage identification</li>
+    <li><strong>Structural Components:</strong> Roof decking integrity, soffit, fascia, and drip edge condition, roof framing and truss visible inspection, chimney and penetration flashing</li>
+    <li><strong>Ventilation & Attic:</strong> Attic ventilation adequacy, moisture intrusion and mold presence, insulation condition and R-value, thermal imaging for hidden leaks</li>
+    <li><strong>Drainage & Waterproofing:</strong> Valley condition and water flow patterns, gutter and downspout functionality, flashing at walls and chimneys, ponding water areas on flat sections</li>
+  </ul>
+
+  <p>After inspection, you receive a detailed report including photo documentation of all deficiencies, thermal imaging results showing moisture intrusion, accurate roof measurements with pitch and area calculations, recommended repairs or replacement with honest assessment of remaining service life, and code compliance evaluation noting any HVHZ violations. Get your <a href="/roof-inspection">professional roof inspection</a> scheduled today.</p>
+
+  <h2>Step 2: Detailed Estimate & Planning</h2>
+
+  <p>Transparent pricing with itemized breakdown of materials, labor, timeline, and HVHZ compliance requirements including engineering fees and permit costs. We provide detailed estimates covering all material specifications with manufacturer and model numbers, labor breakdown by phase (tear-off, installation, cleanup), permit fees and engineering costs, timeline with weather contingencies, warranty options (material and workmanship), and financing options if needed.</p>
+
+  <p>Our estimates include everything — no hidden fees for permits, engineering, disposal, or structural repairs. We explain every line item so you understand exactly what you're paying for. Use our <a href="/roof-cost-calculator">roof cost calculator</a> for an instant estimate, then schedule an in-person inspection for precise pricing.</p>
+
+  <h2>Step 3: Material Selection & Ordering</h2>
+
+  <p>Choose from premium manufacturer-certified materials that meet Miami-Dade and Broward County building codes. We help you select the right system for your home, budget, and aesthetic preferences:</p>
+
+  <ul>
+    <li><strong><a href="/shingle-roofing">Asphalt Shingle Roofing</a>:</strong> Premium architectural shingles with HVHZ approval, Class 4 impact resistance available, 30-50 year warranties, Class 3 & 4 impact ratings, algae resistant. Cost: $5.50-$8.50 per square foot installed.</li>
+    <li><strong><a href="/tile-roofing">Concrete & Clay Tile</a>:</strong> Traditional S-tile and flat tile systems built for Florida weather and aesthetics, lifetime material durability, superior wind resistance, energy efficient. Cost: $10-$18 per square foot installed.</li>
+    <li><strong><a href="/metal-roofing">Metal Roofing Systems</a>:</strong> Standing seam and metal shingle systems with maximum wind and fire ratings, 50+ year lifespan, highest wind ratings, reflective coatings. Cost: $12-$22 per square foot installed.</li>
+    <li><strong><a href="/flat-roofing">Flat & Low-Slope</a>:</strong> TPO, EPDM, and modified bitumen systems for commercial and residential applications, seamless installations, Energy Star rated, ponding water resistant. Cost varies by system type.</li>
+  </ul>
+
+  <p>Once materials are selected, we order HVHZ-approved products with proper Notice of Acceptance (NOA) documentation and schedule delivery to coordinate with permit approval and installation timeline.</p>
+
+  <h2>Step 4: Permitting & Engineering</h2>
+
+  <p>We handle all permits, engineering calculations, product approvals (NOA), and municipal submittals required for HVHZ compliance in South Florida. This includes:</p>
+
+  <ul>
+    <li><strong>Structural Calculations:</strong> Wind load analysis specific to your roof design, uplift calculations for fastening requirements, truss load verification if structural changes needed</li>
+    <li><strong>Product Approvals:</strong> Miami-Dade NOA or Florida Product Approval for all materials, manufacturer installation specifications, HVHZ-compliant fastening schedules</li>
+    <li><strong>Permit Applications:</strong> Complete submittal packages to building departments, plan review coordination, correction responses if needed</li>
+    <li><strong>Final Inspection Scheduling:</strong> Coordinated with building department, certificate of completion processing</li>
+  </ul>
+
+  <p>Permits typically take 2-3 weeks in Broward and Palm Beach counties. We track applications daily and keep you informed of progress. All work is performed under permit — unpermitted roofing work voids insurance coverage and creates liability during property transfers.</p>
+
+  <h2>Step 5: Site Protection & Preparation</h2>
+
+  <p>Comprehensive property protection setup before any roofing work begins. We install ground tarps around entire work area, set up magnetic sweepers to catch metal debris, protect landscaping and AC units with plywood shields, cover pool areas and sensitive plants, position dump trailers removed nightly, and establish clear access paths for crews.</p>
+
+  <p>This preparation phase typically occurs the afternoon before tear-off begins, ensuring your property is fully protected when active construction starts.</p>
+
+  <h2>Step 6: Tear-Off & Deck Inspection</h2>
+
+  <p>Complete removal of existing roofing materials down to structural decking. During tear-off, we expose the entire roof deck for inspection — this is when hidden damage becomes visible. We document any rotted plywood, damaged OSB, deteriorated trusses or rafters, inadequate ventilation, old underlayment condition, and previous repair quality.</p>
+
+  <p>If structural damage is discovered, we immediately photograph it, explain the issue and necessary repairs, provide pricing for additional work, and complete repairs before proceeding. As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we handle structural repairs in-house without delays or subcontractors. Minor <a href="/roof-repair">roof repairs</a> can often prevent the need for full replacement if caught early.</p>
+
+  <h2>Step 7: Underlayment Installation</h2>
+
+  <p>Secondary water barrier installation per HVHZ requirements with enhanced protection in vulnerable areas. We install self-adhering underlayment in valleys, eaves, and penetrations, synthetic underlayment on field areas (superior to old felt paper), ice and water shield at all transitions, and proper overlap and fastening per code requirements.</p>
+
+  <p>Modern synthetic underlayment provides excellent temporary protection if installation extends multiple days and is far superior to traditional felt paper used by budget contractors.</p>
+
+  <h2>Step 8: Flashing & Waterproofing</h2>
+
+  <p>Critical metal flashing installation at all transitions, penetrations, valleys, walls, and vulnerable areas using custom-fabricated aluminum or copper materials. Proper flashing is the difference between a roof that lasts 20 years and one that fails in 5. We install step flashing at wall intersections, valley flashing with proper water channeling, chimney and skylight flashing, drip edge at eaves and rakes, and pipe boot replacements for all penetrations.</p>
+
+  <p>All flashing work must meet HVHZ standards with proper fastening and sealing — this is where inexperienced contractors cut corners.</p>
+
+  <h2>Step 9: Final Roofing Installation</h2>
+
+  <p>Precision installation of finish roofing materials per manufacturer specifications and HVHZ fastening requirements with enhanced nail patterns. Installation methods vary by material type but all must meet or exceed manufacturer specifications, HVHZ fastening schedules (more fasteners than standard code), proper starter courses and ridge finishing, ventilation integration (ridge vents, soffit vents), and final sealing and weatherproofing.</p>
+
+  <p>For tile roofs, we use foam adhesive in addition to mechanical fasteners per HVHZ requirements. Metal roofs receive concealed fastening with thermal expansion accommodation. Shingle roofs get 6-nail fastening patterns in high-wind zones versus standard 4-nail patterns used outside HVHZ.</p>
+
+  <h2>Step 10: Final Inspection & Walkthrough</h2>
+
+  <p>Building department inspection for code compliance, certificate of completion issuance, comprehensive project closeout with warranty documentation and maintenance guidelines. The final inspection verifies HVHZ compliance, proper fastening and flashing, adequate ventilation, code-compliant installation, and structural integrity.</p>
+
+  <p>After passing inspection, we conduct a detailed walkthrough with you covering warranty documentation and registration, maintenance recommendations, cleanup verification, and answering any questions. You receive complete documentation including building permit and certificate of completion, manufacturer warranties, installation photos, maintenance guidelines, and wind mitigation eligibility information.</p>
+
+  <h2>Timeline Expectations for Roof Replacement</h2>
+
+  <p>A complete roof replacement project typically takes 4-6 weeks from initial inspection to final approval:</p>
+
+  <ul>
+    <li><strong>Week 1:</strong> Inspection, estimate, contract signing, material selection</li>
+    <li><strong>Weeks 2-3:</strong> Permit processing, engineering approval, material ordering and delivery</li>
+    <li><strong>Week 4:</strong> Active construction (3-7 days depending on size and complexity)</li>
+    <li><strong>Week 5-6:</strong> Final inspection scheduling and approval, certificate of completion</li>
+  </ul>
+
+  <p>Weather and permitting timelines can affect this schedule. We monitor weather forecasts closely and only expose vulnerable areas when conditions permit. Summer installations may take 1-2 extra days due to afternoon rain delays.</p>
+
+  <h2>Cost Factors That Affect Roof Replacement Pricing</h2>
+
+  <p>Roof replacement costs in South Florida typically range from $8,000-$25,000+ depending on:</p>
+
+  <ul>
+    <li><strong>Size:</strong> Square footage and pitch (steeper roofs cost more per square foot)</li>
+    <li><strong>Material Choice:</strong> Shingles are least expensive, tile mid-range, metal highest cost</li>
+    <li><strong>Complexity:</strong> Multiple valleys, skylights, chimneys, and architectural features add labor</li>
+    <li><strong>Structural Repairs:</strong> Rotted decking, damaged trusses, fascia replacement discovered during tear-off</li>
+    <li><strong>HVHZ Requirements:</strong> Enhanced fastening and underlayment add 15-25% vs standard installations</li>
+    <li><strong>Permits & Engineering:</strong> Required costs typically $800-$1,500 depending on jurisdiction</li>
+    <li><strong>Access & Disposal:</strong> Difficult access or multiple-story homes increase labor costs</li>
+  </ul>
+
+  <p>Get accurate pricing with our <a href="/pricing-guide">roof replacement pricing guide</a> or use our instant <a href="/roof-cost-calculator">cost calculator</a>.</p>
+
+  <h2>What to Expect on Installation Day</h2>
+
+  <p>On the first day of installation, crews typically arrive between 7-8 AM and work until 4-5 PM. You'll hear significant noise during tear-off (loudest phase) as old materials are removed and disposed. Most homes are weathertight by end of day one with underlayment installed. We clean up daily and remove all debris — dump trailers are emptied nightly so they never block your driveway.</p>
+
+  <p>You don't need to be home during installation, but we recommend being available for the initial walkthrough and final inspection. We communicate daily via text or email about progress and any findings.</p>
+
+  <h2>Warranty Information</h2>
+
+  <p>Every roof replacement includes multiple warranty layers:</p>
+
+  <ul>
+    <li><strong>Manufacturer Material Warranties:</strong> 25-50 years depending on product (architectural shingles typically 30-50 years, tile lifetime material, metal 40-50 years)</li>
+    <li><strong>Workmanship Warranty:</strong> 10 years on our installation labor</li>
+    <li><strong>Enhanced Manufacturer Warranties:</strong> Available when we install complete manufacturer systems (extended coverage on material and labor)</li>
+    <li><strong>Permit-Backed Work:</strong> All work guaranteed by building department approval — unpermitted work has no such protection</li>
+  </ul>
+
+  <p>We provide all warranty documentation at project completion and register products with manufacturers on your behalf. Annual inspections through our maintenance program help preserve warranty coverage.</p>
+
+  <h2>Frequently Asked Questions About Roof Replacement</h2>
+
+  <h3>How long does a typical roof replacement take from start to finish?</h3>
+  <p>A complete roof replacement project typically takes 4-6 weeks from initial inspection to final approval. This includes 1 week for inspection and estimating, 2-3 weeks for permit approval and material ordering, 3-7 days for active construction, and final inspections. Weather and permitting timelines can affect this schedule.</p>
+
+  <h3>Will my insurance cover roof replacement in South Florida?</h3>
+  <p>Insurance coverage depends on the cause of damage and your policy terms. Storm damage (wind, hail) with documented loss is typically covered minus your deductible. However, age-related wear and maintenance issues are not covered. We document all damage during inspection and can coordinate with your adjuster.</p>
+
+  <h3>What permits are required for roof replacement in Broward and Palm Beach Counties?</h3>
+  <p>All roof replacements in Florida require a building permit, engineering calculations, and product approvals (NOA). We handle the entire permitting process including structural calculations, wind load analysis, product approval verification, permit applications, and final inspection coordination.</p>
+
+  <h3>What makes HVHZ roof installation different from standard roofing?</h3>
+  <p>High Velocity Hurricane Zone (HVHZ) roofing requires enhanced attachment schedules with more fasteners per square, specific product approvals (NOA) from Miami-Dade or Florida Product Approval, engineered nail patterns based on roof zones, secondary water barriers in all vulnerable areas, wind uplift calculations for your specific roof design, deck re-nailing to meet current code, and inspector-verified installation methods.</p>
+
+  <h3>What happens if you find structural damage during tear-off?</h3>
+  <p>Structural issues like rotted decking or damaged trusses are common discoveries during tear-off. When we find damage, we immediately document it with photos, explain the issue and necessary repairs, provide pricing for the additional work, and complete repairs before proceeding with roofing installation. As a dual-licensed contractor (CGC and CCC), we handle structural repairs in-house without subcontracting.</p>
+
+  <h3>How much does a new roof increase my home value in South Florida?</h3>
+  <p>A new permitted roof typically adds 60-85% of the project cost to your home's resale value in South Florida's market. Beyond direct ROI, a new roof makes your property easier to sell — many buyers walk away from homes with aging roofs due to financing and insurance complications. A new warranted roof with proper permits eliminates these barriers.</p>
+
+  <h3>Can I get a roof replacement during Florida's rainy season?</h3>
+  <p>Yes, we complete roof replacements year-round including summer rainy season. We monitor weather closely and only expose vulnerable areas when forecast permits. Modern synthetic underlayment provides excellent temporary protection if installation extends multiple days. We never leave your home unprotected overnight.</p>
+
+  <h3>What roof material lasts longest in South Florida's climate?</h3>
+  <p>Material lifespan in South Florida depends on proper installation and maintenance. Concrete and clay tile roofs last 50+ years when properly installed with HVHZ-compliant attachment. Metal roofing systems last 40-60 years with coastal-rated finishes. Architectural shingles last 20-30 years — shorter than northern climates due to UV exposure and thermal cycling.</p>
+
+  <h2>Ready to Start Your Roof Replacement Project?</h2>
+
+  <p>All Phase Construction USA is a dual-licensed contractor (CCC-1331464 & CGC-1526236) serving Broward and Palm Beach County with comprehensive roof replacement services. We handle every phase from engineering through final inspection, ensuring HVHZ compliance, proper permitting, and zero surprises.</p>
+
+  <p>Call <strong>(754) 227-5605</strong> to schedule your free 21-point roof inspection and detailed estimate. We provide transparent pricing, honest assessments, and proven systems that protect your investment.</p>
+
+${companyAuthorityFooter()}
+`.trim();
+  }
+
   // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
   const servicePages = [
     { path: '/residential-roofing', title: 'Residential Roofing Services' },
@@ -1693,7 +1868,7 @@ const CITY_PAGE_SCHEMAS = {
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/roofing-services' ? generateRoofingServicesContent() : defaultServicePageContent(title),
+      pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() : defaultServicePageContent(title),
       jsonLdSchema
     );
 
