@@ -57,6 +57,16 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Roofing tips, cost guides, and hurricane prep for South Florida homeowners. Written by a dual-licensed contractor with 20+ years experience.',
     canonical: 'https://allphaseconstructionfl.com/blog'
   },
+  '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home': {
+    title: 'Wind Mitigation Inspection Guide | Save 20-60% on Insurance | South Florida',
+    description: 'How wind mitigation inspections save South Florida homeowners thousands on insurance. What inspectors check, how to qualify, and which upgrades have the biggest ROI.',
+    canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home'
+  },
+  '/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes': {
+    title: 'Flat Roofs in Florida: Pros, Cons & What Homeowners Should Know (2026)',
+    description: 'Are flat roofs good for Florida homes? Honest pros and cons from a licensed roofer — drainage, hurricane performance, costs, and the best flat roof materials for South Florida.',
+    canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
+  },
   '/reviews': {
     title: 'Customer Reviews | All Phase USA',
     description: '4.8 stars from 138 verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.',
@@ -123,8 +133,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/roofing-services': {
-    title: 'Roofing Services | All Phase Construction USA',
-    description: 'Tile, metal, shingle, flat & commercial roofing in Broward & Palm Beach County. HVHZ-certified, dual-licensed. Free inspections. Call (754) 227-5605.',
+    title: 'Roofing Services South Florida | Tile, Metal, Shingle & Flat | All Phase',
+    description: 'Complete residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs — HVHZ-certified, dual-licensed. Free inspections. 2,500+ projects.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {

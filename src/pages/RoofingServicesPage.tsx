@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import SEO from '../components/SEO';
-import { Home, Building2, Wrench, Shield, ClipboardCheck, FileText, Calculator, DollarSign, CreditCard, CheckCircle2, Phone } from 'lucide-react';
+import { Home, Building2, Wrench, Shield, ClipboardCheck, FileText, Calculator, DollarSign, CreditCard, CheckCircle2, Phone, AlertTriangle, Thermometer, Droplets } from 'lucide-react';
 
 const residentialServices = [
   {
@@ -131,6 +132,29 @@ const whyChooseUs = [
   }
 ];
 
+const faqData = [
+  {
+    question: 'What roofing services does All Phase Construction offer in South Florida?',
+    answer: 'All Phase Construction USA provides full-service residential and commercial roofing across Broward and Palm Beach Counties. Our services include roof replacement, roof repair, emergency leak repair, roof inspections (insurance, real estate, and preventive), and ongoing maintenance programs. We work with all major roofing materials — concrete tile, clay tile, metal standing seam, architectural shingles, TPO, PVC, modified bitumen, and built-up roofing (BUR) systems.'
+  },
+  {
+    question: 'How much does a new roof cost in South Florida in 2026?',
+    answer: 'Roof replacement costs in South Florida depend on material, roof size, and code requirements. Typical ranges per square foot: asphalt shingles $5-$8, concrete tile $10-$18, metal standing seam $12-$20, and flat roof systems $8-$15. A standard 2,000 sq ft home usually falls between $12,000 and $35,000 depending on the material chosen. Use our free online roof cost calculator for a quick estimate, or call (754) 227-5605 for a no-obligation assessment.'
+  },
+  {
+    question: 'Is All Phase Construction licensed for hurricane zone roofing?',
+    answer: 'Yes. All Phase Construction USA holds both a Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236) from the State of Florida. We are fully certified for High-Velocity Hurricane Zone (HVHZ) work in Broward County and Miami-Dade County, meaning every installation meets the stringent 146 mph wind load requirements mandated by the Florida Building Code.'
+  },
+  {
+    question: 'Do you offer financing for roof replacement?',
+    answer: 'Yes. We partner with Service Finance Company, LLC, an FHA Title I lender, to offer flexible payment plans for roof replacement projects. Homeowners can finance their new roof with competitive rates and manageable monthly payments. We handle the application process during your free roof assessment — most approvals come back the same day.'
+  },
+  {
+    question: 'How long does a roof replacement take in Broward or Palm Beach County?',
+    answer: 'Most residential roof replacements in Broward and Palm Beach County take 2 to 5 days of active work, depending on the size and material. The full project timeline — from initial inspection through final permit closure — typically runs 3 to 6 weeks. This includes permit processing (which Broward County can take 2-3 weeks), material ordering, installation, and the required municipal inspections. We handle all permitting and scheduling.'
+  }
+];
+
 export default function RoofingServicesPage() {
   return (
     <>
@@ -139,6 +163,17 @@ export default function RoofingServicesPage() {
         description="Complete roofing services for South Florida — tile, metal, shingle, flat, commercial, and residential. Dual-licensed contractor serving Broward and Palm Beach Counties. Free inspections."
         canonicalUrl="https://allphaseconstructionfl.com/roofing-services"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqData.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+          }))
+        })}</script>
+      </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950">
         {/* Hero Section */}
@@ -363,6 +398,82 @@ export default function RoofingServicesPage() {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* South Florida Roofing Challenges */}
+        <section className="py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Roofing in South Florida Is Different
+              </h2>
+              <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+                South Florida's climate demands more from your roof than almost anywhere else in the country. Understanding these challenges helps you make better decisions about materials, contractors, and maintenance.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8">
+                <div className="flex items-center justify-center w-16 h-16 bg-red-600/10 rounded-lg mb-6">
+                  <AlertTriangle className="w-8 h-8 text-red-500" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Hurricane & Wind Damage</h3>
+                <p className="text-zinc-400 leading-relaxed">
+                  Broward County falls within Florida's High-Velocity Hurricane Zone, requiring all roofing installations to meet 146 mph wind load standards. This means specific fastener patterns, enhanced underlayment, and tested assembly systems — not just any contractor can legally perform this work. Every project requires NOA (Notice of Acceptance) or FL Product Approval documentation for materials and installation methods.
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8">
+                <div className="flex items-center justify-center w-16 h-16 bg-red-600/10 rounded-lg mb-6">
+                  <Thermometer className="w-8 h-8 text-red-500" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">UV & Heat Exposure</h3>
+                <p className="text-zinc-400 leading-relaxed">
+                  South Florida roofs endure over 230 sunny days per year with surface temperatures reaching 160°F or higher. This accelerates material degradation — asphalt shingles lose granules faster, sealants dry out and crack, and flat roof membranes can blister. Choosing materials rated for extended UV exposure and scheduling regular maintenance are essential to getting full lifespan from any roof system in our climate.
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8">
+                <div className="flex items-center justify-center w-16 h-16 bg-red-600/10 rounded-lg mb-6">
+                  <Droplets className="w-8 h-8 text-red-500" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Rain & Moisture</h3>
+                <p className="text-zinc-400 leading-relaxed">
+                  With an average of 62 inches of rainfall per year and frequent afternoon storms, South Florida puts extreme demands on roof drainage and waterproofing systems. Poor flashing, inadequate slope, or blocked drip edges can lead to water intrusion that damages decking, insulation, and interior finishes. We design every roof system with proper drainage pathways, redundant waterproofing layers, and sealed penetrations.
+                </p>
+              </div>
+            </div>
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8 max-w-4xl mx-auto">
+              <p className="text-zinc-300 leading-relaxed text-lg">
+                These environmental factors are why choosing a properly licensed, locally experienced roofing contractor matters so much in Broward and Palm Beach Counties. A roof that performs well in the Midwest or Pacific Northwest may fail within a few years under South Florida conditions. All Phase Construction USA has been navigating these exact challenges since 2005, with over 2,500 completed projects across the region. Our team understands the local building codes, permit processes, and material performance data specific to our area — because we live and work here.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 bg-zinc-900/30">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+              Frequently Asked Questions About Our Roofing Services
+            </h2>
+            <div className="space-y-6">
+              {faqData.map((faq, index) => (
+                <div key={index} className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8">
+                  <h3 className="text-xl font-bold text-white mb-4">{faq.question}</h3>
+                  <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <p className="text-zinc-400 mb-4">Have more questions? Visit our comprehensive FAQ page or get in touch directly.</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/frequently-asked-questions" className="text-red-500 font-semibold hover:text-red-400 transition-colors">
+                  View All FAQs
+                </Link>
+                <Link to="/contact" className="text-red-500 font-semibold hover:text-red-400 transition-colors">
+                  Contact Us
+                </Link>
+              </div>
             </div>
           </div>
         </section>
