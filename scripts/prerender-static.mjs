@@ -1848,6 +1848,122 @@ function generateStaticFiles() {
       }
     ]
   },
+  '/roof-maintenance-programs': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Roof Maintenance Programs', url: 'https://allphaseconstructionfl.com/roof-maintenance-programs' }
+    ],
+    faqs: [
+      { question: 'What is included in a roof maintenance program?', answer: 'Our roof maintenance programs include semi-annual inspections, gutter cleaning, minor repair of flashings and sealants, debris removal, and detailed condition reporting. Regular maintenance extends roof life and prevents small issues from becoming expensive problems.' },
+      { question: 'How often should my roof be professionally maintained?', answer: 'We recommend professional roof maintenance at least twice per year in South Florida—once before hurricane season and once after. Properties with tile or flat roofs in high-debris areas may benefit from quarterly maintenance.' },
+      { question: 'Does roof maintenance void my warranty?', answer: 'No. Professional maintenance by a licensed contractor actually helps preserve your warranty. Many manufacturer warranties require documented maintenance to remain valid.' },
+      { question: 'Can maintenance prevent roof replacement?', answer: 'Yes. Regular maintenance catches small defects early, prevents water intrusion, and can extend your roof life by 30-50%. The cost of maintenance is a fraction of premature replacement costs.' }
+    ]
+  },
+  '/pricing-guide': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Resources', url: 'https://allphaseconstructionfl.com/learning-center' },
+      { name: 'Pricing Guide', url: 'https://allphaseconstructionfl.com/pricing-guide' }
+    ],
+    faqs: [
+      { question: 'How much does a new roof cost in South Florida?', answer: 'Roof replacement costs in Broward and Palm Beach County typically range from $8,000-$45,000+ depending on size, pitch, materials, and HVHZ compliance requirements. Shingle roofs start around $8-12 per square foot, tile $12-18, metal $14-22, and flat systems $8-16.' },
+      { question: 'What factors affect roof replacement cost?', answer: 'Key cost factors include roof size (square footage), pitch and complexity, material type, HVHZ compliance requirements, permit and inspection fees, wood replacement needs, and disposal of existing materials.' },
+      { question: 'Are roofing estimates free in South Florida?', answer: 'Yes. All Phase Construction USA provides free roof inspections and detailed written estimates throughout Broward and Palm Beach County. Call (754) 227-5605 to schedule.' },
+      { question: 'Does insurance cover roof replacement in Florida?', answer: 'Insurance covers roof replacement when damage results from a covered peril like wind or storm damage. Age-related wear and poor maintenance are typically not covered. We work directly with insurance adjusters to document storm damage claims.' },
+      { question: 'What is the most cost-effective roofing material for Florida?', answer: 'Architectural shingles offer the best balance of initial cost, wind resistance, and insurance qualification for most South Florida homes. Tile and metal cost more upfront but last longer and may provide better long-term value.' }
+    ]
+  },
+  '/learning-center': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Learning Center', url: 'https://allphaseconstructionfl.com/learning-center' }
+    ]
+  },
+  '/easy-payments': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Easy Payments', url: 'https://allphaseconstructionfl.com/easy-payments' }
+    ],
+    faqs: [
+      { question: 'Do you offer financing for roofing projects?', answer: 'Yes. All Phase Construction USA works with financing partners to offer flexible payment plans for residential and commercial roofing projects. We offer options for various credit profiles and project sizes.' },
+      { question: 'What financing options are available?', answer: 'We offer multiple financing programs including deferred interest promotions, fixed-rate loans, and flexible payment terms. Approved applicants can finance roof replacement, repairs, and other roofing services.' },
+      { question: 'How quickly can I get approved for roofing financing?', answer: 'Most financing applications are processed within 24 hours. Many applicants receive instant approval decisions. Once approved, we can schedule your roofing project immediately.' },
+      { question: 'Can I use financing for roof repairs or just replacement?', answer: 'Our financing programs can be used for roof replacement, major repairs, and other roofing services. Minimum financing amounts may apply depending on the program.' }
+    ]
+  },
+  '/reviews': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Reviews', url: 'https://allphaseconstructionfl.com/reviews' }
+    ]
+  },
+  '/projects': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Projects', url: 'https://allphaseconstructionfl.com/projects' }
+    ]
+  },
+  '/our-location': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Our Location', url: 'https://allphaseconstructionfl.com/our-location' }
+    ]
+  },
+  '/contact': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Contact', url: 'https://allphaseconstructionfl.com/contact' }
+    ]
+  },
+  '/about-us': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'About Us', url: 'https://allphaseconstructionfl.com/about-us' }
+    ]
+  },
+  '/roof-cost-calculator': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Resources', url: 'https://allphaseconstructionfl.com/learning-center' },
+      { name: 'Roof Cost Calculator', url: 'https://allphaseconstructionfl.com/roof-cost-calculator' }
+    ],
+    faqs: [
+      { question: 'How accurate is the roof cost calculator?', answer: 'Our calculator provides estimates based on typical South Florida pricing for similar projects. Actual costs may vary based on specific site conditions, material selections, and complexity. We recommend scheduling a free inspection for a detailed quote.' },
+      { question: 'What information do I need to use the calculator?', answer: 'You will need approximate roof square footage or home square footage, desired roofing material type, roof pitch if known, and your location. The calculator will provide an estimated cost range based on these inputs.' },
+      { question: 'Does the calculator include permits and inspections?', answer: 'Yes. Our estimates include typical permit fees and inspection costs for Broward and Palm Beach County. Specific municipal fees may vary slightly.' },
+      { question: 'Can I get financing for the estimated amount?', answer: 'Yes. Once you receive your calculator estimate, we can discuss financing options that work within your budget. Many of our financing programs offer flexible terms and promotional rates.' }
+    ]
+  },
+  '/licensed-roofing-contractor': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Resources', url: 'https://allphaseconstructionfl.com/learning-center' },
+      { name: 'Licensed Roofing Contractor', url: 'https://allphaseconstructionfl.com/licensed-roofing-contractor' }
+    ],
+    faqs: [
+      { question: 'What is the difference between a certified and registered roofing contractor in Florida?', answer: 'A Florida State Certified Roofing Contractor (CCC license) can work statewide without restriction. A locally registered contractor can only work within the jurisdiction that registered them. For HVHZ work in Broward and Palm Beach County, state certification is strongly recommended.' },
+      { question: 'How do I verify a roofing contractor license in Florida?', answer: 'Visit myfloridalicense.com and use the Verify a Licensee tool. Search by contractor name or license number. Confirm the license is active, in the correct category, and has no disciplinary actions or suspensions.' },
+      { question: 'What does a CCC roofing license mean?', answer: 'CCC stands for Certified Roofing Contractor. This is a Florida state-level license that requires passing a comprehensive exam, demonstrating financial responsibility, and maintaining insurance. CCC licensees can perform roofing work anywhere in Florida.' },
+      { question: 'Why does dual licensing matter for roofing in South Florida?', answer: 'Many roofing projects in HVHZ areas require structural work like adding tie-downs, straps, or deck reinforcement. A contractor with both roofing (CCC) and general contractor (CGC) licenses can handle the full scope without subcontracting, reducing cost and liability.' },
+      { question: 'What insurance should a licensed roofer carry?', answer: 'Florida roofing contractors must carry general liability insurance and workers compensation coverage. Request proof of insurance and verify the policies are current before signing any contract. Lack of proper insurance exposes you to significant liability.' }
+    ]
+  },
+  '/frequently-asked-questions': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'FAQ', url: 'https://allphaseconstructionfl.com/frequently-asked-questions' }
+    ],
+    faqs: [
+      { question: 'Are you licensed and insured in Broward and Palm Beach County?', answer: 'Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464 and General Contractor license CGC-1526236. We carry full general liability and workers compensation insurance.' },
+      { question: 'Do you offer free roof inspections?', answer: 'Yes. We provide free roof inspections for homeowners throughout Broward and Palm Beach County. Call (754) 227-5605 to schedule.' },
+      { question: 'How long does a roof replacement take?', answer: 'Most residential roof replacements are completed in 1-3 days depending on size, pitch, and material type. We provide a detailed timeline before work begins.' },
+      { question: 'Do you pull permits for roofing work?', answer: 'Yes. All Phase Construction USA handles all permit applications and inspections required by Broward and Palm Beach County building departments. Permits are included in our estimates.' },
+      { question: 'What roofing materials do you install?', answer: 'We install shingle, tile, metal, flat TPO/PVC, and commercial roofing systems. All materials are HVHZ-compliant and rated for 146+ mph wind loads as required by Florida Building Code.' },
+      { question: 'Do you work with insurance claims?', answer: 'Yes. We work directly with insurance adjusters to document storm damage and provide detailed estimates for your claim. We do not require Assignment of Benefits and allow you to maintain control of your claim.' }
+    ]
+  }
 };
 
 const CITY_PAGE_SCHEMAS = {
@@ -2427,11 +2543,86 @@ ${companyAuthorityFooter()}
     // SILO 2: Roof Repair - /roof-repair/[city]
     const repairPath = `/roof-repair/${citySlug}`;
     const repairMetadata = getSEOMetadata(repairPath, cityName);
+    // Generate city-specific repair FAQs and schema
+    const repairSchemas = [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Roof Repair",
+            "item": "https://allphaseconstructionfl.com/roof-repair"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": `${cityName}`,
+            "item": `https://allphaseconstructionfl.com/roof-repair/${citySlug}`
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `How quickly can you respond to emergency roof repairs in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `We offer same-day emergency response throughout ${cityName} and all of Broward and Palm Beach County. Call (754) 227-5605 and we can dispatch a crew within 2-4 hours for an active leak.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Does homeowner insurance cover roof repair in ${cityName}, FL?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Most Florida homeowner policies cover storm and wind damage. We work directly with insurance adjusters in ${cityName} and can document damage for your claim at no extra charge.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `How much does a roof repair cost in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Roof repair costs in ${cityName} vary based on the extent of damage, materials needed, and accessibility. Minor repairs typically start at $300-$800, while more extensive repairs can range from $1,500-$5,000. We provide free inspections and detailed estimates before any work begins.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Do I need a permit for roof repair in ${cityName}, FL?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `In ${cityName}, permits are typically required for roof repairs exceeding 100 square feet or involving structural work. Minor repairs like replacing a few shingles usually do not require permits. We handle all permitting requirements for your project.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Are you licensed for roof repairs in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464, covering all repair work in ${cityName} and throughout Broward and Palm Beach County.`
+            }
+          }
+        ]
+      }
+    ];
+
     const repairHTML = createHTMLTemplate(
       repairMetadata.title,
       repairMetadata.description,
       repairMetadata.canonical,
-      generateRoofRepairContent(cityName, citySlug)
+      generateRoofRepairContent(cityName, citySlug),
+      repairSchemas
     );
     const repairDir = path.join(publicDir, 'roof-repair', citySlug);
     fs.mkdirSync(repairDir, { recursive: true });
@@ -2442,11 +2633,86 @@ ${companyAuthorityFooter()}
     // SILO 3: Roof Inspection - /roof-inspection/[city]
     const inspectionPath = `/roof-inspection/${citySlug}`;
     const inspectionMetadata = getSEOMetadata(inspectionPath, cityName);
+    // Generate city-specific inspection FAQs and schema
+    const inspectionSchemas = [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://allphaseconstructionfl.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Roof Inspection",
+            "item": "https://allphaseconstructionfl.com/roof-inspection"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": `${cityName}`,
+            "item": `https://allphaseconstructionfl.com/roof-inspection/${citySlug}`
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `How much does a roof inspection cost in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `All Phase Construction USA provides free roof inspections for homeowners in ${cityName}. For insurance or real estate purposes, detailed written inspection reports are available. Call (754) 227-5605 to schedule your inspection.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `How long does a roof inspection take in ${cityName}, FL?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Most roof inspections in ${cityName} take between 45-90 minutes, depending on roof size, system complexity, and accessibility. We provide a detailed written report documenting all findings.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What does a roof inspection include in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Our ${cityName} roof inspections include evaluation of roof covering condition, flashing and penetrations, gutters and drainage, ventilation systems, structural integrity, and documentation of any deficiencies or required repairs.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Do I need a roof inspection before buying a home in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Yes. A professional roof inspection before purchasing a home in ${cityName} can identify existing damage, remaining service life, and potential repair costs that may not be visible during a standard home inspection.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Are you licensed to perform roof inspections in ${cityName}, FL?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464 and performs professional roof inspections throughout ${cityName} and all of Broward and Palm Beach County.`
+            }
+          }
+        ]
+      }
+    ];
+
     const inspectionHTML = createHTMLTemplate(
       inspectionMetadata.title,
       inspectionMetadata.description,
       inspectionMetadata.canonical,
-      generateRoofInspectionContent(cityName, citySlug)
+      generateRoofInspectionContent(cityName, citySlug),
+      inspectionSchemas
     );
     const inspectionDir = path.join(publicDir, 'roof-inspection', citySlug);
     fs.mkdirSync(inspectionDir, { recursive: true });
