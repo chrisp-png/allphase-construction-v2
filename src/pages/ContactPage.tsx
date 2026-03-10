@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Phone, ArrowLeft, CheckCircle, Wrench, Home } from 'lucide-react';
+import { Phone, ArrowLeft, CheckCircle, Wrench, Home, Layers, Grid3X3, Minus } from 'lucide-react';
 
 export default function ContactPage() {
   useEffect(() => {
@@ -184,28 +184,28 @@ export default function ContactPage() {
                       onClick={() => handleRoofTypeSelect('Tile')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">â </div>
+                      <div className="text-4xl mb-4"><Grid3X3 className="w-10 h-10 mx-auto" /></div>
                       <h3 className="text-xl font-semibold text-white">Tile</h3>
                     </button>
                     <button
                       onClick={() => handleRoofTypeSelect('Metal')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">â¬</div>
+                      <div className="text-4xl mb-4"><Wrench className="w-10 h-10 mx-auto" /></div>
                       <h3 className="text-xl font-semibold text-white">Metal</h3>
                     </button>
                     <button
                       onClick={() => handleRoofTypeSelect('Shingle')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">â¢</div>
+                      <div className="text-4xl mb-4"><Layers className="w-10 h-10 mx-auto" /></div>
                       <h3 className="text-xl font-semibold text-white">Shingle</h3>
                     </button>
                     <button
                       onClick={() => handleRoofTypeSelect('Flat')}
                       className="group p-8 bg-zinc-800 hover:bg-zinc-700 border-2 border-zinc-700 hover:border-red-600 rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                     >
-                      <div className="text-4xl mb-4">â­</div>
+                      <div className="text-4xl mb-4"><Minus className="w-10 h-10 mx-auto" /></div>
                       <h3 className="text-xl font-semibold text-white">Flat</h3>
                     </button>
                   </div>

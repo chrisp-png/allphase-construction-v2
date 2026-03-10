@@ -631,7 +631,7 @@ export default function ServiceAreaPage() {
                   <summary className="p-6 cursor-pointer font-semibold text-white hover:text-red-600 transition-colors flex justify-between items-center">
                     <span>{faq.question}</span>
                     <span className="text-red-600 text-xl group-open:rotate-180 transition-transform">
-                      â¼
+                      ▼
                     </span>
                   </summary>
                   <div className="px-6 pb-6 text-gray-300 leading-relaxed">

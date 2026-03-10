@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Calendar, Check, Lightbulb } from 'lucide-react';
+import { Phone, Calendar, Check, Lightbulb, Layers, Grid3X3, Wrench, Minus } from 'lucide-react';
 import CalculatorLeadCapture from './CalculatorLeadCapture';
 
 interface RoofSize {
@@ -40,11 +40,22 @@ const roofSizes: RoofSize[] = [
 ];
 
 const roofTypes: RoofType[] = [
-  { name: 'Shingle', icon: 'â¢' },
-  { name: 'Tile', icon: 'â ' },
-  { name: 'Metal', icon: 'â¬' },
-  { name: 'Flat', icon: 'â­' },
+  { name: 'Shingle', icon: 'shingle' },
+  { name: 'Tile', icon: 'tile' },
+  { name: 'Metal', icon: 'metal' },
+  { name: 'Flat', icon: 'flat' },
 ];
+
+const RoofTypeIcon = ({ type }: { type: string }) => {
+  const cls = "w-8 h-8";
+  switch (type) {
+    case 'shingle': return <Layers className={cls} />;
+    case 'tile': return <Grid3X3 className={cls} />;
+    case 'metal': return <Wrench className={cls} />;
+    case 'flat': return <Minus className={cls} />;
+    default: return null;
+  }
+};
 
 const pricingData: PricingData = {
   Shingle: [
@@ -280,7 +291,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
                     borderWidth: selectedType?.name === type.name ? '3px' : '2px'
                   }}
                 >
-                  <div className="text-4xl mb-2">{type.icon}</div>
+                  <div className="text-4xl mb-2"><RoofTypeIcon type={type.icon} /></div>
                   <div className="font-semibold">{type.name}</div>
                 </button>
               ))}
