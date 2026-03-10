@@ -180,6 +180,7 @@ const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const AccessibilityPage = lazy(() => import('./pages/AccessibilityPage'));
 const HowToHireRoofingContractorPage = lazy(() => import('./pages/HowToHireRoofingContractorPage'));
+const LicensedRoofingContractorPage = lazy(() => import('./pages/LicensedRoofingContractorPage'));
 const SitemapPage = lazy(() => import('./pages/SitemapPage'));
 const OurLocationPage = lazy(() => import('./pages/OurLocationPage'));
 const BrowardCountyPage = lazy(() => import('./pages/BrowardCountyPage'));
@@ -317,6 +318,7 @@ function AppContent() {
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/how-to-hire-roofing-contractor" element={<HowToHireRoofingContractorPage />} />
+            <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />
             <Route path="/blog" element={<BlogIndexPage />} />

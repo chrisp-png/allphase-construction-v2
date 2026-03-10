@@ -132,6 +132,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
         description: 'Professional roof repair in Broward & Palm Beach County. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
+    '/licensed-roofing-contractor': {
+    title: 'Licensed Roofing Contractor South Florida | Verify Before You Hire',
+    description: 'How to verify a licensed roofing contractor in Florida. CCC vs CGC licenses, DBPR lookup, insurance requirements, and why licensing matters in South Florida\'s hurricane zone.',
+    canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
+  },
     '/roofing-services': {
     title: 'Roofing Services South Florida | Tile, Metal, Shingle & Flat | All Phase',
     description: 'Complete residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs — HVHZ-certified, dual-licensed. Free inspections. 2,500+ projects.',

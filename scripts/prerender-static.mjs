@@ -1635,6 +1635,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/about-us', title: 'About All Phase Construction' },
     { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' },
     { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
+    { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor South Florida' },
     { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' }
   ];
 
