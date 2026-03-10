@@ -66,7 +66,7 @@ export default function CalculatorPage() {
           "name": "Is it better to repair a roof or replace it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashings–addressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute ÃÃÂ§ 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
+            "text": "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashings–addressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute § 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
           }
         },
         {
@@ -520,7 +520,7 @@ export default function CalculatorPage() {
                     <div className="bg-zinc-800 border-l-4 border-red-600 p-4 rounded">
                       <p className="text-zinc-200 font-semibold mb-2">Florida's 5-Year Roof Certification for Insurance Renewal</p>
                       <p className="text-zinc-300 leading-relaxed mb-2">
-                        In Florida, repairs may position a roof for the <strong className="text-white">5-year certification pathway</strong> under <span className="text-amber-400 font-semibold">Florida Statute ÃÃÂ§ 627.7011(5)(a)</span>. This allows insurers to renew based on <strong className="text-white">roof condition rather than age alone</strong> when a qualified professional certifies 5+ years of useful life remaining.
+                        In Florida, repairs may position a roof for the <strong className="text-white">5-year certification pathway</strong> under <span className="text-amber-400 font-semibold">Florida Statute § 627.7011(5)(a)</span>. This allows insurers to renew based on <strong className="text-white">roof condition rather than age alone</strong> when a qualified professional certifies 5+ years of useful life remaining.
                       </p>
                       <p className="text-zinc-300 leading-relaxed">
                         This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition.
