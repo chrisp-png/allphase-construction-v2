@@ -567,6 +567,159 @@ export default function RoofRepairPage() {
         </div>
       </section>
 
+      {/* Roof Repair Cost Section - Targets: "roof repair cost", "roof estimate", "how much does roof repair cost" */}
+      <section className="py-20 bg-zinc-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-red-600/10 border border-red-600/20 rounded-full mb-6">
+              <span className="text-red-600 font-semibold">Cost Guide</span>
+            </div>
+
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              How Much Does Roof Repair Cost in South Florida?
+            </h2>
+
+            <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
+              <p>
+                Roof repair costs in Broward and Palm Beach County depend on three factors: the type of damage, the roofing material, and how much of the roof is affected. Here are the ranges we typically see in South Florida for 2026:
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 my-10">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <DollarSign className="w-5 h-5 text-green-500" />
+                  Minor Repairs
+                </h3>
+                <p className="text-3xl font-bold text-white mb-2">$250 – $800</p>
+                <ul className="space-y-2 text-zinc-400 text-sm">
+                  <li>Single pipe boot replacement</li>
+                  <li>Small flashing repair</li>
+                  <li>A few cracked or missing shingles</li>
+                  <li>Minor sealant or caulk failures</li>
+                </ul>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <DollarSign className="w-5 h-5 text-yellow-500" />
+                  Moderate Repairs
+                </h3>
+                <p className="text-3xl font-bold text-white mb-2">$800 – $3,000</p>
+                <ul className="space-y-2 text-zinc-400 text-sm">
+                  <li>Valley flashing replacement</li>
+                  <li>Multiple vent or pipe boot replacements</li>
+                  <li>Partial re-roofing of a single slope</li>
+                  <li>Tile re-setting after wind damage</li>
+                </ul>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <DollarSign className="w-5 h-5 text-orange-500" />
+                  Major Restoration
+                </h3>
+                <p className="text-3xl font-bold text-white mb-2">$3,000 – $8,000</p>
+                <ul className="space-y-2 text-zinc-400 text-sm">
+                  <li>Full slope restoration with new underlayment</li>
+                  <li>Complete flashing system replacement</li>
+                  <li>Flat roof membrane section repair</li>
+                  <li>Storm damage repair across multiple areas</li>
+                </ul>
+              </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <DollarSign className="w-5 h-5 text-red-500" />
+                  Extensive Restoration
+                </h3>
+                <p className="text-3xl font-bold text-white mb-2">$8,000 – $15,000+</p>
+                <ul className="space-y-2 text-zinc-400 text-sm">
+                  <li>Multi-slope restoration with decking repairs</li>
+                  <li>Hurricane damage requiring structural work</li>
+                  <li>Full system restoration with 5-year certification</li>
+                  <li>Commercial flat roof section replacement</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 border-2 border-red-600/30 rounded-xl p-8 mb-8">
+              <p className="text-lg text-zinc-300 leading-relaxed">
+                <strong className="text-white">Every roof repair quote starts with a free inspection.</strong> We assess the full scope of the issue, document what we find with photos, and provide a detailed written estimate before any work begins. No surprises, no hidden charges. If your roof needs a full replacement instead of a repair, we will tell you that upfront.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/roof-cost-calculator/"
+                className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg flex items-center justify-center gap-2 border border-zinc-700"
+              >
+                <TrendingUp className="w-5 h-5" />
+                Use Our Roof Cost Calculator
+              </Link>
+              <Link
+                to="/contact/"
+                className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-center text-lg shadow-lg shadow-red-600/20"
+              >
+                Get a Free Repair Estimate
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Common Roof Problems in South Florida */}
+      <section className="py-20 bg-zinc-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              Common Roof Problems We Repair in Broward &amp; Palm Beach County
+            </h2>
+
+            <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
+              <p>
+                South Florida roofs face conditions that most of the country never deals with. Between the HVHZ (High Velocity Hurricane Zone) requirements in Broward County, the salt air along the coast from Deerfield Beach to Boca Raton, and the intense UV exposure year-round, roofing materials degrade faster here than almost anywhere else in the United States.
+              </p>
+
+              <p>
+                These are the roof repair issues we see most often across Fort Lauderdale, West Palm Beach, Coral Springs, Pompano Beach, and the surrounding areas:
+              </p>
+
+              <div className="space-y-4 my-8">
+                <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-5">
+                  <h3 className="text-lg font-bold text-white mb-2">Wind Uplift &amp; Missing Shingles</h3>
+                  <p className="text-zinc-400">South Florida winds regularly exceed the threshold for shingle damage even without a named storm. We see torn, lifted, and missing shingles after strong thunderstorms throughout Broward and Palm Beach County. Left unaddressed, exposed underlayment degrades within weeks in Florida sun.</p>
+                </div>
+
+                <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-5">
+                  <h3 className="text-lg font-bold text-white mb-2">Cracked &amp; Slipped Roof Tiles</h3>
+                  <p className="text-zinc-400">Concrete and clay tile roofs are popular across South Florida, but tiles crack from impact, thermal cycling, and foot traffic from cable or AC technicians. Slipped tiles expose the underlayment to direct weather and must be re-set properly to maintain the roof system's wind rating.</p>
+                </div>
+
+                <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-5">
+                  <h3 className="text-lg font-bold text-white mb-2">Flashing Failures at Roof-to-Wall Transitions</h3>
+                  <p className="text-zinc-400">Where your roof meets a wall, chimney, or skylight, flashing creates the waterproof seal. In South Florida's heat, flashing sealants dry out and crack faster than in moderate climates. This is one of the most common leak sources we find during inspections in Deerfield Beach, Wellington, and throughout the region.</p>
+                </div>
+
+                <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-5">
+                  <h3 className="text-lg font-bold text-white mb-2">Pipe Boot &amp; Vent Deterioration</h3>
+                  <p className="text-zinc-400">Rubber pipe boots around plumbing vents typically last 8-12 years in Florida before UV damage causes them to crack and leak. Most roofs have 3-8 pipe penetrations. When one fails, the others are usually close behind, which is why we recommend replacing them all during a repair visit.</p>
+                </div>
+
+                <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-5">
+                  <h3 className="text-lg font-bold text-white mb-2">Flat Roof Membrane Damage</h3>
+                  <p className="text-zinc-400">TPO, PVC, and modified bitumen flat roofs on commercial buildings and Florida-style homes develop seam separations, punctures from debris, and ponding issues. Our dual license (CGC/CCC) means we can address both the membrane and any structural drainage issues in one scope of work.</p>
+                </div>
+              </div>
+
+              <p>
+                If you have noticed a water stain on your ceiling, missing roofing material after a storm, or your energy bills have increased unexpectedly, these are signs your roof may need professional attention. Our <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">free 21-point roof inspection</Link> will identify the exact issue and give you a clear path forward.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Storm Damage & Insurance Section */}
       <section className="py-20 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
