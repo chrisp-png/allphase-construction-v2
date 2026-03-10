@@ -445,11 +445,14 @@ if (validationErrors.length > 0) {
 // XML GENERATION
 // ═══════════════════════════════════════════════════════════════════════════
 
+// Get current date for lastmod field (YYYY-MM-DD format)
+const today = new Date().toISOString().split('T')[0];
 
 const urlEntries = dedupedEntries.map(entry => {
   const url = `${CANONICAL_DOMAIN}${entry.path}`;
   let urlEntry = `  <url>\n`;
   urlEntry += `    <loc>${url}</loc>\n`;
+  urlEntry += `    <lastmod>${today}</lastmod>\n`;
   if (entry.priority !== undefined) {
     urlEntry += `    <priority>${entry.priority}</priority>\n`;
   }

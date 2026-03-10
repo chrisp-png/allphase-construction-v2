@@ -2546,6 +2546,12 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     geo: { '@type': 'GeoCoordinates', latitude: 26.3184, longitude: -80.0998 },
     areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
     priceRange: '$$',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '138',
+      bestRating: '5'
+    },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
@@ -2764,7 +2770,20 @@ function generateStaticFiles() {
         'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
-    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+    [
+      {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "How much does a new roof cost in South Florida?", "acceptedAnswer": {"@type": "Answer", "text": "Roof replacement costs in Broward and Palm Beach County typically range from $15,000 to $50,000+ depending on material, roof size, and complexity. Tile roofs are at the higher end; shingle roofs are the most affordable. All Phase Construction USA provides free inspections and detailed estimates. Call (754) 227-5605."}},
+          {"@type": "Question", "name": "What is the best roofing material for Florida hurricanes?", "acceptedAnswer": {"@type": "Answer", "text": "For High Velocity Hurricane Zone compliance in Broward and Palm Beach County, mechanically seamed standing seam metal roofing and properly foam-adhered tile roofs offer the highest wind resistance (200+ mph). Architectural shingles with 6-nail patterns and secondary water barriers also perform well when properly installed."}},
+          {"@type": "Question", "name": "How do I get insurance discounts for my roof in Florida?", "acceptedAnswer": {"@type": "Answer", "text": "After roof installation, a licensed inspector performs a wind mitigation inspection (OIR-B1-1802 form). Discounts of 30-45% on the windstorm portion of your premium are possible based on roof covering, deck attachment, secondary water resistance, and roof-to-wall connections. All Phase documents these features during installation so inspectors can verify them."}},
+          {"@type": "Question", "name": "Do you offer free roof inspections?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All Phase Construction USA provides complimentary 21-point roof inspections for homeowners in Broward and Palm Beach County. Our licensed inspectors assess material condition, structural integrity, flashing, ventilation, and HVHZ compliance with detailed photo documentation."}},
+          {"@type": "Question", "name": "What areas does All Phase Construction USA serve?", "acceptedAnswer": {"@type": "Answer", "text": "We serve over 50 cities across Broward County and Palm Beach County from our Deerfield Beach headquarters at 590 Goolsby Blvd. Key service areas include Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, West Palm Beach, Delray Beach, Boynton Beach, Parkland, Coconut Creek, and Wellington."}}
+        ]
+      }
+    ]
   );
   // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering
