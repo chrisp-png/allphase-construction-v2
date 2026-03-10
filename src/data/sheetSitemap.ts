@@ -1591,6 +1591,15 @@ export const sheetSitemap: SitemapEntry[] = [
   },
   {
     section: 'Learning Center',
+    label: 'Licensed Roofing Contractor Guide',
+    path: '/licensed-roofing-contractor/',
+    parent: null,
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+  {
+    section: 'Learning Center',
     label: 'Financing Options',
     path: '/easy-payments/',
     parent: null,
