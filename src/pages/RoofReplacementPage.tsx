@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Clock, DollarSign, Shield, FileText, Users, Award } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -829,6 +830,45 @@ export default function RoofReplacementPage() {
                   Construction USA installs all major roofing systems with manufacturer-backed warranties and proper HVHZ certification.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Services */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Related Roofing Services</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <Link to="/roof-replacement-process/" className="bg-white p-5 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-1">Replacement Process</h3>
+                <p className="text-sm text-gray-600">Step-by-step guide from contract to final inspection.</p>
+              </Link>
+              <Link to="/roof-cost-calculator/" className="bg-white p-5 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-1">Cost Calculator</h3>
+                <p className="text-sm text-gray-600">Get an instant estimate for your roof replacement.</p>
+              </Link>
+              <Link to="/pricing-guide/" className="bg-white p-5 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-1">Pricing Guide</h3>
+                <p className="text-sm text-gray-600">Detailed cost breakdowns by material and roof size.</p>
+              </Link>
+              <Link to="/roof-inspection/" className="bg-white p-5 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-1">Free Inspection</h3>
+                <p className="text-sm text-gray-600">Professional assessment to determine replacement needs.</p>
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-4 gap-4 mt-4">
+              <Link to="/shingle-roofing/" className="bg-white p-4 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors text-sm">Shingle Roofing</h3>
+              </Link>
+              <Link to="/tile-roofing/" className="bg-white p-4 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors text-sm">Tile Roofing</h3>
+              </Link>
+              <Link to="/metal-roofing/" className="bg-white p-4 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors text-sm">Metal Roofing</h3>
+              </Link>
+              <Link to="/flat-roofing/" className="bg-white p-4 rounded-xl shadow hover:shadow-md transition-shadow group">
+                <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors text-sm">Flat Roofing</h3>
+              </Link>
             </div>
           </div>
         </section>

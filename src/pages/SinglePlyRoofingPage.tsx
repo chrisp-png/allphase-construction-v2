@@ -921,6 +921,31 @@ export default function SinglePlyRoofingPage() {
         </div>
       </section>
 
+      {/* Related Services */}
+      <section className="py-16 px-4 bg-zinc-900">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">Related Roofing Services</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link to="/flat-roofing/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Flat Roofing</h3>
+              <p className="text-sm text-zinc-400">All flat roof systems including TPO & modified bitumen.</p>
+            </Link>
+            <Link to="/metal-roofing/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Metal Roofing</h3>
+              <p className="text-sm text-zinc-400">Standing seam metal for commercial applications.</p>
+            </Link>
+            <Link to="/roof-maintenance-programs/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Maintenance Programs</h3>
+              <p className="text-sm text-zinc-400">Preventive maintenance to extend roof life.</p>
+            </Link>
+            <Link to="/roof-inspection/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Roof Inspection</h3>
+              <p className="text-sm text-zinc-400">Professional single-ply membrane assessments.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 px-4 bg-gradient-to-b from-black via-red-950/10 to-black relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent" />

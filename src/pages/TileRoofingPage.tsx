@@ -1120,6 +1120,45 @@ export default function TileRoofingPage() {
         </div>
       </section>
 
+      {/* Related Services */}
+      <section className="py-16 px-4 bg-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">Explore Other Roofing Options</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link to="/shingle-roofing/" className="bg-zinc-800 p-6 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-2">Shingle Roofing</h3>
+              <p className="text-sm text-zinc-400">Architectural asphalt shingles rated for HVHZ wind speeds.</p>
+            </Link>
+            <Link to="/metal-roofing/" className="bg-zinc-800 p-6 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-2">Metal Roofing</h3>
+              <p className="text-sm text-zinc-400">Standing seam metal for superior hurricane performance.</p>
+            </Link>
+            <Link to="/flat-roofing/" className="bg-zinc-800 p-6 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-2">Flat Roofing</h3>
+              <p className="text-sm text-zinc-400">TPO, PVC & modified bitumen for low-slope applications.</p>
+            </Link>
+            <Link to="/roof-replacement-process/" className="bg-zinc-800 p-6 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-2">Replacement Process</h3>
+              <p className="text-sm text-zinc-400">Step-by-step guide to your South Florida roof replacement.</p>
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4 mt-4">
+            <Link to="/pricing-guide/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Pricing Guide</h3>
+              <p className="text-sm text-zinc-400">Detailed cost breakdowns by material and roof size.</p>
+            </Link>
+            <Link to="/roof-repair/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Roof Repair</h3>
+              <p className="text-sm text-zinc-400">Expert tile roof repair and maintenance services.</p>
+            </Link>
+            <Link to="/residential-roofing/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
+              <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Residential Roofing</h3>
+              <p className="text-sm text-zinc-400">Complete home roofing services overview.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-zinc-950 to-zinc-900">
         <div className="max-w-4xl mx-auto text-center">
