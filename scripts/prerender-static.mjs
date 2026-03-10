@@ -974,6 +974,248 @@ function generateRoofingServicesContent() {
 /**
  * Generate default service page content (residential, commercial, metal, tile, etc.)
  */
+function generateHowToHireContent() {
+  return `
+<section id="seo-static-content">
+  <h1>How to Hire a Roofing Contractor in Deerfield Beach, Florida</h1>
+
+  <h2>What Homeowners in Broward & Palm Beach County Need to Know About HVHZ, Wind Mitigation, and Insurance Savings</h2>
+
+  <p>Roofing in Southeast Florida is fundamentally different from roofing in other parts of the country. This region operates under some of the most stringent building codes in the United States—specifically the High Velocity Hurricane Zone (HVHZ) provisions of the Florida Building Code—and homeowners' insurance carriers require documentation that most roofers elsewhere never think about.</p>
+
+  <p>This guide applies to Deerfield Beach and the surrounding service areas throughout Broward and Palm Beach Counties. Whether you live in Boca Raton, Coral Springs, Pompano Beach, Delray Beach, or any other city in this region, the principles outlined here will help you make an informed decision when hiring a roofing contractor.</p>
+
+  <h2>Why Hiring a Roofer in South Florida Is Different</h2>
+
+  <p>The High Velocity Hurricane Zone designation triggers additional requirements that go far beyond standard roofing practices:</p>
+
+  <ul>
+    <li><strong>Uplift Resistance:</strong> Every component must be rated and installed to resist wind uplift. Fastening patterns, adhesives, and attachment methods are all subject to code requirements and third-party inspection.</li>
+    <li><strong>Secondary Water Barriers:</strong> HVHZ requires continuous secondary water barrier systems beneath the primary roof covering to prevent water intrusion during severe weather events.</li>
+    <li><strong>Roof-to-Wall Connections:</strong> The connection between your roof structure and your walls must meet specific load ratings. This often requires strapping, additional fasteners, and structural reinforcement.</li>
+    <li><strong>Inspection Rigor:</strong> Building inspectors in Broward and Palm Beach Counties are trained to verify HVHZ compliance. Installations that pass inspection in other states would fail here.</li>
+  </ul>
+
+  <p>Not all roofers are qualified to work in this environment. A contractor licensed in another state—or even in North Florida—may not understand HVHZ requirements. Always <a href="/licensed-roofing-contractor">verify that your contractor is licensed</a> specifically for work in Southeast Florida and has a demonstrated track record of passing inspections in Broward or Palm Beach County.</p>
+
+  <h2>Why Dual Licensing Matters in Southeast Florida</h2>
+
+  <p>Many homeowners don't realize there's a critical difference between a roofing-only contractor and a dual-licensed roofing and general contractor. Here's why it matters:</p>
+
+  <h3>What Dual Licensing Covers</h3>
+
+  <ul>
+    <li><strong>Roof Strapping:</strong> Installing or reinforcing hurricane straps connecting the roof structure to the wall framing requires general contractor authority.</li>
+    <li><strong>Third Nail Requirements:</strong> Adding required fasteners at structural connections goes beyond surface roofing work.</li>
+    <li><strong>Structural Tie-Ins:</strong> Connecting roof components to the load-bearing structure of the building is general contracting work.</li>
+    <li><strong>Decking Replacement:</strong> When roof decking must be replaced due to rot or structural damage, this requires general contracting capabilities.</li>
+  </ul>
+
+  <h3>Red Flags: The Problem with Single-License Contractors</h3>
+
+  <p>When a roofing-only contractor discovers structural work is needed, they must stop and hire a separate general contractor. This creates:</p>
+
+  <ul>
+    <li>Multiple permits and permit fees</li>
+    <li>Coordination delays between two separate contractors</li>
+    <li>Scheduling conflicts and extended project timelines</li>
+    <li>Increased liability exposure (who's responsible if something fails?)</li>
+    <li>Higher total costs due to subcontractor markups</li>
+  </ul>
+
+  <p><strong>All Phase Construction USA holds both a General Contractor license (CGC-1526236) and a Roofing Contractor license (CCC-1331464).</strong> This means we can handle the entire scope of work under one permit, with faster inspections, clearer accountability, and reduced overall project risk.</p>
+
+  <h2>How to Verify a Contractor's License in Florida</h2>
+
+  <p>Verifying a Florida contractor's license is straightforward and critical:</p>
+
+  <ol>
+    <li>Go to <strong>myfloridalicense.com</strong> and use the "Verify a Licensee" tool</li>
+    <li>Search by the contractor's name or license number</li>
+    <li>Confirm the license is <strong>active</strong>, in the correct category (CCC for roofing or CGC for general contractor), and not suspended or under disciplinary action</li>
+    <li>Check the license history for any complaints or violations</li>
+  </ol>
+
+  <p>Never hire a contractor who cannot provide a Florida state license number or who asks you to pull the permit yourself. This is a major red flag indicating the contractor may be unlicensed or attempting to avoid accountability.</p>
+
+  <h2>Insurance Requirements and How to Confirm Coverage</h2>
+
+  <p>Before any work begins, verify that your contractor carries adequate insurance:</p>
+
+  <ul>
+    <li><strong>General Liability Insurance:</strong> Protects your property from damage during the project</li>
+    <li><strong>Workers' Compensation Insurance:</strong> Covers injuries to workers on your property</li>
+    <li>Request <strong>certificates of insurance directly from the insurance carrier</strong>, not from the contractor</li>
+    <li>Verify the policy is current and covers the dates of your project</li>
+  </ul>
+
+  <p>If a contractor is unwilling or unable to provide proof of insurance, do not proceed. You could be held liable for injuries or property damage if they are uninsured.</p>
+
+  <h2>Wind Mitigation, Insurance Discounts, and Why Documentation Is Critical</h2>
+
+  <p>Many South Florida homeowners are unknowingly leaving money on the table. Insurance carriers offer substantial premium discounts for hurricane-resistant features—but only if you can prove they exist.</p>
+
+  <h3>What Is a Wind Mitigation Report?</h3>
+
+  <p>A wind mitigation report is a documented inspection that verifies hurricane-resistant features of your home's roof and structure. It includes:</p>
+
+  <ul>
+    <li>Roof covering type and attachment method</li>
+    <li>Roof deck attachment (fastening pattern and spacing)</li>
+    <li>Roof-to-wall connection strength</li>
+    <li>Roof geometry (hip vs. gable)</li>
+    <li>Secondary water resistance (peel-and-stick underlayment)</li>
+    <li>Opening protection (impact-rated windows and doors)</li>
+  </ul>
+
+  <p>Insurance companies use this report to calculate your eligibility for premium discounts. Depending on the features documented, these discounts can save homeowners hundreds or even thousands of dollars annually.</p>
+
+  <h3>Why Your Roofer Should Complete This Report</h3>
+
+  <p>The contractor who installs your roof has firsthand knowledge of every component installed and can document it accurately. Many roofers skip this step, leaving homeowners to hire a separate inspector months or years later—if they ever realize the benefit exists at all.</p>
+
+  <p><strong>All Phase Construction USA prepares wind mitigation reports for every qualifying roof installation.</strong> We ensure you receive the documentation needed to maximize your insurance savings immediately.</p>
+
+  <h2>Contractor Comparison Checklist: Key Questions to Ask</h2>
+
+  <p>When evaluating roofing contractors in South Florida, ask these critical questions:</p>
+
+  <h3>Licensing and Credentials</h3>
+
+  <ul>
+    <li>What is your Florida contractor license number? (Verify at myfloridalicense.com)</li>
+    <li>Are you licensed as a roofing contractor, general contractor, or both?</li>
+    <li>How long have you been licensed in Florida?</li>
+    <li>Can you provide references from recent projects in Broward or Palm Beach County?</li>
+  </ul>
+
+  <h3>HVHZ Compliance and Permitting</h3>
+
+  <ul>
+    <li>Do you pull permits for all roofing work?</li>
+    <li>Are your installations HVHZ-compliant?</li>
+    <li>What is your permit pass rate with local building departments?</li>
+    <li>Will you provide copies of all permits and final inspection reports?</li>
+  </ul>
+
+  <h3>Insurance and Documentation</h3>
+
+  <ul>
+    <li>Can you provide current certificates of general liability and workers' compensation insurance?</li>
+    <li>Do you document the installation process with photographs?</li>
+    <li>Will you prepare a wind mitigation report after installation?</li>
+    <li>What warranty coverage do you provide on labor and materials?</li>
+  </ul>
+
+  <h3>Project Details</h3>
+
+  <ul>
+    <li>What property protection systems do you use? (Catch-All, Equipter, etc.)</li>
+    <li>How do you handle wood replacement pricing? (Should be specified in writing before work begins)</li>
+    <li>What is your typical project timeline?</li>
+    <li>Who will be my point of contact during the project?</li>
+  </ul>
+
+  <h2>HVHZ-Specific Hiring Considerations for Broward and Palm Beach County</h2>
+
+  <p>High Velocity Hurricane Zone requirements are non-negotiable in South Florida. When hiring a contractor, verify they understand:</p>
+
+  <ul>
+    <li><strong>Product Approvals:</strong> All materials must carry a valid Florida Product Approval (Notice of Acceptance)</li>
+    <li><strong>Fastening Schedules:</strong> Specific nailing patterns and spacing requirements based on wind load calculations</li>
+    <li><strong>Secondary Water Resistance:</strong> Self-adhered underlayment requirements for insurance discounts</li>
+    <li><strong>Roof-to-Wall Connections:</strong> Hurricane strapping and structural tie-down requirements</li>
+    <li><strong>Inspection Compliance:</strong> Understanding what inspectors verify and how to document compliance</li>
+  </ul>
+
+  <h2>How to Evaluate Bids and Avoid Lowball Scams</h2>
+
+  <p>The lowest bid is rarely the best value. Here's how to evaluate roofing proposals properly:</p>
+
+  <h3>Warning Signs of a Lowball Bid</h3>
+
+  <ul>
+    <li>Significantly lower than other bids (often 30-50% below market)</li>
+    <li>Vague or incomplete scope of work descriptions</li>
+    <li>No mention of permits, inspections, or compliance requirements</li>
+    <li>Pressure to sign immediately or pay large deposits upfront</li>
+    <li>Contractor asks you to pull the permit</li>
+    <li>No written warranty or guarantee provided</li>
+  </ul>
+
+  <h3>What a Quality Bid Should Include</h3>
+
+  <ul>
+    <li>Detailed scope of work with specific materials and methods</li>
+    <li>Permit costs and inspection requirements clearly stated</li>
+    <li>Wood replacement pricing (per sheet or linear foot) specified in advance</li>
+    <li>Timeline with realistic completion dates</li>
+    <li>Payment schedule tied to project milestones, not upfront lump sums</li>
+    <li>Warranty details for both labor and materials</li>
+    <li>Contractor license numbers and insurance information</li>
+  </ul>
+
+  <h2>Contract Essentials: What Must Be in Writing</h2>
+
+  <p>Your roofing contract should be comprehensive and protect both parties. Essential elements include:</p>
+
+  <ul>
+    <li><strong>Scope of Work:</strong> Detailed description of all work to be performed</li>
+    <li><strong>Materials Specifications:</strong> Brand, type, color, and grade of all materials</li>
+    <li><strong>Total Cost:</strong> Itemized pricing with contingency pricing for potential wood replacement</li>
+    <li><strong>Payment Schedule:</strong> Tied to project milestones (deposit, material delivery, completion, final inspection)</li>
+    <li><strong>Project Timeline:</strong> Start date, expected completion, and weather delay provisions</li>
+    <li><strong>Permit and Inspection Requirements:</strong> Who pulls permits and provides final inspection reports</li>
+    <li><strong>Warranty Coverage:</strong> Labor warranty, manufacturer warranty, and claims process</li>
+    <li><strong>Change Order Process:</strong> How additional work will be documented and approved</li>
+    <li><strong>Cleanup and Disposal:</strong> Debris removal and site restoration responsibilities</li>
+  </ul>
+
+  <h2>Understanding Warranty Types and What to Look For</h2>
+
+  <p>Roofing warranties are complex. Understanding the difference between warranty types is critical:</p>
+
+  <h3>Manufacturer Material Warranty</h3>
+
+  <p>Covers defects in the roofing materials themselves (shingles, tiles, metal panels, underlayment). Typical coverage ranges from 20-50 years depending on the product. Important: manufacturer warranties typically do NOT cover labor costs to remove and replace defective materials.</p>
+
+  <h3>Contractor Labor Warranty</h3>
+
+  <p>Covers workmanship and installation defects. A quality contractor should provide a minimum 5-10 year labor warranty. This covers leaks and failures resulting from improper installation, not material defects.</p>
+
+  <h3>System Warranties (Enhanced Coverage)</h3>
+
+  <p>Some manufacturers offer enhanced system warranties when all components (underlayment, roof covering, flashings, ventilation) come from the same manufacturer and are installed by certified contractors. These provide longer coverage and may include labor costs.</p>
+
+  <h3>What to Verify About Any Warranty</h3>
+
+  <ul>
+    <li>Is it transferable to a new owner if you sell your home?</li>
+    <li>What voids the warranty? (Common: unpermitted modifications, pressure washing, lack of maintenance)</li>
+    <li>Does it cover labor costs or just materials?</li>
+    <li>What is the claims process and response time?</li>
+    <li>Is the warranty prorated or non-prorated?</li>
+  </ul>
+
+  <h2>Related Resources</h2>
+
+  <ul>
+    <li><a href="/licensed-roofing-contractor">Understanding Florida Roofing Contractor Licenses</a></li>
+    <li><a href="/roof-inspection">Professional Roof Inspection Services</a></li>
+    <li><a href="/pricing-guide">South Florida Roof Replacement Cost Guide</a></li>
+    <li><a href="/roof-cost-calculator/">Free Roof Cost Calculator</a></li>
+    <li><a href="/roof-replacement-process">The Roof Replacement Process: What to Expect</a></li>
+  </ul>
+
+  <h2>Ready to Hire a Professional Roofing Contractor?</h2>
+
+  <p>Schedule a comprehensive roof assessment with All Phase Construction USA. We'll evaluate your roof's condition, explain your options, provide transparent pricing, and answer all your questions. Call <strong>(754) 227-5605</strong> for a free professional inspection.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 function defaultServicePageContent(pageTitle) {
   return `
 <section id="seo-static-content">
@@ -1504,6 +1746,23 @@ function generateStaticFiles() {
       { name: 'Roof Repair', url: 'https://allphaseconstructionfl.com/roof-repair' }
     ]
   },
+  '/how-to-hire-roofing-contractor': {
+    faqs: [
+      { question: 'Do I need a dual-licensed roofing contractor in South Florida?', answer: 'Yes. When roofing work requires structural modifications like adding straps, third nails, or tie-ins, a general contractor license is required. A dual-licensed contractor can handle the entire scope under one permit, reducing delays, inspection issues, and liability exposure.' },
+      { question: 'What is a wind mitigation report and who should complete it?', answer: 'A wind mitigation report documents hurricane-resistant features of your roof and structure. It is used by insurance companies to determine eligibility for premium discounts. The contractor who installs your roof should complete this report because they have firsthand knowledge of the installed systems and can accurately document compliance.' },
+      { question: 'Can roof upgrades reduce my insurance premiums?', answer: 'Yes. Upgrades like secondary water barriers, improved roof-to-wall connections, impact-resistant materials, and proper fastening can qualify for significant insurance discounts. However, you must have proper documentation—a wind mitigation report—to receive these savings.' },
+      { question: 'How do I know if my roofer follows HVHZ code?', answer: 'Verify their contractor licenses, ask about their permit history, request references from recent projects in Broward or Palm Beach County, and confirm they pull permits for all work. HVHZ compliance requires third-party building inspections, so unpermitted work is a red flag.' },
+      { question: 'How is my property protected during roof replacement?', answer: 'Professional contractors use Catch-All systems to protect landscaping, Equipters to contain debris during tile removal, and carefully stage materials to avoid damaging driveways, pavers, and surrounding property. Ask your contractor specifically what protection methods they use.' },
+      { question: 'When is the best time to replace a roof in Florida?', answer: 'Winter months (November through April) are ideal. Florida rainy season runs May through October, creating scheduling challenges and moisture concerns. Winter provides more predictable weather, easier scheduling, and more reliable inspection timelines.' },
+      { question: 'How should wood replacement pricing be handled in a Florida roofing contract?', answer: 'In Florida, your contract should spell out wood replacement pricing before work begins—not as a surprise after tear-off. Ask your roofer to list the exact unit price they will charge if decking, fascia, or other structural wood needs replacement (for example, a per-sheet or per-linear-foot rate), and require that any additional wood work be documented and approved in writing as a change order. The contractor should also provide clear, detailed photo documentation with no ambiguity showing exactly which boards or sheets were deteriorated before removal and the same areas after replacement.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
+      { name: 'Deerfield Beach', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach' },
+      { name: 'How to Hire a Roofing Contractor', url: 'https://allphaseconstructionfl.com/how-to-hire-roofing-contractor' }
+    ]
+  },
   '/tile-roofing': {
     faqs: [
       { question: 'How long does tile roofing last in South Florida?', answer: 'Concrete and clay tile roofs typically last 40-50 years in South Florida when properly maintained. Their mass and profile provide excellent wind resistance in HVHZ conditions.' },
@@ -1868,7 +2127,7 @@ ${companyAuthorityFooter()}
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() : defaultServicePageContent(title),
+      pagePath === '/how-to-hire-roofing-contractor' ? generateHowToHireContent() : pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/roof-replacement-process' ? generateRoofReplacementProcessContent() : defaultServicePageContent(title),
       jsonLdSchema
     );
 
