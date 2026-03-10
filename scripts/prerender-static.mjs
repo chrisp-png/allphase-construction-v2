@@ -2190,6 +2190,7 @@ ${companyAuthorityFooter()}
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
+    try {
     const metadata = getSEOMetadata(pagePath);
 
         // Build JSON-LD schema array for pages that have FAQ/Breadcrumb data
@@ -2259,6 +2260,10 @@ ${companyAuthorityFooter()}
       console.error(`ÃÂ¢ÃÃ ERROR writing ${pagePath}:`, err);
     }
     totalPages++;
+    } catch (err) {
+      console.error(`⚠️ ERROR generating ${pagePath}: ${err.message}`);
+      console.error(err.stack);
+    }
   });
 
 
@@ -2292,6 +2297,7 @@ ${companyAuthorityFooter()}
   ];
 
   additionalLocations.forEach(({ path: pagePath, title, city }) => {
+    try {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
     const description = `Professional roofing services in ${city}, Florida. Expert roof installation, repair, and maintenance from All Phase Construction USA. Licensed, insured, and serving South Florida.`;
 
@@ -2337,6 +2343,10 @@ ${companyAuthorityFooter()}
     fs.writeFileSync(path.join(dir, 'index.html'), html);
     console.log(`ÃÂ¢ÃÃ Generated: dist${pagePath}/index.html`);
     totalPages++;
+    } catch (err) {
+      console.error(`⚠️ ERROR generating ${city}: ${err.message}`);
+      console.error(err.stack);
+    }
   });
 
   // 2.4. Generate Top-5-Roofer Service Area Pages
@@ -2353,6 +2363,7 @@ ${companyAuthorityFooter()}
   ];
 
   topRooferPages.forEach(({ path: pagePath, city }) => {
+    try {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
     const title = `Top 5 Roofer in ${city}, FL | All Phase Construction USA`;
     const description = `All Phase Construction USA ranks among the top 5 roofers in ${city}, Florida. Dual-licensed (CCC & CGC), A+ BBB rated, and trusted by thousands of South Florida homeowners.`;
@@ -2400,6 +2411,10 @@ ${companyAuthorityFooter()}
     fs.writeFileSync(path.join(dir, 'index.html'), html);
     console.log(`ÃÂ¢ÃÃ Generated: dist${pagePath}/index.html`);
     totalPages++;
+    } catch (err) {
+      console.error(`⚠️ ERROR generating ${city}: ${err.message}`);
+      console.error(err.stack);
+    }
   });
 
   // 2.5. Generate Blog Post Pages from Sitemap
@@ -2424,6 +2439,7 @@ ${companyAuthorityFooter()}
         console.log(`Found ${blogSlugs.length} blog posts in sitemap\n`);
 
         blogSlugs.forEach(slug => {
+          try {
           // Generate title from slug
           const blogTitle = slug
             .split('-')
@@ -2478,6 +2494,10 @@ ${companyAuthorityFooter()}
           fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
           console.log(`ÃÂ¢ÃÃ Generated: dist/blog/${slug}/index.html`);
           totalPages++;
+          } catch (err) {
+            console.error(`⚠️ ERROR generating ${slug}: ${err.message}`);
+            console.error(err.stack);
+          }
         });
       } else {
         console.log('ÃÂ¢ÃÃÂ¹ÃÂ¯ÃÂ¸Ã No blog posts found in sitemap\n');
@@ -2534,6 +2554,7 @@ ${companyAuthorityFooter()}
 
   // Generate /roof-repair/:slug and /roof-inspection/:slug pages
   cities.forEach(({ slug, city }) => {
+    try {
     const cityName = city;
     const citySlug = slug;
 
@@ -2719,6 +2740,10 @@ ${companyAuthorityFooter()}
     fs.writeFileSync(path.join(inspectionDir, 'index.html'), inspectionHTML);
     console.log(`ÃÂ¢ÃÃ Generated: dist/roof-inspection/${citySlug}/index.html`);
     totalPages++;
+    } catch (err) {
+      console.error(`⚠️ ERROR generating ${cityName}: ${err.message}`);
+      console.error(err.stack);
+    }
   });
 
 
