@@ -2502,6 +2502,344 @@ function generateRoofInspectionHubContent() {
 }
 
 /**
+ * CUSTOM: Roof Cost Calculator Page - /roof-cost-calculator
+ * 1,400+ words covering pricing by material, hidden costs, insurance impacts, and comparison guidance
+ */
+function generateRoofCostCalculatorContent() {
+  return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem; background: white; color: #111827;">
+  <h1 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 1.5rem; line-height: 1.2;">
+    How Much Does a New Roof Cost in South Florida? 2026 Price Guide
+  </h1>
+
+  <p style="font-size: 1.25rem; color: #374151; line-height: 1.75; margin-bottom: 2rem;">
+    Roof replacement costs in Broward and Palm Beach Counties range from <strong>$10,000 to $70,000+</strong> depending on material choice, roof complexity, and code requirements. This comprehensive guide breaks down actual costs, hidden fees, and what you should compare when evaluating roofing proposals.
+  </p>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <p style="font-size: 1.125rem; font-weight: 600; color: #991b1b; margin-bottom: 0.5rem;">
+      Get Your Free Roof Cost Estimate: <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a>
+    </p>
+    <p style="color: #374151; line-height: 1.75;">
+      Itemized pricing with no hidden fees. Dual-licensed contractor serving Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Roof Costs Vary So Much in Broward & Palm Beach County
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    South Florida is designated as a <strong>High-Velocity Hurricane Zone (HVHZ)</strong>, which means every roof installation must meet significantly stricter requirements than standard building codes. These requirements aren't optional suggestions — they're mandatory for building permit approval and insurance coverage.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    HVHZ Requirements That Affect Cost
+  </h3>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>NOA-Rated Products:</strong> All roofing materials must carry a valid Florida Product Approval (Notice of Acceptance) demonstrating they've been lab-tested to withstand 175+ mph winds. NOA-rated products cost 15-25% more than standard products.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Enhanced Fastening Schedules:</strong> HVHZ installations require significantly more fasteners, closer spacing, and specific patterns compared to standard installations. This increases both material and labor costs.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Wind-Resistant Underlayment:</strong> Self-adhered underlayment is typically required in HVHZ for secondary water protection. Standard felt paper is not acceptable for permit approval.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Roof-to-Wall Connections:</strong> Hurricane straps, clips, and structural tie-downs must meet specific engineering requirements. Many older homes require these connections to be retrofitted during re-roofing.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Permit and Inspection Costs:</strong> Broward County permit costs range from $200 to $1,000+ depending on project scope. Multiple inspections are required throughout the installation process.</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>The bottom line:</strong> HVHZ requirements add 20-35% to roofing costs compared to non-coastal regions. But these requirements protect your investment and are mandatory for insurance compliance. Cutting corners on HVHZ requirements means your roof won't pass inspection and your insurance may deny claims.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Roof Replacement Cost by Material
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Material choice is the largest cost driver in roof replacement. Here's what you can expect for a typical 2,000 square foot home in South Florida:
+  </p>
+
+  <div style="overflow-x: auto; margin: 2rem 0;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+      <thead>
+        <tr style="background: #f9fafb; border-bottom: 2px solid #e5e7eb;">
+          <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: #111827;">Material</th>
+          <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: #111827;">Cost Per Sq Ft (Installed)</th>
+          <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: #111827;">Typical 2,000 Sq Ft Home</th>
+          <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: #111827;">Expected Lifespan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #e5e7eb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Architectural Asphalt Shingles</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$5–$9/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$10,000–$18,000</td>
+          <td style="padding: 0.75rem; color: #374151;">15–25 years</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e7eb; background: #f9fafb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Luxury Asphalt Shingles</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$9–$17/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$18,000–$34,000</td>
+          <td style="padding: 0.75rem; color: #374151;">25–30 years</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e7eb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Concrete Tile</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$9–$19/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$18,000–$38,000</td>
+          <td style="padding: 0.75rem; color: #374151;">50+ years</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e7eb; background: #f9fafb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Clay Tile</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$12–$21/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$24,000–$42,000</td>
+          <td style="padding: 0.75rem; color: #374151;">75–100+ years</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e7eb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Standing Seam Metal</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$10–$35/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$20,000–$70,000</td>
+          <td style="padding: 0.75rem; color: #374151;">40–60 years</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e7eb; background: #f9fafb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Exposed Fastener Metal</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$7–$12/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$14,000–$24,000</td>
+          <td style="padding: 0.75rem; color: #374151;">25–40 years</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e5e7eb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">TPO Flat Roofing</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$4–$9/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$8,000–$18,000</td>
+          <td style="padding: 0.75rem; color: #374151;">25–30 years</td>
+        </tr>
+        <tr style="background: #f9fafb;">
+          <td style="padding: 0.75rem; color: #374151;"><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Modified Bitumen</a></td>
+          <td style="padding: 0.75rem; color: #374151;">$3–$5/sq ft</td>
+          <td style="padding: 0.75rem; color: #374151;">$6,000–$10,000</td>
+          <td style="padding: 0.75rem; color: #374151;">15–20 years</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background: #fffbeb; border: 2px solid #f59e0b; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #92400e; margin-bottom: 0.5rem;">Understanding "Per Square Foot" Pricing</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      Roofing costs are typically quoted per square foot of <strong>roof surface area</strong>, not home square footage. A 2,000 sq ft home typically has 2,200–2,600 sq ft of actual roof surface due to pitch and overhangs. Always verify whether quotes reference roof area or living space.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Hidden Costs Most Contractors Won't Mention
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    The base material cost is only part of your total investment. Here are the additional costs that often surprise homeowners:
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Tear-Off and Disposal
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Cost: $0.40–$2.00 per square foot</strong><br>
+    Removing your existing roof and hauling debris to a landfill. Tile and concrete are significantly more expensive to remove than shingles due to weight. Some contractors include this in their base price; others quote it separately. Always verify what's included.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Underlayment Replacement
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Cost: $1.50–$2.10 per square foot</strong><br>
+    Self-adhered synthetic underlayment is required in HVHZ for secondary water protection and insurance compliance. This is a separate cost from the roof covering material. Standard felt paper is not acceptable for permit approval in high-wind zones.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Rotten Decking Replacement
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Cost: $2–$5 per square foot (per damaged section)</strong><br>
+    You won't know the extent of deck damage until the old roof is removed. South Florida's humidity means many roofs have hidden wood rot that isn't visible from the surface. Budget 5-15% of your project cost for potential wood replacement. All Phase Construction provides per-sheet pricing in advance so there are no surprises.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Code-Required HVHZ Upgrades
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Cost: Varies by home age and existing compliance</strong><br>
+    Homes built before 2002 often require roof-to-wall connection upgrades (hurricane straps, clips) to meet current HVHZ standards. Your contractor should evaluate this during inspection and include it in the proposal. Skipping these upgrades means your roof won't pass final inspection.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Permit and Inspection Fees
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <strong>Cost: $200–$1,000+ depending on project scope</strong><br>
+    All roof replacements in Broward and Palm Beach Counties require building permits. Permit costs vary by municipality and project value. Multiple inspections are required throughout the project. Your contractor should handle all permitting — if they ask you to pull the permit, that's a red flag.
+  </p>
+
+  <div style="background: #dcfce7; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h4 style="font-size: 1.125rem; font-weight: bold; color: #166534; margin-bottom: 0.5rem;">All Phase Construction Transparency Guarantee</h4>
+    <p style="color: #374151; line-height: 1.75;">
+      We provide <strong>itemized written estimates</strong> that break down every cost: materials, labor, tear-off, underlayment, permits, and contingency pricing for potential wood replacement. No surprise charges. No hidden fees. What we quote is what you pay.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    How Your Roof Affects Insurance Premiums
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Your roof has a direct impact on homeowner's insurance costs in Florida. Insurers assess roof condition, material type, and installation quality when calculating premiums and determining coverage eligibility.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    Insurance Discounts for Hurricane-Resistant Roofs
+  </h3>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal</a> and <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile roofs</a> often qualify for <strong>25-35% homeowner's insurance premium reductions</strong> in Florida when properly documented. These materials provide superior wind resistance and impact protection compared to shingles.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    To qualify for maximum discounts, you need:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Wind mitigation inspection</strong> documenting roof-to-wall connections, roof deck attachment, roof covering type, and secondary water resistance</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Permit final inspection documentation</strong> from a <a href="/licensed-roofing-contractor" style="color: #dc2626; text-decoration: underline;">licensed contractor</a> showing HVHZ compliance</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Product approval documentation</strong> (NOA numbers) for all roofing materials used</li>
+  </ul>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    My Safe Florida Home Program
+  </h3>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    The state of Florida offers grants and matching funds for homeowners making hurricane-resistant improvements, including roof replacement. The <strong>My Safe Florida Home</strong> program provides:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;">Free home inspections to identify wind vulnerabilities</li>
+    <li style="margin-bottom: 0.5rem;">Mitigation recommendations and cost estimates</li>
+    <li style="margin-bottom: 0.5rem;">Matching grants up to $10,000 for qualifying improvements</li>
+  </ul>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Check program availability and eligibility at <a href="https://www.mysafefloridahome.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">MySafeFloridaHome.com</a>. All Phase Construction can coordinate with inspectors and provide required documentation for grant applications.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Why Getting 3 Quotes Isn't Enough — What to Actually Compare
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Most homeowners are told to "get three quotes" but aren't given guidance on how to compare them meaningfully. Price alone doesn't tell you anything about quality, scope, or value. Here's what to actually compare:
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    1. Material Specifications (Not Just "Shingles" or "Tile")
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Two "shingle" bids can vary by $10,000 because one uses 3-tab shingles with 20-year warranties while the other uses architectural shingles with lifetime warranties. Verify:
+  </p>
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li>Specific manufacturer and product line</li>
+    <li>Product weight/thickness (heavier = better quality)</li>
+    <li>Warranty length and coverage (material vs. labor)</li>
+    <li>NOA approval numbers for HVHZ compliance</li>
+  </ul>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    2. Labor Warranty vs. Manufacturer Warranty
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Manufacturer warranties cover material defects (rare). Labor warranties cover installation defects (common). A contractor offering a 50-year manufacturer warranty with only a 1-year labor warranty is telling you they don't stand behind their work. All Phase Construction provides a <strong>10-year workmanship warranty</strong> on all <a href="/residential-roofing" style="color: #dc2626; text-decoration: underline;">residential roofing</a> installations.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    3. What's Included in "Tear-Off"
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Some contractors quote tear-off but exclude disposal fees, dumpster rental, or debris cleanup. Others include full site restoration with landscaping protection. Verify exactly what cleanup and disposal services are included in the quoted price.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    4. Who Pulls the Permit
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Licensed contractors are required to pull permits for their own work. If a contractor asks you to pull the permit, they're either not properly licensed or trying to avoid inspection requirements. This is a major red flag. The contractor should handle all permitting and inspections.
+  </p>
+
+  <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-top: 2rem; margin-bottom: 0.75rem;">
+    5. Insurance Coverage (General Liability AND Workers' Comp)
+  </h3>
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Many contractors carry general liability insurance but skip workers' compensation coverage to save money. If an uninsured worker is injured on your property, <strong>you</strong> are liable. Always verify both coverages and request certificates of insurance before signing a contract.
+  </p>
+
+  <div style="background: #fee2e2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Dual-Licensed Contractor Advantage</h3>
+    <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+      All Phase Construction holds both <strong>State Certified Roofing Contractor (CCC-1331464)</strong> and <strong>Certified General Contractor (CGC-1526236)</strong> licenses. This dual licensing means we can handle structural work, wood replacement, and building envelope repairs under one contract — no need to coordinate multiple contractors for a complete roof replacement.
+    </p>
+  </div>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Financing Options for Roof Replacement
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Most homeowners finance roof replacement through home equity loans, personal loans, or contractor financing programs. All Phase Construction works with several financing partners to provide flexible payment options. Learn more about available <a href="/easy-payments" style="color: #dc2626; text-decoration: underline;">financing programs</a> and qualification requirements.
+  </p>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Service Areas
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction provides roof replacement and <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">repair services</a> throughout Broward and Palm Beach Counties, including:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 1rem;">
+    <li style="margin-bottom: 0.5rem;"><a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach</a> (headquarters)</li>
+    <li style="margin-bottom: 0.5rem;"><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a></li>
+    <li style="margin-bottom: 0.5rem;">Fort Lauderdale, Coral Springs, Pompano Beach, Delray Beach, Boynton Beach, West Palm Beach, and all surrounding communities</li>
+  </ul>
+
+  <h2 style="font-size: 2rem; font-weight: bold; color: #111827; margin-top: 3rem; margin-bottom: 1rem;">
+    Get Your Free Roof Cost Estimate
+  </h2>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    All Phase Construction provides free, no-pressure roof inspections and detailed cost estimates with itemized pricing. We'll evaluate your roof's condition, explain your material options, and provide transparent pricing with no hidden fees.
+  </p>
+
+  <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
+    Schedule your free estimate:
+  </p>
+
+  <ul style="color: #374151; line-height: 1.75; margin-left: 1.5rem; margin-bottom: 2rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Call:</strong> <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a></li>
+    <li style="margin-bottom: 0.5rem;"><strong>Online:</strong> <a href="/contact" style="color: #dc2626; text-decoration: underline;">Request an estimate</a></li>
+    <li style="margin-bottom: 0.5rem;"><strong>Learn More:</strong> Read our <a href="/reviews" style="color: #dc2626; text-decoration: underline;">customer reviews</a> and view our <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">roof replacement process</a></li>
+  </ul>
+
+  <div style="background: #f3f4f6; border: 2px solid #dc2626; padding: 2rem; margin: 3rem 0; border-radius: 8px; text-align: center;">
+    <h3 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+      Ready to Get Started?
+    </h3>
+    <p style="font-size: 1.125rem; color: #374151; margin-bottom: 1.5rem;">
+      Dual-licensed roofing contractor serving Broward & Palm Beach Counties. CCC-1331464 | CGC-1526236
+    </p>
+    <p style="font-size: 1.5rem; font-weight: bold; color: #dc2626;">
+      Call <a href="tel:+17542275605" style="color: #dc2626; text-decoration: underline;">(754) 227-5605</a> for Your Free Estimate
+    </p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * CUSTOM: Roofing Services Page - /roofing-services
  * Rich prerender content matching RoofingServicesPage.tsx
  */
@@ -3397,6 +3735,19 @@ function generateStaticFiles() {
       { name: 'Residential Roofing', url: 'https://allphaseconstructionfl.com/residential-roofing' }
     ]
   },
+  '/roof-cost-calculator': {
+    faqs: [
+      { question: 'How much does a new roof cost in South Florida?', answer: 'Roof replacement costs in Broward and Palm Beach Counties range from $10,000 to $70,000+ depending on material choice (shingles, tile, metal, flat roofing), roof size, complexity, and HVHZ code requirements. A typical 2,000 sq ft home with architectural shingles costs $10,000-$18,000, while premium materials like standing seam metal can range from $20,000-$70,000.' },
+      { question: 'What is the cheapest roofing material in Florida?', answer: 'Architectural asphalt shingles are the most economical option at $5-$9 per square foot installed ($10,000-$18,000 for a typical 2,000 sq ft home). However, they have the shortest lifespan in Florida climate (15-25 years) compared to tile (50+ years) or metal (40-60 years). When calculating lifetime cost, premium materials often provide better value despite higher upfront investment.' },
+      { question: 'Does a new roof lower insurance in Florida?', answer: 'Yes. Metal and tile roofs often qualify for 25-35% homeowner insurance premium reductions when properly documented with wind mitigation inspections. Even shingle roofs with proper HVHZ-compliant installation, secondary water barriers, and enhanced roof-to-wall connections can qualify for significant discounts. The key is having a licensed contractor document the installation properly for insurance verification.' },
+      { question: 'How long does a roof last in South Florida?', answer: 'Roof lifespan in South Florida varies significantly by material: architectural shingles last 15-25 years, luxury shingles 25-30 years, concrete tile 50+ years, clay tile 75-100+ years, standing seam metal 40-60 years, and properly installed PVC flat roofing 30-40+ years. Florida intense UV exposure, thermal cycling, and hurricane risk make material choice and proper installation critical for longevity.' },
+      { question: 'What hidden costs should I expect in a roof replacement?', answer: 'Beyond base material costs, expect: tear-off and disposal ($0.40-$2.00/sq ft), underlayment replacement ($1.50-$2.10/sq ft), rotten decking replacement ($2-$5/sq ft for damaged sections), HVHZ code-required upgrades (hurricane straps, enhanced fastening), and permit/inspection fees ($200-$1,000+). These hidden costs can add $2,000-$8,000+ to your project. All Phase Construction provides itemized estimates with contingency pricing upfront so there are no surprises.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'Roof Cost Calculator', url: 'https://allphaseconstructionfl.com/roof-cost-calculator' }
+    ]
+  },
   '/roof-replacement-process': {
     howToName: 'Roof Replacement Process in South Florida',
     howToDescription: 'How All Phase Construction USA replaces a roof in Broward and Palm Beach County, from free inspection through final permit sign-off.',
@@ -3850,6 +4201,7 @@ ${companyAuthorityFooter()}
       pagePath === '/commercial-roofing' ? generateCommercialRoofingContent() :
       pagePath === '/roof-repair' ? generateRoofRepairHubContent() :
       pagePath === '/roof-inspection' ? generateRoofInspectionHubContent() :
+      pagePath === '/roof-cost-calculator' ? generateRoofCostCalculatorContent() :
       defaultServicePageContent(title),
       jsonLdSchema
     );
