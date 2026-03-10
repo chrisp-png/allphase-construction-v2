@@ -58,8 +58,18 @@ export default function CoralSpringsPage() {
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
     existingSchemas.forEach(schema => schema.remove());
 
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+      }))
+    };
+
     // Add all schemas
-    const schemas = [localBusinessSchema, breadcrumbSchema];
+    const schemas = [localBusinessSchema, breadcrumbSchema, faqSchema];
     schemas.forEach(schema => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
@@ -474,6 +484,27 @@ export default function CoralSpringsPage() {
             county="Broward"
             isHVHZ={true}
           />
+
+          {/* Roof Replacement Cost Section */}
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">Roof Replacement Cost in Coral Springs (2026)</h2>
+            <p className="text-zinc-400 text-lg text-center max-w-3xl mx-auto mb-8">Estimates for a typical 2,000 sq ft Coral Springs home. Includes HVHZ materials, permits, and installation.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-6">
+              {[
+                { material: 'Asphalt Shingles', range: '$12,000 – $18,000', note: 'Class H rated, 130+ mph wind resistance' },
+                { material: 'Concrete/Clay Tile', range: '$22,000 – $38,000', note: 'HOA-compliant styles available' },
+                { material: 'Standing Seam Metal', range: '$25,000 – $42,000', note: 'Energy-efficient, 40+ year lifespan' },
+                { material: 'Flat Roof (TPO/Mod Bit)', range: '$16,000 – $30,000', note: 'Commercial & low-slope applications' }
+              ].map((item, i) => (
+                <div key={i} className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-5">
+                  <h3 className="font-bold text-white mb-1">{item.material}</h3>
+                  <p className="text-red-500 font-semibold text-lg">{item.range}</p>
+                  <p className="text-zinc-500 text-sm mt-1">{item.note}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-zinc-400 text-center max-w-3xl mx-auto">Coral Springs HOA requirements may affect material choices. Use our <Link to="/roof-cost-calculator/" className="text-red-500 hover:text-red-400 font-medium">free calculator</Link> for a personalized estimate or call <a href="tel:+17542275605" className="text-red-500 hover:text-red-400 font-medium">(754) 227-5605</a>.</p>
+          </div>
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">

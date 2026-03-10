@@ -58,6 +58,23 @@ export default function PompanoBeachPage() {
     schemaScript2.setAttribute('data-city-schema', 'true');
     schemaScript2.textContent = JSON.stringify(breadcrumbSchema);
     document.head.appendChild(schemaScript2);
+
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How close are you to Pompano Beach?", "acceptedAnswer": { "@type": "Answer", "text": "Our headquarters is at 590 Goolsby Blvd in Deerfield Beach — minutes from Pompano Beach. We offer same-day response for emergencies throughout Pompano Beach and all of Broward County." }},
+        { "@type": "Question", "name": "Do you handle salt air corrosion damage on Intracoastal properties?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — waterfront and canal-adjacent properties in Hillsboro Shores, Cypress Harbor, Snug Harbor, and Garden Isles are a specialty. We assess existing corrosion damage and specify materials engineered for constant salt air exposure." }},
+        { "@type": "Question", "name": "What are Pompano Beach HVHZ roofing requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Every roofing installation in Pompano Beach must meet Broward County HVHZ standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections." }},
+        { "@type": "Question", "name": "Do you work with insurance companies for storm damage claims?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — comprehensive photo documentation, damage assessments, and detailed repair estimates. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims." }},
+        { "@type": "Question", "name": "What roofing materials work best in Pompano Beach coastal environment?", "acceptedAnswer": { "@type": "Answer", "text": "Standing seam metal with Kynar coatings, concrete tile with protective sealants, and impact-resistant shingles rated for coastal environments." }}
+      ]
+    };
+    const schemaScript3 = document.createElement('script');
+    schemaScript3.type = 'application/ld+json';
+    schemaScript3.setAttribute('data-city-schema', 'true');
+    schemaScript3.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(schemaScript3);
   }, []);
 
   const faqs = [
@@ -191,6 +208,27 @@ export default function PompanoBeachPage() {
                   </div>
                 ))}
               </div>
+            </section>
+
+            {/* Roof Replacement Cost Section */}
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Roof Replacement Cost in Pompano Beach (2026)</h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">Pompano Beach roof replacement costs reflect HVHZ material requirements, coastal-grade specifications, and Broward County permitting fees. The following estimates are based on a typical 2,000 sq ft home with standard roof complexity.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                {[
+                  { material: 'Asphalt Shingles', range: '$12,000 – $18,000', note: 'Class H rated, 130+ mph wind resistance' },
+                  { material: 'Concrete/Clay Tile', range: '$22,000 – $38,000', note: 'Engineered attachment for coastal HVHZ' },
+                  { material: 'Standing Seam Metal', range: '$25,000 – $42,000', note: 'Kynar-coated for salt air protection' },
+                  { material: 'Flat Roof (TPO/Mod Bit)', range: '$16,000 – $30,000', note: 'Commercial and low-slope residential' }
+                ].map((item, i) => (
+                  <div key={i} className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                    <h3 className="font-bold text-gray-900 mb-1">{item.material}</h3>
+                    <p className="text-red-600 font-semibold text-lg">{item.range}</p>
+                    <p className="text-gray-500 text-sm mt-1">{item.note}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-gray-700 leading-relaxed">Costs include HVHZ-compliant materials, permits, engineering calculations, and installation. Coastal properties near the Intracoastal or Atlantic may require upgraded fasteners and coatings, adding 5–15% to the total. Use our <Link to="/roof-cost-calculator/" className="text-red-600 hover:text-red-500 font-medium">free roof cost calculator</Link> for a personalized estimate, or call <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-medium">(754) 227-5605</a> for an on-site assessment.</p>
             </section>
 
             {/* FAQ */}

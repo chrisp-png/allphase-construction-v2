@@ -53,7 +53,17 @@ export default function HollywoodPage() {
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
     existingSchemas.forEach(schema => schema.remove());
 
-    [localBusinessSchema, breadcrumbSchema].forEach(schema => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+      }))
+    };
+
+    [localBusinessSchema, breadcrumbSchema, faqSchema].forEach(schema => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.text = JSON.stringify(schema);
@@ -428,6 +438,27 @@ export default function HollywoodPage() {
             county="Broward"
             isHVHZ={true}
           />
+
+          {/* Roof Replacement Cost Section */}
+          <div className="mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">Roof Replacement Cost in Hollywood, FL (2026)</h2>
+            <p className="text-zinc-400 text-lg text-center max-w-3xl mx-auto mb-8">Estimates for a typical 2,000 sq ft Hollywood home. HVHZ-compliant materials, permits, and engineering included.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-6">
+              {[
+                { material: 'Asphalt Shingles', range: '$12,000 – $18,000', note: 'Class H rated for 130+ mph' },
+                { material: 'Concrete/Clay Tile', range: '$22,000 – $38,000', note: 'Engineered HVHZ attachment' },
+                { material: 'Standing Seam Metal', range: '$25,000 – $42,000', note: 'Salt-air-resistant coatings' },
+                { material: 'Flat Roof (TPO/Mod Bit)', range: '$16,000 – $30,000', note: 'Commercial & low-slope' }
+              ].map((item, i) => (
+                <div key={i} className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-5">
+                  <h3 className="font-bold text-white mb-1">{item.material}</h3>
+                  <p className="text-red-500 font-semibold text-lg">{item.range}</p>
+                  <p className="text-zinc-500 text-sm mt-1">{item.note}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-zinc-400 text-center max-w-3xl mx-auto">Beachfront and Intracoastal properties may require upgraded specifications. Use our <Link to="/roof-cost-calculator/" className="text-red-500 hover:text-red-400 font-medium">free roof cost calculator</Link> or call <a href="tel:+17542275605" className="text-red-500 hover:text-red-400 font-medium">(754) 227-5605</a> for a personalized estimate.</p>
+          </div>
 
           <div className="mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
