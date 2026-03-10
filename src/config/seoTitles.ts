@@ -28,8 +28,8 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roofing Company | Broward & Palm Beach County | All Phase USA',
-    description: 'South Florida\'s top-rated roofing company since 2005. 2,500+ projects, HVHZ-certified. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.',
+    title: 'South Florida Roofing Contractor | 2,500+ Roofs | All Phase USA',
+    description: 'Dual-licensed roofing contractor serving Broward & Palm Beach County since 2005. HVHZ-certified. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
@@ -118,8 +118,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
     '/roof-repair': {
-    title: 'Roof Repair Deerfield Beach & South Florida | All Phase',
-        description: 'Roof repair in Deerfield Beach & South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle & flat roof repairs. Free inspections.',
+    title: 'Roof Repair South Florida | Storm Damage & Leak Experts | All Phase',
+        description: 'Professional roof repair in Broward & Palm Beach County. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/roofing-services': {
@@ -203,8 +203,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
   },
   '/roof-repair/fort-lauderdale': {
-    title: 'Fort Lauderdale Roof Repair | All Phase USA',
-    description: 'Expert roof repair in Fort Lauderdale, FL. HVHZ-certified, fast response, licensed & insured. Tile, shingle, metal & flat roof repairs. Free inspection.',
+    title: 'Fort Lauderdale Roof Repair | Fast Response | All Phase USA',
+    description: 'Expert roof repair in Fort Lauderdale, FL. Storm damage, leaks, tile & shingle repairs. HVHZ-certified, dual-licensed contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
   },
     '/roof-repair/deerfield-beach': {
@@ -216,6 +216,21 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'Pompano Beach Roof Repair | All Phase USA',
     description: 'Emergency roof repair in Pompano Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
+  },
+  '/roof-repair/west-palm-beach': {
+    title: 'West Palm Beach Roof Repair | Fast Response | All Phase USA',
+    description: 'Expert roof repair in West Palm Beach, FL. Tile, shingle, metal & flat repairs. Storm damage specialists. HVHZ-certified, free inspection. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-repair/west-palm-beach'
+  },
+  '/roof-repair/boca-raton': {
+    title: 'Boca Raton Roof Repair | Licensed Contractor | All Phase USA',
+    description: 'Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. HVHZ-certified. Free inspection. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-repair/boca-raton'
+  },
+  '/roof-repair/coral-springs': {
+    title: 'Coral Springs Roof Repair | HVHZ-Certified | All Phase USA',
+    description: 'Roof repair in Coral Springs, FL. Leaks, storm damage, tile & shingle repairs by a dual-licensed HVHZ contractor. Free inspection. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/roof-repair/coral-springs'
   },
     '/frequently-asked-questions': {
     title: 'Roofing FAQ South Florida | All Phase USA',
@@ -362,10 +377,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `${cityName} Roof Repair | All Phase USA`,
-            description: `Roof repair in ${cityName}, FL — storm damage, leaks & flashing failures. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.`,
+      title: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
+            description: `Fast, licensed roof repair in ${cityName}. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified dual-licensed contractor. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
-      ogTitle: `${cityName} Roof Repair | All Phase USA`,
+      ogTitle: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
             ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
@@ -401,7 +416,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    description: 'Licensed roofing in ${cityName}, FL. HVHZ-certified, dual-licensed CCC/CGC contractor. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.',
+    description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605.',
     canonical: `https://allphaseconstructionfl.com${cleanPath}`
   };
 }
