@@ -2028,9 +2028,164 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersDFBDir, { recursive: true });
   const bestRoofersDFBContent = `
   <h1>Top 5 Best Rated Roofers in Deerfield Beach, FL (2026)</h1>
+
   <p>Finding a roofer in Deerfield Beach you can actually trust. We reviewed dozens of contractors and five rose to the top through verifiable credentials, strong reviews, and proven track records.</p>
+
   <h2>Finding a Roofer in Deerfield Beach You Can Actually Trust</h2>
-  <p>All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Dual licensed: CCC-1331464 (Roofing Contractor) &amp; CGC-1526236 (General Contractor). Rated 4.8/5 from 138 verified reviews. Call (754) 227-5605 for a free roof assessment.</p>
+
+  <p><a href="/locations/deerfield-beach">Deerfield Beach roofing services</a> protect homes from one of the most punishing climates in America. Located in Broward County's HVHZ zone, every roof replacement here must meet strict Florida Building Code wind standards.</p>
+
+  <p>Storm season brings real risk — and real opportunity for fly-by-night contractors to take advantage of homeowners in a rush. After researching dozens of roofing companies across Deerfield Beach and Broward County, five rose to the top: <strong>All Phase Construction USA</strong>, <strong>Aastro Roofing</strong>, <strong>Monarch Roofing &amp; Construction</strong>, <strong>Bentley Roofing</strong>, and <strong>Blues Brothers Roofing Company</strong>. Each earned their spot through verifiable credentials, strong reviews, and a proven track record of protecting South Florida homes.</p>
+
+  <h2>Your List of the Top 5 Best Roofers in Deerfield Beach, FL</h2>
+
+  <ol>
+    <li><strong>All Phase Construction USA</strong> ⭐ 4.8 (138+ reviews) — Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium.</li>
+    <li><strong>Aastro Roofing</strong> ⭐ 4.9 (500+ reviews) — 3rd-generation family roofer, A+ BBB, Contractor of the Year 2017–2022, 25-year warranty.</li>
+    <li><strong>Monarch Roofing &amp; Construction</strong> ⭐ 5.0 (Angi) — Family-owned since 2005, dual-licensed, Nextdoor Neighborhood Favorite 2021 &amp; 2022, free Fortified Roof Certification.</li>
+    <li><strong>Bentley Roofing</strong> ⭐ 4.8 — Serving Deerfield Beach since 2007, Angie's List Super Service Award winner, video roof inspections.</li>
+    <li><strong>Blues Brothers Roofing Company</strong> ⭐ 4.8 — Since 2005, Tile Roofing Institute certified for Florida high-wind installations, GAF/Atlas/Eagle/TAMKO certified.</li>
+  </ol>
+
+  <h2>How We Chose the Best Roofing Companies in Deerfield Beach</h2>
+
+  <p>Choosing the best roofer in Deerfield Beach isn't like choosing in most parts of the country. This is HVHZ territory. Every roof must meet Florida Building Code Section 1504 wind resistance standards. A roofer who doesn't understand Notice of Acceptance (NOA) requirements or HVHZ installation specs is a liability — not a solution.</p>
+
+  <p>When selecting the best roofers in Deerfield Beach, it's crucial to focus on reputable roofers who are known for quality craftsmanship, reliability, and the ability to address a wide range of roofing needs. We evaluated every company on credentials, local track record, real customer reviews, and meaningful differentiators — not marketing claims.</p>
+
+  <h3>Criteria checklist:</h3>
+  <ul>
+    <li>Florida State Certified Roofing Contractor license — verified active</li>
+    <li>HVHZ installation experience and NOA compliance knowledge</li>
+    <li>Verifiable manufacturer certifications (not self-reported)</li>
+    <li>BBB accreditation and rating</li>
+    <li>Google and multi-platform review volume + consistency</li>
+    <li>Wind mitigation services (directly impacts homeowner insurance)</li>
+    <li>Longevity — roofing companies that last are ones that do things right</li>
+    <li>Community presence — local roots, chamber membership, affiliations</li>
+    <li>Workmanship warranty backed by manufacturer or third-party guarantee</li>
+    <li>Residential AND commercial capability where offered</li>
+  </ul>
+
+  <h2>All Phase Construction USA — Deerfield Beach, FL</h2>
+
+  <p><strong>⭐ 4.8 out of 5 (138+ Google reviews)</strong></p>
+
+  <p>All Phase Construction USA has protected Deerfield Beach and South Florida homes since 2005. Founded as a compliance-first roofing and construction company, All Phase holds both a Florida Certified Roofing Contractor license (CCC-1331464) and a Florida Certified General Contractor license (CGC-1526236). That dual licensing is rare in the industry — and it matters more than most homeowners realize. While other roofers can only replace the surface, All Phase can assess and upgrade structural components, install wind mitigation reinforcements, and document everything for insurance discounts.</p>
+
+  <h3>Services Offered:</h3>
+  <p>Roof replacement (<a href="/shingle-roofing">shingle roofing</a>, <a href="/tile-roofing">tile roofing</a>, <a href="/metal-roofing">metal roofing</a>, <a href="/flat-roofing">flat roofing</a>, modified cap sheet), full re-roofing services, roof decking inspection and repair, <a href="/roof-repair/deerfield-beach">roof repair</a> and emergency leak response, storm damage restoration, <a href="/roof-inspection/deerfield-beach">wind mitigation inspections</a> and documentation, structural upgrades using GC license, commercial roofing (TPO, EPDM, PVC, Conklin, IB, Soprema), preventative maintenance programs, solar-ready roofing integration, waterproofing and gutter systems, permit coordination and inspection management.</p>
+
+  <h3>Certifications:</h3>
+  <p>Owens Corning Platinum Preferred Contractor, TAMKO Pro Platinum, CertainTeed Select Shingle Master, GAF Gold Certified, IB Roof Systems Certified, Soprema Certified, Certified MySafeFloridaHome Contractor, Wind Loss Mitigator, 160 MPH wind warranty.</p>
+
+  <p><strong>Contact:</strong> (754) 227-5605 | 159 NW 1st St, Deerfield Beach, FL 33441</p>
+
+  <h2>Aastro Roofing — Deerfield Beach, FL</h2>
+
+  <p><strong>⭐ 4.9 out of 5 (500+ reviews across platforms)</strong></p>
+
+  <p>Aastro Roofing is a family-owned roofing company with three generations of expertise — a family tradition dating to the 1940s. Jason W. Blair (President) and James T. Blair (CEO) founded the current operation in 2016, bringing decades of combined executive experience from some of the largest roofing companies in North America. Their 500+ reviews across Google, HomeAdvisor, Angi, and Yelp tell a consistent story: they show up, they communicate, and they deliver.</p>
+
+  <h3>Services:</h3>
+  <p>Residential and commercial roof repair and replacement, tile, shingle, metal, flat roof systems, TPO, EPDM, PVC, and modified bitumen, roof restorations and coatings, emergency repairs, free roof inspections, insurance claim assistance.</p>
+
+  <h3>Standouts:</h3>
+  <p>A+ BBB Accredited since 2017 | Contractor of the Year awards 2017–2022 | 4.9 Google rating across 500+ reviews | 25-year manufacturer warranties | Certified: GAF, CertainTeed, Suprema, FiberTech, Viking</p>
+
+  <p><strong>Contact:</strong> (561) 409-3280 | 159 NW 1st St Suite 5, Deerfield Beach, FL 33441</p>
+
+  <h2>Monarch Roofing &amp; Construction — Deerfield Beach, FL</h2>
+
+  <p><strong>⭐ 5.0 out of 5 (Angi) | Nextdoor Neighborhood Favorite 2021 &amp; 2022</strong></p>
+
+  <p>Monarch Roofing &amp; Construction started in 2005 — a small family-owned contractor in Deerfield Beach focused on residential re-roofing. Victor Alfonso Huipio (President) and Samuel Huipio (VP) have roots in South Florida roofing going back to 1990. Two decades later, their strategy of focusing on their hometown has paid off: Nextdoor Neighborhood Favorite recognition and consistent 5-star ratings across platforms.</p>
+
+  <h3>Services:</h3>
+  <p>Asphalt shingle installation and repair, concrete and clay tile roof systems, metal roofing, flat roof systems, underlayment installation, roof repair and maintenance, re-roofing, gutter installation, MySafeFloridaHome inspections.</p>
+
+  <h3>Standouts:</h3>
+  <p>Free Fortified Roof Certification with new installs | Dual-licensed FL State Certified RC + GC | Nextdoor Neighborhood Favorite 2021 &amp; 2022 | Consistent 5.0 on Angi | 588+ permitted projects</p>
+
+  <p><strong>Contact:</strong> (954) 426-8050 | 1202 SW 1st Way, Deerfield Beach, FL 33441</p>
+
+  <h2>Bentley Roofing — Deerfield Beach, FL</h2>
+
+  <p><strong>⭐ 4.8 out of 5 | Angie's List Super Service Award — Multiple Years</strong></p>
+
+  <p>Bentley Roofing has been serving Deerfield Beach and surrounding communities since 2007 — more than 18 years of consistent, award-winning service. Founded by Michael Devaney, Bentley has built a reputation on one principle: do what you promise, when you promise it. Their Angie's List Super Service Award recognizes only the top 5% of roofing companies across Palm Beach, Broward, and Miami-Dade counties.</p>
+
+  <h3>Services:</h3>
+  <p>Roof replacement and new construction, roof repair, flat/metal/tile/shingle systems, gutter services, video roof inspections, free estimates and inspections.</p>
+
+  <h3>Standouts:</h3>
+  <p>Angie's List Super Service Award — top 5% in South Florida | Video roof inspection technology | 18+ years serving Deerfield Beach | FL State Certified RC License CCC1328148</p>
+
+  <p><strong>Contact:</strong> (954) 979-2233 | 30 NE 10th Street, Pompano Beach, FL 33060</p>
+
+  <h2>Blues Brothers Roofing Company — Deerfield Beach, FL</h2>
+
+  <p><strong>⭐ 4.8 out of 5 | A+ BBB Rated | In Business Since 2005</strong></p>
+
+  <p>Blues Brothers Roofing Company has been protecting South Florida homes since 2005. Their certification by the Tile Roofing Institute for Florida high-wind installations is specific to Florida's demanding wind environment. They are also certified installers for GAF, Atlas, Eagle, and TAMKO — four of the leading roofing manufacturers in the country.</p>
+
+  <h3>Services:</h3>
+  <p>Tile roof installation and repair, shingle roof installation and replacement, metal roofing, flat roof systems (TPO, modified bitumen, PVC, EPDM), waterproofing and elastomeric coatings, commercial roofing, residential roofing, solar roofing, roof inspections and insurance documentation.</p>
+
+  <h3>Standouts:</h3>
+  <p>Tile Roofing Institute certified for Florida high-wind installations | GAF, Atlas, Eagle, TAMKO certified | A+ BBB rated | 20 years in business</p>
+
+  <p><strong>Contact:</strong> (561) 361-6378 | 4260 NW 1st Ave, Boca Raton, FL 33431</p>
+
+  <h2>Understanding Roofing Pricing in Deerfield Beach</h2>
+
+  <p>Deerfield Beach roofing costs run higher than national averages for good reason. HVHZ-compliant installation requires certified materials, licensed crews, and proper permitting — all of which add to the cost but are non-negotiable under Florida Building Code.</p>
+
+  <h3>Typical Pricing Ranges:</h3>
+  <ul>
+    <li><strong>Asphalt Shingle (replacement):</strong> $9,000 – $22,000 — HVHZ-rated shingles required in Broward County</li>
+    <li><strong>Concrete/Clay Tile (replacement):</strong> $16,000 – $45,000+ — Higher material cost; foam adhesion in HVHZ</li>
+    <li><strong>Metal Roofing (standing seam/panel):</strong> $18,000 – $55,000+ — Highest durability; strong insurance benefits</li>
+    <li><strong>Flat Roofing (commercial/residential):</strong> $8,000 – $25,000 — System type (TPO/PVC/modified) affects pricing</li>
+    <li><strong>Repair (minor):</strong> $350 – $2,500 — Leak repair, tile replacement, flashing issues</li>
+    <li><strong>Wind Mitigation Inspection:</strong> $75 – $150 — Potential to save $500–$2,000+ annually on insurance</li>
+  </ul>
+
+  <p>Any quote significantly below these ranges in Deerfield Beach deserves close scrutiny. Use our <a href="/roof-cost-calculator/">roof cost calculator</a> to estimate your project before calling.</p>
+
+  <h2>FAQ — Frequently Asked Questions About Roofing in Deerfield Beach, FL</h2>
+
+  <h3>How much does a new roof cost in Deerfield Beach?</h3>
+  <p>Most residential roof replacements in Deerfield Beach range from $9,000 to $45,000+ depending on roof type, size, and materials. HVHZ compliance and Broward County permitting add cost that is unavoidable and non-negotiable for code-compliant work.</p>
+
+  <h3>Do I need a permit for roofing work in Deerfield Beach / Broward County?</h3>
+  <p>Yes — virtually all roofing work in Broward County requires a permit pulled by your licensed contractor. Your contractor should handle this entirely. If a roofer tells you permits aren't needed for your project, that is a serious red flag.</p>
+
+  <h3>What is HVHZ and does it apply to Deerfield Beach?</h3>
+  <p>HVHZ stands for High Velocity Hurricane Zone. Deerfield Beach is in Broward County, which is designated HVHZ. Every roofing material and installation method must meet Florida Building Code Section 1504 wind resistance requirements and carry a Notice of Acceptance (NOA).</p>
+
+  <h3>What is a wind mitigation inspection and why does it matter?</h3>
+  <p>A wind mitigation inspection documents how your roof is built relative to Florida's wind standards. Insurance companies use this report to calculate premium discounts. A strong wind mitigation report can reduce your homeowner's insurance by several hundred to several thousand dollars annually.</p>
+
+  <h3>What is the difference between a roofing license and a general contractor license in Florida?</h3>
+  <p>A Certified Roofing Contractor (CRC) license authorizes a contractor to install and repair roof systems. A Certified General Contractor (CGC) license authorizes structural, framing, and broader construction scope. A dual-licensed contractor — like All Phase Construction USA — can legally handle both the roof and any structural issues discovered during the project.</p>
+
+  <h3>How do I know if I need repair or full replacement?</h3>
+  <p>General rule: if damage is localized and the roof system is under 15 years old, repair often makes sense. If the roof is 20+ years old, has multiple problem areas, or if repair cost approaches 25-30% of replacement cost, full replacement provides better long-term value.</p>
+
+  <h3>Does homeowner's insurance cover roof damage in Florida?</h3>
+  <p>It depends on the cause and your policy. Storm damage, wind damage, and sudden events are typically covered. Gradual wear, maintenance issues, and pre-existing damage are generally not. Strong documentation and a contractor familiar with the claims process can significantly improve outcomes.</p>
+
+  <h3>Can a Deerfield Beach homeowner pull their own roof permit?</h3>
+  <p>No. In Broward County, roofing permits must be pulled by a licensed contractor, not the homeowner. Any contractor who asks you to pull the permit is either unlicensed or attempting to avoid accountability for the work.</p>
+
+  <h2>Ready to Get Your Roof Done Right in Deerfield Beach?</h2>
+
+  <p>Every company on this list has earned their place — verified licenses, strong reviews, and real local presence. The right choice comes down to your specific situation: roof type, storm damage claim status, commercial vs. residential, and what level of service and documentation you need.</p>
+
+  <p>If you want the contractor who does the most for your long-term protection — roof, structure, and insurance savings — <strong>All Phase Construction USA</strong> is the call to make. Call <strong>(754) 227-5605</strong> for a free roof assessment.</p>
+
+  <p>All five answer your phone. All five pull their own permits. All five have been here long enough to stand behind their work. Don't wait for the next storm. Get your roof inspected now — before the season makes it urgent.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersDFBDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
