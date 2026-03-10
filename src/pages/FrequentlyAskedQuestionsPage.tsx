@@ -362,6 +362,57 @@ const faqData: FAQItem[] = [
     )
   },
 
+  // Wind Mitigation & Insurance Savings
+  {
+    category: 'Wind Mitigation & Insurance Savings',
+    question: 'What is a wind mitigation inspection and why do I need one?',
+    answer: (
+      <>
+        A wind mitigation inspection is a standardized assessment (OIR-B1-1802 form) that documents specific hurricane-resistant features of your roof and home. Florida law requires insurance companies to offer premium discounts for qualifying features. The inspector evaluates your roof covering type and age, roof deck attachment method, roof-to-wall connections (clips, straps, or structural), roof geometry (hip vs. gable), and secondary water resistance. A favorable report typically costs $75–$150 and can save you $500–$2,000+ per year on homeowners insurance.
+      </>
+    )
+  },
+  {
+    category: 'Wind Mitigation & Insurance Savings',
+    question: 'How much can I save on insurance with a new roof?',
+    answer: (
+      <>
+        Insurance savings from a new HVHZ-compliant roof vary by carrier and policy, but homeowners commonly report annual premium reductions of $800–$2,500. The biggest savings come from documented features including FBC-equivalent or newer roof covering, sealed roof deck (secondary water barrier), hurricane clips or continuous straps at roof-to-wall connections, and hip roof geometry. Combined, these features can reduce your wind premium by 20–60%. A <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500">professional inspection</Link> after installation documents these savings for your insurer.
+      </>
+    )
+  },
+
+  // Roof Leak & Emergency
+  {
+    category: 'Roof Leaks & Emergency Repair',
+    question: 'My roof is leaking during a storm—what should I do right now?',
+    answer: (
+      <>
+        First, protect your belongings by moving valuables and placing containers under active drips. Do not attempt to climb onto a wet roof during a storm. Document the leak location and any visible water damage with photos and video for insurance purposes. Once the storm passes, call a <Link to="/roof-repair/" className="text-red-600 hover:text-red-500">licensed roofing contractor</Link> for emergency tarping and assessment. Most reputable roofers offer emergency response within 24–48 hours of major storm events. Your homeowners insurance typically covers emergency mitigation costs like temporary tarping.
+      </>
+    )
+  },
+  {
+    category: 'Roof Leaks & Emergency Repair',
+    question: 'Can a roof leak be repaired without replacing the whole roof?',
+    answer: (
+      <>
+        Yes, many leaks can be repaired without a full replacement—especially if the roof is relatively young and the damage is localized. Common repairable issues include failed flashing around vents or skylights, cracked or displaced individual tiles, damaged shingles in a small area, and deteriorated pipe boot seals. However, if your roof has multiple leak points, is past its expected lifespan, or shows widespread deterioration, <Link to="/roof-replacement-process/" className="text-red-600 hover:text-red-500">replacement</Link> is often the more cost-effective long-term solution. A thorough <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500">roof inspection</Link> determines the right approach.
+      </>
+    )
+  },
+
+  // HOA & Permitting Specifics
+  {
+    category: 'Permits, Engineering, and Building Code',
+    question: 'Does my HOA need to approve my roof replacement?',
+    answer: (
+      <>
+        Most South Florida HOAs require architectural review board approval before roof work begins. This typically covers material type, color selection, and profile style. Submit your request early—HOA approval can take 2–6 weeks depending on meeting schedules. Your contractor should be able to provide material samples and product specifications for the HOA submission. Note that HOA approval does not replace building permits; you need both. Some HOAs have pre-approved material lists that can speed up the process.
+      </>
+    )
+  },
+
   // Service Area Questions
   {
     category: 'Service Areas',
@@ -369,6 +420,15 @@ const faqData: FAQItem[] = [
     answer: (
       <>
         We serve all of Broward County and Palm Beach County including <Link to="/locations/fort-lauderdale/" className="text-red-600 hover:text-red-500">Fort Lauderdale</Link>, <Link to="/locations/pompano-beach/" className="text-red-600 hover:text-red-500">Pompano Beach</Link>, <Link to="/locations/hollywood/" className="text-red-600 hover:text-red-500">Hollywood</Link>, <Link to="/locations/coral-springs/" className="text-red-600 hover:text-red-500">Coral Springs</Link>, <Link to="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500">Deerfield Beach</Link>, <Link to="/locations/boca-raton/" className="text-red-600 hover:text-red-500">Boca Raton</Link>, <Link to="/locations/west-palm-beach/" className="text-red-600 hover:text-red-500">West Palm Beach</Link>, and surrounding communities. Contact us to confirm service availability for your specific location.
+      </>
+    )
+  },
+  {
+    category: 'Service Areas',
+    question: 'Do you work in Miami-Dade County?',
+    answer: (
+      <>
+        Our primary service area covers Broward County and Palm Beach County, where we're headquartered in <Link to="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500">Deerfield Beach</Link>. We do not currently service Miami-Dade County. For projects in Broward or Palm Beach, call <a href="tel:+17542275605" className="text-red-600 hover:text-red-500">(754) 227-5605</a> for a free estimate.
       </>
     )
   }
@@ -403,6 +463,49 @@ export default function FrequentlyAskedQuestionsPage() {
   // Local Business Schema with AggregateRating
   const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
 
+  // Plain-text answers for FAQ schema (Google requires text, not JSX)
+  const faqPlainAnswers: Record<string, string> = {
+    'Do I need a roof repair or a full replacement?': 'The decision depends on the age of your roof, the number of active leaks, visible signs of lifted shingles or tiles, and whether you have needed repeated repairs. In the HVHZ, older roofs may not meet current uplift code requirements even if not actively leaking.',
+    'How long does a roof replacement take in South Florida?': 'For a typical 2,000–2,500 sq ft home, installation takes 1–3 working days. The full process from contract to final inspection typically spans 2–4 weeks due to permits and engineering.',
+    'How much does a new roof cost in the HVHZ?': 'For a 1,800–2,200 sq ft home: $15,000–$25,000 for asphalt shingles, $25,000–$45,000 for tile, $30,000–$50,000+ for standing seam metal. Costs include permits, engineering, and HVHZ-compliant installation.',
+    'Will my homeowners insurance pay for my new roof?': 'Insurance typically covers sudden storm or wind damage but excludes age-related wear. Document damage with photos immediately and get a professional inspection to support your claim.',
+    'Are there special hurricane requirements for roofs here?': 'Yes. HVHZ requires roofing systems designed for 170+ mph winds. All materials need Miami-Dade Product Approval, with enhanced fastener patterns, secondary water barriers, and engineered roof-to-wall connections.',
+    'How long should my roof last in South Florida\'s climate?': 'Asphalt shingles last 15–22 years (vs. 30 elsewhere), concrete tile 30–50 years, clay tile 75+ years, and metal roofs 40–60+ years. UV, salt air, and hurricane stress accelerate aging.',
+    'What are the most common roofing materials in South Florida?': 'Architectural asphalt shingles, concrete and clay tiles, standing seam metal roofs, and flat roof systems (TPO, modified bitumen) are the most common in South Florida.',
+    'Will a metal roof make my house hotter?': 'No. Modern metal roofs with reflective finishes run cooler than dark asphalt shingles. CRRC-rated metal roofing can reduce cooling costs by 20–30%.',
+    'Does roof color matter in our climate?': 'Yes. Lighter colors reduce attic temperatures significantly. A white metal roof can keep your roof deck 50–70°F cooler than a dark shingle roof on summer afternoons.',
+    'When does roof repair make sense?': 'Repair is appropriate when damage is localized, your roof is under 10–12 years for shingles or 20 years for tile, and the underlying deck and fastening system remain sound.',
+    'When should you consider roof replacement?': 'Consider replacement for widespread granule loss, multiple chronic leaks, visible uplift damage across multiple slopes, roofs older than insurer thresholds, or roofs installed before 2002 code changes.',
+    'How does code affect roof repair vs. replacement?': 'In HVHZ, once repairs exceed about 25% of roof area, building codes may require bringing the entire system up to current standards, turning a repair into a full replacement.',
+    'What does "High Velocity Hurricane Zone" mean?': 'The HVHZ designates Miami-Dade and Broward counties for extreme hurricane exposure, requiring wind speeds of 170–200 mph design capacity and mandatory high-velocity wind tunnel testing for all products.',
+    'Do I really need a permit for my roof?': 'Yes, for full replacements and most structural repairs. Permits ensure independent verification that your installation meets local building codes for hurricane performance.',
+    'Why is engineering sometimes required for a roof?': 'HVHZ projects often need a Florida-licensed engineer to calculate uplift forces and specify fastening schedules, especially for tile and metal roofs where wind pressures can exceed 150–180 psf.',
+    'How often should I have my roof inspected?': 'At least once annually before hurricane season, plus after any named storm or significant wind event. Photo-documented inspections support future insurance claims.',
+    'What are common signs of roof damage in South Florida?': 'Watch for lifted or curled shingles, cracked tiles, loose ridge caps, deteriorated flashing, water stains on ceilings, daylight in the attic, clogged valleys, and algae or mold growth.',
+    'How can I prepare my roof for hurricane season?': 'Trim overhanging branches, clear gutters and drains, inspect hurricane straps in the attic, and schedule needed repairs by late June before the August–October peak season.',
+    'What factors influence roof pricing in South Florida?': 'Roof size and complexity, pitch, stories, material choice, tear-off complexity, deck condition, permit fees, engineering requirements, and hurricane upgrades all affect cost.',
+    'When does homeowners insurance pay for a roof?': 'Insurers cover wind, hail, or impact damage from storms. Coverage excludes age-related wear and poor maintenance. Document damage immediately with photos after any storm.',
+    'Can a new roof lower my insurance premium?': 'Yes. A new HVHZ-compliant roof with favorable wind mitigation features can reduce premiums by $500–$2,000+ annually through documented credits for roof covering, nailing pattern, secondary water barrier, and connections.',
+    'What financing options are available?': 'Options include home improvement installment loans (3–10+ years), home equity loans or lines of credit, and contractor financing partnerships with home improvement lenders.',
+    'What licenses should a South Florida roofer have?': 'Florida requires a State Certified Roofing Contractor license (CCC) or Registered Roofing Contractor license. Verify through DBPR license lookup before signing any contract.',
+    'What questions should I ask a roofer in Miami-Dade/Broward?': 'Ask about HVHZ experience, Miami-Dade NOA familiarity, engineering and permit handling, recent local project references, hurricane-specific proposal details, and inspection correction processes.',
+    'How long do shingle roofs really last in South Florida?': 'Architectural asphalt shingles typically last 15–22 years in South Florida despite 25–30 year manufacturer claims, due to intense UV, 150°F+ surface temperatures, and adhesive bond breakdown.',
+    'What\'s different about 130-mph and higher wind-rated shingles?': 'Class H shingles have enhanced adhesive strips and reinforced nailing zones, tested for 130+ mph winds. In HVHZ, they must be installed with 6 nails per shingle instead of 4.',
+    'What\'s the difference between concrete and clay tiles?': 'Concrete tiles last 30–50 years at lower cost. Clay tiles cost more but can exceed 75 years with superior color retention since color runs through the material rather than surface-applied.',
+    'Why do tile roofs need special engineering?': 'Tile systems face unique uplift challenges in HVHZ. Each tile must resist forces exceeding 150 psf while the 8–10 lbs/sq ft weight stresses the structure, requiring engineered fastener schedules.',
+    'How do metal roofs perform in hurricanes?': 'Properly engineered metal roofs show dramatically lower failure rates than other materials. Hurricane Irma data confirmed their superior performance when correctly installed with adequate clip spacing.',
+    'What about noise and coastal corrosion on metal roofs?': 'Rain noise is mitigated by proper insulation and sheathing. For coastal properties, specify aluminum or galvanized steel with salt-air-rated coatings and inspect fasteners every few years.',
+    'What systems work for flat roofs in Florida?': 'TPO, PVC, and modified bitumen are the most common. TPO dominates commercial roofing due to welded seams, reflective surface, and competitive pricing.',
+    'How long do flat roofs last in South Florida?': 'With proper maintenance, flat roof systems last 15–25+ years. The biggest enemies are ponding water, UV degradation, and debris blocking drains.',
+    'What is a wind mitigation inspection and why do I need one?': 'A wind mitigation inspection (OIR-B1-1802 form) documents hurricane-resistant features of your roof. Florida law requires insurers to offer discounts for qualifying features, typically saving $500–$2,000+ per year.',
+    'How much can I save on insurance with a new roof?': 'Homeowners commonly save $800–$2,500 annually with HVHZ-compliant roofs. Savings come from documented features including FBC-equivalent covering, sealed deck, hurricane straps, and hip geometry.',
+    'My roof is leaking during a storm—what should I do right now?': 'Protect belongings, place containers under drips, do not climb on a wet roof. Document with photos. Call a licensed roofer for emergency tarping after the storm passes. Insurance covers emergency mitigation.',
+    'Can a roof leak be repaired without replacing the whole roof?': 'Yes, if the roof is young and damage is localized. Repairable issues include failed flashing, cracked tiles, small shingle areas, and pipe boot seals. Multiple leak points may indicate replacement is needed.',
+    'Does my HOA need to approve my roof replacement?': 'Most South Florida HOAs require architectural review board approval covering material type, color, and profile. Allow 2–6 weeks for HOA approval. Note that HOA approval does not replace building permits.',
+    'What areas do you serve?': 'We serve all of Broward County and Palm Beach County including Fort Lauderdale, Pompano Beach, Hollywood, Coral Springs, Deerfield Beach, Boca Raton, West Palm Beach, and surrounding communities.',
+    'Do you work in Miami-Dade County?': 'Our primary service area covers Broward County and Palm Beach County, headquartered in Deerfield Beach. We do not currently service Miami-Dade County.'
+  };
+
   // Generate FAQPage schema
   const faqSchema = {
     "@context": "https://schema.org",
@@ -412,7 +515,7 @@ export default function FrequentlyAskedQuestionsPage() {
       "name": faq.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": typeof faq.answer === 'string' ? faq.answer : faq.question
+        "text": faqPlainAnswers[faq.question] || faq.question
       }
     }))
   };
