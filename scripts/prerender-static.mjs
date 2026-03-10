@@ -2200,16 +2200,104 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersFTLDir, { recursive: true });
   const bestRoofersFTLContent = `
   <h1>Top 5 Best Rated Roofers in Fort Lauderdale, FL (2026)</h1>
-  <p>Finding a Roofer in Fort Lauderdale You Can Actually Trust. Fort Lauderdale falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+
+  <p>Fort Lauderdale has no shortage of roofing contractors. Drive down Federal Highway after a storm and you'll see door hangers from out-of-state crews who materialized overnight. The problem isn't finding a roofer — it's knowing which ones are worth trusting with a $12,000 to $35,000 investment on a home that sits in one of the most demanding climate zones in North America.</p>
+
+  <p>Fort Lauderdale falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience. HVHZ compliance isn't optional — it's code, and it's enforced by the City of Fort Lauderdale Building Services Department.</p>
+
   <h2>Your List of the Top 5 Best Roofers in Fort Lauderdale, FL</h2>
+
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Allied Roofing &amp; Sheet Metal</li>
-    <li>Tiger Team Roofing</li>
-    <li>Nast Roofing</li>
-    <li>Paul Bange Roofing</li>
+    <li><strong>All Phase Construction USA</strong> — Dual-licensed CCC + CGC contractor with HVHZ compliance expertise across all roof system types</li>
+    <li><strong>Allied Roofing &amp; Sheet Metal</strong> — 25+ years in Fort Lauderdale, family-owned, HVHZ specialists</li>
+    <li><strong>Tiger Team Roofing</strong> — Angie's List Super Service Award winner, Broward and Palm Beach presence</li>
+    <li><strong>Nast Roofing</strong> — 30+ years operating in Fort Lauderdale, multiple code cycles and storm seasons</li>
+    <li><strong>Paul Bange Roofing</strong> — South Florida institution, high-volume residential contractor</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Broward and Palm Beach County, with significant project history in Fort Lauderdale. Call (754) 227-5605 for a free roof inspection.</p>
+
+  <h2>How We Chose the Roofing Companies in Fort Lauderdale</h2>
+
+  <p>Every contractor on this list was evaluated against consistent criteria specific to Fort Lauderdale and Broward County:</p>
+
+  <ul>
+    <li><strong>Florida state licensing:</strong> Active CCC or CGC licensure verified through DBPR</li>
+    <li><strong>HVHZ compliance capability:</strong> Specific product approvals, fastening schedules, and installation methods required by Fort Lauderdale's High Velocity Hurricane Zone designation</li>
+    <li><strong>Permit history:</strong> Publicly verifiable through the City of Fort Lauderdale's online permit portal</li>
+    <li><strong>Scope of services:</strong> Capability across multiple roof system types — tile, shingle, metal, and flat — for Fort Lauderdale's diverse housing stock from 1940s CBS homes to waterfront properties</li>
+  </ul>
+
+  <h2>All Phase Construction USA — Fort Lauderdale, FL</h2>
+
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Broward and Palm Beach County, with significant project history in Fort Lauderdale across multiple neighborhoods and roof system types.</p>
+
+  <p>The dual-license structure matters in Fort Lauderdale specifically. Roofing projects on older homes in areas like Riverside Park, Tarpon River, or Flagler Village often involve structural repairs — rotted decking, damaged rafters, deteriorated fascia — that require a general contractor license to address legally. All Phase handles both under one license.</p>
+
+  <p>Fort Lauderdale's building department requires HVHZ-compliant materials and installation methods. All Phase installs roofing systems with Florida Product Approval numbers applicable to Broward County's wind speed requirements, and routinely works with the City of Fort Lauderdale's inspection scheduling process.</p>
+
+  <h3>Services:</h3>
+  <p>Roof replacement (<a href="/shingle-roofing">shingle</a>, <a href="/tile-roofing">tile</a>, <a href="/metal-roofing">metal</a>, <a href="/flat-roofing">flat</a>), <a href="/roof-repair/fort-lauderdale">roof repair</a>, structural upgrades, <a href="/roof-inspection/fort-lauderdale">wind mitigation inspections</a>, storm damage restoration, commercial roofing, permit coordination and inspection management.</p>
+
+  <h3>License &amp; Contact:</h3>
+  <p>CCC-1331464 (Roofing) | CGC-1526236 (General Contractor)<br/>
+  <strong>Phone:</strong> (754) 227-5605<br/>
+  Service area: <a href="/locations/fort-lauderdale">Fort Lauderdale</a> and all of Broward and Palm Beach County</p>
+
+  <h2>Allied Roofing &amp; Sheet Metal — Fort Lauderdale, FL</h2>
+
+  <p>Allied Roofing &amp; Sheet Metal is a family-owned roofing contractor based in Fort Lauderdale with over 25 years of operation in Broward, Miami-Dade, and Palm Beach counties. Their longevity in the Fort Lauderdale market — through multiple hurricane seasons, code cycles, and insurance market disruptions — signals operational stability. What distinguishes Allied is their explicit specialization in HVHZ systems, covering tile, metal, and shingle with the fastening schedules, product approvals, and underlayment specifications that Broward County requires.</p>
+
+  <h2>Tiger Team Roofing — Fort Lauderdale, FL</h2>
+
+  <p>Tiger Team Roofing is a Broward and Palm Beach County contractor with consistent presence in Fort Lauderdale. The company has received Angie's List Super Service Award recognition multiple years running, which reflects sustained positive customer feedback rather than a one-time review spike.</p>
+
+  <h2>Nast Roofing — Fort Lauderdale, FL</h2>
+
+  <p>Nast Roofing has been operating in Fort Lauderdale for over 30 years, making them one of the longer-tenured residential roofing contractors with specifically local focus. Thirty-plus years in Fort Lauderdale means Nast has worked through multiple roofing code cycles, the transition to HVHZ requirements, and several major storm seasons.</p>
+
+  <h2>Paul Bange Roofing — Fort Lauderdale, FL</h2>
+
+  <p>Paul Bange Roofing is a South Florida institution with multiple decades in the market and locations across Broward and Palm Beach County. They are one of the higher-volume residential roofing contractors in the region with established relationships with most major manufacturers.</p>
+
+  <h2>Roofing Costs in Fort Lauderdale — What Should You Expect to Pay?</h2>
+
+  <p>Fort Lauderdale roofing prices fall into roughly three categories. Fair market pricing for Fort Lauderdale homes:</p>
+
+  <ul>
+    <li><strong>Asphalt shingle replacement:</strong> $12,000–$22,000 for a typical 2,000–2,500 SF home</li>
+    <li><strong>Concrete tile replacement:</strong> $18,000–$32,000 depending on tile weight, profile, and structural condition</li>
+    <li><strong>Metal roofing (standing seam or metal tile):</strong> $22,000–$45,000 for residential systems</li>
+    <li><strong>Flat roofing (modified bitumen or TPO):</strong> $8,000–$18,000 for typical residential flat sections</li>
+    <li><strong>Minor repairs:</strong> $300–$1,200 for sealing, tile replacement, ridge cap work</li>
+  </ul>
+
+  <p>These figures reflect licensed, permitted, HVHZ-compliant installation with inspection. Decking replacement adds $2–$5 per square foot for damaged sections. Use our <a href="/roof-cost-calculator/">roof cost calculator</a> for estimates.</p>
+
+  <h2>FAQ — Frequently Asked Questions About Roofing in Fort Lauderdale</h2>
+
+  <h3>How do I verify a roofing contractor's license in Fort Lauderdale?</h3>
+  <p>Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by contractor name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and not suspended or under disciplinary action.</p>
+
+  <h3>Does my roof replacement in Fort Lauderdale need a permit?</h3>
+  <p>Yes. Any roof replacement or significant repair in Fort Lauderdale requires a permit from the City of Fort Lauderdale Building Services Department. The permit triggers a final inspection by a city building inspector. Work performed without a permit is a code violation and can create complications with insurance claims and property sales.</p>
+
+  <h3>What is HVHZ and why does it matter in Fort Lauderdale?</h3>
+  <p>HVHZ stands for High Velocity Hurricane Zone. Fort Lauderdale and all of Broward County fall within this designation under the Florida Building Code. HVHZ requirements specify more stringent fastening schedules, approved product lists, and installation methods than the standard Florida Building Code. Any roofing contractor working in Fort Lauderdale must be familiar with and comply with HVHZ requirements.</p>
+
+  <h3>Can I use my homeowner's insurance to pay for a new roof in Fort Lauderdale?</h3>
+  <p>If your roof sustained damage from a storm or other covered event, your homeowner's insurance policy may cover replacement costs. Contact your insurance company first, before signing any contractor documentation. Have an independent inspection done before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value or replacement cost value — the difference can be substantial on an older roof.</p>
+
+  <h3>What roofing materials are best for Fort Lauderdale's climate?</h3>
+  <p>Concrete tile is the most common residential roofing material in Fort Lauderdale and performs well in South Florida's climate — impact-resistant, long service life, and established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in coastal salt-air environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV environment.</p>
+
+  <h3>How long does a roof last in Fort Lauderdale?</h3>
+  <p>Concrete tile roofs in Fort Lauderdale typically last 25–40 years with proper maintenance, though underlayment replacement is often needed in the 15–20 year range. Asphalt shingles last 15–20 years under South Florida conditions. Metal roofing has a 40–50 year service life. Flat roofing systems typically require maintenance every 10–15 years and full replacement after 20–25 years.</p>
+
+  <h3>What should I do immediately after a storm damages my roof?</h3>
+  <p>Document the damage with photographs before any temporary repairs. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment.</p>
+
+  <h2>Ready to Get Your Roof Done Right in Fort Lauderdale?</h2>
+
+  <p>All Phase Construction USA serves Fort Lauderdale with dual-licensed roofing and general contracting capability, comprehensive HVHZ-compliant installations, full permitting, and wind mitigation documentation. Call <strong>(754) 227-5605</strong> for a free roof inspection.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersFTLDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
@@ -2224,16 +2312,99 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersWPBDir, { recursive: true });
   const bestRoofersWPBContent = `
   <h1>Top 5 Best Rated Roofers in West Palm Beach, FL (2026)</h1>
-  <p>Finding a Roofer in West Palm Beach You Can Actually Trust. West Palm Beach falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+
+  <p>West Palm Beach sits at the center of Palm Beach County's residential roofing market. The city encompasses everything from historic neighborhoods like Flamingo Park to newer developments in Westgate. Finding a roofer capable of handling the full range of West Palm Beach's housing stock — and who understands Palm Beach County's specific wind code requirements — requires more than a Google search.</p>
+
+  <p>West Palm Beach falls within Palm Beach County's High Velocity Hurricane Zone, which means every roofing installation must meet Florida Building Code wind resistance standards specific to this coastal exposure. Contractors working in West Palm Beach must be licensed under Florida's roofing contractor category (CCC) or certified general contractor (CGC) license, and they must pull permits through Palm Beach County's building department.</p>
+
   <h2>Your List of the Top 5 Best Roofers in West Palm Beach, FL</h2>
+
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Istueta Roofing</li>
-    <li>Roof Top Services</li>
-    <li>Kelly Roofing</li>
-    <li>Crowther Roofing</li>
+    <li><strong>All Phase Construction USA</strong> — Dual-licensed CCC + CGC contractor serving Palm Beach and Broward County</li>
+    <li><strong>Istueta Roofing</strong> — Family-owned Palm Beach County specialist, 40+ years experience</li>
+    <li><strong>Roof Top Services</strong> — Established Palm Beach County presence, multiple roof systems</li>
+    <li><strong>Kelly Roofing</strong> — Large-scale residential contractor, GAF Master Elite certified</li>
+    <li><strong>Crowther Roofing</strong> — Multi-generation Palm Beach County roofer since 1949</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in West Palm Beach. Call (754) 227-5605 for a free roof inspection.</p>
+
+  <h2>How We Chose the Roofing Companies in West Palm Beach</h2>
+
+  <p>Every contractor on this list was evaluated against criteria specific to West Palm Beach and Palm Beach County:</p>
+
+  <ul>
+    <li><strong>Florida state licensing:</strong> Active CCC or CGC licensure verified through DBPR</li>
+    <li><strong>Palm Beach County permit history:</strong> Demonstrated track record pulling permits in Palm Beach County</li>
+    <li><strong>Wind code compliance:</strong> Knowledge of Palm Beach County's specific wind speed requirements and product approvals</li>
+    <li><strong>System capability:</strong> Experience across tile, shingle, metal, and flat roof systems common to West Palm Beach</li>
+  </ul>
+
+  <h2>All Phase Construction USA — West Palm Beach, FL</h2>
+
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in West Palm Beach across residential and commercial roof systems.</p>
+
+  <p>The dual-license structure enables All Phase to handle projects that extend beyond surface roofing — structural repairs, decking replacement, fascia work — under one contractor. This capability matters in West Palm Beach's older neighborhoods where homes often need both roofing and structural attention.</p>
+
+  <h3>Services:</h3>
+  <p>Roof replacement (<a href="/shingle-roofing">shingle</a>, <a href="/tile-roofing">tile</a>, <a href="/metal-roofing">metal</a>, <a href="/flat-roofing">flat</a>), <a href="/roof-repair/west-palm-beach">roof repair</a>, structural upgrades, <a href="/roof-inspection/west-palm-beach">wind mitigation inspections</a>, storm damage restoration, commercial roofing, Palm Beach County permit coordination.</p>
+
+  <h3>License &amp; Contact:</h3>
+  <p>CCC-1331464 (Roofing) | CGC-1526236 (General Contractor)<br/>
+  <strong>Phone:</strong> (754) 227-5605<br/>
+  Service area: <a href="/locations/west-palm-beach">West Palm Beach</a> and all of Palm Beach and Broward County</p>
+
+  <h2>Istueta Roofing — West Palm Beach, FL</h2>
+
+  <p>Istueta Roofing is a family-owned roofing contractor with over 40 years of operation in Palm Beach County. Their longevity in West Palm Beach — through multiple code cycles, hurricane seasons, and roofing material evolutions — demonstrates sustained operational capability. Istueta specializes in residential roof systems common to West Palm Beach: concrete tile, asphalt shingle, and metal roofing.</p>
+
+  <h2>Roof Top Services — West Palm Beach, FL</h2>
+
+  <p>Roof Top Services is an established Palm Beach County roofing contractor with experience across residential and light commercial systems. The company works with multiple roof types and has demonstrated capability pulling permits through Palm Beach County's building department.</p>
+
+  <h2>Kelly Roofing — West Palm Beach, FL</h2>
+
+  <p>Kelly Roofing is one of the larger-volume residential roofing contractors operating in West Palm Beach and across South Florida. The company holds GAF Master Elite certification, which represents the top 3% of GAF contractors nationally. Kelly works primarily with asphalt shingle systems but also handles tile and metal installations.</p>
+
+  <h2>Crowther Roofing — West Palm Beach, FL</h2>
+
+  <p>Crowther Roofing has been operating in Palm Beach County since 1949, making them one of the longest-tenured roofing contractors in the region. Multi-generation longevity in a hurricane-prone market signals consistent quality and operational discipline. Crowther handles all residential roof system types common to West Palm Beach.</p>
+
+  <h2>Roofing Costs in West Palm Beach — What Should You Expect to Pay?</h2>
+
+  <p>West Palm Beach roofing costs reflect Palm Beach County's wind code requirements and permit fees. Fair market pricing:</p>
+
+  <ul>
+    <li><strong>Asphalt shingle replacement:</strong> $11,000–$23,000 for typical 2,000–2,500 SF homes</li>
+    <li><strong>Concrete tile replacement:</strong> $17,000–$35,000 depending on tile profile and structural requirements</li>
+    <li><strong>Metal roofing (standing seam or metal tile):</strong> $21,000–$48,000 for residential installations</li>
+    <li><strong>Flat roofing (modified bitumen or TPO):</strong> $7,500–$19,000 for typical residential flat sections</li>
+    <li><strong>Minor repairs:</strong> $350–$1,500 for leak repair, tile replacement, flashing work</li>
+  </ul>
+
+  <p>These figures reflect licensed, permitted installation with Palm Beach County inspection. Decking replacement adds $2–$5 per square foot. Use our <a href="/roof-cost-calculator/">roof cost calculator</a> for estimates.</p>
+
+  <h2>FAQ — Frequently Asked Questions About Roofing in West Palm Beach</h2>
+
+  <h3>Does my roof replacement in West Palm Beach need a permit?</h3>
+  <p>Yes. Any roof replacement or significant repair in West Palm Beach requires a permit from Palm Beach County Building Division. The permit triggers inspection by a county building inspector. Unpermitted work creates problems with insurance claims and property transfers.</p>
+
+  <h3>What is the difference between Palm Beach County wind code and HVHZ?</h3>
+  <p>West Palm Beach falls within Palm Beach County's High Velocity Hurricane Zone (HVHZ). This designation requires more stringent fastening schedules, specific product approvals, and installation methods than standard Florida Building Code. Any contractor working in West Palm Beach must comply with HVHZ requirements.</p>
+
+  <h3>How do I verify a roofing contractor's license in Florida?</h3>
+  <p>Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by contractor name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and not suspended or under disciplinary action.</p>
+
+  <h3>Can I use homeowner's insurance to pay for a new roof in West Palm Beach?</h3>
+  <p>If your roof sustained damage from a covered event (storm, wind), your policy may cover replacement costs. Contact your insurance company before signing any contractor documentation. Have an independent inspection before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value (ACV) or replacement cost value (RCV).</p>
+
+  <h3>What roofing materials perform best in West Palm Beach's climate?</h3>
+  <p>Concrete tile is the most common residential roofing material in West Palm Beach — impact-resistant, long service life, and established wind approvals. Metal roofing provides excellent wind resistance and performs well in coastal environments. Asphalt shingles are less expensive but have shorter lifespans in South Florida's UV and heat conditions.</p>
+
+  <h3>How long does a roof last in West Palm Beach?</h3>
+  <p>Concrete tile roofs typically last 25–40 years with proper maintenance. Underlayment replacement is often needed at 15–20 years. Asphalt shingles last 15–20 years in South Florida conditions. Metal roofing has 40–50 year service life. Flat roofing systems require maintenance every 10–15 years and replacement after 20–25 years.</p>
+
+  <h2>Ready to Get Your Roof Done Right in West Palm Beach?</h2>
+
+  <p>All Phase Construction USA serves West Palm Beach with dual-licensed roofing and general contracting capability, full Palm Beach County permitting, and wind mitigation documentation. Call <strong>(754) 227-5605</strong> for a free roof inspection.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersWPBDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
@@ -2248,16 +2419,102 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersBocaDir, { recursive: true });
   const bestRoofersBocaContent = `
   <h1>Top 5 Best Rated Roofers in Boca Raton, FL (2026)</h1>
-  <p>Finding a Roofer in Boca Raton You Can Actually Trust. Boca Raton falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+
+  <p>Boca Raton represents one of South Florida's most distinctive residential roofing markets. The city ranges from luxury waterfront estates in Royal Palm Yacht & Country Club to established single-family neighborhoods in Boca Del Mar and newer developments west of I-95. Finding a roofer capable of handling Boca Raton's mix of high-end tile systems, coastal exposure challenges, and Palm Beach County's permitting requirements takes more than comparing online quotes.</p>
+
+  <p>Boca Raton is located in Palm Beach County and falls within the High Velocity Hurricane Zone (HVHZ). Every roofing installation must meet Florida Building Code wind resistance standards, and all work requires permits through Palm Beach County Building Division. Contractors must be licensed under Florida's CCC (roofing) or CGC (general contractor) categories to work legally in Boca Raton.</p>
+
   <h2>Your List of the Top 5 Best Roofers in Boca Raton, FL</h2>
+
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Istueta Roofing</li>
-    <li>Roof Top Services</li>
-    <li>Kelly Roofing</li>
-    <li>Crowther Roofing</li>
+    <li><strong>All Phase Construction USA</strong> — Dual-licensed CCC + CGC contractor serving Palm Beach and Broward County</li>
+    <li><strong>Istueta Roofing</strong> — Family-owned Palm Beach County specialist, 40+ years experience</li>
+    <li><strong>Roof Top Services</strong> — Established Palm Beach County presence, residential and commercial capability</li>
+    <li><strong>Kelly Roofing</strong> — Large-scale contractor, GAF Master Elite, extensive Boca Raton project history</li>
+    <li><strong>Crowther Roofing</strong> — Operating in Palm Beach County since 1949, multi-generation family business</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Boca Raton. Call (754) 227-5605 for a free roof inspection.</p>
+
+  <h2>How We Chose the Roofing Companies in Boca Raton</h2>
+
+  <p>Every contractor on this list was evaluated against criteria specific to Boca Raton and Palm Beach County:</p>
+
+  <ul>
+    <li><strong>Florida state licensing:</strong> Active CCC or CGC licensure verified through DBPR</li>
+    <li><strong>Palm Beach County experience:</strong> Demonstrated project history in Boca Raton with verifiable permit records</li>
+    <li><strong>High-end capability:</strong> Experience with premium tile systems, metal roofing, and architectural specifications common in Boca Raton's luxury market</li>
+    <li><strong>Coastal environment knowledge:</strong> Understanding of salt-air corrosion mitigation and waterfront property requirements</li>
+  </ul>
+
+  <h2>All Phase Construction USA — Boca Raton, FL</h2>
+
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Boca Raton across residential and commercial installations.</p>
+
+  <p>The dual-license structure enables All Phase to handle complex Boca Raton projects that extend beyond surface roofing — structural upgrades, hurricane reinforcement, decking replacement — under one contractor and one permit. This capability matters in Boca Raton where older luxury homes often need both roofing and structural attention.</p>
+
+  <p>All Phase installs roofing systems with Florida Product Approval numbers applicable to Palm Beach County's wind requirements and routinely works with Palm Beach County Building Division's inspection scheduling process.</p>
+
+  <h3>Services:</h3>
+  <p>Roof replacement (<a href="/shingle-roofing">shingle</a>, <a href="/tile-roofing">tile</a>, <a href="/metal-roofing">metal</a>, <a href="/flat-roofing">flat</a>), <a href="/roof-repair/boca-raton">roof repair</a>, structural upgrades, <a href="/roof-inspection/boca-raton">wind mitigation inspections</a>, storm damage restoration, commercial roofing, Palm Beach County permit coordination.</p>
+
+  <h3>License &amp; Contact:</h3>
+  <p>CCC-1331464 (Roofing) | CGC-1526236 (General Contractor)<br/>
+  <strong>Phone:</strong> (754) 227-5605<br/>
+  Service area: <a href="/locations/boca-raton">Boca Raton</a> and all of Palm Beach and Broward County</p>
+
+  <h2>Istueta Roofing — Boca Raton, FL</h2>
+
+  <p>Istueta Roofing is a family-owned roofing contractor with over 40 years operating in Palm Beach County. Their longevity in Boca Raton — through multiple hurricane seasons, code cycles, and material evolutions — demonstrates sustained operational capability. Istueta specializes in residential roof systems common to Boca Raton: concrete tile, clay tile, asphalt shingle, and metal roofing.</p>
+
+  <h2>Roof Top Services — Boca Raton, FL</h2>
+
+  <p>Roof Top Services is an established Palm Beach County roofing contractor with experience across residential and commercial systems. The company works with multiple roof types and has demonstrated capability pulling permits through Palm Beach County Building Division for Boca Raton projects.</p>
+
+  <h2>Kelly Roofing — Boca Raton, FL</h2>
+
+  <p>Kelly Roofing is one of the larger-volume residential roofing contractors operating in Boca Raton and across South Florida. The company holds GAF Master Elite certification, representing the top 3% of GAF contractors nationally. Kelly has extensive project history in Boca Raton across neighborhoods ranging from waterfront properties to inland developments.</p>
+
+  <h2>Crowther Roofing — Boca Raton, FL</h2>
+
+  <p>Crowther Roofing has been operating in Palm Beach County since 1949, making them one of the longest-tenured roofing contractors in the region. Multi-generation longevity in a hurricane-prone luxury market signals consistent quality and operational discipline. Crowther handles all residential roof system types common to Boca Raton's diverse housing stock.</p>
+
+  <h2>Roofing Costs in Boca Raton — What Should You Expect to Pay?</h2>
+
+  <p>Boca Raton roofing costs reflect Palm Beach County's wind code requirements, permit fees, and the city's mix of premium materials and high-end installations. Fair market pricing:</p>
+
+  <ul>
+    <li><strong>Asphalt shingle replacement:</strong> $11,000–$24,000 for typical 2,000–2,500 SF homes</li>
+    <li><strong>Concrete tile replacement:</strong> $18,000–$38,000 depending on tile profile, weight, and architectural specifications</li>
+    <li><strong>Clay tile replacement:</strong> $22,000–$45,000 for premium installations common in Boca Raton's luxury market</li>
+    <li><strong>Metal roofing (standing seam or metal tile):</strong> $24,000–$52,000 for residential systems</li>
+    <li><strong>Flat roofing (modified bitumen or TPO):</strong> $8,000–$20,000 for typical residential flat sections</li>
+    <li><strong>Minor repairs:</strong> $400–$1,800 for leak repair, tile replacement, flashing work</li>
+  </ul>
+
+  <p>These figures reflect licensed, permitted installation with Palm Beach County inspection. Structural upgrades and decking replacement add $2–$5 per square foot. Use our <a href="/roof-cost-calculator/">roof cost calculator</a> for estimates.</p>
+
+  <h2>FAQ — Frequently Asked Questions About Roofing in Boca Raton</h2>
+
+  <h3>Does my roof replacement in Boca Raton need a permit?</h3>
+  <p>Yes. Any roof replacement or significant repair in Boca Raton requires a permit from Palm Beach County Building Division. The permit triggers inspection by a county building inspector. Unpermitted work creates problems with insurance claims, property transfers, and can result in stop-work orders.</p>
+
+  <h3>Is Boca Raton in the HVHZ?</h3>
+  <p>Yes. Boca Raton is located in Palm Beach County and falls within the High Velocity Hurricane Zone (HVHZ). This designation requires more stringent fastening schedules, specific product approvals with Notice of Acceptance (NOA), and installation methods that exceed standard Florida Building Code requirements.</p>
+
+  <h3>How do I verify a roofing contractor's license in Florida?</h3>
+  <p>Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by contractor name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and not suspended or under disciplinary action.</p>
+
+  <h3>Can I use homeowner's insurance to pay for a new roof in Boca Raton?</h3>
+  <p>If your roof sustained damage from a covered event (storm, wind, hail), your policy may cover replacement costs. Contact your insurance company before signing any contractor documentation. Have an independent inspection before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value (ACV) or replacement cost value (RCV) — the difference can be substantial.</p>
+
+  <h3>What roofing materials are best for Boca Raton homes?</h3>
+  <p>Concrete and clay tile are the most common residential roofing materials in Boca Raton — impact-resistant, long service life, established HVHZ approvals, and premium aesthetic. Metal roofing (standing seam or metal tile) provides excellent wind resistance and performs well in Boca Raton's coastal environment. Asphalt shingles are less expensive but have shorter lifespans in South Florida conditions.</p>
+
+  <h3>How long does a roof last in Boca Raton?</h3>
+  <p>Concrete tile roofs typically last 30–50 years with proper maintenance. Clay tile can exceed 50 years. Underlayment replacement is often needed at 15–25 years. Asphalt shingles last 15–20 years in South Florida conditions. Metal roofing has 40–50 year service life. Flat roofing systems require maintenance every 10–15 years and replacement after 20–25 years.</p>
+
+  <h2>Ready to Get Your Roof Done Right in Boca Raton?</h2>
+
+  <p>All Phase Construction USA serves Boca Raton with dual-licensed roofing and general contracting capability, full Palm Beach County permitting, and wind mitigation documentation. Call <strong>(754) 227-5605</strong> for a free roof inspection.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersBocaDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
@@ -2272,16 +2529,104 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersCoralDir, { recursive: true });
   const bestRoofersCoralContent = `
   <h1>Top 5 Best Rated Roofers in Coral Springs, FL (2026)</h1>
-  <p>Finding a Roofer in Coral Springs You Can Actually Trust. Coral Springs falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+
+  <p>Coral Springs is one of Broward County's largest planned communities — a master-planned city built starting in the 1960s with consistent construction standards, established neighborhoods, and a mix of single-family homes and townhomes. Finding a roofer who understands Coral Springs' specific housing characteristics and Broward County's High Velocity Hurricane Zone requirements requires more than searching online reviews.</p>
+
+  <p>Coral Springs falls entirely within Broward County's High Velocity Hurricane Zone (HVHZ). Every roofing installation must meet Florida Building Code wind resistance standards specific to HVHZ designation, and all work requires permits through the City of Coral Springs Building Department. Contractors must be licensed under Florida's CCC (roofing) or CGC (general contractor) categories to work legally in Coral Springs.</p>
+
   <h2>Your List of the Top 5 Best Roofers in Coral Springs, FL</h2>
+
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Allied Roofing</li>
-    <li>Tiger Team Roofing</li>
-    <li>Nast Roofing</li>
-    <li>Paul Bange Roofing</li>
+    <li><strong>All Phase Construction USA</strong> — Dual-licensed CCC + CGC contractor with HVHZ compliance expertise</li>
+    <li><strong>Allied Roofing & Sheet Metal</strong> — 25+ years in Broward County, HVHZ specialists</li>
+    <li><strong>Tiger Team Roofing</strong> — Angie's List Super Service Award winner, consistent Broward presence</li>
+    <li><strong>Nast Roofing</strong> — 30+ years in Broward County, multiple code cycles and storm seasons</li>
+    <li><strong>Paul Bange Roofing</strong> — South Florida institution, high-volume residential contractor</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Coral Springs. Call (754) 227-5605 for a free roof inspection.</p>
+
+  <h2>How We Chose the Roofing Companies in Coral Springs</h2>
+
+  <p>Every contractor on this list was evaluated against criteria specific to Coral Springs and Broward County:</p>
+
+  <ul>
+    <li><strong>Florida state licensing:</strong> Active CCC or CGC licensure verified through DBPR</li>
+    <li><strong>Coral Springs permit history:</strong> Demonstrated track record pulling permits through the City of Coral Springs Building Department</li>
+    <li><strong>HVHZ compliance capability:</strong> Knowledge of Broward County's HVHZ requirements, fastening schedules, and product approvals</li>
+    <li><strong>Residential specialization:</strong> Experience with single-family and townhome roof systems common to Coral Springs' planned community structure</li>
+  </ul>
+
+  <h2>All Phase Construction USA — Coral Springs, FL</h2>
+
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Broward and Palm Beach County, with significant project history in Coral Springs across residential roof systems.</p>
+
+  <p>The dual-license structure enables All Phase to handle projects that extend beyond surface roofing — structural repairs, decking replacement, fascia work — under one contractor. This capability matters in Coral Springs where many homes are 30–50 years old and often need both roofing and structural attention.</p>
+
+  <p>All Phase installs roofing systems with Florida Product Approval numbers applicable to Broward County's HVHZ wind requirements and routinely works with the City of Coral Springs Building Department's inspection process.</p>
+
+  <h3>Services:</h3>
+  <p>Roof replacement (<a href="/shingle-roofing">shingle</a>, <a href="/tile-roofing">tile</a>, <a href="/metal-roofing">metal</a>, <a href="/flat-roofing">flat</a>), <a href="/roof-repair/coral-springs">roof repair</a>, structural upgrades, <a href="/roof-inspection/coral-springs">wind mitigation inspections</a>, storm damage restoration, commercial roofing, Coral Springs permit coordination.</p>
+
+  <h3>License &amp; Contact:</h3>
+  <p>CCC-1331464 (Roofing) | CGC-1526236 (General Contractor)<br/>
+  <strong>Phone:</strong> (754) 227-5605<br/>
+  Service area: <a href="/locations/coral-springs">Coral Springs</a> and all of Broward and Palm Beach County</p>
+
+  <h2>Allied Roofing & Sheet Metal — Coral Springs, FL</h2>
+
+  <p>Allied Roofing & Sheet Metal is a family-owned roofing contractor with over 25 years operating in Broward County. Their longevity in Coral Springs — through multiple hurricane seasons and code cycles — demonstrates sustained operational capability. Allied specializes in HVHZ-compliant residential roof systems: tile, shingle, metal, and flat roofing.</p>
+
+  <h2>Tiger Team Roofing — Coral Springs, FL</h2>
+
+  <p>Tiger Team Roofing is a Broward County contractor with consistent presence in Coral Springs. The company has received Angie's List Super Service Award recognition multiple years running, which reflects sustained positive customer feedback. Tiger Team handles all major residential roof system types common to Coral Springs.</p>
+
+  <h2>Nast Roofing — Coral Springs, FL</h2>
+
+  <p>Nast Roofing has been operating in Broward County for over 30 years, making them one of the longer-tenured residential roofing contractors with local focus. Thirty-plus years in Broward County means Nast has worked through multiple roofing code cycles, the transition to HVHZ requirements, and several major storm seasons.</p>
+
+  <h2>Paul Bange Roofing — Coral Springs, FL</h2>
+
+  <p>Paul Bange Roofing is a South Florida institution with multiple decades in the market and locations across Broward and Palm Beach County. They are one of the higher-volume residential roofing contractors in the region with established relationships with most major manufacturers. Paul Bange has extensive project history in Coral Springs.</p>
+
+  <h2>Roofing Costs in Coral Springs — What Should You Expect to Pay?</h2>
+
+  <p>Coral Springs roofing costs reflect Broward County's HVHZ requirements and permit fees. Fair market pricing for Coral Springs homes:</p>
+
+  <ul>
+    <li><strong>Asphalt shingle replacement:</strong> $10,000–$21,000 for typical 1,800–2,400 SF homes common to Coral Springs</li>
+    <li><strong>Concrete tile replacement:</strong> $16,000–$34,000 depending on tile profile and structural requirements</li>
+    <li><strong>Metal roofing (standing seam or metal tile):</strong> $20,000–$46,000 for residential systems</li>
+    <li><strong>Flat roofing (modified bitumen or TPO):</strong> $7,000–$17,000 for typical residential flat sections</li>
+    <li><strong>Minor repairs:</strong> $350–$1,400 for leak repair, tile replacement, flashing work</li>
+  </ul>
+
+  <p>These figures reflect licensed, permitted HVHZ-compliant installation with City of Coral Springs inspection. Decking replacement adds $2–$5 per square foot. Use our <a href="/roof-cost-calculator/">roof cost calculator</a> for estimates.</p>
+
+  <h2>FAQ — Frequently Asked Questions About Roofing in Coral Springs</h2>
+
+  <h3>Does my roof replacement in Coral Springs need a permit?</h3>
+  <p>Yes. Any roof replacement or significant repair in Coral Springs requires a permit from the City of Coral Springs Building Department. The permit triggers inspection by a city building inspector. Unpermitted work creates problems with insurance claims, property transfers, and can result in stop-work orders and fines.</p>
+
+  <h3>Is Coral Springs in the HVHZ?</h3>
+  <p>Yes. Coral Springs is located in Broward County and falls entirely within the High Velocity Hurricane Zone (HVHZ). This designation requires more stringent fastening schedules, specific product approvals with Notice of Acceptance (NOA), and installation methods that exceed standard Florida Building Code requirements.</p>
+
+  <h3>How do I verify a roofing contractor's license in Florida?</h3>
+  <p>Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by contractor name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and not suspended or under disciplinary action.</p>
+
+  <h3>Can I use homeowner's insurance to pay for a new roof in Coral Springs?</h3>
+  <p>If your roof sustained damage from a covered event (storm, wind), your policy may cover replacement costs. Contact your insurance company before signing any contractor documentation. Have an independent inspection before agreeing to any Assignment of Benefits. Understand whether your policy pays actual cash value (ACV) or replacement cost value (RCV).</p>
+
+  <h3>What roofing materials are best for Coral Springs homes?</h3>
+  <p>Concrete tile is the most common residential roofing material in Coral Springs — impact-resistant, long service life, and established HVHZ approvals. Metal roofing (standing seam or metal tile) provides excellent wind resistance. Asphalt shingles are less expensive but have shorter lifespans in South Florida's heat and UV conditions.</p>
+
+  <h3>How long does a roof last in Coral Springs?</h3>
+  <p>Concrete tile roofs typically last 25–40 years with proper maintenance. Underlayment replacement is often needed at 15–20 years. Asphalt shingles last 15–20 years in South Florida conditions. Metal roofing has 40–50 year service life. Flat roofing systems require maintenance every 10–15 years and replacement after 20–25 years.</p>
+
+  <h3>What should I do after a storm damages my roof in Coral Springs?</h3>
+  <p>Document the damage with photographs before any temporary repairs. Contact your insurance company to report the claim. Cover exposed areas with tarps to prevent interior water damage. Do not sign any Assignment of Benefits or contract with a contractor before your insurance company has sent an adjuster or you have obtained an independent assessment.</p>
+
+  <h2>Ready to Get Your Roof Done Right in Coral Springs?</h2>
+
+  <p>All Phase Construction USA serves Coral Springs with dual-licensed roofing and general contracting capability, comprehensive HVHZ-compliant installations, full City of Coral Springs permitting, and wind mitigation documentation. Call <strong>(754) 227-5605</strong> for a free roof inspection.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersCoralDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Coral Springs FL (2026) | All Phase',
