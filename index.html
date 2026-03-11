@@ -67,19 +67,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="msvalidate.01" content="3938FD4BCC881B5AF6F9156E605CF637" />
 
-    <!-- Google Ads Tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10809361088"></script>
+    <!-- Google Ads + GA4 — single gtag.js load, deferred until after first paint
+         Using a single script tag instead of two separate async loads saves ~100ms
+         on mobile by eliminating a competing network request during initial load -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-10809361088');
     </script>
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBMBD8QKK7"></script>
     <script>
-      gtag('config', 'G-PBMBD8QKK7');
+      // Load gtag.js after the page becomes interactive to avoid competing with main bundle
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10809361088';
+          s.async = true;
+          document.head.appendChild(s);
+          gtag('js', new Date());
+          gtag('config', 'AW-10809361088');
+          gtag('config', 'G-PBMBD8QKK7');
+        });
+      } else {
+        setTimeout(function() {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10809361088';
+          s.async = true;
+          document.head.appendChild(s);
+          gtag('js', new Date());
+          gtag('config', 'AW-10809361088');
+          gtag('config', 'G-PBMBD8QKK7');
+        }, 3000);
+      }
     </script>
 
     <!-- Hero image is hidden on mobile (hidden md:block) so no mobile preload needed.

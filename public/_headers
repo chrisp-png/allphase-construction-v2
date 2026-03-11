@@ -1,11 +1,28 @@
-# Homepage cache control - prevent edge caching for real-time updates
+# Homepage — allow short browser cache + CDN edge cache with revalidation
+# This prevents re-downloading everything on every visit while staying fresh
 /
-  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
-  Netlify-CDN-Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
+  Netlify-CDN-Cache-Control: public, s-maxage=3600, stale-while-revalidate=86400
 
 /index.html
-  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
-  Netlify-CDN-Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
+  Netlify-CDN-Cache-Control: public, s-maxage=3600, stale-while-revalidate=86400
+
+# Hashed JS/CSS assets — immutable, cache for 1 year
+# Vite puts content hashes in filenames so these are safe to cache forever
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Netlify-CDN-Cache-Control: public, s-maxage=31536000, immutable
+
+# Images in root — cache for 30 days (no hash in name, may change)
+/*.jpg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.webp
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.svg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
 
 # Sitemap - ensure proper Content-Type
 /sitemap.xml

@@ -1,16 +1,19 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import AccessibilityWidget from './components/AccessibilityWidget';
-import StickyMobileCTA from './components/StickyMobileCTA';
-import ExitIntentPopup from './components/ExitIntentPopup';
 import ScrollToTop from './components/ScrollToTop';
 import LowercaseRedirect from './components/LowercaseRedirect';
-import AssessmentModal from './components/AssessmentModal';
 import { AssessmentModalProvider, useAssessmentModal } from './context/AssessmentModalContext';
 import NuclearMetadata from './components/NuclearMetadata';
 import ErrorBoundary from './components/ErrorBoundary';
+
+// Lazy-load components that are NOT above the fold on mobile
+// Footer, popups, modals, and accessibility widget can load after initial paint
+const Footer = lazy(() => import('./components/Footer'));
+const AccessibilityWidget = lazy(() => import('./components/AccessibilityWidget'));
+const StickyMobileCTA = lazy(() => import('./components/StickyMobileCTA'));
+const ExitIntentPopup = lazy(() => import('./components/ExitIntentPopup'));
+const AssessmentModal = lazy(() => import('./components/AssessmentModal'));
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -219,7 +222,10 @@ const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
 const FrequentlyAskedQuestionsPage = lazy(() => import('./pages/FrequentlyAskedQuestionsPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
-import { DynamicLocationPage, DynamicRoofRepairPage, DynamicRoofInspectionPage } from './pages/DynamicCityRouter';
+// Lazy-load DynamicCityRouter to keep it out of the main bundle
+const DynamicLocationPage = lazy(() => import('./pages/DynamicCityRouter').then(m => ({ default: m.DynamicLocationPage })));
+const DynamicRoofRepairPage = lazy(() => import('./pages/DynamicCityRouter').then(m => ({ default: m.DynamicRoofRepairPage })));
+const DynamicRoofInspectionPage = lazy(() => import('./pages/DynamicCityRouter').then(m => ({ default: m.DynamicRoofInspectionPage })));
 
 // Loading fallback with dark theme to prevent flash
 const PageLoadingFallback = () => (
@@ -350,11 +356,15 @@ function AppContent() {
           </Routes>
         </Suspense>
       </main>
-      <Footer />
-      <AccessibilityWidget />
-      <StickyMobileCTA />
-      <ExitIntentPopup />
-      <AssessmentModal isOpen={isOpen} onClose={closeModal} />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
+      <Suspense fallback={null}>
+        <AccessibilityWidget />
+        <StickyMobileCTA />
+        <ExitIntentPopup />
+        <AssessmentModal isOpen={isOpen} onClose={closeModal} />
+      </Suspense>
       </div>
     </>
   );
