@@ -84,6 +84,11 @@ to = "/favicon.svg"
 status = 200
 
 [[redirects]]
+from = "/llms.txt"
+to = "/llms.txt"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
@@ -151,3 +156,10 @@ for = "/favicon.svg"
 [headers.values]
 Content-Type = "image/svg+xml"
 Cache-Control = "public, max-age=86400"
+
+[[headers]]
+for = "/llms.txt"
+
+[headers.values]
+Content-Type = "text/plain"
+Cache-Control = "public, max-age=3600"
