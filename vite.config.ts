@@ -181,7 +181,7 @@ export default defineConfig({
   plugins: [react(), asyncCssPlugin(), manualPublicCopyPlugin()],
   publicDir: false, // Disable automatic public copy due to corrupted file
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    include: ['lucide-react'],
   },
   build: {
     target: 'es2020',

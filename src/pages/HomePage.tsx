@@ -1,22 +1,25 @@
 // Bolt-GitHub-Netlify Connection Test - 2026-02-13
+import { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Award } from 'lucide-react';
 import SEO from '../components/SEO';
 import HeroRoofing from '../components/HeroRoofing';
-import HowItWorks from '../components/HowItWorks';
-import TrustBadges from '../components/TrustBadges';
-import HappyCustomers from '../components/HappyCustomers';
-import CaseStudy from '../components/CaseStudy';
-import ServiceAreas from '../components/ServiceAreas';
-import CommonServiceAreasTable from '../components/CommonServiceAreasTable';
-import ServiceAreasCTA from '../components/ServiceAreasCTA';
-import HomeownerResources from '../components/HomeownerResources';
-import MicroFAQ from '../components/MicroFAQ';
-import FAQ from '../components/FAQ';
-import ChamberBadge from '../components/ChamberBadge';
-import ChamberBadges from '../components/ChamberBadges';
-import LocationMap from '../components/LocationMap';
 import { EXTERNAL_LINKS } from '../config/links';
+
+// Lazy-load below-the-fold components to reduce initial JS bundle on mobile
+const HowItWorks = lazy(() => import('../components/HowItWorks'));
+const TrustBadges = lazy(() => import('../components/TrustBadges'));
+const HappyCustomers = lazy(() => import('../components/HappyCustomers'));
+const CaseStudy = lazy(() => import('../components/CaseStudy'));
+const ServiceAreas = lazy(() => import('../components/ServiceAreas'));
+const CommonServiceAreasTable = lazy(() => import('../components/CommonServiceAreasTable'));
+const ServiceAreasCTA = lazy(() => import('../components/ServiceAreasCTA'));
+const HomeownerResources = lazy(() => import('../components/HomeownerResources'));
+const MicroFAQ = lazy(() => import('../components/MicroFAQ'));
+const FAQ = lazy(() => import('../components/FAQ'));
+const ChamberBadge = lazy(() => import('../components/ChamberBadge'));
+const ChamberBadges = lazy(() => import('../components/ChamberBadges'));
+const LocationMap = lazy(() => import('../components/LocationMap'));
 
 export default function HomePage() {
   // Static SEO metadata controlled by NuclearMetadata component
@@ -237,7 +240,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            <ChamberBadges />
+            <Suspense fallback={<div className="min-h-[96px]" />}>
+              <ChamberBadges />
+            </Suspense>
           </div>
 
           {/* Our Roofing Services Section */}
@@ -814,18 +819,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <HowItWorks />
-      <TrustBadges />
-      <HappyCustomers />
-      <CaseStudy />
-      <ServiceAreas />
-      <CommonServiceAreasTable />
-      <ServiceAreasCTA />
-      <HomeownerResources />
-      <MicroFAQ />
-      <FAQ />
-      <ChamberBadge />
-      <LocationMap />
+      <Suspense fallback={<div className="min-h-[200px]" />}>
+        <HowItWorks />
+        <TrustBadges />
+        <HappyCustomers />
+        <CaseStudy />
+        <ServiceAreas />
+        <CommonServiceAreasTable />
+        <ServiceAreasCTA />
+        <HomeownerResources />
+        <MicroFAQ />
+        <FAQ />
+        <ChamberBadge />
+        <LocationMap />
+      </Suspense>
     </>
   );
 }

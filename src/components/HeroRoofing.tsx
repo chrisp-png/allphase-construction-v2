@@ -120,7 +120,7 @@ export default function HeroRoofing() {
           style={{ aspectRatio: '16 / 9' }}
           loading="eager"
           fetchpriority="high"
-          decoding="async"
+          decoding="auto"
         />
       </picture>
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900 to-slate-900 md:from-black/70 md:via-black/50 md:to-black/30" style={{ overflow: 'hidden', zIndex: 0, pointerEvents: 'none' }}></div>
@@ -190,6 +190,9 @@ export default function HeroRoofing() {
                       src="/tri-alliance-logo.jpg"
                       alt="TRI Alliance Florida High Wind Certified"
                       className="h-10 sm:h-12 w-auto object-contain mb-1"
+                      width="48"
+                      height="48"
+                      loading="eager"
                     />
                     <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">High Wind Certified</p>
                   </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const PALM_BEACH_SCRIPT_SRC =
   "https://palmbeaches.chambermaster.com/Content/Script/Member.js";
@@ -20,35 +20,50 @@ function loadScriptOnce(src: string): Promise<void> {
 }
 
 export default function ChamberBadges() {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Only load the external Chamber script when the section is visible
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const container = document.getElementById(PALM_BEACH_CONTAINER_ID);
-    if (!container) return;
+    const section = sectionRef.current;
+    if (!section) return;
 
-    if (container.getAttribute("data-initialized") === "true") return;
-    container.setAttribute("data-initialized", "true");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries[0].isIntersecting) return;
+        observer.disconnect();
 
-    loadScriptOnce(PALM_BEACH_SCRIPT_SRC)
-      .then(() => {
-        const MNI = (window as any).MNI;
-        if (!MNI?.Widgets?.Member) return;
+        const container = document.getElementById(PALM_BEACH_CONTAINER_ID);
+        if (!container) return;
+        if (container.getAttribute("data-initialized") === "true") return;
+        container.setAttribute("data-initialized", "true");
 
-        new MNI.Widgets.Member(PALM_BEACH_CONTAINER_ID, {
-          member: 40969,
-          styleTemplate:
-            "#@id{text-align:center;position:relative}" +
-            "#@id .mn-widget-member-name{font-weight:700}" +
-            "#@id .mn-widget-member-logo{max-width:100%}",
-        }).create();
-      })
-      .catch(() => {
-        container.removeAttribute("data-initialized");
-      });
+        loadScriptOnce(PALM_BEACH_SCRIPT_SRC)
+          .then(() => {
+            const MNI = (window as any).MNI;
+            if (!MNI?.Widgets?.Member) return;
+            new MNI.Widgets.Member(PALM_BEACH_CONTAINER_ID, {
+              member: 40969,
+              styleTemplate:
+                "#@id{text-align:center;position:relative}" +
+                "#@id .mn-widget-member-name{font-weight:700}" +
+                "#@id .mn-widget-member-logo{max-width:100%}",
+            }).create();
+          })
+          .catch(() => {
+            container.removeAttribute("data-initialized");
+          });
+      },
+      { rootMargin: "200px" }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section aria-label="Chamber memberships" className="mt-8">
+    <section ref={sectionRef} aria-label="Chamber memberships" className="mt-8">
       <div className="grid md:grid-cols-3 gap-6">
         <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
           <div className="flex justify-center mb-4">
@@ -56,6 +71,10 @@ export default function ChamberBadges() {
               src="/broward-chamber-of-commerce-member-all-phase-construction-usa.png"
               alt="Broward Chamber of Commerce Member - All Phase Construction USA"
               className="h-24 w-auto object-contain"
+              width="150"
+              height="96"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <h3 className="text-xl font-bold text-white mb-3 text-center">

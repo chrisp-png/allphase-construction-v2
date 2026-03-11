@@ -17,6 +17,8 @@ export default function TrustBadges() {
               src="https://seal-seflorida.bbb.org/seals/black-seal-200-65-bbb-90537640.png"
               alt="All Phase Construction USA LLC BBB Business Review"
               className="h-12 w-auto"
+              width="200"
+              height="65"
               loading="lazy"
               decoding="async"
               style={{ border: 0 }}
