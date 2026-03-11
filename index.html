@@ -60,6 +60,15 @@
     <meta property="og:title" content="Roofing Contractor | Broward & Palm Beach | All Phase USA">
     <meta property="og:description" content="Hurricane-compliant HVHZ roofing installation for Broward and Palm Beach.">
     <meta property="og:url" content="https://allphaseconstructionfl.com/" />
+    <meta property="og:image" content="https://allphaseconstructionfl.com/LOGO_black_background.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="All Phase Construction USA" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Roofing Contractor | Broward & Palm Beach | All Phase USA" />
+    <meta name="twitter:description" content="Hurricane-compliant HVHZ roofing installation for Broward and Palm Beach." />
+    <meta name="twitter:image" content="https://allphaseconstructionfl.com/LOGO_black_background.png" />
 
   </head>
   <body>
@@ -114,60 +123,3 @@
     <script type="text/javascript" src="//cdn.callrail.com/companies/650182589/e3a1759b5f327970b7ca/12/swap.js" defer></script>
 
     <!-- Conversion Event Tracking — deferred via requestIdleCallback -->
-    <script>
-    (function () {
-      'use strict';
-      function initTracking() {
-        function fireGtag(eventName, params) {
-          if (typeof gtag === 'function') {
-            gtag('event', eventName, params || {});
-          }
-        }
-        function fireAdsConversion() {
-          if (typeof gtag === 'function') {
-            gtag('event', 'conversion', { send_to: 'AW-10809361088/CONVERSION_LABEL_NEEDED' });
-          }
-        }
-        document.addEventListener('click', function (e) {
-          var el = e.target;
-          while (el && el !== document) {
-            if (el.tagName === 'A' && typeof el.href === 'string' && el.href.indexOf('tel:') === 0) {
-              var number = el.href.replace('tel:', '');
-              fireGtag('click_to_call', { event_category: 'engagement', event_label: number });
-              fireGtag('all_calls',     { event_category: 'engagement', event_label: number });
-              fireAdsConversion();
-              break;
-            }
-            el = el.parentElement;
-          }
-        }, true);
-        var INTENT_WORDS = ['submit', 'send', 'request', 'estimate', 'assessment', 'contact', 'get', 'quote', 'inspect'];
-        document.addEventListener('click', function (e) {
-          var el = e.target;
-          while (el && el !== document) {
-            var tag  = (el.tagName || '').toUpperCase();
-            var type = (el.type   || '').toLowerCase();
-            if ((tag === 'BUTTON' || tag === 'INPUT') && type === 'submit') {
-              var text = ((tag === 'INPUT' ? el.value : el.textContent) || '').toLowerCase();
-              var isContactBtn = INTENT_WORDS.some(function (w) { return text.indexOf(w) !== -1; });
-              if (isContactBtn) {
-                var label = (tag === 'INPUT' ? el.value : el.textContent).trim().substring(0, 60);
-                fireGtag('get_your_estimate_form_submit', { event_category: 'engagement', event_label: label });
-                fireGtag('contact_forms',                 { event_category: 'engagement', event_label: label });
-                fireAdsConversion();
-                break;
-              }
-            }
-            el = el.parentElement;
-          }
-        }, true);
-      }
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(initTracking);
-      } else {
-        setTimeout(initTracking, 1);
-      }
-    })();
-    </script>
-  </body>
-</html>
