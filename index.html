@@ -3,79 +3,10 @@
   <head>
     <meta charset="UTF-8" />
 
-  <!-- Conversion Event Tracking — deferred to avoid blocking initial render -->
-  <script>
-  // Defer conversion tracking until after page is interactive
-  (function () {
-    'use strict';
-    function initTracking() {
-      function fireGtag(eventName, params) {
-        if (typeof gtag === 'function') {
-          gtag('event', eventName, params || {});
-        }
-      }
-      function fireAdsConversion() {
-        if (typeof gtag === 'function') {
-          gtag('event', 'conversion', { send_to: 'AW-10809361088/CONVERSION_LABEL_NEEDED' });
-        }
-      }
-      document.addEventListener('click', function (e) {
-        var el = e.target;
-        while (el && el !== document) {
-          if (el.tagName === 'A' && typeof el.href === 'string' && el.href.indexOf('tel:') === 0) {
-            var number = el.href.replace('tel:', '');
-            fireGtag('click_to_call', { event_category: 'engagement', event_label: number });
-            fireGtag('all_calls',     { event_category: 'engagement', event_label: number });
-            fireAdsConversion();
-            break;
-          }
-          el = el.parentElement;
-        }
-      }, true);
-      var INTENT_WORDS = ['submit', 'send', 'request', 'estimate', 'assessment', 'contact', 'get', 'quote', 'inspect'];
-      document.addEventListener('click', function (e) {
-        var el = e.target;
-        while (el && el !== document) {
-          var tag  = (el.tagName || '').toUpperCase();
-          var type = (el.type   || '').toLowerCase();
-          if ((tag === 'BUTTON' || tag === 'INPUT') && type === 'submit') {
-            var text = ((tag === 'INPUT' ? el.value : el.textContent) || '').toLowerCase();
-            var isContactBtn = INTENT_WORDS.some(function (w) { return text.indexOf(w) !== -1; });
-            if (isContactBtn) {
-              var label = (tag === 'INPUT' ? el.value : el.textContent).trim().substring(0, 60);
-              fireGtag('get_your_estimate_form_submit', { event_category: 'engagement', event_label: label });
-              fireGtag('contact_forms',                 { event_category: 'engagement', event_label: label });
-              fireAdsConversion();
-              break;
-            }
-          }
-          el = el.parentElement;
-        }
-      }, true);
-    }
-    // Use requestIdleCallback to defer, with fallback to setTimeout
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(initTracking);
-    } else {
-      setTimeout(initTracking, 1);
-    }
-  })();
-  </script>
-
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="msvalidate.01" content="3938FD4BCC881B5AF6F9156E605CF637" />
-
-    <!-- Google Ads + GA4 — single gtag.js load instead of two separate scripts -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10809361088"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-10809361088');
-      gtag('config', 'G-PBMBD8QKK7');
-    </script>
 
     <!-- Hero image is hidden on mobile (hidden md:block) so no mobile preload needed.
          Desktop/tablet preloads removed: team_drone_photo-*.webp files do not exist in /public.
@@ -118,8 +49,6 @@
         min-height: 100vh;
       }
     </style>
-
-    <script type="text/javascript" src="//cdn.callrail.com/companies/650182589/e3a1759b5f327970b7ca/12/swap.js" defer></script>
 
     <!-- Homepage SEO defaults -->
     <title>Roofing Contractor | Broward & Palm Beach | All Phase USA</title>
@@ -167,5 +96,78 @@
       </div>
     </div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Third-party scripts moved to end of body so they don't compete with
+         the main React bundle for bandwidth and main-thread time during initial load -->
+
+    <!-- Google Ads + GA4 — single gtag.js load -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10809361088"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-10809361088');
+      gtag('config', 'G-PBMBD8QKK7');
+    </script>
+
+    <!-- CallRail dynamic number insertion -->
+    <script type="text/javascript" src="//cdn.callrail.com/companies/650182589/e3a1759b5f327970b7ca/12/swap.js" defer></script>
+
+    <!-- Conversion Event Tracking — deferred via requestIdleCallback -->
+    <script>
+    (function () {
+      'use strict';
+      function initTracking() {
+        function fireGtag(eventName, params) {
+          if (typeof gtag === 'function') {
+            gtag('event', eventName, params || {});
+          }
+        }
+        function fireAdsConversion() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', { send_to: 'AW-10809361088/CONVERSION_LABEL_NEEDED' });
+          }
+        }
+        document.addEventListener('click', function (e) {
+          var el = e.target;
+          while (el && el !== document) {
+            if (el.tagName === 'A' && typeof el.href === 'string' && el.href.indexOf('tel:') === 0) {
+              var number = el.href.replace('tel:', '');
+              fireGtag('click_to_call', { event_category: 'engagement', event_label: number });
+              fireGtag('all_calls',     { event_category: 'engagement', event_label: number });
+              fireAdsConversion();
+              break;
+            }
+            el = el.parentElement;
+          }
+        }, true);
+        var INTENT_WORDS = ['submit', 'send', 'request', 'estimate', 'assessment', 'contact', 'get', 'quote', 'inspect'];
+        document.addEventListener('click', function (e) {
+          var el = e.target;
+          while (el && el !== document) {
+            var tag  = (el.tagName || '').toUpperCase();
+            var type = (el.type   || '').toLowerCase();
+            if ((tag === 'BUTTON' || tag === 'INPUT') && type === 'submit') {
+              var text = ((tag === 'INPUT' ? el.value : el.textContent) || '').toLowerCase();
+              var isContactBtn = INTENT_WORDS.some(function (w) { return text.indexOf(w) !== -1; });
+              if (isContactBtn) {
+                var label = (tag === 'INPUT' ? el.value : el.textContent).trim().substring(0, 60);
+                fireGtag('get_your_estimate_form_submit', { event_category: 'engagement', event_label: label });
+                fireGtag('contact_forms',                 { event_category: 'engagement', event_label: label });
+                fireAdsConversion();
+                break;
+              }
+            }
+            el = el.parentElement;
+          }
+        }, true);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(initTracking);
+      } else {
+        setTimeout(initTracking, 1);
+      }
+    })();
+    </script>
   </body>
 </html>
