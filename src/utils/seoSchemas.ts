@@ -65,13 +65,7 @@ export function generateLocalBusinessSchema(pageUrl: string) {
         }
       }
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '137',
-      bestRating: '5',
-      worstRating: '1'
-    },
+    // aggregateRating removed — managed solely by NuclearMetadata.tsx global schema
     sameAs: [
       'https://www.facebook.com/allphaseconstructionusa',
       'https://www.instagram.com/allphaseconstructionusa'
@@ -186,12 +180,6 @@ export function generateCityLocalBusinessSchema(
         name: countyName
       }
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '137',
-      bestRating: '5',
-      worstRating: '1'
-    }
+    // aggregateRating removed — managed solely by NuclearMetadata.tsx global schema
   };
 }

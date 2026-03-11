@@ -43,13 +43,6 @@ export default function RoofReplacementPage() {
             "name": "Palm Beach County"
           }
         ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "138",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
         "license": "CCC-1331464, CGC-1526236",
         "hasCredential": [
           {

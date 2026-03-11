@@ -124,11 +124,6 @@ export default function BestRoofersDeerfieldBeachPage() {
                 "postalCode": "33441",
                 "addressCountry": "US"
               },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "138"
-              },
               "description": "Dual-licensed roofing and general contractor serving Deerfield Beach and Broward County since 2005. Specializing in HVHZ-compliant roof systems, wind mitigation upgrades, and insurance premium reduction.",
               "areaServed": ["Deerfield Beach", "Broward County", "Palm Beach County"]
             }

@@ -48,11 +48,6 @@ export default function PompanoBeachMoneyPage() {
         }
       }
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "150"
-    },
     "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-16:00"
   };
 

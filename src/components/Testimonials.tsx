@@ -46,27 +46,8 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'All Phase Construction USA',
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '108',
-        bestRating: '5',
-        worstRating: '1',
-      },
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+  // aggregateRating schema removed — now managed solely by NuclearMetadata.tsx
+  // to prevent Google "Review has multiple aggregate ratings" structured data error
 
   return (
     <section className="relative py-16 overflow-hidden">

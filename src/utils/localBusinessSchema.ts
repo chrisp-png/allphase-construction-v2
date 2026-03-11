@@ -9,6 +9,7 @@ export interface LocalBusinessSchemaProps {
   serviceAreaRadius?: string;
   latitude?: string;
   longitude?: string;
+  /** @deprecated aggregateRating is now managed solely by NuclearMetadata.tsx */
   aggregateRating?: {
     ratingValue: string;
     reviewCount: string;
@@ -23,10 +24,7 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
     serviceAreaRadius = '15 miles',
     latitude,
     longitude,
-    aggregateRating = {
-      ratingValue: '4.9',
-      reviewCount: '150'
-    },
+    // aggregateRating prop accepted but no longer used — managed by NuclearMetadata.tsx
     priceRange = '$$$$'
   } = props;
 
@@ -85,14 +83,7 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
       longitude
     } : undefined,
 
-    // Aggregate ratings from reviews
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: aggregateRating.ratingValue,
-      reviewCount: aggregateRating.reviewCount,
-      bestRating: '5',
-      worstRating: '1'
-    },
+    // aggregateRating removed — managed solely by NuclearMetadata.tsx global schema
 
     // Services offered
     hasOfferCatalog: {

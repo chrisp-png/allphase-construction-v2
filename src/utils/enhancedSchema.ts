@@ -161,13 +161,7 @@ export function generateOrganizationSchema(): object {
         }
       }
     ],
-    'aggregateRating': {
-      '@type': 'AggregateRating',
-      'ratingValue': '4.8',
-      'reviewCount': '137',
-      'bestRating': '5',
-      'worstRating': '1'
-    },
+    // aggregateRating removed — managed solely by NuclearMetadata.tsx global schema
     'hasCredential': [
       {
         '@type': 'EducationalOccupationalCredential',
