@@ -3574,17 +3574,36 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   }
 
   // WebSite schema - defines the website entity referenced by WebPage isPartOf
-  const webSiteSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    '@id': 'https://allphaseconstructionfl.com/#website',
-    url: 'https://allphaseconstructionfl.com',
-    name: 'All Phase Construction USA',
-    description: 'Licensed roofing and general contractor serving Broward and Palm Beach counties in South Florida.',
-    publisher: { '@id': 'https://allphaseconstructionfl.com/#organization' },
-    inLanguage: 'en-US'
-  };
-  schemasBlock += `\n    <!-- WebSite Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(webSiteSchema, null, 2)}\n    </script>`;
+    // Check if jsonLdSchema already contains a WebSite (e.g. home page has one with SearchAction)
+    const existingWebSite = Array.isArray(jsonLdSchema)
+      ? jsonLdSchema.find(s => s['@type'] === 'WebSite')
+      : (jsonLdSchema && jsonLdSchema['@type'] === 'WebSite' ? jsonLdSchema : null);
+
+    if (existingWebSite) {
+      // Enrich existing WebSite with publisher and inLanguage if missing
+      if (!existingWebSite.publisher) {
+        existingWebSite.publisher = { '@id': 'https://allphaseconstructionfl.com/#organization' };
+      }
+      if (!existingWebSite.inLanguage) {
+        existingWebSite.inLanguage = 'en-US';
+      }
+      if (!existingWebSite['@id']) {
+        existingWebSite['@id'] = 'https://allphaseconstructionfl.com/#website';
+      }
+    } else {
+      // No existing WebSite in jsonLdSchema — inject standalone
+      const webSiteSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        '@id': 'https://allphaseconstructionfl.com/#website',
+        url: 'https://allphaseconstructionfl.com',
+        name: 'All Phase Construction USA',
+        description: 'Licensed roofing and general contractor serving Broward and Palm Beach counties in South Florida.',
+        publisher: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+        inLanguage: 'en-US'
+      };
+      schemasBlock += `\n    <!-- WebSite Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(webSiteSchema, null, 2)}\n    </script>`;
+    }
 
   // SiteNavigationElement schema - helps search engines understand site structure
   const siteNavSchema = {
