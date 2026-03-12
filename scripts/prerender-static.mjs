@@ -3346,6 +3346,30 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
+    ],
+    sameAs: [
+      'https://www.bbb.org/us/fl/deerfield-beach/profile/roofing-contractors/all-phase-construction-usa-0633-92029436',
+      'https://www.google.com/maps/place/All+Phase+Construction+USA/',
+      'https://www.myfloridalicense.com/LicenseDetail.asp?SID=&id=0f8e6a98a0a5c68c5c7b8a5c'
+    ],
+    knowsAbout: [
+      'Roof Replacement',
+      'Roof Repair',
+      'Hurricane Damage Roof Repair',
+      'HVHZ High Velocity Hurricane Zone Roofing',
+      'Wind Mitigation Inspections',
+      'Tile Roofing',
+      'Metal Roofing',
+      'Shingle Roofing',
+      'Flat Roofing Systems',
+      'TPO and PVC Membrane Roofing',
+      'Storm Damage Assessment',
+      'Insurance Claim Assistance',
+      '40-Year Recertification Inspections',
+      'Commercial Roofing',
+      'Residential Roofing',
+      'Roof Inspections South Florida',
+      'Florida Building Code Compliance'
     ]
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
@@ -3358,6 +3382,23 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   if (jsonLdSchema) {
     schemasBlock += `\n    <!-- Page-Specific JSON-LD Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(jsonLdSchema, null, 2)}\n    </script>`;
   }
+
+  // Add Speakable WebPage schema for AI assistant featured snippets
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': canonical + '#webpage',
+    url: canonical,
+    name: title,
+    description: description,
+    isPartOf: { '@id': 'https://allphaseconstructionfl.com/#website' },
+    about: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '.faq-answer', '[data-speakable]', 'meta[name="description"]']
+    }
+  };
+  schemasBlock += `\n    <!-- Speakable WebPage Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(speakableSchema, null, 2)}\n    </script>`;
 
   // Generate BreadcrumbList schema from canonical URL (unless already included in jsonLdSchema array)
   const hasExistingBreadcrumb = Array.isArray(jsonLdSchema) && jsonLdSchema.some(s => s['@type'] === 'BreadcrumbList');
