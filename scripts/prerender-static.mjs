@@ -3561,6 +3561,40 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     schemasBlock += `\n    <!-- Page-Specific JSON-LD Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(jsonLdSchema, null, 2)}\n    </script>`;
   }
 
+  // WebSite schema - defines the website entity referenced by WebPage isPartOf
+  const webSiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': 'https://allphaseconstructionfl.com/#website',
+    url: 'https://allphaseconstructionfl.com',
+    name: 'All Phase Construction USA',
+    description: 'Licensed roofing and general contractor serving Broward and Palm Beach counties in South Florida.',
+    publisher: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+    inLanguage: 'en-US'
+  };
+  schemasBlock += `\n    <!-- WebSite Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(webSiteSchema, null, 2)}\n    </script>`;
+
+  // SiteNavigationElement schema - helps search engines understand site structure
+  const siteNavSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SiteNavigationElement',
+    name: 'Main Navigation',
+    hasPart: [
+      { '@type': 'SiteNavigationElement', name: 'Roofing Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { '@type': 'SiteNavigationElement', name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' },
+      { '@type': 'SiteNavigationElement', name: 'Metal Roofing', url: 'https://allphaseconstructionfl.com/metal-roofing' },
+      { '@type': 'SiteNavigationElement', name: 'Shingle Roofing', url: 'https://allphaseconstructionfl.com/shingle-roofing' },
+      { '@type': 'SiteNavigationElement', name: 'Flat Roofing', url: 'https://allphaseconstructionfl.com/flat-roofing' },
+      { '@type': 'SiteNavigationElement', name: 'Commercial Roofing', url: 'https://allphaseconstructionfl.com/commercial-roofing' },
+      { '@type': 'SiteNavigationElement', name: 'Roof Replacement', url: 'https://allphaseconstructionfl.com/roof-replacement' },
+      { '@type': 'SiteNavigationElement', name: 'Roof Repair', url: 'https://allphaseconstructionfl.com/roof-repair' },
+      { '@type': 'SiteNavigationElement', name: 'Roof Inspection', url: 'https://allphaseconstructionfl.com/roof-inspection' },
+      { '@type': 'SiteNavigationElement', name: 'About Us', url: 'https://allphaseconstructionfl.com/about-us' },
+      { '@type': 'SiteNavigationElement', name: 'Contact', url: 'https://allphaseconstructionfl.com/contact' }
+    ]
+  };
+  schemasBlock += `\n    <!-- SiteNavigationElement Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(siteNavSchema, null, 2)}\n    </script>`;
+
   // Add Speakable WebPage schema for AI assistant featured snippets
   const speakableSchema = {
     '@context': 'https://schema.org',
