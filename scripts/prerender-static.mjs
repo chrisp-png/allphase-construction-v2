@@ -3514,6 +3514,15 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     schemasBlock += `\n    <!-- BreadcrumbList Schema -->\n    <scr` + `ipt type="application/ld+json">\n${JSON.stringify(breadcrumbSchema, null, 2)}\n    </scr` + `ipt>`;
   }
 
+  // Geo meta tags for local SEO and AI crawler geographic targeting
+  schemasBlock += '\n    <meta name="geo.region" content="US-FL" />';
+  schemasBlock += '\n    <meta name="geo.placename" content="Deerfield Beach" />';
+  schemasBlock += '\n    <meta name="geo.position" content="26.3184;-80.0998" />';
+  schemasBlock += '\n    <meta name="ICBM" content="26.3184, -80.0998" />';
+  schemasBlock += '\n    <meta property="og:locale" content="en_US" />';
+  schemasBlock += '\n    <meta name="author" content="All Phase Construction USA" />';
+
+
   html = html.replace('</head>', schemasBlock + '\n  </head>');
 
   // Add SEO static content styles (before </head>)
