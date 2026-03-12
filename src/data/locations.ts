@@ -61,7 +61,7 @@ export const locations: Location[] = [
     slug: "fort-lauderdale",
     city: "Fort Lauderdale",
     state: "FL",
-    descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed (CGC-1526236 & CCC-1331464). Tile, metal, shingle & flat roofing. Free inspections. Call (754) 227-5605."
+    descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections. (754) 227-5605."
   },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
   { slug: "gulf-stream", city: "Gulf Stream", state: "FL" },
