@@ -3358,6 +3358,37 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   if (jsonLdSchema) {
     schemasBlock += `\n    <!-- Page-Specific JSON-LD Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(jsonLdSchema, null, 2)}\n    </script>`;
   }
+
+  // Generate BreadcrumbList schema from canonical URL (unless already included in jsonLdSchema array)
+  const hasExistingBreadcrumb = Array.isArray(jsonLdSchema) && jsonLdSchema.some(s => s['@type'] === 'BreadcrumbList');
+  if (!hasExistingBreadcrumb && canonical) {
+    const urlPath = canonical.replace('https://allphaseconstructionfl.com', '');
+    const breadcrumbItems = [{ name: 'Home', url: 'https://allphaseconstructionfl.com/' }];
+    if (urlPath && urlPath !== '/') {
+      const segments = urlPath.replace(/^\/|\/$/g, '').split('/');
+      let currentPath = '';
+      segments.forEach((segment, i) => {
+        currentPath += '/' + segment;
+        const name = segment.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        breadcrumbItems.push({
+          name: i === 0 && segment === 'locations' ? 'Locations' : name,
+          url: 'https://allphaseconstructionfl.com' + currentPath
+        });
+      });
+    }
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbItems.map((crumb, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: crumb.name,
+        item: crumb.url
+      }))
+    };
+    schemasBlock += `\n    <!-- BreadcrumbList Schema -->\n    <scr` + `ipt type="application/ld+json">\n${JSON.stringify(breadcrumbSchema, null, 2)}\n    </scr` + `ipt>`;
+  }
+
   html = html.replace('</head>', schemasBlock + '\n  </head>');
 
   // Add SEO static content styles (before </head>)
