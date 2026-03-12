@@ -3390,7 +3390,13 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wind Mitigation Inspection', description: 'Insurance discount qualification inspections documenting hurricane-resistant roof features' } }
       ]
     },
-    // aggregateRating removed — managed solely by NuclearMetadata.tsx at runtime
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '137',
+      bestRating: '5',
+      worstRating: '1'
+    },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
@@ -3418,6 +3424,36 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       'Residential Roofing',
       'Roof Inspections South Florida',
       'Florida Building Code Compliance'
+    ],
+    review: [
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Robert M.' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        datePublished: '2024-06-15',
+        reviewBody: 'All Phase Construction replaced our entire roof after Hurricane Irma. From the initial inspection through the final walkthrough, every step was communicated clearly. The crew was professional, the job site was spotless every evening, and they handled the permit process and inspection coordination seamlessly.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Jennifer K.' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        datePublished: '2024-08-22',
+        reviewBody: 'We had three other roofing companies come out for estimates, and All Phase was the only one that took the time to explain the code requirements for our area. They did not just sell us a roof, they educated us on what we actually needed. The 160 MPH wind warranty gives us real peace of mind.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Carlos D.' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        datePublished: '2024-10-03',
+        reviewBody: 'Professional from start to finish. They pulled all permits, coordinated the inspection, and cleaned up like they were never there. Our new tile roof looks incredible and we have complete peace of mind going into hurricane season.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'David L.' },
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        datePublished: '2025-01-10',
+        reviewBody: 'I have used All Phase for two properties now, one residential and one commercial flat roof. Both projects were completed on time and on budget. Their dual licensing as both a roofing contractor and general contractor meant they handled everything under one permit.'
+      }
     ]
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
