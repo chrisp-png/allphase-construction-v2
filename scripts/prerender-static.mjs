@@ -3341,6 +3341,8 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     '@type': 'RoofingContractor',
     '@id': 'https://allphaseconstructionfl.com/#organization',
     name: 'All Phase Construction USA',
+    alternateName: 'All Phase Roofing',
+    description: 'All Phase Construction USA is a dual-licensed roofing specialist (CCC1331464 & CGC1526236) serving Broward and Palm Beach counties. We provide expert roof installation, repair, replacement, and inspection for residential and commercial properties throughout South Florida.',
     url: 'https://allphaseconstructionfl.com',
     telephone: '+17542275605',
     address: {
@@ -3574,24 +3576,10 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   }
 
   // WebSite schema - defines the website entity referenced by WebPage isPartOf
-    // Check if jsonLdSchema already contains a WebSite (e.g. home page has one with SearchAction)
-    const existingWebSite = Array.isArray(jsonLdSchema)
-      ? jsonLdSchema.find(s => s['@type'] === 'WebSite')
-      : (jsonLdSchema && jsonLdSchema['@type'] === 'WebSite' ? jsonLdSchema : null);
-
-    if (existingWebSite) {
-      // Enrich existing WebSite with publisher and inLanguage if missing
-      if (!existingWebSite.publisher) {
-        existingWebSite.publisher = { '@id': 'https://allphaseconstructionfl.com/#organization' };
-      }
-      if (!existingWebSite.inLanguage) {
-        existingWebSite.inLanguage = 'en-US';
-      }
-      if (!existingWebSite['@id']) {
-        existingWebSite['@id'] = 'https://allphaseconstructionfl.com/#website';
-      }
-    } else {
-      // No existing WebSite in jsonLdSchema — inject standalone
+    // Home page gets WebSite from React (with SearchAction potentialAction), so skip prerender injection there.
+    // All other pages get the prerender-injected WebSite schema.
+    const isHomePage = canonical === 'https://allphaseconstructionfl.com/' || canonical === 'https://allphaseconstructionfl.com';
+    if (!isHomePage) {
       const webSiteSchema = {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
@@ -3605,7 +3593,7 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       schemasBlock += `\n    <!-- WebSite Schema -->\n    <script type="application/ld+json">\n${JSON.stringify(webSiteSchema, null, 2)}\n    </script>`;
     }
 
-  // SiteNavigationElement schema - helps search engines understand site structure
+    // SiteNavigationElement schema - helps search engines understand site structure
   const siteNavSchema = {
     '@context': 'https://schema.org',
     '@type': 'SiteNavigationElement',
