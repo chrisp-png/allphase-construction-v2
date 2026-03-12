@@ -3615,6 +3615,8 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   schemasBlock += '\n    <meta name="ICBM" content="26.3184, -80.0998" />';
   schemasBlock += '\n    <meta property="og:locale" content="en_US" />';
   schemasBlock += '\n    <meta name="author" content="All Phase Construction USA" />';
+    // Robots meta directives - maximize search result snippets
+    schemasBlock += '\n    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />';
 
 
   html = html.replace('</head>', schemasBlock + '\n  </head>');
@@ -4018,6 +4020,24 @@ function generateStaticFiles() {
       ]
     },
   '/roofing-services': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Roofing Services by All Phase Construction USA',
+      description: 'Complete roofing services in South Florida including tile, metal, shingle, flat, and commercial roofing, plus roof repair, replacement, and inspection.',
+      url: 'https://allphaseconstructionfl.com/roofing-services',
+      numberOfItems: 8,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' },
+        { '@type': 'ListItem', position: 2, name: 'Metal Roofing', url: 'https://allphaseconstructionfl.com/metal-roofing' },
+        { '@type': 'ListItem', position: 3, name: 'Shingle Roofing', url: 'https://allphaseconstructionfl.com/shingle-roofing' },
+        { '@type': 'ListItem', position: 4, name: 'Flat Roofing', url: 'https://allphaseconstructionfl.com/flat-roofing' },
+        { '@type': 'ListItem', position: 5, name: 'Commercial Roofing', url: 'https://allphaseconstructionfl.com/commercial-roofing' },
+        { '@type': 'ListItem', position: 6, name: 'Roof Replacement', url: 'https://allphaseconstructionfl.com/roof-replacement' },
+        { '@type': 'ListItem', position: 7, name: 'Roof Repair', url: 'https://allphaseconstructionfl.com/roof-repair' },
+        { '@type': 'ListItem', position: 8, name: 'Roof Inspection', url: 'https://allphaseconstructionfl.com/roof-inspection' }
+      ]
+    },
     faqs: [
       { question: "What roofing services does All Phase Construction USA offer?", answer: "All Phase Construction USA offers tile, metal, shingle, flat, and commercial roofing, plus roof replacement, repair, and inspection services throughout Broward and Palm Beach Counties." },
       { question: "Is All Phase Construction USA licensed for commercial roofing?", answer: "Yes. All Phase holds dual licenses \u2014 General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) \u2014 allowing us to handle both structural and roofing work under one contract." },
@@ -4272,6 +4292,22 @@ function generateStaticFiles() {
     ]
   },
   '/roof-replacement': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Roof Replacement',
+      name: 'Complete Roof Replacement Services',
+      description: 'Full roof replacement for residential and commercial properties in Broward and Palm Beach counties. Tile, metal, shingle, and flat roof systems with manufacturer warranties.',
+      url: 'https://allphaseconstructionfl.com/roof-replacement',
+      provider: {
+        '@type': 'RoofingContractor',
+        '@id': 'https://allphaseconstructionfl.com/#organization'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida'
+      }
+    },
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
       { name: 'Roof Replacement', url: 'https://allphaseconstructionfl.com/roof-replacement' }
@@ -4363,12 +4399,34 @@ function generateStaticFiles() {
     ]
   },
   '/contact': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      name: 'Contact All Phase Construction USA',
+      description: 'Get a free roof inspection and estimate. Call (754) 227-5605 or visit 590 Goolsby Blvd, Deerfield Beach, FL.',
+      url: 'https://allphaseconstructionfl.com/contact',
+      mainEntity: {
+        '@type': 'RoofingContractor',
+        '@id': 'https://allphaseconstructionfl.com/#organization'
+      }
+    },
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
       { name: 'Contact', url: 'https://allphaseconstructionfl.com/contact' }
     ]
   },
   '/about-us': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'AboutPage',
+      name: 'About All Phase Construction USA',
+      description: 'Learn about All Phase Construction USA, a dual-licensed roofing and general contractor serving Broward and Palm Beach counties since 2005.',
+      url: 'https://allphaseconstructionfl.com/about-us',
+      mainEntity: {
+        '@type': 'RoofingContractor',
+        '@id': 'https://allphaseconstructionfl.com/#organization'
+      }
+    },
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
       { name: 'About Us', url: 'https://allphaseconstructionfl.com/about-us' }
