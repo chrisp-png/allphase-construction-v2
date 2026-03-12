@@ -3340,8 +3340,56 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       addressCountry: 'US'
     },
     geo: { '@type': 'GeoCoordinates', latitude: 26.3184, longitude: -80.0998 },
-    areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+    areaServed: [
+      { '@type': 'State', name: 'Florida' },
+      { '@type': 'County', name: 'Broward County', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'County', name: 'Palm Beach County', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Deerfield Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Boca Raton', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Fort Lauderdale', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Pompano Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Coral Springs', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Parkland', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Coconut Creek', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Delray Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Boynton Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'West Palm Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Lake Worth Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Palm Beach Gardens', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Jupiter', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Wellington', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Hollywood', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Plantation', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Sunrise', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Davie', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Pembroke Pines', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Miramar', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Weston', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Margate', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Tamarac', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Lighthouse Point', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Oakland Park', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Lantana', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Royal Palm Beach', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Greenacres', containedInPlace: { '@type': 'State', name: 'Florida' } }
+    ],
     priceRange: '$$',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Roofing Services',
+      itemListElement: [
+        { '@type': 'OfferCatalog', name: 'Roof Replacement', itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Shingle Roof Replacement', description: 'Full tear-off and replacement with architectural shingles, HVHZ compliant', url: 'https://allphaseconstructionfl.com/shingle-roofing' }, priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'USD', minPrice: 10000, maxPrice: 18000 } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tile Roof Replacement', description: 'Concrete and clay tile installation with foam adhesion for HVHZ compliance', url: 'https://allphaseconstructionfl.com/tile-roofing' }, priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'USD', minPrice: 20000, maxPrice: 40000 } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Metal Roof Replacement', description: 'Standing seam metal roofing with mechanically seamed panels rated 175+ mph', url: 'https://allphaseconstructionfl.com/metal-roofing' }, priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'USD', minPrice: 24000, maxPrice: 50000 } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flat Roof Replacement', description: 'TPO, PVC, and modified bitumen systems for flat and low-slope roofs', url: 'https://allphaseconstructionfl.com/flat-roofing' } }
+        ]},
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Roof Repair', description: '24/7 emergency roof leak repair and storm damage repair in Broward and Palm Beach County', url: 'https://allphaseconstructionfl.com/roof-repair' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Roof Inspection', description: 'Free 21-point roof inspection with photo documentation and thermal imaging', url: 'https://allphaseconstructionfl.com/roof-inspection' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Roofing', description: 'Full-service commercial roofing for flat and low-slope buildings', url: 'https://allphaseconstructionfl.com/commercial-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wind Mitigation Inspection', description: 'Insurance discount qualification inspections documenting hurricane-resistant roof features' } }
+      ]
+    },
     // aggregateRating removed — managed solely by NuclearMetadata.tsx at runtime
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
@@ -3688,7 +3736,9 @@ function generateStaticFiles() {
         { question: "Is mechanically seamed better than snap-lock for hurricanes?", answer: "Yes. Mechanically seamed panels are physically crimped together, creating a stronger interlock than snap-lock systems that rely on tension alone. For HVHZ applications in Broward and Palm Beach Counties, mechanically seamed standing seam provides superior uplift resistance and is the preferred system for high-wind exposure." },
         { question: "What does clip spacing mean and why does it matter?", answer: "Clip spacing refers to how frequently the hidden clips that attach standing seam panels to the roof deck are installed. Tighter clip spacing increases wind uplift resistance. Florida's High Velocity Hurricane Zone requires specific clip spacing based on wind load calculations \u2014 improper spacing is one of the most common installation deficiencies we find during inspections." },
         { question: "What gauge or thickness metal should I choose?", answer: "For residential standing seam in South Florida, 24-gauge steel is the standard for quality installations. 26-gauge is acceptable for some applications but offers less dent resistance. Thicker gauge (lower number) provides better performance in hail, impact, and high-wind conditions. Aluminum panels are also common in coastal areas for corrosion resistance." },
-        { question: "How long does a metal roof last?", answer: "Properly installed metal roofing systems last 40-70 years in Florida conditions. The limiting factor is usually the substrate and fastening system, not the metal panels themselves. Galvalume and Kynar-coated steel panels are particularly durable in South Florida's UV and salt air environment." }
+        { question: "How long does a metal roof last?", answer: "Properly installed metal roofing systems last 40-70 years in Florida conditions. The limiting factor is usually the substrate and fastening system, not the metal panels themselves. Galvalume and Kynar-coated steel panels are particularly durable in South Florida's UV and salt air environment." },
+        { question: "What is the best metal roof for hurricanes in Broward County?", answer: "Mechanically seamed standing seam metal roofing is the best choice for hurricane zones in Broward County. It meets HVHZ wind load requirements of 175+ mph, has no exposed fasteners that can fail in uplift, and the interlocking seam design provides the highest wind resistance of any residential roofing system. All Phase Construction USA installs standing seam metal roofs throughout Broward and Palm Beach County with full HVHZ compliance. Call (754) 227-5605 for a free metal roofing estimate." },
+        { question: "How much does a metal roof cost in Boca Raton or Fort Lauderdale?", answer: "Standing seam metal roofing in Boca Raton, Fort Lauderdale, and surrounding areas typically costs $12-$22 per square foot installed, or $24,000-$50,000+ for a typical home. The price varies based on panel type (snap-lock vs. mechanically seamed), gauge, coating (Galvalume vs. Kynar), roof complexity, and HVHZ engineering requirements. All Phase provides free estimates with no hidden fees — permits, engineering, and disposal are included." }
       ],
       breadcrumbs: [
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
@@ -3701,7 +3751,9 @@ function generateStaticFiles() {
         { question: "What causes flat roof leaks?", answer: "The most common causes are seam failures from improper heat welding, flashing failures around penetrations such as HVAC units, vents, and pipes, and ponding water that breaks down the membrane over time. In Florida, UV exposure and thermal cycling also accelerate wear if the system is not designed for our climate." },
         { question: "What's the real difference between TPO and PVC?", answer: "When TPO is heat-welded, the seam bonds through adhesion and can be separated with enough force. TPO also requires chalk fillers for fire ratings, which bleed to the surface over time making repairs harder. When PVC is heat-welded, the material molecularly fuses into one continuous piece \u2014 the seam becomes the strongest part of the roof. PVC is naturally Class A fire rated with no fillers, so repairs decades later weld just as cleanly as day one." },
         { question: "How do you prevent ponding water on flat roofs?", answer: "We design drainage into every system \u2014 tapered insulation to create slope toward drains, properly sized primary drains, and secondary overflow scuppers as code requires. Florida Building Code defines positive drainage as water clearing within 48 hours. We engineer for complete drainage, not good enough." },
-        { question: "Why does seam welding matter so much on flat roofs?", answer: "Because the seams are the weak point. A properly heat-welded seam is actually stronger than the membrane itself. But if the welder runs too hot, it destroys the stabilizers in the material. Too cold, and the bond fails over time. Our crews calibrate daily, test welds, and document everything \u2014 because this is where most flat roofs fail." }
+        { question: "Why does seam welding matter so much on flat roofs?", answer: "Because the seams are the weak point. A properly heat-welded seam is actually stronger than the membrane itself. But if the welder runs too hot, it destroys the stabilizers in the material. Too cold, and the bond fails over time. Our crews calibrate daily, test welds, and document everything \u2014 because this is where most flat roofs fail." },
+        { question: "Who installs TPO and PVC flat roofs in Broward and Palm Beach County?", answer: "All Phase Construction USA installs TPO, PVC, and modified bitumen flat roofing systems for both commercial and residential properties throughout Broward and Palm Beach County. As a dual-licensed contractor (CCC-1331464 + CGC-1526236), we handle everything from membrane installation to structural modifications under one permit. We serve Deerfield Beach, Fort Lauderdale, Boca Raton, Pompano Beach, Delray Beach, West Palm Beach, and all surrounding cities. Call (754) 227-5605 for a free flat roofing estimate." },
+        { question: "How much does flat roof replacement cost in South Florida?", answer: "Flat roof replacement cost in South Florida depends on the membrane system, building size, insulation requirements, and number of roof penetrations (HVAC units, drains, pipes). TPO systems are typically the most economical for commercial applications. PVC costs slightly more but offers superior chemical resistance and molecularly fused seams. All Phase provides free, itemized estimates with no hidden fees — call (754) 227-5605." }
       ],
       breadcrumbs: [
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
@@ -3772,7 +3824,9 @@ function generateStaticFiles() {
       { question: 'How long does tile roofing last in South Florida?', answer: 'Concrete and clay tile roofs typically last 40-50 years in South Florida when properly maintained. Their mass and profile provide excellent wind resistance in HVHZ conditions.' },
       { question: 'Can broken roof tiles be replaced individually?', answer: 'Yes. Individual tiles can be replaced without disturbing the full roof, making repairs cost-effective. We stock a wide range of profiles and colors to match existing installations.' },
       { question: 'Are tile roofs approved in HVHZ areas like Broward County?', answer: 'Yes. Concrete and clay tile systems with compliant underlayments and fastening patterns meet Broward and Palm Beach County 146 mph wind load requirements.' },
-      { question: 'How much does tile roofing cost in South Florida?', answer: 'Tile roofing typically runs $10-$18 per square foot installed, depending on profile and material. Concrete tile is generally less expensive than clay while offering comparable durability.' }
+      { question: 'How much does tile roofing cost in South Florida?', answer: 'Tile roofing typically runs $10-$18 per square foot installed, depending on profile and material. Concrete tile is generally less expensive than clay while offering comparable durability.' },
+      { question: 'Who is the best tile roofing contractor in Broward County?', answer: 'All Phase Construction USA is a dual-licensed (CCC-1331464 + CGC-1526236) tile roofing contractor headquartered in Deerfield Beach with over 2,500 completed projects across Broward County. We install S-tile, flat tile, barrel tile, and clay profiles with both foam-adhered and mechanically fastened systems for full HVHZ compliance. Our 4.8-star Google rating reflects consistent quality across Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, and every city in Broward County. Call (754) 227-5605 for a free tile roofing estimate.' },
+      { question: 'Can I get a free estimate for tile roof replacement in Palm Beach County?', answer: 'Yes. All Phase Construction USA provides free tile roofing estimates throughout Palm Beach County including Boca Raton, Delray Beach, Boynton Beach, West Palm Beach, Palm Beach Gardens, Jupiter, Wellington, and Lake Worth Beach. Our free estimate includes a 21-point roof inspection with photo documentation, accurate measurements, and an itemized quote with no hidden fees. Call (754) 227-5605 or visit allphaseconstructionfl.com to schedule.' }
     ],
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
@@ -3785,7 +3839,9 @@ function generateStaticFiles() {
       { question: 'What commercial roofing systems do you install?', answer: 'We install TPO, PVC, modified bitumen, metal panel, and built-up roofing systems for flat and low-slope commercial buildings throughout Broward and Palm Beach County.' },
       { question: 'Do you handle commercial roofing in HVHZ zones?', answer: 'Yes. All our commercial installations meet Florida Building Code HVHZ requirements. We carry Florida General Contractor license CGC-1526236 in addition to our roofing license.' },
       { question: 'Can commercial roofing be done without disrupting business operations?', answer: 'In most cases yes. We schedule commercial work around your operating hours and can phase large projects to minimize disruption to tenants and customers.' },
-      { question: 'How long does a commercial roof installation take?', answer: 'A typical commercial roof replacement takes 3-7 days depending on square footage and system type. We provide a detailed project schedule before work begins.' }
+      { question: 'How long does a commercial roof installation take?', answer: 'A typical commercial roof replacement takes 3-7 days depending on square footage and system type. We provide a detailed project schedule before work begins.' },
+      { question: 'What is the best commercial roofing system for South Florida?', answer: 'For most commercial buildings in Broward and Palm Beach County, PVC membrane roofing offers the best combination of wind resistance, chemical durability, and longevity. PVC seams molecularly fuse when heat-welded, creating the strongest bond in the flat roofing industry. For buildings with heavy rooftop equipment or chemical exposure (restaurants, manufacturing), PVC is the clear choice. TPO is a strong option for budget-conscious projects. All Phase installs both systems with full HVHZ compliance.' },
+      { question: 'Do you provide commercial roofing in Fort Lauderdale and Boca Raton?', answer: 'Yes. All Phase Construction USA provides commercial roofing services throughout Broward and Palm Beach County including Fort Lauderdale, Boca Raton, Pompano Beach, Deerfield Beach, Coral Springs, West Palm Beach, Delray Beach, and all surrounding cities. As a dual-licensed contractor (General Contractor CGC-1526236 + Roofing Contractor CCC-1331464), we can handle both structural and roofing work under one permit — which means faster project completion and single-source accountability. Call (754) 227-5605 for a free commercial roofing assessment.' }
     ],
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
