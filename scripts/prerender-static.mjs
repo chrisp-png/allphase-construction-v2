@@ -3514,6 +3514,40 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
           description: 'Professional roof inspections, wind mitigation reports for insurance discounts, and 40-year recertification inspections for Broward County buildings.'
         }
       }
+    ],
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'license',
+        name: 'Florida State Certified Roofing Contractor',
+        description: 'State of Florida Certified Roofing Contractor license authorizing roofing installation, repair, and replacement throughout Florida.',
+        recognizedBy: {
+          '@type': 'GovernmentOrganization',
+          name: 'Florida Department of Business and Professional Regulation',
+          url: 'https://www.myfloridalicense.com'
+        },
+        validIn: {
+          '@type': 'AdministrativeArea',
+          name: 'Florida, United States'
+        },
+        identifier: 'CCC-1331464'
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'license',
+        name: 'Florida Certified General Contractor',
+        description: 'State of Florida Certified General Contractor license authorizing general construction, structural modifications, and building projects throughout Florida.',
+        recognizedBy: {
+          '@type': 'GovernmentOrganization',
+          name: 'Florida Department of Business and Professional Regulation',
+          url: 'https://www.myfloridalicense.com'
+        },
+        validIn: {
+          '@type': 'AdministrativeArea',
+          name: 'Florida, United States'
+        },
+        identifier: 'CGC-1526236'
+      }
     ]
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
@@ -3823,6 +3857,32 @@ function generateStaticFiles() {
   // ============================================================
   const SERVICE_PAGE_SCHEMAS = {
     '/shingle-roofing': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Shingle Roofing',
+      name: 'Shingle Roofing Installation and Replacement',
+      description: 'Architectural and impact-rated asphalt shingle roof installation designed for South Florida HVHZ compliance with enhanced wind resistance.',
+      url: 'https://allphaseconstructionfl.com/shingle-roofing',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
       faqs: [
         { question: "Are shingle roofs a good choice for South Florida hurricanes?", answer: "Yes \u2014 when installed properly. Premium architectural shingles like Tamko Titan XT carry 160 mph wind warranties. The key factors are proper nailing patterns, deck re-nailing, and quality underlayment. Many shingle failures in storms result from installation shortcuts, not material deficiencies." },
         { question: "How long do shingle roofs last in Florida?", answer: "With proper ventilation and premium materials, 20-30 years is realistic. Without proper ventilation, thermal shock can reduce that to 12-15 years. The underlayment and deck are often the limiting factors, not the shingles themselves." },
@@ -3836,6 +3896,32 @@ function generateStaticFiles() {
       ]
     },
     '/metal-roofing': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Metal Roofing',
+      name: 'Metal Roofing Installation',
+      description: 'Standing seam and stone-coated metal roof installation with 50+ year lifespans engineered for South Florida hurricane zone wind resistance up to 175+ mph.',
+      url: 'https://allphaseconstructionfl.com/metal-roofing',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
       faqs: [
         { question: "What's the difference between standing seam and exposed fastener metal roofing?", answer: "Standing seam has concealed fasteners with panels that interlock at raised seams, providing superior wind resistance and no exposed penetrations. Exposed fastener systems use visible screws through the panel face \u2014 lower cost but require washer maintenance and are more vulnerable to wind uplift in HVHZ jurisdictions." },
         { question: "Is mechanically seamed better than snap-lock for hurricanes?", answer: "Yes. Mechanically seamed panels are physically crimped together, creating a stronger interlock than snap-lock systems that rely on tension alone. For HVHZ applications in Broward and Palm Beach Counties, mechanically seamed standing seam provides superior uplift resistance and is the preferred system for high-wind exposure." },
@@ -3851,6 +3937,32 @@ function generateStaticFiles() {
       ]
     },
     '/flat-roofing': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Flat Roofing',
+      name: 'Flat Roofing Systems',
+      description: 'Flat roof installation and repair including TPO, PVC, modified bitumen, and built-up roofing for commercial and residential properties in South Florida.',
+      url: 'https://allphaseconstructionfl.com/flat-roofing',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
       faqs: [
         { question: "How long does a flat roof last in Florida?", answer: "With proper installation and materials, TPO and PVC systems last 20-30 years, and modified bitumen 15-20 years. Poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation." },
         { question: "What causes flat roof leaks?", answer: "The most common causes are seam failures from improper heat welding, flashing failures around penetrations such as HVAC units, vents, and pipes, and ponding water that breaks down the membrane over time. In Florida, UV exposure and thermal cycling also accelerate wear if the system is not designed for our climate." },
@@ -3866,6 +3978,32 @@ function generateStaticFiles() {
       ]
     },
     '/roof-inspection': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Roof Inspection',
+      name: 'Professional Roof Inspection',
+      description: 'Comprehensive roof inspections including wind mitigation reports for insurance discounts and 40-year recertification inspections for Broward County buildings.',
+      url: 'https://allphaseconstructionfl.com/roof-inspection',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
       faqs: [
         { question: "What is the difference between a roof inspection and a free roof estimate?", answer: "A roof inspection is a diagnostic evaluation intended to identify conditions, failure mechanisms, and system performance. A free estimate is typically a pricing exercise based on visible symptoms and does not involve comprehensive diagnostic analysis." },
         { question: "Do I need a roof inspection before repairing a leak?", answer: "Yes. Roof leaks often originate far from the point where damage becomes visible. A professional inspection identifies the actual cause of water intrusion so repairs address the defect rather than the symptom." },
@@ -3893,6 +4031,32 @@ function generateStaticFiles() {
   }
   ,
   '/roof-repair': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Roof Repair',
+      name: 'Roof Repair and Emergency Service',
+      description: 'Emergency and scheduled roof repair for storm damage, leaks, and deterioration across Broward and Palm Beach counties with rapid response times.',
+      url: 'https://allphaseconstructionfl.com/roof-repair',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
     faqs: [
       { question: 'How quickly can you respond to emergency roof repairs?', answer: 'We offer same-day emergency response throughout Broward and Palm Beach County. Call (754) 227-5605 and we can dispatch a crew within 2-4 hours for an active leak.' },
       { question: 'Does homeowner insurance cover roof repair in Florida?', answer: 'Most Florida homeowner policies cover storm and wind damage. We work directly with insurance adjusters and can document damage for your claim at no extra charge.' },
@@ -3935,6 +4099,32 @@ function generateStaticFiles() {
     ]
   },
   '/tile-roofing': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Tile Roofing',
+      name: 'Tile Roofing Installation and Repair',
+      description: 'Concrete and clay tile roof installation and repair engineered for South Florida hurricane zone requirements with enhanced fastening and 175+ mph wind resistance.',
+      url: 'https://allphaseconstructionfl.com/tile-roofing',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
     faqs: [
       { question: 'How long does tile roofing last in South Florida?', answer: 'Concrete and clay tile roofs typically last 40-50 years in South Florida when properly maintained. Their mass and profile provide excellent wind resistance in HVHZ conditions.' },
       { question: 'Can broken roof tiles be replaced individually?', answer: 'Yes. Individual tiles can be replaced without disturbing the full roof, making repairs cost-effective. We stock a wide range of profiles and colors to match existing installations.' },
@@ -3950,6 +4140,32 @@ function generateStaticFiles() {
     ]
   },
   '/commercial-roofing': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Commercial Roofing',
+      name: 'Commercial Roofing Installation and Repair',
+      description: 'Commercial roofing solutions including TPO, PVC, modified bitumen, and built-up roofing systems for businesses, warehouses, and multi-unit properties across South Florida.',
+      url: 'https://allphaseconstructionfl.com/commercial-roofing',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
     faqs: [
       { question: 'What commercial roofing systems do you install?', answer: 'We install TPO, PVC, modified bitumen, metal panel, and built-up roofing systems for flat and low-slope commercial buildings throughout Broward and Palm Beach County.' },
       { question: 'Do you handle commercial roofing in HVHZ zones?', answer: 'Yes. All our commercial installations meet Florida Building Code HVHZ requirements. We carry Florida General Contractor license CGC-1526236 in addition to our roofing license.' },
@@ -3965,6 +4181,32 @@ function generateStaticFiles() {
     ]
   },
   '/residential-roofing': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'Residential Roofing',
+      name: 'Residential Roof Replacement',
+      description: 'Complete residential roof replacement services including tile, metal, shingle, and flat roof systems engineered for South Florida HVHZ compliance with manufacturer-backed warranties.',
+      url: 'https://allphaseconstructionfl.com/residential-roofing',
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
+        containsPlace: [
+          { '@type': 'AdministrativeArea', name: 'Broward County' },
+          { '@type': 'AdministrativeArea', name: 'Palm Beach County' }
+        ]
+      },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: 'https://allphaseconstructionfl.com/contact',
+        servicePhone: '+17542275605'
+      }
+    },
     faqs: [
       { question: 'What roofing materials are best for South Florida homes?', answer: 'Metal, tile, and PVC flat systems perform best in HVHZ conditions. Architectural shingles are also popular for their cost and appearance when properly wind-rated for 130+ mph.' },
       { question: 'How long does a residential roof replacement take?', answer: 'Most residential replacements are completed in 1-3 days. We protect your property with tarps and complete full debris removal before the final walkthrough.' },
