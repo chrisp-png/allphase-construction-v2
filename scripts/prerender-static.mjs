@@ -3322,6 +3322,18 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     `<meta property="og:url" content="${canonical}" />`
   );
 
+    // Replace Twitter Card meta tags per-page
+    html = html.replace(
+      /<meta name="twitter:title" content=".*?">/,
+      `<meta name="twitter:title" content="${title}">`
+    );
+
+    html = html.replace(
+      /<meta name="twitter:description" content=".*?">/,
+      `<meta name="twitter:description" content="${description}">`
+    );
+
+
   // Add JSON-LD schema if provided (before </head>)
   // Always inject base RoofingContractor schema on every prerendered page
   const baseOrgSchema = {
