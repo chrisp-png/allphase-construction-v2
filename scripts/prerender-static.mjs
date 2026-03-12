@@ -3454,6 +3454,66 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
         datePublished: '2025-01-10',
         reviewBody: 'I have used All Phase for two properties now, one residential and one commercial flat roof. Both projects were completed on time and on budget. Their dual licensing as both a roofing contractor and general contractor meant they handled everything under one permit.'
       }
+    ],
+    additionalType: [
+      'https://www.wikidata.org/wiki/Q11415896',
+      'https://www.wikidata.org/wiki/Q631799'
+    ],
+    paymentAccepted: 'Cash, Credit Card, Check, Financing Available',
+    currenciesAccepted: 'USD',
+    numberOfEmployees: {
+      '@type': 'QuantitativeValue',
+      minValue: 10,
+      maxValue: 50
+    },
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'Better Business Bureau',
+        url: 'https://www.bbb.org'
+      },
+      {
+        '@type': 'Organization',
+        name: 'Broward County Chamber of Commerce'
+      },
+      {
+        '@type': 'Organization',
+        name: 'Chamber of the Palm Beaches'
+      }
+    ],
+    makesOffer: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Residential Roof Replacement',
+          description: 'Complete roof replacement for homes in South Florida including tile, metal, shingle, and flat roof systems engineered for HVHZ compliance.'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Commercial Roofing',
+          description: 'Commercial roofing installation and replacement including TPO, PVC, modified bitumen, and built-up roofing systems for businesses.'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Roof Repair and Emergency Service',
+          description: 'Emergency and scheduled roof repair services for storm damage, leaks, and general deterioration across Broward and Palm Beach counties.'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Roof Inspection and Wind Mitigation',
+          description: 'Professional roof inspections, wind mitigation reports for insurance discounts, and 40-year recertification inspections for Broward County buildings.'
+        }
+      }
     ]
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
