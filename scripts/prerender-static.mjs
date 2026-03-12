@@ -4220,6 +4220,27 @@ function generateStaticFiles() {
     ]
   },
   '/roof-cost-calculator': {
+    directSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Roof Cost Calculator',
+      description: 'Free online roof replacement cost estimator for South Florida homes. Get instant pricing estimates for tile, metal, shingle, and flat roofing systems based on your roof size and material preferences.',
+      url: 'https://allphaseconstructionfl.com/roof-cost-calculator',
+      applicationCategory: 'UtilityApplication',
+      operatingSystem: 'Any',
+      browserRequirements: 'Requires JavaScript',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD'
+      },
+      provider: {
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        url: 'https://allphaseconstructionfl.com'
+      },
+      featureList: 'Instant roof cost estimates, Multiple roofing material comparisons, South Florida HVHZ pricing included, Square footage calculator, Material-specific pricing tiers'
+    },
     faqs: [
       { question: 'How much does a new roof cost in South Florida?', answer: 'Roof replacement costs in Broward and Palm Beach Counties range from $10,000 to $70,000+ depending on material choice (shingles, tile, metal, flat roofing), roof size, complexity, and HVHZ code requirements. A typical 2,000 sq ft home with architectural shingles costs $10,000-$18,000, while premium materials like standing seam metal can range from $20,000-$70,000.' },
       { question: 'What is the cheapest roofing material in Florida?', answer: 'Architectural asphalt shingles are the most economical option at $5-$9 per square foot installed ($10,000-$18,000 for a typical 2,000 sq ft home). However, they have the shortest lifespan in Florida climate (15-25 years) compared to tile (50+ years) or metal (40-60 years). When calculating lifetime cost, premium materials often provide better value despite higher upfront investment.' },
