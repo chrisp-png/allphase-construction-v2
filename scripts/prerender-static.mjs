@@ -4654,6 +4654,25 @@ ${companyAuthorityFooter()}
       hubContent = generateServiceHubContent(city, slug);
     }
 
+    // Apply city-specific schemas from CITY_PAGE_SCHEMAS
+    const citySchemaConfig = CITY_PAGE_SCHEMAS['/locations/' + slug];
+    if (citySchemaConfig && !hubSchema) {
+      if (citySchemaConfig.faqs) {
+        hubSchema = [citySchemaConfig.directSchema, {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: citySchemaConfig.faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+          }))
+        }];
+      } else {
+        hubSchema = citySchemaConfig.directSchema;
+      }
+    }
+
+
     const hubHTML = createHTMLTemplate(
       seo.title,
       seo.description,
