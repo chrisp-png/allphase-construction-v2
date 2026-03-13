@@ -1824,7 +1824,7 @@ ${blogCrawlerLinks}
 
       return `
       <article style="background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 1.5rem;">
-        <a href="/blog/${post.slug}/" style="text-decoration: none; color: inherit; display: block;">
+        <a href="/blog/${post.slug}" style="text-decoration: none; color: inherit; display: block;">
           ${post.featured_image ? `<img src="${post.featured_image}" alt="${post.title}" style="width: 100%; height: 14rem; object-fit: cover;" loading="lazy" />` : ''}
           <div style="padding: 1.5rem;">
             ${category ? `<span style="display: inline-block; background: #dc2626; color: white; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.75rem;">${category}</span>` : ''}
@@ -1853,8 +1853,8 @@ ${blogCrawlerLinks}
   <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0; text-align: center;">
     <h2 style="color: white; font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Need Expert Roofing Advice?</h2>
     <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Get a free consultation and estimate for your roofing project.</p>
-    <a href="/contact/" style="display: inline-block; background: white; color: #dc2626; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; margin-right: 1rem;">Contact Us Today</a>
-    <a href="/roof-cost-calculator/" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Get a Roofing Estimate</a>
+    <a href="/contact" style="display: inline-block; background: white; color: #dc2626; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; margin-right: 1rem;">Contact Us Today</a>
+    <a href="/roof-cost-calculator" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Get a Roofing Estimate</a>
   </div>
 
   ${companyAuthorityFooter()}
