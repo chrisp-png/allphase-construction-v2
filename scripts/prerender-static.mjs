@@ -14,6 +14,43 @@ console.log('  publicDir:', publicDir);
 console.log('  distDir:', distDir);
 console.log('  distDir exists?', fs.existsSync(distDir));
 
+// ── Supabase REST API config for build-time blog fetching ──
+const SUPABASE_URL = 'https://vsjebxljdhomgmqbqgdi.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzamVieGxqZGhvbWdtcWJxZ2RpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5ODkxMzcsImV4cCI6MjA4MjU2NTEzN30._gjIILl6LtMKnoERihdaRrQ-OQQ1rKoB_FXnoxRCW2Y';
+
+// Global variable for crawler links HTML (populated before page generation)
+let CRAWLER_LINKS_HTML = '';
+
+/**
+ * Fetch all published blog posts from Supabase at build time.
+ * Uses the REST API directly (no SDK needed).
+ */
+async function fetchBlogPostsFromSupabase() {
+  const url = `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=published_date.desc&select=title,slug,excerpt,content,featured_image,author,published_date,categories,tags,meta_title,meta_description,faqs`;
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Content-Type': 'application/json'
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`Supabase API error: ${response.status} ${response.statusText}`);
+    }
+
+    const posts = await response.json();
+    console.log(`📚 Fetched ${posts.length} published blog posts from Supabase`);
+    return posts;
+  } catch (err) {
+    console.error('⚠️ Failed to fetch blog posts from Supabase:', err.message);
+    console.error('   Blog posts will use fallback content.');
+    return [];
+  }
+}
+
 // Load cities data (for roof-repair and roof-inspection pages only)
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
@@ -1416,30 +1453,10 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       throw new Error('✅ Could not find root div or closing body tag in template.');
     }
 
-    // Inject static crawler links before </body>
-  const staticCrawlerLinks = `
-<!-- Static internal links for crawlers -->
-<div style="display:none" aria-hidden="true">
-  <a href="/roofing-services">Roofing Services</a>
-  <a href="/residential-roofing">Residential Roofing</a>
-  <a href="/commercial-roofing">Commercial Roofing</a>
-  <a href="/shingle-roofing">Shingle Roofing</a>
-  <a href="/metal-roofing">Metal Roofing</a>
-  <a href="/flat-roofing">Flat Roofing</a>
-  <a href="/tile-roofing">Tile Roofing</a>
-  <a href="/roof-repair">Roof Repair</a>
-  <a href="/roof-inspection">Roof Inspection</a>
-  <a href="/roof-replacement-process">Roof Replacement Process</a>
-  <a href="/roof-maintenance-programs">Roof Maintenance Programs</a>
-  <a href="/reviews">Reviews</a>
-  <a href="/projects">Our Projects</a>
-  <a href="/frequently-asked-questions">FAQ</a>
-  <a href="/about-us">About Us</a>
-  <a href="/contact">Contact</a>
-  <a href="/blog">Blog</a>
-</div>
-`;
-  html = html.replace('</body>', staticCrawlerLinks + '</body>');
+    // Inject comprehensive crawler links (uses global CRAWLER_LINKS_HTML set before page generation)
+  if (CRAWLER_LINKS_HTML) {
+    html = html.replace('</body>', CRAWLER_LINKS_HTML + '</body>');
+  }
 
   return html;
 }
@@ -1512,7 +1529,7 @@ function writeToPublicAndDist(relativePath, content) {
 /**
  * Generate all static HTML files
  */
-function generateStaticFiles() {
+async function generateStaticFiles() {
   console.log('📋  Generating 3-Silo Lead Generation Architecture...\n');
 
   // Create public directory if it doesn't exist
@@ -1737,6 +1754,113 @@ const CITY_PAGE_SCHEMAS = {
 
   
   
+  // ── Pre-fetch blog posts from Supabase (needed for /blog listing page and blog post pages) ──
+  const supabasePostsEarly = await fetchBlogPostsFromSupabase();
+
+  // ── Build comprehensive crawler links HTML (injected on every page for full internal linking) ──
+  const locationLinks = LOCATIONS.map(loc => `  <a href="/locations/${loc.slug}">${loc.city}, FL Roofing</a>`).join('\n');
+  const cityLinks = cities.filter(c => !c.slug.includes('county')).map(c => {
+    const cityName = c.slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return `  <a href="/roof-repair/${c.slug}">${cityName} Roof Repair</a>\n  <a href="/roof-inspection/${c.slug}">${cityName} Roof Inspection</a>`;
+  }).join('\n');
+  const blogCrawlerLinks = (supabasePostsEarly || []).map(p => `  <a href="/blog/${p.slug}">${p.title}</a>`).join('\n');
+
+  CRAWLER_LINKS_HTML = `
+<!-- Comprehensive internal links for crawlers — ensures all pages are discoverable -->
+<nav style="display:none" aria-hidden="true" id="crawler-sitemap">
+  <!-- Service Pages -->
+  <a href="/">Home</a>
+  <a href="/roofing-services">Roofing Services</a>
+  <a href="/residential-roofing">Residential Roofing</a>
+  <a href="/commercial-roofing">Commercial Roofing</a>
+  <a href="/shingle-roofing">Shingle Roofing</a>
+  <a href="/metal-roofing">Metal Roofing</a>
+  <a href="/flat-roofing">Flat Roofing</a>
+  <a href="/tile-roofing">Tile Roofing</a>
+  <a href="/roof-repair">Roof Repair</a>
+  <a href="/roof-inspection">Roof Inspection</a>
+  <a href="/roof-replacement">Roof Replacement</a>
+  <a href="/roof-replacement-process">Roof Replacement Process</a>
+  <a href="/roof-maintenance-programs">Roof Maintenance Programs</a>
+  <a href="/roof-cost-calculator">Roof Cost Calculator</a>
+  <a href="/reviews">Reviews</a>
+  <a href="/projects">Our Projects</a>
+  <a href="/frequently-asked-questions">FAQ</a>
+  <a href="/about-us">About Us</a>
+  <a href="/contact">Contact</a>
+  <a href="/blog">Blog</a>
+  <a href="/learning-center">Learning Center</a>
+  <a href="/easy-payments">Easy Payments</a>
+  <a href="/how-to-hire-roofing-contractor">How to Hire a Roofing Contractor</a>
+  <a href="/single-ply-roofing">Single Ply Roofing</a>
+  <a href="/licensed-roofing-contractor">Licensed Roofing Contractor</a>
+  <!-- Location Pages -->
+${locationLinks}
+  <!-- City Service Pages (Roof Repair & Inspection) -->
+${cityLinks}
+  <!-- Blog Posts -->
+${blogCrawlerLinks}
+</nav>
+`;
+  console.log(`🔗 Crawler links block built: ${CRAWLER_LINKS_HTML.split('<a href=').length - 1} internal links on every page`);
+
+  // Function to generate blog listing page with real links to all posts
+  function generateBlogListingContent(posts) {
+    if (!posts || posts.length === 0) {
+      return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+  <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Roofing Insights & Industry News</h1>
+  <p style="text-align: center; color: #6b7280; font-size: 1.15rem; margin-bottom: 2rem;">Expert advice, maintenance tips, and the latest trends in residential and commercial roofing</p>
+  <p style="text-align: center; color: #6b7280;">Check back soon for new content!</p>
+  ${companyAuthorityFooter()}
+</section>`.trim();
+    }
+
+    const postCards = posts.map(post => {
+      const pubDate = new Date(post.published_date);
+      const formattedDate = pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      const excerpt = post.excerpt ? (post.excerpt.length > 150 ? post.excerpt.substring(0, 150).trim() + '...' : post.excerpt) : '';
+      const category = (post.categories && post.categories.length > 0) ? post.categories[0] : '';
+
+      return `
+      <article style="background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 1.5rem;">
+        <a href="/blog/${post.slug}/" style="text-decoration: none; color: inherit; display: block;">
+          ${post.featured_image ? `<img src="${post.featured_image}" alt="${post.title}" style="width: 100%; height: 14rem; object-fit: cover;" loading="lazy" />` : ''}
+          <div style="padding: 1.5rem;">
+            ${category ? `<span style="display: inline-block; background: #dc2626; color: white; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.75rem;">${category}</span>` : ''}
+            <h2 style="color: #111827; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3;">${post.title}</h2>
+            <div style="color: #6b7280; font-size: 0.875rem; margin-bottom: 0.75rem;">
+              <time datetime="${post.published_date}">${formattedDate}</time> • ${post.author || 'All Phase Construction USA'}
+            </div>
+            ${excerpt ? `<p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">${excerpt}</p>` : ''}
+            <span style="color: #dc2626; font-weight: 600; font-size: 0.95rem;">Read More →</span>
+          </div>
+        </a>
+      </article>`;
+    }).join('\n');
+
+    return `
+<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Roofing Insights & Industry News</h1>
+    <p style="color: #6b7280; font-size: 1.15rem; max-width: 700px; margin: 0 auto;">Expert advice, maintenance tips, and the latest trends in residential and commercial roofing from South Florida's dual-licensed roofing contractor.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
+    ${postCards}
+  </div>
+
+  <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0; text-align: center;">
+    <h2 style="color: white; font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Need Expert Roofing Advice?</h2>
+    <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Get a free consultation and estimate for your roofing project.</p>
+    <a href="/contact/" style="display: inline-block; background: white; color: #dc2626; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; margin-right: 1rem;">Contact Us Today</a>
+    <a href="/roof-cost-calculator/" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Get a Roofing Estimate</a>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>`.trim();
+  }
+
   // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
   const servicePages = [
     { path: '/residential-roofing', title: 'Residential Roofing Services' },
@@ -1818,7 +1942,7 @@ const CITY_PAGE_SCHEMAS = {
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/roofing-services' ? generateRoofingServicesContent() : defaultServicePageContent(title),
+      pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/blog' ? generateBlogListingContent(supabasePostsEarly) : defaultServicePageContent(title),
       jsonLdSchema
     );
 
@@ -1977,91 +2101,187 @@ ${companyAuthorityFooter()}
     totalPages++;
   });
 
-  // 2.5. Generate Blog Post Pages from Sitemap
-  console.log('\n🔍 Generating Blog Post Pages from Sitemap...\n');
+  // 2.5. Generate Blog Post Pages from Supabase (REAL CONTENT)
+  console.log('\n📚 Generating Blog Post Pages from Supabase data...\n');
 
-  try {
-    const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
-    if (fs.existsSync(sitemapPath)) {
-      const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+  const supabasePosts = supabasePostsEarly; // Already fetched above
+  let blogPostsGenerated = 0;
 
-      // Extract all blog URLs from sitemap
-      const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
+  if (supabasePosts.length > 0) {
+    for (const post of supabasePosts) {
+      try {
+        const blogCanonical = `https://allphaseconstructionfl.com/blog/${post.slug}`;
+        const blogMetaTitle = post.meta_title || post.title;
+        const blogMetaDesc = post.meta_description || post.excerpt || `Expert roofing insights on ${post.title.toLowerCase()} from All Phase Construction USA.`;
 
-      if (blogUrlMatches && blogUrlMatches.length > 0) {
-        const blogSlugs = blogUrlMatches
-          .map(match => {
-            const urlMatch = match.match(/\/blog\/([^<]+)</);
-            return urlMatch ? urlMatch[1].replace(/\/$/, '') : null;
-          })
-          .filter(slug => slug && slug !== 'index.html');
+        // Format the published date
+        const pubDate = new Date(post.published_date);
+        const formattedDate = pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
-        console.log(`Found ${blogSlugs.length} blog posts in sitemap\n`);
+        // Build category tags HTML
+        const categoryTags = (post.categories || []).map(cat =>
+          `<a href="/blog/" style="display: inline-block; background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; text-decoration: none; margin-right: 0.5rem;">${cat}</a>`
+        ).join('');
 
-        blogSlugs.forEach(slug => {
-          // Generate title from slug
-          const blogTitle = slug
-            .split('-')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
+        // Build FAQ section if FAQs exist
+        let faqHTML = '';
+        let faqSchema = null;
+        if (post.faqs && Array.isArray(post.faqs) && post.faqs.length > 0) {
+          const faqItems = post.faqs.map(faq => `
+            <div style="margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 1.5rem;">
+              <h3 style="color: #111827; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">${faq.question}</h3>
+              <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">${faq.answer}</p>
+            </div>
+          `).join('');
 
-          const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
-          const blogDescription = `Expert roofing insights on ${blogTitle.toLowerCase()} from All Phase Construction USA, South Florida's dual-licensed roofing contractor.`;
+          faqHTML = `
+            <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e5e7eb;">
+              <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+              ${faqItems}
+            </section>
+          `;
 
-          const blogContent = `
+          faqSchema = {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: post.faqs.map(faq => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+            }))
+          };
+        }
+
+        // Build the full blog post HTML with REAL article content
+        const blogContent = `
 <section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
   <article>
-    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${blogTitle}</h1>
+    <header style="margin-bottom: 2rem;">
+      ${categoryTags ? `<div style="margin-bottom: 1rem;">${categoryTags}</div>` : ''}
+      <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${post.title}</h1>
+      <div style="display: flex; align-items: center; gap: 1rem; color: #6b7280; font-size: 0.95rem;">
+        <span>By ${post.author || 'All Phase Construction USA'}</span>
+        <span>•</span>
+        <time datetime="${post.published_date}">${formattedDate}</time>
+      </div>
+    </header>
 
-    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
+    ${post.excerpt ? `<p style="color: #6b7280; font-size: 1.15rem; line-height: 1.75; margin-bottom: 2rem; font-style: italic;">${post.excerpt}</p>` : ''}
 
-    <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
-      <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">
-        <strong>Expert Roofing Insights</strong> from All Phase Construction USA ✅ Your trusted dual-licensed roofing contractor serving Broward and Palm Beach County.
-      </p>
+    <div class="blog-content" style="color: #374151; font-size: 1.05rem; line-height: 1.85;">
+      ${post.content}
     </div>
 
-    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
-      At All Phase Construction USA, we bring decades of roofing expertise to South Florida homeowners and businesses. As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we understand both roofing systems and structural engineering, ensuring every project meets the highest standards of quality and hurricane compliance.
-    </p>
-
-    <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Professional Roofing Services</h2>
-    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
-      Whether you need roof repair, roof replacement, roof inspection, or preventive maintenance, our team delivers HVHZ-compliant workmanship backed by manufacturer warranties and our A+ BBB rating.
-    </p>
+    ${faqHTML}
 
     <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
       <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
       <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
       <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
     </div>
+
+    <nav style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
+      <a href="/blog/" style="color: #dc2626; font-weight: 600; text-decoration: none;">← Back to All Blog Posts</a>
+    </nav>
   </article>
 
   ${companyAuthorityFooter()}
 </section>
-          `.trim();
+        `.trim();
 
-          const blogHTML = createHTMLTemplate(
-            `${blogTitle} | All Phase USA Blog`,
-            blogDescription,
-            blogCanonical,
-            blogContent
-          );
+        // Build JSON-LD schema for the blog post
+        const blogSchema = [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: blogMetaDesc,
+            datePublished: post.published_date,
+            author: {
+              '@type': 'Organization',
+              name: post.author || 'All Phase Construction USA'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'All Phase Construction USA',
+              url: 'https://allphaseconstructionfl.com'
+            },
+            mainEntityOfPage: blogCanonical,
+            image: post.featured_image || undefined
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://allphaseconstructionfl.com/blog' },
+              { '@type': 'ListItem', position: 3, name: post.title, item: blogCanonical }
+            ]
+          }
+        ];
 
-          const blogDir = path.join(publicDir, 'blog', slug);
-          fs.mkdirSync(blogDir, { recursive: true });
-          fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
-          console.log(`✅ Generated: dist/blog/${slug}/index.html`);
-          totalPages++;
-        });
-      } else {
-        console.log('✅ No blog posts found in sitemap\n');
+        if (faqSchema) {
+          blogSchema.push(faqSchema);
+        }
+
+        const blogHTML = createHTMLTemplate(
+          `${blogMetaTitle} | All Phase USA Blog`,
+          blogMetaDesc,
+          blogCanonical,
+          blogContent,
+          blogSchema
+        );
+
+        const blogDir = path.join(publicDir, 'blog', post.slug);
+        fs.mkdirSync(blogDir, { recursive: true });
+        fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
+
+        const contentLength = post.content ? post.content.length : 0;
+        console.log(`✅ Generated: dist/blog/${post.slug}/index.html (${contentLength} chars of real content)`);
+        totalPages++;
+        blogPostsGenerated++;
+      } catch (err) {
+        console.error(`❌ Error generating blog post "${post.slug}":`, err.message);
       }
-    } else {
-      console.log('⚠️ Sitemap not found at public/sitemap.xml\n');
     }
-  } catch (err) {
-    console.log('⚠️ Error generating blog posts:', err.message);
+    console.log(`\n📚 Blog posts generated with real Supabase content: ${blogPostsGenerated}`);
+  } else {
+    // Fallback: try generating from sitemap with generic content if Supabase fetch failed
+    console.log('⚠️ No posts from Supabase. Falling back to sitemap-based generation...\n');
+    try {
+      const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
+      if (fs.existsSync(sitemapPath)) {
+        const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+        const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
+        if (blogUrlMatches && blogUrlMatches.length > 0) {
+          const blogSlugs = blogUrlMatches
+            .map(match => { const m = match.match(/\/blog\/([^<]+)/); return m ? m[1].replace(/\/$/, '') : null; })
+            .filter(slug => slug && slug !== 'index.html');
+          blogSlugs.forEach(slug => {
+            const blogTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
+            const blogDescription = `Expert roofing insights on ${blogTitle.toLowerCase()} from All Phase Construction USA.`;
+            const fallbackContent = `
+<section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+  <article>
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">${blogTitle}</h1>
+    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
+    <a href="/blog/" style="color: #dc2626; font-weight: 600; text-decoration: none;">← Back to All Blog Posts</a>
+  </article>
+  ${companyAuthorityFooter()}
+</section>`.trim();
+            const blogHTML = createHTMLTemplate(`${blogTitle} | All Phase USA Blog`, blogDescription, blogCanonical, fallbackContent);
+            const blogDir = path.join(publicDir, 'blog', slug);
+            fs.mkdirSync(blogDir, { recursive: true });
+            fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
+            console.log(`✅ Generated (fallback): dist/blog/${slug}/index.html`);
+            totalPages++;
+          });
+        }
+      }
+    } catch (err) {
+      console.log('⚠️ Error in fallback blog generation:', err.message);
+    }
   }
 
   // 3. Generate 3-Silo City Pages for all cities
@@ -2329,7 +2549,7 @@ console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTM
 }
 
 // Run the generator
-generateStaticFiles();
+await generateStaticFiles();
 
 // Copy IndexNow key file to dist
 fs.copyFileSync('public/1864f0fe7c93447e946f774adbe8e54a.txt', 'dist/1864f0fe7c93447e946f774adbe8e54a.txt');
