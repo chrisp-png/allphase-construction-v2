@@ -1,6 +1,6 @@
 [build]
 publish = "dist"
-command = "npm run build && node scripts/submit-indexnow.mjs"
+command = "npx vite build && node scripts/prerender-static.mjs && node scripts/submit-indexnow.mjs"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -9,12 +9,12 @@ NODE_VERSION = "20"
 skip_processing = false
 
 [build.processing.css]
-bundle = false
-minify = false
+bundle = true
+minify = true
 
 [build.processing.js]
-bundle = false
-minify = false
+bundle = true
+minify = true
 
 [build.processing.html]
 pretty_urls = false
@@ -28,6 +28,35 @@ package = "netlify-plugin-cache"
 [[edge_functions]]
 function = "strip-slash"
 path = "/*/"
+
+# Run edge function on WordPress artifact paths for 410 Gone
+[[edge_functions]]
+function = "strip-slash"
+path = "/wp-content/*"
+
+[[edge_functions]]
+function = "strip-slash"
+path = "/wp-admin/*"
+
+[[edge_functions]]
+function = "strip-slash"
+path = "/wp-includes/*"
+
+[[edge_functions]]
+function = "strip-slash"
+path = "/wp-json/*"
+
+[[edge_functions]]
+function = "strip-slash"
+path = "/wp-login.php"
+
+[[edge_functions]]
+function = "strip-slash"
+path = "/xmlrpc.php"
+
+[[edge_functions]]
+function = "strip-slash"
+path = "/feed"
 
 [[redirects]]
 from = "/wind-mitigation-inspection"
@@ -81,11 +110,6 @@ status = 200
 [[redirects]]
 from = "/favicon.svg"
 to = "/favicon.svg"
-status = 200
-
-[[redirects]]
-from = "/llms.txt"
-to = "/llms.txt"
 status = 200
 
 [[redirects]]
@@ -156,10 +180,3 @@ for = "/favicon.svg"
 [headers.values]
 Content-Type = "image/svg+xml"
 Cache-Control = "public, max-age=86400"
-
-[[headers]]
-for = "/llms.txt"
-
-[headers.values]
-Content-Type = "text/plain"
-Cache-Control = "public, max-age=3600"
