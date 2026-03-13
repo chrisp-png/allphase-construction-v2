@@ -7,259 +7,6 @@ http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 30
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
 
 
-# Sitemap consolidation ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ redirect legacy sitemap_index.xml to sitemap.xml
-/sitemap_index.xml    /sitemap.xml    301!
-
-# Static file passthroughs (serve before SPA catch-all)
-/llms.txt    /llms.txt    200!
-# ======================================================================
-# SUBDOMAIN REDIRECTS
-# Legacy subdomains -> main site canonical URLs.
-# Requires each subdomain to be added as a Netlify domain alias.
-# ======================================================================
-https://roofrepair.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-repair 301!
-http://roofrepair.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-repair 301!
-https://landing.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/ 301!
-http://landing.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/ 301!
-https://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-replacement-process 301!
-http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-replacement-process 301!
-
-# ======================================================================
-# DEAD / RENAMED ROUTE REDIRECTS (GSC 5xx top offenders)
-# These catch legacy URLs that no longer have a route in the SPA.
-# All targets use NO trailing slash (matches canonical policy).
-# ======================================================================
-/roof-repair/Delray-Beach  /roof-repair/delray-beach  301!
-/financing https://allphaseconstructionfl.com/easy-payments 301!
-/financing/ https://allphaseconstructionfl.com/easy-payments 301!
-/about https://allphaseconstructionfl.com/about-us 301!
-/about/ https://allphaseconstructionfl.com/about-us 301!
-/services /roofing-services 301!
-/services/ /roofing-services 301!
-/service-areas https://allphaseconstructionfl.com/locations/deerfield-beach 301!
-/service-areas/ https://allphaseconstructionfl.com/locations/deerfield-beach 301!
-/gallery https://allphaseconstructionfl.com/projects 301!
-/gallery/ https://allphaseconstructionfl.com/projects 301!
-/testimonials https://allphaseconstructionfl.com/reviews 301!
-/testimonials/ https://allphaseconstructionfl.com/reviews 301!
-/locations https://allphaseconstructionfl.com/locations/deerfield-beach/ 301!
-/locations/ https://allphaseconstructionfl.com/locations/deerfield-beach/ 301!
-/roof-types https://allphaseconstructionfl.com/residential-roofing 301!
-/roof-types/ https://allphaseconstructionfl.com/residential-roofing 301!
-/estimate https://allphaseconstructionfl.com/contact 301!
-/estimate/ https://allphaseconstructionfl.com/contact 301!
-/free-estimate https://allphaseconstructionfl.com/contact 301!
-/free-estimate/ https://allphaseconstructionfl.com/contact 301!
-/quote https://allphaseconstructionfl.com/contact 301!
-/calculator https://allphaseconstructionfl.com/roof-cost-calculator 301!
-/calculator/ https://allphaseconstructionfl.com/roof-cost-calculator 301!
-/locations/deerfield-beach/service-area https://allphaseconstructionfl.com/locations/deerfield-beach 301!
-/locations/deerfield-beach/service-area/ https://allphaseconstructionfl.com/locations/deerfield-beach 301!
-/locations/deerfield-beach/how-to-hire-a-roofing-contractor https://allphaseconstructionfl.com/how-to-hire-roofing-contractor 301!
-/locations/deerfield-beach/how-to-hire-a-roofing-contractor/ https://allphaseconstructionfl.com/how-to-hire-roofing-contractor 301!
-/quote/ https://allphaseconstructionfl.com/contact 301!
-
-# ======================================================================
-# LEGACY REDIRECTS
-# All targets use NO trailing slash (matches canonical policy).
-# ======================================================================
-/roofing-contractor-deerfield-beach-fl /locations/deerfield-beach 301!
-
-# Legacy service-area URLs redirect to city pages
-/locations/:parent/service-area/:city /locations/:city 301!
-/locations/:parent/service-area/:city/ /locations/:city 301!
-
-# Legacy inspection URLs redirect to /roof-inspection
-/tile-roof-inspection-broward-county /roof-inspection 301!
-/tile-roof-inspection-palm-beach-county /roof-inspection 301!
-/metal-roof-inspection-broward-county /roof-inspection 301!
-/metal-roof-inspection-palm-beach-county /roof-inspection 301!
-/flat-roof-inspection-broward-county /roof-inspection 301!
-/flat-roof-inspection-palm-beach-county /roof-inspection 301!
-/insurance-roof-inspection /roof-inspection 301!
-
-
-# Broken /roof-replacement/[city] URLs ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ these pages do not exist
-/roof-replacement/pompano-beach /roof-replacement 301!
-/roof-replacement/delray-beach /roof-replacement 301!
-/roof-replacement/fort-lauderdale /roof-replacement 301!
-/roof-replacement/deerfield-beach /roof-replacement 301!
-/roof-replacement/coral-springs /roof-replacement 301!
-/roof-replacement/coconut-creek /roof-replacement 301!
-
-# Removed cities from cities.json ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ redirect to service hub
-/roof-repair/lazy-lake /roof-repair 301!
-/roof-repair/manalapan /roof-repair 301!
-/roof-repair/south-palm-beach /roof-repair 301!
-/roof-repair/surfside /roof-repair 301!
-/roof-repair/west-palm-beach-county /roof-repair 301!
-/roof-repair/boca-raton-county /roof-repair 301!
-/roof-repair/boynton-beach-county /roof-repair 301!
-/roof-inspection/lazy-lake /roof-inspection 301!
-/roof-inspection/manalapan /roof-inspection 301!
-/roof-inspection/south-palm-beach /roof-inspection 301!
-/roof-inspection/surfside /roof-inspection 301!
-/roof-repair/light-house-point /roof-repair/lighthouse-point 301!
-/roof-inspection/light-house-point /roof-inspection/lighthouse-point 301!
-/locations/lake-worth /locations/lake-worth-beach 301!
-/roof-repair/lake-worth /roof-repair/lake-worth-beach 301!
-/roof-inspection/lake-worth /roof-inspection/lake-worth-beach 301!
-
-# ======================================================================
-# SPA FALLBACK + STATIC FILES
-# Handled in netlify.toml [[redirects]] section.
-# Do NOT duplicate /* /index.html 200 here.
-# ======================================================================
-
-# Legacy blog redirects ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ WordPress URLs causing 5xx errors
-/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home /blog/wind-mitigation-roof-south-florida 301
-/blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida/ /blog/metal-roof-vs-shingles-florida-2026 301
-/blog/why-choose-tile-roofing-in-south-florida/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301
-/blog/impact-of-tariffs-on-metal-roofing-prices/ /blog/metal-roof-vs-shingles-florida-2026 301
-/blog/stone-coated-steel-roofs-benefits-and-pitfalls/ /blog/metal-roof-vs-shingles-florida-2026 301
-/blog/whats-the-best-roof-for-your-south-florida-home-in-2025/ /blog/roof-replacement-cost-broward-county-2026 301
-/blog/the-ultimate-guide-to-hurricane-proofing-your-roof-in-south-florida-expert-tips-from-all-phase-construction-usa /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301
-/blog/why-proper-roof-ventilation-is-critical-in-hot-climates /blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks 301
-/blog/top-roof-maintenance-tips-for-south-florida-homes /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301
-/blog/seasonal-roof-maintenance-checklist-for-florida-homes /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301
-/blog/what-to-do-when-your-roof-leaks /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301
-/blog/top-5-roofing-mistakes-south-florida-homeowners-make-and-how-to-avoid-them /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301
-/blog/comparing-asphalt-vs-metal-roofs-which-is-right-for-you /blog/metal-roof-vs-shingles-florida-2026 301
-/blog/how-to-budget-for-a-new-roof-without-surprises /blog/roof-pricing-financing-guide 301
-/blog/how-often-should-i-replace-my-roof-in-south-florida /blog/roof-replacement-cost-broward-county-2026 301
-/blog/how-to-choose-the-right-roofing-material-for-your-south-florida-home-with-all-phase-construction-usa/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301
-/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida/ /blog 301
-/blog/roles-responsibilities-of-a-roofing-contractor-why-it-matters-to-you/ /blog 301
-/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa/ /blog 301
-/blog/my-safe-florida-condominium-pilot-program/ /blog 301
-/blog/roofing-contractors-what-do-they-do-on-and-off-the-job-site/ /blog 301
-/blog/tag/condominium-pilot-program/ /blog 301
-/blog/tag/residential-roofs/feed/ /blog 301
-/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl/ /blog 301
-/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-6 /blog 301
-/blog/green-roofs-the-eco-friendly-roofing-solution-for-south-florida-homes/ /blog 301
-/blog/roofing-solutions-for-multi-family-and-hoa-communities /blog 301
-/blog/can-solar-panels-void-my-roof-warranty /blog 301
-/blog/why-choosing-an-owens-corning-certified-contractor-like-all-phase-construction-usa-matters-for-your-roofing-project /blog 301
-/blog/what-questions-to-ask-your-roofing-contractor-before-hiring /blog 301
-/blog/what-is-a-cool-roof-and-can-it-save-you-money /blog 301
-/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not /blog 301
-/blog/commercial-roof-coatings-are-they-worth-the-investment /blog 301
-/blog/how-to-file-a-roof-insurance-claim-after-storm-damage /blog 301
-/blog/sunnova-sunsafe-benefits/ /blog 301
-/blog/why-permitting-matters-in-roofing-and-construction-projects /blog 301
-
-# Legacy trailing slash fixes
-/blog/ /blog 301
-/commercial-roofing/ /commercial-roofing 301
-/financing/ /financing 301
-/accessibility / 301
-
-# Legacy HTTP and www ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ force HTTPS
-http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301
-http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301
-
-# Legacy city URL format from old site
-/roofing-contractor-boynton-beach-fl /locations/boynton-beach 301
-/roofing-services/roof-repair/Coconut-Creek /roof-repair/coconut-creek 301!
-/roofing-contractor-lantana-fl /locations/lantana 301!
-/roofing-contractor-coconut-creek-fl /locations/coconut-creek 301!
-/margate /locations/margate 301!
-/flat-roof-inspection-broward-county /roof-inspection 301!
-/locations/deerfield-beach/service-area/pembroke-park /locations/pembroke-park 301!
-/roofing-contractor-pompano-beach-fl /locations/pompano-beach 301
-/roofing-contractor-coral-springs-fl /locations/coral-springs 301!
-/roofing-contractor-tamarac-fl /locations/tamarac 301!
-/roofing-contractor-oakland-park-fl /roof-repair/oakland-park 301!
-/weston /roof-repair/weston 301!
-/west-palm-beach /locations/west-palm-beach 301!
-/plantation /locations/plantation 301!
-/lake-worth-beach /roof-repair/lake-worth-beach 301!
-/palm-springs /locations/west-palm-beach 301!
-/palm-beach-shores /locations/west-palm-beach 301!
-/service-areas/west-palm-beach /locations/west-palm-beach 301!
-/contact-roofing-contractor-deerfield-beach /contact 301!
-/locations/wilton-manors /roof-repair/wilton-manors 301!
-/locations/palm-springs /locations/west-palm-beach 301!
-/faq /frequently-asked-questions 301!
-/flat-roof-coatings /single-ply-roofing 301!
-/media-gallery /projects 301!
-/roofing-contractor-boca-raton-fl /locations/boca-raton 301!
-/roofing-contractor-delray-beach-fl /locations/delray-beach 301!
-/roofing-contractor-lake-worth-fl /locations/lake-worth-beach 301!
-/roofing-contractor-broward-county-fl /locations/deerfield-beach 301!
-/roofing-contractor-gulf-stream-fl /roof-repair/gulf-stream 301!
-/roofing-contractor-lauderhill-fl /locations/lauderhill 301!
-/roofing-contractor-west-palm-beach-fl /locations/west-palm-beach 301!
-/roofing-contractor-wellington-fl /locations/wellington 301!
-
-# Missing legacy redirects ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ added 2026-02-27
-/Blog /blog 301!
-/Blog/ /blog 301!
-/roofing-services/roof-inspection /roof-inspection 301!
-/roofing-services/roof-inspection/ /roof-inspection 301!
-/roofing-services/roof-repair/hypoluxo /roof-repair/hypoluxo 301!
-/pricing-guide /easy-payments 301!
-/pricing-guide/ /easy-payments 301!
-/our-location /contact 301!
-/our-location/ /contact 301!
-/media-gallery / 301!
-/media-gallery/ / 301!
-/lunch-learn-roofing-event / 301!
-/lunch-learn-roofing-event/ / 301!
-/roofing-contractor-hollywood-fl /locations/hollywood 301!
-/spray-foam-roofing / 301!
-/spray-foam-roofing/ / 301!
-/habitat-for-humanity / 301!
-/habitat-for-humanity/ / 301!
-/service-areas/lighthouse-point /locations/lighthouse-point 301!
-/service-areas/lighthouse-point/ /locations/lighthouse-point 301!
-/service-areas/hypoluxo/roof-cost-estimate /locations/hypoluxo 301!
-/deerfield-beach /locations/deerfield-beach 301!
-/southwest-ranches / 301!
-/cooper-city /locations/cooper-city 301!
-/pompano-beach /locations/pompano-beach 301!
-/locations/broward-county / 301!
-/locations/deerfield-beach/service-area/palm-beach-shores / 301!
-/locations/deerfield-beach/service-area/greenacres /locations/greenacres 301!
-/locations/deerfield-beach/service-area/palm-beach-county/top-5-roofer / 301!
-/locations/deerfield-beach/service-area/broward-county/top-5-roofer / 301!
-/roof-inspection/light-house-point /roof-inspection/lighthouse-point 301!
-/roof-repair/light-house-point /roof-repair/lighthouse-point 301!
-/locations/light-house-point /locations/lighthouse-point 301!
-
-
-# /roofing-services/roof-repair wildcard catch-all (old URL structure)
-/roofing-services/roof-repair/:city  /roof-repair/:city  301!
-/roofing-services/roof-repair  /roof-repair  301!
-
-# Trailing slash removal - catch-all wildcard
-# trailing slash catch-all removed Ã¢ÂÂ was causing root redirect loop
-
-# Sitemap canonicalization
-/sitemap/  /sitemap  301!
-/sitemap.html  /sitemap  301!
-# Ghost URLs bleeding GSC impressions
-/ventilation/  /residential-roofing  301!
-/publications/  /blog  301!
-/newsletters/  /blog  301!
-/maintenance/  /roof-maintenance-programs  301!
-/fort-lauderdale  /locations/fort-lauderdale  301!
-/delray-beach  /locations/delray-beach  301!
-/loxahatchee  /locations/west-palm-beach  301!
-/residential-roofing/roof-replacement-process  /roof-replacement-process  301!
-/sitemap  /sitemap.xml  301!
-
-/blog/*/ /blog/:splat 301!
-# ======================================================================
-# HOST CANONICALIZATION - www -> non-www, http -> https
-# These MUST be first. Processed before all other rules.
-# ======================================================================
-https://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
-http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
-http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
-
-
 # Sitemap consolidation ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ redirect legacy sitemap_index.xml to sitemap.xml
 /sitemap_index.xml    /sitemap.xml    301!
 # ======================================================================
@@ -442,6 +189,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-contractor-lauderhill-fl /locations/lauderhill 301!
 /roofing-contractor-west-palm-beach-fl /locations/west-palm-beach 301!
 /roofing-contractor-wellington-fl /locations/wellington 301!
+/roofing-services /roof-repair 301!
+/roofing-services/ /roof-repair 301!
 
 # Missing legacy redirects ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ added 2026-02-27
 /Blog /blog 301!
@@ -479,6 +228,44 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /locations/light-house-point /locations/lighthouse-point 301!
 
 
+# Legacy WordPress blog redirects ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ added 2026-02-27
+/blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida/ /blog/metal-roof-vs-shingles-florida-2026 301!
+/blog/why-choose-tile-roofing-in-south-florida/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
+/blog/impact-of-tariffs-on-metal-roofing-prices/ /blog/metal-roof-vs-shingles-florida-2026 301!
+/blog/stone-coated-steel-roofs-benefits-and-pitfalls/ /blog/metal-roof-vs-shingles-florida-2026 301!
+/blog/whats-the-best-roof-for-your-south-florida-home-in-2025/ /blog/roof-replacement-cost-broward-county-2026 301!
+/blog/the-ultimate-guide-to-hurricane-proofing-your-roof-in-south-florida-expert-tips-from-all-phase-construction-usa /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301!
+/blog/why-proper-roof-ventilation-is-critical-in-hot-climates /blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks 301!
+/blog/top-roof-maintenance-tips-for-south-florida-homes /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301!
+/blog/seasonal-roof-maintenance-checklist-for-florida-homes /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301!
+/blog/what-to-do-when-your-roof-leaks /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301!
+/blog/top-5-roofing-mistakes-south-florida-homeowners-make-and-how-to-avoid-them /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301!
+/blog/comparing-asphalt-vs-metal-roofs-which-is-right-for-you /blog/metal-roof-vs-shingles-florida-2026 301!
+/blog/how-to-budget-for-a-new-roof-without-surprises /blog/roof-pricing-financing-guide 301!
+/blog/how-often-should-i-replace-my-roof-in-south-florida /blog/roof-replacement-cost-broward-county-2026 301!
+/blog/how-to-choose-the-right-roofing-material-for-your-south-florida-home-with-all-phase-construction-usa/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
+/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home /blog/wind-mitigation-roof-south-florida 301!
+/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida/ /blog 301!
+/blog/roles-responsibilities-of-a-roofing-contractor-why-it-matters-to-you/ /blog 301!
+/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa/ /blog 301!
+/blog/my-safe-florida-condominium-pilot-program/ /blog 301!
+/blog/roofing-contractors-what-do-they-do-on-and-off-the-job-site/ /blog 301!
+/blog/tag/condominium-pilot-program/ /blog 301!
+/blog/tag/residential-roofs/feed/ /blog 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl/ /blog 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-6 /blog 301!
+/blog/green-roofs-the-eco-friendly-roofing-solution-for-south-florida-homes/ /blog 301!
+/blog/roofing-solutions-for-multi-family-and-hoa-communities /blog 301!
+/blog/can-solar-panels-void-my-roof-warranty /blog 301!
+/blog/why-choosing-an-owens-corning-certified-contractor-like-all-phase-construction-usa-matters-for-your-roofing-project /blog 301!
+/blog/what-questions-to-ask-your-roofing-contractor-before-hiring /blog 301!
+/blog/what-is-a-cool-roof-and-can-it-save-you-money /blog 301!
+/blog/understanding-your-roofing-warranty-whats-covered-and-whats-not /blog 301!
+/blog/commercial-roof-coatings-are-they-worth-the-investment /blog 301!
+/blog/how-to-file-a-roof-insurance-claim-after-storm-damage /blog 301!
+/blog/sunnova-sunsafe-benefits/ /blog 301!
+/blog/why-permitting-matters-in-roofing-and-construction-projects /blog 301!
+
 # /roofing-services/roof-repair wildcard catch-all (old URL structure)
 /roofing-services/roof-repair/:city  /roof-repair/:city  301!
 /roofing-services/roof-repair  /roof-repair  301!
@@ -501,3 +288,39 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /sitemap  /sitemap.xml  301!
 
 /blog/*/ /blog/:splat 301!
+
+# Blog posts that were never created in Supabase — redirect to related content
+/blog/what-makes-a-roof-hurricane-resistant /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
+/blog/top-roofers-in-broward-and-palm-beach-counties /blog 301!
+
+# ======================================================================
+# OLD WORDPRESS ARTIFACTS — 410 Gone
+# These paths are dead remnants from the old WordPress site.
+# 410 tells Google to stop crawling them permanently.
+# ======================================================================
+/wp-content/* / 410!
+/wp-admin/* / 410!
+/wp-includes/* / 410!
+/wp-login.php / 410!
+/xmlrpc.php / 410!
+/feed/ / 410!
+/feed / 410!
+
+# ======================================================================
+# BLOG TAG & FEED WILDCARDS — 301 to /blog
+# Catch all old WordPress tag archive and feed URLs
+# ======================================================================
+/blog/tag/* /blog 301!
+/blog/*/feed/ /blog 301!
+/blog/*/feed /blog 301!
+
+# ======================================================================
+# ADDITIONAL GSC CRAWLED-NOT-INDEXED FIXES
+# Pages Google crawled but didn't index due to stale/dead URLs
+# ======================================================================
+/roof-coatings /single-ply-roofing 301!
+/roof-coatings/ /single-ply-roofing 301!
+/media/ / 301!
+/media / 301!
+
+/* /index.html 200
