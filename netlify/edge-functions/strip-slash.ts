@@ -37,6 +37,23 @@ const DEAD_ROUTES: Record<string, string> = {
   '/blog/choosing-between-roof-repair-and-full-replacement': '/blog',
 };
 
+// WordPress artifact prefixes that should return 410 Gone.
+// Tells Googlebot these resources are permanently removed.
+const GONE_PREFIXES = [
+  '/wp-content/',
+  '/wp-admin/',
+  '/wp-includes/',
+  '/wp-json/',
+];
+
+// Exact paths that should return 410 Gone.
+const GONE_EXACT = new Set([
+  '/wp-login.php',
+  '/xmlrpc.php',
+  '/feed',
+  '/feed/',
+]);
+
 export default async function handler(
   request: Request,
   context: Context
@@ -50,7 +67,23 @@ export default async function handler(
   // 2. Skip if this is already a proxied sub-request (avoid loops)
   if (request.headers.get('x-nf-sub-request')) return;
 
-  // 3. Skip known static asset extensions & files that must not redirect
+  // 3. Return 410 Gone for dead WordPress artifacts
+  //    Must fire before static-asset skip so /wp-content/*.jpg gets caught
+  const lowerPath = pathname.toLowerCase();
+  if (
+    GONE_EXACT.has(lowerPath) ||
+    GONE_PREFIXES.some((prefix) => lowerPath.startsWith(prefix))
+  ) {
+    return new Response(
+      '<html><head><title>410 Gone</title></head><body><h1>410 Gone</h1><p>This resource has been permanently removed.</p></body></html>',
+      {
+        status: 410,
+        headers: { 'Content-Type': 'text/html; charset=utf-8' },
+      }
+    );
+  }
+
+  // 4. Skip known static asset extensions & files that must not redirect
   const SKIP_EXTENSIONS = [
     '.html', '.xml', '.txt', '.json', '.js', '.css', '.map',
     '.png', '.jpg', '.jpeg', '.gif', '.webp', '.avif', '.svg', '.ico',
@@ -60,7 +93,7 @@ export default async function handler(
   const lower = pathname.toLowerCase();
   if (SKIP_EXTENSIONS.some((ext) => lower.endsWith(ext))) return;
 
-  // 4. Skip paths that start with known asset/internal prefixes
+  // 5. Skip paths that start with known asset/internal prefixes
   if (
     lower.startsWith('/assets/') ||
     lower.startsWith('/.netlify/') ||
@@ -69,7 +102,7 @@ export default async function handler(
     return;
   }
 
-  // 5. If the path ends with a slash, check dead-route map first
+  // 6. If the path ends with a slash, check dead-route map first
   //    to redirect directly to the final target (single-hop).
   if (pathname.length > 1 && pathname.endsWith('/')) {
     const clean = pathname.replace(/\/+$/, '');
@@ -92,6 +125,6 @@ export default async function handler(
     });
   }
 
-  // 6. Otherwise, pass through to origin
+  // 7. Otherwise, pass through to origin
   return;
 }
