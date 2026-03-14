@@ -228,12 +228,59 @@ export default function RoofCalculator() {
           <div id="results-section" className="mt-16 space-y-12 max-w-4xl mx-auto" style={{ animation: 'fadeInUp 0.6s ease-out' }}>
 
             {/* ============================================ */}
+            {/* GOOD / BETTER / BEST TIERS (shown first)     */}
+            {/* ============================================ */}
+            <div style={{ animation: 'fadeInUp 0.6s ease-out both' }}>
+              <div className="text-center mb-8">
+                <p className="text-xl text-gray-300">
+                  Here's what you selected for your{' '}
+                  <span className="text-white font-semibold">{selectedSize.sqft.toLocaleString()} sq ft</span>{' '}
+                  <span className="text-white font-semibold">{selectedType.name}</span> roof
+                </p>
+              </div>
+
+              <div className="grid lg:grid-cols-3 gap-6">
+                {currentPricing.map((tier, index) => (
+                  <div
+                    key={tier.tier}
+                    className={`bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border-2 transition-all duration-500 ${
+                      tier.tier === 'Better'
+                        ? 'border-red-600 shadow-2xl shadow-red-600/20 lg:-translate-y-4'
+                        : 'border-slate-700'
+                    }`}
+                    style={{ animation: `fadeInUp 0.6s ease-out ${0.1 + index * 0.15}s both` }}
+                  >
+                    {tier.tier === 'Better' && (
+                      <div className="bg-red-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-4">Most Popular</div>
+                    )}
+                    <div className="mb-6">
+                      <div className="text-gray-300 text-base font-semibold uppercase tracking-wide mb-2">{tier.tier}</div>
+                      <h4 className="text-2xl font-bold text-white mb-2">{tier.product}</h4>
+                      <p className="text-gray-300 text-base mb-4">{tier.warranty}</p>
+                      <div className="text-3xl font-bold text-white">
+                        {formatPrice(Math.round((tier.minPrice * selectedSize.sqft) / 1000) * 1000)} — {formatPrice(Math.round((tier.maxPrice * selectedSize.sqft) / 1000) * 1000)}
+                      </div>
+                    </div>
+                    <ul className="space-y-3">
+                      {tier.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-gray-300">
+                          <Check className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* ============================================ */}
             {/* SPLIT PRICE DISPLAY: Basic vs Insurance-Opt  */}
             {/* ============================================ */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.5s both' }}>
               {/* Header */}
               <div className="px-8 pt-8 pb-4 text-center">
-                <p className="text-base font-semibold uppercase tracking-widest text-gray-300 mb-1">Your Estimated Roof Replacement Cost</p>
+                <p className="text-base font-semibold uppercase tracking-widest text-gray-300 mb-1">Now See the Insurance Trade-Off</p>
                 <p className="text-gray-300 text-base">{sizeLabels[selectedSize.sqft]} · {selectedType.name} · Broward / Palm Beach County</p>
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
                   {['HVHZ Compliant', 'Includes Tear-Off', 'Permit & Inspection', 'Manufacturer Warranty'].map(chip => (
@@ -448,53 +495,6 @@ export default function RoofCalculator() {
               <a href="/easy-payments/" className="inline-block px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-600/10 hover:text-white hover:border-blue-400 transition-all">
                 Explore Financing Options <ArrowRight className="w-4 h-4 inline ml-1" />
               </a>
-            </div>
-
-            {/* ============================================ */}
-            {/* GOOD / BETTER / BEST TIERS                    */}
-            {/* ============================================ */}
-            <div style={{ animation: 'fadeInUp 0.6s ease-out 0.5s both' }}>
-              <div className="text-center mb-8">
-                <p className="text-xl text-gray-400">
-                  Here's what you selected for your{' '}
-                  <span className="text-white font-semibold">{selectedSize.sqft.toLocaleString()} sq ft</span>{' '}
-                  <span className="text-white font-semibold">{selectedType.name}</span> roof
-                </p>
-              </div>
-
-              <div className="grid lg:grid-cols-3 gap-6">
-                {currentPricing.map((tier, index) => (
-                  <div
-                    key={tier.tier}
-                    className={`bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border-2 transition-all duration-500 ${
-                      tier.tier === 'Better'
-                        ? 'border-red-600 shadow-2xl shadow-red-600/20 lg:-translate-y-4'
-                        : 'border-slate-700'
-                    }`}
-                    style={{ animation: `fadeInUp 0.6s ease-out ${0.6 + index * 0.15}s both` }}
-                  >
-                    {tier.tier === 'Better' && (
-                      <div className="bg-red-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-4">Most Popular</div>
-                    )}
-                    <div className="mb-6">
-                      <div className="text-gray-300 text-base font-semibold uppercase tracking-wide mb-2">{tier.tier}</div>
-                      <h4 className="text-2xl font-bold text-white mb-2">{tier.product}</h4>
-                      <p className="text-gray-300 text-base mb-4">{tier.warranty}</p>
-                      <div className="text-3xl font-bold text-white">
-                        {formatPrice(Math.round((tier.minPrice * selectedSize.sqft) / 1000) * 1000)} — {formatPrice(Math.round((tier.maxPrice * selectedSize.sqft) / 1000) * 1000)}
-                      </div>
-                    </div>
-                    <ul className="space-y-3">
-                      {tier.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-gray-300">
-                          <Check className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* ============================================ */}
