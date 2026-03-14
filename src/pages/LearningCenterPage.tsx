@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Calculator, DollarSign, CreditCard, BookOpen, Shield, Home, Wrench, ClipboardCheck, Building2, Sun } from 'lucide-react';
+import { Calculator, DollarSign, CreditCard, BookOpen, Shield, Home, Wrench, ClipboardCheck, Building2, Sun, FileText } from 'lucide-react';
 
 const toolsAndResources = [
   {
@@ -20,6 +20,13 @@ const toolsAndResources = [
     href: '/easy-payments',
     icon: CreditCard,
     description: 'Explore flexible payment plans through our FHA Title I lending partner. Make your roof affordable.'
+  },
+  {
+    title: "Insider's Guide to Hiring a Roofer",
+    href: '/downloads/Insiders-Guide-Hiring-Roofer-South-Florida.pdf',
+    icon: FileText,
+    description: 'Free PDF with our 15-point contractor checklist, red flags to watch for, insurance savings strategies, and buying guides for every roof type.',
+    external: true
   }
 ];
 
@@ -160,15 +167,12 @@ export default function LearningCenterPage() {
                 Start with our interactive tools to estimate costs and explore financing options.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {toolsAndResources.map((tool) => {
                 const Icon = tool.icon;
-                return (
-                  <Link
-                    key={tool.href}
-                    to={tool.href}
-                    className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 hover:shadow-lg hover:shadow-red-600/20 transition-all duration-200 group"
-                  >
+                const cardClasses = "bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 hover:shadow-lg hover:shadow-red-600/20 transition-all duration-200 group";
+                const cardContent = (
+                  <>
                     <div className="flex items-center justify-center w-16 h-16 bg-red-600/10 rounded-lg mb-6 group-hover:bg-red-600/20 transition-colors">
                       <Icon className="w-8 h-8 text-red-500" />
                     </div>
@@ -178,6 +182,25 @@ export default function LearningCenterPage() {
                     <p className="text-zinc-400 leading-relaxed">
                       {tool.description}
                     </p>
+                  </>
+                );
+                return 'external' in tool && tool.external ? (
+                  <a
+                    key={tool.href}
+                    href={tool.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cardClasses}
+                  >
+                    {cardContent}
+                  </a>
+                ) : (
+                  <Link
+                    key={tool.href}
+                    to={tool.href}
+                    className={cardClasses}
+                  >
+                    {cardContent}
                   </Link>
                 );
               })}

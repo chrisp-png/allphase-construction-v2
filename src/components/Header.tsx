@@ -295,12 +295,6 @@ export default function Header() {
               Service Areas
             </Link>
             <Link
-              to="/how-to-hire-roofing-contractor/"
-              className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
-            >
-              How to Hire a Roofer
-            </Link>
-            <Link
               to="/locations/deerfield-beach/best-roofers-deerfield-beach/"
               className="block px-4 py-3 text-white hover:bg-red-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
             >
@@ -509,13 +503,6 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Service Areas
-                  </Link>
-                  <Link
-                    to="/how-to-hire-roofing-contractor/"
-                    className="block text-gray-400 hover:text-red-600 transition-colors py-3"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    How to Hire a Roofer
                   </Link>
                   <Link
                     to="/locations/deerfield-beach/best-roofers-deerfield-beach/"

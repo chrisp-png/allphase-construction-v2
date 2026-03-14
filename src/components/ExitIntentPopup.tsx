@@ -107,7 +107,7 @@ export default function ExitIntentPopup() {
               Before You Go...
             </h3>
             <p className="text-lg text-gray-600">
-              Get your free roof assessment — no obligation, no pressure
+              Grab our free Insider's Guide to Hiring a Roofer in South Florida — includes a 15-point checklist, red flags to watch for, and insurance savings tips.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ export default function ExitIntentPopup() {
               type="submit"
               className="w-full py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Schedule My Free Inspection
+              Get My Free Guide
             </button>
           </form>
 

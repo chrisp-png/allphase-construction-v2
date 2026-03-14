@@ -233,11 +233,6 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link to="/how-to-hire-roofing-contractor/" className="hover:text-red-600 transition-colors">
-                  How to Hire a Roofer
-                </Link>
-              </li>
-              <li>
                 <Link to="/roof-inspection/" className="hover:text-red-600 transition-colors">
                   Roof Inspection Guide
                 </Link>
