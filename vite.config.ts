@@ -124,6 +124,28 @@ const manualPublicCopyPlugin = () => ({
       });
     }
 
+    // Copy downloads directory (PDF guides, etc.)
+    const downloadsSrc = path.resolve(publicDir, 'downloads');
+    const downloadsDest = path.resolve(distDir, 'downloads');
+    if (fs.existsSync(downloadsSrc)) {
+      if (!fs.existsSync(downloadsDest)) {
+        fs.mkdirSync(downloadsDest, { recursive: true });
+      }
+      const downloadsFiles = fs.readdirSync(downloadsSrc);
+      downloadsFiles.forEach(file => {
+        const src = path.resolve(downloadsSrc, file);
+        const dest = path.resolve(downloadsDest, file);
+        try {
+          if (fs.statSync(src).isFile()) {
+            fs.copyFileSync(src, dest);
+            console.log(`Copied downloads/${file}`);
+          }
+        } catch (error) {
+          console.warn(`Skipped downloads/${file}: ${error.message}`);
+        }
+      });
+    }
+
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
     // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)

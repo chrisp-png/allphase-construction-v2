@@ -2193,7 +2193,7 @@ ${companyAuthorityFooter()}
     </div>
 
     <nav style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
-      <a href="/blog" style="color: #dc2626; font-weight: 600; text-decoration: none;">â Back to All Blog Posts</a>
+      <a href="/blog" style="color: #dc2626; font-weight: 600; text-decoration: none;">← Back to All Blog Posts</a>
     </nav>
   </article>
 
@@ -2278,7 +2278,7 @@ ${companyAuthorityFooter()}
   <article>
     <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">${blogTitle}</h1>
     <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
-    <a href="/blog" style="color: #dc2626; font-weight: 600; text-decoration: none;">â Back to All Blog Posts</a>
+    <a href="/blog" style="color: #dc2626; font-weight: 600; text-decoration: none;">← Back to All Blog Posts</a>
   </article>
   ${companyAuthorityFooter()}
 </section>`.trim();

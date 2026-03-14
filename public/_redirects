@@ -52,8 +52,10 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /calculator/ https://allphaseconstructionfl.com/roof-cost-calculator 301!
 /locations/deerfield-beach/service-area https://allphaseconstructionfl.com/locations/deerfield-beach 301!
 /locations/deerfield-beach/service-area/ https://allphaseconstructionfl.com/locations/deerfield-beach 301!
-/locations/deerfield-beach/how-to-hire-a-roofing-contractor https://allphaseconstructionfl.com/how-to-hire-roofing-contractor 301!
-/locations/deerfield-beach/how-to-hire-a-roofing-contractor/ https://allphaseconstructionfl.com/how-to-hire-roofing-contractor 301!
+/how-to-hire-roofing-contractor /roof-cost-calculator 301!
+/how-to-hire-roofing-contractor/ /roof-cost-calculator 301!
+/locations/deerfield-beach/how-to-hire-a-roofing-contractor /roof-cost-calculator 301!
+/locations/deerfield-beach/how-to-hire-a-roofing-contractor/ /roof-cost-calculator 301!
 /quote/ https://allphaseconstructionfl.com/contact 301!
 
 # ======================================================================
