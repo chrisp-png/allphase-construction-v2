@@ -56,22 +56,22 @@ const pricingData: PricingData = {
   Shingle: [
     { tier: 'Good', product: 'Standard 3-Tab', warranty: '20-25 Year Warranty', minPrice: 4.5, maxPrice: 7.5, features: ['Cost-effective solution', 'Proven durability', 'Quick installation'] },
     { tier: 'Better', product: 'Architectural', warranty: '30-40 Year Warranty', minPrice: 7, maxPrice: 11, features: ['Enhanced curb appeal', 'Better wind resistance', 'Dimensional look'] },
-    { tier: 'Best', product: 'Designer Premium', warranty: '50 Year - Lifetime Warranty', minPrice: 10, maxPrice: 16, features: ['Luxury aesthetics', 'Maximum durability', 'Best warranty coverage'] },
+    { tier: 'Best', product: 'Designer Premium', warranty: '50 Year - Lifetime Warranty', minPrice: 10, maxPrice: 14, features: ['Luxury aesthetics', 'Maximum durability', 'Best warranty coverage'] },
   ],
   Tile: [
     { tier: 'Good', product: 'Concrete Tile', warranty: '30-40 Year Warranty', minPrice: 12, maxPrice: 18, features: ['Classic Florida style', 'Standard underlayment', 'Proven durability'] },
     { tier: 'Better', product: 'Concrete Tile Enhanced', warranty: '40-50 Year Warranty', minPrice: 16, maxPrice: 24, features: ['Upgraded underlayments', 'Foam adhesive system', 'Superior wind resistance'] },
-    { tier: 'Best', product: 'Clay or Composite Tile', warranty: 'Lifetime Warranty', minPrice: 22, maxPrice: 35, features: ['Premium materials', 'Timeless elegance', 'Maximum home value'] },
+    { tier: 'Best', product: 'Clay or Composite Tile', warranty: 'Lifetime Warranty', minPrice: 22, maxPrice: 30, features: ['Premium materials', 'Timeless elegance', 'Maximum home value'] },
   ],
   Metal: [
     { tier: 'Good', product: 'Steel - Snap Lock', warranty: '25-30 Year Warranty', minPrice: 8, maxPrice: 13, features: ['Snap lock or nail fin system', 'Storm resistant', 'Low maintenance'] },
     { tier: 'Better', product: 'Steel or Aluminum w/ Kynar Finish', warranty: '40-50 Year Warranty', minPrice: 12, maxPrice: 19, features: ['Mechanically seamed panels', 'Kynar finish for durability', 'Superior corrosion resistance'] },
-    { tier: 'Best', product: 'Aluminum Premium', warranty: 'Lifetime Warranty', minPrice: 18, maxPrice: 28, features: ['Mechanically seamed panels', 'Premium underlayment system', 'Ultimate longevity'] },
+    { tier: 'Best', product: 'Aluminum Premium', warranty: 'Lifetime Warranty', minPrice: 18, maxPrice: 25, features: ['Mechanically seamed panels', 'Premium underlayment system', 'Ultimate longevity'] },
   ],
   Flat: [
     { tier: 'Good', product: 'Modified Bitumen', warranty: '15-20 Year Warranty', minPrice: 5, maxPrice: 9, features: ['Reliable protection', 'Cost-effective', 'Easy repairs'] },
     { tier: 'Better', product: 'TPO/PVC Membrane', warranty: '25-30 Year Warranty', minPrice: 8, maxPrice: 14, features: ['Energy efficient', 'UV resistant', 'Seamless coverage'] },
-    { tier: 'Best', product: 'Enhanced Fastening TPO/PVC', warranty: '30+ Year Warranty', minPrice: 12, maxPrice: 20, features: ['Superior attachment system', 'Maximum wind uplift resistance', 'Best long-term performance'] },
+    { tier: 'Best', product: 'Enhanced Fastening TPO/PVC', warranty: '30+ Year Warranty', minPrice: 12, maxPrice: 18, features: ['Superior attachment system', 'Maximum wind uplift resistance', 'Best long-term performance'] },
   ],
 };
 
@@ -102,17 +102,20 @@ export default function RoofCalculator() {
     }
   };
 
-  // Price calculations
+  // Price calculations — use tier midpoints for a realistic spread
   const getBasicPrice = () => {
     if (!selectedType) return 0;
     const pricing = pricingData[selectedType.name];
-    return Math.round((pricing[0].minPrice * selectedSize.sqft) / 1000) * 1000;
+    const avgPerSqFt = (pricing[0].minPrice + pricing[0].maxPrice) / 2;
+    return Math.round((avgPerSqFt * selectedSize.sqft) / 1000) * 1000;
   };
 
   const getUpgradedPrice = () => {
     if (!selectedType) return 0;
     const pricing = pricingData[selectedType.name];
-    return Math.round((pricing[pricing.length - 1].maxPrice * selectedSize.sqft) / 1000) * 1000;
+    const best = pricing[pricing.length - 1];
+    const avgPerSqFt = (best.minPrice + best.maxPrice) / 2;
+    return Math.round((avgPerSqFt * selectedSize.sqft) / 1000) * 1000;
   };
 
   // Insurance estimates (gentle curve for home size)
