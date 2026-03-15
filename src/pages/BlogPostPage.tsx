@@ -309,12 +309,10 @@ export default function BlogPostPage() {
   const updateMetaTags = () => {
     if (!post) return;
 
-    // Normalize blog titles: strip verbose suffix, keep under 60 chars for SEO
-    const rawTitle = post.meta_title || post.title;
-    const stripped = rawTitle.replace(/\s*\|\s*All Phase USA Blog\s*$/i, '').trim();
-    document.title = stripped.length <= 47
-      ? stripped + ' | All Phase'
-      : stripped.substring(0, 47).trim() + ' | All Phase';
+    // Normalize blog titles — strip pipe suffixes, truncate at word boundary, keep under 65 chars for SEO
+    const rawTitle = (post.meta_title || post.title).replace(/\s*\|.*$/, '').trim();
+    const cleanTitle = rawTitle.length <= 52 ? rawTitle : rawTitle.substring(0, 52).replace(/\s+\S*$/, '');
+    document.title = cleanTitle + ' | All Phase';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -522,7 +520,7 @@ export default function BlogPostPage() {
               </div>
               {post.categories.length > 0 && (
                 <div className="flex items-center gap-2">
-                  <span>â¢</span>
+                  <span>Ã¢ÂÂ¢</span>
                   <span>{post.categories[0]}</span>
                 </div>
               )}
