@@ -416,6 +416,17 @@ export default function BlogPostPage() {
 
   const getFaqPageSchema = () => {
     if (!post || !post.faqs || post.faqs.length === 0) return null;
+    // Skip if a FAQPage schema already exists in the document head (from prerender)
+    if (typeof document !== 'undefined') {
+      const existing = document.querySelectorAll('script[type="application/ld+json"]');
+      for (const el of existing) {
+        try {
+          const parsed = JSON.parse(el.textContent || '');
+          if (parsed['@type'] === 'FAQPage') return null;
+          if (Array.isArray(parsed) && parsed.some(s => s['@type'] === 'FAQPage')) return null;
+        } catch (e) { /* ignore */ }
+      }
+    }
 
     const schema = {
       '@context': 'https://schema.org',
@@ -511,7 +522,7 @@ export default function BlogPostPage() {
               </div>
               {post.categories.length > 0 && (
                 <div className="flex items-center gap-2">
-                  <span>•</span>
+                  <span>â¢</span>
                   <span>{post.categories[0]}</span>
                 </div>
               )}
