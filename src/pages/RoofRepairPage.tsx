@@ -56,12 +56,12 @@ export default function RoofRepairPage() {
 
     // FAQ Schema for rich snippets
     const faqSchema = generateFAQSchema([
-      { question: "How much does roof repair cost?", answer: "It depends on the scope. A minor repair might be a few hundred dollars. A comprehensive restoration of an entire slope could be several thousand. We provide detailed quotes after our free inspection — no surprises." },
-      { question: "What's the difference between roof repair and roof restoration?", answer: "Repair fixes one specific problem — a leak, a missing shingle, a damaged vent. Restoration addresses an entire section or system comprehensively — replacing all vulnerable components so you're not calling back in six months with another issue." },
+      { question: "How much does roof repair cost?", answer: "It depends on the scope. A minor repair might be a few hundred dollars. A comprehensive restoration of an entire slope could be several thousand. We provide detailed quotes after our free inspection â no surprises." },
+      { question: "What's the difference between roof repair and roof restoration?", answer: "Repair fixes one specific problem â a leak, a missing shingle, a damaged vent. Restoration addresses an entire section or system comprehensively â replacing all vulnerable components so you're not calling back in six months with another issue." },
       { question: "What is the 5-year certification letter?", answer: "Florida law states that if a licensed roofing contractor certifies your roof has at least 5 years of useful life remaining, your insurance company cannot drop your coverage based on the roof's condition. We provide this letter when a roof qualifies after restoration." },
-      { question: "Can a roof repair help me keep my insurance?", answer: "A simple spot repair usually won't qualify for the 5-year certification. But a comprehensive restoration that addresses all vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage." },
+      { question: "Can a roof repair help me keep my insurance?", answer: "A simple spot repair usually won't qualify for the 5-year certification. But a comprehensive restoration that addresses all vulnerable areas can bring your roof up to the standard needed for certification â protecting your coverage." },
       { question: "How do I know if my roof needs repair or replacement?", answer: "Age, extent of damage, and overall condition all factor in. If damage is localized and the roof is relatively young, repair or restoration makes sense. If there's widespread failure or the roof is 20+ years old, replacement is usually the smarter investment. Our free inspection gives you a clear answer. Learn about our 10-step roof replacement process." },
-      { question: "Will you give me an honest opinion if I need a new roof instead of repair?", answer: "Absolutely. We don't make money selling you repairs that won't last. If replacement makes more sense, we'll tell you — and explain why." },
+      { question: "Will you give me an honest opinion if I need a new roof instead of repair?", answer: "Absolutely. We don't make money selling you repairs that won't last. If replacement makes more sense, we'll tell you â and explain why." },
       { question: "How long does a roof repair take?", answer: "Most repairs are completed in one day. Larger restoration projects may take 2-3 days depending on scope. We'll give you a clear timeline before we start." }
     ]);
 
@@ -80,11 +80,11 @@ export default function RoofRepairPage() {
   const faqs = [
     {
       q: "How much does roof repair cost?",
-      a: "It depends on the scope. A minor repair might be a few hundred dollars. A comprehensive restoration of an entire slope could be several thousand. We provide detailed quotes after our free inspection — no surprises."
+      a: "It depends on the scope. A minor repair might be a few hundred dollars. A comprehensive restoration of an entire slope could be several thousand. We provide detailed quotes after our free inspection â no surprises."
     },
     {
       q: "What's the difference between roof repair and roof restoration?",
-      a: "Repair fixes one specific problem — a leak, a missing shingle, a damaged vent. Restoration addresses an entire section or system comprehensively — replacing all vulnerable components so you're not calling back in six months with another issue."
+      a: "Repair fixes one specific problem â a leak, a missing shingle, a damaged vent. Restoration addresses an entire section or system comprehensively â replacing all vulnerable components so you're not calling back in six months with another issue."
     },
     {
       q: "What is the 5-year certification letter?",
@@ -92,7 +92,7 @@ export default function RoofRepairPage() {
     },
     {
       q: "Can a roof repair help me keep my insurance?",
-      a: "A simple spot repair usually won't qualify for the 5-year certification. But a comprehensive restoration that addresses all vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage."
+      a: "A simple spot repair usually won't qualify for the 5-year certification. But a comprehensive restoration that addresses all vulnerable areas can bring your roof up to the standard needed for certification â protecting your coverage."
     },
     {
       q: "How do I know if my roof needs repair or replacement?",
@@ -108,11 +108,11 @@ export default function RoofRepairPage() {
     },
     {
       q: "Do you help with insurance claims for storm damage?",
-      a: "We provide complete documentation for every storm damage repair — pre-repair photos showing the damage, progress photos during the work, and final photos after completion. This gives you a thorough record to submit to your insurance company. The documentation is yours to use however you need."
+      a: "We provide complete documentation for every storm damage repair â pre-repair photos showing the damage, progress photos during the work, and final photos after completion. This gives you a thorough record to submit to your insurance company. The documentation is yours to use however you need."
     },
     {
       q: "Will you give me an honest opinion if I need a new roof instead of repair?",
-      a: "Absolutely. We don't make money selling you repairs that won't last. If replacement makes more sense, we'll tell you — and explain why."
+      a: "Absolutely. We don't make money selling you repairs that won't last. If replacement makes more sense, we'll tell you â and explain why."
     },
     {
       q: "How long does a roof repair take?",
@@ -122,9 +122,9 @@ export default function RoofRepairPage() {
       q: "Do I need a permit for roof repair in Florida?",
       a: (
         <div className="space-y-4">
-          <p>It depends on where you live and the scope of work. Florida Building Code Section 105.2.2 allows "ordinary minor repairs" without a permit — but it doesn't define a specific size or dollar amount. That's left to local building officials.</p>
+          <p>It depends on where you live and the scope of work. Florida Building Code Section 105.2.2 allows "ordinary minor repairs" without a permit â but it doesn't define a specific size or dollar amount. That's left to local building officials.</p>
           <p>In Broward and Miami-Dade Counties, the rules are stricter. These are designated High Velocity Hurricane Zones (HVHZ), and <span className="text-white font-medium">Florida Building Code Section R4402.1.3</span> requires permits for "all work in connection with the application, repair, or maintenance of any roofing component." That means even small repairs technically require a permit.</p>
-          <p>We pull permits on every job — not just because it's the law, but because it protects you. Unpermitted work can void your insurance, create problems when you sell, and leave you with no recourse if something goes wrong.</p>
+          <p>We pull permits on every job â not just because it's the law, but because it protects you. Unpermitted work can void your insurance, create problems when you sell, and leave you with no recourse if something goes wrong.</p>
         </div>
       )
     },
@@ -132,14 +132,14 @@ export default function RoofRepairPage() {
       q: "What is the 5-year roof certification letter in Florida?",
       a: (
         <div className="space-y-4">
-          <p>Under <span className="text-white font-medium">Florida Statute 627.7011(5)</span>, insurance companies cannot drop your coverage solely because of your roof's age — if a licensed contractor certifies the roof has at least 5 years of remaining useful life.</p>
+          <p>Under <span className="text-white font-medium">Florida Statute 627.7011(5)</span>, insurance companies cannot drop your coverage solely because of your roof's age â if a licensed contractor certifies the roof has at least 5 years of remaining useful life.</p>
           <p className="font-medium text-white">Here's how it works:</p>
           <ul className="space-y-2 pl-5 list-disc">
             <li>If your roof is under 15 years old, insurers cannot refuse coverage based on age alone</li>
             <li>If your roof is 15 years or older, you have the right to an inspection before they can require replacement</li>
             <li>If that inspection shows 5+ years of useful life remaining, they cannot non-renew your policy based on roof age</li>
           </ul>
-          <p>As a <Link to="/licensed-roofing-contractor" className="text-red-600 hover:text-red-500 underline transition-colors">licensed roofing and general contractor</Link>, we're authorized under the statute to perform this inspection and provide the certification letter. A comprehensive roof restoration that addresses vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage and buying you time before a full replacement.</p>
+          <p>As a <Link to="/licensed-roofing-contractor" className="text-red-600 hover:text-red-500 underline transition-colors">licensed roofing and general contractor</Link>, we're authorized under the statute to perform this inspection and provide the certification letter. A comprehensive roof restoration that addresses vulnerable areas can bring your roof up to the standard needed for certification â protecting your coverage and buying you time before a full replacement.</p>
           <a
             href="https://www.flsenate.gov/Laws/Statutes/2022/0627.7011"
             target="_blank"
@@ -157,7 +157,7 @@ export default function RoofRepairPage() {
       a: (
         <div className="space-y-4">
           <p>Florida Building Code historically required that if you repair, replace, or recover more than 25% of a roof section in a 12-month period, the entire roof must be brought up to current code.</p>
-          <p>However, <span className="text-white font-medium">Florida Statute 553.844(5)</span> changed this in 2022. Now, if your roof was permitted after March 1, 2009 (under the 2007 Florida Building Code or later), only the repaired portion needs to meet current code — not the entire roof.</p>
+          <p>However, <span className="text-white font-medium">Florida Statute 553.844(5)</span> changed this in 2022. Now, if your roof was permitted after March 1, 2009 (under the 2007 Florida Building Code or later), only the repaired portion needs to meet current code â not the entire roof.</p>
           <p>This is significant for storm damage repairs. If your roof was properly permitted in the last 15 years and a hurricane damages 30% of it, you can repair just that section without being forced into a full replacement.</p>
           <p>We verify your roof's permit history and advise you on exactly what's required under current code.</p>
         </div>
@@ -184,7 +184,7 @@ export default function RoofRepairPage() {
       a: (
         <div className="space-y-4">
           <p>These are two separate things that often get confused.</p>
-          <p><strong className="text-white">Contractor Licensing (Florida Statute 489.103(9)):</strong> Work under $2,500 can be performed without a contractor's license — but this doesn't apply to anyone who advertises as a contractor or if the work is part of a larger project.</p>
+          <p><strong className="text-white">Contractor Licensing (Florida Statute 489.103(9)):</strong> Work under $2,500 can be performed without a contractor's license â but this doesn't apply to anyone who advertises as a contractor or if the work is part of a larger project.</p>
           <p><strong className="text-white">Building Permits (Florida Building Code):</strong> There's no statewide dollar threshold that exempts roof work from permits. In the High Velocity Hurricane Zone (Broward and Miami-Dade), permits are required for virtually all roofing work regardless of cost.</p>
           <p className="font-medium text-white">Bottom line: Just because someone can legally do a small job without a license doesn't mean it's exempt from permits. And in South Florida, roof repairs almost always require permits. If a contractor tells you otherwise, that's a red flag.</p>
         </div>
@@ -202,7 +202,7 @@ export default function RoofRepairPage() {
             <li><strong className="text-white">No recourse:</strong> If something fails, you may have limited legal recourse against the contractor</li>
             <li><strong className="text-white">Code violations:</strong> You could be required to tear off and redo the work with proper permits</li>
           </ul>
-          <p>In Florida's High Velocity Hurricane Zone, the permit process exists to ensure your roof can withstand hurricane-force winds. Skipping it isn't just illegal — it's dangerous.</p>
+          <p>In Florida's High Velocity Hurricane Zone, the permit process exists to ensure your roof can withstand hurricane-force winds. Skipping it isn't just illegal â it's dangerous.</p>
         </div>
       )
     }
@@ -272,10 +272,10 @@ export default function RoofRepairPage() {
 
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              We Don't Just Repair Your Roof — <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">We Restore It</span>
+              Roof Repair in South Florida — <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">We Don't Just Patch, We Restore</span>
             </h1>
             <p className="text-xl md:text-2xl text-zinc-300 mb-10 leading-relaxed">
-              Replacing a few shingles doesn't solve the problem. We restore your entire roof system to its original intent — extending its life, protecting your home, and keeping your insurance coverage intact.
+              Replacing a few shingles doesn't solve the problem. We restore your entire roof system to its original intent â extending its life, protecting your home, and keeping your insurance coverage intact.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -310,23 +310,23 @@ export default function RoofRepairPage() {
 
           <ul className="space-y-4 mb-10">
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">•</span>
+              <span className="text-red-600 mt-1">â¢</span>
               <span>A roof inspection has identified isolated, localized defects</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">•</span>
+              <span className="text-red-600 mt-1">â¢</span>
               <span>The roofing system retains measurable remaining service life</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">•</span>
+              <span className="text-red-600 mt-1">â¢</span>
               <span>Damage is limited to specific materials, penetrations, or transitions</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">•</span>
+              <span className="text-red-600 mt-1">â¢</span>
               <span>Structural decking and attachment systems remain functionally sound</span>
             </li>
             <li className="flex gap-3 text-zinc-300">
-              <span className="text-red-600 mt-1">•</span>
+              <span className="text-red-600 mt-1">â¢</span>
               <span>Repair can restore performance without compromising code compliance</span>
             </li>
           </ul>
@@ -374,7 +374,7 @@ export default function RoofRepairPage() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Why Spot Repairs Fail — And What Actually Works
+              Why Spot Repairs Fail â And What Actually Works
             </h2>
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
@@ -388,7 +388,7 @@ export default function RoofRepairPage() {
                 Here's what they didn't tell you: <strong className="text-white">If one area of your roof is failing, the rest isn't far behind.</strong> The shingles around that leak are the same age, took the same sun damage, and weathered the same storms. Patching one spot while ignoring the rest is just delaying the inevitable.
               </p>
               <p className="text-xl font-semibold text-white pt-4">
-                The smarter approach: Restore the entire affected slope. Replace all the vulnerable components — not just the one that failed first. Address the system, not the symptom.
+                The smarter approach: Restore the entire affected slope. Replace all the vulnerable components â not just the one that failed first. Address the system, not the symptom.
               </p>
             </div>
           </div>
@@ -403,7 +403,7 @@ export default function RoofRepairPage() {
               <span className="text-red-600 font-semibold">Our Approach</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Roof Restoration — The Smarter Alternative to Spot Repairs
+              Roof Restoration â The Smarter Alternative to Spot Repairs
             </h2>
             <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
               When you call us for a roof repair, we don't just fix the one thing you called about. We inspect every inch of your roof and give you the full picture.
@@ -417,7 +417,7 @@ export default function RoofRepairPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Comprehensive Inspection</h3>
               <p className="text-zinc-300 leading-relaxed">
-                While we're on your roof, we inspect everything — every slope, every flashing, every vent, every penetration. You'll know exactly where your roof stands, not just where the leak is.
+                While we're on your roof, we inspect everything â every slope, every flashing, every vent, every penetration. You'll know exactly where your roof stands, not just where the leak is.
               </p>
             </div>
 
@@ -437,7 +437,7 @@ export default function RoofRepairPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Honest Assessment</h3>
               <p className="text-zinc-300 leading-relaxed">
-                Sometimes a repair makes sense. Sometimes it doesn't. We'll tell you straight — if your roof needs replacement, we won't waste your money on repairs that won't last. And if restoration can buy you 5+ more years, we'll show you how.
+                Sometimes a repair makes sense. Sometimes it doesn't. We'll tell you straight â if your roof needs replacement, we won't waste your money on repairs that won't last. And if restoration can buy you 5+ more years, we'll show you how.
               </p>
             </div>
           </div>
@@ -448,7 +448,7 @@ export default function RoofRepairPage() {
                 "Our inspections focus on evidence, not guesses. We look for moisture intrusion paths, hidden damage, and installation issues, then back it up with photo documentation so homeowners and insurers can understand the condition without ambiguity."
               </p>
               <footer className="text-zinc-400">
-                — Graham D., Roof Inspector, All Phase Construction USA
+                â Graham D., Roof Inspector, All Phase Construction USA
               </footer>
             </blockquote>
           </div>
@@ -464,12 +464,12 @@ export default function RoofRepairPage() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              The 5-Year Roof Certification — Protect Your Insurance Coverage Under Florida Law
+              The 5-Year Roof Certification â Protect Your Insurance Coverage Under Florida Law
             </h2>
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
               <p>
-                Florida's insurance crisis is forcing carriers to drop homeowners with older roofs — sometimes even roofs with years of life left. But here's what most homeowners don't know:
+                Florida's insurance crisis is forcing carriers to drop homeowners with older roofs â sometimes even roofs with years of life left. But here's what most homeowners don't know:
               </p>
               <p className="text-2xl font-bold text-white py-4">
                 Florida Statute 627.7011(5) protects you.
@@ -506,7 +506,7 @@ export default function RoofRepairPage() {
               </p>
 
               <p className="text-white font-semibold">
-                Simple spot repairs usually won't qualify. But a full restoration that addresses the complete system? That's how you protect your coverage — and buy yourself time before a full replacement.
+                Simple spot repairs usually won't qualify. But a full restoration that addresses the complete system? That's how you protect your coverage â and buy yourself time before a full replacement.
               </p>
 
               <p>
@@ -551,7 +551,7 @@ export default function RoofRepairPage() {
               Roof Repairs & Restoration Services
             </h2>
             <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
-              From minor fixes to comprehensive restoration, we handle it all — and always with an eye toward long-term performance.
+              From minor fixes to comprehensive restoration, we handle it all â and always with an eye toward long-term performance.
             </p>
           </div>
 
@@ -591,7 +591,7 @@ export default function RoofRepairPage() {
                   <DollarSign className="w-5 h-5 text-green-500" />
                   Minor Repairs
                 </h3>
-                <p className="text-3xl font-bold text-white mb-2">$250 – $800</p>
+                <p className="text-3xl font-bold text-white mb-2">$250 â $800</p>
                 <ul className="space-y-2 text-zinc-400 text-sm">
                   <li>Single pipe boot replacement</li>
                   <li>Small flashing repair</li>
@@ -605,7 +605,7 @@ export default function RoofRepairPage() {
                   <DollarSign className="w-5 h-5 text-yellow-500" />
                   Moderate Repairs
                 </h3>
-                <p className="text-3xl font-bold text-white mb-2">$800 – $3,000</p>
+                <p className="text-3xl font-bold text-white mb-2">$800 â $3,000</p>
                 <ul className="space-y-2 text-zinc-400 text-sm">
                   <li>Valley flashing replacement</li>
                   <li>Multiple vent or pipe boot replacements</li>
@@ -619,7 +619,7 @@ export default function RoofRepairPage() {
                   <DollarSign className="w-5 h-5 text-orange-500" />
                   Major Restoration
                 </h3>
-                <p className="text-3xl font-bold text-white mb-2">$3,000 – $8,000</p>
+                <p className="text-3xl font-bold text-white mb-2">$3,000 â $8,000</p>
                 <ul className="space-y-2 text-zinc-400 text-sm">
                   <li>Full slope restoration with new underlayment</li>
                   <li>Complete flashing system replacement</li>
@@ -633,7 +633,7 @@ export default function RoofRepairPage() {
                   <DollarSign className="w-5 h-5 text-red-500" />
                   Extensive Restoration
                 </h3>
-                <p className="text-3xl font-bold text-white mb-2">$8,000 – $15,000+</p>
+                <p className="text-3xl font-bold text-white mb-2">$8,000 â $15,000+</p>
                 <ul className="space-y-2 text-zinc-400 text-sm">
                   <li>Multi-slope restoration with decking repairs</li>
                   <li>Hurricane damage requiring structural work</li>
@@ -729,12 +729,12 @@ export default function RoofRepairPage() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Storm Damage? We Document Everything — So You're Covered
+              Storm Damage? We Document Everything â So You're Covered
             </h2>
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed mb-10">
               <p>
-                After a hurricane or major storm, documentation is everything. When the adjuster arrives or your insurance company asks questions, you need proof — not just your word.
+                After a hurricane or major storm, documentation is everything. When the adjuster arrives or your insurance company asks questions, you need proof â not just your word.
               </p>
               <p>
                 We document every job thoroughly, from start to finish. You'll have a complete record of your roof's condition before repairs, during the work, and after completion.
@@ -880,7 +880,7 @@ export default function RoofRepairPage() {
 
           <div className="mt-10 p-6 bg-zinc-950 border border-zinc-800 rounded-xl">
             <p className="text-lg text-zinc-300 text-center">
-              <strong className="text-white">Not sure which option fits your situation?</strong> That's exactly what our free inspection is for. We'll assess your roof and give you honest recommendations — no pressure, no games.
+              <strong className="text-white">Not sure which option fits your situation?</strong> That's exactly what our free inspection is for. We'll assess your roof and give you honest recommendations â no pressure, no games.
             </p>
           </div>
         </div>
@@ -896,7 +896,7 @@ export default function RoofRepairPage() {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed mb-10">
               <p>
-                Roof repairs often uncover problems that go beyond the roof surface — rotted decking, structural damage, stucco issues at roof-to-wall transitions.
+                Roof repairs often uncover problems that go beyond the roof surface â rotted decking, structural damage, stucco issues at roof-to-wall transitions.
               </p>
               <p>
                 Most roofing contractors hit these problems and have to stop. They're not licensed to fix them.
@@ -973,7 +973,7 @@ export default function RoofRepairPage() {
       <section className="py-20 bg-zinc-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Roof Repair Questions — Answered
+            Roof Repair Questions â Answered
           </h2>
 
           <div className="space-y-6">
@@ -993,10 +993,10 @@ export default function RoofRepairPage() {
       <section className="py-20 bg-gradient-to-b from-zinc-900 to-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Restore Your Roof — Not Just Patch It?
+            Ready to Restore Your Roof â Not Just Patch It?
           </h2>
           <p className="text-xl text-zinc-300 mb-10 leading-relaxed">
-            Schedule your free comprehensive roof inspection. We'll assess every inch of your roof, identify all vulnerable areas, and give you honest options — from repair to restoration to replacement.
+            Schedule your free comprehensive roof inspection. We'll assess every inch of your roof, identify all vulnerable areas, and give you honest options â from repair to restoration to replacement.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -1052,7 +1052,7 @@ export default function RoofRepairPage() {
             excerpt: "Learn how postponing necessary roof repairs can lead to significantly higher costs and more extensive damage."
           },
           {
-            title: "Don't Replace Your Roof — Restore It Instead",
+            title: "Don't Replace Your Roof â Restore It Instead",
             url: "/blog/dont-replace-your-roof-restore-it-instead",
             excerpt: "Discover when roof restoration is a viable alternative to full replacement, saving you money while extending roof life."
           }
