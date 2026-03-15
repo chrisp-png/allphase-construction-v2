@@ -243,93 +243,47 @@ export function generateLocalBusinessSchema(city: string, county: string): objec
 /**
  * Helper to inject schema into page head
  */
-  // Prevent duplicate FAQPage schemas - prerender already handles these
+export function injectSchema(schema: object): void {
   const schemaType = (schema as any)['@type'];
   if (schemaType === 'FAQPage') {
-        const existing = document.querySelectorAll('script[type="application/ld+json"]');
-        for (const el of existing) {
-                try {
-                          const parsed = JSON.parse(el.textContent || '');
-                          if (parsed['@type'] === 'FAQPage' || (Array.isArray(parsed) && parsed.some((s: any) => s['@type'] === 'FAQPage'))) {
-                                      return; // FAQPage already exists from prerender, skip injection
-                          }
-                        / /  }P rceavtecnht  (deu)p l{i c/a*t ei gFnAoQrPea gpea rssceh eemrarso r-s  p*r/e r}e
-          n d e r  }a
-    l r e}a
-d y  choannsdtl essc rtihpets e=
-    d occounmsetn ts.cchreemaatTeyEplee m=e n(ts(c'hsecmrai pats' )a;n
-y ) [s'c@rtiyppte.'t]y;p
-e   =i f' a(pspclhiecmaatTiyopne/ l=d=+=j s'oFnA'Q;P
-  a g es'c)r i{p
-  t . t e xcto n=s tJ SeOxNi.ssttirnign g=i fdyo(csucmheenmta.)q;u
-e r ydSoecluemcetnotr.Ahlela(d'.sacprpiepntd[Cthyipled=("sacprpilpitc)a;tion/ld+json"]');
+    const existing = document.querySelectorAll('script[type="application/ld+json"]');
     for (const el of existing) {
-            try {
-                      const parsed = JSON.parse(el.textContent || '');
-                      if (parsed['@type'] === 'FAQPage' || (Array.isArray(parsed) && parsed.some((s: any) => s['@type'] === 'FAQPage'))) {
-                                  return; // FAQPage already exists from prerender, skip injection
-                      }
-            } catch (e) { /* ignore parse errors */ }
+      try {
+        const parsed = JSON.parse(el.textContent || '');
+        if (parsed['@type'] === 'FAQPage' || (Array.isArray(parsed) && parsed.some((s: any) => s['@type'] === 'FAQPage'))) {
+          return;
+        }
+      } catch (e) { /* ignore parse errors */ }
     }
-}
-  const script = document.c
-  document.head.appendChild(script);
-reateElement('script');
+  }
+  const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.text = JSON.stringify(schema);
-  document.head.appendChild(script);}
+  document.head.appendChild(script);
+}
 
 /**
  * Helper to inject multiple schemas at once
-   const scripts: HTMLScriptElement[] = [];
-
-       // Check which schema types already exist from prerender
-         const existingTypes = new Set<string>();
-           document.querySelectorAll('script[type="application/ld+json"]').forEach(el => {
-               try {
-                     const parsed = JSON.parse(el.textContent || '');
-                           if (parsed['@type']) existingTypes.add(parsed['@type']);
-                                 if (Array.isArray(parsed)) parsed.forEach((s: any) => { if (s['@type']) existingTypes.add(s['@ty p ec'o]n)s;t  }s)c;r
-                                 i p t s :}  HcTaMtLcShc r(iep)t E{l e/m*e nitg[n]o r=e  [*]/; 
-                                 } 
-
-                                     } )/;/
-                                       C h
-                                       e c ks cwhheimcahs .sfcohreEmaac ht(yspcehse maal r=e>a d{y
-                                         e x i scto nfsrto ms cphreemraeTnydpeer 
-                                         =   (csocnhsetm ae xaiss tainnyg)T[y'p@etsy p=e 'n]e;w
-                                           S e t </s/t rSiknigp> (i)f; 
-                                           t h idso csucmheenmta. qtuyeprey Saellreecatdoyr Aelxli(s'tssc rfirpotm[ tpyrpeer=e"nadpeprl
-                                           i c a t iiofn /(lsdc+hjesmoanT"y]p'e) .&f&o reExaicsht(ienlg T=y>p e{s
-                                           . h a s (tsrcyh e{m
-                                           a T y p e ) )c ornesttu rpna;r
-                                           s e d   =
-                                             J S O Nc.opnasrts es(cerli.ptte x=t Cdoonctuemnetn t|.|c r'e'a)t;e
-                                             E l e m e n ti(f' s(cprairpste'd)[;'
-                                             @ t y p es'c]r)i petx.itsytpien g=T y'paepsp.laidcda(tpiaorns/eldd[+'j@stoynp'e;'
-                                             ] ) ; 
-                                               s c r i p ti.ft e(xAtr r=a yJ.SiOsNA.rsrtaryi(npgairfsye(ds)c)h epmaar)s;e
-                                               d . f o rdEoaccuhm(e(nst:. haenayd). a=p>p e{n diCfh i(lsd[('s@ctryippet')];)
-                                                 e x i sstcirnigpTtysp.epsu.sahd(ds(csr[i'p@tt)y;p
-                                                 e ' ]}));; });
-                                                     } catch (e) { /* ignore */ }
-});
-
-  schemas.forEach(schema => {
-        const schemaType = (schema as any)['@type'];
-        // Skip if this schema type already exists from prerender
-        if (schemaType && existingTypes.has(schemaType)) return;
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(schema);
-        document.head.appendChild(script);
-        scripts.push(script);
+ */
+export function injectMultipleSchemas(schemas: object[]): () => void {
+  const scripts: HTMLScriptElement[] = [];
+  const existingTypes = new Set<string>();
+  document.querySelectorAll('script[type="application/ld+json"]').forEach(el => {
+    try {
+      const parsed = JSON.parse(el.textContent || '');
+      if (parsed['@type']) existingTypes.add(parsed['@type']);
+      if (Array.isArray(parsed)) parsed.forEach((s: any) => { if (s['@type']) existingTypes.add(s['@type']); });
+    } catch (e) { /* ignore */ }
   });
+  schemas.forEach(schema => {
+    const schemaType = (schema as any)['@type'];
+    if (schemaType && existingTypes.has(schemaType)) return;
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
     scripts.push(script);
   });
-
-  // Return cleanup function
   return () => {
     scripts.forEach(script => {
       if (script.parentNode) {
