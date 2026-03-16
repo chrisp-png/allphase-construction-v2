@@ -63,8 +63,8 @@ export default function MiramarMoneyPage() {
       answer: 'Yes. We serve all Miramar neighborhoods and zip codes including 33023, 33025, 33027, and 33029. From Silver Shores and Monarch Lakes to Sunset Lakes and Riviera Isles, our crews are familiar with the specific HOA requirements and architectural styles throughout the city. We also serve all surrounding Broward County communities.'
     },
     {
-      question: 'Can you help with insurance claims for storm damage in Miramar?',
-      answer: 'Absolutely. We provide thorough storm damage documentation including detailed photo reports, moisture mapping, and damage assessments that support your insurance claim. Our team works alongside your adjuster to ensure nothing is missed. We handle the full process from emergency tarping through final inspection sign-off.'
+      question: 'Do you provide storm damage documentation?',
+      answer: 'Yes. We provide thorough storm damage documentation including detailed photo reports, moisture mapping, and condition assessments. This documentation is yours to use however you need — whether for your own records, your insurer, or any other purpose. Our focus is on assessing the damage accurately and getting your roof repaired or replaced properly.'
     }
   ];
 

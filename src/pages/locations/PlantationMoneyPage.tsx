@@ -59,8 +59,8 @@ export default function PlantationMoneyPage() {
       answer: 'Significantly. Properties near Plantation\'s western edge face elevated ambient moisture levels that accelerate underlayment degradation and promote mold growth beneath roofing materials. All Phase Construction USA specifies materials and ventilation systems designed for Plantation\'s unique microclimate — including proper ridge vent and soffit ventilation — not just standard South Florida conditions.'
     },
     {
-      question: 'Do you help with insurance claims for storm damage?',
-      answer: 'Absolutely. We provide detailed documentation including comprehensive photo reports, moisture mapping, and damage assessments that support your insurance claim. We meet with adjusters on-site and have nearly two decades of experience navigating Florida storm damage claims. From emergency tarping through final inspection sign-off, we manage the entire process.'
+      question: 'Do you provide storm damage documentation?',
+      answer: 'Yes. We provide thorough storm damage documentation including detailed photo reports, moisture mapping, and condition assessments. This documentation is yours to use however you need — whether for your own records, your insurer, or any other purpose. Our focus is on assessing the damage accurately and getting your roof repaired or replaced properly.'
     },
     {
       question: 'How often should Plantation roofs be inspected?',
@@ -268,7 +268,7 @@ export default function PlantationMoneyPage() {
                   <div>
                     <h3 className="text-xl font-bold mb-3">Detailed Written Estimate</h3>
                     <p className="text-zinc-400 leading-relaxed">
-                      Clear breakdown of material options (<Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">asphalt shingles</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal roofing</Link>, <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>), project timeline, and pricing. Insurance claim assistance with full photo documentation. Material selection guidance for Plantation's unique humidity and HOA requirements.
+                      Clear breakdown of material options (<Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">asphalt shingles</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal roofing</Link>, <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>), project timeline, and pricing. Detailed photo documentation for your records. Material selection guidance for Plantation's unique humidity and HOA requirements.
                     </p>
                   </div>
                 </div>
@@ -398,17 +398,17 @@ export default function PlantationMoneyPage() {
                   <h3 className="text-lg font-bold">Roof Inspections</h3>
                 </div>
                 <p className="text-zinc-400 leading-relaxed text-sm">
-                  Free comprehensive <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">roof inspections</Link> for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with honest recommendations.
+                  Free comprehensive <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">roof inspections</Link> for your records, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with honest recommendations.
                 </p>
               </div>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Wind className="w-6 h-6 text-red-500" />
-                  <h3 className="text-lg font-bold">Storm Damage & Insurance</h3>
+                  <h3 className="text-lg font-bold">Storm Damage & Documentation</h3>
                 </div>
                 <p className="text-zinc-400 leading-relaxed text-sm">
-                  Storm damage shouldn't mean battling paperwork alone. We provide detailed documentation, meet with adjusters, and advocate for you throughout the claims process — ensuring fair coverage for necessary repairs or replacement.
+                  Storm damage requires thorough documentation. We provide detailed photo reports, moisture mapping, and condition assessments that are yours to use however you need. Our focus is on accurate assessment and getting your roof properly repaired or replaced.
                 </p>
               </div>
 
@@ -492,7 +492,7 @@ export default function PlantationMoneyPage() {
                   ))}
                 </div>
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
-                  "After the hurricane, we had water stains spreading across our ceiling. All Phase Construction USA came out the same day, handled our insurance claim, and our complete roof replacement was done in three days. Outstanding work!"
+                  "After the hurricane, we had water stains spreading across our ceiling. All Phase Construction USA came out the same day, handled the permits, and our complete roof replacement was done in three days. Outstanding work!"
                 </p>
                 <p className="text-zinc-500 font-semibold">— The Rodriguez Family, Plantation</p>
               </div>

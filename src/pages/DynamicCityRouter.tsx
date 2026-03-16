@@ -55,6 +55,7 @@ const GreenacresRoofInspectionPage = lazy(() => import('./GreenacresRoofInspecti
 const SunriseRoofInspectionPage = lazy(() => import('./SunriseRoofInspectionPage'));
 
 const HollywoodMoneyPage = lazy(() => import('./locations/HollywoodMoneyPage'));
+const LauderhillMoneyPage = lazy(() => import('./locations/LauderhillMoneyPage'));
 const MiramarMoneyPage = lazy(() => import('./locations/MiramarMoneyPage'));
 const PembrokePinesMoneyPage = lazy(() => import('./locations/PembrokePinesMoneyPage'));
 const PlantationMoneyPage = lazy(() => import('./locations/PlantationMoneyPage'));
@@ -76,6 +77,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'fort-lauderdale': FortLauderdaleMoneyPage,
   'hollywood': HollywoodMoneyPage,
   'jupiter': JupiterPage,
+  'lauderhill': LauderhillMoneyPage,
   'miramar': MiramarMoneyPage,
   'pembroke-pines': PembrokePinesMoneyPage,
   'plantation': PlantationMoneyPage,

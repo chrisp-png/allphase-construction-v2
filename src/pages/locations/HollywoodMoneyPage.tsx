@@ -325,7 +325,7 @@ export default function HollywoodMoneyPage() {
               <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">Storm & Wind Damage</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  Hollywood's coastal position makes it particularly vulnerable to hurricane and tropical storm damage. We provide emergency <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">roof repair</Link> response, insurance claim documentation, and full storm damage restoration for Hollywood properties.
+                  Hollywood's coastal position makes it particularly vulnerable to hurricane and tropical storm damage. We provide emergency <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">roof repair</Link> response, thorough condition documentation, and full storm damage restoration for Hollywood properties.
                 </p>
               </div>
             </div>

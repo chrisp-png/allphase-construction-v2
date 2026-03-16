@@ -56,15 +56,15 @@ export default function PembrokePinesMoneyPage() {
     },
     {
       question: 'Do you offer financing for roof upgrades?',
-      answer: 'Yes. We offer flexible financing options to qualified homeowners, making premium materials accessible without large upfront payments. If you\'re filing an insurance claim for storm damage, we also assist with documentation and can work with your claim timeline for payment coordination. Visit our financing page or call (754) 227-5605 for details.'
+      answer: 'Yes. We offer flexible financing options to qualified homeowners, making premium materials accessible without large upfront payments. Visit our financing page or call (754) 227-5605 for details.'
     },
     {
       question: 'How much does a roof replacement cost in Pembroke Pines?',
       answer: 'For standard single-family homes (1,500–2,200 sq ft), asphalt shingle roof replacement typically ranges from $8,000–$12,000. Premium upgrades to metal roofing, clay tiles, or impact-resistant materials run $16,000–$27,000+ depending on material and home size. HOA community projects receive volume pricing with significant per-unit savings. Contact us for a free estimate specific to your property.'
     },
     {
-      question: 'Can you help with insurance claims for storm damage?',
-      answer: 'Absolutely. All Phase Construction USA provides thorough storm damage documentation including detailed photo reports, moisture mapping, and damage assessments that support your insurance claim. We work alongside your adjuster to ensure nothing is missed and handle the full process from emergency tarping through final inspection sign-off.'
+      question: 'Do you provide storm damage documentation?',
+      answer: 'Yes. We provide thorough storm damage documentation including detailed photo reports, moisture mapping, and condition assessments. This documentation is yours to use however you need — whether for your own records, your insurer, or any other purpose. Our focus is on assessing the damage accurately and getting your roof repaired or replaced properly.'
     }
   ];
 

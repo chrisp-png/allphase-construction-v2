@@ -91,7 +91,7 @@ export default function TamaracMoneyPage() {
     },
     {
       title: 'Roof Inspections',
-      description: '21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation with detailed photo reports.',
+      description: '21-point inspections for your records, pre-purchase evaluations, routine maintenance, and post-storm documentation with detailed photo reports.',
       path: '/roof-inspection/',
       icon: Shield
     },
@@ -115,8 +115,8 @@ export default function TamaracMoneyPage() {
       description: 'Scheduled within 24-48 hours. Thorough inspection covering sagging sections, damaged flashing, deteriorated underlayment, hidden water damage, and signs of active leaks. Detailed written estimate, no pressure, no hidden fees.'
     },
     {
-      title: 'Insurance Claim Assistance and Material Selection',
-      description: 'Full photo documentation for insurance claims. Material selection guidance for Tamarac\'s housing stock — much of which was built in the 1960s and 1970s and is entering second and third replacement cycles, where structural findings during tear-off are common.'
+      title: 'Documentation and Material Selection',
+      description: 'Full photo documentation for your records. Material selection guidance for Tamarac\'s housing stock — much of which was built in the 1960s and 1970s and is entering second and third replacement cycles, where structural findings during tear-off are common.'
     },
     {
       title: 'Professional Installation with Permits',
@@ -178,8 +178,8 @@ export default function TamaracMoneyPage() {
       answer: 'Every roofing installation in Tamarac must meet Broward County\'s High Velocity Hurricane Zone standards — 175+ mph wind resistance, HVHZ-approved materials, enhanced fastening schedules, and engineered roof-to-wall connections. All Phase handles all permitting and HVHZ compliance documentation in-house.'
     },
     {
-      question: 'How do you handle insurance claims for storm damage in Tamarac?',
-      answer: 'We provide comprehensive photo documentation, detailed damage assessments, and written estimates. We meet with adjusters on-site and have nearly two decades navigating Florida storm damage claims. Tamarac homeowners frequently need insurance documentation after tropical storms track through central Broward County.'
+      question: 'Do you provide storm damage documentation?',
+      answer: 'Yes. We provide thorough storm damage documentation including detailed photo reports, moisture mapping, and condition assessments. This documentation is yours to use however you need — whether for your own records, your insurer, or any other purpose. Our focus is on assessing the damage accurately and getting your roof repaired or replaced properly.'
     },
     {
       question: 'How much does roof replacement cost in Tamarac?',

@@ -37,7 +37,7 @@ export default function SunrisePage() {
     },
     {
       title: 'Roof Inspections',
-      description: '21-point inspections for insurance claims, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.'
+      description: '21-point inspections for your records, pre-purchase evaluations, routine maintenance, and post-storm documentation. Detailed photo reports with prioritized repair recommendations.'
     },
     {
       title: 'Permitting',
@@ -70,8 +70,8 @@ export default function SunrisePage() {
       description: 'Scheduled within 24 hours. Comprehensive inspection covering surface materials, flashing, underlayment, ventilation, deck condition, and any penetrations. Detailed written estimate, no pressure, no hidden fees.'
     },
     {
-      title: 'Material Selection and Insurance Assistance',
-      description: 'Full photo documentation for insurance claims. Material selection guidance for Sunrise\'s HVHZ requirements and HOA standards where applicable.'
+      title: 'Material Selection and Documentation',
+      description: 'Full photo documentation for your records. Material selection guidance for Sunrise\'s HVHZ requirements and HOA standards where applicable.'
     },
     {
       title: 'Professional Installation with Permits',
@@ -111,8 +111,8 @@ export default function SunrisePage() {
       answer: 'All materials we install are HVHZ compliant and rated for Broward County\'s wind requirements. Tile offers the best longevity (40-60 years) and thermal performance. Metal provides the best hurricane resistance and energy efficiency. Architectural shingles deliver the best value. HOA guidelines factor into material selection in communities like Sunrise Golf Village.'
     },
     {
-      question: 'Do you help with insurance claims for storm damage?',
-      answer: 'Yes. We document damage thoroughly with photos and detailed reports, and our nearly two decades of experience with Broward County adjusters means faster approvals and fair coverage for repairs.'
+      question: 'Do you provide storm damage documentation?',
+      answer: 'Yes. We provide thorough storm damage documentation including detailed photo reports, moisture mapping, and condition assessments. This documentation is yours to use however you need — whether for your own records, your insurer, or any other purpose. Our focus is on assessing the damage accurately and getting your roof repaired or replaced properly.'
     },
     {
       question: 'How often should Sunrise roofs be inspected?',
