@@ -101,8 +101,8 @@
       "canonical": "https://allphaseconstructionfl.com/flat-roofing"
     },
     "/roof-repair": {
-      "title": "Roof Repair Deerfield Beach & South Florida | All Phase",
-      "description": "Roof repair in Deerfield Beach & South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle & flat roof repairs. Free inspections.",
+      "title": "Roof Repair South Florida | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in Broward & Palm Beach County. Emergency patching, flashing failures, wind uplift & missing shingles. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/roof-repair"
     },
     "/easy-payments": {
@@ -131,8 +131,8 @@
       "canonical": "https://allphaseconstructionfl.com/frequently-asked-questions"
     },
     "/locations/deerfield-beach": {
-      "title": "Roofing Contractor Deerfield Beach FL | All Phase",
-      "description": "Deerfield Beach roofing - dual-licensed (CCC-1331464 & CGC-1526236), HVHZ-certified. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.",
+      "title": "Roofing Contractor Deerfield Beach FL | Roof Replacement | All Phase",
+      "description": "Roof replacement HQ in Deerfield Beach, FL. Dual-licensed (CCC-1331464 & CGC-1526236), HVHZ-certified. Tile, metal, shingle & flat. Free estimate. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/locations/deerfield-beach"
     },
     "/locations/deerfield-beach/service-area": {
@@ -206,33 +206,53 @@
       "canonical": "https://allphaseconstructionfl.com/roof-inspection/lake-worth"
     },
     "/roof-repair/deerfield-beach": {
-      "title": "Deerfield Beach Roof Repair | All Phase USA",
-      "description": "Emergency roof repair in Deerfield Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.",
+      "title": "Deerfield Beach Roof Repair | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in Deerfield Beach, FL. Emergency patching, flashing failures & wind damage. Insurance coordination. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/roof-repair/deerfield-beach"
     },
     "/roof-repair/pompano-beach": {
-      "title": "Pompano Beach Roof Repair | All Phase USA",
-      "description": "Emergency roof repair in Pompano Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.",
+      "title": "Pompano Beach Roof Repair | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in Pompano Beach, FL. Emergency patching, flashing failures & missing shingles. Same-day response. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/roof-repair/pompano-beach"
     },
+    "/roof-repair/fort-lauderdale": {
+      "title": "Fort Lauderdale Roof Repair | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in Fort Lauderdale, FL. Emergency patching, wind damage, flashing failures & missing shingles. Same-day response. (754) 227-5605.",
+      "canonical": "https://allphaseconstructionfl.com/roof-repair/fort-lauderdale"
+    },
+    "/roof-repair/west-palm-beach": {
+      "title": "West Palm Beach Roof Repair | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in West Palm Beach, FL. Emergency patching, flashing failures & wind damage. Same-day response. (754) 227-5605.",
+      "canonical": "https://allphaseconstructionfl.com/roof-repair/west-palm-beach"
+    },
+    "/roof-repair/boca-raton": {
+      "title": "Boca Raton Roof Repair | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in Boca Raton, FL. Emergency patching, tile cracks, flashing failures & wind uplift. Same-day response. (754) 227-5605.",
+      "canonical": "https://allphaseconstructionfl.com/roof-repair/boca-raton"
+    },
+    "/roof-repair/coral-springs": {
+      "title": "Coral Springs Roof Repair | Leaks & Storm Damage | All Phase",
+      "description": "Roof leak and storm damage repair in Coral Springs, FL. Emergency patching, flashing failures & wind damage. HVHZ-certified. Same-day response. (754) 227-5605.",
+      "canonical": "https://allphaseconstructionfl.com/roof-repair/coral-springs"
+    },
     "/locations/west-palm-beach": {
-      "title": "West Palm Beach Roofing Contractor | All Phase USA",
-      "description": "Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605",
+      "title": "West Palm Beach Roofing Contractor | Roof Replacement | All Phase",
+      "description": "Roof replacement in West Palm Beach, FL. Historic district expertise, tile, metal & shingle re-roofs. Dual-licensed, HVHZ-certified. Free estimate. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/locations/west-palm-beach"
     },
     "/locations/pompano-beach": {
-      "title": "Pompano Beach Roofing Contractor | All Phase USA",
-      "description": "Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.",
+      "title": "Pompano Beach Roofing Contractor | Roof Replacement | All Phase",
+      "description": "Roof replacement contractor in Pompano Beach, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/locations/pompano-beach"
     },
     "/locations/coral-springs": {
-      "title": "Coral Springs Roofing Contractor | All Phase USA",
-      "description": "Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.",
+      "title": "Coral Springs Roofing Contractor | Roof Replacement | All Phase",
+      "description": "Roof replacement contractor in Coral Springs, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/locations/coral-springs"
     },
     "/locations/fort-lauderdale": {
-      "title": "Fort Lauderdale Roofing Contractor | All Phase USA",
-      "description": "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.",
+      "title": "Fort Lauderdale Roofing Contractor | Roof Replacement | All Phase",
+      "description": "Roof replacement experts in Fort Lauderdale, FL. Tile, metal, shingle & flat re-roofs. Dual-licensed, HVHZ-certified. 2,500+ projects. Free estimate. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/locations/fort-lauderdale"
     },
     "/locations/fort-lauderdale/best-roofers-fort-lauderdale": {
