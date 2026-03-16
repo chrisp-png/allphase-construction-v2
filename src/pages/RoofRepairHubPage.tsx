@@ -33,11 +33,9 @@ export default function RoofRepairHubPage() {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  // NOTE: "Is it better to repair a roof or replace it?" was removed from this FAQ list
+  // to avoid duplicate FAQ schema — that question lives on /frequently-asked-questions.
   const faqItems = [
-    {
-      question: "Is it better to repair a roof or replace it?",
-      answer: "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashings—addressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute § 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
-    },
     {
       question: "Do roof repairs have to meet Florida Building Code requirements?",
       answer: "Roof repairs should be completed in a way that aligns with applicable Florida Building Code requirements for the scope of work and the areas being repaired. Code considerations can vary based on roof type, the extent of the repair, and what components are being disturbed or replaced. A licensed roofing contractor can identify the relevant code requirements during the inspection and repair planning process."

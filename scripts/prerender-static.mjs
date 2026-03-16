@@ -1650,8 +1650,7 @@ async function generateStaticFiles() {
   '/roof-repair': {
     faqs: [
       { question: 'How quickly can you respond to emergency roof repairs?', answer: 'We offer same-day emergency response throughout Broward and Palm Beach County. Call (754) 227-5605 and we can dispatch a crew within 2-4 hours for an active leak.' },
-      { question: 'Does homeowner insurance cover roof repair in Florida?', answer: 'Most Florida homeowner policies cover storm and wind damage. We work directly with insurance adjusters and can document damage for your claim at no extra charge.' },
-      { question: 'How do I know if I need a repair or full replacement?', answer: 'If your roof is under 15 years old and damage is localized, repair is usually the right call. Our free inspection identifies whether targeted repair or full replacement delivers better value.' },
+      { question: 'What types of roof damage can be repaired instead of replaced?', answer: 'Localized leaks, cracked or missing tiles, damaged flashing around vents and pipes, and wind-lifted shingles on an otherwise sound roof are all good candidates for repair rather than full replacement.' },
       { question: 'Are you licensed for roof repairs in Broward and Palm Beach County?', answer: 'Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464, covering all repair work in Broward and Palm Beach County.' }
     ],
     breadcrumbs: [
@@ -1688,9 +1687,8 @@ async function generateStaticFiles() {
   },
   '/residential-roofing': {
     faqs: [
-      { question: 'What roofing materials are best for South Florida homes?', answer: 'Metal, tile, and PVC flat systems perform best in HVHZ conditions. Architectural shingles are also popular for their cost and appearance when properly wind-rated for 130+ mph.' },
-      { question: 'How long does a residential roof replacement take?', answer: 'Most residential replacements are completed in 1-3 days. We protect your property with tarps and complete full debris removal before the final walkthrough.' },
-      { question: 'Do you offer financing for residential roofing projects?', answer: 'Yes. We offer flexible financing options for residential roofing. Call (754) 227-5605 to discuss payment plans that work within your budget.' },
+      { question: 'What makes residential roofing different from commercial in South Florida?', answer: 'Residential roofing involves steeper pitches, aesthetic considerations for HOA compliance, and homeowner-specific insurance requirements. Commercial projects use different membrane systems and have distinct code requirements for larger roof areas.' },
+      { question: 'Can you match my existing roof tiles or shingles for a partial repair?', answer: 'In most cases, yes. We stock a wide range of profiles and colors and work with distributors to match existing installations as closely as possible.' },
       { question: 'Are you licensed to work on homes in Broward and Palm Beach County?', answer: 'Yes. All Phase holds Florida Certified Roofing Contractor license CCC-1331464 covering all residential roofing work throughout Broward and Palm Beach County.' }
     ],
     breadcrumbs: [
@@ -1724,24 +1722,16 @@ async function generateStaticFiles() {
     ],
     faqs: [
       {
-        question: 'How do I know if I need a full roof replacement vs. a repair?',
-        answer: 'If your roof is over 20 years old, has widespread shingle damage, persistent leaks, or significant decking rot, replacement is typically more cost-effective than repeated repairs. We provide free inspections to give you an honest assessment.'
-      },
-      {
-        question: 'How long does a roof replacement take in South Florida?',
-        answer: 'Most residential roof replacements in Broward and Palm Beach Counties take 1–3 days depending on roof size, pitch, and material. We work efficiently to minimize disruption to your household.'
-      },
-      {
-        question: 'What roofing materials are best for South Florida homes?',
-        answer: 'Asphalt shingles, concrete tile, and metal roofing are the most popular choices for South Florida. Each has different cost, longevity, and wind resistance profiles — we help homeowners choose based on their budget and HOA requirements.'
+        question: 'What happens to my old roof during replacement?',
+        answer: 'We tear off the existing roof system down to the deck, inspect for rot or soft spots, repair any damaged sheathing, then install the new system. Full debris removal and magnetic nail sweep are included.'
       },
       {
         question: 'Is a permit required for roof replacement in Broward County?',
         answer: 'Yes, Florida law requires a permit for full roof replacements. As licensed contractor CCC-1331464, All Phase Construction USA pulls all required permits and ensures full code compliance on every project.'
       },
       {
-        question: 'Do you offer financing for roof replacement?',
-        answer: 'Yes. We work with financing partners to offer flexible payment options so South Florida homeowners can get the roof they need without waiting. Ask about current financing programs during your free estimate.'
+        question: 'What warranty do you provide on a new roof?',
+        answer: 'We provide manufacturer material warranties (typically 25-50 years depending on system) plus our workmanship warranty. All installations meet or exceed Florida Building Code HVHZ requirements.'
       }
     ]
   },
