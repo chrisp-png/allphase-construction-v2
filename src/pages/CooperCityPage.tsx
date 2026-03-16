@@ -305,7 +305,7 @@ export default function CooperCityPage() {
                 <li>Preventative maintenance to extend roof life and reduce leak risk</li>
               </ul>
               <p className="pt-4">
-                Explore our services: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link> Â· <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing</Link> Â· <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link> Â· <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing</Link>
+                Explore our services: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link> · <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing</Link> · <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link> · <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing</Link>
               </p>
             </div>
           </div>

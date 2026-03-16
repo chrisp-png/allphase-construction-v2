@@ -31,7 +31,7 @@ const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 function getBundledAssets() {
   const mainIndexPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(mainIndexPath)) {
-    console.error('â dist/index.html not found. Run Vite build first.');
+    console.error('❌ dist/index.html not found. Run Vite build first.');
     process.exit(1);
   }
 
@@ -41,7 +41,7 @@ function getBundledAssets() {
   const jsMatch = content.match(/src="(\/assets\/index-[^"]+\.js)"/);
 
   if (!cssMatch || !jsMatch) {
-    console.error('â Could not find bundled assets in dist/index.html');
+    console.error('❌ Could not find bundled assets in dist/index.html');
     console.error('CSS found:', !!cssMatch, 'JS found:', !!jsMatch);
     process.exit(1);
   }
@@ -139,7 +139,7 @@ function getSEOMetadata(urlPath, cityName = null) {
   // Fallback - FAIL LOUDLY if metadata missing
   // This prevents silent injection of wrong metadata at build time
   throw new Error(
-    `â MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
+    `❌ MISSING METADATA FOR ROUTE: ${normalizedPath}\n` +
     `Add explicit metadata to scripts/seo-titles.json or handle this route in getSEOMetadata().\n` +
     `Routes should NOT rely on fallback metadata - every route must be explicitly defined.`
   );
@@ -434,7 +434,7 @@ function createHybridHTMLPage(title, description, canonical, seoContent, cityNam
  * Generate all hybrid city pages
  */
 function generateHybridCityPages() {
-  console.log('\nðï¸  Generating Hybrid Prerendered City Pages...\n');
+  console.log('\n🏗️  Generating Hybrid Prerendered City Pages...\n');
 
   // Get bundled assets
   const assets = getBundledAssets();
@@ -518,7 +518,7 @@ function generateHybridCityPages() {
   });
 
   console.log(`\n✅ Hybrid City Pages Complete! Generated ${totalPages} prerendered pages.\n`);
-  console.log(`ð Breakdown:`);
+  console.log(`📊 Breakdown:`);
   console.log(`   - City Service Hubs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Repairs: ${totalPages / 3} pages`);
   console.log(`   - City Roof Inspections: ${totalPages / 3} pages`);

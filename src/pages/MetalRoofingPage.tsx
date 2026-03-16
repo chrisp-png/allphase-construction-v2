@@ -560,7 +560,7 @@ export default function MetalRoofingPage() {
               </div>
               <div className="flex items-center gap-4 pb-3 border-b border-zinc-800">
                 <span className="text-red-500 font-bold text-lg w-24">24 gauge</span>
-                <span className="text-white font-semibold">Industry standard for quality residential/commercial â Our Standard</span>
+                <span className="text-white font-semibold">Industry standard for quality residential/commercial ← Our Standard</span>
               </div>
               <div className="flex items-center gap-4 pb-3 border-b border-zinc-800">
                 <span className="text-yellow-500 font-bold text-lg w-24">26 gauge</span>
@@ -583,7 +583,7 @@ export default function MetalRoofingPage() {
               </div>
               <div className="flex items-center gap-4">
                 <span className="text-red-500 font-bold text-lg w-24">.032"</span>
-                <span className="text-white font-semibold">Standard residential â Our Standard</span>
+                <span className="text-white font-semibold">Standard residential ← Our Standard</span>
               </div>
             </div>
           </div>

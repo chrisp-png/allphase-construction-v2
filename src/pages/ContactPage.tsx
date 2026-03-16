@@ -223,7 +223,7 @@ export default function ContactPage() {
                   </button>
                   <h2 className="text-2xl font-bold text-white mb-6">Let's get your inspection scheduled</h2>
                   <form action="https://formspree.io/f/mvzodbwp" method="POST" onSubmit={handleSubmit} className="space-y-6">
-                    <input type="hidden" name="_subject" value="ð New Contact Page Submission" />
+                    <input type="hidden" name="_subject" value="📋 New Contact Page Submission" />
                     <input type="hidden" name="form_source" value="Contact Page Multi-Step Form" />
                     <input type="hidden" name="projectType" value={`${jobType} - ${roofType}`} />
 

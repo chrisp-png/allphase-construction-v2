@@ -192,7 +192,7 @@ export default function EasyPaymentsPage() {
                     aria-label="Decrease down payment"
                     className="px-3 py-1.5 bg-slate-700 border border-slate-600 rounded-lg text-white hover:bg-slate-600 hover:border-slate-500 transition-colors font-medium text-sm"
                   >
-                    â
+                    −
                   </button>
                   <span className="flex-1 text-center text-xs text-gray-400">
                     Adjust in $2,500 increments
@@ -229,7 +229,7 @@ export default function EasyPaymentsPage() {
                     aria-label="Decrease project total"
                     className="px-3 py-1.5 bg-slate-700 border border-slate-600 rounded-lg text-white hover:bg-slate-600 hover:border-slate-500 transition-colors font-medium text-sm"
                   >
-                    â
+                    −
                   </button>
                   <span className="flex-1 text-center text-xs text-gray-400">
                     Adjust in $5,000 increments
@@ -366,7 +366,7 @@ export default function EasyPaymentsPage() {
                     aria-label="Decrease upgrade amount"
                     className="px-3 py-1.5 bg-slate-700 border border-slate-600 rounded-lg text-white hover:bg-slate-600 hover:border-slate-500 transition-colors font-medium text-sm"
                   >
-                    â
+                    −
                   </button>
                   <span className="flex-1 text-center text-xs text-gray-400">
                     Adjust in $2,500 increments

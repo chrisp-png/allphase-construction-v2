@@ -274,7 +274,7 @@ export default function SitemapAuditPage() {
                             {entry.indexable ? (
                               <span className="text-green-500">✓</span>
                             ) : (
-                              <span className="text-red-500">â</span>
+                              <span className="text-red-500">✗</span>
                             )}
                           </td>
                           <td className="px-4 py-3 font-mono text-gray-400 text-xs">

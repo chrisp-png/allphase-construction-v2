@@ -1382,7 +1382,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
             <div className="space-y-6 text-lg text-zinc-200 leading-relaxed">
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold mt-1">
-                  â
+                  ✗
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">Repair of the Roof System</h4>
@@ -1397,7 +1397,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold mt-1">
-                  â
+                  ✗
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">Remediation Method Selection</h4>
@@ -1412,7 +1412,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold mt-1">
-                  â
+                  ✗
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">Prevention of Future Problems</h4>
@@ -1427,7 +1427,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold mt-1">
-                  â
+                  ✗
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">Substrate or Structural Assessment</h4>

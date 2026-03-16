@@ -913,7 +913,7 @@ export default function FortLauderdalePage() {
 
               <div className="bg-gradient-to-br from-blue-900/20 to-blue-800/10 border border-blue-700/30 rounded-xl p-6 text-center">
                 <p className="text-blue-100 font-medium mb-4">
-                  ð Read: Understanding Roof Costs, Financing Options, and Why Monthly Payments Often Make Sense
+                  👉 Read: Understanding Roof Costs, Financing Options, and Why Monthly Payments Often Make Sense
                 </p>
                 <Link
                   to="/blog/roof-pricing-financing-guide/"

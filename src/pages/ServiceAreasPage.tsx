@@ -194,7 +194,7 @@ export default function ServiceAreasPage() {
                 Broward County Service Areas
               </h2>
                       <div className="mb-6 p-4 bg-red-950/30 border border-red-800/50 rounded-lg flex items-start gap-3">
-                                  <span className="text-red-500 text-xl mt-0.5">ð</span>
+                                  <span className="text-red-500 text-xl mt-0.5">📍</span>
                                   <p className="text-zinc-300 text-sm">
                                                 <Link to="/locations/deerfield-beach/" className="text-red-500 font-semibold hover:text-red-400 transition-colors">Deerfield Beach</Link>
                                                 {' '}is our headquarters — it has its own dedicated page with full service details, reviews, and local info. The grid below covers all other Broward County service areas.

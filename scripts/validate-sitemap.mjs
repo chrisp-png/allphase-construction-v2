@@ -9,17 +9,17 @@ const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 const CANONICAL_DOMAIN = 'https://allphaseconstructionfl.com';
 const ROOT_URL_WITH_SLASH = `${CANONICAL_DOMAIN}/`;
 
-console.log('\nð Validating sitemap.xml...\n');
+console.log('\n🔍 Validating sitemap.xml...\n');
 
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 // READ SITEMAP
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 let sitemap;
 try {
   sitemap = fs.readFileSync(SITEMAP_PATH, 'utf-8');
   console.log(`✅ Successfully read ${SITEMAP_PATH}`);
 } catch (err) {
-  console.error(`â FAIL: Could not read sitemap.xml`);
+  console.error(`❌ FAIL: Could not read sitemap.xml`);
   console.error(`   Path: ${SITEMAP_PATH}`);
   console.error(`   Error: ${err.message}`);
   process.exit(1);
@@ -28,17 +28,17 @@ try {
 const errors = [];
 const warnings = [];
 
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 // CHECK 1: File must start with <?xml ...> or <urlset>
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 const trimmedContent = sitemap.trim();
 if (!trimmedContent.startsWith('<?xml') && !trimmedContent.startsWith('<urlset')) {
   errors.push('Sitemap must start with <?xml or <urlset> (no preface text allowed)');
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 // CHECK 2: No forbidden tags (<lastmod>, <changefreq>, <priority>)
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 const forbiddenTags = ['<lastmod>', '<changefreq>', '<priority>'];
 for (const tag of forbiddenTags) {
   if (sitemap.includes(tag)) {
@@ -47,16 +47,16 @@ for (const tag of forbiddenTags) {
   }
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 // CHECK 3: Extract all <loc> values and validate trailing slashes
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 const locRegex = /<loc>([^<]+)<\/loc>/g;
 const matches = [...sitemap.matchAll(locRegex)];
 
 if (matches.length === 0) {
   errors.push('No <loc> tags found in sitemap');
 } else {
-  console.log(`\nð Found ${matches.length} URL(s) in sitemap\n`);
+  console.log(`\n📍 Found ${matches.length} URL(s) in sitemap\n`);
 
   for (const match of matches) {
     const url = match[1];
@@ -70,19 +70,19 @@ if (matches.length === 0) {
     // All other URLs must NOT have trailing slash
     if (url.endsWith('/')) {
       errors.push(`URL has forbidden trailing slash: ${url}`);
-      console.log(`   â ${url} (INVALID: trailing slash)`);
+      console.log(`   ❌ ${url} (INVALID: trailing slash)`);
     } else if (url.startsWith(CANONICAL_DOMAIN)) {
       console.log(`   ✅ ${url}`);
     } else {
       warnings.push(`URL does not start with canonical domain: ${url}`);
-      console.log(`   â ï¸  ${url} (wrong domain)`);
+      console.log(`   ⚠️  ${url} (wrong domain)`);
     }
   }
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 // RESULTS
-// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ═══════════════════════════════════════════════════════════════════════════
 console.log('\n' + '='.repeat(70));
 console.log('VALIDATION RESULTS');
 console.log('='.repeat(70) + '\n');
@@ -98,19 +98,19 @@ if (errors.length === 0 && warnings.length === 0) {
   process.exit(0);
 } else {
   if (warnings.length > 0) {
-    console.log(`â ï¸  ${warnings.length} WARNING(S):\n`);
+    console.log(`⚠️  ${warnings.length} WARNING(S):\n`);
     warnings.forEach((w, i) => console.log(`   ${i + 1}. ${w}`));
     console.log('');
   }
   
   if (errors.length > 0) {
-    console.log(`â ${errors.length} ERROR(S) - BUILD MUST FAIL:\n`);
+    console.log(`❌ ${errors.length} ERROR(S) - BUILD MUST FAIL:\n`);
     errors.forEach((e, i) => console.log(`   ${i + 1}. ${e}`));
-    console.log('\nð¥ Sitemap validation FAILED\n');
+    console.log('\n💥 Sitemap validation FAILED\n');
     process.exit(1);
   }
   
   // Warnings only (no errors)
-  console.log('â ï¸  Validation passed with warnings\n');
+  console.log('⚠️  Validation passed with warnings\n');
   process.exit(0);
 }

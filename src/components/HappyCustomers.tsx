@@ -131,7 +131,7 @@ const customerPhotos = allCustomerPhotos
   .filter((photo): photo is CustomerPhoto => {
     // Only reject if src is completely missing or invalid
     if (!photo || typeof photo.src !== 'string' || photo.src.trim().length === 0) {
-      console.warn('â ï¸ Carousel: Rejected photo (missing or empty src)', photo);
+      console.warn('⚠️ Carousel: Rejected photo (missing or empty src)', photo);
       return false;
     }
 
@@ -139,7 +139,7 @@ const customerPhotos = allCustomerPhotos
     const validExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.webp', '.WEBP'];
     const hasValidExtension = validExtensions.some(ext => photo.src.endsWith(ext));
     if (!hasValidExtension) {
-      console.warn('â ï¸ Carousel: Rejected photo with invalid extension', photo.src);
+      console.warn('⚠️ Carousel: Rejected photo with invalid extension', photo.src);
       return false;
     }
 
@@ -167,7 +167,7 @@ const customerPhotos = allCustomerPhotos
       linkTo = '/locations/palm-beach-county';
     } else if (!linkTo || typeof linkTo !== 'string' || linkTo.trim().length === 0 || !linkTo.startsWith('/')) {
       // Global fallback for missing or invalid linkTo → Service Areas Hub
-      console.warn('â ï¸ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
+      console.warn('⚠️ Carousel: Applied fallback linkTo for photo', photo.src, 'original:', linkTo);
       linkTo = '/locations';
     }
 
@@ -353,7 +353,7 @@ export default function HappyCustomers() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   style={{ display: 'block' }}
                   onError={(e) => {
-                    console.error('â Carousel: Failed to load image', photo.src);
+                    console.error('❌ Carousel: Failed to load image', photo.src);
                     e.currentTarget.style.display = 'none';
                   }}
                 />

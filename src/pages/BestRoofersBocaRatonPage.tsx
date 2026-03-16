@@ -57,7 +57,7 @@ export default function BestRoofersBocaRatonPage() {
                 "name": "How long does a roof last in Boca Raton?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Concrete tile roofs in Boca Raton typically last 25Ã¢40 years with proper maintenance, though underlayment replacement is often needed in the 15Ã¢20 year range. Asphalt shingles last 15Ã¢20 years under South Florida conditions. Metal roofing has a 40Ã¢50 year service life. Flat roofing systems (modified bitumen, TPO) typically require maintenance every 10Ã¢15 years and full replacement after 20Ã¢25 years."
+                  "text": "Concrete tile roofs in Boca Raton typically last 25â40 years with proper maintenance, though underlayment replacement is often needed in the 15â20 year range. Asphalt shingles last 15â20 years under South Florida conditions. Metal roofing has a 40â50 year service life. Flat roofing systems (modified bitumen, TPO) typically require maintenance every 10â15 years and full replacement after 20â25 years."
                 }
               },
               {
@@ -402,19 +402,19 @@ export default function BestRoofersBocaRatonPage() {
             </div>
             <ul className="space-y-4 text-lg text-slate-700">
               <li className="flex gap-3">
-                <span className="text-amber-600 font-bold">Ã¢Â¢</span>
+                <span className="text-amber-600 font-bold">★</span>
                 <span><strong>Requests for full payment upfront.</strong> A standard payment schedule involves a deposit at contract signing (typically 10-30%), progress payments at defined milestones, and final payment after inspection approval.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-amber-600 font-bold">Ã¢Â¢</span>
+                <span className="text-amber-600 font-bold">★</span>
                 <span><strong>No permit.</strong> If a contractor suggests skipping the permit to save time or money, decline the project. In Boca Raton, unpermitted roofing work can result in a stop-work order, fines, required demolition of the unpermitted work, and insurance claim complications.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-amber-600 font-bold">Ã¢Â¢</span>
+                <span className="text-amber-600 font-bold">★</span>
                 <span><strong>Verbal quotes only.</strong> Every roofing project should have a written contract specifying materials, scope, payment schedule, and warranty terms.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-amber-600 font-bold">Ã¢Â¢</span>
+                <span className="text-amber-600 font-bold">★</span>
                 <span><strong>Inability to verify license.</strong> Any Florida contractor should be able to provide their license number for verification at myfloridalicense.com.</span>
               </li>
             </ul>
@@ -500,13 +500,13 @@ export default function BestRoofersBocaRatonPage() {
                 Full roof replacement costs depend primarily on roof type, size, and material specification:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Asphalt shingle replacement:</strong> $14,000Ã¢$25,000 for a typical 2,000Ã¢2,500 SF Boca Raton home</li>
-                <li><strong>Concrete tile replacement:</strong> $20,000Ã¢$35,000 depending on tile weight, profile, and existing structural condition</li>
-                <li><strong>Metal roofing (standing seam or metal tile):</strong> $25,000Ã¢$50,000 for residential systems</li>
-                <li><strong>Flat roofing (modified bitumen or TPO):</strong> $10,000Ã¢$20,000 for typical residential flat sections</li>
+                <li><strong>Asphalt shingle replacement:</strong> $14,000â$25,000 for a typical 2,000â2,500 SF Boca Raton home</li>
+                <li><strong>Concrete tile replacement:</strong> $20,000â$35,000 depending on tile weight, profile, and existing structural condition</li>
+                <li><strong>Metal roofing (standing seam or metal tile):</strong> $25,000â$50,000 for residential systems</li>
+                <li><strong>Flat roofing (modified bitumen or TPO):</strong> $10,000â$20,000 for typical residential flat sections</li>
               </ul>
               <p>
-                These figures reflect licensed, permitted, HVHZ-compliant installation with inspection. They do not include decking replacement, which adds $2Ã¢$5 per square foot for damaged sections discovered during tear-off.
+                These figures reflect licensed, permitted, HVHZ-compliant installation with inspection. They do not include decking replacement, which adds $2â$5 per square foot for damaged sections discovered during tear-off.
               </p>
               <p>
                 Insurance-covered replacements typically follow the same cost structure, with the insurance payout covering actual cash value (ACV) or replacement cost value (RCV) depending on your policy. Understanding the difference between ACV and RCV before you file a claim can significantly affect your out-of-pocket costs.

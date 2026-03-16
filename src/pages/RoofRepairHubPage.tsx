@@ -36,7 +36,7 @@ export default function RoofRepairHubPage() {
   const faqItems = [
     {
       question: "Is it better to repair a roof or replace it?",
-      answer: "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashings—addressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute Â§ 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
+      answer: "Start with a diagnostic roof inspection to evaluate localized failure versus widespread deterioration. Repair is often the better first option when damage is confined to specific slopes, penetrations, or flashings—addressing the failure pattern without replacing sound areas. Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably. In Florida, repairs may also position a roof for the 5-year certification pathway under Florida Statute § 627.7011(5)(a), allowing insurers to renew based on roof condition rather than age alone when a qualified professional certifies 5+ years of useful life. This approach can defer replacement costs, support insurance renewals, and provide time for planned capital budgeting. Outcomes depend on inspection findings, repair scope, and individual roof condition."
     },
     {
       question: "Do roof repairs have to meet Florida Building Code requirements?",
@@ -48,7 +48,7 @@ export default function RoofRepairHubPage() {
     },
     {
       question: "Can roof repairs help with Florida's 5-year roof certification for insurance renewal?",
-      answer: "Repairs may address specific deficiencies so the roof can be evaluated based on condition rather than age. Florida Statute Â§ 627.7011(5)(a) addresses renewals related to roof age when a qualified professional provides a roof condition certification indicating remaining useful life. Whether a roof qualifies depends on inspection findings and documentation, and outcomes can vary by insurer."
+      answer: "Repairs may address specific deficiencies so the roof can be evaluated based on condition rather than age. Florida Statute § 627.7011(5)(a) addresses renewals related to roof age when a qualified professional provides a roof condition certification indicating remaining useful life. Whether a roof qualifies depends on inspection findings and documentation, and outcomes can vary by insurer."
     },
     {
       question: "Is it better to repair one spot or restore an entire roof section?",
@@ -516,7 +516,7 @@ export default function RoofRepairHubPage() {
           <div className="bg-zinc-900 p-8 rounded-lg border border-zinc-800 mb-8">
             <FileText className="w-12 h-12 text-red-600 mb-4" />
             <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-              Florida Statute Â§ 627.7011(5)(a) addresses insurance renewals related to roof age. Under this statute, insurers may not refuse renewal solely due to roof age when a compliant roof condition certification indicates 5 or more years of useful life remaining.
+              Florida Statute § 627.7011(5)(a) addresses insurance renewals related to roof age. Under this statute, insurers may not refuse renewal solely due to roof age when a compliant roof condition certification indicates 5 or more years of useful life remaining.
             </p>
 
             <ul className="space-y-4 mb-6">
@@ -691,7 +691,7 @@ export default function RoofRepairHubPage() {
               {openFaqIndex === 14 && (
                 <div className="px-6 pb-6">
                   <p className="text-zinc-300 leading-relaxed">
-                    Repairs may address deficiencies that prevent a roof from qualifying for condition-based certification under Florida Statute Â§ 627.7011(5)(a). Whether repairs are sufficient depends on the extent of work and inspection outcomes. Results vary by insurer.
+                    Repairs may address deficiencies that prevent a roof from qualifying for condition-based certification under Florida Statute § 627.7011(5)(a). Whether repairs are sufficient depends on the extent of work and inspection outcomes. Results vary by insurer.
                   </p>
                 </div>
               )}
