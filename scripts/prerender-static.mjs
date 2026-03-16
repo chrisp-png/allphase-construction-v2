@@ -2136,9 +2136,14 @@ ${companyAuthorityFooter()}
     for (const post of supabasePosts) {
       try {
         const blogCanonical = `https://allphaseconstructionfl.com/blog/${post.slug}`;
-        const blogMetaTitle = post.meta_title || post.title;
+        const blogPath = `/blog/${post.slug}`;
+
+        // Check seo-titles.json overrides FIRST (these are hand-crafted and take priority)
+        const seoOverride = seoTitlesConfig.staticTitles[blogPath];
+
+        const blogMetaTitle = (seoOverride && seoOverride.title) || post.meta_title || post.title;
     const cleanBlogTitle = (() => { const t = blogMetaTitle.replace(/\s*\|.*$/, '').trim(); return t.length <= 52 ? t : t.substring(0, 52).replace(/\s+\S*$/, ''); })();
-        let blogMetaDesc = post.meta_description || post.excerpt || '';
+        let blogMetaDesc = (seoOverride && seoOverride.description) || post.meta_description || post.excerpt || '';
         // If description is too short, auto-generate from content
         if (blogMetaDesc.length < 70 && post.content) {
           const stripped = post.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();

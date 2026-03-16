@@ -57,15 +57,176 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Roofing tips, cost guides, and hurricane prep for South Florida homeowners. Written by a dual-licensed contractor with 20+ years experience.',
     canonical: 'https://allphaseconstructionfl.com/blog'
   },
+  // ── Blog post meta description overrides (120-160 chars each) ──
   '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home': {
     title: 'Wind Mitigation Inspection Guide | Save 20-60% on Insurance | South Florida',
-    description: 'How wind mitigation inspections save South Florida homeowners thousands on insurance. What inspectors check, how to qualify, and which upgrades have the biggest ROI.',
+    description: 'How wind mitigation inspections save South Florida homeowners thousands on insurance. What inspectors check, how to qualify, and the best upgrades for ROI.',
     canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home'
   },
   '/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes': {
     title: 'Flat Roofs in Florida: Pros, Cons & What Homeowners Should Know (2026)',
-    description: 'Are flat roofs good for Florida homes? Honest pros and cons from a licensed roofer — drainage, hurricane performance, costs, and the best flat roof materials for South Florida.',
+    description: 'Flat roof pros and cons for Florida homes: drainage, hurricane performance, costs, and the best materials. Honest advice from a licensed South Florida roofer.',
     canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
+  },
+  '/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association': {
+    title: 'HOA Roofing Budget Planning | Condo Associations | All Phase',
+    description: 'How to plan long-term roofing budgets for your condo or HOA. Avoid special assessments, meet Florida reserve requirements, and protect property values.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association'
+  },
+  '/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa': {
+    title: 'Soffit Repair South Florida | Broward & Palm Beach | All Phase',
+    description: 'Soffit repair guide for Broward and Palm Beach County homeowners. Signs of damage, ventilation risks, pest prevention, and when to call a licensed contractor.',
+    canonical: 'https://allphaseconstructionfl.com/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa'
+  },
+  '/blog/common-roofing-myths-that-homeowners-still-believe': {
+    title: 'Common Roofing Myths Debunked | All Phase',
+    description: 'South Florida roofing myths debunked by a licensed contractor. New roofs still need inspections, DIY repairs void warranties, and more costly mistakes to avoid.',
+    canonical: 'https://allphaseconstructionfl.com/blog/common-roofing-myths-that-homeowners-still-believe'
+  },
+  '/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview': {
+    title: 'AI Roof Visualization Tools | Preview Your New Roof | All Phase',
+    description: 'See your new roof before installation with AI-powered visualization tools. Compare colors, materials, and styles on your actual home. Ask your contractor today.',
+    canonical: 'https://allphaseconstructionfl.com/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview'
+  },
+  '/blog/the-role-of-roof-pitch-in-water-drainage-and-design': {
+    title: 'Roof Pitch and Water Drainage | Why Slope Matters | All Phase',
+    description: 'How roof pitch affects water drainage, material selection, and hurricane performance in Florida. Learn what pitch your home needs and why slope matters.',
+    canonical: 'https://allphaseconstructionfl.com/blog/the-role-of-roof-pitch-in-water-drainage-and-design'
+  },
+  '/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet': {
+    title: 'Cost of Delaying Roof Replacement | South Florida | All Phase',
+    description: 'Delaying roof replacement costs more than you think. Water damage, mold, higher insurance premiums, and code violations add up fast in South Florida.',
+    canonical: 'https://allphaseconstructionfl.com/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet'
+  },
+  '/blog/how-solar-impacts-property-taxes-in-florida': {
+    title: 'Solar Panels and Property Taxes in Florida | All Phase',
+    description: 'Florida solar panels are 100% exempt from property tax increases. Learn how the exemption works, what qualifies, and the financial impact on your home.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-solar-impacts-property-taxes-in-florida'
+  },
+  '/blog/the-roi-of-installing-solar-panels-in-florida': {
+    title: 'Solar Panel ROI in Florida | Investment Guide | All Phase',
+    description: 'Florida solar panel ROI explained: tax credits, net metering, and payback timelines. See why South Florida is one of the best states for solar investment.',
+    canonical: 'https://allphaseconstructionfl.com/blog/the-roi-of-installing-solar-panels-in-florida'
+  },
+  '/blog/the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles': {
+    title: 'Architectural vs. 3-Tab Shingles | Comparison | All Phase',
+    description: 'Architectural vs. 3-tab shingles: cost, durability, wind rating, and curb appeal compared. Which shingle type is right for your South Florida home?',
+    canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles'
+  },
+  '/blog/whats-the-lifespan-of-a-solar-ready-roof': {
+    title: 'Solar-Ready Roof Lifespan | How Long It Lasts | All Phase',
+    description: 'How long does a solar-ready roof last? Lifespan by material, when to replace before panels, and how to maximize your roof and solar investment together.',
+    canonical: 'https://allphaseconstructionfl.com/blog/whats-the-lifespan-of-a-solar-ready-roof'
+  },
+  '/blog/can-a-screen-room-add-to-my-property-value': {
+    title: 'Do Screen Rooms Add Property Value? | Florida | All Phase',
+    description: 'Do screen rooms add property value in Florida? Typical ROI, permit requirements, and how screened patios compare to other home improvement investments.',
+    canonical: 'https://allphaseconstructionfl.com/blog/can-a-screen-room-add-to-my-property-value'
+  },
+  '/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive': {
+    title: 'Early Signs of Roof Damage | What to Watch For | All Phase',
+    description: 'Spot roof damage early before costly repairs. Warning signs homeowners miss: ceiling stains, granule loss, sagging decking, and flashing failures explained.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive'
+  },
+  '/blog/how-to-combine-solar-and-a-new-roof-for-maximum-efficiency': {
+    title: 'Combine Solar Panels and a New Roof | Tips | All Phase',
+    description: 'Planning solar panels? Install them with a new roof to save thousands. Timing, material compatibility, and financing tips from a licensed FL contractor.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-to-combine-solar-and-a-new-roof-for-maximum-efficiency'
+  },
+  '/blog/choosing-between-roof-repair-and-full-replacement': {
+    title: 'Roof Repair vs. Replacement | How to Decide | All Phase',
+    description: 'Roof repair vs. full replacement: how to decide. Age, damage extent, cost comparison, and insurance factors that South Florida homeowners need to consider.',
+    canonical: 'https://allphaseconstructionfl.com/blog/choosing-between-roof-repair-and-full-replacement'
+  },
+  '/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction': {
+    title: 'Protect Roof Decking From Moisture | Construction Tips | All Phase',
+    description: 'Protect your roof decking from moisture during construction. Florida afternoon storms can damage exposed wood in hours. Prevention methods and contractor tips.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction'
+  },
+  '/blog/do-i-need-a-roof-inspection-after-a-storm': {
+    title: 'Roof Inspection After a Storm | Do You Need One? | All Phase',
+    description: 'Get a roof inspection after any South Florida storm. Hidden damage from hurricanes and thunderstorms worsens fast. What inspectors check and why it matters.',
+    canonical: 'https://allphaseconstructionfl.com/blog/do-i-need-a-roof-inspection-after-a-storm'
+  },
+  '/blog/what-is-roof-underlayment-and-why-does-it-matter': {
+    title: 'Roof Underlayment Explained | Why It Matters | All Phase',
+    description: 'Roof underlayment is your second defense against water. Types, Florida code requirements, and why this hidden layer matters more than most homeowners think.',
+    canonical: 'https://allphaseconstructionfl.com/blog/what-is-roof-underlayment-and-why-does-it-matter'
+  },
+  '/blog/how-to-choose-roofing-materials-for-large-scale-projects': {
+    title: 'Commercial Roofing Materials Guide | All Phase',
+    description: 'Choosing roofing materials for large commercial projects: TPO, PVC, metal, and modified bitumen compared. Cost and code factors for South Florida buildings.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-to-choose-roofing-materials-for-large-scale-projects'
+  },
+  '/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks': {
+    title: 'Roof Flashing Installation | Prevent Leaks | All Phase',
+    description: 'Improper flashing causes most roof leaks. Where flashing fails, how to spot problems, and why correct installation matters in South Florida hurricane zones.',
+    canonical: 'https://allphaseconstructionfl.com/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks'
+  },
+  '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas': {
+    title: 'Climate Change and Roofing | Coastal Florida Guide | All Phase',
+    description: 'Climate change is reshaping roofing in coastal Florida. Stronger hurricanes, rising insurance costs, and new materials driving smarter roofing choices.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas'
+  },
+  '/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home': {
+    title: 'Prepare Your Roof Before Selling | Home Sale Tips | All Phase',
+    description: 'Selling your home? Roof condition directly impacts sale price and buyer confidence. Pre-sale inspection tips and repair strategies for South Florida sellers.',
+    canonical: 'https://allphaseconstructionfl.com/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home'
+  },
+  '/blog/top-roofers-in-broward-and-palm-beach-counties': {
+    title: 'Top Roofers in Broward & Palm Beach County | All Phase',
+    description: 'Finding the best roofing contractors in Broward and Palm Beach County. What licenses to verify, questions to ask, and red flags to watch for before you hire.',
+    canonical: 'https://allphaseconstructionfl.com/blog/top-roofers-in-broward-and-palm-beach-counties'
+  },
+  '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes': {
+    title: 'Metal vs. Tile Roof in South Florida | Hurricane Comparison',
+    description: 'Metal vs. tile roof in South Florida: hurricane performance, cost, insurance savings, and HOA rules compared. Which roofing material is best for your home?',
+    canonical: 'https://allphaseconstructionfl.com/blog/metal-roof-vs-tile-roof-south-florida-hurricanes'
+  },
+  '/blog/wind-mitigation-roof-south-florida': {
+    title: 'Wind Mitigation for Your Roof | Save on Insurance | All Phase',
+    description: 'Roof wind mitigation can cut your Florida insurance by up to 50%. Learn what qualifies, what to upgrade, and how to get certified in Broward and Palm Beach.',
+    canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-roof-south-florida'
+  },
+  '/blog/roof-replacement-cost-broward-county-2026': {
+    title: 'Roof Replacement Cost Broward County 2026 | All Phase',
+    description: '2026 Broward County roof replacement costs: shingle, tile, and metal pricing, Florida Building Code requirements, and how to maximize insurance discounts.',
+    canonical: 'https://allphaseconstructionfl.com/blog/roof-replacement-cost-broward-county-2026'
+  },
+  '/blog/certified-vs-licensed-roofer-florida': {
+    title: 'Certified vs. Licensed Roofer in Florida | All Phase',
+    description: 'Certified vs. licensed roofer in Florida: what each credential means, how to verify on DBPR, and why both matter when hiring a roofing contractor.',
+    canonical: 'https://allphaseconstructionfl.com/blog/certified-vs-licensed-roofer-florida'
+  },
+  '/blog/complete-roof-replacement-process-10-steps': {
+    title: '10-Step Roof Replacement Process | All Phase',
+    description: 'The complete 10-step roof replacement process from inspection to final warranty. See exactly what to expect during your South Florida roof replacement.',
+    canonical: 'https://allphaseconstructionfl.com/blog/complete-roof-replacement-process-10-steps'
+  },
+  '/blog/what-south-florida-homeowners-get-wrong-about-roof-replacement': {
+    title: 'Roof Replacement Mistakes to Avoid | South Florida | All Phase',
+    description: 'Costly roof replacement mistakes South Florida homeowners make: wrong contractor, skipped ventilation, missed insurance savings, and flat roof issues.',
+    canonical: 'https://allphaseconstructionfl.com/blog/what-south-florida-homeowners-get-wrong-about-roof-replacement'
+  },
+  '/blog/roof-pricing-financing-guide': {
+    title: 'Roof Pricing & Financing Guide 2026 | All Phase',
+    description: 'Roof pricing in 2026: how tariffs and material costs changed estimates. Use our calculator for current pricing and explore 0% financing options available now.',
+    canonical: 'https://allphaseconstructionfl.com/blog/roof-pricing-financing-guide'
+  },
+  '/blog/professional-roof-inspection-south-florida': {
+    title: 'Professional Roof Inspection | South Florida | All Phase',
+    description: 'What a professional roof inspection covers in South Florida: surface evaluation, code compliance, and documentation for insurance. Schedule a free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/blog/professional-roof-inspection-south-florida'
+  },
+  '/blog/dont-replace-your-roof-restore-it-instead': {
+    title: 'Roof Restoration vs. Replacement | Save $25K+ | All Phase',
+    description: 'Florida Statute 627.7011 protects you from unnecessary roof replacements. Learn how a 5-year certification can save $25,000+ and keep your insurance.',
+    canonical: 'https://allphaseconstructionfl.com/blog/dont-replace-your-roof-restore-it-instead'
+  },
+  '/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida': {
+    title: 'Fascia Replacement Without Roof Damage | South Florida | All Phase',
+    description: 'Can you replace fascia without a new roof? A South Florida licensed contractor explains what is involved, costs, and when your roof also needs attention.',
+    canonical: 'https://allphaseconstructionfl.com/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida'
   },
   '/reviews': {
     title: 'Customer Reviews | All Phase USA',
