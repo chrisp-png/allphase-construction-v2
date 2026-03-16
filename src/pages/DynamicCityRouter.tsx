@@ -54,6 +54,7 @@ const HollywoodRoofInspectionPage = lazy(() => import('./HollywoodRoofInspection
 const GreenacresRoofInspectionPage = lazy(() => import('./GreenacresRoofInspectionPage'));
 const SunriseRoofInspectionPage = lazy(() => import('./SunriseRoofInspectionPage'));
 
+const HollywoodMoneyPage = lazy(() => import('./locations/HollywoodMoneyPage'));
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
 const GenericRoofInspectionTemplate = lazy(() => import('./templates/GenericRoofInspectionTemplate'));
@@ -68,6 +69,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'deerfield-beach': DeerfieldBeachCityPage,
   'delray-beach': DelrayBeachMoneyPage,
   'fort-lauderdale': FortLauderdaleMoneyPage,
+  'hollywood': HollywoodMoneyPage,
   'jupiter': JupiterPage,
   'pompano-beach': PompanoBeachMoneyPage,
   'wellington': WellingtonPage,
