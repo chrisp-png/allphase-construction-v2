@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, ChevronDown, ChevronUp, AlertTriangle, Droplets, Sun, Home as HomeIcon } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Contact from '../../components/Contact';
+import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
@@ -104,7 +104,7 @@ export default function SunrisePage() {
   const faqs = [
     {
       question: 'How long does roof replacement take in Sunrise?',
-      answer: 'Most residential replacements complete in 1-3 days for shingles, 3-7 days for tile, and 2-5 days for metal. Commercial projects vary by square footage. We provide accurate timelines during your free inspection.'
+      answer: 'The physical labor for most residential roof replacements takes about 3 working days once the crew is on-site. However, the full project timeline is longer: Broward County permits can take up to 30 days, and required inspections are scheduled between phases. From contract signing to final inspection sign-off, expect 4–8 weeks total. Commercial projects vary by square footage. We provide accurate timelines during your free inspection.'
     },
     {
       question: 'What roofing materials work best in Sunrise\'s climate?',
@@ -172,7 +172,7 @@ export default function SunrisePage() {
         </script>
       </Helmet>
 
-      <Header />
+      <StickyConversionBar />
 
       <div className="pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -445,9 +445,9 @@ export default function SunrisePage() {
             </div>
           </div>
         </div>
-      </div>
 
-      <Footer />
+        <Contact />
+      </div>
     </div>
   );
 }
