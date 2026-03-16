@@ -50,7 +50,13 @@ export const locations: Location[] = [
   { slug: "cooper-city", city: "Cooper City", state: "FL" },
   { slug: "coral-springs", city: "Coral Springs", state: "FL" },
   { slug: "dania-beach", city: "Dania Beach", state: "FL" },
-  { slug: "davie", city: "Davie", state: "FL" },
+  {
+    slug: "davie",
+    city: "Davie",
+    state: "FL",
+    titleOverride: "Davie Roofing Company | Residential Re-Roofs | All Phase",
+    descriptionOverride: "Trusted roofing company in Davie, FL. Shingle, tile & metal re-roofs for ranch-style and estate homes. HVHZ-certified, 2,500+ projects. (754) 227-5605."
+  },
   {
     slug: "delray-beach",
     city: "Delray Beach",
@@ -65,34 +71,100 @@ export const locations: Location[] = [
   },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
   { slug: "gulf-stream", city: "Gulf Stream", state: "FL" },
-  { slug: "hallandale-beach", city: "Hallandale Beach", state: "FL" },
+  {
+    slug: "hallandale-beach",
+    city: "Hallandale Beach",
+    state: "FL",
+    titleOverride: "Hallandale Beach Roofer | Coastal & Condo Roofing | All Phase",
+    descriptionOverride: "Licensed roofer in Hallandale Beach, FL. Coastal wind-rated roofing for homes and condos. Salt-air-resistant systems, HVHZ-certified. (754) 227-5605."
+  },
   { slug: "haverhill", city: "Haverhill", state: "FL" },
   { slug: "highland-beach", city: "Highland Beach", state: "FL" },
   { slug: "hillsboro-beach", city: "Hillsboro Beach", state: "FL" },
-  { slug: "hollywood", city: "Hollywood", state: "FL" },
+  {
+    slug: "hollywood",
+    city: "Hollywood",
+    state: "FL",
+    titleOverride: "Hollywood FL Roofing Contractor | Storm & Wind Damage | All Phase",
+    descriptionOverride: "Top-rated roofing contractor in Hollywood, FL. Hurricane-rated re-roofs, storm damage repair & coastal roofing. HVHZ-certified, 2,500+ jobs. (754) 227-5605."
+  },
   { slug: "hypoluxo", city: "Hypoluxo", state: "FL" },
   { slug: "jupiter-inlet-colony", city: "Jupiter Inlet Colony", state: "FL" },
   { slug: "lake-park", city: "Lake Park", state: "FL" },
     { slug: "lake-worth-beach", city: "Lake Worth Beach", state: "FL" },
   { slug: "lantana", city: "Lantana", state: "FL" },
   { slug: "lauderdale-by-the-sea", city: "Lauderdale-By-The-Sea", state: "FL" },
-  { slug: "lauderhill", city: "Lauderhill", state: "FL" },
+  {
+    slug: "lauderhill",
+    city: "Lauderhill",
+    state: "FL",
+    titleOverride: "Lauderhill Roofing Contractor | Roof Replacement | All Phase",
+    descriptionOverride: "Roofing contractor serving Lauderhill, FL. Affordable roof replacement, shingle & tile installs. HVHZ-compliant, licensed & insured. (754) 227-5605."
+  },
   { slug: "lighthouse-point", city: "Lighthouse Point", state: "FL" },
-  { slug: "margate", city: "Margate", state: "FL" },
-  { slug: "miramar", city: "Miramar", state: "FL" },
+  {
+    slug: "margate",
+    city: "Margate",
+    state: "FL",
+    titleOverride: "Margate FL Roofing Company | Re-Roofs & Repairs | All Phase",
+    descriptionOverride: "Reliable roofing company in Margate, FL. Full re-roofs, leak repair & hurricane upgrades for residential homes. HVHZ-certified. (754) 227-5605."
+  },
+  {
+    slug: "miramar",
+    city: "Miramar",
+    state: "FL",
+    titleOverride: "Miramar Roofing Services | Tile, Metal & Shingle | All Phase",
+    descriptionOverride: "Licensed roofing services in Miramar, FL. Tile, metal & shingle roof replacement. Dual-licensed contractor, HVHZ-certified, 2,500+ projects. (754) 227-5605."
+  },
   { slug: "north-lauderdale", city: "North Lauderdale", state: "FL" },
   { slug: "north-palm-beach", city: "North Palm Beach", state: "FL" },
   { slug: "oakland-park", city: "Oakland Park", state: "FL" },
   { slug: "ocean-ridge", city: "Ocean Ridge", state: "FL" },
   { slug: "palm-beach", city: "Palm Beach", state: "FL" },
-  { slug: "palm-beach-gardens", city: "Palm Beach Gardens", state: "FL" },
-  { slug: "parkland", city: "Parkland", state: "FL" },
-  { slug: "pembroke-pines", city: "Pembroke Pines", state: "FL" },
-  { slug: "plantation", city: "Plantation", state: "FL" },
+  {
+    slug: "palm-beach-gardens",
+    city: "Palm Beach Gardens",
+    state: "FL",
+    titleOverride: "Palm Beach Gardens Roofer | Premium Roof Replacement | All Phase",
+    descriptionOverride: "Premium roofing contractor in Palm Beach Gardens, FL. Tile, metal & architectural shingle roofs. Wind-compliant, 2,500+ projects. Free estimate. (754) 227-5605."
+  },
+  {
+    slug: "parkland",
+    city: "Parkland",
+    state: "FL",
+    titleOverride: "Parkland Roofing Contractor | Luxury Home Re-Roofs | All Phase",
+    descriptionOverride: "Roofing contractor specializing in Parkland, FL luxury homes. Tile, slate & metal roof replacement. HVHZ-certified, HOA-experienced. (754) 227-5605."
+  },
+  {
+    slug: "pembroke-pines",
+    city: "Pembroke Pines",
+    state: "FL",
+    titleOverride: "Pembroke Pines Roofing Company | Full Roof Replacement | All Phase",
+    descriptionOverride: "Roofing company in Pembroke Pines, FL. Complete roof replacement for single-family homes & townhomes. HVHZ-certified, 2,500+ projects. (754) 227-5605."
+  },
+  {
+    slug: "plantation",
+    city: "Plantation",
+    state: "FL",
+    titleOverride: "Plantation FL Roofer | Shingle & Tile Roofing | All Phase",
+    descriptionOverride: "Experienced roofer in Plantation, FL. Shingle tear-offs, tile re-roofs & flat roof systems. HVHZ-compliant, dual-licensed contractor. (754) 227-5605."
+  },
   { slug: "pompano-beach", city: "Pompano Beach", state: "FL" },
   { slug: "royal-palm-beach", city: "Royal Palm Beach", state: "FL" },
-  { slug: "sunrise", city: "Sunrise", state: "FL" },
-  { slug: "tamarac", city: "Tamarac", state: "FL" },
+  {
+    slug: "sunrise",
+    city: "Sunrise",
+    state: "FL",
+    titleOverride: "Sunrise FL Roofing Contractor | Hurricane-Rated Roofs | All Phase",
+    descriptionOverride: "Licensed roofing contractor in Sunrise, FL. Hurricane-rated roof replacement & repair. Shingle, tile & metal. HVHZ-certified. Call (754) 227-5605."
+  },
+  {
+    slug: "tamarac",
+    city: "Tamarac",
+    state: "FL",
+    titleOverride: "Tamarac Roofing Company | Affordable Re-Roofs | All Phase",
+    descriptionOverride: "Affordable roofing company serving Tamarac, FL. Shingle & tile roof replacement, leak repair, insurance claims. HVHZ-certified. (754) 227-5605."
+  },
   { slug: "wellington", city: "Wellington", state: "FL" },
   {
     slug: "west-palm-beach",

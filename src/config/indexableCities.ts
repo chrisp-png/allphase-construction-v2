@@ -23,6 +23,7 @@
  * Array of city slugs that should be indexed by search engines
  */
 export const INDEXABLE_CITIES: string[] = [
+  // Original 15
   'boca-raton',
   'deerfield-beach',
   'fort-lauderdale',
@@ -37,7 +38,20 @@ export const INDEXABLE_CITIES: string[] = [
   'lake-worth',
   'weston',
   'lauderdale-by-the-sea',
-  'wilton-manors'
+  'wilton-manors',
+  // Expanded — high-population Broward & Palm Beach cities
+  'hollywood',
+  'pembroke-pines',
+  'miramar',
+  'plantation',
+  'sunrise',
+  'davie',
+  'lauderhill',
+  'margate',
+  'tamarac',
+  'parkland',
+  'palm-beach-gardens',
+  'hallandale-beach'
 ];
 
 /**
