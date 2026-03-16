@@ -129,11 +129,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/roof-repair': {
     title: 'Roof Repair South Florida | Storm Damage & Leak Experts | All Phase',
-        description: 'Professional roof repair in Broward & Palm Beach County. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.',
+        description: 'Roof repair in Broward & Palm Beach County. Storm damage, leaks, tile, shingle & flat fixes. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/licensed-roofing-contractor': {
-    title: 'Licensed Roofing Contractor South Florida | Verify Before You Hire',
+    title: 'Licensed Roofing Contractor FL | Verify Before You Hire',
     description: 'How to verify a licensed roofing contractor in Florida. CCC vs CGC licenses, DBPR lookup, insurance requirements, and why licensing matters in South Florida\'s hurricane zone.',
     canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
   },
@@ -393,10 +393,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
-            description: `Fast, licensed roof repair in ${cityName}. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified dual-licensed contractor. Free inspection. (754) 227-5605.`,
+            description: `Licensed roof repair in ${cityName}, FL. Storm damage, leaks, tile & shingle fixes. HVHZ-certified, dual-licensed contractor. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
       ogTitle: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
-            ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
+            ogDescription: `Licensed roof repair in ${cityName}, FL. Storm damage, leaks & flashing failures. HVHZ-compliant CCC/CGC contractor. (754) 227-5605.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
   }

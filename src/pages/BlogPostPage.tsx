@@ -316,7 +316,20 @@ export default function BlogPostPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', post.meta_description || post.excerpt);
+      let desc = post.meta_description || post.excerpt || '';
+      // If description is too short (<70 chars), generate a better one from post content
+      if (desc.length < 70 && post.content) {
+        const stripped = post.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+        const sentences = stripped.match(/[^.!?]+[.!?]+/g) || [];
+        desc = sentences.slice(0, 3).join(' ').trim();
+        if (desc.length > 155) desc = desc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
+        if (desc.length < 70) desc = `${post.title}. Expert roofing insights from a dual-licensed South Florida contractor. Read the full guide at All Phase Construction USA.`;
+      }
+      // If description is too long (>160 chars), trim at word boundary
+      if (desc.length > 160) {
+        desc = desc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
+      }
+      metaDescription.setAttribute('content', desc);
     }
 
         let canonical = document.querySelector('link[rel="canonical"]');

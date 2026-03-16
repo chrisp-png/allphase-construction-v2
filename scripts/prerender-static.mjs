@@ -1329,6 +1329,19 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     `<meta property="og:url" content="${canonical}" />`
   );
 
+  // Add og:image, og:site_name, and twitter:image if not already present
+  const ogImageUrl = 'https://allphaseconstructionfl.com/images/og-default.jpg';
+  if (!html.includes('og:image')) {
+    const ogImageTags = `
+    <meta property="og:image" content="${ogImageUrl}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="All Phase Construction USA — Licensed South Florida Roofing Contractor">
+    <meta property="og:site_name" content="All Phase Construction USA">
+    <meta name="twitter:image" content="${ogImageUrl}">`;
+    html = html.replace('</head>', `${ogImageTags}\n</head>`);
+  }
+
   // Add JSON-LD schema if provided (before </head>)
   // Always inject base RoofingContractor schema on every prerendered page
   const baseOrgSchema = {
@@ -2125,7 +2138,19 @@ ${companyAuthorityFooter()}
         const blogCanonical = `https://allphaseconstructionfl.com/blog/${post.slug}`;
         const blogMetaTitle = post.meta_title || post.title;
     const cleanBlogTitle = (() => { const t = blogMetaTitle.replace(/\s*\|.*$/, '').trim(); return t.length <= 52 ? t : t.substring(0, 52).replace(/\s+\S*$/, ''); })();
-        const blogMetaDesc = post.meta_description || post.excerpt || `Expert roofing insights on ${post.title.toLowerCase()} from All Phase Construction USA.`;
+        let blogMetaDesc = post.meta_description || post.excerpt || '';
+        // If description is too short, auto-generate from content
+        if (blogMetaDesc.length < 70 && post.content) {
+          const stripped = post.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+          const sentences = stripped.match(/[^.!?]+[.!?]+/g) || [];
+          blogMetaDesc = sentences.slice(0, 3).join(' ').trim();
+          if (blogMetaDesc.length > 155) blogMetaDesc = blogMetaDesc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
+          if (blogMetaDesc.length < 70) blogMetaDesc = `${post.title}. Expert roofing insights from a dual-licensed South Florida contractor. Read the full guide at All Phase Construction USA.`;
+        }
+        // If description is too long, trim at word boundary
+        if (blogMetaDesc.length > 160) {
+          blogMetaDesc = blogMetaDesc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
+        }
 
         // Format the published date
         const pubDate = new Date(post.published_date);
