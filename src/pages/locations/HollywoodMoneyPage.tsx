@@ -60,7 +60,7 @@ export default function HollywoodMoneyPage() {
     },
     {
       question: 'How long does a roof replacement take in Hollywood?',
-      answer: 'Most residential roof replacements in Hollywood take 1–3 working days once the crew begins. The full process from contract to final inspection typically spans 2–4 weeks due to City of Hollywood permitting and engineering review. Dense neighborhoods near downtown or Hollywood Beach may require additional logistical planning for material staging and access.'
+      answer: 'The physical labor for most residential roof replacements in Hollywood takes about 3 working days once the crew is on-site. However, the full project timeline is longer: City of Hollywood permits can take up to 30 days, and required inspections are scheduled between phases. From contract signing to final inspection sign-off, expect 4–8 weeks total. Dense neighborhoods near downtown or Hollywood Beach may require additional logistical planning for material staging and access.'
     },
     {
       question: 'Does All Phase handle commercial roofing in Hollywood?',

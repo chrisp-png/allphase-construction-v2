@@ -44,7 +44,7 @@ export default function PembrokePinesMoneyPage() {
   const faqs = [
     {
       question: 'How long does a typical roof replacement take in Pembroke Pines?',
-      answer: 'Most single-family home roof replacements complete in 2–4 days. Townhomes may take 1–3 days per unit depending on configuration. Weather delays during rainy season can extend timelines, so we recommend scheduling during drier months when possible. HOA approval processes typically add 2–6 weeks before work begins, depending on your community\'s ARC meeting schedule.'
+      answer: 'The physical labor for most single-family home roof replacements takes about 3 working days once the crew is on-site. Townhomes may take 1–3 working days per unit depending on configuration. However, the full project timeline is longer: Broward County permits can take up to 30 days, HOA architectural review approvals can add additional weeks depending on your community\'s ARC meeting schedule, and required inspections are scheduled between phases. From contract signing to final inspection sign-off, expect 4–8 weeks total.'
     },
     {
       question: 'Do you handle HOA approvals and permits in Pembroke Pines?',
@@ -376,7 +376,7 @@ export default function PembrokePinesMoneyPage() {
                   <h3 className="text-xl font-bold">Essential Replacement</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">$8,000 – $12,000</p>
-                <p className="text-zinc-500 text-sm mb-4">1,500–2,200 sq ft homes • 2–4 days</p>
+                <p className="text-zinc-500 text-sm mb-4">1,500–2,200 sq ft homes • ~3 working days on-site</p>
                 <ul className="space-y-2">
                   {[
                     'High-quality HVHZ-compliant shingles',

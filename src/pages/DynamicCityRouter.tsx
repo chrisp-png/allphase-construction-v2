@@ -57,6 +57,7 @@ const SunriseRoofInspectionPage = lazy(() => import('./SunriseRoofInspectionPage
 const HollywoodMoneyPage = lazy(() => import('./locations/HollywoodMoneyPage'));
 const MiramarMoneyPage = lazy(() => import('./locations/MiramarMoneyPage'));
 const PembrokePinesMoneyPage = lazy(() => import('./locations/PembrokePinesMoneyPage'));
+const PlantationMoneyPage = lazy(() => import('./locations/PlantationMoneyPage'));
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
 const GenericRoofInspectionTemplate = lazy(() => import('./templates/GenericRoofInspectionTemplate'));
@@ -75,6 +76,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'jupiter': JupiterPage,
   'miramar': MiramarMoneyPage,
   'pembroke-pines': PembrokePinesMoneyPage,
+  'plantation': PlantationMoneyPage,
   'pompano-beach': PompanoBeachMoneyPage,
   'wellington': WellingtonPage,
   'west-palm-beach': WestPalmBeachMoneyPage,
