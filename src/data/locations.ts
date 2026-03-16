@@ -125,8 +125,8 @@ export const locations: Location[] = [
     slug: "palm-beach-gardens",
     city: "Palm Beach Gardens",
     state: "FL",
-    titleOverride: "Palm Beach Gardens Roofer | Premium Roof Replacement | All Phase",
-    descriptionOverride: "Premium roofing contractor in Palm Beach Gardens, FL. Tile, metal & architectural shingle roofs. Wind-compliant, 2,500+ projects. Free estimate. (754) 227-5605."
+    titleOverride: "Palm Beach Gardens Roofing Contractor | Luxury Tile & Estate Roofing | All Phase",
+    descriptionOverride: "Premium roofing contractor in Palm Beach Gardens, FL. Luxury tile roof replacement for PGA National, BallenIsles, Frenchman's Reserve & more. HOA/ARC experts. (754) 227-5605."
   },
   {
     slug: "parkland",

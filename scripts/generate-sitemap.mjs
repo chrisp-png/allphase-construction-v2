@@ -233,6 +233,7 @@ const LOCATION_MONEY_PAGES = [
   'hallandale-beach',
   'jupiter',
   'lauderhill',
+  'palm-beach-gardens',
   'margate',
   'miramar',
   'parkland',
