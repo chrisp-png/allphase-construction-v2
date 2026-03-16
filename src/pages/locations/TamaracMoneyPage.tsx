@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Shield, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import EmbeddedRoofCalculator from '../../components/EmbeddedRoofCalculator';
+import Contact from '../../components/Contact';
+import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
@@ -187,6 +189,7 @@ export default function TamaracMoneyPage() {
 
   return (
     <div className="min-h-screen bg-[#09090b]">
+      <StickyConversionBar />
       <div className="pt-36">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <nav className="flex items-center space-x-2 text-sm mb-8">
@@ -442,6 +445,8 @@ export default function TamaracMoneyPage() {
           </div>
 
         </div>
+
+        <Contact />
       </div>
     </div>
   );
