@@ -520,7 +520,23 @@ export default function FrequentlyAskedQuestionsPage() {
     }))
   };
 
-  const combinedSchemas = [localBusinessSchema, faqSchema];
+  // Inject FAQPage + LocalBusiness schemas via DOM (Helmet ld+json doesn't render reliably)
+  useEffect(() => {
+    const SCHEMA_ID = 'faq-page-schema-ld';
+    let script = document.getElementById(SCHEMA_ID) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = SCHEMA_ID;
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify([localBusinessSchema, faqSchema]);
+
+    return () => {
+      const el = document.getElementById(SCHEMA_ID);
+      if (el) el.remove();
+    };
+  }, []);
 
   return (
     <>
@@ -528,9 +544,6 @@ export default function FrequentlyAskedQuestionsPage() {
         <title>Roofing FAQ South Florida | HVHZ Roofing Questions Answered | All Phase Construction USA</title>
         <meta name="description" content="Expert answers to South Florida roofing FAQs. HVHZ requirements, roof replacement costs, permits, insurance, hurricane prep, and contractor selection. Broward & Palm Beach County." />
         <link rel="canonical" href={pageUrl} />
-        <script type="application/ld+json">
-          {JSON.stringify(combinedSchemas)}
-        </script>
       </Helmet>
 
       <div className="min-h-screen bg-black pt-36 pb-16">
