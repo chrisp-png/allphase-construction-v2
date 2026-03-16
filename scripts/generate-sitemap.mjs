@@ -230,6 +230,7 @@ const LOCATION_MONEY_PAGES = [
   'wellington',
   // New money pages (2026)
   'davie',
+  'hallandale-beach',
   'jupiter',
   'lauderhill',
   'margate',

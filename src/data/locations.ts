@@ -75,8 +75,8 @@ export const locations: Location[] = [
     slug: "hallandale-beach",
     city: "Hallandale Beach",
     state: "FL",
-    titleOverride: "Hallandale Beach Roofer | Coastal & Condo Roofing | All Phase",
-    descriptionOverride: "Licensed roofer in Hallandale Beach, FL. Coastal wind-rated roofing for homes and condos. Salt-air-resistant systems, HVHZ-certified. (754) 227-5605."
+    titleOverride: "Hallandale Beach Roofing Contractor | Condo & Coastal Flat Roof Experts | All Phase",
+    descriptionOverride: "Expert condo & high-rise roofing contractor in Hallandale Beach, FL. Flat roof specialists — TPO, modified bitumen, built-up systems. 40-year recertification, HVHZ compliant. (754) 227-5605."
   },
   { slug: "haverhill", city: "Haverhill", state: "FL" },
   { slug: "highland-beach", city: "Highland Beach", state: "FL" },
