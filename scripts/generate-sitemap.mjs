@@ -227,7 +227,15 @@ const LOCATION_MONEY_PAGES = [
   'west-palm-beach',
   'delray-beach',
   'boynton-beach',
-  'wellington'
+  'wellington',
+  // New money pages (2026)
+  'davie',
+  'jupiter',
+  'lauderhill',
+  'margate',
+  'miramar',
+  'parkland',
+  'pembroke-pines'
 ];
 
 const LOCATION_SUB_PAGES = [
