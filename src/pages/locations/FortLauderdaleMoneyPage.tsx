@@ -83,15 +83,15 @@ export default function FortLauderdaleMoneyPage() {
 
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  Dispatched from our Deerfield Beach HQ to provide rapid roofing services in {cityName}, All Phase Construction USA is a dual-licensed roofing contractor and full-service construction company with unmatched structural authority and expertise in both roofing and general construction projects. All Phase Construction USA is a family owned business, bringing a level of trust, reliability, and personal touch to every project.
+                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) serving {cityName}, FL with comprehensive roof replacement, roof repair, and roof inspection services. As a family-owned business based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to HVHZ wind code standards for {cityName} homes and commercial properties.
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  We hold both Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match. Our company values honesty in all customer interactions and project management.
+                  Our dual-license advantage means we handle both the roofing system and the underlying structural work that standard roofing-only contractors cannot touch — delivering complete solutions from deck repairs to full re-roofs with unmatched structural authority.
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  With years of experience and a strong reputation within the roofing industry in {cityName} and South Florida, we are committed to delivering professional, high-quality results. As a full-service contractor, we also install impact windows and doors for {cityName} properties seeking complete storm protection upgrades.
+                  With a strong reputation throughout {cityName} and South Florida, we also install impact windows and doors for properties seeking complete storm protection upgrades. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
 

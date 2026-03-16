@@ -154,13 +154,13 @@ export default function RoofInspectionPage() {
             </span>
           </h1>
 
-          {/* Subhead */}
+          {/* Direct-Answer Opening for AI Extraction */}
           <p className="text-xl text-zinc-300 leading-relaxed mb-6 max-w-4xl">
-            Diagnostic roof evaluations performed by licensed roofing contractors. Evidence-based assessments to determine condition, identify deficiencies, and provide the information needed to make informed decisions about repair versus replacement.
+            All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) providing professional roof inspection services across Broward County and Palm Beach County, Florida. Our diagnostic roof evaluations are performed by licensed roofing contractors who deliver evidence-based assessments to determine roof condition, identify deficiencies, and provide the information homeowners and businesses need to make informed repair-versus-replacement decisions.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-8 max-w-4xl">
-            All Phase Construction USA provides residential and commercial roof inspection services throughout Broward County and Palm Beach County, including major cities such as Boca Raton, Delray Beach, Coral Springs, Margate, and surrounding communities.
+            Based in Deerfield Beach with 20+ years of experience, we serve Boca Raton, Fort Lauderdale, Coral Springs, Delray Beach, Pompano Beach, Margate, and surrounding communities throughout South Florida. Call (754) 227-5605 to schedule a free roof inspection.
           </p>
 
           {/* CTA Buttons */}

@@ -168,14 +168,14 @@ export default function CommercialRoofingPage() {
             </span>
           </h1>
 
-          {/* Subhead */}
+          {/* Direct-Answer Opening for AI Extraction */}
           <div className="space-y-6 text-xl md:text-2xl text-zinc-300 mb-10 leading-relaxed max-w-4xl">
             <p>
-              Broward County sits in Florida's most demanding building zone. Your commercial roof needs a contractor who understands HVHZ code requirements, condo association compliance, and how to maximize grant funding for your building. It is crucial to hire <Link to="/about-us" className="text-red-500 hover:text-red-400 underline">licensed roofing contractors</Link> to ensure compliance with local regulations and guarantee high-quality workmanship. As a reputable roofing company with years of experience serving local business clients, our business is dedicated to protect commercial properties from hurricane season threats by providing storm-ready roofing solutions.
+              All Phase Construction USA is a dual-licensed commercial roofing contractor (CCC-1331464, CGC-1526236) serving Broward County, Palm Beach County, and the surrounding South Florida High Velocity Hurricane Zone (HVHZ). We specialize in TPO, modified bitumen, built-up, and metal roofing systems for commercial buildings, condominiums, warehouses, and government facilities — with full HVHZ code compliance on every project. It is crucial to hire <Link to="/about-us" className="text-red-500 hover:text-red-400 underline">licensed roofing contractors</Link> to ensure compliance with local regulations and guarantee high-quality workmanship.
             </p>
 
             <p>
-              All Phase Construction USA has earned the trust of government agencies and institutional clients — including completing a roof coating project for the Fort Lauderdale Building Department itself. When the people who inspect roofs choose us for their own building, it speaks to the quality and code compliance we deliver on every commercial project.
+              Based in Deerfield Beach with 20+ years of experience, All Phase has earned the trust of government agencies and institutional clients — including completing a roof coating project for the Fort Lauderdale Building Department itself. When the people who inspect roofs choose us for their own building, it speaks to the quality and code compliance we deliver on every commercial project. Call (754) 227-5605 for a free commercial roof assessment.
             </p>
           </div>
 

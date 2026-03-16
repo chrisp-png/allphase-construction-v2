@@ -82,11 +82,11 @@ export default function CoralSpringsMoneyPage() {
 
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  Dispatched from our Deerfield Beach HQ to provide rapid roofing services in {cityName}, All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority. We hold both Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses, providing comprehensive roofing and structural expertise that standard roofing contractors cannot match.
+                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) serving {cityName}, FL with expert roof replacement, roof repair, and roof inspection services. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems for {cityName} residential and <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial properties</Link>, all built to HVHZ wind code standards.
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  We specialize in both residential and <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial roofing</Link>, bringing expert solutions to homeowners and businesses alike. Our commitment is to deliver the best price for every project without compromising on quality. All Phase Construction USA is a family owned business with deep roots in the {cityName} community — following Hurricane Wilma in 2005, our team was actively replacing tile roofs destroyed throughout {cityName} neighborhoods, earning the trust of homeowners across the city during one of South Florida's most challenging recovery periods.
+                  As a family-owned business with deep roots in the {cityName} community, our team was actively replacing tile roofs destroyed throughout {cityName} neighborhoods following Hurricane Wilma in 2005, earning the trust of homeowners across the city during one of South Florida's most challenging recovery periods. Our dual-license advantage means we handle both roofing and structural work that standard roofing-only contractors cannot touch. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
 

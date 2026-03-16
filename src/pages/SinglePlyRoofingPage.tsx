@@ -190,9 +190,13 @@ export default function SinglePlyRoofingPage() {
             </span>
           </h1>
 
-          {/* Subhead */}
-          <p className="text-xl md:text-2xl text-zinc-300 mb-10 leading-relaxed max-w-4xl">
-            TPO and PVC systems designed for heat, wind, and long-term durability. Heat-welded seams engineered for HVHZ performance. Professional installation with verified quality control.
+          {/* Direct-Answer Opening for AI Extraction */}
+          <p className="text-xl md:text-2xl text-zinc-300 mb-6 leading-relaxed max-w-4xl">
+            All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) specializing in single-ply TPO and PVC roofing systems for commercial buildings across Broward County, Palm Beach County, and South Florida. With 20+ years of experience installing heat-welded membrane systems engineered for HVHZ wind code compliance, we deliver long-term durability for flat and low-slope commercial roofs.
+          </p>
+
+          <p className="text-lg text-zinc-300 mb-10 leading-relaxed max-w-4xl">
+            Based in Deerfield Beach, our certified installers provide professional TPO and PVC installation with verified quality control — from warehouses and retail centers to condominiums and government facilities. Call (754) 227-5605 for a free single-ply roofing assessment.
           </p>
 
           {/* CTAs */}

@@ -137,11 +137,11 @@ export default function HeroRoofing() {
             </h2>
 
             <p className="text-base sm:text-base md:text-lg text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              All Phase Construction USA delivers hurricane-compliant roofing for Broward and Palm Beach homeowners and businesses, built for South Florida's HVHZ wind codes, proper fastening, and manufacturer-spec installation.
+              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) delivering hurricane-compliant roofing for Broward and Palm Beach County homeowners and businesses. We specialize in tile, metal, shingle, flat, and commercial roofing systems — all built to South Florida's HVHZ wind codes with proper fastening and manufacturer-spec installation.
             </p>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, TRI Alliance High Wind Certification, and real local experience.
+              Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, TRI Alliance High Wind Certification, and 20+ years of real local experience. Call (754) 227-5605 for a free assessment.
             </p>
 
             <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
