@@ -14,6 +14,7 @@ export default function StickyMobileCTA() {
       <div className="flex items-center justify-between px-4 py-3 gap-3">
         <a
           href="tel:+17542275605"
+          onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'sticky_mobile_cta' }); }}
           className="flex items-center justify-center gap-2 flex-1 bg-red-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg active:scale-95 cursor-pointer"
           style={{ touchAction: 'manipulation' }}
         >

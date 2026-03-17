@@ -161,6 +161,7 @@ export default function Header() {
                 <span className="text-white font-medium">Call Now:</span>
                 <a
                   href="tel:+17542275605"
+                  onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'header' }); }}
                   className="text-white hover:text-red-400 transition-colors font-bold text-sm"
                   aria-label="Call us at 754-227-5605"
                 >

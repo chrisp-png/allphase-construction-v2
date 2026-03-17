@@ -35,6 +35,69 @@ export default function HomePage() {
       />
       <HeroRoofing />
 
+      {/* Social Proof Trust Bar — visible without scrolling on most screens */}
+      <section className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 py-4 border-y border-red-500/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white text-sm sm:text-base">
+            <a href={EXTERNAL_LINKS.GOOGLE_REVIEWS} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-yellow-200 transition-colors">
+              <Star className="w-5 h-5 text-yellow-300 fill-yellow-300" />
+              <span className="font-bold">4.8 Stars</span>
+              <span className="text-red-200">on Google</span>
+            </a>
+            <div className="hidden sm:block w-px h-5 bg-red-400/50" />
+            <div className="flex items-center gap-2">
+              <Shield className="w-5 h-5 text-white/90" />
+              <span className="font-bold">2,500+</span>
+              <span className="text-red-200">Roofs Completed</span>
+            </div>
+            <div className="hidden sm:block w-px h-5 bg-red-400/50" />
+            <div className="flex items-center gap-2">
+              <Award className="w-5 h-5 text-white/90" />
+              <span className="font-bold">Dual Licensed</span>
+              <span className="text-red-200">CCC + CGC</span>
+            </div>
+            <div className="hidden sm:block w-px h-5 bg-red-400/50" />
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5 text-white/90" />
+              <span className="font-bold">Since 2005</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Trust — What Real Customers Say */}
+      <section className="py-10 bg-[#0a0a0a] border-b border-gray-800/50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-500 uppercase tracking-widest text-xs font-semibold mb-4">What Homeowners Are Saying</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+              <div className="flex justify-center mb-2">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-gray-300 text-sm italic mb-3">"Professional from start to finish. Chris and his team replaced our entire tile roof in 3 days. No surprises, no hidden costs."</p>
+              <p className="text-gray-500 text-xs font-semibold">— Deerfield Beach Homeowner</p>
+            </div>
+            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+              <div className="flex justify-center mb-2">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-gray-300 text-sm italic mb-3">"After the hurricane, they were the only company that gave us a straight answer. Dual-licensed made all the difference for our insurance."</p>
+              <p className="text-gray-500 text-xs font-semibold">— Fort Lauderdale Homeowner</p>
+            </div>
+            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+              <div className="flex justify-center mb-2">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-gray-300 text-sm italic mb-3">"Used their cost calculator to get a ballpark, then scheduled a free inspection. The whole process was easy and transparent."</p>
+              <p className="text-gray-500 text-xs font-semibold">— Boca Raton Homeowner</p>
+            </div>
+          </div>
+          <a href="/reviews/" className="inline-flex items-center gap-2 mt-6 text-red-500 hover:text-red-400 font-semibold text-sm transition-colors">
+            Read All Reviews →
+          </a>
+        </div>
+      </section>
+
       {/* Service Navigation Pills */}
       <section className="py-12 bg-gradient-to-b from-[#0a0a0a] to-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

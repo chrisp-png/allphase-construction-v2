@@ -172,6 +172,7 @@ export default function HeroRoofing() {
 
                 <a
                   href="tel:+17542275605"
+                  onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'hero_trust_bar' }); }}
                   className="p-4 sm:p-5 text-center relative group overflow-hidden transition-all duration-300 hover:bg-red-950/30"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

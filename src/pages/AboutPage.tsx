@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Shield, Award, MapPin, Wind, Phone, CheckCircle, User, Briefcase, GraduationCap, Heart, Users, Star, Wrench } from 'lucide-react';
+import { Shield, Award, MapPin, Wind, Phone, CheckCircle, User, Briefcase, GraduationCap, Heart, Users, Star, Wrench, ArrowRight, Calculator } from 'lucide-react';
 
 interface TeamMember {
   name: string;
@@ -440,6 +440,28 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Mid-page CTA — after team section */}
+        <div className="mb-16 bg-gradient-to-r from-red-700/10 via-red-600/5 to-red-700/10 border border-red-600/20 rounded-xl p-8 lg:p-10 text-center">
+          <h3 className="text-2xl font-bold text-white mb-3">See Our Work in Action</h3>
+          <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
+            Browse 2,500+ completed roofing projects across South Florida — from full re-roofs to emergency repairs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              to="/projects/"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
+            >
+              View Our Projects <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              to="/reviews/"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-800 border border-zinc-700 text-white rounded-lg font-semibold hover:border-red-600/50 transition-all duration-300"
+            >
+              <Star className="w-4 h-4 text-yellow-400" /> Read Customer Reviews
+            </Link>
+          </div>
+        </div>
+
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -524,6 +546,20 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Mid-page CTA — after certifications */}
+        <div className="mb-16 flex flex-col sm:flex-row items-center justify-between gap-6 bg-zinc-800/50 border border-zinc-700 rounded-xl p-6 lg:p-8">
+          <div>
+            <h3 className="text-xl font-bold text-white mb-1">Not sure what your roof needs?</h3>
+            <p className="text-gray-400">Get an instant ballpark estimate with our free calculator — no commitment required.</p>
+          </div>
+          <Link
+            to="/roof-cost-calculator/"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 whitespace-nowrap shrink-0"
+          >
+            <Calculator className="w-4 h-4" /> Estimate My Roof
+          </Link>
+        </div>
+
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 lg:p-12 mb-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-xl overflow-hidden order-2 lg:order-1">
@@ -601,6 +637,7 @@ export default function AboutPage() {
             </Link>
             <a
               href="tel:+17542275605"
+              onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'about_page_cta' }); }}
               className="flex items-center gap-2 px-8 py-4 bg-zinc-700 text-white rounded-lg font-semibold hover:bg-zinc-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-zinc-600"
             >
               <Phone className="w-5 h-5" />
@@ -620,10 +657,10 @@ export default function AboutPage() {
               <CheckCircle className="w-5 h-5 text-green-500" />
               <span>2,500+ Projects</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-500" />
-              <span>5-Star Rated</span>
-            </div>
+            <Link to="/reviews/" className="flex items-center gap-2 hover:text-red-500 transition-colors">
+              <Star className="w-5 h-5 text-yellow-400" />
+              <span className="underline decoration-gray-600 hover:decoration-red-500">5-Star Rated</span>
+            </Link>
           </div>
         </div>
       </div>
