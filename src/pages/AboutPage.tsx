@@ -1,7 +1,78 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Shield, Award, MapPin, Wind, Phone, CheckCircle } from 'lucide-react';
+import { Shield, Award, MapPin, Wind, Phone, CheckCircle, User, Briefcase, GraduationCap, Heart, Users, Star, Wrench } from 'lucide-react';
+
+interface TeamMember {
+  name: string;
+  title: string;
+  since?: string;
+  bio: string;
+  highlights?: string[];
+  photoPlaceholder: string; // Initials for placeholder
+}
+
+const teamMembers: TeamMember[] = [
+  {
+    name: 'Christopher Porosky',
+    title: 'Owner & Founder',
+    bio: 'From framing houses alongside his father as a teenager to leading one of South Florida\'s most trusted roofing companies, Chris has spent over 20 years in the construction industry. A dual-licensed Certified General Contractor (CGC-1526236) and Certified Roofing Contractor (CCC-1331464), Chris founded All Phase Construction USA with a simple philosophy: an educated customer is the best customer. His pursuit of continuing education — including becoming a Certified Energy Rater and traveling to Germany to study Passive Haus (zero-energy homes) — changed the way he designs roofing applications for the Florida climate. Chris is a local Deerfield Beach resident and active community supporter.',
+    highlights: [
+      'Certified General Contractor (CGC-1526236)',
+      'Certified Roofing Contractor (CCC-1331464)',
+      'Certified Energy Rater (Level 2)',
+      'TAMKO Platinum Contractor',
+      'Expert Witness for Roof Damage Assessments',
+      'Campbell University, BBA in Business/Trust Management',
+      'NRCA Member & PRAC Appointee (2019)',
+    ],
+    photoPlaceholder: 'CP',
+  },
+  {
+    name: 'Zoya Haydic',
+    title: 'Office Manager',
+    since: '2016',
+    bio: 'Zoya has been with All Phase Construction USA since 2016, evolving into a versatile team leader who wears many hats across the business. Born in Sofia, Bulgaria, she speaks Bulgarian and Croatian fluently and brings a diverse professional background spanning banking, real estate, insurance, and small business ownership. Her well-rounded experience gives her a deep understanding of what it takes to run a successful construction operation — from project coordination to customer communication.',
+    photoPlaceholder: 'ZH',
+  },
+  {
+    name: 'Dillon Mavrich',
+    title: 'Sales Manager',
+    bio: 'Dillon brings over 10 years of hands-on roofing experience to his role as Sales Manager. Known for his strategic leadership and customer-first approach, he guides clients through every step of the roofing process with clarity and confidence. A dedicated family man and strong team leader, Dillon ensures every homeowner receives honest assessments and solutions tailored to their property\'s needs.',
+    photoPlaceholder: 'DM',
+  },
+  {
+    name: 'Karl Walczak',
+    title: 'Roofing Sales Representative',
+    bio: 'Karl combines a background in regional sourcing and customer engagement with a deep commitment to helping homeowners protect and enhance their properties. Based in South Florida, he takes a consultative approach — ensuring every client receives a customized roofing experience from the initial inspection through final installation. Originally from the UK and now a longtime U.S. resident, Karl is known for his reliability, transparency, and strong work ethic.',
+    photoPlaceholder: 'KW',
+  },
+  {
+    name: 'Joy Geraci',
+    title: 'Project Coordinator',
+    since: '2015',
+    bio: 'Joy has been with All Phase Construction since 2015, coordinating projects from beginning to end — from ordering materials and scheduling deliveries to direct customer communication and crew scheduling. A Florida native with extensive knowledge of the Florida Building Code, Joy brings an unmatched level of detail and dedication to every project. Her commitment to customer service makes her an essential part of the All Phase team.',
+    photoPlaceholder: 'JG',
+  },
+  {
+    name: 'Matt Denofrio',
+    title: 'Production Manager',
+    bio: 'Originally from the Chicago area, Matt has called South Florida home for over 20 years. His extensive background in the hospitality industry — from dishwasher to management — instilled a customer-service-first mentality that he brings to every roofing project. With a "play hard, work harder" approach, Matt oversees production operations and ensures every job meets All Phase\'s standards for quality and timeliness.',
+    photoPlaceholder: 'MD',
+  },
+  {
+    name: 'Carlos Murcia',
+    title: 'Service Manager',
+    bio: 'Carlos started as a laborer with All Phase and worked his way up through hard work and dedication. Sponsored by All Phase to obtain his work visa, Carlos is now a proud American citizen. His detailed approach, hands-on experience, and relentless work ethic have made him one of the best in the industry when it comes to diagnosing and stopping roof leaks. Carlos continuously advances his roofing knowledge through manufacturer training and certifications.',
+    photoPlaceholder: 'CM',
+  },
+  {
+    name: 'Clarissa Albelli',
+    title: 'Customer Engagement Specialist',
+    bio: 'Clarissa is most likely the first voice you\'ll hear when you call All Phase. She guides customers through the first steps of their roofing journey — ensuring every interaction is helpful, friendly, and efficient. Originally from the Pocono Mountains, Clarissa brings a personal goal to every workday: make at least one person smile. Her belief that kindness is free, powerful, and can turn someone\'s whole day around is exactly the kind of energy that defines the All Phase experience.',
+    photoPlaceholder: 'CA',
+  },
+];
 
 export default function AboutPage() {
   useEffect(() => {
@@ -9,11 +80,11 @@ export default function AboutPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Licensed roofing contractor (CCC1331464 & CGC1526236) serving South Florida since 2003. 2,500+ roofs installed in Broward & Palm Beach counties.');
+      metaDescription.setAttribute('content', 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005. 2,500+ roofs installed.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Licensed roofing contractor (CCC1331464 & CGC1526236) serving South Florida since 2003. 2,500+ roofs installed in Broward & Palm Beach counties.';
+      meta.content = 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005. 2,500+ roofs installed.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -51,13 +122,20 @@ export default function AboutPage() {
   };
 
   const certifications = [
-    'Tamko Pro Platinum Contractor',
-    'Owens Corning Platinum Contractor',
-    'CertainTeed Master Contractor',
+    'Tamko Platinum Contractor',
+    'CertainTeed Select Shingle Master',
     'GAF Certified',
-    'Metal Alliance Certified',
+    'Carlisle Certified',
+    'Soprema Certified',
+    'FiberTite Certified',
+    'IB Roof Systems Top Tier',
+    'Mule Hide Certified',
     'Certified Wind Mitigator',
-    'TRI Partner'
+    'Certified Energy Rater (Level 2)',
+    'TRI Alliance High Wind',
+    'AAMA Installation Masters (RLC-1)',
+    'MySafeFloridaHome Contractor',
+    'Conklin Preferred Contractor',
   ];
 
   return (
@@ -84,17 +162,19 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <div className="inline-block px-4 py-2 bg-red-600/20 border border-red-600/40 rounded-full mb-6 backdrop-blur-sm">
               <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">
-                Broward & Palm Beach's Trusted Roofing Experts
+                Dual-Licensed: CCC-1331464 & CGC-1526236
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
-              About All Phase Construction
+              About All Phase Construction USA
             </h1>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 drop-shadow-lg">
-              Roofing Expertise Backed by Dual Licensing
-            </h2>
-            <p className="text-xl text-gray-200 max-w-4xl mx-auto drop-shadow-lg">
-              Led by Chris Porosky, a Certified Roofing and General Contractor with over 20 years of experience in the construction industry.
+
+            {/* AI-Extraction Direct-Answer Opening */}
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto drop-shadow-lg mb-4">
+              All Phase Construction USA is a family-owned, dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) based in Deerfield Beach, Florida. Founded by Chris Porosky with over 20 years of experience, our team of dedicated professionals has completed 2,500+ roofing projects across Broward and Palm Beach Counties.
+            </p>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto drop-shadow-lg">
+              We specialize in tile, metal, shingle, flat, and commercial roofing systems — all built to South Florida's HVHZ wind code standards.
             </p>
           </div>
         </div>
@@ -147,6 +227,115 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* ============================================ */}
+        {/* MEET THE TEAM SECTION                        */}
+        {/* ============================================ */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              Meet Our Team
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              The people behind every roof we build. Our team combines decades of construction experience with genuine care for every customer.
+            </p>
+          </div>
+
+          {/* Owner/Founder - Featured Card */}
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 lg:p-10 mb-8">
+            <div className="grid lg:grid-cols-3 gap-8 items-start">
+              {/* Photo Placeholder */}
+              <div className="lg:col-span-1">
+                <div className="aspect-[3/4] max-w-[320px] mx-auto bg-zinc-800 border-2 border-red-600/30 rounded-xl flex flex-col items-center justify-center text-center p-6">
+                  <div className="w-24 h-24 bg-red-600/20 border border-red-600/40 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-red-500 text-3xl font-bold">{teamMembers[0].photoPlaceholder}</span>
+                  </div>
+                  <p className="text-zinc-500 text-sm italic">Headshot coming soon</p>
+                </div>
+              </div>
+
+              {/* Bio Content */}
+              <div className="lg:col-span-2">
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-white">{teamMembers[0].name}</h3>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-3 py-1 rounded-lg text-sm font-semibold mb-4 border border-red-600/20">
+                  <Star className="w-4 h-4" />
+                  {teamMembers[0].title}
+                </div>
+                <p className="text-gray-400 leading-relaxed mb-6">
+                  {teamMembers[0].bio}
+                </p>
+
+                {/* Qualifications Grid */}
+                {teamMembers[0].highlights && (
+                  <div>
+                    <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-3">Key Qualifications</h4>
+                    <div className="grid sm:grid-cols-2 gap-2">
+                      {teamMembers[0].highlights.map((highlight) => (
+                        <div key={highlight} className="flex items-start gap-2 text-sm">
+                          <CheckCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-300">{highlight}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Leadership Team */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {teamMembers.slice(1, 3).map((member) => (
+              <div key={member.name} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600/30 transition-all duration-300">
+                <div className="flex gap-5">
+                  {/* Photo Placeholder */}
+                  <div className="flex-shrink-0">
+                    <div className="w-20 h-20 bg-zinc-800 border border-zinc-700 rounded-xl flex items-center justify-center">
+                      <span className="text-zinc-500 text-lg font-bold">{member.photoPlaceholder}</span>
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-red-500 text-sm font-semibold">{member.title}</span>
+                      {member.since && (
+                        <span className="text-zinc-600 text-xs">Since {member.since}</span>
+                      )}
+                    </div>
+                    <p className="text-gray-400 text-sm leading-relaxed">{member.bio}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Rest of the Team */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {teamMembers.slice(3).map((member) => (
+              <div key={member.name} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600/30 transition-all duration-300">
+                {/* Photo Placeholder */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-zinc-800 border border-zinc-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span className="text-zinc-500 text-base font-bold">{member.photoPlaceholder}</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white">{member.name}</h3>
+                    <div className="flex items-center gap-2">
+                      <span className="text-red-500 text-sm font-semibold">{member.title}</span>
+                      {member.since && (
+                        <span className="text-zinc-600 text-xs">Since {member.since}</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm leading-relaxed">{member.bio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Reliability Starts at the Top */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 lg:p-12 mb-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -215,7 +404,7 @@ export default function AboutPage() {
               <Award className="w-12 h-12 text-red-600 mb-4" />
               <h3 className="text-xl font-bold text-white mb-3">Manufacturer Certified</h3>
               <p className="text-gray-400">
-                Our certifications from Owens Corning, GAF, CertainTeed, and Tamko mean access to the best warranties in the industry.
+                Our certifications from TAMKO, GAF, CertainTeed, and Carlisle mean access to the best warranties in the industry.
               </p>
             </div>
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600/50 transition-all duration-300">
@@ -267,6 +456,15 @@ export default function AboutPage() {
                 className="text-gray-400 hover:text-red-600 transition-colors underline decoration-gray-600 hover:decoration-red-600"
               >
                 Broward County Chamber of Commerce
+              </a>
+              {' '}&{' '}
+              <a
+                href="https://www.nrca.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-600 transition-colors underline decoration-gray-600 hover:decoration-red-600"
+              >
+                National Roofing Contractors Association (NRCA)
               </a>
             </p>
           </div>
