@@ -31,7 +31,7 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
   return {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
-    '@id': `https://allphaseconstructionfl.com/locations/${cityName.toLowerCase().replace(/\s+/g, '-')}#roofing-contractor`,
+    '@id': `https://allphaseconstructionfl.com/locations/${cityName.toLowerCase().replace(/\s+/g, '-')}#organization`,
     name: 'All Phase Construction USA',
     alternateName: `All Phase Roofing ${cityName}`,
     description: `Professional roofing contractor serving ${cityName}, ${stateName}. Licensed, insured, and HVHZ certified for residential and commercial roofing services.`,
@@ -187,7 +187,7 @@ export function generateRoofRepairServiceSchema(cityName: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `https://allphaseconstructionfl.com/locations/${cityName.toLowerCase().replace(/\s+/g, '-')}/roof-repair#service`,
+    '@id': `https://allphaseconstructionfl.com/locations/${cityName.toLowerCase().replace(/\s+/g, '-')}/roof-repair#organization`,
     serviceType: 'Roof Repair',
     provider: {
       '@type': 'RoofingContractor',

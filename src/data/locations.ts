@@ -55,7 +55,7 @@ export const locations: Location[] = [
     city: "Davie",
     state: "FL",
     titleOverride: "Davie Roofing Company | Residential Re-Roofs | All Phase",
-    descriptionOverride: "Trusted roofing company in Davie, FL. Shingle, tile & metal re-roofs for ranch-style and estate homes. HVHZ-certified, 2,500+ projects. (754) 227-5605."
+    descriptionOverride: "Trusted roofer in Davie, FL. Shingle, tile & metal re-roofs for ranch-style & estate homes. HVHZ-certified, 2,500+ projects. (754) 227-5605."
   },
   {
     slug: "delray-beach",
@@ -67,6 +67,7 @@ export const locations: Location[] = [
     slug: "fort-lauderdale",
     city: "Fort Lauderdale",
     state: "FL",
+    titleOverride: "Fort Lauderdale Roofing Contractor | All Phase",
     descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections. (754) 227-5605."
   },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
@@ -75,8 +76,8 @@ export const locations: Location[] = [
     slug: "hallandale-beach",
     city: "Hallandale Beach",
     state: "FL",
-    titleOverride: "Hallandale Beach Roofing Contractor | Condo & Coastal Flat Roof Experts | All Phase",
-    descriptionOverride: "Expert condo & high-rise roofing contractor in Hallandale Beach, FL. Flat roof specialists — TPO, modified bitumen, built-up systems. 40-year recertification, HVHZ compliant. (754) 227-5605."
+    titleOverride: "Hallandale Beach Roofer | Condo & Flat Roof | All Phase",
+    descriptionOverride: "Condo & high-rise roofer in Hallandale Beach, FL. TPO, modified bitumen & built-up flat roofs. 40-yr recertification, HVHZ compliant. (754) 227-5605."
   },
   { slug: "haverhill", city: "Haverhill", state: "FL" },
   { slug: "highland-beach", city: "Highland Beach", state: "FL" },
@@ -85,8 +86,8 @@ export const locations: Location[] = [
     slug: "hollywood",
     city: "Hollywood",
     state: "FL",
-    titleOverride: "Hollywood FL Roofing Contractor | Storm & Wind Damage | All Phase",
-    descriptionOverride: "Top-rated roofing contractor in Hollywood, FL. Hurricane-rated re-roofs, storm damage repair & coastal roofing. HVHZ-certified, 2,500+ jobs. (754) 227-5605."
+    titleOverride: "Hollywood FL Roofer | Storm & Wind Damage | All Phase",
+    descriptionOverride: "Top-rated roofer in Hollywood, FL. Hurricane-rated re-roofs, storm damage repair & coastal roofing. HVHZ-certified. (754) 227-5605."
   },
   { slug: "hypoluxo", city: "Hypoluxo", state: "FL" },
   { slug: "jupiter-inlet-colony", city: "Jupiter Inlet Colony", state: "FL" },
@@ -98,7 +99,7 @@ export const locations: Location[] = [
     slug: "lauderhill",
     city: "Lauderhill",
     state: "FL",
-    titleOverride: "Lauderhill Roofing Contractor | Roof Replacement | All Phase",
+    titleOverride: "Lauderhill Roofing Contractor | All Phase",
     descriptionOverride: "Roofing contractor serving Lauderhill, FL. Affordable roof replacement, shingle & tile installs. HVHZ-compliant, licensed & insured. (754) 227-5605."
   },
   { slug: "lighthouse-point", city: "Lighthouse Point", state: "FL" },
@@ -113,8 +114,8 @@ export const locations: Location[] = [
     slug: "miramar",
     city: "Miramar",
     state: "FL",
-    titleOverride: "Miramar Roofing Services | Tile, Metal & Shingle | All Phase",
-    descriptionOverride: "Licensed roofing services in Miramar, FL. Tile, metal & shingle roof replacement. Dual-licensed contractor, HVHZ-certified, 2,500+ projects. (754) 227-5605."
+    titleOverride: "Miramar Roofing | Tile, Metal & Shingle | All Phase",
+    descriptionOverride: "Licensed roofer in Miramar, FL. Tile, metal & shingle roof replacement. Dual-licensed, HVHZ-certified, 2,500+ projects. (754) 227-5605."
   },
   { slug: "north-lauderdale", city: "North Lauderdale", state: "FL" },
   { slug: "north-palm-beach", city: "North Palm Beach", state: "FL" },
@@ -125,21 +126,21 @@ export const locations: Location[] = [
     slug: "palm-beach-gardens",
     city: "Palm Beach Gardens",
     state: "FL",
-    titleOverride: "Palm Beach Gardens Roofing Contractor | Luxury Tile & Estate Roofing | All Phase",
-    descriptionOverride: "Premium roofing contractor in Palm Beach Gardens, FL. Luxury tile roof replacement for PGA National, BallenIsles, Frenchman's Reserve & more. HOA/ARC experts. (754) 227-5605."
+    titleOverride: "Palm Beach Gardens Roofer | Tile & Estate | All Phase",
+    descriptionOverride: "Premium roofer in Palm Beach Gardens, FL. Tile roof replacement for PGA National, BallenIsles & more. HOA/ARC experts. (754) 227-5605."
   },
   {
     slug: "parkland",
     city: "Parkland",
     state: "FL",
-    titleOverride: "Parkland Roofing Contractor | Luxury Home Re-Roofs | All Phase",
+    titleOverride: "Parkland Roofer | Luxury Home Re-Roofs | All Phase",
     descriptionOverride: "Roofing contractor specializing in Parkland, FL luxury homes. Tile, slate & metal roof replacement. HVHZ-certified, HOA-experienced. (754) 227-5605."
   },
   {
     slug: "pembroke-pines",
     city: "Pembroke Pines",
     state: "FL",
-    titleOverride: "Pembroke Pines Roofing Company | Full Roof Replacement | All Phase",
+    titleOverride: "Pembroke Pines Roofing | Roof Replacement | All Phase",
     descriptionOverride: "Roofing company in Pembroke Pines, FL. Complete roof replacement for single-family homes & townhomes. HVHZ-certified, 2,500+ projects. (754) 227-5605."
   },
   {
@@ -155,7 +156,7 @@ export const locations: Location[] = [
     slug: "sunrise",
     city: "Sunrise",
     state: "FL",
-    titleOverride: "Sunrise FL Roofing Contractor | Hurricane-Rated Roofs | All Phase",
+    titleOverride: "Sunrise FL Roofer | Hurricane-Rated Roofs | All Phase",
     descriptionOverride: "Licensed roofing contractor in Sunrise, FL. Hurricane-rated roof replacement & repair. Shingle, tile & metal. HVHZ-certified. Call (754) 227-5605."
   },
   {

@@ -60,7 +60,7 @@ export function generateServiceSchema(service: ServiceDetails): object {
     'serviceType': service.serviceType || service.name,
     'provider': service.provider || {
       '@type': 'RoofingContractor',
-      '@id': 'https://allphaseconstructionfl.com/#roofing-contractor',
+      '@id': 'https://allphaseconstructionfl.com/#organization',
       'name': 'All Phase Construction USA'
     },
     'url': service.url,
@@ -113,7 +113,7 @@ export function generateOrganizationSchema(): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
-    '@id': 'https://allphaseconstructionfl.com/#roofing-contractor',
+    '@id': 'https://allphaseconstructionfl.com/#organization',
     'name': 'All Phase Construction USA',
     'alternateName': 'All Phase Roofing',
     'description': 'Licensed roofing contractor serving Broward County and Palm Beach County, Florida. Dual-licensed (CCC1331464 & CGC1526236) with 22+ years experience and 2,500+ roofs installed.',

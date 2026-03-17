@@ -46,8 +46,8 @@ export function buildLocationSeo(location: Location): LocationSEO {
   const complianceLanguage = isBrowardCounty ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
 
   // Generate defaults from templates
-  const defaultTitle = `${city} Roofing Contractor | Roof Replacement | All Phase`;
-  const defaultDescription = `Roof replacement contractor in ${city}, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.`;
+  const defaultTitle = `${city} Roofing Contractor | All Phase`;
+  const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 

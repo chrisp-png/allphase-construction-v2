@@ -24,6 +24,7 @@ export default function GenericLocationTemplate() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "RoofingContractor",
+    "@id": `https://allphaseconstructionfl.com/locations/${citySlug}#organization`,
     "name": `All Phase Construction USA - ${cityName}`,
     "image": "https://allphaseconstructionfl.com/image.png",
     "address": {
