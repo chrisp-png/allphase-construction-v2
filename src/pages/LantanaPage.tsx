@@ -116,12 +116,12 @@ export default function LantanaPage() {
   ];
 
   const relatedServices = [
-    { name: 'Roof Repair', path: '/roofing-services/roof-repair/' },
-    { name: 'Roof Replacement', path: '/roofing-services/roof-replacement/' },
+    { name: 'Roof Repair', path: '/roof-repair' },
+    { name: 'Roof Replacement', path: '/roof-replacement-process' },
     { name: 'Shingle Roofing', path: '/shingle-roofing/' },
     { name: 'Tile Roofing', path: '/tile-roofing/' },
     { name: 'Metal Roofing', path: '/metal-roofing/' },
-    { name: 'Emergency Roofing', path: '/roofing-services/emergency-roofing/' }
+    { name: 'Emergency Roofing', path: '/roof-repair' }
   ];
 
   const quickFaqs = [

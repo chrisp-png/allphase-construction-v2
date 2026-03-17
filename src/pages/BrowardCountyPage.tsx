@@ -33,24 +33,24 @@ export default function BrowardCountyPage() {
       "@graph": [
         {
           "@type": "WebPage",
-          "@id": "https://allphaseconstructionfl.com/roofing-contractor-broward-county-fl#webpage",
-          "url": "https://allphaseconstructionfl.com/roofing-contractor-broward-county-fl",
+          "@id": "https://allphaseconstructionfl.com/locations/broward-county#webpage",
+          "url": "https://allphaseconstructionfl.com/locations/broward-county",
           "name": "Roofing Contractor Serving Broward County, FL | All Phase Construction USA",
           "description": "Licensed roofing contractor serving Broward County, Florida. Residential and commercial roofing inspections, repairs, replacements, and specialty systems with permitting and insurance documentation support.",
           "isPartOf": {
             "@id": "https://allphaseconstructionfl.com/#website"
           },
           "about": {
-            "@id": "https://allphaseconstructionfl.com/roofing-contractor-broward-county-fl#service"
+            "@id": "https://allphaseconstructionfl.com/locations/broward-county#service"
           }
         },
         {
           "@type": "Service",
-          "@id": "https://allphaseconstructionfl.com/roofing-contractor-broward-county-fl#service",
+          "@id": "https://allphaseconstructionfl.com/locations/broward-county#service",
           "name": "Roofing Contractor in Broward County",
           "serviceType": "Roofing Contractor",
           "description": "Comprehensive residential and commercial roofing services in Broward County, Florida, including inspections, repairs, replacements, and specialty roofing systems, with documentation-first support for permitting and insurance needs.",
-          "url": "https://allphaseconstructionfl.com/roofing-contractor-broward-county-fl",
+          "url": "https://allphaseconstructionfl.com/locations/broward-county",
           "provider": {
             "@id": "https://allphaseconstructionfl.com/#business"
           },
@@ -159,7 +159,7 @@ export default function BrowardCountyPage() {
     {
       title: 'Roof Repairs & Active Leak Resolution',
       description: 'Fast emergency repairs and systematic leak remediation for all roofing system types.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -233,28 +233,28 @@ export default function BrowardCountyPage() {
   ];
 
   const cities = [
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
-    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
-    { name: 'Tamarac', path: '/roofing-contractor-tamarac-fl/' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
-    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' },
-    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl/' },
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl/' },
-    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl/' },
-    { name: 'Hallandale Beach', path: '/roofing-contractor-hallandale-beach-fl/' },
-    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl/' },
-    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl/' },
-    { name: 'Lauderdale-By-The-Sea', path: '/roofing-contractor-lauderdale-by-the-sea-fl/' },
-    { name: 'Lighthouse Point', path: '/roofing-contractor-lighthouse-point-fl/' }
+    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
+    { name: 'Hollywood', path: '/locations/hollywood' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { name: 'Coral Springs', path: '/locations/coral-springs' },
+    { name: 'Pembroke Pines', path: '/locations/pembroke-pines' },
+    { name: 'Deerfield Beach', path: '/locations/deerfield-beach' },
+    { name: 'Plantation', path: '/locations/plantation' },
+    { name: 'Davie', path: '/locations/davie' },
+    { name: 'Miramar', path: '/locations/miramar' },
+    { name: 'Weston', path: '/locations/weston' },
+    { name: 'Coconut Creek', path: '/locations/coconut-creek' },
+    { name: 'Tamarac', path: '/locations/tamarac' },
+    { name: 'Margate', path: '/locations/margate' },
+    { name: 'Lauderhill', path: '/locations/lauderhill' },
+    { name: 'Sunrise', path: '/locations/sunrise' },
+    { name: 'Parkland', path: '/locations/parkland' },
+    { name: 'Cooper City', path: '/locations/cooper-city' },
+    { name: 'Hallandale Beach', path: '/locations/hallandale-beach' },
+    { name: 'Wilton Manors', path: '/locations/wilton-manors' },
+    { name: 'Oakland Park', path: '/locations/oakland-park' },
+    { name: 'Lauderdale-By-The-Sea', path: '/locations/lauderdale-by-the-sea' },
+    { name: 'Lighthouse Point', path: '/locations/lighthouse-point' }
   ];
 
   const peopleAlsoAsk = [
@@ -670,7 +670,7 @@ export default function BrowardCountyPage() {
             </div>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
               <Link
-                to="/roofing-services/roof-repair/broward-county/"
+                to="/roof-repairbroward-county/"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600/50 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-red-500 transition-colors">

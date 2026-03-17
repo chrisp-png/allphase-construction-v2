@@ -113,7 +113,7 @@ export default function HypoluxoRoofRepairPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roofing-services/roof-repair/" className="hover:text-red-500 transition-colors">Roof Repair</Link>
+            <Link to="/roof-repair" className="hover:text-red-500 transition-colors">Roof Repair</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Hypoluxo</span>
           </div>
@@ -125,11 +125,11 @@ export default function HypoluxoRoofRepairPage() {
 
           {/* Hero Paragraph */}
           <p className="text-xl text-zinc-300 mb-6 max-w-4xl leading-relaxed">
-            All Phase Construction USA provides inspection-first roof repair services for Hypoluxo properties, with an emphasis on accurate leak diagnostics, Florida Building Code compliance, and repair details that hold up to South Florida heat, seasonal storms, and moisture exposure near the Intracoastal corridor. Every repair recommendation starts with a <Link to="/roofing-services/roof-inspection/" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> to confirm the cause of the problem and determine whether a focused repair is appropriate.
+            All Phase Construction USA provides inspection-first roof repair services for Hypoluxo properties, with an emphasis on accurate leak diagnostics, Florida Building Code compliance, and repair details that hold up to South Florida heat, seasonal storms, and moisture exposure near the Intracoastal corridor. Every repair recommendation starts with a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> to confirm the cause of the problem and determine whether a focused repair is appropriate.
           </p>
 
           <p className="text-lg text-zinc-300 mb-8 max-w-4xl leading-relaxed">
-            Local planning resources: <Link to="/service-areas/hypoluxo/" className="text-red-500 hover:text-red-400 underline">Hypoluxo service area hub</Link> • <Link to="/service-areas/hypoluxo/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> • <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing</Link>.
+            Local planning resources: <Link to="/locations/hypoluxo" className="text-red-500 hover:text-red-400 underline">Hypoluxo service area hub</Link> • <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> • <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing</Link>.
           </p>
 
           {/* CTAs */}
@@ -433,15 +433,15 @@ export default function HypoluxoRoofRepairPage() {
             <ul className="space-y-3">
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Get a preliminary <Link to="/service-areas/hypoluxo/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">Hypoluxo roof cost estimate</Link> based on your property details and repair scope.</span>
+                <span>Get a preliminary <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Hypoluxo roof cost estimate</Link> based on your property details and repair scope.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Review available <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing options</Link> to manage repair costs with flexible payment plans.</span>
+                <span>Review available <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> to manage repair costs with flexible payment plans.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Additional coverage details are available on the <Link to="/service-areas/hypoluxo/" className="text-red-500 hover:text-red-400 underline">Hypoluxo service area hub</Link>.</span>
+                <span>Additional coverage details are available on the <Link to="/locations/hypoluxo" className="text-red-500 hover:text-red-400 underline">Hypoluxo service area hub</Link>.</span>
               </li>
             </ul>
           </div>

@@ -132,7 +132,7 @@ export default function MargateCalculatorPage() {
               Deerfield Beach
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/roofing-contractor-margate-fl/" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/margate" className="text-zinc-400 hover:text-red-600 transition-colors">
               Margate
             </Link>
             <span className="text-zinc-600">/</span>

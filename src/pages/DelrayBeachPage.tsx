@@ -222,7 +222,7 @@ export default function DelrayBeachPage() {
                       Our CGC license (Certified General Contractor) authorizes us to evaluate and repair the complete structural system supporting your roof. During every Delray Beach roof replacement project, we guide owners through a clear process: we begin with a thorough inspection, assess roof deck fastening, evaluate truss integrity, verify proper connections between the roof structure and exterior walls, and ensure the entire system meets current Florida Building Code requirements. When we identify structural deficiencies, we repair them immediately — keeping your project on schedule under one comprehensive warranty and providing peace of mind through our comprehensive approach.
                     </p>
                     <p className="text-lg text-zinc-300 leading-relaxed">
-                      Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
+                      Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
                     </p>
                   </div>
                 </div>

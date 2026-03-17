@@ -94,7 +94,7 @@ export default function PembrokePinesPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Extending roof lifespan for Pembroke Pines properties. We can provide 5-year certification letters for qualifying roofs to maintain insurance coverage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -144,12 +144,12 @@ export default function PembrokePinesPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' },
-    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl/' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
-    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl/' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' }
+    { name: 'Miramar', path: '/locations/miramar' },
+    { name: 'Hollywood', path: '/locations/hollywood' },
+    { name: 'Davie', path: '/locations/davie' },
+    { name: 'Weston', path: '/locations/weston' },
+    { name: 'Cooper City', path: '/locations/cooper-city' },
+    { name: 'Plantation', path: '/locations/plantation' }
   ];
 
   const faqs = [

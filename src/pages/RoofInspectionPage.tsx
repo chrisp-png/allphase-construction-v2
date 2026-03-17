@@ -510,7 +510,7 @@ export default function RoofInspectionPage() {
 
           <div className="space-y-6">
             <div className="border-l-2 border-red-600 pl-6">
-              <Link to="/roofing-services/roof-repair/" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
+              <Link to="/roof-repair" className="text-xl font-semibold text-white hover:text-red-600 transition-colors">
                 Roof Repair
               </Link>
               <p className="text-zinc-300 mt-2">
@@ -1040,7 +1040,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/roofing-services/roof-repair/" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/roof-repair" className="bg-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Wrench className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Roof Repair & Restoration

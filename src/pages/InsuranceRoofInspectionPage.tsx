@@ -589,28 +589,28 @@ export default function InsuranceRoofInspectionPage() {
                     Broward County
                   </h3>
                   <div className="space-y-2">
-                    <Link to="/roofing-contractor-fort-lauderdale-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/fort-lauderdale" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Fort Lauderdale
                     </Link>
-                    <Link to="/roofing-contractor-coral-springs-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/coral-springs" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Coral Springs
                     </Link>
-                    <Link to="/roofing-contractor-pompano-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/pompano-beach" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Pompano Beach
                     </Link>
-                    <Link to="/roofing-contractor-deerfield-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/deerfield-beach" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Deerfield Beach
                     </Link>
-                    <Link to="/roofing-contractor-plantation-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/plantation" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Plantation
                     </Link>
-                    <Link to="/roofing-contractor-hollywood-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/hollywood" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Hollywood
                     </Link>
-                    <Link to="/roofing-contractor-davie-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/davie" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Davie
                     </Link>
-                    <Link to="/roofing-contractor-weston-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/weston" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Weston
                     </Link>
                   </div>
@@ -621,28 +621,28 @@ export default function InsuranceRoofInspectionPage() {
                     Palm Beach County
                   </h3>
                   <div className="space-y-2">
-                    <Link to="/roofing-contractor-boca-raton-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/boca-raton" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Boca Raton
                     </Link>
-                    <Link to="/roofing-contractor-delray-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/delray-beach" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Delray Beach
                     </Link>
-                    <Link to="/roofing-contractor-boynton-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/boynton-beach" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Boynton Beach
                     </Link>
-                    <Link to="/roofing-contractor-west-palm-beach-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/west-palm-beach" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       West Palm Beach
                     </Link>
-                    <Link to="/roofing-contractor-wellington-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/wellington" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Wellington
                     </Link>
-                    <Link to="/roofing-contractor-lake-worth-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/lake-worth" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Lake Worth
                     </Link>
-                    <Link to="/roofing-contractor-palm-beach-gardens-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/palm-beach-gardens" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Palm Beach Gardens
                     </Link>
-                    <Link to="/roofing-contractor-jupiter-fl/" className="block text-slate-700 hover:text-slate-900 transition-colors">
+                    <Link to="/locations/jupiter" className="block text-slate-700 hover:text-slate-900 transition-colors">
                       Jupiter
                     </Link>
                   </div>
@@ -717,7 +717,7 @@ export default function InsuranceRoofInspectionPage() {
                     Flat Roof Inspection
                   </Link>
                   <Link
-                    to="/roofing-services/roof-repair/"
+                    to="/roof-repair"
                     className="block text-slate-300 hover:text-white transition-colors"
                   >
                     Roof Repair Services

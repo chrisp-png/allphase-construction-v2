@@ -228,7 +228,7 @@ export default function DaviePage() {
                 <p className="text-white font-semibold mb-3">Explore services:</p>
                 <div className="flex flex-wrap gap-3">
                   <Link
-                    to="/roofing-services/roof-repair/"
+                    to="/roof-repair"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 text-zinc-300 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 border border-zinc-700 hover:border-red-600"
                   >
                     <Wrench className="w-4 h-4" />
@@ -308,7 +308,7 @@ export default function DaviePage() {
                 </div>
               </Link>
               <Link
-                to="/roofing-services/roof-repair/"
+                to="/roof-repair"
                 className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300 group"
               >
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-600 transition-colors">

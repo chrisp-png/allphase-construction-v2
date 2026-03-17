@@ -80,13 +80,13 @@ export default function WestPalmBeachPage() {
     {
       title: 'Roof Replacement',
       description: "Complete HVHZ-compliant replacement for all roof types with manufacturer warranties.",
-      path: '/roofing-services/roof-replacement/',
+      path: '/roof-replacement-process',
       icon: Home
     },
     {
       title: 'Emergency Repairs',
       description: "24/7 response for active leaks, storm damage, missing shingles, and emergency tarping.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -116,12 +116,12 @@ export default function WestPalmBeachPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Palm Beach', path: '/roofing-contractor-palm-beach-fl/' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
-    { name: 'Lake Worth', path: '/roofing-contractor-lake-worth-fl/' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
-    { name: 'Riviera Beach', path: '/roofing-contractor-riviera-beach-fl/' },
-    { name: 'Greenacres', path: '/roofing-contractor-greenacres-fl/' }
+    { name: 'Palm Beach', path: '/locations/palm-beach' },
+    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens' },
+    { name: 'Lake Worth', path: '/locations/lake-worth' },
+    { name: 'North Palm Beach', path: '/locations/north-palm-beach' },
+    { name: 'Riviera Beach', path: '/locations/riviera-beach' },
+    { name: 'Greenacres', path: '/locations/greenacres' }
   ];
 
   const faqs = [

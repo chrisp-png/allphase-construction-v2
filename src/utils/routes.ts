@@ -49,8 +49,8 @@ export const siteRoutes: RouteGroup[] = [
     routes: [
       { path: '/our-location/', name: 'Our Location' },
       { path: '/locations/', name: 'All Locations' },
-      { path: '/roofing-contractor-palm-beach-county-fl/', name: 'Palm Beach County' },
-      { path: '/roofing-contractor-broward-county-fl/', name: 'Broward County' },
+      { path: '/locations/palm-beach-county', name: 'Palm Beach County' },
+      { path: '/locations/broward-county', name: 'Broward County' },
       { path: '/locations/deerfield-beach/', name: 'Deerfield Beach - Primary Hub' },
       { path: '/locations/deerfield-beach/how-to-hire-a-roofing-contractor/', name: 'How to Hire a Roofing Contractor in South Florida' },
     ],

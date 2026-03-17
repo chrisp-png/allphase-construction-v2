@@ -121,7 +121,7 @@ export default function RoofReplacementProcessPage() {
     },
     {
       question: 'What is the average cost of roof replacement in Broward and Palm Beach Counties?',
-      answer: 'Roof replacement costs in South Florida typically range from $8,000-$25,000+ depending on size, material choice, pitch, complexity, and structural repairs discovered during tear-off. Shingle roofs average $5.50-$8.50 per square foot installed. Tile roofs range $10-$18 per square foot. Metal roofing runs $12-$22 per square foot. These prices include permits, engineering, materials, labor, and disposal. HVHZ requirements add 15-25% compared to standard installations due to enhanced fastening and underlayment. Get an instant estimate using our <Link to="/calculator" className="text-zinc-500 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link>, but understand that accurate pricing requires an in-person inspection to assess condition, access, and structural factors.'
+      answer: 'Roof replacement costs in South Florida typically range from $8,000-$25,000+ depending on size, material choice, pitch, complexity, and structural repairs discovered during tear-off. Shingle roofs average $5.50-$8.50 per square foot installed. Tile roofs range $10-$18 per square foot. Metal roofing runs $12-$22 per square foot. These prices include permits, engineering, materials, labor, and disposal. HVHZ requirements add 15-25% compared to standard installations due to enhanced fastening and underlayment. Get an instant estimate using our <Link to="/roof-cost-calculator" className="text-zinc-500 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link>, but understand that accurate pricing requires an in-person inspection to assess condition, access, and structural factors.'
     },
     {
       question: 'How much does a new roof increase my home value in South Florida?',
@@ -647,7 +647,7 @@ export default function RoofReplacementProcessPage() {
                 </div>
                 <p className="text-sm text-zinc-500 mt-6">
                   Want to estimate your project cost? Try our{' '}
-                  <Link to="/calculator" className="text-zinc-400 hover:text-red-500 underline transition-colors">
+                  <Link to="/roof-cost-calculator" className="text-zinc-400 hover:text-red-500 underline transition-colors">
                     roof calculator
                   </Link>
                   {' '}for an instant preliminary estimate.

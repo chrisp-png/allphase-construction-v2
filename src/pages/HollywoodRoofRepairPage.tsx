@@ -70,7 +70,7 @@ export default function HollywoodRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair/"
+                  to="/roof-repair"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -84,7 +84,7 @@ export default function HollywoodRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Hollywood is a South Florida city with coastal exposure variability, seasonal storm patterns with wind-driven rain, heat and UV cycling degradation, and a mix of single-family, multi-family, and condo properties where HOA and association coordination is frequently required. The area features roof systems including low-slope membranes especially on multi-family and flat sections, shingle, tile, and metal roofs on residential properties. All Phase Construction USA provides inspection-first roof repair in Hollywood, beginning with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns in units and common areas where applicable, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/hollywood/" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Hollywood</Link>, or use our <Link to="/service-areas/hollywood/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
+                  Hollywood is a South Florida city with coastal exposure variability, seasonal storm patterns with wind-driven rain, heat and UV cycling degradation, and a mix of single-family, multi-family, and condo properties where HOA and association coordination is frequently required. The area features roof systems including low-slope membranes especially on multi-family and flat sections, shingle, tile, and metal roofs on residential properties. All Phase Construction USA provides inspection-first roof repair in Hollywood, beginning with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns in units and common areas where applicable, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/locations/hollywood" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Hollywood</Link>, or use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
                 </p>
               </div>
 
@@ -550,7 +550,7 @@ export default function HollywoodRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/hollywood/"
+                to="/locations/hollywood"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -562,7 +562,7 @@ export default function HollywoodRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/hollywood/roof-cost-estimate/"
+                to="/roof-cost-calculator"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -574,7 +574,7 @@ export default function HollywoodRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing/"
+                to="/easy-payments"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

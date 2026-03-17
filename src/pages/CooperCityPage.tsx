@@ -141,7 +141,7 @@ export default function CooperCityPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Professional repairs that extend roof life and may qualify for 5-year certification letters under Florida law.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -191,12 +191,12 @@ export default function CooperCityPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
-    { name: 'Weston', path: '/roofing-contractor-weston-fl/' },
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
-    { name: 'Hollywood', path: '/roofing-contractor-hollywood-fl/' }
+    { name: 'Davie', path: '/locations/davie' },
+    { name: 'Pembroke Pines', path: '/locations/pembroke-pines' },
+    { name: 'Plantation', path: '/locations/plantation' },
+    { name: 'Weston', path: '/locations/weston' },
+    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
+    { name: 'Hollywood', path: '/locations/hollywood' }
   ];
 
   const faqs = [
@@ -305,7 +305,7 @@ export default function CooperCityPage() {
                 <li>Preventative maintenance to extend roof life and reduce leak risk</li>
               </ul>
               <p className="pt-4">
-                Explore our services: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link> · <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing</Link> · <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link> · <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing</Link>
+                Explore our services: <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link> · <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing</Link> · <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link> · <Link to="/metal-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing</Link>
               </p>
             </div>
           </div>
@@ -320,7 +320,7 @@ export default function CooperCityPage() {
                   Learn what to expect during a replacement: <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Replacement</Link>
                 </li>
                 <li>
-                  Need a fast fix for a leak: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link>
+                  Need a fast fix for a leak: <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Repair</Link>
                 </li>
                 <li>
                   Not sure what you need yet: <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Inspection</Link>

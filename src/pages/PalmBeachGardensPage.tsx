@@ -91,7 +91,7 @@ export default function PalmBeachGardensPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Expert repairs and maintenance extending Palm Beach Gardens roof lifespans. Includes required 5-year certification letters.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -141,12 +141,12 @@ export default function PalmBeachGardensPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl/' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
-    { name: 'Juno Beach', path: '/roofing-contractor-juno-beach-fl/' },
-    { name: 'Riviera Beach', path: '/roofing-contractor-riviera-beach-fl/' },
-    { name: 'Lake Park', path: '/roofing-contractor-lake-park-fl/' }
+    { name: 'Jupiter', path: '/locations/jupiter' },
+    { name: 'North Palm Beach', path: '/locations/north-palm-beach' },
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { name: 'Juno Beach', path: '/locations/juno-beach' },
+    { name: 'Riviera Beach', path: '/locations/riviera-beach' },
+    { name: 'Lake Park', path: '/locations/lake-park' }
   ];
 
   const faqs = [

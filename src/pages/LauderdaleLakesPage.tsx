@@ -98,7 +98,7 @@ export default function LauderdaleLakesPage() {
     {
       title: 'Roof Repair',
       description: 'Focused repairs addressing leaks, wind damage, and aging components.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -134,7 +134,7 @@ export default function LauderdaleLakesPage() {
     {
       title: 'Emergency Roof Repair',
       description: 'Prompt response for active leaks or storm-related damage.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: AlertTriangle
     },
     {

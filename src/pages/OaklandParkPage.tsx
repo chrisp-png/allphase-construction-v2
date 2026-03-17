@@ -91,7 +91,7 @@ export default function OaklandParkPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Keeping Oakland Park roofs functional longer. We can also provide 5-year certification letters for qualifying roofs to protect insurance coverage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -141,12 +141,12 @@ export default function OaklandParkPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
-    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl/' },
-    { name: 'Lauderdale Lakes', path: '/roofing-contractor-lauderdale-lakes-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
-    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' },
-    { name: 'Tamarac', path: '/roofing-contractor-tamarac-fl/' }
+    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
+    { name: 'Wilton Manors', path: '/locations/wilton-manors' },
+    { name: 'Lauderdale Lakes', path: '/locations/lauderdale-lakes' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { name: 'Lauderhill', path: '/locations/lauderhill' },
+    { name: 'Tamarac', path: '/locations/tamarac' }
   ];
 
   const faqs = [

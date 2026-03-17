@@ -125,19 +125,19 @@ export default function FortLauderdalePage() {
     {
       title: 'Roof Replacement',
       description: "Complete HVHZ-compliant replacement for all roof types with manufacturer warranties. See our 10-step replacement process.",
-      path: '/roofing-services/roof-replacement/',
+      path: '/roof-replacement-process',
       icon: Home
     },
     {
       title: 'Emergency Repairs',
       description: "24/7 response for active leaks, storm damage, missing shingles, and emergency tarping.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
       title: 'Professional Inspections',
       description: "21-point inspections for insurance documentation, pre-purchase evaluations, and maintenance assessments.",
-      path: '/roofing-services/roof-inspection/',
+      path: '/roof-inspection',
       icon: Shield
     },
     {
@@ -217,12 +217,12 @@ export default function FortLauderdalePage() {
   ];
 
   const nearbyCities = [
-    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl/' },
-    { name: 'Wilton Manors', path: '/roofing-contractor-wilton-manors-fl/' },
-    { name: 'Lauderdale-by-the-Sea', path: '/roofing-contractor-lauderdale-by-the-sea-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl/' }
+    { name: 'Oakland Park', path: '/locations/oakland-park' },
+    { name: 'Wilton Manors', path: '/locations/wilton-manors' },
+    { name: 'Lauderdale-by-the-Sea', path: '/locations/lauderdale-by-the-sea' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { name: 'Plantation', path: '/locations/plantation' },
+    { name: 'Davie', path: '/locations/davie' }
   ];
 
   const faqs = [

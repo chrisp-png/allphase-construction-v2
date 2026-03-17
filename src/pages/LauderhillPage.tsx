@@ -99,7 +99,7 @@ export default function LauderhillPage() {
     {
       title: 'Roof Repair',
       description: 'Focused repairs addressing leaks, storm damage, and aging components.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -135,13 +135,13 @@ export default function LauderhillPage() {
     {
       title: 'Emergency Roof Repair',
       description: 'Prompt response for active leaks or storm-related damage.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wind
     },
     {
       title: 'Leak Detection & Prevention',
       description: 'Identification of moisture entry points and preventative solutions.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     }
   ];

@@ -113,7 +113,7 @@ export default function HighlandBeachRoofRepairPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roofing-services/roof-repair/" className="hover:text-red-500 transition-colors">Roof Repair</Link>
+            <Link to="/roof-repair" className="hover:text-red-500 transition-colors">Roof Repair</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Highland Beach</span>
           </div>
@@ -426,7 +426,7 @@ export default function HighlandBeachRoofRepairPage() {
           </div>
 
           <p className="text-zinc-300 mt-8 leading-relaxed">
-            For more information about our <Link to="/service-areas/highland-beach/" className="text-red-500 hover:text-red-400 underline">service area coverage in Highland Beach</Link>, including typical response times and project coordination, visit our location page.
+            For more information about our <Link to="/locations/highland-beach" className="text-red-500 hover:text-red-400 underline">service area coverage in Highland Beach</Link>, including typical response times and project coordination, visit our location page.
           </p>
         </div>
       </section>
@@ -509,11 +509,11 @@ export default function HighlandBeachRoofRepairPage() {
             <ul className="space-y-3">
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Get a preliminary <Link to="/service-areas/highland-beach/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> based on your property details and repair scope.</span>
+                <span>Get a preliminary <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> based on your property details and repair scope.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Review available <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing options</Link> to manage repair costs with flexible payment plans.</span>
+                <span>Review available <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> to manage repair costs with flexible payment plans.</span>
               </li>
             </ul>
           </div>

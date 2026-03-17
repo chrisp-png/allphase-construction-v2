@@ -96,7 +96,7 @@ export default function WestlakePage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and isolated material failures.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {

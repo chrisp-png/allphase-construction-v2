@@ -109,7 +109,7 @@ export default function GreenacresPage() {
       title: 'Roof Repair',
       description: 'Fast, reliable roof repair services in Greenacres to fix leaks, damaged shingles, and storm damage.',
       icon: Wrench,
-      path: '/roofing-services/roof-repair/'
+      path: '/roof-repair'
     },
     {
       title: 'Roof Replacement',
@@ -151,7 +151,7 @@ export default function GreenacresPage() {
       title: 'Storm & Hurricane Damage Repair',
       description: 'Emergency storm damage repair and hurricane damage restoration services.',
       icon: Wind,
-      path: '/roofing-services/roof-repair/'
+      path: '/roof-repair'
     },
     {
       title: 'Roof Inspections & Maintenance',

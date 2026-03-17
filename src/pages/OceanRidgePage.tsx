@@ -91,7 +91,7 @@ export default function OceanRidgePage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Expert restoration and repair to protect Ocean Ridge's valuable beachfront investments.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -141,12 +141,12 @@ export default function OceanRidgePage() {
   ];
 
   const nearbyCities = [
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
-    { name: 'Lantana', path: '/roofing-contractor-lantana-fl/' },
-    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl/' },
-    { name: 'Briny Breezes', path: '/roofing-contractor-briny-breezes-fl/' },
-    { name: 'Manalapan', path: '/roofing-contractor-manalapan-fl/' },
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' }
+    { name: 'Boynton Beach', path: '/locations/boynton-beach' },
+    { name: 'Lantana', path: '/locations/lantana' },
+    { name: 'Gulf Stream', path: '/locations/gulf-stream' },
+    { name: 'Briny Breezes', path: '/locations/briny-breezes' },
+    { name: 'Manalapan', path: '/locations/manalapan' },
+    { name: 'Delray Beach', path: '/locations/delray-beach' }
   ];
 
   const faqs = [

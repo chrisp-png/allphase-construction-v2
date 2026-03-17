@@ -94,7 +94,7 @@ export default function HypoluxoPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Expert coastal roof repairs including storm damage, wind damage, and material degradation from salt air exposure.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -144,12 +144,12 @@ export default function HypoluxoPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-fl/' },
-    { name: 'Lantana', path: '/roofing-contractor-lantana-fl/' },
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
-    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl/' },
-    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl/' },
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' }
+    { name: 'Lake Worth Beach', path: '/locations/lake-worth' },
+    { name: 'Lantana', path: '/locations/lantana' },
+    { name: 'Boynton Beach', path: '/locations/boynton-beach' },
+    { name: 'Ocean Ridge', path: '/locations/ocean-ridge' },
+    { name: 'Gulf Stream', path: '/locations/gulf-stream' },
+    { name: 'Delray Beach', path: '/locations/delray-beach' }
   ];
 
   const faqs = [

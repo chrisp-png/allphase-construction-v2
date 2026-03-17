@@ -70,7 +70,7 @@ export default function PalmBeachRoofRepairPage() {
           <div className="max-w-4xl">
             <div className="mb-6">
               <Link
-                to="/roofing-services/roof-repair/"
+                to="/roof-repair"
                 className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
               >
                 <ChevronRight className="w-4 h-4 rotate-180" />
@@ -384,7 +384,7 @@ export default function PalmBeachRoofRepairPage() {
 
           <div className="flex flex-wrap gap-4 mb-8">
             <Link
-              to="/roofing-contractor-palm-beach-county-fl/"
+              to="/locations/palm-beach-county"
               className="text-red-600 hover:text-red-500 underline transition-colors"
             >
               Palm Beach County Service Area

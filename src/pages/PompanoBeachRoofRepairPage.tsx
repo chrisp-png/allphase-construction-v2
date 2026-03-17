@@ -66,7 +66,7 @@ export default function PompanoBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair/"
+                  to="/roof-repair"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -643,7 +643,7 @@ export default function PompanoBeachRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/pompano-beach/"
+                to="/locations/pompano-beach"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -655,7 +655,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/pompano-beach/roof-cost-estimate/"
+                to="/roof-cost-calculator"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -667,7 +667,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing/"
+                to="/easy-payments"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -693,7 +693,7 @@ export default function PompanoBeachRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <Link
-                to="/roofing-services/roof-repair/"
+                to="/roof-repair"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -717,7 +717,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/"
+                to="/residential-roofing"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -729,7 +729,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/tile-roofing/"
+                to="/tile-roofing"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -741,7 +741,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/metal-roofing/"
+                to="/metal-roofing"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -753,7 +753,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/flat-roofing/"
+                to="/flat-roofing"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -765,7 +765,7 @@ export default function PompanoBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/roofing-services/commercial-roofing/"
+                to="/commercial-roofing"
                 className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

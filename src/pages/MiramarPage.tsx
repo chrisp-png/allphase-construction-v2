@@ -96,13 +96,13 @@ export default function MiramarPage() {
   }, []);
 
   const services = [
-    { title: 'Roof Repair', description: 'Focused repairs addressing leaks, storm damage, and aging components.', path: '/roofing-services/roof-repair/', icon: Wrench },
+    { title: 'Roof Repair', description: 'Focused repairs addressing leaks, storm damage, and aging components.', path: '/roof-repair', icon: Wrench },
     { title: 'Roof Replacement', description: 'Complete roofing system replacements built to current Florida code standards.', path: '/residential-roofing/', icon: Home },
     { title: 'Shingle Roofing', description: 'Wind-rated shingle systems suitable for South Florida homes.', path: '/shingle-roofing/', icon: Home },
     { title: 'Tile Roofing', description: 'Clay and concrete tile systems designed for durability and longevity.', path: '/tile-roofing/', icon: Home },
     { title: 'Metal Roofing', description: 'Long-lasting, wind-resistant roofing solutions.', path: '/metal-roofing/', icon: Shield },
     { title: 'Flat Roofing', description: 'Low-slope roofing systems designed for proper drainage and sealing.', path: '/flat-roofing/', icon: Building2 },
-    { title: 'Emergency Roof Repair', description: 'Prompt response for active leaks or storm-related damage.', path: '/roofing-services/roof-repair/', icon: Wind },
+    { title: 'Emergency Roof Repair', description: 'Prompt response for active leaks or storm-related damage.', path: '/roof-repair', icon: Wind },
     { title: 'Leak Detection & Prevention', description: 'Identification of moisture entry points and preventative solutions.', path: '/roof-inspection/', icon: Wrench }
   ];
 

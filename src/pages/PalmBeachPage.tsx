@@ -91,7 +91,7 @@ export default function PalmBeachPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Expert restoration of historic roofs and preservation of architectural details on Palm Beach's landmark properties.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -141,12 +141,12 @@ export default function PalmBeachPage() {
   ];
 
   const nearbyCities = [
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
-    { name: 'Lake Worth', path: '/roofing-contractor-lake-worth-fl/' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
-    { name: 'Manalapan', path: '/roofing-contractor-manalapan-fl/' },
-    { name: 'South Palm Beach', path: '/roofing-contractor-south-palm-beach-fl/' }
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens' },
+    { name: 'Lake Worth', path: '/locations/lake-worth' },
+    { name: 'North Palm Beach', path: '/locations/north-palm-beach' },
+    { name: 'Manalapan', path: '/locations/manalapan' },
+    { name: 'South Palm Beach', path: '/locations/south-palm-beach' }
   ];
 
   const faqs = [

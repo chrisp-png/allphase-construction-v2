@@ -61,7 +61,7 @@ export default function DeerfieldBeachCityPage() {
     },
     {
       question: 'What factors affect the cost of a roofing project in Deerfield Beach?',
-      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price. Use our <Link to="/calculator" className="underline hover:text-white">Roof Cost Calculator</Link> for a preliminary estimate.'
+      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price. Use our <Link to="/roof-cost-calculator" className="underline hover:text-white">Roof Cost Calculator</Link> for a preliminary estimate.'
     },
     {
       question: 'How long does it take to install a new roof?',

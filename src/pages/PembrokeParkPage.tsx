@@ -19,7 +19,7 @@ export default function PembrokeParkPage() {
     {
       title: 'Roof Repair',
       description: 'Focused repairs addressing leaks, storm damage, and aging components.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -55,7 +55,7 @@ export default function PembrokeParkPage() {
     {
       title: 'Emergency Roof Repair',
       description: 'Prompt response for active leaks or storm-related damage.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: AlertTriangle
     },
     {

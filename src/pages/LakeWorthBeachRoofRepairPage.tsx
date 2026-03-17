@@ -70,7 +70,7 @@ export default function LakeWorthBeachRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair/"
+                  to="/roof-repair"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -84,7 +84,7 @@ export default function LakeWorthBeachRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Lake Worth Beach is a South Florida coastal city where exposure variability can increase wind-driven rain and corrosion risk on roof systems, with strong UV and heat cycling degradation, seasonal storm patterns, and HOA and condo coordination frequently needed in parts of the market. The area features roof systems including low-slope membranes especially on multi-family and flat sections, shingle, tile, and metal roofs on residential properties. All Phase Construction USA provides inspection-first roof repair in Lake Worth Beach, beginning with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns in units and common areas where applicable, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/service-areas/lake-worth-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Lake Worth Beach</Link>, or use our <Link to="/service-areas/lake-worth-beach/roof-cost-estimate/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/financing/" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
+                  Lake Worth Beach is a South Florida coastal city where exposure variability can increase wind-driven rain and corrosion risk on roof systems, with strong UV and heat cycling degradation, seasonal storm patterns, and HOA and condo coordination frequently needed in parts of the market. The area features roof systems including low-slope membranes especially on multi-family and flat sections, shingle, tile, and metal roofs on residential properties. All Phase Construction USA provides inspection-first roof repair in Lake Worth Beach, beginning with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns in units and common areas where applicable, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable. Learn more about <Link to="/locations/lake-worth-beach" className="text-red-600 hover:text-red-500 underline transition-colors">roofing services in Lake Worth Beach</Link>, or use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> to estimate project scope. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Flexible financing options</Link> are available.
                 </p>
               </div>
 
@@ -550,7 +550,7 @@ export default function LakeWorthBeachRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/lake-worth-beach/"
+                to="/locations/lake-worth-beach"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -562,7 +562,7 @@ export default function LakeWorthBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/lake-worth-beach/roof-cost-estimate/"
+                to="/roof-cost-calculator"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -574,7 +574,7 @@ export default function LakeWorthBeachRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing/"
+                to="/easy-payments"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

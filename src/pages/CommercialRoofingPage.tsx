@@ -852,7 +852,7 @@ export default function CommercialRoofingPage() {
           </div>
 
           <p className="text-lg text-zinc-300 mt-12 leading-relaxed">
-            These projects demonstrate our ability to handle the complexity, compliance requirements, and stakeholder coordination that commercial roofing demands. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate, or review our <Link to="/pricing-guide" className="text-red-500 hover:text-red-400 underline">Pricing Guide</Link> for detailed cost breakdowns. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> for commercial projects.
+            These projects demonstrate our ability to handle the complexity, compliance requirements, and stakeholder coordination that commercial roofing demands. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate, or review our <Link to="/pricing-guide" className="text-red-500 hover:text-red-400 underline">Pricing Guide</Link> for detailed cost breakdowns. We also offer flexible <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> for commercial projects.
           </p>
         </div>
       </section>

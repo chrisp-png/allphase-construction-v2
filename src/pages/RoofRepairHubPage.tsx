@@ -61,7 +61,7 @@ export default function RoofRepairHubPage() {
       "name": "Roof Repair Services",
       "serviceType": "Roof Repair",
       "description": "Professional roof repair and restoration services in Broward and Palm Beach County, Florida. Diagnostic inspections, slope-based restoration, and Florida Building Code-compliant repairs.",
-      "url": "https://allphaseconstructionfl.com/roofing-services/roof-repair",
+      "url": "https://allphaseconstructionfl.com/roof-repair",
       "provider": {
         "@id": "https://allphaseconstructionfl.com/#business"
       },
@@ -561,7 +561,7 @@ export default function RoofRepairHubPage() {
               <DollarSign className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-bold mb-3">Estimate Your Roof Costs</h3>
               <p className="text-zinc-300 mb-4">
-                Use our <Link to="/service-areas/deerfield-beach/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to get a preliminary estimate based on your roof type, square footage, and scope of work.
+                Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> to get a preliminary estimate based on your roof type, square footage, and scope of work.
               </p>
             </div>
 
@@ -569,7 +569,7 @@ export default function RoofRepairHubPage() {
               <Calendar className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-bold mb-3">Explore Financing Options</h3>
               <p className="text-zinc-300 mb-4">
-                We offer <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing options</Link> and flexible payment plans to help you manage the cost of roof repairs and restorations.
+                We offer <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> and flexible payment plans to help you manage the cost of roof repairs and restorations.
               </p>
             </div>
           </div>

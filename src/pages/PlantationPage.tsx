@@ -84,7 +84,7 @@ export default function PlantationPage() {
     {
       title: 'Roof Repair',
       description: 'Emergency and scheduled repairs for leaks, storm damage, and debris impact. 24/7 response for active leaks and storm emergencies throughout Plantation.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {

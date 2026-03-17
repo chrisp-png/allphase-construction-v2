@@ -104,7 +104,7 @@ export default function HollywoodPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Extending roof life for Hollywood properties with targeted repairs and restoration. 5-year certification letters when roofs qualify.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -154,12 +154,12 @@ export default function HollywoodPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Hallandale Beach', path: '/roofing-contractor-hallandale-beach-fl/' },
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' },
-    { name: 'Aventura', path: '/roofing-contractor-aventura-fl/' }
+    { name: 'Hallandale Beach', path: '/locations/hallandale-beach' },
+    { name: 'Pembroke Pines', path: '/locations/pembroke-pines' },
+    { name: 'Davie', path: '/locations/davie' },
+    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
+    { name: 'Miramar', path: '/locations/miramar' },
+    { name: 'Aventura', path: '/locations/aventura' }
   ];
 
   const faqs = [

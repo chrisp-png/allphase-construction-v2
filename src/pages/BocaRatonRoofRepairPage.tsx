@@ -76,7 +76,7 @@ export default function BocaRatonRoofRepairPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+                <Link to="/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Boca Raton</span>
               </nav>

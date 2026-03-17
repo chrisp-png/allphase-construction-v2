@@ -70,7 +70,7 @@ export default function SunriseRoofRepairPage() {
             <div className="max-w-4xl">
               <div className="mb-6">
                 <Link
-                  to="/roofing-services/roof-repair/"
+                  to="/roof-repair"
                   className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
                 >
                   <ChevronRight className="w-4 h-4 rotate-180" />
@@ -84,7 +84,7 @@ export default function SunriseRoofRepairPage() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Sunrise's inland Broward location experiences strong seasonal storm exposure, intense wind-driven rain, and sustained heat and UV cycling that stress roof systems across mixed housing ages and architectural styles. The city features diverse residential roof assemblies including asphalt shingle, tile, metal, and low-slope sections on additions and flat roof areas, with HOA and condo management oversight present throughout portions of the market. All Phase Construction USA provides inspection-first roof repair in Sunrise, beginning with a <Link to="/roofing-services/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable.
+                  Sunrise's inland Broward location experiences strong seasonal storm exposure, intense wind-driven rain, and sustained heat and UV cycling that stress roof systems across mixed housing ages and architectural styles. The city features diverse residential roof assemblies including asphalt shingle, tile, metal, and low-slope sections on additions and flat roof areas, with HOA and condo management oversight present throughout portions of the market. All Phase Construction USA provides inspection-first roof repair in Sunrise, beginning with a <Link to="/roof-inspection" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to trace leak pathways, document moisture patterns, and determine whether targeted repairs meet Florida Building Code standards and HVHZ requirements where applicable.
                 </p>
               </div>
 
@@ -538,7 +538,7 @@ export default function SunriseRoofRepairPage() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               <Link
-                to="/service-areas/sunrise/"
+                to="/locations/sunrise"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -550,7 +550,7 @@ export default function SunriseRoofRepairPage() {
               </Link>
 
               <Link
-                to="/service-areas/sunrise/roof-cost-estimate/"
+                to="/roof-cost-calculator"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">
@@ -562,7 +562,7 @@ export default function SunriseRoofRepairPage() {
               </Link>
 
               <Link
-                to="/financing/"
+                to="/easy-payments"
                 className="block bg-zinc-800 border-2 border-zinc-700 rounded-lg p-6 hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/10 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-600 transition-colors">

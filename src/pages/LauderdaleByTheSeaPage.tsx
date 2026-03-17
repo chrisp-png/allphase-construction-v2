@@ -98,7 +98,7 @@ export default function LauderdaleByTheSeaPage() {
     {
       title: 'Roof Repair',
       description: 'Targeted repairs addressing storm damage, leaks, and wear.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -134,7 +134,7 @@ export default function LauderdaleByTheSeaPage() {
     {
       title: 'Emergency Roof Repair',
       description: 'Rapid response for active leaks or storm-related issues.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: AlertTriangle
     },
     {

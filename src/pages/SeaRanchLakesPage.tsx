@@ -19,7 +19,7 @@ export default function SeaRanchLakesPage() {
     {
       title: 'Roof Repair',
       description: 'Targeted repairs addressing leaks, storm damage, and material deterioration.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -55,7 +55,7 @@ export default function SeaRanchLakesPage() {
     {
       title: 'Emergency Roof Repair',
       description: 'Prompt response for active leaks or storm-related damage.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: AlertTriangle
     },
     {

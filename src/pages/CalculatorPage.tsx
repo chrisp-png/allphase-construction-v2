@@ -37,7 +37,7 @@ export default function CalculatorPage() {
                   Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, and <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> systems based on roof size and material selection.
                 </p>
                 <p className="text-zinc-300 leading-relaxed mb-6">
-                  Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
+                  Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
                 </p>
 
                 {/* Action Buttons */}
@@ -417,7 +417,7 @@ export default function CalculatorPage() {
                 <div className="px-6 pb-6">
                   <div className="space-y-4">
                     <p className="text-zinc-300 leading-relaxed">
-                      Start with a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">diagnostic roof inspection</Link> to evaluate <strong className="text-white">localized failure versus widespread deterioration</strong>. <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">Repair</Link> is often the better first option when damage is confined to specific slopes, penetrations, or flashings–addressing the failure pattern without replacing sound areas.
+                      Start with a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">diagnostic roof inspection</Link> to evaluate <strong className="text-white">localized failure versus widespread deterioration</strong>. <Link to="/roof-repair" className="text-white font-semibold hover:text-zinc-100 underline">Repair</Link> is often the better first option when damage is confined to specific slopes, penetrations, or flashings–addressing the failure pattern without replacing sound areas.
                     </p>
                     <p className="text-zinc-300 leading-relaxed">
                       Replacement becomes necessary when deterioration is roof-wide, repeat failures are likely, or the system can no longer perform reliably.

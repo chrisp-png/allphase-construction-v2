@@ -95,7 +95,7 @@ export default function JupiterPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Extending the life of Jupiter roofs with expert repairs and required 5-year certification letters.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -145,12 +145,12 @@ export default function JupiterPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
-    { name: 'Juno Beach', path: '/roofing-contractor-juno-beach-fl/' },
-    { name: 'Tequesta', path: '/roofing-contractor-tequesta-fl/' },
-    { name: 'North Palm Beach', path: '/roofing-contractor-north-palm-beach-fl/' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
-    { name: 'Jupiter Inlet Colony', path: '/roofing-contractor-jupiter-inlet-colony-fl/' }
+    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens' },
+    { name: 'Juno Beach', path: '/locations/juno-beach' },
+    { name: 'Tequesta', path: '/locations/tequesta' },
+    { name: 'North Palm Beach', path: '/locations/north-palm-beach' },
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { name: 'Jupiter Inlet Colony', path: '/locations/jupiter-inlet-colony' }
   ];
 
   const faqs = [

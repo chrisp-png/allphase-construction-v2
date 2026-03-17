@@ -969,15 +969,15 @@ export default function FlatRoofInspectionBrowardCountyPage() {
           <div className="grid md:grid-cols-3 gap-4 text-lg text-zinc-300">
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-fort-lauderdale-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
+              <Link to="/locations/fort-lauderdale" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-pompano-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
+              <Link to="/locations/pompano-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-coral-springs-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
+              <Link to="/locations/coral-springs" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -985,7 +985,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-plantation-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
+              <Link to="/locations/plantation" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1001,7 +1001,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-davie-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
+              <Link to="/locations/davie" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1173,7 +1173,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               </div>
             </Link>
 
-            <Link to="/roofing-services/roof-repair/" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
+            <Link to="/roof-repair" className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 hover:border-red-600 transition-all duration-300 group">
               <Shield className="w-10 h-10 text-red-600 mb-4" />
               <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
                 Roof Repair Services

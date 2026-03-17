@@ -96,7 +96,7 @@ export default function WestonPage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and aging components.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -174,12 +174,12 @@ export default function WestonPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Pembroke Pines', path: '/roofing-contractor-pembroke-pines-fl/' },
-    { name: 'Davie', path: '/roofing-contractor-davie-fl/' },
-    { name: 'Plantation', path: '/roofing-contractor-plantation-fl/' },
-    { name: 'Sunrise', path: '/roofing-contractor-sunrise-fl/' },
-    { name: 'Cooper City', path: '/roofing-contractor-cooper-city-fl/' },
-    { name: 'Miramar', path: '/roofing-contractor-miramar-fl/' }
+    { name: 'Pembroke Pines', path: '/locations/pembroke-pines' },
+    { name: 'Davie', path: '/locations/davie' },
+    { name: 'Plantation', path: '/locations/plantation' },
+    { name: 'Sunrise', path: '/locations/sunrise' },
+    { name: 'Cooper City', path: '/locations/cooper-city' },
+    { name: 'Miramar', path: '/locations/miramar' }
   ];
 
   const commonQuestions = [

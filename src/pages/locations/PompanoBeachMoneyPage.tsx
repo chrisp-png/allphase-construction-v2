@@ -262,7 +262,7 @@ export default function PompanoBeachMoneyPage() {
                 </h2>
                 <div className="space-y-4 text-zinc-300 leading-relaxed">
                   <p>
-                    Every successful roofing project in Pompano Beach begins with meticulous planning. Our experienced project managers work closely with you to understand your goals, budget, and timeline, developing a detailed roadmap that ensures your project proceeds smoothly from start to finish. Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and square footage.
+                    Every successful roofing project in Pompano Beach begins with meticulous planning. Our experienced project managers work closely with you to understand your goals, budget, and timeline, developing a detailed roadmap that ensures your project proceeds smoothly from start to finish. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and square footage.
                   </p>
                   <p>
                     We evaluate your property's specific needs, considering factors like roof age, condition, architectural style, and local building requirements. Our planning process includes material selection guidance, weather scheduling considerations, and coordination with HOA requirements where applicable. We provide transparent timelines and keep you informed at every stage. <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">Financing options</Link> are available to help manage the total cost of your roofing project.

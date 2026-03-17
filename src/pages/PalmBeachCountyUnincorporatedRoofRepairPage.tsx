@@ -70,7 +70,7 @@ export default function PalmBeachCountyUnincorporatedRoofRepairPage() {
           <div className="max-w-4xl">
             <div className="mb-6">
               <Link
-                to="/roofing-services/roof-repair/"
+                to="/roof-repair"
                 className="text-red-600 hover:text-red-500 text-sm font-medium transition-colors inline-flex items-center gap-2"
               >
                 <ChevronRight className="w-4 h-4 rotate-180" />

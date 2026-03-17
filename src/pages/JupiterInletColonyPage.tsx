@@ -98,7 +98,7 @@ export default function JupiterInletColonyPage() {
     {
       title: 'Roof Repair',
       description: 'Targeted repairs addressing leaks, storm damage, and material deterioration.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {

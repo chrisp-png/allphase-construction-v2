@@ -466,7 +466,7 @@ export default function ResidentialRoofingPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              to="/roofing-services/roof-repair/"
+              to="/roof-repair"
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-zinc-700 transition-all duration-300 group"
             >
               <div className="flex items-start gap-4">

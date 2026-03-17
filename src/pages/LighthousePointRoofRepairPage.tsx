@@ -113,7 +113,7 @@ export default function LighthousePointRoofRepairPage() {
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
             <Link to="/" className="hover:text-red-500 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/roofing-services/roof-repair/" className="hover:text-red-500 transition-colors">Roof Repair</Link>
+            <Link to="/roof-repair" className="hover:text-red-500 transition-colors">Roof Repair</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white">Lighthouse Point</span>
           </div>
@@ -125,11 +125,11 @@ export default function LighthousePointRoofRepairPage() {
 
           {/* Hero Paragraph */}
           <p className="text-xl text-zinc-300 mb-6 max-w-4xl leading-relaxed">
-            All Phase Construction USA provides inspection-first roof repair for Lighthouse Point homes and multi-family properties, emphasizing accurate leak tracing, Florida Building Code compliance, and repair scopes that fit the roof system's actual condition. Each project starts with a <Link to="/roofing-services/roof-inspection/" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> to confirm the source of intrusion or damage, check vulnerable transitions, and determine whether a targeted repair is appropriate—especially for properties influenced by coastal wind and salt-air conditions.
+            All Phase Construction USA provides inspection-first roof repair for Lighthouse Point homes and multi-family properties, emphasizing accurate leak tracing, Florida Building Code compliance, and repair scopes that fit the roof system's actual condition. Each project starts with a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">diagnostic roof inspection</Link> to confirm the source of intrusion or damage, check vulnerable transitions, and determine whether a targeted repair is appropriate—especially for properties influenced by coastal wind and salt-air conditions.
           </p>
 
           <p className="text-lg text-zinc-300 mb-8 max-w-4xl leading-relaxed">
-            Explore local resources: <Link to="/service-areas/lighthouse-point/" className="text-red-500 hover:text-red-400 underline">Lighthouse Point service area</Link> • <Link to="/service-areas/lighthouse-point/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> • <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing</Link>.
+            Explore local resources: <Link to="/locations/lighthouse-point" className="text-red-500 hover:text-red-400 underline">Lighthouse Point service area</Link> • <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost estimate</Link> • <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing</Link>.
           </p>
 
           {/* CTAs */}
@@ -433,15 +433,15 @@ export default function LighthousePointRoofRepairPage() {
             <ul className="space-y-3">
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Get a preliminary <Link to="/service-areas/lighthouse-point/roof-cost-estimate/" className="text-red-500 hover:text-red-400 underline">Lighthouse Point roof cost estimate</Link> based on your property details and repair scope.</span>
+                <span>Get a preliminary <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Lighthouse Point roof cost estimate</Link> based on your property details and repair scope.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Review available <Link to="/financing/" className="text-red-500 hover:text-red-400 underline">financing options</Link> to manage repair costs with flexible payment plans.</span>
+                <span>Review available <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline">financing options</Link> to manage repair costs with flexible payment plans.</span>
               </li>
               <li className="flex gap-3 text-zinc-300">
                 <CheckCircle2 className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                <span>Area coverage and related services are listed on the <Link to="/service-areas/lighthouse-point/" className="text-red-500 hover:text-red-400 underline">Lighthouse Point service area hub</Link>.</span>
+                <span>Area coverage and related services are listed on the <Link to="/locations/lighthouse-point" className="text-red-500 hover:text-red-400 underline">Lighthouse Point service area hub</Link>.</span>
               </li>
             </ul>
           </div>

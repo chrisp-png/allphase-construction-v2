@@ -33,24 +33,24 @@ export default function PalmBeachCountyPage() {
       "@graph": [
         {
           "@type": "WebPage",
-          "@id": "https://allphaseconstructionfl.com/roofing-contractor-palm-beach-county-fl#webpage",
-          "url": "https://allphaseconstructionfl.com/roofing-contractor-palm-beach-county-fl",
+          "@id": "https://allphaseconstructionfl.com/locations/palm-beach-county#webpage",
+          "url": "https://allphaseconstructionfl.com/locations/palm-beach-county",
           "name": "Roofing Contractor Serving Palm Beach County, FL | All Phase Construction USA",
           "description": "Licensed roofing contractor serving Palm Beach County, Florida. Residential and commercial roofing inspections, repairs, replacements, and specialty systems with permitting and insurance documentation support.",
           "isPartOf": {
             "@id": "https://allphaseconstructionfl.com/#website"
           },
           "about": {
-            "@id": "https://allphaseconstructionfl.com/roofing-contractor-palm-beach-county-fl#service"
+            "@id": "https://allphaseconstructionfl.com/locations/palm-beach-county#service"
           }
         },
         {
           "@type": "Service",
-          "@id": "https://allphaseconstructionfl.com/roofing-contractor-palm-beach-county-fl#service",
+          "@id": "https://allphaseconstructionfl.com/locations/palm-beach-county#service",
           "name": "Roofing Contractor in Palm Beach County",
           "serviceType": "Roofing Contractor",
           "description": "Comprehensive residential and commercial roofing services in Palm Beach County, Florida, including inspections, repairs, replacements, and specialty roofing systems, with documentation-first support for permitting and insurance needs.",
-          "url": "https://allphaseconstructionfl.com/roofing-contractor-palm-beach-county-fl",
+          "url": "https://allphaseconstructionfl.com/locations/palm-beach-county",
           "provider": {
             "@id": "https://allphaseconstructionfl.com/#business"
           },
@@ -94,7 +94,7 @@ export default function PalmBeachCountyPage() {
     {
       title: 'Roof Repairs & Leak Remediation',
       description: 'Fast, effective roof repairs addressing leaks, damage, and deterioration across all roofing system types.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -168,19 +168,19 @@ export default function PalmBeachCountyPage() {
   ];
 
   const cities = [
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' },
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' },
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
-    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl/' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
-    { name: 'Wellington', path: '/roofing-contractor-wellington-fl/' },
-    { name: 'Royal Palm Beach', path: '/roofing-contractor-royal-palm-beach-fl/' },
-    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-beach-fl/' },
-    { name: 'Palm Beach', path: '/roofing-contractor-palm-beach-fl/' },
-    { name: 'Lantana', path: '/roofing-contractor-lantana-fl/' },
-    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl/' },
-    { name: 'Gulf Stream', path: '/roofing-contractor-gulf-stream-fl/' }
+    { name: 'Boca Raton', path: '/locations/boca-raton' },
+    { name: 'Delray Beach', path: '/locations/delray-beach' },
+    { name: 'Boynton Beach', path: '/locations/boynton-beach' },
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { name: 'Jupiter', path: '/locations/jupiter' },
+    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens' },
+    { name: 'Wellington', path: '/locations/wellington' },
+    { name: 'Royal Palm Beach', path: '/locations/royal-palm-beach' },
+    { name: 'Lake Worth Beach', path: '/locations/lake-worth-beach' },
+    { name: 'Palm Beach', path: '/locations/palm-beach' },
+    { name: 'Lantana', path: '/locations/lantana' },
+    { name: 'Ocean Ridge', path: '/locations/ocean-ridge' },
+    { name: 'Gulf Stream', path: '/locations/gulf-stream' }
   ];
 
   const faqs = [

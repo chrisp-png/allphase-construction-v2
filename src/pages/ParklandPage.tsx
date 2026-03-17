@@ -101,7 +101,7 @@ export default function ParklandPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Extending the life of premium Parkland roofs. We also provide 5-year certification letters for qualifying roofs to maintain insurance coverage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -151,12 +151,12 @@ export default function ParklandPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' }
+    { name: 'Coral Springs', path: '/locations/coral-springs' },
+    { name: 'Coconut Creek', path: '/locations/coconut-creek' },
+    { name: 'Boca Raton', path: '/locations/boca-raton' },
+    { name: 'Deerfield Beach', path: '/locations/deerfield-beach' },
+    { name: 'Margate', path: '/locations/margate' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' }
   ];
 
   const faqs = [

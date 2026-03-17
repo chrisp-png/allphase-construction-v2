@@ -107,7 +107,7 @@ export default function LoxahatcheeGrovesPage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and material wear.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -143,7 +143,7 @@ export default function LoxahatcheeGrovesPage() {
     {
       title: 'Emergency Roof Repair',
       description: "Prompt response for active leaks or storm-related damage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -197,12 +197,12 @@ export default function LoxahatcheeGrovesPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Royal Palm Beach', path: '/roofing-contractor-royal-palm-beach-fl/' },
-    { name: 'Wellington', path: '/roofing-contractor-wellington-fl/' },
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
-    { name: 'Palm Beach Gardens', path: '/roofing-contractor-palm-beach-gardens-fl/' },
-    { name: 'Jupiter', path: '/roofing-contractor-jupiter-fl/' },
-    { name: 'Lake Worth Beach', path: '/roofing-contractor-lake-worth-fl/' }
+    { name: 'Royal Palm Beach', path: '/locations/royal-palm-beach' },
+    { name: 'Wellington', path: '/locations/wellington' },
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { name: 'Palm Beach Gardens', path: '/locations/palm-beach-gardens' },
+    { name: 'Jupiter', path: '/locations/jupiter' },
+    { name: 'Lake Worth Beach', path: '/locations/lake-worth' }
   ];
 
   const questions = [

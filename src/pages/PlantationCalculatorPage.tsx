@@ -292,7 +292,7 @@ export default function PlantationCalculatorPage() {
                   Roof replacement services: <Link to="/tile-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-replacement</Link>
                 </li>
                 <li>
-                  Roof repair services: <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-repair</Link>
+                  Roof repair services: <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">/roof-repair</Link>
                 </li>
               </ul>
             </div>

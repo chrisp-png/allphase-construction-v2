@@ -91,7 +91,7 @@ export default function WiltonManorsPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Maintaining Wilton Manors roofs economically. We provide 5-year certification letters for qualifying roofs to help protect insurance coverage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -141,12 +141,12 @@ export default function WiltonManorsPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Fort Lauderdale', path: '/roofing-contractor-fort-lauderdale-fl/' },
-    { name: 'Oakland Park', path: '/roofing-contractor-oakland-park-fl/' },
-    { name: 'Lauderdale Lakes', path: '/roofing-contractor-lauderdale-lakes-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
-    { name: 'Lauderhill', path: '/roofing-contractor-lauderhill-fl/' }
+    { name: 'Fort Lauderdale', path: '/locations/fort-lauderdale' },
+    { name: 'Oakland Park', path: '/locations/oakland-park' },
+    { name: 'Lauderdale Lakes', path: '/locations/lauderdale-lakes' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { name: 'Deerfield Beach', path: '/locations/deerfield-beach' },
+    { name: 'Lauderhill', path: '/locations/lauderhill' }
   ];
 
   const faqs = [

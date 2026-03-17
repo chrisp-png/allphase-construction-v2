@@ -1530,14 +1530,14 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
                 Broward County
               </h3>
               <div className="grid grid-cols-2 gap-3 text-lg text-zinc-300">
-                <Link to="/roofing-contractor-fort-lauderdale-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
-                <Link to="/roofing-contractor-pompano-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
-                <Link to="/roofing-contractor-coral-springs-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
+                <Link to="/locations/fort-lauderdale" className="text-red-500 hover:text-red-400 underline transition-colors">Fort Lauderdale</Link>
+                <Link to="/locations/pompano-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Pompano Beach</Link>
+                <Link to="/locations/coral-springs" className="text-red-500 hover:text-red-400 underline transition-colors">Coral Springs</Link>
                 <span>Deerfield Beach</span>
-                <Link to="/roofing-contractor-plantation-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
-                <Link to="/roofing-contractor-hollywood-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Hollywood</Link>
-                <Link to="/roofing-contractor-davie-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
-                <Link to="/roofing-contractor-weston-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Weston</Link>
+                <Link to="/locations/plantation" className="text-red-500 hover:text-red-400 underline transition-colors">Plantation</Link>
+                <Link to="/locations/hollywood" className="text-red-500 hover:text-red-400 underline transition-colors">Hollywood</Link>
+                <Link to="/locations/davie" className="text-red-500 hover:text-red-400 underline transition-colors">Davie</Link>
+                <Link to="/locations/weston" className="text-red-500 hover:text-red-400 underline transition-colors">Weston</Link>
                 <span>Parkland</span>
                 <span>Miramar</span>
                 <span>Pembroke Pines</span>
@@ -1551,11 +1551,11 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
                 Palm Beach County
               </h3>
               <div className="grid grid-cols-2 gap-3 text-lg text-zinc-300">
-                <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
-                <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
-                <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
-                <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
-                <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
+                <Link to="/locations/west-palm-beach" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
+                <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
+                <Link to="/locations/delray-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
+                <Link to="/locations/boynton-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
+                <Link to="/locations/wellington" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
                 <span>Palm Beach Gardens</span>
                 <span>Jupiter</span>
                 <span>Royal Palm Beach</span>

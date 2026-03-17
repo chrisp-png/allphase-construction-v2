@@ -94,7 +94,7 @@ export default function GulfStreamPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Expert restoration and repair services to protect Gulf Stream's valuable real estate investments.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -144,12 +144,12 @@ export default function GulfStreamPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Delray Beach', path: '/roofing-contractor-delray-beach-fl/' },
-    { name: 'Highland Beach', path: '/roofing-contractor-highland-beach-fl/' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' },
-    { name: 'Ocean Ridge', path: '/roofing-contractor-ocean-ridge-fl/' },
-    { name: 'Boynton Beach', path: '/roofing-contractor-boynton-beach-fl/' },
-    { name: 'Briny Breezes', path: '/roofing-contractor-briny-breezes-fl/' }
+    { name: 'Delray Beach', path: '/locations/delray-beach' },
+    { name: 'Highland Beach', path: '/locations/highland-beach' },
+    { name: 'Boca Raton', path: '/locations/boca-raton' },
+    { name: 'Ocean Ridge', path: '/locations/ocean-ridge' },
+    { name: 'Boynton Beach', path: '/locations/boynton-beach' },
+    { name: 'Briny Breezes', path: '/locations/briny-breezes' }
   ];
 
   const faqs = [

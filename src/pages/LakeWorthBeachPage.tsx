@@ -132,7 +132,7 @@ export default function LakeWorthBeachPage() {
     {
       title: 'Roof Repair',
       description: 'Focused repairs addressing leaks, storm damage, and material wear.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -168,7 +168,7 @@ export default function LakeWorthBeachPage() {
     {
       title: 'Emergency Roof Repair',
       description: 'Prompt response for active leaks or storm-related damage.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -300,7 +300,7 @@ export default function LakeWorthBeachPage() {
               </span>
             </h1>
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-              All Phase Construction USA provides professional roofing services throughout Lake Worth Beach for residential and light commercial properties. From targeted <Link to="/roofing-services/roof-repair/" className="text-red-500 hover:text-red-400 underline">roof repairs</Link> to complete <Link to="/residential-roofing/" className="text-red-500 hover:text-red-400 underline">roof replacements</Link>, our team supports Lake Worth Beach property owners with dependable service and consistent oversight. Operating from our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline">Deerfield Beach headquarters</Link>, we deliver roofing systems designed for South Florida weather exposure, longevity, and Florida code compliance.
+              All Phase Construction USA provides professional roofing services throughout Lake Worth Beach for residential and light commercial properties. From targeted <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline">roof repairs</Link> to complete <Link to="/residential-roofing/" className="text-red-500 hover:text-red-400 underline">roof replacements</Link>, our team supports Lake Worth Beach property owners with dependable service and consistent oversight. Operating from our <Link to="/locations/deerfield-beach/" className="text-red-500 hover:text-red-400 underline">Deerfield Beach headquarters</Link>, we deliver roofing systems designed for South Florida weather exposure, longevity, and Florida code compliance.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300 mb-8">
               <div className="flex items-center gap-2">

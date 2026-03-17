@@ -159,7 +159,7 @@ export default function LighthousePointCalculatorPage() {
               Service Areas
             </Link>
             <span className="text-zinc-600">/</span>
-            <Link to="/roofing-contractor-lighthouse-point-fl/" className="text-zinc-400 hover:text-red-600 transition-colors">
+            <Link to="/locations/lighthouse-point" className="text-zinc-400 hover:text-red-600 transition-colors">
               Lighthouse Point
             </Link>
             <span className="text-zinc-600">/</span>

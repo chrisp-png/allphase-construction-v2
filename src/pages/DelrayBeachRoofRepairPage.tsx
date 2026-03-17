@@ -444,7 +444,7 @@ export default function DelrayBeachRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 leading-relaxed">
-              Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available for larger repair projects that exceed initial budgets.
+              Use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available for larger repair projects that exceed initial budgets.
             </p>
           </div>
         </section>
@@ -597,7 +597,7 @@ export default function DelrayBeachRoofRepairPage() {
               </p>
 
               <p>
-                Property owners in <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
+                Property owners in <Link to="/locations/delray-beach" className="text-red-600 hover:text-red-500 underline transition-colors">Delray Beach</Link> can explore our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost estimate tool</Link> for early planning. <Link to="/easy-payments" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
               </p>
             </div>
           </div>

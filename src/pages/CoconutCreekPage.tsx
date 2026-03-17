@@ -123,12 +123,12 @@ export default function CoconutCreekPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl/' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' }
+    { name: 'Coral Springs', path: '/locations/coral-springs' },
+    { name: 'Margate', path: '/locations/margate' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { name: 'Deerfield Beach', path: '/locations/deerfield-beach' },
+    { name: 'Parkland', path: '/locations/parkland' },
+    { name: 'Boca Raton', path: '/locations/boca-raton' }
   ];
 
   const faqs = [

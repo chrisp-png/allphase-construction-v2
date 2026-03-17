@@ -43,7 +43,7 @@ export default function BocaRatonPage() {
       return (
         <>
           {parts[0]}
-          Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a personalized estimate based on your specific roof type and size.
+          Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a personalized estimate based on your specific roof type and size.
         </>
       );
     }
@@ -652,7 +652,7 @@ export default function BocaRatonPage() {
                   </ul>
 
                   <p className="text-zinc-300 text-lg leading-relaxed mb-8">
-                    Use our <Link to="/calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and square footage, or call (754) 227-5605 for a detailed in-person assessment. <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline transition-colors">Financing options</Link> are available to help manage the total cost of your roofing project over time.
+                    Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and square footage, or call (754) 227-5605 for a detailed in-person assessment. <Link to="/easy-payments" className="text-red-500 hover:text-red-400 underline transition-colors">Financing options</Link> are available to help manage the total cost of your roofing project over time.
                   </p>
 
                   <h3 className="text-xl font-bold text-white mb-4">

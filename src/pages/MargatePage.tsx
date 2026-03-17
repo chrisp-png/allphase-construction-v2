@@ -107,7 +107,7 @@ export default function MargatePage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and aging components.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -143,13 +143,13 @@ export default function MargatePage() {
     {
       title: 'Emergency Roof Repair',
       description: "Prompt response for active leaks or storm-related damage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
       title: 'Leak Detection & Prevention',
       description: "Identification of moisture entry points and preventative solutions.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wind
     }
   ];
@@ -197,12 +197,12 @@ export default function MargatePage() {
   ];
 
   const nearbyCities = [
-    { name: 'Coral Springs', path: '/roofing-contractor-coral-springs-fl/' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
-    { name: 'Tamarac', path: '/roofing-contractor-tamarac-fl/' },
-    { name: 'Pompano Beach', path: '/roofing-contractor-pompano-beach-fl/' },
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl/' },
-    { name: 'North Lauderdale', path: '/roofing-contractor-north-lauderdale-fl/' }
+    { name: 'Coral Springs', path: '/locations/coral-springs' },
+    { name: 'Coconut Creek', path: '/locations/coconut-creek' },
+    { name: 'Tamarac', path: '/locations/tamarac' },
+    { name: 'Pompano Beach', path: '/locations/pompano-beach' },
+    { name: 'Parkland', path: '/locations/parkland' },
+    { name: 'North Lauderdale', path: '/locations/north-lauderdale' }
   ];
 
   const questions = [

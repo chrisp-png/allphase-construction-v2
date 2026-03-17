@@ -99,7 +99,7 @@ export default function HaverillPage() {
     {
       title: 'Roof Repair',
       description: 'Focused repairs addressing leaks, storm damage, and aging materials.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {

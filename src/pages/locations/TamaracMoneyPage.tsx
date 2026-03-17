@@ -86,7 +86,7 @@ export default function TamaracMoneyPage() {
     {
       title: 'Roof Repair',
       description: 'Emergency and scheduled repairs for leaks, storm damage, and wear. 24/7 response for active leaks and storm emergencies throughout Tamarac.',
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {

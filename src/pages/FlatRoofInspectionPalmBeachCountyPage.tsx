@@ -1172,25 +1172,25 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
           </div>
 
           <p className="text-xl text-zinc-300 mb-8 leading-relaxed">
-            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout Palm Beach County, including <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, and surrounding municipalities:
+            We provide diagnostic flat roof inspection services for commercial and residential low-slope properties throughout Palm Beach County, including <Link to="/locations/west-palm-beach" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>, <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>, <Link to="/locations/delray-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>, <Link to="/locations/boynton-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>, <Link to="/locations/wellington" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>, and surrounding municipalities:
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 text-lg text-zinc-300">
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-west-palm-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
+              <Link to="/locations/west-palm-beach" className="text-red-500 hover:text-red-400 underline transition-colors">West Palm Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-boca-raton-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
+              <Link to="/locations/boca-raton" className="text-red-500 hover:text-red-400 underline transition-colors">Boca Raton</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-delray-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
+              <Link to="/locations/delray-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Delray Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-boynton-beach-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
+              <Link to="/locations/boynton-beach" className="text-red-500 hover:text-red-400 underline transition-colors">Boynton Beach</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
@@ -1198,7 +1198,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-              <Link to="/roofing-contractor-wellington-fl/" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
+              <Link to="/locations/wellington" className="text-red-500 hover:text-red-400 underline transition-colors">Wellington</Link>
             </div>
             <div className="flex items-start gap-2">
               <ChevronRight className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />

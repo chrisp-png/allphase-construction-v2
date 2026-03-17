@@ -107,7 +107,7 @@ const SERVICE_LINKS: Record<string, ServiceLink> = {
     description: 'Step-by-step guide to your new roof'
   },
   'roofing-services': {
-    path: '/roofing-services',
+    path: '/residential-roofing',
     title: 'All Roofing Services',
     description: 'Complete range of roofing solutions'
   },

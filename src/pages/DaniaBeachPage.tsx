@@ -190,7 +190,7 @@ export default function DaniaBeachPage() {
               </ul>
               <div className="flex flex-wrap gap-4 justify-center mt-8">
                 <Link
-                  to="/roofing-services/roof-repair/"
+                  to="/roof-repair"
                   className="text-red-500 hover:text-red-400 font-semibold transition-colors"
                 >
                   Roof Repair

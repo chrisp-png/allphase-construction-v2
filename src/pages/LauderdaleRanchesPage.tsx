@@ -99,7 +99,7 @@ export default function LauderdaleRanchesPage() {
     {
       title: 'Roof Repair',
       description: "Targeted repairs addressing leaks, storm damage, and aging materials.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -135,7 +135,7 @@ export default function LauderdaleRanchesPage() {
     {
       title: 'Emergency Roof Repair',
       description: "Prompt response for active leaks or storm-related damage.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: AlertTriangle
     },
     {

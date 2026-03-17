@@ -91,7 +91,7 @@ export default function RoyalPalmBeachPage() {
     {
       title: 'Roof Repair & Restoration',
       description: "Expert repairs extending Royal Palm Beach roof lifespans. Includes required 5-year certification letters for insurance.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -141,12 +141,12 @@ export default function RoyalPalmBeachPage() {
   ];
 
   const nearbyCities = [
-    { name: 'West Palm Beach', path: '/roofing-contractor-west-palm-beach-fl/' },
-    { name: 'Wellington', path: '/roofing-contractor-wellington-fl/' },
-    { name: 'Greenacres', path: '/roofing-contractor-greenacres-fl/' },
-    { name: 'Loxahatchee', path: '/roofing-contractor-loxahatchee-fl/' },
-    { name: 'Palm Springs', path: '/roofing-contractor-palm-springs-fl/' },
-    { name: 'Lake Worth', path: '/roofing-contractor-lake-worth-fl/' }
+    { name: 'West Palm Beach', path: '/locations/west-palm-beach' },
+    { name: 'Wellington', path: '/locations/wellington' },
+    { name: 'Greenacres', path: '/locations/greenacres' },
+    { name: 'Loxahatchee', path: '/locations/loxahatchee' },
+    { name: 'Palm Springs', path: '/locations/palm-springs' },
+    { name: 'Lake Worth', path: '/locations/lake-worth' }
   ];
 
   const faqs = [

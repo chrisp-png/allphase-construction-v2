@@ -74,7 +74,7 @@ export default function BrowardCountyRoofRepairPage() {
               <ChevronRight className="w-4 h-4" />
               <span className="text-zinc-500">Roofing</span>
               <ChevronRight className="w-4 h-4" />
-              <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+              <Link to="/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">Broward County</span>
             </nav>
@@ -388,7 +388,7 @@ export default function BrowardCountyRoofRepairPage() {
           </div>
 
           <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-            Visit the <Link to="/service-areas/broward-county/" className="text-red-600 hover:text-red-500 underline transition-colors">Broward County service area hub</Link> or use the Broward County roof cost estimate tool to support early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
+            Visit the <Link to="/locations/broward-county" className="text-red-600 hover:text-red-500 underline transition-colors">Broward County service area hub</Link> or use the Broward County roof cost estimate tool to support early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available.
           </p>
         </div>
       </section>

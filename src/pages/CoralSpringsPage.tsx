@@ -99,7 +99,7 @@ export default function CoralSpringsPage() {
     {
       title: 'Roof Repair',
       description: "Emergency and scheduled repairs for leaks, storm damage, and wear. 24/7 response for active leaks and storm emergencies.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -169,12 +169,12 @@ export default function CoralSpringsPage() {
   ];
 
   const nearbyCities = [
-    { name: 'Parkland', path: '/roofing-contractor-parkland-fl/' },
-    { name: 'Coconut Creek', path: '/roofing-contractor-coconut-creek-fl/' },
-    { name: 'Margate', path: '/roofing-contractor-margate-fl/' },
-    { name: 'Tamarac', path: '/roofing-contractor-tamarac-fl/' },
-    { name: 'Deerfield Beach', path: '/roofing-contractor-deerfield-beach-fl/' },
-    { name: 'Boca Raton', path: '/roofing-contractor-boca-raton-fl/' }
+    { name: 'Parkland', path: '/locations/parkland' },
+    { name: 'Coconut Creek', path: '/locations/coconut-creek' },
+    { name: 'Margate', path: '/locations/margate' },
+    { name: 'Tamarac', path: '/locations/tamarac' },
+    { name: 'Deerfield Beach', path: '/locations/deerfield-beach' },
+    { name: 'Boca Raton', path: '/locations/boca-raton' }
   ];
 
   const faqs = [

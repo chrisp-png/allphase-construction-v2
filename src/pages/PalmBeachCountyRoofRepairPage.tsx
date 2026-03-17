@@ -74,7 +74,7 @@ export default function PalmBeachCountyRoofRepairPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-zinc-500">Roofing</span>
                 <ChevronRight className="w-4 h-4" />
-                <Link to="/roofing-services/roof-repair/" className="hover:text-red-600 transition-colors">Roof Repair</Link>
+                <Link to="/roof-repair" className="hover:text-red-600 transition-colors">Roof Repair</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Palm Beach County</span>
               </nav>
@@ -342,7 +342,7 @@ export default function PalmBeachCountyRoofRepairPage() {
               </p>
 
               <p>
-                Property owners across <Link to="/roofing-contractor-palm-beach-county-fl/" className="text-red-600 hover:text-red-500 underline transition-colors">Palm Beach County</Link> can explore our <Link to="/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> for early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
+                Property owners across <Link to="/locations/palm-beach-county" className="text-red-600 hover:text-red-500 underline transition-colors">Palm Beach County</Link> can explore our <Link to="/roof-cost-calculator/" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> for early planning. <Link to="/easy-payments/" className="text-red-600 hover:text-red-500 underline transition-colors">Financing options</Link> are available to support repair and replacement projects.
               </p>
             </div>
           </div>

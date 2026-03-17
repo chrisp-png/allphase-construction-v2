@@ -106,7 +106,7 @@ export default function NorthPalmBeachPage() {
     {
       title: 'Roof Repair',
       description: "Focused repairs addressing leaks, storm damage, and aging components in North Palm Beach properties.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wrench
     },
     {
@@ -142,7 +142,7 @@ export default function NorthPalmBeachPage() {
     {
       title: 'Emergency Roof Repair',
       description: "Prompt response for active leaks or storm-related damage throughout North Palm Beach.",
-      path: '/roofing-services/roof-repair/',
+      path: '/roof-repair',
       icon: Wind
     },
     {

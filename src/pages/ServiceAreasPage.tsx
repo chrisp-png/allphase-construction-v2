@@ -74,7 +74,7 @@ export default function ServiceAreasPage() {
     { name: 'Metal Roofing', path: '/metal-roofing/', icon: Shield },
     { name: 'Shingle Roofing', path: '/shingle-roofing/', icon: Home },
     { name: 'Flat Roofing', path: '/flat-roofing/', icon: Building2 },
-    { name: 'Roof Repair & Restoration', path: '/roofing-services/roof-repair/', icon: Wrench },
+    { name: 'Roof Repair & Restoration', path: '/roof-repair', icon: Wrench },
     { name: 'Commercial Roofing', path: '/commercial-roofing/', icon: Building2 }
   ];
 
