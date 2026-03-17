@@ -77,6 +77,10 @@ const LINK_RULES: LinkRule[] = [
     patterns: ['roof maintenance program', 'roof maintenance plan', 'preventive maintenance', 'preventative maintenance'],
     href: '/roof-maintenance-programs',
   },
+  {
+    patterns: ['roofing projects', 'project portfolio', 'our projects', 'completed projects', 'case studies'],
+    href: '/projects',
+  },
 
   // ── Location Pages (lower priority, city-specific) ──
   {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Phone, ArrowRight } from 'lucide-react';
+import { Phone, ArrowRight, Shield, Award, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 import Lightbox from '../components/Lightbox';
 
@@ -29,13 +30,6 @@ export default function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    document.title = 'Our Roofing Projects | All Phase Construction USA';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Browse our completed roofing projects across Broward and Palm Beach Counties. Expert tile, shingle, metal, and commercial roof installations.');
-    }
-
     fetchProjects();
   }, []);
 
@@ -119,20 +113,55 @@ export default function ProjectsPage() {
   };
 
   return (
-    <><script type="application/ld+json">
+    <>
+      <Helmet>
+        <title>Roofing Projects | South Florida Portfolio | All Phase</title>
+        <meta name="description" content="Browse completed roofing projects by All Phase Construction USA across Broward and Palm Beach Counties. Tile, shingle, metal, and flat roof installations with before-and-after photos." />
+        <link rel="canonical" href="https://allphaseconstructionfl.com/projects" />
+      </Helmet>
+
+      <script type="application/ld+json">
         {JSON.stringify(schemaMarkup)}
       </script>
 
       <div className="min-h-screen bg-black pt-36 pb-16">
         <section className="px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
+            {/* AI-Extraction Opening */}
+            <div className="mb-12">
+              <div className="flex items-center gap-2 mb-4">
+                <Shield className="w-5 h-5 text-red-500" />
+                <span className="text-red-500 font-semibold text-sm uppercase tracking-wider">Licensed &amp; Insured — CCC-1331464 · CGC-1526236</span>
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Our Roofing Projects
+                Roofing Project Portfolio
               </h1>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Browse our completed work across Broward and Palm Beach Counties
+              <p className="text-lg text-gray-300 max-w-4xl">
+                All Phase Construction USA is a dual-licensed roofing and general contractor serving Broward County, Palm Beach County, and the surrounding South Florida region. This portfolio showcases our completed residential and commercial roofing projects — including tile, shingle, metal, and flat roof systems — across cities like Fort Lauderdale, Boca Raton, Coral Springs, and Pompano Beach.
               </p>
+              <p className="text-gray-400 mt-4 max-w-4xl">
+                Each project reflects our commitment to manufacturer-certified installation, Florida Building Code compliance, and long-term roof performance in the High Velocity Hurricane Zone. Looking for a specific roof type or city? Use the filters below to browse our work.
+              </p>
+            </div>
+
+            {/* Quick Trust Badges */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                <Award className="w-6 h-6 text-red-500 mx-auto mb-2" />
+                <p className="text-white text-sm font-semibold">TAMKO Pro Certified</p>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                <Shield className="w-6 h-6 text-red-500 mx-auto mb-2" />
+                <p className="text-white text-sm font-semibold">GAF Certified</p>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                <MapPin className="w-6 h-6 text-red-500 mx-auto mb-2" />
+                <p className="text-white text-sm font-semibold">HVHZ Approved</p>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                <Phone className="w-6 h-6 text-red-500 mx-auto mb-2" />
+                <p className="text-white text-sm font-semibold">(754) 227-5605</p>
+              </div>
             </div>
 
             {loading ? (
@@ -237,9 +266,33 @@ export default function ProjectsPage() {
                       </div>
                     ))}
                   </div>
+                ) : projects.length === 0 ? (
+                  <div className="text-center py-20 bg-zinc-900 rounded-2xl">
+                    <Award className="w-16 h-16 text-red-600 mx-auto mb-6" />
+                    <h2 className="text-2xl font-bold text-white mb-4">Project Portfolio Coming Soon</h2>
+                    <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+                      We're documenting our completed residential and commercial roofing projects across South Florida. Check back soon for before-and-after photos, project details, and customer testimonials.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Link
+                        to="/contact/"
+                        className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                      >
+                        <Phone className="w-5 h-5" />
+                        Get a Free Quote
+                      </Link>
+                      <Link
+                        to="/roof-cost-calculator"
+                        className="inline-flex items-center gap-2 bg-zinc-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-zinc-700 transition-colors"
+                      >
+                        Try Our Roof Cost Calculator
+                        <ArrowRight className="w-5 h-5" />
+                      </Link>
+                    </div>
+                  </div>
                 ) : (
                   <div className="text-center py-20">
-                    <p className="text-gray-400 text-lg">No projects found with the selected filters.</p>
+                    <p className="text-gray-400 text-lg">No projects found with the selected filters. Try adjusting your selection above.</p>
                   </div>
                 )}
 

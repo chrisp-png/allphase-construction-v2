@@ -234,8 +234,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/reviews'
   },
   '/projects': {
-    title: 'Roofing Projects | South Florida Portfolio | All Phase USA',
-    description: 'Completed roofing projects across South Florida - tile, metal, shingle & flat. See our work before you call. Licensed & HVHZ-certified.',
+    title: 'Roofing Projects | South Florida Portfolio | All Phase',
+    description: 'Browse completed roofing projects by All Phase Construction USA across Broward and Palm Beach Counties. Tile, shingle, metal, and flat roof installations with before-and-after photos.',
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
