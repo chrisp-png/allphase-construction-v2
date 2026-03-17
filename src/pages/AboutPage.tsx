@@ -48,6 +48,12 @@ const teamMembers: TeamMember[] = [
     photoPlaceholder: 'KW',
   },
   {
+    name: 'Graham Dailey',
+    title: 'Roofing Sales Representative',
+    bio: 'Graham brings years of hospitality experience — including training at Le Cordon Bleu and working in acclaimed restaurants — to his role on the All Phase sales team. That service-driven mindset translates directly to roofing: he\'s eager to help, attentive to detail, and genuinely enjoys making sure every homeowner feels taken care of. After years of late-night restaurant hours that didn\'t align with family life, Graham made the move to roofing and hasn\'t looked back. He loves being outdoors, working on roofs, and spending weekends camping with his family.',
+    photoPlaceholder: 'GD',
+  },
+  {
     name: 'Joy Geraci',
     title: 'Project Coordinator',
     since: '2015',
