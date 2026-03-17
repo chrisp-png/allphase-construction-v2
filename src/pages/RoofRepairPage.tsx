@@ -42,7 +42,7 @@ export default function RoofRepairPage() {
     window.scrollTo(0, 0);
 
     const pageUrl = 'https://allphaseconstructionfl.com/roof-repair';
-      const pageDescription = 'Roof repair in Deerfield Beach & South Florida by a dual-licensed contractor. Storm damage, leaks, tile, shingle & flat roof repairs. Free inspections.';
+      const pageDescription = 'Expert roof repair in South Florida — hurricane roof damage repair, leak diagnosis, emergency tarping, flashing failures & wind uplift. Dual-licensed. (754) 227-5605.';
 
     // Local Business Schema with AggregateRating
     const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
@@ -274,8 +274,11 @@ export default function RoofRepairPage() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Roof Repair in South Florida — <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">We Don't Just Patch, We Restore</span>
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-300 mb-10 leading-relaxed">
-              Replacing a few shingles doesn't solve the problem. We restore your entire roof system to its original intent — extending its life, protecting your home, and keeping your insurance coverage intact.
+            <p className="text-xl md:text-2xl text-zinc-300 mb-4 leading-relaxed">
+              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464, CGC-1526236) providing expert roof repair in South Florida for storm damage, active leaks, wind uplift, and aging roofing systems across Broward and Palm Beach Counties. We don't just patch — we restore your entire roof system to its original intent.
+            </p>
+            <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
+              From hurricane roof damage repair and emergency tarping to flashing failures and tile cracks, our team diagnoses the root cause and delivers permanent solutions — extending your roof's life, protecting your home, and keeping your insurance coverage intact. Call (754) 227-5605 for a free inspection.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

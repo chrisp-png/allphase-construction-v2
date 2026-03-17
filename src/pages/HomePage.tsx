@@ -40,9 +40,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Roofing Industry Overview */}
           <div className="max-w-6xl mx-auto mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
-              Roofing Industry Overview in South Florida
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">
+              Your Local Roofing Contractor in South Florida
             </h2>
+            <p className="text-lg text-gray-400 text-center mb-8 max-w-3xl mx-auto">
+              When you search for a roofing contractor near you in Broward or Palm Beach County, you need a company with the right licenses, local experience, and HVHZ expertise to protect your home. Here's what makes South Florida roofing unique.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Card 1 */}

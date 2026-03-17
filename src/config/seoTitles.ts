@@ -28,8 +28,8 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'South Florida Roofing Contractor | 2,500+ Roofs | All Phase USA',
-    description: 'Dual-licensed roofing contractor serving Broward & Palm Beach County since 2005. HVHZ-certified. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.',
+    title: 'Roofing Contractor Near Me | Broward & Palm Beach | All Phase USA',
+    description: 'Looking for a roofing contractor near you in South Florida? All Phase Construction USA — dual-licensed, HVHZ-certified, 2,500+ roofs since 2005. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
@@ -290,7 +290,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/roof-repair': {
     title: 'Roof Repair South Florida | Leaks & Storm Damage | All Phase',
-        description: 'Roof leak and storm damage repair in Broward & Palm Beach County. Emergency patching, flashing failures, wind uplift & missing shingles. (754) 227-5605.',
+        description: 'Expert roof repair in South Florida — hurricane roof damage repair, leak diagnosis, emergency tarping, flashing failures & wind uplift. Dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/licensed-roofing-contractor': {
@@ -334,8 +334,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs'
   },
   '/locations/fort-lauderdale': {
-    title: 'Fort Lauderdale Roofing Contractor | Roof Replacement | All Phase',
-    description: 'Roof replacement experts in Fort Lauderdale, FL. Tile, metal, shingle & flat re-roofs. Dual-licensed, HVHZ-certified. 2,500+ projects. Free estimate. (754) 227-5605.',
+    title: 'Fort Lauderdale Roofing Contractor | Roof Inspection & Replacement | All Phase',
+    description: 'Expert roofing contractor in Fort Lauderdale, FL. Free roof inspection, hurricane damage repair, tile, metal & shingle replacement. HVHZ-certified. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
   },
   '/locations/west-palm-beach': {

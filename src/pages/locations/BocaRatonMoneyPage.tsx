@@ -43,8 +43,8 @@ export default function BocaRatonMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>{cityName} Roofing Contractor | All Phase Construction USA</title>
-        <meta name="description" content="All Phase Construction USA is a dual-licensed roofing contractor serving Boca Raton, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair." />
+        <title>Boca Raton Roofing Company & Contractor | All Phase Construction USA</title>
+        <meta name="description" content="Top-rated roofing company in Boca Raton, FL. All Phase Construction USA — dual-licensed contractor providing tile, metal & shingle roof replacement, repair, and inspection. (754) 227-5605." />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -76,7 +76,7 @@ export default function BocaRatonMoneyPage() {
               </div>
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) providing expert roof replacement, <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">roof repair</Link>, and roof inspection services in {cityName}, FL. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to South Florida's demanding wind codes for {cityName} homes, estates, and commercial properties.
+                  All Phase Construction USA is a top-rated roofing company in {cityName}, FL — dual-licensed as both a roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236). We provide expert roof replacement, <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">roof repair</Link>, and roof inspection services throughout {cityName} and Palm Beach County. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to South Florida's demanding wind codes for {cityName} homes, estates, and commercial properties.
                 </p>
                 <p className="text-xl text-zinc-300 leading-relaxed">
                   As local experts familiar with {cityName}'s regional roofing styles, HOA requirements, and building codes, our dual-license advantage allows us to handle both roofing systems and underlying structural work that standard roofing-only contractors cannot touch. All Phase Construction USA is fully licensed, bonded, and insured — exceeding Florida's minimum coverage requirements — and provides full documentation upon request. Call (754) 227-5605 for a free roof inspection in {cityName}.

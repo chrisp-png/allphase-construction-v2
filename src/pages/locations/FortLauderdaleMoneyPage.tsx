@@ -43,10 +43,10 @@ export default function FortLauderdaleMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA</title>
+        <title>Fort Lauderdale Roofing Contractor | Roof Inspection & Replacement | All Phase</title>
         <meta
           name="description"
-          content="Trusted roofing contractor in Fort Lauderdale, FL. HVHZ certified, dual-licensed (CCC & CGC). Tile, metal, shingle, flat & commercial roofing. 20+ years experience. Free inspections."
+          content="Expert roofing contractor in Fort Lauderdale, FL. Free roof inspection, hurricane damage repair, tile, metal & shingle replacement. Dual-licensed, HVHZ-certified. (754) 227-5605."
         />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
@@ -139,7 +139,7 @@ export default function FortLauderdaleMoneyPage() {
               </p>
 
               <p>
-                Use our <Link to="/calculator" className="text-red-600 hover:text-red-500 underline transition-colors">Roof Cost Calculator</Link> for a preliminary estimate based on your roof type and size.
+                Use our <Link to="/roof-cost-calculator" className="text-red-600 hover:text-red-500 underline transition-colors">roof cost calculator</Link> for a preliminary estimate based on your roof type and size.
               </p>
             </div>
           </div>

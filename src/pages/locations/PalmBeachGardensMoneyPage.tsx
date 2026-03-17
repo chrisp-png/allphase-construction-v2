@@ -697,6 +697,31 @@ export default function PalmBeachGardensMoneyPage() {
           </div>
         </section>
 
+        {/* Serving Nearby Communities */}
+        <section className="py-16 bg-zinc-900">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Serving Palm Beach Gardens & Surrounding Communities</h2>
+            <p className="text-zinc-400 mb-6 max-w-2xl mx-auto">
+              All Phase Construction USA serves all of Palm Beach and Broward County from our Deerfield Beach headquarters. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">roof cost calculator</Link> for a free instant estimate, or schedule a <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">roof inspection</Link> today.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3 text-zinc-300">
+              <Link to="/locations/jupiter" className="hover:text-red-500 transition-colors">Jupiter</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/west-palm-beach" className="hover:text-red-500 transition-colors">West Palm Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/wellington" className="hover:text-red-500 transition-colors">Wellington</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/boca-raton" className="hover:text-red-500 transition-colors">Boca Raton</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/delray-beach" className="hover:text-red-500 transition-colors">Delray Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/fort-lauderdale" className="hover:text-red-500 transition-colors">Fort Lauderdale</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/coral-springs" className="hover:text-red-500 transition-colors">Coral Springs</Link>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Form */}
         <section id="contact" className="py-20 bg-[#09090b]">
           <Contact />
