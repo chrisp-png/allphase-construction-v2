@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, ArrowLeft, ChevronDown, ChevronUp, Clock, ExternalLink } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
+import { enrichBlogContent } from '../utils/blogContentEnricher';
 
 interface BlogPost {
   id: string;
@@ -81,7 +82,7 @@ const SERVICE_LINKS: Record<string, ServiceLink> = {
     description: 'Fast and reliable roof repair services'
   },
   'calculator': {
-    path: '/calculator',
+    path: '/roof-cost-calculator',
     title: 'Roof Cost Calculator',
     description: 'Get an instant estimate for your roof'
   },
@@ -559,7 +560,7 @@ export default function BlogPostPage() {
 
             <div
               className="prose prose-lg prose-invert max-w-none prose-headings:font-bold prose-headings:text-white prose-p:text-gray-200 prose-li:text-gray-200 prose-strong:text-white prose-a:text-red-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-red-400 prose-img:rounded-lg prose-img:shadow-lg"
-              dangerouslySetInnerHTML={{ __html: post.content }}
+              dangerouslySetInnerHTML={{ __html: enrichBlogContent(post.content, post.slug) }}
             />
 
             {post.tags && post.tags.length > 0 && (
