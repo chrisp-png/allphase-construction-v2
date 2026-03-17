@@ -177,13 +177,7 @@ export default function AboutPage() {
       { '@type': 'AdministrativeArea', name: 'Broward County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } },
       { '@type': 'AdministrativeArea', name: 'Palm Beach County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } }
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      bestRating: '5',
-      worstRating: '1',
-      reviewCount: '150'
-    },
+    // aggregateRating removed — managed solely by NuclearMetadata.tsx global schema
     hasCredential: [
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified Roofing Contractor — CCC-1331464' },
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified General Contractor — CGC-1526236' }
