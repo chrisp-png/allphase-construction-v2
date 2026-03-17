@@ -28,7 +28,7 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roofing Contractor Near Me | Broward & Palm Beach | All Phase USA',
+    title: 'Roofing Contractor Near Me | South Florida | All Phase',
     description: 'Looking for a roofing contractor near you in South Florida? All Phase Construction USA — dual-licensed, HVHZ-certified, 2,500+ roofs since 2005. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
@@ -43,7 +43,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'Roof Cost Calculator | Free Instant Estimate | South Florida 2026',
+    title: 'Roof Cost Calculator | Free Estimate | All Phase',
     description: 'Calculate your roof replacement cost instantly. Free online tool with 2026 South Florida pricing for shingle, tile, metal & flat roofs in Broward & Palm Beach County.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
@@ -59,12 +59,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   // ── Blog post meta description overrides (120-160 chars each) ──
   '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home': {
-    title: 'Wind Mitigation Inspection Guide | Save 20-60% on Insurance | South Florida',
+    title: 'Wind Mitigation Guide | Save 20-60% on Insurance',
     description: 'How wind mitigation inspections save South Florida homeowners thousands on insurance. What inspectors check, how to qualify, and the best upgrades for ROI.',
     canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home'
   },
   '/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes': {
-    title: 'Flat Roofs in Florida: Pros, Cons & What Homeowners Should Know (2026)',
+    title: 'Flat Roofs in Florida: Pros, Cons & What to Know',
     description: 'Flat roof pros and cons for Florida homes: drainage, hurricane performance, costs, and the best materials. Honest advice from a licensed South Florida roofer.',
     canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
   },
@@ -74,7 +74,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association'
   },
   '/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa': {
-    title: 'Soffit Repair South Florida | Broward & Palm Beach | All Phase',
+    title: 'Soffit Repair South Florida | All Phase',
     description: 'Soffit repair guide for Broward and Palm Beach County homeowners. Signs of damage, ventilation risks, pest prevention, and when to call a licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa'
   },
@@ -84,17 +84,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/common-roofing-myths-that-homeowners-still-believe'
   },
   '/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview': {
-    title: 'AI Roof Visualization Tools | Preview Your New Roof | All Phase',
+    title: 'AI Roof Visualization | Preview Your New Roof',
     description: 'See your new roof before installation with AI-powered visualization tools. Compare colors, materials, and styles on your actual home. Ask your contractor today.',
     canonical: 'https://allphaseconstructionfl.com/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview'
   },
   '/blog/the-role-of-roof-pitch-in-water-drainage-and-design': {
-    title: 'Roof Pitch and Water Drainage | Why Slope Matters | All Phase',
+    title: 'Roof Pitch & Water Drainage | Why Slope Matters',
     description: 'How roof pitch affects water drainage, material selection, and hurricane performance in Florida. Learn what pitch your home needs and why slope matters.',
     canonical: 'https://allphaseconstructionfl.com/blog/the-role-of-roof-pitch-in-water-drainage-and-design'
   },
   '/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet': {
-    title: 'Cost of Delaying Roof Replacement | South Florida | All Phase',
+    title: 'Cost of Delaying Roof Replacement | All Phase',
     description: 'Delaying roof replacement costs more than you think. Water damage, mold, higher insurance premiums, and code violations add up fast in South Florida.',
     canonical: 'https://allphaseconstructionfl.com/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet'
   },
@@ -139,7 +139,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/choosing-between-roof-repair-and-full-replacement'
   },
   '/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction': {
-    title: 'Protect Roof Decking From Moisture | Construction Tips | All Phase',
+    title: 'Protect Roof Decking From Moisture | All Phase',
     description: 'Protect your roof decking from moisture during construction. Florida afternoon storms can damage exposed wood in hours. Prevention methods and contractor tips.',
     canonical: 'https://allphaseconstructionfl.com/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction'
   },
@@ -164,12 +164,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks'
   },
   '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas': {
-    title: 'Climate Change and Roofing | Coastal Florida Guide | All Phase',
+    title: 'Climate Change & Roofing | Coastal Florida Guide',
     description: 'Climate change is reshaping roofing in coastal Florida. Stronger hurricanes, rising insurance costs, and new materials driving smarter roofing choices.',
     canonical: 'https://allphaseconstructionfl.com/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas'
   },
   '/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home': {
-    title: 'Prepare Your Roof Before Selling | Home Sale Tips | All Phase',
+    title: 'Prepare Your Roof Before Selling | All Phase',
     description: 'Selling your home? Roof condition directly impacts sale price and buyer confidence. Pre-sale inspection tips and repair strategies for South Florida sellers.',
     canonical: 'https://allphaseconstructionfl.com/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home'
   },
@@ -184,7 +184,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/metal-roof-vs-tile-roof-south-florida-hurricanes'
   },
   '/blog/wind-mitigation-roof-south-florida': {
-    title: 'Wind Mitigation for Your Roof | Save on Insurance | All Phase',
+    title: 'Wind Mitigation for Your Roof | All Phase',
     description: 'Roof wind mitigation can cut your Florida insurance by up to 50%. Learn what qualifies, what to upgrade, and how to get certified in Broward and Palm Beach.',
     canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-roof-south-florida'
   },
@@ -204,7 +204,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/complete-roof-replacement-process-10-steps'
   },
   '/blog/what-south-florida-homeowners-get-wrong-about-roof-replacement': {
-    title: 'Roof Replacement Mistakes to Avoid | South Florida | All Phase',
+    title: 'Roof Replacement Mistakes to Avoid | All Phase',
     description: 'Costly roof replacement mistakes South Florida homeowners make: wrong contractor, skipped ventilation, missed insurance savings, and flat roof issues.',
     canonical: 'https://allphaseconstructionfl.com/blog/what-south-florida-homeowners-get-wrong-about-roof-replacement'
   },
@@ -224,7 +224,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/dont-replace-your-roof-restore-it-instead'
   },
   '/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida': {
-    title: 'Fascia Replacement Without Roof Damage | South Florida | All Phase',
+    title: 'Fascia Replacement Without Roof Damage | All Phase',
     description: 'Can you replace fascia without a new roof? A South Florida licensed contractor explains what is involved, costs, and when your roof also needs attention.',
     canonical: 'https://allphaseconstructionfl.com/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida'
   },
@@ -299,7 +299,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
   },
     '/roofing-services': {
-    title: 'Roofing Services South Florida | Tile, Metal, Shingle & Flat | All Phase',
+    title: 'Roofing Services South Florida | All Phase',
     description: 'Complete residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs — HVHZ-certified, dual-licensed. Free inspections. 2,500+ projects.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
@@ -334,27 +334,27 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs'
   },
   '/locations/fort-lauderdale': {
-    title: 'Fort Lauderdale Roofing Contractor | Roof Inspection & Replacement | All Phase',
+    title: 'Fort Lauderdale Roofing | Inspection & Replacement',
     description: 'Expert roofing contractor in Fort Lauderdale, FL. Free roof inspection, hurricane damage repair, tile, metal & shingle replacement. HVHZ-certified. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
   },
   '/locations/west-palm-beach': {
-    title: 'West Palm Beach Roofing Contractor | Roof Replacement | All Phase',
+    title: 'West Palm Beach Roofing Contractor | All Phase',
     description: 'Roof replacement in West Palm Beach, FL. Historic district expertise, tile, metal & shingle re-roofs. Dual-licensed, HVHZ-certified. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach'
   },
   '/locations/pompano-beach': {
-    title: 'Pompano Beach Roofing Contractor | Roof Replacement | All Phase',
+    title: 'Pompano Beach Roofing Contractor | All Phase',
     description: 'Roof replacement contractor in Pompano Beach, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pompano-beach'
   },
   '/locations/coral-springs': {
-    title: 'Coral Springs Roofing Contractor | Roof Replacement | All Phase',
+    title: 'Coral Springs Roofing Contractor | All Phase',
     description: 'Roof replacement contractor in Coral Springs, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/coral-springs'
   },
   '/locations/gulf-stream': {
-    title: 'Gulf Stream Roofing Contractor | Roof Replacement | All Phase',
+    title: 'Gulf Stream Roofing Contractor | All Phase',
     description: 'Roof replacement in Gulf Stream, FL. Tile, metal & shingle re-roofs for luxury coastal homes. Licensed Palm Beach County contractor. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/gulf-stream',
   },
@@ -364,27 +364,27 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/jupiter',
   },
   '/locations/lake-worth-beach': {
-    title: 'Lake Worth Beach Roofing Contractor | Roof Replacement | All Phase',
+    title: 'Lake Worth Beach Roofing Contractor | All Phase',
     description: 'Roof replacement in Lake Worth Beach, FL. Tile, metal & shingle re-roofs. Licensed Palm Beach County contractor. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach',
   },
   '/locations/loxahatchee-groves': {
-    title: 'Loxahatchee Groves Roofing Contractor | Roof Replacement | All Phase',
+    title: 'Loxahatchee Groves Roofing Contractor | All Phase',
     description: 'Roof replacement in Loxahatchee Groves, FL. Tile, metal & shingle re-roofs. Licensed Palm Beach County contractor. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves',
   },
   '/locations/pembroke-park': {
-    title: 'Pembroke Park Roofing Contractor | Roof Replacement | All Phase',
+    title: 'Pembroke Park Roofing Contractor | All Phase',
     description: 'Roof replacement in Pembroke Park, FL. Tile, metal & shingle re-roofs. Licensed Broward County contractor. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
   },
   '/roof-repair/fort-lauderdale': {
-    title: 'Fort Lauderdale Roof Repair | Leaks & Storm Damage | All Phase',
+    title: 'Fort Lauderdale Roof Repair | Storm Damage | All Phase',
     description: 'Roof leak and storm damage repair in Fort Lauderdale, FL. Emergency patching, wind damage, flashing failures & missing shingles. Same-day response. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
   },
     '/roof-repair/deerfield-beach': {
-    title: 'Deerfield Beach Roof Repair | Leaks & Storm Damage | All Phase',
+    title: 'Deerfield Beach Roof Repair | Storm Damage | All Phase',
     description: 'Roof leak and storm damage repair in Deerfield Beach, FL. Emergency patching, flashing failures & wind damage. Insurance coordination. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/deerfield-beach'
   },
@@ -394,7 +394,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
   },
   '/roof-repair/west-palm-beach': {
-    title: 'West Palm Beach Roof Repair | Leaks & Storm Damage | All Phase',
+    title: 'West Palm Beach Roof Repair | Storm Damage | All Phase',
     description: 'Roof leak and storm damage repair in West Palm Beach, FL. Emergency patching, flashing failures & wind damage. Same-day response. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/west-palm-beach'
   },
@@ -434,7 +434,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
   },
         '/locations/deerfield-beach': {
-    title: 'Roofing Contractor Deerfield Beach FL | Roof Replacement | All Phase',
+    title: 'Deerfield Beach Roofing Contractor | All Phase',
     description: 'Roof replacement HQ in Deerfield Beach, FL. Dual-licensed (CCC-1331464 & CGC-1526236), HVHZ-certified. Tile, metal, shingle & flat. Free estimate. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
@@ -542,7 +542,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
 
     // Fallback if location not found in locations.ts
     return {
-      title: `${CITY_NAMES[slug] || slug} Roofing Contractor | Roof Replacement | All Phase`,
+      title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase`,
       description: `Roof replacement contractor in ${CITY_NAMES[slug] || slug}, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
     };
@@ -553,7 +553,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `Roof Repair ${cityName} FL | Leaks & Storm Damage | All Phase`,
+      title: `${cityName} Roof Repair | Storm Damage | All Phase`,
             description: `Roof leak and storm damage repair in ${cityName}, FL. Emergency patching, flashing failures, missing shingles & wind damage. Same-day response. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
       ogTitle: `Roof Repair ${cityName} FL | Leaks & Storm Damage | All Phase`,
