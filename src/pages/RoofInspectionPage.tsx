@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { generateLocalBusinessSchema, generateServiceSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
+import { generateLocalBusinessSchema, generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from '../utils/seoSchemas';
 import StickyConversionBar from '../components/StickyConversionBar';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 import {
@@ -130,7 +130,16 @@ export default function RoofInspectionPage() {
     { name: 'Roof Inspection', url: 'https://allphaseconstructionfl.com/roof-inspection' }
   ]);
 
-  const schemas = [localBusinessSchema, serviceSchema, breadcrumbSchema];
+  const faqSchema = generateFAQPageSchema([
+    { question: 'What is the difference between a roof inspection and a free roof estimate?', answer: 'A roof inspection is a diagnostic evaluation intended to identify conditions, failure mechanisms, and system performance. A free estimate is typically a pricing exercise based on visible symptoms and does not involve comprehensive diagnostic analysis.' },
+    { question: 'Do I need a roof inspection before repairing a leak?', answer: 'Yes. Roof leaks often originate far from the point where damage becomes visible. A professional inspection identifies the actual cause of water intrusion so repairs address the defect rather than the symptom.' },
+    { question: 'How long does a professional roof inspection take?', answer: 'Most roof inspections take between 60 and 90 minutes, depending on roof size, system complexity, and accessibility. Additional time may be required for documentation and analysis.' },
+    { question: 'Will a roof inspection tell me if I need repair or replacement?', answer: 'Yes. A professional roof inspection evaluates material condition, attachment integrity, and remaining service life to determine whether repair is technically sufficient or full replacement is warranted.' },
+    { question: 'Are roof inspections used for insurance or underwriting purposes?', answer: 'In many cases, yes. Inspection documentation may be used to support insurance evaluations, underwriting decisions, or post-storm damage assessments, depending on insurer requirements.' },
+    { question: 'How often should a roof be professionally inspected?', answer: 'Most roofing systems should be inspected every one to two years, and after major storm events, to identify developing issues before they result in failure.' }
+  ]);
+
+  const schemas = [localBusinessSchema, serviceSchema, breadcrumbSchema, faqSchema];
 
   return (
     <>

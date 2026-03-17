@@ -144,8 +144,62 @@ export default function AboutPage() {
     'Conklin Preferred Contractor',
   ];
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    '@id': 'https://allphaseconstructionfl.com/#organization',
+    name: 'All Phase Construction USA',
+    alternateName: 'All Phase Roofing',
+    description: 'Dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) serving Broward and Palm Beach Counties since 2005. Over 2,500 roofs installed. HVHZ certified.',
+    url: 'https://allphaseconstructionfl.com',
+    logo: 'https://allphaseconstructionfl.com/logo.png',
+    image: 'https://allphaseconstructionfl.com/images/og-default.jpg',
+    telephone: '+17542275605',
+    email: 'info@allphaseconstructionfl.com',
+    foundingDate: '2005',
+    founder: {
+      '@type': 'Person',
+      name: 'Christopher Porosky',
+      jobTitle: 'Owner / President',
+      knowsAbout: ['Roofing', 'General Contracting', 'HVHZ Construction', 'Wind Mitigation']
+    },
+    numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 10, maxValue: 50 },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '590 Goolsby Blvd',
+      addressLocality: 'Deerfield Beach',
+      addressRegion: 'FL',
+      postalCode: '33442',
+      addressCountry: 'US'
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: '26.3184', longitude: '-80.0998' },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Broward County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } },
+      { '@type': 'AdministrativeArea', name: 'Palm Beach County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } }
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: '150'
+    },
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified Roofing Contractor — CCC-1331464' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified General Contractor — CGC-1526236' }
+    ],
+    sameAs: [
+      'https://www.facebook.com/allphaseconstructionusa',
+      'https://www.instagram.com/allphaseconstructionusa',
+      'https://www.linkedin.com/company/allphaseconstructionusa',
+      'https://www.youtube.com/@allphaseconstructionusa'
+    ],
+    knowsAbout: ['Roofing', 'Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Commercial Roofing', 'Tile Roofing', 'Metal Roofing', 'Shingle Roofing', 'Flat Roofing', 'Wind Mitigation']
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       {/* Hero Section with Team Photo Background */}
       <div className="relative min-h-[600px] overflow-hidden bg-black pt-36 pb-16">
         {/* Team Photo Background */}

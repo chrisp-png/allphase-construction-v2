@@ -16,7 +16,7 @@ export function generateLocalBusinessSchema(pageUrl: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
-    '@id': 'https://allphaseconstructionfl.com/#roofing-contractor',
+    '@id': 'https://allphaseconstructionfl.com/#organization',
     name: 'All Phase Construction USA',
     alternateName: 'All Phase Roofing',
     description: 'Licensed roofing contractor serving Broward and Palm Beach Counties, Florida. Specializing in residential and commercial roof replacement, repair, and inspection services.',
@@ -86,7 +86,7 @@ export function generateServiceSchema(serviceName: string, serviceDescription: s
     description: serviceDescription,
     url: serviceUrl,
     provider: {
-      '@id': 'https://allphaseconstructionfl.com/#roofing-contractor'
+      '@id': 'https://allphaseconstructionfl.com/#organization'
     },
     areaServed: [
       {
@@ -154,7 +154,7 @@ export function generateCityLocalBusinessSchema(
   return {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
-    '@id': `https://allphaseconstructionfl.com/#roofing-contractor-${cityName.toLowerCase().replace(/\s+/g, '-')}`,
+    '@id': `https://allphaseconstructionfl.com/#organization-${cityName.toLowerCase().replace(/\s+/g, '-')}`,
     name: `All Phase Construction USA - ${cityName}`,
     description: `Professional roofing contractor serving ${cityName}, ${countyName}. Licensed, insured, and HVHZ certified for residential and commercial roofing.`,
     url: `https://allphaseconstructionfl.com`,

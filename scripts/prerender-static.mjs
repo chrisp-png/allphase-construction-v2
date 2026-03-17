@@ -1349,8 +1349,13 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     '@type': 'RoofingContractor',
     '@id': 'https://allphaseconstructionfl.com/#organization',
     name: 'All Phase Construction USA',
+    alternateName: 'All Phase Roofing',
+    description: 'Licensed roofing contractor serving Broward and Palm Beach Counties, Florida. Dual-licensed (CCC-1331464, CGC-1526236) for residential and commercial roof replacement, repair, and inspection. HVHZ certified.',
     url: 'https://allphaseconstructionfl.com',
+    logo: 'https://allphaseconstructionfl.com/logo.png',
+    image: 'https://allphaseconstructionfl.com/images/og-default.jpg',
     telephone: '+17542275605',
+    email: 'info@allphaseconstructionfl.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '590 Goolsby Blvd',
@@ -1360,12 +1365,33 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       addressCountry: 'US'
     },
     geo: { '@type': 'GeoCoordinates', latitude: 26.3184, longitude: -80.0998 },
-    areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Broward County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } },
+      { '@type': 'AdministrativeArea', name: 'Palm Beach County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } }
+    ],
     priceRange: '$$',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: '150'
+    },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
-    ]
+    ],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified Roofing Contractor — CCC-1331464', recognizedBy: { '@type': 'Organization', name: 'Florida DBPR' } },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified General Contractor — CGC-1526236', recognizedBy: { '@type': 'Organization', name: 'Florida DBPR' } }
+    ],
+    sameAs: [
+      'https://www.facebook.com/allphaseconstructionusa',
+      'https://www.instagram.com/allphaseconstructionusa',
+      'https://www.linkedin.com/company/allphaseconstructionusa',
+      'https://www.youtube.com/@allphaseconstructionusa'
+    ],
+    paymentAccepted: ['Cash', 'Check', 'Credit Card', 'Financing']
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
   const schemaToInject = (jsonLdSchema && (jsonLdSchema['@type'] === 'RoofingContractor' || (Array.isArray(jsonLdSchema) && jsonLdSchema[0]?.['@type'] === 'RoofingContractor')))
