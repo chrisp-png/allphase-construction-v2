@@ -185,7 +185,7 @@ export default function HeroRoofing() {
                   </div>
                 </a>
 
-                <div className="p-4 sm:p-5 text-center relative group overflow-hidden">
+                <a href="https://web.tileroofing.org/atlas/directory/results?PageSize=20&PageNumber=1&Keywords=all%20phase%20construction%20usa" target="_blank" rel="noopener noreferrer" className="p-4 sm:p-5 text-center relative group overflow-hidden hover:bg-white/5 transition-colors duration-300">
                   <div className="relative flex flex-col items-center justify-center">
                     <img
                       src="/tri-alliance-logo.jpg"
@@ -195,9 +195,9 @@ export default function HeroRoofing() {
                       height="48"
                       loading="eager"
                     />
-                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide">High Wind Certified</p>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide group-hover:text-red-400 transition-colors duration-300">High Wind Certified</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="p-4 sm:p-5 text-center relative group overflow-hidden">
                   <div className="relative">

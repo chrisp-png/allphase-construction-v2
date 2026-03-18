@@ -5,6 +5,7 @@ import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Aw
 import SEO from '../components/SEO';
 import HeroRoofing from '../components/HeroRoofing';
 import { EXTERNAL_LINKS } from '../config/links';
+import { generateFAQPageSchema } from '../utils/seoSchemas';
 
 // Lazy-load below-the-fold components to reduce initial JS bundle on mobile
 const HowItWorks = lazy(() => import('../components/HowItWorks'));
@@ -21,17 +22,37 @@ const ChamberBadge = lazy(() => import('../components/ChamberBadge'));
 const ChamberBadges = lazy(() => import('../components/ChamberBadges'));
 const LocationMap = lazy(() => import('../components/LocationMap'));
 
+// Combined FAQ data from MicroFAQ + FAQ for FAQPage schema (rich results)
+const homepageFAQs = [
+  // MicroFAQ questions (wind mitigation / HVHZ)
+  { question: 'What is a wind mitigation inspection and why does it matter?', answer: 'A wind mitigation inspection documents the wind-resistant features of your home\'s roof—such as roof shape, attachment method, and secondary water barrier. This report can qualify you for significant insurance premium discounts. As a Certified Wind Loss Mitigator, we can perform this inspection and provide the documentation your insurer needs.' },
+  { question: 'Can a roofer do my wind mitigation report?', answer: 'Usually, no — a wind mitigation report generally must be completed by a properly licensed inspector (often a home inspector, engineer, architect, or a Florida-licensed general contractor, depending on the credential). Many roofing contractors can\'t sign that form unless they also hold the appropriate license. If your roofer is also a GC, it can simplify coordination because the same firm can evaluate roofing + related structural mitigation opportunities.' },
+  { question: 'Is Palm Beach County part of Florida\'s HVHZ?', answer: 'No. Florida\'s HVHZ designation applies to Miami-Dade and Broward counties. Palm Beach County is outside the HVHZ, but many Palm Beach jurisdictions follow very strict high-wind standards and product approval requirements that can be close to HVHZ-level intent, especially for uplift resistance and opening protection.' },
+  { question: 'Will a new roof help lower my insurance?', answer: 'Yes — a new roof can reduce insurance costs, especially when paired with documented wind mitigation features (improved roof-to-deck attachment, secondary water barrier, enhanced fastening patterns, and approved assemblies). If your roofing contractor also holds a GC license, you may be able to address certain structural upgrades more efficiently, which can unlock additional mitigation credits depending on your home and insurer.' },
+  // General roofing FAQ questions
+  { question: 'How much does a new roof cost in South Florida?', answer: 'Roof replacement costs in South Florida typically range from $10,000 to $45,000+ depending on roof size, material (shingle, tile, metal, or flat systems), and code requirements. HVHZ compliance may require additional underlayment, fasteners, and inspections. We provide free, detailed written estimates so you know exactly what you\'re paying for—no hidden fees, no surprises.' },
+  { question: 'How do I know if I need a roof repair or full replacement?', answer: 'If your roof has localized damage—a few missing shingles, a small leak, or minor flashing issues—a repair may be all you need. But if your roof is 15–20+ years old, has widespread damage, or has failed an inspection, replacement is usually the smarter long-term investment. Our inspectors will give you an honest assessment.' },
+  { question: 'Do I need a permit for roofing work in Broward or Palm Beach County?', answer: 'Yes. Florida law requires permits for most roofing work, and both Broward and Palm Beach Counties enforce strict permitting and inspection processes—especially in the High Velocity Hurricane Zone. We handle all permit coordination for you.' },
+  { question: 'How long does a typical roof replacement take?', answer: 'Roof installation typically takes 2–5 actual working days once permits, HOA approvals, and materials are ready. From contract signing to final inspection, most projects take 3–6 weeks, depending on permitting timelines, HOA approval, inspections, and material scheduling.' },
+  { question: 'Does homeowner\'s insurance cover roof replacement in Florida?', answer: 'If your roof was damaged by a covered peril—such as a hurricane, hailstorm, or falling debris—your homeowner\'s insurance may cover part or all of the replacement cost. We assist with insurance documentation, damage assessments, and claims coordination.' },
+  { question: 'What is the best roofing material for hurricane zones?', answer: 'In South Florida\'s HVHZ, the best roofing materials are those rated for high-wind performance. Concrete tile, metal roofing, and impact-rated shingle systems all perform well when installed to code. The right choice depends on your home\'s structure, budget, and aesthetic preference.' },
+  { question: 'How do I choose the right roofing contractor in South Florida?', answer: 'Look for a roofing contractor who is Florida-licensed, properly insured, and holds manufacturer certifications. Check their BBB rating, Google reviews, and how long they\'ve been in business locally. Avoid storm chasers and companies that pressure you to sign over your insurance claim.' },
+  { question: 'What is the My Safe Florida Home Program?', answer: 'The My Safe Florida Home Program provides free wind inspections and matching grants to help Florida homeowners strengthen their homes against hurricanes. As one of the original Certified MySafeFloridaHome Contractors, All Phase Construction USA is qualified to perform the recommended improvements.' },
+  { question: 'What voids a roof warranty?', answer: 'Common warranty voidances include improper installation, unauthorized repairs by uncertified contractors, failure to maintain adequate attic ventilation, and walking on the roof without proper precautions. Our manufacturer certifications ensure your warranty stays intact from day one.' },
+];
+
 export default function HomePage() {
   // Static SEO metadata controlled by NuclearMetadata component
   // Schema.org markup handled by NuclearMetadata and Footer components
-
+  const faqPageSchema = generateFAQPageSchema(homepageFAQs);
 
   return (
     <>
       <SEO
-        title="Roofing Contractor | Broward & Palm Beach County | All Phase Construction USA"
+        title="Roof Repair & Installation | Palm Beach & Broward County | All Phase Construction USA"
         description="HVHZ-certified roofing contractor in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Call (754) 227-5605."
         canonicalPath="/"
+        schema={faqPageSchema}
       />
       <HeroRoofing />
 
@@ -246,7 +267,7 @@ export default function HomePage() {
                 {/* Row 1 */}
                 <div className="p-6 border-b border-gray-700">
                   <p className="text-gray-200 leading-relaxed">
-                    <span className="font-semibold text-white">Dual-Licensed:</span> <span className="text-red-400">Roofing + General Contractor</span>
+                    <a href={EXTERNAL_LINKS.FL_DBPR} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-red-300 underline">Dual-Licensed:</a> <span className="text-red-400">Roofing + General Contractor</span>
                   </p>
                 </div>
                 <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700 bg-gray-900/30">
@@ -271,7 +292,7 @@ export default function HomePage() {
                 {/* Row 3 */}
                 <div className="p-6 border-b border-gray-700">
                   <p className="text-gray-200 leading-relaxed">
-                    <span className="font-semibold text-white">Elite Manufacturer Certifications</span> (Carlisle, GAF Gold, CertainTeed, TAMKO, IB Roof Systems, and more)
+                    <span className="font-semibold text-white">Elite Manufacturer Certifications</span> (Carlisle, <a href={EXTERNAL_LINKS.GAF_PROFILE} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300 underline">GAF Gold</a>, CertainTeed, TAMKO, IB Roof Systems, and more)
                   </p>
                 </div>
                 <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700 bg-gray-900/30">
@@ -283,7 +304,7 @@ export default function HomePage() {
                 {/* Row 4 */}
                 <div className="p-6 border-b border-gray-700 bg-gray-900/30">
                   <p className="text-gray-200 leading-relaxed">
-                    <span className="font-semibold text-white">Directorii $25,000 Workmanship Guarantee</span>
+                    <a href={EXTERNAL_LINKS.DIRECTORII} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-red-300 underline">Directorii $25,000 Workmanship Guarantee</a>
                   </p>
                 </div>
                 <div className="p-6 border-b border-gray-700 md:border-l border-l-gray-700">

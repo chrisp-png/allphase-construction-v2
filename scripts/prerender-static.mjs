@@ -1389,7 +1389,22 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       'https://www.facebook.com/allphaseconstructionusa',
       'https://www.instagram.com/allphaseconstructionusa',
       'https://www.linkedin.com/company/allphaseconstructionusa',
-      'https://www.youtube.com/@allphaseconstructionusa'
+      'https://www.youtube.com/@allphaseconstructionusa',
+      'https://maps.app.goo.gl/VgpBphe5vYY8yuow7',
+      'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach-2',
+      'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640',
+      'https://www.mapquest.com/us/florida/all-phase-construction-usa-535965821',
+      'https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381',
+      'https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/',
+      'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky'
+    ],
+    knowsAbout: [
+      'Roof Repair', 'Roof Replacement', 'Roof Inspections', 'Roof Installation',
+      'Shingle Roofing', 'Tile Roofing', 'Metal Roofing', 'Flat Roofing',
+      'Commercial Roofing', 'Residential Roofing', 'Storm Damage Restoration',
+      'Wind Mitigation', 'HVHZ Compliance', 'Hurricane-Resistant Roofing',
+      'TPO Roofing', 'PVC Roofing', 'EPDM Roofing', 'Modified Bitumen Roofing',
+      'Roof Insurance Claims', 'Florida Building Code Compliance'
     ],
     paymentAccepted: ['Cash', 'Check', 'Credit Card', 'Financing']
   };
@@ -1581,12 +1596,31 @@ async function generateStaticFiles() {
   // 1. Generate Homepage
   // Homepage uses explicit metadata (NOT from getSEOMetadata fallback)
   // This ensures title is controlled by index.html + runtime metadata
+  // Homepage schemas: WebSite + FAQPage (combined from MicroFAQ + FAQ sections)
+  const homepageSchemas = [
+    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is a wind mitigation inspection and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"A wind mitigation inspection documents the wind-resistant features of your home's roof—such as roof shape, attachment method, and secondary water barrier. This report can qualify you for significant insurance premium discounts. As a Certified Wind Loss Mitigator, we can perform this inspection and provide the documentation your insurer needs."}},
+      {"@type":"Question","name":"Can a roofer do my wind mitigation report?","acceptedAnswer":{"@type":"Answer","text":"Usually, no — a wind mitigation report generally must be completed by a properly licensed inspector (often a home inspector, engineer, architect, or a Florida-licensed general contractor, depending on the credential). Many roofing contractors can't sign that form unless they also hold the appropriate license. If your roofer is also a GC, it can simplify coordination because the same firm can evaluate roofing + related structural mitigation opportunities."}},
+      {"@type":"Question","name":"Is Palm Beach County part of Florida's HVHZ?","acceptedAnswer":{"@type":"Answer","text":"No. Florida's HVHZ designation applies to Miami-Dade and Broward counties. Palm Beach County is outside the HVHZ, but many Palm Beach jurisdictions follow very strict high-wind standards and product approval requirements that can be close to HVHZ-level intent, especially for uplift resistance and opening protection."}},
+      {"@type":"Question","name":"Will a new roof help lower my insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes — a new roof can reduce insurance costs, especially when paired with documented wind mitigation features (improved roof-to-deck attachment, secondary water barrier, enhanced fastening patterns, and approved assemblies). If your roofing contractor also holds a GC license, you may be able to address certain structural upgrades more efficiently, which can unlock additional mitigation credits depending on your home and insurer."}},
+      {"@type":"Question","name":"How much does a new roof cost in South Florida?","acceptedAnswer":{"@type":"Answer","text":"Roof replacement costs in South Florida typically range from $10,000 to $45,000+ depending on roof size, material (shingle, tile, metal, or flat systems), and code requirements. HVHZ compliance may require additional underlayment, fasteners, and inspections. We provide free, detailed written estimates so you know exactly what you're paying for—no hidden fees, no surprises."}},
+      {"@type":"Question","name":"How do I know if I need a roof repair or full replacement?","acceptedAnswer":{"@type":"Answer","text":"If your roof has localized damage—a few missing shingles, a small leak, or minor flashing issues—a repair may be all you need. But if your roof is 15–20+ years old, has widespread damage, or has failed an inspection, replacement is usually the smarter long-term investment. Our inspectors will give you an honest assessment."}},
+      {"@type":"Question","name":"Do I need a permit for roofing work in Broward or Palm Beach County?","acceptedAnswer":{"@type":"Answer","text":"Yes. Florida law requires permits for most roofing work, and both Broward and Palm Beach Counties enforce strict permitting and inspection processes—especially in the High Velocity Hurricane Zone. We handle all permit coordination for you."}},
+      {"@type":"Question","name":"How long does a typical roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Roof installation typically takes 2–5 actual working days once permits, HOA approvals, and materials are ready. From contract signing to final inspection, most projects take 3–6 weeks, depending on permitting timelines, HOA approval, inspections, and material scheduling."}},
+      {"@type":"Question","name":"Does homeowner's insurance cover roof replacement in Florida?","acceptedAnswer":{"@type":"Answer","text":"If your roof was damaged by a covered peril—such as a hurricane, hailstorm, or falling debris—your homeowner's insurance may cover part or all of the replacement cost. We assist with insurance documentation, damage assessments, and claims coordination."}},
+      {"@type":"Question","name":"What is the best roofing material for hurricane zones?","acceptedAnswer":{"@type":"Answer","text":"In South Florida's HVHZ, the best roofing materials are those rated for high-wind performance. Concrete tile, metal roofing, and impact-rated shingle systems all perform well when installed to code. The right choice depends on your home's structure, budget, and aesthetic preference."}},
+      {"@type":"Question","name":"How do I choose the right roofing contractor in South Florida?","acceptedAnswer":{"@type":"Answer","text":"Look for a roofing contractor who is Florida-licensed, properly insured, and holds manufacturer certifications. Check their BBB rating, Google reviews, and how long they've been in business locally. Avoid storm chasers and companies that pressure you to sign over your insurance claim."}},
+      {"@type":"Question","name":"What is the My Safe Florida Home Program?","acceptedAnswer":{"@type":"Answer","text":"The My Safe Florida Home Program provides free wind inspections and matching grants to help Florida homeowners strengthen their homes against hurricanes. As one of the original Certified MySafeFloridaHome Contractors, All Phase Construction USA is qualified to perform the recommended improvements."}},
+      {"@type":"Question","name":"What voids a roof warranty?","acceptedAnswer":{"@type":"Answer","text":"Common warranty voidances include improper installation, unauthorized repairs by uncertified contractors, failure to maintain adequate attic ventilation, and walking on the roof without proper precautions. Our manufacturer certifications ensure your warranty stays intact from day one."}}
+    ]}
+  ];
   const homeHTML = createHTMLTemplate(
-    'Roofing Contractor | Broward & Palm Beach | All Phase USA',
+    'Roof Repair & Installation | Palm Beach & Broward County | All Phase Construction USA',
         'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
-    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+    homepageSchemas
   );
   // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering

@@ -68,7 +68,22 @@ export function generateLocalBusinessSchema(pageUrl: string) {
     // aggregateRating removed — managed solely by NuclearMetadata.tsx global schema
     sameAs: [
       'https://www.facebook.com/allphaseconstructionusa',
-      'https://www.instagram.com/allphaseconstructionusa'
+      'https://www.instagram.com/allphaseconstructionusa',
+      'https://www.linkedin.com/company/allphaseconstructionusa',
+      'https://www.youtube.com/@allphaseconstructionusa',
+      'https://maps.app.goo.gl/VgpBphe5vYY8yuow7',
+      'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach-2',
+      'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640',
+      'https://www.mapquest.com/us/florida/all-phase-construction-usa-535965821',
+      'https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381',
+      'https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/',
+      'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky'
+    ],
+    knowsAbout: [
+      'Roof Repair', 'Roof Replacement', 'Roof Inspections', 'Roof Installation',
+      'Shingle Roofing', 'Tile Roofing', 'Metal Roofing', 'Flat Roofing',
+      'Commercial Roofing', 'Residential Roofing', 'Storm Damage Restoration',
+      'Wind Mitigation', 'HVHZ Compliance', 'Hurricane-Resistant Roofing'
     ]
   };
 }

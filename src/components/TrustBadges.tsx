@@ -62,7 +62,12 @@ export default function TrustBadges() {
           </a>
 
           {/* TRI Alliance Badge */}
-          <div className="flex items-center px-5 py-4 rounded-lg">
+          <a
+            href={EXTERNAL_LINKS.TRI_DIRECTORY}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-5 py-4 rounded-lg hover:scale-105 transition-transform duration-300"
+          >
             <img
               src="/tri-alliance-logo.jpg"
               alt="TRI Alliance Florida High Wind Certified — Tile Roofing Industry Alliance Member"
@@ -71,7 +76,7 @@ export default function TrustBadges() {
               loading="lazy"
               decoding="async"
             />
-          </div>
+          </a>
 
           <div className="bg-neutral-900 px-6 py-4 rounded-xl border border-neutral-800 hover:border-red-600 transition-all duration-300 group">
             <span className="text-white font-bold text-lg">25+ Years Experience</span>

@@ -28,7 +28,7 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roofing Contractor Near Me | South Florida | All Phase',
+    title: 'Roof Repair & Installation | Palm Beach & Broward County | All Phase Construction USA',
     description: 'South Florida roofing contractor — dual-licensed, HVHZ-certified, 2,500+ roofs since 2005. Free inspection. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
@@ -591,7 +591,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Ensure canonical uses normalizedPath and strips trailing slash (except root)
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
-    title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
+    title: 'Roof Repair & Installation | Palm Beach & Broward County | All Phase USA',
     description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605.',
     canonical: `https://allphaseconstructionfl.com${cleanPath}`
   };
