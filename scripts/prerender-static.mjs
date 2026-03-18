@@ -1396,7 +1396,8 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       'https://www.mapquest.com/us/florida/all-phase-construction-usa-535965821',
       'https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381',
       'https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/',
-      'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky'
+      'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky',
+      'https://www.homepros.com/merchants/all-phase-construction-usa/365769'
     ],
     knowsAbout: [
       'Roof Repair', 'Roof Replacement', 'Roof Inspections', 'Roof Installation',

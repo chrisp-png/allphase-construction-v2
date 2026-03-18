@@ -19,4 +19,5 @@ export const EXTERNAL_LINKS = {
   YELP: 'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach-2',
   ROOFING_INSIGHTS: 'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky',
   FL_DBPR: 'https://www.myfloridalicense.com/wl11.asp',
+  HOMEPROS: 'https://www.homepros.com/merchants/all-phase-construction-usa/365769',
 } as const;
