@@ -78,6 +78,24 @@ export default function TrustBadges() {
             />
           </a>
 
+          {/* FRSA Member Badge */}
+          <a
+            href={EXTERNAL_LINKS.FRSA}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-5 py-4 rounded-lg hover:scale-105 transition-transform duration-300"
+            aria-label="FRSA Member — Florida Roofing & Sheet Metal Contractors Association"
+          >
+            <img
+              src="/frsa-member-badge.svg"
+              alt="FRSA Member — Florida Roofing and Sheet Metal Contractors Association"
+              width="120"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+
           <div className="bg-neutral-900 px-6 py-4 rounded-xl border border-neutral-800 hover:border-red-600 transition-all duration-300 group">
             <span className="text-white font-bold text-lg">25+ Years Experience</span>
           </div>

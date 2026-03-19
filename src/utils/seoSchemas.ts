@@ -78,7 +78,17 @@ export function generateLocalBusinessSchema(pageUrl: string) {
       'https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381',
       'https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/',
       'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky',
-      'https://www.homepros.com/merchants/all-phase-construction-usa/365769'
+      'https://www.homepros.com/merchants/all-phase-construction-usa/365769',
+      'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html'
+    ],
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'Florida Roofing and Sheet Metal Contractors Association',
+        alternateName: 'FRSA',
+        url: 'https://www.floridaroof.com',
+        description: 'The largest state roofing association in the United States'
+      }
     ],
     knowsAbout: [
       'Roof Repair', 'Roof Replacement', 'Roof Inspections', 'Roof Installation',

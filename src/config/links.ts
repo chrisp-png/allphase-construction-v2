@@ -20,4 +20,5 @@ export const EXTERNAL_LINKS = {
   ROOFING_INSIGHTS: 'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky',
   FL_DBPR: 'https://www.myfloridalicense.com/wl11.asp',
   HOMEPROS: 'https://www.homepros.com/merchants/all-phase-construction-usa/365769',
+  FRSA: 'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html',
 } as const;

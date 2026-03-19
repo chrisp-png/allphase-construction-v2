@@ -287,6 +287,13 @@ export default function LicensedRoofingContractorPage() {
               <div className="flex gap-4 items-start">
                 <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
                 <div>
+                  <p className="text-white font-semibold">FRSA Member</p>
+                  <p className="text-zinc-400 text-sm">Florida Roofing & Sheet Metal Contractors Association — the largest state roofing association in the U.S.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
                   <p className="text-white font-semibold">Family Owned & Operated</p>
                   <p className="text-zinc-400 text-sm">Based in Deerfield Beach, serving all of South Florida</p>
                 </div>

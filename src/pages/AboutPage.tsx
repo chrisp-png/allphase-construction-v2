@@ -182,11 +182,21 @@ export default function AboutPage() {
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified Roofing Contractor — CCC-1331464' },
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified General Contractor — CGC-1526236' }
     ],
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'Florida Roofing and Sheet Metal Contractors Association',
+        alternateName: 'FRSA',
+        url: 'https://www.floridaroof.com',
+        description: 'The largest state roofing association in the United States'
+      }
+    ],
     sameAs: [
       'https://www.facebook.com/allphaseconstructionusa',
       'https://www.instagram.com/allphaseconstructionusa',
       'https://www.linkedin.com/company/allphaseconstructionusa',
-      'https://www.youtube.com/@allphaseconstructionusa'
+      'https://www.youtube.com/@allphaseconstructionusa',
+      'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html'
     ],
     knowsAbout: ['Roofing', 'Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Commercial Roofing', 'Tile Roofing', 'Metal Roofing', 'Shingle Roofing', 'Flat Roofing', 'Wind Mitigation']
   };
@@ -525,6 +535,15 @@ export default function AboutPage() {
           <div className="mt-8 pt-8 border-t border-zinc-800">
             <p className="text-gray-500 text-center text-sm">
               Proud member of the{' '}
+              <a
+                href="https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-600 transition-colors underline decoration-gray-600 hover:decoration-red-600"
+              >
+                Florida Roofing &amp; Sheet Metal Contractors Association (FRSA)
+              </a>
+              {', '}
               <a
                 href="https://www.browardchamber.org/"
                 target="_blank"
