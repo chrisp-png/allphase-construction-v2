@@ -111,11 +111,11 @@ export default function FlatRoofingPage() {
 
   return (
     <>
+      {/* Schema is injected by prerender-static.mjs at build time — do NOT pass schema here */}
       <SEO
         title="Flat Roofing Broward & Palm Beach | TPO & PVC | All Phase"
         description={pageDescription}
         canonical={pageUrl}
-        schema={combinedSchema}
       />
       <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}

@@ -79,6 +79,7 @@ export default function ResidentialRoofingPage() {
 
   return (
     <>
+      {/* Schema is injected by prerender-static.mjs at build time — do NOT duplicate here */}
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -90,9 +91,6 @@ export default function ResidentialRoofingPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <script type="application/ld+json">
-          {JSON.stringify(schemas)}
-        </script>
       </Helmet>
 
       <div className="min-h-screen bg-black text-white">
