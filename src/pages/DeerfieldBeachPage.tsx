@@ -91,6 +91,16 @@ export default function DeerfieldBeachPage() {
       { name: 'Deerfield Beach', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/deerfield-beach' }
     ]);
 
+    // Community sponsorship — strengthens local entity signals
+    if (localBusinessSchema) {
+      localBusinessSchema.sponsor = {
+        '@type': 'Organization',
+        name: 'Beach Rides FL',
+        url: 'https://beachridesfl.com/',
+        description: 'Local shuttle service serving Deerfield Beach residents and visitors'
+      };
+    }
+
     // Remove existing schemas
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
     existingSchemas.forEach(schema => schema.remove());
@@ -472,6 +482,37 @@ export default function DeerfieldBeachPage() {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* COMMUNITY SPONSORSHIP — BEACH RIDES */}
+          <div className="mb-20">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl p-8 sm:p-10">
+                <div className="flex flex-col sm:flex-row items-start gap-6">
+                  <div className="flex-1">
+                    <p className="text-red-500 font-semibold text-sm uppercase tracking-wider mb-2">Proud Community Sponsor</p>
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      Supporting Deerfield Beach Rides
+                    </h3>
+                    <p className="text-zinc-400 leading-relaxed mb-4">
+                      All Phase Construction USA is a proud sponsor of{' '}
+                      <a
+                        href="https://beachridesfl.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-red-500 hover:text-red-400 underline transition-colors"
+                      >
+                        Beach Rides
+                      </a>
+                      , Deerfield Beach's local shuttle service. You'll find our logo on their van as it runs routes throughout the community, serving residents and visitors alike.
+                    </p>
+                    <p className="text-zinc-400 leading-relaxed">
+                      We've called Deerfield Beach home since 2005, and giving back to the community that trusts us with their roofs is something we take seriously. Whether it's sponsoring local transportation, supporting neighborhood events, or simply being a reliable neighbor — we're here for the long haul.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
