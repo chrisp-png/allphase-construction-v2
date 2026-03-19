@@ -79,7 +79,8 @@ export function generateLocalBusinessSchema(pageUrl: string) {
       'https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/',
       'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky',
       'https://www.homepros.com/merchants/all-phase-construction-usa/365769',
-      'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html'
+      'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html',
+      'https://www.expertise.com/home-improvement/roofing/florida/deerfield-beach'
     ],
     memberOf: [
       {

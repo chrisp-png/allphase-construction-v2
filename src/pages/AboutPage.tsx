@@ -196,7 +196,8 @@ export default function AboutPage() {
       'https://www.instagram.com/allphaseconstructionusa',
       'https://www.linkedin.com/company/allphaseconstructionusa',
       'https://www.youtube.com/@allphaseconstructionusa',
-      'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html'
+      'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html',
+      'https://www.expertise.com/home-improvement/roofing/florida/deerfield-beach'
     ],
     knowsAbout: ['Roofing', 'Roof Replacement', 'Roof Repair', 'Roof Inspection', 'Commercial Roofing', 'Tile Roofing', 'Metal Roofing', 'Shingle Roofing', 'Flat Roofing', 'Wind Mitigation']
   };
