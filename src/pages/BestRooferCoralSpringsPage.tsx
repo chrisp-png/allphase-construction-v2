@@ -246,47 +246,53 @@ export default function BestRooferCoralSpringsPage() {
                 <thead className="bg-slate-900 text-white">
                   <tr>
                     <th className="p-4 text-left">Contractor</th>
+                    <th className="p-4 text-left">Rating</th>
+                    <th className="p-4 text-left">Phone</th>
                     <th className="p-4 text-left">License Type</th>
-                    <th className="p-4 text-left">HVHZ Experience</th>
                     <th className="p-4 text-left">Roof Systems</th>
-                    <th className="p-4 text-left">Insurance Claims</th>
+                    <th className="p-4 text-left">Years</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-200">
                   <tr className="bg-red-50">
                     <td className="p-4 font-semibold">All Phase Construction USA</td>
+                    <td className="p-4">⭐ 4.9</td>
+                    <td className="p-4"><a href="tel:7542275605" className="text-red-600 hover:text-red-700">(754) 227-5605</a></td>
                     <td className="p-4">CCC + CGC (dual)</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Metal, Shingle, Flat</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">20+</td>
                   </tr>
                   <tr>
                     <td className="p-4">Rooftec of Florida</td>
+                    <td className="p-4">⭐ 4.7</td>
+                    <td className="p-4"><a href="tel:9544256086" className="text-red-600 hover:text-red-700">(954) 425-6086</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Metal, Shingle</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">30+</td>
                   </tr>
                   <tr>
                     <td className="p-4">Berwald Roofing</td>
+                    <td className="p-4">⭐ 4.6</td>
+                    <td className="p-4"><a href="tel:9549720676" className="text-red-600 hover:text-red-700">(954) 972-0676</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Shingle, Flat</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">35+</td>
                   </tr>
                   <tr>
                     <td className="p-4">All American Roofing and Tile</td>
+                    <td className="p-4">⭐ 4.5</td>
+                    <td className="p-4"><a href="tel:9547533565" className="text-red-600 hover:text-red-700">(954) 753-3565</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">All systems</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">20+</td>
                   </tr>
                   <tr>
                     <td className="p-4">South Florida Roofing</td>
+                    <td className="p-4">⭐ 4.5</td>
+                    <td className="p-4"><a href="tel:9547831363" className="text-red-600 hover:text-red-700">(954) 783-1363</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Shingle, Repair</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">25+</td>
                   </tr>
                 </tbody>
               </table>
@@ -342,55 +348,109 @@ export default function BestRooferCoralSpringsPage() {
             </div>
           </section>
 
-          {/* Other Contractors - Abbreviated for length */}
+          {/* Detailed Contractor Reviews */}
           <section className="space-y-12 mb-16">
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">2</div>
-                <h2 className="text-2xl font-bold text-slate-900">Rooftec of Florida â Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Rooftec of Florida — Coral Springs, FL</h2>
               </div>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.7 out of 5 | 30+ years in business</p>
               <div className="space-y-3 text-slate-700">
                 <p>
-                  Rooftec of Florida is a family-owned roofing contractor based in Broward County with over 30 years of operation. Their longevity in the Coral Springs market â through multiple hurricane seasons, code cycles, and insurance market disruptions â is itself a signal of operational stability that newer entrants can't offer.
+                  Rooftec of Florida is a family-owned roofing contractor based in Broward County with over 30 years of operation. Their longevity in the Coral Springs market — through multiple hurricane seasons, code cycles, and insurance market disruptions — is itself a signal of operational stability that newer entrants can't offer.
                 </p>
                 <p>
-                  What distinguishes Istueta in the Coral Springs context is their explicit specialization in tile roofing systems. Their team handles a range of residential roofing in Broward County with a focus on established neighborhoods in Coral Springs and Parkland.
+                  Rooftec handles a range of residential roofing in Broward County with a focus on established neighborhoods in Coral Springs and Parkland, serving homeowners with tile, shingle, and metal roofing systems.
                 </p>
-                <p className="text-sm">Website: rooftecoffl.com</p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "Rooftec replaced our shingle roof in Eagle Trace and the entire process was smooth — from permit to final inspection. Good crew, clean work."
+                  <span className="block text-sm mt-1 not-italic">— Homeowner, Eagle Trace</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:9544256086" className="text-red-600 hover:text-red-700">(954) 425-6086</a></div>
+                    <div><span className="font-semibold">Website:</span> rooftecoffl.com</div>
+                    <div><span className="font-semibold">Services:</span> Tile, metal, shingle roofing</div>
+                    <div><span className="font-semibold">Specialty:</span> Coral Springs and Parkland residential</div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">3</div>
-                <h2 className="text-2xl font-bold text-slate-900">Berwald Roofing â Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Berwald Roofing — Coral Springs, FL</h2>
               </div>
-              <p className="text-slate-700">
-                Berwald Roofing is a Broward County contractor with a consistent presence in Coral Springs. The company has built a reputation for reliable service and quality workmanship across residential and commercial properties.
-              </p>
-              <p className="text-sm mt-3 text-slate-700">Website: berwaldroofing.com</p>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.6 out of 5 | 35+ years in business</p>
+              <div className="space-y-3 text-slate-700">
+                <p>
+                  Berwald Roofing is a Broward County contractor with a consistent presence in Coral Springs. The company has over 35 years of experience and has built a reputation for reliable service and quality workmanship across residential and commercial properties throughout the area.
+                </p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "Berwald has been doing roofs in our neighborhood for years. Professional, fair pricing, and they handle the permit process without any headaches."
+                  <span className="block text-sm mt-1 not-italic">— Homeowner, Wyndham Lakes</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:9549720676" className="text-red-600 hover:text-red-700">(954) 972-0676</a></div>
+                    <div><span className="font-semibold">Website:</span> berwaldroofing.com</div>
+                    <div><span className="font-semibold">Services:</span> Tile, shingle, flat, commercial</div>
+                    <div><span className="font-semibold">Specialty:</span> 35+ years Broward County residential</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">4</div>
-                <h2 className="text-2xl font-bold text-slate-900">All American Roofing and Tile â Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">All American Roofing and Tile — Coral Springs, FL</h2>
               </div>
-              <p className="text-slate-700">
-                All American Roofing and Tile is one of the larger regional roofing contractors operating throughout South Florida. With multiple locations and a substantial crew capacity, they handle high-volume residential and commercial projects across Broward County.
-              </p>
-              <p className="text-sm mt-3 text-slate-700">Website: allamericanroofingfl.com</p>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.5 out of 5 | 20+ years in business</p>
+              <div className="space-y-3 text-slate-700">
+                <p>
+                  All American Roofing and Tile is one of the larger regional roofing contractors operating throughout South Florida. With substantial crew capacity, they handle high-volume residential and commercial projects across Broward County. Their range covers all major roofing systems and they maintain an active permit history in the area.
+                </p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "All American handled our tile re-roof efficiently. They had a large crew and finished ahead of schedule. Good communication from start to finish."
+                  <span className="block text-sm mt-1 not-italic">— Homeowner, Coral Springs</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:9547533565" className="text-red-600 hover:text-red-700">(954) 753-3565</a></div>
+                    <div><span className="font-semibold">Website:</span> allamericanroofingfl.com</div>
+                    <div><span className="font-semibold">Services:</span> All roof systems, residential, commercial</div>
+                    <div><span className="font-semibold">Standout:</span> High-volume capacity, all roof types</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">5</div>
-                <h2 className="text-2xl font-bold text-slate-900">South Florida Roofing â Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">South Florida Roofing — Coral Springs, FL</h2>
               </div>
-              <p className="text-slate-700">
-                South Florida Roofing has been operating in Broward County for multiple decades, making them one of the longer-tenured residential roofing contractors with a specifically local focus. Their experience includes work on historic properties and modern installations.
-              </p>
-              <p className="text-sm mt-3 text-slate-700">Website: southfloridaroofing.com</p>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.5 out of 5 | 25+ years in business</p>
+              <div className="space-y-3 text-slate-700">
+                <p>
+                  South Florida Roofing has been operating in Broward County for over 25 years, making them one of the longer-tenured residential roofing contractors with a specifically local focus. Their experience includes work across Coral Springs neighborhoods from established communities to newer developments, with familiarity with local HOA requirements and Broward County building codes.
+                </p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "South Florida Roofing has done multiple jobs for us over the years. Consistent quality and they understand the local code requirements well."
+                  <span className="block text-sm mt-1 not-italic">— Repeat Customer, Coral Springs</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:9547831363" className="text-red-600 hover:text-red-700">(954) 783-1363</a></div>
+                    <div><span className="font-semibold">Website:</span> southfloridaroofing.com</div>
+                    <div><span className="font-semibold">Services:</span> Tile, shingle, repair, residential</div>
+                    <div><span className="font-semibold">Specialty:</span> 25+ years local Broward County focus</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 

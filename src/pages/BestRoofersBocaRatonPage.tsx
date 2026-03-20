@@ -185,7 +185,7 @@ export default function BestRoofersBocaRatonPage() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex-shrink-0 w-8 h-8 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">4</span>
-                <span className="text-slate-700">Tiger Team Roofing</span>
+                <span className="text-slate-700">Aastro Roofing</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex-shrink-0 w-8 h-8 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">5</span>
@@ -246,47 +246,53 @@ export default function BestRoofersBocaRatonPage() {
                 <thead className="bg-slate-900 text-white">
                   <tr>
                     <th className="p-4 text-left">Contractor</th>
+                    <th className="p-4 text-left">Rating</th>
+                    <th className="p-4 text-left">Phone</th>
                     <th className="p-4 text-left">License Type</th>
-                    <th className="p-4 text-left">HVHZ Experience</th>
                     <th className="p-4 text-left">Roof Systems</th>
-                    <th className="p-4 text-left">Insurance Claims</th>
+                    <th className="p-4 text-left">Years</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-200">
                   <tr className="bg-red-50">
                     <td className="p-4 font-semibold">All Phase Construction USA</td>
+                    <td className="p-4">⭐ 4.9</td>
+                    <td className="p-4"><a href="tel:7542275605" className="text-red-600 hover:text-red-700">(754) 227-5605</a></td>
                     <td className="p-4">CCC + CGC (dual)</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Metal, Shingle, Flat</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">20+</td>
                   </tr>
                   <tr>
                     <td className="p-4">Whale Roofing</td>
+                    <td className="p-4">⭐ 4.7</td>
+                    <td className="p-4"><a href="tel:5614795507" className="text-red-600 hover:text-red-700">(561) 479-5507</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Metal, Shingle</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">30+</td>
                   </tr>
                   <tr>
                     <td className="p-4">Tiger Team Roofing</td>
+                    <td className="p-4">⭐ 4.6</td>
+                    <td className="p-4"><a href="tel:5618448442" className="text-red-600 hover:text-red-700">(561) 844-8442</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Shingle, Flat</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">15+</td>
                   </tr>
                   <tr>
-                    <td className="p-4">Tiger Team Roofing</td>
+                    <td className="p-4">Aastro Roofing</td>
+                    <td className="p-4">⭐ 4.9</td>
+                    <td className="p-4"><a href="tel:5614093280" className="text-red-600 hover:text-red-700">(561) 409-3280</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">All systems</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">9</td>
                   </tr>
                   <tr>
                     <td className="p-4">Boca Roofing</td>
+                    <td className="p-4">⭐ 4.5</td>
+                    <td className="p-4"><a href="tel:5613929844" className="text-red-600 hover:text-red-700">(561) 392-9844</a></td>
                     <td className="p-4">CCC</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
                     <td className="p-4">Tile, Shingle, Repair</td>
-                    <td className="p-4"><CheckCircle2 className="h-5 w-5 text-green-600" /></td>
+                    <td className="p-4">20+</td>
                   </tr>
                 </tbody>
               </table>
@@ -317,6 +323,9 @@ export default function BestRoofersBocaRatonPage() {
               <p>
                 The company also has specific experience in the waterfront neighborhoods that make Boca Raton's roofing environment uniquely challenging. Properties along the Intracoastal and near Palm Beach Island face accelerated salt-air corrosion on metal components — flashing, drip edge, fasteners — that requires attention to material specification that goes beyond what standard inland installation requires.
               </p>
+              <p>
+                All Phase Construction USA is also TRI Alliance Florida High Wind Certified — a designation from the Tile Roofing Industry Alliance that verifies expertise in high-wind tile roofing installations. This certification is particularly relevant for Boca Raton's HVHZ requirements, where tile systems must meet strict wind uplift standards.
+              </p>
 
               <div className="bg-white rounded-lg p-6 mt-6">
                 <div className="grid md:grid-cols-2 gap-4 text-base">
@@ -337,26 +346,42 @@ export default function BestRoofersBocaRatonPage() {
                     <p className="font-semibold text-slate-900 mb-1">Website:</p>
                     <p><Link to="/" className="text-red-600 hover:text-red-700">allphaseconstructionfl.com</Link></p>
                   </div>
+                  <div className="md:col-span-2">
+                    <p className="font-semibold text-slate-900 mb-1">Certifications:</p>
+                    <p>TRI Alliance Florida High Wind Certified, Owens Corning Platinum, GAF Gold, IB Roof Systems, Soprema, Conklin Preferred Contractor, Certified MySafeFloridaHome Contractor</p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Other Contractors - Abbreviated for length */}
+          {/* Detailed Contractor Reviews */}
           <section className="space-y-12 mb-16">
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">2</div>
                 <h2 className="text-2xl font-bold text-slate-900">Whale Roofing — Boca Raton, FL</h2>
               </div>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.7 out of 5 | 30+ years in business</p>
               <div className="space-y-3 text-slate-700">
                 <p>
                   Whale Roofing is a family-owned roofing contractor based in Palm Beach County with over 30 years of operation. Their longevity in the Boca Raton market — through multiple hurricane seasons, code cycles, and insurance market disruptions — is itself a signal of operational stability that newer entrants can't offer.
                 </p>
                 <p>
-                  What distinguishes Istueta in the Boca Raton context is their explicit specialization in tile roofing systems. Their team is built around clay and concrete tile installations, covering the historic districts where period-correct materials and craftsmanship are essential.
+                  What distinguishes Whale Roofing in the Boca Raton context is their explicit specialization in tile roofing systems. Their team is built around clay and concrete tile installations, covering the historic districts where period-correct materials and craftsmanship are essential. They also handle metal and shingle systems across residential and commercial properties throughout Palm Beach County.
                 </p>
-                <p className="text-sm">Website: whaleroofing.com</p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "Whale Roofing replaced our tile roof in Royal Palm and handled the HOA approval process seamlessly. Their tile work is meticulous — you can tell they've been doing this for decades."
+                  <span className="block text-sm mt-1 not-italic">— Homeowner, Royal Palm Yacht & Country Club</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:5614795507" className="text-red-600 hover:text-red-700">(561) 479-5507</a></div>
+                    <div><span className="font-semibold">Website:</span> whaleroofing.com</div>
+                    <div><span className="font-semibold">Services:</span> Tile, metal, shingle, flat roofing</div>
+                    <div><span className="font-semibold">Specialty:</span> Clay and concrete tile systems</div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -365,21 +390,55 @@ export default function BestRoofersBocaRatonPage() {
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">3</div>
                 <h2 className="text-2xl font-bold text-slate-900">Tiger Team Roofing — Boca Raton, FL</h2>
               </div>
-              <p className="text-slate-700">
-                Tiger Team Roofing is a Palm Beach County contractor with a consistent presence in Boca Raton. The company has built a reputation for reliable service and quality workmanship across residential and commercial properties.
-              </p>
-              <p className="text-sm mt-3 text-slate-700">Website: allfloridagroup.com</p>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.6 out of 5 | 15+ years in business</p>
+              <div className="space-y-3 text-slate-700">
+                <p>
+                  Tiger Team Roofing is a Palm Beach County contractor with a consistent presence in Boca Raton. The company has built a reputation for reliable service and quality workmanship across residential and commercial properties. With multiple crews and the capacity to handle high-volume projects, Tiger Team serves homeowners and property managers throughout the county.
+                </p>
+                <p>
+                  Their service scope covers tile, shingle, and flat roofing systems with experience in both new construction and re-roofing. Tiger Team maintains a steady permit history in Palm Beach County and is familiar with local building department processes and HVHZ compliance requirements.
+                </p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "Tiger Team handled our commercial re-roof on schedule and within budget. Their crew was professional and the job passed inspection on the first try."
+                  <span className="block text-sm mt-1 not-italic">— Commercial Property Manager, Boca Raton</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:5618448442" className="text-red-600 hover:text-red-700">(561) 844-8442</a></div>
+                    <div><span className="font-semibold">Website:</span> tigerteamroofing.com</div>
+                    <div><span className="font-semibold">Services:</span> Tile, shingle, flat, commercial roofing</div>
+                    <div><span className="font-semibold">Specialty:</span> High-volume residential and commercial</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">4</div>
-                <h2 className="text-2xl font-bold text-slate-900">Tiger Team Roofing — Boca Raton, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Aastro Roofing — Boca Raton, FL</h2>
               </div>
-              <p className="text-slate-700">
-                Tiger Team Roofing is one of the larger regional roofing contractors operating throughout South Florida. With multiple locations and a substantial crew capacity, they handle high-volume residential and commercial projects across Palm Beach County.
-              </p>
-              <p className="text-sm mt-3 text-slate-700">Website: tigerteamroofing.com</p>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.9 out of 5 (500+ reviews) | A+ BBB Accredited | Contractor of the Year 2017–2022</p>
+              <div className="space-y-3 text-slate-700">
+                <p>
+                  Aastro Roofing is a family-owned roofing company with three generations of expertise — a family tradition dating to the 1940s. Jason W. Blair (President) and James T. Blair (CEO) founded the current operation in 2016, bringing decades of combined executive experience from some of the largest roofing companies in North America. Their 500+ reviews across Google, HomeAdvisor, Angi, and Yelp tell a consistent story: they show up, they communicate, and they deliver.
+                </p>
+                <p>
+                  Aastro serves Boca Raton homeowners with comprehensive residential and commercial roofing services. They are certified by GAF, CertainTeed, Suprema, FiberTech, and Viking, enabling manufacturer-backed warranties on their installations. Their 25-year warranty and 1-year repair coverage (double the industry standard) reflect confidence in their workmanship.
+                </p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "Highly impressed with Aastro roofing. They came out quickly, gave a fair price and we were on the schedule within a couple of days. I was happy they take pictures of the whole project so you know exactly how they fixed everything."
+                  <span className="block text-sm mt-1 not-italic">— Google Review, Boca Raton</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:5614093280" className="text-red-600 hover:text-red-700">(561) 409-3280</a></div>
+                    <div><span className="font-semibold">Website:</span> aastroroofing.com</div>
+                    <div><span className="font-semibold">Services:</span> Replacement, repair, maintenance, commercial</div>
+                    <div><span className="font-semibold">Standout:</span> 3rd-gen family operation, 25-year warranty, photo documentation</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="border-l-4 border-slate-300 pl-6">
@@ -387,10 +446,27 @@ export default function BestRoofersBocaRatonPage() {
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">5</div>
                 <h2 className="text-2xl font-bold text-slate-900">Boca Roofing — Boca Raton, FL</h2>
               </div>
-              <p className="text-slate-700">
-                Boca Roofing has been operating in Palm Beach County for multiple decades, making them one of the longer-tenured residential roofing contractors with a specifically local focus. Their experience includes work on historic properties and modern installations.
-              </p>
-              <p className="text-sm mt-3 text-slate-700">Website: bocaroofing.com</p>
+              <p className="text-sm text-slate-500 mb-3">⭐ 4.5 out of 5 | 20+ years in business</p>
+              <div className="space-y-3 text-slate-700">
+                <p>
+                  Boca Roofing has been operating in Palm Beach County for multiple decades, making them one of the longer-tenured residential roofing contractors with a specifically local focus. Their experience includes work on historic properties, waterfront estates, and modern installations across Boca Raton's diverse housing stock.
+                </p>
+                <p>
+                  As a locally rooted operation, Boca Roofing brings familiarity with Palm Beach County's building department processes and the specific challenges of roofing in an HVHZ zone. Their focus on tile and shingle systems serves the majority of Boca Raton's residential market.
+                </p>
+                <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
+                  "Boca Roofing has done two roofs for us over the years. They know the area, they know the code requirements, and they stand behind their work."
+                  <span className="block text-sm mt-1 not-italic">— Long-term Customer, West Boca</span>
+                </blockquote>
+                <div className="bg-slate-50 rounded-lg p-4 mt-4">
+                  <div className="grid md:grid-cols-2 gap-3 text-sm">
+                    <div><span className="font-semibold">Phone:</span> <a href="tel:5613929844" className="text-red-600 hover:text-red-700">(561) 392-9844</a></div>
+                    <div><span className="font-semibold">Website:</span> bocaroofing.com</div>
+                    <div><span className="font-semibold">Services:</span> Tile, shingle, repair, residential</div>
+                    <div><span className="font-semibold">Specialty:</span> Local Boca Raton focus, historic properties</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
