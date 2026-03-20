@@ -9,7 +9,7 @@ export default function PompanoBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Pompano Beach Roofing Contractor | All Phase USA';
+    document.title = 'Pompano Beach Roofer | Storm Damage & Reroof | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -123,7 +123,7 @@ export default function PompanoBeachPage() {
               <Shield className="w-4 h-4" />
               <span>Dual-Licensed CCC-1331464 | CGC-1526236</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Expert Roofing Contractor in Pompano Beach, FL</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Pompano Beach Roofer — Storm Damage & Full Reroof</h1>
             <p className="text-xl text-gray-300 mb-8">All Phase Construction USA brings over 20 years of roofing excellence to Pompano Beach, serving residential and commercial property owners throughout Broward County. As a dual-licensed roofing contractor (CCC-1331464) and general contractor (CGC-1526236), we deliver comprehensive roofing solutions that meet South Florida's demanding building codes and withstand our region's intense weather conditions.</p>
             <p className="text-lg text-gray-300 mb-8">Operating from our Deerfield Beach headquarters, our team of certified roofing professionals serves Pompano Beach with a complete range of services including new roof installations, roof replacements, emergency repairs, preventative maintenance, and thorough inspections. We specialize in tile, shingle, metal, and flat roofing systems, with particular expertise in HVHZ (High Velocity Hurricane Zone) installations that provide maximum protection for coastal properties.</p>
             <p className="text-lg text-gray-300 mb-8">Every project we undertake in Pompano Beach reflects our commitment to craftsmanship, transparency, and customer satisfaction. From your initial consultation through final inspection and beyond, we maintain clear communication, respect your property, and deliver results that exceed expectations.</p>

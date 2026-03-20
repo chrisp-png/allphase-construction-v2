@@ -36,8 +36,8 @@ export default function WellingtonPage() {
   const cityName = 'Wellington';
 
   // SEO metadata
-  const seoTitle = 'Wellington Roofer | All Phase Construction USA';
-  const seoDescription = 'All Phase Construction USA is a dual-licensed roofing contractor serving Wellington, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.';
+  const seoTitle = 'Wellington Roof Replacement | Tile & Metal Roofing | All Phase USA';
+  const seoDescription = 'Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. HVHZ-certified, dual-licensed. Free estimate. (754) 227-5605.';
 
   // FAQ data for the page
   const faqData = [
@@ -131,7 +131,7 @@ export default function WellingtonPage() {
           <div className="max-w-5xl mx-auto">
             {/* Hero Section */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Wellington's Trusted Roofing Contractor
+              Wellington Roof Replacement — Tile & Metal Specialists
             </h1>
 
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">

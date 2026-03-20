@@ -9,7 +9,7 @@ export default function CoralSpringsPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Coral Springs Roofing Contractor | All Phase USA';
+    document.title = 'Reroof & Roof Installation Coral Springs FL | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -220,7 +220,7 @@ export default function CoralSpringsPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Trusted Roofing Contractor in Coral Springs, FL — Local Chamber Member Since 2006
+              Reroof & Roof Installation in Coral Springs, FL — Chamber Member Since 2006
             </h1>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
               When a South Florida storm rolls through and you spot water stains on your ceiling, you need a roofing contractor who answers the phone — not a distant call center. Coral Springs homeowners have trusted All Phase Construction USA since 2006, when our team helped this community recover in the aftermath of Hurricane Wilma. As a proud member of the Coral Springs Coconut Creek Regional Chamber of Commerce, we've built our company on the same values that make this tree-lined planned city special — reliability, transparency, and genuine care for our neighbors. Dual-licensed with both a Florida Certified Roofing Contractor license (CCC-1331464) and Certified General Contractor license (CGC-1526236), we deliver comprehensive roofing solutions that standard contractors simply cannot match.

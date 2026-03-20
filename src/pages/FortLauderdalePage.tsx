@@ -9,7 +9,7 @@ export default function FortLauderdalePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Fort Lauderdale Roofing Contractor | All Phase USA';
+    document.title = 'Roof Replacement Fort Lauderdale | HVHZ Certified | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -270,7 +270,7 @@ export default function FortLauderdalePage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Expert Roofing Contractor in Fort Lauderdale, FL
+              Roof Replacement in Fort Lauderdale, FL
             </h1>
             <p className="text-xl text-zinc-400 mb-6 font-medium">
               Dual-Licensed HVHZ Specialist — Dispatched from Deerfield Beach HQ

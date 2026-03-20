@@ -9,7 +9,7 @@ export default function DeerfieldBeachPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Roofing Contractor Deerfield Beach FL | All Phase';
+    document.title = 'Deerfield Beach Roofing Company | HQ Since 2005 | All Phase USA';
 
         // Canonical tag
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -204,7 +204,7 @@ export default function DeerfieldBeachPage() {
             <span className="text-[#C5A572] text-sm font-medium">Deerfield Beach, FL — Broward County HQ</span>
           </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Roofing Contractor in Deerfield Beach, FL
+              Deerfield Beach Roofing Company — Our Home Base Since 2005
             </h1>
 
                       <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">

@@ -7,7 +7,7 @@ import { getCityCoordinates } from '../data/cityCoordinates';
 
 export default function BoyntonBeachPage() {
   useEffect(() => {
-    document.title = 'Boynton Beach Roofing Contractor | Palm Beach County Licensed | All Phase Construction USA';
+    document.title = 'New Roof Boynton Beach FL | Licensed & Insured | All Phase USA';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -134,7 +134,7 @@ export default function BoyntonBeachPage() {
 
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Expert Roofing Contractor in Boynton Beach, FL
+              New Roof in Boynton Beach, FL — Licensed & Insured
             </h1>
             <p className="text-xl text-zinc-400 mb-8 leading-relaxed">
               All Phase Construction USA has served Boynton Beach homeowners and businesses since 2006 — nearly two decades of roofing expertise delivered from our Deerfield Beach headquarters. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), licensed in both Palm Beach County and Broward County, we bring capabilities to every Boynton Beach roofing project that standard roofing-only contractors cannot match.

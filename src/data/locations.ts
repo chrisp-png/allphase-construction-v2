@@ -33,8 +33,8 @@ export const locations: Location[] = [
     slug: "deerfield-beach",
     city: "Deerfield Beach",
     state: "FL",
-        titleOverride: "Roofing Company Deerfield Beach FL | All Phase USA",
-    descriptionOverride: "Deerfield Beach's top-rated roofing company since 2005. HVHZ-certified, 2,500+ projects. Free same-day inspection. Call (754) 227-5605."
+        titleOverride: "Deerfield Beach Roofing Company | HQ Since 2005 | All Phase USA",
+    descriptionOverride: "Deerfield Beach's top-rated roofing company — our headquarters since 2005. HVHZ-certified, dual-licensed, 2,500+ roofs. Free same-day inspection. (754) 227-5605."
   },
 
   // ALL OTHER CITIES (use template-based SEO)
@@ -42,13 +42,25 @@ export const locations: Location[] = [
     slug: "boca-raton",
     city: "Boca Raton",
     state: "FL",
-    titleOverride: "Roofing Company Boca Raton FL | All Phase USA",
-    descriptionOverride: "Boca Raton's trusted roofing company since 2005. Palm Beach County wind-compliant, 2,500+ projects. Free inspection. Call (754) 227-5605."
+    titleOverride: "Tile & Metal Roofer Boca Raton | HOA Approved | All Phase USA",
+    descriptionOverride: "Boca Raton's trusted tile & metal roofer. HOA/ARC-experienced, Palm Beach County wind-compliant, 2,500+ roofs. Free inspection. (754) 227-5605."
   },
-  { slug: "boynton-beach", city: "Boynton Beach", state: "FL" },
+  {
+    slug: "boynton-beach",
+    city: "Boynton Beach",
+    state: "FL",
+    titleOverride: "New Roof Boynton Beach FL | Licensed & Insured | All Phase USA",
+    descriptionOverride: "Need a new roof in Boynton Beach? Dual-licensed contractor serving Aberdeen, Leisureville & all PBC communities. HVHZ-certified. Free estimate. (754) 227-5605."
+  },
   { slug: "coconut-creek", city: "Coconut Creek", state: "FL" },
   { slug: "cooper-city", city: "Cooper City", state: "FL" },
-  { slug: "coral-springs", city: "Coral Springs", state: "FL" },
+  {
+    slug: "coral-springs",
+    city: "Coral Springs",
+    state: "FL",
+    titleOverride: "Reroof & Roof Installation Coral Springs FL | All Phase USA",
+    descriptionOverride: "Coral Springs reroof & roof installation specialist. Chamber member, HVHZ-certified, dual-licensed. Tile, metal & shingle. Free inspection. (754) 227-5605."
+  },
   { slug: "dania-beach", city: "Dania Beach", state: "FL" },
   {
     slug: "davie",
@@ -67,8 +79,8 @@ export const locations: Location[] = [
     slug: "fort-lauderdale",
     city: "Fort Lauderdale",
     state: "FL",
-    titleOverride: "Fort Lauderdale Roofing Contractor | All Phase",
-    descriptionOverride: "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections. (754) 227-5605."
+    titleOverride: "Roof Replacement Fort Lauderdale | HVHZ Certified | All Phase USA",
+    descriptionOverride: "Fort Lauderdale roof replacement by a dual-licensed, HVHZ-certified contractor. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605."
   },
   { slug: "greenacres", city: "Greenacres", state: "FL" },
   { slug: "gulf-stream", city: "Gulf Stream", state: "FL" },
@@ -150,7 +162,13 @@ export const locations: Location[] = [
     titleOverride: "Plantation FL Roofer | Shingle & Tile Roofing | All Phase",
     descriptionOverride: "Experienced roofer in Plantation, FL. Shingle tear-offs, tile re-roofs & flat roof systems. HVHZ-compliant, dual-licensed contractor. (754) 227-5605."
   },
-  { slug: "pompano-beach", city: "Pompano Beach", state: "FL" },
+  {
+    slug: "pompano-beach",
+    city: "Pompano Beach",
+    state: "FL",
+    titleOverride: "Pompano Beach Roofer | Storm Damage & Reroof | All Phase USA",
+    descriptionOverride: "Pompano Beach roofer specializing in storm damage & full reroofs. HVHZ-certified, dual-licensed, 2,500+ projects. Free inspection. (754) 227-5605."
+  },
   { slug: "royal-palm-beach", city: "Royal Palm Beach", state: "FL" },
   {
     slug: "sunrise",
@@ -166,7 +184,13 @@ export const locations: Location[] = [
     titleOverride: "Tamarac Roofing Company | Affordable Re-Roofs | All Phase",
     descriptionOverride: "Affordable roofing company serving Tamarac, FL. Shingle & tile roof replacement, leak repair, insurance claims. HVHZ-certified. (754) 227-5605."
   },
-  { slug: "wellington", city: "Wellington", state: "FL" },
+  {
+    slug: "wellington",
+    city: "Wellington",
+    state: "FL",
+    titleOverride: "Wellington Roof Replacement | Tile & Metal Roofing | All Phase USA",
+    descriptionOverride: "Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. HVHZ-certified, dual-licensed. Free estimate. (754) 227-5605."
+  },
   {
     slug: "west-palm-beach",
     city: "West Palm Beach",
