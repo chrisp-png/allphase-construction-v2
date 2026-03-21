@@ -28,7 +28,7 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'South Florida Roofing Contractor | All Phase Construction USA',
+    title: 'South Florida Roofing Contractor | All Phase USA',
     description: 'South Florida roofing contractor — dual-licensed, HVHZ-certified, 2,500+ roofs since 2005. Free inspection. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
@@ -601,7 +601,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Ensure canonical uses normalizedPath and strips trailing slash (except root)
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
-    title: 'South Florida Roofing Contractor | All Phase Construction USA',
+    title: 'South Florida Roofing Contractor | All Phase USA',
     description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605.',
     canonical: `https://allphaseconstructionfl.com${cleanPath}`
   };

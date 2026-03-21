@@ -1617,7 +1617,7 @@ async function generateStaticFiles() {
     ]}
   ];
   const homeHTML = createHTMLTemplate(
-    'Roof Repair & Installation | Palm Beach & Broward County | All Phase Construction USA',
+    'South Florida Roofing Contractor | All Phase USA',
         'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
@@ -2097,7 +2097,7 @@ ${blogCrawlerLinks}
 ${companyAuthorityFooter()}
 `.trim();
   fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), createHTMLTemplate(
-    'Roof Replacement South Florida | Licensed Contractor | All Phase',
+    'Roof Replacement South Florida | Free Estimate | All Phase',
     'Licensed roof replacement contractor in South Florida. Serving Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. Free estimates. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com/roof-replacement',
     roofReplacementContent
