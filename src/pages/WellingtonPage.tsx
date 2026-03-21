@@ -43,23 +43,23 @@ export default function WellingtonPage() {
   const faqData = [
     {
       question: 'How much does a roof replacement cost in Wellington, FL?',
-      answer: 'The cost of a roof replacement in Wellington varies based on home size, roofing material, and any structural repairs needed. Tile roofing typically costs more than shingle or metal. All Phase Construction USA offers a free on-site estimate and an online roof cost calculator to help you plan your budget.'
+      answer: 'Costs vary based on home size, roofing material, and repairs needed. Tile costs more than shingles or metal. We offer a free on-site estimate and an online calculator to help you budget.'
     },
     {
       question: 'Does All Phase Construction USA handle insurance claims for storm damage in Wellington?',
-      answer: 'Yes. We work directly with homeowners and their insurance adjusters throughout Palm Beach County. Our team documents all storm damage during our 21-point inspection and provides detailed reports to support your claim.'
+      answer: 'Yes, we do. We work with homeowners and insurance adjusters across Palm Beach County. Our 21-point inspection documents damage. We provide reports to support your claim.'
     },
     {
       question: 'How do I know if I need a roof repair or a full roof replacement?',
-      answer: 'It depends on the age of your roof, extent of damage, and roofing material. Minor issues can often be repaired cost-effectively, but if your roof is over 15-20 years old or has widespread damage, a full replacement is usually the smarter long-term investment. Our free inspection gives you an honest assessment.'
+      answer: 'It depends on roof age, damage, and material. Minor issues often get repaired cheaply. If your roof is over 15-20 years old or has major damage, full replacement usually makes sense. We give you an honest assessment for free.'
     },
     {
       question: 'Are you licensed to work in Wellington and Palm Beach County?',
-      answer: 'Yes. All Phase Construction USA holds a Florida Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), both active and valid throughout Palm Beach County including Wellington. Our dual-license means we handle roofing and structural work under one contract and one warranty.'
+      answer: 'Yes. We hold a Florida Certified Roofing Contractor license (CCC-1331464) and a CGC license (CGC-1526236). Both are active in Palm Beach County, including Wellington. Our dual-license means we handle roofing and structural work under one contract and warranty.'
     },
     {
       question: 'What roofing materials work best for homes in Wellington, FL?',
-      answer: 'Wellington\'s climate demands materials built for South Florida conditions. Concrete and clay tile are popular for longevity and curb appeal. Metal roofing offers superior wind resistance and energy efficiency. Architectural shingles provide a cost-effective option with good storm performance when installed to Florida Building Code standards.'
+      answer: 'Wellington\'s climate demands durable materials. Concrete and clay tile last long and look great. Metal roofing resists wind better and saves energy. Shingles cost less and perform well when installed to code.'
     }
   ];
 
@@ -157,11 +157,11 @@ export default function WellingtonPage() {
             {/* Section 1 - Intro */}
             <div className="prose prose-invert max-w-none mb-12">
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Wellington, FL is a rapidly growing village that requires durable roofing solutions tailored to its unique climate. All Phase Construction USA is a dual-licensed roofing contractor with unmatched structural authority, proudly serving Wellington, Palm Beach, and the greater Palm Beach County area. Our expertise in this region allows us to deliver high-quality roofing services to both commercial and residential customers, including homeowners in communities like Olympia, Versailles, Southfields, Binks Forest, and Palm Beach Point.
+                Wellington is a growing village with unique roofing needs. All Phase Construction USA is dual-licensed with deep local expertise. We serve Wellington, Palm Beach, and all of Palm Beach County. We work with homes and businesses in Olympia, Versailles, Southfields, Binks Forest, and Palm Beach Point.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                We are dedicated to building long-term relationships with our customers and strive to achieve complete customer satisfaction on every project. With over twenty years of experience serving the Wellington community, we hold both a Florida Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236) — providing comprehensive roofing and structural expertise that standard roofing contractors simply cannot match.
+                We're here for the long haul. We want you happy on every project. With over 20 years in Wellington, we hold two licenses. That's a Florida Certified Roofing Contractor license (CCC-1331464) and a CGC license (CGC-1526236). This gives us roofing and structural expertise other contractors can't match.
               </p>
             </div>
 
@@ -172,11 +172,11 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                At All Phase Construction USA, we take pride in delivering exceptional roofing services to homeowners and businesses throughout Wellington, FL. Our experienced team is dedicated to providing top-quality workmanship and ensuring complete customer satisfaction on every project. We understand the unique roofing needs of Wellington residents — from protecting estate homes near the Wellington International equestrian showgrounds to safeguarding luxury communities along the National Polo Center corridor.
+                We take pride in serving Wellington's homeowners and businesses. Our team delivers quality work on every job. We understand what Wellington needs. We protect estates near the equestrian showgrounds. We safeguard homes along the National Polo Center.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Whether you require a <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">roof repair</Link>, <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">new roof</Link>, or a full <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement</Link>, our team will guide you through every step of the process. Trust our expertise to keep your Wellington property safe, secure, and looking its best year-round.
+                We handle <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">roof repairs</Link>, <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">new roofs</Link>, and full <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacements</Link>. We guide you every step. Trust us to keep your home safe and looking great all year.
               </p>
             </div>
 
@@ -187,15 +187,15 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Our CGC license (Certified General Contractor) authorizes us to evaluate and repair the complete structural system supporting your roof. During every Wellington <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement</Link>, we inspect roof deck fastening, assess truss integrity, verify proper connections between the roof structure and exterior walls, and ensure the entire system meets current <Link to="/how-to-hire-roofing-contractor" className="text-red-500 hover:text-red-400 underline transition-colors">Florida Building Code</Link> requirements.
+                Our CGC license allows us to evaluate and repair your roof's structure. On every Wellington <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement</Link>, we inspect the deck and fasteners. We check the trusses. We verify all connections are right. We make sure the system meets <Link to="/how-to-hire-roofing-contractor" className="text-red-500 hover:text-red-400 underline transition-colors">Florida Building Code</Link> standards.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                When we identify structural deficiencies, we repair them immediately — keeping your project on schedule under one comprehensive warranty. This is especially critical for Wellington's larger estate properties in communities like Southfields and Palm Beach Point, where roof systems are more complex and require a higher level of structural oversight.
+                If we find structural problems, we fix them right away. Your project stays on schedule. One warranty covers it all. This matters most for Wellington's big estates in Southfields and Palm Beach Point. Their roofs are complex and need careful attention.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed">
-                Routine inspections and maintenance are crucial for preventing small issues from escalating into costly repairs. Our comprehensive approach helps Wellington property owners protect their investment before minor problems become major expenses.
+                Regular inspections stop small problems from growing into big ones. We help Wellington owners protect their homes before costs get high.
               </p>
             </div>
 
@@ -212,11 +212,11 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Wellington sits in Palm Beach County's High-Wind Zone, where roofing systems must be engineered and installed to meet strict Florida Building Code wind resistance standards. Every roof we install in Wellington is designed to handle the sustained winds and impact conditions that South Florida homeowners face each hurricane season.
+                Wellington is in Palm Beach County's High-Wind Zone. Roofs must meet strict wind codes. Every roof we install handles strong winds and impacts. You'll be ready for hurricane season.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Our installation teams use FBC-approved fastening patterns, code-compliant underlayments, and manufacturer-certified installation methods that preserve your warranty and protect your home when storms hit. For homeowners in Wellington's equestrian communities and estate neighborhoods, we also provide <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation</Link> reports that can significantly reduce your homeowner's insurance premiums.
+                We use code-approved fasteners and underlayments. Your warranty stays good. Your home stays safe in storms. Wellington homeowners can get <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">wind mitigation</Link> reports to lower insurance costs.
               </p>
             </div>
 
@@ -227,11 +227,11 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Wellington is unlike any other South Florida community. As the recognized "Winter Equestrian Capital of the World," it attracts high-net-worth seasonal and year-round residents who demand premium materials and meticulous workmanship. The village's upscale residential communities — including Olympia, Versailles, and Southfields — feature larger homes, <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile roofing</Link> systems, and architectural details that require experienced contractors who understand the local aesthetic and code requirements.
+                Wellington is special. It's the "Winter Equestrian Capital of the World." Wealthy owners want the best materials and careful work. Communities like Olympia, Versailles, and Southfields have big homes with <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile roofs</Link> and fine details. They need contractors who know the look and code.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                We know Wellington's building department, permit process, and inspection requirements inside and out. From the rural equestrian estates of Palm Beach Point to the Mediterranean-style homes near the Mall at Wellington Green, All Phase Construction USA has the local knowledge and licensing to handle every roofing project the right way.
+                We know Wellington's building department and permit process well. We've handled estates in Palm Beach Point and homes near the Mall at Wellington Green. We have the local knowledge to do it right.
               </p>
             </div>
 
@@ -250,7 +250,7 @@ export default function WellingtonPage() {
               <div className="mb-10">
                 <h3 className="text-2xl font-bold text-white mb-4">Roof Replacement</h3>
                 <p className="text-lg text-zinc-300 leading-relaxed mb-4">
-                  When Wellington's extreme heat, humidity, and storm exposure take their toll, a full roof replacement is often the most cost-effective long-term solution. All Phase Construction USA manages the entire <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement process</Link> — from permit pulling and material selection to installation and final inspection. We work with all major roofing systems including <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal</Link>, and <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">shingle</Link>, and our dual-license means structural repairs are handled in-house without delays or subcontractors.
+                  Heat, humidity, and storms take their toll. Full replacement is often best. We handle the full <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacement process</Link> — permits, materials, installation, and final check. We work with <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>, <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal</Link>, and <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">shingles</Link>. Our dual-license means we handle repairs in-house with no delays.
                 </p>
               </div>
 
@@ -258,7 +258,7 @@ export default function WellingtonPage() {
               <div className="mb-10">
                 <h3 className="text-2xl font-bold text-white mb-4">Emergency Repairs</h3>
                 <p className="text-lg text-zinc-300 leading-relaxed mb-4">
-                  Storm damage doesn't wait for business hours. All Phase Construction USA provides emergency roof repair services throughout Wellington and Palm Beach County. Whether you've experienced wind damage near the Wellington Environmental Preserve or a fallen limb in Binks Forest, our team responds quickly to protect your home and document damage for your insurance claim.
+                  Storm damage won't wait. We offer emergency repairs across Wellington and Palm Beach County. Wind damage near the Preserve or a fallen limb in Binks Forest? We respond fast to protect your home and document damage for insurance.
                 </p>
               </div>
 
@@ -266,7 +266,7 @@ export default function WellingtonPage() {
               <div className="mb-10">
                 <h3 className="text-2xl font-bold text-white mb-4">Professional Inspections</h3>
                 <p className="text-lg text-zinc-300 leading-relaxed mb-4">
-                  Our comprehensive <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">21-point roof inspections</Link> give Wellington homeowners the documentation they need — whether for insurance purposes, pre-purchase evaluations, or routine maintenance assessments. A thorough inspection is the first step to understanding your roof's condition and planning ahead.
+                  Our <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline transition-colors">21-point roof inspections</Link> give you what you need. For insurance, pre-purchase checks, or maintenance. An inspection is your first step. You'll know your roof's condition and plan ahead.
                 </p>
               </div>
 
@@ -274,7 +274,7 @@ export default function WellingtonPage() {
               <div className="mb-10">
                 <h3 className="text-2xl font-bold text-white mb-4">All Roof Types</h3>
                 <p className="text-lg text-zinc-300 leading-relaxed mb-4">
-                  We install and repair all major roofing systems common to Wellington's residential and commercial properties — including concrete and clay <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>, standing seam <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal</Link>, flat/low-slope systems, and architectural <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">shingles</Link>. Whatever your home or building requires, we have the crew, the licensing, and the manufacturer certifications to do it right.
+                  We handle all roof types. Concrete and clay <Link to="/tile-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">tile</Link>, standing seam <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal</Link>, flat systems, and <Link to="/shingle-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">shingles</Link>. We have the crew, licenses, and certifications to do it right.
                 </p>
               </div>
             </div>
@@ -286,11 +286,11 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Metal roofing has become an increasingly popular choice for Wellington homes, thanks to its outstanding durability, energy efficiency, and ability to withstand severe weather conditions. We offer a variety of <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal roofing options</Link> — including standing seam, corrugated panels, and metal shingles — allowing homeowners to select the perfect style and performance level for their property.
+                Metal roofing is popular in Wellington. It lasts long and saves energy. It resists bad weather. We offer many <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">metal roofing choices</Link> — standing seam, panels, and shingles. You pick the style and level you want.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed">
-                We use only high-quality materials from trusted manufacturers, ensuring your new metal roof delivers long-lasting protection and superior resistance to storm damage. Our experienced team will help you choose the best metal roofing solution to match your budget and aesthetic preferences, so you can enjoy peace of mind and enhanced curb appeal for years to come.
+                We use quality materials from trusted makers. Your new roof lasts and resists storms. Our team helps you pick the right metal roof for your budget and style. You get peace of mind and great curb appeal.
               </p>
             </div>
 
@@ -306,11 +306,11 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                We understand that Wellington businesses — from retail centers near the Mall at Wellington Green to professional offices throughout the village — need reliable roofing solutions that minimize disruption and protect their investments. Our <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial roofing</Link> services cover everything from repair and replacement to new installation and ongoing maintenance.
+                Wellington businesses need reliable roofs with minimal disruption. Retail near the Mall, offices throughout the village. Our <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial roofing</Link> covers repairs, replacements, new roofs, and maintenance.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed">
-                Our team works closely with each commercial client to develop a customized plan that fits your schedule and budget, ensuring your property remains safe and operational. With a full range of commercial roofing services and a commitment to quality workmanship, we help Wellington businesses maintain their roofs efficiently and effectively.
+                We work with each client to build a custom plan. We fit your schedule and budget. Your property stays safe and working. We help you maintain roofs well.
               </p>
             </div>
 
@@ -321,7 +321,7 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                From your initial consultation to final inspection, All Phase Construction USA makes the roofing process straightforward for Wellington homeowners and business owners. Our team conducts a thorough on-site inspection and provides a detailed estimate tailored to your specific needs. We walk you through every step — material selection, permitting, installation scheduling, and final walkthrough — keeping you informed with regular updates throughout.
+                From start to finish, we make roofing simple. We inspect your property. We give you a custom estimate. We walk you through each step. Material picks, permits, scheduling, and final checks. We keep you updated.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed">
@@ -393,7 +393,7 @@ export default function WellingtonPage() {
                 Ready to Get Started in Wellington?
               </h2>
               <p className="text-zinc-300 text-lg mb-8 max-w-2xl mx-auto">
-                Whether you're dealing with storm damage, planning a roof replacement, or simply want a professional inspection, All Phase Construction USA is ready to help. We serve all of Wellington's communities — from Olympia and Versailles to Palm Beach Point and Southfields — with the dual-licensed expertise that South Florida's most discerning homeowners trust.
+                Storm damage? Need a new roof? Want an inspection? We're ready. We serve all Wellington communities. Olympia, Versailles, Palm Beach Point, Southfields. Homeowners trust our dual-license expertise.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <Link

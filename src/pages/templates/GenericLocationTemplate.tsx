@@ -93,7 +93,7 @@ export default function GenericLocationTemplate() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  All Phase Construction USA serves {cityName} with comprehensive residential and commercial roofing services. Licensed in both Broward and Palm Beach counties, we specialize in tile, shingle, metal, and flat roofing systems designed for South Florida's climate challenges.
+                  Need a roofer in {cityName}? All Phase Construction USA is here to help. We handle homes and businesses across Broward and Palm Beach counties. Our team installs tile, shingle, metal, and flat roofs built to handle South Florida's tough weather.
                 </p>
               </div>
 
@@ -131,7 +131,7 @@ export default function GenericLocationTemplate() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Roof Repair</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  Expert repair services for tile, shingle, metal, and flat roofing systems in {cityName}.
+                  Fast repair services for tile, shingle, metal, and flat roofs in {cityName}.
                 </p>
               </Link>
 
@@ -144,7 +144,7 @@ export default function GenericLocationTemplate() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Roof Inspection</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  Comprehensive diagnostic inspections for residential and commercial properties.
+                  Full inspections for homes and businesses to find any damage.
                 </p>
               </Link>
 
@@ -157,7 +157,7 @@ export default function GenericLocationTemplate() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">New Roof Installation</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  Complete roof replacement with high-wind rated materials for Florida homes.
+                  Full roof replacement with strong materials that handle Florida winds.
                 </p>
               </Link>
 
@@ -170,7 +170,7 @@ export default function GenericLocationTemplate() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Tile Roofing</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  Concrete and clay tile installation, repair, and maintenance services.
+                  We install, repair, and care for concrete and clay tile roofs.
                 </p>
               </Link>
 
@@ -183,7 +183,7 @@ export default function GenericLocationTemplate() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Flat Roofing</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  TPO, modified bitumen, and built-up roofing for commercial properties.
+                  TPO, membrane, and built-up roofing for business buildings.
                 </p>
               </Link>
 
@@ -196,7 +196,7 @@ export default function GenericLocationTemplate() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Commercial Roofing</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  Large-scale commercial roofing projects with minimal business disruption.
+                  Big roofing jobs for businesses with minimal downtime.
                 </p>
               </Link>
             </div>
@@ -218,7 +218,7 @@ export default function GenericLocationTemplate() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Dual-County Licensing</h3>
                     <p className="text-zinc-300 text-lg leading-relaxed">
-                      Licensed and insured in both Broward and Palm Beach counties, ensuring compliance with all local building codes and regulations.
+                      We hold active licenses in both Broward and Palm Beach counties. That means your project meets every local building code and rule.
                     </p>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function GenericLocationTemplate() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Hurricane-Rated Installations</h3>
                     <p className="text-zinc-300 text-lg leading-relaxed">
-                      All roofing systems meet Florida's High Velocity Hurricane Zone requirements with proper wind uplift ratings and installation standards.
+                      Every roof we install meets Florida's strict hurricane zone standards. We use the right wind ratings and install methods to keep your home safe in a storm.
                     </p>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export default function GenericLocationTemplate() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Comprehensive Warranties</h3>
                     <p className="text-zinc-300 text-lg leading-relaxed">
-                      We provide both manufacturer warranties on materials and workmanship warranties on our installation, giving you complete peace of mind.
+                      You get two layers of protection. The maker backs the materials. We stand behind our work. That gives you total peace of mind.
                     </p>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function GenericLocationTemplate() {
                 Serving {cityName} & Surrounding Areas
               </h2>
               <p className="text-xl text-zinc-300 mb-10 leading-relaxed">
-                Based in Deerfield Beach, we provide roofing services throughout {county}. Our local presence means faster response times and familiarity with regional building requirements.
+                We're based in Deerfield Beach and serve all of {county}. Being local means we respond fast and know your area's building rules inside and out.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

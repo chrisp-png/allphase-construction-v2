@@ -25,23 +25,23 @@ export default function GenericRoofInspectionTemplate() {
   const faqItems = [
     {
       question: `What does a roof inspection in ${cityName} include?`,
-      answer: "A comprehensive roof inspection includes evaluation of roofing materials, flashing details, fastening systems, drainage, structural deck condition, and documentation of any code compliance concerns or maintenance recommendations."
+      answer: "We check your roofing materials, flashing, fasteners, and drainage. We also inspect the deck structure. You get a full report on any issues and what needs to be fixed."
     },
     {
       question: `How long does a roof inspection take in ${cityName}?`,
-      answer: "Most residential roof inspections take 45-90 minutes depending on roof size, complexity, and accessibility. Commercial inspections vary based on building size and roof system type."
+      answer: "Most home inspections take 45-90 minutes. The time depends on roof size and how easy it is to access. Commercial roofs take longer based on building size."
     },
     {
       question: "Do I need a roof inspection before selling my home?",
-      answer: `Pre-listing roof inspections in ${cityName} help identify issues before they become transaction obstacles. Many buyers request inspections, so proactive assessment can streamline the sales process.`
+      answer: `Finding problems early helps your home sale go smoothly. Many buyers ask for an inspection anyway. Getting one first puts you ahead.`
     },
     {
       question: "Will you provide a written inspection report?",
-      answer: "Yes. All inspections include a detailed written report with findings, photographic documentation, and recommendations for repairs or maintenance."
+      answer: "Yes. You get a written report with photos. It shows what we found and what work you need."
     },
     {
       question: "Can a roof inspection help with insurance claims?",
-      answer: `Yes. Professional documentation of storm damage or existing conditions can support insurance discussions. Florida-licensed contractors can also certify remaining useful life for ${county} insurance requirements.`
+      answer: `Yes. We document storm damage with photos and notes for your insurance claim. Our licensed contractors can also confirm how many years your roof should last for ${county} insurance.`
     }
   ];
 
@@ -92,7 +92,7 @@ export default function GenericRoofInspectionTemplate() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Professional roof inspections in {cityName} provide comprehensive diagnostic assessment of roofing system condition, structural integrity, and code compliance. All Phase Construction USA performs detailed visual inspections covering material condition, flashing details, fastening systems, drainage patterns, and potential areas of concern. Every inspection includes photographic documentation and a written report suitable for real estate transactions, insurance requirements, or pre-repair planning.
+                  A roof inspection tells you exactly what shape your roof is in. Our team checks every part — from the materials and flashing to the structure and drainage. We take photos and write up a full report. You can use it for home sales, insurance needs, or to plan repairs.
                 </p>
               </div>
 
@@ -128,7 +128,7 @@ export default function GenericRoofInspectionTemplate() {
                     Roofing Material Assessment
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Evaluation of material condition, degradation patterns, fastening integrity, and remaining service life based on exposure and manufacturer specifications.
+                    We check the condition of your roofing materials. This includes wear patterns, how well the fasteners hold, and how much life your roof has left.
                   </p>
                 </div>
 
@@ -138,7 +138,7 @@ export default function GenericRoofInspectionTemplate() {
                     Flashing & Detail Evaluation
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Assessment of roof-to-wall terminations, valley flashings, penetrations, and all transition details for water-tightness and code compliance.
+                    We inspect all the seams and edges where your roof meets walls, valleys, and vents. These spots are where leaks start, so we check them closely.
                   </p>
                 </div>
 
@@ -148,7 +148,7 @@ export default function GenericRoofInspectionTemplate() {
                     Structural & Deck Inspection
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Evaluation of roof deck integrity, structural support adequacy, and identification of any compromised decking requiring reinforcement.
+                    We look at the wood decking under your roof. If any boards are soft, warped, or weak, we flag them so they can be fixed.
                   </p>
                 </div>
 
@@ -158,7 +158,7 @@ export default function GenericRoofInspectionTemplate() {
                     Drainage & Water Management
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Review of drainage systems, identification of ponding areas, and assessment of gutter and downspout functionality.
+                    We check your gutters, downspouts, and drainage flow. If water pools anywhere on the roof, we'll find it.
                   </p>
                 </div>
 
@@ -168,7 +168,7 @@ export default function GenericRoofInspectionTemplate() {
                     Photographic Documentation
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Comprehensive photographic record of conditions, deficiencies, and areas of concern suitable for insurance, real estate, or repair planning purposes.
+                    We photograph every issue we find. You get a visual record you can share with your insurer, realtor, or repair contractor.
                   </p>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function GenericRoofInspectionTemplate() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Real Estate Transactions</h3>
                       <p className="text-zinc-300">
-                        Pre-purchase inspections identify deferred maintenance and estimate remaining service life. Seller inspections document condition before listing.
+                        Before you buy a home, an inspection shows what work has been put off and how long the roof should last. It also shows sellers what they need to know.
                       </p>
                     </div>
                   </div>
@@ -202,7 +202,7 @@ export default function GenericRoofInspectionTemplate() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Insurance Requirements</h3>
                       <p className="text-zinc-300">
-                        Many insurers require roof inspections for policy renewals, especially for roofs 15+ years old. Licensed contractors can certify remaining useful life.
+                        Many insurers want a roof inspection before they renew your policy. This is common for roofs over 15 years old. A licensed contractor can certify how many years your roof has left.
                       </p>
                     </div>
                   </div>
@@ -214,7 +214,7 @@ export default function GenericRoofInspectionTemplate() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Storm Damage Assessment</h3>
                       <p className="text-zinc-300">
-                        Post-storm inspections document wind and hail damage for insurance claims and determine if repairs trigger permit thresholds.
+                        After a storm, we document wind and hail damage for your insurance claim. We also check if the repairs need a permit.
                       </p>
                     </div>
                   </div>

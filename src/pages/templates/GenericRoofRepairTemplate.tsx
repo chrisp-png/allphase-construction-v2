@@ -30,19 +30,19 @@ export default function GenericRoofRepairTemplate() {
   const faqItems = [
     {
       question: `How do I know if my ${cityName} roof needs repair or replacement?`,
-      answer: "A diagnostic inspection evaluates damage extent, system age, and code thresholds to determine whether repair is feasible."
+      answer: "We inspect the damage, check your roof's age, and review code rules. Then we tell you if a repair will hold up or if you need a new roof."
     },
     {
       question: `Are roof repairs in ${cityName} required to meet current building codes?`,
-      answer: "Yes. Repairs must comply with the Florida Building Code and any applicable local requirements at the time of work."
+      answer: "Yes. Repairs must follow the Florida Building Code and any local rules that apply at the time of work."
     },
     {
       question: "Can cracked or slipped tile roofs be repaired without full replacement?",
-      answer: "In many cases, individual tiles and localized underlayment sections can be repaired if surrounding materials remain serviceable."
+      answer: "Yes, in many cases. We can repair single tiles and small underlayment areas if the rest of the roof is in good shape."
     },
     {
       question: "Will my HOA need to approve roof repairs?",
-      answer: `Many ${cityName} HOAs require review or approval, especially for visible repairs. Coordination is often part of the process.`
+      answer: `Many ${cityName} HOAs require approval, especially for visible work. We can help with the HOA process.`
     },
     {
       question: "How does roof repair affect insurance claims?",
@@ -95,7 +95,7 @@ export default function GenericRoofRepairTemplate() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Homes and commercial properties in {cityName} face intense UV exposure, seasonal storm activity, and long-term heat cycling that can accelerate roof wear. All Phase Construction USA provides inspection-first roof repair services designed to identify the root cause of leaks, fastener failure, or material deterioration before recommending a repair approach. Every project begins with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link> to assess conditions under the Florida Building Code and determine whether targeted repair is appropriate versus broader corrective work.
+                  Roofs in {cityName} take a beating. Strong sun, heavy storms, and year-round heat all speed up wear and tear. That's why we start every repair with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link>. We find the real cause of the problem — whether it's a leak, loose fasteners, or worn materials. Then we give you a clear plan: fix the issue or replace the roof.
                 </p>
               </div>
 
@@ -131,7 +131,7 @@ export default function GenericRoofRepairTemplate() {
                     Tile Roof Repairs
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Cracked, slipped, or wind-lifted tile is repaired by removing affected units, inspecting underlayment integrity, and reinstalling matching replacement tiles. If underlayment deterioration is discovered, localized sections can be replaced during the repair.
+                    We remove cracked, slipped, or wind-lifted tiles and check the layer beneath. Then we install matching tiles in their place. If the underlayment is worn, we replace that section too.
                   </p>
                 </div>
 
@@ -141,7 +141,7 @@ export default function GenericRoofRepairTemplate() {
                     Flat Roof Leak Repairs
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Modified bitumen, TPO, or built-up roofing systems are repaired by identifying membrane breaches, removing damaged sections, and heat-welding or torch-applying patching materials that restore waterproofing continuity.
+                    We find where the membrane has failed and cut out the damaged area. Then we heat-weld or torch-apply new material to seal it up. This works for TPO, modified bitumen, and built-up flat roofs.
                   </p>
                 </div>
 
@@ -151,7 +151,7 @@ export default function GenericRoofRepairTemplate() {
                     Shingle Roof Repairs
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Damaged shingles are removed and replaced with matching units. If wind-driven rain has compromised decking or underlayment, affected areas are dried and reinforced before new shingles are installed.
+                    We pull out the damaged shingles and put in new ones that match. If rain got through and soaked the wood deck or underlayment, we dry and reinforce those areas first.
                   </p>
                 </div>
 
@@ -161,7 +161,7 @@ export default function GenericRoofRepairTemplate() {
                     Metal Roof Repairs
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Panel fastener failure, sealant breakdown, or localized corrosion is addressed by re-securing panels, replacing damaged fasteners, and resealing penetrations with UV-stable elastomeric compounds.
+                    Loose panels, failed sealant, or rust spots — we fix them all. We re-secure the panels, swap out bad fasteners, and reseal every opening with flexible, UV-resistant sealant.
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function GenericRoofRepairTemplate() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Extent of Damage</h3>
                     <p className="text-zinc-300">
-                      If damage is localized (under 25% of the roof surface), repair is often feasible. Widespread deterioration typically warrants full replacement.
+                      If less than 25% of your roof is damaged, a repair usually makes sense. But if the damage is spread across the whole roof, a full replacement is the better call.
                     </p>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function GenericRoofRepairTemplate() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Age of Existing System</h3>
                     <p className="text-zinc-300">
-                      Repairs on roofs beyond their expected service life may not provide long-term value compared to replacement.
+                      If your roof is past its expected lifespan, repairs may not last long. A new roof could save you money over time.
                     </p>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function GenericRoofRepairTemplate() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Code Compliance Thresholds</h3>
                     <p className="text-zinc-300">
-                      Florida Building Code may require bringing the entire roof to current standards if repair area exceeds threshold percentages.
+                      Florida law has a rule: if the repair covers too large an area, you must bring the whole roof up to current code.
                     </p>
                   </div>
                 </div>
@@ -212,7 +212,7 @@ export default function GenericRoofRepairTemplate() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Structural Integrity</h3>
                     <p className="text-zinc-300">
-                      If decking is compromised over large areas, replacement may be more cost-effective than piecemeal structural reinforcement.
+                      If the wood decking is damaged across a big area, it's often cheaper to replace the roof than to patch it piece by piece.
                     </p>
                   </div>
                 </div>
