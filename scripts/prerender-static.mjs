@@ -2008,7 +2008,9 @@ ${blogCrawlerLinks}
     { path: '/about-us', title: 'About All Phase Construction' },
     { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' },
     { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
-    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' }
+    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' },
+    { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
+    { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {

@@ -10,7 +10,7 @@ const faqData = [
   },
   {
     question: 'How do I verify a Florida roofing contractor\'s license?',
-    answer: 'Visit the Florida DBPR website at myfloridalicense.com and search by name or license number. Look for an "Active" status, verify their insurance is current, and check for any disciplinary actions. For All Phase Construction USA, our Certified Roofing Contractor license is CCC-1331464 and our Certified General Contractor license is CGC-1526236 — both verifiable on the DBPR database.'
+    answer: 'Visit the Florida DBPR website at myfloridalicense.com/wl11.asp and search by name or license number. Look for an "Active" status, verify their insurance is current, and check for any disciplinary actions. For All Phase Construction USA, our Certified Roofing Contractor license is CCC-1331464 and our Certified General Contractor license is CGC-1526236 — both verifiable on the DBPR database.'
   },
   {
     question: 'What is a CCC license vs a CGC license in Florida?',
@@ -134,7 +134,7 @@ export default function LicensedRoofingContractorPage() {
                 <div className="flex-shrink-0 w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center text-white font-bold">1</div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Visit myfloridalicense.com</h3>
-                  <p className="text-zinc-400 leading-relaxed">Go to the DBPR license verification page. You can search by contractor name, company name, or license number. This is the only authoritative source — do not rely on a contractor's word or printed materials alone.</p>
+                  <p className="text-zinc-400 leading-relaxed">Go to the <a href="https://www.myfloridalicense.com/wl11.asp?SID&mode=0" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline transition-colors">DBPR license verification page</a>. You can search by contractor name, company name, or license number. This is the only authoritative source — do not rely on a contractor's word or printed materials alone.</p>
                 </div>
               </div>
               <div className="flex gap-4">
