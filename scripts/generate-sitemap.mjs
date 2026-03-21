@@ -242,7 +242,10 @@ const LOCATION_MONEY_PAGES = [
 
 const LOCATION_SUB_PAGES = [
   { path: '/locations/deerfield-beach/best-roofers-deerfield-beach', label: 'Best Roofers in Deerfield Beach' },
-  { path: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Best Roofers in Fort Lauderdale' }
+  { path: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Best Roofers in Fort Lauderdale' },
+  { path: '/locations/boca-raton/best-roofers-boca-raton', label: 'Best Roofers in Boca Raton' },
+  { path: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'Best Roofers in West Palm Beach' },
+  { path: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' }
 ];
 
 console.log('Generating Canonical City Pages...\n');
