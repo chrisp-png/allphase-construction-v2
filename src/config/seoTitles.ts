@@ -193,6 +193,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: '2026 Broward County roof replacement costs: shingle, tile & metal pricing, Florida Building Code requirements & how to maximize insurance discounts.',
     canonical: 'https://allphaseconstructionfl.com/blog/roof-replacement-cost-broward-county-2026'
   },
+  '/blog/roof-replacement-cost-palm-beach-county-2026': {
+    title: 'Roof Replacement Cost Palm Beach County 2026 | All Phase',
+    description: '2026 Palm Beach County roof replacement costs: shingle, tile & metal pricing, wind-code requirements & how to maximize insurance discounts.',
+    canonical: 'https://allphaseconstructionfl.com/blog/roof-replacement-cost-palm-beach-county-2026'
+  },
   '/blog/certified-vs-licensed-roofer-florida': {
     title: 'Certified vs. Licensed Roofer in Florida | All Phase',
     description: 'Certified vs. licensed roofer in Florida: what each credential means, how to verify on DBPR & why both matter when hiring a roofing contractor.',
