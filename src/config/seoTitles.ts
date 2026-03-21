@@ -28,7 +28,7 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'Roof Repair & Installation | Palm Beach & Broward County | All Phase Construction USA',
+    title: 'South Florida Roofing Contractor | All Phase',
     description: 'South Florida roofing contractor — dual-licensed, HVHZ-certified, 2,500+ roofs since 2005. Free inspection. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
@@ -288,14 +288,19 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'TPO, PVC, EPDM & modified bitumen flat roofing in South Florida. Residential & commercial. Dual-licensed CCC/CGC. Free assessment.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
+  '/single-ply-roofing': {
+    title: 'Single-Ply Roofing Systems | TPO, PVC, EPDM | All Phase',
+    description: 'Commercial single-ply roofing in South Florida. TPO, PVC & EPDM membrane systems. Certified installers for IB Roof, Fibertite & more.',
+    canonical: 'https://allphaseconstructionfl.com/single-ply-roofing'
+  },
     '/roof-repair': {
     title: 'Roof Repair South Florida | Leaks & Storm Damage | All Phase',
         description: 'Expert roof repair in South Florida — leak diagnosis, emergency tarping, flashing & wind damage. Dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/licensed-roofing-contractor': {
-    title: 'Licensed Roofing Contractor FL | Verify Before You Hire',
-    description: 'How to verify a licensed roofing contractor in Florida. CCC vs CGC licenses, DBPR lookup & insurance requirements for South Florida.',
+    title: 'Licensed Roofing Contractor FL | CCC & CGC | All Phase',
+    description: 'Florida dual-licensed roofing and general contractor. CCC-1331464 + CGC-1526236. HVHZ-certified, serving Broward & Palm Beach since 2005.',
     canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
   },
     '/roofing-services': {

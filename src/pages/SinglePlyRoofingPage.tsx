@@ -27,11 +27,11 @@ import {
 export default function SinglePlyRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'TPO & PVC Roofing South Florida | All Phase';
+    document.title = 'Single-Ply Roofing Systems | TPO, PVC, EPDM | All Phase';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Commercial single-ply roofing in South Florida. TPO and PVC membrane systems designed for HVHZ, heat, wind, and long-term durability. Expert installation with welded seams. Free assessment.');
+      metaDescription.setAttribute('content', 'Commercial single-ply roofing in South Florida. TPO, PVC & EPDM membrane systems. Certified installers for IB Roof, Fibertite & more.');
     }
 
     const serviceScript = document.createElement('script');

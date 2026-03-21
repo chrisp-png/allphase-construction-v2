@@ -277,8 +277,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # trailing slash catch-all removed â was causing root redirect loop
 
 # Sitemap canonicalization
-/sitemap/  /sitemap  301!
-/sitemap.html  /sitemap  301!
+/sitemap/  /sitemap.xml  301!
+/sitemap.html  /sitemap.xml  301!
+/sitemap  /sitemap.xml  301!
 # Ghost URLs bleeding GSC impressions
 /ventilation/  /residential-roofing  301!
 /publications/  /blog  301!
@@ -288,7 +289,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /delray-beach  /locations/delray-beach  301!
 /loxahatchee  /locations/west-palm-beach  301!
 /residential-roofing/roof-replacement-process  /roof-replacement-process  301!
-/sitemap  /sitemap.xml  301!
 
 /blog/*/ /blog/:splat 301!
 

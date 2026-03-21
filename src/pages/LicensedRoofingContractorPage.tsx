@@ -34,8 +34,8 @@ export default function LicensedRoofingContractorPage() {
   return (
     <>
       <SEO
-        title="Licensed Roofing Contractor South Florida | Verify Before You Hire"
-        description="How to verify a licensed roofing contractor in Florida. CCC vs CGC licenses, DBPR lookup, insurance requirements, and why licensing matters in South Florida's hurricane zone."
+        title="Licensed Roofing Contractor FL | CCC & CGC | All Phase"
+        description="Florida dual-licensed roofing and general contractor. CCC-1331464 + CGC-1526236. HVHZ-certified, serving Broward & Palm Beach since 2005."
         canonicalUrl="https://allphaseconstructionfl.com/licensed-roofing-contractor"
       />
       <Helmet>
