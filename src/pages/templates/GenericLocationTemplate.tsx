@@ -218,7 +218,7 @@ export default function GenericLocationTemplate() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Dual-County Licensing</h3>
                     <p className="text-zinc-300 text-lg leading-relaxed">
-                      We hold active licenses in both Broward and Palm Beach counties. That means your project meets every local building code and rule.
+                      We hold active licenses in both Broward and Palm Beach counties. You can <a href="https://www.myfloridalicense.com/open-data/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 underline transition-colors">verify our licenses on MyFloridaLicense.com</a>. That means your project meets every local building code and rule.
                     </p>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function GenericLocationTemplate() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Hurricane-Rated Installations</h3>
                     <p className="text-zinc-300 text-lg leading-relaxed">
-                      Every roof we install meets Florida's strict hurricane zone standards. We use the right wind ratings and install methods to keep your home safe in a storm.
+                      Every roof we install meets the <a href="https://www.floridabuilding.org/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 underline transition-colors">Florida Building Code</a> hurricane zone standards. We use the right wind ratings and install methods to keep your home safe in a storm.
                     </p>
                   </div>
                 </div>

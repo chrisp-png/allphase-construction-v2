@@ -353,7 +353,7 @@ export default function MetalRoofingPage() {
 
             <div className="space-y-4 text-zinc-300">
               <p>
-                Mechanically seamed panels are crimped together using a power seaming tool — either single-lock (one fold) or double-lock (two folds). The seams are physically folded together, creating an interlocking connection that cannot be pulled apart by wind.
+                Mechanically seamed panels are crimped together using a power seaming tool — either single-lock (one fold) or double-lock (two folds). The seams are physically folded together, creating an interlocking connection that cannot be pulled apart by wind. This approach is recommended by the <a href="https://metalroofing.com/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline transition-colors">Metal Roofing Alliance</a> for hurricane-prone regions.
               </p>
 
               <div className="bg-black/40 border border-zinc-800 rounded-lg p-6">
@@ -1004,7 +1004,7 @@ export default function MetalRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Thermal Movement Expertise</h3>
               <p className="text-zinc-400 text-sm">
-                We design for South Florida's heat. Floating clip systems allow your roof to expand and contract without damage.
+                We design for South Florida's heat. Floating clip systems allow your roof to expand and contract without damage. <a href="https://www.energystar.gov/products/building_products/roof_products" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline transition-colors">Energy Star</a>-certified metal roofing options can also reduce cooling costs.
               </p>
             </div>
 

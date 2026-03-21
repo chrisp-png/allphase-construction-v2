@@ -95,7 +95,7 @@ export default function GenericRoofRepairTemplate() {
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">
                 <p>
-                  Roofs in {cityName} take a beating. Strong sun, heavy storms, and year-round heat all speed up wear and tear. That's why we start every repair with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link>. We find the real cause of the problem — whether it's a leak, loose fasteners, or worn materials. Then we give you a clear plan: fix the issue or replace the roof.
+                  Roofs in {cityName} take a beating. Strong sun, heavy storms, and year-round heat all speed up wear and tear. That's why we start every repair with a <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic roof inspection</Link>. We find the real cause of the problem — whether it's a leak, loose fasteners, or worn materials. Then we give you a clear plan based on <a href="https://www.floridabuilding.org/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 underline transition-colors">Florida Building Code</a> standards: fix the issue or replace the roof.
                 </p>
               </div>
 
@@ -202,7 +202,7 @@ export default function GenericRoofRepairTemplate() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Code Compliance Thresholds</h3>
                     <p className="text-zinc-300">
-                      Florida law has a rule: if the repair covers too large an area, you must bring the whole roof up to current code.
+                      The <a href="https://www.floridabuilding.org/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 underline transition-colors">Florida Building Code</a> has a rule: if the repair covers too large an area, you must bring the whole roof up to current code.
                     </p>
                   </div>
                 </div>

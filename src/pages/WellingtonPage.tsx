@@ -161,7 +161,7 @@ export default function WellingtonPage() {
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                We're here for the long haul. We want you happy on every project. With over 20 years in Wellington, we hold two licenses. That's a Florida Certified Roofing Contractor license (CCC-1331464) and a CGC license (CGC-1526236). This gives us roofing and structural expertise other contractors can't match.
+                We're here for the long haul. We want you happy on every project. With over 20 years in Wellington, we hold two <a href="https://www.myfloridalicense.com/open-data/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline transition-colors">state-verified licenses</a>. That's a Florida Certified Roofing Contractor license (CCC-1331464) and a CGC license (CGC-1526236). This gives us roofing and structural expertise other contractors can't match.
               </p>
             </div>
 
@@ -212,7 +212,7 @@ export default function WellingtonPage() {
               </h2>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Wellington is in Palm Beach County's High-Wind Zone. Roofs must meet strict wind codes. Every roof we install handles strong winds and impacts. You'll be ready for hurricane season.
+                Wellington is in Palm Beach County's High-Wind Zone. Roofs must meet strict <a href="https://www.floridabuilding.org/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline transition-colors">Florida Building Code</a> wind standards. Every roof we install handles strong winds and impacts. You'll be ready for hurricane season.
               </p>
 
               <p className="text-lg text-zinc-300 leading-relaxed mb-6">

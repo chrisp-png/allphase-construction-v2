@@ -202,7 +202,7 @@ export default function GenericRoofInspectionTemplate() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Insurance Requirements</h3>
                       <p className="text-zinc-300">
-                        Many insurers want a roof inspection before they renew your policy. This is common for roofs over 15 years old. A licensed contractor can certify how many years your roof has left.
+                        Many insurers want a roof inspection before they renew your policy. This is common for roofs over 15 years old. A <a href="https://www.myfloridalicense.com/open-data/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 underline transition-colors">Florida-licensed contractor</a> can certify how many years your roof has left.
                       </p>
                     </div>
                   </div>

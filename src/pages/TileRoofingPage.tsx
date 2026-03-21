@@ -964,7 +964,7 @@ export default function TileRoofingPage() {
               <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified" width="80" height="80" loading="lazy" decoding="async" />
               <div>
                 <h3 className="text-white font-bold text-base mb-1">TRI Alliance Florida High Wind Certified</h3>
-                <p className="text-gray-400 text-sm">All Phase Construction USA holds the TRI Alliance Florida High Wind Certification — the tile roofing industry's highest credential for hurricane-zone installation. Certified through February 2028, our team installs concrete and clay tile to the code-approved standards of the Tile Roofing Industry Alliance, founded in 1971.</p>
+                <p className="text-gray-400 text-sm">All Phase Construction USA holds the TRI Alliance Florida High Wind Certification — the tile roofing industry's highest credential for hurricane-zone installation. Certified through February 2028, our team installs concrete and clay tile to the code-approved standards of the <a href="https://tileroofing.org/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline transition-colors">Tile Roofing Industry Alliance</a>, founded in 1971.</p>
               </div>
             </div>
 
@@ -1102,7 +1102,7 @@ export default function TileRoofingPage() {
               },
               {
                 q: "What's different about tile roofing in the HVHZ (High Velocity Hurricane Zone)?",
-                a: "Broward and Miami-Dade counties have the strictest roofing codes in America. Tile attachment methods, foam specifications, product approvals, underlayment standards, and inspection requirements are all more demanding than the rest of Florida. A roof that passes inspection elsewhere may fail here."
+                a: "Broward and Miami-Dade counties have the strictest roofing codes in America. Tile attachment methods, foam specifications, product approvals, underlayment standards, and inspection requirements are all more demanding than the rest of Florida. We install all tile roofs to <a href=\"https://www.floridabuilding.org/\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"text-red-500 hover:text-red-400 underline transition-colors\">Florida Building Code</a> standards. A roof that passes inspection elsewhere may fail here."
               },
               {
                 q: "How do I know if my tile roof has proper flashings?",
