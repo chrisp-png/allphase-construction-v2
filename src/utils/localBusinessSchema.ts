@@ -172,10 +172,10 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
 
     // Same as link
     sameAs: [
-      'https://www.facebook.com/allphaseconstructionusa',
-      'https://www.instagram.com/allphaseconstructionusa',
-      'https://www.linkedin.com/company/allphaseconstructionusa',
-      'https://www.youtube.com/@allphaseconstructionusa'
+      'https://www.facebook.com/AllPhaseConstructionUsA',
+      'https://www.instagram.com/all_phase_construction_usa/',
+      'https://www.linkedin.com/company/all-phase-construction-usa-llc',
+      'https://www.youtube.com/@allphaseconstructionusa5626'
     ]
   };
 }

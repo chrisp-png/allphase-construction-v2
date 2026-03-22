@@ -141,6 +141,9 @@ export function generateDeerfieldBeachSchema(): object {
     ],
     "sameAs": [
       "https://www.allphaseconstructionfl.com/",
+      "https://www.facebook.com/AllPhaseConstructionUsA",
+      "https://www.instagram.com/all_phase_construction_usa/",
+      "https://www.linkedin.com/company/all-phase-construction-usa-llc",
       "https://www.youtube.com/@allphaseconstructionusa5626",
       "https://share.google/GoLG8dytlgHgXVjKK"
     ]

@@ -192,10 +192,10 @@ export default function AboutPage() {
       }
     ],
     sameAs: [
-      'https://www.facebook.com/allphaseconstructionusa',
-      'https://www.instagram.com/allphaseconstructionusa',
-      'https://www.linkedin.com/company/allphaseconstructionusa',
-      'https://www.youtube.com/@allphaseconstructionusa',
+      'https://www.facebook.com/AllPhaseConstructionUsA',
+      'https://www.instagram.com/all_phase_construction_usa/',
+      'https://www.linkedin.com/company/all-phase-construction-usa-llc',
+      'https://www.youtube.com/@allphaseconstructionusa5626',
       'https://www.floridaroof.com/ALL-PHASE-CONSTRUCTION-USA-LLC-10-1476780.html',
       'https://www.expertise.com/home-improvement/roofing/florida/deerfield-beach'
     ],

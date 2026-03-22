@@ -1255,6 +1255,9 @@ function generateDeerfieldBeachSchema() {
     ],
     "sameAs": [
       "https://www.allphaseconstructionfl.com/",
+      "https://www.facebook.com/AllPhaseConstructionUsA",
+      "https://www.instagram.com/all_phase_construction_usa/",
+      "https://www.linkedin.com/company/all-phase-construction-usa-llc",
       "https://www.youtube.com/@allphaseconstructionusa5626",
       "https://share.google/GoLG8dytlgHgXVjKK"
     ]
@@ -1386,10 +1389,10 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified General Contractor — CGC-1526236', recognizedBy: { '@type': 'Organization', name: 'Florida DBPR' } }
     ],
     sameAs: [
-      'https://www.facebook.com/allphaseconstructionusa',
-      'https://www.instagram.com/allphaseconstructionusa',
-      'https://www.linkedin.com/company/allphaseconstructionusa',
-      'https://www.youtube.com/@allphaseconstructionusa',
+      'https://www.facebook.com/AllPhaseConstructionUsA',
+      'https://www.instagram.com/all_phase_construction_usa/',
+      'https://www.linkedin.com/company/all-phase-construction-usa-llc',
+      'https://www.youtube.com/@allphaseconstructionusa5626',
       'https://maps.app.goo.gl/VgpBphe5vYY8yuow7',
       'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach-2',
       'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640',
