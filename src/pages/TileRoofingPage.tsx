@@ -26,7 +26,7 @@ import {
 import SEO from '../components/SEO';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
-import { generateFAQSchema, generateBreadcrumbSchema } from '../utils/enhancedSchema';
+import { generateBreadcrumbSchema } from '../utils/enhancedSchema';
 import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function TileRoofingPage() {
@@ -47,14 +47,7 @@ export default function TileRoofingPage() {
     pageUrl
   );
 
-  // FAQ Schema for rich snippets
-  const faqSchema = generateFAQSchema([
-    { question: "How long does a tile roof last in Florida?", answer: "Tile itself can last 50-100 years (clay) or 30-50 years (concrete). However, the underlayment typically needs replacement every 20-25 years — and roofs installed without proper flashings often fail much earlier. With proper flashings, correct foam application, and quality installation, your tile roof should last 50+ years before needing major work." },
-    { question: "Why do so many tile roofs in Florida leak within 10-15 years?", answer: "The vast majority of tile roofs in Florida are installed without adequate flashings. Roofers rely on underlayment alone to keep water out, but that was never its intended purpose. Without flashings directing water away from vulnerable areas, the underlayment breaks down prematurely." },
-    { question: "What is foam adhesive and why does it matter?", answer: "Foam adhesive (polyurethane foam) is used to attach tiles to the roof. The size of each foam patty and the application pattern directly determine your roof's wind rating. The same tile can be rated for 100 mph or 225 mph depending on how much foam is used." },
-    { question: "What's the difference between concrete and clay tile?", answer: "Clay tiles are more expensive but last longer (50-100 years vs. 30-50), retain color better, and absorb less water. Concrete tiles are more affordable and come in more profile options. Both require the same attention to flashings, foam adhesive, and installation quality." },
-    { question: "How much does a tile roof cost in South Florida?", answer: "Tile roofs typically range from $15,000 to $50,000+ depending on size, tile type, complexity, and detail work required. Roofs with proper flashings and documented foam application cost more initially but last significantly longer and perform better in storms." }
-  ]);
+  // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
 
   // Breadcrumb Schema
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -62,8 +55,8 @@ export default function TileRoofingPage() {
     { name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' }
   ]);
 
-  // Combined schemas
-  const combinedSchema = [localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema];
+  // Combined schemas (FAQ excluded — injected by prerender at build time)
+  const combinedSchema = [localBusinessSchema, serviceSchema, breadcrumbSchema];
 
   return (
     <>

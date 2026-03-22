@@ -27,7 +27,7 @@ import {
   Star,
   BookOpen
 } from 'lucide-react';
-import { generateFAQSchema, generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
+import { generateBreadcrumbSchema, injectMultipleSchemas } from '../utils/enhancedSchema';
 import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seoSchemas';
 
 export default function CommercialRoofingPage() {
@@ -53,14 +53,7 @@ export default function CommercialRoofingPage() {
       pageUrl
     );
 
-    // FAQ Schema for rich snippets
-    const faqSchema = generateFAQSchema([
-      { question: "What is the High Velocity Hurricane Zone and why does it matter?", answer: "The HVHZ is a special building code designation covering Miami-Dade and Broward counties — the only two counties in Florida with this classification. It requires stricter product approvals, installation methods, and inspections for all roofing work. Materials must be tested for winds exceeding 175 mph." },
-      { question: "How does the My Safe Florida Condo program work?", answer: "The My Safe Florida Condominium Pilot Program provides grant funding to eligible condo associations for hurricane mitigation improvements, including roof work. The state contributes $2 for every $1 your association spends, up to $175,000 per association." },
-      { question: "How long does a commercial roof last in Florida?", answer: "It depends on the system and maintenance. TPO/PVC membranes typically last 15-30 years, modified bitumen 15-25 years, metal roofs 40-70 years, and tile roofs 30-50+ years. Florida's intense sun, humidity, and hurricane exposure can shorten these lifespans without proper maintenance." },
-      { question: "Do you work with property management companies?", answer: "Absolutely. We work directly with property managers, providing detailed proposals for board review, coordinating around resident schedules, and delivering the documentation you need for reserve studies, insurance, and compliance records." },
-      { question: "What warranties do you offer on commercial roofing?", answer: "Warranties depend on the roofing system and manufacturer. Our manufacturer certifications (Platinum/Master level) often qualify your building for enhanced warranties — sometimes up to 25-30 years with full coverage." }
-    ]);
+    // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
 
     // Breadcrumb Schema
     const breadcrumbSchema = generateBreadcrumbSchema([
@@ -68,8 +61,8 @@ export default function CommercialRoofingPage() {
       { name: 'Commercial Roofing', url: 'https://allphaseconstructionfl.com/commercial-roofing' }
     ]);
 
-    // Inject all schemas
-    const cleanup = injectMultipleSchemas([localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema]);
+    // Inject all schemas (FAQ excluded — injected by prerender at build time)
+    const cleanup = injectMultipleSchemas([localBusinessSchema, serviceSchema, breadcrumbSchema]);
 
     return cleanup;
   }, []);

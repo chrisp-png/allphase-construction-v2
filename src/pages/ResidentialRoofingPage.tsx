@@ -20,7 +20,7 @@ import {
 import InternalLinksBlock from '../components/InternalLinksBlock';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
-import { generateLocalBusinessSchema, generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
+import { generateLocalBusinessSchema, generateServiceSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
 
 export default function ResidentialRoofingPage() {
   useEffect(() => {
@@ -63,6 +63,7 @@ export default function ResidentialRoofingPage() {
     }
   ];
 
+  // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
   const schemas = [
     generateLocalBusinessSchema(canonicalUrl),
     generateServiceSchema(
@@ -70,7 +71,6 @@ export default function ResidentialRoofingPage() {
       'Complete residential roof replacement and installation for single-family homes, townhomes, and low-rise residential properties throughout South Florida. All material types available with HVHZ compliance.',
       canonicalUrl
     ),
-    generateFAQPageSchema(faqs),
     generateBreadcrumbSchema([
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
       { name: 'Residential Roofing', url: canonicalUrl }

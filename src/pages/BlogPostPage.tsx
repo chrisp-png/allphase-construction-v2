@@ -426,35 +426,7 @@ export default function BlogPostPage() {
   };
 
 
-  const getFaqPageSchema = () => {
-    if (!post || !post.faqs || post.faqs.length === 0) return null;
-    // Skip if a FAQPage schema already exists in the document head (from prerender)
-    if (typeof document !== 'undefined') {
-      const existing = document.querySelectorAll('script[type="application/ld+json"]');
-      for (const el of existing) {
-        try {
-          const parsed = JSON.parse(el.textContent || '');
-          if (parsed['@type'] === 'FAQPage') return null;
-          if (Array.isArray(parsed) && parsed.some(s => s['@type'] === 'FAQPage')) return null;
-        } catch (e) { /* ignore */ }
-      }
-    }
-
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: post.faqs.map(faq => ({
-        '@type': 'Question',
-        name: faq.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.answer
-        }
-      }))
-    };
-
-    return schema;
-  };
+  // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
 
   if (loading) {
     return (
@@ -492,13 +464,6 @@ export default function BlogPostPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema()) }}
-        />
-      )}
-
-      {getFaqPageSchema() && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqPageSchema()) }}
         />
       )}
 

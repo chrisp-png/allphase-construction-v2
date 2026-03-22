@@ -23,7 +23,7 @@ import { MapPin, ArrowRight, Phone, Mail, Calculator, Award, ChevronRight, Shiel
 import NoIndexMeta from '../../components/NoIndexMeta';
 import InternalLinksBlock from '../../components/InternalLinksBlock';
 import { CITY_COORDINATES } from '../../data/cityCoordinates';
-import { generateLocalBusinessSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '../../utils/seoSchemas';
+import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../utils/seoSchemas';
 import { getCityServiceAreaSEO } from '../../config/cityServiceAreaSEO';
 
 export default function ServiceAreaPage() {
@@ -210,9 +210,9 @@ export default function ServiceAreaPage() {
   ];
   const isPriorityCity = citySlug ? priorityCities.includes(citySlug) : false;
 
+  // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
   const schemas = finalCity ? [
     generateLocalBusinessSchema('https://allphaseconstructionfl.com'),
-    generateFAQPageSchema(cityFAQs),
     generateBreadcrumbSchema([
       { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
       { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
