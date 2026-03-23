@@ -12,6 +12,7 @@ export const EXTERNAL_LINKS = {
   YOUTUBE: 'https://www.youtube.com/@allphaseconstructionusa5626',
   LINKEDIN: 'https://www.linkedin.com/company/all-phase-construction-usa-llc',
   TIKTOK: 'https://www.tiktok.com/@allphaseusa',
+  X_TWITTER: 'https://x.com/AllPhaseUSALLC',
   // Authority / citation links for SEO E-E-A-T signals
   GAF_PROFILE: 'https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381',
   TRI_DIRECTORY: 'https://web.tileroofing.org/atlas/directory/results?PageSize=20&PageNumber=1&Keywords=all%20phase%20construction%20usa',
