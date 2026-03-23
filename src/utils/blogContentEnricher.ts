@@ -236,7 +236,7 @@ export function enrichBlogContent(htmlContent: string, currentSlug?: string): st
         if (isInsideProtectedTag(enriched, matchIndex)) continue;
 
         // Build the replacement link
-        const link = `<a href="${rule.href}" class="text-red-600 hover:text-red-500 underline transition-colors">${matchedText}</a>`;
+        const link = `<a href="${rule.href}" class="text-white hover:text-gray-300 underline transition-colors">${matchedText}</a>`;
 
         // Replace this specific occurrence
         enriched = enriched.substring(0, matchIndex) + link + enriched.substring(matchIndex + matchedText.length);

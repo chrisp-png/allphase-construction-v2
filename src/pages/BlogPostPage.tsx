@@ -524,7 +524,7 @@ export default function BlogPostPage() {
             </div>
 
             <div
-              className="prose prose-lg prose-invert max-w-none prose-headings:font-bold prose-headings:text-white prose-p:text-gray-200 prose-li:text-gray-200 prose-strong:text-white prose-a:text-red-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-red-400 prose-img:rounded-lg prose-img:shadow-lg"
+              className="prose prose-lg prose-invert max-w-none prose-headings:font-bold prose-headings:text-white prose-p:text-gray-200 prose-li:text-gray-200 prose-strong:text-white prose-a:text-white prose-a:underline hover:prose-a:text-gray-300 prose-img:rounded-lg prose-img:shadow-lg"
               dangerouslySetInnerHTML={{ __html: enrichBlogContent(post.content, post.slug) }}
             />
 
