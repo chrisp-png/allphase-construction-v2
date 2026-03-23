@@ -67,15 +67,20 @@ export default function ChamberBadges() {
       <div className="grid md:grid-cols-3 gap-6">
         <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
           <div className="flex justify-center mb-4">
-            <img
-              src="/broward-chamber-of-commerce-member-all-phase-construction-usa.png"
-              alt="Broward Chamber of Commerce Member - All Phase Construction USA"
-              className="h-24 w-auto object-contain"
-              width="150"
-              height="96"
-              loading="lazy"
-              decoding="async"
-            />
+            <a
+              href="https://www.browardbiz.com/united-states/deerfield-beach/roofing/all-phase-construction-usa?from=badge"
+              title="Find me on Broward County Chamber of Commerce"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.browardbiz.com/images/memberbadge.png"
+                alt="Broward Chamber of Commerce Member - All Phase Construction USA"
+                className="h-24 w-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </div>
           <h3 className="text-xl font-bold text-white mb-3 text-center">
             Broward County Chamber of Commerce Member
@@ -84,7 +89,7 @@ export default function ChamberBadges() {
             Official member of the Broward County Chamber of Commerce, listed as a licensed roofing contractor serving Deerfield Beach since 2006. Our membership reinforces our commitment to local accountability and professional standards.
           </p>
           <a
-            href="https://www.browardbiz.com/search_results?q=all+phase+construction+usa"
+            href="https://www.browardbiz.com/united-states/deerfield-beach/roofing/all-phase-construction-usa?from=badge"
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-600 hover:text-red-500 text-sm font-medium inline-flex items-center gap-1 transition-colors"
