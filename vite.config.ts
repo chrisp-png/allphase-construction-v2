@@ -146,28 +146,6 @@ const manualPublicCopyPlugin = () => ({
       });
     }
 
-    // Copy images directory (blog featured images, etc.)
-    const imagesSrc = path.resolve(publicDir, 'images');
-    const imagesDest = path.resolve(distDir, 'images');
-    if (fs.existsSync(imagesSrc)) {
-      if (!fs.existsSync(imagesDest)) {
-        fs.mkdirSync(imagesDest, { recursive: true });
-      }
-      const imagesFiles = fs.readdirSync(imagesSrc);
-      imagesFiles.forEach(file => {
-        const src = path.resolve(imagesSrc, file);
-        const dest = path.resolve(imagesDest, file);
-        try {
-          if (fs.statSync(src).isFile()) {
-            fs.copyFileSync(src, dest);
-            console.log(`Copied images/${file}`);
-          }
-        } catch (error) {
-          console.warn(`Skipped images/${file}: ${error.message}`);
-        }
-      });
-    }
-
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
     // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)
