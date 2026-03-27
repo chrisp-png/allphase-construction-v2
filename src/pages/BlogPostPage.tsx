@@ -310,10 +310,14 @@ export default function BlogPostPage() {
   const updateMetaTags = () => {
     if (!post) return;
 
-    // Normalize blog titles — strip pipe suffixes, truncate at word boundary, keep under 65 chars for SEO
-    const rawTitle = (post.meta_title || post.title).replace(/\s*\|.*$/, '').trim();
-    const cleanTitle = rawTitle.length <= 52 ? rawTitle : rawTitle.substring(0, 52).replace(/\s+\S*$/, '');
-    document.title = cleanTitle + ' | All Phase';
+    // Use meta_title as-is if set (allows full control from Supabase), otherwise build from post title
+    if (post.meta_title) {
+      document.title = post.meta_title;
+    } else {
+      const rawTitle = post.title.replace(/\s*\|.*$/, '').trim();
+      const cleanTitle = rawTitle.length <= 52 ? rawTitle : rawTitle.substring(0, 52).replace(/\s+\S*$/, '');
+      document.title = cleanTitle + ' | All Phase';
+    }
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -326,8 +330,9 @@ export default function BlogPostPage() {
         if (desc.length > 155) desc = desc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
         if (desc.length < 70) desc = `${post.title}. Expert roofing insights from a dual-licensed South Florida contractor. Read the full guide at All Phase Construction USA.`;
       }
-      // If description is too long (>160 chars), trim at word boundary
-      if (desc.length > 160) {
+      // If meta_description was set explicitly in Supabase, use it as-is (already optimized)
+      // Otherwise trim auto-generated descriptions at word boundary for SERP display
+      if (!post.meta_description && desc.length > 160) {
         desc = desc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
       }
       metaDescription.setAttribute('content', desc);
