@@ -28,8 +28,8 @@ export interface SEOMetadata {
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
-    title: 'South Florida Roofing Contractor | All Phase USA',
-    description: 'South Florida roofing contractor — dual-licensed, HVHZ-certified, 2,500+ roofs since 2005. Free inspection. Call (754) 227-5605.',
+    title: 'All Phase Construction USA | South Florida Roofer Since 2005',
+    description: 'Locally owned South Florida roofing contractor with 2,500+ roofs since 2005. Dual-licensed, HVHZ-certified, A+ BBB rated. Get a free same-day roof inspection — call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
@@ -43,8 +43,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'Roof Cost Calculator | Free Estimate | All Phase',
-    description: 'Calculate your roof replacement cost instantly. Free tool with 2026 South Florida pricing for shingle, tile, metal & flat roofs.',
+    title: 'Free Roof Cost Calculator — South Florida 2026 Pricing',
+    description: 'Estimate your roof replacement cost in 60 seconds. Our free calculator uses 2026 South Florida pricing for shingle ($350–$500/sq), tile ($600–$1,000/sq), metal & flat roofs. Based on 2,500+ real jobs.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
@@ -319,8 +319,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/how-to-hire-a-roofing-contractor'
   },
   '/locations/deerfield-beach/best-roofers-deerfield-beach': {
-    title: 'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
-    description: 'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    title: '5 Best Roofers in Deerfield Beach, FL (2026 Reviewed)',
+    description: 'We compared the 5 best-rated roofers in Deerfield Beach by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 — see which Broward County contractors made the cut.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
   '/locations/fort-lauderdale/best-roofers-fort-lauderdale': {
@@ -444,8 +444,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area'
   },
         '/locations/deerfield-beach': {
-    title: 'Deerfield Beach Roofing Contractor | All Phase',
-    description: 'Roof replacement in Deerfield Beach, FL. Dual-licensed (CCC-1331464 & CGC-1526236), HVHZ-certified. Tile, metal, shingle & flat. (754) 227-5605.',
+    title: 'Deerfield Beach Roofer | Local HQ Since 2005 | All Phase USA',
+    description: 'Deerfield Beach\'s #1 rated roofing contractor — headquartered here since 2005. We\'ve completed 2,500+ roofs in Broward County. HVHZ-certified, dual-licensed. Free same-day inspections — (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {

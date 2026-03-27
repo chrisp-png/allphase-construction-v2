@@ -1,7 +1,7 @@
 /**
- * ═══════════════════════════════════════════════════════════════════════════
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
  * Deerfield Beach City Page
- * ═══════════════════════════════════════════════════════════════════════════
+ * âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
  *
  * This is the dedicated city page for Deerfield Beach, the primary hub location.
  * This page focuses on Deerfield Beach itself, not the service areas directory.
@@ -61,7 +61,7 @@ export default function DeerfieldBeachCityPage() {
     },
     {
       question: 'What factors affect the cost of a roofing project in Deerfield Beach?',
-      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price. Use our <Link to="/roof-cost-calculator" className="underline hover:text-white">Roof Cost Calculator</Link> for a preliminary estimate.'
+      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price. Use our <Link to="/calculator" className="underline hover:text-white">Roof Cost Calculator</Link> for a preliminary estimate.'
     },
     {
       question: 'How long does it take to install a new roof?',
@@ -105,6 +105,29 @@ export default function DeerfieldBeachCityPage() {
   const previousImage = () => {
     setLightboxIndex((prev) => (prev - 1 + recentProjects.length) % recentProjects.length);
   };
+
+  // Add FAQ Schema JSON-LD for rich results
+  useEffect(() => {
+    const faqSchema = document.createElement('script');
+    faqSchema.type = 'application/ld+json';
+    faqSchema.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer.replace(/<[^>]*>/g, '')
+        }
+      }))
+    });
+    document.head.appendChild(faqSchema);
+
+    return () => {
+      document.head.removeChild(faqSchema);
+    };
+  }, []);
 
   // Fallback if location not found
   if (!seo) {
