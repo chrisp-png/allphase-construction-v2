@@ -1846,6 +1846,23 @@ async function generateStaticFiles() {
       { question: 'Do you work in Miami-Dade County?', answer: 'Our primary service area covers Broward County and Palm Beach County, headquartered in Deerfield Beach. We do not currently service Miami-Dade County.' }
     ]
   },
+  '/roof-cost-calculator': {
+    faqs: [
+      { question: 'How much does a new roof cost in South Florida?', answer: 'New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. Shingle roofs ($4.50–$16/sq ft) are the most cost-effective, while tile roofs ($12–$35/sq ft) and metal roofs ($8–$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000–$22,000 installed. Tile roofs of the same size typically cost $24,000–$48,000.' },
+      { question: 'What affects roof replacement cost the most?', answer: 'Roof replacement cost is driven by the roof system requirements and the quality of installation, not just the material. The biggest pricing factors include roof size and complexity, tear-off requirements, HVHZ code compliance, underlayment and flashing details, ventilation upgrades, and any hidden decking repairs.' },
+      { question: 'Why are some roofing quotes so much cheaper than others?', answer: 'Lower quotes are often cheaper because corners are being cut somewhere — labor quality, supervision, underlayment/flashing details, code compliance, or warranty coverage. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-term.' },
+      { question: 'What is the average cost per square foot for a new roof in Broward County?', answer: 'Broward County roof replacement costs average $8–$20 per square foot installed, depending on material type and HVHZ compliance requirements. Shingle roofs cost $7–$14/sq ft, concrete tile $14–$22/sq ft, metal roofs $12–$24/sq ft, and flat membrane systems $8–$16/sq ft.' },
+      { question: 'Why are roofs more expensive in South Florida than other parts of Florida?', answer: 'Broward County and most of South Florida fall within the High Velocity Hurricane Zone (HVHZ), which requires all roofing materials and installation methods to meet Miami-Dade NOA (Notice of Acceptance) standards. HVHZ-rated materials cost 10-20% more than standard materials, and the installation techniques are more labor-intensive.' },
+      { question: 'Do tile roofs cost more than shingles?', answer: 'Yes. Tile roofs cost 2–3 times more than asphalt shingle roofs due to material weight, installation complexity, and enhanced underlayment requirements. However, tile roofs typically last 40–50+ years compared to 20–30 years for shingles, offering better long-term value despite higher upfront cost.' },
+      { question: 'Can I get financing for a roof replacement?', answer: 'Yes. Most roofing contractors in South Florida offer financing options through third-party lenders with approved credit. Monthly payment plans typically range from 12–180 months. Financing allows homeowners to address urgent roof needs without depleting savings.' },
+      { question: 'Should I add wind mitigation upgrades during my reroof?', answer: 'Absolutely. Most wind mitigation upgrades can only be done during a reroof. The insurance savings alone ($2,000-$3,000+ per year) typically pay for the upgrades within 1-2 years. Over 20 years, that is $40,000-$60,000 in savings.' }
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+      { name: 'Roofing Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
+      { name: 'Roof Cost Calculator', url: 'https://allphaseconstructionfl.com/roof-cost-calculator' }
+    ]
+  },
 };
 
 const CITY_PAGE_SCHEMAS = {
