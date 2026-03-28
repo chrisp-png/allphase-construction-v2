@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function CoralSpringsMoneyPage() {
   const cityName = 'Coral Springs';
@@ -19,7 +20,8 @@ export default function CoralSpringsMoneyPage() {
   const slug = 'coral-springs';
 
   useEffect(() => {
-    document.title = `${cityName} Roofing Contractor | All Phase Construction USA`;
+    const seoMeta = generateSEOMetadata('/locations/coral-springs');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

@@ -13,6 +13,7 @@ import StickyConversionBar from '../../components/StickyConversionBar';
 import MoneyPageStatBar from '../../components/MoneyPageStatBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function FortLauderdaleMoneyPage() {
   const cityName = 'Fort Lauderdale';
@@ -20,7 +21,8 @@ export default function FortLauderdaleMoneyPage() {
   const slug = 'fort-lauderdale';
 
   useEffect(() => {
-    document.title = 'Fort Lauderdale Roofing Contractor | HVHZ Certified | All Phase Construction USA';
+    const seoMeta = generateSEOMetadata('/locations/fort-lauderdale');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

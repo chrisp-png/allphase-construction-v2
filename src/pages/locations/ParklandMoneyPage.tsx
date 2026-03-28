@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function ParklandMoneyPage() {
   const cityName = 'Parkland';
@@ -21,7 +22,8 @@ export default function ParklandMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Parkland Roofing Contractor | Premium Gated Community Roof Replacement | All Phase`;
+    const seoMeta = generateSEOMetadata('/locations/parkland');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function WestPalmBeachMoneyPage() {
   const cityName = 'West Palm Beach';
@@ -19,7 +20,8 @@ export default function WestPalmBeachMoneyPage() {
   const slug = 'west-palm-beach';
 
   useEffect(() => {
-    document.title = `${cityName} Roofing Contractor | All Phase Construction USA`;
+    const seoMeta = generateSEOMetadata('/locations/west-palm-beach');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

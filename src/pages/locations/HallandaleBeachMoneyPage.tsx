@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function HallandaleBeachMoneyPage() {
   const cityName = 'Hallandale Beach';
@@ -21,7 +22,8 @@ export default function HallandaleBeachMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Hallandale Beach Roofing Contractor | Condo & Coastal Flat Roof Experts | All Phase`;
+    const seoMeta = generateSEOMetadata('/locations/hallandale-beach');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

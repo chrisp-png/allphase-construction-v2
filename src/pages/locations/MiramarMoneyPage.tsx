@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function MiramarMoneyPage() {
   const cityName = 'Miramar';
@@ -21,7 +22,8 @@ export default function MiramarMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Miramar Roofing Services | Tile, Metal & Shingle | All Phase`;
+    const seoMeta = generateSEOMetadata('/locations/miramar');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

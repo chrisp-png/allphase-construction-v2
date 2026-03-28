@@ -13,6 +13,7 @@ import StickyConversionBar from '../../components/StickyConversionBar';
 import MoneyPageStatBar from '../../components/MoneyPageStatBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function BocaRatonMoneyPage() {
   const cityName = 'Boca Raton';
@@ -20,7 +21,8 @@ export default function BocaRatonMoneyPage() {
   const slug = 'boca-raton';
 
   useEffect(() => {
-    document.title = `${cityName} Roofing Contractor | All Phase Construction USA`;
+    const seoMeta = generateSEOMetadata('/locations/boca-raton');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

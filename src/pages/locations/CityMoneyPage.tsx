@@ -18,6 +18,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 interface CityData {
   name: string;
@@ -33,10 +34,13 @@ interface CityMoneyPageProps {
 }
 
 export default function CityMoneyPage({ city }: CityMoneyPageProps) {
+  // Get CTR-optimized SEO metadata from seoTitles.ts (falls back to dynamic generation)
+  const seoMeta = generateSEOMetadata(`/locations/${city.slug}`);
+
   // Force-inject title immediately to prevent blank page
   useEffect(() => {
-    document.title = `${city.name} Roofing Contractor | All Phase Construction USA`;
-  }, [city.name]);
+    document.title = seoMeta.title;
+  }, [seoMeta.title]);
 
   // Get city coordinates for local search
   const coordinates = getCityCoordinates(city.name);
@@ -61,12 +65,12 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
   return (
     <>
       <Helmet>
-        <title>{city.name} Roofing Contractor | All Phase Construction USA</title>
+        <title>{seoMeta.title}</title>
         <meta
           name="description"
-          content={`Professional roofing services in ${city.name}, Florida. Dual-licensed contractor (CCC-1331464, CGC-1526236) with HVHZ certification. Expert roof replacement, repair, and inspection services.`}
+          content={seoMeta.description}
         />
-        <link rel="canonical" href={canonicalUrl} />
+        <link rel="canonical" href={seoMeta.canonical || canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

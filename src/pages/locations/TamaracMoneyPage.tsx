@@ -6,30 +6,22 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function TamaracMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Tamarac Roofing Contractor | HVHZ Certified | All Phase Construction USA';
+    const seoMeta = generateSEOMetadata('/locations/tamarac');
+    document.title = seoMeta.title;
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Tamarac FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Serving Mainlands, Kings Point, and all Tamarac communities since 2006. (754) 227-5605');
+      metaDescription.setAttribute('content', seoMeta.description);
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Tamarac FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Serving Mainlands, Kings Point, and all Tamarac communities since 2006. (754) 227-5605';
-      document.head.appendChild(meta);
-    }
-
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'roofing contractor Tamarac FL, roofer Tamarac, roof replacement Tamarac, Tamarac roofing company, best roofer in Tamarac, shingle roof Tamarac Florida');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'keywords';
-      meta.content = 'roofing contractor Tamarac FL, roofer Tamarac, roof replacement Tamarac, Tamarac roofing company, best roofer in Tamarac, shingle roof Tamarac Florida';
+      meta.content = seoMeta.description;
       document.head.appendChild(meta);
     }
 

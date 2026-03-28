@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function BoyntonBeachMoneyPage() {
   const cityName = 'Boynton Beach';
@@ -19,7 +20,8 @@ export default function BoyntonBeachMoneyPage() {
   const slug = 'boynton-beach';
 
   useEffect(() => {
-    document.title = `${cityName} Roofing Contractor | Palm Beach County Licensed | All Phase Construction USA`;
+    const seoMeta = generateSEOMetadata('/locations/boynton-beach');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

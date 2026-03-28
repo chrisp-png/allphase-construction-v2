@@ -12,6 +12,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function LauderhillMoneyPage() {
   const cityName = 'Lauderhill';
@@ -21,7 +22,8 @@ export default function LauderhillMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Lauderhill Roofing Contractor | Roof Replacement | All Phase`;
+    const seoMeta = generateSEOMetadata('/locations/lauderhill');
+    document.title = seoMeta.title;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

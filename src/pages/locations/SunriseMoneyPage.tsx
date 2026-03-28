@@ -6,6 +6,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function SunrisePage() {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null);
@@ -156,10 +157,10 @@ export default function SunrisePage() {
   return (
     <div className="min-h-screen bg-[#09090b]">
       <Helmet>
-        <title>Sunrise FL Roofing Contractor | HVHZ Certified | All Phase Construction USA</title>
+        <title>{generateSEOMetadata('/locations/sunrise').title}</title>
         <meta
           name="description"
-          content="Sunrise FL roofing contractor. Dual-licensed (CCC-1331464, CGC-1526236). HVHZ certified. Serving Sawgrass Mills, Sunrise Lakes, Welleby since 2006. (754) 227-5605"
+          content={generateSEOMetadata('/locations/sunrise').description}
         />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}

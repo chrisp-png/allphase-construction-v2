@@ -5,28 +5,20 @@ import EmbeddedRoofCalculator from '../../components/EmbeddedRoofCalculator';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { EXTERNAL_LINKS } from '../../config/links';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function DelrayBeachMoneyPage() {
   useEffect(() => {
-    document.title = 'Delray Beach Roofer | Palm Beach County Wind-Compliant | All Phase Construction USA';
+    const seoMeta = generateSEOMetadata('/locations/delray-beach');
+    document.title = seoMeta.title;
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'All Phase Construction USA is a dual-licensed roofing contractor serving Delray Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.');
+      metaDescription.setAttribute('content', seoMeta.description);
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'All Phase Construction USA is a dual-licensed roofing contractor serving Delray Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair.';
-      document.head.appendChild(meta);
-    }
-
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'roofing contractor Delray Beach, roofer Delray Beach FL, tile roof Delray Beach, roof replacement Delray Beach, Delray Beach roofing company');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'keywords';
-      meta.content = 'roofing contractor Delray Beach, roofer Delray Beach FL, tile roof Delray Beach, roof replacement Delray Beach, Delray Beach roofing company';
+      meta.content = seoMeta.description;
       document.head.appendChild(meta);
     }
 

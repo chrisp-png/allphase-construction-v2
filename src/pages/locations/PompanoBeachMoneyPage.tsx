@@ -6,6 +6,7 @@ import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
 import InternalLinksBlock from '../../components/InternalLinksBlock';
 import { getCityCoordinates } from '../../data/cityCoordinates';
+import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function PompanoBeachMoneyPage() {
   const cityName = 'Pompano Beach';
@@ -92,8 +93,8 @@ export default function PompanoBeachMoneyPage() {
   return (
     <>
       <SEO
-        title={`${cityName} Roofing Contractor | Licensed Roofing Services | All Phase Construction`}
-        description={`Professional roofing services in ${cityName}, FL. Licensed ${county} contractor specializing in residential & commercial roofing. Dual-licensed CCC & CGC. Free inspection: (754) 227-5605.`}
+        title={generateSEOMetadata('/locations/pompano-beach').title}
+        description={generateSEOMetadata('/locations/pompano-beach').description}
         schema={localBusinessSchema}
         noindex={false}
       />
