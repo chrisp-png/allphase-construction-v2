@@ -229,8 +229,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/dont-replace-your-roof-restore-it-instead'
   },
   '/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida': {
-    title: 'Fascia Replacement Without Roof Damage | All Phase',
-    description: 'Can you replace fascia without a new roof? A South Florida licensed contractor explains what is involved, costs, and when your roof also needs attention.',
+    title: 'Can I Replace Fascia Without Replacing My Roof? (2026 Answer)',
+    description: 'Yes — but only if done right. A South Florida roofer explains when you can replace fascia boards without a full reroof, what code requires, and the #1 mistake that voids warranties.',
     canonical: 'https://allphaseconstructionfl.com/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida'
   },
   '/reviews': {
@@ -324,8 +324,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
   '/locations/fort-lauderdale/best-roofers-fort-lauderdale': {
-    title: 'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
-    description: 'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
+    title: '5 Best Roofers in Fort Lauderdale, FL (2026 Reviewed)',
+    description: 'We compared the 5 best-rated roofers in Fort Lauderdale by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 — see which Broward County contractors made the cut.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale'
   },
   '/locations/west-palm-beach/best-roofers-west-palm-beach': {
