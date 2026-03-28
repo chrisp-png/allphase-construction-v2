@@ -14,43 +14,6 @@ console.log('  publicDir:', publicDir);
 console.log('  distDir:', distDir);
 console.log('  distDir exists?', fs.existsSync(distDir));
 
-// ── Supabase REST API config for build-time blog fetching ──
-const SUPABASE_URL = 'https://vsjebxljdhomgmqbqgdi.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzamVieGxqZGhvbWdtcWJxZ2RpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5ODkxMzcsImV4cCI6MjA4MjU2NTEzN30._gjIILl6LtMKnoERihdaRrQ-OQQ1rKoB_FXnoxRCW2Y';
-
-// Global variable for crawler links HTML (populated before page generation)
-let CRAWLER_LINKS_HTML = '';
-
-/**
- * Fetch all published blog posts from Supabase at build time.
- * Uses the REST API directly (no SDK needed).
- */
-async function fetchBlogPostsFromSupabase() {
-  const url = `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=published_date.desc&select=title,slug,excerpt,content,featured_image,author,published_date,categories,tags,meta_title,meta_description,faqs`;
-
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'apikey': SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        'Content-Type': 'application/json'
-      }
-    });
-
-    if (!response.ok) {
-      throw new Error(`Supabase API error: ${response.status} ${response.statusText}`);
-    }
-
-    const posts = await response.json();
-    console.log(`📚 Fetched ${posts.length} published blog posts from Supabase`);
-    return posts;
-  } catch (err) {
-    console.error('⚠️ Failed to fetch blog posts from Supabase:', err.message);
-    console.error('   Blog posts will use fallback content.');
-    return [];
-  }
-}
-
 // Load cities data (for roof-repair and roof-inspection pages only)
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
@@ -99,8 +62,8 @@ function buildLocationSeo(location) {
   const complianceLanguage = isBrowardCounty ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
 
   // Generate defaults from templates
-  const defaultTitle = `${city} Roofing Contractor | All Phase`;
-  const defaultDescription = `Roof replacement contractor in ${city}, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.`;
+  const defaultTitle = `${city} Roofing Contractor | All Phase USA`;
+  const defaultDescription = `Licensed roofing contractor in ${city}, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections. (754) 227-5605.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 
@@ -1255,9 +1218,6 @@ function generateDeerfieldBeachSchema() {
     ],
     "sameAs": [
       "https://www.allphaseconstructionfl.com/",
-      "https://www.facebook.com/AllPhaseConstructionUsA",
-      "https://www.instagram.com/all_phase_construction_usa/",
-      "https://www.linkedin.com/company/all-phase-construction-usa-llc",
       "https://www.youtube.com/@allphaseconstructionusa5626",
       "https://share.google/GoLG8dytlgHgXVjKK"
     ]
@@ -1332,19 +1292,6 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     `<meta property="og:url" content="${canonical}" />`
   );
 
-  // Add og:image, og:site_name, and twitter:image if not already present
-  const ogImageUrl = 'https://allphaseconstructionfl.com/images/og-default.jpg';
-  if (!html.includes('og:image')) {
-    const ogImageTags = `
-    <meta property="og:image" content="${ogImageUrl}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="All Phase Construction USA — Licensed South Florida Roofing Contractor">
-    <meta property="og:site_name" content="All Phase Construction USA">
-    <meta name="twitter:image" content="${ogImageUrl}">`;
-    html = html.replace('</head>', `${ogImageTags}\n</head>`);
-  }
-
   // Add JSON-LD schema if provided (before </head>)
   // Always inject base RoofingContractor schema on every prerendered page
   const baseOrgSchema = {
@@ -1352,13 +1299,8 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     '@type': 'RoofingContractor',
     '@id': 'https://allphaseconstructionfl.com/#organization',
     name: 'All Phase Construction USA',
-    alternateName: 'All Phase Roofing',
-    description: 'Licensed roofing contractor serving Broward and Palm Beach Counties, Florida. Dual-licensed (CCC-1331464, CGC-1526236) for residential and commercial roof replacement, repair, and inspection. HVHZ certified.',
     url: 'https://allphaseconstructionfl.com',
-    logo: 'https://allphaseconstructionfl.com/logo.png',
-    image: 'https://allphaseconstructionfl.com/images/og-default.jpg',
     telephone: '+17542275605',
-    email: 'info@allphaseconstructionfl.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '590 Goolsby Blvd',
@@ -1368,49 +1310,35 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       addressCountry: 'US'
     },
     geo: { '@type': 'GeoCoordinates', latitude: 26.3184, longitude: -80.0998 },
-    areaServed: [
-      { '@type': 'AdministrativeArea', name: 'Broward County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } },
-      { '@type': 'AdministrativeArea', name: 'Palm Beach County', containedInPlace: { '@type': 'AdministrativeArea', name: 'Florida' } }
-    ],
+    areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
     priceRange: '$$',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      bestRating: '5',
-      worstRating: '1',
-      reviewCount: '150'
-    },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
     ],
-    hasCredential: [
-      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified Roofing Contractor — CCC-1331464', recognizedBy: { '@type': 'Organization', name: 'Florida DBPR' } },
-      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'License', name: 'Florida Certified General Contractor — CGC-1526236', recognizedBy: { '@type': 'Organization', name: 'Florida DBPR' } }
-    ],
-    sameAs: [
-      'https://www.facebook.com/AllPhaseConstructionUsA',
-      'https://www.instagram.com/all_phase_construction_usa/',
-      'https://www.linkedin.com/company/all-phase-construction-usa-llc',
-      'https://www.youtube.com/@allphaseconstructionusa5626',
-      'https://maps.app.goo.gl/VgpBphe5vYY8yuow7',
-      'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach-2',
-      'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640',
-      'https://www.mapquest.com/us/florida/all-phase-construction-usa-535965821',
-      'https://www.gaf.com/en-us/roofing-contractors/commercial/all-phase-construction-usa-llc-deerfield-beach-fl-1122381',
-      'https://directorii.com/us/fl/deerfield-beach/all-phase-construction-usa-llc-reviews-279/',
-      'https://www.roofinginsights.com/news/all-phase-construction-usa-with-chris-porosky',
-      'https://www.homepros.com/merchants/all-phase-construction-usa/365769'
-    ],
-    knowsAbout: [
-      'Roof Repair', 'Roof Replacement', 'Roof Inspections', 'Roof Installation',
-      'Shingle Roofing', 'Tile Roofing', 'Metal Roofing', 'Flat Roofing',
-      'Commercial Roofing', 'Residential Roofing', 'Storm Damage Restoration',
-      'Wind Mitigation', 'HVHZ Compliance', 'Hurricane-Resistant Roofing',
-      'TPO Roofing', 'PVC Roofing', 'EPDM Roofing', 'Modified Bitumen Roofing',
-      'Roof Insurance Claims', 'Florida Building Code Compliance'
-    ],
-    paymentAccepted: ['Cash', 'Check', 'Credit Card', 'Financing']
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '136',
+      bestRating: '5'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Roofing Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Free Roof Inspection',
+            description: 'Complimentary 21-point roof inspection for South Florida homeowners'
+          },
+          price: '0',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock'
+        }
+      ]
+    }
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
   const schemaToInject = (jsonLdSchema && (jsonLdSchema['@type'] === 'RoofingContractor' || (Array.isArray(jsonLdSchema) && jsonLdSchema[0]?.['@type'] === 'RoofingContractor')))
@@ -1511,10 +1439,30 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       throw new Error('✅ Could not find root div or closing body tag in template.');
     }
 
-    // Inject comprehensive crawler links (uses global CRAWLER_LINKS_HTML set before page generation)
-  if (CRAWLER_LINKS_HTML) {
-    html = html.replace('</body>', CRAWLER_LINKS_HTML + '</body>');
-  }
+    // Inject static crawler links before </body>
+  const staticCrawlerLinks = `
+<!-- Static internal links for crawlers -->
+<div style="display:none" aria-hidden="true">
+  <a href="/roofing-services">Roofing Services</a>
+  <a href="/residential-roofing">Residential Roofing</a>
+  <a href="/commercial-roofing">Commercial Roofing</a>
+  <a href="/shingle-roofing">Shingle Roofing</a>
+  <a href="/metal-roofing">Metal Roofing</a>
+  <a href="/flat-roofing">Flat Roofing</a>
+  <a href="/tile-roofing">Tile Roofing</a>
+  <a href="/roof-repair">Roof Repair</a>
+  <a href="/roof-inspection">Roof Inspection</a>
+  <a href="/roof-replacement-process">Roof Replacement Process</a>
+  <a href="/roof-maintenance-programs">Roof Maintenance Programs</a>
+  <a href="/reviews">Reviews</a>
+  <a href="/projects">Our Projects</a>
+  <a href="/frequently-asked-questions">FAQ</a>
+  <a href="/about-us">About Us</a>
+  <a href="/contact">Contact</a>
+  <a href="/blog">Blog</a>
+</div>
+`;
+  html = html.replace('</body>', staticCrawlerLinks + '</body>');
 
   return html;
 }
@@ -1541,8 +1489,8 @@ function getSEOMetadata(urlPath, cityName = null) {
   if (cityName) {
     if (normalizedPath.includes('/roof-repair/')) {
       return {
-        title: `Roof Repair ${cityName} FL | All Phase`,
-        description: `Roof leak and storm damage repair in ${cityName}, FL. Emergency patching, flashing failures, missing shingles & wind damage. Same-day response. (754) 227-5605.`,
+        title: `${cityName} Roof Repair | All Phase USA`,
+        description: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
@@ -1587,7 +1535,7 @@ function writeToPublicAndDist(relativePath, content) {
 /**
  * Generate all static HTML files
  */
-async function generateStaticFiles() {
+function generateStaticFiles() {
   console.log('📋  Generating 3-Silo Lead Generation Architecture...\n');
 
   // Create public directory if it doesn't exist
@@ -1600,31 +1548,12 @@ async function generateStaticFiles() {
   // 1. Generate Homepage
   // Homepage uses explicit metadata (NOT from getSEOMetadata fallback)
   // This ensures title is controlled by index.html + runtime metadata
-  // Homepage schemas: WebSite + FAQPage (combined from MicroFAQ + FAQ sections)
-  const homepageSchemas = [
-    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What is a wind mitigation inspection and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"A wind mitigation inspection documents the wind-resistant features of your home's roof—such as roof shape, attachment method, and secondary water barrier. This report can qualify you for significant insurance premium discounts. As a Certified Wind Loss Mitigator, we can perform this inspection and provide the documentation your insurer needs."}},
-      {"@type":"Question","name":"Can a roofer do my wind mitigation report?","acceptedAnswer":{"@type":"Answer","text":"Usually, no — a wind mitigation report generally must be completed by a properly licensed inspector (often a home inspector, engineer, architect, or a Florida-licensed general contractor, depending on the credential). Many roofing contractors can't sign that form unless they also hold the appropriate license. If your roofer is also a GC, it can simplify coordination because the same firm can evaluate roofing + related structural mitigation opportunities."}},
-      {"@type":"Question","name":"Is Palm Beach County part of Florida's HVHZ?","acceptedAnswer":{"@type":"Answer","text":"No. Florida's HVHZ designation applies to Miami-Dade and Broward counties. Palm Beach County is outside the HVHZ, but many Palm Beach jurisdictions follow very strict high-wind standards and product approval requirements that can be close to HVHZ-level intent, especially for uplift resistance and opening protection."}},
-      {"@type":"Question","name":"Will a new roof help lower my insurance?","acceptedAnswer":{"@type":"Answer","text":"Yes — a new roof can reduce insurance costs, especially when paired with documented wind mitigation features (improved roof-to-deck attachment, secondary water barrier, enhanced fastening patterns, and approved assemblies). If your roofing contractor also holds a GC license, you may be able to address certain structural upgrades more efficiently, which can unlock additional mitigation credits depending on your home and insurer."}},
-      {"@type":"Question","name":"How much does a new roof cost in South Florida?","acceptedAnswer":{"@type":"Answer","text":"Roof replacement costs in South Florida typically range from $10,000 to $45,000+ depending on roof size, material (shingle, tile, metal, or flat systems), and code requirements. HVHZ compliance may require additional underlayment, fasteners, and inspections. We provide free, detailed written estimates so you know exactly what you're paying for—no hidden fees, no surprises."}},
-      {"@type":"Question","name":"How do I know if I need a roof repair or full replacement?","acceptedAnswer":{"@type":"Answer","text":"If your roof has localized damage—a few missing shingles, a small leak, or minor flashing issues—a repair may be all you need. But if your roof is 15–20+ years old, has widespread damage, or has failed an inspection, replacement is usually the smarter long-term investment. Our inspectors will give you an honest assessment."}},
-      {"@type":"Question","name":"Do I need a permit for roofing work in Broward or Palm Beach County?","acceptedAnswer":{"@type":"Answer","text":"Yes. Florida law requires permits for most roofing work, and both Broward and Palm Beach Counties enforce strict permitting and inspection processes—especially in the High Velocity Hurricane Zone. We handle all permit coordination for you."}},
-      {"@type":"Question","name":"How long does a typical roof replacement take?","acceptedAnswer":{"@type":"Answer","text":"Roof installation typically takes 2–5 actual working days once permits, HOA approvals, and materials are ready. From contract signing to final inspection, most projects take 3–6 weeks, depending on permitting timelines, HOA approval, inspections, and material scheduling."}},
-      {"@type":"Question","name":"Does homeowner's insurance cover roof replacement in Florida?","acceptedAnswer":{"@type":"Answer","text":"If your roof was damaged by a covered peril—such as a hurricane, hailstorm, or falling debris—your homeowner's insurance may cover part or all of the replacement cost. We assist with insurance documentation, damage assessments, and claims coordination."}},
-      {"@type":"Question","name":"What is the best roofing material for hurricane zones?","acceptedAnswer":{"@type":"Answer","text":"In South Florida's HVHZ, the best roofing materials are those rated for high-wind performance. Concrete tile, metal roofing, and impact-rated shingle systems all perform well when installed to code. The right choice depends on your home's structure, budget, and aesthetic preference."}},
-      {"@type":"Question","name":"How do I choose the right roofing contractor in South Florida?","acceptedAnswer":{"@type":"Answer","text":"Look for a roofing contractor who is Florida-licensed, properly insured, and holds manufacturer certifications. Check their BBB rating, Google reviews, and how long they've been in business locally. Avoid storm chasers and companies that pressure you to sign over your insurance claim."}},
-      {"@type":"Question","name":"What is the My Safe Florida Home Program?","acceptedAnswer":{"@type":"Answer","text":"The My Safe Florida Home Program provides free wind inspections and matching grants to help Florida homeowners strengthen their homes against hurricanes. As one of the original Certified MySafeFloridaHome Contractors, All Phase Construction USA is qualified to perform the recommended improvements."}},
-      {"@type":"Question","name":"What voids a roof warranty?","acceptedAnswer":{"@type":"Answer","text":"Common warranty voidances include improper installation, unauthorized repairs by uncertified contractors, failure to maintain adequate attic ventilation, and walking on the roof without proper precautions. Our manufacturer certifications ensure your warranty stays intact from day one."}}
-    ]}
-  ];
   const homeHTML = createHTMLTemplate(
-    'South Florida Roofing Contractor | All Phase USA',
+    'Roofing Contractor | Broward & Palm Beach | All Phase USA',
         'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
-    homepageSchemas
+    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
   );
   // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering
@@ -1714,7 +1643,8 @@ async function generateStaticFiles() {
   '/roof-repair': {
     faqs: [
       { question: 'How quickly can you respond to emergency roof repairs?', answer: 'We offer same-day emergency response throughout Broward and Palm Beach County. Call (754) 227-5605 and we can dispatch a crew within 2-4 hours for an active leak.' },
-      { question: 'What types of roof damage can be repaired instead of replaced?', answer: 'Localized leaks, cracked or missing tiles, damaged flashing around vents and pipes, and wind-lifted shingles on an otherwise sound roof are all good candidates for repair rather than full replacement.' },
+      { question: 'Does homeowner insurance cover roof repair in Florida?', answer: 'Most Florida homeowner policies cover storm and wind damage. We work directly with insurance adjusters and can document damage for your claim at no extra charge.' },
+      { question: 'How do I know if I need a repair or full replacement?', answer: 'If your roof is under 15 years old and damage is localized, repair is usually the right call. Our free inspection identifies whether targeted repair or full replacement delivers better value.' },
       { question: 'Are you licensed for roof repairs in Broward and Palm Beach County?', answer: 'Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464, covering all repair work in Broward and Palm Beach County.' }
     ],
     breadcrumbs: [
@@ -1751,8 +1681,9 @@ async function generateStaticFiles() {
   },
   '/residential-roofing': {
     faqs: [
-      { question: 'What makes residential roofing different from commercial in South Florida?', answer: 'Residential roofing involves steeper pitches, aesthetic considerations for HOA compliance, and homeowner-specific insurance requirements. Commercial projects use different membrane systems and have distinct code requirements for larger roof areas.' },
-      { question: 'Can you match my existing roof tiles or shingles for a partial repair?', answer: 'In most cases, yes. We stock a wide range of profiles and colors and work with distributors to match existing installations as closely as possible.' },
+      { question: 'What roofing materials are best for South Florida homes?', answer: 'Metal, tile, and PVC flat systems perform best in HVHZ conditions. Architectural shingles are also popular for their cost and appearance when properly wind-rated for 130+ mph.' },
+      { question: 'How long does a residential roof replacement take?', answer: 'Most residential replacements are completed in 1-3 days. We protect your property with tarps and complete full debris removal before the final walkthrough.' },
+      { question: 'Do you offer financing for residential roofing projects?', answer: 'Yes. We offer flexible financing options for residential roofing. Call (754) 227-5605 to discuss payment plans that work within your budget.' },
       { question: 'Are you licensed to work on homes in Broward and Palm Beach County?', answer: 'Yes. All Phase holds Florida Certified Roofing Contractor license CCC-1331464 covering all residential roofing work throughout Broward and Palm Beach County.' }
     ],
     breadcrumbs: [
@@ -1786,406 +1717,49 @@ async function generateStaticFiles() {
     ],
     faqs: [
       {
-        question: 'What happens to my old roof during replacement?',
-        answer: 'We tear off the existing roof system down to the deck, inspect for rot or soft spots, repair any damaged sheathing, then install the new system. Full debris removal and magnetic nail sweep are included.'
+        question: 'How do I know if I need a full roof replacement vs. a repair?',
+        answer: 'If your roof is over 20 years old, has widespread shingle damage, persistent leaks, or significant decking rot, replacement is typically more cost-effective than repeated repairs. We provide free inspections to give you an honest assessment.'
+      },
+      {
+        question: 'How long does a roof replacement take in South Florida?',
+        answer: 'Most residential roof replacements in Broward and Palm Beach Counties take 1–3 days depending on roof size, pitch, and material. We work efficiently to minimize disruption to your household.'
+      },
+      {
+        question: 'What roofing materials are best for South Florida homes?',
+        answer: 'Asphalt shingles, concrete tile, and metal roofing are the most popular choices for South Florida. Each has different cost, longevity, and wind resistance profiles — we help homeowners choose based on their budget and HOA requirements.'
       },
       {
         question: 'Is a permit required for roof replacement in Broward County?',
         answer: 'Yes, Florida law requires a permit for full roof replacements. As licensed contractor CCC-1331464, All Phase Construction USA pulls all required permits and ensures full code compliance on every project.'
       },
       {
-        question: 'What warranty do you provide on a new roof?',
-        answer: 'We provide manufacturer material warranties (typically 25-50 years depending on system) plus our workmanship warranty. All installations meet or exceed Florida Building Code HVHZ requirements.'
+        question: 'Do you offer financing for roof replacement?',
+        answer: 'Yes. We work with financing partners to offer flexible payment options so South Florida homeowners can get the roof they need without waiting. Ask about current financing programs during your free estimate.'
       }
-    ]
-  },
-  '/frequently-asked-questions': {
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Frequently Asked Questions', url: 'https://allphaseconstructionfl.com/frequently-asked-questions' }
-    ],
-    faqs: [
-      { question: 'Do I need a roof repair or a full replacement?', answer: 'The decision depends on the age of your roof, the number of active leaks, visible signs of lifted shingles or tiles, and whether you have needed repeated repairs. In the HVHZ, older roofs may not meet current uplift code requirements even if not actively leaking.' },
-      { question: 'How long does a roof replacement take in South Florida?', answer: 'For a typical 2,000–2,500 sq ft home, installation takes 1–3 working days. The full process from contract to final inspection typically spans 2–4 weeks due to permits and engineering.' },
-      { question: 'How much does a new roof cost in the HVHZ?', answer: 'For a 1,800–2,200 sq ft home: $15,000–$25,000 for asphalt shingles, $25,000–$45,000 for tile, $30,000–$50,000+ for standing seam metal. Costs include permits, engineering, and HVHZ-compliant installation.' },
-      { question: 'Will my homeowners insurance pay for my new roof?', answer: 'Insurance typically covers sudden storm or wind damage but excludes age-related wear. Document damage with photos immediately and get a professional inspection to support your claim.' },
-      { question: 'Are there special hurricane requirements for roofs here?', answer: 'Yes. HVHZ requires roofing systems designed for 170+ mph winds. All materials need Miami-Dade Product Approval, with enhanced fastener patterns, secondary water barriers, and engineered roof-to-wall connections.' },
-      { question: 'How long should my roof last in South Florida\'s climate?', answer: 'Asphalt shingles last 15–22 years (vs. 30 elsewhere), concrete tile 30–50 years, clay tile 75+ years, and metal roofs 40–60+ years. UV, salt air, and hurricane stress accelerate aging.' },
-      { question: 'What are the most common roofing materials in South Florida?', answer: 'Architectural asphalt shingles, concrete and clay tiles, standing seam metal roofs, and flat roof systems (TPO, modified bitumen) are the most common in South Florida.' },
-      { question: 'Will a metal roof make my house hotter?', answer: 'No. Modern metal roofs with reflective finishes run cooler than dark asphalt shingles. CRRC-rated metal roofing can reduce cooling costs by 20–30%.' },
-      { question: 'Does roof color matter in our climate?', answer: 'Yes. Lighter colors reduce attic temperatures significantly. A white metal roof can keep your roof deck 50–70°F cooler than a dark shingle roof on summer afternoons.' },
-      { question: 'When does roof repair make sense?', answer: 'Repair is appropriate when damage is localized, your roof is under 10–12 years for shingles or 20 years for tile, and the underlying deck and fastening system remain sound.' },
-      { question: 'When should you consider roof replacement?', answer: 'Consider replacement for widespread granule loss, multiple chronic leaks, visible uplift damage across multiple slopes, roofs older than insurer thresholds, or roofs installed before 2002 code changes.' },
-      { question: 'How does code affect roof repair vs. replacement?', answer: 'In HVHZ, once repairs exceed about 25% of roof area, building codes may require bringing the entire system up to current standards, turning a repair into a full replacement.' },
-      { question: 'What does "High Velocity Hurricane Zone" mean?', answer: 'The HVHZ designates Miami-Dade and Broward counties for extreme hurricane exposure, requiring wind speeds of 170–200 mph design capacity and mandatory high-velocity wind tunnel testing for all products.' },
-      { question: 'Do I really need a permit for my roof?', answer: 'Yes, for full replacements and most structural repairs. Permits ensure independent verification that your installation meets local building codes for hurricane performance.' },
-      { question: 'Why is engineering sometimes required for a roof?', answer: 'HVHZ projects often need a Florida-licensed engineer to calculate uplift forces and specify fastening schedules, especially for tile and metal roofs where wind pressures can exceed 150–180 psf.' },
-      { question: 'How often should I have my roof inspected?', answer: 'At least once annually before hurricane season, plus after any named storm or significant wind event. Photo-documented inspections support future insurance claims.' },
-      { question: 'What are common signs of roof damage in South Florida?', answer: 'Watch for lifted or curled shingles, cracked tiles, loose ridge caps, deteriorated flashing, water stains on ceilings, daylight in the attic, clogged valleys, and algae or mold growth.' },
-      { question: 'How can I prepare my roof for hurricane season?', answer: 'Trim overhanging branches, clear gutters and drains, inspect hurricane straps in the attic, and schedule needed repairs by late June before the August–October peak season.' },
-      { question: 'What factors influence roof pricing in South Florida?', answer: 'Roof size and complexity, pitch, stories, material choice, tear-off complexity, deck condition, permit fees, engineering requirements, and hurricane upgrades all affect cost.' },
-      { question: 'When does homeowners insurance pay for a roof?', answer: 'Insurers cover wind, hail, or impact damage from storms. Coverage excludes age-related wear and poor maintenance. Document damage immediately with photos after any storm.' },
-      { question: 'Can a new roof lower my insurance premium?', answer: 'Yes. A new HVHZ-compliant roof with favorable wind mitigation features can reduce premiums by $500–$2,000+ annually through documented credits for roof covering, nailing pattern, secondary water barrier, and connections.' },
-      { question: 'What financing options are available?', answer: 'Options include home improvement installment loans (3–10+ years), home equity loans or lines of credit, and contractor financing partnerships with home improvement lenders.' },
-      { question: 'What licenses should a South Florida roofer have?', answer: 'Florida requires a State Certified Roofing Contractor license (CCC) or Registered Roofing Contractor license. Verify through DBPR license lookup before signing any contract.' },
-      { question: 'What questions should I ask a roofer in Miami-Dade/Broward?', answer: 'Ask about HVHZ experience, Miami-Dade NOA familiarity, engineering and permit handling, recent local project references, hurricane-specific proposal details, and inspection correction processes.' },
-      { question: 'How long do shingle roofs really last in South Florida?', answer: 'Architectural asphalt shingles typically last 15–22 years in South Florida despite 25–30 year manufacturer claims, due to intense UV, 150°F+ surface temperatures, and adhesive bond breakdown.' },
-      { question: 'What\'s different about 130-mph and higher wind-rated shingles?', answer: 'Class H shingles have enhanced adhesive strips and reinforced nailing zones, tested for 130+ mph winds. In HVHZ, they must be installed with 6 nails per shingle instead of 4.' },
-      { question: 'What\'s the difference between concrete and clay tiles?', answer: 'Concrete tiles last 30–50 years at lower cost. Clay tiles cost more but can exceed 75 years with superior color retention since color runs through the material rather than surface-applied.' },
-      { question: 'Why do tile roofs need special engineering?', answer: 'Tile systems face unique uplift challenges in HVHZ. Each tile must resist forces exceeding 150 psf while the 8–10 lbs/sq ft weight stresses the structure, requiring engineered fastener schedules.' },
-      { question: 'How do metal roofs perform in hurricanes?', answer: 'Properly engineered metal roofs show dramatically lower failure rates than other materials. Hurricane Irma data confirmed their superior performance when correctly installed with adequate clip spacing.' },
-      { question: 'What about noise and coastal corrosion on metal roofs?', answer: 'Rain noise is mitigated by proper insulation and sheathing. For coastal properties, specify aluminum or galvanized steel with salt-air-rated coatings and inspect fasteners every few years.' },
-      { question: 'What systems work for flat roofs in Florida?', answer: 'TPO, PVC, and modified bitumen are the most common. TPO dominates commercial roofing due to welded seams, reflective surface, and competitive pricing.' },
-      { question: 'How long do flat roofs last in South Florida?', answer: 'With proper maintenance, flat roof systems last 15–25+ years. The biggest enemies are ponding water, UV degradation, and debris blocking drains.' },
-      { question: 'What is a wind mitigation inspection and why do I need one?', answer: 'A wind mitigation inspection (OIR-B1-1802 form) documents hurricane-resistant features of your roof. Florida law requires insurers to offer discounts for qualifying features, typically saving $500–$2,000+ per year.' },
-      { question: 'How much can I save on insurance with a new roof?', answer: 'Homeowners commonly save $800–$2,500 annually with HVHZ-compliant roofs. Savings come from documented features including FBC-equivalent covering, sealed deck, hurricane straps, and hip geometry.' },
-      { question: 'My roof is leaking during a storm—what should I do right now?', answer: 'Protect belongings, place containers under drips, do not climb on a wet roof. Document with photos. Call a licensed roofer for emergency tarping after the storm passes. Insurance covers emergency mitigation.' },
-      { question: 'Can a roof leak be repaired without replacing the whole roof?', answer: 'Yes, if the roof is young and damage is localized. Repairable issues include failed flashing, cracked tiles, small shingle areas, and pipe boot seals. Multiple leak points may indicate replacement is needed.' },
-      { question: 'Does my HOA need to approve my roof replacement?', answer: 'Most South Florida HOAs require architectural review board approval covering material type, color, and profile. Allow 2–6 weeks for HOA approval. Note that HOA approval does not replace building permits.' },
-      { question: 'What areas do you serve?', answer: 'We serve all of Broward County and Palm Beach County including Fort Lauderdale, Pompano Beach, Hollywood, Coral Springs, Deerfield Beach, Boca Raton, West Palm Beach, and surrounding communities.' },
-      { question: 'Do you work in Miami-Dade County?', answer: 'Our primary service area covers Broward County and Palm Beach County, headquartered in Deerfield Beach. We do not currently service Miami-Dade County.' }
-    ]
-  },
-  '/roof-cost-calculator': {
-    faqs: [
-      { question: 'How much does a new roof cost in South Florida?', answer: 'New roof costs in Broward and Palm Beach Counties typically range from $9,000 to $70,000+ depending on roof size, material type, and system complexity. Shingle roofs ($4.50–$16/sq ft) are the most cost-effective, while tile roofs ($12–$35/sq ft) and metal roofs ($8–$28/sq ft) offer greater longevity. A 2,000 sq ft shingle roof averages $14,000–$22,000 installed. Tile roofs of the same size typically cost $24,000–$48,000.' },
-      { question: 'What affects roof replacement cost the most?', answer: 'Roof replacement cost is driven by the roof system requirements and the quality of installation, not just the material. The biggest pricing factors include roof size and complexity, tear-off requirements, HVHZ code compliance, underlayment and flashing details, ventilation upgrades, and any hidden decking repairs.' },
-      { question: 'Why are some roofing quotes so much cheaper than others?', answer: 'Lower quotes are often cheaper because corners are being cut somewhere — labor quality, supervision, underlayment/flashing details, code compliance, or warranty coverage. The best value usually comes from a contractor with trained crews, consistent installation standards, and a track record of roofs that perform long-term.' },
-      { question: 'What is the average cost per square foot for a new roof in Broward County?', answer: 'Broward County roof replacement costs average $8–$20 per square foot installed, depending on material type and HVHZ compliance requirements. Shingle roofs cost $7–$14/sq ft, concrete tile $14–$22/sq ft, metal roofs $12–$24/sq ft, and flat membrane systems $8–$16/sq ft.' },
-      { question: 'Why are roofs more expensive in South Florida than other parts of Florida?', answer: 'Broward County and most of South Florida fall within the High Velocity Hurricane Zone (HVHZ), which requires all roofing materials and installation methods to meet Miami-Dade NOA (Notice of Acceptance) standards. HVHZ-rated materials cost 10-20% more than standard materials, and the installation techniques are more labor-intensive.' },
-      { question: 'Do tile roofs cost more than shingles?', answer: 'Yes. Tile roofs cost 2–3 times more than asphalt shingle roofs due to material weight, installation complexity, and enhanced underlayment requirements. However, tile roofs typically last 40–50+ years compared to 20–30 years for shingles, offering better long-term value despite higher upfront cost.' },
-      { question: 'Can I get financing for a roof replacement?', answer: 'Yes. Most roofing contractors in South Florida offer financing options through third-party lenders with approved credit. Monthly payment plans typically range from 12–180 months. Financing allows homeowners to address urgent roof needs without depleting savings.' },
-      { question: 'Should I add wind mitigation upgrades during my reroof?', answer: 'Absolutely. Most wind mitigation upgrades can only be done during a reroof. The insurance savings alone ($2,000-$3,000+ per year) typically pay for the upgrades within 1-2 years. Over 20 years, that is $40,000-$60,000 in savings.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Roofing Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
-      { name: 'Roof Cost Calculator', url: 'https://allphaseconstructionfl.com/roof-cost-calculator' }
     ]
   },
 };
 
 const CITY_PAGE_SCHEMAS = {
-  '/locations/fort-lauderdale': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/fort-lauderdale#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/fort-lauderdale","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.1224,"longitude":-80.1373},"areaServed":[{"@type":"City","name":"Fort Lauderdale","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Fort Lauderdale?', answer: 'Fort Lauderdale roof replacement costs typically range from $12,000 to $55,000+ depending on roof size and material. Shingle roofs average $14,000–$22,000 for a typical home, tile roofs $28,000–$48,000, and metal roofs $24,000–$45,000. All installations must meet HVHZ 170+ mph wind requirements.' },
-      { question: 'Does Fort Lauderdale require HVHZ-compliant roofing?', answer: 'Yes. Fort Lauderdale is in the High Velocity Hurricane Zone (HVHZ), requiring all roofing materials to carry Miami-Dade NOA approval and installation methods to meet enhanced wind uplift standards for 170+ mph winds.' },
-      { question: 'How long does a roof last in Fort Lauderdale?', answer: 'With proper installation and maintenance: shingle roofs last 15–22 years, concrete tile 30–50 years, clay tile 50–75+ years, and metal roofs 40–60 years. Salt air exposure near the coast can accelerate wear on certain materials.' },
-      { question: 'Do I need a permit for roof replacement in Fort Lauderdale?', answer: 'Yes. Fort Lauderdale requires building permits for all roof replacements. As licensed contractor CCC-1331464, All Phase Construction USA pulls all required Broward County permits and coordinates inspections.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Fort Lauderdale', url: 'https://allphaseconstructionfl.com/locations/fort-lauderdale' }
-    ]
-  },
-  '/locations/boca-raton': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/boca-raton#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/boca-raton","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.3683,"longitude":-80.1289},"areaServed":[{"@type":"City","name":"Boca Raton","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Boca Raton?', answer: 'Boca Raton roof replacement costs typically range from $14,000 to $60,000+ depending on roof size and material. Shingle roofs average $15,000–$24,000, tile roofs $30,000–$52,000, and metal roofs $26,000–$48,000. As a Palm Beach County location, all installations must meet local building codes and HOA requirements.' },
-      { question: 'What are HOA requirements for roofing in Boca Raton?', answer: 'Many Boca Raton neighborhoods have strict HOA roof restrictions regarding color, material type, and style. Before choosing materials, check your community guidelines and obtain HOA approval. Our team at CCC-1331464 can help navigate HOA requirements and coordinate approvals.' },
-      { question: 'What hurricane protection should I add to my Boca Raton roof?', answer: 'Boca Raton benefits from Hurricane Clips, enhanced underlayment, impact-resistant shingles, and proper ventilation to prevent wind uplift. Metal roofs and tile provide superior hurricane protection compared to standard asphalt. These upgrades also reduce insurance premiums by $1,500–$3,000 annually.' },
-      { question: 'Do I need permits for roof replacement in Boca Raton?', answer: 'Yes. Palm Beach County requires building permits for all roof replacements. All Phase Construction USA (CGC-1526236) pulls all required permits and coordinates with Palm Beach County building department inspections.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Boca Raton', url: 'https://allphaseconstructionfl.com/locations/boca-raton' }
-    ]
-  },
-  '/locations/coral-springs': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/coral-springs#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/coral-springs","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.2709,"longitude":-80.2706},"areaServed":[{"@type":"City","name":"Coral Springs","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Coral Springs?', answer: 'Coral Springs roof replacement costs typically range from $12,000 to $52,000+ depending on roof size and material. Shingle roofs average $13,000–$21,000, tile roofs $26,000–$46,000, and metal roofs $22,000–$42,000. All installations must meet Broward County HVHZ 170+ mph wind requirements.' },
-      { question: 'What are HVHZ requirements for roofing in Coral Springs?', answer: 'Coral Springs is in the High Velocity Hurricane Zone, requiring Miami-Dade NOA-approved materials and enhanced installation methods for 170+ mph winds. HVHZ-compliant materials cost 10-20% more than standard options but provide superior storm protection and may qualify for insurance discounts.' },
-      { question: 'How long does a roof last in Coral Springs?', answer: 'With proper installation: shingle roofs last 15–22 years, concrete tile 30–50 years, and metal roofs 40–60 years. Broward County\'s heat and humidity can affect roof longevity, making quality installation and maintenance critical for maximum lifespan.' },
-      { question: 'Can I save money on insurance with a new roof in Coral Springs?', answer: 'Yes. New roofs with wind mitigation upgrades can reduce homeowners insurance by $1,500–$3,000+ annually. Installing hurricane clips, reinforced underlayment, and impact-resistant shingles typically pays for itself in insurance savings within 1-2 years. Contact us at (754) 227-5605 for details.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Coral Springs', url: 'https://allphaseconstructionfl.com/locations/coral-springs' }
-    ]
-  },
-  '/locations/pompano-beach': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/pompano-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/pompano-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.2379,"longitude":-80.1248},"areaServed":[{"@type":"City","name":"Pompano Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Pompano Beach?', answer: 'Pompano Beach roof replacement costs typically range from $12,000 to $54,000+ depending on roof size and material. Shingle roofs average $13,000–$22,000, tile roofs $27,000–$48,000, and metal roofs $23,000–$44,000. Coastal location may increase costs due to enhanced salt-air resistant materials.' },
-      { question: 'How does coastal salt air impact roofs in Pompano Beach?', answer: 'Salt air exposure accelerates corrosion on standard metal and fasteners, requiring premium materials and finishes. Metal roofs should have marine-grade coatings, shingles need corrosion-resistant nails, and flashings must be stainless steel. Tile and properly installed concrete options resist salt damage better than other materials.' },
-      { question: 'Is HVHZ compliance required in Pompano Beach?', answer: 'Yes. Pompano Beach is in the High Velocity Hurricane Zone requiring Miami-Dade NOA approval for all roofing materials and 170+ mph wind installation standards. HVHZ compliance is non-negotiable for permits and insurance eligibility in Broward County.' },
-      { question: 'What roofing materials work best for coastal areas like Pompano Beach?', answer: 'Concrete tile, marine-grade metal, and high-quality asphalt with fiberglass reinforcement perform best against salt air and wind. Avoid wood shingles in coastal zones. All Phase Construction USA (CCC-1331464) recommends materials rated for salt spray environments and 170+ mph winds.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Pompano Beach', url: 'https://allphaseconstructionfl.com/locations/pompano-beach' }
-    ]
-  },
-  '/locations/hollywood': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/hollywood#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/hollywood","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.0112,"longitude":-80.1495},"areaServed":[{"@type":"City","name":"Hollywood","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Hollywood, FL?', answer: 'Hollywood roof replacement costs typically range from $11,000 to $50,000+ depending on roof size and material. Shingle roofs average $12,000–$20,000, tile roofs $25,000–$44,000, and metal roofs $21,000–$40,000. All installations must meet Broward County HVHZ 170+ mph wind requirements.' },
-      { question: 'Are HVHZ requirements mandatory in Hollywood?', answer: 'Yes. Hollywood is in the High Velocity Hurricane Zone, requiring Miami-Dade NOA certification for all materials and enhanced installation for 170+ mph winds. HVHZ compliance is required for all permits, insurance coverage, and financing.' },
-      { question: 'What are the best flat roof options for Hollywood homes?', answer: 'Flat roofs in Hollywood typically use TPO (Thermoplastic Polyolefin), EPDM rubber, or modified bitumen systems. All materials must be HVHZ-certified. Cool roof coatings reflect heat and reduce energy costs. Proper drainage and wind-resistant seaming are critical for hurricane-prone areas.' },
-      { question: 'Can I get insurance discounts for a new roof in Hollywood?', answer: 'Yes. New roofs with wind mitigation upgrades qualify for $1,500–$3,000+ annual insurance savings. Upgrading to impact-resistant shingles, adding hurricane clips, and reinforcing underlayment typically pay for themselves in 1-2 years through insurance discounts. Call (754) 227-5605 for details.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Hollywood', url: 'https://allphaseconstructionfl.com/locations/hollywood' }
-    ]
-  },
-  '/locations/coconut-creek': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/coconut-creek#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/coconut-creek","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.2509,"longitude":-80.1789},"areaServed":[{"@type":"City","name":"Coconut Creek","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Coconut Creek?', answer: 'Coconut Creek roof replacement costs typically range from $12,000 to $54,000+ depending on roof size and material. Shingle roofs average $13,000–$22,000, tile roofs $27,000–$47,000, and metal roofs $23,000–$43,000. HVHZ compliance upgrades may add $2,000–$4,000 but often recover through insurance savings.' },
-      { question: 'What are HVHZ requirements in Coconut Creek?', answer: 'Coconut Creek is in the High Velocity Hurricane Zone requiring 170+ mph wind-rated materials and Miami-Dade NOA certification. All roofing must use hurricane clips, reinforced underlayment, and stainless steel fasteners. HVHZ compliance is mandatory for permits, financing, and homeowners insurance approval.' },
-      { question: 'What roof maintenance tips help in Florida\'s climate?', answer: 'Florida roofs require annual inspections to identify storm damage, debris accumulation, and algae growth. Regular cleaning extends roof lifespan. After major storms, inspect for missing shingles or tile cracks. All Phase Construction USA (CCC-1331464) offers annual maintenance and post-storm inspections.' },
-      { question: 'Should I choose shingles or tile for my Coconut Creek roof?', answer: 'Shingle roofs ($13–$22K) are budget-friendly and last 15–22 years. Tile roofs ($27–$47K) last 40–50+ years and resist hurricanes better, making them popular in Coconut Creek. Consider your budget, HOA requirements, and long-term durability needs. Call (754) 227-5605 for guidance.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Coconut Creek', url: 'https://allphaseconstructionfl.com/locations/coconut-creek' }
-    ]
-  },
-  '/locations/west-palm-beach': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/west-palm-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/west-palm-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.7153,"longitude":-80.0534},"areaServed":[{"@type":"City","name":"West Palm Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in West Palm Beach?', answer: 'West Palm Beach roof replacement costs typically range from $14,000 to $58,000+ depending on roof size and material. Shingle roofs average $15,000–$24,000, tile roofs $30,000–$52,000, and metal roofs $26,000–$48,000. Palm Beach County permits and wind mitigation upgrades may add $2,000–$5,000 to project costs.' },
-      { question: 'What makes a roof "hurricane-rated" in West Palm Beach?', answer: 'Hurricane-rated roofs meet Miami-Dade NOA standards with impact-resistant shingles, reinforced underlayment, stainless steel fasteners, and hurricane clips securing trusses. Wind mitigation inspections by DIA (Dade Inspection Association) certified inspectors verify compliance for insurance discounts and permit approval.' },
-      { question: 'Are permits required for roof replacement in West Palm Beach?', answer: 'Yes. Palm Beach County requires building permits for all roof replacements. All Phase Construction USA (CGC-1526236) handles all permitting, inspections, and Palm Beach County compliance to ensure your project meets all local codes.' },
-      { question: 'Should I get a roof inspection before buying a home in West Palm Beach?', answer: 'Absolutely. A professional roof inspection (included with most roof proposals) identifies structural damage, leaks, impact damage, and remaining lifespan. This helps buyers avoid surprise costs post-closing. Call (754) 227-5605 to schedule a pre-purchase roof inspection.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'West Palm Beach', url: 'https://allphaseconstructionfl.com/locations/west-palm-beach' }
-    ]
-  },
-  '/locations/wellington': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/wellington#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/wellington","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.659,"longitude":-80.2686},"areaServed":[{"@type":"City","name":"Wellington","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Wellington?', answer: 'Wellington roof replacement costs typically range from $13,000 to $56,000+ depending on roof size and material. Shingle roofs average $14,000–$23,000, tile roofs $28,000–$50,000, and metal roofs $24,000–$46,000. Wind mitigation upgrades add $2,000–$4,000 but recover costs through insurance savings.' },
-      { question: 'Why is tile roofing so popular in Wellington?', answer: 'Tile roofing is popular in Wellington due to HOA requirements in many upscale communities, exceptional durability (40–50+ years), and aesthetic appeal. Concrete and clay tiles resist hurricanes well and complement Spanish/Mediterranean architectural styles common in Wellington neighborhoods.' },
-      { question: 'What HOA considerations affect roof replacement in Wellington?', answer: 'Wellington HOAs often restrict roof colors, materials, and styles. Review your community guidelines before selecting materials and obtain HOA approval. All Phase Construction USA (CCC-1331464) helps navigate HOA requirements and coordinates necessary approvals.' },
-      { question: 'What wind mitigation improvements can I add during a Wellington reroof?', answer: 'Wellington homeowners can add hurricane clips, reinforced underlayment, impact-resistant shingles, and roof deck reinforcement during reroofs. These upgrades typically save $2,000–$3,000 annually on insurance. Most wind mitigation can only be done during reroof projects.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Wellington', url: 'https://allphaseconstructionfl.com/locations/wellington' }
-    ]
-  },
-  '/locations/boynton-beach': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/boynton-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/boynton-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.5317,"longitude":-80.0905},"areaServed":[{"@type":"City","name":"Boynton Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Boynton Beach?', answer: 'Boynton Beach roof replacement costs typically range from $13,000 to $55,000+ depending on roof size and material. Shingle roofs average $14,000–$23,000, tile roofs $28,000–$49,000, and metal roofs $24,000–$45,000. Palm Beach County permits and inspections are required for all projects.' },
-      { question: 'Are building permits required for roof replacement in Boynton Beach?', answer: 'Yes. Palm Beach County mandates building permits for all roof replacements. All Phase Construction USA (CGC-1526236) pulls all required permits, coordinates inspections, and ensures Boynton Beach code compliance throughout your project.' },
-      { question: 'What makes a roof "hurricane-ready" in Boynton Beach?', answer: 'Hurricane-ready roofs use Miami-Dade NOA-approved materials, hurricane clips, reinforced underlayment, stainless steel fasteners, and proper deck reinforcement. These upgrades meet wind mitigation standards and typically qualify for $2,000–$3,000 annual insurance savings.' },
-      { question: 'What financing options are available for roof replacement in Boynton Beach?', answer: 'Most roofing contractors offer 12–180 month financing plans through approved lenders with credit approval. This lets you address urgent roof needs without depleting savings. Call (754) 227-5605 to discuss financing options for your Boynton Beach roof project.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Boynton Beach', url: 'https://allphaseconstructionfl.com/locations/boynton-beach' }
-    ]
-  },
-  '/locations/delray-beach': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/delray-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/delray-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.4615,"longitude":-80.0728},"areaServed":[{"@type":"City","name":"Delray Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Delray Beach?', answer: 'Delray Beach roof replacement costs typically range from $13,000 to $56,000+ depending on roof size and material. Shingle roofs average $14,000–$23,000, tile roofs $28,000–$50,000, and metal roofs $24,000–$46,000. Coastal location may increase costs for salt-resistant materials.' },
-      { question: 'Are building permits required in Delray Beach?', answer: 'Yes. Palm Beach County requires building permits for all roof replacements. All Phase Construction USA (CGC-1526236, CCC-1331464) manages all permits, inspections, and code compliance with Delray Beach and Palm Beach County building departments.' },
-      { question: 'Should I choose tile or shingles for my Delray Beach roof?', answer: 'Tile roofs ($28–$50K) last 40–50+ years and resist salt air better than shingles, but cost more upfront. Shingle roofs ($14–$23K) are affordable but last 15–22 years. Coastal Delray Beach benefits from tile\'s durability and impact resistance despite higher initial cost.' },
-      { question: 'What wind mitigation savings are available in Delray Beach?', answer: 'Wind mitigation upgrades (hurricane clips, reinforced underlayment, impact-resistant shingles) typically save $2,000–$3,000+ annually on homeowners insurance. These improvements usually pay for themselves in 1-2 years and can only be done during reroof projects. Contact us at (754) 227-5605 for details.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Delray Beach', url: 'https://allphaseconstructionfl.com/locations/delray-beach' }
-    ]
-  },
-  '/locations/plantation': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/plantation#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/plantation","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.1276,"longitude":-80.2331},"areaServed":[{"@type":"City","name":"Plantation","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Plantation?', answer: 'Plantation roof replacement costs typically range from $12,000 to $54,000+ depending on roof size and material. Shingle roofs average $13,000–$22,000, tile roofs $27,000–$47,000, and metal roofs $23,000–$43,000. Broward County permits and HVHZ upgrades may add $2,500–$4,500 to the total project cost.' },
-      { question: 'What are HVHZ code requirements in Plantation?', answer: 'Plantation requires High Velocity Hurricane Zone (HVHZ) compliance with 170+ mph wind ratings and Miami-Dade NOA-approved materials. Installation methods must include hurricane clips, reinforced underlayment, and proper fastening. All Phase Construction USA (CGC-1526236) ensures complete HVHZ code compliance for all projects.' },
-      { question: 'Can I get insurance discounts with a new roof in Plantation?', answer: 'Yes. New roofs with wind mitigation upgrades (hurricane clips, impact-resistant shingles, reinforced underlayment) typically qualify for $1,500–$3,000+ annual homeowners insurance discounts. These upgrades usually pay for themselves within 1-2 years. Contact (754) 227-5605 for wind mitigation details.' },
-      { question: 'How long does a roof replacement take in Plantation?', answer: 'Most Plantation roof replacements take 2–5 days depending on roof size, complexity, and weather. A typical residential roof (2,000–3,000 sq ft) takes 2–3 days. All Phase Construction USA coordinates permits, inspections, and cleanup to minimize disruption to your home.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Plantation', url: 'https://allphaseconstructionfl.com/locations/plantation' }
-    ]
-  },
-  '/locations/sunrise': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/sunrise#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/sunrise","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.167,"longitude":-80.2561},"areaServed":[{"@type":"City","name":"Sunrise","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Sunrise?', answer: 'Sunrise roof replacement costs typically range from $12,000 to $54,000+ depending on roof size and material. Shingle roofs average $13,000–$22,000, tile roofs $27,000–$47,000, and metal roofs $23,000–$43,000. Broward County permits and wind mitigation upgrades may add $2,000–$4,000 to the project.' },
-      { question: 'What HVHZ wind ratings apply to Sunrise roofs?', answer: 'Sunrise is in the High Velocity Hurricane Zone requiring roofs rated for 170+ mph winds. All materials must carry Miami-Dade NOA approval with proper installation of hurricane clips, reinforced underlayment, and stainless steel fasteners. These standards are mandatory for Sunrise building permits.' },
-      { question: 'What is the best roofing material for Broward County homes?', answer: 'The best roofing material depends on budget and durability preferences. Shingles are affordable but last 15–22 years. Tile roofs last 40–50+ years and better resist hurricanes, making them ideal for Broward County. Metal roofs are durable and energy-efficient. Call (754) 227-5605 to discuss options.' },
-      { question: 'Do you need a permit for roof repair in Sunrise?', answer: 'Broward County requires permits for all roof replacements, but minor repairs (under 10% of roof area) may not need permits. For safety, All Phase Construction USA (CCC-1331464) recommends obtaining permits for major repairs to ensure code compliance and insurance coverage.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Sunrise', url: 'https://allphaseconstructionfl.com/locations/sunrise' }
-    ]
-  },
-  '/locations/weston': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/weston#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/weston","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.1003,"longitude":-80.3997},"areaServed":[{"@type":"City","name":"Weston","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Weston?', answer: 'Weston roof replacement costs typically range from $12,000 to $54,000+ depending on roof size and material. Shingle roofs average $13,000–$22,000, tile roofs $27,000–$47,000, and metal roofs $23,000–$43,000. Weston HOA requirements and HVHZ upgrades may add $3,000–$5,000 to total costs.' },
-      { question: 'What HOA roofing requirements apply in Weston?', answer: 'Many Weston neighborhoods have HOA restrictions on roof color, material, and style. Review your HOA CC&Rs before selecting roofing materials and obtain written HOA approval. All Phase Construction USA (CCC-1331464) helps navigate HOA requirements and coordinates approvals to avoid delays.' },
-      { question: 'What hurricane-rated roofing options are available in Weston?', answer: 'Hurricane-rated options include impact-resistant shingles, tile, metal, and reinforced flat roofing systems. All must meet HVHZ 170+ mph standards with Miami-Dade NOA approval, hurricane clips, and reinforced underlayment. These upgrades provide strength, longevity, and insurance discounts.' },
-      { question: 'What wind mitigation inspection savings are available in Weston?', answer: 'Wind mitigation upgrades typically save $2,000–$3,000+ annually on homeowners insurance. Inspections by DIA-certified inspectors verify compliance. These improvements usually pay for themselves in 1-2 years and can only be done during reroof projects. Call (754) 227-5605 for details.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Weston', url: 'https://allphaseconstructionfl.com/locations/weston' }
-    ]
-  },
-  '/locations/lake-worth': {
-    directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/lake-worth#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/lake-worth","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.6148,"longitude":-80.0575},"areaServed":[{"@type":"City","name":"Lake Worth","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"150","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]},
-    faqs: [
-      { question: 'How much does a new roof cost in Lake Worth?', answer: 'Lake Worth roof replacement costs typically range from $13,000 to $56,000+ depending on roof size and material. Shingle roofs average $14,000–$23,000, tile roofs $28,000–$50,000, and metal roofs $24,000–$46,000. Palm Beach County permits and coastal location may increase material and labor costs.' },
-      { question: 'Are permits required for roof replacement in Lake Worth?', answer: 'Yes. Palm Beach County requires building permits for all roof replacements. All Phase Construction USA (CGC-1526236, CCC-1331464) manages all permits, inspections, and code compliance with Lake Worth and Palm Beach County building departments throughout your project.' },
-      { question: 'When should I get a roof inspection before hurricane season in Lake Worth?', answer: 'Schedule roof inspections in spring (March-May) before hurricane season. Inspections identify weaknesses, missing shingles, leaks, and damage that could worsen in storms. Annual pre-season inspections help prevent costly emergency repairs. Call (754) 227-5605 to schedule your Lake Worth roof inspection.' },
-      { question: 'What financing options are available for Lake Worth roof replacement?', answer: 'Most contractors offer 12–180 month financing plans through approved lenders with credit approval. Many offer zero-down options and work with insurance companies on claims. Financing lets you address urgent roof needs without depleting savings. Contact (754) 227-5605 for Lake Worth financing options.' }
-    ],
-    breadcrumbs: [
-      { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
-      { name: 'Locations', url: 'https://allphaseconstructionfl.com/locations' },
-      { name: 'Lake Worth', url: 'https://allphaseconstructionfl.com/locations/lake-worth' }
-    ]
-  },
+  '/locations/fort-lauderdale': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/fort-lauderdale#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/fort-lauderdale","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.1224,"longitude":-80.1373},"areaServed":[{"@type":"City","name":"Fort Lauderdale","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/boca-raton': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/boca-raton#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/boca-raton","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.3683,"longitude":-80.1289},"areaServed":[{"@type":"City","name":"Boca Raton","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/coral-springs': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/coral-springs#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/coral-springs","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.2709,"longitude":-80.2706},"areaServed":[{"@type":"City","name":"Coral Springs","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/pompano-beach': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/pompano-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/pompano-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.2379,"longitude":-80.1248},"areaServed":[{"@type":"City","name":"Pompano Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/hollywood': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/hollywood#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/hollywood","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.0112,"longitude":-80.1495},"areaServed":[{"@type":"City","name":"Hollywood","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/coconut-creek': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/coconut-creek#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/coconut-creek","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.2509,"longitude":-80.1789},"areaServed":[{"@type":"City","name":"Coconut Creek","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/west-palm-beach': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/west-palm-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/west-palm-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.7153,"longitude":-80.0534},"areaServed":[{"@type":"City","name":"West Palm Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/wellington': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/wellington#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/wellington","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.659,"longitude":-80.2686},"areaServed":[{"@type":"City","name":"Wellington","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/boynton-beach': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/boynton-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/boynton-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.5317,"longitude":-80.0905},"areaServed":[{"@type":"City","name":"Boynton Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/delray-beach': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/delray-beach#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/delray-beach","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.4615,"longitude":-80.0728},"areaServed":[{"@type":"City","name":"Delray Beach","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/plantation': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/plantation#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/plantation","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.1276,"longitude":-80.2331},"areaServed":[{"@type":"City","name":"Plantation","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/sunrise': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/sunrise#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/sunrise","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.167,"longitude":-80.2561},"areaServed":[{"@type":"City","name":"Sunrise","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/weston': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/weston#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/weston","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.1003,"longitude":-80.3997},"areaServed":[{"@type":"City","name":"Weston","containedInPlace":{"@type":"AdministrativeArea","name":"Broward County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
+  '/locations/lake-worth': { directSchema: {"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://allphaseconstructionfl.com/locations/lake-worth#roofingcontractor","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com/locations/lake-worth","telephone":"(754) 227-5605","address":{"@type":"PostalAddress","streetAddress":"590 Goolsby Blvd","addressLocality":"Deerfield Beach","addressRegion":"FL","postalCode":"33442","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":26.6148,"longitude":-80.0575},"areaServed":[{"@type":"City","name":"Lake Worth","containedInPlace":{"@type":"AdministrativeArea","name":"Palm Beach County"}},{"@type":"State","name":"Florida"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"136","bestRating":"5"},"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}],"hasCredential":["Florida State Certified Roofing Contractor CCC-1331464","Florida State Certified General Contractor CGC-1526236","HVHZ Certified"]} },
 };
 
 
   
   
-  // ── Pre-fetch blog posts from Supabase (needed for /blog listing page and blog post pages) ──
-  const supabasePostsEarly = await fetchBlogPostsFromSupabase();
-
-  // ── Build comprehensive crawler links HTML (injected on every page for full internal linking) ──
-  const locationLinks = LOCATIONS.map(loc => `  <a href="/locations/${loc.slug}">${loc.city}, FL Roofing</a>`).join('\n');
-  const cityLinks = cities.filter(c => !c.slug.includes('county')).map(c => {
-    const cityName = c.slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return `  <a href="/roof-repair/${c.slug}">${cityName} Roof Repair</a>\n  <a href="/roof-inspection/${c.slug}">${cityName} Roof Inspection</a>`;
-  }).join('\n');
-  const blogCrawlerLinks = (supabasePostsEarly || []).map(p => `  <a href="/blog/${p.slug}">${p.title}</a>`).join('\n');
-
-  CRAWLER_LINKS_HTML = `
-<!-- Comprehensive internal links for crawlers — ensures all pages are discoverable -->
-<nav style="display:none" aria-hidden="true" id="crawler-sitemap">
-  <!-- Service Pages -->
-  <a href="/">Home</a>
-  <a href="/roofing-services">Roofing Services</a>
-  <a href="/residential-roofing">Residential Roofing</a>
-  <a href="/commercial-roofing">Commercial Roofing</a>
-  <a href="/shingle-roofing">Shingle Roofing</a>
-  <a href="/metal-roofing">Metal Roofing</a>
-  <a href="/flat-roofing">Flat Roofing</a>
-  <a href="/tile-roofing">Tile Roofing</a>
-  <a href="/roof-repair">Roof Repair</a>
-  <a href="/roof-inspection">Roof Inspection</a>
-  <a href="/roof-replacement">Roof Replacement</a>
-  <a href="/roof-replacement-process">Roof Replacement Process</a>
-  <a href="/roof-maintenance-programs">Roof Maintenance Programs</a>
-  <a href="/roof-cost-calculator">Roof Cost Calculator</a>
-  <a href="/reviews">Reviews</a>
-  <a href="/projects">Our Projects</a>
-  <a href="/frequently-asked-questions">FAQ</a>
-  <a href="/about-us">About Us</a>
-  <a href="/contact">Contact</a>
-  <a href="/blog">Blog</a>
-  <a href="/learning-center">Learning Center</a>
-  <a href="/easy-payments">Easy Payments</a>
-  <a href="/how-to-hire-roofing-contractor">How to Hire a Roofing Contractor</a>
-  <a href="/single-ply-roofing">Single Ply Roofing</a>
-  <a href="/licensed-roofing-contractor">Licensed Roofing Contractor</a>
-  <!-- Location Pages -->
-${locationLinks}
-  <!-- Best Roofers Sub-Pages -->
-    <a href="/locations/fort-lauderdale/best-roofers-fort-lauderdale">Best Roofers Fort Lauderdale</a>
-    <a href="/locations/deerfield-beach/best-roofers-deerfield-beach">Best Roofers Deerfield Beach</a>
-    <!-- City Service Pages (Roof Repair & Inspection) -->
-${cityLinks}
-  <!-- Blog Posts -->
-${blogCrawlerLinks}
-</nav>
-`;
-  console.log(`🔗 Crawler links block built: ${CRAWLER_LINKS_HTML.split('<a href=').length - 1} internal links on every page`);
-
-  // Re-inject crawler links into homepage (homepage was generated before CRAWLER_LINKS_HTML was built)
-  if (CRAWLER_LINKS_HTML) {
-    const homePath = path.join(publicDir, 'index.html');
-    let homeContent = fs.readFileSync(homePath, 'utf-8');
-    homeContent = homeContent.replace('</body>', CRAWLER_LINKS_HTML + '</body>');
-    fs.writeFileSync(homePath, homeContent);
-    console.log('🔗 Injected crawler links into homepage index.html');
-  }
-
-  // Function to generate blog listing page with real links to all posts
-  function generateBlogListingContent(posts) {
-    if (!posts || posts.length === 0) {
-      return `
-<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
-  <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Roofing Insights & Industry News</h1>
-  <p style="text-align: center; color: #6b7280; font-size: 1.15rem; margin-bottom: 2rem;">Expert advice, maintenance tips, and the latest trends in residential and commercial roofing</p>
-  <p style="text-align: center; color: #6b7280;">Check back soon for new content!</p>
-  ${companyAuthorityFooter()}
-</section>`.trim();
-    }
-
-    const postCards = posts.map(post => {
-      const pubDate = new Date(post.published_date);
-      const formattedDate = pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-      const excerpt = post.excerpt ? (post.excerpt.length > 150 ? post.excerpt.substring(0, 150).trim() + '...' : post.excerpt) : '';
-      const category = (post.categories && post.categories.length > 0) ? post.categories[0] : '';
-
-      return `
-      <article style="background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 1.5rem;">
-        <a href="/blog/${post.slug}" style="text-decoration: none; color: inherit; display: block;">
-          ${post.featured_image ? `<img src="${post.featured_image}" alt="${post.title}" style="width: 100%; height: 14rem; object-fit: cover;" loading="lazy" />` : ''}
-          <div style="padding: 1.5rem;">
-            ${category ? `<span style="display: inline-block; background: #dc2626; color: white; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.75rem;">${category}</span>` : ''}
-            <h2 style="color: #111827; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3;">${post.title}</h2>
-            <div style="color: #6b7280; font-size: 0.875rem; margin-bottom: 0.75rem;">
-              <time datetime="${post.published_date}">${formattedDate}</time> • ${post.author || 'All Phase Construction USA'}
-            </div>
-            ${excerpt ? `<p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">${excerpt}</p>` : ''}
-            <span style="color: #dc2626; font-weight: 600; font-size: 0.95rem;">Read More →</span>
-          </div>
-        </a>
-      </article>`;
-    }).join('\n');
-
-    return `
-<section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
-  <div style="text-align: center; margin-bottom: 3rem;">
-    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Roofing Insights & Industry News</h1>
-    <p style="color: #6b7280; font-size: 1.15rem; max-width: 700px; margin: 0 auto;">Expert advice, maintenance tips, and the latest trends in residential and commercial roofing from South Florida's dual-licensed roofing contractor.</p>
-  </div>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
-    ${postCards}
-  </div>
-
-  <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0; text-align: center;">
-    <h2 style="color: white; font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Need Expert Roofing Advice?</h2>
-    <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Get a free consultation and estimate for your roofing project.</p>
-    <a href="/contact" style="display: inline-block; background: white; color: #dc2626; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem; margin-right: 1rem;">Contact Us Today</a>
-    <a href="/roof-cost-calculator" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Get a Roofing Estimate</a>
-  </div>
-
-  ${companyAuthorityFooter()}
-</section>`.trim();
-  }
-
   // 2. Generate Service Pages (residential, commercial, metal, tile, etc.)
   const servicePages = [
     { path: '/residential-roofing', title: 'Residential Roofing Services' },
@@ -2210,9 +1784,7 @@ ${blogCrawlerLinks}
     { path: '/about-us', title: 'About All Phase Construction' },
     { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' },
     { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
-    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' },
-    { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
-    { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' }
+    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
@@ -2222,10 +1794,10 @@ ${blogCrawlerLinks}
     let jsonLdSchema = null;
     const schemaConfig = SERVICE_PAGE_SCHEMAS[pagePath] || CITY_PAGE_SCHEMAS[pagePath];
     if (schemaConfig) {
-      const schemaItems = [];
       if (schemaConfig.directSchema) {
-        schemaItems.push(schemaConfig.directSchema);
-      }
+        jsonLdSchema = schemaConfig.directSchema;
+      } else {
+      const schemaItems = [];
       if (schemaConfig.faqs) {
         schemaItems.push({
           '@context': 'https://schema.org',
@@ -2253,24 +1825,23 @@ ${blogCrawlerLinks}
           }))
         });
       }
-      if (schemaConfig.breadcrumbs) {
-        schemaItems.push({
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: schemaConfig.breadcrumbs.map((crumb, index) => ({
-            '@type': 'ListItem',
-            position: index + 1,
-            name: crumb.name,
-            item: crumb.url
-          }))
-        });
-      }
+      schemaItems.push({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: schemaConfig.breadcrumbs.map((crumb, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: crumb.name,
+          item: crumb.url
+        }))
+      });
       jsonLdSchema = schemaItems;
+      } // end else
     }    const html = createHTMLTemplate(
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/roofing-services' ? generateRoofingServicesContent() : pagePath === '/blog' ? generateBlogListingContent(supabasePostsEarly) : defaultServicePageContent(title),
+      pagePath === '/roofing-services' ? generateRoofingServicesContent() : defaultServicePageContent(title),
       jsonLdSchema
     );
 
@@ -2300,7 +1871,7 @@ ${blogCrawlerLinks}
 ${companyAuthorityFooter()}
 `.trim();
   fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), createHTMLTemplate(
-    'Roof Replacement South Florida | Free Estimate | All Phase',
+    'Roof Replacement South Florida (2026 Cost) | All Phase',
     'Licensed roof replacement contractor in South Florida. Serving Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. Free estimates. Call (754) 227-5605.',
     'https://allphaseconstructionfl.com/roof-replacement',
     roofReplacementContent
@@ -2429,205 +2000,91 @@ ${companyAuthorityFooter()}
     totalPages++;
   });
 
-  // 2.5. Generate Blog Post Pages from Supabase (REAL CONTENT)
-  console.log('\n📚 Generating Blog Post Pages from Supabase data...\n');
+  // 2.5. Generate Blog Post Pages from Sitemap
+  console.log('\n🔍 Generating Blog Post Pages from Sitemap...\n');
 
-  const supabasePosts = supabasePostsEarly; // Already fetched above
-  let blogPostsGenerated = 0;
+  try {
+    const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
+    if (fs.existsSync(sitemapPath)) {
+      const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
 
-  if (supabasePosts.length > 0) {
-    for (const post of supabasePosts) {
-      try {
-        const blogCanonical = `https://allphaseconstructionfl.com/blog/${post.slug}`;
-        const blogPath = `/blog/${post.slug}`;
+      // Extract all blog URLs from sitemap
+      const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
 
-        // Check seo-titles.json overrides FIRST (these are hand-crafted and take priority)
-        const seoOverride = seoTitlesConfig.staticTitles[blogPath];
+      if (blogUrlMatches && blogUrlMatches.length > 0) {
+        const blogSlugs = blogUrlMatches
+          .map(match => {
+            const urlMatch = match.match(/\/blog\/([^<]+)</);
+            return urlMatch ? urlMatch[1].replace(/\/$/, '') : null;
+          })
+          .filter(slug => slug && slug !== 'index.html');
 
-        const blogMetaTitle = (seoOverride && seoOverride.title) || post.meta_title || post.title;
-    const cleanBlogTitle = (() => { const t = blogMetaTitle.replace(/\s*\|.*$/, '').trim(); return t.length <= 52 ? t : t.substring(0, 52).replace(/\s+\S*$/, ''); })();
-        let blogMetaDesc = (seoOverride && seoOverride.description) || post.meta_description || post.excerpt || '';
-        // If description is too short, auto-generate from content
-        if (blogMetaDesc.length < 70 && post.content) {
-          const stripped = post.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-          const sentences = stripped.match(/[^.!?]+[.!?]+/g) || [];
-          blogMetaDesc = sentences.slice(0, 3).join(' ').trim();
-          if (blogMetaDesc.length > 155) blogMetaDesc = blogMetaDesc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
-          if (blogMetaDesc.length < 70) blogMetaDesc = `${post.title}. Expert roofing insights from a dual-licensed South Florida contractor. Read the full guide at All Phase Construction USA.`;
-        }
-        // If description is too long, trim at word boundary
-        if (blogMetaDesc.length > 160) {
-          blogMetaDesc = blogMetaDesc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
-        }
+        console.log(`Found ${blogSlugs.length} blog posts in sitemap\n`);
 
-        // Format the published date
-        const pubDate = new Date(post.published_date);
-        const formattedDate = pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        blogSlugs.forEach(slug => {
+          // Generate title from slug
+          const blogTitle = slug
+            .split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
 
-        // Build category tags HTML
-        const categoryTags = (post.categories || []).map(cat =>
-          `<a href="/blog" style="display: inline-block; background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; text-decoration: none; margin-right: 0.5rem;">${cat}</a>`
-        ).join('');
+          const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
+          const blogDescription = `Expert roofing insights on ${blogTitle.toLowerCase()} from All Phase Construction USA, South Florida's dual-licensed roofing contractor.`;
 
-        // Build FAQ section if FAQs exist
-        let faqHTML = '';
-        let faqSchema = null;
-        if (post.faqs && Array.isArray(post.faqs) && post.faqs.length > 0) {
-          const faqItems = post.faqs.map(faq => `
-            <div style="margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 1.5rem;">
-              <h3 style="color: #111827; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">${faq.question}</h3>
-              <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">${faq.answer}</p>
-            </div>
-          `).join('');
-
-          faqHTML = `
-            <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e5e7eb;">
-              <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
-              ${faqItems}
-            </section>
-          `;
-
-          faqSchema = {
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: post.faqs.map(faq => ({
-              '@type': 'Question',
-              name: faq.question,
-              acceptedAnswer: { '@type': 'Answer', text: faq.answer }
-            }))
-          };
-        }
-
-        // Build the full blog post HTML with REAL article content
-        const blogContent = `
+          const blogContent = `
 <section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
   <article>
-    <header style="margin-bottom: 2rem;">
-      ${categoryTags ? `<div style="margin-bottom: 1rem;">${categoryTags}</div>` : ''}
-      <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${post.title}</h1>
-      <div style="display: flex; align-items: center; gap: 1rem; color: #6b7280; font-size: 0.95rem;">
-        <span>By ${post.author || 'All Phase Construction USA'}</span>
-        <span>•</span>
-        <time datetime="${post.published_date}">${formattedDate}</time>
-      </div>
-    </header>
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${blogTitle}</h1>
 
-    ${post.excerpt ? `<p style="color: #6b7280; font-size: 1.15rem; line-height: 1.75; margin-bottom: 2rem; font-style: italic;">${post.excerpt}</p>` : ''}
+    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
 
-    <div class="blog-content" style="color: #374151; font-size: 1.05rem; line-height: 1.85;">
-      ${post.content}
+    <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
+      <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">
+        <strong>Expert Roofing Insights</strong> from All Phase Construction USA ✅ Your trusted dual-licensed roofing contractor serving Broward and Palm Beach County.
+      </p>
     </div>
 
-    ${faqHTML}
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+      At All Phase Construction USA, we bring decades of roofing expertise to South Florida homeowners and businesses. As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we understand both roofing systems and structural engineering, ensuring every project meets the highest standards of quality and hurricane compliance.
+    </p>
+
+    <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Professional Roofing Services</h2>
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+      Whether you need roof repair, roof replacement, roof inspection, or preventive maintenance, our team delivers HVHZ-compliant workmanship backed by manufacturer warranties and our A+ BBB rating.
+    </p>
 
     <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
       <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
       <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
       <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
     </div>
-
-    <nav style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
-      <a href="/blog" style="color: #dc2626; font-weight: 600; text-decoration: none;">← Back to All Blog Posts</a>
-    </nav>
   </article>
 
   ${companyAuthorityFooter()}
 </section>
-        `.trim();
+          `.trim();
 
-        // Build JSON-LD schema for the blog post
-        const blogSchema = [
-          {
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            headline: post.title,
-            description: blogMetaDesc,
-            datePublished: post.published_date,
-            author: {
-              '@type': 'Organization',
-              name: post.author || 'All Phase Construction USA'
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'All Phase Construction USA',
-              url: 'https://allphaseconstructionfl.com'
-            },
-            mainEntityOfPage: blogCanonical,
-            image: post.featured_image || undefined
-          },
-          {
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com' },
-              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://allphaseconstructionfl.com/blog' },
-              { '@type': 'ListItem', position: 3, name: post.title, item: blogCanonical }
-            ]
-          }
-        ];
+          const blogHTML = createHTMLTemplate(
+            `${blogTitle} | All Phase USA Blog`,
+            blogDescription,
+            blogCanonical,
+            blogContent
+          );
 
-        if (faqSchema) {
-          blogSchema.push(faqSchema);
-        }
-
-        const blogHTML = createHTMLTemplate(
-          `${cleanBlogTitle} | All Phase`,
-          blogMetaDesc,
-          blogCanonical,
-          blogContent,
-          blogSchema
-        );
-
-        const blogDir = path.join(publicDir, 'blog', post.slug);
-        fs.mkdirSync(blogDir, { recursive: true });
-        fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
-
-        const contentLength = post.content ? post.content.length : 0;
-        console.log(`✅ Generated: dist/blog/${post.slug}/index.html (${contentLength} chars of real content)`);
-        totalPages++;
-        blogPostsGenerated++;
-      } catch (err) {
-        console.error(`❌ Error generating blog post "${post.slug}":`, err.message);
+          const blogDir = path.join(publicDir, 'blog', slug);
+          fs.mkdirSync(blogDir, { recursive: true });
+          fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
+          console.log(`✅ Generated: dist/blog/${slug}/index.html`);
+          totalPages++;
+        });
+      } else {
+        console.log('✅ No blog posts found in sitemap\n');
       }
+    } else {
+      console.log('⚠️ Sitemap not found at public/sitemap.xml\n');
     }
-    console.log(`\n📚 Blog posts generated with real Supabase content: ${blogPostsGenerated}`);
-  } else {
-    // Fallback: try generating from sitemap with generic content if Supabase fetch failed
-    console.log('⚠️ No posts from Supabase. Falling back to sitemap-based generation...\n');
-    try {
-      const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
-      if (fs.existsSync(sitemapPath)) {
-        const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
-        const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
-        if (blogUrlMatches && blogUrlMatches.length > 0) {
-          const blogSlugs = blogUrlMatches
-            .map(match => { const m = match.match(/\/blog\/([^<]+)/); return m ? m[1].replace(/\/$/, '') : null; })
-            .filter(slug => slug && slug !== 'index.html');
-          blogSlugs.forEach(slug => {
-            const blogTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-            const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
-            const blogDescription = `Expert roofing insights on ${blogTitle.toLowerCase()} from All Phase Construction USA.`;
-            const fallbackContent = `
-<section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
-  <article>
-    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">${blogTitle}</h1>
-    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
-    <a href="/blog" style="color: #dc2626; font-weight: 600; text-decoration: none;">← Back to All Blog Posts</a>
-  </article>
-  ${companyAuthorityFooter()}
-</section>`.trim();
-            const blogHTML = createHTMLTemplate(`${blogTitle} | All Phase`, blogDescription, blogCanonical, fallbackContent);
-            const blogDir = path.join(publicDir, 'blog', slug);
-            fs.mkdirSync(blogDir, { recursive: true });
-            fs.writeFileSync(path.join(blogDir, 'index.html'), blogHTML);
-            console.log(`✅ Generated (fallback): dist/blog/${slug}/index.html`);
-            totalPages++;
-          });
-        }
-      }
-    } catch (err) {
-      console.log('⚠️ Error in fallback blog generation:', err.message);
-    }
+  } catch (err) {
+    console.log('⚠️ Error generating blog posts:', err.message);
   }
 
   // 3. Generate 3-Silo City Pages for all cities
@@ -2721,19 +2178,9 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersDFBDir, { recursive: true });
   const bestRoofersDFBContent = `
   <h1>Top 5 Best Rated Roofers in Deerfield Beach, FL (2026)</h1>
-  <p>Finding a reliable roofer in Deerfield Beach is not as simple as picking the first name on Google. Deerfield Beach sits within the High-Velocity Hurricane Zone (HVHZ), which means every roof installation, repair, or replacement must meet some of the strictest building codes in the country. The wrong contractor can leave your home vulnerable to storm damage, insurance claim denials, and costly code violations. We reviewed dozens of roofing contractors serving Deerfield Beach and narrowed it down to the five that consistently deliver quality workmanship, proper permitting, and genuine HVHZ compliance.</p>
-
-  <h2>Why Choosing the Right Roofer in Deerfield Beach Matters</h2>
-  <p>Deerfield Beach homeowners face unique roofing challenges. Located in Broward County along the coast, properties here are subject to salt air corrosion, extreme UV exposure, and hurricane-force winds. Florida Building Code requires HVHZ-rated materials and installation methods for every roofing project in this area. A roofer who cuts corners on underlayment, flashing, or fastener patterns is putting your entire home at risk. Beyond structural concerns, improperly installed roofs can void your homeowners insurance coverage, leaving you financially exposed when the next storm hits.</p>
-
-  <h2>What We Looked for in Our Rankings</h2>
-  <p>Our review process evaluated each contractor on licensing and insurance verification, HVHZ compliance history, customer reviews across Google and the BBB, warranty offerings, response time, and transparency in pricing. We also checked for active state certifications, Broward County permit pull history, and whether each company employs in-house crews rather than relying entirely on subcontractors. Roofing companies that demonstrated consistent quality across shingle, tile, metal, and flat roof systems ranked highest.</p>
-
-  <h2>1. All Phase Construction USA</h2>
-  <p>All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Dual licensed as both a Certified General Contractor (CGC1532699) and Certified Roofing Contractor (CCC1334089), All Phase brings a level of expertise that most single-license roofers cannot match. With over 2,500 roofs completed across South Florida, they specialize in full roof replacements, storm damage repair, and insurance claim assistance. Their in-house team handles every project from permit to final inspection, ensuring full HVHZ code compliance. All Phase offers free roof inspections, detailed written estimates, and a transferable workmanship warranty that protects your investment long after the job is done.</p>
-
+  <p>Finding a roofer in Deerfield Beach you can actually trust. We reviewed dozens of contractors and five rose to the top through verifiable credentials, strong reviews, and proven track records.</p>
   <h2>Finding a Roofer in Deerfield Beach You Can Actually Trust</h2>
-  <p>The roofing industry in South Florida has its share of storm chasers and unlicensed operators who appear after every hurricane season. Protect yourself by always verifying a contractor license through the Florida DBPR website, requesting proof of workers compensation and liability insurance, and confirming that the company pulls its own permits with Broward County. A trustworthy roofer will never ask for full payment upfront and will always provide a written contract detailing scope of work, materials, timeline, and warranty terms. If a deal sounds too good to be true in Deerfield Beach roofing, it almost certainly is.</p>
+  <p>All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Dual licensed: CCC-1331464 (Roofing Contractor) &amp; CGC-1526236 (General Contractor). Rated 4.8/5 from 138 verified reviews. Call (754) 227-5605 for a free roof assessment.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersDFBDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
@@ -2748,19 +2195,16 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersFTLDir, { recursive: true });
   const bestRoofersFTLContent = `
   <h1>Top 5 Best Rated Roofers in Fort Lauderdale, FL (2026)</h1>
-  <p>Fort Lauderdale is one of the most demanding markets for roofing contractors in all of Florida. Every project must comply with Broward County HVHZ building codes, which are among the toughest in the nation. Between salt air exposure, intense UV radiation, and annual hurricane threats, your roof takes more punishment here than in almost any other part of the country. We evaluated dozens of Fort Lauderdale roofing companies and identified the five that consistently deliver code-compliant installations, transparent pricing, and long-term reliability.</p>
-
-  <h2>Why Fort Lauderdale Roofing Requires Specialized Expertise</h2>
-  <p>Fort Lauderdale sits squarely within the High-Velocity Hurricane Zone, which means standard roofing practices from other parts of the country do not apply here. Every roof must use HVHZ-approved materials, specific nail patterns, enhanced underlayment systems, and sealed roof decking. The permit process in Broward County is rigorous, requiring engineering calculations, product approvals, and multiple inspections. Contractors who are not intimately familiar with these requirements will delay your project, fail inspections, and potentially leave your home without a valid permit, which creates serious problems for insurance coverage and future resale value.</p>
-
-  <h2>How We Evaluated Each Contractor</h2>
-  <p>Our rankings are based on verified state licensing, Broward County permit history, Google and BBB customer reviews, warranty quality, response time, and demonstrated expertise across multiple roofing systems including shingle, tile, metal, and flat roofing. We prioritized companies that employ their own installation crews, carry full workers compensation and liability insurance, and have a documented track record of passing HVHZ inspections on the first attempt. Roofers who rely heavily on subcontractors or who have a history of permit violations were excluded from consideration.</p>
-
-  <h2>1. All Phase Construction USA</h2>
-  <p>All Phase Construction USA serves Fort Lauderdale from their headquarters at 590 Goolsby Blvd in nearby Deerfield Beach, FL 33442. Holding dual state licenses as both a Certified General Contractor (CGC1532699) and Certified Roofing Contractor (CCC1334089), All Phase is uniquely qualified to handle everything from straightforward re-roofs to complex structural repairs. With more than 2,500 completed roofing projects across Broward and Palm Beach counties, they bring deep local experience to every job. Their team manages each project in-house from initial inspection through final Broward County sign-off, ensuring full HVHZ compliance. All Phase offers complimentary roof inspections, written estimates with no hidden fees, and a transferable workmanship warranty.</p>
-
-  <h2>Protecting Yourself from Unlicensed Roofers in Fort Lauderdale</h2>
-  <p>After every major storm, Fort Lauderdale sees an influx of out-of-state contractors and unlicensed operators looking to capitalize on desperate homeowners. These storm chasers often collect deposits and disappear, perform substandard work that fails inspection, or use materials that do not meet HVHZ requirements. Always verify your contractor license on the Florida DBPR website, confirm active workers compensation insurance, and ensure the company pulls permits under their own license with Broward County. A reputable Fort Lauderdale roofer will provide a detailed written contract, never demand full payment before work begins, and stand behind their installation with a meaningful warranty.</p>
+  <p>Finding a Roofer in Fort Lauderdale You Can Actually Trust. Fort Lauderdale falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <h2>Your List of the Top 5 Best Roofers in Fort Lauderdale, FL</h2>
+  <ol>
+    <li>All Phase Construction USA</li>
+    <li>Allied Roofing &amp; Sheet Metal</li>
+    <li>Tiger Team Roofing</li>
+    <li>Nast Roofing</li>
+    <li>Paul Bange Roofing</li>
+  </ol>
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Broward and Palm Beach County, with significant project history in Fort Lauderdale. Call (754) 227-5605 for a free roof inspection.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersFTLDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
@@ -2908,7 +2352,7 @@ console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTM
 }
 
 // Run the generator
-await generateStaticFiles();
+generateStaticFiles();
 
 // Copy IndexNow key file to dist
 fs.copyFileSync('public/1864f0fe7c93447e946f774adbe8e54a.txt', 'dist/1864f0fe7c93447e946f774adbe8e54a.txt');

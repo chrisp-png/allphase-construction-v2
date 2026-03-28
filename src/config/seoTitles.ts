@@ -38,8 +38,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/contact'
   },
   '/about-us': {
-    title: 'About All Phase Construction USA | South Florida Roofer Since 2005',
-    description: 'Family-owned South Florida roofer with 2,500+ roofs since 2005. Dual-licensed CCC/CGC, HVHZ-certified, A+ BBB rated. Meet the team behind Broward & Palm Beach County\'s trusted roofing company.',
+    title: 'About All Phase Construction | Expert Roofing Specialist',
+    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 138 reviews.',
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
@@ -57,181 +57,15 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Roofing tips, cost guides, and hurricane prep for South Florida homeowners. Written by a dual-licensed contractor with 20+ years experience.',
     canonical: 'https://allphaseconstructionfl.com/blog'
   },
-  // ── Blog post meta description overrides (120-160 chars each) ──
   '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home': {
-    title: 'Wind Mitigation Guide | Save 20-60% on Insurance',
-    description: 'How wind mitigation inspections save South Florida homeowners thousands on insurance. What inspectors check, how to qualify & the best upgrades.',
+    title: 'Wind Mitigation Inspection Guide | Save 20-60% on Insurance | South Florida',
+    description: 'How wind mitigation inspections save South Florida homeowners thousands on insurance. What inspectors check, how to qualify, and which upgrades have the biggest ROI.',
     canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home'
   },
   '/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes': {
-    title: 'Flat Roofs in Florida: Pros, Cons & What to Know',
-    description: 'Flat roof pros & cons for Florida homes: drainage, hurricane performance, costs & best materials. Advice from a licensed South Florida roofer.',
+    title: 'Flat Roofs in Florida: Pros, Cons & What Homeowners Should Know (2026)',
+    description: 'Are flat roofs good for Florida homes? Honest pros and cons from a licensed roofer — drainage, hurricane performance, costs, and the best flat roof materials for South Florida.',
     canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
-  },
-  '/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association': {
-    title: 'HOA Roofing Budget Planning | Condo Associations | All Phase',
-    description: 'How to plan long-term roofing budgets for your condo or HOA. Avoid special assessments, meet Florida reserve requirements & protect values.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-to-plan-long-term-roofing-budgets-for-your-condo-association'
-  },
-  '/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa': {
-    title: 'Soffit Repair South Florida | All Phase',
-    description: 'Soffit repair guide for Broward & Palm Beach County. Signs of damage, ventilation risks, pest prevention & when to call a contractor.',
-    canonical: 'https://allphaseconstructionfl.com/blog/soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa'
-  },
-  '/blog/common-roofing-myths-that-homeowners-still-believe': {
-    title: 'Common Roofing Myths Debunked | All Phase',
-    description: 'South Florida roofing myths debunked. New roofs still need inspections, DIY repairs void warranties, and more costly mistakes to avoid.',
-    canonical: 'https://allphaseconstructionfl.com/blog/common-roofing-myths-that-homeowners-still-believe'
-  },
-  '/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview': {
-    title: 'AI Roof Visualization | Preview Your New Roof',
-    description: 'See your new roof before installation with AI visualization. Compare colors, materials & styles on your actual home. Ask your contractor today.',
-    canonical: 'https://allphaseconstructionfl.com/blog/visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview'
-  },
-  '/blog/the-role-of-roof-pitch-in-water-drainage-and-design': {
-    title: 'Roof Pitch & Water Drainage | Why Slope Matters',
-    description: 'How roof pitch affects water drainage, material selection & hurricane performance in Florida. What pitch your home needs & why slope matters.',
-    canonical: 'https://allphaseconstructionfl.com/blog/the-role-of-roof-pitch-in-water-drainage-and-design'
-  },
-  '/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet': {
-    title: 'Cost of Delaying Roof Replacement | All Phase',
-    description: 'Delaying roof replacement costs more than you think. Water damage, mold, higher insurance & code violations add up fast in South Florida.',
-    canonical: 'https://allphaseconstructionfl.com/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet'
-  },
-  '/blog/how-solar-impacts-property-taxes-in-florida': {
-    title: 'Do Solar Panels Raise Property Taxes in Florida? (2026 Answer: No)',
-    description: 'Florida solar panels are 100% exempt from property tax increases — permanently. How the exemption works, what qualifies & the real financial impact on your home value.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-solar-impacts-property-taxes-in-florida'
-  },
-  '/blog/the-roi-of-installing-solar-panels-in-florida': {
-    title: 'Solar Panel ROI in Florida | Investment Guide | All Phase',
-    description: 'Florida solar panel ROI explained: tax credits, net metering & payback timelines. Why South Florida is one of the best states for solar.',
-    canonical: 'https://allphaseconstructionfl.com/blog/the-roi-of-installing-solar-panels-in-florida'
-  },
-  '/blog/the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles': {
-    title: 'Architectural vs. 3-Tab Shingles | Comparison | All Phase',
-    description: 'Architectural vs. 3-tab shingles: cost, durability, wind rating & curb appeal compared. Which shingle type fits your South Florida home?',
-    canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles'
-  },
-  '/blog/whats-the-lifespan-of-a-solar-ready-roof': {
-    title: 'Solar-Ready Roof Lifespan | How Long It Lasts | All Phase',
-    description: 'How long does a solar-ready roof last? Lifespan by material, when to replace before panels & how to maximize your roof-solar investment.',
-    canonical: 'https://allphaseconstructionfl.com/blog/whats-the-lifespan-of-a-solar-ready-roof'
-  },
-  '/blog/can-a-screen-room-add-to-my-property-value': {
-    title: 'Do Screen Rooms Add Property Value? | Florida | All Phase',
-    description: 'Do screen rooms add property value in Florida? Typical ROI, permit requirements & how screened patios compare to other home improvements.',
-    canonical: 'https://allphaseconstructionfl.com/blog/can-a-screen-room-add-to-my-property-value'
-  },
-  '/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive': {
-    title: 'Early Signs of Roof Damage | What to Watch For | All Phase',
-    description: 'Spot roof damage early before costly repairs. Warning signs homeowners miss: ceiling stains, granule loss, sagging decking & flashing issues.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive'
-  },
-  '/blog/how-to-combine-solar-and-a-new-roof-for-maximum-efficiency': {
-    title: 'Combine Solar Panels and a New Roof | Tips | All Phase',
-    description: 'Planning solar panels? Install them with a new roof to save thousands. Timing, material compatibility & financing tips from a licensed FL contractor.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-to-combine-solar-and-a-new-roof-for-maximum-efficiency'
-  },
-  '/blog/choosing-between-roof-repair-and-full-replacement': {
-    title: 'Roof Repair vs. Replacement | How to Decide | All Phase',
-    description: 'Roof repair vs. full replacement: how to decide. Age, damage extent, cost comparison & insurance factors South Florida homeowners should weigh.',
-    canonical: 'https://allphaseconstructionfl.com/blog/choosing-between-roof-repair-and-full-replacement'
-  },
-  '/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction': {
-    title: 'Protect Roof Decking From Moisture | All Phase',
-    description: 'Protect roof decking from moisture during construction. Florida storms damage exposed wood in hours. Prevention methods & contractor tips.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-to-protect-roof-decking-from-moisture-damage-during-construction'
-  },
-  '/blog/do-i-need-a-roof-inspection-after-a-storm': {
-    title: 'Roof Inspection After a Storm | Do You Need One? | All Phase',
-    description: 'Get a roof inspection after any South Florida storm. Hidden hurricane & thunderstorm damage worsens fast. What inspectors check & why it matters.',
-    canonical: 'https://allphaseconstructionfl.com/blog/do-i-need-a-roof-inspection-after-a-storm'
-  },
-  '/blog/what-is-roof-underlayment-and-why-does-it-matter': {
-    title: 'Roof Underlayment Explained | Why It Matters | All Phase',
-    description: 'Roof underlayment is your second defense against water. Types, Florida code requirements & why this hidden layer matters more than you think.',
-    canonical: 'https://allphaseconstructionfl.com/blog/what-is-roof-underlayment-and-why-does-it-matter'
-  },
-  '/blog/how-to-choose-roofing-materials-for-large-scale-projects': {
-    title: 'Commercial Roofing Materials Guide | All Phase',
-    description: 'Choosing roofing materials for commercial projects: TPO, PVC, metal & modified bitumen compared. Cost & code factors for South Florida.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-to-choose-roofing-materials-for-large-scale-projects'
-  },
-  '/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks': {
-    title: 'Roof Flashing Installation | Prevent Leaks | All Phase',
-    description: 'Improper flashing causes most roof leaks. Where flashing fails, how to spot problems & why correct installation matters in South FL.',
-    canonical: 'https://allphaseconstructionfl.com/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks'
-  },
-  '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas': {
-    title: 'Climate Change & Roofing | Coastal Florida Guide',
-    description: 'Climate change is reshaping roofing in coastal Florida. Stronger hurricanes, rising insurance & new materials driving smarter roofing choices.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas'
-  },
-  '/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home': {
-    title: 'Prepare Your Roof Before Selling | All Phase',
-    description: 'Selling your home? Roof condition impacts sale price & buyer confidence. Pre-sale inspection tips and repair strategies for South Florida sellers.',
-    canonical: 'https://allphaseconstructionfl.com/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home'
-  },
-  '/blog/top-roofers-in-broward-and-palm-beach-counties': {
-    title: 'Top Roofers in Broward & Palm Beach County | All Phase',
-    description: 'Best roofing contractors in Broward & Palm Beach County. Licenses to verify, questions to ask & red flags to watch for before you hire.',
-    canonical: 'https://allphaseconstructionfl.com/blog/top-roofers-in-broward-and-palm-beach-counties'
-  },
-  '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes': {
-    title: 'Metal vs. Tile Roof in South Florida | Hurricane Comparison',
-    description: 'Metal vs. tile roof in South Florida: hurricane performance, cost, insurance savings & HOA rules compared. Which material fits your home?',
-    canonical: 'https://allphaseconstructionfl.com/blog/metal-roof-vs-tile-roof-south-florida-hurricanes'
-  },
-  '/blog/wind-mitigation-roof-south-florida': {
-    title: 'Wind Mitigation Roof Upgrades | Cut Insurance 20-50% (2026 Guide)',
-    description: 'Roof wind mitigation can save Florida homeowners 20-50% on insurance. What qualifies, what to upgrade & how to get your inspection in Broward & Palm Beach County.',
-    canonical: 'https://allphaseconstructionfl.com/blog/wind-mitigation-roof-south-florida'
-  },
-  '/blog/roof-replacement-cost-broward-county-2026': {
-    title: 'Roof Replacement Cost Broward County 2026 | All Phase',
-    description: '2026 Broward County roof replacement costs: shingle, tile & metal pricing, Florida Building Code requirements & how to maximize insurance discounts.',
-    canonical: 'https://allphaseconstructionfl.com/blog/roof-replacement-cost-broward-county-2026'
-  },
-  '/blog/roof-replacement-cost-palm-beach-county-2026': {
-    title: 'Roof Replacement Cost Palm Beach County 2026 | $9K–$38K+ Guide',
-    description: 'Palm Beach County roof replacement costs $9,000–$38,000+ in 2026. Exact pricing by shingle, tile & metal, plus wind-code requirements. Free estimates from a contractor with 2,500+ roofs.',
-    canonical: 'https://allphaseconstructionfl.com/blog/roof-replacement-cost-palm-beach-county-2026'
-  },
-  '/blog/certified-vs-licensed-roofer-florida': {
-    title: 'Certified vs. Licensed Roofer in Florida | All Phase',
-    description: 'Certified vs. licensed roofer in Florida: what each credential means, how to verify on DBPR & why both matter when hiring a roofing contractor.',
-    canonical: 'https://allphaseconstructionfl.com/blog/certified-vs-licensed-roofer-florida'
-  },
-  '/blog/complete-roof-replacement-process-10-steps': {
-    title: '10-Step Roof Replacement Process — What Your Contractor Should Do (2026)',
-    description: 'Most roofers skip steps 3 and 7. A licensed South Florida contractor walks through the complete 10-step roof replacement process — what to watch for at every stage.',
-    canonical: 'https://allphaseconstructionfl.com/blog/complete-roof-replacement-process-10-steps'
-  },
-  '/blog/what-south-florida-homeowners-get-wrong-about-roof-replacement': {
-    title: 'Roof Replacement Mistakes to Avoid | All Phase',
-    description: 'Costly roof replacement mistakes South Florida homeowners make: wrong contractor, skipped ventilation, missed insurance savings & flat roof issues.',
-    canonical: 'https://allphaseconstructionfl.com/blog/what-south-florida-homeowners-get-wrong-about-roof-replacement'
-  },
-  '/blog/roof-pricing-financing-guide': {
-    title: 'Roof Pricing & Financing Guide 2026 | All Phase',
-    description: 'Roof pricing in 2026: how tariffs & material costs changed estimates. Use our calculator for current pricing & explore 0% financing options.',
-    canonical: 'https://allphaseconstructionfl.com/blog/roof-pricing-financing-guide'
-  },
-  '/blog/professional-roof-inspection-south-florida': {
-    title: 'Professional Roof Inspection | South Florida | All Phase',
-    description: 'What a professional roof inspection covers in South Florida: surface evaluation, code compliance & insurance documentation. Free inspection.',
-    canonical: 'https://allphaseconstructionfl.com/blog/professional-roof-inspection-south-florida'
-  },
-  '/blog/dont-replace-your-roof-restore-it-instead': {
-    title: 'Roof Restoration vs. Replacement | Save $25K+ | All Phase',
-    description: 'Florida Statute 627.7011 protects you from unnecessary roof replacements. Learn how a 5-year certification can save $25,000+ and keep your insurance.',
-    canonical: 'https://allphaseconstructionfl.com/blog/dont-replace-your-roof-restore-it-instead'
-  },
-  '/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida': {
-    title: 'Can I Replace Fascia Without Replacing My Roof? (2026 Answer)',
-    description: 'Yes — but only if done right. A South Florida roofer explains when you can replace fascia boards without a full reroof, what code requires, and the #1 mistake that voids warranties.',
-    canonical: 'https://allphaseconstructionfl.com/blog/can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida'
   },
   '/reviews': {
     title: 'Customer Reviews | All Phase USA',
@@ -239,33 +73,33 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/reviews'
   },
   '/projects': {
-    title: 'Roofing Projects | South Florida Portfolio | All Phase',
-    description: 'Completed roofing projects across Broward & Palm Beach Counties. Tile, shingle, metal & flat roof installations with before-and-after photos.',
+    title: 'Roofing Projects | South Florida Portfolio | All Phase USA',
+    description: 'Completed roofing projects across South Florida - tile, metal, shingle & flat. See our work before you call. Licensed & HVHZ-certified.',
     canonical: 'https://allphaseconstructionfl.com/projects'
   },
   '/residential-roofing': {
-    title: 'Residential Roofing South Florida | Tile, Metal & Shingle | All Phase',
-    description: 'Expert residential roofing in Broward & Palm Beach County. Tile, shingle, metal & flat roofing. HVHZ-certified, dual-licensed, 2,500+ homes completed. Free inspection — (754) 227-5605.',
+    title: 'Residential Roofing South Florida | All Phase Construction',
+    description: 'Expert residential roofing in Broward & Palm Beach Counties. Tile, shingle, metal, and flat roofing for homes. Licensed, insured, HVHZ certified.',
     canonical: 'https://allphaseconstructionfl.com/residential-roofing'
   },
   '/commercial-roofing': {
-    title: 'Commercial Roofing South Florida | TPO, PVC & Metal | All Phase',
-    description: 'Commercial roofing for South Florida businesses — TPO, PVC, modified bitumen & standing seam metal. Dual-licensed CCC/CGC contractor. Free commercial roof assessment — (754) 227-5605.',
+    title: 'Commercial Roofing Services | All Phase USA',
+    description: 'TPO, PVC, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.',
     canonical: 'https://allphaseconstructionfl.com/commercial-roofing'
   },
   '/roof-inspection': {
-    title: 'Free 21-Point Roof Inspection | South Florida | Same-Day Available',
-    description: 'Get a free 21-point roof inspection from a dual-licensed South Florida contractor. Storm damage documentation, insurance reports & pre-purchase evaluations. Same-day scheduling — (754) 227-5605.',
+    title: 'Free Roof Inspection South Florida | All Phase Construction',
+    description: 'Free 21-point roof inspections in South Florida. Storm damage, insurance docs & pre-purchase reports. Dual-licensed, HVHZ-certified. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
   '/roof-replacement-process': {
-    title: 'What to Expect During a Roof Replacement | 10-Step Process (2026)',
-    description: 'See exactly what happens during a South Florida roof replacement — from permit pulling to final inspection. Our documented 10-step process keeps you informed. 2,500+ roofs completed.',
+    title: 'Roof Replacement Process | All Phase USA',
+    description: 'See our 10-step roof replacement process - from inspection to final warranty. No surprises. South Florida dual-licensed roofing contractor.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
-    title: 'Roof Replacement South Florida | 2,500+ Roofs | Free Estimate',
-    description: 'Full roof replacement in Broward & Palm Beach County. Tile, metal, shingle & flat — HVHZ-compliant, dual-licensed CCC/CGC. Documented 10-step process. Free estimate — (754) 227-5605.',
+    title: 'Roof Replacement South Florida | Free Estimate | All Phase',
+    description: 'South Florida dual-licensed, HVHZ-certified roof replacement. Free inspection + easy financing. Tile, metal, shingle & flat. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement'
   },
   '/roof-maintenance-programs': {
@@ -274,13 +108,13 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-maintenance-programs'
   },
   '/tile-roofing': {
-    title: 'Tile Roofing South Florida | Concrete & Clay | Install, Repair & Reroof',
-    description: 'Concrete & clay tile roofing by a dual-licensed South Florida contractor. HVHZ-compliant installation, repairs & full re-roofs. 2,500+ projects completed. Free inspection — (754) 227-5605.',
+    title: 'Tile Roofing Installation & Repair | All Phase USA',
+    description: 'Concrete & clay tile roofing in South Florida. HVHZ-compliant installation, repair & maintenance. Dual-licensed contractor. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
-    title: 'Metal Roofing South Florida | Standing Seam & Hurricane-Rated',
-    description: 'Hurricane-rated standing seam & exposed fastener metal roofing in Broward & Palm Beach County. HOA-approved options, 40+ year lifespan. Dual-licensed — free estimate (754) 227-5605.',
+    title: 'Metal Roofing Deerfield Beach & South Florida | All Phase',
+    description: 'Hurricane-rated metal roof installation in Broward & Palm Beach County. Standing seam & exposed fastener. HOA-approved. HVHZ-certified. Free estimate.',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing'
   },
   '/shingle-roofing': {
@@ -289,28 +123,23 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
-    title: 'Flat Roofing South Florida | TPO, PVC & Modified Bitumen',
-    description: 'Flat roof installation, repair & re-roofing in South Florida. TPO, PVC, EPDM & modified bitumen systems. Residential & commercial. Dual-licensed CCC/CGC — free assessment (754) 227-5605.',
+    title: 'Flat Roofing Services | All Phase USA',
+    description: 'TPO, PVC, EPDM & modified bitumen flat roofing in South Florida. Residential & commercial. Dual-licensed CCC/CGC. Free assessment.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
-  '/single-ply-roofing': {
-    title: 'Single-Ply Roofing Systems | TPO, PVC, EPDM | All Phase',
-    description: 'Commercial single-ply roofing in South Florida. TPO, PVC & EPDM membrane systems. Certified installers for IB Roof, Fibertite & more.',
-    canonical: 'https://allphaseconstructionfl.com/single-ply-roofing'
-  },
     '/roof-repair': {
-    title: 'Roof Repair South Florida | Same-Day Emergency Service | All Phase',
-    description: 'Emergency roof repair across Broward & Palm Beach County. Leaks, storm damage, wind uplift, flashing failures — same-day response. Dual-licensed contractor. Call now: (754) 227-5605.',
+    title: 'Roof Repair South Florida | Storm Damage & Leak Experts | All Phase',
+        description: 'Professional roof repair in Broward & Palm Beach County. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/licensed-roofing-contractor': {
-    title: 'Licensed Roofing Contractor FL | Dual-Licensed CCC + CGC | All Phase',
-    description: 'Why dual licensing matters: All Phase holds both CCC-1331464 (roofing) and CGC-1526236 (general contractor) in Florida. HVHZ-certified, A+ BBB. Serving South Florida since 2005.',
+    title: 'Licensed Roofing Contractor South Florida | Verify Before You Hire',
+    description: 'How to verify a licensed roofing contractor in Florida. CCC vs CGC licenses, DBPR lookup, insurance requirements, and why licensing matters in South Florida\'s hurricane zone.',
     canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
   },
     '/roofing-services': {
-    title: 'Roofing Services South Florida | All Phase',
-    description: 'Residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle & flat — HVHZ-certified, dual-licensed. Free inspections.',
+    title: 'Roofing Services South Florida | Tile, Metal, Shingle & Flat | All Phase',
+    description: 'Complete residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs — HVHZ-certified, dual-licensed. Free inspections. 2,500+ projects.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
@@ -324,98 +153,98 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
   '/locations/fort-lauderdale/best-roofers-fort-lauderdale': {
-    title: '5 Best Roofers in Fort Lauderdale, FL (2026 Reviewed)',
-    description: 'We compared the 5 best-rated roofers in Fort Lauderdale by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 — see which Broward County contractors made the cut.',
+    title: 'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
+    description: 'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale'
   },
   '/locations/west-palm-beach/best-roofers-west-palm-beach': {
-    title: '5 Best Roofers in West Palm Beach, FL (2026 Reviewed)',
-    description: 'We compared the 5 best-rated roofers in West Palm Beach by licenses, insurance coverage, reviews & pricing. Updated for 2026 — see which Palm Beach County contractors made the cut.',
+    title: 'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
+    description: 'Looking for the best roofers in West Palm Beach? Top 5 HVHZ-compliant roofing contractors in Palm Beach County reviewed. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach'
   },
   '/locations/boca-raton/best-roofers-boca-raton': {
-    title: '5 Best Roofers in Boca Raton, FL (2026 Reviewed)',
-    description: 'We compared the 5 best-rated roofers in Boca Raton by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 — see which Palm Beach County contractors made the cut.',
+    title: 'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
+    description: 'Looking for the best roofers in Boca Raton? Top 5 HVHZ-compliant roofing contractors in Palm Beach County reviewed. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton'
   },
   '/locations/coral-springs/best-roofers-coral-springs': {
-    title: '5 Best Roofers in Coral Springs, FL (2026 Reviewed)',
-    description: 'We compared the 5 best-rated roofers in Coral Springs by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 — see which Broward County contractors made the cut.',
+    title: 'Top 5 Roofers in Coral Springs FL (2026) | All Phase',
+    description: 'Looking for the best roofers in Coral Springs? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs'
   },
   '/locations/fort-lauderdale': {
-    title: 'Fort Lauderdale Roofer | HVHZ-Certified | Free Same-Day Inspection',
-    description: 'Licensed roofing contractor in Fort Lauderdale, FL. Tile, metal & shingle roof replacement, hurricane damage repair. Dual-licensed CCC/CGC, 2,500+ Broward County roofs completed — (754) 227-5605.',
+    title: 'Fort Lauderdale Roofing Contractor | All Phase USA',
+    description: 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
   },
   '/locations/west-palm-beach': {
-    title: 'West Palm Beach Roofer | Licensed Contractor | Free Inspection',
-    description: 'Licensed roofing contractor in West Palm Beach, FL. Tile, metal & shingle re-roofs, historic district expertise. 2,500+ Palm Beach County roofs. Free same-day inspection — (754) 227-5605.',
+    title: 'West Palm Beach Roofing Contractor | All Phase USA',
+    description: 'Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605',
     canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach'
   },
   '/locations/pompano-beach': {
-    title: 'Pompano Beach Roofer | HVHZ-Certified | Free Same-Day Inspection',
-    description: 'Licensed roofing contractor in Pompano Beach, FL. Tile, metal & shingle roof replacement, storm damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free same-day inspection — (754) 227-5605.',
+    title: 'Pompano Beach Roofing Contractor | All Phase USA',
+    description: 'Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/locations/pompano-beach'
   },
   '/locations/coral-springs': {
-    title: 'Coral Springs Roofer | Licensed & HVHZ-Certified | All Phase',
-    description: 'Licensed roofing contractor in Coral Springs, FL. Tile, metal & shingle roof replacement, hurricane damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free same-day inspection — (754) 227-5605.',
+    title: 'Coral Springs Roofing Contractor | All Phase USA',
+    description: 'Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.',
     canonical: 'https://allphaseconstructionfl.com/locations/coral-springs'
   },
   '/locations/gulf-stream': {
-    title: 'Gulf Stream Roofing Contractor | All Phase',
-    description: 'Roof replacement in Gulf Stream, FL. Tile, metal & shingle re-roofs for luxury coastal homes. Palm Beach County licensed. Free estimate. (754) 227-5605.',
+    title: 'Gulf Stream Roofing Contractor | All Phase Construction USA',
+    description: 'HVHZ-certified roofing in Gulf Stream, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/gulf-stream',
   },
   '/locations/jupiter': {
-    title: 'Jupiter FL Roofer | Coastal Roof Experts | Free Inspection',
-    description: 'Licensed roofing contractor in Jupiter, FL. Tile, metal & shingle roof replacement for coastal homes. Salt-air resistant materials, 2,500+ Palm Beach County roofs. Free inspection — (754) 227-5605.',
+    title: 'Jupiter Roofing Contractor | All Phase Construction USA',
+    description: 'Licensed roofing contractor serving Jupiter, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/jupiter',
   },
   '/locations/lake-worth-beach': {
-    title: 'Lake Worth Beach Roofer | Licensed & HVHZ-Certified | All Phase',
-    description: 'Trusted roofing contractor in Lake Worth Beach, FL. Tile, shingle & metal re-roofs, storm damage repair. 2,500+ Palm Beach County roofs completed. Free same-day inspection — (754) 227-5605.',
+    title: 'Lake Worth Beach Roofing Contractor | All Phase Construction USA',
+    description: 'HVHZ-certified roofing in Lake Worth Beach, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach',
   },
   '/locations/loxahatchee-groves': {
-    title: 'Loxahatchee Groves Roofing Contractor | All Phase',
-    description: 'Roof replacement in Loxahatchee Groves, FL. Tile, metal & shingle re-roofs. Licensed Palm Beach County contractor. Free estimate. (754) 227-5605.',
+    title: 'Loxahatchee Groves Roofing Contractor | All Phase Construction USA',
+    description: 'HVHZ-certified roofing in Loxahatchee Groves, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves',
   },
   '/locations/pembroke-park': {
-    title: 'Pembroke Park Roofing Contractor | All Phase',
-    description: 'Roof replacement in Pembroke Park, FL. Tile, metal & shingle re-roofs. Licensed Broward County contractor. Free estimate. (754) 227-5605.',
+    title: 'Pembroke Park Roofing Contractor | All Phase Construction USA',
+    description: 'HVHZ-certified roofing in Pembroke Park, FL. Tile, metal & shingle. Licensed Broward County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
   },
   '/roof-repair/fort-lauderdale': {
-    title: 'Fort Lauderdale Roof Repair | Same-Day Emergency Service',
-    description: 'Emergency roof repair in Fort Lauderdale, FL. Leaks, storm & wind damage, flashing failures — same-day response from an HVHZ-certified Broward County contractor. Call now: (754) 227-5605.',
+    title: 'Fort Lauderdale Roof Repair | Fast Response | All Phase USA',
+    description: 'Expert roof repair in Fort Lauderdale, FL. Storm damage, leaks, tile & shingle repairs. HVHZ-certified, dual-licensed contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
   },
     '/roof-repair/deerfield-beach': {
-    title: 'Deerfield Beach Roof Repair | Same-Day From Our Local HQ',
-    description: 'Emergency roof repair in Deerfield Beach, FL — our hometown since 2005. Leaks, storm damage, flashing failures. Same-day response from our local HQ. Call now: (754) 227-5605.',
+    title: 'Deerfield Beach Roof Repair | All Phase USA',
+    description: 'Emergency roof repair in Deerfield Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/deerfield-beach'
   },
     '/roof-repair/pompano-beach': {
-    title: 'Pompano Beach Roof Repair | Same-Day Emergency Service',
-    description: 'Emergency roof repair in Pompano Beach, FL. Leaks, storm damage, missing shingles, flashing failures — same-day response from an HVHZ-certified contractor. Call now: (754) 227-5605.',
+    title: 'Pompano Beach Roof Repair | All Phase USA',
+    description: 'Emergency roof repair in Pompano Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
   },
   '/roof-repair/west-palm-beach': {
-    title: 'West Palm Beach Roof Repair | Same-Day Emergency Service',
-    description: 'Emergency roof repair in West Palm Beach, FL. Leaks, storm damage, missing shingles, flashing failures — same-day response from a licensed Palm Beach County contractor. Call now: (754) 227-5605.',
+    title: 'West Palm Beach Roof Repair | Fast Response | All Phase USA',
+    description: 'Expert roof repair in West Palm Beach, FL. Tile, shingle, metal & flat repairs. Storm damage specialists. HVHZ-certified, free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/west-palm-beach'
   },
   '/roof-repair/boca-raton': {
-    title: 'Boca Raton Roof Repair | All Phase',
-    description: 'Roof leak & storm damage repair in Boca Raton, FL. Emergency patching, tile cracks, flashing & wind uplift. Same-day response. (754) 227-5605.',
+    title: 'Boca Raton Roof Repair | Licensed Contractor | All Phase USA',
+    description: 'Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. HVHZ-certified. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/boca-raton'
   },
   '/roof-repair/coral-springs': {
-    title: 'Coral Springs Roof Repair | All Phase',
-    description: 'Roof leak & storm damage repair in Coral Springs, FL. Emergency patching, flashing & wind damage. Same-day response. (754) 227-5605.',
+    title: 'Coral Springs Roof Repair | HVHZ-Certified | All Phase USA',
+    description: 'Roof repair in Coral Springs, FL. Leaks, storm damage, tile & shingle repairs by a dual-licensed HVHZ contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/coral-springs'
   },
     '/frequently-asked-questions': {
@@ -452,76 +281,6 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'How to Hire a Roofing Contractor in Florida | Expert Guide',
     description: 'How to hire a roofing contractor in Florida - licenses to verify, questions to ask, red flags to avoid. Free guide from a licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/how-to-hire-roofing-contractor'
-  },
-  '/locations/wellington': {
-    title: 'Wellington FL Roofer | Tile & Shingle Experts | Free Inspection',
-    description: 'Licensed roofing contractor serving Wellington, FL. Tile re-roofs, shingle replacements & storm damage repair in Palm Beach County. HVHZ-certified, 2,500+ projects. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/wellington'
-  },
-  '/locations/boynton-beach': {
-    title: 'Boynton Beach Roofer | Licensed Contractor | Free Inspection',
-    description: 'Licensed roofing contractor in Boynton Beach, FL. Tile, metal & shingle roof replacement, storm damage repair. 2,500+ Palm Beach County roofs completed. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/boynton-beach'
-  },
-  '/locations/boca-raton': {
-    title: 'Boca Raton Roofer | Licensed & HVHZ-Certified | Free Inspection',
-    description: 'Licensed roofing contractor serving Boca Raton, FL. Tile, metal & shingle roof replacement, hurricane damage repair. Dual-licensed CCC/CGC, 2,500+ projects. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/boca-raton'
-  },
-  '/locations/delray-beach': {
-    title: 'Delray Beach Roofer | Licensed Contractor | Free Inspection',
-    description: 'Licensed roofing contractor in Delray Beach, FL. Tile, metal & shingle roof replacement, storm damage repair. 2,500+ Palm Beach County roofs. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/delray-beach'
-  },
-  '/locations/sunrise': {
-    title: 'Sunrise FL Roofer | HVHZ-Certified | Free Same-Day Inspection',
-    description: 'Licensed roofing contractor in Sunrise, FL. Tile, metal & shingle roof replacement, storm damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/sunrise'
-  },
-  '/locations/parkland': {
-    title: 'Parkland FL Roofer | Licensed & HVHZ-Certified | All Phase',
-    description: 'Licensed roofing contractor serving Parkland, FL. Tile, metal & shingle roof replacement for upscale homes. HVHZ-certified, 2,500+ Broward County roofs. Free inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/parkland'
-  },
-  '/locations/coconut-creek': {
-    title: 'Coconut Creek Roofer | HVHZ-Certified | Free Inspection',
-    description: 'Licensed roofing contractor in Coconut Creek, FL. Tile, metal & shingle roof replacement, storm damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/coconut-creek'
-  },
-  '/locations/lauderhill': {
-    title: 'Lauderhill FL Roofer | HVHZ-Certified | Free Same-Day Inspection',
-    description: 'Licensed roofing contractor in Lauderhill, FL. Tile, metal & shingle roof replacement, storm damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/lauderhill'
-  },
-  '/locations/tamarac': {
-    title: 'Tamarac FL Roofer | HVHZ-Certified | Free Inspection',
-    description: 'Licensed roofing contractor in Tamarac, FL. Tile, metal & shingle roof replacement, storm damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/tamarac'
-  },
-  '/locations/miramar': {
-    title: 'Miramar FL Roofer | HVHZ-Certified | Free Same-Day Inspection',
-    description: 'Licensed roofing contractor in Miramar, FL. Tile, metal & shingle roof replacement, storm damage repair. HVHZ-certified, 2,500+ Broward County roofs. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/miramar'
-  },
-  '/locations/hallandale-beach': {
-    title: 'Hallandale Beach Roofer | Licensed & HVHZ-Certified | All Phase',
-    description: 'Licensed roofing contractor in Hallandale Beach, FL. Tile, metal & shingle roof replacement, coastal storm damage repair. HVHZ-certified, dual-licensed. Free inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/hallandale-beach'
-  },
-  '/locations/palm-beach-county': {
-    title: 'Palm Beach County Roofer | Licensed Contractor | Free Estimate',
-    description: 'Licensed roofing contractor serving all of Palm Beach County. Tile, metal & shingle roof replacement, storm damage repair. 2,500+ roofs completed. Free same-day inspection — (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
-  },
-  '/roof-repair/wellington': {
-    title: 'Wellington FL Roof Repair | Same-Day Emergency Service',
-    description: 'Emergency roof repair in Wellington, FL. Leaks, storm damage, missing tiles, flashing failures — same-day response from a licensed Palm Beach County contractor. Call now: (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/roof-repair/wellington'
-  },
-  '/roof-repair/jupiter': {
-    title: 'Jupiter FL Roof Repair | Same-Day Emergency Service',
-    description: 'Emergency roof repair in Jupiter, FL. Leaks, storm & wind damage, flashing failures — same-day response from a licensed Palm Beach County contractor. Call now: (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/roof-repair/jupiter'
   },
 };
 
@@ -622,8 +381,8 @@ export function generateSEOMetadata(path: string): SEOMetadata {
 
     // Fallback if location not found in locations.ts
     return {
-      title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase`,
-      description: `Roof replacement contractor in ${CITY_NAMES[slug] || slug}, FL. Tile, metal, shingle & flat re-roofs. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.`,
+      title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
+      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
     };
   }
@@ -633,11 +392,11 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `Roof Repair ${cityName} FL | All Phase`,
-            description: `Roof leak & storm damage repair in ${cityName}, FL. Emergency patching, flashing & wind damage. Same-day response. (754) 227-5605.`,
+      title: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
+            description: `Fast, licensed roof repair in ${cityName}. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified dual-licensed contractor. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
-      ogTitle: `Roof Repair ${cityName} FL | All Phase`,
-            ogDescription: `Roof leak & storm damage repair in ${cityName}, FL. Emergency patching, flashing & wind damage. Same-day response. (754) 227-5605.`,
+      ogTitle: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
+            ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
   }
@@ -671,7 +430,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Ensure canonical uses normalizedPath and strips trailing slash (except root)
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
-    title: 'South Florida Roofing Contractor | All Phase USA',
+    title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
     description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605.',
     canonical: `https://allphaseconstructionfl.com${cleanPath}`
   };
