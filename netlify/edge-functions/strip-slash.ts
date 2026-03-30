@@ -28,12 +28,6 @@ const DEAD_ROUTES: Record<string, string> = {
   '/estimate': '/contact',
   '/free-estimate': '/contact',
   '/quote': '/contact',
-  '/blog/why-choose-tile-roofing-in-south-florida': '/blog',
-  '/blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida': '/blog',
-  '/blog/bug-free-summers-the-best-screens-for-insect-protection': '/blog',
-  '/blog/happy-thanksgiving-from-all-of-us-at-all-phase-construction-usa-llc': '/blog',
-  '/blog/how-long-does-it-take-to-get-a-roof-permit-in-south-florida': '/blog',
-  '/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid': '/blog',
   '/blog/choosing-between-roof-repair-and-full-replacement': '/blog',
 };
 

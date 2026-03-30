@@ -112,6 +112,103 @@ from = "/favicon.svg"
 to = "/favicon.svg"
 status = 200
 
+# ======================================================================
+# GSC Soft 404 fixes — 2026-03-30
+# ======================================================================
+[[redirects]]
+from = "/roof-repair/north-lauderdale"
+to = "/roof-repair"
+status = 301
+force = true
+
+[[redirects]]
+from = "/locations/westlake"
+to = "/locations/west-palm-beach"
+status = 301
+force = true
+
+[[redirects]]
+from = "/locations/palm-beach"
+to = "/locations/west-palm-beach"
+status = 301
+force = true
+
+[[redirects]]
+from = "/locations/lauderdale-by-the-sea"
+to = "/locations/fort-lauderdale"
+status = 301
+force = true
+
+[[redirects]]
+from = "/roof-inspection/westlake"
+to = "/roof-inspection"
+status = 301
+force = true
+
+[[redirects]]
+from = "/roof-inspection/lake-park"
+to = "/roof-inspection"
+status = 301
+force = true
+
+# Thanksgiving blog — permanently removed (410 Gone)
+[[redirects]]
+from = "/blog/happy-thanksgiving-from-all-of-us-at-all-phase-construction-usa-llc"
+to = "/410.html"
+status = 410
+force = true
+
+[[redirects]]
+from = "/blog/how-long-will-it-take-to-replace-your-roof-in-south-florida"
+to = "/blog/what-to-expect-during-a-roof-replacement-project"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/what-does-a-tapered-insulation-system-mean-on-a-roof-and-how-does-it-affect-the-air-conditioning-stands"
+to = "/blog"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/clay-roof-tiles-an-important-chapter-in-the-history-of-roofing-and-a-popular-choice-for-residential-roofs-today"
+to = "/blog/why-choose-tile-roofing-in-south-florida"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/is-tar-still-used-in-2024-to-seal-a-roof"
+to = "/blog"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/services-that-all-phase-construction-provides"
+to = "/blog"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/common-roofing-myths-that-homeowners-still-believe"
+to = "/blog"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/helping-your-association-plan-for-roofing-budgets-with-confidence"
+to = "/blog"
+status = 301
+force = true
+
+[[redirects]]
+from = "/boca-raton"
+to = "/locations/boca-raton"
+status = 301
+force = true
+
+# ======================================================================
+# SPA fallback — must be LAST
+# ======================================================================
 [[redirects]]
 from = "/*"
 to = "/index.html"
