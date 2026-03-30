@@ -2299,6 +2299,30 @@ ${companyAuthorityFooter()}
   ));
   console.log('✅ Prerendered: locations/coral-springs/best-roofers-coral-springs/index.html');
 
+  // Best Roofers Wellington - Premium Money Page
+  const bestRoofersWellingtonDir = path.join(distDir, 'locations/wellington/best-roofers-wellington');
+  fs.mkdirSync(bestRoofersWellingtonDir, { recursive: true });
+  const bestRoofersWellingtonContent = `
+  <h1>Top 5 Best Rated Roofers in Wellington, FL (2026)</h1>
+  <p>Finding a Roofer in Wellington You Can Actually Trust. Wellington is located in Palm Beach County's Wind-Borne Debris Region with 140+ mph design wind speeds. With 80+ HOA communities, every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <h2>Your List of the Top 5 Best Roofers in Wellington, FL</h2>
+  <ol>
+    <li>All Phase Construction USA</li>
+    <li>Altec Roofing</li>
+    <li>Native Roofing Enterprises</li>
+    <li>Neal Roofing &amp; Waterproofing</li>
+    <li>Distinctive Roofing</li>
+  </ol>
+  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Wellington's equestrian estates and canal communities. Call (754) 227-5605 for a free roof inspection.</p>
+`;
+  fs.writeFileSync(path.join(bestRoofersWellingtonDir, 'index.html'), createHTMLTemplate(
+    '5 Best Roofers in Wellington, FL (2026 Reviewed) | All Phase Construction',
+    'Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records. Serving Wellington\'s equestrian estates, canal communities, and HOA neighborhoods across 33414 and 33449.',
+    'https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington',
+    bestRoofersWellingtonContent
+  ));
+  console.log('✅ Prerendered: locations/wellington/best-roofers-wellington/index.html');
+
   // ============================================================
   // REGRESSION SAFEGUARD: Verify dist/index.html wasn't corrupted
   // ============================================================

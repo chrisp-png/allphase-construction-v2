@@ -172,6 +172,13 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Looking for the best roofers in Coral Springs? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs'
   },
+  '/locations/wellington/best-roofers-wellington': {
+    title: '5 Best Roofers in Wellington, FL (2026 Reviewed) | All Phase Construction',
+    description: 'Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records. Serving Wellington\'s equestrian estates, canal communities, and HOA neighborhoods across 33414 and 33449.',
+    canonical: 'https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington',
+    ogTitle: '5 Best Roofers in Wellington, FL (2026 Reviewed) | All Phase Construction',
+    ogDescription: 'Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records serving Wellington\'s equestrian estates and canal communities.'
+  },
   '/locations/fort-lauderdale': {
     title: 'Fort Lauderdale Roofing Contractor | All Phase USA',
     description: 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.',
