@@ -123,14 +123,19 @@ export default function BestRoofersWellingtonPage() {
                 That density of rooftops — packed tightly along Wellington's signature waterways and canals — means your roof is visible to every neighbor and every HOA board member. And when hurricane season arrives, every one of those roofs faces the same 140+ mph design wind speeds mandated by Palm Beach County's Wind-Borne Debris Region classification.
               </p>
 
-              {/* Aerial Image Placeholder */}
-              <div className="my-8 rounded-xl overflow-hidden border border-zinc-800">
-                {/* WELLINGTON AERIAL IMAGE GOES HERE */}
-                <div className="bg-zinc-900 p-4 text-center">
-                  <p className="text-zinc-400 text-sm">
-                    Wellington's canal-laced communities — over 80 neighborhoods with thousands of roofs in close proximity
-                  </p>
+              {/* Aerial Image */}
+              <div className="my-8">
+                <div className="rounded-xl overflow-hidden shadow-2xl border border-zinc-800">
+                  <img
+                    src="/images/wellington-aerial.webp"
+                    alt="Aerial view of Wellington, Florida residential communities and rooftops"
+                    className="w-full h-auto"
+                    loading="lazy"
+                  />
                 </div>
+                <p className="text-zinc-400 text-sm mt-3 text-center italic">
+                  Wellington, FL — Over 80 HOA communities requiring licensed roofing contractors.
+                </p>
               </div>
 
               <p className="text-zinc-300 text-lg leading-relaxed mb-6">
