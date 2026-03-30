@@ -204,6 +204,20 @@ export default function BlogPostPage() {
       if (error) throw error;
 
       if (data) {
+        // Check if content is a placeholder reference or insufficient
+        if (!data.content || data.content.startsWith('See blog/') || data.content.length < 500) {
+          try {
+            const response = await fetch('/blog-content.json');
+            const blogContent = await response.json();
+            if (blogContent[slug]) {
+              data.content = blogContent[slug];
+              console.log(`Loaded static content for blog post: ${slug}`);
+            }
+          } catch (e) {
+            console.warn('Could not load static blog content:', e);
+          }
+        }
+
         setPost(data);
         if (data.related_post_ids && data.related_post_ids.length > 0) {
           fetchRelatedPosts(data.related_post_ids);
