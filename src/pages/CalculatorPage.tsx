@@ -262,82 +262,28 @@ export default function CalculatorPage() {
             </div>
           </div>
 
-          {/* 2026 City Cost Guide */}
+          {/* Regional Cost Context */}
           <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
-            <h2 className="text-xl font-bold text-white mb-2">2026 Roof Replacement Cost by City – South Florida</h2>
-            <p className="text-zinc-400 text-sm mb-4">Average total installed cost for a 2,000 sq ft residential roof. Prices reflect current HVHZ material and labor rates across Broward and Palm Beach County as of 2026.</p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse text-sm">
-                <thead>
-                  <tr className="border-b-2 border-zinc-600">
-                    <th className="py-3 px-4 text-white font-semibold">City</th>
-                    <th className="py-3 px-4 text-white font-semibold">County</th>
-                    <th className="py-3 px-4 text-white font-semibold">Shingle (2,000 sq ft)</th>
-                    <th className="py-3 px-4 text-white font-semibold">Tile (2,000 sq ft)</th>
-                    <th className="py-3 px-4 text-white font-semibold">Metal (2,000 sq ft)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-zinc-700 bg-zinc-800/30">
-                    <td className="py-3 px-4 text-white font-medium">Deerfield Beach</td>
-                    <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 – $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 – $40,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="py-3 px-4 text-white font-medium">Boca Raton</td>
-                    <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$22,000 – $38,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 – $42,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700 bg-zinc-800/30">
-                    <td className="py-3 px-4 text-white font-medium">Fort Lauderdale</td>
-                    <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $26,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 – $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$26,000 – $44,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="py-3 px-4 text-white font-medium">Delray Beach</td>
-                    <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$22,000 – $38,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 – $40,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700 bg-zinc-800/30">
-                    <td className="py-3 px-4 text-white font-medium">West Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $26,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$22,000 – $38,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$26,000 – $44,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="py-3 px-4 text-white font-medium">Coral Springs</td>
-                    <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 – $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 – $40,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700 bg-zinc-800/30">
-                    <td className="py-3 px-4 text-white font-medium">Boynton Beach</td>
-                    <td className="py-3 px-4 text-zinc-400">Palm Beach</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 – $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 – $40,000</td>
-                  </tr>
-                  <tr className="border-b border-zinc-700">
-                    <td className="py-3 px-4 text-white font-medium">Pompano Beach</td>
-                    <td className="py-3 px-4 text-zinc-400">Broward</td>
-                    <td className="py-3 px-4 text-zinc-300">$16,000 – $24,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$20,000 – $36,000</td>
-                    <td className="py-3 px-4 text-zinc-300">$24,000 – $40,000</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h2 className="text-xl font-bold text-white mb-3">What Does a Typical Roof Cost in South Florida?</h2>
+            <p className="text-zinc-300 text-sm leading-relaxed mb-4">For a standard 2,000 sq ft home in Broward or Palm Beach County, here's what most homeowners pay in 2026:</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+              <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-4 text-center">
+                <p className="text-zinc-400 text-xs uppercase tracking-wider mb-1">Shingle Roof</p>
+                <p className="text-white text-xl font-bold">$16,000 – $26,000</p>
+                <p className="text-zinc-500 text-xs mt-1">Most common residential choice</p>
+              </div>
+              <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-4 text-center">
+                <p className="text-zinc-400 text-xs uppercase tracking-wider mb-1">Tile Roof</p>
+                <p className="text-white text-xl font-bold">$20,000 – $38,000</p>
+                <p className="text-zinc-500 text-xs mt-1">Concrete or clay tile systems</p>
+              </div>
+              <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-4 text-center">
+                <p className="text-zinc-400 text-xs uppercase tracking-wider mb-1">Metal Roof</p>
+                <p className="text-white text-xl font-bold">$24,000 – $44,000</p>
+                <p className="text-zinc-500 text-xs mt-1">Standing seam &amp; stone-coated</p>
+              </div>
             </div>
-            <p className="text-zinc-500 text-xs mt-3">Estimates based on current HVHZ-compliant material and labor rates. Final costs depend on roof pitch, decking condition, and code-required upgrades. <Link to="/contact" className="text-red-500 hover:text-red-400">Request a free inspection</Link> for an accurate quote.</p>
+            <p className="text-zinc-400 text-sm leading-relaxed">Pricing is consistent across most cities in our service area. The real cost drivers are roof size, pitch, decking condition, and the material system you choose — not your zip code. <Link to="/contact" className="text-red-500 hover:text-red-400">Request a free inspection</Link> for a quote based on your actual roof.</p>
           </div>
 
           {/* Cost Factors Section */}
