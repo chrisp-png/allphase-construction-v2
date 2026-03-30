@@ -73,7 +73,7 @@ export default function NuclearMetadata() {
     // OG:IMAGE — Default branded image for social sharing & AI source cards
     // Pages can override this by setting og:image before NuclearMetadata runs,
     // or by adding ogImage to the SEOMetadata config.
-    const defaultOgImage = 'https://allphaseconstructionfl.com/images/og-default.jpg';
+    const defaultOgImage = 'https://allphaseconstructionfl.com/images/og-default-new.jpg';
     const existingOgImage = document.querySelector('meta[property="og:image"]');
     if (!existingOgImage || !existingOgImage.getAttribute('content')?.startsWith('http')) {
       updateOrCreateMetaTag('property', 'og:image', defaultOgImage);
