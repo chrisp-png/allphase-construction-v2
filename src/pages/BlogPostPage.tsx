@@ -224,6 +224,78 @@ export default function BlogPostPage() {
         } else {
           fetchRelatedPostsByCategory(data.categories);
         }
+      } else {
+        // No Supabase record found — check if static content exists for this slug
+        try {
+          const response = await fetch('/blog-content.json');
+          const blogContent = await response.json();
+          if (blogContent[slug]) {
+            // Static fallback metadata for posts missing from Supabase
+            const staticPostMeta: Record<string, Partial<BlogPost>> = {
+              'our-roofing-company-is-proud-to-be-a-family-owned-business': {
+                title: 'Our Roofing Company Is Proud to Be a Family-Owned Business',
+                excerpt: 'All Phase Construction USA is a family-owned roofing company in Deerfield Beach, FL with over 20 years of experience serving South Florida homeowners.',
+                author: 'All Phase Construction USA Team',
+                published_date: '2026-03-29',
+                categories: ['Roofing Education'],
+                tags: ['Family Business', 'About Us', 'Deerfield Beach', 'South Florida', 'Licensed Contractor'],
+                featured_image: '/blog-images/our-roofing-company-is-proud-to-be-a-family-owned-business.jpg',
+                meta_title: 'Family-Owned Roofing Company in Deerfield Beach | All Phase Construction USA',
+                meta_description: 'All Phase Construction USA is a family-owned roofing company in Deerfield Beach, FL. Dual-licensed CGC & CCC contractor with 20+ years serving Broward & Palm Beach Counties.',
+                faqs: [],
+              },
+              'how-to-hire-a-roofer-in-south-florida': {
+                title: 'How to Hire a Roofer in South Florida: What to Look For and What to Avoid',
+                excerpt: 'Complete guide to hiring a licensed roofing contractor in South Florida. Learn what credentials to verify, red flags to watch for, and how to protect your investment.',
+                author: 'All Phase Construction USA Team',
+                published_date: '2026-03-29',
+                categories: ['Roofing Education'],
+                tags: ['Hiring Contractor', 'South Florida', 'Licensed Roofer', 'Roofing Tips'],
+                featured_image: '/blog-images/how-to-hire-a-roofer-in-south-florida.jpg',
+                meta_title: 'How to Hire a Roofer in South Florida | What to Look For & Avoid',
+                meta_description: 'Expert guide to hiring a licensed roofing contractor in South Florida. Verify credentials, avoid scams, and protect your roofing investment in Broward & Palm Beach Counties.',
+                faqs: [],
+              },
+              'how-much-does-a-screen-enclosure-cost': {
+                title: 'How Much Does a Screen Enclosure Cost in South Florida?',
+                excerpt: 'Complete cost guide for screen enclosures in South Florida. Learn about pricing factors, materials, permits, and what to expect for your patio or pool enclosure project.',
+                author: 'All Phase Construction USA Team',
+                published_date: '2026-03-29',
+                categories: ['Home Improvement'],
+                tags: ['Screen Enclosure', 'Cost Guide', 'South Florida', 'Pool Enclosure', 'Patio Screen'],
+                featured_image: '/blog-images/how-much-does-a-screen-enclosure-cost.jpg',
+                meta_title: 'Screen Enclosure Cost in South Florida (2026) | Complete Price Guide',
+                meta_description: 'How much does a screen enclosure cost in South Florida? Complete pricing guide for pool and patio enclosures in Broward & Palm Beach Counties.',
+                faqs: [],
+              },
+            };
+
+            const meta = staticPostMeta[slug] || {};
+            const syntheticPost: BlogPost = {
+              id: `static-${slug}`,
+              title: meta.title || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+              slug: slug,
+              excerpt: meta.excerpt || '',
+              content: blogContent[slug],
+              featured_image: meta.featured_image || '',
+              author: meta.author || 'All Phase Construction USA Team',
+              published_date: meta.published_date || '2026-03-29',
+              categories: meta.categories || ['Roofing Education'],
+              tags: meta.tags || [],
+              meta_title: meta.meta_title || meta.title || '',
+              meta_description: meta.meta_description || meta.excerpt || '',
+              faqs: meta.faqs || [],
+              related_post_ids: [],
+              view_count: 0,
+            };
+
+            setPost(syntheticPost);
+            fetchRelatedPostsByCategory(syntheticPost.categories);
+            console.log(`Loaded static-only blog post: ${slug}`);
+          }
+        } catch (e) {
+          console.warn('Could not load static blog content for missing post:', e);
+        }
       }
     } catch (error) {
       console.error('Error fetching blog post:', error);
