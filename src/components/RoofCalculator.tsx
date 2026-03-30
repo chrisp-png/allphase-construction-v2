@@ -342,18 +342,21 @@ export default function RoofCalculator() {
                 </p>
 
                 <div className="bg-red-600/5 border border-red-600/20 rounded-xl p-6">
-                  <h3 className="text-2xl font-bold text-white mb-3">Want Your Exact Number — and Your Exact Savings?</h3>
+                  <h3 className="text-2xl font-bold text-white mb-3">Get a Full Roof & Attic Inspection — Documented With Photos</h3>
+                  <p className="text-base text-gray-300 mb-4 max-w-xl mx-auto leading-relaxed">
+                    We'll come out, get into your attic, and document everything — structural connections, decking condition, ventilation, and the current state of your roof system. You'll get <strong className="text-white">photos for your records</strong> whether you reroof now or years from now.
+                  </p>
                   <p className="text-base text-gray-300 mb-5 max-w-xl mx-auto leading-relaxed">
-                    A free on-site inspection lets us get into your attic, evaluate your structural connections, and tell you exactly which upgrades will lower your insurance the most. You'll leave with <strong className="text-white">one firm price</strong>, a custom insurance savings estimate, and zero obligation.
+                    We'll also evaluate your wind mitigation status and show you what <strong className="text-white">insurance discounts you may already qualify for</strong> — or what upgrades would unlock them. You'll walk away knowing exactly where your roof stands and what it would cost to improve it.
                   </p>
                   <div className="flex flex-wrap justify-center gap-5 mb-6 text-base text-gray-200">
-                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, no obligation</span>
-                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Quote locked in for 90 days</span>
-                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full wind mitigation evaluation</span>
+                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full attic & roof inspection with photos</span>
+                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Wind mitigation evaluation</span>
+                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, zero obligation</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="/contact/" className="px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                      <Calendar className="w-5 h-5" />Schedule Free Inspection
+                      <Calendar className="w-5 h-5" />Schedule My Free Inspection
                     </a>
                     <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-200 rounded-lg font-semibold text-lg hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
                       <Phone className="w-5 h-5" />(754) 227-5605
@@ -501,18 +504,21 @@ export default function RoofCalculator() {
             {/* FINAL CTA                                     */}
             {/* ============================================ */}
             <div className="bg-gradient-to-br from-red-900/20 to-slate-800/50 border-2 border-red-600/20 rounded-2xl p-10 text-center shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 1s both' }}>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Ready to Know Your Real Number?</h3>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Get Your Roof Documented — For Free</h3>
+              <p className="text-base text-gray-300 max-w-xl mx-auto mb-4 leading-relaxed">
+                We'll inspect your entire roof system and attic, document everything with photos you keep for your records, and evaluate your wind mitigation status. You'll know exactly where your roof stands, what insurance discounts you could be getting, and what a replacement would actually cost — with zero obligation.
+              </p>
               <p className="text-base text-gray-300 max-w-xl mx-auto mb-6 leading-relaxed">
-                The calculator gives you the range. The insurance math gives you the <em>why</em>. But the only way to get <strong className="text-white">your exact price, your exact savings, and your exact monthly payment</strong> is a free on-site inspection.
+                Whether you're reroofing now, in a year, or just want documentation for your files — <strong className="text-white">this is worth having.</strong>
               </p>
               <div className="flex flex-wrap justify-center gap-5 mb-6 text-base text-gray-200">
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Free inspection, no obligation</span>
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Price locked for 90 days</span>
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full wind mitigation evaluation</span>
+                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full attic & roof inspection with photos</span>
+                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Wind mitigation evaluation</span>
+                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, zero obligation</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="/contact/" className="px-10 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                  <Calendar className="w-5 h-5" />Schedule Your Free Inspection
+                  <Calendar className="w-5 h-5" />Schedule My Free Inspection
                 </a>
                 <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-300 rounded-lg font-semibold text-base hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />Call Now: (754) 227-5605

@@ -537,14 +537,14 @@ export default function CalculatorPage() {
 
           {/* CTA After Expert Content */}
           <div className="bg-red-900/20 border border-red-800/40 rounded-lg p-6 text-center">
-            <p className="text-xl font-bold text-white mb-3">Ready to See What Your Roof Really Costs?</p>
-            <p className="text-zinc-300 mb-6">Get a free on-site inspection with a detailed scope of work — not just a number on paper.</p>
+            <p className="text-xl font-bold text-white mb-3">Get Your Roof & Attic Documented — For Free</p>
+            <p className="text-zinc-300 mb-6">We'll inspect your full roof system and attic, document everything with photos for your records, evaluate your wind mitigation, and show you what insurance discounts you could be getting.</p>
             <Link
               to="/roof-inspection/"
               className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors shadow-lg"
             >
               <Shield className="w-5 h-5 mr-2" />
-              Schedule Free Inspection
+              Schedule My Free Inspection
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>
