@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Calendar, Check, Lightbulb, Layers, Grid3X3, Wrench, Minus, Shield, Home, Ruler, ClipboardCheck, TrendingDown, ArrowRight } from 'lucide-react';
+import { Phone, Calendar, Check, Lightbulb, Layers, Grid3X3, Wrench, Minus, Shield, Home, Ruler, ClipboardCheck, TrendingDown, ArrowRight, Search, Thermometer, Camera, FileText } from 'lucide-react';
 import ChecklistDownloadForm from './ChecklistDownloadForm';
 import HVHZText from './HVHZText';
 
@@ -102,7 +102,7 @@ export default function RoofCalculator() {
     }
   };
 
-  // Price calculations — use tier midpoints for a realistic spread
+  // Price calculations
   const getBasicPrice = () => {
     if (!selectedType) return 0;
     const pricing = pricingData[selectedType.name];
@@ -118,7 +118,7 @@ export default function RoofCalculator() {
     return Math.round((avgPerSqFt * selectedSize.sqft) / 1000) * 1000;
   };
 
-  // Insurance estimates (gentle curve for home size)
+  // Insurance estimates
   const sizeFactor = 0.6 + 0.4 * (selectedSize.sqft / 2500);
   const insBasicLo = Math.round(6800 * sizeFactor / 100) * 100;
   const insBasicHi = Math.round(9200 * sizeFactor / 100) * 100;
@@ -143,6 +143,7 @@ export default function RoofCalculator() {
   return (
     <section id="calculator" className="relative bg-gradient-to-b from-black via-slate-900 to-black py-20 pt-44">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-block bg-red-600/10 border border-red-600/30 rounded-full px-4 py-1.5 mb-4">
@@ -178,7 +179,7 @@ export default function RoofCalculator() {
               ))}
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-400 bg-slate-900/50 rounded-lg p-3">
-              <span className="text-lg">💡</span>
+              <span className="text-lg">{'\u{1F4A1}'}</span>
               <p>Not sure? Most homes in South Florida have 2,000 - 3,500 sq ft of roof area.</p>
             </div>
           </div>
@@ -222,21 +223,149 @@ export default function RoofCalculator() {
         </div>
 
         {/* ================================================================ */}
-        {/* RESULTS — UNGATED: Everything below shows immediately on click   */}
+        {/* RESULTS — NEW FLOW: Interrupt → Trade-Off → Inspection → Price  */}
         {/* ================================================================ */}
         {showResults && selectedType && (
           <div id="results-section" className="mt-16 space-y-12 max-w-4xl mx-auto" style={{ animation: 'fadeInUp 0.6s ease-out' }}>
 
             {/* ============================================ */}
-            {/* GOOD / BETTER / BEST TIERS (shown first)     */}
+            {/* SECTION 1: PATTERN INTERRUPT                 */}
             {/* ============================================ */}
-            <div style={{ animation: 'fadeInUp 0.6s ease-out both' }}>
-              <div className="text-center mb-8">
-                <p className="text-xl text-gray-300">
+            <div className="text-center" style={{ animation: 'fadeInUp 0.6s ease-out both' }}>
+              <div className="inline-block bg-amber-600/10 border border-amber-600/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-amber-400 text-sm font-bold uppercase tracking-wide">
+                  {selectedSize.sqft.toLocaleString()} sq ft &middot; {selectedType.name} &middot; Broward / Palm Beach
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5 leading-tight">
+                Before you see pricing, there's something<br className="hidden sm:block" />
+                most homeowners <span className="text-green-400">never find out</span> until it's too late.
+              </h2>
+              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+                The cost of your roof isn't just what you pay the roofer. It's what you'll pay in <strong className="text-white">insurance premiums every year after.</strong>
+              </p>
+            </div>
+
+            {/* ============================================ */}
+            {/* SECTION 2: THE INSURANCE TRADE-OFF           */}
+            {/* ============================================ */}
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.15s both' }}>
+              <div className="px-8 pt-8 pb-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">The Insurance Trade-Off</p>
+                <h3 className="text-2xl font-bold text-white mb-2">Two homeowners. Same street. Same roof size. Very different insurance bills.</h3>
+              </div>
+
+              <div className="p-8">
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  {/* Basic */}
+                  <div className="bg-red-600/5 border border-red-600/15 rounded-xl p-6">
+                    <p className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3">Lower End</p>
+                    <h4 className="text-lg font-bold text-white mb-4">Basic Code-Minimum Roof</h4>
+                    <ul className="space-y-2.5">
+                      {['Meets minimum building code — nothing more', 'Standard underlayment only', 'No insurance optimization features', 'Higher annual premiums, fewer available carriers', 'May not qualify for wind mitigation credits'].map(item => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
+                          <span className="text-red-500 font-bold text-sm mt-0.5">{'\u2717'}</span>{item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {/* Optimized */}
+                  <div className="bg-green-600/5 border-2 border-green-600/25 rounded-xl p-6 shadow-lg shadow-green-600/5">
+                    <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-3">Higher End</p>
+                    <h4 className="text-lg font-bold text-white mb-4">Insurance-Optimized Roof</h4>
+                    <ul className="space-y-2.5">
+                      {['HVHZ compliant — exceeds code', 'Upgraded self-adhering underlayment', 'Foam adhesive system & enhanced fastening', 'Significant premium reductions with more carriers', 'Full wind mitigation credits'].map(item => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
+                          <span className="text-green-500 font-bold text-sm mt-0.5">{'\u2713'}</span>{item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Insight callout */}
+                <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-5 text-center">
+                  <p className="text-base text-gray-300 leading-relaxed">
+                    <strong className="text-amber-400">Here's what this means for you:</strong> Some homeowners in Broward & Palm Beach save enough on insurance premiums over just a few years to cover the difference between these two options entirely. Others spend less upfront — and never find out what they left on the table.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* ============================================ */}
+            {/* SECTION 3: FREE FORENSIC INSPECTION CTA      */}
+            {/* ============================================ */}
+            <div className="bg-gradient-to-br from-slate-800/60 to-green-900/10 backdrop-blur-sm border border-green-600/20 rounded-2xl p-10 shadow-2xl relative overflow-hidden" style={{ animation: 'fadeInUp 0.6s ease-out 0.3s both' }}>
+              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-green-500/5 to-transparent rounded-bl-full" />
+              <div className="relative">
+                <div className="inline-block bg-green-600/12 border border-green-600/25 rounded-full px-4 py-1.5 mb-5">
+                  <span className="text-green-400 text-sm font-bold uppercase tracking-wide">No Cost &middot; No Obligation</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-5 leading-tight">
+                  Get a Free Forensic Roof Inspection —<br className="hidden sm:block" />
+                  Fully Documented With Photos
+                </h3>
+                <p className="text-base text-gray-300 max-w-2xl mb-5 leading-relaxed">
+                  This isn't a quick walk-across-your-roof estimate. We get up there, lift the tiles, inspect the underlayment, and use <strong className="text-white">infrared imaging and moisture meters</strong> to find what most roofers never look for. Then we go into your attic and document everything from the inside out. Every finding photographed. Every detail recorded. A clear picture of <strong className="text-white">exactly where you stand.</strong>
+                </p>
+                <p className="text-base text-gray-300 max-w-2xl mb-8 leading-relaxed">
+                  Here's the truth: roofs don't last forever, and when yours is ready, we want to be the roofer <strong className="text-white">you already know and trust.</strong> Whether that's today, next week, or even a few years down the road — we'd rather earn that relationship now by giving you our honest opinion, not a sales pitch. That's exactly why we'll come out, inspect everything, and hand you the documentation — <em>because when you're ready, we want to be the first call you make.</em>
+                </p>
+
+                {/* 6-feature grid */}
+                <div className="grid sm:grid-cols-2 gap-3 mb-8">
+                  {[
+                    { label: 'Infrared & moisture meter scanning' },
+                    { label: 'Tile lifted, underlayment inspected' },
+                    { label: 'Full attic evaluation from the inside' },
+                    { label: 'Every finding photographed & documented' },
+                    { label: 'Insurance optimization guidance' },
+                    { label: 'Written report — yours to keep forever' },
+                  ].map((feat) => (
+                    <div key={feat.label} className="flex items-center gap-3">
+                      <div className="w-7 h-7 rounded-lg bg-green-600/10 flex items-center justify-center flex-shrink-0">
+                        <Check className="w-4 h-4 text-green-500" />
+                      </div>
+                      <span className="text-sm text-gray-200">{feat.label}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a href="/contact/" className="px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg font-bold text-lg hover:from-green-500 hover:to-green-600 transition-all shadow-lg shadow-green-600/25 hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
+                    <Calendar className="w-5 h-5" />Schedule My Free Forensic Inspection
+                  </a>
+                  <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-200 rounded-lg font-semibold text-lg hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
+                    <Phone className="w-5 h-5" />(754) 227-5605
+                  </a>
+                </div>
+                <p className="text-gray-500 text-sm mt-4">Most homeowners tell us the inspection alone was worth it — even the ones who didn't roof for another two years.</p>
+
+                {/* Insider's Guide bonus */}
+                <div className="mt-7 pt-6 border-t border-white/5 flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-600/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-6 h-6 text-amber-400" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-amber-400 mb-1">Bonus: Free Insider's Guide</p>
+                    <p className="text-sm text-gray-400 leading-relaxed">When you schedule your inspection, we'll immediately send you our <strong className="text-gray-200">Insider's Guide to Hiring a Roofing Contractor</strong> — the questions most homeowners don't think to ask, and the answers that separate the pros from the problems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ============================================ */}
+            {/* SECTION 4: PRICING TIERS (NOW IN CONTEXT)    */}
+            {/* ============================================ */}
+            <div style={{ animation: 'fadeInUp 0.6s ease-out 0.45s both' }}>
+              <div className="text-center mb-2">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Your {selectedType.name} Roof Estimate</p>
+                <h3 className="text-2xl font-bold text-white mb-2">
                   Here's what you selected for your{' '}
                   <span className="text-white font-semibold">{selectedSize.sqft.toLocaleString()} sq ft</span>{' '}
                   <span className="text-white font-semibold">{selectedType.name}</span> roof
-                </p>
+                </h3>
+                <p className="text-base text-gray-500 mb-8">These ranges reflect the Basic {'\u2192'} Insurance-Optimized spectrum you just saw.</p>
               </div>
 
               <div className="grid lg:grid-cols-3 gap-6">
@@ -248,7 +377,7 @@ export default function RoofCalculator() {
                         ? 'border-red-600 shadow-2xl shadow-red-600/20 lg:-translate-y-4'
                         : 'border-slate-700'
                     }`}
-                    style={{ animation: `fadeInUp 0.6s ease-out ${0.1 + index * 0.15}s both` }}
+                    style={{ animation: `fadeInUp 0.6s ease-out ${0.5 + index * 0.15}s both` }}
                   >
                     {tier.tier === 'Better' && (
                       <div className="bg-red-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-4">Most Popular</div>
@@ -260,6 +389,7 @@ export default function RoofCalculator() {
                       <div className="text-3xl font-bold text-white">
                         {formatPrice(Math.round((tier.minPrice * selectedSize.sqft) / 1000) * 1000)} — {formatPrice(Math.round((tier.maxPrice * selectedSize.sqft) / 1000) * 1000)}
                       </div>
+                      <p className="text-xs text-gray-500 mt-1">Basic code {'\u2190'} {'\u2192'} Insurance optimized</p>
                     </div>
                     <ul className="space-y-3">
                       {tier.features.map((feature, idx) => (
@@ -272,6 +402,23 @@ export default function RoofCalculator() {
                   </div>
                 ))}
               </div>
+
+              {/* Pricing footnote */}
+              <div className="mt-8 bg-slate-900/50 border border-slate-700/50 rounded-xl p-5 text-center max-w-2xl mx-auto">
+                <p className="text-sm text-gray-400 leading-relaxed">
+                  <strong className="text-gray-200">Why the range?</strong> The low end reflects a code-minimum installation. The high end reflects an insurance-optimized roof with HVHZ compliance, upgraded underlayment, and full wind mitigation — which often pays for itself in premium savings. Your free forensic inspection will tell you exactly which approach makes the most sense for <em>your</em> home.
+                </p>
+              </div>
+
+              {/* Financing teaser */}
+              <div className="mt-6 bg-indigo-600/5 border border-indigo-600/15 rounded-xl p-5 max-w-2xl mx-auto flex items-center gap-4">
+                <div className="w-11 h-11 bg-indigo-600/12 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <ArrowRight className="w-5 h-5 text-indigo-400" />
+                </div>
+                <p className="text-sm text-indigo-200 leading-relaxed text-left">
+                  <strong className="text-indigo-300">Thinking about financing just the upgrade?</strong> Many homeowners find their monthly payment is actually <em>less</em> than what they save on insurance premiums. We'll walk you through the numbers at your inspection.
+                </p>
+              </div>
             </div>
 
             {/* ============================================ */}
@@ -280,7 +427,7 @@ export default function RoofCalculator() {
             <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.5s both' }}>
               {/* Header */}
               <div className="px-8 pt-8 pb-4 text-center">
-                <p className="text-base font-semibold uppercase tracking-widest text-gray-300 mb-1">Now See the Insurance Trade-Off</p>
+                <p className="text-base font-semibold uppercase tracking-widest text-gray-300 mb-1">Now See the Insurance Trade-Off In Dollars</p>
                 <p className="text-gray-300 text-base">{sizeLabels[selectedSize.sqft]} · {selectedType.name} · Broward / Palm Beach County</p>
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
                   {['HVHZ Compliant', 'Includes Tear-Off', 'Permit & Inspection', 'Manufacturer Warranty'].map(chip => (
@@ -303,12 +450,10 @@ export default function RoofCalculator() {
                     <p className="text-sm text-gray-300 mt-1">Minimal wind mitigation credits</p>
                   </div>
                 </div>
-
                 {/* VS badge */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-slate-800 border-2 border-slate-600 rounded-full flex items-center justify-center z-10 hidden md:flex">
                   <span className="text-sm font-extrabold text-gray-300">VS</span>
                 </div>
-
                 {/* Upgraded */}
                 <div className="bg-green-600/5 border border-green-600/15 md:rounded-r-xl md:rounded-l-none rounded-b-xl md:rounded-b-none md:rounded-br-xl p-6 text-center md:border-l-0">
                   <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-1">Higher End</p>
@@ -332,38 +477,14 @@ export default function RoofCalculator() {
                 <span className="text-base text-gray-300">in insurance premiums over the life of your roof. <strong className="text-white">The roof that costs more upfront costs far less over time.</strong></span>
               </div>
 
-              {/* Insight text + CTA */}
+              {/* Insight text */}
               <div className="px-8 pb-8 pt-6 text-center">
                 <p className="text-base text-gray-300 max-w-2xl mx-auto mb-2 leading-relaxed">
                   The lower price gets you a legal roof. The higher price gets you a roof that <span className="text-amber-400 font-semibold">pays you back every year</span> through lower insurance premiums. The difference is often just <strong className="text-white">{formatPrice(upgradedPrice - basicPrice)} upfront</strong> — but the insurance gap starts day one and only grows.
                 </p>
-                <p className="text-base text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-                  Which upgrades make sense for <strong className="text-white">your</strong> home? That depends on what's already in your attic — and only a proper inspection can tell you.
+                <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                  Which upgrades make sense for <strong className="text-white">your</strong> home? That depends on what's already in your attic — and only a proper forensic inspection can tell you.
                 </p>
-
-                <div className="bg-red-600/5 border border-red-600/20 rounded-xl p-6">
-                  <h3 className="text-2xl font-bold text-white mb-3">Get a Full Roof & Attic Inspection — Documented With Photos</h3>
-                  <p className="text-base text-gray-300 mb-4 max-w-xl mx-auto leading-relaxed">
-                    We'll come out, get into your attic, and document everything — structural connections, decking condition, ventilation, and the current state of your roof system. You'll get <strong className="text-white">photos for your records</strong> whether you reroof now or years from now.
-                  </p>
-                  <p className="text-base text-gray-300 mb-5 max-w-xl mx-auto leading-relaxed">
-                    We'll also evaluate your wind mitigation status and show you what <strong className="text-white">insurance discounts you may already qualify for</strong> — or what upgrades would unlock them. You'll walk away knowing exactly where your roof stands and what it would cost to improve it.
-                  </p>
-                  <div className="flex flex-wrap justify-center gap-5 mb-6 text-base text-gray-200">
-                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full attic & roof inspection with photos</span>
-                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Wind mitigation evaluation</span>
-                    <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, zero obligation</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="/contact/" className="px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                      <Calendar className="w-5 h-5" />Schedule My Free Inspection
-                    </a>
-                    <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-200 rounded-lg font-semibold text-lg hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
-                      <Phone className="w-5 h-5" />(754) 227-5605
-                    </a>
-                  </div>
-                  <p className="text-gray-300 text-sm mt-4">Or call us directly — we pick up 24/7, 365 days a year</p>
-                </div>
               </div>
             </div>
 
@@ -382,30 +503,27 @@ export default function RoofCalculator() {
               </div>
               <div className="p-8">
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  {/* Basic features */}
                   <div className="bg-red-600/5 border border-red-600/10 rounded-xl p-5">
                     <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Basic Code-Minimum Roof</p>
                     <ul className="space-y-2.5">
                       {['Standard nail pattern only', 'No secondary water barrier', 'Basic underlayment', 'Existing roof-to-wall connections', 'Minimal or no mitigation credits'].map(item => (
                         <li key={item} className="flex items-start gap-2 text-base text-gray-300">
-                          <span className="text-red-500 font-bold text-sm mt-0.5">✗</span>{item}
+                          <span className="text-red-500 font-bold text-sm mt-0.5">{'\u2717'}</span>{item}
                         </li>
                       ))}
                     </ul>
                   </div>
-                  {/* Upgraded features */}
                   <div className="bg-green-600/5 border border-green-600/10 rounded-xl p-5">
                     <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-3">Insurance-Optimized Roof</p>
                     <ul className="space-y-2.5">
                       {['Enhanced HVHZ fastening pattern', 'Secondary water barrier (SWB)', 'Impact-rated underlayment', 'Documented hurricane straps/clips', 'Maximum wind mitigation credits'].map(item => (
                         <li key={item} className="flex items-start gap-2 text-base text-gray-300">
-                          <span className="text-green-500 font-bold text-sm mt-0.5">✓</span>{item}
+                          <span className="text-green-500 font-bold text-sm mt-0.5">{'\u2713'}</span>{item}
                         </li>
                       ))}
                     </ul>
                   </div>
                 </div>
-
                 {/* Lifetime savings */}
                 <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-5 text-center mb-6">
                   <p className="text-sm text-gray-300 mb-1">Estimated Lifetime Insurance Savings (25 Years)</p>
@@ -414,7 +532,6 @@ export default function RoofCalculator() {
                     Based on <strong className="text-white">{formatPrice(Math.round(annualSaveMid * 0.75))}-{formatPrice(Math.round(annualSaveMid * 1.25))}/yr in savings</strong> at today's rates. Florida premiums have increased 40-60% since 2020.
                   </p>
                 </div>
-
                 <p className="text-base text-gray-300 leading-relaxed mb-3">
                   The upfront cost difference is often just <strong className="text-white">{formatPrice(upgradedPrice - basicPrice)}</strong>. But the insurance savings start immediately and compound every year. You're not just buying a better roof — <span className="text-amber-400 font-semibold">you're locking in lower premiums for the next 20-30 years</span>.
                 </p>
@@ -425,12 +542,11 @@ export default function RoofCalculator() {
             </div>
 
             {/* ============================================ */}
-            {/* WHAT WE CHECK DURING INSPECTION               */}
+            {/* WHAT WE CHECK DURING INSPECTION              */}
             {/* ============================================ */}
             <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.3s both' }}>
-              <h3 className="text-2xl font-bold text-white mb-2">What We Check During a Free Roof Inspection</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">What We Check During a Free Forensic Roof Inspection</h3>
               <p className="text-base text-gray-300 mb-6">A thorough inspection takes 45-60 minutes and covers things no calculator can see.</p>
-
               <div className="grid sm:grid-cols-2 gap-4 mb-6">
                 {[
                   { icon: Home, title: 'Attic & Structural Connections', desc: 'We get into your attic to inspect hurricane straps, clips, and roof-to-wall connections — the #1 factor in your wind mitigation report.', why: 'Determines your biggest insurance discount' },
@@ -446,7 +562,6 @@ export default function RoofCalculator() {
                   </div>
                 ))}
               </div>
-
               <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-5">
                 <p className="text-base text-gray-300 leading-relaxed">
                   <strong className="text-amber-400">Why this matters:</strong> Many contractors quote a roof from the driveway and never step foot in your attic. That means they're guessing on your structural connections, guessing on your decking, and they're definitely not telling you which upgrades will lower your insurance. When you get a quote without a proper inspection, you're comparing incomplete numbers.
@@ -455,7 +570,7 @@ export default function RoofCalculator() {
             </div>
 
             {/* ============================================ */}
-            {/* SELLING YOUR HOME                             */}
+            {/* SELLING YOUR HOME                            */}
             {/* ============================================ */}
             <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-6" style={{ animation: 'fadeInUp 0.6s ease-out 0.35s both' }}>
               <h4 className="text-xl font-bold text-white mb-2">Planning to Sell Your Home?</h4>
@@ -465,12 +580,11 @@ export default function RoofCalculator() {
             </div>
 
             {/* ============================================ */}
-            {/* FINANCING BRIDGE                              */}
+            {/* FINANCING BRIDGE                             */}
             {/* ============================================ */}
             <div className="bg-gradient-to-br from-slate-800/60 to-blue-900/20 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl text-center" style={{ animation: 'fadeInUp 0.6s ease-out 0.4s both' }}>
               <h3 className="text-2xl font-bold text-white mb-2">The Upgrade Pays for Itself — Here's the Math</h3>
               <p className="text-base text-gray-300 mb-6">See what the difference actually looks like month to month.</p>
-
               <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center max-w-lg mx-auto mb-6">
                 <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-5 text-center">
                   <p className="text-xs font-bold uppercase tracking-widest text-gray-300 mb-2">Basic Roof</p>
@@ -484,51 +598,46 @@ export default function RoofCalculator() {
                   <p className="text-sm text-gray-300">per month (financed)</p>
                 </div>
               </div>
-
               <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-5 max-w-lg mx-auto mb-6">
                 <p className="text-2xl font-extrabold text-green-400">+{formatPrice(monthlyDiff)}/mo</p>
                 <p className="text-base text-gray-300">more for the upgraded roof</p>
                 <p className="text-sm text-gray-300 mt-1">But you save ~{formatPrice(insSavingsMonthly)}/mo in lower insurance premiums</p>
               </div>
-
               <p className="text-base text-gray-300 max-w-xl mx-auto mb-6 text-left leading-relaxed">
                 <strong className="text-gray-300">The insurance savings are larger than the extra monthly payment.</strong> That means an upgraded roof with financing actually puts money back in your pocket from month one. And as Florida rates keep climbing, those savings only grow.
               </p>
-
               <a href="/easy-payments/" className="inline-block px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-600/10 hover:text-white hover:border-blue-400 transition-all">
                 Explore Financing Options <ArrowRight className="w-4 h-4 inline ml-1" />
               </a>
             </div>
 
             {/* ============================================ */}
-            {/* FINAL CTA                                     */}
+            {/* FINAL CTA                                    */}
             {/* ============================================ */}
             <div className="bg-gradient-to-br from-red-900/20 to-slate-800/50 border-2 border-red-600/20 rounded-2xl p-10 text-center shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 1s both' }}>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Get Your Roof Documented — For Free</h3>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Every roof has a timeline. We'd rather you know yours.</h3>
               <p className="text-base text-gray-300 max-w-xl mx-auto mb-4 leading-relaxed">
-                We'll inspect your entire roof system and attic, document everything with photos you keep for your records, and evaluate your wind mitigation status. You'll know exactly where your roof stands, what insurance discounts you could be getting, and what a replacement would actually cost — with zero obligation.
-              </p>
-              <p className="text-base text-gray-300 max-w-xl mx-auto mb-6 leading-relaxed">
-                Whether you're reroofing now, in a year, or just want documentation for your files — <strong className="text-white">this is worth having.</strong>
+                Roofs don't last forever — and when yours is ready, whether that's today, next month, or a few years from now, we want to be the roofer you already trust and the first one you call. That's why we'll come out with infrared, moisture meters, and cameras — give your roof the forensic inspection most roofers never bother with — and hand you the full documentation. No strings attached.
               </p>
               <div className="flex flex-wrap justify-center gap-5 mb-6 text-base text-gray-200">
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full attic & roof inspection with photos</span>
+                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full forensic roof inspection with photos</span>
                 <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Wind mitigation evaluation</span>
                 <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, zero obligation</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="/contact/" className="px-10 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                  <Calendar className="w-5 h-5" />Schedule My Free Inspection
+                  <Calendar className="w-5 h-5" />Schedule My Free Forensic Inspection
                 </a>
                 <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-300 rounded-lg font-semibold text-base hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />Call Now: (754) 227-5605
                 </a>
               </div>
-              <p className="text-gray-300 text-sm mt-4">We respond within 60 minutes during business hours. Available 24/7 by phone.</p>
+              <p className="text-gray-500 text-sm mt-4"><span className="text-amber-400">Plus, you'll get our free Insider's Guide to Hiring a Roofing Contractor the moment you schedule.</span></p>
+              <p className="text-gray-300 text-sm mt-2">We respond within 60 minutes during business hours. Available 24/7 by phone.</p>
             </div>
 
             {/* ============================================ */}
-            {/* CHECKLIST DOWNLOAD (GATED LEAD CAPTURE)       */}
+            {/* CHECKLIST DOWNLOAD (GATED LEAD CAPTURE)      */}
             {/* ============================================ */}
             <div style={{ animation: 'fadeInUp 0.6s ease-out 1.1s both' }}>
               <ChecklistDownloadForm
@@ -539,12 +648,12 @@ export default function RoofCalculator() {
             </div>
 
             {/* ============================================ */}
-            {/* TRUST BAR                                     */}
+            {/* TRUST BAR                                    */}
             {/* ============================================ */}
             <div className="border-t border-b border-slate-800 py-6" style={{ animation: 'fadeInUp 0.6s ease-out 1.2s both' }}>
               <div className="flex flex-wrap justify-center gap-8 sm:gap-12">
                 {[
-                  { val: '4.8+ ★', label: 'Google Reviews' },
+                  { val: '4.8+ \u2605', label: 'Google Reviews' },
                   { val: '20+', label: 'Years in Business' },
                   { val: '2,500+', label: 'Roofs Completed' },
                   { val: 'Dual Licensed', label: 'CGC + CCC' },
@@ -565,7 +674,6 @@ export default function RoofCalculator() {
           </div>
         )}
       </div>
-
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(30px); }
