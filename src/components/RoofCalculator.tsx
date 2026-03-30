@@ -149,7 +149,7 @@ export default function RoofCalculator() {
             <span className="text-red-500 text-sm font-semibold uppercase tracking-wide">Free Estimate Tool</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">Roof Cost Calculator</h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">Get an instant ballpark estimate for your new roof — no contact info required</p>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">Select your roof size and material to get an instant estimate</p>
         </div>
 
         {/* Calculator Steps */}
