@@ -125,12 +125,16 @@ export default function BestRoofersWellingtonPage() {
 
               {/* Aerial Image */}
               <div className="my-8">
-                <div className="rounded-xl overflow-hidden shadow-2xl border border-zinc-800">
+                <div className="rounded-xl overflow-hidden shadow-2xl border border-zinc-800" style={{ aspectRatio: '1340 / 558' }}>
                   <img
                     src="/images/wellington-aerial.webp"
                     alt="Aerial view of Wellington, Florida residential communities and rooftops"
                     className="w-full h-auto"
-                    loading="lazy"
+                    width={1340}
+                    height={558}
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
                   />
                 </div>
                 <p className="text-zinc-400 text-sm mt-3 text-center italic">
