@@ -207,6 +207,16 @@ status = 301
 force = true
 
 # ======================================================================
+# Blog SPA fallback — serves React app for blog paths without prerendered HTML
+# force = true ensures this works even when dist/blog/ directory exists
+# ======================================================================
+[[redirects]]
+from = "/blog/*"
+to = "/index.html"
+status = 200
+force = true
+
+# ======================================================================
 # SPA fallback — must be LAST
 # ======================================================================
 [[redirects]]
