@@ -195,6 +195,17 @@ export default function CalculatorPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Calculator Component — FIRST, before educational content */}
+      <section id="roof-calculator-section">
+        <RoofCalculator />
+      </section>
+
+      {/* Educational Content Section — below calculator results */}
+      <section className="py-16 bg-black px-4">
+        <div className="max-w-6xl mx-auto">
 
           {/* Authority Introduction */}
           <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
@@ -380,11 +391,6 @@ export default function CalculatorPage() {
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* Calculator Component */}
-      <section id="roof-calculator-section">
-        <RoofCalculator />
       </section>
 
       {/* Expert Insights Content — Written by Chris Porosky, All Phase Construction */}
