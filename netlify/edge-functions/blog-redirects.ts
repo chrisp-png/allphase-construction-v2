@@ -117,6 +117,17 @@ export default async function handler(
     });
   }
 
-  // 4. Pass through — let Netlify serve the prerendered HTML or SPA fallback
-  return;
+  // 4. For blog paths without prerendered HTML, serve the SPA
+  //    Netlify would 404 these since dist/blog/ directory exists but
+  //    the specific slug directory doesn't. Rewrite to index.html
+  //    so the React app handles rendering via Supabase + static fallback.
+  //    context.next() would let Netlify serve the prerendered HTML if it exists,
+  //    but returns 404 if it doesn't. Instead, we try next() and check the response.
+  const response = await context.next();
+  if (response.status === 404) {
+    // No prerendered HTML found — serve the SPA instead
+    const spaUrl = new URL('/index.html', url.origin);
+    return context.rewrite(spaUrl);
+  }
+  return response;
 }
