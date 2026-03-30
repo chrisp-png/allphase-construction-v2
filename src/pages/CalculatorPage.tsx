@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { Calculator, MapPin, Shield, Plus, Minus, ArrowRight, Wallet } from 'lucide-react';
 import RoofCalculator from '../components/RoofCalculator';
 import HVHZText from '../components/HVHZText';
@@ -10,13 +9,6 @@ export default function CalculatorPage() {
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
-  };
-
-  const scrollToCalculator = () => {
-    const calculatorSection = document.getElementById('roof-calculator-section');
-    if (calculatorSection) {
-      calculatorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
   };
 
   useEffect(() => {
@@ -160,45 +152,7 @@ export default function CalculatorPage() {
 
   return (
     <><div className="min-h-screen bg-black">
-      {/* Snippet-Optimized Intro Section */}
-      <section className="bg-gradient-to-b from-zinc-950 to-black pt-32 pb-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
-            <div className="flex items-start gap-4">
-              <Calculator className="w-10 h-10 text-amber-400 flex-shrink-0 mt-1 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]" />
-              <div>
-                <h1 className="text-2xl font-bold text-white mb-3">Roof Replacement Cost Calculator</h1>
-                <p className="text-zinc-300 leading-relaxed mb-3">
-                  Get an instant ballpark estimate for your roof replacement cost in Broward County or Palm Beach County. This free calculator provides estimated pricing for <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, and <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> systems based on roof size and material selection.
-                </p>
-                <p className="text-zinc-300 leading-relaxed mb-6">
-                  Final costs vary based on roof condition, pitch, <span className="text-amber-400 font-semibold">code requirements</span>, and <span className="text-amber-400 font-semibold">HVHZ compliance</span>. A <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">professional roof inspection</Link> provides accurate pricing. In some cases, <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
-                </p>
-
-                {/* Action Buttons */}
-                <div className="flex flex-wrap gap-4 pt-4 border-t border-zinc-800/50">
-                  <button
-                    onClick={scrollToCalculator}
-                    className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl"
-                  >
-                    <Calculator className="w-5 h-5 mr-2" />
-                    Calculate My Roof Cost
-                  </button>
-                  <Link
-                    to="/roof-inspection/"
-                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-zinc-600 text-zinc-200 font-semibold rounded-lg hover:bg-zinc-800 hover:border-zinc-500 transition-colors"
-                  >
-                    <Shield className="w-5 h-5 mr-2" />
-                    Schedule a Roof Inspection
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Calculator Component — FIRST, before educational content */}
+      {/* Calculator Component — immediately visible on page load */}
       <section id="roof-calculator-section">
         <RoofCalculator />
       </section>
@@ -207,13 +161,18 @@ export default function CalculatorPage() {
       <section className="py-16 bg-black px-4">
         <div className="max-w-6xl mx-auto">
 
-          {/* Authority Introduction */}
+          {/* SEO Context + Authority Introduction */}
+          <h2 className="text-2xl font-bold text-white mb-4">Understanding Your Roof Replacement Cost</h2>
+          <p className="text-zinc-300 leading-relaxed mb-6">
+            Roof replacement costs in Broward County and Palm Beach County depend on your roof system — <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, or <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> — along with roof size, condition, and code requirements. The estimates above give you a starting range. For an exact number based on your actual roof, schedule a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">free roof inspection</Link>. In some cases, <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.
+          </p>
+
           <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 mb-8">
             <div className="flex items-start gap-4">
               <Shield className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
               <div>
                 <p className="text-zinc-300 leading-relaxed mb-3">
-                  <strong className="text-white">This calculator provides estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, <span className="text-amber-400 font-semibold">code compliance requirements</span>, and site-specific installation factors.
+                  <strong className="text-white">Calculator results are estimates only.</strong> Final pricing requires a professional roof inspection to evaluate roof condition, decking integrity, <span className="text-amber-400 font-semibold">code compliance requirements</span>, and site-specific installation factors.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
                   Broward and most coastal Palm Beach County properties are located in the <HVHZText variant="south-florida" className="text-amber-400" />, which requires enhanced fastening patterns, approved underlayment systems, and <span className="text-amber-400 font-semibold">Florida Building Code compliance</span>. <HVHZText variant="acronym" showIcon={false} className="text-amber-400" /> requirements typically add $1–$3 per square foot to installation costs compared to standard installations.
