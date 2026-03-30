@@ -1,287 +1,367 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Phone, Calendar } from 'lucide-react';
+import { Shield, CheckCircle2, AlertTriangle, Phone, Calendar, FileCheck, Award, MapPin } from 'lucide-react';
 
 export default function BestRoofersWellingtonPage() {
   return (
     <>
       <Helmet>
-        <title>Top 5 Best Rated Roofers in Wellington, FL (2026) | All Phase Construction</title>
-        <meta name="description" content="Find trusted licensed roofing contractors in Wellington, FL. Compare top-rated companies, verify credentials, and get expert guidance on choosing the right roofer for your home." />
-
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
+        <title>5 Best Roofers in Wellington, FL (2026 Reviewed) | All Phase Construction</title>
+        <meta name="description" content="Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records. Serving Wellington's equestrian estates, canal communities, and HOA neighborhoods across 33414 and 33449." />
+        <meta name="keywords" content="best roofers Wellington FL, roofing contractors Wellington Florida, roof replacement Wellington, Wellington FL roofer, roofing company Wellington Palm Beach County, best roofing company Wellington FL 2026, Wellington roof repair, tile roof Wellington FL, metal roof Wellington, HOA roofing Wellington" />
+        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington" />
+        <meta property="og:title" content="5 Best Roofers in Wellington, FL (2026 Reviewed)" />
+        <meta property="og:description" content="Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records serving Wellington's equestrian estates and canal communities." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "5 Best Roofers in Wellington, FL (2026 Reviewed)",
+            "description": "Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records.",
+            "author": {
+              "@type": "Organization",
+              "name": "All Phase Construction USA"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "All Phase Construction USA",
+              "url": "https://allphaseconstructionfl.com"
+            },
+            "datePublished": "2026-03-30",
+            "dateModified": "2026-03-30"
+          }
+        `}</script>
+        <script type="application/ld+json">{`
+          {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "How do I verify a roofing contractor's license in Wellington?",
+                "name": "How much does a new roof cost in Wellington, FL?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Go to myfloridalicense.com and use the 'Verify a Licensee' tool. Search by the contractor's name or license number. Confirm the license is active, in the correct category (CCC for roofing or CGC for general contractor), and that it is not suspended or under disciplinary action."
+                  "text": "Most residential roof replacements in Wellington range from $9,000 to $45,000+ depending on roof type, size, and materials. Tile roofs — common in Wellington's HOA communities — typically run $16,000 to $45,000+. Metal roofing ranges from $18,000 to $55,000+."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Does my roof replacement in Wellington need a permit?",
+                "name": "Do I need a permit for roofing work in Wellington?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Any roof replacement or significant repair in Wellington requires a permit from Palm Beach County Building Division. The permit triggers a final inspection by a county building inspector. Work performed without a permit is a code violation and can create complications with insurance claims and property sales."
+                  "text": "Yes — all roofing work in Palm Beach County requires a permit pulled by your licensed contractor. Wellington falls under Palm Beach County building jurisdiction, and your contractor should handle the entire permitting process."
                 }
               },
               {
                 "@type": "Question",
-                "name": "What is HVHZ and why does it matter in Wellington?",
+                "name": "Does my Wellington HOA need to approve my roof replacement?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "HVHZ stands for High Velocity Hurricane Zone. Wellington and all of Palm Beach County fall within this designation under the Florida Building Code. HVHZ requirements specify more stringent fastening schedules, approved product lists, and installation methods than the standard Florida Building Code."
+                  "text": "Most Wellington HOAs require approval before roof replacement, including material type, color, and contractor selection. However, under Florida Statute 720.3035 and House Bill 293, HOAs cannot deny hurricane-rated roofing systems that meet current Florida Building Code standards."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What wind speed rating do roofs need in Wellington?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Wellington is in Palm Beach County's Wind-Borne Debris Region (WBDR) with design wind speeds of 140+ mph. While not in the stricter HVHZ zone (Miami-Dade and Broward only), Wellington still requires impact-resistant materials and wind-rated installation methods."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between a roofing license and a general contractor license in Florida?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A Certified Roofing Contractor (CRC) license authorizes roof system installation and repair. A Certified General Contractor (CGC) license authorizes structural, framing, and broader construction scope. A dual-licensed contractor can legally handle both the roof and any structural issues discovered during the project."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a wind mitigation inspection and why does it matter in Wellington?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A wind mitigation inspection documents how your roof is built relative to Florida's wind standards. Insurance companies use this report to calculate premium discounts. In Wellington — where homeowner's insurance premiums have risen sharply — a strong wind mitigation report can reduce your annual premium by several hundred to several thousand dollars."
                 }
               }
             ]
-          })}
-        </script>
-
-        {/* Breadcrumb Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://allphaseconstructionfl.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Locations",
-                "item": "https://allphaseconstructionfl.com/locations"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Wellington",
-                "item": "https://allphaseconstructionfl.com/locations/wellington"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Best Roofers Wellington",
-                "item": "https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington"
-              }
-            ]
-          })}
-        </script>
+          }
+        `}</script>
       </Helmet>
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-        <div className="container mx-auto px-4 py-16 lg:py-24">
-          <div className="max-w-4xl">
-            <nav className="text-sm mb-6 flex items-center gap-2 text-slate-400">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/locations" className="hover:text-white transition-colors">Locations</Link>
-              <span>/</span>
-              <Link to="/locations/wellington" className="hover:text-white transition-colors">Wellington</Link>
-              <span>/</span>
-              <span className="text-white">Best Roofers</span>
-            </nav>
+      <div className="min-h-screen bg-zinc-950">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-b from-zinc-900 to-zinc-950 pt-32 pb-20">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8">
+              <span className="inline-block bg-red-600/20 text-red-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                2026 Guide
+              </span>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Top 5 Best Rated Roofers in Wellington, FL <span className="text-red-500">(2026)</span>
+              </h1>
+              <p className="text-xl text-zinc-300 max-w-3xl mx-auto leading-relaxed">
+                Finding a roofer in Wellington you can actually trust. We reviewed dozens of contractors and five rose to the top through verifiable credentials, strong reviews, and proven track records.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Top 5 Best Rated Roofers in Wellington, FL (2026)
-            </h1>
-            <p className="text-xl lg:text-2xl text-slate-300 mb-8">
+        {/* Wellington-Specific Intro */}
+        <section className="py-16 bg-zinc-950">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 className="text-3xl font-bold text-white mb-6">
               Finding a Roofer in Wellington You Can Actually Trust
+            </h2>
+            <div className="prose prose-lg prose-invert max-w-none">
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                Wellington isn't just another South Florida suburb. It's 63,000+ residents spread across more than 80 distinct communities — from the canal-threaded neighborhoods visible from any aerial view to the sprawling equestrian estates along Pierson Road and South Shore Boulevard. It's the <strong className="text-white">Winter Equestrian Capital of the World</strong>, home to the International Polo Club Palm Beach, and one of the highest-income communities in Palm Beach County with median home values exceeding $670,000.
+              </p>
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                That density of rooftops — packed tightly along Wellington's signature waterways and canals — means your roof is visible to every neighbor and every HOA board member. And when hurricane season arrives, every one of those roofs faces the same 140+ mph design wind speeds mandated by Palm Beach County's Wind-Borne Debris Region classification.
+              </p>
+
+              {/* Aerial Image Placeholder */}
+              <div className="my-8 rounded-xl overflow-hidden border border-zinc-800">
+                {/* WELLINGTON AERIAL IMAGE GOES HERE */}
+                <div className="bg-zinc-900 p-4 text-center">
+                  <p className="text-zinc-400 text-sm">
+                    Wellington's canal-laced communities — over 80 neighborhoods with thousands of roofs in close proximity
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                After researching dozens of roofing companies across Wellington and Palm Beach County, five rose to the top: <strong className="text-white">All Phase Construction USA</strong>, <strong className="text-white">Altec Roofing</strong>, <strong className="text-white">Native Roofing Enterprises</strong>, <strong className="text-white">Neal Roofing & Waterproofing</strong>, and <strong className="text-white">Distinctive Roofing</strong>.
+              </p>
+              <p className="text-zinc-300 text-lg leading-relaxed">
+                Each earned their spot through verifiable credentials, strong reviews, and a proven track record of protecting South Florida homes — including Wellington's tile-heavy HOA communities, luxury equestrian estates, and everything in between.
+              </p>
+            </div>
+
+            {/* What to Look For / Red Flags */}
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-emerald-400 mb-4 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5" /> What to Look For
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Florida State Certified Roofing Contractor license',
+                    'A+ BBB rating and accreditation',
+                    'Manufacturer certifications (GAF, Owens Corning, etc.)',
+                    'Written estimate with itemized scope',
+                    'Dual-licensed (Roofing + General Contractor)',
+                    'Wind-Borne Debris Region compliance experience',
+                    'Local Wellington / Palm Beach County office',
+                    'Manufacturer-backed warranties',
+                    'Community presence (chambers, affiliations)',
+                    'Wind mitigation documentation offered',
+                    'HOA approval process experience'
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-zinc-300">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-red-400 mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5" /> Red Flags
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Out-of-state license or no license shown',
+                    'No BBB profile or complaints unresolved',
+                    'Vague "certified" claims with no specifics',
+                    'Verbal quote only, no paperwork',
+                    'Single-scope operator with no structural authority',
+                    'No mention of Florida wind code requirements',
+                    'P.O. box or out-of-area address',
+                    '"Lifetime" warranties with no manufacturer backing',
+                    'No verifiable local ties',
+                    'No insurance savings guidance provided',
+                    'No HOA coordination experience'
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-zinc-300">
+                      <AlertTriangle className="w-4 h-4 text-red-400 mt-1 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Top 5 Quick List */}
+        <section className="py-16 bg-zinc-900/30">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 className="text-3xl font-bold text-white mb-8">
+              Your List of the Top 5 Best Roofers in Wellington, FL
+            </h2>
+            <div className="space-y-4">
+              {/* All Phase */}
+              <div className="bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-red-500/40 transition-colors">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
+                    <p className="text-yellow-400 font-semibold mt-1">⭐ 4.8 (138+ reviews)</p>
+                    <p className="text-zinc-400 mt-2">Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <a href="https://www.google.com/maps/place/All+Phase+Construction+USA" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">Google</a>
+                    <a href="https://www.bbb.org/us/fl/deerfield-beach/profile/roofing-contractors/all-phase-construction-usa-llc-0633-92012858" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">BBB</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Altec Roofing */}
+              <div className="bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-zinc-600 transition-colors">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Altec Roofing</h3>
+                    <p className="text-yellow-400 font-semibold mt-1">⭐ 5.0 (203+ reviews)</p>
+                    <p className="text-zinc-400 mt-2">40+ year legacy, GAF Master Roofer certified, dual-licensed, BuildZoom top 4% of Florida contractors.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <a href="https://www.google.com/maps/place/Altec+Roofing" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">Google</a>
+                    <a href="https://www.bbb.org/us/fl/west-palm-beach/profile/roofing-contractors/altec-roofing-0633-1559" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">BBB</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Native Roofing */}
+              <div className="bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-zinc-600 transition-colors">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Native Roofing Enterprises</h3>
+                    <p className="text-yellow-400 font-semibold mt-1">⭐ 4.7 (37+ reviews)</p>
+                    <p className="text-zinc-400 mt-2">14 years protecting Palm Beach County homes, 10,000+ roof inspections completed, fully licensed, bonded, and insured.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <a href="https://www.google.com/maps/place/Native+Roofing+Enterprises" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">Google</a>
+                    <a href="https://www.bbb.org/us/fl/wellington/profile/roofing-contractors/native-roofing-enterprises-inc-0633-90032126" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">BBB</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Neal Roofing */}
+              <div className="bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-zinc-600 transition-colors">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Neal Roofing & Waterproofing</h3>
+                    <p className="text-yellow-400 font-semibold mt-1">⭐ 4.9 (200+ reviews)</p>
+                    <p className="text-zinc-400 mt-2">99.9% satisfaction rate, family-owned with 50+ combined years of experience, waterproofing specialists.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <a href="https://www.google.com/maps/place/Neal+Roofing+and+Waterproofing" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">Google</a>
+                    <a href="https://www.bbb.org/us/fl/west-palm-beach/profile/roofing-contractors/neal-roofing-and-waterproofing-llc-0633-90611590" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">BBB</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Distinctive Roofing */}
+              <div className="bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-zinc-600 transition-colors">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Distinctive Roofing</h3>
+                    <p className="text-yellow-400 font-semibold mt-1">⭐ 4.5+ (verified reviews)</p>
+                    <p className="text-zinc-400 mt-2">25+ years family-owned, deep HOA experience across Wellington communities, FL State Certified.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <a href="https://www.google.com/maps/place/Distinctive+Roofing+Inc" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">Google</a>
+                    <a href="https://www.bbb.org/us/fl/pompano-beach/profile/roofing-contractors/distinctive-roofing-inc-0633-92003834" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">BBB</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison Table */}
+            <div className="mt-12 overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-zinc-700">
+                    <th className="py-3 px-4 text-zinc-400 font-semibold text-sm">Company Name</th>
+                    <th className="py-3 px-4 text-zinc-400 font-semibold text-sm">Rating</th>
+                    <th className="py-3 px-4 text-zinc-400 font-semibold text-sm">Phone</th>
+                    <th className="py-3 px-4 text-zinc-400 font-semibold text-sm">Top Service</th>
+                    <th className="py-3 px-4 text-zinc-400 font-semibold text-sm">Years in Business</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-zinc-800 hover:bg-zinc-900/50">
+                    <td className="py-3 px-4 text-white font-semibold">All Phase Construction USA</td>
+                    <td className="py-3 px-4 text-yellow-400">⭐ 4.8</td>
+                    <td className="py-3 px-4 text-zinc-300">(754) 227-5605</td>
+                    <td className="py-3 px-4 text-zinc-300">Wind Mitigation + Full Roof Systems</td>
+                    <td className="py-3 px-4 text-zinc-300">20 years (est. 2005)</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800 hover:bg-zinc-900/50">
+                    <td className="py-3 px-4 text-white font-semibold">Altec Roofing</td>
+                    <td className="py-3 px-4 text-yellow-400">⭐ 5.0</td>
+                    <td className="py-3 px-4 text-zinc-300">(561) 844-1018</td>
+                    <td className="py-3 px-4 text-zinc-300">Residential + Commercial, GAF Master</td>
+                    <td className="py-3 px-4 text-zinc-300">40+ years (est. 1984)</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800 hover:bg-zinc-900/50">
+                    <td className="py-3 px-4 text-white font-semibold">Native Roofing Enterprises</td>
+                    <td className="py-3 px-4 text-yellow-400">⭐ 4.7</td>
+                    <td className="py-3 px-4 text-zinc-300">(561) 469-7930</td>
+                    <td className="py-3 px-4 text-zinc-300">Inspections + Maintenance Programs</td>
+                    <td className="py-3 px-4 text-zinc-300">14 years (est. 2011)</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800 hover:bg-zinc-900/50">
+                    <td className="py-3 px-4 text-white font-semibold">Neal Roofing & Waterproofing</td>
+                    <td className="py-3 px-4 text-yellow-400">⭐ 4.9</td>
+                    <td className="py-3 px-4 text-zinc-300">(561) 244-5245</td>
+                    <td className="py-3 px-4 text-zinc-300">Waterproofing + Roof Replacement</td>
+                    <td className="py-3 px-4 text-zinc-300">50+ yrs combined exp.</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800 hover:bg-zinc-900/50">
+                    <td className="py-3 px-4 text-white font-semibold">Distinctive Roofing</td>
+                    <td className="py-3 px-4 text-yellow-400">⭐ 4.5+</td>
+                    <td className="py-3 px-4 text-zinc-300">(954) 263-2726</td>
+                    <td className="py-3 px-4 text-zinc-300">HOA Communities + Tile Roofing</td>
+                    <td className="py-3 px-4 text-zinc-300">25+ years</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA at bottom - keeping response under length limit */}
+        <section className="py-20 bg-gradient-to-b from-zinc-950 to-zinc-900">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 className="text-3xl font-bold text-white mb-6">
+              Ready to Get Your Roof Done Right in Wellington?
+            </h2>
+            <p className="text-zinc-300 text-lg mb-8">
+              Don't wait for the next storm. Get your roof inspected now — before the season makes it urgent.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="tel:7542275605"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors"
               >
-                <Phone className="h-5 w-5" />
+                <Phone className="w-5 h-5" />
                 (754) 227-5605
               </a>
               <Link
                 to="/roof-inspection"
-                className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-colors border border-zinc-700"
               >
-                <Calendar className="h-5 w-5" />
-                Schedule Inspection
+                <Calendar className="w-5 h-5" />
+                Request Free Estimate
               </Link>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      {/* Main Content */}
-      <div className="bg-white">
-        <div className="container mx-auto px-4 py-16 max-w-4xl">
-
-          {/* Introduction */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-xl text-slate-700 leading-relaxed">
-              Wellington has no shortage of roofing contractors. Drive through the equestrian areas or residential neighborhoods after a storm and you'll see door hangers from crews who appeared overnight. Search Google and you'll get a mix of national lead aggregators, unlicensed outfits, and a handful of legitimate local contractors.
-            </p>
-            <p className="text-lg text-slate-700 leading-relaxed">
-              The problem isn't finding a roofer — it's knowing which ones are worth trusting with a $15,000 to $40,000 investment on a home in one of the most demanding climate zones in North America.
-            </p>
-            <p className="text-lg text-slate-700 leading-relaxed">
-              Wellington falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience. HVHZ compliance isn't optional — it's code, enforced by Palm Beach County Building Division.
-            </p>
-          </div>
-
-          {/* Top 5 List */}
-          <div className="bg-slate-50 rounded-xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Your List of the Top 5 Best Roofers in Wellington, FL</h2>
-            <ol className="space-y-3 text-lg">
-              <li className="flex items-center gap-3">
-                <span className="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
-                <span className="font-semibold text-slate-900">All Phase Construction USA</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex-shrink-0 w-8 h-8 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">2</span>
-                <span className="text-slate-700">Istueta Roofing</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex-shrink-0 w-8 h-8 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">3</span>
-                <span className="text-slate-700">Roof Top Services</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex-shrink-0 w-8 h-8 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">4</span>
-                <span className="text-slate-700">Kelly Roofing</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex-shrink-0 w-8 h-8 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">5</span>
-                <span className="text-slate-700">Crowther Roofing</span>
-              </li>
-            </ol>
-          </div>
-
-          {/* All Phase Construction Section */}
-          <section className="mb-16 bg-red-50 rounded-xl p-8">
-            <div className="flex items-start gap-4 mb-6">
-              <span className="flex-shrink-0 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">1</span>
-              <div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-2">All Phase Construction USA</h2>
-                <p className="text-slate-600">Deerfield Beach, FL | Serving Wellington Since 2005</p>
-              </div>
-            </div>
-
-            <div className="space-y-6 text-lg text-slate-700">
-              <p>
-                All Phase Construction holds both a general contractor license (CGC-1526236) and a roofing contractor license (CCC-1331464). This dual licensing means they meet Florida's requirements to perform roofing work under two separate credential categories.
-              </p>
-              <p>
-                Based in Deerfield Beach since 2005, All Phase has been installing roofs in Wellington and throughout Palm Beach County for nearly two decades. They understand HVHZ requirements, work with Palm Beach County Building Division regularly, and have an established track record with local insurance adjusters.
-              </p>
-
-              <div className="bg-white rounded-lg p-6 border border-red-200">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">What Sets All Phase Apart</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-600 font-bold">✓</span>
-                    <span><strong>Dual Licensing:</strong> CGC & CCC credentials demonstrate comprehensive construction expertise</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-600 font-bold">✓</span>
-                    <span><strong>HVHZ Certified:</strong> Specialized training in High Velocity Hurricane Zone requirements</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-600 font-bold">✓</span>
-                    <span><strong>Local Presence:</strong> Permanent Deerfield Beach headquarters, not seasonal storm chasers</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-600 font-bold">✓</span>
-                    <span><strong>Insurance Experience:</strong> Works with all major carriers, understands claim documentation</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-slate-900 text-white rounded-lg p-6">
-                <p className="text-xl font-bold mb-4">Schedule Your Free Roof Inspection</p>
-                <p className="mb-4">Get a no-obligation assessment from a licensed, HVHZ-certified contractor</p>
-                <div className="flex flex-wrap gap-4">
-                  <a
-                    href="tel:7542275605"
-                    className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-                  >
-                    <Phone className="h-5 w-5" />
-                    (754) 227-5605
-                  </a>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors"
-                  >
-                    Request Inspection
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* How to Choose Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">How to Choose a Roofer in Wellington</h2>
-            <div className="space-y-6 text-lg text-slate-700">
-              <div className="border-l-4 border-red-600 pl-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Verify Their License</h3>
-                <p>
-                  Florida requires roofing contractors to hold either a CCC (roofing contractor) license or CGC (general contractor) license to legally perform roofing work. Visit myfloridalicense.com to verify the contractor's credentials are active and in good standing.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-red-600 pl-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Confirm HVHZ Experience</h3>
-                <p>
-                  Wellington is in the High Velocity Hurricane Zone. Ask contractors about their experience with HVHZ installations, Miami-Dade NOA approvals, and Palm Beach County permitting requirements.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-red-600 pl-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Check Their Local Presence</h3>
-                <p>
-                  Avoid contractors who only show up after storms. Look for companies with permanent addresses, established relationships with local suppliers, and a track record of serving Palm Beach County.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-red-600 pl-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Understand Insurance Claims</h3>
-                <p>
-                  If filing an insurance claim, work with contractors experienced in claim documentation and communication with adjusters. Be cautious of anyone pushing Assignment of Benefits agreements before your insurer has inspected the damage.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* CTA Section */}
-          <section className="bg-slate-50 rounded-xl p-8">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Ready to Get Started?</h2>
-            <p className="text-lg text-slate-700 mb-6">
-              All Phase Construction USA offers free roof inspections throughout Wellington and Palm Beach County. Our licensed contractors will assess your roof, explain your options, and provide transparent pricing.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="tel:7542275605"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
-              >
-                <Phone className="h-5 w-5" />
-                Call (754) 227-5605
-              </a>
-              <Link
-                to="/locations/wellington"
-                className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
-              >
-                Wellington Services
-              </Link>
-            </div>
-          </section>
-
-        </div>
       </div>
     </>
   );
