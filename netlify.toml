@@ -58,6 +58,11 @@ path = "/xmlrpc.php"
 function = "strip-slash"
 path = "/feed"
 
+# Blog redirect edge function — handles dead blog URLs before static file resolution
+[[edge_functions]]
+function = "blog-redirects"
+path = "/blog/*"
+
 [[redirects]]
 from = "/wind-mitigation-inspection"
 to = "/roof-inspection/"
@@ -208,13 +213,13 @@ force = true
 
 # ======================================================================
 # Blog SPA fallback — serves React app for blog paths without prerendered HTML
-# force = true ensures this works even when dist/blog/ directory exists
+# The blog-redirects edge function handles dead URLs before this fires
 # ======================================================================
 [[redirects]]
 from = "/blog/*"
 to = "/index.html"
 status = 200
-force = true
+force = false
 
 # ======================================================================
 # SPA fallback — must be LAST

@@ -2083,6 +2083,19 @@ ${companyAuthorityFooter()}
     } else {
       console.log('⚠️ Sitemap not found at public/sitemap.xml\n');
     }
+
+    // Create a fallback for blog paths without prerendered HTML
+    // Netlify returns 404 for unknown paths inside dist/blog/ directory.
+    // Copy index.html as the 404 fallback so the SPA handles unknown blog slugs.
+    const blogFallbackDir = path.join(distDir, 'blog');
+    if (fs.existsSync(blogFallbackDir)) {
+      const indexHtml = path.join(distDir, 'index.html');
+      if (fs.existsSync(indexHtml)) {
+        const fallbackDest = path.join(blogFallbackDir, '404.html');
+        fs.copyFileSync(indexHtml, fallbackDest);
+        console.log('✅ Created blog/404.html fallback (SPA for unknown blog slugs)');
+      }
+    }
   } catch (err) {
     console.log('⚠️ Error generating blog posts:', err.message);
   }
