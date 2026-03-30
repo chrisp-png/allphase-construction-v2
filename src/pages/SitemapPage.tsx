@@ -133,7 +133,8 @@ export default function SitemapPage() {
         { to: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Best Roofers in Fort Lauderdale' },
         { to: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'Best Roofers in West Palm Beach' },
         { to: '/locations/boca-raton/best-roofers-boca-raton', label: 'Best Roofers in Boca Raton' },
-        { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' }
+        { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' },
+        { to: '/locations/wellington/best-roofers-wellington', label: 'Best Roofers in Wellington' }
       ]
     }
   ];
