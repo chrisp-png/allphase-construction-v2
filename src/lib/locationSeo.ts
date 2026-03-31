@@ -47,7 +47,7 @@ export function buildLocationSeo(location: Location): LocationSEO {
 
   // Generate defaults from templates
   const defaultTitle = `${city} Roofing Contractor | All Phase`;
-  const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. HVHZ-certified, 2,500+ projects. Free estimate. (754) 227-5605.`;
+  const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. ${complianceLanguage}, 2,500+ projects. Free estimate. (754) 227-5605.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 

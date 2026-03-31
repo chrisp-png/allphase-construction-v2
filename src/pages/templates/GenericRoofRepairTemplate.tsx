@@ -169,6 +169,107 @@ export default function GenericRoofRepairTemplate() {
           </div>
         </section>
 
+        {/* Why Timely Roof Repair Matters */}
+        <section className="py-20 bg-black">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                Why Timely Roof Repair Matters in {cityName}
+              </h2>
+              <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+                <p>
+                  A small roof leak in {cityName} can escalate quickly. Florida's humidity means moisture trapped under damaged roofing materials promotes mold growth within 48–72 hours. What starts as a minor drip can lead to rotted decking, compromised trusses, and interior damage that costs thousands more than the original repair would have.
+                </p>
+                <p>
+                  Beyond structural concerns, delaying repairs can affect your insurance coverage. Many Florida insurers require roofs to be in good condition as a condition of coverage. If an adjuster finds pre-existing damage that wasn't addressed, storm damage claims can be denied or reduced. Keeping your roof in repair-ready condition protects both your home and your policy.
+                </p>
+                <p>
+                  Our repair process starts with a thorough <Link to="/roof-inspection/" className="text-red-600 hover:text-red-500 underline transition-colors">diagnostic inspection</Link> to identify every issue — not just the obvious one. We document everything with photos and provide a written scope of work before any repair begins. No guesswork, no surprises.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Repair Process */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12">
+                Our Roof Repair Process
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  { step: '1', title: 'Free Diagnostic Inspection', desc: `We inspect your entire roof system — not just the area you noticed. We check for hidden damage, code compliance issues, and potential problem areas specific to ${cityName}'s weather patterns.` },
+                  { step: '2', title: 'Written Scope & Estimate', desc: 'You receive a detailed proposal explaining exactly what needs to be done, what materials we\'ll use, and what it will cost. No vague estimates or hidden charges.' },
+                  { step: '3', title: 'Permitting (When Required)', desc: 'For repairs that exceed Florida Building Code thresholds, we pull all necessary permits and coordinate inspections. We handle the paperwork so you don\'t have to.' },
+                  { step: '4', title: 'Professional Repair', desc: 'Our crews use code-compliant materials and installation methods. We don\'t cut corners on fasteners, sealants, or underlayment — even on small repairs.' },
+                  { step: '5', title: 'Documentation & Photos', desc: 'We photograph before, during, and after every repair. This documentation supports insurance claims, future wind mitigation inspections, and resale disclosures.' },
+                  { step: '6', title: 'Final Inspection & Warranty', desc: 'After completion, we walk you through the work and provide warranty documentation. For qualifying repairs, we can issue a 5-year certification letter for insurance purposes.' },
+                ].map((item) => (
+                  <div key={item.step} className="bg-black border border-zinc-800 rounded-xl p-6">
+                    <div className="flex items-center mb-3">
+                      <span className="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3">{item.step}</span>
+                      <h3 className="text-xl font-bold">{item.title}</h3>
+                    </div>
+                    <p className="text-zinc-300">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Storm Damage Section */}
+        <section className="py-20 bg-black">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                Storm Damage Roof Repair in {cityName}
+              </h2>
+              <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+                <p>
+                  {cityName} sits in one of the most storm-active regions in the United States. Hurricane-force winds, driving rain, and hail can damage even well-maintained roofs. After a storm, the priority is getting your home protected quickly while ensuring the repair meets Florida Building Code standards.
+                </p>
+                <p>
+                  We respond to storm damage calls promptly with emergency tarping when needed to prevent further water intrusion. Once conditions allow, we perform a full inspection and provide documentation you can submit to your insurance carrier. We don't inflate damage reports or push unnecessary replacements — we tell you exactly what happened and what it takes to fix it properly.
+                </p>
+                <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 mt-6">
+                  <h3 className="text-xl font-bold mb-4 text-white">After a Storm: What to Do</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" /><span>Document visible damage with photos from ground level — do not climb on the roof</span></li>
+                    <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" /><span>Contact your insurance company to open a claim, even before repairs are estimated</span></li>
+                    <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" /><span>Call a licensed contractor for a professional inspection — avoid door-to-door storm chasers</span></li>
+                    <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" /><span>Keep all receipts for temporary repairs (tarps, water extraction) as these are typically reimbursable</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cost & Insurance Section */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                Roof Repair Costs in {cityName}
+              </h2>
+              <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+                <p>
+                  Roof repair costs in {cityName} vary based on the type of damage, roofing material, and scope of work. Minor repairs like replacing a few cracked tiles or resealing a vent boot typically range from $300 to $800. More extensive repairs involving underlayment replacement, structural patching, or large-area restoration can range from $1,500 to $5,000 or more.
+                </p>
+                <p>
+                  We provide detailed, itemized estimates so you know exactly what you're paying for. There are no hidden fees or surprise charges. If we discover additional issues during the repair that weren't visible during inspection, we stop and discuss them with you before proceeding.
+                </p>
+                <p>
+                  For homeowners concerned about costs, a comprehensive repair with a <strong className="text-white">5-year certification letter</strong> can be a smart alternative to full replacement — extending your roof's insurable life at a fraction of the cost. Learn more about the <Link to="/roof-repair/" className="text-red-600 hover:text-red-500 underline transition-colors">5-year roof certification process</Link>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">

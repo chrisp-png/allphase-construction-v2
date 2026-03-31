@@ -29,6 +29,8 @@ export default function LocationMap() {
               <img
                 src="/deerfield-beach-all-phase-construction-office-building.JPG"
                 alt="All Phase Construction USA office building in Deerfield Beach, Florida"
+                width={800}
+                height={500}
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"

@@ -340,6 +340,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/third-nail-hurricane-roof-strapping-detail.jpg"
                     alt="Three-nail hurricane roof strapping at roof-to-wall connection meeting HVHZ code requirements in South Florida"
+                    width={800}
+                    height={600}
                     loading="lazy"
                     decoding="async"
                     className="w-full rounded-lg border border-zinc-700"
@@ -352,6 +354,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/roof-to-wall-hurricane-straps-installed.jpg"
                     alt="Hurricane straps and roof-to-wall connections installed for HVHZ wind resistance in South Florida"
+                    width={800}
+                    height={600}
                     loading="lazy"
                     decoding="async"
                     className="w-full rounded-lg border border-zinc-700"
@@ -482,6 +486,8 @@ export default function HowToHireRoofingContractorPage() {
                 <img
                   src="/wind-mitigation-inspection-roof-components-diagram.png"
                   alt="Wind mitigation inspection diagram showing roof components evaluated for insurance discounts in South Florida HVHZ"
+                  width={800}
+                  height={600}
                   className="w-full rounded-lg border border-zinc-700"
                 />
                 <p className="text-sm text-zinc-400 mt-3 text-center">
@@ -532,6 +538,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/roofing-property-protection-catch-all-system.jpg"
                     alt="Roofing catch-all debris containment system protecting landscaping and property during South Florida roof replacement"
+                    width={800}
+                    height={600}
                     className="w-full h-64 object-cover rounded-lg border border-zinc-700"
                   />
                 </div>
@@ -546,6 +554,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/equipter-roofing-equipment-property-protection.jpeg"
                     alt="Equipter roofing debris removal equipment protecting driveways and pavers during tile roof replacement in South Florida"
+                    width={800}
+                    height={600}
                     className="w-full h-64 object-cover rounded-lg border border-zinc-700"
                   />
                 </div>
@@ -703,6 +713,8 @@ export default function HowToHireRoofingContractorPage() {
                 <img
                   src="/solar-attic-fan-hvhz-roof-ventilation.jpg"
                   alt="HVHZ-rated solar attic fan installed on tile roof in South Florida providing hurricane-resistant roof ventilation"
+                  width={800}
+                  height={600}
                   className="w-full rounded-lg border border-zinc-700"
                 />
                 <p className="text-sm text-zinc-400 mt-3 text-center">
@@ -759,6 +771,8 @@ export default function HowToHireRoofingContractorPage() {
                 <img
                   src="/hvhz-solar-attic-fan-installation-south-florida.jpg"
                   alt="HVHZ-rated solar attic fan installation in South Florida showing proper flashing and underlayment protection"
+                  width={800}
+                  height={600}
                   className="w-full h-auto rounded-lg object-cover mb-3"
                   loading="lazy"
                 />
@@ -873,6 +887,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/tamko-pro-certified-shingle-installation-south-florida.png"
                     alt="TAMKO Pro Certified shingle installation by All Phase Construction USA in South Florida"
+                    width={800}
+                    height={600}
                     className="w-full h-auto rounded-lg object-cover"
                     loading="lazy"
                   />
@@ -900,6 +916,8 @@ export default function HowToHireRoofingContractorPage() {
                 <img
                   src="/tile-roof-installation-hvhz-south-florida.jpg"
                   alt="HVHZ tile roof installation showing proper underlayment and tile attachment methods in South Florida"
+                  width={800}
+                  height={600}
                   className="w-full rounded-lg border border-zinc-700"
                 />
                 <p className="text-sm text-zinc-400 mt-3 text-center">
@@ -934,6 +952,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/flat-concrete-tile-roof-hvhz-installation.jpg"
                     alt="Flat concrete tile roof with HVHZ-compliant installation in South Florida"
+                    width={800}
+                    height={600}
                     className="w-full h-80 object-cover rounded-lg border border-zinc-700"
                   />
                   <p className="text-sm text-zinc-400 mt-3 text-center">
@@ -944,6 +964,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/completed-tile-roof-south-florida-home.jpg"
                     alt="Completed tile roof installation on South Florida luxury home with proper curb appeal and hurricane protection"
+                    width={800}
+                    height={600}
                     className="w-full h-80 object-cover rounded-lg border border-zinc-700"
                   />
                   <p className="text-sm text-zinc-400 mt-3 text-center">
@@ -993,6 +1015,8 @@ export default function HowToHireRoofingContractorPage() {
                   <img
                     src="/mechanically-seamed-metal-roof-installation-south-florida.jpg"
                     alt="Mechanically seamed metal roof installation by All Phase Construction USA in South Florida designed for hurricane wind resistance"
+                    width={800}
+                    height={600}
                     className="w-full h-auto rounded-lg object-cover"
                     loading="lazy"
                   />

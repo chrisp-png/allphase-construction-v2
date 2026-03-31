@@ -129,6 +129,21 @@ export default function BestRoofersDeerfieldBeachPage() {
             }
           ])}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "All Phase Construction USA",
+            "@id": "https://allphaseconstructionfl.com/#organization",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "312",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -1327,6 +1342,26 @@ export default function BestRoofersDeerfieldBeachPage() {
             </Link>
           </div>
         </div>
+
+        {/* Best Roofers Cross-Links */}
+        <section className="py-12 border-t border-zinc-800">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h3 className="text-xl font-bold text-white mb-6">Best Roofers in Other Cities</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                { to: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Fort Lauderdale' },
+                { to: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'West Palm Beach' },
+                { to: '/locations/boca-raton/best-roofers-boca-raton', label: 'Boca Raton' },
+                { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Coral Springs' },
+                { to: '/locations/wellington/best-roofers-wellington', label: 'Wellington' },
+              ].map(link => (
+                <a key={link.to} href={link.to} className="px-4 py-2 bg-zinc-800 hover:bg-red-600 text-zinc-300 hover:text-white rounded-lg text-sm transition-colors duration-200">
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
       </section>
 
       {/* Contact Form */}

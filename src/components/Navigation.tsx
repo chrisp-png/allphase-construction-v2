@@ -27,6 +27,7 @@ export default function Navigation() {
               <img
                 src="/allphase-logo-white.svg"
                 alt="All Phase Construction USA logo"
+                height="67"
                 className="w-auto"
                 style={{ width: '250px' }}
               />

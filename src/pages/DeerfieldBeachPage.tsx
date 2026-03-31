@@ -257,6 +257,8 @@ export default function DeerfieldBeachPage() {
               src="/deerfield-beach-fl-roofing-services.png"
               alt="Deerfield Beach Florida city sign representing the local service area for a Deerfield Beach roofing contractor"
               title="Deerfield Beach Roofing Contractor – Local Service Area"
+              width={1200}
+              height={600}
               loading="lazy"
               decoding="async"
               className="w-full rounded-lg"

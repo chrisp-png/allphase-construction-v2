@@ -291,6 +291,8 @@ export default function ParklandPage() {
                 <img
                   src="/parkland-fl-residential-tile-roof-replacement-in-progress-allphase-construction.jpg"
                   alt="Residential tile roof replacement in progress by All Phase Construction in Parkland, Florida"
+                  width={800}
+                  height={600}
                   className="w-full h-64 object-cover"
                   loading="lazy"
                   decoding="async"
@@ -303,6 +305,8 @@ export default function ParklandPage() {
                 <img
                   src="/parkland-fl-tile-roof-installation-materials-loaded-allphase-construction.jpg"
                   alt="Tile roofing materials loaded and ready for installation by All Phase Construction in Parkland, Florida"
+                  width={800}
+                  height={600}
                   className="w-full h-64 object-cover"
                   loading="lazy"
                   decoding="async"
@@ -315,6 +319,8 @@ export default function ParklandPage() {
                 <img
                   src="/parkland-fl-concrete-tile-roof-installation-work-in-progress-allphase-construction.jpg"
                   alt="Concrete tile roof installation work in progress by All Phase Construction in Parkland, Florida"
+                  width={800}
+                  height={600}
                   className="w-full h-64 object-cover"
                   loading="lazy"
                   decoding="async"

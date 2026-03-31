@@ -608,6 +608,8 @@ export default function BlogPostPage() {
               <img
                 src={post.featured_image}
                 alt={post.title}
+                width={1200}
+                height={600}
                 loading="lazy"
                 decoding="async"
                 className="w-full h-auto rounded-xl shadow-2xl"
@@ -716,6 +718,8 @@ export default function BlogPostPage() {
                       <img
                         src={relatedPost.featured_image}
                         alt={relatedPost.title}
+                        width={800}
+                        height={600}
                         loading="lazy"
                         decoding="async"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

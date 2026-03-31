@@ -49,6 +49,8 @@ export default function OurLocationPage() {
             <img
               src="/images/all-phase-construction-deerfield-beach-office.jpg"
               alt="All Phase Construction USA office at 590 Goolsby Blvd in Deerfield Beach, FL"
+              width={800}
+              height={600}
               loading="lazy"
               decoding="async"
               className="w-full h-auto object-cover"

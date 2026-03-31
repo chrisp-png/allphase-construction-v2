@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { generateSEOMetadata } from '../config/seoTitles';
+import { generateSEOMetadata, CITY_NAMES } from '../config/seoTitles';
 
 /**
  * NUCLEAR METADATA SYSTEM
@@ -175,6 +175,87 @@ export default function NuclearMetadata() {
       serviceScript.textContent = JSON.stringify(serviceData);
     } else {
       const stale = document.querySelector('#service-schema-ld');
+      if (stale) stale.remove();
+    }
+
+    // --- BreadcrumbList Schema Injection ---
+    // Auto-generate breadcrumbs from URL path for every page
+    const BASE = 'https://allphaseconstructionfl.com';
+    const breadcrumbItems: { name: string; item: string }[] = [
+      { name: 'Home', item: BASE + '/' }
+    ];
+
+    const segments = path.split('/').filter(Boolean); // e.g. ['locations', 'wellington', 'best-roofers-wellington']
+
+    // Build breadcrumb trail from URL segments
+    const segmentLabels: Record<string, string> = {
+      'locations': 'Locations',
+      'blog': 'Blog',
+      'roof-repair': 'Roof Repair',
+      'roof-inspection': 'Roof Inspection',
+      'roof-replacement': 'Roof Replacement',
+      'residential-roofing': 'Residential Roofing',
+      'commercial-roofing': 'Commercial Roofing',
+      'shingle-roofing': 'Shingle Roofing',
+      'metal-roofing': 'Metal Roofing',
+      'tile-roofing': 'Tile Roofing',
+      'flat-roofing': 'Flat Roofing',
+      'projects': 'Projects',
+      'about': 'About',
+      'contact': 'Contact',
+      'sitemap': 'Sitemap',
+      'faq': 'FAQ',
+      'pricing-guide': 'Pricing Guide',
+      'learning-center': 'Learning Center',
+      'how-to-hire-roofing-contractor': 'How to Hire a Roofing Contractor',
+      'roof-replacement-process': 'Roof Replacement Process',
+    };
+
+    let builtPath = '';
+    for (let i = 0; i < segments.length; i++) {
+      const seg = segments[i];
+      builtPath += '/' + seg;
+
+      let label = segmentLabels[seg] || CITY_NAMES[seg] || null;
+
+      // Handle best-roofers-{city} pattern
+      if (!label && seg.startsWith('best-roofers-')) {
+        const citySlug = seg.replace('best-roofers-', '');
+        const cityName = CITY_NAMES[citySlug] || citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        label = `Best Roofers in ${cityName}`;
+      }
+
+      // Fallback: humanize slug
+      if (!label) {
+        label = seg.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      }
+
+      breadcrumbItems.push({ name: label, item: BASE + builtPath });
+    }
+
+    // Only inject if we have more than just Home (i.e., not the homepage itself)
+    if (breadcrumbItems.length > 1) {
+      const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbItems.map((crumb, idx) => ({
+          '@type': 'ListItem',
+          position: idx + 1,
+          name: crumb.name,
+          item: crumb.item
+        }))
+      };
+
+      let breadcrumbScript = document.querySelector('#breadcrumb-schema-ld') as HTMLScriptElement | null;
+      if (!breadcrumbScript) {
+        breadcrumbScript = document.createElement('script');
+        breadcrumbScript.type = 'application/ld+json';
+        breadcrumbScript.id = 'breadcrumb-schema-ld';
+        document.head.appendChild(breadcrumbScript);
+      }
+      breadcrumbScript.textContent = JSON.stringify(breadcrumbSchema);
+    } else {
+      const stale = document.querySelector('#breadcrumb-schema-ld');
       if (stale) stale.remove();
     }
 

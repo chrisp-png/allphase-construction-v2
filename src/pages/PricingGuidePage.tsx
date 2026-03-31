@@ -317,6 +317,8 @@ export default function PricingGuidePage() {
                 <img
                   src="/solar-attic-fan-diagram.svg"
                   alt="Technical cutaway diagram of solar attic fan showing airflow patterns with hot air exhaust through roof-mounted solar-powered fan and cool air intake through soffit vents demonstrating proper attic ventilation in South Florida homes"
+                  width={1000}
+                  height={700}
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -403,6 +405,8 @@ export default function PricingGuidePage() {
                 <img
                   src="https://images.pexels.com/photos/31763537/pexels-photo-31763537.jpeg?auto=compress&cs=tinysrgb&w=1200"
                   alt="Roof construction showing wooden framework and structural connections demonstrating proper roof-to-wall attachment methods for South Florida HVHZ wind mitigation requirements"
+                  width={1200}
+                  height={800}
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />
@@ -499,6 +503,8 @@ export default function PricingGuidePage() {
                 <img
                   src="https://images.pexels.com/photos/34019842/pexels-photo-34019842.jpeg?auto=compress&cs=tinysrgb&w=1200"
                   alt="Professional roofer in safety harness removing debris from roof into dumpster demonstrating proper property protection and organized jobsite management with specialized equipment"
+                  width={1200}
+                  height={800}
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />

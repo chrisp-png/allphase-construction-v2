@@ -76,6 +76,8 @@ export default function ChamberBadges() {
               <img
                 src="https://www.browardbiz.com/images/memberbadge.png"
                 alt="Broward Chamber of Commerce Member - All Phase Construction USA"
+                width={200}
+                height={65}
                 className="h-24 w-auto object-contain"
                 loading="lazy"
                 decoding="async"

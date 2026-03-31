@@ -14,6 +14,24 @@
 import { getLocationBySlug } from '../data/locations';
 import { buildLocationSeo } from '../lib/locationSeo';
 
+/**
+ * Broward County slugs — these cities are in the HVHZ (High Velocity Hurricane Zone).
+ * All other South Florida cities default to Wind-Borne Debris Region (WBDR).
+ */
+const BROWARD_CITIES = [
+  'fort-lauderdale', 'deerfield-beach', 'coral-springs', 'pompano-beach',
+  'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
+  'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
+  'lauderdale-by-the-sea', 'lighthouse-point', 'miramar', 'north-lauderdale',
+  'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
+  'parkland'
+];
+
+/** Returns correct wind-zone compliance language for a given city slug */
+function getComplianceLabel(slug: string): string {
+  return BROWARD_CITIES.includes(slug) ? 'HVHZ-certified' : 'Florida wind-code compliant';
+}
+
 export interface SEOMetadata {
   title: string;
   description: string;
@@ -389,7 +407,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     // Fallback if location not found in locations.ts
     return {
       title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
-      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.`,
+      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. ${getComplianceLabel(slug)}, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
     };
   }
@@ -399,11 +417,11 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
-      title: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
-            description: `Fast, licensed roof repair in ${cityName}. Storm damage, leaks, tile, shingle & flat repairs. HVHZ-certified dual-licensed contractor. Free inspection. (754) 227-5605.`,
+      title: `Roof Repair ${cityName} FL | Licensed & ${getComplianceLabel(slug)} | All Phase`,
+            description: `Fast, licensed roof repair in ${cityName}. Storm damage, leaks, tile, shingle & flat repairs. ${getComplianceLabel(slug)} dual-licensed contractor. Free inspection. (754) 227-5605.`,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
-      ogTitle: `Roof Repair ${cityName} FL | Licensed & HVHZ-Certified | All Phase`,
-            ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
+      ogTitle: `Roof Repair ${cityName} FL | Licensed & ${getComplianceLabel(slug)} | All Phase`,
+            ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. ${getComplianceLabel(slug)}, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
   }

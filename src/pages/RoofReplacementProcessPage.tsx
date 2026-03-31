@@ -331,6 +331,8 @@ export default function RoofReplacementProcessPage() {
                   <img
                     src={step.image}
                     alt={step.title}
+                    width={800}
+                    height={600}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
@@ -2155,6 +2157,8 @@ export default function RoofReplacementProcessPage() {
                   <img
                     src={photo.image}
                     alt={photo.title}
+                    width={800}
+                    height={600}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
