@@ -9,15 +9,15 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
     },
     {
       q: 'What is a hurricane deductible in Florida?',
-      a: 'A hurricane deductible is a separate, higher deductible that applies only to hurricane-related claims. It is typically 2–5% of your home’s insured value. For a home insured at $400,000, a 2% hurricane deductible would be $8,000 that you pay out of pocket before insurance coverage begins. This is different from your standard deductible.'
+      a: 'A hurricane deductible is a separate, higher deductible that applies only to hurricane-related claims. It is typically 2â5% of your homeâs insured value. For a home insured at $400,000, a 2% hurricane deductible would be $8,000 that you pay out of pocket before insurance coverage begins. This is different from your standard deductible.'
     },
     {
       q: 'My insurance company sent a letter saying I need to replace my roof. What should I do?',
-      a: 'This is increasingly common in Florida. Insurance companies are conducting aerial inspections and requiring roof replacement for older roofs as a condition of policy renewal. First, get a professional roof inspection from a licensed contractor to assess your roof’s actual condition. Then obtain quotes for replacement. If the roof has storm damage, you may be able to file a claim to cover part or all of the replacement cost.'
+      a: 'This is increasingly common in Florida. Insurance companies are conducting aerial inspections and requiring roof replacement for older roofs as a condition of policy renewal. First, get a professional roof inspection from a licensed contractor to assess your roofâs actual condition. Then obtain quotes for replacement. If the roof has storm damage, you may be able to file a claim to cover part or all of the replacement cost.'
     },
     {
       q: 'How do I file a roof insurance claim in Florida?',
-      a: 'Step 1: Document the damage with photos and video. Step 2: Make temporary repairs to prevent further damage (save receipts). Step 3: Contact your insurance company to file the claim. Step 4: Schedule a professional roof inspection with a licensed contractor. Step 5: Be present (with your contractor) for the adjuster’s inspection. Step 6: Review the estimate and file supplements if the scope is undervalued.'
+      a: 'Step 1: Document the damage with photos and video. Step 2: Make temporary repairs to prevent further damage (save receipts). Step 3: Contact your insurance company to file the claim. Step 4: Schedule a professional roof inspection with a licensed contractor. Step 5: Be present (with your contractor) for the adjusterâs inspection. Step 6: Review the estimate and file supplements if the scope is undervalued.'
     },
     {
       q: 'What is a supplemental insurance claim for roofing?',
@@ -33,17 +33,17 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
     },
     {
       q: 'What if my insurance company denies my roof claim?',
-      a: 'First, request the denial in writing with the specific reason. Common denial reasons include: damage attributed to wear and tear, filing past the deadline, or the insurer claiming pre-existing damage. You can dispute a denial by providing additional documentation (a detailed contractor inspection report can be powerful), requesting re-inspection, or hiring a public adjuster. Florida law protects homeowners’ right to dispute claim decisions.'
+      a: 'First, request the denial in writing with the specific reason. Common denial reasons include: damage attributed to wear and tear, filing past the deadline, or the insurer claiming pre-existing damage. You can dispute a denial by providing additional documentation (a detailed contractor inspection report can be powerful), requesting re-inspection, or hiring a public adjuster. Florida law protects homeownersâ right to dispute claim decisions.'
     }
   ];
   return (
     <>
       <Helmet>
-        <title>Florida Roof Insurance Claims Guide (2025) | How to File, Supplements, & Get Approved</title>
+        <title>Florida Roof Insurance Claims Guide (2026) | How to File, Supplements, & Get Approved</title>
         <meta name="description" content="Complete guide to filing roof insurance claims in Florida. Hurricane deductibles, the claims process, supplemental claims, insurance company letters, and how to maximize your payout." />
         <meta name="keywords" content="florida roof insurance claim, roof insurance claim process, hurricane roof damage claim, insurance company roof replacement letter, supplemental roof claim, florida roof insurance denial, how to file roof claim florida, roof insurance broward county, roof insurance palm beach county" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide" />
-        <meta property="og:title" content="Florida Roof Insurance Claims Guide (2025)" />
+        <meta property="og:title" content="Florida Roof Insurance Claims Guide (2026)" />
         <meta property="og:description" content="Step-by-step guide to filing and maximizing your Florida roof insurance claim. Covers hurricane deductibles, supplements, denials, and the 25% rule." />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -77,7 +77,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
               <span className="text-white">Florida Roof Insurance Claims Guide</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Florida Roof Insurance Claims Guide <span className="text-sky-400">(2025)</span>
+              Florida Roof Insurance Claims Guide <span className="text-sky-400">(2026)</span>
             </h1>
             <p className="text-xl text-slate-300 mb-4 leading-relaxed">
               Navigating a roof insurance claim in Florida can be complex. This guide covers everything from filing your initial claim to supplemental claims, dealing with denials, and understanding how the 25% rule and HVHZ requirements affect your coverage.
@@ -108,7 +108,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
               <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">3</div>
               <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">File Your Claim with Your Insurance Company</h3>
-                <p className="text-slate-700">Call your insurance company's claims number (found on your policy or declarations page). Provide basic information: date of loss, type of damage, and your policy number. The insurer will assign a claim number and schedule an adjuster visit. File promptly — delays can jeopardize your claim.</p>
+                <p className="text-slate-700">Call your insurance company's claims number (found on your policy or declarations page). Provide basic information: date of loss, type of damage, and your policy number. The insurer will assign a claim number and schedule an adjuster visit. File promptly â delays can jeopardize your claim.</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -129,7 +129,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
               <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">6</div>
               <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">File Supplemental Claims When Needed</h3>
-                <p className="text-slate-700">If the insurance estimate falls short, your contractor files a supplement with detailed documentation of the additional costs. This is standard practice and not adversarial — it simply provides the insurer with the information needed to properly fund the repair. Supplements can recover thousands of dollars that the initial estimate missed.</p>
+                <p className="text-slate-700">If the insurance estimate falls short, your contractor files a supplement with detailed documentation of the additional costs. This is standard practice and not adversarial â it simply provides the insurer with the information needed to properly fund the repair. Supplements can recover thousands of dollars that the initial estimate missed.</p>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             <div className="space-y-4">
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-bold text-slate-900 mb-1">Do Not Panic</h4>
-                <p className="text-slate-600">You typically have 30–90 days to respond. Use this time to get a professional inspection and explore your options.</p>
+                <p className="text-slate-600">You typically have 30â90 days to respond. Use this time to get a professional inspection and explore your options.</p>
               </div>
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-bold text-slate-900 mb-1">Get a Professional Inspection</h4>
