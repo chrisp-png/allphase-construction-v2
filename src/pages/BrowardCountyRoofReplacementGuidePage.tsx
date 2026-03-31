@@ -5,7 +5,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
   const faqs = [
     {
       q: 'How much does a roof replacement cost in Broward County?',
-      a: 'A full roof replacement in Broward County typically costs $9,000–$16,000 for asphalt shingles, $16,000–$30,000 for concrete tile, and $20,000–$38,000 for standing seam metal on a standard single-family home. Costs are higher than the state average because all of Broward County is in the High Velocity Hurricane Zone (HVHZ), which requires Miami-Dade NOA-approved materials, engineered installation, and additional inspections.'
+      a: 'A full roof replacement in Broward County typically costs $9,000â$16,000 for asphalt shingles, $16,000â$30,000 for concrete tile, and $20,000â$38,000 for standing seam metal on a standard single-family home. Costs are higher than the state average because all of Broward County is in the High Velocity Hurricane Zone (HVHZ), which requires Miami-Dade NOA-approved materials, engineered installation, and additional inspections.'
     },
     {
       q: 'What is the 25% rule for roofing in Broward County?',
@@ -17,7 +17,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How long does a roof replacement take in Broward County?',
-      a: 'The physical installation takes 2–5 days for shingles and 5–10 days for tile or metal. However, the full timeline including permitting typically runs 3–6 weeks. Permit processing times vary by municipality — Fort Lauderdale, Pompano Beach, Deerfield Beach, and Coral Springs each have their own building departments with different turnaround times.'
+      a: 'The physical installation takes 2â5 days for shingles and 5â10 days for tile or metal. However, the full timeline including permitting typically runs 3â6 weeks. Permit processing times vary by municipality â Fort Lauderdale, Pompano Beach, Deerfield Beach, and Coral Springs each have their own building departments with different turnaround times.'
     },
     {
       q: 'What roofing materials are approved for Broward County HVHZ?',
@@ -25,7 +25,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
     },
     {
       q: 'Will my insurance cover a roof replacement in Broward County?',
-      a: 'Coverage depends on your policy and the cause of damage. Storm damage from hurricanes, wind, or hail is typically covered under homeowners insurance, though deductibles (often 2–5% of your home value for hurricane deductibles) apply. Age-related wear is generally not covered. Many insurers are now requiring roof replacement as a condition of policy renewal for roofs over 15–20 years old. A contractor experienced with insurance claims can help maximize your coverage through proper documentation and supplemental claims.'
+      a: 'Coverage depends on your policy and the cause of damage. Storm damage from hurricanes, wind, or hail is typically covered under homeowners insurance, though deductibles (often 2â5% of your home value for hurricane deductibles) apply. Age-related wear is generally not covered. Many insurers are now requiring roof replacement as a condition of policy renewal for roofs over 15â20 years old. A contractor experienced with insurance claims can help maximize your coverage through proper documentation and supplemental claims.'
     },
     {
       q: 'What happens during a Broward County roof inspection?',
@@ -39,11 +39,11 @@ export default function BrowardCountyRoofReplacementGuidePage() {
   return (
     <>
       <Helmet>
-        <title>Broward County Roof Replacement Guide (2025) | Costs, Permits, HVHZ Requirements</title>
+        <title>Broward County Roof Replacement Guide (2026) | Costs, Permits, HVHZ Requirements</title>
         <meta name="description" content="Complete guide to roof replacement in Broward County, FL. HVHZ requirements, costs by material, the 25% rule, permit process, insurance claims, and how to choose a licensed contractor." />
         <meta name="keywords" content="broward county roof replacement, roof replacement cost broward county, HVHZ roofing requirements, 25 percent rule florida roof, broward county roofing permit, fort lauderdale roof replacement, pompano beach roofing, deerfield beach roof replacement" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/broward-county-roof-replacement-guide" />
-        <meta property="og:title" content="Broward County Roof Replacement Guide (2025)" />
+        <meta property="og:title" content="Broward County Roof Replacement Guide (2026)" />
         <meta property="og:description" content="Everything you need to know about replacing your roof in Broward County. HVHZ requirements, costs, permits, insurance, and the 25% rule explained." />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -77,10 +77,10 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               <span className="text-white">Broward County Roof Replacement Guide</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Broward County Roof Replacement Guide <span className="text-sky-400">(2025)</span>
+              Broward County Roof Replacement Guide <span className="text-sky-400">(2026)</span>
             </h1>
             <p className="text-xl text-slate-300 mb-4 leading-relaxed">
-              Everything homeowners need to know about replacing a roof in Broward County — from HVHZ requirements and the 25% rule to costs, permits, and insurance claims. Written by licensed roofing professionals with 2,500+ completed roofs in the area.
+              Everything homeowners need to know about replacing a roof in Broward County â from HVHZ requirements and the 25% rule to costs, permits, and insurance claims. Written by licensed roofing professionals with 2,500+ completed roofs in the area.
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
             <div className="space-y-3 mb-4">
               <div className="flex items-start">
                 <span className="bg-red-200 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">1</span>
-                <p className="text-slate-700">If storm damage affects more than 25% of your roof area, you cannot simply patch it — a full replacement to current HVHZ standards is required.</p>
+                <p className="text-slate-700">If storm damage affects more than 25% of your roof area, you cannot simply patch it â a full replacement to current HVHZ standards is required.</p>
               </div>
               <div className="flex items-start">
                 <span className="bg-red-200 text-red-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
@@ -144,7 +144,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Roof Replacement Costs in Broward County (2025)</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Roof Replacement Costs in Broward County (2026)</h2>
           <p className="text-lg text-slate-700 mb-6">
             Broward County roofing costs are among the highest in Florida due to HVHZ requirements. These prices include material, labor, permitting, engineering (where required), and all inspections for a standard 2,000 sq ft single-family home:
           </p>
@@ -192,7 +192,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-slate-500">* All prices are for fully permitted, HVHZ-compliant installations in Broward County as of 2025. Actual cost depends on roof size, pitch, complexity, access, and municipality. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free roof cost calculator</Link> for a personalized estimate.</p>
+          <p className="text-sm text-slate-500">* All prices are for fully permitted, HVHZ-compliant installations in Broward County as of 2026. Actual cost depends on roof size, pitch, complexity, access, and municipality. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free roof cost calculator</Link> for a personalized estimate.</p>
         </section>
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">The Broward County Roof Replacement Process</h2>
@@ -266,7 +266,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               </div>
             </div>
             <div className="mt-6 p-4 bg-sky-100 rounded-lg">
-              <p className="text-slate-800 font-medium">All Phase Construction USA provides full insurance claims assistance — from initial documentation and damage assessment through adjuster meetings and supplemental claims filing. <Link to="/contact" className="text-sky-700 underline font-bold">Contact us for a free insurance claim consultation</Link>.</p>
+              <p className="text-slate-800 font-medium">All Phase Construction USA provides full insurance claims assistance â from initial documentation and damage assessment through adjuster meetings and supplemental claims filing. <Link to="/contact" className="text-sky-700 underline font-bold">Contact us for a free insurance claim consultation</Link>.</p>
             </div>
           </div>
         </section>
