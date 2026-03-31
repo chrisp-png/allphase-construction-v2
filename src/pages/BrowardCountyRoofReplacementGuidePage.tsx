@@ -169,34 +169,34 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               </thead>
               <tbody className="text-zinc-200">
                 <tr className="border-b border-zinc-800">
-                  <td className="px-6 py-4 font-semibold">Architectural Shingles</td>
-                  <td className="px-6 py-4 text-center">$9,000 - $16,000</td>
-                  <td className="px-6 py-4 text-center">15-25 years</td>
-                  <td className="px-6 py-4 text-center">130 mph</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Architectural Shingles</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$9,000 - $16,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">15-25 years</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">130 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-6 py-4 font-semibold">Concrete Tile</td>
-                  <td className="px-6 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-6 py-4 text-center">30-50 years</td>
-                  <td className="px-6 py-4 text-center">150 mph</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Concrete Tile</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$16,000 - $30,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">30-50 years</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">150 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-6 py-4 font-semibold">Clay Tile (Barrel or Flat)</td>
-                  <td className="px-6 py-4 text-center">$22,000 - $38,000</td>
-                  <td className="px-6 py-4 text-center">50-75 years</td>
-                  <td className="px-6 py-4 text-center">150 mph</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Clay Tile (Barrel or Flat)</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$22,000 - $38,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">50-75 years</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">150 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-6 py-4 font-semibold">Standing Seam Metal</td>
-                  <td className="px-6 py-4 text-center">$20,000 - $38,000</td>
-                  <td className="px-6 py-4 text-center">40-70 years</td>
-                  <td className="px-6 py-4 text-center">180 mph</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Standing Seam Metal</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$20,000 - $38,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">40-70 years</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">180 mph</td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 font-semibold">TPO / Modified Bitumen (Flat Roof)</td>
-                  <td className="px-6 py-4 text-center">$10,000 - $24,000</td>
-                  <td className="px-6 py-4 text-center">15-25 years</td>
-                  <td className="px-6 py-4 text-center">120 mph</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">TPO / Modified Bitumen (Flat Roof)</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$10,000 - $24,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">15-25 years</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">120 mph</td>
                 </tr>
               </tbody>
             </table>
@@ -298,7 +298,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               { name: 'Parkland', link: '/locations/parkland' },
               { name: 'Davie', link: '/locations/davie' }
             ].map((city) => (
-              <Link key={city.name} to={city.link} className="bg-zinc-900 px-4 py-3 rounded-lg shadow-sm border border-zinc-800 hover:border-sky-300 hover:shadow-md border border-zinc-800 transition-all text-zinc-300 hover:text-yellow-400 font-medium text-center">
+              <Link key={city.name} to={city.link} className="bg-zinc-900 px-4 py-3 rounded-lg shadow-sm border border-zinc-800 hover:border-yellow-400/40 hover:shadow-md border border-zinc-800 transition-all text-zinc-300 hover:text-yellow-400 font-medium text-center">
                 {city.name}
               </Link>
             ))}
