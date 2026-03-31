@@ -15,7 +15,7 @@ import { getLocationBySlug } from '../data/locations';
 import { buildLocationSeo } from '../lib/locationSeo';
 
 /**
- * Broward County slugs — these cities are in the HVHZ (High Velocity Hurricane Zone).
+ * Broward County slugs â these cities are in the HVHZ (High Velocity Hurricane Zone).
  * All other South Florida cities default to Wind-Borne Debris Region (WBDR).
  */
 const BROWARD_CITIES = [
@@ -47,7 +47,7 @@ export interface SEOMetadata {
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
     title: 'All Phase Construction USA | South Florida Roofer Since 2005',
-    description: 'Locally owned South Florida roofing contractor with 2,500+ roofs since 2005. Dual-licensed, HVHZ-certified, A+ BBB rated. Get a free same-day roof inspection — call (754) 227-5605.',
+    description: 'Locally owned South Florida roofing contractor with 2,500+ roofs since 2005. Dual-licensed, HVHZ-certified, A+ BBB rated. Get a free same-day roof inspection â call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
@@ -61,8 +61,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'Free Roof Cost Calculator — South Florida 2026 Pricing',
-    description: 'Estimate your roof replacement cost in 60 seconds. Our free calculator uses 2026 South Florida pricing for shingle ($350–$500/sq), tile ($600–$1,000/sq), metal & flat roofs. Based on 2,500+ real jobs.',
+    title: 'Free Roof Cost Calculator â South Florida 2026 Pricing',
+    description: 'Estimate your roof replacement cost in 60 seconds. Our free calculator uses 2026 South Florida pricing for shingle ($350â$500/sq), tile ($600â$1,000/sq), metal & flat roofs. Based on 2,500+ real jobs.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
@@ -82,7 +82,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes': {
     title: 'Flat Roofs in Florida: Pros, Cons & What Homeowners Should Know (2026)',
-    description: 'Are flat roofs good for Florida homes? Honest pros and cons from a licensed roofer — drainage, hurricane performance, costs, and the best flat roof materials for South Florida.',
+    description: 'Are flat roofs good for Florida homes? Honest pros and cons from a licensed roofer â drainage, hurricane performance, costs, and the best flat roof materials for South Florida.',
     canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
   },
   '/reviews': {
@@ -157,7 +157,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/roofing-services': {
     title: 'Roofing Services South Florida | Tile, Metal, Shingle & Flat | All Phase',
-    description: 'Complete residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs — HVHZ-certified, dual-licensed. Free inspections. 2,500+ projects.',
+    description: 'Complete residential & commercial roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs â HVHZ-certified, dual-licensed. Free inspections. 2,500+ projects.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
@@ -167,7 +167,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/deerfield-beach/best-roofers-deerfield-beach': {
     title: '5 Best Roofers in Deerfield Beach, FL (2026 Reviewed)',
-    description: 'We compared the 5 best-rated roofers in Deerfield Beach by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 — see which Broward County contractors made the cut.',
+    description: 'We compared the 5 best-rated roofers in Deerfield Beach by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 â see which Broward County contractors made the cut.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
   '/locations/fort-lauderdale/best-roofers-fort-lauderdale': {
@@ -299,7 +299,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
         '/locations/deerfield-beach': {
     title: 'Deerfield Beach Roofer | Local HQ Since 2005 | All Phase USA',
-    description: 'Deerfield Beach\'s #1 rated roofing contractor — headquartered here since 2005. We\'ve completed 2,500+ roofs in Broward County. HVHZ-certified, dual-licensed. Free same-day inspections — (754) 227-5605.',
+    description: 'Deerfield Beach\'s #1 rated roofing contractor â headquartered here since 2005. We\'ve completed 2,500+ roofs in Broward County. HVHZ-certified, dual-licensed. Free same-day inspections â (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {
@@ -321,6 +321,36 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     title: 'Accessibility | All Phase Construction USA',
     description: 'Information about accessibility features on our website. We are committed to making our content accessible to all users.',
     canonical: 'https://allphaseconstructionfl.com/accessibility'
+  },
+  '/south-florida-roofing-reviews': {
+    title: 'Best Roofing Companies in South Florida (2026) | Expert Reviews & Comparison',
+    description: 'Comprehensive comparison of the top-rated roofing companies in South Florida for 2026. Licensed, insured contractor reviews with cost data and HVHZ certification info.',
+    canonical: 'https://allphaseconstructionfl.com/south-florida-roofing-reviews'
+  },
+  '/broward-county-roof-replacement-guide': {
+    title: 'Broward County Roof Replacement Guide (2026) | Costs, HVHZ & Contractors',
+    description: 'Complete Broward County roof replacement guide for 2026. HVHZ requirements, 25% rule, costs by material, insurance claims help. Call (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/broward-county-roof-replacement-guide'
+  },
+  '/roof-replacement-cost-florida': {
+    title: 'Roof Replacement Cost in Florida (2026) | Complete Price Guide',
+    description: 'What does a roof replacement cost in Florida in 2026? Complete pricing by material, county, and HVHZ zone. Get accurate estimates for your area.',
+    canonical: 'https://allphaseconstructionfl.com/roof-replacement-cost-florida'
+  },
+  '/florida-roof-insurance-claims-guide': {
+    title: 'Florida Roof Insurance Claims Guide (2026) | Step-by-Step Process',
+    description: 'Navigate Florida roof insurance claims with confidence. Step-by-step guide covering documentation, public adjusters, 25% rule, and contractor coordination.',
+    canonical: 'https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide'
+  },
+  '/boca-raton-roof-replacement-guide': {
+    title: 'Boca Raton Roof Replacement Guide (2026) | Costs, HOA & HVHZ Info',
+    description: 'Everything you need to know about roof replacement in Boca Raton. HVHZ requirements, HOA guidelines, costs by material, and top contractor recommendations.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide'
+  },
+  '/palm-beach-county-roof-replacement-guide': {
+    title: 'Palm Beach County Roof Replacement Guide (2026) | Costs, Contractors & HVHZ Info',
+    description: 'Complete Palm Beach County roof replacement guide. City-by-city costs, HVHZ zones, permit requirements, and top-rated contractor recommendations for 2026.',
+    canonical: 'https://allphaseconstructionfl.com/palm-beach-county-roof-replacement-guide'
   },
 };
 
