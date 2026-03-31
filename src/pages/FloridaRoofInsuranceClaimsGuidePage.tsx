@@ -87,7 +87,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Florida Roof Insurance Claims Guide <span className="text-sky-400">(2026)</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-4 leading-relaxed">
+            <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Navigating a roof insurance claim in Florida can be complex. This guide covers everything from filing your initial claim to supplemental claims, dealing with denials, and understanding how the 25% rule and HVHZ requirements affect your coverage.
             </p>
           </div>
@@ -96,111 +96,111 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">The Florida Roof Insurance Claim Process: Step by Step</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">The Florida Roof Insurance Claim Process: Step by Step</h2>
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">1</div>
-              <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Document the Damage Immediately</h3>
-                <p className="text-slate-700">Take photos and video of all visible damage from multiple angles, including wide shots and close-ups. Document the date the damage occurred or was discovered. If you make temporary repairs (tarping, etc.), photograph the damage before and after, and save all receipts. This documentation is the foundation of your claim.</p>
+              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">1</div>
+              <div className="bg-zinc-900 p-5 rounded-xl shadow-md border border-zinc-800 border border-zinc-800 flex-1">
+                <h3 className="text-xl font-bold text-white mb-2">Document the Damage Immediately</h3>
+                <p className="text-zinc-300">Take photos and video of all visible damage from multiple angles, including wide shots and close-ups. Document the date the damage occurred or was discovered. If you make temporary repairs (tarping, etc.), photograph the damage before and after, and save all receipts. This documentation is the foundation of your claim.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">2</div>
-              <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Get a Professional Roof Inspection</h3>
-                <p className="text-slate-700">Contact a licensed roofing contractor for a thorough inspection. A professional inspection identifies damage that may not be visible from the ground, including cracked tiles, lifted shingles, damaged underlayment, and compromised flashing. All Phase Construction USA provides free inspections with detailed photo reports specifically formatted for insurance claims.</p>
+              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">2</div>
+              <div className="bg-zinc-900 p-5 rounded-xl shadow-md border border-zinc-800 border border-zinc-800 flex-1">
+                <h3 className="text-xl font-bold text-white mb-2">Get a Professional Roof Inspection</h3>
+                <p className="text-zinc-300">Contact a licensed roofing contractor for a thorough inspection. A professional inspection identifies damage that may not be visible from the ground, including cracked tiles, lifted shingles, damaged underlayment, and compromised flashing. All Phase Construction USA provides free inspections with detailed photo reports specifically formatted for insurance claims.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">3</div>
-              <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">File Your Claim with Your Insurance Company</h3>
-                <p className="text-slate-700">Call your insurance company's claims number (found on your policy or declarations page). Provide basic information: date of loss, type of damage, and your policy number. The insurer will assign a claim number and schedule an adjuster visit. File promptly — delays can jeopardize your claim.</p>
+              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">3</div>
+              <div className="bg-zinc-900 p-5 rounded-xl shadow-md border border-zinc-800 border border-zinc-800 flex-1">
+                <h3 className="text-xl font-bold text-white mb-2">File Your Claim with Your Insurance Company</h3>
+                <p className="text-zinc-300">Call your insurance company's claims number (found on your policy or declarations page). Provide basic information: date of loss, type of damage, and your policy number. The insurer will assign a claim number and schedule an adjuster visit. File promptly — delays can jeopardize your claim.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">4</div>
-              <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Attend the Adjuster Inspection</h3>
-                <p className="text-slate-700">This is one of the most critical steps. Have your roofing contractor present during the adjuster's inspection. Your contractor can point out damage the adjuster may miss, explain why specific repairs or replacement methods are required by code, and ensure the scope of work is accurately documented. Many claims are underpaid because damage was missed during this initial inspection.</p>
+              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">4</div>
+              <div className="bg-zinc-900 p-5 rounded-xl shadow-md border border-zinc-800 border border-zinc-800 flex-1">
+                <h3 className="text-xl font-bold text-white mb-2">Attend the Adjuster Inspection</h3>
+                <p className="text-zinc-300">This is one of the most critical steps. Have your roofing contractor present during the adjuster's inspection. Your contractor can point out damage the adjuster may miss, explain why specific repairs or replacement methods are required by code, and ensure the scope of work is accurately documented. Many claims are underpaid because damage was missed during this initial inspection.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">5</div>
-              <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Review the Insurance Estimate</h3>
-                <p className="text-slate-700">Once you receive your insurance company's estimate, have your contractor review it carefully. Common shortfalls include: underestimating the number of damaged squares, not accounting for HVHZ code requirements, omitting engineering costs for tile/metal, using non-NOA-approved product pricing, and missing related damage (soffit, fascia, gutters, interior).</p>
+              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">5</div>
+              <div className="bg-zinc-900 p-5 rounded-xl shadow-md border border-zinc-800 border border-zinc-800 flex-1">
+                <h3 className="text-xl font-bold text-white mb-2">Review the Insurance Estimate</h3>
+                <p className="text-zinc-300">Once you receive your insurance company's estimate, have your contractor review it carefully. Common shortfalls include: underestimating the number of damaged squares, not accounting for HVHZ code requirements, omitting engineering costs for tile/metal, using non-NOA-approved product pricing, and missing related damage (soffit, fascia, gutters, interior).</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">6</div>
-              <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">File Supplemental Claims When Needed</h3>
-                <p className="text-slate-700">If the insurance estimate falls short, your contractor files a supplement with detailed documentation of the additional costs. This is standard practice and not adversarial — it simply provides the insurer with the information needed to properly fund the repair. Supplements can recover thousands of dollars that the initial estimate missed.</p>
+              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">6</div>
+              <div className="bg-zinc-900 p-5 rounded-xl shadow-md border border-zinc-800 border border-zinc-800 flex-1">
+                <h3 className="text-xl font-bold text-white mb-2">File Supplemental Claims When Needed</h3>
+                <p className="text-zinc-300">If the insurance estimate falls short, your contractor files a supplement with detailed documentation of the additional costs. This is standard practice and not adversarial — it simply provides the insurer with the information needed to properly fund the repair. Supplements can recover thousands of dollars that the initial estimate missed.</p>
               </div>
             </div>
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Insurance Company Requiring Roof Replacement?</h2>
-          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8">
-            <p className="text-lg text-slate-700 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-6">Insurance Company Requiring Roof Replacement?</h2>
+          <div className="bg-zinc-900 border border-amber-200 rounded-2xl p-8">
+            <p className="text-lg text-zinc-300 mb-6">
               Many Florida homeowners are receiving letters from their insurance company stating that their roof must be replaced as a condition of continued coverage. This trend has accelerated since 2022, with insurers using aerial imagery to assess roof condition remotely.
             </p>
-            <h3 className="text-xl font-bold text-slate-900 mb-4">If You Have Received This Letter:</h3>
+            <h3 className="text-xl font-bold text-white mb-4">If You Have Received This Letter:</h3>
             <div className="space-y-4">
-              <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-bold text-slate-900 mb-1">Do Not Panic</h4>
-                <p className="text-slate-600">You typically have 30–90 days to respond. Use this time to get a professional inspection and explore your options.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <h4 className="font-bold text-white mb-1">Do Not Panic</h4>
+                <p className="text-zinc-400">You typically have 30–90 days to respond. Use this time to get a professional inspection and explore your options.</p>
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-bold text-slate-900 mb-1">Get a Professional Inspection</h4>
-                <p className="text-slate-600">The insurer's aerial assessment may not accurately reflect your roof's condition. A licensed contractor's inspection report can sometimes be used to dispute the requirement or negotiate a timeline extension.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <h4 className="font-bold text-white mb-1">Get a Professional Inspection</h4>
+                <p className="text-zinc-400">The insurer's aerial assessment may not accurately reflect your roof's condition. A licensed contractor's inspection report can sometimes be used to dispute the requirement or negotiate a timeline extension.</p>
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-bold text-slate-900 mb-1">Check for Storm Damage</h4>
-                <p className="text-slate-600">If your roof has any storm damage, even minor, you may be able to file a claim that covers part or all of the replacement cost. This is where having a contractor experienced with insurance claims is invaluable.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <h4 className="font-bold text-white mb-1">Check for Storm Damage</h4>
+                <p className="text-zinc-400">If your roof has any storm damage, even minor, you may be able to file a claim that covers part or all of the replacement cost. This is where having a contractor experienced with insurance claims is invaluable.</p>
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <h4 className="font-bold text-slate-900 mb-1">Understand Your Options</h4>
-                <p className="text-slate-600">Options include: replacing the roof to keep your current policy, shopping for a new insurance carrier (some accept older roofs), filing a claim if storm damage exists, or exploring financing options if paying out of pocket.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <h4 className="font-bold text-white mb-1">Understand Your Options</h4>
+                <p className="text-zinc-400">Options include: replacing the roof to keep your current policy, shopping for a new insurance carrier (some accept older roofs), filing a claim if storm damage exists, or exploring financing options if paying out of pocket.</p>
               </div>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">The 25% Rule and Insurance Claims</h2>
-          <div className="bg-red-50 border border-red-200 rounded-2xl p-8">
-            <p className="text-lg text-slate-700 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-6">The 25% Rule and Insurance Claims</h2>
+          <div className="bg-zinc-900 border border-red-200 rounded-2xl p-8">
+            <p className="text-lg text-zinc-300 mb-4">
               The Florida 25% rule is particularly important for insurance claims. Under Florida Building Code, if more than 25% of the roof is repaired or replaced within 12 months, the entire roof must be brought to current code.
             </p>
-            <h3 className="text-xl font-bold text-slate-900 mb-3">How This Affects Your Claim:</h3>
+            <h3 className="text-xl font-bold text-white mb-3">How This Affects Your Claim:</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-white p-4 rounded-lg">
-                <p className="text-slate-700"><strong>Partial Damage May Trigger Full Replacement:</strong> If a storm damages more than 25% of your roof area, you are entitled to a full roof replacement to current code under your insurance policy, not just a patch repair.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <p className="text-zinc-300"><strong>Partial Damage May Trigger Full Replacement:</strong> If a storm damages more than 25% of your roof area, you are entitled to a full roof replacement to current code under your insurance policy, not just a patch repair.</p>
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <p className="text-slate-700"><strong>Code Upgrade Coverage:</strong> Many Florida policies include code upgrade coverage that pays for the additional cost of bringing the entire roof to current code when the 25% rule is triggered.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <p className="text-zinc-300"><strong>Code Upgrade Coverage:</strong> Many Florida policies include code upgrade coverage that pays for the additional cost of bringing the entire roof to current code when the 25% rule is triggered.</p>
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <p className="text-slate-700"><strong>HVHZ Adds Significant Cost:</strong> In Broward County and southern Palm Beach County, current code means full HVHZ compliance. This can add thousands to the claim value through required Miami-Dade NOA products and engineering.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <p className="text-zinc-300"><strong>HVHZ Adds Significant Cost:</strong> In Broward County and southern Palm Beach County, current code means full HVHZ compliance. This can add thousands to the claim value through required Miami-Dade NOA products and engineering.</p>
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <p className="text-slate-700"><strong>Documentation Is Key:</strong> Your contractor needs to thoroughly document the percentage of the roof affected. This documentation, combined with the 25% rule, often converts a partial repair claim into a full replacement claim.</p>
+              <div className="bg-zinc-900 p-4 rounded-lg">
+                <p className="text-zinc-300"><strong>Documentation Is Key:</strong> Your contractor needs to thoroughly document the percentage of the roof affected. This documentation, combined with the 25% rule, often converts a partial repair claim into a full replacement claim.</p>
               </div>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions About Roof Insurance Claims</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions About Roof Insurance Claims</h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
-                <p className="text-slate-700 leading-relaxed">{faq.a}</p>
+              <div key={index} className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+                <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
+                <p className="text-zinc-300 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -208,18 +208,18 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
 
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 lg:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Help With Your Roof Insurance Claim?</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
             All Phase Construction USA provides full insurance claims assistance at no additional charge. From initial documentation to supplemental claims, we handle the process so you can focus on your family.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
               Free Claims Consultation
             </Link>
-            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-slate-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | Serving Broward & Palm Beach County</p>
+          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | Serving Broward & Palm Beach County</p>
         </section>
       </div>
     </>
