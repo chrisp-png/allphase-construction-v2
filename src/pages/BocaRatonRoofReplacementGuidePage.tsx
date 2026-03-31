@@ -239,7 +239,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
               Try Our Cost Calculator
             </Link>
           </div>
-          <p className="text-sm text-zinc-400 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-300 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
       </div>
     </>
