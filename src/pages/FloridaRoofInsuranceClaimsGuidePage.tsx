@@ -152,19 +152,19 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             <div className="space-y-4">
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Do Not Panic</h4>
-                <p className="text-zinc-400">You typically have 30–90 days to respond. Use this time to get a professional inspection and explore your options.</p>
+                <p className="text-zinc-300">You typically have 30–90 days to respond. Use this time to get a professional inspection and explore your options.</p>
               </div>
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Get a Professional Inspection</h4>
-                <p className="text-zinc-400">The insurer's aerial assessment may not accurately reflect your roof's condition. A licensed contractor's inspection report can sometimes be used to dispute the requirement or negotiate a timeline extension.</p>
+                <p className="text-zinc-300">The insurer's aerial assessment may not accurately reflect your roof's condition. A licensed contractor's inspection report can sometimes be used to dispute the requirement or negotiate a timeline extension.</p>
               </div>
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Check for Storm Damage</h4>
-                <p className="text-zinc-400">If your roof has any storm damage, even minor, you may be able to file a claim that covers part or all of the replacement cost. This is where having a contractor experienced with insurance claims is invaluable.</p>
+                <p className="text-zinc-300">If your roof has any storm damage, even minor, you may be able to file a claim that covers part or all of the replacement cost. This is where having a contractor experienced with insurance claims is invaluable.</p>
               </div>
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Understand Your Options</h4>
-                <p className="text-zinc-400">Options include: replacing the roof to keep your current policy, shopping for a new insurance carrier (some accept older roofs), filing a claim if storm damage exists, or exploring financing options if paying out of pocket.</p>
+                <p className="text-zinc-300">Options include: replacing the roof to keep your current policy, shopping for a new insurance carrier (some accept older roofs), filing a claim if storm damage exists, or exploring financing options if paying out of pocket.</p>
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | Serving Broward & Palm Beach County</p>
+          <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | Serving Broward & Palm Beach County</p>
         </section>
       </div>
     </>
