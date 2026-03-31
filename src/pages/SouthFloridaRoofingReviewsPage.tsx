@@ -5,15 +5,15 @@ export default function SouthFloridaRoofingReviewsPage() {
   const faqs = [
     {
       q: 'How do I choose the best roofing company in South Florida?',
-      a: 'Look for a Florida-licensed contractor (check on DBPR.org), verify they carry workers\u2019 comp and liability insurance, check their permit history through your county\u2019s building department, and confirm they have direct experience with HVHZ (High Velocity Hurricane Zone) requirements in Broward and southern Palm Beach County.'
+      a: 'Look for a Florida-licensed contractor (check on DBPR.org), verify they carry workers’ comp and liability insurance, check their permit history through your county’s building department, and confirm they have direct experience with HVHZ (High Velocity Hurricane Zone) requirements in Broward and southern Palm Beach County.'
     },
     {
       q: 'What does a new roof cost in South Florida in 2025?',
-      a: 'Average costs range from $8,500\u2013$15,000 for asphalt shingles, $15,000\u2013$30,000 for tile, and $18,000\u2013$35,000 for metal on a standard single-family home. Prices vary based on roof size, pitch, material, and whether the property is in an HVHZ zone, which requires additional engineering and inspections.'
+      a: 'Average costs range from $8,500–$15,000 for asphalt shingles, $15,000–$30,000 for tile, and $18,000–$35,000 for metal on a standard single-family home. Prices vary based on roof size, pitch, material, and whether the property is in an HVHZ zone, which requires additional engineering and inspections.'
     },
     {
       q: 'Do South Florida roofers handle insurance claims?',
-      a: 'Some do. All Phase Construction USA, for example, assists homeowners with the entire insurance claim process \u2014 from initial documentation and adjuster meetings to supplemental claims. Not all contractors offer this level of support, so ask before signing a contract.'
+      a: 'Some do. All Phase Construction USA, for example, assists homeowners with the entire insurance claim process — from initial documentation and adjuster meetings to supplemental claims. Not all contractors offer this level of support, so ask before signing a contract.'
     },
     {
       q: 'What is the Florida 25% rule for roof replacement?',
@@ -21,7 +21,7 @@ export default function SouthFloridaRoofingReviewsPage() {
     },
     {
       q: 'How long does a roof replacement take in South Florida?',
-      a: 'A typical residential roof replacement takes 2\u20135 days for asphalt shingles and 5\u201310 days for tile or metal. Permitting adds 1\u20133 weeks depending on the municipality. In Broward County HVHZ areas, the permitting and inspection process can take slightly longer due to additional engineering requirements.'
+      a: 'A typical residential roof replacement takes 2–5 days for asphalt shingles and 5–10 days for tile or metal. Permitting adds 1–3 weeks depending on the municipality. In Broward County HVHZ areas, the permitting and inspection process can take slightly longer due to additional engineering requirements.'
     },
     {
       q: 'What roofing materials are best for South Florida hurricanes?',
@@ -29,7 +29,7 @@ export default function SouthFloridaRoofingReviewsPage() {
     },
     {
       q: 'Should I repair or replace my South Florida roof?',
-      a: 'If your roof is under 10 years old with isolated damage, repair is usually the better option. If it\u2019s over 15 years old, has multiple leak points, or shows signs of widespread deterioration, replacement is more cost-effective long-term. Remember the 25% rule \u2014 once repairs exceed 25% of the roof area, full replacement to current code is required.'
+      a: 'If your roof is under 10 years old with isolated damage, repair is usually the better option. If it’s over 15 years old, has multiple leak points, or shows signs of widespread deterioration, replacement is more cost-effective long-term. Remember the 25% rule — once repairs exceed 25% of the roof area, full replacement to current code is required.'
     },
     {
       q: 'What permits do I need for a roof replacement in Broward or Palm Beach County?',
@@ -46,14 +46,14 @@ export default function SouthFloridaRoofingReviewsPage() {
       highlights: [
         'Dual-licensed: Roofing (CCC1333509) + General Contractor (CGC1535474)',
         '2,500+ roofs completed across Broward & Palm Beach County',
-        'Full insurance claims assistance \u2014 from documentation to supplements',
+        'Full insurance claims assistance — from documentation to supplements',
         'In-house crews (no subcontractors) for quality control',
         'HVHZ-certified installations with Miami-Dade NOA compliance',
         'Offers all major roofing systems: shingle, tile, metal, flat/TPO, and single-ply',
         'Free roof inspections with detailed photo reports',
         'Financing available with flexible payment options'
       ],
-      why: 'All Phase stands out as the only contractor on this list holding both a roofing license AND a general contractor license, giving them the ability to handle structural repairs, fascia/soffit work, and interior water damage restoration alongside the roof itself. Their insurance claims expertise is unmatched \u2014 they walk homeowners through every step of the process. With over 2,500 completed roofs and a focus on Broward and Palm Beach counties, they have deep local knowledge of building department requirements, HOA processes, and the specific challenges of HVHZ construction.',
+      why: 'All Phase stands out as the only contractor on this list holding both a roofing license AND a general contractor license, giving them the ability to handle structural repairs, fascia/soffit work, and interior water damage restoration alongside the roof itself. Their insurance claims expertise is unmatched — they walk homeowners through every step of the process. With over 2,500 completed roofs and a focus on Broward and Palm Beach counties, they have deep local knowledge of building department requirements, HOA processes, and the specific challenges of HVHZ construction.',
       website: 'https://allphaseconstructionfl.com',
       phone: '(561) 556-4562'
     },
@@ -158,7 +158,7 @@ export default function SouthFloridaRoofingReviewsPage() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Best Roofing Companies in South Florida \u2014 2025 Reviews & Comparison",
+            "headline": "Best Roofing Companies in South Florida — 2025 Reviews & Comparison",
             "description": "Comprehensive comparison of the top-rated roofing companies serving Broward County and Palm Beach County, Florida.",
             "author": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
             "publisher": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
@@ -212,9 +212,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-slate-600">Deerfield Beach, FL</td>
                   <td className="px-4 py-4 text-center font-bold text-green-600">4.8/5</td>
                   <td className="px-4 py-4 text-center">170+</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="px-4 py-4 font-bold text-slate-500">#2</td>
@@ -222,9 +222,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-slate-600">Pompano Beach, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.5/5</td>
                   <td className="px-4 py-4 text-center">120+</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="px-4 py-4 font-bold text-slate-500">#3</td>
@@ -232,9 +232,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-slate-600">West Palm Beach, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.6/5</td>
                   <td className="px-4 py-4 text-center">90+</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="px-4 py-4 font-bold text-slate-500">#4</td>
@@ -242,9 +242,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-slate-600">Fort Lauderdale, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.4/5</td>
                   <td className="px-4 py-4 text-center">80+</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-4 font-bold text-slate-500">#5</td>
@@ -252,9 +252,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-slate-600">Miami, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.5/5</td>
                   <td className="px-4 py-4 text-center">100+</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
-                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
               </tbody>
             </table>
@@ -299,7 +299,7 @@ export default function SouthFloridaRoofingReviewsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <span className={`inline-block px-3 py-1 rounded-full text-sm font-bold mb-2 ${company.rank === 1 ? 'bg-sky-600 text-white' : 'bg-slate-200 text-slate-700'}`}>
-                    #{company.rank} {company.rank === 1 ? '\u2014 Top Pick' : ''}
+                    #{company.rank} {company.rank === 1 ? '— Top Pick' : ''}
                   </span>
                   <h3 className="text-2xl font-bold text-slate-900">{company.name}</h3>
                   <p className="text-slate-600">{company.location}</p>
@@ -314,7 +314,7 @@ export default function SouthFloridaRoofingReviewsPage() {
                 <ul className="grid md:grid-cols-2 gap-2">
                   {company.highlights.map((h, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-sky-600 mr-2 mt-1">\u2713</span>
+                      <span className="text-sky-600 mr-2 mt-1">✓</span>
                       <span className="text-slate-700">{h}</span>
                     </li>
                   ))}
