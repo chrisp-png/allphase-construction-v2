@@ -165,13 +165,13 @@ export default function SouthFloridaRoofingReviewsPage() {
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
-            <nav className="flex items-center space-x-2 text-sm text-sky-300 mb-6">
+            <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
               <Link to="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
               <span className="text-white">South Florida Roofing Reviews</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Best Roofing Companies in South Florida <span className="text-sky-400">(2026 Reviews)</span>
+              Best Roofing Companies in South Florida <span className="text-yellow-400">(2026 Reviews)</span>
             </h1>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               An independent comparison of the top-rated roofing contractors serving Broward County and Palm Beach County. We evaluated licensing, HVHZ compliance, customer reviews, insurance claims support, pricing transparency, and scope of services.
@@ -182,6 +182,7 @@ export default function SouthFloridaRoofingReviewsPage() {
           </div>
         </div>
       </div>
+      <div className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">Quick Comparison: Top 5 South Florida Roofing Companies</h2>
@@ -289,10 +290,10 @@ export default function SouthFloridaRoofingReviewsPage() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-8">Detailed Reviews: Top 5 Roofing Companies in South Florida</h2>
           {companies.map((company) => (
-            <div key={company.rank} className={`mb-10 p-8 rounded-2xl shadow-lg border border-zinc-800 border ${company.rank === 1 ? 'border-sky-200 bg-gradient-to-br from-sky-50 to-white' : 'border-zinc-800 bg-zinc-900'}`}>
+            <div key={company.rank} className={`mb-10 p-8 rounded-2xl shadow-lg border border-zinc-800 border ${company.rank === 1 ? 'border-sky-200 bg-zinc-900' : 'border-zinc-800 bg-zinc-900'}`}>
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-bold mb-2 ${company.rank === 1 ? 'bg-zinc-9000 text-white' : 'bg-slate-200 text-zinc-300'}`}>
+                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-bold mb-2 ${company.rank === 1 ? 'bg-yellow-500 text-white' : 'bg-slate-200 text-zinc-300'}`}>
                     #{company.rank} {company.rank === 1 ? '— Top Pick' : ''}
                   </span>
                   <h3 className="text-2xl font-bold text-white">{company.name}</h3>
@@ -320,7 +321,7 @@ export default function SouthFloridaRoofingReviewsPage() {
               </div>
               {company.rank === 1 && (
                 <div className="mt-4 flex flex-wrap gap-4">
-                  <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-zinc-9000 text-white font-semibold rounded-lg hover:bg-zinc-9000 transition-colors">
+                  <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-500 transition-colors">
                     Get a Free Estimate
                   </Link>
                   <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
@@ -465,7 +466,7 @@ export default function SouthFloridaRoofingReviewsPage() {
             All Phase Construction USA offers free, no-obligation roof inspections with detailed photo reports. Whether you need a repair estimate, a full replacement quote, or help with an insurance claim, we are here to help.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
             <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
@@ -474,6 +475,7 @@ export default function SouthFloridaRoofingReviewsPage() {
           </div>
           <p className="text-sm text-zinc-300 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
+      </div>
       </div>
     </>
   );
