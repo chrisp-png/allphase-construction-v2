@@ -290,8 +290,8 @@ export default function RoofReplacementCostFloridaPage() {
             <Link to="/roof-cost-calculator" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
               Try Our Cost Calculator
             </Link>
-            <a href="tel:+15615564562" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
-              Call (561) 556-4562
+            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+              Call (754) 227-5605
             </a>
           </div>
           <p className="text-sm text-slate-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
