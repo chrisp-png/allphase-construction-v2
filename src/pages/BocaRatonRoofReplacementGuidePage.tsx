@@ -10,7 +10,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
     },
     {
       q: 'How much does a roof replacement cost in Boca Raton?',
-      a: 'A full roof replacement in Boca Raton typically costs $9,000–$16,000 for architectural shingles, $16,000–$30,000 for concrete tile, $22,000–$38,000 for clay tile, and $20,000–$38,000 for standing seam metal on a standard single-family home. Boca Raton falls partially within the HVHZ (High Velocity Hurricane Zone), which requires Miami-Dade NOA-approved materials and adds to the cost.'
+      a: 'A full roof replacement in Boca Raton typically costs $13,500–$24,000 for architectural shingles, $24,000–$45,000 for concrete tile, $33,000–$57,000 for clay tile, and $30,000–$57,000 for standing seam metal on a standard single-family home. Boca Raton falls partially within the HVHZ (High Velocity Hurricane Zone), which requires Miami-Dade NOA-approved materials and adds to the cost.'
     },
     {
       q: 'Is Boca Raton in the HVHZ (High Velocity Hurricane Zone)?',
@@ -101,7 +101,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">Roof Replacement Costs in Boca Raton (2026)</h2>
           <p className="text-lg text-zinc-300 mb-6">
-            Boca Raton roofing costs reflect the area's premium market, HOA requirements (many communities require tile), and partial HVHZ compliance. Here is what to expect for a standard 2,000 sq ft home:
+            Boca Raton roofing costs reflect the area's premium market, HOA requirements (many communities require tile), and partial HVHZ compliance. Here is what to expect for a standard 3,000 sq ft home:
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
@@ -116,25 +116,25 @@ export default function BocaRatonRoofReplacementGuidePage() {
               <tbody>
                 <tr className="border-b border-zinc-800">
                   <td className="px-6 py-4 font-semibold">Architectural Shingles</td>
-                  <td className="px-6 py-4 text-center">$9,000 - $16,000</td>
+                  <td className="px-6 py-4 text-center">$13,500 - $24,000</td>
                   <td className="px-6 py-4 text-center">20-30 years</td>
                   <td className="px-6 py-4">Non-HOA communities, budget-friendly</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900">
                   <td className="px-6 py-4 font-semibold">Concrete Tile</td>
-                  <td className="px-6 py-4 text-center">$16,000 - $30,000</td>
+                  <td className="px-6 py-4 text-center">$24,000 - $45,000</td>
                   <td className="px-6 py-4 text-center">30-50 years</td>
                   <td className="px-6 py-4 font-medium text-yellow-400">Most common in Boca Raton HOAs</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
                   <td className="px-6 py-4 font-semibold">Clay Tile (Barrel)</td>
-                  <td className="px-6 py-4 text-center">$22,000 - $38,000</td>
+                  <td className="px-6 py-4 text-center">$33,000 - $57,000</td>
                   <td className="px-6 py-4 text-center">50-75 years</td>
                   <td className="px-6 py-4">Premium communities, Mediterranean style</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-6 py-4 font-semibold">Standing Seam Metal</td>
-                  <td className="px-6 py-4 text-center">$20,000 - $38,000</td>
+                  <td className="px-6 py-4 text-center">$30,000 - $57,000</td>
                   <td className="px-6 py-4 text-center">40-70 years</td>
                   <td className="px-6 py-4">Modern homes, maximum wind protection</td>
                 </tr>
