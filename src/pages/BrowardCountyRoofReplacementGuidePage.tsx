@@ -274,7 +274,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
                 <p className="text-zinc-300">Initial insurance estimates often undervalue the work required for HVHZ compliance. Supplemental claims document additional costs for proper underlayment, engineering, NOA-approved products, and code-required upgrades.</p>
               </div>
             </div>
-            <div className="mt-6 p-4 bg-sky-100 rounded-lg">
+            <div className="mt-6 p-4 bg-zinc-900 rounded-lg">
               <p className="text-white font-medium">All Phase Construction USA provides full insurance claims assistance — from initial documentation and damage assessment through adjuster meetings and supplemental claims filing. <Link to="/contact" className="text-yellow-400 underline font-bold">Contact us for a free insurance claim consultation</Link>.</p>
             </div>
           </div>
