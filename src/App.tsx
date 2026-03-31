@@ -205,6 +205,7 @@ const BestRoofersBocaRatonPage = lazy(() => import('./pages/BestRoofersBocaRaton
 const BestRoofersWellingtonPage = lazy(() => import('./pages/BestRoofersWellingtonPage'));
 const BestRooferCoralSpringsPage = lazy(() => import('./pages/BestRooferCoralSpringsPage'));
 const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
+const BrowardCountyRoofReplacementGuidePage = lazy(() => import('./pages/BrowardCountyRoofReplacementGuidePage'));
 const TopRooferPage = lazy(() => import('./pages/locations/TopRooferPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
@@ -235,9 +236,9 @@ function AppContent() {
     <>
       <NuclearMetadata />
       {/*
-        âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+        Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
         LAYOUT LOCK: Header and Footer are PERMANENTLY hard-coded here
-        âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+        Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 
         DO NOT REMOVE OR CONDITIONALLY RENDER Header/Footer.
 
@@ -245,7 +246,7 @@ function AppContent() {
         loads for EVERY page, preventing "business card" ghost pages.
 
         All routes below will ALWAYS have the full branded layout.
-        âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+        Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
       */}
       <div className="flex flex-col min-h-screen bg-gray-50">
         <LowercaseRedirect />
@@ -321,6 +322,7 @@ function AppContent() {
             <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/how-to-hire-roofing-contractor" element={<HowToHireRoofingContractorPage />} />
             <Route path="/south-florida-roofing-reviews" element={<SouthFloridaRoofingReviewsPage />} />
+            <Route path="/broward-county-roof-replacement-guide" element={<BrowardCountyRoofReplacementGuidePage />} />
             <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />
