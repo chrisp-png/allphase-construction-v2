@@ -79,13 +79,13 @@ export default function BrowardCountyRoofReplacementGuidePage() {
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
-            <nav className="flex items-center space-x-2 text-sm text-sky-300 mb-6">
+            <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
               <Link to="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
               <span className="text-white">Broward County Roof Replacement Guide</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Broward County Roof Replacement Guide <span className="text-sky-400">(2026)</span>
+              Broward County Roof Replacement Guide <span className="text-yellow-400">(2026)</span>
             </h1>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Everything homeowners need to know about replacing a roof in Broward County — from HVHZ requirements and the 25% rule to costs, permits, and insurance claims. Written by licensed roofing professionals with 2,500+ completed roofs in the area.
@@ -93,6 +93,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
           </div>
         </div>
       </div>
+      <div className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
@@ -206,42 +207,42 @@ export default function BrowardCountyRoofReplacementGuidePage() {
           <h2 className="text-3xl font-bold text-white mb-6">The Broward County Roof Replacement Process</h2>
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">1</div>
+              <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">1</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Free Roof Inspection & Assessment</h3>
                 <p className="text-zinc-300">A licensed inspector examines your entire roof system, documenting existing conditions with photos and measurements. If insurance is involved, this documentation becomes the foundation of your claim.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">2</div>
+              <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">2</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Material Selection & Engineering</h3>
                 <p className="text-zinc-300">Choose your roofing material based on budget, aesthetics, and performance needs. For tile and metal, an engineer prepares attachment calculations specific to your roof geometry and wind exposure. All products must have Miami-Dade NOA approval.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">3</div>
+              <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">3</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Permit Application</h3>
                 <p className="text-zinc-300">Your contractor files for a building permit with the local municipality (Fort Lauderdale, Pompano Beach, Deerfield Beach, Coral Springs, etc.). The application includes product NOA documentation, engineered drawings, and the scope of work. Processing time varies by city.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">4</div>
+              <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">4</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Tear-Off & Deck Inspection</h3>
                 <p className="text-zinc-300">The existing roof is removed and the underlying decking is inspected. Damaged or deteriorated decking is replaced. A building inspector verifies the deck condition before new materials are installed.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">5</div>
+              <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">5</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Underlayment & Waterproofing</h3>
                 <p className="text-zinc-300">HVHZ code requires self-adhering modified bitumen underlayment or an approved secondary water barrier. This critical layer protects your home even if the primary roofing material is displaced in a storm.</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-zinc-9000 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">6</div>
+              <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">6</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Roofing Installation & Final Inspection</h3>
                 <p className="text-zinc-300">The new roofing system is installed according to manufacturer specifications and HVHZ code requirements. After completion, the building department conducts a final inspection to verify full compliance.</p>
@@ -322,7 +323,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
             All Phase Construction USA has completed over 2,500 roofs across Broward and Palm Beach counties. We handle everything from permits and engineering to insurance claims and final inspection.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
             <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
@@ -331,6 +332,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
           </div>
           <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
+      </div>
       </div>
     </>
   );
