@@ -87,7 +87,7 @@ export default function RoofReplacementCostFloridaPage() {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Roof Replacement Cost in Florida <span className="text-sky-400">(2026 Price Guide)</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-4 leading-relaxed">
+            <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               A detailed breakdown of what Florida homeowners actually pay for a new roof in 2026. Prices by material, by county, HVHZ vs. non-HVHZ costs, and what drives the price up or down.
             </p>
           </div>
@@ -96,14 +96,14 @@ export default function RoofReplacementCostFloridaPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Average Roof Replacement Cost by Material (2026)</h2>
-          <p className="text-lg text-slate-700 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-6">Average Roof Replacement Cost by Material (2026)</h2>
+          <p className="text-lg text-zinc-300 mb-6">
             These prices reflect a complete roof replacement on a standard 2,000 sq ft single-family home in Florida, including material, labor, permits, and inspections. HVHZ areas (Broward County, southern Palm Beach County, Miami-Dade) run higher due to stricter requirements.
           </p>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-white rounded-xl shadow-lg overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
               <thead>
-                <tr className="bg-slate-800 text-white">
+                <tr className="bg-zinc-900 text-white">
                   <th className="px-5 py-3 text-left">Material</th>
                   <th className="px-5 py-3 text-center">Non-HVHZ Cost</th>
                   <th className="px-5 py-3 text-center">HVHZ Cost (Broward/PBC)</th>
@@ -112,42 +112,42 @@ export default function RoofReplacementCostFloridaPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-5 py-4 font-semibold">3-Tab Shingles</td>
                   <td className="px-5 py-4 text-center">$6,500 - $10,000</td>
                   <td className="px-5 py-4 text-center">$8,000 - $12,000</td>
                   <td className="px-5 py-4 text-center">10-18 years</td>
                   <td className="px-5 py-4 text-center">Up to 60 mph</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-5 py-4 font-semibold">Architectural Shingles</td>
                   <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-5 py-4 text-center">$9,500 - $16,000</td>
                   <td className="px-5 py-4 text-center">20-30 years</td>
                   <td className="px-5 py-4 text-center">Up to 130 mph</td>
                 </tr>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-5 py-4 font-semibold">Concrete Tile</td>
                   <td className="px-5 py-4 text-center">$12,000 - $24,000</td>
                   <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
                   <td className="px-5 py-4 text-center">30-50 years</td>
                   <td className="px-5 py-4 text-center">Up to 150 mph</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-5 py-4 font-semibold">Clay Tile</td>
                   <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
                   <td className="px-5 py-4 text-center">$22,000 - $38,000</td>
                   <td className="px-5 py-4 text-center">50-75 years</td>
                   <td className="px-5 py-4 text-center">Up to 150 mph</td>
                 </tr>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-5 py-4 font-semibold">Standing Seam Metal</td>
                   <td className="px-5 py-4 text-center">$15,000 - $30,000</td>
                   <td className="px-5 py-4 text-center">$20,000 - $38,000</td>
                   <td className="px-5 py-4 text-center">40-70 years</td>
                   <td className="px-5 py-4 text-center">Up to 180 mph</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-5 py-4 font-semibold">5V-Crimp Metal</td>
                   <td className="px-5 py-4 text-center">$10,000 - $20,000</td>
                   <td className="px-5 py-4 text-center">$13,000 - $25,000</td>
@@ -164,46 +164,46 @@ export default function RoofReplacementCostFloridaPage() {
               </tbody>
             </table>
           </div>
-          <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-            <p className="text-slate-700"><strong>Why the HVHZ premium?</strong> Properties in the High Velocity Hurricane Zone (all of Broward County, southern Palm Beach County, and Miami-Dade) require Miami-Dade NOA-approved products, enhanced underlayment, engineered attachment calculations, and additional inspections. These add $2,000–$5,000+ to the project cost but provide significantly better storm protection.</p>
+          <div className="bg-zinc-900 border border-sky-200 rounded-lg p-4">
+            <p className="text-zinc-300"><strong>Why the HVHZ premium?</strong> Properties in the High Velocity Hurricane Zone (all of Broward County, southern Palm Beach County, and Miami-Dade) require Miami-Dade NOA-approved products, enhanced underlayment, engineered attachment calculations, and additional inspections. These add $2,000–$5,000+ to the project cost but provide significantly better storm protection.</p>
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">What Drives Roof Replacement Cost in Florida</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">What Drives Roof Replacement Cost in Florida</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">Roof Size & Complexity</h3>
-              <p className="text-slate-600">Roofing is priced per square (100 sq ft). A simple gable roof costs less per square than a complex hip roof with multiple valleys, dormers, and penetrations. Multi-story homes also cost more due to safety equipment and access challenges.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+              <h3 className="font-bold text-white mb-2">Roof Size & Complexity</h3>
+              <p className="text-zinc-400">Roofing is priced per square (100 sq ft). A simple gable roof costs less per square than a complex hip roof with multiple valleys, dormers, and penetrations. Multi-story homes also cost more due to safety equipment and access challenges.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">Roof Pitch (Steepness)</h3>
-              <p className="text-slate-600">Steeper roofs require additional safety equipment and take longer to install. A roof with a 7:12 pitch or higher typically costs 15–25% more in labor than a low-pitch roof. Most tile roofs in South Florida have moderate pitches.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+              <h3 className="font-bold text-white mb-2">Roof Pitch (Steepness)</h3>
+              <p className="text-zinc-400">Steeper roofs require additional safety equipment and take longer to install. A roof with a 7:12 pitch or higher typically costs 15–25% more in labor than a low-pitch roof. Most tile roofs in South Florida have moderate pitches.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">Decking Condition</h3>
-              <p className="text-slate-600">Damaged or rotted roof decking must be replaced before new roofing is installed. Plywood decking replacement runs $75–$150 per sheet (4x8), and a typical home may need 5–20 sheets replaced, adding $375–$3,000 to the project.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+              <h3 className="font-bold text-white mb-2">Decking Condition</h3>
+              <p className="text-zinc-400">Damaged or rotted roof decking must be replaced before new roofing is installed. Plywood decking replacement runs $75–$150 per sheet (4x8), and a typical home may need 5–20 sheets replaced, adding $375–$3,000 to the project.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">Building Code Zone</h3>
-              <p className="text-slate-600">HVHZ areas (Broward, southern Palm Beach, Miami-Dade) have the strictest requirements. The rest of Florida follows the Florida Building Code, which is still more demanding than most states but does not require Miami-Dade NOA product approvals.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+              <h3 className="font-bold text-white mb-2">Building Code Zone</h3>
+              <p className="text-zinc-400">HVHZ areas (Broward, southern Palm Beach, Miami-Dade) have the strictest requirements. The rest of Florida follows the Florida Building Code, which is still more demanding than most states but does not require Miami-Dade NOA product approvals.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">Permit & Inspection Fees</h3>
-              <p className="text-slate-600">Permit costs vary by municipality, typically ranging from $250–$800 in most Florida cities. Broward County municipalities tend to be at the higher end. Engineering fees for tile and metal roofs in HVHZ areas add $500–$1,500.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+              <h3 className="font-bold text-white mb-2">Permit & Inspection Fees</h3>
+              <p className="text-zinc-400">Permit costs vary by municipality, typically ranging from $250–$800 in most Florida cities. Broward County municipalities tend to be at the higher end. Engineering fees for tile and metal roofs in HVHZ areas add $500–$1,500.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">Tear-Off Layers</h3>
-              <p className="text-slate-600">If you have multiple layers of existing roofing material (some older homes have 2-3 layers), the tear-off cost increases. Florida code limits the number of layers, and HVHZ areas generally require a complete tear-off to the deck for proper inspection.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+              <h3 className="font-bold text-white mb-2">Tear-Off Layers</h3>
+              <p className="text-zinc-400">If you have multiple layers of existing roofing material (some older homes have 2-3 layers), the tear-off cost increases. Florida code limits the number of layers, and HVHZ areas generally require a complete tear-off to the deck for proper inspection.</p>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Cost by County: South Florida Breakdown</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Cost by County: South Florida Breakdown</h2>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-white rounded-xl shadow-lg overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
               <thead>
-                <tr className="bg-slate-800 text-white">
+                <tr className="bg-zinc-900 text-white">
                   <th className="px-6 py-3 text-left">County / Area</th>
                   <th className="px-6 py-3 text-center">Shingle Range</th>
                   <th className="px-6 py-3 text-center">Tile Range</th>
@@ -212,28 +212,28 @@ export default function RoofReplacementCostFloridaPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-6 py-4 font-semibold">Broward County</td>
                   <td className="px-6 py-4 text-center">$9,000 - $16,000</td>
                   <td className="px-6 py-4 text-center">$16,000 - $30,000</td>
                   <td className="px-6 py-4 text-center">$20,000 - $38,000</td>
                   <td className="px-6 py-4 text-center font-bold text-amber-600">Yes (All)</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-6 py-4 font-semibold">Palm Beach County (South)</td>
                   <td className="px-6 py-4 text-center">$9,000 - $15,000</td>
                   <td className="px-6 py-4 text-center">$15,000 - $28,000</td>
                   <td className="px-6 py-4 text-center">$18,000 - $35,000</td>
                   <td className="px-6 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-6 py-4 font-semibold">Palm Beach County (North)</td>
                   <td className="px-6 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-6 py-4 text-center">$14,000 - $26,000</td>
                   <td className="px-6 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-6 py-4 text-center text-slate-500">No</td>
+                  <td className="px-6 py-4 text-center text-zinc-500">No</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-6 py-4 font-semibold">Miami-Dade County</td>
                   <td className="px-6 py-4 text-center">$9,500 - $17,000</td>
                   <td className="px-6 py-4 text-center">$17,000 - $32,000</td>
@@ -245,34 +245,34 @@ export default function RoofReplacementCostFloridaPage() {
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">How to Save Money on Your Florida Roof Replacement</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">How to Save Money on Your Florida Roof Replacement</h2>
           <div className="space-y-4">
-            <div className="bg-green-50 p-5 rounded-xl border border-green-200">
-              <h3 className="font-bold text-slate-900 mb-2">Maximize Your Insurance Claim</h3>
-              <p className="text-slate-700">If your roof was damaged by a storm, proper documentation and a contractor experienced with insurance claims can significantly increase your payout. Supplemental claims for HVHZ-required upgrades, code compliance costs, and hidden damage can recover thousands of dollars. All Phase Construction USA provides full insurance claims assistance at no additional charge.</p>
+            <div className="bg-zinc-900 p-5 rounded-xl border border-green-200">
+              <h3 className="font-bold text-white mb-2">Maximize Your Insurance Claim</h3>
+              <p className="text-zinc-300">If your roof was damaged by a storm, proper documentation and a contractor experienced with insurance claims can significantly increase your payout. Supplemental claims for HVHZ-required upgrades, code compliance costs, and hidden damage can recover thousands of dollars. All Phase Construction USA provides full insurance claims assistance at no additional charge.</p>
             </div>
-            <div className="bg-green-50 p-5 rounded-xl border border-green-200">
-              <h3 className="font-bold text-slate-900 mb-2">Choose the Right Material for Your Budget and Timeline</h3>
-              <p className="text-slate-700">If you plan to stay in your home 10+ years, investing in tile or metal pays off through longevity. If budget is the primary concern, architectural shingles provide good wind resistance at the lowest upfront cost. Consider the per-year cost: a $12,000 shingle roof lasting 20 years costs $600/year, while a $28,000 tile roof lasting 50 years costs $560/year.</p>
+            <div className="bg-zinc-900 p-5 rounded-xl border border-green-200">
+              <h3 className="font-bold text-white mb-2">Choose the Right Material for Your Budget and Timeline</h3>
+              <p className="text-zinc-300">If you plan to stay in your home 10+ years, investing in tile or metal pays off through longevity. If budget is the primary concern, architectural shingles provide good wind resistance at the lowest upfront cost. Consider the per-year cost: a $12,000 shingle roof lasting 20 years costs $600/year, while a $28,000 tile roof lasting 50 years costs $560/year.</p>
             </div>
-            <div className="bg-green-50 p-5 rounded-xl border border-green-200">
-              <h3 className="font-bold text-slate-900 mb-2">Get Multiple Quotes (But Compare Apples to Apples)</h3>
-              <p className="text-slate-700">Get 2–3 quotes from licensed contractors. Make sure each quote includes the same scope: full tear-off, underlayment type, product specifications, permits, engineering, and all inspections. The cheapest quote may be missing items that are code-required in your area.</p>
+            <div className="bg-zinc-900 p-5 rounded-xl border border-green-200">
+              <h3 className="font-bold text-white mb-2">Get Multiple Quotes (But Compare Apples to Apples)</h3>
+              <p className="text-zinc-300">Get 2–3 quotes from licensed contractors. Make sure each quote includes the same scope: full tear-off, underlayment type, product specifications, permits, engineering, and all inspections. The cheapest quote may be missing items that are code-required in your area.</p>
             </div>
-            <div className="bg-green-50 p-5 rounded-xl border border-green-200">
-              <h3 className="font-bold text-slate-900 mb-2">Take Advantage of Insurance Discounts</h3>
-              <p className="text-slate-700">A new, code-compliant roof in Florida often qualifies for significant insurance premium reductions. After your roof is replaced, request a wind mitigation inspection — the resulting report can reduce your annual premiums by hundreds or even thousands of dollars.</p>
+            <div className="bg-zinc-900 p-5 rounded-xl border border-green-200">
+              <h3 className="font-bold text-white mb-2">Take Advantage of Insurance Discounts</h3>
+              <p className="text-zinc-300">A new, code-compliant roof in Florida often qualifies for significant insurance premium reductions. After your roof is replaced, request a wind mitigation inspection — the resulting report can reduce your annual premiums by hundreds or even thousands of dollars.</p>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions About Florida Roof Costs</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions About Florida Roof Costs</h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
-                <p className="text-slate-700 leading-relaxed">{faq.a}</p>
+              <div key={index} className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+                <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
+                <p className="text-zinc-300 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -280,21 +280,21 @@ export default function RoofReplacementCostFloridaPage() {
 
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 lg:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Get Your Free Roof Replacement Estimate</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
             All Phase Construction USA provides free, detailed estimates for roof replacement in Broward County and Palm Beach County. We break down every cost so there are no surprises.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
               Get Free Estimate
             </Link>
-            <Link to="/roof-cost-calculator" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+            <Link to="/roof-cost-calculator" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
               Try Our Cost Calculator
             </Link>
-            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-slate-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
+          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
         </section>
       </div>
     </>
