@@ -1,16 +1,16 @@
-import { Helmet } from 'react-helmet-async';
 import SEO from '../components/SEO';
+import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
 export default function RoofReplacementCostFloridaPage() {
   const faqs = [
     {
       q: 'How much does a roof replacement cost in Florida in 2026?',
-      a: 'The average cost for a full roof replacement on a standard 2,000 sq ft Florida home ranges from $8,000ÃÂ¢ÃÂÃÂ$14,000 for asphalt shingles, $14,000ÃÂ¢ÃÂÃÂ$28,000 for tile, and $18,000ÃÂ¢ÃÂÃÂ$35,000 for standing seam metal. Costs are significantly higher in the High Velocity Hurricane Zone (HVHZ), which includes all of Broward County and southern Palm Beach County, due to stricter product approval and installation requirements.'
+      a: 'The average cost for a full roof replacement on a standard 2,000 sq ft Florida home ranges from $8,000ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$14,000 for asphalt shingles, $14,000ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$28,000 for tile, and $18,000ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$35,000 for standing seam metal. Costs are significantly higher in the High Velocity Hurricane Zone (HVHZ), which includes all of Broward County and southern Palm Beach County, due to stricter product approval and installation requirements.'
     },
     {
       q: 'Why are roofing costs higher in South Florida than other parts of the state?',
-      a: 'South Florida falls within the HVHZ, which requires Miami-Dade NOA-approved materials, engineered installation calculations, enhanced underlayment, and additional inspections. These requirements add $2,000ÃÂ¢ÃÂÃÂ$5,000 or more to the cost compared to the same roof installed outside the HVHZ. Permit fees also tend to be higher in Broward and Palm Beach counties.'
+      a: 'South Florida falls within the HVHZ, which requires Miami-Dade NOA-approved materials, engineered installation calculations, enhanced underlayment, and additional inspections. These requirements add $2,000ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$5,000 or more to the cost compared to the same roof installed outside the HVHZ. Permit fees also tend to be higher in Broward and Palm Beach counties.'
     },
     {
       q: 'What factors affect the cost of a roof replacement in Florida?',
@@ -18,7 +18,7 @@ export default function RoofReplacementCostFloridaPage() {
     },
     {
       q: 'Does insurance cover roof replacement in Florida?',
-      a: 'Insurance typically covers roof damage from covered perils like hurricanes, windstorms, and hail. Age-related wear is not covered. Florida homeowners should be aware of hurricane deductibles (typically 2ÃÂ¢ÃÂÃÂ5% of home value) and the 25% rule, which can trigger a full replacement requirement when more than 25% of the roof needs repair within 12 months.'
+      a: 'Insurance typically covers roof damage from covered perils like hurricanes, windstorms, and hail. Age-related wear is not covered. Florida homeowners should be aware of hurricane deductibles (typically 2ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ5% of home value) and the 25% rule, which can trigger a full replacement requirement when more than 25% of the roof needs repair within 12 months.'
     },
     {
       q: 'How can I finance a roof replacement in Florida?',
@@ -26,27 +26,18 @@ export default function RoofReplacementCostFloridaPage() {
     },
     {
       q: 'Is it cheaper to repair or replace a Florida roof?',
-      a: 'Minor repairs on a roof under 10 years old are usually cost-effective ($300ÃÂ¢ÃÂÃÂ$1,500 for typical repairs). However, if your roof is over 15 years old, has multiple issues, or if repairs would exceed 25% of the roof area (triggering the Florida 25% rule requiring full code compliance), replacement is usually the better financial decision long-term.'
+      a: 'Minor repairs on a roof under 10 years old are usually cost-effective ($300ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$1,500 for typical repairs). However, if your roof is over 15 years old, has multiple issues, or if repairs would exceed 25% of the roof area (triggering the Florida 25% rule requiring full code compliance), replacement is usually the better financial decision long-term.'
     },
     {
       q: 'What is the cheapest roofing material in Florida?',
-      a: 'Architectural asphalt shingles are the most affordable option at $8,000ÃÂ¢ÃÂÃÂ$14,000 for a standard home. While they have the shortest lifespan (15ÃÂ¢ÃÂÃÂ25 years), they offer good wind resistance (up to 130 mph when properly installed) and quick installation. For flat roofs, modified bitumen is typically the most economical choice.'
+      a: 'Architectural asphalt shingles are the most affordable option at $8,000ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$14,000 for a standard home. While they have the shortest lifespan (15ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ25 years), they offer good wind resistance (up to 130 mph when properly installed) and quick installation. For flat roofs, modified bitumen is typically the most economical choice.'
     },
     {
       q: 'How long does a new roof last in Florida?',
-      a: 'Lifespan depends on material: asphalt shingles last 15ÃÂ¢ÃÂÃÂ25 years, concrete tile 30ÃÂ¢ÃÂÃÂ50 years, clay tile 50ÃÂ¢ÃÂÃÂ75 years, and standing seam metal 40ÃÂ¢ÃÂÃÂ70 years. FloridaÃÂ¢ÃÂÃÂs intense UV exposure, salt air (in coastal areas), and hurricane risk can shorten lifespan compared to northern climates, making proper installation and material selection critical.'
+      a: 'Lifespan depends on material: asphalt shingles last 15ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ25 years, concrete tile 30ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ50 years, clay tile 50ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ75 years, and standing seam metal 40ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ70 years. FloridaÃÂÃÂ¢ÃÂÃÂÃÂÃÂs intense UV exposure, salt air (in coastal areas), and hurricane risk can shorten lifespan compared to northern climates, making proper installation and material selection critical.'
     }
   ];
-  return (
-    <>
-      <SEO
-            title="Roof Replacement Cost in Florida (2026) | Complete Price Guide by Material & County"
-            description="How much does a new roof cost in Florida? 2026 pricing for shingles, tile, metal, and flat roofing. Costs by county, HVHZ impact, insurance tips, and the 25% rule explained."
-            canonicalPath="/roof-replacement-cost-florida"
-          />
-          <Helmet>
-            <script type="application/ld+json">
-          {JSON.stringify({
+  const pageSchema1 = {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": faqs.map(faq => ({
@@ -54,31 +45,36 @@ export default function RoofReplacementCostFloridaPage() {
               "name": faq.q,
               "acceptedAnswer": { "@type": "Answer", "text": faq.a }
             }))
-          })}
-        </script>
-            <script type="application/ld+json">
-          {JSON.stringify({
+          };
+
+  const pageSchema2 = {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://allphaseconstructionfl.com" },
               { "@type": "ListItem", "position": 2, "name": "Roof Replacement Cost in Florida", "item": "https://allphaseconstructionfl.com/roof-replacement-cost-florida" }
             ]
-          })}
-        </script>
-            <script type="application/ld+json">
-          {JSON.stringify({
+          };
+
+  const pageSchema3 = {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Roof Replacement Cost in Florida â 2026 Price Guide",
+            "headline": "Roof Replacement Cost in Florida Ã¢ÂÂ 2026 Price Guide",
             "description": "Comprehensive guide to roof replacement costs in Florida by material and county.",
             "author": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
             "publisher": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
             "datePublished": "2026-03-01",
             "dateModified": "2026-03-31"
-          })}
-        </script>
-          </Helmet>
+          };
+
+  return (
+    <>
+      <SEO
+            title="Roof Replacement Cost in Florida (2026) | Complete Price Guide by Material & County"
+            description="How much does a new roof cost in Florida? 2026 pricing for shingles, tile, metal, and flat roofing. Costs by county, HVHZ impact, insurance tips, and the 25% rule explained."
+            canonicalPath="/roof-replacement-cost-florida"
+          />
+          <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />
 
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -169,7 +165,7 @@ export default function RoofReplacementCostFloridaPage() {
             </table>
           </div>
           <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-            <p className="text-slate-700"><strong>Why the HVHZ premium?</strong> Properties in the High Velocity Hurricane Zone (all of Broward County, southern Palm Beach County, and Miami-Dade) require Miami-Dade NOA-approved products, enhanced underlayment, engineered attachment calculations, and additional inspections. These add $2,000ÃÂ¢ÃÂÃÂ$5,000+ to the project cost but provide significantly better storm protection.</p>
+            <p className="text-slate-700"><strong>Why the HVHZ premium?</strong> Properties in the High Velocity Hurricane Zone (all of Broward County, southern Palm Beach County, and Miami-Dade) require Miami-Dade NOA-approved products, enhanced underlayment, engineered attachment calculations, and additional inspections. These add $2,000ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$5,000+ to the project cost but provide significantly better storm protection.</p>
           </div>
         </section>
         <section className="mb-16">
@@ -181,11 +177,11 @@ export default function RoofReplacementCostFloridaPage() {
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
               <h3 className="font-bold text-slate-900 mb-2">Roof Pitch (Steepness)</h3>
-              <p className="text-slate-600">Steeper roofs require additional safety equipment and take longer to install. A roof with a 7:12 pitch or higher typically costs 15ÃÂ¢ÃÂÃÂ25% more in labor than a low-pitch roof. Most tile roofs in South Florida have moderate pitches.</p>
+              <p className="text-slate-600">Steeper roofs require additional safety equipment and take longer to install. A roof with a 7:12 pitch or higher typically costs 15ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ25% more in labor than a low-pitch roof. Most tile roofs in South Florida have moderate pitches.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
               <h3 className="font-bold text-slate-900 mb-2">Decking Condition</h3>
-              <p className="text-slate-600">Damaged or rotted roof decking must be replaced before new roofing is installed. Plywood decking replacement runs $75ÃÂ¢ÃÂÃÂ$150 per sheet (4x8), and a typical home may need 5ÃÂ¢ÃÂÃÂ20 sheets replaced, adding $375ÃÂ¢ÃÂÃÂ$3,000 to the project.</p>
+              <p className="text-slate-600">Damaged or rotted roof decking must be replaced before new roofing is installed. Plywood decking replacement runs $75ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$150 per sheet (4x8), and a typical home may need 5ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ20 sheets replaced, adding $375ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$3,000 to the project.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
               <h3 className="font-bold text-slate-900 mb-2">Building Code Zone</h3>
@@ -193,7 +189,7 @@ export default function RoofReplacementCostFloridaPage() {
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
               <h3 className="font-bold text-slate-900 mb-2">Permit & Inspection Fees</h3>
-              <p className="text-slate-600">Permit costs vary by municipality, typically ranging from $250ÃÂ¢ÃÂÃÂ$800 in most Florida cities. Broward County municipalities tend to be at the higher end. Engineering fees for tile and metal roofs in HVHZ areas add $500ÃÂ¢ÃÂÃÂ$1,500.</p>
+              <p className="text-slate-600">Permit costs vary by municipality, typically ranging from $250ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$800 in most Florida cities. Broward County municipalities tend to be at the higher end. Engineering fees for tile and metal roofs in HVHZ areas add $500ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ$1,500.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
               <h3 className="font-bold text-slate-900 mb-2">Tear-Off Layers</h3>
@@ -261,11 +257,11 @@ export default function RoofReplacementCostFloridaPage() {
             </div>
             <div className="bg-green-50 p-5 rounded-xl border border-green-200">
               <h3 className="font-bold text-slate-900 mb-2">Get Multiple Quotes (But Compare Apples to Apples)</h3>
-              <p className="text-slate-700">Get 2ÃÂ¢ÃÂÃÂ3 quotes from licensed contractors. Make sure each quote includes the same scope: full tear-off, underlayment type, product specifications, permits, engineering, and all inspections. The cheapest quote may be missing items that are code-required in your area.</p>
+              <p className="text-slate-700">Get 2ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ3 quotes from licensed contractors. Make sure each quote includes the same scope: full tear-off, underlayment type, product specifications, permits, engineering, and all inspections. The cheapest quote may be missing items that are code-required in your area.</p>
             </div>
             <div className="bg-green-50 p-5 rounded-xl border border-green-200">
               <h3 className="font-bold text-slate-900 mb-2">Take Advantage of Insurance Discounts</h3>
-              <p className="text-slate-700">A new, code-compliant roof in Florida often qualifies for significant insurance premium reductions. After your roof is replaced, request a wind mitigation inspection ÃÂ¢ÃÂÃÂ the resulting report can reduce your annual premiums by hundreds or even thousands of dollars.</p>
+              <p className="text-slate-700">A new, code-compliant roof in Florida often qualifies for significant insurance premium reductions. After your roof is replaced, request a wind mitigation inspection ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ the resulting report can reduce your annual premiums by hundreds or even thousands of dollars.</p>
             </div>
           </div>
         </section>
