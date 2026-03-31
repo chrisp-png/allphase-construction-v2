@@ -204,8 +204,8 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
             <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
-            <a href="tel:+15615564562" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
-              Call (561) 556-4562
+            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+              Call (754) 227-5605
             </a>
           </div>
           <p className="text-sm text-slate-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
