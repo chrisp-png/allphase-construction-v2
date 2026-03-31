@@ -114,45 +114,45 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
               </thead>
               <tbody className="text-zinc-200">
                 <tr className="border-b border-zinc-800 bg-zinc-900">
-                  <td className="px-5 py-4 font-semibold">Boca Raton</td>
-                  <td className="px-5 py-4 text-center">$9,000 - $16,000</td>
-                  <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-5 py-4 text-center">$20,000 - $38,000</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Boca Raton</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$9,000 - $16,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$16,000 - $30,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$20,000 - $38,000</td>
                   <td className="px-5 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-5 py-4 font-semibold">Delray Beach</td>
-                  <td className="px-5 py-4 text-center">$8,500 - $15,000</td>
-                  <td className="px-5 py-4 text-center">$15,000 - $28,000</td>
-                  <td className="px-5 py-4 text-center">$18,000 - $35,000</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Delray Beach</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,500 - $15,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$15,000 - $28,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$18,000 - $35,000</td>
                   <td className="px-5 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-5 py-4 font-semibold">Boynton Beach</td>
-                  <td className="px-5 py-4 text-center">$8,500 - $15,000</td>
-                  <td className="px-5 py-4 text-center">$15,000 - $28,000</td>
-                  <td className="px-5 py-4 text-center">$18,000 - $35,000</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Boynton Beach</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,500 - $15,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$15,000 - $28,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$18,000 - $35,000</td>
                   <td className="px-5 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-5 py-4 font-semibold">West Palm Beach</td>
-                  <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
-                  <td className="px-5 py-4 text-center">$14,000 - $26,000</td>
-                  <td className="px-5 py-4 text-center">$17,000 - $32,000</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">West Palm Beach</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,000 - $14,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$14,000 - $26,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$17,000 - $32,000</td>
                   <td className="px-5 py-4 text-center text-zinc-300">No</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-5 py-4 font-semibold">Wellington</td>
-                  <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
-                  <td className="px-5 py-4 text-center">$14,000 - $26,000</td>
-                  <td className="px-5 py-4 text-center">$17,000 - $32,000</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Wellington</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,000 - $14,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$14,000 - $26,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$17,000 - $32,000</td>
                   <td className="px-5 py-4 text-center text-zinc-300">No</td>
                 </tr>
                 <tr>
-                  <td className="px-5 py-4 font-semibold">Jupiter / Palm Beach Gardens</td>
-                  <td className="px-5 py-4 text-center">$8,000 - $13,500</td>
-                  <td className="px-5 py-4 text-center">$13,500 - $25,000</td>
-                  <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Jupiter / Palm Beach Gardens</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,000 - $13,500</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$13,500 - $25,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$16,000 - $30,000</td>
                   <td className="px-5 py-4 text-center text-zinc-300">No</td>
                 </tr>
               </tbody>
@@ -177,7 +177,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
               { name: 'Lantana', link: '/locations/lantana' },
               { name: 'Highland Beach', link: '/locations/highland-beach' }
             ].map((city) => (
-              <Link key={city.name} to={city.link} className="bg-zinc-900 px-4 py-3 rounded-lg shadow-sm border border-zinc-800 hover:border-sky-300 hover:shadow-md border border-zinc-800 transition-all text-zinc-300 hover:text-yellow-400 font-medium text-center">
+              <Link key={city.name} to={city.link} className="bg-zinc-900 px-4 py-3 rounded-lg shadow-sm border border-zinc-800 hover:border-yellow-400/40 hover:shadow-md border border-zinc-800 transition-all text-zinc-300 hover:text-yellow-400 font-medium text-center">
                 {city.name}
               </Link>
             ))}
