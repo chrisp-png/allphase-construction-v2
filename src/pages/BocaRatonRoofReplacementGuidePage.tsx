@@ -80,7 +80,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
-            <nav className="flex items-center space-x-2 text-sm text-sky-300 mb-6">
+            <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
               <Link to="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
               <Link to="/locations/boca-raton" className="hover:text-white transition-colors">Boca Raton</Link>
@@ -88,7 +88,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
               <span className="text-white">Roof Replacement Guide</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Boca Raton Roof Replacement Guide <span className="text-sky-400">(2026)</span>
+              Boca Raton Roof Replacement Guide <span className="text-yellow-400">(2026)</span>
             </h1>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The definitive resource for Boca Raton homeowners considering a roof replacement. Covers costs, material options, HVHZ requirements, HOA guidelines, insurance claims, and how to choose the right contractor.
@@ -96,6 +96,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
           </div>
         </div>
       </div>
+      <div className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
@@ -172,7 +173,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
         </section>
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">Why Boca Raton Homeowners Choose All Phase Construction USA</h2>
-          <div className="bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-2xl p-8">
+          <div className="bg-zinc-900 border border-yellow-400/30 rounded-2xl p-8">
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <h3 className="text-xl font-bold text-white mb-3">Dual Licensed</h3>
@@ -192,7 +193,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
               </div>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-zinc-9000 text-white font-semibold rounded-lg hover:bg-zinc-9000 transition-colors">
+              <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-500 transition-colors">
                 Get a Free Boca Raton Estimate
               </Link>
               <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
@@ -232,7 +233,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
             Get a free, no-obligation roof inspection and estimate. We will assess your roof, explain your options, and provide a detailed quote with no hidden fees.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
             <Link to="/roof-cost-calculator" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
@@ -241,6 +242,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
           </div>
           <p className="text-sm text-zinc-300 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
+      </div>
       </div>
     </>
   );
