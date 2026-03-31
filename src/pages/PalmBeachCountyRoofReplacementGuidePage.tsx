@@ -9,7 +9,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How much does a roof replacement cost in Palm Beach County?',
-      a: 'Costs vary based on location within the county. Southern Palm Beach County (Boca Raton, Delray Beach, Boynton Beach) partially falls within the HVHZ, increasing costs. Average ranges: asphalt shingles $8,500\u2013$16,000, concrete tile $15,000\u2013$30,000, clay tile $20,000\u2013$38,000, and standing seam metal $18,000\u2013$36,000 for a standard 2,000 sq ft home.'
+      a: 'Costs vary based on location within the county. Southern Palm Beach County (Boca Raton, Delray Beach, Boynton Beach) partially falls within the HVHZ, increasing costs. Average ranges: asphalt shingles $8,500–$16,000, concrete tile $15,000–$30,000, clay tile $20,000–$38,000, and standing seam metal $18,000–$36,000 for a standard 2,000 sq ft home.'
     },
     {
       q: 'Is Palm Beach County in the HVHZ?',
@@ -21,7 +21,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How do I find a licensed roofer in Palm Beach County?',
-      a: 'Verify licenses at myfloridalicense.com (look for CCC or CGC designations). Check the contractor\u2019s permit history through the Palm Beach County Building Division. Read Google reviews. Confirm they carry workers compensation and liability insurance. Ask for local references. For HVHZ areas, ensure they have experience with Miami-Dade NOA product installations.'
+      a: 'Verify licenses at myfloridalicense.com (look for CCC or CGC designations). Check the contractor’s permit history through the Palm Beach County Building Division. Read Google reviews. Confirm they carry workers compensation and liability insurance. Ask for local references. For HVHZ areas, ensure they have experience with Miami-Dade NOA product installations.'
     },
     {
       q: 'Does Palm Beach County require permits for roof replacement?',
@@ -29,7 +29,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How long does roof replacement take in Palm Beach County?',
-      a: 'Physical installation takes 2\u20135 days for shingles and 5\u201310 days for tile or metal. The full timeline including permitting runs 3\u20136 weeks. Permit processing varies by municipality \u2014 Boca Raton, West Palm Beach, Delray Beach, and Boynton Beach each have their own building departments with different turnaround times. Your contractor manages the entire permit process.'
+      a: 'Physical installation takes 2–5 days for shingles and 5–10 days for tile or metal. The full timeline including permitting runs 3–6 weeks. Permit processing varies by municipality — Boca Raton, West Palm Beach, Delray Beach, and Boynton Beach each have their own building departments with different turnaround times. Your contractor manages the entire permit process.'
     },
     {
       q: 'Can I get help with my roof insurance claim in Palm Beach County?',
@@ -149,7 +149,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-slate-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000\u2013$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
+          <p className="text-sm text-slate-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000–$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
         </section>
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Palm Beach County Cities We Serve</h2>
