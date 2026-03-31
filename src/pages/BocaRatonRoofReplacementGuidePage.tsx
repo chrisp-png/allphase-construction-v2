@@ -90,7 +90,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Boca Raton Roof Replacement Guide <span className="text-sky-400">(2026)</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-4 leading-relaxed">
+            <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The definitive resource for Boca Raton homeowners considering a roof replacement. Covers costs, material options, HVHZ requirements, HOA guidelines, insurance claims, and how to choose the right contractor.
             </p>
           </div>
@@ -99,14 +99,14 @@ export default function BocaRatonRoofReplacementGuidePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Roof Replacement Costs in Boca Raton (2026)</h2>
-          <p className="text-lg text-slate-700 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-6">Roof Replacement Costs in Boca Raton (2026)</h2>
+          <p className="text-lg text-zinc-300 mb-6">
             Boca Raton roofing costs reflect the area's premium market, HOA requirements (many communities require tile), and partial HVHZ compliance. Here is what to expect for a standard 2,000 sq ft home:
           </p>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-white rounded-xl shadow-lg overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
               <thead>
-                <tr className="bg-slate-800 text-white">
+                <tr className="bg-zinc-900 text-white">
                   <th className="px-6 py-3 text-left">Material</th>
                   <th className="px-6 py-3 text-center">Cost Range</th>
                   <th className="px-6 py-3 text-center">Lifespan</th>
@@ -114,25 +114,25 @@ export default function BocaRatonRoofReplacementGuidePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-6 py-4 font-semibold">Architectural Shingles</td>
                   <td className="px-6 py-4 text-center">$9,000 - $16,000</td>
                   <td className="px-6 py-4 text-center">20-30 years</td>
                   <td className="px-6 py-4">Non-HOA communities, budget-friendly</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-sky-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900">
                   <td className="px-6 py-4 font-semibold">Concrete Tile</td>
                   <td className="px-6 py-4 text-center">$16,000 - $30,000</td>
                   <td className="px-6 py-4 text-center">30-50 years</td>
-                  <td className="px-6 py-4 font-medium text-sky-700">Most common in Boca Raton HOAs</td>
+                  <td className="px-6 py-4 font-medium text-yellow-400">Most common in Boca Raton HOAs</td>
                 </tr>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-6 py-4 font-semibold">Clay Tile (Barrel)</td>
                   <td className="px-6 py-4 text-center">$22,000 - $38,000</td>
                   <td className="px-6 py-4 text-center">50-75 years</td>
                   <td className="px-6 py-4">Premium communities, Mediterranean style</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-6 py-4 font-semibold">Standing Seam Metal</td>
                   <td className="px-6 py-4 text-center">$20,000 - $38,000</td>
                   <td className="px-6 py-4 text-center">40-70 years</td>
@@ -150,52 +150,52 @@ export default function BocaRatonRoofReplacementGuidePage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Boca Raton Roofing: What You Need to Know</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Boca Raton Roofing: What You Need to Know</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
-              <h3 className="font-bold text-slate-900 mb-2">HVHZ Status: Check Your Property</h3>
-              <p className="text-slate-700">Boca Raton straddles the HVHZ boundary. Properties east of the Florida Turnpike generally fall within the HVHZ, requiring Miami-Dade NOA-approved products and stricter installation standards. Western Boca follows the standard Florida Building Code. Your contractor must verify your property's designation before specifying materials, as using non-HVHZ products in an HVHZ zone will fail inspection.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl border border-amber-200">
+              <h3 className="font-bold text-white mb-2">HVHZ Status: Check Your Property</h3>
+              <p className="text-zinc-300">Boca Raton straddles the HVHZ boundary. Properties east of the Florida Turnpike generally fall within the HVHZ, requiring Miami-Dade NOA-approved products and stricter installation standards. Western Boca follows the standard Florida Building Code. Your contractor must verify your property's designation before specifying materials, as using non-HVHZ products in an HVHZ zone will fail inspection.</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
-              <h3 className="font-bold text-slate-900 mb-2">HOA Requirements Are Common</h3>
-              <p className="text-slate-700">Many Boca Raton communities have strict architectural guidelines. Common requirements include specific tile profiles (flat, barrel, or S-tile), approved color palettes, and minimum material quality standards. Some HOAs require architectural committee approval before work begins. Your contractor should be familiar with your HOA's requirements and help coordinate the approval process.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl border border-amber-200">
+              <h3 className="font-bold text-white mb-2">HOA Requirements Are Common</h3>
+              <p className="text-zinc-300">Many Boca Raton communities have strict architectural guidelines. Common requirements include specific tile profiles (flat, barrel, or S-tile), approved color palettes, and minimum material quality standards. Some HOAs require architectural committee approval before work begins. Your contractor should be familiar with your HOA's requirements and help coordinate the approval process.</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
-              <h3 className="font-bold text-slate-900 mb-2">Coastal Properties Face Extra Challenges</h3>
-              <p className="text-slate-700">East Boca Raton properties near the coast experience accelerated material degradation from salt air and intense UV exposure. Material selection is critical: avoid galvanized steel fasteners (use stainless steel), consider impact-rated products, and ensure your underlayment provides a true secondary water barrier. Coastal roofs often need replacement sooner than inland properties.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl border border-amber-200">
+              <h3 className="font-bold text-white mb-2">Coastal Properties Face Extra Challenges</h3>
+              <p className="text-zinc-300">East Boca Raton properties near the coast experience accelerated material degradation from salt air and intense UV exposure. Material selection is critical: avoid galvanized steel fasteners (use stainless steel), consider impact-rated products, and ensure your underlayment provides a true secondary water barrier. Coastal roofs often need replacement sooner than inland properties.</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
-              <h3 className="font-bold text-slate-900 mb-2">Insurance Considerations</h3>
-              <p className="text-slate-700">Boca Raton homeowners face the same insurance pressures as the rest of South Florida. Many carriers are requiring roof replacement for policies with roofs over 15–20 years old. Storm damage claims are common after hurricane season. Having a contractor who understands the claims process and can document damage for maximum coverage is essential.</p>
+            <div className="bg-zinc-900 p-6 rounded-xl border border-amber-200">
+              <h3 className="font-bold text-white mb-2">Insurance Considerations</h3>
+              <p className="text-zinc-300">Boca Raton homeowners face the same insurance pressures as the rest of South Florida. Many carriers are requiring roof replacement for policies with roofs over 15–20 years old. Storm damage claims are common after hurricane season. Having a contractor who understands the claims process and can document damage for maximum coverage is essential.</p>
             </div>
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Why Boca Raton Homeowners Choose All Phase Construction USA</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Why Boca Raton Homeowners Choose All Phase Construction USA</h2>
           <div className="bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-2xl p-8">
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Dual Licensed</h3>
-                <p className="text-slate-700">We hold both a roofing contractor license (CCC1333509) and a general contractor license (CGC1535474). This means we can handle not just your roof but also structural repairs, soffit/fascia work, and interior water damage restoration without hiring outside subcontractors.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Dual Licensed</h3>
+                <p className="text-zinc-300">We hold both a roofing contractor license (CCC1333509) and a general contractor license (CGC1535474). This means we can handle not just your roof but also structural repairs, soffit/fascia work, and interior water damage restoration without hiring outside subcontractors.</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Insurance Claims Experts</h3>
-                <p className="text-slate-700">We provide full insurance claims assistance at no additional charge. From initial damage documentation to adjuster meetings and supplemental claims, we handle the process so you get the coverage you are entitled to.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Insurance Claims Experts</h3>
+                <p className="text-zinc-300">We provide full insurance claims assistance at no additional charge. From initial damage documentation to adjuster meetings and supplemental claims, we handle the process so you get the coverage you are entitled to.</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">2,500+ Roofs Completed</h3>
-                <p className="text-slate-700">With extensive experience across Boca Raton, we understand the specific requirements of local HOAs, the City of Boca Raton Building Division, and the HVHZ boundary that runs through the area.</p>
+                <h3 className="text-xl font-bold text-white mb-3">2,500+ Roofs Completed</h3>
+                <p className="text-zinc-300">With extensive experience across Boca Raton, we understand the specific requirements of local HOAs, the City of Boca Raton Building Division, and the HVHZ boundary that runs through the area.</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">In-House Crews</h3>
-                <p className="text-slate-700">We use our own trained crews rather than subcontractors. This ensures consistent quality, better communication during your project, and accountability for every aspect of the installation.</p>
+                <h3 className="text-xl font-bold text-white mb-3">In-House Crews</h3>
+                <p className="text-zinc-300">We use our own trained crews rather than subcontractors. This ensures consistent quality, better communication during your project, and accountability for every aspect of the installation.</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 transition-colors">
+              <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-zinc-9000 text-white font-semibold rounded-lg hover:bg-zinc-9000 transition-colors">
                 Get a Free Boca Raton Estimate
               </Link>
-              <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-sky-700 font-semibold rounded-lg hover:bg-sky-50 transition-colors">
+              <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
                 Call (754) 227-5605
               </a>
             </div>
@@ -203,11 +203,11 @@ export default function BocaRatonRoofReplacementGuidePage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Boca Raton Neighborhoods We Serve</h2>
-          <p className="text-lg text-slate-700 mb-6">We provide roofing services throughout all Boca Raton neighborhoods and communities, including:</p>
+          <h2 className="text-3xl font-bold text-white mb-6">Boca Raton Neighborhoods We Serve</h2>
+          <p className="text-lg text-zinc-300 mb-6">We provide roofing services throughout all Boca Raton neighborhoods and communities, including:</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
             {['Boca West', 'Woodfield Country Club', 'Boca Falls', 'Boca Bridges', 'The Oaks at Boca Raton', 'Mizner Park area', 'Royal Palm Yacht & Country Club', 'Boca Lago', 'Broken Sound', 'Town Center', 'Palmetto Park', 'Camino Gardens', 'University Park', 'Boca Del Mar', 'Mission Bay', 'Whisper Walk'].map((hood) => (
-              <div key={hood} className="bg-white px-4 py-3 rounded-lg shadow-sm border border-slate-100 text-slate-700 font-medium text-center">
+              <div key={hood} className="bg-zinc-900 px-4 py-3 rounded-lg shadow-sm border border-zinc-800 text-zinc-300 font-medium text-center">
                 {hood}
               </div>
             ))}
@@ -215,12 +215,12 @@ export default function BocaRatonRoofReplacementGuidePage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions About Boca Raton Roofing</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions About Boca Raton Roofing</h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
-                <p className="text-slate-700 leading-relaxed">{faq.a}</p>
+              <div key={index} className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+                <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
+                <p className="text-zinc-300 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -228,18 +228,18 @@ export default function BocaRatonRoofReplacementGuidePage() {
 
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 lg:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Replace Your Boca Raton Roof?</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
             Get a free, no-obligation roof inspection and estimate. We will assess your roof, explain your options, and provide a detailed quote with no hidden fees.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
-            <Link to="/roof-cost-calculator" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+            <Link to="/roof-cost-calculator" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
               Try Our Cost Calculator
             </Link>
           </div>
-          <p className="text-sm text-slate-400 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-400 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
       </div>
     </>
