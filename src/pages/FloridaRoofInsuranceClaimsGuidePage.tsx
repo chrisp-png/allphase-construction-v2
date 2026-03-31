@@ -76,7 +76,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />
 
-      <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
+      <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
             <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
