@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import SEO from '../components/SEO';
 import { Home, Building2, Wrench, Shield, ClipboardCheck, FileText, Calculator, DollarSign, CreditCard, CheckCircle2, Phone, AlertTriangle, Thermometer, Droplets } from 'lucide-react';
 
@@ -163,17 +162,7 @@ export default function RoofingServicesPage() {
         description="Complete roofing services for South Florida — tile, metal, shingle, flat, commercial, and residential. Dual-licensed contractor serving Broward and Palm Beach Counties. Free inspections."
         canonicalUrl="https://allphaseconstructionfl.com/roofing-services"
       />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": faqData.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-          }))
-        })}</script>
-      </Helmet>
+      {/* FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here */}
 
       <div className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950">
         {/* Hero Section */}
