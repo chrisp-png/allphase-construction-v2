@@ -9,11 +9,11 @@ export default function BocaRatonRoofReplacementGuidePage() {
     },
     {
       q: 'How much does a roof replacement cost in Boca Raton?',
-      a: 'A full roof replacement in Boca Raton typically costs $9,000â$16,000 for architectural shingles, $16,000â$30,000 for concrete tile, $22,000â$38,000 for clay tile, and $20,000â$38,000 for standing seam metal on a standard single-family home. Boca Raton falls partially within the HVHZ (High Velocity Hurricane Zone), which requires Miami-Dade NOA-approved materials and adds to the cost.'
+      a: 'A full roof replacement in Boca Raton typically costs $9,000Ã¢ÂÂ$16,000 for architectural shingles, $16,000Ã¢ÂÂ$30,000 for concrete tile, $22,000Ã¢ÂÂ$38,000 for clay tile, and $20,000Ã¢ÂÂ$38,000 for standing seam metal on a standard single-family home. Boca Raton falls partially within the HVHZ (High Velocity Hurricane Zone), which requires Miami-Dade NOA-approved materials and adds to the cost.'
     },
     {
       q: 'Is Boca Raton in the HVHZ (High Velocity Hurricane Zone)?',
-      a: 'Parts of Boca Raton fall within the HVHZ. The eastern portion of Boca Raton, roughly east of the Turnpike, is within the HVHZ boundary and requires Miami-Dade NOA-approved roofing products and stricter installation standards. The western portions follow standard Florida Building Code. Your contractor should verify your propertyâs HVHZ status before specifying materials.'
+      a: 'Parts of Boca Raton fall within the HVHZ. The eastern portion of Boca Raton, roughly east of the Turnpike, is within the HVHZ boundary and requires Miami-Dade NOA-approved roofing products and stricter installation standards. The western portions follow standard Florida Building Code. Your contractor should verify your propertyÃ¢ÂÂs HVHZ status before specifying materials.'
     },
     {
       q: 'What roofing materials are most popular in Boca Raton?',
@@ -29,11 +29,11 @@ export default function BocaRatonRoofReplacementGuidePage() {
     },
     {
       q: 'What is the best time of year to replace a roof in Boca Raton?',
-      a: 'The dry season (November through April) is ideal for roof replacement in Boca Raton, with lower humidity and minimal rain interruptions. However, roofing can be done year-round in South Florida. The summer months (JuneâSeptember) see more afternoon thunderstorms, which can cause brief delays but rarely extend the project timeline significantly. Scheduling is typically easiest in late fall and winter.'
+      a: 'The dry season (November through April) is ideal for roof replacement in Boca Raton, with lower humidity and minimal rain interruptions. However, roofing can be done year-round in South Florida. The summer months (JuneÃ¢ÂÂSeptember) see more afternoon thunderstorms, which can cause brief delays but rarely extend the project timeline significantly. Scheduling is typically easiest in late fall and winter.'
     },
     {
       q: 'Can my Boca Raton HOA require a specific roofing material?',
-      a: 'Yes. Many Boca Raton HOAs have architectural guidelines that specify approved roofing materials, colors, and styles. Tile roofing (concrete or clay) is the most commonly required material in Boca Raton communities. Before selecting your roofing material, check your HOAâs guidelines and submit for architectural approval if required. Your contractor can help navigate this process.'
+      a: 'Yes. Many Boca Raton HOAs have architectural guidelines that specify approved roofing materials, colors, and styles. Tile roofing (concrete or clay) is the most commonly required material in Boca Raton communities. Before selecting your roofing material, check your HOAÃ¢ÂÂs guidelines and submit for architectural approval if required. Your contractor can help navigate this process.'
     }
   ];
   return (
@@ -44,6 +44,8 @@ export default function BocaRatonRoofReplacementGuidePage() {
         <meta name="keywords" content="boca raton roof replacement, best roofer boca raton, roof replacement cost boca raton, boca raton roofing contractor, boca raton HVHZ, boca raton roofing permit, tile roof boca raton, roof repair boca raton, boca raton roofing company" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide" />
         <meta property="og:title" content="Boca Raton Roof Replacement Guide (2026) | Costs & Contractors" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide" />
         <meta property="og:description" content="Everything Boca Raton homeowners need to know about roof replacement. Pricing, HVHZ requirements, HOA rules, insurance claims, and top contractors." />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -65,6 +67,19 @@ export default function BocaRatonRoofReplacementGuidePage() {
               { "@type": "ListItem", "position": 2, "name": "Boca Raton", "item": "https://allphaseconstructionfl.com/locations/boca-raton" },
               { "@type": "ListItem", "position": 3, "name": "Roof Replacement Guide", "item": "https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide" }
             ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Boca Raton Roof Replacement Guide — 2026",
+            "description": "Complete guide to roof replacement in Boca Raton, FL.",
+            "author": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
+            "publisher": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
+            "datePublished": "2026-03-01",
+            "dateModified": "2026-03-31"
           })}
         </script>
       </Helmet>
@@ -158,7 +173,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
             </div>
             <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
               <h3 className="font-bold text-slate-900 mb-2">Insurance Considerations</h3>
-              <p className="text-slate-700">Boca Raton homeowners face the same insurance pressures as the rest of South Florida. Many carriers are requiring roof replacement for policies with roofs over 15â20 years old. Storm damage claims are common after hurricane season. Having a contractor who understands the claims process and can document damage for maximum coverage is essential.</p>
+              <p className="text-slate-700">Boca Raton homeowners face the same insurance pressures as the rest of South Florida. Many carriers are requiring roof replacement for policies with roofs over 15Ã¢ÂÂ20 years old. Storm damage claims are common after hurricane season. Having a contractor who understands the claims process and can document damage for maximum coverage is essential.</p>
             </div>
           </div>
         </section>
