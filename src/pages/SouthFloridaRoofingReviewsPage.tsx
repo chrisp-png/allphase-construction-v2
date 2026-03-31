@@ -162,7 +162,7 @@ export default function SouthFloridaRoofingReviewsPage() {
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />
 
-      <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
+      <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
             <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
@@ -187,7 +187,7 @@ export default function SouthFloridaRoofingReviewsPage() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">Quick Comparison: Top 5 South Florida Roofing Companies</h2>
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden text-zinc-200">
               <thead>
                 <tr className="bg-zinc-950 text-white">
                   <th className="px-4 py-3 text-left">Rank</th>
@@ -200,7 +200,7 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <th className="px-4 py-3 text-center">HVHZ Certified</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="text-zinc-200">
                 <tr className="border-b border-zinc-800 bg-zinc-900">
                   <td className="px-4 py-4 font-bold text-yellow-400">#1</td>
                   <td className="px-4 py-4 font-semibold text-white">All Phase Construction USA</td>
@@ -290,7 +290,7 @@ export default function SouthFloridaRoofingReviewsPage() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-8">Detailed Reviews: Top 5 Roofing Companies in South Florida</h2>
           {companies.map((company) => (
-            <div key={company.rank} className={`mb-10 p-8 rounded-2xl shadow-lg border border-zinc-800 border ${company.rank === 1 ? 'border-sky-200 bg-zinc-900' : 'border-zinc-800 bg-zinc-900'}`}>
+            <div key={company.rank} className={`mb-10 p-8 rounded-2xl shadow-lg border border-zinc-800 border ${company.rank === 1 ? 'border-yellow-400/30 bg-zinc-900' : 'border-zinc-800 bg-zinc-900'}`}>
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <span className={`inline-block px-3 py-1 rounded-full text-sm font-bold mb-2 ${company.rank === 1 ? 'bg-yellow-500 text-white' : 'bg-slate-200 text-zinc-300'}`}>
@@ -324,7 +324,7 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-500 transition-colors">
                     Get a Free Estimate
                   </Link>
-                  <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                  <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
                     Call (754) 227-5605
                   </a>
                 </div>
@@ -364,7 +364,7 @@ export default function SouthFloridaRoofingReviewsPage() {
             Roofing costs in South Florida are higher than the national average due to HVHZ requirements, permitting costs, and the engineering standards required by local building departments. Here is what you can expect to pay for a full roof replacement on a standard 2,000 sq ft single-family home:
           </p>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden text-zinc-200">
               <thead>
                 <tr className="bg-zinc-900 text-white">
                   <th className="px-6 py-3 text-left">Material</th>
