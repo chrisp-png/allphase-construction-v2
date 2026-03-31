@@ -173,27 +173,27 @@ export default function RoofReplacementCostFloridaPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-bold text-white mb-2">Roof Size & Complexity</h3>
-              <p className="text-zinc-400">Roofing is priced per square (100 sq ft). A simple gable roof costs less per square than a complex hip roof with multiple valleys, dormers, and penetrations. Multi-story homes also cost more due to safety equipment and access challenges.</p>
+              <p className="text-zinc-300">Roofing is priced per square (100 sq ft). A simple gable roof costs less per square than a complex hip roof with multiple valleys, dormers, and penetrations. Multi-story homes also cost more due to safety equipment and access challenges.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-bold text-white mb-2">Roof Pitch (Steepness)</h3>
-              <p className="text-zinc-400">Steeper roofs require additional safety equipment and take longer to install. A roof with a 7:12 pitch or higher typically costs 15–25% more in labor than a low-pitch roof. Most tile roofs in South Florida have moderate pitches.</p>
+              <p className="text-zinc-300">Steeper roofs require additional safety equipment and take longer to install. A roof with a 7:12 pitch or higher typically costs 15–25% more in labor than a low-pitch roof. Most tile roofs in South Florida have moderate pitches.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-bold text-white mb-2">Decking Condition</h3>
-              <p className="text-zinc-400">Damaged or rotted roof decking must be replaced before new roofing is installed. Plywood decking replacement runs $75–$150 per sheet (4x8), and a typical home may need 5–20 sheets replaced, adding $375–$3,000 to the project.</p>
+              <p className="text-zinc-300">Damaged or rotted roof decking must be replaced before new roofing is installed. Plywood decking replacement runs $75–$150 per sheet (4x8), and a typical home may need 5–20 sheets replaced, adding $375–$3,000 to the project.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-bold text-white mb-2">Building Code Zone</h3>
-              <p className="text-zinc-400">HVHZ areas (Broward, southern Palm Beach, Miami-Dade) have the strictest requirements. The rest of Florida follows the Florida Building Code, which is still more demanding than most states but does not require Miami-Dade NOA product approvals.</p>
+              <p className="text-zinc-300">HVHZ areas (Broward, southern Palm Beach, Miami-Dade) have the strictest requirements. The rest of Florida follows the Florida Building Code, which is still more demanding than most states but does not require Miami-Dade NOA product approvals.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-bold text-white mb-2">Permit & Inspection Fees</h3>
-              <p className="text-zinc-400">Permit costs vary by municipality, typically ranging from $250–$800 in most Florida cities. Broward County municipalities tend to be at the higher end. Engineering fees for tile and metal roofs in HVHZ areas add $500–$1,500.</p>
+              <p className="text-zinc-300">Permit costs vary by municipality, typically ranging from $250–$800 in most Florida cities. Broward County municipalities tend to be at the higher end. Engineering fees for tile and metal roofs in HVHZ areas add $500–$1,500.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-bold text-white mb-2">Tear-Off Layers</h3>
-              <p className="text-zinc-400">If you have multiple layers of existing roofing material (some older homes have 2-3 layers), the tear-off cost increases. Florida code limits the number of layers, and HVHZ areas generally require a complete tear-off to the deck for proper inspection.</p>
+              <p className="text-zinc-300">If you have multiple layers of existing roofing material (some older homes have 2-3 layers), the tear-off cost increases. Florida code limits the number of layers, and HVHZ areas generally require a complete tear-off to the deck for proper inspection.</p>
             </div>
           </div>
         </section>
@@ -231,7 +231,7 @@ export default function RoofReplacementCostFloridaPage() {
                   <td className="px-6 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-6 py-4 text-center">$14,000 - $26,000</td>
                   <td className="px-6 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-6 py-4 text-center text-zinc-500">No</td>
+                  <td className="px-6 py-4 text-center text-zinc-300">No</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-6 py-4 font-semibold">Miami-Dade County</td>
@@ -294,7 +294,7 @@ export default function RoofReplacementCostFloridaPage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
+          <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
         </section>
       </div>
     </>
