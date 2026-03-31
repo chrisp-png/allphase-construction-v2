@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 
 export default function FloridaRoofInsuranceClaimsGuidePage() {
@@ -9,15 +10,15 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
     },
     {
       q: 'What is a hurricane deductible in Florida?',
-      a: 'A hurricane deductible is a separate, higher deductible that applies only to hurricane-related claims. It is typically 2Ã¢ÂÂ5% of your homeÃ¢ÂÂs insured value. For a home insured at $400,000, a 2% hurricane deductible would be $8,000 that you pay out of pocket before insurance coverage begins. This is different from your standard deductible.'
+      a: 'A hurricane deductible is a separate, higher deductible that applies only to hurricane-related claims. It is typically 2ÃÂ¢ÃÂÃÂ5% of your homeÃÂ¢ÃÂÃÂs insured value. For a home insured at $400,000, a 2% hurricane deductible would be $8,000 that you pay out of pocket before insurance coverage begins. This is different from your standard deductible.'
     },
     {
       q: 'My insurance company sent a letter saying I need to replace my roof. What should I do?',
-      a: 'This is increasingly common in Florida. Insurance companies are conducting aerial inspections and requiring roof replacement for older roofs as a condition of policy renewal. First, get a professional roof inspection from a licensed contractor to assess your roofÃ¢ÂÂs actual condition. Then obtain quotes for replacement. If the roof has storm damage, you may be able to file a claim to cover part or all of the replacement cost.'
+      a: 'This is increasingly common in Florida. Insurance companies are conducting aerial inspections and requiring roof replacement for older roofs as a condition of policy renewal. First, get a professional roof inspection from a licensed contractor to assess your roofÃÂ¢ÃÂÃÂs actual condition. Then obtain quotes for replacement. If the roof has storm damage, you may be able to file a claim to cover part or all of the replacement cost.'
     },
     {
       q: 'How do I file a roof insurance claim in Florida?',
-      a: 'Step 1: Document the damage with photos and video. Step 2: Make temporary repairs to prevent further damage (save receipts). Step 3: Contact your insurance company to file the claim. Step 4: Schedule a professional roof inspection with a licensed contractor. Step 5: Be present (with your contractor) for the adjusterÃ¢ÂÂs inspection. Step 6: Review the estimate and file supplements if the scope is undervalued.'
+      a: 'Step 1: Document the damage with photos and video. Step 2: Make temporary repairs to prevent further damage (save receipts). Step 3: Contact your insurance company to file the claim. Step 4: Schedule a professional roof inspection with a licensed contractor. Step 5: Be present (with your contractor) for the adjusterÃÂ¢ÃÂÃÂs inspection. Step 6: Review the estimate and file supplements if the scope is undervalued.'
     },
     {
       q: 'What is a supplemental insurance claim for roofing?',
@@ -33,21 +34,18 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
     },
     {
       q: 'What if my insurance company denies my roof claim?',
-      a: 'First, request the denial in writing with the specific reason. Common denial reasons include: damage attributed to wear and tear, filing past the deadline, or the insurer claiming pre-existing damage. You can dispute a denial by providing additional documentation (a detailed contractor inspection report can be powerful), requesting re-inspection, or hiring a public adjuster. Florida law protects homeownersÃ¢ÂÂ right to dispute claim decisions.'
+      a: 'First, request the denial in writing with the specific reason. Common denial reasons include: damage attributed to wear and tear, filing past the deadline, or the insurer claiming pre-existing damage. You can dispute a denial by providing additional documentation (a detailed contractor inspection report can be powerful), requesting re-inspection, or hiring a public adjuster. Florida law protects homeownersÃÂ¢ÃÂÃÂ right to dispute claim decisions.'
     }
   ];
   return (
     <>
-      <Helmet>
-        <title>Florida Roof Insurance Claims Guide (2026) | How to File, Supplements, & Get Approved</title>
-        <meta name="description" content="Complete guide to filing roof insurance claims in Florida. Hurricane deductibles, the claims process, supplemental claims, insurance company letters, and how to maximize your payout." />
-        <meta name="keywords" content="florida roof insurance claim, roof insurance claim process, hurricane roof damage claim, insurance company roof replacement letter, supplemental roof claim, florida roof insurance denial, how to file roof claim florida, roof insurance broward county, roof insurance palm beach county" />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide" />
-        <meta property="og:title" content="Florida Roof Insurance Claims Guide (2026)" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide" />
-        <meta property="og:description" content="Step-by-step guide to filing and maximizing your Florida roof insurance claim. Covers hurricane deductibles, supplements, denials, and the 25% rule." />
-        <script type="application/ld+json">
+      <SEO
+            title="Florida Roof Insurance Claims Guide (2026) | How to File, Supplements, & Get Approved"
+            description="Complete guide to filing roof insurance claims in Florida. Hurricane deductibles, the claims process, supplemental claims, insurance company letters, and how to maximize your payout."
+            canonicalPath="/florida-roof-insurance-claims-guide"
+          />
+          <Helmet>
+            <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
@@ -58,7 +56,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             }))
           })}
         </script>
-        <script type="application/ld+json">
+            <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -68,12 +66,11 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             ]
           })}
         </script>
-
-        <script type="application/ld+json">
+            <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Florida Roof Insurance Claims Guide — 2026",
+            "headline": "Florida Roof Insurance Claims Guide â 2026",
             "description": "Complete guide to filing and maximizing roof insurance claims in Florida.",
             "author": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
             "publisher": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
@@ -81,7 +78,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             "dateModified": "2026-03-31"
           })}
         </script>
-      </Helmet>
+          </Helmet>
 
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -123,7 +120,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
               <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">3</div>
               <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">File Your Claim with Your Insurance Company</h3>
-                <p className="text-slate-700">Call your insurance company's claims number (found on your policy or declarations page). Provide basic information: date of loss, type of damage, and your policy number. The insurer will assign a claim number and schedule an adjuster visit. File promptly Ã¢ÂÂ delays can jeopardize your claim.</p>
+                <p className="text-slate-700">Call your insurance company's claims number (found on your policy or declarations page). Provide basic information: date of loss, type of damage, and your policy number. The insurer will assign a claim number and schedule an adjuster visit. File promptly ÃÂ¢ÃÂÃÂ delays can jeopardize your claim.</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -144,7 +141,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
               <div className="bg-sky-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4 mt-1 flex-shrink-0">6</div>
               <div className="bg-white p-5 rounded-xl shadow-md border border-slate-100 flex-1">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">File Supplemental Claims When Needed</h3>
-                <p className="text-slate-700">If the insurance estimate falls short, your contractor files a supplement with detailed documentation of the additional costs. This is standard practice and not adversarial Ã¢ÂÂ it simply provides the insurer with the information needed to properly fund the repair. Supplements can recover thousands of dollars that the initial estimate missed.</p>
+                <p className="text-slate-700">If the insurance estimate falls short, your contractor files a supplement with detailed documentation of the additional costs. This is standard practice and not adversarial ÃÂ¢ÃÂÃÂ it simply provides the insurer with the information needed to properly fund the repair. Supplements can recover thousands of dollars that the initial estimate missed.</p>
               </div>
             </div>
           </div>
@@ -159,7 +156,7 @@ export default function FloridaRoofInsuranceClaimsGuidePage() {
             <div className="space-y-4">
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-bold text-slate-900 mb-1">Do Not Panic</h4>
-                <p className="text-slate-600">You typically have 30Ã¢ÂÂ90 days to respond. Use this time to get a professional inspection and explore your options.</p>
+                <p className="text-slate-600">You typically have 30ÃÂ¢ÃÂÃÂ90 days to respond. Use this time to get a professional inspection and explore your options.</p>
               </div>
               <div className="bg-white p-4 rounded-lg">
                 <h4 className="font-bold text-slate-900 mb-1">Get a Professional Inspection</h4>
