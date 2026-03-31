@@ -136,6 +136,18 @@ export default function SitemapPage() {
         { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' },
         { to: '/locations/wellington/best-roofers-wellington', label: 'Best Roofers in Wellington' }
       ]
+    },
+    {
+      id: 'guides-resources',
+      title: 'Guides & Resources',
+      links: [
+        { to: '/south-florida-roofing-reviews', label: 'Best Roofing Companies in South Florida (2026)' },
+        { to: '/broward-county-roof-replacement-guide', label: 'Broward County Roof Replacement Guide' },
+        { to: '/roof-replacement-cost-florida', label: 'Roof Replacement Cost in Florida' },
+        { to: '/florida-roof-insurance-claims-guide', label: 'Florida Roof Insurance Claims Guide' },
+        { to: '/boca-raton-roof-replacement-guide', label: 'Boca Raton Roof Replacement Guide' },
+        { to: '/palm-beach-county-roof-replacement-guide', label: 'Palm Beach County Roof Replacement Guide' }
+      ]
     }
   ];
 
