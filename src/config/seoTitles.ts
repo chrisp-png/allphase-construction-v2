@@ -177,12 +177,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/west-palm-beach/best-roofers-west-palm-beach': {
     title: 'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
-    description: 'Looking for the best roofers in West Palm Beach? Top 5 HVHZ-compliant roofing contractors in Palm Beach County reviewed. See who made the list.',
+    description: 'Looking for the best roofers in West Palm Beach? Top 5 licensed roofing contractors in Palm Beach County reviewed. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach'
   },
   '/locations/boca-raton/best-roofers-boca-raton': {
     title: 'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
-    description: 'Looking for the best roofers in Boca Raton? Top 5 HVHZ-compliant roofing contractors in Palm Beach County reviewed. See who made the list.',
+    description: 'Looking for the best roofers in Boca Raton? Top 5 licensed roofing contractors in Palm Beach County reviewed. See who made the list.',
     canonical: 'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton'
   },
   '/locations/coral-springs/best-roofers-coral-springs': {
@@ -204,7 +204,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/west-palm-beach': {
     title: 'West Palm Beach Roofing Contractor | All Phase USA',
-    description: 'Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605',
+    description: 'Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). Florida wind-code compliant. Historic district expertise. 20+ years. (754) 227-5605',
     canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach'
   },
   '/locations/pompano-beach': {
@@ -219,7 +219,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/gulf-stream': {
     title: 'Gulf Stream Roofing Contractor | All Phase Construction USA',
-    description: 'HVHZ-certified roofing in Gulf Stream, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
+    description: 'Licensed roofing in Gulf Stream, FL. Tile, metal & shingle. Florida wind-code compliant Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/gulf-stream',
   },
   '/locations/jupiter': {
@@ -229,12 +229,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/lake-worth-beach': {
     title: 'Lake Worth Beach Roofing Contractor | All Phase Construction USA',
-    description: 'HVHZ-certified roofing in Lake Worth Beach, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
+    description: 'Licensed roofing in Lake Worth Beach, FL. Tile, metal & shingle. Florida wind-code compliant Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach',
   },
   '/locations/loxahatchee-groves': {
     title: 'Loxahatchee Groves Roofing Contractor | All Phase Construction USA',
-    description: 'HVHZ-certified roofing in Loxahatchee Groves, FL. Tile, metal & shingle. Licensed Palm Beach County contractor. Free inspection. (754) 227-5605.',
+    description: 'Licensed roofing in Loxahatchee Groves, FL. Tile, metal & shingle. Florida wind-code compliant Palm Beach County contractor. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves',
   },
   '/locations/pembroke-park': {
@@ -259,12 +259,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-repair/west-palm-beach': {
     title: 'West Palm Beach Roof Repair | Fast Response | All Phase USA',
-    description: 'Expert roof repair in West Palm Beach, FL. Tile, shingle, metal & flat repairs. Storm damage specialists. HVHZ-certified, free inspection. (754) 227-5605.',
+    description: 'Expert roof repair in West Palm Beach, FL. Tile, shingle, metal & flat repairs. Storm damage specialists. Licensed & insured, free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/west-palm-beach'
   },
   '/roof-repair/boca-raton': {
     title: 'Boca Raton Roof Repair | Licensed Contractor | All Phase USA',
-    description: 'Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. HVHZ-certified. Free inspection. (754) 227-5605.',
+    description: 'Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. Licensed & insured. Free inspection. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/boca-raton'
   },
   '/roof-repair/coral-springs': {

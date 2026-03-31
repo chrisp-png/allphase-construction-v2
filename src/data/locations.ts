@@ -50,7 +50,7 @@ export const locations: Location[] = [
     city: "Boynton Beach",
     state: "FL",
     titleOverride: "Roof Replacement Boynton Beach | All Phase",
-    descriptionOverride: "Need a new roof in Boynton Beach? Dual-licensed contractor serving Aberdeen, Leisureville & all PBC communities. HVHZ-certified. Free estimate. (754) 227-5605."
+    descriptionOverride: "Need a new roof in Boynton Beach? Dual-licensed contractor serving Aberdeen, Leisureville & all PBC communities. Florida wind-code compliant. Free estimate. (754) 227-5605."
   },
   { slug: "coconut-creek", city: "Coconut Creek", state: "FL" },
   { slug: "cooper-city", city: "Cooper City", state: "FL" },
@@ -189,7 +189,7 @@ export const locations: Location[] = [
     city: "Wellington",
     state: "FL",
     titleOverride: "Roof Replacement Wellington | All Phase USA",
-    descriptionOverride: "Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. HVHZ-certified, dual-licensed. Free estimate. (754) 227-5605."
+    descriptionOverride: "Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. Florida wind-code compliant, dual-licensed. Free estimate. (754) 227-5605."
   },
   {
     slug: "west-palm-beach",
