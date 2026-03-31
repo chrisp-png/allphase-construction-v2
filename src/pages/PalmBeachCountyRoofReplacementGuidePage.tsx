@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 
 export default function PalmBeachCountyRoofReplacementGuidePage() {
@@ -9,7 +10,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How much does a roof replacement cost in Palm Beach County?',
-      a: 'Costs vary based on location within the county. Southern Palm Beach County (Boca Raton, Delray Beach, Boynton Beach) partially falls within the HVHZ, increasing costs. Average ranges: asphalt shingles $8,500Ã¢ÂÂ$16,000, concrete tile $15,000Ã¢ÂÂ$30,000, clay tile $20,000Ã¢ÂÂ$38,000, and standing seam metal $18,000Ã¢ÂÂ$36,000 for a standard 2,000 sq ft home.'
+      a: 'Costs vary based on location within the county. Southern Palm Beach County (Boca Raton, Delray Beach, Boynton Beach) partially falls within the HVHZ, increasing costs. Average ranges: asphalt shingles $8,500ÃÂ¢ÃÂÃÂ$16,000, concrete tile $15,000ÃÂ¢ÃÂÃÂ$30,000, clay tile $20,000ÃÂ¢ÃÂÃÂ$38,000, and standing seam metal $18,000ÃÂ¢ÃÂÃÂ$36,000 for a standard 2,000 sq ft home.'
     },
     {
       q: 'Is Palm Beach County in the HVHZ?',
@@ -21,7 +22,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How do I find a licensed roofer in Palm Beach County?',
-      a: 'Verify licenses at myfloridalicense.com (look for CCC or CGC designations). Check the contractorÃ¢ÂÂs permit history through the Palm Beach County Building Division. Read Google reviews. Confirm they carry workers compensation and liability insurance. Ask for local references. For HVHZ areas, ensure they have experience with Miami-Dade NOA product installations.'
+      a: 'Verify licenses at myfloridalicense.com (look for CCC or CGC designations). Check the contractorÃÂ¢ÃÂÃÂs permit history through the Palm Beach County Building Division. Read Google reviews. Confirm they carry workers compensation and liability insurance. Ask for local references. For HVHZ areas, ensure they have experience with Miami-Dade NOA product installations.'
     },
     {
       q: 'Does Palm Beach County require permits for roof replacement?',
@@ -29,7 +30,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
     },
     {
       q: 'How long does roof replacement take in Palm Beach County?',
-      a: 'Physical installation takes 2Ã¢ÂÂ5 days for shingles and 5Ã¢ÂÂ10 days for tile or metal. The full timeline including permitting runs 3Ã¢ÂÂ6 weeks. Permit processing varies by municipality Ã¢ÂÂ Boca Raton, West Palm Beach, Delray Beach, and Boynton Beach each have their own building departments with different turnaround times. Your contractor manages the entire permit process.'
+      a: 'Physical installation takes 2ÃÂ¢ÃÂÃÂ5 days for shingles and 5ÃÂ¢ÃÂÃÂ10 days for tile or metal. The full timeline including permitting runs 3ÃÂ¢ÃÂÃÂ6 weeks. Permit processing varies by municipality ÃÂ¢ÃÂÃÂ Boca Raton, West Palm Beach, Delray Beach, and Boynton Beach each have their own building departments with different turnaround times. Your contractor manages the entire permit process.'
     },
     {
       q: 'Can I get help with my roof insurance claim in Palm Beach County?',
@@ -38,16 +39,13 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
   ];
   return (
     <>
-      <Helmet>
-        <title>Palm Beach County Roof Replacement Guide (2026) | Costs, Contractors & HVHZ Info</title>
-        <meta name="description" content="Complete guide to roof replacement in Palm Beach County. Costs by city, HVHZ vs non-HVHZ pricing, top contractors, insurance claims help, permits, and material comparison for Boca Raton to Jupiter." />
-        <meta name="keywords" content="palm beach county roof replacement, best roofer palm beach county, roof replacement cost palm beach county, roofing contractor palm beach county, boca raton roofer, west palm beach roofer, delray beach roofing, boynton beach roof replacement" />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/palm-beach-county-roof-replacement-guide" />
-        <meta property="og:title" content="Palm Beach County Roof Replacement Guide (2026)" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://allphaseconstructionfl.com/palm-beach-county-roof-replacement-guide" />
-        <meta property="og:description" content="Everything Palm Beach County homeowners need to know about roof replacement. Pricing by city, HVHZ requirements, insurance claims, and top contractors." />
-        <script type="application/ld+json">
+      <SEO
+            title="Palm Beach County Roof Replacement Guide (2026) | Costs, Contractors & HVHZ Info"
+            description="Complete guide to roof replacement in Palm Beach County. Costs by city, HVHZ vs non-HVHZ pricing, top contractors, insurance claims help, permits, and material comparison for Boca Raton to Jupiter."
+            canonicalPath="/palm-beach-county-roof-replacement-guide"
+          />
+          <Helmet>
+            <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
@@ -58,7 +56,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
             }))
           })}
         </script>
-        <script type="application/ld+json">
+            <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -68,12 +66,11 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
             ]
           })}
         </script>
-
-        <script type="application/ld+json">
+            <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Palm Beach County Roof Replacement Guide — 2026",
+            "headline": "Palm Beach County Roof Replacement Guide â 2026",
             "description": "Complete guide to roof replacement in Palm Beach County, FL.",
             "author": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
             "publisher": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
@@ -81,7 +78,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
             "dateModified": "2026-03-31"
           })}
         </script>
-      </Helmet>
+          </Helmet>
 
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -164,7 +161,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-slate-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000Ã¢ÂÂ$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
+          <p className="text-sm text-slate-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000ÃÂ¢ÃÂÃÂ$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
         </section>
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Palm Beach County Cities We Serve</h2>
