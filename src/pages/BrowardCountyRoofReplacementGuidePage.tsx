@@ -105,19 +105,19 @@ export default function BrowardCountyRoofReplacementGuidePage() {
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Product Approvals Required</h4>
-                <p className="text-zinc-400">Every roofing product must carry a Miami-Dade NOA (Notice of Acceptance). Standard Florida-approved products are not sufficient in the HVHZ.</p>
+                <p className="text-zinc-300">Every roofing product must carry a Miami-Dade NOA (Notice of Acceptance). Standard Florida-approved products are not sufficient in the HVHZ.</p>
               </div>
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Engineered Installations</h4>
-                <p className="text-zinc-400">Tile and metal roofing installations require engineering calculations specifying attachment methods, fastener patterns, and wind load resistance for your specific roof geometry.</p>
+                <p className="text-zinc-300">Tile and metal roofing installations require engineering calculations specifying attachment methods, fastener patterns, and wind load resistance for your specific roof geometry.</p>
               </div>
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Enhanced Underlayment</h4>
-                <p className="text-zinc-400">HVHZ requires self-adhering modified bitumen underlayment or equivalent secondary water barrier, which provides protection even if the primary roofing material is displaced during a hurricane.</p>
+                <p className="text-zinc-300">HVHZ requires self-adhering modified bitumen underlayment or equivalent secondary water barrier, which provides protection even if the primary roofing material is displaced during a hurricane.</p>
               </div>
               <div className="bg-zinc-900 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-1">Rigorous Inspections</h4>
-                <p className="text-zinc-400">Multiple mandatory inspections during installation ensure every layer meets code. Inspectors verify product NOA compliance, attachment methods, and proper installation technique.</p>
+                <p className="text-zinc-300">Multiple mandatory inspections during installation ensure every layer meets code. Inspectors verify product NOA compliance, attachment methods, and proper installation technique.</p>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
                 <p className="text-zinc-300">A knowledgeable contractor can document the full extent of damage to ensure your insurance claim accounts for the 25% rule.</p>
               </div>
             </div>
-            <p className="text-sm text-zinc-400 italic">This is one of the most important concepts for Broward County homeowners to understand. Many are surprised when a seemingly minor repair triggers a full roof replacement requirement.</p>
+            <p className="text-sm text-zinc-300 italic">This is one of the most important concepts for Broward County homeowners to understand. Many are surprised when a seemingly minor repair triggers a full roof replacement requirement.</p>
           </div>
         </section>
         <section className="mb-16">
@@ -200,7 +200,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-zinc-500">* All prices are for fully permitted, HVHZ-compliant installations in Broward County as of 2026. Actual cost depends on roof size, pitch, complexity, access, and municipality. <Link to="/roof-cost-calculator" className="text-yellow-400 hover:underline">Use our free roof cost calculator</Link> for a personalized estimate.</p>
+          <p className="text-sm text-zinc-300">* All prices are for fully permitted, HVHZ-compliant installations in Broward County as of 2026. Actual cost depends on roof size, pitch, complexity, access, and municipality. <Link to="/roof-cost-calculator" className="text-yellow-400 hover:underline">Use our free roof cost calculator</Link> for a personalized estimate.</p>
         </section>
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">The Broward County Roof Replacement Process</h2>
@@ -258,23 +258,23 @@ export default function BrowardCountyRoofReplacementGuidePage() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-zinc-900 p-5 rounded-xl shadow-sm">
                 <h3 className="font-bold text-white mb-2">Document Everything</h3>
-                <p className="text-zinc-400">Before making temporary repairs, photograph all damage from multiple angles. A professional roof inspection report with photos strengthens your claim significantly.</p>
+                <p className="text-zinc-300">Before making temporary repairs, photograph all damage from multiple angles. A professional roof inspection report with photos strengthens your claim significantly.</p>
               </div>
               <div className="bg-zinc-900 p-5 rounded-xl shadow-sm">
                 <h3 className="font-bold text-white mb-2">File Promptly</h3>
-                <p className="text-zinc-400">Florida law requires timely notice to your insurer. File your claim as soon as damage is discovered. Delays can result in claim denial.</p>
+                <p className="text-zinc-300">Florida law requires timely notice to your insurer. File your claim as soon as damage is discovered. Delays can result in claim denial.</p>
               </div>
               <div className="bg-zinc-900 p-5 rounded-xl shadow-sm">
                 <h3 className="font-bold text-white mb-2">Attend the Adjuster Meeting</h3>
-                <p className="text-zinc-400">Have your roofing contractor present during the adjuster's inspection. An experienced contractor can identify damage the adjuster may miss and ensure the 25% rule is properly applied.</p>
+                <p className="text-zinc-300">Have your roofing contractor present during the adjuster's inspection. An experienced contractor can identify damage the adjuster may miss and ensure the 25% rule is properly applied.</p>
               </div>
               <div className="bg-zinc-900 p-5 rounded-xl shadow-sm">
                 <h3 className="font-bold text-white mb-2">File Supplements When Needed</h3>
-                <p className="text-zinc-400">Initial insurance estimates often undervalue the work required for HVHZ compliance. Supplemental claims document additional costs for proper underlayment, engineering, NOA-approved products, and code-required upgrades.</p>
+                <p className="text-zinc-300">Initial insurance estimates often undervalue the work required for HVHZ compliance. Supplemental claims document additional costs for proper underlayment, engineering, NOA-approved products, and code-required upgrades.</p>
               </div>
             </div>
             <div className="mt-6 p-4 bg-sky-100 rounded-lg">
-              <p className="text-zinc-100 font-medium">All Phase Construction USA provides full insurance claims assistance — from initial documentation and damage assessment through adjuster meetings and supplemental claims filing. <Link to="/contact" className="text-yellow-400 underline font-bold">Contact us for a free insurance claim consultation</Link>.</p>
+              <p className="text-white font-medium">All Phase Construction USA provides full insurance claims assistance — from initial documentation and damage assessment through adjuster meetings and supplemental claims filing. <Link to="/contact" className="text-yellow-400 underline font-bold">Contact us for a free insurance claim consultation</Link>.</p>
             </div>
           </div>
         </section>
@@ -329,7 +329,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
       </div>
     </>
