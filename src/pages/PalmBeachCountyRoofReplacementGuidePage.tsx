@@ -87,7 +87,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Palm Beach County Roof Replacement Guide <span className="text-sky-400">(2026)</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-4 leading-relaxed">
+            <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Everything Palm Beach County homeowners need to know about replacing their roof. From Boca Raton to Jupiter, we cover costs, material options, HVHZ requirements, insurance claims, and how to choose the right contractor for your area.
             </p>
           </div>
@@ -96,14 +96,14 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Roof Replacement Costs by City in Palm Beach County</h2>
-          <p className="text-lg text-slate-700 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-6">Roof Replacement Costs by City in Palm Beach County</h2>
+          <p className="text-lg text-zinc-300 mb-6">
             Costs vary across Palm Beach County based on HVHZ status, municipal permit fees, and local market conditions. Here is a breakdown for a standard 2,000 sq ft home:
           </p>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-white rounded-xl shadow-lg overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
               <thead>
-                <tr className="bg-slate-800 text-white">
+                <tr className="bg-zinc-900 text-white">
                   <th className="px-5 py-3 text-left">City</th>
                   <th className="px-5 py-3 text-center">Shingles</th>
                   <th className="px-5 py-3 text-center">Tile</th>
@@ -112,55 +112,55 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-slate-100 bg-sky-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900">
                   <td className="px-5 py-4 font-semibold">Boca Raton</td>
                   <td className="px-5 py-4 text-center">$9,000 - $16,000</td>
                   <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
                   <td className="px-5 py-4 text-center">$20,000 - $38,000</td>
                   <td className="px-5 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-5 py-4 font-semibold">Delray Beach</td>
                   <td className="px-5 py-4 text-center">$8,500 - $15,000</td>
                   <td className="px-5 py-4 text-center">$15,000 - $28,000</td>
                   <td className="px-5 py-4 text-center">$18,000 - $35,000</td>
                   <td className="px-5 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-5 py-4 font-semibold">Boynton Beach</td>
                   <td className="px-5 py-4 text-center">$8,500 - $15,000</td>
                   <td className="px-5 py-4 text-center">$15,000 - $28,000</td>
                   <td className="px-5 py-4 text-center">$18,000 - $35,000</td>
                   <td className="px-5 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
-                <tr className="border-b border-slate-100">
+                <tr className="border-b border-zinc-800">
                   <td className="px-5 py-4 font-semibold">West Palm Beach</td>
                   <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-5 py-4 text-center">$14,000 - $26,000</td>
                   <td className="px-5 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-5 py-4 text-center text-slate-500">No</td>
+                  <td className="px-5 py-4 text-center text-zinc-500">No</td>
                 </tr>
-                <tr className="border-b border-slate-100 bg-slate-50">
+                <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-5 py-4 font-semibold">Wellington</td>
                   <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-5 py-4 text-center">$14,000 - $26,000</td>
                   <td className="px-5 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-5 py-4 text-center text-slate-500">No</td>
+                  <td className="px-5 py-4 text-center text-zinc-500">No</td>
                 </tr>
                 <tr>
                   <td className="px-5 py-4 font-semibold">Jupiter / Palm Beach Gardens</td>
                   <td className="px-5 py-4 text-center">$8,000 - $13,500</td>
                   <td className="px-5 py-4 text-center">$13,500 - $25,000</td>
                   <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-5 py-4 text-center text-slate-500">No</td>
+                  <td className="px-5 py-4 text-center text-zinc-500">No</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-slate-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000–$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-sky-600 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
+          <p className="text-sm text-zinc-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000–$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-yellow-400 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
         </section>
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Palm Beach County Cities We Serve</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Palm Beach County Cities We Serve</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
               { name: 'Boca Raton', link: '/locations/boca-raton' },
@@ -176,7 +176,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
               { name: 'Lantana', link: '/locations/lantana' },
               { name: 'Highland Beach', link: '/locations/highland-beach' }
             ].map((city) => (
-              <Link key={city.name} to={city.link} className="bg-white px-4 py-3 rounded-lg shadow-sm border border-slate-100 hover:border-sky-300 hover:shadow-md transition-all text-slate-700 hover:text-sky-700 font-medium text-center">
+              <Link key={city.name} to={city.link} className="bg-zinc-900 px-4 py-3 rounded-lg shadow-sm border border-zinc-800 hover:border-sky-300 hover:shadow-md border border-zinc-800 transition-all text-zinc-300 hover:text-yellow-400 font-medium text-center">
                 {city.name}
               </Link>
             ))}
@@ -184,12 +184,12 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
-                <p className="text-slate-700 leading-relaxed">{faq.a}</p>
+              <div key={index} className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
+                <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
+                <p className="text-zinc-300 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -197,18 +197,18 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
 
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 lg:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Get a Free Palm Beach County Roof Estimate</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
             All Phase Construction USA provides free roof inspections and detailed estimates throughout Palm Beach County. From Boca Raton to Jupiter, we have you covered.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
-            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-slate-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
+          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
         </section>
       </div>
     </>
