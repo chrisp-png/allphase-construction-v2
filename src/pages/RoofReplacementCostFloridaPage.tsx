@@ -114,53 +114,53 @@ export default function RoofReplacementCostFloridaPage() {
               </thead>
               <tbody className="text-zinc-200">
                 <tr className="border-b border-zinc-800">
-                  <td className="px-5 py-4 font-semibold">3-Tab Shingles</td>
-                  <td className="px-5 py-4 text-center">$6,500 - $10,000</td>
-                  <td className="px-5 py-4 text-center">$8,000 - $12,000</td>
-                  <td className="px-5 py-4 text-center">10-18 years</td>
-                  <td className="px-5 py-4 text-center">Up to 60 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">3-Tab Shingles</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$6,500 - $10,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,000 - $12,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">10-18 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 60 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-5 py-4 font-semibold">Architectural Shingles</td>
-                  <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
-                  <td className="px-5 py-4 text-center">$9,500 - $16,000</td>
-                  <td className="px-5 py-4 text-center">20-30 years</td>
-                  <td className="px-5 py-4 text-center">Up to 130 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Architectural Shingles</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,000 - $14,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$9,500 - $16,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">20-30 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 130 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-5 py-4 font-semibold">Concrete Tile</td>
-                  <td className="px-5 py-4 text-center">$12,000 - $24,000</td>
-                  <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-5 py-4 text-center">30-50 years</td>
-                  <td className="px-5 py-4 text-center">Up to 150 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Concrete Tile</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$12,000 - $24,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$16,000 - $30,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">30-50 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 150 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-5 py-4 font-semibold">Clay Tile</td>
-                  <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-5 py-4 text-center">$22,000 - $38,000</td>
-                  <td className="px-5 py-4 text-center">50-75 years</td>
-                  <td className="px-5 py-4 text-center">Up to 150 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Clay Tile</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$16,000 - $30,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$22,000 - $38,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">50-75 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 150 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-5 py-4 font-semibold">Standing Seam Metal</td>
-                  <td className="px-5 py-4 text-center">$15,000 - $30,000</td>
-                  <td className="px-5 py-4 text-center">$20,000 - $38,000</td>
-                  <td className="px-5 py-4 text-center">40-70 years</td>
-                  <td className="px-5 py-4 text-center">Up to 180 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">Standing Seam Metal</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$15,000 - $30,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$20,000 - $38,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">40-70 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 180 mph</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-5 py-4 font-semibold">5V-Crimp Metal</td>
-                  <td className="px-5 py-4 text-center">$10,000 - $20,000</td>
-                  <td className="px-5 py-4 text-center">$13,000 - $25,000</td>
-                  <td className="px-5 py-4 text-center">25-40 years</td>
-                  <td className="px-5 py-4 text-center">Up to 140 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">5V-Crimp Metal</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$10,000 - $20,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$13,000 - $25,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">25-40 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 140 mph</td>
                 </tr>
                 <tr>
-                  <td className="px-5 py-4 font-semibold">TPO / Flat Roof Membrane</td>
-                  <td className="px-5 py-4 text-center">$8,000 - $18,000</td>
-                  <td className="px-5 py-4 text-center">$10,000 - $24,000</td>
-                  <td className="px-5 py-4 text-center">15-25 years</td>
-                  <td className="px-5 py-4 text-center">Up to 120 mph</td>
+                  <td className="px-5 py-4 font-semibold text-zinc-200">TPO / Flat Roof Membrane</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$8,000 - $18,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">$10,000 - $24,000</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">15-25 years</td>
+                  <td className="px-5 py-4 text-center text-zinc-200">Up to 120 mph</td>
                 </tr>
               </tbody>
             </table>
@@ -214,31 +214,31 @@ export default function RoofReplacementCostFloridaPage() {
               </thead>
               <tbody>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-6 py-4 font-semibold">Broward County</td>
-                  <td className="px-6 py-4 text-center">$9,000 - $16,000</td>
-                  <td className="px-6 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-6 py-4 text-center">$20,000 - $38,000</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Broward County</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$9,000 - $16,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$16,000 - $30,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$20,000 - $38,000</td>
                   <td className="px-6 py-4 text-center font-bold text-amber-600">Yes (All)</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-6 py-4 font-semibold">Palm Beach County (South)</td>
-                  <td className="px-6 py-4 text-center">$9,000 - $15,000</td>
-                  <td className="px-6 py-4 text-center">$15,000 - $28,000</td>
-                  <td className="px-6 py-4 text-center">$18,000 - $35,000</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Palm Beach County (South)</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$9,000 - $15,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$15,000 - $28,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$18,000 - $35,000</td>
                   <td className="px-6 py-4 text-center font-bold text-amber-600">Partial</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-6 py-4 font-semibold">Palm Beach County (North)</td>
-                  <td className="px-6 py-4 text-center">$8,000 - $14,000</td>
-                  <td className="px-6 py-4 text-center">$14,000 - $26,000</td>
-                  <td className="px-6 py-4 text-center">$17,000 - $32,000</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Palm Beach County (North)</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$8,000 - $14,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$14,000 - $26,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$17,000 - $32,000</td>
                   <td className="px-6 py-4 text-center text-zinc-300">No</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
-                  <td className="px-6 py-4 font-semibold">Miami-Dade County</td>
-                  <td className="px-6 py-4 text-center">$9,500 - $17,000</td>
-                  <td className="px-6 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-6 py-4 text-center">$22,000 - $40,000</td>
+                  <td className="px-6 py-4 font-semibold text-zinc-200">Miami-Dade County</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$9,500 - $17,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$17,000 - $32,000</td>
+                  <td className="px-6 py-4 text-center text-zinc-200">$22,000 - $40,000</td>
                   <td className="px-6 py-4 text-center font-bold text-amber-600">Yes (All)</td>
                 </tr>
               </tbody>
