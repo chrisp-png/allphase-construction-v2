@@ -7,7 +7,7 @@ http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 30
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
 
 
-# Sitemap consolidation ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ redirect legacy sitemap_index.xml to sitemap.xml
+# Sitemap consolidation - redirect legacy sitemap_index.xml to sitemap.xml
 /sitemap_index.xml    /sitemap.xml    301!
 # ======================================================================
 # SUBDOMAIN REDIRECTS
@@ -78,7 +78,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /insurance-roof-inspection /roof-inspection 301!
 
 
-# Broken /roof-replacement/[city] URLs ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ these pages do not exist
+# Broken /roof-replacement/[city] URLs - these pages do not exist
 /roof-replacement/pompano-beach /roof-replacement 301!
 /roof-replacement/delray-beach /roof-replacement 301!
 /roof-replacement/fort-lauderdale /roof-replacement 301!
@@ -86,7 +86,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /roof-replacement/coral-springs /roof-replacement 301!
 /roof-replacement/coconut-creek /roof-replacement 301!
 
-# Removed cities from cities.json ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ redirect to service hub
+# Removed cities from cities.json - redirect to service hub
 /roof-repair/lazy-lake /roof-repair 301!
 /roof-repair/manalapan /roof-repair 301!
 /roof-repair/south-palm-beach /roof-repair 301!
@@ -110,7 +110,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 # Do NOT duplicate /* /index.html 200 here.
 # ======================================================================
 
-# Legacy blog redirects ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ WordPress URLs causing 5xx errors
+# Legacy blog redirects - WordPress URLs causing 5xx errors
 /blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home /blog/wind-mitigation-roof-south-florida 301
 /blog/stone-coated-steel-roofs-benefits-and-pitfalls/ /blog/metal-roof-vs-shingles-florida-2026 301
 /blog/whats-the-best-roof-for-your-south-florida-home-in-2025/ /blog/roof-replacement-cost-broward-county-2026 301
@@ -148,9 +148,8 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /blog/ /blog 301
 /commercial-roofing/ /commercial-roofing 301
 /financing/ /financing 301
-/accessibility / 301
 
-# Legacy HTTP and www ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ force HTTPS
+# Legacy HTTP and www - force HTTPS
 http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301
 http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301
 
@@ -160,7 +159,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-contractor-lantana-fl /locations/lantana 301!
 /roofing-contractor-coconut-creek-fl /locations/coconut-creek 301!
 /margate /locations/margate 301!
-/flat-roof-inspection-broward-county /roof-inspection 301!
 /locations/deerfield-beach/service-area/pembroke-park /locations/pembroke-park 301!
 /roofing-contractor-pompano-beach-fl /locations/pompano-beach 301
 /roofing-contractor-coral-springs-fl /locations/coral-springs 301!
@@ -190,7 +188,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services /roof-repair 301!
 /roofing-services/ /roof-repair 301!
 
-# Missing legacy redirects ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ added 2026-02-27
+# Missing legacy redirects - added 2026-02-27
 /Blog /blog 301!
 /Blog/ /blog 301!
 /roofing-services/roof-inspection /roof-inspection 301!
@@ -227,7 +225,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /locations/light-house-point /locations/lighthouse-point 301!
 
 
-# Legacy WordPress blog redirects ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ added 2026-02-27
+# Legacy WordPress blog redirects - added 2026-02-27
 /blog/stone-coated-steel-roofs-benefits-and-pitfalls/ /blog/metal-roof-vs-shingles-florida-2026 301!
 /blog/whats-the-best-roof-for-your-south-florida-home-in-2025/ /blog/roof-replacement-cost-broward-county-2026 301!
 /blog/the-ultimate-guide-to-hurricane-proofing-your-roof-in-south-florida-expert-tips-from-all-phase-construction-usa /blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive 301!
@@ -266,7 +264,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services/roof-repair  /roof-repair  301!
 
 # Trailing slash removal - catch-all wildcard
-# trailing slash catch-all removed â was causing root redirect loop
+# trailing slash catch-all removed - was causing root redirect loop
 
 # Sitemap canonicalization
 /sitemap/  /sitemap.xml  301!
@@ -284,12 +282,64 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 /blog/*/ /blog/:splat 301!
 
-# Blog posts that were never created in Supabase — redirect to related content
+# Blog posts that were never created in Supabase - redirect to related content
 /blog/what-makes-a-roof-hurricane-resistant /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
 /blog/top-roofers-in-broward-and-palm-beach-counties /blog 301!
 
 # ======================================================================
-# OLD WORDPRESS ARTIFACTS — 410 Gone
+# GSC COMPLIANCE FIXES - 2026-03-31
+# Comprehensive fixes for all reported indexing issues
+# ======================================================================
+
+# Blog posts that returned 404 (GSC NOT FOUND category) - redirect to /blog
+/blog/how-roof-color-affects-energy-efficiency-in-hot-climates /blog 301!
+/blog/why-homeowners-are-choosing-metal-roofs-in-2025-see-the-all-phase-difference /blog 301!
+/blog/how-long-will-my-new-roof-last-a-breakdown-by-material /blog 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-2 /blog 301!
+/blog/how-to-choose-the-best-roofing-contractor-for-your-next-building-project /blog 301!
+/blog/what-is-spline /blog 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-5 /blog 301!
+/blog/exposed-ceilings-can-have-challenges-when-getting-a-new-roof /blog 301!
+/blog/our-roofing-company-is-proud-to-be-a-family-owned-business /blog 301!
+/blog/can-your-hoa-say-no-to-a-metal-roof-a-guide-for-homeowners /blog 301!
+/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid /blog 301!
+/blog/how-much-does-a-screen-enclosure-cost /blog 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-4 /blog 301!
+/blog/author/douglas-silva /about-us 301!
+
+# Media and Publications - old ghost URLs
+/media /about-us 301!
+/media/ /about-us 301!
+/publications /blog 301!
+/publications/ /blog 301!
+
+# Old city short URLs (duplicates without canonical) - redirect to /locations/{city}
+/greenacres /locations/greenacres 301!
+/oakland-park /locations/oakland-park 301!
+/south-palm-beach /locations/south-palm-beach 301!
+/wellington /locations/wellington 301!
+/lauderdale-by-the-sea /locations/lauderdale-by-the-sea 301!
+
+# /roofing/ pattern - should be /roofing-services
+/roofing /roofing-services 301!
+/roofing/ /roofing-services 301!
+
+# Trailing slash variants for soft 404 pages
+/locations/plantation/ /locations/plantation 301!
+/roof-repair/deerfield-beach/ /roof-repair/deerfield-beach 301!
+/locations/deerfield-beach/best-roofers-deerfield-beach/ /locations/deerfield-beach/best-roofers-deerfield-beach 301!
+/locations/west-palm-beach/ /locations/west-palm-beach 301!
+
+# Redirect errors from GSC (broken redirect chains)
+/blog/march-13th-weekly-newsletter /blog 301!
+/roof-repair/palm-beach-county-unincorporated /roof-repair 301!
+/blog/how-long-does-it-take-to-get-a-roof-permit-in-south-florida /blog 301!
+
+# Accessibility page - ensure it's accessible
+/accessibility /accessibility 301!
+
+# ======================================================================
+# OLD WORDPRESS ARTIFACTS - 410 Gone
 # These paths are dead remnants from the old WordPress site.
 # 410 tells Google to stop crawling them permanently.
 # ======================================================================
@@ -302,7 +352,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /feed / 410!
 
 # ======================================================================
-# BLOG TAG & FEED WILDCARDS — 301 to /blog
+# BLOG TAG & FEED WILDCARDS - 301 to /blog
 # Catch all old WordPress tag archive and feed URLs
 # ======================================================================
 /blog/tag/* /blog 301!
@@ -315,11 +365,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # ======================================================================
 /roof-coatings /single-ply-roofing 301!
 /roof-coatings/ /single-ply-roofing 301!
-/media/ / 301!
-/media / 301!
 
 # ======================================================================
-# GSC Soft 404 fixes — 2026-03-30
+# GSC Soft 404 fixes - 2026-03-30
 # Soft 404 URLs from Google Search Console requiring redirects
 # ======================================================================
 /roof-repair/north-lauderdale /roof-repair 301!

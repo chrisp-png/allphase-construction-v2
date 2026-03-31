@@ -307,6 +307,21 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'How to hire a roofing contractor in Florida - licenses to verify, questions to ask, red flags to avoid. Free guide from a licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/how-to-hire-roofing-contractor'
   },
+  '/privacy': {
+    title: 'Privacy Policy | All Phase Construction USA',
+    description: 'Privacy policy for All Phase Construction USA. Learn how we collect, use, and protect your personal information.',
+    canonical: 'https://allphaseconstructionfl.com/privacy'
+  },
+  '/terms': {
+    title: 'Terms of Service | All Phase Construction USA',
+    description: 'Terms of service for All Phase Construction USA website and services.',
+    canonical: 'https://allphaseconstructionfl.com/terms'
+  },
+  '/accessibility': {
+    title: 'Accessibility | All Phase Construction USA',
+    description: 'Information about accessibility features on our website. We are committed to making our content accessible to all users.',
+    canonical: 'https://allphaseconstructionfl.com/accessibility'
+  },
 };
 
 /**
