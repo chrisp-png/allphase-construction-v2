@@ -76,7 +76,7 @@ export default function RoofReplacementCostFloridaPage() {
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />
 
-      <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
+      <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
             <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
@@ -102,7 +102,7 @@ export default function RoofReplacementCostFloridaPage() {
             These prices reflect a complete roof replacement on a standard 2,000 sq ft single-family home in Florida, including material, labor, permits, and inspections. HVHZ areas (Broward County, southern Palm Beach County, Miami-Dade) run higher due to stricter requirements.
           </p>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden text-zinc-200">
               <thead>
                 <tr className="bg-zinc-900 text-white">
                   <th className="px-5 py-3 text-left">Material</th>
@@ -112,7 +112,7 @@ export default function RoofReplacementCostFloridaPage() {
                   <th className="px-5 py-3 text-center">Wind Rating</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="text-zinc-200">
                 <tr className="border-b border-zinc-800">
                   <td className="px-5 py-4 font-semibold">3-Tab Shingles</td>
                   <td className="px-5 py-4 text-center">$6,500 - $10,000</td>
@@ -165,7 +165,7 @@ export default function RoofReplacementCostFloridaPage() {
               </tbody>
             </table>
           </div>
-          <div className="bg-zinc-900 border border-sky-200 rounded-lg p-4">
+          <div className="bg-zinc-900 border border-yellow-400/30 rounded-lg p-4">
             <p className="text-zinc-300"><strong>Why the HVHZ premium?</strong> Properties in the High Velocity Hurricane Zone (all of Broward County, southern Palm Beach County, and Miami-Dade) require Miami-Dade NOA-approved products, enhanced underlayment, engineered attachment calculations, and additional inspections. These add $2,000–$5,000+ to the project cost but provide significantly better storm protection.</p>
           </div>
         </section>
@@ -202,7 +202,7 @@ export default function RoofReplacementCostFloridaPage() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">Cost by County: South Florida Breakdown</h2>
           <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden">
+            <table className="w-full border-collapse bg-zinc-900 rounded-xl shadow-lg border border-zinc-800 overflow-hidden text-zinc-200">
               <thead>
                 <tr className="bg-zinc-900 text-white">
                   <th className="px-6 py-3 text-left">County / Area</th>
