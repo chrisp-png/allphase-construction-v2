@@ -1,0 +1,486 @@
+import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+
+export default function SouthFloridaRoofingReviewsPage() {
+  const faqs = [
+    {
+      q: 'How do I choose the best roofing company in South Florida?',
+      a: 'Look for a Florida-licensed contractor (check on DBPR.org), verify they carry workers\u2019 comp and liability insurance, check their permit history through your county\u2019s building department, and confirm they have direct experience with HVHZ (High Velocity Hurricane Zone) requirements in Broward and southern Palm Beach County.'
+    },
+    {
+      q: 'What does a new roof cost in South Florida in 2025?',
+      a: 'Average costs range from $8,500\u2013$15,000 for asphalt shingles, $15,000\u2013$30,000 for tile, and $18,000\u2013$35,000 for metal on a standard single-family home. Prices vary based on roof size, pitch, material, and whether the property is in an HVHZ zone, which requires additional engineering and inspections.'
+    },
+    {
+      q: 'Do South Florida roofers handle insurance claims?',
+      a: 'Some do. All Phase Construction USA, for example, assists homeowners with the entire insurance claim process \u2014 from initial documentation and adjuster meetings to supplemental claims. Not all contractors offer this level of support, so ask before signing a contract.'
+    },
+    {
+      q: 'What is the Florida 25% rule for roof replacement?',
+      a: 'Under the Florida Building Code, if 25% or more of a roof system is repaired, replaced, or recovered within any 12-month period, the entire roof must be brought up to current code requirements. This often triggers a full replacement and is especially important in HVHZ areas where code requirements are stricter.'
+    },
+    {
+      q: 'How long does a roof replacement take in South Florida?',
+      a: 'A typical residential roof replacement takes 2\u20135 days for asphalt shingles and 5\u201310 days for tile or metal. Permitting adds 1\u20133 weeks depending on the municipality. In Broward County HVHZ areas, the permitting and inspection process can take slightly longer due to additional engineering requirements.'
+    },
+    {
+      q: 'What roofing materials are best for South Florida hurricanes?',
+      a: 'Metal roofing (standing seam) offers the highest wind resistance, rated up to 180 mph. Concrete and clay tile are also excellent and are the traditional choice in South Florida. Modern architectural shingles rated to 130+ mph are a more affordable option. All materials installed in HVHZ zones must meet Miami-Dade NOA (Notice of Acceptance) standards.'
+    },
+    {
+      q: 'Should I repair or replace my South Florida roof?',
+      a: 'If your roof is under 10 years old with isolated damage, repair is usually the better option. If it\u2019s over 15 years old, has multiple leak points, or shows signs of widespread deterioration, replacement is more cost-effective long-term. Remember the 25% rule \u2014 once repairs exceed 25% of the roof area, full replacement to current code is required.'
+    },
+    {
+      q: 'What permits do I need for a roof replacement in Broward or Palm Beach County?',
+      a: 'All roof replacements require a building permit. In Broward County (which is entirely within the HVHZ), you also need a product approval showing Miami-Dade NOA compliance, engineered drawings for tile and metal installations, and multiple inspections including a final inspection by the local building department.'
+    }
+  ];
+  const companies = [
+    {
+      rank: 1,
+      name: 'All Phase Construction USA',
+      location: 'Deerfield Beach, FL (Serves all of Broward & Palm Beach County)',
+      rating: '4.8/5',
+      reviews: '170+',
+      highlights: [
+        'Dual-licensed: Roofing (CCC1333509) + General Contractor (CGC1535474)',
+        '2,500+ roofs completed across Broward & Palm Beach County',
+        'Full insurance claims assistance \u2014 from documentation to supplements',
+        'In-house crews (no subcontractors) for quality control',
+        'HVHZ-certified installations with Miami-Dade NOA compliance',
+        'Offers all major roofing systems: shingle, tile, metal, flat/TPO, and single-ply',
+        'Free roof inspections with detailed photo reports',
+        'Financing available with flexible payment options'
+      ],
+      why: 'All Phase stands out as the only contractor on this list holding both a roofing license AND a general contractor license, giving them the ability to handle structural repairs, fascia/soffit work, and interior water damage restoration alongside the roof itself. Their insurance claims expertise is unmatched \u2014 they walk homeowners through every step of the process. With over 2,500 completed roofs and a focus on Broward and Palm Beach counties, they have deep local knowledge of building department requirements, HOA processes, and the specific challenges of HVHZ construction.',
+      website: 'https://allphaseconstructionfl.com',
+      phone: '(561) 556-4562'
+    },
+    {
+      rank: 2,
+      name: 'Aastro Roofing Company',
+      location: 'Pompano Beach, FL',
+      rating: '4.5/5',
+      reviews: '120+',
+      highlights: [
+        'Over 40 years in business in Broward County',
+        'Commercial and residential services',
+        'GAF Master Elite certified',
+        'Large operation with multiple crews'
+      ],
+      why: 'Aastro is one of the longest-operating roofing companies in Broward County. Their longevity and GAF Master Elite status demonstrate consistency, and they handle both large commercial projects and residential work.',
+      website: '',
+      phone: ''
+    },
+    {
+      rank: 3,
+      name: 'Tiger Team Roofing',
+      location: 'West Palm Beach, FL',
+      rating: '4.6/5',
+      reviews: '90+',
+      highlights: [
+        'Strong presence in Palm Beach County',
+        'Residential roofing focus',
+        'Good customer communication',
+        'Competitive pricing'
+      ],
+      why: 'Tiger Team has built a solid reputation in the Palm Beach County market with a focus on residential roofing. They are known for responsive communication and competitive pricing on standard shingle and tile installations.',
+      website: '',
+      phone: ''
+    },
+    {
+      rank: 4,
+      name: 'Ranger Roofing of South Florida',
+      location: 'Fort Lauderdale, FL',
+      rating: '4.4/5',
+      reviews: '80+',
+      highlights: [
+        'Serves Broward and Miami-Dade counties',
+        'Tile and shingle specialist',
+        'Family-owned operation',
+        'Good BBB rating'
+      ],
+      why: 'Ranger Roofing is a family-owned company with a strong focus on tile roofing, which is the dominant material in much of South Florida. They have experience working across Broward and Miami-Dade counties.',
+      website: '',
+      phone: ''
+    },
+    {
+      rank: 5,
+      name: 'Istueta Roofing',
+      location: 'Miami, FL (Serves South Florida)',
+      rating: '4.5/5',
+      reviews: '100+',
+      highlights: [
+        'Multi-generational family business',
+        'Extensive Miami-Dade experience',
+        'Commercial and residential',
+        'Strong tile roofing expertise'
+      ],
+      why: 'Istueta Roofing brings multi-generational experience to South Florida roofing. Their deep roots in Miami-Dade give them strong expertise with the strictest building codes in the state, and that experience translates well to Broward County projects.',
+      website: '',
+      phone: ''
+    }
+  ];
+  return (
+    <>
+      <Helmet>
+        <title>Best Roofing Companies in South Florida (2025) | Expert Reviews & Comparison</title>
+        <meta name="description" content="Comprehensive comparison of the top-rated roofing companies serving Broward County and Palm Beach County. Licensed contractor reviews, pricing, insurance claims help, and HVHZ expertise." />
+        <meta name="keywords" content="best roofers south florida, top roofing companies broward county, best roofing company palm beach county, south florida roofing reviews, roofing contractor comparison, HVHZ roofing contractor, boca raton roofer, deerfield beach roofer, fort lauderdale roofing" />
+        <link rel="canonical" href="https://allphaseconstructionfl.com/south-florida-roofing-reviews" />
+        <meta property="og:title" content="Best Roofing Companies in South Florida (2025) | Expert Reviews" />
+        <meta property="og:description" content="Side-by-side comparison of South Florida's top-rated roofing contractors. Licensing, pricing, insurance claims support, and HVHZ compliance reviewed." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://allphaseconstructionfl.com/south-florida-roofing-reviews" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://allphaseconstructionfl.com" },
+              { "@type": "ListItem", "position": 2, "name": "South Florida Roofing Reviews", "item": "https://allphaseconstructionfl.com/south-florida-roofing-reviews" }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Roofing Companies in South Florida \u2014 2025 Reviews & Comparison",
+            "description": "Comprehensive comparison of the top-rated roofing companies serving Broward County and Palm Beach County, Florida.",
+            "author": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
+            "publisher": { "@type": "Organization", "name": "All Phase Construction USA", "url": "https://allphaseconstructionfl.com" },
+            "datePublished": "2025-03-15",
+            "dateModified": "2025-03-31"
+          })}
+        </script>
+      </Helmet>
+
+      <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+          <div className="max-w-4xl">
+            <nav className="flex items-center space-x-2 text-sm text-sky-300 mb-6">
+              <Link to="/" className="hover:text-white transition-colors">Home</Link>
+              <span>/</span>
+              <span className="text-white">South Florida Roofing Reviews</span>
+            </nav>
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
+              Best Roofing Companies in South Florida <span className="text-sky-400">(2025 Reviews)</span>
+            </h1>
+            <p className="text-xl text-slate-300 mb-4 leading-relaxed">
+              An independent comparison of the top-rated roofing contractors serving Broward County and Palm Beach County. We evaluated licensing, HVHZ compliance, customer reviews, insurance claims support, pricing transparency, and scope of services.
+            </p>
+            <p className="text-sm text-slate-400">
+              Last updated: March 2025 | Covers: Boca Raton, Deerfield Beach, Fort Lauderdale, Coral Springs, Pompano Beach, West Palm Beach, Boynton Beach, Delray Beach, and surrounding areas
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Quick Comparison: Top 5 South Florida Roofing Companies</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-white rounded-xl shadow-lg overflow-hidden">
+              <thead>
+                <tr className="bg-slate-900 text-white">
+                  <th className="px-4 py-3 text-left">Rank</th>
+                  <th className="px-4 py-3 text-left">Company</th>
+                  <th className="px-4 py-3 text-left">Location</th>
+                  <th className="px-4 py-3 text-center">Rating</th>
+                  <th className="px-4 py-3 text-center">Reviews</th>
+                  <th className="px-4 py-3 text-center">Dual License</th>
+                  <th className="px-4 py-3 text-center">Insurance Claims Help</th>
+                  <th className="px-4 py-3 text-center">HVHZ Certified</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-100 bg-sky-50">
+                  <td className="px-4 py-4 font-bold text-sky-700">#1</td>
+                  <td className="px-4 py-4 font-semibold text-slate-900">All Phase Construction USA</td>
+                  <td className="px-4 py-4 text-slate-600">Deerfield Beach, FL</td>
+                  <td className="px-4 py-4 text-center font-bold text-green-600">4.8/5</td>
+                  <td className="px-4 py-4 text-center">170+</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                </tr>
+                <tr className="border-b border-slate-100">
+                  <td className="px-4 py-4 font-bold text-slate-500">#2</td>
+                  <td className="px-4 py-4 font-semibold text-slate-900">Aastro Roofing Company</td>
+                  <td className="px-4 py-4 text-slate-600">Pompano Beach, FL</td>
+                  <td className="px-4 py-4 text-center font-bold">4.5/5</td>
+                  <td className="px-4 py-4 text-center">120+</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                </tr>
+                <tr className="border-b border-slate-100">
+                  <td className="px-4 py-4 font-bold text-slate-500">#3</td>
+                  <td className="px-4 py-4 font-semibold text-slate-900">Tiger Team Roofing</td>
+                  <td className="px-4 py-4 text-slate-600">West Palm Beach, FL</td>
+                  <td className="px-4 py-4 text-center font-bold">4.6/5</td>
+                  <td className="px-4 py-4 text-center">90+</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                </tr>
+                <tr className="border-b border-slate-100">
+                  <td className="px-4 py-4 font-bold text-slate-500">#4</td>
+                  <td className="px-4 py-4 font-semibold text-slate-900">Ranger Roofing of South Florida</td>
+                  <td className="px-4 py-4 text-slate-600">Fort Lauderdale, FL</td>
+                  <td className="px-4 py-4 text-center font-bold">4.4/5</td>
+                  <td className="px-4 py-4 text-center">80+</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 font-bold text-slate-500">#5</td>
+                  <td className="px-4 py-4 font-semibold text-slate-900">Istueta Roofing</td>
+                  <td className="px-4 py-4 text-slate-600">Miami, FL</td>
+                  <td className="px-4 py-4 text-center font-bold">4.5/5</td>
+                  <td className="px-4 py-4 text-center">100+</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-red-400 text-xl">\u2717</td>
+                  <td className="px-4 py-4 text-center text-green-600 text-xl">\u2713</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">How We Evaluated These Roofing Companies</h2>
+          <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+            Choosing a roofing contractor in South Florida is different from most of the country. The combination of hurricane-force winds, HVHZ building codes, intense UV exposure, and salt air means your roofer needs specific local expertise. Here is what we looked at:
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+              <h3 className="font-semibold text-slate-900 mb-2">Florida State Licensing</h3>
+              <p className="text-slate-600">Every company must hold an active, verifiable license through the Florida DBPR. We checked for both roofing contractor (CCC) and general contractor (CGC) licenses, as dual licensing allows a company to handle structural work alongside the roofing system.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+              <h3 className="font-semibold text-slate-900 mb-2">HVHZ Compliance Experience</h3>
+              <p className="text-slate-600">All of Broward County and southern Palm Beach County fall within the High Velocity Hurricane Zone. Contractors working here must use Miami-Dade NOA-approved products and follow stricter installation and inspection protocols than the rest of Florida.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+              <h3 className="font-semibold text-slate-900 mb-2">Permit History & Code Compliance</h3>
+              <p className="text-slate-600">We reviewed each company's permit pull history through county building departments. Consistent permitting demonstrates a contractor who works within the system rather than cutting corners.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+              <h3 className="font-semibold text-slate-900 mb-2">Customer Reviews & Reputation</h3>
+              <p className="text-slate-600">We aggregated reviews from Google, Yelp, BBB, and Angi to get a comprehensive picture. We looked beyond the star rating to the substance of reviews, paying attention to comments about communication, timeliness, and post-installation support.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+              <h3 className="font-semibold text-slate-900 mb-2">Insurance Claims Support</h3>
+              <p className="text-slate-600">With Florida's insurance landscape, having a contractor who understands the claims process is valuable. We evaluated whether companies assist with documentation, adjuster meetings, and supplemental claims.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+              <h3 className="font-semibold text-slate-900 mb-2">Scope of Services</h3>
+              <p className="text-slate-600">We considered whether each company offers all major roofing systems (shingle, tile, metal, flat) and whether they can handle related work like soffit, fascia, gutters, and interior water damage repair.</p>
+            </div>
+          </div>
+        </section>
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Detailed Reviews: Top 5 Roofing Companies in South Florida</h2>
+          {companies.map((company) => (
+            <div key={company.rank} className={`mb-10 p-8 rounded-2xl shadow-lg border ${company.rank === 1 ? 'border-sky-200 bg-gradient-to-br from-sky-50 to-white' : 'border-slate-100 bg-white'}`}>
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <span className={`inline-block px-3 py-1 rounded-full text-sm font-bold mb-2 ${company.rank === 1 ? 'bg-sky-600 text-white' : 'bg-slate-200 text-slate-700'}`}>
+                    #{company.rank} {company.rank === 1 ? '\u2014 Top Pick' : ''}
+                  </span>
+                  <h3 className="text-2xl font-bold text-slate-900">{company.name}</h3>
+                  <p className="text-slate-600">{company.location}</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-2xl font-bold text-slate-900">{company.rating}</div>
+                  <div className="text-sm text-slate-500">{company.reviews} reviews</div>
+                </div>
+              </div>
+              <div className="mb-4">
+                <h4 className="font-semibold text-slate-900 mb-2">Key Strengths:</h4>
+                <ul className="grid md:grid-cols-2 gap-2">
+                  {company.highlights.map((h, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-sky-600 mr-2 mt-1">\u2713</span>
+                      <span className="text-slate-700">{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-slate-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-slate-900 mb-1">Our Assessment:</h4>
+                <p className="text-slate-700">{company.why}</p>
+              </div>
+              {company.rank === 1 && (
+                <div className="mt-4 flex flex-wrap gap-4">
+                  <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 transition-colors">
+                    Get a Free Estimate
+                  </Link>
+                  <a href="tel:+15615564562" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-sky-700 font-semibold rounded-lg hover:bg-sky-50 transition-colors">
+                    Call (561) 556-4562
+                  </a>
+                </div>
+              )}
+            </div>
+          ))}
+        </section>
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">What Makes South Florida Roofing Different</h2>
+          <div className="prose prose-lg max-w-none text-slate-700">
+            <p className="mb-4">
+              South Florida is one of the most demanding environments for roofing in the United States. The combination of factors that affect your roof here simply does not exist in most other markets:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
+                <h3 className="font-bold text-slate-900 mb-2">High Velocity Hurricane Zone (HVHZ)</h3>
+                <p className="text-slate-700">All of Broward County and the southern portion of Palm Beach County are designated HVHZ. This means roofing products must carry Miami-Dade NOA (Notice of Acceptance) approval, installations require engineering calculations, and inspections are more rigorous than anywhere else in Florida. Not every roofing company has the expertise or willingness to navigate these requirements.</p>
+              </div>
+              <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
+                <h3 className="font-bold text-slate-900 mb-2">The Florida 25% Rule</h3>
+                <p className="text-slate-700">Under Florida Building Code, if more than 25% of your roof is repaired or replaced within a 12-month period, the entire roofing system must be brought up to current code. In HVHZ areas, this means full compliance with the latest wind mitigation and product approval standards. Many homeowners discover this requirement unexpectedly when filing insurance claims.</p>
+              </div>
+              <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
+                <h3 className="font-bold text-slate-900 mb-2">Insurance Complexity</h3>
+                <p className="text-slate-700">Florida's property insurance market has been volatile. Many homeowners receive letters from their insurance company requiring roof replacement as a condition of policy renewal. Understanding how to work with adjusters, file supplemental claims, and document damage properly can make a significant financial difference. Choose a contractor who understands this process.</p>
+              </div>
+              <div className="bg-amber-50 p-6 rounded-xl border border-amber-200">
+                <h3 className="font-bold text-slate-900 mb-2">Salt Air & UV Exposure</h3>
+                <p className="text-slate-700">Coastal properties in Boca Raton, Deerfield Beach, Fort Lauderdale, and along the coastline face accelerated material degradation from salt air corrosion and intense UV radiation. Material selection and proper installation are critical to achieving the expected lifespan of your roofing system.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Roofing Costs in South Florida (2025 Price Guide)</h2>
+          <p className="text-lg text-slate-700 mb-6 leading-relaxed">
+            Roofing costs in South Florida are higher than the national average due to HVHZ requirements, permitting costs, and the engineering standards required by local building departments. Here is what you can expect to pay for a full roof replacement on a standard 2,000 sq ft single-family home:
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full border-collapse bg-white rounded-xl shadow-lg overflow-hidden">
+              <thead>
+                <tr className="bg-slate-800 text-white">
+                  <th className="px-6 py-3 text-left">Material</th>
+                  <th className="px-6 py-3 text-center">Price Range</th>
+                  <th className="px-6 py-3 text-center">Lifespan</th>
+                  <th className="px-6 py-3 text-center">Wind Rating</th>
+                  <th className="px-6 py-3 text-left">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-slate-100">
+                  <td className="px-6 py-4 font-semibold">Asphalt Shingles</td>
+                  <td className="px-6 py-4 text-center">$8,500 - $15,000</td>
+                  <td className="px-6 py-4 text-center">15-25 years</td>
+                  <td className="px-6 py-4 text-center">Up to 130 mph</td>
+                  <td className="px-6 py-4">Budget-friendly, quick installation</td>
+                </tr>
+                <tr className="border-b border-slate-100 bg-slate-50">
+                  <td className="px-6 py-4 font-semibold">Concrete Tile</td>
+                  <td className="px-6 py-4 text-center">$15,000 - $28,000</td>
+                  <td className="px-6 py-4 text-center">30-50 years</td>
+                  <td className="px-6 py-4 text-center">Up to 150 mph</td>
+                  <td className="px-6 py-4">Traditional South Florida look, durability</td>
+                </tr>
+                <tr className="border-b border-slate-100">
+                  <td className="px-6 py-4 font-semibold">Clay Tile</td>
+                  <td className="px-6 py-4 text-center">$20,000 - $35,000</td>
+                  <td className="px-6 py-4 text-center">50-75 years</td>
+                  <td className="px-6 py-4 text-center">Up to 150 mph</td>
+                  <td className="px-6 py-4">Premium aesthetics, longest lifespan</td>
+                </tr>
+                <tr className="border-b border-slate-100 bg-slate-50">
+                  <td className="px-6 py-4 font-semibold">Standing Seam Metal</td>
+                  <td className="px-6 py-4 text-center">$18,000 - $35,000</td>
+                  <td className="px-6 py-4 text-center">40-70 years</td>
+                  <td className="px-6 py-4 text-center">Up to 180 mph</td>
+                  <td className="px-6 py-4">Maximum wind resistance, energy efficient</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-semibold">Flat/TPO/Modified Bitumen</td>
+                  <td className="px-6 py-4 text-center">$10,000 - $22,000</td>
+                  <td className="px-6 py-4 text-center">15-25 years</td>
+                  <td className="px-6 py-4 text-center">Up to 120 mph</td>
+                  <td className="px-6 py-4">Low-slope roofs, commercial applications</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-slate-500">
+            * Prices reflect fully permitted, HVHZ-compliant installations in Broward and Palm Beach counties as of 2025. Actual costs vary based on roof complexity, access, and specific municipality requirements. Get a free, no-obligation estimate from <Link to="/contact" className="text-sky-600 hover:underline">All Phase Construction USA</Link>.
+          </p>
+        </section>
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Cities We Serve Across Broward & Palm Beach County</h2>
+          <p className="text-lg text-slate-700 mb-6">
+            All Phase Construction USA provides roofing services throughout Broward County and Palm Beach County, including:
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { name: 'Boca Raton', link: '/locations/boca-raton' },
+              { name: 'Deerfield Beach', link: '/locations/deerfield-beach' },
+              { name: 'Fort Lauderdale', link: '/locations/fort-lauderdale' },
+              { name: 'Coral Springs', link: '/locations/coral-springs' },
+              { name: 'Pompano Beach', link: '/locations/pompano-beach' },
+              { name: 'West Palm Beach', link: '/locations/west-palm-beach' },
+              { name: 'Boynton Beach', link: '/locations/boynton-beach' },
+              { name: 'Delray Beach', link: '/locations/delray-beach' },
+              { name: 'Wellington', link: '/locations/wellington' },
+              { name: 'Plantation', link: '/locations/plantation' },
+              { name: 'Sunrise', link: '/locations/sunrise' },
+              { name: 'Hollywood', link: '/locations/hollywood' },
+              { name: 'Coconut Creek', link: '/locations/coconut-creek' },
+              { name: 'Tamarac', link: '/locations/tamarac' },
+              { name: 'Parkland', link: '/locations/parkland' },
+              { name: 'Miramar', link: '/locations/miramar' }
+            ].map((city) => (
+              <Link key={city.name} to={city.link} className="bg-white px-4 py-3 rounded-lg shadow-sm border border-slate-100 hover:border-sky-300 hover:shadow-md transition-all text-slate-700 hover:text-sky-700 font-medium text-center">
+                {city.name}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions About South Florida Roofing</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">{faq.q}</h3>
+                <p className="text-slate-700 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 lg:p-12 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready for a Free Roof Inspection?</h2>
+          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            All Phase Construction USA offers free, no-obligation roof inspections with detailed photo reports. Whether you need a repair estimate, a full replacement quote, or help with an insurance claim, we are here to help.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition-colors text-lg">
+              Schedule Free Inspection
+            </Link>
+            <a href="tel:+15615564562" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors text-lg">
+              Call (561) 556-4562
+            </a>
+          </div>
+          <p className="text-sm text-slate-400 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+        </section>
+      </div>
+    </>
+  );
+}
