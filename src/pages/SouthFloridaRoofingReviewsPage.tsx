@@ -176,7 +176,7 @@ export default function SouthFloridaRoofingReviewsPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               An independent comparison of the top-rated roofing contractors serving Broward County and Palm Beach County. We evaluated licensing, HVHZ compliance, customer reviews, insurance claims support, pricing transparency, and scope of services.
             </p>
-            <p className="text-sm text-zinc-400">
+            <p className="text-sm text-zinc-300">
               Last updated: March 2026 | Covers: Boca Raton, Deerfield Beach, Fort Lauderdale, Coral Springs, Pompano Beach, West Palm Beach, Boynton Beach, Delray Beach, and surrounding areas
             </p>
           </div>
@@ -203,7 +203,7 @@ export default function SouthFloridaRoofingReviewsPage() {
                 <tr className="border-b border-zinc-800 bg-zinc-900">
                   <td className="px-4 py-4 font-bold text-yellow-400">#1</td>
                   <td className="px-4 py-4 font-semibold text-white">All Phase Construction USA</td>
-                  <td className="px-4 py-4 text-zinc-400">Deerfield Beach, FL</td>
+                  <td className="px-4 py-4 text-zinc-300">Deerfield Beach, FL</td>
                   <td className="px-4 py-4 text-center font-bold text-green-600">4.8/5</td>
                   <td className="px-4 py-4 text-center">170+</td>
                   <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
@@ -211,9 +211,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-4 py-4 font-bold text-zinc-500">#2</td>
+                  <td className="px-4 py-4 font-bold text-zinc-300">#2</td>
                   <td className="px-4 py-4 font-semibold text-white">Aastro Roofing Company</td>
-                  <td className="px-4 py-4 text-zinc-400">Pompano Beach, FL</td>
+                  <td className="px-4 py-4 text-zinc-300">Pompano Beach, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.5/5</td>
                   <td className="px-4 py-4 text-center">120+</td>
                   <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
@@ -221,9 +221,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-4 py-4 font-bold text-zinc-500">#3</td>
+                  <td className="px-4 py-4 font-bold text-zinc-300">#3</td>
                   <td className="px-4 py-4 font-semibold text-white">Tiger Team Roofing</td>
-                  <td className="px-4 py-4 text-zinc-400">West Palm Beach, FL</td>
+                  <td className="px-4 py-4 text-zinc-300">West Palm Beach, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.6/5</td>
                   <td className="px-4 py-4 text-center">90+</td>
                   <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
@@ -231,9 +231,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr className="border-b border-zinc-800">
-                  <td className="px-4 py-4 font-bold text-zinc-500">#4</td>
+                  <td className="px-4 py-4 font-bold text-zinc-300">#4</td>
                   <td className="px-4 py-4 font-semibold text-white">Ranger Roofing of South Florida</td>
-                  <td className="px-4 py-4 text-zinc-400">Fort Lauderdale, FL</td>
+                  <td className="px-4 py-4 text-zinc-300">Fort Lauderdale, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.4/5</td>
                   <td className="px-4 py-4 text-center">80+</td>
                   <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
@@ -241,9 +241,9 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 text-center text-green-600 text-xl">✓</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-4 font-bold text-zinc-500">#5</td>
+                  <td className="px-4 py-4 font-bold text-zinc-300">#5</td>
                   <td className="px-4 py-4 font-semibold text-white">Istueta Roofing</td>
-                  <td className="px-4 py-4 text-zinc-400">Miami, FL</td>
+                  <td className="px-4 py-4 text-zinc-300">Miami, FL</td>
                   <td className="px-4 py-4 text-center font-bold">4.5/5</td>
                   <td className="px-4 py-4 text-center">100+</td>
                   <td className="px-4 py-4 text-center text-red-400 text-xl">✗</td>
@@ -262,27 +262,27 @@ export default function SouthFloridaRoofingReviewsPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-semibold text-white mb-2">Florida State Licensing</h3>
-              <p className="text-zinc-400">Every company must hold an active, verifiable license through the Florida DBPR. We checked for both roofing contractor (CCC) and general contractor (CGC) licenses, as dual licensing allows a company to handle structural work alongside the roofing system.</p>
+              <p className="text-zinc-300">Every company must hold an active, verifiable license through the Florida DBPR. We checked for both roofing contractor (CCC) and general contractor (CGC) licenses, as dual licensing allows a company to handle structural work alongside the roofing system.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-semibold text-white mb-2">HVHZ Compliance Experience</h3>
-              <p className="text-zinc-400">All of Broward County and southern Palm Beach County fall within the High Velocity Hurricane Zone. Contractors working here must use Miami-Dade NOA-approved products and follow stricter installation and inspection protocols than the rest of Florida.</p>
+              <p className="text-zinc-300">All of Broward County and southern Palm Beach County fall within the High Velocity Hurricane Zone. Contractors working here must use Miami-Dade NOA-approved products and follow stricter installation and inspection protocols than the rest of Florida.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-semibold text-white mb-2">Permit History & Code Compliance</h3>
-              <p className="text-zinc-400">We reviewed each company's permit pull history through county building departments. Consistent permitting demonstrates a contractor who works within the system rather than cutting corners.</p>
+              <p className="text-zinc-300">We reviewed each company's permit pull history through county building departments. Consistent permitting demonstrates a contractor who works within the system rather than cutting corners.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-semibold text-white mb-2">Customer Reviews & Reputation</h3>
-              <p className="text-zinc-400">We aggregated reviews from Google, Yelp, BBB, and Angi to get a comprehensive picture. We looked beyond the star rating to the substance of reviews, paying attention to comments about communication, timeliness, and post-installation support.</p>
+              <p className="text-zinc-300">We aggregated reviews from Google, Yelp, BBB, and Angi to get a comprehensive picture. We looked beyond the star rating to the substance of reviews, paying attention to comments about communication, timeliness, and post-installation support.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-semibold text-white mb-2">Insurance Claims Support</h3>
-              <p className="text-zinc-400">With Florida's insurance landscape, having a contractor who understands the claims process is valuable. We evaluated whether companies assist with documentation, adjuster meetings, and supplemental claims.</p>
+              <p className="text-zinc-300">With Florida's insurance landscape, having a contractor who understands the claims process is valuable. We evaluated whether companies assist with documentation, adjuster meetings, and supplemental claims.</p>
             </div>
             <div className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
               <h3 className="font-semibold text-white mb-2">Scope of Services</h3>
-              <p className="text-zinc-400">We considered whether each company offers all major roofing systems (shingle, tile, metal, flat) and whether they can handle related work like soffit, fascia, gutters, and interior water damage repair.</p>
+              <p className="text-zinc-300">We considered whether each company offers all major roofing systems (shingle, tile, metal, flat) and whether they can handle related work like soffit, fascia, gutters, and interior water damage repair.</p>
             </div>
           </div>
         </section>
@@ -296,11 +296,11 @@ export default function SouthFloridaRoofingReviewsPage() {
                     #{company.rank} {company.rank === 1 ? '— Top Pick' : ''}
                   </span>
                   <h3 className="text-2xl font-bold text-white">{company.name}</h3>
-                  <p className="text-zinc-400">{company.location}</p>
+                  <p className="text-zinc-300">{company.location}</p>
                 </div>
                 <div className="text-right">
                   <div className="text-2xl font-bold text-white">{company.rating}</div>
-                  <div className="text-sm text-zinc-500">{company.reviews} reviews</div>
+                  <div className="text-sm text-zinc-300">{company.reviews} reviews</div>
                 </div>
               </div>
               <div className="mb-4">
@@ -412,7 +412,7 @@ export default function SouthFloridaRoofingReviewsPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-zinc-500">
+          <p className="text-sm text-zinc-300">
             * Prices reflect fully permitted, HVHZ-compliant installations in Broward and Palm Beach counties as of 2026. Actual costs vary based on roof complexity, access, and specific municipality requirements. Get a free, no-obligation estimate from <Link to="/contact" className="text-yellow-400 hover:underline">All Phase Construction USA</Link>.
           </p>
         </section>
@@ -472,7 +472,7 @@ export default function SouthFloridaRoofingReviewsPage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-400 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-300 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
         </section>
       </div>
     </>
