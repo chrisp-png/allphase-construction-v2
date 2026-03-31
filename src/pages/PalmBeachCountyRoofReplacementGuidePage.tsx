@@ -79,13 +79,13 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
       <div className="bg-gradient-to-br from-sky-900 via-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-4xl">
-            <nav className="flex items-center space-x-2 text-sm text-sky-300 mb-6">
+            <nav className="flex items-center space-x-2 text-sm text-yellow-300 mb-6">
               <Link to="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
               <span className="text-white">Palm Beach County Roof Replacement Guide</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Palm Beach County Roof Replacement Guide <span className="text-sky-400">(2026)</span>
+              Palm Beach County Roof Replacement Guide <span className="text-yellow-400">(2026)</span>
             </h1>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Everything Palm Beach County homeowners need to know about replacing their roof. From Boca Raton to Jupiter, we cover costs, material options, HVHZ requirements, insurance claims, and how to choose the right contractor for your area.
@@ -93,6 +93,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
           </div>
         </div>
       </div>
+      <div className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <section className="mb-16">
@@ -201,7 +202,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
             All Phase Construction USA provides free roof inspections and detailed estimates throughout Palm Beach County. From Boca Raton to Jupiter, we have you covered.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-zinc-9000 text-white font-bold rounded-lg hover:bg-zinc-9000 transition-colors text-lg">
+            <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
             <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
@@ -210,6 +211,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
           </div>
           <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
         </section>
+      </div>
       </div>
     </>
   );
