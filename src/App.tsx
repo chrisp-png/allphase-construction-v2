@@ -204,6 +204,7 @@ const BestRoofersWestPalmBeachPage = lazy(() => import('./pages/BestRoofersWestP
 const BestRoofersBocaRatonPage = lazy(() => import('./pages/BestRoofersBocaRatonPage'));
 const BestRoofersWellingtonPage = lazy(() => import('./pages/BestRoofersWellingtonPage'));
 const BestRooferCoralSpringsPage = lazy(() => import('./pages/BestRooferCoralSpringsPage'));
+const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
 const TopRooferPage = lazy(() => import('./pages/locations/TopRooferPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
@@ -234,9 +235,9 @@ function AppContent() {
     <>
       <NuclearMetadata />
       {/*
-        ═══════════════════════════════════════════════════════════════
+        âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
         LAYOUT LOCK: Header and Footer are PERMANENTLY hard-coded here
-        ═══════════════════════════════════════════════════════════════
+        âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
         DO NOT REMOVE OR CONDITIONALLY RENDER Header/Footer.
 
@@ -244,7 +245,7 @@ function AppContent() {
         loads for EVERY page, preventing "business card" ghost pages.
 
         All routes below will ALWAYS have the full branded layout.
-        ═══════════════════════════════════════════════════════════════
+        âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
       */}
       <div className="flex flex-col min-h-screen bg-gray-50">
         <LowercaseRedirect />
@@ -319,6 +320,7 @@ function AppContent() {
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/how-to-hire-roofing-contractor" element={<HowToHireRoofingContractorPage />} />
+            <Route path="/south-florida-roofing-reviews" element={<SouthFloridaRoofingReviewsPage />} />
             <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />
