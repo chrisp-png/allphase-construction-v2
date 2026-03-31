@@ -138,26 +138,26 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
                   <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-5 py-4 text-center">$14,000 - $26,000</td>
                   <td className="px-5 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-5 py-4 text-center text-zinc-500">No</td>
+                  <td className="px-5 py-4 text-center text-zinc-300">No</td>
                 </tr>
                 <tr className="border-b border-zinc-800 bg-zinc-900/50">
                   <td className="px-5 py-4 font-semibold">Wellington</td>
                   <td className="px-5 py-4 text-center">$8,000 - $14,000</td>
                   <td className="px-5 py-4 text-center">$14,000 - $26,000</td>
                   <td className="px-5 py-4 text-center">$17,000 - $32,000</td>
-                  <td className="px-5 py-4 text-center text-zinc-500">No</td>
+                  <td className="px-5 py-4 text-center text-zinc-300">No</td>
                 </tr>
                 <tr>
                   <td className="px-5 py-4 font-semibold">Jupiter / Palm Beach Gardens</td>
                   <td className="px-5 py-4 text-center">$8,000 - $13,500</td>
                   <td className="px-5 py-4 text-center">$13,500 - $25,000</td>
                   <td className="px-5 py-4 text-center">$16,000 - $30,000</td>
-                  <td className="px-5 py-4 text-center text-zinc-500">No</td>
+                  <td className="px-5 py-4 text-center text-zinc-300">No</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-zinc-500">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000–$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-yellow-400 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
+          <p className="text-sm text-zinc-300">* HVHZ properties require Miami-Dade NOA-approved products, adding $2,000–$5,000+ to the project. <Link to="/roof-cost-calculator" className="text-yellow-400 hover:underline">Use our free cost calculator</Link> for a personalized estimate.</p>
         </section>
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-white mb-6">Palm Beach County Cities We Serve</h2>
@@ -208,7 +208,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-400 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
+          <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474 | 2,500+ Roofs Completed</p>
         </section>
       </div>
     </>
