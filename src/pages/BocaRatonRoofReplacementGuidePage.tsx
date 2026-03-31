@@ -195,8 +195,8 @@ export default function BocaRatonRoofReplacementGuidePage() {
               <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 transition-colors">
                 Get a Free Boca Raton Estimate
               </Link>
-              <a href="tel:+15615564562" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-sky-700 font-semibold rounded-lg hover:bg-sky-50 transition-colors">
-                Call (561) 556-4562
+              <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-sky-600 text-sky-700 font-semibold rounded-lg hover:bg-sky-50 transition-colors">
+                Call (754) 227-5605
               </a>
             </div>
           </div>
