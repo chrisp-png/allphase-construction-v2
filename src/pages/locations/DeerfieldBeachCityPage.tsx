@@ -145,7 +145,7 @@ export default function DeerfieldBeachCityPage() {
             <div className="flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 bg-gray-700/50 text-[#C5A572] px-4 py-2 rounded-full text-sm font-semibold mb-6 w-fit">
                 <MapPin className="w-4 h-4" />
-                Deerfield Beach, FL  -  Broward County HQ
+                Deerfield Beach, FL - Broward County HQ
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -153,7 +153,7 @@ export default function DeerfieldBeachCityPage() {
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
-                We diagnose before we quote. Every project starts with a free inspection-first assessment  -  no pressure, no obligation.
+                We diagnose before we quote. Every project starts with a free inspection-first assessment - no pressure, no obligation.
               </p>
 
                             {/* Credential Box */}
@@ -162,8 +162,8 @@ export default function DeerfieldBeachCityPage() {
                   <span className="text-[#C5A572] text-lg">🛡</span>
                   <span className="text-white font-bold text-base">Dual-Licensed Roofing & General Contractor</span>
                 </div>
-                <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464  -  Florida Certified Roofing Contractor</div>
-                <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236  -  Certified General Contractor</div>
+                <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 - Florida Certified Roofing Contractor</div>
+                <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 - Certified General Contractor</div>
                 <div className="text-gray-400 text-xs">HVHZ Certified • Serving South Florida Since 2005 • 2,500+ Projects</div>
                 <div className="flex items-center gap-3 mt-3 pt-3 border-t border-white/10">
                   <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified" width="40" height="40" loading="lazy" decoding="async" />
@@ -835,7 +835,7 @@ export default function DeerfieldBeachCityPage() {
                   Dual-Licensed Roofing Specialist
                 </h3>
                 <p className="text-gray-400">
-                  Our roofing projects are evaluated beyond surface installation  -  ensuring structural integrity, compliance, and long-term durability.
+                  Our roofing projects are evaluated beyond surface installation - ensuring structural integrity, compliance, and long-term durability.
                 </p>
               </div>
 
@@ -871,7 +871,7 @@ export default function DeerfieldBeachCityPage() {
                   Customer Focused
                 </h3>
                 <p className="text-gray-400">
-                  Clear communication, transparent estimates, and documented inspections  -  no pressure tactics.
+                  Clear communication, transparent estimates, and documented inspections - no pressure tactics.
                 </p>
               </div>
 
