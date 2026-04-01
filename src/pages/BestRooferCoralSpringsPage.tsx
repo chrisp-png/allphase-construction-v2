@@ -368,19 +368,19 @@ export default function BestRooferCoralSpringsPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">2</div>
-                <h2 className="text-2xl font-bold text-slate-900">Rooftec of Florida  -  Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Rooftec of Florida - Coral Springs, FL</h2>
               </div>
               <p className="text-sm text-slate-500 mb-3">⭐ 4.7 out of 5 | 30+ years in business</p>
               <div className="space-y-3 text-slate-700">
                 <p>
-                  Rooftec of Florida is a family-owned roofing contractor based in Broward County with over 30 years of operation. Their longevity in the Coral Springs market  -  through multiple hurricane seasons, code cycles, and insurance market disruptions  -  is itself a signal of operational stability that newer entrants can't offer.
+                  Rooftec of Florida is a family-owned roofing contractor based in Broward County with over 30 years of operation. Their longevity in the Coral Springs market - through multiple hurricane seasons, code cycles, and insurance market disruptions - is itself a signal of operational stability that newer entrants can't offer.
                 </p>
                 <p>
                   Rooftec handles a range of residential roofing in Broward County with a focus on established neighborhoods in Coral Springs and Parkland, serving homeowners with tile, shingle, and metal roofing systems.
                 </p>
                 <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
-                  "Rooftec replaced our shingle roof in Eagle Trace and the entire process was smooth  -  from permit to final inspection. Good crew, clean work."
-                  <span className="block text-sm mt-1 not-italic"> -  Homeowner, Eagle Trace</span>
+                  "Rooftec replaced our shingle roof in Eagle Trace and the entire process was smooth - from permit to final inspection. Good crew, clean work."
+                  <span className="block text-sm mt-1 not-italic"> - Homeowner, Eagle Trace</span>
                 </blockquote>
                 <div className="bg-slate-50 rounded-lg p-4 mt-4">
                   <div className="grid md:grid-cols-2 gap-3 text-sm">
@@ -396,7 +396,7 @@ export default function BestRooferCoralSpringsPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">3</div>
-                <h2 className="text-2xl font-bold text-slate-900">Berwald Roofing  -  Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">Berwald Roofing - Coral Springs, FL</h2>
               </div>
               <p className="text-sm text-slate-500 mb-3">⭐ 4.6 out of 5 | 35+ years in business</p>
               <div className="space-y-3 text-slate-700">
@@ -405,7 +405,7 @@ export default function BestRooferCoralSpringsPage() {
                 </p>
                 <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
                   "Berwald has been doing roofs in our neighborhood for years. Professional, fair pricing, and they handle the permit process without any headaches."
-                  <span className="block text-sm mt-1 not-italic"> -  Homeowner, Wyndham Lakes</span>
+                  <span className="block text-sm mt-1 not-italic"> - Homeowner, Wyndham Lakes</span>
                 </blockquote>
                 <div className="bg-slate-50 rounded-lg p-4 mt-4">
                   <div className="grid md:grid-cols-2 gap-3 text-sm">
@@ -421,7 +421,7 @@ export default function BestRooferCoralSpringsPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">4</div>
-                <h2 className="text-2xl font-bold text-slate-900">All American Roofing and Tile  -  Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">All American Roofing and Tile - Coral Springs, FL</h2>
               </div>
               <p className="text-sm text-slate-500 mb-3">⭐ 4.5 out of 5 | 20+ years in business</p>
               <div className="space-y-3 text-slate-700">
@@ -430,7 +430,7 @@ export default function BestRooferCoralSpringsPage() {
                 </p>
                 <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
                   "All American handled our tile re-roof efficiently. They had a large crew and finished ahead of schedule. Good communication from start to finish."
-                  <span className="block text-sm mt-1 not-italic"> -  Homeowner, Coral Springs</span>
+                  <span className="block text-sm mt-1 not-italic"> - Homeowner, Coral Springs</span>
                 </blockquote>
                 <div className="bg-slate-50 rounded-lg p-4 mt-4">
                   <div className="grid md:grid-cols-2 gap-3 text-sm">
@@ -446,7 +446,7 @@ export default function BestRooferCoralSpringsPage() {
             <div className="border-l-4 border-slate-300 pl-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-slate-400 text-white rounded-full flex items-center justify-center font-bold">5</div>
-                <h2 className="text-2xl font-bold text-slate-900">South Florida Roofing  -  Coral Springs, FL</h2>
+                <h2 className="text-2xl font-bold text-slate-900">South Florida Roofing - Coral Springs, FL</h2>
               </div>
               <p className="text-sm text-slate-500 mb-3">⭐ 4.5 out of 5 | 25+ years in business</p>
               <div className="space-y-3 text-slate-700">
@@ -455,7 +455,7 @@ export default function BestRooferCoralSpringsPage() {
                 </p>
                 <blockquote className="border-l-4 border-slate-200 pl-4 py-2 italic text-slate-600 my-4">
                   "South Florida Roofing has done multiple jobs for us over the years. Consistent quality and they understand the local code requirements well."
-                  <span className="block text-sm mt-1 not-italic"> -  Repeat Customer, Coral Springs</span>
+                  <span className="block text-sm mt-1 not-italic"> - Repeat Customer, Coral Springs</span>
                 </blockquote>
                 <div className="bg-slate-50 rounded-lg p-4 mt-4">
                   <div className="grid md:grid-cols-2 gap-3 text-sm">
