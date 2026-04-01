@@ -325,9 +325,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing/ /roofing-services 301!
 
 # Trailing slash variants for soft 404 pages
-/locations/plantation/ /locations/plantation 301!
-/roof-repair/deerfield-beach/ /roof-repair/deerfield-beach 301!
-/locations/west-palm-beach/ /locations/west-palm-beach 301!
 
 # Redirect errors from GSC (broken redirect chains)
 /blog/march-13th-weekly-newsletter /blog 301!
