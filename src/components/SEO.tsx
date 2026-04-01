@@ -43,8 +43,8 @@ export default function SEO({
   return (
     <Helmet>
       {/* Primary */}
-      {/* title owned by NuclearMetadata — SEO component no longer sets this */}
-      {/* desc owned by NuclearMetadata — SEO component no longer sets this */}
+      {/* title owned by NuclearMetadata  -  SEO component no longer sets this */}
+      {/* desc owned by NuclearMetadata  -  SEO component no longer sets this */}
 
       {/* Robots */}
       <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
