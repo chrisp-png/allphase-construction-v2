@@ -54,7 +54,7 @@ export default function NuclearMetadata() {
     }
     metaDesc.setAttribute('content', description);
 
-    // FORCE UPDATE CANONICAL (single owner â no other component emits this tag)
+    // FORCE UPDATE CANONICAL (single owner Ã¢ no other component emits this tag)
     let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -70,16 +70,16 @@ export default function NuclearMetadata() {
     updateOrCreateMetaTag('property', 'og:type', 'website');
     updateOrCreateMetaTag('property', 'og:site_name', 'All Phase Construction USA');
 
-    // OG:IMAGE — Default branded image for social sharing & AI source cards
+    // OG:IMAGE â Default branded image for social sharing & AI source cards
     // Pages can override this by setting og:image before NuclearMetadata runs,
     // or by adding ogImage to the SEOMetadata config.
-    const defaultOgImage = 'https://allphaseconstructionfl.com/images/og-default-new.jpg';
+    const defaultOgImage = 'https://allphaseconstructionfl.com/og-image.jpg';
     const existingOgImage = document.querySelector('meta[property="og:image"]');
     if (!existingOgImage || !existingOgImage.getAttribute('content')?.startsWith('http')) {
       updateOrCreateMetaTag('property', 'og:image', defaultOgImage);
       updateOrCreateMetaTag('property', 'og:image:width', '1200');
       updateOrCreateMetaTag('property', 'og:image:height', '630');
-      updateOrCreateMetaTag('property', 'og:image:alt', 'All Phase Construction USA — Licensed South Florida Roofing Contractor');
+      updateOrCreateMetaTag('property', 'og:image:alt', 'All Phase Construction USA â Licensed South Florida Roofing Contractor');
     }
 
     // FORCE UPDATE TWITTER TAGS (use overrides if provided)
@@ -89,7 +89,7 @@ export default function NuclearMetadata() {
     updateOrCreateMetaTag('name', 'twitter:image', defaultOgImage);
 
     // GLOBAL LOCALBUSINESS SCHEMA (RoofingContractor) is now handled entirely by
-    // prerender-static.mjs baseOrgSchema — injected at build time into every page's <head>.
+    // prerender-static.mjs baseOrgSchema â injected at build time into every page's <head>.
     // Removed React-side injection to eliminate duplicate #organization schemas.
     // --- Service Schema Injection for service pages ---
     const serviceSchemaData: Record<string, object> = {
