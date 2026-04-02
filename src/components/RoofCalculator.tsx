@@ -1,56 +1,30 @@
-import { useState } from 'react';
-import { Phone, Calendar, Check, Lightbulb, Layers, Grid3X3, Wrench, Minus, Shield, Home, Ruler, ClipboardCheck, TrendingDown, ArrowRight, Search, Thermometer, Camera, FileText } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Phone, Calendar, Check, Layers, Grid3X3, Wrench, Minus, Shield, Home, Ruler, ClipboardCheck, ArrowRight, ArrowLeft, FileText, ChevronRight, Sparkles, TrendingDown } from 'lucide-react';
 import ChecklistDownloadForm from './ChecklistDownloadForm';
-import HVHZText from './HVHZText';
 
-interface RoofSize {
-  label: string;
-  sqft: number;
-}
+/* ------------------------------------------------------------------ */
+/*  DATA — identical pricing / insurance logic to the original        */
+/* ------------------------------------------------------------------ */
 
-interface RoofType {
-  name: string;
-  icon: string;
-}
-
-interface PricingTier {
-  tier: 'Good' | 'Better' | 'Best';
-  product: string;
-  warranty: string;
-  minPrice: number;
-  maxPrice: number;
-  features: string[];
-}
-
-interface PricingData {
-  [key: string]: PricingTier[];
-}
+interface RoofSize { label: string; sqft: number; desc: string }
+interface RoofType { name: string; icon: string; tagline: string }
+interface PricingTier { tier: 'Good' | 'Better' | 'Best'; product: string; warranty: string; minPrice: number; maxPrice: number; features: string[] }
+interface PricingData { [key: string]: PricingTier[] }
 
 const roofSizes: RoofSize[] = [
-  { label: 'Smaller', sqft: 1500 },
-  { label: 'Average', sqft: 2000 },
-  { label: 'Mid-Size', sqft: 2500 },
-  { label: 'Large', sqft: 3500 },
-  { label: 'Estate', sqft: 5000 },
+  { label: 'Smaller', sqft: 1500, desc: '~1,500 sq ft' },
+  { label: 'Average', sqft: 2000, desc: '~2,000 sq ft' },
+  { label: 'Mid-Size', sqft: 2500, desc: '~2,500 sq ft' },
+  { label: 'Large', sqft: 3500, desc: '~3,500 sq ft' },
+  { label: 'Estate', sqft: 5000, desc: '~5,000 sq ft' },
 ];
 
 const roofTypes: RoofType[] = [
-  { name: 'Shingle', icon: 'shingle' },
-  { name: 'Tile', icon: 'tile' },
-  { name: 'Metal', icon: 'metal' },
-  { name: 'Flat', icon: 'flat' },
+  { name: 'Shingle', icon: 'shingle', tagline: 'Most popular in FL' },
+  { name: 'Tile', icon: 'tile', tagline: 'Classic South Florida' },
+  { name: 'Metal', icon: 'metal', tagline: 'Maximum longevity' },
+  { name: 'Flat', icon: 'flat', tagline: 'Low-slope systems' },
 ];
-
-const RoofTypeIcon = ({ type }: { type: string }) => {
-  const cls = "w-8 h-8";
-  switch (type) {
-    case 'shingle': return <Layers className={cls} />;
-    case 'tile': return <Grid3X3 className={cls} />;
-    case 'metal': return <Wrench className={cls} />;
-    case 'flat': return <Minus className={cls} />;
-    default: return null;
-  }
-};
 
 const pricingData: PricingData = {
   Shingle: [
@@ -75,7 +49,6 @@ const pricingData: PricingData = {
   ],
 };
 
-// Size labels for display
 const sizeLabels: Record<number, string> = {
   1500: 'Smaller (~1,500 sq ft)',
   2000: 'Average (~2,000 sq ft)',
@@ -84,32 +57,43 @@ const sizeLabels: Record<number, string> = {
   5000: 'Estate (~5,000 sq ft)',
 };
 
-function formatPrice(n: number): string {
-  return `$${n.toLocaleString()}`;
-}
+function formatPrice(n: number): string { return `$${n.toLocaleString()}`; }
+
+const RoofTypeIcon = ({ type, className = 'w-10 h-10' }: { type: string; className?: string }) => {
+  switch (type) {
+    case 'shingle': return <Layers className={className} />;
+    case 'tile': return <Grid3X3 className={className} />;
+    case 'metal': return <Wrench className={className} />;
+    case 'flat': return <Minus className={className} />;
+    default: return null;
+  }
+};
+
+/* ------------------------------------------------------------------ */
+/*  WIZARD COMPONENT                                                  */
+/* ------------------------------------------------------------------ */
 
 export default function RoofCalculator() {
+  const [step, setStep] = useState(1);
   const [selectedSize, setSelectedSize] = useState<RoofSize>(roofSizes[2]);
   const [selectedType, setSelectedType] = useState<RoofType | null>(null);
-  const [showResults, setShowResults] = useState(false);
+  const [direction, setDirection] = useState<'forward' | 'back'>('forward');
+  const [animating, setAnimating] = useState(false);
+  const wizardRef = useRef<HTMLDivElement>(null);
 
-  const handleSeeEstimate = () => {
-    if (selectedType) {
-      setShowResults(true);
-      setTimeout(() => {
-        document.getElementById('results-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
-    }
-  };
+  // Lead capture state
+  const [leadForm, setLeadForm] = useState({ first_name: '', email: '', phone: '' });
+  const [leadSubmitting, setLeadSubmitting] = useState(false);
+  const [leadSubmitted, setLeadSubmitted] = useState(false);
+  const [leadError, setLeadError] = useState('');
 
-  // Price calculations
+  // ---- calculations (unchanged logic) ----
   const getBasicPrice = () => {
     if (!selectedType) return 0;
     const pricing = pricingData[selectedType.name];
     const avgPerSqFt = (pricing[0].minPrice + pricing[0].maxPrice) / 2;
     return Math.round((avgPerSqFt * selectedSize.sqft) / 1000) * 1000;
   };
-
   const getUpgradedPrice = () => {
     if (!selectedType) return 0;
     const pricing = pricingData[selectedType.name];
@@ -118,19 +102,16 @@ export default function RoofCalculator() {
     return Math.round((avgPerSqFt * selectedSize.sqft) / 1000) * 1000;
   };
 
-  // Insurance estimates
   const sizeFactor = 0.6 + 0.4 * (selectedSize.sqft / 2500);
   const insBasicLo = Math.round(6800 * sizeFactor / 100) * 100;
   const insBasicHi = Math.round(9200 * sizeFactor / 100) * 100;
   const insUpLo = Math.round(3800 * sizeFactor / 100) * 100;
   const insUpHi = Math.round(5400 * sizeFactor / 100) * 100;
 
-  // Lifetime savings
   const annualSaveMid = ((insBasicLo + insBasicHi) / 2) - ((insUpLo + insUpHi) / 2);
   const saveLo = Math.round(annualSaveMid * 0.75 * 25 / 1000) * 1000;
   const saveHi = Math.round(annualSaveMid * 1.25 * 25 / 1000) * 1000;
 
-  // Financing
   const basicPrice = getBasicPrice();
   const upgradedPrice = getUpgradedPrice();
   const basicMonthly = Math.round(basicPrice / 120);
@@ -140,543 +121,627 @@ export default function RoofCalculator() {
 
   const currentPricing = selectedType ? pricingData[selectedType.name] : [];
 
-  return (
-    <section id="calculator" className="relative bg-gradient-to-b from-black via-slate-900 to-black py-20 pt-44">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  // ---- navigation ----
+  const goTo = (target: number) => {
+    if (animating) return;
+    setDirection(target > step ? 'forward' : 'back');
+    setAnimating(true);
+    setTimeout(() => {
+      setStep(target);
+      setAnimating(false);
+      // Scroll to top of wizard on step change
+      wizardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300);
+  };
+
+  const canAdvance = step === 1 ? true : step === 2 ? !!selectedType : false;
+
+  // ---- lead form submit ----
+  const handleLeadSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLeadError('');
+    setLeadSubmitting(true);
+    try {
+      const formElement = e.target as HTMLFormElement;
+      const response = await fetch(formElement.action, {
+        method: 'POST',
+        body: new FormData(formElement),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (!response.ok) { setLeadError('Something went wrong. Please try again.'); setLeadSubmitting(false); return; }
+      setLeadSubmitted(true);
+    } catch {
+      setLeadError('An unexpected error occurred. Please try again.');
+      setLeadSubmitting(false);
+    }
+  };
+
+  /* ================================================================ */
+  /*  PROGRESS BAR                                                    */
+  /* ================================================================ */
+  const steps = [
+    { num: 1, label: 'Roof Size' },
+    { num: 2, label: 'Material' },
+    { num: 3, label: 'Your Estimate' },
+    { num: 4, label: 'Deep Dive' },
+  ];
+
+  const ProgressBar = () => (
+    <div className="flex items-center justify-center gap-0 mb-10 px-4">
+      {steps.map((s, i) => (
+        <div key={s.num} className="flex items-center">
+          <button
+            onClick={() => { if (s.num < step || (s.num <= 3 && canAdvance)) goTo(s.num); }}
+            className={`flex items-center gap-2 transition-all duration-300 ${
+              s.num === step
+                ? 'opacity-100'
+                : s.num < step
+                  ? 'opacity-70 hover:opacity-100 cursor-pointer'
+                  : 'opacity-30 cursor-default'
+            }`}
+            disabled={s.num > step}
+          >
+            <div className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-500 ${
+              s.num < step
+                ? 'bg-green-500 text-white shadow-[0_0_12px_rgba(34,197,94,0.4)]'
+                : s.num === step
+                  ? 'bg-red-600 text-white shadow-[0_0_16px_rgba(220,38,38,0.5)] ring-2 ring-red-400/30'
+                  : 'bg-slate-700 text-gray-500'
+            }`}>
+              {s.num < step ? <Check className="w-4 h-4" /> : s.num}
+            </div>
+            <span className={`text-sm font-semibold hidden sm:inline transition-colors duration-300 ${
+              s.num === step ? 'text-white' : s.num < step ? 'text-green-400' : 'text-gray-600'
+            }`}>{s.label}</span>
+          </button>
+          {i < steps.length - 1 && (
+            <div className={`w-8 sm:w-16 h-0.5 mx-2 transition-all duration-500 ${
+              s.num < step ? 'bg-green-500/60' : 'bg-slate-700'
+            }`} />
+          )}
+        </div>
+      ))}
+    </div>
+  );
+
+  /* ================================================================ */
+  /*  STEP 1 — Roof Size                                              */
+  /* ================================================================ */
+  const Step1 = () => (
+    <div className={`transition-all duration-300 ${animating ? (direction === 'forward' ? 'opacity-0 translate-x-8' : 'opacity-0 -translate-x-8') : 'opacity-100 translate-x-0'}`}>
+      <div className="text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
+          How big is your roof?
+        </h2>
+        <p className="text-gray-400 text-lg">Don't worry about being exact — we'll dial it in during your free inspection.</p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
+        {roofSizes.map((size) => (
+          <button
+            key={size.label}
+            onClick={() => setSelectedSize(size)}
+            className={`group relative p-5 rounded-xl border-2 transition-all duration-300 ${
+              selectedSize.label === size.label
+                ? 'border-red-500 bg-red-600/15 shadow-[0_0_30px_rgba(220,38,38,0.2)] scale-[1.03]'
+                : 'border-slate-600/50 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-700/40'
+            }`}
+          >
+            {selectedSize.label === size.label && (
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
+                <Check className="w-3.5 h-3.5 text-white" />
+              </div>
+            )}
+            <div className={`text-lg font-bold mb-0.5 transition-colors ${selectedSize.label === size.label ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{size.label}</div>
+            <div className={`text-sm transition-colors ${selectedSize.label === size.label ? 'text-red-300' : 'text-gray-500 group-hover:text-gray-400'}`}>{size.desc}</div>
+          </button>
+        ))}
+      </div>
+
+      <div className="flex items-start gap-2 text-sm text-gray-500 bg-slate-900/40 rounded-lg p-3 mb-8">
+        <Sparkles className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+        <p>Most South Florida homes have 2,000–3,500 sq ft of roof area — typically 20–40% more than your living space.</p>
+      </div>
+
+      <button
+        onClick={() => goTo(2)}
+        className="w-full py-4 rounded-xl bg-red-600 text-white font-bold text-lg hover:bg-red-500 transition-all duration-300 shadow-lg shadow-red-600/20 hover:shadow-xl hover:shadow-red-600/30 hover:scale-[1.01] flex items-center justify-center gap-2"
+      >
+        Continue <ChevronRight className="w-5 h-5" />
+      </button>
+    </div>
+  );
+
+  /* ================================================================ */
+  /*  STEP 2 — Roof Type                                              */
+  /* ================================================================ */
+  const Step2 = () => (
+    <div className={`transition-all duration-300 ${animating ? (direction === 'forward' ? 'opacity-0 translate-x-8' : 'opacity-0 -translate-x-8') : 'opacity-100 translate-x-0'}`}>
+      <div className="text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
+          What type of roof?
+        </h2>
+        <p className="text-gray-400 text-lg">Select your current roof type or the material you're considering.</p>
+      </div>
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        {roofTypes.map((type) => (
+          <button
+            key={type.name}
+            onClick={() => setSelectedType(type)}
+            className={`group relative p-6 rounded-xl border-2 transition-all duration-300 text-center ${
+              selectedType?.name === type.name
+                ? 'border-red-500 bg-red-600/15 shadow-[0_0_30px_rgba(220,38,38,0.2)] scale-[1.03]'
+                : 'border-slate-600/50 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-700/40'
+            }`}
+          >
+            {selectedType?.name === type.name && (
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
+                <Check className="w-3.5 h-3.5 text-white" />
+              </div>
+            )}
+            <div className={`flex justify-center mb-3 transition-colors ${selectedType?.name === type.name ? 'text-red-400' : 'text-gray-500 group-hover:text-gray-300'}`}>
+              <RoofTypeIcon type={type.icon} className="w-12 h-12" />
+            </div>
+            <div className={`text-lg font-bold mb-1 transition-colors ${selectedType?.name === type.name ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{type.name}</div>
+            <div className={`text-xs transition-colors ${selectedType?.name === type.name ? 'text-red-300' : 'text-gray-600 group-hover:text-gray-500'}`}>{type.tagline}</div>
+          </button>
+        ))}
+      </div>
+
+      <div className="flex gap-3">
+        <button
+          onClick={() => goTo(1)}
+          className="px-6 py-4 rounded-xl border-2 border-slate-600 text-gray-400 font-semibold hover:border-slate-500 hover:text-white transition-all flex items-center gap-2"
+        >
+          <ArrowLeft className="w-4 h-4" /> Back
+        </button>
+        <button
+          onClick={() => { if (selectedType) goTo(3); }}
+          disabled={!selectedType}
+          className={`flex-1 py-4 rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 ${
+            selectedType
+              ? 'bg-red-600 text-white hover:bg-red-500 shadow-lg shadow-red-600/20 hover:shadow-xl hover:scale-[1.01]'
+              : 'bg-slate-700 text-gray-500 cursor-not-allowed'
+          }`}
+        >
+          See My Estimate <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+    </div>
+  );
+
+  /* ================================================================ */
+  /*  STEP 3 — Results (pricing + inline lead capture)                */
+  /* ================================================================ */
+  const Step3 = () => {
+    if (!selectedType) return null;
+    return (
+      <div className={`transition-all duration-300 ${animating ? (direction === 'forward' ? 'opacity-0 translate-x-8' : 'opacity-0 -translate-x-8') : 'opacity-100 translate-x-0'}`}>
+        {/* Selection summary pill */}
+        <div className="text-center mb-6">
+          <div className="inline-flex items-center gap-3 bg-slate-800/80 border border-slate-600/50 rounded-full px-5 py-2 mb-5">
+            <RoofTypeIcon type={selectedType.icon} className="w-5 h-5 text-red-400" />
+            <span className="text-sm font-semibold text-gray-300">
+              {selectedSize.sqft.toLocaleString()} sq ft &middot; {selectedType.name} &middot; Broward / Palm Beach
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">Your Estimate</h2>
+          <p className="text-gray-400 text-base">Three tiers — from code-minimum to insurance-optimized.</p>
+        </div>
+
+        {/* ---- 3-TIER PRICING CARDS ---- */}
+        <div className="grid lg:grid-cols-3 gap-5 mb-8">
+          {currentPricing.map((tier, index) => (
+            <div
+              key={tier.tier}
+              className={`relative rounded-2xl p-7 border-2 transition-all duration-500 ${
+                tier.tier === 'Better'
+                  ? 'border-red-500/70 bg-gradient-to-b from-red-600/10 to-slate-800/50 shadow-2xl shadow-red-600/10 lg:-translate-y-3'
+                  : 'border-slate-700/60 bg-slate-800/40'
+              }`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {tier.tier === 'Better' && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full shadow-lg">Most Popular</div>
+              )}
+              <div className="mb-5">
+                <div className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-1">{tier.tier}</div>
+                <h3 className="text-xl font-bold text-white mb-1">{tier.product}</h3>
+                <p className="text-sm text-gray-400">{tier.warranty}</p>
+              </div>
+              <div className="text-3xl font-extrabold text-white mb-1">
+                {formatPrice(Math.round((tier.minPrice * selectedSize.sqft) / 1000) * 1000)} – {formatPrice(Math.round((tier.maxPrice * selectedSize.sqft) / 1000) * 1000)}
+              </div>
+              <p className="text-xs text-gray-600 mb-5">Code-minimum → Insurance-optimized</p>
+              <ul className="space-y-2.5">
+                {tier.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />{feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* ---- INSURANCE SAVINGS SNAPSHOT ---- */}
+        <div className="bg-gradient-to-r from-green-900/20 to-slate-800/40 border border-green-600/20 rounded-2xl p-6 mb-8">
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+            <div className="w-14 h-14 rounded-2xl bg-green-600/10 flex items-center justify-center flex-shrink-0">
+              <TrendingDown className="w-7 h-7 text-green-400" />
+            </div>
+            <div className="flex-1">
+              <p className="text-sm font-bold uppercase tracking-wider text-green-500 mb-1">Insurance Savings Potential</p>
+              <p className="text-2xl font-extrabold text-white">
+                Save {formatPrice(saveLo)} – {formatPrice(saveHi)} <span className="text-base font-normal text-gray-400">over 25 years</span>
+              </p>
+              <p className="text-sm text-gray-400 mt-1">Upgrading from code-minimum to insurance-optimized often pays for itself through lower annual premiums.</p>
+            </div>
+            <button
+              onClick={() => goTo(4)}
+              className="px-5 py-3 bg-green-600/15 border border-green-600/30 rounded-xl text-green-400 font-semibold text-sm hover:bg-green-600/25 transition-all whitespace-nowrap flex items-center gap-1.5"
+            >
+              See the math <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+
+        {/* ---- INLINE LEAD CAPTURE ---- */}
+        <div className="bg-gradient-to-br from-slate-800/80 to-red-900/10 border-2 border-red-600/20 rounded-2xl p-8 mb-8">
+          {leadSubmitted ? (
+            <div className="text-center py-4">
+              <div className="w-16 h-16 bg-green-600/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="w-8 h-8 text-green-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">You're on the list!</h3>
+              <p className="text-gray-400">We'll reach out within 60 minutes during business hours to schedule your free forensic roof inspection.</p>
+            </div>
+          ) : (
+            <>
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-extrabold text-white mb-2">
+                  Get Your Free Forensic Roof Inspection
+                </h3>
+                <p className="text-gray-400 max-w-lg mx-auto">
+                  A real inspection — not a driveway estimate. Infrared, moisture meters, attic evaluation, and a full photo report. No cost, no obligation.
+                </p>
+              </div>
+
+              {leadError && (
+                <div className="mb-4 p-3 bg-red-900/20 border border-red-600/50 rounded-lg text-red-400 text-sm text-center">{leadError}</div>
+              )}
+
+              <form
+                action="https://formspree.io/f/mzdbydvv"
+                method="POST"
+                onSubmit={handleLeadSubmit}
+                className="max-w-lg mx-auto"
+              >
+                <input type="hidden" name="_subject" value="Calculator Lead — Free Inspection Request" />
+                <input type="hidden" name="form_source" value="Roof Calculator Wizard — Step 3" />
+                <input type="hidden" name="roof_type" value={selectedType.name} />
+                <input type="hidden" name="roof_size" value={selectedSize.label} />
+                <input type="hidden" name="roof_size_sqft" value={selectedSize.sqft} />
+                <input type="hidden" name="estimated_range" value={`${formatPrice(Math.round((currentPricing[0].minPrice * selectedSize.sqft) / 1000) * 1000)} - ${formatPrice(Math.round((currentPricing[2].maxPrice * selectedSize.sqft) / 1000) * 1000)}`} />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                  <input
+                    type="text" name="first_name" placeholder="First Name" required
+                    value={leadForm.first_name}
+                    onChange={(e) => setLeadForm({ ...leadForm, first_name: e.target.value })}
+                    className="w-full px-4 py-3.5 bg-slate-900/80 border border-slate-600/60 rounded-xl text-white placeholder-gray-500 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all"
+                  />
+                  <input
+                    type="email" name="email" placeholder="Email Address" required
+                    value={leadForm.email}
+                    onChange={(e) => setLeadForm({ ...leadForm, email: e.target.value })}
+                    className="w-full px-4 py-3.5 bg-slate-900/80 border border-slate-600/60 rounded-xl text-white placeholder-gray-500 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all"
+                  />
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="tel" name="phone" placeholder="Phone Number" required
+                    value={leadForm.phone}
+                    onChange={(e) => setLeadForm({ ...leadForm, phone: e.target.value })}
+                    className="flex-1 px-4 py-3.5 bg-slate-900/80 border border-slate-600/60 rounded-xl text-white placeholder-gray-500 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all"
+                  />
+                  <button
+                    type="submit"
+                    disabled={leadSubmitting}
+                    className={`px-8 py-3.5 rounded-xl font-bold text-base whitespace-nowrap transition-all ${
+                      leadSubmitting
+                        ? 'bg-gray-700 text-gray-400 cursor-not-allowed'
+                        : 'bg-red-600 text-white hover:bg-red-500 shadow-lg shadow-red-600/20 hover:shadow-xl'
+                    }`}
+                  >
+                    {leadSubmitting ? 'Sending...' : 'Schedule Inspection'}
+                  </button>
+                </div>
+              </form>
+
+              <div className="flex flex-wrap justify-center gap-4 mt-5 text-xs text-gray-500">
+                <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-green-500" />100% free</span>
+                <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-green-500" />No obligation</span>
+                <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5 text-green-500" />Response within 60 min</span>
+              </div>
+
+              <div className="flex justify-center mt-4">
+                <a href="tel:+17542275605" className="text-gray-500 hover:text-white text-sm transition-colors flex items-center gap-1.5">
+                  <Phone className="w-4 h-4" /> Prefer to call? (754) 227-5605
+                </a>
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Navigation */}
+        <div className="flex gap-3">
+          <button
+            onClick={() => goTo(2)}
+            className="px-6 py-4 rounded-xl border-2 border-slate-600 text-gray-400 font-semibold hover:border-slate-500 hover:text-white transition-all flex items-center gap-2"
+          >
+            <ArrowLeft className="w-4 h-4" /> Back
+          </button>
+          <button
+            onClick={() => goTo(4)}
+            className="flex-1 py-4 rounded-xl bg-slate-700/60 border border-slate-600 text-gray-300 font-bold text-lg hover:bg-slate-700 hover:text-white transition-all flex items-center justify-center gap-2"
+          >
+            Insurance Deep Dive <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  /* ================================================================ */
+  /*  STEP 4 — Insurance deep dive + education + inspection details   */
+  /* ================================================================ */
+  const Step4 = () => {
+    if (!selectedType) return null;
+    return (
+      <div className={`space-y-10 transition-all duration-300 ${animating ? (direction === 'forward' ? 'opacity-0 translate-x-8' : 'opacity-0 -translate-x-8') : 'opacity-100 translate-x-0'}`}>
 
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">The Insurance Trade-Off</h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">Two homeowners. Same street. Same roof size. Very different insurance bills. Here's why.</p>
+        </div>
+
+        {/* ---- SPLIT PRICE DISPLAY ---- */}
+        <div className="bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden">
+          <div className="px-8 pt-7 pb-4 text-center">
+            <p className="text-gray-400 text-sm">{sizeLabels[selectedSize.sqft]} &middot; {selectedType.name} &middot; Broward / Palm Beach County</p>
+            <div className="flex flex-wrap justify-center gap-2 mt-3">
+              {['HVHZ Compliant', 'Includes Tear-Off', 'Permit & Inspection', 'Manufacturer Warranty'].map(chip => (
+                <span key={chip} className="bg-white/5 border border-slate-700 text-gray-400 text-xs px-3 py-1 rounded-full">{chip}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-0 mx-6 relative">
+            <div className="bg-red-600/5 border border-red-600/15 md:rounded-l-xl rounded-t-xl md:rounded-tr-none p-6 text-center md:border-r-0">
+              <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-1">Code-Minimum</p>
+              <p className="text-4xl font-extrabold text-white mb-1">{formatPrice(basicPrice)}</p>
+              <p className="text-sm text-gray-400 mb-4">Passes inspection. That's it.</p>
+              <div className="border-t border-white/5 pt-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Est. Annual Insurance</p>
+                <p className="text-xl font-extrabold text-red-400">{formatPrice(insBasicLo)} – {formatPrice(insBasicHi)}/yr</p>
+                <p className="text-xs text-gray-500 mt-1">Minimal wind mitigation credits</p>
+              </div>
+            </div>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-slate-800 border-2 border-slate-600 rounded-full flex items-center justify-center z-10 hidden md:flex">
+              <span className="text-xs font-extrabold text-gray-400">VS</span>
+            </div>
+            <div className="bg-green-600/5 border border-green-600/15 md:rounded-r-xl rounded-b-xl md:rounded-bl-none p-6 text-center md:border-l-0">
+              <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-1">Insurance-Optimized</p>
+              <p className="text-4xl font-extrabold text-white mb-1">{formatPrice(upgradedPrice)}</p>
+              <p className="text-sm text-gray-400 mb-4">Built to maximize insurance discounts</p>
+              <div className="border-t border-white/5 pt-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Est. Annual Insurance</p>
+                <p className="text-xl font-extrabold text-green-400">{formatPrice(insUpLo)} – {formatPrice(insUpHi)}/yr</p>
+                <p className="text-xs text-gray-500 mt-1">Full wind mitigation credits applied</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-6 h-1.5 rounded-full bg-gradient-to-r from-red-500 via-amber-500 to-green-500 mt-0" />
+
+          <div className="mx-6 mt-4 bg-green-600/8 border border-green-600/20 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
+            <span className="text-2xl font-extrabold text-green-400 whitespace-nowrap">Save {formatPrice(saveLo)} – {formatPrice(saveHi)}</span>
+            <span className="text-sm text-gray-300">in insurance premiums over the life of your roof.</span>
+          </div>
+
+          <div className="px-8 pb-8 pt-5 text-center">
+            <p className="text-sm text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              The upfront difference is often just <strong className="text-white">{formatPrice(upgradedPrice - basicPrice)}</strong> — but the insurance gap starts day one and grows every year. The roof that costs more upfront <span className="text-amber-400 font-semibold">costs far less over time</span>.
+            </p>
+          </div>
+        </div>
+
+        {/* ---- 4 THINGS INSURERS CHECK ---- */}
+        <div className="bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden">
+          <div className="bg-gradient-to-r from-slate-800 to-blue-900/20 px-8 pt-7 pb-5 border-b border-slate-700">
+            <p className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">Why the Insurance Gap Is So Large</p>
+            <h3 className="text-xl font-bold text-white mb-1">It comes down to four things insurers check</h3>
+            <p className="text-sm text-gray-400">Your wind mitigation form (OIR-B1-1802) determines your premium.</p>
+          </div>
+          <div className="p-8">
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-red-600/5 border border-red-600/10 rounded-xl p-5">
+                <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Code-Minimum Roof</p>
+                <ul className="space-y-2">
+                  {['Standard nail pattern only', 'No secondary water barrier', 'Basic underlayment', 'Existing roof-to-wall connections', 'Minimal or no mitigation credits'].map(item => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
+                      <span className="text-red-500 font-bold text-xs mt-0.5">{'\u2717'}</span>{item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-green-600/5 border border-green-600/10 rounded-xl p-5">
+                <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-3">Insurance-Optimized Roof</p>
+                <ul className="space-y-2">
+                  {['Enhanced HVHZ fastening pattern', 'Secondary water barrier (SWB)', 'Impact-rated underlayment', 'Documented hurricane straps/clips', 'Maximum wind mitigation credits'].map(item => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
+                      <span className="text-green-500 font-bold text-xs mt-0.5">{'\u2713'}</span>{item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ---- FINANCING BRIDGE ---- */}
+        <div className="bg-gradient-to-br from-slate-800/60 to-blue-900/15 border border-slate-700 rounded-2xl p-8 text-center">
+          <h3 className="text-xl font-bold text-white mb-2">The Upgrade Pays for Itself</h3>
+          <p className="text-sm text-gray-400 mb-6">See what the difference looks like month to month.</p>
+          <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center max-w-md mx-auto mb-5">
+            <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-center">
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Basic</p>
+              <p className="text-2xl font-extrabold text-white">{formatPrice(basicMonthly)}</p>
+              <p className="text-xs text-gray-500">per month</p>
+            </div>
+            <ArrowRight className="w-5 h-5 text-gray-600" />
+            <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-4 text-center">
+              <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-1">Optimized</p>
+              <p className="text-2xl font-extrabold text-white">{formatPrice(upgradedMonthly)}</p>
+              <p className="text-xs text-gray-500">per month</p>
+            </div>
+          </div>
+          <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-4 max-w-md mx-auto mb-5">
+            <p className="text-lg font-extrabold text-green-400">+{formatPrice(monthlyDiff)}/mo more for upgrade</p>
+            <p className="text-sm text-gray-400">But you save ~{formatPrice(insSavingsMonthly)}/mo in lower insurance</p>
+          </div>
+          <a href="/easy-payments/" className="inline-flex items-center gap-1.5 px-6 py-3 border border-blue-500/50 text-blue-400 rounded-xl font-semibold text-sm hover:bg-blue-600/10 hover:text-white transition-all">
+            Explore Financing Options <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
+        {/* ---- WHAT WE CHECK DURING INSPECTION ---- */}
+        <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-white mb-2">What We Check During a Free Forensic Inspection</h3>
+          <p className="text-sm text-gray-400 mb-6">45-60 minutes, fully documented — things no calculator can see.</p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
+            {[
+              { icon: Home, title: 'Attic & Structural', desc: 'Hurricane straps, clips, and roof-to-wall connections — your biggest insurance factor.', why: 'Determines your biggest discount' },
+              { icon: Shield, title: 'Secondary Water Barrier', desc: 'We check if your roof has or can accommodate a sealed SWB — required by many FL insurers.', why: 'Required for many FL policies' },
+              { icon: Ruler, title: 'Decking & Pitch', desc: 'Hidden plywood damage and pitch measurements that affect real pricing.', why: 'Finds hidden costs before they surprise you' },
+              { icon: ClipboardCheck, title: 'Code & Permitting', desc: 'Local requirements beyond the Florida Building Code for every Broward & Palm Beach city.', why: 'Avoid failed inspections' },
+            ].map(item => (
+              <div key={item.title} className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-5">
+                <item.icon className="w-6 h-6 text-gray-400 mb-2" />
+                <h4 className="text-sm font-bold text-white mb-1">{item.title}</h4>
+                <p className="text-xs text-gray-400 leading-relaxed mb-1">{item.desc}</p>
+                <p className="text-xs text-amber-400 font-semibold">{item.why}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ---- SELLING YOUR HOME ---- */}
+        <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-6">
+          <h4 className="text-lg font-bold text-white mb-2">Planning to Sell Your Home?</h4>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            Your roof choice affects the sale. Buyers who need a mortgage also need insurance — and their insurer checks the same wind mitigation factors. A roof <strong className="text-red-400">without a secondary water barrier or proper hurricane straps</strong> can make your home harder to insure, delaying or killing a deal. A clean wind mitigation report makes your home more attractive to buyers and lenders.
+          </p>
+        </div>
+
+        {/* ---- FINAL CTA ---- */}
+        <div className="bg-gradient-to-br from-red-900/20 to-slate-800/50 border-2 border-red-600/20 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-extrabold text-white mb-3">Every roof has a timeline. We'd rather you know yours.</h3>
+          <p className="text-sm text-gray-400 max-w-xl mx-auto mb-5 leading-relaxed">
+            Whether that's today, next month, or a few years from now — we want to be the roofer you already trust. We'll come out with infrared, moisture meters, and cameras and hand you the full documentation. No strings attached.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm text-gray-300">
+            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />Full forensic inspection with photos</span>
+            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />Wind mitigation evaluation</span>
+            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />100% free, zero obligation</span>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="/contact/" className="px-8 py-4 bg-red-600 text-white rounded-xl font-bold text-lg hover:bg-red-500 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
+              <Calendar className="w-5 h-5" />Schedule Inspection
+            </a>
+            <a href="tel:+17542275605" className="px-8 py-4 border-2 border-slate-600 text-gray-300 rounded-xl font-semibold hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
+              <Phone className="w-5 h-5" />(754) 227-5605
+            </a>
+          </div>
+        </div>
+
+        {/* ---- CHECKLIST DOWNLOAD ---- */}
+        <ChecklistDownloadForm
+          roofType={selectedType.name}
+          roofSize={selectedSize.label}
+          roofSqft={selectedSize.sqft}
+        />
+
+        {/* ---- TRUST BAR ---- */}
+        <div className="border-t border-b border-slate-800 py-6">
+          <div className="flex flex-wrap justify-center gap-8 sm:gap-12">
+            {[
+              { val: '4.8+ \u2605', label: 'Google Reviews' },
+              { val: '20+', label: 'Years in Business' },
+              { val: '2,500+', label: 'Roofs Completed' },
+              { val: 'Dual Licensed', label: 'CGC + CCC' },
+              { val: 'HVHZ', label: 'High Wind Certified' },
+            ].map(item => (
+              <div key={item.label} className="text-center">
+                <span className="block text-lg font-bold text-white">{item.val}</span>
+                <span className="text-xs text-gray-500">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Disclaimer */}
+        <div className="text-center text-xs text-gray-600 max-w-3xl mx-auto pb-4">
+          * Estimates are for informational purposes only and do not constitute a quote or contract. Actual pricing may vary based on roof condition, accessibility, local codes, material availability, and other factors determined during inspection. Insurance premium estimates are approximate and vary by carrier, coverage type, and property specifics.
+        </div>
+
+        {/* Back button */}
+        <div className="flex justify-center">
+          <button
+            onClick={() => goTo(3)}
+            className="px-6 py-3 rounded-xl border-2 border-slate-600 text-gray-400 font-semibold hover:border-slate-500 hover:text-white transition-all flex items-center gap-2"
+          >
+            <ArrowLeft className="w-4 h-4" /> Back to Estimate
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  /* ================================================================ */
+  /*  RENDER                                                          */
+  /* ================================================================ */
+  return (
+    <section id="calculator" ref={wizardRef} className="relative bg-gradient-to-b from-black via-slate-900 to-black py-20 pt-44">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* ---- HEADER ---- */}
+        <div className="text-center mb-8">
           <div className="inline-block bg-red-600/10 border border-red-600/30 rounded-full px-4 py-1.5 mb-4">
             <span className="text-red-500 text-sm font-semibold uppercase tracking-wide">Free Estimate Tool</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">Roof Cost Calculator</h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">Select your roof size and material to get an instant estimate</p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3">Roof Cost Calculator</h1>
+          <p className="text-lg text-gray-500 max-w-xl mx-auto">Get an instant estimate in under 30 seconds — no signup required.</p>
         </div>
 
-        {/* Calculator Steps */}
-        <div className="max-w-5xl mx-auto bg-slate-700/60 backdrop-blur-sm border border-slate-600/80 rounded-2xl p-8 shadow-[0_0_60px_rgba(0,0,0,0.5),0_0_20px_rgba(71,85,105,0.3)]">
-          {/* Step 1 */}
-          <div className="mb-8">
-            <h3 className="text-3xl font-extrabold mb-6 flex items-center gap-3">
-              <span className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)]">Step 1:</span>
-              <span className="text-white">Select Your Roof Size</span>
-            </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
-              {roofSizes.map((size) => (
-                <button
-                  key={size.label}
-                  onClick={() => setSelectedSize(size)}
-                  className={`p-4 rounded-lg border-3 transition-all duration-300 ${
-                    selectedSize.label === size.label
-                      ? 'border-red-600 bg-red-600/30 text-white shadow-[0_0_20px_rgba(220,38,38,0.4)] ring-2 ring-red-500/50 scale-105 relative z-10'
-                      : 'border-slate-600 bg-slate-700/40 text-gray-400 hover:border-slate-500 hover:bg-slate-700/60 hover:text-gray-300 opacity-70 hover:opacity-90'
-                  }`}
-                  style={{ borderWidth: selectedSize.label === size.label ? '3px' : '2px' }}
-                >
-                  <div className="font-semibold mb-1">{size.label}</div>
-                  <div className="text-sm opacity-80">~{size.sqft.toLocaleString()} sq ft</div>
-                </button>
-              ))}
-            </div>
-            <div className="flex items-start gap-2 text-sm text-gray-400 bg-slate-900/50 rounded-lg p-3">
-              <span className="text-lg">{'\u{1F4A1}'}</span>
-              <p>Not sure? Most homes in South Florida have 2,000 - 3,500 sq ft of roof area.</p>
-            </div>
-          </div>
+        {/* ---- PROGRESS BAR ---- */}
+        <ProgressBar />
 
-          {/* Step 2 */}
-          <div className="mb-8">
-            <h3 className="text-3xl font-extrabold mb-6 flex items-center gap-3">
-              <span className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)]">Step 2:</span>
-              <span className="text-white">Select Roof Type</span>
-            </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              {roofTypes.map((type) => (
-                <button
-                  key={type.name}
-                  onClick={() => setSelectedType(type)}
-                  className={`p-6 rounded-lg border-3 transition-all duration-300 ${
-                    selectedType?.name === type.name
-                      ? 'border-red-600 bg-red-600/30 text-white shadow-[0_0_20px_rgba(220,38,38,0.4)] ring-2 ring-red-500/50 scale-105 relative z-10'
-                      : 'border-slate-600 bg-slate-700/40 text-gray-400 hover:border-slate-500 hover:bg-slate-700/60 hover:text-gray-300 opacity-70 hover:opacity-90'
-                  }`}
-                  style={{ borderWidth: selectedType?.name === type.name ? '3px' : '2px' }}
-                >
-                  <div className="text-4xl mb-2"><RoofTypeIcon type={type.icon} /></div>
-                  <div className="font-semibold">{type.name}</div>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <button
-            onClick={handleSeeEstimate}
-            disabled={!selectedType}
-            className={`w-full py-4 rounded-full font-bold text-lg transition-all duration-300 ${
-              selectedType
-                ? 'bg-red-600 text-white hover:bg-red-700 shadow-lg hover:shadow-xl hover:scale-105'
-                : 'bg-gray-700 text-gray-400 cursor-not-allowed'
-            }`}
-          >
-            See My Estimate
-          </button>
+        {/* ---- WIZARD CARD ---- */}
+        <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-6 sm:p-10 shadow-[0_0_80px_rgba(0,0,0,0.4)]">
+          {step === 1 && <Step1 />}
+          {step === 2 && <Step2 />}
+          {step === 3 && <Step3 />}
+          {step === 4 && <Step4 />}
         </div>
-
-        {/* ================================================================ */}
-        {/* RESULTS — NEW FLOW: Interrupt → Trade-Off → Inspection → Price  */}
-        {/* ================================================================ */}
-        {showResults && selectedType && (
-          <div id="results-section" className="mt-16 space-y-12 max-w-4xl mx-auto" style={{ animation: 'fadeInUp 0.6s ease-out' }}>
-
-            {/* ============================================ */}
-            {/* SECTION 1: PATTERN INTERRUPT                 */}
-            {/* ============================================ */}
-            <div className="text-center" style={{ animation: 'fadeInUp 0.6s ease-out both' }}>
-              <div className="inline-block bg-amber-600/10 border border-amber-600/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-amber-400 text-sm font-bold uppercase tracking-wide">
-                  {selectedSize.sqft.toLocaleString()} sq ft &middot; {selectedType.name} &middot; Broward / Palm Beach
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5 leading-tight">
-                Before you see pricing, there's something<br className="hidden sm:block" />
-                most homeowners <span className="text-green-400">never find out</span> until it's too late.
-              </h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                The cost of your roof isn't just what you pay the roofer. It's what you'll pay in <strong className="text-white">insurance premiums every year after.</strong>
-              </p>
-            </div>
-
-            {/* ============================================ */}
-            {/* SECTION 2: THE INSURANCE TRADE-OFF           */}
-            {/* ============================================ */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.15s both' }}>
-              <div className="px-8 pt-8 pb-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">The Insurance Trade-Off</p>
-                <h3 className="text-2xl font-bold text-white mb-2">Two homeowners. Same street. Same roof size. Very different insurance bills.</h3>
-              </div>
-
-              <div className="p-8">
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {/* Basic */}
-                  <div className="bg-red-600/5 border border-red-600/15 rounded-xl p-6">
-                    <p className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3">Lower End</p>
-                    <h4 className="text-lg font-bold text-white mb-4">Basic Code-Minimum Roof</h4>
-                    <ul className="space-y-2.5">
-                      {['Meets minimum building code — nothing more', 'Standard underlayment only', 'No insurance optimization features', 'Higher annual premiums, fewer available carriers', 'May not qualify for wind mitigation credits'].map(item => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
-                          <span className="text-red-500 font-bold text-sm mt-0.5">{'\u2717'}</span>{item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {/* Optimized */}
-                  <div className="bg-green-600/5 border-2 border-green-600/25 rounded-xl p-6 shadow-lg shadow-green-600/5">
-                    <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-3">Higher End</p>
-                    <h4 className="text-lg font-bold text-white mb-4">Insurance-Optimized Roof</h4>
-                    <ul className="space-y-2.5">
-                      {['HVHZ compliant — exceeds code', 'Upgraded self-adhering underlayment', 'Foam adhesive system & enhanced fastening', 'Significant premium reductions with more carriers', 'Full wind mitigation credits'].map(item => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-gray-300">
-                          <span className="text-green-500 font-bold text-sm mt-0.5">{'\u2713'}</span>{item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Insight callout */}
-                <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-5 text-center">
-                  <p className="text-base text-gray-300 leading-relaxed">
-                    <strong className="text-amber-400">Here's what this means for you:</strong> Some homeowners in Broward & Palm Beach save enough on insurance premiums over just a few years to cover the difference between these two options entirely. Others spend less upfront — and never find out what they left on the table.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* ============================================ */}
-            {/* SECTION 3: FREE FORENSIC INSPECTION CTA      */}
-            {/* ============================================ */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-green-900/10 backdrop-blur-sm border border-green-600/20 rounded-2xl p-10 shadow-2xl relative overflow-hidden" style={{ animation: 'fadeInUp 0.6s ease-out 0.3s both' }}>
-              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-green-500/5 to-transparent rounded-bl-full" />
-              <div className="relative">
-                <div className="inline-block bg-green-600/12 border border-green-600/25 rounded-full px-4 py-1.5 mb-5">
-                  <span className="text-green-400 text-sm font-bold uppercase tracking-wide">No Cost &middot; No Obligation</span>
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-5 leading-tight">
-                  Get a Free Forensic Roof Inspection —<br className="hidden sm:block" />
-                  Fully Documented With Photos
-                </h3>
-                <p className="text-base text-gray-300 max-w-2xl mb-5 leading-relaxed">
-                  This isn't a quick walk-across-your-roof estimate. We get up there, lift the tiles, inspect the underlayment, and use <strong className="text-white">infrared imaging and moisture meters</strong> to find what most roofers never look for. Then we go into your attic and document everything from the inside out. Every finding photographed. Every detail recorded. A clear picture of <strong className="text-white">exactly where you stand.</strong>
-                </p>
-                <p className="text-base text-gray-300 max-w-2xl mb-8 leading-relaxed">
-                  Here's the truth: roofs don't last forever, and when yours is ready, we want to be the roofer <strong className="text-white">you already know and trust.</strong> Whether that's today, next week, or even a few years down the road — we'd rather earn that relationship now by giving you our honest opinion, not a sales pitch. That's exactly why we'll come out, inspect everything, and hand you the documentation — <em>because when you're ready, we want to be the first call you make.</em>
-                </p>
-
-                {/* 6-feature grid */}
-                <div className="grid sm:grid-cols-2 gap-3 mb-8">
-                  {[
-                    { label: 'Infrared & moisture meter scanning' },
-                    { label: 'Tile lifted, underlayment inspected' },
-                    { label: 'Full attic evaluation from the inside' },
-                    { label: 'Every finding photographed & documented' },
-                    { label: 'Insurance optimization guidance' },
-                    { label: 'Written report — yours to keep forever' },
-                  ].map((feat) => (
-                    <div key={feat.label} className="flex items-center gap-3">
-                      <div className="w-7 h-7 rounded-lg bg-green-600/10 flex items-center justify-center flex-shrink-0">
-                        <Check className="w-4 h-4 text-green-500" />
-                      </div>
-                      <span className="text-sm text-gray-200">{feat.label}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="/contact/" className="px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg font-bold text-lg hover:from-green-500 hover:to-green-600 transition-all shadow-lg shadow-green-600/25 hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                    <Calendar className="w-5 h-5" />Schedule My Free Forensic Inspection
-                  </a>
-                  <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-200 rounded-lg font-semibold text-lg hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
-                    <Phone className="w-5 h-5" />(754) 227-5605
-                  </a>
-                </div>
-                <p className="text-gray-500 text-sm mt-4">Most homeowners tell us the inspection alone was worth it — even the ones who didn't roof for another two years.</p>
-
-                {/* Insider's Guide bonus */}
-                <div className="mt-7 pt-6 border-t border-white/5 flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-600/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-6 h-6 text-amber-400" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-amber-400 mb-1">Bonus: Free Insider's Guide</p>
-                    <p className="text-sm text-gray-400 leading-relaxed">When you schedule your inspection, we'll immediately send you our <strong className="text-gray-200">Insider's Guide to Hiring a Roofing Contractor</strong> — the questions most homeowners don't think to ask, and the answers that separate the pros from the problems.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* ============================================ */}
-            {/* SECTION 4: PRICING TIERS (NOW IN CONTEXT)    */}
-            {/* ============================================ */}
-            <div style={{ animation: 'fadeInUp 0.6s ease-out 0.45s both' }}>
-              <div className="text-center mb-2">
-                <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Your {selectedType.name} Roof Estimate</p>
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Here's what you selected for your{' '}
-                  <span className="text-white font-semibold">{selectedSize.sqft.toLocaleString()} sq ft</span>{' '}
-                  <span className="text-white font-semibold">{selectedType.name}</span> roof
-                </h3>
-                <p className="text-base text-gray-500 mb-8">These ranges reflect the Basic {'\u2192'} Insurance-Optimized spectrum you just saw.</p>
-              </div>
-
-              <div className="grid lg:grid-cols-3 gap-6">
-                {currentPricing.map((tier, index) => (
-                  <div
-                    key={tier.tier}
-                    className={`bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border-2 transition-all duration-500 ${
-                      tier.tier === 'Better'
-                        ? 'border-red-600 shadow-2xl shadow-red-600/20 lg:-translate-y-4'
-                        : 'border-slate-700'
-                    }`}
-                    style={{ animation: `fadeInUp 0.6s ease-out ${0.5 + index * 0.15}s both` }}
-                  >
-                    {tier.tier === 'Better' && (
-                      <div className="bg-red-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-4">Most Popular</div>
-                    )}
-                    <div className="mb-6">
-                      <div className="text-gray-300 text-base font-semibold uppercase tracking-wide mb-2">{tier.tier}</div>
-                      <h4 className="text-2xl font-bold text-white mb-2">{tier.product}</h4>
-                      <p className="text-gray-300 text-base mb-4">{tier.warranty}</p>
-                      <div className="text-3xl font-bold text-white">
-                        {formatPrice(Math.round((tier.minPrice * selectedSize.sqft) / 1000) * 1000)} — {formatPrice(Math.round((tier.maxPrice * selectedSize.sqft) / 1000) * 1000)}
-                      </div>
-                      <p className="text-xs text-gray-500 mt-1">Basic code {'\u2190'} {'\u2192'} Insurance optimized</p>
-                    </div>
-                    <ul className="space-y-3">
-                      {tier.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-gray-300">
-                          <Check className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-
-              {/* Pricing footnote */}
-              <div className="mt-8 bg-slate-900/50 border border-slate-700/50 rounded-xl p-5 text-center max-w-2xl mx-auto">
-                <p className="text-sm text-gray-400 leading-relaxed">
-                  <strong className="text-gray-200">Why the range?</strong> The low end reflects a code-minimum installation. The high end reflects an insurance-optimized roof with HVHZ compliance, upgraded underlayment, and full wind mitigation — which often pays for itself in premium savings. Your free forensic inspection will tell you exactly which approach makes the most sense for <em>your</em> home.
-                </p>
-              </div>
-
-              {/* Financing teaser */}
-              <div className="mt-6 bg-indigo-600/5 border border-indigo-600/15 rounded-xl p-5 max-w-2xl mx-auto flex items-center gap-4">
-                <div className="w-11 h-11 bg-indigo-600/12 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <ArrowRight className="w-5 h-5 text-indigo-400" />
-                </div>
-                <p className="text-sm text-indigo-200 leading-relaxed text-left">
-                  <strong className="text-indigo-300">Thinking about financing just the upgrade?</strong> Many homeowners find their monthly payment is actually <em>less</em> than what they save on insurance premiums. We'll walk you through the numbers at your inspection.
-                </p>
-              </div>
-            </div>
-
-            {/* ============================================ */}
-            {/* SPLIT PRICE DISPLAY: Basic vs Insurance-Opt  */}
-            {/* ============================================ */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.5s both' }}>
-              {/* Header */}
-              <div className="px-8 pt-8 pb-4 text-center">
-                <p className="text-base font-semibold uppercase tracking-widest text-gray-300 mb-1">Now See the Insurance Trade-Off In Dollars</p>
-                <p className="text-gray-300 text-base">{sizeLabels[selectedSize.sqft]} · {selectedType.name} · Broward / Palm Beach County</p>
-                <div className="flex flex-wrap justify-center gap-2 mt-4">
-                  {['HVHZ Compliant', 'Includes Tear-Off', 'Permit & Inspection', 'Manufacturer Warranty'].map(chip => (
-                    <span key={chip} className="bg-white/5 border border-slate-700 text-gray-300 text-sm px-3 py-1.5 rounded-full">{chip}</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* The Split */}
-              <div className="grid md:grid-cols-2 gap-0 mx-6 relative">
-                {/* Basic */}
-                <div className="bg-red-600/5 border border-red-600/15 md:rounded-l-xl md:rounded-r-none rounded-t-xl md:rounded-t-none md:rounded-tl-xl p-6 text-center md:border-r-0">
-                  <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-1">Lower End</p>
-                  <p className="text-base font-semibold text-gray-300 mb-3">Basic Code-Minimum Roof</p>
-                  <p className="text-4xl font-extrabold text-white mb-1">{formatPrice(basicPrice)}</p>
-                  <p className="text-sm text-gray-300 mb-5">Passes inspection. That's it.</p>
-                  <div className="border-t border-white/5 pt-4">
-                    <p className="text-xs font-bold uppercase tracking-widest text-gray-300 mb-1">Est. Annual Insurance</p>
-                    <p className="text-2xl font-extrabold text-red-500">{formatPrice(insBasicLo)} – {formatPrice(insBasicHi)}/yr</p>
-                    <p className="text-sm text-gray-300 mt-1">Minimal wind mitigation credits</p>
-                  </div>
-                </div>
-                {/* VS badge */}
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-slate-800 border-2 border-slate-600 rounded-full flex items-center justify-center z-10 hidden md:flex">
-                  <span className="text-sm font-extrabold text-gray-300">VS</span>
-                </div>
-                {/* Upgraded */}
-                <div className="bg-green-600/5 border border-green-600/15 md:rounded-r-xl md:rounded-l-none rounded-b-xl md:rounded-b-none md:rounded-br-xl p-6 text-center md:border-l-0">
-                  <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-1">Higher End</p>
-                  <p className="text-base font-semibold text-gray-300 mb-3">Insurance-Optimized Roof</p>
-                  <p className="text-4xl font-extrabold text-white mb-1">{formatPrice(upgradedPrice)}</p>
-                  <p className="text-sm text-gray-300 mb-5">Built to maximize insurance discounts</p>
-                  <div className="border-t border-white/5 pt-4">
-                    <p className="text-xs font-bold uppercase tracking-widest text-gray-300 mb-1">Est. Annual Insurance</p>
-                    <p className="text-2xl font-extrabold text-green-500">{formatPrice(insUpLo)} – {formatPrice(insUpHi)}/yr</p>
-                    <p className="text-sm text-gray-300 mt-1">Full wind mitigation credits applied</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Gradient bar */}
-              <div className="mx-6 h-1.5 rounded-full bg-gradient-to-r from-red-500 via-amber-500 to-green-500 mt-0" />
-
-              {/* Savings strip */}
-              <div className="mx-6 mt-4 bg-green-600/8 border border-green-600/20 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
-                <span className="text-2xl font-extrabold text-green-400 whitespace-nowrap">Save {formatPrice(saveLo)} – {formatPrice(saveHi)}</span>
-                <span className="text-base text-gray-300">in insurance premiums over the life of your roof. <strong className="text-white">The roof that costs more upfront costs far less over time.</strong></span>
-              </div>
-
-              {/* Insight text */}
-              <div className="px-8 pb-8 pt-6 text-center">
-                <p className="text-base text-gray-300 max-w-2xl mx-auto mb-2 leading-relaxed">
-                  The lower price gets you a legal roof. The higher price gets you a roof that <span className="text-amber-400 font-semibold">pays you back every year</span> through lower insurance premiums. The difference is often just <strong className="text-white">{formatPrice(upgradedPrice - basicPrice)} upfront</strong> — but the insurance gap starts day one and only grows.
-                </p>
-                <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                  Which upgrades make sense for <strong className="text-white">your</strong> home? That depends on what's already in your attic — and only a proper forensic inspection can tell you.
-                </p>
-              </div>
-            </div>
-
-            {/* ============================================ */}
-            {/* INSURANCE DEEP-DIVE                          */}
-            {/* ============================================ */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.2s both' }}>
-              <div className="bg-gradient-to-r from-slate-800 to-blue-900/20 px-8 pt-7 pb-5 border-b border-slate-700">
-                <div className="inline-block bg-amber-600/10 border border-amber-600/30 rounded-full px-3 py-0.5 mb-3">
-                  <span className="text-amber-400 text-sm font-bold uppercase tracking-wide">Why the Insurance Gap Is So Large</span>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-2">It Comes Down to Four Things Insurers Check</h3>
-                <p className="text-base text-gray-300 leading-relaxed">
-                  Your wind mitigation inspection form (OIR-B1-1802) determines your premium. Here's what separates a <strong className="text-amber-400">{formatPrice(insBasicHi)}/yr policy</strong> from a <strong className="text-amber-400">{formatPrice(insUpLo)}/yr policy</strong>.
-                </p>
-              </div>
-              <div className="p-8">
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  <div className="bg-red-600/5 border border-red-600/10 rounded-xl p-5">
-                    <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-3">Basic Code-Minimum Roof</p>
-                    <ul className="space-y-2.5">
-                      {['Standard nail pattern only', 'No secondary water barrier', 'Basic underlayment', 'Existing roof-to-wall connections', 'Minimal or no mitigation credits'].map(item => (
-                        <li key={item} className="flex items-start gap-2 text-base text-gray-300">
-                          <span className="text-red-500 font-bold text-sm mt-0.5">{'\u2717'}</span>{item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="bg-green-600/5 border border-green-600/10 rounded-xl p-5">
-                    <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-3">Insurance-Optimized Roof</p>
-                    <ul className="space-y-2.5">
-                      {['Enhanced HVHZ fastening pattern', 'Secondary water barrier (SWB)', 'Impact-rated underlayment', 'Documented hurricane straps/clips', 'Maximum wind mitigation credits'].map(item => (
-                        <li key={item} className="flex items-start gap-2 text-base text-gray-300">
-                          <span className="text-green-500 font-bold text-sm mt-0.5">{'\u2713'}</span>{item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                {/* Lifetime savings */}
-                <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-5 text-center mb-6">
-                  <p className="text-sm text-gray-300 mb-1">Estimated Lifetime Insurance Savings (25 Years)</p>
-                  <p className="text-3xl font-extrabold text-green-400">{formatPrice(saveLo)} – {formatPrice(saveHi)}</p>
-                  <p className="text-sm text-gray-300 mt-2 max-w-md mx-auto">
-                    Based on <strong className="text-white">{formatPrice(Math.round(annualSaveMid * 0.75))}-{formatPrice(Math.round(annualSaveMid * 1.25))}/yr in savings</strong> at today's rates. Florida premiums have increased 40-60% since 2020.
-                  </p>
-                </div>
-                <p className="text-base text-gray-300 leading-relaxed mb-3">
-                  The upfront cost difference is often just <strong className="text-white">{formatPrice(upgradedPrice - basicPrice)}</strong>. But the insurance savings start immediately and compound every year. You're not just buying a better roof — <span className="text-amber-400 font-semibold">you're locking in lower premiums for the next 20-30 years</span>.
-                </p>
-                <p className="text-base text-gray-300 leading-relaxed">
-                  The key is knowing which upgrades matter for <em>your</em> home and <em>your</em> insurance carrier. That requires getting into your attic and evaluating what you have versus what you need.
-                </p>
-              </div>
-            </div>
-
-            {/* ============================================ */}
-            {/* WHAT WE CHECK DURING INSPECTION              */}
-            {/* ============================================ */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 0.3s both' }}>
-              <h3 className="text-2xl font-bold text-white mb-2">What We Check During a Free Forensic Roof Inspection</h3>
-              <p className="text-base text-gray-300 mb-6">A thorough inspection takes 45-60 minutes and covers things no calculator can see.</p>
-              <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                {[
-                  { icon: Home, title: 'Attic & Structural Connections', desc: 'We get into your attic to inspect hurricane straps, clips, and roof-to-wall connections — the #1 factor in your wind mitigation report.', why: 'Determines your biggest insurance discount' },
-                  { icon: Shield, title: 'Secondary Water Barrier (SWB)', desc: 'We check if your roof has — or can accommodate — a sealed SWB. Without one, some insurers won\'t even write a policy in HVHZ areas.', why: 'Required by many FL insurers for coverage' },
-                  { icon: Ruler, title: 'Decking Condition & Roof Pitch', desc: 'Rotted or damaged plywood must be replaced before a new roof goes on. We measure pitch, check decking, and identify hidden damage.', why: 'Hidden costs that change your real price' },
-                  { icon: ClipboardCheck, title: 'Code Requirements & Permitting', desc: 'Your municipality may have requirements beyond the Florida Building Code. We know the local rules for every city in Broward and Palm Beach.', why: 'Avoid failed inspections and do-overs' },
-                ].map(item => (
-                  <div key={item.title} className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-5">
-                    <item.icon className="w-7 h-7 text-gray-300 mb-3" />
-                    <h4 className="text-base font-bold text-white mb-2">{item.title}</h4>
-                    <p className="text-sm text-gray-300 leading-relaxed mb-2">{item.desc}</p>
-                    <p className="text-sm text-amber-400 font-semibold">{item.why}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-5">
-                <p className="text-base text-gray-300 leading-relaxed">
-                  <strong className="text-amber-400">Why this matters:</strong> Many contractors quote a roof from the driveway and never step foot in your attic. That means they're guessing on your structural connections, guessing on your decking, and they're definitely not telling you which upgrades will lower your insurance. When you get a quote without a proper inspection, you're comparing incomplete numbers.
-                </p>
-              </div>
-            </div>
-
-            {/* ============================================ */}
-            {/* SELLING YOUR HOME                            */}
-            {/* ============================================ */}
-            <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-6" style={{ animation: 'fadeInUp 0.6s ease-out 0.35s both' }}>
-              <h4 className="text-xl font-bold text-white mb-2">Planning to Sell Your Home?</h4>
-              <p className="text-base text-gray-300 leading-relaxed">
-                Even if you're not staying long-term, your roof choice affects the sale. Buyers who need a mortgage also need homeowners insurance — and their insurer will look at the same wind mitigation factors. A roof <strong className="text-red-400">without a secondary water barrier or proper hurricane straps</strong> can make the home harder to insure, which can delay or kill a deal. A clean wind mitigation report with full credits makes your home more attractive to buyers and their lenders.
-              </p>
-            </div>
-
-            {/* ============================================ */}
-            {/* FINANCING BRIDGE                             */}
-            {/* ============================================ */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-blue-900/20 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl text-center" style={{ animation: 'fadeInUp 0.6s ease-out 0.4s both' }}>
-              <h3 className="text-2xl font-bold text-white mb-2">The Upgrade Pays for Itself — Here's the Math</h3>
-              <p className="text-base text-gray-300 mb-6">See what the difference actually looks like month to month.</p>
-              <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center max-w-lg mx-auto mb-6">
-                <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-5 text-center">
-                  <p className="text-xs font-bold uppercase tracking-widest text-gray-300 mb-2">Basic Roof</p>
-                  <p className="text-3xl font-extrabold text-white">{formatPrice(basicMonthly)}</p>
-                  <p className="text-sm text-gray-300">per month (financed)</p>
-                </div>
-                <ArrowRight className="w-6 h-6 text-gray-300" />
-                <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-5 text-center">
-                  <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-2">Insurance-Optimized</p>
-                  <p className="text-3xl font-extrabold text-white">{formatPrice(upgradedMonthly)}</p>
-                  <p className="text-sm text-gray-300">per month (financed)</p>
-                </div>
-              </div>
-              <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-5 max-w-lg mx-auto mb-6">
-                <p className="text-2xl font-extrabold text-green-400">+{formatPrice(monthlyDiff)}/mo</p>
-                <p className="text-base text-gray-300">more for the upgraded roof</p>
-                <p className="text-sm text-gray-300 mt-1">But you save ~{formatPrice(insSavingsMonthly)}/mo in lower insurance premiums</p>
-              </div>
-              <p className="text-base text-gray-300 max-w-xl mx-auto mb-6 text-left leading-relaxed">
-                <strong className="text-gray-300">The insurance savings are larger than the extra monthly payment.</strong> That means an upgraded roof with financing actually puts money back in your pocket from month one. And as Florida rates keep climbing, those savings only grow.
-              </p>
-              <a href="/easy-payments/" className="inline-block px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-600/10 hover:text-white hover:border-blue-400 transition-all">
-                Explore Financing Options <ArrowRight className="w-4 h-4 inline ml-1" />
-              </a>
-            </div>
-
-            {/* ============================================ */}
-            {/* FINAL CTA                                    */}
-            {/* ============================================ */}
-            <div className="bg-gradient-to-br from-red-900/20 to-slate-800/50 border-2 border-red-600/20 rounded-2xl p-10 text-center shadow-2xl" style={{ animation: 'fadeInUp 0.6s ease-out 1s both' }}>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Every roof has a timeline. We'd rather you know yours.</h3>
-              <p className="text-base text-gray-300 max-w-xl mx-auto mb-4 leading-relaxed">
-                Roofs don't last forever — and when yours is ready, whether that's today, next month, or a few years from now, we want to be the roofer you already trust and the first one you call. That's why we'll come out with infrared, moisture meters, and cameras — give your roof the forensic inspection most roofers never bother with — and hand you the full documentation. No strings attached.
-              </p>
-              <div className="flex flex-wrap justify-center gap-5 mb-6 text-base text-gray-200">
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full forensic roof inspection with photos</span>
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Wind mitigation evaluation</span>
-                <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, zero obligation</span>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="/contact/" className="px-10 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                  <Calendar className="w-5 h-5" />Schedule My Free Forensic Inspection
-                </a>
-                <a href="tel:+17542275605" className="px-8 py-4 bg-transparent border-2 border-slate-600 text-gray-300 rounded-lg font-semibold text-base hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />Call Now: (754) 227-5605
-                </a>
-              </div>
-              <p className="text-gray-500 text-sm mt-4"><span className="text-amber-400">Plus, you'll get our free Insider's Guide to Hiring a Roofing Contractor the moment you schedule.</span></p>
-              <p className="text-gray-300 text-sm mt-2">We respond within 60 minutes during business hours. Available 24/7 by phone.</p>
-            </div>
-
-            {/* ============================================ */}
-            {/* CHECKLIST DOWNLOAD (GATED LEAD CAPTURE)      */}
-            {/* ============================================ */}
-            <div style={{ animation: 'fadeInUp 0.6s ease-out 1.1s both' }}>
-              <ChecklistDownloadForm
-                roofType={selectedType.name}
-                roofSize={selectedSize.label}
-                roofSqft={selectedSize.sqft}
-              />
-            </div>
-
-            {/* ============================================ */}
-            {/* TRUST BAR                                    */}
-            {/* ============================================ */}
-            <div className="border-t border-b border-slate-800 py-6" style={{ animation: 'fadeInUp 0.6s ease-out 1.2s both' }}>
-              <div className="flex flex-wrap justify-center gap-8 sm:gap-12">
-                {[
-                  { val: '4.8+ \u2605', label: 'Google Reviews' },
-                  { val: '20+', label: 'Years in Business' },
-                  { val: '2,500+', label: 'Roofs Completed' },
-                  { val: 'Dual Licensed', label: 'CGC + CCC' },
-                  { val: 'HVHZ', label: 'High Wind Certified' },
-                ].map(item => (
-                  <div key={item.label} className="text-center">
-                    <span className="block text-lg font-bold text-white">{item.val}</span>
-                    <span className="text-sm text-gray-300">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Disclaimer */}
-            <div className="text-center text-sm text-gray-400 max-w-3xl mx-auto pb-8">
-              * Estimates are for informational purposes only and do not constitute a quote or contract. Actual pricing may vary based on roof condition, accessibility, local codes, material availability, and other factors determined during inspection. Insurance premium estimates are approximate and vary by carrier, coverage type, and property specifics.
-            </div>
-          </div>
-        )}
       </div>
+
       <style>{`
         @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(30px); }
+          from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
