@@ -331,8 +331,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roof-repair/palm-beach-county-unincorporated /roof-repair 301
 /blog/how-long-does-it-take-to-get-a-roof-permit-in-south-florida /blog 301!
 
-# Accessibility page - ensure it's accessible
-/accessibility /accessibility 301!
+# /accessibility is a valid SPA route - no redirect needed
 
 # ======================================================================
 # OLD WORDPRESS ARTIFACTS - 410 Gone
