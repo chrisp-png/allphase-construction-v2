@@ -39,8 +39,8 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /gallery/ https://allphaseconstructionfl.com/projects 301!
 /testimonials https://allphaseconstructionfl.com/reviews 301!
 /testimonials/ https://allphaseconstructionfl.com/reviews 301!
-/locations https://allphaseconstructionfl.com/locations/deerfield-beach/ 301!
-/locations/ https://allphaseconstructionfl.com/locations/deerfield-beach/ 301!
+/locations https://allphaseconstructionfl.com/locations/deerfield-beach/ 301
+/locations/ https://allphaseconstructionfl.com/locations/deerfield-beach/ 301
 /roof-types https://allphaseconstructionfl.com/residential-roofing 301!
 /roof-types/ https://allphaseconstructionfl.com/residential-roofing 301!
 /estimate https://allphaseconstructionfl.com/contact 301!
@@ -48,12 +48,12 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /free-estimate https://allphaseconstructionfl.com/contact 301!
 /free-estimate/ https://allphaseconstructionfl.com/contact 301!
 /quote https://allphaseconstructionfl.com/contact 301!
-/calculator https://allphaseconstructionfl.com/roof-cost-calculator 301!
-/calculator/ https://allphaseconstructionfl.com/roof-cost-calculator 301!
+/calculator https://allphaseconstructionfl.com/roof-cost-calculator 301
+/calculator/ https://allphaseconstructionfl.com/roof-cost-calculator 301
 /locations/deerfield-beach/service-area https://allphaseconstructionfl.com/locations/deerfield-beach 301!
 /locations/deerfield-beach/service-area/ https://allphaseconstructionfl.com/locations/deerfield-beach 301!
-/how-to-hire-roofing-contractor /roof-cost-calculator 301!
-/how-to-hire-roofing-contractor/ /roof-cost-calculator 301!
+/how-to-hire-roofing-contractor /roof-cost-calculator 301
+/how-to-hire-roofing-contractor/ /roof-cost-calculator 301
 /locations/deerfield-beach/how-to-hire-a-roofing-contractor /roof-cost-calculator 301!
 /locations/deerfield-beach/how-to-hire-a-roofing-contractor/ /roof-cost-calculator 301!
 /quote/ https://allphaseconstructionfl.com/contact 301!
@@ -69,13 +69,13 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /locations/:parent/service-area/:city/ /locations/:city 301!
 
 # Legacy inspection URLs redirect to /roof-inspection
-/tile-roof-inspection-broward-county /roof-inspection 301!
-/tile-roof-inspection-palm-beach-county /roof-inspection 301!
-/metal-roof-inspection-broward-county /roof-inspection 301!
-/metal-roof-inspection-palm-beach-county /roof-inspection 301!
-/flat-roof-inspection-broward-county /roof-inspection 301!
-/flat-roof-inspection-palm-beach-county /roof-inspection 301!
-/insurance-roof-inspection /roof-inspection 301!
+/tile-roof-inspection-broward-county /roof-inspection 301
+/tile-roof-inspection-palm-beach-county /roof-inspection 301
+/metal-roof-inspection-broward-county /roof-inspection 301
+/metal-roof-inspection-palm-beach-county /roof-inspection 301
+/flat-roof-inspection-broward-county /roof-inspection 301
+/flat-roof-inspection-palm-beach-county /roof-inspection 301
+/insurance-roof-inspection /roof-inspection 301
 
 
 # Broken /roof-replacement/[city] URLs - these pages do not exist
@@ -101,7 +101,7 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /roof-repair/light-house-point /roof-repair/lighthouse-point 301!
 /roof-inspection/light-house-point /roof-inspection/lighthouse-point 301!
 /locations/lake-worth /locations/lake-worth-beach 301!
-/roof-repair/lake-worth /roof-repair/lake-worth-beach 301!
+/roof-repair/lake-worth /roof-repair/lake-worth-beach 301
 /roof-inspection/lake-worth /roof-inspection/lake-worth-beach 301!
 
 # ======================================================================
@@ -145,9 +145,9 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /blog/why-permitting-matters-in-roofing-and-construction-projects /blog 301!
 
 # Legacy trailing slash fixes
-/blog/ /blog 301!
-/commercial-roofing/ /commercial-roofing 301!
-/financing/ /financing 301!
+# REMOVED (Netlify Pretty URLs handles trailing slashes): /blog/ /blog 301!
+# REMOVED (Netlify Pretty URLs handles trailing slashes): /commercial-roofing/ /commercial-roofing 301!
+# REMOVED (Netlify Pretty URLs handles trailing slashes): /financing/ /financing 301!
 
 # Legacy HTTP and www - force HTTPS
 http://allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:splat 301!
@@ -185,8 +185,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-contractor-lauderhill-fl /locations/lauderhill 301!
 /roofing-contractor-west-palm-beach-fl /locations/west-palm-beach 301!
 /roofing-contractor-wellington-fl /locations/wellington 301!
-/roofing-services /roof-repair 301!
-/roofing-services/ /roof-repair 301!
+/roofing-services /roof-repair 301
+/roofing-services/ /roof-repair 301
 
 # Missing legacy redirects - added 2026-02-27
 /Blog /blog 301!
@@ -194,10 +194,10 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services/roof-inspection /roof-inspection 301!
 /roofing-services/roof-inspection/ /roof-inspection 301!
 /roofing-services/roof-repair/hypoluxo /roof-repair/hypoluxo 301!
-/pricing-guide /easy-payments 301!
-/pricing-guide/ /easy-payments 301!
-/our-location /contact 301!
-/our-location/ /contact 301!
+/pricing-guide /easy-payments 301
+/pricing-guide/ /easy-payments 301
+/our-location /contact 301
+/our-location/ /contact 301
 /media-gallery / 301!
 /media-gallery/ / 301!
 /lunch-learn-roofing-event / 301!
@@ -267,9 +267,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # trailing slash catch-all removed - was causing root redirect loop
 
 # Sitemap canonicalization
-/sitemap/  /sitemap.xml  301!
+/sitemap/  /sitemap.xml  301
 /sitemap.html  /sitemap.xml  301!
-/sitemap  /sitemap.xml  301!
+/sitemap  /sitemap.xml  301
 # Ghost URLs bleeding GSC impressions
 /ventilation/  /residential-roofing  301!
 /publications/  /blog  301!
@@ -328,7 +328,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 # Redirect errors from GSC (broken redirect chains)
 /blog/march-13th-weekly-newsletter /blog 301!
-/roof-repair/palm-beach-county-unincorporated /roof-repair 301!
+/roof-repair/palm-beach-county-unincorporated /roof-repair 301
 /blog/how-long-does-it-take-to-get-a-roof-permit-in-south-florida /blog 301!
 
 # Accessibility page - ensure it's accessible
@@ -381,10 +381,10 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 
 # Missing page redirects (Soft 404)
 /roof-leak-mechanical-equipment   /roof-repair   301!
-/about-us/   /about-us   301!
-/residential-roofing/   /roof-repair   301!
-/projects   /about-us   301!
-/accessibility   /about-us   301!
+# REMOVED (Netlify Pretty URLs handles trailing slashes): /about-us/   /about-us   301!
+/residential-roofing/   /roof-repair   301
+/projects   /about-us   301
+/accessibility   /about-us   301
 /publications   /about-us   301!
 
 # Missing location/service redirects (5xx / Soft 404)
@@ -393,8 +393,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /locations/deerfield-beach/service-area/delray-beach   /locations/delray-beach   301!
 
 # Redirect error fixes (missing rules)
-/roof-repair/deerfield-beach/   /roof-repair/deerfield-beach   301!
-/locations/deerfield-beach/best-roofers-deerfield-beach/   /locations/deerfield-beach/best-roofers-deerfield-beach   301!
+# REMOVED (Netlify Pretty URLs handles trailing slashes): /roof-repair/deerfield-beach/   /roof-repair/deerfield-beach   301!
+# REMOVED (Netlify Pretty URLs handles trailing slashes): /locations/deerfield-beach/best-roofers-deerfield-beach/   /locations/deerfield-beach/best-roofers-deerfield-beach   301!
 /financing   /easy-payments   301!
 
 # Blog trailing slash variants for redirect errors
