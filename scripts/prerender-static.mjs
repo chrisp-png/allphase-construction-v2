@@ -858,6 +858,39 @@ function generateServiceHubContent(cityName, citySlug) {
 }
 
 /**
+ * SILO 2: Roof Repair Hub Page - /roof-repair
+ * Landing page with links to all city-specific roof repair pages
+ */
+function generateRoofRepairHubContent() {
+  const citiesFiltered = cities.filter(c => !c.slug.includes('county'));
+  const citiesLinksHtml = citiesFiltered
+    .map(c => `<li><a href="/roof-repair/${c.slug}" style="color: #dc2626; text-decoration: underline;">${c.city} Roof Repair</a></li>`)
+    .join('\n    ');
+
+  return `
+<section id="seo-static-content">
+  <h1>Emergency Roof Repair Services | South Florida</h1>
+
+  <p><strong>Need emergency roof repair?</strong> All Phase Construction USA provides fast, professional roof repair services throughout South Florida. We handle emergency leaks, storm damage, flashing failures, and all structural roofing issues with dual-licensed expertise (CCC-1331464 & CGC-1526236). Call (754) 227-5605 for same-day emergency service.</p>
+
+  <h2>Roof Repair Service Areas</h2>
+  <p>We serve over 50 cities across Broward County and Palm Beach County. Select your city for local roof repair services:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    ${citiesLinksHtml}
+  </ul>
+
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Emergency Roof Repair Available 24/7</h3>
+    <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">🔍 Call (754) 227-5605 for Same-Day Emergency Service</p>
+    <p style="margin-bottom: 0; color: #7f1d1d;">Active leaks, storm damage, missing shingles, and emergency tarping available throughout South Florida.</p>
+  </div>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * SILO 2: Roof Repair Page - /roof-repair/[city]
  * High-intent repair leads with emergency response focus
  */
@@ -928,6 +961,39 @@ function generateRoofRepairContent(cityName, citySlug) {
     <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
   </ul>
 </div>
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * SILO 3: Roof Inspection Hub Page - /roof-inspection
+ * Landing page with links to all city-specific roof inspection pages
+ */
+function generateRoofInspectionHubContent() {
+  const citiesFiltered = cities.filter(c => !c.slug.includes('county'));
+  const citiesLinksHtml = citiesFiltered
+    .map(c => `<li><a href="/roof-inspection/${c.slug}" style="color: #dc2626; text-decoration: underline;">${c.city} Roof Inspection</a></li>`)
+    .join('\n    ');
+
+  return `
+<section id="seo-static-content">
+  <h1>Professional Roof Inspection Services | South Florida</h1>
+
+  <p><strong>Need a professional roof inspection?</strong> All Phase Construction USA provides comprehensive 21-point roof inspections throughout South Florida for pre-purchase evaluations, insurance documentation, maintenance planning, and storm damage assessment. Serving South Florida from our Deerfield Beach headquarters with dual-licensed expertise (CCC-1331464 & CGC-1526236).</p>
+
+  <h2>Roof Inspection Service Areas</h2>
+  <p>We serve over 50 cities across Broward County and Palm Beach County. Select your city for professional roof inspection services:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    ${citiesLinksHtml}
+  </ul>
+
+  <div style="background: #f0fdf4; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #15803d; margin-bottom: 0.75rem;">Free Inspection Quote</h3>
+    <p style="margin-bottom: 0.5rem; color: #166534; font-weight: bold;">📋 Call (754) 227-5605 for Your Free Estimate</p>
+    <p style="margin-bottom: 0; color: #166534;">Comprehensive 21-point inspections with detailed documentation for insurance, purchase decisions, or maintenance planning.</p>
+  </div>
+
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -1145,12 +1211,73 @@ function homepageContent() {
   </ul>
 
   <h2>Comprehensive Roofing Services</h2>
-  <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including emergency roof repairs, professional roof inspections, complete roof replacements, tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC), roof maintenance programs, and storm damage restoration.</p>
+  <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">emergency roof repairs</a>, <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">professional roof inspections</a>, <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">complete roof replacements</a>, <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile roofing</a>, <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">metal roofing</a>, <a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">shingle roofing</a>, <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing (TPO/PVC)</a>, <a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">roof maintenance programs</a>, and storm damage restoration.</p>
 
   <h2>Service Area</h2>
-  <p>From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities across Broward County and Palm Beach County including Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, Parkland, Coconut Creek, West Palm Beach, Delray Beach, Boynton Beach, Wellington, and all surrounding communities.</p>
+  <p>From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities across Broward County and Palm Beach County including <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/parkland" style="color: #dc2626; text-decoration: underline;">Parkland</a>, <a href="/locations/coconut-creek" style="color: #dc2626; text-decoration: underline;">Coconut Creek</a>, <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and all surrounding communities.</p>
 
   <p><strong>Call (754) 227-5605 for a free professional roof inspection and estimate.</strong></p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * Generate Blog Hub Page - /blog
+ * Landing page with links to all blog posts from sitemap
+ */
+function generateBlogHubContent() {
+  let blogLinksHtml = '';
+
+  try {
+    const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
+    if (fs.existsSync(sitemapPath)) {
+      const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+
+      // Extract all blog URLs from sitemap
+      const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
+
+      if (blogUrlMatches && blogUrlMatches.length > 0) {
+        const blogSlugs = blogUrlMatches
+          .map(match => {
+            const urlMatch = match.match(/\/blog\/([^<]+)</);
+            return urlMatch ? urlMatch[1].replace(/\/$/, '') : null;
+          })
+          .filter(slug => slug && slug !== 'index.html');
+
+        blogLinksHtml = blogSlugs
+          .map(slug => {
+            const blogTitle = slug
+              .split('-')
+              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' ');
+            return `<li><a href="/blog/${slug}" style="color: #dc2626; text-decoration: underline;">${blogTitle}</a></li>`;
+          })
+          .join('\n    ');
+      }
+    }
+  } catch (err) {
+    console.warn('⚠️ Warning reading sitemap for blog hub:', err.message);
+  }
+
+  return `
+<section id="seo-static-content">
+  <h1>Roofing Insights & Industry News | All Phase USA Blog</h1>
+
+  <p><strong>Expert roofing advice from South Florida's dual-licensed contractor.</strong> All Phase Construction USA shares industry insights, maintenance tips, and storm damage guides to help homeowners and business owners make informed roofing decisions. Stay updated on the latest roofing trends, best practices, and local updates from our Deerfield Beach headquarters.</p>
+
+  <h2>Latest Blog Articles</h2>
+  <p>Explore our collection of roofing guides, maintenance tips, and expert insights:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    ${blogLinksHtml || '<li><p style="color: #6b7280;">Blog posts loading...</p></li>'}
+  </ul>
+
+  <div style="background: #f0fdf4; border-left: 4px solid #16a34a; padding: 1.5rem; margin: 2rem 0;">
+    <h3 style="font-size: 1.25rem; font-weight: bold; color: #15803d; margin-bottom: 0.75rem;">Expert Roofing Resources</h3>
+    <p style="margin-bottom: 0.5rem; color: #166534;">Our blog provides detailed information on roof maintenance, storm damage restoration, material comparisons, and roofing best practices for South Florida properties.</p>
+    <p style="margin-bottom: 0; color: #166534;"><strong>Have roofing questions?</strong> Call (754) 227-5605 to speak with a licensed roofing specialist.</p>
+  </div>
 
   ${companyAuthorityFooter()}
 </section>
@@ -1839,11 +1966,27 @@ const CITY_PAGE_SCHEMAS = {
       });
       jsonLdSchema = schemaItems;
       } // end else
-    }    const html = createHTMLTemplate(
+    }
+
+    // Determine content based on page path
+    let pageContent;
+    if (pagePath === '/roofing-services') {
+      pageContent = generateRoofingServicesContent();
+    } else if (pagePath === '/roof-repair') {
+      pageContent = generateRoofRepairHubContent();
+    } else if (pagePath === '/roof-inspection') {
+      pageContent = generateRoofInspectionHubContent();
+    } else if (pagePath === '/blog') {
+      pageContent = generateBlogHubContent();
+    } else {
+      pageContent = defaultServicePageContent(title);
+    }
+
+    const html = createHTMLTemplate(
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
-      pagePath === '/roofing-services' ? generateRoofingServicesContent() : defaultServicePageContent(title),
+      pageContent,
       jsonLdSchema
     );
 
