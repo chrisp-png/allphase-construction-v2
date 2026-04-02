@@ -263,7 +263,7 @@ export default function RoofCalculator() {
     <div className={anim}>
       <div className="text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">How big is your roof?</h2>
-        <p className="text-gray-400 text-lg">Don't worry about being exact — we'll dial it in during your free inspection.</p>
+        <p className="text-gray-400 text-base">Don't worry about being exact — we'll dial it in during your free inspection.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
         {roofSizes.map((size) => (
@@ -277,11 +277,11 @@ export default function RoofCalculator() {
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center shadow-lg"><Check className="w-3.5 h-3.5 text-white" /></div>
             )}
             <div className={`text-lg font-bold mb-0.5 transition-colors ${selectedSize.label === size.label ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{size.label}</div>
-            <div className={`text-sm transition-colors ${selectedSize.label === size.label ? 'text-red-300' : 'text-gray-500 group-hover:text-gray-400'}`}>{size.desc}</div>
+            <div className={`text-base transition-colors ${selectedSize.label === size.label ? 'text-red-300' : 'text-gray-500 group-hover:text-gray-400'}`}>{size.desc}</div>
           </button>
         ))}
       </div>
-      <div className="flex items-start gap-2 text-sm text-gray-500 bg-slate-900/40 rounded-lg p-3 mb-2">
+      <div className="flex items-start gap-2 text-base text-gray-500 bg-slate-900/40 rounded-lg p-3 mb-2">
         <Sparkles className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
         <p>Most South Florida homes have 2,000–3,500 sq ft of roof area — typically 20–40% more than your living space.</p>
       </div>
@@ -296,7 +296,7 @@ export default function RoofCalculator() {
     <div className={anim}>
       <div className="text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">What type of roof?</h2>
-        <p className="text-gray-400 text-lg">Select your current material or the one you're considering.</p>
+        <p className="text-gray-400 text-base">Select your current material or the one you're considering.</p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-2">
         {roofTypes.map((type) => (
@@ -313,7 +313,7 @@ export default function RoofCalculator() {
               <RoofTypeIcon type={type.icon} className="w-12 h-12" />
             </div>
             <div className={`text-lg font-bold mb-1 transition-colors ${selectedType?.name === type.name ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>{type.name}</div>
-            <div className={`text-xs transition-colors ${selectedType?.name === type.name ? 'text-red-300' : 'text-gray-600 group-hover:text-gray-500'}`}>{type.tagline}</div>
+            <div className={`text-sm transition-colors ${selectedType?.name === type.name ? 'text-red-300' : 'text-gray-600 group-hover:text-gray-500'}`}>{type.tagline}</div>
           </button>
         ))}
       </div>
@@ -334,7 +334,7 @@ export default function RoofCalculator() {
             <span className="text-sm font-semibold text-gray-300">{selectedSize.sqft.toLocaleString()} sq ft &middot; {selectedType.name}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">Your Roof Estimate</h2>
-          <p className="text-gray-400">Three tiers — from code-minimum to insurance-optimized.</p>
+          <p className="text-base text-gray-400">Three tiers — from code-minimum to insurance-optimized.</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-5 mb-6">
@@ -350,15 +350,15 @@ export default function RoofCalculator() {
               )}
               <div className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-1">{tier.tier}</div>
               <h3 className="text-lg font-bold text-white mb-0.5">{tier.product}</h3>
-              <p className="text-xs text-gray-500 mb-3">{tier.warranty}</p>
+              <p className="text-sm text-gray-500 mb-3">{tier.warranty}</p>
               <div className="text-2xl font-extrabold text-white mb-1">
                 {formatPrice(Math.round((tier.minPrice * selectedSize.sqft) / 1000) * 1000)} – {formatPrice(Math.round((tier.maxPrice * selectedSize.sqft) / 1000) * 1000)}
               </div>
-              <p className="text-xs text-gray-600 mb-4">Code-minimum → Insurance-optimized</p>
+              <p className="text-sm text-gray-600 mb-4">Code-minimum → Insurance-optimized</p>
               <ul className="space-y-2">
                 {tier.features.map((f, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                    <Check className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />{f}
+                  <li key={i} className="flex items-start gap-2 text-base text-gray-300">
+                    <Check className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />{f}
                   </li>
                 ))}
               </ul>
@@ -368,7 +368,7 @@ export default function RoofCalculator() {
 
         {/* Pricing footnote */}
         <div className="bg-slate-900/40 border border-slate-700/40 rounded-xl p-4 text-center mb-2">
-          <p className="text-xs text-gray-500">
+          <p className="text-sm text-gray-500">
             <strong className="text-gray-400">Why the range?</strong> Low end = code-minimum. High end = insurance-optimized with HVHZ compliance & full wind mitigation. Your free inspection tells you which approach is right.
           </p>
         </div>
@@ -389,7 +389,7 @@ export default function RoofCalculator() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3 leading-tight">
             What if your roof could <span className="text-green-400">pay you back</span>?
           </h2>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto">Most homeowners never find this out until it's too late.</p>
+          <p className="text-gray-400 text-base max-w-xl mx-auto">Most homeowners never find this out until it's too late.</p>
         </div>
 
         {/* The big reveal */}
@@ -403,14 +403,14 @@ export default function RoofCalculator() {
           <div className="mt-6 pt-6 border-t border-white/5">
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
               <div className="text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-1">Code-Minimum Roof</p>
+                <p className="text-sm font-bold uppercase tracking-widest text-red-500 mb-1">Code-Minimum Roof</p>
                 <p className="text-xl font-extrabold text-red-400">{formatPrice(insBasicLo)}–{formatPrice(insBasicHi)}</p>
-                <p className="text-xs text-gray-500">per year in insurance</p>
+                <p className="text-sm text-gray-500">per year in insurance</p>
               </div>
               <div className="text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-1">Optimized Roof</p>
+                <p className="text-sm font-bold uppercase tracking-widest text-green-500 mb-1">Optimized Roof</p>
                 <p className="text-xl font-extrabold text-green-400">{formatPrice(insUpLo)}–{formatPrice(insUpHi)}</p>
-                <p className="text-xs text-gray-500">per year in insurance</p>
+                <p className="text-sm text-gray-500">per year in insurance</p>
               </div>
             </div>
           </div>
@@ -421,7 +421,7 @@ export default function RoofCalculator() {
           <p className="text-base text-gray-300 leading-relaxed">
             The cost of your roof isn't just what you pay the roofer — it's what you'll pay in <strong className="text-white">insurance premiums every year after</strong>. Two homeowners on the same street can pay <strong className="text-amber-400">thousands apart</strong> in annual premiums based on how their roof was installed.
           </p>
-          <p className="text-sm text-gray-500 mt-3">Want to see exactly why — and how the math actually works?</p>
+          <p className="text-base text-gray-500 mt-3">Want to see exactly why — and how the math actually works?</p>
         </div>
 
         <NavButtons back={3} next={5} nextLabel="Show Me the Full Breakdown" nextGlow />
@@ -445,7 +445,7 @@ export default function RoofCalculator() {
             </div>
             <h2 className="text-3xl font-extrabold text-white mb-3">You're in!</h2>
             <p className="text-gray-400 text-lg mb-2">Your full insurance analysis is unlocked.</p>
-            <p className="text-gray-500 text-sm">We'll also reach out within 60 minutes during business hours.</p>
+            <p className="text-gray-500 text-base">We'll also reach out within 60 minutes during business hours.</p>
             <div className="mt-6">
               <button onClick={() => goTo(6)} className="px-8 py-4 rounded-xl bg-green-600 text-white font-bold text-lg hover:bg-green-500 transition-all shadow-lg flex items-center gap-2 mx-auto">
                 Continue to Full Analysis <ChevronRight className="w-5 h-5" />
@@ -465,7 +465,7 @@ export default function RoofCalculator() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
             Unlock Your Full Insurance Analysis
           </h2>
-          <p className="text-gray-400 text-lg max-w-lg mx-auto">
+          <p className="text-gray-400 text-base max-w-lg mx-auto">
             See the detailed side-by-side comparison, the 4 factors insurers check, financing math, and what a forensic inspection reveals about <em>your</em> home.
           </p>
         </div>
@@ -480,7 +480,7 @@ export default function RoofCalculator() {
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-3 bg-slate-800/40 border border-slate-700/30 rounded-lg px-4 py-3">
               <item.icon className="w-5 h-5 text-red-400 flex-shrink-0" />
-              <span className="text-sm text-gray-300">{item.label}</span>
+              <span className="text-base text-gray-300">{item.label}</span>
             </div>
           ))}
         </div>
@@ -549,21 +549,21 @@ export default function RoofCalculator() {
       <div className={anim}>
         <div className="text-center mb-6">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Two Roofs. Same Street. Different Bills.</h2>
-          <p className="text-gray-400">{sizeLabels[selectedSize.sqft]} &middot; {selectedType.name} &middot; Broward / Palm Beach</p>
+          <p className="text-base text-gray-400">{sizeLabels[selectedSize.sqft]} &middot; {selectedType.name} &middot; Broward / Palm Beach</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-0 relative mb-6">
           <div className="bg-red-600/5 border border-red-600/15 md:rounded-l-xl rounded-t-xl md:rounded-tr-none p-6 text-center md:border-r-0">
-            <p className="text-xs font-bold uppercase tracking-widest text-red-500 mb-2">Code-Minimum Roof</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-red-500 mb-2">Code-Minimum Roof</p>
             <p className="text-4xl font-extrabold text-white mb-1">{formatPrice(basicPrice)}</p>
-            <p className="text-sm text-gray-400 mb-4">Passes inspection. That's it.</p>
+            <p className="text-base text-gray-400 mb-4">Passes inspection. That's it.</p>
             <div className="border-t border-white/5 pt-4">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Annual Insurance</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-1">Annual Insurance</p>
               <p className="text-xl font-extrabold text-red-400">{formatPrice(insBasicLo)} – {formatPrice(insBasicHi)}/yr</p>
             </div>
             <ul className="mt-4 space-y-2 text-left">
               {['Meets minimum code only', 'Standard underlayment', 'No insurance optimization', 'Fewer carrier options', 'Minimal mitigation credits'].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-400"><span className="text-red-500 font-bold text-xs mt-0.5">{'\u2717'}</span>{item}</li>
+                <li key={item} className="flex items-start gap-2 text-base text-gray-400"><span className="text-red-500 font-bold text-xs mt-0.5">{'\u2717'}</span>{item}</li>
               ))}
             </ul>
           </div>
@@ -571,16 +571,16 @@ export default function RoofCalculator() {
             <span className="text-xs font-extrabold text-gray-400">VS</span>
           </div>
           <div className="bg-green-600/5 border-2 border-green-600/20 md:rounded-r-xl rounded-b-xl md:rounded-bl-none p-6 text-center md:border-l-0">
-            <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-2">Insurance-Optimized Roof</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-green-500 mb-2">Insurance-Optimized Roof</p>
             <p className="text-4xl font-extrabold text-white mb-1">{formatPrice(upgradedPrice)}</p>
-            <p className="text-sm text-gray-400 mb-4">Built to maximize discounts</p>
+            <p className="text-base text-gray-400 mb-4">Built to maximize discounts</p>
             <div className="border-t border-white/5 pt-4">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Annual Insurance</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-1">Annual Insurance</p>
               <p className="text-xl font-extrabold text-green-400">{formatPrice(insUpLo)} – {formatPrice(insUpHi)}/yr</p>
             </div>
             <ul className="mt-4 space-y-2 text-left">
               {['HVHZ compliant — exceeds code', 'Self-adhering underlayment', 'Full insurance optimization', 'More carrier options', 'Maximum mitigation credits'].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-300"><span className="text-green-500 font-bold text-xs mt-0.5">{'\u2713'}</span>{item}</li>
+                <li key={item} className="flex items-start gap-2 text-base text-gray-300"><span className="text-green-500 font-bold text-xs mt-0.5">{'\u2713'}</span>{item}</li>
               ))}
             </ul>
           </div>
@@ -589,7 +589,7 @@ export default function RoofCalculator() {
         <div className="h-1.5 rounded-full bg-gradient-to-r from-red-500 via-amber-500 to-green-500 mb-4" />
         <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-4 text-center mb-2">
           <span className="text-xl font-extrabold text-green-400">{formatPrice(saveLo)} – {formatPrice(saveHi)} saved</span>
-          <span className="text-sm text-gray-400 ml-2">over the life of your roof</span>
+          <span className="text-base text-gray-400 ml-2">over the life of your roof</span>
         </div>
 
         <NavButtons back={5} next={7} nextLabel="What Do Insurers Actually Check?" nextGlow />
@@ -604,7 +604,7 @@ export default function RoofCalculator() {
     <div className={anim}>
       <div className="text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">4 Things That Set Your Premium</h2>
-        <p className="text-gray-400 text-lg">Your wind mitigation form (OIR-B1-1802) controls everything.</p>
+        <p className="text-gray-400 text-base">Your wind mitigation form (OIR-B1-1802) controls everything.</p>
       </div>
 
       <div className="space-y-4 mb-6">
@@ -619,25 +619,25 @@ export default function RoofCalculator() {
               <span className="text-red-400 font-extrabold text-sm">{item.num}</span>
             </div>
             <div className="flex-1">
-              <h4 className="text-base font-bold text-white mb-2">{item.title}</h4>
+              <h4 className="text-lg font-bold text-white mb-2">{item.title}</h4>
               <div className="grid sm:grid-cols-2 gap-2 mb-2">
                 <div className="flex items-start gap-1.5">
-                  <span className="text-red-500 text-xs mt-0.5 font-bold">{'\u2717'}</span>
-                  <span className="text-xs text-gray-400">{item.basic}</span>
+                  <span className="text-red-500 text-sm mt-0.5 font-bold">{'\u2717'}</span>
+                  <span className="text-sm text-gray-400">{item.basic}</span>
                 </div>
                 <div className="flex items-start gap-1.5">
-                  <span className="text-green-500 text-xs mt-0.5 font-bold">{'\u2713'}</span>
-                  <span className="text-xs text-gray-300">{item.optimized}</span>
+                  <span className="text-green-500 text-sm mt-0.5 font-bold">{'\u2713'}</span>
+                  <span className="text-sm text-gray-300">{item.optimized}</span>
                 </div>
               </div>
-              <p className="text-xs text-amber-400 font-semibold">{item.impact}</p>
+              <p className="text-sm text-amber-400 font-semibold">{item.impact}</p>
             </div>
           </div>
         ))}
       </div>
 
       <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-4 text-center mb-2">
-        <p className="text-sm text-gray-400">
+        <p className="text-base text-gray-400">
           <strong className="text-amber-400">Bottom line:</strong> A <strong className="text-white">{formatPrice(insBasicHi)}/yr policy</strong> vs. a <strong className="text-white">{formatPrice(insUpLo)}/yr policy</strong> often comes down to these four items alone. The difference starts day one.
         </p>
       </div>
@@ -653,30 +653,30 @@ export default function RoofCalculator() {
     <div className={anim}>
       <div className="text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">The Upgrade Pays for Itself</h2>
-        <p className="text-gray-400 text-lg">Here's what the difference actually looks like month to month.</p>
+        <p className="text-gray-400 text-base">Here's what the difference actually looks like month to month.</p>
       </div>
 
       <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center max-w-md mx-auto mb-6">
         <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-5 text-center">
-          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Basic Roof</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-1">Basic Roof</p>
           <p className="text-3xl font-extrabold text-white">{formatPrice(basicMonthly)}</p>
-          <p className="text-xs text-gray-500">per month (financed)</p>
+          <p className="text-sm text-gray-500">per month (financed)</p>
         </div>
         <ArrowRight className="w-5 h-5 text-gray-600" />
         <div className="bg-slate-900/50 border border-slate-700 rounded-xl p-5 text-center">
-          <p className="text-xs font-bold uppercase tracking-widest text-green-500 mb-1">Optimized</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-green-500 mb-1">Optimized</p>
           <p className="text-3xl font-extrabold text-white">{formatPrice(upgradedMonthly)}</p>
-          <p className="text-xs text-gray-500">per month (financed)</p>
+          <p className="text-sm text-gray-500">per month (financed)</p>
         </div>
       </div>
 
       <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-5 max-w-md mx-auto mb-6 text-center">
         <p className="text-2xl font-extrabold text-green-400">+{formatPrice(monthlyDiff)}/mo more for the upgrade</p>
-        <p className="text-sm text-gray-400 mt-1">But you save ~<strong className="text-white">{formatPrice(insSavingsMonthly)}/mo</strong> in lower insurance premiums</p>
+        <p className="text-base text-gray-400 mt-1">But you save ~<strong className="text-white">{formatPrice(insSavingsMonthly)}/mo</strong> in lower insurance premiums</p>
       </div>
 
       <div className="bg-slate-800/40 border border-slate-700/30 rounded-xl p-5 max-w-lg mx-auto mb-6">
-        <p className="text-sm text-gray-300 leading-relaxed text-center">
+        <p className="text-base text-gray-300 leading-relaxed text-center">
           <strong className="text-white">The insurance savings are larger than the extra monthly payment.</strong> That means an upgraded roof with financing actually puts money back in your pocket from month one. And as Florida rates keep climbing, those savings only grow.
         </p>
       </div>
@@ -698,7 +698,7 @@ export default function RoofCalculator() {
     <div className={anim}>
       <div className="text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">What We Check (That Others Skip)</h2>
-        <p className="text-gray-400 text-lg">A 45-60 minute forensic inspection — not a driveway estimate.</p>
+        <p className="text-gray-400 text-base">A 45-60 minute forensic inspection — not a driveway estimate.</p>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-4 mb-6">
@@ -710,9 +710,9 @@ export default function RoofCalculator() {
         ].map(item => (
           <div key={item.title} className="bg-slate-800/50 border border-slate-700/40 rounded-xl p-5">
             <item.icon className="w-6 h-6 text-gray-400 mb-2" />
-            <h4 className="text-base font-bold text-white mb-1">{item.title}</h4>
-            <p className="text-xs text-gray-400 leading-relaxed mb-2">{item.desc}</p>
-            <p className="text-xs text-amber-400 font-semibold">{item.why}</p>
+            <h4 className="text-lg font-bold text-white mb-1">{item.title}</h4>
+            <p className="text-sm text-gray-400 leading-relaxed mb-2">{item.desc}</p>
+            <p className="text-sm text-amber-400 font-semibold">{item.why}</p>
           </div>
         ))}
       </div>
@@ -723,16 +723,16 @@ export default function RoofCalculator() {
             <FileText className="w-5 h-5 text-amber-400" />
           </div>
           <div>
-            <p className="text-sm font-bold text-amber-400 mb-1">Full Photo Documentation Included</p>
-            <p className="text-xs text-gray-400 leading-relaxed">Every finding photographed. Infrared imaging. Moisture meter readings. You get a complete written report — yours to keep, whether you roof with us or not.</p>
+            <p className="text-base font-bold text-amber-400 mb-1">Full Photo Documentation Included</p>
+            <p className="text-sm text-gray-400 leading-relaxed">Every finding photographed. Infrared imaging. Moisture meter readings. You get a complete written report — yours to keep, whether you roof with us or not.</p>
           </div>
         </div>
       </div>
 
       {/* Selling your home callout */}
       <div className="bg-slate-900/50 border border-slate-700/30 rounded-xl p-4 mb-2">
-        <h4 className="text-sm font-bold text-white mb-1">Planning to Sell?</h4>
-        <p className="text-xs text-gray-500 leading-relaxed">
+        <h4 className="text-base font-bold text-white mb-1">Planning to Sell?</h4>
+        <p className="text-base text-gray-500 leading-relaxed">
           Buyers need insurance. Their insurer checks the same wind mitigation factors. A clean report with full credits makes your home more attractive to buyers and lenders.
         </p>
       </div>
@@ -752,18 +752,18 @@ export default function RoofCalculator() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
             Every Roof Has a Timeline. We'd Rather You Know Yours.
           </h2>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto">
+          <p className="text-gray-400 text-base max-w-xl mx-auto">
             Whether it's today, next month, or a few years out — we want to be the roofer you already trust when you're ready.
           </p>
         </div>
 
         {/* CTA card */}
         <div className="bg-gradient-to-br from-red-900/20 to-slate-800/50 border-2 border-red-600/20 rounded-2xl p-8 text-center mb-8">
-          <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm text-gray-300">
-            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />Full forensic inspection with photos</span>
-            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />Wind mitigation evaluation</span>
-            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />Infrared & moisture meters</span>
-            <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-500" />100% free, zero obligation</span>
+          <div className="flex flex-wrap justify-center gap-4 mb-6 text-base text-gray-300">
+            <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Full forensic inspection with photos</span>
+            <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Wind mitigation evaluation</span>
+            <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />Infrared & moisture meters</span>
+            <span className="flex items-center gap-1.5"><Check className="w-5 h-5 text-green-500" />100% free, zero obligation</span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
@@ -774,8 +774,8 @@ export default function RoofCalculator() {
               <Phone className="w-5 h-5" />Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-gray-500">We respond within 60 minutes during business hours.</p>
-          <p className="text-amber-400 text-sm mt-2">Plus, you'll get our free Insider's Guide the moment you schedule.</p>
+          <p className="text-base text-gray-500">We respond within 60 minutes during business hours.</p>
+          <p className="text-amber-400 text-base mt-2">Plus, you'll get our free Insider's Guide the moment you schedule.</p>
         </div>
 
         {/* Insider's Guide — one-click since we already have their info from Step 5 */}
@@ -789,7 +789,7 @@ export default function RoofCalculator() {
                 </div>
                 <div className="flex-1 text-center sm:text-left">
                   <h3 className="text-xl font-bold text-white mb-1">Your Free Insider's Guide</h3>
-                  <p className="text-sm text-gray-400 mb-3">The 15-point contractor checklist, insurance savings strategies, and everything you need to make the right decision.</p>
+                  <p className="text-base text-gray-400 mb-3">The 15-point contractor checklist, insurance savings strategies, and everything you need to make the right decision.</p>
                   <a
                     href="/downloads/Insiders-Guide-Hiring-Roofer-South-Florida.pdf"
                     download
@@ -821,7 +821,7 @@ export default function RoofCalculator() {
             ].map(item => (
               <div key={item.label} className="text-center">
                 <span className="block text-lg font-bold text-white">{item.val}</span>
-                <span className="text-xs text-gray-500">{item.label}</span>
+                <span className="text-sm text-gray-500">{item.label}</span>
               </div>
             ))}
           </div>
