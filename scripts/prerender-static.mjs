@@ -1231,34 +1231,41 @@ function generateBlogHubContent() {
   let blogLinksHtml = '';
 
   try {
-    const sitemapPath = path.join(projectRoot, 'public', 'sitemap.xml');
-    if (fs.existsSync(sitemapPath)) {
-      const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+    // Primary source: blog-content.json (has all blog post slugs and titles)
+    const blogContentPath = path.join(projectRoot, 'public', 'blog-content.json');
+    if (fs.existsSync(blogContentPath)) {
+      const blogContent = JSON.parse(fs.readFileSync(blogContentPath, 'utf-8'));
+      const blogSlugs = Object.keys(blogContent);
 
-      // Extract all blog URLs from sitemap
-      const blogUrlMatches = sitemapContent.match(/<loc>https:\/\/allphaseconstructionfl\.com\/blog\/([^<]+)<\/loc>/g);
-
-      if (blogUrlMatches && blogUrlMatches.length > 0) {
-        const blogSlugs = blogUrlMatches
-          .map(match => {
-            const urlMatch = match.match(/\/blog\/([^<]+)</);
-            return urlMatch ? urlMatch[1].replace(/\/$/, '') : null;
-          })
-          .filter(slug => slug && slug !== 'index.html');
-
+      if (blogSlugs.length > 0) {
         blogLinksHtml = blogSlugs
           .map(slug => {
-            const blogTitle = slug
-              .split('-')
-              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(' ');
+            const post = blogContent[slug];
+            const blogTitle = (post && post.title)
+              ? post.title
+              : slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
             return `<li><a href="/blog/${slug}" style="color: #dc2626; text-decoration: underline;">${blogTitle}</a></li>`;
           })
           .join('\n    ');
+        console.log(`📝 Blog hub: found ${blogSlugs.length} posts from blog-content.json`);
+      }
+    } else {
+      // Fallback: read blog/ directory for markdown files
+      const blogDir = path.join(projectRoot, 'blog');
+      if (fs.existsSync(blogDir)) {
+        const mdFiles = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
+        blogLinksHtml = mdFiles
+          .map(f => {
+            const slug = f.replace('.md', '');
+            const blogTitle = slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+            return `<li><a href="/blog/${slug}" style="color: #dc2626; text-decoration: underline;">${blogTitle}</a></li>`;
+          })
+          .join('\n    ');
+        console.log(`📝 Blog hub: found ${mdFiles.length} posts from blog/ directory`);
       }
     }
   } catch (err) {
-    console.warn('⚠️ Warning reading sitemap for blog hub:', err.message);
+    console.warn('⚠️ Warning reading blog content for blog hub:', err.message);
   }
 
   return `
