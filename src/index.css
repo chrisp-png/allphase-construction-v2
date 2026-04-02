@@ -65,6 +65,8 @@ body {
   /* Ensure body stays scrollable when mobile keyboard opens */
   position: relative;
   min-height: 100vh;
+  /* Prevent CLS when scrollbar appears/disappears (e.g., modal open/close) */
+  scrollbar-gutter: stable;
 }
 
 #root {
