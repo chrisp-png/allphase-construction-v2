@@ -778,13 +778,35 @@ export default function RoofCalculator() {
           <p className="text-amber-400 text-sm mt-2">Plus, you'll get our free Insider's Guide the moment you schedule.</p>
         </div>
 
-        {/* Checklist Download */}
+        {/* Insider's Guide — one-click since we already have their info from Step 5 */}
         <div className="mb-8">
-          <ChecklistDownloadForm
-            roofType={selectedType.name}
-            roofSize={selectedSize.label}
-            roofSqft={selectedSize.sqft}
-          />
+          {gateUnlocked ? (
+            <div className="bg-gradient-to-br from-slate-800/60 to-blue-900/15 border border-blue-600/20 rounded-2xl p-8">
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <div className="flex-shrink-0 w-16 h-20 bg-blue-600/10 border-2 border-blue-600/25 rounded-xl flex flex-col items-center justify-center gap-1">
+                  <FileText className="w-7 h-7 text-blue-400" />
+                  <span className="text-[9px] font-bold text-blue-400 tracking-widest">PDF</span>
+                </div>
+                <div className="flex-1 text-center sm:text-left">
+                  <h3 className="text-xl font-bold text-white mb-1">Your Free Insider's Guide</h3>
+                  <p className="text-sm text-gray-400 mb-3">The 15-point contractor checklist, insurance savings strategies, and everything you need to make the right decision.</p>
+                  <a
+                    href="/downloads/Insiders-Guide-Hiring-Roofer-South-Florida.pdf"
+                    download
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20"
+                  >
+                    <FileText className="w-4 h-4" /> Download Free Guide
+                  </a>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <ChecklistDownloadForm
+              roofType={selectedType.name}
+              roofSize={selectedSize.label}
+              roofSqft={selectedSize.sqft}
+            />
+          )}
         </div>
 
         {/* Trust bar */}
