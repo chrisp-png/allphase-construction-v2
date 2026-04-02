@@ -47,7 +47,7 @@ console.log(`   CSS: ${bundledCSS}`);
 // Create the replacement HTML to inject
 const assetInjection = `    <script type="module" crossorigin src="${bundledJS}"></script>
 ${vendorJS ? `    <link rel="modulepreload" crossorigin href="${vendorJS}">` : ''}
-    <link rel="preload" as="style" href="${bundledCSS}" crossorigin><link rel="stylesheet" crossorigin href="${bundledCSS}" media="print" onload="this.media='all';this.onload=null;"><noscript><link rel="stylesheet" crossorigin href="${bundledCSS}"></noscript>`;
+    <link rel="stylesheet" crossorigin href="${bundledCSS}">`;
 
 // Function to recursively process HTML files in subdirectories
 function processHTMLFiles(dir, basePath = '') {

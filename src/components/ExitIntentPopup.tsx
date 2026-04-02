@@ -18,13 +18,16 @@ export default function ExitIntentPopup() {
   const [hasShown, setHasShown] = useState(false);
   const location = useLocation();
 
-  // ---- scroll-lock helpers ----
+  // ---- scroll-lock helpers (with scrollbar compensation to prevent CLS) ----
   const lockScroll = useCallback(() => {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
   }, []);
 
   const unlockScroll = useCallback(() => {
     document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
   }, []);
 
   // ---- close handler ----

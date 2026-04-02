@@ -11,13 +11,9 @@ const urgencyMessages = [
 ];
 
 export default function HeroRoofing() {
-  const [urgencyMessage, setUrgencyMessage] = useState('');
+  // Use a fixed default message to prevent hydration mismatch and CLS
+  const [urgencyMessage] = useState('Limited inspection slots available this week');
   const { openModal } = useAssessmentModal();
-
-  useEffect(() => {
-    const randomMessage = urgencyMessages[Math.floor(Math.random() * urgencyMessages.length)];
-    setUrgencyMessage(randomMessage);
-  }, []);
 
   return (
     <>

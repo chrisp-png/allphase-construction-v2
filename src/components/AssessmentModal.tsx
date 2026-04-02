@@ -14,21 +14,22 @@ const urgencyMessages = [
 ];
 
 export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProps) {
-  const [urgencyMessage, setUrgencyMessage] = useState('');
-
-  useEffect(() => {
-    const randomMessage = urgencyMessages[Math.floor(Math.random() * urgencyMessages.length)];
-    setUrgencyMessage(randomMessage);
-  }, []);
+  // Use a fixed message to prevent hydration mismatch and CLS
+  const [urgencyMessage] = useState('Limited inspection slots available this week');
 
   useEffect(() => {
     if (isOpen) {
+      // Use overflow-y hidden + padding to prevent scrollbar-induced layout shift
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
     };
   }, [isOpen]);
 
