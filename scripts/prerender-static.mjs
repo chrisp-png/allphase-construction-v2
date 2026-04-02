@@ -2268,12 +2268,36 @@ ${companyAuthorityFooter()}
 
         console.log(`Found ${blogSlugs.length} blog posts in sitemap\n`);
 
+        // Load blog-content.json for real titles
+        let blogContentData = {};
+        try {
+          const bcPath = path.join(projectRoot, 'public', 'blog-content.json');
+          if (fs.existsSync(bcPath)) {
+            blogContentData = JSON.parse(fs.readFileSync(bcPath, 'utf-8'));
+          }
+        } catch (e) { /* fallback to slug */ }
+
         blogSlugs.forEach(slug => {
-          // Generate title from slug
-          const blogTitle = slug
+          // Get real title from blog content, or generate from slug
+          let blogTitle = slug
             .split('-')
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
+
+          // Try to extract H1 from blog content for a better title
+          if (blogContentData[slug]) {
+            const h1Match = blogContentData[slug].match(/<h1>(.*?)<\/h1>/);
+            if (h1Match) blogTitle = h1Match[1];
+          }
+
+          // Build page title, capping at 60 chars including suffix
+          const suffix = ' | All Phase';
+          let pageTitle = blogTitle + suffix;
+          if (pageTitle.length > 60) {
+            // Trim the blog title to fit
+            const maxTitleLen = 60 - suffix.length;
+            pageTitle = blogTitle.substring(0, maxTitleLen).trim() + suffix;
+          }
 
           const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
           // Build blog description, ensuring it stays under 155 chars
@@ -2325,7 +2349,7 @@ ${companyAuthorityFooter()}
           `.trim();
 
           const blogHTML = createHTMLTemplate(
-            `${blogTitle} | All Phase`,
+            pageTitle,
             blogDescription,
             blogCanonical,
             blogContent
