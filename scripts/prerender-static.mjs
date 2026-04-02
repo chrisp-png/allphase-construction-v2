@@ -229,6 +229,19 @@ function generateDeerfieldBeachHQContent() {
   <p><strong>Call (754) 227-5605</strong> to schedule your free professional roof inspection or to speak with a licensed roofing specialist about your Deerfield Beach roofing project. We provide same-day inspection availability, transparent estimates, and comprehensive project documentation for all residential and commercial roofing services.</p>
 
 
+  <h2>Additional Resources for Deerfield Beach Roofing</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/locations/deerfield-beach/best-roofers-deerfield-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Deerfield Beach</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+    <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
+    <li><a href="/blog/our-roofing-company-is-proud-to-be-a-family-owned-business" style="color: #dc2626; text-decoration: underline;">Why We're a Proud Family-Owned Business</a></li>
+    <li><a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a></li>
+    <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
+    <li><a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></li>
+  </ul>
+
+  <p>Trusted industry resources: <a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">GAF Roofing</a> · <a href="https://www.owenscorning.com/en-us/roofing" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Owens Corning</a> · <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NRCA</a></p>
+
 <div class="seo-service-links">
   <h2>Roofing Services in Deerfield Beach, FL</h2>
   <ul>
@@ -654,6 +667,18 @@ function generateBocaRatonServiceHubContent() {
   <p><strong>If you need a roofer in Boca Raton FL, start with an inspection that shows you what is happening and what it costs to fix correctly.</strong></p>
   <p><strong>Call All Phase Construction USA 24/7: (754) 227-5605</strong></p>
 
+  <h2>Additional Resources for Boca Raton Roofing</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/locations/boca-raton/best-roofers-boca-raton" style="color: #dc2626; text-decoration: underline;">Best Roofers in Boca Raton</a></li>
+    <li><a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+    <li><a href="/blog/can-your-hoa-say-no-to-a-metal-roof-a-guide-for-homeowners" style="color: #dc2626; text-decoration: underline;">Can Your HOA Say No to a Metal Roof?</a></li>
+    <li><a href="/blog/why-choose-tile-roofing-in-south-florida" style="color: #dc2626; text-decoration: underline;">Why Choose Tile Roofing in South Florida</a></li>
+    <li><a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a></li>
+    <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
+  </ul>
+
+  <p>Trusted industry resources: <a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">GAF Roofing</a> · <a href="https://www.owenscorning.com/en-us/roofing" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Owens Corning</a> · <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NRCA</a></p>
 
 <div class="seo-service-links">
   <h2>Roofing Services in Boca Raton, FL</h2>
@@ -781,6 +806,18 @@ function generateEnhancedServiceHubContent(cityName, citySlug) {
   <h2>Contact All Phase Construction USA for ${cityName} Roofing</h2>
   <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist about your ${cityName} roofing project. We provide free professional inspections, transparent estimates, and detailed project timelines.</p>
 
+  <h2>Additional Resources for ${cityName} Roofing</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+    <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
+    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
+    <li><a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></li>
+  </ul>
+
+  <p>Trusted industry resources: <a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">GAF Roofing</a> · <a href="https://www.owenscorning.com/en-us/roofing" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Owens Corning</a> · <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NRCA</a></p>
+
 <div class="seo-service-links">
   <h2>Roofing Services in ${cityName}, FL</h2>
   <ul>
@@ -843,6 +880,17 @@ function generateServiceHubContent(cityName, citySlug) {
   <h2>Get Started with Your ${cityName} Roofing Project</h2>
   <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist. We provide free professional inspections, transparent estimates, and detailed project timelines for all ${cityName} roofing services.</p>
 
+  <h2>Additional Resources for ${cityName} Roofing</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+    <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
+    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
+    <li><a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></li>
+  </ul>
+
+  <p>Trusted industry resources: <a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">GAF Roofing</a> · <a href="https://www.owenscorning.com/en-us/roofing" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Owens Corning</a> · <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NRCA</a></p>
 
 <div class="seo-service-links">
   <h2>Roofing Services in ${cityName}, FL</h2>
@@ -871,7 +919,7 @@ function generateRoofRepairHubContent() {
 <section id="seo-static-content">
   <h1>Emergency Roof Repair Services | South Florida</h1>
 
-  <p><strong>Need emergency roof repair?</strong> All Phase Construction USA provides fast, professional roof repair services throughout South Florida. We handle emergency leaks, storm damage, flashing failures, and all structural roofing issues with dual-licensed expertise (CCC-1331464 & CGC-1526236). Call (754) 227-5605 for same-day emergency service.</p>
+  <p><strong>Roof leaking? We can help today.</strong> All Phase Construction USA handles emergency leaks, storm damage, and flashing failures across South Florida. We're dual-licensed (CCC & CGC), so we fix both the roof and any structural damage underneath. Call <strong>(754) 227-5605</strong> for same-day service.</p>
 
   <h2>Roof Repair Service Areas</h2>
   <p>We serve over 50 cities across Broward County and Palm Beach County. Select your city for local roof repair services:</p>
@@ -884,6 +932,16 @@ function generateRoofRepairHubContent() {
     <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">🔍 Call (754) 227-5605 for Same-Day Emergency Service</p>
     <p style="margin-bottom: 0; color: #7f1d1d;">Active leaks, storm damage, missing shingles, and emergency tarping available throughout South Florida.</p>
   </div>
+
+  <h2>Helpful Roof Repair Resources</h2>
+  <p>Learn more about roof repairs and maintenance from our expert guides:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/blog/dont-replace-your-roof-restore-it-instead" style="color: #dc2626; text-decoration: underline;">Don't Replace Your Roof — Restore It Instead</a></li>
+    <li><a href="/blog/what-to-expect-during-a-roof-replacement-project" style="color: #dc2626; text-decoration: underline;">What to Expect During a Roof Replacement</a></li>
+    <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
 
   ${companyAuthorityFooter()}
 </section>
@@ -949,10 +1007,10 @@ function generateRoofRepairContent(cityName, citySlug) {
   <h2>Schedule Your ${cityName} Roof Repair</h2>
   <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist. We provide same-day emergency service and free professional inspections for all ${cityName} roof repair needs.</p>
 
-  <p style="margin-top: 1.5rem; padding: 1rem; background: #f3f4f6; border-radius: 0.5rem;">
-    <strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Professional ${cityName} roof inspection</a>
-  </p>
-
+  <div style="margin-top: 1.5rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
+    <p><strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Professional ${cityName} roof inspection</a> | <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></p>
+    <p style="margin-top: 0.75rem;"><strong>Related Articles:</strong> <a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often to Replace Your Roof</a> | <a href="/blog/what-to-expect-during-a-roof-replacement-project" style="color: #dc2626; text-decoration: underline;">What to Expect During Replacement</a> | <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Insurance Claims Guide</a></p>
+  </div>
 
 <div class="seo-service-links">
   <h2>More Roofing Services in ${cityName}, FL</h2>
@@ -980,7 +1038,7 @@ function generateRoofInspectionHubContent() {
 <section id="seo-static-content">
   <h1>Professional Roof Inspection Services | South Florida</h1>
 
-  <p><strong>Need a professional roof inspection?</strong> All Phase Construction USA provides comprehensive 21-point roof inspections throughout South Florida for pre-purchase evaluations, insurance documentation, maintenance planning, and storm damage assessment. Serving South Florida from our Deerfield Beach headquarters with dual-licensed expertise (CCC-1331464 & CGC-1526236).</p>
+  <p><strong>Know your roof's real condition before you spend a dollar.</strong> Our 21-point inspection covers every part of your roof — from the shingles down to the decking. We check for storm damage, hidden leaks, and code issues. You get a written report with photos, cost estimates, and a clear plan. Call <strong>(754) 227-5605</strong> to schedule a free inspection.</p>
 
   <h2>Roof Inspection Service Areas</h2>
   <p>We serve over 50 cities across Broward County and Palm Beach County. Select your city for professional roof inspection services:</p>
@@ -993,6 +1051,15 @@ function generateRoofInspectionHubContent() {
     <p style="margin-bottom: 0.5rem; color: #166534; font-weight: bold;">📋 Call (754) 227-5605 for Your Free Estimate</p>
     <p style="margin-bottom: 0; color: #166534;">Comprehensive 21-point inspections with detailed documentation for insurance, purchase decisions, or maintenance planning.</p>
   </div>
+
+  <h2>Roof Inspection Resources</h2>
+  <p>Learn more about roof inspections and maintenance:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/professional-roof-inspection-south-florida" style="color: #dc2626; text-decoration: underline;">What a Professional Roof Inspection Looks Like</a></li>
+    <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
+    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
 
   ${companyAuthorityFooter()}
 </section>
@@ -1099,10 +1166,10 @@ function generateRoofInspectionContent(cityName, citySlug) {
   <h2>Schedule Your Free ${cityName} Roof Inspection</h2>
   <p><strong>Call (754) 227-5605</strong> to schedule your professional 21-point roof inspection. We provide same-day availability, detailed photo documentation, and written reports within 24 hours for all ${cityName} properties.</p>
 
-  <p style="margin-top: 1.5rem; padding: 1rem; background: #f3f4f6; border-radius: 0.5rem;">
-    <strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Emergency ${cityName} roof repairs</a>
-  </p>
-
+  <div style="margin-top: 1.5rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
+    <p><strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Emergency ${cityName} roof repairs</a> | <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></p>
+    <p style="margin-top: 0.75rem;"><strong>Related Articles:</strong> <a href="/blog/professional-roof-inspection-south-florida" style="color: #dc2626; text-decoration: underline;">What a Roof Inspection Looks Like</a> | <a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer</a> | <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Insurance Claims Guide</a></p>
+  </div>
 
 <div class="seo-service-links">
   <h2>More Roofing Services in ${cityName}, FL</h2>
@@ -1171,10 +1238,10 @@ function defaultServicePageContent(pageTitle) {
 <section id="seo-static-content">
   <h1>${pageTitle}</h1>
 
-  <p><strong>All Phase Construction USA</strong> provides professional ${pageTitle.toLowerCase()} services throughout Broward County and Palm Beach County. As a dual-licensed roofing contractor, we bring both specialized roofing expertise (CCC-1331464) and comprehensive general contracting authority (CGC-1526236) to every project.</p>
+  <p><strong>All Phase Construction USA</strong> is a dual-licensed roofing contractor in Broward and Palm Beach County. We hold both a CCC roofing license and a CGC general contractor license. That means we handle your roof and any structural work underneath — all under one contract, one crew, one warranty.</p>
 
   <h2>Why Choose All Phase Construction USA</h2>
-  <p>What sets us apart from standard roofing contractors:</p>
+  <p>Here's what makes us different:</p>
   <ul>
     <li><strong>Dual-Licensed (CCC & CGC):</strong> We hold both State Certified Roofing Contractor and Certified General Contractor licenses, providing structural engineering oversight that standard roofers cannot match.</li>
     <li><strong>HVHZ Certified:</strong> Every installation meets High Velocity Hurricane Zone compliance for maximum wind protection and building code requirements.</li>
@@ -1184,6 +1251,12 @@ function defaultServicePageContent(pageTitle) {
 
   <h2>Professional Service Throughout South Florida</h2>
   <p>From our centrally located Deerfield Beach headquarters, we serve over 50 cities across Broward and Palm Beach Counties including Boca Raton, Fort Lauderdale, Coral Springs, Pompano Beach, West Palm Beach, Delray Beach, Boynton Beach, Wellington, Parkland, and all surrounding communities. Our strategic location enables same-day inspection availability and prompt emergency response throughout the region.</p>
+
+  <h2>Trusted Industry Resources</h2>
+  <p>All Phase Construction USA works with leading roofing manufacturers and follows industry best practices. Learn more from these authoritative sources: <a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">GAF Roofing</a>, <a href="https://www.owenscorning.com/en-us/roofing" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Owens Corning Roofing</a>, and the <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">National Roofing Contractors Association (NRCA)</a>.</p>
+
+  <h2>Related Articles</h2>
+  <p>Expert roofing advice from our blog: <a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer</a> · <a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">Roof Replacement Timing</a> · <a href="/blog/what-to-expect-during-a-roof-replacement-project" style="color: #dc2626; text-decoration: underline;">What to Expect During Replacement</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Cost Calculator</a></p>
 
   <p><strong>Contact us at (754) 227-5605 for a free professional inspection and estimate.</strong></p>
 
@@ -1199,10 +1272,10 @@ function homepageContent() {
   return `
 <section id="seo-static-content">
   <h1>Roofing Contractor | Broward & Palm Beach | All Phase USA</h1>
-  <p><strong>Hurricane-compliant HVHZ roofing installation for Broward and Palm Beach County. Dual-licensed contractor specializing in wind-code compliant roofing systems.</strong></p>
+  <p><strong>Your roof protects everything you own. Make sure it's built to last.</strong> All Phase Construction USA is a dual-licensed roofing contractor serving Broward and Palm Beach County. Every roof we install meets HVHZ hurricane-zone standards — built for South Florida's toughest weather.</p>
 
   <h2>Our Edge</h2>
-  <p>What sets us apart from standard roofing contractors:</p>
+  <p>Here's what makes us different from other roofers:</p>
   <ul>
     <li><strong>Dual-Licensed Authority:</strong> Both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses provide structural engineering expertise standard roofers lack.</li>
     <li><strong>HVHZ Specialist:</strong> Every South Florida installation meets High Velocity Hurricane Zone compliance with 175+ mph wind ratings.</li>
@@ -1215,6 +1288,9 @@ function homepageContent() {
 
   <h2>Service Area</h2>
   <p>From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities across Broward County and Palm Beach County including <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/parkland" style="color: #dc2626; text-decoration: underline;">Parkland</a>, <a href="/locations/coconut-creek" style="color: #dc2626; text-decoration: underline;">Coconut Creek</a>, <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and all surrounding communities.</p>
+
+  <h2>Roofing Guides & Resources</h2>
+  <p>Make informed roofing decisions with our expert guides: <a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a>, <a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a>, <a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a>, and our <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a>. Visit our <a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a> or <a href="/blog" style="color: #dc2626; text-decoration: underline;">Roofing Blog</a> for more homeowner tips and industry updates.</p>
 
   <p><strong>Call (754) 227-5605 for a free professional roof inspection and estimate.</strong></p>
 
@@ -1270,9 +1346,20 @@ function generateBlogHubContent() {
 
   return `
 <section id="seo-static-content">
-  <h1>Roofing Insights & Industry News | All Phase USA Blog</h1>
+  <h1>Roofing Insights & Industry News | All Phase</h1>
 
   <p><strong>Expert roofing advice from South Florida's dual-licensed contractor.</strong> All Phase Construction USA shares industry insights, maintenance tips, and storm damage guides to help homeowners and business owners make informed roofing decisions. Stay updated on the latest roofing trends, best practices, and local updates from our Deerfield Beach headquarters.</p>
+
+  <h2>Roofing Guides & Resources</h2>
+  <p>In-depth guides for South Florida homeowners:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a></li>
+    <li><a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a></li>
+    <li><a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a></li>
+    <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+    <li><a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></li>
+  </ul>
 
   <h2>Latest Blog Articles</h2>
   <p>Explore our collection of roofing guides, maintenance tips, and expert insights:</p>
@@ -1624,7 +1711,7 @@ function getSEOMetadata(urlPath, cityName = null) {
     if (normalizedPath.includes('/roof-repair/')) {
       return {
         title: `${cityName} Roof Repair | All Phase USA`,
-        description: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. HVHZ-compliant, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
+        description: `Roof repair in ${cityName}, FL. Leaks, storm damage & flashing fixes. HVHZ-compliant, dual-licensed contractor. Call (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
@@ -1920,7 +2007,15 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/about-us', title: 'About All Phase Construction' },
     { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' },
     { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
-    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' }
+    { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' },
+    { path: '/broward-county-roof-replacement-guide', title: 'Broward County Roof Replacement Guide' },
+    { path: '/palm-beach-county-roof-replacement-guide', title: 'Palm Beach County Roof Replacement Guide' },
+    { path: '/boca-raton-roof-replacement-guide', title: 'Boca Raton Roof Replacement Guide' },
+    { path: '/florida-roof-insurance-claims-guide', title: 'Florida Roof Insurance Claims Guide' },
+    { path: '/roof-replacement-cost-florida', title: 'Roof Replacement Cost in Florida' },
+    { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
+    { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
+    { path: '/south-florida-roofing-reviews', title: 'South Florida Roofing Reviews' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
@@ -2181,7 +2276,14 @@ ${companyAuthorityFooter()}
             .join(' ');
 
           const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
-          const blogDescription = `Expert roofing insights on ${blogTitle.toLowerCase()} from All Phase Construction USA, South Florida's dual-licensed roofing contractor.`;
+          // Build blog description, ensuring it stays under 155 chars
+          let blogDescription = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
+          if (blogDescription.length > 155) {
+            blogDescription = `${blogTitle} — expert insights from All Phase USA, South Florida's dual-licensed roofer.`;
+          }
+          if (blogDescription.length > 155) {
+            blogDescription = `${blogTitle.substring(0, 90)} — roofing tips from All Phase USA. Call (754) 227-5605.`;
+          }
 
           const blogContent = `
 <section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
@@ -2205,7 +2307,13 @@ ${companyAuthorityFooter()}
       Whether you need roof repair, roof replacement, roof inspection, or preventive maintenance, our team delivers HVHZ-compliant workmanship backed by manufacturer warranties and our A+ BBB rating.
     </p>
 
-    <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
+      <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Related Services & Resources</h3>
+      <p style="color: #374151; line-height: 1.75;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair Services</a> · <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Free Roof Inspections</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> · <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Replacement Process</a> · <a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></p>
+      <p style="color: #374151; line-height: 1.75; margin-top: 0.5rem;"><strong>Top Locations:</strong> <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a> · <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a> · <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a> · <a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach</a> · <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a></p>
+    </div>
+
+    <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
       <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
       <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
       <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
@@ -2217,7 +2325,7 @@ ${companyAuthorityFooter()}
           `.trim();
 
           const blogHTML = createHTMLTemplate(
-            `${blogTitle} | All Phase USA Blog`,
+            `${blogTitle} | All Phase`,
             blogDescription,
             blogCanonical,
             blogContent

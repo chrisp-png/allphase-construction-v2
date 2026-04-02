@@ -34,7 +34,7 @@ export const locations: Location[] = [
     city: "Deerfield Beach",
     state: "FL",
         titleOverride: "Deerfield Beach Roofing | HQ | All Phase USA",
-    descriptionOverride: "Deerfield Beach's top-rated roofing company — our headquarters since 2005. HVHZ-certified, dual-licensed, 2,500+ roofs. Free same-day inspection. (754) 227-5605."
+    descriptionOverride: "Deerfield Beach roofing HQ since 2005. HVHZ-certified, dual-licensed, 2,500+ roofs. Free same-day inspection. (754) 227-5605."
   },
 
   // ALL OTHER CITIES (use template-based SEO)
@@ -50,7 +50,7 @@ export const locations: Location[] = [
     city: "Boynton Beach",
     state: "FL",
     titleOverride: "Roof Replacement Boynton Beach | All Phase",
-    descriptionOverride: "Need a new roof in Boynton Beach? Dual-licensed contractor serving Aberdeen, Leisureville & all PBC communities. Florida wind-code compliant. Free estimate. (754) 227-5605."
+    descriptionOverride: "Boynton Beach roof replacement. Dual-licensed contractor for Aberdeen, Leisureville & all PBC. Wind-code compliant. Free estimate. (754) 227-5605."
   },
   { slug: "coconut-creek", city: "Coconut Creek", state: "FL" },
   { slug: "cooper-city", city: "Cooper City", state: "FL" },
@@ -189,7 +189,7 @@ export const locations: Location[] = [
     city: "Wellington",
     state: "FL",
     titleOverride: "Roof Replacement Wellington | All Phase USA",
-    descriptionOverride: "Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. Florida wind-code compliant, dual-licensed. Free estimate. (754) 227-5605."
+    descriptionOverride: "Wellington roof replacement. Tile & metal for estates & equestrian communities. Wind-code compliant, dual-licensed. Free estimate. (754) 227-5605."
   },
   {
     slug: "west-palm-beach",
