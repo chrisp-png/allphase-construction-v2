@@ -415,24 +415,4 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /blog/helping-your-association-plan-for-roofing-budgets-with-confidence /blog 301!
 /boca-raton /locations/boca-raton 301!
 
-# ======================================================================
-# BEST-ROOFERS STATIC PAGE REWRITES
-# pretty_urls=false means /path/index.html won't auto-serve at /path
-# These rewrites ensure prerendered best-roofers pages load correctly.
-# ======================================================================
-/locations/pompano-beach/best-roofers-pompano-beach /locations/pompano-beach/best-roofers-pompano-beach/index.html 200!
-/locations/hollywood/best-roofers-hollywood /locations/hollywood/best-roofers-hollywood/index.html 200!
-/locations/sunrise/best-roofers-sunrise /locations/sunrise/best-roofers-sunrise/index.html 200!
-/locations/plantation/best-roofers-plantation /locations/plantation/best-roofers-plantation/index.html 200!
-/locations/davie/best-roofers-davie /locations/davie/best-roofers-davie/index.html 200!
-/locations/miramar/best-roofers-miramar /locations/miramar/best-roofers-miramar/index.html 200!
-/locations/pembroke-pines/best-roofers-pembroke-pines /locations/pembroke-pines/best-roofers-pembroke-pines/index.html 200!
-/locations/delray-beach/best-roofers-delray-beach /locations/delray-beach/best-roofers-delray-beach/index.html 200!
-/locations/boynton-beach/best-roofers-boynton-beach /locations/boynton-beach/best-roofers-boynton-beach/index.html 200!
-/locations/jupiter/best-roofers-jupiter /locations/jupiter/best-roofers-jupiter/index.html 200!
-/locations/palm-beach-gardens/best-roofers-palm-beach-gardens /locations/palm-beach-gardens/best-roofers-palm-beach-gardens/index.html 200!
-/locations/royal-palm-beach/best-roofers-royal-palm-beach /locations/royal-palm-beach/best-roofers-royal-palm-beach/index.html 200!
-/locations/greenacres/best-roofers-greenacres /locations/greenacres/best-roofers-greenacres/index.html 200!
-/locations/lake-worth-beach/best-roofers-lake-worth-beach /locations/lake-worth-beach/best-roofers-lake-worth-beach/index.html 200!
-
 /* /index.html 200
