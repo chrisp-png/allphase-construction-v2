@@ -134,7 +134,21 @@ export default function SitemapPage() {
         { to: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'Best Roofers in West Palm Beach' },
         { to: '/locations/boca-raton/best-roofers-boca-raton', label: 'Best Roofers in Boca Raton' },
         { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' },
-        { to: '/locations/wellington/best-roofers-wellington', label: 'Best Roofers in Wellington' }
+        { to: '/locations/wellington/best-roofers-wellington', label: 'Best Roofers in Wellington' },
+        { to: '/locations/pompano-beach/best-roofers-pompano-beach', label: 'Best Roofers in Pompano Beach' },
+        { to: '/locations/hollywood/best-roofers-hollywood', label: 'Best Roofers in Hollywood' },
+        { to: '/locations/sunrise/best-roofers-sunrise', label: 'Best Roofers in Sunrise' },
+        { to: '/locations/plantation/best-roofers-plantation', label: 'Best Roofers in Plantation' },
+        { to: '/locations/davie/best-roofers-davie', label: 'Best Roofers in Davie' },
+        { to: '/locations/miramar/best-roofers-miramar', label: 'Best Roofers in Miramar' },
+        { to: '/locations/pembroke-pines/best-roofers-pembroke-pines', label: 'Best Roofers in Pembroke Pines' },
+        { to: '/locations/delray-beach/best-roofers-delray-beach', label: 'Best Roofers in Delray Beach' },
+        { to: '/locations/boynton-beach/best-roofers-boynton-beach', label: 'Best Roofers in Boynton Beach' },
+        { to: '/locations/jupiter/best-roofers-jupiter', label: 'Best Roofers in Jupiter' },
+        { to: '/locations/palm-beach-gardens/best-roofers-palm-beach-gardens', label: 'Best Roofers in Palm Beach Gardens' },
+        { to: '/locations/royal-palm-beach/best-roofers-royal-palm-beach', label: 'Best Roofers in Royal Palm Beach' },
+        { to: '/locations/greenacres/best-roofers-greenacres', label: 'Best Roofers in Greenacres' },
+        { to: '/locations/lake-worth-beach/best-roofers-lake-worth-beach', label: 'Best Roofers in Lake Worth Beach' }
       ]
     },
     {
@@ -188,12 +202,21 @@ export default function SitemapPage() {
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.to}>
-                    <Link
-                      to={link.to}
-                      className="text-zinc-400 hover:text-red-500 transition-colors block py-1"
-                    >
-                      {link.label}
-                    </Link>
+                    {link.to.includes('best-roofers') ? (
+                      <a
+                        href={link.to}
+                        className="text-zinc-400 hover:text-red-500 transition-colors block py-1"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.to}
+                        className="text-zinc-400 hover:text-red-500 transition-colors block py-1"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
