@@ -13,6 +13,7 @@
 
 import { getLocationBySlug } from '../data/locations';
 import { buildLocationSeo } from '../lib/locationSeo';
+import { BEST_ROOFERS_DATA } from '../data/bestRoofersData';
 
 /**
  * Broward County slugs - these cities are in the HVHZ (High Velocity Hurricane Zone).
@@ -447,6 +448,22 @@ export function generateSEOMetadata(path: string): SEOMetadata {
         ogTitle: seo.ogTitle,
         ogDescription: seo.ogDescription
       };
+    }
+
+    // Handle /locations/:citySlug/best-roofers-:citySlug pages
+    const bestRoofersMatch = slug.match(/^([^/]+)\/best-roofers-(.+)$/);
+    if (bestRoofersMatch) {
+      const citySlug = bestRoofersMatch[1];
+      const rooferData = BEST_ROOFERS_DATA[citySlug];
+      if (rooferData) {
+        return {
+          title: rooferData.pageTitle,
+          description: rooferData.metaDescription,
+          canonical: `https://allphaseconstructionfl.com/locations/${citySlug}/best-roofers-${citySlug}`,
+          ogTitle: rooferData.pageTitle,
+          ogDescription: rooferData.metaDescription
+        };
+      }
     }
 
     // Fallback if location not found in locations.ts
