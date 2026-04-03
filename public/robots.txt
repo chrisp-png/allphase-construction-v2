@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /surfer/
 Sitemap: https://allphaseconstructionfl.com/sitemap.xml
 
 # AI Crawlers - Welcome

@@ -31,8 +31,8 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 /financing/ https://allphaseconstructionfl.com/easy-payments 301!
 /about https://allphaseconstructionfl.com/about-us 301!
 /about/ https://allphaseconstructionfl.com/about-us 301!
-/services /roofing-services 301!
-/services/ /roofing-services 301!
+/services /roof-repair 301!
+/services/ /roof-repair 301!
 /service-areas https://allphaseconstructionfl.com/locations/deerfield-beach 301!
 /service-areas/ https://allphaseconstructionfl.com/locations/deerfield-beach 301!
 /gallery https://allphaseconstructionfl.com/projects 301!
@@ -194,12 +194,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-services/roof-inspection /roof-inspection 301!
 /roofing-services/roof-inspection/ /roof-inspection 301!
 /roofing-services/roof-repair/hypoluxo /roof-repair/hypoluxo 301!
-/pricing-guide /easy-payments 301
-/pricing-guide/ /easy-payments 301
-/our-location /contact 301
-/our-location/ /contact 301
-/media-gallery / 301!
-/media-gallery/ / 301!
+# /pricing-guide is a live page - no redirect needed
+# /our-location is a live page - no redirect needed
+# /media-gallery handled on line 179 -> /projects
 /lunch-learn-roofing-event / 301!
 /lunch-learn-roofing-event/ / 301!
 /roofing-contractor-hollywood-fl /locations/hollywood 301!
@@ -320,9 +317,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /wellington /locations/wellington 301!
 /lauderdale-by-the-sea /locations/lauderdale-by-the-sea 301!
 
-# /roofing/ pattern - should be /roofing-services
-/roofing /roofing-services 301!
-/roofing/ /roofing-services 301!
+# /roofing/ pattern - direct to final destination
+/roofing /roof-repair 301!
+/roofing/ /roof-repair 301!
 
 # Trailing slash variants for soft 404 pages
 
