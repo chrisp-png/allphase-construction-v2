@@ -2394,7 +2394,7 @@ ${companyAuthorityFooter()}
 `.trim();
   fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), createHTMLTemplate(
     'Roof Replacement South Florida (2026 Cost) | All Phase',
-    'Licensed roof replacement contractor in South Florida. Serving Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. Free estimates. Call (754) 227-5605.',
+    'Roof replacement in South Florida. Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. (754) 227-5605.',
     'https://allphaseconstructionfl.com/roof-replacement',
     roofReplacementContent
   ));
@@ -2413,7 +2413,7 @@ ${companyAuthorityFooter()}
 
   additionalLocations.forEach(({ path: pagePath, title, city }) => {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
-    const description = `Professional roofing services in ${city}, Florida. Expert roof installation, repair, and maintenance from All Phase Construction USA. Licensed, insured, and serving South Florida.`;
+    const description = `Roofing services in ${city}, FL. Roof installation, repair & maintenance. All Phase Construction USA. Licensed & insured. (754) 227-5605.`;
 
     const content = `
 <section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
@@ -2474,8 +2474,8 @@ ${companyAuthorityFooter()}
 
   topRooferPages.forEach(({ path: pagePath, city }) => {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
-    const title = `Top 5 Roofer in ${city}, FL | All Phase Construction USA`;
-    const description = `All Phase Construction USA ranks among the top 5 roofers in ${city}, Florida. Dual-licensed (CCC & CGC), A+ BBB rated, and trusted by thousands of South Florida homeowners.`;
+    const title = `Top 5 Roofer in ${city}, FL | All Phase USA`;
+    const description = `All Phase ranks among the top 5 roofers in ${city}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
 
     const content = `
 <section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
@@ -2881,8 +2881,8 @@ ${companyAuthorityFooter()}
   <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Wellington's equestrian estates and canal communities. Call (754) 227-5605 for a free roof inspection.</p>
 `;
   fs.writeFileSync(path.join(bestRoofersWellingtonDir, 'index.html'), createHTMLTemplate(
-    '5 Best Roofers in Wellington, FL (2026 Reviewed) | All Phase Construction',
-    'Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records. Serving Wellington\'s equestrian estates, canal communities, and HOA neighborhoods across 33414 and 33449.',
+    '5 Best Roofers in Wellington, FL (2026) | All Phase',
+    'Top 5 roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records across 33414 and 33449.',
     'https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington',
     bestRoofersWellingtonContent
   ));

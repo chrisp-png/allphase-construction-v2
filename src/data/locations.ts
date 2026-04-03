@@ -106,7 +106,7 @@ export const locations: Location[] = [
     slug: "jupiter",
     city: "Jupiter",
     state: "FL",
-    titleOverride: "Jupiter FL Roofer | Coastal Roofing Near Indiantown Rd | All Phase",
+    titleOverride: "Jupiter FL Roofer | Coastal Roofing | All Phase",
     descriptionOverride: "Jupiter roofing contractor near Abacoa, Jonathan's Landing & Jupiter Beach. HVHZ-certified, dual-licensed. Tile, metal & shingle. (754) 227-5605."
   },
   { slug: "jupiter-inlet-colony", city: "Jupiter Inlet Colony", state: "FL" },
@@ -173,7 +173,7 @@ export const locations: Location[] = [
     slug: "pompano-beach",
     city: "Pompano Beach",
     state: "FL",
-    titleOverride: "Pompano Beach Roofer Near Me | Palm Aire & Harbor Village | All Phase",
+    titleOverride: "Pompano Beach Roofer Near Me | All Phase USA",
     descriptionOverride: "Pompano Beach roofer near Palm Aire, Harbor Village & Cypress Lakes. Storm damage, full reroofs. HVHZ-certified, dual-licensed. (754) 227-5605."
   },
   { slug: "royal-palm-beach", city: "Royal Palm Beach", state: "FL" },
