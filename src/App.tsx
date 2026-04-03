@@ -216,6 +216,8 @@ const BestRoofersBoyntonBeachPage = lazy(() => import('./pages/BestRoofersBoynto
 const BestRoofersJupiterPage = lazy(() => import('./pages/BestRoofersJupiterPage'));
 const BestRoofersPalmBeachGardensPage = lazy(() => import('./pages/BestRoofersPalmBeachGardensPage'));
 const BestRoofersRoyalPalmBeachPage = lazy(() => import('./pages/BestRoofersRoyalPalmBeachPage'));
+const BestRoofersGreenacresPage = lazy(() => import('./pages/BestRoofersGreenacresPage'));
+const BestRoofersLakeWorthBeachPage = lazy(() => import('./pages/BestRoofersLakeWorthBeachPage'));
 const GenericBestRoofersPage = lazy(() => import('./pages/GenericBestRoofersPage'));
 const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
 const BrowardCountyRoofReplacementGuidePage = lazy(() => import('./pages/BrowardCountyRoofReplacementGuidePage'));
@@ -381,8 +383,8 @@ function AppContent() {
             <Route path="/locations/jupiter/best-roofers-jupiter" element={<BestRoofersJupiterPage />} />
             <Route path="/locations/palm-beach-gardens/best-roofers-palm-beach-gardens" element={<BestRoofersPalmBeachGardensPage />} />
             <Route path="/locations/royal-palm-beach/best-roofers-royal-palm-beach" element={<BestRoofersRoyalPalmBeachPage />} />
-            <Route path="/locations/greenacres/best-roofers-greenacres" element={<GenericBestRoofersPage />} />
-            <Route path="/locations/lake-worth-beach/best-roofers-lake-worth-beach" element={<GenericBestRoofersPage />} />
+            <Route path="/locations/greenacres/best-roofers-greenacres" element={<BestRoofersGreenacresPage />} />
+            <Route path="/locations/lake-worth-beach/best-roofers-lake-worth-beach" element={<BestRoofersLakeWorthBeachPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
