@@ -206,6 +206,8 @@ const BestRoofersWellingtonPage = lazy(() => import('./pages/BestRoofersWellingt
 const BestRooferCoralSpringsPage = lazy(() => import('./pages/BestRooferCoralSpringsPage'));
 const BestRoofersPompanoBeachPage = lazy(() => import('./pages/BestRoofersPompanoBeachPage'));
 const BestRoofersHollywoodPage = lazy(() => import('./pages/BestRoofersHollywoodPage'));
+const BestRoofersSunrisePage = lazy(() => import('./pages/BestRoofersSunrisePage'));
+const BestRoofersPlantationPage = lazy(() => import('./pages/BestRoofersPlantationPage'));
 const GenericBestRoofersPage = lazy(() => import('./pages/GenericBestRoofersPage'));
 const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
 const BrowardCountyRoofReplacementGuidePage = lazy(() => import('./pages/BrowardCountyRoofReplacementGuidePage'));
@@ -361,8 +363,8 @@ function AppContent() {
             {/* 14 new best-roofers city pages — data-driven React component */}
             <Route path="/locations/pompano-beach/best-roofers-pompano-beach" element={<BestRoofersPompanoBeachPage />} />
             <Route path="/locations/hollywood/best-roofers-hollywood" element={<BestRoofersHollywoodPage />} />
-            <Route path="/locations/sunrise/best-roofers-sunrise" element={<GenericBestRoofersPage />} />
-            <Route path="/locations/plantation/best-roofers-plantation" element={<GenericBestRoofersPage />} />
+            <Route path="/locations/sunrise/best-roofers-sunrise" element={<BestRoofersSunrisePage />} />
+            <Route path="/locations/plantation/best-roofers-plantation" element={<BestRoofersPlantationPage />} />
             <Route path="/locations/davie/best-roofers-davie" element={<GenericBestRoofersPage />} />
             <Route path="/locations/miramar/best-roofers-miramar" element={<GenericBestRoofersPage />} />
             <Route path="/locations/pembroke-pines/best-roofers-pembroke-pines" element={<GenericBestRoofersPage />} />
