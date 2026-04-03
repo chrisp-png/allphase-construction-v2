@@ -102,6 +102,13 @@ export const locations: Location[] = [
     descriptionOverride: "Top-rated roofer in Hollywood, FL. Hurricane-rated re-roofs, storm damage repair & coastal roofing. HVHZ-certified. (754) 227-5605."
   },
   { slug: "hypoluxo", city: "Hypoluxo", state: "FL" },
+  {
+    slug: "jupiter",
+    city: "Jupiter",
+    state: "FL",
+    titleOverride: "Jupiter FL Roofer | Coastal Roofing Near Indiantown Rd | All Phase",
+    descriptionOverride: "Jupiter roofing contractor near Abacoa, Jonathan's Landing & Jupiter Beach. HVHZ-certified, dual-licensed. Tile, metal & shingle. (754) 227-5605."
+  },
   { slug: "jupiter-inlet-colony", city: "Jupiter Inlet Colony", state: "FL" },
   { slug: "lake-park", city: "Lake Park", state: "FL" },
     { slug: "lake-worth-beach", city: "Lake Worth Beach", state: "FL" },
@@ -166,8 +173,8 @@ export const locations: Location[] = [
     slug: "pompano-beach",
     city: "Pompano Beach",
     state: "FL",
-    titleOverride: "Pompano Beach Roofer | Storm Damage | All Phase",
-    descriptionOverride: "Pompano Beach roofer specializing in storm damage & full reroofs. HVHZ-certified, dual-licensed, 2,500+ projects. Free inspection. (754) 227-5605."
+    titleOverride: "Pompano Beach Roofer Near Me | Palm Aire & Harbor Village | All Phase",
+    descriptionOverride: "Pompano Beach roofer near Palm Aire, Harbor Village & Cypress Lakes. Storm damage, full reroofs. HVHZ-certified, dual-licensed. (754) 227-5605."
   },
   { slug: "royal-palm-beach", city: "Royal Palm Beach", state: "FL" },
   {
