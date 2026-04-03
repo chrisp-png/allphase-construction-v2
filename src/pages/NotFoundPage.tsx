@@ -78,8 +78,8 @@ export default function NotFoundPage() {
         <div className="bg-red-50 border-l-4 border-red-600 p-6 rounded-lg">
           <p className="text-gray-700">
             <strong>Need help?</strong> Call us at{' '}
-            <a href="tel:+19544006393" className="text-red-600 font-bold hover:underline">
-              (954) 400-6393
+            <a href="tel:+17542275605" className="text-red-600 font-bold hover:underline">
+              (754) 227-5605
             </a>{' '}
             or{' '}
             <Link to="/contact/" className="text-red-600 font-bold hover:underline">
