@@ -210,6 +210,8 @@ const BestRoofersSunrisePage = lazy(() => import('./pages/BestRoofersSunrisePage
 const BestRoofersPlantationPage = lazy(() => import('./pages/BestRoofersPlantationPage'));
 const BestRoofersDaviePage = lazy(() => import('./pages/BestRoofersDaviePage'));
 const BestRoofersMiramarPage = lazy(() => import('./pages/BestRoofersMiramarPage'));
+const BestRoofersPembrokePinesPage = lazy(() => import('./pages/BestRoofersPembrokePinesPage'));
+const BestRoofersDelrayBeachPage = lazy(() => import('./pages/BestRoofersDelrayBeachPage'));
 const GenericBestRoofersPage = lazy(() => import('./pages/GenericBestRoofersPage'));
 const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
 const BrowardCountyRoofReplacementGuidePage = lazy(() => import('./pages/BrowardCountyRoofReplacementGuidePage'));
@@ -369,8 +371,8 @@ function AppContent() {
             <Route path="/locations/plantation/best-roofers-plantation" element={<BestRoofersPlantationPage />} />
             <Route path="/locations/davie/best-roofers-davie" element={<BestRoofersDaviePage />} />
             <Route path="/locations/miramar/best-roofers-miramar" element={<BestRoofersMiramarPage />} />
-            <Route path="/locations/pembroke-pines/best-roofers-pembroke-pines" element={<GenericBestRoofersPage />} />
-            <Route path="/locations/delray-beach/best-roofers-delray-beach" element={<GenericBestRoofersPage />} />
+            <Route path="/locations/pembroke-pines/best-roofers-pembroke-pines" element={<BestRoofersPembrokePinesPage />} />
+            <Route path="/locations/delray-beach/best-roofers-delray-beach" element={<BestRoofersDelrayBeachPage />} />
             <Route path="/locations/boynton-beach/best-roofers-boynton-beach" element={<GenericBestRoofersPage />} />
             <Route path="/locations/jupiter/best-roofers-jupiter" element={<GenericBestRoofersPage />} />
             <Route path="/locations/palm-beach-gardens/best-roofers-palm-beach-gardens" element={<GenericBestRoofersPage />} />
