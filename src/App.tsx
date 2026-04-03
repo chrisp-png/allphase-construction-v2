@@ -204,6 +204,7 @@ const BestRoofersWestPalmBeachPage = lazy(() => import('./pages/BestRoofersWestP
 const BestRoofersBocaRatonPage = lazy(() => import('./pages/BestRoofersBocaRatonPage'));
 const BestRoofersWellingtonPage = lazy(() => import('./pages/BestRoofersWellingtonPage'));
 const BestRooferCoralSpringsPage = lazy(() => import('./pages/BestRooferCoralSpringsPage'));
+const PrerenderedStaticPage = lazy(() => import('./pages/PrerenderedStaticPage'));
 const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
 const BrowardCountyRoofReplacementGuidePage = lazy(() => import('./pages/BrowardCountyRoofReplacementGuidePage'));
 const RoofReplacementCostFloridaPage = lazy(() => import('./pages/RoofReplacementCostFloridaPage'));
@@ -355,6 +356,21 @@ function AppContent() {
             <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
             <Route path="/locations/west-palm-beach/best-roofers-west-palm-beach" element={<BestRoofersWestPalmBeachPage />} />
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
+            {/* 14 new best-roofers city pages (prerendered only, no dedicated React component) */}
+            <Route path="/locations/pompano-beach/best-roofers-pompano-beach" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/hollywood/best-roofers-hollywood" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/sunrise/best-roofers-sunrise" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/plantation/best-roofers-plantation" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/davie/best-roofers-davie" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/miramar/best-roofers-miramar" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/pembroke-pines/best-roofers-pembroke-pines" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/delray-beach/best-roofers-delray-beach" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/boynton-beach/best-roofers-boynton-beach" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/jupiter/best-roofers-jupiter" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/palm-beach-gardens/best-roofers-palm-beach-gardens" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/royal-palm-beach/best-roofers-royal-palm-beach" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/greenacres/best-roofers-greenacres" element={<PrerenderedStaticPage />} />
+            <Route path="/locations/lake-worth-beach/best-roofers-lake-worth-beach" element={<PrerenderedStaticPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
