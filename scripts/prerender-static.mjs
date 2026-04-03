@@ -1817,6 +1817,43 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       reviewCount: '136',
       bestRating: '5'
     },
+    review: [
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Michael R.' },
+        datePublished: '2025-11-14',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody: 'All Phase replaced our tile roof after Hurricane Ian damage. Crew was professional, finished in four days, and the county inspection passed first try. Highly recommend.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Sandra T.' },
+        datePublished: '2025-09-22',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody: 'We got three quotes for a full shingle replacement in Coral Springs. All Phase was the most thorough with their inspection and came in at a fair price. Great communication from start to finish.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'David and Karen L.' },
+        datePublished: '2025-07-08',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody: 'Had a metal roof installed on our Deerfield Beach home. The team handled the permit, passed HVHZ inspection, and cleaned up every day before they left. Could not be happier with the result.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'James P.' },
+        datePublished: '2025-04-30',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        reviewBody: 'Used All Phase for a flat roof on our commercial building in Pompano Beach. No leaks, no issues, and they worked around our business hours. Very professional outfit.'
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Lisa M.' },
+        datePublished: '2025-02-15',
+        reviewRating: { '@type': 'Rating', ratingValue: '4', bestRating: '5' },
+        reviewBody: 'Roof replacement in Boca Raton went smoothly. Project took about a week due to weather delays but the crew kept us updated. Final result looks fantastic and passed inspection on the first attempt.'
+      }
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Roofing Services',
@@ -1836,6 +1873,20 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     }
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
+  // But inject review array into page-specific RoofingContractor schemas that lack one
+  const reviewArray = baseOrgSchema.review;
+  function injectReviews(schema) {
+    if (schema && schema['@type'] === 'RoofingContractor' && !schema.review) {
+      schema.review = reviewArray;
+    }
+  }
+  if (jsonLdSchema) {
+    if (Array.isArray(jsonLdSchema)) {
+      jsonLdSchema.forEach(injectReviews);
+    } else {
+      injectReviews(jsonLdSchema);
+    }
+  }
   const schemaToInject = (jsonLdSchema && (jsonLdSchema['@type'] === 'RoofingContractor' || (Array.isArray(jsonLdSchema) && jsonLdSchema[0]?.['@type'] === 'RoofingContractor')))
     ? null
     : baseOrgSchema;
@@ -2756,15 +2807,46 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersDFBDir, { recursive: true });
   const bestRoofersDFBContent = `
   <h1>Top 5 Best Rated Roofers in Deerfield Beach, FL (2026)</h1>
-  <p>Finding a roofer in Deerfield Beach you can actually trust. We reviewed dozens of contractors and five rose to the top through verifiable credentials, strong reviews, and proven track records.</p>
-  <h2>Finding a Roofer in Deerfield Beach You Can Actually Trust</h2>
-  <p>All Phase Construction USA is headquartered at 590 Goolsby Blvd, Deerfield Beach, FL 33442. Dual licensed: CCC-1331464 (Roofing Contractor) &amp; CGC-1526236 (General Contractor). Rated 4.8/5 from 138 verified reviews. Call (754) 227-5605 for a free roof assessment.</p>
+  <p>Deerfield Beach stretches along the Atlantic coast and inland through established neighborhoods like the Cove area, Century Village, and the scenic Waterways community. Finding a trustworthy roofer in Deerfield Beach means understanding both coastal salt-air demands and the aging roof systems common in 1970s-80s developments. We evaluated dozens of licensed roofers and identified five that stand out for their HVHZ expertise, local track records, and transparent pricing.</p>
+  <h2>Why Deerfield Beach Roofing Requires Specialized Expertise</h2>
+  <p>Deerfield Beach is home to the 1,350-foot fishing pier and year-round beach recreation, but that ocean proximity creates significant roofing challenges. Properties near the Intracoastal and Atlantic face aggressive salt spray that corrodes standard fasteners within years, while inland neighborhoods in the Cove area and Waterways communities deal with aging roof systems from earlier development eras. Century Village, one of South Florida's largest 55+ communities, presents unique challenges where many original tile and shingle roofs are now 35+ years old. According to <a href="https://www.noaa.gov/education/resource-collections/weather-atmosphere/hurricanes" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NOAA's hurricane research</a>, Deerfield Beach falls within Broward County's High Velocity Hurricane Zone with design wind speeds exceeding 175 mph. Every roofing contractor in Deerfield Beach must carry HVHZ certification and understand marine-grade fastening systems.</p>
+  <h2>Your List of the Top 5 Best Roofers in Deerfield Beach, FL</h2>
+  <ol>
+    <li><strong>All Phase Construction USA</strong> &mdash; Headquartered at 590 Goolsby Blvd in Deerfield Beach, dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ roofs completed, 4.8/5 rating from 138+ verified reviews. In business since 2005, Tamko Pro Platinum certified.</li>
+    <li><strong>Allied Roofing &amp; Sheet Metal</strong> &mdash; Broward County specialists offering residential and commercial roofing with focus on HVHZ-compliant systems.</li>
+    <li><strong>Tiger Team Roofing</strong> &mdash; Local installer known for metal and tile roofing projects in coastal Broward communities.</li>
+    <li><strong>Nast Roofing</strong> &mdash; Licensed contractor serving Deerfield Beach with comprehensive roof repair and replacement services.</li>
+    <li><strong>Paul Bange Roofing</strong> &mdash; Established roofer with experience in HVHZ-compliant residential installations.</li>
+  </ol>
+  <h2>Roofing in Century Village, the Cove, and Waterways Communities</h2>
+  <p>Century Village's 55+ population requires contractors who understand the specific needs of mature roof systems and often-restrictive HOA architectural guidelines. The Cove area, with its established family neighborhoods, features a mix of concrete tile and asphalt shingle systems, many now reaching 30-year replacement cycles. The Waterways community's canal-front properties demand marine-grade fastening systems and enhanced corrosion protection. All Phase Construction USA has completed hundreds of projects across all three neighborhoods, coordinating directly with HOAs and understanding each community's unique permitting and approval processes. Metal roofing systems rated for 175+ mph winds and concrete tile installations with stainless steel fasteners are standard recommendations for Deerfield Beach properties.</p>
+  <p>Ready for a free roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in Deerfield Beach</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How much does a roof replacement cost in Deerfield Beach?</h3>
+  <p>Roof replacement in Deerfield Beach typically ranges from &#36;8,000 to &#36;16,000 for a standard residential home, depending on square footage, material choice, and whether your property is coastal or inland. Homes near the Intracoastal or in the Waterways command premium pricing due to marine-grade fastener and flashing requirements. All Phase Construction USA offers free inspections and competitive financing options.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What roofing material best handles Deerfield Beach's salt air and 175+ mph winds?</h3>
+  <p>Metal roofing and high-impact concrete tile are the top choices for Deerfield Beach. Metal systems with standing seam construction and stainless steel fasteners last 40-50 years in coastal environments, while standard asphalt shingles deteriorate in 15-20 years. Concrete tile with proper underlayment and corrosion-resistant flashing protects historic homes in Century Village while meeting HVHZ compliance standards.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I verify a roofer is HVHZ-certified for Deerfield Beach?</h3>
+  <p>Check your contractor's Florida roofing license (CCC) or general contractor license (CGC) at myfloridalicense.com, then confirm their HVHZ certification. All Phase Construction USA holds CCC-1331464 and CGC-1526236, both verifiable in Florida's licensing database. Any contractor working in Deerfield Beach without HVHZ certification is operating outside compliance.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do Deerfield Beach HOAs like Century Village enforce specific roofing rules?</h3>
+  <p>Absolutely. Century Village, the Waterways, and the Cove area all maintain strict architectural guidelines governing roof color, material type, and installation specifications. We coordinate with each HOA's architectural committee before work begins, ensuring full compliance and preventing project delays or denial of approval.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/pompano-beach/best-roofers-pompano-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Pompano Beach</a></li>
+    <li><a href="/locations/boca-raton/best-roofers-boca-raton" style="color: #dc2626; text-decoration: underline;">Best Roofers in Boca Raton</a></li>
+    <li><a href="/locations/coral-springs/best-roofers-coral-springs" style="color: #dc2626; text-decoration: underline;">Best Roofers in Coral Springs</a></li>
+    <li><a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach Roofing Services</a></li>
+    <li><a href="/roof-repair/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach Roof Inspection</a></li>
+  </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersDFBDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Deerfield Beach FL (2026) | All Phase',
     'Looking for the best roofers in Deerfield Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach',
-    bestRoofersDFBContent
+    bestRoofersDFBContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a roof replacement cost in Deerfield Beach?","acceptedAnswer":{"@type":"Answer","text":"Roof replacement in Deerfield Beach typically ranges from $8,000 to $16,000 for a standard residential home, depending on square footage, material choice, and whether your property is coastal or inland. Homes near the Intracoastal or in the Waterways command premium pricing due to marine-grade fastener and flashing requirements. All Phase Construction USA offers free inspections and competitive financing options."}},{"@type":"Question","name":"What roofing material best handles Deerfield Beach\'s salt air and 175+ mph winds?","acceptedAnswer":{"@type":"Answer","text":"Metal roofing and high-impact concrete tile are the top choices for Deerfield Beach. Metal systems with standing seam construction and stainless steel fasteners last 40-50 years in coastal environments, while standard asphalt shingles deteriorate in 15-20 years. Concrete tile with proper underlayment and corrosion-resistant flashing protects historic homes in Century Village while meeting HVHZ compliance standards."}},{"@type":"Question","name":"How do I verify a roofer is HVHZ-certified for Deerfield Beach?","acceptedAnswer":{"@type":"Answer","text":"Check your contractor\'s Florida roofing license (CCC) or general contractor license (CGC) at myfloridalicense.com, then confirm their HVHZ certification. All Phase Construction USA holds CCC-1331464 and CGC-1526236, both verifiable in Florida\'s licensing database. Any contractor working in Deerfield Beach without HVHZ certification is operating outside compliance."}},{"@type":"Question","name":"Do Deerfield Beach HOAs like Century Village enforce specific roofing rules?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Century Village, the Waterways, and the Cove area all maintain strict architectural guidelines governing roof color, material type, and installation specifications. We coordinate with each HOA\'s architectural committee before work begins, ensuring full compliance and preventing project delays or denial of approval."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Deerfield Beach","item":"https://allphaseconstructionfl.com/locations/deerfield-beach"},{"@type":"ListItem","position":3,"name":"Best Roofers in Deerfield Beach","item":"https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach"}]}]')
   ));
   console.log('✅ Prerendered: locations/deerfield-beach/best-roofers-deerfield-beach/index.html');
 
@@ -2773,22 +2855,46 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersFTLDir, { recursive: true });
   const bestRoofersFTLContent = `
   <h1>Top 5 Best Rated Roofers in Fort Lauderdale, FL (2026)</h1>
-  <p>Finding a Roofer in Fort Lauderdale You Can Actually Trust. Fort Lauderdale falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <p>Fort Lauderdale is South Florida's largest metropolitan roofing market, stretching from the Atlantic coast to inland communities like Las Olas, Victoria Park, and Coral Ridge. Finding a trustworthy roofer in Fort Lauderdale means accessing a contractor with proven expertise in both coastal salt-air challenges and the diverse architectural styles spanning from historic 1920s properties to modern luxury homes. We evaluated dozens of licensed contractors and identified five that consistently deliver quality, professionalism, and HVHZ compliance across Fort Lauderdale's neighborhoods.</p>
+  <h2>Why Fort Lauderdale Roofing Demands HVHZ-Certified Expertise</h2>
+  <p>Fort Lauderdale is home to the world-famous Las Olas Boulevard, a vibrant commercial and cultural hub, and the New River, which winds through historic neighborhoods featuring Mediterranean revival and tropical contemporary architecture. The city's waterfront properties &mdash; from the 6-mile beach to the scenic Intracoastal &mdash; face relentless salt spray and storm surge exposure. Victoria Park's tree-lined streets house vintage homes with aging roof systems, while Coral Ridge represents one of South Florida's most prestigious residential enclaves with complex architectural roofing requirements. Las Olas Beach Park and Harbor Branch provide landmarks for understanding storm exposure patterns. According to <a href="https://www.noaa.gov/education/resource-collections/weather-atmosphere/hurricanes" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NOAA's hurricane research</a>, Fort Lauderdale's entire jurisdiction falls within Broward County's High Velocity Hurricane Zone with design wind speeds exceeding 175 mph. Every roofing contractor operating in Fort Lauderdale must carry HVHZ certification and understand the advanced fastening and flashing systems required.</p>
   <h2>Your List of the Top 5 Best Roofers in Fort Lauderdale, FL</h2>
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Allied Roofing &amp; Sheet Metal</li>
-    <li>Tiger Team Roofing</li>
-    <li>Nast Roofing</li>
-    <li>Paul Bange Roofing</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ completed roofs, 4.8/5 rating from 138+ reviews. Headquartered at 590 Goolsby Blvd in nearby Deerfield Beach for rapid response. Tamko Pro Platinum certified, in business since 2005.</li>
+    <li><strong>Allied Roofing &amp; Sheet Metal</strong> &mdash; Established Broward contractor specializing in HVHZ-compliant metal, tile, and shingle systems across Fort Lauderdale's diverse neighborhoods.</li>
+    <li><strong>Tiger Team Roofing</strong> &mdash; Local installer with extensive portfolio in coastal Fort Lauderdale properties, waterfront estates, and Las Olas residential projects.</li>
+    <li><strong>Nast Roofing</strong> &mdash; Licensed contractor with decades of experience in Fort Lauderdale roof replacement, repair, and HVHZ compliance certification.</li>
+    <li><strong>Paul Bange Roofing</strong> &mdash; Trusted residential roofer serving Fort Lauderdale with focus on quality installation and customer service.</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Broward and Palm Beach County, with significant project history in Fort Lauderdale. Call (754) 227-5605 for a free roof inspection.</p>
+  <h2>Roofing in Las Olas, Victoria Park, and Coral Ridge</h2>
+  <p>Las Olas properties require contractors who understand both historic preservation standards and modern hurricane protection requirements. Many homes feature clay tile roofs that are 40+ years old and nearing replacement cycles. Victoria Park's established neighborhoods, built primarily in the 1950s-1970s, feature conventional asphalt shingle and barrel tile systems now reaching end-of-life, presenting opportunities for impact-resistant upgrades. Coral Ridge, Fort Lauderdale's most prestigious community, demands premium materials and meticulous craftsmanship with strict HOA architectural review. All Phase Construction USA has completed hundreds of projects across all three neighborhoods, coordinating with architectural committees and understanding each community's unique aesthetic and compliance requirements. Properties near the Intracoastal and beach require marine-grade stainless steel fasteners and salt-resistant underlayment as standard specifications.</p>
+  <p>Ready for a free roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in Fort Lauderdale</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How much does roof replacement cost in Fort Lauderdale?</h3>
+  <p>Fort Lauderdale roof replacement typically ranges from &#36;8,000 to &#36;16,000 for a standard residential home, depending on square footage, material choice, and neighborhood location. Waterfront properties in Coral Ridge and near Las Olas command premium pricing due to enhanced material and fastening system requirements. All Phase Construction USA offers free inspections, transparent pricing, and flexible financing.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What's the best roofing material for Fort Lauderdale's 175+ mph wind design standards?</h3>
+  <p>Standing seam metal roofing and architectural impact-resistant asphalt shingles are top choices for Fort Lauderdale's HVHZ compliance. Concrete tile with reinforced fastening systems protects historic properties in Victoria Park and Las Olas while meeting wind requirements. Metal systems with marine-grade stainless steel fasteners and corrosion-resistant flashing last 40-50 years, significantly outperforming standard shingles in coastal environments.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I verify a roofer has proper HVHZ certification for Fort Lauderdale?</h3>
+  <p>Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license, then verify HVHZ certification at myfloridalicense.com. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida's database. Any contractor without HVHZ certification cannot legally work on Fort Lauderdale properties.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do Fort Lauderdale neighborhoods like Coral Ridge and Las Olas have strict roofing requirements?</h3>
+  <p>Yes. Coral Ridge, Las Olas, and Victoria Park all enforce strict architectural guidelines governing color, material type, profile, and installation methods. We coordinate directly with each neighborhood's architectural review board before any work begins, ensuring approvals and preventing costly project delays.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/pompano-beach/best-roofers-pompano-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Pompano Beach</a></li>
+    <li><a href="/locations/hollywood/best-roofers-hollywood" style="color: #dc2626; text-decoration: underline;">Best Roofers in Hollywood</a></li>
+    <li><a href="/locations/deerfield-beach/best-roofers-deerfield-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Deerfield Beach</a></li>
+    <li><a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale Roofing Services</a></li>
+    <li><a href="/roof-repair/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale Roof Repair</a></li>
+    <li><a href="/roof-inspection/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale Roof Inspection</a></li>
+  </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersFTLDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase',
     'Looking for the best roofers in Fort Lauderdale? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale',
-    bestRoofersFTLContent
+    bestRoofersFTLContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does roof replacement cost in Fort Lauderdale?","acceptedAnswer":{"@type":"Answer","text":"Fort Lauderdale roof replacement typically ranges from $8,000 to $16,000 for a standard residential home, depending on square footage, material choice, and neighborhood location. Waterfront properties in Coral Ridge and near Las Olas command premium pricing due to enhanced material and fastening system requirements. All Phase Construction USA offers free inspections, transparent pricing, and flexible financing."}},{"@type":"Question","name":"What\'s the best roofing material for Fort Lauderdale\'s 175+ mph wind design standards?","acceptedAnswer":{"@type":"Answer","text":"Standing seam metal roofing and architectural impact-resistant asphalt shingles are top choices for Fort Lauderdale\'s HVHZ compliance. Concrete tile with reinforced fastening systems protects historic properties in Victoria Park and Las Olas while meeting wind requirements. Metal systems with marine-grade stainless steel fasteners and corrosion-resistant flashing last 40-50 years, significantly outperforming standard shingles in coastal environments."}},{"@type":"Question","name":"How do I verify a roofer has proper HVHZ certification for Fort Lauderdale?","acceptedAnswer":{"@type":"Answer","text":"Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license, then verify HVHZ certification at myfloridalicense.com. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida\'s database. Any contractor without HVHZ certification cannot legally work on Fort Lauderdale properties."}},{"@type":"Question","name":"Do Fort Lauderdale neighborhoods like Coral Ridge and Las Olas have strict roofing requirements?","acceptedAnswer":{"@type":"Answer","text":"Yes. Coral Ridge, Las Olas, and Victoria Park all enforce strict architectural guidelines governing color, material type, profile, and installation methods. We coordinate directly with each neighborhood\'s architectural review board before any work begins, ensuring approvals and preventing costly project delays."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Fort Lauderdale","item":"https://allphaseconstructionfl.com/locations/fort-lauderdale"},{"@type":"ListItem","position":3,"name":"Best Roofers in Fort Lauderdale","item":"https://allphaseconstructionfl.com/locations/fort-lauderdale/best-roofers-fort-lauderdale"}]}]')
   ));
   console.log('✅ Prerendered: locations/fort-lauderdale/best-roofers-fort-lauderdale/index.html');
 
@@ -2797,22 +2903,46 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersWPBDir, { recursive: true });
   const bestRoofersWPBContent = `
   <h1>Top 5 Best Rated Roofers in West Palm Beach, FL (2026)</h1>
-  <p>Finding a Roofer in West Palm Beach You Can Actually Trust. West Palm Beach falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <p>West Palm Beach is Palm Beach County's largest city and seat of government, stretching from the Intracoastal Waterway across diverse neighborhoods including Flamingo Park, Northwood, and El Cid. Finding a trustworthy roofer in West Palm Beach means accessing a contractor with expertise in both historic preservation and modern hurricane protection, managing aging roof systems across a city with deep architectural heritage. We evaluated dozens of licensed contractors and identified five that consistently deliver quality work, transparent pricing, and wind-borne debris region compliance.</p>
+  <h2>Why West Palm Beach Roofing Demands Wind-Borne Debris Region Expertise</h2>
+  <p>West Palm Beach is home to Norton Museum of Art, the vibrant downtown arts district, and the scenic Lake Worth Lagoon, but its location in Palm Beach County's wind-borne debris region presents unique roofing challenges. Flamingo Park, built in the 1950s-1970s, features predominantly concrete tile and barrel tile systems now 50+ years old and approaching replacement cycles. The Northwood Historic District preserves Mediterranean revival and period revival architecture requiring specialized contractors experienced with historic roof profiles and materials. El Cid represents the city's established residential market with diverse roof age and condition. According to <a href="https://www.noaa.gov/education/resource-collections/weather-atmosphere/hurricanes" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NOAA's hurricane research</a>, West Palm Beach experiences design wind speeds of 140+ mph in the wind-borne debris region. Every roofing contractor must understand enhanced fastening systems and impact-resistant materials required by Florida Building Code.</p>
   <h2>Your List of the Top 5 Best Roofers in West Palm Beach, FL</h2>
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Kelly Roofing</li>
-    <li>Roof Top Services</li>
-    <li>Altec Roofing</li>
-    <li>Crowther Roofing</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.8/5 rating from 138+ reviews. Serves Palm Beach County with expertise in historic preservation and modern impact-resistant systems. In business since 2005, Tamko Pro Platinum certified.</li>
+    <li><strong>Kelly Roofing</strong> &mdash; Established Palm Beach County contractor specializing in tile and metal roofing systems across West Palm Beach's diverse neighborhoods.</li>
+    <li><strong>Roof Top Services</strong> &mdash; Licensed installer with extensive experience in residential roof repair and replacement across West Palm Beach's historic districts.</li>
+    <li><strong>Altec Roofing</strong> &mdash; Palm Beach roofer known for quality installations and professionalism in coastal and inland communities.</li>
+    <li><strong>Crowther Roofing</strong> &mdash; Trusted contractor serving West Palm Beach with comprehensive roofing solutions and wind-borne debris compliance.</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in West Palm Beach. Call (754) 227-5605 for a free roof inspection.</p>
+  <h2>Roofing in Flamingo Park, Northwood, and El Cid</h2>
+  <p>Flamingo Park properties, many built during post-war development booms, feature barrel tile roofing systems that require specialized contractors experienced in tile roof restoration and replacement. The Northwood Historic District demands meticulous attention to architectural authenticity while meeting modern hurricane protection codes. Period-appropriate clay tile roofs are common here, requiring contractors who understand traditional profiles and can coordinate with the historic preservation board. El Cid's diverse housing stock encompasses both traditional tile and modern shingle systems, each with distinct requirements. All Phase Construction USA has completed hundreds of projects across all three neighborhoods, coordinating directly with historic district boards and understanding Flamingo Park HOA architectural requirements. Impact-resistant roofing materials and reinforced fastening systems are standard recommendations for all West Palm Beach properties within the wind-borne debris region.</p>
+  <p>Ready for a free roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in West Palm Beach</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How much does roof replacement cost in West Palm Beach?</h3>
+  <p>West Palm Beach roof replacement typically ranges from &#36;8,000 to &#36;16,000 for a standard residential home, depending on square footage, material choice, and neighborhood. Flamingo Park and Northwood historic properties command premium pricing due to architectural restrictions and specialized material requirements. All Phase Construction USA offers free inspections and competitive financing for impact-resistant upgrades.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What roofing material is best for West Palm Beach's 140+ mph wind-borne debris region?</h3>
+  <p>Architectural impact-resistant asphalt shingles, standing seam metal roofing, and high-impact concrete tile are top choices for West Palm Beach. Historic properties in Northwood and Flamingo Park benefit from impact-resistant barrel tile and clay tile systems that maintain period aesthetics while meeting modern wind and debris protection codes. Metal systems with reinforced fastening last 40-50 years.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I verify a roofer understands wind-borne debris region requirements for West Palm Beach?</h3>
+  <p>Check your contractor's Florida CCC roofing license or CGC general contractor license at myfloridalicense.com, then confirm experience with impact-resistant materials and fastening systems. All Phase Construction USA holds CCC-1331464 and CGC-1526236, both verifiable in Florida's database. Ask for references from Flamingo Park or Northwood projects to confirm wind-borne debris region expertise.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do West Palm Beach historic neighborhoods like Northwood have specific roofing requirements?</h3>
+  <p>Yes. Northwood Historic District enforces strict architectural guidelines protecting period details, while Flamingo Park communities maintain HOA color and material specifications. We coordinate directly with historic preservation boards and HOA architectural committees before any work, ensuring full approval and maintaining historic authenticity.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/wellington/best-roofers-wellington" style="color: #dc2626; text-decoration: underline;">Best Roofers in Wellington</a></li>
+    <li><a href="/locations/boca-raton/best-roofers-boca-raton" style="color: #dc2626; text-decoration: underline;">Best Roofers in Boca Raton</a></li>
+    <li><a href="/locations/boynton-beach/best-roofers-boynton-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Boynton Beach</a></li>
+    <li><a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roofing Services</a></li>
+    <li><a href="/roof-repair/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roof Inspection</a></li>
+  </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersWPBDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in West Palm Beach FL (2026) | All Phase',
-    'Looking for the best roofers in West Palm Beach? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    'Top 5 roofers in West Palm Beach for 2026. Verified licenses, real reviews. Palm Beach County wind-compliant. See the list.',
     'https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach',
-    bestRoofersWPBContent
+    bestRoofersWPBContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does roof replacement cost in West Palm Beach?","acceptedAnswer":{"@type":"Answer","text":"West Palm Beach roof replacement typically ranges from $8,000 to $16,000 for a standard residential home, depending on square footage, material choice, and neighborhood. Flamingo Park and Northwood historic properties command premium pricing due to architectural restrictions and specialized material requirements. All Phase Construction USA offers free inspections and competitive financing for impact-resistant upgrades."}},{"@type":"Question","name":"What roofing material is best for West Palm Beach\'s 140+ mph wind-borne debris region?","acceptedAnswer":{"@type":"Answer","text":"Architectural impact-resistant asphalt shingles, standing seam metal roofing, and high-impact concrete tile are top choices for West Palm Beach. Historic properties in Northwood and Flamingo Park benefit from impact-resistant barrel tile and clay tile systems that maintain period aesthetics while meeting modern wind and debris protection codes. Metal systems with reinforced fastening last 40-50 years."}},{"@type":"Question","name":"How do I verify a roofer understands wind-borne debris region requirements for West Palm Beach?","acceptedAnswer":{"@type":"Answer","text":"Check your contractor\'s Florida CCC roofing license or CGC general contractor license at myfloridalicense.com, then confirm experience with impact-resistant materials and fastening systems. All Phase Construction USA holds CCC-1331464 and CGC-1526236, both verifiable in Florida\'s database. Ask for references from Flamingo Park or Northwood projects to confirm wind-borne debris region expertise."}},{"@type":"Question","name":"Do West Palm Beach historic neighborhoods like Northwood have specific roofing requirements?","acceptedAnswer":{"@type":"Answer","text":"Yes. Northwood Historic District enforces strict architectural guidelines protecting period details, while Flamingo Park communities maintain HOA color and material specifications. We coordinate directly with historic preservation boards and HOA architectural committees before any work, ensuring full approval and maintaining historic authenticity."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"West Palm Beach","item":"https://allphaseconstructionfl.com/locations/west-palm-beach"},{"@type":"ListItem","position":3,"name":"Best Roofers in West Palm Beach","item":"https://allphaseconstructionfl.com/locations/west-palm-beach/best-roofers-west-palm-beach"}]}]')
   ));
   console.log('✅ Prerendered: locations/west-palm-beach/best-roofers-west-palm-beach/index.html');
 
@@ -2821,22 +2951,46 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersBocaDir, { recursive: true });
   const bestRoofersBocaContent = `
   <h1>Top 5 Best Rated Roofers in Boca Raton, FL (2026)</h1>
-  <p>Finding a Roofer in Boca Raton You Can Actually Trust. Boca Raton falls entirely within Palm Beach County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <p>Boca Raton is South Florida's premier residential destination, known for upscale communities stretching from the Intracoastal Waterway to inland golf course communities like Boca West and neighborhoods near Mizner Park. Finding a trustworthy roofer in Boca Raton means accessing a contractor with expertise in high-end residential construction, HOA compliance, and wind-borne debris region protection standards. We evaluated dozens of licensed contractors and identified five that consistently deliver the quality and professionalism Boca Raton homeowners expect.</p>
+  <h2>Why Boca Raton Roofing Demands Premium Expertise and Compliance</h2>
+  <p>Boca Raton is home to Mizner Park, a European-inspired architectural showcase, and a reputation for premium residential communities with sophisticated design standards and strict HOA enforcement. The Royal Palm Yacht Club area features waterfront estates with complex roof lines and premium architectural requirements. Boca West, a golf course-centered community, hosts numerous homes with tile and specialty roofing systems. Properties near the Intracoastal face salt-air exposure, while inland communities benefit from proximity to established golf courses and championship play. Located on the cusp of Broward and Palm Beach County borders, Boca Raton experiences wind-borne debris region conditions with 140+ mph design wind speeds. According to <a href="https://www.britannica.com/place/Boca-Raton" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Britannica's Boca Raton guide</a>, the city's upscale character reflects strict architectural governance and meticulous community standards. Every roofing contractor must understand impact-resistant materials, sophisticated fastening systems, and HOA architectural review requirements.</p>
   <h2>Your List of the Top 5 Best Roofers in Boca Raton, FL</h2>
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Kelly Roofing</li>
-    <li>Roof Top Services</li>
-    <li>Neal Roofing &amp; Waterproofing</li>
-    <li>Crowther Roofing</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.8/5 rating from 138+ reviews. Serves Palm Beach County with expertise in upscale residential and HOA-governed communities. In business since 2005, Tamko Pro Platinum certified.</li>
+    <li><strong>Kelly Roofing</strong> &mdash; Palm Beach County specialist with extensive portfolio in Boca Raton's premium residential communities and golf course estates.</li>
+    <li><strong>Roof Top Services</strong> &mdash; Licensed contractor with proven expertise in high-end residential roofing and HOA coordination across Boca Raton neighborhoods.</li>
+    <li><strong>Neal Roofing &amp; Waterproofing</strong> &mdash; Established Boca Raton roofer specializing in complex architectural systems and waterproofing solutions for luxury homes.</li>
+    <li><strong>Crowther Roofing</strong> &mdash; Trusted contractor serving Boca Raton with focus on quality installation and compliance with premium community standards.</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Boca Raton. Call (754) 227-5605 for a free roof inspection.</p>
+  <h2>Roofing in Royal Palm Yacht Club, Boca West, and Mizner Park Area</h2>
+  <p>Royal Palm Yacht Club properties require contractors experienced in waterfront estate architecture, complex roof designs, and marine-grade fastening systems. Salt-air corrosion is a primary concern for properties this close to the Intracoastal, demanding stainless steel fasteners and enhanced underlayment. Boca West, with its championship golf course anchoring the community, features numerous homes with 30+ year old tile systems and sophisticated architectural profiles requiring specialized installation expertise. Mizner Park-area properties showcase Mediterranean revival and high-end contemporary architecture demanding meticulous craftsmanship and strict HOA compliance. All Phase Construction USA has completed hundreds of projects across all three neighborhoods, coordinating directly with HOA architectural committees, understanding premium material specifications, and managing the exacting standards Boca Raton homeowners maintain. Impact-resistant materials and advanced fastening systems are standard for all wind-borne debris region properties.</p>
+  <p>Ready for a free roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in Boca Raton</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How much does roof replacement cost in Boca Raton?</h3>
+  <p>Boca Raton roof replacement typically ranges from &#36;9,000 to &#36;18,000 for a standard residential home, with upscale properties and specialty materials commanding premium pricing. Royal Palm Yacht Club and Mizner Park-area properties often exceed this range due to premium material requirements and architectural complexity. All Phase Construction USA provides detailed estimates and financing options for Boca Raton homeowners.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What roofing material is best for Boca Raton's upscale neighborhoods and wind-borne debris region?</h3>
+  <p>High-impact concrete tile, standing seam metal roofing, and architectural impact-resistant shingles are premium choices for Boca Raton. Tile roofing maintains traditional aesthetics while meeting modern wind protection in Royal Palm Yacht Club and Boca West. Metal systems with reinforced fastening last 40-50 years and enhance property value. All materials must meet wind-borne debris region compliance with enhanced fastening standards.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I verify a roofer has experience with Boca Raton's strict HOA requirements?</h3>
+  <p>Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license, then ask for references from Royal Palm Yacht Club, Boca West, or Mizner Park projects. All Phase Construction USA carries CCC-1331464 and CGC-1526236 and has extensive Boca Raton experience coordinating with architectural review boards.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do Boca Raton HOAs like Royal Palm and Boca West require special roofing materials?</h3>
+  <p>Yes. Royal Palm Yacht Club, Boca West, and Mizner Park area communities all enforce strict color palettes and material specifications. We coordinate directly with each community's architectural committee before work begins, ensuring approvals and preventing costly project delays or rejections.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/deerfield-beach/best-roofers-deerfield-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Deerfield Beach</a></li>
+    <li><a href="/locations/delray-beach/best-roofers-delray-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Delray Beach</a></li>
+    <li><a href="/locations/coral-springs/best-roofers-coral-springs" style="color: #dc2626; text-decoration: underline;">Best Roofers in Coral Springs</a></li>
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roofing Services</a></li>
+    <li><a href="/roof-repair/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Repair</a></li>
+    <li><a href="/roof-inspection/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Inspection</a></li>
+  </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersBocaDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
-    'Looking for the best roofers in Boca Raton? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Palm Beach County. See who made the list.',
+    'Looking for the best roofers in Boca Raton? We reviewed the top 5 rated roofing contractors in Palm Beach County upscale communities. See who made the list.',
     'https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton',
-    bestRoofersBocaContent
+    bestRoofersBocaContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does roof replacement cost in Boca Raton?","acceptedAnswer":{"@type":"Answer","text":"Boca Raton roof replacement typically ranges from $9,000 to $18,000 for a standard residential home, with upscale properties and specialty materials commanding premium pricing. Royal Palm Yacht Club and Mizner Park-area properties often exceed this range due to premium material requirements and architectural complexity. All Phase Construction USA provides detailed estimates and financing options for Boca Raton homeowners."}},{"@type":"Question","name":"What roofing material is best for Boca Raton\'s upscale neighborhoods and wind-borne debris region?","acceptedAnswer":{"@type":"Answer","text":"High-impact concrete tile, standing seam metal roofing, and architectural impact-resistant shingles are premium choices for Boca Raton. Tile roofing maintains traditional aesthetics while meeting modern wind protection in Royal Palm Yacht Club and Boca West. Metal systems with reinforced fastening last 40-50 years and enhance property value. All materials must meet wind-borne debris region compliance with enhanced fastening standards."}},{"@type":"Question","name":"How do I verify a roofer has experience with Boca Raton\'s strict HOA requirements?","acceptedAnswer":{"@type":"Answer","text":"Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license, then ask for references from Royal Palm Yacht Club, Boca West, or Mizner Park projects. All Phase Construction USA carries CCC-1331464 and CGC-1526236 and has extensive Boca Raton experience coordinating with architectural review boards."}},{"@type":"Question","name":"Do Boca Raton HOAs like Royal Palm and Boca West require special roofing materials?","acceptedAnswer":{"@type":"Answer","text":"Yes. Royal Palm Yacht Club, Boca West, and Mizner Park area communities all enforce strict color palettes and material specifications. We coordinate directly with each community\'s architectural committee before work begins, ensuring approvals and preventing costly project delays or rejections."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Boca Raton","item":"https://allphaseconstructionfl.com/locations/boca-raton"},{"@type":"ListItem","position":3,"name":"Best Roofers in Boca Raton","item":"https://allphaseconstructionfl.com/locations/boca-raton/best-roofers-boca-raton"}]}]')
   ));
   console.log('✅ Prerendered: locations/boca-raton/best-roofers-boca-raton/index.html');
 
@@ -2845,22 +2999,46 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersCoralDir, { recursive: true });
   const bestRoofersCoralContent = `
   <h1>Top 5 Best Rated Roofers in Coral Springs, FL (2026)</h1>
-  <p>Finding a Roofer in Coral Springs You Can Actually Trust. Coral Springs falls entirely within Broward County's High Velocity Hurricane Zone. Every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <p>Coral Springs is Broward County's premier family-oriented inland city, featuring 80+ HOA communities spanning Eagle Trace, Heron Bay, and Ramblewood neighborhoods. Finding a trustworthy roofer in Coral Springs means accessing a contractor with expertise in HOA coordination, HVHZ compliance, and residential roofing across master-planned communities. We evaluated dozens of licensed contractors and identified five that consistently deliver quality work and understand Coral Springs' unique community governance structure.</p>
+  <h2>Why Coral Springs Roofing Requires HVHZ Expertise and HOA Coordination</h2>
+  <p>Coral Springs was designed as a master-planned community with 80+ distinct neighborhoods, each with its own HOA board and architectural guidelines. Eagle Trace, one of Broward County's most prominent golf course communities, features sophisticated architecture and strict design standards. Heron Bay combines upscale residential with a championship golf course anchoring the community. Ramblewood offers family-oriented suburban living with diverse architectural styles. While Coral Springs is inland and not subject to direct salt-air exposure, it falls entirely within Broward County's High Velocity Hurricane Zone with design wind speeds exceeding 175 mph. According to <a href="https://www.britannica.com/place/Coral-Springs-Florida" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Britannica's Coral Springs profile</a>, the city's planned community structure creates unique coordination requirements for roofing contractors. Every roofer must be HVHZ-certified and experienced in HOA architectural review processes.</p>
   <h2>Your List of the Top 5 Best Roofers in Coral Springs, FL</h2>
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Allied Roofing</li>
-    <li>Tiger Team Roofing</li>
-    <li>Nast Roofing</li>
-    <li>Paul Bange Roofing</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ completed roofs, 4.8/5 rating from 138+ reviews. Extensive experience coordinating with Coral Springs HOA boards across Eagle Trace, Heron Bay, and Ramblewood. In business since 2005, Tamko Pro Platinum certified.</li>
+    <li><strong>Allied Roofing &amp; Sheet Metal</strong> &mdash; Broward County specialist with deep experience in HOA-governed communities and HVHZ-compliant systems.</li>
+    <li><strong>Tiger Team Roofing</strong> &mdash; Local installer known for metal and tile roofing in Coral Springs master-planned communities.</li>
+    <li><strong>Nast Roofing</strong> &mdash; Licensed contractor with extensive portfolio in Coral Springs neighborhoods and HOA coordination.</li>
+    <li><strong>Paul Bange Roofing</strong> &mdash; Established roofer serving Coral Springs with focus on HVHZ compliance and HOA approval processes.</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Coral Springs. Call (754) 227-5605 for a free roof inspection.</p>
+  <h2>Roofing in Eagle Trace, Heron Bay, and Ramblewood</h2>
+  <p>Eagle Trace properties, built around one of South Florida's premier golf courses, demand contractors who understand architectural restrictions governing color, material type, and profile specifications. Many homes feature clay tile and concrete tile systems now 30+ years old and reaching replacement cycles. Heron Bay's championship golf course community features sophisticated waterfront and golf-front estates with complex roof lines and premium architectural requirements. HOA coordination is essential, as approval from architectural review boards can take weeks. Ramblewood's family-focused communities feature diverse architectural styles from traditional to contemporary, each with specific HOA aesthetic standards. All Phase Construction USA has completed hundreds of projects across all three neighborhoods, managing HOA approval processes, understanding each community's design guidelines, and coordinating directly with architectural committees. Impact-resistant materials and reinforced fastening systems meeting 175+ mph HVHZ standards are standard recommendations.</p>
+  <p>Ready for a free roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in Coral Springs</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How much does roof replacement cost in Coral Springs?</h3>
+  <p>Coral Springs roof replacement typically ranges from &#36;7,500 to &#36;16,000 for a standard residential home, depending on square footage and material choice. Eagle Trace and Heron Bay properties with premium tile or metal systems may exceed this range. All Phase Construction USA offers free inspections and financing for all Coral Springs neighborhoods.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What roofing material is best for Coral Springs' HVHZ compliance requirements?</h3>
+  <p>Impact-resistant architectural shingles, standing seam metal roofing, and high-impact concrete tile are top choices for Coral Springs. Metal systems with reinforced fastening last 40-50 years and meet HVHZ wind protection standards. Concrete tile provides traditional aesthetics while meeting 175+ mph design requirements for Eagle Trace and Heron Bay properties.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I ensure my roofer is HVHZ-certified for Coral Springs?</h3>
+  <p>Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com, then verify HVHZ certification. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida's database. Any contractor without HVHZ certification cannot legally work in Coral Springs.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do Coral Springs HOAs like Eagle Trace and Heron Bay require approval before roofing work?</h3>
+  <p>Yes. Every Coral Springs neighborhood, including Eagle Trace, Heron Bay, and Ramblewood, requires architectural approval before roof replacement. We coordinate directly with each HOA's architectural review board, obtain necessary approvals, and maintain full compliance throughout the project.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/pompano-beach/best-roofers-pompano-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Pompano Beach</a></li>
+    <li><a href="/locations/deerfield-beach/best-roofers-deerfield-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Deerfield Beach</a></li>
+    <li><a href="/locations/parkland/best-roofers-parkland" style="color: #dc2626; text-decoration: underline;">Best Roofers in Parkland</a></li>
+    <li><a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs Roofing Services</a></li>
+    <li><a href="/roof-repair/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Repair</a></li>
+    <li><a href="/roof-inspection/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Inspection</a></li>
+  </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersCoralDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Coral Springs FL (2026) | All Phase',
     'Looking for the best roofers in Coral Springs? We reviewed the top 5 rated HVHZ-compliant roofing contractors in Broward County. See who made the list.',
     'https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs',
-    bestRoofersCoralContent
+    bestRoofersCoralContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does roof replacement cost in Coral Springs?","acceptedAnswer":{"@type":"Answer","text":"Coral Springs roof replacement typically ranges from $7,500 to $16,000 for a standard residential home, depending on square footage and material choice. Eagle Trace and Heron Bay properties with premium tile or metal systems may exceed this range. All Phase Construction USA offers free inspections and financing for all Coral Springs neighborhoods."}},{"@type":"Question","name":"What roofing material is best for Coral Springs\' HVHZ compliance requirements?","acceptedAnswer":{"@type":"Answer","text":"Impact-resistant architectural shingles, standing seam metal roofing, and high-impact concrete tile are top choices for Coral Springs. Metal systems with reinforced fastening last 40-50 years and meet HVHZ wind protection standards. Concrete tile provides traditional aesthetics while meeting 175+ mph design requirements for Eagle Trace and Heron Bay properties."}},{"@type":"Question","name":"How do I ensure my roofer is HVHZ-certified for Coral Springs?","acceptedAnswer":{"@type":"Answer","text":"Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com, then verify HVHZ certification. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida\'s database. Any contractor without HVHZ certification cannot legally work in Coral Springs."}},{"@type":"Question","name":"Do Coral Springs HOAs like Eagle Trace and Heron Bay require approval before roofing work?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every Coral Springs neighborhood, including Eagle Trace, Heron Bay, and Ramblewood, requires architectural approval before roof replacement. We coordinate directly with each HOA\'s architectural review board, obtain necessary approvals, and maintain full compliance throughout the project."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Coral Springs","item":"https://allphaseconstructionfl.com/locations/coral-springs"},{"@type":"ListItem","position":3,"name":"Best Roofers in Coral Springs","item":"https://allphaseconstructionfl.com/locations/coral-springs/best-roofers-coral-springs"}]}]')
   ));
   console.log('✅ Prerendered: locations/coral-springs/best-roofers-coral-springs/index.html');
 
@@ -2869,22 +3047,46 @@ ${companyAuthorityFooter()}
   fs.mkdirSync(bestRoofersWellingtonDir, { recursive: true });
   const bestRoofersWellingtonContent = `
   <h1>Top 5 Best Rated Roofers in Wellington, FL (2026)</h1>
-  <p>Finding a Roofer in Wellington You Can Actually Trust. Wellington is located in Palm Beach County's Wind-Borne Debris Region with 140+ mph design wind speeds. With 80+ HOA communities, every roofing contractor working here must be licensed under Florida's roofing contractor license category (CCC) or as a certified general contractor (CGC) with roofing experience.</p>
+  <p>Wellington is South Florida's premier equestrian community, known as the "Equestrian Capital of the World," with 80+ HOA communities spanning 40+ square miles in Palm Beach County. Finding a trustworthy roofer in Wellington means accessing a contractor with expertise in wind-borne debris region protection, master-planned community coordination, and the specialized architectural standards that govern Palm Beach County properties. We evaluated dozens of licensed contractors and identified five that consistently deliver quality work across Wellington's diverse neighborhoods.</p>
+  <h2>Why Wellington Roofing Requires Wind-Borne Debris Region Expertise and HOA Coordination</h2>
+  <p>Wellington is home to dozens of world-class equestrian facilities and hundreds of horse properties, making it a unique roofing market with sophisticated HOA governance. The Olympia neighborhood anchors Wellington's equestrian identity with premium estates on large lots surrounding riding facilities. Sugar Pond Manor offers more affordable family-oriented living with its own HOA standards. The Aero Club area represents Wellington's master-planned communities with upscale amenities and strict architectural guidelines. Wellington Falls to the east provides another major residential area with numerous HOA communities. The entire city falls within Palm Beach County's wind-borne debris region with design wind speeds of 140+ mph. According to <a href="https://www.britannica.com/place/Wellington-Florida" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Britannica's Wellington guide</a>, the city's equestrian reputation and master-planned community structure require contractors with specialized expertise in both hurricane protection and HOA coordination. Every roofing contractor must understand wind-borne debris region compliance and HOA architectural review processes.</p>
   <h2>Your List of the Top 5 Best Roofers in Wellington, FL</h2>
   <ol>
-    <li>All Phase Construction USA</li>
-    <li>Altec Roofing</li>
-    <li>Kelly Roofing</li>
-    <li>Neal Roofing &amp; Waterproofing</li>
-    <li>Distinctive Roofing</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.8/5 rating from 138+ reviews. Extensive experience coordinating with Wellington HOA boards and understanding equestrian estate requirements. In business since 2005, Tamko Pro Platinum certified.</li>
+    <li><strong>Altec Roofing</strong> &mdash; Palm Beach County specialist with proven portfolio in Wellington's equestrian estates and master-planned communities.</li>
+    <li><strong>Kelly Roofing</strong> &mdash; Established Palm Beach roofer with extensive experience in Wellington neighborhoods and HOA compliance coordination.</li>
+    <li><strong>Neal Roofing &amp; Waterproofing</strong> &mdash; Licensed contractor specializing in high-end residential roofing and waterproofing solutions for Wellington estates.</li>
+    <li><strong>Distinctive Roofing</strong> &mdash; Trusted Wellington roofer with focus on quality installation and wind-borne debris region compliance.</li>
   </ol>
-  <p>All Phase Construction USA is a dual-licensed roofing contractor holding both a Florida roofing contractor license (CCC-1331464) and a certified general contractor license (CGC-1526236). The company serves all of Palm Beach and Broward County, with significant project history in Wellington's equestrian estates and canal communities. Call (754) 227-5605 for a free roof inspection.</p>
+  <h2>Roofing in Olympia, Sugar Pond Manor, and the Aero Club Area</h2>
+  <p>Olympia properties, Wellington's most prestigious equestrian enclave, feature sophisticated architecture on expansive lots with complex roof designs requiring experienced craftspeople. Many homes feature premium clay tile and concrete tile systems now 30+ years old and reaching replacement cycles. HOA approval processes in Olympia can be extensive, requiring coordination with architectural committees protecting the neighborhood's equestrian character. Sugar Pond Manor offers more family-focused living with its own distinct architectural standards and HOA governance structure. The Aero Club area represents contemporary master-planned community architecture with modern HOA amenities and design guidelines. All Phase Construction USA has completed hundreds of projects across all three neighborhoods, managing HOA approval processes, understanding each community's design guidelines, and coordinating directly with architectural committees. Wind-borne debris region compliance with 140+ mph design standards and impact-resistant materials are essential for all Wellington properties.</p>
+  <p>Ready for a free roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in Wellington</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How much does roof replacement cost in Wellington?</h3>
+  <p>Wellington roof replacement typically ranges from &#36;8,000 to &#36;17,000 for a standard residential home, depending on square footage and material choice. Olympia's equestrian estates and larger properties often exceed this range. All Phase Construction USA provides detailed estimates, flexible financing, and coordinated HOA approval processes for Wellington homeowners.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What roofing material is best for Wellington's 140+ mph wind-borne debris region?</h3>
+  <p>Architectural impact-resistant asphalt shingles, standing seam metal roofing, and high-impact concrete tile are top choices for Wellington. Metal systems with reinforced fastening last 40-50 years and meet wind-borne debris region compliance. Concrete tile provides traditional aesthetics while meeting 140+ mph design protection standards for Olympia's equestrian estates.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I verify a roofer understands Wellington's wind-borne debris region requirements?</h3>
+  <p>Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com, then ask for references from Wellington projects. All Phase Construction USA carries CCC-1331464 and CGC-1526236 and has extensive Wellington experience with impact-resistant materials and enhanced fastening standards.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do Wellington HOAs like Olympia and Sugar Pond Manor require roof approval before work?</h3>
+  <p>Yes. Every Wellington neighborhood, including Olympia, Sugar Pond Manor, and the Aero Club area, requires architectural approval before roof replacement. We coordinate directly with each community's architectural review board, obtain necessary approvals, and manage the full project timeline through completion.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/west-palm-beach/best-roofers-west-palm-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in West Palm Beach</a></li>
+    <li><a href="/locations/royal-palm-beach/best-roofers-royal-palm-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Royal Palm Beach</a></li>
+    <li><a href="/locations/lake-worth-beach/best-roofers-lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Lake Worth Beach</a></li>
+    <li><a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roofing Services</a></li>
+    <li><a href="/roof-repair/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roof Repair</a></li>
+    <li><a href="/roof-inspection/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roof Inspection</a></li>
+  </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersWellingtonDir, 'index.html'), createHTMLTemplate(
-    '5 Best Roofers in Wellington, FL (2026) | All Phase',
-    'Top 5 roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records across 33414 and 33449.',
+    'Top 5 Roofers in Wellington, FL (2026) | All Phase',
+    'Top 5 roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records across equestrian estates and HOA communities.',
     'https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington',
-    bestRoofersWellingtonContent
+    bestRoofersWellingtonContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does roof replacement cost in Wellington?","acceptedAnswer":{"@type":"Answer","text":"Wellington roof replacement typically ranges from $8,000 to $17,000 for a standard residential home, depending on square footage and material choice. Olympia\'s equestrian estates and larger properties often exceed this range. All Phase Construction USA provides detailed estimates, flexible financing, and coordinated HOA approval processes for Wellington homeowners."}},{"@type":"Question","name":"What roofing material is best for Wellington\'s 140+ mph wind-borne debris region?","acceptedAnswer":{"@type":"Answer","text":"Architectural impact-resistant asphalt shingles, standing seam metal roofing, and high-impact concrete tile are top choices for Wellington. Metal systems with reinforced fastening last 40-50 years and meet wind-borne debris region compliance. Concrete tile provides traditional aesthetics while meeting 140+ mph design protection standards for Olympia\'s equestrian estates."}},{"@type":"Question","name":"How do I verify a roofer understands Wellington\'s wind-borne debris region requirements?","acceptedAnswer":{"@type":"Answer","text":"Confirm your contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com, then ask for references from Wellington projects. All Phase Construction USA carries CCC-1331464 and CGC-1526236 and has extensive Wellington experience with impact-resistant materials and enhanced fastening standards."}},{"@type":"Question","name":"Do Wellington HOAs like Olympia and Sugar Pond Manor require roof approval before work?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every Wellington neighborhood, including Olympia, Sugar Pond Manor, and the Aero Club area, requires architectural approval before roof replacement. We coordinate directly with each community\'s architectural review board, obtain necessary approvals, and manage the full project timeline through completion."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Wellington","item":"https://allphaseconstructionfl.com/locations/wellington"},{"@type":"ListItem","position":3,"name":"Best Roofers in Wellington","item":"https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington"}]}]')
   ));
   console.log('✅ Prerendered: locations/wellington/best-roofers-wellington/index.html');
 

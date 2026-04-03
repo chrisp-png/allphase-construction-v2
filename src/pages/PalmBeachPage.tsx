@@ -146,7 +146,7 @@ export default function PalmBeachPage() {
     { name: 'Lake Worth', path: '/locations/lake-worth' },
     { name: 'North Palm Beach', path: '/locations/north-palm-beach' },
     { name: 'Manalapan', path: '/locations/manalapan' },
-    { name: 'South Palm Beach', path: '/locations/south-palm-beach' }
+    { name: 'South Palm Beach', path: '/locations/lake-worth-beach' }
   ];
 
   const faqs = [

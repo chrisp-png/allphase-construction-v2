@@ -313,7 +313,7 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # Old city short URLs (duplicates without canonical) - redirect to /locations/{city}
 /greenacres /locations/greenacres 301!
 /oakland-park /locations/oakland-park 301!
-/south-palm-beach /locations/south-palm-beach 301!
+/south-palm-beach /locations/lake-worth-beach 301!
 /wellington /locations/wellington 301!
 /lauderdale-by-the-sea /locations/lauderdale-by-the-sea 301!
 
@@ -432,5 +432,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /locations/royal-palm-beach/best-roofers-royal-palm-beach /locations/royal-palm-beach/best-roofers-royal-palm-beach/index.html 200!
 /locations/greenacres/best-roofers-greenacres /locations/greenacres/best-roofers-greenacres/index.html 200!
 /locations/lake-worth-beach/best-roofers-lake-worth-beach /locations/lake-worth-beach/best-roofers-lake-worth-beach/index.html 200!
+
+# Legacy location pages (broken dev-mode files) - redirect to nearest served city
+/locations/surfside /locations/hallandale-beach 301!
+/locations/south-palm-beach /locations/lake-worth-beach 301!
 
 /* /index.html 200
