@@ -8,10 +8,10 @@ export default function Footer() {
       {/* Premium CTA Section */}
       <div className="bg-gradient-to-br from-neutral-900 via-black to-neutral-900 border-b border-neutral-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          <p className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
             Ready to Get Started?<br />
             <span className="text-red-600">Talk to South Florida's Most Trusted Roofers</span>
-          </h2>
+          </p>
 
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Whether you need a full roof replacement, a storm damage assessment, or just want a professional opinion on your roof's condition—All Phase Construction USA is here to help.

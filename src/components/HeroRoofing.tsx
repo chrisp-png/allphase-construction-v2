@@ -125,19 +125,15 @@ export default function HeroRoofing() {
         <div className="hero-grid grid lg:grid-cols-2 gap-8 lg:items-start" style={{ overflow: 'visible', pointerEvents: 'auto' }}>
           <div className="hero-content-left" style={{ width: '100%', maxWidth: '100%', boxSizing: 'border-box', overflow: 'visible', pointerEvents: 'auto' }}>
             <h1 className="hero-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-3 leading-[1.2] sm:leading-tight">
-              Roofing Contractor — All Phase Construction USA
+              Free Roof Inspection in 24 Hours — Dual-Licensed South Florida Roofer Since 2005
             </h1>
 
             <h2 className="text-lg sm:text-xl md:text-2xl text-[#C5A572] mb-5 sm:mb-4 font-semibold leading-[1.5] sm:leading-snug">
-              South Florida's Trusted Roofers — Locally Owned, 20+ Years in Business
+              60-Minute Response · No Obligation · Broward &amp; Palm Beach
             </h2>
 
-            <p className="text-base sm:text-base md:text-lg text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) delivering hurricane-compliant roofing for Broward and Palm Beach County homeowners and businesses. We specialize in tile, metal, shingle, flat, and commercial roofing systems — all built to South Florida's HVHZ wind codes with proper fastening and manufacturer-spec installation.
-            </p>
-
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              Based in Deerfield Beach, FL 33442, we have protected properties since 2005 with roof repair, roof replacement, and roof inspections, backed by 4.8+ stars, TRI Alliance High Wind Certification, and 20+ years of real local experience. Call (754) 227-5605 for a free assessment.
+              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 / CGC-1526236) protecting South Florida homes and businesses since 2005 — tile, metal, shingle, flat and commercial systems, all installed to HVHZ wind code. Call <a href="tel:+17542275605" className="text-white underline hover:text-red-400">(754) 227-5605</a> or request your free assessment.
             </p>
 
             <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
@@ -226,10 +222,10 @@ export default function HeroRoofing() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    Get Your Roof Assessment
+                    Get Your Free Roof Inspection
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Takes just 30 seconds to fill out
+                    Just name, phone, and ZIP — takes 15 seconds
                   </p>
                 </div>
                 <div className="flex-shrink-0 ml-4">
@@ -254,34 +250,21 @@ export default function HeroRoofing() {
               className="space-y-4"
             >
               <input type="hidden" name="source" value="main-website-homepage" />
+              <input type="hidden" name="state" value="FL" />
 
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 mb-1">
-                    First Name <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first_name"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="last-name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Last Name <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    name="last_name"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                    placeholder="Smith"
-                  />
-                </div>
+              <div>
+                <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 mb-1">
+                  Name <span className="text-red-600">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  placeholder="Your name"
+                  autoComplete="name"
+                />
               </div>
 
               <div>
@@ -293,117 +276,28 @@ export default function HeroRoofing() {
                   id="phone"
                   name="phone"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
                   placeholder="(754) 555-1234"
+                  autoComplete="tel"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email <span className="text-red-600">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="street-address" className="block text-sm font-medium text-gray-700 mb-1">
-                  Street Address <span className="text-red-600">*</span>
+                <label htmlFor="zip-code" className="block text-sm font-medium text-gray-700 mb-1">
+                  ZIP Code <span className="text-red-600">*</span>
                 </label>
                 <input
                   type="text"
-                  id="street-address"
-                  name="street_address"
+                  inputMode="numeric"
+                  id="zip-code"
+                  name="zip_code"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                  placeholder="123 Main Street"
+                  pattern="[0-9]{5}"
+                  maxLength={5}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
+                  placeholder="33442"
+                  autoComplete="postal-code"
                 />
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-1">
-                    City <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="city"
-                    name="city"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                    placeholder="Boca Raton"
-                  />
-                </div>
-
-                <div className="grid grid-cols-[120px_1fr] gap-2">
-                  <div>
-                    <label htmlFor="state" className="block text-sm font-medium text-gray-700 mb-1">
-                      State
-                    </label>
-                    <select
-                      id="state"
-                      name="state"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                    >
-                      <option value="FL">FL</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="zip-code" className="block text-sm font-medium text-gray-700 mb-1">
-                      ZIP <span className="text-red-600">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="zip-code"
-                      name="zip_code"
-                      required
-                      pattern="[0-9]{5}"
-                      maxLength={5}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                      placeholder="33101"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
-                  What do you need? <span className="text-red-600">*</span>
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900"
-                >
-                  <option value="">Select a service...</option>
-                  <option value="Roof Replacement">Roof Replacement</option>
-                  <option value="Roof Repair">Roof Repair</option>
-                  <option value="Storm Damage">Storm Damage</option>
-                  <option value="Inspection">Inspection</option>
-                  <option value="Wind Mitigation Inspection">Wind Mitigation Inspection</option>
-                  <option value="Just Getting Estimates">Just Getting Estimates</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message (Optional)
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={3}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent text-gray-900 resize-none"
-                  placeholder="Tell us more about your project..."
-                ></textarea>
               </div>
 
               <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-lg p-3 flex items-center justify-center gap-2">
@@ -415,10 +309,14 @@ export default function HeroRoofing() {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2"
+                className="w-full px-6 py-4 bg-red-600 text-white font-bold text-lg rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2"
               >
-                Request Assessment
+                Get My Free Inspection
               </button>
+
+              <p className="text-center text-xs text-gray-600 leading-relaxed">
+                ★ 4.8 Google · A+ BBB · Licensed CCC-1331464 / CGC-1526236 · Since 2005
+              </p>
 
               <p className="text-center text-sm text-gray-600">
                 Or call{' '}

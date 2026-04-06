@@ -123,8 +123,8 @@ export default function Header() {
         isScrolled ? 'bg-black shadow-xl' : 'bg-black/95'
       }`}
     >
-      {/* Utility Bar */}
-      <div className="bg-zinc-900 border-b border-zinc-800">
+      {/* Utility Bar — hidden on mobile to free up the fold for the hero CTA */}
+      <div className="hidden sm:block bg-zinc-900 border-b border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-2 text-xs">
             <div className="flex items-center gap-4 md:gap-6">
@@ -175,7 +175,7 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between min-h-[70px] sm:min-h-[80px] lg:min-h-[100px] py-4 sm:py-5 lg:py-6">
+        <div className="flex items-center justify-between min-h-[56px] sm:min-h-[80px] lg:min-h-[100px] py-2 sm:py-5 lg:py-6">
           <div className="flex items-center lg:min-w-[280px]">
             <Link to="/" className="flex items-center gap-3" aria-label="All Phase Construction USA - Home">
               <img

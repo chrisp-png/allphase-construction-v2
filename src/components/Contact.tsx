@@ -43,7 +43,7 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-slate-900 text-white pb-32 lg:pb-24" style={{ scrollMarginTop: '100px' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+          <p className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</p>
           <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to start your project? Contact us today for a free consultation
