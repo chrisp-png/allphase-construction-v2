@@ -466,7 +466,7 @@ export default function BocaRatonMoneyPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Get Started?
+                Start Your Boca Raton Roof Project
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Contact All Phase Construction USA today for your free roof inspection and estimate in {cityName}.
@@ -491,19 +491,9 @@ export default function BocaRatonMoneyPage() {
           </div>
         </section>
 
-        {/* Contact Section */}
+        {/* Contact Section — h2 is provided by <Contact /> itself; no wrapper h2 to avoid duplication */}
         <section className="py-20 bg-zinc-950">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Get In Touch
-              </h2>
-              <p className="text-xl text-zinc-400">
-                Free estimates • 24/7 emergency service • Licensed &amp; insured
-              </p>
-            </div>
-            <Contact />
-          </div>
+          <Contact />
         </section>
 
       </div>

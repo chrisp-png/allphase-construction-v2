@@ -2811,6 +2811,24 @@ ${companyAuthorityFooter()}
       hubSchema = citySchemaConfig.directSchema;
     }
 
+    // ─── T3.10 Trust strip + T3.9 "Updated" timestamp ───
+    // Insert immediately after the first </h1> in the hub content. Inserts a
+    // 5-pill trust strip (CCC + CGC + HVHZ + BBB + Since 2005) plus a small
+    // "Updated April 2026" stamp. Both are inline-styled for inclusion in the
+    // prerendered HTML that Google reads, independent of React hydration.
+    const trustStripHtml = `
+  <div class="seo-trust-strip" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0 1rem; font-size: 0.875rem;">
+    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ Dual-Licensed CCC + CGC</span>
+    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ HVHZ-Certified</span>
+    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ A+ BBB</span>
+    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ Since 2005</span>
+    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ 2,500+ Roofs</span>
+  </div>
+  <p class="seo-updated-stamp" style="font-size: 0.8125rem; color: #666; margin: 0 0 1.5rem;"><time datetime="2026-04">Updated April 2026</time> · Free inspections throughout South Florida.</p>`;
+    if (hubContent.includes('</h1>')) {
+      hubContent = hubContent.replace('</h1>', '</h1>' + trustStripHtml);
+    }
+
     // ─── Wave-C backfill: inject FAQ + Map + Testimonials ───
     // Detect whether existing schema already includes a FAQPage; if not, add one.
     const existingArr = Array.isArray(hubSchema) ? hubSchema : (hubSchema ? [hubSchema] : []);
