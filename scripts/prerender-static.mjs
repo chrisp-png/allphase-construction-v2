@@ -2300,7 +2300,8 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/roof-replacement-cost-florida', title: 'Roof Replacement Cost in Florida' },
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
-    { path: '/south-florida-roofing-reviews', title: 'South Florida Roofing Reviews' }
+    { path: '/south-florida-roofing-reviews', title: 'South Florida Roofing Reviews' },
+    { path: '/flat-roof-moisture-infrared-inspection', title: 'Flat Roof Moisture & Infrared Inspection' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {

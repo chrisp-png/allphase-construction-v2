@@ -73,7 +73,6 @@ const EXCLUDED_PATTERNS = [
   /\/metal-roof-inspection-/,
   /\/flat-roof-inspection-/,
   /\/insurance-roof-inspection/,
-  /\/flat-roof-moisture-infrared-inspection/,
   /^\/locations\//                          // Exclude all /locations/ URLs from sheetSitemap (we add them programmatically)
 ];
 
