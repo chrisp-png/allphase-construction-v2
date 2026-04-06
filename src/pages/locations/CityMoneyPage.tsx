@@ -19,6 +19,8 @@ import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
+import LocationFactsBlock from '../../components/LocationFactsBlock';
+import { getLocationBySlug } from '../../data/locations';
 
 interface CityData {
   name: string;
@@ -148,6 +150,18 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Local SEO / GEO Facts Block — replacement-intent structured data */}
+      {(() => {
+        const loc = getLocationBySlug(city.slug);
+        return loc ? (
+          <section className="py-12 bg-zinc-950">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+              <LocationFactsBlock location={loc} />
+            </div>
+          </section>
+        ) : null;
+      })()}
 
       {/* Authority Content Block - 700+ Words for E-E-A-T */}
       <section className="py-16 bg-white">
