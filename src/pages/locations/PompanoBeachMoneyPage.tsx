@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Clock, Shield, Award, ChevronRight, Home, Building2, Wrench, CheckCircle2, Users, FileText, HardHat, Hammer, BookOpen, ClipboardCheck } from 'lucide-react';
 import Header from '../../components/Header';
@@ -774,6 +775,7 @@ export default function PompanoBeachMoneyPage() {
         </section>
 
         {/* Contact Section */}
+        <MoneyPageEnhancements cityName="Pompano Beach" county="Broward" hvhz={true} />
         <Contact />
 
         {/* Footer Content */}

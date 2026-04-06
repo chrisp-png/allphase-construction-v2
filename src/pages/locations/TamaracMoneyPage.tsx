@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Shield, Home, Wind, Building2, Wrench, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import EmbeddedRoofCalculator from '../../components/EmbeddedRoofCalculator';
@@ -438,6 +439,7 @@ export default function TamaracMoneyPage() {
 
         </div>
 
+        <MoneyPageEnhancements cityName="Tamarac" county="Broward" hvhz={true} />
         <Contact />
       </div>
     </div>

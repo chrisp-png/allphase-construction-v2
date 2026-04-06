@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Shield, Award, Clock, Users, Star, ExternalLink } from 'lucide-react';
 import EmbeddedRoofCalculator from '../../components/EmbeddedRoofCalculator';
@@ -512,6 +513,7 @@ export default function DelrayBeachMoneyPage() {
           </div>
 
           {/* Roof Calculator */}
+          <MoneyPageEnhancements cityName="Delray Beach" county="Palm Beach" hvhz={false} />
           <EmbeddedRoofCalculator
             city="Delray Beach"
             county="Palm Beach"

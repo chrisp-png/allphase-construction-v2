@@ -5,6 +5,7 @@
  */
 
 import { useEffect, useState } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Star, Home, Wind, Users, Building2, Layers, ClipboardCheck, Zap, AlertTriangle } from 'lucide-react';
@@ -704,6 +705,7 @@ export default function PembrokePinesMoneyPage() {
         </section>
 
         {/* Contact Form */}
+        <MoneyPageEnhancements cityName="Pembroke Pines" county="Broward" hvhz={true} />
         <Contact />
       </div>
     </>

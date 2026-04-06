@@ -5,6 +5,7 @@
  */
 
 import { useEffect } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, BookOpen, Users } from 'lucide-react';
@@ -491,7 +492,8 @@ export default function BocaRatonMoneyPage() {
           </div>
         </section>
 
-        {/* Contact Section — h2 is provided by <Contact /> itself; no wrapper h2 to avoid duplication */}
+        {/* Contact Section — h2 is provided by <MoneyPageEnhancements cityName="Boca Raton" county="Palm Beach" hvhz={false} />
+        <Contact /> itself; no wrapper h2 to avoid duplication */}
         <section className="py-20 bg-zinc-950">
           <Contact />
         </section>

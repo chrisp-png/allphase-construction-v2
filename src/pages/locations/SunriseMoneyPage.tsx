@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, ChevronDown, ChevronUp, AlertTriangle, Droplets, Sun, Home as HomeIcon } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
@@ -447,6 +448,7 @@ export default function SunrisePage() {
           </div>
         </div>
 
+        <MoneyPageEnhancements cityName="Sunrise" county="Broward" hvhz={true} />
         <Contact />
       </div>
     </div>

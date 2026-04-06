@@ -7,6 +7,7 @@
  */
 
 import { useEffect } from 'react';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, FileText, BookOpen, Star, Waves, Landmark } from 'lucide-react';
@@ -644,6 +645,7 @@ export default function PalmBeachMoneyPage() {
         </section>
 
         {/* Contact Form */}
+        <MoneyPageEnhancements cityName="Palm Beach" county="Palm Beach" hvhz={false} />
         <Contact />
       </div>
     </>
