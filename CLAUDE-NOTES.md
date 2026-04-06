@@ -2,7 +2,7 @@
 
 > **Read this file at the start of every session.** It contains architecture details, known quirks, and deployment pipeline info that will save significant time.
 
-Last updated: 2026-03-30
+Last updated: 2026-04-06
 
 ---
 
@@ -32,6 +32,106 @@ Last updated: 2026-03-30
 - `npx vite build` — Standard Vite build, outputs to `dist/`
 - `node scripts/prerender-static.mjs` — Generates static HTML pages in `dist/` for SEO (locations, service pages, blog posts from sitemap)
 - `node scripts/submit-indexnow.mjs` — Submits URLs to IndexNow for fast search engine discovery
+
+---
+
+## Standing Content Directives (DO NOT VIOLATE)
+
+These are owner directives from Chris that apply to ALL future content edits anywhere on the site:
+
+1. **NO insurance language in new copy.** All Phase is in South Florida on the east coast — no hail, no recent hurricanes. Never write that we "work directly with your insurance carrier" or similar. Avoid: insurance, claim, carrier, deductible, hail, hurricane damage. *Existing* copy that already contains insurance language (e.g. Boca Raton + Delray Beach meta descriptions) is grandfathered — leave it alone unless explicitly told to remove it. The directive is "no NEW insurance language," not "scrub everything."
+2. **Location pages are REPLACEMENT pages, not generic roofing pages.** Title/H1/meta should signal roof replacement, reroofing, new roof — not "roofing services." The /roof-repair/* and /roof-inspection/* silos handle the other intents.
+3. **HVHZ jurisdictional accuracy.** Only Broward + Miami-Dade are *legally* in HVHZ. Palm Beach cities are "voluntarily built to HVHZ spec." Don't claim Palm Beach properties are HVHZ-required.
+4. **Don't introduce new problems.** The site was working fine before; verify before pushing.
+
+---
+
+## Locations Architecture (Single Source of Truth Chain)
+
+This is the most-edited part of the site. Understand it before touching anything in `/locations/*`.
+
+### The SOT Chain
+
+```
+src/data/locations.ts        ← single source of truth (44 cities, structured fields)
+       │
+       ├──► src/lib/locationSeo.ts          buildLocationSeo() — title/desc/canonical/schemaJsonLd
+       │       │
+       │       ├──► src/config/seoTitles.ts generateSEOMetadata() — runtime React meta tags
+       │       └──► scripts/prerender-static.mjs LOCATIONS.forEach loop — prerendered HTML
+       │
+       └──► src/data/cities.json (separate but parallel — used by GenericLocationTemplate at runtime)
+```
+
+### Two Render Paths
+
+The runtime React layer for `/locations/:slug` is dispatched by `src/pages/DynamicCityRouter.tsx`:
+
+1. **24 hardcoded MoneyPage components** in `src/pages/locations/*MoneyPage.tsx` — used for high-revenue "money" cities (boca-raton, fort-lauderdale, west-palm-beach, etc.). Each is a custom React page.
+2. **`src/pages/templates/GenericLocationTemplate.tsx` fallback** for everything else (the ~20 Wave-C thin cities). Uses `cities.json` not `locations.ts`. As of 2026-04-06 it now mounts `<StickyConversionBar />`.
+
+**WARNING — `src/pages/locations/CityMoneyPage.tsx` is an orphan.** It is NOT imported anywhere. Don't waste time editing it thinking it controls /locations rendering. The real templates are the 24 hardcoded MoneyPages + GenericLocationTemplate.
+
+### What the Prerender Script Actually Does
+
+`scripts/prerender-static.mjs` is the bigger lever than the React components — it generates the static HTML that Google indexes BEFORE hydration. As of 2026-04-06 the `LOCATIONS.forEach` loop (lines ~2680–2820) injects, on every /locations/[city] page:
+
+- A 5-pill **trust strip** immediately after `</h1>` (CCC + CGC, HVHZ-Certified, A+ BBB, Since 2005, 2,500+ Roofs)
+- An **`<time datetime="2026-04">Updated April 2026</time>` stamp** under the trust strip
+- A **6-question FAQPage** (replacement-focused, insurance-free, dynamically templated per city) — both as visible `<details>` HTML and as JSON-LD schema
+- An **embedded Google Maps iframe** (keyless `maps.google.com/maps?q=City+FL&output=embed`)
+- **2 city-specific testimonials** signed with first-name + neighborhood + city, deterministically rotated from a 4-quote pool
+
+The injection helpers (`buildLocationFaqs`, `buildFaqSchema`, `buildFaqHtml`, `buildMapHtml`, `buildTestimonialsHtml`) are defined locally inside the LOCATIONS.forEach scope. If a city already has its own hand-tuned FAQPage in `CITY_PAGE_SCHEMAS` (e.g. Palm Beach, Lauderdale-By-The-Sea), the FAQPage append is skipped to avoid duplication.
+
+### CITY_PAGE_SCHEMAS
+
+`scripts/prerender-static.mjs` ~line 2248 has a `CITY_PAGE_SCHEMAS` object keyed by `/locations/${slug}`, each entry holding a `directSchema` array (RoofingContractor + optional FAQPage + optional BreadcrumbList). To add hand-crafted FAQs for a specific city, add an entry here — the LOCATIONS.forEach loop picks it up automatically.
+
+### Wilton Manors + Westlake
+
+Both used to be 301-redirected away. As of 2026-04-06 they are proper /locations/ pages served by GenericLocationTemplate. Don't reintroduce those redirects in `public/_redirects`.
+
+---
+
+## Critical Foot-Guns
+
+### 🔴 prerender-static.mjs reads locations.ts as TEXT, not as a TS import
+
+Lines 25–40 of `scripts/prerender-static.mjs`:
+
+```js
+const locationsRaw = fs.readFileSync(locationsDataPath, 'utf-8');
+const locationsMatch = locationsRaw.match(/export const locations: Location\[\] = \[([\s\S]*?)\];/);
+const locationsArrayText = '[' + locationsMatch[1] + ']';
+const locationsJson = locationsArrayText
+  .replace(/\/\/[^\n]*/g, '')
+  .replace(/\/\*[\s\S]*?\*\//g, '')
+  .replace(/(\w+):/g, '"$1":')   // ← THIS IS THE FOOT-GUN
+  .replace(/,(\s*[}\]])/g, '$1');
+const LOCATIONS = JSON.parse(locationsJson);
+```
+
+The `(\w+):` regex is meant to quote object keys, but it has no string-awareness. **Any `word:` pattern (a word character immediately followed by a colon) inside a STRING VALUE in `locations.ts` will be mangled and break `JSON.parse`, killing the Netlify build with `SyntaxError: Expected ',' or '}'`.**
+
+This already happened once on 2026-04-06 with the meta description string `"Free inspection: (754) 227-5605"` — the regex turned `inspection:` into `"inspection":` and corrupted the JSON.
+
+**Things to NEVER write inside string values in `src/data/locations.ts`:**
+
+- `Free inspection: ...` (broke the build) — use `Free inspection (754)...` or hyphen instead
+- `Note: ...`, `Tip: ...`, `URL: ...`, `Hours: ...`
+- Time strings like `9:00 AM`
+- `https://` is fine (the `://` doesn't match `\w+:` because `https` is followed by `:/` not `:` alone — wait, actually it DOES match. Test before adding URLs to string values.)
+- Anything where a word character touches a colon
+
+**Future cleanup**: Replace the text-regex hack with a proper TS import (e.g., dynamic `import()` or convert `locations.ts` to a JSON file). Until then, this is the rule.
+
+### 🟡 Netlify is NOT reporting build status to GitHub
+
+`api.github.com/repos/.../commits/{sha}/check-runs` returns `total_count: 0` and `/status` returns `state: pending` with empty `statuses` for every commit. Netlify's GitHub webhook is connected enough to trigger builds but is NOT posting checks/statuses back. To verify a deploy you must:
+
+1. Open Netlify → Deploys (or use a Netlify PAT against the API), OR
+2. Hit the live URL via Claude in Chrome and check whether the new content is present
 
 ---
 
@@ -124,9 +224,11 @@ When Supabase content is missing or placeholder:
 ## Sandbox Limitations
 
 - The Claude sandbox proxy blocks direct API calls to `supabase.co` (403 from allowlist)
-- Cannot run `npm install` or `vite build` locally in the sandbox (missing dependencies, proxy blocks npm registry)
-- All builds happen on Netlify's servers — test by pushing to GitHub and waiting for deploy
-- Can use `git push` via GitHub PAT
+- The sandbox proxy ALSO blocks `allphaseconstructionfl.com` and `api.netlify.com` — you cannot curl/fetch the live site from the Bash sandbox or via WebFetch. Use **Claude in Chrome** for live verification (it runs on the user's machine and bypasses the egress proxy entirely).
+- `api.github.com` and `raw.githubusercontent.com` ARE allowlisted — you can read repo state and commit metadata from there.
+- Cannot run `npm install` or `vite build` locally in the sandbox (missing dependencies, proxy blocks npm registry). However `node --check scripts/prerender-static.mjs` works for syntax validation and is recommended before every push that touches the prerender script.
+- All builds happen on Netlify's servers — test by pushing to GitHub and verifying live via Chrome.
+- Can use `git push` via GitHub PAT (credential helper "store" is seeded)
 
 ---
 
@@ -155,7 +257,15 @@ When Supabase content is missing or placeholder:
 | `vite.config.ts` | Vite config with `publicDir: false` and custom copy plugin |
 | `src/pages/BlogPostPage.tsx` | Blog rendering with Supabase + static fallback |
 | `src/lib/supabase.ts` | Supabase client config |
-| `scripts/prerender-static.mjs` | Generates static HTML for SEO (runs on Netlify) |
+| `scripts/prerender-static.mjs` | Generates static HTML for SEO (runs on Netlify). Reads `locations.ts` as text — see foot-gun above |
+| `src/data/locations.ts` | SOT for /locations/[city] — 44 cities with title/desc/neighborhoods/zips/landmarks/hvhz |
+| `src/data/cities.json` | Parallel SOT used by GenericLocationTemplate runtime React only |
+| `src/lib/locationSeo.ts` | `buildLocationSeo()` — builds title/desc/canonical/schemaJsonLd from locations.ts |
+| `src/config/seoTitles.ts` | `generateSEOMetadata()` — runtime React meta tag generator |
+| `src/pages/DynamicCityRouter.tsx` | Dispatches /locations/:slug to one of 24 hardcoded MoneyPages or GenericLocationTemplate |
+| `src/pages/templates/GenericLocationTemplate.tsx` | Fallback template for ~20 thin Wave-C cities; mounts StickyConversionBar |
+| `src/pages/locations/CityMoneyPage.tsx` | ⚠️ ORPHAN — not imported anywhere, do not edit |
+| `src/components/StickyConversionBar.tsx` | Desktop top bar + mobile bottom CTA bar; wired into all MoneyPages + GenericLocationTemplate |
 | `scripts/build-blog-content.mjs` | Generates blog-content.json from markdown |
 | `scripts/submit-indexnow.mjs` | IndexNow submission after deploy |
 | `netlify/edge-functions/strip-slash.ts` | Trailing slash removal + dead routes + 410s |
