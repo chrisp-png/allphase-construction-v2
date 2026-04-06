@@ -71,7 +71,7 @@ export default function PembrokePinesMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Pembroke Pines FL Roofing Company | Re-Roofs &amp; Shingle Upgrades | All Phase</title>
+        <title>Roof Replacement Pembroke Pines, FL | All Phase USA</title>
         <meta
           name="description"
           content="Top roofing company in Pembroke Pines, FL. Shingle, tile & metal re-roofs for 1980s–2000s homes. HOA experts, HVHZ-certified, volume pricing. (754) 227-5605."

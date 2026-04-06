@@ -77,7 +77,7 @@ export default function ParklandMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Parkland Roofing Contractor | Premium Gated Community Roof Replacement | All Phase</title>
+        <title>Roof Replacement Parkland, FL | Luxury Tile & Slate | All Phase</title>
         <meta
           name="description"
           content="Parkland FL roofing contractor for Heron Bay, Parkland Golf & Country Club, Watercrest. Premium tile, metal & shingle roofing. HOA experts. (754) 227-5605."

@@ -75,7 +75,7 @@ export default function DavieMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Davie Roofing Contractor | Equestrian Country Roof Replacement | All Phase</title>
+        <title>Roof Replacement Davie, FL | Ranch & Estate Reroofs | All Phase</title>
         <meta
           name="description"
           content="Davie FL roofing contractor specializing in equestrian properties, ranch homes & large lots. TAMKO shingles, metal, tile. HVHZ-compliant. (754) 227-5605."

@@ -44,7 +44,7 @@ export default function LauderdaleByTheSeaMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Lauderdale-By-The-Sea Roofer | HVHZ Coastal Roofing | All Phase</title>
+        <title>Roof Replacement Lauderdale-By-The-Sea, FL | All Phase USA</title>
         <meta
           name="description"
           content="Lauderdale-By-The-Sea roofing contractor. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing for coastal barrier island homes. Free inspection. (754) 227-5605."

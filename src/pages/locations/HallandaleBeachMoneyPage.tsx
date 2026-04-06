@@ -73,7 +73,7 @@ export default function HallandaleBeachMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Hallandale Beach Roofing Contractor | Condo &amp; Coastal Flat Roof Experts | All Phase</title>
+        <title>Roof Replacement Hallandale Beach, FL | Condo & Flat | All Phase</title>
         <meta
           name="description"
           content="Expert condo & high-rise roofing contractor in Hallandale Beach, FL. Flat roof specialists — TPO, modified bitumen, built-up systems. 40-year recertification, HVHZ compliant. (754) 227-5605."

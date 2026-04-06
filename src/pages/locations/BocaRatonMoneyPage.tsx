@@ -45,8 +45,8 @@ export default function BocaRatonMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Boca Raton Roofing Company & Contractor | All Phase Construction USA</title>
-        <meta name="description" content="Top-rated roofing company in Boca Raton, FL. All Phase Construction USA — dual-licensed contractor providing tile, metal & shingle roof replacement, repair, and inspection. (754) 227-5605." />
+        <title>Roof Replacement Boca Raton, FL | All Phase USA</title>
+        <meta name="description" content="Boca Raton roof replacement by a dual-licensed contractor. Voluntarily built to Miami-Dade HVHZ spec. Insurance savings built in. (754) 227-5605." />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}

@@ -73,7 +73,7 @@ export default function LauderhillMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Lauderhill Roofing Contractor | Roof Replacement | All Phase</title>
+        <title>Roof Replacement Lauderhill, FL | All Phase USA</title>
         <meta
           name="description"
           content="Roofing contractor serving Lauderhill, FL. Affordable roof replacement, shingle & tile installs. HVHZ-compliant, licensed & insured. (754) 227-5605."

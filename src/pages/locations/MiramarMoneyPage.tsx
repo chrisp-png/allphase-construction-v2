@@ -73,7 +73,7 @@ export default function MiramarMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Miramar Roofing Services | Tile, Metal &amp; Shingle | All Phase</title>
+        <title>Roof Replacement Miramar, FL | All Phase USA</title>
         <meta
           name="description"
           content="Licensed roofing services in Miramar, FL. Tile, metal & shingle roof replacement. Dual-licensed contractor, HVHZ-certified, 2,500+ projects. (754) 227-5605."

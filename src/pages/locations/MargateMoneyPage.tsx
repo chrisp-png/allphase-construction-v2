@@ -71,7 +71,7 @@ export default function MargateMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Margate Roofing Contractor | Roof Replacement for 1970s Homes | All Phase</title>
+        <title>Roof Replacement Margate, FL | All Phase USA</title>
         <meta
           name="description"
           content="Margate roofing contractor specializing in 1970s home roof replacement. TAMKO shingles, tile, metal roofing. Licensed & insured. Free inspections. (754) 227-5605."

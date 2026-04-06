@@ -157,7 +157,7 @@ export default function SunrisePage() {
   return (
     <div className="min-h-screen bg-[#09090b]">
       <Helmet>
-        <title>{generateSEOMetadata('/locations/sunrise').title}</title>
+        <title>Roof Replacement Sunrise, FL | Hurricane-Rated | All Phase</title>
         <meta
           name="description"
           content={generateSEOMetadata('/locations/sunrise').description}

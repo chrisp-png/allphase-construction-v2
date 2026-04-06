@@ -44,7 +44,7 @@ export default function BoyntonBeachMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>{cityName} Roofing Contractor | Palm Beach County Licensed | All Phase Construction USA</title>
+        <title>Roof Replacement Boynton Beach, FL | All Phase USA</title>
         <meta
           name="description"
           content="Boynton Beach roofing contractor. Dual-licensed Palm Beach & Broward Counties (CCC-1331464, CGC-1526236). Hunters Run, Aberdeen, Leisureville specialist. Since 2006. (754) 227-5605"
