@@ -1817,43 +1817,14 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       reviewCount: '136',
       bestRating: '5'
     },
-    review: [
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Michael R.' },
-        datePublished: '2025-11-14',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'All Phase replaced our tile roof after Hurricane Ian damage. Crew was professional, finished in four days, and the county inspection passed first try. Highly recommend.'
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Sandra T.' },
-        datePublished: '2025-09-22',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'We got three quotes for a full shingle replacement in Coral Springs. All Phase was the most thorough with their inspection and came in at a fair price. Great communication from start to finish.'
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'David and Karen L.' },
-        datePublished: '2025-07-08',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Had a metal roof installed on our Deerfield Beach home. The team handled the permit, passed HVHZ inspection, and cleaned up every day before they left. Could not be happier with the result.'
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'James P.' },
-        datePublished: '2025-04-30',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: 'Used All Phase for a flat roof on our commercial building in Pompano Beach. No leaks, no issues, and they worked around our business hours. Very professional outfit.'
-      },
-      {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Lisa M.' },
-        datePublished: '2025-02-15',
-        reviewRating: { '@type': 'Rating', ratingValue: '4', bestRating: '5' },
-        reviewBody: 'Roof replacement in Boca Raton went smoothly. Project took about a week due to weather delays but the crew kept us updated. Final result looks fantastic and passed inspection on the first attempt.'
-      }
-    ],
+    // NOTE: Inline `review` array intentionally removed (2026-04-06).
+    // Cause: Google Search Console flagged "Review has multiple aggregate ratings"
+    // on all /locations/[city]/best-roofers-[city]/ pages (10 URLs, 70 items).
+    // Reviews without `itemReviewed` get attached by Google to the parent
+    // RoofingContractor, which already carries an aggregateRating, producing
+    // the duplicate-rating error. The aggregateRating above is what earns
+    // the star rich snippet — that's preserved. Visual testimonials on the
+    // page are unaffected; only the structured-data copy is removed.
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Roofing Services',
@@ -1873,20 +1844,8 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     }
   };
   // Use page-specific schema if it's already a RoofingContractor (don't double-inject)
-  // But inject review array into page-specific RoofingContractor schemas that lack one
-  const reviewArray = baseOrgSchema.review;
-  function injectReviews(schema) {
-    if (schema && schema['@type'] === 'RoofingContractor' && !schema.review) {
-      schema.review = reviewArray;
-    }
-  }
-  if (jsonLdSchema) {
-    if (Array.isArray(jsonLdSchema)) {
-      jsonLdSchema.forEach(injectReviews);
-    } else {
-      injectReviews(jsonLdSchema);
-    }
-  }
+  // NOTE: Removed `injectReviews` helper (2026-04-06) — see baseOrgSchema comment above.
+  // Page-specific RoofingContractor schemas must NOT carry an inline `review` array.
   const schemaToInject = (jsonLdSchema && (jsonLdSchema['@type'] === 'RoofingContractor' || (Array.isArray(jsonLdSchema) && jsonLdSchema[0]?.['@type'] === 'RoofingContractor')))
     ? null
     : baseOrgSchema;
