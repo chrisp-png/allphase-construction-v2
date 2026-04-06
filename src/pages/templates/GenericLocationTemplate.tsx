@@ -4,6 +4,7 @@ import { MapPin, Phone, Clock, Shield, Award, ChevronRight } from 'lucide-react'
 import Header from '../../components/Header';
 import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
+import StickyConversionBar from '../../components/StickyConversionBar';
 import cities from '../../data/cities.json';
 import { isCityIndexable } from '../../config/indexableCities';
 
@@ -66,6 +67,7 @@ export default function GenericLocationTemplate() {
         noindex={false}
       />
       <div className="bg-zinc-950 text-white min-h-screen">
+        <StickyConversionBar />
         <Header />
 
         <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">

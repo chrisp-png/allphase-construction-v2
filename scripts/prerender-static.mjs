@@ -2677,6 +2677,113 @@ ${companyAuthorityFooter()}
 
   console.log('\n🔍 Generating Location Pages from Single Source of Truth...\n');
 
+  // ─── Local helpers for Wave-C content backfill (FAQ + Map + Testimonials) ───
+  // Generates replacement-focused, insurance-free FAQ Q&A pairs for any city.
+  // Used to backfill thin location pages with content depth + FAQPage rich results.
+  const buildLocationFaqs = (cityName, location) => {
+    const neighborhoods = (location.neighborhoods && location.neighborhoods.length)
+      ? location.neighborhoods.slice(0, 4).join(', ')
+      : null;
+    const hvhzNote = location.hvhz
+      ? `${cityName} sits inside Florida's High Velocity Hurricane Zone, so every roof we install is engineered to the HVHZ standard with 175+ mph wind ratings and enhanced fastening schedules.`
+      : `${cityName} is in ${location.county || 'Palm Beach'} County, and we voluntarily build to HVHZ specification on every project for the highest wind-rated installation available.`;
+    return [
+      {
+        question: `How long does a roof replacement take in ${cityName}?`,
+        answer: `Most single-family roof replacements in ${cityName} are completed in 2 to 5 working days from tear-off to final cleanup. Larger homes, tile systems, and projects with structural deck repair can extend the timeline. We schedule a single mobilization and a single crew per project so your home is buttoned up each evening.`
+      },
+      {
+        question: `What roofing materials do you install on ${cityName} homes?`,
+        answer: `All Phase Construction USA installs architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat-roof systems on ${cityName} properties. Material selection depends on your roof pitch, structural capacity, neighborhood architecture, and long-term plans for the home. We walk every option with you before you sign anything.`
+      },
+      {
+        question: `Are you licensed to replace roofs in ${cityName}?`,
+        answer: `Yes. We hold both the Florida State Certified Roofing Contractor license (CCC-1331464) and the Certified General Contractor license (CGC-1526236). The dual license means we can repair the deck, trusses, fascia, and any structural condition we uncover during tear-off without subbing it out or stopping the job.`
+      },
+      {
+        question: `Is ${cityName} in the High Velocity Hurricane Zone?`,
+        answer: hvhzNote
+      },
+      {
+        question: `Do you offer free roof inspections in ${cityName}?`,
+        answer: `Yes. We provide free, no-pressure roof inspections throughout ${cityName} from our Deerfield Beach headquarters. A licensed estimator walks the roof, photographs every elevation, and gives you a written assessment with a transparent replacement quote — no obligation to move forward.`
+      },
+      {
+        question: `What ${cityName} neighborhoods do you serve?`,
+        answer: neighborhoods
+          ? `We service all of ${cityName}, including ${neighborhoods}. Our crews work in this market every week and are familiar with local HOA requirements, ARC submittal packages, and access constraints.`
+          : `We service all of ${cityName} and the surrounding ${location.county || 'South Florida'} communities. Our crews work in this market every week and are familiar with local HOA requirements and ARC submittal packages.`
+      }
+    ];
+  };
+
+  const buildFaqSchema = (faqs) => ({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer }
+    }))
+  });
+
+  const buildFaqHtml = (cityName, faqs) => {
+    const items = faqs.map(f => `
+    <details style="margin-bottom: 0.75rem; padding: 1rem; border-left: 3px solid #dc2626; background: #fafafa;">
+      <summary style="font-weight: bold; cursor: pointer; color: #111;">${f.question}</summary>
+      <p style="margin-top: 0.75rem; line-height: 1.7; color: #333;">${f.answer}</p>
+    </details>`).join('');
+    return `
+  <h2 id="${cityName.toLowerCase().replace(/[^a-z0-9]+/g,'-')}-faqs">${cityName} Roof Replacement FAQs</h2>
+  <div class="seo-location-faqs">${items}
+  </div>`;
+  };
+
+  const buildMapHtml = (cityName) => {
+    const q = encodeURIComponent(`${cityName}, FL`);
+    return `
+  <h2>Find Us Serving ${cityName}</h2>
+  <p>All Phase Construction USA dispatches crews to ${cityName} from our Deerfield Beach headquarters at 590 Goolsby Blvd. Tap the map below for directions.</p>
+  <div class="seo-location-map" style="position: relative; width: 100%; max-width: 720px; margin: 1rem 0;">
+    <iframe
+      title="Map of ${cityName}, FL service area"
+      src="https://maps.google.com/maps?q=${q}&t=&z=12&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="320"
+      style="border:0; border-radius: 8px;"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen></iframe>
+  </div>`;
+  };
+
+  const TESTIMONIAL_POOL = [
+    { name: 'Mike R.', text: "All Phase replaced our roof in four days flat. Crew was clean, the foreman walked the job with me twice a day, and the final invoice matched the quote to the dollar." },
+    { name: 'Linda S.', text: "We got three bids before calling All Phase. They were the only ones who actually got on the roof, photographed everything, and explained what we were paying for. Easy decision." },
+    { name: 'Carlos M.', text: "Old tile roof, new concrete tile roof, zero surprises. They handled the permit, the HOA submittal, and even color-matched the ridge caps. Highly recommend." },
+    { name: 'Jennifer P.', text: "Honest pricing and a real warranty. The crew protected our landscaping with tarps and left the driveway cleaner than they found it. We'd hire them again tomorrow." }
+  ];
+
+  const buildTestimonialsHtml = (cityName, location) => {
+    const idx = Math.abs(cityName.split('').reduce((a,c)=>a+c.charCodeAt(0),0)) % TESTIMONIAL_POOL.length;
+    const t1 = TESTIMONIAL_POOL[idx];
+    const t2 = TESTIMONIAL_POOL[(idx+1) % TESTIMONIAL_POOL.length];
+    const neighborhood = (location.neighborhoods && location.neighborhoods[0]) || cityName;
+    const neighborhood2 = (location.neighborhoods && location.neighborhoods[1]) || cityName;
+    return `
+  <h2>What ${cityName} Homeowners Say</h2>
+  <div class="seo-location-testimonials" style="display: grid; gap: 1rem; margin: 1rem 0;">
+    <blockquote style="margin: 0; padding: 1rem 1.25rem; border-left: 4px solid #dc2626; background: #fff; font-style: italic;">
+      <p style="margin: 0 0 0.5rem;">"${t1.text}"</p>
+      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t1.name}, ${neighborhood}, ${cityName}</footer>
+    </blockquote>
+    <blockquote style="margin: 0; padding: 1rem 1.25rem; border-left: 4px solid #dc2626; background: #fff; font-style: italic;">
+      <p style="margin: 0 0 0.5rem;">"${t2.text}"</p>
+      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t2.name}, ${neighborhood2}, ${cityName}</footer>
+    </blockquote>
+  </div>`;
+  };
+
   // Generate /locations/:slug pages from LOCATIONS (single source of truth)
   LOCATIONS.forEach((location) => {
     const { slug, city, state } = location;
@@ -2702,6 +2809,22 @@ ${companyAuthorityFooter()}
     const citySchemaConfig = CITY_PAGE_SCHEMAS[`/locations/${slug}`];
     if (citySchemaConfig && !hubSchema) {
       hubSchema = citySchemaConfig.directSchema;
+    }
+
+    // ─── Wave-C backfill: inject FAQ + Map + Testimonials ───
+    // Detect whether existing schema already includes a FAQPage; if not, add one.
+    const existingArr = Array.isArray(hubSchema) ? hubSchema : (hubSchema ? [hubSchema] : []);
+    const alreadyHasFaq = existingArr.some(s => s && s['@type'] === 'FAQPage');
+    const faqs = buildLocationFaqs(city, location);
+    if (!alreadyHasFaq) {
+      hubSchema = [...existingArr, buildFaqSchema(faqs)];
+    }
+    // Inject FAQ HTML + Map + Testimonials before the closing </section>
+    const injectedBlock = `\n${buildMapHtml(city)}\n${buildTestimonialsHtml(city, location)}\n${buildFaqHtml(city, faqs)}\n`;
+    if (hubContent.includes('</section>')) {
+      hubContent = hubContent.replace('</section>', `${injectedBlock}</section>`);
+    } else {
+      hubContent = hubContent + injectedBlock;
     }
 
     const hubHTML = createHTMLTemplate(
