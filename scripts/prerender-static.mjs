@@ -47,8 +47,8 @@ const BROWARD_CITIES = [
   'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
   'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
   'lauderdale-by-the-sea', 'lauderdale-lakes', 'lighthouse-point', 'miramar', 'north-lauderdale',
-  'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
-  'parkland'
+  'oakland-park', 'pembroke-park', 'pembroke-pines', 'sea-ranch-lakes',
+  'southwest-ranches', 'sunrise', 'tamarac', 'weston', 'parkland'
 ];
 
 /**
