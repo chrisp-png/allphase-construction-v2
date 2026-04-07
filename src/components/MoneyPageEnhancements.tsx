@@ -100,6 +100,95 @@ export default function MoneyPageEnhancements({
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
+      {/* Embedded Google Map — keyless, lazy-loaded */}
+      <section className="py-12 bg-zinc-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-6">
+            Serving {cityName}, FL
+          </h2>
+          <div className="rounded-lg overflow-hidden border border-zinc-800 shadow-2xl">
+            <iframe
+              title={`Map of ${cityName}, FL`}
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(cityName + ' FL')}&t=&z=12&ie=UTF8&iwloc=&output=embed`}
+              width="100%"
+              height="360"
+              style={{ border: 0, display: 'block' }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Desktop sticky inline form — hidden on mobile (mobile has StickyMobileCTA) */}
+      <aside
+        className="hidden lg:block fixed bottom-6 right-6 z-40 w-80 bg-white rounded-xl shadow-2xl border border-zinc-200 p-5"
+        aria-label={`Quick roof inspection request for ${cityName}`}
+      >
+        <div className="flex items-start justify-between mb-3">
+          <div>
+            <p className="text-base font-bold text-gray-900 leading-tight">
+              Free {cityName} Roof Inspection
+            </p>
+            <p className="text-xs text-gray-600 mt-0.5">
+              15 seconds · no obligation
+            </p>
+          </div>
+          <span className="text-[10px] font-bold bg-red-600 text-white px-2 py-1 rounded-full">
+            FREE
+          </span>
+        </div>
+        <form
+          action="https://formspree.io/f/mojakkld"
+          method="POST"
+          className="space-y-2"
+        >
+          <input type="hidden" name="source" value={`money-page-sticky-${slug}`} />
+          <input type="hidden" name="state" value="FL" />
+          <input type="hidden" name="city" value={cityName} />
+          <input
+            type="text"
+            name="first_name"
+            required
+            placeholder="Name"
+            autoComplete="name"
+            className="w-full px-3 py-2 border border-gray-300 rounded text-sm text-gray-900 focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          />
+          <input
+            type="tel"
+            name="phone"
+            required
+            placeholder="Phone"
+            autoComplete="tel"
+            className="w-full px-3 py-2 border border-gray-300 rounded text-sm text-gray-900 focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          />
+          <input
+            type="text"
+            name="zip_code"
+            required
+            inputMode="numeric"
+            pattern="[0-9]{5}"
+            maxLength={5}
+            placeholder="ZIP"
+            autoComplete="postal-code"
+            className="w-full px-3 py-2 border border-gray-300 rounded text-sm text-gray-900 focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          />
+          <button
+            type="submit"
+            className="w-full px-4 py-2.5 bg-red-600 text-white font-bold text-sm rounded hover:bg-red-700 transition-colors"
+          >
+            Get My Free Inspection
+          </button>
+          <p className="text-center text-[10px] text-gray-500">
+            Or call{' '}
+            <a href="tel:+17542275605" className="text-red-600 font-semibold">
+              (754) 227-5605
+            </a>
+          </p>
+        </form>
+      </aside>
+
       {/* Trust strip + Updated stamp */}
       <section className="py-10 bg-zinc-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
