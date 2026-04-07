@@ -492,8 +492,8 @@ export default function BocaRatonMoneyPage() {
           </div>
         </section>
 
-        {/* Contact Section — h2 is provided by <MoneyPageEnhancements cityName="Boca Raton" county="Palm Beach" hvhz={false} />
-        <Contact /> itself; no wrapper h2 to avoid duplication */}
+        {/* Contact Section — h2 is provided by <Contact /> itself; no wrapper h2 to avoid duplication */}
+        <MoneyPageEnhancements cityName="Boca Raton" county="Palm Beach" hvhz={false} />
         <section className="py-20 bg-zinc-950">
           <Contact />
         </section>
