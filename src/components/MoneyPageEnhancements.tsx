@@ -146,7 +146,11 @@ export default function MoneyPageEnhancements({
   return (
     <>
       <Helmet>
-        <script type="application/ld+json">{JSON.stringify([faqSchema, ratingSchema, breadcrumbSchema])}</script>
+        {/* NOTE: ratingSchema (standalone Review entries) intentionally omitted.
+            Prerender script removed injectReviews on 2026-04-06 to fix GSC
+            "Review has multiple aggregate ratings" warning. AggregateRating is
+            already present on the page-level RoofingContractor schema. */}
+        <script type="application/ld+json">{JSON.stringify([faqSchema, breadcrumbSchema])}</script>
       </Helmet>
 
       {/* Embedded Google Map — keyless, lazy-loaded */}
