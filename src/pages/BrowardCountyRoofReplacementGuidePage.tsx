@@ -38,15 +38,21 @@ export default function BrowardCountyRoofReplacementGuidePage() {
     },
     {
       q: 'What does a roof replacement cost in Deerfield Beach in 2026?',
-      a: 'A typical asphalt shingle roof replacement in Deerfield Beach runs $14,000 to $22,000, while concrete tile and standing-seam metal roofs land between $25,000 and $42,000 depending on square footage, deck condition, and HVHZ permit fees. Shingle pricing is higher than non-HVHZ Florida because Broward County requires upgraded peel-and-stick underlayment, NOA-approved fastening patterns, and shingles rated for 170+ mph wind uplift. All Phase delivers a fixed all-inclusive quote within 24 hours of a free roof inspection. See our complete Deerfield Beach roof replacement cost breakdown at /roof-replacement-cost-deerfield-beach.'
+      a: 'A typical asphalt shingle roof replacement in Deerfield Beach runs $14,000 to $22,000, while concrete tile and standing-seam metal roofs land between $25,000 and $42,000 depending on square footage, deck condition, and HVHZ permit fees. Shingle pricing is higher than non-HVHZ Florida because Broward County requires upgraded peel-and-stick underlayment, NOA-approved fastening patterns, and shingles rated for 170+ mph wind uplift. All Phase delivers a fixed all-inclusive quote within 24 hours of a free roof inspection.',
+      linkPath: '/roof-replacement-cost-deerfield-beach',
+      linkLabel: 'See the complete Deerfield Beach roof replacement cost breakdown →'
     },
     {
       q: 'Is a permit required to replace a roof in Coral Springs?',
-      a: 'Yes. Florida law requires a permit any time more than 25% of a roof is replaced, the material changes, or the structure is altered. In Coral Springs, the City Building Division typically issues residential roofing permits in 5 to 10 business days, with fees ranging $150 to $500. All Phase Construction USA handles the entire permit, HVHZ inspection, and final close-out for you. See our full Coral Springs roof permit guide at /coral-springs-roof-permit-guide.'
+      a: 'Yes. Florida law requires a permit any time more than 25% of a roof is replaced, the material changes, or the structure is altered. In Coral Springs, the City Building Division typically issues residential roofing permits in 5 to 10 business days, with fees ranging $150 to $500. All Phase Construction USA handles the entire permit, HVHZ inspection, and final close-out for you.',
+      linkPath: '/coral-springs-roof-permit-guide',
+      linkLabel: 'Read the full Coral Springs roof permit guide →'
     },
     {
       q: 'When is it time to replace your roof in Pompano Beach?',
-      a: 'Pompano Beach homeowners should plan a replacement when shingles are curling or missing, when granules are filling the gutters, when daylight shows through the attic deck, or when the roof is past 18 years for shingles or 35+ years for tile. South Florida sun and salt air shorten lifespans by 15 to 25 percent. Schedule a free Pompano Beach roof inspection at /pompano-beach-roof-inspection to confirm what your roof needs.'
+      a: 'Pompano Beach homeowners should plan a replacement when shingles are curling or missing, when granules are filling the gutters, when daylight shows through the attic deck, or when the roof is past 18 years for shingles or 35+ years for tile. South Florida sun and salt air shorten lifespans by 15 to 25 percent.',
+      linkPath: '/pompano-beach-roof-inspection',
+      linkLabel: 'See the 9 signs you need a new roof in Pompano Beach →'
     }
   ];
   const pageSchema1 = {
@@ -324,6 +330,9 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               <div key={index} className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
                 <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
                 <p className="text-zinc-300 leading-relaxed">{faq.a}</p>
+                {(faq as { linkPath?: string }).linkPath ? (
+                  <p className="mt-3"><Link to={(faq as { linkPath: string }).linkPath} className="text-yellow-400 hover:text-yellow-300 font-semibold underline">{(faq as { linkLabel?: string }).linkLabel || 'Read more →'}</Link></p>
+                ) : null}
               </div>
             ))}
           </div>

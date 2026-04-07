@@ -50,6 +50,7 @@ export default function CoralSpringsRoofPermitGuidePage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Coral Springs Roof Permit Guide', item: 'https://allphaseconstructionfl.com/coral-springs-roof-permit-guide' },
   ]};
+  const businessSchema = { '@context': 'https://schema.org', '@type': 'LocalBusiness', '@id': 'https://allphaseconstructionfl.com/#organization', name: 'All Phase Construction USA', aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '170', bestRating: '5', worstRating: '1' } };
   const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Coral Springs Roof Permit Guide (2026)', description: 'Everything Coral Springs homeowners need to know about roofing permits — when required, fees, timelines, inspections, and HVHZ code.', author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
@@ -59,7 +60,7 @@ export default function CoralSpringsRoofPermitGuidePage() {
         description="When you need a roofing permit in Coral Springs, what the city requires, how long it takes, fees, required inspections, and HVHZ code requirements."
         canonicalPath="/coral-springs-roof-permit-guide"
       />
-      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
+      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema, businessSchema]} />
 
       <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
