@@ -38,11 +38,15 @@ export default function BocaRatonRoofReplacementGuidePage() {
     },
     {
       q: 'How many days does a roof replacement take in Boca Raton?',
-      a: 'Most Boca Raton shingle roof replacements are completed in 2 to 4 working days once the Palm Beach County permit is issued, while concrete tile homes typically take 5 to 7 days. The full timeline from contract to final inspection runs 2 to 6 weeks. All Phase Construction USA schedules tear-off and dry-in on the same day to keep your home protected. Read the day-by-day Boca Raton roof replacement timeline at /boca-raton-roof-replacement-timeline.'
+      a: 'Most Boca Raton shingle roof replacements are completed in 2 to 4 working days once the Palm Beach County permit is issued, while concrete tile homes typically take 5 to 7 days. The full timeline from contract to final inspection runs 2 to 6 weeks. All Phase Construction USA schedules tear-off and dry-in on the same day to keep your home protected.',
+      linkPath: '/boca-raton-roof-replacement-timeline',
+      linkLabel: 'Read the day-by-day Boca Raton roof replacement timeline →'
     },
     {
       q: 'Can you install a new roof over an existing roof in Delray Beach?',
-      a: 'Florida code allows up to two layers of shingles total, but in HVHZ counties like Palm Beach, most roofs in Delray Beach require a full tear-off so the deck can be inspected, re-nailed to current code, and sealed with a peel-and-stick underlayment. A tear-off also unlocks the longest manufacturer warranties. Learn why a full tear-off is the right call at /delray-beach-roof-overlay-vs-tear-off.'
+      a: 'Florida code allows up to two layers of shingles total, but in HVHZ counties like Palm Beach, most roofs in Delray Beach require a full tear-off so the deck can be inspected, re-nailed to current code, and sealed with a peel-and-stick underlayment. A tear-off also unlocks the longest manufacturer warranties.',
+      linkPath: '/delray-beach-roof-overlay-vs-tear-off',
+      linkLabel: 'Learn why a full tear-off is the right call →'
     }
   ];
   const pageSchema1 = {
@@ -230,6 +234,9 @@ export default function BocaRatonRoofReplacementGuidePage() {
               <div key={index} className="bg-zinc-900 p-6 rounded-xl shadow-md border border-zinc-800 border border-zinc-800">
                 <h3 className="text-xl font-semibold text-white mb-3">{faq.q}</h3>
                 <p className="text-zinc-300 leading-relaxed">{faq.a}</p>
+                {(faq as { linkPath?: string }).linkPath ? (
+                  <p className="mt-3"><Link to={(faq as { linkPath: string }).linkPath} className="text-yellow-400 hover:text-yellow-300 font-semibold underline">{(faq as { linkLabel?: string }).linkLabel || 'Read more →'}</Link></p>
+                ) : null}
               </div>
             ))}
           </div>

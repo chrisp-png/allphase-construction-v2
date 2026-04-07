@@ -353,6 +353,31 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Complete Palm Beach County roof replacement guide. City-by-city costs, HVHZ zones, permit requirements, and top-rated contractor recommendations for 2026.',
     canonical: 'https://allphaseconstructionfl.com/palm-beach-county-roof-replacement-guide'
   },
+  '/roof-replacement-cost-deerfield-beach': {
+    title: 'Roof Replacement Cost in Deerfield Beach (2026)',
+    description: '2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options. Free 24-hour quotes.',
+    canonical: 'https://allphaseconstructionfl.com/roof-replacement-cost-deerfield-beach'
+  },
+  '/boca-raton-roof-replacement-timeline': {
+    title: 'Boca Raton Roof Replacement Timeline: Day-by-Day (2026)',
+    description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather contingencies.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-replacement-timeline'
+  },
+  '/coral-springs-roof-permit-guide': {
+    title: 'Coral Springs Roof Permit Guide (2026) | Fees & Timeline',
+    description: 'When you need a roofing permit in Coral Springs, what the city requires, how long it takes, fees, required inspections, and HVHZ code requirements.',
+    canonical: 'https://allphaseconstructionfl.com/coral-springs-roof-permit-guide'
+  },
+  '/pompano-beach-roof-inspection': {
+    title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof (2026)',
+    description: 'The nine clearest signs that your Pompano Beach roof has reached end-of-life — from curling shingles to insurance non-renewal — plus what to do next.',
+    canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-inspection'
+  },
+  '/delray-beach-roof-overlay-vs-tear-off': {
+    title: 'Delray Beach: Roof Overlay vs Tear-Off (2026)',
+    description: 'Roof overlay or full tear-off in Delray Beach? HVHZ code, warranty, insurance, and lifespan all point to one answer. Here is the full breakdown.',
+    canonical: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off'
+  },
 };
 
 /**

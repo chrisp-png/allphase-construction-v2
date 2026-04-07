@@ -45,6 +45,7 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Delray Beach Roof Overlay vs Tear-Off', item: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off' },
   ]};
+  const businessSchema = { '@context': 'https://schema.org', '@type': 'LocalBusiness', '@id': 'https://allphaseconstructionfl.com/#organization', name: 'All Phase Construction USA', aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '170', bestRating: '5', worstRating: '1' } };
   const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Delray Beach: Roof Overlay vs Tear-Off (2026)', description: 'Why a full tear-off is almost always the right call for a Delray Beach roof — HVHZ code, warranty, insurance, and lifespan all favor tear-off over overlay.', author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
@@ -54,7 +55,7 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
         description="Roof overlay or full tear-off in Delray Beach? HVHZ code, warranty, insurance, and lifespan all point to one answer. Here is the full breakdown."
         canonicalPath="/delray-beach-roof-overlay-vs-tear-off"
       />
-      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
+      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema, businessSchema]} />
 
       <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
