@@ -378,6 +378,31 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: "A Delray Beach contractor pitched a roof-over to save money? Florida HVHZ code makes that almost impossible. Here is the exact code section and what to do instead.",
     canonical: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off'
   },
+  '/metal-roofing-cost-fort-lauderdale': {
+    title: 'Metal Roofing Cost in Fort Lauderdale (2026)',
+    description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options explained.',
+    canonical: 'https://allphaseconstructionfl.com/metal-roofing-cost-fort-lauderdale'
+  },
+  '/tile-roof-replacement-wellington': {
+    title: 'Tile Roof Replacement in Wellington (2026) | HOA + Weight Load',
+    description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements explained.',
+    canonical: 'https://allphaseconstructionfl.com/tile-roof-replacement-wellington'
+  },
+  '/standing-seam-metal-roof-jupiter': {
+    title: 'Standing Seam Metal Roof in Jupiter (2026 Coastal Guide)',
+    description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County insurance credits.',
+    canonical: 'https://allphaseconstructionfl.com/standing-seam-metal-roof-jupiter'
+  },
+  '/flat-roof-tpo-vs-pvc-west-palm-beach': {
+    title: 'Flat Roof TPO vs PVC in West Palm Beach (2026)',
+    description: 'TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan, chemical and ponding resistance, and the HVHZ code that decides which one fits.',
+    canonical: 'https://allphaseconstructionfl.com/flat-roof-tpo-vs-pvc-west-palm-beach'
+  },
+  '/switch-from-shingles-to-metal-plantation': {
+    title: 'Switch From Shingles to Metal in Plantation? (2026 Guide)',
+    description: 'Should you replace your Plantation shingle roof with metal in 2026? Side-by-side cost, lifespan, insurance, HOA, and 40-year total-cost-of-ownership math.',
+    canonical: 'https://allphaseconstructionfl.com/switch-from-shingles-to-metal-plantation'
+  },
 };
 
 /**
