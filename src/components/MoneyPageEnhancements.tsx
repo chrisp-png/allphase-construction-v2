@@ -133,11 +133,22 @@ export default function MoneyPageEnhancements({
     ]
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://allphaseconstructionfl.com/locations/service-areas' },
+      { '@type': 'ListItem', position: 3, name: cityName, item: `https://allphaseconstructionfl.com/locations/${slug}` }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(ratingSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Embedded Google Map — keyless, lazy-loaded */}

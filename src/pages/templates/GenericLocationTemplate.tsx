@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
 import StickyConversionBar from '../../components/StickyConversionBar';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import cities from '../../data/cities.json';
 import { isCityIndexable } from '../../config/indexableCities';
 
@@ -291,6 +292,12 @@ export default function GenericLocationTemplate() {
             </div>
           </div>
         </section>
+
+        <MoneyPageEnhancements
+          cityName={cityName || ''}
+          county={(county || '').replace(/\s*County$/i, '')}
+          hvhz={cityData?.county === 'Broward' || cityData?.county === 'Miami-Dade'}
+        />
 
         <section id="contact" className="py-20 bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

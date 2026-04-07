@@ -65,6 +65,7 @@ const ParklandMoneyPage = lazy(() => import('./locations/ParklandMoneyPage'));
 const PembrokePinesMoneyPage = lazy(() => import('./locations/PembrokePinesMoneyPage'));
 const PlantationMoneyPage = lazy(() => import('./locations/PlantationMoneyPage'));
 const SouthwestRanchesMoneyPage = lazy(() => import('./locations/SouthwestRanchesMoneyPage'));
+const WiltonManorsMoneyPage = lazy(() => import('./locations/WiltonManorsMoneyPage'));
 const SunriseMoneyPage = lazy(() => import('./locations/SunriseMoneyPage'));
 const TamaracMoneyPage = lazy(() => import('./locations/TamaracMoneyPage'));
 const LauderdaleByTheSeaMoneyPage = lazy(() => import('./locations/LauderdaleByTheSeaMoneyPage'));
@@ -102,6 +103,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'tamarac': TamaracMoneyPage,
   'wellington': WellingtonPage,
   'west-palm-beach': WestPalmBeachMoneyPage,
+  'wilton-manors': WiltonManorsMoneyPage,
 };
 
 const roofRepairPageMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
