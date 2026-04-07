@@ -26,7 +26,6 @@ export default function PompanoBeachRoofInspectionPage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Pompano Beach Roof Inspection', item: 'https://allphaseconstructionfl.com/pompano-beach-roof-inspection' },
   ]};
-  const businessSchema = { '@context': 'https://schema.org', '@type': 'LocalBusiness', '@id': 'https://allphaseconstructionfl.com/#organization', name: 'All Phase Construction USA', aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '170', bestRating: '5', worstRating: '1' } };
   const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof', description: 'Nine clear signs that a Pompano Beach roof has reached end-of-life and needs replacement, with insurance and timing notes.', author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
@@ -36,7 +35,7 @@ export default function PompanoBeachRoofInspectionPage() {
         description="The nine clearest signs that your Pompano Beach roof has reached end-of-life — from curling shingles to insurance non-renewal — plus what to do next."
         canonicalPath="/pompano-beach-roof-inspection"
       />
-      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema, businessSchema]} />
+      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
 
       <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">

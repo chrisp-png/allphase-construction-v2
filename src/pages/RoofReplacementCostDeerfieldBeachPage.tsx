@@ -37,7 +37,6 @@ export default function RoofReplacementCostDeerfieldBeachPage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Roof Replacement Cost in Deerfield Beach', item: 'https://allphaseconstructionfl.com/roof-replacement-cost-deerfield-beach' },
   ]};
-  const businessSchema = { '@context': 'https://schema.org', '@type': 'LocalBusiness', '@id': 'https://allphaseconstructionfl.com/#organization', name: 'All Phase Construction USA', aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '170', bestRating: '5', worstRating: '1' } };
   const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Roof Replacement Cost in Deerfield Beach: 2026 Pricing Guide', description: 'Complete 2026 pricing guide for roof replacement in Deerfield Beach, FL by material, with HVHZ code, permits, and insurance breakdowns.', author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
@@ -47,7 +46,7 @@ export default function RoofReplacementCostDeerfieldBeachPage() {
         description="2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options. Free 24-hour quotes."
         canonicalPath="/roof-replacement-cost-deerfield-beach"
       />
-      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema, businessSchema]} />
+      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
 
       <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
