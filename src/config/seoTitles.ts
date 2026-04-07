@@ -386,7 +386,6 @@ export const CITY_NAMES: Record<string, string> = {
   'lantana': 'Lantana',
   'lauderdale-by-the-sea': 'Lauderdale-by-the-Sea',
   'lauderdale-lakes': 'Lauderdale Lakes',
-  'lauderdale-ranches': 'Lauderdale Ranches',
   'lauderhill': 'Lauderhill',
   'lazy-lake': 'Lazy Lake',
   'light-house-point': 'Lighthouse Point',

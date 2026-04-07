@@ -46,7 +46,7 @@ const BROWARD_CITIES = [
   'fort-lauderdale', 'deerfield-beach', 'coral-springs', 'pompano-beach',
   'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
   'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
-  'lauderdale-by-the-sea', 'lighthouse-point', 'miramar', 'north-lauderdale',
+  'lauderdale-by-the-sea', 'lauderdale-lakes', 'lighthouse-point', 'miramar', 'north-lauderdale',
   'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
   'parkland'
 ];

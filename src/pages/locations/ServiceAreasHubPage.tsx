@@ -94,7 +94,6 @@ export default function ServiceAreasHubPage() {
     { name: 'Hollywood', path: '/locations/hollywood/' },
     { name: 'Lauderdale-by-the-Sea', path: '/locations/lauderdale-by-the-sea/' },
     { name: 'Lauderdale Lakes', path: '/locations/lauderdale-lakes/' },
-    { name: 'Lauderdale Ranches', path: '/locations/lauderdale-ranches/' },
     { name: 'Lauderhill', path: '/locations/lauderhill/' },
     { name: 'Lighthouse Point', path: '/locations/lighthouse-point/' },
     { name: 'Margate', path: '/locations/margate/' },
