@@ -149,6 +149,13 @@ export default function DelrayBeachMoneyPage() {
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               Roofing Services in Delray Beach, FL
             </h1>
+                <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
+                  <span className="text-yellow-400">★ 4.8 Google</span>
+                  <span className="text-red-400">·</span>
+                  <span>2,500+ Roofs</span>
+                  <span className="text-red-400">·</span>
+                  <span>Dual-Licensed Since 2005</span>
+                </div>
             <p className="text-xl text-zinc-400 mb-8 font-medium">
               Serviced by All Phase Construction USA — Based in Deerfield Beach
             </p>

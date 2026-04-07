@@ -76,6 +76,13 @@ export default function CoconutCreekMoneyPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Expert Roofing Contractor in {cityName}, FL
                 </h1>
+                <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
+                  <span className="text-yellow-400">★ 4.8 Google</span>
+                  <span className="text-red-400">·</span>
+                  <span>2,500+ Roofs</span>
+                  <span className="text-red-400">·</span>
+                  <span>Dual-Licensed Since 2005</span>
+                </div>
               </div>
 
               <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">

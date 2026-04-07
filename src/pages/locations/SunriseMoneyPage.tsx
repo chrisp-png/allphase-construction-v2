@@ -198,6 +198,13 @@ export default function SunrisePage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
               Expert Roofing Contractor in Sunrise, FL
             </h1>
+                <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
+                  <span className="text-yellow-400">★ 4.8 Google</span>
+                  <span className="text-red-400">·</span>
+                  <span>2,500+ Roofs</span>
+                  <span className="text-red-400">·</span>
+                  <span>Dual-Licensed Since 2005</span>
+                </div>
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
               All Phase Construction USA has served Sunrise homeowners and businesses since 2006 — nearly two decades of roofing excellence delivered from our Deerfield Beach headquarters. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Sunrise roofing project that standard roofing-only contractors cannot match. From the established communities near Sawgrass Mills to the canal-front homes of Sunrise Lakes and the family neighborhoods of Welleby, our team delivers comprehensive roofing solutions engineered for Broward County's demanding HVHZ requirements.
             </p>
