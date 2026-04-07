@@ -1,5 +1,3 @@
-import { Helmet } from 'react-helmet-async';
-
 interface MoneyPageEnhancementsProps {
   cityName: string;
   county?: string;
@@ -84,74 +82,14 @@ export default function MoneyPageEnhancements({
   const nb1 = (neighborhoods && neighborhoods[0]) || cityName;
   const nb2 = (neighborhoods && neighborhoods[1]) || cityName;
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer }
-    }))
-  };
-
-  // AggregateRating + Review schema (enables SERP star ratings on money pages)
-  const ratingSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `https://allphaseconstructionfl.com/locations/${slug}#localbusiness`,
-    name: `All Phase Construction USA — ${cityName}`,
-    image: 'https://allphaseconstructionfl.com/og-image.jpg',
-    url: `https://allphaseconstructionfl.com/locations/${slug}`,
-    telephone: '+1-754-227-5605',
-    priceRange: '$$',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: cityName,
-      addressRegion: 'FL',
-      addressCountry: 'US'
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '138',
-      bestRating: '5',
-      worstRating: '1'
-    },
-    review: [
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: t1.name },
-        reviewBody: t1.text
-      },
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: t2.name },
-        reviewBody: t2.text
-      }
-    ]
-  };
-
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://allphaseconstructionfl.com/locations/service-areas' },
-      { '@type': 'ListItem', position: 3, name: cityName, item: `https://allphaseconstructionfl.com/locations/${slug}` }
-    ]
-  };
+  // NOTE: FAQPage + BreadcrumbList + AggregateRating are all owned by the
+  // prerender script (scripts/prerender-static.mjs) which auto-injects them
+  // for every BROWARD_CITIES route at build time. Emitting them again here
+  // at runtime caused GSC "Duplicate field 'FAQPage'" errors (2026-04-07).
+  // Do not re-add a Helmet JSON-LD block to this component.
 
   return (
     <>
-      <Helmet>
-        {/* NOTE: ratingSchema (standalone Review entries) intentionally omitted.
-            Prerender script removed injectReviews on 2026-04-06 to fix GSC
-            "Review has multiple aggregate ratings" warning. AggregateRating is
-            already present on the page-level RoofingContractor schema. */}
-        <script type="application/ld+json">{JSON.stringify([faqSchema, breadcrumbSchema])}</script>
-      </Helmet>
 
       {/* Embedded Google Map — keyless, lazy-loaded */}
       <section className="py-12 bg-zinc-900">
