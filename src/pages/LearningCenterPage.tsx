@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Calculator, DollarSign, CreditCard, BookOpen, Shield, Home, Wrench, ClipboardCheck, Building2, Sun, FileText } from 'lucide-react';
+import { Calculator, DollarSign, CreditCard, BookOpen, Shield, Home, Wrench, ClipboardCheck, Building2, Sun, FileText, MapPin, FileCheck } from 'lucide-react';
 
 const toolsAndResources = [
   {
@@ -31,6 +31,7 @@ const toolsAndResources = [
 ];
 
 const costAndBudgeting = [
+  { title: 'Roof Replacement Cost in Deerfield Beach (2026)', href: '/roof-replacement-cost-deerfield-beach' },
   { title: 'Roof Replacement Cost in Broward County (2026 Guide)', href: '/blog/roof-replacement-cost-broward-county-2026' },
   { title: 'Roof Pricing & Financing Guide', href: '/blog/roof-pricing-financing-guide' },
   { title: 'The Cost of Waiting: Why Delaying Roof Replacement Hurts Your Wallet', href: '/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet' }
@@ -52,12 +53,15 @@ const roofingMaterials = [
 ];
 
 const roofReplacementRepair = [
+  { title: 'Boca Raton Roof Replacement Timeline: Day-by-Day Guide', href: '/boca-raton-roof-replacement-timeline' },
+  { title: 'Delray Beach: Roof Overlay vs Full Tear-Off', href: '/delray-beach-roof-overlay-vs-tear-off' },
   { title: 'Complete Roof Replacement Process: 10 Steps', href: '/blog/complete-roof-replacement-process-10-steps' },
   { title: 'Choosing Between Roof Repair and Full Replacement', href: '/blog/choosing-between-roof-repair-and-full-replacement' },
   { title: 'Don\'t Replace Your Roof — Restore It Instead', href: '/blog/dont-replace-your-roof-restore-it-instead' }
 ];
 
 const maintenanceInspections = [
+  { title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof', href: '/pompano-beach-roof-inspection' },
   { title: 'Professional Roof Inspection in South Florida', href: '/blog/professional-roof-inspection-south-florida' },
   { title: 'How to Spot Early Signs of Roof Damage Before It Gets Expensive', href: '/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive' },
   { title: 'The Importance of Proper Flashing Installation', href: '/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks' },
@@ -66,6 +70,7 @@ const maintenanceInspections = [
 ];
 
 const homeownerGuides = [
+  { title: 'Coral Springs Roof Permit Guide: Fees, Timelines, and HVHZ Code', href: '/coral-springs-roof-permit-guide' },
   { title: 'How to Verify a Licensed Roofing Contractor in Florida', href: '/licensed-roofing-contractor' },
   { title: 'Common Roofing Myths Homeowners Still Believe', href: '/blog/common-roofing-myths-that-homeowners-still-believe' },
   { title: 'How to Prepare Your Roof for the Real Estate Market', href: '/blog/how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home' },
@@ -84,6 +89,25 @@ const solarEnergy = [
   { title: 'How to Combine Solar and a New Roof for Maximum Efficiency', href: '/blog/how-to-combine-solar-and-a-new-roof-for-maximum-efficiency' },
   { title: 'What\'s the Lifespan of a Solar-Ready Roof?', href: '/blog/whats-the-lifespan-of-a-solar-ready-roof' },
   { title: 'How Climate Change Is Impacting Roofing Choices in Coastal Areas', href: '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas' }
+];
+
+const cityCountyGuides = [
+  { title: 'Broward County Roof Replacement Guide', href: '/broward-county-roof-replacement-guide' },
+  { title: 'Palm Beach County Roof Replacement Guide', href: '/palm-beach-county-roof-replacement-guide' },
+  { title: 'Boca Raton Roof Replacement Guide', href: '/boca-raton-roof-replacement-guide' },
+  { title: 'Roof Replacement Cost in Deerfield Beach (2026)', href: '/roof-replacement-cost-deerfield-beach' },
+  { title: 'Boca Raton Roof Replacement Timeline: Day-by-Day', href: '/boca-raton-roof-replacement-timeline' },
+  { title: 'Coral Springs Roof Permit Guide', href: '/coral-springs-roof-permit-guide' },
+  { title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof', href: '/pompano-beach-roof-inspection' },
+  { title: 'Delray Beach: Roof Overlay vs Tear-Off', href: '/delray-beach-roof-overlay-vs-tear-off' }
+];
+
+const insuranceAndContractor = [
+  { title: 'Florida Roof Insurance Claims Guide', href: '/florida-roof-insurance-claims-guide' },
+  { title: 'Roof Replacement Cost in Florida', href: '/roof-replacement-cost-florida' },
+  { title: 'Best Roofing Companies in South Florida', href: '/blog/best-roofing-companies-south-florida' },
+  { title: 'How to Hire a Roofing Contractor in Florida', href: '/how-to-hire-roofing-contractor' },
+  { title: 'How to Verify a Licensed Roofing Contractor', href: '/licensed-roofing-contractor' }
 ];
 
 const aboutAllPhase = [
@@ -362,6 +386,46 @@ export default function LearningCenterPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {solarEnergy.map((article) => (
+                <ArticleCard key={article.href} {...article} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* City & County Roof Replacement Guides */}
+        <section id="city-county-guides" className="py-16 px-4 bg-zinc-900/30 scroll-mt-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <MapPin className="w-8 h-8 text-red-500" />
+                <h2 className="text-3xl md:text-4xl font-bold text-white">City & County Roof Replacement Guides</h2>
+              </div>
+              <p className="text-xl text-zinc-400 max-w-3xl">
+                In-depth roof replacement guides for the Broward and Palm Beach County cities we serve — costs, timelines, permits, and code requirements specific to your city.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cityCountyGuides.map((article) => (
+                <ArticleCard key={article.href} {...article} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Insurance & Choosing a Contractor */}
+        <section id="insurance-claims" className="py-16 px-4 scroll-mt-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <FileCheck className="w-8 h-8 text-red-500" />
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Insurance & Choosing a Contractor</h2>
+              </div>
+              <p className="text-xl text-zinc-400 max-w-3xl">
+                Everything South Florida homeowners need to navigate roof insurance claims and pick the right licensed contractor.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {insuranceAndContractor.map((article) => (
                 <ArticleCard key={article.href} {...article} />
               ))}
             </div>

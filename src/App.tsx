@@ -110,6 +110,11 @@ const RoofReplacementCostFloridaPage = lazy(() => import('./pages/RoofReplacemen
 const FloridaRoofInsuranceClaimsGuidePage = lazy(() => import('./pages/FloridaRoofInsuranceClaimsGuidePage'));
 const BocaRatonRoofReplacementGuidePage = lazy(() => import('./pages/BocaRatonRoofReplacementGuidePage'));
 const PalmBeachCountyRoofReplacementGuidePage = lazy(() => import('./pages/PalmBeachCountyRoofReplacementGuidePage'));
+const RoofReplacementCostDeerfieldBeachPage = lazy(() => import('./pages/RoofReplacementCostDeerfieldBeachPage'));
+const BocaRatonRoofReplacementTimelinePage = lazy(() => import('./pages/BocaRatonRoofReplacementTimelinePage'));
+const CoralSpringsRoofPermitGuidePage = lazy(() => import('./pages/CoralSpringsRoofPermitGuidePage'));
+const PompanoBeachRoofInspectionPage = lazy(() => import('./pages/PompanoBeachRoofInspectionPage'));
+const DelrayBeachRoofOverlayVsTearOffPage = lazy(() => import('./pages/DelrayBeachRoofOverlayVsTearOffPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderdaleMoneyPage'));
@@ -230,6 +235,11 @@ function AppContent() {
             <Route path="/florida-roof-insurance-claims-guide" element={<FloridaRoofInsuranceClaimsGuidePage />} />
             <Route path="/boca-raton-roof-replacement-guide" element={<BocaRatonRoofReplacementGuidePage />} />
             <Route path="/palm-beach-county-roof-replacement-guide" element={<PalmBeachCountyRoofReplacementGuidePage />} />
+            <Route path="/roof-replacement-cost-deerfield-beach" element={<RoofReplacementCostDeerfieldBeachPage />} />
+            <Route path="/boca-raton-roof-replacement-timeline" element={<BocaRatonRoofReplacementTimelinePage />} />
+            <Route path="/coral-springs-roof-permit-guide" element={<CoralSpringsRoofPermitGuidePage />} />
+            <Route path="/pompano-beach-roof-inspection" element={<PompanoBeachRoofInspectionPage />} />
+            <Route path="/delray-beach-roof-overlay-vs-tear-off" element={<DelrayBeachRoofOverlayVsTearOffPage />} />
             <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />
