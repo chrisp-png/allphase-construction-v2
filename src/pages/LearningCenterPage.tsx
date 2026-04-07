@@ -102,6 +102,14 @@ const cityCountyGuides = [
   { title: 'Delray Beach: Roof Overlay vs Tear-Off', href: '/delray-beach-roof-overlay-vs-tear-off' }
 ];
 
+const materialsAndSystems = [
+  { title: 'Metal Roofing Cost in Fort Lauderdale (2026)', href: '/metal-roofing-cost-fort-lauderdale' },
+  { title: 'Tile Roof Replacement in Wellington (HOA + Weight Load)', href: '/tile-roof-replacement-wellington' },
+  { title: 'Standing Seam Metal Roof in Jupiter (Coastal Guide)', href: '/standing-seam-metal-roof-jupiter' },
+  { title: 'Flat Roof: TPO vs PVC in West Palm Beach', href: '/flat-roof-tpo-vs-pvc-west-palm-beach' },
+  { title: 'Is It Time to Switch From Shingles to Metal in Plantation?', href: '/switch-from-shingles-to-metal-plantation' }
+];
+
 const insuranceAndContractor = [
   { title: 'Florida Roof Insurance Claims Guide', href: '/florida-roof-insurance-claims-guide' },
   { title: 'Roof Replacement Cost in Florida', href: '/roof-replacement-cost-florida' },
@@ -406,6 +414,26 @@ export default function LearningCenterPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {cityCountyGuides.map((article) => (
+                <ArticleCard key={article.href} {...article} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Roofing Materials & Systems */}
+        <section id="materials-systems" className="py-16 px-4 bg-zinc-900/30 scroll-mt-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <FileCheck className="w-8 h-8 text-red-500" />
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Roofing Materials & Systems</h2>
+              </div>
+              <p className="text-xl text-zinc-400 max-w-3xl">
+                City-specific guides to the materials we install across Broward and Palm Beach County — metal, tile, shingle, and flat — with HVHZ code, HOA, insurance, and lifespan numbers that actually matter.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {materialsAndSystems.map((article) => (
                 <ArticleCard key={article.href} {...article} />
               ))}
             </div>

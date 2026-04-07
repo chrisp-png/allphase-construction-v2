@@ -115,6 +115,12 @@ const BocaRatonRoofReplacementTimelinePage = lazy(() => import('./pages/BocaRato
 const CoralSpringsRoofPermitGuidePage = lazy(() => import('./pages/CoralSpringsRoofPermitGuidePage'));
 const PompanoBeachRoofInspectionPage = lazy(() => import('./pages/PompanoBeachRoofInspectionPage'));
 const DelrayBeachRoofOverlayVsTearOffPage = lazy(() => import('./pages/DelrayBeachRoofOverlayVsTearOffPage'));
+// Pillar 2: Roofing Materials & Systems
+const MetalRoofingCostFortLauderdalePage = lazy(() => import('./pages/MetalRoofingCostFortLauderdalePage'));
+const TileRoofReplacementWellingtonPage = lazy(() => import('./pages/TileRoofReplacementWellingtonPage'));
+const StandingSeamMetalRoofJupiterPage = lazy(() => import('./pages/StandingSeamMetalRoofJupiterPage'));
+const FlatRoofTpoVsPvcWestPalmBeachPage = lazy(() => import('./pages/FlatRoofTpoVsPvcWestPalmBeachPage'));
+const SwitchFromShinglesToMetalPlantationPage = lazy(() => import('./pages/SwitchFromShinglesToMetalPlantationPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderdaleMoneyPage'));
@@ -240,6 +246,11 @@ function AppContent() {
             <Route path="/coral-springs-roof-permit-guide" element={<CoralSpringsRoofPermitGuidePage />} />
             <Route path="/pompano-beach-roof-inspection" element={<PompanoBeachRoofInspectionPage />} />
             <Route path="/delray-beach-roof-overlay-vs-tear-off" element={<DelrayBeachRoofOverlayVsTearOffPage />} />
+            <Route path="/metal-roofing-cost-fort-lauderdale" element={<MetalRoofingCostFortLauderdalePage />} />
+            <Route path="/tile-roof-replacement-wellington" element={<TileRoofReplacementWellingtonPage />} />
+            <Route path="/standing-seam-metal-roof-jupiter" element={<StandingSeamMetalRoofJupiterPage />} />
+            <Route path="/flat-roof-tpo-vs-pvc-west-palm-beach" element={<FlatRoofTpoVsPvcWestPalmBeachPage />} />
+            <Route path="/switch-from-shingles-to-metal-plantation" element={<SwitchFromShinglesToMetalPlantationPage />} />
             <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />
