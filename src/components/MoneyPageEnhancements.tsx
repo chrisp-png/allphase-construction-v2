@@ -94,10 +94,50 @@ export default function MoneyPageEnhancements({
     }))
   };
 
+  // AggregateRating + Review schema (enables SERP star ratings on money pages)
+  const ratingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `https://allphaseconstructionfl.com/locations/${slug}#localbusiness`,
+    name: `All Phase Construction USA — ${cityName}`,
+    image: 'https://allphaseconstructionfl.com/og-image.jpg',
+    url: `https://allphaseconstructionfl.com/locations/${slug}`,
+    telephone: '+1-754-227-5605',
+    priceRange: '$$',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: cityName,
+      addressRegion: 'FL',
+      addressCountry: 'US'
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '138',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    review: [
+      {
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        author: { '@type': 'Person', name: t1.name },
+        reviewBody: t1.text
+      },
+      {
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+        author: { '@type': 'Person', name: t2.name },
+        reviewBody: t2.text
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(ratingSchema)}</script>
       </Helmet>
 
       {/* Embedded Google Map — keyless, lazy-loaded */}
@@ -138,6 +178,12 @@ export default function MoneyPageEnhancements({
           <span className="text-[10px] font-bold bg-red-600 text-white px-2 py-1 rounded-full">
             FREE
           </span>
+        </div>
+        <div className="flex items-center justify-center gap-1.5 mb-2 text-xs font-semibold text-gray-700">
+          <span className="text-yellow-500 tracking-tight">★★★★★</span>
+          <span>4.8 on Google</span>
+          <span className="text-gray-400">·</span>
+          <span>138 reviews</span>
         </div>
         <form
           action="https://formspree.io/f/mojakkld"
