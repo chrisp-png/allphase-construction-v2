@@ -35,6 +35,18 @@ export default function BrowardCountyRoofReplacementGuidePage() {
     {
       q: 'Should I repair or replace my Broward County roof?',
       a: 'If your roof is under 10 years old with minor, isolated damage, repair is usually sufficient. If it is over 15 years old, has multiple leak points, or if the damage exceeds 25% of the roof area (triggering the 25% rule), replacement is the better investment. A free roof inspection from a licensed contractor can help you make this decision based on the actual condition of your roof system.'
+    },
+    {
+      q: 'What does a roof replacement cost in Deerfield Beach in 2026?',
+      a: 'A typical asphalt shingle roof replacement in Deerfield Beach runs $14,000 to $22,000, while concrete tile and standing-seam metal roofs land between $25,000 and $42,000 depending on square footage, deck condition, and HVHZ permit fees. Shingle pricing is higher than non-HVHZ Florida because Broward County requires upgraded peel-and-stick underlayment, NOA-approved fastening patterns, and shingles rated for 170+ mph wind uplift. All Phase delivers a fixed all-inclusive quote within 24 hours of a free roof inspection. See our complete Deerfield Beach roof replacement cost breakdown at /roof-replacement-cost-deerfield-beach.'
+    },
+    {
+      q: 'Is a permit required to replace a roof in Coral Springs?',
+      a: 'Yes. Florida law requires a permit any time more than 25% of a roof is replaced, the material changes, or the structure is altered. In Coral Springs, the City Building Division typically issues residential roofing permits in 5 to 10 business days, with fees ranging $150 to $500. All Phase Construction USA handles the entire permit, HVHZ inspection, and final close-out for you. See our full Coral Springs roof permit guide at /coral-springs-roof-permit-guide.'
+    },
+    {
+      q: 'When is it time to replace your roof in Pompano Beach?',
+      a: 'Pompano Beach homeowners should plan a replacement when shingles are curling or missing, when granules are filling the gutters, when daylight shows through the attic deck, or when the roof is past 18 years for shingles or 35+ years for tile. South Florida sun and salt air shorten lifespans by 15 to 25 percent. Schedule a free Pompano Beach roof inspection at /pompano-beach-roof-inspection to confirm what your roof needs.'
     }
   ];
   const pageSchema1 = {

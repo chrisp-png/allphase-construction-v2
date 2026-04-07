@@ -113,6 +113,8 @@ export default function Header() {
     { name: 'Roof Cost Calculator', path: '/roof-cost-calculator/' },
     { name: 'Pricing Guide', path: '/pricing-guide/' },
     { name: 'Financing Options', path: '/easy-payments/' },
+    { name: 'City & County Guides', path: '/learning-center/#city-county-guides' },
+    { name: 'Insurance & Claims', path: '/learning-center/#insurance-claims' },
     { name: 'Frequently Asked Questions', path: '/frequently-asked-questions/' },
     { name: 'All Articles', path: '/blog/' },
   ];

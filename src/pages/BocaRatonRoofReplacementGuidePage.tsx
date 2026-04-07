@@ -35,6 +35,14 @@ export default function BocaRatonRoofReplacementGuidePage() {
     {
       q: 'Can my Boca Raton HOA require a specific roofing material?',
       a: 'Yes. Many Boca Raton HOAs have architectural guidelines that specify approved roofing materials, colors, and styles. Tile roofing (concrete or clay) is the most commonly required material in Boca Raton communities. Before selecting your roofing material, check your HOA’s guidelines and submit for architectural approval if required. Your contractor can help navigate this process.'
+    },
+    {
+      q: 'How many days does a roof replacement take in Boca Raton?',
+      a: 'Most Boca Raton shingle roof replacements are completed in 2 to 4 working days once the Palm Beach County permit is issued, while concrete tile homes typically take 5 to 7 days. The full timeline from contract to final inspection runs 2 to 6 weeks. All Phase Construction USA schedules tear-off and dry-in on the same day to keep your home protected. Read the day-by-day Boca Raton roof replacement timeline at /boca-raton-roof-replacement-timeline.'
+    },
+    {
+      q: 'Can you install a new roof over an existing roof in Delray Beach?',
+      a: 'Florida code allows up to two layers of shingles total, but in HVHZ counties like Palm Beach, most roofs in Delray Beach require a full tear-off so the deck can be inspected, re-nailed to current code, and sealed with a peel-and-stick underlayment. A tear-off also unlocks the longest manufacturer warranties. Learn why a full tear-off is the right call at /delray-beach-roof-overlay-vs-tear-off.'
     }
   ];
   const pageSchema1 = {
