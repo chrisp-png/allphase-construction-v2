@@ -45,13 +45,13 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Delray Beach Roof Overlay vs Tear-Off', item: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off' },
   ]};
-  const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Delray Beach: Roof Overlay vs Tear-Off (2026)', description: 'Why a full tear-off is almost always the right call for a Delray Beach roof — HVHZ code, warranty, insurance, and lifespan all favor tear-off over overlay.', author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
+  const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code Explained)", description: "Florida HVHZ code makes a residential roof overlay almost impossible in Delray Beach. Here is the exact code section, the disqualifiers, and what an honest tear-off quote should include instead.", author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
     <>
       <SEO
-        title="Delray Beach Roof Overlay vs Tear-Off (2026) | Why HVHZ Code Decides"
-        description="Roof overlay or full tear-off in Delray Beach? HVHZ code, warranty, insurance, and lifespan all point to one answer. Here is the full breakdown."
+        title="Why You Can't Overlay a Roof in Delray Beach (HVHZ Code Explained)"
+        description="A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that disqualifies it."
         canonicalPath="/delray-beach-roof-overlay-vs-tear-off"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
@@ -67,10 +67,10 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
               <span className="text-white">Delray Beach Roof Overlay vs Tear-Off</span>
             </nav>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
-              Delray Beach: Roof Overlay vs <span className="text-yellow-400">Tear-Off</span>
+              Why You Can't Overlay a Roof in <span className="text-yellow-400">Delray Beach</span>
             </h1>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
-              Why HVHZ code, warranty, insurance, and lifespan all point to a full tear-off on a Delray Beach reroof.
+              If a Delray Beach contractor offered to lay new shingles over your old roof to save money, here is the Florida HVHZ code section that almost certainly disqualifies it — and what an honest tear-off quote should look like instead.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-6">Quick Answer</h2>
-            <p className="text-lg text-zinc-300">Florida code allows up to two layers of shingles total, but in HVHZ counties like Palm Beach, most roofs in Delray Beach require a full tear-off so the deck can be inspected, re-nailed to current code, and sealed with a peel-and-stick underlayment. A tear-off also unlocks the longest manufacturer warranties and the best insurance pricing — the marginal savings from an overlay almost never make sense in Delray Beach.</p>
+            <p className="text-lg text-zinc-300">No, you almost certainly cannot overlay a roof in Delray Beach. Florida Building Code Section 1511.3.1.1 and the HVHZ amendments (which apply to all of Palm Beach County east of the Turnpike) require the existing roof to be removed so the deck can be inspected, re-nailed with 8d ring-shank nails to the current pattern, and sealed with a peel-and-stick secondary water barrier across 100% of the deck. None of those things are possible without a full tear-off. Any Delray Beach contractor pitching a roof-over is either uninformed about HVHZ code or hoping you are.</p>
           </section>
 
           {sections.map(s => (
