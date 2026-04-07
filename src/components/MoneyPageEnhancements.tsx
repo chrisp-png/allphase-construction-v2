@@ -193,7 +193,7 @@ export default function MoneyPageEnhancements({
           <input type="hidden" name="source" value={`money-page-sticky-${slug}`} />
           <input type="hidden" name="state" value="FL" />
           <input type="hidden" name="city" value={cityName} />
-          <input type="hidden" name="_replyto" value="leads@allphaseconstructionfl.com" />
+          <input type="hidden" name="_replyto" value="leads@allphaseusa.com" />
           <input type="hidden" name="_subject" value={`New ${cityName} sticky-form lead`} />
           <input
             type="text"
