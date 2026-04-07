@@ -374,8 +374,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-inspection'
   },
   '/delray-beach-roof-overlay-vs-tear-off': {
-    title: 'Delray Beach: Roof Overlay vs Tear-Off (2026)',
-    description: 'Roof overlay or full tear-off in Delray Beach? HVHZ code, warranty, insurance, and lifespan all point to one answer. Here is the full breakdown.',
+    title: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code)",
+    description: "A Delray Beach contractor pitched a roof-over to save money? Florida HVHZ code makes that almost impossible. Here is the exact code section and what to do instead.",
     canonical: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off'
   },
 };
