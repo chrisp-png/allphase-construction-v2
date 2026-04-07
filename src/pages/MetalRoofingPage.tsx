@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Link } from 'react-router-dom';
 import MidPageCTA from '../components/MidPageCTA';
 import {
@@ -1234,6 +1235,8 @@ export default function MetalRoofingPage() {
           }
         ]}
       />
+      <ServicePageEnhancements serviceName="Metal Roofing" serviceSlug="metal-roofing" />
+
     </div>
     </>
   );

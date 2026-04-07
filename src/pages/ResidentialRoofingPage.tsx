@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
@@ -711,6 +712,8 @@ export default function ResidentialRoofingPage() {
           }
         ]}
       />
+      <ServicePageEnhancements serviceName="Residential Roofing" serviceSlug="residential-roofing" />
+
     </div>
     </>
   );

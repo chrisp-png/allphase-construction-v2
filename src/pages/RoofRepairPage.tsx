@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react';
+import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import StickyConversionBar from '../components/StickyConversionBar';
@@ -1052,6 +1053,8 @@ export default function RoofRepairPage() {
           }
         ]}
       />
+      <ServicePageEnhancements serviceName="Roof Repair" serviceSlug="roof-repair" />
+
     </div>
     </>
   );

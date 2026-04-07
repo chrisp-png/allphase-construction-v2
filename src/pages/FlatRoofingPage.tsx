@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Link } from 'react-router-dom';
 import {
   Phone,
@@ -812,6 +813,8 @@ export default function FlatRoofingPage() {
           }
         ]}
       />
+      <ServicePageEnhancements serviceName="Flat Roofing" serviceSlug="flat-roofing" />
+
     </div>
     </>
   );

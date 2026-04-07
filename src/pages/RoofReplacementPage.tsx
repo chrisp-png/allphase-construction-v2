@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle2, Clock, DollarSign, Shield, FileText, Users, Award } from 'lucide-react';
 import Header from '../components/Header';
@@ -897,6 +898,8 @@ export default function RoofReplacementPage() {
             </p>
           </div>
         </section>
+
+        <ServicePageEnhancements serviceName="Roof Replacement" serviceSlug="roof-replacement" />
 
         <Contact />
         <Footer />
