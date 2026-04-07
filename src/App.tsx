@@ -126,6 +126,12 @@ const WindDamageInsuranceClaimBoyntonBeachPage = lazy(() => import('./pages/Wind
 const EmergencyRoofTarpPembrokePinesPage = lazy(() => import('./pages/EmergencyRoofTarpPembrokePinesPage'));
 const HailDamageRoofParklandPage = lazy(() => import('./pages/HailDamageRoofParklandPage'));
 const StormDamageRepairOrReplaceDaviePage = lazy(() => import('./pages/StormDamageRepairOrReplaceDaviePage'));
+const AnnualRoofInspectionSunrisePage = lazy(() => import('./pages/AnnualRoofInspectionSunrisePage'));
+const WindMitigationInspectionPalmBeachGardensPage = lazy(() => import('./pages/WindMitigationInspectionPalmBeachGardensPage'));
+const RoofMaintenanceTipsMiramarPage = lazy(() => import('./pages/RoofMaintenanceTipsMiramarPage'));
+const FourPointInspectionRoofLakeWorthBeachPage = lazy(() => import('./pages/FourPointInspectionRoofLakeWorthBeachPage'));
+const RoofLeakDetectionWestonPage = lazy(() => import('./pages/RoofLeakDetectionWestonPage'));
+const PreListingRoofCertificationCoconutCreekPage = lazy(() => import('./pages/PreListingRoofCertificationCoconutCreekPage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderdaleMoneyPage'));
@@ -261,6 +267,12 @@ function AppContent() {
             <Route path="/emergency-roof-tarp-pembroke-pines" element={<EmergencyRoofTarpPembrokePinesPage />} />
             <Route path="/hail-damage-roof-parkland" element={<HailDamageRoofParklandPage />} />
             <Route path="/storm-damage-repair-or-replace-davie" element={<StormDamageRepairOrReplaceDaviePage />} />
+            <Route path="/annual-roof-inspection-sunrise" element={<AnnualRoofInspectionSunrisePage />} />
+            <Route path="/wind-mitigation-inspection-palm-beach-gardens" element={<WindMitigationInspectionPalmBeachGardensPage />} />
+            <Route path="/roof-maintenance-tips-miramar" element={<RoofMaintenanceTipsMiramarPage />} />
+            <Route path="/four-point-inspection-roof-lake-worth-beach" element={<FourPointInspectionRoofLakeWorthBeachPage />} />
+            <Route path="/roof-leak-detection-weston" element={<RoofLeakDetectionWestonPage />} />
+            <Route path="/pre-listing-roof-certification-coconut-creek" element={<PreListingRoofCertificationCoconutCreekPage />} />
             <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />

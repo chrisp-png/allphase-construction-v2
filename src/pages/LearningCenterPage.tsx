@@ -118,6 +118,15 @@ const stormAndHurricaneDamage = [
   { title: 'Storm Damage: Repair or Replace in Davie? (Decision Matrix)', href: '/storm-damage-repair-or-replace-davie' }
 ];
 
+const inspectionsAndMaintenance = [
+  { title: 'Annual Roof Inspection in Sunrise (10-Point Checklist)', href: '/annual-roof-inspection-sunrise' },
+  { title: 'Wind Mitigation Inspection in Palm Beach Gardens', href: '/wind-mitigation-inspection-palm-beach-gardens' },
+  { title: '10 Roof Maintenance Tips for Miramar Homeowners', href: '/roof-maintenance-tips-miramar' },
+  { title: '4-Point Inspection Roof Section in Lake Worth Beach', href: '/four-point-inspection-roof-lake-worth-beach' },
+  { title: 'Roof Leak Detection in Weston', href: '/roof-leak-detection-weston' },
+  { title: 'Pre-Listing Roof Certification in Coconut Creek', href: '/pre-listing-roof-certification-coconut-creek' }
+];
+
 const insuranceAndContractor = [
   { title: 'Florida Roof Insurance Claims Guide', href: '/florida-roof-insurance-claims-guide' },
   { title: 'Roof Replacement Cost in Florida', href: '/roof-replacement-cost-florida' },
@@ -462,6 +471,26 @@ export default function LearningCenterPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {stormAndHurricaneDamage.map((article) => (
+                <ArticleCard key={article.href} {...article} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Inspections & Maintenance */}
+        <section id="inspections-maintenance" className="py-16 px-4 bg-zinc-900/30 scroll-mt-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <FileCheck className="w-8 h-8 text-red-500" />
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Inspections & Maintenance</h2>
+              </div>
+              <p className="text-xl text-zinc-400 max-w-3xl">
+                Annual inspections, wind mitigation, 4-point reports, leak detection, and pre-listing certifications across Broward and Palm Beach County.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {inspectionsAndMaintenance.map((article) => (
                 <ArticleCard key={article.href} {...article} />
               ))}
             </div>
