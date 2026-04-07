@@ -32,7 +32,6 @@ export default function BocaRatonRoofReplacementTimelinePage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Boca Raton Roof Replacement Timeline', item: 'https://allphaseconstructionfl.com/boca-raton-roof-replacement-timeline' },
   ]};
-  const businessSchema = { '@context': 'https://schema.org', '@type': 'LocalBusiness', '@id': 'https://allphaseconstructionfl.com/#organization', name: 'All Phase Construction USA', aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '170', bestRating: '5', worstRating: '1' } };
   const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Boca Raton Roof Replacement Timeline: A Day-by-Day Guide', description: 'How long a roof replacement takes in Boca Raton, FL — phase-by-phase from inspection through final inspection, with permit and weather notes.', author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
@@ -42,7 +41,7 @@ export default function BocaRatonRoofReplacementTimelinePage() {
         description="How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather contingencies."
         canonicalPath="/boca-raton-roof-replacement-timeline"
       />
-      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema, businessSchema]} />
+      <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
 
       <div className="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
