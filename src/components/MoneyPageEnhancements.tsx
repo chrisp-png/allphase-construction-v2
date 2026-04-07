@@ -146,9 +146,7 @@ export default function MoneyPageEnhancements({
   return (
     <>
       <Helmet>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(ratingSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify([faqSchema, ratingSchema, breadcrumbSchema])}</script>
       </Helmet>
 
       {/* Embedded Google Map — keyless, lazy-loaded */}
