@@ -2712,8 +2712,21 @@ ${companyAuthorityFooter()}
     if (!alreadyHasFaq) {
       hubSchema = [...existingArr, buildFaqSchema(faqs)];
     }
-    // Inject FAQ HTML + Map + Testimonials before the closing </section>
-    const injectedBlock = `\n${buildMapHtml(city)}\n${buildTestimonialsHtml(city, location)}\n${buildFaqHtml(city, faqs)}\n`;
+    // ─── PR #3: County hub backlink block ───
+    // Every city page links up to its parent county hub to concentrate
+    // topical ranking signal onto /locations/{county}-county. This is the
+    // single highest-leverage internal-linking change for the county-level
+    // keyword targets.
+    const countyHubSlug = location.county === 'Broward' ? 'broward-county' : 'palm-beach-county';
+    const countyHubName = location.county === 'Broward' ? 'Broward County' : 'Palm Beach County';
+    const countyBacklinkHtml = `
+  <div style="background:#fef2f2;border-left:4px solid #dc2626;border-radius:0.5rem;padding:1.25rem 1.5rem;margin:2rem 0;">
+    <div style="font-size:0.8125rem;color:#991b1b;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.375rem;">Part of Our ${countyHubName} Service Area</div>
+    <p style="margin:0;color:#1f2937;">${city} is one of the cities we serve throughout ${countyHubName}. See our full <a href="/locations/${countyHubSlug}" style="color:#dc2626;font-weight:600;text-decoration:underline;">${countyHubName} roof replacement service area</a> for coverage details across every community.</p>
+  </div>`;
+
+    // Inject FAQ HTML + Map + Testimonials + County backlink before the closing </section>
+    const injectedBlock = `\n${countyBacklinkHtml}\n${buildMapHtml(city)}\n${buildTestimonialsHtml(city, location)}\n${buildFaqHtml(city, faqs)}\n`;
     if (hubContent.includes('</section>')) {
       hubContent = hubContent.replace('</section>', `${injectedBlock}</section>`);
     } else {
@@ -2732,6 +2745,134 @@ ${companyAuthorityFooter()}
     // Write to both public/ and dist/ (if dist exists)
     writeToPublicAndDist(`locations/${slug}/index.html`, hubHTML);
     console.log(`✅ Generated: dist/locations/${slug}/index.html`);
+    totalPages++;
+  });
+
+  // ─── PR #3: Generate prerendered county hub pages ───
+  // /locations/palm-beach-county and /locations/broward-county render
+  // client-side via React, but need prerendered HTML for Google to see
+  // the county-level content. This block emits static HTML for both hubs
+  // with full content, city lists, and (for PBC) landmark cards.
+  const COUNTY_HUBS = [
+    {
+      slug: 'palm-beach-county',
+      name: 'Palm Beach County',
+      complianceLanguage: 'Palm Beach County wind-compliant',
+      cities: [
+        ['boca-raton', 'Boca Raton'],
+        ['delray-beach', 'Delray Beach'],
+        ['boynton-beach', 'Boynton Beach'],
+        ['west-palm-beach', 'West Palm Beach'],
+        ['palm-beach-gardens', 'Palm Beach Gardens'],
+        ['jupiter', 'Jupiter'],
+        ['wellington', 'Wellington'],
+        ['lake-worth', 'Lake Worth'],
+        ['palm-beach', 'Palm Beach'],
+        ['greenacres', 'Greenacres'],
+        ['lantana', 'Lantana'],
+        ['highland-beach', 'Highland Beach'],
+      ],
+      includeLandmarks: true,
+    },
+    {
+      slug: 'broward-county',
+      name: 'Broward County',
+      complianceLanguage: 'HVHZ-compliant',
+      cities: [
+        ['deerfield-beach', 'Deerfield Beach'],
+        ['pompano-beach', 'Pompano Beach'],
+        ['fort-lauderdale', 'Fort Lauderdale'],
+        ['hollywood', 'Hollywood'],
+        ['coral-springs', 'Coral Springs'],
+        ['coconut-creek', 'Coconut Creek'],
+        ['parkland', 'Parkland'],
+        ['lighthouse-point', 'Lighthouse Point'],
+        ['wilton-manors', 'Wilton Manors'],
+        ['pembroke-pines', 'Pembroke Pines'],
+        ['plantation', 'Plantation'],
+        ['davie', 'Davie'],
+        ['sunrise', 'Sunrise'],
+      ],
+      includeLandmarks: false,
+    },
+  ];
+
+  COUNTY_HUBS.forEach((hub) => {
+    const title = `${hub.name} Roof Replacement | All Phase USA`;
+    const description = `Roof replacement throughout ${hub.name}, FL. Tile, metal, shingle & flat. ${hub.complianceLanguage}, dual-licensed CCC + CGC, 2,500+ projects. Free estimate. (754) 227-5605.`;
+    const canonical = `https://allphaseconstructionfl.com/locations/${hub.slug}`;
+
+    const cityLinksHtml = hub.cities
+      .map(([citySlug, cityName]) => `<li><a href="/locations/${citySlug}">${cityName} Roof Replacement</a></li>`)
+      .join('');
+
+    let landmarkHtml = '';
+    if (hub.includeLandmarks) {
+      const hubLandmarks = LANDMARKS.filter((lm) => lm.citySlug === 'boca-raton');
+      if (hubLandmarks.length) {
+        landmarkHtml = `
+  <h2>Featured Service Areas in Boca Raton</h2>
+  <p>Detailed landmark-level coverage for the distinct roofing environments around some of Palm Beach County&rsquo;s most recognizable locations.</p>
+  <ul>` + hubLandmarks.map((lm) =>
+    `<li><a href="/locations/${lm.citySlug}/${lm.slug}">Roof Replacement Near ${lm.name}</a></li>`
+  ).join('') + `</ul>`;
+      }
+    }
+
+    const hubContent = `
+<section>
+  <nav aria-label="Breadcrumb" style="font-size:0.875rem;color:#6b7280;margin-bottom:1rem;">
+    <a href="/">Home</a> › <a href="/locations/deerfield-beach/service-area">Locations</a> › <span>${hub.name}</span>
+  </nav>
+  <h1>${hub.name} Roof Replacement</h1>
+  <p style="font-size:1.125rem;">Dual-licensed roof replacement throughout ${hub.name}, Florida. Tile, metal, architectural shingle, and flat-roof systems built to ${hub.complianceLanguage} standards. Over 2,500 roofs completed since 2005 from our Deerfield Beach headquarters.</p>
+
+  <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:0.5rem;padding:1rem 1.25rem;margin:1.5rem 0;">
+    <strong style="color:#991b1b;">✓ Dual-Licensed CCC-1331464 + CGC-1526236</strong> · ${hub.complianceLanguage} · A+ BBB · 2,500+ Roofs · Since 2005
+  </div>
+
+  <h2>${hub.name} Cities We Serve</h2>
+  <p>We handle roof replacement projects throughout ${hub.name}, coordinating HOA architectural review, permits, and inspections from our Deerfield Beach headquarters. Our dual CCC + CGC licensing lets us assess structural conditions under the roof deck before any tear-off begins.</p>
+  <ul>${cityLinksHtml}</ul>
+
+  ${landmarkHtml}
+
+  <h2>Why Choose All Phase in ${hub.name}</h2>
+  <p>All Phase Construction USA has been replacing roofs across ${hub.name} since 2005. Our dual general-contractor and roofing-contractor licensing gives us the authority to address structural issues under the roof deck — rotted sheathing, failed trusses, rusted straps — that pure roofing contractors have to stop and subcontract out. That single advantage is why we handle the oldest and most complex housing stock in ${hub.name}.</p>
+
+  <p><a href="tel:7542275605"><strong>Call (754) 227-5605</strong></a> for a free inspection anywhere in ${hub.name}.</p>
+</section>`;
+
+    const schema = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'RoofingContractor',
+        name: 'All Phase Construction USA',
+        telephone: '+17542275605',
+        areaServed: { '@type': 'AdministrativeArea', name: `${hub.name}, Florida` },
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '1590 SW 13th Ct',
+          addressLocality: 'Deerfield Beach',
+          addressRegion: 'FL',
+          postalCode: '33442',
+          addressCountry: 'US',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
+          { '@type': 'ListItem', position: 3, name: hub.name, item: canonical },
+        ],
+      },
+    ];
+
+    const hubHTML = createHTMLTemplate(title, description, canonical, hubContent, schema, description);
+    writeToPublicAndDist(`locations/${hub.slug}/index.html`, hubHTML);
+    console.log(`✅ Generated: dist/locations/${hub.slug}/index.html (county hub)`);
     totalPages++;
   });
 
