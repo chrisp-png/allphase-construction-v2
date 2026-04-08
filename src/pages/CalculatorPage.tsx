@@ -162,6 +162,13 @@ export default function CalculatorPage() {
         <div className="max-w-6xl mx-auto">
 
           {/* SEO Context + Authority Introduction */}
+          <h2 className="text-2xl font-bold text-white mb-4">South Florida Roof Replacement Estimates: Broward &amp; Palm Beach County Pricing</h2>
+          <p className="text-zinc-300 leading-relaxed mb-4">
+            This free South Florida roof cost calculator gives you a real roof replacement estimate based on 2026 Florida pricing across Broward County and Palm Beach County — the two HVHZ markets we've worked in for decades. Unlike generic national roofing calculators, every number is built from actual South Florida jobs and priced against the High Velocity Hurricane Zone code requirements your roof will be inspected under.
+          </p>
+          <p className="text-zinc-300 leading-relaxed mb-6">
+            Whether you're searching for a roof estimate in Fort Lauderdale, a roof replacement estimate in Boca Raton, a roofing calculator for Palm Beach County, or a new roof cost in Deerfield Beach, Coral Springs, Boynton Beach, Delray Beach, Wellington, or West Palm Beach — the same South Florida pricing model applies. Select your roof size, pitch, and material system to see shingle, tile, metal, and flat roof costs side by side.
+          </p>
           <h2 className="text-2xl font-bold text-white mb-4">Understanding Your Roof Replacement Cost</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
             Roof replacement costs in Broward County and Palm Beach County depend on your roof system — <Link to="/shingle-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">shingle</Link>, <Link to="/tile-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">tile</Link>, <Link to="/metal-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">metal</Link>, or <Link to="/flat-roofing/" className="text-white font-semibold hover:text-zinc-100 underline">flat roofing</Link> — along with roof size, condition, and code requirements. The estimates above give you a starting range. For an exact number based on your actual roof, schedule a <Link to="/roof-inspection/" className="text-white font-semibold hover:text-zinc-100 underline">free roof inspection</Link>. In some cases, <Link to="/roofing-services/roof-repair/" className="text-white font-semibold hover:text-zinc-100 underline">roof repair</Link> may be a cost-effective alternative to full replacement.

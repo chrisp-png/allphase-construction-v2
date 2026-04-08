@@ -62,8 +62,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'Free Roof Cost Calculator - South Florida 2026 Pricing',
-    description: 'Estimate your roof replacement cost in 60 seconds. 2026 South Florida pricing for shingle, tile, metal & flat roofs. Based on 2,500+ real jobs.',
+    title: 'South Florida Roof Cost Calculator | Free Florida Roof Replacement Estimate 2026',
+    description: 'Free South Florida roof cost calculator and roof replacement estimate for Broward & Palm Beach County, Florida. 2026 HVHZ pricing for shingle, tile, metal & flat roofs — no signup.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {

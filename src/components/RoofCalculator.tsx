@@ -852,10 +852,11 @@ export default function RoofCalculator() {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="inline-block bg-red-600/10 border border-red-600/30 rounded-full px-4 py-1.5 mb-4">
-            <span className="text-red-500 text-sm font-semibold uppercase tracking-wide">Free Estimate Tool</span>
+            <span className="text-red-500 text-sm font-semibold uppercase tracking-wide">Free South Florida Roof Estimate Tool</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3">Roof Cost Calculator</h1>
-          <p className="text-lg text-gray-500 max-w-xl mx-auto">Get an instant estimate in under 30 seconds — no signup required.</p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3">South Florida Roof Cost Calculator</h1>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-2">Get a free roof replacement estimate for Broward &amp; Palm Beach County, Florida in under 30 seconds — no signup required.</p>
+          <p className="text-sm text-gray-500 max-w-2xl mx-auto">2026 Florida roofing calculator with HVHZ-compliant pricing for shingle, tile, metal &amp; flat roof systems across South Florida.</p>
         </div>
 
         {/* Progress Bar */}
