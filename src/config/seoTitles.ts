@@ -413,15 +413,15 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid common underpayments.',
     canonical: 'https://allphaseconstructionfl.com/wind-damage-insurance-claim-boynton-beach'
   },
-  '/emergency-roof-tarp-pembroke-pines': {
-    title: 'Emergency Roof Tarp in Pembroke Pines (24-Hour Service)',
-    description: 'Emergency roof tarp service in Pembroke Pines, FL — when to call, how the install works, what it costs, and how insurance reimbursement works on the underlying claim.',
-    canonical: 'https://allphaseconstructionfl.com/emergency-roof-tarp-pembroke-pines'
+  '/emergency-roof-tarp-lighthouse-point': {
+    title: 'Emergency Roof Tarp in Lighthouse Point (24-Hour Service)',
+    description: 'Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ. When to call, what it costs, and how insurance reimbursement works.',
+    canonical: 'https://allphaseconstructionfl.com/emergency-roof-tarp-lighthouse-point'
   },
-  '/hail-damage-roof-parkland': {
-    title: 'Hail Damage Roof Assessment in Parkland, FL (2026)',
-    description: 'How to identify hail damage on a Parkland roof, document it for insurance, and file a successful claim. The 8 visible signs and the inspection process explained.',
-    canonical: 'https://allphaseconstructionfl.com/hail-damage-roof-parkland'
+  '/tree-damage-roof-repair-parkland': {
+    title: 'Tree Damage Roof Repair in Parkland, FL (2026)',
+    description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window that protects your claim.',
+    canonical: 'https://allphaseconstructionfl.com/tree-damage-roof-repair-parkland'
   },
   '/storm-damage-repair-or-replace-davie': {
     title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision Matrix)',

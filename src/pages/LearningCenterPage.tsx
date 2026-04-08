@@ -114,8 +114,8 @@ const materialsAndSystems = [
 const stormAndHurricaneDamage = [
   { title: 'Hurricane Roof Damage Inspection in Hollywood', href: '/hurricane-roof-damage-inspection-hollywood' },
   { title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step)', href: '/wind-damage-insurance-claim-boynton-beach' },
-  { title: 'Emergency Roof Tarp in Pembroke Pines (24-Hour Service)', href: '/emergency-roof-tarp-pembroke-pines' },
-  { title: 'Hail Damage Roof Assessment in Parkland', href: '/hail-damage-roof-parkland' },
+  { title: 'Emergency Roof Tarp in Lighthouse Point (24-Hour Service)', href: '/emergency-roof-tarp-lighthouse-point' },
+  { title: 'Tree Damage Roof Repair in Parkland', href: '/tree-damage-roof-repair-parkland' },
   { title: 'Storm Damage: Repair or Replace in Davie? (Decision Matrix)', href: '/storm-damage-repair-or-replace-davie' }
 ];
 

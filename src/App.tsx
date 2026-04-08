@@ -123,8 +123,8 @@ const FlatRoofTpoVsPvcWestPalmBeachPage = lazy(() => import('./pages/FlatRoofTpo
 const SwitchFromShinglesToMetalPlantationPage = lazy(() => import('./pages/SwitchFromShinglesToMetalPlantationPage'));
 const HurricaneRoofDamageInspectionHollywoodPage = lazy(() => import('./pages/HurricaneRoofDamageInspectionHollywoodPage'));
 const WindDamageInsuranceClaimBoyntonBeachPage = lazy(() => import('./pages/WindDamageInsuranceClaimBoyntonBeachPage'));
-const EmergencyRoofTarpPembrokePinesPage = lazy(() => import('./pages/EmergencyRoofTarpPembrokePinesPage'));
-const HailDamageRoofParklandPage = lazy(() => import('./pages/HailDamageRoofParklandPage'));
+const EmergencyRoofTarpLighthousePointPage = lazy(() => import('./pages/EmergencyRoofTarpLighthousePointPage'));
+const TreeDamageRoofRepairParklandPage = lazy(() => import('./pages/TreeDamageRoofRepairParklandPage'));
 const StormDamageRepairOrReplaceDaviePage = lazy(() => import('./pages/StormDamageRepairOrReplaceDaviePage'));
 const AnnualRoofInspectionSunrisePage = lazy(() => import('./pages/AnnualRoofInspectionSunrisePage'));
 const WindMitigationInspectionPalmBeachGardensPage = lazy(() => import('./pages/WindMitigationInspectionPalmBeachGardensPage'));
@@ -264,8 +264,8 @@ function AppContent() {
             <Route path="/switch-from-shingles-to-metal-plantation" element={<SwitchFromShinglesToMetalPlantationPage />} />
             <Route path="/hurricane-roof-damage-inspection-hollywood" element={<HurricaneRoofDamageInspectionHollywoodPage />} />
             <Route path="/wind-damage-insurance-claim-boynton-beach" element={<WindDamageInsuranceClaimBoyntonBeachPage />} />
-            <Route path="/emergency-roof-tarp-pembroke-pines" element={<EmergencyRoofTarpPembrokePinesPage />} />
-            <Route path="/hail-damage-roof-parkland" element={<HailDamageRoofParklandPage />} />
+            <Route path="/emergency-roof-tarp-lighthouse-point" element={<EmergencyRoofTarpLighthousePointPage />} />
+            <Route path="/tree-damage-roof-repair-parkland" element={<TreeDamageRoofRepairParklandPage />} />
             <Route path="/storm-damage-repair-or-replace-davie" element={<StormDamageRepairOrReplaceDaviePage />} />
             <Route path="/annual-roof-inspection-sunrise" element={<AnnualRoofInspectionSunrisePage />} />
             <Route path="/wind-mitigation-inspection-palm-beach-gardens" element={<WindMitigationInspectionPalmBeachGardensPage />} />
