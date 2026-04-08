@@ -428,6 +428,36 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that decides the call.',
     canonical: 'https://allphaseconstructionfl.com/storm-damage-repair-or-replace-davie'
   },
+  '/annual-roof-inspection-sunrise': {
+    title: 'Annual Roof Inspection in Sunrise, FL (10-Point Checklist)',
+    description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior damage.',
+    canonical: 'https://allphaseconstructionfl.com/annual-roof-inspection-sunrise'
+  },
+  '/wind-mitigation-inspection-palm-beach-gardens': {
+    title: 'Wind Mitigation Inspection in Palm Beach Gardens (2026 Savings Guide)',
+    description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the OIR-B1-1802 form explained.',
+    canonical: 'https://allphaseconstructionfl.com/wind-mitigation-inspection-palm-beach-gardens'
+  },
+  '/roof-maintenance-tips-miramar': {
+    title: '10 Roof Maintenance Tips for Miramar Homeowners (2026)',
+    description: '10 practical Miramar roof maintenance habits that extend roof life, prevent leaks, and protect insurance renewability. The full pre-hurricane checklist.',
+    canonical: 'https://allphaseconstructionfl.com/roof-maintenance-tips-miramar'
+  },
+  '/four-point-inspection-roof-lake-worth-beach': {
+    title: '4-Point Inspection Roof Section in Lake Worth Beach (2026)',
+    description: 'How the Florida 4-point inspection roof section works for Lake Worth Beach homeowners, what carriers require, and how to avoid a non-renewal letter.',
+    canonical: 'https://allphaseconstructionfl.com/four-point-inspection-roof-lake-worth-beach'
+  },
+  '/roof-leak-detection-weston': {
+    title: 'Roof Leak Detection in Weston, FL (2026 Guide)',
+    description: 'How to find the source of a roof leak in a Weston home, the 8 most common Florida leak sources, and when to repair vs file an insurance claim.',
+    canonical: 'https://allphaseconstructionfl.com/roof-leak-detection-weston'
+  },
+  '/pre-listing-roof-certification-coconut-creek': {
+    title: 'Pre-Listing Roof Certification in Coconut Creek (2026)',
+    description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from collapsing at inspection.',
+    canonical: 'https://allphaseconstructionfl.com/pre-listing-roof-certification-coconut-creek'
+  },
 };
 
 /**
