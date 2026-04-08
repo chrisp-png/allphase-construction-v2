@@ -82,34 +82,18 @@ export default function ServicePageEnhancements({
     }))
   };
 
+  // NOTE: Service schema intentionally does NOT carry aggregateRating or review.
+  // Google's rich-results spec rejects review snippets attached to Service
+  // ("Invalid object type for field <parent_node>"). The site-wide
+  // RoofingContractor #organization schema (injected by prerender-static.mjs)
+  // is the single source of AggregateRating for the domain.
   const ratingSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `https://allphaseconstructionfl.com/${serviceSlug}#service`,
     serviceType: serviceName,
     provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
-    areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '138',
-      bestRating: '5',
-      worstRating: '1'
-    },
-    review: [
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: t1.name },
-        reviewBody: t1.text
-      },
-      {
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        author: { '@type': 'Person', name: t2.name },
-        reviewBody: t2.text
-      }
-    ]
+    areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' }
   };
 
   return (
