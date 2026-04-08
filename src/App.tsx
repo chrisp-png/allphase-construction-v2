@@ -81,6 +81,7 @@ const HowToHireRoofingContractorPage = lazy(() => import('./pages/HowToHireRoofi
 const LicensedRoofingContractorPage = lazy(() => import('./pages/LicensedRoofingContractorPage'));
 const SitemapPage = lazy(() => import('./pages/SitemapPage'));
 const OurLocationPage = lazy(() => import('./pages/OurLocationPage'));
+const DynamicLandmarkPage = lazy(() => import('./pages/DynamicLandmarkPage'));
 const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const ServiceAreasHubPage = lazy(() => import('./pages/locations/ServiceAreasHubPage'));
@@ -313,6 +314,10 @@ function AppContent() {
             <Route path="/locations/greenacres/best-roofers-greenacres" element={<BestRoofersGreenacresPage />} />
             <Route path="/locations/lake-worth-beach/best-roofers-lake-worth-beach" element={<BestRoofersLakeWorthBeachPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
+            {/* Landmark pages: /locations/:city/:landmark — registered before :city catch-all.
+                Explicit best-roofers-* routes above still win because React Router ranks
+                literal segments higher than params. */}
+            <Route path="/locations/:city/:landmark" element={<DynamicLandmarkPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
