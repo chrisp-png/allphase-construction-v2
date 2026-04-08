@@ -22,31 +22,23 @@ export interface LocationSEO {
 }
 
 /**
- * Broward County cities (HVHZ-compliant)
- */
-const BROWARD_CITIES = [
-  'fort-lauderdale', 'deerfield-beach', 'coral-springs', 'pompano-beach',
-  'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
-  'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
-  'lauderdale-by-the-sea', 'lighthouse-point', 'miramar', 'north-lauderdale',
-  'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
-  'parkland'
-];
-
-/**
  * Build complete SEO metadata for a location page
  *
  * Uses templates with city/state substitution, unless overrides are provided.
+ *
+ * County is read from the Location record itself (single source of truth in
+ * src/data/locations.ts). Do NOT reintroduce a hardcoded BROWARD_CITIES array
+ * here or anywhere else — it caused 3-way drift prior to April 2026.
  */
 export function buildLocationSeo(location: Location): LocationSEO {
-  const { slug, city, state } = location;
+  const { slug, city } = location;
 
-  // Determine compliance language based on county
-  const isBrowardCounty = BROWARD_CITIES.includes(slug);
+  // Determine compliance language based on county field (single source of truth)
+  const isBrowardCounty = location.county === 'Broward';
   const complianceLanguage = isBrowardCounty ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
 
-  // Generate defaults from templates
-  const defaultTitle = `${city} Roofing Contractor | All Phase`;
+  // Generate defaults from templates (POST-April-6 pivot: roof replacement positioning)
+  const defaultTitle = `Roof Replacement ${city}, FL | All Phase USA`;
   const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. ${complianceLanguage}, 2,500+ projects. Free estimate. (754) 227-5605.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
@@ -144,8 +136,7 @@ export function generateDeerfieldBeachSchema(): object {
       "https://www.facebook.com/AllPhaseConstructionUsA",
       "https://www.instagram.com/all_phase_construction_usa/",
       "https://www.linkedin.com/company/all-phase-construction-usa-llc",
-      "https://www.youtube.com/@allphaseconstructionusa5626",
-      "https://share.google/GoLG8dytlgHgXVjKK"
+      "https://www.youtube.com/@allphaseconstructionusa5626"
     ]
   };
 }
