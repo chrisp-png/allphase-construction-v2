@@ -107,7 +107,10 @@ http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstruction
 # ======================================================================
 # SPA FALLBACK + STATIC FILES
 # Handled in netlify.toml [[redirects]] section.
-# Do NOT duplicate /* /index.html 200 here.
+# Do NOT duplicate /hail-damage-roof-parkland /tree-damage-roof-repair-parkland 301!
+/emergency-roof-tarp-pembroke-pines /emergency-roof-tarp-lighthouse-point 301!
+
+/* /index.html 200 here.
 # ======================================================================
 
 # Legacy blog redirects - WordPress URLs causing 5xx errors
@@ -434,5 +437,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # Legacy location pages (broken dev-mode files) - redirect to nearest served city
 /locations/surfside /locations/hallandale-beach 301!
 /locations/south-palm-beach /locations/lake-worth-beach 301!
+
+/hail-damage-roof-parkland /tree-damage-roof-repair-parkland 301!
+/emergency-roof-tarp-pembroke-pines /emergency-roof-tarp-lighthouse-point 301!
 
 /* /index.html 200
