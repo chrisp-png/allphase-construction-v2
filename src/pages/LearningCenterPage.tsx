@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { Calculator, DollarSign, CreditCard, BookOpen, Shield, Home, Wrench, ClipboardCheck, Building2, Sun, FileText, MapPin, FileCheck } from 'lucide-react';
 
@@ -158,6 +159,23 @@ function ArticleCard({ title, href }: ArticleCardProps) {
 }
 
 export default function LearningCenterPage() {
+  const location = useLocation();
+
+  // React Router's <Link> does not auto-scroll to hash fragments (#city-county-guides,
+  // #insurance-claims, etc.). This effect handles both initial loads and in-page nav
+  // clicks so header menu links like /learning-center/#city-county-guides actually jump
+  // to the right section.
+  useEffect(() => {
+    if (!location.hash) return;
+    const id = location.hash.slice(1);
+    // Defer one frame so the target section has mounted before we scroll.
+    const raf = requestAnimationFrame(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [location.pathname, location.hash]);
+
   return (
     <>
       <SEO
