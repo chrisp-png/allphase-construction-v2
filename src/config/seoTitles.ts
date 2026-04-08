@@ -16,21 +16,13 @@ import { buildLocationSeo } from '../lib/locationSeo';
 import { BEST_ROOFERS_DATA } from '../data/bestRoofersData';
 
 /**
- * Broward County slugs - these cities are in the HVHZ (High Velocity Hurricane Zone).
- * All other South Florida cities default to Wind-Borne Debris Region (WBDR).
+ * Returns correct wind-zone compliance language for a given city slug.
+ * Reads county from src/data/locations.ts (single source of truth).
+ * Falls back to WBDR language if the slug is unknown.
  */
-const BROWARD_CITIES = [
-  'fort-lauderdale', 'deerfield-beach', 'coral-springs', 'pompano-beach',
-  'hollywood', 'coconut-creek', 'wilton-manors', 'davie', 'lauderhill',
-  'margate', 'plantation', 'dania-beach', 'cooper-city', 'hallandale-beach',
-  'lauderdale-by-the-sea', 'lighthouse-point', 'miramar', 'north-lauderdale',
-  'oakland-park', 'pembroke-pines', 'sunrise', 'tamarac', 'weston',
-  'parkland'
-];
-
-/** Returns correct wind-zone compliance language for a given city slug */
 function getComplianceLabel(slug: string): string {
-  return BROWARD_CITIES.includes(slug) ? 'HVHZ-certified' : 'Florida wind-code compliant';
+  const location = getLocationBySlug(slug);
+  return location?.county === 'Broward' ? 'HVHZ-certified' : 'Florida wind-code compliant';
 }
 
 export interface SEOMetadata {
@@ -197,51 +189,6 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington',
     ogTitle: '5 Best Roofers in Wellington, FL (2026) | All Phase',
     ogDescription: 'Top 5 roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records.'
-  },
-  '/locations/fort-lauderdale': {
-    title: 'Fort Lauderdale Roofing Contractor | All Phase USA',
-    description: 'Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.',
-    canonical: 'https://allphaseconstructionfl.com/locations/fort-lauderdale'
-  },
-  '/locations/west-palm-beach': {
-    title: 'West Palm Beach Roofing Contractor | All Phase USA',
-    description: 'Dual-licensed West Palm Beach roofing contractor. Florida wind-code compliant. Historic district expertise. 20+ years. (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/west-palm-beach'
-  },
-  '/locations/pompano-beach': {
-    title: 'Pompano Beach Roofing Contractor | All Phase USA',
-    description: 'Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.',
-    canonical: 'https://allphaseconstructionfl.com/locations/pompano-beach'
-  },
-  '/locations/coral-springs': {
-    title: 'Coral Springs Roofing Contractor | All Phase USA',
-    description: 'Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.',
-    canonical: 'https://allphaseconstructionfl.com/locations/coral-springs'
-  },
-  '/locations/gulf-stream': {
-    title: 'Gulf Stream Roofing Contractor | All Phase Construction USA',
-    description: 'Licensed roofing in Gulf Stream, FL. Tile, metal & shingle. Florida wind-code compliant Palm Beach County contractor. Free inspection. (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/gulf-stream',
-  },
-  '/locations/jupiter': {
-    title: 'Jupiter Roofing Contractor | All Phase USA',
-    description: 'Licensed roofing contractor serving Jupiter, FL. Roof repair, replacement, and inspection services from All Phase Construction USA. Call (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/jupiter',
-  },
-  '/locations/lake-worth-beach': {
-    title: 'Lake Worth Beach Roofing Contractor | All Phase USA',
-    description: 'Licensed roofing in Lake Worth Beach, FL. Tile, metal & shingle. Florida wind-code compliant Palm Beach County contractor. Free inspection. (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach',
-  },
-  '/locations/loxahatchee-groves': {
-    title: 'Loxahatchee Groves Roofing Contractor | All Phase USA',
-    description: 'Licensed roofing in Loxahatchee Groves, FL. Tile, metal & shingle. Florida wind-code compliant Palm Beach County contractor. Free inspection. (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves',
-  },
-  '/locations/pembroke-park': {
-    title: 'Pembroke Park Roofing Contractor | All Phase USA',
-    description: 'HVHZ-certified roofing in Pembroke Park, FL. Tile, metal & shingle. Licensed Broward County contractor. Free inspection. (754) 227-5605.',
-    canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park',
   },
   '/roof-repair/fort-lauderdale': {
     title: 'Fort Lauderdale Roof Repair | Fast Response | All Phase USA',
