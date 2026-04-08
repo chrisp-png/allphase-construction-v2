@@ -135,11 +135,6 @@
       "description": "South Florida roofing FAQs - repair vs replacement, HVHZ, insurance, materials & costs. Licensed contractor answers. Call (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/frequently-asked-questions"
     },
-    "/locations/deerfield-beach": {
-      "title": "Roofing Contractor Deerfield Beach FL | All Phase",
-      "description": "Deerfield Beach roofing - dual-licensed (CCC-1331464 & CGC-1526236), HVHZ-certified. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.",
-      "canonical": "https://allphaseconstructionfl.com/locations/deerfield-beach"
-    },
     "/locations/deerfield-beach/service-area": {
       "title": "Service Areas | All Phase Construction USA",
       "description": "All Phase Construction USA serves 50+ cities in Broward & Palm Beach County. HVHZ-certified, dual-licensed roofing from our Deerfield Beach HQ.",
@@ -202,7 +197,7 @@
     },
     "/roof-inspection/pompano-beach": {
       "title": "Pompano Beach Roof Inspection | All Phase USA",
-      "description": "Free 21-point roof inspection in Pompano Beach, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.",
+      "description": "Free 21-point roof inspection in Pompano Beach near Palm Aire and Cypress Lakes. Insurance docs & storm damage reports. Call (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/roof-inspection/pompano-beach"
     },
     "/roof-inspection/lake-worth": {
@@ -216,29 +211,9 @@
       "canonical": "https://allphaseconstructionfl.com/roof-repair/deerfield-beach"
     },
     "/roof-repair/pompano-beach": {
-      "title": "Pompano Beach Roof Repair | All Phase USA",
-      "description": "Emergency roof repair in Pompano Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.",
+      "title": "Pompano Beach Roof Repair | Near Palm Aire | All Phase USA",
+      "description": "Emergency roof repair in Pompano Beach near Palm Aire and Harbor Village. HVHZ-compliant, insurance coordination. Call (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/roof-repair/pompano-beach"
-    },
-    "/locations/west-palm-beach": {
-      "title": "West Palm Beach Roofing Contractor | All Phase USA",
-      "description": "Dual-licensed West Palm Beach roofing contractor (CCC-1331464 & CGC-1526236). HVHZ certified. Historic district expertise. 20+ years. (754) 227-5605",
-      "canonical": "https://allphaseconstructionfl.com/locations/west-palm-beach"
-    },
-    "/locations/pompano-beach": {
-      "title": "Pompano Beach Roofing Contractor | All Phase USA",
-      "description": "Licensed roofing contractor in Pompano Beach, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.",
-      "canonical": "https://allphaseconstructionfl.com/locations/pompano-beach"
-    },
-    "/locations/coral-springs": {
-      "title": "Coral Springs Roofing Contractor | All Phase USA",
-      "description": "Licensed roofing contractor in Coral Springs, FL. HVHZ-compliant metal, tile, shingle & flat roofing. Free inspections.",
-      "canonical": "https://allphaseconstructionfl.com/locations/coral-springs"
-    },
-    "/locations/fort-lauderdale": {
-      "title": "Fort Lauderdale Roofing Contractor | All Phase USA",
-      "description": "Licensed roofing contractor in Fort Lauderdale, FL. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing. Free inspections.",
-      "canonical": "https://allphaseconstructionfl.com/locations/fort-lauderdale"
     },
     "/locations/fort-lauderdale/best-roofers-fort-lauderdale": {
       "title": "Top 5 Roofers in Fort Lauderdale FL (2026) | All Phase",
@@ -384,26 +359,6 @@
       "title": "Jupiter Roof Inspection | All Phase USA",
       "description": "Free 21-point roof inspection in Jupiter, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/roof-inspection/jupiter"
-    },
-    "/locations/jupiter": {
-      "title": "Jupiter FL Roofer | Coastal Roofing Near Indiantown Rd | All Phase",
-      "description": "Jupiter roofing contractor near Abacoa, Jonathan's Landing & Jupiter Beach. Wind-code compliant, dual-licensed. Tile, metal & shingle. (754) 227-5605.",
-      "canonical": "https://allphaseconstructionfl.com/locations/jupiter"
-    },
-    "/locations/pompano-beach": {
-      "title": "Pompano Beach Roofer Near Me | Palm Aire & Harbor Village | All Phase",
-      "description": "Pompano Beach roofer near Palm Aire, Harbor Village & Cypress Lakes. Storm damage, full reroofs. HVHZ-certified, dual-licensed. (754) 227-5605.",
-      "canonical": "https://allphaseconstructionfl.com/locations/pompano-beach"
-    },
-    "/roof-repair/pompano-beach": {
-      "title": "Pompano Beach Roof Repair | Near Palm Aire | All Phase USA",
-      "description": "Emergency roof repair in Pompano Beach near Palm Aire and Harbor Village. HVHZ-compliant, insurance coordination. Call (754) 227-5605.",
-      "canonical": "https://allphaseconstructionfl.com/roof-repair/pompano-beach"
-    },
-    "/roof-inspection/pompano-beach": {
-      "title": "Pompano Beach Roof Inspection | All Phase USA",
-      "description": "Free 21-point roof inspection in Pompano Beach near Palm Aire and Cypress Lakes. Insurance docs & storm damage reports. Call (754) 227-5605.",
-      "canonical": "https://allphaseconstructionfl.com/roof-inspection/pompano-beach"
     }
   },
   "cityNames": {

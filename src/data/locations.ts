@@ -33,7 +33,7 @@ export interface Location {
   schemaOverride?: object;
 
   // Structured local SEO fields (consumed by LocationFactsBlock + AI/GEO)
-  county?: 'Broward' | 'Palm Beach' | 'Miami-Dade';
+  county?: 'Broward' | 'Palm Beach';
   hvhz?: boolean;
   neighborhoods?: string[];
   zips?: string[];
