@@ -71,6 +71,7 @@ const SunriseMoneyPage = lazy(() => import('./locations/SunriseMoneyPage'));
 const TamaracMoneyPage = lazy(() => import('./locations/TamaracMoneyPage'));
 const LauderdaleByTheSeaMoneyPage = lazy(() => import('./locations/LauderdaleByTheSeaMoneyPage'));
 const PalmBeachMoneyPage = lazy(() => import('./locations/PalmBeachMoneyPage'));
+const PalmBeachCountyHubPage = lazy(() => import('./locations/PalmBeachCountyHubPage'));
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
 const GenericRoofInspectionTemplate = lazy(() => import('./templates/GenericRoofInspectionTemplate'));
@@ -94,6 +95,7 @@ const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elemen
   'margate': MargateMoneyPage,
   'miramar': MiramarMoneyPage,
   'palm-beach': PalmBeachMoneyPage,
+  'palm-beach-county': PalmBeachCountyHubPage,
   'palm-beach-gardens': PalmBeachGardensMoneyPage,
   'parkland': ParklandMoneyPage,
   'pembroke-pines': PembrokePinesMoneyPage,
