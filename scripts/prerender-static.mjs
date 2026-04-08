@@ -39,6 +39,23 @@ const locationsJson = locationsArrayText
   .replace(/,(\s*[}\]])/g, '$1'); // Remove trailing commas
 const LOCATIONS = JSON.parse(locationsJson);
 
+// Load landmark data (SINGLE SOURCE OF TRUTH for /locations/:city/:landmark pages)
+// Mirrors the locations.ts parsing pattern above. landmarks.ts MUST use
+// double-quoted strings — see QUOTING CONVENTION comment in that file.
+const landmarksDataPath = path.join(projectRoot, 'src', 'data', 'landmarks.ts');
+const landmarksRaw = fs.readFileSync(landmarksDataPath, 'utf-8');
+const landmarksMatch = landmarksRaw.match(/export const landmarks: Landmark\[\] = \[([\s\S]*?)\];/);
+if (!landmarksMatch) {
+  throw new Error('Could not parse landmarks from src/data/landmarks.ts');
+}
+const landmarksArrayText = '[' + landmarksMatch[1] + ']';
+const landmarksJson = landmarksArrayText
+  .replace(/\/\/[^\n]*/g, '')
+  .replace(/\/\*[\s\S]*?\*\//g, '')
+  .replace(/([{,]\s*)(\w+)\s*:/g, '$1"$2":')
+  .replace(/,(\s*[}\]])/g, '$1');
+const LANDMARKS = JSON.parse(landmarksJson);
+
 /**
  * Broward County cities (HVHZ-compliant)
  */
@@ -2715,6 +2732,98 @@ ${companyAuthorityFooter()}
     // Write to both public/ and dist/ (if dist exists)
     writeToPublicAndDist(`locations/${slug}/index.html`, hubHTML);
     console.log(`✅ Generated: dist/locations/${slug}/index.html`);
+    totalPages++;
+  });
+
+  // ─── Generate /locations/:city/:landmark landmark pages ───
+  // Mirrors the city hub loop above. Uses landmark data from landmarks.ts
+  // as single source of truth. Part of PR #2 geo-relevance push for
+  // palm-beach-county-roofing-contractor.
+  console.log('\n📍 Generating landmark geo-relevance pages...\n');
+  LANDMARKS.forEach((landmark) => {
+    const parentCity = LOCATIONS.find((l) => l.slug === landmark.citySlug);
+    const cityDisplay = parentCity ? parentCity.city : landmark.citySlug;
+    const isBroward = parentCity && parentCity.county === 'Broward';
+    const complianceLanguage = isBroward ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
+
+    const defaultTitle = `Roof Replacement Near ${landmark.name} | ${cityDisplay}, FL | All Phase USA`;
+    const defaultDescription = `Roof replacement serving ${landmark.name} and the surrounding ${cityDisplay}, FL area. Tile, metal, shingle & flat. ${complianceLanguage}, dual-licensed CCC + CGC. Free estimate. (754) 227-5605.`;
+    const title = landmark.titleOverride || defaultTitle;
+    const description = landmark.descriptionOverride || defaultDescription;
+    const canonical = `https://allphaseconstructionfl.com/locations/${landmark.citySlug}/${landmark.slug}`;
+
+    const nearbyHtml = (landmark.nearbyAreas && landmark.nearbyAreas.length)
+      ? `<div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:0.5rem;padding:1.5rem;margin:1.5rem 0;">
+  <h3 style="margin-top:0;">Neighborhoods We Serve Near ${landmark.name}</h3>
+  <ul>${landmark.nearbyAreas.map((a) => `<li>${a}</li>`).join('')}</ul>
+</div>`
+      : '';
+
+    const faqsHtml = (landmark.faqs && landmark.faqs.length)
+      ? `<h2>${landmark.name} Roof Replacement FAQs</h2>` +
+        landmark.faqs.map((f) =>
+          `<div style="margin-bottom:1.5rem;"><h3>${f.question}</h3><p>${f.answer}</p></div>`
+        ).join('')
+      : '';
+
+    const countyHubLink = isBroward
+      ? '<a href="/locations/broward-county">Broward County Roof Replacement</a>'
+      : '<a href="/locations/palm-beach-county">Palm Beach County Roof Replacement</a>';
+
+    const landmarkContent = `
+<section>
+  <nav aria-label="Breadcrumb" style="font-size:0.875rem;color:#6b7280;margin-bottom:1rem;">
+    <a href="/">Home</a> › <a href="/locations/deerfield-beach/service-area">Locations</a> › <a href="/locations/${landmark.citySlug}">${cityDisplay}</a> › <span>${landmark.name}</span>
+  </nav>
+  <h1>Roof Replacement Near ${landmark.name}</h1>
+  <p style="font-size:1.125rem;">${landmark.shortDescriptor}</p>
+  <h2>The ${landmark.name} Area</h2>
+  <p>${landmark.localContext}</p>
+  <h2>Roofing in This Part of ${cityDisplay}</h2>
+  <p>${landmark.roofingAngle}</p>
+  ${nearbyHtml}
+  ${faqsHtml}
+  <h2>Continue Exploring</h2>
+  <p><a href="/locations/${landmark.citySlug}">Roof Replacement in ${cityDisplay}</a> · ${countyHubLink}</p>
+  <p><a href="tel:7542275605"><strong>Call (754) 227-5605</strong></a> for a free inspection.</p>
+</section>`;
+
+    // Build FAQPage + BreadcrumbList schema
+    const schemaArr = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
+          { '@type': 'ListItem', position: 3, name: cityDisplay, item: `https://allphaseconstructionfl.com/locations/${landmark.citySlug}` },
+          { '@type': 'ListItem', position: 4, name: landmark.name, item: canonical },
+        ],
+      },
+    ];
+    if (landmark.faqs && landmark.faqs.length) {
+      schemaArr.push({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: landmark.faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      });
+    }
+
+    const landmarkHTML = createHTMLTemplate(
+      title,
+      description,
+      canonical,
+      landmarkContent,
+      schemaArr,
+      description
+    );
+
+    writeToPublicAndDist(`locations/${landmark.citySlug}/${landmark.slug}/index.html`, landmarkHTML);
+    console.log(`✅ Generated: dist/locations/${landmark.citySlug}/${landmark.slug}/index.html`);
     totalPages++;
   });
 
