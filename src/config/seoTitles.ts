@@ -403,6 +403,31 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Should you replace your Plantation shingle roof with metal in 2026? Side-by-side cost, lifespan, insurance, HOA, and 40-year total-cost-of-ownership math.',
     canonical: 'https://allphaseconstructionfl.com/switch-from-shingles-to-metal-plantation'
   },
+  '/hurricane-roof-damage-inspection-hollywood': {
+    title: 'Hurricane Roof Damage Inspection in Hollywood, FL (2026)',
+    description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that protects your claim.',
+    canonical: 'https://allphaseconstructionfl.com/hurricane-roof-damage-inspection-hollywood'
+  },
+  '/wind-damage-insurance-claim-boynton-beach': {
+    title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step Guide)',
+    description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid common underpayments.',
+    canonical: 'https://allphaseconstructionfl.com/wind-damage-insurance-claim-boynton-beach'
+  },
+  '/emergency-roof-tarp-pembroke-pines': {
+    title: 'Emergency Roof Tarp in Pembroke Pines (24-Hour Service)',
+    description: 'Emergency roof tarp service in Pembroke Pines, FL — when to call, how the install works, what it costs, and how insurance reimbursement works on the underlying claim.',
+    canonical: 'https://allphaseconstructionfl.com/emergency-roof-tarp-pembroke-pines'
+  },
+  '/hail-damage-roof-parkland': {
+    title: 'Hail Damage Roof Assessment in Parkland, FL (2026)',
+    description: 'How to identify hail damage on a Parkland roof, document it for insurance, and file a successful claim. The 8 visible signs and the inspection process explained.',
+    canonical: 'https://allphaseconstructionfl.com/hail-damage-roof-parkland'
+  },
+  '/storm-damage-repair-or-replace-davie': {
+    title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision Matrix)',
+    description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that decides the call.',
+    canonical: 'https://allphaseconstructionfl.com/storm-damage-repair-or-replace-davie'
+  },
 };
 
 /**

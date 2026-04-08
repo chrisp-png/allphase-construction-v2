@@ -121,6 +121,11 @@ const TileRoofReplacementWellingtonPage = lazy(() => import('./pages/TileRoofRep
 const StandingSeamMetalRoofJupiterPage = lazy(() => import('./pages/StandingSeamMetalRoofJupiterPage'));
 const FlatRoofTpoVsPvcWestPalmBeachPage = lazy(() => import('./pages/FlatRoofTpoVsPvcWestPalmBeachPage'));
 const SwitchFromShinglesToMetalPlantationPage = lazy(() => import('./pages/SwitchFromShinglesToMetalPlantationPage'));
+const HurricaneRoofDamageInspectionHollywoodPage = lazy(() => import('./pages/HurricaneRoofDamageInspectionHollywoodPage'));
+const WindDamageInsuranceClaimBoyntonBeachPage = lazy(() => import('./pages/WindDamageInsuranceClaimBoyntonBeachPage'));
+const EmergencyRoofTarpPembrokePinesPage = lazy(() => import('./pages/EmergencyRoofTarpPembrokePinesPage'));
+const HailDamageRoofParklandPage = lazy(() => import('./pages/HailDamageRoofParklandPage'));
+const StormDamageRepairOrReplaceDaviePage = lazy(() => import('./pages/StormDamageRepairOrReplaceDaviePage'));
 const DeerfieldBeachCityPage = lazy(() => import('./pages/locations/DeerfieldBeachCityPage'));
 const BocaRatonMoneyPage = lazy(() => import('./pages/locations/BocaRatonMoneyPage'));
 const FortLauderdaleMoneyPage = lazy(() => import('./pages/locations/FortLauderdaleMoneyPage'));
@@ -251,6 +256,11 @@ function AppContent() {
             <Route path="/standing-seam-metal-roof-jupiter" element={<StandingSeamMetalRoofJupiterPage />} />
             <Route path="/flat-roof-tpo-vs-pvc-west-palm-beach" element={<FlatRoofTpoVsPvcWestPalmBeachPage />} />
             <Route path="/switch-from-shingles-to-metal-plantation" element={<SwitchFromShinglesToMetalPlantationPage />} />
+            <Route path="/hurricane-roof-damage-inspection-hollywood" element={<HurricaneRoofDamageInspectionHollywoodPage />} />
+            <Route path="/wind-damage-insurance-claim-boynton-beach" element={<WindDamageInsuranceClaimBoyntonBeachPage />} />
+            <Route path="/emergency-roof-tarp-pembroke-pines" element={<EmergencyRoofTarpPembrokePinesPage />} />
+            <Route path="/hail-damage-roof-parkland" element={<HailDamageRoofParklandPage />} />
+            <Route path="/storm-damage-repair-or-replace-davie" element={<StormDamageRepairOrReplaceDaviePage />} />
             <Route path="/licensed-roofing-contractor" element={<LicensedRoofingContractorPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
             <Route path="/our-location" element={<OurLocationPage />} />

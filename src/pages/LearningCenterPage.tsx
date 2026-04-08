@@ -110,6 +110,14 @@ const materialsAndSystems = [
   { title: 'Is It Time to Switch From Shingles to Metal in Plantation?', href: '/switch-from-shingles-to-metal-plantation' }
 ];
 
+const stormAndHurricaneDamage = [
+  { title: 'Hurricane Roof Damage Inspection in Hollywood', href: '/hurricane-roof-damage-inspection-hollywood' },
+  { title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step)', href: '/wind-damage-insurance-claim-boynton-beach' },
+  { title: 'Emergency Roof Tarp in Pembroke Pines (24-Hour Service)', href: '/emergency-roof-tarp-pembroke-pines' },
+  { title: 'Hail Damage Roof Assessment in Parkland', href: '/hail-damage-roof-parkland' },
+  { title: 'Storm Damage: Repair or Replace in Davie? (Decision Matrix)', href: '/storm-damage-repair-or-replace-davie' }
+];
+
 const insuranceAndContractor = [
   { title: 'Florida Roof Insurance Claims Guide', href: '/florida-roof-insurance-claims-guide' },
   { title: 'Roof Replacement Cost in Florida', href: '/roof-replacement-cost-florida' },
@@ -434,6 +442,26 @@ export default function LearningCenterPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {materialsAndSystems.map((article) => (
+                <ArticleCard key={article.href} {...article} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Storm & Hurricane Damage */}
+        <section id="storm-hurricane-damage" className="py-16 px-4 scroll-mt-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <FileCheck className="w-8 h-8 text-red-500" />
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Storm & Hurricane Damage</h2>
+              </div>
+              <p className="text-xl text-zinc-400 max-w-3xl">
+                Post-storm inspection, emergency tarp, and insurance claim guides for hurricane, wind, and hail damage across Broward and Palm Beach County.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {stormAndHurricaneDamage.map((article) => (
                 <ArticleCard key={article.href} {...article} />
               ))}
             </div>
