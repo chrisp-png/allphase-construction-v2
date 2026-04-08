@@ -262,6 +262,50 @@ export default function BocaRatonMoneyPage() {
           </div>
         </section>
 
+        {/* Featured Landmark Service Areas (PR #2 geo-relevance push) */}
+        <section className="py-16 bg-zinc-950 border-t border-zinc-800">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-4 border border-red-600/20">
+                <MapPin className="w-4 h-4" />
+                Service Areas Within Boca Raton
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Roof Replacement Near Boca Raton Landmarks
+              </h2>
+              <p className="text-lg text-zinc-400 max-w-3xl mx-auto">
+                Detailed landmark-level coverage for the distinct roofing environments around Boca Raton&rsquo;s most recognizable locations.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link
+                to="/locations/boca-raton/mizner-park"
+                className="block bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-lg p-6 transition-colors"
+              >
+                <div className="text-red-500 text-sm font-semibold mb-1">DOWNTOWN</div>
+                <div className="text-white font-bold text-lg mb-2">Mizner Park</div>
+                <div className="text-zinc-400 text-sm">Historic Mediterranean tile and downtown condominium reroofs.</div>
+              </Link>
+              <Link
+                to="/locations/boca-raton/town-center-at-boca-raton"
+                className="block bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-lg p-6 transition-colors"
+              >
+                <div className="text-red-500 text-sm font-semibold mb-1">WEST BOCA</div>
+                <div className="text-white font-bold text-lg mb-2">Town Center at Boca Raton</div>
+                <div className="text-zinc-400 text-sm">Concrete tile reroofs and HOA coordination for gated communities.</div>
+              </Link>
+              <Link
+                to="/locations/boca-raton/florida-atlantic-university"
+                className="block bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-lg p-6 transition-colors"
+              >
+                <div className="text-red-500 text-sm font-semibold mb-1">FAU CORRIDOR</div>
+                <div className="text-white font-bold text-lg mb-2">Florida Atlantic University</div>
+                <div className="text-zinc-400 text-sm">1960s–80s housing, absentee-landlord rentals, and HVHZ upgrades.</div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Boca Raton Neighborhoods We Serve */}
         <section className="py-20 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
