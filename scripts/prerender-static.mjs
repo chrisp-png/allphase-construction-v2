@@ -4065,6 +4065,92 @@ ${companyAuthorityFooter()}
     }
     console.log('\n✅ Safeguard 2 passed: All location pages have non-empty root divs');
   }
+
+  // =====================================================================
+  // PRIORITY 1 — Coastal PBC content pages (PR #8)
+  // Target: NE quadrant of LeadSnap 1001074 heatmap (ranks 11–19)
+  // =====================================================================
+  const priority1Pages = [
+    {
+      slug: 'highland-beach-roof-replacement',
+      title: 'Highland Beach Roof Replacement | All Phase Construction USA',
+      description: 'Salt-air-rated roof replacement for Highland Beach, FL oceanfront homes. Stainless fasteners, peel-and-stick underlayment, PBC wind-code compliant. Free inspection.',
+      h1: 'Roof Replacement in Highland Beach, FL',
+      intro: `Highland Beach sits on a narrow barrier island between the Intracoastal and the Atlantic, which means every roof on A1A faces salt spray, UV, and direct onshore wind loads that inland Palm Beach County roofs never see. All Phase Construction USA replaces tile, metal, and flat roofs across Highland Beach with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
+      sections: `
+  <h2>Why Coastal Highland Beach Roofs Fail Early</h2>
+  <p>Three things kill an oceanfront roof faster than the manufacturer's warranty says it should: salt fog corrosion of exposed fasteners and flashing, UV degradation of underlayment that bakes felt brittle in half the time of an inland home, and uplift pressure at the eaves driven by Exposure D open-ocean wind loads. We design every Highland Beach assembly around these three problems from the deck up — 304-grade stainless fastening, SBS-modified peel-and-stick underlayment, and enhanced edge metal with a reinforced fastening schedule.</p>
+  <h2>Landmarks We Serve Near Highland Beach</h2>
+  <p>We regularly work the A1A corridor from Spanish River Park at the north end down through Red Reef Park and the South Inlet Park area at the Boca Inlet. The Boca Raton Resort &amp; Club's historic Mediterranean tile aesthetic sets the visual benchmark we match on private estates along Ocean Blvd, and the Boca Inlet zone carries the worst salt exposure on this stretch of coast.</p>
+  <h2>Materials We Recommend for Highland Beach</h2>
+  <p>Clay and concrete tile deliver the A1A aesthetic with a 50-year service life when installed on stainless battens. Standing-seam aluminum is salt-proof with a 40+ year life and typically earns premium credits from coastal insurers. For flat sections we specify fully adhered white modified-bitumen for heat rejection and wind compliance.</p>
+  <h2>What the Replacement Process Looks Like</h2>
+  <p>Free inspection, drone and attic deck evaluation, permit pulled with the Town of Highland Beach, tear-off, deck repair, peel-and-stick underlayment, new roof system, final inspection, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    },
+    {
+      slug: 'coastal-boca-raton-roofing-contractor',
+      title: 'Coastal Boca Raton Roofing Contractor | All Phase Construction USA',
+      description: 'Salt-air roof replacement and repair for east Boca Raton. Stainless fasteners, peel-and-stick underlayment, PBC wind-code compliant. Licensed & insured.',
+      h1: 'Coastal Boca Raton Roofing Contractor',
+      intro: `The stretch of Boca Raton east of the Intracoastal — from the Boca Inlet north to Spanish River Park — is one of the harshest roofing environments in Palm Beach County. All Phase Construction USA specializes in coastal re-roofs that actually hit their warranty lifespan, using stainless fastening, SBS-modified peel-and-stick underlayment, and assemblies engineered for Exposure D wind loads.`,
+      sections: `
+  <h2>The East-Boca Roofing Problem</h2>
+  <p>Coastal Boca homes deal with three failure modes that inland homes don't: chloride intrusion rusting out fasteners and flashing, direct UV load on south and east elevations accelerating granule loss, and Exposure D wind pressures at the eaves where pressure maps show uplift values 30–50% higher than inland Boca. We design every coastal assembly around those three problems from the deck up.</p>
+  <h2>Neighborhoods &amp; Landmarks We Serve</h2>
+  <p>Our coastal Boca service area covers the Spanish River Park corridor at the north end, the Red Reef Park mid-coastal zone, the Boca Inlet and South Inlet Park area with the worst salt exposure in the city, and the Ocean Blvd / A1A corridor between Palmetto Park Road and Spanish River Boulevard. The Boca Raton Resort &amp; Club remains the Mediterranean tile benchmark we match on private estates.</p>
+  <h2>Assemblies We Install on Coastal Boca Homes</h2>
+  <p>Clay or concrete tile on stainless battens with 304-grade fasteners. Standing-seam aluminum with zero ferrous metal and a 40+ year service life. White modified-bitumen for flat sections with full adhesion and wind-rated edge metal.</p>
+  <h2>Our Coastal Workflow</h2>
+  <p>Drone and attic inspection, PBC wind mitigation evaluation, City of Boca Raton permit, tear-off, deck repair and re-nail, peel-and-stick underlayment, primary roof system, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    },
+    {
+      slug: 'oceanfront-roof-replacement-palm-beach-county',
+      title: 'Oceanfront Roof Replacement in Palm Beach County | All Phase Construction USA',
+      description: 'Oceanfront roof replacement across Palm Beach County — Highland Beach, Boca Raton, Delray Beach. Salt-rated, PBC wind-code compliant, insurance-ready.',
+      h1: 'Oceanfront Roof Replacement in Palm Beach County',
+      intro: `Oceanfront homes in Palm Beach County face wind, salt, and sun loads that kill standard roofs decades early. All Phase Construction USA replaces oceanfront roofs across the county — from the Boca Inlet north through Highland Beach and coastal Delray — with assemblies engineered specifically for Exposure D sites and rated to Palm Beach County's 170+ mph design wind speeds.`,
+      sections: `
+  <h2>What "Oceanfront-Rated" Actually Means</h2>
+  <p>Most contractors quote the same assembly for a home on A1A as they'd quote for one five miles inland. That is the single biggest reason oceanfront roofs fail early. Our oceanfront spec changes five things: 304-grade stainless fasteners throughout with no galvanized or coated steel, SBS-modified peel-and-stick underlayment with full coverage, enhanced edge metal with hemmed drip and reinforced fastening for Exposure D uplift, a deck re-nailed to current PBC fastening schedule before any new system goes on, and aluminum or non-ferrous flashings at every penetration and valley.</p>
+  <h2>Communities We Serve</h2>
+  <p>Highland Beach across the entire A1A corridor, coastal Boca Raton from the Boca Inlet to Spanish River Park, coastal Delray Beach from Atlantic Dunes Park to the Gulf Stream line, and Gulf Stream and Manalapan for ultra-coastal single-family work. Geographic anchors include Spanish River Park, Red Reef Park, South Inlet Park, and Atlantic Dunes Park.</p>
+  <h2>Systems We Install Oceanfront</h2>
+  <p>Clay and concrete tile in the Mediterranean aesthetic most HOAs require, installed with stainless battens. Standing-seam aluminum for the highest-longevity option with zero corrosion risk. Premium modified-bitumen for flat and low-slope sections with white-cap heat rejection.</p>
+  <h2>Insurance and Wind Mitigation</h2>
+  <p>Every oceanfront re-roof we complete includes a wind mitigation form delivered directly to your insurer, typically unlocking meaningful premium credits for opening protection, roof-to-wall connections, and roof covering class. On a coastal PBC home, that credit often covers a significant portion of the re-roof over the policy lifetime.</p>
+      `
+    }
+  ];
+
+  for (const p of priority1Pages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Coastal Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement</a></li>
+    <li><a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Priority 1: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTML pages.`);
   console.log(`\n🔍 Architecture Breakdown:`);
   console.log(`   - Homepage: 1 page`);
