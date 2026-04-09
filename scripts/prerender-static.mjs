@@ -4240,6 +4240,92 @@ ${companyAuthorityFooter()}
     }
   ];
 
+  // =====================================================================
+  // PRIORITY 4 — North Boca transition pages (PR #10)
+  // Target: row 1 cols 4-7 (ranks 6-8) — one authoritative page per topic
+  // tips the band into top-3
+  // =====================================================================
+  const priority4Pages = [
+    {
+      slug: 'north-boca-raton-roof-replacement',
+      title: 'North Boca Raton Roof Replacement | All Phase Construction USA',
+      description: 'Roof replacement in North Boca Raton, FL. Yamato Road corridor, Spanish River Blvd, BCT airport area. Palm Beach County wind-code compliant.',
+      h1: 'Roof Replacement in North Boca Raton, FL',
+      intro: `North Boca Raton — the corridor between Yamato Road and the Delray Beach city line — is a mix of established 1980s single-family subdivisions, newer luxury communities along Spanish River Boulevard, and the commercial corridor around Boca Raton Airport. All Phase Construction USA replaces roofs across the entire north-side market with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The North Boca Roofing Market</h2>
+  <p>Most north-side Boca subdivisions were built in a 20-year window between 1980 and 2000, which puts the original roof systems squarely in the re-roof window. Concrete tile underlayment from that era has almost universally failed regardless of visible tile condition, and architectural shingle systems installed in the late 1990s are hitting the end of their service life right now.</p>
+  <h2>Neighborhoods &amp; Landmarks We Serve</h2>
+  <p>Our north Boca service area covers the Yamato Road commercial and residential corridor, the Spanish River Boulevard east–west artery, the Boca Raton Airport (BCT) vicinity with its heightened wind exposure, and the El Rio Trail anchor connecting the north-side communities. Each subdivision carries its own HOA architectural review considerations, and we coordinate submittals before any tear-off begins.</p>
+  <h2>Systems We Install in North Boca</h2>
+  <p>Concrete tile replacements with full underlayment tear-off and stainless battens. Architectural asphalt shingles for subdivisions whose HOAs require shingle-to-shingle replacement. Standing-seam metal for homeowners prioritizing the longest-life option available in Palm Beach County.</p>
+  <h2>Permit &amp; HOA Coordination</h2>
+  <p>We pull permits with the City of Boca Raton and coordinate with each community's architectural review board before work starts. No surprises, no stop-work orders, no HOA fines.</p>
+      `
+    },
+    {
+      slug: 'boca-raton-wind-mitigation-roofing',
+      title: 'Boca Raton Wind Mitigation Roofing | All Phase Construction USA',
+      description: 'Wind mitigation roofing in Boca Raton, FL. PBC wind-code compliant assemblies, roof-to-wall connections, and insurance credits. Free inspection.',
+      h1: 'Boca Raton Wind Mitigation Roofing',
+      intro: `A wind mitigation re-roof in Boca Raton is about more than surviving a storm — it's about unlocking insurance premium credits that can cover a meaningful portion of the re-roof over the policy lifetime. All Phase Construction USA builds every Boca Raton re-roof to maximize wind mitigation credits under Palm Beach County's 170+ mph design wind speed standard.`,
+      sections: `
+  <h2>What Wind Mitigation Actually Means</h2>
+  <p>Florida insurers grant premium credits for specific roof construction features: opening protection, roof-to-wall connection type, roof deck attachment schedule, roof covering class, and secondary water resistance. A properly documented re-roof can qualify a Boca Raton home for every one of those credits, which compound into a significant annual policy discount.</p>
+  <h2>The Five Wind Mitigation Credits We Target</h2>
+  <p>Roof deck attachment — we re-nail the deck to the current PBC fastening schedule before any new system goes on. Roof-to-wall connection — we verify or upgrade to clip, single wrap, or double wrap as site conditions allow. Roof covering — every system we install meets or exceeds the FBC HVHZ-equivalent class. Secondary water resistance — SBS-modified peel-and-stick underlayment on every re-roof. Opening protection — coordinated with impact window and door contractors when part of a larger envelope project.</p>
+  <h2>The Wind Mitigation Form</h2>
+  <p>On completion, we deliver a completed OIR-B1-1802 wind mitigation form to your insurer documenting every credit your new roof qualifies for. That single document is what unlocks the policy discount — without it, the credits don't exist.</p>
+  <h2>Landmarks in Our North Boca Wind Mitigation Service Area</h2>
+  <p>We service the Yamato Road corridor, Spanish River Boulevard artery, Boca Raton Airport (BCT) area, and El Rio Trail communities, along with the central Camino Real belt and the coastal A1A corridor.</p>
+      `
+    },
+    {
+      slug: 'palm-beach-county-roof-insurance-claim',
+      title: 'Palm Beach County Roof Insurance Claim | All Phase Construction USA',
+      description: 'Palm Beach County roof insurance claim assistance. Adjuster coordination, full documentation, wind mitigation credits. Licensed & insured.',
+      h1: 'Palm Beach County Roof Insurance Claim Assistance',
+      intro: `A Palm Beach County roof insurance claim is won or lost on documentation. All Phase Construction USA handles the full claim process for homeowners across Boca Raton, Delray Beach, Boynton Beach, and the surrounding PBC market — drone photography, adjuster coordination, scope review, and wind mitigation credit filing after the re-roof is complete.`,
+      sections: `
+  <h2>How a PBC Roof Claim Actually Works</h2>
+  <p>Most denied or underpaid roof claims come down to one issue: incomplete or missing documentation. The adjuster needs clear photographic evidence of storm damage, a documented timeline, and a scope of repair that matches the damage pattern. When any piece of that chain is missing, the claim gets reduced or denied.</p>
+  <h2>Our Claim Documentation Process</h2>
+  <p>Free inspection with drone and attic imaging on day one. Full photographic damage documentation, including close-ups of every affected area and wide shots for context. Scope of repair written to match the documented damage pattern, not a generic template. Direct coordination with your insurance adjuster during their site visit to ensure the scope we wrote and the scope they approve match.</p>
+  <h2>After the Claim Is Approved</h2>
+  <p>Once the claim is approved, we pull the Palm Beach County permit, execute the re-roof to current wind-code standards, and deliver a wind mitigation form to your insurer on completion. That last step typically unlocks premium credits that compound into a significant annual discount over the life of the policy.</p>
+  <h2>Communities We Serve</h2>
+  <p>Our insurance claim service area covers all of Palm Beach County — Boca Raton, Delray Beach, Highland Beach, Boynton Beach, and the west-side 55+ communities — with coordination for both named-storm and non-catastrophic claim events.</p>
+      `
+    }
+  ];
+
+  for (const p of priority4Pages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement</a></li>
+    <li><a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Priority 4: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
   for (const p of [...priority2Pages, ...priority3Pages]) {
     const dir = path.join(distDir, p.slug);
     fs.mkdirSync(dir, { recursive: true });
