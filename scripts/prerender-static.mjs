@@ -2405,17 +2405,17 @@ ${companyAuthorityFooter()}
 
   topRooferPages.forEach(({ path: pagePath, city }) => {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
-    const title = `Top 5 Roofer in ${city}, FL | All Phase USA`;
-    const description = `All Phase ranks among the top 5 roofers in ${city}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
+    const title = `Top 5 Roof Replacement Contractors in ${city}, FL | All Phase USA`;
+    const description = `All Phase ranks among the top 5 roof replacement contractors in ${city}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
 
     const content = `
 <section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
   <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
-    Top 5 Roofer in ${city}, Florida
+    Top 5 Roof Replacement Contractors in ${city}, Florida
   </h1>
 
   <p style="color: #374151; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">
-    All Phase Construction USA is proud to be recognized as one of the top 5 roofing contractors serving ${city}. With over 20 years of experience, dual licensing (CCC-1331464 & CGC-1526236), and an A+ BBB rating, we've earned the trust of thousands of South Florida homeowners and businesses.
+    All Phase Construction USA is proud to be recognized as one of the top 5 roof replacement contractors serving ${city}. With over 20 years of experience, dual licensing (CCC-1331464 & CGC-1526236), and an A+ BBB rating, we've earned the trust of thousands of South Florida homeowners and businesses.
   </p>
 
   <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
