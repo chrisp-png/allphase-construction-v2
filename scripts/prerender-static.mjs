@@ -4124,6 +4124,149 @@ ${companyAuthorityFooter()}
     }
   ];
 
+  // =====================================================================
+  // PRIORITY 2 — Delray Beach content pages (PR #9)
+  // Target: row 0 cols 4–11 (ranks 13–18) — entire Delray latitude band
+  // =====================================================================
+  const priority2Pages = [
+    {
+      slug: 'delray-beach-roof-replacement',
+      title: 'Delray Beach Roof Replacement | All Phase Construction USA',
+      description: 'Roof replacement in Delray Beach, FL. Tile, metal, and shingle systems built to Palm Beach County wind code. Licensed, insured, insurance-claim ready.',
+      h1: 'Roof Replacement in Delray Beach, FL',
+      intro: `Delray Beach roofs run the full range — historic bungalows off Atlantic Avenue, coastal estates along Gulf Stream, and mid-century single-family homes west to Morikami. All Phase Construction USA replaces every one of them to Palm Beach County wind-code standards with 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The Delray Beach Roofing Market</h2>
+  <p>Delray's housing stock spans nearly a century, which means we see everything from original clay barrel tile on Old School Square bungalows to aging architectural shingles on 1990s subdivisions west of I-95. Each era has its own failure pattern, and each deserves an assembly engineered for its specific site, not a one-size-fits-all quote.</p>
+  <h2>Neighborhoods &amp; Landmarks We Serve</h2>
+  <p>Our Delray Beach service area covers the Atlantic Avenue downtown commercial corridor, the Old School Square and Pineapple Grove Arts District historic belt, the Seagate and Gulf Stream coastal estate zone, and the west-side communities anchored by Morikami Park. Each of these areas carries its own HOA and architectural review considerations, and we coordinate approvals before any tear-off begins.</p>
+  <h2>Materials We Install in Delray Beach</h2>
+  <p>Clay and concrete tile for historic and Mediterranean-style homes. Standing-seam metal for coastal and modern builds. Architectural asphalt shingles for inland subdivisions where HOA guidelines require them. Every system carries a manufacturer warranty plus our workmanship guarantee.</p>
+  <h2>Insurance and Wind Mitigation</h2>
+  <p>Every Delray Beach re-roof we complete includes a wind mitigation form delivered to your insurer, typically unlocking credits for opening protection, roof-to-wall connections, and roof covering class.</p>
+      `
+    },
+    {
+      slug: 'delray-beach-tile-roof-contractor',
+      title: 'Delray Beach Tile Roof Contractor | All Phase Construction USA',
+      description: 'Clay and concrete tile roofing in Delray Beach, FL. Historic re-roofs, coastal tile installs, HOA-compliant. Palm Beach County wind-code certified.',
+      h1: 'Delray Beach Tile Roof Contractor',
+      intro: `Tile roofs define the Delray Beach aesthetic — from the historic barrel tile off Atlantic Avenue to the contemporary flat tile on Gulf Stream estates. All Phase Construction USA installs, replaces, and repairs clay and concrete tile systems built to Palm Beach County wind code with stainless battens and peel-and-stick underlayment.`,
+      sections: `
+  <h2>Why Tile Still Dominates Delray Beach</h2>
+  <p>Tile delivers a 50-year service life when installed correctly, matches the Mediterranean and Spanish Revival architecture the city is known for, and passes nearly every HOA architectural review in Delray. The failure point on most aging Delray tile roofs is not the tile itself — it's the underlayment below, which bakes brittle in 20–25 years. Our tile re-roofs always include a full underlayment replacement with SBS-modified peel-and-stick.</p>
+  <h2>Historic Delray Tile Work</h2>
+  <p>Homes around Old School Square and the Pineapple Grove Arts District often carry original barrel tile that can be salvaged and reset over new underlayment. We handle salvage-and-reset projects regularly and can source matching replacement tile for pieces that don't make the cut.</p>
+  <h2>Coastal Tile Installs</h2>
+  <p>On the coastal side — Seagate, Gulf Stream, and the oceanfront zone down to Atlantic Dunes Park — we install clay and concrete tile on stainless battens with 304-grade fasteners to eliminate corrosion risk in salt air.</p>
+  <h2>HOA Coordination</h2>
+  <p>We pull permits with the City of Delray Beach and coordinate with each community's architectural review board before tear-off. No surprises, no stop-work orders.</p>
+      `
+    },
+    {
+      slug: 'historic-delray-roofing',
+      title: 'Historic Delray Beach Roofing | All Phase Construction USA',
+      description: 'Historic district roofing in Delray Beach — Old School Square, Pineapple Grove, Atlantic Ave. Period-correct tile and shingle re-roofs, HOA approved.',
+      h1: 'Historic Delray Beach Roofing',
+      intro: `The historic core of Delray Beach — Old School Square, the Pineapple Grove Arts District, and the bungalow belt around Atlantic Avenue — requires roofing work that preserves period-correct aesthetics while meeting modern Palm Beach County wind-code requirements. All Phase Construction USA has been the roofing contractor local homeowners trust for exactly that combination.</p>`,
+      sections: `
+  <h2>The Historic Delray Roofing Challenge</h2>
+  <p>Historic bungalows and Mediterranean Revival homes in the Delray core were built with original clay barrel tile or wood shingle systems. Modern code requires a fastening schedule and underlayment assembly that did not exist when these homes were built, and architectural review boards require a visual match to the original. Bridging that gap is what we do.</p>
+  <h2>Period-Correct Materials</h2>
+  <p>We source salvaged clay barrel tile for true historic matches, work with manufacturers producing period-accurate profiles for new installs, and specify architectural shingles in colors and patterns approved by the historic review board when tile is not on the original specification.</p>
+  <h2>Landmarks in Our Historic Service Area</h2>
+  <p>Old School Square is the central anchor for the Delray historic district, with Pineapple Grove Arts District extending north and the Atlantic Avenue commercial corridor running through the core. We work the residential streets off all three, from Swinton Avenue east to the Intracoastal.</p>
+  <h2>Architectural Review Board Coordination</h2>
+  <p>Every historic project starts with a submittal to the Delray Beach Historic Preservation Board. We handle the paperwork, the sample boards, and the approval process so your re-roof gets greenlit without delay.</p>
+      `
+    }
+  ];
+
+  // =====================================================================
+  // PRIORITY 3 — West Boca Raton content pages (PR #9)
+  // Target: rows 0–2 cols 0–3 (ranks 5–10) — 441/Glades corridor
+  // =====================================================================
+  const priority3Pages = [
+    {
+      slug: 'west-boca-raton-roof-replacement',
+      title: 'West Boca Raton Roof Replacement | All Phase Construction USA',
+      description: 'Roof replacement in West Boca Raton, FL. Serving Mission Bay, Boca Del Mar, Sandalfoot Cove, and the 441/Glades corridor. PBC wind-code compliant.',
+      h1: 'Roof Replacement in West Boca Raton, FL',
+      intro: `West Boca Raton — the corridor west of Florida's Turnpike along Glades Road and State Road 7/441 — is home to one of Palm Beach County's largest concentrations of 1980s and 1990s single-family subdivisions and 55+ communities. All Phase Construction USA replaces roofs across the entire west-side market with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The West Boca Roofing Market</h2>
+  <p>Most West Boca subdivisions were built in a 20-year window between the late 1970s and the late 1990s, which means the bulk of the housing stock is now 25–45 years old and sitting squarely in the re-roof window. Original concrete tile and architectural shingle systems installed in that era are reaching end-of-life, and the underlayment below has almost universally failed regardless of visible tile condition.</p>
+  <h2>Neighborhoods &amp; Landmarks We Serve</h2>
+  <p>Our West Boca service area covers the Mission Bay community anchored by Mission Bay Plaza, the Boca Del Mar single-family belt, the Sandalfoot Cove community west of 441, and the Glades Road commercial corridor west of the Turnpike. South County Regional Park and Burt Aaronson Park sit at the far western edge of our service area and anchor the geographic reach.</p>
+  <h2>Systems We Install in West Boca</h2>
+  <p>Concrete tile replacements with full underlayment tear-off and stainless battens. Architectural asphalt shingles for subdivisions whose HOAs require shingle-to-shingle replacement. Standing-seam metal for homeowners who want the longest-life option available in Palm Beach County.</p>
+  <h2>HOA &amp; Permit Coordination</h2>
+  <p>Every West Boca subdivision carries its own architectural review board with its own color palette, tile profile, and shingle approval list. We coordinate submittals with the HOA and pull permits with Palm Beach County before tear-off begins.</p>
+      `
+    },
+    {
+      slug: 'kings-point-boca-roofing-contractor',
+      title: 'Kings Point Boca Roofing Contractor | All Phase Construction USA',
+      description: 'Kings Point and West Boca 55+ community roofing. Condo, villa, and single-family re-roofs coordinated with association approval. PBC wind-code certified.',
+      h1: 'Kings Point Boca Roofing Contractor',
+      intro: `Kings Point and the surrounding 55+ communities of West Boca Raton make up one of the largest concentrated roofing markets in Palm Beach County. Villa-style and condominium roofing work here requires tight association coordination, and All Phase Construction USA handles that end-to-end while delivering re-roofs built to Palm Beach County wind code.`,
+      sections: `
+  <h2>The 55+ Community Roofing Challenge</h2>
+  <p>Villa and patio-home roofing in Kings Point and similar West Boca communities requires coordinating with a community association on color match, tile profile, scheduling, and resident access. The work itself is straightforward; the coordination is where most contractors fall down. We handle association paperwork, scheduling windows, and resident notification as a standard part of every project.</p>
+  <h2>Assemblies We Install</h2>
+  <p>Concrete tile with full underlayment replacement on villa-style homes. Modified bitumen for flat and low-slope sections. Architectural shingles where association guidelines specify shingle-to-shingle replacement.</p>
+  <h2>Service Area Landmarks</h2>
+  <p>Our West Boca service area includes the Mission Bay Plaza commercial anchor, South County Regional Park at the western edge, and the entire Glades Road corridor west of Florida's Turnpike. We work Sandalfoot Cove and Boca Del Mar communities regularly alongside Kings Point.</p>
+  <h2>Insurance Claim Support</h2>
+  <p>Many West Boca 55+ residents file insurance claims after hurricane events. We provide full claim documentation, work directly with adjusters, and deliver a wind mitigation form on completion to unlock premium credits.</p>
+      `
+    },
+    {
+      slug: 'boca-raton-tile-re-roof',
+      title: 'Boca Raton Tile Re-Roof | All Phase Construction USA',
+      description: 'Tile re-roofing in Boca Raton, FL. Clay and concrete tile, full underlayment replacement, PBC wind-code compliant. Free inspection, insurance-ready.',
+      h1: 'Boca Raton Tile Re-Roof',
+      intro: `A Boca Raton tile re-roof is almost never about the tile itself — it's about the underlayment underneath, which bakes brittle in 20–25 years and begins leaking long before the tile shows visible damage. All Phase Construction USA replaces tile roofs across Boca Raton with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens for coastal-grade longevity.`,
+      sections: `
+  <h2>Why Tile Re-Roofs Matter in Boca Raton</h2>
+  <p>Clay and concrete tile carry a 50-year service life, but the underlayment below them is typically rated for 20–25 years. That gap is why Boca Raton homeowners often find themselves with a "good-looking" roof that is actively leaking. A re-roof recycles the tile where possible, replaces the underlayment entirely, and resets the whole system for another 25 years of service.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection first. Tile removal and on-site storage where tile is salvageable. Full underlayment tear-off down to the deck. Deck repair and re-nailing to current PBC fastening schedule. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners, with new tile sourced where originals are cracked or chipped.</p>
+  <h2>Neighborhoods We Serve</h2>
+  <p>We handle tile re-roofs across all of Boca Raton — the central Camino Real belt, the northern Yamato Road corridor, the western communities around Boca Del Mar and Sandalfoot Cove, and the coastal A1A corridor. Each area has its own HOA and architectural review considerations, and we coordinate every submittal before work begins.</p>
+  <h2>Warranty &amp; Insurance</h2>
+  <p>Every tile re-roof includes a manufacturer underlayment warranty, our workmanship guarantee, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    }
+  ];
+
+  for (const p of [...priority2Pages, ...priority3Pages]) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement</a></li>
+    <li><a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Priority 2/3: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
   for (const p of priority1Pages) {
     const dir = path.join(distDir, p.slug);
     fs.mkdirSync(dir, { recursive: true });
