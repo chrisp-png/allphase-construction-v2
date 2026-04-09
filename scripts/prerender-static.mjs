@@ -104,7 +104,23 @@ function buildLocationSeo(location) {
 /**
  * Company Authority Footer - 250+ words of E-E-A-T reinforcement
  */
-function companyAuthorityFooter() {
+function companyAuthorityFooter(county = null) {
+  // county: 'Broward' | 'Palm Beach' | null (regional / dual-county pages)
+  const isBroward = county === 'Broward';
+  const isPalmBeach = county === 'Palm Beach';
+
+  const complianceHeading = isBroward
+    ? 'HVHZ Certification & Hurricane Compliance'
+    : isPalmBeach
+      ? 'Palm Beach County Wind-Code Compliance'
+      : 'Hurricane-Zone Compliance Across South Florida';
+
+  const complianceParagraph = isBroward
+    ? `We specialize in High Velocity Hurricane Zone (HVHZ) compliance throughout Broward County. Every installation meets or exceeds the strictest wind rating requirements, with enhanced fastening schedules, impact-rated materials, and roof-to-wall connections engineered to withstand 175+ mph wind speeds. Our HVHZ expertise ensures your roof passes building department inspections and protects your property during severe weather.`
+    : isPalmBeach
+      ? `We install every Palm Beach County roof to the county's wind-code requirements, with enhanced fastening schedules, impact-rated materials, and roof-to-wall connections engineered for 170+ mph design wind speeds. Our licensed team voluntarily builds to HVHZ specification where it strengthens the assembly, ensuring your new roof passes Palm Beach County building department inspections and performs through severe weather.`
+      : `We build to High Velocity Hurricane Zone (HVHZ) standards in Broward County and to Palm Beach County wind-code requirements throughout Palm Beach County. Every installation meets or exceeds the strictest applicable wind rating, with enhanced fastening schedules, impact-rated materials, and roof-to-wall connections engineered for South Florida's severe weather.`;
+
   return `
 <section id="company-authority-footer" style="margin-top: 3rem; padding: 2rem; background: #f9fafb; border-top: 2px solid #e5e7eb;">
   <h2 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">About All Phase Construction USA</h2>
@@ -118,9 +134,9 @@ function companyAuthorityFooter() {
     As a Dual-Licensed Roofing Specialist, we bring structural engineering oversight to every roofing project. Our dual licensing means we understand not only roofing systems, materials, and installation techniques (CCC license), but also structural assessment, load-bearing calculations, and building code compliance (CGC license). This combination ensures your roof is engineered as an integral part of your home's hurricane protection system.
   </p>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">HVHZ Certification & Hurricane Compliance</h3>
+  <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">${complianceHeading}</h3>
   <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
-    We specialize in High Velocity Hurricane Zone (HVHZ) compliance throughout South Florida. Every installation meets or exceeds the strictest wind rating requirements, with enhanced fastening schedules, impact-rated materials, and roof-to-wall connections engineered to withstand 175+ mph wind speeds. Our HVHZ expertise ensures your roof passes building department inspections and protects your property during severe weather.
+    ${complianceParagraph}
   </p>
 
   <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Complete Roofing Services</h3>
@@ -262,7 +278,7 @@ function generateDeerfieldBeachHQContent() {
     <li><a href="/roof-replacement-process">Roof Replacement in Deerfield Beach, FL</a></li>
   </ul>
 </div>
-  ${companyAuthorityFooter()}
+  ${companyAuthorityFooter('Broward')}
 </section>
 `.trim();
 }
@@ -700,7 +716,7 @@ function generateBocaRatonServiceHubContent() {
     <li><a href="/roof-replacement-process">Roof Replacement in Boca Raton, FL</a></li>
   </ul>
 </div>
-  ${companyAuthorityFooter()}
+  ${companyAuthorityFooter('Palm Beach')}
 </section>
 `.trim();
 }
@@ -975,7 +991,7 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
   </ul>
 </div>
-  ${companyAuthorityFooter()}
+  ${companyAuthorityFooter(data.county === 'Broward County' ? 'Broward' : 'Palm Beach')}
 </section>
 `.trim();
 }
@@ -1058,7 +1074,7 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
   </ul>
 </div>
-  ${companyAuthorityFooter()}
+  ${companyAuthorityFooter(isBroward ? 'Broward' : 'Palm Beach')}
 </section>
 `.trim();
 }
