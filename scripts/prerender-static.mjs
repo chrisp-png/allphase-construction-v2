@@ -2210,7 +2210,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/blog', title: 'Roofing Insights & Industry News' },
     { path: '/contact', title: 'Contact Our Roofing Team' },
     { path: '/about-us', title: 'About All Phase Construction' },
-    { path: '/roof-cost-calculator', title: 'Roof Cost Calculator' },
+    { path: '/roof-cost-calculator', title: 'South Florida Roof Cost Calculator' },
     { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
     { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' },
     { path: '/broward-county-roof-replacement-guide', title: 'Broward County Roof Replacement Guide' },
