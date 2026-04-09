@@ -75,7 +75,7 @@ function buildLocationSeo(location) {
 
   // Generate defaults from templates (POST-April-6 pivot: roof replacement positioning)
   const defaultTitle = `Roof Replacement ${city}, FL | All Phase USA`;
-  const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. ${complianceLanguage}, 2,500+ projects. Free estimate. (754) 227-5605.`;
+  const defaultDescription = `Roof replacement in ${city}, FL. Tile, metal, shingle & flat roof replacement. ${complianceLanguage}, 2,500+ projects. Free estimate. (754) 227-5605.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 
@@ -276,7 +276,7 @@ function generateBocaRatonServiceHubContent() {
   <!-- SECTION 1: HERO (Dark Background) -->
   <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; padding: 4rem 2rem; margin: -2rem -1rem 3rem; border-radius: 0;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <h1 style="color: white; font-size: 2.75rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.1;">Roofer in Boca Raton FL</h1>
+      <h1 style="color: white; font-size: 2.75rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.1;">Roof Replacement in Boca Raton, FL</h1>
 
       <h2 style="color: #e5e7eb; font-size: 1.35rem; font-weight: 400; margin-bottom: 2rem; line-height: 1.4; opacity: 0.95;">
         All Phase Construction USA | Roofing Contractor Serving Boca Raton, Palm Beach, and Broward County
@@ -305,7 +305,7 @@ function generateBocaRatonServiceHubContent() {
   <!-- SECTION 2: TRUST BLOCK (Light Background Contrast) -->
   <div style="background: #f9fafb; padding: 3.5rem 2rem; margin: 3rem -1rem; border-left: 4px solid #dc2626;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">Licensed Florida Roofing Contractor in Boca Raton</h2>
+      <h2 style="color: #111827; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">Licensed Florida Roof Replacement Contractor in Boca Raton</h2>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
         <!-- Benefit Block 1 -->
@@ -494,7 +494,7 @@ function generateBocaRatonServiceHubContent() {
   <!-- SECTION 10: ROOFING CONTRACTOR - WHAT WE DO (Dark Premium Background) -->
   <div style="background: linear-gradient(135deg, #1f1f1f 0%, #0a0a0a 100%); color: white; padding: 4rem 2rem; margin: 4rem -1rem;">
     <div style="max-width: 900px; margin: 0 auto;">
-      <h2 style="color: white; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Roofing Contractor in Boca Raton FL: What We Do</h2>
+      <h2 style="color: white; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Roof Replacement in Boca Raton, FL: What We Do</h2>
 
       <p style="max-width: 750px; color: #d1d5db; font-size: 1.05rem; line-height: 1.75; margin-bottom: 3.5rem;">
         We deliver roofing services that are permit-ready, inspection-ready, and storm-ready. Our work includes complete roof replacements, targeted repairs, and specialized commercial roofing solutions designed for South Florida conditions.
@@ -902,16 +902,16 @@ const CITY_UNIQUE_CONTENT = {
  * Generate ENHANCED service hub content for cities with unique data.
  * Produces 1,200+ words of city-specific content instead of the generic 700 words.
  */
-function generateEnhancedServiceHubContent(cityName, citySlug) {
+function generateEnhancedServiceHubContent(cityName, citySlug, location = null) {
   const data = CITY_UNIQUE_CONTENT[citySlug];
-  if (!data) return generateServiceHubContent(cityName, citySlug);
+  if (!data) return generateServiceHubContent(cityName, citySlug, location);
 
   const isBroward = data.county === 'Broward County';
   const complianceLabel = isBroward ? 'HVHZ-compliant' : 'wind-code compliant';
 
   return `
 <section id="seo-static-content">
-  <h1>${cityName} Roofing Contractor | All Phase Construction USA</h1>
+  <h1>Roof Replacement in ${cityName}, FL | All Phase Construction USA</h1>
 
   <p><strong>All Phase Construction USA</strong> provides professional roofing services throughout ${cityName}, ${data.county}, Florida. Dual-licensed as both a State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring structural engineering expertise and ${complianceLabel} installation quality to every ${cityName} roofing project — from emergency repairs to complete roof replacements.</p>
 
@@ -984,12 +984,21 @@ function generateEnhancedServiceHubContent(cityName, citySlug) {
  * SILO 1: Service Hub Page - /locations/[city]
  * Broad roofing authority with links to Repair + Inspection spokes
  */
-function generateServiceHubContent(cityName, citySlug) {
+function generateServiceHubContent(cityName, citySlug, location = null) {
+  const isBroward = location && location.county === 'Broward';
+  const complianceLabel = isBroward ? 'HVHZ-compliant' : 'wind-code compliant';
+  const complianceCert = isBroward ? 'HVHZ certification' : 'Palm Beach County wind-code compliance';
+  const complianceSentence = isBroward
+    ? `Every installation in ${cityName} meets High Velocity Hurricane Zone (HVHZ) compliance with 175+ mph wind ratings and enhanced fastening schedules.`
+    : `Every installation in ${cityName} is built to Palm Beach County wind-code requirements with 170+ mph design wind speeds and enhanced fastening schedules.`;
+  const replacementSentence = isBroward
+    ? 'Every installation includes manufacturer-backed warranties, building code compliance, and HVHZ certification where required.'
+    : 'Every installation includes manufacturer-backed warranties, building code compliance, and Palm Beach County wind-code certification.';
   return `
 <section id="seo-static-content">
-  <h1>${cityName} Roofing Services | All Phase Construction USA</h1>
+  <h1>Roof Replacement in ${cityName}, FL | All Phase Construction USA</h1>
 
-  <p><strong>Dispatched from our Deerfield Beach HQ to provide rapid roofing services in ${cityName}</strong>, All Phase Construction USA delivers comprehensive roofing solutions with dual-licensed expertise (CCC-1331464 & CGC-1526236) and HVHZ certification to every residential and commercial project.</p>
+  <p><strong>Dispatched from our Deerfield Beach HQ to provide rapid roof replacement and repair services in ${cityName}</strong>, All Phase Construction USA delivers comprehensive roofing solutions with dual-licensed expertise (CCC-1331464 & CGC-1526236) and ${complianceCert} on every residential and commercial project.</p>
 
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Need Immediate Help in ${cityName}?</h3>
@@ -1006,7 +1015,7 @@ function generateServiceHubContent(cityName, citySlug) {
 
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>Dual-Licensed Authority:</strong> We hold both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses. This means we bring structural engineering expertise that standard roofers cannot match.</li>
-    <li><strong>HVHZ Certified:</strong> Every installation in ${cityName} meets High Velocity Hurricane Zone compliance with 175+ mph wind ratings and enhanced fastening schedules.</li>
+    <li><strong>${isBroward ? 'HVHZ Certified' : 'Wind-Code Compliant'}:</strong> ${complianceSentence}</li>
     <li><strong>Local Deerfield Beach Headquarters:</strong> Our central South Florida location enables same-day inspection availability and rapid emergency response throughout ${cityName}.</li>
     <li><strong>Owner-Operator Accountability:</strong> Direct contractor involvement on every ${cityName} project ensures precision and quality that large franchise operations cannot match.</li>
   </ul>
@@ -1021,7 +1030,7 @@ function generateServiceHubContent(cityName, citySlug) {
   <p>Our comprehensive 21-point roof inspection covers every critical component including underlayment condition, flashing integrity, ventilation adequacy, and structural soundness. Perfect for pre-purchase evaluations, insurance documentation, and maintenance planning. <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Schedule a ${cityName} roof inspection</a>.</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Roof Replacement Systems</h3>
-  <p>We install all major roofing systems in ${cityName} including architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat roofing. Every installation includes manufacturer-backed warranties, building code compliance, and HVHZ certification where required.</p>
+  <p>We install all major roof replacement systems in ${cityName} including architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat roofing. ${replacementSentence}</p>
 
   <h2>Serving ${cityName} from Our Deerfield Beach Headquarters</h2>
   <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing consistent, reliable roofing services throughout ${cityName} and surrounding South Florida communities. Our central location enables rapid response times and efficient project coordination across Broward and Palm Beach Counties.</p>
@@ -1164,7 +1173,7 @@ function generateRoofRepairContent(cityName, citySlug) {
 <div class="seo-service-links">
   <h2>More Roofing Services in ${cityName}, FL</h2>
   <ul>
-    <li><a href="/locations/${citySlug}">Roofing Contractor in ${cityName}, FL</a></li>
+    <li><a href="/locations/${citySlug}">Roof Replacement in ${cityName}, FL</a></li>
     <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
   </ul>
 </div>
@@ -1323,7 +1332,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
 <div class="seo-service-links">
   <h2>More Roofing Services in ${cityName}, FL</h2>
   <ul>
-    <li><a href="/locations/${citySlug}">Roofing Contractor in ${cityName}, FL</a></li>
+    <li><a href="/locations/${citySlug}">Roof Replacement in ${cityName}, FL</a></li>
     <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
   </ul>
 </div>
@@ -1420,8 +1429,8 @@ function defaultServicePageContent(pageTitle) {
 function homepageContent() {
   return `
 <section id="seo-static-content">
-  <h1>Roofing Contractor | Broward & Palm Beach | All Phase USA</h1>
-  <p><strong>Your roof protects everything you own. Make sure it's built to last.</strong> All Phase Construction USA is a dual-licensed roofing contractor serving Broward and Palm Beach County. Every roof we install meets HVHZ hurricane-zone standards — built for South Florida's toughest weather.</p>
+  <h1>Roof Replacement in Broward & Palm Beach County | All Phase USA</h1>
+  <p><strong>Your roof protects everything you own. Make sure it's built to last.</strong> All Phase Construction USA is a dual-licensed roof replacement contractor serving Broward and Palm Beach County. Every roof we install meets HVHZ hurricane-zone standards in Broward and Palm Beach County wind-code requirements — built for South Florida's toughest weather.</p>
 
   <h2>Our Edge</h2>
   <p>Here's what makes us different from other roofers:</p>
@@ -1661,6 +1670,26 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     /<meta property="og:url" content=".*?" \/>/,
     `<meta property="og:url" content="${canonical}" />`
   );
+
+  // Replace Twitter Card tags (was previously leaking index.html hardcoded values)
+  if (/<meta name="twitter:title"[^>]*>/i.test(html)) {
+    html = html.replace(
+      /<meta name="twitter:title"[^>]*>/i,
+      `<meta name="twitter:title" content="${title}" />`
+    );
+  } else {
+    html = html.replace('</head>', `  <meta name="twitter:title" content="${title}" />\n  </head>`);
+  }
+  if (description) {
+    if (/<meta name="twitter:description"[^>]*>/i.test(html)) {
+      html = html.replace(
+        /<meta name="twitter:description"[^>]*>/i,
+        `<meta name="twitter:description" content="${description}" />`
+      );
+    } else {
+      html = html.replace('</head>', `  <meta name="twitter:description" content="${description}" />\n  </head>`);
+    }
+  }
 
   // Add JSON-LD schema if provided (before </head>)
   // Always inject base RoofingContractor schema on every prerendered page
@@ -1929,8 +1958,8 @@ function generateStaticFiles() {
   // Homepage uses explicit metadata (NOT from getSEOMetadata fallback)
   // This ensures title is controlled by index.html + runtime metadata
   const homeHTML = createHTMLTemplate(
-    'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-        'HVHZ-certified, dual-licensed roofer in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Free inspections. Call (754) 227-5605.',
+    'Roof Replacement in Broward & Palm Beach County | All Phase USA',
+        'Roof replacement in Broward & Palm Beach County. Dual-licensed, HVHZ-certified. Tile, metal, shingle, flat & commercial. Free estimates. (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
     {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
@@ -2675,9 +2704,9 @@ ${companyAuthorityFooter()}
       hubContent = generateDeerfieldBeachHQContent();
       hubSchema = generateDeerfieldBeachSchema();
     } else if (CITY_UNIQUE_CONTENT[slug]) {
-      hubContent = generateEnhancedServiceHubContent(city, slug);
+      hubContent = generateEnhancedServiceHubContent(city, slug, location);
     } else {
-      hubContent = generateServiceHubContent(city, slug);
+      hubContent = generateServiceHubContent(city, slug, location);
     }
 
     // Check CITY_PAGE_SCHEMAS for enhanced schema (RoofingContractor + FAQPage)
