@@ -295,11 +295,11 @@ function generateBocaRatonServiceHubContent() {
       <h1 style="color: white; font-size: 2.75rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.1;">Roof Replacement in Boca Raton, FL</h1>
 
       <h2 style="color: #e5e7eb; font-size: 1.35rem; font-weight: 400; margin-bottom: 2rem; line-height: 1.4; opacity: 0.95;">
-        All Phase Construction USA | Roofing Contractor Serving Boca Raton, Palm Beach, and Broward County
+        All Phase Construction USA | Roof Replacement & Repair in Boca Raton, Palm Beach County, FL
       </h2>
 
       <p style="max-width: 750px; color: #d1d5db; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem;">
-        If you're searching for a roofer in Boca Raton FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That's what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community.
+        If you're pricing a roof replacement in Boca Raton, FL, you want one thing: a roof that passes inspection, survives storms, and does not turn into a "surprise leak" two months later. That's what we build. Our commitment to quality, customer satisfaction, and safety standards sets us apart as a trusted member of the local community.
       </p>
 
       <!-- Premium CTA Row -->
@@ -638,7 +638,7 @@ function generateBocaRatonServiceHubContent() {
   <h3>Warranties and certifications</h3>
   <p>Manufacturer certifications can unlock stronger warranty options when the full system is installed to spec. That is one reason certifications matter, beyond the logo.</p>
   <h2>Roof cost in Boca Raton: what drives price</h2>
-  <p>Roof pricing in South Florida depends on the roof design and the code requirements, not just square footage. As a leading roofer in Boca Raton FL, we are committed to transparent pricing, ensuring you receive clear and upfront cost information for your roofing project. A professional quote should always be itemized and specify material brands, labor costs, permit fees, and timelines so you know exactly what to expect.</p>
+  <p>Roof pricing in South Florida depends on the roof design and the code requirements, not just square footage. As a leading roof replacement contractor in Boca Raton, FL, we are committed to transparent pricing, ensuring you receive clear and upfront cost information for your roofing project. A professional quote should always be itemized and specify material brands, labor costs, permit fees, and timelines so you know exactly what to expect.</p>
   <h3>Big drivers of roof cost:</h3>
   <ul>
     <li>Roof size and pitch</li>
@@ -692,7 +692,7 @@ function generateBocaRatonServiceHubContent() {
   <h3>How fast can you inspect a leak?</h3>
   <p>We prioritize active leaks and storm-related damage. Call and we will schedule the fastest available inspection slot.</p>
   <h2>CTA</h2>
-  <p><strong>If you need a roofer in Boca Raton FL, start with an inspection that shows you what is happening and what it costs to fix correctly.</strong></p>
+  <p><strong>If you're weighing roof replacement in Boca Raton, FL, start with an inspection that shows you what is happening and what it costs to fix correctly.</strong></p>
   <p><strong>Call All Phase Construction USA 24/7: (754) 227-5605</strong></p>
 
   <h2>Additional Resources for Boca Raton Roofing</h2>
