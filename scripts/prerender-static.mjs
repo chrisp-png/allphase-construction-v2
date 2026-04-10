@@ -989,7 +989,13 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
     <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
-    ${citySlug === 'boynton-beach' ? `
+    ${citySlug === 'boca-raton' ? `
+    <li><a href="/boca-raton-commercial-roofing">Commercial Roofing</a></li>
+    <li><a href="/boca-raton-metal-roofing">Metal Roofing</a></li>
+    <li><a href="/boca-raton-tile-re-roof">Tile Re-Roof</a></li>
+    <li><a href="/coastal-boca-raton-roofing-contractor">Coastal Roofing</a></li>
+    <li><a href="/boca-raton-wind-mitigation-roofing">Wind Mitigation Roofing</a></li>
+    ` : ''}${citySlug === 'boynton-beach' ? `
     <li><a href="/boynton-beach-oceanfront-roofing">Boynton Beach Oceanfront Roofing</a></li>
     <li><a href="/boynton-beach-55-plus-community-roofing">55+ Community Roofing</a></li>
     <li><a href="/boynton-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
@@ -4685,6 +4691,79 @@ ${companyAuthorityFooter()}
       `
     }
   ];
+
+  // =====================================================================
+  // BOCA RATON — Commercial + Metal roofing (final two Boca pages)
+  // =====================================================================
+  const bocaFinalPages = [
+    {
+      slug: 'boca-raton-commercial-roofing',
+      title: 'Boca Raton Commercial Roofing | All Phase Construction USA',
+      description: 'Commercial roofing in Boca Raton, FL. Flat roof replacement and repair for Yamato Road, Glades Road, and Town Center corridors. Dual licensed, PBC wind-code compliant.',
+      h1: 'Boca Raton Commercial Roofing',
+      intro: `Boca Raton's commercial corridors — Yamato Road, Glades Road, Federal Highway, and the Town Center district — generate steady demand for flat roof replacement and repair on office parks, retail centers, medical buildings, and mixed-use structures. All Phase Construction USA replaces and repairs commercial roof systems across Boca Raton with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
+      sections: `
+  <h2>The Boca Raton Commercial Roofing Market</h2>
+  <p>Boca Raton's commercial building stock grew rapidly in the 1980s and 1990s along the Yamato Road and Glades Road corridors, where office parks, tech campuses, and retail centers were built with flat roof systems that are now 30–40 years old. Many have been patched and coated repeatedly rather than replaced, creating layered assemblies that trap moisture and make leak sourcing nearly impossible. The Arvida Park of Commerce, Boca Corporate Center, and the medical office cluster along Glades Road west of I-95 all fall into this category.</p>
+  <h2>Commercial Landmarks We Serve</h2>
+  <p>The Yamato Road corridor from I-95 west to the Turnpike — one of the densest commercial roof footprints in PBC. The Glades Road office and retail belt between I-95 and 441. Federal Highway's mixed-use corridor through central Boca. The Boca Raton Innovation Campus (formerly IBM) area. Retail and restaurant parcels surrounding the Town Center at Boca Raton district.</p>
+  <h2>Systems We Install</h2>
+  <p>TPO single-ply membrane for energy efficiency, reflectivity, and clean weld seams. Fully adhered modified-bitumen for puncture resistance on high-traffic rooftops with HVAC equipment. Multi-ply built-up systems for heavy-duty applications where maximum durability is required. Every commercial system includes tapered insulation for positive drainage and wind-rated edge metal per PBC code.</p>
+  <h2>Dual Licensing Advantage</h2>
+  <p>Commercial flat roof replacements on aging Boca Raton structures frequently uncover parapet deterioration, fascia rot, or structural deck damage. Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) means we handle both the structural repair and the roof system under one permit, one crew, and one project timeline — no subcontractor coordination delays.</p>
+  <h2>Phased Replacement for Occupied Buildings</h2>
+  <p>We schedule tear-off and installation in sections to keep ground-floor tenants operational. Multi-tenant retail centers and occupied office buildings get a phased plan that isolates the work zone and maintains parking access throughout the project.</p>
+      `
+    },
+    {
+      slug: 'boca-raton-metal-roofing',
+      title: 'Boca Raton Metal Roofing | All Phase Construction USA',
+      description: 'Metal roofing in Boca Raton, FL. Standing-seam aluminum and steel for residential and commercial. Salt-rated coastal options. PBC wind-code compliant.',
+      h1: 'Metal Roofing in Boca Raton, FL',
+      intro: `Metal roofing is the fastest-growing category in the Boca Raton market as homeowners and commercial property owners look for the longest-life, lowest-maintenance option available under Palm Beach County wind code. All Phase Construction USA installs standing-seam aluminum and steel roof systems across Boca Raton — from coastal A1A estates to inland subdivisions and commercial corridors.`,
+      sections: `
+  <h2>Why Metal Is Gaining Ground in Boca Raton</h2>
+  <p>Tile has dominated Boca Raton for decades, and it remains a strong option — but metal delivers a 40–50 year service life with no underlayment replacement cycle, no cracked tiles, and no re-nailing. For homeowners facing a second tile underlayment replacement in 25 years, the lifetime economics of metal often win. For coastal properties where salt corrosion is the primary failure mode, aluminum standing-seam eliminates the corrosion variable entirely.</p>
+  <h2>Residential Metal Roofing</h2>
+  <p>Standing-seam aluminum is the premium residential choice for Boca Raton — concealed fasteners, clean lines, and zero corrosion risk in the coastal zone. Steel standing-seam with Kynar/PVDF finish is the cost-effective alternative for inland homes where salt exposure is lower. Both systems carry the highest wind ratings available under PBC code and qualify for maximum wind mitigation insurance credits.</p>
+  <h2>Coastal Metal Roofing</h2>
+  <p>On the A1A corridor, along the Intracoastal, and through Highland Beach, aluminum standing-seam is the only metal option we recommend. Steel — even galvalume-coated — will show corrosion in the salt zone within 5–10 years. Aluminum is salt-proof with a 40+ year service life and requires zero maintenance after installation. We pair it with stainless flashings and aluminum edge metal for a fully non-ferrous envelope.</p>
+  <h2>Commercial Metal Roofing</h2>
+  <p>Standing-seam metal on commercial structures offers long-span capability, energy-efficient reflectivity, and a service life that outlasts TPO and modified-bitumen by 15–20 years. We install commercial metal systems on office buildings, retail centers, and mixed-use structures along the Yamato Road, Glades Road, and Federal Highway corridors.</p>
+  <h2>HOA Approval</h2>
+  <p>Standing-seam metal is increasingly accepted by Boca Raton HOAs, particularly in low-profile configurations and colors that approximate the look of flat tile. We handle architectural review submittals and provide physical finish samples for board approval before any material is ordered.</p>
+      `
+    }
+  ];
+
+  for (const p of bocaFinalPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement</a></li>
+    <li><a href="/coastal-boca-raton-roofing-contractor" style="color: #dc2626; text-decoration: underline;">Coastal Boca Raton Roofing</a></li>
+    <li><a href="/boca-raton-tile-re-roof" style="color: #dc2626; text-decoration: underline;">Boca Raton Tile Re-Roof</a></li>
+    <li><a href="/boca-raton-wind-mitigation-roofing" style="color: #dc2626; text-decoration: underline;">Boca Raton Wind Mitigation</a></li>
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Boca Final: ${p.slug}/index.html`);
+    totalPages++;
+  }
 
   for (const p of wellingtonPages) {
     const dir = path.join(distDir, p.slug);
