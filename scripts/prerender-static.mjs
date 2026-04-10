@@ -4366,12 +4366,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Priority 4: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -4487,12 +4487,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Boynton Beach Geo: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -4609,12 +4609,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Lake Worth Geo: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5084,12 +5084,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered St. Andrews: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5111,12 +5111,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Broward')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered LP/Pompano Geo: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5138,12 +5138,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter(p.county)}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered HOA Community: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5167,12 +5167,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Broward')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Broward Commercial: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5196,12 +5196,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Boca Final: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5225,12 +5225,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Wellington Geo: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5347,12 +5347,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered West Palm Beach Geo: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5376,12 +5376,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Priority 2/3: ${p.slug}/index.html`);
     totalPages++;
   }
@@ -5403,12 +5403,12 @@ ${companyAuthorityFooter()}
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
     `;
-    fs.writeFileSync(path.join(dir, 'index.html'), markStaticOnly(createHTMLTemplate(
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
       p.title,
       p.description,
       `https://allphaseconstructionfl.com/${p.slug}`,
       content
-    )));
+    ));
     console.log(`✅ Prerendered Priority 1: ${p.slug}/index.html`);
     totalPages++;
   }
