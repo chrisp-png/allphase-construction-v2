@@ -434,6 +434,72 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /locations/greenacres/best-roofers-greenacres /locations/greenacres/best-roofers-greenacres/index.html 200!
 /locations/lake-worth-beach/best-roofers-lake-worth-beach /locations/lake-worth-beach/best-roofers-lake-worth-beach/index.html 200!
 
+# ======================================================================
+# GEO-RELEVANCE & PRIORITY PAGE REWRITES
+# Same pattern as best-roofers: force-serve prerendered index.html
+# at clean URLs so the SPA fallback doesn't catch them first.
+# ======================================================================
+# Priority 1 — Coastal NE Boca / Highland Beach
+/highland-beach-roof-replacement /highland-beach-roof-replacement/index.html 200!
+/coastal-boca-raton-roofing-contractor /coastal-boca-raton-roofing-contractor/index.html 200!
+/oceanfront-roof-replacement-palm-beach-county /oceanfront-roof-replacement-palm-beach-county/index.html 200!
+# Priority 2 — Delray Beach
+/delray-beach-roof-replacement /delray-beach-roof-replacement/index.html 200!
+/delray-beach-tile-roof-contractor /delray-beach-tile-roof-contractor/index.html 200!
+/historic-delray-roofing /historic-delray-roofing/index.html 200!
+# Priority 3 — West Boca
+/west-boca-raton-roof-replacement /west-boca-raton-roof-replacement/index.html 200!
+/kings-point-boca-roofing-contractor /kings-point-boca-roofing-contractor/index.html 200!
+/boca-raton-tile-re-roof /boca-raton-tile-re-roof/index.html 200!
+# Priority 4 — North Boca
+/north-boca-raton-roof-replacement /north-boca-raton-roof-replacement/index.html 200!
+/boca-raton-wind-mitigation-roofing /boca-raton-wind-mitigation-roofing/index.html 200!
+/palm-beach-county-roof-insurance-claim /palm-beach-county-roof-insurance-claim/index.html 200!
+# Boynton Beach Geo
+/boynton-beach-oceanfront-roofing /boynton-beach-oceanfront-roofing/index.html 200!
+/boynton-beach-55-plus-community-roofing /boynton-beach-55-plus-community-roofing/index.html 200!
+/boynton-beach-tile-roof-replacement /boynton-beach-tile-roof-replacement/index.html 200!
+/boynton-beach-commercial-roofing /boynton-beach-commercial-roofing/index.html 200!
+/boynton-beach-roof-insurance-claim /boynton-beach-roof-insurance-claim/index.html 200!
+# Lake Worth Beach Geo
+/lake-worth-beach-historic-roofing /lake-worth-beach-historic-roofing/index.html 200!
+/lake-worth-beach-coastal-roofing /lake-worth-beach-coastal-roofing/index.html 200!
+/lake-worth-beach-flat-roof-replacement /lake-worth-beach-flat-roof-replacement/index.html 200!
+/lake-worth-beach-tile-roof-replacement /lake-worth-beach-tile-roof-replacement/index.html 200!
+/lake-worth-beach-roof-insurance-claim /lake-worth-beach-roof-insurance-claim/index.html 200!
+# Wellington Geo
+/wellington-equestrian-estate-roofing /wellington-equestrian-estate-roofing/index.html 200!
+/wellington-hoa-roof-replacement /wellington-hoa-roof-replacement/index.html 200!
+/wellington-tile-roof-replacement /wellington-tile-roof-replacement/index.html 200!
+/wellington-metal-roofing /wellington-metal-roofing/index.html 200!
+/wellington-roof-insurance-claim /wellington-roof-insurance-claim/index.html 200!
+# West Palm Beach Geo
+/west-palm-beach-historic-roofing /west-palm-beach-historic-roofing/index.html 200!
+/west-palm-beach-waterfront-roofing /west-palm-beach-waterfront-roofing/index.html 200!
+/west-palm-beach-commercial-roofing /west-palm-beach-commercial-roofing/index.html 200!
+/west-palm-beach-tile-roof-replacement /west-palm-beach-tile-roof-replacement/index.html 200!
+/west-palm-beach-roof-insurance-claim /west-palm-beach-roof-insurance-claim/index.html 200!
+# Boca Raton Service Pages
+/boca-raton-commercial-roofing /boca-raton-commercial-roofing/index.html 200!
+/boca-raton-metal-roofing /boca-raton-metal-roofing/index.html 200!
+# Broward Commercial
+/deerfield-beach-commercial-roofing /deerfield-beach-commercial-roofing/index.html 200!
+/pompano-beach-commercial-roofing /pompano-beach-commercial-roofing/index.html 200!
+# HOA / Community Pages
+/the-cove-deerfield-beach-roofing /the-cove-deerfield-beach-roofing/index.html 200!
+/olympia-wellington-roofing /olympia-wellington-roofing/index.html 200!
+/canyon-lakes-boynton-beach-roofing /canyon-lakes-boynton-beach-roofing/index.html 200!
+/broken-sound-boca-raton-roofing /broken-sound-boca-raton-roofing/index.html 200!
+/royal-palm-yacht-club-boca-raton-roofing /royal-palm-yacht-club-boca-raton-roofing/index.html 200!
+/boca-raton-luxury-estate-roofing /boca-raton-luxury-estate-roofing/index.html 200!
+/st-andrews-country-club-boca-raton-roofing /st-andrews-country-club-boca-raton-roofing/index.html 200!
+# Lighthouse Point + Pompano Geo
+/lighthouse-point-roof-replacement /lighthouse-point-roof-replacement/index.html 200!
+/lighthouse-point-tile-roof-replacement /lighthouse-point-tile-roof-replacement/index.html 200!
+/pompano-beach-coastal-roofing /pompano-beach-coastal-roofing/index.html 200!
+/pompano-beach-tile-roof-replacement /pompano-beach-tile-roof-replacement/index.html 200!
+/palm-aire-pompano-beach-roofing /palm-aire-pompano-beach-roofing/index.html 200!
+
 # Legacy location pages (broken dev-mode files) - redirect to nearest served city
 /locations/surfside /locations/hallandale-beach 301!
 /locations/south-palm-beach /locations/lake-worth-beach 301!
