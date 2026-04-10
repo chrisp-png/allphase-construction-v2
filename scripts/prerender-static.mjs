@@ -991,8 +991,14 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
     ${citySlug === 'deerfield-beach' ? `
     <li><a href="/deerfield-beach-commercial-roofing">Commercial Roofing</a></li>
+    ` : ''}${citySlug === 'lighthouse-point' ? `
+    <li><a href="/lighthouse-point-roof-replacement">Roof Replacement</a></li>
+    <li><a href="/lighthouse-point-tile-roof-replacement">Tile Roof Replacement</a></li>
     ` : ''}${citySlug === 'pompano-beach' ? `
     <li><a href="/pompano-beach-commercial-roofing">Commercial Roofing</a></li>
+    <li><a href="/pompano-beach-coastal-roofing">Coastal Roofing</a></li>
+    <li><a href="/pompano-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
+    <li><a href="/palm-aire-pompano-beach-roofing">Palm Aire Roofing</a></li>
     ` : ''}${citySlug === 'boca-raton' ? `
     <li><a href="/boca-raton-commercial-roofing">Commercial Roofing</a></li>
     <li><a href="/boca-raton-metal-roofing">Metal Roofing</a></li>
@@ -4912,6 +4918,140 @@ ${companyAuthorityFooter()}
       `
     }
   ];
+
+  // =====================================================================
+  // LIGHTHOUSE POINT + POMPANO BEACH — Geo-relevance pages
+  // Two closest cities to HQ after Deerfield Beach
+  // =====================================================================
+  const lighthousePompanoPages = [
+    {
+      slug: 'lighthouse-point-roof-replacement',
+      title: 'Lighthouse Point Roof Replacement | All Phase Construction USA',
+      description: 'Roof replacement in Lighthouse Point, FL. Waterfront and inland homes. HVHZ-compliant, marine-grade materials. Minutes from our Deerfield Beach HQ.',
+      h1: 'Roof Replacement in Lighthouse Point, FL',
+      hubSlug: 'lighthouse-point',
+      hubName: 'Lighthouse Point',
+      county: 'Broward',
+      intro: `Lighthouse Point is a small, affluent waterfront community just south of Deerfield Beach — and just minutes from our headquarters at 590 Goolsby Blvd. The city's network of canals, Intracoastal frontage, and proximity to the Hillsboro Inlet means nearly every home in Lighthouse Point faces some degree of salt air exposure. All Phase Construction USA replaces roofs across Lighthouse Point with HVHZ-compliant assemblies rated for 175+ mph wind speeds and marine-grade materials throughout.`,
+      sections: `
+  <h2>The Lighthouse Point Roofing Environment</h2>
+  <p>Lighthouse Point is essentially a canal community — deep-water canals run through most of the city, connecting to the Intracoastal Waterway and the Hillsboro Inlet. That water network means salt air reaches every neighborhood, not just the waterfront lots. Even homes on interior streets face enough chloride exposure to corrode standard galvanized fasteners within a few years. We treat the entire city as a coastal zone and spec marine-grade materials accordingly.</p>
+  <h2>Neighborhoods &amp; Landmarks</h2>
+  <p>The Hillsboro Inlet area at the city's northeast corner — closest to open ocean with the worst salt exposure. The deep-water canal homes along NE 24th Street, NE 26th Street, and the finger canals off the Intracoastal. The interior single-family streets between Federal Highway and Dixie Highway. Cap's Place Island — the historic restaurant landmark accessible only by boat, which anchors the inlet neighborhood. Dixon Ahl Park and Dan Witt Park mark the central residential zones.</p>
+  <h2>Materials for Lighthouse Point</h2>
+  <p>Clay and concrete tile on stainless battens with 304-grade fasteners — the dominant aesthetic and the right choice for the salt environment. Standing-seam aluminum for canal-front homes where maximum corrosion resistance is the priority. Modified-bitumen on flat sections with aluminum flashings at every penetration. No galvanized metal anywhere on a Lighthouse Point roof.</p>
+  <h2>Proximity to Our HQ</h2>
+  <p>Our Deerfield Beach headquarters is less than 5 minutes from Lighthouse Point. That means same-day emergency response, zero mobilization surcharges, and project managers who can be on-site in minutes. We're the closest licensed roofing contractor to Lighthouse Point with HVHZ certification and dual licensing.</p>
+      `
+    },
+    {
+      slug: 'lighthouse-point-tile-roof-replacement',
+      title: 'Lighthouse Point Tile Roof Replacement | All Phase Construction USA',
+      description: 'Tile roof replacement in Lighthouse Point, FL. Clay and concrete tile, full underlayment tear-off, stainless battens. HVHZ-compliant.',
+      h1: 'Tile Roof Replacement in Lighthouse Point, FL',
+      hubSlug: 'lighthouse-point',
+      hubName: 'Lighthouse Point',
+      county: 'Broward',
+      intro: `Tile roofs define the Lighthouse Point aesthetic — Mediterranean-profile barrel tile and flat concrete tile dominate the streetscape from the Intracoastal to the interior streets. All Phase Construction USA replaces tile roofs across Lighthouse Point with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens rated for the city's canal-side salt environment and Broward County's HVHZ wind code.`,
+      sections: `
+  <h2>Why Lighthouse Point Tile Roofs Need Replacement</h2>
+  <p>Most Lighthouse Point homes were built or substantially renovated between the 1970s and 2000s. The tile on these homes often looks intact, but the underlayment beneath — rated for 20–25 years — has failed. The salt-air environment accelerates underlayment degradation even faster than the rated lifespan, which is why Lighthouse Point homeowners see interior leaks appear seemingly overnight despite tile that looks fine from the curb.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection to assess underlayment and deck condition. Tile removal with on-site salvage where tiles are reusable. Full underlayment tear-off. Deck repair and re-nailing to current HVHZ fastening schedule. New SBS-modified peel-and-stick underlayment. Tile reset with 304-grade stainless fasteners on stainless battens. Replacement tile sourced for cracked or chipped pieces.</p>
+  <h2>Salt-Environment Specifications</h2>
+  <p>Every tile re-roof in Lighthouse Point uses stainless battens, stainless fasteners, and aluminum or stainless flashings. We do not install galvanized components in Lighthouse Point — the canal-side salt environment makes corrosion a certainty, not a risk.</p>
+  <h2>Warranty &amp; Insurance</h2>
+  <p>Every tile re-roof includes a manufacturer underlayment warranty, our workmanship guarantee, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    },
+    {
+      slug: 'pompano-beach-coastal-roofing',
+      title: 'Pompano Beach Coastal Roofing | All Phase Construction USA',
+      description: 'Coastal roofing in Pompano Beach, FL. A1A corridor, Harbor Village, beachside properties. Salt-rated, HVHZ-compliant. Free inspection.',
+      h1: 'Pompano Beach Coastal Roofing',
+      hubSlug: 'pompano-beach',
+      hubName: 'Pompano Beach',
+      county: 'Broward',
+      intro: `Pompano Beach's coastal zone — the A1A beachside corridor, Harbor Village, and the neighborhoods east of Federal Highway — faces Atlantic salt spray, direct UV, and Exposure D wind loads year-round. All Phase Construction USA builds coastal re-roofs for Pompano Beach with 304-grade stainless fasteners, SBS-modified peel-and-stick underlayment, and HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
+      sections: `
+  <h2>The Pompano Beach Coastal Zone</h2>
+  <p>Pompano Beach stretches from the Hillsboro Inlet at the north end to the Fort Lauderdale line at the south, with 3+ miles of direct oceanfront. Harbor Village sits on the Intracoastal with deep-water canal access. Garden Isles and the neighborhoods between Federal Highway and A1A face enough salt load to corrode standard fasteners within a few years. We treat everything east of I-95 as the coastal zone and spec marine-grade materials accordingly.</p>
+  <h2>Landmarks in Our Coastal Service Area</h2>
+  <p>Pompano Beach Pier and the surrounding beachside hotels and condominiums. Harbor Village's canal-front homes with direct Intracoastal access. The Hillsboro Inlet area at the Deerfield Beach / Lighthouse Point / Pompano Beach convergence — the worst salt exposure in the city. Pompano Beach Community Park marks the inland edge of the salt-affected zone.</p>
+  <h2>Coastal Assemblies</h2>
+  <p>Clay and concrete tile on stainless battens with 304-grade fasteners. Standing-seam aluminum for maximum corrosion resistance on canal-front and oceanfront properties. Modified-bitumen on flat sections with aluminum flashings. Enhanced edge metal for Exposure D uplift at the eaves.</p>
+  <h2>Wind Mitigation</h2>
+  <p>Every coastal re-roof includes a wind mitigation form delivered to your insurer. Pompano Beach coastal homes typically qualify for the maximum credit categories across all five wind mitigation line items.</p>
+      `
+    },
+    {
+      slug: 'pompano-beach-tile-roof-replacement',
+      title: 'Pompano Beach Tile Roof Replacement | All Phase Construction USA',
+      description: 'Tile roof replacement in Pompano Beach, FL. Palm Aire, Cypress Lakes, and citywide. Full underlayment tear-off, HVHZ-compliant.',
+      h1: 'Tile Roof Replacement in Pompano Beach, FL',
+      hubSlug: 'pompano-beach',
+      hubName: 'Pompano Beach',
+      county: 'Broward',
+      intro: `Concrete and clay tile covers the majority of Pompano Beach's residential roofing — from the 1970s ranch homes in Palm Aire to the newer builds in Cypress Lakes and the subdivisions west of Powerline Road. All Phase Construction USA replaces tile roofs across Pompano Beach with full underlayment tear-off, SBS-modified peel-and-stick replacement, and HVHZ-compliant fastening schedules rated for 175+ mph wind speeds.`,
+      sections: `
+  <h2>Why Pompano Beach Tile Roofs Need Replacement Now</h2>
+  <p>Palm Aire's homes were built starting in the 1970s, making their original tile systems 40–50 years old. Cypress Lakes and the western subdivisions were built in the 1990s and 2000s, putting them squarely in the 20–25 year underlayment failure window. Pompano Beach's 60–65 inches of annual rainfall and salt-laden Atlantic winds accelerate underlayment degradation faster than manufacturer ratings suggest. The tile looks fine; the waterproofing beneath it has failed.</p>
+  <h2>Communities We Serve</h2>
+  <p>Palm Aire — one of Pompano Beach's largest residential communities with thousands of homes carrying aging tile systems. Cypress Lakes — gated community with concrete tile on 1990s–2000s homes entering the re-roof window. Garden Isles — canal community where salt exposure compounds underlayment failure. The residential streets between Atlantic Boulevard and Sample Road where the densest tile roof inventory sits.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection. Tile removal with on-site salvage. Full underlayment tear-off. Deck repair and re-nailing to HVHZ fastening schedule. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners. Replacement tile sourced for HOA color and profile match.</p>
+  <h2>Insurance &amp; Wind Mitigation</h2>
+  <p>Every tile re-roof includes a wind mitigation form delivered to your insurer. Many Pompano Beach homeowners file claims after storm events — we provide full documentation, adjuster coordination, and supplement filing.</p>
+      `
+    },
+    {
+      slug: 'palm-aire-pompano-beach-roofing',
+      title: 'Palm Aire Pompano Beach Roofing | All Phase Construction USA',
+      description: 'Roof replacement in Palm Aire, Pompano Beach FL. 1970s-era tile and flat roof systems. HOA-coordinated, HVHZ-compliant. Free inspection.',
+      h1: 'Roofing Contractor for Palm Aire, Pompano Beach',
+      hubSlug: 'pompano-beach',
+      hubName: 'Pompano Beach',
+      county: 'Broward',
+      intro: `Palm Aire is one of the largest residential communities in Pompano Beach — a sprawling golf-course community of single-family homes, villas, and condominiums built starting in the 1970s. The original roof systems across Palm Aire are 40–50 years old, and even homes that were re-roofed in the 1990s or early 2000s are back in the replacement window. All Phase Construction USA handles Palm Aire re-roofs with HOA coordination and HVHZ-compliant assemblies.`,
+      sections: `
+  <h2>The Palm Aire Re-Roof Situation</h2>
+  <p>Palm Aire's construction spans the 1970s through the 1990s, creating three overlapping re-roof waves: original 1970s systems that are critically overdue, 1980s re-roofs that have exceeded their underlayment lifespan, and 1990s re-roofs that are entering the failure window now. Regardless of which wave your home falls in, the underlayment beneath the tile has reached or exceeded its rated life.</p>
+  <h2>Sections We Serve</h2>
+  <p>Palm Aire's multiple sections — from the original golf-course villas to the single-family homes along Palm Aire Drive and the condominium buildings — each have their own association guidelines and architectural requirements. We work with each section's board individually on material approvals, color matching, and scheduling.</p>
+  <h2>Villa &amp; Condo Roofing</h2>
+  <p>Multi-unit villa and condominium buildings in Palm Aire require coordination between adjacent unit owners and the association board on timing, access, and cost sharing. We handle the full coordination — board presentations, resident notification, phased scheduling — so the association isn't chasing the contractor.</p>
+  <h2>HOA Process</h2>
+  <p>Architectural review submittal with material samples and color boards. Written approval before material ordering. Phased scheduling for multi-unit buildings. Post-completion walk with the homeowner and association representative. Wind mitigation form delivered to each unit owner's insurer.</p>
+      `
+    }
+  ];
+
+  for (const p of lighthousePompanoPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/${p.hubSlug}" style="color: #dc2626; text-decoration: underline;">${p.hubName} roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/${p.hubSlug}" style="color: #dc2626; text-decoration: underline;">${p.hubName} Roof Replacement</a></li>
+    <li><a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach Roof Replacement</a></li>
+    <li><a href="/locations/broward-county" style="color: #dc2626; text-decoration: underline;">Broward County Roofing Contractor</a></li>
+  </ul>
+  ${companyAuthorityFooter('Broward')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered LP/Pompano Geo: ${p.slug}/index.html`);
+    totalPages++;
+  }
 
   for (const p of hoaCommunityPages) {
     const dir = path.join(distDir, p.slug);
