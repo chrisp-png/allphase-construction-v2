@@ -989,6 +989,13 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
     <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
+    ${citySlug === 'boynton-beach' ? `
+    <li><a href="/boynton-beach-oceanfront-roofing">Boynton Beach Oceanfront Roofing</a></li>
+    <li><a href="/boynton-beach-55-plus-community-roofing">55+ Community Roofing</a></li>
+    <li><a href="/boynton-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
+    <li><a href="/boynton-beach-commercial-roofing">Commercial Roofing</a></li>
+    <li><a href="/boynton-beach-roof-insurance-claim">Roof Insurance Claim</a></li>
+    ` : ''}
   </ul>
 </div>
   ${companyAuthorityFooter(data.county === 'Broward County' ? 'Broward' : 'Palm Beach')}
@@ -4323,6 +4330,127 @@ ${companyAuthorityFooter()}
       content
     ));
     console.log(`✅ Prerendered Priority 4: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
+  // =====================================================================
+  // BOYNTON BEACH GEO-RELEVANCE — Neighborhood + Service × City pages
+  // Builds topical depth and neighborhood-level geo signal
+  // =====================================================================
+  const boyntonBeachPages = [
+    {
+      slug: 'boynton-beach-oceanfront-roofing',
+      title: 'Boynton Beach Oceanfront Roofing | All Phase Construction USA',
+      description: 'Oceanfront roofing in Boynton Beach, FL. Salt-air rated systems for the A1A corridor near Oceanfront Park. PBC wind-code compliant. Free inspection.',
+      h1: 'Boynton Beach Oceanfront Roofing',
+      intro: `The A1A corridor through Boynton Beach — from Oceanfront Park at 6415 N. Ocean Blvd south to the Lantana border — puts roofs directly in the path of salt spray, UV, and onshore wind loads that inland systems never face. All Phase Construction USA builds coastal assemblies for Boynton Beach oceanfront homes rated to Palm Beach County's 170+ mph design wind speeds with salt-grade materials throughout.`,
+      sections: `
+  <h2>Why Oceanfront Boynton Beach Roofs Fail Early</h2>
+  <p>Salt fog corrodes exposed fasteners and flashing within 18 months when the wrong metals are specified. UV bakes standard felt underlayment brittle in half the time of an inland home. Exposure D wind pressures at the eaves drive uplift values 30–50% higher than neighborhoods just a mile west. We spec 304-grade stainless fasteners, SBS-modified peel-and-stick underlayment, and reinforced edge metal on every oceanfront Boynton Beach project.</p>
+  <h2>Landmarks in Our Coastal Service Area</h2>
+  <p>Oceanfront Park and its boardwalk mark the center of the Boynton Beach coastal zone. The Boynton Inlet and its surrounding inlet-adjacent homes carry the worst salt exposure in the city. South of the inlet, the Manalapan line marks where Palm Beach County's highest-value coastal homes begin. We work the full stretch from Ocean Ridge south through the Boynton Beach city limits.</p>
+  <h2>Coastal Assemblies We Install</h2>
+  <p>Clay and concrete tile on stainless battens with 304-grade fasteners for the dominant coastal aesthetic. Standing-seam aluminum for maximum salt resistance and a 40+ year service life. Fully adhered white modified-bitumen for flat sections with wind-rated edge metal.</p>
+  <h2>Wind Mitigation on Oceanfront Homes</h2>
+  <p>Every coastal re-roof includes a completed OIR-B1-1802 wind mitigation form delivered to your insurer. On an oceanfront Boynton Beach home, the premium credits for opening protection, roof-to-wall connections, and roof covering class typically represent a meaningful offset against the re-roof cost over the policy lifetime.</p>
+      `
+    },
+    {
+      slug: 'boynton-beach-55-plus-community-roofing',
+      title: 'Boynton Beach 55+ Community Roofing | All Phase Construction USA',
+      description: 'Roof replacement for 55+ communities in Boynton Beach — The Cascades, Valencia Lakes, Hunters Run. HOA coordinated, PBC wind-code compliant.',
+      h1: 'Boynton Beach 55+ Community Roofing',
+      intro: `The Cascades, Valencia Lakes, and Hunters Run represent some of the largest 55+ communities in Palm Beach County — and the bulk of their original roof systems, installed between 2000 and 2010, are now entering the re-roof window. All Phase Construction USA handles full-community and individual-unit re-roofs with end-to-end HOA coordination and Palm Beach County wind-code compliant assemblies.`,
+      sections: `
+  <h2>The 55+ Re-Roof Wave in Boynton Beach</h2>
+  <p>Communities built in the early 2000s installed roof systems with a 20–25 year underlayment lifespan. In 2026, that clock has expired or is about to. The tile on many of these homes still looks fine from the street, but the underlayment beneath has lost its waterproofing integrity. A proactive re-roof now prevents the interior water damage, mold, and emergency repair costs that come from waiting.</p>
+  <h2>Communities We Serve</h2>
+  <p>The Cascades on Cascades Boulevard — the largest active-adult community in the Boynton Beach corridor with hundreds of villa and single-family roofs. Valencia Lakes off Hagen Ranch Road — a gated 55+ community with a concentrated footprint of barrel tile homes. Hunters Run near the Boynton Beach city limits — an established golf-course community with complex multi-level tile roof systems on estate-sized homes.</p>
+  <h2>HOA &amp; Association Coordination</h2>
+  <p>Every 55+ project starts with a submittal to the community's architectural review committee — color match, tile profile, scheduling windows, and resident notification. We handle all the paperwork and board presentations so the association doesn't have to chase us. Multiple-unit scheduling is available for communities pursuing a phased neighborhood-wide program.</p>
+  <h2>Insurance Claim Support for 55+ Residents</h2>
+  <p>Many 55+ residents file insurance claims after storm events. We provide full claim documentation, work directly with adjusters, and deliver a wind mitigation form on completion to unlock premium credits.</p>
+      `
+    },
+    {
+      slug: 'boynton-beach-tile-roof-replacement',
+      title: 'Boynton Beach Tile Roof Replacement | All Phase Construction USA',
+      description: 'Tile roof replacement in Boynton Beach, FL. Clay and concrete tile, full underlayment tear-off, stainless battens. PBC wind-code compliant.',
+      h1: 'Tile Roof Replacement in Boynton Beach, FL',
+      intro: `Tile roofs dominate the Boynton Beach housing stock — from barrel tile on the coastal estates near Oceanfront Park to flat concrete tile across the inland gated communities like Canyon Lakes and The Cascades. All Phase Construction USA replaces tile roofs across Boynton Beach with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens for long-term performance under Palm Beach County wind code.`,
+      sections: `
+  <h2>Why Tile Re-Roofs Are Urgent in Boynton Beach</h2>
+  <p>Tile carries a 50-year service life, but the underlayment beneath it typically fails in 20–25 years. Most Boynton Beach tile homes were built between 1990 and 2010, which means a large portion of the market is in the re-roof window right now. The tile may look fine from the street; the underlayment beneath it has almost certainly lost its waterproofing integrity.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection to assess deck and underlayment condition. Careful tile removal with on-site salvage for tiles in good condition. Full underlayment tear-off down to the deck. Deck repair and re-nailing to current PBC fastening schedule. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners, replacement tile sourced for cracked or chipped pieces.</p>
+  <h2>Neighborhoods We Serve</h2>
+  <p>Canyon Lakes estate homes with complex multi-level tile systems. The Cascades and Valencia Lakes 55+ communities. Hunters Run golf course community. The coastal zone near Oceanfront Park and along A1A. The Congress Avenue and Boynton Beach Boulevard corridor where commercial flat-tile applications are common.</p>
+  <h2>Warranty &amp; Insurance</h2>
+  <p>Every tile re-roof includes a manufacturer underlayment warranty, our workmanship guarantee, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    },
+    {
+      slug: 'boynton-beach-commercial-roofing',
+      title: 'Boynton Beach Commercial Roofing | All Phase Construction USA',
+      description: 'Commercial roofing in Boynton Beach, FL. Flat roof replacement and repair for Congress Ave, Boynton Beach Blvd, and retail centers. Licensed & insured.',
+      h1: 'Boynton Beach Commercial Roofing',
+      intro: `The Congress Avenue and Boynton Beach Boulevard corridors are the commercial spine of the city — strip centers, medical offices, restaurants, and retail anchored by the Boynton Beach Mall area. All Phase Construction USA replaces and repairs commercial flat roof systems across Boynton Beach with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
+      sections: `
+  <h2>The Boynton Beach Commercial Roofing Market</h2>
+  <p>Most commercial structures along the Congress Avenue corridor were built in the 1980s and 1990s with built-up or modified-bitumen flat roof systems that are now 30–40 years old. Many have been patched repeatedly rather than replaced, creating leak chains that are more expensive to repair than to re-roof entirely.</p>
+  <h2>Commercial Landmarks We Serve</h2>
+  <p>The Boynton Beach Mall area and surrounding retail parcels at Congress Avenue and Old Boynton Road. The Boynton Beach Boulevard commercial corridor from I-95 east to Federal Highway. Medical and professional office parks along Gateway Boulevard. Mangrove Nature Park's surrounding commercial district where 1990s-era flat roofs are reaching end of life.</p>
+  <h2>Systems We Install</h2>
+  <p>TPO single-ply membrane for energy efficiency and reflectivity. Fully adhered modified-bitumen for durability and puncture resistance. Multi-ply built-up systems for heavy-traffic rooftops with HVAC and equipment. Every commercial system includes wind-rated edge metal and tapered insulation for positive drainage.</p>
+  <h2>Dual Licensing Advantage</h2>
+  <p>All Phase Construction USA holds both a CCC roofing license (CCC-1331464) and a CGC general contractor license (CGC-1526236). For commercial projects requiring structural assessment, parapet repair, or fascia replacement alongside the roof work, our dual licensing eliminates the need for a second contractor.</p>
+      `
+    },
+    {
+      slug: 'boynton-beach-roof-insurance-claim',
+      title: 'Boynton Beach Roof Insurance Claim | All Phase Construction USA',
+      description: 'Boynton Beach roof insurance claim assistance. 41% flooding risk, full documentation, adjuster coordination. Licensed & insured.',
+      h1: 'Boynton Beach Roof Insurance Claim Assistance',
+      intro: `Boynton Beach buildings face approximately a 41% chance of experiencing significant flooding over 30 years, with 61 of 70 census tracts carrying substantial storm surge and flooding risk. That exposure translates directly into roof insurance claims — and those claims are won or lost on documentation. All Phase Construction USA handles the full claim process for Boynton Beach homeowners from inspection through re-roof completion.`,
+      sections: `
+  <h2>Why Boynton Beach Claims Are Documentation-Critical</h2>
+  <p>Most denied or underpaid roof claims come down to incomplete documentation. The adjuster needs clear photographic evidence of storm damage tied to a specific weather event, a documented timeline, and a scope of repair that matches the damage pattern. When any piece of that chain is missing, the claim gets reduced or denied. Boynton Beach's high flood and storm-surge exposure means adjusters see a high volume of claims from this area and scrutinize them carefully.</p>
+  <h2>Our Claim Documentation Process</h2>
+  <p>Free inspection with drone and attic imaging on day one. Full photographic damage documentation including close-ups of every affected area and wide shots for context. Scope of repair written to match the documented damage pattern. Direct coordination with your insurance adjuster during their site visit. Supplement filing if the initial approved scope does not cover the full documented damage.</p>
+  <h2>After the Claim Is Approved</h2>
+  <p>Palm Beach County permit pulled, re-roof executed to current wind-code standards, and a wind mitigation form delivered to your insurer on completion. That last step typically unlocks premium credits that compound into a significant annual discount.</p>
+  <h2>Communities We Serve</h2>
+  <p>Our Boynton Beach claim support covers the oceanfront A1A corridor, The Cascades and Valencia Lakes 55+ communities, Canyon Lakes and Hunters Run gated communities, and the Congress Avenue commercial corridor.</p>
+      `
+    }
+  ];
+
+  for (const p of boyntonBeachPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Replacement</a></li>
+    <li><a href="/roof-repair/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Inspection</a></li>
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Boynton Beach Geo: ${p.slug}/index.html`);
     totalPages++;
   }
 
