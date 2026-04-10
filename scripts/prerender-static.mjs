@@ -1001,6 +1001,18 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/lake-worth-beach-flat-roof-replacement">Flat Roof Replacement</a></li>
     <li><a href="/lake-worth-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
     <li><a href="/lake-worth-beach-roof-insurance-claim">Roof Insurance Claim</a></li>
+    ` : ''}${citySlug === 'wellington' ? `
+    <li><a href="/wellington-equestrian-estate-roofing">Equestrian Estate Roofing</a></li>
+    <li><a href="/wellington-hoa-roof-replacement">HOA Roof Replacement</a></li>
+    <li><a href="/wellington-tile-roof-replacement">Tile Roof Replacement</a></li>
+    <li><a href="/wellington-metal-roofing">Metal Roofing</a></li>
+    <li><a href="/wellington-roof-insurance-claim">Roof Insurance Claim</a></li>
+    ` : ''}${citySlug === 'west-palm-beach' ? `
+    <li><a href="/west-palm-beach-historic-roofing">Historic District Roofing</a></li>
+    <li><a href="/west-palm-beach-waterfront-roofing">Waterfront Roofing</a></li>
+    <li><a href="/west-palm-beach-commercial-roofing">Commercial Roofing</a></li>
+    <li><a href="/west-palm-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
+    <li><a href="/west-palm-beach-roof-insurance-claim">Roof Insurance Claim</a></li>
     ` : ''}
   </ul>
 </div>
@@ -4581,6 +4593,250 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered Lake Worth Geo: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // WELLINGTON GEO-RELEVANCE — Neighborhood + Service × City pages
+  // Equestrian estates, 80+ HOA communities, 1980s–2000s tile wave
+  // =====================================================================
+  const wellingtonPages = [
+    {
+      slug: 'wellington-equestrian-estate-roofing',
+      title: 'Wellington Equestrian Estate Roofing | All Phase Construction USA',
+      description: 'Roofing for Wellington equestrian estates and large-acreage properties near the International Polo Club. PBC wind-code compliant. Free inspection.',
+      h1: 'Wellington Equestrian Estate Roofing',
+      intro: `Wellington is home to the International Polo Club and the Winter Equestrian Festival, and the estates surrounding the Equestrian Preserve represent some of the largest residential roof footprints in Palm Beach County. All Phase Construction USA replaces roofs on Wellington equestrian properties — main residences, guesthouses, barns, and covered arenas — with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The Equestrian Estate Roofing Challenge</h2>
+  <p>Equestrian properties in Wellington's Binks Estates and the Equestrian Preserve routinely carry 5,000–15,000 square feet of roof across multiple structures. The main residence, guesthouse, barn, and covered riding arena each have different structural requirements, slope profiles, and material needs. We scope every structure on the property and stage the project to minimize disruption to horses, staff, and daily operations.</p>
+  <h2>Assemblies for Estate Properties</h2>
+  <p>Clay and concrete tile on the main residence to match Wellington's Mediterranean aesthetic. Standing-seam metal on barns and covered arenas for durability and long span capability. Modified-bitumen on flat-section pool houses and equipment buildings. Every assembly uses the same wind-code compliant fastening schedule regardless of structure type.</p>
+  <h2>Landmarks in Our Service Area</h2>
+  <p>The International Polo Club Palm Beach on 120th Avenue South anchors the equestrian district. The Wellington Environmental Preserve and the Equestrian Preserve area are home to the largest estate lots. Binks Estates, Binks Forest, and the Palm Beach Point communities represent the core of our equestrian estate work.</p>
+  <h2>Multi-Structure Coordination</h2>
+  <p>We permit, schedule, and execute multi-structure estate projects under a single project management plan — one point of contact, one crew rotation, one inspection timeline. Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) means structural issues on any building are handled in-house without subcontracting delays.</p>
+      `
+    },
+    {
+      slug: 'wellington-hoa-roof-replacement',
+      title: 'Wellington HOA Roof Replacement | All Phase Construction USA',
+      description: 'HOA-coordinated roof replacement across Wellington FL. 80+ communities served. Color match, architectural review, phased scheduling. PBC wind-code compliant.',
+      h1: 'Wellington HOA Roof Replacement',
+      intro: `Wellington has over 80 HOA-governed communities — from Olympia and The Isles to Grand Isles and Sugar Pond Manor — and nearly all of them were built in a 20-year window between the mid-1980s and early 2000s. That means the original roof systems across these communities are hitting the re-roof window simultaneously. All Phase Construction USA handles HOA-coordinated roof replacement at scale with pre-approved materials, architectural review submittals, and phased neighborhood scheduling.`,
+      sections: `
+  <h2>The Wellington HOA Re-Roof Wave</h2>
+  <p>Most Wellington subdivisions installed concrete tile with standard felt underlayment during original construction. The tile itself may last 50 years, but the underlayment beneath it fails in 20–25 years. In 2026, that means communities built between 1985 and 2005 are in the active re-roof window — and Wellington has dozens of them hitting this threshold at the same time.</p>
+  <h2>Communities We Serve</h2>
+  <p>Olympia — one of Wellington's largest master-planned communities with multiple villages and architectural guidelines. The Isles and Grand Isles — waterfront communities with strict color and profile requirements. Sugar Pond Manor — established community with aging tile systems. Aero Club — aviation-themed community near the Wellington Aero Club airport. We work with each community's architectural review committee to pre-approve materials and colors before any tear-off begins.</p>
+  <h2>Our HOA Process</h2>
+  <p>Initial board presentation with material samples and project timeline. Architectural review submittal for approval. Phased scheduling to minimize neighborhood disruption. Color-matched tile sourcing confirmed before project start. Progress updates to the property manager throughout the project. Post-completion walk with the homeowner and association representative.</p>
+  <h2>Volume Scheduling Available</h2>
+  <p>For communities pursuing a phased neighborhood-wide program, we offer volume scheduling that reduces per-unit cost and compresses the project timeline. Multiple homes on the same street can be staged in sequence to share mobilization and equipment costs.</p>
+      `
+    },
+    {
+      slug: 'wellington-tile-roof-replacement',
+      title: 'Wellington Tile Roof Replacement | All Phase Construction USA',
+      description: 'Tile roof replacement in Wellington, FL. Concrete and clay tile, full underlayment tear-off, HOA-compliant. PBC wind-code certified.',
+      h1: 'Tile Roof Replacement in Wellington, FL',
+      intro: `Concrete tile is the dominant roofing material in Wellington — nearly every subdivision built between the 1980s and 2000s was originally roofed with it. All Phase Construction USA replaces tile roofs across Wellington with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens built to Palm Beach County wind code.`,
+      sections: `
+  <h2>Why Wellington Tile Roofs Need Replacement Now</h2>
+  <p>Wellington incorporated in 1995, but most of its housing stock was built starting in the mid-1980s. Original concrete tile systems from that era are now 25–40 years old. The tile still looks serviceable from the street, but the felt underlayment beneath it — rated for 20–25 years — has failed or is actively failing. That's why Wellington homeowners see interior leaks despite having tile that appears intact.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection to assess underlayment and deck condition. Tile removal with on-site salvage where tiles are reusable. Full underlayment tear-off down to the deck. Deck repair and re-nailing to current PBC fastening schedule. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners, replacement tile sourced to match the existing profile and color for HOA compliance.</p>
+  <h2>HOA Color &amp; Profile Matching</h2>
+  <p>Every Wellington subdivision has its own approved color palette and tile profile. We coordinate with the HOA architectural review committee, source matching tile from multiple manufacturers, and provide physical samples for approval before any work begins.</p>
+  <h2>Warranty &amp; Insurance</h2>
+  <p>Every tile re-roof includes a manufacturer underlayment warranty, our workmanship guarantee, and a wind mitigation form delivered to your insurer on completion to unlock premium credits.</p>
+      `
+    },
+    {
+      slug: 'wellington-roof-insurance-claim',
+      title: 'Wellington Roof Insurance Claim | All Phase Construction USA',
+      description: 'Wellington FL roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
+      h1: 'Wellington Roof Insurance Claim Assistance',
+      intro: `Wellington's concentrated footprint of 1980s–2000s tile roofs means storm events generate a wave of simultaneous insurance claims across the community. Adjusters see high claim volume from Wellington after every named storm, and they scrutinize each one carefully. All Phase Construction USA handles the full claim process with documentation built to withstand that scrutiny.`,
+      sections: `
+  <h2>Why Wellington Claims Need Expert Documentation</h2>
+  <p>When an adjuster reviews a Wellington claim, they know the roof is likely 25–40 years old with aging underlayment. The challenge is proving that the specific damage being claimed was caused by the storm event — not by pre-existing underlayment failure. We document both the storm damage and the pre-existing condition clearly, giving the adjuster a defensible scope that separates covered damage from wear-and-tear.</p>
+  <h2>Our Claim Documentation Process</h2>
+  <p>Free inspection with drone and attic imaging on day one. Full photographic damage documentation with close-ups and wide-angle context. Scope of repair written to match the documented storm damage pattern. Direct coordination with your adjuster during their site visit. Supplement filing if the initial approved scope does not cover the full documented damage.</p>
+  <h2>After the Claim Is Approved</h2>
+  <p>Palm Beach County permit pulled, re-roof executed to current wind-code standards with HOA-approved materials, and a wind mitigation form delivered to your insurer on completion.</p>
+  <h2>Communities We Serve</h2>
+  <p>Our Wellington claim support covers Olympia, The Isles, Grand Isles, Sugar Pond Manor, Aero Club, Binks Estates, and the equestrian estate district.</p>
+      `
+    },
+    {
+      slug: 'wellington-metal-roofing',
+      title: 'Wellington Metal Roofing | All Phase Construction USA',
+      description: 'Metal roofing in Wellington, FL. Standing-seam and corrugated systems for homes, barns, and equestrian properties. PBC wind-code compliant.',
+      h1: 'Metal Roofing in Wellington, FL',
+      intro: `Metal roofing is gaining ground in Wellington as homeowners and equestrian property owners look for the longest-life, lowest-maintenance option available under Palm Beach County wind code. All Phase Construction USA installs standing-seam and corrugated metal roof systems across Wellington's residential subdivisions, estate properties, barns, and covered arenas.`,
+      sections: `
+  <h2>Why Metal Is Growing in Wellington</h2>
+  <p>Tile has dominated Wellington for decades, but metal offers a 40–50 year service life with virtually zero maintenance — no underlayment replacement cycle, no cracked tiles, no re-nailing. For equestrian estates with large roof footprints across multiple structures, the lifetime cost of metal is often lower than tile when you factor in the 25-year underlayment replacement tile roofs require.</p>
+  <h2>Systems We Install</h2>
+  <p>Standing-seam aluminum and steel for residential homes — clean lines, concealed fasteners, and the highest wind rating available. Corrugated metal for barns, arenas, and agricultural structures where span capability and cost efficiency matter. Kynar/PVDF finishes in colors that match Wellington's HOA-approved palettes.</p>
+  <h2>Equestrian Property Metal Roofing</h2>
+  <p>Barns, covered arenas, equipment buildings, and guesthouses on Wellington equestrian estates are ideal metal roof candidates. We install long-span standing-seam systems that handle the open truss structures common in equestrian buildings while meeting PBC wind-code fastening requirements.</p>
+  <h2>HOA Approval &amp; Aesthetics</h2>
+  <p>Standing-seam metal is increasingly accepted by Wellington HOAs, especially in profiles and colors that approximate the look of traditional flat tile. We coordinate architectural review submittals and provide physical finish samples for board approval.</p>
+      `
+    }
+  ];
+
+  for (const p of wellingtonPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roof Replacement</a></li>
+    <li><a href="/roof-repair/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roof Repair</a></li>
+    <li><a href="/roof-inspection/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roof Inspection</a></li>
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Wellington Geo: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
+  // =====================================================================
+  // WEST PALM BEACH GEO-RELEVANCE — Neighborhood + Service × City pages
+  // County seat: historic Flamingo Park, waterfront Northwood,
+  // downtown commercial, and inland suburban corridors
+  // =====================================================================
+  const westPalmPages = [
+    {
+      slug: 'west-palm-beach-historic-roofing',
+      title: 'West Palm Beach Historic District Roofing | All Phase Construction USA',
+      description: 'Historic district roofing in West Palm Beach — Flamingo Park, El Cid, Northwood. Period-correct tile and shingle re-roofs. PBC wind-code compliant.',
+      h1: 'West Palm Beach Historic District Roofing',
+      intro: `West Palm Beach's historic neighborhoods — Flamingo Park, El Cid, Northwood Historic District, and Southland Park — contain some of Palm Beach County's most architecturally significant residential structures. Spanish Colonial Revival, Mission Revival, Mediterranean, and Art Deco homes from the 1920s through 1940s require roofing work that preserves period-correct aesthetics while meeting modern wind-code requirements. All Phase Construction USA handles that balance with dual-licensed structural assessment and period-appropriate material sourcing.`,
+      sections: `
+  <h2>The Historic WPB Roofing Challenge</h2>
+  <p>Homes in Flamingo Park and El Cid were built with clay barrel tile, wood shake, and early composition systems on framing that predates modern code. Original skip sheathing, undersized rafters, and non-standard spacing are common. A re-roof on these structures is a structural project as much as a roofing project — the deck and framing must be evaluated and potentially upgraded before any new system goes on.</p>
+  <h2>Neighborhoods We Serve</h2>
+  <p>Flamingo Park — West Palm Beach's premier historic neighborhood with Spanish Colonial and Mediterranean Revival homes between Southern Boulevard and Belvedere Road. El Cid — architecturally significant homes west of Flagler Drive with direct Intracoastal views. Northwood Historic District — early 20th century homes north of 25th Street. Southland Park — 1920s–1940s structures near Lake Worth Lagoon requiring structural assessment before reroofing.</p>
+  <h2>Period-Correct Materials</h2>
+  <p>We source clay barrel tile for authentic 1920s Mediterranean matches, flat and S-tile profiles for Mission Revival homes, and architectural shingles in historically accurate color palettes. Material selection is coordinated with the City of West Palm Beach Historic Preservation division where applicable.</p>
+  <h2>Structural Assessment Included</h2>
+  <p>Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) means we assess and repair structural framing issues — rafter reinforcement, deck overlays, fascia replacement — without subcontracting. One permit, one crew, one project timeline.</p>
+      `
+    },
+    {
+      slug: 'west-palm-beach-waterfront-roofing',
+      title: 'West Palm Beach Waterfront Roofing | All Phase Construction USA',
+      description: 'Waterfront roofing in West Palm Beach, FL. Intracoastal and lagoon-side homes. Salt-air rated, marine-grade fasteners. PBC wind-code compliant.',
+      h1: 'West Palm Beach Waterfront Roofing',
+      intro: `West Palm Beach's waterfront neighborhoods along the Intracoastal Waterway and Lake Worth Lagoon face salt air corrosion, direct wind exposure, and UV loads that destroy standard roofing assemblies years ahead of schedule. All Phase Construction USA builds waterfront re-roofs for West Palm Beach with 304-grade stainless fasteners, SBS-modified peel-and-stick underlayment, and wind-code compliant assemblies rated to 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The Waterfront Exposure Problem</h2>
+  <p>Properties along Flagler Drive, the Northwood Shores waterfront, and the Intracoastal-facing lots in El Cid sit within the salt spray zone where standard galvanized fasteners corrode in 2–3 years and felt underlayment degrades at double the rate of inland installations. We spec marine-grade materials as the baseline on every waterfront project — not as an upgrade.</p>
+  <h2>Landmarks in Our Waterfront Service Area</h2>
+  <p>Flagler Drive runs the length of the West Palm Beach waterfront and connects our primary service zones. Northwood Shores offers direct Intracoastal waterfront with the worst salt exposure in the city. The Dreher Park area and Okeechobee Boulevard bridge mark the southern waterfront boundary. Rosemary Square and the downtown waterfront district generate both residential and commercial demand.</p>
+  <h2>Waterfront Assemblies</h2>
+  <p>Clay and concrete tile on stainless battens with 304-grade fasteners. Standing-seam aluminum for maximum corrosion resistance. Modified-bitumen for flat sections with aluminum flashings at every penetration. Every assembly includes enhanced edge metal for Exposure D uplift pressures.</p>
+  <h2>Wind Mitigation Credits</h2>
+  <p>Every waterfront re-roof includes a wind mitigation form delivered to your insurer. Waterfront homes typically qualify for the maximum credit categories, which compound into a significant annual premium reduction.</p>
+      `
+    },
+    {
+      slug: 'west-palm-beach-commercial-roofing',
+      title: 'West Palm Beach Commercial Roofing | All Phase Construction USA',
+      description: 'Commercial roofing in West Palm Beach, FL. Downtown, Okeechobee corridor, Rosemary Square area. TPO, modified-bitumen, built-up systems. Dual licensed.',
+      h1: 'West Palm Beach Commercial Roofing',
+      intro: `West Palm Beach is Palm Beach County's commercial hub — the Okeechobee Boulevard corridor, the Rosemary Square downtown district, and the Congress Avenue office parks generate steady demand for flat roof replacement and repair. All Phase Construction USA replaces and repairs commercial roof systems across West Palm Beach with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
+      sections: `
+  <h2>The West Palm Beach Commercial Roofing Market</h2>
+  <p>The Okeechobee Boulevard and Jog Road interchange anchors the busiest commercial corridor in West Palm Beach, where 1980s and 1990s-era office parks and retail centers carry original flat roof systems that are 30–40 years old. The downtown Rosemary Square district has a mix of newer mixed-use buildings and older commercial structures, many with flat roof sections that have been patched rather than replaced. Congress Avenue south of Okeechobee carries a dense concentration of medical offices and professional buildings with aging roof systems.</p>
+  <h2>Systems We Install</h2>
+  <p>TPO single-ply membrane for energy efficiency and reflectivity. Fully adhered modified-bitumen for durability and puncture resistance on high-traffic rooftops. Multi-ply built-up systems for heavy-duty commercial applications. Every system includes tapered insulation for positive drainage and wind-rated edge metal.</p>
+  <h2>Downtown Mixed-Use Roofing</h2>
+  <p>Mixed-use buildings near Rosemary Square and along Clematis Street combine retail, restaurant, and residential uses under flat roof assemblies that often require phased replacement to minimize business disruption. We schedule tear-off and installation in sections to keep ground-floor tenants operational.</p>
+  <h2>Dual Licensing Advantage</h2>
+  <p>Commercial flat roof replacements frequently uncover parapet deterioration, structural deck issues, or fascia damage. Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) eliminates the need for a second contractor on these combined-scope projects.</p>
+      `
+    },
+    {
+      slug: 'west-palm-beach-tile-roof-replacement',
+      title: 'West Palm Beach Tile Roof Replacement | All Phase Construction USA',
+      description: 'Tile roof replacement in West Palm Beach, FL. Historic barrel tile and modern concrete tile. Full underlayment tear-off, PBC wind-code compliant.',
+      h1: 'Tile Roof Replacement in West Palm Beach, FL',
+      intro: `Tile roofs in West Palm Beach span the full range — original 1920s clay barrel tile on Flamingo Park bungalows, 1990s concrete flat tile on suburban subdivisions near Jog Road, and everything in between. All Phase Construction USA replaces tile roofs across West Palm Beach with full underlayment tear-off, structural assessment where needed, and stainless battens for PBC wind-code compliance.`,
+      sections: `
+  <h2>Two Eras of Tile in West Palm Beach</h2>
+  <p>Pre-war tile homes in the historic districts often have original skip sheathing and undersized rafters that need structural overlay before new underlayment can go on. Post-1980 tile homes across the suburban corridors have plywood decking that typically needs re-nailing to current code. We assess every structure before quoting because these are fundamentally different scopes — a Flamingo Park barrel tile salvage-and-reset is nothing like a 1995 flat tile tear-and-replace.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection. Tile removal with on-site salvage where tiles are reusable. Full underlayment tear-off down to the deck. Deck repair, overlay, or re-nailing as conditions require. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners. Replacement tile sourced for cracked or chipped pieces.</p>
+  <h2>Neighborhoods We Serve</h2>
+  <p>Flamingo Park, El Cid, and Northwood for historic barrel and S-tile re-roofs. The Okeechobee corridor subdivisions for concrete flat tile replacements. Northwood Shores and the waterfront zone where stainless battens and marine-grade fasteners are mandatory.</p>
+  <h2>Warranty &amp; Insurance</h2>
+  <p>Every tile re-roof includes a manufacturer underlayment warranty, our workmanship guarantee, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    },
+    {
+      slug: 'west-palm-beach-roof-insurance-claim',
+      title: 'West Palm Beach Roof Insurance Claim | All Phase Construction USA',
+      description: 'West Palm Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
+      h1: 'West Palm Beach Roof Insurance Claim Assistance',
+      intro: `West Palm Beach's mix of historic structures, aging suburban tile, and waterfront exposure generates a steady volume of roof insurance claims. All Phase Construction USA handles the full claim process for West Palm Beach homeowners — from drone inspection through re-roof completion and wind mitigation filing — with documentation built to withstand adjuster scrutiny on both storm damage and pre-existing condition separation.`,
+      sections: `
+  <h2>Why West Palm Beach Claims Need Expert Documentation</h2>
+  <p>Adjusters reviewing West Palm Beach claims know the housing stock ranges from 100-year-old historic homes to 30-year-old suburban tile. Pre-existing conditions are common, and the adjuster must see clear documentation separating storm damage from wear-and-tear. On historic properties, structural framing issues further complicate the scope. We document everything — storm damage, pre-existing condition, and structural concerns — so the adjuster can approve a defensible scope.</p>
+  <h2>Our Claim Documentation Process</h2>
+  <p>Free inspection with drone and attic imaging on day one. Full photographic damage documentation. Scope of repair written to match the documented damage pattern and the building's construction era. Direct coordination with your adjuster during their site visit. Supplement filing if the initial scope doesn't cover the full documented damage.</p>
+  <h2>After the Claim Is Approved</h2>
+  <p>Palm Beach County permit pulled, re-roof executed to current wind-code standards, and a wind mitigation form delivered to your insurer on completion to unlock premium credits.</p>
+  <h2>Service Area</h2>
+  <p>Our West Palm Beach claim support covers Flamingo Park, El Cid, Northwood Historic District, Southland Park, Northwood Shores waterfront, the Okeechobee Boulevard corridor, and the downtown Rosemary Square district.</p>
+      `
+    }
+  ];
+
+  for (const p of westPalmPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roof Replacement</a></li>
+    <li><a href="/roof-repair/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach Roof Inspection</a></li>
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered West Palm Beach Geo: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
 
   for (const p of [...priority2Pages, ...priority3Pages]) {
