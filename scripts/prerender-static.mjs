@@ -4785,6 +4785,161 @@ ${companyAuthorityFooter()}
     }
   ];
 
+  // =====================================================================
+  // HOA / COMMUNITY-SPECIFIC PAGES
+  // Named communities with enough search volume and unit count
+  // to justify dedicated landing pages
+  // =====================================================================
+  const hoaCommunityPages = [
+    {
+      slug: 'the-cove-deerfield-beach-roofing',
+      title: 'The Cove Deerfield Beach Roofing | All Phase Construction USA',
+      description: 'Roof replacement in The Cove, Deerfield Beach FL. HOA-coordinated tile and shingle re-roofs. HVHZ-compliant, close to our HQ. Free inspection.',
+      h1: 'Roofing Contractor for The Cove, Deerfield Beach',
+      hubSlug: 'deerfield-beach',
+      hubName: 'Deerfield Beach',
+      county: 'Broward',
+      intro: `The Cove is one of Deerfield Beach's most established residential neighborhoods — a mix of single-family homes, townhomes, and villas spread across tree-lined side streets between the Hillsboro Canal and the Intracoastal. It's also less than two miles from our headquarters at 590 Goolsby Blvd, which means faster response times and zero mobilization delays. All Phase Construction USA replaces roofs across The Cove with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
+      sections: `
+  <h2>The Cove's Roofing Profile</h2>
+  <p>The Cove's housing stock spans several decades — older concrete block homes from the 1960s and 1970s on the interior streets, newer townhome developments along the perimeter, and waterfront properties along the Intracoastal on the eastern edge. That mix means we see everything from aging asphalt shingle systems on the older single-family homes to concrete tile on the newer builds. Most of the original roof systems in The Cove are well past the 20–25 year underlayment replacement window.</p>
+  <h2>Streets &amp; Sections We Serve</h2>
+  <p>The residential streets between SE 2nd Court and the Hillsboro Canal, the townhome sections along SE 15th Terrace, the single-family homes off SE 10th Street and SE 12th Avenue, and the waterfront lots on the eastern boundary. We work every section of The Cove regularly and know the neighborhood's HOA requirements, permit routing, and inspection expectations.</p>
+  <h2>HOA Coordination</h2>
+  <p>The Cove's various sections have their own architectural guidelines for roof color, material, and profile. We coordinate submittals with each section's HOA board, source approved materials, and confirm color matches before any tear-off begins. For multi-unit townhome sections, we offer phased scheduling to minimize disruption to adjacent residents.</p>
+  <h2>Proximity to Our HQ</h2>
+  <p>Our office at 590 Goolsby Blvd is a short drive from The Cove, which means same-day emergency response, no travel surcharges, and project managers who can be on-site within minutes. For ongoing projects, our crew staging and material delivery logistics are the most efficient of any neighborhood we serve.</p>
+      `
+    },
+    {
+      slug: 'olympia-wellington-roofing',
+      title: 'Olympia Wellington Roofing | All Phase Construction USA',
+      description: 'Roof replacement in Olympia, Wellington FL. Village-by-village HOA coordination, tile re-roofs, PBC wind-code compliant. Free inspection.',
+      h1: 'Roofing Contractor for Olympia, Wellington',
+      hubSlug: 'wellington',
+      hubName: 'Wellington',
+      county: 'Palm Beach',
+      intro: `Olympia is Wellington's largest master-planned community — multiple villages, each with its own architectural review committee, and thousands of homes built primarily in the late 1990s and early 2000s. That construction window means the original tile roof systems across Olympia are entering the re-roof window right now. All Phase Construction USA handles Olympia re-roofs village by village with pre-approved materials, HOA coordination, and Palm Beach County wind-code compliant assemblies.`,
+      sections: `
+  <h2>The Olympia Re-Roof Wave</h2>
+  <p>Olympia's villages were built over roughly a 10-year period starting in the late 1990s. Original concrete tile systems from that era are now 25–30 years old — the tile looks fine from the street, but the felt underlayment beneath it was rated for 20–25 years and has failed or is actively failing. That's why Olympia homeowners are seeing interior leaks despite visually intact tile. The re-roof wave across Olympia is not coming — it's here.</p>
+  <h2>Village-by-Village HOA Coordination</h2>
+  <p>Each Olympia village maintains its own architectural review committee with specific approved tile profiles, colors, and material specifications. We submit to each village's committee individually, source matching tile from multiple manufacturers, and provide physical samples for board approval. For villages pursuing a phased community-wide program, we offer volume scheduling that reduces per-home cost and compresses the timeline.</p>
+  <h2>Our Olympia Re-Roof Process</h2>
+  <p>Drone and attic inspection to assess underlayment and deck condition. Tile removal with on-site salvage where tiles are reusable. Full underlayment tear-off. Deck repair and re-nailing to current PBC fastening schedule. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners and replacement tile sourced for HOA color match.</p>
+  <h2>Insurance &amp; Wind Mitigation</h2>
+  <p>Every Olympia re-roof includes a wind mitigation form delivered to your insurer. Many Olympia homeowners file insurance claims after storm events — we provide full claim documentation, adjuster coordination, and supplement filing when the initial scope doesn't cover the documented damage.</p>
+      `
+    },
+    {
+      slug: 'canyon-lakes-boynton-beach-roofing',
+      title: 'Canyon Lakes Boynton Beach Roofing | All Phase Construction USA',
+      description: 'Roof replacement in Canyon Lakes, Boynton Beach FL. Upscale gated community, complex tile systems, HOA-coordinated. PBC wind-code compliant.',
+      h1: 'Roofing Contractor for Canyon Lakes, Boynton Beach',
+      hubSlug: 'boynton-beach',
+      hubName: 'Boynton Beach',
+      county: 'Palm Beach',
+      intro: `Canyon Lakes is one of Boynton Beach's premier gated communities — upscale single-family homes with complex multi-level tile roof systems that demand specialized installation expertise. All Phase Construction USA replaces roofs in Canyon Lakes with full underlayment tear-off, structural assessment where needed, and HOA-approved materials built to Palm Beach County wind code.`,
+      sections: `
+  <h2>The Canyon Lakes Roofing Challenge</h2>
+  <p>Canyon Lakes homes feature some of the most complex residential roof geometries in Boynton Beach — multi-level rooflines, hip-and-valley intersections, decorative turrets, and mixed-slope sections that combine steep tile with low-slope flat areas. These complex footprints require careful flashing detailing at every transition point and experienced tile crews who can handle the geometry without shortcuts.</p>
+  <h2>Materials We Install in Canyon Lakes</h2>
+  <p>Concrete and clay tile matched to the community's approved profiles and color palette. SBS-modified peel-and-stick underlayment on every project — no felt. Stainless fasteners and battens for long-term corrosion resistance. Modified-bitumen on flat and low-slope sections with fully adhered application and wind-rated edge metal.</p>
+  <h2>HOA Architectural Review</h2>
+  <p>Canyon Lakes maintains strict architectural guidelines governing tile profile, color, and installation specifications. We handle the full submittal process — material samples, color boards, and project scope documentation — and wait for written approval before ordering materials or scheduling tear-off.</p>
+  <h2>Structural Assessment</h2>
+  <p>Complex multi-level rooflines on Canyon Lakes estate homes sometimes reveal structural concerns during tear-off — undersized rafters at valley intersections, deck delamination at flat-to-slope transitions, or inadequate ventilation in enclosed soffits. Our dual licensing (CCC-1331464 + CGC-1526236) means we address structural issues in-house without subcontracting delays.</p>
+      `
+    },
+    {
+      slug: 'broken-sound-boca-raton-roofing',
+      title: 'Broken Sound Boca Raton Roofing | All Phase Construction USA',
+      description: 'Roof replacement in Broken Sound, Boca Raton FL. Golf course community, tile and flat roof systems, HOA-coordinated. PBC wind-code compliant.',
+      h1: 'Roofing Contractor for Broken Sound, Boca Raton',
+      hubSlug: 'boca-raton',
+      hubName: 'Boca Raton',
+      county: 'Palm Beach',
+      intro: `Broken Sound is one of Boca Raton's premier country club communities — a gated, golf-course community off Yamato Road with a mix of single-family estates, villas, and townhomes built primarily in the 1980s and 1990s. The original tile and flat roof systems across Broken Sound are 30–40 years old and deep into the re-roof window. All Phase Construction USA replaces roofs throughout Broken Sound with HOA-approved materials and Palm Beach County wind-code compliant assemblies.`,
+      sections: `
+  <h2>The Broken Sound Re-Roof Window</h2>
+  <p>Broken Sound's homes were built in two primary waves — the original 1980s single-family estates and the 1990s villa and townhome additions. Both waves installed concrete tile with felt underlayment that was rated for 20–25 years. In 2026, that means every original roof in Broken Sound has exceeded its underlayment lifespan, and many have exceeded it by a decade or more. The tile may still look acceptable, but the waterproofing layer beneath it has failed.</p>
+  <h2>Roof Types in Broken Sound</h2>
+  <p>Single-family estates with complex tile rooflines, hip-and-valley geometry, and mixed steep/flat sections. Villas and townhomes with shared rooflines that require coordination between adjacent owners. Country club and amenity buildings with large-span flat roof systems. Each type requires a different scope, material specification, and scheduling approach.</p>
+  <h2>HOA &amp; Country Club Coordination</h2>
+  <p>Broken Sound's HOA maintains detailed architectural guidelines for roof materials, colors, and profiles. The country club community also has specific access, scheduling, and staging requirements — golf cart path restrictions, noise windows around tournament events, and gate access logistics. We coordinate all of it before project start so there are no surprises for the homeowner or the association.</p>
+  <h2>Wind Mitigation &amp; Insurance</h2>
+  <p>Every Broken Sound re-roof includes a wind mitigation form delivered to your insurer. On a Broken Sound estate home, the premium credits for roof-to-wall connections, deck attachment, and roof covering class can represent a substantial annual savings.</p>
+      `
+    },
+    {
+      slug: 'royal-palm-yacht-club-boca-raton-roofing',
+      title: 'Royal Palm Yacht & Country Club Boca Raton Roofing | All Phase Construction USA',
+      description: 'Roof replacement in Royal Palm Yacht & Country Club, Boca Raton FL. Ultra-luxury waterfront estates, premium materials, HOA-coordinated. PBC wind-code compliant.',
+      h1: 'Roofing Contractor for Royal Palm Yacht &amp; Country Club, Boca Raton',
+      hubSlug: 'boca-raton',
+      hubName: 'Boca Raton',
+      county: 'Palm Beach',
+      intro: `Royal Palm Yacht &amp; Country Club is Boca Raton's most exclusive residential community — waterfront estates on the Intracoastal Waterway with some of the largest residential roof footprints in Palm Beach County. All Phase Construction USA replaces roofs on Royal Palm properties with premium materials, marine-grade fastening, and meticulous HOA coordination built to PBC wind code.`,
+      sections: `
+  <h2>The Royal Palm Roofing Standard</h2>
+  <p>Royal Palm estates carry 5,000–15,000+ square feet of roof across main residences, guesthouses, pool cabanas, and covered outdoor structures. The architectural standard is Mediterranean-influenced with clay barrel tile, decorative ridge work, and complex multi-level rooflines. Every detail is visible from the street and the waterway, which means the finished product must be flawless — material quality, alignment, and color consistency are non-negotiable.</p>
+  <h2>Waterfront Material Specifications</h2>
+  <p>Royal Palm's Intracoastal location puts every roof in the salt spray zone. We spec 304-grade stainless fasteners, stainless battens, aluminum flashings, and SBS-modified peel-and-stick underlayment as the baseline — not as upgrades. Clay barrel tile is sourced from manufacturers with documented salt-environment performance data. Standing-seam aluminum is available for pool cabanas, guesthouses, and flat-section applications where a modern aesthetic is appropriate.</p>
+  <h2>HOA &amp; Estate Coordination</h2>
+  <p>Royal Palm's architectural review process is among the most rigorous in Boca Raton. We handle the full submittal — material samples, color boards, project timeline, staging plan, and crew access logistics — and work directly with the community manager throughout the project. For properties with Intracoastal-facing elevations, we coordinate staging to minimize visual impact during the construction period.</p>
+  <h2>Multi-Structure Estate Projects</h2>
+  <p>Most Royal Palm properties have multiple roofed structures. We scope every building on the property, stage the project to minimize disruption to the household, and execute under a single permit and project timeline. Our dual licensing handles any structural issues discovered during tear-off without subcontracting delays.</p>
+      `
+    },
+    {
+      slug: 'boca-raton-luxury-estate-roofing',
+      title: 'Boca Raton Luxury Estate Roofing | All Phase Construction USA',
+      description: 'Luxury estate roofing in Boca Raton — The Sanctuary, Le Lac, St. Andrews Country Club. Premium tile, metal, and flat systems. PBC wind-code compliant.',
+      h1: 'Boca Raton Luxury Estate Roofing',
+      hubSlug: 'boca-raton',
+      hubName: 'Boca Raton',
+      county: 'Palm Beach',
+      intro: `Boca Raton's luxury estate communities — The Sanctuary, Le Lac, St. Andrews Country Club, Woodfield Country Club, and the gated enclaves along Palmetto Park Road — set the highest roofing standard in Palm Beach County. All Phase Construction USA serves these communities with premium material sourcing, meticulous HOA coordination, and wind-code compliant assemblies engineered for the most complex residential roof geometries in the market.`,
+      sections: `
+  <h2>Communities We Serve</h2>
+  <p>The Sanctuary — ultra-exclusive gated community with Mediterranean and contemporary estates on oversized lots. Le Lac — one of Boca Raton's most private enclaves with lakefront estate homes. St. Andrews Country Club — established golf-course community with complex tile roof systems on estate-scale homes. Woodfield Country Club — gated country club community west of the Turnpike. The private estates along Palmetto Park Road west of Powerline where lot sizes and roof footprints rival anything in the county.</p>
+  <h2>The Luxury Estate Roofing Standard</h2>
+  <p>Estate homes in these communities carry 6,000–20,000+ square feet of roof with architectural complexity that standard residential crews cannot handle — barrel tile turrets, curved hip ridges, copper accent flashings, mixed-material transitions between tile and flat sections, and multi-structure compounds with guesthouses, cabanas, and detached garages. We assign dedicated project managers and specialty tile crews to every luxury estate project.</p>
+  <h2>Premium Materials</h2>
+  <p>Imported clay barrel tile for authentic Mediterranean profiles. Copper flashings and accent work where the architectural specification calls for it. Standing-seam copper or aluminum on accent roofs and modern-design estates. SBS-modified peel-and-stick underlayment on every structure regardless of material. Stainless fasteners throughout for long-term corrosion resistance.</p>
+  <h2>Architectural Review &amp; Project Management</h2>
+  <p>Each community's architectural review board has its own submittal requirements, approved material lists, and construction scheduling restrictions. We handle every submittal, coordinate with the community manager on access and staging, and provide the homeowner with a single point of contact from contract through final inspection.</p>
+      `
+    }
+  ];
+
+  for (const p of hoaCommunityPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/${p.hubSlug}" style="color: #dc2626; text-decoration: underline;">${p.hubName} roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/${p.hubSlug}" style="color: #dc2626; text-decoration: underline;">${p.hubName} Roof Replacement</a></li>
+    <li><a href="/roof-repair/${p.hubSlug}" style="color: #dc2626; text-decoration: underline;">${p.hubName} Roof Repair</a></li>
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+  </ul>
+  ${companyAuthorityFooter(p.county)}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered HOA Community: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
   for (const p of browardCommercialPages) {
     const dir = path.join(distDir, p.slug);
     fs.mkdirSync(dir, { recursive: true });
