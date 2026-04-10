@@ -995,6 +995,12 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/boynton-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
     <li><a href="/boynton-beach-commercial-roofing">Commercial Roofing</a></li>
     <li><a href="/boynton-beach-roof-insurance-claim">Roof Insurance Claim</a></li>
+    ` : ''}${citySlug === 'lake-worth-beach' ? `
+    <li><a href="/lake-worth-beach-historic-roofing">Historic District Roofing</a></li>
+    <li><a href="/lake-worth-beach-coastal-roofing">Coastal Roofing</a></li>
+    <li><a href="/lake-worth-beach-flat-roof-replacement">Flat Roof Replacement</a></li>
+    <li><a href="/lake-worth-beach-tile-roof-replacement">Tile Roof Replacement</a></li>
+    <li><a href="/lake-worth-beach-roof-insurance-claim">Roof Insurance Claim</a></li>
     ` : ''}
   </ul>
 </div>
@@ -4453,6 +4459,129 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered Boynton Beach Geo: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // LAKE WORTH BEACH GEO-RELEVANCE — Neighborhood + Service × City pages
+  // Builds topical depth: historic district, coastal,
+  // mid-century, commercial, and insurance claim angles
+  // =====================================================================
+  const lakeWorthPages = [
+    {
+      slug: 'lake-worth-beach-historic-roofing',
+      title: 'Lake Worth Beach Historic District Roofing | All Phase Construction USA',
+      description: 'Historic district roofing in Lake Worth Beach, FL. Period-correct tile and shingle re-roofs for 1920s–1950s bungalows. PBC wind-code compliant.',
+      h1: 'Lake Worth Beach Historic District Roofing',
+      intro: `Lake Worth Beach has one of Palm Beach County's most diverse architectural landscapes, with structures spanning over 100 years of Florida building practices. The Historic District, College Park, and South Palm Park neighborhoods are home to 1920s-era bungalows, 1930s Mediterranean Revival homes, and mid-century concrete block houses — each with its own roofing challenges. All Phase Construction USA replaces roofs on historic Lake Worth Beach properties with period-correct materials that satisfy architectural review while meeting modern Palm Beach County wind-code requirements.`,
+      sections: `
+  <h2>The Historic Lake Worth Beach Roofing Challenge</h2>
+  <p>Original roof framing on 1920s and 1930s Lake Worth Beach homes was not designed for today's wind-code fastening schedule. Many attics reveal undersized rafters, non-standard spacing, and original skip sheathing that cannot accept modern peel-and-stick underlayment without a deck overlay. We assess every historic roof structure before quoting to ensure the assembly we propose actually works with the framing underneath — not just the tile on top.</p>
+  <h2>Period-Correct Materials</h2>
+  <p>We source clay barrel tile for true 1920s Mediterranean matches, work with manufacturers producing period-accurate flat and S-tile profiles, and specify architectural shingles in historic color palettes when the original specification called for wood or composition. Every material choice is coordinated with the Lake Worth Beach Historic Preservation Board where applicable.</p>
+  <h2>Neighborhoods We Serve</h2>
+  <p>The Historic District centered on Lake and Lucerne Avenues. College Park east of Dixie Highway with its mix of bungalows and Craftsman homes. South Palm Park between Southern Boulevard and Lake Worth Road. The downtown Lake Worth Beach corridor where commercial and residential roofing needs overlap on mixed-use structures.</p>
+  <h2>Structural Assessment Included</h2>
+  <p>Our dual licensing — CCC roofing (CCC-1331464) and CGC general contractor (CGC-1526236) — means we can assess and repair structural framing issues without subcontracting. If the original rafters or decking need reinforcement before a new roof system goes on, we handle both the structural work and the roofing under one permit and one crew.</p>
+      `
+    },
+    {
+      slug: 'lake-worth-beach-coastal-roofing',
+      title: 'Lake Worth Beach Coastal Roofing | All Phase Construction USA',
+      description: 'Coastal roofing in Lake Worth Beach, FL. Salt-air rated systems for properties east of I-95. Marine-grade fasteners, PBC wind-code compliant.',
+      h1: 'Lake Worth Beach Coastal Roofing',
+      intro: `Properties east of I-95 in Lake Worth Beach face increased salt air exposure from the Atlantic and Lake Worth Lagoon — conditions that demand marine-grade roofing components standard inland assemblies don't include. All Phase Construction USA builds coastal re-roofs for Lake Worth Beach with 304-grade stainless fasteners, SBS-modified peel-and-stick underlayment, and wind-code compliant assemblies rated to 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The Coastal Zone in Lake Worth Beach</h2>
+  <p>Lake Worth Beach's coastal exposure is two-sided: the Atlantic Ocean to the east and the Lake Worth Lagoon to the west, which means salt air reaches farther inland here than in cities without lagoon-side exposure. Properties between Federal Highway and the beach face the worst corrosion conditions, but even homes west to I-95 see enough salt load to destroy standard galvanized fasteners within a few years.</p>
+  <h2>Landmarks in Our Coastal Service Area</h2>
+  <p>Lake Worth Municipal Beach and the Lake Worth Beach Pier mark the center of the coastal zone. The Lake Worth Lagoon waterfront runs north–south through the city and creates salt exposure on the west side of the barrier island. The Snook Islands Natural Area and Bryant Park anchor the Intracoastal neighborhoods where we regularly work.</p>
+  <h2>Coastal Assemblies We Install</h2>
+  <p>Clay and concrete tile on stainless battens with 304-grade fasteners. Standing-seam aluminum for maximum corrosion resistance and a 40+ year service life. Modified-bitumen flat roof systems with fully adhered application and aluminum or stainless flashings at every penetration.</p>
+  <h2>Wind Mitigation for Coastal Homes</h2>
+  <p>Every coastal re-roof includes a completed wind mitigation form delivered to your insurer. On a Lake Worth Beach coastal home, the premium credits for opening protection, roof-to-wall connections, and roof covering class typically represent a meaningful annual savings.</p>
+      `
+    },
+    {
+      slug: 'lake-worth-beach-flat-roof-replacement',
+      title: 'Lake Worth Beach Flat Roof Replacement | All Phase Construction USA',
+      description: 'Flat roof replacement in Lake Worth Beach, FL. Mid-century homes, commercial buildings, and mixed-use structures. TPO, modified-bitumen, built-up systems.',
+      h1: 'Flat Roof Replacement in Lake Worth Beach, FL',
+      intro: `Lake Worth Beach's mid-century concrete block homes and downtown mixed-use buildings share a common feature — flat or low-slope roofs that are now 30–60 years old and well past their service life. All Phase Construction USA replaces flat roof systems across Lake Worth Beach with TPO, modified-bitumen, and built-up assemblies engineered to Palm Beach County wind code with positive drainage and wind-rated edge metal.`,
+      sections: `
+  <h2>The Flat Roof Problem in Lake Worth Beach</h2>
+  <p>Mid-century homes built in the 1950s through 1970s across College Park, Lucerne Lakes, and the neighborhoods south of Lake Worth Road were originally roofed with tar-and-gravel or early modified-bitumen systems. Many have been patched and coated repeatedly over the decades, creating layered assemblies that trap moisture and make leak detection nearly impossible. A full tear-off and replacement is almost always the right call over another coating.</p>
+  <h2>Systems We Install</h2>
+  <p>TPO single-ply membrane for energy efficiency and reflectivity on residential and commercial flat roofs. Fully adhered modified-bitumen for durability and puncture resistance on homes with rooftop foot traffic or HVAC equipment. Multi-ply built-up systems for commercial structures requiring the heaviest-duty option. Every system includes tapered insulation for positive drainage and wind-rated edge metal.</p>
+  <h2>Commercial Flat Roofs on Lake Avenue</h2>
+  <p>The Lake Avenue and Lucerne Avenue downtown corridor mixes retail, restaurant, and residential uses under flat roof assemblies that are often original to the building. We handle commercial flat roof replacement with minimal business disruption, phased tear-off where needed, and full Palm Beach County permitting.</p>
+  <h2>Dual Licensing Advantage</h2>
+  <p>Flat roof replacements on older structures frequently uncover parapet deterioration, fascia rot, or structural deck issues. Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) means we handle both the structural repair and the roof system under one permit.</p>
+      `
+    },
+    {
+      slug: 'lake-worth-beach-roof-insurance-claim',
+      title: 'Lake Worth Beach Roof Insurance Claim | All Phase Construction USA',
+      description: 'Lake Worth Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
+      h1: 'Lake Worth Beach Roof Insurance Claim Assistance',
+      intro: `Lake Worth Beach's mix of aging housing stock and coastal storm exposure generates a high volume of roof insurance claims — and those claims are won or lost on documentation quality. All Phase Construction USA handles the full claim process for Lake Worth Beach homeowners from drone inspection through re-roof completion and wind mitigation filing.`,
+      sections: `
+  <h2>Why Lake Worth Beach Claims Need Expert Documentation</h2>
+  <p>Adjusters scrutinize Lake Worth Beach claims carefully because the city's housing stock spans 100 years of building practices, which means pre-existing conditions are common and must be clearly distinguished from storm damage. A 1920s bungalow with original decking requires different documentation than a 1990s concrete block home. We document both the storm damage and the pre-existing condition to give the adjuster a clear, defensible scope.</p>
+  <h2>Our Claim Documentation Process</h2>
+  <p>Free inspection with drone and attic imaging on day one. Full photographic damage documentation with close-ups and wide-angle context shots. Scope of repair written to match the documented damage pattern and the building's construction era. Direct coordination with your adjuster during their site visit. Supplement filing if the initial scope doesn't cover the full documented damage.</p>
+  <h2>After the Claim Is Approved</h2>
+  <p>Palm Beach County permit pulled, re-roof executed to current wind-code standards, and a wind mitigation form delivered to your insurer on completion to unlock premium credits.</p>
+  <h2>Service Area</h2>
+  <p>Our Lake Worth Beach claim support covers the Historic District, College Park, South Palm Park, Lucerne Lakes, the coastal zone east of I-95, and the downtown Lake Avenue commercial corridor.</p>
+      `
+    },
+    {
+      slug: 'lake-worth-beach-tile-roof-replacement',
+      title: 'Lake Worth Beach Tile Roof Replacement | All Phase Construction USA',
+      description: 'Tile roof replacement in Lake Worth Beach, FL. Clay and concrete tile, full underlayment tear-off, structural assessment included. PBC wind-code compliant.',
+      h1: 'Tile Roof Replacement in Lake Worth Beach, FL',
+      intro: `Tile roofs across Lake Worth Beach range from original 1920s clay barrel tile on Historic District bungalows to 1990s concrete flat tile on newer subdivisions near Lucerne Lakes. Regardless of era, the re-roof trigger is almost always the underlayment — not the tile — failing after 20–25 years. All Phase Construction USA replaces tile roofs across Lake Worth Beach with full underlayment tear-off, structural assessment, and stainless battens for long-term PBC wind-code compliance.`,
+      sections: `
+  <h2>Two Eras of Tile in Lake Worth Beach</h2>
+  <p>Historic-era tile homes (pre-1960) often have original skip sheathing and undersized rafters that need a structural overlay before new underlayment can go on. Modern-era tile homes (1980s–2000s) have plywood decking that typically just needs re-nailing to current code. We assess every structure before quoting to ensure the right scope — a structural overlay on a bungalow is a very different project from a standard tear-and-replace on a 1990s home.</p>
+  <h2>Our Tile Re-Roof Process</h2>
+  <p>Drone and attic inspection to assess deck condition and structural framing. Tile removal with on-site salvage where tiles are reusable. Full underlayment tear-off. Deck repair, overlay, or re-nailing as conditions require. New SBS-modified peel-and-stick underlayment. Tile reset with stainless fasteners. Replacement tile sourced for cracked or chipped pieces.</p>
+  <h2>Neighborhoods We Serve</h2>
+  <p>The Historic District and College Park for barrel and S-tile re-roofs on pre-war homes. Lucerne Lakes and the neighborhoods south of Lake Worth Road for concrete flat tile replacements. The coastal zone east of Federal Highway where stainless battens and marine-grade fasteners are mandatory.</p>
+  <h2>Warranty &amp; Insurance</h2>
+  <p>Every tile re-roof includes a manufacturer underlayment warranty, our workmanship guarantee, and a wind mitigation form delivered to your insurer on completion.</p>
+      `
+    }
+  ];
+
+  for (const p of lakeWorthPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Lake Worth Beach roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Lake Worth Beach Roof Replacement</a></li>
+    <li><a href="/roof-repair/lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Lake Worth Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Lake Worth Beach Roof Inspection</a></li>
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Lake Worth Geo: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
   for (const p of [...priority2Pages, ...priority3Pages]) {
     const dir = path.join(distDir, p.slug);
