@@ -6,21 +6,24 @@ import './index.css';
 
 const rootElement = document.getElementById('root')!;
 
-// Prerendered static-only pages (geo/community landing pages) set
-// data-static-only="true" on the root div.  Skip React mount so the
-// server-rendered HTML stays visible instead of being replaced by
-// React Router's catch-all NotFoundPage.
-if (rootElement.dataset.staticOnly === 'true') {
-  // nothing to do — static HTML is already rendered
-} else {
-  // Add js-ready class to hide SEO static content when React loads
-  document.documentElement.classList.add('js-ready');
-
-  createRoot(rootElement).render(
-    <StrictMode>
-      <HelmetProvider>
-        <App />
-      </HelmetProvider>
-    </StrictMode>
-  );
+// Before React mounts and replaces the DOM, save any prerendered
+// static content so the catch-all route can re-inject it inside
+// the full site layout (Header, Footer, Nav) instead of showing 404.
+const seoStatic = rootElement.querySelector('#seo-static');
+if (seoStatic) {
+  (window as any).__PRERENDERED_HTML__ = seoStatic.innerHTML;
+  (window as any).__PRERENDERED_TITLE__ = document.title;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  (window as any).__PRERENDERED_DESC__ = metaDesc?.getAttribute('content') || '';
 }
+
+// Add js-ready class to hide SEO static content when React loads
+document.documentElement.classList.add('js-ready');
+
+createRoot(rootElement).render(
+  <StrictMode>
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
+  </StrictMode>
+);

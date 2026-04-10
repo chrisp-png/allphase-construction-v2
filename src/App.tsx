@@ -11,6 +11,7 @@ import AssessmentModal from './components/AssessmentModal';
 import { AssessmentModalProvider, useAssessmentModal } from './context/AssessmentModalContext';
 import NuclearMetadata from './components/NuclearMetadata';
 import ErrorBoundary from './components/ErrorBoundary';
+import StaticContentPage from './pages/StaticContentPage';
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -322,7 +323,7 @@ function AppContent() {
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path="*" element={(window as any).__PRERENDERED_HTML__ ? <StaticContentPage /> : <NotFoundPage />} />
           </Routes>
         </Suspense>
       </main>
