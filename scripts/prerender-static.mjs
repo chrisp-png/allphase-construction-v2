@@ -5026,6 +5026,65 @@ ${companyAuthorityFooter()}
     }
   ];
 
+  // =====================================================================
+  // ST. ANDREWS COUNTRY CLUB — West Boca off Clint Moore Rd
+  // =====================================================================
+  const stAndrewsPages = [
+    {
+      slug: 'st-andrews-country-club-boca-raton-roofing',
+      title: 'St. Andrews Country Club Boca Raton Roofing | All Phase Construction USA',
+      description: 'Roof replacement in St. Andrews Country Club, West Boca Raton FL. Estate tile re-roofs, HOA-coordinated, PBC wind-code compliant. Free inspection.',
+      h1: 'Roofing Contractor for St. Andrews Country Club, Boca Raton',
+      hubSlug: 'boca-raton',
+      hubName: 'Boca Raton',
+      county: 'Palm Beach',
+      intro: `St. Andrews Country Club is one of West Boca Raton's most prestigious gated golf-course communities — located off Clint Moore Road west of the Turnpike, with estate homes built primarily in the late 1980s and 1990s. The original tile roof systems across St. Andrews are now 30–40 years old and deep into the re-roof window. All Phase Construction USA replaces roofs throughout St. Andrews with HOA-approved materials, meticulous architectural review coordination, and Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
+      sections: `
+  <h2>The St. Andrews Re-Roof Window</h2>
+  <p>St. Andrews Country Club was developed in the late 1980s through the mid-1990s, with most homes carrying original concrete tile systems installed during initial construction. Those systems are now 30–40 years old. The tile itself may still appear intact from the street, but the felt underlayment beneath — rated for 20–25 years — failed a decade ago on the oldest homes and is actively failing across the rest of the community. Interior leaks, mold behind drywall, and soft spots on the deck are the symptoms homeowners see when the underlayment has given out.</p>
+  <h2>Estate-Scale Roof Complexity</h2>
+  <p>St. Andrews estate homes carry 4,000–10,000+ square feet of roof with complex multi-level rooflines, hip-and-valley intersections, barrel tile turrets, mixed steep-slope and flat-section transitions, and decorative ridge work. These aren't standard residential re-roofs — they require specialty tile crews who understand complex geometry, custom flashing fabrication at every transition point, and project managers who can sequence multi-week estate projects without gaps or delays.</p>
+  <h2>HOA &amp; Country Club Coordination</h2>
+  <p>St. Andrews' architectural review committee maintains strict standards for tile profile, color, and installation quality. We handle the full submittal — physical tile samples, color boards, project timeline, staging plan, and debris management logistics — and secure written approval before ordering materials. The country club environment also requires coordination around golf operations, gate access scheduling, and noise-sensitive hours that we build into every project plan.</p>
+  <h2>Materials for St. Andrews</h2>
+  <p>Concrete and clay tile matched to the community's approved palette and profile. SBS-modified peel-and-stick underlayment on every project — no felt. Stainless fasteners and battens for long-term performance. Modified-bitumen on flat and low-slope sections with fully adhered application and wind-rated edge metal. For homeowners considering an upgrade, standing-seam metal is available for flat sections and contemporary accents where the HOA permits it.</p>
+  <h2>Clint Moore Road Service Area</h2>
+  <p>Our West Boca service area extends across the entire Clint Moore Road corridor — from St. Andrews Country Club and the surrounding communities west of the Turnpike through Boca West, Boca Pointe, and the residential neighborhoods east to Powerline Road. St. Andrews homeowners benefit from our proximity to the West Boca market and our deep familiarity with the community's architectural standards.</p>
+  <h2>Insurance &amp; Wind Mitigation</h2>
+  <p>Every St. Andrews re-roof includes a completed OIR-B1-1802 wind mitigation form delivered to your insurer. On an estate-scale St. Andrews home, the premium credits for roof-to-wall connections, deck attachment, secondary water resistance, and roof covering class can represent a substantial annual savings that compounds over the life of the policy. We also provide full insurance claim documentation and adjuster coordination for storm-damage claims.</p>
+      `
+    }
+  ];
+
+  for (const p of stAndrewsPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement</a></li>
+    <li><a href="/boca-raton-luxury-estate-roofing" style="color: #dc2626; text-decoration: underline;">Boca Raton Luxury Estate Roofing</a></li>
+    <li><a href="/broken-sound-boca-raton-roofing" style="color: #dc2626; text-decoration: underline;">Broken Sound Roofing</a></li>
+    <li><a href="/west-boca-raton-roof-replacement" style="color: #dc2626; text-decoration: underline;">West Boca Raton Roof Replacement</a></li>
+    <li><a href="/boca-raton-tile-re-roof" style="color: #dc2626; text-decoration: underline;">Boca Raton Tile Re-Roof</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered St. Andrews: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
   for (const p of lighthousePompanoPages) {
     const dir = path.join(distDir, p.slug);
     fs.mkdirSync(dir, { recursive: true });
