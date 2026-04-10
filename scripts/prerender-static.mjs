@@ -989,7 +989,11 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
     <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
-    ${citySlug === 'boca-raton' ? `
+    ${citySlug === 'deerfield-beach' ? `
+    <li><a href="/deerfield-beach-commercial-roofing">Commercial Roofing</a></li>
+    ` : ''}${citySlug === 'pompano-beach' ? `
+    <li><a href="/pompano-beach-commercial-roofing">Commercial Roofing</a></li>
+    ` : ''}${citySlug === 'boca-raton' ? `
     <li><a href="/boca-raton-commercial-roofing">Commercial Roofing</a></li>
     <li><a href="/boca-raton-metal-roofing">Metal Roofing</a></li>
     <li><a href="/boca-raton-tile-re-roof">Tile Re-Roof</a></li>
@@ -4735,6 +4739,80 @@ ${companyAuthorityFooter()}
       `
     }
   ];
+
+  // =====================================================================
+  // DEERFIELD BEACH + POMPANO BEACH — Commercial roofing pages
+  // HQ market (Deerfield) + adjacent Broward commercial corridor
+  // =====================================================================
+  const browardCommercialPages = [
+    {
+      slug: 'deerfield-beach-commercial-roofing',
+      title: 'Deerfield Beach Commercial Roofing | All Phase Construction USA',
+      description: 'Commercial roofing in Deerfield Beach, FL. Flat roof replacement and repair for Hillsboro Blvd, Powerline Rd, and the I-95 corridor. HVHZ-compliant, dual licensed.',
+      h1: 'Deerfield Beach Commercial Roofing',
+      intro: `Deerfield Beach is home to All Phase Construction USA's headquarters at 590 Goolsby Blvd — and the commercial corridors surrounding it generate some of the highest flat-roof replacement demand in Broward County. The Hillsboro Boulevard corridor, the Powerline Road office parks, and the I-95 interchange district are all concentrated with 1980s and 1990s-era commercial structures whose original roof systems are at or past end-of-life. We replace and repair commercial roofs across Deerfield Beach with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
+      sections: `
+  <h2>The Deerfield Beach Commercial Roofing Market</h2>
+  <p>Deerfield Beach's commercial building stock grew rapidly along Hillsboro Boulevard and Powerline Road in the 1980s and 1990s — strip centers, medical offices, light industrial, and professional parks that now carry 30–40 year old flat roof systems. The Quiet Waters Park industrial corridor and the Century Village commercial perimeter add additional aging roof inventory. Many of these buildings have been patched and coated repeatedly, creating layered assemblies that trap moisture and make leak detection impossible without a full tear-off.</p>
+  <h2>Commercial Landmarks We Serve</h2>
+  <p>The Hillsboro Boulevard corridor from I-95 west to Powerline Road — Deerfield Beach's densest commercial stretch. The Powerline Road office and retail belt running north-south through the city. The I-95/Hillsboro interchange district with its concentration of hospitality, retail, and service buildings. The Goolsby Boulevard industrial area surrounding our headquarters. Century Village's commercial perimeter including retail, medical, and service providers serving the 55+ community.</p>
+  <h2>Systems We Install</h2>
+  <p>TPO single-ply membrane for energy efficiency and reflectivity on office and retail buildings. Fully adhered modified-bitumen for puncture resistance on high-traffic rooftops with HVAC and equipment. Multi-ply built-up systems for heavy-duty industrial and warehouse applications. Every system meets Broward County HVHZ compliance with 175+ mph wind ratings, enhanced edge metal, and approved fastening schedules.</p>
+  <h2>HVHZ Compliance on Commercial Structures</h2>
+  <p>Every commercial roof in Deerfield Beach falls within Broward County's High Velocity Hurricane Zone. HVHZ compliance on a commercial structure requires product approvals, fastening schedules, and edge metal specifications that exceed standard Florida Building Code. We hold the certifications and the product approval documentation to pass Broward County commercial roof inspections without callbacks.</p>
+  <h2>Dual Licensing Advantage</h2>
+  <p>Commercial roof replacements frequently uncover parapet deterioration, structural deck damage, or fascia failure. Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) means we handle both the structural repair and the roof system under one permit — no subcontractor delays, no split responsibility.</p>
+      `
+    },
+    {
+      slug: 'pompano-beach-commercial-roofing',
+      title: 'Pompano Beach Commercial Roofing | All Phase Construction USA',
+      description: 'Commercial roofing in Pompano Beach, FL. Flat roof replacement and repair for Atlantic Blvd, Copans Rd, and the Sample Rd corridor. HVHZ-compliant, dual licensed.',
+      h1: 'Pompano Beach Commercial Roofing',
+      intro: `Pompano Beach's commercial corridors — Atlantic Boulevard, Copans Road, Sample Road, and the Federal Highway strip — run the full east-west width of the city with 1970s through 1990s-era flat roof inventory that is aging out fast. All Phase Construction USA replaces and repairs commercial roof systems across Pompano Beach with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
+      sections: `
+  <h2>The Pompano Beach Commercial Roofing Market</h2>
+  <p>Pompano Beach's commercial real estate stretches from the beachside hospitality district on A1A to the inland industrial and office corridors along Copans Road and Sample Road. The city's Powerline Road corridor connects to Deerfield Beach's commercial belt to the north, creating one of the longest continuous commercial roof inventories in Broward County. Buildings along Atlantic Boulevard between Federal Highway and I-95 — retail, restaurant, medical, and professional office — carry some of the oldest commercial flat roofs in the market.</p>
+  <h2>Commercial Landmarks We Serve</h2>
+  <p>The Atlantic Boulevard corridor from A1A to Powerline Road — Pompano Beach's primary commercial artery. The Copans Road industrial and office belt. The Sample Road corridor connecting Pompano to Coral Springs with dense retail and medical office. The Pompano Beach Airpark district with light industrial and aviation-related commercial structures. The beachside A1A hospitality corridor where salt exposure compounds flat roof deterioration.</p>
+  <h2>Systems We Install</h2>
+  <p>TPO single-ply membrane for office and retail buildings — energy-efficient, reflective, and clean weld seams. Fully adhered modified-bitumen for restaurants, warehouses, and buildings with rooftop equipment and foot traffic. Multi-ply built-up systems for heavy industrial applications. Coastal commercial buildings on A1A get aluminum flashings and stainless fasteners as standard to combat salt corrosion.</p>
+  <h2>HVHZ Compliance on Commercial Structures</h2>
+  <p>Pompano Beach falls within Broward County's High Velocity Hurricane Zone. Every commercial roof installation requires HVHZ-approved products, fastening schedules, and edge metal specifications. We carry the product approval documentation and HVHZ certifications to pass Broward County commercial inspections without issue.</p>
+  <h2>Beachside Commercial Roofing</h2>
+  <p>Hotels, restaurants, and mixed-use buildings on the A1A beachside corridor face the worst combination of salt air, UV, and wind exposure in Pompano Beach. We spec marine-grade flashings, fully adhered membranes, and enhanced edge metal on every coastal commercial project. Phased scheduling is available to keep hospitality operations running during the re-roof.</p>
+      `
+    }
+  ];
+
+  for (const p of browardCommercialPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Commercial Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/${p.slug.startsWith('deerfield') ? 'deerfield-beach' : 'pompano-beach'}" style="color: #dc2626; text-decoration: underline;">${p.slug.startsWith('deerfield') ? 'Deerfield Beach' : 'Pompano Beach'} roofing hub</a> to schedule a free inspection.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach Roof Replacement</a></li>
+    <li><a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach Roof Replacement</a></li>
+    <li><a href="/locations/broward-county" style="color: #dc2626; text-decoration: underline;">Broward County Roofing Contractor</a></li>
+    <li><a href="/boca-raton-commercial-roofing" style="color: #dc2626; text-decoration: underline;">Boca Raton Commercial Roofing</a></li>
+    <li><a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale Roof Replacement</a></li>
+  </ul>
+  ${companyAuthorityFooter('Broward')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Broward Commercial: ${p.slug}/index.html`);
+    totalPages++;
+  }
 
   for (const p of bocaFinalPages) {
     const dir = path.join(distDir, p.slug);
