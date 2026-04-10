@@ -40,7 +40,7 @@ export interface SEOMetadata {
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/': {
     title: 'All Phase Construction USA | South Florida Roofer Since 2005',
-    description: 'Free roof inspection in 24 hours. Dual-licensed South Florida roofer since 2005. 2,500+ roofs, A+ BBB, HVHZ-certified. Call (754) 227-5605.',
+    description: 'Free roof inspection in 48 hours. Dual-licensed South Florida roofer since 2005. 2,500+ roofs, A+ BBB, HVHZ-certified. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
