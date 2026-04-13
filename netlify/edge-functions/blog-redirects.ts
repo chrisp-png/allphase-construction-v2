@@ -62,6 +62,32 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/what-makes-a-roof-hurricane-resistant': { to: '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes', status: 301 },
   '/blog/top-roofers-in-broward-and-palm-beach-counties': { to: '/blog', status: 301 },
   '/blog/choosing-between-roof-repair-and-full-replacement': { to: '/blog', status: 301 },
+
+  // GSC Redirect error fixes — 2026-04-13
+  '/blog/march-13th-weekly-newsletter': { to: '/blog', status: 301 },
+  '/blog/how-long-does-it-take-to-get-a-roof-permit-in-south-florida': { to: '/blog', status: 301 },
+  '/blog/how-often-should-i-replace-my-roof-in-south-florida': { to: '/blog', status: 301 },
+  '/blog/bug-free-summers-the-best-screens-for-insect-protection': { to: '/blog', status: 301 },
+  '/blog/what-to-expect-during-a-roof-replacement-project': { to: '/blog', status: 301 },
+  '/blog/how-roof-color-affects-energy-efficiency-in-hot-climates': { to: '/blog', status: 301 },
+  '/blog/why-homeowners-are-choosing-metal-roofs-in-2025-see-the-all-phase-difference': { to: '/blog', status: 301 },
+  '/blog/how-long-will-my-new-roof-last-a-breakdown-by-material': { to: '/blog', status: 301 },
+  '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-2': { to: '/blog', status: 301 },
+  '/blog/how-to-choose-the-best-roofing-contractor-for-your-next-building-project': { to: '/blog', status: 301 },
+  '/blog/what-is-spline': { to: '/blog', status: 301 },
+  '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-5': { to: '/blog', status: 301 },
+  '/blog/exposed-ceilings-can-have-challenges-when-getting-a-new-roof': { to: '/blog', status: 301 },
+  '/blog/our-roofing-company-is-proud-to-be-a-family-owned-business': { to: '/blog', status: 301 },
+  '/blog/can-your-hoa-say-no-to-a-metal-roof-a-guide-for-homeowners': { to: '/blog', status: 301 },
+  '/blog/how-to-hire-a-roofer-in-south-florida-what-to-look-for-and-what-to-avoid': { to: '/blog', status: 301 },
+  '/blog/how-much-does-a-screen-enclosure-cost': { to: '/blog', status: 301 },
+  '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-4': { to: '/blog', status: 301 },
+  '/blog/author/douglas-silva': { to: '/about-us', status: 301 },
+  // NOTE: The following blog posts are LIVE and served by the SPA/prerendered HTML.
+  // They should NOT be in this redirect map:
+  //   /blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida
+  //   /blog/impact-of-tariffs-on-metal-roofing-prices
+  //   /blog/why-choose-tile-roofing-in-south-florida
 };
 
 // Blog tag and feed wildcards
