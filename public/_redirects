@@ -21,6 +21,8 @@ http://landing.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/ 
 https://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-replacement-process 301!
 http://roofreplacement.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/roof-replacement-process 301!
 # tileroof.allphaseconstructionfl.com is a live Google Ads landing page — DO NOT redirect
+https://quote.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/contact 301!
+http://quote.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/contact 301!
 
 # ======================================================================
 # DEAD / RENAMED ROUTE REDIRECTS (GSC 5xx top offenders)
@@ -499,6 +501,84 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /pompano-beach-coastal-roofing /pompano-beach-coastal-roofing/index.html 200!
 /pompano-beach-tile-roof-replacement /pompano-beach-tile-roof-replacement/index.html 200!
 /palm-aire-pompano-beach-roofing /palm-aire-pompano-beach-roofing/index.html 200!
+
+# ======================================================================
+# GSC NOINDEX / SOFT 404 / CRAWLED-NOT-INDEXED FIXES — 2026-04-13
+# Dead routes that were returning 200 via SPA catch-all (NotFoundPage)
+# which has <meta name="robots" content="noindex">. Adding 301s so
+# Google gets a proper redirect instead of a noindex soft 404.
+# ======================================================================
+
+# Dead city short URLs → nearest live location page
+/parkland /locations/parkland 301!
+/north-palm-beach /locations/west-palm-beach 301!
+/lantana /locations/lantana 301!
+/lauderhill /locations/lauderhill 301!
+
+# Dead feature pages → best match
+/leave-a-review /reviews 301!
+/leave-a-review/ /reviews 301!
+/home / 301!
+/solar / 301!
+/solar/ / 301!
+/government-contracting /commercial-roofing 301!
+/career-opportunity /about-us 301!
+/career-opportunity/ /about-us 301!
+/hurricane-help /contact 301!
+/hurricane-help/ /contact 301!
+/leak-identification /roof-inspection 301!
+/leak-identification/ /roof-inspection 301!
+/title-roofing /residential-roofing 301!
+/title-roofing/ /residential-roofing 301!
+/flat-roof-moisture-infrared-inspection /roof-inspection 301!
+/south-florida-roofing-reviews /reviews 301!
+
+# Dead location sub-pages
+/locations/loxahatchee-groves /locations/west-palm-beach 301!
+/locations/manalapan /locations/lake-worth-beach 301!
+/locations/lazy-lake /locations/deerfield-beach 301!
+/locations/lauderdale-lakes /locations/fort-lauderdale 301!
+/locations/southwest-ranches /locations/weston 301!
+/locations/palm-springs /locations/west-palm-beach 301!
+/locations/deerfield-beach/service-area/palm-springs /locations/west-palm-beach 301!
+
+# Missing legacy roofing-contractor redirects
+/roofing-contractor-fort-lauderdale-fl /locations/fort-lauderdale 301!
+/roofing-contractor-hallandale-beach-fl /locations/hallandale-beach 301!
+/roofing-contractor-lauderdale-by-the-sea-fl /locations/lauderdale-by-the-sea 301!
+/roofing-contractor-tamarac-fl /locations/tamarac 301!
+
+# Soft 404 fix — /roof-repair/fort-lauderdale doesn't exist as a route
+/roof-repair/fort-lauderdale /roof-repair 301!
+/roof-repair/fort-lauderdale/ /roof-repair 301!
+
+# Dead blog posts missing from _redirects (also added to blog-redirects edge fn)
+/blog/how-to-spot-and-fix-roof-leaks-in-south-florida-a-homeowners-guide-to-protecting-our-home /blog 301!
+/blog/how-to-spot-and-fix-roof-leaks-in-south-florida-a-homeowners-guide-to-protecting-our-home/ /blog 301!
+/blog/looking-for-a-roofing-contractor-near-deerfield-beach /blog 301!
+/blog/looking-for-a-roofing-contractor-near-deerfield-beach/ /blog 301!
+/blog/how-much-does-a-new-shingle-roof-cost /blog/roof-replacement-cost-broward-county-2026 301!
+/blog/how-much-does-a-new-shingle-roof-cost/ /blog/roof-replacement-cost-broward-county-2026 301!
+/blog/what-type-of-screen-should-i-install /blog 301!
+/blog/what-type-of-screen-should-i-install/ /blog 301!
+/blog/tips-for-preparing-for-the-construction-of-your-new-roof /blog 301!
+/blog/tips-for-preparing-for-the-construction-of-your-new-roof/ /blog 301!
+/blog/top-5-benefits-of-installing-a-screen-room-in-florida /blog 301!
+/blog/top-5-benefits-of-installing-a-screen-room-in-florida/ /blog 301!
+/blog/the-role-of-roof-pitch-in-water-drainage-and-design /blog 301!
+/blog/the-role-of-roof-pitch-in-water-drainage-and-design/ /blog 301!
+/blog/all-phase-construction-unique-benefits /blog 301!
+/blog/all-phase-construction-unique-benefits/ /blog 301!
+/blog/one-contractor-or-multiple-why-a-full-service-contractor-is-best-for-your-south-florida-roof /blog 301!
+/blog/one-contractor-or-multiple-why-a-full-service-contractor-is-best-for-your-south-florida-roof/ /blog 301!
+/blog/choosing-the-best-roofing-materials-for-your-boca-raton-home-with-all-phase-construction-usa /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
+/blog/choosing-the-best-roofing-materials-for-your-boca-raton-home-with-all-phase-construction-usa/ /blog/metal-roof-vs-tile-roof-south-florida-hurricanes 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-3 /blog 301!
+/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-3/ /blog 301!
+/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas /blog 301!
+/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas/ /blog 301!
+/blog/the-roi-of-installing-solar-panels-in-florida /blog 301!
+/blog/the-roi-of-installing-solar-panels-in-florida/ /blog 301!
 
 # Legacy location pages (broken dev-mode files) - redirect to nearest served city
 /locations/surfside /locations/hallandale-beach 301!

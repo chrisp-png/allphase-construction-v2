@@ -83,11 +83,29 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/how-much-does-a-screen-enclosure-cost': { to: '/blog', status: 301 },
   '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-4': { to: '/blog', status: 301 },
   '/blog/author/douglas-silva': { to: '/about-us', status: 301 },
-  // NOTE: The following blog posts are LIVE and served by the SPA/prerendered HTML.
+
+  // GSC 404 + Crawled-not-indexed dead blog posts — 2026-04-13
+  '/blog/how-to-spot-and-fix-roof-leaks-in-south-florida-a-homeowners-guide-to-protecting-our-home': { to: '/blog', status: 301 },
+  '/blog/looking-for-a-roofing-contractor-near-deerfield-beach': { to: '/blog', status: 301 },
+  '/blog/how-much-does-a-new-shingle-roof-cost': { to: '/blog/roof-replacement-cost-broward-county-2026', status: 301 },
+  '/blog/what-type-of-screen-should-i-install': { to: '/blog', status: 301 },
+  '/blog/tips-for-preparing-for-the-construction-of-your-new-roof': { to: '/blog', status: 301 },
+  '/blog/top-5-benefits-of-installing-a-screen-room-in-florida': { to: '/blog', status: 301 },
+  '/blog/the-role-of-roof-pitch-in-water-drainage-and-design': { to: '/blog', status: 301 },
+  '/blog/all-phase-construction-unique-benefits': { to: '/blog', status: 301 },
+  '/blog/one-contractor-or-multiple-why-a-full-service-contractor-is-best-for-your-south-florida-roof': { to: '/blog', status: 301 },
+  '/blog/choosing-the-best-roofing-materials-for-your-boca-raton-home-with-all-phase-construction-usa': { to: '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes', status: 301 },
+  '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-3': { to: '/blog', status: 301 },
+  '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas': { to: '/blog', status: 301 },
+  '/blog/the-roi-of-installing-solar-panels-in-florida': { to: '/blog', status: 301 },
+
+  // NOTE: The following blog posts are LIVE (Supabase CMS) and served by the SPA.
   // They should NOT be in this redirect map:
   //   /blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida
   //   /blog/impact-of-tariffs-on-metal-roofing-prices
   //   /blog/why-choose-tile-roofing-in-south-florida
+  //   /blog/what-is-roof-underlayment-and-why-does-it-matter
+  //   /blog/residential-flat-roofs-types-options-and-florida-considerations
 };
 
 // Blog tag and feed wildcards
