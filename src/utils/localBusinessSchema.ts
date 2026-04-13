@@ -170,12 +170,63 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
       }
     ],
 
-    // Same as link
+    // AI discoverability: entity knowledge signals
+    knowsAbout: [
+      'Roof Replacement',
+      'Roof Repair',
+      'Roof Inspection',
+      'Shingle Roofing',
+      'Tile Roofing',
+      'Metal Roofing',
+      'Flat Roofing',
+      'Commercial Roofing',
+      'Hurricane Damage Repair',
+      'Storm Damage Restoration',
+      'Roof Leak Detection',
+      'High Velocity Hurricane Zone (HVHZ) Compliance',
+      'Florida Building Code',
+      'Roofing Insurance Claims',
+      'Roof Maintenance',
+      'Emergency Roofing Services'
+    ],
+
+    // Additional type signals for AI entity recognition
+    additionalType: [
+      'https://en.wikipedia.org/wiki/Roofing',
+      'https://en.wikipedia.org/wiki/General_contractor'
+    ],
+
+    // Industry classification
+    isicV4: '4391',
+    naicsCode: '238160',
+
+    // Currency and language signals for AI
+    currenciesAccepted: 'USD',
+
+    // Founding and legal details for entity authority
+    foundingLocation: {
+      '@type': 'Place',
+      name: 'Deerfield Beach, Florida'
+    },
+    legalName: 'All Phase Construction USA LLC',
+    slogan: 'Your Roof. Our Mission.',
+
+    // Brand signal
+    brand: {
+      '@type': 'Brand',
+      name: 'All Phase Construction USA',
+      logo: 'https://allphaseconstructionfl.com/logo.png'
+    },
+
+    // Same as links — critical for AI entity matching
     sameAs: [
       'https://www.facebook.com/AllPhaseConstructionUsA',
       'https://www.instagram.com/all_phase_construction_usa/',
       'https://www.linkedin.com/company/all-phase-construction-usa-llc',
-      'https://www.youtube.com/@allphaseconstructionusa5626'
+      'https://www.youtube.com/@allphaseconstructionusa5626',
+      'https://www.google.com/maps/place/All+Phase+Construction+USA',
+      'https://www.bbb.org/us/fl/deerfield-beach/profile/roofing-contractors/all-phase-construction-usa-llc-0633-92029321',
+      'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach'
     ]
   };
 }
