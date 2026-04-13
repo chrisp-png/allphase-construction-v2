@@ -506,9 +506,21 @@ export default function FrequentlyAskedQuestionsPage() {
     'Do you work in Miami-Dade County?': 'Our primary service area covers Broward County and Palm Beach County, headquartered in Deerfield Beach. We do not currently service Miami-Dade County.'
   };
 
-  // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
+  // Build FAQPage schema from plain-text answers
+  const faqPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: Object.entries(faqPlainAnswers).map(([question, answer]) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: answer
+      }
+    }))
+  };
 
-  // Inject LocalBusiness schema via DOM (Helmet ld+json doesn't render reliably)
+  // Inject LocalBusiness + FAQPage schema via DOM (Helmet ld+json doesn't render reliably)
   useEffect(() => {
     const SCHEMA_ID = 'faq-page-schema-ld';
     let script = document.getElementById(SCHEMA_ID) as HTMLScriptElement | null;
@@ -518,7 +530,7 @@ export default function FrequentlyAskedQuestionsPage() {
       script.id = SCHEMA_ID;
       document.head.appendChild(script);
     }
-    script.textContent = JSON.stringify(localBusinessSchema);
+    script.textContent = JSON.stringify([localBusinessSchema, faqPageSchema]);
 
     return () => {
       const el = document.getElementById(SCHEMA_ID);
