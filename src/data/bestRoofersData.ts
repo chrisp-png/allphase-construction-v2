@@ -656,5 +656,54 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     ],
     localExpertiseTitle: 'Why Lake Worth Beach Roofing Balances History and Hurricane Safety',
     localExpertiseParagraph: 'Lake Worth Beach has one of Palm Beach County\'s most diverse architectural landscapes, with structures spanning over 100 years of Florida building practices.'
+  },
+  'boca-raton': {
+    cityName: 'Boca Raton',
+    citySlug: 'boca-raton',
+    county: 'Palm Beach County',
+    pageTitle: 'Top 5 Roofers in Boca Raton FL (2026) | All Phase',
+    metaDescription: 'Looking for the best roofers in Boca Raton? Top 5 licensed roofing contractors in Palm Beach County reviewed. See who made the list.',
+    introParagraphs: [
+      'Boca Raton\'s roofing landscape is one of the most demanding in South Florida. From the Intracoastal waterfront estates of Royal Palm Yacht & Country Club to the 55+ communities of Boca West and Century Village, every roof here faces salt-air corrosion, Category 4+ hurricane exposure, and strict HOA architectural review. We evaluated dozens of licensed roofers serving Boca Raton and identified five that consistently deliver.',
+      'Palm Beach County\'s HVHZ designation means Boca Raton contractors must meet the Florida Building Code\'s most stringent wind-resistance standards. Neighborhoods like Broken Sound, Woodfield Country Club, and the historic Old Floresta district each present unique roofing challenges -- from tile-only HOA mandates to preservation board oversight. The right contractor needs both a CCC roofing license and real familiarity with Boca\'s building department, insurance dynamics, and community-specific requirements.'
+    ],
+    competitors: [
+      'Whale Roofing',
+      'Tiger Team Roofing',
+      'Aastro Roofing',
+      'Boca Roofing'
+    ],
+    allPhaseDescription: 'All Phase Construction USA holds dual CCC-1331464 and CGC-1526236 licenses and voluntarily builds to Miami-Dade HVHZ spec even in Palm Beach County. We are active members of the Greater Boca Raton Chamber of Commerce and have completed hundreds of roof replacements in communities including Broken Sound, Royal Palm Yacht & Country Club, Woodfield, Mizner Park residences, and the Intracoastal corridor. Our team coordinates directly with Boca Raton HOA boards and the Palm Beach County building department on every project.',
+    faqs: [
+      {
+        question: 'How much does roof replacement cost in Boca Raton?',
+        answer: 'Roof replacement in Boca Raton typically ranges from $12,000 to $35,000 for a standard residential home, depending on square footage, material (tile, metal, or shingle), and HOA requirements. Waterfront properties in Royal Palm or along the Intracoastal may cost more due to salt-air-rated material requirements. Call (754) 227-5605 for a free estimate.'
+      },
+      {
+        question: 'What roofing materials work best in Boca Raton?',
+        answer: 'Concrete and clay tile dominate Boca Raton due to HOA requirements and hurricane performance. Metal roofing is growing in popularity for its 40-50 year lifespan and wind ratings exceeding 180 mph. Shingle roofs are common in communities without tile mandates. All materials must meet HVHZ wind-uplift standards for Palm Beach County.'
+      },
+      {
+        question: 'What should I look for when hiring a roofer in Boca Raton?',
+        answer: 'Verify your roofer holds a valid Florida CCC license and understands HVHZ requirements for Palm Beach County. All Phase Construction USA carries CCC-1331464 and CGC-1526236 dual licenses. Always confirm active liability insurance, workers comp coverage, and ask for references from your specific neighborhood or HOA community.'
+      },
+      {
+        question: 'Do Boca Raton HOAs have specific roofing requirements?',
+        answer: 'Yes. Communities like Broken Sound, Boca West, Royal Palm, and Woodfield have strict architectural review committees that dictate tile profiles, colors, and approved materials. We coordinate with HOA boards before every project to ensure full compliance and prevent costly rejections or do-overs.'
+      },
+      {
+        question: 'Does my roof replacement in Boca Raton need a permit?',
+        answer: 'Yes. Any roof replacement in Boca Raton requires a permit from Palm Beach County Building Division. The permit triggers a final inspection by a county inspector. Work without a permit is a code violation that can void insurance coverage and create issues at property sale.'
+      }
+    ],
+    crossLinks: [
+      { label: 'Best Roofers in Delray Beach', href: '/locations/delray-beach/best-roofers-delray-beach' },
+      { label: 'Best Roofers in Boynton Beach', href: '/locations/boynton-beach/best-roofers-boynton-beach' },
+      { label: 'Best Roofers in Palm Beach Gardens', href: '/locations/palm-beach-gardens/best-roofers-palm-beach-gardens' },
+      { label: 'Boca Raton Roofing Services', href: '/locations/boca-raton' },
+      { label: 'Boca Raton Roof Repair', href: '/roof-repair/boca-raton' }
+    ],
+    localExpertiseTitle: 'Why Boca Raton Roofing Demands Specialized Local Knowledge',
+    localExpertiseParagraph: 'Boca Raton sits at the intersection of coastal hurricane exposure and some of South Florida\'s most discerning HOA communities. The combination of salt-air corrosion from the Atlantic, strict architectural review boards, and Palm Beach County\'s HVHZ building code requirements means every roofing project here requires a contractor who understands both the technical demands and the community-specific approval processes.'
   }
 };
