@@ -455,18 +455,35 @@ export default function BlogPostPage() {
   const getArticleSchema = () => {
     if (!post) return null;
 
+    const plainText = post.content.replace(/<[^>]*>/g, '');
+    const wordCount = plainText.split(/\s+/).length;
+
     const schema = {
       '@context': 'https://schema.org',
-      '@type': 'Article',
+      '@type': 'BlogPosting',
       headline: post.title,
-      description: post.excerpt,
+      description: post.excerpt || post.meta_description,
       image: post.featured_image,
       datePublished: post.published_date,
       dateModified: post.updated_at || post.published_date,
+      wordCount,
+      inLanguage: 'en-US',
+      keywords: post.tags?.join(', ') || post.categories?.join(', ') || 'roofing, South Florida',
+      articleSection: post.categories?.[0] || 'Roofing',
       author: {
         '@type': 'Organization',
         name: 'All Phase Construction USA',
-        url: 'https://allphaseconstructionfl.com'
+        url: 'https://allphaseconstructionfl.com',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://allphaseconstructionfl.com/allphase-logo-white.svg'
+        },
+        sameAs: [
+          'https://www.facebook.com/AllPhaseConstructionUsA',
+          'https://www.instagram.com/all_phase_construction_usa/',
+          'https://www.linkedin.com/company/all-phase-construction-usa-llc',
+          'https://www.youtube.com/@allphaseconstructionusa5626'
+        ]
       },
       publisher: {
         '@type': 'Organization',
@@ -480,10 +497,15 @@ export default function BlogPostPage() {
         '@type': 'WebPage',
         '@id': `https://allphaseconstructionfl.com/blog/${post.slug}`
       },
-      about: {
-        '@type': 'Thing',
-        name: 'Roofing'
+      isPartOf: {
+        '@type': 'Blog',
+        name: 'All Phase Construction USA Roofing Blog',
+        url: 'https://allphaseconstructionfl.com/blog'
       },
+      about: [
+        { '@type': 'Thing', name: 'Roofing' },
+        { '@type': 'Thing', name: 'Home Improvement' }
+      ],
       mentions: [
         {
           '@type': 'Place',
@@ -516,8 +538,23 @@ export default function BlogPostPage() {
     return schema;
   };
 
-
-  // FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here
+  // Build FAQPage schema for blog posts that have FAQs
+  // Blog posts are NOT prerendered — they render client-side from Supabase
+  const getFaqSchema = () => {
+    if (!post?.faqs || post.faqs.length === 0) return null;
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: post.faqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    };
+  };
 
   if (loading) {
     return (
@@ -555,6 +592,12 @@ export default function BlogPostPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema()) }}
+        />
+      )}
+      {getFaqSchema() && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqSchema()) }}
         />
       )}
 
