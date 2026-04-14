@@ -105,21 +105,6 @@ export default function BestRoofersFortLauderdalePage() {
             ]
           })}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "All Phase Construction USA",
-            "@id": "https://allphaseconstructionfl.com/#organization",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "287",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
-          })}
-        </script>
       </Helmet>
 
       {/* Hero Section */}

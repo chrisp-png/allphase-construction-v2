@@ -89,21 +89,6 @@ export default function BestRoofersWellingtonPage() {
             ]
           }
         `}</script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "All Phase Construction USA",
-            "@id": "https://allphaseconstructionfl.com/#organization",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.7",
-              "reviewCount": "156",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
-          })}
-        </script>
       </Helmet>
 
       <div className="min-h-screen bg-zinc-950">
