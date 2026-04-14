@@ -105,21 +105,6 @@ export default function BestRoofersWestPalmBeachPage() {
             ]
           })}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "All Phase Construction USA",
-            "@id": "https://allphaseconstructionfl.com/#organization",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "245",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
-          })}
-        </script>
       </Helmet>
 
       {/* Hero Section */}
