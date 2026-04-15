@@ -1652,6 +1652,19 @@ function generateDeerfieldBeachSchema() {
         "closes": "17:00"
       }
     ],
+    // aggregateRating matches baseOrgSchema (line ~1775). Required here because
+    // RoofingContractor page-specific schemas REPLACE baseOrgSchema entirely
+    // (see schemaToInject logic ~line 1810). Without this, the Deerfield Beach
+    // HQ page loses the star rich snippet that every other page earns via
+    // baseOrgSchema. DO NOT add an inline `review` array alongside — that
+    // re-triggers the GSC "multiple aggregate ratings" error documented in
+    // the baseOrgSchema comment above.
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "136",
+      "bestRating": "5"
+    },
     "sameAs": [
       "https://www.allphaseconstructionfl.com/",
       "https://www.youtube.com/@allphaseconstructionusa5626",
@@ -2768,7 +2781,23 @@ ${companyAuthorityFooter()}
       hubContent = generateBocaRatonServiceHubContent();
     } else if (slug === 'deerfield-beach') {
       hubContent = generateDeerfieldBeachHQContent();
-      hubSchema = generateDeerfieldBeachSchema();
+      // Deerfield Beach HQ gets: RoofingContractor (with aggregateRating)
+      // + BreadcrumbList. FAQPage is added by the Wave-C backfill below if
+      // missing, so we don't duplicate it here. Home → Locations → Deerfield
+      // Beach matches the breadcrumb convention used by county hubs and
+      // landmark pages elsewhere in this script.
+      hubSchema = [
+        generateDeerfieldBeachSchema(),
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
+            { '@type': 'ListItem', position: 3, name: 'Deerfield Beach', item: 'https://allphaseconstructionfl.com/locations/deerfield-beach' },
+          ],
+        },
+      ];
     } else if (CITY_UNIQUE_CONTENT[slug]) {
       hubContent = generateEnhancedServiceHubContent(city, slug, location);
     } else {
