@@ -781,6 +781,15 @@ export const sheetSitemap: SitemapEntry[] = [
     priority: 0.8,
     changefreq: 'monthly',
   },
+  {
+    section: 'Best Roofers by City',
+    label: 'Best Roofers in Parkland',
+    path: '/locations/parkland/best-roofers-parkland',
+    parent: '/locations/parkland',
+    indexable: true,
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
 
   // County Pages (Not displayed in sitemap navigation but remain accessible)
   {

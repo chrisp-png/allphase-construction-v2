@@ -164,7 +164,7 @@ function companyAuthorityFooter(county = null) {
 function generateDeerfieldBeachHQContent() {
   return `
 <section id="seo-static-content">
-  <h1>Deerfield Beach Roofing Contractor | All Phase Construction USA Headquarters</h1>
+  <h1>Deerfield Beach Roofing Contractor | All Phase USA Headquarters</h1>
 
   <p><strong>All Phase Construction USA</strong> is a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida. Operating from 590 Goolsby Blvd, Deerfield Beach, FL 33442, we serve residential and commercial properties throughout Broward County and Palm Beach County with comprehensive roofing services backed by both State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses.</p>
 
@@ -927,7 +927,7 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
 
   return `
 <section id="seo-static-content">
-  <h1>Roof Replacement in ${cityName}, FL | All Phase Construction USA</h1>
+  <h1>Roof Replacement in ${cityName}, FL | All Phase USA</h1>
 
   <p><strong>All Phase Construction USA</strong> provides professional roofing services throughout ${cityName}, ${data.county}, Florida. Dual-licensed as both a State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring structural engineering expertise and ${complianceLabel} installation quality to every ${cityName} roofing project — from emergency repairs to complete roof replacements.</p>
 
@@ -973,7 +973,7 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
 
   <h2>Additional Resources for ${cityName} Roofing</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
-    ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington','pompano-beach','hollywood','sunrise','plantation','davie','miramar','pembroke-pines','delray-beach','boynton-beach','jupiter','palm-beach-gardens','royal-palm-beach','greenacres','lake-worth-beach'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
+    ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington','pompano-beach','hollywood','sunrise','plantation','davie','miramar','pembroke-pines','delray-beach','boynton-beach','jupiter','palm-beach-gardens','royal-palm-beach','greenacres','lake-worth-beach','parkland'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
     <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
     <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
@@ -1053,7 +1053,7 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
     : 'Every installation includes manufacturer-backed warranties, building code compliance, and Palm Beach County wind-code certification.';
   return `
 <section id="seo-static-content">
-  <h1>Roof Replacement in ${cityName}, FL | All Phase Construction USA</h1>
+  <h1>Roof Replacement in ${cityName}, FL | All Phase USA</h1>
 
   <p><strong>Dispatched from our Deerfield Beach HQ to provide rapid roof replacement and repair services in ${cityName}</strong>, All Phase Construction USA delivers comprehensive roofing solutions with dual-licensed expertise (CCC-1331464 & CGC-1526236) and ${complianceCert} on every residential and commercial project.</p>
 
@@ -1097,7 +1097,7 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
 
   <h2>Additional Resources for ${cityName} Roofing</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
-    ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington','pompano-beach','hollywood','sunrise','plantation','davie','miramar','pembroke-pines','delray-beach','boynton-beach','jupiter','palm-beach-gardens','royal-palm-beach','greenacres','lake-worth-beach'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
+    ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington','pompano-beach','hollywood','sunrise','plantation','davie','miramar','pembroke-pines','delray-beach','boynton-beach','jupiter','palm-beach-gardens','royal-palm-beach','greenacres','lake-worth-beach','parkland'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
     <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
     <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
@@ -2037,7 +2037,7 @@ function generateStaticFiles() {
   // Homepage uses explicit metadata (NOT from getSEOMetadata fallback)
   // This ensures title is controlled by index.html + runtime metadata
   const homeHTML = createHTMLTemplate(
-    'Roof Replacement in Broward & Palm Beach County | All Phase USA',
+    'Roof Replacement in Broward & Palm Beach | All Phase',
         'Roof replacement in Broward & Palm Beach County. Dual-licensed, HVHZ-certified. Tile, metal, shingle, flat & commercial. Free estimates. (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
@@ -2380,7 +2380,7 @@ const CITY_PAGE_SCHEMAS = {
   const roofReplacementDir = path.join(distDir, 'roof-replacement');
   fs.mkdirSync(roofReplacementDir, { recursive: true });
   const roofReplacementContent = `
-<h1>Roof Replacement Contractor in South Florida | All Phase Construction USA</h1>
+<h1>Roof Replacement Contractor in South Florida | All Phase USA</h1>
 <p>All Phase Construction USA is a licensed roof replacement contractor serving Broward County and Palm Beach County. We specialize in HVHZ-compliant tile, metal, shingle, and flat roof replacement systems engineered for South Florida hurricane conditions.</p>
 <p>As a dual-licensed contractor (CCC-1331464 & CGC-1526236), we provide structural engineering oversight on every roof replacement project. Call (754) 227-5605 for a free estimate.</p>
 
@@ -2468,7 +2468,7 @@ ${companyAuthorityFooter()}
 
   topRooferPages.forEach(({ path: pagePath, city }) => {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
-    const title = `Top 5 Roof Replacement Contractors in ${city}, FL | All Phase USA`;
+    const title = `Top 5 Roofers in ${city}, FL (2026) | All Phase`;
     const description = `All Phase ranks among the top 5 roof replacement contractors in ${city}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
 
     const content = `
@@ -3011,7 +3011,7 @@ ${companyAuthorityFooter()}
     const isBroward = parentCity && parentCity.county === 'Broward';
     const complianceLanguage = isBroward ? 'HVHZ-compliant' : 'Palm Beach County wind-compliant';
 
-    const defaultTitle = `Roof Replacement Near ${landmark.name} | ${cityDisplay}, FL | All Phase USA`;
+    const defaultTitle = `Roofing Near ${landmark.name}, ${cityDisplay} FL | All Phase`;
     const defaultDescription = `Roof replacement serving ${landmark.name} and the surrounding ${cityDisplay}, FL area. Tile, metal, shingle & flat. ${complianceLanguage}, dual-licensed CCC + CGC. Free estimate. (754) 227-5605.`;
     const title = landmark.titleOverride || defaultTitle;
     const description = landmark.descriptionOverride || defaultDescription;
@@ -4097,6 +4097,54 @@ ${companyAuthorityFooter()}
   ));
   console.log('✅ Prerendered: locations/lake-worth-beach/best-roofers-lake-worth-beach/index.html');
 
+  // Best Roofers Parkland - Premium Money Page
+  const bestRoofersParklandDir = path.join(distDir, 'locations/parkland/best-roofers-parkland');
+  fs.mkdirSync(bestRoofersParklandDir, { recursive: true });
+  const bestRoofersParklandContent = `
+  <h1>Top 5 Best Rated Roofers in Parkland, FL (2026)</h1>
+  <p>Parkland is one of Broward County's most exclusive luxury communities, with gated estate neighborhoods, strict HOA architectural review boards, and homes that demand premium tile, slate, and metal roofing systems. Finding a Parkland roofer means hiring a contractor who can coordinate with Heron Bay, Parkland Golf &amp; Country Club, and MiraLago ARCs, carries HVHZ certification for Broward's 175+ mph wind-load requirements, and delivers workmanship at the standard Parkland homeowners expect. We evaluated dozens of licensed contractors and identified five we would recommend to a Parkland neighbor.</p>
+  <h2>Why Parkland Roofing Demands HOA Coordination and Premium Materials</h2>
+  <p>Parkland sits inside Florida's High-Velocity Hurricane Zone and features some of the largest single-family estate footprints in Broward County. Communities like Heron Bay, Parkland Golf &amp; Country Club, MiraLago, Parkland Isles, and Pine Tree Estates enforce strict architectural review covering tile color, profile, manufacturer, and visible metal flashing. Properties in Parkland Golf &amp; Country Club and the Ranches of Parkland often have roof footprints of 4,000 to 8,000 square feet, complex hip and valley geometries, and premium tile or slate systems that require specialized fastening and underlayment assemblies. Every Parkland reroof also requires HVHZ-compliant design, product approvals on file with Broward County, and tie-in work that preserves ARC-approved appearance.</p>
+  <h2>Your List of the Top 5 Best Roofers in Parkland, FL</h2>
+  <ol>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ roofs completed across Broward and Palm Beach Counties. Parkland HOA &amp; ARC submission packages handled in-house. Deerfield Beach HQ means fast mobilization to Parkland estate projects.</li>
+    <li><strong>Kelly Roofing</strong></li>
+    <li><strong>Altec Roofing</strong></li>
+    <li><strong>Crowther Roofing</strong></li>
+    <li><strong>Istueta Roofing</strong></li>
+  </ol>
+  <h2>Roofing for Heron Bay, Parkland Golf &amp; Country Club, and MiraLago Estates</h2>
+  <p>Every Parkland community enforces its own ARC guidelines. Heron Bay's architectural review controls tile color and profile across 1,500+ estate homes. Parkland Golf &amp; Country Club and MiraLago require pre-approval packages including manufacturer data sheets, color samples, and installation method statements. We prepare the full HOA/ARC submittal as part of every Parkland proposal and handle board coordination on the homeowner's behalf. Our CGC license also lets us assess and address any structural deck concerns on larger estate footprints before the new tile or metal system goes down.</p>
+  <p>Ready for a free Parkland roof assessment? Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/parkland" style="color: #dc2626; text-decoration: underline;">Parkland roofing page</a> to learn more.</p>
+  <h2>Frequently Asked Questions About Roofing in Parkland</h2>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">What does roof replacement cost in Parkland, FL?</h3>
+  <p>Parkland roof replacement typically ranges from &#36;18,000 to &#36;45,000+ because of larger estate footprints and premium material specifications. Heron Bay and Parkland Golf &amp; Country Club tile roofs often exceed &#36;30,000 due to tile cost, fastening requirements, and HOA-specified manufacturers. Contact All Phase Construction USA at (754) 227-5605 for a detailed estate-level assessment.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Do Parkland HOAs like Heron Bay and Parkland Golf &amp; Country Club require approval before roof replacement?</h3>
+  <p>Yes. Every Parkland master-planned community requires architectural review approval before roofing work begins — Heron Bay, Parkland Golf &amp; Country Club, MiraLago, Parkland Isles, and the Ranches of Parkland all enforce their own ARC guidelines covering color, tile profile, and manufacturer. We prepare the full ARC submittal package (manufacturer data sheets, color samples, installation method statement, insurance certificates) as part of every Parkland proposal.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">Which roofing material is best for Parkland estate homes?</h3>
+  <p>Premium concrete or clay tile and standing-seam metal are the two dominant Parkland systems. Concrete tile meets HVHZ requirements with 40-50 year service life at architectural profiles approved by most Parkland HOAs. Standing-seam metal is favored on newer contemporary estates and performs exceptionally in Broward's wind regime. Slate is less common but seen on some Parkland Golf &amp; Country Club estates where ARC allows it.</p>
+  <h3 style="font-size: 1.1rem; font-weight: bold; margin-top: 1.25rem;">How do I verify a Parkland roofer is HVHZ-certified and ARC-experienced?</h3>
+  <p>Confirm the contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com and verify HVHZ product approvals on file with Broward County. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida's database. Ask for Parkland references, prior ARC submittal examples, and proof of active liability insurance.</p>
+
+  <h2>Best Roofers in Nearby Cities</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/coral-springs/best-roofers-coral-springs" style="color: #dc2626; text-decoration: underline;">Best Roofers in Coral Springs</a></li>
+    <li><a href="/locations/deerfield-beach/best-roofers-deerfield-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Deerfield Beach</a></li>
+    <li><a href="/locations/pompano-beach/best-roofers-pompano-beach" style="color: #dc2626; text-decoration: underline;">Best Roofers in Pompano Beach</a></li>
+    <li><a href="/locations/parkland" style="color: #dc2626; text-decoration: underline;">Parkland Roofing Services</a></li>
+    <li><a href="/roof-repair/parkland" style="color: #dc2626; text-decoration: underline;">Parkland Roof Repair</a></li>
+    <li><a href="/roof-inspection/parkland" style="color: #dc2626; text-decoration: underline;">Parkland Roof Inspection</a></li>
+  </ul>
+`;
+  fs.writeFileSync(path.join(bestRoofersParklandDir, 'index.html'), createHTMLTemplate(
+    'Top 5 Roofers in Parkland FL (2026) | All Phase',
+    'Looking for the best roofers in Parkland? We reviewed the top 5 HVHZ-certified contractors serving Heron Bay, Parkland Golf & Country Club, and MiraLago. See who made the list.',
+    'https://allphaseconstructionfl.com/locations/parkland/best-roofers-parkland',
+    bestRoofersParklandContent,
+    JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does roof replacement cost in Parkland, FL?","acceptedAnswer":{"@type":"Answer","text":"Parkland roof replacement typically ranges from $18,000 to $45,000+ because of larger estate footprints and premium material specifications. Heron Bay and Parkland Golf & Country Club tile roofs often exceed $30,000 due to tile cost, fastening requirements, and HOA-specified manufacturers. Contact All Phase Construction USA at (754) 227-5605 for a detailed estate-level assessment."}},{"@type":"Question","name":"Do Parkland HOAs like Heron Bay and Parkland Golf & Country Club require approval before roof replacement?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every Parkland master-planned community requires architectural review approval before roofing work begins \u2014 Heron Bay, Parkland Golf & Country Club, MiraLago, Parkland Isles, and the Ranches of Parkland all enforce their own ARC guidelines covering color, tile profile, and manufacturer. We prepare the full ARC submittal package (manufacturer data sheets, color samples, installation method statement, insurance certificates) as part of every Parkland proposal."}},{"@type":"Question","name":"Which roofing material is best for Parkland estate homes?","acceptedAnswer":{"@type":"Answer","text":"Premium concrete or clay tile and standing-seam metal are the two dominant Parkland systems. Concrete tile meets HVHZ requirements with 40-50 year service life at architectural profiles approved by most Parkland HOAs. Standing-seam metal is favored on newer contemporary estates and performs exceptionally in Broward\'s wind regime. Slate is less common but seen on some Parkland Golf & Country Club estates where ARC allows it."}},{"@type":"Question","name":"How do I verify a Parkland roofer is HVHZ-certified and ARC-experienced?","acceptedAnswer":{"@type":"Answer","text":"Confirm the contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com and verify HVHZ product approvals on file with Broward County. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida\'s database. Ask for Parkland references, prior ARC submittal examples, and proof of active liability insurance."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Parkland","item":"https://allphaseconstructionfl.com/locations/parkland"},{"@type":"ListItem","position":3,"name":"Best Roofers in Parkland","item":"https://allphaseconstructionfl.com/locations/parkland/best-roofers-parkland"}]}]')
+  ));
+  console.log('✅ Prerendered: locations/parkland/best-roofers-parkland/index.html');
+
 
 
   // ============================================================
@@ -4152,7 +4200,7 @@ ${companyAuthorityFooter()}
   const priority1Pages = [
     {
       slug: 'highland-beach-roof-replacement',
-      title: 'Highland Beach Roof Replacement | All Phase Construction USA',
+      title: 'Highland Beach Roof Replacement | All Phase USA',
       description: 'Salt-air-rated roof replacement for Highland Beach, FL oceanfront homes. Stainless fasteners, peel-and-stick underlayment, PBC wind-code compliant. Free inspection.',
       h1: 'Roof Replacement in Highland Beach, FL',
       intro: `Highland Beach sits on a narrow barrier island between the Intracoastal and the Atlantic, which means every roof on A1A faces salt spray, UV, and direct onshore wind loads that inland Palm Beach County roofs never see. All Phase Construction USA replaces tile, metal, and flat roofs across Highland Beach with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
@@ -4169,7 +4217,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'coastal-boca-raton-roofing-contractor',
-      title: 'Coastal Boca Raton Roofing Contractor | All Phase Construction USA',
+      title: 'Coastal Boca Raton Roofing Contractor | All Phase USA',
       description: 'Salt-air roof replacement and repair for east Boca Raton. Stainless fasteners, peel-and-stick underlayment, PBC wind-code compliant. Licensed & insured.',
       h1: 'Coastal Boca Raton Roofing Contractor',
       intro: `The stretch of Boca Raton east of the Intracoastal — from the Boca Inlet north to Spanish River Park — is one of the harshest roofing environments in Palm Beach County. All Phase Construction USA specializes in coastal re-roofs that actually hit their warranty lifespan, using stainless fastening, SBS-modified peel-and-stick underlayment, and assemblies engineered for Exposure D wind loads.`,
@@ -4186,7 +4234,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'oceanfront-roof-replacement-palm-beach-county',
-      title: 'Oceanfront Roof Replacement in Palm Beach County | All Phase Construction USA',
+      title: 'Oceanfront Roofing in Palm Beach County | All Phase',
       description: 'Oceanfront roof replacement across Palm Beach County — Highland Beach, Boca Raton, Delray Beach. Salt-rated, PBC wind-code compliant, insurance-ready.',
       h1: 'Oceanfront Roof Replacement in Palm Beach County',
       intro: `Oceanfront homes in Palm Beach County face wind, salt, and sun loads that kill standard roofs decades early. All Phase Construction USA replaces oceanfront roofs across the county — from the Boca Inlet north through Highland Beach and coastal Delray — with assemblies engineered specifically for Exposure D sites and rated to Palm Beach County's 170+ mph design wind speeds.`,
@@ -4210,7 +4258,7 @@ ${companyAuthorityFooter()}
   const priority2Pages = [
     {
       slug: 'delray-beach-roof-replacement',
-      title: 'Delray Beach Roof Replacement | All Phase Construction USA',
+      title: 'Delray Beach Roof Replacement | All Phase USA',
       description: 'Roof replacement in Delray Beach, FL. Tile, metal, and shingle systems built to Palm Beach County wind code. Licensed, insured, insurance-claim ready.',
       h1: 'Roof Replacement in Delray Beach, FL',
       intro: `Delray Beach roofs run the full range — historic bungalows off Atlantic Avenue, coastal estates along Gulf Stream, and mid-century single-family homes west to Morikami. All Phase Construction USA replaces every one of them to Palm Beach County wind-code standards with 170+ mph design wind speeds.`,
@@ -4227,7 +4275,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'delray-beach-tile-roof-contractor',
-      title: 'Delray Beach Tile Roof Contractor | All Phase Construction USA',
+      title: 'Delray Beach Tile Roof Contractor | All Phase USA',
       description: 'Clay and concrete tile roofing in Delray Beach, FL. Historic re-roofs, coastal tile installs, HOA-compliant. Palm Beach County wind-code certified.',
       h1: 'Delray Beach Tile Roof Contractor',
       intro: `Tile roofs define the Delray Beach aesthetic — from the historic barrel tile off Atlantic Avenue to the contemporary flat tile on Gulf Stream estates. All Phase Construction USA installs, replaces, and repairs clay and concrete tile systems built to Palm Beach County wind code with stainless battens and peel-and-stick underlayment.`,
@@ -4244,7 +4292,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'historic-delray-roofing',
-      title: 'Historic Delray Beach Roofing | All Phase Construction USA',
+      title: 'Historic Delray Beach Roofing | All Phase USA',
       description: 'Historic district roofing in Delray Beach — Old School Square, Pineapple Grove, Atlantic Ave. Period-correct tile and shingle re-roofs, HOA approved.',
       h1: 'Historic Delray Beach Roofing',
       intro: `The historic core of Delray Beach — Old School Square, the Pineapple Grove Arts District, and the bungalow belt around Atlantic Avenue — requires roofing work that preserves period-correct aesthetics while meeting modern Palm Beach County wind-code requirements. All Phase Construction USA has been the roofing contractor local homeowners trust for exactly that combination.</p>`,
@@ -4268,7 +4316,7 @@ ${companyAuthorityFooter()}
   const priority3Pages = [
     {
       slug: 'west-boca-raton-roof-replacement',
-      title: 'West Boca Raton Roof Replacement | All Phase Construction USA',
+      title: 'West Boca Raton Roof Replacement | All Phase USA',
       description: 'Roof replacement in West Boca Raton, FL. Serving Mission Bay, Boca Del Mar, Sandalfoot Cove, and the 441/Glades corridor. PBC wind-code compliant.',
       h1: 'Roof Replacement in West Boca Raton, FL',
       intro: `West Boca Raton — the corridor west of Florida's Turnpike along Glades Road and State Road 7/441 — is home to one of Palm Beach County's largest concentrations of 1980s and 1990s single-family subdivisions and 55+ communities. All Phase Construction USA replaces roofs across the entire west-side market with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
@@ -4285,7 +4333,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'kings-point-boca-roofing-contractor',
-      title: 'Kings Point Boca Roofing Contractor | All Phase Construction USA',
+      title: 'Kings Point Boca Roofing Contractor | All Phase USA',
       description: 'Kings Point and West Boca 55+ community roofing. Condo, villa, and single-family re-roofs coordinated with association approval. PBC wind-code certified.',
       h1: 'Kings Point Boca Roofing Contractor',
       intro: `Kings Point and the surrounding 55+ communities of West Boca Raton make up one of the largest concentrated roofing markets in Palm Beach County. Villa-style and condominium roofing work here requires tight association coordination, and All Phase Construction USA handles that end-to-end while delivering re-roofs built to Palm Beach County wind code.`,
@@ -4302,7 +4350,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boca-raton-tile-re-roof',
-      title: 'Boca Raton Tile Re-Roof | All Phase Construction USA',
+      title: 'Boca Raton Tile Re-Roof | All Phase USA',
       description: 'Tile re-roofing in Boca Raton, FL. Clay and concrete tile, full underlayment replacement, PBC wind-code compliant. Free inspection, insurance-ready.',
       h1: 'Boca Raton Tile Re-Roof',
       intro: `A Boca Raton tile re-roof is almost never about the tile itself — it's about the underlayment underneath, which bakes brittle in 20–25 years and begins leaking long before the tile shows visible damage. All Phase Construction USA replaces tile roofs across Boca Raton with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens for coastal-grade longevity.`,
@@ -4327,7 +4375,7 @@ ${companyAuthorityFooter()}
   const priority4Pages = [
     {
       slug: 'north-boca-raton-roof-replacement',
-      title: 'North Boca Raton Roof Replacement | All Phase Construction USA',
+      title: 'North Boca Raton Roof Replacement | All Phase USA',
       description: 'Roof replacement in North Boca Raton, FL. Yamato Road corridor, Spanish River Blvd, BCT airport area. Palm Beach County wind-code compliant.',
       h1: 'Roof Replacement in North Boca Raton, FL',
       intro: `North Boca Raton — the corridor between Yamato Road and the Delray Beach city line — is a mix of established 1980s single-family subdivisions, newer luxury communities along Spanish River Boulevard, and the commercial corridor around Boca Raton Airport. All Phase Construction USA replaces roofs across the entire north-side market with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
@@ -4344,7 +4392,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boca-raton-wind-mitigation-roofing',
-      title: 'Boca Raton Wind Mitigation Roofing | All Phase Construction USA',
+      title: 'Boca Raton Wind Mitigation Roofing | All Phase USA',
       description: 'Wind mitigation roofing in Boca Raton, FL. PBC wind-code compliant assemblies, roof-to-wall connections, and insurance credits. Free inspection.',
       h1: 'Boca Raton Wind Mitigation Roofing',
       intro: `A wind mitigation re-roof in Boca Raton is about more than surviving a storm — it's about unlocking insurance premium credits that can cover a meaningful portion of the re-roof over the policy lifetime. All Phase Construction USA builds every Boca Raton re-roof to maximize wind mitigation credits under Palm Beach County's 170+ mph design wind speed standard.`,
@@ -4361,7 +4409,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'palm-beach-county-roof-insurance-claim',
-      title: 'Palm Beach County Roof Insurance Claim | All Phase Construction USA',
+      title: 'Palm Beach County Roof Insurance Claim | All Phase USA',
       description: 'Palm Beach County roof insurance claim assistance. Adjuster coordination, full documentation, wind mitigation credits. Licensed & insured.',
       h1: 'Palm Beach County Roof Insurance Claim Assistance',
       intro: `A Palm Beach County roof insurance claim is won or lost on documentation. All Phase Construction USA handles the full claim process for homeowners across Boca Raton, Delray Beach, Boynton Beach, and the surrounding PBC market — drone photography, adjuster coordination, scope review, and wind mitigation credit filing after the re-roof is complete.`,
@@ -4412,7 +4460,7 @@ ${companyAuthorityFooter()}
   const boyntonBeachPages = [
     {
       slug: 'boynton-beach-oceanfront-roofing',
-      title: 'Boynton Beach Oceanfront Roofing | All Phase Construction USA',
+      title: 'Boynton Beach Oceanfront Roofing | All Phase USA',
       description: 'Oceanfront roofing in Boynton Beach, FL. Salt-air rated systems for the A1A corridor near Oceanfront Park. PBC wind-code compliant. Free inspection.',
       h1: 'Boynton Beach Oceanfront Roofing',
       intro: `The A1A corridor through Boynton Beach — from Oceanfront Park at 6415 N. Ocean Blvd south to the Lantana border — puts roofs directly in the path of salt spray, UV, and onshore wind loads that inland systems never face. All Phase Construction USA builds coastal assemblies for Boynton Beach oceanfront homes rated to Palm Beach County's 170+ mph design wind speeds with salt-grade materials throughout.`,
@@ -4429,7 +4477,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boynton-beach-55-plus-community-roofing',
-      title: 'Boynton Beach 55+ Community Roofing | All Phase Construction USA',
+      title: 'Boynton Beach 55+ Community Roofing | All Phase USA',
       description: 'Roof replacement for 55+ communities in Boynton Beach — The Cascades, Valencia Lakes, Hunters Run. HOA coordinated, PBC wind-code compliant.',
       h1: 'Boynton Beach 55+ Community Roofing',
       intro: `The Cascades, Valencia Lakes, and Hunters Run represent some of the largest 55+ communities in Palm Beach County — and the bulk of their original roof systems, installed between 2000 and 2010, are now entering the re-roof window. All Phase Construction USA handles full-community and individual-unit re-roofs with end-to-end HOA coordination and Palm Beach County wind-code compliant assemblies.`,
@@ -4446,7 +4494,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boynton-beach-tile-roof-replacement',
-      title: 'Boynton Beach Tile Roof Replacement | All Phase Construction USA',
+      title: 'Boynton Beach Tile Roof Replacement | All Phase USA',
       description: 'Tile roof replacement in Boynton Beach, FL. Clay and concrete tile, full underlayment tear-off, stainless battens. PBC wind-code compliant.',
       h1: 'Tile Roof Replacement in Boynton Beach, FL',
       intro: `Tile roofs dominate the Boynton Beach housing stock — from barrel tile on the coastal estates near Oceanfront Park to flat concrete tile across the inland gated communities like Canyon Lakes and The Cascades. All Phase Construction USA replaces tile roofs across Boynton Beach with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens for long-term performance under Palm Beach County wind code.`,
@@ -4463,7 +4511,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boynton-beach-commercial-roofing',
-      title: 'Boynton Beach Commercial Roofing | All Phase Construction USA',
+      title: 'Boynton Beach Commercial Roofing | All Phase USA',
       description: 'Commercial roofing in Boynton Beach, FL. Flat roof replacement and repair for Congress Ave, Boynton Beach Blvd, and retail centers. Licensed & insured.',
       h1: 'Boynton Beach Commercial Roofing',
       intro: `The Congress Avenue and Boynton Beach Boulevard corridors are the commercial spine of the city — strip centers, medical offices, restaurants, and retail anchored by the Boynton Beach Mall area. All Phase Construction USA replaces and repairs commercial flat roof systems across Boynton Beach with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
@@ -4480,7 +4528,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boynton-beach-roof-insurance-claim',
-      title: 'Boynton Beach Roof Insurance Claim | All Phase Construction USA',
+      title: 'Boynton Beach Roof Insurance Claim | All Phase USA',
       description: 'Boynton Beach roof insurance claim assistance. 41% flooding risk, full documentation, adjuster coordination. Licensed & insured.',
       h1: 'Boynton Beach Roof Insurance Claim Assistance',
       intro: `Boynton Beach buildings face approximately a 41% chance of experiencing significant flooding over 30 years, with 61 of 70 census tracts carrying substantial storm surge and flooding risk. That exposure translates directly into roof insurance claims — and those claims are won or lost on documentation. All Phase Construction USA handles the full claim process for Boynton Beach homeowners from inspection through re-roof completion.`,
@@ -4534,7 +4582,7 @@ ${companyAuthorityFooter()}
   const lakeWorthPages = [
     {
       slug: 'lake-worth-beach-historic-roofing',
-      title: 'Lake Worth Beach Historic District Roofing | All Phase Construction USA',
+      title: 'Lake Worth Beach Historic District Roofing | All Phase USA',
       description: 'Historic district roofing in Lake Worth Beach, FL. Period-correct tile and shingle re-roofs for 1920s–1950s bungalows. PBC wind-code compliant.',
       h1: 'Lake Worth Beach Historic District Roofing',
       intro: `Lake Worth Beach has one of Palm Beach County's most diverse architectural landscapes, with structures spanning over 100 years of Florida building practices. The Historic District, College Park, and South Palm Park neighborhoods are home to 1920s-era bungalows, 1930s Mediterranean Revival homes, and mid-century concrete block houses — each with its own roofing challenges. All Phase Construction USA replaces roofs on historic Lake Worth Beach properties with period-correct materials that satisfy architectural review while meeting modern Palm Beach County wind-code requirements.`,
@@ -4551,7 +4599,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'lake-worth-beach-coastal-roofing',
-      title: 'Lake Worth Beach Coastal Roofing | All Phase Construction USA',
+      title: 'Lake Worth Beach Coastal Roofing | All Phase USA',
       description: 'Coastal roofing in Lake Worth Beach, FL. Salt-air rated systems for properties east of I-95. Marine-grade fasteners, PBC wind-code compliant.',
       h1: 'Lake Worth Beach Coastal Roofing',
       intro: `Properties east of I-95 in Lake Worth Beach face increased salt air exposure from the Atlantic and Lake Worth Lagoon — conditions that demand marine-grade roofing components standard inland assemblies don't include. All Phase Construction USA builds coastal re-roofs for Lake Worth Beach with 304-grade stainless fasteners, SBS-modified peel-and-stick underlayment, and wind-code compliant assemblies rated to 170+ mph design wind speeds.`,
@@ -4568,7 +4616,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'lake-worth-beach-flat-roof-replacement',
-      title: 'Lake Worth Beach Flat Roof Replacement | All Phase Construction USA',
+      title: 'Lake Worth Beach Flat Roof Replacement | All Phase USA',
       description: 'Flat roof replacement in Lake Worth Beach, FL. Mid-century homes, commercial buildings, and mixed-use structures. TPO, modified-bitumen, built-up systems.',
       h1: 'Flat Roof Replacement in Lake Worth Beach, FL',
       intro: `Lake Worth Beach's mid-century concrete block homes and downtown mixed-use buildings share a common feature — flat or low-slope roofs that are now 30–60 years old and well past their service life. All Phase Construction USA replaces flat roof systems across Lake Worth Beach with TPO, modified-bitumen, and built-up assemblies engineered to Palm Beach County wind code with positive drainage and wind-rated edge metal.`,
@@ -4585,7 +4633,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'lake-worth-beach-roof-insurance-claim',
-      title: 'Lake Worth Beach Roof Insurance Claim | All Phase Construction USA',
+      title: 'Lake Worth Beach Roof Insurance Claim | All Phase USA',
       description: 'Lake Worth Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
       h1: 'Lake Worth Beach Roof Insurance Claim Assistance',
       intro: `Lake Worth Beach's mix of aging housing stock and coastal storm exposure generates a high volume of roof insurance claims — and those claims are won or lost on documentation quality. All Phase Construction USA handles the full claim process for Lake Worth Beach homeowners from drone inspection through re-roof completion and wind mitigation filing.`,
@@ -4602,7 +4650,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'lake-worth-beach-tile-roof-replacement',
-      title: 'Lake Worth Beach Tile Roof Replacement | All Phase Construction USA',
+      title: 'Lake Worth Beach Tile Roof Replacement | All Phase USA',
       description: 'Tile roof replacement in Lake Worth Beach, FL. Clay and concrete tile, full underlayment tear-off, structural assessment included. PBC wind-code compliant.',
       h1: 'Tile Roof Replacement in Lake Worth Beach, FL',
       intro: `Tile roofs across Lake Worth Beach range from original 1920s clay barrel tile on Historic District bungalows to 1990s concrete flat tile on newer subdivisions near Lucerne Lakes. Regardless of era, the re-roof trigger is almost always the underlayment — not the tile — failing after 20–25 years. All Phase Construction USA replaces tile roofs across Lake Worth Beach with full underlayment tear-off, structural assessment, and stainless battens for long-term PBC wind-code compliance.`,
@@ -4655,7 +4703,7 @@ ${companyAuthorityFooter()}
   const wellingtonPages = [
     {
       slug: 'wellington-equestrian-estate-roofing',
-      title: 'Wellington Equestrian Estate Roofing | All Phase Construction USA',
+      title: 'Wellington Equestrian Estate Roofing | All Phase USA',
       description: 'Roofing for Wellington equestrian estates and large-acreage properties near the International Polo Club. PBC wind-code compliant. Free inspection.',
       h1: 'Wellington Equestrian Estate Roofing',
       intro: `Wellington is home to the International Polo Club and the Winter Equestrian Festival, and the estates surrounding the Equestrian Preserve represent some of the largest residential roof footprints in Palm Beach County. All Phase Construction USA replaces roofs on Wellington equestrian properties — main residences, guesthouses, barns, and covered arenas — with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
@@ -4672,7 +4720,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wellington-hoa-roof-replacement',
-      title: 'Wellington HOA Roof Replacement | All Phase Construction USA',
+      title: 'Wellington HOA Roof Replacement | All Phase USA',
       description: 'HOA-coordinated roof replacement across Wellington FL. 80+ communities served. Color match, architectural review, phased scheduling. PBC wind-code compliant.',
       h1: 'Wellington HOA Roof Replacement',
       intro: `Wellington has over 80 HOA-governed communities — from Olympia and The Isles to Grand Isles and Sugar Pond Manor — and nearly all of them were built in a 20-year window between the mid-1980s and early 2000s. That means the original roof systems across these communities are hitting the re-roof window simultaneously. All Phase Construction USA handles HOA-coordinated roof replacement at scale with pre-approved materials, architectural review submittals, and phased neighborhood scheduling.`,
@@ -4689,7 +4737,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wellington-tile-roof-replacement',
-      title: 'Wellington Tile Roof Replacement | All Phase Construction USA',
+      title: 'Wellington Tile Roof Replacement | All Phase USA',
       description: 'Tile roof replacement in Wellington, FL. Concrete and clay tile, full underlayment tear-off, HOA-compliant. PBC wind-code certified.',
       h1: 'Tile Roof Replacement in Wellington, FL',
       intro: `Concrete tile is the dominant roofing material in Wellington — nearly every subdivision built between the 1980s and 2000s was originally roofed with it. All Phase Construction USA replaces tile roofs across Wellington with full underlayment tear-off, SBS-modified peel-and-stick replacement, and stainless battens built to Palm Beach County wind code.`,
@@ -4706,7 +4754,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wellington-roof-insurance-claim',
-      title: 'Wellington Roof Insurance Claim | All Phase Construction USA',
+      title: 'Wellington Roof Insurance Claim | All Phase USA',
       description: 'Wellington FL roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
       h1: 'Wellington Roof Insurance Claim Assistance',
       intro: `Wellington's concentrated footprint of 1980s–2000s tile roofs means storm events generate a wave of simultaneous insurance claims across the community. Adjusters see high claim volume from Wellington after every named storm, and they scrutinize each one carefully. All Phase Construction USA handles the full claim process with documentation built to withstand that scrutiny.`,
@@ -4723,7 +4771,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wellington-metal-roofing',
-      title: 'Wellington Metal Roofing | All Phase Construction USA',
+      title: 'Wellington Metal Roofing | All Phase USA',
       description: 'Metal roofing in Wellington, FL. Standing-seam and corrugated systems for homes, barns, and equestrian properties. PBC wind-code compliant.',
       h1: 'Metal Roofing in Wellington, FL',
       intro: `Metal roofing is gaining ground in Wellington as homeowners and equestrian property owners look for the longest-life, lowest-maintenance option available under Palm Beach County wind code. All Phase Construction USA installs standing-seam and corrugated metal roof systems across Wellington's residential subdivisions, estate properties, barns, and covered arenas.`,
@@ -4746,7 +4794,7 @@ ${companyAuthorityFooter()}
   const bocaFinalPages = [
     {
       slug: 'boca-raton-commercial-roofing',
-      title: 'Boca Raton Commercial Roofing | All Phase Construction USA',
+      title: 'Boca Raton Commercial Roofing | All Phase USA',
       description: 'Commercial roofing in Boca Raton, FL. Flat roof replacement and repair for Yamato Road, Glades Road, and Town Center corridors. Dual licensed, PBC wind-code compliant.',
       h1: 'Boca Raton Commercial Roofing',
       intro: `Boca Raton's commercial corridors — Yamato Road, Glades Road, Federal Highway, and the Town Center district — generate steady demand for flat roof replacement and repair on office parks, retail centers, medical buildings, and mixed-use structures. All Phase Construction USA replaces and repairs commercial roof systems across Boca Raton with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
@@ -4765,7 +4813,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boca-raton-metal-roofing',
-      title: 'Boca Raton Metal Roofing | All Phase Construction USA',
+      title: 'Boca Raton Metal Roofing | All Phase USA',
       description: 'Metal roofing in Boca Raton, FL. Standing-seam aluminum and steel for residential and commercial. Salt-rated coastal options. PBC wind-code compliant.',
       h1: 'Metal Roofing in Boca Raton, FL',
       intro: `Metal roofing is the fastest-growing category in the Boca Raton market as homeowners and commercial property owners look for the longest-life, lowest-maintenance option available under Palm Beach County wind code. All Phase Construction USA installs standing-seam aluminum and steel roof systems across Boca Raton — from coastal A1A estates to inland subdivisions and commercial corridors.`,
@@ -4791,7 +4839,7 @@ ${companyAuthorityFooter()}
   const browardCommercialPages = [
     {
       slug: 'deerfield-beach-commercial-roofing',
-      title: 'Deerfield Beach Commercial Roofing | All Phase Construction USA',
+      title: 'Deerfield Beach Commercial Roofing | All Phase USA',
       description: 'Commercial roofing in Deerfield Beach, FL. Flat roof replacement and repair for Hillsboro Blvd, Powerline Rd, and the I-95 corridor. HVHZ-compliant, dual licensed.',
       h1: 'Deerfield Beach Commercial Roofing',
       intro: `Deerfield Beach is home to All Phase Construction USA's headquarters at 590 Goolsby Blvd — and the commercial corridors surrounding it generate some of the highest flat-roof replacement demand in Broward County. The Hillsboro Boulevard corridor, the Powerline Road office parks, and the I-95 interchange district are all concentrated with 1980s and 1990s-era commercial structures whose original roof systems are at or past end-of-life. We replace and repair commercial roofs across Deerfield Beach with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
@@ -4810,7 +4858,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'pompano-beach-commercial-roofing',
-      title: 'Pompano Beach Commercial Roofing | All Phase Construction USA',
+      title: 'Pompano Beach Commercial Roofing | All Phase USA',
       description: 'Commercial roofing in Pompano Beach, FL. Flat roof replacement and repair for Atlantic Blvd, Copans Rd, and the Sample Rd corridor. HVHZ-compliant, dual licensed.',
       h1: 'Pompano Beach Commercial Roofing',
       intro: `Pompano Beach's commercial corridors — Atlantic Boulevard, Copans Road, Sample Road, and the Federal Highway strip — run the full east-west width of the city with 1970s through 1990s-era flat roof inventory that is aging out fast. All Phase Construction USA replaces and repairs commercial roof systems across Pompano Beach with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
@@ -4837,7 +4885,7 @@ ${companyAuthorityFooter()}
   const hoaCommunityPages = [
     {
       slug: 'the-cove-deerfield-beach-roofing',
-      title: 'The Cove Deerfield Beach Roofing | All Phase Construction USA',
+      title: 'The Cove Deerfield Beach Roofing | All Phase USA',
       description: 'Roof replacement in The Cove, Deerfield Beach FL. HOA-coordinated tile and shingle re-roofs. HVHZ-compliant, close to our HQ. Free inspection.',
       h1: 'Roofing Contractor for The Cove, Deerfield Beach',
       hubSlug: 'deerfield-beach',
@@ -4857,7 +4905,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'olympia-wellington-roofing',
-      title: 'Olympia Wellington Roofing | All Phase Construction USA',
+      title: 'Olympia Wellington Roofing | All Phase USA',
       description: 'Roof replacement in Olympia, Wellington FL. Village-by-village HOA coordination, tile re-roofs, PBC wind-code compliant. Free inspection.',
       h1: 'Roofing Contractor for Olympia, Wellington',
       hubSlug: 'wellington',
@@ -4877,7 +4925,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'canyon-lakes-boynton-beach-roofing',
-      title: 'Canyon Lakes Boynton Beach Roofing | All Phase Construction USA',
+      title: 'Canyon Lakes Boynton Beach Roofing | All Phase USA',
       description: 'Roof replacement in Canyon Lakes, Boynton Beach FL. Upscale gated community, complex tile systems, HOA-coordinated. PBC wind-code compliant.',
       h1: 'Roofing Contractor for Canyon Lakes, Boynton Beach',
       hubSlug: 'boynton-beach',
@@ -4897,7 +4945,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'broken-sound-boca-raton-roofing',
-      title: 'Broken Sound Boca Raton Roofing | All Phase Construction USA',
+      title: 'Broken Sound Boca Raton Roofing | All Phase USA',
       description: 'Roof replacement in Broken Sound, Boca Raton FL. Golf course community, tile and flat roof systems, HOA-coordinated. PBC wind-code compliant.',
       h1: 'Roofing Contractor for Broken Sound, Boca Raton',
       hubSlug: 'boca-raton',
@@ -4917,7 +4965,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'royal-palm-yacht-club-boca-raton-roofing',
-      title: 'Royal Palm Yacht & Country Club Boca Raton Roofing | All Phase Construction USA',
+      title: 'Royal Palm Yacht Club Boca Roofing | All Phase',
       description: 'Roof replacement in Royal Palm Yacht & Country Club, Boca Raton FL. Ultra-luxury waterfront estates, premium materials, HOA-coordinated. PBC wind-code compliant.',
       h1: 'Roofing Contractor for Royal Palm Yacht &amp; Country Club, Boca Raton',
       hubSlug: 'boca-raton',
@@ -4937,7 +4985,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boca-raton-luxury-estate-roofing',
-      title: 'Boca Raton Luxury Estate Roofing | All Phase Construction USA',
+      title: 'Boca Raton Luxury Estate Roofing | All Phase USA',
       description: 'Luxury estate roofing in Boca Raton — The Sanctuary, Le Lac, St. Andrews Country Club. Premium tile, metal, and flat systems. PBC wind-code compliant.',
       h1: 'Boca Raton Luxury Estate Roofing',
       hubSlug: 'boca-raton',
@@ -4964,7 +5012,7 @@ ${companyAuthorityFooter()}
   const lighthousePompanoPages = [
     {
       slug: 'lighthouse-point-roof-replacement',
-      title: 'Lighthouse Point Roof Replacement | All Phase Construction USA',
+      title: 'Lighthouse Point Roof Replacement | All Phase USA',
       description: 'Roof replacement in Lighthouse Point, FL. Waterfront and inland homes. HVHZ-compliant, marine-grade materials. Minutes from our Deerfield Beach HQ.',
       h1: 'Roof Replacement in Lighthouse Point, FL',
       hubSlug: 'lighthouse-point',
@@ -4984,7 +5032,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'lighthouse-point-tile-roof-replacement',
-      title: 'Lighthouse Point Tile Roof Replacement | All Phase Construction USA',
+      title: 'Lighthouse Point Tile Roof Replacement | All Phase USA',
       description: 'Tile roof replacement in Lighthouse Point, FL. Clay and concrete tile, full underlayment tear-off, stainless battens. HVHZ-compliant.',
       h1: 'Tile Roof Replacement in Lighthouse Point, FL',
       hubSlug: 'lighthouse-point',
@@ -5004,7 +5052,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'pompano-beach-coastal-roofing',
-      title: 'Pompano Beach Coastal Roofing | All Phase Construction USA',
+      title: 'Pompano Beach Coastal Roofing | All Phase USA',
       description: 'Coastal roofing in Pompano Beach, FL. A1A corridor, Harbor Village, beachside properties. Salt-rated, HVHZ-compliant. Free inspection.',
       h1: 'Pompano Beach Coastal Roofing',
       hubSlug: 'pompano-beach',
@@ -5024,7 +5072,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'pompano-beach-tile-roof-replacement',
-      title: 'Pompano Beach Tile Roof Replacement | All Phase Construction USA',
+      title: 'Pompano Beach Tile Roof Replacement | All Phase USA',
       description: 'Tile roof replacement in Pompano Beach, FL. Palm Aire, Cypress Lakes, and citywide. Full underlayment tear-off, HVHZ-compliant.',
       h1: 'Tile Roof Replacement in Pompano Beach, FL',
       hubSlug: 'pompano-beach',
@@ -5044,7 +5092,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'palm-aire-pompano-beach-roofing',
-      title: 'Palm Aire Pompano Beach Roofing | All Phase Construction USA',
+      title: 'Palm Aire Pompano Beach Roofing | All Phase USA',
       description: 'Roof replacement in Palm Aire, Pompano Beach FL. 1970s-era tile and flat roof systems. HOA-coordinated, HVHZ-compliant. Free inspection.',
       h1: 'Roofing Contractor for Palm Aire, Pompano Beach',
       hubSlug: 'pompano-beach',
@@ -5070,7 +5118,7 @@ ${companyAuthorityFooter()}
   const stAndrewsPages = [
     {
       slug: 'st-andrews-country-club-boca-raton-roofing',
-      title: 'St. Andrews Country Club Boca Raton Roofing | All Phase Construction USA',
+      title: 'St. Andrews Country Club Boca Roofing | All Phase',
       description: 'Roof replacement in St. Andrews Country Club, West Boca Raton FL. Estate tile re-roofs, HOA-coordinated, PBC wind-code compliant. Free inspection.',
       h1: 'Roofing Contractor for St. Andrews Country Club, Boca Raton',
       hubSlug: 'boca-raton',
@@ -5272,7 +5320,7 @@ ${companyAuthorityFooter()}
   const westPalmPages = [
     {
       slug: 'west-palm-beach-historic-roofing',
-      title: 'West Palm Beach Historic District Roofing | All Phase Construction USA',
+      title: 'West Palm Beach Historic District Roofing | All Phase USA',
       description: 'Historic district roofing in West Palm Beach — Flamingo Park, El Cid, Northwood. Period-correct tile and shingle re-roofs. PBC wind-code compliant.',
       h1: 'West Palm Beach Historic District Roofing',
       intro: `West Palm Beach's historic neighborhoods — Flamingo Park, El Cid, Northwood Historic District, and Southland Park — contain some of Palm Beach County's most architecturally significant residential structures. Spanish Colonial Revival, Mission Revival, Mediterranean, and Art Deco homes from the 1920s through 1940s require roofing work that preserves period-correct aesthetics while meeting modern wind-code requirements. All Phase Construction USA handles that balance with dual-licensed structural assessment and period-appropriate material sourcing.`,
@@ -5289,7 +5337,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'west-palm-beach-waterfront-roofing',
-      title: 'West Palm Beach Waterfront Roofing | All Phase Construction USA',
+      title: 'West Palm Beach Waterfront Roofing | All Phase USA',
       description: 'Waterfront roofing in West Palm Beach, FL. Intracoastal and lagoon-side homes. Salt-air rated, marine-grade fasteners. PBC wind-code compliant.',
       h1: 'West Palm Beach Waterfront Roofing',
       intro: `West Palm Beach's waterfront neighborhoods along the Intracoastal Waterway and Lake Worth Lagoon face salt air corrosion, direct wind exposure, and UV loads that destroy standard roofing assemblies years ahead of schedule. All Phase Construction USA builds waterfront re-roofs for West Palm Beach with 304-grade stainless fasteners, SBS-modified peel-and-stick underlayment, and wind-code compliant assemblies rated to 170+ mph design wind speeds.`,
@@ -5306,7 +5354,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'west-palm-beach-commercial-roofing',
-      title: 'West Palm Beach Commercial Roofing | All Phase Construction USA',
+      title: 'West Palm Beach Commercial Roofing | All Phase USA',
       description: 'Commercial roofing in West Palm Beach, FL. Downtown, Okeechobee corridor, Rosemary Square area. TPO, modified-bitumen, built-up systems. Dual licensed.',
       h1: 'West Palm Beach Commercial Roofing',
       intro: `West Palm Beach is Palm Beach County's commercial hub — the Okeechobee Boulevard corridor, the Rosemary Square downtown district, and the Congress Avenue office parks generate steady demand for flat roof replacement and repair. All Phase Construction USA replaces and repairs commercial roof systems across West Palm Beach with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
@@ -5323,7 +5371,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'west-palm-beach-tile-roof-replacement',
-      title: 'West Palm Beach Tile Roof Replacement | All Phase Construction USA',
+      title: 'West Palm Beach Tile Roof Replacement | All Phase USA',
       description: 'Tile roof replacement in West Palm Beach, FL. Historic barrel tile and modern concrete tile. Full underlayment tear-off, PBC wind-code compliant.',
       h1: 'Tile Roof Replacement in West Palm Beach, FL',
       intro: `Tile roofs in West Palm Beach span the full range — original 1920s clay barrel tile on Flamingo Park bungalows, 1990s concrete flat tile on suburban subdivisions near Jog Road, and everything in between. All Phase Construction USA replaces tile roofs across West Palm Beach with full underlayment tear-off, structural assessment where needed, and stainless battens for PBC wind-code compliance.`,
@@ -5340,7 +5388,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'west-palm-beach-roof-insurance-claim',
-      title: 'West Palm Beach Roof Insurance Claim | All Phase Construction USA',
+      title: 'West Palm Beach Roof Insurance Claim | All Phase USA',
       description: 'West Palm Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
       h1: 'West Palm Beach Roof Insurance Claim Assistance',
       intro: `West Palm Beach's mix of historic structures, aging suburban tile, and waterfront exposure generates a steady volume of roof insurance claims. All Phase Construction USA handles the full claim process for West Palm Beach homeowners — from drone inspection through re-roof completion and wind mitigation filing — with documentation built to withstand adjuster scrutiny on both storm damage and pre-existing condition separation.`,
