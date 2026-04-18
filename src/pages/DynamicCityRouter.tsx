@@ -72,6 +72,7 @@ const TamaracMoneyPage = lazy(() => import('./locations/TamaracMoneyPage'));
 const LauderdaleByTheSeaMoneyPage = lazy(() => import('./locations/LauderdaleByTheSeaMoneyPage'));
 const PalmBeachMoneyPage = lazy(() => import('./locations/PalmBeachMoneyPage'));
 const PalmBeachCountyHubPage = lazy(() => import('./locations/PalmBeachCountyHubPage'));
+const BrowardCountyHubPage = lazy(() => import('./locations/BrowardCountyHubPage'));
 const GenericLocationTemplate = lazy(() => import('./templates/GenericLocationTemplate'));
 const GenericRoofRepairTemplate = lazy(() => import('./templates/GenericRoofRepairTemplate'));
 const GenericRoofInspectionTemplate = lazy(() => import('./templates/GenericRoofInspectionTemplate'));
@@ -81,6 +82,7 @@ const citySlugs = new Set(cities.map(c => c.slug.toLowerCase().trim()));
 const locationPageMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
   'boca-raton': BocaRatonMoneyPage,
   'boynton-beach': BoyntonBeachMoneyPage,
+  'broward-county': BrowardCountyHubPage,
   'coconut-creek': CoconutCreekMoneyPage,
   'coral-springs': CoralSpringsMoneyPage,
   'davie': DavieMoneyPage,
