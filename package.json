@@ -22,7 +22,12 @@
     "indexnow-all": "node scripts/submit-indexnow.mjs --all",
     "sitemap:generate": "node scripts/generate-sitemap.mjs",
     "sitemap:validate": "node scripts/validate-sitemap.mjs",
-    "sitemap": "npm run sitemap:generate && npm run sitemap:validate"
+    "sitemap": "npm run sitemap:generate && npm run sitemap:validate",
+    "manifest": "node scripts/dist-manifest.mjs",
+    "manifest:save": "node scripts/dist-manifest.mjs --out manifests/head.json",
+    "manifest:diff": "node scripts/dist-diff.mjs manifests/main.json manifests/head.json",
+    "smoke": "node scripts/smoke-test.mjs",
+    "smoke:prod": "node scripts/smoke-test.mjs --base https://allphaseconstructionfl.com"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",

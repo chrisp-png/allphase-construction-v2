@@ -1,0 +1,4 @@
+# Build manifests are regenerated on demand; don't track them.
+# Keep the directory so scripts have a stable output location.
+*.json
+!.gitignore
