@@ -215,7 +215,13 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /southwest-ranches / 301!
 /cooper-city /locations/cooper-city 301!
 /pompano-beach /locations/pompano-beach 301!
-/locations/broward-county / 301!
+# NOTE: Removed force-301 `/locations/broward-county / 301!` (was added
+# 2026-02-27 as a legacy cleanup rule when the county hub didn't exist).
+# The county hub now renders via prerender-static.mjs + DynamicLocationPage,
+# and this redirect was sending every real-browser visit to the homepage
+# while Googlebot followed it too (GSC flagged "Page with redirect" on
+# the Apr 2, 2026 crawl). Palm Beach County did not have a parallel rule,
+# which is why only Broward was affected.
 /locations/deerfield-beach/service-area/palm-beach-shores / 301!
 /locations/deerfield-beach/service-area/greenacres /locations/greenacres 301!
 /locations/deerfield-beach/service-area/palm-beach-county/top-5-roofer / 301!
