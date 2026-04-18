@@ -3019,6 +3019,45 @@ ${companyAuthorityFooter()}
     },
   ];
 
+  // ─── County-hub FAQs: 6 per county, mirrors city-hub FAQ pattern ───
+  // Needed so GSC picks up FAQPage enhancement on the county hubs — city hubs
+  // already have it via buildLocationFaqs() but county hubs had no FAQ block.
+  // Rich results impact: FAQ accordion in SERP for county-level queries
+  // ("palm beach county roofer", "broward county roofing contractor").
+  const buildCountyFaqs = (hub) => {
+    const isBroward = hub.slug === 'broward-county';
+    const hvhzNote = isBroward
+      ? `Yes. All of Broward County is designated a High Velocity Hurricane Zone (HVHZ), which means every roof replacement we perform here is installed to the strictest wind-code requirements in Florida — 175+ mph wind-rated assemblies with enhanced fastening schedules, approved product control numbers, and impact-rated components.`
+      : `Technically no — Palm Beach County sits just outside the official HVHZ boundary — but we voluntarily build every Palm Beach County roof to HVHZ specification anyway. The cost difference is minimal, the performance difference is substantial, and the wind credits on your insurance policy typically pay back the upgrade within a few years.`;
+    const countyCities = hub.cities.map(([, name]) => name).join(', ');
+    return [
+      {
+        question: `How long does a roof replacement take in ${hub.name}?`,
+        answer: `Most single-family roof replacements across ${hub.name} are completed in 2 to 5 working days from tear-off to final cleanup. Larger estate homes, complex multi-level tile systems, and projects that require structural deck repair can extend to 1–2 weeks. We schedule a single crew and a single mobilization per project so the home is buttoned up every evening.`
+      },
+      {
+        question: `Is ${hub.name} in the High Velocity Hurricane Zone?`,
+        answer: hvhzNote
+      },
+      {
+        question: `Are you licensed to replace roofs throughout ${hub.name}?`,
+        answer: `Yes. We hold both the Florida State Certified Roofing Contractor license (CCC-1331464) and the Certified General Contractor license (CGC-1526236). That dual licensing covers every municipality in ${hub.name} and lets us address structural conditions under the roof deck — rotted sheathing, failed trusses, rusted tie-down straps — without subcontracting the work or stopping the job.`
+      },
+      {
+        question: `What cities in ${hub.name} do you serve?`,
+        answer: `We serve every major city in ${hub.name} including ${countyCities}. Crews dispatch from our Deerfield Beach headquarters at 590 Goolsby Blvd, which puts us in a same-day response radius for most projects in the county.`
+      },
+      {
+        question: `Do you handle ${hub.name} permits, inspections, and HOA architectural review?`,
+        answer: `Yes. Permitting, building-department inspections, and HOA architectural review committee submittals are part of every ${hub.name} project we run. We pull the permit under our dual license, coordinate inspection scheduling, and submit the full material-and-color package to the HOA in advance so tear-off doesn't start until everything is approved in writing.`
+      },
+      {
+        question: `What roofing materials do you install on ${hub.name} homes?`,
+        answer: `All Phase Construction USA installs concrete and clay tile, architectural and 3-tab shingles, standing-seam and ribbed metal, and TPO/PVC flat-roof systems throughout ${hub.name}. Material choice is driven by roof pitch, structural capacity, neighborhood architectural guidelines, and long-term insurance economics — we walk every realistic option with the homeowner before anyone signs.`
+      }
+    ];
+  };
+
   COUNTY_HUBS.forEach((hub) => {
     const title = `${hub.name} Roof Replacement | All Phase USA`;
     const description = `Roof replacement in ${hub.name}, FL. Tile, metal, shingle & flat. ${hub.complianceLanguage}, dual-licensed. 2,500+ projects. Free estimate.`;
@@ -3072,6 +3111,19 @@ ${companyAuthorityFooter()}
   <p>All Phase Construction USA has been replacing roofs across ${hub.name} since 2005. Our dual general-contractor and roofing-contractor licensing gives us the authority to address structural issues under the roof deck — rotted sheathing, failed trusses, rusted straps — that pure roofing contractors have to stop and subcontract out. That single advantage is why we handle the oldest and most complex housing stock in ${hub.name}.</p>
 
   <p><a href="tel:7542275605"><strong>Call (754) 227-5605</strong></a> for a free inspection anywhere in ${hub.name}.</p>
+
+  ${(() => {
+    const countyFaqs = buildCountyFaqs(hub);
+    const items = countyFaqs.map(f => `
+    <details style="margin-bottom: 0.75rem; padding: 1rem; border-left: 3px solid #dc2626; background: #fafafa;">
+      <summary style="font-weight: bold; cursor: pointer; color: #111;">${f.question}</summary>
+      <p style="margin-top: 0.75rem; line-height: 1.7; color: #333;">${f.answer}</p>
+    </details>`).join('');
+    return `
+  <h2 id="${hub.slug}-faqs">${hub.name} Roof Replacement FAQs</h2>
+  <div class="seo-location-faqs">${items}
+  </div>`;
+  })()}
 </section>`;
 
     const schema = [
@@ -3089,6 +3141,20 @@ ${companyAuthorityFooter()}
           postalCode: '33442',
           addressCountry: 'US',
         },
+        // aggregateRating added inline because baseOrgSchema is suppressed when
+        // the page-specific schema is RoofingContractor-first (see schemaToInject
+        // logic ~line 1820). Without this, county hubs lose the review-stars
+        // rich snippet that every city page earns via baseOrgSchema. Mirrors
+        // the Deerfield Beach HQ pattern at line ~1662. Values match
+        // baseOrgSchema to keep the site-wide rating consistent. DO NOT add an
+        // inline `review` array — that re-triggers the GSC "multiple aggregate
+        // ratings" error documented in the baseOrgSchema comment.
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          reviewCount: '136',
+          bestRating: '5',
+        },
       },
       {
         '@context': 'https://schema.org',
@@ -3098,6 +3164,15 @@ ${companyAuthorityFooter()}
           { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area' },
           { '@type': 'ListItem', position: 3, name: hub.name, item: canonical },
         ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: buildCountyFaqs(hub).map(f => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer }
+        }))
       },
     ];
 
