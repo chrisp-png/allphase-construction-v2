@@ -2469,7 +2469,7 @@ ${companyAuthorityFooter()}
   topRooferPages.forEach(({ path: pagePath, city }) => {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
     const title = `Top 5 Roofers in ${city}, FL (2026) | All Phase`;
-    const description = `All Phase ranks among the top 5 roof replacement contractors in ${city}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
+    const description = `All Phase is a top 5 roof replacement contractor in ${city}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
 
     const content = `
 <section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
@@ -2923,7 +2923,7 @@ ${companyAuthorityFooter()}
 
   COUNTY_HUBS.forEach((hub) => {
     const title = `${hub.name} Roof Replacement | All Phase USA`;
-    const description = `Roof replacement throughout ${hub.name}, FL. Tile, metal, shingle & flat. ${hub.complianceLanguage}, dual-licensed CCC + CGC, 2,500+ projects. Free estimate. (754) 227-5605.`;
+    const description = `Roof replacement in ${hub.name}, FL. Tile, metal, shingle & flat. ${hub.complianceLanguage}, dual-licensed. 2,500+ projects. Free estimate.`;
     const canonical = `https://allphaseconstructionfl.com/locations/${hub.slug}`;
 
     const cityLinksHtml = hub.cities
@@ -4138,7 +4138,7 @@ ${companyAuthorityFooter()}
 `;
   fs.writeFileSync(path.join(bestRoofersParklandDir, 'index.html'), createHTMLTemplate(
     'Top 5 Roofers in Parkland FL (2026) | All Phase',
-    'Looking for the best roofers in Parkland? We reviewed the top 5 HVHZ-certified contractors serving Heron Bay, Parkland Golf & Country Club, and MiraLago. See who made the list.',
+    'Top 5 HVHZ-certified roofers in Parkland FL serving Heron Bay, Parkland Golf & Country Club, and MiraLago. Independent Broward review.',
     'https://allphaseconstructionfl.com/locations/parkland/best-roofers-parkland',
     bestRoofersParklandContent,
     JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does roof replacement cost in Parkland, FL?","acceptedAnswer":{"@type":"Answer","text":"Parkland roof replacement typically ranges from $18,000 to $45,000+ because of larger estate footprints and premium material specifications. Heron Bay and Parkland Golf & Country Club tile roofs often exceed $30,000 due to tile cost, fastening requirements, and HOA-specified manufacturers. Contact All Phase Construction USA at (754) 227-5605 for a detailed estate-level assessment."}},{"@type":"Question","name":"Do Parkland HOAs like Heron Bay and Parkland Golf & Country Club require approval before roof replacement?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every Parkland master-planned community requires architectural review approval before roofing work begins \u2014 Heron Bay, Parkland Golf & Country Club, MiraLago, Parkland Isles, and the Ranches of Parkland all enforce their own ARC guidelines covering color, tile profile, and manufacturer. We prepare the full ARC submittal package (manufacturer data sheets, color samples, installation method statement, insurance certificates) as part of every Parkland proposal."}},{"@type":"Question","name":"Which roofing material is best for Parkland estate homes?","acceptedAnswer":{"@type":"Answer","text":"Premium concrete or clay tile and standing-seam metal are the two dominant Parkland systems. Concrete tile meets HVHZ requirements with 40-50 year service life at architectural profiles approved by most Parkland HOAs. Standing-seam metal is favored on newer contemporary estates and performs exceptionally in Broward\'s wind regime. Slate is less common but seen on some Parkland Golf & Country Club estates where ARC allows it."}},{"@type":"Question","name":"How do I verify a Parkland roofer is HVHZ-certified and ARC-experienced?","acceptedAnswer":{"@type":"Answer","text":"Confirm the contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com and verify HVHZ product approvals on file with Broward County. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida\'s database. Ask for Parkland references, prior ARC submittal examples, and proof of active liability insurance."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Parkland","item":"https://allphaseconstructionfl.com/locations/parkland"},{"@type":"ListItem","position":3,"name":"Best Roofers in Parkland","item":"https://allphaseconstructionfl.com/locations/parkland/best-roofers-parkland"}]}]')
@@ -4201,7 +4201,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'highland-beach-roof-replacement',
       title: 'Highland Beach Roof Replacement | All Phase USA',
-      description: 'Salt-air-rated roof replacement for Highland Beach, FL oceanfront homes. Stainless fasteners, peel-and-stick underlayment, PBC wind-code compliant. Free inspection.',
+      description: 'Salt-air roof replacement for Highland Beach FL oceanfront homes. Stainless fasteners, peel-and-stick underlayment, PBC wind-code. Free inspection.',
       h1: 'Roof Replacement in Highland Beach, FL',
       intro: `Highland Beach sits on a narrow barrier island between the Intracoastal and the Atlantic, which means every roof on A1A faces salt spray, UV, and direct onshore wind loads that inland Palm Beach County roofs never see. All Phase Construction USA replaces tile, metal, and flat roofs across Highland Beach with Palm Beach County wind-code compliant assemblies rated for 170+ mph design wind speeds.`,
       sections: `
@@ -4795,7 +4795,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'boca-raton-commercial-roofing',
       title: 'Boca Raton Commercial Roofing | All Phase USA',
-      description: 'Commercial roofing in Boca Raton, FL. Flat roof replacement and repair for Yamato Road, Glades Road, and Town Center corridors. Dual licensed, PBC wind-code compliant.',
+      description: 'Commercial roofing in Boca Raton, FL. Flat roof replacement & repair for Yamato Rd, Glades Rd, and Town Center. Dual licensed, PBC wind-code.',
       h1: 'Boca Raton Commercial Roofing',
       intro: `Boca Raton's commercial corridors — Yamato Road, Glades Road, Federal Highway, and the Town Center district — generate steady demand for flat roof replacement and repair on office parks, retail centers, medical buildings, and mixed-use structures. All Phase Construction USA replaces and repairs commercial roof systems across Boca Raton with TPO, modified-bitumen, and built-up assemblies rated to Palm Beach County wind code.`,
       sections: `
@@ -4840,7 +4840,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'deerfield-beach-commercial-roofing',
       title: 'Deerfield Beach Commercial Roofing | All Phase USA',
-      description: 'Commercial roofing in Deerfield Beach, FL. Flat roof replacement and repair for Hillsboro Blvd, Powerline Rd, and the I-95 corridor. HVHZ-compliant, dual licensed.',
+      description: 'Commercial roofing in Deerfield Beach, FL. Flat roof replacement & repair for Hillsboro Blvd, Powerline Rd, and I-95. HVHZ-compliant, dual licensed.',
       h1: 'Deerfield Beach Commercial Roofing',
       intro: `Deerfield Beach is home to All Phase Construction USA's headquarters at 590 Goolsby Blvd — and the commercial corridors surrounding it generate some of the highest flat-roof replacement demand in Broward County. The Hillsboro Boulevard corridor, the Powerline Road office parks, and the I-95 interchange district are all concentrated with 1980s and 1990s-era commercial structures whose original roof systems are at or past end-of-life. We replace and repair commercial roofs across Deerfield Beach with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
       sections: `
@@ -4859,7 +4859,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'pompano-beach-commercial-roofing',
       title: 'Pompano Beach Commercial Roofing | All Phase USA',
-      description: 'Commercial roofing in Pompano Beach, FL. Flat roof replacement and repair for Atlantic Blvd, Copans Rd, and the Sample Rd corridor. HVHZ-compliant, dual licensed.',
+      description: 'Commercial roofing in Pompano Beach, FL. Flat roof replacement & repair for Atlantic Blvd, Copans Rd, and Sample Rd. HVHZ-compliant, dual licensed.',
       h1: 'Pompano Beach Commercial Roofing',
       intro: `Pompano Beach's commercial corridors — Atlantic Boulevard, Copans Road, Sample Road, and the Federal Highway strip — run the full east-west width of the city with 1970s through 1990s-era flat roof inventory that is aging out fast. All Phase Construction USA replaces and repairs commercial roof systems across Pompano Beach with HVHZ-compliant assemblies rated for 175+ mph wind speeds.`,
       sections: `
@@ -4966,7 +4966,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'royal-palm-yacht-club-boca-raton-roofing',
       title: 'Royal Palm Yacht Club Boca Roofing | All Phase',
-      description: 'Roof replacement in Royal Palm Yacht & Country Club, Boca Raton FL. Ultra-luxury waterfront estates, premium materials, HOA-coordinated. PBC wind-code compliant.',
+      description: 'Roof replacement in Royal Palm Yacht & Country Club, Boca Raton FL. Luxury waterfront estates, premium materials, HOA-coordinated. PBC wind-code.',
       h1: 'Roofing Contractor for Royal Palm Yacht &amp; Country Club, Boca Raton',
       hubSlug: 'boca-raton',
       hubName: 'Boca Raton',
