@@ -1929,10 +1929,14 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   <a href="/metal-roofing">Metal Roofing</a>
   <a href="/flat-roofing">Flat Roofing</a>
   <a href="/tile-roofing">Tile Roofing</a>
+  <a href="/single-ply-roofing">Single-Ply Roofing</a>
   <a href="/roof-repair">Roof Repair</a>
+  <a href="/roof-replacement">Roof Replacement</a>
   <a href="/roof-inspection">Roof Inspection</a>
+  <a href="/flat-roof-moisture-infrared-inspection">Flat Roof Moisture &amp; Infrared Inspection</a>
   <a href="/roof-replacement-process">Roof Replacement Process</a>
   <a href="/roof-maintenance-programs">Roof Maintenance Programs</a>
+  <a href="/how-to-hire-roofing-contractor">How to Hire a Roofing Contractor</a>
   <a href="/reviews">Reviews</a>
   <a href="/projects">Our Projects</a>
   <a href="/frequently-asked-questions">FAQ</a>
@@ -2767,6 +2771,94 @@ ${companyAuthorityFooter()}
   </div>`;
   };
 
+  // ─── Orphan-fix: inbound links to geo / HOA / community / niche pages ───
+  // Every standalone slug page generated elsewhere in this script (hoaCommunityPages,
+  // lighthousePompanoPages, bocaFinalPages, stAndrewsPages, browardCommercialPages,
+  // priority1-4Pages, boyntonBeachPages, lakeWorthPages, wellingtonPages,
+  // westPalmPages) needs at least one inbound link from the corresponding city hub
+  // at /locations/:city. Without that, Google treats them as orphans and de-prioritizes
+  // crawl + indexing. This map is consumed inside LOCATIONS.forEach below to inject a
+  // "Featured Communities & Specialty Services" link block into each parent city page.
+  const COMMUNITY_LINKS_BY_CITY = {
+    'boca-raton': [
+      ['coastal-boca-raton-roofing-contractor', 'Coastal Boca Raton Roofing'],
+      ['west-boca-raton-roof-replacement', 'West Boca Raton Roof Replacement'],
+      ['north-boca-raton-roof-replacement', 'North Boca Raton Roof Replacement'],
+      ['kings-point-boca-roofing-contractor', 'Kings Point Boca Roofing'],
+      ['boca-raton-tile-re-roof', 'Boca Raton Tile Re-Roof'],
+      ['boca-raton-wind-mitigation-roofing', 'Boca Raton Wind Mitigation Roofing'],
+      ['boca-raton-commercial-roofing', 'Boca Raton Commercial Roofing'],
+      ['boca-raton-metal-roofing', 'Boca Raton Metal Roofing'],
+      ['boca-raton-luxury-estate-roofing', 'Boca Raton Luxury Estate Roofing'],
+      ['broken-sound-boca-raton-roofing', 'Broken Sound Roofing'],
+      ['royal-palm-yacht-club-boca-raton-roofing', 'Royal Palm Yacht & Country Club Roofing'],
+      ['st-andrews-country-club-boca-raton-roofing', 'St. Andrews Country Club Roofing'],
+    ],
+    'deerfield-beach': [
+      ['the-cove-deerfield-beach-roofing', 'The Cove Deerfield Beach Roofing'],
+      ['deerfield-beach-commercial-roofing', 'Deerfield Beach Commercial Roofing'],
+    ],
+    'pompano-beach': [
+      ['pompano-beach-coastal-roofing', 'Pompano Beach Coastal Roofing'],
+      ['pompano-beach-tile-roof-replacement', 'Pompano Beach Tile Roof Replacement'],
+      ['palm-aire-pompano-beach-roofing', 'Palm-Aire Pompano Beach Roofing'],
+      ['pompano-beach-commercial-roofing', 'Pompano Beach Commercial Roofing'],
+    ],
+    'lighthouse-point': [
+      ['lighthouse-point-roof-replacement', 'Lighthouse Point Roof Replacement'],
+      ['lighthouse-point-tile-roof-replacement', 'Lighthouse Point Tile Roof Replacement'],
+    ],
+    'delray-beach': [
+      ['delray-beach-roof-replacement', 'Delray Beach Roof Replacement'],
+      ['delray-beach-tile-roof-contractor', 'Delray Beach Tile Roof Contractor'],
+      ['historic-delray-roofing', 'Historic Delray Roofing'],
+    ],
+    'highland-beach': [
+      ['highland-beach-roof-replacement', 'Highland Beach Roof Replacement'],
+    ],
+    'boynton-beach': [
+      ['boynton-beach-oceanfront-roofing', 'Boynton Beach Oceanfront Roofing'],
+      ['boynton-beach-tile-roof-replacement', 'Boynton Beach Tile Roof Replacement'],
+      ['boynton-beach-commercial-roofing', 'Boynton Beach Commercial Roofing'],
+      ['boynton-beach-roof-insurance-claim', 'Boynton Beach Roof Insurance Claim'],
+      ['canyon-lakes-boynton-beach-roofing', 'Canyon Lakes Boynton Beach Roofing'],
+    ],
+    'lake-worth-beach': [
+      ['lake-worth-beach-historic-roofing', 'Lake Worth Beach Historic Roofing'],
+      ['lake-worth-beach-coastal-roofing', 'Lake Worth Beach Coastal Roofing'],
+      ['lake-worth-beach-flat-roof-replacement', 'Lake Worth Beach Flat Roof Replacement'],
+      ['lake-worth-beach-roof-insurance-claim', 'Lake Worth Beach Roof Insurance Claim'],
+      ['lake-worth-beach-tile-roof-replacement', 'Lake Worth Beach Tile Roof Replacement'],
+    ],
+    'wellington': [
+      ['olympia-wellington-roofing', 'Olympia Wellington Roofing'],
+      ['wellington-equestrian-estate-roofing', 'Wellington Equestrian Estate Roofing'],
+      ['wellington-hoa-roof-replacement', 'Wellington HOA Roof Replacement'],
+      ['wellington-tile-roof-replacement', 'Wellington Tile Roof Replacement'],
+      ['wellington-metal-roofing', 'Wellington Metal Roofing'],
+      ['wellington-roof-insurance-claim', 'Wellington Roof Insurance Claim'],
+    ],
+    'west-palm-beach': [
+      ['west-palm-beach-historic-roofing', 'West Palm Beach Historic Roofing'],
+      ['west-palm-beach-waterfront-roofing', 'West Palm Beach Waterfront Roofing'],
+      ['west-palm-beach-commercial-roofing', 'West Palm Beach Commercial Roofing'],
+      ['west-palm-beach-tile-roof-replacement', 'West Palm Beach Tile Roof Replacement'],
+      ['west-palm-beach-roof-insurance-claim', 'West Palm Beach Roof Insurance Claim'],
+    ],
+  };
+
+  const buildCommunityLinksHtml = (citySlug, cityName) => {
+    const entries = COMMUNITY_LINKS_BY_CITY[citySlug];
+    if (!entries || !entries.length) return '';
+    const items = entries
+      .map(([slug, label]) => `<li><a href="/${slug}" style="color:#dc2626;text-decoration:underline;">${label}</a></li>`)
+      .join('');
+    return `
+  <h2 id="${citySlug}-featured-communities">Featured Communities &amp; Specialty Services in ${cityName}</h2>
+  <p>Dedicated landing pages for the ${cityName} neighborhoods, country clubs, and specialty roofing services we cover most often. Each page details the specific materials, HOA coordination, and scope we apply to that community or project type.</p>
+  <ul style="line-height:1.75;">${items}</ul>`;
+  };
+
   // Generate /locations/:slug pages from LOCATIONS (single source of truth)
   LOCATIONS.forEach((location) => {
     const { slug, city, state } = location;
@@ -2849,8 +2941,9 @@ ${companyAuthorityFooter()}
     <p style="margin:0;color:#1f2937;">${city} is one of the cities we serve throughout ${countyHubName}. See our full <a href="/locations/${countyHubSlug}" style="color:#dc2626;font-weight:600;text-decoration:underline;">${countyHubName} roof replacement service area</a> for coverage details across every community.</p>
   </div>`;
 
-    // Inject FAQ HTML + Map + Testimonials + County backlink before the closing </section>
-    const injectedBlock = `\n${countyBacklinkHtml}\n${buildMapHtml(city)}\n${buildTestimonialsHtml(city, location)}\n${buildFaqHtml(city, faqs)}\n`;
+    // Inject FAQ HTML + Map + Testimonials + County backlink + Community links before closing </section>
+    const communityLinksHtml = buildCommunityLinksHtml(slug, city);
+    const injectedBlock = `\n${countyBacklinkHtml}\n${buildMapHtml(city)}\n${communityLinksHtml}\n${buildTestimonialsHtml(city, location)}\n${buildFaqHtml(city, faqs)}\n`;
     if (hubContent.includes('</section>')) {
       hubContent = hubContent.replace('</section>', `${injectedBlock}</section>`);
     } else {
@@ -2895,6 +2988,7 @@ ${companyAuthorityFooter()}
         ['greenacres', 'Greenacres'],
         ['lantana', 'Lantana'],
         ['highland-beach', 'Highland Beach'],
+        ['loxahatchee-groves', 'Loxahatchee Groves'],
       ],
       includeLandmarks: true,
     },
@@ -2916,6 +3010,10 @@ ${companyAuthorityFooter()}
         ['plantation', 'Plantation'],
         ['davie', 'Davie'],
         ['sunrise', 'Sunrise'],
+        ['lauderdale-lakes', 'Lauderdale Lakes'],
+        ['pembroke-park', 'Pembroke Park'],
+        ['sea-ranch-lakes', 'Sea Ranch Lakes'],
+        ['southwest-ranches', 'Southwest Ranches'],
       ],
       includeLandmarks: false,
     },
@@ -2960,6 +3058,15 @@ ${companyAuthorityFooter()}
   <ul>${cityLinksHtml}</ul>
 
   ${landmarkHtml}
+
+  ${hub.slug === 'palm-beach-county' ? `
+  <h2>Palm Beach County Specialty Coverage</h2>
+  <p>County-wide roofing resources for coastal exposure and insurance claim support across every city we serve.</p>
+  <ul>
+    <li><a href="/oceanfront-roof-replacement-palm-beach-county">Oceanfront Roof Replacement in Palm Beach County</a></li>
+    <li><a href="/palm-beach-county-roof-insurance-claim">Palm Beach County Roof Insurance Claim Support</a></li>
+  </ul>
+  ` : ''}
 
   <h2>Why Choose All Phase in ${hub.name}</h2>
   <p>All Phase Construction USA has been replacing roofs across ${hub.name} since 2005. Our dual general-contractor and roofing-contractor licensing gives us the authority to address structural issues under the roof deck — rotted sheathing, failed trusses, rusted straps — that pure roofing contractors have to stop and subcontract out. That single advantage is why we handle the oldest and most complex housing stock in ${hub.name}.</p>
