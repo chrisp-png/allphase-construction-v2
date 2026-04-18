@@ -106,6 +106,7 @@ const BestRoofersPalmBeachGardensPage = lazy(() => import('./pages/BestRoofersPa
 const BestRoofersRoyalPalmBeachPage = lazy(() => import('./pages/BestRoofersRoyalPalmBeachPage'));
 const BestRoofersGreenacresPage = lazy(() => import('./pages/BestRoofersGreenacresPage'));
 const BestRoofersLakeWorthBeachPage = lazy(() => import('./pages/BestRoofersLakeWorthBeachPage'));
+const BestRoofersParklandPage = lazy(() => import('./pages/BestRoofersParklandPage'));
 const SouthFloridaRoofingReviewsPage = lazy(() => import('./pages/SouthFloridaRoofingReviewsPage'));
 const BrowardCountyRoofReplacementGuidePage = lazy(() => import('./pages/BrowardCountyRoofReplacementGuidePage'));
 const RoofReplacementCostFloridaPage = lazy(() => import('./pages/RoofReplacementCostFloridaPage'));
@@ -314,6 +315,7 @@ function AppContent() {
             <Route path="/locations/royal-palm-beach/best-roofers-royal-palm-beach" element={<BestRoofersRoyalPalmBeachPage />} />
             <Route path="/locations/greenacres/best-roofers-greenacres" element={<BestRoofersGreenacresPage />} />
             <Route path="/locations/lake-worth-beach/best-roofers-lake-worth-beach" element={<BestRoofersLakeWorthBeachPage />} />
+            <Route path="/locations/parkland/best-roofers-parkland" element={<BestRoofersParklandPage />} />
             <Route path="/locations/service-areas" element={<ServiceAreasHubPage />} />
             {/* Landmark pages: /locations/:city/:landmark — registered before :city catch-all.
                 Explicit best-roofers-* routes above still win because React Router ranks

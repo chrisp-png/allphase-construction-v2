@@ -657,6 +657,53 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     localExpertiseTitle: 'Why Lake Worth Beach Roofing Balances History and Hurricane Safety',
     localExpertiseParagraph: 'Lake Worth Beach has one of Palm Beach County\'s most diverse architectural landscapes, with structures spanning over 100 years of Florida building practices.'
   },
+
+  'parkland': {
+    cityName: 'Parkland',
+    citySlug: 'parkland',
+    county: 'Broward County',
+    pageTitle: 'Top 5 Roofers in Parkland FL (2026) | All Phase',
+    metaDescription: 'Looking for the best roofers in Parkland? We reviewed the top 5 HVHZ-certified contractors serving Heron Bay, Parkland Golf & Country Club, and MiraLago. See who made the list.',
+    introParagraphs: [
+      'Parkland is one of Broward County\'s most exclusive luxury communities, with gated estate neighborhoods, strict HOA architectural review boards, and homes that demand premium tile, slate, and metal roofing systems. Finding a Parkland roofer means hiring a contractor who can coordinate with Heron Bay, Parkland Golf & Country Club, and MiraLago ARCs, carries HVHZ certification for Broward\'s 175+ mph wind-load requirements, and delivers workmanship at the standard Parkland homeowners expect. We evaluated dozens of licensed contractors and identified five we would recommend to a Parkland neighbor.',
+      'Parkland sits inside Florida\'s High-Velocity Hurricane Zone and features some of the largest single-family estate footprints in Broward County. Communities like Heron Bay, Parkland Golf & Country Club, MiraLago, Parkland Isles, and Pine Tree Estates enforce strict architectural review covering tile color, profile, manufacturer, and visible metal flashing. Properties in Parkland Golf & Country Club and the Ranches of Parkland often have roof footprints of 4,000 to 8,000 square feet, complex hip and valley geometries, and premium tile or slate systems that require specialized fastening and underlayment assemblies.'
+    ],
+    competitors: [
+      'Kelly Roofing',
+      'Altec Roofing',
+      'Crowther Roofing',
+      'Istueta Roofing'
+    ],
+    allPhaseDescription: 'All Phase Construction USA holds dual CCC-1331464 and CGC-1526236 licenses with HVHZ certification and 2,500+ completed roofs across Broward and Palm Beach Counties. Parkland HOA & ARC submission packages are handled in-house — manufacturer data sheets, color samples, installation method statement, and insurance certificates prepared as part of every proposal. Our Deerfield Beach HQ means fast mobilization to Parkland estate projects. Our CGC license also lets us assess structural deck condition on larger estate footprints before the new tile or metal system goes down.',
+    faqs: [
+      {
+        question: 'What does roof replacement cost in Parkland, FL?',
+        answer: 'Parkland roof replacement typically ranges from $18,000 to $45,000+ because of larger estate footprints and premium material specifications. Heron Bay and Parkland Golf & Country Club tile roofs often exceed $30,000 due to tile cost, fastening requirements, and HOA-specified manufacturers. Contact All Phase Construction USA at (754) 227-5605 for a detailed estate-level assessment.'
+      },
+      {
+        question: 'Do Parkland HOAs like Heron Bay and Parkland Golf & Country Club require approval before roof replacement?',
+        answer: 'Yes. Every Parkland master-planned community requires architectural review approval before roofing work begins — Heron Bay, Parkland Golf & Country Club, MiraLago, Parkland Isles, and the Ranches of Parkland all enforce their own ARC guidelines covering color, tile profile, and manufacturer. We prepare the full ARC submittal package as part of every Parkland proposal.'
+      },
+      {
+        question: 'Which roofing material is best for Parkland estate homes?',
+        answer: 'Premium concrete or clay tile and standing-seam metal are the two dominant Parkland systems. Concrete tile meets HVHZ requirements with 40-50 year service life at architectural profiles approved by most Parkland HOAs. Standing-seam metal is favored on newer contemporary estates and performs exceptionally in Broward\'s wind regime. Slate is less common but seen on some Parkland Golf & Country Club estates where ARC allows it.'
+      },
+      {
+        question: 'How do I verify a Parkland roofer is HVHZ-certified and ARC-experienced?',
+        answer: 'Confirm the contractor holds a valid Florida CCC roofing license or CGC general contractor license at myfloridalicense.com and verify HVHZ product approvals on file with Broward County. All Phase Construction USA carries CCC-1331464 and CGC-1526236, both verifiable in Florida\'s database. Ask for Parkland references, prior ARC submittal examples, and proof of active liability insurance.'
+      }
+    ],
+    crossLinks: [
+      { label: 'Best Roofers in Coral Springs', href: '/locations/coral-springs/best-roofers-coral-springs' },
+      { label: 'Best Roofers in Deerfield Beach', href: '/locations/deerfield-beach/best-roofers-deerfield-beach' },
+      { label: 'Best Roofers in Pompano Beach', href: '/locations/pompano-beach/best-roofers-pompano-beach' },
+      { label: 'Parkland Roofing Services', href: '/locations/parkland' },
+      { label: 'Parkland Roof Repair', href: '/roof-repair/parkland' }
+    ],
+    localExpertiseTitle: 'Why Parkland Roofing Demands HOA Coordination and Premium Materials',
+    localExpertiseParagraph: 'Parkland\'s gated estate communities combine some of the largest single-family roof footprints in Broward County with the strictest architectural review boards. Premium tile, slate, and standing-seam metal assemblies, HVHZ-compliant detailing, and in-house ARC submittal coordination are the baseline — not the upgrade.'
+  },
+
   'boca-raton': {
     cityName: 'Boca Raton',
     citySlug: 'boca-raton',

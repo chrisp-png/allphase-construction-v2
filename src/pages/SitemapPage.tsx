@@ -148,7 +148,8 @@ export default function SitemapPage() {
         { to: '/locations/palm-beach-gardens/best-roofers-palm-beach-gardens', label: 'Best Roofers in Palm Beach Gardens' },
         { to: '/locations/royal-palm-beach/best-roofers-royal-palm-beach', label: 'Best Roofers in Royal Palm Beach' },
         { to: '/locations/greenacres/best-roofers-greenacres', label: 'Best Roofers in Greenacres' },
-        { to: '/locations/lake-worth-beach/best-roofers-lake-worth-beach', label: 'Best Roofers in Lake Worth Beach' }
+        { to: '/locations/lake-worth-beach/best-roofers-lake-worth-beach', label: 'Best Roofers in Lake Worth Beach' },
+        { to: '/locations/parkland/best-roofers-parkland', label: 'Best Roofers in Parkland' }
       ]
     },
     {

@@ -56,6 +56,8 @@ export const landmarks: Landmark[] = [
     roofingAngle: "Properties around Mizner Park face two distinct roofing demands. Condominium towers require commercial-scale flat-roof systems — typically TPO or modified bitumen — with strict HOA coordination and specialized crane-lift logistics for downtown access. Single-family homes in Old Floresta and the Spanish Village historic district typically carry clay or concrete barrel tile systems that need authentic Mediterranean-profile matching, meticulous flashing work, and careful handling of original 1920s-era roof decking. Our dual CCC and CGC licensing lets us assess structural deck condition on century-old homes before any tear-off begins.",
     approxServiceRadiusMiles: 2,
     nearbyAreas: ["Old Floresta", "Spanish Village", "Royal Palm Yacht and Country Club", "Downtown Boca Raton"],
+    titleOverride: "Roofing Near Mizner Park, Boca Raton FL | All Phase",
+    descriptionOverride: "Roof replacement near Mizner Park, Boca Raton. Barrel tile, TPO flat, condo coordination. Dual-licensed CCC + CGC. Free estimate (754) 227-5605.",
     faqs: [
       {
         question: "Do you replace tile roofs on historic Mediterranean Revival homes near Mizner Park?",
@@ -81,6 +83,8 @@ export const landmarks: Landmark[] = [
     roofingAngle: "This part of Boca Raton is dominated by concrete tile systems from the original build-out era, many of which are now at or beyond their expected lifespan. Common issues we address here: cracked tile replacement, underlayment failure (even when the tile itself looks fine), ridge and hip cap reattachment, and full tile-to-metal or tile-to-shingle conversions when homeowners want a lighter long-term system. Most of the gated communities in this area enforce HOA architectural review for roof color and profile — we handle the HOA submittal package, manufacturer data sheets, and color samples as standard.",
     approxServiceRadiusMiles: 3,
     nearbyAreas: ["Boca Del Mar", "Boca Pointe", "Boca West", "Del Mar Village", "Yamato Road corridor"],
+    titleOverride: "Roofing Near Town Center, Boca Raton FL | All Phase",
+    descriptionOverride: "Roof replacement near Town Center at Boca Raton. Concrete tile, underlayment, HOA architectural review handled. Dual-licensed. (754) 227-5605.",
     faqs: [
       {
         question: "Do you work with HOAs in the Boca West and Boca Pointe communities?",
@@ -106,6 +110,8 @@ export const landmarks: Landmark[] = [
     roofingAngle: "The FAU corridor presents a different roofing mix than west or east Boca Raton. Homes here are typically smaller footprint, lower-slope, and built with architectural shingle or early-generation concrete tile. Rental and investor-owned properties near campus often have deferred maintenance — we handle insurance-claim replacements, storm-damage documentation for absentee owners, and turnkey reroofs coordinated with property managers. Our dual licensing is particularly valuable on 1960s-era homes where original roof decking and truss systems may need inspection or reinforcement before a modern HVHZ-compliant system is installed.",
     approxServiceRadiusMiles: 2,
     nearbyAreas: ["University Park", "Boca Square", "Palms at Boca Pointe", "NW 2nd Avenue corridor"],
+    titleOverride: "Roofing Near FAU, Boca Raton FL | All Phase",
+    descriptionOverride: "Roof replacement serving the FAU corridor and University Park. Investor/landlord turnkey reroofs, HVHZ-grade systems, dual-licensed. (754) 227-5605.",
     faqs: [
       {
         question: "Do you work with absentee landlords on rental properties near FAU?",
