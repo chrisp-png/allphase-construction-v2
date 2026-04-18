@@ -1,175 +1,299 @@
+/**
+ * ═══════════════════════════════════════════════════════════════════════════
+ * HTML SITEMAP GENERATOR (dist-walker version)
+ * ═══════════════════════════════════════════════════════════════════════════
+ *
+ * Generates public/sitemap.html and dist/sitemap.html from the post-prerender
+ * dist/ directory. Matches the section grouping users see in the old hand-
+ * maintained HTML sitemap but derives the URL list from the actual deployed
+ * pages instead of the stale hardcoded allowlists that produced the previous
+ * 93-URL output.
+ *
+ * Runs AFTER the XML sitemap generator (see package.json).
+ *
+ * Sections and their heuristics — order of precedence is top-down; first
+ * match wins so more-specific patterns go first:
+ *   - Home
+ *   - Top-Level Services
+ *   - County Hub Pages
+ *   - Landmark Pages (under /locations/[city]/[landmark])
+ *   - City Money Pages (/locations/[city])
+ *   - Best-Roofers Pages
+ *   - Service-Area Hubs and Top-5 pages
+ *   - Roof Replacement Spokes (/roof-repair/[city], /roof-inspection/[city])
+ *   - County Resources (guides, insurance, oceanfront)
+ *   - Geo/Neighborhood Pages (single-segment multi-hyphen)
+ *   - Blog Articles
+ *   - Other Services (service pages not already grouped)
+ *   - Everything Else (catch-all)
+ */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createClient } from '@supabase/supabase-js';
-import dotenv from 'dotenv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables
-dotenv.config({ path: path.join(__dirname, '../.env') });
+const DIST_DIR = path.join(__dirname, '../dist');
+const APP_TSX = path.join(__dirname, '../src/App.tsx');
+const BLOG_INDEX_HTML = path.join(DIST_DIR, 'blog/index.html');
+const BLOG_REDIRECTS_TS = path.join(__dirname, '../netlify/edge-functions/blog-redirects.ts');
+const PUBLIC_HTML_SITEMAP = path.join(__dirname, '../public/sitemap.html');
+const DIST_HTML_SITEMAP = path.join(DIST_DIR, 'sitemap.html');
 
-const CANONICAL_DOMAIN = 'https://allphaseconstructionfl.com';
+const EXCLUDED_PATH_PATTERNS = [
+  /^\/404$/,
+  /^\/403$/,
+  /^\/surfer\//,
+  /^\/admin/,
+  /^\/api\//,
+  /^\/_/,
+  /^\/draft/,
+  /^\/preview/,
+  /^\/qa\//,
+  /^\/calculator$/,
+  /^\/sitemap$/,
+];
 
-// Initialize Supabase client (optional - gracefully skip if credentials missing)
-let supabase = null;
-if (process.env.VITE_SUPABASE_URL && process.env.VITE_SUPABASE_ANON_KEY) {
-  supabase = createClient(
-    process.env.VITE_SUPABASE_URL,
-    process.env.VITE_SUPABASE_ANON_KEY
-  );
-} else {
-  console.warn('⚠️  Supabase credentials not found. Skipping blog post fetch from database.\n');
+function isExcluded(p) {
+  return EXCLUDED_PATH_PATTERNS.some((re) => re.test(p));
 }
 
-// Read and parse the sheetSitemap.ts file
-const sitemapPath = path.join(__dirname, '../src/data/sheetSitemap.ts');
-const sitemapContent = fs.readFileSync(sitemapPath, 'utf8');
+function collectIndexHtmlPaths(dir, baseDir = dir, out = []) {
+  if (!fs.existsSync(dir)) return out;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      collectIndexHtmlPaths(full, baseDir, out);
+    } else if (entry.isFile() && entry.name === 'index.html') {
+      const rel = path.relative(baseDir, full);
+      const urlPath = '/' + rel.replace(/\\/g, '/').replace(/\/?index\.html$/, '');
+      out.push(urlPath === '/' || urlPath === '' ? '/' : urlPath);
+    }
+  }
+  return out;
+}
 
-// Extract the sheetSitemap array using regex
-const arrayMatch = sitemapContent.match(/export const sheetSitemap: SitemapEntry\[\] = \[([\s\S]*?)\];/);
+// Parse static SPA routes from App.tsx — see generate-sitemap.mjs for rationale.
+function collectAppRoutes() {
+  if (!fs.existsSync(APP_TSX)) return [];
+  const src = fs.readFileSync(APP_TSX, 'utf8');
+  const out = [];
+  const re = /path="([^"]+)"/g;
+  let m;
+  while ((m = re.exec(src)) !== null) {
+    const p = m[1];
+    if (!p.startsWith('/')) continue;
+    if (p.includes(':')) continue;
+    if (p === '*') continue;
+    out.push(p);
+  }
+  return out;
+}
 
-if (!arrayMatch) {
-  console.error('❌ Failed to parse sheetSitemap array');
+// Harvest blog post slugs from the prerendered blog index.
+function collectBlogPaths() {
+  if (!fs.existsSync(BLOG_INDEX_HTML)) return [];
+  const html = fs.readFileSync(BLOG_INDEX_HTML, 'utf8');
+  const out = new Set();
+  const re = /href="(\/blog\/[a-z0-9][a-z0-9-]*)"/g;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    out.add(m[1]);
+  }
+  return [...out];
+}
+
+// Parse the edge function's blog redirect table — any URL that appears here
+// is 301/410'd at request time, so it must NOT appear in the sitemap.
+function collectRedirectedBlogPaths() {
+  if (!fs.existsSync(BLOG_REDIRECTS_TS)) return new Set();
+  const src = fs.readFileSync(BLOG_REDIRECTS_TS, 'utf8');
+  const out = new Set();
+  const re = /'(\/blog\/[^']+)'\s*:\s*\{/g;
+  let m;
+  while ((m = re.exec(src)) !== null) out.add(m[1]);
+  return out;
+}
+
+// Convert a path like /locations/boca-raton/mizner-park to a friendly label
+function labelFor(p) {
+  if (p === '/') return 'Home';
+  const last = p.split('/').filter(Boolean).pop();
+  return last
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// ─── Section classification ──────────────────────────────────────────────────
+const SECTIONS = [
+  { name: 'Home', match: (p) => p === '/' },
+
+  {
+    name: 'Top-Level Services',
+    match: (p) =>
+      p === '/roof-replacement' ||
+      p === '/roof-repair' ||
+      p === '/roof-inspection' ||
+      p === '/commercial-roofing' ||
+      p === '/residential-roofing' ||
+      p === '/tile-roofing' ||
+      p === '/metal-roofing' ||
+      p === '/shingle-roofing' ||
+      p === '/flat-roofing' ||
+      p === '/single-ply-roofing' ||
+      p === '/roof-maintenance-programs' ||
+      p === '/roof-replacement-process',
+  },
+
+  {
+    name: 'County Hub Pages',
+    match: (p) =>
+      p === '/locations/broward-county' || p === '/locations/palm-beach-county',
+  },
+
+  {
+    name: 'Landmark Pages',
+    match: (p) => /^\/locations\/[^/]+\/[^/]+$/.test(p) && !/\/best-roofers-/.test(p) && !/\/service-area$/.test(p),
+  },
+
+  {
+    name: 'Best-Roofers Pages',
+    match: (p) => /^\/locations\/[^/]+\/best-roofers-/.test(p),
+  },
+
+  {
+    name: 'Service-Area Pages',
+    match: (p) =>
+      /^\/locations\/[^/]+\/service-area$/.test(p) ||
+      /\/service-area\/.+\/top-5-roofer$/.test(p),
+  },
+
+  {
+    name: 'City Money Pages',
+    match: (p) => /^\/locations\/[^/]+$/.test(p),
+  },
+
+  {
+    name: 'Roof Repair Spokes',
+    match: (p) => /^\/roof-repair\/[^/]+$/.test(p),
+  },
+
+  {
+    name: 'Roof Inspection Spokes',
+    match: (p) => /^\/roof-inspection\/[^/]+$/.test(p),
+  },
+
+  {
+    name: 'County Resources',
+    match: (p) =>
+      /^\/(broward|palm-beach)-county-/.test(p) ||
+      /^\/oceanfront-roof-replacement-palm-beach-county$/.test(p) ||
+      /^\/florida-roof-insurance-claims-guide$/.test(p),
+  },
+
+  {
+    name: 'Blog Articles',
+    match: (p) => p === '/blog' || p.startsWith('/blog/'),
+  },
+
+  {
+    name: 'Geo & Neighborhood Pages',
+    match: (p) => /^\/[a-z]+(-[a-z0-9]+){2,}$/.test(p),
+  },
+
+  {
+    name: 'Company & Info',
+    match: (p) =>
+      p === '/about-us' ||
+      p === '/contact' ||
+      p === '/our-location' ||
+      p === '/reviews' ||
+      p === '/projects' ||
+      p === '/pricing-guide' ||
+      p === '/easy-payments' ||
+      p === '/learning-center' ||
+      p === '/roofing-services' ||
+      p === '/locations' ||
+      p === '/locations/service-areas' ||
+      p === '/frequently-asked-questions' ||
+      p === '/roof-cost-calculator',
+  },
+
+  {
+    name: 'Legal',
+    match: (p) => p === '/privacy' || p === '/terms' || p === '/accessibility',
+  },
+
+  // Catch-all
+  { name: 'Other Pages', match: () => true },
+];
+
+function sectionFor(p) {
+  for (const s of SECTIONS) {
+    if (s.match(p)) return s.name;
+  }
+  return 'Other Pages';
+}
+
+// ─── Main ────────────────────────────────────────────────────────────────────
+console.log('Generating sitemap.html from dist/ ...\n');
+
+if (!fs.existsSync(DIST_DIR)) {
+  console.error(`FAIL: dist/ directory does not exist at ${DIST_DIR}`);
+  console.error('This script must run AFTER prerender. Check package.json build order.');
   process.exit(1);
 }
 
-// Parse entries
-const entries = [];
-const entryMatches = arrayMatch[1].matchAll(/\{[\s\S]*?section: '([^']*)',[\s\S]*?label: '([^']*)',[\s\S]*?path: '([^']*)',[\s\S]*?parent: ([^,]*),[\s\S]*?indexable: (true|false)(?:,[\s\S]*?priority: ([\d.]+))?(?:,[\s\S]*?changefreq: '([^']*)')?[\s\S]*?\}/g);
+const prerenderedPaths = collectIndexHtmlPaths(DIST_DIR);
+const appRoutePaths = collectAppRoutes();
+const blogPaths = collectBlogPaths();
+const redirectedBlogs = collectRedirectedBlogPaths();
 
-for (const match of entryMatches) {
-  const [, section, label, pathValue, parent, indexable] = match;
+const allPathsSet = new Set();
+for (const p of prerenderedPaths) allPathsSet.add(p);
+for (const p of appRoutePaths) allPathsSet.add(p);
+for (const p of blogPaths) allPathsSet.add(p);
 
-  if (indexable === 'true') {
-    entries.push({
-      section,
-      label,
-      path: pathValue
-    });
-  }
+const paths = [...allPathsSet]
+  .filter((p) => !isExcluded(p))
+  .filter((p) => !redirectedBlogs.has(p))
+  .sort();
+
+console.log(`Processing ${paths.length} URLs`);
+console.log(`  ${prerenderedPaths.length} prerendered + ${appRoutePaths.length} SPA routes + ${blogPaths.length} blog posts (unioned)`);
+console.log(`  ${redirectedBlogs.size} blog URLs dropped (301/410 via edge function)`);
+
+// Group by section
+const grouped = new Map();
+for (const s of SECTIONS) grouped.set(s.name, []);
+for (const p of paths) {
+  grouped.get(sectionFor(p)).push(p);
 }
 
-console.log(`📄 Parsed ${entries.length} indexable entries from sheetSitemap.ts`);
+// Pretty output: only include sections that have URLs
+const sectionsHtml = SECTIONS.map((s) => {
+  const items = grouped.get(s.name) || [];
+  if (items.length === 0) return '';
+  const lis = items
+    .map(
+      (p) =>
+        `        <li><a href="${p === '/' ? '/' : p}">${labelFor(p)}</a></li>`
+    )
+    .join('\n');
+  return (
+    `    <div class="sitemap-section">\n` +
+    `      <h2>${s.name} <span class="count">(${items.length})</span></h2>\n` +
+    `      <ul>\n${lis}\n      </ul>\n` +
+    `    </div>`
+  );
+})
+  .filter(Boolean)
+  .join('\n');
 
-// Read blog posts from blog-posts.json
-const blogPostsJsonPath = path.join(__dirname, '../src/data/blog-posts.json');
-let jsonBlogPosts = [];
-try {
-  const jsonContent = fs.readFileSync(blogPostsJsonPath, 'utf8');
-  const parsedJson = JSON.parse(jsonContent);
-  jsonBlogPosts = parsedJson.filter(post => post.published === true);
-  console.log(`✅ Found ${jsonBlogPosts.length} published posts in blog-posts.json`);
-} catch (err) {
-  console.log('⚠️  Could not read blog-posts.json:', err.message);
-}
+const today = new Date().toISOString().split('T')[0];
 
-// Fetch blog posts from Supabase
-let dbBlogPosts = null;
-if (supabase) {
-  console.log('Fetching blog posts from Supabase...');
-  const { data, error } = await supabase
-    .from('blog_posts')
-    .select('slug, title, published_date')
-    .eq('published', true)
-    .order('published_date', { ascending: false });
-
-  if (error) {
-    console.error('❌ Error fetching blog posts:', error.message);
-  } else {
-    dbBlogPosts = data;
-    console.log(`✅ Fetched ${dbBlogPosts.length} published blog posts from database`);
-  }
-} else {
-  console.log('Skipping Supabase blog post fetch (no credentials).\n');
-}
-
-// Merge blog posts from both sources
-const blogPostsMap = new Map();
-
-// Add JSON blog posts
-for (const post of jsonBlogPosts) {
-  blogPostsMap.set(post.slug, post.title || post.slug);
-}
-
-// Add database blog posts (they take precedence)
-if (dbBlogPosts) {
-  for (const post of dbBlogPosts) {
-    blogPostsMap.set(post.slug, post.title || post.slug);
-  }
-}
-
-console.log(`📝 Total unique blog posts: ${blogPostsMap.size}`);
-
-// Group entries by section
-const groupedEntries = {};
-for (const entry of entries) {
-  if (!groupedEntries[entry.section]) {
-    groupedEntries[entry.section] = [];
-  }
-  groupedEntries[entry.section].push(entry);
-}
-
-// Generate HTML sections
-let sectionsHtml = '';
-const sectionOrder = [
-  'Home',
-  'Roofing Services',
-  'Material-Specific Roofing',
-  'Roof Inspections',
-  'County Pages',
-  'Broward County Cities',
-  'Palm Beach County Cities',
-  'Locations',
-  'Best Roofers by City',
-  'Learning Center',
-  'About & Contact'
-];
-
-// Get all sections (in case some are not in sectionOrder)
-const allSections = Object.keys(groupedEntries).filter(s => !s.includes('Legacy') && !s.includes('Redirected'));
-const orderedSections = [...new Set([...sectionOrder, ...allSections])];
-
-for (const sectionName of orderedSections) {
-  const sectionEntries = groupedEntries[sectionName];
-  if (!sectionEntries || sectionEntries.length === 0) continue;
-
-  sectionsHtml += `
-    <section class="sitemap-section">
-      <h2>${sectionName}</h2>
-      <ul>`;
-
-  for (const entry of sectionEntries) {
-    const url = `${CANONICAL_DOMAIN}${entry.path}`;
-    sectionsHtml += `
-        <li><a href="${entry.path}">${entry.label}</a></li>`;
-  }
-
-  sectionsHtml += `
-      </ul>
-    </section>`;
-}
-
-// Add blog posts section
-if (blogPostsMap.size > 0) {
-  sectionsHtml += `
-    <section class="sitemap-section">
-      <h2>Blog Articles</h2>
-      <ul>`;
-
-  for (const [slug, title] of blogPostsMap) {
-    const path = `/blog/${slug}`;
-    sectionsHtml += `
-        <li><a href="${path}">${title}</a></li>`;
-  }
-
-  sectionsHtml += `
-      </ul>
-    </section>`;
-}
-
-// Generate complete HTML
 const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -178,128 +302,48 @@ const html = `<!DOCTYPE html>
   <title>Sitemap - All Phase Construction</title>
   <meta name="description" content="Complete sitemap of All Phase Construction services, locations, and resources for roofing in Broward and Palm Beach Counties, Florida.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="${CANONICAL_DOMAIN}/sitemap.html">
+  <link rel="canonical" href="https://allphaseconstructionfl.com/sitemap.html">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f5f5f5;
-      padding: 20px;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      background: white;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    header {
-      border-bottom: 3px solid #dc2626;
-      padding-bottom: 20px;
-      margin-bottom: 40px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #1a1a1a;
-      margin-bottom: 10px;
-    }
-    .subtitle {
-      color: #666;
-      font-size: 1.1rem;
-    }
-    .sitemap-section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      font-size: 1.75rem;
-      color: #dc2626;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #f3f4f6;
-    }
-    ul {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 12px;
-    }
-    li {
-      background: #f9fafb;
-      border-radius: 4px;
-      transition: background 0.2s;
-    }
-    li:hover {
-      background: #f3f4f6;
-    }
-    a {
-      display: block;
-      padding: 12px 16px;
-      color: #1a1a1a;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #dc2626;
-    }
-    footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 2px solid #f3f4f6;
-      text-align: center;
-      color: #666;
-    }
-    footer a {
-      display: inline;
-      padding: 0;
-      color: #dc2626;
-      text-decoration: underline;
-    }
-    @media (max-width: 768px) {
-      .container {
-        padding: 20px;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      ul {
-        grid-template-columns: 1fr;
-      }
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    header { border-bottom: 3px solid #dc2626; padding-bottom: 20px; margin-bottom: 40px; }
+    h1 { font-size: 2.5rem; color: #1a1a1a; margin-bottom: 10px; }
+    .subtitle { color: #666; font-size: 1.1rem; }
+    .sitemap-section { margin-bottom: 40px; }
+    h2 { font-size: 1.5rem; color: #dc2626; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f3f4f6; }
+    h2 .count { color: #888; font-weight: 400; font-size: 1rem; margin-left: 8px; }
+    ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+    li { background: #f9fafb; border-radius: 4px; transition: background 0.2s; }
+    li:hover { background: #fef2f2; }
+    a { display: block; padding: 10px 14px; color: #1f2937; text-decoration: none; font-size: 0.95rem; }
+    a:hover { color: #dc2626; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #666; font-size: 0.9rem; }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Sitemap</h1>
-      <p class="subtitle">All Phase Construction - Roofing Services in South Florida</p>
+      <h1>Site Map</h1>
+      <p class="subtitle">All Phase Construction USA — ${paths.length} pages, last updated ${today}</p>
     </header>
-
-    <main>
 ${sectionsHtml}
-    </main>
-
     <footer>
-      <p>&copy; ${new Date().getFullYear()} All Phase Construction. Licensed & Insured.</p>
-      <p><a href="/">Return to Homepage</a></p>
+      <p>&copy; ${new Date().getFullYear()} All Phase Construction USA. All rights reserved.</p>
     </footer>
   </div>
 </body>
-</html>`;
+</html>
+`;
 
-// Write to public/sitemap.html
-const outputPath = path.join(__dirname, '../public/sitemap.html');
-fs.writeFileSync(outputPath, html, 'utf8');
+fs.writeFileSync(DIST_HTML_SITEMAP, html, 'utf8');
+fs.writeFileSync(PUBLIC_HTML_SITEMAP, html, 'utf8');
 
-const totalLinks = entries.length + blogPostsMap.size;
-console.log('\n✅ HTML Sitemap generated successfully!');
-console.log(`Location: public/sitemap.html`);
-console.log(`Total links: ${totalLinks}`);
-console.log(`  - Pages: ${entries.length}`);
-console.log(`  - Blog posts: ${blogPostsMap.size}\n`);
+console.log(`HTML sitemap generated successfully.`);
+console.log(`  Total URLs: ${paths.length}`);
+console.log(`  Written to: dist/sitemap.html and public/sitemap.html`);
+console.log(`  Sections used:`);
+for (const s of SECTIONS) {
+  const count = (grouped.get(s.name) || []).length;
+  if (count > 0) console.log(`    ${s.name}: ${count}`);
+}

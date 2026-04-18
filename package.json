@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-blog-content && npm run optimize-images && npm run generate-sitemap && npm run generate-html-sitemap && vite build && npm run prerender",
+    "build": "npm run build-blog-content && npm run optimize-images && vite build && npm run prerender && npm run generate-sitemap && npm run generate-html-sitemap",
     "build-blog-content": "node scripts/build-blog-content.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
