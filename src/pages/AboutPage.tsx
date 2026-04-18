@@ -581,30 +581,17 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 lg:p-12 mb-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-xl overflow-hidden order-2 lg:order-1">
-              <img
-                src="/habitat-for-humanity.jpg"
-                alt="All Phase Construction employee volunteering at Habitat for Humanity build"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Giving Back to Our Community
-              </h2>
-              <div className="space-y-4 text-gray-400 leading-relaxed">
-                <p>
-                  At All Phase Construction, we believe in using our skills to make a difference. We're proud to partner with Habitat for Humanity, donating our time and expertise to help build safe, affordable homes for families in need throughout South Florida.
-                </p>
-                <p>
-                  It's one of the most rewarding parts of what we do—and a reminder of why quality roofing matters.
-                </p>
-              </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+              Giving Back to Our Community
+            </h2>
+            <div className="space-y-4 text-gray-400 leading-relaxed">
+              <p>
+                At All Phase Construction, we believe in using our skills to make a difference. We're proud to partner with Habitat for Humanity, donating our time and expertise to help build safe, affordable homes for families in need throughout South Florida.
+              </p>
+              <p>
+                It's one of the most rewarding parts of what we do—and a reminder of why quality roofing matters.
+              </p>
             </div>
           </div>
         </div>

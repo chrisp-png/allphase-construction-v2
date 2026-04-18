@@ -47,7 +47,7 @@ export default function OurLocationPage() {
           <h2 className="text-3xl font-bold text-white mb-6">Our Deerfield Beach Office</h2>
           <div className="overflow-hidden rounded-xl">
             <img
-              src="/images/all-phase-construction-deerfield-beach-office.jpg"
+              src="/deerfield-beach-all-phase-construction-office-building.JPG"
               alt="All Phase Construction USA office at 590 Goolsby Blvd in Deerfield Beach, FL"
               width={800}
               height={600}

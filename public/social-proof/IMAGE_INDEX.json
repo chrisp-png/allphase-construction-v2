@@ -51,10 +51,8 @@
       ]
     },
     "drone": {
-      "count": 1,
-      "images": [
-        "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg"
-      ]
+      "count": 0,
+      "images": []
     }
   },
   "usage_guidelines": {
@@ -78,18 +76,9 @@
       "metal-bus-shelter-roof-installation-palm-beach-broward-county-all-phase-construction-usa.jpg",
       "bus-shelter-standing-seam-metal-roof-all-phase-construction-usa.jpg"
     ],
-    "hero_backgrounds": [
-      "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg"
-    ]
+    "hero_backgrounds": []
   },
   "images": [
-    {
-      "filename": "drone-shingle-roof-install-broward-county-all-phase-construction-usa.jpg",
-      "category": "drone",
-      "alt": "Aerial drone view of shingle roof installation in Broward County with All Phase Construction USA branded truck on site",
-      "type": "project",
-      "location": "Broward County"
-    },
     {
       "filename": "terra-cotta-tile-install.jpg",
       "category": "projects",
