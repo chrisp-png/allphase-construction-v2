@@ -338,7 +338,7 @@ export default function HowToHireRoofingContractorPage() {
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div>
                   <img
-                    src="/third-nail-hurricane-roof-strapping-detail.jpg"
+                    src="/social-proof/adding-enhanced-fastening-for-maximum-uplift-resistance.jpg"
                     alt="Three-nail hurricane roof strapping at roof-to-wall connection meeting HVHZ code requirements in South Florida"
                     width={800}
                     height={600}
@@ -352,7 +352,7 @@ export default function HowToHireRoofingContractorPage() {
                 </div>
                 <div>
                   <img
-                    src="/roof-to-wall-hurricane-straps-installed.jpg"
+                    src="/social-proof/enhanced-fastening-in-perimeter-of-roof-all-phase-construction-usa.jpg"
                     alt="Hurricane straps and roof-to-wall connections installed for HVHZ wind resistance in South Florida"
                     width={800}
                     height={600}
@@ -484,7 +484,7 @@ export default function HowToHireRoofingContractorPage() {
 
               <div className="mb-6">
                 <img
-                  src="/wind-mitigation-inspection-roof-components-diagram.png"
+                  src="/social-proof/wind-mitigation-inspection-roof-components-diagram.png"
                   alt="Wind mitigation inspection diagram showing roof components evaluated for insurance discounts in South Florida HVHZ"
                   width={800}
                   height={600}
@@ -536,7 +536,7 @@ export default function HowToHireRoofingContractorPage() {
                 <h3 className="text-xl font-bold text-white mb-4">Catch-All Systems</h3>
                 <div className="mb-4">
                   <img
-                    src="/roofing-property-protection-catch-all-system.jpg"
+                    src="/social-proof/roofing-property-protection-catch-all-system.jpg"
                     alt="Roofing catch-all debris containment system protecting landscaping and property during South Florida roof replacement"
                     width={800}
                     height={600}
@@ -552,7 +552,7 @@ export default function HowToHireRoofingContractorPage() {
                 <h3 className="text-xl font-bold text-white mb-4">Equipter Debris Removal</h3>
                 <div className="mb-4">
                   <img
-                    src="/equipter-roofing-equipment-property-protection.jpeg"
+                    src="/social-proof/equipter-roofing-equipment-property-protection.jpeg"
                     alt="Equipter roofing debris removal equipment protecting driveways and pavers during tile roof replacement in South Florida"
                     width={800}
                     height={600}
@@ -711,7 +711,7 @@ export default function HowToHireRoofingContractorPage() {
 
               <div className="bg-zinc-950 rounded-lg p-6 border border-zinc-700">
                 <img
-                  src="/solar-attic-fan-hvhz-roof-ventilation.jpg"
+                  src="/solar-attic-fan-diagram.svg"
                   alt="HVHZ-rated solar attic fan installed on tile roof in South Florida providing hurricane-resistant roof ventilation"
                   width={800}
                   height={600}
@@ -769,7 +769,7 @@ export default function HowToHireRoofingContractorPage() {
 
               <div className="bg-zinc-950 rounded-lg p-6 border border-zinc-700/50">
                 <img
-                  src="/hvhz-solar-attic-fan-installation-south-florida.jpg"
+                  src="/Solar_attic_fan_flashing_for_metal_roof.jpg"
                   alt="HVHZ-rated solar attic fan installation in South Florida showing proper flashing and underlayment protection"
                   width={800}
                   height={600}
@@ -885,7 +885,7 @@ export default function HowToHireRoofingContractorPage() {
               <div className="bg-zinc-800 rounded-lg p-6 mb-6">
                 <div className="flex items-start gap-4">
                   <img
-                    src="/tamko-pro-certified-shingle-installation-south-florida.png"
+                    src="/tamko-platinum-pro-logo.png"
                     alt="TAMKO Pro Certified shingle installation by All Phase Construction USA in South Florida"
                     width={800}
                     height={600}
@@ -914,7 +914,7 @@ export default function HowToHireRoofingContractorPage() {
 
               <div className="mb-6">
                 <img
-                  src="/tile-roof-installation-hvhz-south-florida.jpg"
+                  src="/social-proof/tile-roof-installation-hvhz-south-florida.jpg"
                   alt="HVHZ tile roof installation showing proper underlayment and tile attachment methods in South Florida"
                   width={800}
                   height={600}
@@ -950,7 +950,7 @@ export default function HowToHireRoofingContractorPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <img
-                    src="/flat-concrete-tile-roof-hvhz-installation.jpg"
+                    src="/social-proof/parkland-fl-concrete-tile-roof-installation-work-in-progress-allphase-construction.jpg"
                     alt="Flat concrete tile roof with HVHZ-compliant installation in South Florida"
                     width={800}
                     height={600}
@@ -962,7 +962,7 @@ export default function HowToHireRoofingContractorPage() {
                 </div>
                 <div>
                   <img
-                    src="/completed-tile-roof-south-florida-home.jpg"
+                    src="/social-proof/happy-tile-roof-customers-all-phase-usa.jpg"
                     alt="Completed tile roof installation on South Florida luxury home with proper curb appeal and hurricane protection"
                     width={800}
                     height={600}
@@ -1013,7 +1013,7 @@ export default function HowToHireRoofingContractorPage() {
               <div className="bg-zinc-800 rounded-lg p-6">
                 <div className="flex items-start gap-4">
                   <img
-                    src="/mechanically-seamed-metal-roof-installation-south-florida.jpg"
+                    src="/social-proof/mechanically-seamed-metal-roof-installation-south-florida.jpg"
                     alt="Mechanically seamed metal roof installation by All Phase Construction USA in South Florida designed for hurricane wind resistance"
                     width={800}
                     height={600}
@@ -1036,7 +1036,7 @@ export default function HowToHireRoofingContractorPage() {
 
               <div className="mb-6">
                 <img
-                  src="/south-florida-roofing-permit-documentation.jpg"
+                  src="/step-04-permitting-optimized.jpg"
                   alt="South Florida roofing permit documentation and building inspection paperwork for HVHZ compliance"
                   className="w-full rounded-lg border border-zinc-700"
                 />

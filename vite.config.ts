@@ -146,6 +146,34 @@ const manualPublicCopyPlugin = () => ({
       });
     }
 
+    // Copy asset subdirectories (images/, blog-images/) — image-only, top-level files.
+    // Historically these were missed because the root-level copy only walks the top of public/
+    // and the subdirectory copies above are an explicit allowlist. Add well-known asset
+    // folders here so refs like /images/wellington-aerial.webp resolve after build.
+    const assetSubdirs = ['images', 'blog-images'];
+    const imageExt = /\.(jpg|jpeg|png|webp|gif|svg|avif)$/i;
+    assetSubdirs.forEach(subdir => {
+      const src = path.resolve(publicDir, subdir);
+      const dest = path.resolve(distDir, subdir);
+      if (!fs.existsSync(src)) return;
+      if (!fs.existsSync(dest)) {
+        fs.mkdirSync(dest, { recursive: true });
+      }
+      const entries = fs.readdirSync(src);
+      entries.forEach(file => {
+        const srcFile = path.resolve(src, file);
+        const destFile = path.resolve(dest, file);
+        try {
+          if (fs.statSync(srcFile).isFile() && imageExt.test(file)) {
+            fs.copyFileSync(srcFile, destFile);
+            console.log(`Copied ${subdir}/${file}`);
+          }
+        } catch (error) {
+          console.warn(`Skipped ${subdir}/${file}: ${error.message}`);
+        }
+      });
+    });
+
     // Recursively copy all HTML files from public/ subdirectories (prerendered pages)
     // IMPORTANT: Skip root index.html to preserve Vite's processed version with bundled assets
     // CRITICAL: Skip SPA routes (locations/*, roof-repair/*, roof-inspection/*)

@@ -88,27 +88,27 @@ export default function HeroRoofing() {
       <picture className="absolute inset-0 hidden md:block" style={{ overflow: 'hidden', zIndex: 0, pointerEvents: 'none' }}>
         <source
           media="(max-width: 800px)"
-          srcSet="/team_drone_photo-mobile.webp"
+          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
           type="image/webp"
           width="800"
           height="450"
         />
         <source
           media="(min-width: 801px) and (max-width: 1280px)"
-          srcSet="/team_drone_photo-tablet.webp"
+          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
           type="image/webp"
           width="1280"
           height="720"
         />
         <source
           media="(min-width: 1281px)"
-          srcSet="/team_drone_photo-desktop.webp"
+          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
           type="image/webp"
           width="1550"
           height="872"
         />
         <img
-          src="/team_drone_photo-desktop.webp"
+          src="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
           alt="All Phase Construction USA team on a residential roofing project"
           width="1550"
           height="872"
