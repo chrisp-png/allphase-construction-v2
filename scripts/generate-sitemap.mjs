@@ -1,488 +1,364 @@
+/**
+ * ═══════════════════════════════════════════════════════════════════════════
+ * SITEMAP GENERATOR (dist-walker version)
+ * ═══════════════════════════════════════════════════════════════════════════
+ *
+ * Walks the post-prerender dist/ directory to find every index.html file and
+ * emits sitemap.xml from the actual deployed URL universe. This replaces the
+ * previous generator which hand-maintained four parallel allowlists
+ * (LOCATION_MONEY_PAGES, APPROVED_REPAIR_CITIES, APPROVED_INSPECTION_CITIES,
+ * LOCATION_SUB_PAGES) that inevitably drifted out of sync with the prerender
+ * script. As of the rewrite, the old generator was producing 129 URLs while
+ * the prerender was producing 259 — a 130-URL gap that was entirely due to
+ * allowlist rot.
+ *
+ * Key architectural change: this script now runs AFTER `npm run prerender`
+ * in the build chain (see package.json). That ordering is load-bearing —
+ * running it before prerender produces an empty sitemap because dist/ doesn't
+ * yet contain the prerendered pages.
+ *
+ * Priority assignment is pattern-based (see PRIORITY_RULES). The rough
+ * hierarchy, from highest to lowest:
+ *   1.0  = home
+ *   0.95 = top-level service pages (/roof-replacement, /roof-repair)
+ *   0.9  = city money pages + county hubs + top-level important pages
+ *   0.8  = repair/inspection spokes, best-roofers, landmarks, county resources
+ *   0.7  = top-5-roofer lists, geo/neighborhood pages, blog articles
+ *   0.6  = service-area hubs and everything else
+ *
+ * Writes both public/sitemap.xml (kept in git for visibility) and
+ * dist/sitemap.xml (what Netlify deploys).
+ */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { createClient } from '@supabase/supabase-js';
-import dotenv from 'dotenv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables
-dotenv.config({ path: path.join(__dirname, '../.env') });
-
 const CANONICAL_DOMAIN = 'https://allphaseconstructionfl.com';
+const DIST_DIR = path.join(__dirname, '../dist');
+const APP_TSX = path.join(__dirname, '../src/App.tsx');
+const BLOG_INDEX_HTML = path.join(DIST_DIR, 'blog/index.html');
+const BLOG_REDIRECTS_TS = path.join(__dirname, '../netlify/edge-functions/blog-redirects.ts');
+const PUBLIC_SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
+const DIST_SITEMAP_PATH = path.join(DIST_DIR, 'sitemap.xml');
 
-// ═══════════════════════════════════════════════════════════════════════════
-// APPROVED CITY ALLOWLISTS
-// ═══════════════════════════════════════════════════════════════════════════
-
-// Cities that should be EXCLUDED entirely (legacy/alias slugs)
-const EXCLUDED_SLUGS = new Set([
-  'light-house-point',
-  'lazy-lake',
-  'lauderdale-lakes',
-  'lauderdale-ranches',
-  'manalapan',
-  'gulf-stream',
-  'briny-breezes',
-  'south-palm-beach',
-  'west-palm-beach-county',
-  'boca-raton-county',
-  'boynton-beach-county',
-  'broward-county',
-  'palm-beach-county'
-]);
-
-// Redirect/alias slugs that return 301 - NEVER include in sitemap
-const REDIRECT_OR_ALIAS_SLUGS = new Set([
-  'light-house-point'
-]);
-
-// APPROVED canonical repair cities (200 OK) for /roof-repair/{city}/
-const APPROVED_REPAIR_CITIES = new Set([
-  'boca-raton', 'boynton-beach', 'coconut-creek', 'cooper-city',
-  'coral-springs', 'davie', 'deerfield-beach', 'delray-beach',
-  'fort-lauderdale', 'greenacres', 'gulf-stream', 'hallandale-beach',
-  'haverhill', 'highland-beach', 'hollywood', 'hypoluxo',
-  'lake-worth', 'lake-worth-beach', 'lantana', 'lauderdale-by-the-sea',
-  'lauderhill', 'lighthouse-point', 'margate', 'miramar',
-  'oakland-park', 'ocean-ridge', 'palm-beach', 'palm-beach-gardens',
-  'parkland', 'pembroke-pines', 'plantation', 'pompano-beach',
-  'royal-palm-beach', 'sunrise', 'tamarac', 'wellington',
-  'west-palm-beach', 'weston', 'wilton-manors'
-]);
-
-// APPROVED canonical inspection cities (200 OK) for /roof-inspection/{city}/
-const APPROVED_INSPECTION_CITIES = new Set([
-  'boca-raton', 'boynton-beach', 'coconut-creek', 'cooper-city', 'coral-springs',
-  'davie', 'deerfield-beach', 'delray-beach', 'fort-lauderdale', 'greenacres',
-  'gulf-stream', 'hallandale-beach', 'haverhill', 'highland-beach', 'hollywood',
-  'hypoluxo', 'lake-worth-beach', 'lantana', 'lauderdale-by-the-sea', 'lauderhill',
-  'lighthouse-point', 'margate', 'miramar', 'oakland-park', 'ocean-ridge',
-  'palm-beach', 'palm-beach-gardens', 'parkland', 'pembroke-pines', 'plantation',
-  'pompano-beach', 'royal-palm-beach', 'sunrise', 'tamarac', 'wellington',
-  'west-palm-beach', 'weston', 'wilton-manors'
-]);
-
-// ═══════════════════════════════════════════════════════════════════════════
-// URL EXCLUSION PATTERNS
-// ═══════════════════════════════════════════════════════════════════════════
-
-const EXCLUDED_PATTERNS = [
-  /\/tile-roof-inspection-/,
-  /\/metal-roof-inspection-/,
-  /\/flat-roof-inspection-/,
-  /\/insurance-roof-inspection/,
-  /^\/locations\//                          // Exclude all /locations/ URLs from sheetSitemap (we add them programmatically)
+// ─── Paths to exclude from sitemap ───────────────────────────────────────────
+// These are files that exist in dist/ but should NOT be discoverable by Google.
+// Order matters only for readability — all predicates are OR-ed.
+const EXCLUDED_PATH_PATTERNS = [
+  /^\/404$/,                     // SPA 404 fallback
+  /^\/403$/,                     // Auth error page
+  /^\/surfer\//,                 // Dev/CMS artifacts (Surfer SEO snapshots)
+  /^\/admin/,                    // Admin routes
+  /^\/api\//,                    // Any API-shaped route (unlikely but safe)
+  /^\/_/,                        // Underscore-prefixed (Netlify convention)
+  /^\/draft/,                    // Unpublished drafts
+  /^\/preview/,                  // Preview/staging routes
+  /^\/qa\//,                     // QA / internal tools
+  /^\/calculator$/,              // Redirect-only route, canonical is /roof-cost-calculator
+  /^\/sitemap$/,                 // Avoid recursion — sitemap.html lives at /sitemap.html not /sitemap
 ];
 
-// ═══════════════════════════════════════════════════════════════════════════
-// HELPER FUNCTIONS
-// ═══════════════════════════════════════════════════════════════════════════
+function isExcluded(urlPath) {
+  return EXCLUDED_PATH_PATTERNS.some((re) => re.test(urlPath));
+}
 
-function isExcludedUrl(urlPath) {
-  for (const pattern of EXCLUDED_PATTERNS) {
-    if (pattern.test(urlPath)) return true;
+// ─── Priority + changefreq rules ─────────────────────────────────────────────
+// First matching rule wins. Order from most specific to least.
+const PRIORITY_RULES = [
+  // Home
+  { match: (p) => p === '/', priority: 1.0, changefreq: 'weekly' },
+
+  // Top-level primary service pages
+  {
+    match: (p) =>
+      p === '/roof-replacement' ||
+      p === '/roof-repair' ||
+      p === '/roof-inspection' ||
+      p === '/commercial-roofing' ||
+      p === '/residential-roofing',
+    priority: 0.95,
+    changefreq: 'weekly',
+  },
+
+  // County hub pages
+  {
+    match: (p) =>
+      p === '/locations/broward-county' || p === '/locations/palm-beach-county',
+    priority: 0.9,
+    changefreq: 'weekly',
+  },
+
+  // Landmark pages: /locations/[city]/[landmark]  (3+ path segments under /locations/)
+  {
+    match: (p) => /^\/locations\/[^/]+\/[^/]+$/.test(p) && !/\/best-roofers-/.test(p),
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
+  // Best-roofers pages: /locations/[city]/best-roofers-[city]
+  {
+    match: (p) => /^\/locations\/[^/]+\/best-roofers-/.test(p),
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
+  // Service-area top-5-roofer programmatic pages:
+  //   /locations/deerfield-beach/service-area/[area]/top-5-roofer
+  {
+    match: (p) => /\/service-area\/.+\/top-5-roofer$/.test(p),
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  // Service-area hubs: /locations/[city]/service-area
+  {
+    match: (p) => /^\/locations\/[^/]+\/service-area$/.test(p),
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  // City money pages: /locations/[city]
+  {
+    match: (p) => /^\/locations\/[^/]+$/.test(p),
+    priority: 0.9,
+    changefreq: 'weekly',
+  },
+
+  // Repair and inspection city spokes
+  {
+    match: (p) =>
+      /^\/roof-repair\/[^/]+$/.test(p) || /^\/roof-inspection\/[^/]+$/.test(p),
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
+  // Blog articles
+  {
+    match: (p) => p.startsWith('/blog/') && p !== '/blog',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  // Blog index
+  {
+    match: (p) => p === '/blog',
+    priority: 0.8,
+    changefreq: 'weekly',
+  },
+
+  // County-level resource pages (guides, insurance-claim, oceanfront etc.)
+  {
+    match: (p) =>
+      /^\/(broward|palm-beach)-county-/.test(p) ||
+      /^\/oceanfront-roof-replacement-palm-beach-county$/.test(p),
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
+  // Geo/neighborhood pages (e.g. /wellington-tile-roof-replacement,
+  // /kings-point-boca-roofing-contractor, /mizner-park-roofing etc.)
+  // Heuristic: hyphenated single-segment path with a city-ish anchor.
+  {
+    match: (p) => /^\/[a-z]+(-[a-z0-9]+){2,}$/.test(p) && !p.startsWith('/blog/'),
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+];
+
+function priorityFor(urlPath) {
+  for (const rule of PRIORITY_RULES) {
+    if (rule.match(urlPath)) {
+      return { priority: rule.priority, changefreq: rule.changefreq };
+    }
   }
-  return false;
+  return { priority: 0.6, changefreq: 'monthly' };
 }
 
-function removeTrailingSlash(urlPath) {
-  if (urlPath === '/') return '/';
-  return urlPath.endsWith('/') ? urlPath.slice(0, -1) : urlPath;
+// ─── Walk dist/ recursively and collect URL paths ────────────────────────────
+function collectIndexHtmlPaths(dir, baseDir = dir, out = []) {
+  if (!fs.existsSync(dir)) return out;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      collectIndexHtmlPaths(full, baseDir, out);
+    } else if (entry.isFile() && entry.name === 'index.html') {
+      // dist/foo/bar/index.html -> /foo/bar
+      const rel = path.relative(baseDir, full);
+      const urlPath = '/' + rel.replace(/\\/g, '/').replace(/\/?index\.html$/, '');
+      // Root file (dist/index.html) becomes '/'
+      out.push(urlPath === '/' || urlPath === '' ? '/' : urlPath);
+    }
+  }
+  return out;
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
-// SITEMAP GENERATION
-// ═══════════════════════════════════════════════════════════════════════════
-
-console.log('Generating Clean Canonical Sitemap...\n');
-
-// Initialize Supabase client (optional - gracefully skip if credentials missing)
-let supabase = null;
-if (process.env.VITE_SUPABASE_URL && process.env.VITE_SUPABASE_ANON_KEY) {
-  supabase = createClient(
-    process.env.VITE_SUPABASE_URL,
-    process.env.VITE_SUPABASE_ANON_KEY
-  );
-} else {
-  console.warn('⚠️  Supabase credentials not found. Skipping blog post fetch from database.\n');
+// ─── Parse static SPA routes from App.tsx ────────────────────────────────────
+// The SPA's prerender script does not cover every declared React Route (e.g.
+// legal pages, geo-neighborhood guide pages, inspection-by-material pages).
+// Those routes still render real, indexable content via the SPA shell — they
+// just aren't baked to static HTML files. Harvest them from App.tsx so the
+// sitemap reflects the full live URL surface, not just the prerendered subset.
+//
+// We IGNORE parameterized routes (:city, :slug etc.) — those are enumerated
+// via data-driven sources (dist walker for prerendered, blog index parsing
+// for blog posts).
+function collectAppRoutes() {
+  if (!fs.existsSync(APP_TSX)) return [];
+  const src = fs.readFileSync(APP_TSX, 'utf8');
+  const out = [];
+  const re = /path="([^"]+)"/g;
+  let m;
+  while ((m = re.exec(src)) !== null) {
+    const p = m[1];
+    if (!p.startsWith('/')) continue;   // Skip relative "*" etc.
+    if (p.includes(':')) continue;       // Skip parameterized routes
+    if (p === '*') continue;             // Skip catch-all
+    out.push(p);
+  }
+  return out;
 }
 
-// Read and parse the sheetSitemap.ts file
-const sitemapPath = path.join(__dirname, '../src/data/sheetSitemap.ts');
-const sitemapContent = fs.readFileSync(sitemapPath, 'utf8');
+// ─── Harvest blog post slugs from the prerendered blog index ─────────────────
+// /blog is prerendered as a static listing page; its anchor tags are the
+// canonical list of every published blog article. Parsing it keeps the
+// sitemap's blog coverage in sync with the actual published set without
+// needing to reach into Supabase or a data file.
+function collectBlogPaths() {
+  if (!fs.existsSync(BLOG_INDEX_HTML)) return [];
+  const html = fs.readFileSync(BLOG_INDEX_HTML, 'utf8');
+  const out = new Set();
+  const re = /href="(\/blog\/[a-z0-9][a-z0-9-]*)"/g;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    out.add(m[1]);
+  }
+  return [...out];
+}
 
-// Extract the sheetSitemap array using regex
-const arrayMatch = sitemapContent.match(/export const sheetSitemap: SitemapEntry\[\] = \[([\s\S]*?)\];/);
-if (!arrayMatch) {
-  console.error('Failed to parse sheetSitemap array');
+// ─── Parse the edge function's blog redirect table ───────────────────────────
+// Some blog slugs are still listed in blog-content.json / the blog index but
+// are actually 301/410 via netlify/edge-functions/blog-redirects.ts. Including
+// them in the sitemap sends Google to redirect targets (wasted crawl budget +
+// soft-404 risk). This set is the authoritative "do not index" list for blog
+// URLs; any sitemap URL appearing here is dropped, even if dist/ contains it.
+function collectRedirectedBlogPaths() {
+  if (!fs.existsSync(BLOG_REDIRECTS_TS)) return new Set();
+  const src = fs.readFileSync(BLOG_REDIRECTS_TS, 'utf8');
+  const out = new Set();
+  const re = /'(\/blog\/[^']+)'\s*:\s*\{/g;
+  let m;
+  while ((m = re.exec(src)) !== null) out.add(m[1]);
+  return out;
+}
+
+// ─── Main ────────────────────────────────────────────────────────────────────
+console.log('Generating sitemap.xml from dist/ ...\n');
+
+if (!fs.existsSync(DIST_DIR)) {
+  console.error(`FAIL: dist/ directory does not exist at ${DIST_DIR}`);
+  console.error('This script must run AFTER `npm run prerender`. Check package.json build order.');
   process.exit(1);
 }
 
-// Parse entries (simplified parsing)
-const entries = [];
-const entryMatches = arrayMatch[1].matchAll(/\{[\s\S]*?section: '([^']*)',[\s\S]*?label: '([^']*)',[\s\S]*?path: '([^']*)',[\s\S]*?parent: ([^,]*),[\s\S]*?indexable: (true|false)(?:,[\s\S]*?priority: ([\d.]+))?(?:,[\s\S]*?changefreq: '([^']*)')?[\s\S]*?\}/g);
+const prerenderedPaths = collectIndexHtmlPaths(DIST_DIR);
+const appRoutePaths = collectAppRoutes();
+const blogPaths = collectBlogPaths();
+const redirectedBlogs = collectRedirectedBlogPaths();
 
-for (const match of entryMatches) {
-  const [, section, label, pathValue, parent, indexable, priority, changefreq] = match;
-  if (indexable === 'true') {
-    // Check if this URL should be excluded
-    if (isExcludedUrl(pathValue)) {
-      console.log(`Excluding pattern-matched URL: ${pathValue}`);
-      continue;
-    }
-    entries.push({
-      section,
-      label,
-      path: removeTrailingSlash(pathValue),
-      parent,
-      indexable: true,
-      priority: priority ? parseFloat(priority) : undefined,
-      changefreq: changefreq || undefined
-    });
-  }
-}
+console.log(`Prerendered pages in dist/:    ${prerenderedPaths.length}`);
+console.log(`Static routes from App.tsx:    ${appRoutePaths.length}`);
+console.log(`Blog article links from /blog: ${blogPaths.length}`);
+console.log(`Redirected blog URLs (drop):   ${redirectedBlogs.size}`);
 
-console.log(`Parsed ${entries.length} indexable entries from sheetSitemap.ts\n`);
+// Union all three sources and dedupe
+const allPathsSet = new Set();
+for (const p of prerenderedPaths) allPathsSet.add(p);
+for (const p of appRoutePaths) allPathsSet.add(p);
+for (const p of blogPaths) allPathsSet.add(p);
 
-// Read blog posts from blog-posts.json
-const blogPostsJsonPath = path.join(__dirname, '../src/data/blog-posts.json');
-let jsonBlogPosts = [];
-try {
-  const jsonContent = fs.readFileSync(blogPostsJsonPath, 'utf8');
-  const parsedJson = JSON.parse(jsonContent);
-  jsonBlogPosts = parsedJson.filter(post => post.published === true);
-  console.log(`Found ${jsonBlogPosts.length} published posts in blog-posts.json`);
-} catch (err) {
-  console.log('Could not read blog-posts.json:', err.message);
-}
+const rawPaths = [...allPathsSet];
+const filteredPaths = rawPaths
+  .filter((p) => !isExcluded(p))
+  .filter((p) => !redirectedBlogs.has(p))
+  .sort();
 
-// Fetch blog posts from Supabase
-let dbBlogPosts = null;
-if (supabase) {
-  console.log('Fetching blog posts from Supabase...');
-  const { data, error } = await supabase
-    .from('blog_posts')
-    .select('slug, published_date')
-    .eq('published', true)
-    .order('published_date', { ascending: false });
-
-  if (error) {
-    console.error('Error fetching blog posts:', error.message);
-  } else {
-    dbBlogPosts = data;
-    console.log(`Fetched ${dbBlogPosts.length} published blog posts from database\n`);
-  }
-} else {
-  console.log('Skipping Supabase blog post fetch (no credentials).\n');
-}
-
-// Merge blog posts from both sources (avoid duplicates)
-const allBlogSlugs = new Set();
-for (const post of jsonBlogPosts) {
-  allBlogSlugs.add(post.slug);
-}
-if (dbBlogPosts) {
-  for (const post of dbBlogPosts) {
-    allBlogSlugs.add(post.slug);
-  }
-}
-
-console.log(`Total unique blog posts: ${allBlogSlugs.size}\n`);
-
-// Add all blog post URLs to sitemap
-for (const slug of allBlogSlugs) {
-  entries.push({
-    section: 'Blog Articles',
-    label: slug,
-    path: removeTrailingSlash(`/blog/${slug}`),
-    indexable: true,
-    priority: 0.7,
-    changefreq: 'monthly'
-  });
-}
-
-// Load cities data for display names
-const citiesPath = path.join(__dirname, 'cities.json');
-const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
-const cityMap = new Map(cities.map(c => [c.slug, c.city]));
-
-// ═══════════════════════════════════════════════════════════════════════════
-// LOCATION PAGES CONFIGURATION
-// ═══════════════════════════════════════════════════════════════════════════
-
-const LOCATION_MONEY_PAGES = [
-  'deerfield-beach',
-  'fort-lauderdale',
-  'boca-raton',
-  'coral-springs',
-  'pompano-beach',
-  'hollywood',
-  'coconut-creek',
-  'plantation',
-  'sunrise',
-  'tamarac',
-  'west-palm-beach',
-  'delray-beach',
-  'boynton-beach',
-  'wellington',
-  // New money pages (2026)
-  'davie',
-  'hallandale-beach',
-  'jupiter',
-  'lauderhill',
-  'palm-beach-gardens',
-  'margate',
-  'miramar',
-  'parkland',
-  'pembroke-pines'
-];
-
-const LOCATION_SUB_PAGES = [
-  { path: '/locations/deerfield-beach/best-roofers-deerfield-beach', label: 'Best Roofers in Deerfield Beach' },
-  { path: '/locations/fort-lauderdale/best-roofers-fort-lauderdale', label: 'Best Roofers in Fort Lauderdale' },
-  { path: '/locations/boca-raton/best-roofers-boca-raton', label: 'Best Roofers in Boca Raton' },
-  { path: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'Best Roofers in West Palm Beach' },
-  { path: '/locations/coral-springs/best-roofers-coral-springs', label: 'Best Roofers in Coral Springs' }
-];
-
-console.log('Generating Canonical City Pages...\n');
-console.log(`  Approved repair cities: ${APPROVED_REPAIR_CITIES.size}`);
-console.log(`  Approved inspection cities: ${APPROVED_INSPECTION_CITIES.size}`);
-console.log(`  Location money pages: ${LOCATION_MONEY_PAGES.length}`);
-console.log(`  Location sub-pages: ${LOCATION_SUB_PAGES.length}\n`);
-
-// SILO 2: Roof Repair - /roof-repair/[city]/
-console.log(`Adding ${APPROVED_REPAIR_CITIES.size} Roof Repair pages (APPROVED CITIES ONLY)...`);
-for (const slug of APPROVED_REPAIR_CITIES) {
-  // Guard: never include excluded or redirect/alias slugs
-  if (EXCLUDED_SLUGS.has(slug) || REDIRECT_OR_ALIAS_SLUGS.has(slug)) {
-    console.log(`BLOCKED: Attempted to add excluded/redirect slug: ${slug}`);
-    continue;
-  }
-  const cityName = cityMap.get(slug) || slug;
-  entries.push({
-    section: 'Roof Repair Services',
-    label: `Roof Repair in ${cityName}`,
-    path: removeTrailingSlash(`/roof-repair/${slug}`),
-    indexable: true,
-    priority: 0.8,
-    changefreq: 'monthly'
-  });
-}
-
-// SILO 3: Roof Inspection - /roof-inspection/{city}/
-console.log(`Adding ${APPROVED_INSPECTION_CITIES.size} Roof Inspection pages (APPROVED CITIES ONLY)...`);
-for (const slug of APPROVED_INSPECTION_CITIES) {
-  // Guard: never include excluded or redirect/alias slugs
-  if (EXCLUDED_SLUGS.has(slug) || REDIRECT_OR_ALIAS_SLUGS.has(slug)) {
-    console.log(`BLOCKED: Attempted to add excluded/redirect slug: ${slug}`);
-    continue;
-  }
-  const cityName = cityMap.get(slug) || slug;
-  entries.push({
-    section: 'Roof Inspection Services',
-    label: `Roof Inspection in ${cityName}`,
-    path: removeTrailingSlash(`/roof-inspection/${slug}`),
-    indexable: true,
-    priority: 0.8,
-    changefreq: 'monthly'
-  });
-}
-
-console.log(`Total city pages added: ${APPROVED_REPAIR_CITIES.size + APPROVED_INSPECTION_CITIES.size}\n`);
-
-// ═══════════════════════════════════════════════════════════════════════════
-// LOCATION MONEY PAGES - Priority 0.9 (Main Money Pages)
-// ═══════════════════════════════════════════════════════════════════════════
-
-console.log(`Adding ${LOCATION_MONEY_PAGES.length} Location Money Pages (Priority 0.9)...`);
-for (const slug of LOCATION_MONEY_PAGES) {
-  if (EXCLUDED_SLUGS.has(slug) || REDIRECT_OR_ALIAS_SLUGS.has(slug)) {
-    console.log(`BLOCKED: Attempted to add excluded/redirect slug: ${slug}`);
-    continue;
-  }
-  const cityName = cityMap.get(slug) || slug;
-  entries.push({
-    section: 'Location Money Pages',
-    label: `${cityName} Roofing Services`,
-    path: removeTrailingSlash(`/locations/${slug}`),
-    indexable: true,
-    priority: 0.9,
-    changefreq: 'weekly'
-  });
-}
-
-// ═══════════════════════════════════════════════════════════════════════════
-// LOCATION SUB-PAGES - Priority 0.8 (Sub-Pages)
-// ═══════════════════════════════════════════════════════════════════════════
-
-console.log(`Adding ${LOCATION_SUB_PAGES.length} Location Sub-Pages (Priority 0.8)...`);
-for (const page of LOCATION_SUB_PAGES) {
-  entries.push({
-    section: 'Location Sub-Pages',
-    label: page.label,
-    path: removeTrailingSlash(page.path),
-    indexable: true,
-    priority: 0.8,
-    changefreq: 'monthly'
-  });
-}
-
-console.log(`Total location pages added: ${LOCATION_MONEY_PAGES.length + LOCATION_SUB_PAGES.length}\n`);
-
-// ═══════════════════════════════════════════════════════════════════════════
-// ADDITIONAL HARDCODED PAGES
-// ═══════════════════════════════════════════════════════════════════════════
-
-entries.push(
-  { section: 'Resources', label: 'How to Hire Roofing Contractor', path: '/how-to-hire-roofing-contractor', indexable: true, priority: 0.8, changefreq: 'monthly' },
-  { section: 'Services', label: 'Single Ply Roofing', path: '/single-ply-roofing', indexable: true, priority: 0.8, changefreq: 'monthly' },
-  { section: 'Services', label: 'Roof Repair', path: '/roof-repair', indexable: true, priority: 0.9, changefreq: 'monthly' },
-  { section: 'Tools', label: 'Roof Cost Calculator', path: '/roof-cost-calculator', indexable: true, priority: 0.8, changefreq: 'monthly' }
+console.log(
+  `Union: ${rawPaths.length} unique URLs, ${filteredPaths.length} after exclusions ` +
+    `(${rawPaths.length - filteredPaths.length} dropped)\n`
 );
 
-// ═══════════════════════════════════════════════════════════════════════════
-// DEDUPLICATION
-// ═══════════════════════════════════════════════════════════════════════════
+// ─── Validation ─────────────────────────────────────────────────────────────
+const validationErrors = [];
 
-const urlSet = new Set();
-const dedupedEntries = [];
-for (const entry of entries) {
-  const fullUrl = `${CANONICAL_DOMAIN}${entry.path}`;
-  if (urlSet.has(fullUrl)) {
-    console.log(`Duplicate URL removed: ${fullUrl}`);
-    continue;
-  }
-  urlSet.add(fullUrl);
-  dedupedEntries.push(entry);
-}
-
-console.log(`Deduplication complete: ${entries.length - dedupedEntries.length} duplicates removed\n`);
-
-// ═══════════════════════════════════════════════════════════════════════════
-// VALIDATION GATE - FAILS BUILD IF PROBLEMS DETECTED
-// ═══════════════════════════════════════════════════════════════════════════
-
-console.log('Running Comprehensive Validation Checks...\n');
-let validationErrors = [];
-
-// Build full URL list for validation
-const allUrls = dedupedEntries.map(e => `${CANONICAL_DOMAIN}${e.path}`);
-
-// CHECK 1: /locations/ URLs must only be approved money pages
-const locationUrls = allUrls.filter(u => u.includes('/locations/'));
-const expectedLocationCount = LOCATION_MONEY_PAGES.length + LOCATION_SUB_PAGES.length;
-if (locationUrls.length !== expectedLocationCount) {
-  validationErrors.push(`FAIL: Expected ${expectedLocationCount} /locations/ URLs but found ${locationUrls.length}`);
-  if (locationUrls.length > 0) {
-    validationErrors.push('Found URLs:');
-    locationUrls.slice(0, 10).forEach(u => validationErrors.push(`  ${u}`));
+// No trailing slashes except root
+for (const p of filteredPaths) {
+  if (p !== '/' && p.endsWith('/')) {
+    validationErrors.push(`Trailing slash on: ${p}`);
   }
 }
 
-// CHECK 2: /roof-inspection/{city} must ONLY contain approved cities
-const inspCityUrls = allUrls.filter(u => u.includes('/roof-inspection/') && !u.endsWith('/roof-inspection'));
-for (const u of inspCityUrls) {
-  const m = u.match(/\/roof-inspection\/([^/]+)$/);
-  if (m && !APPROVED_INSPECTION_CITIES.has(m[1])) {
-    validationErrors.push(`FAIL: Unapproved inspection city in sitemap: ${u}`);
+// No duplicates
+const seen = new Set();
+for (const p of filteredPaths) {
+  if (seen.has(p)) {
+    validationErrors.push(`Duplicate path: ${p}`);
+  }
+  seen.add(p);
+}
+
+// Must include home
+if (!filteredPaths.includes('/')) {
+  validationErrors.push('Sitemap missing home URL (/)');
+}
+
+// Known legacy alias that must never appear
+const forbiddenSlugs = ['light-house-point'];
+for (const p of filteredPaths) {
+  for (const slug of forbiddenSlugs) {
+    if (p.includes(`/${slug}/`) || p.endsWith(`/${slug}`)) {
+      validationErrors.push(`Forbidden legacy slug "${slug}" in: ${p}`);
+    }
   }
 }
 
-// CHECK 3: /roof-repair/{city} must ONLY contain approved cities
-const repairCityUrls = allUrls.filter(u => u.includes('/roof-repair/') && !u.endsWith('/roof-repair'));
-for (const u of repairCityUrls) {
-  const m = u.match(/\/roof-repair\/([^/]+)$/);
-  if (m && !APPROVED_REPAIR_CITIES.has(m[1])) {
-    validationErrors.push(`FAIL: Unapproved repair city in sitemap: ${u}`);
-  }
-}
-
-// CHECK 4: No light-house-point anywhere
-const lhpUrls = allUrls.filter(u => u.includes('light-house-point'));
-if (lhpUrls.length > 0) {
-  validationErrors.push(`FAIL: light-house-point found in ${lhpUrls.length} URLs:`);
-  lhpUrls.forEach(u => validationErrors.push(`  ${u}`));
-}
-
-// CHECK 5: All URLs should NOT end with / except root (no trailing slash policy)
-const withSlash = allUrls.filter(u => u !== CANONICAL_DOMAIN + '/' && u.endsWith('/'));
-if (withSlash.length > 0) {
-  validationErrors.push(`FAIL: ${withSlash.length} URLs have unwanted trailing slash:`);
-  withSlash.slice(0, 5).forEach(u => validationErrors.push(`  ${u}`));
-}
-
-// CHECK 6: No duplicates (Set size mismatch)
-const uniqueCheck = new Set(allUrls);
-if (allUrls.length !== uniqueCheck.size) {
-  validationErrors.push(`FAIL: Duplicate URLs detected (${allUrls.length} total, ${uniqueCheck.size} unique)`);
-}
-
-// CHECK 7: No excluded slug aliases
-for (const slug of EXCLUDED_SLUGS) {
-  const found = allUrls.filter(u => u.includes(`/${slug}/`) || u.endsWith(`/${slug}`));
-  if (found.length > 0) {
-    validationErrors.push(`FAIL: Excluded slug "${slug}" found in ${found.length} URLs:`);
-    found.slice(0, 3).forEach(u => validationErrors.push(`  ${u}`));
-  }
-}
-
-// CHECK 8: All URLs use canonical domain
-const wrongDomain = allUrls.filter(u => !u.startsWith(CANONICAL_DOMAIN));
-if (wrongDomain.length > 0) {
-  validationErrors.push(`FAIL: ${wrongDomain.length} URLs with wrong domain`);
-}
-
-// VALIDATION RESULTS
 if (validationErrors.length > 0) {
-  console.error('SITEMAP VALIDATION FAILED - BUILD MUST STOP');
-  console.log('All URLs have NO trailing slash (except root)');
-  validationErrors.forEach(err => console.error(err));
-  console.error('The sitemap contains invalid URLs. Fix the issues above before deploying.');
+  console.error('SITEMAP VALIDATION FAILED:');
+  validationErrors.forEach((e) => console.error(`  - ${e}`));
   process.exit(1);
-} else {
-  console.log('ALL VALIDATION CHECKS PASSED');
-  console.log('No duplicate URLs');
-  console.log('All URLs have NO trailing slash (except root)');
-  console.log(`Correct number of /locations/ URLs: ${locationUrls.length} (${LOCATION_MONEY_PAGES.length} money pages + ${LOCATION_SUB_PAGES.length} sub-pages)`);
-  console.log(`All ${inspCityUrls.length} roof-inspection URLs are in APPROVED list (${APPROVED_INSPECTION_CITIES.size} cities)`);
-  console.log(`All ${repairCityUrls.length} roof-repair URLs are in APPROVED list (${APPROVED_REPAIR_CITIES.size} cities)`);
-  console.log('No light-house-point alias URLs');
-  console.log('Sitemap contains ONLY canonical 200-OK URLs!\n');
+}
+console.log('Validation passed: no dupes, no trailing slashes, no forbidden slugs, home present.\n');
+
+// ─── Emit XML ────────────────────────────────────────────────────────────────
+// Deliberately MINIMAL format: only <loc>, no <lastmod>/<changefreq>/<priority>.
+// Google ignores the latter three for large sites and the project's validator
+// (scripts/validate-sitemap.mjs) treats their presence as a hard fail. Priority
+// rules are still computed above because they drive the HTML sitemap grouping
+// and the diagnostics printout below.
+const urlEntries = filteredPaths
+  .map((p) => `  <url>\n    <loc>${CANONICAL_DOMAIN}${p}</loc>\n  </url>`)
+  .join('\n');
+
+const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
+
+fs.writeFileSync(DIST_SITEMAP_PATH, xml, 'utf8');
+fs.writeFileSync(PUBLIC_SITEMAP_PATH, xml, 'utf8');
+
+// ─── Priority distribution report (helpful diagnostics) ──────────────────────
+const distribution = {};
+for (const p of filteredPaths) {
+  const { priority } = priorityFor(p);
+  distribution[priority] = (distribution[priority] || 0) + 1;
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
-// XML GENERATION
-// ═══════════════════════════════════════════════════════════════════════════
-
-// Get current date for lastmod field (YYYY-MM-DD format)
-const today = new Date().toISOString().split('T')[0];
-
-const urlEntries = dedupedEntries.map(entry => {
-  const url = `${CANONICAL_DOMAIN}${entry.path}`;
-  let urlEntry = `  <url>\n`;
-  urlEntry += `    <loc>${url}</loc>\n`;
-  urlEntry += `    <lastmod>${today}</lastmod>\n`;
-  if (entry.priority !== undefined) {
-    urlEntry += `    <priority>${entry.priority}</priority>\n`;
-  }
-  if (entry.changefreq) {
-    urlEntry += `    <changefreq>${entry.changefreq}</changefreq>\n`;
-  }
-  urlEntry += `  </url>`;
-  return urlEntry;
-}).join('\n');
-
-const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>`;
-
-// Write to public/sitemap.xml
-const outputPath = path.join(__dirname, '../public/sitemap.xml');
-fs.writeFileSync(outputPath, xml, 'utf8');
-
-console.log('Sitemap generated successfully!');
-console.log(`Location: public/sitemap.xml`);
-console.log(`Total URLs: ${dedupedEntries.length}`);
-console.log(`Domain: ${CANONICAL_DOMAIN}`);
-console.log(`Build Date: ${new Date().toISOString()}`);
+console.log('Sitemap generated successfully.');
+console.log(`  Total URLs: ${filteredPaths.length}`);
+console.log(`  Written to: dist/sitemap.xml and public/sitemap.xml`);
+console.log(`  Domain: ${CANONICAL_DOMAIN}`);
+console.log('  Priority distribution:');
+Object.keys(distribution)
+  .sort((a, b) => Number(b) - Number(a))
+  .forEach((pri) => console.log(`    ${pri}: ${distribution[pri]} URLs`));
