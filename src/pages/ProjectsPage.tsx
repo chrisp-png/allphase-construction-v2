@@ -117,7 +117,6 @@ export default function ProjectsPage() {
       <Helmet>
         <title>Roofing Projects | South Florida Portfolio | All Phase</title>
         <meta name="description" content="Browse completed roofing projects by All Phase Construction USA across Broward and Palm Beach Counties. Tile, shingle, metal, and flat roof installations with before-and-after photos." />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/projects" />
       </Helmet>
 
       <script type="application/ld+json">

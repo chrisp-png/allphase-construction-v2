@@ -51,7 +51,6 @@ export default function WiltonManorsMoneyPage() {
       <Helmet>
         <title>Roof Replacement Wilton Manors, FL | Island City Roofer | All Phase</title>
         <meta name="description" content="Wilton Manors roof replacement on 1940s–1960s CBS cottages, mid-century ranches & flat-roof condos. Dual-licensed, HVHZ-certified since 2005. Free inspection (754) 227-5605." />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

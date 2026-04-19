@@ -50,7 +50,6 @@ export default function LauderdaleLakesMoneyPage() {
       <Helmet>
         <title>Roof Replacement Lauderdale Lakes, FL | All Phase USA</title>
         <meta name="description" content="Lauderdale Lakes roof replacement by a dual-licensed, HVHZ-certified contractor. Shingle, tile & metal for 33309/33311/33313/33319 homes. Free inspection. (754) 227-5605." />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

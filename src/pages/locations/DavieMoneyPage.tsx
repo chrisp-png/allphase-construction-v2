@@ -81,7 +81,6 @@ export default function DavieMoneyPage() {
           name="description"
           content="Davie FL roofing contractor specializing in equestrian properties, ranch homes & large lots. TAMKO shingles, metal, tile. HVHZ-compliant. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

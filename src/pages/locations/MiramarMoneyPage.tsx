@@ -79,7 +79,6 @@ export default function MiramarMoneyPage() {
           name="description"
           content="Licensed roofing services in Miramar, FL. Tile, metal & shingle roof replacement. Dual-licensed contractor, HVHZ-certified, 2,500+ projects. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

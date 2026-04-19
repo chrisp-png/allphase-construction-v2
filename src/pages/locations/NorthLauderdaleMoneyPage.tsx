@@ -50,7 +50,6 @@ export default function NorthLauderdaleMoneyPage() {
       <Helmet>
         <title>Roof Replacement North Lauderdale, FL | All Phase USA</title>
         <meta name="description" content="North Lauderdale roof replacement by a dual-licensed, HVHZ-certified contractor. Shingle, tile, metal & flat roofs for 33068 homes off Rock Island & McNab. Free inspection. (754) 227-5605." />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

@@ -12,7 +12,6 @@ export default function BestRoofersParklandPage() {
       <Helmet>
         <title>{data.pageTitle}</title>
         <meta name="description" content={data.metaDescription} />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/parkland/best-roofers-parkland" />
       </Helmet>
 
       {/* Hero */}

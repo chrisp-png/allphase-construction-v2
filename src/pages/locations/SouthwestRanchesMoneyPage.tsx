@@ -52,7 +52,6 @@ export default function SouthwestRanchesMoneyPage() {
       <Helmet>
         <title>Roof Replacement Southwest Ranches, FL | Estate Specialist | All Phase</title>
         <meta name="description" content="Southwest Ranches estate roof replacement. Tile, metal & large-acreage homes. HVHZ-certified, dual-licensed since 2005. Free inspection. (754) 227-5605." />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

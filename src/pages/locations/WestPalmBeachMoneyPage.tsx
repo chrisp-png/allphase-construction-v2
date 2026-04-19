@@ -50,7 +50,6 @@ export default function WestPalmBeachMoneyPage() {
           name="description"
           content="All Phase Construction USA is a dual-licensed roofing contractor serving West Palm Beach, FL. We provide Palm Beach County wind-compliant metal, tile, and shingle roofing installation, replacement, and repair."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

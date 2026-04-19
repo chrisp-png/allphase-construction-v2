@@ -48,7 +48,6 @@ export default function BocaRatonMoneyPage() {
       <Helmet>
         <title>Roof Replacement Boca Raton, FL | All Phase USA</title>
         <meta name="description" content="Boca Raton roof replacement by a dual-licensed contractor. Voluntarily built to Miami-Dade HVHZ spec. Insurance savings built in. (754) 227-5605." />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

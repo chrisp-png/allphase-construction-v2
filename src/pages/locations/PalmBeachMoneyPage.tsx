@@ -50,7 +50,6 @@ export default function PalmBeachMoneyPage() {
           name="description"
           content="Palm Beach roofing contractor. Dual-licensed, wind-code compliant. Barrel tile restoration, estate reroofing, metal & flat systems. Architectural review board expertise. Free inspection. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

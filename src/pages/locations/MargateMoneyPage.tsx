@@ -77,7 +77,6 @@ export default function MargateMoneyPage() {
           name="description"
           content="Margate roofing contractor specializing in 1970s home roof replacement. TAMKO shingles, tile, metal roofing. Licensed & insured. Free inspections. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

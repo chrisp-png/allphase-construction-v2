@@ -79,7 +79,6 @@ export default function LauderhillMoneyPage() {
           name="description"
           content="Roofing contractor serving Lauderhill, FL. Affordable roof replacement, shingle & tile installs. HVHZ-compliant, licensed & insured. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

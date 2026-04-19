@@ -46,7 +46,6 @@ export default function LocationsIndexPage() {
           name="description"
           content="Browse our roofing service locations throughout South Florida. Find professional roofing services in your area."
         />
-        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black pt-48 pb-16">
