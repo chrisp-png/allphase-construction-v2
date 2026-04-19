@@ -41,6 +41,7 @@ const DIST_DIR = path.join(__dirname, '../dist');
 const APP_TSX = path.join(__dirname, '../src/App.tsx');
 const BLOG_INDEX_HTML = path.join(DIST_DIR, 'blog/index.html');
 const BLOG_REDIRECTS_TS = path.join(__dirname, '../netlify/edge-functions/blog-redirects.ts');
+const NETLIFY_REDIRECTS = path.join(__dirname, '../public/_redirects');
 const PUBLIC_SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 const DIST_SITEMAP_PATH = path.join(DIST_DIR, 'sitemap.xml');
 
@@ -239,6 +240,50 @@ function collectBlogPaths() {
   return [...out];
 }
 
+// ─── Parse public/_redirects for Netlify 3xx rules ───────────────────────────
+// Any path listed as the SOURCE of a 3xx redirect in _redirects will either
+// always 301 (with the `!` force flag) or will 301 whenever no matching file
+// exists in dist/. Including such paths in the sitemap triggers the "submitted
+// URL has redirect" warning in GSC and wastes crawl budget.
+//
+// Rules we care about are of the form:
+//     /source-path   /target   301
+//     /source-path   /target   301!
+// We skip rules where the source is a wildcard (`/*`, `/foo/*`) because the
+// sitemap URLs are concrete paths and wildcard filtering is done implicitly
+// by the downstream "does a file exist?" check.
+//
+// Returns: {forceSet, softSet} — force = `!` (always 301), soft = no bang
+// (301 only if no file on disk).
+function collectRedirectSources() {
+  const forceSet = new Set();
+  const softSet = new Set();
+  if (!fs.existsSync(NETLIFY_REDIRECTS)) return { forceSet, softSet };
+  const lines = fs.readFileSync(NETLIFY_REDIRECTS, 'utf8').split('\n');
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;
+    // Tokenize on whitespace
+    const tokens = line.split(/\s+/);
+    if (tokens.length < 3) continue;
+    const source = tokens[0];
+    const status = tokens[tokens.length - 1];
+    // Only consider local-path sources (not absolute URLs) with no wildcard
+    if (!source.startsWith('/')) continue;
+    if (source.includes('*')) continue;
+    // We only care about 3xx statuses — 200/404 rewrites are not redirects
+    const m = status.match(/^(30[0-9])(!?)$/);
+    if (!m) continue;
+    const isForce = m[2] === '!';
+    // Normalize trailing slash variants to the canonical no-trailing-slash form
+    // that our sitemap uses (we always emit paths without trailing slash except root).
+    const canonical = source === '/' ? '/' : source.replace(/\/+$/, '');
+    if (isForce) forceSet.add(canonical);
+    else softSet.add(canonical);
+  }
+  return { forceSet, softSet };
+}
+
 // ─── Parse the edge function's blog redirect table ───────────────────────────
 // Some blog slugs are still listed in blog-content.json / the blog index but
 // are actually 301/410 via netlify/edge-functions/blog-redirects.ts. Including
@@ -268,11 +313,14 @@ const prerenderedPaths = collectIndexHtmlPaths(DIST_DIR);
 const appRoutePaths = collectAppRoutes();
 const blogPaths = collectBlogPaths();
 const redirectedBlogs = collectRedirectedBlogPaths();
+const { forceSet: forcedRedirectSources, softSet: softRedirectSources } = collectRedirectSources();
 
 console.log(`Prerendered pages in dist/:    ${prerenderedPaths.length}`);
 console.log(`Static routes from App.tsx:    ${appRoutePaths.length}`);
 console.log(`Blog article links from /blog: ${blogPaths.length}`);
 console.log(`Redirected blog URLs (drop):   ${redirectedBlogs.size}`);
+console.log(`_redirects force 301 sources:  ${forcedRedirectSources.size}`);
+console.log(`_redirects soft 301 sources:   ${softRedirectSources.size}`);
 
 // Union all three sources and dedupe
 const allPathsSet = new Set();
@@ -280,16 +328,51 @@ for (const p of prerenderedPaths) allPathsSet.add(p);
 for (const p of appRoutePaths) allPathsSet.add(p);
 for (const p of blogPaths) allPathsSet.add(p);
 
+// Prerendered set (for soft-redirect conflict resolution below)
+const prerenderedSet = new Set(prerenderedPaths);
+
 const rawPaths = [...allPathsSet];
+const dropLog = [];
 const filteredPaths = rawPaths
-  .filter((p) => !isExcluded(p))
-  .filter((p) => !redirectedBlogs.has(p))
+  .filter((p) => {
+    if (isExcluded(p)) {
+      dropLog.push(`  [excluded]     ${p}`);
+      return false;
+    }
+    return true;
+  })
+  .filter((p) => {
+    if (redirectedBlogs.has(p)) {
+      dropLog.push(`  [blog 301]     ${p}`);
+      return false;
+    }
+    return true;
+  })
+  .filter((p) => {
+    // Force-redirect (!) — Netlify always 301s regardless of file on disk
+    if (forcedRedirectSources.has(p)) {
+      dropLog.push(`  [force 301!]   ${p}`);
+      return false;
+    }
+    // Soft redirect — only 301s when no file exists. If a prerendered HTML
+    // exists for this path, the file wins and the page is indexable — keep it.
+    if (softRedirectSources.has(p) && !prerenderedSet.has(p)) {
+      dropLog.push(`  [soft 301]     ${p}`);
+      return false;
+    }
+    return true;
+  })
   .sort();
 
 console.log(
   `Union: ${rawPaths.length} unique URLs, ${filteredPaths.length} after exclusions ` +
     `(${rawPaths.length - filteredPaths.length} dropped)\n`
 );
+if (dropLog.length > 0) {
+  console.log('Dropped URLs:');
+  for (const line of dropLog.sort()) console.log(line);
+  console.log('');
+}
 
 // ─── Validation ─────────────────────────────────────────────────────────────
 const validationErrors = [];

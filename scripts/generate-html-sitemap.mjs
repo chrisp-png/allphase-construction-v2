@@ -38,6 +38,7 @@ const DIST_DIR = path.join(__dirname, '../dist');
 const APP_TSX = path.join(__dirname, '../src/App.tsx');
 const BLOG_INDEX_HTML = path.join(DIST_DIR, 'blog/index.html');
 const BLOG_REDIRECTS_TS = path.join(__dirname, '../netlify/edge-functions/blog-redirects.ts');
+const NETLIFY_REDIRECTS = path.join(__dirname, '../public/_redirects');
 const PUBLIC_HTML_SITEMAP = path.join(__dirname, '../public/sitemap.html');
 const DIST_HTML_SITEMAP = path.join(DIST_DIR, 'sitemap.html');
 
@@ -115,6 +116,33 @@ function collectRedirectedBlogPaths() {
   let m;
   while ((m = re.exec(src)) !== null) out.add(m[1]);
   return out;
+}
+
+// Parse public/_redirects to find local-path sources of 3xx rules so users
+// don't see HTML-sitemap links that 301 to another page. Mirrors the logic
+// in scripts/generate-sitemap.mjs — see that file for the full rationale.
+function collectRedirectSources() {
+  const forceSet = new Set();
+  const softSet = new Set();
+  if (!fs.existsSync(NETLIFY_REDIRECTS)) return { forceSet, softSet };
+  const lines = fs.readFileSync(NETLIFY_REDIRECTS, 'utf8').split('\n');
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;
+    const tokens = line.split(/\s+/);
+    if (tokens.length < 3) continue;
+    const source = tokens[0];
+    const status = tokens[tokens.length - 1];
+    if (!source.startsWith('/')) continue;
+    if (source.includes('*')) continue;
+    const m = status.match(/^(30[0-9])(!?)$/);
+    if (!m) continue;
+    const isForce = m[2] === '!';
+    const canonical = source === '/' ? '/' : source.replace(/\/+$/, '');
+    if (isForce) forceSet.add(canonical);
+    else softSet.add(canonical);
+  }
+  return { forceSet, softSet };
 }
 
 // Convert a path like /locations/boca-raton/mizner-park to a friendly label
@@ -250,7 +278,9 @@ const prerenderedPaths = collectIndexHtmlPaths(DIST_DIR);
 const appRoutePaths = collectAppRoutes();
 const blogPaths = collectBlogPaths();
 const redirectedBlogs = collectRedirectedBlogPaths();
+const { forceSet: forcedRedirectSources, softSet: softRedirectSources } = collectRedirectSources();
 
+const prerenderedSet = new Set(prerenderedPaths);
 const allPathsSet = new Set();
 for (const p of prerenderedPaths) allPathsSet.add(p);
 for (const p of appRoutePaths) allPathsSet.add(p);
@@ -259,11 +289,14 @@ for (const p of blogPaths) allPathsSet.add(p);
 const paths = [...allPathsSet]
   .filter((p) => !isExcluded(p))
   .filter((p) => !redirectedBlogs.has(p))
+  .filter((p) => !forcedRedirectSources.has(p))
+  .filter((p) => !(softRedirectSources.has(p) && !prerenderedSet.has(p)))
   .sort();
 
 console.log(`Processing ${paths.length} URLs`);
 console.log(`  ${prerenderedPaths.length} prerendered + ${appRoutePaths.length} SPA routes + ${blogPaths.length} blog posts (unioned)`);
 console.log(`  ${redirectedBlogs.size} blog URLs dropped (301/410 via edge function)`);
+console.log(`  ${forcedRedirectSources.size} force-301 + ${softRedirectSources.size} soft-301 _redirects sources applied`);
 
 // Group by section
 const grouped = new Map();
