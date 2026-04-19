@@ -18,6 +18,15 @@ console.log('  distDir exists?', fs.existsSync(distDir));
 const citiesPath = path.join(__dirname, 'cities.json');
 const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf-8'));
 
+// Set of slugs that receive prerendered /roof-repair/${slug} and
+// /roof-inspection/${slug} spoke pages. Any location outside this set
+// (e.g. small towns like pembroke-park, sea-ranch-lakes, lauderdale-lakes,
+// southwest-ranches that live in src/data/locations.ts but not in
+// cities.json) must NOT emit CTAs pointing to those non-existent spokes,
+// or the links SPA-shell when crawled and Google canonicalizes the shell.
+// See generateServiceHubContent() — CTAs are gated on SUBPAGE_SLUGS.has(slug).
+const SUBPAGE_SLUGS = new Set(cities.map((c) => c.slug));
+
 // Load SEO titles configuration (for non-location pages only)
 const seoTitlesPath = path.join(__dirname, 'seo-titles.json');
 const seoTitlesConfig = JSON.parse(fs.readFileSync(seoTitlesPath, 'utf-8'));
@@ -1051,6 +1060,31 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
   const replacementSentence = isBroward
     ? 'Every installation includes manufacturer-backed warranties, building code compliance, and HVHZ certification where required.'
     : 'Every installation includes manufacturer-backed warranties, building code compliance, and Palm Beach County wind-code certification.';
+
+  // Gate the /roof-repair/${slug} and /roof-inspection/${slug} CTAs on
+  // whether those spoke pages actually get prerendered (via cities.json).
+  // For small towns outside cities.json (pembroke-park, sea-ranch-lakes,
+  // lauderdale-lakes, southwest-ranches) the spokes don't exist, so
+  // emitting the anchors produces 4+ SPA-shell canonicalizations that
+  // Screaming Frog flagged in PR-5 verification. Fall back to a phone CTA.
+  const hasSpokes = SUBPAGE_SLUGS.has(citySlug);
+  const urgentCtaRepair = hasSpokes
+    ? `<a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast ${cityName} Repair Service</a>`
+    : `<a href="tel:7542275605" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Call (754) 227-5605</a>`;
+  const urgentCtaInspect = hasSpokes
+    ? `<a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point ${cityName} Roof Inspection</a>`
+    : `<a href="tel:7542275605" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Call (754) 227-5605</a>`;
+  const inlineRepairCta = hasSpokes
+    ? ` <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Get emergency repairs in ${cityName}</a>.`
+    : '';
+  const inlineInspectCta = hasSpokes
+    ? ` <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Schedule a ${cityName} roof inspection</a>.`
+    : '';
+  const servicesListExtras = hasSpokes
+    ? `
+    <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
+    <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>`
+    : '';
   return `
 <section id="seo-static-content">
   <h1>Roof Replacement in ${cityName}, FL | All Phase USA</h1>
@@ -1060,10 +1094,10 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Need Immediate Help in ${cityName}?</h3>
     <p style="margin-bottom: 1rem; color: #7f1d1d;">
-      🔍 <strong>Emergency Roof Repairs:</strong> <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Fast ${cityName} Repair Service</a> ✅ Active leaks, storm damage, emergency tarping
+      🔍 <strong>Emergency Roof Repairs:</strong> ${urgentCtaRepair} ✅ Active leaks, storm damage, emergency tarping
     </p>
     <p style="margin-bottom: 0; color: #7f1d1d;">
-      🔍 <strong>Professional Roof Inspections:</strong> <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point ${cityName} Roof Inspection</a> ✅ Free estimates, insurance documentation
+      🔍 <strong>Professional Roof Inspections:</strong> ${urgentCtaInspect} ✅ Free estimates, insurance documentation
     </p>
   </div>
 
@@ -1081,10 +1115,10 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
   <p>All Phase Construction USA provides full-spectrum roofing solutions for ${cityName} properties:</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Emergency Roof Repairs</h3>
-  <p>Active leaks require immediate attention. Our ${cityName} emergency repair team provides 24/7 response for storm damage, missing shingles, flashing failures, and water intrusion. <a href="/roof-repair/${citySlug}" style="color: #dc2626; text-decoration: underline;">Get emergency repairs in ${cityName}</a>.</p>
+  <p>Active leaks require immediate attention. Our ${cityName} emergency repair team provides 24/7 response for storm damage, missing shingles, flashing failures, and water intrusion.${inlineRepairCta}</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Professional Roof Inspections</h3>
-  <p>Our comprehensive 21-point roof inspection covers every critical component including underlayment condition, flashing integrity, ventilation adequacy, and structural soundness. Perfect for pre-purchase evaluations, insurance documentation, and maintenance planning. <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Schedule a ${cityName} roof inspection</a>.</p>
+  <p>Our comprehensive 21-point roof inspection covers every critical component including underlayment condition, flashing integrity, ventilation adequacy, and structural soundness. Perfect for pre-purchase evaluations, insurance documentation, and maintenance planning.${inlineInspectCta}</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Roof Replacement Systems</h3>
   <p>We install all major roof replacement systems in ${cityName} including architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat roofing. ${replacementSentence}</p>
@@ -1109,9 +1143,7 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
 
 <div class="seo-service-links">
   <h2>Roofing Services in ${cityName}, FL</h2>
-  <ul>
-    <li><a href="/roof-repair/${citySlug}">Roof Repair in ${cityName}, FL</a></li>
-    <li><a href="/roof-inspection/${citySlug}">Roof Inspection in ${cityName}, FL</a></li>
+  <ul>${servicesListExtras}
     <li><a href="/roof-replacement-process">Roof Replacement in ${cityName}, FL</a></li>
   </ul>
 </div>
