@@ -16,6 +16,7 @@ interface SEOProps {
   /** @deprecated Canonical is now managed solely by NuclearMetadata. This prop is ignored. */
   canonicalPath?: string;
   ogImagePath?: string;
+  /** @deprecated Robots tag is now managed solely by prerender + NoIndexMeta. This prop is ignored. */
   noindex?: boolean;
   schema?: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -32,12 +33,14 @@ export default function SEO({
   title,
   description,
   // canonicalPath is accepted but ignored â NuclearMetadata owns canonical
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  canonicalPath,
+  canonicalPath: _canonicalPath,
   ogImagePath,
-  noindex = false,
+  // noindex is accepted but ignored â use <NoIndexMeta /> which upserts via setAttribute
+  noindex: _noindex = false,
   schema,
 }: SEOProps) {
+  void _canonicalPath;
+  void _noindex;
   const ogImageUrl = ogImagePath ? absUrl(ogImagePath) : undefined;
 
   return (
@@ -46,8 +49,12 @@ export default function SEO({
       {/* title owned by NuclearMetadata - SEO component no longer sets this */}
       {/* desc owned by NuclearMetadata - SEO component no longer sets this */}
 
-      {/* Robots */}
-      <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
+      {/* NOTE: <meta name="robots"> is NOT set here.
+          The prerender (scripts/prerender-static.mjs) emits the correct robots
+          tag into every page's <head>. Emitting one here caused react-helmet-async
+          to append a data-rh="true" duplicate on every SEO-using route (129 dupes
+          in the post-JS-render Screaming Frog crawl). If a page needs noindex,
+          use the <NoIndexMeta /> component (which upserts via setAttribute). */}
 
       {/* NOTE: <link rel="canonical"> and <meta og:url> are NOT set here.
           NuclearMetadata.tsx is the single owner â see comment above. */}
