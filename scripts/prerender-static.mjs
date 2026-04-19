@@ -2557,10 +2557,18 @@ ${companyAuthorityFooter()}
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
 
-          // Try to extract H1 from blog content for a better title
-          if (blogContentData[slug]) {
-            const h1Match = blogContentData[slug].match(/<h1>(.*?)<\/h1>/);
-            if (h1Match) blogTitle = h1Match[1];
+          // Prefer the title from the new {title, content} format; fall back
+          // to scanning legacy string payloads for an <h1>. Keeps older
+          // blog-content.json shapes working during a rolling deploy.
+          const entry = blogContentData[slug];
+          if (entry) {
+            if (typeof entry === 'object' && entry.title) {
+              blogTitle = entry.title;
+            } else {
+              const haystack = typeof entry === 'string' ? entry : (entry.content || '');
+              const h1Match = haystack.match(/<h1>(.*?)<\/h1>/);
+              if (h1Match) blogTitle = h1Match[1];
+            }
           }
 
           // Build page title, capping at 60 chars including suffix

@@ -209,9 +209,21 @@ export default function BlogPostPage() {
           try {
             const response = await fetch('/blog-content.json');
             const blogContent = await response.json();
-            if (blogContent[slug]) {
-              data.content = blogContent[slug];
-              console.log(`Loaded static content for blog post: ${slug}`);
+            const entry = blogContent[slug];
+            if (entry) {
+              // New format: { title, content }. Legacy format: string.
+              const loadedContent = typeof entry === 'string' ? entry : entry.content;
+              const loadedTitle = typeof entry === 'object' ? entry.title : '';
+              if (loadedContent) {
+                data.content = loadedContent;
+                // Prefer the markdown H1 over Supabase title when Supabase
+                // has only a slug-cased placeholder — prevents duplicate/ugly
+                // H1s on posts whose Supabase record lags behind the markdown.
+                if (loadedTitle && (!data.title || data.title.toLowerCase() === slug.replace(/-/g, ' '))) {
+                  data.title = loadedTitle;
+                }
+                console.log(`Loaded static content for blog post: ${slug}`);
+              }
             }
           } catch (e) {
             console.warn('Could not load static blog content:', e);
@@ -229,7 +241,10 @@ export default function BlogPostPage() {
         try {
           const response = await fetch('/blog-content.json');
           const blogContent = await response.json();
-          if (blogContent[slug]) {
+          const entry = blogContent[slug];
+          if (entry) {
+            const staticContent = typeof entry === 'string' ? entry : entry.content;
+            const staticTitle = typeof entry === 'object' ? entry.title : '';
             // Static fallback metadata for posts missing from Supabase
             const staticPostMeta: Record<string, Partial<BlogPost>> = {
               'our-roofing-company-is-proud-to-be-a-family-owned-business': {
@@ -271,18 +286,25 @@ export default function BlogPostPage() {
             };
 
             const meta = staticPostMeta[slug] || {};
+            // Title priority: explicit staticPostMeta > markdown H1 > slug-case fallback.
+            // The markdown H1 is the "real" title for posts authored via the
+            // chat→PR flow where staticPostMeta isn't kept in sync.
+            const syntheticTitle =
+              meta.title
+              || staticTitle
+              || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
             const syntheticPost: BlogPost = {
               id: `static-${slug}`,
-              title: meta.title || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+              title: syntheticTitle,
               slug: slug,
               excerpt: meta.excerpt || '',
-              content: blogContent[slug],
+              content: staticContent,
               featured_image: meta.featured_image || '',
               author: meta.author || 'All Phase Construction USA Team',
               published_date: meta.published_date || '2026-03-29',
               categories: meta.categories || ['Roofing Education'],
               tags: meta.tags || [],
-              meta_title: meta.meta_title || meta.title || '',
+              meta_title: meta.meta_title || syntheticTitle,
               meta_description: meta.meta_description || meta.excerpt || '',
               faqs: meta.faqs || [],
               related_post_ids: [],
@@ -439,6 +461,16 @@ export default function BlogPostPage() {
       month: 'long',
       day: 'numeric'
     });
+  };
+
+  // BlogPostPage renders post.title as the page H1 in its own hero. If the
+  // body content (from Supabase or blog-content.json) leads with another
+  // <h1>, strip it so the page has exactly one H1. Defense-in-depth — the
+  // build step already removes leading H1 from markdown, this covers
+  // Supabase-authored posts that ship their own H1 in the content field.
+  const stripLeadingH1 = (html: string): string => {
+    if (!html) return html;
+    return html.replace(/^\s*<h1[^>]*>[\s\S]*?<\/h1>\s*/i, '');
   };
 
   const calculateReadTime = (content: string) => {
@@ -661,7 +693,7 @@ export default function BlogPostPage() {
 
             <div
               className="prose prose-lg prose-invert max-w-none prose-headings:font-bold prose-headings:text-white prose-p:text-gray-200 prose-li:text-gray-200 prose-strong:text-white prose-a:text-white prose-a:underline hover:prose-a:text-gray-300 prose-img:rounded-lg prose-img:shadow-lg"
-              dangerouslySetInnerHTML={{ __html: enrichBlogContent(post.content, post.slug) }}
+              dangerouslySetInnerHTML={{ __html: enrichBlogContent(stripLeadingH1(post.content), post.slug) }}
             />
 
             {post.tags && post.tags.length > 0 && (
