@@ -72,7 +72,6 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
           name="description"
           content={seoMeta.description}
         />
-        <link rel="canonical" href={seoMeta.canonical || canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

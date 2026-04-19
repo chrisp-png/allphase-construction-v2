@@ -83,7 +83,6 @@ export default function ParklandMoneyPage() {
           name="description"
           content="Parkland FL roofing contractor for Heron Bay, Parkland Golf & Country Club, Watercrest. Premium tile, metal & shingle roofing. HOA experts. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

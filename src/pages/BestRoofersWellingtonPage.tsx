@@ -9,7 +9,6 @@ export default function BestRoofersWellingtonPage() {
         <title>5 Best Roofers in Wellington, FL (2026 Reviewed) | All Phase Construction</title>
         <meta name="description" content="Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records. Serving Wellington's equestrian estates, canal communities, and HOA neighborhoods across 33414 and 33449." />
         <meta name="keywords" content="best roofers Wellington FL, roofing contractors Wellington Florida, roof replacement Wellington, Wellington FL roofer, roofing company Wellington Palm Beach County, best roofing company Wellington FL 2026, Wellington roof repair, tile roof Wellington FL, metal roof Wellington, HOA roofing Wellington" />
-        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/wellington/best-roofers-wellington" />
         <meta property="og:title" content="5 Best Roofers in Wellington, FL (2026 Reviewed)" />
         <meta property="og:description" content="Top 5 best roofing contractors in Wellington, FL for 2026. Verified licenses, real reviews, and proven track records serving Wellington's equestrian estates and canal communities." />
         <meta property="og:type" content="article" />

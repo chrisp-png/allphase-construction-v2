@@ -77,7 +77,6 @@ export default function PalmBeachGardensMoneyPage() {
           name="description"
           content="Premium roofing contractor in Palm Beach Gardens, FL. Luxury tile roof replacement for PGA National, BallenIsles, Frenchman's Reserve & more. HOA/ARC experts. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

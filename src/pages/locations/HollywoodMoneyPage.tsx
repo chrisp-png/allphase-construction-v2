@@ -77,7 +77,6 @@ export default function HollywoodMoneyPage() {
           name="description"
           content="Top-rated roofing contractor in Hollywood, FL. Hurricane-rated re-roofs, storm damage repair & coastal roofing. HVHZ-certified, 2,500+ jobs. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

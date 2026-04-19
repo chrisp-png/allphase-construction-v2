@@ -247,7 +247,6 @@ export default function RoofRepairPage() {
     <>
     <StickyConversionBar />
             <Helmet>
-                      <link rel="canonical" href="https://allphaseconstructionfl.com/roof-repair" />
                     </Helmet>
     <div className="bg-zinc-950 text-white min-h-screen">
       {/* Hero Section */}

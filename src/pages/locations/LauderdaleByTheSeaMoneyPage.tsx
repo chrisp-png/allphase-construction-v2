@@ -50,7 +50,6 @@ export default function LauderdaleByTheSeaMoneyPage() {
           name="description"
           content="Lauderdale-By-The-Sea roofing contractor. HVHZ-certified, dual-licensed. Tile, metal, shingle & flat roofing for coastal barrier island homes. Free inspection. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

@@ -50,7 +50,6 @@ export default function CoralSpringsMoneyPage() {
           name="description"
           content={`Professional roofing services in ${cityName}, Florida. Dual-licensed contractor (CCC-1331464, CGC-1526236) with HVHZ certification. Expert roof replacement, repair, and inspection services.`}
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

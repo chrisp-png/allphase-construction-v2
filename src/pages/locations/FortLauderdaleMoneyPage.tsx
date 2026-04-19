@@ -51,7 +51,6 @@ export default function FortLauderdaleMoneyPage() {
           name="description"
           content="Expert roofing contractor in Fort Lauderdale, FL. Free roof inspection, hurricane damage repair, tile, metal & shingle replacement. Dual-licensed, HVHZ-certified. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

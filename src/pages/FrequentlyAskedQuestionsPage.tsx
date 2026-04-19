@@ -543,7 +543,6 @@ export default function FrequentlyAskedQuestionsPage() {
       <Helmet>
         <title>Roofing FAQ South Florida | HVHZ Roofing Questions Answered | All Phase Construction USA</title>
         <meta name="description" content="Expert answers to South Florida roofing FAQs. HVHZ requirements, roof replacement costs, permits, insurance, hurricane prep, and contractor selection. Broward & Palm Beach County." />
-        <link rel="canonical" href={pageUrl} />
       </Helmet>
 
       <div className="min-h-screen bg-black pt-36 pb-16">

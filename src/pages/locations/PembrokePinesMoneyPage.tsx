@@ -77,7 +77,6 @@ export default function PembrokePinesMoneyPage() {
           name="description"
           content="Top roofing company in Pembroke Pines, FL. Shingle, tile & metal re-roofs for 1980s–2000s homes. HOA experts, HVHZ-certified, volume pricing. (754) 227-5605."
         />
-        <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
