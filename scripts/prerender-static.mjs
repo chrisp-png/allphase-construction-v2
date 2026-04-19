@@ -2027,7 +2027,7 @@ function writeToPublicAndDist(relativePath, content) {
 /**
  * Generate all static HTML files
  */
-function generateStaticFiles() {
+async function generateStaticFiles() {
   console.log('📋  Generating 3-Silo Lead Generation Architecture...\n');
 
   // Create public directory if it doesn't exist
@@ -2655,6 +2655,237 @@ ${companyAuthorityFooter()}
     }
   } catch (err) {
     console.log('⚠️ Error generating blog posts:', err.message);
+  }
+
+  // 2.6. Generate Blog Post Pages from Supabase (SPA-shell victims)
+  // -----------------------------------------------------------------
+  // The 9 blog posts listed in public/sitemap.xml are prerendered above.
+  // Dozens more live only in Supabase — prior to this block they returned
+  // the bare 18,504-byte Vite SPA shell to Googlebot.
+  //
+  // This block does TWO things, in order, so we always ship SOMETHING for
+  // every known Supabase-only slug:
+  //   1. Tries to query Supabase for the authoritative list + rich content
+  //      (meta_title, meta_description, excerpt, full HTML content).
+  //   2. Falls back to a hardcoded list of 28 known Supabase-only slugs
+  //      (derived from the 2026-04-17 Screaming Frog SPA-shell audit) so
+  //      the build keeps working even if Supabase is unreachable.
+  //
+  // Skips any slug already prerendered (from the sitemap loop above) so
+  // this block only adds coverage — never overwrites existing output.
+  console.log('\n🔍 Generating Blog Post Pages from Supabase (SPA-shell victims)...\n');
+
+  try {
+    // Authoritative fallback list — 28 Supabase-only slugs returning SPA
+    // shell per the 2026-04-17 SF crawl. Keeps the build resilient to
+    // Supabase being unreachable at build time.
+    const KNOWN_SUPABASE_SLUGS = [
+      'best-roofing-companies-south-florida',
+      'can-a-screen-room-add-to-my-property-value',
+      'complete-roof-replacement-process-10-steps',
+      'do-i-need-a-roof-inspection-after-a-storm',
+      'how-solar-impacts-property-taxes-in-florida',
+      'how-to-choose-roofing-materials-for-large-scale-projects',
+      'how-to-combine-solar-and-a-new-roof-for-maximum-efficiency',
+      'how-to-plan-long-term-roofing-budgets-for-your-condo-association',
+      'how-to-prepare-your-roof-for-the-real-estate-market-when-selling-your-home',
+      'how-to-protect-roof-decking-from-moisture-damage-during-construction',
+      'how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive',
+      'metal-roof-vs-shingles-florida-2026',
+      'metal-roofing-south-florida-what-homeowners-need-to-know',
+      'residential-flat-roofs-types-options-and-florida-considerations',
+      'roof-pricing-financing-guide',
+      'roof-replacement-cost-broward-county-2026',
+      'roof-replacement-cost-palm-beach-county-2026',
+      'soffit-repair-in-south-florida-your-guide-for-palm-beach-broward-counties-with-all-phase-construction-usa',
+      'the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet',
+      'the-importance-of-proper-flashing-installation-to-prevent-roof-leaks',
+      'the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles',
+      'the-pros-and-cons-of-flat-roofs-for-florida-homes',
+      'visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview',
+      'what-is-roof-underlayment-and-why-does-it-matter',
+      'what-south-florida-homeowners-get-wrong-about-roof-replacement',
+      'whats-the-lifespan-of-a-solar-ready-roof',
+      'why-palm-beach-and-broward-county-building-codes-differ-a-south-florida-guide-by-all-phase-construction-usa',
+      'wind-mitigation-roof-south-florida',
+    ];
+
+    // Escape helper for HTML attribute values (title, meta content, etc.)
+    const escapeAttr = (s) => String(s || '')
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+
+    // Strip HTML tags from a string (for use in <title> and meta description)
+    const stripHtml = (s) => String(s || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+
+    // postMetadata: slug -> { title, metaTitle, metaDescription, excerpt, content }
+    const postMetadata = {};
+    let supabaseReachable = false;
+
+    try {
+      const supabaseUrl = process.env.VITE_SUPABASE_URL
+        || 'https://vsjebxljdhomgmqbqgdi.supabase.co';
+      const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY
+        || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzamVieGxqZGhvbWdtcWJxZ2RpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5ODkxMzcsImV4cCI6MjA4MjU2NTEzN30._gjIILl6LtMKnoERihdaRrQ-OQQ1rKoB_FXnoxRCW2Y';
+
+      const { createClient } = await import('@supabase/supabase-js');
+      const supabase = createClient(supabaseUrl, supabaseAnonKey, { auth: { persistSession: false } });
+
+      const { data: supabasePosts, error: supabaseError } = await supabase
+        .from('blog_posts')
+        .select('slug, title, meta_title, meta_description, excerpt, content')
+        .eq('published', true);
+
+      if (supabaseError) {
+        console.warn(`  ⚠️ Supabase query failed: ${supabaseError.message}`);
+        console.warn('  → Falling back to hardcoded slug list with boilerplate HTML.');
+      } else if (supabasePosts && supabasePosts.length > 0) {
+        supabaseReachable = true;
+        console.log(`  ✓ Supabase returned ${supabasePosts.length} published posts`);
+        supabasePosts.forEach(post => {
+          if (!post.slug) return;
+          postMetadata[post.slug] = {
+            title: post.title,
+            metaTitle: post.meta_title,
+            metaDescription: post.meta_description,
+            excerpt: post.excerpt,
+            content: post.content,
+          };
+        });
+      } else {
+        console.warn('  ⚠️ Supabase returned 0 rows (empty blog_posts table?)');
+      }
+    } catch (err) {
+      console.warn(`  ⚠️ Supabase fetch error: ${err.message}`);
+      console.warn('  → Falling back to hardcoded slug list with boilerplate HTML.');
+    }
+
+    // Build the slug set: union of Supabase slugs (if reachable) + hardcoded fallback.
+    // Hardcoded fallback guarantees we fix the 28 known victims even if Supabase is down.
+    const slugSet = new Set(KNOWN_SUPABASE_SLUGS);
+    Object.keys(postMetadata).forEach(slug => slugSet.add(slug));
+
+    let createdCount = 0;
+    let skippedCount = 0;
+
+    for (const slug of Array.from(slugSet).sort()) {
+      const blogDir = path.join(distDir, 'blog', slug);
+      const blogHtmlPath = path.join(blogDir, 'index.html');
+
+      // Skip if already prerendered by the sitemap-based loop above
+      if (fs.existsSync(blogHtmlPath)) {
+        skippedCount++;
+        continue;
+      }
+
+      const meta = postMetadata[slug] || {};
+
+      // Title: prefer Supabase title > slug → Title Case
+      let blogTitle = stripHtml(meta.title);
+      if (!blogTitle) {
+        blogTitle = slug
+          .split('-')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
+      }
+
+      // Page title (what goes in <title>): prefer meta_title > "{title} | All Phase" (cap 60 chars)
+      let pageTitle = stripHtml(meta.metaTitle) || (blogTitle + ' | All Phase');
+      if (pageTitle.length > 60) {
+        const suffix = ' | All Phase';
+        const maxTitleLen = 60 - suffix.length;
+        pageTitle = blogTitle.substring(0, maxTitleLen).trim() + suffix;
+      }
+
+      // Description: prefer meta_description > excerpt > boilerplate (cap 155 chars)
+      let blogDescription = stripHtml(meta.metaDescription) || stripHtml(meta.excerpt);
+      if (!blogDescription) {
+        blogDescription = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
+      }
+      if (blogDescription.length > 155) {
+        blogDescription = blogDescription.substring(0, 152).trim() + '...';
+      }
+
+      const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
+
+      // Body content: prefer substantial Supabase content, fall back to boilerplate.
+      // A "See blog/*" placeholder short-circuits to boilerplate too.
+      const supabaseContent = String(meta.content || '').trim();
+      const hasRealContent = supabaseContent.length >= 500
+        && !supabaseContent.toLowerCase().startsWith('see blog/');
+      const leadParagraph = stripHtml(meta.excerpt) || blogDescription;
+
+      const richContent = `
+<section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+  <article>
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${escapeAttr(blogTitle)}</h1>
+    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${escapeAttr(leadParagraph)}</p>
+    <div style="color: #374151; font-size: 1.05rem; line-height: 1.75;">${supabaseContent}</div>
+    <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+      <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
+      <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
+      <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
+    </div>
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
+      <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Related Services & Resources</h3>
+      <p style="color: #374151; line-height: 1.75;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair</a> · <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Free Inspections</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Cost Calculator</a> · <a href="/blog" style="color: #dc2626; text-decoration: underline;">All Articles</a></p>
+    </div>
+  </article>
+  ${companyAuthorityFooter()}
+</section>
+      `.trim();
+
+      const boilerplateContent = `
+<section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+  <article>
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${escapeAttr(blogTitle)}</h1>
+    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${escapeAttr(leadParagraph)}</p>
+    <div style="background: #f9fafb; padding: 2rem; border-left: 4px solid #dc2626; margin: 2rem 0;">
+      <p style="color: #374151; font-size: 1rem; line-height: 1.75; margin: 0;">
+        <strong>Expert Roofing Insights</strong> from All Phase Construction USA ✅ Your trusted dual-licensed roofing contractor serving Broward and Palm Beach County.
+      </p>
+    </div>
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+      At All Phase Construction USA, we bring decades of roofing expertise to South Florida homeowners and businesses. As a dual-licensed contractor (CCC-1331464 &amp; CGC-1526236), we understand both roofing systems and structural engineering, ensuring every project meets the highest standards of quality and hurricane compliance.
+    </p>
+    <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Professional Roofing Services</h2>
+    <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+      Whether you need roof repair, roof replacement, roof inspection, or preventive maintenance, our team delivers HVHZ-compliant workmanship backed by manufacturer warranties and our A+ BBB rating.
+    </p>
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
+      <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Related Services &amp; Resources</h3>
+      <p style="color: #374151; line-height: 1.75;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair Services</a> · <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Free Roof Inspections</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> · <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Replacement Process</a> · <a href="/blog" style="color: #dc2626; text-decoration: underline;">All Articles</a></p>
+      <p style="color: #374151; line-height: 1.75; margin-top: 0.5rem;"><strong>Top Locations:</strong> <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a> · <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a> · <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a> · <a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach</a> · <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a></p>
+    </div>
+    <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+      <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
+      <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
+      <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
+    </div>
+  </article>
+  ${companyAuthorityFooter()}
+</section>
+      `.trim();
+
+      const blogHTML = createHTMLTemplate(
+        escapeAttr(pageTitle),
+        escapeAttr(blogDescription),
+        blogCanonical,
+        hasRealContent ? richContent : boilerplateContent
+      );
+
+      fs.mkdirSync(blogDir, { recursive: true });
+      fs.writeFileSync(blogHtmlPath, blogHTML);
+      console.log(`✅ Generated: dist/blog/${slug}/index.html${hasRealContent ? ' (rich)' : ' (boilerplate)'}`);
+      createdCount++;
+      totalPages++;
+    }
+
+    console.log(`\n📊 Supabase blog prerender: ${createdCount} new pages, ${skippedCount} already prerendered, supabaseReachable=${supabaseReachable}\n`);
+  } catch (err) {
+    console.log('⚠️ Error in Supabase blog prerender block:', err.message);
   }
 
   // 3. Generate 3-Silo City Pages for all cities
@@ -6019,7 +6250,7 @@ console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTM
 }
 
 // Run the generator
-generateStaticFiles();
+await generateStaticFiles();
 
 // Copy IndexNow key file to dist
 fs.copyFileSync('public/1864f0fe7c93447e946f774adbe8e54a.txt', 'dist/1864f0fe7c93447e946f774adbe8e54a.txt');
