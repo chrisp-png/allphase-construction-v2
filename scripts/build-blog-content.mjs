@@ -161,6 +161,41 @@ function getSlugFromFilename(filename) {
 }
 
 /**
+ * Extract the first markdown H1 line, returning the title text
+ * and the remaining markdown with the first H1 line stripped.
+ * The stripped H1 avoids a duplicate <h1> inside blog post content since
+ * BlogPostPage already renders post.title in the hero.
+ */
+function extractLeadingH1(markdown) {
+  const lines = markdown.split('\n');
+  let title = '';
+  let startIdx = 0;
+
+  // Skip leading blank lines
+  while (startIdx < lines.length && lines[startIdx].trim() === '') {
+    startIdx++;
+  }
+
+  const firstLine = lines[startIdx] || '';
+  const h1Match = firstLine.match(/^#\s+(.+?)\s*$/);
+  if (h1Match) {
+    title = h1Match[1].trim();
+    // Drop the H1 line itself, plus any immediately following blank lines
+    let dropUntil = startIdx + 1;
+    while (dropUntil < lines.length && lines[dropUntil].trim() === '') {
+      dropUntil++;
+    }
+    const remaining = [
+      ...lines.slice(0, startIdx),
+      ...lines.slice(dropUntil),
+    ].join('\n');
+    return { title, markdown: remaining };
+  }
+
+  return { title: '', markdown };
+}
+
+/**
  * Main function to build blog content JSON
  */
 async function buildBlogContent() {
@@ -198,17 +233,24 @@ async function buildBlogContent() {
         // Strip meta comments
         const cleanedMarkdown = stripMetaComments(markdown);
 
-        // Convert to HTML
-        const html = markdownToHtml(cleanedMarkdown);
+        // Extract the leading H1 as post title, drop it from content to
+        // prevent duplicate <h1> on the rendered page (BlogPostPage already
+        // renders post.title in its own hero).
+        const { title, markdown: bodyMarkdown } = extractLeadingH1(cleanedMarkdown);
+
+        // Convert remaining markdown to HTML
+        const html = markdownToHtml(bodyMarkdown);
 
         // Get slug from filename
         const slug = getSlugFromFilename(file);
 
-        // Store in map
-        blogContent[slug] = html;
+        // Store as { title, content } — richer format so BlogPostPage,
+        // BlogIndexPage, and prerender-static.mjs can pull a canonical title
+        // from the markdown rather than slug-casing it.
+        blogContent[slug] = { title, content: html };
         totalSize += html.length;
 
-        console.log(`✓ ${file} (${slug}) - ${html.length} bytes`);
+        console.log(`✓ ${file} (${slug}) - title="${title}" - ${html.length} bytes`);
       } catch (error) {
         console.error(`Error processing ${file}:`, error.message);
       }
@@ -225,13 +267,22 @@ async function buildBlogContent() {
 
     // Verify all entries have substantial content
     const smallEntries = Object.entries(blogContent).filter(
-      ([slug, html]) => html.length < 500
+      ([slug, entry]) => (entry.content || '').length < 500
     );
     if (smallEntries.length > 0) {
       console.warn(`\nWarning: ${smallEntries.length} entries have small content:`);
-      smallEntries.forEach(([slug, html]) => {
-        console.warn(`  - ${slug}: ${html.length} bytes`);
+      smallEntries.forEach(([slug, entry]) => {
+        console.warn(`  - ${slug}: ${(entry.content || '').length} bytes`);
       });
+    }
+
+    // Warn on any entry without a title
+    const missingTitles = Object.entries(blogContent).filter(
+      ([slug, entry]) => !entry.title
+    );
+    if (missingTitles.length > 0) {
+      console.warn(`\nWarning: ${missingTitles.length} entries have no extracted title:`);
+      missingTitles.forEach(([slug]) => console.warn(`  - ${slug}`));
     }
   } catch (error) {
     console.error('Error building blog content:', error);
