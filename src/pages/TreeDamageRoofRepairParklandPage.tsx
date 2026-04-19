@@ -44,7 +44,7 @@ export default function TreeDamageRoofRepairParklandPage() {
     <>
       <SEO
         title="Tree Damage Roof Repair in Parkland, FL (2026)"
-        description="How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window that protects your claim."
+        description="How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window"
         canonicalPath="/tree-damage-roof-repair-parkland"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

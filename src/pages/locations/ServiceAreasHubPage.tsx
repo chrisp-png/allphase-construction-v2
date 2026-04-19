@@ -19,11 +19,11 @@ export default function ServiceAreasHubPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision and code-compliant roofing.');
+      metaDescription.setAttribute('content', 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision and code-compliant roofing.';
+      meta.content = 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.';
       document.head.appendChild(meta);
     }
 

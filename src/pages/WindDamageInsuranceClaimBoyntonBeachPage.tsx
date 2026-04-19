@@ -31,8 +31,8 @@ export default function WindDamageInsuranceClaimBoyntonBeachPage() {
   return (
     <>
       <SEO
-        title="Wind Damage Insurance Claim in Boynton Beach (Step-by-Step Guide)"
-        description="The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid common underpayments."
+        title="Wind Damage Insurance Claim in Boynton Beach (Step-by-Step"
+        description="The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid"
         canonicalPath="/wind-damage-insurance-claim-boynton-beach"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

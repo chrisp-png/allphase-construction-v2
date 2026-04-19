@@ -22,7 +22,7 @@ export default function HollywoodMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Hollywood FL Roofing Contractor | Storm & Wind Damage | All Phase`;
+    document.title = `Hollywood FL Roofing Contractor | Storm & Wind Damage`;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

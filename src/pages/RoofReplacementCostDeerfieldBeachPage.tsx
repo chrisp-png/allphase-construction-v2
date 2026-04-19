@@ -43,7 +43,7 @@ export default function RoofReplacementCostDeerfieldBeachPage() {
     <>
       <SEO
         title="Roof Replacement Cost in Deerfield Beach (2026) | All Phase Construction USA"
-        description="2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options. Free 24-hour quotes."
+        description="2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options."
         canonicalPath="/roof-replacement-cost-deerfield-beach"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

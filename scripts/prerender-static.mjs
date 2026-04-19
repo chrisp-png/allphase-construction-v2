@@ -5930,7 +5930,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'annual-roof-inspection-sunrise',
       title: 'Annual Roof Inspection in Sunrise, FL (10-Point Checklist)',
-      description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior damage.',
+      description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior',
       h1: 'Annual Roof Inspection in Sunrise',
       summary: 'What a real annual roof inspection should cover for Sunrise, FL homeowners — from flashing and fastener checks to attic moisture scanning — and how proactive inspection prevents thousands in interior damage. Free inspection available within 48 hours.',
       hubSlug: 'sunrise',
@@ -5940,7 +5940,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'boca-raton-roof-replacement-timeline',
       title: 'Boca Raton Roof Replacement Timeline (2026) | Day-by-Day Guide',
-      description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather contingencies.',
+      description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather',
       h1: 'Boca Raton Roof Replacement Timeline: Day-by-Day',
       summary: 'Most Boca Raton shingle roof replacements are completed in 2 to 4 working days once the Palm Beach County permit is issued, while concrete tile homes typically take 5 to 7 days. The full timeline from contract to final inspection runs 2 to 6 weeks. We schedule tear-off and dry-in on the same day so your home is protected overnight.',
       hubSlug: 'boca-raton',
@@ -5949,7 +5949,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'coral-springs-roof-permit-guide',
-      title: 'Coral Springs Roof Permit Guide (2026) | Fees, Timeline & HVHZ Code',
+      title: 'Coral Springs Roof Permit Guide (2026)',
       description: 'When you need a roofing permit in Coral Springs, what the city requires, how long it takes, fees, required inspections, and HVHZ code requirements.',
       h1: 'Coral Springs Roof Permit Guide (2026)',
       summary: 'Coral Springs requires a permit for any roof replacement over 25% of the surface, any material change, or structural work. We submit electronically with a sealed product approval package; most residential roofing permits are issued within 5 to 10 business days under HVHZ code.',
@@ -5959,8 +5959,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'delray-beach-roof-overlay-vs-tear-off',
-      title: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code Explained)",
-      description: 'A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that disqualifies it.',
+      title: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code",
+      description: 'A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that',
       h1: "Why You Can't Overlay a Roof in Delray Beach",
       summary: 'Florida HVHZ code effectively disqualifies roof-overs (overlay installations) in Delray Beach. We walk through the exact code section, the secondary water barrier requirement, the deck-nailing rule, and why a full tear-off is almost always the right call in Palm Beach County.',
       hubSlug: 'delray-beach',
@@ -5970,7 +5970,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'emergency-roof-tarp-lighthouse-point',
       title: 'Emergency Roof Tarp in Lighthouse Point (24-Hour Service)',
-      description: 'Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ. When to call, what it costs, and how insurance reimbursement works.',
+      description: 'Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ.',
       h1: 'Emergency Roof Tarp in Lighthouse Point',
       summary: '24-hour emergency roof tarp service in Lighthouse Point, FL. Five minutes from our Deerfield Beach headquarters. When to call, what an emergency tarp costs, and how to get it reimbursed by your insurer as part of your claim.',
       hubSlug: 'lighthouse-point',
@@ -5979,8 +5979,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'flat-roof-tpo-vs-pvc-west-palm-beach',
-      title: 'Flat Roof TPO vs PVC in West Palm Beach (2026) | Side-by-Side Guide',
-      description: 'TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan numbers, chemical and ponding resistance, and the HVHZ code that decides which one fits.',
+      title: 'Flat Roof TPO vs PVC in West Palm Beach (2026)',
+      description: 'TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan numbers, chemical and ponding resistance, and the HVHZ code that decides',
       h1: 'Flat Roof: TPO vs PVC in West Palm Beach',
       summary: 'Side-by-side comparison of TPO and PVC flat roof systems for West Palm Beach homes and commercial buildings. 2026 pricing, 25-year lifespan numbers, chemical and ponding resistance, and the Palm Beach County code details that determine which membrane fits your project.',
       hubSlug: 'west-palm-beach',
@@ -6000,7 +6000,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'hurricane-roof-damage-inspection-hollywood',
       title: 'Hurricane Roof Damage Inspection in Hollywood, FL (2026)',
-      description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that protects your claim.',
+      description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that',
       h1: 'Hurricane Roof Damage Inspection in Hollywood',
       summary: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation standards, and the 24-hour window that protects your claim from underpayment.',
       hubSlug: 'hollywood',
@@ -6010,7 +6010,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'metal-roofing-cost-fort-lauderdale',
       title: 'Metal Roofing Cost in Fort Lauderdale (2026) | All Phase USA',
-      description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options explained.',
+      description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options',
       h1: 'Metal Roofing Cost in Fort Lauderdale (2026)',
       summary: 'Real 2026 metal roof pricing in Fort Lauderdale by panel type — standing seam, exposed fastener, and stone-coated steel — with HVHZ code costs, coastal aluminum upgrades, insurance credits, and 50-year warranty options.',
       hubSlug: 'fort-lauderdale',
@@ -6019,7 +6019,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'pompano-beach-roof-inspection',
-      title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof (2026)',
+      title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof',
       description: 'The nine clearest signs that your Pompano Beach roof has reached end-of-life — from curling shingles to insurance non-renewal — plus what to do next.',
       h1: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof',
       summary: 'The nine clearest signs that your Pompano Beach roof has reached end-of-life — curling shingles, granule loss, deck sag, attic moisture, flashing failure, and insurance non-renewal patterns — plus what to do next before the rainy season.',
@@ -6030,7 +6030,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'pre-listing-roof-certification-coconut-creek',
       title: 'Pre-Listing Roof Certification in Coconut Creek (2026)',
-      description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from collapsing at inspection.',
+      description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from',
       h1: 'Pre-Listing Roof Certification in Coconut Creek',
       summary: 'Why Coconut Creek home listings need a pre-listing roof certification before going to market — what the certification includes, how buyers and their inspectors weigh it, and how it prevents deals from collapsing at inspection.',
       hubSlug: 'coconut-creek',
@@ -6059,8 +6059,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'roof-replacement-cost-deerfield-beach',
-      title: 'Roof Replacement Cost in Deerfield Beach (2026) | All Phase USA',
-      description: '2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options. Free 24-hour quotes.',
+      title: 'Roof Replacement Cost in Deerfield Beach (2026)',
+      description: '2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options.',
       h1: 'Roof Replacement Cost in Deerfield Beach (2026)',
       summary: '2026 Deerfield Beach roof replacement pricing by material — architectural shingle, concrete and clay tile, and standing seam metal — including HVHZ code costs, permit fees, insurance reimbursement options, and typical timeline. Free quote within 24 hours of inspection.',
       hubSlug: 'deerfield-beach',
@@ -6069,8 +6069,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'standing-seam-metal-roof-jupiter',
-      title: 'Standing Seam Metal Roof in Jupiter (2026) | Coastal + Hurricane Guide',
-      description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County insurance credits.',
+      title: 'Standing Seam Metal Roof in Jupiter (2026)',
+      description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County',
       h1: 'Standing Seam Metal Roof in Jupiter',
       summary: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — marine-grade fastener systems, 2026 pricing ranges, Palm Beach County wind-code attachment requirements, hurricane resilience data, and the insurance credits a standing seam roof unlocks.',
       hubSlug: 'jupiter',
@@ -6079,8 +6079,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'storm-damage-repair-or-replace-davie',
-      title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision Matrix)',
-      description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that decides the call.',
+      title: 'Storm Damage: Repair or Replace in Davie?',
+      description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that',
       h1: 'Storm Damage: Repair or Replace in Davie?',
       summary: 'Repair or replace a storm-damaged roof in Davie, FL? A decision matrix that weighs age, damage extent, Florida\'s matching statute, law-and-ordinance coverage, and the insurance carrier\'s position — so you can argue the right scope with your adjuster.',
       hubSlug: 'davie',
@@ -6089,7 +6089,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'switch-from-shingles-to-metal-plantation',
-      title: 'Switch From Shingles to Metal in Plantation? (2026 Decision Guide)',
+      title: 'Switch From Shingles to Metal in Plantation?',
       description: 'Should you replace your Plantation shingle roof with metal in 2026? Side-by-side cost, lifespan, insurance, HOA, and 40-year total-cost-of-ownership math.',
       h1: 'Is It Time to Switch From Shingles to Metal in Plantation?',
       summary: 'Should you replace your Plantation shingle roof with metal in 2026? A side-by-side comparison of up-front cost, lifespan, insurance premium impact, HOA architectural approval realities, and the 40-year total-cost-of-ownership math.',
@@ -6099,8 +6099,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'tile-roof-replacement-wellington',
-      title: 'Tile Roof Replacement in Wellington (2026) | HOA + Weight Load Guide',
-      description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements explained.',
+      title: 'Tile Roof Replacement in Wellington (2026)',
+      description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements',
       h1: 'Tile Roof Replacement in Wellington',
       summary: '2026 Wellington tile roof replacement pricing for concrete and clay, with HOA architectural approval checklists, engineered weight-load review when profile changes, and Palm Beach County attachment requirements explained step by step.',
       hubSlug: 'wellington',
@@ -6110,7 +6110,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'tree-damage-roof-repair-parkland',
       title: 'Tree Damage Roof Repair in Parkland, FL (2026)',
-      description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window that protects your claim.',
+      description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window',
       h1: 'Tree Damage Roof Repair in Parkland',
       summary: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns (puncture, scrape, impact fracture, gutter tear-off, fascia crush, eave lift, and full collapse), insurance coverage, repair vs replace calls, and the 24-hour documentation window that protects your claim.',
       hubSlug: 'parkland',
@@ -6119,8 +6119,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wind-damage-insurance-claim-boynton-beach',
-      title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step Guide)',
-      description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid common underpayments.',
+      title: 'Wind Damage Insurance Claim in Boynton Beach',
+      description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid',
       h1: 'Wind Damage Insurance Claim in Boynton Beach',
       summary: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane vs named-storm deductibles, law-and-ordinance coverage application, supplement filing timing, and how to avoid the five most common underpayment traps.',
       hubSlug: 'boynton-beach',
@@ -6129,8 +6129,8 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wind-mitigation-inspection-palm-beach-gardens',
-      title: 'Wind Mitigation Inspection in Palm Beach Gardens (2026 Savings Guide)',
-      description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the OIR-B1-1802 form explained.',
+      title: 'Wind Mitigation Inspection in Palm Beach Gardens',
+      description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category explained.',
       h1: 'Wind Mitigation Inspection in Palm Beach Gardens',
       summary: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the OIR-B1-1802 form explained, plus which existing construction already qualifies for the maximum discount.',
       hubSlug: 'palm-beach-gardens',
@@ -6141,7 +6141,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'privacy',
       title: 'Privacy Policy | All Phase Construction USA',
-      description: 'All Phase Construction USA privacy policy. How we collect, use, and protect personal information from website visitors and customers in Broward & Palm Beach County.',
+      description: 'All Phase Construction USA privacy policy. How we collect, use, and protect personal information from website visitors and customers in Broward & Palm',
       h1: 'Privacy Policy',
       summary: 'All Phase Construction USA is committed to protecting your privacy. This policy explains what information we collect when you visit our website or contact us, how we use it, how we protect it, and your rights as a South Florida homeowner or business. For questions contact (754) 227-5605.',
       hubSlug: null,
@@ -6171,7 +6171,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'roof-repair/palm-beach-county',
-      title: 'Palm Beach County Roof Repair | Wind-Code Repairs | All Phase USA',
+      title: 'Palm Beach County Roof Repair | Wind-Code Repairs',
       description: 'Roof repair across Palm Beach County — tile, metal, shingle, and flat roof repairs to wind-code standards. Free inspection within 48 hours, dual-licensed.',
       h1: 'Roof Repair in Palm Beach County, FL',
       summary: 'Roof repair across Palm Beach County — tile, metal, shingle, and flat roof systems repaired to current Palm Beach County wind-code standards. Dual-licensed (CCC-1331464 roofing + CGC-1526236 general contractor) means combined-scope repairs (flashing, fascia, soffit, structural) are handled by a single accountable crew. Free inspection within 48 hours.',
@@ -6183,7 +6183,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'locations/service-areas',
       title: 'Roofing Service Areas | All Phase Construction USA',
-      description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision and code-compliant roofing.',
+      description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.',
       h1: 'Roofing Service Areas',
       summary: 'Complete list of service areas across Broward and Palm Beach County. All cities are served from our Deerfield Beach office and warehouse with consistent crew supervision and code-compliant workmanship — HVHZ in Broward, Palm Beach County wind-code in PBC.',
       hubSlug: 'deerfield-beach',

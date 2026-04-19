@@ -86,11 +86,11 @@ export default function AboutPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005. 2,500+ roofs installed.');
+      metaDescription.setAttribute('content', 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005. 2,500+ roofs installed.';
+      meta.content = 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005.';
       document.head.appendChild(meta);
     }
   }, []);

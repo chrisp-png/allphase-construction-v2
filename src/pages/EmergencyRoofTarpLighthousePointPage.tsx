@@ -42,7 +42,7 @@ export default function EmergencyRoofTarpLighthousePointPage() {
     <>
       <SEO
         title="Emergency Roof Tarp in Lighthouse Point (24-Hour Service)"
-        description="Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ. When to call, what it costs, and how insurance reimbursement works."
+        description="Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ."
         canonicalPath="/emergency-roof-tarp-lighthouse-point"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

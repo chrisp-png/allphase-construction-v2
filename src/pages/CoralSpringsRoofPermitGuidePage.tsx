@@ -55,7 +55,7 @@ export default function CoralSpringsRoofPermitGuidePage() {
   return (
     <>
       <SEO
-        title="Coral Springs Roof Permit Guide (2026) | Fees, Timeline & HVHZ Code"
+        title="Coral Springs Roof Permit Guide (2026)"
         description="When you need a roofing permit in Coral Springs, what the city requires, how long it takes, fees, required inspections, and HVHZ code requirements."
         canonicalPath="/coral-springs-roof-permit-guide"
       />

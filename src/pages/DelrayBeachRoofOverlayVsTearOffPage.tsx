@@ -45,13 +45,13 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
     { '@type': 'ListItem', position: 2, name: 'Learning Center', item: 'https://allphaseconstructionfl.com/learning-center' },
     { '@type': 'ListItem', position: 3, name: 'Delray Beach Roof Overlay vs Tear-Off', item: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off' },
   ]};
-  const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code Explained)", description: "Florida HVHZ code makes a residential roof overlay almost impossible in Delray Beach. Here is the exact code section, the disqualifiers, and what an honest tear-off quote should include instead.", author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
+  const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code", description: "Florida HVHZ code makes a residential roof overlay almost impossible in Delray Beach. Here is the exact code section, the disqualifiers, and what an honest tear-off quote should include instead.", author: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, publisher: { '@type': 'Organization', name: 'All Phase Construction USA', url: 'https://allphaseconstructionfl.com' }, datePublished: '2026-04-01', dateModified: '2026-04-07' };
 
   return (
     <>
       <SEO
-        title="Why You Can't Overlay a Roof in Delray Beach (HVHZ Code Explained)"
-        description="A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that disqualifies it."
+        title="Why You Can't Overlay a Roof in Delray Beach (HVHZ Code"
+        description="A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that"
         canonicalPath="/delray-beach-roof-overlay-vs-tear-off"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

@@ -66,11 +66,11 @@ export default function ReviewsPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Read hundreds of 5-star reviews from satisfied customers across Broward & Palm Beach Counties. See why homeowners trust All Phase Construction for their roofing needs.');
+      metaDescription.setAttribute('content', 'Read hundreds of 5-star reviews from satisfied customers across Broward & Palm Beach Counties.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Read hundreds of 5-star reviews from satisfied customers across Broward & Palm Beach Counties. See why homeowners trust All Phase Construction for their roofing needs.';
+      meta.content = 'Read hundreds of 5-star reviews from satisfied customers across Broward & Palm Beach Counties.';
       document.head.appendChild(meta);
     }
   }, []);

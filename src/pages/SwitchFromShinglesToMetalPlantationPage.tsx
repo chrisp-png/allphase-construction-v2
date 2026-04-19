@@ -30,7 +30,7 @@ export default function SwitchFromShinglesToMetalPlantationPage() {
   return (
     <>
       <SEO
-        title="Switch From Shingles to Metal in Plantation? (2026 Decision Guide)"
+        title="Switch From Shingles to Metal in Plantation?"
         description="Should you replace your Plantation shingle roof with metal in 2026? Side-by-side cost, lifespan, insurance, HOA, and 40-year total-cost-of-ownership math."
         canonicalPath="/switch-from-shingles-to-metal-plantation"
       />

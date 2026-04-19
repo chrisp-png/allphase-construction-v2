@@ -25,11 +25,11 @@ export default function HowToHireRoofingContractorPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'A complete guide to hiring a roofing contractor in Deerfield Beach and South Florida. Learn about HVHZ codes, wind mitigation, insurance discounts, documentation, and why dual licensing matters.');
+      metaDescription.setAttribute('content', 'A complete guide to hiring a roofing contractor in Deerfield Beach and South Florida.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'A complete guide to hiring a roofing contractor in Deerfield Beach and South Florida. Learn about HVHZ codes, wind mitigation, insurance discounts, documentation, and why dual licensing matters.';
+      meta.content = 'A complete guide to hiring a roofing contractor in Deerfield Beach and South Florida.';
       document.head.appendChild(meta);
     }
 

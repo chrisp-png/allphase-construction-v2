@@ -14,6 +14,8 @@
 import { getLocationBySlug } from '../data/locations';
 import { buildLocationSeo } from '../lib/locationSeo';
 import { BEST_ROOFERS_DATA } from '../data/bestRoofersData';
+import { getLandmark } from '../data/landmarks';
+import { buildLandmarkSeo } from '../lib/landmarkSeo';
 
 /**
  * Returns correct wind-zone compliance language for a given city slug.
@@ -54,8 +56,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'South Florida Roof Cost Calculator | Free Florida Roof Replacement Estimate 2026',
-    description: 'Free South Florida roof cost calculator and roof replacement estimate for Broward & Palm Beach County, Florida. 2026 HVHZ pricing for shingle, tile, metal & flat roofs — no signup.',
+    title: 'South Florida Roof Cost Calculator',
+    description: 'Free South Florida roof cost calculator and roof replacement estimate for Broward & Palm Beach County, Florida.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
@@ -160,7 +162,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/deerfield-beach/best-roofers-deerfield-beach': {
     title: '5 Best Roofers in Deerfield Beach, FL (2026 Reviewed)',
-    description: 'We compared the 5 best-rated roofers in Deerfield Beach by licenses, HVHZ compliance, reviews & pricing. Updated for 2026 - see which Broward County contractors made the cut.',
+    description: 'We compared the 5 best-rated roofers in Deerfield Beach by licenses, HVHZ compliance, reviews & pricing.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach/best-roofers-deerfield-beach'
   },
   '/locations/fort-lauderdale/best-roofers-fort-lauderdale': {
@@ -302,12 +304,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-replacement-cost-deerfield-beach': {
     title: 'Roof Replacement Cost in Deerfield Beach (2026)',
-    description: '2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options. Free 24-hour quotes.',
+    description: '2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-cost-deerfield-beach'
   },
   '/boca-raton-roof-replacement-timeline': {
     title: 'Boca Raton Roof Replacement Timeline: Day-by-Day (2026)',
-    description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather contingencies.',
+    description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather',
     canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-replacement-timeline'
   },
   '/coral-springs-roof-permit-guide': {
@@ -316,28 +318,28 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/coral-springs-roof-permit-guide'
   },
   '/pompano-beach-roof-inspection': {
-    title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof (2026)',
+    title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof',
     description: 'The nine clearest signs that your Pompano Beach roof has reached end-of-life — from curling shingles to insurance non-renewal — plus what to do next.',
     canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-inspection'
   },
   '/delray-beach-roof-overlay-vs-tear-off': {
     title: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code)",
-    description: "A Delray Beach contractor pitched a roof-over to save money? Florida HVHZ code makes that almost impossible. Here is the exact code section and what to do instead.",
+    description: "A Delray Beach contractor pitched a roof-over to save money? Florida HVHZ code makes that almost impossible.",
     canonical: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off'
   },
   '/metal-roofing-cost-fort-lauderdale': {
     title: 'Metal Roofing Cost in Fort Lauderdale (2026)',
-    description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options explained.',
+    description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing-cost-fort-lauderdale'
   },
   '/tile-roof-replacement-wellington': {
     title: 'Tile Roof Replacement in Wellington (2026) | HOA + Weight Load',
-    description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements explained.',
+    description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements',
     canonical: 'https://allphaseconstructionfl.com/tile-roof-replacement-wellington'
   },
   '/standing-seam-metal-roof-jupiter': {
     title: 'Standing Seam Metal Roof in Jupiter (2026 Coastal Guide)',
-    description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County insurance credits.',
+    description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County',
     canonical: 'https://allphaseconstructionfl.com/standing-seam-metal-roof-jupiter'
   },
   '/flat-roof-tpo-vs-pvc-west-palm-beach': {
@@ -352,37 +354,37 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/hurricane-roof-damage-inspection-hollywood': {
     title: 'Hurricane Roof Damage Inspection in Hollywood, FL (2026)',
-    description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that protects your claim.',
+    description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that',
     canonical: 'https://allphaseconstructionfl.com/hurricane-roof-damage-inspection-hollywood'
   },
   '/wind-damage-insurance-claim-boynton-beach': {
-    title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step Guide)',
-    description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid common underpayments.',
+    title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step',
+    description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid',
     canonical: 'https://allphaseconstructionfl.com/wind-damage-insurance-claim-boynton-beach'
   },
   '/emergency-roof-tarp-lighthouse-point': {
     title: 'Emergency Roof Tarp in Lighthouse Point (24-Hour Service)',
-    description: 'Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ. When to call, what it costs, and how insurance reimbursement works.',
+    description: 'Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ.',
     canonical: 'https://allphaseconstructionfl.com/emergency-roof-tarp-lighthouse-point'
   },
   '/tree-damage-roof-repair-parkland': {
     title: 'Tree Damage Roof Repair in Parkland, FL (2026)',
-    description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window that protects your claim.',
+    description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window',
     canonical: 'https://allphaseconstructionfl.com/tree-damage-roof-repair-parkland'
   },
   '/storm-damage-repair-or-replace-davie': {
-    title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision Matrix)',
-    description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that decides the call.',
+    title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision',
+    description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that',
     canonical: 'https://allphaseconstructionfl.com/storm-damage-repair-or-replace-davie'
   },
   '/annual-roof-inspection-sunrise': {
     title: 'Annual Roof Inspection in Sunrise, FL (10-Point Checklist)',
-    description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior damage.',
+    description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior',
     canonical: 'https://allphaseconstructionfl.com/annual-roof-inspection-sunrise'
   },
   '/wind-mitigation-inspection-palm-beach-gardens': {
-    title: 'Wind Mitigation Inspection in Palm Beach Gardens (2026 Savings Guide)',
-    description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the OIR-B1-1802 form explained.',
+    title: 'Wind Mitigation Inspection in Palm Beach Gardens (2026',
+    description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the',
     canonical: 'https://allphaseconstructionfl.com/wind-mitigation-inspection-palm-beach-gardens'
   },
   '/roof-maintenance-tips-miramar': {
@@ -402,7 +404,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/pre-listing-roof-certification-coconut-creek': {
     title: 'Pre-Listing Roof Certification in Coconut Creek (2026)',
-    description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from collapsing at inspection.',
+    description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from',
     canonical: 'https://allphaseconstructionfl.com/pre-listing-roof-certification-coconut-creek'
   },
 };
@@ -517,6 +519,27 @@ export function generateSEOMetadata(path: string): SEOMetadata {
       }
     }
 
+    // Handle /locations/:citySlug/:landmarkSlug — route to landmark SEO builder
+    // (previously fell through to the generic fallback which slug-cased the
+    // landmark into a Screaming-Frog-flagged "boca-raton/mizner-park Roofing
+    // Contractor" title).
+    const landmarkMatch = slug.match(/^([^/]+)\/(.+)$/);
+    if (landmarkMatch) {
+      const [, citySlug, landmarkSlug] = landmarkMatch;
+      const landmark = getLandmark(citySlug, landmarkSlug);
+      if (landmark) {
+        const lseo = buildLandmarkSeo(landmark);
+        return {
+          title: lseo.title,
+          description: lseo.description,
+          canonical: lseo.canonical,
+          ogTitle: lseo.ogTitle,
+          ogDescription: lseo.ogDescription,
+          ogUrl: lseo.ogUrl,
+        };
+      }
+    }
+
     // Fallback if location not found in locations.ts
     return {
       title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
@@ -529,12 +552,20 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   if (normalizedPath.startsWith('/roof-repair/')) {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    // Compact template: drops "Licensed & <compliance>" + "Storm damage, leaks,
+    // tile, shingle & flat repairs." segments from the original to keep title
+    // under Google's 580px SERP pixel cap (most cities were at 700–800px) and
+    // description under 160 chars (worst case was 189 chars for PB-Gardens
+    // with "Florida wind-code compliant"). Compliance language remains in desc.
+    const title = `Roof Repair ${cityName} FL | All Phase`;
+    const description = `Fast, licensed roof repair in ${cityName}. ${getComplianceLabel(slug)} dual-licensed contractor. Free inspection. (754) 227-5605.`;
+    const ogDescription = `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. Dual-licensed CCC/CGC. (754) 227-5605.`;
     return {
-      title: `Roof Repair ${cityName} FL | Licensed & ${getComplianceLabel(slug)} | All Phase`,
-            description: `Fast, licensed roof repair in ${cityName}. Storm damage, leaks, tile, shingle & flat repairs. ${getComplianceLabel(slug)} dual-licensed contractor. Free inspection. (754) 227-5605.`,
+      title,
+      description,
       canonical: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
-      ogTitle: `Roof Repair ${cityName} FL | Licensed & ${getComplianceLabel(slug)} | All Phase`,
-            ogDescription: `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. ${getComplianceLabel(slug)}, dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
+      ogTitle: title,
+      ogDescription,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
     };
   }
