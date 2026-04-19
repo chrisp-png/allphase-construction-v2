@@ -33,7 +33,7 @@ export default function HurricaneRoofDamageInspectionHollywoodPage() {
     <>
       <SEO
         title="Hurricane Roof Damage Inspection in Hollywood, FL (2026)"
-        description="What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that protects your claim."
+        description="What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that"
         canonicalPath="/hurricane-roof-damage-inspection-hollywood"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

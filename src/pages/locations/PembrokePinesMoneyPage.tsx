@@ -22,7 +22,7 @@ export default function PembrokePinesMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Pembroke Pines FL Roofing Company | Re-Roofs & Shingle Upgrades | All Phase`;
+    document.title = `Pembroke Pines FL Roofing Company`;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

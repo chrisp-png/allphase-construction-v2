@@ -31,7 +31,7 @@ export default function PompanoBeachRoofInspectionPage() {
   return (
     <>
       <SEO
-        title="Pompano Beach Roof Inspection: 9 Signs You Need a New Roof (2026)"
+        title="Pompano Beach Roof Inspection: 9 Signs You Need a New Roof"
         description="The nine clearest signs that your Pompano Beach roof has reached end-of-life — from curling shingles to insurance non-renewal — plus what to do next."
         canonicalPath="/pompano-beach-roof-inspection"
       />

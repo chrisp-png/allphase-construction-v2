@@ -33,7 +33,7 @@ export default function AnnualRoofInspectionSunrisePage() {
     <>
       <SEO
         title="Annual Roof Inspection in Sunrise, FL (10-Point Checklist)"
-        description="10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior damage."
+        description="10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior"
         canonicalPath="/annual-roof-inspection-sunrise"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

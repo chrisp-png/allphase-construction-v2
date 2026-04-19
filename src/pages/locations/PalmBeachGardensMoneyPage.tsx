@@ -22,7 +22,7 @@ export default function PalmBeachGardensMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Palm Beach Gardens Roofing Contractor | Luxury Tile & Estate Roofing | All Phase`;
+    document.title = `Palm Beach Gardens Roofing Contractor`;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

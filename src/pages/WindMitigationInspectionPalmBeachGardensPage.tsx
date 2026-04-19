@@ -29,8 +29,8 @@ export default function WindMitigationInspectionPalmBeachGardensPage() {
   return (
     <>
       <SEO
-        title="Wind Mitigation Inspection in Palm Beach Gardens (2026 Savings Guide)"
-        description="How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the OIR-B1-1802 form explained."
+        title="Wind Mitigation Inspection in Palm Beach Gardens"
+        description="How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category explained."
         canonicalPath="/wind-mitigation-inspection-palm-beach-gardens"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

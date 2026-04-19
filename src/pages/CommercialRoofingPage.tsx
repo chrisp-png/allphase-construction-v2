@@ -38,11 +38,11 @@ export default function CommercialRoofingPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance. Dual-licensed contractor. Free assessments.');
+      metaDescription.setAttribute('content', 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance.');
     }
 
     const pageUrl = 'https://allphaseconstructionfl.com/commercial-roofing';
-    const pageDescription = 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance. Dual-licensed contractor. Free assessments.';
+    const pageDescription = 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance.';
 
     // Local Business Schema with AggregateRating
     const localBusinessSchema = generateLocalBusinessSchema(pageUrl);

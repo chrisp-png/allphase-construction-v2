@@ -268,7 +268,7 @@ export default function BlogPostPage() {
                 tags: ['Hiring Contractor', 'South Florida', 'Licensed Roofer', 'Roofing Tips'],
                 featured_image: '/shingle-roof-completion-broward-county-all-phase-construction-usa.jpg',
                 meta_title: 'How to Hire a Roofer in South Florida | What to Look For & Avoid',
-                meta_description: 'Expert guide to hiring a licensed roofing contractor in South Florida. Verify credentials, avoid scams, and protect your roofing investment in Broward & Palm Beach Counties.',
+                meta_description: 'Expert guide to hiring a licensed roofing contractor in South Florida. Verify credentials, avoid scams, and protect your roofing investment in Broward &',
                 faqs: [],
               },
               'how-much-does-a-screen-enclosure-cost': {

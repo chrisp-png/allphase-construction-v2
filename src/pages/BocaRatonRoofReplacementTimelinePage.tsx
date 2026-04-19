@@ -38,7 +38,7 @@ export default function BocaRatonRoofReplacementTimelinePage() {
     <>
       <SEO
         title="Boca Raton Roof Replacement Timeline (2026) | Day-by-Day Guide"
-        description="How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather contingencies."
+        description="How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather"
         canonicalPath="/boca-raton-roof-replacement-timeline"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

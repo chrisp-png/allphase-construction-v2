@@ -9,11 +9,11 @@ export default function GreenacresRoofInspectionPage() {
     document.title = 'Roof Inspection Greenacres FL | All Phase Construction USA';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof inspection in Greenacres FL. Maximize insurance discounts and know if you need repair or replacement. Licensed & insured. Free inspection. Call 754 227-5605.');
+      metaDescription.setAttribute('content', 'Professional roof inspection in Greenacres FL. Maximize insurance discounts and know if you need repair or replacement. Licensed & insured. Free inspection.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof inspection in Greenacres FL. Maximize insurance discounts and know if you need repair or replacement. Licensed & insured. Free inspection. Call 754 227-5605.';
+      meta.content = 'Professional roof inspection in Greenacres FL. Maximize insurance discounts and know if you need repair or replacement. Licensed & insured. Free inspection.';
       document.head.appendChild(meta);
     }
   }, []);
