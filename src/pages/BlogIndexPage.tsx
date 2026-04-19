@@ -41,6 +41,63 @@ export default function BlogIndexPage() {
     setPage(1);
   }, [selectedCategory, posts]);
 
+  /**
+   * Loads posts from /blog-content.json (local markdown compiled by
+   * scripts/build-blog-content.mjs) and returns them as BlogPost[] so
+   * they can be merged with the Supabase result set.
+   *
+   * This enables a "PR-based" blog workflow: commit a .md file under
+   * /blog and it shows up in the hub listing without needing a
+   * matching Supabase row. Supabase rows always win on slug collision.
+   */
+  const loadLocalMarkdownPosts = async (supabaseSlugs: Set<string>): Promise<BlogPost[]> => {
+    try {
+      const response = await fetch('/blog-content.json');
+      if (!response.ok) return [];
+      const map: Record<string, string> = await response.json();
+
+      const localPosts: BlogPost[] = [];
+      for (const [slug, html] of Object.entries(map)) {
+        if (supabaseSlugs.has(slug)) continue; // Supabase wins
+        if (!html || typeof html !== 'string') continue;
+
+        // Extract title from first <h1>, fall back to slug → Title Case
+        const h1Match = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+        const title = h1Match
+          ? h1Match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+          : slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+        // Extract excerpt from first <p> after the H1
+        const postH1 = h1Match ? html.slice(html.indexOf(h1Match[0]) + h1Match[0].length) : html;
+        const pMatch = postH1.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+        const rawExcerpt = pMatch
+          ? pMatch[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+          : '';
+        const excerpt = rawExcerpt.length > 200 ? rawExcerpt.slice(0, 197).trim() + '...' : rawExcerpt;
+
+        localPosts.push({
+          id: `local-${slug}`,
+          slug,
+          title,
+          excerpt,
+          featured_image: '',
+          author: 'All Phase Construction USA',
+          published_date: new Date().toISOString().split('T')[0],
+          categories: ['Roofing Insights'],
+          tags: [],
+        });
+      }
+
+      // Alphabetical by title for stable ordering when there's no date
+      localPosts.sort((a, b) => a.title.localeCompare(b.title));
+      return localPosts;
+    } catch (err) {
+      // Non-fatal: local markdown listing is a supplement, not a requirement.
+      console.warn('Could not load /blog-content.json for hub listing:', err);
+      return [];
+    }
+  };
+
   const fetchPosts = async () => {
     try {
       const { data, error } = await supabase
@@ -54,23 +111,38 @@ export default function BlogIndexPage() {
         throw new Error(`Database error: ${error.message}`);
       }
 
-      if (data) {
-        setPosts(data);
-        setFilteredPosts(data);
+      // Merge Supabase posts with any local markdown posts not already in Supabase.
+      // Supabase wins on slug collision (it has richer metadata: author, date, categories).
+      const supabaseData = data || [];
+      const supabaseSlugs = new Set(supabaseData.map(p => p.slug));
+      const localPosts = await loadLocalMarkdownPosts(supabaseSlugs);
+      const merged = [...supabaseData, ...localPosts];
 
-        const allCategories = new Set<string>();
-        data.forEach(post => {
-          if (Array.isArray(post.categories)) {
-            post.categories.forEach(cat => allCategories.add(cat));
-          }
-        });
-        setCategories(Array.from(allCategories));
-      }
+      setPosts(merged);
+      setFilteredPosts(merged);
+
+      const allCategories = new Set<string>();
+      merged.forEach(post => {
+        if (Array.isArray(post.categories)) {
+          post.categories.forEach(cat => allCategories.add(cat));
+        }
+      });
+      setCategories(Array.from(allCategories));
       setError(null);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error occurred';
       console.error('Error fetching blog posts:', err);
-      setError(errorMessage);
+
+      // Fallback: try showing local markdown posts even when Supabase is unreachable.
+      const localPosts = await loadLocalMarkdownPosts(new Set());
+      if (localPosts.length > 0) {
+        setPosts(localPosts);
+        setFilteredPosts(localPosts);
+        setCategories(['Roofing Insights']);
+        setError(null);
+      } else {
+        setError(errorMessage);
+      }
     } finally {
       setLoading(false);
     }
