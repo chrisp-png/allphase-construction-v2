@@ -238,6 +238,29 @@ export default function BlogPostPage() {
   const slugToTitle = (s: string) =>
     s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
+  // Try to load a BlogPost from the build-time Supabase cache written by
+  // scripts/prerender-static.mjs at /blog-supabase-cache.json. Serves as the
+  // tertiary fallback when the runtime Supabase call fails (RLS hiccup, CORS
+  // edge case, transient DNS) — the cache contains every published row as of
+  // build-time, so the 28 KNOWN_SUPABASE_SLUGS entries survive a Supabase
+  // outage and the visitor still sees a full article (pinned to whatever was
+  // in the DB when this deploy was built). Returns null on miss or fetch error.
+  const tryLoadFromBuildCache = async (
+    targetSlug: string,
+  ): Promise<BlogPost | null> => {
+    try {
+      const response = await fetch('/blog-supabase-cache.json');
+      if (!response.ok) return null;
+      const cache = await response.json();
+      const row = cache?.posts?.[targetSlug];
+      if (!row) return null;
+      return row as BlogPost;
+    } catch (e) {
+      console.warn('Could not load build-time Supabase cache:', e);
+      return null;
+    }
+  };
+
   // Try to synthesize a BlogPost from public/blog-content.json + staticPostMeta.
   // Returns null if the slug is not present in blog-content.json or the fetch fails.
   const trySynthesizeFromStaticContent = async (
@@ -385,7 +408,26 @@ export default function BlogPostPage() {
       return;
     }
 
-    // Step 3: No Supabase record (or Supabase failed). Try blog-content.json.
+    // Step 3: No Supabase record (or Supabase failed). Try the build-time
+    // Supabase cache written by scripts/prerender-static.mjs. This is the
+    // highest-fidelity fallback — it's the same row Supabase would return,
+    // pinned to build-time. Added in PR-17 so the 28 KNOWN_SUPABASE_SLUGS
+    // entries survive a Supabase outage with full content + FAQs + images.
+    const cached = await tryLoadFromBuildCache(slug);
+    if (cached) {
+      setPost(cached);
+      if (cached.related_post_ids && cached.related_post_ids.length > 0) {
+        fetchRelatedPosts(cached.related_post_ids);
+      } else {
+        fetchRelatedPostsByCategory(cached.categories);
+      }
+      console.log(`Loaded blog post from build cache: ${slug}`);
+      setLoading(false);
+      return;
+    }
+
+    // Step 4: Try blog-content.json (markdown-backed posts that aren't in
+    // Supabase and thus aren't in the build cache above).
     const synthesized = await trySynthesizeFromStaticContent(slug);
     if (synthesized) {
       setPost(synthesized);
@@ -395,7 +437,7 @@ export default function BlogPostPage() {
       return;
     }
 
-    // Step 4: Last resort — build a stub post from the slug so we never render
+    // Step 5: Last resort — build a stub post from the slug so we never render
     // "Post Not Found" for URLs that reached this component. Any slug here has
     // already survived the blog-redirects edge function, so it's a known slug.
     setPost(buildSlugStubPost(slug));
