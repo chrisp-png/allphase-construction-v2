@@ -7,7 +7,7 @@
  * This page focuses on Deerfield Beach itself, not the service areas directory.
  */
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react';
@@ -54,39 +54,78 @@ export default function DeerfieldBeachCityPage() {
     }
   ];
 
-  const faqItems = [
+  // FAQ items: `answer` is plain text used for FAQPage JSON-LD schema.
+  // Optional `answerNodes` is the JSX rendered visibly, so internal links
+  // stay as working <Link> SPA navigations instead of literal "<Link …>"
+  // text showing on the page.
+  const faqItems: Array<{ question: string; answer: string; answerNodes?: ReactNode }> = [
     {
       question: 'How do I know if I need roof repair or a full roof replacement?',
-      answer: 'Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">professional roof inspection</Link> by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.'
+      answer: 'Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A professional roof inspection by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.',
+      answerNodes: (
+        <>
+          Look for signs such as persistent leaks, missing or damaged shingles, sagging areas, or visible water damage inside your home. A{' '}
+          <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">professional roof inspection</Link>
+          {' '}by a certified contractor can assess the condition of your roof and recommend whether repair or replacement is the best option.
+        </>
+      ),
     },
     {
       question: 'What factors affect the cost of a roofing project in Deerfield Beach?',
-      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price. Use our <Link to="/calculator" className="underline hover:text-white">Roof Cost Calculator</Link> for a preliminary estimate.'
+      answer: 'The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor\'s experience can also influence the final price. Use our Roof Cost Calculator for a preliminary estimate.',
+      answerNodes: (
+        <>
+          The cost typically depends on the size of your roof, the materials selected (shingles, tile, metal, etc.), the complexity of the installation, and the extent of any damage. Location, permit requirements, and the contractor's experience can also influence the final price. Use our{' '}
+          <Link to="/roof-cost-calculator" className="underline hover:text-white">Roof Cost Calculator</Link>
+          {' '}for a preliminary estimate.
+        </>
+      ),
     },
     {
       question: 'How long does it take to install a new roof?',
-      answer: 'Most residential roofing projects in Deerfield Beach can be completed in a few days, depending on the size of the house and weather conditions. Your contractor will provide a clear timeline before work begins.'
+      answer: 'Most residential roofing projects in Deerfield Beach can be completed in a few days, depending on the size of the house and weather conditions. Your contractor will provide a clear timeline before work begins.',
     },
     {
       question: 'What should I look for when hiring a roofing contractor?',
-      answer: 'Choose a contractor who is licensed, insured, and experienced with local building codes. Look for clear communication, positive reviews, and a willingness to provide references and a detailed quote. A great contractor will offer a strong warranty and prioritize quality workmanship.'
+      answer: 'Choose a contractor who is licensed, insured, and experienced with local building codes. Look for clear communication, positive reviews, and a willingness to provide references and a detailed quote. A great contractor will offer a strong warranty and prioritize quality workmanship.',
     },
     {
       question: 'Is financing available for roof repair or replacement?',
-      answer: 'Many contractors offer <Link to="/easy-payments" className="underline hover:text-white">financing options</Link> to help make roof repair or replacement more affordable. Ask your contractor about available plans and how to apply.'
+      answer: 'Many contractors offer financing options to help make roof repair or replacement more affordable. Ask your contractor about available plans and how to apply.',
+      answerNodes: (
+        <>
+          Many contractors offer{' '}
+          <Link to="/easy-payments" className="underline hover:text-white">financing options</Link>
+          {' '}to help make roof repair or replacement more affordable. Ask your contractor about available plans and how to apply.
+        </>
+      ),
     },
     {
       question: 'How often should I schedule a roof inspection?',
-      answer: 'It\'s recommended to have your <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">roof inspected</Link> at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.'
+      answer: 'It\'s recommended to have your roof inspected at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.',
+      answerNodes: (
+        <>
+          It's recommended to have your{' '}
+          <Link to="/roof-inspection/deerfield-beach" className="underline hover:text-white">roof inspected</Link>
+          {' '}at least once a year, and after any major storm event. Regular inspections help catch problems early and keep your roof in optimal condition.
+        </>
+      ),
     },
     {
       question: 'What is underlayment, and why is it important?',
-      answer: 'Underlayment is a protective layer installed beneath your roofing material. It acts as a secondary barrier against water intrusion, helping to prevent leaks and extend the life of your roof.'
+      answer: 'Underlayment is a protective layer installed beneath your roofing material. It acts as a secondary barrier against water intrusion, helping to prevent leaks and extend the life of your roof.',
     },
     {
       question: 'Do I need a permit for roof work in Deerfield Beach?',
-      answer: 'Yes, most roofing projects require permits and inspections to ensure compliance with local and state building codes. Your contractor should handle the <Link to="/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida" className="underline hover:text-white">permitting process</Link> and provide all necessary documentation.'
-    }
+      answer: 'Yes, most roofing projects require permits and inspections to ensure compliance with local and state building codes. Your contractor should handle the permitting process and provide all necessary documentation.',
+      answerNodes: (
+        <>
+          Yes, most roofing projects require permits and inspections to ensure compliance with local and state building codes. Your contractor should handle the{' '}
+          <Link to="/blog/why-homeowners-should-avoid-pulling-their-own-roofing-permit-in-south-florida" className="underline hover:text-white">permitting process</Link>
+          {' '}and provide all necessary documentation.
+        </>
+      ),
+    },
   ];
 
   const openLightbox = (index: number) => {
@@ -118,7 +157,7 @@ export default function DeerfieldBeachCityPage() {
         "name": item.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": item.answer.replace(/<[^>]*>/g, '')
+          "text": item.answer
         }
       }))
     });
@@ -1046,7 +1085,7 @@ export default function DeerfieldBeachCityPage() {
                     >
                       <div className="px-6 py-4 bg-gray-900/20">
                         <p className="text-gray-400 text-lg leading-relaxed">
-                          {faq.answer}
+                          {faq.answerNodes ?? faq.answer}
                         </p>
                       </div>
                     </div>
