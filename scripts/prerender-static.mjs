@@ -3193,10 +3193,16 @@ ${companyAuthorityFooter()}
 
     // ─── Wave-C backfill: inject FAQ + Map + Testimonials ───
     // Detect whether existing schema already includes a FAQPage; if not, add one.
+    // Cities in CITIES_WITH_OWN_FAQ have a dedicated React component that owns
+    // the FAQ (schema + visible content). Skipping Wave-C FAQ here prevents a
+    // duplicate FAQPage block being emitted alongside the one the React
+    // component appends on hydration — GSC flags duplicate FAQPage as invalid.
+    const CITIES_WITH_OWN_FAQ = new Set(['deerfield-beach']);
     const existingArr = Array.isArray(hubSchema) ? hubSchema : (hubSchema ? [hubSchema] : []);
     const alreadyHasFaq = existingArr.some(s => s && s['@type'] === 'FAQPage');
     const faqs = buildLocationFaqs(city, location);
-    if (!alreadyHasFaq) {
+    const cityOwnsFaq = CITIES_WITH_OWN_FAQ.has(slug);
+    if (!alreadyHasFaq && !cityOwnsFaq) {
       hubSchema = [...existingArr, buildFaqSchema(faqs)];
     }
     // ─── PR #3: County hub backlink block ───
@@ -3213,8 +3219,11 @@ ${companyAuthorityFooter()}
   </div>`;
 
     // Inject FAQ HTML + Map + Testimonials + County backlink + Community links before closing </section>
+    // If the city owns its FAQ (via a dedicated React component), skip the
+    // prerender's visible FAQ HTML too — React will render its own on hydration.
     const communityLinksHtml = buildCommunityLinksHtml(slug, city);
-    const injectedBlock = `\n${countyBacklinkHtml}\n${buildMapHtml(city)}\n${communityLinksHtml}\n${buildTestimonialsHtml(city, location)}\n${buildFaqHtml(city, faqs)}\n`;
+    const faqHtmlBlock = cityOwnsFaq ? '' : buildFaqHtml(city, faqs);
+    const injectedBlock = `\n${countyBacklinkHtml}\n${buildMapHtml(city)}\n${communityLinksHtml}\n${buildTestimonialsHtml(city, location)}\n${faqHtmlBlock}\n`;
     if (hubContent.includes('</section>')) {
       hubContent = hubContent.replace('</section>', `${injectedBlock}</section>`);
     } else {
