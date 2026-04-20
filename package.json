@@ -27,7 +27,10 @@
     "manifest:save": "node scripts/dist-manifest.mjs --out manifests/head.json",
     "manifest:diff": "node scripts/dist-diff.mjs manifests/main.json manifests/head.json",
     "smoke": "node scripts/smoke-test.mjs",
-    "smoke:prod": "node scripts/smoke-test.mjs --base https://allphaseconstructionfl.com"
+    "smoke:prod": "node scripts/smoke-test.mjs --base https://allphaseconstructionfl.com",
+    "audit:blog": "node scripts/audit-blog-content.mjs",
+    "audit:blog:prod": "node scripts/audit-blog-content.mjs --url=https://allphaseconstructionfl.com/blog-supabase-cache.json",
+    "audit:blog:live": "node scripts/audit-blog-content.mjs --live"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
