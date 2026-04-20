@@ -418,13 +418,26 @@ export default function BlogPostPage() {
   const updateMetaTags = () => {
     if (!post) return;
 
-    // Use meta_title as-is if set (allows full control from Supabase), otherwise build from post title
+    // Title: hard cap at 60 chars including " | All Phase" suffix (48-char body).
+    // Previously used a 52-char body cap which produced 64-char titles that SF
+    // flagged as over-limit. Also caps post.meta_title so a too-long Supabase
+    // value cannot leak through.
+    const TITLE_SUFFIX = ' | All Phase';
+    const MAX_TITLE_BODY = 60 - TITLE_SUFFIX.length; // 48
+    const trimForTitle = (t: string, keepSuffix: boolean) => {
+      const max = keepSuffix ? MAX_TITLE_BODY : 60;
+      if (t.length <= max) return t;
+      return t.substring(0, max).replace(/\s+\S*$/, '').trim();
+    };
     if (post.meta_title) {
-      document.title = post.meta_title;
+      // If Supabase meta_title is already ≤60, use as-is; otherwise hard-cap.
+      document.title = post.meta_title.length <= 60
+        ? post.meta_title
+        : trimForTitle(post.meta_title, false);
     } else {
       const rawTitle = post.title.replace(/\s*\|.*$/, '').trim();
-      const cleanTitle = rawTitle.length <= 52 ? rawTitle : rawTitle.substring(0, 52).replace(/\s+\S*$/, '');
-      document.title = cleanTitle + ' | All Phase';
+      const cleanTitle = trimForTitle(rawTitle, true);
+      document.title = cleanTitle + TITLE_SUFFIX;
     }
 
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -438,10 +451,11 @@ export default function BlogPostPage() {
         if (desc.length > 155) desc = desc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
         if (desc.length < 70) desc = `${post.title}. Expert roofing insights from a dual-licensed South Florida contractor. Read the full guide at All Phase Construction USA.`;
       }
-      // If meta_description was set explicitly in Supabase, use it as-is (already optimized)
-      // Otherwise trim auto-generated descriptions at word boundary for SERP display
-      if (!post.meta_description && desc.length > 160) {
-        desc = desc.substring(0, 155).replace(/\s+\S*$/, '') + '.';
+      // Hard-cap at 160 whether or not meta_description was set in Supabase.
+      // Prior logic trusted Supabase values unconditionally and let 15 long
+      // meta_descriptions leak through on the Friday SF crawl.
+      if (desc.length > 160) {
+        desc = desc.substring(0, 157).replace(/\s+\S*$/, '').trim() + '...';
       }
       metaDescription.setAttribute('content', desc);
     }
