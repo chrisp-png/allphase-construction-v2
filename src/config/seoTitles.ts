@@ -155,6 +155,16 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Complete roofing in Broward & Palm Beach County. Tile, metal, shingle, flat roofs. HVHZ-certified, dual-licensed. 2,500+ projects.',
     canonical: 'https://allphaseconstructionfl.com/roofing-services'
   },
+  // Service areas hub — explicit entry so the runtime path normalizer in
+  // NuclearMetadata doesn't fall through to the generic /locations/:slug
+  // fallback and so the trailing-slash version emitted by the hub page
+  // (legacy inline <link rel="canonical"> useEffect) stops winning the
+  // render. Canonical matches the policy: no trailing slash.
+  '/locations/service-areas': {
+    title: 'Roofing Service Areas | All Phase Construction USA',
+    description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.',
+    canonical: 'https://allphaseconstructionfl.com/locations/service-areas'
+  },
   '/locations/deerfield-beach/how-to-hire-a-roofing-contractor': {
     title: 'How to Hire a Roofing Contractor | All Phase USA',
     description: 'Hiring a roofer in South Florida? Know what licenses to check, questions to ask, and scams to avoid. Free advice from a licensed contractor.',

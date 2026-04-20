@@ -15,34 +15,18 @@ import { MapPin, ArrowRight } from 'lucide-react';
 
 export default function ServiceAreasHubPage() {
   useEffect(() => {
-    document.title = 'Roofing Service Areas | All Phase Construction USA';
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.';
-      document.head.appendChild(meta);
-    }
-
-    const canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (canonicalLink) {
-      canonicalLink.setAttribute('href', 'https://allphaseconstructionfl.com/locations/service-areas/');
-    } else {
-      const link = document.createElement('link');
-      link.rel = 'canonical';
-      link.href = 'https://allphaseconstructionfl.com/locations/service-areas/';
-      document.head.appendChild(link);
-    }
-
+    // NOTE: title, description, and canonical are owned by NuclearMetadata
+    // (see src/components/NuclearMetadata.tsx — "SINGLE OWNER" policy). This
+    // component used to force-inject its own canonical with a trailing slash
+    // which overrode NuclearMetadata and caused SF to flag the page as
+    // "Canonicalised" to /locations/service-areas/ (a redirect target).
+    // Only schema stays here — that's owned per-page, not globally.
     const schemas = [
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "@id": "https://allphaseconstructionfl.com/locations/service-areas/#collectionpage",
-        "url": "https://allphaseconstructionfl.com/locations/service-areas/",
+        "@id": "https://allphaseconstructionfl.com/locations/service-areas#collectionpage",
+        "url": "https://allphaseconstructionfl.com/locations/service-areas",
         "name": "Roofing Service Areas | All Phase Construction USA",
         "description": "All service areas listed below are served from our Deerfield Beach office and warehouse, with consistent standards, supervision, and code-compliant workmanship.",
         "breadcrumb": {
@@ -58,7 +42,7 @@ export default function ServiceAreasHubPage() {
               "@type": "ListItem",
               "position": 2,
               "name": "Service Areas",
-              "item": "https://allphaseconstructionfl.com/locations/service-areas/"
+              "item": "https://allphaseconstructionfl.com/locations/service-areas"
             }
           ]
         }
