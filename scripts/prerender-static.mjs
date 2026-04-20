@@ -2762,6 +2762,12 @@ ${companyAuthorityFooter()}
 
     // postMetadata: slug -> { title, metaTitle, metaDescription, excerpt, content }
     const postMetadata = {};
+    // supabaseCacheRows: slug -> full BlogPost-shaped row for the client-side
+    // build cache (dist/blog-supabase-cache.json). Serves as BlogPostPage's
+    // tertiary fallback when the runtime Supabase call fails (RLS blip, DNS,
+    // CORS edge case) — keeps the 28 KNOWN_SUPABASE_SLUGS legible to users
+    // and pinned to the deploy they landed on. Read by PR-17.
+    const supabaseCacheRows = {};
     let supabaseReachable = false;
 
     try {
@@ -2773,9 +2779,13 @@ ${companyAuthorityFooter()}
       const { createClient } = await import('@supabase/supabase-js');
       const supabase = createClient(supabaseUrl, supabaseAnonKey, { auth: { persistSession: false } });
 
+      // SELECT list is deliberately broad: the prerender loop below only needs
+      // title/meta/excerpt/content, but BlogPostPage needs a full BlogPost row
+      // shape. Asking for every field here lets us populate both the prerender
+      // metadata AND the runtime cache from a single round-trip.
       const { data: supabasePosts, error: supabaseError } = await supabase
         .from('blog_posts')
-        .select('slug, title, meta_title, meta_description, excerpt, content')
+        .select('id, slug, title, meta_title, meta_description, excerpt, content, featured_image, author, published_date, updated_at, categories, tags, faqs, related_post_ids, view_count')
         .eq('published', true);
 
       if (supabaseError) {
@@ -2793,6 +2803,26 @@ ${companyAuthorityFooter()}
             excerpt: post.excerpt,
             content: post.content,
           };
+          // Mirror the full row into the client cache, coercing nullable
+          // fields to the shapes BlogPostPage expects (string | array | 0).
+          supabaseCacheRows[post.slug] = {
+            id: String(post.id || `supabase-${post.slug}`),
+            slug: post.slug,
+            title: post.title || '',
+            meta_title: post.meta_title || '',
+            meta_description: post.meta_description || '',
+            excerpt: post.excerpt || '',
+            content: post.content || '',
+            featured_image: post.featured_image || '',
+            author: post.author || 'All Phase Construction USA Team',
+            published_date: post.published_date || '',
+            updated_at: post.updated_at || post.published_date || '',
+            categories: Array.isArray(post.categories) ? post.categories : [],
+            tags: Array.isArray(post.tags) ? post.tags : [],
+            faqs: Array.isArray(post.faqs) ? post.faqs : [],
+            related_post_ids: Array.isArray(post.related_post_ids) ? post.related_post_ids : [],
+            view_count: typeof post.view_count === 'number' ? post.view_count : 0,
+          };
         });
       } else {
         console.warn('  ⚠️ Supabase returned 0 rows (empty blog_posts table?)');
@@ -2800,6 +2830,28 @@ ${companyAuthorityFooter()}
     } catch (err) {
       console.warn(`  ⚠️ Supabase fetch error: ${err.message}`);
       console.warn('  → Falling back to hardcoded slug list with boilerplate HTML.');
+    }
+
+    // Write the build-time cache to dist/blog-supabase-cache.json regardless of
+    // whether Supabase was reachable. When Supabase is down we ship an empty
+    // object — the client falls through to blog-content.json synthesis and the
+    // slug stub, matching PR-16 behavior. When Supabase is up, this cache
+    // captures every published row as of build-time and BlogPostPage can
+    // render the full post even if the runtime Supabase call fails.
+    try {
+      const cachePath = path.join(distDir, 'blog-supabase-cache.json');
+      const cachePayload = {
+        generatedAt: new Date().toISOString(),
+        supabaseReachable,
+        postCount: Object.keys(supabaseCacheRows).length,
+        posts: supabaseCacheRows,
+      };
+      fs.writeFileSync(cachePath, JSON.stringify(cachePayload));
+      console.log(
+        `  ✓ Wrote build cache: dist/blog-supabase-cache.json (${cachePayload.postCount} posts, ${(fs.statSync(cachePath).size / 1024).toFixed(1)} KB)`,
+      );
+    } catch (cacheErr) {
+      console.warn(`  ⚠️ Could not write blog-supabase-cache.json: ${cacheErr.message}`);
     }
 
     // Build the slug set: union of Supabase slugs (if reachable) + hardcoded fallback.
