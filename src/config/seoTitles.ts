@@ -519,6 +519,31 @@ export function generateSEOMetadata(path: string): SEOMetadata {
       }
     }
 
+    // Handle /locations/:hubSlug/service-area/:targetCity/top-5-roofer — keep
+    // in sync with the topRooferPages array in scripts/prerender-static.mjs.
+    // Without this branch the path fell through to the generic fallback which
+    // emitted the full slug path as the title — Screaming Frog flagged it as
+    // "deerfield-beach/service-area/fort-lauderdale/top-5-roofer Roofing
+    // Contractor | All Phase Construction USA" on 4 URLs (JS-render crawl).
+    const topRooferMatch = slug.match(/^([^/]+)\/service-area\/([^/]+)\/top-5-roofer$/);
+    if (topRooferMatch) {
+      const [, hubSlug, targetCitySlug] = topRooferMatch;
+      const targetCityName =
+        CITY_NAMES[targetCitySlug] ||
+        targetCitySlug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      const title = `Top 5 Roofers in ${targetCityName}, FL (2026) | All Phase`;
+      const description = `All Phase is a top 5 roof replacement contractor in ${targetCityName}, FL. Dual-licensed (CCC & CGC), A+ BBB rated. Trusted by South Florida homeowners.`;
+      const canonical = `https://allphaseconstructionfl.com/locations/${hubSlug}/service-area/${targetCitySlug}/top-5-roofer`;
+      return {
+        title,
+        description,
+        canonical,
+        ogTitle: title,
+        ogDescription: description,
+        ogUrl: canonical,
+      };
+    }
+
     // Handle /locations/:citySlug/:landmarkSlug — route to landmark SEO builder
     // (previously fell through to the generic fallback which slug-cased the
     // landmark into a Screaming-Frog-flagged "boca-raton/mizner-park Roofing
