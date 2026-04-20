@@ -335,7 +335,7 @@ const html = `<!DOCTYPE html>
   <title>Sitemap - All Phase Construction</title>
   <meta name="description" content="Complete sitemap of All Phase Construction services, locations, and resources for roofing in Broward and Palm Beach Counties, Florida.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://allphaseconstructionfl.com/sitemap.html">
+  <link rel="canonical" href="https://allphaseconstructionfl.com/sitemap">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; padding: 20px; }
