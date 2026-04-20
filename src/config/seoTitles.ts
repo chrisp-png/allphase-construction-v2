@@ -610,12 +610,39 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   }
 
   // Handle blog posts
+  //
+  // Kept in lockstep with the blog prerender templates in
+  // scripts/prerender-static.mjs (both the sitemap-driven loop and the
+  // Supabase-driven loop): suffix " | All Phase" (12 chars), title capped
+  // at 60 chars total, description capped at 155 chars. Prior revision
+  // used a 21-char suffix " | All Phase USA Blog" with no length cap,
+  // which pushed 28 titles >60 and 15 descriptions >160 on Friday's
+  // Screaming Frog JS-render crawl after NuclearMetadata force-overwrote
+  // the correctly-trimmed prerendered DOM.
   if (normalizedPath.startsWith('/blog/') && normalizedPath !== '/blog') {
     const slug = normalizedPath.replace('/blog/', '');
     const blogTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    const titleSuffix = ' | All Phase';
+    const maxTitleLen = 60 - titleSuffix.length; // 48
+    const trimmedTitle = blogTitle.length <= maxTitleLen
+      ? blogTitle
+      : blogTitle.substring(0, maxTitleLen).replace(/\s+\S*$/, '').trim();
+    const pageTitle = trimmedTitle + titleSuffix;
+
+    let description = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
+    if (description.length > 155) {
+      description = `${blogTitle} — expert insights from All Phase USA, South Florida's dual-licensed roofer.`;
+    }
+    if (description.length > 155) {
+      description = `${blogTitle.substring(0, 90).replace(/\s+\S*$/, '').trim()} — roofing tips from All Phase USA. Call (754) 227-5605.`;
+    }
+    if (description.length > 155) {
+      description = description.substring(0, 152).replace(/\s+\S*$/, '').trim() + '...';
+    }
+
     return {
-      title: `${blogTitle} | All Phase USA Blog`,
-      description: `Read about ${blogTitle.toLowerCase()} from South Florida's dual-licensed roofing experts at All Phase Construction USA.`,
+      title: pageTitle,
+      description,
       canonical: `https://allphaseconstructionfl.com/blog/${slug}`
     };
   }
