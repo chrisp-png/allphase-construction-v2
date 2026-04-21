@@ -50,6 +50,7 @@ const KNOWN_SUPABASE_SLUGS = [
   'can-a-screen-room-add-to-my-property-value',
   'can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida',
   'certified-vs-licensed-roofer-florida',
+  'choosing-between-roof-repair-and-full-replacement',
   'complete-roof-replacement-process-10-steps',
   'do-i-need-a-roof-inspection-after-a-storm',
   'dont-replace-your-roof-restore-it-instead',

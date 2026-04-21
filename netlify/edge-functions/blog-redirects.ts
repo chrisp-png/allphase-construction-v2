@@ -61,7 +61,6 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/wind-mitigation-for-south-florida-roofs-save-on-insurance-and-protect-your-home': { to: '/blog/wind-mitigation-roof-south-florida', status: 301 },
   '/blog/what-makes-a-roof-hurricane-resistant': { to: '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes', status: 301 },
   '/blog/top-roofers-in-broward-and-palm-beach-counties': { to: '/blog', status: 301 },
-  '/blog/choosing-between-roof-repair-and-full-replacement': { to: '/blog', status: 301 },
 
   // GSC Redirect error fixes — 2026-04-13
   '/blog/march-13th-weekly-newsletter': { to: '/blog', status: 301 },
