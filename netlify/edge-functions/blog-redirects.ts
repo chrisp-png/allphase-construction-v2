@@ -25,7 +25,6 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/clay-roof-tiles-an-important-chapter-in-the-history-of-roofing-and-a-popular-choice-for-residential-roofs-today': { to: '/blog/why-choose-tile-roofing-in-south-florida', status: 301 },
   '/blog/is-tar-still-used-in-2024-to-seal-a-roof': { to: '/blog', status: 301 },
   '/blog/services-that-all-phase-construction-provides': { to: '/blog', status: 301 },
-  '/blog/common-roofing-myths-that-homeowners-still-believe': { to: '/blog', status: 301 },
   '/blog/helping-your-association-plan-for-roofing-budgets-with-confidence': { to: '/blog', status: 301 },
 
   // Legacy WordPress blog redirects
