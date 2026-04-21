@@ -76,6 +76,7 @@ const KNOWN_SUPABASE_SLUGS = [
   'the-pros-and-cons-of-flat-roofs-for-florida-homes',
   'visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview',
   'what-is-roof-underlayment-and-why-does-it-matter',
+  'what-makes-a-roof-hurricane-resistant',
   'what-south-florida-homeowners-get-wrong-about-roof-replacement',
   'whats-the-lifespan-of-a-solar-ready-roof',
   'why-palm-beach-and-broward-county-building-codes-differ-a-south-florida-guide-by-all-phase-construction-usa',

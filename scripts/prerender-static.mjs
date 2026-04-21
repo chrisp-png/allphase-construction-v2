@@ -2707,7 +2707,7 @@ ${companyAuthorityFooter()}
   // every known Supabase-only slug:
   //   1. Tries to query Supabase for the authoritative list + rich content
   //      (meta_title, meta_description, excerpt, full HTML content).
-  //   2. Falls back to a hardcoded list of 34 known Supabase-only slugs
+  //   2. Falls back to a hardcoded list of 35 known Supabase-only slugs
   //      (derived from the 2026-04-17 Screaming Frog SPA-shell audit) so
   //      the build keeps working even if Supabase is unreachable.
   //
@@ -2716,7 +2716,7 @@ ${companyAuthorityFooter()}
   console.log('\n🔍 Generating Blog Post Pages from Supabase (SPA-shell victims)...\n');
 
   try {
-    // Authoritative fallback list — 34 Supabase-only slugs returning SPA
+    // Authoritative fallback list — 35 Supabase-only slugs returning SPA
     // shell per the 2026-04-17 SF crawl. Keeps the build resilient to
     // Supabase being unreachable at build time.
     const KNOWN_SUPABASE_SLUGS = [
@@ -2750,6 +2750,7 @@ ${companyAuthorityFooter()}
       'the-pros-and-cons-of-flat-roofs-for-florida-homes',
       'visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview',
       'what-is-roof-underlayment-and-why-does-it-matter',
+      'what-makes-a-roof-hurricane-resistant',
       'what-south-florida-homeowners-get-wrong-about-roof-replacement',
       'whats-the-lifespan-of-a-solar-ready-roof',
       'why-palm-beach-and-broward-county-building-codes-differ-a-south-florida-guide-by-all-phase-construction-usa',
@@ -2771,7 +2772,7 @@ ${companyAuthorityFooter()}
     // supabaseCacheRows: slug -> full BlogPost-shaped row for the client-side
     // build cache (dist/blog-supabase-cache.json). Serves as BlogPostPage's
     // tertiary fallback when the runtime Supabase call fails (RLS blip, DNS,
-    // CORS edge case) — keeps the 34 KNOWN_SUPABASE_SLUGS legible to users
+    // CORS edge case) — keeps the 35 KNOWN_SUPABASE_SLUGS legible to users
     // and pinned to the deploy they landed on. Read by PR-17.
     const supabaseCacheRows = {};
     let supabaseReachable = false;
@@ -2861,7 +2862,7 @@ ${companyAuthorityFooter()}
     }
 
     // Build the slug set: union of Supabase slugs (if reachable) + hardcoded fallback.
-    // Hardcoded fallback guarantees we fix the 34 known victims even if Supabase is down.
+    // Hardcoded fallback guarantees we fix the 35 known victims even if Supabase is down.
     const slugSet = new Set(KNOWN_SUPABASE_SLUGS);
     Object.keys(postMetadata).forEach(slug => slugSet.add(slug));
 
