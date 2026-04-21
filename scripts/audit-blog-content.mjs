@@ -54,6 +54,7 @@ const KNOWN_SUPABASE_SLUGS = [
   'complete-roof-replacement-process-10-steps',
   'do-i-need-a-roof-inspection-after-a-storm',
   'dont-replace-your-roof-restore-it-instead',
+  'how-climate-change-is-impacting-roofing-choices-in-coastal-areas',
   'how-solar-impacts-property-taxes-in-florida',
   'how-to-choose-roofing-materials-for-large-scale-projects',
   'how-to-combine-solar-and-a-new-roof-for-maximum-efficiency',

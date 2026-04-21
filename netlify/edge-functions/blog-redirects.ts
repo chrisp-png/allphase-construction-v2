@@ -94,7 +94,6 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/one-contractor-or-multiple-why-a-full-service-contractor-is-best-for-your-south-florida-roof': { to: '/blog', status: 301 },
   '/blog/choosing-the-best-roofing-materials-for-your-boca-raton-home-with-all-phase-construction-usa': { to: '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes', status: 301 },
   '/blog/all-phase-construction-usa-roofing-experts-in-deerfield-beach-fl-3': { to: '/blog', status: 301 },
-  '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas': { to: '/blog', status: 301 },
   '/blog/the-roi-of-installing-solar-panels-in-florida': { to: '/blog', status: 301 },
 
   // Blog consolidation -- 2026-04-20
