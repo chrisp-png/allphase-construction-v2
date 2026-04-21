@@ -2707,7 +2707,7 @@ ${companyAuthorityFooter()}
   // every known Supabase-only slug:
   //   1. Tries to query Supabase for the authoritative list + rich content
   //      (meta_title, meta_description, excerpt, full HTML content).
-  //   2. Falls back to a hardcoded list of 28 known Supabase-only slugs
+  //   2. Falls back to a hardcoded list of 33 known Supabase-only slugs
   //      (derived from the 2026-04-17 Screaming Frog SPA-shell audit) so
   //      the build keeps working even if Supabase is unreachable.
   //
@@ -2716,14 +2716,17 @@ ${companyAuthorityFooter()}
   console.log('\n🔍 Generating Blog Post Pages from Supabase (SPA-shell victims)...\n');
 
   try {
-    // Authoritative fallback list — 28 Supabase-only slugs returning SPA
+    // Authoritative fallback list — 33 Supabase-only slugs returning SPA
     // shell per the 2026-04-17 SF crawl. Keeps the build resilient to
     // Supabase being unreachable at build time.
     const KNOWN_SUPABASE_SLUGS = [
       'best-roofing-companies-south-florida',
       'can-a-screen-room-add-to-my-property-value',
+      'can-i-replace-my-bad-fascia-without-damaging-or-replacing-my-roof-in-south-florida',
+      'certified-vs-licensed-roofer-florida',
       'complete-roof-replacement-process-10-steps',
       'do-i-need-a-roof-inspection-after-a-storm',
+      'dont-replace-your-roof-restore-it-instead',
       'how-solar-impacts-property-taxes-in-florida',
       'how-to-choose-roofing-materials-for-large-scale-projects',
       'how-to-combine-solar-and-a-new-roof-for-maximum-efficiency',
@@ -2732,7 +2735,9 @@ ${companyAuthorityFooter()}
       'how-to-protect-roof-decking-from-moisture-damage-during-construction',
       'how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive',
       'metal-roof-vs-shingles-florida-2026',
+      'metal-roof-vs-tile-roof-south-florida-hurricanes',
       'metal-roofing-south-florida-what-homeowners-need-to-know',
+      'professional-roof-inspection-south-florida',
       'residential-flat-roofs-types-options-and-florida-considerations',
       'roof-pricing-financing-guide',
       'roof-replacement-cost-broward-county-2026',
@@ -2765,7 +2770,7 @@ ${companyAuthorityFooter()}
     // supabaseCacheRows: slug -> full BlogPost-shaped row for the client-side
     // build cache (dist/blog-supabase-cache.json). Serves as BlogPostPage's
     // tertiary fallback when the runtime Supabase call fails (RLS blip, DNS,
-    // CORS edge case) — keeps the 28 KNOWN_SUPABASE_SLUGS legible to users
+    // CORS edge case) — keeps the 33 KNOWN_SUPABASE_SLUGS legible to users
     // and pinned to the deploy they landed on. Read by PR-17.
     const supabaseCacheRows = {};
     let supabaseReachable = false;
@@ -2855,7 +2860,7 @@ ${companyAuthorityFooter()}
     }
 
     // Build the slug set: union of Supabase slugs (if reachable) + hardcoded fallback.
-    // Hardcoded fallback guarantees we fix the 28 known victims even if Supabase is down.
+    // Hardcoded fallback guarantees we fix the 33 known victims even if Supabase is down.
     const slugSet = new Set(KNOWN_SUPABASE_SLUGS);
     Object.keys(postMetadata).forEach(slug => slugSet.add(slug));
 
