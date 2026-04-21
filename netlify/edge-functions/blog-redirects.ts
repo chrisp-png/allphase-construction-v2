@@ -99,6 +99,12 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/how-climate-change-is-impacting-roofing-choices-in-coastal-areas': { to: '/blog', status: 301 },
   '/blog/the-roi-of-installing-solar-panels-in-florida': { to: '/blog', status: 301 },
 
+  // Blog consolidation -- 2026-04-20
+  // Redirect the live Supabase-backed /blog/best-roofing-companies-south-florida
+  // to the stronger, native /south-florida-roofing-reviews page (consolidates
+  // duplicate intent and concentrates link equity on the canonical URL).
+  '/blog/best-roofing-companies-south-florida': { to: '/south-florida-roofing-reviews', status: 301 },
+
   // NOTE: The following blog posts are LIVE (Supabase CMS) and served by the SPA.
   // They should NOT be in this redirect map:
   //   /blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida
