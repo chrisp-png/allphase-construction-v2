@@ -75,6 +75,7 @@ const KNOWN_SUPABASE_SLUGS = [
   'the-importance-of-proper-flashing-installation-to-prevent-roof-leaks',
   'the-pros-and-cons-of-architectural-shingles-vs-three-tab-shingles',
   'the-pros-and-cons-of-flat-roofs-for-florida-homes',
+  'the-role-of-roof-pitch-in-water-drainage-and-design',
   'visualize-your-new-roof-with-ai-powered-tools-why-you-should-ask-your-contractor-for-a-preview',
   'what-is-roof-underlayment-and-why-does-it-matter',
   'what-makes-a-roof-hurricane-resistant',
