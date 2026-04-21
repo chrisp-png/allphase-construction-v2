@@ -89,7 +89,6 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   '/blog/what-type-of-screen-should-i-install': { to: '/blog', status: 301 },
   '/blog/tips-for-preparing-for-the-construction-of-your-new-roof': { to: '/blog', status: 301 },
   '/blog/top-5-benefits-of-installing-a-screen-room-in-florida': { to: '/blog', status: 301 },
-  '/blog/the-role-of-roof-pitch-in-water-drainage-and-design': { to: '/blog', status: 301 },
   '/blog/all-phase-construction-unique-benefits': { to: '/blog', status: 301 },
   '/blog/one-contractor-or-multiple-why-a-full-service-contractor-is-best-for-your-south-florida-roof': { to: '/blog', status: 301 },
   '/blog/choosing-the-best-roofing-materials-for-your-boca-raton-home-with-all-phase-construction-usa': { to: '/blog/metal-roof-vs-tile-roof-south-florida-hurricanes', status: 301 },
