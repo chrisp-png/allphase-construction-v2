@@ -2059,6 +2059,153 @@ function writeToPublicAndDist(relativePath, content) {
 /**
  * Generate all static HTML files
  */
+
+// =====================================================================
+// SPA-shell-victim verifier (Diagnostic — PR-24)
+// =====================================================================
+// Asserts that each prerendered "victim" slug — the 44 city / neighborhood /
+// sub-service URLs flagged by the 2026-04-26 Screaming Frog crawl as sharing
+// the generic Vite-shell title — actually has a unique, non-default <title>
+// in dist/<slug>/index.html after the prerender pass completes.
+//
+// If any are missing the dist file or are still serving the Vite shell
+// title, the build fails LOUDLY with a precise list — surfacing the real
+// root cause in the Netlify deploy log instead of letting partial deploys
+// ship silently.
+//
+// Set SPA_SHELL_VERIFIER=warn to downgrade to warning-only for an
+// emergency override. Default behavior is fail.
+// =====================================================================
+
+const SPA_SHELL_VICTIM_SLUGS = [
+  // Boca Raton (5)
+  'boca-raton-luxury-estate-roofing',
+  'boca-raton-commercial-roofing',
+  'boca-raton-metal-roofing',
+  'boca-raton-tile-re-roof',
+  'boca-raton-wind-mitigation-roofing',
+  // Boynton Beach (5)
+  'boynton-beach-55-plus-community-roofing',
+  'boynton-beach-commercial-roofing',
+  'boynton-beach-oceanfront-roofing',
+  'boynton-beach-roof-insurance-claim',
+  'boynton-beach-tile-roof-replacement',
+  // Boca + Boynton neighborhood / community
+  'broken-sound-boca-raton-roofing',
+  'canyon-lakes-boynton-beach-roofing',
+  'coastal-boca-raton-roofing-contractor',
+  'kings-point-boca-roofing-contractor',
+  'royal-palm-yacht-club-boca-raton-roofing',
+  'st-andrews-country-club-boca-raton-roofing',
+  // Deerfield Beach (1)
+  'deerfield-beach-commercial-roofing',
+  // Delray Beach + Highland Beach (4)
+  'delray-beach-roof-replacement',
+  'delray-beach-tile-roof-contractor',
+  'highland-beach-roof-replacement',
+  'historic-delray-roofing',
+  // Lake Worth Beach (4)
+  'lake-worth-beach-coastal-roofing',
+  'lake-worth-beach-flat-roof-replacement',
+  'lake-worth-beach-historic-roofing',
+  'lake-worth-beach-roof-insurance-claim',
+  // Lighthouse Point (2)
+  'lighthouse-point-roof-replacement',
+  'lighthouse-point-tile-roof-replacement',
+  // Palm Beach County / Oceanfront (2)
+  'oceanfront-roof-replacement-palm-beach-county',
+  'palm-beach-county-roof-insurance-claim',
+  // Pompano Beach (3)
+  'palm-aire-pompano-beach-roofing',
+  'pompano-beach-commercial-roofing',
+  'pompano-beach-tile-roof-replacement',
+  // Wellington (5)
+  'olympia-wellington-roofing',
+  'wellington-equestrian-estate-roofing',
+  'wellington-hoa-roof-replacement',
+  'wellington-metal-roofing',
+  'wellington-roof-insurance-claim',
+  'wellington-tile-roof-replacement',
+  // West Boca Raton (1)
+  'west-boca-raton-roof-replacement',
+  // West Palm Beach (5)
+  'west-palm-beach-commercial-roofing',
+  'west-palm-beach-historic-roofing',
+  'west-palm-beach-roof-insurance-claim',
+  'west-palm-beach-tile-roof-replacement',
+  'west-palm-beach-waterfront-roofing',
+];
+
+// Title patterns that indicate the prerender did NOT successfully replace
+// the Vite shell title — i.e. Netlify is serving the bare SPA shell for
+// this slug. Anything matching these is a verifier failure.
+const VITE_SHELL_TITLE_PATTERNS = [
+  /^Roofing Contractor \| Broward & Palm Beach \| All Phase USA$/,
+  /^All Phase Construction USA$/, // legacy fallback
+];
+
+function verifySpaShellArtifacts(slugs) {
+  const mode = (process.env.SPA_SHELL_VERIFIER || 'fail').toLowerCase();
+  const ok = [];
+  const missing = [];
+  const stale = [];
+
+  for (const slug of slugs) {
+    const filePath = path.join(distDir, slug, 'index.html');
+    if (!fs.existsSync(filePath)) {
+      missing.push(slug);
+      continue;
+    }
+    const html = fs.readFileSync(filePath, 'utf-8');
+    const titleMatch = html.match(/<title>([^<]*)<\/title>/);
+    const title = titleMatch ? titleMatch[1].trim() : '(no <title> tag)';
+    const isStale = VITE_SHELL_TITLE_PATTERNS.some((re) => re.test(title));
+    if (isStale) {
+      stale.push({ slug, title });
+    } else {
+      ok.push({ slug, title });
+    }
+  }
+
+  console.log('\n' + '='.repeat(70));
+  console.log(`🔍  SPA-shell-victim verifier (mode=${mode})`);
+  console.log('='.repeat(70));
+  console.log(`   Checked: ${slugs.length} slugs`);
+  console.log(`   ✅ Unique title:        ${ok.length}`);
+  console.log(`   ❌ Missing dist file:   ${missing.length}`);
+  console.log(`   ❌ Vite-shell title:    ${stale.length}`);
+
+  if (missing.length) {
+    console.error('\n❌ MISSING dist/<slug>/index.html (no prerender output written):');
+    for (const s of missing) console.error(`   - ${s}`);
+  }
+  if (stale.length) {
+    console.error('\n❌ STALE Vite-shell title (prerender wrote file but title was not replaced):');
+    for (const { slug, title } of stale) {
+      console.error(`   - ${slug}    title="${title}"`);
+    }
+  }
+
+  const failed = missing.length + stale.length;
+  if (failed === 0) {
+    console.log(`\n✅  All ${slugs.length} SPA-shell-victim slugs prerendered with unique titles.`);
+    console.log('='.repeat(70) + '\n');
+    return;
+  }
+
+  if (mode === 'warn') {
+    console.warn(`\n⚠️  SPA_SHELL_VERIFIER=warn — ${failed} failure(s) found but build will continue.`);
+    console.log('='.repeat(70) + '\n');
+    return;
+  }
+
+  console.log('='.repeat(70) + '\n');
+  throw new Error(
+    `SPA-shell-victim verifier FAILED: ${missing.length} missing, ${stale.length} stale. ` +
+    `See diagnostic output above. Set SPA_SHELL_VERIFIER=warn to override.`
+  );
+}
+
 async function generateStaticFiles() {
   console.log('📋  Generating 3-Silo Lead Generation Architecture...\n');
 
@@ -6358,6 +6505,11 @@ console.log(`\n✅ Prerender Complete! Generated ${totalPages} fully-branded HTM
   console.log(`   ✅ HVHZ certification messaging`);
   console.log(`   ✅ "Serving from Deerfield Beach HQ" context`);
   console.log(`   ✅ Company authority footer (250+ words)`);
+  // ===== Diagnostic verification =====
+  // Fail the build loudly if any SPA-shell-victim slug is still serving
+  // the Vite shell title. See SPA_SHELL_VICTIM_SLUGS comment for context.
+  verifySpaShellArtifacts(SPA_SHELL_VICTIM_SLUGS);
+
 }
 
 // Run the generator
