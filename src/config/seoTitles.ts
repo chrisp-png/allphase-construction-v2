@@ -34,6 +34,16 @@ export interface SEOMetadata {
   ogTitle?: string;
   ogDescription?: string;
   ogUrl?: string;
+  /**
+   * True when generateSEOMetadata had no explicit lookup for the path and
+   * returned the generic fallback (line ~893). Consumers (NuclearMetadata)
+   * MUST NOT overwrite document.title/description with a fallback object —
+   * doing so stomps the correct prerendered title on URLs that have
+   * dist/<slug>/index.html but no explicit React Route or seoTitles entry.
+   * (Manifests as the 44 SPA-shell-victim duplicate titles in JS-rendered
+   * crawls — Googlebot, Screaming Frog with rendering=JavaScript.)
+   */
+  isFallback?: boolean;
 }
 
 /**
@@ -417,6 +427,234 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from',
     canonical: 'https://allphaseconstructionfl.com/pre-listing-roof-certification-coconut-creek'
   },
+  // === 44 SPA-shell-victim slugs (PR fixing NuclearMetadata stomp) ===
+  // These slugs have prerendered HTML in dist/<slug>/index.html written by
+  // scripts/prerender-static.mjs but no explicit React Route — they hit the
+  // catchall and StaticContentPage. Without an entry here, generateSEOMetadata
+  // falls through to the generic fallback and NuclearMetadata stomps the
+  // correct prerendered title with that fallback during JS-rendered crawls
+  // (Googlebot, Screaming Frog with rendering=JavaScript). Mirroring the data
+  // from prerender-static.mjs keeps both code paths in sync.
+  '/boca-raton-luxury-estate-roofing': {
+    title: 'Boca Raton Luxury Estate Roofing | All Phase USA',
+    description: 'Luxury estate roofing in Boca Raton — The Sanctuary, Le Lac, St. Andrews Country Club. Premium tile, metal, and flat systems. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-luxury-estate-roofing'
+  },
+  '/boca-raton-commercial-roofing': {
+    title: 'Boca Raton Commercial Roofing | All Phase USA',
+    description: 'Commercial roofing in Boca Raton, FL. Flat roof replacement & repair for Yamato Rd, Glades Rd, and Town Center. Dual licensed, PBC wind-code.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-commercial-roofing'
+  },
+  '/boca-raton-metal-roofing': {
+    title: 'Boca Raton Metal Roofing | All Phase USA',
+    description: 'Metal roofing in Boca Raton, FL. Standing-seam aluminum and steel for residential and commercial. Salt-rated coastal options. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-metal-roofing'
+  },
+  '/boca-raton-tile-re-roof': {
+    title: 'Boca Raton Tile Re-Roof | All Phase USA',
+    description: 'Tile re-roofing in Boca Raton, FL. Clay and concrete tile, full underlayment replacement, PBC wind-code compliant. Free inspection, insurance-ready.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-tile-re-roof'
+  },
+  '/boca-raton-wind-mitigation-roofing': {
+    title: 'Boca Raton Wind Mitigation Roofing | All Phase USA',
+    description: 'Wind mitigation roofing in Boca Raton, FL. PBC wind-code compliant assemblies, roof-to-wall connections, and insurance credits. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-wind-mitigation-roofing'
+  },
+  '/boynton-beach-55-plus-community-roofing': {
+    title: 'Boynton Beach 55+ Community Roofing | All Phase USA',
+    description: 'Roof replacement for 55+ communities in Boynton Beach — The Cascades, Valencia Lakes, Hunters Run. HOA coordinated, PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/boynton-beach-55-plus-community-roofing'
+  },
+  '/boynton-beach-commercial-roofing': {
+    title: 'Boynton Beach Commercial Roofing | All Phase USA',
+    description: 'Commercial roofing in Boynton Beach, FL. Flat roof replacement and repair for Congress Ave, Boynton Beach Blvd, and retail centers. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/boynton-beach-commercial-roofing'
+  },
+  '/boynton-beach-oceanfront-roofing': {
+    title: 'Boynton Beach Oceanfront Roofing | All Phase USA',
+    description: 'Oceanfront roofing in Boynton Beach, FL. Salt-air rated systems for the A1A corridor near Oceanfront Park. PBC wind-code compliant. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/boynton-beach-oceanfront-roofing'
+  },
+  '/boynton-beach-roof-insurance-claim': {
+    title: 'Boynton Beach Roof Insurance Claim | All Phase USA',
+    description: 'Boynton Beach roof insurance claim assistance. 41% flooding risk, full documentation, adjuster coordination. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/boynton-beach-roof-insurance-claim'
+  },
+  '/boynton-beach-tile-roof-replacement': {
+    title: 'Boynton Beach Tile Roof Replacement | All Phase USA',
+    description: 'Tile roof replacement in Boynton Beach, FL. Clay and concrete tile, full underlayment tear-off, stainless battens. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/boynton-beach-tile-roof-replacement'
+  },
+  '/broken-sound-boca-raton-roofing': {
+    title: 'Broken Sound Boca Raton Roofing | All Phase USA',
+    description: 'Roof replacement in Broken Sound, Boca Raton FL. Golf course community, tile and flat roof systems, HOA-coordinated. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/broken-sound-boca-raton-roofing'
+  },
+  '/canyon-lakes-boynton-beach-roofing': {
+    title: 'Canyon Lakes Boynton Beach Roofing | All Phase USA',
+    description: 'Roof replacement in Canyon Lakes, Boynton Beach FL. Upscale gated community, complex tile systems, HOA-coordinated. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/canyon-lakes-boynton-beach-roofing'
+  },
+  '/coastal-boca-raton-roofing-contractor': {
+    title: 'Coastal Boca Raton Roofing Contractor | All Phase USA',
+    description: 'Salt-air roof replacement and repair for east Boca Raton. Stainless fasteners, peel-and-stick underlayment, PBC wind-code compliant. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/coastal-boca-raton-roofing-contractor'
+  },
+  '/kings-point-boca-roofing-contractor': {
+    title: 'Kings Point Boca Roofing Contractor | All Phase USA',
+    description: 'Kings Point and West Boca 55+ community roofing. Condo, villa, and single-family re-roofs coordinated with association approval. PBC wind-code certified.',
+    canonical: 'https://allphaseconstructionfl.com/kings-point-boca-roofing-contractor'
+  },
+  '/royal-palm-yacht-club-boca-raton-roofing': {
+    title: 'Royal Palm Yacht Club Boca Roofing | All Phase',
+    description: 'Roof replacement in Royal Palm Yacht & Country Club, Boca Raton FL. Luxury waterfront estates, premium materials, HOA-coordinated. PBC wind-code.',
+    canonical: 'https://allphaseconstructionfl.com/royal-palm-yacht-club-boca-raton-roofing'
+  },
+  '/st-andrews-country-club-boca-raton-roofing': {
+    title: 'St. Andrews Country Club Boca Roofing | All Phase',
+    description: 'Roof replacement in St. Andrews Country Club, West Boca Raton FL. Estate tile re-roofs, HOA-coordinated, PBC wind-code compliant. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/st-andrews-country-club-boca-raton-roofing'
+  },
+  '/deerfield-beach-commercial-roofing': {
+    title: 'Deerfield Beach Commercial Roofing | All Phase USA',
+    description: 'Commercial roofing in Deerfield Beach, FL. Flat roof replacement & repair for Hillsboro Blvd, Powerline Rd, and I-95. HVHZ-compliant, dual licensed.',
+    canonical: 'https://allphaseconstructionfl.com/deerfield-beach-commercial-roofing'
+  },
+  '/delray-beach-roof-replacement': {
+    title: 'Delray Beach Roof Replacement | All Phase USA',
+    description: 'Roof replacement in Delray Beach, FL. Tile, metal, and shingle systems built to Palm Beach County wind code. Licensed, insured, insurance-claim ready.',
+    canonical: 'https://allphaseconstructionfl.com/delray-beach-roof-replacement'
+  },
+  '/delray-beach-tile-roof-contractor': {
+    title: 'Delray Beach Tile Roof Contractor | All Phase USA',
+    description: 'Clay and concrete tile roofing in Delray Beach, FL. Historic re-roofs, coastal tile installs, HOA-compliant. Palm Beach County wind-code certified.',
+    canonical: 'https://allphaseconstructionfl.com/delray-beach-tile-roof-contractor'
+  },
+  '/highland-beach-roof-replacement': {
+    title: 'Highland Beach Roof Replacement | All Phase USA',
+    description: 'Salt-air roof replacement for Highland Beach FL oceanfront homes. Stainless fasteners, peel-and-stick underlayment, PBC wind-code. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/highland-beach-roof-replacement'
+  },
+  '/historic-delray-roofing': {
+    title: 'Historic Delray Beach Roofing | All Phase USA',
+    description: 'Historic district roofing in Delray Beach — Old School Square, Pineapple Grove, Atlantic Ave. Period-correct tile and shingle re-roofs, HOA approved.',
+    canonical: 'https://allphaseconstructionfl.com/historic-delray-roofing'
+  },
+  '/lake-worth-beach-coastal-roofing': {
+    title: 'Lake Worth Beach Coastal Roofing | All Phase USA',
+    description: 'Coastal roofing in Lake Worth Beach, FL. Salt-air rated systems for properties east of I-95. Marine-grade fasteners, PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/lake-worth-beach-coastal-roofing'
+  },
+  '/lake-worth-beach-flat-roof-replacement': {
+    title: 'Lake Worth Beach Flat Roof Replacement | All Phase USA',
+    description: 'Flat roof replacement in Lake Worth Beach, FL. Mid-century homes, commercial buildings, and mixed-use structures. TPO, modified-bitumen, built-up systems.',
+    canonical: 'https://allphaseconstructionfl.com/lake-worth-beach-flat-roof-replacement'
+  },
+  '/lake-worth-beach-historic-roofing': {
+    title: 'Lake Worth Beach Historic District Roofing | All Phase USA',
+    description: 'Historic district roofing in Lake Worth Beach, FL. Period-correct tile and shingle re-roofs for 1920s–1950s bungalows. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/lake-worth-beach-historic-roofing'
+  },
+  '/lake-worth-beach-roof-insurance-claim': {
+    title: 'Lake Worth Beach Roof Insurance Claim | All Phase USA',
+    description: 'Lake Worth Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/lake-worth-beach-roof-insurance-claim'
+  },
+  '/lighthouse-point-roof-replacement': {
+    title: 'Lighthouse Point Roof Replacement | All Phase USA',
+    description: 'Roof replacement in Lighthouse Point, FL. Waterfront and inland homes. HVHZ-compliant, marine-grade materials. Minutes from our Deerfield Beach HQ.',
+    canonical: 'https://allphaseconstructionfl.com/lighthouse-point-roof-replacement'
+  },
+  '/lighthouse-point-tile-roof-replacement': {
+    title: 'Lighthouse Point Tile Roof Replacement | All Phase USA',
+    description: 'Tile roof replacement in Lighthouse Point, FL. Clay and concrete tile, full underlayment tear-off, stainless battens. HVHZ-compliant.',
+    canonical: 'https://allphaseconstructionfl.com/lighthouse-point-tile-roof-replacement'
+  },
+  '/oceanfront-roof-replacement-palm-beach-county': {
+    title: 'Oceanfront Roofing in Palm Beach County | All Phase',
+    description: 'Oceanfront roof replacement across Palm Beach County — Highland Beach, Boca Raton, Delray Beach. Salt-rated, PBC wind-code compliant, insurance-ready.',
+    canonical: 'https://allphaseconstructionfl.com/oceanfront-roof-replacement-palm-beach-county'
+  },
+  '/palm-beach-county-roof-insurance-claim': {
+    title: 'Palm Beach County Roof Insurance Claim | All Phase USA',
+    description: 'Palm Beach County roof insurance claim assistance. Adjuster coordination, full documentation, wind mitigation credits. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/palm-beach-county-roof-insurance-claim'
+  },
+  '/palm-aire-pompano-beach-roofing': {
+    title: 'Palm Aire Pompano Beach Roofing | All Phase USA',
+    description: 'Roof replacement in Palm Aire, Pompano Beach FL. 1970s-era tile and flat roof systems. HOA-coordinated, HVHZ-compliant. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/palm-aire-pompano-beach-roofing'
+  },
+  '/pompano-beach-commercial-roofing': {
+    title: 'Pompano Beach Commercial Roofing | All Phase USA',
+    description: 'Commercial roofing in Pompano Beach, FL. Flat roof replacement & repair for Atlantic Blvd, Copans Rd, and Sample Rd. HVHZ-compliant, dual licensed.',
+    canonical: 'https://allphaseconstructionfl.com/pompano-beach-commercial-roofing'
+  },
+  '/pompano-beach-tile-roof-replacement': {
+    title: 'Pompano Beach Tile Roof Replacement | All Phase USA',
+    description: 'Tile roof replacement in Pompano Beach, FL. Palm Aire, Cypress Lakes, and citywide. Full underlayment tear-off, HVHZ-compliant.',
+    canonical: 'https://allphaseconstructionfl.com/pompano-beach-tile-roof-replacement'
+  },
+  '/olympia-wellington-roofing': {
+    title: 'Olympia Wellington Roofing | All Phase USA',
+    description: 'Roof replacement in Olympia, Wellington FL. Village-by-village HOA coordination, tile re-roofs, PBC wind-code compliant. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/olympia-wellington-roofing'
+  },
+  '/wellington-equestrian-estate-roofing': {
+    title: 'Wellington Equestrian Estate Roofing | All Phase USA',
+    description: 'Roofing for Wellington equestrian estates and large-acreage properties near the International Polo Club. PBC wind-code compliant. Free inspection.',
+    canonical: 'https://allphaseconstructionfl.com/wellington-equestrian-estate-roofing'
+  },
+  '/wellington-hoa-roof-replacement': {
+    title: 'Wellington HOA Roof Replacement | All Phase USA',
+    description: 'HOA-coordinated roof replacement across Wellington FL. 80+ communities served. Color match, architectural review, phased scheduling. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/wellington-hoa-roof-replacement'
+  },
+  '/wellington-metal-roofing': {
+    title: 'Wellington Metal Roofing | All Phase USA',
+    description: 'Metal roofing in Wellington, FL. Standing-seam and corrugated systems for homes, barns, and equestrian properties. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/wellington-metal-roofing'
+  },
+  '/wellington-roof-insurance-claim': {
+    title: 'Wellington Roof Insurance Claim | All Phase USA',
+    description: 'Wellington FL roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/wellington-roof-insurance-claim'
+  },
+  '/wellington-tile-roof-replacement': {
+    title: 'Wellington Tile Roof Replacement | All Phase USA',
+    description: 'Tile roof replacement in Wellington, FL. Concrete and clay tile, full underlayment tear-off, HOA-compliant. PBC wind-code certified.',
+    canonical: 'https://allphaseconstructionfl.com/wellington-tile-roof-replacement'
+  },
+  '/west-boca-raton-roof-replacement': {
+    title: 'West Boca Raton Roof Replacement | All Phase USA',
+    description: 'Roof replacement in West Boca Raton, FL. Serving Mission Bay, Boca Del Mar, Sandalfoot Cove, and the 441/Glades corridor. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/west-boca-raton-roof-replacement'
+  },
+  '/west-palm-beach-commercial-roofing': {
+    title: 'West Palm Beach Commercial Roofing | All Phase USA',
+    description: 'Commercial roofing in West Palm Beach, FL. Downtown, Okeechobee corridor, Rosemary Square area. TPO, modified-bitumen, built-up systems. Dual licensed.',
+    canonical: 'https://allphaseconstructionfl.com/west-palm-beach-commercial-roofing'
+  },
+  '/west-palm-beach-historic-roofing': {
+    title: 'West Palm Beach Historic District Roofing | All Phase USA',
+    description: 'Historic district roofing in West Palm Beach — Flamingo Park, El Cid, Northwood. Period-correct tile and shingle re-roofs. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/west-palm-beach-historic-roofing'
+  },
+  '/west-palm-beach-roof-insurance-claim': {
+    title: 'West Palm Beach Roof Insurance Claim | All Phase USA',
+    description: 'West Palm Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
+    canonical: 'https://allphaseconstructionfl.com/west-palm-beach-roof-insurance-claim'
+  },
+  '/west-palm-beach-tile-roof-replacement': {
+    title: 'West Palm Beach Tile Roof Replacement | All Phase USA',
+    description: 'Tile roof replacement in West Palm Beach, FL. Historic barrel tile and modern concrete tile. Full underlayment tear-off, PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/west-palm-beach-tile-roof-replacement'
+  },
+  '/west-palm-beach-waterfront-roofing': {
+    title: 'West Palm Beach Waterfront Roofing | All Phase USA',
+    description: 'Waterfront roofing in West Palm Beach, FL. Intracoastal and lagoon-side homes. Salt-air rated, marine-grade fasteners. PBC wind-code compliant.',
+    canonical: 'https://allphaseconstructionfl.com/west-palm-beach-waterfront-roofing'
+  },
 };
 
 /**
@@ -659,10 +897,15 @@ export function generateSEOMetadata(path: string): SEOMetadata {
 
   // Fallback - ONLY for unmatched routes (not location pages)
   // Ensure canonical uses normalizedPath and strips trailing slash (except root)
+  // isFallback: true tells NuclearMetadata to NOT stomp the correct prerendered
+  // title with these generic placeholders. Without that flag, any URL that has
+  // a dist/<slug>/index.html but no explicit React Route + no seoTitles entry
+  // gets its prerendered <title> overwritten in the live DOM during JS render.
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
     description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605.',
-    canonical: `https://allphaseconstructionfl.com${cleanPath}`
+    canonical: `https://allphaseconstructionfl.com${cleanPath}`,
+    isFallback: true
   };
 }
