@@ -170,11 +170,17 @@ Source of truth: **`src/lib/locationSeo.ts` → `buildLocationSeo(location)`** r
 
 Other meta sources:
 
-- `src/config/seoTitles.ts` — `generateSEOMetadata()` — runtime React meta (74 SEO_TITLES entries, one per named route)
+- `src/config/seoTitles.ts` — `generateSEOMetadata()` — runtime React meta (118 SEO_TITLES entries: 74 named routes + 44 SPA-shell-victim slugs added in PR-25 — see §17)
 - `src/components/NuclearMetadata.tsx` — **SINGLE OWNER** for runtime `<title>` and critical meta. Introduced to prevent `react-helmet-async` double-renders. When present on a page, no other component should render `<Helmet>` with `<title>`.
 - Per-Location `titleOverride`, `descriptionOverride`, `canonicalOverride` on records in `src/data/locations.ts`
 
 **56 files use `react-helmet-async`.** Most MoneyPages render `<Helmet>` for description/OG. Titles should be owned by NuclearMetadata where present.
+
+### The `isFallback` contract (PR-25)
+
+When `generateSEOMetadata(path)` falls through to the generic fallback at the bottom of `seoTitles.ts`, it MUST set `isFallback: true` on the returned `SEOMetadata` object. `NuclearMetadata.tsx` reads that flag and prefers `window.__PRERENDERED_TITLE__` / `window.__PRERENDERED_DESC__` over the fallback values. This is what protects prerendered-but-unrouted URLs (the 44 SPA-shell-victim slugs — see §17) from having their correct title stomped during JS-rendered crawls (Googlebot 2026 renders JS; Screaming Frog with rendering=JavaScript renders JS).
+
+If you add a new fallback path inside `generateSEOMetadata`, set `isFallback: true` on it. Failing to do so re-introduces the title-stomp regression PR-25 fixed.
 
 ---
 
@@ -414,6 +420,16 @@ They re-trigger GSC "multiple aggregate ratings" errors on best-roofers pages. O
 
 Flipping it has caused full-site redirect loops twice. Don't touch without extreme care.
 
+### 🟡 Adding a new prerendered slug requires three coordinated edits
+
+A new slug typed only into `prerender-static.mjs` writes a static `dist/<slug>/index.html` but is INVISIBLE to React. To survive JS-rendered crawls (Googlebot 2026, Screaming Frog with rendering=JavaScript), the slug also needs:
+
+1. **Either** an explicit `<Route>` in `App.tsx` **or** a registered fallback that `StaticContentPage` handles via `__PRERENDERED_HTML__` (the catchall already does this — check that the prerender writes `<div id="seo-static">…</div>` into the HTML or the catchall has nothing to render).
+2. **An entry in `SEO_TITLES`** in `src/config/seoTitles.ts` mirroring the prerender data (title, description, canonical). Without this, `NuclearMetadata` calls `generateSEOMetadata`, the lookup falls through to the fallback, and `isFallback`'s prerender-preserving guard kicks in — but only as a safety net.
+3. **The slug added to `SPA_SHELL_VICTIM_SLUGS`** in `prerender-static.mjs` (PR-24 verifier) so the build fails loudly if you accidentally remove the prerender for it.
+
+The PR-24 build-time verifier catches **missing dist files**. It does NOT catch a **missing `seoTitles.ts` entry** — that regression is invisible at build time and only shows up in JS-rendered crawls. Always do all three edits.
+
 ### 🟡 Hidden off-screen navigation
 
 There's a `position: absolute; left: -10000px;` nav somewhere on the site. Known cloaking risk, intentionally left for now. Do not touch in unrelated PRs.
@@ -457,6 +473,8 @@ These apply to every content change on the site:
 - **PR-13 (merged, 2026-04-18)** — trailing-slash canonical mismatches on `/locations/service-areas` and `/sitemap` fixed.
 - **PR-14 (merged, 2026-04-19, commit b4bd32ed)** — fixed duplicate FAQPage on `/locations/deerfield-beach` (CITIES_WITH_OWN_FAQ set).
 - **PR-15 (merged, 2026-04-20, commit cba2d26e)** — FAQ answers render proper JSX `<Link>` components instead of literal `<Link>` text. `answer`/`answerNodes` split pattern. `/calculator` → `/roof-cost-calculator`.
+- **PR-24 (merged, 2026-04-26, commit 52aaaeec)** — Build-time SPA-shell-victim verifier in `scripts/prerender-static.mjs`. Runs at the end of `generateStaticFiles()`, asserts each of 44 audit-flagged slugs has a `dist/<slug>/index.html` with a non-Vite-shell `<title>`. Throws to fail the Netlify build if any are missing or stale. Override: env `SPA_SHELL_VERIFIER=warn`. Regression guard for the prerender pipeline. See §17.
+- **PR-25 (merged, 2026-04-26, commit b687a906)** — Fixed the actual root cause of the audit's "44 duplicate titles" finding. NuclearMetadata was overwriting correct prerendered titles with the generic fallback during JS-rendered crawls (Googlebot 2026, SF rendering=JavaScript) because none of the 44 slugs were in `SEO_TITLES`. Two halves: (a) added 44 explicit `SEO_TITLES` entries mirroring prerender data, (b) added `isFallback?: boolean` to `SEOMetadata` so NuclearMetadata can prefer `window.__PRERENDERED_TITLE__` when the SEO lookup falls through. Architectural fix protects future regressions. See §7 and §17.
 
 ### Leadsnap baseline (April 2026)
 
@@ -470,9 +488,12 @@ These apply to every content change on the site:
 - FAQ invalid items on `/locations/deerfield-beach` — fixed in PR-14, awaiting re-crawl validation
 - Review snippets appearing on home page — correct; no FAQ/Breadcrumbs on home is also correct (home is root, no parent for breadcrumb; Google killed FAQ rich results for non-government/health sites in 2023)
 
-### Remaining findings from 2026-04-20 Screaming Frog crawl (not yet authorized)
+### Remaining findings from 2026-04-20 Screaming Frog crawl
 
-- 45 geo-page duplicate titles
+**Resolved:**
+- ~~45 geo-page duplicate titles~~ — fixed in PR-24 (build-time verifier) + PR-25 (NuclearMetadata `isFallback` guard + 44 `SEO_TITLES` entries). 4/26/2026 SF crawl confirmed the fallback-stomp was the actual cause; build-time dist files were already correct. See §17.
+
+**Still open (not yet authorized):**
 - 37 "Post Not Found" blog pages
 - 6 titles > 60 chars
 - 3 descriptions > 160 chars
@@ -486,7 +507,7 @@ These apply to every content change on the site:
 | `netlify.toml` | Build command, edge function registration, redirects, headers |
 | `public/_redirects` | Secondary redirect rules (processed before netlify.toml) |
 | `vite.config.ts` | `publicDir: false` + `manualPublicCopyPlugin` |
-| `scripts/prerender-static.mjs` | **The SEO lever** — generates static HTML. Reads `locations.ts` as TEXT (see foot-gun §12) |
+| `scripts/prerender-static.mjs` | **The SEO lever** — generates static HTML. Reads `locations.ts` as TEXT (see foot-gun §12). Now also runs `verifySpaShellArtifacts(SPA_SHELL_VICTIM_SLUGS)` at the end of `generateStaticFiles()` (PR-24, see §17). |
 | `scripts/submit-indexnow.mjs` | IndexNow submission post-deploy |
 | `scripts/build-blog-content.mjs` | Generates `public/blog-content.json` from `/blog/*.md` |
 | `scripts/generate-sitemap.mjs` | Generates `public/sitemap.xml` (committed) |
@@ -497,8 +518,8 @@ These apply to every content change on the site:
 | `src/data/cityCoordinates.ts` | City lat/lng |
 | `src/lib/locationSeo.ts` | `buildLocationSeo()` — duplicated in prerender script; keep in sync |
 | `src/lib/supabase.ts` | Supabase client config |
-| `src/config/seoTitles.ts` | 74 route → title/desc entries for runtime React |
-| `src/components/NuclearMetadata.tsx` | SINGLE OWNER for runtime `<title>` |
+| `src/config/seoTitles.ts` | 118 route → title/desc entries for runtime React (74 named + 44 SPA-shell-victim slugs added in PR-25). Fallback return sets `isFallback: true` so NuclearMetadata can preserve prerendered titles — see §7 and §17. |
+| `src/components/NuclearMetadata.tsx` | SINGLE OWNER for runtime `<title>`. Reads `window.__PRERENDERED_TITLE__` / `__PRERENDERED_DESC__` and prefers them when `isFallback === true` on the `SEOMetadata` returned by `generateSEOMetadata` (PR-25). |
 | `src/components/StickyConversionBar.tsx` | Desktop top bar + mobile bottom CTA; on all MoneyPages + GenericLocationTemplate |
 | `src/pages/DynamicCityRouter.tsx` | Dispatches `/locations/:slug` at runtime |
 | `src/pages/templates/GenericLocationTemplate.tsx` | Fallback for ~14 thin cities |
@@ -519,3 +540,71 @@ These apply to every content change on the site:
 ## 17. Getting help
 
 When in doubt, stop and ask. The prerender script is long and has historical crust; the wrong change can silently break every page at once. Prefer small, surgical PRs with `node --check` + Rich Results validation over broad sweeps.
+
+
+---
+
+## 17. SPA-shell-victim subsystem (PR-24 + PR-25)
+
+This is the most subtle architectural pattern in the repo and the one most likely to regress silently. Read this section before touching any of: `prerender-static.mjs`, `App.tsx`, `seoTitles.ts`, `NuclearMetadata.tsx`, `StaticContentPage.tsx`, or `main.tsx`.
+
+### What "SPA-shell victim" means
+
+A URL whose React Router never matches an explicit `<Route>` falls into `App.tsx`'s catchall `path="*"` (line 328). The catchall renders `<StaticContentPage />` if `window.__PRERENDERED_HTML__` is set (captured by `main.tsx` from the page's `<div id="seo-static">` block before React wipes the DOM), else `<NotFoundPage />`.
+
+For URLs with a `dist/<slug>/index.html` written by the prerender but no explicit React Route, the static HTML loads correctly on first paint. After hydration, three things race:
+
+1. `main.tsx` snapshots `__PRERENDERED_TITLE__` and `__PRERENDERED_HTML__` from the prerendered DOM.
+2. React Router runs, hits the catchall, mounts `StaticContentPage`.
+3. `NuclearMetadata` (mounted in the layout) runs its `useEffect` and calls `generateSEOMetadata(path)`.
+
+### The bug PR-25 fixed
+
+If the slug is **not** in `SEO_TITLES` and **does not** match any other branch in `generateSEOMetadata` (location, blog, landmark, best-roofers, top-roofer), the function returns the generic fallback. NuclearMetadata previously wrote that fallback to `document.title`, stomping the correct prerendered title.
+
+This was invisible to non-JS-rendering crawlers but visible to:
+- Googlebot 2026 (renders JS before indexing)
+- Screaming Frog with rendering=JavaScript
+- Any AI crawler that executes JS (some do)
+
+The 4/26/2026 SF crawl flagged 44 such URLs all sharing the fallback title `Roofing Contractor | Broward & Palm Beach | All Phase USA`.
+
+### How the fix works
+
+**`SEO_TITLES` (PR-25 part A):** 44 explicit entries added mirroring the prerender data. Lookup now hits, NuclearMetadata writes the correct title.
+
+**`isFallback` flag (PR-25 part B):** The fallback return path in `generateSEOMetadata` now sets `isFallback: true`. NuclearMetadata reads the flag and uses `window.__PRERENDERED_TITLE__` / `__PRERENDERED_DESC__` instead of the fallback. This is the architectural safety net — any future prerendered-but-unrouted slug that gets added without a corresponding `SEO_TITLES` entry will still serve the correct prerendered title to JS-rendering crawlers.
+
+**Verifier (PR-24):** Runs at end of `generateStaticFiles()`. Reads each slug in `SPA_SHELL_VICTIM_SLUGS`, asserts the dist file exists and has a non-Vite-shell title. Throws to fail the build if any fail. This catches build-time regressions (missing prerender output) but does NOT catch missing `seoTitles.ts` entries — that's what `isFallback` is for.
+
+### When you add a new prerendered slug
+
+Always do all three of:
+
+1. **Add the slug entry to a data array in `prerender-static.mjs`** with `slug`, `title`, `description`, `h1`, `intro`, `sections` (or whatever the surrounding array's shape is). This writes the static HTML.
+2. **Add the slug to `SEO_TITLES` in `src/config/seoTitles.ts`** with title and description that mirror the prerender data exactly. This fixes the JS-render path.
+3. **Add the slug to `SPA_SHELL_VICTIM_SLUGS` in `prerender-static.mjs`** so the verifier protects it. This makes future build-time regressions loud.
+
+If you skip step 2, the `isFallback` guard catches you — but you've added latency to every navigation to that page (the prerender title is captured, then re-applied) and `[NUCLEAR METADATA] Applied:` will log `usedPrerenderTitle: true`. Watch the console for that — it indicates a missing `SEO_TITLES` entry.
+
+If you skip step 3, the verifier won't catch a regression on that page, only the others.
+
+### Files involved
+
+- `scripts/prerender-static.mjs` — writes static HTML, runs verifier (lines ~2080-2230 declare `SPA_SHELL_VICTIM_SLUGS` + `verifySpaShellArtifacts()`).
+- `src/config/seoTitles.ts` — declares `isFallback?: boolean`, sets it on fallback return.
+- `src/components/NuclearMetadata.tsx` — reads `isFallback` + `window.__PRERENDERED_*`.
+- `src/main.tsx` — captures `__PRERENDERED_TITLE__` / `__PRERENDERED_HTML__` / `__PRERENDERED_DESC__` before React mounts.
+- `src/pages/StaticContentPage.tsx` — re-injects `__PRERENDERED_HTML__` for the catchall.
+- `src/App.tsx` — catchall route at line ~328.
+
+### Override
+
+If you need to ship around the verifier without removing the check, set Netlify env:
+
+```
+SPA_SHELL_VERIFIER=warn
+```
+
+Default is fail. Use sparingly.
+
