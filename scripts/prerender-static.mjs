@@ -2409,6 +2409,62 @@ async function generateStaticFiles() {
       }
     ]
   },
+    '/roof-cost-calculator': {
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Roof Cost Calculator', url: 'https://allphaseconstructionfl.com/roof-cost-calculator' }
+      ],
+      extraSchemas: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          '@id': 'https://allphaseconstructionfl.com/roof-cost-calculator#webapp',
+          name: 'South Florida Roof Cost Calculator',
+          alternateName: 'All Phase Roof Replacement Cost Estimator',
+          url: 'https://allphaseconstructionfl.com/roof-cost-calculator',
+          description: 'Free roof replacement cost calculator for Broward and Palm Beach County. Estimates by roof size, material (tile, metal, shingle, flat), and city. Includes HVHZ-compliant pricing for Broward and Palm Beach County wind-code compliant pricing for Palm Beach.',
+          applicationCategory: 'BusinessApplication',
+          applicationSubCategory: 'EstimatorApplication',
+          operatingSystem: 'Any (web-based)',
+          browserRequirements: 'Requires JavaScript',
+          isAccessibleForFree: true,
+          provider: {
+            '@type': 'RoofingContractor',
+            '@id': 'https://allphaseconstructionfl.com/#organization',
+            name: 'All Phase Construction USA',
+            url: 'https://allphaseconstructionfl.com',
+            telephone: '+17542275605'
+          },
+          areaServed: [
+            { '@type': 'AdministrativeArea', name: 'Broward County, Florida' },
+            { '@type': 'AdministrativeArea', name: 'Palm Beach County, Florida' }
+          ],
+          offers: {
+            '@type': 'Offer',
+            priceCurrency: 'USD',
+            priceRange: '$8,500 - $70,000',
+            availability: 'https://schema.org/InStock',
+            description: 'Roof replacement cost estimate range across all materials and roof sizes typical for South Florida residential properties.',
+            eligibleRegion: [
+              { '@type': 'AdministrativeArea', name: 'Broward County, Florida' },
+              { '@type': 'AdministrativeArea', name: 'Palm Beach County, Florida' }
+            ]
+          },
+          featureList: [
+            'Free estimate by roof size, material, and city',
+            'Broward County HVHZ-compliant pricing',
+            'Palm Beach County wind-code compliant pricing',
+            'Tile, metal, shingle, and flat roofing systems',
+            'Permit and disposal cost line items',
+            'Estimated project duration'
+          ],
+          audience: {
+            '@type': 'Audience',
+            audienceType: 'South Florida homeowners and property managers'
+          }
+        }
+      ]
+    },
 };
 
 const CITY_PAGE_SCHEMAS = {
@@ -2518,6 +2574,12 @@ const CITY_PAGE_SCHEMAS = {
           item: crumb.url
         }))
       });
+      // PR-26: extraSchemas — array of additional ld+json blocks (e.g. WebApplication
+      // for the calculator) that need to ship alongside FAQ/HowTo/Breadcrumbs.
+      // Used by /roof-cost-calculator to expose the EstimatorApplication for AEO.
+      if (schemaConfig.extraSchemas && Array.isArray(schemaConfig.extraSchemas)) {
+        schemaItems.push(...schemaConfig.extraSchemas);
+      }
       jsonLdSchema = schemaItems;
       } // end else
     }
