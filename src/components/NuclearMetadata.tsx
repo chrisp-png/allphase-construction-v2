@@ -28,7 +28,19 @@ export default function NuclearMetadata() {
     // Get SEO metadata from centralized configuration
     // For /locations/:slug pages, this now uses src/data/locations.ts and src/lib/locationSeo.ts
     const metadata = generateSEOMetadata(path);
-    const { title, description, canonical, ogTitle, ogDescription } = metadata;
+    const { title, description, canonical, ogTitle, ogDescription, isFallback } = metadata;
+
+    // Preserve prerendered title/description for URLs that have a
+    // dist/<slug>/index.html but no explicit React Route + no SEO_TITLES
+    // entry. Without this guard, the generic fallback in seoTitles.ts stomps
+    // the correct prerendered title in the live DOM during JS-rendered
+    // crawls (Googlebot 2026 renders JS; Screaming Frog with rendering=
+    // JavaScript renders JS). Manifests as 44 pages all showing
+    // "Roofing Contractor | Broward & Palm Beach | All Phase USA".
+    const prerenderedTitle =
+      typeof window !== 'undefined' ? (window as any).__PRERENDERED_TITLE__ : '';
+    const prerenderedDesc =
+      typeof window !== 'undefined' ? (window as any).__PRERENDERED_DESC__ : '';
 
     // Normalize canonical URL: origin + pathname only, no trailing slash (except root), no query/hash
     let normalizedCanonical = canonical;
@@ -41,18 +53,28 @@ export default function NuclearMetadata() {
     }
 
     // FORCE UPDATE DOCUMENT TITLE - NO DELAYS
-    if (title) {
-      document.title = title;
+    // When isFallback is true (no explicit lookup matched the path), prefer
+    // the prerendered title that main.tsx captured before React mounted.
+    // This protects every prerendered-but-unrouted URL from title-stomping.
+    const titleToApply =
+      isFallback && prerenderedTitle ? prerenderedTitle : title;
+    if (titleToApply) {
+      document.title = titleToApply;
     }
 
     // FORCE UPDATE META DESCRIPTION
+    // Same rule: prefer prerendered description when the SEO lookup fell
+    // through to the fallback (which is the same fallback string for every
+    // unmatched URL — would otherwise produce duplicate descriptions).
+    const descToApply =
+      isFallback && prerenderedDesc ? prerenderedDesc : description;
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement('meta');
       metaDesc.setAttribute('name', 'description');
       document.head.appendChild(metaDesc);
     }
-    metaDesc.setAttribute('content', description);
+    metaDesc.setAttribute('content', descToApply);
 
     // FORCE UPDATE CANONICAL (single owner - no other component emits this tag)
     let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
@@ -64,8 +86,9 @@ export default function NuclearMetadata() {
     canonicalLink.setAttribute('href', normalizedCanonical);
 
     // FORCE UPDATE OG TAGS (use overrides if provided)
-    updateOrCreateMetaTag('property', 'og:title', ogTitle || title);
-    updateOrCreateMetaTag('property', 'og:description', ogDescription || description);
+    // Same prerender-preserving rule as <title> and <meta description>.
+    updateOrCreateMetaTag('property', 'og:title', ogTitle || titleToApply);
+    updateOrCreateMetaTag('property', 'og:description', ogDescription || descToApply);
     updateOrCreateMetaTag('property', 'og:url', normalizedCanonical);
     updateOrCreateMetaTag('property', 'og:type', 'website');
     updateOrCreateMetaTag('property', 'og:site_name', 'All Phase Construction USA');
@@ -84,8 +107,8 @@ export default function NuclearMetadata() {
 
     // FORCE UPDATE TWITTER TAGS (use overrides if provided)
     updateOrCreateMetaTag('name', 'twitter:card', 'summary_large_image');
-    updateOrCreateMetaTag('name', 'twitter:title', ogTitle || title);
-    updateOrCreateMetaTag('name', 'twitter:description', ogDescription || description);
+    updateOrCreateMetaTag('name', 'twitter:title', ogTitle || titleToApply);
+    updateOrCreateMetaTag('name', 'twitter:description', ogDescription || descToApply);
     updateOrCreateMetaTag('name', 'twitter:image', defaultOgImage);
 
     // GLOBAL LOCALBUSINESS SCHEMA (RoofingContractor) is now handled entirely by
@@ -259,7 +282,7 @@ export default function NuclearMetadata() {
       if (stale) stale.remove();
     }
 
-    console.log('[NUCLEAR METADATA] Applied:', { path, title, canonical: normalizedCanonical });
+    console.log('[NUCLEAR METADATA] Applied:', { path, title: titleToApply, isFallback: !!isFallback, usedPrerenderTitle: isFallback && !!prerenderedTitle, canonical: normalizedCanonical });
   }, [location.pathname]);
 
   return null;
