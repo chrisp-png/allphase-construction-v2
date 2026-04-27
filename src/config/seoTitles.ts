@@ -353,7 +353,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/metal-roofing-cost-fort-lauderdale'
   },
   '/tile-roof-replacement-wellington': {
-    title: 'Tile Roof Replacement in Wellington (2026) | HOA + Weight Load',
+    title: 'Wellington Tile Roof Replacement (2026) | HOA-Approved',
     description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements',
     canonical: 'https://allphaseconstructionfl.com/tile-roof-replacement-wellington'
   },
@@ -562,7 +562,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/lake-worth-corridor-roofing': {
     title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
-    description: 'Roof replacement in the Lake Worth Corridor — unincorporated PBC just south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code compliant. (754) 227-5605.',
+    description: 'Roof replacement in Lake Worth Corridor — the unincorporated CDP south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/lake-worth-corridor-roofing'
   },
   '/lake-worth-beach-roof-insurance-claim': {
