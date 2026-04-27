@@ -3330,6 +3330,7 @@ ${companyAuthorityFooter()}
   const COMMUNITY_LINKS_BY_CITY = {
     'boca-raton': [
       ['boca-raton-roof-permit-guide', 'Boca Raton Roof Permit Guide (2026)'],
+      ['boca-raton-roof-replacement-timeline', 'Boca Raton Roof Replacement Timeline'],
       ['coastal-boca-raton-roofing-contractor', 'Coastal Boca Raton Roofing'],
       ['west-boca-raton-roof-replacement', 'West Boca Raton Roof Replacement'],
       ['north-boca-raton-roof-replacement', 'North Boca Raton Roof Replacement'],
@@ -3346,12 +3347,15 @@ ${companyAuthorityFooter()}
     'deerfield-beach': [
       ['the-cove-deerfield-beach-roofing', 'The Cove Deerfield Beach Roofing'],
       ['deerfield-beach-commercial-roofing', 'Deerfield Beach Commercial Roofing'],
+      ['roof-replacement-cost-deerfield-beach', 'Roof Replacement Cost in Deerfield Beach'],
     ],
     'fort-lauderdale': [
       ['fort-lauderdale-commercial-roofing', 'Fort Lauderdale Commercial Roofing'],
+      ['metal-roofing-cost-fort-lauderdale', 'Fort Lauderdale Metal Roofing Cost'],
     ],
     'pompano-beach': [
       ['pompano-beach-roof-permit-guide', 'Pompano Beach Roof Permit Guide (2026)'],
+      ['pompano-beach-roof-inspection', 'Pompano Beach Roof Inspection'],
       ['pompano-beach-coastal-roofing', 'Pompano Beach Coastal Roofing'],
       ['pompano-beach-tile-roof-replacement', 'Pompano Beach Tile Roof Replacement'],
       ['palm-aire-pompano-beach-roofing', 'Palm-Aire Pompano Beach Roofing'],
@@ -3360,17 +3364,20 @@ ${companyAuthorityFooter()}
     'lighthouse-point': [
       ['lighthouse-point-roof-replacement', 'Lighthouse Point Roof Replacement'],
       ['lighthouse-point-tile-roof-replacement', 'Lighthouse Point Tile Roof Replacement'],
+      ['emergency-roof-tarp-lighthouse-point', 'Lighthouse Point Emergency Roof Tarp (24-hr)'],
     ],
     'delray-beach': [
       ['delray-beach-roof-replacement', 'Delray Beach Roof Replacement'],
       ['delray-beach-tile-roof-contractor', 'Delray Beach Tile Roof Contractor'],
       ['historic-delray-roofing', 'Historic Delray Roofing'],
+      ['delray-beach-roof-overlay-vs-tear-off', 'Delray Beach: Roof Overlay vs Tear-Off'],
     ],
     'highland-beach': [
       ['highland-beach-roof-replacement', 'Highland Beach Roof Replacement'],
     ],
     'boynton-beach': [
       ['boynton-beach-oceanfront-roofing', 'Boynton Beach Oceanfront Roofing'],
+      ['wind-damage-insurance-claim-boynton-beach', 'Boynton Beach Wind Damage Insurance Claim'],
       ['boynton-beach-tile-roof-replacement', 'Boynton Beach Tile Roof Replacement'],
       ['boynton-beach-commercial-roofing', 'Boynton Beach Commercial Roofing'],
       ['boynton-beach-roof-insurance-claim', 'Boynton Beach Roof Insurance Claim'],
@@ -3383,6 +3390,7 @@ ${companyAuthorityFooter()}
       ['lake-worth-beach-roof-insurance-claim', 'Lake Worth Beach Roof Insurance Claim'],
       ['lake-worth-beach-tile-roof-replacement', 'Lake Worth Beach Tile Roof Replacement'],
       ['lake-worth-corridor-roofing', 'Lake Worth Corridor Roofing (the unincorporated CDP)'],
+      ['four-point-inspection-roof-lake-worth-beach', 'Lake Worth Beach 4-Point Roof Inspection'],
     ],
     'wellington': [
       ['olympia-wellington-roofing', 'Olympia Wellington Roofing'],
@@ -3391,6 +3399,7 @@ ${companyAuthorityFooter()}
       ['wellington-tile-roof-replacement', 'Wellington Tile Roof Replacement'],
       ['wellington-metal-roofing', 'Wellington Metal Roofing'],
       ['wellington-roof-insurance-claim', 'Wellington Roof Insurance Claim'],
+      ['tile-roof-replacement-wellington', 'Wellington Tile Roof Replacement (HOA + Weight Load)'],
     ],
     'west-palm-beach': [
       ['west-palm-beach-historic-roofing', 'West Palm Beach Historic Roofing'],
@@ -3398,6 +3407,37 @@ ${companyAuthorityFooter()}
       ['west-palm-beach-commercial-roofing', 'West Palm Beach Commercial Roofing'],
       ['west-palm-beach-tile-roof-replacement', 'West Palm Beach Tile Roof Replacement'],
       ['west-palm-beach-roof-insurance-claim', 'West Palm Beach Roof Insurance Claim'],
+      ['flat-roof-tpo-vs-pvc-west-palm-beach', 'West Palm Beach Flat Roof: TPO vs PVC'],
+    ],
+    'parkland': [
+      ['tree-damage-roof-repair-parkland', 'Parkland Tree-Damage Roof Repair'],
+    ],
+    'davie': [
+      ['storm-damage-repair-or-replace-davie', 'Davie Storm Damage: Repair or Replace?'],
+    ],
+    'coconut-creek': [
+      ['pre-listing-roof-certification-coconut-creek', 'Coconut Creek Pre-Listing Roof Certification'],
+    ],
+    'jupiter': [
+      ['standing-seam-metal-roof-jupiter', 'Jupiter Standing Seam Metal Roofing'],
+    ],
+    'plantation': [
+      ['switch-from-shingles-to-metal-plantation', 'Plantation: Switch from Shingles to Metal'],
+    ],
+    'hollywood': [
+      ['hurricane-roof-damage-inspection-hollywood', 'Hollywood Hurricane Roof Damage Inspection'],
+    ],
+    'sunrise': [
+      ['annual-roof-inspection-sunrise', 'Sunrise Annual Roof Inspection'],
+    ],
+    'miramar': [
+      ['roof-maintenance-tips-miramar', 'Miramar Roof Maintenance Tips'],
+    ],
+    'palm-beach-gardens': [
+      ['wind-mitigation-inspection-palm-beach-gardens', 'Palm Beach Gardens Wind Mitigation Inspection'],
+    ],
+    'weston': [
+      ['roof-leak-detection-weston', 'Weston Roof Leak Detection'],
     ],
   };
 
