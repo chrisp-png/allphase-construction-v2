@@ -590,6 +590,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Palm Beach County roof insurance claim assistance. Adjuster coordination, full documentation, wind mitigation credits. Licensed & insured.',
     canonical: 'https://allphaseconstructionfl.com/palm-beach-county-roof-insurance-claim'
   },
+  '/pompano-beach-roof-permit-guide': {
+    title: 'Pompano Beach Roof Permit Guide (2026) | All Phase USA',
+    description: 'Pompano Beach roof permit guide — legally HVHZ Broward jurisdiction, NOA documentation, 2–3 week timeline, secondary water barrier mandated. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-permit-guide'
+  },
   '/palm-aire-pompano-beach-roofing': {
     title: 'Palm Aire Pompano Beach Roofing | All Phase USA',
     description: 'Roof replacement in Palm Aire, Pompano Beach FL. 1970s-era tile and flat roof systems. HOA-coordinated, HVHZ-compliant. Free inspection.',

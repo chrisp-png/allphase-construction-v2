@@ -2118,10 +2118,11 @@ const SPA_SHELL_VICTIM_SLUGS = [
   // Palm Beach County / Oceanfront (2)
   'oceanfront-roof-replacement-palm-beach-county',
   'palm-beach-county-roof-insurance-claim',
-  // Pompano Beach (3)
+  // Pompano Beach (3 + permit guide)
   'palm-aire-pompano-beach-roofing',
   'pompano-beach-commercial-roofing',
   'pompano-beach-tile-roof-replacement',
+  'pompano-beach-roof-permit-guide',
   // Wellington (5)
   'olympia-wellington-roofing',
   'wellington-equestrian-estate-roofing',
@@ -3345,6 +3346,7 @@ ${companyAuthorityFooter()}
       ['deerfield-beach-commercial-roofing', 'Deerfield Beach Commercial Roofing'],
     ],
     'pompano-beach': [
+      ['pompano-beach-roof-permit-guide', 'Pompano Beach Roof Permit Guide (2026)'],
       ['pompano-beach-coastal-roofing', 'Pompano Beach Coastal Roofing'],
       ['pompano-beach-tile-roof-replacement', 'Pompano Beach Tile Roof Replacement'],
       ['palm-aire-pompano-beach-roofing', 'Palm-Aire Pompano Beach Roofing'],
@@ -5623,6 +5625,111 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered Boca Permit Guide: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // POMPANO BEACH ROOF PERMIT GUIDE (PR-32)
+  // =====================================================================
+  // Pompano Beach is in Broward County and therefore LEGALLY classified
+  // as HVHZ (High Velocity Hurricane Zone) under Florida Building Code —
+  // NOT voluntary like Boca. That distinction is the central framing of
+  // the page: every roof system must carry a Florida Notice of Acceptance
+  // (NOA), secondary water barrier underlayment is mandated by code (not
+  // optional), and enhanced fastening schedules are non-negotiable.
+  //
+  // Typical Pompano residential roof permit timeline: 2–3 weeks. Faster
+  // than Boca (4–5 weeks) because the HVHZ review cadence is well-trodden
+  // territory for the building department, but the requirements
+  // themselves are stricter at the code level.
+  // =====================================================================
+  const pompanoBeachPermitGuidePages = [
+    {
+      slug: 'pompano-beach-roof-permit-guide',
+      title: 'Pompano Beach Roof Permit Guide (2026) | All Phase USA',
+      description: 'Pompano Beach roof permit guide — legally HVHZ Broward jurisdiction, NOA documentation, 2–3 week timeline, secondary water barrier mandated. (754) 227-5605.',
+      h1: 'Pompano Beach Roof Permit Guide (2026)',
+      intro: `Pompano Beach sits in Broward County, which means Pompano roof permits run under Florida's High Velocity Hurricane Zone (HVHZ) code — the strictest residential wind-load standard in the state. Three things drive every Pompano roof permit decision: each component of the roof assembly must carry a Florida Notice of Acceptance (NOA), secondary water barrier underlayment is mandated by code on every system, and the enhanced fastening schedule is non-negotiable. Typical permit timeline is 2 to 3 weeks for a straightforward residential re-roof. All Phase Construction USA pulls Pompano permits weekly and knows the building department's specific review cadence at every stage.`,
+      sections: `
+  <h2>Pompano Beach Is Legally HVHZ</h2>
+  <p>This is the most important fact for any Pompano homeowner planning a roof project. The Florida Building Code defines the High Velocity Hurricane Zone as Miami-Dade and Broward Counties — including every city within Broward, Pompano Beach included. Unlike Palm Beach County cities (such as Boca Raton, which voluntarily applies HVHZ-equivalent review), Pompano operates under the actual HVHZ code by law. That means every roofing material, every fastener, every flashing component must be specifically approved for HVHZ use through the Florida Product Approval system or the Miami-Dade NOA process. A material that ships to Boca without HVHZ documentation may still pass review there; in Pompano it will be rejected outright.</p>
+
+  <h2>Why Pompano Permits Are Faster Than Boca</h2>
+  <p>Boca's voluntary HVHZ-equivalent review takes 4 to 5 weeks because the building department applies stricter-than-PBC scrutiny to every package. Pompano's actual HVHZ review takes 2 to 3 weeks because the same level of rigor is the routine baseline — the building department processes hundreds of HVHZ permits each month and the review pattern is well-trodden territory. The trade-off is that the requirements themselves are stricter at the code level. There is no "we'll skip the secondary water barrier on this one" path in Pompano; that is a code violation regardless of homeowner preference.</p>
+
+  <h2>The HVHZ Baseline — What Every Pompano Roof Must Have</h2>
+  <ul style="line-height: 1.75;">
+    <li><strong>Florida Notice of Acceptance (NOA)</strong> on every roofing component: primary covering, underlayment, drip edge, fasteners, ridge vents. Each NOA is product-specific and limits how the component can be installed (slope, deck type, fastening pattern). Substituting a non-NOA product after permit issuance is a stop-work-order trigger.</li>
+    <li><strong>Secondary water barrier underlayment</strong> — a self-adhered (peel-and-stick) membrane that provides waterproofing even if the primary covering is removed in a wind event. Required on every system in HVHZ. The qualifying spec is documented during install with photos.</li>
+    <li><strong>Enhanced fastening schedule</strong> — every fastener pattern (deck nailing, primary covering attachment, ridge fastening) follows the Broward-specific schedule, which is tighter than baseline Florida code. Wind-load calculations on every permit application demonstrate that the fastening pattern matches the home's exposure category.</li>
+    <li><strong>Deck re-nailing</strong> — existing decking is re-nailed to current code as part of every tear-off. This is not a separate scope; it is part of the standard re-roof.</li>
+    <li><strong>Hurricane-strap inspection</strong> on the deck during tear-off. Unlike Boca where pre-2002 homes often need an engineer in the attic before permit submittal, Pompano typically catches strap issues during the tear-off inspection — but the retrofit requirement is the same if straps are missing or undersized.</li>
+  </ul>
+
+  <h2>Documents the Building Department Needs</h2>
+  <p>A complete Pompano residential roof permit application includes:</p>
+  <ul style="line-height: 1.75;">
+    <li>Florida NOA documentation for every component of the roof assembly</li>
+    <li>Manufacturer specification sheets for the assembly</li>
+    <li>Wind-load calculations matching the home's exposure category and geometry</li>
+    <li>Fastening schedule diagram showing nailing pattern, edge metal attachment, and penetration sealing</li>
+    <li>Sealed engineering for any flat or low-slope roof system</li>
+    <li>Existing-condition photos for the tear-off scope of work</li>
+    <li>Contractor Florida license verification (we file CCC-1331464 and CGC-1526236)</li>
+    <li>Workers' compensation and general liability certificates of coverage</li>
+    <li>Address-specific application form (Pompano permits are submitted electronically through the city's online portal)</li>
+  </ul>
+  <p>Submitting a complete package the first time is the fastest path through the 2–3 week review window. An incomplete submission gets returned for correction and effectively restarts the clock.</p>
+
+  <h2>Inspections During the Project</h2>
+  <p>Pompano runs three inspections on a typical residential re-roof, matching the standard HVHZ inspection cadence:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Tear-off / deck inspection</strong> — after the existing covering is removed and the deck is exposed. Inspector verifies deck condition, hurricane-strap presence, deck re-nailing pattern, and any structural repairs needed.</li>
+    <li><strong>Dry-in / underlayment inspection</strong> — after the secondary water barrier underlayment is installed but before the primary covering goes on. Inspector verifies the underlayment matches the NOA on file, confirms full-coverage installation, and checks valley and penetration flashing.</li>
+    <li><strong>Final inspection</strong> — after the roof is complete. Inspector verifies the primary covering matches the NOA, ridge vents and edge metal are properly fastened, and the manufacturer warranty package is in order.</li>
+  </ul>
+  <p>Failing an inspection extends the project by 5 to 10 days while the issue is corrected and the inspector returns. Our crews are trained to the HVHZ inspection points so first-pass approval is the norm.</p>
+
+  <h2>Pompano-Specific Neighborhoods and Considerations</h2>
+  <p>Pompano spans residential and commercial corridors with very different roof realities. The Federal Highway and Atlantic Boulevard commercial corridors run heavy on flat and low-slope membrane systems (TPO, modified bitumen, built-up). Residential neighborhoods like Pompano Beach Highlands, Cresthaven, Cypress Bend, and the Palm-Aire community span 1960s through 1990s housing stock — meaning the same hurricane-strap and deck-condition variables we see across older Broward neighborhoods. East of Federal Highway, salt-air exposure compresses fastener life on standard galvanized hardware; we use 304-stainless or marine-grade fasteners on every coastal Pompano re-roof regardless of the rest of the assembly choice.</p>
+
+  <h2>Why Dual Licensing Helps in Pompano</h2>
+  <p>HVHZ inspections often surface structural issues during tear-off that homeowners and inspectors did not anticipate — undersized rafters, deteriorated decking, missing or improperly fastened hurricane straps, fascia rot, soffit decay. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236). When the inspector flags structural work, we handle it under our existing permit and our existing crew rather than subcontracting to a separate framing contractor — which would mean a second permit, a second inspection cycle, and another 2 to 3 weeks added to the project. On a Pompano residential re-roof with surfaced structural issues, dual licensing is the difference between a 3-week project and a 6-week project.</p>
+      `
+    }
+  ];
+
+  for (const p of pompanoBeachPermitGuidePages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready to Start Your Pompano Beach Roof Project?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach roofing hub</a> to schedule a free inspection. Same-day callback during business hours, 48-hour inspection booking. We pull every Pompano permit under our state license — never under the homeowner's name.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach Roof Replacement</a></li>
+    <li><a href="/roof-repair/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach Roof Inspection</a></li>
+    <li><a href="/pompano-beach-tile-roof-replacement" style="color: #dc2626; text-decoration: underline;">Pompano Beach Tile Roof Replacement</a></li>
+    <li><a href="/pompano-beach-commercial-roofing" style="color: #dc2626; text-decoration: underline;">Pompano Beach Commercial Roofing</a></li>
+    <li><a href="/palm-aire-pompano-beach-roofing" style="color: #dc2626; text-decoration: underline;">Palm-Aire Pompano Beach Roofing</a></li>
+    <li><a href="/coral-springs-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Permit Guide</a> (Broward HVHZ comparison)</li>
+    <li><a href="/boca-raton-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Permit Guide</a> (PBC voluntary HVHZ comparison)</li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
+  ${companyAuthorityFooter('Broward')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Pompano Permit Guide: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
 
 
