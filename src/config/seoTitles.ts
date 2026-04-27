@@ -66,8 +66,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/roof-cost-calculator': {
-    title: 'South Florida Roof Cost Calculator',
-    description: 'Free South Florida roof cost calculator and roof replacement estimate for Broward & Palm Beach County, Florida.',
+    title: 'Free Roof Replacement Cost Calculator | South Florida',
+    description: 'Free roof replacement cost calculator for Broward & Palm Beach — Boca, Pompano, FTL, Boynton. Tile, metal, shingle, flat. HVHZ-rated. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
