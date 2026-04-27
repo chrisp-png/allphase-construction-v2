@@ -435,6 +435,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // correct prerendered title with that fallback during JS-rendered crawls
   // (Googlebot, Screaming Frog with rendering=JavaScript). Mirroring the data
   // from prerender-static.mjs keeps both code paths in sync.
+  '/boca-raton-roof-permit-guide': {
+    title: 'Boca Raton Roof Permit Guide (2026) | All Phase USA',
+    description: 'Boca Raton roof permit guide — 4–5 week timeline, flat-roof uplift engineering, hurricane-strap verification for pre-2002 homes. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-permit-guide'
+  },
   '/boca-raton-luxury-estate-roofing': {
     title: 'Boca Raton Luxury Estate Roofing | All Phase USA',
     description: 'Luxury estate roofing in Boca Raton — The Sanctuary, Le Lac, St. Andrews Country Club. Premium tile, metal, and flat systems. PBC wind-code compliant.',
