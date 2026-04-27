@@ -5462,7 +5462,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'lake-worth-corridor-roofing',
       title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
-      description: 'Roof replacement in the Lake Worth Corridor — unincorporated PBC just south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code compliant. (754) 227-5605.',
+      description: 'Roof replacement in Lake Worth Corridor — the unincorporated CDP south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code. (754) 227-5605.',
       h1: 'Roof Replacement in Lake Worth Corridor, FL',
       intro: `Lake Worth Corridor is the unincorporated Census-Designated Place that sits south of Lake Worth Beach in Palm Beach County — about 28,000 residents across roughly four square miles between Federal Highway and the Florida Turnpike. Most homeowners here Google "Lake Worth" and end up on Lake Worth Beach pages that don't actually serve them, because the Corridor is a different jurisdiction with different permitting. All Phase Construction USA replaces roofs throughout the Corridor with assemblies built to Palm Beach County wind-code requirements rated for 170+ mph design wind speeds.`,
       sections: `
@@ -6660,7 +6660,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boca-raton-roof-replacement-timeline',
-      title: 'Boca Raton Roof Replacement Timeline (2026) | Day-by-Day Guide',
+      title: 'Boca Raton Roof Replacement Timeline: Day-by-Day (2026)',
       description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather',
       h1: 'Boca Raton Roof Replacement Timeline: Day-by-Day',
       summary: 'Most Boca Raton shingle roof replacements are completed in 2 to 4 working days once the Palm Beach County permit is issued, while concrete tile homes typically take 5 to 7 days. The full timeline from contract to final inspection runs 2 to 6 weeks. We schedule tear-off and dry-in on the same day so your home is protected overnight.',
@@ -6882,7 +6882,7 @@ ${companyAuthorityFooter()}
     // ── Roof-repair county hub pages (had no <SEO> component) ──
     {
       slug: 'roof-repair/broward-county',
-      title: 'Broward County Roof Repair | HVHZ-Code Repairs | All Phase USA',
+      title: 'Broward County Roof Repair (HVHZ) | All Phase USA',
       description: 'Roof repair across Broward County — tile, metal, shingle, and flat roof repairs to HVHZ code. Free inspection within 48 hours, dual-licensed (CCC + CGC).',
       h1: 'Roof Repair in Broward County, FL',
       summary: 'Roof repair across Broward County — tile, metal, shingle, and flat roof systems repaired to current HVHZ code. Dual-licensed (CCC-1331464 roofing + CGC-1526236 general contractor) means a single accountable crew for combined-scope work (flashing, fascia, soffit, structural). Free inspection within 48 hours.',
