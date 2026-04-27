@@ -2123,6 +2123,8 @@ const SPA_SHELL_VICTIM_SLUGS = [
   'pompano-beach-commercial-roofing',
   'pompano-beach-tile-roof-replacement',
   'pompano-beach-roof-permit-guide',
+  // Fort Lauderdale (commercial — PR-33)
+  'fort-lauderdale-commercial-roofing',
   // Wellington (5)
   'olympia-wellington-roofing',
   'wellington-equestrian-estate-roofing',
@@ -3344,6 +3346,9 @@ ${companyAuthorityFooter()}
     'deerfield-beach': [
       ['the-cove-deerfield-beach-roofing', 'The Cove Deerfield Beach Roofing'],
       ['deerfield-beach-commercial-roofing', 'Deerfield Beach Commercial Roofing'],
+    ],
+    'fort-lauderdale': [
+      ['fort-lauderdale-commercial-roofing', 'Fort Lauderdale Commercial Roofing'],
     ],
     'pompano-beach': [
       ['pompano-beach-roof-permit-guide', 'Pompano Beach Roof Permit Guide (2026)'],
@@ -5729,6 +5734,106 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered Pompano Permit Guide: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // FORT LAUDERDALE COMMERCIAL ROOFING (PR-33)
+  // =====================================================================
+  // Distinct from the generic /commercial-roofing hub. Targets the FTL
+  // commercial market specifically with city-named corridors, vertical
+  // contexts (marine, hospitality, medical, retail, multi-family), and
+  // the legally-HVHZ Broward baseline that all FTL commercial roof
+  // systems must clear.
+  //
+  // Per the audit: "FTL is a wider market — more competitors, but also
+  // more demand. Strategy: niche down. Win commercial Fort Lauderdale
+  // (less competitive than residential)..."
+  // =====================================================================
+  const fortLauderdaleCommercialPages = [
+    {
+      slug: 'fort-lauderdale-commercial-roofing',
+      title: 'Fort Lauderdale Commercial Roofing | All Phase USA',
+      description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail. (754) 227-5605.',
+      h1: 'Commercial Roofing in Fort Lauderdale, FL',
+      intro: `Fort Lauderdale runs one of the most diverse commercial roof markets in South Florida — Las Olas Boulevard mixed-use, downtown high-rise, the marine industry along the New River and 17th Street Causeway, hospitality on A1A, medical plazas along Andrews Avenue and Commercial Boulevard, light industrial near the airport, and multi-family throughout the city. Every commercial roof in Fort Lauderdale falls under Florida's High Velocity Hurricane Zone (HVHZ) code by law — the same legal baseline as Pompano Beach and the rest of Broward County. All Phase Construction USA installs and replaces commercial roof systems across all of these contexts with HVHZ-compliant TPO, PVC, modified-bitumen, built-up, and metal assemblies, fully documented through Florida Notice of Acceptance.`,
+      sections: `
+  <h2>Fort Lauderdale Commercial Corridors We Serve</h2>
+  <ul style="line-height: 1.75;">
+    <li><strong>Las Olas Boulevard and downtown core</strong> — mixed-use, ground-floor retail with office above, restaurant rooftops, and downtown high-rise low-slope decks. Many of these buildings carry 1980s and 1990s built-up or modified-bitumen systems that have aged past their service life.</li>
+    <li><strong>17th Street Causeway and the marine district</strong> — boatyards, marinas, hospitality, ship-chandlery retail. Heavy salt-air exposure compresses standard galvanized fastener life; we spec 304-stainless or marine-grade hardware on every coastal commercial re-roof.</li>
+    <li><strong>Sunrise Boulevard and Federal Highway corridors</strong> — strip retail, professional offices, multi-family. Roof access typically through interior stairwells or ladder, which affects equipment staging and crane decisions on tear-off day.</li>
+    <li><strong>Andrews Avenue and Commercial Boulevard medical corridors</strong> — medical office plazas with HVAC-heavy rooftops, sensitive building occupancy that constrains tear-off scheduling and dust control.</li>
+    <li><strong>Cypress Creek and the FXE airport vicinity</strong> — light industrial and warehouse buildings with large-area flat-roof footprints that benefit from tapered insulation and energy-efficient single-ply membranes.</li>
+    <li><strong>Coral Ridge, Lauderdale-by-the-Sea adjacent commercial</strong> — coastal mixed-use with the same salt-air fastener spec as the marine district plus stricter HOA / municipal architectural review on the visible portions of the assembly.</li>
+  </ul>
+
+  <h2>Commercial Roof Systems We Install in Fort Lauderdale</h2>
+  <p><strong>TPO (thermoplastic olefin) single-ply membrane.</strong> The dominant low-slope choice in FTL commercial. Heat-welded seams produce a continuous waterproof surface; the white reflective surface reduces solar gain and HVAC load. We install fully-adhered, mechanically-attached, and induction-welded TPO systems based on the building's structural conditions and wind-load requirements. 60-mil and 80-mil membranes are standard.</p>
+  <p><strong>PVC (polyvinyl chloride) single-ply membrane.</strong> Premium chemistry over TPO when a building has restaurant grease exhaust, animal-fat exposure, or chemical exposure that degrades TPO faster. PVC is also the typical choice for membrane roofs on hospitality buildings with pool decks, rooftop bars, and HVAC-heavy mechanical penetrations.</p>
+  <p><strong>Modified-bitumen (mod-bit) systems.</strong> Two-ply or three-ply SBS- or APP-modified asphalt. Strong choice for buildings with a lot of foot traffic, rooftop equipment, or mechanical penetrations. Granulated cap sheets provide UV protection and a walkable surface.</p>
+  <p><strong>Built-up roofing (BUR) systems.</strong> Multi-ply asphalt-and-felt assemblies still in use on older office buildings and multi-family. We re-roof BUR with a modern modified-bitumen or single-ply system rather than ply-on-ply when the existing assembly has deteriorated.</p>
+  <p><strong>Standing-seam metal panels.</strong> For commercial buildings where the architectural design or visible roof pitch favors metal — typically auto dealerships, churches, schools, and some hospitality. 24-gauge Galvalume or Kynar-coated steel with hidden clip fastening. 40+ year service life.</p>
+  <p><strong>R-panel and exposed-fastener metal.</strong> The standard for warehouses, light industrial, and agricultural-style commercial buildings around FXE airport and the Andrews Avenue industrial corridor. Lower cost than standing seam, faster install on large-area roofs.</p>
+
+  <h2>HVHZ Commercial Code Baseline</h2>
+  <p>Every Fort Lauderdale commercial roof permit is reviewed under Florida HVHZ code. The baseline requirements that apply to commercial systems include:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Florida Notice of Acceptance (NOA) on every component</strong> — membrane, insulation, fasteners, edge metal, perimeter and corner enhancement.</li>
+    <li><strong>Sealed engineering for wind uplift</strong> — required on every commercial low-slope roof permit in FTL. The engineer documents the fastening pattern, edge metal attachment, and membrane uplift resistance against the building's exposure category and design wind speed.</li>
+    <li><strong>Tapered insulation for positive drainage</strong> — Florida code requires water clear within 48 hours. We design tapered systems with primary drains and secondary overflow scuppers as code requires.</li>
+    <li><strong>Edge metal rated to ANSI/SPRI ES-1.</strong> The single most common commercial roof failure point in HVHZ is the perimeter edge — improperly fastened edge metal lifts in wind events and peels the membrane back from the corner. Our edge details are documented and inspected.</li>
+    <li><strong>Perimeter and corner enhancement zones</strong> — fastening patterns tighten in the perimeter and corner zones per the wind-uplift calculations. The exact pattern depends on building height, deck type, and exposure category.</li>
+  </ul>
+
+  <h2>Common Fort Lauderdale Commercial Verticals</h2>
+  <p><strong>Marine industry.</strong> Boatyards, marinas, ship chandlery, dive operations along the New River, the 17th Street Causeway, and Pier 17. We work in active boatyards regularly and coordinate around vessel staging, lift schedules, and saltwater exposure. Stainless and marine-grade fastener spec is mandatory.</p>
+  <p><strong>Hospitality.</strong> Hotels, restaurants, rooftop bars, event venues. The constraints are scheduling (occupancy and noise), equipment staging (limited rooftop staging area), and the visibility of the assembly to guests. PVC is often the default choice on hospitality membrane roofs.</p>
+  <p><strong>Medical office plazas.</strong> Medical office buildings (MOBs) and outpatient clinics along Andrews Avenue, Commercial Boulevard, and the Holy Cross / Broward Health corridors. HVAC-heavy rooftops, sensitive building occupancy (no tear-off dust into HVAC intakes), and patient-care scheduling that constrains noisy work hours.</p>
+  <p><strong>Strip retail.</strong> The standard FTL commercial use case. Single-tenant or multi-tenant retail with low-slope membrane roofs aging out at 20–25 years. Tear-off, deck condition assessment, new insulation, new membrane, new flashing — straight-line scope when the deck is sound; deck repair scope added when it is not.</p>
+  <p><strong>Light industrial and warehouse.</strong> Cypress Creek and FXE airport vicinity. Large-area flat roofs (often 20,000+ sq ft) where energy efficiency matters. White TPO or PVC reflects solar gain and reduces cooling load measurably; we model the energy savings in the proposal so building owners can see the payback math.</p>
+  <p><strong>Multi-family.</strong> Condo associations and apartment buildings throughout FTL with shared roof structures. Coordination with the association board, owner notification, and access control are part of the project plan from day one. We provide the association with the documentation package the association needs for its records.</p>
+
+  <h2>Commercial Repair vs Replace Decision</h2>
+  <p>A commercial roof typically does not need full replacement just because of a leak. Repair is often the better path when damage is confined to seams, flashings, penetrations, or a specific quadrant of the deck. Replacement becomes necessary when the membrane has lost flexibility, the insulation has saturated, or the deck has corroded or rotted past localized repair. We start every commercial project with a moisture survey (infrared imaging on flat roofs identifies wet insulation invisible from the surface), a detailed flashing and seam inspection, and a deck-fastener pull test where the deck is suspect. The recommendation we deliver is based on what the assembly actually shows, not what we want to sell.</p>
+
+  <h2>Why Dual Licensing Matters on FTL Commercial Projects</h2>
+  <p>Commercial roof projects routinely surface structural issues that residential projects do not — corroded steel decking, undersized parapet wall fastening, deteriorated wood blocking, fascia and soffit decay on stucco-clad buildings, inadequate roof-to-wall connections on multi-family. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236). On a commercial project where the deck or perimeter substrate needs structural work, dual licensing means we handle both scopes under one permit and one crew — instead of stopping the roof project, sub-contracting a separate framing or steel contractor, pulling a second permit, and adding 2 to 4 weeks to the project. On a 30,000 sq ft commercial roof, that schedule difference can mean weeks of additional disruption to the building's operations.</p>
+      `
+    }
+  ];
+
+  for (const p of fortLauderdaleCommercialPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready to Talk About Your Fort Lauderdale Commercial Roof?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale roofing hub</a> to schedule a free commercial roof assessment, including infrared moisture survey on flat roofs. Same-day callback during business hours.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale Roof Replacement (residential + commercial overview)</a></li>
+    <li><a href="/commercial-roofing" style="color: #dc2626; text-decoration: underline;">Commercial Roofing — full system + service overview</a></li>
+    <li><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing (TPO, PVC, EPDM)</a></li>
+    <li><a href="/single-ply-roofing" style="color: #dc2626; text-decoration: underline;">Single-Ply Roofing Systems</a></li>
+    <li><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a></li>
+    <li><a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">Roof Maintenance Programs (commercial)</a></li>
+    <li><a href="/pompano-beach-commercial-roofing" style="color: #dc2626; text-decoration: underline;">Pompano Beach Commercial Roofing</a></li>
+    <li><a href="/deerfield-beach-commercial-roofing" style="color: #dc2626; text-decoration: underline;">Deerfield Beach Commercial Roofing</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
+  ${companyAuthorityFooter('Broward')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered FTL Commercial: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
 
 

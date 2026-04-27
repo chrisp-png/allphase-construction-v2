@@ -560,6 +560,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Historic district roofing in Lake Worth Beach, FL. Period-correct tile and shingle re-roofs for 1920s–1950s bungalows. PBC wind-code compliant.',
     canonical: 'https://allphaseconstructionfl.com/lake-worth-beach-historic-roofing'
   },
+  '/fort-lauderdale-commercial-roofing': {
+    title: 'Fort Lauderdale Commercial Roofing | All Phase USA',
+    description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/fort-lauderdale-commercial-roofing'
+  },
   '/lake-worth-corridor-roofing': {
     title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
     description: 'Roof replacement in the Lake Worth Corridor — unincorporated PBC just south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code compliant. (754) 227-5605.',
