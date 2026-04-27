@@ -1,6 +1,6 @@
 # All Phase Construction USA — llms.txt
 # https://allphaseconstructionfl.com
-# Last updated: 2026-03-11
+# Last updated: 2026-04-27
 
 ## About
 All Phase Construction USA is a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida. We hold both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), providing structural expertise that standard roofing contractors cannot match. We have completed over 2,500 roofing projects across South Florida.
@@ -34,12 +34,12 @@ All Phase Construction USA is a dual-licensed roofing contractor headquartered i
 - Broward County Chamber of Commerce Member
 - Chamber of the Palm Beaches Member
 - BBB Accredited Business
-- 4.8/5.0 Google Rating (137+ reviews)
+- 4.8/5.0 Google Rating (143+ reviews)
 - 20+ Years in Business
 
 ## Service Areas
 We serve all of Broward County and Palm Beach County, Florida, including but not limited to:
-Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Parkland, Coconut Creek, Margate, Tamarac, Sunrise, Plantation, Davie, Hollywood, Pembroke Pines, Miramar, Weston, Delray Beach, Boynton Beach, Lake Worth Beach, West Palm Beach, Palm Beach Gardens, Jupiter, Wellington, Royal Palm Beach, Greenacres, Lantana, Hypoluxo, Ocean Ridge, Highland Beach, Lighthouse Point
+Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Parkland, Coconut Creek, Margate, Tamarac, Sunrise, Plantation, Davie, Hollywood, Pembroke Pines, Miramar, Weston, Delray Beach, Boynton Beach, Lake Worth Beach, West Palm Beach, Palm Beach Gardens, Jupiter, Wellington, Royal Palm Beach, Greenacres, Lake Worth Corridor (CDP), Lantana, Hypoluxo, Ocean Ridge, Highland Beach, Lighthouse Point
 
 ## Hurricane Zone Expertise
 South Florida's Broward and Palm Beach counties fall within the High Velocity Hurricane Zone (HVHZ), which requires the strictest building code compliance in the United States. Every roof we install meets or exceeds these requirements with enhanced fastening schedules, impact-rated materials, and roof-to-wall connections engineered to withstand 175+ mph wind speeds. Our dual licensing means we handle both the roofing system and any structural modifications required by code.
@@ -79,14 +79,68 @@ A wind mitigation inspection evaluates your roof's wind-resistance features (roo
 Broward County requires buildings 40 years and older to undergo structural and electrical recertification inspections. The roof is a critical component of this inspection. As dual-licensed contractors, we can assess and address both the roofing system and any structural concerns identified during recertification.
 
 ## Sitemap
+
+### Core Service Pages
 - Homepage: https://allphaseconstructionfl.com/
 - Roofing Services: https://allphaseconstructionfl.com/roofing-services
-- Commercial Roofing: https://allphaseconstructionfl.com/commercial-roofing
+- Roof Replacement: https://allphaseconstructionfl.com/roof-replacement
+- Roof Replacement Process (10 steps): https://allphaseconstructionfl.com/roof-replacement-process
 - Roof Repair: https://allphaseconstructionfl.com/roof-repair
 - Roof Inspection: https://allphaseconstructionfl.com/roof-inspection
-- Tile Roofing: https://allphaseconstructionfl.com/tile-roofing
-- About Us: https://allphaseconstructionfl.com/about-us
-- Blog: https://allphaseconstructionfl.com/blog
-- Contact: https://allphaseconstructionfl.com/contact
+- Roof Maintenance Programs: https://allphaseconstructionfl.com/roof-maintenance-programs
 - Roof Cost Calculator: https://allphaseconstructionfl.com/roof-cost-calculator
-- Locations: https://allphaseconstructionfl.com/locations/deerfield-beach/service-area
+- South Florida Pricing Guide: https://allphaseconstructionfl.com/pricing-guide
+
+### Roof Materials and Systems
+- Tile Roofing: https://allphaseconstructionfl.com/tile-roofing
+- Metal Roofing: https://allphaseconstructionfl.com/metal-roofing
+- Shingle Roofing: https://allphaseconstructionfl.com/shingle-roofing
+- Flat Roofing (TPO, PVC, EPDM): https://allphaseconstructionfl.com/flat-roofing
+- Single-Ply Roofing Systems: https://allphaseconstructionfl.com/single-ply-roofing
+- Commercial Roofing (overview): https://allphaseconstructionfl.com/commercial-roofing
+- Residential Roofing: https://allphaseconstructionfl.com/residential-roofing
+
+### Permit Guides (city-specific)
+- Boca Raton Roof Permit Guide (PBC, voluntarily HVHZ-equivalent, 4-5 week timeline): https://allphaseconstructionfl.com/boca-raton-roof-permit-guide
+- Pompano Beach Roof Permit Guide (Broward, legally HVHZ, 2-3 week timeline): https://allphaseconstructionfl.com/pompano-beach-roof-permit-guide
+- Coral Springs Roof Permit Guide: https://allphaseconstructionfl.com/coral-springs-roof-permit-guide
+
+### Priority City Roof Pages
+- Deerfield Beach (HQ): https://allphaseconstructionfl.com/locations/deerfield-beach
+- Boca Raton: https://allphaseconstructionfl.com/locations/boca-raton
+- Fort Lauderdale: https://allphaseconstructionfl.com/locations/fort-lauderdale
+- Pompano Beach: https://allphaseconstructionfl.com/locations/pompano-beach
+- Boynton Beach: https://allphaseconstructionfl.com/locations/boynton-beach
+- Coral Springs: https://allphaseconstructionfl.com/locations/coral-springs
+- West Palm Beach: https://allphaseconstructionfl.com/locations/west-palm-beach
+- Wellington: https://allphaseconstructionfl.com/locations/wellington
+- Lake Worth Beach: https://allphaseconstructionfl.com/locations/lake-worth-beach
+
+### CDP and Service-Vertical Pages
+- Lake Worth Corridor Roofing (unincorporated PBC CDP): https://allphaseconstructionfl.com/lake-worth-corridor-roofing
+- Fort Lauderdale Commercial Roofing: https://allphaseconstructionfl.com/fort-lauderdale-commercial-roofing
+- Pompano Beach Commercial Roofing: https://allphaseconstructionfl.com/pompano-beach-commercial-roofing
+- Deerfield Beach Commercial Roofing: https://allphaseconstructionfl.com/deerfield-beach-commercial-roofing
+
+### Cost and Decision Guides
+- Roof Replacement Cost in Florida: https://allphaseconstructionfl.com/roof-replacement-cost-florida
+- Broward County Roof Replacement Guide: https://allphaseconstructionfl.com/broward-county-roof-replacement-guide
+- Palm Beach County Roof Replacement Guide: https://allphaseconstructionfl.com/palm-beach-county-roof-replacement-guide
+- Boca Raton Roof Replacement Guide: https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide
+- Florida Roof Insurance Claims Guide: https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide
+- How to Hire a Roofing Contractor: https://allphaseconstructionfl.com/how-to-hire-roofing-contractor
+- Frequently Asked Questions: https://allphaseconstructionfl.com/frequently-asked-questions
+- Learning Center: https://allphaseconstructionfl.com/learning-center
+
+### About / Trust
+- About Us: https://allphaseconstructionfl.com/about-us
+- Reviews: https://allphaseconstructionfl.com/reviews
+- Projects Portfolio: https://allphaseconstructionfl.com/projects
+- Contact: https://allphaseconstructionfl.com/contact
+- Service Areas Hub: https://allphaseconstructionfl.com/locations/service-areas
+- Blog: https://allphaseconstructionfl.com/blog
+
+### Machine-readable
+- XML Sitemap: https://allphaseconstructionfl.com/sitemap.xml
+- HTML Sitemap: https://allphaseconstructionfl.com/sitemap.html
+- llms-full.txt: https://allphaseconstructionfl.com/llms-full.txt

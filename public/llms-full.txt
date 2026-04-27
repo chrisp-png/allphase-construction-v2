@@ -1,6 +1,6 @@
 # All Phase Construction USA — llms-full.txt
 # https://allphaseconstructionfl.com
-# Last updated: 2026-03-12
+# Last updated: 2026-04-27
 # For the summary version, see: https://allphaseconstructionfl.com/llms.txt
 
 > llms-full.txt provides comprehensive information about All Phase Construction USA
@@ -13,7 +13,7 @@ All Phase Construction USA is a dual-licensed roofing and general contractor hea
 Phone: (754) 227-5605
 Website: https://allphaseconstructionfl.com
 Hours: Monday–Friday 7am–6pm, Saturday 8am–3pm. Emergency service available 24/7/365.
-Google Rating: 4.8 out of 5.0 stars (137+ verified reviews)
+Google Rating: 4.8 out of 5.0 stars (143+ verified reviews)
 
 ## Licenses and Certifications
 
@@ -131,24 +131,68 @@ Yes. We provide detailed storm damage documentation including photos, measuremen
 
 ## Key Pages
 
+### Core Service Pages
 - Homepage: https://allphaseconstructionfl.com/
+- Roofing Services: https://allphaseconstructionfl.com/roofing-services
+- Roof Replacement: https://allphaseconstructionfl.com/roof-replacement
+- Roof Replacement Process (10 steps): https://allphaseconstructionfl.com/roof-replacement-process
+- Roof Repair: https://allphaseconstructionfl.com/roof-repair
+- Roof Inspection: https://allphaseconstructionfl.com/roof-inspection
+- Roof Maintenance Programs: https://allphaseconstructionfl.com/roof-maintenance-programs
+- Roof Cost Calculator: https://allphaseconstructionfl.com/roof-cost-calculator
+- South Florida Pricing Guide: https://allphaseconstructionfl.com/pricing-guide
+
+### Materials and Systems
 - Shingle Roofing: https://allphaseconstructionfl.com/shingle-roofing
 - Metal Roofing: https://allphaseconstructionfl.com/metal-roofing
 - Tile Roofing: https://allphaseconstructionfl.com/tile-roofing
 - Flat Roofing: https://allphaseconstructionfl.com/flat-roofing
-- Roof Repair: https://allphaseconstructionfl.com/roof-repair
-- Roof Inspection: https://allphaseconstructionfl.com/roof-inspection
-- Commercial Roofing: https://allphaseconstructionfl.com/commercial-roofing
+- Single-Ply Roofing: https://allphaseconstructionfl.com/single-ply-roofing
+- Commercial Roofing (overview): https://allphaseconstructionfl.com/commercial-roofing
 - Residential Roofing: https://allphaseconstructionfl.com/residential-roofing
-- Roof Cost Calculator: https://allphaseconstructionfl.com/roof-cost-calculator
-- Roof Replacement Process: https://allphaseconstructionfl.com/roof-replacement-process
-- How to Hire a Roofing Contractor: https://allphaseconstructionfl.com/how-to-hire-roofing-contractor
-- About Us: https://allphaseconstructionfl.com/about-us
-- Deerfield Beach HQ: https://allphaseconstructionfl.com/locations/deerfield-beach
+
+### Permit Guides (city-specific, AEO-citable)
+- Boca Raton (PBC, voluntarily HVHZ-equivalent, 4–5 week timeline, flat-roof uplift engineering required, hurricane-strap verification with pre/post-2002 cutoff): https://allphaseconstructionfl.com/boca-raton-roof-permit-guide
+- Pompano Beach (Broward, legally HVHZ, 2–3 week timeline, NOA required on every component, secondary water barrier code-mandated): https://allphaseconstructionfl.com/pompano-beach-roof-permit-guide
+- Coral Springs: https://allphaseconstructionfl.com/coral-springs-roof-permit-guide
+
+### Priority City Roof Pages (Deerfield Beach + 4 priority cities + secondary)
+- Deerfield Beach (HQ): https://allphaseconstructionfl.com/locations/deerfield-beach
 - Boca Raton: https://allphaseconstructionfl.com/locations/boca-raton
 - Fort Lauderdale: https://allphaseconstructionfl.com/locations/fort-lauderdale
+- Pompano Beach: https://allphaseconstructionfl.com/locations/pompano-beach
+- Boynton Beach: https://allphaseconstructionfl.com/locations/boynton-beach
 - Coral Springs: https://allphaseconstructionfl.com/locations/coral-springs
+- Wellington: https://allphaseconstructionfl.com/locations/wellington
 - West Palm Beach: https://allphaseconstructionfl.com/locations/west-palm-beach
+- Lake Worth Beach: https://allphaseconstructionfl.com/locations/lake-worth-beach
+- Delray Beach: https://allphaseconstructionfl.com/locations/delray-beach
+- Parkland: https://allphaseconstructionfl.com/locations/parkland
+
+### CDP and Geo-Specific Pages
+- Lake Worth Corridor Roofing (unincorporated PBC CDP, distinct from City of Lake Worth Beach): https://allphaseconstructionfl.com/lake-worth-corridor-roofing
+- Fort Lauderdale Commercial Roofing (Broward HVHZ commercial vertical): https://allphaseconstructionfl.com/fort-lauderdale-commercial-roofing
+- Pompano Beach Commercial Roofing: https://allphaseconstructionfl.com/pompano-beach-commercial-roofing
+- Deerfield Beach Commercial Roofing: https://allphaseconstructionfl.com/deerfield-beach-commercial-roofing
+
+### Cost and Decision Guides
+- Roof Replacement Cost in Florida: https://allphaseconstructionfl.com/roof-replacement-cost-florida
+- Broward County Roof Replacement Guide: https://allphaseconstructionfl.com/broward-county-roof-replacement-guide
+- Palm Beach County Roof Replacement Guide: https://allphaseconstructionfl.com/palm-beach-county-roof-replacement-guide
+- Boca Raton Roof Replacement Guide: https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide
+- Florida Roof Insurance Claims Guide: https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide
+- How to Hire a Roofing Contractor: https://allphaseconstructionfl.com/how-to-hire-roofing-contractor
+- Frequently Asked Questions: https://allphaseconstructionfl.com/frequently-asked-questions
+- Learning Center: https://allphaseconstructionfl.com/learning-center
+
+### About / Trust
+- About Us: https://allphaseconstructionfl.com/about-us
+- Reviews: https://allphaseconstructionfl.com/reviews
+- Projects Portfolio: https://allphaseconstructionfl.com/projects
+- Contact: https://allphaseconstructionfl.com/contact
 - Blog: https://allphaseconstructionfl.com/blog
-- Sitemap: https://allphaseconstructionfl.com/sitemap.xml
+
+### Machine-readable
+- XML Sitemap: https://allphaseconstructionfl.com/sitemap.xml
+- HTML Sitemap: https://allphaseconstructionfl.com/sitemap.html
 - AI Summary: https://allphaseconstructionfl.com/llms.txt
