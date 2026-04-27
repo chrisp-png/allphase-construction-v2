@@ -120,12 +120,21 @@ status = 200
 # ======================================================================
 # GSC Soft 404 fixes — 2026-03-30
 # ======================================================================
-[[redirects]]
-from = "/roof-repair/north-lauderdale"
-to = "/roof-repair"
-status = 301
-force = true
-
+# Removed in PR-38 (2026-04-27):
+#   - /roof-repair/north-lauderdale → /roof-repair (was killing a real
+#     prerendered page; north-lauderdale is in cities.json AND has an
+#     active /locations/north-lauderdale hub, so the redirect was
+#     stale post-PR-25 NuclearMetadata fix).
+#   - /roof-inspection/lake-park → /roof-inspection (same pattern).
+# Kept intentionally:
+#   - /locations/westlake → /locations/west-palm-beach (consolidation).
+#   - /locations/palm-beach → /locations/west-palm-beach (consolidation).
+#   - /locations/lauderdale-by-the-sea → /locations/fort-lauderdale (consolidation).
+#   - /roof-inspection/westlake → /roof-inspection (kept for consistency
+#     with /locations/westlake consolidation — removing this would have
+#     created an inconsistent state where the inspection page serves real
+#     westlake content while the location hub redirects away to WPB).
+# ======================================================================
 [[redirects]]
 from = "/locations/westlake"
 to = "/locations/west-palm-beach"
@@ -146,12 +155,6 @@ force = true
 
 [[redirects]]
 from = "/roof-inspection/westlake"
-to = "/roof-inspection"
-status = 301
-force = true
-
-[[redirects]]
-from = "/roof-inspection/lake-park"
 to = "/roof-inspection"
 status = 301
 force = true
