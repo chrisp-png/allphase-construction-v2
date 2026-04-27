@@ -2109,6 +2109,8 @@ const SPA_SHELL_VICTIM_SLUGS = [
   'lake-worth-beach-flat-roof-replacement',
   'lake-worth-beach-historic-roofing',
   'lake-worth-beach-roof-insurance-claim',
+  // Lake Worth Corridor — distinct CDP (PR-30)
+  'lake-worth-corridor-roofing',
   // Lighthouse Point (2)
   'lighthouse-point-roof-replacement',
   'lighthouse-point-tile-roof-replacement',
@@ -3371,6 +3373,7 @@ ${companyAuthorityFooter()}
       ['lake-worth-beach-flat-roof-replacement', 'Lake Worth Beach Flat Roof Replacement'],
       ['lake-worth-beach-roof-insurance-claim', 'Lake Worth Beach Roof Insurance Claim'],
       ['lake-worth-beach-tile-roof-replacement', 'Lake Worth Beach Tile Roof Replacement'],
+      ['lake-worth-corridor-roofing', 'Lake Worth Corridor Roofing (the unincorporated CDP)'],
     ],
     'wellington': [
       ['olympia-wellington-roofing', 'Olympia Wellington Roofing'],
@@ -5428,6 +5431,97 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered Lake Worth Geo: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // LAKE WORTH CORRIDOR (CDP) — distinct from Lake Worth Beach (city)
+  // =====================================================================
+  // Lake Worth Corridor is the unincorporated Census-Designated Place
+  // south of Lake Worth Beach. ~28,000 residents, ~four square miles.
+  // The 4/26/2026 audit found 700+ daily impressions for the query
+  // family "roofing repairs lake worth corridor fl" sitting at avg
+  // position 42–47 with NO destination page on the site (homeowners
+  // searching for the Corridor were getting Lake Worth Beach hits which
+  // are a different jurisdiction). PR-30 ships the destination.
+  //
+  // Permits in the Corridor go through Palm Beach County (unincorporated)
+  // — NOT the City of Lake Worth Beach. The page makes that distinction
+  // explicit. PBC wind-code (170+ mph design) — voluntarily built to
+  // HVHZ specification where it strengthens the assembly. Per CLAUDE.md
+  // §14: NO insurance / claim / hurricane-damage language anywhere.
+  // =====================================================================
+  const lakeWorthCorridorPages = [
+    {
+      slug: 'lake-worth-corridor-roofing',
+      title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
+      description: 'Roof replacement in the Lake Worth Corridor — unincorporated PBC just south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code compliant. (754) 227-5605.',
+      h1: 'Roof Replacement in Lake Worth Corridor, FL',
+      intro: `Lake Worth Corridor is the unincorporated Census-Designated Place that sits south of Lake Worth Beach in Palm Beach County — about 28,000 residents across roughly four square miles between Federal Highway and the Florida Turnpike. Most homeowners here Google "Lake Worth" and end up on Lake Worth Beach pages that don't actually serve them, because the Corridor is a different jurisdiction with different permitting. All Phase Construction USA replaces roofs throughout the Corridor with assemblies built to Palm Beach County wind-code requirements rated for 170+ mph design wind speeds.`,
+      sections: `
+  <h2>Lake Worth Corridor Is Not the Same as Lake Worth Beach</h2>
+  <p>This trips up almost every Corridor homeowner during a roof project. Lake Worth Beach is an incorporated city with its own building department, its own permit fees, and its own elected commission. Lake Worth Corridor is an unincorporated CDP — a census-defined area without its own government. Permits in the Corridor are pulled through Palm Beach County's Planning, Zoning &amp; Building Department at 2300 N Jog Road in West Palm Beach, not the City of Lake Worth Beach. The county fee schedule, inspection cadence, and code interpretation differ from the city's. We pull permits in both jurisdictions every week and confirm the right one based on parcel ID before we quote the project — so there are no surprises at submittal.</p>
+
+  <h2>The 1970s–1990s Roof Wave</h2>
+  <p>Most Lake Worth Corridor homes were built between 1972 and 1998 — a 26-year window that puts the original roof systems squarely in the re-roof zone. Three patterns dominate the work we see:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Concrete tile installed in the 1970s</strong> with felt underlayment that has long exceeded its 20-year service life. The tile itself usually still has another 25 years of service in it — what fails is the underlayment underneath.</li>
+    <li><strong>Flat tile from the 1980s and early 1990s</strong> with thin underlayment that often shows leaks long before the tile shows visible damage. Homeowners see a "good-looking" roof and don't realize the assembly underneath is failing.</li>
+    <li><strong>Architectural asphalt shingles installed in the late 1990s</strong> that are now hitting their 25-year end-of-life mark. Granule loss, brittleness, and seal-strip failure show up first along the south- and west-facing slopes.</li>
+  </ul>
+  <p>Almost every replacement we quote in the Corridor falls into one of these three categories.</p>
+
+  <h2>Roof Systems We Install in Lake Worth Corridor</h2>
+  <p><strong>Concrete and clay tile re-roofs.</strong> Full underlayment tear-off down to the deck, deck repair and re-nailing to current PBC fastening schedule, SBS-modified peel-and-stick underlayment, tile reset with stainless fasteners, replacement tile sourced where original tiles are cracked or chipped. The original tile gets reused where possible; the assembly underneath is what needs to be replaced. For 1970s and 1980s homes the deck often needs partial repair — we include that work in the original quote rather than billing it as a change order.</p>
+  <p><strong>Architectural asphalt shingles.</strong> For subdivisions whose HOAs require shingle-to-shingle replacement and for homes converting from worn 3-tab to architectural-grade systems. Premium architectural shingles in this market carry 130–160 mph wind warranties when installed to manufacturer specification. We use a four-nail pattern by default and a six-nail pattern in zones with higher wind exposure.</p>
+  <p><strong>Standing-seam metal.</strong> For homeowners choosing the longest-life option. 24-gauge Galvalume or Kynar-coated steel panels with hidden clip fastening, 40–70 year service life. Heavier upfront cost but the lowest cost-per-year-of-service of any system we install. Marine-grade fasteners on the eastern side of the Corridor where salt exposure shortens fastener life.</p>
+  <p><strong>Flat and low-slope roof sections.</strong> Many Corridor homes have rear additions, covered porches, or carport sections with low-slope roof areas. We install TPO and modified-bitumen membrane systems with proper drainage, edge metal, and seam-welded laps. Almost all of these need replacement at the same time as the main roof — addressing them later means tearing into the new assembly to do it.</p>
+
+  <h2>Palm Beach County Wind-Code Compliance</h2>
+  <p>Unlike Broward County, which is legally classified High Velocity Hurricane Zone, Lake Worth Corridor is in Palm Beach County and follows the standard PBC wind-code — 170+ mph design wind speeds with enhanced fastening schedules and impact-rated material requirements. Our crews voluntarily build to HVHZ specification on every Corridor re-roof where it strengthens the assembly without adding meaningful cost: second water barrier underlayment, enhanced edge metal fastening, and Notice of Acceptance documentation on every product. The voluntary upgrade typically adds 3–5% to material cost and zero to labor cost — and produces a measurably more durable roof.</p>
+
+  <h2>Neighborhoods We Serve in the Corridor</h2>
+  <p>The Corridor stretches from Federal Highway west to the Florida Turnpike, roughly bounded by Lantana Road to the south and Lake Avenue to the north. Subdivisions and areas we work in regularly include the residential streets between 6th Avenue South and Lantana Road, the Pine Tree Park and South Palm Park areas, the homes along Lake Worth Road west of I-95, the Lucerne Lakes communities, and the older single-family neighborhoods centered on Park Avenue. East of I-95 the salt-air exposure shortens fastener life — we use 304-stainless or marine-grade fasteners on every coastal re-roof in the Corridor regardless of the rest of the assembly choice.</p>
+
+  <h2>Permitting and Timeline</h2>
+  <p>Palm Beach County's Planning, Zoning &amp; Building Department typically issues residential roof permits within 2–3 weeks of submittal for straightforward replacements, with longer timelines during peak season (May–September). All Phase Construction USA pulls every Lake Worth Corridor permit under our state license (CCC-1331464) — never under the homeowner's name. Pulling a permit under the homeowner's name shifts the liability for code compliance and inspection to the homeowner, which becomes a problem if anything fails inspection or shows up later in a real-estate transaction. We handle the entire permit chain from submittal through final inspection and certificate of completion.</p>
+
+  <h2>Why Dual-Licensed Matters in the Corridor</h2>
+  <p>Many Corridor homes have rafter or deck issues that only show up once the existing roof is removed. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236). On a 1970s home where the deck needs structural reinforcement before the new roof system goes on, the dual licensing means we handle both the structural work and the roofing under one permit and one crew — no second contractor, no second permit, no schedule slip waiting for someone else's availability.</p>
+      `
+    }
+  ];
+
+  for (const p of lakeWorthCorridorPages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready for a Free Roof Assessment?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County roofing hub</a> to schedule a free inspection. Same-day callback during business hours, 48-hour inspection booking.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/palm-beach-county" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roofing Contractor</a></li>
+    <li><a href="/locations/lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Lake Worth Beach Roof Replacement (the city, not the Corridor)</a></li>
+    <li><a href="/roof-repair/lake-worth-beach" style="color: #dc2626; text-decoration: underline;">Roof Repair near Lake Worth Beach</a></li>
+    <li><a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Replacement</a></li>
+    <li><a href="/locations/greenacres" style="color: #dc2626; text-decoration: underline;">Greenacres Roof Replacement</a></li>
+    <li><a href="/lake-worth-beach-flat-roof-replacement" style="color: #dc2626; text-decoration: underline;">Flat Roof Replacement near Lake Worth</a></li>
+    <li><a href="/lake-worth-beach-historic-roofing" style="color: #dc2626; text-decoration: underline;">Historic District Roofing in Lake Worth</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Lake Worth Corridor: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
   // =====================================================================
   // WELLINGTON GEO-RELEVANCE — Neighborhood + Service × City pages
