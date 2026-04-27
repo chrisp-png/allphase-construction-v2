@@ -555,6 +555,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Historic district roofing in Lake Worth Beach, FL. Period-correct tile and shingle re-roofs for 1920s–1950s bungalows. PBC wind-code compliant.',
     canonical: 'https://allphaseconstructionfl.com/lake-worth-beach-historic-roofing'
   },
+  '/lake-worth-corridor-roofing': {
+    title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
+    description: 'Roof replacement in the Lake Worth Corridor — unincorporated PBC just south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code compliant. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/lake-worth-corridor-roofing'
+  },
   '/lake-worth-beach-roof-insurance-claim': {
     title: 'Lake Worth Beach Roof Insurance Claim | All Phase USA',
     description: 'Lake Worth Beach roof insurance claim assistance. Full documentation, adjuster coordination, wind mitigation credits. Licensed & insured.',
