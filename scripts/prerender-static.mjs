@@ -2078,12 +2078,13 @@ function writeToPublicAndDist(relativePath, content) {
 // =====================================================================
 
 const SPA_SHELL_VICTIM_SLUGS = [
-  // Boca Raton (5)
+  // Boca Raton (5 + permit guide)
   'boca-raton-luxury-estate-roofing',
   'boca-raton-commercial-roofing',
   'boca-raton-metal-roofing',
   'boca-raton-tile-re-roof',
   'boca-raton-wind-mitigation-roofing',
+  'boca-raton-roof-permit-guide',
   // Boynton Beach (5)
   'boynton-beach-55-plus-community-roofing',
   'boynton-beach-commercial-roofing',
@@ -3325,6 +3326,7 @@ ${companyAuthorityFooter()}
   // "Featured Communities & Specialty Services" link block into each parent city page.
   const COMMUNITY_LINKS_BY_CITY = {
     'boca-raton': [
+      ['boca-raton-roof-permit-guide', 'Boca Raton Roof Permit Guide (2026)'],
       ['coastal-boca-raton-roofing-contractor', 'Coastal Boca Raton Roofing'],
       ['west-boca-raton-roof-replacement', 'West Boca Raton Roof Replacement'],
       ['north-boca-raton-roof-replacement', 'North Boca Raton Roof Replacement'],
@@ -5521,6 +5523,107 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered Lake Worth Corridor: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // BOCA RATON ROOF PERMIT GUIDE (PR-31)
+  // =====================================================================
+  // Boca runs one of the strictest residential roof reviews in Palm Beach
+  // County despite being legally PBC (NOT HVHZ) — they voluntarily apply
+  // HVHZ-equivalent review standards. Three real, AEO-citable
+  // differentiators framed up front:
+  //   1. 4–5 week permit timeline (vs 2–3 in most PBC cities)
+  //   2. Sealed engineering required for flat-roof uplift on every job
+  //   3. Hurricane-strap verification with the pre/post-2002 cutoff
+  //      (FBC 2001 took effect 3/1/2002 — pre-2002 homes often need an
+  //      engineer in the attic to physically verify strap presence)
+  // =====================================================================
+  const bocaRatonPermitGuidePages = [
+    {
+      slug: 'boca-raton-roof-permit-guide',
+      title: 'Boca Raton Roof Permit Guide (2026) | All Phase USA',
+      description: 'Boca Raton roof permit guide — 4–5 week timeline, flat-roof uplift engineering, hurricane-strap verification for pre-2002 homes. (754) 227-5605.',
+      h1: 'Boca Raton Roof Permit Guide (2026)',
+      intro: `Boca Raton runs one of the strictest residential roof permit reviews in Palm Beach County. Three things set Boca apart from neighboring cities: flat-roof systems require sealed engineering for wind uplift before the city will issue a permit, hurricane-strap verification is required for older homes (often involving an engineer entering the attic to physically inspect what is there), and the typical permit timeline runs 4 to 5 weeks rather than the 2 to 3 weeks common elsewhere in Palm Beach County. All Phase Construction USA pulls Boca permits weekly and knows exactly what the city looks for at each stage of the review.`,
+      sections: `
+  <h2>Why Boca Permits Take 4 to 5 Weeks</h2>
+  <p>The City of Boca Raton voluntarily applies an HVHZ-equivalent review standard even though the city sits in Palm Beach County and is not legally classified as High Velocity Hurricane Zone. That voluntary upgrade means the building department reviews each application with the same rigor as Broward and Miami-Dade — Notice of Acceptance documentation on every product, sealed engineering on flat systems, and verification of secondary water barrier underlayment. The trade-off is timeline. A residential roof permit in Boca typically takes 4 to 5 weeks from submittal to issued permit. Plan-checked permits sometimes move faster; permits that trigger structural review or HOA architectural board involvement run longer.</p>
+
+  <h2>Flat Roof Uplift Engineering</h2>
+  <p>For any flat or low-slope roof system in Boca Raton — TPO, PVC, modified bitumen, or built-up — the building department requires sealed engineering calculations for wind uplift before issuing the permit. The engineer must demonstrate the roof assembly's resistance to design-load wind speeds (170+ mph in PBC, with Boca specifically applying enhanced safety factors) and document the fastening pattern, edge metal attachment, and substrate preparation. This is in addition to the manufacturer's NOA. Submitting a flat-roof permit in Boca without engineering on the package guarantees a permit denial — we include the engineering scope in every Boca flat-roof quote so there is no surprise mid-project.</p>
+
+  <h2>Hurricane Strap Verification — The Pre-2002 Cutoff</h2>
+  <p>Boca Raton requires verification that hurricane straps — the metal connectors tying roof framing to the wall plate — are present and properly installed before issuing a roof permit. The cutoff year that matters is 2002. Florida Building Code 2001 went into effect on March 1, 2002 and standardized hurricane-strap installation across new residential construction.</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Homes built after March 2002</strong> typically have documented strap installation in the original construction records. Verification is paperwork-driven and adds little time to the permit review.</li>
+    <li><strong>Homes built before March 2002</strong> often require an engineer to physically enter the attic and verify what is actually installed. If straps are missing, undersized, or improperly fastened, the engineer specs the retrofit and the retrofit becomes part of the roofing scope.</li>
+  </ul>
+  <p>This adds time and cost on older homes — but it is not optional in Boca, and it dramatically improves the wind performance of a 1970s, 1980s, or 1990s residence. We coordinate the engineer site visit during the initial inspection so the strap verification, the roof scope quote, and the permit submittal happen in one coordinated sequence rather than three separate phases.</p>
+
+  <h2>Documents the Building Department Needs</h2>
+  <p>A complete Boca residential roof permit application includes:</p>
+  <ul style="line-height: 1.75;">
+    <li>Sealed product approval (Florida NOA) for every roofing component — primary covering, underlayment, drip edge, fasteners</li>
+    <li>Manufacturer specification sheets for the assembly</li>
+    <li>Sealed engineering for any flat-roof system (uplift calculations)</li>
+    <li>Hurricane-strap inspection report for pre-2002 homes</li>
+    <li>Wind-load calculations matching the home's exposure category</li>
+    <li>Fastening schedule diagram</li>
+    <li>Contractor Florida license verification (we file CCC-1331464 and CGC-1526236)</li>
+    <li>Workers' compensation and general liability certificates of coverage</li>
+    <li>For HOA-managed homes: architectural review board approval letter</li>
+  </ul>
+  <p>An incomplete package gets returned for correction, which restarts the review clock. We submit the package fully assembled the first time.</p>
+
+  <h2>Inspections During the Project</h2>
+  <p>Boca runs three required inspections on a typical residential re-roof:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Tear-off inspection</strong> — after the existing roof is removed and the deck is exposed. The inspector verifies deck condition, hurricane-strap presence (if not previously verified), and any structural repairs. We schedule this within 24 hours of completing tear-off.</li>
+    <li><strong>Dry-in inspection</strong> — after the underlayment is installed but before the final covering goes on. The inspector verifies the underlayment type matches the NOA on file, confirms full-coverage installation, and checks valley and penetration flashing.</li>
+    <li><strong>Final inspection</strong> — after the roof is complete. The inspector verifies the final covering matches the NOA, that ridge vents and edge metal are properly fastened, and that the manufacturer warranty package is in order.</li>
+  </ul>
+  <p>Failing an inspection extends the project by 5 to 10 days while the issue is corrected and the inspector returns. Our crews are trained to the Boca-specific inspection points so first-pass approval is the norm.</p>
+
+  <h2>HOA Architectural Review</h2>
+  <p>Most Boca residential communities require architectural review board approval before a permit application is submitted to the city. Boca West, Royal Palm Yacht &amp; Country Club, St. Andrews Country Club, Broken Sound, Boca Pointe, Polo Club, Saturnia, Stonebridge, and similar communities maintain approved-vendor lists, color palettes, and material specifications that the homeowner's choice must match. We coordinate the architectural submittal in parallel with the permit application so the two timelines run concurrently rather than back-to-back — saving the homeowner 2 to 4 weeks of total project duration in HOA-heavy communities.</p>
+
+  <h2>Why Dual Licensing Helps in Boca</h2>
+  <p>Boca's strict review often surfaces structural issues during the tear-off inspection — undersized rafters, deteriorated decking, missing or improperly fastened hurricane straps, fascia rot, soffit decay. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236). When the inspector flags structural work, we handle it under our existing permit and our existing crew rather than subcontracting to a separate framing contractor — which would mean a second permit, a second inspection cycle, and another 2 to 3 weeks added to the project. Dual licensing is the difference between a 5-week project and an 8-week project on a Boca home with hidden structural issues.</p>
+      `
+    }
+  ];
+
+  for (const p of bocaRatonPermitGuidePages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready to Start Your Boca Raton Roof Project?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton roofing hub</a> to schedule a free inspection. Same-day callback during business hours, 48-hour inspection booking. We pull every Boca permit under our state license — never under the homeowner's name.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement</a></li>
+    <li><a href="/roof-repair/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Repair</a></li>
+    <li><a href="/roof-inspection/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Inspection</a></li>
+    <li><a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a></li>
+    <li><a href="/boca-raton-tile-re-roof" style="color: #dc2626; text-decoration: underline;">Boca Raton Tile Re-Roof</a></li>
+    <li><a href="/boca-raton-metal-roofing" style="color: #dc2626; text-decoration: underline;">Boca Raton Metal Roofing</a></li>
+    <li><a href="/coral-springs-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Permit Guide</a> (Broward HVHZ comparison)</li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Boca Permit Guide: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
 
   // =====================================================================
