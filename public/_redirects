@@ -557,9 +557,13 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roofing-contractor-lauderdale-by-the-sea-fl /locations/lauderdale-by-the-sea 301!
 /roofing-contractor-tamarac-fl /locations/tamarac 301!
 
-# Soft 404 fix — /roof-repair/fort-lauderdale doesn't exist as a route
-/roof-repair/fort-lauderdale /roof-repair 301!
-/roof-repair/fort-lauderdale/ /roof-repair 301!
+# Removed in PR-37: /roof-repair/fort-lauderdale redirect.
+# Originally added as a "soft 404 fix" (March 2026, CLAUDE.md §10) when
+# the page was hitting the SPA shell. PR-25 (NuclearMetadata isFallback +
+# 44 SEO_TITLES entries) and the cities.json silo prerender now
+# generate dist/roof-repair/fort-lauderdale/index.html with unique
+# title/content on every build. The 301 was actively killing a real
+# prerendered page for one of the four priority cities. See PR-37.
 
 # Dead blog posts missing from _redirects (also added to blog-redirects edge fn)
 /blog/how-to-spot-and-fix-roof-leaks-in-south-florida-a-homeowners-guide-to-protecting-our-home /blog 301!
