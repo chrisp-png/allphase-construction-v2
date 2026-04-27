@@ -2085,12 +2085,13 @@ const SPA_SHELL_VICTIM_SLUGS = [
   'boca-raton-tile-re-roof',
   'boca-raton-wind-mitigation-roofing',
   'boca-raton-roof-permit-guide',
-  // Boynton Beach (5)
+  // Boynton Beach (5 + replacement guide)
   'boynton-beach-55-plus-community-roofing',
   'boynton-beach-commercial-roofing',
   'boynton-beach-oceanfront-roofing',
   'boynton-beach-roof-insurance-claim',
   'boynton-beach-tile-roof-replacement',
+  'boynton-beach-roof-replacement-guide',
   // Boca + Boynton neighborhood / community
   'broken-sound-boca-raton-roofing',
   'canyon-lakes-boynton-beach-roofing',
@@ -3376,6 +3377,7 @@ ${companyAuthorityFooter()}
       ['highland-beach-roof-replacement', 'Highland Beach Roof Replacement'],
     ],
     'boynton-beach': [
+      ['boynton-beach-roof-replacement-guide', 'Boynton Beach Roof Replacement Guide (2026)'],
       ['boynton-beach-oceanfront-roofing', 'Boynton Beach Oceanfront Roofing'],
       ['wind-damage-insurance-claim-boynton-beach', 'Boynton Beach Wind Damage Insurance Claim'],
       ['boynton-beach-tile-roof-replacement', 'Boynton Beach Tile Roof Replacement'],
@@ -5873,6 +5875,125 @@ ${companyAuthorityFooter()}
     console.log(`✅ Prerendered FTL Commercial: ${p.slug}/index.html`);
     totalPages++;
   }
+
+  // =====================================================================
+  // BOYNTON BEACH ROOF REPLACEMENT GUIDE (PR-39)
+  // =====================================================================
+  // Boynton is the 4th priority city per the audit and the only one
+  // without a city-specific replacement guide (Boca, Broward County,
+  // and Palm Beach County all have one). This fills that gap.
+  //
+  // Boynton's roof market has three defining characteristics:
+  //   1. Heavy 55+ community concentration (Aberdeen, Hunters Run,
+  //      Indian Spring, Valencia Lakes, Canyon Lakes, Palm Isles,
+  //      Cascade Lakes) — different decision dynamics than single-
+  //      family residential because association boards drive the
+  //      timing and material spec.
+  //   2. 1980s-early-2000s housing wave — meaning concrete tile and
+  //      flat tile underlayment is hitting end-of-life right now.
+  //   3. Palm Beach County wind-code (NOT legally HVHZ unlike Broward).
+  //
+  // Permit timeline through Boynton Beach Building Department:
+  // 3-4 weeks for residential roof permits (between Boca's 4-5 and
+  // the Corridor's 2-3).
+  // =====================================================================
+  const boyntonBeachGuidePages = [
+    {
+      slug: 'boynton-beach-roof-replacement-guide',
+      title: 'Boynton Beach Roof Replacement Guide (2026) | All Phase USA',
+      description: 'Boynton Beach roof replacement guide — 55+ HOA communities (Aberdeen, Hunters Run, Indian Spring), PBC wind-code, 3–4 week permits. (754) 227-5605.',
+      h1: 'Boynton Beach Roof Replacement Guide (2026)',
+      intro: `Boynton Beach has one of Palm Beach County's most concentrated 55+ community markets, and it shows up in every roof project we quote here. Over half the residential re-roofs we book in Boynton are in HOA-managed communities — Aberdeen, Hunters Run, Indian Spring, Valencia Reserve, Valencia Bay, Canyon Lakes, Palm Isles, Cascade Lakes, Coral Lakes — where the association board drives the timing, the approved-material list, and the work-hour windows. Outside the gates, Boynton's 1980s and early-2000s single-family housing wave has roofs hitting end-of-life right now. This guide explains what a Boynton roof replacement actually looks like in 2026: cost, materials, permit timeline, and the HOA reality every Boynton homeowner navigates.`,
+      sections: `
+  <h2>The Boynton Beach Roofing Reality</h2>
+  <p>Most Boynton residential homes were built in two waves: a smaller 1960s–1970s wave concentrated northeast of US-1, and a much larger 1980s–early-2000s wave that built out the western half of the city as far as the Florida Turnpike. The second wave dominates the current re-roof market. Concrete tile installed during that period typically used a felt or 30-pound underlayment rated for 20–25 years; flat tile from the same era used similar underlayment with even shorter exposure tolerance. Both are reaching the end of their service lives now. The tile itself usually still has 25+ years of life remaining — what fails is the assembly underneath. Architectural shingle systems from the late 1990s and early 2000s are also at their natural 20–25 year replacement window.</p>
+
+  <h2>55+ Community Roof Replacement — The Boynton Submarket</h2>
+  <p>Boynton's 55+ community concentration is the single biggest factor in how a roof project unfolds here. Aberdeen, Hunters Run, Indian Spring, Valencia Reserve, Valencia Bay, Canyon Lakes, Palm Isles, Cascade Lakes, and Coral Lakes each maintain an architectural review board that approves material samples, color, profile, and ridge detail before a permit application is submitted. We coordinate with the association board in parallel with the city's permit application so the two timelines run concurrently rather than back-to-back — saving the homeowner 2 to 4 weeks of total project duration in HOA-heavy communities. Many of these associations also restrict tear-off and material-delivery hours (typically 8 AM to 4 PM Monday through Friday), require a deposit for shared-driveway protection, and need stack-by-stack scheduling on adjacent townhome units. None of this is a problem if the contractor knows the community in advance — but it surprises out-of-area contractors, and that surprise becomes a project delay.</p>
+
+  <h2>Roof Systems We Replace in Boynton</h2>
+  <p><strong>Concrete and clay tile re-roofs.</strong> The dominant Boynton replacement system. Full underlayment tear-off, deck repair and re-nailing to current PBC fastening schedule, SBS-modified peel-and-stick underlayment, tile reset with stainless fasteners, replacement tile sourced where original tile is cracked or chipped. Most Boynton 55+ communities have approved-tile lists; we work with manufacturers whose products are on those lists.</p>
+  <p><strong>Architectural asphalt shingles.</strong> For neighborhoods and HOA communities that allow or require shingle. Premium architectural shingles in this market carry 130–160 mph wind warranties when installed to manufacturer specification. We use a four-nail pattern by default and a six-nail pattern in zones with higher wind exposure.</p>
+  <p><strong>Standing-seam metal.</strong> For homeowners choosing the longest-life option. 24-gauge Galvalume or Kynar-coated steel panels with hidden clip fastening, 40–70 year service life. Some Boynton HOAs allow metal; many do not. We confirm with the architectural board before quoting.</p>
+  <p><strong>Flat and low-slope roof sections.</strong> Many Boynton homes have rear additions, covered patios, or carport sections with low-slope roof areas. Most need TPO or modified-bitumen membrane replacement at the same time as the main roof — addressing them later means tearing into the new assembly to do it.</p>
+
+  <h2>Cost Ranges for a Typical Boynton Beach Re-Roof</h2>
+  <p>For a 2,000 sq ft Boynton single-family home in 2026, current pricing runs:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Architectural asphalt shingle:</strong> $13,000–$22,000 installed, including tear-off, new underlayment, deck re-nailing, and disposal.</li>
+    <li><strong>Concrete tile re-roof (reusing existing tile):</strong> $25,000–$42,000 installed.</li>
+    <li><strong>Clay tile re-roof:</strong> $30,000–$55,000 installed.</li>
+    <li><strong>Standing-seam metal:</strong> $22,000–$40,000 installed.</li>
+  </ul>
+  <p>Pricing varies based on roof pitch, complexity (number of valleys, hips, dormers, penetrations), condition of the deck once the existing covering is removed, and any structural reinforcement needed. Boynton's 55+ communities often have specific underlayment or attachment requirements above the PBC code baseline; those add 3–8% to the base material cost. Our quote shows each line item separately so the homeowner can see exactly what is being paid for.</p>
+
+  <h2>Palm Beach County Wind-Code Compliance for Boynton</h2>
+  <p>Boynton Beach is in Palm Beach County and follows the standard PBC wind-code — 170+ mph design wind speeds with enhanced fastening schedules and impact-rated material requirements. Boynton is NOT legally High Velocity Hurricane Zone (that classification applies only to Broward and Miami-Dade counties). However, we voluntarily build to HVHZ specification on every Boynton re-roof where it strengthens the assembly without adding meaningful cost — second water barrier underlayment, enhanced edge metal fastening, Notice of Acceptance documentation on every product. The voluntary upgrade typically adds 3–5% to material cost and zero to labor cost — and produces a measurably more durable roof.</p>
+
+  <h2>Boynton-Specific Neighborhoods We Serve</h2>
+  <p>The Boynton residential market spans several distinct sub-areas:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>The 55+ community belt</strong> — west of I-95 along Boynton Beach Boulevard, Lake Worth Road, and Hypoluxo Road. Aberdeen, Hunters Run, Indian Spring, Valencia Reserve, Valencia Bay, Cascade Lakes, Canyon Lakes, Palm Isles, Coral Lakes. HOA architectural review on every project.</li>
+    <li><strong>Single-family northeast Boynton</strong> — the older 1960s–1970s neighborhoods east of I-95, north of Boynton Beach Boulevard. Mix of original metal-roof ranches and concrete tile re-roofs from earlier replacement cycles.</li>
+    <li><strong>The waterfront corridor along Federal Highway and east toward A1A</strong> — salt-air exposure compresses standard galvanized fastener life. We use 304-stainless or marine-grade fasteners on every coastal Boynton re-roof regardless of the rest of the assembly choice.</li>
+    <li><strong>Western Boynton single-family subdivisions</strong> — built largely in the 1990s–early-2000s, mostly concrete flat tile or architectural shingle. The bulk of non-HOA residential re-roofs we book in the city.</li>
+    <li><strong>Mixed-use downtown Boynton</strong> — the marina district and the Federal Highway corridor have multi-family condo, mid-rise residential, and small commercial mixed in. Different scope (often shared roof structures requiring association coordination), but the same underlying material and code reality.</li>
+  </ul>
+
+  <h2>The Boynton Replacement Process and Permit Timeline</h2>
+  <p>A typical Boynton residential roof replacement runs 3 to 5 days of on-site crew work, plus a 3 to 4 week permit timeline through the Boynton Beach Building Department. The full sequence:</p>
+  <ul style="line-height: 1.75;">
+    <li><strong>Inspection and quote:</strong> drone and attic inspection on site, written quote within 48 hours.</li>
+    <li><strong>HOA architectural submittal</strong> (where applicable): material samples, color, ridge profile submitted to the association board. We coordinate this in parallel with the city permit so the timelines do not stack.</li>
+    <li><strong>Permit submittal to City of Boynton Beach Building Department:</strong> sealed plans for any flat-roof system, NOA documentation, fastening schedule, license verification (CCC-1331464 + CGC-1526236), workers comp and general liability certificates.</li>
+    <li><strong>Permit issuance:</strong> typical 3–4 weeks for straightforward residential. Complex projects or HOA-coordinated jobs sometimes run 4–5 weeks.</li>
+    <li><strong>Tear-off:</strong> 1 day for shingle, 1–2 days for tile (reusing tile means more careful handling).</li>
+    <li><strong>Tear-off inspection:</strong> Boynton requires this. Inspector verifies deck condition and any structural repairs. We schedule within 24 hours of tear-off completion.</li>
+    <li><strong>Dry-in inspection:</strong> after underlayment installation but before the primary covering goes on.</li>
+    <li><strong>Primary covering installation:</strong> 2–3 days for tile, 1–2 days for shingle, 2–3 days for metal.</li>
+    <li><strong>Final inspection:</strong> after the roof is complete. Inspector verifies the final covering, ridge vents, edge metal, and the manufacturer warranty package.</li>
+  </ul>
+
+  <h2>Why Dual Licensing Matters in Boynton</h2>
+  <p>Many Boynton homes built in the 1980s and 1990s have rafter or deck issues that only show up once the existing roof is removed — undersized rafters, deteriorated decking, rotted fascia, soffit decay. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236). When the inspector flags structural work during the tear-off inspection, we handle it under our existing permit and our existing crew rather than subcontracting to a separate framing contractor — which would mean a second permit, a second inspection cycle, and another 2 to 3 weeks added to the project. On a Boynton home with surfaced structural issues, dual licensing is the difference between a 4-week project and a 7-week project.</p>
+      `
+    }
+  ];
+
+  for (const p of boyntonBeachGuidePages) {
+    const dir = path.join(distDir, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const content = `
+  <h1>${p.h1}</h1>
+  <p>${p.intro}</p>
+  ${p.sections}
+  <h2>Ready to Start Your Boynton Beach Roof Project?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or visit our <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach roofing hub</a> to schedule a free inspection. Same-day callback during business hours, 48-hour inspection booking. We pull every Boynton permit under our state license — never under the homeowner's name.</p>
+  <h2>Related Pages</h2>
+  <ul style="line-height: 1.75;">
+    <li><a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Replacement (city hub)</a></li>
+    <li><a href="/roof-repair/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Repair</a></li>
+    <li><a href="/roof-inspection/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach Roof Inspection</a></li>
+    <li><a href="/boynton-beach-tile-roof-replacement" style="color: #dc2626; text-decoration: underline;">Boynton Beach Tile Roof Replacement</a></li>
+    <li><a href="/boynton-beach-oceanfront-roofing" style="color: #dc2626; text-decoration: underline;">Boynton Beach Oceanfront Roofing</a></li>
+    <li><a href="/canyon-lakes-boynton-beach-roofing" style="color: #dc2626; text-decoration: underline;">Canyon Lakes Boynton Beach Roofing</a></li>
+    <li><a href="/lake-worth-corridor-roofing" style="color: #dc2626; text-decoration: underline;">Lake Worth Corridor Roofing (adjacent CDP)</a></li>
+    <li><a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a></li>
+    <li><a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a></li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
+  </ul>
+  ${companyAuthorityFooter('Palm Beach')}
+    `;
+    fs.writeFileSync(path.join(dir, 'index.html'), createHTMLTemplate(
+      p.title,
+      p.description,
+      `https://allphaseconstructionfl.com/${p.slug}`,
+      content
+    ));
+    console.log(`✅ Prerendered Boynton Guide: ${p.slug}/index.html`);
+    totalPages++;
+  }
+
 
 
 
