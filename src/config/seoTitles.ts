@@ -465,6 +465,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Wind mitigation roofing in Boca Raton, FL. PBC wind-code compliant assemblies, roof-to-wall connections, and insurance credits. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/boca-raton-wind-mitigation-roofing'
   },
+  '/boynton-beach-roof-replacement-guide': {
+    title: 'Boynton Beach Roof Replacement Guide (2026) | All Phase USA',
+    description: 'Boynton Beach roof replacement guide — 55+ HOA communities (Aberdeen, Hunters Run, Indian Spring), PBC wind-code, 3–4 week permits. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/boynton-beach-roof-replacement-guide'
+  },
   '/boynton-beach-55-plus-community-roofing': {
     title: 'Boynton Beach 55+ Community Roofing | All Phase USA',
     description: 'Roof replacement for 55+ communities in Boynton Beach — The Cascades, Valencia Lakes, Hunters Run. HOA coordinated, PBC wind-code compliant.',
