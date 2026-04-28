@@ -22,7 +22,7 @@ export default function DavieMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Davie Roofing Contractor | Equestrian Country Roof Replacement`;
+    document.title = `Davie Roof Replacement | Equestrian Country | All Phase USA`;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

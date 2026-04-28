@@ -6,7 +6,7 @@ export default function JupiterRoofRepairPage() {
   useEffect(() => {
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Professional roof repair in Jupiter, FL. Serving Admiral\'s Cove, The Bear\'s Club, Ranch Colony, and all of Palm Beach County. Storm damage specialists. Call 754-227-5605.');
+      metaDesc.setAttribute('content', 'Roof repair in Jupiter FL — Admiral\'s Cove, The Bear\'s Club, Ranch Colony. Coastal salt-air assemblies. Free inspection (754) 227-5605.');
     }
   }, []);
 

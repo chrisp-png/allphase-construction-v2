@@ -6,7 +6,7 @@ export default function PembrokePinesRoofInspectionPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Roof Inspection Pembroke Pines FL | All Phase Construction USA';
+    document.title = 'Pembroke Pines Roof Inspection | All Phase USA';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Professional roof inspection in Pembroke Pines FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 227-5605.');

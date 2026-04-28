@@ -22,7 +22,7 @@ export default function MargateMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Margate Roofing Contractor | Roof Replacement for 1970s Homes`;
+    document.title = `Margate Roof Replacement | 1970s Homes | All Phase USA`;
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

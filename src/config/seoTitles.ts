@@ -157,7 +157,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/licensed-roofing-contractor': {
     title: 'Licensed Roofing Contractor South Florida | All Phase',
-    description: 'How to verify a licensed roofing contractor in Florida. CCC vs CGC licenses, DBPR lookup, insurance requirements, and why licensing matters in South Florida\'s hurricane zone.',
+    description: 'How to verify a licensed Florida roofer — CCC vs CGC, DBPR lookup, why licensing matters in South Florida\'s wind zone.',
     canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
   },
     '/roofing-services': {
@@ -170,6 +170,16 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // fallback and so the trailing-slash version emitted by the hub page
   // (legacy inline <link rel="canonical"> useEffect) stops winning the
   // render. Canonical matches the policy: no trailing slash.
+  '/locations/palm-beach-county': {
+    title: 'Palm Beach County Roofing Contractor | All Phase USA',
+    description: 'Palm Beach County roofing contractor — Boca Raton, Boynton Beach, West Palm Beach, Wellington, Lake Worth Beach, Delray Beach, Jupiter. Voluntarily HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
+  },
+  '/locations/broward-county': {
+    title: 'Broward County Roofing Contractor | All Phase USA',
+    description: 'Broward County roofing contractor — Deerfield Beach, Pompano Beach, Fort Lauderdale, Coral Springs, Parkland, Hollywood. Legally HVHZ-certified, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/broward-county'
+  },
   '/locations/service-areas': {
     title: 'Roofing Service Areas | All Phase Construction USA',
     description: 'Complete list of service areas in Broward & Palm Beach Counties. All cities served from our Deerfield Beach office with consistent supervision.',
@@ -269,7 +279,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
         '/locations/deerfield-beach': {
     title: 'Deerfield Beach Roofer | Local HQ Since 2005 | All Phase USA',
-    description: 'Deerfield Beach\'s #1 rated roofing contractor - headquartered here since 2005. We\'ve completed 2,500+ roofs in Broward County. HVHZ-certified, dual-licensed. Free same-day inspections - (754) 227-5605.',
+    description: 'Deerfield Beach roofing contractor since 2005 — HQ here, 2,500+ roofs in Broward County. HVHZ-certified, dual-licensed CCC/CGC. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {
