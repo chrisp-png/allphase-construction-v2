@@ -395,9 +395,10 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /accessibility   /about-us   301
 /publications   /about-us   301!
 
-# Missing location/service redirects (5xx / Soft 404)
-/roof-inspection/lake-park   /roof-inspection   301!
-/roof-inspection/westlake   /roof-inspection   301!
+# Removed in PR-38/PR-40: /roof-inspection/lake-park, /roof-inspection/westlake.
+# Both cities are real (in cities.json + locations.ts). The silo prerender
+# writes their pages with proper content. Redirects were stale soft-404
+# fixes from March 2026, post-PR-25 NuclearMetadata fix.
 /locations/deerfield-beach/service-area/delray-beach   /locations/delray-beach   301!
 
 # Redirect error fixes (missing rules)
@@ -410,9 +411,9 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /blog/how-long-does-it-take-to-get-a-roof-permit-in-south-florida/   /blog   301!
 
 # ======================================================================
-/roof-repair/north-lauderdale /roof-repair 301!
-/roof-inspection/westlake /roof-inspection 301!
-/roof-inspection/lake-park /roof-inspection 301!
+# Removed in PR-38/PR-40: /roof-repair/north-lauderdale, /roof-inspection/westlake,
+# /roof-inspection/lake-park (duplicates of the block above; both removed for the
+# same stale-soft-404 reason). All three cities are real and prerendered.
 /blog/happy-thanksgiving-from-all-of-us-at-all-phase-construction-usa-llc /blog 301!
 /blog/how-long-will-it-take-to-replace-your-roof-in-south-florida /blog/what-to-expect-during-a-roof-replacement-project 301!
 /blog/what-does-a-tapered-insulation-system-mean-on-a-roof-and-how-does-it-affect-the-air-conditioning-stands /blog 301!

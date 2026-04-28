@@ -126,21 +126,28 @@ status = 200
 #     active /locations/north-lauderdale hub, so the redirect was
 #     stale post-PR-25 NuclearMetadata fix).
 #   - /roof-inspection/lake-park → /roof-inspection (same pattern).
+# Removed in PR-40 (2026-04-27):
+#   - /locations/westlake → /locations/west-palm-beach.
+#     Westlake is the City of Westlake, FL — a real Palm Beach County
+#     municipality (incorporated 2016, ~6,000 acres, Indian Trail area).
+#     locations.ts has a full data entry for it (titleOverride,
+#     descriptionOverride, zips, landmarks). The redirect was a
+#     misclassified soft-404 fix from March 2026 — not a true
+#     consolidation. Removing.
+#   - /roof-inspection/westlake → /roof-inspection (same rationale —
+#     Westlake is a real city, the silo prerender writes a page for it).
+#   - Duplicate stale redirects in public/_redirects (lines 399, 400,
+#     413, 414, 415) for north-lauderdale, westlake, lake-park —
+#     PR-38 removed these from netlify.toml only, but public/_redirects
+#     is processed FIRST per CLAUDE.md §10 redirect priority, so the
+#     PR-38 fix did not fully take effect until PR-40 cleaned the
+#     duplicates here too.
 # Kept intentionally:
-#   - /locations/westlake → /locations/west-palm-beach (consolidation).
-#   - /locations/palm-beach → /locations/west-palm-beach (consolidation).
-#   - /locations/lauderdale-by-the-sea → /locations/fort-lauderdale (consolidation).
-#   - /roof-inspection/westlake → /roof-inspection (kept for consistency
-#     with /locations/westlake consolidation — removing this would have
-#     created an inconsistent state where the inspection page serves real
-#     westlake content while the location hub redirects away to WPB).
+#   - /locations/palm-beach → /locations/west-palm-beach (consolidation
+#     — Palm Beach the town vs the county/region distinction).
+#   - /locations/lauderdale-by-the-sea → /locations/fort-lauderdale
+#     (intentional consolidation of small adjacent municipality).
 # ======================================================================
-[[redirects]]
-from = "/locations/westlake"
-to = "/locations/west-palm-beach"
-status = 301
-force = true
-
 [[redirects]]
 from = "/locations/palm-beach"
 to = "/locations/west-palm-beach"
@@ -150,12 +157,6 @@ force = true
 [[redirects]]
 from = "/locations/lauderdale-by-the-sea"
 to = "/locations/fort-lauderdale"
-status = 301
-force = true
-
-[[redirects]]
-from = "/roof-inspection/westlake"
-to = "/roof-inspection"
 status = 301
 force = true
 
