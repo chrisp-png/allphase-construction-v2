@@ -80,6 +80,31 @@ http://quote.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/con
 /flat-roof-inspection-palm-beach-county /roof-inspection 301
 /insurance-roof-inspection /roof-inspection 301
 
+# ======================================================================
+# PR-44: GSC Soft 404 + duplicate-canonical cleanup (2026-04-30)
+# Adds the last 4 truly-missing legacy redirects from the 2026-04-30
+# GSC Coverage drilldown export. The other ~20 entries from that
+# export are already covered by blog-redirects.ts and earlier
+# _redirects blocks, but Google had crawled them before the rules
+# shipped — those will self-heal on next recrawl.
+# ======================================================================
+# Legacy inspection-related slugs that never had React routes:
+/four-point-inspection-roof-lake-worth-beach /roof-inspection 301!
+/annual-roof-inspection-sunrise /roof-inspection 301!
+
+# /about us/ (literal space) — old WordPress URL still being crawled.
+# URL-encoded form is the only one Netlify _redirects parses; both
+# trailing-slash and non-slash variants needed.
+/about%20us /about-us 301!
+/about%20us/ /about-us 301!
+
+# Duplicate-without-user-selected-canonical from b3 — the slug is
+# effectively a near-duplicate of the live commercial-materials post.
+# Single-hop 301 to /blog so we don't fight Google over canonical.
+/blog/how-to-choose-roofing-materials-for-large-scale-projects /blog 301!
+/blog/how-to-choose-roofing-materials-for-large-scale-projects/ /blog 301!
+
+
 
 # Broken /roof-replacement/[city] URLs - these pages do not exist
 /roof-replacement/pompano-beach /roof-replacement 301!
