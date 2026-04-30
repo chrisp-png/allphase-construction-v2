@@ -65,6 +65,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 138 reviews.',
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
+  '/team/chris-porosky': {
+    title: 'Chris Porosky — Owner & Lead Estimator | All Phase USA',
+    description: 'Chris Porosky, owner of All Phase Construction USA. Florida CCC-1331464 / CGC-1526236. NRCA member, PRAC appointee. Full bio + credentials.',
+    canonical: 'https://allphaseconstructionfl.com/team/chris-porosky'
+  },
   '/roof-cost-calculator': {
     title: 'Free Roof Replacement Cost Calculator | South Florida',
     description: 'Free roof replacement cost calculator for Broward & Palm Beach — Boca, Pompano, FTL, Boynton. Tile, metal, shingle, flat. HVHZ-rated. (754) 227-5605.',

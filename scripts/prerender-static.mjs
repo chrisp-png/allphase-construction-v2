@@ -1514,6 +1514,102 @@ function defaultServicePageContent(pageTitle) {
 
 
 /**
+ * /team/chris-porosky author entity page (PR-48)
+ *
+ * Author / E-E-A-T page for Chris Porosky, owner of All Phase Construction USA.
+ * Pairs with the Person + memberOf JSON-LD in SERVICE_PAGE_SCHEMAS so search
+ * engines and AI engines can resolve the company's owner as a real entity
+ * with verifiable credentials, sameAs link to LinkedIn, and full
+ * licensing / certification roll-up.
+ *
+ * CLAUDE.md §14 compliant on new copy. Credential names are listed verbatim
+ * because they are factual qualifications, not marketing copy.
+ */
+function generateChrisPoroskyAuthorContent() {
+  return `
+<section id="seo-static-content">
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap;">
+    <img src="/team/chris-porosky.jpg" alt="Chris Porosky, owner of All Phase Construction USA" width="160" height="160" style="border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 3px solid #dc2626;" />
+    <div style="flex: 1; min-width: 280px;">
+      <h1 style="margin-bottom: 0.5rem;">Chris Porosky</h1>
+      <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 0.5rem;">Owner &amp; Lead Estimator — All Phase Construction USA</p>
+      <p style="margin-bottom: 0;"><strong>Florida Certified Roofing Contractor (CCC-1331464)</strong> &middot; <strong>Florida Certified General Contractor (CGC-1526236)</strong></p>
+      <p style="margin-top: 0.5rem;">Deerfield Beach, FL &middot; <a href="tel:7542275605" style="color: #dc2626;">(754) 227-5605</a> &middot; <a href="https://www.linkedin.com/in/christopher-porosky-b597a1334/" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">LinkedIn</a></p>
+    </div>
+  </div>
+
+  <h2>About Chris</h2>
+  <p>Chris Porosky is the owner and lead estimator of <a href="/about-us" style="color: #dc2626; text-decoration: underline;">All Phase Construction USA</a>, a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida. He runs the company directly: he meets every customer, walks every roof before a proposal goes out, and signs off on every final inspection. The same person who quotes the job is the person homeowners call if anything ever needs attention later.</p>
+
+  <p>Chris holds two active Florida state licenses — Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) — and has extensive working knowledge of the Florida Building Code and Florida energy codes. He is an industry-appointed member of the <strong>Professional Roofers Advisory Council (PRAC)</strong> and a member of the <strong>National Roofing Contractors Association (NRCA)</strong>, the <strong>Roofing Insights</strong> network, and the <strong>Roofing Process</strong> group.</p>
+
+  <p>He has served as an <strong>expert witness for roof assessments and fenestration matters</strong>, providing forensic analysis on roofing system performance and fenestration installations.</p>
+
+  <h2>State licenses</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>CCC-1331464</strong> — Florida State Certified Roofing Contractor</li>
+    <li><strong>CGC-1526236</strong> — Florida State Certified General Contractor</li>
+  </ul>
+  <p>Both licenses are independently verifiable at <a href="https://www2.myfloridalicense.com/" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">MyFloridaLicense.com</a>.</p>
+
+  <h2>Education</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Bachelor of Business Administration (BBA), Business / Trust Management</strong> &mdash; Campbell University, May 1996. Minors in Personal Finance, Marketing, and Real Estate. Named to the Athletic Academic All-Conference List.</li>
+    <li><strong>Rodney Webb University Graduate</strong> &mdash; 2019. Roofing-specific operations and sales-system program.</li>
+  </ul>
+
+  <h2>Industry appointments &amp; memberships</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Professional Roofers Advisory Council (PRAC)</strong> &mdash; appointed 2019.</li>
+    <li><strong>National Roofing Contractors Association (NRCA)</strong> &mdash; member.</li>
+    <li><strong>Roofing Insights</strong> &mdash; member.</li>
+    <li><strong>Roofing Process</strong> group &mdash; member.</li>
+  </ul>
+
+  <h2>Continuing education &amp; specialty certifications</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Florida Wind Design for Low-Slope Roofing</strong> (AIA 1023008)</li>
+    <li><strong>Green Roofs: Integrating Blue and Gray into Green</strong> (AIA 1021002)</li>
+    <li><strong>Certified Energy Rater, Level 2</strong></li>
+    <li><strong>AAMA Installation Masters Certified Installer</strong> &mdash; Residential and Light Commercial (RLC-1)</li>
+    <li><strong>Certified MySafeFloridaHome Contractor</strong> (Florida state mitigation program)</li>
+    <li><strong>Wind Loss Mitigator</strong></li>
+    <li><strong>Certified Asbestos Remediator</strong></li>
+    <li><strong>Certified Mold Remediator</strong></li>
+    <li><strong>Expert Witness</strong> &mdash; Roof Damage Assessments and Fenestration</li>
+  </ul>
+
+  <h2>Manufacturer certifications</h2>
+  <p>Chris and the All Phase team carry top-tier manufacturer credentials across the major roofing system categories used in South Florida:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>CertainTeed Select Shingle Master</strong> &mdash; since 2016 (asphalt shingle)</li>
+    <li><strong>GAF Certified</strong> (asphalt shingle)</li>
+    <li><strong>IB Roof Systems Certified &mdash; Top Tier Contractor</strong> (single-ply commercial)</li>
+    <li><strong>Soprema Certified Contractor</strong> (modified bitumen / SBS)</li>
+    <li><strong>FiberTite Certified Contractor</strong> (single-ply commercial)</li>
+    <li><strong>Mule-Hide Certified</strong> (single-ply / coatings)</li>
+    <li><strong>GE / Lapolla Certified Installer</strong> (spray foam roofing)</li>
+    <li><strong>3M Polyfoam Products Installer</strong></li>
+    <li><strong>Conklin Roof Systems Preferred Contractor</strong> (commercial coatings)</li>
+    <li><strong>3in1 Roof Certified Installer</strong></li>
+    <li><strong>Uniflex Certified Installer</strong> (roof coatings)</li>
+    <li><strong>Ygrene Certified Contractor</strong> (PACE financing)</li>
+  </ul>
+
+  <h2>What this means for All Phase customers</h2>
+  <p>Because the company carries both a roofing license and a general contractor license under the same owner, there is no second contract and no second bid when a tear-off uncovers structural work. The dual licensing also means Chris can scope a hurricane-strap retrofit on pre-2002 homes &mdash; the lowest-cost moment in the life of the home to bring the roof-to-wall connection up to current code &mdash; on the same job rather than referring the work out.</p>
+
+  <p>The combined manufacturer certifications mean every system All Phase installs comes from a fully-approved component stack, which is what makes the workmanship and material warranties enforceable.</p>
+
+  <h2>Get in touch</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free in-person inspection or use the <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> for a preliminary estimate. All Phase Construction USA serves Broward County and Palm Beach County from 590 Goolsby Blvd, Deerfield Beach, FL 33442.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * /pricing-guide hub content (PR-47)
  *
  * Pricing-decision guide for South Florida homeowners. Focuses on the
@@ -1791,6 +1887,9 @@ function generateAboutHubContent() {
     <li><strong>Manufacturer-approved system, not mixed components</strong> — every component on a tile or shingle roof is from the same NOA-approved system so the warranty is enforceable.</li>
   </ul>
 
+  <h2>Meet the owner</h2>
+  <p><a href="/team/chris-porosky" style="color: #dc2626; text-decoration: underline;">Chris Porosky</a> is the owner and lead estimator of All Phase Construction USA. State licenses CCC-1331464 / CGC-1526236, appointed member of the Professional Roofers Advisory Council (PRAC), member of the National Roofing Contractors Association (NRCA). The full credential roll-up — manufacturer certifications, AIA continuing education, and industry memberships — is on his bio page.</p>
+
   <h2>Service Area</h2>
   <p>From our Deerfield Beach headquarters we serve <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach</a> and 40+ other Broward and Palm Beach cities. The full service area is on the <a href="/locations" style="color: #dc2626; text-decoration: underline;">locations page</a>.</p>
 
@@ -2013,6 +2112,7 @@ function homepageContent() {
 
   <h2>Comprehensive Roofing Services</h2>
   <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">emergency roof repairs</a>, <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">professional roof inspections</a>, <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">complete roof replacements</a>, <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile roofing</a>, <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">metal roofing</a>, <a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">shingle roofing</a>, <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing (TPO/PVC)</a>, <a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">roof maintenance programs</a>, and storm damage restoration.</p>
+  <p style="color: #374151; line-height: 1.75;">Owner-led service from <a href="/team/chris-porosky" style="color: #dc2626; text-decoration: underline;">Chris Porosky</a>, Florida State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) — appointed member of the Professional Roofers Advisory Council (PRAC) and the National Roofing Contractors Association (NRCA).</p>
 
   <h2>Service Area</h2>
   <p>From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities across Broward County and Palm Beach County including <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/parkland" style="color: #dc2626; text-decoration: underline;">Parkland</a>, <a href="/locations/coconut-creek" style="color: #dc2626; text-decoration: underline;">Coconut Creek</a>, <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and all surrounding communities.</p>
@@ -2622,6 +2722,9 @@ const SPA_SHELL_VICTIM_SLUGS = [
   'west-palm-beach-roof-insurance-claim',
   'west-palm-beach-tile-roof-replacement',
   'west-palm-beach-waterfront-roofing',
+
+  // PR-48: author entity page
+  'team/chris-porosky',
 ];
 
 // Title patterns that indicate the prerender did NOT successfully replace
@@ -2733,6 +2836,78 @@ async function generateStaticFiles() {
   // Matches what React components render client-side
   // ============================================================
   const SERVICE_PAGE_SCHEMAS = {
+    '/team/chris-porosky': {
+      directSchema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          '@id': 'https://allphaseconstructionfl.com/team/chris-porosky#person',
+          name: 'Chris Porosky',
+          givenName: 'Chris',
+          familyName: 'Porosky',
+          jobTitle: 'Owner & Lead Estimator',
+          image: 'https://allphaseconstructionfl.com/team/chris-porosky.jpg',
+          url: 'https://allphaseconstructionfl.com/team/chris-porosky',
+          sameAs: [
+            'https://www.linkedin.com/in/christopher-porosky-b597a1334/'
+          ],
+          worksFor: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+          memberOf: [
+            { '@type': 'Organization', name: 'National Roofing Contractors Association (NRCA)' },
+            { '@type': 'Organization', name: 'Professional Roofers Advisory Council (PRAC)', description: 'Industry-appointed council, 2019' },
+            { '@type': 'Organization', name: 'Roofing Insights' },
+            { '@type': 'Organization', name: 'Roofing Process Group' }
+          ],
+          alumniOf: [
+            { '@type': 'CollegeOrUniversity', name: 'Campbell University', description: 'Bachelor of Business Administration, Business/Trust Management; Minors in Personal Finance, Marketing, and Real Estate (1996)' }
+          ],
+          hasCredential: [
+            { '@type': 'EducationalOccupationalCredential', name: 'Florida Certified Roofing Contractor', identifier: 'CCC-1331464', credentialCategory: 'license', recognizedBy: { '@type': 'GovernmentOrganization', name: 'Florida Department of Business and Professional Regulation' } },
+            { '@type': 'EducationalOccupationalCredential', name: 'Florida Certified General Contractor', identifier: 'CGC-1526236', credentialCategory: 'license', recognizedBy: { '@type': 'GovernmentOrganization', name: 'Florida Department of Business and Professional Regulation' } },
+            { '@type': 'EducationalOccupationalCredential', name: 'Florida Wind Design for Low-Slope Roofing (AIA 1023008)', credentialCategory: 'continuing-education' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Green Roofs: Integrating Blue and Gray into Green (AIA 1021002)', credentialCategory: 'continuing-education' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Certified Energy Rater, Level 2' },
+            { '@type': 'EducationalOccupationalCredential', name: 'AAMA Installation Masters Certified Installer (RLC-1)' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Certified MySafeFloridaHome Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Wind Loss Mitigator' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Certified Asbestos Remediator' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Certified Mold Remediator' },
+            { '@type': 'EducationalOccupationalCredential', name: 'CertainTeed Select Shingle Master (since 2016)' },
+            { '@type': 'EducationalOccupationalCredential', name: 'GAF Certified Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: 'IB Roof Systems Certified — Top Tier Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Soprema Certified Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: 'FiberTite Certified Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Mule-Hide Certified Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: 'GE / Lapolla Certified Spray-Foam Installer' },
+            { '@type': 'EducationalOccupationalCredential', name: '3M Polyfoam Products Installer' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Conklin Roof Systems Preferred Contractor' },
+            { '@type': 'EducationalOccupationalCredential', name: '3in1 Roof Certified Installer' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Uniflex Certified Installer' },
+            { '@type': 'EducationalOccupationalCredential', name: 'Ygrene Certified Contractor (PACE financing)' }
+          ],
+          knowsAbout: [
+            'High-Velocity Hurricane Zone (HVHZ) Roofing',
+            'Florida Building Code',
+            'Florida Notice of Acceptance (NOA) Documentation',
+            'Roof-to-Wall Connector (Hurricane Strap) Retrofits',
+            'SBS-Modified Peel-and-Stick Underlayment',
+            'Tile Lift-and-Relay',
+            'Single-Ply Commercial Roofing (TPO, PVC, EPDM)',
+            'Wind Loss Mitigation',
+            'Roof Forensics and Expert-Witness Assessment'
+          ]
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://allphaseconstructionfl.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Team', item: 'https://allphaseconstructionfl.com/team' },
+            { '@type': 'ListItem', position: 3, name: 'Chris Porosky', item: 'https://allphaseconstructionfl.com/team/chris-porosky' }
+          ]
+        }
+      ]
+    },
     '/frequently-asked-questions': {
       faqs: [
         { question: 'What is the difference between Broward County and Palm Beach County roofing code requirements?', answer: 'Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code, so every roof in Broward must meet the strictest HVHZ wind-uplift, fastening, and product-approval rules. Palm Beach County is not legally HVHZ, but the prevailing local standard for roof replacements is to build voluntarily to HVHZ spec because the same coastal wind exposure applies. Practically, that means tighter nailing patterns (typically 6 nails per shingle on the field), Florida Notice of Acceptance (NOA)–approved underlayments, and approved tile fastening systems on either side of the county line. All Phase Construction USA builds Palm Beach County replacements to HVHZ spec by default.' },
@@ -3123,7 +3298,8 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
     { path: '/south-florida-roofing-reviews', title: 'South Florida Roofing Reviews' },
-    { path: '/flat-roof-moisture-infrared-inspection', title: 'Flat Roof Moisture & Infrared Inspection' }
+    { path: '/flat-roof-moisture-infrared-inspection', title: 'Flat Roof Moisture & Infrared Inspection' },
+    { path: '/team/chris-porosky', title: 'Chris Porosky — Owner & Lead Estimator | All Phase Construction USA' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
@@ -3194,6 +3370,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateRoofInspectionHubContent();
     } else if (pagePath === '/blog') {
       pageContent = generateBlogHubContent();
+    } else if (pagePath === '/team/chris-porosky') {
+      pageContent = generateChrisPoroskyAuthorContent();
     } else if (pagePath === '/pricing-guide') {
       pageContent = generatePricingGuideHubContent();
     } else if (pagePath === '/single-ply-roofing') {
