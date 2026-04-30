@@ -150,7 +150,7 @@ const manualPublicCopyPlugin = () => ({
     // Historically these were missed because the root-level copy only walks the top of public/
     // and the subdirectory copies above are an explicit allowlist. Add well-known asset
     // folders here so refs like /images/wellington-aerial.webp resolve after build.
-    const assetSubdirs = ['images', 'blog-images'];
+    const assetSubdirs = ['images', 'blog-images', 'team'];
     const imageExt = /\.(jpg|jpeg|png|webp|gif|svg|avif)$/i;
     assetSubdirs.forEach(subdir => {
       const src = path.resolve(publicDir, subdir);

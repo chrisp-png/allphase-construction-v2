@@ -1,0 +1,5 @@
+This directory exists so the path `public/team/chris-porosky.jpg`
+referenced in PR-48 (author entity page) resolves once you upload
+your headshot. Drop the JPEG at `public/team/chris-porosky.jpg`
+via the GitHub web UI (or commit it locally) and the page will
+auto-resolve on next Netlify build.
