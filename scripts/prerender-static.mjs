@@ -2723,8 +2723,6 @@ const SPA_SHELL_VICTIM_SLUGS = [
   'west-palm-beach-tile-roof-replacement',
   'west-palm-beach-waterfront-roofing',
 
-  // PR-48: author entity page
-  'team/chris-porosky',
 ];
 
 // Title patterns that indicate the prerender did NOT successfully replace
