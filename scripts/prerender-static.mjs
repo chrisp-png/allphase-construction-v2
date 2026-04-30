@@ -1512,6 +1512,246 @@ function defaultServicePageContent(pageTitle) {
 `.trim();
 }
 
+
+/**
+ * /about-us hub content (PR-43)
+ *
+ * Replaces defaultServicePageContent for /about-us. Unique brand-authority
+ * page covering company story, dual-licensing detail, HQ, distinctive
+ * installation practices (NOA, SBS peel-and-stick, hurricane-strap
+ * retrofits), and team approach. CLAUDE.md §14 compliant — no insurance
+ * / claim / hurricane-damage language in new copy.
+ */
+function generateAboutHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>About All Phase Construction USA</h1>
+
+  <p><strong>All Phase Construction USA is a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida.</strong> We serve homeowners, condominium associations, and commercial property owners across Broward County and Palm Beach County, working out of a single shop at 590 Goolsby Blvd so every project is run by the same team that owns the company.</p>
+
+  <h2>Owner-Operator, Not a Franchise</h2>
+  <p>All Phase Construction USA is owner-led. Chris Porosky meets every customer, walks every roof before a proposal goes out, and signs off on every final inspection. That removes the layer of subcontracted sales reps and rotating crews that has defined a lot of South Florida roofing in the last decade. The same person who quoted your roof is the person you call if anything ever needs attention later.</p>
+
+  <h2>Dual-Licensed: CCC-1331464 + CGC-1526236</h2>
+  <p>Most roofing companies hold only a Florida Certified Roofing Contractor (CCC) license — the legal minimum to pull a roof permit in Florida. We hold both the certified roofing license and a Florida Certified General Contractor (CGC) license. The CGC scope covers structural and tie-in work — trusses, decking, hurricane straps, full envelope detail — under one contract.</p>
+
+  <p>That matters when a tear-off uncovers something the surface inspection couldn't see: a soft deck panel, a rotted rafter tail, a 1990s home with no engineered roof-to-wall connectors. A CCC-only contractor has to stop and bring in a separate general contractor. We finish the work in the same day under the same warranty, on the same permit. Our active license numbers are <strong>CCC-1331464</strong> (certified roofing) and <strong>CGC-1526236</strong> (certified general). You can verify both at <a href="https://www2.myfloridalicense.com/" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">MyFloridaLicense.com</a>.</p>
+
+  <h2>How We Build Roofs in Broward and Palm Beach</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code. Every product on a Broward roof — underlayment, fasteners, drip edge, shingle, tile — must carry a current Florida Notice of Acceptance (NOA), and every NOA number gets referenced in the permit package. We document NOAs on every Broward replacement.</p>
+
+  <p>Palm Beach County is not legally HVHZ, but the prevailing local standard for replacements is to build voluntarily to HVHZ spec because the same coastal wind exposure applies on either side of the county line. On every Palm Beach project we install the same fastening pattern and the same SBS-modified peel-and-stick underlayment we'd install in Broward. The legal classification is different. The roof we install is the same.</p>
+
+  <h2>What Goes Onto Every Roof</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>SBS-modified peel-and-stick underlayment</strong> bonded directly to the deck, sealing around every fastener that penetrates it.</li>
+    <li><strong>Coastal-rated fasteners and flashing</strong> — stainless ring-shank nails near the ocean, copper or aluminum step flashing on chimneys, drip edge sized for the rafter overhang.</li>
+    <li><strong>Hurricane-strap retrofit at exposure</strong> — when a tear-off uncovers truss-to-wall connectors that predate the 2002 FBC requirement, we add engineered straps while the connection is open. It's the lowest-cost moment in the life of the home to bring the connection up to current code.</li>
+    <li><strong>Manufacturer-approved system, not mixed components</strong> — every component on a tile or shingle roof is from the same NOA-approved system so the warranty is enforceable.</li>
+  </ul>
+
+  <h2>Service Area</h2>
+  <p>From our Deerfield Beach headquarters we serve <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Deerfield Beach</a> and 40+ other Broward and Palm Beach cities. The full service area is on the <a href="/locations" style="color: #dc2626; text-decoration: underline;">locations page</a>.</p>
+
+  <h2>Get a Proposal</h2>
+  <p>Call <strong>(754) 227-5605</strong> or use the <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> for a preliminary estimate. Free in-person inspections are available throughout Broward and Palm Beach County, and every proposal is written line-item — no round-number quotes.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /roof-cost-calculator hub content (PR-43)
+ *
+ * Companion body content to the WebApplication schema added in PR-29.
+ * Explains the inputs, material price ranges, and the cost drivers that
+ * actually move the number — so the page stops looking like duplicate
+ * defaultServicePageContent boilerplate.
+ */
+function generateCalculatorHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Free Roof Replacement Cost Calculator | South Florida</h1>
+
+  <p><strong>Use the calculator to get a preliminary roof replacement cost for any home in Broward or Palm Beach County.</strong> The estimate is based on the inputs you provide and 2026 South Florida material and labor rates. It is not a proposal — every real proposal is written line-item after an in-person inspection — but it gives you a defensible budget number before you call anyone.</p>
+
+  <h2>What the Calculator Asks For</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Square footage</strong> — roof area, not house footprint. The calculator can convert from house square footage if you don't know roof area.</li>
+    <li><strong>Roof pitch</strong> — flat, low-slope, conventional, or steep. Pitch directly affects labor cost and underlayment requirements.</li>
+    <li><strong>Material</strong> — asphalt shingle, concrete tile, clay tile, metal standing seam, or flat-roof TPO/PVC.</li>
+    <li><strong>Tear-off layers</strong> — single-layer tear-off, double-layer, or recover. Disposal cost compounds with each layer.</li>
+    <li><strong>Decking condition</strong> — whether you want a budget assuming the deck is sound, or with a contingency for partial deck replacement.</li>
+  </ul>
+
+  <h2>2026 Cost Ranges by Material</h2>
+  <p>For a typical 2,000-square-foot single-family home in Broward or Palm Beach County, with a full HVHZ-spec install (SBS peel-and-stick underlayment, NOA-documented system, code-current fastening):</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Asphalt shingle</strong> — roughly $14,000 to $22,000.</li>
+    <li><strong>Concrete tile</strong> — roughly $28,000 to $45,000 (full replacement). A <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile lift-and-relay</a> that reuses the existing tile typically lands meaningfully lower.</li>
+    <li><strong>Clay tile</strong> — roughly $40,000 to $70,000+.</li>
+    <li><strong>Standing-seam metal</strong> — roughly $30,000 to $55,000.</li>
+    <li><strong>Flat roof recover (TPO/PVC)</strong> — roughly $9 to $14 per square foot of flat area.</li>
+  </ul>
+
+  <h2>What Actually Moves the Number</h2>
+  <p>The biggest cost drivers, in order, are pitch, tear-off layers, underlayment system, and what the deck looks like once the old roof is off. Two homes with identical square footage and identical material can differ by 30% on final invoice based on those four variables alone.</p>
+
+  <p>HVHZ-spec versus base spec is the second tier. Broward roofs are required by code to use NOA-approved products and HVHZ fastening patterns. Palm Beach roofs are not legally required to, but most reputable contractors voluntarily build to HVHZ spec because the wind exposure is the same. The calculator assumes HVHZ-spec install for both counties.</p>
+
+  <h2>What the Calculator Doesn't Capture</h2>
+  <p>Every real proposal accounts for items the calculator can't see from a description: existing skylight or solar tube replacement, decorative tile profiles requiring custom-order lead time, second-story access constraints, HOA / ARB review timelines, and structural items uncovered at tear-off. Use the calculator number as a budget reference, then call <strong>(754) 227-5605</strong> for a written line-item proposal.</p>
+
+  <h2>Related Reading</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/roof-replacement-cost-broward-county-2026" style="color: #dc2626; text-decoration: underline;">2026 roof replacement cost guide for Broward County</a></li>
+    <li><a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County roof replacement guide</a></li>
+    <li><a href="/blog/metal-roof-vs-tile-roof-south-florida-hurricanes" style="color: #dc2626; text-decoration: underline;">Metal roof vs tile roof in South Florida</a></li>
+  </ul>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /tile-roofing hub content (PR-43)
+ *
+ * Tile-specific content — concrete vs clay, HVHZ tile fastening systems,
+ * NOA documentation, lifespan vs underlayment, lift-and-relay option.
+ */
+function generateTileRoofingHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Tile Roofing Installation, Repair, and Lift-and-Relay in South Florida</h1>
+
+  <p><strong>Tile is the signature roof of South Florida.</strong> All Phase Construction USA installs, repairs, and re-roofs concrete and clay tile systems throughout Broward County and Palm Beach County — from new tile replacements to lift-and-relay underlayment renewals that reuse the original tile.</p>
+
+  <h2>Concrete vs Clay vs Flat Tile</h2>
+  <p>Concrete tile is the most common South Florida tile system: heavy, durable, available in every profile from S-tile to flat to barrel. A properly installed concrete tile roof typically lasts 30 to 50 years before tile replacement is needed. Clay tile is the more premium system — terra cotta or glazed, often associated with Mediterranean Revival architecture in Boca Raton, Palm Beach, and Coral Gables. Clay tile commonly runs 50+ years before the tiles themselves need replacement. Flat (or low-profile) tile is the contemporary choice and reads cleaner from the curb on modern homes.</p>
+
+  <h2>HVHZ Tile Fastening — What's Actually on the Roof</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone, so every tile installation must use a Florida Notice of Acceptance (NOA)–approved system. The most common HVHZ-approved tile fastening systems are:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Mechanical fasteners</strong> — corrosion-resistant screws or nails through the tile into the deck, used at field tile, hips, and ridges.</li>
+    <li><strong>Polyurethane foam adhesive</strong> — single-component foam set under each tile, commonly used in conjunction with mechanical fasteners on field tile.</li>
+    <li><strong>Mortar bedding</strong> — traditional bed-and-point system, less common on new HVHZ installs but still used on historic restoration.</li>
+  </ul>
+  <p>Palm Beach County is not legally HVHZ but most reputable contractors install tile to HVHZ spec because the coastal wind exposure is the same. We default to HVHZ-spec fastening on every Palm Beach tile roof we touch.</p>
+
+  <h2>Tile Outlasts the Underlayment Beneath It</h2>
+  <p>The most common misconception in tile roofing: the tile itself is rarely the failure point. The underlayment beneath the tile is where the waterproofing actually lives, and it typically reaches end-of-service-life in 20 to 30 years — well before the tile does. When the underlayment goes, water enters at penetrations, valleys, and ridges even though the tile field still looks intact from the street.</p>
+
+  <h2>Lift-and-Relay — Replacing the Underlayment, Reusing the Tile</h2>
+  <p>A tile lift-and-relay is the right move when the existing tile is in good condition but the underlayment has reached end-of-life. We carefully remove and stage the original tiles, tear off and dispose of the old underlayment, install new SBS-modified peel-and-stick membrane bonded to the deck, then re-fasten the original tile using a current NOA-approved system. The visible look of the home is preserved. The waterproofing is brand new. Total cost typically lands meaningfully below a full tile replacement.</p>
+
+  <h2>When a Full Tile Replacement Is the Right Call</h2>
+  <p>Lift-and-relay isn't always the answer. We recommend a full replacement when the existing tile is past its service life, when more than ~10% of tiles are cracked or chipped, when the original tile is no longer manufactured and breakage during lift would force a partial-color match, or when the homeowner is changing profiles entirely. We provide both options on the inspection report so the choice is yours, not ours.</p>
+
+  <h2>2026 Tile Roofing Cost Ranges</h2>
+  <p>For a typical 2,000-square-foot single-family home with HVHZ-spec install:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Concrete tile replacement</strong> — roughly $28,000 to $45,000.</li>
+    <li><strong>Clay tile replacement</strong> — roughly $40,000 to $70,000+.</li>
+    <li><strong>Tile lift-and-relay</strong> — typically meaningfully less than full replacement; we provide a project-specific quote after inspection.</li>
+  </ul>
+
+  <h2>Schedule a Tile Inspection</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free in-person tile inspection. We document underlayment condition, count broken or displaced tiles, and provide a written report with both lift-and-relay and full-replacement options.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /contact hub content (PR-43)
+ *
+ * Conversion-page content. Channels, hours, HQ address, what to expect
+ * from the first call. Distinct from /reviews and /about-us so Google
+ * sees three separate hub URLs as three separate intents.
+ */
+function generateContactHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Contact All Phase Construction USA</h1>
+
+  <p><strong>The fastest way to reach us is by phone: <a href="tel:7542275605" style="color: #dc2626; text-decoration: underline; font-weight: bold;">(754) 227-5605</a>.</strong> Calls during business hours are answered by a person, not a call center. Voicemails outside business hours are returned the next business morning. Emergency leak calls are routed to a project manager day or night.</p>
+
+  <h2>Headquarters</h2>
+  <p>All Phase Construction USA<br/>
+  590 Goolsby Blvd<br/>
+  Deerfield Beach, FL 33442<br/>
+  Phone: (754) 227-5605</p>
+
+  <h2>Hours</h2>
+  <p>Monday through Friday, 7:00 AM to 6:00 PM. Saturday by appointment for inspections. Emergency leak response 24/7.</p>
+
+  <h2>What to Expect on the First Call</h2>
+  <p>The first call is short. We ask three things: the property address, what you're seeing or what you want quoted, and a good time for a free in-person inspection. We do not run a sales script over the phone, we don't ask for a deposit to schedule the inspection, and we don't send a salesperson — the inspection is performed by a project manager who will actually run the job if you decide to move forward.</p>
+
+  <h2>Free In-Person Inspections</h2>
+  <p>Every estimate starts with an in-person inspection. We document the existing roof with photos, measure square footage and pitch, identify any structural items that would change the scope, and produce a written line-item proposal — not a single round number. The inspection report is yours to keep regardless of whether you hire us.</p>
+
+  <h2>Service Area</h2>
+  <p>From our Deerfield Beach headquarters we cover Broward County and Palm Beach County, including <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and 40+ other cities. The full service area lists is on the <a href="/locations" style="color: #dc2626; text-decoration: underline;">locations page</a>.</p>
+
+  <h2>Emergency Roof Repair</h2>
+  <p>If water is actively coming into the home right now, call <strong>(754) 227-5605</strong> and stay on the line for the after-hours routing. We can deploy emergency tarping the same day across most of Broward and northern Palm Beach. The <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">roof repair hub</a> has more detail on what we cover.</p>
+
+  <h2>Licenses</h2>
+  <p>State-issued license numbers, verifiable at <a href="https://www2.myfloridalicense.com/" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">MyFloridaLicense.com</a>:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>CCC-1331464</strong> — Florida Certified Roofing Contractor</li>
+    <li><strong>CGC-1526236</strong> — Florida Certified General Contractor</li>
+  </ul>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /reviews hub content (PR-43)
+ *
+ * Social-proof landing page content. Distinct from /south-florida-roofing-reviews
+ * (which is the listicle-style review-magnet page).
+ */
+function generateReviewsHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Customer Reviews — All Phase Construction USA</h1>
+
+  <p><strong>The single most useful thing a roofing contractor can show a homeowner is what other homeowners have said.</strong> All Phase Construction USA is rated 4.9 out of 5 stars across Google with 143+ verified reviews from customers in Broward County and Palm Beach County, with concentrated review density in Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, and Boynton Beach.</p>
+
+  <h2>Where to Read Real Reviews</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Google Business Profile</strong> — search "All Phase Construction USA Deerfield Beach" on Google or Maps for the most current reviews.</li>
+    <li><strong>Better Business Bureau</strong> — accredited business with a current rating; complaints, if any, are publicly visible.</li>
+    <li><strong>Industry directories</strong> — GAF, Owens Corning, and certified-contractor directories carry independent project records.</li>
+  </ul>
+
+  <h2>What Customers Most Often Mention</h2>
+  <p>The recurring themes in our recent Google reviews — paraphrased, not pasted — are crew respectfulness, daily debris cleanup, communication during the permit window, and a written final walkthrough. Where we get pushback in reviews, it tends to be on the Boca Raton permit timeline (4–5 weeks at the city level, longer than most surrounding municipalities), which is outside our control but something we now flag at proposal time so it isn't a surprise.</p>
+
+  <h2>How We Respond to Reviews</h2>
+  <p>Every review — positive or critical — gets a response from the company, not a templated reply. If a customer flags an issue we missed, we follow up directly. If a review is anonymous and the project can't be matched to an internal record, we say so publicly and ask the reviewer to contact us so we can resolve it. Treating critical feedback as data, not a problem, is how the company has stayed at 4.9 stars at scale.</p>
+
+  <h2>Local Review Resources for South Florida Homeowners</h2>
+  <p>Beyond our own page, the most useful third-party resource for vetting any South Florida roofer is the Florida Department of Business and Professional Regulation license lookup at <a href="https://www2.myfloridalicense.com/" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">MyFloridaLicense.com</a>. It shows license type, status, expiration, and any disciplinary history. Always confirm the license matches the legal name of the company on the proposal — not just a salesperson's name. Our active licenses are <strong>CCC-1331464</strong> and <strong>CGC-1526236</strong>.</p>
+
+  <h2>Leaving a Review</h2>
+  <p>If we did a project for you and you'd like to leave a review, the direct link is on your final invoice email, or you can search "All Phase Construction USA Deerfield Beach" on Google and click "Write a review" on the business panel. We read every one.</p>
+
+  <h2>Read Our Full Reviews Page</h2>
+  <p>For a deeper dive into specific projects, see our <a href="/south-florida-roofing-reviews" style="color: #dc2626; text-decoration: underline;">South Florida Roofing Reviews</a> page, which collects detailed customer write-ups by project type and city.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 /**
  * Generate homepage content
  */
@@ -2693,6 +2933,16 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateRoofInspectionHubContent();
     } else if (pagePath === '/blog') {
       pageContent = generateBlogHubContent();
+    } else if (pagePath === '/about-us') {
+      pageContent = generateAboutHubContent();
+    } else if (pagePath === '/roof-cost-calculator') {
+      pageContent = generateCalculatorHubContent();
+    } else if (pagePath === '/tile-roofing') {
+      pageContent = generateTileRoofingHubContent();
+    } else if (pagePath === '/contact') {
+      pageContent = generateContactHubContent();
+    } else if (pagePath === '/reviews') {
+      pageContent = generateReviewsHubContent();
     } else {
       pageContent = defaultServicePageContent(title);
     }
