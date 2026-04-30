@@ -1514,6 +1514,83 @@ function defaultServicePageContent(pageTitle) {
 
 
 /**
+ * /frequently-asked-questions hub content (PR-46)
+ *
+ * Visible-HTML rendering of the same 12 Q&A pairs that ship as the
+ * FAQPage JSON-LD via SERVICE_PAGE_SCHEMAS['/frequently-asked-questions'].
+ * Both surfaces (visible HTML for users, JSON-LD for search/AEO) read
+ * from the same canonical answer text — no drift.
+ *
+ * CLAUDE.md §14 compliant — no insurance / claim / carrier / deductible /
+ * hail / hurricane-damage language in any new sentence.
+ */
+function generateFAQHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Frequently Asked Questions</h1>
+
+  <p><strong>Plain-English answers to the questions South Florida homeowners actually ask before signing a roofing contract.</strong> Each answer is sourced from public records (Florida Building Code, MyFloridaLicense, Florida Notice of Acceptance documentation) so you can verify everything independently. If your contractor's answer to any of these conflicts with what you read here, that conflict is the answer.</p>
+
+  <h2>South Florida Roofing — Top 12 Questions</h2>
+
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">What is the difference between Broward County and Palm Beach County roofing code requirements?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code, so every roof in Broward must meet the strictest HVHZ wind-uplift, fastening, and product-approval rules. Palm Beach County is not legally HVHZ, but the prevailing local standard for roof replacements is to build voluntarily to HVHZ spec because the same coastal wind exposure applies. Practically, that means tighter nailing patterns (typically 6 nails per shingle on the field), Florida Notice of Acceptance (NOA)–approved underlayments, and approved tile fastening systems on either side of the county line. All Phase Construction USA builds Palm Beach County replacements to HVHZ spec by default.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">How long do roof replacement permits take in Boca Raton compared with Pompano Beach or Fort Lauderdale?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">Boca Raton roof replacement permits typically take about four to five weeks from submittal to issuance, because the City of Boca Raton runs a more thorough plan-review queue than most surrounding municipalities. Pompano Beach generally issues residential roof permits in roughly two to three weeks. Fort Lauderdale and Boynton Beach usually fall between those two, around two to four weeks depending on whether the property is in a historic district or coastal high-hazard area. Build the longer Boca timeline into your project schedule rather than expecting same-week issuance.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">What licenses should a South Florida roofing contractor actually hold?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">A roofing contractor in Florida must hold an active state-issued certified roofing license (CCC) to legally pull roof permits and contract for roof work. Some contractors also carry a certified general contractor license (CGC), which expands the legal scope to full structural and tie-in work. All Phase Construction USA holds both: CCC-1331464 and CGC-1526236, which is why the company can handle tear-off, deck replacement, and structural tie-in on the same project under one licensed entity. Verify any contractor’s license at MyFloridaLicense.com before signing a contract.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">Do I need to add hurricane straps when replacing my roof in South Florida?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">It depends on the age of the home. Florida Building Code 2001 was the first cycle that required engineered roof-to-wall connectors (hurricane straps) on new construction, so homes permitted before roughly 2002 commonly lack them. When the existing roof is removed and the truss-to-wall connection is exposed, that is the lowest-cost moment in the life of the home to retrofit straps and bring the connection up to current code. On homes built after 2002 the straps are usually present and only need inspection and re-nailing where corroded. All Phase always documents the connector condition during tear-off.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">What is SBS-modified peel-and-stick underlayment and why does it matter in HVHZ?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">SBS-modified peel-and-stick underlayment is a self-adhering rubberized membrane that bonds directly to the plywood deck and seals around every fastener that penetrates it. The Florida Building Code HVHZ provisions effectively require a peel-and-stick or fully-bonded secondary water barrier on tile and shingle re-roofs, because conventional felt cannot hold a seal under hurricane-force wind-driven rain. Asphalt-modified (SBS) membranes outperform older APP products in heat cycling and are the current standard on All Phase replacements throughout Broward and Palm Beach County.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">Is the Lake Worth Corridor the same place as Lake Worth Beach?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">No. Lake Worth Beach is an incorporated city of about 42,000 people on the Atlantic side of the corridor, while Lake Worth Corridor is a separate Census-Designated Place (CDP) that sits west of I-95 in unincorporated Palm Beach County. Permits inside Lake Worth Beach city limits go through the city’s building department; permits in the Lake Worth Corridor CDP go through Palm Beach County. The distinction matters because submittal requirements, fees, and inspection scheduling are different between the two jurisdictions.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">Are roofs in Westlake, Florida built to HVHZ standards?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">Westlake is the newest incorporated city in Palm Beach County (incorporated in 2016) and is not legally in the HVHZ. However, almost every home in Westlake was built after 2017, when the prevailing Palm Beach County standard already specified HVHZ-equivalent fastening, NOA-approved underlayments, and engineered connectors. In practice that means a Westlake roof replacement is performed to the same spec a Broward HVHZ roof would use, even though the legal classification is different. All Phase treats Westlake new-build replacements as HVHZ-spec by default.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">How long does a concrete or clay tile roof last in coastal South Florida?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">A properly installed concrete tile roof in South Florida typically lasts 30 to 50 years, and a clay tile roof often runs 50+ years before tile replacement is needed. The tiles themselves usually outlast the underlayment beneath them — which carries the actual waterproofing load — so the practical service life is governed by the underlayment system, normally 20 to 30 years on a peel-and-stick install. A “tile lift and relay” replaces the underlayment while reusing the original tiles, and is often the right intermediate step before a full tile replacement on coastal Boca Raton, Boynton Beach, and Fort Lauderdale homes.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">What is a Florida Notice of Acceptance (NOA) and why does my roofer need one?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">A Florida Notice of Acceptance is the document issued by Miami-Dade County Product Control (and recognized statewide) that certifies a specific roofing product has passed HVHZ wind, impact, and water-intrusion testing. In Broward and Miami-Dade, every product on the roof — underlayment, fasteners, drip edge, tile, shingle — must have a current NOA on file, and the permit package must reference each NOA number. A reputable contractor can produce the exact NOA for every component used on your specific job. If a contractor cannot produce NOAs, the roof is not permittable in HVHZ.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">What does a roof replacement actually cost in Boca Raton or Fort Lauderdale in 2026?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">In 2026, a typical 2,000-square-foot single-family asphalt shingle replacement in Boca Raton, Fort Lauderdale, Boynton Beach, or Pompano Beach runs roughly $14,000 to $22,000 for a full HVHZ-spec install. Concrete tile replacements on the same footprint generally land between $28,000 and $45,000, and clay tile systems typically run $40,000 to $70,000+. The biggest cost drivers are roof pitch, tear-off layers, underlayment system, and whether the deck or hurricane-strap connectors need work once the old roof is off. Always insist on a written, line-item proposal — not a single round number.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">How do I decide between roof repair and full roof replacement?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">A repair is usually the right call when the roof is under about 15 years old, the affected area is localized to a single slope or penetration, and the underlying decking is dry and sound. A full replacement is generally the right call when the roof is over 18 to 20 years old (asphalt shingle), when underlayment failure is producing leaks across multiple slopes, or when the deck shows widespread soft spots. A trustworthy contractor will offer both options on the same inspection report with the trade-offs spelled out, rather than steering you to replacement on the first visit. All Phase provides written repair-vs-replace recommendations with photos.</p>
+  </details>
+  <details style="border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0;">
+    <summary style="font-weight: bold; font-size: 1.05rem; color: #111827; cursor: pointer; line-height: 1.45;">How do I verify that a Florida roofing contractor's license is active and in good standing?</summary>
+    <p style="margin-top: 0.6rem; color: #374151; line-height: 1.7;">Go to MyFloridaLicense.com, click “Verify a License,” and search either by license number or by the company name. The result will show license type (CCC for certified roofing, CGC for certified general), status, expiration date, and any disciplinary actions on file. For All Phase Construction USA, the active licenses are CCC-1331464 (certified roofing) and CGC-1526236 (certified general). Always confirm the contractor’s license matches the legal name of the company on the proposal — not just a salesperson — before signing.</p>
+  </details>
+
+  <h2>Still have a question we didn't answer?</h2>
+  <p>Call <strong>(754) 227-5605</strong> or use the <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> for a preliminary estimate. We provide free in-person inspections and written line-item proposals throughout Broward and Palm Beach County. Our active state licenses are <strong>CCC-1331464</strong> (certified roofing) and <strong>CGC-1526236</strong> (certified general), both verifiable at MyFloridaLicense.com.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * /about-us hub content (PR-43)
  *
  * Replaces defaultServicePageContent for /about-us. Unique brand-authority
@@ -2492,6 +2569,26 @@ async function generateStaticFiles() {
   // Matches what React components render client-side
   // ============================================================
   const SERVICE_PAGE_SCHEMAS = {
+    '/frequently-asked-questions': {
+      faqs: [
+        { question: 'What is the difference between Broward County and Palm Beach County roofing code requirements?', answer: 'Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code, so every roof in Broward must meet the strictest HVHZ wind-uplift, fastening, and product-approval rules. Palm Beach County is not legally HVHZ, but the prevailing local standard for roof replacements is to build voluntarily to HVHZ spec because the same coastal wind exposure applies. Practically, that means tighter nailing patterns (typically 6 nails per shingle on the field), Florida Notice of Acceptance (NOA)–approved underlayments, and approved tile fastening systems on either side of the county line. All Phase Construction USA builds Palm Beach County replacements to HVHZ spec by default.' },
+        { question: 'How long do roof replacement permits take in Boca Raton compared with Pompano Beach or Fort Lauderdale?', answer: 'Boca Raton roof replacement permits typically take about four to five weeks from submittal to issuance, because the City of Boca Raton runs a more thorough plan-review queue than most surrounding municipalities. Pompano Beach generally issues residential roof permits in roughly two to three weeks. Fort Lauderdale and Boynton Beach usually fall between those two, around two to four weeks depending on whether the property is in a historic district or coastal high-hazard area. Build the longer Boca timeline into your project schedule rather than expecting same-week issuance.' },
+        { question: 'What licenses should a South Florida roofing contractor actually hold?', answer: 'A roofing contractor in Florida must hold an active state-issued certified roofing license (CCC) to legally pull roof permits and contract for roof work. Some contractors also carry a certified general contractor license (CGC), which expands the legal scope to full structural and tie-in work. All Phase Construction USA holds both: CCC-1331464 and CGC-1526236, which is why the company can handle tear-off, deck replacement, and structural tie-in on the same project under one licensed entity. Verify any contractor’s license at MyFloridaLicense.com before signing a contract.' },
+        { question: 'Do I need to add hurricane straps when replacing my roof in South Florida?', answer: 'It depends on the age of the home. Florida Building Code 2001 was the first cycle that required engineered roof-to-wall connectors (hurricane straps) on new construction, so homes permitted before roughly 2002 commonly lack them. When the existing roof is removed and the truss-to-wall connection is exposed, that is the lowest-cost moment in the life of the home to retrofit straps and bring the connection up to current code. On homes built after 2002 the straps are usually present and only need inspection and re-nailing where corroded. All Phase always documents the connector condition during tear-off.' },
+        { question: 'What is SBS-modified peel-and-stick underlayment and why does it matter in HVHZ?', answer: 'SBS-modified peel-and-stick underlayment is a self-adhering rubberized membrane that bonds directly to the plywood deck and seals around every fastener that penetrates it. The Florida Building Code HVHZ provisions effectively require a peel-and-stick or fully-bonded secondary water barrier on tile and shingle re-roofs, because conventional felt cannot hold a seal under hurricane-force wind-driven rain. Asphalt-modified (SBS) membranes outperform older APP products in heat cycling and are the current standard on All Phase replacements throughout Broward and Palm Beach County.' },
+        { question: 'Is the Lake Worth Corridor the same place as Lake Worth Beach?', answer: 'No. Lake Worth Beach is an incorporated city of about 42,000 people on the Atlantic side of the corridor, while Lake Worth Corridor is a separate Census-Designated Place (CDP) that sits west of I-95 in unincorporated Palm Beach County. Permits inside Lake Worth Beach city limits go through the city’s building department; permits in the Lake Worth Corridor CDP go through Palm Beach County. The distinction matters because submittal requirements, fees, and inspection scheduling are different between the two jurisdictions.' },
+        { question: 'Are roofs in Westlake, Florida built to HVHZ standards?', answer: 'Westlake is the newest incorporated city in Palm Beach County (incorporated in 2016) and is not legally in the HVHZ. However, almost every home in Westlake was built after 2017, when the prevailing Palm Beach County standard already specified HVHZ-equivalent fastening, NOA-approved underlayments, and engineered connectors. In practice that means a Westlake roof replacement is performed to the same spec a Broward HVHZ roof would use, even though the legal classification is different. All Phase treats Westlake new-build replacements as HVHZ-spec by default.' },
+        { question: 'How long does a concrete or clay tile roof last in coastal South Florida?', answer: 'A properly installed concrete tile roof in South Florida typically lasts 30 to 50 years, and a clay tile roof often runs 50+ years before tile replacement is needed. The tiles themselves usually outlast the underlayment beneath them — which carries the actual waterproofing load — so the practical service life is governed by the underlayment system, normally 20 to 30 years on a peel-and-stick install. A “tile lift and relay” replaces the underlayment while reusing the original tiles, and is often the right intermediate step before a full tile replacement on coastal Boca Raton, Boynton Beach, and Fort Lauderdale homes.' },
+        { question: 'What is a Florida Notice of Acceptance (NOA) and why does my roofer need one?', answer: 'A Florida Notice of Acceptance is the document issued by Miami-Dade County Product Control (and recognized statewide) that certifies a specific roofing product has passed HVHZ wind, impact, and water-intrusion testing. In Broward and Miami-Dade, every product on the roof — underlayment, fasteners, drip edge, tile, shingle — must have a current NOA on file, and the permit package must reference each NOA number. A reputable contractor can produce the exact NOA for every component used on your specific job. If a contractor cannot produce NOAs, the roof is not permittable in HVHZ.' },
+        { question: 'What does a roof replacement actually cost in Boca Raton or Fort Lauderdale in 2026?', answer: 'In 2026, a typical 2,000-square-foot single-family asphalt shingle replacement in Boca Raton, Fort Lauderdale, Boynton Beach, or Pompano Beach runs roughly $14,000 to $22,000 for a full HVHZ-spec install. Concrete tile replacements on the same footprint generally land between $28,000 and $45,000, and clay tile systems typically run $40,000 to $70,000+. The biggest cost drivers are roof pitch, tear-off layers, underlayment system, and whether the deck or hurricane-strap connectors need work once the old roof is off. Always insist on a written, line-item proposal — not a single round number.' },
+        { question: 'How do I decide between roof repair and full roof replacement?', answer: 'A repair is usually the right call when the roof is under about 15 years old, the affected area is localized to a single slope or penetration, and the underlying decking is dry and sound. A full replacement is generally the right call when the roof is over 18 to 20 years old (asphalt shingle), when underlayment failure is producing leaks across multiple slopes, or when the deck shows widespread soft spots. A trustworthy contractor will offer both options on the same inspection report with the trade-offs spelled out, rather than steering you to replacement on the first visit. All Phase provides written repair-vs-replace recommendations with photos.' },
+        { question: 'How do I verify that a Florida roofing contractor\'s license is active and in good standing?', answer: 'Go to MyFloridaLicense.com, click “Verify a License,” and search either by license number or by the company name. The result will show license type (CCC for certified roofing, CGC for certified general), status, expiration date, and any disciplinary actions on file. For All Phase Construction USA, the active licenses are CCC-1331464 (certified roofing) and CGC-1526236 (certified general). Always confirm the contractor’s license matches the legal name of the company on the proposal — not just a salesperson — before signing.' },
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Frequently Asked Questions', url: 'https://allphaseconstructionfl.com/frequently-asked-questions' }
+      ]
+    },
     '/shingle-roofing': {
       faqs: [
         { question: "Are shingle roofs a good choice for South Florida hurricanes?", answer: "Yes \u2014 when installed properly. Premium architectural shingles like Tamko Titan XT carry 160 mph wind warranties. The key factors are proper nailing patterns, deck re-nailing, and quality underlayment. Many shingle failures in storms result from installation shortcuts, not material deficiencies." },
@@ -2933,6 +3030,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateRoofInspectionHubContent();
     } else if (pagePath === '/blog') {
       pageContent = generateBlogHubContent();
+    } else if (pagePath === '/frequently-asked-questions') {
+      pageContent = generateFAQHubContent();
     } else if (pagePath === '/about-us') {
       pageContent = generateAboutHubContent();
     } else if (pagePath === '/roof-cost-calculator') {
