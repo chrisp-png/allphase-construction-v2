@@ -2264,6 +2264,18 @@ async function generateStaticFiles() {
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
         { name: 'Shingle Roofing', url: 'https://allphaseconstructionfl.com/shingle-roofing' }
       ]
+    ,
+      extraSchemas: [
+        {
+          '@context': 'https://schema.org', '@type': 'Service',
+                  name: 'Shingle Roofing Installation', serviceType: 'Roof Installation',
+                  description: 'HVHZ-certified asphalt shingle roofing installation for Broward and Palm Beach County homes. Impact-rated systems, Florida Building Code compliant.',
+                  provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                  areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                  url: 'https://allphaseconstructionfl.com/shingle-roofing',
+                  offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$8-$12 per sq ft', availability: 'https://schema.org/InStock' }
+        }
+      ]
     },
     '/metal-roofing': {
       faqs: [
@@ -2277,6 +2289,18 @@ async function generateStaticFiles() {
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
         { name: 'Metal Roofing', url: 'https://allphaseconstructionfl.com/metal-roofing' }
       ]
+    ,
+      extraSchemas: [
+        {
+          '@context': 'https://schema.org', '@type': 'Service',
+                  name: 'Metal Roofing Installation', serviceType: 'Roof Installation',
+                  description: 'Standing seam and metal panel roofing systems for South Florida. 40-70 year lifespan, hurricane-rated, HVHZ compliant.',
+                  provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                  areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                  url: 'https://allphaseconstructionfl.com/metal-roofing',
+                  offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$12-$20 per sq ft', availability: 'https://schema.org/InStock' }
+        }
+      ]
     },
     '/flat-roofing': {
       faqs: [
@@ -2289,6 +2313,18 @@ async function generateStaticFiles() {
       breadcrumbs: [
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
         { name: 'Flat Roofing', url: 'https://allphaseconstructionfl.com/flat-roofing' }
+      ]
+    ,
+      extraSchemas: [
+        {
+          '@context': 'https://schema.org', '@type': 'Service',
+                  name: 'Flat Roofing Installation', serviceType: 'Roof Installation',
+                  description: 'PVC and TPO flat roofing systems for South Florida residential and commercial properties. HVHZ-compliant, UV-resistant.',
+                  provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                  areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                  url: 'https://allphaseconstructionfl.com/flat-roofing',
+                  offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$8-$14 per sq ft', availability: 'https://schema.org/InStock' }
+        }
       ]
     },
     '/roof-inspection': {
@@ -2330,6 +2366,17 @@ async function generateStaticFiles() {
       { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
       { name: 'Roof Repair', url: 'https://allphaseconstructionfl.com/roof-repair' }
     ]
+  ,
+    extraSchemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'Service',
+                name: 'Roof Repair Services', serviceType: 'Roof Repair',
+                description: 'Emergency and scheduled roof repair for Broward and Palm Beach County. Leak repairs, storm damage, flashing, and HVHZ-compliant patch work.',
+                provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                url: 'https://allphaseconstructionfl.com/roof-repair'
+      }
+    ]
   },
   '/tile-roofing': {
     faqs: [
@@ -2342,6 +2389,18 @@ async function generateStaticFiles() {
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
       { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
       { name: 'Tile Roofing', url: 'https://allphaseconstructionfl.com/tile-roofing' }
+    ]
+  ,
+    extraSchemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'Service',
+                name: 'Tile Roofing Installation', serviceType: 'Roof Installation',
+                description: 'Concrete and clay tile roofing for South Florida homes. HOA-approved, HVHZ-rated, 30-50 year lifespan.',
+                provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                url: 'https://allphaseconstructionfl.com/tile-roofing',
+                offers: { '@type': 'Offer', priceCurrency: 'USD', priceRange: '$10-$18 per sq ft', availability: 'https://schema.org/InStock' }
+      }
     ]
   },
   '/commercial-roofing': {
@@ -2356,6 +2415,17 @@ async function generateStaticFiles() {
       { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
       { name: 'Commercial Roofing', url: 'https://allphaseconstructionfl.com/commercial-roofing' }
     ]
+  ,
+    extraSchemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'Service',
+                name: 'Commercial Roofing Services', serviceType: 'Commercial Roofing',
+                description: 'Commercial flat and low-slope roofing for Broward and Palm Beach County. PVC, TPO, and modified bitumen systems. CGC-licensed contractor.',
+                provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                url: 'https://allphaseconstructionfl.com/commercial-roofing'
+      }
+    ]
   },
   '/residential-roofing': {
     faqs: [
@@ -2368,6 +2438,17 @@ async function generateStaticFiles() {
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
       { name: 'Services', url: 'https://allphaseconstructionfl.com/roofing-services' },
       { name: 'Residential Roofing', url: 'https://allphaseconstructionfl.com/residential-roofing' }
+    ]
+  ,
+    extraSchemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'Service',
+                name: 'Residential Roofing Services', serviceType: 'Residential Roofing',
+                description: 'Complete residential roofing services for Broward and Palm Beach County. Replacement, repair, and maintenance by dual-licensed HVHZ-certified contractor.',
+                provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                url: 'https://allphaseconstructionfl.com/residential-roofing'
+      }
     ]
   },
   '/roof-replacement-process': {
@@ -2413,6 +2494,17 @@ async function generateStaticFiles() {
       {
         question: 'Do you offer financing for roof replacement?',
         answer: 'Yes. We work with financing partners to offer flexible payment options so South Florida homeowners can get the roof they need without waiting. Ask about current financing programs during your free estimate.'
+      }
+    ]
+  ,
+    extraSchemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'Service',
+                name: 'Roof Replacement', serviceType: 'Roof Replacement',
+                description: 'Full roof replacement for South Florida homes. Shingle, tile, and metal systems. HVHZ-certified, dual-licensed contractor.',
+                provider: { '@id': 'https://allphaseconstructionfl.com/#organization' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
+                url: 'https://allphaseconstructionfl.com/roof-replacement'
       }
     ]
   },
