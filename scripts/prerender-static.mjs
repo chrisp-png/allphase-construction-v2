@@ -1514,6 +1514,170 @@ function defaultServicePageContent(pageTitle) {
 
 
 /**
+ * /pricing-guide hub content (PR-47)
+ *
+ * Pricing-decision guide for South Florida homeowners. Focuses on the
+ * factors that move the number — material, pitch, tear-off depth,
+ * decking condition, NOA-approved system spec — with current 2026
+ * cost ranges for the four priority cities.
+ *
+ * CLAUDE.md §14 compliant — no insurance / claim / carrier / deductible /
+ * hail / hurricane-damage language in new copy. (Note: the React
+ * component's own FAQ contains grandfathered insurance language that
+ * predates §14 and is left in place per house rules.)
+ */
+function generatePricingGuideHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Replacement Pricing Guide for South Florida</h1>
+
+  <p><strong>What a real South Florida roof replacement actually costs in 2026, and why two homes with identical square footage often differ by thirty percent on final invoice.</strong> This guide is intentionally non-promotional. Everything here is framed as buyer-side information you can apply to any contractor, including ours.</p>
+
+  <h2>Material price ranges (2026, HVHZ-spec install)</h2>
+  <p>For a typical 2,000-square-foot single-family home in Broward County or Palm Beach County, with full HVHZ-spec install (SBS peel-and-stick underlayment, NOA-documented system, code-current fastening):</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Asphalt shingle</strong> — roughly $14,000 to $22,000.</li>
+    <li><strong>Concrete tile (full replacement)</strong> — roughly $28,000 to $45,000.</li>
+    <li><strong>Concrete tile (lift-and-relay, reusing original tile)</strong> — typically meaningfully less than full replacement.</li>
+    <li><strong>Clay tile</strong> — roughly $40,000 to $70,000+.</li>
+    <li><strong>Standing-seam metal</strong> — roughly $30,000 to $55,000.</li>
+    <li><strong>Flat roof recover (TPO/PVC)</strong> — roughly $9 to $14 per square foot of flat area.</li>
+  </ul>
+
+  <h2>The four cost drivers that actually move the number</h2>
+  <ol style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Pitch.</strong> Steeper roofs cost more in labor and require more underlayment per square foot of footprint. A 12-pitch roof can run 30 to 40 percent above the same square footage on a 4-pitch.</li>
+    <li><strong>Tear-off layers.</strong> Single-layer tear-off, double-layer, or recover. Disposal cost compounds with each layer. Florida code limits the number of allowable layers, and many older homes have hidden second layers that aren't visible until tear-off begins.</li>
+    <li><strong>Underlayment system.</strong> SBS-modified peel-and-stick membrane bonded to the deck is the current South Florida standard. The cheaper synthetic-felt option is allowed in non-HVHZ Palm Beach but is not the prevailing voluntary standard. Spec it explicitly in the proposal.</li>
+    <li><strong>Decking condition.</strong> A typical replacement budget assumes 5 to 10 percent deck contingency. Older homes with original 1960s plank decking, or pre-2002 homes with no engineered roof-to-wall connectors, can easily push the deck/structural line item up significantly. The contingency should be a fixed unit price (per square foot) in the proposal, not a vague "if needed" statement.</li>
+  </ol>
+
+  <h2>Why South Florida is more expensive than other regions</h2>
+  <p>Two structural reasons. First, Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code, which requires NOA-approved products, enhanced fastening patterns, and full secondary water barrier. Material costs and installation labor are genuinely higher than in non-HVHZ markets. Second, Palm Beach County, while not legally HVHZ, has converged to the same voluntary spec because the coastal wind exposure is identical. Most reputable Palm Beach contractors install to HVHZ spec by default — the savings versus a non-HVHZ install are real but small relative to total project cost.</p>
+
+  <h2>How to read a roofing proposal</h2>
+  <p>A complete South Florida roofing proposal contains twelve specific line items. The full 12-point review is on our <a href="/frequently-asked-questions" style="color: #dc2626; text-decoration: underline;">FAQ page</a> and inside our <a href="/downloads/Insiders-Guide-Hiring-Roofer-South-Florida.pdf" style="color: #dc2626; text-decoration: underline;">free 2026 hiring guide PDF</a>. The short version: if the proposal is a single round number with no underlayment brand, no NOA reference, no fastener spec, and no deck contingency, it isn't a proposal — it's a placeholder.</p>
+
+  <h2>Get a project-specific number</h2>
+  <p>Use the <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> for a preliminary estimate based on the inputs you provide, or call <strong>(754) 227-5605</strong> for a free in-person inspection and a written line-item proposal. We serve Broward and Palm Beach County from our Deerfield Beach headquarters. State licenses on every proposal: <strong>CCC-1331464</strong> and <strong>CGC-1526236</strong>.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /single-ply-roofing hub content (PR-47)
+ *
+ * Commercial flat-roof landing — TPO, PVC, EPDM. Sub-service of /flat-roofing
+ * but kept as its own URL because of standing search demand for the
+ * material name.
+ */
+function generateSinglePlyRoofingHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Single-Ply Commercial Roofing — TPO, PVC, EPDM</h1>
+
+  <p><strong>Single-ply membrane roofing is the dominant commercial flat-roof category in South Florida.</strong> All Phase Construction USA installs and recovers TPO, PVC, and EPDM single-ply systems on commercial buildings, condominium associations, and modern flat-roof residential homes throughout Broward County and Palm Beach County.</p>
+
+  <h2>The three single-ply systems and where each fits</h2>
+
+  <h3>TPO (thermoplastic polyolefin)</h3>
+  <p>The current South Florida market default for new commercial flat-roof installations. White-surfaced for solar reflectivity (lower cooling load), heat-welded seams (no adhesive failure mode), and 60-mil membrane thickness as the residential / small-commercial standard. Typical service life is 20 to 25 years on a well-installed system. TPO is what we recommend for most new commercial flat-roof projects unless a specific reason pushes us elsewhere.</p>
+
+  <h3>PVC (polyvinyl chloride)</h3>
+  <p>Higher-grade single-ply system with superior chemical resistance — the right choice when the building has rooftop kitchen exhaust, restaurant grease venting, or chemical exposure that would degrade TPO over time. PVC is also fire-rated higher than TPO. Cost is meaningfully above TPO for the same membrane thickness, but the lifespan delta justifies it for the right application.</p>
+
+  <h3>EPDM (ethylene propylene diene monomer rubber)</h3>
+  <p>The legacy single-ply system. Black rubber membrane, mechanically fastened or fully-adhered. Still common on existing commercial roofs and well-suited to recover work where the existing system is intact but at end-of-service-life. New EPDM installations have largely given way to TPO except in specific cold-cycle or chemical-exposure applications, neither of which is a meaningful South Florida concern.</p>
+
+  <h2>HVHZ wind compliance for single-ply systems</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone. Every single-ply installation in Broward must use a Florida Notice of Acceptance (NOA)-approved membrane, an NOA-approved fastening or adhesion system, and NOA-approved edge metal. The permit package references each NOA. Palm Beach County is not legally HVHZ but the prevailing flat-roof spec is the same NOA-approved system on either side of the county line.</p>
+
+  <h2>When single-ply is the right answer</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Modern flat-roof residential homes</strong> in Fort Lauderdale, Boca Raton, Wilton Manors — typically TPO with full tapered insulation for proper drainage.</li>
+    <li><strong>Strip-mall and small-office commercial</strong> — TPO is the default; PVC if the tenant mix includes restaurants.</li>
+    <li><strong>Condominium common-area roofs</strong> — TPO recover over the existing modified-bitumen system, staged building-by-building so residents keep using the parking and walkways.</li>
+    <li><strong>Industrial / warehouse</strong> — TPO or PVC depending on rooftop exposure profile.</li>
+    <li><strong>HVAC / equipment-heavy roofs</strong> — PVC for chemical resistance around exhaust stacks.</li>
+  </ul>
+
+  <h2>Single-ply versus modified bitumen</h2>
+  <p>Modified-bitumen (mod-bit, hot-applied or cold-process) is the older flat-roof category and still in service on a large number of South Florida buildings. Modern single-ply systems generally offer easier installation, better seam reliability (heat-welded vs. torch-down), and lighter weight. A common path forward on aging mod-bit roofs is a TPO recover with new tapered insulation, rather than a full tear-off.</p>
+
+  <h2>Schedule a commercial flat-roof inspection</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free in-person commercial flat-roof inspection. We document membrane condition, drainage performance, edge-metal integrity, and existing penetration detail. Written recover-vs-replace recommendations with photos. Companion service: <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing systems</a> (TPO/PVC) for residential applications.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /learning-center hub content (PR-47)
+ *
+ * Curated index of internal blog and guide content organized by topic.
+ * Built to be the on-site equivalent of a "start here" resource page,
+ * and to consolidate internal link equity that's currently spread thin
+ * across the blog.
+ */
+function generateLearningCenterHubContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Learning Center — South Florida Roofing Guides &amp; Resources</h1>
+
+  <p><strong>A curated reading path for South Florida homeowners researching a roof project.</strong> The articles below are grouped by the question they answer. If you read just two of them, read the cost guide for your county and the contractor-hiring article — those two cover ninety percent of what most homeowners actually need to know before signing a proposal.</p>
+
+  <h2>Cost &amp; budgeting</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/roof-replacement-cost-broward-county-2026" style="color: #dc2626; text-decoration: underline;">Roof Replacement Cost in Broward County — 2026 Guide</a></li>
+    <li><a href="/blog/roof-pricing-financing-guide" style="color: #dc2626; text-decoration: underline;">Roof Pricing &amp; Financing Guide</a></li>
+    <li><a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">The Cost of Waiting: Why Delaying Roof Replacement Hurts Your Wallet</a></li>
+    <li><a href="/pricing-guide" style="color: #dc2626; text-decoration: underline;">Pricing Guide hub</a> — material price ranges, cost drivers, how to read a proposal.</li>
+    <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> — preliminary 2026 estimate from your inputs.</li>
+  </ul>
+
+  <h2>Code, permits, and HVHZ</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/boca-raton-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Permit Guide</a></li>
+    <li><a href="/pompano-beach-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Pompano Beach Roof Permit Guide</a></li>
+    <li><a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a></li>
+    <li><a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a></li>
+  </ul>
+
+  <h2>Material comparisons</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/metal-roof-vs-shingles-florida-2026" style="color: #dc2626; text-decoration: underline;">Metal Roof vs Shingles in Florida — 2026</a></li>
+    <li><a href="/blog/metal-roof-vs-tile-roof-south-florida-hurricanes" style="color: #dc2626; text-decoration: underline;">Metal Roof vs Tile Roof — South Florida</a></li>
+    <li><a href="/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes" style="color: #dc2626; text-decoration: underline;">Pros and Cons of Flat Roofs for Florida Homes</a></li>
+    <li><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a> · <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a> · <a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Shingle Roofing</a> · <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing</a> · <a href="/single-ply-roofing" style="color: #dc2626; text-decoration: underline;">Single-Ply Roofing</a></li>
+  </ul>
+
+  <h2>Hiring a contractor</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
+    <li><a href="/downloads/Insiders-Guide-Hiring-Roofer-South-Florida.pdf" style="color: #dc2626; text-decoration: underline;">Free PDF — How to Hire a Roofer in South Florida (2026 edition)</a></li>
+    <li><a href="/frequently-asked-questions" style="color: #dc2626; text-decoration: underline;">Frequently Asked Questions</a> — 12 plain-English answers including license verification.</li>
+    <li><a href="/south-florida-roofing-reviews" style="color: #dc2626; text-decoration: underline;">South Florida Roofing Reviews</a></li>
+  </ul>
+
+  <h2>Diagnostics &amp; inspections</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><a href="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" style="color: #dc2626; text-decoration: underline;">How to Spot Early Signs of Roof Wear</a></li>
+    <li><a href="/blog/the-importance-of-proper-flashing-installation-to-prevent-roof-leaks" style="color: #dc2626; text-decoration: underline;">Why Flashing Detail Drives Long-Term Leak Performance</a></li>
+    <li><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Roof Inspection Services hub</a></li>
+  </ul>
+
+  <h2>Need a project-specific answer?</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free in-person inspection. We serve Broward County and Palm Beach County from our Deerfield Beach headquarters. Active state licenses: <strong>CCC-1331464</strong> (certified roofing) and <strong>CGC-1526236</strong> (certified general).</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
  * /frequently-asked-questions hub content (PR-46)
  *
  * Visible-HTML rendering of the same 12 Q&A pairs that ship as the
@@ -3030,6 +3194,12 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateRoofInspectionHubContent();
     } else if (pagePath === '/blog') {
       pageContent = generateBlogHubContent();
+    } else if (pagePath === '/pricing-guide') {
+      pageContent = generatePricingGuideHubContent();
+    } else if (pagePath === '/single-ply-roofing') {
+      pageContent = generateSinglePlyRoofingHubContent();
+    } else if (pagePath === '/learning-center') {
+      pageContent = generateLearningCenterHubContent();
     } else if (pagePath === '/frequently-asked-questions') {
       pageContent = generateFAQHubContent();
     } else if (pagePath === '/about-us') {
