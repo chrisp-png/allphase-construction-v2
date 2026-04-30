@@ -420,15 +420,16 @@ They re-trigger GSC "multiple aggregate ratings" errors on best-roofers pages. O
 
 Flipping it has caused full-site redirect loops twice. Don't touch without extreme care.
 
-### 🟡 Adding a new prerendered slug requires three coordinated edits
+### 🟡 Adding a new prerendered slug requires FOUR coordinated edits
 
 A new slug typed only into `prerender-static.mjs` writes a static `dist/<slug>/index.html` but is INVISIBLE to React. To survive JS-rendered crawls (Googlebot 2026, Screaming Frog with rendering=JavaScript), the slug also needs:
 
-1. **Either** an explicit `<Route>` in `App.tsx` **or** a registered fallback that `StaticContentPage` handles via `__PRERENDERED_HTML__` (the catchall already does this — check that the prerender writes `<div id="seo-static">…</div>` into the HTML or the catchall has nothing to render).
-2. **An entry in `SEO_TITLES`** in `src/config/seoTitles.ts` mirroring the prerender data (title, description, canonical). Without this, `NuclearMetadata` calls `generateSEOMetadata`, the lookup falls through to the fallback, and `isFallback`'s prerender-preserving guard kicks in — but only as a safety net.
-3. **The slug added to `SPA_SHELL_VICTIM_SLUGS`** in `prerender-static.mjs` (PR-24 verifier) so the build fails loudly if you accidentally remove the prerender for it.
+1. **An entry in `scripts/seo-titles.json`** under `staticTitles` (title, description, canonical). The prerender's `getSEOMetadata()` reads from this JSON file and **HARD-FAILS the build** with `MISSING METADATA FOR ROUTE` if the slug isn't registered. This is the loudest of the four edits — skip it and the Netlify deploy aborts in ~25 seconds before the dist file is even written. Hit in PR-48 (2026-04-30): cost three deploy roundtrips because the contributor only added the entry to `src/config/seoTitles.ts` (which is for the React runtime, not the prerender).
+2. **Either** an explicit `<Route>` in `App.tsx` **or** a registered fallback that `StaticContentPage` handles via `__PRERENDERED_HTML__` (the catchall already does this — check that the prerender writes `<div id="seo-static">…</div>` into the HTML or the catchall has nothing to render).
+3. **An entry in `SEO_TITLES`** in `src/config/seoTitles.ts` mirroring the prerender data (title, description, canonical). Without this, `NuclearMetadata` calls `generateSEOMetadata`, the lookup falls through to the fallback, and `isFallback`'s prerender-preserving guard kicks in — but only as a safety net. **NOTE**: this is a SEPARATE file from `scripts/seo-titles.json`. The TS file is for runtime React; the JSON file is for the build-time prerender. Both need a matching entry.
+4. **The slug added to `SPA_SHELL_VICTIM_SLUGS`** in `prerender-static.mjs` (PR-24 verifier) so the build fails loudly if you accidentally remove the prerender for it.
 
-The PR-24 build-time verifier catches **missing dist files**. It does NOT catch a **missing `seoTitles.ts` entry** — that regression is invisible at build time and only shows up in JS-rendered crawls. Always do all three edits.
+The PR-24 build-time verifier catches **missing dist files**. It does NOT catch a **missing `seoTitles.ts` entry** — that regression is invisible at build time and only shows up in JS-rendered crawls. The `scripts/seo-titles.json` guard at line ~2609 catches **missing JSON entries** at build time. Always do all four edits.
 
 ### 🟡 Hidden off-screen navigation
 
