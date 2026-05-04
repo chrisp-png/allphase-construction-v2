@@ -2,16 +2,22 @@ import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AccessibilityWidget from './components/AccessibilityWidget';
 import StickyMobileCTA from './components/StickyMobileCTA';
-import ExitIntentPopup from './components/ExitIntentPopup';
 import ScrollToTop from './components/ScrollToTop';
 import LowercaseRedirect from './components/LowercaseRedirect';
-import AssessmentModal from './components/AssessmentModal';
 import { AssessmentModalProvider, useAssessmentModal } from './context/AssessmentModalContext';
 import NuclearMetadata from './components/NuclearMetadata';
 import ErrorBoundary from './components/ErrorBoundary';
 import StaticContentPage from './pages/StaticContentPage';
+
+// PR-50: defer the three components that aren't visible on first paint
+// (AccessibilityWidget panel, ExitIntentPopup, AssessmentModal). They cost
+// roughly 25 KB combined on the homepage critical path. Lazy-loaded behind
+// the existing Suspense boundary so the homepage hydrates without waiting
+// for them.
+const AccessibilityWidget = lazy(() => import('./components/AccessibilityWidget'));
+const ExitIntentPopup = lazy(() => import('./components/ExitIntentPopup'));
+const AssessmentModal = lazy(() => import('./components/AssessmentModal'));
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -330,10 +336,12 @@ function AppContent() {
         </Suspense>
       </main>
       <Footer />
-      <AccessibilityWidget />
       <StickyMobileCTA />
-      <ExitIntentPopup />
-      <AssessmentModal isOpen={isOpen} onClose={closeModal} />
+      <Suspense fallback={null}>
+        <AccessibilityWidget />
+        <ExitIntentPopup />
+        <AssessmentModal isOpen={isOpen} onClose={closeModal} />
+      </Suspense>
       </div>
     </>
   );
