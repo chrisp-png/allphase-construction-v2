@@ -12,9 +12,11 @@
          Desktop/tablet preloads removed: team_drone_photo-*.webp files do not exist in /public.
          Re-add preloads once responsive hero images are generated. -->
 
-    <!-- DNS prefetch for third-party resources (low priority) -->
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="//cdn.callrail.com">
+    <!-- PR-50: upgrade DNS prefetch to preconnect for heavy 3rd parties.
+         Preconnect opens DNS + TCP + TLS during HTML parse instead of waiting
+         for the actual script request. Roughly 100-300ms saving on first script. -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.callrail.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google.com">
 
     <!-- Preconnect to Supabase (higher priority - used by app) -->
@@ -119,8 +121,20 @@
       gtag('config', 'G-PBMBD8QKK7');
     </script>
 
-    <!-- CallRail dynamic number insertion -->
-    <script type="text/javascript" src="//cdn.callrail.com/companies/650182589/e3a1759b5f327970b7ca/12/swap.js" defer></script>
+    <!-- PR-50: CallRail dynamic phone-number swap deferred to window.load.
+         Was previously `defer` which still runs before DOMContentLoaded and
+         competes with React hydration on the main thread. Deferring to
+         window.load means the swap runs AFTER first interactive paint,
+         improving TBT without breaking the swap (still happens before the
+         user typically clicks a phone number). -->
+    <script>
+      window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = '//cdn.callrail.com/companies/650182589/e3a1759b5f327970b7ca/12/swap.js';
+        s.async = true;
+        document.body.appendChild(s);
+      });
+    </script>
 
     <!-- Conversion Event Tracking — deferred via requestIdleCallback -->
   </body>
