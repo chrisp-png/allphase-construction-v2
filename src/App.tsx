@@ -10,14 +10,6 @@ import NuclearMetadata from './components/NuclearMetadata';
 import ErrorBoundary from './components/ErrorBoundary';
 import StaticContentPage from './pages/StaticContentPage';
 
-// PR-53: eager-load HomePage (not lazy) to eliminate the Suspense delay
-// between FCP and LCP on mobile. HomePage is the most-visited route —
-// keeping it in the main bundle means '/' renders immediately after
-// React mounts instead of waiting for a separate chunk to download.
-// Mobile LCP gain expected ~1-1.5s. Cost is ~5-10 KB extra in main
-// bundle for non-homepage routes; acceptable trade.
-import HomePage from './pages/HomePage';
-
 // PR-50: defer the three components that aren't visible on first paint
 // (AccessibilityWidget panel, ExitIntentPopup, AssessmentModal). They cost
 // roughly 25 KB combined on the homepage critical path. Lazy-loaded behind
@@ -28,6 +20,11 @@ const ExitIntentPopup = lazy(() => import('./components/ExitIntentPopup'));
 const AssessmentModal = lazy(() => import('./components/AssessmentModal'));
 
 // Lazy load all page components for code splitting
+// PR-53 reverted: HomePage stays lazy. The eager-load attempt cut mobile
+// LCP only 0.4s but ballooned the main bundle and tanked desktop TBT
+// from 30ms to 550ms (desktop perf 99 -> 76). Net negative — keeping
+// HomePage lazy preserves the desktop-99 state from PR-52.
+const HomePage = lazy(() => import('./pages/HomePage'));
 const CalculatorPage = lazy(() => import('./pages/CalculatorPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
