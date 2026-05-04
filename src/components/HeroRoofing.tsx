@@ -85,17 +85,26 @@ export default function HeroRoofing() {
           zIndex: 1
         }}
       >
+      {/* PR-52: actually-responsive picture sources. Previously all 3
+          <source> tags pointed at the SAME 1440x810 file (152 KB), so
+          mobile and tablet downloaded the full desktop image. Now each
+          source maps to a properly-sized WebP:
+            800w  -> 56 KB  (saves 96 KB on mobile)
+            1280w -> 104 KB (saves 48 KB on tablet)
+            1440w -> 152 KB (original, full desktop)
+          Real intrinsic dimensions of original are 1440x810, not 1550x872.
+          Aspect ratio remains 16:9 so layout doesn't shift. */}
       <picture className="absolute inset-0 hidden md:block" style={{ overflow: 'hidden', zIndex: 0, pointerEvents: 'none' }}>
         <source
           media="(max-width: 800px)"
-          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
+          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa-800w.webp"
           type="image/webp"
           width="800"
           height="450"
         />
         <source
           media="(min-width: 801px) and (max-width: 1280px)"
-          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
+          srcSet="/social-proof/team-drone-photo-all-phase-construction-usa-1280w.webp"
           type="image/webp"
           width="1280"
           height="720"
@@ -104,14 +113,14 @@ export default function HeroRoofing() {
           media="(min-width: 1281px)"
           srcSet="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
           type="image/webp"
-          width="1550"
-          height="872"
+          width="1440"
+          height="810"
         />
         <img
           src="/social-proof/team-drone-photo-all-phase-construction-usa.webp"
           alt="All Phase Construction USA team on a residential roofing project"
-          width="1550"
-          height="872"
+          width="1440"
+          height="810"
           className="w-full h-full object-cover"
           style={{ aspectRatio: '16 / 9' }}
           loading="eager"
