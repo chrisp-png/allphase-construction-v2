@@ -111,14 +111,29 @@
     <!-- Third-party scripts moved to end of body so they don't compete with
          the main React bundle for bandwidth and main-thread time during initial load -->
 
-    <!-- Google Ads + GA4 — single gtag.js load -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10809361088"></script>
+    <!-- PR-51: Google Ads + GA4 deferred to window.load.
+         Previous setup loaded gtag.js with `async` (good) but executed
+         the inline gtag('config') calls synchronously the moment the
+         script arrived — that competes with React hydration on the main
+         thread. Deferring the entire setup (script tag + config calls)
+         to window.load runs analytics setup AFTER first interactive
+         paint. Conversion tracking still fires within ~500ms of a click,
+         well before any conversion event would actually be needed. -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-10809361088');
-      gtag('config', 'G-PBMBD8QKK7');
+      window.addEventListener('load', function() {
+        // Set up dataLayer + gtag stub immediately on window.load
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function(){ window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', 'AW-10809361088');
+        window.gtag('config', 'G-PBMBD8QKK7');
+        // Inject the gtag.js script. preconnect added in PR-50 already
+        // opened DNS/TCP/TLS so this loads fast.
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-10809361088';
+        document.head.appendChild(s);
+      });
     </script>
 
     <!-- PR-50: CallRail dynamic phone-number swap deferred to window.load.
