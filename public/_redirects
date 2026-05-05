@@ -104,6 +104,22 @@ http://quote.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/con
 /blog/how-to-choose-roofing-materials-for-large-scale-projects /blog 301!
 /blog/how-to-choose-roofing-materials-for-large-scale-projects/ /blog 301!
 
+# ======================================================================
+# PR-54: GSC duplicate-canonical cleanup (2026-05-04)
+# GSC May 4 email flagged 3 flat-namespace city URLs as "Duplicate,
+# Google chose different canonical than user". Same pattern as PR-44
+# (margate, greenacres, lantana) — old short-form URLs that were
+# missing 301s to their /locations/{city} canonical equivalents.
+# All 3 cities exist as real pages in src/data/locations.ts.
+# ======================================================================
+/wilton-manors /locations/wilton-manors 301!
+/wilton-manors/ /locations/wilton-manors 301!
+/davie /locations/davie 301!
+/davie/ /locations/davie 301!
+/ocean-ridge /locations/ocean-ridge 301!
+/ocean-ridge/ /locations/ocean-ridge 301!
+
+
 
 
 # Broken /roof-replacement/[city] URLs - these pages do not exist
