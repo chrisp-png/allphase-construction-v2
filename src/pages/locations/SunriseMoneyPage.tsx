@@ -142,18 +142,9 @@ export default function SunrisePage() {
     { name: 'Sunrise', url: 'https://allphaseconstructionfl.com/locations/deerfield-beach/service-area/sunrise' }
   ]);
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
+  // PR-55 (2026-05-07): faqSchema const removed. Prerender Wave-C backfill
+  // emits FAQPage for /locations/sunrise via buildLocationFaqs(). A runtime
+  // emission here was producing the GSC duplicate-FAQPage error.
 
   return (
     <div className="min-h-screen bg-[#09090b]">
@@ -169,9 +160,7 @@ export default function SunrisePage() {
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
+        {/* PR-55: FAQPage <script> removed — prerender owns it. */}
       </Helmet>
 
       <StickyConversionBar />

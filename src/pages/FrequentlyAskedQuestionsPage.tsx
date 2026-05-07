@@ -530,7 +530,10 @@ export default function FrequentlyAskedQuestionsPage() {
       script.id = SCHEMA_ID;
       document.head.appendChild(script);
     }
-    script.textContent = JSON.stringify([localBusinessSchema, faqPageSchema]);
+    // PR-55 (2026-05-07): FAQPage removed from injected payload. Prerender
+    // emits FAQPage for /frequently-asked-questions via SERVICE_PAGE_SCHEMAS
+    // (PR-46) — runtime emission here was producing the GSC duplicate error.
+    script.textContent = JSON.stringify([localBusinessSchema]);
 
     return () => {
       const el = document.getElementById(SCHEMA_ID);
