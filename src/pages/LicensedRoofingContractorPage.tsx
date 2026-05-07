@@ -58,8 +58,15 @@ export default function LicensedRoofingContractorPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               How to Verify a Licensed Roofing Contractor in South Florida
             </h1>
-            <p className="text-xl text-zinc-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Florida law requires roofing contractors to hold a state license for any job over $1,000. In Broward and Palm Beach Counties — where HVHZ codes demand the highest installation standards in the country — hiring an unlicensed roofer puts your home, your warranty, and your insurance coverage at risk. Here's what to check before you sign a contract.
+            <div className="inline-flex items-center gap-2 bg-zinc-900/80 border border-red-500/30 text-red-300 px-3 py-1.5 rounded-full text-sm font-semibold mb-6">
+              <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+              <span>Updated May 7, 2026 · Current 2026 verification flow</span>
+            </div>
+            <p className="text-xl text-zinc-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+              Florida law requires roofing contractors to hold a state license for any job over $1,000. In Broward and Palm Beach Counties — where HVHZ codes demand the highest installation standards in the country — hiring an unlicensed roofer puts your home, your warranty, and your insurance coverage at risk. Here's what to check before you sign a contract in 2026.
+            </p>
+            <p className="text-base text-zinc-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Author: <Link to="/team/chris-porosky" className="text-red-400 hover:text-red-300 underline">Chris Porosky</Link>, owner of All Phase Construction USA, dual-licensed CCC-1331464 and CGC-1526236, appointed member of the Professional Roofers Advisory Council (PRAC) since 2019. The verification flow below is the same one we recommend customers use on us — it works for any Florida roofer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -348,6 +355,16 @@ export default function LicensedRoofingContractorPage() {
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               Schedule your free roof inspection with a contractor you can verify. No pressure, no obligation — just honest assessment from a family-owned team with 20+ years in South Florida.
+            </p>
+            <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 mb-8 text-left max-w-2xl mx-auto">
+              <h3 className="text-lg font-bold text-white mb-3">Related guides (Updated 2026):</h3>
+              <ul className="space-y-2 text-zinc-300 text-base">
+                <li>→ <Link to="/frequently-asked-questions" className="text-red-300 hover:text-red-200 underline">South Florida Roofing FAQ</Link> — 12 plain-English answers including the full MyFloridaLicense verification walkthrough</li>
+                <li>→ <Link to="/broward-county-roof-replacement-guide" className="text-red-300 hover:text-red-200 underline">Broward County Roof Replacement Guide</Link> — HVHZ requirements and the 25% rule</li>
+                <li>→ <Link to="/team/chris-porosky" className="text-red-300 hover:text-red-200 underline">About Chris Porosky</Link> — full credential roll-up</li>
+              </ul>
+            </div>
+            <p className="text-zinc-300 text-lg max-w-3xl mx-auto leading-relaxed mb-8">
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

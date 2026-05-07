@@ -105,9 +105,18 @@ export default function BrowardCountyRoofReplacementGuidePage() {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Broward County Roof Replacement Guide <span className="text-yellow-400">(2026)</span>
             </h1>
+            <div className="inline-flex items-center gap-2 bg-zinc-900 border border-yellow-500/30 text-yellow-300 px-3 py-1.5 rounded-full text-sm font-semibold mb-6">
+              <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+              <span>Updated May 7, 2026 · Current 2026 pricing &amp; permit data</span>
+            </div>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
-              Everything homeowners need to know about replacing a roof in Broward County — from HVHZ requirements and the 25% rule to costs, permits, and insurance claims. Written by licensed roofing professionals with 2,500+ completed roofs in the area.
+              Everything homeowners need to know about replacing a roof in Broward County — from HVHZ requirements and the 25% rule to current 2026 costs, permit timelines, and the four cost drivers that actually move the final number. Written by Florida-licensed roofing professionals with 2,500+ completed roofs across Broward and Palm Beach County. Author: <Link to="/team/chris-porosky" className="text-yellow-400 hover:text-yellow-300 underline">Chris Porosky</Link> (CCC-1331464 / CGC-1526236, Professional Roofers Advisory Council member 2019).
             </p>
+            <div className="bg-zinc-900/60 border-l-4 border-yellow-500 pl-4 py-3 mb-6 rounded-r">
+              <p className="text-base text-zinc-300 leading-relaxed">
+                <strong className="text-yellow-400">What changed in 2026:</strong> Boca Raton permit-issuance windows lengthened to 4–5 weeks (Pompano Beach and Fort Lauderdale stay at 2–3 and 2–4 weeks respectively). 2002-and-older homes now commonly trigger hurricane-strap retrofit at exposure — see the <Link to="/frequently-asked-questions" className="text-yellow-400 hover:text-yellow-300 underline">FAQ page</Link> for the full pre/post-2002 retrofit logic. Material price ranges below reflect Q1 2026 South Florida market rates.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -338,6 +347,19 @@ export default function BrowardCountyRoofReplacementGuidePage() {
           </div>
         </section>
 
+        <section className="mb-16 bg-zinc-900 border border-zinc-700 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Related Reading (Updated 2026)</h2>
+          <p className="text-zinc-400 mb-4">Continue researching with these companion guides — all updated for 2026 with current pricing, permit timelines, and HVHZ requirements:</p>
+          <ul className="space-y-2 text-zinc-300">
+            <li>→ <Link to="/palm-beach-county-roof-replacement-guide" className="text-yellow-400 hover:text-yellow-300 underline">Palm Beach County Roof Replacement Guide</Link> — voluntary HVHZ-spec install, 2026 pricing</li>
+            <li>→ <Link to="/boca-raton-roof-permit-guide" className="text-yellow-400 hover:text-yellow-300 underline">Boca Raton Roof Permit Guide</Link> — the 4–5 week permit queue explained</li>
+            <li>→ <Link to="/pompano-beach-roof-permit-guide" className="text-yellow-400 hover:text-yellow-300 underline">Pompano Beach Roof Permit Guide</Link> — 2–3 week issuance window</li>
+            <li>→ <Link to="/roof-cost-calculator" className="text-yellow-400 hover:text-yellow-300 underline">Roof Cost Calculator</Link> — 2026 preliminary estimates by material and pitch</li>
+            <li>→ <Link to="/frequently-asked-questions" className="text-yellow-400 hover:text-yellow-300 underline">South Florida Roofing FAQ</Link> — 12 questions answered with current 2026 data</li>
+            <li>→ <Link to="/team/chris-porosky" className="text-yellow-400 hover:text-yellow-300 underline">About Chris Porosky</Link> — owner credentials and full license verification flow</li>
+          </ul>
+        </section>
+
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 lg:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Get a Free Broward County Roof Inspection</h2>
           <p className="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
@@ -351,7 +373,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-300 mt-4">Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-300 mt-4">Licensed &amp; Insured | CCC-1331464 | CGC-1526236 (verifiable at MyFloridaLicense.com)</p>
         </section>
       </div>
       </div>
