@@ -72,15 +72,12 @@ export default function ServicePageEnhancements({
   const t1 = TESTIMONIAL_POOL[idx];
   const t2 = TESTIMONIAL_POOL[(idx + 1) % TESTIMONIAL_POOL.length];
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer }
-    }))
-  };
+  // PR-55 (2026-05-07): faqSchema const removed. The prerender script
+  // emits FAQPage for every service hub URL via SERVICE_PAGE_SCHEMAS.faqs,
+  // so a runtime emission here was producing the GSC "Duplicate field
+  // FAQPage" error on /tile-roofing, /metal-roofing, /shingle-roofing,
+  // /flat-roofing, /residential-roofing, /commercial-roofing, /roof-repair.
+  // Visible FAQ block below is unchanged — only the duplicate schema is gone.
 
   // NOTE: Service schema intentionally does NOT carry aggregateRating or review.
   // Google's rich-results spec rejects review snippets attached to Service
@@ -99,7 +96,7 @@ export default function ServicePageEnhancements({
   return (
     <>
       <Helmet>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        {/* PR-55: FAQPage <script> removed — prerender owns it. ratingSchema (Service) stays. */}
         <script type="application/ld+json">{JSON.stringify(ratingSchema)}</script>
       </Helmet>
 

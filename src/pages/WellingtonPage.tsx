@@ -82,18 +82,9 @@ export default function WellingtonPage() {
     { name: cityName, url: `https://allphaseconstructionfl.com/locations/${citySlug}` }
   ]);
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqData.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
+  // PR-55 (2026-05-07): faqSchema const removed. Prerender Wave-C backfill
+  // emits FAQPage for /locations/wellington via buildLocationFaqs(). A
+  // runtime emission here was producing the GSC duplicate-FAQPage error.
 
   return (
     <>
@@ -106,9 +97,7 @@ export default function WellingtonPage() {
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
+        {/* PR-55: FAQPage <script> removed — prerender owns it. */}
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>

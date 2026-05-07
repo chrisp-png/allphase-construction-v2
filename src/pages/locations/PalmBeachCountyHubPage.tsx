@@ -213,15 +213,10 @@ export default function PalmBeachCountyHubPage() {
         },
       ],
     },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: PBC_FAQS.map((f) => ({
-        '@type': 'Question',
-        name: f.question,
-        acceptedAnswer: { '@type': 'Answer', text: f.answer },
-      })),
-    },
+    // PR-55 (2026-05-07): FAQPage entry removed from schema array.
+    // The prerender's COUNTY_HUBS loop emits FAQPage for /locations/palm-beach-county
+    // via buildCountyFaqs(). A runtime emission here was producing the GSC
+    // "Duplicate field FAQPage" error.
   ];
 
   return (
