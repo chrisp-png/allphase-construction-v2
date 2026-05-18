@@ -61,6 +61,19 @@ export default function PricingGuidePage() {
       />
       <Header />
       <main className="min-h-screen bg-black pt-24">
+        {/* PR-58 (2026-05-18): top-of-page calculator CTA. Users who land on
+            this page (direct traffic, internal links, GBP) should be funneled
+            to the interactive cost calculator, which is the converting page
+            and the canonical for search. */}
+        <div className="bg-red-600 text-white py-3 px-4 text-center">
+          <Link
+            to="/roof-cost-calculator"
+            className="inline-flex items-center gap-2 text-base font-semibold hover:underline"
+          >
+            <Calculator className="w-5 h-5" />
+            Want a number, not just a guide? Use the Free 2026 Roof Cost Calculator →
+          </Link>
+        </div>
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

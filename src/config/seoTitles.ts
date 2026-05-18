@@ -78,7 +78,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/pricing-guide': {
         title: 'South Florida Roof Pricing Guide 2026 | All Phase USA',
     description: 'South Florida roof replacement costs broken down by material, size, and scope. Know what to expect before you call a contractor.',
-    canonical: 'https://allphaseconstructionfl.com/pricing-guide'
+    // PR-58 (2026-05-18): canonical points to /roof-cost-calculator. Per the May
+    // 18 GSC data, /pricing-guide gets 0 organic clicks (Soft 404) while
+    // /roof-cost-calculator gets 15 clicks/4,875 impressions for the same
+    // intent. Consolidating ranking signals to the page that's actually winning.
+    canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/blog': {
     title: 'Roofing Blog | Expert Tips from All Phase Construction USA',
