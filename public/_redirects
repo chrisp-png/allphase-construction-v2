@@ -575,8 +575,10 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /government-contracting /commercial-roofing 301!
 /career-opportunity /about-us 301!
 /career-opportunity/ /about-us 301!
-/hurricane-help /contact 301!
-/hurricane-help/ /contact 301!
+# PR-59 (2026-05-20): /hurricane-help is now a real prerendered
+# hurricane-season landing page. The 301 redirect to /contact has been
+# removed so the page can rank for hurricane-prep + emergency-response
+# queries during the June–November hurricane season.
 /leak-identification /roof-inspection 301!
 /leak-identification/ /roof-inspection 301!
 /title-roofing /residential-roofing 301!
