@@ -238,6 +238,25 @@ export default defineConfig({
     cssCodeSplit: true,
     cssMinify: true,
     minify: 'esbuild',
+    // PR-61: throttle modulepreload to fix mobile TBT spikes + 13.4MB page weight.
+    // Vite's default behavior auto-preloads every transitive dependency of every
+    // dynamic-imported chunk. With 80+ lazy-loaded route components in App.tsx,
+    // this generates 20-40 cross-chunk <link rel="modulepreload"> tags per page,
+    // most of which the visitor will never navigate to. Filtering to just the
+    // critical vendor chunks (react-vendor, supabase-vendor) keeps fast first
+    // hydration without the bandwidth + main-thread cost of preloading every
+    // route's chunk speculatively.
+    //
+    // Trade-off: route transitions (e.g., clicking from / to /locations/...) will
+    // fetch the destination chunk on-demand instead of having it pre-warmed.
+    // Adds ~50-150ms to first navigation depending on connection. Net positive
+    // for SEO/CWV because initial-load perf is what Google measures, and
+    // route transitions are already fast (chunks are small, ~5-15KB each).
+    modulePreload: {
+      resolveDependencies: (_filename, deps) => {
+        return deps.filter((dep) => /react-vendor|supabase-vendor/.test(dep));
+      },
+    },
     rollupOptions: {
       output: {
         manualChunks: {
