@@ -49,7 +49,7 @@ export const locations: Location[] = [
     state: "FL",
     county: "Broward",
     hvhz: true,
-    titleOverride: "Roofing Contractor Deerfield Beach FL | 2,500+ Roofs",
+    titleOverride: "Deerfield Beach Roofing Contractor (HQ) | 2,500+ Roofs",
     descriptionOverride: "Local Deerfield Beach roofing contractor since 2005 — 2,500+ roofs installed. Dual-licensed, HVHZ-certified. Free same-day estimate. (754) 227-5605.",
     neighborhoods: ["The Cove", "Deer Creek", "Century Village", "The Lakes", "Crystal Lake", "Waterford", "Independence Bay"],
     zips: ["33064","33441","33442","33443"],
