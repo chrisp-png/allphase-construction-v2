@@ -386,8 +386,8 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     cityName: 'Boynton Beach',
     citySlug: 'boynton-beach',
     county: 'Palm Beach County',
-    pageTitle: 'Top 5 Roofers in Boynton Beach FL (2026) | All Phase',
-    metaDescription: 'Looking for the best roofers in Boynton Beach? We reviewed the top 5 roofing contractors. See who made the list.',
+    pageTitle: 'Best Boynton Beach Roofers (2026 Reviews + Ratings)',
+    metaDescription: 'Top 5 highest-rated Boynton Beach roofers reviewed for 2026 — wind-code certified, HOA-experienced contractors near The Cascades & Canyon Lakes.',
     introParagraphs: [
       'Boynton Beach combines oceanfront living with established inland communities across Palm Beach County. From The Cascades active adult community to Canyon Lakes\' upscale estates, roofing needs vary dramatically. We identified five Palm Beach County roofers with the credentials and local knowledge this city requires.',
       'Oceanfront Park at 6415 N. Ocean Blvd marks the eastern coastal zone where roofing demands are most extreme. The Cascades and Valencia Lakes -- active 55+ communities -- represent concentrated aging roof replacement needs. Canyon Lakes and Hunters Run feature upscale gated homes with complex tile roof systems. Boynton Beach buildings face approximately a 41% chance of significant flooding over 30 years.'

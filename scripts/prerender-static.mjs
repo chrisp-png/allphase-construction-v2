@@ -5423,8 +5423,8 @@ ${companyAuthorityFooter()}
   </ul>
 `;
   fs.writeFileSync(path.join(bestRoofersBoyntonDir, 'index.html'), createHTMLTemplate(
-    'Top 5 Roofers in Boynton Beach FL (2026) | All Phase',
-    'Looking for the best roofers in Boynton Beach? We reviewed the top 5 roofing contractors. See who made the list.',
+    'Best Boynton Beach Roofers (2026 Reviews + Ratings)',
+    'Top 5 highest-rated Boynton Beach roofers reviewed for 2026 — wind-code certified, HOA-experienced contractors near The Cascades & Canyon Lakes.',
     'https://allphaseconstructionfl.com/locations/boynton-beach/best-roofers-boynton-beach',
     bestRoofersBoyntonContent,
     JSON.parse('[{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a new roof cost in Boynton Beach?","acceptedAnswer":{"@type":"Answer","text":"Boynton Beach roof replacement ranges from $8,000 to $16,500 depending on home size and material. Canyon Lakes and Hunters Run estate homes with complex tile systems cost more. Contact All Phase Construction USA at (754) 227-5605 for a detailed proposal."}},{"@type":"Question","name":"Which roofing material performs best in Boynton Beach?","acceptedAnswer":{"@type":"Answer","text":"Concrete tile and metal roofing are the top performers in Boynton Beach\'s climate. The Cascades and Valencia Lakes communities see excellent results with concrete tile for its wind resistance and 40+ year lifespan. Coastal properties near Oceanfront Park need salt-resistant fasteners and flashing."}},{"@type":"Question","name":"How do I verify my Boynton Beach roofer\'s qualifications?","acceptedAnswer":{"@type":"Answer","text":"Ensure your roofer holds a Florida CCC license and meets Palm Beach County wind-code requirements. All Phase Construction USA maintains CCC-1331464 and CGC-1526236 dual licenses. Ask for recent references from Boynton Beach properties and verify active liability insurance."}},{"@type":"Question","name":"Are 55+ communities in Boynton Beach due for roof replacement?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Cascades, Valencia Lakes, and other active adult communities built in the early 2000s are entering the 20-25 year window where proactive replacement prevents costly emergency repairs. Coordinated community reroofing can reduce per-unit costs significantly."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allphaseconstructionfl.com/"},{"@type":"ListItem","position":2,"name":"Boynton Beach","item":"https://allphaseconstructionfl.com/locations/boynton-beach"},{"@type":"ListItem","position":3,"name":"Best Roofers in Boynton Beach","item":"https://allphaseconstructionfl.com/locations/boynton-beach/best-roofers-boynton-beach"}]}]')
@@ -6687,9 +6687,9 @@ ${companyAuthorityFooter()}
   const boyntonBeachGuidePages = [
     {
       slug: 'boynton-beach-roof-replacement-guide',
-      title: 'Boynton Beach Roof Replacement Guide (2026) | All Phase USA',
-      description: 'Boynton Beach roof replacement guide — 55+ HOA communities (Aberdeen, Hunters Run, Indian Spring), PBC wind-code, 3–4 week permits. (754) 227-5605.',
-      h1: 'Boynton Beach Roof Replacement Guide (2026)',
+      title: 'Boynton Beach Roof Replacement Cost (2026) | All Phase',
+      description: 'Boynton Beach FL roof replacement cost guide (2026): $13K–$22K shingle, $22K–$40K tile, full permit + HOA timeline. (754) 227-5605.',
+      h1: 'Boynton Beach Roof Replacement Cost Guide (2026)',
       intro: `Boynton Beach has one of Palm Beach County's most concentrated 55+ community markets, and it shows up in every roof project we quote here. Over half the residential re-roofs we book in Boynton are in HOA-managed communities — Aberdeen, Hunters Run, Indian Spring, Valencia Reserve, Valencia Bay, Canyon Lakes, Palm Isles, Cascade Lakes, Coral Lakes — where the association board drives the timing, the approved-material list, and the work-hour windows. Outside the gates, Boynton's 1980s and early-2000s single-family housing wave has roofs hitting end-of-life right now. This guide explains what a Boynton roof replacement actually looks like in 2026: cost, materials, permit timeline, and the HOA reality every Boynton homeowner navigates.`,
       sections: `
   <h2>The Boynton Beach Roofing Reality</h2>

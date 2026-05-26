@@ -485,8 +485,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/boca-raton-wind-mitigation-roofing'
   },
   '/boynton-beach-roof-replacement-guide': {
-    title: 'Boynton Beach Roof Replacement Guide (2026) | All Phase USA',
-    description: 'Boynton Beach roof replacement guide — 55+ HOA communities (Aberdeen, Hunters Run, Indian Spring), PBC wind-code, 3–4 week permits. (754) 227-5605.',
+    title: 'Boynton Beach Roof Replacement Cost (2026) | All Phase',
+    description: 'Boynton Beach FL roof replacement cost guide (2026): $13K–$22K shingle, $22K–$40K tile, full permit + HOA timeline. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/boynton-beach-roof-replacement-guide'
   },
   '/boynton-beach-55-plus-community-roofing': {
@@ -884,6 +884,21 @@ export function generateSEOMetadata(path: string): SEOMetadata {
       ogTitle: title,
       ogDescription,
       ogUrl: `https://allphaseconstructionfl.com/roof-repair/${slug}`,
+    };
+  }
+
+  // Static override for /roof-inspection/deerfield-beach (PR-60 CTR rewrite)
+  // Without this the dynamic handler below stomps the prerendered title at runtime.
+  if (normalizedPath === '/roof-inspection/deerfield-beach') {
+    const title = 'Free Deerfield Beach Roof Inspection — Same-Day Report';
+    const description = 'Free same-day roof inspection in Deerfield Beach, FL. 21-point report with photos. Dual-licensed contractor since 2005. Call (754) 227-5605.';
+    return {
+      title,
+      description,
+      canonical: 'https://allphaseconstructionfl.com/roof-inspection/deerfield-beach',
+      ogTitle: title,
+      ogDescription: description,
+      ogUrl: 'https://allphaseconstructionfl.com/roof-inspection/deerfield-beach',
     };
   }
 
