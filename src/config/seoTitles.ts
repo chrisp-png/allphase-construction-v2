@@ -60,6 +60,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Call (754) 227-5605 or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.',
     canonical: 'https://allphaseconstructionfl.com/contact'
   },
+  '/hurricane-help': {
+    title: 'Roof Emergency & Hurricane Help South Florida | All Phase',
+    description: 'South Florida roof emergency response + hurricane-season preparation. Same-day inspection from Deerfield Beach HQ. HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/hurricane-help'
+  },
   '/about-us': {
     title: 'About All Phase Construction | Expert Roofing Specialist',
     description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 138 reviews.',

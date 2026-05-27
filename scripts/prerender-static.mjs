@@ -1774,6 +1774,74 @@ function generateLearningCenterHubContent() {
 }
 
 /**
+ * /hurricane-help hub content (PR-59, 2026-05-20)
+ *
+ * Real hurricane-season landing page replacing the legacy /hurricane-help → /contact
+ * 301 redirect. Targets seasonal search demand (June–November) for hurricane
+ * preparation, emergency response, and post-storm inspection scheduling
+ * across Broward and Palm Beach County.
+ *
+ * CLAUDE.md §14 compliant — no insurance / claim / carrier / deductible / hail /
+ * 'hurricane damage' language in new copy. Allowed: hurricane straps (structural
+ * component), hurricane-force winds (physical phenomenon), hurricane preparation,
+ * hurricane season, hurricane-resistant, HVHZ standards, post-storm inspection.
+ */
+function generateHurricaneHelpContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Emergency Response &amp; Hurricane-Season Preparation — South Florida</h1>
+
+  <p><strong>Storm just hit, leak in the ceiling, tree on the roof — call (754) 227-5605.</strong> All Phase Construction USA provides same-day emergency response and post-storm inspections throughout Broward County and Palm Beach County from our Deerfield Beach headquarters. Hurricane season runs June 1 through November 30 — this page is the playbook for what to do before, during, and after a storm.</p>
+
+  <h2>The First 24 Hours After a Storm</h2>
+  <p>In order of priority, here is what to do once the storm passes and it is safe to assess your property:</p>
+  <ol style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Stay off the roof.</strong> Wet roofing materials and unseen structural damage make rooftop access genuinely dangerous in the first 24-48 hours. Assess from the ground first.</li>
+    <li><strong>Document from the ground.</strong> Take wide-angle photos and short videos of every elevation of the home. Capture date and time. Useful regardless of next steps.</li>
+    <li><strong>Document the interior.</strong> Photo or video every room, especially any active leaks, ceiling stains, or visible water intrusion.</li>
+    <li><strong>Contain interior water intrusion.</strong> Buckets, plastic sheeting, and towels. Move furniture and electronics away from active drips.</li>
+    <li><strong>Call a licensed roofing contractor for emergency tarping.</strong> Same-day tarping prevents secondary water intrusion through compromised roof sections. We provide emergency tarping throughout Broward and Palm Beach County.</li>
+  </ol>
+
+  <h2>Same-Day Emergency Response from Deerfield Beach HQ</h2>
+  <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, centrally positioned to reach every corner of Broward County and most of Palm Beach County within 60 minutes. During hurricane season, we maintain on-call crews for emergency tarping, leak mitigation, and structural assessment. Call <strong>(754) 227-5605</strong> at any hour — voicemails left outside business hours are routed to the on-call project manager during active storm periods.</p>
+
+  <h2>Pre-Season Roof Inspection — May and June</h2>
+  <p>The single most effective hurricane-season precaution is a pre-season inspection of the existing roof in late May or early June. The inspection identifies:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Loose, cracked, or missing tiles or shingles</strong> that are vulnerable to wind uplift before the first named storm of the season.</li>
+    <li><strong>Compromised flashing</strong> at chimneys, skylights, and wall transitions — the most common leak point in storm conditions.</li>
+    <li><strong>Soft or rotted decking</strong> beneath the visible roof surface — only identifiable by walking the roof with weight-on-foot assessment.</li>
+    <li><strong>Hurricane-strap condition</strong> — on homes permitted before the 2002 Florida Building Code cycle, the engineered roof-to-wall connectors that resist wind uplift were often not installed. We document the condition and provide retrofit options when relevant.</li>
+    <li><strong>Drain, scupper, and gutter clearance</strong> — clogged drainage paths cause ponding and forced water intrusion under wind-driven rain.</li>
+  </ul>
+  <p>Pre-season inspections typically take 45-90 minutes and are free for homeowners in our Broward and Palm Beach County service area.</p>
+
+  <h2>Post-Storm Roof Inspection</h2>
+  <p>After any named storm or significant wind event, a professional post-storm inspection produces:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li>Written documentation of the existing roof condition with photographs.</li>
+    <li>Moisture readings at suspected leak entry points (we use professional moisture meters, not visual inspection alone).</li>
+    <li>Identification of any structural concerns requiring immediate attention.</li>
+    <li>A repair-or-replace recommendation with line-item scope.</li>
+  </ul>
+  <p>Post-storm inspections are scheduled on a priority basis after major events, typically within 24-72 hours of the request depending on demand. Call <strong>(754) 227-5605</strong> or use the <a href="/contact" style="color: #dc2626; text-decoration: underline;">contact form</a> to schedule.</p>
+
+  <h2>Why HVHZ Construction Matters in Hurricane Season</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code. Every roof installed in Broward must use Florida Notice of Acceptance (NOA)-approved products, code-current fastening patterns, and a full secondary water barrier (typically SBS-modified peel-and-stick underlayment bonded to the deck). Palm Beach County is not legally HVHZ but the prevailing standard for replacements is to build voluntarily to HVHZ spec because the coastal wind exposure is identical.</p>
+  <p>The practical hurricane-season difference: an HVHZ-spec roof system is engineered to resist wind uplift at 175+ mph design speeds with the secondary water barrier holding even if the primary covering is compromised. Older non-HVHZ systems, common on pre-2002 homes that have not been re-roofed since, perform measurably worse under hurricane-force wind-driven rain.</p>
+
+  <h2>Hurricane-Strap Retrofit on Pre-2002 Homes</h2>
+  <p>Florida Building Code 2001 was the first code cycle that required engineered roof-to-wall connectors — commonly called hurricane straps — on new construction. Homes permitted before roughly 2002 frequently lack them. The lowest-cost moment in the life of the home to retrofit hurricane straps is during a full roof replacement, when the truss-to-wall connection is exposed at tear-off. We document the connector condition on every replacement and provide engineered retrofit pricing when applicable.</p>
+
+  <h2>Get Help Now</h2>
+  <p>Call <strong>(754) 227-5605</strong> for same-day emergency response or to schedule a pre-season or post-storm inspection. Free in-person assessment throughout Broward County and Palm Beach County. Dual-licensed: CCC-1331464 (Florida State Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor).</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+/**
  * /frequently-asked-questions hub content (PR-46)
  *
  * Visible-HTML rendering of the same 12 Q&A pairs that ship as the
@@ -3297,7 +3365,8 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
     { path: '/south-florida-roofing-reviews', title: 'South Florida Roofing Reviews' },
     { path: '/flat-roof-moisture-infrared-inspection', title: 'Flat Roof Moisture & Infrared Inspection' },
-    { path: '/team/chris-porosky', title: 'Chris Porosky — Owner & Lead Estimator | All Phase Construction USA' }
+    { path: '/team/chris-porosky', title: 'Chris Porosky — Owner & Lead Estimator | All Phase Construction USA' },
+    { path: '/hurricane-help', title: 'Roof Emergency & Hurricane Help South Florida | All Phase' }
   ];
 
   servicePages.forEach(({ path: pagePath, title }) => {
@@ -3370,6 +3439,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateBlogHubContent();
     } else if (pagePath === '/team/chris-porosky') {
       pageContent = generateChrisPoroskyAuthorContent();
+    } else if (pagePath === '/hurricane-help') {
+      pageContent = generateHurricaneHelpContent();
     } else if (pagePath === '/pricing-guide') {
       pageContent = generatePricingGuideHubContent();
     } else if (pagePath === '/single-ply-roofing') {
