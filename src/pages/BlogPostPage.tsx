@@ -196,6 +196,18 @@ export default function BlogPostPage() {
   // Hoisted so the static-synthesis path can be reached from multiple branches
   // (Supabase returned null OR Supabase threw).
   const staticPostMeta: Record<string, Partial<BlogPost>> = {
+    'understanding-roof-change-orders-hidden-wood-damage': {
+      title: "Why Your Roof Change Order Cost More Than You Expected (And Why That's Actually Good News)",
+      excerpt: 'Hidden truss rot and termite damage often appear only after tear-off. Here is why roofing change orders run high, why we replace bad wood instead of covering it up, and how we photograph and number every board you pay for.',
+      author: 'All Phase Construction USA Team',
+      published_date: '2026-06-07',
+      categories: ['Roofing Education'],
+      tags: ['Change Orders', 'Hidden Damage', 'Wood Rot', 'Truss Repair', 'Termite Damage', 'Roof Financing', 'South Florida'],
+      featured_image: '/deck-inspection.jpg',
+      meta_title: 'Why Roofing Change Orders Cost More | Hidden Wood Damage Explained',
+      meta_description: 'Why do roofing change orders run high? Hidden truss rot and termite damage are found only at tear-off. See how All Phase documents and numbers every replaced board in Broward & Palm Beach County.',
+      faqs: [],
+    },
     'our-roofing-company-is-proud-to-be-a-family-owned-business': {
       title: 'Our Roofing Company Is Proud to Be a Family-Owned Business',
       excerpt: 'All Phase Construction USA is a family-owned roofing company in Deerfield Beach, FL with over 20 years of experience serving South Florida homeowners.',
