@@ -1,4 +1,45 @@
-# Why Your Roof Change Order Cost More Than You Expected (And Why That's Actually Good News)
+/*
+  # Insert Blog Post: Why Roofing Change Orders Cost More (Hidden Wood Damage)
+
+  1. New Content
+    - Slug: understanding-roof-change-orders-hidden-wood-damage
+    - Title: Why Your Roof Change Order Cost More Than You Expected (And Why That's Actually Good News)
+    - Customer-education piece addressing change-order "sticker shock": explains
+      hidden truss-end rot and termite damage found only at tear-off, why bad
+      wood is replaced rather than covered, standardized per-linear-foot lumber
+      pricing, the photograph-and-number documentation process (incl. splitting
+      boards 4A/4B to save material), and a financing-pre-qualification section
+      that links /easy-payments.
+
+  2. Contact
+    - Footer email is leads@allphaseusa.com (lead-routing inbox).
+    - Both license numbers cited: CCC-1331464 and CGC-1526236.
+
+  3. Idempotency
+    - INSERT ... ON CONFLICT (slug) DO UPDATE. Safe to re-run.
+
+  4. Risk: Low. New blog_posts row, no schema change.
+*/
+
+INSERT INTO blog_posts (
+  title,
+  slug,
+  excerpt,
+  content,
+  featured_image,
+  published_date,
+  author,
+  categories,
+  tags,
+  meta_title,
+  meta_description,
+  published,
+  faqs
+) VALUES (
+  'Why Your Roof Change Order Cost More Than You Expected (And Why That''s Actually Good News)',
+  'understanding-roof-change-orders-hidden-wood-damage',
+  'Hidden truss rot and termite damage often appear only after tear-off. Here''s why roofing change orders run high, why we replace bad wood instead of covering it up, and how we photograph and number every board you pay for.',
+  $BODY$# Why Your Roof Change Order Cost More Than You Expected (And Why That's Actually Good News)
 
 **Hidden truss rot, termite damage, and the honest reason your change order came in high — plus how we document every single board so you know exactly what you paid for.**
 
@@ -132,3 +173,48 @@ The new roof may look fine, but fasteners driven into soft or rotted wood don't 
 
 *Serving Broward & Palm Beach Counties | Licensed & Insured*
 CGC-1526236 | CCC-1331464
+$BODY$,
+  '/deck-inspection.jpg',
+  '2026-06-07',
+  'All Phase Construction USA Team',
+  '["Roofing Education"]'::jsonb,
+  '["Change Orders", "Hidden Damage", "Wood Rot", "Truss Repair", "Termite Damage", "Roof Financing", "Consumer Protection", "South Florida"]'::jsonb,
+  'Why Roofing Change Orders Cost More | Hidden Wood Damage Explained',
+  'Why do roofing change orders run high? Hidden truss rot and termite damage are found only at tear-off. See how All Phase documents every replaced board in Broward & Palm Beach.',
+  true,
+  $FAQ$[
+  {
+    "question": "Why didn't you find this damage during the inspection?",
+    "answer": "Much of the most serious wood damage — rotted truss ends, soft decking, termite activity — is physically hidden beneath the existing roof covering and is not visible from the ground, the attic, or the surface. A thorough inspection identifies everything reasonably accessible, but some conditions only become visible once the old roof is torn off. That is the moment we document it and bring it to you."
+  },
+  {
+    "question": "Do I need an active leak to have rotted roof wood?",
+    "answer": "No. A great deal of wood rot occurs at the perimeter of the roof — at the truss ends, eaves, and fascia — where moisture, humidity, and wind-driven rain attack the wood without ever reaching your interior ceilings. It is common to have significant hidden damage with no leak inside the home."
+  },
+  {
+    "question": "How do I know I'm only being charged for the wood that was actually replaced?",
+    "answer": "We photograph and individually number every board we remove and replace, writing the size, length, and a count number directly on each piece. You receive that photographic record, and all replacement lumber is priced by the linear foot off a standardized schedule, so you can verify the charges yourself."
+  },
+  {
+    "question": "Should I get financing pre-qualified even if I plan to pay cash?",
+    "answer": "Yes. Pre-qualifying is fast, free, and creates no obligation to borrow. Because hidden damage cannot be predicted before tear-off, having financing ready means you can approve any necessary change-order work immediately and keep your project on schedule, without financial pressure. You can start at our Easy Payments page: https://allphaseconstructionfl.com/easy-payments/."
+  },
+  {
+    "question": "What happens if a roofer just covers up rotted wood?",
+    "answer": "The new roof may look fine, but fasteners driven into soft or rotted wood do not hold. Under hurricane-force wind, those weak connections can fail and allow sections of the roof to peel away — a far more expensive and dangerous outcome than replacing the wood up front."
+  }
+]$FAQ$::jsonb
+)
+ON CONFLICT (slug) DO UPDATE
+SET
+  title = EXCLUDED.title,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  featured_image = EXCLUDED.featured_image,
+  categories = EXCLUDED.categories,
+  tags = EXCLUDED.tags,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  published = EXCLUDED.published,
+  faqs = EXCLUDED.faqs,
+  updated_at = NOW();
