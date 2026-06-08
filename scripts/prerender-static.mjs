@@ -185,6 +185,9 @@ function generateDeerfieldBeachHQContent() {
     <p style="margin-bottom: 0; color: #7f1d1d;">
       🔍 <strong>Free Professional Roof Inspections:</strong> <a href="/roof-inspection/deerfield-beach" style="color: #dc2626; text-decoration: underline; font-weight: bold;">21-Point Deerfield Beach Roof Inspection</a> ✅ Comprehensive assessment with photo documentation
     </p>
+    <p style="margin-bottom: 0; color: #7f1d1d;">
+      🌀 <strong>Hurricane Season (June–November):</strong> <a href="/hurricane-help" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Pre-season inspection + post-storm response</a> ✅ Same-day emergency tarping and structural assessment
+    </p>
   </div>
 
   <h2>Your Deerfield Beach Headquarters for Expert Roofing</h2>
@@ -1166,7 +1169,9 @@ function generateRoofRepairHubContent() {
 <section id="seo-static-content">
   <h1>Emergency Roof Repair Services | South Florida</h1>
 
-  <p><strong>Roof leaking? We can help today.</strong> All Phase Construction USA handles emergency leaks, storm damage, and flashing failures across South Florida. We're dual-licensed (CCC & CGC), so we fix both the roof and any structural damage underneath. Call <strong>(754) 227-5605</strong> for same-day service.</p>
+  <p><strong>Roof leaking? We can help today.</strong> All Phase Construction USA handles emergency leaks, storm damage, and flashing failures across South Florida. We're dual-licensed (CCC & CGC), so we fix both the roof and any structural damage underneath. Call <strong>(754) 227-5605</strong> to schedule a free inspection — typically booked within 24–48 hours.</p>
+
+  <p style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1rem; margin: 1.5rem 0; color: #7f1d1d;">🌀 <strong>During hurricane season (June–November):</strong> Visit our <a href="/hurricane-help" style="color: #dc2626; text-decoration: underline; font-weight: bold;">hurricane prep + emergency response page</a> for the post-storm 24-hour checklist, pre-season inspection details, and same-day emergency tarping availability.</p>
 
   <h2>Roof Repair Service Areas</h2>
   <p>We serve over 50 cities across Broward County and Palm Beach County. Select your city for local roof repair services:</p>
@@ -2182,11 +2187,16 @@ function homepageContent() {
   <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">emergency roof repairs</a>, <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">professional roof inspections</a>, <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">complete roof replacements</a>, <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile roofing</a>, <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">metal roofing</a>, <a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">shingle roofing</a>, <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing (TPO/PVC)</a>, <a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">roof maintenance programs</a>, and storm damage restoration.</p>
   <p style="color: #374151; line-height: 1.75;">Owner-led service from <a href="/team/chris-porosky" style="color: #dc2626; text-decoration: underline;">Chris Porosky</a>, Florida State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) — appointed member of the Professional Roofers Advisory Council (PRAC) and the National Roofing Contractors Association (NRCA).</p>
 
+  <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.25rem; margin: 1.5rem 0;">
+    <h3 style="font-size: 1.15rem; font-weight: bold; color: #991b1b; margin-bottom: 0.5rem;">Hurricane Season Is Here — June 1 to November 30</h3>
+    <p style="color: #7f1d1d; margin-bottom: 0.5rem;">Before the first named storm, a pre-season inspection identifies loose tile, compromised flashing, soft decking, and pre-2002 homes missing hurricane straps. After a storm, our Deerfield Beach HQ provides same-day emergency response — tarping, leak mitigation, and structural assessment within 24-72 hours of the call. <a href="/hurricane-help" style="color: #dc2626; text-decoration: underline; font-weight: bold;">Hurricane prep and emergency roof response →</a></p>
+  </div>
+
   <h2>Service Area</h2>
   <p>From our Deerfield Beach headquarters at 590 Goolsby Blvd, we serve over 50 cities across Broward County and Palm Beach County including <a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Boca Raton</a>, <a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale</a>, <a href="/locations/coral-springs" style="color: #dc2626; text-decoration: underline;">Coral Springs</a>, <a href="/locations/pompano-beach" style="color: #dc2626; text-decoration: underline;">Pompano Beach</a>, <a href="/locations/parkland" style="color: #dc2626; text-decoration: underline;">Parkland</a>, <a href="/locations/coconut-creek" style="color: #dc2626; text-decoration: underline;">Coconut Creek</a>, <a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">West Palm Beach</a>, <a href="/locations/delray-beach" style="color: #dc2626; text-decoration: underline;">Delray Beach</a>, <a href="/locations/boynton-beach" style="color: #dc2626; text-decoration: underline;">Boynton Beach</a>, <a href="/locations/wellington" style="color: #dc2626; text-decoration: underline;">Wellington</a>, and all surrounding communities.</p>
 
   <h2>Roofing Guides & Resources</h2>
-  <p>Make informed roofing decisions with our expert guides: <a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a>, <a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a>, <a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a>, and our <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a>. Visit our <a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a> or <a href="/blog" style="color: #dc2626; text-decoration: underline;">Roofing Blog</a> for more homeowner tips and industry updates.</p>
+  <p>Make informed roofing decisions with our expert guides: <a href="/roof-replacement-cost-florida" style="color: #dc2626; text-decoration: underline;">Florida Roof Replacement Cost Guide</a>, <a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a>, <a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a>, <a href="/boca-raton-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Replacement Guide</a>, and our <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a>. Try our <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Roof Cost Calculator</a> for a free estimate, or visit our <a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a> or <a href="/blog" style="color: #dc2626; text-decoration: underline;">Roofing Blog</a> for more homeowner tips and industry updates.</p>
 
   <p><strong>Call (754) 227-5605 for a free professional roof inspection and estimate.</strong></p>
 
@@ -2661,9 +2671,10 @@ function getSEOMetadata(urlPath, cityName = null) {
   // NOTE: /locations/:slug pages are handled by buildLocationSeo() and should NOT use this function
   if (cityName) {
     if (normalizedPath.includes('/roof-repair/')) {
+      // PR-64 CTR rewrite: "Free Inspection" hook (accurate to workflow).
       return {
-        title: `${cityName} Roof Repair | All Phase USA`,
-        description: `Roof repair in ${cityName}, FL. Leaks, storm damage & flashing fixes. HVHZ-compliant, dual-licensed contractor. Call (754) 227-5605.`,
+        title: `Roof Repair ${cityName} FL | Free Inspection`,
+        description: `Free roof repair inspection in ${cityName}, FL — typically booked within 24–48 hours. Leaks, storm damage & flashing fixes. Dual-licensed (CCC + CGC). (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
