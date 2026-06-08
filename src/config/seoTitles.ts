@@ -874,12 +874,15 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   if (normalizedPath.startsWith('/roof-repair/')) {
     const slug = normalizedPath.replace('/roof-repair/', '').replace(/\/$/, '');
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    // Compact template: drops "Licensed & <compliance>" + "Storm damage, leaks,
-    // tile, shingle & flat repairs." segments from the original to keep title
-    // under Google's 580px SERP pixel cap (most cities were at 700–800px) and
-    // description under 160 chars (worst case was 189 chars for PB-Gardens
-    // with "Florida wind-code compliant"). Compliance language remains in desc.
-    const title = `Roof Repair ${cityName} FL | All Phase`;
+    // PR-64 CTR rewrite: "Free Inspection" hook replaces brand suffix.
+    // Per 7-day GSC data (5/31–6/6): roof-repair/<city> pages climbing
+    // fast in position (deerfield-beach went 9.10 → 4.76) but the
+    // current snippet has no compelling hook. "Free Inspection" reflects
+    // what the operator actually does — they book the diagnostic
+    // appointment (not the repair itself) within 24-48 hours, free.
+    // "Same-Day" was the original PR-64 draft but overpromised the
+    // workflow: actual repair is scheduled after the inspection visit.
+    const title = `Roof Repair ${cityName} FL | Free Inspection`;
     const description = `Fast, licensed roof repair in ${cityName}. ${getComplianceLabel(slug)} dual-licensed contractor. Free inspection. (754) 227-5605.`;
     const ogDescription = `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. Dual-licensed CCC/CGC. (754) 227-5605.`;
     return {
