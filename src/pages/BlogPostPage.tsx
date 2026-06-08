@@ -203,7 +203,7 @@ export default function BlogPostPage() {
       published_date: '2026-06-07',
       categories: ['Roofing Education'],
       tags: ['Change Orders', 'Hidden Damage', 'Wood Rot', 'Truss Repair', 'Termite Damage', 'Roof Financing', 'South Florida'],
-      featured_image: '/deck-inspection.jpg',
+      featured_image: '/projects/delray-beach-tile-tear-off-and-deck-inspection-all-phase-usa.webp',
       meta_title: 'Why Roofing Change Orders Cost More | Hidden Wood Damage Explained',
       meta_description: 'Why do roofing change orders run high? Hidden truss rot and termite damage are found only at tear-off. See how All Phase documents and numbers every replaced board in Broward & Palm Beach County.',
       faqs: [],

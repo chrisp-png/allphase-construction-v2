@@ -34,6 +34,8 @@ Add Florida's climate, plus termites and other wood-destroying insects that love
 
 ---
 
+![Severe hidden wood rot and pest damage exposed after roof tear-off by All Phase Construction USA](/projects/this-is-what-happens-when-pests-left-unattended-to-extreme-damage-all-phase-usa.webp)
+
 ## Why Soft Wood Is a Roof That Fails in the Next Storm
 
 This is the heart of why we won't roof over bad wood, and it matters far more than the change order price.
@@ -46,6 +48,8 @@ This is exactly why building to [High-Velocity Hurricane Zone standards](https:/
 
 ---
 
+![Rotted roof decking found during a flat roof tear-off in Boca Raton](/projects/bad-decking-boca-raton-flat-roofing-all-phase-usa.webp)
+
 ## What Most Roofers Do vs. What We Do
 
 Here's the uncomfortable industry reality. When a crew tears off a roof and finds rotted wood, they're standing at a fork in the road.
@@ -57,6 +61,8 @@ A lot of companies take the second path. It's faster, it avoids the awkward conv
 We don't do business that way. When we find compromised wood, we replace it. Period. As a [dual-licensed roofing and general contractor](https://allphaseconstructionfl.com/about-us), we're held to a structural standard, not just a surface one. It means we sometimes have to come to you with a change order you weren't expecting, and that can be a tough conversation. But we'd rather have it now than have your roof fail when you need it most. Fixing it right the first time is the entire point.
 
 ---
+
+![Roof completely re-decked with new plywood after pest damage by All Phase Construction USA](/projects/complete-redeck-because-pests-all-phase-usa.webp)
 
 ## Where the Price Comes From
 
@@ -77,6 +83,8 @@ We also go a step further to protect your wallet. When a board is long enough th
 When the work is done, you have a complete photographic record: every rotted board that came out, every new board that went in, the footage, and the count. You're not taking our word for it — you can see it, and you can add it up against the lumber schedule yourself. That kind of transparency should be standard in this industry. It almost never is.
 
 ---
+
+![All Phase Construction USA marking and numbering replaced roof decking for transparency in Boynton Beach FL](/projects/marking-replaced-decking-for-transparency-in-boynton-beach-fl-all-phase-usa.webp)
 
 ## A Smart Move Before You Ever Start: Get Pre-Qualified for Financing
 
