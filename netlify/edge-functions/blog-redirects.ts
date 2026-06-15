@@ -100,12 +100,20 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   // duplicate intent and concentrates link equity on the canonical URL).
   '/blog/best-roofing-companies-south-florida': { to: '/south-florida-roofing-reviews', status: 301 },
 
+  // PR-65 (2026-06-15): Supabase-backed blog posts rendering empty SPA shell to
+  // Googlebot. GSC Soft 404 validation failed 6/14 — these were the 2 of 16
+  // URLs in the failed-validation list that we expected to need architectural
+  // fixes (the other 14 are already-fixed-in-code URLs Google has been slow
+  // to re-crawl). Redirecting to closest live topical match keeps any external
+  // backlinks landing on relevant content rather than 404-equivalents.
+  '/blog/can-a-screen-room-add-to-my-property-value': { to: '/blog/how-much-does-a-screen-enclosure-cost', status: 301 },
+  '/blog/what-is-roof-underlayment-and-why-does-it-matter': { to: '/shingle-roofing', status: 301 },
+
   // NOTE: The following blog posts are LIVE (Supabase CMS) and served by the SPA.
   // They should NOT be in this redirect map:
   //   /blog/are-there-any-benefits-to-dark-colored-roof-shingles-in-south-florida
   //   /blog/impact-of-tariffs-on-metal-roofing-prices
   //   /blog/why-choose-tile-roofing-in-south-florida
-  //   /blog/what-is-roof-underlayment-and-why-does-it-matter
   //   /blog/residential-flat-roofs-types-options-and-florida-considerations
 };
 
