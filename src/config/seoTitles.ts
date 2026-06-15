@@ -76,8 +76,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/team/chris-porosky'
   },
   '/roof-cost-calculator': {
-    title: 'Free Roof Replacement Cost Calculator | South Florida',
-    description: 'Free roof replacement cost calculator for Broward & Palm Beach — Boca, Pompano, FTL, Boynton. Tile, metal, shingle, flat. HVHZ-rated. (754) 227-5605.',
+    title: 'Free Roof Cost Calculator (60 Seconds) — Florida 2026',
+    description: 'Free 60-second roof cost calculator — 2026 HVHZ pricing for shingle, tile, metal & flat. Broward + Palm Beach County. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
@@ -130,8 +130,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
   '/roof-replacement-process': {
-    title: 'Roof Replacement Process | 10-Step Guide | All Phase',
-    description: 'See our 10-step roof replacement process - from inspection to final warranty. No surprises. South Florida dual-licensed roofing contractor.',
+    title: 'Roof Replacement Process: 10 Steps + Timeline (2026)',
+    description: '10-step roof replacement process: inspection, permits, tear-off, install, warranty. Realistic 2–4 week timeline. Free South FL quote (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
@@ -145,8 +145,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-maintenance-programs'
   },
   '/tile-roofing': {
-    title: 'Tile Roofing Installation & Repair | All Phase USA',
-    description: 'Concrete & clay tile roofing in South Florida. HVHZ-compliant installation, repair & maintenance. Dual-licensed contractor. Free inspection.',
+    title: 'Concrete & Clay Tile Roofing South Florida (HVHZ-Certified)',
+    description: 'South Florida tile roofing — concrete & clay installation, repair, re-roof. HVHZ-compliant, 175+ mph wind ratings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
@@ -170,8 +170,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/licensed-roofing-contractor': {
-    title: 'Licensed Roofing Contractor South Florida | All Phase',
-    description: 'How to verify a licensed Florida roofer — CCC vs CGC, DBPR lookup, why licensing matters in South Florida\'s wind zone.',
+    title: 'Licensed Roofing Contractor — How to Verify (2026 FL Guide)',
+    description: 'Verify any Florida roofing contractor\'s CCC or CGC license at myfloridalicense.com. What to check, red flags, and how to spot uninsured operators.',
     canonical: 'https://allphaseconstructionfl.com/licensed-roofing-contractor'
   },
     '/roofing-services': {
@@ -327,8 +327,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/broward-county-roof-replacement-guide'
   },
   '/roof-replacement-cost-florida': {
-    title: 'Roof Replacement Cost in Florida (2026) | Prices',
-    description: 'What does a roof replacement cost in Florida in 2026? Complete pricing by material, county, and HVHZ zone. Get accurate estimates for your area.',
+    title: 'Florida Roof Replacement Cost 2026 ($13K–$45K Range)',
+    description: 'Real 2026 Florida roof replacement costs: $13K–$22K shingle, $22K–$40K tile, $35K–$55K metal. Free calculator + county pricing breakdown. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-cost-florida'
   },
   '/florida-roof-insurance-claims-guide': {
