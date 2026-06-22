@@ -216,17 +216,11 @@ export default function DeerfieldBeachCityPage() {
                 <a href="/contact" className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">Emergency Roof Repair</a>
               </div>
 
-              {/* Gold Phone Number */}
-              <div className="mt-5">
-                <a href="tel:7542275605" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">(754) 227-5605</a>
-                <p className="text-gray-400 text-sm mt-1">24/7 Emergency Service Available • Free Estimates</p>
-              </div>
-
               {/* Proof Row */}
               <div className="flex flex-wrap items-center gap-6 text-gray-300 text-sm md:text-base mb-8">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                  <span className="font-medium">4.8 Rating • 137+ Reviews</span>
+                  <span className="font-medium">4.8 Rating • 150+ Reviews</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-red-600" />
