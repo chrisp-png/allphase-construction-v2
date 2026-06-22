@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown, ChevronRight, MapPin } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight, MapPin, ShieldCheck } from 'lucide-react';
 import { useAssessmentModal } from '../context/AssessmentModalContext';
 import { EXTERNAL_LINKS } from '../config/links';
 
@@ -149,15 +149,20 @@ export default function Header() {
                 <span className="hidden sm:inline">4.8 <span className="text-yellow-400">★</span> Google Reviews</span>
                 <span className="sm:hidden">4.8<span className="text-yellow-400">★</span> Reviews</span>
               </a>
+              {/* PR-67: Swapped from "Get Directions" (0 clicks per GBP analytics)
+                  to "Google Guaranteed" trust badge. All Phase is Google
+                  Guaranteed verified via Local Service Ads (94/100 LSA score
+                  per 2026-06-09 marketing audit). Links to /reviews — when
+                  users click a trust signal they want to see proof.
+                  Kept MapPin import (still used elsewhere in Header). */}
               <a
-                href={EXTERNAL_LINKS.GOOGLE_MAPS}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/reviews"
                 className="flex items-center gap-1 text-white hover:text-red-400 transition-colors font-medium text-xs"
-                aria-label="Get directions to our office"
+                aria-label="Google Guaranteed verified business — view our customer reviews"
               >
-                <MapPin className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Get Directions</span>
+                <ShieldCheck className="w-3.5 h-3.5 text-green-400" />
+                <span className="hidden sm:inline">Google Guaranteed</span>
+                <span className="sm:hidden">Verified</span>
               </a>
               <div className="flex items-center gap-2">
                 <span className="text-white font-medium">Call Now:</span>
