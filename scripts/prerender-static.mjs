@@ -2985,6 +2985,62 @@ async function generateStaticFiles() {
         }
       ]
     },
+    '/hurricane-help': {
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Hurricane Help', url: 'https://allphaseconstructionfl.com/hurricane-help' }
+      ],
+      extraSchemas: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'HowTo',
+          name: 'What to Do in the First 24 Hours After a Storm',
+          description: 'Step-by-step priority list for South Florida homeowners assessing roof damage in the first 24 hours after a hurricane or named storm. Order matters — safety first, then documentation, then containment, then professional response.',
+          totalTime: 'PT2H',
+          supply: [
+            { '@type': 'HowToSupply', name: 'Smartphone or camera for documentation' },
+            { '@type': 'HowToSupply', name: 'Buckets, plastic sheeting, towels for interior water containment' }
+          ],
+          step: [
+            {
+              '@type': 'HowToStep',
+              position: 1,
+              name: 'Stay off the roof',
+              text: 'Wet roofing materials and unseen structural damage make rooftop access genuinely dangerous in the first 24-48 hours. Assess from the ground first.',
+              url: 'https://allphaseconstructionfl.com/hurricane-help#first-24-hours'
+            },
+            {
+              '@type': 'HowToStep',
+              position: 2,
+              name: 'Document from the ground',
+              text: 'Take wide-angle photos and short videos of every elevation of the home. Capture date and time. Useful regardless of next steps.',
+              url: 'https://allphaseconstructionfl.com/hurricane-help#first-24-hours'
+            },
+            {
+              '@type': 'HowToStep',
+              position: 3,
+              name: 'Document the interior',
+              text: 'Photo or video every room, especially any active leaks, ceiling stains, or visible water intrusion.',
+              url: 'https://allphaseconstructionfl.com/hurricane-help#first-24-hours'
+            },
+            {
+              '@type': 'HowToStep',
+              position: 4,
+              name: 'Contain interior water intrusion',
+              text: 'Buckets, plastic sheeting, and towels. Move furniture and electronics away from active drips.',
+              url: 'https://allphaseconstructionfl.com/hurricane-help#first-24-hours'
+            },
+            {
+              '@type': 'HowToStep',
+              position: 5,
+              name: 'Call a licensed roofing contractor for emergency tarping',
+              text: 'Same-day tarping prevents secondary water intrusion through compromised roof sections. All Phase Construction USA provides emergency tarping throughout Broward and Palm Beach County. Call (754) 227-5605.',
+              url: 'https://allphaseconstructionfl.com/hurricane-help#first-24-hours'
+            }
+          ]
+        }
+      ]
+    },
     '/frequently-asked-questions': {
       faqs: [
         { question: 'What is the difference between Broward County and Palm Beach County roofing code requirements?', answer: 'Broward County is a legal High-Velocity Hurricane Zone (HVHZ) under the Florida Building Code, so every roof in Broward must meet the strictest HVHZ wind-uplift, fastening, and product-approval rules. Palm Beach County is not legally HVHZ, but the prevailing local standard for roof replacements is to build voluntarily to HVHZ spec because the same coastal wind exposure applies. Practically, that means tighter nailing patterns (typically 6 nails per shingle on the field), Florida Notice of Acceptance (NOA)–approved underlayments, and approved tile fastening systems on either side of the county line. All Phase Construction USA builds Palm Beach County replacements to HVHZ spec by default.' },
