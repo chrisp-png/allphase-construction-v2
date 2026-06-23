@@ -111,6 +111,13 @@ export default function Footer() {
                 </a>
               </p>
             </div>
+            {/* PR-69: 24/7 availability block — matches GBP + GLSA wording
+                exactly for hours consistency across all listings. Site-wide
+                placement (footer appears on every page). */}
+            <div className="mb-6 p-3 bg-red-950/30 border-l-2 border-red-600 rounded-r">
+              <p className="text-white font-bold text-sm">Open 24 hours, 7 days a week.</p>
+              <p className="text-gray-400 text-xs mt-1">A real All Phase team member answers any hour, any day.</p>
+            </div>
             <div>
               <h4 className="text-white font-semibold text-sm mb-2">Get Directions</h4>
               <p className="text-sm text-gray-400">

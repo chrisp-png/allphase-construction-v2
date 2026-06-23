@@ -64,6 +64,20 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* PR-69: 24/7 availability block — matches GBP/GLSA wording exactly
+          for NAP+hours consistency (a real local SEO signal Google checks). */}
+      <section className="bg-[#0a0a0a] border-b border-gray-800/50 py-6">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-start gap-4 justify-center text-center sm:text-left">
+            <Clock className="w-6 h-6 text-red-500 flex-shrink-0 mt-1 hidden sm:block" />
+            <div>
+              <p className="text-white font-bold text-lg sm:text-xl">Open 24 hours, 7 days a week.</p>
+              <p className="text-gray-400 text-sm sm:text-base mt-1">A real All Phase team member answers any hour, any day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Trust — What Real Customers Say */}
       <section className="py-10 bg-[#0a0a0a] border-b border-gray-800/50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -130,7 +130,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-2 text-xs">
             <div className="flex items-center gap-4 md:gap-6">
-              <span className="text-gray-300 font-medium">OPEN 24/7 / 365 DAYS</span>
+              <span className="text-gray-300 font-medium">Open 24 hours, 7 days a week</span>
               <span className="hidden md:inline text-gray-400">
                 Dual Licensed Certified Roofing Contractor — CGC-1526236 | CCC-1331464
               </span>
