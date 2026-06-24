@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
 import { Phone, CheckCircle2, Shield, AlertTriangle, FileText, Scale, Award, Building2 } from 'lucide-react';
 
 const faqData = [
@@ -58,6 +59,11 @@ export default function LicensedRoofingContractorPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               How to Verify a Licensed Roofing Contractor in South Florida
             </h1>
+
+              {/* PR-72: AI Search Rail */}
+              <div className="mt-6 mb-6">
+                <AISearchRail query="How do I verify a licensed roofing contractor in Florida, what licenses should they hold, and what red flags should I watch for?" />
+              </div>
             <div className="inline-flex items-center gap-2 bg-zinc-900/80 border border-red-500/30 text-red-300 px-3 py-1.5 rounded-full text-sm font-semibold mb-6">
               <span className="w-2 h-2 bg-red-400 rounded-full"></span>
               <span>Updated May 7, 2026 · Current 2026 verification flow</span>

@@ -25,6 +25,7 @@ import {
   BadgeCheck
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 import RelatedBlogResources from '../components/RelatedBlogResources';
 import { generateBreadcrumbSchema } from '../utils/enhancedSchema';
@@ -85,6 +86,11 @@ export default function TileRoofingPage() {
               Why Most Fail Early
             </span>
           </h1>
+
+              {/* PR-72: AI Search Rail */}
+              <div className="mt-6 mb-6">
+                <AISearchRail query="What are the best tile roofing options for South Florida hurricane-resistant homes, concrete vs clay vs flat tile?" />
+              </div>
 
           {/* Subhead */}
           <p className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-4xl leading-relaxed">

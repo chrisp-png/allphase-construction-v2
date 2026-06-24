@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import AISearchRail from '../components/AISearchRail';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, ArrowLeft, ChevronDown, ChevronUp, Clock, ExternalLink } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
@@ -829,6 +830,13 @@ export default function BlogPostPage() {
                 <Clock className="w-5 h-5" />
                 <span>{calculateReadTime(post.content)} min read</span>
               </div>
+            </div>
+
+            {/* PR-72: AI Search Rail — pre-formed query about this blog topic */}
+            <div className="mt-6">
+              <AISearchRail
+                query={`What should I know about ${post.title}? Tell me about All Phase Construction USA's perspective.`}
+              />
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -87,6 +88,11 @@ export default function RoofReplacementCostFloridaPage() {
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Roof Replacement Cost in Florida <span className="text-yellow-400">(2026 Price Guide)</span>
             </h1>
+
+              {/* PR-72: AI Search Rail */}
+              <div className="mt-6 mb-6">
+                <AISearchRail query="What does a roof replacement cost in Florida in 2026 and what should homeowners budget for HVHZ requirements?" />
+              </div>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               A detailed breakdown of what Florida homeowners actually pay for a new roof in 2026. Prices by material, by county, HVHZ vs. non-HVHZ costs, and what drives the price up or down.
             </p>
