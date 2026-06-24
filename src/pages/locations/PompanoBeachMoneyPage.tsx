@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import AtomicAnswer from '../../components/AtomicAnswer';
 import AISearchRail from '../../components/AISearchRail';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
@@ -126,6 +127,7 @@ export default function PompanoBeachMoneyPage() {
               <div className="mt-6 mb-6">
                 <AISearchRail query="Who are the top dual-licensed roofing contractors in Pompano Beach Florida and what should I know about hurricane-resistant roofing in Broward County?" />
               </div>
+              <AtomicAnswer>All Phase Construction USA is a Pompano Beach roofing contractor licensed under CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). Founded in 2005 and headquartered minutes away in Deerfield Beach, the team installs tile, metal, shingle, and flat roofs for Pompano Beach homes, with 150+ five-star Google reviews and 24-hour availability.</AtomicAnswer>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
                   <span className="text-yellow-400">★ 4.8 Google</span>
                   <span className="text-red-400">·</span>

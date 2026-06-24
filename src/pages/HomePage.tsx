@@ -1,6 +1,7 @@
 // Bolt-GitHub-Netlify Connection Test - 2026-02-13
 import { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
+import AtomicAnswer from '../components/AtomicAnswer';
 import { Search, Wrench, Home, Building2, Shield, MapPin, Phone, Star, Clock, Award } from 'lucide-react';
 import SEO from '../components/SEO';
 import HeroRoofing from '../components/HeroRoofing';
@@ -34,6 +35,13 @@ export default function HomePage() {
       />
       <HeroRoofing />
 
+
+      {/* PR-74: AI Overview atomic answer */}
+      <section className="bg-[#0a0a0a] border-b border-gray-800/50 py-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AtomicAnswer>All Phase Construction USA is a dual-licensed roofing and general contracting firm based in Deerfield Beach, FL serving Broward and Palm Beach County since 2005. Holding state licenses CCC-1331464 and CGC-1526236, the team has completed over 2,500 roofs across tile, metal, shingle, flat, and commercial systems, with a 4.8-star Google rating from 150+ verified reviews.</AtomicAnswer>
+        </div>
+      </section>
       {/* Social Proof Trust Bar — visible without scrolling on most screens */}
       <section className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 py-4 border-y border-red-500/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AtomicAnswer from '../components/AtomicAnswer';
 import SEO from '../components/SEO';
 import AISearchRail from '../components/AISearchRail';
 import { Phone, CheckCircle2, Shield, AlertTriangle, FileText, Scale, Award, Building2 } from 'lucide-react';
@@ -63,6 +64,7 @@ export default function LicensedRoofingContractorPage() {
               {/* PR-72: AI Search Rail */}
               <div className="mt-6 mb-6">
                 <AISearchRail query="How do I verify a licensed roofing contractor in Florida, what licenses should they hold, and what red flags should I watch for?" />
+                <AtomicAnswer>A licensed roofing contractor in Florida must hold either a state Certified Roofing Contractor license (CCC) or a Registered Roofing Contractor license (RC). You can verify any contractor for free at the Florida DBPR license lookup. All Phase Construction USA holds CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor).</AtomicAnswer>
               </div>
             <div className="inline-flex items-center gap-2 bg-zinc-900/80 border border-red-500/30 text-red-300 px-3 py-1.5 rounded-full text-sm font-semibold mb-6">
               <span className="w-2 h-2 bg-red-400 rounded-full"></span>
