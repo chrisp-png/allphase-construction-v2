@@ -397,7 +397,7 @@ export default function PalmBeachGardensMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic text-sm">
                   "After two contractors gave us quotes that would never pass our BallenIsles ARC, this team understood exactly what was required. They handled everything with the architectural review board, and our new barrel tile roof was approved on the first submission."
                 </p>
-                <p className="text-zinc-500 text-sm">— Michael R., BallenIsles Homeowner</p>
+                <p className="text-zinc-400 text-sm">— Michael R., BallenIsles Homeowner</p>
               </div>
 
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6">
@@ -409,7 +409,7 @@ export default function PalmBeachGardensMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic text-sm">
                   "Our PGA National home needed a complete roof replacement after 28 years. The entire team made the process seamless — from the initial roof inspection through final county inspection. They knew the PGA POA requirements better than we did."
                 </p>
-                <p className="text-zinc-500 text-sm">— Sandra T., PGA National</p>
+                <p className="text-zinc-400 text-sm">— Sandra T., PGA National</p>
               </div>
 
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6">
@@ -421,7 +421,7 @@ export default function PalmBeachGardensMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic text-sm">
                   "They completed our Frenchman's Reserve project in the timeline they promised. Professional from start to finish — handled the permitting, ARC approval, and the installation itself without us having to manage anything."
                 </p>
-                <p className="text-zinc-500 text-sm">— David & Karen L., Frenchman's Reserve</p>
+                <p className="text-zinc-400 text-sm">— David & Karen L., Frenchman's Reserve</p>
               </div>
             </div>
 
@@ -488,7 +488,7 @@ export default function PalmBeachGardensMoneyPage() {
                     <span className="text-zinc-300">Wind-rated fastening systems for your specific zone</span>
                   </li>
                 </ul>
-                <p className="text-zinc-500 text-sm">Ideal for PGA National, BallenIsles, and similar communities</p>
+                <p className="text-zinc-400 text-sm">Ideal for PGA National, BallenIsles, and similar communities</p>
               </div>
 
               <div className="bg-zinc-900/50 border-2 border-red-600 rounded-xl p-8 relative">
@@ -522,7 +522,7 @@ export default function PalmBeachGardensMoneyPage() {
                     <span className="text-zinc-300">Extended warranty coverage</span>
                   </li>
                 </ul>
-                <p className="text-zinc-500 text-sm">Ideal for 4,000+ sq ft homes in Mirasol, Frenchman's Reserve, eastern PBG</p>
+                <p className="text-zinc-400 text-sm">Ideal for 4,000+ sq ft homes in Mirasol, Frenchman's Reserve, eastern PBG</p>
               </div>
 
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8">
@@ -555,7 +555,7 @@ export default function PalmBeachGardensMoneyPage() {
                     <span className="text-zinc-300">Materials rated for 80–100+ year lifespan</span>
                   </li>
                 </ul>
-                <p className="text-zinc-500 text-sm">Ideal for The Isles, waterfront estates, distinctive architecture</p>
+                <p className="text-zinc-400 text-sm">Ideal for The Isles, waterfront estates, distinctive architecture</p>
               </div>
             </div>
           </div>
@@ -698,7 +698,7 @@ export default function PalmBeachGardensMoneyPage() {
                 (754) 227-5605
               </a>
             </div>
-            <p className="text-zinc-500 text-sm">
+            <p className="text-zinc-400 text-sm">
               Serving all Palm Beach Gardens communities including PGA National, BallenIsles, Frenchman's Reserve, Mirasol, The Isles, Artistry, Alton, and surrounding {county} areas. Most initial assessments scheduled within 48 hours.
             </p>
           </div>
@@ -713,17 +713,17 @@ export default function PalmBeachGardensMoneyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300">
               <Link to="/locations/jupiter" className="hover:text-red-500 transition-colors">Jupiter</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/west-palm-beach" className="hover:text-red-500 transition-colors">West Palm Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/wellington" className="hover:text-red-500 transition-colors">Wellington</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/boca-raton" className="hover:text-red-500 transition-colors">Boca Raton</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/delray-beach" className="hover:text-red-500 transition-colors">Delray Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/fort-lauderdale" className="hover:text-red-500 transition-colors">Fort Lauderdale</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-500 transition-colors">Coral Springs</Link>
             </div>
           </div>

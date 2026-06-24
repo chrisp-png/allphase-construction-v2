@@ -404,17 +404,17 @@ export default function SouthwestRanchesMoneyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
               <Link to="/locations/davie" className="hover:text-red-600 transition-colors">Davie</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/cooper-city" className="hover:text-red-600 transition-colors">Cooper City</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pembroke-pines" className="hover:text-red-600 transition-colors">Pembroke Pines</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/weston" className="hover:text-red-600 transition-colors">Weston</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/plantation" className="hover:text-red-600 transition-colors">Plantation</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/sunrise" className="hover:text-red-600 transition-colors">Sunrise</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/miramar" className="hover:text-red-600 transition-colors">Miramar</Link>
             </div>
           </div>

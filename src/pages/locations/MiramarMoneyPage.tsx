@@ -419,7 +419,7 @@ export default function MiramarMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "All Phase Construction USA replaced our tile roof in Silver Shores and handled everything from the HOA approval to the final inspection. The crew was professional, the communication was excellent, and our new roof looks incredible. Highly recommend for anyone in Miramar."
                 </p>
-                <p className="text-zinc-500 font-semibold">— Maria S., Miramar, FL</p>
+                <p className="text-zinc-400 font-semibold">— Maria S., Miramar, FL</p>
               </div>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6">
@@ -431,7 +431,7 @@ export default function MiramarMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "We converted our old tile roof to standing seam metal. All Phase Construction USA walked us through every option, managed the permit process, and finished on time. The new metal roof looks amazing and our energy bills dropped noticeably. Outstanding experience from start to finish."
                 </p>
-                <p className="text-zinc-500 font-semibold">— David & Carmen R., Miramar, FL</p>
+                <p className="text-zinc-400 font-semibold">— David & Carmen R., Miramar, FL</p>
               </div>
             </div>
           </div>
@@ -504,7 +504,7 @@ export default function MiramarMoneyPage() {
                     {openFaq === index ? (
                       <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
                     )}
                   </button>
                   {openFaq === index && (
@@ -548,12 +548,12 @@ export default function MiramarMoneyPage() {
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Free Inspection</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>No Obligation</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Same-Week Scheduling</span>

@@ -402,17 +402,17 @@ export default function NorthLauderdaleMoneyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
               <Link to="/locations/tamarac" className="hover:text-red-600 transition-colors">Tamarac</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/margate" className="hover:text-red-600 transition-colors">Margate</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lauderhill" className="hover:text-red-600 transition-colors">Lauderhill</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lauderdale-lakes" className="hover:text-red-600 transition-colors">Lauderdale Lakes</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coconut-creek" className="hover:text-red-600 transition-colors">Coconut Creek</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-600 transition-colors">Coral Springs</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/sunrise" className="hover:text-red-600 transition-colors">Sunrise</Link>
             </div>
           </div>

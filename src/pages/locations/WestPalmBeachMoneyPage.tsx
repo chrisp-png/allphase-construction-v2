@@ -495,17 +495,17 @@ export default function WestPalmBeachMoneyPage() {
 
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300">
               <Link to="/locations/lake-worth-beach" className="hover:text-red-600 transition-colors">Lake Worth</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/boynton-beach" className="hover:text-red-600 transition-colors">Boynton Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/delray-beach" className="hover:text-red-600 transition-colors">Delray Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/boca-raton" className="hover:text-red-600 transition-colors">Boca Raton</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/palm-beach-gardens" className="hover:text-red-600 transition-colors">Palm Beach Gardens</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/wellington" className="hover:text-red-600 transition-colors">Wellington</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/royal-palm-beach" className="hover:text-red-600 transition-colors">Royal Palm Beach</Link>
             </div>
 

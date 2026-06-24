@@ -393,7 +393,7 @@ export default function PembrokePinesMoneyPage() {
                   <h3 className="text-xl font-bold">Essential Replacement</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">$8,000 – $12,000</p>
-                <p className="text-zinc-500 text-sm mb-4">1,500–2,200 sq ft homes • ~3 working days on-site</p>
+                <p className="text-zinc-400 text-sm mb-4">1,500–2,200 sq ft homes • ~3 working days on-site</p>
                 <ul className="space-y-2">
                   {[
                     'High-quality HVHZ-compliant shingles',
@@ -419,7 +419,7 @@ export default function PembrokePinesMoneyPage() {
                   <h3 className="text-xl font-bold">Premium Upgrade</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">$16,000 – $27,000+</p>
-                <p className="text-zinc-500 text-sm mb-4">Metal, tile, or impact-resistant • 3–5 days</p>
+                <p className="text-zinc-400 text-sm mb-4">Metal, tile, or impact-resistant • 3–5 days</p>
                 <ul className="space-y-2">
                   {[
                     'Premium materials (40–75 year lifespan)',
@@ -442,7 +442,7 @@ export default function PembrokePinesMoneyPage() {
                   <h3 className="text-xl font-bold">HOA Community</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">Volume Pricing</p>
-                <p className="text-zinc-500 text-sm mb-4">Multi-unit projects • Custom timeline</p>
+                <p className="text-zinc-400 text-sm mb-4">Multi-unit projects • Custom timeline</p>
                 <ul className="space-y-2">
                   {[
                     'Significant per-unit volume savings',
@@ -564,7 +564,7 @@ export default function PembrokePinesMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "After dealing with two other contractors who couldn't figure out our HOA requirements, All Phase Construction USA had approvals submitted within a week. The roof was done in three days, and it looks better than our neighbors' more expensive installations."
                 </p>
-                <p className="text-zinc-500 font-semibold">— Pembroke Pines Homeowner, Century Village</p>
+                <p className="text-zinc-400 font-semibold">— Pembroke Pines Homeowner, Century Village</p>
               </div>
 
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
@@ -576,7 +576,7 @@ export default function PembrokePinesMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "We coordinated 47 roof replacements across our townhome community. All Phase Construction USA's volume pricing saved our HOA significant money, and the scheduling meant minimal disruption for residents. Outstanding project management."
                 </p>
-                <p className="text-zinc-500 font-semibold">— HOA Board President, Pembroke Pines Community Association</p>
+                <p className="text-zinc-400 font-semibold">— HOA Board President, Pembroke Pines Community Association</p>
               </div>
             </div>
           </div>
@@ -642,7 +642,7 @@ export default function PembrokePinesMoneyPage() {
                     {openFaq === index ? (
                       <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
                     )}
                   </button>
                   {openFaq === index && (
@@ -705,12 +705,12 @@ export default function PembrokePinesMoneyPage() {
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>No Hidden Fees</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>No Pressure</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Same-Week Scheduling</span>

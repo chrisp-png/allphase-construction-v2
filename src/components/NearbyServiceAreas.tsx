@@ -27,7 +27,7 @@ export default function NearbyServiceAreas({ nearbyCities, serviceType = 'roof-r
                 {city.name}
               </Link>
               {index < nearbyCities.length - 1 && (
-                <span className="text-zinc-600 ml-3">•</span>
+                <span className="text-zinc-400 ml-3">•</span>
               )}
             </span>
           ))}

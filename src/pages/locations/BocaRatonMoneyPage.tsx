@@ -487,17 +487,17 @@ export default function BocaRatonMoneyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
               <Link to="/locations/delray-beach" className="hover:text-red-600 transition-colors">Delray Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/boynton-beach" className="hover:text-red-600 transition-colors">Boynton Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/west-palm-beach" className="hover:text-red-600 transition-colors">West Palm Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-600 transition-colors">Pompano Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-600 transition-colors">Coral Springs</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/fort-lauderdale" className="hover:text-red-600 transition-colors">Fort Lauderdale</Link>
             </div>
             <div className="text-center">

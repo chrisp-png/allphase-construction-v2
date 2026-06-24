@@ -192,13 +192,13 @@ export default function TamaracMoneyPage() {
             <Link to="/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Home
             </Link>
-            <span className="text-zinc-600">/</span>
-            <span className="text-zinc-500">Roofing</span>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
+            <span className="text-zinc-400">Roofing</span>
+            <span className="text-zinc-400">/</span>
             <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <span className="text-white">Tamarac</span>
           </nav>
 
@@ -225,17 +225,17 @@ export default function TamaracMoneyPage() {
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>Nearly Two Decades Experience</span>
               </div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>HVHZ Certified</span>
               </div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>Free Inspections</span>
               </div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>Dual Licensed</span>
@@ -385,19 +385,19 @@ export default function TamaracMoneyPage() {
                 <div className="flex text-red-500 mb-2">{'★★★★★'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
                 <p className="text-zinc-400 leading-relaxed mb-4">"Graham and his team at All Phase Construction did an amazing job on our new shingle roof. Communication was excellent throughout the project, and they completed everything on time and on budget. Professional crew, clean worksite, and quality materials. Highly recommend!"</p>
                 <p className="text-white font-semibold">— Michael R.</p>
-                <p className="text-zinc-500 text-sm">Tamarac Homeowner</p>
+                <p className="text-zinc-400 text-sm">Tamarac Homeowner</p>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
                 <div className="flex text-red-500 mb-2">{'★★★★★'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
                 <p className="text-zinc-400 leading-relaxed mb-4">"We had emergency storm damage and All Phase responded within hours. They secured our roof with a proper tarp system and came back the following week to complete the permanent repairs. Fair pricing, honest service, and excellent workmanship."</p>
                 <p className="text-white font-semibold">— Jennifer L.</p>
-                <p className="text-zinc-500 text-sm">Broward County</p>
+                <p className="text-zinc-400 text-sm">Broward County</p>
               </div>
               <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6">
                 <div className="flex text-red-500 mb-2">{'★★★★★'.split('').map((s, i) => <span key={i}>{s}</span>)}</div>
                 <p className="text-zinc-400 leading-relaxed mb-4">"All Phase found structural damage under our old roof that two other contractors missed. They fixed everything under one contract and the new roof passed inspection first try. Worth every penny to have a contractor with both licenses."</p>
                 <p className="text-white font-semibold">— Robert M.</p>
-                <p className="text-zinc-500 text-sm">Mainlands Homeowner</p>
+                <p className="text-zinc-400 text-sm">Mainlands Homeowner</p>
               </div>
             </div>
           </div>
@@ -411,7 +411,7 @@ export default function TamaracMoneyPage() {
                 <div key={index} className="bg-[#27272a] border border-zinc-800 rounded-lg overflow-hidden">
                   <button onClick={() => setOpenFaq(openFaq === index ? null : index)} className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-zinc-800/50 transition-colors">
                     <span className="font-semibold text-white pr-4">{faq.question}</span>
-                    {openFaq === index ? <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />}
+                    {openFaq === index ? <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />}
                   </button>
                   {openFaq === index && (
                     <div className="px-6 py-4 border-t border-zinc-800 bg-zinc-900/50">
@@ -444,9 +444,9 @@ export default function TamaracMoneyPage() {
             </div>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
               <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-red-500" /><span>Dual Licensed</span></div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-red-500" /><span>HVHZ Certified</span></div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-red-500" /><span>Since 2006</span></div>
             </div>
           </div>

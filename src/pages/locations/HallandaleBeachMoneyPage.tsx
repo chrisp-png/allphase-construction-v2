@@ -399,7 +399,7 @@ export default function HallandaleBeachMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "After three contractors gave us wildly different estimates and couldn't explain 40-year recertification requirements, this team presented a clear plan our board approved in one meeting. The special assessment came in 20% under their initial estimate."
                 </p>
-                <p className="text-zinc-500 text-sm">— Board President, 180-Unit A1A Corridor Condominium</p>
+                <p className="text-zinc-400 text-sm">— Board President, 180-Unit A1A Corridor Condominium</p>
               </div>
 
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8">
@@ -411,7 +411,7 @@ export default function HallandaleBeachMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "Our 1970s building had failed two roof inspections with previous patch repairs. They completed full roof replacement, handled all building department documentation, and we passed recertification on the first try. Hurricane season came two months later — no issues."
                 </p>
-                <p className="text-zinc-500 text-sm">— Property Manager, Hallandale Beach Boulevard Mid-Rise</p>
+                <p className="text-zinc-400 text-sm">— Property Manager, Hallandale Beach Boulevard Mid-Rise</p>
               </div>
             </div>
 
@@ -701,7 +701,7 @@ export default function HallandaleBeachMoneyPage() {
                 (754) 227-5605
               </a>
             </div>
-            <p className="text-zinc-500 text-sm">
+            <p className="text-zinc-400 text-sm">
               Serving all of Hallandale Beach including Golden Isles, Gulfstream Park, Three Islands, A1A corridor, and Hallandale Beach Boulevard. Available 24/7 for emergency <Link to="/roof-repair" className="text-red-500 hover:text-red-400 underline transition-colors">roof repairs</Link>.
             </p>
           </div>
@@ -716,17 +716,17 @@ export default function HallandaleBeachMoneyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300">
               <Link to="/locations/hollywood" className="hover:text-red-500 transition-colors">Hollywood</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/fort-lauderdale" className="hover:text-red-500 transition-colors">Fort Lauderdale</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pembroke-pines" className="hover:text-red-500 transition-colors">Pembroke Pines</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/miramar" className="hover:text-red-500 transition-colors">Miramar</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/deerfield-beach" className="hover:text-red-500 transition-colors">Deerfield Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/boca-raton" className="hover:text-red-500 transition-colors">Boca Raton</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-500 transition-colors">Pompano Beach</Link>
             </div>
           </div>

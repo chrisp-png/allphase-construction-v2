@@ -347,7 +347,7 @@ export default function LauderhillMoneyPage() {
                   <h3 className="text-xl font-bold">Essential Repair</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">Starting at $500+</p>
-                <p className="text-zinc-500 text-sm mb-4">Targeted repairs for immediate issues</p>
+                <p className="text-zinc-400 text-sm mb-4">Targeted repairs for immediate issues</p>
                 <ul className="space-y-2">
                   {[
                     'Comprehensive roof inspection',
@@ -373,7 +373,7 @@ export default function LauderhillMoneyPage() {
                   <h3 className="text-xl font-bold">Complete Replacement</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">$8,000 – $18,000+</p>
-                <p className="text-zinc-500 text-sm mb-4">Full re-roof with code-compliant materials</p>
+                <p className="text-zinc-400 text-sm mb-4">Full re-roof with code-compliant materials</p>
                 <ul className="space-y-2">
                   {[
                     'Full tear-off and disposal',
@@ -389,7 +389,7 @@ export default function LauderhillMoneyPage() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-zinc-500 text-xs mt-4">
+                <p className="text-zinc-400 text-xs mt-4">
                   Financing available: My Safe Florida Home grants (up to $10,000) and PACE programs.
                 </p>
               </div>
@@ -400,7 +400,7 @@ export default function LauderhillMoneyPage() {
                   <h3 className="text-xl font-bold">Multi-Unit / Commercial</h3>
                 </div>
                 <p className="text-red-500 font-semibold text-2xl mb-2">Volume Pricing</p>
-                <p className="text-zinc-500 text-sm mb-4">Condo associations & property managers</p>
+                <p className="text-zinc-400 text-sm mb-4">Condo associations & property managers</p>
                 <ul className="space-y-2">
                   {[
                     'Bulk material purchasing savings',
@@ -522,7 +522,7 @@ export default function LauderhillMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "After getting a non-renewal notice on my 20-year-old roof, I was panicking. All Phase Construction USA handled the city permit and finished installing a new roof in about a month. Everything was documented thoroughly, and my insurer was satisfied immediately. My premium actually dropped."
                 </p>
-                <p className="text-zinc-500 font-semibold">— Maria T., Inverrary Resident</p>
+                <p className="text-zinc-400 font-semibold">— Maria T., Inverrary Resident</p>
               </div>
 
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
@@ -534,7 +534,7 @@ export default function LauderhillMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "We needed roof repair on our townhome, and All Phase Construction USA did a wonderful job at a very reasonable cost. The bilingual service made everything so much easier for my parents to understand. They even helped us look into the My Safe Florida Home grant. Highly recommend!"
                 </p>
-                <p className="text-zinc-500 font-semibold">— Jean-Pierre H., Lauderhill</p>
+                <p className="text-zinc-400 font-semibold">— Jean-Pierre H., Lauderhill</p>
               </div>
 
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
@@ -546,7 +546,7 @@ export default function LauderhillMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "Our condo association hired All Phase Construction USA for volume roof replacements across 24 units. Outstanding job from start to finish — no more leaks, premium materials throughout, and the per-unit pricing saved our association thousands compared to other quotes."
                 </p>
-                <p className="text-zinc-500 font-semibold">— Inverrary Townhome Association Board</p>
+                <p className="text-zinc-400 font-semibold">— Inverrary Townhome Association Board</p>
               </div>
             </div>
           </div>
@@ -612,7 +612,7 @@ export default function LauderhillMoneyPage() {
                     {openFaq === index ? (
                       <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
                     )}
                   </button>
                   {openFaq === index && (
@@ -656,17 +656,17 @@ export default function LauderhillMoneyPage() {
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Dual Licensed</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>HVHZ Certified</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Financing Available</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Bilingual Service</span>

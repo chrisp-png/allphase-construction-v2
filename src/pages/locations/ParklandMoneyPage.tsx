@@ -306,7 +306,7 @@ export default function ParklandMoneyPage() {
                   <h3 className="text-xl font-bold">Premium Tile Replacement</h3>
                 </div>
                 <p className="text-2xl font-bold text-red-500 mb-2">$22,000–$35,000</p>
-                <p className="text-sm text-zinc-500 mb-6">Typical 2,500–3,500 sq ft homes</p>
+                <p className="text-sm text-zinc-400 mb-6">Typical 2,500–3,500 sq ft homes</p>
                 <ul className="space-y-3 text-zinc-400">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -337,7 +337,7 @@ export default function ParklandMoneyPage() {
                   <h3 className="text-xl font-bold">Standing Seam Metal</h3>
                 </div>
                 <p className="text-2xl font-bold text-red-500 mb-2">$28,000–$45,000</p>
-                <p className="text-sm text-zinc-500 mb-6">3,000–4,500 sq ft applications</p>
+                <p className="text-sm text-zinc-400 mb-6">3,000–4,500 sq ft applications</p>
                 <ul className="space-y-3 text-zinc-400">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -368,7 +368,7 @@ export default function ParklandMoneyPage() {
                   <h3 className="text-xl font-bold">TAMKO Designer Shingles</h3>
                 </div>
                 <p className="text-2xl font-bold text-red-500 mb-2">$18,000–$28,000</p>
-                <p className="text-sm text-zinc-500 mb-6">Standard Parkland home sizes</p>
+                <p className="text-sm text-zinc-400 mb-6">Standard Parkland home sizes</p>
                 <ul className="space-y-3 text-zinc-400">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
@@ -510,7 +510,7 @@ export default function ParklandMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "All Phase Construction USA handled everything with our Heron Bay HOA — submitted the materials documentation, got approval, coordinated with the gate, and installed a beautiful barrel tile roof. We didn't have to manage anything."
                 </p>
-                <p className="text-zinc-500 font-medium">— Heron Bay Homeowner</p>
+                <p className="text-zinc-400 font-medium">— Heron Bay Homeowner</p>
               </div>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-8">
@@ -522,7 +522,7 @@ export default function ParklandMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "Our original tile looked fine from the street, but they showed us the underlayment was completely deteriorated. The full replacement was handled professionally from permit to final inspection. Highly recommended to anyone in Parkland."
                 </p>
-                <p className="text-zinc-500 font-medium">— Parkland Golf & Country Club Resident</p>
+                <p className="text-zinc-400 font-medium">— Parkland Golf & Country Club Resident</p>
               </div>
             </div>
 

@@ -122,7 +122,7 @@ export default function MoneyPageEnhancements({
             <p className="text-base font-bold text-gray-900 leading-tight">
               Free {cityName} Roof Inspection
             </p>
-            <p className="text-xs text-gray-600 mt-0.5">
+            <p className="text-xs text-gray-400 mt-0.5">
               15 seconds · no obligation
             </p>
           </div>
@@ -179,7 +179,7 @@ export default function MoneyPageEnhancements({
           >
             Get My Free Inspection
           </button>
-          <p className="text-center text-[10px] text-gray-500">
+          <p className="text-center text-[10px] text-gray-400">
             Or call{' '}
             <a href="tel:+17542275605" className="text-red-600 font-semibold">
               (754) 227-5605
@@ -195,13 +195,13 @@ export default function MoneyPageEnhancements({
             {['✓ Dual-Licensed CCC + CGC', '✓ HVHZ-Certified', '✓ A+ BBB', '✓ Since 2005', '✓ 2,500+ Roofs'].map((b) => (
               <span
                 key={b}
-                className="bg-red-950/40 text-red-200 border border-red-900/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold"
+                className="bg-red-950/40 text-red-100 border border-red-900/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold"
               >
                 {b}
               </span>
             ))}
           </div>
-          <p className="text-center text-xs text-zinc-500">
+          <p className="text-center text-xs text-zinc-400">
             <time dateTime="2026-04">Updated April 2026</time> · Free roof inspections throughout {cityName}.
           </p>
         </div>

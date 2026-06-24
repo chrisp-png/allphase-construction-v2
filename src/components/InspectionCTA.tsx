@@ -13,19 +13,19 @@ export default function InspectionCTA() {
         <div className="bg-zinc-900 border border-zinc-800 rounded p-8 mb-8">
           <ul className="space-y-3 text-zinc-300">
             <li className="flex gap-3">
-              <span className="text-zinc-500 mt-0.5">•</span>
+              <span className="text-zinc-400 mt-0.5">•</span>
               <span>Inspections are performed to document existing roof conditions</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-zinc-500 mt-0.5">•</span>
+              <span className="text-zinc-400 mt-0.5">•</span>
               <span>Findings are based on observed conditions at the time of inspection</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-zinc-500 mt-0.5">•</span>
+              <span className="text-zinc-400 mt-0.5">•</span>
               <span>Written summaries and photo documentation are provided when applicable</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-zinc-500 mt-0.5">•</span>
+              <span className="text-zinc-400 mt-0.5">•</span>
               <span>Inspections do not assume or require repair or replacement</span>
             </li>
           </ul>

@@ -294,7 +294,7 @@ export default function HollywoodMoneyPage() {
                 <div key={i} className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-5">
                   <h3 className="font-bold text-white mb-1">{item.material}</h3>
                   <p className="text-red-500 font-semibold text-lg">{item.range}</p>
-                  <p className="text-zinc-500 text-sm mt-1">{item.note}</p>
+                  <p className="text-zinc-400 text-sm mt-1">{item.note}</p>
                 </div>
               ))}
             </div>
@@ -414,7 +414,7 @@ export default function HollywoodMoneyPage() {
                     {openFaq === index ? (
                       <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
                     )}
                   </button>
                   {openFaq === index && (
@@ -458,12 +458,12 @@ export default function HollywoodMoneyPage() {
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Free Inspection</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>No Obligation</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Same-Week Scheduling</span>
