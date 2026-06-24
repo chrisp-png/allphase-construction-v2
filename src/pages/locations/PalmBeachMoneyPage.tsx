@@ -17,6 +17,7 @@ import MoneyPageStatBar from '../../components/MoneyPageStatBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function PalmBeachMoneyPage() {
   const cityName = 'Palm Beach';
   const county = 'Palm Beach County';
@@ -124,6 +125,9 @@ export default function PalmBeachMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="palm-beach" />
 
         <MoneyPageStatBar />
 

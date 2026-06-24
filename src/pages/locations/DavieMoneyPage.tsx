@@ -14,6 +14,7 @@ import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function DavieMoneyPage() {
   const cityName = 'Davie';
   const county = 'Broward County';
@@ -153,6 +154,9 @@ export default function DavieMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="davie" />
 
         {/* Why Choose All Phase */}
         <section className="py-20 bg-[#27272a]">

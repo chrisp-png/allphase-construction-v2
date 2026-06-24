@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/localBusinessSchema';
 import { getCityCoordinates } from '../data/cityCoordinates';
 
+import CityProjectGallery from '../components/CityProjectGallery';
 interface PhotoBreakProps {
   src: string;
   alt: string;
@@ -410,6 +411,9 @@ export default function WellingtonPage() {
           </div>
         </div>
       </div>
+
+      {/* PR-73: Real city project photos */}
+      <CityProjectGallery slug="wellington" />
       </div>
     </>
   );

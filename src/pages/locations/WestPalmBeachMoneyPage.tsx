@@ -15,6 +15,7 @@ import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function WestPalmBeachMoneyPage() {
   const cityName = 'West Palm Beach';
   const county = 'Palm Beach County';
@@ -118,6 +119,9 @@ export default function WestPalmBeachMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="west-palm-beach" />
 
         {/* The Dual-License Advantage */}
         <section className="py-20 bg-[#27272a]">

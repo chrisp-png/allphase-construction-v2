@@ -9,6 +9,7 @@ import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../uti
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function TamaracMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -449,6 +450,9 @@ export default function TamaracMoneyPage() {
         <MoneyPageEnhancements cityName="Tamarac" county="Broward" hvhz={true} />
         <Contact />
       </div>
+
+      {/* PR-73: Real city project photos */}
+      <CityProjectGallery slug="tamarac" />
     </div>
   );
 }

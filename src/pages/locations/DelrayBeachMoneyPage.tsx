@@ -8,6 +8,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 import { EXTERNAL_LINKS } from '../../config/links';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function DelrayBeachMoneyPage() {
   useEffect(() => {
     const seoMeta = generateSEOMetadata('/locations/delray-beach');
@@ -528,6 +529,9 @@ export default function DelrayBeachMoneyPage() {
           />
         </div>
       </div>
+
+      {/* PR-73: Real city project photos */}
+      <CityProjectGallery slug="delray-beach" />
     </div>
   );
 }

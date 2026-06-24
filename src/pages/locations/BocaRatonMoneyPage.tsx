@@ -17,6 +17,7 @@ import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function BocaRatonMoneyPage() {
   const cityName = 'Boca Raton';
   const county = 'Palm Beach County';
@@ -126,6 +127,9 @@ export default function BocaRatonMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="boca-raton" />
 
         <MoneyPageStatBar />
 
