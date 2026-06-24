@@ -370,28 +370,28 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                 <Award className="w-12 h-12 text-[#C5A572]" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Dual-Licensed</h3>
-              <p className="text-sm text-gray-600">CCC & CGC Licensed Contractor</p>
+              <p className="text-sm text-gray-400">CCC & CGC Licensed Contractor</p>
             </div>
             <div>
               <div className="flex justify-center mb-3">
                 <Shield className="w-12 h-12 text-[#C5A572]" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">HVHZ Certified</h3>
-              <p className="text-sm text-gray-600">175+ mph Wind Ratings</p>
+              <p className="text-sm text-gray-400">175+ mph Wind Ratings</p>
             </div>
             <div>
               <div className="flex justify-center mb-3">
                 <Clock className="w-12 h-12 text-[#C5A572]" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">24/7 Emergency</h3>
-              <p className="text-sm text-gray-600">Same-Day Response Available</p>
+              <p className="text-sm text-gray-400">Same-Day Response Available</p>
             </div>
             <div>
               <div className="flex justify-center mb-3">
                 <Users className="w-12 h-12 text-[#C5A572]" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Local Experts</h3>
-              <p className="text-sm text-gray-600">Deerfield Beach Headquarters</p>
+              <p className="text-sm text-gray-400">Deerfield Beach Headquarters</p>
             </div>
           </div>
         </div>

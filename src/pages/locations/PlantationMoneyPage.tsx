@@ -507,7 +507,7 @@ export default function PlantationMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "After the hurricane, we had water stains spreading across our ceiling. All Phase Construction USA came out the same day, handled the permits, and our complete roof replacement was done in three days. Outstanding work!"
                 </p>
-                <p className="text-zinc-500 font-semibold">— The Rodriguez Family, Plantation</p>
+                <p className="text-zinc-400 font-semibold">— The Rodriguez Family, Plantation</p>
               </div>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6">
@@ -519,7 +519,7 @@ export default function PlantationMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "We got quotes from several roofers in the area. All Phase Construction USA's estimate was competitive, but their communication and professionalism put them in a different league. Our new roof looks incredible."
                 </p>
-                <p className="text-zinc-500 font-semibold">— Mark T., Plantation Homeowner</p>
+                <p className="text-zinc-400 font-semibold">— Mark T., Plantation Homeowner</p>
               </div>
 
               <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6">
@@ -531,7 +531,7 @@ export default function PlantationMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-4 italic">
                   "From the free estimate to the final cleanup, everything was handled professionally. They even noticed minor repairs needed on our gutters and fixed them on the spot. That's the kind of reliable service you can't find everywhere."
                 </p>
-                <p className="text-zinc-500 font-semibold">— Sarah K., Plantation</p>
+                <p className="text-zinc-400 font-semibold">— Sarah K., Plantation</p>
               </div>
             </div>
           </div>
@@ -557,7 +557,7 @@ export default function PlantationMoneyPage() {
                     {openFaq === index ? (
                       <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
                     )}
                   </button>
                   {openFaq === index && (
@@ -601,17 +601,17 @@ export default function PlantationMoneyPage() {
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Dual Licensed</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>HVHZ Certified</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>Since 2006</span>
                 </div>
-                <span className="text-zinc-600">&bull;</span>
+                <span className="text-zinc-400">&bull;</span>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-red-500" />
                   <span>24/7 Emergency</span>

@@ -113,7 +113,7 @@ export default function LicensedRoofingContractorPage() {
                 <p className="text-zinc-400 leading-relaxed mb-4">
                   Authorizes installation, repair, and replacement of roof systems — the membrane, underlayment, flashing, and surface materials. This is the standard license most roofing companies hold. A CCC-licensed contractor cannot perform structural work on trusses, decking, or load-bearing components without subcontracting to a general contractor.
                 </p>
-                <p className="text-zinc-500 text-sm">All Phase CCC: <span className="text-white font-mono">CCC-1331464</span></p>
+                <p className="text-zinc-400 text-sm">All Phase CCC: <span className="text-white font-mono">CCC-1331464</span></p>
               </div>
               <div className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-4">
@@ -124,7 +124,7 @@ export default function LicensedRoofingContractorPage() {
                 <p className="text-zinc-400 leading-relaxed mb-4">
                   Authorizes structural work including framing, trusses, decking, roof-to-wall connections, and load-bearing modifications. A CGC-licensed contractor can evaluate and repair the complete building structure. When combined with a CCC license, the contractor handles both the roof system and any structural issues found during replacement — no delays, no additional contracts, one warranty.
                 </p>
-                <p className="text-zinc-500 text-sm">All Phase CGC: <span className="text-white font-mono">CGC-1526236</span></p>
+                <p className="text-zinc-400 text-sm">All Phase CGC: <span className="text-white font-mono">CGC-1526236</span></p>
               </div>
             </div>
             <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-6">
@@ -367,9 +367,9 @@ export default function LicensedRoofingContractorPage() {
             <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 mb-8 text-left max-w-2xl mx-auto">
               <h3 className="text-lg font-bold text-white mb-3">Related guides (Updated 2026):</h3>
               <ul className="space-y-2 text-zinc-300 text-base">
-                <li>→ <Link to="/frequently-asked-questions" className="text-red-300 hover:text-red-200 underline">South Florida Roofing FAQ</Link> — 12 plain-English answers including the full MyFloridaLicense verification walkthrough</li>
-                <li>→ <Link to="/broward-county-roof-replacement-guide" className="text-red-300 hover:text-red-200 underline">Broward County Roof Replacement Guide</Link> — HVHZ requirements and the 25% rule</li>
-                <li>→ <Link to="/team/chris-porosky" className="text-red-300 hover:text-red-200 underline">About Chris Porosky</Link> — full credential roll-up</li>
+                <li>→ <Link to="/frequently-asked-questions" className="text-red-300 hover:text-red-100 underline">South Florida Roofing FAQ</Link> — 12 plain-English answers including the full MyFloridaLicense verification walkthrough</li>
+                <li>→ <Link to="/broward-county-roof-replacement-guide" className="text-red-300 hover:text-red-100 underline">Broward County Roof Replacement Guide</Link> — HVHZ requirements and the 25% rule</li>
+                <li>→ <Link to="/team/chris-porosky" className="text-red-300 hover:text-red-100 underline">About Chris Porosky</Link> — full credential roll-up</li>
               </ul>
             </div>
             <p className="text-zinc-300 text-lg max-w-3xl mx-auto leading-relaxed mb-8">

@@ -583,17 +583,17 @@ export default function LauderdaleByTheSeaMoneyPage() {
 
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300">
               <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-600 transition-colors">Pompano Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/fort-lauderdale" className="hover:text-red-600 transition-colors">Fort Lauderdale</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lighthouse-point" className="hover:text-red-600 transition-colors">Lighthouse Point</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/wilton-manors" className="hover:text-red-600 transition-colors">Wilton Manors</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coconut-creek" className="hover:text-red-600 transition-colors">Coconut Creek</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-600 transition-colors">Coral Springs</Link>
             </div>
 

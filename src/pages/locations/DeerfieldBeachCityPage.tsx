@@ -590,7 +590,7 @@ export default function DeerfieldBeachCityPage() {
                     <td className="py-4 px-4 text-gray-300 font-medium">
                       Structural Permit Work
                     </td>
-                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                    <td className="py-4 px-4 text-center text-gray-400 text-sm">
                       Requires separate contractor
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -601,7 +601,7 @@ export default function DeerfieldBeachCityPage() {
                     <td className="py-4 px-4 text-gray-300 font-medium">
                       Hurricane Strap Upgrades
                     </td>
-                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                    <td className="py-4 px-4 text-center text-gray-400 text-sm">
                       Requires separate contractor
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -612,7 +612,7 @@ export default function DeerfieldBeachCityPage() {
                     <td className="py-4 px-4 text-gray-300 font-medium">
                       Roof-to-Wall Reinforcement
                     </td>
-                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                    <td className="py-4 px-4 text-center text-gray-400 text-sm">
                       Requires separate contractor
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -623,7 +623,7 @@ export default function DeerfieldBeachCityPage() {
                     <td className="py-4 px-4 text-gray-300 font-medium">
                       Flashing Cut-Out & Stucco Repair
                     </td>
-                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                    <td className="py-4 px-4 text-center text-gray-400 text-sm">
                       Requires separate contractor
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -634,7 +634,7 @@ export default function DeerfieldBeachCityPage() {
                     <td className="py-4 px-4 text-gray-300 font-medium">
                       Structural Load Adjustments
                     </td>
-                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                    <td className="py-4 px-4 text-center text-gray-400 text-sm">
                       Requires separate contractor
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -656,7 +656,7 @@ export default function DeerfieldBeachCityPage() {
                     <td className="py-4 px-4 text-gray-300 font-medium">
                       Insurance Upgrade Coordination
                     </td>
-                    <td className="py-4 px-4 text-center text-gray-500 text-sm">
+                    <td className="py-4 px-4 text-center text-gray-400 text-sm">
                       Limited scope
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -1126,13 +1126,13 @@ export default function DeerfieldBeachCityPage() {
             </h3>
             <div className="flex flex-wrap items-center justify-center gap-2 text-gray-400">
               <Link to="/locations/boca-raton" className="hover:text-red-500 transition-colors">Boca Raton</Link>
-              <span className="text-gray-600">•</span>
+              <span className="text-gray-400">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-500 transition-colors">Pompano Beach</Link>
-              <span className="text-gray-600">•</span>
+              <span className="text-gray-400">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-500 transition-colors">Coral Springs</Link>
-              <span className="text-gray-600">•</span>
+              <span className="text-gray-400">•</span>
               <Link to="/locations/coconut-creek" className="hover:text-red-500 transition-colors">Coconut Creek</Link>
-              <span className="text-gray-600">•</span>
+              <span className="text-gray-400">•</span>
               <Link to="/locations/parkland" className="hover:text-red-500 transition-colors">Parkland</Link>
             </div>
           </div>

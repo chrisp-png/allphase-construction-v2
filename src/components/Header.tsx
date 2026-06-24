@@ -431,7 +431,7 @@ export default function Header() {
                                             setIsCommercialSinglePlyOpen(!isCommercialSinglePlyOpen);
                                           }
                                         }}
-                                        className="flex items-center justify-between w-full text-gray-500 hover:text-red-600 transition-colors py-3 focus:outline-none"
+                                        className="flex items-center justify-between w-full text-gray-400 hover:text-red-600 transition-colors py-3 focus:outline-none"
                                       >
                                         {subItem.name}
                                         <ChevronDown className={`w-4 h-4 transition-transform ${
@@ -448,7 +448,7 @@ export default function Header() {
                                             <Link
                                               key={thirdItem.name}
                                               to={thirdItem.path}
-                                              className="block text-gray-500 hover:text-red-600 transition-colors py-3"
+                                              className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                                               onClick={() => setIsMobileMenuOpen(false)}
                                             >
                                               {thirdItem.name}
@@ -460,7 +460,7 @@ export default function Header() {
                                   ) : (
                                     <Link
                                       to={subItem.path}
-                                      className="block text-gray-500 hover:text-red-600 transition-colors py-3"
+                                      className="block text-gray-400 hover:text-red-600 transition-colors py-3"
                                       onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                       {subItem.name}

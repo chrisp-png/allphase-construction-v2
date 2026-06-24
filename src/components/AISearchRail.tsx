@@ -69,7 +69,7 @@ export default function AISearchRail({
   variant = 'dark',
   className = '',
 }: AISearchRailProps) {
-  const labelColor = variant === 'dark' ? 'text-gray-300' : 'text-gray-600';
+  const labelColor = variant === 'dark' ? 'text-gray-300' : 'text-gray-400';
 
   return (
     <div

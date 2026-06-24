@@ -494,17 +494,17 @@ export default function CoconutCreekMoneyPage() {
 
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
               <Link to="/locations/deerfield-beach" className="hover:text-red-600 transition-colors">Deerfield Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/coral-springs" className="hover:text-red-600 transition-colors">Coral Springs</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/parkland" className="hover:text-red-600 transition-colors">Parkland</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/margate" className="hover:text-red-600 transition-colors">Margate</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-600 transition-colors">Pompano Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/boca-raton" className="hover:text-red-600 transition-colors">Boca Raton</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lighthouse-point" className="hover:text-red-600 transition-colors">Lighthouse Point</Link>
             </div>
 

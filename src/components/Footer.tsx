@@ -119,7 +119,7 @@ export default function Footer() {
               <p className="text-gray-400 text-xs mt-1">A real All Phase team member answers any hour, any day.</p>
             </div>
             <div>
-              <h4 className="text-white font-semibold text-sm mb-2">Get Directions</h4>
+              <h3 className="text-white font-semibold text-sm mb-2">Get Directions</h3>
               <p className="text-sm text-gray-400">
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=590+Goolsby+Blvd+Deerfield+Beach+FL+33442"
@@ -283,7 +283,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pt-2">
-                <span className="text-gray-500 text-xs uppercase tracking-wider">Palm Beach County</span>
+                <span className="text-gray-400 text-xs uppercase tracking-wider">Palm Beach County</span>
               </li>
               <li>
                 <Link to="/locations/boca-raton/" className="hover:text-red-600 transition-colors">
@@ -306,7 +306,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="pt-2">
-                <span className="text-gray-500 text-xs uppercase tracking-wider">Broward County</span>
+                <span className="text-gray-400 text-xs uppercase tracking-wider">Broward County</span>
               </li>
               <li>
                 <Link to="/locations/coral-springs/" className="hover:text-red-600 transition-colors">
@@ -405,10 +405,10 @@ export default function Footer() {
 
         <div className="border-t border-neutral-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-400 text-sm">
               © 2025 All Phase Construction USA, LLC. All rights reserved.
             </p>
-            <div className="flex gap-6 text-gray-500 text-sm">
+            <div className="flex gap-6 text-gray-400 text-sm">
               <Link to="/privacy/" className="hover:text-red-600 transition-colors">
                 Privacy Policy
               </Link>

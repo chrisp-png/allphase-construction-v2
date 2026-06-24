@@ -135,15 +135,15 @@ export default function DelrayBeachMoneyPage() {
             <Link to="/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Home
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <Link to="/locations/deerfield-beach" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <Link to="/locations/service-areas" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <span className="text-white">Delray Beach</span>
           </nav>
 
@@ -465,7 +465,7 @@ export default function DelrayBeachMoneyPage() {
                       {city.name}
                     </Link>
                     {index < nearbyCities.length - 1 && (
-                      <span className="text-zinc-600">•</span>
+                      <span className="text-zinc-400">•</span>
                     )}
                   </span>
                 ))}

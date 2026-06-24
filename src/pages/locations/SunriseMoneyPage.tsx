@@ -174,15 +174,15 @@ export default function SunrisePage() {
             <Link to="/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Home
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <Link to="/locations/deerfield-beach/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Deerfield Beach
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <Link to="/locations/service-areas/" className="text-zinc-400 hover:text-red-600 transition-colors">
               Service Areas
             </Link>
-            <span className="text-zinc-600">/</span>
+            <span className="text-zinc-400">/</span>
             <span className="text-white">Sunrise</span>
           </nav>
 
@@ -345,7 +345,7 @@ export default function SunrisePage() {
                     "{testimonial.text}"
                   </p>
                   <p className="text-white font-semibold">— {testimonial.name}</p>
-                  <p className="text-zinc-500 text-sm">{testimonial.location}</p>
+                  <p className="text-zinc-400 text-sm">{testimonial.location}</p>
                 </div>
               ))}
             </div>
@@ -380,7 +380,7 @@ export default function SunrisePage() {
                     {openFaq === index ? (
                       <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
                     )}
                   </button>
                   {openFaq === index && (
@@ -437,12 +437,12 @@ export default function SunrisePage() {
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>Dual Licensed</span>
               </div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>HVHZ Certified</span>
               </div>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-red-500" />
                 <span>Since 2006</span>

@@ -254,17 +254,17 @@ export default function CalculatorPage() {
               <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-4 text-center">
                 <p className="text-zinc-400 text-xs uppercase tracking-wider mb-1">Shingle Roof</p>
                 <p className="text-white text-xl font-bold">$16,000 – $26,000</p>
-                <p className="text-zinc-500 text-xs mt-1">Most common residential choice</p>
+                <p className="text-zinc-400 text-xs mt-1">Most common residential choice</p>
               </div>
               <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-4 text-center">
                 <p className="text-zinc-400 text-xs uppercase tracking-wider mb-1">Tile Roof</p>
                 <p className="text-white text-xl font-bold">$20,000 – $38,000</p>
-                <p className="text-zinc-500 text-xs mt-1">Concrete or clay tile systems</p>
+                <p className="text-zinc-400 text-xs mt-1">Concrete or clay tile systems</p>
               </div>
               <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-4 text-center">
                 <p className="text-zinc-400 text-xs uppercase tracking-wider mb-1">Metal Roof</p>
                 <p className="text-white text-xl font-bold">$24,000 – $44,000</p>
-                <p className="text-zinc-500 text-xs mt-1">Standing seam &amp; stone-coated</p>
+                <p className="text-zinc-400 text-xs mt-1">Standing seam &amp; stone-coated</p>
               </div>
             </div>
             <p className="text-zinc-400 text-sm leading-relaxed">Pricing is consistent across most cities in our service area. The real cost drivers are roof size, pitch, decking condition, and the material system you choose — not your zip code. <Link to="/contact" className="text-red-500 hover:text-red-400">Request a free inspection</Link> for a quote based on your actual roof.</p>

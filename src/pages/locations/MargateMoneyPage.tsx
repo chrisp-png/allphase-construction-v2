@@ -542,7 +542,7 @@ export default function MargateMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "Our 1975 ranch home in Coral Hills had been denied renewal by two insurance companies. All Phase Construction USA handled everything with the City of Margate permits and installed a new tile roof that passed inspection the first time. We're now fully insured again. Outstanding job from start to finish."
                 </p>
-                <p className="text-zinc-500 font-medium">— Margate homeowner, Coral Hills</p>
+                <p className="text-zinc-400 font-medium">— Margate homeowner, Coral Hills</p>
               </div>
 
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-8">
@@ -554,7 +554,7 @@ export default function MargateMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "After hurricane season damaged our second-generation shingles, we needed a complete roof replacement fast. Clear communication throughout, expert craftsmanship on the installation, and complete satisfaction with the final result. They did an amazing job coordinating the permits and inspections."
                 </p>
-                <p className="text-zinc-500 font-medium">— Margate homeowner, Margate Estates</p>
+                <p className="text-zinc-400 font-medium">— Margate homeowner, Margate Estates</p>
               </div>
             </div>
           </div>

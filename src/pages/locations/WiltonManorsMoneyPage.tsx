@@ -403,17 +403,17 @@ export default function WiltonManorsMoneyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-zinc-300 mb-8">
               <Link to="/locations/fort-lauderdale" className="hover:text-red-600 transition-colors">Fort Lauderdale</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/oakland-park" className="hover:text-red-600 transition-colors">Oakland Park</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lauderdale-by-the-sea" className="hover:text-red-600 transition-colors">Lauderdale-by-the-Sea</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/pompano-beach" className="hover:text-red-600 transition-colors">Pompano Beach</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lauderdale-lakes" className="hover:text-red-600 transition-colors">Lauderdale Lakes</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/lauderhill" className="hover:text-red-600 transition-colors">Lauderhill</Link>
-              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400">•</span>
               <Link to="/locations/plantation" className="hover:text-red-600 transition-colors">Plantation</Link>
             </div>
           </div>

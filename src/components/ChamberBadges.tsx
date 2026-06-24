@@ -109,7 +109,7 @@ export default function ChamberBadges() {
             Proud member of the Chamber of the Palm Beaches, demonstrating our commitment to business excellence and community engagement throughout Palm Beach County.
           </p>
           <noscript>
-            <p className="text-gray-500 text-sm mt-2 text-center">
+            <p className="text-gray-400 text-sm mt-2 text-center">
               Member of the Chamber of the Palm Beaches.
             </p>
           </noscript>

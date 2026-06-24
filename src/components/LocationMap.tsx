@@ -139,7 +139,7 @@ export default function LocationMap() {
               Call (754) 227-5605
             </a>
 
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-400 text-sm mt-2">
               Same-day inspections available when scheduling permits.
             </p>
           </div>

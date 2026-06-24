@@ -580,7 +580,7 @@ export default function DavieMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "After heavy rains caused significant leak damage to our ranch home, All Phase Construction USA addressed all my concerns within 48 hours. The crew was extremely knowledgeable about the older construction on our 1980s house, and the final inspection passed without issues. Top notch service from start to finish."
                 </p>
-                <p className="text-zinc-500 font-medium">— Jennifer M., Forest Ridge</p>
+                <p className="text-zinc-400 font-medium">— Jennifer M., Forest Ridge</p>
               </div>
 
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-8">
@@ -592,7 +592,7 @@ export default function DavieMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "We needed roof replacements on both our main house and horse barn — over 8,000 square feet total. Other companies either couldn't handle the scope or quoted outrageous prices. All Phase delivered expert craftsmanship at a fair price, completed on schedule, and coordinated all permits with the Town of Davie building department."
                 </p>
-                <p className="text-zinc-500 font-medium">— David R., Equestrian Property Owner</p>
+                <p className="text-zinc-400 font-medium">— David R., Equestrian Property Owner</p>
               </div>
 
               <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-8">
@@ -604,7 +604,7 @@ export default function DavieMoneyPage() {
                 <p className="text-zinc-300 leading-relaxed mb-6 italic">
                   "The roof damage from tree debris was worse than we thought — hidden leaks had caused further damage to our decking. The team identified the problem areas, explained the repair process clearly, and delivered quality work. Hard workers who take pride in their craft."
                 </p>
-                <p className="text-zinc-500 font-medium">— Maria L., Davie Homeowner</p>
+                <p className="text-zinc-400 font-medium">— Maria L., Davie Homeowner</p>
               </div>
             </div>
           </div>
