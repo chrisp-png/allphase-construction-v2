@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import MidPageCTA from '../components/MidPageCTA';
 import { Phone, CheckCircle2, Home, ChevronRight, Shield, Clock, FileCheck, ChevronDown, X, AlertCircle, Award } from 'lucide-react';
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
 import RoofCostResourcesSection from '../components/RoofCostResourcesSection';
 
 import step01Image from '../assets/step-01-inspection-optimized.jpg';
@@ -245,6 +246,11 @@ export default function RoofReplacementProcessPage() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1]">
             Our 10-Step Roof Replacement Process
           </h1>
+
+              {/* PR-72: AI Search Rail */}
+              <div className="mt-6 mb-6">
+                <AISearchRail query="What is the typical roof replacement process and timeline in South Florida from inspection to final warranty?" />
+              </div>
 
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8 mb-12 max-w-4xl">
             <h2 className="text-lg font-bold text-red-500 mb-4">How Roof Replacement Works in South Florida</h2>

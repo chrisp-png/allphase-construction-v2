@@ -55,6 +55,13 @@ const AI_ENGINES = [
     bg: 'bg-[#0078D4]',
     hoverBg: 'hover:bg-[#005a9e]',
   },
+  {
+    name: 'Perplexity',
+    url: (q: string) =>
+      `https://www.perplexity.ai/search?q=${encodeURIComponent(q)}`,
+    bg: 'bg-[#20808D]',
+    hoverBg: 'hover:bg-[#196b76]',
+  },
 ];
 
 export default function AISearchRail({

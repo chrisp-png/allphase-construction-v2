@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import AISearchRail from '../components/AISearchRail';
 import { Link } from 'react-router-dom';
 import { Calculator, MapPin, Shield, Plus, Minus, ArrowRight, Wallet } from 'lucide-react';
 import RoofCalculator from '../components/RoofCalculator';
@@ -163,6 +164,10 @@ export default function CalculatorPage() {
 
           {/* SEO Context + Authority Introduction */}
           <h2 className="text-2xl font-bold text-white mb-4">South Florida Roof Replacement Estimates: Broward &amp; Palm Beach County Pricing</h2>
+          {/* PR-72: AI Search Rail */}
+          <div className="mb-4">
+            <AISearchRail query="How much does a new roof cost in South Florida and how should I estimate the cost for my home?" />
+          </div>
           <p className="text-zinc-300 leading-relaxed mb-4">
             This free South Florida roof cost calculator gives you a real roof replacement estimate based on 2026 Florida pricing across Broward County and Palm Beach County — the two HVHZ markets we've worked in for decades. Unlike generic national roofing calculators, every number is built from actual South Florida jobs and priced against the High Velocity Hurricane Zone code requirements your roof will be inspected under.
           </p>
