@@ -16,6 +16,7 @@ import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function BoyntonBeachMoneyPage() {
   const cityName = 'Boynton Beach';
   const county = 'Palm Beach County';
@@ -131,6 +132,9 @@ export default function BoyntonBeachMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="boynton-beach" />
 
         {/* The Dual-License Advantage */}
         <section className="py-20 bg-zinc-950">

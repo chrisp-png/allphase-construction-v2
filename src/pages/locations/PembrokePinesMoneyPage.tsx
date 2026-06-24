@@ -14,6 +14,7 @@ import StickyConversionBar from '../../components/StickyConversionBar';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function PembrokePinesMoneyPage() {
   const cityName = 'Pembroke Pines';
   const county = 'Broward County';
@@ -149,6 +150,9 @@ export default function PembrokePinesMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="pembroke-pines" />
 
         {/* Why Choose All Phase */}
         <section className="py-20 bg-[#27272a]">

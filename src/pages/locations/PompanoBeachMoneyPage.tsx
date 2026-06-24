@@ -10,6 +10,7 @@ import InternalLinksBlock from '../../components/InternalLinksBlock';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function PompanoBeachMoneyPage() {
   const cityName = 'Pompano Beach';
   const county = 'Broward County';
@@ -170,6 +171,9 @@ export default function PompanoBeachMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="pompano-beach" />
 
         {/* Service Area Info */}
         <section className="py-16 bg-zinc-900">

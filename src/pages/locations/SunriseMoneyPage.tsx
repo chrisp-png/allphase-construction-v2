@@ -9,6 +9,7 @@ import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../../uti
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function SunrisePage() {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -447,6 +448,9 @@ export default function SunrisePage() {
         <MoneyPageEnhancements cityName="Sunrise" county="Broward" hvhz={true} />
         <Contact />
       </div>
+
+      {/* PR-73: Real city project photos */}
+      <CityProjectGallery slug="sunrise" />
     </div>
   );
 }

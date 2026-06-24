@@ -15,6 +15,7 @@ import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 import { generateSEOMetadata } from '../../config/seoTitles';
 
+import CityProjectGallery from '../../components/CityProjectGallery';
 export default function CoralSpringsMoneyPage() {
   const cityName = 'Coral Springs';
   const county = 'Broward County';
@@ -118,6 +119,9 @@ export default function CoralSpringsMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-73: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="coral-springs" />
 
         {/* The Dual-License Advantage */}
         <section className="py-20 bg-[#27272a]">
