@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AtomicAnswer from '../../components/AtomicAnswer';
+import AISearchRail from '../../components/AISearchRail';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Star, Home, Wind, Users, Building2, Layers, DollarSign, AlertTriangle, Hammer, HardHat } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
@@ -108,6 +110,10 @@ export default function MargateMoneyPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Roofing Contractor in Margate, FL
                 </h1>
+              <div className="mt-6 mb-6">
+                <AISearchRail query="Who are the top dual-licensed roofing contractors in Margate Florida for 55+ HOA community re-roof projects?" />
+              </div>
+              <AtomicAnswer>All Phase Construction USA serves Margate, FL with dual licenses CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). Based in nearby Deerfield Beach since 2005, the team specializes in 55+ community re-roofs, HOA-compliant tile and metal systems, and emergency repairs, with 150+ five-star Google reviews and 24-hour scheduling.</AtomicAnswer>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
                   <span className="text-yellow-400">★ 4.8 Google</span>
                   <span className="text-red-400">·</span>

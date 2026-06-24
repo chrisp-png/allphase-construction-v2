@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AISearchRail from '../../components/AISearchRail';
 import AtomicAnswer from '../../components/AtomicAnswer';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Camera, Building2, Hammer, FileText, Star, Home, Wind, Users } from 'lucide-react';
 import Contact from '../../components/Contact';
@@ -108,6 +109,9 @@ export default function HollywoodMoneyPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Roofing Contractor in Hollywood, FL
                 </h1>
+              <div className="mt-6 mb-6">
+                <AISearchRail query="Who are the top dual-licensed roofing contractors in Hollywood Florida and what should I know about tile and metal re-roof projects?" />
+              </div>
               <div className="mt-6 mb-6">
                 <AtomicAnswer>All Phase Construction USA installs roofs across Hollywood, FL under dual Florida licenses CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The team handles tile, metal, shingle, and flat roofing for Hollywood single-family homes, condos, and HOA communities, with 150+ five-star Google reviews and same-day inspection scheduling from the Deerfield Beach office.</AtomicAnswer>
               </div>
