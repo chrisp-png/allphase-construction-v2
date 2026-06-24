@@ -385,7 +385,7 @@ export default function HappyCustomers() {
         <div className="text-center">
           <a
             href="/projects/"
-            className="inline-block px-8 py-3 border-2 border-red-600 text-red-600 font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors duration-300"
+            className="inline-block px-8 py-3 border-2 border-red-700 text-red-700 font-semibold rounded-lg hover:bg-red-700 hover:text-white transition-colors duration-300"
           >
             View All Projects
           </a>

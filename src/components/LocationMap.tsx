@@ -5,7 +5,7 @@ export default function LocationMap() {
     <section className="py-20 px-6 bg-[#09090b]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-600/20">
+          <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-600/20">
             <MapPin className="w-4 h-4" />
             Our Location
           </div>
@@ -67,10 +67,10 @@ export default function LocationMap() {
               Dual-Licensed General Contractor & Roofing Contractor
             </p>
             <div className="flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-red-600/10 text-red-500 rounded-lg text-sm font-semibold border border-red-600/20">
+              <span className="px-3 py-1 bg-red-600/10 text-red-300 rounded-lg text-sm font-semibold border border-red-600/20">
                 CGC-1526236
               </span>
-              <span className="px-3 py-1 bg-red-600/10 text-red-500 rounded-lg text-sm font-semibold border border-red-600/20">
+              <span className="px-3 py-1 bg-red-600/10 text-red-300 rounded-lg text-sm font-semibold border border-red-600/20">
                 CCC-1331464
               </span>
             </div>

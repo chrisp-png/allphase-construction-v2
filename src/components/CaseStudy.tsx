@@ -190,7 +190,7 @@ export default function CaseStudy() {
 
                   <div className="pt-2 border-t border-neutral-700">
                     <h4 className="text-white font-bold mb-1">Investment:</h4>
-                    <p className="text-2xl font-bold text-red-600">{currentStudy.investment}</p>
+                    <p className="text-2xl font-bold text-red-400">{currentStudy.investment}</p>
                   </div>
 
                   <div className="pt-2 border-t border-neutral-700">
@@ -199,14 +199,14 @@ export default function CaseStudy() {
                       {currentStudy.id === 1 ? (
                         <>
                           Passed inspection. Insurance dropped from $9,200 to $4,400/year — saving{' '}
-                          <span className="font-bold text-red-600">$4,800 annually</span>. Solar attic fan cuts $55/month from electric bills. Total savings over 20 years:{' '}
-                          <span className="font-bold text-red-600">$109,200</span>.
+                          <span className="font-bold text-red-400">$4,800 annually</span>. Solar attic fan cuts $55/month from electric bills. Total savings over 20 years:{' '}
+                          <span className="font-bold text-red-400">$109,200</span>.
                         </>
                       ) : (
                         <>
                           Insurance renewed with{' '}
-                          <span className="font-bold text-red-600">$1,600/year</span> savings. Solar attic fan saves $45/month on cooling. Total savings over 20 years:{' '}
-                          <span className="font-bold text-red-600">$42,800</span>.
+                          <span className="font-bold text-red-400">$1,600/year</span> savings. Solar attic fan saves $45/month on cooling. Total savings over 20 years:{' '}
+                          <span className="font-bold text-red-400">$42,800</span>.
                         </>
                       )}
                     </p>

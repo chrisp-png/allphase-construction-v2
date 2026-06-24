@@ -63,7 +63,7 @@ export default function HomeownerResources() {
               className="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-8 hover:border-red-600 hover:shadow-lg hover:shadow-red-600/20 transition-all duration-200 group flex flex-col"
             >
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-red-600/10 text-red-500 text-sm font-semibold rounded-full">
+                <span className="inline-block px-3 py-1 bg-red-600/10 text-red-300 text-sm font-semibold rounded-full">
                   {post.category}
                 </span>
               </div>
@@ -87,7 +87,7 @@ export default function HomeownerResources() {
         <div className="text-center">
           <Link
             to="/learning-center"
-            className="inline-flex items-center text-lg font-semibold text-red-600 hover:text-red-500 transition-colors"
+            className="inline-flex items-center text-lg font-semibold text-red-400 hover:text-red-300 transition-colors"
           >
             Explore All Guides
             <ArrowRight className="w-5 h-5 ml-2" />
