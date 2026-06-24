@@ -38,29 +38,29 @@ const AI_ENGINES = [
   {
     name: 'ChatGPT',
     url: (q: string) => `https://chatgpt.com/?q=${encodeURIComponent(q)}`,
-    bg: 'bg-[#10A37F]',
-    hoverBg: 'hover:bg-[#0d8a6b]',
+    bg: 'bg-[#086C53]',
+    hoverBg: 'hover:bg-[#054d36]',
   },
   {
     name: 'Google AI Mode',
     url: (q: string) =>
       `https://www.google.com/search?q=${encodeURIComponent(q)}&udm=50`,
-    bg: 'bg-[#4285F4]',
-    hoverBg: 'hover:bg-[#3367d6]',
+    bg: 'bg-[#1967D2]',
+    hoverBg: 'hover:bg-[#1849A8]',
   },
   {
     name: 'Bing Copilot',
     url: (q: string) =>
       `https://copilot.microsoft.com/?q=${encodeURIComponent(q)}`,
-    bg: 'bg-[#0078D4]',
-    hoverBg: 'hover:bg-[#005a9e]',
+    bg: 'bg-[#0059A6]',
+    hoverBg: 'hover:bg-[#003F75]',
   },
   {
     name: 'Perplexity',
     url: (q: string) =>
       `https://www.perplexity.ai/search?q=${encodeURIComponent(q)}`,
-    bg: 'bg-[#20808D]',
-    hoverBg: 'hover:bg-[#196b76]',
+    bg: 'bg-[#155C66]',
+    hoverBg: 'hover:bg-[#103E44]',
   },
 ];
 

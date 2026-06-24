@@ -243,7 +243,7 @@ export default function HeroRoofing() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     Get Your Free Roof Inspection
                   </h3>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-gray-600 text-sm">
                     Just name, phone, and ZIP — takes 15 seconds
                   </p>
                 </div>
@@ -335,15 +335,15 @@ export default function HeroRoofing() {
                 Get My Free Inspection
               </button>
 
-              <p className="text-center text-xs text-gray-400 leading-relaxed">
+              <p className="text-center text-xs text-gray-600 leading-relaxed">
                 ★ 4.8 Google · A+ BBB · Licensed CCC-1331464 / CGC-1526236 · Since 2005
               </p>
 
-              <p className="text-center text-sm text-gray-400">
+              <p className="text-center text-sm text-gray-600">
                 Or call{' '}
                 <a
                   href="tel:+17542275605"
-                  className="text-red-600 hover:text-red-700 font-semibold"
+                  className="text-red-700 hover:text-red-800 font-semibold"
                 >
                   (754) 227-5605
                 </a>
