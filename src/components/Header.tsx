@@ -200,7 +200,7 @@ export default function Header() {
                 <span className="hidden lg:block text-white font-bold text-base xl:text-lg whitespace-nowrap leading-tight">
                   All Phase Construction USA
                 </span>
-                <span className="text-red-600 font-semibold text-xs sm:text-sm whitespace-nowrap">
+                <span className="text-red-400 font-semibold text-xs sm:text-sm whitespace-nowrap">
                   Dual Licensed Roofing Contractor
                 </span>
               </div>
