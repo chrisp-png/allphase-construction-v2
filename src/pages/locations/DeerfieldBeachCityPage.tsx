@@ -10,6 +10,7 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AISearchRail from '../../components/AISearchRail';
 import { MapPin, Phone, Award, Shield, Clock, Users, FileCheck, Camera, CheckCircle, ArrowRight, Star, ChevronDown } from 'lucide-react';
 import Contact from '../../components/Contact';
 import Lightbox from '../../components/Lightbox';
@@ -194,6 +195,12 @@ export default function DeerfieldBeachCityPage() {
               <p className="text-xl text-gray-400 mb-8">
                 We diagnose before we quote. Every project starts with a free inspection-first assessment - no pressure, no obligation.
               </p>
+
+              {/* PR-71: AI Search Rail — Deerfield Beach city query */}
+              <AISearchRail
+                query="Who are the top dual-licensed roofing contractors in Deerfield Beach Florida, and what should I know about All Phase Construction USA?"
+                className="mb-6"
+              />
 
                             {/* Credential Box */}
               <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">

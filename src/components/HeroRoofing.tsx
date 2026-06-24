@@ -1,5 +1,6 @@
 import { Phone, Clock, CheckCircle, Award, Users, Star, Flame, MapPin } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import AISearchRail from './AISearchRail';
 import { useAssessmentModal } from '../context/AssessmentModalContext';
 import { EXTERNAL_LINKS } from '../config/links';
 
@@ -144,6 +145,15 @@ export default function HeroRoofing() {
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
               All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 / CGC-1526236) protecting South Florida homes and businesses since 2005 — tile, metal, shingle, flat and commercial systems, all installed to HVHZ wind code. Call <a href="tel:+17542275605" className="text-white underline hover:text-red-400">(754) 227-5605</a> or request your free assessment.
             </p>
+
+            {/* PR-71: AI Search Rail — deep-links into ChatGPT, Google AI Mode, Bing Copilot
+                with a pre-formed query about us. Surfaces our content in AI answer engines
+                (which we already know cite us 30+ times/day in Bing Copilot per Bing AI
+                Performance data) and signals confidence to the visitor. */}
+            <AISearchRail
+              query="Who is All Phase Construction USA and why are they a top-rated dual-licensed roofing contractor in Broward and Palm Beach County Florida?"
+              className="mb-6"
+            />
 
             <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
               {/* Gradient background overlay */}
