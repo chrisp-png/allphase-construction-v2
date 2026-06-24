@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AISearchRail from '../../components/AISearchRail';
 import AtomicAnswer from '../../components/AtomicAnswer';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, FileText, BookOpen, Star } from 'lucide-react';
 import Contact from '../../components/Contact';
@@ -77,6 +78,9 @@ export default function WestPalmBeachMoneyPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Expert Roofing Contractor in {cityName}, FL
                 </h1>
+              <div className="mt-6 mb-6">
+                <AISearchRail query="Who are the top dual-licensed roofing contractors in West Palm Beach Florida and what should I know about HVHZ-compliant residential re-roofs?" />
+              </div>
               <div className="mt-6 mb-6">
                 <AtomicAnswer>All Phase Construction USA serves West Palm Beach, FL under dual state licenses CCC-1331464 (Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor). The Deerfield Beach-based team installs tile, metal, shingle, and flat roofing built to South Florida HVHZ wind code, with 150+ five-star Google reviews and 24-hour scheduling availability.</AtomicAnswer>
               </div>
