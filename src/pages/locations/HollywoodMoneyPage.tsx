@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AtomicAnswer from '../../components/AtomicAnswer';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Camera, Building2, Hammer, FileText, Star, Home, Wind, Users } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
@@ -107,6 +108,9 @@ export default function HollywoodMoneyPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Roofing Contractor in Hollywood, FL
                 </h1>
+              <div className="mt-6 mb-6">
+                <AtomicAnswer>All Phase Construction USA installs roofs across Hollywood, FL under dual Florida licenses CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The team handles tile, metal, shingle, and flat roofing for Hollywood single-family homes, condos, and HOA communities, with 150+ five-star Google reviews and same-day inspection scheduling from the Deerfield Beach office.</AtomicAnswer>
+              </div>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
                   <span className="text-yellow-400">★ 4.8 Google</span>
                   <span className="text-red-400">·</span>

@@ -9,6 +9,7 @@ import AISearchRail from '../../components/AISearchRail';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AtomicAnswer from '../../components/AtomicAnswer';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, FileText, BookOpen, Star } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
@@ -83,6 +84,7 @@ export default function FortLauderdaleMoneyPage() {
               <div className="mt-6 mb-6">
                 <AISearchRail query="Who are the top dual-licensed roofing contractors in Fort Lauderdale Florida and what should I know about HVHZ-compliant roofing in Broward County?" />
               </div>
+              <AtomicAnswer>All Phase Construction USA installs and repairs roofs across Fort Lauderdale, FL under dual Florida licenses CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The Deerfield Beach-based team has completed 2,500+ South Florida roofs since 2005 and serves Fort Lauderdale homes and commercial properties with 24/7 availability and 150+ verified five-star Google reviews.</AtomicAnswer>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
                   <span className="text-yellow-400">★ 4.8 Google</span>
                   <span className="text-red-400">·</span>
