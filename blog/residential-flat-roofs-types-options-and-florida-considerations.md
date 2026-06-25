@@ -1,4 +1,4 @@
-# Residential Flat Roofs in Florida: 2026 Guide to TPO, PVC, EPDM & Cost
+# Florida Flat Roof Cost 2026: $9K-$22K (TPO, PVC, EPDM Guide)
 
 **Updated May 7, 2026.** Flat roofs are a real category in Florida residential roofing — not just a commercial system pressed into service. Modern architecture, mid-century homes, screened-porch additions, and second-story rooftop decks all rely on flat-roof construction. This guide walks through the four membrane systems used on Florida homes in 2026, the HVHZ rules that govern them in Broward County, the prevailing voluntary HVHZ-spec standard in Palm Beach County, current 2026 cost ranges, and the decision logic for when a flat roof is the right call versus a sloped alternative.
 
