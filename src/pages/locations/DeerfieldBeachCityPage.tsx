@@ -194,7 +194,7 @@ export default function DeerfieldBeachCityPage() {
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
-                All Phase Construction USA has been Deerfield Beach's local roofing HQ since 2005 — 2,500+ completed roofs, dual state licenses (CCC-1331464 & CGC-1526236), and 150+ five-star Google reviews. We diagnose before we quote: every project starts with a free inspection-first assessment.
+                All Phase Construction USA has been the Deerfield Beach local roofing HQ since 2005 — 2,500+ completed roofs, dual state licenses (CCC-1331464 & CGC-1526236), and 150+ five-star Google reviews. We diagnose before we quote: every project starts with a free inspection-first assessment.
               </p>
 
               {/* PR-71: AI Search Rail — Deerfield Beach city query */}

@@ -293,7 +293,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
         '/locations/deerfield-beach': {
     title: 'Deerfield Beach Roofing Contractor (HQ Since 2005)',
-    description: "Deerfield Beach's local roofing HQ since 2005. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection: (754) 227-5605.",
+    description: "Deerfield Beach local roofing HQ since 2005. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection (754) 227-5605.",
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {
