@@ -1,4 +1,4 @@
-# Metal Roof vs. Tile Roof in South Florida: Which Is Better for Hurricanes?
+# Metal vs Tile Roof in South Florida: Hurricane Winner (2026)
 
 **TL;DR:** Standing seam metal roofs outperform tile roofs in hurricanes and are now the fastest-growing roofing choice in South Florida. Metal roofs cost $22,000–$28,000 for a typical 2,000 sq ft home (comparable to concrete tile at $25,000–$27,000), last 40–70 years, reflect 25–30% of heat, and qualify for better insurance discounts. Florida law now prohibits HOAs from blocking metal roof installations.
 
