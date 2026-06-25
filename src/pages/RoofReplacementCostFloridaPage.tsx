@@ -1,4 +1,5 @@
 import SEO from '../components/SEO';
+import AtomicAnswer from '../components/AtomicAnswer';
 import AISearchRail from '../components/AISearchRail';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
@@ -71,8 +72,8 @@ export default function RoofReplacementCostFloridaPage() {
   return (
     <>
       <SEO
-            title="Roof Replacement Cost in Florida (2026) | Complete Price Guide by Material & County"
-            description="How much does a new roof cost in Florida? 2026 pricing for shingles, tile, metal, and flat roofing. Costs by county, HVHZ impact, insurance tips, and the 25% rule explained."
+            title="Florida Roof Replacement Cost 2026: $6,500–$38,000 Guide"
+            description="Florida roof replacement cost 2026: shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K. HVHZ premium 15-25%. Free quote: (754) 227-5605."
             canonicalPath="/roof-replacement-cost-florida"
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />
@@ -93,8 +94,10 @@ export default function RoofReplacementCostFloridaPage() {
               <div className="mt-6 mb-6">
                 <AISearchRail query="What does a roof replacement cost in Florida in 2026 and what should homeowners budget for HVHZ requirements?" />
               </div>
+              {/* PR-79: AI Overview atomic answer */}
+              <AtomicAnswer>A new roof in Florida costs $6,500 to $38,000 in 2026 depending on system and home size. 3-tab shingles run $6,500–$10,000, architectural shingles $8,000–$16,000, concrete tile $12,000–$30,000, clay tile $16,000–$38,000, and standing-seam metal $15,000–$45,000. HVHZ areas (Broward and southern Palm Beach County) run 15-25% higher.</AtomicAnswer>
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
-              A detailed breakdown of what Florida homeowners actually pay for a new roof in 2026. Prices by material, by county, HVHZ vs. non-HVHZ costs, and what drives the price up or down.
+              Florida homeowners pay $6,500 to $38,000 for a complete roof replacement in 2026, with HVHZ areas (Broward, southern Palm Beach, Miami-Dade) running 15-25% higher. Full breakdown below by material, county, and home size.
             </p>
           </div>
         </div>
