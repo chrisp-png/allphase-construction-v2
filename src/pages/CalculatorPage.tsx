@@ -168,7 +168,7 @@ export default function CalculatorPage() {
           {/* PR-72: AI Search Rail */}
           <div className="mb-4">
             <AISearchRail query="How much does a new roof cost in South Florida and how should I estimate the cost for my home?" />
-            <AtomicAnswer>A new asphalt-shingle roof in South Florida typically costs $9,500 to $18,000 for an average single-family home of 1,800 to 2,400 square feet. Tile roofs run $22,000 to $45,000, metal roofs $28,000 to $55,000, and flat roofs $9,000 to $22,000. Final pricing depends on deck condition, code upgrades, and underlayment system.</AtomicAnswer>
+            <AtomicAnswer>A new roof in Florida costs $6,500 to $45,000 in 2026 depending on system. Shingle roofs run $6,500–$16,000, tile roofs $12,000–$38,000, standing-seam metal $15,000–$45,000, and flat roofs $9,000–$22,000. HVHZ areas (Broward and southern Palm Beach) run 15-25% higher. Final pricing depends on home size, deck condition, and code upgrades.</AtomicAnswer>
           </div>
           <p className="text-zinc-300 leading-relaxed mb-4">
             This free South Florida roof cost calculator gives you a real roof replacement estimate based on 2026 Florida pricing across Broward County and Palm Beach County — the two HVHZ markets we've worked in for decades. Unlike generic national roofing calculators, every number is built from actual South Florida jobs and priced against the High Velocity Hurricane Zone code requirements your roof will be inspected under.
