@@ -16,6 +16,23 @@
  * actually sit inside the High Velocity Hurricane Zone. For Palm Beach
  * County cities we install to HVHZ spec voluntarily; that is reflected in
  * copy via localHook, NOT by setting hvhz=true.
+ *
+ * ⚠️ CRITICAL — STRING-VALUE CONSTRAINTS (see CLAUDE.md §12 foot-gun):
+ * scripts/prerender-static.mjs reads this file as TEXT and parses it
+ * with `(\w+):` → `"$1":` to quote object keys. That regex has NO
+ * string-awareness, so any `word:` pattern INSIDE a string value will
+ * be corrupted before JSON.parse, breaking the Netlify build at ~23s.
+ *
+ * Do NOT write inside titleOverride / descriptionOverride values:
+ *   ❌ "Free inspection: (754) 227-5605"     (broke build 2026-04-06 AND 2026-06-25)
+ *   ❌ "Open today: 9 AM"
+ *   ❌ "Hours: 24/7"
+ *   ❌ "Tip: install metal early"
+ *   ❌ "9:00 AM"                              (time strings)
+ *   ✅ "Free inspection (754) 227-5605"      (no colon)
+ *   ✅ "Free inspection — (754) 227-5605"    (em-dash separator)
+ *
+ * Also: use DOUBLE-QUOTED strings only. Single quotes will not parse.
  */
 
 export interface Location {

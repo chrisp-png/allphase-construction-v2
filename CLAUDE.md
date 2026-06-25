@@ -365,7 +365,7 @@ The `(\w+):` regex has no string-awareness. Any `word:` inside a string value in
 
 **Never write inside string values in `src/data/locations.ts`:**
 
-- `Free inspection: (754) 227-5605` — broke the build on 2026-04-06. Use `Free inspection (754)…` or a hyphen.
+- `Free inspection: (754) 227-5605` — broke the build on **2026-04-06** AND **2026-06-25** (recurring; this is now also documented inline at the top of `src/data/locations.ts`). Use `Free inspection (754)…` or a hyphen.
 - `Note: …`, `Tip: …`, `URL: …`, `Hours: …`
 - Time strings like `9:00 AM`
 - URLs may or may not trip it depending on surrounding chars — test before adding.
