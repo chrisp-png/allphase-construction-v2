@@ -190,11 +190,11 @@ export default function DeerfieldBeachCityPage() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Roofing Contractor Serving Deerfield Beach, FL & Surrounding Palm Beach and Broward Communities
+                Deerfield Beach Roofing Contractor — Free Inspection in 48 Hours
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
-                We diagnose before we quote. Every project starts with a free inspection-first assessment - no pressure, no obligation.
+                All Phase Construction USA has been Deerfield Beach's local roofing HQ since 2005 — 2,500+ completed roofs, dual state licenses (CCC-1331464 & CGC-1526236), and 150+ five-star Google reviews. We diagnose before we quote: every project starts with a free inspection-first assessment.
               </p>
 
               {/* PR-71: AI Search Rail — Deerfield Beach city query */}
