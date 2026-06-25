@@ -120,6 +120,21 @@ http://quote.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/con
 /ocean-ridge/ /locations/ocean-ridge 301!
 
 
+# ======================================================================
+# PR-86: Missing legacy URL redirects from 6/25 GSC Crawled-not-indexed audit
+# ======================================================================
+/about%20us /about-us 301!
+/about%20us/ /about-us 301!
+/our-location /contact 301!
+/our-location/ /contact 301!
+
+# Re-route /gallery and /media-gallery directly to /projects since the
+# old chain via /projects → /about-us is now broken (intentionally).
+# These pairs were already in _redirects but pointed through the chain;
+# we leave them alone because the chain has been straightened by removing
+# the /projects → /about-us rule above.
+
+
 
 
 # Broken /roof-replacement/[city] URLs - these pages do not exist
@@ -432,8 +447,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /roof-leak-mechanical-equipment   /roof-repair   301!
 # REMOVED (Netlify Pretty URLs handles trailing slashes): /about-us/   /about-us   301!
 /residential-roofing/   /roof-repair   301
-/projects   /about-us   301
-/accessibility   /about-us   301
+# (removed) /projects → /about-us — /projects is a real page (ProjectsPage)
+# (removed) /accessibility → /about-us — /accessibility is a real page (AccessibilityPage)
 /publications   /about-us   301!
 
 # Removed in PR-38/PR-40: /roof-inspection/lake-park, /roof-inspection/westlake.
