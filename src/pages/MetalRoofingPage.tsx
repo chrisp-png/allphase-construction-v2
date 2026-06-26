@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Link } from 'react-router-dom';
+import YouTubeEmbed from '../components/YouTubeEmbed';
+import { VIDEOS } from '../data/videos';
+import { generateVideoObjectSchema } from '../utils/videoObjectSchema';
 import MidPageCTA from '../components/MidPageCTA';
 import {
   Phone,
@@ -104,6 +107,26 @@ export default function MetalRoofingPage() {
           </div>
         </div>
       </section>
+
+        {/* PR-92: YouTube video embeds + VideoObject schemas */}
+        <section className="py-16 bg-zinc-950 border-y border-zinc-800/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">We Fabricate Our Own Metal Accessories</h3>
+                <p className="text-zinc-300 text-sm mb-4">Behind-the-scenes in our metal shop — how we ensure HVHZ-compliant fit on every Florida metal roof.</p>
+                <YouTubeEmbed videoId={VIDEOS.METAL_ROOFING_ACCESSORIES.videoId} title={VIDEOS.METAL_ROOFING_ACCESSORIES.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.METAL_ROOFING_ACCESSORIES)) }} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Metal Roof Restoration — Coral Gables Mansion</h3>
+                <p className="text-zinc-300 text-sm mb-4">Premium estate-quality metal restoration work.</p>
+                <YouTubeEmbed videoId={VIDEOS.METAL_ROOF_RESTORATION.videoId} title={VIDEOS.METAL_ROOF_RESTORATION.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.METAL_ROOF_RESTORATION)) }} />
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* When Metal Roofing Requires Professional Inspection */}
       <section className="py-20 bg-zinc-900">

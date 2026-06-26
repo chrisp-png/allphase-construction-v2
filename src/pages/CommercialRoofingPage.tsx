@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import YouTubeEmbed from '../components/YouTubeEmbed';
+import { VIDEOS } from '../data/videos';
+import { generateVideoObjectSchema } from '../utils/videoObjectSchema';
 import {
   Phone,
   CheckCircle2,
@@ -191,6 +194,16 @@ export default function CommercialRoofingPage() {
           </div>
         </div>
       </section>
+
+        {/* PR-92: YouTube video embed + VideoObject schema */}
+        <section className="py-16 bg-zinc-950 border-y border-zinc-800/50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Conklin Fabric Re-enforced Coating System</h2>
+            <p className="text-zinc-300 mb-6">How fabric-reinforced coatings can extend the life of an existing commercial roof — capital expense vs. maintenance expense.</p>
+            <YouTubeEmbed videoId={VIDEOS.CONKLIN_FABRIC_COATING.videoId} title={VIDEOS.CONKLIN_FABRIC_COATING.title} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.CONKLIN_FABRIC_COATING)) }} />
+          </div>
+        </section>
 
       {/* Trust Bar */}
       <section className="border-y border-zinc-800 bg-zinc-950">

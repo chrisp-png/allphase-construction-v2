@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import ServicePageEnhancements from '../components/ServicePageEnhancements';
 import { Link } from 'react-router-dom';
+import YouTubeEmbed from '../components/YouTubeEmbed';
+import { VIDEOS } from '../data/videos';
+import { generateVideoObjectSchema } from '../utils/videoObjectSchema';
 import {
   Phone,
   CheckCircle2,
@@ -164,6 +167,16 @@ export default function FlatRoofingPage() {
           </div>
         </div>
       </section>
+
+        {/* PR-92: YouTube video embed + VideoObject schema */}
+        <section className="py-16 bg-zinc-950 border-y border-zinc-800/50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Hot-Mopped Built-Up Roof in Progress</h2>
+            <p className="text-zinc-300 mb-6">A traditional flat-roof construction technique still used on certain South Florida projects.</p>
+            <YouTubeEmbed videoId={VIDEOS.HOT_MOPPED_ROOF.videoId} title={VIDEOS.HOT_MOPPED_ROOF.title} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.HOT_MOPPED_ROOF)) }} />
+          </div>
+        </section>
 
       {/* When Single-Ply Roofing Requires Professional Inspection */}
       <section className="py-20 bg-zinc-900">

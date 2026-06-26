@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import YouTubeEmbed from '../components/YouTubeEmbed';
+import { VIDEOS } from '../data/videos';
+import { generateVideoObjectSchema } from '../utils/videoObjectSchema';
 import { Shield, Award, MapPin, Wind, Phone, CheckCircle, User, Briefcase, GraduationCap, Heart, Users, Star, Wrench, ArrowRight, Calculator } from 'lucide-react';
 
 interface TeamMember {
@@ -672,6 +675,31 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    
+        {/* PR-92: Founder + office tour YouTube embeds */}
+        <section className="py-16 bg-zinc-950 border-t border-zinc-800/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Meet All Phase Construction USA</h2>
+              <p className="text-zinc-300 max-w-3xl mx-auto">From a one-truck start in 2005 to a 2,500+ roof dual-licensed shop today — here's our story and a walk-through of the Deerfield Beach headquarters.</p>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Founder Story</h3>
+                <p className="text-zinc-300 text-sm mb-4">Chris Porosky on how All Phase Construction USA was built.</p>
+                <YouTubeEmbed videoId={VIDEOS.CHRIS_POROSKY_STORY.videoId} title={VIDEOS.CHRIS_POROSKY_STORY.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.CHRIS_POROSKY_STORY)) }} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Inside the Deerfield Beach Headquarters</h3>
+                <p className="text-zinc-300 text-sm mb-4">A walk through the All Phase HQ on Goolsby Boulevard.</p>
+                <YouTubeEmbed videoId={VIDEOS.OFFICE_TOUR.videoId} title={VIDEOS.OFFICE_TOUR.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.OFFICE_TOUR)) }} />
+              </div>
+            </div>
+          </div>
+        </section>
+      
     </>
   );
 }

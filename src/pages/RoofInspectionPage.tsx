@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import YouTubeEmbed from '../components/YouTubeEmbed';
+import { VIDEOS } from '../data/videos';
+import { generateVideoObjectSchema } from '../utils/videoObjectSchema';
 import SEO from '../components/SEO';
 import { generateLocalBusinessSchema, generateServiceSchema, generateBreadcrumbSchema } from '../utils/seoSchemas';
 import StickyConversionBar from '../components/StickyConversionBar';
@@ -201,6 +204,16 @@ export default function RoofInspectionPage() {
           </div>
         </div>
       </section>
+
+        {/* PR-92: YouTube video embed + VideoObject schema */}
+        <section className="py-16 bg-zinc-950 border-y border-zinc-800/50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Why We Take a Roof Core Sample</h2>
+            <p className="text-zinc-300 mb-6">A core reveals what is happening inside the system before a repair or replacement decision.</p>
+            <YouTubeEmbed videoId={VIDEOS.CORE_SAMPLE.videoId} title={VIDEOS.CORE_SAMPLE.title} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.CORE_SAMPLE)) }} />
+          </div>
+        </section>
 
       {/* HVHZ & Local Code Compliance Snippet */}
       <section className="py-12 bg-zinc-950 border-b border-zinc-800">
