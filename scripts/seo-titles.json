@@ -437,5 +437,15 @@
     "westlake": "Westlake",
     "weston": "Weston",
     "wilton-manors": "Wilton Manors"
+  },
+  "/locations/oakland-park": {
+    "title": "Oakland Park Roofing Contractor — Flat Roof Specialists | All Phase USA",
+    "description": "Oakland Park, FL roofing contractor — dual-licensed, HVHZ-certified. Flat-roof specialists for mid-century homes plus shingle, tile, metal. 150+ five-star reviews. (754) 227-5605.",
+    "canonical": "https://allphaseconstructionfl.com/locations/oakland-park"
+  },
+  "/locations/lighthouse-point": {
+    "title": "Lighthouse Point Roofing Contractor — Spanish Tile & Metal | All Phase USA",
+    "description": "Lighthouse Point, FL roofing contractor — dual-licensed, HVHZ-certified. Spanish tile and standing-seam metal for waterfront homes. 150+ five-star reviews. (754) 227-5605.",
+    "canonical": "https://allphaseconstructionfl.com/locations/lighthouse-point"
   }
 }
