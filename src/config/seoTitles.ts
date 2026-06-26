@@ -67,7 +67,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/about-us': {
     title: 'About All Phase Construction | Expert Roofing Specialist',
-    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 138 reviews.',
+    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 150+ reviews.',
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/team/chris-porosky': {
@@ -105,8 +105,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
   },
   '/reviews': {
-    title: 'Roofing Reviews | 4.8 Stars, 138+ Verified | All Phase',
-    description: '4.8 stars from 138 verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.',
+    title: 'Roofing Reviews | 4.8 Stars, 150+ Verified | All Phase',
+    description: '4.8 stars from 150+ verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.',
     canonical: 'https://allphaseconstructionfl.com/reviews'
   },
   '/projects': {
