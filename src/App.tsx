@@ -156,6 +156,8 @@ const DelrayBeachMoneyPage = lazy(() => import('./pages/locations/DelrayBeachMon
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
+const OaklandParkMoneyPage = lazy(() => import('./pages/locations/OaklandParkMoneyPage'));
+const LighthousePointMoneyPage = lazy(() => import('./pages/locations/LighthousePointMoneyPage'));
 const SitemapAuditPage = lazy(() => import('./pages/qa/SitemapAuditPage'));
 const FrequentlyAskedQuestionsPage = lazy(() => import('./pages/FrequentlyAskedQuestionsPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -310,6 +312,8 @@ function AppContent() {
             <Route path="/locations/west-palm-beach" element={<WestPalmBeachMoneyPage />} />
             <Route path="/locations/west-palm-beach/best-roofers-west-palm-beach" element={<BestRoofersWestPalmBeachPage />} />
             <Route path="/locations/coconut-creek" element={<CoconutCreekMoneyPage />} />
+            <Route path="/locations/oakland-park" element={<OaklandParkMoneyPage />} />
+            <Route path="/locations/lighthouse-point" element={<LighthousePointMoneyPage />} />
             {/* 14 new best-roofers city pages — data-driven React component */}
             <Route path="/locations/pompano-beach/best-roofers-pompano-beach" element={<BestRoofersPompanoBeachPage />} />
             <Route path="/locations/hollywood/best-roofers-hollywood" element={<BestRoofersHollywoodPage />} />
