@@ -6,6 +6,7 @@ import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
 import cities from '../../data/cities.json';
 import { isCityIndexable } from '../../config/indexableCities';
+import { getCityEnrichment } from '../../data/getCityEnrichment';
 
 export default function GenericRoofInspectionTemplate() {
   const { city: citySlug } = useParams<{ city: string }>();
@@ -14,6 +15,7 @@ export default function GenericRoofInspectionTemplate() {
   const cityData = cities.find(c => c.slug === citySlug);
   const cityName = cityData?.city || citySlug;
   const county = cityData?.county || 'South Florida';
+  const enrichment = citySlug ? getCityEnrichment(citySlug) : null;
 
   // Check if this city should be indexed
   const isIndexable = citySlug ? isCityIndexable(citySlug) : false;
@@ -113,6 +115,56 @@ export default function GenericRoofInspectionTemplate() {
             </div>
           </div>
         </section>
+
+        {/* PR-90: City-specific enrichment to break the thin-content pattern.
+            For cities with rich data (neighborhoods/zips/landmarks/localHook),
+            renders a unique "Local Service Area" section. For cities without
+            rich data, renders nothing (template falls back to generic). */}
+        {enrichment && (enrichment.neighborhoods?.length || enrichment.zips?.length || enrichment.landmarks?.length || enrichment.localHook) ? (
+        <section className="py-16 bg-zinc-950 border-y border-zinc-800/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
+                Local Service Area
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                {enrichment.city} Service Area Details
+              </h2>
+              {enrichment.localHook && (
+                <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+                  {enrichment.localHook}
+                </p>
+              )}
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                {enrichment.neighborhoods && enrichment.neighborhoods.length > 0 && (
+                  <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                    <h3 className="text-lg font-bold mb-3 text-white">Neighborhoods We Serve</h3>
+                    <p className="text-zinc-300">
+                      {enrichment.neighborhoods.join(', ')}
+                    </p>
+                  </div>
+                )}
+                {enrichment.zips && enrichment.zips.length > 0 && (
+                  <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                    <h3 className="text-lg font-bold mb-3 text-white">ZIP Codes Served</h3>
+                    <p className="text-zinc-300">
+                      {enrichment.zips.join(' · ')}
+                    </p>
+                  </div>
+                )}
+                {enrichment.landmarks && enrichment.landmarks.length > 0 && (
+                  <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 md:col-span-2">
+                    <h3 className="text-lg font-bold mb-3 text-white">Local Landmarks Near Our Service Area</h3>
+                    <p className="text-zinc-300">
+                      {enrichment.landmarks.join(' · ')}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+        ) : null}
 
         <section className="py-20 bg-zinc-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
