@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import CityProjectGallery from '../../components/CityProjectGallery';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Star, Home, Wind, Users, Hammer, Building2, Layers } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
@@ -152,6 +153,9 @@ export default function MiramarMoneyPage() {
           </div>
         </section>
 
+
+        {/* PR-87: city project photos */}
+        <CityProjectGallery slug="miramar" />
         {/* Why Choose All Phase */}
         <section className="py-20 bg-[#27272a]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

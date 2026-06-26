@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import CityProjectGallery from '../../components/CityProjectGallery';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, FileCheck, Wrench, Camera, Building2, Hammer, BookOpen } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
@@ -125,6 +126,9 @@ export default function SouthwestRanchesMoneyPage() {
           </div>
         </section>
 
+
+        {/* PR-87: city project photos */}
+        <CityProjectGallery slug="southwest-ranches" />
         <MoneyPageStatBar />
 
         {/* The Dual-License Advantage */}
