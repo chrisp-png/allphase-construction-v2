@@ -698,7 +698,7 @@ export default function RoofReplacementPage() {
                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                         <div>
                           <div className="font-semibold text-gray-900">4.8/5 Average Rating</div>
-                          <div className="text-gray-600">138+ verified customer reviews</div>
+                          <div className="text-gray-600">150+ verified customer reviews</div>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">

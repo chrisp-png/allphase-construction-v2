@@ -122,7 +122,7 @@ export default function BestRoofersHollywoodPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (138+ reviews) — Dual-licensed roofer + general contractor with 20 years in South Florida, specializing in coastal salt-air corrosion and HVHZ-compliant roofing. Serves Emerald Hills and Hollywood Hills extensively. <a href="https://allphaseconstructionfl.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Website</a> | <a href="tel:7542275605" className="text-red-500 hover:text-red-400 underline">(754) 227-5605</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (150+ reviews) — Dual-licensed roofer + general contractor with 20 years in South Florida, specializing in coastal salt-air corrosion and HVHZ-compliant roofing. Serves Emerald Hills and Hollywood Hills extensively. <a href="https://allphaseconstructionfl.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Website</a> | <a href="tel:7542275605" className="text-red-500 hover:text-red-400 underline">(754) 227-5605</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Rainbow Roofing Solutions</strong> ⭐ 35+ Years in Business — GAF Authorized Contractor with 24/7 emergency post-hurricane services, flat roof and commercial roof specialists. <a href="https://rainbowroofing.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">rainbowroofing.com</a>
@@ -267,7 +267,7 @@ export default function BestRoofersHollywoodPage() {
             <h2 className="text-3xl font-bold text-white mb-4">All Phase Construction USA — #1 in Hollywood</h2>
 
             <div className="mb-6">
-              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.8 out of 5 (138+ Google reviews)</p>
+              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.8 out of 5 (150+ Google reviews)</p>
 
               <blockquote className="border-l-4 border-zinc-700 pl-4 mb-4 italic text-zinc-300">
                 "We hired All Phase for our Emerald Hills home and they were fantastic. They understood the challenges of our canal-front property — salt corrosion, the complex roof line over the water access. Their team was professional, the materials held up perfectly through hurricane season, and their wind mitigation report knocked $1,200 off our annual insurance. Couldn't ask for better."<br/>

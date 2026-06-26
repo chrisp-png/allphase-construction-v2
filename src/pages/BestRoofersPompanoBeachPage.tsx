@@ -122,7 +122,7 @@ export default function BestRoofersPompanoBeachPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (138+ reviews) — Dual-licensed roofer + general contractor specializing in coastal corrosion, marine-grade fasteners, and HVHZ compliance. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (150+ reviews) — Dual-licensed roofer + general contractor specializing in coastal corrosion, marine-grade fasteners, and HVHZ compliance. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Distinctive Roofing</strong> ⭐ 4.9 (90+ reviews) — Family-owned, GAF Certified, services tile, metal, shingle, and flat roofing. Phone: (954) 846-7663. <a href="https://www.distinctiveroofing.net" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Website</a>
@@ -399,7 +399,7 @@ export default function BestRoofersPompanoBeachPage() {
             <h2 className="text-3xl font-bold text-white mb-4">All Phase Construction USA — Pompano Beach Roofing Experts</h2>
 
             <div className="mb-6">
-              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.8 out of 5 (138+ Google reviews)</p>
+              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.8 out of 5 (150+ Google reviews)</p>
 
               <blockquote className="border-l-4 border-zinc-700 pl-4 mb-4 italic text-zinc-300">
                 "After a dozen years in Harbor Village, our tile roof was failing. All Phase diagnosed salt-air corrosion in the fasteners — something standard roofers missed. They used marine-grade stainless fasteners and reinforced the deck. Three years in and no leaks. Their wind mitigation report saved us $2,400 annually on insurance."<br/>

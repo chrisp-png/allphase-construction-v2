@@ -148,7 +148,7 @@ export default function BestRoofersWellingtonPage() {
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>
                     <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
-                    <p className="text-yellow-400 font-semibold mt-1">⭐ 4.8 (138+ reviews)</p>
+                    <p className="text-yellow-400 font-semibold mt-1">⭐ 4.8 (150+ reviews)</p>
                     <p className="text-zinc-400 mt-2">Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium.</p>
                   </div>
                   <div className="flex gap-3">
@@ -432,7 +432,7 @@ export default function BestRoofersWellingtonPage() {
                 <Award className="w-6 h-6 text-red-500" />
                 <h2 className="text-3xl font-bold text-white">All Phase Construction USA — Wellington, FL</h2>
               </div>
-              <p className="text-yellow-400 font-semibold text-lg mb-6">⭐ 4.8 out of 5 (138+ Google reviews)</p>
+              <p className="text-yellow-400 font-semibold text-lg mb-6">⭐ 4.8 out of 5 (150+ Google reviews)</p>
 
               {/* Reviews */}
               <div className="space-y-4 mb-8">

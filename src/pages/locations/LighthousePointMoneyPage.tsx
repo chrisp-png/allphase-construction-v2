@@ -48,7 +48,7 @@ export default function LighthousePointMoneyPage() {
     longitude: coordinates?.longitude,
     aggregateRating: {
       ratingValue: '4.8',
-      reviewCount: '138'
+      reviewCount: '150'
     }
   });
 

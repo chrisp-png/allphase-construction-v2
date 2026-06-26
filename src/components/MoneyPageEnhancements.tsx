@@ -134,7 +134,7 @@ export default function MoneyPageEnhancements({
           <span className="text-yellow-500 tracking-tight">★★★★★</span>
           <span>4.8 on Google</span>
           <span className="text-gray-400">·</span>
-          <span>138 reviews</span>
+          <span>150+ reviews</span>
         </div>
         <form
           action="https://formspree.io/f/mojakkld"
