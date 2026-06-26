@@ -1,31 +1,38 @@
 /**
- * CityProjectGallery (PR-73)
+ * CityProjectGallery (PR-73, smart-heading update PR-91)
  *
  * Renders 1-2 REAL project photos for a given city, pulled from the
  * manifest in src/data/cityProjectPhotos.ts. Each photo is a real
- * completed project from public/projects/, filename-tagged with the
- * city slug.
+ * job from public/projects/, filename-tagged with the city slug.
  *
- * Why this exists:
- *   - Authentic, city-specific project photos are a stronger trust
- *     signal on home services sites than stock or AI imagery.
- *   - Improves perceived locality of each city page (visitors see
- *     "they actually do work in MY city").
- *   - Same photos cross-feed GBP, Yelp, and the site, reinforcing
- *     consistent local presence signals.
+ * AUTO-DETECTED HEADING (PR-91):
+ * The component examines the photo filenames and renders a heading +
+ * description that matches the actual content:
  *
- * Usage:
- *   <CityProjectGallery slug="boca-raton" />
+ *   - All filenames contain 'inspection' or 'broken' → "Recent
+ *     {City} Roof Inspections" / "Real inspection photos from
+ *     {City} homes our dual-licensed crew has evaluated."
  *
- * Falls through silently if the slug has no manifest entry, so it's
- * safe to drop in everywhere — gap cities just render nothing.
+ *   - All filenames contain 'completed' / 'replacement' / 'install'
+ *     and NOT 'inspection' → "Recent {City} Roofing Projects" /
+ *     original copy about HVHZ-spec installs.
+ *
+ *   - Mixed or ambiguous → "Recent {City} Roofing Work" / neutral
+ *     copy that covers both completed and in-progress jobs.
+ *
+ *  Caller can still override via the `heading` and `description`
+ *  props if a specific page needs custom copy.
+ *
+ * Falls through silently if the slug has no manifest entry.
  */
 import { CITY_PROJECT_PHOTOS } from '../data/cityProjectPhotos';
 
 interface Props {
   slug: string;
-  /** Section heading. Defaults to `Recent ${city} Projects`. */
+  /** Section heading. Defaults to auto-detected per content. */
   heading?: string;
+  /** Section subhead/description. Defaults to auto-detected per content. */
+  description?: string;
 }
 
 function citySlugToName(slug: string): string {
@@ -35,12 +42,68 @@ function citySlugToName(slug: string): string {
     .join(' ');
 }
 
-export default function CityProjectGallery({ slug, heading }: Props) {
+type PhotoKind = 'inspection' | 'completed' | 'mixed';
+
+function detectKind(filenames: string[]): PhotoKind {
+  const lowered = filenames.map((f) => f.toLowerCase());
+
+  const isInspection = (f: string) =>
+    f.includes('inspection') ||
+    f.includes('broken') ||
+    f.includes('repair') ||
+    f.includes('damage') ||
+    f.includes('leak') ||
+    f.includes('found') ||
+    f.includes('bad-decking');
+
+  const isCompleted = (f: string) =>
+    f.includes('completed') ||
+    f.includes('replacement') ||
+    f.includes('replaced') ||
+    f.includes('new-roof') ||
+    f.includes('finished') ||
+    f.includes('in-progress') ||
+    f.includes('installation') ||
+    f.includes('installed') ||
+    f.includes('installing') ||
+    f.includes('install') ||
+    f.includes('crew') ||
+    f.includes('roof-trim') ||
+    f.includes('underlayment') ||
+    f.includes('hip-and-ridge') ||
+    f.includes('barrier');
+
+  const allInspection = lowered.every(isInspection);
+  const allCompleted = lowered.every(isCompleted);
+
+  if (allInspection && !allCompleted) return 'inspection';
+  if (allCompleted && !allInspection) return 'completed';
+  return 'mixed';
+}
+
+export default function CityProjectGallery({ slug, heading, description }: Props) {
   const photos = CITY_PROJECT_PHOTOS[slug];
   if (!photos || photos.length === 0) return null;
 
   const cityName = citySlugToName(slug);
-  const resolvedHeading = heading ?? `Recent ${cityName} Roofing Projects`;
+  const kind = detectKind(photos.map((p) => p.file));
+
+  const defaultHeading =
+    kind === 'inspection'
+      ? `Recent ${cityName} Roof Inspections`
+      : kind === 'completed'
+      ? `Recent ${cityName} Roofing Projects`
+      : `Recent ${cityName} Roofing Work`;
+
+  const defaultDescription =
+    kind === 'inspection'
+      ? `Real inspection photos from ${cityName}, FL homes evaluated by our dual-licensed crew (CCC-1331464 / CGC-1526236) — typically the first step before a roof replacement or repair quote.`
+      : kind === 'completed'
+      ? `Real photos from completed projects in ${cityName}, FL — every roof installed to HVHZ / Florida Building Code spec by our dual-licensed crew (CCC-1331464 / CGC-1526236).`
+      : `Real in-progress and completed project photos from ${cityName}, FL — every roof installed to HVHZ / Florida Building Code spec by our dual-licensed crew (CCC-1331464 / CGC-1526236).`;
+
+  const resolvedHeading = heading ?? defaultHeading;
+  const resolvedDescription = description ?? defaultDescription;
 
   return (
     <section className="py-12 bg-zinc-950 border-y border-zinc-800">
@@ -48,11 +111,7 @@ export default function CityProjectGallery({ slug, heading }: Props) {
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
           {resolvedHeading}
         </h2>
-        <p className="text-zinc-400 text-sm mb-8">
-          Real photos from completed projects in {cityName}, FL — every roof
-          installed to HVHZ / Florida Building Code spec by our dual-licensed
-          crew (CCC-1331464 / CGC-1526236).
-        </p>
+        <p className="text-zinc-400 text-sm mb-8">{resolvedDescription}</p>
         <div
           className={`grid gap-6 ${
             photos.length === 1
