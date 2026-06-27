@@ -64,6 +64,13 @@ const teamMembers: TeamMember[] = [
     photoPlaceholder: 'JG',
   },
   {
+    name: 'Enio Coral',
+    title: 'Project Manager',
+    since: '2026',
+    bio: 'Enio joined All Phase Construction USA in 2026 after relocating from the Boston, Massachusetts area, where he worked for a highly respected roofing contractor in the same professional networking organization as owner Chris Porosky. As Project Manager, Enio is one of our customers\' primary points of contact throughout the construction process — coordinating scheduling, communicating project updates, working closely with installation crews, overseeing inspections, and ensuring each roofing project progresses smoothly from start to finish. Enio\'s attention to detail, organization, and proactive communication help give homeowners a stress-free experience while ensuring every install meets All Phase\'s high quality standards.',
+    photoPlaceholder: 'EC',
+  },
+  {
     name: 'Matt Denofrio',
     title: 'Production Manager',
     bio: 'Originally from the Chicago area, Matt has called South Florida home for over 20 years. His extensive background in the hospitality industry — from dishwasher to management — instilled a customer-service-first mentality that he brings to every roofing project. With a "play hard, work harder" approach, Matt oversees production operations and ensures every job meets All Phase\'s standards for quality and timeliness.',
@@ -76,10 +83,23 @@ const teamMembers: TeamMember[] = [
     photoPlaceholder: 'CM',
   },
   {
+    name: 'Charlie Israel',
+    title: 'Field Operations Coordinator',
+    since: '2016',
+    bio: 'Charlie has been a key member of the All Phase Construction USA team for nearly 10 years. As Field Operations Coordinator, he\'s the bridge between our office, production team, and installation crews — making sure every crew arrives on time, every job site is properly prepared, and every material delivery is accurate and complete. Throughout each project, Charlie monitors production, coordinates additional materials to keep work moving, and oversees daily job documentation by ensuring crews upload progress photos to our CRM so both our office and homeowners can follow the job in real time. He performs a final site inspection on every project to verify cleanup and quality before sign-off, and when inspectors are involved, he coordinates ladder access and meets them on site to keep projects on schedule.',
+    photoPlaceholder: 'CI',
+  },
+  {
     name: 'Clarissa Albelli',
     title: 'Customer Engagement Specialist',
     bio: 'Clarissa is most likely the first voice you\'ll hear when you call All Phase. She guides customers through the first steps of their roofing journey — ensuring every interaction is helpful, friendly, and efficient. Originally from the Pocono Mountains, Clarissa brings a personal goal to every workday: make at least one person smile. Her belief that kindness is free, powerful, and can turn someone\'s whole day around is exactly the kind of energy that defines the All Phase experience.',
     photoPlaceholder: 'CA',
+  },
+  {
+    name: 'Chloe',
+    title: 'Chief Happiness Officer',
+    bio: 'At 16½ years young, Chloe is the unofficial Chief Happiness Officer at All Phase Construction USA — and a familiar face around the Deerfield Beach office every day. Whether she\'s greeting customers, welcoming vendors, or keeping the team company through a busy workday, Chloe has a special way of making everyone feel at home. Known for her sweet personality, gentle spirit, and endless love for people, she\'s always ready to accept a belly rub, make a new friend, or simply brighten someone\'s day with her adorable face and wagging tail. Many customers stop by just to say hello — and she never disappoints. Don\'t be surprised if she\'s the first member of the team to greet you when you visit our Deerfield Beach office. She considers it part of her job.',
+    photoPlaceholder: 'CO',
   },
 ];
 
