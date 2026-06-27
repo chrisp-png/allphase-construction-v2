@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -63,6 +65,11 @@ export default function FlatRoofTpoVsPvcWestPalmBeachPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Side-by-side pricing, lifespan, and chemical resistance — and the three things that actually decide which membrane belongs on your West Palm Beach flat roof.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="Should I install TPO or PVC flat roof in West Palm Beach Florida?" />
+            </div>
+            <AtomicAnswer>TPO is the West Palm Beach default for residential and light commercial flat roofs ($9,000-$15,000). PVC is the upgrade tier for rooftops with chemical exposure or kitchen exhaust ($12,000-$22,000). Both heat-welded systems last 20-25 years in West Palm Beach. All Phase Construction USA installs both with Miami-Dade NOA documentation.</AtomicAnswer>
           </div>
         </div>
       </div>

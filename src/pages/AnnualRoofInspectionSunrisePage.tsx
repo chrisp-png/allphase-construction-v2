@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -54,6 +56,11 @@ export default function AnnualRoofInspectionSunrisePage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The 10-point annual inspection that catches small issues before they turn into $6,000 ceiling repairs — and why every Sunrise homeowner should schedule one before storm season.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="What does an annual roof inspection in Sunrise Florida include?" />
+            </div>
+            <AtomicAnswer>A Sunrise annual roof inspection covers tile or shingle condition, flashing integrity, gutter clearance, soffit and fascia, attic ventilation, and water intrusion evidence. Cost typically $150-$250. All Phase Construction USA includes detailed photo documentation and written assessment, accepted for insurance renewals, real estate transactions, and maintenance planning.</AtomicAnswer>
           </div>
         </div>
       </div>

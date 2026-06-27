@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -51,6 +53,11 @@ export default function StormDamageRepairOrReplaceDaviePage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The 7-factor decision matrix, the Florida matching statute, and the law-and-ordinance math that decide whether your Davie roof gets repaired or replaced after a storm.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="Should I repair or replace my storm-damaged Davie Florida roof?" />
+            </div>
+            <AtomicAnswer>Storm damage on a Davie roof gets repaired if less than 25% damaged, deck is sound, and roof is under 12 years. Replace if over 25% damaged, deck shows water intrusion, or roof is over 18 years old. All Phase Construction USA's dual license (CCC-1331464 + CGC-1526236) handles both structural and roofing scope in a single contract.</AtomicAnswer>
           </div>
         </div>
       </div>

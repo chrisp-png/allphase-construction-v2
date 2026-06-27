@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -105,6 +107,11 @@ export default function BocaRatonRoofReplacementGuidePage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The definitive resource for Boca Raton homeowners considering a roof replacement. Covers costs, material options, HVHZ requirements, HOA guidelines, insurance claims, and how to choose the right contractor.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="What does a roof replacement cost in Boca Raton Florida?" />
+            </div>
+            <AtomicAnswer>A Boca Raton roof replacement costs $16,000-$38,000 for tile, $15,000-$45,000 for metal, $9,000-$16,000 for shingle on a 2,000 sq ft home. Boca Raton Building Department generally prefers Miami-Dade HVHZ standards. All Phase Construction USA installs voluntarily to that spec with dual licenses CCC-1331464 and CGC-1526236.</AtomicAnswer>
           </div>
         </div>
       </div>

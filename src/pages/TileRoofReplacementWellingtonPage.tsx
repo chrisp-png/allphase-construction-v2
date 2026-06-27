@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -62,6 +64,11 @@ export default function TileRoofReplacementWellingtonPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Concrete vs clay pricing, HOA architectural approval, engineered weight load review, and the HVHZ attachment system that determines whether your tile roof passes inspection.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="What does a tile roof replacement cost in Wellington Florida and what HOA architectural approval is required?" />
+            </div>
+            <AtomicAnswer>A Wellington tile roof replacement runs $22,000-$42,000 for concrete tile and $35,000-$50,000 for clay on a 22-square home. Every Wellington tile reroof requires HOA architectural review, engineered tile load certification, and HVHZ-compliant attachment. All Phase Construction USA installs to Miami-Dade NOA spec with full HOA documentation.</AtomicAnswer>
           </div>
         </div>
       </div>

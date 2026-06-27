@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -48,6 +50,11 @@ export default function FourPointInspectionRoofLakeWorthBeachPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The Florida 4-point inspection that decides whether your Lake Worth Beach home gets renewed — and how the roof section is the make-or-break category for almost every older home in the city.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="What does a four-point inspection roof section cover in Lake Worth Beach Florida?" />
+            </div>
+            <AtomicAnswer>A Lake Worth Beach four-point inspection roof section evaluates remaining roof life, current condition, recent repairs, and material identification. Cost typically $150-$300. All Phase Construction USA issues four-point reports accepted by Citizens, Universal, and other Florida insurers for policy renewals on homes 25-plus years old.</AtomicAnswer>
           </div>
         </div>
       </div>
