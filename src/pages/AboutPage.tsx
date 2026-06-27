@@ -99,7 +99,7 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Clarissa Albelli',
     title: 'Customer Engagement Specialist',
-    bio: 'Clarissa is most likely the first voice you\'ll hear when you call All Phase. She guides customers through the first steps of their roofing journey — ensuring every interaction is helpful, friendly, and efficient. Originally from the Pocono Mountains, Clarissa brings a personal goal to every workday: make at least one person smile. Her belief that kindness is free, powerful, and can turn someone\'s whole day around is exactly the kind of energy that defines the All Phase experience.',
+    bio: 'As Customer Engagement Specialist, Clarissa is the team member who takes over once you\'re ready to start your roofing project — she guides customers through the first steps of their journey, making sure every interaction is helpful, friendly, and efficient. Originally from the Pocono Mountains, Clarissa brings a personal goal to every workday: make at least one person smile. Her belief that kindness is free, powerful, and can turn someone\'s whole day around is exactly the kind of energy that defines the All Phase experience.',
     photoPlaceholder: 'CA',
     photo: '/team/clarissa.webp',
   },
