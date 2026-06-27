@@ -13,6 +13,7 @@ interface TeamMember {
   bio: string;
   highlights?: string[];
   photoPlaceholder: string; // Initials for placeholder
+  photo?: string;           // Path under /public/team/ when real headshot exists
 }
 
 const teamMembers: TeamMember[] = [
@@ -30,6 +31,7 @@ const teamMembers: TeamMember[] = [
       'NRCA Member & PRAC Appointee (2019)',
     ],
     photoPlaceholder: 'CP',
+    photo: '/team/chris-porosky.jpg',
   },
   {
     name: 'Zoya Haydic',
@@ -37,12 +39,14 @@ const teamMembers: TeamMember[] = [
     since: '2016',
     bio: 'Zoya has been with All Phase Construction USA since 2016, evolving into a versatile team leader who wears many hats across the business. Born in Sofia, Bulgaria, she speaks Bulgarian and Croatian fluently and brings a diverse professional background spanning banking, real estate, insurance, and small business ownership. Her well-rounded experience gives her a deep understanding of what it takes to run a successful construction operation — from project coordination to customer communication.',
     photoPlaceholder: 'ZH',
+    photo: '/team/zoya.webp',
   },
   {
     name: 'Dillon Mavrich',
     title: 'Sales Manager',
     bio: 'Dillon brings over 10 years of hands-on roofing experience to his role as Sales Manager. Known for his strategic leadership and customer-first approach, he guides clients through every step of the roofing process with clarity and confidence. A dedicated family man and strong team leader, Dillon ensures every homeowner receives honest assessments and solutions tailored to their property\'s needs.',
     photoPlaceholder: 'DM',
+    photo: '/team/dillon.webp',
   },
   {
     name: 'Karl Walczak',
@@ -62,6 +66,7 @@ const teamMembers: TeamMember[] = [
     since: '2015',
     bio: 'Joy has been with All Phase Construction since 2015, coordinating projects from beginning to end — from ordering materials and scheduling deliveries to direct customer communication and crew scheduling. A Florida native with extensive knowledge of the Florida Building Code, Joy brings an unmatched level of detail and dedication to every project. Her commitment to customer service makes her an essential part of the All Phase team.',
     photoPlaceholder: 'JG',
+    photo: '/team/joy.webp',
   },
   {
     name: 'Enio Coral',
@@ -75,6 +80,7 @@ const teamMembers: TeamMember[] = [
     title: 'Production Manager',
     bio: 'Originally from the Chicago area, Matt has called South Florida home for over 20 years. His extensive background in the hospitality industry — from dishwasher to management — instilled a customer-service-first mentality that he brings to every roofing project. With a "play hard, work harder" approach, Matt oversees production operations and ensures every job meets All Phase\'s standards for quality and timeliness.',
     photoPlaceholder: 'MD',
+    photo: '/team/matt.webp',
   },
   {
     name: 'Carlos Murcia',
@@ -83,17 +89,19 @@ const teamMembers: TeamMember[] = [
     photoPlaceholder: 'CM',
   },
   {
-    name: 'Charlie Israel',
+    name: 'Charley Israel',
     title: 'Field Operations Coordinator',
     since: '2016',
-    bio: 'Charlie has been a key member of the All Phase Construction USA team for nearly 10 years. As Field Operations Coordinator, he\'s the bridge between our office, production team, and installation crews — making sure every crew arrives on time, every job site is properly prepared, and every material delivery is accurate and complete. Throughout each project, Charlie monitors production, coordinates additional materials to keep work moving, and oversees daily job documentation by ensuring crews upload progress photos to our CRM so both our office and homeowners can follow the job in real time. He performs a final site inspection on every project to verify cleanup and quality before sign-off, and when inspectors are involved, he coordinates ladder access and meets them on site to keep projects on schedule.',
+    bio: 'Charley has been a key member of the All Phase Construction USA team for nearly 10 years. As Field Operations Coordinator, he\'s the bridge between our office, production team, and installation crews — making sure every crew arrives on time, every job site is properly prepared, and every material delivery is accurate and complete. Throughout each project, Charley monitors production, coordinates additional materials to keep work moving, and oversees daily job documentation by ensuring crews upload progress photos to our CRM so both our office and homeowners can follow the job in real time. He performs a final site inspection on every project to verify cleanup and quality before sign-off, and when inspectors are involved, he coordinates ladder access and meets them on site to keep projects on schedule.',
     photoPlaceholder: 'CI',
+    photo: '/team/charley.webp',
   },
   {
     name: 'Clarissa Albelli',
     title: 'Customer Engagement Specialist',
     bio: 'Clarissa is most likely the first voice you\'ll hear when you call All Phase. She guides customers through the first steps of their roofing journey — ensuring every interaction is helpful, friendly, and efficient. Originally from the Pocono Mountains, Clarissa brings a personal goal to every workday: make at least one person smile. Her belief that kindness is free, powerful, and can turn someone\'s whole day around is exactly the kind of energy that defines the All Phase experience.',
     photoPlaceholder: 'CA',
+    photo: '/team/clarissa.webp',
   },
   {
     name: 'Felice Maruffo',
@@ -106,6 +114,7 @@ const teamMembers: TeamMember[] = [
     title: 'Chief Happiness Officer',
     bio: 'At 16½ years young, Chloe is the unofficial Chief Happiness Officer at All Phase Construction USA — and a familiar face around the Deerfield Beach office every day. Whether she\'s greeting customers, welcoming vendors, or keeping the team company through a busy workday, Chloe has a special way of making everyone feel at home. Known for her sweet personality, gentle spirit, and endless love for people, she\'s always ready to accept a belly rub, make a new friend, or simply brighten someone\'s day with her adorable face and wagging tail. Many customers stop by just to say hello — and she never disappoints. Don\'t be surprised if she\'s the first member of the team to greet you when you visit our Deerfield Beach office. She considers it part of her job.',
     photoPlaceholder: 'CO',
+    photo: '/team/chloe.webp',
   },
 ];
 
@@ -339,12 +348,26 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-3 gap-8 items-start">
               {/* Photo Placeholder */}
               <div className="lg:col-span-1">
-                <div className="aspect-[3/4] max-w-[320px] mx-auto bg-zinc-800 border-2 border-red-600/30 rounded-xl flex flex-col items-center justify-center text-center p-6">
-                  <div className="w-24 h-24 bg-red-600/20 border border-red-600/40 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-red-500 text-3xl font-bold">{teamMembers[0].photoPlaceholder}</span>
+                {teamMembers[0].photo ? (
+                  <div className="aspect-[3/4] max-w-[320px] mx-auto rounded-xl overflow-hidden border-2 border-red-600/30 shadow-2xl">
+                    <img
+                      src={teamMembers[0].photo}
+                      alt={teamMembers[0].name}
+                      width="320"
+                      height="427"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <p className="text-zinc-500 text-sm italic">Headshot coming soon</p>
-                </div>
+                ) : (
+                  <div className="aspect-[3/4] max-w-[320px] mx-auto bg-zinc-800 border-2 border-red-600/30 rounded-xl flex flex-col items-center justify-center text-center p-6">
+                    <div className="w-24 h-24 bg-red-600/20 border border-red-600/40 rounded-full flex items-center justify-center mb-4">
+                      <span className="text-red-500 text-3xl font-bold">{teamMembers[0].photoPlaceholder}</span>
+                    </div>
+                    <p className="text-zinc-500 text-sm italic">Photo coming soon</p>
+                  </div>
+                )}
               </div>
 
               {/* Bio Content */}
@@ -385,9 +408,16 @@ export default function AboutPage() {
                 <div className="flex gap-5">
                   {/* Photo Placeholder */}
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 bg-zinc-800 border border-zinc-700 rounded-xl flex items-center justify-center">
-                      <span className="text-zinc-500 text-lg font-bold">{member.photoPlaceholder}</span>
-                    </div>
+                    {member.photo ? (
+                      <div className="w-20 h-20 rounded-xl overflow-hidden border border-zinc-700">
+                        <img src={member.photo} alt={member.name} width="80" height="80" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                      </div>
+                    ) : (
+                      <div className="w-20 h-20 bg-zinc-800 border border-zinc-700 rounded-xl flex flex-col items-center justify-center">
+                        <span className="text-zinc-500 text-lg font-bold">{member.photoPlaceholder}</span>
+                        <span className="text-zinc-600 text-[9px] italic mt-0.5">Photo coming</span>
+                      </div>
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
@@ -410,9 +440,16 @@ export default function AboutPage() {
               <div key={member.name} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-red-600/30 transition-all duration-300">
                 {/* Photo Placeholder */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-zinc-800 border border-zinc-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <span className="text-zinc-500 text-base font-bold">{member.photoPlaceholder}</span>
-                  </div>
+                  {member.photo ? (
+                    <div className="w-16 h-16 rounded-xl overflow-hidden border border-zinc-700 flex-shrink-0">
+                      <img src={member.photo} alt={member.name} width="64" height="64" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                    </div>
+                  ) : (
+                    <div className="w-16 h-16 bg-zinc-800 border border-zinc-700 rounded-xl flex flex-col items-center justify-center flex-shrink-0">
+                      <span className="text-zinc-500 text-base font-bold">{member.photoPlaceholder}</span>
+                      <span className="text-zinc-600 text-[8px] italic">Photo coming</span>
+                    </div>
+                  )}
                   <div>
                     <h3 className="text-lg font-bold text-white">{member.name}</h3>
                     <div className="flex items-center gap-2">
