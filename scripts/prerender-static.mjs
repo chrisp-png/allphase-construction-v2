@@ -1544,7 +1544,7 @@ function generateChrisPoroskyAuthorContent() {
   </div>
 
   <h2>About Chris</h2>
-  <p>Chris Porosky is the owner and lead estimator of <a href="/about-us" style="color: #dc2626; text-decoration: underline;">All Phase Construction USA</a>, a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida. He runs the company directly: he meets every customer, walks every roof before a proposal goes out, and signs off on every final inspection. The same person who quotes the job is the person homeowners call if anything ever needs attention later.</p>
+  <p>Chris Porosky is the owner and lead estimator of <a href="/about-us" style="color: #dc2626; text-decoration: underline;">All Phase Construction USA</a>, a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida. Chris runs the company directly and stays involved on every project — monitoring real-time job site photos through CompanyCam, coordinating daily with the sales and production teams, and personally reviewing the high-value, high-complexity, and unusual jobs himself. The team you talk to during sales and production is one Chris built, leads, and is in constant contact with.</p>
 
   <p>Chris holds two active Florida state licenses — Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) — and has extensive working knowledge of the Florida Building Code and Florida energy codes. He is an industry-appointed member of the <strong>Professional Roofers Advisory Council (PRAC)</strong> and a member of the <strong>National Roofing Contractors Association (NRCA)</strong>, the <strong>Roofing Insights</strong> network, and the <strong>Roofing Process</strong> group.</p>
 
@@ -1949,7 +1949,7 @@ function generateAboutHubContent() {
   <p><strong>All Phase Construction USA is a dual-licensed roofing contractor headquartered in Deerfield Beach, Florida.</strong> We serve homeowners, condominium associations, and commercial property owners across Broward County and Palm Beach County, working out of a single shop at 590 Goolsby Blvd so every project is run by the same team that owns the company.</p>
 
   <h2>Owner-Operator, Not a Franchise</h2>
-  <p>All Phase Construction USA is owner-led. Chris Porosky meets every customer, walks every roof before a proposal goes out, and signs off on every final inspection. That removes the layer of subcontracted sales reps and rotating crews that has defined a lot of South Florida roofing in the last decade. The same person who quoted your roof is the person you call if anything ever needs attention later.</p>
+  <p>All Phase Construction USA is owner-led. Chris Porosky stays involved on every project — monitoring real-time job site photos through CompanyCam, coordinating daily with the sales and production teams, and stepping onto the higher-complexity jobs himself. The sales reps you talk to are a small, stable team Chris built and leads — no subcontracted sales agents, no rotating crews. The owner is reachable, and the team you start with is the team that finishes.</p>
 
   <h2>Dual-Licensed: CCC-1331464 + CGC-1526236</h2>
   <p>Most roofing companies hold only a Florida Certified Roofing Contractor (CCC) license — the legal minimum to pull a roof permit in Florida. We hold both the certified roofing license and a Florida Certified General Contractor (CGC) license. The CGC scope covers structural and tie-in work — trusses, decking, hurricane straps, full envelope detail — under one contract.</p>
