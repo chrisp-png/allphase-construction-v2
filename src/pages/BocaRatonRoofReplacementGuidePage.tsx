@@ -83,8 +83,8 @@ export default function BocaRatonRoofReplacementGuidePage() {
   return (
     <>
       <SEO
-            title="Boca Raton Roof Replacement Guide (2026) | Costs, Contractors, HVHZ & HOA Info"
-            description="Complete guide to roof replacement in Boca Raton, FL. Costs by material, HVHZ requirements, HOA guidelines, best contractors, insurance claims help, and permit process explained."
+            title="Boca Raton Roof Replacement Guide 2026 — Cost + HVHZ"
+            description="Boca Raton roof replacement guide 2026: tile $16K-$38K, metal $15K-$45K, HVHZ code, HOA approval, permit timeline. Free quote (754) 227-5605."
             canonicalPath="/boca-raton-roof-replacement-guide"
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />

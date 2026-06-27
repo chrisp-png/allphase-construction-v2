@@ -40,8 +40,8 @@ export default function MetalRoofingCostFortLauderdalePage() {
   return (
     <>
       <SEO
-        title="Metal Roofing Cost in Fort Lauderdale (2026) | All Phase Construction USA"
-        description="Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options"
+        title="Fort Lauderdale Metal Roof Cost 2026: $15K-$45K Range"
+        description="Real 2026 metal roof prices in Fort Lauderdale: standing seam, 5V crimp, ribbed. HVHZ code, coastal aluminum upgrades. Free quote (754) 227-5605."
         canonicalPath="/metal-roofing-cost-fort-lauderdale"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

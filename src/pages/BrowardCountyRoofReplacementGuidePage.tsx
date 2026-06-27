@@ -89,8 +89,8 @@ export default function BrowardCountyRoofReplacementGuidePage() {
   return (
     <>
       <SEO
-            title="Broward County Roof Replacement Guide (2026) | Costs, Permits, HVHZ Requirements"
-            description="Complete guide to roof replacement in Broward County, FL. HVHZ requirements, costs by material, the 25% rule, permit process, insurance claims, and how to choose a licensed contractor."
+            title="Broward County Roof Replacement Guide 2026 — Cost + HVHZ"
+            description="Broward roof replacement guide 2026: HVHZ code, costs by material, the 25% rule, permit process. Dual-licensed contractor. Free quote (754) 227-5605."
             canonicalPath="/broward-county-roof-replacement-guide"
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />

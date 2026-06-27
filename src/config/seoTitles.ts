@@ -322,8 +322,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/south-florida-roofing-reviews'
   },
   '/broward-county-roof-replacement-guide': {
-    title: 'Broward County Roof Replacement Guide (2026)',
-    description: 'Complete Broward County roof replacement guide for 2026. HVHZ requirements, 25% rule, costs by material, insurance claims help. Call (754) 227-5605.',
+    title: 'Broward County Roof Replacement Guide 2026 — Cost + HVHZ',
+    description: "Broward roof replacement guide 2026: HVHZ code, costs by material, the 25% rule, permit process. Dual-licensed contractor. Free quote (754) 227-5605.",
     canonical: 'https://allphaseconstructionfl.com/broward-county-roof-replacement-guide'
   },
   '/roof-replacement-cost-florida': {
@@ -337,8 +337,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/florida-roof-insurance-claims-guide'
   },
   '/boca-raton-roof-replacement-guide': {
-    title: 'Boca Raton Roof Replacement Guide (2026) | Costs',
-    description: 'Everything you need to know about roof replacement in Boca Raton. HVHZ requirements, HOA guidelines, costs by material, and top contractor recommendations.',
+    title: 'Boca Raton Roof Replacement Guide 2026 — Cost + HVHZ',
+    description: "Boca Raton roof replacement guide 2026: tile $16K-$38K, metal $15K-$45K, HVHZ code, HOA approval, permit timeline. Free quote (754) 227-5605.",
     canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-replacement-guide'
   },
   '/palm-beach-county-roof-replacement-guide': {
@@ -367,13 +367,13 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-inspection'
   },
   '/delray-beach-roof-overlay-vs-tear-off': {
-    title: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code)",
-    description: "A Delray Beach contractor pitched a roof-over to save money? Florida HVHZ code makes that almost impossible.",
+    title: 'Why You Can\'t Overlay a Roof in Delray Beach (HVHZ)',
+    description: "Pitched a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible. Here's why, with the exact code section explained.",
     canonical: 'https://allphaseconstructionfl.com/delray-beach-roof-overlay-vs-tear-off'
   },
   '/metal-roofing-cost-fort-lauderdale': {
-    title: 'Metal Roofing Cost in Fort Lauderdale (2026)',
-    description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options',
+    title: 'Fort Lauderdale Metal Roof Cost 2026: $15K-$45K Range',
+    description: "Real 2026 metal roof prices in Fort Lauderdale: standing seam, 5V crimp, ribbed. HVHZ code, coastal aluminum upgrades. Free quote (754) 227-5605.",
     canonical: 'https://allphaseconstructionfl.com/metal-roofing-cost-fort-lauderdale'
   },
   '/tile-roof-replacement-wellington': {
@@ -417,8 +417,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/tree-damage-roof-repair-parkland'
   },
   '/storm-damage-repair-or-replace-davie': {
-    title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision',
-    description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that',
+    title: 'Storm Damage Davie: Repair or Replace? 2026 Decision Matrix',
+    description: "Repair or replace a storm-damaged Davie roof? 7-factor decision matrix covering roof age, deck condition, and HVHZ code requirements.",
     canonical: 'https://allphaseconstructionfl.com/storm-damage-repair-or-replace-davie'
   },
   '/annual-roof-inspection-sunrise': {

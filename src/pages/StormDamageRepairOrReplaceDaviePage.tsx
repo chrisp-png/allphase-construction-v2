@@ -29,8 +29,8 @@ export default function StormDamageRepairOrReplaceDaviePage() {
   return (
     <>
       <SEO
-        title="Storm Damage: Repair or Replace in Davie? (2026 Decision"
-        description="Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that"
+        title="Storm Damage Davie: Repair or Replace? 2026 Decision Matrix"
+        description="Repair or replace a storm-damaged Davie roof? 7-factor decision matrix covering roof age, deck condition, and HVHZ code requirements."
         canonicalPath="/storm-damage-repair-or-replace-davie"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

@@ -50,8 +50,8 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
   return (
     <>
       <SEO
-        title="Why You Can't Overlay a Roof in Delray Beach (HVHZ Code"
-        description="A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that"
+        title="Why You Can't Overlay a Roof in Delray Beach (HVHZ)"
+        description="Pitched a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible. Here's why, with the exact code section explained."
         canonicalPath="/delray-beach-roof-overlay-vs-tear-off"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />
