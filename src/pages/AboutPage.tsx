@@ -96,6 +96,12 @@ const teamMembers: TeamMember[] = [
     photoPlaceholder: 'CA',
   },
   {
+    name: 'Felice Maruffo',
+    title: 'Receptionist & Office Administrator',
+    bio: 'Felice is the friendly voice answering the phone when you call All Phase Construction USA during business hours. As Receptionist and Office Administrator, she plays a vital role in keeping the office running smoothly — assisting with day-to-day administrative responsibilities and supporting customers, office staff, sales team, and production department. From scheduling appointments and directing calls to helping with office operations and customer communications, Felice ensures every customer receives prompt, professional, and courteous service from their very first interaction with the company. Known for her positive attitude, attention to detail, and willingness to help, she\'s committed to creating a welcoming experience for every homeowner, vendor, and business partner who contacts or visits All Phase Construction USA.',
+    photoPlaceholder: 'FM',
+  },
+  {
     name: 'Chloe',
     title: 'Chief Happiness Officer',
     bio: 'At 16½ years young, Chloe is the unofficial Chief Happiness Officer at All Phase Construction USA — and a familiar face around the Deerfield Beach office every day. Whether she\'s greeting customers, welcoming vendors, or keeping the team company through a busy workday, Chloe has a special way of making everyone feel at home. Known for her sweet personality, gentle spirit, and endless love for people, she\'s always ready to accept a belly rub, make a new friend, or simply brighten someone\'s day with her adorable face and wagging tail. Many customers stop by just to say hello — and she never disappoints. Don\'t be surprised if she\'s the first member of the team to greet you when you visit our Deerfield Beach office. She considers it part of her job.',
