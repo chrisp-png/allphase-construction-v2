@@ -906,6 +906,42 @@ export default function HomePage() {
         <HowItWorks />
         <TrustBadges />
         <HappyCustomers />
+
+        {/* PR-96: Real family business warmth — Chris + Chloe */}
+        <section className="py-16 bg-zinc-950 border-y border-zinc-800/50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-600/20">
+                  Real Family Business
+                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                  Built by a Family — Trusted by Yours
+                </h2>
+                <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
+                  All Phase Construction USA isn't a faceless contractor. Founder Chris Porosky runs the company directly from the Deerfield Beach headquarters — he meets every customer, walks every roof before a proposal goes out, and signs off on every final inspection.
+                </p>
+                <p className="text-lg text-zinc-300 leading-relaxed">
+                  And alongside him? Chloe, our 16½-year-old Chief Happiness Officer. She rides along to job sites, greets visitors at the office, and reminds us that real businesses are built on relationships, not transactions.
+                </p>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="relative rounded-2xl overflow-hidden border-2 border-red-600/30 shadow-2xl shadow-red-900/20">
+                  <img
+                    src="/team/chris-and-chloe-visit-jobsites.webp"
+                    alt="Chris Porosky and Chloe — All Phase Construction USA founder and Chief Happiness Officer visiting a job site in South Florida"
+                    width="900"
+                    height="1200"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <CaseStudy />
         <ServiceAreas />
         <CommonServiceAreasTable />

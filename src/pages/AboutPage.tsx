@@ -115,7 +115,7 @@ const teamMembers: TeamMember[] = [
     title: 'Chief Happiness Officer',
     bio: 'At 16½ years young, Chloe is the unofficial Chief Happiness Officer at All Phase Construction USA — and a familiar face around the Deerfield Beach office every day. Whether she\'s greeting customers, welcoming vendors, or keeping the team company through a busy workday, Chloe has a special way of making everyone feel at home. Known for her sweet personality, gentle spirit, and endless love for people, she\'s always ready to accept a belly rub, make a new friend, or simply brighten someone\'s day with her adorable face and wagging tail. Many customers stop by just to say hello — and she never disappoints. Don\'t be surprised if she\'s the first member of the team to greet you when you visit our Deerfield Beach office. She considers it part of her job.',
     photoPlaceholder: 'CO',
-    photo: '/team/chloe.webp',
+    photo: '/team/chris-and-chloe-visit-jobsites.webp',
   },
 ];
 

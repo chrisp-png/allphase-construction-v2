@@ -1550,6 +1550,15 @@ function generateChrisPoroskyAuthorContent() {
 
   <p>He has served as an <strong>expert witness for roof assessments and fenestration matters</strong>, providing forensic analysis on roofing system performance and fenestration installations.</p>
 
+  <h2>A personal note</h2>
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap;">
+    <img src="/team/chris-and-chloe-visit-jobsites.webp" alt="Chris Porosky and Chloe, his 16-year-old dog and All Phase Construction USA Chief Happiness Officer" width="240" height="320" style="border-radius: 0.75rem; object-fit: cover; flex-shrink: 0; border: 3px solid #dc2626;" loading="lazy" />
+    <div style="flex: 1; min-width: 280px;">
+      <p>That's me with Chloe, my 16½-year-old Pomeranian and the unofficial Chief Happiness Officer at All Phase Construction USA. Chloe rides along to job sites, greets customers at the office, and is genuinely the reason a lot of people stop in to say hello. She's a daily reminder that this is a real family business, run by real people who care.</p>
+      <p>That's the same philosophy we bring to every roof: be the kind of contractor whose owner you actually want to know. Whatever you need — a roof inspection, a quote, or just an honest answer about whether your roof is really at end-of-life — call me directly at <a href="tel:7542275605" style="color: #dc2626;">(754) 227-5605</a>.</p>
+    </div>
+  </div>
+
   <h2>State licenses</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>CCC-1331464</strong> — Florida State Certified Roofing Contractor</li>
