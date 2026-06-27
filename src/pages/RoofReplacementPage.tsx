@@ -867,6 +867,29 @@ export default function RoofReplacementPage() {
           </div>
         </section>
 
+
+        {/* City-Specific Replacement Guides */}
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">City-Specific Roof Replacement Guides</h2>
+            <p className="text-lg text-gray-600 mb-10 max-w-3xl">Permit timelines, building department preferences, and code requirements vary by city. These guides cover the specifics in our top replacement markets.</p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link to="/boca-raton-roof-replacement-timeline" className="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition-all group">
+                <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors text-lg mb-2">Boca Raton Roof Replacement Timeline</h3>
+                <p className="text-sm text-gray-600">How long a Boca Raton roof replacement takes from contract signing to final inspection, including the Boca Raton Building Department permit window.</p>
+              </Link>
+              <Link to="/boca-raton-roof-replacement-guide" className="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition-all group">
+                <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors text-lg mb-2">Boca Raton Roof Replacement Guide</h3>
+                <p className="text-sm text-gray-600">Full Boca Raton roof replacement guide — material pricing, HVHZ requirements, and HOA approval workflow for Boca's primary neighborhoods.</p>
+              </Link>
+              <Link to="/delray-beach-roof-overlay-vs-tear-off" className="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition-all group">
+                <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors text-lg mb-2">Delray Beach Roof Overlay vs Tear-Off</h3>
+                <p className="text-sm text-gray-600">Why Delray Beach roofs almost always require full tear-off rather than overlay — the Florida code triggers and the engineering review requirements.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA Section */}
         <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

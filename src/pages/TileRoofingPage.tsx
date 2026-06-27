@@ -1211,6 +1211,18 @@ export default function TileRoofingPage() {
         </div>
       </section>
 
+
+      <RelatedBlogResources
+        sectionTitle="City-Specific Tile Roofing Guides"
+        sectionIntro="Tile pricing, HOA approval, and engineered load requirements vary by city. These guides cover the specifics in our top tile-roofing markets."
+        blogPosts={[
+          {
+            title: "Tile Roof Replacement in Wellington",
+            url: "/tile-roof-replacement-wellington",
+            excerpt: "Concrete vs clay pricing, HOA architectural review, engineered load certification, and the HVHZ attachment system that determines whether your Wellington tile roof passes inspection."
+          }
+        ]}
+      />
       <RelatedBlogResources
         sectionTitle="Tile Roofing Resources"
         sectionIntro="Learn more about tile roof costs, maintenance, and how tile performs in South Florida's hurricane zone."

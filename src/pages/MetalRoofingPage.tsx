@@ -1232,6 +1232,23 @@ export default function MetalRoofingPage() {
         </div>
       </section>
 
+
+      <RelatedBlogResources
+        sectionTitle="City-Specific Metal Roofing Guides"
+        sectionIntro="Metal roofing pricing and conversion economics vary by city. These guides cover the specifics in our top metal-roofing markets."
+        blogPosts={[
+          {
+            title: "Metal Roofing Cost in Fort Lauderdale",
+            url: "/metal-roofing-cost-fort-lauderdale",
+            excerpt: "Standing seam, 5V crimp, and ribbed metal pricing for 2026 in Fort Lauderdale, with HVHZ-compliant installation and coastal-grade aluminum upgrade options."
+          },
+          {
+            title: "Switch from Shingles to Metal in Plantation",
+            url: "/switch-from-shingles-to-metal-plantation",
+            excerpt: "When the shingle-to-metal conversion makes financial sense in Plantation, the structural load review required, and the HOA approval timeline."
+          }
+        ]}
+      />
       <RelatedBlogResources
         sectionTitle="Metal Roofing Resources"
         sectionIntro="Compare metal roofing options, understand costs, and learn how metal performs against hurricanes."

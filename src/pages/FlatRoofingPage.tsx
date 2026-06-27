@@ -800,6 +800,18 @@ export default function FlatRoofingPage() {
         </div>
       </section>
 
+
+      <RelatedBlogResources
+        sectionTitle="City-Specific Flat Roofing Guides"
+        sectionIntro="Flat roof system selection varies by city based on building stock and chemical exposure profile. These guides cover the specifics in our top flat-roofing markets."
+        blogPosts={[
+          {
+            title: "Flat Roof TPO vs PVC in West Palm Beach",
+            url: "/flat-roof-tpo-vs-pvc-west-palm-beach",
+            excerpt: "TPO vs PVC decision criteria for West Palm Beach residential and light commercial flat roofs, with Miami-Dade NOA documentation requirements."
+          }
+        ]}
+      />
       <RelatedBlogResources
         sectionTitle="Flat Roofing Resources"
         sectionIntro="Learn about flat roof systems, maintenance needs, and cost considerations for South Florida properties."

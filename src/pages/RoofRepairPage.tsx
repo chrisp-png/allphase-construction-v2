@@ -1026,6 +1026,33 @@ export default function RoofRepairPage() {
         </div>
       </section>
 
+
+      <RelatedBlogResources
+        sectionTitle="City-Specific Roof Repair Guides"
+        sectionIntro="Repair scenarios and code requirements vary by city. These guides cover the most common repair situations in our top markets."
+        blogPosts={[
+          {
+            title: "Roof Leak Detection in Weston",
+            url: "/roof-leak-detection-weston",
+            excerpt: "How we trace Weston roof leaks using infrared thermography and moisture metering — locate the source without unnecessary tear-off."
+          },
+          {
+            title: "Tree Damage Roof Repair in Parkland",
+            url: "/tree-damage-roof-repair-parkland",
+            excerpt: "Parkland tree damage repair — structural assessment of decking and trusses before patching surface materials, with single-contract dual-license scope."
+          },
+          {
+            title: "Emergency Roof Tarp in Lighthouse Point",
+            url: "/emergency-roof-tarp-lighthouse-point",
+            excerpt: "24-hour emergency tarp response in Lighthouse Point for storm damage, active leaks, and post-hurricane scenarios."
+          },
+          {
+            title: "Storm Damage Repair or Replace in Davie",
+            url: "/storm-damage-repair-or-replace-davie",
+            excerpt: "Davie storm damage decision criteria — when repair makes sense and when replacement is the better call based on damage scope and roof age."
+          }
+        ]}
+      />
       <RelatedBlogResources
         sectionTitle="Roof Repair Resources"
         sectionIntro="Learn when to repair vs replace, how to handle storm damage, and what to expect from a professional repair."
