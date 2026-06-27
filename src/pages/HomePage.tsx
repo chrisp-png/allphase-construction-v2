@@ -919,7 +919,7 @@ export default function HomePage() {
                   Built by a Family — Trusted by Yours
                 </h2>
                 <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                  All Phase Construction USA isn't a faceless contractor. Founder Chris Porosky runs the company directly from the Deerfield Beach headquarters — he meets every customer, walks every roof before a proposal goes out, and signs off on every final inspection.
+                  All Phase Construction USA isn't a faceless contractor. Founder Chris Porosky leads the company directly from the Deerfield Beach headquarters and stays involved in every project — monitoring real-time job site photos through our CompanyCam system, coordinating daily with the sales and production teams, and keeping his hand on every roof we install.
                 </p>
                 <p className="text-lg text-zinc-300 leading-relaxed">
                   And alongside him? Chloe, our 16½-year-old Chief Happiness Officer. She rides along to job sites, greets visitors at the office, and reminds us that real businesses are built on relationships, not transactions.
