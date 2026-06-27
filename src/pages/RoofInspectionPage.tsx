@@ -1690,6 +1690,28 @@ export default function RoofInspectionPage() {
         </div>
       </section>
 
+
+      <RelatedBlogResources
+        sectionTitle="City-Specific Roof Inspection Guides"
+        sectionIntro="Inspection requirements and certification standards vary by use case and city. These guides cover the most common scenarios."
+        blogPosts={[
+          {
+            title: "Annual Roof Inspection in Sunrise",
+            url: "/annual-roof-inspection-sunrise",
+            excerpt: "What an annual roof inspection in Sunrise covers, what it costs, and how the photo documentation gets used for insurance, real estate, and maintenance planning."
+          },
+          {
+            title: "Four-Point Inspection Roof Section in Lake Worth Beach",
+            url: "/four-point-inspection-roof-lake-worth-beach",
+            excerpt: "What insurers require in the roof section of a Lake Worth Beach four-point inspection, accepted by Citizens, Universal, and other Florida carriers."
+          },
+          {
+            title: "Pre-Listing Roof Certification in Coconut Creek",
+            url: "/pre-listing-roof-certification-coconut-creek",
+            excerpt: "How a pre-listing roof certification works in Coconut Creek, including the 2-5 year validity period and when buyers, lenders, and insurance carriers require one."
+          }
+        ]}
+      />
       <RelatedBlogResources
         sectionTitle="Roof Inspection Resources"
         sectionIntro="Understand what happens during a professional roof inspection and when you need one."

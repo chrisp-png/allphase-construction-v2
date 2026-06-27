@@ -569,6 +569,21 @@ export default function RoofMaintenanceProgramsPage() {
           </div>
         </div>
       </section>
+
+      {/* City-Specific Maintenance Guides */}
+      <section className="py-16 bg-zinc-950">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">City-Specific Roof Maintenance Guides</h2>
+          <p className="text-lg text-zinc-400 mb-10 max-w-3xl">Maintenance schedules vary by city based on tree canopy, salt air exposure, and roof system. These guides cover the most common maintenance scenarios.</p>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl">
+            <Link to="/roof-maintenance-tips-miramar" className="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-xl border border-zinc-800 hover:border-red-600 transition-all group">
+              <h3 className="font-bold text-white group-hover:text-red-500 transition-colors text-lg mb-2">Roof Maintenance Tips for Miramar</h3>
+              <p className="text-sm text-zinc-400">Miramar-specific roof maintenance schedule — annual inspection cadence, gutter cleaning frequency, and the tile underlayment check window.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
     </>
   );
