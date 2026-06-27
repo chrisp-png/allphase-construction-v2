@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -59,6 +61,11 @@ export default function BocaRatonRoofReplacementTimelinePage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Exactly what happens — and when — from your first inspection call to final inspection sign-off in Palm Beach County.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="How long does a roof replacement take in Boca Raton Florida?" />
+            </div>
+            <AtomicAnswer>A Boca Raton roof replacement takes 1-3 days for shingle, 5-7 days for tile, and 4-6 days for metal depending on roof size and complexity. Add 5-14 days for permitting through the Boca Raton Building Department. Total project from contract signing to final inspection runs 3-6 weeks for most Boca Raton homes.</AtomicAnswer>
           </div>
         </div>
       </div>

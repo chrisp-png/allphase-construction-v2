@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -62,6 +64,11 @@ export default function MetalRoofingCostFortLauderdalePage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Real installed pricing by panel system, with the HVHZ code, coastal aluminum upgrades, and insurance credits that determine what a Fort Lauderdale metal roof actually costs.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="How much does a metal roof cost in Fort Lauderdale Florida?" />
+            </div>
+            <AtomicAnswer>Metal roof costs in Fort Lauderdale 2026 — standing seam $26,000-$45,000, 5V crimp $18,000-$28,000, ribbed $15,000-$22,000 for a typical 2,000 sq ft home. HVHZ-compliant installation and coastal-grade aluminum upgrades add 10-20%. All Phase Construction USA installs to Miami-Dade NOA spec with 50-year manufacturer warranty options.</AtomicAnswer>
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -52,6 +54,11 @@ export default function SwitchFromShinglesToMetalPlantationPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The 40-year cost-of-ownership math, insurance credit numbers, HOA realities, and lifespan tradeoffs that decide whether your next Plantation roof should be shingle or metal.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="Should I switch from a shingle roof to metal in Plantation Florida?" />
+            </div>
+            <AtomicAnswer>Switching from shingle to metal in Plantation makes sense when the shingle roof is 15-plus years old, the HOA permits the change, and the homeowner plans to stay 10-plus years. Standing-seam metal runs $22,000-$35,000 vs $14,000-$18,000 for shingle re-roof. All Phase Construction USA handles the structural load review required for the conversion.</AtomicAnswer>
           </div>
         </div>
       </div>

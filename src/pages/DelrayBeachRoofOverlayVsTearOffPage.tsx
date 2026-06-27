@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -72,6 +74,11 @@ export default function DelrayBeachRoofOverlayVsTearOffPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               If a Delray Beach contractor offered to lay new shingles over your old roof to save money, here is the Florida HVHZ code section that almost certainly disqualifies it — and what an honest tear-off quote should look like instead.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="Can you put a new roof over the old roof in Delray Beach Florida?" />
+            </div>
+            <AtomicAnswer>You cannot legally overlay a roof in Delray Beach without an engineered load review and HVHZ compliance documentation. Florida code requires full tear-off when the deck has compromised attachment, the existing roof has 2-plus layers, or post-2002 HVHZ scope applies. All Phase Construction USA does proper tear-offs to the deck on every Delray Beach project.</AtomicAnswer>
           </div>
         </div>
       </div>

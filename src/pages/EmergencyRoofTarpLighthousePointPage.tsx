@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -63,6 +65,11 @@ export default function EmergencyRoofTarpLighthousePointPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Five minutes from our Deerfield Beach HQ. When to call, what it costs, how fast we can be on site, and how insurance reimbursement works on the underlying damage claim.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="How fast can I get an emergency roof tarp in Lighthouse Point Florida?" />
+            </div>
+            <AtomicAnswer>All Phase Construction USA's Lighthouse Point emergency tarp service responds within 24 hours for active leaks, post-storm damage, or hurricane-related events. Typical cost $400-$1,200 depending on roof access and tarp area. Tarp is a temporary measure — permanent repair or replacement should follow within 30-60 days for HVHZ compliance.</AtomicAnswer>
           </div>
         </div>
       </div>

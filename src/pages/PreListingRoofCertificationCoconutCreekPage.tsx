@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -50,6 +52,11 @@ export default function PreListingRoofCertificationCoconutCreekPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Why every Coconut Creek listing in 2026 should ship with a contractor-signed roof certification — and how it prevents the deal from falling apart in the inspection period.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="What is a pre-listing roof certification in Coconut Creek Florida?" />
+            </div>
+            <AtomicAnswer>A Coconut Creek pre-listing roof certification verifies remaining roof life for buyers and lenders before a home sale. Cost typically $250-$450. All Phase Construction USA issues certifications valid 2-5 years based on roof condition, age, and remaining underlayment life. Often required for FHA loans and homeowners policy renewals.</AtomicAnswer>
           </div>
         </div>
       </div>

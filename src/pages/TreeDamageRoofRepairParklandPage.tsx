@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -65,6 +67,11 @@ export default function TreeDamageRoofRepairParklandPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               Parkland has some of the heaviest mature tree canopy in Broward County — which is exactly why limb-strike roof damage is one of the most common claims we handle in the city. Here is what to do in the first 24 hours, how insurance coverage actually works, and when repair becomes replacement.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="How do you repair tree damage to a Parkland Florida roof?" />
+            </div>
+            <AtomicAnswer>Parkland tree damage roof repair starts with structural assessment of decking and trusses before patching surface materials. Repair costs range $500-$5,000 depending on damage scope. All Phase Construction USA's dual license (CCC + CGC) handles both structural rebuild and roofing repair in a single project, with no second contractor required.</AtomicAnswer>
           </div>
         </div>
       </div>

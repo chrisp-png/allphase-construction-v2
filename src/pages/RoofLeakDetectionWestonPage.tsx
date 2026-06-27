@@ -1,4 +1,6 @@
 import SEO from '../components/SEO';
+import AISearchRail from '../components/AISearchRail';
+import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -52,6 +54,11 @@ export default function RoofLeakDetectionWestonPage() {
             <p className="text-xl text-zinc-300 mb-4 leading-relaxed">
               The 8 most common Florida roof leak sources, why the interior stain is almost never directly under the actual leak, and how a professional inspection saves Weston homeowners from $5,000+ ceiling repairs.
             </p>
+
+            <div className="mt-6 mb-6">
+              <AISearchRail query="How do you find a roof leak in Weston Florida?" />
+            </div>
+            <AtomicAnswer>Weston roof leak detection starts at the highest entry point and traces down. Common Weston leak sources include valley flashing failure, clogged tile underlayment, and chimney chase deterioration. All Phase Construction USA uses infrared thermography and moisture metering to locate leaks without unnecessary tear-off, with same-day diagnosis.</AtomicAnswer>
           </div>
         </div>
       </div>
