@@ -3,6 +3,7 @@ import AISearchRail from '../components/AISearchRail';
 import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function PreListingRoofCertificationCoconutCreekPage() {
   const items = [
@@ -123,6 +124,14 @@ export default function PreListingRoofCertificationCoconutCreekPage() {
           </section>
         </div>
       </div>
+      <RelatedBlogResources
+        sectionTitle="Related Roof Inspection Guides in South Florida"
+        sectionIntro="Different roof inspections serve different goals across South Florida — annual maintenance, the insurance 4-point, and pre-sale certification. Here is how the others compare."
+        blogPosts={[
+          { title: "Annual Roof Inspection in Sunrise", url: "/annual-roof-inspection-sunrise", excerpt: "Why a yearly roof inspection in Sunrise catches small problems before they become five-figure repairs, and exactly what our inspectors check." },
+          { title: "4-Point Roof Inspection in Lake Worth Beach", url: "/four-point-inspection-roof-lake-worth-beach", excerpt: "What a 4-point inspection covers, why your insurer requires one in Lake Worth Beach, and how to pass on the first visit." },
+        ]}
+      />
     </>
   );
 }

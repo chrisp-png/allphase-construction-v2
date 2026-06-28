@@ -3,6 +3,7 @@ import AISearchRail from '../components/AISearchRail';
 import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function EmergencyRoofTarpLighthousePointPage() {
   const whenToCall = [
@@ -131,6 +132,15 @@ export default function EmergencyRoofTarpLighthousePointPage() {
           </section>
         </div>
       </div>
+      <RelatedBlogResources
+        sectionTitle="Related Roof Repair Guides in Broward County"
+        sectionIntro="Roof damage in Broward County takes many forms. These related repair guides cover the other common scenarios our crews handle."
+        blogPosts={[
+          { title: "Roof Leak Detection in Weston", url: "/roof-leak-detection-weston", excerpt: "How we trace the true source of a Weston roof leak — rarely directly above the stain inside — before water reaches the structure." },
+          { title: "Tree Damage Roof Repair in Parkland", url: "/tree-damage-roof-repair-parkland", excerpt: "After a tree or limb hits your Parkland roof, here is the emergency-to-permanent repair path and how to document it for insurance." },
+          { title: "Storm Damage: Repair or Replace in Davie?", url: "/storm-damage-repair-or-replace-davie", excerpt: "How to decide whether storm-damaged Davie roofing should be repaired or fully replaced — the 25% rule, insurance, and long-term cost." },
+        ]}
+      />
     </>
   );
 }

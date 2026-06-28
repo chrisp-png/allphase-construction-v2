@@ -3,6 +3,7 @@ import AISearchRail from '../components/AISearchRail';
 import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function SwitchFromShinglesToMetalPlantationPage() {
   const compare = [
@@ -142,6 +143,13 @@ export default function SwitchFromShinglesToMetalPlantationPage() {
           </section>
         </div>
       </div>
+      <RelatedBlogResources
+        sectionTitle="Related Metal Roofing Guides in Broward County"
+        sectionIntro="Considering metal roofing in Broward County? These related guides cover cost and conversion specifics for nearby cities."
+        blogPosts={[
+          { title: "Metal Roofing Cost in Fort Lauderdale", url: "/metal-roofing-cost-fort-lauderdale", excerpt: "What a metal roof actually costs in Fort Lauderdale, how it compares to tile and shingle, and why coastal homes recover the premium." },
+        ]}
+      />
     </>
   );
 }
