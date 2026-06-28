@@ -42,8 +42,8 @@ export default function MetalRoofingCostFortLauderdalePage() {
   return (
     <>
       <SEO
-        title="Metal Roofing Cost in Fort Lauderdale (2026) | All Phase Construction USA"
-        description="Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options"
+        title="Metal Roofing Cost in Fort Lauderdale, FL (2026)"
+        description="Real 2026 metal roof prices in Fort Lauderdale, FL by panel type — HVHZ code, coastal aluminum upgrades, and 50-year warranty options explained."
         canonicalPath="/metal-roofing-cost-fort-lauderdale"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

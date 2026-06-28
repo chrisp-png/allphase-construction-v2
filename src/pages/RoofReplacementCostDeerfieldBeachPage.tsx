@@ -42,7 +42,7 @@ export default function RoofReplacementCostDeerfieldBeachPage() {
   return (
     <>
       <SEO
-        title="Roof Replacement Cost in Deerfield Beach (2026) | All Phase Construction USA"
+        title="Roof Replacement Cost in Deerfield Beach, FL (2026)"
         description="2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options."
         canonicalPath="/roof-replacement-cost-deerfield-beach"
       />

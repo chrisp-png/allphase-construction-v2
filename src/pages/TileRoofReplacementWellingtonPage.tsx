@@ -43,7 +43,7 @@ export default function TileRoofReplacementWellingtonPage() {
     <>
       <SEO
         title="Tile Roof Replacement in Wellington (2026)"
-        description="2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements"
+        description="2026 Wellington tile roof pricing for concrete and clay — HOA architectural approval, engineered weight-load review, and HVHZ-spec attachment detailing."
         canonicalPath="/tile-roof-replacement-wellington"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

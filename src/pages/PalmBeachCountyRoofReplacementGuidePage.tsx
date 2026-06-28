@@ -70,8 +70,8 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
   return (
     <>
       <SEO
-            title="Palm Beach County Roof Replacement Guide (2026) | Costs, Contractors & HVHZ Info"
-            description="Complete guide to roof replacement in Palm Beach County. Costs by city, HVHZ vs non-HVHZ pricing, top contractors, insurance claims help, permits, and material comparison for Boca Raton to Jupiter."
+            title="Palm Beach County Roof Replacement Guide (2026) | Costs"
+            description="2026 guide to roof replacement in Palm Beach County, FL — costs by city and material, the permit process, and HVHZ-spec construction from Boca to Jupiter."
             canonicalPath="/palm-beach-county-roof-replacement-guide"
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />

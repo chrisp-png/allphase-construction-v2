@@ -39,7 +39,7 @@ export default function StandingSeamMetalRoofJupiterPage() {
     <>
       <SEO
         title="Standing Seam Metal Roof in Jupiter (2026)"
-        description="Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County"
+        description="Why aluminum standing seam suits coastal Jupiter, FL — 2026 pricing, wind resilience, corrosion resistance, and Palm Beach County permitting explained."
         canonicalPath="/standing-seam-metal-roof-jupiter"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

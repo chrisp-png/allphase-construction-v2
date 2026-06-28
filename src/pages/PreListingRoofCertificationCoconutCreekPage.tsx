@@ -31,7 +31,7 @@ export default function PreListingRoofCertificationCoconutCreekPage() {
     <>
       <SEO
         title="Pre-Listing Roof Certification in Coconut Creek (2026)"
-        description="Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from"
+        description="Why Coconut Creek listings benefit from a pre-listing roof certification in 2026 — what it includes, and how it keeps deals from falling through at closing."
         canonicalPath="/pre-listing-roof-certification-coconut-creek"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

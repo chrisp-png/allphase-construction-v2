@@ -179,8 +179,8 @@ export default function LearningCenterPage() {
   return (
     <>
       <SEO
-        title="Learning Center | Roofing Guides & Resources | All Phase Construction USA"
-        description="Your complete South Florida roofing resource hub. Get accurate 2025–2026 cost estimates, financing options, contractor hiring guides, and step-by-step replacement process info for Broward & Palm Beach County homeowners."
+        title="Roofing Learning Center | Guides & Resources | All Phase"
+        description="South Florida's roofing resource hub — 2026 cost estimates, financing, contractor hiring guides, and step-by-step replacement info for Broward & Palm Beach."
       />
 
       <div className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950">
