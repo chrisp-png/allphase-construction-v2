@@ -44,7 +44,7 @@ export default function FlatRoofTpoVsPvcWestPalmBeachPage() {
     <>
       <SEO
         title="Flat Roof TPO vs PVC in West Palm Beach (2026)"
-        description="TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan numbers, chemical and ponding resistance, and the HVHZ code that decides"
+        description="TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan numbers, chemical and ponding resistance, and the spec that decides it."
         canonicalPath="/flat-roof-tpo-vs-pvc-west-palm-beach"
       />
       <InlineSchema schemas={[faqSchema, breadcrumbSchema, articleSchema]} />

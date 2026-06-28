@@ -156,8 +156,8 @@ export default function SouthFloridaRoofingReviewsPage() {
   return (
     <>
       <SEO
-            title="Best Roofing Companies in South Florida (2026) | Expert Reviews & Comparison"
-            description="Comprehensive comparison of the top-rated roofing companies serving Broward County and Palm Beach County. Licensed contractor reviews, pricing, insurance claims help, and HVHZ expertise."
+            title="Best Roofing Companies in South Florida (2026) | Reviews"
+            description="Compare the top-rated roofing companies serving Broward and Palm Beach County — licensed contractor reviews, pricing, and HVHZ expertise."
             canonicalPath="/south-florida-roofing-reviews"
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />

@@ -158,8 +158,8 @@ export default function RoofingServicesPage() {
   return (
     <>
       <SEO
-        title="Roofing Services | Residential & Commercial | All Phase Construction USA"
-        description="Complete roofing services for South Florida — tile, metal, shingle, flat, commercial, and residential. Dual-licensed contractor serving Broward and Palm Beach Counties. Free inspections."
+        title="Roofing Services | Residential & Commercial | All Phase"
+        description="Tile, metal, shingle, flat, commercial, and residential roofing across South Florida. Dual-licensed contractor serving Broward & Palm Beach. Free inspections."
         canonicalUrl="https://allphaseconstructionfl.com/roofing-services"
       />
       {/* FAQPage schema is injected by prerender-static.mjs at build time — do NOT duplicate here */}

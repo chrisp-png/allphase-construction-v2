@@ -86,7 +86,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
   return (
     <>
       <SEO
-            title="Boca Raton Roof Replacement Guide (2026) | Costs, Contractors, HVHZ & HOA Info"
+            title="Boca Raton Roof Replacement Guide (2026) | Costs, HVHZ & HOA"
             description="Complete guide to roof replacement in Boca Raton, FL. Costs by material, HVHZ requirements, HOA guidelines, best contractors, insurance claims help, and permit process explained."
             canonicalPath="/boca-raton-roof-replacement-guide"
           />
