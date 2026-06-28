@@ -2613,7 +2613,10 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
           const rootStart = html.indexOf('<div id="root">');
     const bodyEnd = html.indexOf('</body>');
     if (rootStart !== -1 && bodyEnd !== -1) {
-      html = html.slice(0, rootStart) + `<div id="root">${seoContent}</div>` + html.slice(bodyEnd);
+      // PR-84: wrap prerendered content in <main> for the Lighthouse main-landmark a11y audit.
+      // The runtime React app ALSO renders <main> from App.tsx after hydration; this
+      // ensures the static HTML Lighthouse sees first (pre-hydration) has the landmark too.
+      html = html.slice(0, rootStart) + `<div id="root"><main id="prerender-main">${seoContent}</main></div>` + html.slice(bodyEnd);
     } else {
       throw new Error('✅ Could not find root div or closing body tag in template.');
     }
