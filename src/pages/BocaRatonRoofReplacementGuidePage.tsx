@@ -3,6 +3,7 @@ import AISearchRail from '../components/AISearchRail';
 import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function BocaRatonRoofReplacementGuidePage() {
   const faqs = [
@@ -266,6 +267,14 @@ export default function BocaRatonRoofReplacementGuidePage() {
         </section>
       </div>
       </div>
+      <RelatedBlogResources
+        sectionTitle="Related Roof Replacement Guides in South Palm Beach County"
+        sectionIntro="Replacing a roof in South Palm Beach County means navigating Palm Beach County permits, HOA rules, and material lead times. These related guides cover the rest of the decision."
+        blogPosts={[
+          { title: "Boca Raton Roof Replacement Timeline", url: "/boca-raton-roof-replacement-timeline", excerpt: "A phase-by-phase, day-by-day breakdown of a Boca Raton roof replacement — from the first inspection call through permitting, install, and final sign-off." },
+          { title: "Delray Beach: Roof Overlay vs. Tear-Off", url: "/delray-beach-roof-overlay-vs-tear-off", excerpt: "When a second-layer overlay is allowed in Delray Beach versus when a full tear-off is the smarter long-term call — code and cost compared." },
+        ]}
+      />
     </>
   );
 }

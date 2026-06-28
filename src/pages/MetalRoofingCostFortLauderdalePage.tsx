@@ -3,6 +3,7 @@ import AISearchRail from '../components/AISearchRail';
 import AtomicAnswer from '../components/AtomicAnswer';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
+import RelatedBlogResources from '../components/RelatedBlogResources';
 
 export default function MetalRoofingCostFortLauderdalePage() {
   const systems = [
@@ -165,6 +166,13 @@ export default function MetalRoofingCostFortLauderdalePage() {
           </section>
         </div>
       </div>
+      <RelatedBlogResources
+        sectionTitle="Related Metal Roofing Guides in Broward County"
+        sectionIntro="Considering metal roofing in Broward County? These related guides cover cost and conversion specifics for nearby cities."
+        blogPosts={[
+          { title: "Switching From Shingles to Metal in Plantation", url: "/switch-from-shingles-to-metal-plantation", excerpt: "What changes when you convert a Plantation home from shingles to metal — decking, cost, lifespan, and HVHZ requirements." },
+        ]}
+      />
     </>
   );
 }
