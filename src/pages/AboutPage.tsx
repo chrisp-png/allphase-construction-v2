@@ -75,6 +75,7 @@ const teamMembers: TeamMember[] = [
     since: '2026',
     bio: 'Enio joined All Phase Construction USA in 2026 after relocating from the Boston, Massachusetts area, where he worked for a highly respected roofing contractor in the same professional networking organization as owner Chris Porosky. As Project Manager, Enio is one of our customers\' primary points of contact throughout the construction process — coordinating scheduling, communicating project updates, working closely with installation crews, overseeing inspections, and ensuring each roofing project progresses smoothly from start to finish. Enio\'s attention to detail, organization, and proactive communication help give homeowners a stress-free experience while ensuring every install meets All Phase\'s high quality standards.',
     photoPlaceholder: 'EC',
+    photo: '/team/enio.webp',
   },
   {
     name: 'Matt Denofrio',
@@ -109,6 +110,7 @@ const teamMembers: TeamMember[] = [
     title: 'Receptionist & Office Administrator',
     bio: 'Felice is the friendly voice answering the phone when you call All Phase Construction USA during business hours. As Receptionist and Office Administrator, she plays a vital role in keeping the office running smoothly — assisting with day-to-day administrative responsibilities and supporting customers, office staff, sales team, and production department. From scheduling appointments and directing calls to helping with office operations and customer communications, Felice ensures every customer receives prompt, professional, and courteous service from their very first interaction with the company. Known for her positive attitude, attention to detail, and willingness to help, she\'s committed to creating a welcoming experience for every homeowner, vendor, and business partner who contacts or visits All Phase Construction USA.',
     photoPlaceholder: 'FM',
+    photo: '/team/felice.webp',
   },
   {
     name: 'Chloe',
