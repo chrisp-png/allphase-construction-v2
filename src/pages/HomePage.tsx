@@ -29,7 +29,7 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="South Florida Roofing Contractor | All Phase USA"
+        title="Roofing Contractor | Broward & Palm Beach | All Phase USA"
         description="HVHZ-certified roofing contractor in Broward & Palm Beach. Tile, metal, shingle, flat & commercial roofing. Call (754) 227-5605."
         canonicalPath="/"
       />
