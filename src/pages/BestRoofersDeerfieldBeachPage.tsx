@@ -32,6 +32,24 @@ export default function BestRoofersDeerfieldBeachPage() {
             <p className="text-xl text-zinc-300 leading-relaxed">
               Finding a roofer in Deerfield Beach you can actually trust. We reviewed dozens of contractors and five rose to the top through verifiable credentials, strong reviews, and proven track records.
             </p>
+            {/* Expertise.com Award — Best Roofers in Deerfield Beach 2026 (nofollow: keeps ranking signal on this listicle) */}
+            <a
+              href="https://www.expertise.com/fl/deerfield-beach/roofing"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Expertise.com — Best Roofers in Deerfield Beach 2026"
+              className="mt-8 inline-block bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow w-fit"
+            >
+              <img
+                src="https://res.cloudinary.com/expertise-com/image/upload/v1767650446/remote_media/assets/awards/fl_deerfield-beach_roofing_2026_transparent.svg"
+                alt="Expertise.com Best Roofers in Deerfield Beach 2026 award badge"
+                width={200}
+                height={160}
+                loading="lazy"
+                decoding="async"
+                className="h-24 w-auto"
+              />
+            </a>
           </div>
         </div>
       </section>
