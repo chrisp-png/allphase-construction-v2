@@ -659,4 +659,11 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /hail-damage-roof-parkland /tree-damage-roof-repair-parkland 301!
 /emergency-roof-tarp-pembroke-pines /emergency-roof-tarp-lighthouse-point 301!
 
+# ======================================================================
+# Legacy 4xx cleanup (Moz crawl 07/2026) - only rules not already handled above
+# ======================================================================
+/trying-to-decide-what-kind-of-roof-you-want-for-your-home /roofing-services 301!
+/trying-to-decide-what-kind-of-roof-you-want-for-your-home/ /roofing-services 301!
+/portfolio_page/* /projects 301!
+
 /* /index.html 200
