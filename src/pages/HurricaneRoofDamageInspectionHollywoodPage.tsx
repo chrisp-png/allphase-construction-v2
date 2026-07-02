@@ -1,4 +1,5 @@
 import SEO from '../components/SEO';
+import NoIndexMeta from '../components/NoIndexMeta';
 import InlineSchema from '../components/InlineSchema';
 import { Link } from 'react-router-dom';
 
@@ -31,6 +32,11 @@ export default function HurricaneRoofDamageInspectionHollywoodPage() {
 
   return (
     <>
+      {/* NOINDEX — insurance-claim page intentionally hidden from Google while there is
+          no qualifying storm event in our market (claims filed now are almost always denied).
+          TO RE-ENABLE after a hurricane: delete the <NoIndexMeta /> line below AND re-add this
+          page's URL to public/sitemap.xml. */}
+      <NoIndexMeta />
       <SEO
         title="Hurricane Roof Damage Inspection in Hollywood, FL (2026)"
         description="What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that"
