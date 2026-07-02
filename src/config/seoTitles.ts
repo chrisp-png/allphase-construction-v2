@@ -398,12 +398,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/hurricane-roof-damage-inspection-hollywood': {
     title: 'Hurricane Roof Damage Inspection in Hollywood, FL (2026)',
-    description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that',
+    description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, documentation steps, and the critical first 24 hours.',
     canonical: 'https://allphaseconstructionfl.com/hurricane-roof-damage-inspection-hollywood'
   },
   '/wind-damage-insurance-claim-boynton-beach': {
     title: 'Wind Damage Insurance Claim in Boynton Beach (Step-by-Step',
-    description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid',
+    description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, deductibles, law-and-ordinance coverage, and how to avoid costly delays.',
     canonical: 'https://allphaseconstructionfl.com/wind-damage-insurance-claim-boynton-beach'
   },
   '/emergency-roof-tarp-lighthouse-point': {
@@ -428,7 +428,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/wind-mitigation-inspection-palm-beach-gardens': {
     title: 'Wind Mitigation Inspection in Palm Beach Gardens (2026',
-    description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category on the',
+    description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 a year on insurance — every credit category explained.',
     canonical: 'https://allphaseconstructionfl.com/wind-mitigation-inspection-palm-beach-gardens'
   },
   '/roof-maintenance-tips-miramar': {
