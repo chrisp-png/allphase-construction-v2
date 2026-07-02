@@ -18,6 +18,7 @@ import Lightbox from '../../components/Lightbox';
 import ChamberBadges from '../../components/ChamberBadges';
 import { getLocationBySlug } from '../../data/locations';
 import { buildLocationSeo, generateDeerfieldBeachSchema } from '../../lib/locationSeo';
+import InlineSchema from '../../components/InlineSchema';
 
 export default function DeerfieldBeachCityPage() {
   // Get location data and SEO from single source of truth
@@ -177,6 +178,7 @@ export default function DeerfieldBeachCityPage() {
 
   return (
     <>
+      <InlineSchema schemas={[schema as Record<string, unknown>]} />
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -35,7 +35,7 @@ export default function BocaRatonMoneyPage() {
     ? window.location.href.split('?')[0].split('#')[0]
     : `https://allphaseconstructionfl.com/locations/${slug}`;
 
-  const localBusinessSchema = generateLocalBusinessSchema({
+  const baseBusinessSchema = generateLocalBusinessSchema({
     cityName,
     stateName: 'Florida',
     latitude: coordinates?.latitude,
@@ -45,6 +45,15 @@ export default function BocaRatonMoneyPage() {
       reviewCount: '150'
     }
   });
+  // Expertise.com (Forbes) award as a structured credential — Boca-specific
+  const localBusinessSchema = {
+    ...baseBusinessSchema,
+    award: 'Best Roofers in Boca Raton 2026 — Expertise.com (Forbes)',
+    sameAs: [
+      ...(baseBusinessSchema.sameAs || []),
+      'https://www.expertise.com/fl/boca-raton/roofing'
+    ]
+  };
 
   return (
     <>
