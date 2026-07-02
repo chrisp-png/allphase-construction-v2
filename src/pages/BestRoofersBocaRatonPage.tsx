@@ -36,6 +36,24 @@ export default function BestRoofersBocaRatonPage() {
             <p className="text-xl lg:text-2xl text-slate-300 mb-8">
               Finding a Roofer in Boca Raton You Can Actually Trust
             </p>
+            {/* Expertise.com Award — Best Roofers in Boca Raton 2026 (nofollow: keeps ranking signal on this listicle) */}
+            <a
+              href="https://www.expertise.com/fl/boca-raton/roofing"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Expertise.com — Best Roofers in Boca Raton 2026"
+              className="mt-8 inline-block bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow w-fit"
+            >
+              <img
+                src="https://res.cloudinary.com/expertise-com/image/upload/v1767650446/remote_media/assets/awards/fl_boca-raton_roofing_2026_transparent.svg"
+                alt="Expertise.com Best Roofers in Boca Raton 2026 award badge"
+                width={200}
+                height={160}
+                loading="lazy"
+                decoding="async"
+                className="h-24 w-auto"
+              />
+            </a>
             <div className="flex flex-wrap gap-4">
               <a
                 href="tel:7542275605"
