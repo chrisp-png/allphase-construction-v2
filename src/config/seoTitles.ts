@@ -186,12 +186,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // render. Canonical matches the policy: no trailing slash.
   '/locations/palm-beach-county': {
     title: 'Palm Beach County Roofing Contractor | All Phase USA',
-    description: 'Palm Beach County roofing contractor — Boca Raton, Boynton Beach, West Palm Beach, Wellington, Lake Worth Beach, Delray Beach, Jupiter. Voluntarily HVHZ-spec. (754) 227-5605.',
+    description: 'Dual-licensed Palm Beach County roofing contractor — Boca Raton, WPB, Wellington, Delray & Jupiter. Voluntarily built to HVHZ spec. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
   },
   '/locations/broward-county': {
     title: 'Broward County Roofing Contractor | All Phase USA',
-    description: 'Broward County roofing contractor — Deerfield Beach, Pompano Beach, Fort Lauderdale, Coral Springs, Parkland, Hollywood. Legally HVHZ-certified, dual-licensed. (754) 227-5605.',
+    description: 'Dual-licensed, HVHZ-certified Broward County roofing contractor — Deerfield Beach, Pompano, Fort Lauderdale, Coral Springs & Hollywood. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/broward-county'
   },
   '/locations/service-areas': {
@@ -353,7 +353,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/boca-raton-roof-replacement-timeline': {
     title: 'Boca Raton Roof Replacement Timeline: Day-by-Day (2026)',
-    description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather',
+    description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase timeline from first inspection to final sign-off, with permit and weather notes.',
     canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-replacement-timeline'
   },
   '/coral-springs-roof-permit-guide': {
@@ -373,17 +373,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/metal-roofing-cost-fort-lauderdale': {
     title: 'Metal Roofing Cost in Fort Lauderdale (2026)',
-    description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options',
+    description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type — HVHZ code, coastal aluminum upgrades, and 50-year warranty options explained.',
     canonical: 'https://allphaseconstructionfl.com/metal-roofing-cost-fort-lauderdale'
   },
   '/tile-roof-replacement-wellington': {
     title: 'Wellington Tile Roof Replacement (2026) | HOA-Approved',
-    description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements',
+    description: '2026 Wellington tile roof pricing for concrete and clay — HOA architectural approval, engineered weight-load review, and HVHZ-spec attachment detailing.',
     canonical: 'https://allphaseconstructionfl.com/tile-roof-replacement-wellington'
   },
   '/standing-seam-metal-roof-jupiter': {
     title: 'Standing Seam Metal Roof in Jupiter (2026 Coastal Guide)',
-    description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County',
+    description: 'Why aluminum standing seam suits coastal Jupiter, FL — 2026 pricing, wind resilience, corrosion resistance, and Palm Beach County permitting explained.',
     canonical: 'https://allphaseconstructionfl.com/standing-seam-metal-roof-jupiter'
   },
   '/flat-roof-tpo-vs-pvc-west-palm-beach': {
@@ -413,17 +413,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/tree-damage-roof-repair-parkland': {
     title: 'Tree Damage Roof Repair in Parkland, FL (2026)',
-    description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window',
+    description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, repair vs. replace, and the 24-hour documentation window that matters.',
     canonical: 'https://allphaseconstructionfl.com/tree-damage-roof-repair-parkland'
   },
   '/storm-damage-repair-or-replace-davie': {
     title: 'Storm Damage: Repair or Replace in Davie? (2026 Decision',
-    description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that',
+    description: 'Repair or replace a storm-damaged Davie, FL roof? A clear decision matrix, the Florida matching statute, and the long-term cost math explained.',
     canonical: 'https://allphaseconstructionfl.com/storm-damage-repair-or-replace-davie'
   },
   '/annual-roof-inspection-sunrise': {
     title: 'Annual Roof Inspection in Sunrise, FL (10-Point Checklist)',
-    description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior',
+    description: 'A 10-point annual roof inspection checklist for Sunrise, FL — what inspections cover, what they cost, and how they prevent costly interior damage.',
     canonical: 'https://allphaseconstructionfl.com/annual-roof-inspection-sunrise'
   },
   '/wind-mitigation-inspection-palm-beach-gardens': {
@@ -448,7 +448,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/pre-listing-roof-certification-coconut-creek': {
     title: 'Pre-Listing Roof Certification in Coconut Creek (2026)',
-    description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from',
+    description: 'Why Coconut Creek listings benefit from a pre-listing roof certification in 2026 — what it includes, and how it keeps deals from falling through at closing.',
     canonical: 'https://allphaseconstructionfl.com/pre-listing-roof-certification-coconut-creek'
   },
   // === 44 SPA-shell-victim slugs (PR fixing NuclearMetadata stomp) ===
