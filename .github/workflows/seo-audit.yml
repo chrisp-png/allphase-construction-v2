@@ -37,5 +37,6 @@ jobs:
               repo: context.repo.repo,
               title: `Weekly SEO Audit — ${date}`,
               body,
-              labels: ['seo-audit']
-            });
+             labels: ['seo-audit'],
+        assignees: ['chrisp-png']
+      });
