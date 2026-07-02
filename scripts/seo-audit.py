@@ -13,14 +13,15 @@ def load_json_titles():
     d = json.load(open(p)).get("staticTitles", {})
     return {k: (v.get("title",""), v.get("description","")) for k,v in d.items()}
 
+def _val(body, key):
+    m = re.search(key + r""":\s*(?:'((?:[^'\\]|\\.)*)'|"((?:[^"\\]|\\.)*)"|`([^`]*)`)""", body, re.S)
+    return next((g for g in m.groups() if g is not None), "") if m else ""
+
 def load_ts_titles():
     s = open(os.path.join(ROOT, "src/config/seoTitles.ts")).read()
     out = {}
-    for m in re.finditer(r"'(/[^']*)':\s*\{(.*?)\}", s, re.S):
-        path, body = m.group(1), m.group(2)
-        t = re.search(r"title:\s*'([^']*)'", body)
-        d = re.search(r"description:\s*'([^']*)'", body)
-        out[path] = (t.group(1) if t else "", d.group(1) if d else "")
+    for m in re.finditer(r"'(/[^']*)':\s*\{(.*?)\n\s*\}", s, re.S):
+        out[m.group(1)] = (_val(m.group(2), "title"), _val(m.group(2), "description"))
     return out
 
 prerender = load_json_titles()      # what Google crawls first
