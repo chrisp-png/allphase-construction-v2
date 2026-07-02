@@ -219,6 +219,25 @@ export default function DeerfieldBeachCityPage() {
                 </div>
               </div>
 
+              {/* Expertise.com Award — Best Roofers in Deerfield Beach 2026 (free program; badge links to Expertise award page) */}
+              <a
+                href="https://www.expertise.com/fl/deerfield-beach/roofing"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Expertise.com — Best Roofers in Deerfield Beach 2026"
+                className="mt-6 inline-block bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow w-fit"
+              >
+                <img
+                  src="https://res.cloudinary.com/expertise-com/image/upload/v1767650446/remote_media/assets/awards/fl_deerfield-beach_roofing_2026_transparent.svg"
+                  alt="Expertise.com Best Roofers in Deerfield Beach 2026 award badge"
+                  width={200}
+                  height={160}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-24 w-auto"
+                />
+              </a>
+
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-3 mt-6">
                 <a href="/contact" className="inline-flex items-center gap-2 bg-[#C5A572] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#b8935f] transition-colors">Schedule 21-Point Inspection</a>

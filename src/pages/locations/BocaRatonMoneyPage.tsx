@@ -92,6 +92,25 @@ export default function BocaRatonMoneyPage() {
                 <Shield className="w-4 h-4" />
                 Dual-Licensed Roofing &amp; General Contractors (CCC-1331464, CGC-1526236)
               </div>
+
+              {/* Expertise.com Award — Best Roofers in Boca Raton 2026 (free program; badge links to Expertise award page) */}
+              <a
+                href="https://www.expertise.com/fl/boca-raton/roofing"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Expertise.com — Best Roofers in Boca Raton 2026"
+                className="mt-6 inline-block bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow w-fit"
+              >
+                <img
+                  src="https://res.cloudinary.com/expertise-com/image/upload/v1767650446/remote_media/assets/awards/fl_boca-raton_roofing_2026_transparent.svg"
+                  alt="Expertise.com Best Roofers in Boca Raton 2026 award badge"
+                  width={200}
+                  height={160}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-24 w-auto"
+                />
+              </a>
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
                   All Phase Construction USA is a top-rated roofing company in {cityName}, FL — dual-licensed as both a roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236). We provide expert roof replacement, <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">roof repair</Link>, and roof inspection services throughout {cityName} and Palm Beach County. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to South Florida's demanding wind codes for {cityName} homes, estates, and commercial properties.
