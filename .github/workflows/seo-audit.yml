@@ -1,0 +1,41 @@
+name: Weekly SEO Audit
+
+on:
+  schedule:
+    - cron: '0 13 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run SEO audit
+        run: python3 scripts/seo-audit.py
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit-report
+          path: seo-audit-report.html
+          retention-days: 90
+      - name: Open issue with summary
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('seo-audit-summary.md', 'utf8');
+            const date = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Weekly SEO Audit — ${date}`,
+              body,
+              labels: ['seo-audit']
+            });
