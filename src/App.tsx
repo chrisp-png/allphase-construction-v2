@@ -166,6 +166,7 @@ const PembrokeParkMoneyPage = lazy(() => import('./pages/locations/PembrokeParkM
 const SeaRanchLakesMoneyPage = lazy(() => import('./pages/locations/SeaRanchLakesMoneyPage'));
 const HillsboroBeachMoneyPage = lazy(() => import('./pages/locations/HillsboroBeachMoneyPage'));
 const NorthPalmBeachMoneyPage = lazy(() => import('./pages/locations/NorthPalmBeachMoneyPage'));
+const LantanaMoneyPage = lazy(() => import('./pages/locations/LantanaMoneyPage'));
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
@@ -361,6 +362,7 @@ function AppContent() {
             <Route path="/locations/sea-ranch-lakes" element={<SeaRanchLakesMoneyPage />} />
             <Route path="/locations/hillsboro-beach" element={<HillsboroBeachMoneyPage />} />
             <Route path="/locations/north-palm-beach" element={<NorthPalmBeachMoneyPage />} />
+            <Route path="/locations/lantana" element={<LantanaMoneyPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
