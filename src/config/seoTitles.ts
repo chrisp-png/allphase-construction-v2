@@ -55,6 +55,21 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/lauderdale-lakes': {
+    title: 'Roofing Contractor in Lauderdale Lakes, FL | All Phase USA',
+    description: 'Lauderdale Lakes, FL roofer for 1960s homes \u0026 condo communities \u2014 HVHZ-code shingle, tile \u0026 flat roofs, association approvals handled, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/lauderdale-lakes'
+  },
+  '/locations/lauderhill': {
+    title: 'Roofing Contractor in Lauderhill, FL | All Phase USA',
+    description: 'Lauderhill, FL roofer for 1960s homes, Inverrary condos \u0026 gated communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/lauderhill'
+  },
+  '/locations/margate': {
+    title: 'Roofing Contractor in Margate, FL | All Phase USA',
+    description: 'Margate, FL roofer for canal homes, gated \u0026 55+ communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled, dual-licensed since 2005. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/margate'
+  },
   '/locations/miramar': {
     title: 'Roofing Contractor in Miramar, FL | All Phase USA',
     description: 'Miramar, FL roofer for the City of Lakes \u2014 master-planned lake communities \u0026 older Broward homes, HVHZ-code tile, shingle \u0026 metal, dual-licensed. (754) 227-5605.',
