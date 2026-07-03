@@ -1,654 +1,104 @@
 /**
- * ═══════════════════════════════════════════════════════════════════════════
- * Parkland Custom Location Page — Surfer SEO Optimized Content
- * ═══════════════════════════════════════════════════════════════════════════
+ * Parkland Custom Location Page (PR-119) — hand-built, unique local content.
  */
-
-import { useEffect, useState } from 'react';
-import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Star, Home, Wind, Users, Building2, Layers, DollarSign, Lock, Palette } from 'lucide-react';
+import AISearchRail from '../../components/AISearchRail';
+import AtomicAnswer from '../../components/AtomicAnswer';
+import CityProjectGallery from '../../components/CityProjectGallery';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
+import { MapPin, Phone, Clock, CheckCircle2 } from 'lucide-react';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
-import { generateSEOMetadata } from '../../config/seoTitles';
 
 export default function ParklandMoneyPage() {
-  const cityName = 'Parkland';
-  const county = 'Broward County';
-  const slug = 'parkland';
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  useEffect(() => {
-    const seoMeta = generateSEOMetadata('/locations/parkland');
-    document.title = seoMeta.title;
-  }, []);
-
-  const coordinates = getCityCoordinates(cityName);
-
-  const canonicalUrl = typeof window !== 'undefined'
-    ? window.location.href.split('?')[0].split('#')[0]
-    : `https://allphaseconstructionfl.com/locations/${slug}`;
-
-  const localBusinessSchema = generateLocalBusinessSchema({
-    cityName,
-    stateName: 'Florida',
-    latitude: coordinates?.latitude,
-    longitude: coordinates?.longitude,
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '140'
-    }
-  });
-
+  const coordinates = getCityCoordinates('Parkland');
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Parkland', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
   const faqs = [
-    {
-      question: 'How long does HOA architectural review approval typically take in Parkland communities?',
-      answer: 'Review timelines vary by community, but most architectural review boards in Heron Bay, Parkland Golf & Country Club, and similar communities meet monthly. With properly prepared documentation — which All Phase Construction USA handles completely — approvals typically take 2–4 weeks. Incomplete or non-conforming submissions often extend timelines by months, which is why we prepare everything before submission.'
-    },
-    {
-      question: 'What roofing materials are most commonly approved in Heron Bay and other gated communities?',
-      answer: 'Concrete and clay barrel tile in neutral, earth-tone colors are dominant and almost universally approved. Standing seam metal in muted finishes receives approval in most communities for appropriate architectural styles. TAMKO designer architectural shingles are approved in select neighborhoods for transitional styles. Bright colors, reflective metals, and non-traditional profiles typically require variance requests.'
-    },
-    {
-      question: 'How do you coordinate access through guard gates during installation?',
-      answer: 'We schedule all deliveries and crew access with community management before work begins. Material staging, dumpster placement, and daily access are coordinated to comply with community rules. Our team has established relationships with gate staff in most Parkland communities and strictly adheres to noise ordinances and quiet hours.'
-    },
-    {
-      question: 'What permits are required through the City of Parkland building department?',
-      answer: 'Roof replacements exceeding $1,500 in materials and labor require permits through the City of Parkland Building Department. All submissions undergo structural, zoning, and potentially fire marshal review. HOA architectural approval does not replace building permits — both are required. All Phase Construction USA handles the complete permitting process so you don\'t have to manage two separate approval tracks.'
-    },
-    {
-      question: 'How do you handle the transition from original builder-grade concrete tile to premium systems?',
-      answer: 'Many Parkland homes built in the early 2000s have failing underlayment despite tiles that still look acceptable from the street. We assess your roof\'s condition through inspection, document underlayment deterioration, and recommend either underlayment replacement with tile preservation (if tiles are still sound) or complete tile system replacement depending on condition and your long-term goals. Both approaches bring your roof back to full waterproof integrity.'
-    },
-    {
-      question: 'What\'s the total timeline for a Parkland roof replacement?',
-      answer: 'The on-site labor for most Parkland roof replacements takes approximately 3 working days. However, the total project timeline from initial consultation to final inspection is typically 6–10 weeks for Parkland properties. This accounts for HOA architectural review (2–4 weeks), permit processing through the City of Parkland building department, material ordering, the physical installation, and final building inspections. We coordinate HOA and permit submissions in parallel whenever possible to minimize total project time.'
-    },
-    {
-      question: 'Do you provide documentation for insurance purposes?',
-      answer: 'Yes. After installation, you receive complete project documentation including permit approvals, final inspection sign-offs, product certifications, manufacturer warranty registrations, and a new Wind Mitigation report. This documentation supports insurance renewal, demonstrates full code compliance, and is yours to use however you need — whether for your insurer, HOA records, or future property transactions.'
-    }
+    { q: 'How much does a roof replacement cost in Parkland?', a: 'A roof replacement in Parkland typically runs $14,000 to $60,000 or more in 2026. Family homes in shingle sit at the lower end; Mediterranean tile estates in Parkland Golf & Country Club and Watercrest run to the higher end, and ranch properties with barns are priced per structure.' },
+    { q: "Do you handle HOA approval in Parkland's gated communities?", a: 'Yes. For gated communities like Parkland Golf & Country Club, Heron Bay, Watercrest, and Parkland Isles, we manage the full architectural-review process — matching the required roof profile and color and submitting the documentation your HOA needs to approve the project.' },
+    { q: 'Do you roof equestrian ranches and barns in Parkland?', a: 'Yes. Pine Tree Estates and the BBB Ranches are no-HOA equestrian neighborhoods with one-acre-plus lots, barns, and stables. We roof the whole property, and metal roofing is a natural fit for the agricultural structures.' },
+    { q: 'Is Parkland in the High-Velocity Hurricane Zone?', a: 'Yes. Parkland is in Broward County, which is legally within the High-Velocity Hurricane Zone, so every roof must meet Miami-Dade HVHZ code — the strictest wind standard in the country. We build to it on every job.' }
   ];
-
+  const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
   return (
     <>
       <Helmet>
-        <title>Roof Replacement Parkland, FL | Luxury Tile & Slate | All Phase</title>
-        <meta
-          name="description"
-          content="Parkland FL roofing contractor for Heron Bay, Parkland Golf & Country Club, Watercrest. Premium tile, metal & shingle roofing. HOA experts. (754) 227-5605."
-        />
-        <script type="application/ld+json">
-          {JSON.stringify(localBusinessSchema)}
-        </script>
+        <title>Roofing Contractor in Parkland, FL | All Phase USA</title>
+        <meta name="description" content="Parkland, FL roofer for golf estates, gated communities & equestrian ranches — premium tile, metal & shingle, HOA review handled, HVHZ-code. (754) 227-5605." />
+        <link rel="canonical" href="https://allphaseconstructionfl.com/locations/parkland" />
+        <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
-
-      <StickyConversionBar />
-
-      <div className="min-h-screen bg-[#09090b] text-white">
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-[#09090b] via-zinc-950 to-[#27272a] pt-44 pb-20">
+      <div className="min-h-screen bg-black text-white">
+        <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
-              <nav className="flex items-center space-x-2 text-sm text-zinc-400 mb-8">
-                <Link to="/" className="hover:text-red-600 transition-colors">Home</Link>
-                <ChevronRight className="w-4 h-4" />
-                <Link to="/locations/service-areas" className="hover:text-red-600 transition-colors">Service Areas</Link>
-                <ChevronRight className="w-4 h-4" />
-                <span className="text-white">{cityName}</span>
-              </nav>
-
-              <div className="inline-flex items-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium mb-4 border border-zinc-700">
-                <Clock className="w-4 h-4" />
-                OPEN 24/7 / 365 DAYS
-              </div>
-
-              <div className="flex items-center gap-3 mb-6">
-                <MapPin className="w-8 h-8 text-red-600 flex-shrink-0" />
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  Roofing Contractor in Parkland, FL
-                </h1>
-                <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
-                  <span className="text-yellow-400">★ 4.8 Google</span>
-                  <span className="text-red-400">·</span>
-                  <span>2,500+ Roofs</span>
-                  <span className="text-red-400">·</span>
-                  <span>Dual-Licensed Since 2005</span>
-                </div>
-              </div>
-
-              <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
-                <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
-              </div>
-
-              <div className="prose prose-invert max-w-none mb-8">
-                <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  Replacing a roof in Heron Bay or Parkland Golf & Country Club involves far more than installation — it requires navigating architectural review boards, coordinating guard gate access, and delivering workmanship with materials that meet your community's exacting standards. Most Parkland homes were built between the 1990s and 2010s, and many original builder-grade concrete tile roofs are now approaching their first major replacement cycle. The tiles may look fine from the street, but the underlayment beneath has often failed after 20–25 years of South Florida heat, humidity, and storm exposure.
-                </p>
-                <p className="text-xl text-zinc-300 leading-relaxed">
-                  All Phase Construction USA specializes in premium <Link to="/roof-replacement-process" className="text-red-600 hover:text-red-500 underline transition-colors">roof replacement</Link> for Parkland's gated communities — from <Link to="/tile-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">concrete and clay barrel tile</Link> to <Link to="/metal-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">standing seam metal</Link> and <Link to="/shingle-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">designer shingle</Link> systems. We handle HOA submissions, gate coordination, City of Parkland permits, and every inspection — so you get a turnkey experience from consultation through final sign-off.
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link
-                  to="/contact/"
-                  className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
-                >
-                  <FileCheck className="w-6 h-6" />
-                  Schedule Free Inspection in Parkland
-                </Link>
-                <a
-                  href="tel:754-227-5605"
-                  className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
-                >
-                  <Phone className="w-6 h-6" />
-                  (754) 227-5605
-                </a>
+              <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Parkland, FL</h1></div>
+              <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor in Parkland Florida for luxury golf estates, gated communities, and equestrian ranches?" /></div>
+              <AtomicAnswer>Parkland, FL is Broward County’s upscale, equestrian family suburb — founded in 1963 as a rural sanctuary that famously had no traffic lights or stores until the 1990s, where horses once outnumbered people. Its housing runs from Greg Norman golf estates to no-HOA horse ranches. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs premium tile, standing-seam metal, and shingle to Miami-Dade HVHZ code — legally required here in Broward. Roof replacements run $14,000 to $60,000 and up.</AtomicAnswer>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
+                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
               </div>
             </div>
           </div>
         </section>
+        <CityProjectGallery slug="parkland" />
 
-        {/* Why Choose All Phase */}
-        <section className="py-20 bg-[#27272a]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-start gap-4 mb-6">
-              <Award className="w-10 h-10 text-red-600 flex-shrink-0 mt-1" />
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Why Parkland Homeowners Choose All Phase Construction USA
-                </h2>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mt-10">
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <Palette className="w-5 h-5 text-red-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">HOA Architectural Review Navigation</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  We prepare and submit all required documentation — color samples, material profiles, specifications, and roof profiles — before any installation begins. Your architectural review board submission is handled, not handed off. Properly prepared documentation means first-review approval instead of months of revisions.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <Lock className="w-5 h-5 text-red-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Gated Community Logistics</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  Expert scheduling with guard gates, pre-arranged staging approvals, and strict adherence to community noise ordinances and quiet hours. We know how Heron Bay operates differently than Parkland Golf & Country Club — and we coordinate accordingly for every Parkland community.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <Star className="w-5 h-5 text-red-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Premium Material Specialization</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  Concrete and clay barrel tile, standing seam metal, and TAMKO designer architectural shingles — we work exclusively with high-quality materials that match Parkland's Mediterranean-inspired architecture and meet HOA aesthetic standards. No builder-grade shortcuts.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <Users className="w-5 h-5 text-red-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Reputation-Driven Service</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  In a tight-knit community where word-of-mouth drives contractor selection, our track record speaks for itself. Referrals within the Marjory Stoneman Douglas High School community and Parkland neighborhood networks remain our primary source of new business.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <Layers className="w-5 h-5 text-red-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Underlayment Failure Specialists</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  Many Parkland homes built in the early 2000s have builder-grade concrete tile with failing underlayment — the tiles look fine from the street, but waterproof integrity is compromised. We diagnose these hidden failures and transition homes to premium underlayment systems rated for Florida's demanding climate.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-red-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Dual-Licensed Contractor</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  Our dual licensing (CCC-1331464 roofing + CGC-1526236 general contractor) means we handle both the roof system and any structural repairs underneath — rotted decking, compromised trusses, fascia and soffit work — all under one contract. One accountable team, no subcontractors, no gaps.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 3-Step Process */}
-        <section className="py-20 bg-[#09090b]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              How Our Parkland Roofing Process Works
-            </h2>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-12">
-              Getting a new roof in a gated community shouldn't require project management expertise. All Phase Construction USA handles every complexity — HOA approvals, gate coordination, permits, inspections — so you experience a streamlined path to a premium roof.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="relative">
-                <div className="absolute -top-4 -left-2 text-7xl font-black text-red-600/20">1</div>
-                <div className="relative bg-[#27272a] border border-zinc-800 rounded-xl p-6 pt-10">
-                  <h3 className="text-xl font-bold mb-4">HOA Compliance Assessment</h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    We begin by reviewing your community's architectural guidelines and CC&Rs. Our team prepares all required documentation for architectural review board submission — material specifications, color coordination samples, and roof profiles. We coordinate guard gate access schedules with community management and secure staging area approvals before any materials arrive. Every material selection is verified against your community's aesthetic standards.
-                  </p>
-                </div>
-              </div>
-
-              <div className="relative">
-                <div className="absolute -top-4 -left-2 text-7xl font-black text-red-600/20">2</div>
-                <div className="relative bg-[#27272a] border border-zinc-800 rounded-xl p-6 pt-10">
-                  <h3 className="text-xl font-bold mb-4">Premium Material Installation</h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    Once approvals are secured, our team installs concrete tile, clay barrel tile, or standing seam metal roofing systems designed for Parkland homes ranging from 2,500 to 4,500+ square feet. We replace deteriorated builder-grade underlayment with premium synthetic or self-adhered (peel-and-stick) systems rated for Florida's climate. All fastening, flashing, and clip systems meet Florida Building Code requirements for hurricane resistance. We work strictly within community noise ordinances throughout installation.
-                  </p>
-                </div>
-              </div>
-
-              <div className="relative">
-                <div className="absolute -top-4 -left-2 text-7xl font-black text-red-600/20">3</div>
-                <div className="relative bg-[#27272a] border border-zinc-800 rounded-xl p-6 pt-10">
-                  <h3 className="text-xl font-bold mb-4">Final Inspection & Warranty</h3>
-                  <p className="text-zinc-400 leading-relaxed">
-                    We coordinate all inspections through the City of Parkland building department — structural, zoning, and fire marshal review as required. You receive comprehensive manufacturer warranties backed by documented compliance with installation guidelines, plus a Wind Mitigation report for potential insurance premium reductions. Complete project documentation is provided for HOA records and future property transactions.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Investment Options */}
-        <section className="py-20 bg-[#27272a]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Investment in Your Parkland Home
-            </h2>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-10">
-              Choose the roofing system that matches your home's architecture and your long-term protection goals. All pricing reflects typical Parkland homes — your property receives a detailed assessment and free estimate before any commitment.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-zinc-800/50 border-2 border-red-600 rounded-xl p-8 relative">
-                <div className="absolute -top-3 right-6 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">MOST POPULAR</div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Home className="w-6 h-6 text-red-500" />
-                  <h3 className="text-xl font-bold">Premium Tile Replacement</h3>
-                </div>
-                <p className="text-2xl font-bold text-red-500 mb-2">$22,000–$35,000</p>
-                <p className="text-sm text-zinc-400 mb-6">Typical 2,500–3,500 sq ft homes</p>
-                <ul className="space-y-3 text-zinc-400">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Concrete and clay barrel tile with premium underlayment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Hurricane-rated clips and flashing systems</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Full tear-off with deck inspection and repair</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>50–75 year tile lifespan, 25–30 year underlayment cycles</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Complete HOA documentation and permit handling</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Wind className="w-6 h-6 text-red-500" />
-                  <h3 className="text-xl font-bold">Standing Seam Metal</h3>
-                </div>
-                <p className="text-2xl font-bold text-red-500 mb-2">$28,000–$45,000</p>
-                <p className="text-sm text-zinc-400 mb-6">3,000–4,500 sq ft applications</p>
-                <ul className="space-y-3 text-zinc-400">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Designer profiles with architectural appeal</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Exceptional hurricane resistance and wind ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>High solar reflectivity for energy efficiency</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>40–70 year lifespan, eliminates underlayment concerns</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Often qualifies for insurance premium discounts</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Layers className="w-6 h-6 text-red-500" />
-                  <h3 className="text-xl font-bold">TAMKO Designer Shingles</h3>
-                </div>
-                <p className="text-2xl font-bold text-red-500 mb-2">$18,000–$28,000</p>
-                <p className="text-sm text-zinc-400 mb-6">Standard Parkland home sizes</p>
-                <ul className="space-y-3 text-zinc-400">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>TAMKO premium impact-resistant architectural shingles</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Multiple color and profile options for HOA compliance</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>30–50 year warranty on premium products</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Ideal for transitional architecture styles</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span>Best value entry point for complete replacement</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* What Makes Us Different */}
-        <section className="py-20 bg-[#09090b]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              What Makes All Phase Different From Other Parkland Roofers
-            </h2>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-10">
-              Most roofing contractors focus on speed and volume. All Phase Construction USA focuses on outcomes for Parkland homeowners — where reputation drives referrals and quality workmanship defines every project.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-4 bg-zinc-800/30 rounded-xl p-6 border border-zinc-700/50">
-                <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-lg font-bold mb-2">Gated Community Specialists</h3>
-                  <p className="text-zinc-400">Unlike general contractors who learn your community's requirements on your time and budget, we already understand the logistics of working in Parkland's exclusive neighborhoods. Guard gate coordination, staging limitations, HOA submission processes — we've navigated these hundreds of times.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 bg-zinc-800/30 rounded-xl p-6 border border-zinc-700/50">
-                <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-lg font-bold mb-2">First-Review HOA Approvals</h3>
-                  <p className="text-zinc-400">Architectural review boards in Heron Bay and Parkland Golf & Country Club have specific requirements. We handle material specifications, profile documentation, and color coordination so your submission is approved on first review — not bounced back for revisions that add months to your timeline.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 bg-zinc-800/30 rounded-xl p-6 border border-zinc-700/50">
-                <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-lg font-bold mb-2">Premium Materials Only</h3>
-                  <p className="text-zinc-400">We specialize in roofing materials that belong on Parkland homes: concrete and clay barrel tile lasting 50–75 years, standing seam metal with superior hurricane resistance, and TAMKO designer architectural shingles for transitional styles. No builder-grade shortcuts — ever.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 bg-zinc-800/30 rounded-xl p-6 border border-zinc-700/50">
-                <CheckCircle2 className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-lg font-bold mb-2">10-Year Workmanship Guarantee</h3>
-                  <p className="text-zinc-400">Separate from material warranties, our workmanship guarantee covers installation quality for a full decade. Proper licensure and insurance are always maintained to protect homeowners from liability and ensure full compliance with Florida standards.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Who We Serve */}
-        <section className="py-20 bg-[#27272a]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Parkland Communities We Serve
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-6 mt-10">
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Home className="w-6 h-6 text-red-500" />
-                  <h3 className="text-lg font-bold">Heron Bay</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  Concrete tile replacement and premium upgrades from original builder-grade materials. We understand Heron Bay's architectural review process and submit complete, conforming packages for first-review approval.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Star className="w-6 h-6 text-red-500" />
-                  <h3 className="text-lg font-bold">Parkland Golf & Country Club</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  <Link to="/metal-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">Metal roofing</Link> solutions and complete tile system replacements for homeowners seeking maximum durability with architectural elegance. HOA-compliant materials and colors for every home in the community.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Shield className="w-6 h-6 text-red-500" />
-                  <h3 className="text-lg font-bold">Watercrest & Cypress Head</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  HOA-compliant <Link to="/roof-replacement-process" className="text-red-500 hover:text-red-400 underline transition-colors">roof replacements</Link> with proper architectural review navigation. We handle every step from initial documentation through final inspection so you never have to manage the approval process yourself.
-                </p>
-              </div>
-
-              <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Award className="w-6 h-6 text-red-500" />
-                  <h3 className="text-lg font-bold">The Estates at Parkland</h3>
-                </div>
-                <p className="text-zinc-400 leading-relaxed">
-                  Designer homes with premium architectural requirements demanding the highest quality materials and expert workmanship. Standing seam metal, barrel tile, and custom roofing solutions for homes that demand excellence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials */}
-        <section className="py-20 bg-[#09090b]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10">
-              What Parkland Homeowners Say
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-8">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                  ))}
-                </div>
-                <p className="text-zinc-300 leading-relaxed mb-6 italic">
-                  "All Phase Construction USA handled everything with our Heron Bay HOA — submitted the materials documentation, got approval, coordinated with the gate, and installed a beautiful barrel tile roof. We didn't have to manage anything."
-                </p>
-                <p className="text-zinc-400 font-medium">— Heron Bay Homeowner</p>
-              </div>
-
-              <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-8">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                  ))}
-                </div>
-                <p className="text-zinc-300 leading-relaxed mb-6 italic">
-                  "Our original tile looked fine from the street, but they showed us the underlayment was completely deteriorated. The full replacement was handled professionally from permit to final inspection. Highly recommended to anyone in Parkland."
-                </p>
-                <p className="text-zinc-400 font-medium">— Parkland Golf & Country Club Resident</p>
-              </div>
-            </div>
-
-            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-red-500 mb-2">100%</p>
-                <p className="text-zinc-400 text-sm">HOA Approval Rate in Heron Bay</p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-red-500 mb-2">2,500+</p>
-                <p className="text-zinc-400 text-sm">Projects Completed</p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-red-500 mb-2">10-Year</p>
-                <p className="text-zinc-400 text-sm">Workmanship Guarantee</p>
-              </div>
-              <div className="bg-[#27272a] border border-zinc-800 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-red-500 mb-2">Dual</p>
-                <p className="text-zinc-400 text-sm">Licensed (Roofing + GC)</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Nearby Cities */}
-        <section className="py-16 bg-[#27272a]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-6">
-              Serving Parkland and Surrounding Communities
-            </h2>
-            <p className="text-zinc-400 mb-8">
-              All Phase Construction USA proudly serves Parkland and nearby cities across Broward County. We cover Heron Bay, Parkland Golf & Country Club, Watercrest, Cypress Head, The Estates at Parkland, and every community throughout Parkland, FL.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { name: 'Coral Springs', slug: 'coral-springs' },
-                { name: 'Coconut Creek', slug: 'coconut-creek' },
-                { name: 'Margate', slug: 'margate' },
-                { name: 'Deerfield Beach', slug: 'deerfield-beach' },
-                { name: 'Boca Raton', slug: 'boca-raton' },
-                { name: 'Tamarac', slug: 'tamarac' },
-                { name: 'Pompano Beach', slug: 'pompano-beach' },
-                { name: 'Fort Lauderdale', slug: 'fort-lauderdale' },
-              ].map((city) => (
-                <Link
-                  key={city.slug}
-                  to={`/locations/${city.slug}`}
-                  className="px-4 py-2 bg-zinc-800/50 border border-zinc-700 rounded-lg text-zinc-300 hover:text-white hover:border-red-600 transition-all text-sm"
-                >
-                  {city.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQs */}
-        <section className="py-20 bg-[#09090b]">
+        <section className="py-20 bg-zinc-950">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10">
-              Frequently Asked Questions — Parkland Roofing
-            </h2>
-
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="bg-[#27272a] border border-zinc-800 rounded-xl overflow-hidden"
-                >
-                  <button
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="w-full flex items-center justify-between p-6 text-left hover:bg-zinc-800/80 transition-colors"
-                  >
-                    <span className="text-lg font-semibold pr-4">{faq.question}</span>
-                    {openFaq === index ? (
-                      <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-zinc-400 flex-shrink-0" />
-                    )}
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-6 pb-6">
-                      <p className="text-zinc-400 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-#C5A572 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20 uppercase tracking-wide">The City’s Story</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">The Suburb That Kept the Horses and Skipped the Traffic Lights</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">Parkland was founded in 1963 with a deliberate philosophy: stay rural. For decades it had no traffic lights and no stores — none arrived until the 1990s — and horses genuinely outnumbered people. The city still protects that character with strict low-density zoning, its own residents-only public library, the largest farmers’ market in Broward County (held at the Equestrian Center), and quirks like the 20-foot Statue of Liberty replica in Liberty Park.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">That heritage is the roofing story. Parkland is two worlds at once: master-planned luxury communities on one side, and genuine multi-acre horse ranches on the other — and we roof both.</p>
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="py-20 bg-gradient-to-b from-[#27272a] to-zinc-950">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Schedule Your Premium Roofing Consultation
-            </h2>
-            <p className="text-xl text-zinc-300 leading-relaxed mb-4">
-              Choosing the right roofing contractor for your Parkland home matters. In a community where reputation drives referrals and quality workmanship defines outcomes, selecting a contractor with proven experience in your specific neighborhood eliminates risk.
-            </p>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-10">
-              We offer comprehensive HOA compliance assessments, material selection consultations, and detailed project planning — all before any commitment. Our free inspection identifies your roof's current condition, underlayment status, and recommended solutions.
-            </p>
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Golf Estates, Gated Communities, and Horse Ranches</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">On the luxury side, Parkland Golf & Country Club, Watercrest, Heron Bay, and Parkland Isles are gated, master-planned communities of Mediterranean estates, contemporary lake homes, and family houses — where tile and standing-seam metal are the norm and HOA architectural review is part of every job. We manage that approval end to end, matching the required profile and color.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">On the rural side, Pine Tree Estates and the BBB Ranches are non-gated, no-HOA neighborhoods of one-acre-plus equestrian properties — homes plus barns and stables, where metal roofing shines. As a dual-licensed general contractor, we roof the whole property and handle any structural work older ranch buildings need on the same permit.</p>
+          </div>
+        </section>
 
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-blue-500/20 uppercase tracking-wide">HVHZ</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Built to Broward’s Toughest Wind Code</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">Parkland is in Broward County, inside the legally-defined High-Velocity Hurricane Zone, so every roof here — estate, ranch, or family home — must meet Miami-Dade HVHZ code, the strictest wind standard in the country. On Parkland’s large, open lots with room between homes, wind exposure is real, and that engineered attachment is what keeps premium tile and metal in place.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">Meeting HVHZ code is also what earns your home wind-mitigation insurance credits — which matter on high-value Parkland estates. We document every qualifying feature so your insurer can apply the savings.</p>
+          </div>
+        </section>
+
+        <section className="py-16 bg-zinc-900">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Parkland Neighborhoods We Roof</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">{['Heron Bay', 'Watercrest', 'Parkland Golf & Country Club', 'Pine Tree Estates', 'Parkland Isles', 'BBB Ranches'].map(n => (<div key={n} className="bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-4 text-center text-zinc-200 font-semibold">{n}</div>))}</div>
+          </div>
+        </section>
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Parkland Roofing FAQs</h2>
+            <div className="space-y-6">{faqs.map(f => (<div key={f.q} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6"><h3 className="text-lg font-bold text-white mb-3">{f.q}</h3><p className="text-zinc-300 leading-relaxed">{f.a}</p></div>))}</div>
+          </div>
+        </section>
+        <section className="py-16 bg-gradient-to-b from-zinc-900 to-black text-center">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="inline-flex items-center gap-2 text-red-400 text-sm font-semibold mb-4"><Clock className="w-4 h-4" />24/7 Emergency Service</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready for a Straight Answer on Your Parkland Roof?</h2>
+            <p className="text-zinc-300 mb-8">Free inspection and honest guidance. Serving Parkland and all of Broward County.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact/"
-                className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:bg-red-700 transition-all"
-              >
-                <FileCheck className="w-6 h-6" />
-                Get Your Free Inspection
-              </Link>
-              <a
-                href="tel:754-227-5605"
-                className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-10 py-5 rounded-lg text-xl font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
-              >
-                <Phone className="w-6 h-6" />
-                Call (754) 227-5605
-              </a>
+              <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
+              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
             </div>
+            <p className="text-sm text-zinc-500 mt-6">Serving Parkland &amp; All of Broward County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>
         </section>
-
-        {/* Contact Form */}
-        <MoneyPageEnhancements cityName="Parkland" county="Broward" hvhz={true} />
         <Contact />
+        <StickyConversionBar />
       </div>
     </>
   );
