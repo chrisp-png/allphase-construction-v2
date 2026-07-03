@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/davie': {
+    title: 'Roofing Contractor in Davie, FL | All Phase USA',
+    description: 'Davie, FL roofer for equestrian ranches, gated estates \u0026 family suburbs \u2014 tile, metal, shingle, HOA review handled, HVHZ-code, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/davie'
+  },
   '/locations/wilton-manors': {
     title: 'Roofing Contractor in Wilton Manors, FL | All Phase USA',
     description: 'Wilton Manors, FL roofer for mid-century flat roofs \u0026 canal-front homes \u2014 TPO/PVC flat, shingle, tile \u0026 metal, HVHZ-code, dual-licensed. (754) 227-5605.',
