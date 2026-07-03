@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/pembroke-park': {
+    title: 'Roofing Contractor in Pembroke Park, FL | All Phase USA',
+    description: 'Pembroke Park, FL roofer for site-built homes, townhomes \u0026 commercial/warehouse flat roofs \u2014 HVHZ-code, dual-licensed roofing + GC since 2005. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park'
+  },
   '/locations/lauderdale-by-the-sea': {
     title: 'Roofing Contractor in Lauderdale-by-the-Sea, FL | All Phase USA',
     description: 'Lauderdale-by-the-Sea, FL barrier-island roofer \u2014 coastal-grade tile \u0026 standing-seam metal built for salt air and Atlantic wind, HVHZ code, dual-licensed. (754) 227-5605.',
