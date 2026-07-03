@@ -161,6 +161,9 @@ const MargateMoneyPage = lazy(() => import('./pages/locations/MargateMoneyPage')
 const LauderhillMoneyPage = lazy(() => import('./pages/locations/LauderhillMoneyPage'));
 const LauderdaleLakesMoneyPage = lazy(() => import('./pages/locations/LauderdaleLakesMoneyPage'));
 const NorthLauderdaleMoneyPage = lazy(() => import('./pages/locations/NorthLauderdaleMoneyPage'));
+const LauderdaleByTheSeaMoneyPage = lazy(() => import('./pages/locations/LauderdaleByTheSeaMoneyPage'));
+const PembrokeParkMoneyPage = lazy(() => import('./pages/locations/PembrokeParkMoneyPage'));
+const SeaRanchLakesMoneyPage = lazy(() => import('./pages/locations/SeaRanchLakesMoneyPage'));
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
@@ -351,6 +354,9 @@ function AppContent() {
             <Route path="/locations/lauderhill" element={<LauderhillMoneyPage />} />
             <Route path="/locations/lauderdale-lakes" element={<LauderdaleLakesMoneyPage />} />
             <Route path="/locations/north-lauderdale" element={<NorthLauderdaleMoneyPage />} />
+            <Route path="/locations/lauderdale-by-the-sea" element={<LauderdaleByTheSeaMoneyPage />} />
+            <Route path="/locations/pembroke-park" element={<PembrokeParkMoneyPage />} />
+            <Route path="/locations/sea-ranch-lakes" element={<SeaRanchLakesMoneyPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
