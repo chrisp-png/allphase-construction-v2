@@ -50,6 +50,16 @@ export interface SEOMetadata {
  * Static page titles - exact path matches
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
+  '/locations/greenacres': {
+    title: 'Roofing Contractor in Greenacres, FL | All Phase USA',
+    description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
+  },
+  '/locations/jupiter': {
+    title: 'Roofing Contractor in Jupiter, FL | All Phase USA',
+    description: 'Jupiter, FL coastal \u0026 waterfront roofer \u2014 tile \u0026 standing-seam metal built for Atlantic salt air at Florida\u2019s farthest-east point, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/jupiter'
+  },
   '/locations/lake-worth-beach': {
     title: 'Roofing Contractor in Lake Worth, FL (Lake Worth Beach)',
     description: 'Roofer in Lake Worth (Lake Worth Beach), FL — historic-district re-roofs, coastal tile, shingle & metal, dual-licensed & HVHZ-spec since 2005. (754) 227-5605.',
