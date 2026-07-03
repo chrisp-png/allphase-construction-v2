@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/loxahatchee-groves': {
+    title: 'Roofing Contractor in Loxahatchee Groves, FL | All Phase USA',
+    description: 'Loxahatchee Groves, FL roofer for rural homes, barns \u0026 ag structures on acreage \u2014 metal, shingle \u0026 tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves'
+  },
   '/locations/royal-palm-beach': {
     title: 'Roofing Contractor in Royal Palm Beach, FL | All Phase USA',
     description: 'Royal Palm Beach, FL roofer for gated, golf-course \u0026 no-HOA neighborhoods \u2014 tile, shingle \u0026 metal, HOA review handled, HVHZ-spec. (754) 227-5605.',
