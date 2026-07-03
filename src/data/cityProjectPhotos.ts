@@ -19,6 +19,16 @@ export interface CityProjectPhoto {
 }
 
 export const CITY_PROJECT_PHOTOS: Record<string, CityProjectPhoto[]> = {
+  "lake-worth-beach": [
+      {
+          "file": "lake-worth-beach-shingle-roofing-project-all-phase-usa.webp",
+          "alt": "Lake Worth Beach Shingle Roofing Project — All Phase Construction USA"
+      },
+      {
+          "file": "lake-worth-beach-tamko-titan-shingle-roofing-contractor-all-phase-usa.webp",
+          "alt": "Lake Worth Beach TAMKO Titan Shingle Roofing — All Phase Construction USA"
+      }
+  ],
   "boca-raton": [
       {
           "file": "all-phase-usa-metal-roof-replacement-boca-raton.webp",

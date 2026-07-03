@@ -50,6 +50,11 @@ export interface SEOMetadata {
  * Static page titles - exact path matches
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
+  '/locations/lake-worth-beach': {
+    title: 'Roofing Contractor in Lake Worth, FL (Lake Worth Beach)',
+    description: 'Roofer in Lake Worth (Lake Worth Beach), FL — historic-district re-roofs, coastal tile, shingle & metal, dual-licensed & HVHZ-spec since 2005. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach'
+  },
   '/': {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
     description: 'Free roof inspection in 48 hours. Dual-licensed South Florida roofer since 2005. 2,500+ roofs, A+ BBB, HVHZ-certified. Call (754) 227-5605.',

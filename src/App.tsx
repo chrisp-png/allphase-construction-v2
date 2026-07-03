@@ -153,6 +153,7 @@ const PlantationMoneyPage = lazy(() => import('./pages/locations/PlantationMoney
 const SunriseMoneyPage = lazy(() => import('./pages/locations/SunriseMoneyPage'));
 const TamaracMoneyPage = lazy(() => import('./pages/locations/TamaracMoneyPage'));
 const DelrayBeachMoneyPage = lazy(() => import('./pages/locations/DelrayBeachMoneyPage'));
+const LakeWorthBeachMoneyPage = lazy(() => import('./pages/locations/LakeWorthBeachMoneyPage'));
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
@@ -335,6 +336,7 @@ function AppContent() {
                 Explicit best-roofers-* routes above still win because React Router ranks
                 literal segments higher than params. */}
             <Route path="/locations/:city/:landmark" element={<DynamicLandmarkPage />} />
+            <Route path="/locations/lake-worth-beach" element={<LakeWorthBeachMoneyPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
