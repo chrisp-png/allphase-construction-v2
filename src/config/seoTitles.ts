@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/royal-palm-beach': {
+    title: 'Roofing Contractor in Royal Palm Beach, FL | All Phase USA',
+    description: 'Royal Palm Beach, FL roofer for gated, golf-course \u0026 no-HOA neighborhoods \u2014 tile, shingle \u0026 metal, HOA review handled, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/royal-palm-beach'
+  },
   '/locations/lantana': {
     title: 'Roofing Contractor in Lantana, FL | All Phase USA',
     description: 'Lantana, FL roofer for this historic fishing village \u2014 aging mainland homes to Hypoluxo Island waterfront, shingle, tile \u0026 metal, HVHZ-spec. (754) 227-5605.',
