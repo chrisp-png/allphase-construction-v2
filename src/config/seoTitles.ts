@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/north-lauderdale': {
+    title: 'Roofing Contractor in North Lauderdale, FL | All Phase USA',
+    description: 'North Lauderdale, FL roofer for the Morris Lapidus \u2018City of Tomorrow\u2019 \u2014 aging 1970s homes, HVHZ-code shingle, tile \u0026 metal, dual-licensed since 2005. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/north-lauderdale'
+  },
   '/locations/lauderdale-lakes': {
     title: 'Roofing Contractor in Lauderdale Lakes, FL | All Phase USA',
     description: 'Lauderdale Lakes, FL roofer for 1960s homes \u0026 condo communities \u2014 HVHZ-code shingle, tile \u0026 flat roofs, association approvals handled, dual-licensed. (754) 227-5605.',
