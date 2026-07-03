@@ -19,6 +19,16 @@ export interface CityProjectPhoto {
 }
 
 export const CITY_PROJECT_PHOTOS: Record<string, CityProjectPhoto[]> = {
+  "plantation": [
+      {
+          "file": "plantation-flat-roof-replacement-completed-all-phase-usa.webp",
+          "alt": "Plantation Flat Roof Replacement Completed — All Phase Construction USA"
+      },
+      {
+          "file": "plantation-flat-roof-and-shingle-roofing-in-progress-all-phase-usa.webp",
+          "alt": "Plantation Flat Roof and Shingle Roofing In Progress — All Phase Construction USA"
+      }
+  ],
   "boca-raton": [
       {
           "file": "all-phase-usa-metal-roof-replacement-boca-raton.webp",

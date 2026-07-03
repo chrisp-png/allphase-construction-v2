@@ -13,6 +13,7 @@ import AISearchRail from '../../components/AISearchRail';
 import { MapPin, Phone, Award, Shield, Clock, CheckCircle2, ChevronRight, ChevronDown, ChevronUp, FileCheck, Wrench, Star, Home, Wind, Users, Building2, Layers, TreePine, Droplets, ClipboardCheck, Zap } from 'lucide-react';
 import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
+import CityProjectGallery from '../../components/CityProjectGallery';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
@@ -159,6 +160,9 @@ export default function PlantationMoneyPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-115: Real city project photos from public/projects/ */}
+        <CityProjectGallery slug="plantation" />
 
         {/* Why Choose All Phase */}
         <section className="py-20 bg-[#27272a]">
