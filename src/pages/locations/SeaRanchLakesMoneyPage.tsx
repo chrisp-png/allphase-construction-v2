@@ -2,6 +2,7 @@
  * Sea Ranch Lakes Custom Location Page (PR-119) — hand-built, unique local content.
  */
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import AISearchRail from '../../components/AISearchRail';
 import AtomicAnswer from '../../components/AtomicAnswer';
 import CityProjectGallery from '../../components/CityProjectGallery';
@@ -95,6 +96,25 @@ export default function SeaRanchLakesMoneyPage() {
               <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving Sea Ranch Lakes &amp; All of Broward County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
+          </div>
+        </section>
+        <section className="py-16 bg-zinc-950 border-t border-zinc-900">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Roofing Near Sea Ranch Lakes</h2>
+            <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">All Phase Construction USA also serves the communities around Sea Ranch Lakes across Broward County:</p>
+            <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-3 text-zinc-300">
+              <Link to="/locations/lauderdale-by-the-sea" className="hover:text-red-500 transition-colors font-semibold">Lauderdale-by-the-Sea</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/pompano-beach" className="hover:text-red-500 transition-colors font-semibold">Pompano Beach</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/fort-lauderdale" className="hover:text-red-500 transition-colors font-semibold">Fort Lauderdale</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/oakland-park" className="hover:text-red-500 transition-colors font-semibold">Oakland Park</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/lighthouse-point" className="hover:text-red-500 transition-colors font-semibold">Lighthouse Point</Link>
+              <span className="text-zinc-600">•</span>
+              <Link to="/locations/broward-county" className="text-[#C5A572] hover:text-white transition-colors font-semibold">All Broward County</Link>
+            </div>
           </div>
         </section>
         <Contact />
