@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/palm-beach': {
+    title: 'Roofing Contractor in Palm Beach, FL | All Phase USA',
+    description: 'Palm Beach, FL roofer for historic Mediterranean tile estates on the island \u2014 clay/concrete tile \u0026 metal, coastal-grade, architectural review handled, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/palm-beach'
+  },
   '/locations/southwest-ranches': {
     title: 'Roofing Contractor in Southwest Ranches, FL | All Phase USA',
     description: 'Southwest Ranches, FL roofer for luxury estates, ranches \u0026 barns on acreage \u2014 premium tile, metal \u0026 shingle, HVHZ-code, dual-licensed. (754) 227-5605.',
