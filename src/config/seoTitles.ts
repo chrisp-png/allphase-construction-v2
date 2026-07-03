@@ -365,13 +365,13 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // (legacy inline <link rel="canonical"> useEffect) stops winning the
   // render. Canonical matches the policy: no trailing slash.
   '/locations/palm-beach-county': {
-    title: 'Palm Beach County Roofing Contractor | All Phase USA',
-    description: 'Dual-licensed Palm Beach County roofing contractor — Boca Raton, WPB, Wellington, Delray & Jupiter. Voluntarily built to HVHZ spec. (754) 227-5605.',
+    title: 'Roofing Contractor in Palm Beach County, FL | All Phase USA',
+    description: 'Palm Beach County, FL roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coastal to inland, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
   },
   '/locations/broward-county': {
-    title: 'Broward County Roofing Contractor | All Phase USA',
-    description: 'Dual-licensed, HVHZ-certified Broward County roofing contractor — Deerfield Beach, Pompano, Fort Lauderdale, Coral Springs & Hollywood. (754) 227-5605.',
+    title: 'Roofing Contractor in Broward County, FL | All Phase USA',
+    description: 'Broward County, FL roofer serving all 28 cities from our Deerfield Beach office \u2014 HVHZ-code tile, shingle, metal \u0026 flat roofs, dual-licensed since 2005. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/broward-county'
   },
   '/locations/service-areas': {
