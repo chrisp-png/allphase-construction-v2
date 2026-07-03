@@ -50,6 +50,56 @@ export interface SEOMetadata {
  * Static page titles - exact path matches
  */
 export const SEO_TITLES: Record<string, SEOMetadata> = {
+  '/locations/cooper-city': {
+    title: 'Roofing Contractor in Cooper City, FL | All Phase USA',
+    description: 'Cooper City, FL roofer for family suburbs \u0026 gated communities — HVHZ-code tile \u0026 shingle, HOA review handled, dual-licensed since 2005. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/cooper-city'
+  },
+  '/locations/dania-beach': {
+    title: 'Roofing Contractor in Dania Beach, FL | All Phase USA',
+    description: 'Dania Beach, FL roofer for Broward\u2019s oldest city — coastal homes, condos \u0026 aging bungalows, HVHZ-code tile, shingle \u0026 flat, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/dania-beach'
+  },
+  '/locations/weston': {
+    title: 'Roofing Contractor in Weston, FL | All Phase USA',
+    description: 'Weston, FL roofer for master-planned gated communities — aging 1990s tile roofs, HVHZ-code, HOA review handled, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/weston'
+  },
+  '/locations/haverhill': {
+    title: 'Roofing Contractor in Haverhill, FL | All Phase USA',
+    description: 'Haverhill, FL roofer for this small central Palm Beach County town — aging single-family homes, shingle \u0026 tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/haverhill'
+  },
+  '/locations/highland-beach': {
+    title: 'Roofing Contractor in Highland Beach, FL | All Phase USA',
+    description: 'Highland Beach, FL roofer for oceanfront condos \u0026 barrier-island estates — coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/highland-beach'
+  },
+  '/locations/hypoluxo': {
+    title: 'Roofing Contractor in Hypoluxo, FL | All Phase USA',
+    description: 'Hypoluxo, FL roofer for this small Intracoastal town — modest homes to island waterfront, shingle, tile \u0026 metal, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/hypoluxo'
+  },
+  '/locations/jupiter-inlet-colony': {
+    title: 'Roofing Contractor in Jupiter Inlet Colony, FL | All Phase USA',
+    description: 'Jupiter Inlet Colony, FL roofer for this gated oceanfront island town — coastal-grade tile \u0026 standing-seam metal, HVHZ-spec, discreet. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/jupiter-inlet-colony'
+  },
+  '/locations/ocean-ridge': {
+    title: 'Roofing Contractor in Ocean Ridge, FL | All Phase USA',
+    description: 'Ocean Ridge, FL roofer for barrier-island oceanfront \u0026 Intracoastal estates — coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/ocean-ridge'
+  },
+  '/locations/palm-beach-shores': {
+    title: 'Roofing Contractor in Palm Beach Shores, FL | All Phase USA',
+    description: 'Palm Beach Shores, FL roofer on Singer Island — beach homes, condos \u0026 marina waterfront, coastal-grade tile, metal \u0026 flat, HVHZ-spec. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-shores'
+  },
+  '/locations/westlake': {
+    title: 'Roofing Contractor in Westlake, FL | All Phase USA',
+    description: 'Westlake, FL roofer for Palm Beach County\u2019s newest city — new-construction repairs, storm damage \u0026 tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/westlake'
+  },
   '/locations/greenacres': {
     title: 'Roofing Contractor in Greenacres, FL | All Phase USA',
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
@@ -315,13 +365,13 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // (legacy inline <link rel="canonical"> useEffect) stops winning the
   // render. Canonical matches the policy: no trailing slash.
   '/locations/palm-beach-county': {
-    title: 'Palm Beach County Roofing Contractor | All Phase USA',
-    description: 'Dual-licensed Palm Beach County roofing contractor — Boca Raton, WPB, Wellington, Delray & Jupiter. Voluntarily built to HVHZ spec. (754) 227-5605.',
+    title: 'Roofing Contractor in Palm Beach County, FL | All Phase USA',
+    description: 'Palm Beach County, FL roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coastal to inland, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
   },
   '/locations/broward-county': {
-    title: 'Broward County Roofing Contractor | All Phase USA',
-    description: 'Dual-licensed, HVHZ-certified Broward County roofing contractor — Deerfield Beach, Pompano, Fort Lauderdale, Coral Springs & Hollywood. (754) 227-5605.',
+    title: 'Roofing Contractor in Broward County, FL | All Phase USA',
+    description: 'Broward County, FL roofer serving all 28 cities from our Deerfield Beach office \u2014 HVHZ-code tile, shingle, metal \u0026 flat roofs, dual-licensed since 2005. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/broward-county'
   },
   '/locations/service-areas': {
