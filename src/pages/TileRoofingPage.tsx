@@ -1217,6 +1217,11 @@ export default function TileRoofingPage() {
         sectionIntro="Tile pricing, HOA approval, and engineered load requirements vary by city. These guides cover the specifics in our top tile-roofing markets."
         blogPosts={[
           {
+            title: "Clay vs. Concrete Tile Roofs in South Florida (2026)",
+            url: "/blog/clay-vs-concrete-tile-roofs-south-florida-2026",
+            excerpt: "Clay costs more but is stronger out of the gate, more walkable, and never fades — and on either one, the underlayment matters just as much as the tile. An honest 2026 breakdown."
+          },
+          {
             title: "Tile Roof Replacement in Wellington",
             url: "/tile-roof-replacement-wellington",
             excerpt: "Concrete vs clay pricing, HOA architectural review, engineered load certification, and the HVHZ attachment system that determines whether your Wellington tile roof passes inspection."
