@@ -55,6 +55,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
+  '/locations/miramar': {
+    title: 'Roofing Contractor in Miramar, FL | All Phase USA',
+    description: 'Miramar, FL roofer for the City of Lakes \u2014 master-planned lake communities \u0026 older Broward homes, HVHZ-code tile, shingle \u0026 metal, dual-licensed. (754) 227-5605.',
+    canonical: 'https://allphaseconstructionfl.com/locations/miramar'
+  },
   '/locations/jupiter': {
     title: 'Roofing Contractor in Jupiter, FL | All Phase USA',
     description: 'Jupiter, FL coastal \u0026 waterfront roofer \u2014 tile \u0026 standing-seam metal built for Atlantic salt air at Florida\u2019s farthest-east point, HVHZ-spec. (754) 227-5605.',
