@@ -53,3 +53,15 @@
 
 /blog/*
   X-Robots-Tag: index, follow
+
+# Insurance-claim pages: noindex (off-strategy; keep live but out of the index) — REVERSIBLE
+/west-palm-beach-roof-insurance-claim
+  X-Robots-Tag: noindex
+/boynton-beach-roof-insurance-claim
+  X-Robots-Tag: noindex
+/wellington-roof-insurance-claim
+  X-Robots-Tag: noindex
+/palm-beach-county-roof-insurance-claim
+  X-Robots-Tag: noindex
+/lake-worth-beach-roof-insurance-claim
+  X-Robots-Tag: noindex
