@@ -996,6 +996,8 @@ export default function BestRoofersPalmBeachGardensPage() {
                 { to: '/locations/west-palm-beach/best-roofers-west-palm-beach', label: 'West Palm Beach' },
                 { to: '/locations/boca-raton/best-roofers-boca-raton', label: 'Boca Raton' },
                 { to: '/locations/coral-springs/best-roofers-coral-springs', label: 'Coral Springs' },
+                { to: '/locations/delray-beach/best-roofers-delray-beach', label: 'Delray Beach' },
+                { to: '/locations/parkland/best-roofers-parkland', label: 'Parkland' },
               ].map(link => (
                 <a key={link.to} href={link.to} className="px-4 py-2 bg-zinc-800 hover:bg-red-600 text-zinc-300 hover:text-white rounded-lg text-sm transition-colors duration-200">
                   {link.label}
