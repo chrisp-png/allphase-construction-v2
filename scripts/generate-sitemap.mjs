@@ -60,6 +60,7 @@ const EXCLUDED_PATH_PATTERNS = [
   /^\/qa\//,                     // QA / internal tools
   /^\/calculator$/,              // Redirect-only route, canonical is /roof-cost-calculator
   /^\/sitemap$/,                 // Avoid recursion — sitemap.html lives at /sitemap.html not /sitemap
+  /-roof-insurance-claim$/,       // Insurance-claim pages: noindex'd via _headers, keep out of sitemap
 ];
 
 function isExcluded(urlPath) {
