@@ -179,6 +179,16 @@ const PembrokePinesMoneyPage = lazy(() => import('./pages/locations/PembrokePine
 const HallandaleBeachMoneyPage = lazy(() => import('./pages/locations/HallandaleBeachMoneyPage'));
 const SouthwestRanchesMoneyPage = lazy(() => import('./pages/locations/SouthwestRanchesMoneyPage'));
 const PalmBeachMoneyPage = lazy(() => import('./pages/locations/PalmBeachMoneyPage'));
+const CooperCityMoneyPage = lazy(() => import('./pages/locations/CooperCityMoneyPage'));
+const DaniaBeachMoneyPage = lazy(() => import('./pages/locations/DaniaBeachMoneyPage'));
+const WestonMoneyPage = lazy(() => import('./pages/locations/WestonMoneyPage'));
+const HaverhillMoneyPage = lazy(() => import('./pages/locations/HaverhillMoneyPage'));
+const HighlandBeachMoneyPage = lazy(() => import('./pages/locations/HighlandBeachMoneyPage'));
+const HypoluxoMoneyPage = lazy(() => import('./pages/locations/HypoluxoMoneyPage'));
+const JupiterInletColonyMoneyPage = lazy(() => import('./pages/locations/JupiterInletColonyMoneyPage'));
+const OceanRidgeMoneyPage = lazy(() => import('./pages/locations/OceanRidgeMoneyPage'));
+const PalmBeachShoresMoneyPage = lazy(() => import('./pages/locations/PalmBeachShoresMoneyPage'));
+const WestlakeMoneyPage = lazy(() => import('./pages/locations/WestlakeMoneyPage'));
 const BoyntonBeachMoneyPage = lazy(() => import('./pages/locations/BoyntonBeachMoneyPage'));
 const WestPalmBeachMoneyPage = lazy(() => import('./pages/locations/WestPalmBeachMoneyPage'));
 const CoconutCreekMoneyPage = lazy(() => import('./pages/locations/CoconutCreekMoneyPage'));
@@ -387,6 +397,16 @@ function AppContent() {
             <Route path="/locations/hallandale-beach" element={<HallandaleBeachMoneyPage />} />
             <Route path="/locations/southwest-ranches" element={<SouthwestRanchesMoneyPage />} />
             <Route path="/locations/palm-beach" element={<PalmBeachMoneyPage />} />
+            <Route path="/locations/cooper-city" element={<CooperCityMoneyPage />} />
+            <Route path="/locations/dania-beach" element={<DaniaBeachMoneyPage />} />
+            <Route path="/locations/weston" element={<WestonMoneyPage />} />
+            <Route path="/locations/haverhill" element={<HaverhillMoneyPage />} />
+            <Route path="/locations/highland-beach" element={<HighlandBeachMoneyPage />} />
+            <Route path="/locations/hypoluxo" element={<HypoluxoMoneyPage />} />
+            <Route path="/locations/jupiter-inlet-colony" element={<JupiterInletColonyMoneyPage />} />
+            <Route path="/locations/ocean-ridge" element={<OceanRidgeMoneyPage />} />
+            <Route path="/locations/palm-beach-shores" element={<PalmBeachShoresMoneyPage />} />
+            <Route path="/locations/westlake" element={<WestlakeMoneyPage />} />
             <Route path="/locations/:city" element={<DynamicLocationPage />} />
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
