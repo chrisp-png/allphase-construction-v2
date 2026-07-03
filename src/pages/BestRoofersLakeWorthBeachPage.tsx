@@ -9,8 +9,8 @@ export default function BestRoofersLakeWorthBeachPage() {
   return (
     <div className="min-h-screen bg-zinc-950">
       <Helmet>
-        <title>5 Best Roofers in Lake Worth Beach, FL (2026 Reviewed)</title>
-        <meta name="description" content="Top 5 best-rated roofers in Lake Worth Beach, FL for 2026 — licensed, HVHZ-certified, and reviewed. See who made the list. Free quote: (754) 227-5605." />
+        <title>Best Roofers in Lake Worth, FL (2026) | Lake Worth Beach</title>
+        <meta name="description" content="Top-rated roofers in Lake Worth, FL (officially Lake Worth Beach) — licensed, HVHZ-certified roofing contractors reviewed for 2026. Free quote: (754) 227-5605." />
       </Helmet>
 
       {/* Hero Section */}
@@ -23,7 +23,7 @@ export default function BestRoofersLakeWorthBeachPage() {
               <span className="text-red-500 font-semibold uppercase tracking-wide text-sm">2026 Guide</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Top 5 Best Rated Roofers in Lake Worth Beach, FL (2026)
+              Top 5 Best Rated Roofers in Lake Worth (Lake Worth Beach), FL — 2026
             </h1>
             <div className="mt-6 mb-6">
               <AISearchRail query="Who are the best dual-licensed roofing contractors in Lake Worth Beach Florida and what should I look for when comparing them?" />
@@ -36,13 +36,27 @@ export default function BestRoofersLakeWorthBeachPage() {
         </div>
       </section>
 
+      {/* Recent Lake Worth projects (PR-117) */}
+      <section className="py-12 bg-black">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">Recent Lake Worth Roofing Projects</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <img src="/projects/lake-worth-beach-shingle-roofing-project-all-phase-usa.webp" alt="Shingle roofing project in Lake Worth (Lake Worth Beach), FL — All Phase Construction USA" width={1440} height={1080} loading="lazy" decoding="async" className="rounded-xl w-full h-auto border border-zinc-800" />
+            <img src="/projects/lake-worth-beach-tamko-titan-shingle-roofing-contractor-all-phase-usa.webp" alt="TAMKO Titan shingle roofing by All Phase Construction USA in Lake Worth, FL" width={1440} height={1080} loading="lazy" decoding="async" className="rounded-xl w-full h-auto border border-zinc-800" />
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <section className="py-16 bg-zinc-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Intro */}
           <div className="prose prose-invert prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold text-white mb-6">Finding a Roofer in Lake Worth Beach You Can Actually Trust</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Finding a Roofer in Lake Worth (Lake Worth Beach) You Can Trust</h2>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              <strong className="text-white">Lake Worth or Lake Worth Beach?</strong> They&apos;re the same city — locals have always called it <strong>Lake Worth</strong>, and it was officially renamed <strong>Lake Worth Beach</strong> in 2019. So whether you&apos;re searching for a roofer in Lake Worth or a Lake Worth Beach roofing contractor, you&apos;re in the right place.
+            </p>
             <p className="text-zinc-300 leading-relaxed mb-4">
               <Link to="/locations/lake-worth-beach" className="text-red-500 hover:text-red-400 underline">Lake Worth Beach roofing services</Link> protect homes in one of South Florida's most charming and artsy communities. Located right on the Atlantic Ocean, this coastal city combines historic charm with a vibrant, eclectic character. Many homes date back to the 1940s–1960s, while newer developments sit alongside commercial buildings with distinctive art deco styling.
             </p>
