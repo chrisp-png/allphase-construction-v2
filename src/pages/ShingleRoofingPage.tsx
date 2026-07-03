@@ -1230,6 +1230,11 @@ export default function ShingleRoofingPage() {
         sectionIntro="Understand shingle options, compare costs, and learn what to look for in a quality shingle installation."
         blogPosts={[
           {
+            title: "Clay vs. Concrete Tile Roofs in South Florida (2026)",
+            url: "/blog/clay-vs-concrete-tile-roofs-south-florida-2026",
+            excerpt: "Clay costs more but is stronger out of the gate, more walkable, and never fades — and on either one, the underlayment matters just as much as the tile. An honest 2026 breakdown."
+          },
+          {
             title: "Metal Roof vs Shingles in Florida (2026)",
             url: "/blog/metal-roof-vs-shingles-florida-2026",
             excerpt: "Compare asphalt shingles with metal roofing to understand which material offers the best value for your South Florida home."
