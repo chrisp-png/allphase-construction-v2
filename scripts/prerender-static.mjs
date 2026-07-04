@@ -3752,19 +3752,44 @@ ${companyAuthorityFooter()}
           const suffix = ' | All Phase';
           let pageTitle = blogTitle + suffix;
           if (pageTitle.length > 60) {
-            // Trim the blog title to fit
+            // Trim the blog title at a word boundary (avoid mid-word cuts)
             const maxTitleLen = 60 - suffix.length;
-            pageTitle = blogTitle.substring(0, maxTitleLen).trim() + suffix;
+            let trimmedTitle = blogTitle.substring(0, maxTitleLen);
+            const lastSp = trimmedTitle.lastIndexOf(' ');
+            if (lastSp > 20) trimmedTitle = trimmedTitle.substring(0, lastSp);
+            pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').trim() + suffix;
           }
 
           const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
-          // Build blog description, ensuring it stays under 155 chars
-          let blogDescription = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
-          if (blogDescription.length > 155) {
-            blogDescription = `${blogTitle} — expert insights from All Phase USA, South Florida's dual-licensed roofer.`;
+          // Build blog description: prefer a real excerpt from the article body
+          // (first text, tags stripped) so markdown posts get a unique meta
+          // description instead of the generic template. Fall back to template.
+          let blogDescription = '';
+          const mdBodyForDesc = (entry && typeof entry === 'object' && entry.content)
+            ? String(entry.content)
+            : (typeof entry === 'string' ? entry : '');
+          if (mdBodyForDesc) {
+            const plain = mdBodyForDesc
+              .replace(/<[^>]+>/g, ' ')
+              .replace(/&amp;/g, '&')
+              .replace(/&nbsp;/g, ' ')
+              .replace(/\s+/g, ' ')
+              .trim();
+            if (plain.length >= 80) {
+              let excerpt = plain.substring(0, 155);
+              const lastSp2 = excerpt.lastIndexOf(' ');
+              if (lastSp2 > 100) excerpt = excerpt.substring(0, lastSp2);
+              blogDescription = excerpt.replace(/[\s,;:\-–—]+$/, '').trim() + '…';
+            }
           }
-          if (blogDescription.length > 155) {
-            blogDescription = `${blogTitle.substring(0, 90)} — roofing tips from All Phase USA. Call (754) 227-5605.`;
+          if (!blogDescription) {
+            blogDescription = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
+            if (blogDescription.length > 155) {
+              blogDescription = `${blogTitle} — expert insights from All Phase USA, South Florida's dual-licensed roofer.`;
+            }
+            if (blogDescription.length > 155) {
+              blogDescription = `${blogTitle.substring(0, 90)} — roofing tips from All Phase USA. Call (754) 227-5605.`;
+            }
           }
 
           const blogContent = `
