@@ -83,7 +83,7 @@ export default function DynamicLandmarkPage() {
               </h1>
 
               <p className="text-xl text-zinc-300 leading-relaxed mb-8">
-                {landmark.shortDescriptor}
+                {landmark.name} is {landmark.shortDescriptor}
               </p>
 
               <div className="flex flex-wrap gap-4">
