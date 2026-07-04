@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function WestlakeMoneyPage() {
   const coordinates = getCityCoordinates('Westlake');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Westlake', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Westlake', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does roofing cost in Westlake?', a: 'Roof repairs in Westlake are modest, while a full tile replacement typically runs $12,000 to $40,000 in 2026 depending on size. Because Westlake homes are newer, most needs are repairs, storm damage, and inspections rather than full replacements.' },
     { q: 'My Westlake home is new — why would I need a roofer?', a: "Even new homes need roofers: storm and wind damage, tiles cracked during construction or a solar or satellite install, and workmanship or flashing issues a builder-grade roof can hide. We repair and inspect, and we're here for the eventual full replacement." },

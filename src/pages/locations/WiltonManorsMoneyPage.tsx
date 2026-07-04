@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function WiltonManorsMoneyPage() {
   const coordinates = getCityCoordinates('Wilton Manors');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Wilton Manors', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Wilton Manors', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Wilton Manors?', a: 'A roof replacement in Wilton Manors typically runs $11,000 to $32,000 in 2026. Mid-century flat roofs and shingle sit at the lower-to-middle range; canal-front tile and metal run higher, and condo-association roofs are priced by the building.' },
     { q: 'Do you do flat roofs on Wilton Manors mid-century homes?', a: "Yes. Wilton Manors' mid-century homes often have flat or low-slope roofs, and flat roofing is a core service. We install TPO, PVC, and modified bitumen to HVHZ spec, with proper attachment and a fully adhered membrane." },

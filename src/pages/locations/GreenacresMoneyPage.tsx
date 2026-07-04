@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function GreenacresMoneyPage() {
   const coordinates = getCityCoordinates('Greenacres');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Greenacres', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Greenacres', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Greenacres?', a: 'A roof replacement in Greenacres typically runs $11,000 to $30,000 in 2026 for most single-family homes, depending on roof size and material. Architectural shingle sits at the lower end; tile at the higher end.' },
     { q: 'Do I need permits to re-roof in Greenacres?', a: "Yes — Greenacres takes permitting seriously (it's a Tree City USA that even permits tree removal). Every roof replacement requires a permit with sealed product approvals. We handle the entire permitting process and pass inspection the first time." },

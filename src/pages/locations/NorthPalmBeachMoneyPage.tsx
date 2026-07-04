@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function NorthPalmBeachMoneyPage() {
   const coordinates = getCityCoordinates('North Palm Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'North Palm Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'North Palm Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in North Palm Beach?', a: 'A roof replacement in North Palm Beach typically runs $14,000 to $45,000 or more in 2026. Waterfront tile and standing-seam metal sit at the higher end, and Intracoastal condo-association flat roofs are priced by the building.' },
     { q: 'How do you protect a North Palm Beach roof from salt air?', a: "North Palm Beach's waterfront and deep-water-dock homes face constant salt air. We use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the metal components corrode long before the tile or panel wears out." },

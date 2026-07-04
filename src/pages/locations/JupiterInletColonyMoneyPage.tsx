@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function JupiterInletColonyMoneyPage() {
   const coordinates = getCityCoordinates('Jupiter Inlet Colony');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Jupiter Inlet Colony', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Jupiter Inlet Colony', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Jupiter Inlet Colony?', a: 'Roof projects in Jupiter Inlet Colony typically start around $20,000 and rise from there, depending on size and material. Coastal-grade tile and standing-seam metal, standard here, sit at the higher end.' },
     { q: 'How do you protect a Jupiter Inlet Colony roof from salt air?', a: 'With water on nearly every side of the town, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the metal components corrode long before the tile or panel wears out.' },

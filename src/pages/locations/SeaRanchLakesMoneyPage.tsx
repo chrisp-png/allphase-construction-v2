@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function SeaRanchLakesMoneyPage() {
   const coordinates = getCityCoordinates('Sea Ranch Lakes');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Sea Ranch Lakes', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Sea Ranch Lakes', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Sea Ranch Lakes?', a: "Estate roof replacements in Sea Ranch Lakes typically start around $30,000 and rise well beyond, depending on size and material. Premium tile, standing-seam metal, and custom low-slope systems are the norm on the village's high-value homes." },
     { q: 'How do you protect a Sea Ranch Lakes oceanfront roof from salt air?', a: "On the Beach Area's oceanfront estates we use marine-grade stainless fasteners, corrosion-resistant flashing, and a fully sealed self-adhered underlayment. Directly on the Atlantic, the metal components corrode long before the tile or panel wears out, so upgrading them is the key to a coastal roof lasting." },

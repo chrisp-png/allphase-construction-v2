@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function RoyalPalmBeachMoneyPage() {
   const coordinates = getCityCoordinates('Royal Palm Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Royal Palm Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Royal Palm Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Royal Palm Beach?', a: 'A roof replacement in Royal Palm Beach typically runs $11,000 to $32,000 in 2026. Older 1960s and 70s homes and no-HOA neighborhoods are often straightforward shingle at the lower end; tile in gated and golf communities like Madison Green runs higher.' },
     { q: 'Do I need HOA approval to re-roof in Royal Palm Beach?', a: 'It depends on the neighborhood. Gated communities like Madison Green, Portosol, and Bella Terra require HOA architectural review, which we handle for you; no-HOA neighborhoods like Counterpoint Estates give you full freedom over material and color.' },

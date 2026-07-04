@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function LauderdaleByTheSeaMoneyPage() {
   const coordinates = getCityCoordinates('Lauderdale-by-the-Sea');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lauderdale-by-the-Sea', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lauderdale-by-the-Sea', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Lauderdale-by-the-Sea?', a: "A roof replacement in Lauderdale-by-the-Sea typically runs $14,000 to $45,000 or more in 2026. Coastal tile and standing-seam metal, standard on the town's barrier-island homes, sit at the higher end, and Terra Mar canal estates run higher still." },
     { q: 'How do you protect a Lauderdale-by-the-Sea roof from salt air?', a: 'On this barrier island we use marine-grade stainless fasteners, corrosion-resistant flashing, and a fully sealed self-adhered underlayment. In this environment the metal components corrode long before the tile or panel wears out, so upgrading them is the key to a coastal roof lasting.' },

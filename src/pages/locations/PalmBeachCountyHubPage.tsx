@@ -13,7 +13,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PalmBeachCountyHubPage() {
   const coordinates = getCityCoordinates('West Palm Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach County', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach County', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'Do you serve all of Palm Beach County?', a: 'Yes. We roof every municipality in Palm Beach County — all 21 cities, towns, and villages, from Boca Raton to Jupiter and out to Loxahatchee Groves — with consistent standards and supervision. Each community has its own dedicated roofing page linked above.' },
     { q: 'Is Palm Beach County in the High-Velocity Hurricane Zone?', a: 'No — unlike Broward and Miami-Dade, Palm Beach County is not legally within the HVHZ. But because the county still takes real hurricane wind, we voluntarily build every roof to Miami-Dade HVHZ spec, the strictest wind standard in the country.' },

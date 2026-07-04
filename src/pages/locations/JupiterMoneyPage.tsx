@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function JupiterMoneyPage() {
   const coordinates = getCityCoordinates('Jupiter');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Jupiter', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Jupiter', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Jupiter?', a: "A roof replacement in Jupiter typically runs $14,000 to $45,000 or more in 2026, depending on roof size and material. Coastal tile and standing-seam metal, common on Jupiter's waterfront homes, sit at the higher end." },
     { q: 'How do you protect a Jupiter roof from salt air?', a: "On Jupiter's coastal and waterfront homes we use marine-grade stainless fasteners, corrosion-resistant flashing, and a fully sealed self-adhered underlayment. Because Jupiter is the farthest-east point on Florida's coast, salt exposure is severe, and the metal components corrode long before the roofing material wears out." },

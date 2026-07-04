@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function HillsboroBeachMoneyPage() {
   const coordinates = getCityCoordinates('Hillsboro Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hillsboro Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hillsboro Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Hillsboro Beach?', a: 'Estate roof replacements in Hillsboro Beach typically start around $30,000 and rise well beyond, depending on size and material. Premium tile and standing-seam metal are the norm on the estates, while condominium-association flat roofs are priced by the building.' },
     { q: 'How do you protect a Hillsboro Beach roof from salt air?', a: 'Many Hillsboro Beach estates sit between the Atlantic and the Intracoastal, facing salt air on two sides. We use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because in this environment the metal components corrode long before the roofing surface wears out.' },

@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function LoxahatcheeGrovesMoneyPage() {
   const coordinates = getCityCoordinates('Loxahatchee Groves');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Loxahatchee Groves', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Loxahatchee Groves', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Loxahatchee Groves?', a: 'A roof replacement in Loxahatchee Groves typically runs $12,000 to $35,000 in 2026, depending on size and material. Ranch homes in shingle sit at the lower end; standing-seam metal runs higher, and barns or outbuildings are priced separately or bundled with the house.' },
     { q: 'Do you roof barns and agricultural buildings in Loxahatchee Groves?', a: 'Yes. Most Loxahatchee Groves properties are homesteads with barns, stables, or workshops, and we roof the whole property. Metal roofing — standing-seam and ag panel — is a specialty here and a natural fit for rural and agricultural structures.' },

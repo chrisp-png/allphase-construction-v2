@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function LantanaMoneyPage() {
   const coordinates = getCityCoordinates('Lantana');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lantana', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lantana', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Lantana?', a: 'A roof replacement in Lantana typically runs $11,000 to $35,000 in 2026. Modest mainland homes in neighborhoods like Southwinds are often straightforward shingle at the lower end; waterfront tile and metal on Hypoluxo Island sit higher.' },
     { q: 'My Lantana home is old — is it time to replace the roof?', a: 'Lantana was incorporated in 1921 and is one of the older communities on the Palm Beach coast, so many homes are on very old roofs. If yours is past 15 to 20 years, it is likely due — and roof age is now the top reason Florida insurers issue non-renewals. A free inspection tells you exactly where you stand.' },

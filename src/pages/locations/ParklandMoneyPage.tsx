@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function ParklandMoneyPage() {
   const coordinates = getCityCoordinates('Parkland');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Parkland', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Parkland', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Parkland?', a: 'A roof replacement in Parkland typically runs $14,000 to $60,000 or more in 2026. Family homes in shingle sit at the lower end; Mediterranean tile estates in Parkland Golf & Country Club and Watercrest run to the higher end, and ranch properties with barns are priced per structure.' },
     { q: "Do you handle HOA approval in Parkland's gated communities?", a: 'Yes. For gated communities like Parkland Golf & Country Club, Heron Bay, Watercrest, and Parkland Isles, we manage the full architectural-review process — matching the required roof profile and color and submitting the documentation your HOA needs to approve the project.' },

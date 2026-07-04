@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PalmBeachMoneyPage() {
   const coordinates = getCityCoordinates('Palm Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Palm Beach?', a: 'Estate roof projects in Palm Beach start well into five figures and rise from there, depending on size, tile type, and complexity. Historic clay-tile and landmarked-home work sits at the higher end, and every project is priced to the specific home.' },
     { q: 'Do you work on historic and landmarked Palm Beach homes?', a: "Yes. Many Palm Beach homes are historic or landmarked Mediterranean estates. We match the exact barrel-tile profile and color and manage the Town of Palm Beach's strict architectural and landmarks review process end to end." },

@@ -13,7 +13,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function BrowardCountyHubPage() {
   const coordinates = getCityCoordinates('Fort Lauderdale');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Broward County', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Broward County', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'Do you serve all of Broward County?', a: 'Yes. From our office and warehouse in Deerfield Beach, we roof every municipality in Broward County — all 28 cities and towns, from Fort Lauderdale to Weston — with the same standards, supervision, and code-compliant workmanship. Each city has its own dedicated roofing page linked above.' },
     { q: 'Is all of Broward County in the High-Velocity Hurricane Zone?', a: 'Yes. Broward County, along with Miami-Dade, is legally within the High-Velocity Hurricane Zone, so every roof in the county must meet Miami-Dade HVHZ code — the strictest wind standard in the country. We build to it on every Broward job.' },

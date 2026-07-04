@@ -21,7 +21,7 @@ export default function LakeWorthBeachMoneyPage() {
     stateName: 'Florida',
     latitude: coordinates?.latitude,
     longitude: coordinates?.longitude,
-    aggregateRating: { ratingValue: '4.9', reviewCount: '150' },
+    aggregateRating: { ratingValue: '4.8', reviewCount: '153' },
   });
 
   const faqs = [

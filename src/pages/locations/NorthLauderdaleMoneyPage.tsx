@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function NorthLauderdaleMoneyPage() {
   const coordinates = getCityCoordinates('North Lauderdale');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'North Lauderdale', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'North Lauderdale', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in North Lauderdale?', a: "A roof replacement in North Lauderdale typically runs $10,000 to $28,000 in 2026. The city's 1970s single-family homes are often straightforward shingle replacements at the lower end; tile and larger or multi-family roofs run higher." },
     { q: 'My North Lauderdale home is from the 1970s — should I replace the roof?', a: 'Much of North Lauderdale was built during the 1970s development boom, so a large share of homes are now around 50 years old. If yours is still on an original or second roof, it is very likely past service life — and roof age is now the top reason Florida insurers issue non-renewals. A free inspection tells you exactly where you stand.' },

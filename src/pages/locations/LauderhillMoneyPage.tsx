@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function LauderhillMoneyPage() {
   const coordinates = getCityCoordinates('Lauderhill');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lauderhill', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lauderhill', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Lauderhill?', a: "A roof replacement in Lauderhill typically runs $11,000 to $30,000 in 2026. The city's many 1960s ranch homes are often straightforward shingle replacements at the lower end; tile in gated communities like Boulevard Forest runs higher, and condo or multi-unit roofs in Inverrary are priced by the building." },
     { q: 'Do you handle HOA and condo approval in Lauderhill?', a: "Yes. For Inverrary's condo associations and gated communities like Boulevard Forest, we coordinate the full association and architectural-review process — matching the required roof profile and color and submitting the documentation needed to approve the project." },

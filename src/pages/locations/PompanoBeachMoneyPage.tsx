@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PompanoBeachMoneyPage() {
   const coordinates = getCityCoordinates('Pompano Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Pompano Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Pompano Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Pompano Beach?', a: 'A roof replacement in Pompano Beach typically runs $11,000 to $40,000 or more in 2026. Family ranch homes in shingle sit at the lower end; waterfront tile and standing-seam metal run higher, and condo-association roofs are priced by the building.' },
     { q: 'How do you protect a Pompano Beach waterfront roof from salt air?', a: 'For waterfront homes in Hillsboro Shores and Harbor Village, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt corrodes the metal components long before the tile or panel wears out.' },

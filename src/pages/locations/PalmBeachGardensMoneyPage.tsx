@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PalmBeachGardensMoneyPage() {
   const coordinates = getCityCoordinates('Palm Beach Gardens');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach Gardens', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach Gardens', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '153' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Palm Beach Gardens?', a: 'A roof replacement in Palm Beach Gardens typically runs $13,000 to $55,000 or more in 2026. Master-planned homes sit at the lower-to-middle range; luxury country-club tile estates in PGA National and Mirasol, and larger custom acreage homes, run to the higher end.' },
     { q: 'Do you handle HOA approval in Palm Beach Gardens country clubs?', a: "Yes. For country-club communities like PGA National, Mirasol, and Frenchman's Reserve, we manage the full architectural-review process — matching the required roof profile and color and submitting the documentation your HOA needs to approve the project." },
