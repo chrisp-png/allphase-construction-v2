@@ -8008,6 +8008,24 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'flat-roof-tpo-vs-pvc-west-palm-beach',
+      body: `<p>For a low-slope or flat roof in West Palm Beach, the choice usually comes down to two single-ply membranes: TPO and PVC. Both perform well in the Florida sun; the right one depends on your building and budget.</p>
+<h2>TPO vs. PVC at a Glance</h2>
+<table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+  <thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Factor</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">TPO</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">PVC</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Installed cost per sq ft</td><td style="padding:8px;border:1px solid #e5e7eb;">$4.00&ndash;$8.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$6.00&ndash;$10.00</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Typical lifespan</td><td style="padding:8px;border:1px solid #e5e7eb;">20&ndash;30 years</td><td style="padding:8px;border:1px solid #e5e7eb;">25&ndash;30+ years</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Chemical / grease resistance</td><td style="padding:8px;border:1px solid #e5e7eb;">Good</td><td style="padding:8px;border:1px solid #e5e7eb;">Excellent</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Ponding-water tolerance</td><td style="padding:8px;border:1px solid #e5e7eb;">Good</td><td style="padding:8px;border:1px solid #e5e7eb;">Excellent</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Seams</td><td style="padding:8px;border:1px solid #e5e7eb;">Heat-welded</td><td style="padding:8px;border:1px solid #e5e7eb;">Heat-welded (superior long-term)</td></tr>
+  </tbody>
+</table>
+<h2>When TPO Is the Right Call</h2>
+<p>TPO is the value leader: a reflective white membrane that keeps cooling costs down and performs well on most residential and light-commercial low-slope roofs. For a straightforward flat section with good drainage, TPO delivers strong performance at a lower price.</p>
+<h2>When PVC Is Worth the Extra Cost</h2>
+<p>PVC's chemical resistance and long-term seam durability make it the better choice where grease or chemical exposure is a factor (restaurant exhaust, some commercial uses) or where ponding water is hard to avoid. Its welded seams stay watertight for decades.</p>
+<h2>Palm Beach County Code</h2>
+<p>West Palm Beach sits in Palm Beach County, which is not a legal High-Velocity Hurricane Zone, but the county wind code still governs membrane attachment and edge-metal detailing. We build to that code &mdash; and to full HVHZ spec on request &mdash; with product-approved assemblies on every flat roof.</p>`,
       title: 'Flat Roof TPO vs PVC in West Palm Beach (2026)',
       description: 'TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan numbers, chemical and ponding resistance, and the HVHZ code that decides',
       h1: 'Flat Roof: TPO vs PVC in West Palm Beach',
@@ -8048,6 +8066,21 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'pompano-beach-roof-inspection',
+      body: `<p>Pompano Beach roofs take direct coastal exposure &mdash; salt air, intense UV, and wind-driven rain. These nine signs mean your roof is at or near end-of-life and should be inspected before the rainy season.</p>
+<h2>9 Signs You Need a New Roof</h2>
+<ol style="line-height:1.75;">
+  <li><strong>Curling or cupping shingles.</strong> Edges lifting or centers rising means the shingles have lost their weather seal.</li>
+  <li><strong>Bald spots and granule loss.</strong> Granules in the gutters and thin, shiny patches signal advanced wear.</li>
+  <li><strong>Cracked, slipped, or missing tiles.</strong> Displaced tile exposes the underlayment that keeps the roof watertight.</li>
+  <li><strong>A sagging roof deck.</strong> Any visible dip or wave in the roofline points to structural or moisture damage beneath the covering.</li>
+  <li><strong>Attic moisture or daylight.</strong> Damp insulation, stains, or light through the deck confirm an active leak.</li>
+  <li><strong>Failed or rusted flashing.</strong> Flashing at chimneys, valleys, and vents is the number-one leak point once it corrodes or pulls loose.</li>
+  <li><strong>Interior ceiling stains.</strong> Brown rings or bubbling paint mean water has already reached the living space.</li>
+  <li><strong>Age past the material's service life.</strong> Shingles run 15&ndash;25 years in South Florida and tile underlayment 20&ndash;30; past that, failure is a matter of when, not if.</li>
+  <li><strong>Persistent algae and moisture retention.</strong> Heavy streaking that returns after cleaning means the surface is holding water.</li>
+</ol>
+<h2>What to Do Next</h2>
+<p>If you spot two or more of these signs, get a professional inspection before the next heavy rain. A written report documents deck and structural condition and tells you whether a targeted repair or a full replacement is the right call.</p>`,
       title: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof',
       description: 'The nine clearest signs that your Pompano Beach roof has reached end-of-life — from curling shingles to insurance non-renewal — plus what to do next.',
       h1: 'Pompano Beach Roof Inspection: 9 Signs You Need a New Roof',
@@ -8078,6 +8111,22 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'roof-maintenance-tips-miramar',
+      body: `<p>Miramar's flat terrain, heavy summer rain, and salt-tinged coastal breezes put steady stress on a roof. These ten habits keep a Broward County roof watertight and extend its service life — most take minutes and cost nothing.</p>
+<h2>10 Roof Maintenance Tips for Miramar Homeowners</h2>
+<ol style="line-height:1.75;">
+  <li><strong>Clear valleys and gutters twice a year.</strong> Clogged valleys back water up under tiles and shingles. Clean before and after the summer rainy season.</li>
+  <li><strong>Trim overhanging branches.</strong> Limbs abrade the surface and drop debris that traps moisture against the roof.</li>
+  <li><strong>Check flashing at every penetration.</strong> Chimneys, vents, skylights, and AC stands are the most common leak points — look for lifted or rusted flashing.</li>
+  <li><strong>Replace slipped or cracked tiles promptly.</strong> A single displaced tile exposes the underlayment where the waterproofing actually lives.</li>
+  <li><strong>Inspect the attic after heavy rain.</strong> Stains, damp insulation, or daylight through the deck reveal an active leak before it reaches the ceiling.</li>
+  <li><strong>Keep soffit and ridge vents clear.</strong> Proper attic ventilation lowers deck temperature and prevents the moisture buildup that shortens roof life.</li>
+  <li><strong>Watch for granule loss on shingles.</strong> Bald patches and granules in the gutter mean the shingle is wearing out.</li>
+  <li><strong>Reseal pipe boots and exposed fasteners.</strong> Rubber boots crack in Florida UV within 8&ndash;10 years — a cheap fix that prevents a costly leak.</li>
+  <li><strong>Soft-wash algae, never pressure-blast it.</strong> Black streaks are algae; a low-pressure wash removes them without stripping protective granules.</li>
+  <li><strong>Book a professional inspection every 2&ndash;3 years.</strong> A trained eye catches deck and structural issues you cannot see from the ground.</li>
+</ol>
+<h2>Your Pre-Hurricane-Season Checklist (Run Every May)</h2>
+<p>Before June 1: clear all drains and valleys, secure or replace loose tiles and shingles, confirm flashing is tight at every penetration, photograph the roof for your records, and schedule any repairs early — contractors book solid once storms are in the forecast.</p>`,
       title: '10 Roof Maintenance Tips for Miramar Homeowners (2026)',
       description: '10 practical Miramar roof maintenance habits that extend roof life, prevent leaks, and protect insurance renewability. The full pre-hurricane checklist.',
       h1: '10 Roof Maintenance Tips for Miramar',
@@ -8118,6 +8167,22 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'switch-from-shingles-to-metal-plantation',
+      body: `<p>Plantation homeowners weighing a metal roof against another shingle re-roof are really weighing up-front cost against decades of service life. Here is the honest comparison for a typical Broward County home.</p>
+<h2>Shingle vs. Metal in Plantation</h2>
+<table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+  <thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Factor</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Architectural Shingle</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Standing-Seam Metal</th></tr></thead>
+  <tbody>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Installed cost (2,000 sq ft)</td><td style="padding:8px;border:1px solid #e5e7eb;">$10,000&ndash;$16,000</td><td style="padding:8px;border:1px solid #e5e7eb;">$20,000&ndash;$35,000</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Service life in South Florida</td><td style="padding:8px;border:1px solid #e5e7eb;">15&ndash;25 years</td><td style="padding:8px;border:1px solid #e5e7eb;">40&ndash;70 years</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Design wind rating</td><td style="padding:8px;border:1px solid #e5e7eb;">up to 130 mph</td><td style="padding:8px;border:1px solid #e5e7eb;">up to 180 mph</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Maintenance</td><td style="padding:8px;border:1px solid #e5e7eb;">Moderate</td><td style="padding:8px;border:1px solid #e5e7eb;">Minimal</td></tr>
+    <tr><td style="padding:8px;border:1px solid #e5e7eb;">Replacements over 40 years</td><td style="padding:8px;border:1px solid #e5e7eb;">2&ndash;3</td><td style="padding:8px;border:1px solid #e5e7eb;">0&ndash;1</td></tr>
+  </tbody>
+</table>
+<h2>The 40-Year Math</h2>
+<p>A shingle roof will likely be replaced two to three times over a metal roof's single service life. Add up the repeated tear-offs, disposal, and re-installs and a standing-seam metal roof often costs less per year of protection despite the higher price on day one &mdash; while carrying the higher wind rating through every storm season.</p>
+<h2>HOA Approval in Plantation</h2>
+<p>Many Plantation communities have architectural-review boards, and metal is increasingly approved &mdash; especially low-profile standing seam and stone-coated steel that read like traditional roofing from the street. We provide the color samples, product-approval sheets, and specifications your board needs, and we build every roof to HVHZ specification for Broward County.</p>`,
       title: 'Switch From Shingles to Metal in Plantation?',
       description: 'Should you replace your Plantation shingle roof with metal in 2026? Side-by-side cost, lifespan, insurance, HOA, and 40-year total-cost-of-ownership math.',
       h1: 'Is It Time to Switch From Shingles to Metal in Plantation?',
@@ -8245,9 +8310,10 @@ ${companyAuthorityFooter()}
       ? `<a href="/locations/${p.hubSlug}" style="color: #dc2626; text-decoration: underline;">${p.hubName} roofing hub</a>`
       : `<a href="/contact" style="color: #dc2626; text-decoration: underline;">contact page</a>`;
 
+    const bodyHtml = p.body || `<p>${p.summary}</p>`;
     const content = `
   <h1>${p.h1}</h1>
-  <p>${p.summary}</p>
+  ${bodyHtml}
   <h2>Ready for a Free Roof Assessment?</h2>
   <p>Call <strong>(754) 227-5605</strong> or visit our ${ctaHubLink} to schedule a free inspection. Dual-licensed (CCC-1331464 &amp; CGC-1526236), A+ BBB rated, serving Broward &amp; Palm Beach Counties from our Deerfield Beach headquarters.</p>
   <h2>Related Pages</h2>
