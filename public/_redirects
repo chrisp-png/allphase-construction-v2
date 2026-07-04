@@ -231,7 +231,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /lake-worth-beach /roof-repair/lake-worth-beach 301!
 /palm-springs /locations/west-palm-beach 301!
 /palm-beach-shores /locations/west-palm-beach 301!
-/locations/palm-beach-shores /locations/west-palm-beach 301!
 /boynton-beach /locations/boynton-beach 301!
 /service-areas/west-palm-beach /locations/west-palm-beach 301!
 /contact-roofing-contractor-deerfield-beach /contact 301!
@@ -602,11 +601,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /south-florida-roofing-reviews /reviews 301!
 
 # Dead location sub-pages
-/locations/loxahatchee-groves /locations/west-palm-beach 301!
 /locations/manalapan /locations/lake-worth-beach 301!
 /locations/lazy-lake /locations/deerfield-beach 301!
-/locations/lauderdale-lakes /locations/fort-lauderdale 301!
-/locations/southwest-ranches /locations/weston 301!
 /locations/palm-springs /locations/west-palm-beach 301!
 /locations/deerfield-beach/service-area/palm-springs /locations/west-palm-beach 301!
 
