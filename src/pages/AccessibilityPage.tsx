@@ -154,7 +154,7 @@ export default function AccessibilityPage() {
               </p>
               <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
                 <p className="font-semibold text-white mb-2">All Phase Construction USA, LLC</p>
-                <p>Email: <a href="mailto:info@allphaseconstructionfl.com" className="text-red-500 hover:text-red-400">info@allphaseconstructionfl.com</a></p>
+                <p>Email: <a href="mailto:info@allphaseusa.com" className="text-red-500 hover:text-red-400">info@allphaseusa.com</a></p>
                 <p>Phone: <a href="tel:+17542275605" className="text-red-500 hover:text-red-400">(754) 227-5605</a></p>
               </div>
               <p className="text-sm italic">

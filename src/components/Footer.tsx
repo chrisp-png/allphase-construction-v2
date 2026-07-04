@@ -194,6 +194,16 @@ export default function Footer() {
                   Roof Repair
                 </Link>
               </li>
+              <li>
+                <Link to="/roof-repair/broward-county" className="hover:text-red-600 transition-colors">
+                  Broward County Roof Repair
+                </Link>
+              </li>
+              <li>
+                <Link to="/roof-repair/palm-beach-county" className="hover:text-red-600 transition-colors">
+                  Palm Beach County Roof Repair
+                </Link>
+              </li>
                             <li>
                 <Link to="/roof-inspection" className="hover:text-red-600 transition-colors">
                   Roof Inspection
