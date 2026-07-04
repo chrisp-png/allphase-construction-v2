@@ -3806,16 +3806,46 @@ ${companyAuthorityFooter()}
 </section>
           `.trim();
 
+          // Prefer the real article body from blog-content.json when present so
+          // markdown-backed posts render rich static HTML instead of the generic
+          // boilerplate above. (Supabase-only posts are upgraded in the Supabase
+          // loop below, which now overwrites these boilerplate shells.)
+          const mdEntry = blogContentData[slug];
+          const mdBody = (mdEntry && typeof mdEntry === 'object' && mdEntry.content)
+            ? String(mdEntry.content).trim() : '';
+          let finalBlogContent = blogContent;
+          if (mdBody.length >= 300) {
+            finalBlogContent = `
+<section id="seo-static-content" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+  <article>
+    <h1 style="color: #111827; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">${blogTitle}</h1>
+    <p style="color: #6b7280; font-size: 1.1rem; line-height: 1.75; margin-bottom: 2rem;">${blogDescription}</p>
+    <div style="color: #374151; font-size: 1.05rem; line-height: 1.75;">${mdBody}</div>
+    <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+      <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need Professional Roofing Service?</h3>
+      <p style="color: #e5e7eb; margin-bottom: 1.5rem;">Contact All Phase Construction USA for expert roofing services in Broward and Palm Beach County.</p>
+      <a href="tel:7542275605" style="display: inline-block; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call (754) 227-5605</a>
+    </div>
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
+      <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Related Services &amp; Resources</h3>
+      <p style="color: #374151; line-height: 1.75;"><a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">Roof Repair</a> · <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Free Inspections</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Cost Calculator</a> · <a href="/blog" style="color: #dc2626; text-decoration: underline;">All Articles</a></p>
+    </div>
+  </article>
+  ${companyAuthorityFooter()}
+</section>
+            `.trim();
+          }
+
           const bpSchema = blogPostingSchema({
             slug, title: blogTitle, description: blogDescription,
             image: null, published: null, modified: null,
-            content: blogContent, tags: [], categories: [],
+            content: finalBlogContent, tags: [], categories: [],
           });
           const blogHTML = createHTMLTemplate(
             pageTitle,
             blogDescription,
             blogCanonical,
-            blogContent,
+            finalBlogContent,
             bpSchema,
             null,
             null,
@@ -4030,17 +4060,12 @@ ${companyAuthorityFooter()}
     Object.keys(postMetadata).forEach(slug => slugSet.add(slug));
 
     let createdCount = 0;
+    let overwrittenCount = 0;
     let skippedCount = 0;
 
     for (const slug of Array.from(slugSet).sort()) {
       const blogDir = path.join(distDir, 'blog', slug);
       const blogHtmlPath = path.join(blogDir, 'index.html');
-
-      // Skip if already prerendered by the sitemap-based loop above
-      if (fs.existsSync(blogHtmlPath)) {
-        skippedCount++;
-        continue;
-      }
 
       const meta = postMetadata[slug] || {};
 
@@ -4077,6 +4102,15 @@ ${companyAuthorityFooter()}
       const supabaseContent = String(meta.content || '').trim();
       const hasRealContent = supabaseContent.length >= 500
         && !supabaseContent.toLowerCase().startsWith('see blog/');
+
+      // Overwrite boilerplate shells written by the sitemap loop with rich
+      // Supabase content. Only skip when a page already exists AND we have no
+      // substantial content to upgrade it with (never clobber with boilerplate).
+      const alreadyExists = fs.existsSync(blogHtmlPath);
+      if (alreadyExists && !hasRealContent) {
+        skippedCount++;
+        continue;
+      }
       const leadParagraph = stripHtml(meta.excerpt) || blogDescription;
 
       const richContent = `
@@ -4150,12 +4184,13 @@ ${companyAuthorityFooter()}
 
       fs.mkdirSync(blogDir, { recursive: true });
       fs.writeFileSync(blogHtmlPath, blogHTML);
-      console.log(`✅ Generated: dist/blog/${slug}/index.html${hasRealContent ? ' (rich)' : ' (boilerplate)'}`);
-      createdCount++;
+      const action = alreadyExists ? 'Upgraded' : 'Generated';
+      if (alreadyExists) overwrittenCount++; else createdCount++;
+      console.log(`✅ ${action}: dist/blog/${slug}/index.html${hasRealContent ? ' (rich)' : ' (boilerplate)'}`);
       totalPages++;
     }
 
-    console.log(`\n📊 Supabase blog prerender: ${createdCount} new pages, ${skippedCount} already prerendered, supabaseReachable=${supabaseReachable}\n`);
+    console.log(`\n📊 Supabase blog prerender: ${createdCount} new pages, ${overwrittenCount} upgraded from boilerplate, ${skippedCount} skipped, supabaseReachable=${supabaseReachable}\n`);
   } catch (err) {
     console.log('⚠️ Error in Supabase blog prerender block:', err.message);
   }
