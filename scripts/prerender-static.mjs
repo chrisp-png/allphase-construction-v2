@@ -4241,7 +4241,10 @@ ${companyAuthorityFooter()}
       if (pageTitle.length > 60) {
         const suffix = ' | All Phase';
         const maxTitleLen = 60 - suffix.length;
-        pageTitle = blogTitle.substring(0, maxTitleLen).trim() + suffix;
+        let trimmedTitle = blogTitle.substring(0, maxTitleLen);
+        const lastSp = trimmedTitle.lastIndexOf(' ');
+        if (lastSp > 20) trimmedTitle = trimmedTitle.substring(0, lastSp);
+        pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').trim() + suffix;
       }
 
       // Description: prefer meta_description > excerpt > boilerplate (cap 155 chars)
@@ -4250,7 +4253,10 @@ ${companyAuthorityFooter()}
         blogDescription = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
       }
       if (blogDescription.length > 155) {
-        blogDescription = blogDescription.substring(0, 152).trim() + '...';
+        let d = blogDescription.substring(0, 152);
+        const lastSpD = d.lastIndexOf(' ');
+        if (lastSpD > 100) d = d.substring(0, lastSpD);
+        blogDescription = d.replace(/[\s,;:\-–—]+$/, '').trim() + '…';
       }
 
       const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
