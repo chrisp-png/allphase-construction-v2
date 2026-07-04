@@ -120,7 +120,7 @@ export function generateOrganizationSchema(): object {
     'url': 'https://allphaseconstructionfl.com',
     'logo': 'https://allphaseconstructionfl.com/allphase-logo-white.svg',
     'telephone': '+1-754-227-5605',
-    'email': 'info@allphaseconstructionfl.com',
+    'email': 'info@allphaseusa.com',
     'priceRange': '$$$$',
     'address': {
       '@type': 'PostalAddress',

@@ -196,7 +196,7 @@ export default function AboutPage() {
     logo: 'https://allphaseconstructionfl.com/logo.png',
     image: 'https://allphaseconstructionfl.com/images/og-default.jpg',
     telephone: '+17542275605',
-    email: 'info@allphaseconstructionfl.com',
+    email: 'info@allphaseusa.com',
     foundingDate: '2005',
     founder: {
       '@type': 'Person',

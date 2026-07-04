@@ -24,7 +24,7 @@ export function generateLocalBusinessSchema(pageUrl: string) {
     logo: 'https://allphaseconstructionfl.com/logo.png',
     image: 'https://allphaseconstructionfl.com/long-term-piece-of-mind-all-phase-construction-usa.png',
     telephone: '+1-754-227-5605',
-    email: 'info@allphaseconstructionfl.com',
+    email: 'info@allphaseusa.com',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -186,7 +186,7 @@ export function generateCityLocalBusinessSchema(
     description: `Professional roofing contractor serving ${cityName}, ${countyName}. Licensed, insured, and HVHZ certified for residential and commercial roofing.`,
     url: `https://allphaseconstructionfl.com`,
     telephone: '+1-754-227-5605',
-    email: 'info@allphaseconstructionfl.com',
+    email: 'info@allphaseusa.com',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
