@@ -666,7 +666,21 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /trying-to-decide-what-kind-of-roof-you-want-for-your-home/ /roofing-services 301!
 /portfolio_page/* /projects 301!
 
-/* /index.html 200
-
-# Cannibalizing duplicate blog -> canonical Broward cost guide (PR-141)
+# Cannibalizing duplicate blog -> canonical Broward cost guide
+# (moved ABOVE the SPA catch-all so it actually fires — first match wins in Netlify) (PR-143)
 /blog/allphase-blog-roof-replacement-cost-broward-2026    /blog/roof-replacement-cost-broward-county-2026    301!
+
+# Missing static assets return a real 404 instead of the SPA HTML shell (was a soft-404 that
+# Google dislikes). Existing files still serve normally — Netlify checks for a real file
+# BEFORE applying these non-forced rules, so only truly-missing assets hit them. (PR-143)
+/*.jpg    /index.html   404
+/*.jpeg   /index.html   404
+/*.png    /index.html   404
+/*.webp   /index.html   404
+/*.gif    /index.html   404
+/*.svg    /index.html   404
+/*.pdf    /index.html   404
+/*.ico    /index.html   404
+
+# SPA fallback — MUST remain the LAST rule (Netlify processes top-to-bottom, first match wins)
+/* /index.html 200
