@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function HaverhillMoneyPage() {
   const coordinates = getCityCoordinates('Haverhill');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Haverhill', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Haverhill', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Haverhill?', a: 'A roof replacement in Haverhill typically runs $10,000 to $26,000 in 2026 for most single-family homes, depending on roof size and material. Shingle sits at the lower end, tile at the higher end.' },
     { q: 'My Haverhill home is older — should I replace the roof?', a: "Much of Haverhill's housing is decades old, so many homes are on aging roofs. If yours is past 15 to 20 years, roof age is now the top reason Florida insurers issue non-renewals. A free inspection tells you exactly where you stand." },

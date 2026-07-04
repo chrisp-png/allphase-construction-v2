@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PembrokePinesMoneyPage() {
   const coordinates = getCityCoordinates('Pembroke Pines');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Pembroke Pines', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Pembroke Pines', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Pembroke Pines?', a: 'A roof replacement in Pembroke Pines typically runs $11,000 to $35,000 in 2026. East-side homes in shingle sit at the lower end; west-side gated-community tile homes run higher.' },
     { q: 'My Pembroke Pines home was built in the 1990s — is it time to replace the roof?', a: "A large share of Pembroke Pines was built in the 1990s boom after Hurricane Andrew. Those roofs are now around 30 years old and at or past replacement age. If yours is original, it's very likely due — and roof age is now the top reason Florida insurers issue non-renewals." },

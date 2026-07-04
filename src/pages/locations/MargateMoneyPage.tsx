@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function MargateMoneyPage() {
   const coordinates = getCityCoordinates('Margate');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Margate', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Margate', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Margate?', a: "A roof replacement in Margate typically runs $11,000 to $30,000 in 2026. The city's many 1950s and 60s homes and 55+ ranch communities are often straightforward shingle replacements at the lower end; tile in gated communities like Coral Bay runs higher." },
     { q: "Do you handle HOA approval in Margate's communities?", a: 'Yes. For gated and 55+ communities like Coral Bay, Paradise Gardens, and Oriole Gardens, we manage the full architectural-review process — matching the required roof profile and color and submitting the documentation your HOA needs to approve the project.' },

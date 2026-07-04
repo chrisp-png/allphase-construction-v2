@@ -41,7 +41,7 @@ export default function BocaRatonMoneyPage() {
     latitude: coordinates?.latitude,
     longitude: coordinates?.longitude,
     aggregateRating: {
-      ratingValue: '4.9',
+      ratingValue: '4.8',
       reviewCount: '150'
     }
   });

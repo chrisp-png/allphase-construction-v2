@@ -73,7 +73,7 @@ export default function WellingtonPage() {
     longitude: coordinates?.longitude,
     aggregateRating: {
       ratingValue: '4.8',
-      reviewCount: '137'
+      reviewCount: '150'
     }
   });
 

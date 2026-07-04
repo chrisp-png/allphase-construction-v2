@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function HallandaleBeachMoneyPage() {
   const coordinates = getCityCoordinates('Hallandale Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hallandale Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hallandale Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Hallandale Beach?', a: 'A roof replacement on a Hallandale Beach home typically runs $11,000 to $40,000 in 2026. Older West Hallandale ranch homes in shingle sit at the lower end; Golden Isles tile estates run higher, and condo or high-rise roofs are priced by the building.' },
     { q: 'Do you do oceanfront condo and high-rise roofing in Hallandale Beach?', a: "Yes. Hallandale Beach is one of Broward's most condo-dense cities. We handle large low-slope association roofs in TPO, PVC, and modified bitumen on oceanfront high-rises, with marine-grade detailing for the salt, and coordinate board approvals and seasonal-owner schedules." },

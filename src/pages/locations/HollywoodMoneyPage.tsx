@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function HollywoodMoneyPage() {
   const coordinates = getCityCoordinates('Hollywood');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hollywood', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hollywood', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Hollywood?', a: 'A roof replacement on a Hollywood home typically runs $11,000 to $45,000 in 2026, depending on size and material. Historic tile and oceanfront work sit at the higher end, and condo or high-rise roofs are priced by the building.' },
     { q: 'Do you replace roofs on historic Hollywood Lakes homes?', a: 'Yes. Hollywood Lakes is full of 1920s Spanish-Mediterranean and Art Deco homes. We replace and restore barrel-tile and flat roofs on historic homes to HVHZ code, keeping the original architectural look.' },
