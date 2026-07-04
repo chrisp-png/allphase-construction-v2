@@ -667,3 +667,6 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /portfolio_page/* /projects 301!
 
 /* /index.html 200
+
+# Cannibalizing duplicate blog -> canonical Broward cost guide (PR-141)
+/blog/allphase-blog-roof-replacement-cost-broward-2026    /blog/roof-replacement-cost-broward-county-2026    301!

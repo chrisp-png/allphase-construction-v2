@@ -102,12 +102,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/greenacres': {
     title: 'Roofing Contractor in Greenacres, FL | All Phase USA',
-    description: 'Greenacres, FL roofer re-roofing this planned Palm Beach County city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, built for insurance savings. (754) 227-5605.',
+    description: 'Greenacres, FL roofer re-roofing this planned PBC city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, insurance savings. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
   '/locations/palm-beach': {
     title: 'Roofing Contractor in Palm Beach, FL | All Phase USA',
-    description: 'Palm Beach, FL roofer for historic Mediterranean tile estates on the island \u2014 clay/concrete tile \u0026 metal, coastal-grade, architectural review handled, HVHZ-spec. (754) 227-5605.',
+    description: 'Palm Beach, FL roofer for historic Mediterranean tile estates \u2014 clay \u0026 concrete tile, coastal-grade, architectural review handled. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach'
   },
   '/locations/southwest-ranches': {
@@ -117,7 +117,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/hallandale-beach': {
     title: 'Roofing Contractor in Hallandale Beach, FL | All Phase USA',
-    description: 'Hallandale Beach, FL roofer for oceanfront condos, Golden Isles estates \u0026 West Hallandale homes \u2014 flat, tile \u0026 shingle, HVHZ-code, dual-licensed. (754) 227-5605.',
+    description: 'Hallandale Beach, FL roofer for oceanfront condos, Golden Isles estates \u0026 older homes \u2014 flat, tile \u0026 shingle, HVHZ-code. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/hallandale-beach'
   },
   '/locations/pembroke-pines': {
@@ -127,7 +127,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/palm-beach-gardens': {
     title: 'Roofing Contractor in Palm Beach Gardens, FL | All Phase USA',
-    description: 'Palm Beach Gardens, FL roofer for country-club estates, master-planned homes \u0026 acreage \u2014 tile, metal \u0026 shingle, HOA review handled, HVHZ-spec. (754) 227-5605.',
+    description: 'Palm Beach Gardens roofer for country-club estates, master-planned homes \u0026 acreage \u2014 tile, metal \u0026 shingle, HOA review. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-gardens'
   },
   '/locations/hollywood': {
@@ -137,7 +137,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/davie': {
     title: 'Roofing Contractor in Davie, FL | All Phase USA',
-    description: 'Davie, FL roofer for equestrian ranches, gated estates \u0026 family suburbs \u2014 tile, metal, shingle, HOA review handled, HVHZ-code, dual-licensed. (754) 227-5605.',
+    description: 'Davie, FL roofer for equestrian ranches, gated estates \u0026 family suburbs \u2014 tile, metal, shingle, HOA review, HVHZ-code. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/davie'
   },
   '/locations/wilton-manors': {
@@ -147,7 +147,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/parkland': {
     title: 'Roofing Contractor in Parkland, FL | All Phase USA',
-    description: 'Parkland, FL roofer for golf estates, gated communities \u0026 equestrian ranches \u2014 premium tile, metal \u0026 shingle, HOA review handled, HVHZ-code. (754) 227-5605.',
+    description: 'Parkland, FL roofer for golf estates, gated communities \u0026 equestrian ranches \u2014 premium tile, metal \u0026 shingle, HOA review. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/parkland'
   },
   '/locations/pompano-beach': {
@@ -167,12 +167,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/lantana': {
     title: 'Roofing Contractor in Lantana, FL | All Phase USA',
-    description: 'Lantana, FL roofer for this historic fishing village \u2014 aging mainland homes to Hypoluxo Island waterfront, shingle, tile \u0026 metal, HVHZ-spec. (754) 227-5605.',
+    description: 'Lantana, FL roofer for this historic fishing village \u2014 aging mainland homes to Hypoluxo Island waterfront, tile \u0026 metal. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lantana'
   },
   '/locations/north-palm-beach': {
     title: 'Roofing Contractor in North Palm Beach, FL | All Phase USA',
-    description: 'North Palm Beach, FL roofer for waterfront estates, gated communities \u0026 Intracoastal condos \u2014 coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec. (754) 227-5605.',
+    description: 'North Palm Beach roofer for waterfront estates, gated communities \u0026 Intracoastal condos \u2014 coastal-grade tile, metal \u0026 flat. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/north-palm-beach'
   },
   '/locations/hillsboro-beach': {
@@ -182,52 +182,52 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/sea-ranch-lakes': {
     title: 'Roofing Contractor in Sea Ranch Lakes, FL | All Phase USA',
-    description: 'Sea Ranch Lakes, FL roofer for gated oceanfront \u0026 lakeside estates \u2014 premium tile, standing-seam metal \u0026 flat roofs, coastal-grade, HVHZ code. (754) 227-5605.',
+    description: 'Sea Ranch Lakes roofer for gated oceanfront \u0026 lakeside estates \u2014 premium tile, standing-seam metal \u0026 flat, coastal-grade. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/sea-ranch-lakes'
   },
   '/locations/pembroke-park': {
     title: 'Roofing Contractor in Pembroke Park, FL | All Phase USA',
-    description: 'Pembroke Park, FL roofer for site-built homes, townhomes \u0026 commercial/warehouse flat roofs \u2014 HVHZ-code, dual-licensed roofing + GC since 2005. (754) 227-5605.',
+    description: 'Pembroke Park, FL roofer for homes, townhomes \u0026 commercial/warehouse flat roofs \u2014 HVHZ-code, dual-licensed roofing + GC. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park'
   },
   '/locations/lauderdale-by-the-sea': {
     title: 'Roofing Contractor in Lauderdale-by-the-Sea, FL | All Phase USA',
-    description: 'Lauderdale-by-the-Sea, FL barrier-island roofer \u2014 coastal-grade tile \u0026 standing-seam metal built for salt air and Atlantic wind, HVHZ code, dual-licensed. (754) 227-5605.',
+    description: 'Lauderdale-by-the-Sea barrier-island roofer \u2014 coastal-grade tile \u0026 standing-seam metal for salt air \u0026 Atlantic wind, HVHZ. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderdale-by-the-sea'
   },
   '/locations/north-lauderdale': {
     title: 'Roofing Contractor in North Lauderdale, FL | All Phase USA',
-    description: 'North Lauderdale, FL roofer for the Morris Lapidus \u2018City of Tomorrow\u2019 \u2014 aging 1970s homes, HVHZ-code shingle, tile \u0026 metal, dual-licensed since 2005. (754) 227-5605.',
+    description: 'North Lauderdale roofer for the Morris Lapidus \u2018City of Tomorrow\u2019 \u2014 aging 1970s homes, HVHZ-code shingle, tile \u0026 metal. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/north-lauderdale'
   },
   '/locations/lauderdale-lakes': {
     title: 'Roofing Contractor in Lauderdale Lakes, FL | All Phase USA',
-    description: 'Lauderdale Lakes, FL roofer for 1960s homes \u0026 condo communities \u2014 HVHZ-code shingle, tile \u0026 flat roofs, association approvals handled, dual-licensed. (754) 227-5605.',
+    description: 'Lauderdale Lakes, FL roofer for 1960s homes \u0026 condo communities \u2014 HVHZ-code shingle, tile \u0026 flat, association approvals. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderdale-lakes'
   },
   '/locations/lauderhill': {
     title: 'Roofing Contractor in Lauderhill, FL | All Phase USA',
-    description: 'Lauderhill, FL roofer for 1960s homes, Inverrary condos \u0026 gated communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled, dual-licensed. (754) 227-5605.',
+    description: 'Lauderhill, FL roofer for 1960s homes, Inverrary condos \u0026 gated communities \u2014 HVHZ-code shingle, tile \u0026 metal. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderhill'
   },
   '/locations/margate': {
     title: 'Roofing Contractor in Margate, FL | All Phase USA',
-    description: 'Margate, FL roofer for canal homes, gated \u0026 55+ communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled, dual-licensed since 2005. (754) 227-5605.',
+    description: 'Margate, FL roofer for canal homes, gated \u0026 55+ communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/margate'
   },
   '/locations/miramar': {
     title: 'Roofing Contractor in Miramar, FL | All Phase USA',
-    description: 'Miramar, FL roofer for the City of Lakes \u2014 master-planned lake communities \u0026 older Broward homes, HVHZ-code tile, shingle \u0026 metal, dual-licensed. (754) 227-5605.',
+    description: 'Miramar, FL roofer for the City of Lakes \u2014 master-planned lake communities \u0026 older homes, HVHZ-code tile, shingle \u0026 metal. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/miramar'
   },
   '/locations/jupiter': {
     title: 'Roofing Contractor in Jupiter, FL | All Phase USA',
-    description: 'Jupiter, FL coastal \u0026 waterfront roofer \u2014 tile \u0026 standing-seam metal built for Atlantic salt air at Florida\u2019s farthest-east point, HVHZ-spec. (754) 227-5605.',
+    description: 'Jupiter, FL coastal \u0026 waterfront roofer \u2014 tile \u0026 standing-seam metal built for Atlantic salt air, HVHZ-spec. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/jupiter'
   },
   '/locations/lake-worth-beach': {
     title: 'Roofing Contractor in Lake Worth, FL (Lake Worth Beach)',
-    description: 'Roofer in Lake Worth (Lake Worth Beach), FL — historic-district re-roofs, coastal tile, shingle & metal, dual-licensed & HVHZ-spec since 2005. (754) 227-5605.',
+    description: 'Roofer in Lake Worth (Lake Worth Beach), FL \u2014 historic-district re-roofs, coastal tile, shingle \u0026 metal, HVHZ-spec. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach'
   },
   '/': {
@@ -366,12 +366,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // render. Canonical matches the policy: no trailing slash.
   '/locations/palm-beach-county': {
     title: 'Roofing Contractor in Palm Beach County, FL | All Phase USA',
-    description: 'Palm Beach County, FL roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coastal to inland, dual-licensed. (754) 227-5605.',
+    description: 'Palm Beach County roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coast to inland. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
   },
   '/locations/broward-county': {
     title: 'Roofing Contractor in Broward County, FL | All Phase USA',
-    description: 'Broward County, FL roofer serving all 28 cities from our Deerfield Beach office \u2014 HVHZ-code tile, shingle, metal \u0026 flat roofs, dual-licensed since 2005. (754) 227-5605.',
+    description: 'Broward County roofer serving all 28 cities from our Deerfield Beach office \u2014 HVHZ-code tile, shingle, metal \u0026 flat roofs. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/broward-county'
   },
   '/locations/service-areas': {
@@ -433,12 +433,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-repair/west-palm-beach': {
     title: 'West Palm Beach Roof Repair | Fast Response | All Phase USA',
-    description: 'Expert roof repair in West Palm Beach, FL. Tile, shingle, metal & flat repairs. Storm damage specialists. Licensed & insured, free inspection. (754) 227-5605.',
+    description: 'Expert roof repair in West Palm Beach, FL \u2014 tile, shingle, metal \u0026 flat repairs, storm damage. Licensed \u0026 insured. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/west-palm-beach'
   },
   '/roof-repair/boca-raton': {
     title: 'Boca Raton Roof Repair | Licensed Contractor | All Phase USA',
-    description: 'Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. Licensed & insured. Free inspection. (754) 227-5605.',
+    description: 'Professional roof repair in Boca Raton \u2014 tile, shingle \u0026 flat leaks, storm damage, flashing. Licensed \u0026 insured. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/boca-raton'
   },
   '/roof-repair/coral-springs': {
@@ -568,7 +568,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/flat-roof-tpo-vs-pvc-west-palm-beach': {
     title: 'Flat Roof TPO vs PVC in West Palm Beach (2026)',
-    description: 'TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan, chemical and ponding resistance, and the HVHZ code that decides which one fits.',
+    description: 'TPO or PVC for your West Palm Beach flat roof? 2026 pricing, 25-year lifespan, ponding \u0026 chemical resistance, and the HVHZ code that decides.',
     canonical: 'https://allphaseconstructionfl.com/flat-roof-tpo-vs-pvc-west-palm-beach'
   },
   '/switch-from-shingles-to-metal-plantation': {
@@ -628,7 +628,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/pre-listing-roof-certification-coconut-creek': {
     title: 'Pre-Listing Roof Certification in Coconut Creek (2026)',
-    description: 'Why Coconut Creek listings benefit from a pre-listing roof certification in 2026 — what it includes, and how it keeps deals from falling through at closing.',
+    description: 'Why Coconut Creek listings benefit from a pre-listing roof certification \u2014 what it includes and how it keeps deals from falling through.',
     canonical: 'https://allphaseconstructionfl.com/pre-listing-roof-certification-coconut-creek'
   },
   // === 44 SPA-shell-victim slugs (PR fixing NuclearMetadata stomp) ===
@@ -806,7 +806,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/pompano-beach-roof-permit-guide': {
     title: 'Pompano Beach Roof Permit Guide (2026) | All Phase USA',
-    description: 'Pompano Beach roof permit guide — legally HVHZ Broward jurisdiction, NOA documentation, 2–3 week timeline, secondary water barrier mandated. (754) 227-5605.',
+    description: 'Pompano Beach roof permit guide \u2014 legally HVHZ Broward, NOA documentation, 2\u20133 week timeline, secondary water barrier. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-permit-guide'
   },
   '/palm-aire-pompano-beach-roofing': {
@@ -836,7 +836,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/wellington-hoa-roof-replacement': {
     title: 'Wellington HOA Roof Replacement | All Phase USA',
-    description: 'HOA-coordinated roof replacement across Wellington FL. 80+ communities served. Color match, architectural review, phased scheduling. PBC wind-code compliant.',
+    description: 'HOA-coordinated roof replacement across Wellington, FL. 80+ communities served \u2014 color match, architectural review, phased scheduling.',
     canonical: 'https://allphaseconstructionfl.com/wellington-hoa-roof-replacement'
   },
   '/wellington-metal-roofing': {

@@ -75,7 +75,7 @@ export default function PompanoBeachRoofRepairPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Roofing Contractor in Pompano Beach, FL
+                Roof Repair in Pompano Beach, FL
               </h1>
 
               <p className="text-xl text-zinc-400 mb-8">
