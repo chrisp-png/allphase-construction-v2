@@ -2397,7 +2397,44 @@ function loadProductionTemplate() {
  * Create HTML from production template with prerendered content
  * This replaces SEO meta tags but preserves all production script/style tags
  */
-function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null, ogDescription = null) {
+// Build BlogPosting JSON-LD for a blog post (prerendered into <head>).
+// Named author = Christopher Porosky (E-E-A-T), publisher = the company.
+function blogPostingSchema({ slug, title, description, image, published, modified, content, tags = [], categories = [] }) {
+  const abs = (u) => !u ? '' : (String(u).startsWith('http') ? u : `https://allphaseconstructionfl.com${String(u).startsWith('/') ? '' : '/'}${u}`);
+  const plain = String(content || '').replace(/<[^>]*>/g, ' ');
+  const wordCount = plain.split(/\s+/).filter(Boolean).length;
+  const kw = (Array.isArray(tags) && tags.length ? tags : (Array.isArray(categories) ? categories : []));
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description: description || '',
+    image: abs(image) || 'https://allphaseconstructionfl.com/og-image.jpg',
+    inLanguage: 'en-US',
+    wordCount,
+    keywords: (kw.join(', ') || 'roofing, South Florida'),
+    articleSection: (Array.isArray(categories) && categories[0]) || 'Roofing',
+    author: {
+      '@type': 'Person',
+      name: 'Christopher Porosky',
+      url: 'https://allphaseconstructionfl.com/team/chris-porosky',
+      jobTitle: 'Owner & Founder',
+      worksFor: { '@type': 'Organization', name: 'All Phase Construction USA' }
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'All Phase Construction USA',
+      logo: { '@type': 'ImageObject', url: 'https://allphaseconstructionfl.com/allphase-logo-white.svg' }
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://allphaseconstructionfl.com/blog/${slug}` },
+    isPartOf: { '@type': 'Blog', name: 'All Phase Construction USA Roofing Blog', url: 'https://allphaseconstructionfl.com/blog' }
+  };
+  if (published) schema.datePublished = published;
+  if (modified || published) schema.dateModified = modified || published;
+  return schema;
+}
+
+function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null, ogDescription = null, ogImage = null, articleMeta = null) {
   const ogDesc = ogDescription || description;
 
   // Load the production template
@@ -2459,6 +2496,20 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     } else {
       html = html.replace('</head>', `  <meta name="twitter:description" content="${description}" />\n  </head>`);
     }
+  }
+
+  // Per-post OG image + article type (blog posts). Additive: only fires when passed.
+  if (ogImage) {
+    const absImg = String(ogImage).startsWith('http') ? ogImage : `https://allphaseconstructionfl.com${String(ogImage).startsWith('/') ? '' : '/'}${ogImage}`;
+    html = html.replace(/<meta property="og:image" content=".*?" \/>/, `<meta property="og:image" content="${absImg}" />`);
+    html = html.replace(/<meta name="twitter:image" content=".*?" \/>/, `<meta name="twitter:image" content="${absImg}" />`);
+  }
+  if (articleMeta) {
+    html = html.replace(/<meta property="og:type" content=".*?">/, '<meta property="og:type" content="article">');
+    let atags = '';
+    if (articleMeta.published) atags += `  <meta property="article:published_time" content="${articleMeta.published}" />\n`;
+    if (articleMeta.modified) atags += `  <meta property="article:modified_time" content="${articleMeta.modified}" />\n`;
+    if (atags) html = html.replace('</head>', atags + '  </head>');
   }
 
   // Add JSON-LD schema if provided (before </head>)
@@ -3755,11 +3806,20 @@ ${companyAuthorityFooter()}
 </section>
           `.trim();
 
+          const bpSchema = blogPostingSchema({
+            slug, title: blogTitle, description: blogDescription,
+            image: null, published: null, modified: null,
+            content: blogContent, tags: [], categories: [],
+          });
           const blogHTML = createHTMLTemplate(
             pageTitle,
             blogDescription,
             blogCanonical,
-            blogContent
+            blogContent,
+            bpSchema,
+            null,
+            null,
+            { published: null, modified: null }
           );
 
           const blogDir = path.join(publicDir, 'blog', slug);
@@ -3906,6 +3966,12 @@ ${companyAuthorityFooter()}
             metaDescription: post.meta_description,
             excerpt: post.excerpt,
             content: post.content,
+            featuredImage: post.featured_image || '',
+            author: post.author || '',
+            publishedDate: post.published_date || '',
+            updatedAt: post.updated_at || post.published_date || '',
+            tags: Array.isArray(post.tags) ? post.tags : [],
+            categories: Array.isArray(post.categories) ? post.categories : [],
           };
           // Mirror the full row into the client cache, coercing nullable
           // fields to the shapes BlogPostPage expects (string | array | 0).
@@ -4065,11 +4131,21 @@ ${companyAuthorityFooter()}
 </section>
       `.trim();
 
+      const bpSchema = blogPostingSchema({
+        slug, title: blogTitle, description: blogDescription,
+        image: meta.featuredImage, published: meta.publishedDate,
+        modified: meta.updatedAt, content: supabaseContent,
+        tags: meta.tags, categories: meta.categories,
+      });
       const blogHTML = createHTMLTemplate(
         escapeAttr(pageTitle),
         escapeAttr(blogDescription),
         blogCanonical,
-        hasRealContent ? richContent : boilerplateContent
+        hasRealContent ? richContent : boilerplateContent,
+        bpSchema,
+        null,
+        meta.featuredImage || null,
+        (meta.publishedDate ? { published: meta.publishedDate, modified: meta.updatedAt || meta.publishedDate } : null)
       );
 
       fs.mkdirSync(blogDir, { recursive: true });
