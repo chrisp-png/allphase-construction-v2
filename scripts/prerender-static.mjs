@@ -2087,6 +2087,133 @@ function generateTileRoofingHubContent() {
 `.trim();
 }
 
+
+/**
+ * /roof-replacement-cost-florida — money-page content (PR-147)
+ * NOTE: NO insurance language (CLAUDE.md rule #1). Cost/material/code focus only.
+ */
+function generateRoofReplacementCostFloridaContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Replacement Cost in Florida (2026)</h1>
+
+  <p><strong>A full roof replacement in Florida runs roughly $6,500 to $45,000 in 2026</strong>, depending on the material you choose, the size and pitch of your roof, and whether your home sits inside the High-Velocity Hurricane Zone (HVHZ). All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 & CGC-1526236) serving Broward County and Palm Beach County from our Deerfield Beach headquarters, and we quote every roof line-by-line so you can see exactly what drives the number.</p>
+
+  <h2>2026 Roof Replacement Cost by Material</h2>
+  <p>Ranges below are for a typical 2,000-square-foot single-family roof, installed to South Florida code:</p>
+  <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+    <thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Material</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Cost per sq ft</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Typical total</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Lifespan</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Asphalt shingle</td><td style="padding:8px;border:1px solid #e5e7eb;">$4.50–$9.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$6,500–$16,000</td><td style="padding:8px;border:1px solid #e5e7eb;">15–25 years</td></tr>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Concrete / clay tile</td><td style="padding:8px;border:1px solid #e5e7eb;">$8.00–$21.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$12,000–$38,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40–75+ years</td></tr>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Metal (standing seam / exposed fastener)</td><td style="padding:8px;border:1px solid #e5e7eb;">$7.00–$23.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$15,000–$45,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40–70 years</td></tr>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Flat / low-slope (TPO, PVC)</td><td style="padding:8px;border:1px solid #e5e7eb;">$4.00–$10.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$8,000–$20,000</td><td style="padding:8px;border:1px solid #e5e7eb;">20–30 years</td></tr>
+    </tbody>
+  </table>
+  <p>These totals include tear-off of the old roof, new underlayment, code-required components, labor, and permits. They do not include structural repairs that only become visible once the old roof is removed — more on that below.</p>
+
+  <h2>What Actually Drives Your Price</h2>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>Roof size (squares).</strong> Roofing is priced per 100-square-foot "square." A larger footprint or a steep, cut-up roof with many valleys, hips, and penetrations costs more per square to install.</li>
+    <li><strong>Material and profile.</strong> Shingle is the entry point; tile and metal cost more up front but last far longer. Clay tile and standing-seam aluminum sit at the top of the range.</li>
+    <li><strong>Tear-off and disposal.</strong> Florida's heat and moisture rarely allow a "roof-over," so budget for full removal and haul-off — typically $1–$3 per square foot.</li>
+    <li><strong>Decking condition.</strong> Rotted or delaminated plywood/board decking is common on older roofs and can't be assessed until tear-off. Replacement typically runs $2–$5 per square foot for the affected area.</li>
+    <li><strong>Permits and inspections.</strong> Every re-roof in Broward and Palm Beach requires a permit and multiple inspections; fees generally run $200–$500.</li>
+  </ul>
+
+  <h2>The HVHZ Cost Premium (15–25%)</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone. Palm Beach County is not, though we voluntarily build Palm Beach roofs to the same specification. HVHZ code adds roughly <strong>15–25%</strong> to a comparable roof because it mandates:</p>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>Full-coverage secondary water barrier</strong> — a self-adhering peel-and-stick membrane bonded across the entire deck.</li>
+    <li><strong>Enhanced fastening</strong> — ring-shank nails, tighter nailing patterns, and six nails per shingle versus four in non-HVHZ areas.</li>
+    <li><strong>Tested, approved assemblies</strong> — every material must carry a Miami-Dade Notice of Acceptance (NOA) or Florida Product Approval rated for our wind zone.</li>
+    <li><strong>Stricter plan review and inspection</strong> — dry-in, in-progress, and final inspections on every job.</li>
+  </ul>
+  <p>The upside: an HVHZ-spec roof is engineered for 175–180 mph design winds and is far more resilient in a major storm.</p>
+
+  <h2>Why a Dual-Licensed Contractor Saves You Money</h2>
+  <p>A standard roofing license (CCC) only covers the roof covering. When tear-off reveals damaged trusses, failed roof-to-wall connections, or rotted fascia, a roofing-only contractor has to bring in a separate general contractor — adding cost and delay. Because we hold both the roofing (CCC-1331464) and general contractor (CGC-1526236) licenses, we handle the structural work and the roof under one contract, one crew, and one warranty. No change-order surprises from a second trade.</p>
+
+  <h2>Get an Exact Number for Your Roof</h2>
+  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or call <strong>(754) 227-5605</strong> for a free in-person measurement and a written, line-item quote. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /metal-roofing — service-page content (PR-147). NO insurance language.
+ */
+function generateMetalRoofingContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Metal Roofing Installation &amp; Repair in South Florida</h1>
+
+  <p><strong>Metal is the fastest-growing roof choice in South Florida</strong>, and for good reason: a properly installed standing-seam system carries a 40-to-70-year service life and some of the highest wind ratings available. All Phase Construction USA installs and repairs metal roofing across Broward County and Palm Beach County, engineered to High-Velocity Hurricane Zone (HVHZ) specification on every job.</p>
+
+  <h2>The Metal Systems We Install</h2>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>Standing seam</strong> — concealed-fastener panels with raised, interlocking seams. The premium South Florida metal roof: no exposed screws to back out over time, clean modern lines, and the best wind performance.</li>
+    <li><strong>Exposed fastener (5V / R-panel)</strong> — a more economical corrugated system fastened through the face. A strong value option for outbuildings, agricultural, and budget-conscious re-roofs.</li>
+    <li><strong>Stone-coated steel</strong> — metal durability with the look of tile or shake, useful where an HOA requires a traditional appearance.</li>
+  </ul>
+
+  <h2>Aluminum vs. Steel — the Coastal Decision</h2>
+  <p>Within roughly three miles of the ocean or Intracoastal, salt air will corrode standard steel over time. For coastal Broward and Palm Beach homes we strongly recommend <strong>aluminum standing seam</strong>, which does not rust. Farther inland, Galvalume or coated steel is an excellent, more economical choice. We size the recommendation to your address, not a one-size-fits-all quote.</p>
+
+  <h2>HVHZ Ratings and HOA Approval</h2>
+  <p>Broward County is a legal HVHZ; Palm Beach County is not, but we build every Palm Beach metal roof to the same spec. Our systems carry Miami-Dade NOA or Florida Product Approval with design-wind ratings up to 175–180 mph, tested as complete assemblies. If your community has an architectural-review board, we provide the product data, color samples, and specification sheets HOA boards require — we handle this routinely in Wellington, Boca Raton, Parkland, and the coastal barrier-island communities.</p>
+
+  <h2>2026 Metal Roofing Cost</h2>
+  <p>For a typical 2,000-square-foot home, installed to HVHZ spec:</p>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>Exposed-fastener steel</strong> — roughly $14,000 to $24,000.</li>
+    <li><strong>Standing-seam steel</strong> — roughly $20,000 to $30,000.</li>
+    <li><strong>Standing-seam aluminum (coastal)</strong> — roughly $24,000 to $45,000.</li>
+  </ul>
+  <p>Final pricing depends on roof size, pitch, panel gauge, and the number of penetrations and transitions.</p>
+
+  <h2>Schedule a Metal Roof Consultation</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free inspection and a written quote. Comparing options? Read <a href="/blog/metal-roof-vs-shingles-florida-2026" style="color:#dc2626;text-decoration:underline;">Metal vs. Shingles</a> and <a href="/blog/metal-roof-vs-tile-roof-south-florida-hurricanes" style="color:#dc2626;text-decoration:underline;">Metal vs. Tile</a>, or estimate with our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">Roof Cost Calculator</a>.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /projects — portfolio-page content (PR-147). NO insurance language.
+ */
+function generateProjectsContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Our South Florida Roofing Projects</h1>
+
+  <p><strong>All Phase Construction USA has completed hundreds of roof replacements across Broward County and Palm Beach County</strong> — tile, metal, shingle, and flat systems on homes from Deerfield Beach and Boca Raton to Wellington, Parkland, and the coastal barrier islands. Every project is documented from inspection through final walkthrough so you can see the quality before you ever call.</p>
+
+  <h2>The Systems We Build</h2>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>Tile</strong> — concrete and clay replacements plus lift-and-relay underlayment renewals across Boca Raton, Delray Beach, Parkland, and Wellington.</li>
+    <li><strong>Metal</strong> — standing-seam aluminum and steel on coastal and estate homes, engineered to HVHZ spec.</li>
+    <li><strong>Shingle</strong> — architectural asphalt re-roofs throughout Broward and Palm Beach neighborhoods.</li>
+    <li><strong>Flat / low-slope</strong> — TPO and PVC single-ply systems for modern homes and additions.</li>
+  </ul>
+
+  <h2>What We Document on Every Job</h2>
+  <p>Our crews photograph each project at the key stages — existing conditions, tear-off, deck inspection and any repairs, secondary water barrier, and the finished roof. That record protects the homeowner and gives our inspectors a clear before-and-after on the decking and structure hidden beneath the old roof. When we find rot, cracked tiles, or failed connections, we mark and photograph the repair for full transparency.</p>
+
+  <h2>Built to HVHZ Specification</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone; Palm Beach County is not, but we build every Palm Beach roof to the same standard. That means Miami-Dade NOA or Florida Product Approval assemblies, full-coverage secondary water barrier, and enhanced fastening on every project — the same specification whether the home is in Fort Lauderdale or West Palm Beach.</p>
+
+  <h2>See the Work, Then Call</h2>
+  <p>Read verified homeowner feedback on our <a href="/reviews" style="color:#dc2626;text-decoration:underline;">reviews page</a>, explore the cities we serve on our <a href="/locations/deerfield-beach/service-area" style="color:#dc2626;text-decoration:underline;">service-area map</a>, or call <strong>(754) 227-5605</strong> for a free inspection of your own roof.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 /**
  * /contact hub content (PR-43)
  *
@@ -3530,6 +3657,12 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateContactHubContent();
     } else if (pagePath === '/reviews') {
       pageContent = generateReviewsHubContent();
+    } else if (pagePath === '/roof-replacement-cost-florida') {
+      pageContent = generateRoofReplacementCostFloridaContent();
+    } else if (pagePath === '/metal-roofing') {
+      pageContent = generateMetalRoofingContent();
+    } else if (pagePath === '/projects') {
+      pageContent = generateProjectsContent();
     } else {
       pageContent = defaultServicePageContent(title);
     }
