@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PalmBeachShoresMoneyPage() {
   const coordinates = getCityCoordinates('Palm Beach Shores');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach Shores', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Palm Beach Shores', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Palm Beach Shores?', a: 'A roof replacement in Palm Beach Shores typically runs $12,000 to $40,000 in 2026 for homes, with coastal tile and metal at the higher end. Condo-association roofs are priced by the building.' },
     { q: 'How do you protect a Palm Beach Shores roof from salt air?', a: 'With water on three sides of the island, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt corrodes the metal components long before the roofing surface wears out.' },

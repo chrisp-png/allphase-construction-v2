@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function SouthwestRanchesMoneyPage() {
   const coordinates = getCityCoordinates('Southwest Ranches');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Southwest Ranches', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Southwest Ranches', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Southwest Ranches?', a: 'Estate roof projects in Southwest Ranches typically start around $20,000 and rise well beyond, depending on size and material. Large, complex tile and standing-seam metal roofs on multi-acre estates run to the higher end, and barns or outbuildings are priced separately or bundled with the home.' },
     { q: 'Do you roof ranches and barns in Southwest Ranches?', a: 'Yes. Southwest Ranches properties are working ranches with barns and stables on acreage, and we roof the whole property. Metal roofing is a natural fit for the agricultural structures, alongside tile or metal on the main home.' },

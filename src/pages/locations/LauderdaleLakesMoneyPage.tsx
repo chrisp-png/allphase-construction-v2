@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function LauderdaleLakesMoneyPage() {
   const coordinates = getCityCoordinates('Lauderdale Lakes');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lauderdale Lakes', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Lauderdale Lakes', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Lauderdale Lakes?', a: "A roof replacement in Lauderdale Lakes typically runs $10,000 to $28,000 in 2026 for single-family homes; the city's 1960s homes are often straightforward shingle at the lower end. Condo-association and multi-unit roofs are priced by the building." },
     { q: 'Do you handle condo-association roofing in Lauderdale Lakes?', a: 'Yes. With so many 1960s condominium communities like Hawaiian Gardens, much of our Lauderdale Lakes work is association roofing. We coordinate the board approvals and handle the full multi-unit tear-off and replacement, including flat-roof sections.' },

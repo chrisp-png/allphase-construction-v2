@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function DavieMoneyPage() {
   const coordinates = getCityCoordinates('Davie');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Davie', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Davie', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Davie?', a: 'A roof replacement in Davie typically runs $12,000 to $50,000 or more in 2026. Family homes in shingle sit at the lower end; gated tile estates like Long Lake Ranches and equestrian properties with barns run to the higher end.' },
     { q: 'Do you roof equestrian ranches and barns in Davie?', a: "Yes. Davie's equestrian properties have barns and stables on large lots, and we roof the whole property. Metal roofing is a natural fit for the agricultural structures, alongside tile or shingle on the home." },

@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function WestonMoneyPage() {
   const coordinates = getCityCoordinates('Weston');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Weston', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Weston', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Weston?', a: 'A roof replacement in Weston typically runs $14,000 to $45,000 in 2026. Most Weston homes wear concrete or clay tile, which sits at the higher end; larger estates run higher still.' },
     { q: 'My Weston tile roof is from the 1990s — is it time to replace it?', a: "Weston was built largely in the 1990s and 2000s, so many of its tile roofs are now 25 to 30 years old and reaching the end of their service life. If yours is original, it's very likely due, and roof age is now the top reason Florida insurers issue non-renewals." },

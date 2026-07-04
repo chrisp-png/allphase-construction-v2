@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function MiramarMoneyPage() {
   const coordinates = getCityCoordinates('Miramar');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Miramar', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Miramar', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Miramar?', a: "A roof replacement in Miramar typically runs $11,000 to $32,000 in 2026, depending on roof size and material. Shingle sits at the lower end; the concrete and clay tile common in Miramar's master-planned lake communities sits higher." },
     { q: "Do you handle HOA approval in Miramar's lake communities?", a: "Yes. For SilverLakes, Sunset Lakes, Riviera Isles, and Miramar's other master-planned communities, we manage the full architectural-review process — matching the required tile profile and color and submitting the documentation your HOA needs to approve the project." },

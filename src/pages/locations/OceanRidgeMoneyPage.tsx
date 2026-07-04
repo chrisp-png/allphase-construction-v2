@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function OceanRidgeMoneyPage() {
   const coordinates = getCityCoordinates('Ocean Ridge');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Ocean Ridge', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Ocean Ridge', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Ocean Ridge?', a: 'A roof replacement in Ocean Ridge typically runs $16,000 to $50,000 in 2026, with premium tile and standing-seam metal on the estates at the higher end.' },
     { q: 'How do you protect an Ocean Ridge roof from salt air?', a: 'Ocean Ridge sits between the ocean and the Intracoastal, so we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt corrodes the metal components long before the tile or panel wears out.' },

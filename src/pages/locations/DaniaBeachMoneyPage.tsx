@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function DaniaBeachMoneyPage() {
   const coordinates = getCityCoordinates('Dania Beach');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Dania Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Dania Beach', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Dania Beach?', a: 'A roof replacement in Dania Beach typically runs $11,000 to $35,000 in 2026. Older inland homes in shingle sit at the lower end; coastal tile and metal run higher, and condo roofs are priced by the building.' },
     { q: 'My Dania Beach home is old — should I replace the roof?', a: "As Broward's oldest city, Dania Beach has a lot of early-century and mid-century homes on aging roofs. If yours is past its service life, roof age is now the top reason Florida insurers issue non-renewals. A free inspection tells you where you stand." },

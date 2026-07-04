@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function HypoluxoMoneyPage() {
   const coordinates = getCityCoordinates('Hypoluxo');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hypoluxo', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Hypoluxo', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Hypoluxo?', a: 'A roof replacement in Hypoluxo typically runs $10,000 to $32,000 in 2026. Mainland homes in shingle sit at the lower end; waterfront tile and metal run higher.' },
     { q: 'How do you protect a Hypoluxo waterfront roof from salt air?', a: 'For homes near the Intracoastal, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt and brackish water corrode the metal components long before the roofing surface wears out.' },

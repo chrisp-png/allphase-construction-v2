@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PembrokeParkMoneyPage() {
   const coordinates = getCityCoordinates('Pembroke Park');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Pembroke Park', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Pembroke Park', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Pembroke Park?', a: 'A roof replacement on a site-built Pembroke Park home typically runs $10,000 to $28,000 in 2026, depending on size and material. Commercial and warehouse flat roofs are priced by the building and square footage.' },
     { q: 'Do you do commercial and warehouse roofing in Pembroke Park?', a: "Yes. Pembroke Park has one of Broward's densest concentrations of warehouses and distribution centers, and commercial flat roofing — TPO, PVC, and modified bitumen — is a core service. We handle re-roofs and full replacements on industrial and commercial buildings." },

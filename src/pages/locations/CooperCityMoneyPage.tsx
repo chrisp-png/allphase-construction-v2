@@ -14,7 +14,7 @@ import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function CooperCityMoneyPage() {
   const coordinates = getCityCoordinates('Cooper City');
-  const businessSchema = generateLocalBusinessSchema({ cityName: 'Cooper City', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.9', reviewCount: '150' } });
+  const businessSchema = generateLocalBusinessSchema({ cityName: 'Cooper City', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude, aggregateRating: { ratingValue: '4.8', reviewCount: '150' } });
   const faqs = [
     { q: 'How much does a roof replacement cost in Cooper City?', a: "A roof replacement in Cooper City typically runs $11,000 to $30,000 in 2026. Architectural shingle sits at the lower end; concrete tile, common in the city's master-planned neighborhoods, runs higher." },
     { q: 'Do you handle HOA approval in Cooper City?', a: 'Yes. Many Cooper City neighborhoods like Rock Creek and Embassy Lakes have HOAs that govern roof profile and color. We manage the full architectural-review process and submit the documentation your HOA needs to approve the project.' },
