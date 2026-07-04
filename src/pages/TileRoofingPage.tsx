@@ -1244,7 +1244,7 @@ export default function TileRoofingPage() {
           },
           {
             title: "How Often Should I Replace My Roof in South Florida?",
-            url: "/blog/how-often-should-i-replace-my-roof-in-south-florida",
+            url: "/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet",
             excerpt: "Learn about tile roof lifespan in South Florida's climate and what factors affect when you'll need a replacement."
           },
           {

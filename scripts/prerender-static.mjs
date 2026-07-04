@@ -988,7 +988,7 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
     ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington','pompano-beach','hollywood','sunrise','plantation','davie','miramar','pembroke-pines','delray-beach','boynton-beach','jupiter','palm-beach-gardens','royal-palm-beach','greenacres','lake-worth-beach','parkland'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
     <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
-    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
     <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
     <li><a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></li>
   </ul>
@@ -1137,7 +1137,7 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
     ${['deerfield-beach','fort-lauderdale','west-palm-beach','boca-raton','coral-springs','wellington','pompano-beach','hollywood','sunrise','plantation','davie','miramar','pembroke-pines','delray-beach','boynton-beach','jupiter','palm-beach-gardens','royal-palm-beach','greenacres','lake-worth-beach','parkland'].includes(citySlug) ? `<li><a href="/locations/${citySlug}/best-roofers-${citySlug}" style="color: #dc2626; text-decoration: underline;">Best Roofers in ${cityName}</a></li>` : ''}
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
     <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
-    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
     <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
     <li><a href="/learning-center" style="color: #dc2626; text-decoration: underline;">Learning Center</a></li>
   </ul>
@@ -1188,9 +1188,9 @@ function generateRoofRepairHubContent() {
   <h2>Helpful Roof Repair Resources</h2>
   <p>Learn more about roof repairs and maintenance from our expert guides:</p>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
-    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
     <li><a href="/blog/dont-replace-your-roof-restore-it-instead" style="color: #dc2626; text-decoration: underline;">Don't Replace Your Roof — Restore It Instead</a></li>
-    <li><a href="/blog/what-to-expect-during-a-roof-replacement-project" style="color: #dc2626; text-decoration: underline;">What to Expect During a Roof Replacement</a></li>
+    <li><a href="/blog/complete-roof-replacement-process-10-steps" style="color: #dc2626; text-decoration: underline;">What to Expect During a Roof Replacement</a></li>
     <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
   </ul>
@@ -1261,7 +1261,7 @@ function generateRoofRepairContent(cityName, citySlug) {
 
   <div style="margin-top: 1.5rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
     <p><strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Professional ${cityName} roof inspection</a> | <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></p>
-    <p style="margin-top: 0.75rem;"><strong>Related Articles:</strong> <a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often to Replace Your Roof</a> | <a href="/blog/what-to-expect-during-a-roof-replacement-project" style="color: #dc2626; text-decoration: underline;">What to Expect During Replacement</a> | <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Insurance Claims Guide</a></p>
+    <p style="margin-top: 0.75rem;"><strong>Related Articles:</strong> <a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">How Often to Replace Your Roof</a> | <a href="/blog/complete-roof-replacement-process-10-steps" style="color: #dc2626; text-decoration: underline;">What to Expect During Replacement</a> | <a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Insurance Claims Guide</a></p>
   </div>
 
 <div class="seo-service-links">
@@ -1309,7 +1309,7 @@ function generateRoofInspectionHubContent() {
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><a href="/blog/professional-roof-inspection-south-florida" style="color: #dc2626; text-decoration: underline;">What a Professional Roof Inspection Looks Like</a></li>
     <li><a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer in South Florida</a></li>
-    <li><a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
+    <li><a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
   </ul>
 
@@ -1508,7 +1508,7 @@ function defaultServicePageContent(pageTitle) {
   <p>All Phase Construction USA works with leading roofing manufacturers and follows industry best practices. Learn more from these authoritative sources: <a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">GAF Roofing</a>, <a href="https://www.owenscorning.com/en-us/roofing" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Owens Corning Roofing</a>, and the <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">National Roofing Contractors Association (NRCA)</a>.</p>
 
   <h2>Related Articles</h2>
-  <p>Expert roofing advice from our blog: <a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer</a> · <a href="/blog/how-often-should-i-replace-my-roof-in-south-florida" style="color: #dc2626; text-decoration: underline;">Roof Replacement Timing</a> · <a href="/blog/what-to-expect-during-a-roof-replacement-project" style="color: #dc2626; text-decoration: underline;">What to Expect During Replacement</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Cost Calculator</a></p>
+  <p>Expert roofing advice from our blog: <a href="/blog/how-to-hire-a-roofer-in-south-florida" style="color: #dc2626; text-decoration: underline;">How to Hire a Roofer</a> · <a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">Roof Replacement Timing</a> · <a href="/blog/complete-roof-replacement-process-10-steps" style="color: #dc2626; text-decoration: underline;">What to Expect During Replacement</a> · <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Cost Calculator</a></p>
 
   <p><strong>Contact us at (754) 227-5605 for a free professional inspection and estimate.</strong></p>
 
@@ -2734,7 +2734,7 @@ function getSEOMetadata(urlPath, cityName = null) {
       // PR-64 CTR rewrite: "Free Inspection" hook (accurate to workflow).
       return {
         title: `Roof Repair ${cityName} FL | Free Inspection`,
-        description: `Free roof repair inspection in ${cityName}, FL — typically booked within 24–48 hours. Leaks, storm damage & flashing fixes. Dual-licensed (CCC + CGC). (754) 227-5605.`,
+        description: `Roof repair in ${cityName}, FL — booked within 24–48 hrs. Leaks, storm damage & flashing fixes. Dual-licensed (CCC + CGC). (754) 227-5605.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
@@ -4817,7 +4817,7 @@ ${companyAuthorityFooter()}
     <a href="/">Home</a> › <a href="/locations/deerfield-beach/service-area">Locations</a> › <a href="/locations/${landmark.citySlug}">${cityDisplay}</a> › <span>${landmark.name}</span>
   </nav>
   <h1>Roof Replacement Near ${landmark.name}</h1>
-  <p style="font-size:1.125rem;">${landmark.shortDescriptor}</p>
+  <p style="font-size:1.125rem;">${landmark.name} is ${landmark.shortDescriptor}</p>
   <h2>The ${landmark.name} Area</h2>
   <p>${landmark.localContext}</p>
   <h2>Roofing in This Part of ${cityDisplay}</h2>
