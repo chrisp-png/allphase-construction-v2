@@ -2214,6 +2214,35 @@ function generateProjectsContent() {
 `.trim();
 }
 
+
+/**
+ * /florida-roof-insurance-claims-guide — reframed insurance-free (PR-154).
+ * Rule #1: no insurance/claim/carrier/deductible/hail/"hurricane damage".
+ */
+function generateRoofDamageAssessmentContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Roof Damage Assessment &amp; Documentation in Florida</h1>
+  <p><strong>After a major storm, the difference between a smooth roof project and a stressful one is documentation.</strong> All Phase Construction USA provides thorough roof damage assessments across Broward and Palm Beach County — a written, photo-documented report of exactly what the storm did to your roof, so you can make an informed repair-or-replace decision.</p>
+  <h2>What a Professional Assessment Covers</h2>
+  <ul style="line-height:1.75;">
+    <li>Covering condition — lifted, cracked, or missing shingles and tiles</li>
+    <li>Flashing at every penetration, valley, and wall</li>
+    <li>Deck soundness and any water intrusion</li>
+    <li>Attic moisture scanning for leaks not visible from outside</li>
+    <li>Structural connections where accessible</li>
+  </ul>
+  <h2>Why Documentation Matters</h2>
+  <p>A detailed report with dated photos and moisture readings gives you an objective record of the roof's condition. It removes the guesswork from a repair-versus-replace decision and gives every party a clear, professional basis to work from.</p>
+  <h2>Repair or Replace?</h2>
+  <p>We recommend a repair when damage is localized and the roof has service life left, and a replacement when the covering is at end-of-life, the deck is compromised, or damage is widespread. As a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle both the roof and any structural repair under one contract.</p>
+  <h2>Act Within Days</h2>
+  <p>Get a professional assessment quickly after a storm — before the next rain drives water deeper. Call <strong>(754) 227-5605</strong> for a documented roof damage assessment anywhere in Broward or Palm Beach County.</p>
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 /**
  * /contact hub content (PR-43)
  *
@@ -3663,6 +3692,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateMetalRoofingContent();
     } else if (pagePath === '/projects') {
       pageContent = generateProjectsContent();
+    } else if (pagePath === '/florida-roof-insurance-claims-guide') {
+      pageContent = generateRoofDamageAssessmentContent();
     } else {
       pageContent = defaultServicePageContent(title);
     }
@@ -8102,6 +8133,17 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'four-point-inspection-roof-lake-worth-beach',
+      body: `<p>A 4-point inspection reviews four home systems — roof, electrical, plumbing, and HVAC. For most Lake Worth Beach homeowners, the roof section is the one that decides the outcome. Here is what the inspector evaluates.</p>
+<h2>The Roof Section, Item by Item</h2>
+<ul style="line-height:1.75;">
+<li><strong>Age and material</strong> — when the roof was last replaced and what it is made of</li>
+<li><strong>Remaining service life</strong> — realistic years left before replacement</li>
+<li><strong>Covering condition</strong> — curling, cracked, or missing shingles and tiles</li>
+<li><strong>Active leaks</strong> — stains, moisture, or prior water intrusion</li>
+<li><strong>Flashing and penetrations</strong> — the most common failure points</li>
+</ul>
+<h2>Why Older Homes Need It</h2>
+<p>Homes with roofs approaching or past their service life are the ones most likely to need attention. A professional inspection gives you a clear, documented picture of where the roof stands — and if repairs are needed to bring it up to standard, we can complete them quickly. Lake Worth Beach is in Palm Beach County; we build and repair to HVHZ specification.</p>`,
       title: '4-Point Inspection Roof Section in Lake Worth Beach (2026)',
       description: 'How the Florida 4-point inspection roof section works for Lake Worth Beach homeowners, what carriers require, and how to avoid a non-renewal letter.',
       h1: '4-Point Inspection (Roof Section) in Lake Worth Beach',
@@ -8112,6 +8154,20 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'hurricane-roof-damage-inspection-hollywood',
+      body: `<p>After a major storm passes through Hollywood, the smart move is a prompt, documented roof inspection — before the next rain drives water deeper into the structure.</p>
+<h2>The Post-Storm Roof Checklist</h2>
+<ul style="line-height:1.75;">
+<li>Lifted, creased, or missing shingles</li>
+<li>Cracked, slipped, or displaced tiles</li>
+<li>Flashing peeled at walls, valleys, and penetrations</li>
+<li>Debris impact points and punctures</li>
+<li>Gutter and fascia damage at the roof edge</li>
+<li>Attic moisture and any daylight through the deck</li>
+</ul>
+<h2>Documentation That Protects You</h2>
+<p>We photograph every finding, take moisture readings, and deliver a written condition report — an objective record of what the storm did to your roof.</p>
+<h2>Why Act Fast</h2>
+<p>Wind-lifted shingles and cracked tiles let water in during the very next storm. A prompt inspection catches damage while it is still a repair. Hollywood is in Broward County's legal HVHZ; we rebuild to that standard.</p>`,
       title: 'Hurricane Roof Damage Inspection in Hollywood, FL (2026)',
       description: 'What to do after a hurricane damages your Hollywood, FL roof — the 10-point inspection checklist, insurance documentation, and the 24-hour window that',
       h1: 'Hurricane Roof Damage Inspection in Hollywood',
@@ -8266,6 +8322,23 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'storm-damage-repair-or-replace-davie',
+      body: `<p>After storm damage in Davie, the big question is repair or replace. Here is the honest decision framework we use on a roof inspection.</p>
+<h2>Lean Toward Repair When</h2>
+<ul style="line-height:1.75;">
+<li>Damage is localized to one slope or section</li>
+<li>The roof still has several years of service life</li>
+<li>The covering is still manufactured, so repairs match</li>
+<li>The deck underneath is sound</li>
+</ul>
+<h2>Lean Toward Replacement When</h2>
+<ul style="line-height:1.75;">
+<li>Damage is widespread across multiple areas</li>
+<li>The covering is already near end-of-life</li>
+<li>The deck is rotted or compromised</li>
+<li>The original material is discontinued and repairs will not match</li>
+</ul>
+<h2>How We Decide With You</h2>
+<p>We inspect the full roof and attic, document the damage with photos, and give you both options in writing with costs — the choice is yours. As a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle any structural repair under the same contract. Davie is in Broward County's legal HVHZ; we build to that standard.</p>`,
       title: 'Storm Damage: Repair or Replace in Davie?',
       description: 'Repair or replace a storm-damaged Davie, FL roof? Decision matrix, Florida matching statute, law-and-ordinance coverage, and the insurance angle that',
       h1: 'Storm Damage: Repair or Replace in Davie?',
@@ -8340,6 +8413,19 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wind-damage-insurance-claim-boynton-beach',
+      body: `<p>High winds off the Atlantic put Boynton Beach roofs under real stress. After a wind event, a fast, documented inspection tells you exactly what happened and what to do next.</p>
+<h2>What Wind Does to a Roof</h2>
+<ul style="line-height:1.75;">
+<li>Lifts and creases shingles, breaking the weather seal even when nothing is visibly missing</li>
+<li>Slides or cracks tiles, exposing the underlayment</li>
+<li>Peels flashing and drip edge away from the roof edge</li>
+<li>Drives rain under the covering at ridges and penetrations</li>
+<li>Tears gutters and fascia loose</li>
+</ul>
+<h2>Documented Inspection</h2>
+<p>We photograph and document each finding, take attic moisture readings, and give you a written report of the roof's condition — an objective basis for a repair-or-replace decision.</p>
+<h2>Repair vs. Replace</h2>
+<p>Localized damage on a roof with service life left is a repair; widespread damage or an end-of-life covering is a replacement. Boynton Beach is in Palm Beach County (not legal HVHZ), but we rebuild to HVHZ specification for maximum wind resistance.</p>`,
       title: 'Wind Damage Insurance Claim in Boynton Beach',
       description: 'The 9-step Boynton Beach wind damage roof insurance claim process — filing windows, hurricane deductibles, law-and-ordinance coverage, and how to avoid',
       h1: 'Wind Damage Insurance Claim in Boynton Beach',
@@ -8350,6 +8436,19 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'wind-mitigation-inspection-palm-beach-gardens',
+      body: `<p>A wind-mitigation inspection documents the specific features that make a roof more wind-resistant. For Palm Beach Gardens homeowners, it is a factual record of how your roof is built. Here is what the inspector evaluates.</p>
+<h2>The Features Documented</h2>
+<ul style="line-height:1.75;">
+<li><strong>Roof covering</strong> — material and whether it meets current Florida wind standards</li>
+<li><strong>Roof deck attachment</strong> — nail type and spacing securing the decking</li>
+<li><strong>Roof-to-wall connections</strong> — toe-nails, clips, or hurricane straps</li>
+<li><strong>Secondary water barrier</strong> — self-adhering membrane beneath the covering</li>
+<li><strong>Roof geometry</strong> — hip roofs shed wind better than gable</li>
+<li><strong>Opening protection</strong> — impact-rated windows and doors</li>
+</ul>
+<h2>How a New Roof Improves the Record</h2>
+<p>When we replace a Palm Beach Gardens roof, we install to HVHZ specification — enhanced fastening, a full secondary water barrier, and upgraded roof-to-wall connections where accessible — the same features this inspection documents. Palm Beach Gardens is in Palm Beach County (not legal HVHZ), but we build to the stronger standard.</p>`,
+      county: 'Palm Beach',
       title: 'Wind Mitigation Inspection in Palm Beach Gardens',
       description: 'How a Florida wind mitigation inspection saves Palm Beach Gardens homeowners $400 to $2,000 per year on insurance — every credit category explained.',
       h1: 'Wind Mitigation Inspection in Palm Beach Gardens',
