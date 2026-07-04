@@ -7964,6 +7964,23 @@ ${companyAuthorityFooter()}
     // ── 22 single-segment landing pages (React routes, had no prerender) ──
     {
       slug: 'annual-roof-inspection-sunrise',
+      body: `<p>An annual inspection catches small problems in Sunrise (Broward County) before they become ceiling stains and deck rot. Here is what a real inspection covers &mdash; well beyond a glance from the driveway.</p>
+<h2>Exterior</h2>
+<ul style="line-height:1.75;">
+<li>Shingle, tile, or membrane condition and remaining life</li>
+<li>Flashing integrity at every penetration and wall</li>
+<li>Valley condition and water channeling</li>
+<li>Ridge, hip, and fastener checks</li>
+<li>Soffit, fascia, and gutter condition</li>
+</ul>
+<h2>Attic &amp; Structure</h2>
+<ul style="line-height:1.75;">
+<li>Moisture scanning and readings on the underside of the deck</li>
+<li>Signs of active or past water intrusion</li>
+<li>Ventilation adequacy and insulation condition</li>
+<li>Deck and, where visible, truss soundness</li>
+</ul>
+<p>You receive a written report with photos, priority ratings, and a clear repair-or-monitor recommendation for each finding. Sunrise is a legal HVHZ, so we also verify HVHZ-relevant details like roof-to-wall connections where accessible.</p>`,
       title: 'Annual Roof Inspection in Sunrise, FL (10-Point Checklist)',
       description: '10-point annual roof inspection checklist for Sunrise, FL homeowners. What real inspections cover, what they cost, and how they save thousands in interior',
       h1: 'Annual Roof Inspection in Sunrise',
@@ -7974,6 +7991,15 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'boca-raton-roof-replacement-timeline',
+      body: `<p>Once the Palm Beach County permit is issued, most Boca Raton roof replacements move quickly. Here is the typical day-by-day for a single-family home.</p>
+<h2>Day-by-Day</h2>
+<ul style="line-height:1.75;">
+<li><strong>Before day 1 &mdash; Permit &amp; materials.</strong> Permit approval runs 2&ndash;4 weeks; materials are staged the day before.</li>
+<li><strong>Day 1 &mdash; Tear-off &amp; dry-in.</strong> The old roof comes off, the deck is inspected, and the secondary water barrier goes down so the home is watertight by end of day.</li>
+<li><strong>Days 2&ndash;3 &mdash; Installation.</strong> Shingle roofs are usually finished in 2&ndash;4 working days; concrete or clay tile takes longer because of loading, layout, and fastening.</li>
+<li><strong>Final day &mdash; Cleanup &amp; final inspection.</strong> Magnetic nail sweep, debris haul-off, and the county final inspection.</li>
+</ul>
+<p>Tile roofs typically run 1&ndash;3 weeks end to end depending on size and profile. Boca Raton is in Palm Beach County (not legal HVHZ), but we build to HVHZ specification, which adds the secondary water barrier and enhanced fastening steps above.</p>`,
       title: 'Boca Raton Roof Replacement Timeline: Day-by-Day (2026)',
       description: 'How long does a roof replacement take in Boca Raton? A phase-by-phase day-by-day timeline from inspection to final inspection, with permit and weather',
       h1: 'Boca Raton Roof Replacement Timeline: Day-by-Day',
@@ -7984,6 +8010,17 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'coral-springs-roof-permit-guide',
+      body: `<p>Coral Springs requires a permit for any roof replacement covering more than 25% of the roof surface, any change of material, and any structural work. Here is how the process actually runs.</p>
+<h2>What Triggers a Permit</h2>
+<ul style="line-height:1.75;">
+<li>Replacing more than 25% of the roof in any 12-month period.</li>
+<li>Changing material (for example, shingle to metal or tile).</li>
+<li>Any structural repair — decking, trusses, or roof-to-wall connections.</li>
+</ul>
+<h2>How We Handle It</h2>
+<p>We submit the permit electronically under our own license (CCC-1331464) with the Florida product-approval documentation and, for Broward County's HVHZ, the required wind-load and fastening details. Coral Springs is a legal High-Velocity Hurricane Zone, so plan reviewers scrutinize NOAs and nailing schedules closely.</p>
+<h2>Inspections</h2>
+<p>Expect three inspections: a dry-in (underlayment) inspection, an in-progress inspection, and a final. We coordinate each one. Homeowners should never pull their own roofing permit — doing so makes you the responsible party for all code compliance. A licensed contractor pulls it under their license and stands behind the work.</p>`,
       title: 'Coral Springs Roof Permit Guide (2026)',
       description: 'When you need a roofing permit in Coral Springs, what the city requires, how long it takes, fees, required inspections, and HVHZ code requirements.',
       h1: 'Coral Springs Roof Permit Guide (2026)',
@@ -7994,6 +8031,18 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'delray-beach-roof-overlay-vs-tear-off',
+      body: `<p>A roof "overlay" (installing a second layer over the old roof) is tempting because it looks cheaper — but in Delray Beach it is almost never allowed, and rarely a good idea. Here is why a full tear-off is the right call.</p>
+<h2>Why Overlays Don't Fly Here</h2>
+<p>The Florida Building Code sharply limits roof-overs, and reputable Palm Beach County contractors tear off to the deck on virtually every re-roof. An overlay hides the decking — so rot, delamination, and failed fasteners go undiscovered — and it cannot include the peel-and-stick secondary water barrier that modern code and good practice require.</p>
+<h2>What a Proper Tear-Off Includes</h2>
+<ul style="line-height:1.75;">
+<li>Full removal and disposal of the old covering and underlayment.</li>
+<li>Deck inspection — we mark and photograph any rotted plywood or board that needs replacement.</li>
+<li>New self-adhering secondary water barrier bonded to the deck.</li>
+<li>Enhanced fastening and a Florida product-approved covering.</li>
+</ul>
+<p>The result is a roof built on a sound, inspected deck with a brand-new waterproofing layer — the only way to get a full manufacturer warranty and decades of service.</p>`,
+      h1: 'Roof Overlay vs. Tear-Off in Delray Beach',
       title: "Why You Can't Overlay a Roof in Delray Beach (HVHZ Code",
       description: 'A contractor pitched you a roof-over in Delray Beach? Florida HVHZ code makes that almost impossible — and here is exactly why, with the code section that',
       h1: "Why You Can't Overlay a Roof in Delray Beach",
@@ -8004,6 +8053,17 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'emergency-roof-tarp-lighthouse-point',
+      body: `<p>When a roof is suddenly open to the weather, minutes matter. We provide 24-hour emergency tarp service in Lighthouse Point — five minutes from our Deerfield Beach headquarters — to stop water from reaching your interior.</p>
+<h2>When to Call</h2>
+<p>Call right away if you have a fresh leak during heavy rain, a fallen limb, missing tiles or shingles after high winds, or any visible opening in the roof. Getting a professional tarp on fast prevents far more expensive interior and deck damage.</p>
+<h2>What a Proper Emergency Tarp Includes</h2>
+<ul style="line-height:1.75;">
+<li>Heavy-duty tarp sized to overlap the damaged area and the ridge.</li>
+<li>Secured with fastened battens, not just weights, so it holds in wind.</li>
+<li>Water directed off the roof, not trapped against it.</li>
+<li>Photo documentation of the damage and the temporary repair.</li>
+</ul>
+<p>A tarp is a temporary measure. Once the weather clears, we return to inspect the deck and provide a permanent repair or replacement plan. Call <strong>(754) 227-5605</strong>.</p>`,
       title: 'Emergency Roof Tarp in Lighthouse Point (24-Hour Service)',
       description: 'Emergency roof tarp service in Lighthouse Point, FL — five minutes from our Deerfield Beach HQ.',
       h1: 'Emergency Roof Tarp in Lighthouse Point',
@@ -8062,6 +8122,13 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'metal-roofing-cost-fort-lauderdale',
+      body: `<p>Metal roofing costs more up front than shingle but lasts two to three times as long. In Fort Lauderdale (Broward County, a legal HVHZ), expect these 2026 ranges for a typical 2,000-square-foot home, installed to HVHZ spec.</p>
+<table style="width:100%;border-collapse:collapse;margin:1rem 0;"><thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Panel type</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Typical total</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Best for</th></tr></thead><tbody>
+<tr><td style="padding:8px;border:1px solid #e5e7eb;">Exposed-fastener (5V / R-panel)</td><td style="padding:8px;border:1px solid #e5e7eb;">$14,000&ndash;$24,000</td><td style="padding:8px;border:1px solid #e5e7eb;">Budget re-roofs, outbuildings</td></tr>
+<tr><td style="padding:8px;border:1px solid #e5e7eb;">Standing-seam steel</td><td style="padding:8px;border:1px solid #e5e7eb;">$20,000&ndash;$30,000</td><td style="padding:8px;border:1px solid #e5e7eb;">Most homes, concealed fasteners</td></tr>
+<tr><td style="padding:8px;border:1px solid #e5e7eb;">Standing-seam aluminum</td><td style="padding:8px;border:1px solid #e5e7eb;">$24,000&ndash;$45,000</td><td style="padding:8px;border:1px solid #e5e7eb;">Coastal / Intracoastal homes</td></tr>
+</tbody></table>
+<p><strong>Coastal note:</strong> within about three miles of the ocean or Intracoastal, salt air corrodes standard steel — we recommend aluminum, which does not rust. Price also moves with roof pitch, panel gauge, and the number of penetrations and transitions.</p>`,
       title: 'Metal Roofing Cost in Fort Lauderdale (2026) | All Phase USA',
       description: 'Real 2026 metal roof prices in Fort Lauderdale, FL by panel type. HVHZ code, coastal aluminum upgrades, insurance credits, and 50-year warranty options',
       h1: 'Metal Roofing Cost in Fort Lauderdale (2026)',
@@ -8097,6 +8164,16 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'pre-listing-roof-certification-coconut-creek',
+      body: `<p>The roof is one of the first things a buyer's inspector scrutinizes. A pre-listing roof certification in Coconut Creek documents the roof's condition and remaining life before you go to market — so it doesn't become a negotiation weapon at closing.</p>
+<h2>What the Certification Includes</h2>
+<ul style="line-height:1.75;">
+<li>A full inspection of covering, flashing, valleys, and penetrations.</li>
+<li>Remaining-service-life estimate for the roof system.</li>
+<li>Photo documentation and a written, signed report.</li>
+<li>A punch list of any repairs needed to certify the roof.</li>
+</ul>
+<h2>Why It Helps Your Sale</h2>
+<p>Buyers and their inspectors weigh an independent, licensed certification heavily. Presenting one up front sets expectations, reduces last-minute price renegotiation, and keeps deals from collapsing when the buyer's inspector flags the roof. If minor repairs are needed to certify, we can complete them quickly — Coconut Creek is minutes from our Deerfield Beach headquarters.</p>`,
       title: 'Pre-Listing Roof Certification in Coconut Creek (2026)',
       description: 'Why Coconut Creek listings need a pre-listing roof certification before going to market in 2026, what it includes, and how it prevents deals from',
       h1: 'Pre-Listing Roof Certification in Coconut Creek',
@@ -8107,6 +8184,18 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'roof-leak-detection-weston',
+      body: `<p>A ceiling stain rarely sits directly below the actual leak — water travels along the deck and framing before it drips. In Weston (Broward County), these are the eight most common sources we trace on a leak inspection.</p>
+<ol style="line-height:1.75;">
+<li><strong>Flashing failures</strong> at chimneys, walls, and skylights — the number-one leak point.</li>
+<li><strong>Slipped or cracked tiles</strong> exposing the underlayment beneath.</li>
+<li><strong>Soffit and fascia intrusion</strong> where wind-driven rain enters the eave.</li>
+<li><strong>Nail pops</strong> that lift shingles and open fastener holes.</li>
+<li><strong>Valley overflow</strong> where debris or undersized metal channels water sideways.</li>
+<li><strong>Skylight boot failure</strong> as rubber seals crack in Florida UV.</li>
+<li><strong>AC condensate pan overflow</strong> misread as a roof leak in the attic.</li>
+<li><strong>Deck rot</strong> that lets water wick far from the entry point.</li>
+</ol>
+<p>We locate the true source with an attic inspection and moisture readings, then give you a written report with a repair-versus-replace recommendation — not a guess from the ground.</p>`,
       title: 'Roof Leak Detection in Weston, FL (2026 Guide)',
       description: 'How to find the source of a roof leak in a Weston home, the 8 most common Florida leak sources, and when to repair vs file an insurance claim.',
       h1: 'Roof Leak Detection in Weston',
@@ -8143,6 +8232,13 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'roof-replacement-cost-deerfield-beach',
+      body: `<p>Deerfield Beach is home to our headquarters at 590 Goolsby Blvd, so we re-roof more homes here than anywhere else. A full replacement in 2026 runs roughly $9,000 to $45,000 depending on material, roof size, and pitch — Deerfield Beach sits in Broward County's legal High-Velocity Hurricane Zone (HVHZ), which adds required code components.</p>
+<table style="width:100%;border-collapse:collapse;margin:1rem 0;"><thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Material</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Typical total (2,000 sq ft)</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Lifespan</th></tr></thead><tbody>
+<tr><td style="padding:8px;border:1px solid #e5e7eb;">Architectural shingle</td><td style="padding:8px;border:1px solid #e5e7eb;">$9,000&ndash;$17,000</td><td style="padding:8px;border:1px solid #e5e7eb;">15&ndash;25 yrs</td></tr>
+<tr><td style="padding:8px;border:1px solid #e5e7eb;">Concrete / clay tile</td><td style="padding:8px;border:1px solid #e5e7eb;">$18,000&ndash;$42,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40&ndash;75+ yrs</td></tr>
+<tr><td style="padding:8px;border:1px solid #e5e7eb;">Standing-seam metal</td><td style="padding:8px;border:1px solid #e5e7eb;">$20,000&ndash;$45,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40&ndash;70 yrs</td></tr>
+</tbody></table>
+<p>Totals include tear-off, HVHZ-required secondary water barrier, new underlayment, permits, and labor. Not included until tear-off reveals them: rotted decking ($2&ndash;$5/sq ft) and structural repairs — which, as a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle under one contract.</p>`,
       title: 'Roof Replacement Cost in Deerfield Beach (2026)',
       description: '2026 Deerfield Beach roof replacement pricing by material — shingle, tile, and metal — including HVHZ code costs, permits, and insurance options.',
       h1: 'Roof Replacement Cost in Deerfield Beach (2026)',
@@ -8153,6 +8249,13 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'standing-seam-metal-roof-jupiter',
+      body: `<p>For coastal Jupiter homes, aluminum standing seam is the metal roof that lasts. Jupiter sits in Palm Beach County — not a legal HVHZ — but direct Atlantic and Intracoastal exposure means we build every roof to HVHZ specification with marine-grade detailing.</p>
+<h2>Why Aluminum, Not Steel</h2>
+<p>Within a few miles of saltwater, standard steel corrodes within 10&ndash;15 years. Aluminum standing seam does not rust, making it the right long-term choice for Jupiter's waterfront and near-coastal neighborhoods. Concealed clips mean no exposed fasteners to back out over time.</p>
+<h2>2026 Pricing</h2>
+<p>A standing-seam aluminum roof on a typical Jupiter home runs roughly $24,000&ndash;$45,000, depending on roof size, pitch, panel gauge, and the number of hips, valleys, and penetrations. Expect a 50&ndash;70-year service life.</p>
+<h2>Palm Beach County Attachment</h2>
+<p>We install to Florida Product Approval or Miami-Dade NOA assemblies with the enhanced fastener spacing Palm Beach County's coastal wind zone requires — engineered for direct ocean exposure with reinforced ridge and hip attachment.</p>`,
       title: 'Standing Seam Metal Roof in Jupiter (2026)',
       description: 'Why aluminum standing seam is the right metal roof for coastal Jupiter, FL — with 2026 pricing, HVHZ code, hurricane resilience, and Palm Beach County',
       h1: 'Standing Seam Metal Roof in Jupiter',
@@ -8199,6 +8302,13 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'tile-roof-replacement-wellington',
+      body: `<p>Tile defines Wellington's estate and country-club neighborhoods. A 2026 concrete tile replacement typically runs $20,000&ndash;$38,000 and clay $24,000&ndash;$45,000 for a 2,000-square-foot roof. Wellington is in Palm Beach County — not a legal HVHZ — but we install every tile roof to HVHZ specification because the wind exposure is the same.</p>
+<h2>HOA Architectural Approval</h2>
+<p>Most Wellington communities require architectural-review-board approval before a tile re-roof. We supply the tile profile, color samples, and Florida product-approval sheets your board needs, and we coordinate the submittal so your project stays on schedule.</p>
+<h2>Weight-Load Review When Changing Profile</h2>
+<p>Switching from a lightweight system to concrete or clay tile adds significant dead load. As a dual-licensed general contractor (CGC-1526236), we perform the engineered weight-load review to confirm your trusses and structure can carry the new roof — something a roofing-only contractor cannot do in-house.</p>
+<h2>Lift-and-Relay Option</h2>
+<p>If your tile is in good shape but the underlayment has failed, a lift-and-relay reuses the original tile over a new peel-and-stick membrane — preserving the look at a lower cost than full replacement.</p>`,
       title: 'Tile Roof Replacement in Wellington (2026)',
       description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements',
       h1: 'Tile Roof Replacement in Wellington',
@@ -8209,6 +8319,17 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'tree-damage-roof-repair-parkland',
+      body: `<p>Parkland's tree canopy is beautiful — until a limb comes down on the roof. Tree-limb damage ranges from a single cracked tile to a punched-through deck. Here are the seven patterns we repair.</p>
+<ol style="line-height:1.75;">
+<li><strong>Puncture</strong> — a limb pierces the covering and deck, opening a direct water path.</li>
+<li><strong>Scrape</strong> — a dragging branch strips granules or cracks tiles across a wide area.</li>
+<li><strong>Impact fracture</strong> — tile or shingle shatters at the point of impact.</li>
+<li><strong>Gutter tear-off</strong> — a falling limb rips gutters and fascia from the eave.</li>
+<li><strong>Fascia crush</strong> — the roof edge and trim are compressed or split.</li>
+<li><strong>Eave lift</strong> — impact lifts the roof edge, breaking the fastener seal.</li>
+<li><strong>Full collapse</strong> — a large limb breaks trusses and requires structural repair.</li>
+</ol>
+<p>Because we hold both roofing and general-contractor licenses (CCC-1331464 &amp; CGC-1526236), we repair both the roof and any broken structure underneath — trusses, decking, fascia — under one contract. We document the damage with photos and give you a clear repair-versus-replace recommendation.</p>`,
       title: 'Tree Damage Roof Repair in Parkland, FL (2026)',
       description: 'How to handle tree-limb roof damage in Parkland, FL — the 7 damage patterns, insurance coverage, repair vs replace, and the 24-hour documentation window',
       h1: 'Tree Damage Roof Repair in Parkland',
