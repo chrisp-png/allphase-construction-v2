@@ -252,7 +252,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     metaDescription: 'Looking for the best roofers in Miramar? We reviewed the top 5 roofing contractors. See who made the list.',
     introParagraphs: [
       'Miramar is one of Broward County\'s fastest-growing cities, with residential communities stretching from the urban core westward toward the Everglades. Newer neighborhoods like Huntington and Silver Shores are entering their first roof maintenance windows. We identified five roofers with the HVHZ credentials and local experience Miramar demands.',
-      'The 173-acre Miramar Regional Park and 157-acre Miramar Pineland Park serve the city\'s expanding communities. Silver Shores features Mediterranean-style gated developments with lake views, while Country Club Ranches offers a rural atmosphere on Miramar\'s western edge. Nautica\'s Spanish-style gated homes represent newer construction now requiring proactive maintenance. All roofing materials must carry HVHZ ratings for 130+ mph winds.'
+      'The 173-acre Miramar Regional Park and 157-acre Miramar Pineland Park serve the city\'s expanding communities. Silver Shores features Mediterranean-style gated developments with lake views, while Country Club Ranches offers a rural atmosphere on Miramar\'s western edge. Nautica\'s Spanish-style gated homes represent newer construction now requiring proactive maintenance. All roofing materials must carry HVHZ ratings for 175 mph winds.'
     ],
     competitors: [
       'Tiger Team Roofing',
@@ -287,7 +287,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
       { label: 'Miramar Roof Repair', href: '/roof-repair/miramar' }
     ],
     localExpertiseTitle: 'Why Miramar Requires HVHZ-Certified Roofers',
-    localExpertiseParagraph: 'Miramar requires all roofing materials to carry HVHZ ratings for 130+ mph winds. Every installation must include hurricane straps, enhanced fastening schedules, and impact-resistant materials -- the strictest residential roofing standards in the United States.'
+    localExpertiseParagraph: 'Miramar requires all roofing materials to carry HVHZ ratings for 175 mph winds. Every installation must include hurricane straps, enhanced fastening schedules, and impact-resistant materials -- the strictest residential roofing standards in the United States.'
   },
 
   'pembroke-pines': {

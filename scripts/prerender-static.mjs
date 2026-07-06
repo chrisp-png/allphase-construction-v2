@@ -850,7 +850,7 @@ const CITY_UNIQUE_CONTENT = {
     localContext: `Miramar is one of Broward County's fastest-growing cities, stretching from the urban core west toward the Everglades along I-75. The 173-acre Miramar Regional Park and 157-acre Miramar Pineland Park serve the city's expanding residential communities. Silver Shores features Mediterranean-style gated developments with lake views, while Country Club Ranches offers an equestrian-friendly, rural atmosphere on Miramar's western edge. Nautica's Spanish-style gated homes represent the city's newer construction requiring proactive roof maintenance.`,
     buildingNotes: `Miramar falls within Broward County's HVHZ zone requiring roofing materials rated for 130+ mph winds. The I-75 and Miramar Parkway interchange connects the city's western growth areas where newer communities like Huntington are entering their first roof maintenance windows. Many Silver Shores and Nautica homes were built in the 2000s with concrete tile systems that are now 20+ years old and approaching inspection age. Our HVHZ certification and dual licensing ensure every Miramar project meets the strict Broward County building code requirements for hurricane straps, specialized fasteners, and impact-resistant materials.`,
     popularServices: 'concrete tile maintenance for Silver Shores and Nautica communities, HVHZ-compliant reroofing in Huntington subdivisions, equestrian property roofing in Country Club Ranches, and new construction roofing for Miramar\'s expanding western developments',
-    localFact: 'Miramar requires all roofing materials to carry HVHZ ratings for 130+ mph winds. Every installation must include hurricane straps, enhanced fastening schedules, and impact-resistant materials &mdash; the strictest residential roofing standards in the United States.'
+    localFact: 'Miramar requires all roofing materials to carry HVHZ ratings for 175 mph winds. Every installation must include hurricane straps, enhanced fastening schedules, and impact-resistant materials &mdash; the strictest residential roofing standards in the United States.'
   },
   'pembroke-pines': {
     county: 'Broward County',
@@ -1346,7 +1346,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
     <li><strong>Dual-Licensed Expertise:</strong> Our CCC and CGC licenses provide structural engineering insight that standard roofing inspectors cannot offer.</li>
     <li><strong>Detailed Photo Documentation:</strong> Every ${cityName} inspection includes comprehensive photo documentation suitable for insurance submissions and real estate transactions.</li>
     <li><strong>Written Professional Reports:</strong> We provide clear, detailed written reports with findings, recommendations, and cost estimates.</li>
-    <li><strong>HVHZ Compliance Verification:</strong> We assess High Velocity Hurricane Zone compliance for ${cityName} properties requiring enhanced wind protection.</li>
+    <li><strong>Wind-Code Compliance:</strong> We verify your ${cityName} roof against the applicable wind standard &mdash; Broward County's HVHZ or Palm Beach County's wind code &mdash; for maximum storm protection.</li>
   </ul>
 
   <h2>Our 21-Point ${cityName} Roof Inspection Checklist</h2>
@@ -5705,7 +5705,7 @@ ${companyAuthorityFooter()}
   <h1>Top 5 Best Rated Roofers in Miramar, FL (2026)</h1>
   <p>Miramar is one of Broward County's fastest-growing cities, with residential communities stretching from the urban core westward toward the Everglades. Newer neighborhoods like Huntington and Silver Shores are entering their first roof maintenance windows. We identified five roofers with the HVHZ credentials and local experience Miramar demands.</p>
   <h2>Why Miramar Requires HVHZ-Certified Roofers</h2>
-  <p>The 173-acre Miramar Regional Park and 157-acre Miramar Pineland Park serve the city's expanding communities. Silver Shores features Mediterranean-style gated developments with lake views, while Country Club Ranches offers a rural atmosphere on Miramar's western edge. Nautica's Spanish-style gated homes represent newer construction now requiring proactive maintenance. All roofing materials must carry HVHZ ratings for 130+ mph winds.</p>
+  <p>The 173-acre Miramar Regional Park and 157-acre Miramar Pineland Park serve the city's expanding communities. Silver Shores features Mediterranean-style gated developments with lake views, while Country Club Ranches offers a rural atmosphere on Miramar's western edge. Nautica's Spanish-style gated homes represent newer construction now requiring proactive maintenance. All roofing materials must carry HVHZ ratings for 175 mph winds.</p>
   <h2>Your List of the Top 5 Best Roofers in Miramar, FL</h2>
   <ol>
     <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ roofs completed. Headquartered in neighboring Deerfield Beach for fast response to Miramar properties.</li>
