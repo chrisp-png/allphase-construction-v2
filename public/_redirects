@@ -485,6 +485,28 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /lighthouse-point /locations/lighthouse-point 301!
 /lauderdale-lakes /locations/lauderdale-lakes 301!
 /southwest-ranches /locations/southwest-ranches 301!
+# Remaining bare-city URLs -> /locations page (audit 2026-07, finish-site sweep)
+/coral-springs /locations/coral-springs 301!
+/dania-beach /locations/dania-beach 301!
+/gulf-stream /locations/gulf-stream 301!
+/hallandale-beach /locations/hallandale-beach 301!
+/haverhill /locations/haverhill 301!
+/highland-beach /locations/highland-beach 301!
+/hillsboro-beach /locations/hillsboro-beach 301!
+/hollywood /locations/hollywood 301!
+/hypoluxo /locations/hypoluxo 301!
+/jupiter-inlet-colony /locations/jupiter-inlet-colony 301!
+/lake-park /locations/lake-park 301!
+/miramar /locations/miramar 301!
+/north-lauderdale /locations/north-lauderdale 301!
+/palm-beach-gardens /locations/palm-beach-gardens 301!
+/pembroke-park /locations/pembroke-park 301!
+/pembroke-pines /locations/pembroke-pines 301!
+/royal-palm-beach /locations/royal-palm-beach 301!
+/sea-ranch-lakes /locations/sea-ranch-lakes 301!
+/sunrise /locations/sunrise 301!
+/tamarac /locations/tamarac 301!
+/westlake /locations/westlake 301!
 
 # ======================================================================
 # BEST-ROOFERS STATIC PAGE REWRITES
