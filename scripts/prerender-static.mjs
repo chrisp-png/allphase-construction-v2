@@ -2301,6 +2301,37 @@ function generatePalmBeachCountyGuideContent() {
 `.trim();
 }
 
+
+/**
+ * /roof-replacement-process — money-page content (PR-165). No insurance language.
+ */
+function generateRoofReplacementProcessContent() {
+  return `
+<section id="seo-static-content">
+  <h1>The Roof Replacement Process: 10 Steps, Start to Finish</h1>
+  <p><strong>Most South Florida roof replacements take 2 to 4 weeks end to end</strong> — the bulk of that is permitting, with the actual installation running 2 to 4 working days for shingle and 1 to 3 weeks for tile. Here is exactly how All Phase Construction USA takes a roof from first inspection to final sign-off.</p>
+  <h2>The 10 Steps</h2>
+  <ol style="line-height:1.75;">
+    <li><strong>Free inspection &amp; measurement.</strong> We assess covering, flashing, decking, and attic condition, then measure the roof (drone or in person) and provide a written, line-item quote.</li>
+    <li><strong>Material selection.</strong> You choose the system — architectural shingle, concrete or clay tile, standing-seam metal, or flat single-ply — with color samples and product-approval data.</li>
+    <li><strong>Permitting.</strong> We pull the permit under our own license with the required Florida product approvals and, in Broward's HVHZ, the wind-load and fastening details. This is the longest step (2–4 weeks at the city/county).</li>
+    <li><strong>Material staging.</strong> Materials are delivered and staged the day before work begins.</li>
+    <li><strong>Tear-off &amp; disposal.</strong> The old roof and underlayment are removed to the deck and hauled off.</li>
+    <li><strong>Deck inspection &amp; repair.</strong> We inspect the exposed decking and mark/photograph any rotted plywood or board that needs replacement.</li>
+    <li><strong>Dry-in (secondary water barrier).</strong> A self-adhering peel-and-stick membrane is bonded to the deck, making the home watertight — verified at the dry-in inspection.</li>
+    <li><strong>Installation.</strong> The new covering goes on with enhanced, code-compliant fastening. Shingle typically finishes in 2–4 days; tile takes longer for loading, layout, and detailing.</li>
+    <li><strong>Cleanup.</strong> Magnetic nail sweep of the property, debris haul-off, and a walkthrough of the finished roof.</li>
+    <li><strong>Final inspection &amp; warranty.</strong> The county performs the final inspection, and we register your manufacturer warranty.</li>
+  </ol>
+  <h2>Why the Dual License Keeps You on Schedule</h2>
+  <p>If tear-off reveals damaged trusses, failed roof-to-wall connections, or rotted fascia, a roofing-only contractor has to stop and bring in a general contractor. Because we hold both licenses (CCC-1331464 &amp; CGC-1526236), we handle the structural repair and the roof under one contract — no change-order delays.</p>
+  <h2>Get Your Timeline</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free inspection and a project-specific timeline, or estimate cost first with our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">Roof Cost Calculator</a>.</p>
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 /**
  * /contact hub content (PR-43)
  *
@@ -3756,6 +3787,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateFlatRoofingContent();
     } else if (pagePath === '/palm-beach-county-roof-replacement-guide') {
       pageContent = generatePalmBeachCountyGuideContent();
+    } else if (pagePath === '/roof-replacement-process') {
+      pageContent = generateRoofReplacementProcessContent();
     } else {
       pageContent = defaultServicePageContent(title);
     }
