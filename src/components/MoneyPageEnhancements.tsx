@@ -224,7 +224,7 @@ export default function MoneyPageEnhancements({
               >
                 <p className="text-zinc-200 italic leading-relaxed mb-4">"{t.text}"</p>
                 <footer className="text-sm font-semibold text-zinc-400 not-italic">
-                  — {t.name}, {nb}, {cityName}
+                  — {t.name}, {nb === cityName ? cityName : `${nb}, ${cityName}`}
                 </footer>
               </blockquote>
             ))}
