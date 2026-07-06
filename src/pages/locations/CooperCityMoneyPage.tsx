@@ -26,7 +26,7 @@ export default function CooperCityMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Cooper City, FL | All Phase USA</title>
-        <meta name="description" content="Cooper City, FL roofer for family suburbs & gated communities — HVHZ-code tile & shingle, HOA review handled, dual-licensed since 2005. (754) 227-5605." />
+        <meta name="description" content="Cooper City, FL roofer for family suburbs & gated communities — HVHZ-code tile & shingle, HOA review handled, dual-licensed since 2006. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/cooper-city" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

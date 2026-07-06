@@ -26,7 +26,7 @@ export default function NorthLauderdaleMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in North Lauderdale, FL | All Phase USA</title>
-        <meta name="description" content="North Lauderdale, FL roofer for the Morris Lapidus 'City of Tomorrow' — aging 1970s homes, HVHZ-code shingle, tile & metal, dual-licensed since 2005. (754) 227-5605." />
+        <meta name="description" content="North Lauderdale, FL roofer for the Morris Lapidus 'City of Tomorrow' — aging 1970s homes, HVHZ-code shingle, tile & metal, dual-licensed since 2006. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/north-lauderdale" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

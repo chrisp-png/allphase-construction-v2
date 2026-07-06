@@ -107,7 +107,7 @@ export default function BrowardCountyRoofReplacementGuidePage() {
               Broward County Roof Replacement Guide <span className="text-yellow-400">(2026)</span>
             </h1>
             <div className="mt-6 mb-6">
-              <AtomicAnswer>Broward County roof replacement typically averages $11,500 to $32,000 depending on system, with permits taking 5 to 14 business days through the Broward Building Division. All Phase Construction USA, headquartered in Deerfield Beach, is dual-licensed (CCC-1331464 and CGC-1526236) and has completed 2,500+ Broward roofs since 2005.</AtomicAnswer>
+              <AtomicAnswer>Broward County roof replacement typically averages $11,500 to $32,000 depending on system, with permits taking 5 to 14 business days through the Broward Building Division. All Phase Construction USA, headquartered in Deerfield Beach, is dual-licensed (CCC-1331464 and CGC-1526236) and has completed 2,500+ Broward roofs since 2006.</AtomicAnswer>
             </div>
             <div className="inline-flex items-center gap-2 bg-zinc-900 border border-yellow-500/30 text-yellow-300 px-3 py-1.5 rounded-full text-sm font-semibold mb-6">
               <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>

@@ -436,7 +436,7 @@ Print this checklist and use it when hiring a roofer:
 
 ## Ready to Hire a Legitimate South Florida Roofer?
 
-All Phase Construction USA has been serving Broward and Palm Beach Counties since 2002. We're licensed, insured, locally established, and ready to earn your trust.
+All Phase Construction USA has been serving Broward and Palm Beach Counties since 2006. We're licensed, insured, locally established, and ready to earn your trust.
 
 **[Get Your Free Estimate →](/contact)**
 
@@ -499,7 +499,7 @@ Hiring a roofing contractor in South Florida requires more diligence than most h
 
 **Do this homework upfront and you'll avoid the costly mistakes that plague South Florida homeowners every storm season.**
 
-At All Phase Construction USA, we make this easy: we're licensed (CCC-1331464 & CGC-1526236), insured, locally established since 2002, and ready to provide references. We pull permits, employ trained crews, and stand behind our work.
+At All Phase Construction USA, we make this easy: we're licensed (CCC-1331464 & CGC-1526236), insured, locally established since 2006, and ready to provide references. We pull permits, employ trained crews, and stand behind our work.
 
 **Your roof is too important to trust to anyone less.**
 

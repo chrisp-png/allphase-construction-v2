@@ -151,7 +151,7 @@ export default function BestRoofersPlantationPage() {
                     <td className="px-4 py-4 text-zinc-300">⭐ 4.8</td>
                     <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Full Roof Systems + Wind Mitigation</td>
-                    <td className="px-4 py-4 text-zinc-300">21 years (since 2005)</td>
+                    <td className="px-4 py-4 text-zinc-300">20 years (since 2006)</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-medium text-white">Paul Bange Roofing</td>
@@ -403,7 +403,7 @@ export default function BestRoofersPlantationPage() {
             </div>
 
             <p className="text-zinc-300 leading-relaxed mb-4">
-              All Phase Construction USA has served Plantation and South Florida since 2005 — a 21-year track record specifically in this region. As a dual-licensed Florida Certified Roofing Contractor (CCC1334109) and Florida Certified General Contractor (CGC1531823), they are uniquely positioned to handle the full scope of Plantation roofing projects. While other roofers can only replace the roof surface, All Phase can assess wood deck condition (critical in Plantation's older homes), perform structural upgrades discovered during the project, install comprehensive wind mitigation reinforcements, and document everything for insurance discounts. They are active in Broward County and Plantation-area business communities, demonstrating long-term investment in this market.
+              All Phase Construction USA has served Plantation and South Florida since 2006 — a 21-year track record specifically in this region. As a dual-licensed Florida Certified Roofing Contractor (CCC1334109) and Florida Certified General Contractor (CGC1531823), they are uniquely positioned to handle the full scope of Plantation roofing projects. While other roofers can only replace the roof surface, All Phase can assess wood deck condition (critical in Plantation's older homes), perform structural upgrades discovered during the project, install comprehensive wind mitigation reinforcements, and document everything for insurance discounts. They are active in Broward County and Plantation-area business communities, demonstrating long-term investment in this market.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>

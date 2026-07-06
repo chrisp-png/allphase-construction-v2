@@ -37,7 +37,7 @@ export default function LakeWorthBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Lake Worth, FL (Lake Worth Beach)</title>
-        <meta name="description" content="Roofer in Lake Worth (officially Lake Worth Beach), FL. Historic-district re-roofs, coastal tile, shingle & metal — dual-licensed, HVHZ-spec since 2005. (754) 227-5605." />
+        <meta name="description" content="Roofer in Lake Worth (officially Lake Worth Beach), FL. Historic-district re-roofs, coastal tile, shingle & metal — dual-licensed, HVHZ-spec since 2006. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/lake-worth-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -55,7 +55,7 @@ export default function LakeWorthBeachMoneyPage() {
               <div className="mt-6 mb-6">
                 <AISearchRail query="Who is the best dual-licensed roofing contractor in Lake Worth Beach Florida, and how do you re-roof a home in a Lake Worth historic district?" />
               </div>
-              <AtomicAnswer>Lake Worth (officially Lake Worth Beach) is a historic coastal city in Palm Beach County full of 1920s homes and National Register districts. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that has re-roofed Lake Worth homes since 2005 — handling historic-district architectural review, older-home structural repairs, and coastal salt-air installations to Miami-Dade HVHZ spec. Roof replacements run $12,000 to $38,000.</AtomicAnswer>
+              <AtomicAnswer>Lake Worth (officially Lake Worth Beach) is a historic coastal city in Palm Beach County full of 1920s homes and National Register districts. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that has re-roofed Lake Worth homes since 2006 — handling historic-district architectural review, older-home structural repairs, and coastal salt-air installations to Miami-Dade HVHZ spec. Roof replacements run $12,000 to $38,000.</AtomicAnswer>
               <p className="text-xl text-zinc-300 leading-relaxed mb-8">
                 Locals still call it <strong className="text-white">Lake Worth</strong> — the city only voted to add &ldquo;Beach&rdquo; to its name in 2019. Whether you&rsquo;re in a 1920s Mission home near downtown or a coastal cottage by the pier, we know how roofs work here.
               </p>

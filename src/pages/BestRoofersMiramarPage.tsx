@@ -151,7 +151,7 @@ export default function BestRoofersMiramarPage() {
                     <td className="px-4 py-4 text-zinc-300">⭐ 4.8</td>
                     <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Wind Mitigation Upgrades + Full Roof Systems</td>
-                    <td className="px-4 py-4 text-zinc-300">21 years (since 2005)</td>
+                    <td className="px-4 py-4 text-zinc-300">20 years (since 2006)</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-medium text-white">Florida Home360</td>
@@ -401,7 +401,7 @@ export default function BestRoofersMiramarPage() {
             </div>
 
             <p className="text-zinc-300 leading-relaxed mb-4">
-              All Phase Construction USA has protected Miramar and South Florida homes since 2005. Founded as a compliance-first roofing and construction company, All Phase holds both a Florida Certified Roofing Contractor license (CCC1334109) and a Florida Certified General Contractor license (CGC1531823). That dual licensing is rare in the industry — and it matters more than most homeowners realize. While other roofers can only replace the surface, All Phase can assess and upgrade structural components, install wind mitigation reinforcements, and document everything for insurance discounts. They serve Miramar extensively from their Pompano Beach headquarters and have deep experience navigating both traditional neighborhoods and the master-planned communities that define modern Miramar.
+              All Phase Construction USA has protected Miramar and South Florida homes since 2006. Founded as a compliance-first roofing and construction company, All Phase holds both a Florida Certified Roofing Contractor license (CCC1334109) and a Florida Certified General Contractor license (CGC1531823). That dual licensing is rare in the industry — and it matters more than most homeowners realize. While other roofers can only replace the surface, All Phase can assess and upgrade structural components, install wind mitigation reinforcements, and document everything for insurance discounts. They serve Miramar extensively from their Pompano Beach headquarters and have deep experience navigating both traditional neighborhoods and the master-planned communities that define modern Miramar.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>

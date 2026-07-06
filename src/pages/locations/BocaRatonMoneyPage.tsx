@@ -88,7 +88,7 @@ export default function BocaRatonMoneyPage() {
               <div className="mt-6 mb-6">
                 <AISearchRail query="Who are the top dual-licensed roofing contractors in Boca Raton Florida and what should I know about HVHZ-compliant roofing in Palm Beach County?" />
               </div>
-              <AtomicAnswer>Roof replacement in Boca Raton, FL typically runs $14,000 to $35,000 depending on home size, roofing system, and code upgrades. All Phase Construction USA installs tile, metal, shingle, and flat roofs to Miami-Dade HVHZ wind specifications across Boca Raton and Palm Beach County, holding dual state licenses CCC-1331464 and CGC-1526236 since 2005.</AtomicAnswer>
+              <AtomicAnswer>Roof replacement in Boca Raton, FL typically runs $14,000 to $35,000 depending on home size, roofing system, and code upgrades. All Phase Construction USA installs tile, metal, shingle, and flat roofs to Miami-Dade HVHZ wind specifications across Boca Raton and Palm Beach County, holding dual state licenses CCC-1331464 and CGC-1526236 since 2006.</AtomicAnswer>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
                   <span className="text-yellow-400">★ 4.8 Google</span>
                   <span className="text-red-400">·</span>
@@ -546,7 +546,7 @@ export default function BocaRatonMoneyPage() {
                 <span>Proud Member — Greater Boca Raton Chamber of Commerce</span>
               </div>
               <p className="text-zinc-400 mt-4 text-sm">
-                Serving Boca Raton &amp; South Florida since 2005
+                Serving Boca Raton &amp; South Florida since 2006
               </p>
             </div>
           </div>

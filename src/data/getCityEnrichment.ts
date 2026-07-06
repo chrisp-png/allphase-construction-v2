@@ -182,7 +182,7 @@ const ENRICHMENT: Record<string, Omit<CityEnrichment, 'slug'>> = {
     neighborhoods: ['The Cove', 'Deer Creek', 'Century Village', 'The Lakes', 'Crystal Lake', 'Waterford', 'Independence Bay'],
     zips: ['33064', '33441', '33442', '33443'],
     landmarks: ['Deerfield Beach Pier', 'Quiet Waters Park', 'Hillsboro Inlet', 'Sample Road corridor'],
-    localHook: 'Deerfield Beach is All Phase Construction USA HQ since 2005. Every truck rolls from 590 Goolsby Boulevard. We know the city building department, the typical Century Village re-roof cycle, and the waterfront salt-air detail for The Cove.',
+    localHook: 'Deerfield Beach is All Phase Construction USA HQ since 2006. Every truck rolls from 590 Goolsby Boulevard. We know the city building department, the typical Century Village re-roof cycle, and the waterfront salt-air detail for The Cove.',
   },
   'greenacres': {
     city: 'Greenacres', county: 'Palm Beach', hvhz: false,

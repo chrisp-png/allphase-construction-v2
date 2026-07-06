@@ -127,11 +127,11 @@ export default function AboutPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005.');
+      metaDescription.setAttribute('content', 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2006.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2005.';
+      meta.content = 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2006.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -191,7 +191,7 @@ export default function AboutPage() {
     '@id': 'https://allphaseconstructionfl.com/#organization',
     name: 'All Phase Construction USA',
     alternateName: 'All Phase Roofing',
-    description: 'Dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) serving Broward and Palm Beach Counties since 2005. Over 2,500 roofs installed. HVHZ certified.',
+    description: 'Dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) serving Broward and Palm Beach Counties since 2006. Over 2,500 roofs installed. HVHZ certified.',
     url: 'https://allphaseconstructionfl.com',
     logo: 'https://allphaseconstructionfl.com/logo.png',
     image: 'https://allphaseconstructionfl.com/images/og-default.jpg',

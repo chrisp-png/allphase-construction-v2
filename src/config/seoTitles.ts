@@ -52,7 +52,7 @@ export interface SEOMetadata {
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/locations/cooper-city': {
     title: 'Roofing Contractor in Cooper City, FL | All Phase USA',
-    description: 'Cooper City, FL roofer for family suburbs \u0026 gated communities — HVHZ-code tile \u0026 shingle, HOA review handled, dual-licensed since 2005. (754) 227-5605.',
+    description: 'Cooper City, FL roofer for family suburbs \u0026 gated communities — HVHZ-code tile \u0026 shingle, HOA review handled, dual-licensed since 2006. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/cooper-city'
   },
   '/locations/dania-beach': {
@@ -232,7 +232,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/': {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    description: 'Free roof inspection in 48 hours. Dual-licensed South Florida roofer since 2005. 2,500+ roofs, A+ BBB, HVHZ-certified. Call (754) 227-5605.',
+    description: 'Free roof inspection in 48 hours. Dual-licensed South Florida roofer since 2006. 2,500+ roofs, A+ BBB, HVHZ-certified. Call (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
@@ -247,7 +247,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/about-us': {
     title: 'About All Phase Construction | Expert Roofing Specialist',
-    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2005. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 150+ reviews.',
+    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2006. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 150+ reviews.',
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/team/chris-porosky': {
@@ -473,7 +473,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
         '/locations/deerfield-beach': {
     title: 'Deerfield Beach Roofing Contractor (HQ Since 2005)',
-    description: "Deerfield Beach local roofing HQ since 2005. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection (754) 227-5605.",
+    description: "Deerfield Beach local roofing HQ since 2006. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection (754) 227-5605.",
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {
@@ -1079,7 +1079,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Without this the dynamic handler below stomps the prerendered title at runtime.
   if (normalizedPath === '/roof-inspection/deerfield-beach') {
     const title = 'Free Deerfield Beach Roof Inspection — Same-Day Report';
-    const description = 'Free same-day roof inspection in Deerfield Beach, FL. 21-point report with photos. Dual-licensed contractor since 2005. Call (754) 227-5605.';
+    const description = 'Free same-day roof inspection in Deerfield Beach, FL. 21-point report with photos. Dual-licensed contractor since 2006. Call (754) 227-5605.';
     return {
       title,
       description,

@@ -119,7 +119,7 @@ const whyChooseUs = [
   },
   {
     title: '20+ Years Experience',
-    description: 'Protecting South Florida properties since 2005. Over 2,500 projects completed.'
+    description: 'Protecting South Florida properties since 2006. Over 2,500 projects completed.'
   },
   {
     title: 'Full Permitting',
@@ -173,7 +173,7 @@ export default function RoofingServicesPage() {
               Roofing Services — Residential & Commercial Solutions for South Florida
             </h1>
             <p className="text-xl text-zinc-300 mb-8 max-w-4xl mx-auto">
-              All Phase Construction USA is a <Link to="/licensed-roofing-contractor" className="text-red-400 hover:text-red-300 underline">dual-licensed roofing and general contractor</Link> serving Broward and Palm Beach Counties since 2005. With over 2,500 completed projects and certifications from Owens Corning, CertainTeed, and Tamko, we specialize in HVHZ-compliant roofing built to South Florida's 146 mph wind load requirements. From single-family homes to commercial properties and HOA communities — every project is permitted, inspected, and backed by manufacturer warranty documentation.
+              All Phase Construction USA is a <Link to="/licensed-roofing-contractor" className="text-red-400 hover:text-red-300 underline">dual-licensed roofing and general contractor</Link> serving Broward and Palm Beach Counties since 2006. With over 2,500 completed projects and certifications from Owens Corning, CertainTeed, and Tamko, we specialize in HVHZ-compliant roofing built to South Florida's 146 mph wind load requirements. From single-family homes to commercial properties and HOA communities — every project is permitted, inspected, and backed by manufacturer warranty documentation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -433,7 +433,7 @@ export default function RoofingServicesPage() {
             </div>
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8 max-w-4xl mx-auto">
               <p className="text-zinc-300 leading-relaxed text-lg">
-                These environmental factors are why choosing a properly licensed, locally experienced roofing contractor matters so much in Broward and Palm Beach Counties. A roof that performs well in the Midwest or Pacific Northwest may fail within a few years under South Florida conditions. All Phase Construction USA has been navigating these exact challenges since 2005, with over 2,500 completed projects across the region. Our team understands the local building codes, permit processes, and material performance data specific to our area — because we live and work here.
+                These environmental factors are why choosing a properly licensed, locally experienced roofing contractor matters so much in Broward and Palm Beach Counties. A roof that performs well in the Midwest or Pacific Northwest may fail within a few years under South Florida conditions. All Phase Construction USA has been navigating these exact challenges since 2006, with over 2,500 completed projects across the region. Our team understands the local building codes, permit processes, and material performance data specific to our area — because we live and work here.
               </p>
             </div>
           </div>

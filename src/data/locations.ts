@@ -67,11 +67,11 @@ export const locations: Location[] = [
     county: "Broward",
     hvhz: true,
     titleOverride: "Deerfield Beach Roofing Contractor (HQ Since 2005)",
-    descriptionOverride: "Deerfield Beach local roofing HQ since 2005. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection (754) 227-5605.",
+    descriptionOverride: "Deerfield Beach local roofing HQ since 2006. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection (754) 227-5605.",
     neighborhoods: ["The Cove", "Deer Creek", "Century Village", "The Lakes", "Crystal Lake", "Waterford", "Independence Bay"],
     zips: ["33064","33441","33442","33443"],
     landmarks: ["Deerfield Beach Pier","Quiet Waters Park","Hillsboro Inlet","Sample Road corridor"],
-    localHook: "Headquartered in Deerfield Beach since 2005 — every truck rolls from 590 Goolsby Blvd."
+    localHook: "Headquartered in Deerfield Beach since 2006 — every truck rolls from 590 Goolsby Blvd."
   },
 
   // ─── Wave A ───

@@ -151,7 +151,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
                     <td className="px-4 py-4 text-zinc-300">⭐ 4.8</td>
                     <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Wind Mitigation Upgrades + Full Roof Systems</td>
-                    <td className="px-4 py-4 text-zinc-300">21 years (est. 2005)</td>
+                    <td className="px-4 py-4 text-zinc-300">20 years (est. 2006)</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-medium text-white">Ranger Roofing Corporation</td>
@@ -407,7 +407,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
             </div>
 
             <p className="text-zinc-300 leading-relaxed mb-4">
-              All Phase Construction USA has protected Royal Palm Beach and South Florida homes since 2005. Founded as a compliance-first roofing and construction company, All Phase holds both a Florida Certified Roofing Contractor license (CCC1334109) and a Florida Certified General Contractor license (CGC1531823). That dual licensing is rare in the industry — and it matters more than most homeowners realize. While other roofers can only replace the surface, All Phase can assess and upgrade structural components, install wind mitigation reinforcements, and document everything for insurance discounts. They are also active community members — holding chamber memberships across Palm Beach County and volunteering with local organizations. This is not a company that showed up after a storm. They've been building trust in this community for over two decades.
+              All Phase Construction USA has protected Royal Palm Beach and South Florida homes since 2006. Founded as a compliance-first roofing and construction company, All Phase holds both a Florida Certified Roofing Contractor license (CCC1334109) and a Florida Certified General Contractor license (CGC1531823). That dual licensing is rare in the industry — and it matters more than most homeowners realize. While other roofers can only replace the surface, All Phase can assess and upgrade structural components, install wind mitigation reinforcements, and document everything for insurance discounts. They are also active community members — holding chamber memberships across Palm Beach County and volunteering with local organizations. This is not a company that showed up after a storm. They've been building trust in this community for over two decades.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>
