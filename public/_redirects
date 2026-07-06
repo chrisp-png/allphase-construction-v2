@@ -478,6 +478,13 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /blog/common-roofing-myths-that-homeowners-still-believe /blog 301!
 /blog/helping-your-association-plan-for-roofing-budgets-with-confidence /blog 301!
 /boca-raton /locations/boca-raton 301!
+# Bare-city URLs that were soft-404ing to the homepage (audit 2026-07) -> 301 to their /locations page
+/coconut-creek /locations/coconut-creek 301!
+/jupiter /locations/jupiter 301!
+/palm-beach /locations/palm-beach 301!
+/lighthouse-point /locations/lighthouse-point 301!
+/lauderdale-lakes /locations/lauderdale-lakes 301!
+/southwest-ranches /locations/southwest-ranches 301!
 
 # ======================================================================
 # BEST-ROOFERS STATIC PAGE REWRITES
