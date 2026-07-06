@@ -107,7 +107,7 @@ const BLOG_REDIRECTS: Record<string, { to: string; status: number }> = {
   // to re-crawl). Redirecting to closest live topical match keeps any external
   // backlinks landing on relevant content rather than 404-equivalents.
   '/blog/can-a-screen-room-add-to-my-property-value': { to: '/blog/how-much-does-a-screen-enclosure-cost', status: 301 },
-  '/blog/what-is-roof-underlayment-and-why-does-it-matter': { to: '/shingle-roofing', status: 301 },
+  '/blog/what-is-roof-underlayment-and-why-does-it-matter': { to: '/blog', status: 301 },
 
   // NOTE: The following blog posts are LIVE (Supabase CMS) and served by the SPA.
   // They should NOT be in this redirect map:
