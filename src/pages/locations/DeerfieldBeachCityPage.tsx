@@ -256,7 +256,7 @@ export default function DeerfieldBeachCityPage() {
               <div className="flex flex-wrap items-center gap-6 text-gray-300 text-sm md:text-base mb-8">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                  <span className="font-medium">4.8 Rating • 137+ Reviews</span>
+                  <span className="font-medium">4.8 Rating • 150+ Reviews</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-red-600" />
