@@ -1496,7 +1496,7 @@ function defaultServicePageContent(pageTitle) {
   <p>Here's what makes us different:</p>
   <ul>
     <li><strong>Dual-Licensed (CCC & CGC):</strong> We hold both State Certified Roofing Contractor and Certified General Contractor licenses, providing structural engineering oversight that standard roofers cannot match.</li>
-    <li><strong>HVHZ Certified:</strong> Every installation meets High Velocity Hurricane Zone compliance for maximum wind protection and building code requirements.</li>
+    <li><strong>HVHZ-Spec Construction:</strong> We build to High Velocity Hurricane Zone standards in Broward County and to Palm Beach County wind-code requirements — enhanced fastening and impact-rated materials on every roof.</li>
     <li><strong>Owner-Operator Lead:</strong> Direct contractor involvement on every project ensures accountability and precision standard roofers can't match.</li>
     <li><strong>Local Deerfield Beach Headquarters:</strong> Serving South Florida from 590 Goolsby Blvd with consistent, reliable service and local expertise.</li>
   </ul>
@@ -2238,6 +2238,64 @@ function generateRoofDamageAssessmentContent() {
   <p>We recommend a repair when damage is localized and the roof has service life left, and a replacement when the covering is at end-of-life, the deck is compromised, or damage is widespread. As a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle both the roof and any structural repair under one contract.</p>
   <h2>Act Within Days</h2>
   <p>Get a professional assessment quickly after a storm — before the next rain drives water deeper. Call <strong>(754) 227-5605</strong> for a documented roof damage assessment anywhere in Broward or Palm Beach County.</p>
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+
+/**
+ * /flat-roofing — service-page content (PR-157). No insurance language.
+ */
+function generateFlatRoofingContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Flat &amp; Low-Slope Roofing in South Florida</h1>
+  <p><strong>Flat and low-slope roofs need a different system than pitched roofs.</strong> All Phase Construction USA installs and replaces single-ply and built-up flat roofs across Broward and Palm Beach County — on modern homes, additions, and commercial buildings — engineered for standing water, intense UV, and high winds.</p>
+  <h2>The Flat Roofing Systems We Install</h2>
+  <ul style="line-height:1.75;">
+    <li><strong>TPO</strong> — a reflective white single-ply membrane that keeps cooling costs down; the value leader for most residential and light-commercial low-slope roofs.</li>
+    <li><strong>PVC</strong> — heat-welded single-ply with superior chemical and ponding-water resistance; the right call near kitchen exhaust or where drainage is poor.</li>
+    <li><strong>Modified bitumen (2- and 3-ply)</strong> — a durable torch- or self-adhered asphalt system, common on older South Florida flat roofs.</li>
+    <li><strong>Tapered insulation</strong> — we build slope into a dead-flat deck so water drains instead of ponding.</li>
+  </ul>
+  <h2>2026 Flat Roof Cost</h2>
+  <p>For a typical residential flat section, single-ply runs about <strong>$4.00 to $10.00 per square foot</strong> installed ($8,000–$20,000 for a 2,000 sq ft roof), depending on membrane, insulation, and the number of penetrations and parapet walls. Most single-ply systems carry a 20–30 year service life.</p>
+  <h2>Built for South Florida Wind</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone, so flat roofs there use Miami-Dade NOA-approved assemblies with enhanced edge-metal detailing and fastening. Palm Beach County is not legally HVHZ, but we build to the county's wind code — and to HVHZ spec on request — with product-approved membranes on every job.</p>
+  <h2>Schedule a Flat Roof Evaluation</h2>
+  <p>Call <strong>(754) 227-5605</strong> for a free flat-roof inspection. We check the membrane, seams, flashings, and drainage, and give you a written repair-or-replace recommendation. Comparing membranes? See our <a href="/single-ply-roofing" style="color:#dc2626;text-decoration:underline;">single-ply roofing</a> and <a href="/flat-roof-moisture-infrared-inspection" style="color:#dc2626;text-decoration:underline;">infrared moisture inspection</a> pages.</p>
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+/**
+ * /palm-beach-county-roof-replacement-guide — money-page content (PR-157).
+ * HVHZ-accurate: Palm Beach is NOT legal HVHZ. No insurance language.
+ */
+function generatePalmBeachCountyGuideContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Palm Beach County Roof Replacement Guide (2026)</h1>
+  <p><strong>A roof replacement in Palm Beach County runs roughly $9,000 to $45,000 in 2026</strong>, depending on material, roof size, and pitch. Palm Beach County is <em>not</em> a legal High-Velocity Hurricane Zone (only Broward and Miami-Dade are), but it enforces a strong coastal wind code — and All Phase Construction USA voluntarily builds every roof to HVHZ specification for maximum resilience.</p>
+  <h2>2026 Cost by Material</h2>
+  <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+    <thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Material</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Typical total (2,000 sq ft)</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Lifespan</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Architectural shingle</td><td style="padding:8px;border:1px solid #e5e7eb;">$9,000–$17,000</td><td style="padding:8px;border:1px solid #e5e7eb;">15–25 yrs</td></tr>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Concrete / clay tile</td><td style="padding:8px;border:1px solid #e5e7eb;">$18,000–$45,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40–75+ yrs</td></tr>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Standing-seam metal</td><td style="padding:8px;border:1px solid #e5e7eb;">$20,000–$45,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40–70 yrs</td></tr>
+    </tbody>
+  </table>
+  <h2>Palm Beach County Wind Code &amp; Product Approval</h2>
+  <p>Unlike Broward's HVHZ (which requires Miami-Dade NOA), Palm Beach County accepts statewide <strong>Florida Product Approval</strong> for roofing materials, designed to roughly 170 mph design winds. We install to that code as a baseline and layer in HVHZ-spec details — full-coverage secondary water barrier, enhanced ring-shank fastening, and impact-rated materials — because the coastal wind exposure warrants it.</p>
+  <h2>Permits &amp; Inspections</h2>
+  <p>Every re-roof needs a permit; Palm Beach County processing typically runs 2–4 weeks, with sheathing, dry-in, and final inspections. We pull the permit under our own license and coordinate each inspection — homeowners should never pull their own roofing permit.</p>
+  <h2>What Drives Your Price</h2>
+  <p>Roof size and pitch, material choice, tear-off and disposal, decking replacement (only visible after tear-off, $2–$5/sq ft), and HOA architectural requirements common in Palm Beach communities. As a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle structural repairs and the roof under one contract.</p>
+  <h2>Get a Palm Beach County Quote</h2>
+  <p>Call <strong>(754) 227-5605</strong> or try our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">Roof Cost Calculator</a>. See also our city pages for <a href="/locations/west-palm-beach" style="color:#dc2626;text-decoration:underline;">West Palm Beach</a>, <a href="/locations/boca-raton" style="color:#dc2626;text-decoration:underline;">Boca Raton</a>, and <a href="/locations/wellington" style="color:#dc2626;text-decoration:underline;">Wellington</a>.</p>
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -3694,6 +3752,10 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateProjectsContent();
     } else if (pagePath === '/florida-roof-insurance-claims-guide') {
       pageContent = generateRoofDamageAssessmentContent();
+    } else if (pagePath === '/flat-roofing') {
+      pageContent = generateFlatRoofingContent();
+    } else if (pagePath === '/palm-beach-county-roof-replacement-guide') {
+      pageContent = generatePalmBeachCountyGuideContent();
     } else {
       pageContent = defaultServicePageContent(title);
     }
