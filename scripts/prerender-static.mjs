@@ -4552,16 +4552,18 @@ ${companyAuthorityFooter()}
     const t2 = TESTIMONIAL_POOL[(idx+1) % TESTIMONIAL_POOL.length];
     const neighborhood = (location.neighborhoods && location.neighborhoods[0]) || cityName;
     const neighborhood2 = (location.neighborhoods && location.neighborhoods[1]) || cityName;
+    const loc1 = neighborhood === cityName ? cityName : `${neighborhood}, ${cityName}`;
+    const loc2 = neighborhood2 === cityName ? cityName : `${neighborhood2}, ${cityName}`;
     return `
   <h2>What ${cityName} Homeowners Say</h2>
   <div class="seo-location-testimonials" style="display: grid; gap: 1rem; margin: 1rem 0;">
     <blockquote style="margin: 0; padding: 1rem 1.25rem; border-left: 4px solid #dc2626; background: #fff; font-style: italic;">
       <p style="margin: 0 0 0.5rem;">"${t1.text}"</p>
-      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t1.name}, ${neighborhood}, ${cityName}</footer>
+      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t1.name}, ${loc1}</footer>
     </blockquote>
     <blockquote style="margin: 0; padding: 1rem 1.25rem; border-left: 4px solid #dc2626; background: #fff; font-style: italic;">
       <p style="margin: 0 0 0.5rem;">"${t2.text}"</p>
-      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t2.name}, ${neighborhood2}, ${cityName}</footer>
+      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t2.name}, ${loc2}</footer>
     </blockquote>
   </div>`;
   };
