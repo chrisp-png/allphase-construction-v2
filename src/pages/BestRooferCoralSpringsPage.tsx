@@ -165,7 +165,7 @@ export default function BestRooferCoralSpringsPage() {
                 <tbody className="divide-y divide-slate-200">
                   <tr className="bg-red-50">
                     <td className="p-4 font-semibold">All Phase Construction USA</td>
-                    <td className="p-4">⭐ 4.9</td>
+                    <td className="p-4">⭐ 4.8</td>
                     <td className="p-4"><a href="tel:7542275605" className="text-red-600 hover:text-red-700">(754) 227-5605</a></td>
                     <td className="p-4">CCC + CGC (dual)</td>
                     <td className="p-4">Tile, Metal, Shingle, Flat</td>

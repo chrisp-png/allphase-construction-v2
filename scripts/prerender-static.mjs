@@ -2301,7 +2301,7 @@ function generateReviewsHubContent() {
 <section id="seo-static-content">
   <h1>Customer Reviews — All Phase Construction USA</h1>
 
-  <p><strong>The single most useful thing a roofing contractor can show a homeowner is what other homeowners have said.</strong> All Phase Construction USA is rated 4.9 out of 5 stars across Google with 143+ verified reviews from customers in Broward County and Palm Beach County, with concentrated review density in Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, and Boynton Beach.</p>
+  <p><strong>The single most useful thing a roofing contractor can show a homeowner is what other homeowners have said.</strong> All Phase Construction USA is rated 4.8 out of 5 stars across Google with 150+ verified reviews from customers in Broward County and Palm Beach County, with concentrated review density in Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, and Boynton Beach.</p>
 
   <h2>Where to Read Real Reviews</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
@@ -2314,7 +2314,7 @@ function generateReviewsHubContent() {
   <p>The recurring themes in our recent Google reviews — paraphrased, not pasted — are crew respectfulness, daily debris cleanup, communication during the permit window, and a written final walkthrough. Where we get pushback in reviews, it tends to be on the Boca Raton permit timeline (4–5 weeks at the city level, longer than most surrounding municipalities), which is outside our control but something we now flag at proposal time so it isn't a surprise.</p>
 
   <h2>How We Respond to Reviews</h2>
-  <p>Every review — positive or critical — gets a response from the company, not a templated reply. If a customer flags an issue we missed, we follow up directly. If a review is anonymous and the project can't be matched to an internal record, we say so publicly and ask the reviewer to contact us so we can resolve it. Treating critical feedback as data, not a problem, is how the company has stayed at 4.9 stars at scale.</p>
+  <p>Every review — positive or critical — gets a response from the company, not a templated reply. If a customer flags an issue we missed, we follow up directly. If a review is anonymous and the project can't be matched to an internal record, we say so publicly and ask the reviewer to contact us so we can resolve it. Treating critical feedback as data, not a problem, is how the company has stayed at 4.8 stars at scale.</p>
 
   <h2>Local Review Resources for South Florida Homeowners</h2>
   <p>Beyond our own page, the most useful third-party resource for vetting any South Florida roofer is the Florida Department of Business and Professional Regulation license lookup at <a href="https://www2.myfloridalicense.com/" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">MyFloridaLicense.com</a>. It shows license type, status, expiration, and any disciplinary history. Always confirm the license matches the legal name of the company on the proposal — not just a salesperson's name. Our active licenses are <strong>CCC-1331464</strong> and <strong>CGC-1526236</strong>.</p>

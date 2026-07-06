@@ -22,7 +22,7 @@ export default function MoneyPageStatBar() {
           </div>
           <div className="flex flex-col items-center gap-2">
             <Star className="w-6 h-6 text-[#C5A572]" />
-            <div className="text-2xl font-bold text-white">4.9 ★ Rating</div>
+            <div className="text-2xl font-bold text-white">4.8 ★ Rating</div>
             <div className="text-xs text-zinc-400 uppercase tracking-widest">150+ Verified Reviews</div>
           </div>
         </div>
