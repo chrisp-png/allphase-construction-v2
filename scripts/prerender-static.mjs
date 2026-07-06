@@ -2080,7 +2080,7 @@ function generateTileRoofingHubContent() {
   </ul>
 
   <h2>Schedule a Tile Inspection</h2>
-  <p>Call <strong>(754) 227-5605</strong> for a free in-person tile inspection. We document underlayment condition, count broken or displaced tiles, and provide a written report with both lift-and-relay and full-replacement options.</p>
+  <p>Call <strong>(754) 227-5605</strong> for a free in-person tile inspection. We document underlayment condition, count broken or displaced tiles, and provide a written report with both lift-and-relay and full-replacement options. See our <a href="/blog/tile-roof-cost-florida-2026" style="color:#dc2626;text-decoration:underline;">2026 tile roof cost guide</a> for a full pricing breakdown.</p>
 
   ${companyAuthorityFooter()}
 </section>
@@ -2135,7 +2135,7 @@ function generateRoofReplacementCostFloridaContent() {
   <p>A standard roofing license (CCC) only covers the roof covering. When tear-off reveals damaged trusses, failed roof-to-wall connections, or rotted fascia, a roofing-only contractor has to bring in a separate general contractor — adding cost and delay. Because we hold both the roofing (CCC-1331464) and general contractor (CGC-1526236) licenses, we handle the structural work and the roof under one contract, one crew, and one warranty. No change-order surprises from a second trade.</p>
 
   <h2>Get an Exact Number for Your Roof</h2>
-  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or call <strong>(754) 227-5605</strong> for a free in-person measurement and a written, line-item quote. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides.</p>
+  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or call <strong>(754) 227-5605</strong> for a free in-person measurement and a written, line-item quote. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides, or our <a href="/blog/tile-roof-cost-florida-2026" style="color:#dc2626;text-decoration:underline;">2026 tile roof cost guide</a>.</p>
 
   ${companyAuthorityFooter()}
 </section>
@@ -8493,7 +8493,7 @@ ${companyAuthorityFooter()}
 <h2>Weight-Load Review When Changing Profile</h2>
 <p>Switching from a lightweight system to concrete or clay tile adds significant dead load. As a dual-licensed general contractor (CGC-1526236), we perform the engineered weight-load review to confirm your trusses and structure can carry the new roof — something a roofing-only contractor cannot do in-house.</p>
 <h2>Lift-and-Relay Option</h2>
-<p>If your tile is in good shape but the underlayment has failed, a lift-and-relay reuses the original tile over a new peel-and-stick membrane — preserving the look at a lower cost than full replacement.</p>`,
+<p>If your tile is in good shape but the underlayment has failed, a lift-and-relay reuses the original tile over a new peel-and-stick membrane — preserving the look at a lower cost than full replacement. See our <a href="/blog/tile-roof-cost-florida-2026">Florida tile roof cost guide</a> for detailed pricing.</p>`,
       title: 'Tile Roof Replacement in Wellington (2026)',
       description: '2026 Wellington tile roof pricing for concrete and clay, with HOA architectural approval, engineered weight load review, and HVHZ attachment requirements',
       h1: 'Tile Roof Replacement in Wellington',
