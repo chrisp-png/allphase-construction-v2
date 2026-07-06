@@ -507,6 +507,8 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /sunrise /locations/sunrise 301!
 /tamarac /locations/tamarac 301!
 /westlake /locations/westlake 301!
+/broward-county /locations/broward-county 301!
+/palm-beach-county /locations/palm-beach-county 301!
 
 # ======================================================================
 # BEST-ROOFERS STATIC PAGE REWRITES
