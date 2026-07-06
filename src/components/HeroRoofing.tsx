@@ -143,7 +143,7 @@ export default function HeroRoofing() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 / CGC-1526236) protecting South Florida homes and businesses since 2005 — tile, metal, shingle, flat and commercial systems, all installed to HVHZ wind code. Call <a href="tel:+17542275605" className="text-white underline hover:text-red-400">(754) 227-5605</a> or request your free assessment.
+              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 / CGC-1526236) protecting South Florida homes and businesses since 2006 — tile, metal, shingle, flat and commercial systems, all installed to HVHZ wind code. Call <a href="tel:+17542275605" className="text-white underline hover:text-red-400">(754) 227-5605</a> or request your free assessment.
             </p>
 
             {/* PR-71: AI Search Rail — deep-links into ChatGPT, Google AI Mode, Bing Copilot

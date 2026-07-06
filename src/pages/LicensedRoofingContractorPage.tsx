@@ -37,7 +37,7 @@ export default function LicensedRoofingContractorPage() {
     <>
       <SEO
         title="Licensed Roofing Contractor FL | CCC & CGC | All Phase"
-        description="Florida dual-licensed roofing and general contractor. CCC-1331464 + CGC-1526236. HVHZ-certified, serving Broward & Palm Beach since 2005."
+        description="Florida dual-licensed roofing and general contractor. CCC-1331464 + CGC-1526236. HVHZ-certified, serving Broward & Palm Beach since 2006."
         canonicalUrl="https://allphaseconstructionfl.com/licensed-roofing-contractor"
       />
       <Helmet>
@@ -251,7 +251,7 @@ export default function LicensedRoofingContractorPage() {
                 An unlicensed or out-of-area contractor who doesn't understand HVHZ requirements may install a roof that looks fine but fails inspection — or worse, fails during a hurricane. The consequences include: denied insurance claims (your insurer can refuse to cover damage from unpermitted work), inability to sell your home (unpermitted roof work is flagged during title searches), and the cost of tearing off and redoing the entire project to meet code.
               </p>
               <p>
-                All Phase Construction USA has completed over 2,500 roofing projects in the HVHZ since 2005. Our team passes Broward County and Palm Beach County inspections on the first attempt because we understand every detail of the local code requirements — from the six-inch nail spacing on shingle roofs to the foam adhesive specifications on tile installations.
+                All Phase Construction USA has completed over 2,500 roofing projects in the HVHZ since 2006. Our team passes Broward County and Palm Beach County inspections on the first attempt because we understand every detail of the local code requirements — from the six-inch nail spacing on shingle roofs to the foam adhesive specifications on tile installations.
               </p>
             </div>
           </div>

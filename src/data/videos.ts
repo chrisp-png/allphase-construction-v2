@@ -12,7 +12,7 @@ export const VIDEOS: Record<string, VideoMeta> = {
     videoId: 'dZVkhyNRXnk',
     title: 'All Phase Construction | Chris Porosky Story',
     description:
-      'Chris Porosky, founder of All Phase Construction USA, on building a dual-licensed roofing & general contracting business in Deerfield Beach, FL since 2005.',
+      'Chris Porosky, founder of All Phase Construction USA, on building a dual-licensed roofing & general contracting business in Deerfield Beach, FL since 2006.',
     uploadDate: '2021-05-20T12:00:00-05:00',
     duration: 'PT7M31S',
     city: 'Deerfield Beach',

@@ -115,7 +115,7 @@ export default function BestRoofersJupiterPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (200+ reviews) — Dual-licensed roofer + general contractor with 21 years serving Palm Beach County. Specializes in wind mitigation upgrades that lower insurance premiums on luxury homes. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (200+ reviews) — Dual-licensed roofer + general contractor with 20 years serving Palm Beach County. Specializes in wind mitigation upgrades that lower insurance premiums on luxury homes. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Embick Enterprises</strong> ⭐ 4.7 — Northern Palm Beach County roofer with established reputation for residential and commercial work. Proven experience with complex roofing systems in Jupiter's upscale communities. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
@@ -151,7 +151,7 @@ export default function BestRoofersJupiterPage() {
                     <td className="px-4 py-4 text-zinc-300">⭐ 4.8</td>
                     <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Wind Mitigation Upgrades + Full Roof Systems</td>
-                    <td className="px-4 py-4 text-zinc-300">21 years (est. 2005)</td>
+                    <td className="px-4 py-4 text-zinc-300">20 years (est. 2006)</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 font-medium text-white">Embick Enterprises</td>
@@ -367,7 +367,7 @@ export default function BestRoofersJupiterPage() {
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Standouts:</h3>
             <p className="text-zinc-300 leading-relaxed mb-6">
-              Dual-licensed GC + RC | Wind mitigation insurance premium savings | 21 years serving Palm Beach County | Multiple manufacturer certifications | Gulf Stream, Jupiter Island, Abacoa track record | HOA and architectural coordination expertise | Available emergency services
+              Dual-licensed GC + RC | Wind mitigation insurance premium savings | 20 years serving Palm Beach County | Multiple manufacturer certifications | Gulf Stream, Jupiter Island, Abacoa track record | HOA and architectural coordination expertise | Available emergency services
             </p>
 
             <div className="flex flex-wrap gap-4 items-center text-zinc-300">

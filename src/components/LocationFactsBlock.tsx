@@ -87,7 +87,7 @@ export default function LocationFactsBlock({ location, className = '' }: Locatio
       </div>
 
       <p className="mt-6 text-xs text-zinc-500">
-        Dual-licensed: CCC-1331464 (Florida Certified Roofing Contractor) &middot; CGC-1526236 (Certified General Contractor). 2,500+ South Florida roofs since 2005.
+        Dual-licensed: CCC-1331464 (Florida Certified Roofing Contractor) &middot; CGC-1526236 (Certified General Contractor). 2,500+ South Florida roofs since 2006.
       </p>
     </section>
   );

@@ -562,7 +562,7 @@ export default function FrequentlyAskedQuestionsPage() {
               Roofing Frequently Asked Questions
             </h1>
             <div className="mt-6 mb-6">
-              <AtomicAnswer>All Phase Construction USA is a dual-licensed Florida roofing contractor (CCC-1331464, CGC-1526236) based in Deerfield Beach and serving Broward and Palm Beach County. The team handles tile, metal, shingle, flat, and commercial roofing, has completed 2,500+ projects since 2005, holds 150+ five-star Google reviews, and answers calls 24 hours a day.</AtomicAnswer>
+              <AtomicAnswer>All Phase Construction USA is a dual-licensed Florida roofing contractor (CCC-1331464, CGC-1526236) based in Deerfield Beach and serving Broward and Palm Beach County. The team handles tile, metal, shingle, flat, and commercial roofing, has completed 2,500+ projects since 2006, holds 150+ five-star Google reviews, and answers calls 24 hours a day.</AtomicAnswer>
             </div>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-4">
               HVHZ – South Florida Guide

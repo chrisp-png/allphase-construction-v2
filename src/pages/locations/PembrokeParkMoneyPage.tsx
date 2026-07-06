@@ -26,7 +26,7 @@ export default function PembrokeParkMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Pembroke Park, FL | All Phase USA</title>
-        <meta name="description" content="Pembroke Park, FL roofer for site-built homes, townhomes & commercial/warehouse flat roofs — HVHZ-code, dual-licensed roofing + GC since 2005. (754) 227-5605." />
+        <meta name="description" content="Pembroke Park, FL roofer for site-built homes, townhomes & commercial/warehouse flat roofs — HVHZ-code, dual-licensed roofing + GC since 2006. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/pembroke-park" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
