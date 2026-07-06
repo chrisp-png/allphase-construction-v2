@@ -215,7 +215,7 @@ export default function TamaracMoneyPage() {
                   <span className="text-red-400">·</span>
                   <span>2,500+ Roofs</span>
                   <span className="text-red-400">·</span>
-                  <span>Dual-Licensed Since 2005</span>
+                  <span>Dual-Licensed Since 2006</span>
                 </div>
             <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
               All Phase Construction USA has served Tamarac homeowners and businesses since 2006 — nearly two decades of roofing expertise from our Deerfield Beach headquarters, just minutes away. As a dual-licensed Florida Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236), we bring capabilities to every Tamarac roofing project that standard roofing-only contractors cannot match. Tamarac was incorporated in 1963 and its housing stock reflects that history — homes and 55+ communities built in the 1960s and 1970s now entering second and third replacement cycles, where structural findings during tear-off are common and where our CGC license makes all the difference.

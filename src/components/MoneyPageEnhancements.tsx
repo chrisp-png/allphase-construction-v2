@@ -192,7 +192,7 @@ export default function MoneyPageEnhancements({
       <section className="py-10 bg-zinc-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 justify-center mb-3">
-            {['✓ Dual-Licensed CCC + CGC', '✓ HVHZ-Certified', '✓ A+ BBB', '✓ Since 2005', '✓ 2,500+ Roofs'].map((b) => (
+            {['✓ Dual-Licensed CCC + CGC', '✓ HVHZ-Certified', '✓ A+ BBB', '✓ Since 2006', '✓ 2,500+ Roofs'].map((b) => (
               <span
                 key={b}
                 className="bg-red-950/40 text-red-100 border border-red-900/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold"

@@ -41,7 +41,7 @@ export const CITY_SERVICE_AREA_SEO_OVERRIDES: Record<string, CityServiceAreaSEO>
 
   // Priority City: Deerfield Beach
   'deerfield-beach': {
-    title: 'Deerfield Beach Roofing Company | HQ Since 2005 | All Phase USA',
+    title: 'Deerfield Beach Roofing Company | HQ Since 2006 | All Phase USA',
     description: 'Deerfield Beach roofing company — our headquarters since 2006. HVHZ-certified, dual-licensed, 2,500+ roofs. Free same-day inspection. (754) 227-5605.'
   },
 

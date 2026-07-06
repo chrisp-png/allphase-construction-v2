@@ -4797,7 +4797,7 @@ ${companyAuthorityFooter()}
 
     // ─── T3.10 Trust strip + T3.9 "Updated" timestamp ───
     // Insert immediately after the first </h1> in the hub content. Inserts a
-    // 5-pill trust strip (CCC + CGC + HVHZ + BBB + Since 2005) plus a small
+    // 5-pill trust strip (CCC + CGC + HVHZ + BBB + Since 2006) plus a small
     // "Updated April 2026" stamp. Both are inline-styled for inclusion in the
     // prerendered HTML that Google reads, independent of React hydration.
     const trustStripHtml = `
@@ -4805,7 +4805,7 @@ ${companyAuthorityFooter()}
     <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ Dual-Licensed CCC + CGC</span>
     <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ HVHZ-Certified</span>
     <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ A+ BBB</span>
-    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ Since 2005</span>
+    <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ Since 2006</span>
     <span style="background: #fef2f2; color: #991b1b; padding: 0.35rem 0.75rem; border-radius: 9999px; font-weight: 600;">✓ 2,500+ Roofs</span>
   </div>
   <p class="seo-updated-stamp" style="font-size: 0.8125rem; color: #666; margin: 0 0 1.5rem;"><time datetime="2026-04">Updated April 2026</time> · Free inspections throughout South Florida.</p>`;
@@ -4991,7 +4991,7 @@ ${companyAuthorityFooter()}
   <p style="font-size:1.125rem;">Dual-licensed roof replacement throughout ${hub.name}, Florida. Tile, metal, architectural shingle, and flat-roof systems built to ${hub.complianceLanguage} standards. Over 2,500 roofs completed since 2006 from our Deerfield Beach headquarters.</p>
 
   <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:0.5rem;padding:1rem 1.25rem;margin:1.5rem 0;">
-    <strong style="color:#991b1b;">✓ Dual-Licensed CCC-1331464 + CGC-1526236</strong> · ${hub.complianceLanguage} · A+ BBB · 2,500+ Roofs · Since 2005
+    <strong style="color:#991b1b;">✓ Dual-Licensed CCC-1331464 + CGC-1526236</strong> · ${hub.complianceLanguage} · A+ BBB · 2,500+ Roofs · Since 2006
   </div>
 
   <h2>${hub.name} Cities We Serve</h2>

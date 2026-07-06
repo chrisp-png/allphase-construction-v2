@@ -122,7 +122,7 @@ export default function PlantationMoneyPage() {
                   <span className="text-red-400">·</span>
                   <span>2,500+ Roofs</span>
                   <span className="text-red-400">·</span>
-                  <span>Dual-Licensed Since 2005</span>
+                  <span>Dual-Licensed Since 2006</span>
                 </div>
               </div>
 
