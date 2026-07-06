@@ -2679,6 +2679,11 @@ function blogPostingSchema({ slug, title, description, image, published, modifie
   return schema;
 }
 
+// Paths to noindex in prerendered HTML (reversible — remove a slug to re-index). PR-167.
+const NOINDEX_PATHS = new Set([
+  '/palm-beach-county-roof-insurance-claim',
+]);
+
 function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null, ogDescription = null, ogImage = null, articleMeta = null) {
   const ogDesc = ogDescription || description;
 
@@ -2705,6 +2710,17 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       /<link rel="canonical" href=".*?" \/>/,
       `<link rel="canonical" href="${canonical}" />`
     );
+  }
+
+  // Reversible noindex for specific paths (e.g. insurance-claim pages) — PR-167
+  if (canonical) {
+    const noindexPath = canonical.replace('https://allphaseconstructionfl.com', '').replace(/\/$/, '');
+    if (NOINDEX_PATHS.has(noindexPath)) {
+      html = html.replace(
+        /<meta name="robots" content="[^"]*"\s*\/>/,
+        '<meta name="robots" content="noindex, follow" />'
+      );
+    }
   }
 
   // Replace Open Graph tags
