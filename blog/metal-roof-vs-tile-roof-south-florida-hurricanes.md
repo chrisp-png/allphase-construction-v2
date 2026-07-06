@@ -10,7 +10,7 @@ After driving through the Florida Keys following the last major hurricane, I can
 
 Shingle roofs were gone. Tile roofs had debris scattered everywhere — broken concrete and clay tiles littering yards, driveways, and streets. But the standing seam metal roofs? They were intact.
 
-This wasn't a surprise. Standing seam metal roofing is mechanically seamed — meaning the panels lock together without exposed fasteners that can fail under extreme wind pressure. In a High-Velocity Hurricane Zone like Broward and Palm Beach Counties, where roofs must withstand winds up to 180 mph, this design difference matters.
+This wasn't a surprise. Standing seam metal roofing is mechanically seamed — meaning the panels lock together without exposed fasteners that can fail under extreme wind pressure. In Broward County's High-Velocity Hurricane Zone and across Palm Beach County's high-wind coastal zone, where roofs face design winds up to 170–180 mph, this design difference matters.
 
 **Important distinction:** Exposed fastener metal roofs — the cheaper option with visible screws — did fail in some cases during that same storm. The screws can back out over time due to thermal expansion and contraction, creating weak points. Standing seam systems don't have this vulnerability.
 
@@ -95,7 +95,7 @@ Palm Beach County is more relaxed on certain aluminum specifications:
 
 **What this means for you:** If you're choosing between aluminum standing seam options, the same roof may cost somewhat less in Palm Beach County than in Broward County due to these code differences. Your contractor should account for this in your quote.
 
-Both counties are in Florida's High-Velocity Hurricane Zone (HVHZ), so all roofing materials must carry Miami-Dade NOA (Notice of Acceptance) or Florida Product Approval regardless of which county you're in.
+Broward County is in Florida's High-Velocity Hurricane Zone (HVHZ) and Palm Beach County enforces a strong coastal wind code, so all roofing materials must carry Miami-Dade NOA (Notice of Acceptance) or Florida Product Approval depending on which county you're in.
 
 ---
 
