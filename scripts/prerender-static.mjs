@@ -4016,7 +4016,7 @@ ${companyAuthorityFooter()}
             let trimmedTitle = blogTitle.substring(0, maxTitleLen);
             const lastSp = trimmedTitle.lastIndexOf(' ');
             if (lastSp > 20) trimmedTitle = trimmedTitle.substring(0, lastSp);
-            pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').trim() + suffix;
+            pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').replace(/\s+(?:the|a|an|and|or|of|in|to|for|with|on|at|by|vs)$/i, '').replace(/[\s\-–—:,]+$/, '').trim() + suffix;
           }
 
           const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
@@ -4370,7 +4370,7 @@ ${companyAuthorityFooter()}
         let trimmedTitle = blogTitle.substring(0, maxTitleLen);
         const lastSp = trimmedTitle.lastIndexOf(' ');
         if (lastSp > 20) trimmedTitle = trimmedTitle.substring(0, lastSp);
-        pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').trim() + suffix;
+        pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').replace(/\s+(?:the|a|an|and|or|of|in|to|for|with|on|at|by|vs)$/i, '').replace(/[\s\-–—:,]+$/, '').trim() + suffix;
       }
 
       // Description: prefer meta_description > excerpt > boilerplate (cap 155 chars)
