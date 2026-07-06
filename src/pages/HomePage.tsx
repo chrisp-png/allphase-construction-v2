@@ -66,7 +66,7 @@ export default function HomePage() {
             <div className="hidden sm:block w-px h-5 bg-red-400/50" />
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5 text-white/90" />
-              <span className="font-bold">Since 2005</span>
+              <span className="font-bold">Since 2006</span>
             </div>
           </div>
         </div>

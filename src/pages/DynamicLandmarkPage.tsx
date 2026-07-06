@@ -105,7 +105,7 @@ export default function DynamicLandmarkPage() {
               <div className="mt-8 flex flex-wrap gap-3 text-sm">
                 <span className="bg-red-950/50 border border-red-900/50 text-red-300 px-3 py-1.5 rounded-full font-semibold">✓ Dual-Licensed CCC + CGC</span>
                 <span className="bg-red-950/50 border border-red-900/50 text-red-300 px-3 py-1.5 rounded-full font-semibold">✓ 2,500+ Roofs</span>
-                <span className="bg-red-950/50 border border-red-900/50 text-red-300 px-3 py-1.5 rounded-full font-semibold">✓ Since 2005</span>
+                <span className="bg-red-950/50 border border-red-900/50 text-red-300 px-3 py-1.5 rounded-full font-semibold">✓ Since 2006</span>
                 <span className="bg-red-950/50 border border-red-900/50 text-red-300 px-3 py-1.5 rounded-full font-semibold">✓ Free Inspections</span>
               </div>
             </div>

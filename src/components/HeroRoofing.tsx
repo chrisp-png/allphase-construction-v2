@@ -135,7 +135,7 @@ export default function HeroRoofing() {
         <div className="hero-grid grid lg:grid-cols-2 gap-8 lg:items-start" style={{ overflow: 'visible', pointerEvents: 'auto' }}>
           <div className="hero-content-left" style={{ width: '100%', maxWidth: '100%', boxSizing: 'border-box', overflow: 'visible', pointerEvents: 'auto' }}>
             <h1 className="hero-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-3 leading-[1.2] sm:leading-tight">
-              Free Roof Inspection in 48 Hours — Dual-Licensed South Florida Roofer Since 2005
+              Free Roof Inspection in 48 Hours — Dual-Licensed South Florida Roofer Since 2006
             </h1>
 
             <h2 className="text-lg sm:text-xl md:text-2xl text-[#C5A572] mb-5 sm:mb-4 font-semibold leading-[1.5] sm:leading-snug">
@@ -336,7 +336,7 @@ export default function HeroRoofing() {
               </button>
 
               <p className="text-center text-xs text-gray-600 leading-relaxed">
-                ★ 4.8 Google · A+ BBB · Licensed CCC-1331464 / CGC-1526236 · Since 2005
+                ★ 4.8 Google · A+ BBB · Licensed CCC-1331464 / CGC-1526236 · Since 2006
               </p>
 
               <p className="text-center text-sm text-gray-600">

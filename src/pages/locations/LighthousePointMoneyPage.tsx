@@ -86,7 +86,7 @@ export default function LighthousePointMoneyPage() {
                 <span className="text-red-400">·</span>
                 <span>2,500+ Roofs</span>
                 <span className="text-red-400">·</span>
-                <span>Dual-Licensed Since 2005</span>
+                <span>Dual-Licensed Since 2006</span>
               </div>
               <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />

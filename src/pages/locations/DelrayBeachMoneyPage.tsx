@@ -161,7 +161,7 @@ export default function DelrayBeachMoneyPage() {
                   <span className="text-red-400">·</span>
                   <span>2,500+ Roofs</span>
                   <span className="text-red-400">·</span>
-                  <span>Dual-Licensed Since 2005</span>
+                  <span>Dual-Licensed Since 2006</span>
                 </div>
             <p className="text-xl text-zinc-400 mb-8 font-medium">
               Serviced by All Phase Construction USA — Based in Deerfield Beach

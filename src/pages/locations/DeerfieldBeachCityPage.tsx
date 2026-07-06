@@ -214,7 +214,7 @@ export default function DeerfieldBeachCityPage() {
                 </div>
                 <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 - Florida Certified Roofing Contractor</div>
                 <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 - Certified General Contractor</div>
-                <div className="text-gray-400 text-xs">HVHZ Certified • Serving South Florida Since 2005 • 2,500+ Projects</div>
+                <div className="text-gray-400 text-xs">HVHZ Certified • Serving South Florida Since 2006 • 2,500+ Projects</div>
                 <div className="flex items-center gap-3 mt-3 pt-3 border-t border-white/10">
                   <img src="/tri-alliance-logo.jpg" alt="TRI Alliance Florida High Wind Certified" width="40" height="40" loading="lazy" decoding="async" />
                   <span className="text-[#C5A572] text-xs font-medium">TRI Alliance Florida High Wind Certified</span>
