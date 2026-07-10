@@ -3447,10 +3447,10 @@ async function generateStaticFiles() {
   ,
   '/roof-repair': {
     faqs: [
-      { question: 'How quickly can you respond to emergency roof repairs?', answer: 'We offer same-day emergency response throughout Broward and Palm Beach County. Call (754) 227-5605 and we can dispatch a crew within 2-4 hours for an active leak.' },
-      { question: 'Does homeowner insurance cover roof repair in Florida?', answer: 'Most Florida homeowner policies cover storm and wind damage. We work directly with insurance adjusters and can document damage for your claim at no extra charge.' },
-      { question: 'How do I know if I need a repair or full replacement?', answer: 'If your roof is under 15 years old and damage is localized, repair is usually the right call. Our free inspection identifies whether targeted repair or full replacement delivers better value.' },
-      { question: 'Are you licensed for roof repairs in Broward and Palm Beach County?', answer: 'Yes. All Phase Construction USA holds Florida State Certified Roofing Contractor license CCC-1331464, covering all repair work in Broward and Palm Beach County.' }
+      { question: 'Can I reach you in the middle of the night?', answer: 'Yes. A live person answers our line 24 hours a day, seven days a week — never just a machine. If you wake up to a leak at 2 a.m., you can call (754) 227-5605, get your emergency booked on the spot, and go back to sleep knowing we will call you first thing in the morning to schedule a technician right out to you.' },
+      { question: 'Do you send someone out at 3 a.m.?', answer: 'Honestly, no — and that is a good thing for you. Working on a wet, dark roof is dangerous, and a middle-of-the-night visit would mean an emergency premium for work that cannot be done safely or well in the dark. Our answering service captures your call any hour, and we reach back out at the start of the next business day to get someone to your home promptly.' },
+      { question: 'How fast can you get here?', answer: 'For urgent leaks we prioritize a quick visit — often the same day you reach us during business hours. Overnight and after-hours calls are scheduled first thing the next morning from our Deerfield Beach headquarters, serving Broward and Palm Beach County.' },
+      { question: 'What counts as a roofing emergency?', answer: 'An active interior leak, missing or storm-lifted shingles or tiles that expose the bare deck, a tree limb through the roof, or water entering around a chimney or skylight. If water is getting inside your home, call right away so we can get you booked and out to you as soon as possible.' }
     ],
     breadcrumbs: [
       { name: 'Home', url: 'https://allphaseconstructionfl.com' },
