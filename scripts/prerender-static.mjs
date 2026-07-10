@@ -1190,6 +1190,7 @@ function generateRoofRepairHubContent() {
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><a href="/blog/the-cost-of-waiting-why-delaying-roof-replacement-in-south-florida-hurts-your-wallet" style="color: #dc2626; text-decoration: underline;">How Often Should I Replace My Roof?</a></li>
     <li><a href="/blog/dont-replace-your-roof-restore-it-instead" style="color: #dc2626; text-decoration: underline;">Don't Replace Your Roof — Restore It Instead</a></li>
+    <li><a href="/blog/what-is-25-percent-rule-roofing-florida" style="color: #dc2626; text-decoration: underline;">What Is Florida's 25% Roof Rule?</a></li>
     <li><a href="/blog/complete-roof-replacement-process-10-steps" style="color: #dc2626; text-decoration: underline;">What to Expect During a Roof Replacement</a></li>
     <li><a href="/florida-roof-insurance-claims-guide" style="color: #dc2626; text-decoration: underline;">Florida Roof Insurance Claims Guide</a></li>
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
@@ -2135,7 +2136,7 @@ function generateRoofReplacementCostFloridaContent() {
   <p>A standard roofing license (CCC) only covers the roof covering. When tear-off reveals damaged trusses, failed roof-to-wall connections, or rotted fascia, a roofing-only contractor has to bring in a separate general contractor — adding cost and delay. Because we hold both the roofing (CCC-1331464) and general contractor (CGC-1526236) licenses, we handle the structural work and the roof under one contract, one crew, and one warranty. No change-order surprises from a second trade.</p>
 
   <h2>Get an Exact Number for Your Roof</h2>
-  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or call <strong>(754) 227-5605</strong> for a free in-person measurement and a written, line-item quote. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides.</p>
+  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or call <strong>(754) 227-5605</strong> for a free in-person measurement and a written, line-item quote. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides. Weighing a repair against a replacement? Our <a href="/blog/what-is-25-percent-rule-roofing-florida" style="color:#dc2626;text-decoration:underline;">guide to Florida's 25% roof rule</a> explains when a partial repair triggers full code compliance.</p>
 
   ${companyAuthorityFooter()}
 </section>
@@ -2235,7 +2236,7 @@ function generateRoofDamageAssessmentContent() {
   <h2>Why Documentation Matters</h2>
   <p>A detailed report with dated photos and moisture readings gives you an objective record of the roof's condition. It removes the guesswork from a repair-versus-replace decision and gives every party a clear, professional basis to work from.</p>
   <h2>Repair or Replace?</h2>
-  <p>We recommend a repair when damage is localized and the roof has service life left, and a replacement when the covering is at end-of-life, the deck is compromised, or damage is widespread. As a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle both the roof and any structural repair under one contract.</p>
+  <p>We recommend a repair when damage is localized and the roof has service life left, and a replacement when the covering is at end-of-life, the deck is compromised, or damage is widespread. As a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), we handle both the roof and any structural repair under one contract. Scope matters under Florida code, so it helps to understand <a href="/blog/what-is-25-percent-rule-roofing-florida" style="color:#dc2626;text-decoration:underline;">Florida's 25% roof rule</a> — it determines whether a repair can stay partial or must bring the whole roof to current code.</p>
   <h2>Act Within Days</h2>
   <p>Get a professional assessment quickly after a storm — before the next rain drives water deeper. Call <strong>(754) 227-5605</strong> for a documented roof damage assessment anywhere in Broward or Palm Beach County.</p>
   ${companyAuthorityFooter()}
