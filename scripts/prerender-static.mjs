@@ -1185,6 +1185,22 @@ function generateRoofRepairHubContent() {
     <p style="margin-bottom: 0; color: #7f1d1d;">Active leaks, storm damage, missing shingles, and emergency tarping available throughout South Florida.</p>
   </div>
 
+  <h2>24-Hour Emergency Roof Repair: Your Questions Answered</h2>
+  <p><strong>Can I reach you in the middle of the night?</strong> Yes. A live person answers our line 24 hours a day, seven days a week — never just a machine. If you wake up to a leak at 2 a.m., you can call, get your emergency booked on the spot, and go back to sleep knowing we will call you first thing in the morning to schedule a technician right out to you.</p>
+  <p><strong>Do you send someone out at 3 a.m.?</strong> Honestly, no — and that's a good thing for you. Working on a wet, dark roof is dangerous, and a middle-of-the-night visit would mean an emergency premium for work that can't be done safely or well in the dark. Our answering service captures your call any hour, and we reach back out at the start of the next business day to get someone to your home promptly.</p>
+  <p><strong>How fast can you get here?</strong> For urgent leaks we prioritize a quick visit — often the same day you reach us during business hours. Overnight and after-hours calls are scheduled first thing the next morning from our Deerfield Beach headquarters, serving Broward and Palm Beach County.</p>
+  <p><strong>What counts as a roofing emergency?</strong> An active interior leak, missing or storm-lifted shingles or tiles that expose the bare deck, a tree limb through the roof, or water entering around a chimney or skylight. If water is getting inside your home, call right away so we can get you booked and out to you as soon as possible.</p>
+
+  <h2>What to Do While You Wait for a Roofer</h2>
+  <p>A few quick steps can limit the damage until we arrive:</p>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Protect the inside.</strong> Move furniture, electronics, and valuables away from the leak and put a bucket or bin under the drip.</li>
+    <li><strong>Relieve a sagging ceiling.</strong> If a ceiling is bulging with trapped water, set a bucket underneath and pierce a small hole at the low point to drain it — a controlled drip is far safer than a sudden collapse.</li>
+    <li><strong>Take photos.</strong> Snap a few pictures and note the time; it is a useful record of what happened and when.</li>
+    <li><strong>Stay off the roof.</strong> A wet or storm-damaged roof is dangerous — leave the exterior and any tarping to a licensed pro.</li>
+    <li><strong>Call (754) 227-5605.</strong> The sooner we get you booked, the sooner we can get a tarp or temporary patch in place and limit the water reaching your decking and interior.</li>
+  </ul>
+
   <h2>Helpful Roof Repair Resources</h2>
   <p>Learn more about roof repairs and maintenance from our expert guides:</p>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">

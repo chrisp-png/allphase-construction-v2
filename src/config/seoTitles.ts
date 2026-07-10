@@ -345,8 +345,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
     '/roof-repair': {
-    title: 'Roof Repair South Florida | Storm & Leak Experts',
-        description: 'Roof repair in Broward & Palm Beach County. Storm damage, leaks, tile & shingle repairs. HVHZ-certified, dual-licensed. (754) 227-5605.',
+    title: 'Emergency Roof Repair South Florida | 24/7 Line',
+        description: 'Reach a live person 24/7 for emergency roof repair in Broward & Palm Beach County. Leaks booked any hour, technician out fast. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/licensed-roofing-contractor': {
