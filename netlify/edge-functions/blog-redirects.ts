@@ -182,5 +182,22 @@ export default async function handler(
     const spaUrl = new URL('/index.html', url.origin);
     return context.rewrite(spaUrl);
   }
-  return response;
+
+  // 5. Force revalidation on blog HTML served through this edge function.
+  //
+  //    Edge-function responses are cached separately by the CDN and are NOT
+  //    invalidated by a deploy, and public/_headers Cache-Control rules do
+  //    NOT apply to them. Without explicit headers here, a blog page can be
+  //    frozen at the edge indefinitely: corrected content kept serving an old
+  //    copy on the canonical URL for 15+ hours across six deploys (including
+  //    cache-clearing ones), while non-edge-function pages (e.g. /roof-repair)
+  //    updated normally. Any /blog/* URL was affected, so Supabase/CMS content
+  //    edits could silently fail to reach Googlebot.
+  //
+  //    Setting these makes the edge cache hold blog HTML for at most 60s and
+  //    then revalidate against origin, so content edits go live on deploy.
+  const fresh = new Response(response.body, response);
+  fresh.headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
+  fresh.headers.set('Netlify-CDN-Cache-Control', 'public, s-maxage=60, must-revalidate');
+  return fresh;
 }
