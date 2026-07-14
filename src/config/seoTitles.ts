@@ -344,6 +344,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     description: 'TPO, PVC, EPDM & modified bitumen flat roofing in South Florida. Residential & commercial. Dual-licensed CCC/CGC. Free assessment.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
+    '/community': {
+    title: 'Community Involvement | All Phase Construction USA',
+        description: 'The organizations All Phase Construction USA supports across Broward & Palm Beach County — Big Brothers Big Sisters of Broward, Boca Raton Softball, and more.',
+    canonical: 'https://allphaseconstructionfl.com/community'
+  },
     '/roof-repair': {
     title: 'Emergency Roof Repair South Florida | 24/7 Line',
         description: 'Reach a live person 24/7 for emergency roof repair in Broward & Palm Beach County. Leaks booked any hour, technician out fast. (754) 227-5605.',

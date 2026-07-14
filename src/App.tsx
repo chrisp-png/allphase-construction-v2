@@ -28,6 +28,7 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 const CalculatorPage = lazy(() => import('./pages/CalculatorPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
+const CommunityPage = lazy(() => import('./pages/CommunityPage'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage'));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
 const AdminPage = lazy(() => import('./pages/AdminPage'));
@@ -238,6 +239,7 @@ function AppContent() {
             <Route path="/calculator" element={<Navigate to="/roof-cost-calculator/" replace />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about-us" element={<AboutPage />} />
+            <Route path="/community" element={<CommunityPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/admin" element={<AdminPage />} />
