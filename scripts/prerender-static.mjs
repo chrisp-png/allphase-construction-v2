@@ -1987,8 +1987,9 @@ function generateCommunityContent() {
   <p>There is almost always a rescue cat in our Deerfield Beach office: injured, sick, or too small to be anywhere else, getting looked after between vet visits. And on the side of our building there's a standing feeding station. What shows up is a rotating cast — cats, raccoons, and an assortment of furry South Florida critters who have figured out exactly where to be, and at what hour.</p>
   <p>We mention it because it's true, and because it says something about the people who answer your phone. If you call us and hear a meow in the background, that's Zoya's doing.</p>
 
-  <h2>Where We're Headed Next: No Fallen Heroes Foundation</h2>
-  <p>Zoya also volunteers her time with the No Fallen Heroes Foundation, a 501(c)(3) that supports veterans, first responders, and their families. Sponsoring a veteran through their program is the next commitment on our list. We'll let them tell their own story — it's theirs to tell, and they tell it far better than we could. <a href="https://nofallenheroesfoundation.org/" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit the No Fallen Heroes Foundation</a>.</p>
+  <h2>No Fallen Heroes Foundation</h2>
+  <p>The No Fallen Heroes Foundation is a 501(c)(3) that supports veterans, first responders, and their families — funding healing retreats for the people who carried more than most of us will ever be asked to carry.</p>
+  <p>Zoya volunteers her time with them, which is how we came to know their work. All Phase has made a donation to the foundation, and our goal is to fully sponsor a veteran through the program. We'll let them tell their own story — it's theirs to tell, and they tell it far better than we could. <a href="https://nofallenheroesfoundation.org/" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit the No Fallen Heroes Foundation</a>.</p>
 
   <h2>Why This Page Exists</h2>
   <p>Every roofer in South Florida will tell you they care about the community. This is the page where we have to be specific about it. Every organization above is linked, and every one of them can confirm we're on their sponsor list.</p>
@@ -2010,7 +2011,7 @@ function generateAboutHubContent() {
   <p>All Phase Construction USA is owner-led. Chris Porosky stays involved on every project — monitoring real-time job site photos through CompanyCam, coordinating daily with the sales and production teams, and stepping onto the higher-complexity jobs himself. The sales reps you talk to are a small, stable team Chris built and leads — no subcontracted sales agents, no rotating crews. The owner is reachable, and the team you start with is the team that finishes.</p>
 
   <h2>Rooted in the Community</h2>
-  <p>We sponsor Big Brothers Big Sisters of Broward County and the Boca Raton Softball Association, and our office manager rescues animals out of our Deerfield Beach shop. See who we support on our <a href="/community" style="color:#dc2626;text-decoration:underline;">community involvement page</a>.</p>
+  <p>We sponsor Big Brothers Big Sisters of Broward County and the Boca Raton Softball Association, support the No Fallen Heroes Foundation, and our office manager rescues animals out of our Deerfield Beach shop. See who we support on our <a href="/community" style="color:#dc2626;text-decoration:underline;">community involvement page</a>.</p>
 
   <h2>Dual-Licensed: CCC-1331464 + CGC-1526236</h2>
   <p>Most roofing companies hold only a Florida Certified Roofing Contractor (CCC) license — the legal minimum to pull a roof permit in Florida. We hold both the certified roofing license and a Florida Certified General Contractor (CGC) license. The CGC scope covers structural and tie-in work — trusses, decking, hurricane straps, full envelope detail — under one contract.</p>

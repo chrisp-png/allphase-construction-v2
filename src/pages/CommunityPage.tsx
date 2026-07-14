@@ -126,12 +126,16 @@ export default function CommunityPage() {
             <article className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-7 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Shield className="w-6 h-6 text-red-500 shrink-0" />
-                <h2 className="text-2xl font-bold text-white">Where We're Headed Next: No Fallen Heroes Foundation</h2>
+                <h2 className="text-2xl font-bold text-white">No Fallen Heroes Foundation</h2>
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Zoya also volunteers her time with the No Fallen Heroes Foundation, a 501(c)(3) that supports
-                veterans, first responders, and their families. Sponsoring a veteran through their program is the
-                next commitment on our list.
+                The No Fallen Heroes Foundation is a 501(c)(3) that supports veterans, first responders, and their
+                families — funding healing retreats for the people who carried more than most of us will ever be
+                asked to carry.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Zoya volunteers her time with them, which is how we came to know their work. All Phase has made a
+                donation to the foundation, and our goal is to fully sponsor a veteran through the program.
               </p>
               <p className="text-gray-300 leading-relaxed mb-5">
                 We'll let them tell their own story — it's theirs to tell, and they tell it far better than we could.
