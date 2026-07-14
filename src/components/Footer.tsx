@@ -226,6 +226,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/community/" className="hover:text-red-600 transition-colors">
+                  Community Involvement
+                </Link>
+              </li>
+              <li>
                 <Link to="/projects/" className="hover:text-red-600 transition-colors">
                   Our Projects
                 </Link>

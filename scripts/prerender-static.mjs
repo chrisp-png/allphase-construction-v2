@@ -1958,6 +1958,47 @@ function generateFAQHubContent() {
  * retrofits), and team approach. CLAUDE.md §14 compliant — no insurance
  * / claim / hurricane-damage language in new copy.
  */
+/**
+ * /community — Community Involvement (PR-177).
+ * Real, verifiable local involvement for E-E-A-T. NO insurance language.
+ * Outbound links to the orgs we actually sponsor (also the basis of the
+ * reciprocal-link ask on their sponsor pages).
+ */
+function generateCommunityContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Rooted in South Florida</h1>
+
+  <p>All Phase Construction USA has been headquartered in Deerfield Beach since 2006 — we started the year Hurricane Wilma reminded South Florida what a roof is really for. Two decades later, the people who work here still live here. Our kids play in these leagues. Our neighbors are the ones calling at 2 a.m. with a leak.</p>
+
+  <p>Community involvement isn't a marketing program for us. It's a short list of organizations we actually put money and hours behind — and we'd rather show you exactly who they are than post a wall of logos.</p>
+
+  <h2>Big Brothers Big Sisters of Broward County</h2>
+  <p>Big Brothers Big Sisters has been matching children with adult mentors since 1904, and the Broward County chapter has been doing it here for more than 50 years. The model is simple and it works: one adult (a "Big"), one child (a "Little"), a real relationship, and a Match Support Specialist who stays with the pair to keep it healthy. Programs run both in the community and inside Broward County public schools.</p>
+  <p>The numbers are why we chose them. In the past year, BBBS of Broward served <strong>1,333 young people</strong> — growing local reach by nearly 29% — and in 2024 alone they built <strong>1,024 one-to-one mentoring matches</strong> for Broward kids. That growth earned them the 2025 Growth Award from Big Brothers Big Sisters of America. Child safety comes first: every Big goes through background screening and training before a match is ever made.</p>
+  <p>We sponsor BBBS of Broward because mentorship is one of the few things that genuinely changes a kid's trajectory — and because these are kids in our own county. <a href="https://www.bbbsbroward.org" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit Big Brothers Big Sisters of Broward</a>.</p>
+
+  <h2>Boca Raton Softball Association</h2>
+  <p>The Boca Raton Softball Association is a Florida 501(c)(3) that has run girls fast pitch softball in Boca Raton for more than 25 years, operated entirely by a volunteer Board of Directors. Alongside the recreational leagues, they run the Boltz travel program at the 8U, 10U, 12U and 14U levels — and players who came up through their rec leagues have gone on to compete at the college and professional level.</p>
+  <p>We're a team sponsor for the season. Youth sports is where a lot of South Florida kids learn to show up on time, do the unglamorous work, and be part of something bigger than themselves — which, not coincidentally, is exactly what we look for when we hire. <a href="https://www.bocasoftball.com" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit the Boca Raton Softball Association</a>.</p>
+
+  <h2>The Cats (and Raccoons) of 590 Goolsby</h2>
+  <p>Our office manager, <strong>Zoya Haydic</strong>, rescues animals. Not as a program, not as a campaign — it's just what she does.</p>
+  <p>There is almost always a rescue cat in our Deerfield Beach office: injured, sick, or too small to be anywhere else, getting looked after between vet visits. And on the side of our building there's a standing feeding station. What shows up is a rotating cast — cats, raccoons, and an assortment of furry South Florida critters who have figured out exactly where to be, and at what hour.</p>
+  <p>We mention it because it's true, and because it says something about the people who answer your phone. If you call us and hear a meow in the background, that's Zoya's doing.</p>
+
+  <h2>Where We're Headed Next: No Fallen Heroes Foundation</h2>
+  <p>Zoya also volunteers her time with the No Fallen Heroes Foundation, a 501(c)(3) that supports veterans, first responders, and their families. Sponsoring a veteran through their program is the next commitment on our list. We'll let them tell their own story — it's theirs to tell, and they tell it far better than we could. <a href="https://nofallenheroesfoundation.org/" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit the No Fallen Heroes Foundation</a>.</p>
+
+  <h2>Why This Page Exists</h2>
+  <p>Every roofer in South Florida will tell you they care about the community. This is the page where we have to be specific about it. Every organization above is linked, and every one of them can confirm we're on their sponsor list.</p>
+  <p>If you run a local organization in Broward or Palm Beach County and think we'd be a good fit, we'd genuinely like to hear from you — call <strong>(754) 227-5605</strong> or email <strong>leads@allphaseusa.com</strong>. Learn more <a href="/about-us" style="color:#dc2626;text-decoration:underline;">about All Phase Construction USA</a>.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 function generateAboutHubContent() {
   return `
 <section id="seo-static-content">
@@ -1967,6 +2008,9 @@ function generateAboutHubContent() {
 
   <h2>Owner-Operator, Not a Franchise</h2>
   <p>All Phase Construction USA is owner-led. Chris Porosky stays involved on every project — monitoring real-time job site photos through CompanyCam, coordinating daily with the sales and production teams, and stepping onto the higher-complexity jobs himself. The sales reps you talk to are a small, stable team Chris built and leads — no subcontracted sales agents, no rotating crews. The owner is reachable, and the team you start with is the team that finishes.</p>
+
+  <h2>Rooted in the Community</h2>
+  <p>We sponsor Big Brothers Big Sisters of Broward County and the Boca Raton Softball Association, and our office manager rescues animals out of our Deerfield Beach shop. See who we support on our <a href="/community" style="color:#dc2626;text-decoration:underline;">community involvement page</a>.</p>
 
   <h2>Dual-Licensed: CCC-1331464 + CGC-1526236</h2>
   <p>Most roofing companies hold only a Florida Certified Roofing Contractor (CCC) license — the legal minimum to pull a roof permit in Florida. We hold both the certified roofing license and a Florida Certified General Contractor (CGC) license. The CGC scope covers structural and tie-in work — trusses, decking, hurricane straps, full envelope detail — under one contract.</p>
@@ -2969,6 +3013,7 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
   <a href="/reviews">Reviews</a>
   <a href="/projects">Our Projects</a>
   <a href="/frequently-asked-questions">FAQ</a>
+  <a href="/community">Community Involvement</a>
   <a href="/about-us">About Us</a>
   <a href="/contact">Contact</a>
   <a href="/blog">Blog</a>
@@ -3445,6 +3490,13 @@ async function generateStaticFiles() {
     ]
   }
   ,
+  '/community': {
+    breadcrumbs: [
+      { name: 'Home', url: 'https://allphaseconstructionfl.com' },
+      { name: 'About Us', url: 'https://allphaseconstructionfl.com/about-us' },
+      { name: 'Community Involvement', url: 'https://allphaseconstructionfl.com/community' }
+    ]
+  },
   '/roof-repair': {
     faqs: [
       { question: 'Can I reach you in the middle of the night?', answer: 'Yes. A live person answers our line 24 hours a day, seven days a week — never just a machine. If you wake up to a leak at 2 a.m., you can call (754) 227-5605, get your emergency booked on the spot, and go back to sleep knowing we will call you first thing in the morning to schedule a technician right out to you.' },
@@ -3702,6 +3754,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/blog', title: 'Roofing Insights & Industry News' },
     { path: '/contact', title: 'Contact Our Roofing Team' },
     { path: '/about-us', title: 'About All Phase Construction' },
+    { path: '/community', title: 'Community Involvement' },
     { path: '/roof-cost-calculator', title: 'Free Roof Replacement Cost Calculator | South Florida' },
     { path: '/how-to-hire-roofing-contractor', title: 'How to Hire a Roofing Contractor' },
     { path: '/frequently-asked-questions', title: 'Frequently Asked Questions' },
@@ -3798,6 +3851,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateLearningCenterHubContent();
     } else if (pagePath === '/frequently-asked-questions') {
       pageContent = generateFAQHubContent();
+    } else if (pagePath === '/community') {
+      pageContent = generateCommunityContent();
     } else if (pagePath === '/about-us') {
       pageContent = generateAboutHubContent();
     } else if (pagePath === '/roof-cost-calculator') {
