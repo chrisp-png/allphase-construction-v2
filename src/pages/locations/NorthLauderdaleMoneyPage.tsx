@@ -71,6 +71,7 @@ export default function NorthLauderdaleMoneyPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Built to Broward’s Toughest Wind Code</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">North Lauderdale is in Broward County, inside the legally-defined High-Velocity Hurricane Zone, so every roof here must meet Miami-Dade HVHZ code — the strictest wind standard in the country. On the city’s aging 1970s homes, that upgrade is exactly what keeps the roof on in a storm and what qualifies you for wind-mitigation insurance credits.</p>
             <p className="text-zinc-300 leading-relaxed mb-4">We build to HVHZ code on every job, with reinforced attachment and a code-current secondary water barrier, and we document every qualifying feature so your insurer can apply the savings.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">Some North Lauderdale homeowners also qualify for city grant money toward a new roof. See our <Link to="/blog/north-lauderdale-roof-grant" className="text-red-500 hover:text-red-400 underline">guide to the North Lauderdale roof grant</Link> for how the program works and what to look for in a contractor.</p>
           </div>
         </section>
 
