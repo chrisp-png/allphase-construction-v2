@@ -445,7 +445,7 @@ export default function RoofCalculator() {
             </div>
             <h2 className="text-3xl font-extrabold text-white mb-3">You're in!</h2>
             <p className="text-gray-400 text-lg mb-2">Your full insurance analysis is unlocked.</p>
-            <p className="text-gray-500 text-base">We'll also reach out within 60 minutes during business hours.</p>
+            <p className="text-gray-500 text-base">During business hours we respond right away; after hours, within the first 60 minutes of the next business day.</p>
             <div className="mt-6">
               <button onClick={() => goTo(6)} className="px-8 py-4 rounded-xl bg-green-600 text-white font-bold text-lg hover:bg-green-500 transition-all shadow-lg flex items-center gap-2 mx-auto">
                 Continue to Full Analysis <ChevronRight className="w-5 h-5" />
@@ -774,7 +774,7 @@ export default function RoofCalculator() {
               <Phone className="w-5 h-5" />Call (754) 227-5605
             </a>
           </div>
-          <p className="text-base text-gray-500">We respond within 60 minutes during business hours.</p>
+          <p className="text-base text-gray-500">During business hours we respond right away; after hours, within the first 60 minutes of the next business day.</p>
           <p className="text-amber-400 text-base mt-2">Plus, you'll get our free Insider's Guide the moment you schedule.</p>
         </div>
 
