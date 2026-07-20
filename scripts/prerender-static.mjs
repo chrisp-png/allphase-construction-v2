@@ -1991,6 +1991,10 @@ function generateCommunityContent() {
   <p>The No Fallen Heroes Foundation is a 501(c)(3) that supports veterans, first responders, and their families — funding healing retreats for the people who carried more than most of us will ever be asked to carry.</p>
   <p>Zoya volunteers her time with them, which is how we came to know their work. All Phase has made a donation to the foundation, and our goal is to fully sponsor a veteran through the program. We'll let them tell their own story — it's theirs to tell, and they tell it far better than we could. <a href="https://nofallenheroesfoundation.org/" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit the No Fallen Heroes Foundation</a>.</p>
 
+  <h2>Deerfield Beach Historical Society</h2>
+  <p>The Deerfield Beach Historical Society preserves the history of the city we've called home since day one. Working out of the historic Butler House, the Society keeps the city's archives, runs the Museum of Black History, and operates the only public art gallery in Deerfield Beach — the quiet, unglamorous work of keeping a community's memory intact.</p>
+  <p>We're a business member. When your company is named after the place it works, helping the people who protect that place's history isn't complicated — it's just right. <a href="https://deerfieldbeachhistoricalsociety.com" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">Visit the Deerfield Beach Historical Society</a>.</p>
+
   <h2>Why This Page Exists</h2>
   <p>Every roofer in South Florida will tell you they care about the community. This is the page where we have to be specific about it. Every organization above is linked, and every one of them can confirm we're on their sponsor list.</p>
   <p>If you run a local organization in Broward or Palm Beach County and think we'd be a good fit, we'd genuinely like to hear from you — call <strong>(754) 227-5605</strong> or email <strong>leads@allphaseusa.com</strong>. Learn more <a href="/about-us" style="color:#dc2626;text-decoration:underline;">about All Phase Construction USA</a>.</p>

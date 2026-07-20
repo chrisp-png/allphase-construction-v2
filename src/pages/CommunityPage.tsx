@@ -1,6 +1,6 @@
 import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
-import { Heart, Users, Award, Shield, Phone } from 'lucide-react';
+import { Heart, Users, Award, Shield, Phone, Landmark } from 'lucide-react';
 
 export default function CommunityPage() {
   return (
@@ -147,6 +147,32 @@ export default function CommunityPage() {
                 className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
               >
                 Visit the No Fallen Heroes Foundation →
+              </a>
+            </article>
+
+            {/* Deerfield Beach Historical Society */}
+            <article className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-7 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Landmark className="w-6 h-6 text-red-500 shrink-0" />
+                <h2 className="text-2xl font-bold text-white">Deerfield Beach Historical Society</h2>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                The Deerfield Beach Historical Society preserves the history of the city we've called home since
+                day one. Working out of the historic Butler House, the Society keeps the city's archives, runs the
+                Museum of Black History, and operates the only public art gallery in Deerfield Beach — the quiet,
+                unglamorous work of keeping a community's memory intact.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-5">
+                We're a business member. When your company is named after the place it works, helping the people
+                who protect that place's history isn't complicated — it's just right.
+              </p>
+              <a
+                href="https://deerfieldbeachhistoricalsociety.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-semibold transition-colors"
+              >
+                Visit the Deerfield Beach Historical Society →
               </a>
             </article>
 
