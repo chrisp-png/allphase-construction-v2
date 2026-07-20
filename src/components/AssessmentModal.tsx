@@ -87,7 +87,7 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
               <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg flex items-start gap-2">
                 <Clock className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-gray-700">
-                  <span className="font-semibold">We respond within 60 minutes</span> during business hours to find a time that works with your schedule for a free inspection.
+                  <span className="font-semibold">A real person answers 24/7.</span> We respond within 60 minutes during business hours to schedule your free inspection.
                 </p>
               </div>
             </div>

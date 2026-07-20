@@ -105,7 +105,7 @@ export default function PlantationMoneyPage() {
 
               <div className="inline-flex items-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium mb-4 border border-zinc-700">
                 <Clock className="w-4 h-4" />
-                OPEN 24/7 / 365 DAYS
+                WE ANSWER 24/7 / 365 DAYS
               </div>
 
               <div className="flex items-center gap-3 mb-6">
