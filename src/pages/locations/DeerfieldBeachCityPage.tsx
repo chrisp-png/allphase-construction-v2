@@ -274,7 +274,7 @@ export default function DeerfieldBeachCityPage() {
               <div className="flex items-start gap-3 mb-8 p-4 bg-gray-900/40 border-l-4 border-red-600 rounded">
                 <Clock className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white font-bold text-base">Open 24 hours, 7 days a week.</p>
+                  <p className="text-white font-bold text-base">Talk to a real person 24/7.</p>
                   <p className="text-gray-400 text-sm mt-1">A real All Phase team member answers any hour, any day.</p>
                 </div>
               </div>

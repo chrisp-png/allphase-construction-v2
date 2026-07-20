@@ -79,7 +79,7 @@ export default function HomePage() {
           <div className="flex items-start gap-4 justify-center text-center sm:text-left">
             <Clock className="w-6 h-6 text-red-500 flex-shrink-0 mt-1 hidden sm:block" />
             <div>
-              <p className="text-white font-bold text-lg sm:text-xl">Open 24 hours, 7 days a week.</p>
+              <p className="text-white font-bold text-lg sm:text-xl">Talk to a real person 24/7.</p>
               <p className="text-gray-400 text-sm sm:text-base mt-1">A real All Phase team member answers any hour, any day.</p>
             </div>
           </div>
@@ -856,7 +856,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center gap-1.5 text-gray-200">
                     <Clock className="w-4 h-4 text-red-500" />
-                    <span className="text-white font-semibold">Open 24/7</span>
+                    <span className="text-white font-semibold">Answered 24/7</span>
                   </div>
                 </div>
               </div>
