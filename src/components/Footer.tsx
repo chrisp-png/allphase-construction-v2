@@ -288,6 +288,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/free-roof-estimate/" className="hover:text-red-600 transition-colors">
+                  Free Roof Estimate
+                </Link>
+              </li>
+              <li>
                 <Link to="/blog/" className="hover:text-red-600 transition-colors">
                   Roofing Blog
                 </Link>

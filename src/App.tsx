@@ -26,6 +26,7 @@ const AssessmentModal = lazy(() => import('./components/AssessmentModal'));
 // HomePage lazy preserves the desktop-99 state from PR-52.
 const HomePage = lazy(() => import('./pages/HomePage'));
 const CalculatorPage = lazy(() => import('./pages/CalculatorPage'));
+const FreeRoofEstimatePage = lazy(() => import('./pages/FreeRoofEstimatePage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const CommunityPage = lazy(() => import('./pages/CommunityPage'));
@@ -236,6 +237,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/roof-cost-calculator" element={<CalculatorPage />} />
+            <Route path="/free-roof-estimate" element={<FreeRoofEstimatePage />} />
             <Route path="/calculator" element={<Navigate to="/roof-cost-calculator/" replace />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about-us" element={<AboutPage />} />
