@@ -99,6 +99,26 @@ export default function FortLauderdaleMoneyPage() {
                 Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
               </div>
 
+              <a
+                href="https://business.ftlchamber.com/directory/Details/all-phase-construction-usa-4910593"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 mb-8 group"
+                aria-label="All Phase Construction USA is a proud member of the Greater Fort Lauderdale Chamber of Commerce"
+              >
+                <img
+                  src="/greater-fort-lauderdale-chamber-member-all-phase-construction-usa.jpg"
+                  alt="All Phase Construction USA — Proud Member of the Greater Fort Lauderdale Chamber of Commerce"
+                  width={72}
+                  height={69}
+                  loading="lazy"
+                  className="rounded-md shadow-md"
+                />
+                <span className="text-sm text-zinc-400 group-hover:text-zinc-200 transition-colors max-w-[16rem] leading-snug">
+                  Proud member of the <span className="text-white font-semibold">Greater Fort Lauderdale Chamber of Commerce</span>
+                </span>
+              </a>
+
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
                   All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) serving {cityName}, FL with comprehensive roof replacement, roof repair, and roof inspection services. As a family-owned business based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to HVHZ wind code standards for {cityName} homes and commercial properties.
