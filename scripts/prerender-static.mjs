@@ -2215,6 +2215,8 @@ function generateFreeRoofEstimateContent() {
 
   <p><strong>All Phase Construction USA provides free, no-obligation roof estimates across Broward County and Palm Beach County.</strong> A licensed estimator comes to your home, measures and inspects the roof, and gives you a written, line-item quote &mdash; whether you need a full roof replacement estimate or a roof repair estimate. We are a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236) headquartered in Deerfield Beach, and we have quoted thousands of South Florida roofs since 2006.</p>
 
+  <img src="/projects/boca-raton-metal-crew-finishing-all-phase-usa.webp" alt="All Phase Construction USA crew finishing a standing-seam metal roof in Boca Raton" width="1600" height="1200" style="width:100%;height:auto;border-radius:8px;margin:1rem 0;" />
+
   <h2>What Your Free Roof Estimate Includes</h2>
   <ul style="line-height:1.75;margin-bottom:1.5rem;">
     <li><strong>A full on-roof inspection</strong> &mdash; covering, flashing, valleys, penetrations, decking, and roof-to-wall connections.</li>
@@ -2223,6 +2225,9 @@ function generateFreeRoofEstimateContent() {
     <li><strong>A straight repair-or-replace answer.</strong> If a repair will solve the problem, we will tell you so.</li>
     <li><strong>Financing options</strong> if you want to spread the cost into monthly payments.</li>
   </ul>
+
+  <img src="/projects/attic-inspection-in-davie-fl-found-leaks-not-detected-from-the-roof-all-phase-usa.webp" alt="Attic inspection in Davie FL revealing roof leaks not visible from the roof surface" width="1440" height="1080" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:1rem 0;" />
+  <p><em>From a real photo report: an attic inspection in Davie that found leaks invisible from the roof surface.</em></p>
 
   <h2>How to Get Your Roof Estimate</h2>
   <p>Getting a roofing estimate from us is simple, and there is never a charge or obligation:</p>

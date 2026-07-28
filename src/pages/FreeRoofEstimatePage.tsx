@@ -45,7 +45,7 @@ export default function FreeRoofEstimatePage() {
               <span>150+ Reviews</span><span className="text-red-400">·</span>
               <span>Dual-Licensed Since 2006</span>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
                 <Phone className="w-6 h-6" /> (754) 227-5605
               </a>
@@ -53,18 +53,45 @@ export default function FreeRoofEstimatePage() {
                 <FileCheck className="w-6 h-6" /> Request Estimate Online
               </Link>
             </div>
+            <figure className="rounded-xl overflow-hidden border border-zinc-800 shadow-2xl">
+              <img
+                src="/projects/boca-raton-metal-crew-finishing-all-phase-usa.webp"
+                alt="All Phase Construction USA crew finishing a standing-seam metal roof in Boca Raton during a roof estimate project"
+                width={1600}
+                height={1200}
+                className="w-full h-auto object-cover"
+              />
+              <figcaption className="bg-zinc-900/80 px-4 py-2 text-sm text-zinc-400">
+                Our crew on a standing-seam metal roof in Boca Raton — the same licensed team that performs your estimate.
+              </figcaption>
+            </figure>
           </div>
         </section>
 
         <section className="py-16 px-4 bg-[#27272a]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">What Your Free Roof Estimate Includes</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-5 text-lg text-zinc-300">
               <div className="flex items-start gap-4"><Camera className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">A full on-roof inspection.</span> Covering, flashing, valleys, penetrations, decking, and roof-to-wall connections.</p></div>
               <div className="flex items-start gap-4"><Camera className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">A photo report.</span> You see the real condition of your roof, documented.</p></div>
               <div className="flex items-start gap-4"><ClipboardList className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">A written, line-item quote.</span> Materials, labor, tear-off, permits, and code components broken out — not a vague one-number price.</p></div>
               <div className="flex items-start gap-4"><CheckCircle2 className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">A straight repair-or-replace answer.</span> If a repair will solve the problem, we tell you so.</p></div>
               <div className="flex items-start gap-4"><Shield className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">Financing options.</span> Spread the cost into manageable monthly payments if you want to.</p></div>
+            </div>
+            <figure className="rounded-xl overflow-hidden border border-zinc-800">
+              <img
+                src="/projects/attic-inspection-in-davie-fl-found-leaks-not-detected-from-the-roof-all-phase-usa.webp"
+                alt="Attic inspection in Davie FL revealing water-stained roof decking and leaks not visible from the roof surface"
+                width={1440}
+                height={1080}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+              <figcaption className="bg-zinc-900/80 px-4 py-2 text-sm text-zinc-400">
+                From a real photo report: attic inspection in Davie that found leaks invisible from the roof surface. This is why we look everywhere.
+              </figcaption>
+            </figure>
             </div>
           </div>
         </section>
@@ -102,6 +129,19 @@ export default function FreeRoofEstimatePage() {
 
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <figure className="rounded-xl overflow-hidden border border-zinc-800 mb-10 text-left">
+              <img
+                src="/projects/boca-raton-shingle-roof-inspection-by-all-phase-usa.webp"
+                alt="All Phase Construction USA branded van arriving at a South Florida home for a free roof inspection and estimate"
+                width={1440}
+                height={810}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+              <figcaption className="bg-zinc-900/80 px-4 py-2 text-sm text-zinc-400">
+                This is who shows up: a marked All Phase truck and a licensed estimator — never a subcontracted salesman.
+              </figcaption>
+            </figure>
             <h2 className="text-3xl font-bold mb-4">Request Your Free Roof Estimate</h2>
             <p className="text-lg text-zinc-300 mb-8 max-w-2xl mx-auto">Serving Deerfield Beach, Boca Raton, Fort Lauderdale, and every community across Broward &amp; Palm Beach County. No charge, no obligation.</p>
             <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
