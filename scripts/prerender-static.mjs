@@ -2201,7 +2201,48 @@ function generateRoofReplacementCostFloridaContent() {
   <p>A standard roofing license (CCC) only covers the roof covering. When tear-off reveals damaged trusses, failed roof-to-wall connections, or rotted fascia, a roofing-only contractor has to bring in a separate general contractor — adding cost and delay. Because we hold both the roofing (CCC-1331464) and general contractor (CGC-1526236) licenses, we handle the structural work and the roof under one contract, one crew, and one warranty. No change-order surprises from a second trade.</p>
 
   <h2>Get an Exact Number for Your Roof</h2>
-  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or call <strong>(754) 227-5605</strong> for a free in-person measurement and a written, line-item quote. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides, or our <a href="/blog/tile-roof-cost-florida-2026" style="color:#dc2626;text-decoration:underline;">2026 tile roof cost guide</a>. Weighing a repair against a replacement? Our <a href="/blog/what-is-25-percent-rule-roofing-florida" style="color:#dc2626;text-decoration:underline;">guide to Florida's 25% roof rule</a> explains when a partial repair triggers full code compliance.</p>
+  <p>Every roof is different. Use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free Roof Cost Calculator</a> for an instant ballpark, or book a <a href="/free-roof-estimate" style="color:#dc2626;text-decoration:underline;">free roof estimate</a> for a free in-person measurement and a written, line-item quote. Call <strong>(754) 227-5605</strong>. Prefer to read first? See our <a href="/broward-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Broward County</a> and <a href="/palm-beach-county-roof-replacement-guide" style="color:#dc2626;text-decoration:underline;">Palm Beach County</a> replacement guides, or our <a href="/blog/tile-roof-cost-florida-2026" style="color:#dc2626;text-decoration:underline;">2026 tile roof cost guide</a>. Weighing a repair against a replacement? Our <a href="/blog/what-is-25-percent-rule-roofing-florida" style="color:#dc2626;text-decoration:underline;">guide to Florida's 25% roof rule</a> explains when a partial repair triggers full code compliance.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
+function generateFreeRoofEstimateContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Free Roof Estimate in Broward &amp; Palm Beach County</h1>
+
+  <p><strong>All Phase Construction USA provides free, no-obligation roof estimates across Broward County and Palm Beach County.</strong> A licensed estimator comes to your home, measures and inspects the roof, and gives you a written, line-item quote &mdash; whether you need a full roof replacement estimate or a roof repair estimate. We are a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236) headquartered in Deerfield Beach, and we have quoted thousands of South Florida roofs since 2006.</p>
+
+  <h2>What Your Free Roof Estimate Includes</h2>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>A full on-roof inspection</strong> &mdash; covering, flashing, valleys, penetrations, decking, and roof-to-wall connections.</li>
+    <li><strong>A photo report</strong> of anything we find, so you see the condition of your roof for yourself.</li>
+    <li><strong>A written, line-item quote</strong> &mdash; materials, labor, tear-off, permits, and code components broken out, not a vague one-number price.</li>
+    <li><strong>A straight repair-or-replace answer.</strong> If a repair will solve the problem, we will tell you so.</li>
+    <li><strong>Financing options</strong> if you want to spread the cost into monthly payments.</li>
+  </ul>
+
+  <h2>How to Get Your Roof Estimate</h2>
+  <p>Getting a roofing estimate from us is simple, and there is never a charge or obligation:</p>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>1. Request your estimate.</strong> Call or text <strong>(754) 227-5605</strong>, or request one online. A live person answers 24/7.</li>
+    <li><strong>2. We measure and inspect.</strong> A licensed estimator visits your home, usually within a few business days, and evaluates the full roof system.</li>
+    <li><strong>3. You get a written quote.</strong> We deliver a clear, line-item estimate you can actually compare &mdash; no high-pressure sales pitch.</li>
+  </ul>
+
+  <h2>Roof Repair Estimate vs. Roof Replacement Estimate</h2>
+  <p>Not every roof needs to be replaced. When you request an estimate, we assess whether a targeted repair is the honest answer or whether a full replacement is the better long-term investment. For a <strong>roof repair estimate</strong>, we scope the specific leak or damage and price the fix. For a <strong>roof replacement estimate</strong>, we quote a complete tear-off and re-roof built to South Florida&rsquo;s High-Velocity Hurricane Zone (HVHZ) code. Either way, the estimate is free and the recommendation is honest.</p>
+
+  <h2>Why Our Estimate Is Different</h2>
+  <p>Because we hold both the roofing (CCC-1331464) and general contractor (CGC-1526236) licenses, our estimate accounts for the whole system &mdash; including structural issues like rotted decking or failed connections that a roofing-only contractor would have to hand off to a second company mid-project. That means fewer change-order surprises after the work starts, and one contract, one crew, and one warranty for the entire scope.</p>
+
+  <h2>Want a Ballpark First?</h2>
+  <p>If you would like a rough number before scheduling an in-person estimate, use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free roof cost calculator</a> for an instant range, or read our <a href="/roof-replacement-cost-florida" style="color:#dc2626;text-decoration:underline;">Florida roof replacement cost guide</a>. When you are ready for real numbers, a written estimate is the only way to know exactly what your roof will cost. Need a repair scoped? See our <a href="/roof-repair" style="color:#dc2626;text-decoration:underline;">roof repair services</a>.</p>
+
+  <h2>Request Your Free Roof Estimate</h2>
+  <p>All Phase Construction USA serves Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Boynton Beach, Delray Beach, West Palm Beach, Wellington, and every community across Broward and Palm Beach County. Call or text <strong>(754) 227-5605</strong> for your free, no-obligation roof estimate, or <a href="/contact" style="color:#dc2626;text-decoration:underline;">request one online</a>.</p>
 
   ${companyAuthorityFooter()}
 </section>
@@ -3301,6 +3342,19 @@ async function generateStaticFiles() {
   // Matches what React components render client-side
   // ============================================================
   const SERVICE_PAGE_SCHEMAS = {
+    '/free-roof-estimate': {
+      faqs: [
+        { question: 'Is a roof estimate really free?', answer: 'Yes. All Phase Construction USA provides free, no-obligation roof estimates throughout Broward County and Palm Beach County. There is no charge for the inspection, the measurement, or the written quote, and no obligation to move forward.' },
+        { question: 'How long does it take to get a roof estimate?', answer: 'After you call or text (754) 227-5605, a licensed estimator typically visits your home within a few business days. You receive a written, line-item estimate you can compare, usually within a day or two of the visit.' },
+        { question: 'Do you give written roof estimates?', answer: 'Yes. Every estimate is delivered in writing with materials, labor, tear-off, permits, and code components itemized, so you can see exactly what drives the price rather than a single vague number.' },
+        { question: 'Can I get an estimate for a roof repair, not just a replacement?', answer: 'Yes. We provide both roof repair estimates and roof replacement estimates. If a targeted repair will solve the problem, we will tell you so honestly rather than push a full replacement.' },
+        { question: 'What areas do you provide free roof estimates in?', answer: 'We provide free roof estimates across Broward County and Palm Beach County from our Deerfield Beach headquarters, including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Boynton Beach, Delray Beach, West Palm Beach, and Wellington.' }
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Free Roof Estimate', url: 'https://allphaseconstructionfl.com/free-roof-estimate' }
+      ]
+    },
     '/team/chris-porosky': {
       directSchema: [
         {
@@ -3768,6 +3822,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/boca-raton-roof-replacement-guide', title: 'Boca Raton Roof Replacement Guide' },
     { path: '/florida-roof-insurance-claims-guide', title: 'Florida Roof Insurance Claims Guide' },
     { path: '/roof-replacement-cost-florida', title: 'Roof Replacement Cost in Florida' },
+    { path: '/free-roof-estimate', title: 'Free Roof Estimate' },
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
     { path: '/south-florida-roofing-reviews', title: 'South Florida Roofing Reviews' },
@@ -3870,6 +3925,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateReviewsHubContent();
     } else if (pagePath === '/roof-replacement-cost-florida') {
       pageContent = generateRoofReplacementCostFloridaContent();
+    } else if (pagePath === '/free-roof-estimate') {
+      pageContent = generateFreeRoofEstimateContent();
     } else if (pagePath === '/metal-roofing') {
       pageContent = generateMetalRoofingContent();
     } else if (pagePath === '/projects') {
