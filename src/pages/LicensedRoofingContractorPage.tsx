@@ -28,7 +28,7 @@ const faqData = [
   },
   {
     question: 'Why do licensed roofers cost more than unlicensed ones?',
-    answer: 'Licensed roofers carry higher overhead because they maintain insurance, pull permits, use code-compliant materials, pay for inspections, and stand behind manufacturer warranty requirements. Unlicensed contractors skip all of these, which is why their prices look lower upfront. But the hidden costs — failed inspections, voided insurance claims, no warranty, potential structural damage, and legal liability — typically far exceed the "savings." In South Florida\'s HVHZ, an improperly installed roof can also become a life-safety hazard during hurricanes.'
+    answer: 'Licensed roofers carry higher overhead because they maintain insurance, pull permits, use code-compliant materials, pay for inspections, and stand behind manufacturer warranty requirements. Unlicensed contractors skip all of these, which is why their prices look lower upfront. But the hidden costs — failed inspections, no enforceable warranty, potential structural damage, and legal liability — typically far exceed the "savings." In South Florida\'s HVHZ, an improperly installed roof can also become a life-safety hazard during hurricanes.'
   }
 ];
 
@@ -36,8 +36,8 @@ export default function LicensedRoofingContractorPage() {
   return (
     <>
       <SEO
-        title="Licensed Roofing Contractor FL | CCC & CGC | All Phase"
-        description="Florida dual-licensed roofing and general contractor. CCC-1331464 + CGC-1526236. HVHZ-certified, serving Broward & Palm Beach since 2006."
+        title="Licensed & Certified Roofing Contractor | Verify FL License"
+        description="Licensed & certified roofing contractor for Broward & Palm Beach (CCC-1331464, CGC-1526236). How to verify any Florida roofer's license, plus red flags."
         canonicalUrl="https://allphaseconstructionfl.com/licensed-roofing-contractor"
       />
       <Helmet>

@@ -2249,6 +2249,51 @@ function generateFreeRoofEstimateContent() {
 `.trim();
 }
 
+function generateLicensedRoofingContractorContent() {
+  return `
+<section id="seo-static-content">
+  <h1>Licensed &amp; Certified Roofing Contractor in South Florida</h1>
+
+  <p><strong>All Phase Construction USA is a Florida State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236)</strong> serving Broward County and Palm Beach County from Deerfield Beach since 2006. This page explains what a roofing license actually covers, how to verify any Florida roofer&rsquo;s license in under two minutes, and the red flags that separate a certified roofing contractor from an unlicensed operator.</p>
+
+  <h2>How to Verify a Florida Roofing Contractor&rsquo;s License</h2>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li><strong>1. Go to the state database.</strong> The Florida DBPR license search at <a href="https://www.myfloridalicense.com/wl11.asp" target="_blank" rel="noopener" style="color:#dc2626;text-decoration:underline;">MyFloridaLicense.com</a> is the only authoritative source.</li>
+    <li><strong>2. Search the company name or license number.</strong> Confirm the license is <strong>Active</strong> &mdash; not expired, suspended, or revoked &mdash; and check for disciplinary history.</li>
+    <li><strong>3. Match the name on the license to the name on your proposal.</strong> The license must belong to the company you are contracting with &mdash; not a salesperson, and not a different entity "pulling the permit."</li>
+    <li><strong>4. Ask for proof of insurance.</strong> A legitimate contractor carries general liability coverage and workers&rsquo; compensation, and will provide certificates on request.</li>
+  </ul>
+  <p>Our own licenses are verifiable right now: <strong>CCC-1331464</strong> (Certified Roofing Contractor) and <strong>CGC-1526236</strong> (Certified General Contractor).</p>
+
+  <h2>CCC vs. CGC: What Each License Covers</h2>
+  <p>A <strong>CCC (Certified Roofing Contractor)</strong> license authorizes roof work — installation, repair, and replacement of the roof covering system. A <strong>CGC (Certified General Contractor)</strong> license authorizes structural work: framing, trusses, decking, and load-bearing components. Most roofers hold only the CCC. That matters because tear-offs in South Florida routinely uncover rotted decking or failed roof-to-wall connections — and a roofing-only contractor must legally stop and bring in a separate general contractor to touch them. Because All Phase holds <strong>both licenses</strong>, we repair the structure and the roof under one contract, one crew, and one warranty.</p>
+
+  <h2>Why Licensing Matters in the HVHZ</h2>
+  <p>Broward County is a legal High-Velocity Hurricane Zone &mdash; the strictest roofing code in the country &mdash; and we voluntarily build Palm Beach County roofs to the same specification. Licensed contractors must pull permits, use products with Florida approvals rated for our wind zone, and pass municipal inspections at every stage. In Florida, roofing without a license is illegal for any job over $1,000: no permit, no inspections, no enforceable warranty, and potential homeowner liability if a worker is hurt on your property.</p>
+
+  <h2>Red Flags to Watch For</h2>
+  <ul style="line-height:1.75;margin-bottom:1.5rem;">
+    <li>Asks you to skip the permit or "doesn&rsquo;t need one."</li>
+    <li>License number missing from the proposal, contract, or truck.</li>
+    <li>Wants large cash payments up front.</li>
+    <li>The license belongs to someone other than the company on your contract.</li>
+    <li>No verifiable local address or history &mdash; common with storm chasers who leave town after hurricane season.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+  <p><strong>What is the difference between a licensed and unlicensed roofer in Florida?</strong><br>A licensed roofer holds a state-issued CCC license, passed the state exam, carries required coverage, and answers to the Construction Industry Licensing Board. Unlicensed operators work illegally on any job over $1,000 &mdash; no permit, no inspection, and no warranty enforcement.</p>
+  <p><strong>How do I verify a roofing license?</strong><br>Search the company at MyFloridaLicense.com and confirm an Active status. Ours are CCC-1331464 and CGC-1526236.</p>
+  <p><strong>Is a certified roofing contractor different from a registered one?</strong><br>Yes. A <em>certified</em> contractor (license starts with "C," like CCC or CGC) passed the state exam and can work anywhere in Florida. A <em>registered</em> contractor is limited to specific local jurisdictions. All Phase holds state <em>certified</em> licenses in both roofing and general contracting.</p>
+  <p><strong>Does every roof job need a permit?</strong><br>Yes &mdash; Florida law requires permits for roofing work, with inspections at key stages. A contractor who suggests skipping the permit is cutting corners.</p>
+
+  <h2>Work With a Dual-Licensed, Certified Contractor</h2>
+  <p>If you want the license verified before we ever climb a ladder, we encourage it &mdash; look us up, then call <strong>(754) 227-5605</strong>. Learn <a href="/how-to-hire-roofing-contractor" style="color:#dc2626;text-decoration:underline;">how to hire a roofing contractor</a>, schedule a <a href="/roof-inspection" style="color:#dc2626;text-decoration:underline;">free roof inspection</a>, or ballpark your project with the <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">roof cost calculator</a>.</p>
+
+  ${companyAuthorityFooter()}
+</section>
+`.trim();
+}
+
 /**
  * /metal-roofing — service-page content (PR-147). NO insurance language.
  */
@@ -3355,6 +3400,20 @@ async function generateStaticFiles() {
         { name: 'Free Roof Estimate', url: 'https://allphaseconstructionfl.com/free-roof-estimate' }
       ]
     },
+    '/licensed-roofing-contractor': {
+      faqs: [
+        { question: 'What is the difference between a licensed and unlicensed roofer in Florida?', answer: 'A licensed roofer holds a state-issued Certified Roofing Contractor (CCC) license from the Florida DBPR, meaning they passed the state exam, carry required insurance, and are accountable to the Construction Industry Licensing Board. Unlicensed roofers operate illegally for any job over $1,000 in Florida. Using an unlicensed roofer means no permit, no inspection, no warranty enforcement, and potential personal liability for worksite injuries.' },
+        { question: 'How do I verify a Florida roofing contractor\u2019s license?', answer: 'Visit the Florida DBPR website at myfloridalicense.com/wl11.asp and search by name or license number. Look for an Active status, verify their insurance is current, and check for any disciplinary actions. For All Phase Construction USA, our Certified Roofing Contractor license is CCC-1331464 and our Certified General Contractor license is CGC-1526236 \u2014 both verifiable on the DBPR database.' },
+        { question: 'What is a CCC license vs a CGC license in Florida?', answer: 'A CCC (Certified Roofing Contractor) license authorizes a contractor to perform roofing work \u2014 installation, repair, and replacement of roof systems. A CGC (Certified General Contractor) license authorizes structural work including framing, trusses, decking, and load-bearing components. Most roofers only hold a CCC. All Phase Construction USA holds both, which means we can address structural issues found during a roof replacement without subcontracting to a separate general contractor.' },
+        { question: 'Does Florida require roofing contractors to pull permits?', answer: 'Yes. Florida law requires permits for all roofing work. The permit ensures the project is inspected at key stages and meets Florida Building Code requirements, including HVHZ standards in Broward and Miami-Dade Counties. A contractor who suggests skipping the permit is either unlicensed or cutting corners \u2014 both are red flags. All Phase handles all permitting and scheduling of municipal inspections on every project.' },
+        { question: 'What insurance should a licensed roofer carry in Florida?', answer: 'At minimum, a licensed Florida roofing contractor should carry general liability insurance (typically $1 million+) and workers\u2019 compensation insurance. Without workers\u2019 comp, the homeowner can be held liable for injuries sustained by workers on their property. All Phase Construction USA maintains full general liability and workers\u2019 compensation coverage, which we provide documentation for upon request.' },
+        { question: 'Why do licensed roofers cost more than unlicensed ones?', answer: 'Licensed roofers carry higher overhead because they maintain insurance, pull permits, use code-compliant materials, pay for inspections, and stand behind manufacturer warranty requirements. Unlicensed contractors skip all of these, which is why their prices look lower upfront. But the hidden costs \u2014 failed inspections, no enforceable warranty, potential structural damage, and legal liability \u2014 typically far exceed the savings. In South Florida\u2019s HVHZ, an improperly installed roof can also become a life-safety hazard during hurricanes.' }
+      ],
+      breadcrumbs: [
+        { name: 'Home', url: 'https://allphaseconstructionfl.com/' },
+        { name: 'Licensed Roofing Contractor', url: 'https://allphaseconstructionfl.com/licensed-roofing-contractor' }
+      ]
+    },
     '/team/chris-porosky': {
       directSchema: [
         {
@@ -3927,6 +3986,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateRoofReplacementCostFloridaContent();
     } else if (pagePath === '/free-roof-estimate') {
       pageContent = generateFreeRoofEstimateContent();
+    } else if (pagePath === '/licensed-roofing-contractor') {
+      pageContent = generateLicensedRoofingContractorContent();
     } else if (pagePath === '/metal-roofing') {
       pageContent = generateMetalRoofingContent();
     } else if (pagePath === '/projects') {
