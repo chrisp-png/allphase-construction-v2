@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { trackLeadConversion } from '../utils/leadConversion';
 
 interface CalculatorLeadCaptureProps {
   isOpen: boolean;
@@ -59,6 +60,7 @@ export default function CalculatorLeadCapture({
         return;
       }
 
+      trackLeadConversion('calculator-lead-capture');
       onSubmit();
     } catch (err) {
       console.error('Error submitting lead:', err);

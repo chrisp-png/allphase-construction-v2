@@ -1,4 +1,5 @@
 import { Phone, Clock, CheckCircle, Award, Users, Star, Flame, MapPin } from 'lucide-react';
+import { interceptLeadSubmit } from '../utils/leadConversion';
 import { useState, useEffect } from 'react';
 import AISearchRail from './AISearchRail';
 import { useAssessmentModal } from '../context/AssessmentModalContext';
@@ -264,7 +265,7 @@ export default function HeroRoofing() {
             </div>
 
             <form
-              action="https://formspree.io/f/mojakkld"
+              onSubmit={(e) => interceptLeadSubmit(e, 'hero-roof-inspection')} action="https://formspree.io/f/mojakkld"
               method="POST"
               className="space-y-4"
             >
