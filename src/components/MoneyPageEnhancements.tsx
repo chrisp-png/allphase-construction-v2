@@ -137,7 +137,7 @@ export default function MoneyPageEnhancements({
           <span>150+ reviews</span>
         </div>
         <form
-          action="https://formspree.io/f/mojakkld"
+          onSubmit={(e) => interceptLeadSubmit(e, 'money-page-assessment')} action="https://formspree.io/f/mojakkld"
           method="POST"
           className="space-y-2"
         >

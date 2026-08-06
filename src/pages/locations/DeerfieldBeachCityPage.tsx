@@ -8,6 +8,7 @@
  */
 
 import { useEffect, useState, type ReactNode } from 'react';
+import { interceptLeadSubmit } from '../../utils/leadConversion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import AtomicAnswer from '../../components/AtomicAnswer';
@@ -306,7 +307,7 @@ export default function DeerfieldBeachCityPage() {
                 HVHZ-compliant roof repair and replacement in Broward & Palm Beach Counties.
               </p>
 
-              <form action="https://formspree.io/f/mzdbydvv" method="POST" className="space-y-4">
+              <form onSubmit={(e) => interceptLeadSubmit(e, 'deerfield-city-form')} action="https://formspree.io/f/mzdbydvv" method="POST" className="space-y-4">
               <input type="hidden" name="source_page" value="Deerfield Beach Location Page" />
               <input type="hidden" name="_subject" value="🏠 Deerfield Beach Hero Form Submission" />
 

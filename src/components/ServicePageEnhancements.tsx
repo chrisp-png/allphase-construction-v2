@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { interceptLeadSubmit } from '../utils/leadConversion';
 
 interface ServicePageEnhancementsProps {
   serviceName: string;
@@ -122,7 +123,7 @@ export default function ServicePageEnhancements({
           <span className="text-gray-400">·</span>
           <span>150+ reviews</span>
         </div>
-        <form action="https://formspree.io/f/mojakkld" method="POST" className="space-y-2">
+        <form onSubmit={(e) => interceptLeadSubmit(e, 'service-page-assessment')} action="https://formspree.io/f/mojakkld" method="POST" className="space-y-2">
           <input type="hidden" name="source" value={`service-page-sticky-${serviceSlug}`} />
           <input type="hidden" name="state" value="FL" />
           <input type="hidden" name="service" value={serviceName} />

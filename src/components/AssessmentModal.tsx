@@ -1,4 +1,5 @@
 import { X, Clock, CheckCircle, Flame } from 'lucide-react';
+import { interceptLeadSubmit } from '../utils/leadConversion';
 import { useState, useEffect } from 'react';
 
 interface AssessmentModalProps {
@@ -93,7 +94,7 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
             </div>
 
             <form
-              action="https://formspree.io/f/mojakkld"
+              onSubmit={(e) => interceptLeadSubmit(e, 'assessment-modal')} action="https://formspree.io/f/mojakkld"
               method="POST"
               className="space-y-4"
             >

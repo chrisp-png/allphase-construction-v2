@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { trackLeadConversion } from '../utils/leadConversion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
@@ -20,13 +21,15 @@ export default function Contact() {
     e.preventDefault();
 
     const formElement = e.target as HTMLFormElement;
-    await fetch(formElement.action, {
+    const response = await fetch(formElement.action, {
       method: 'POST',
       body: new FormData(formElement),
       headers: {
         'Accept': 'application/json'
       }
     });
+
+    if (response.ok) trackLeadConversion('contact-section');
 
     setSubmitted(true);
     setTimeout(() => {

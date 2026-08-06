@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { interceptLeadSubmit } from '../utils/leadConversion';
 import { useLocation } from 'react-router-dom';
 import { X, CheckCircle } from 'lucide-react';
 
@@ -115,7 +116,7 @@ export default function ExitIntentPopup() {
           </div>
 
           <form
-            action="https://formspree.io/f/mregrayb"
+            onSubmit={(e) => interceptLeadSubmit(e, 'exit-intent-popup')} action="https://formspree.io/f/mregrayb"
             method="POST"
             className="space-y-4"
           >
