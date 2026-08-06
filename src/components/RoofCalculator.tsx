@@ -866,16 +866,16 @@ export default function RoofCalculator() {
 
         {/* Wizard Card */}
         <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-6 sm:p-10 shadow-[0_0_80px_rgba(0,0,0,0.4)]">
-          {step === 1 && <Step1 />}
-          {step === 2 && <Step2 />}
-          {step === 3 && <Step3 />}
-          {step === 4 && <Step4 />}
-          {step === 5 && <Step5 />}
-          {step === 6 && <Step6 />}
-          {step === 7 && <Step7 />}
-          {step === 8 && <Step8 />}
-          {step === 9 && <Step9 />}
-          {step === 10 && <Step10 />}
+          {step === 1 && Step1()}
+          {step === 2 && Step2()}
+          {step === 3 && Step3()}
+          {step === 4 && Step4()}
+          {step === 5 && Step5()}
+          {step === 6 && Step6()}
+          {step === 7 && Step7()}
+          {step === 8 && Step8()}
+          {step === 9 && Step9()}
+          {step === 10 && Step10()}
         </div>
       </div>
 
