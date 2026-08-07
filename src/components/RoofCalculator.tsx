@@ -395,6 +395,16 @@ export default function RoofCalculator() {
           <p className="text-gray-400 text-base max-w-xl mx-auto">Most homeowners never find this out until it's too late.</p>
         </div>
 
+        {/* PR-193: the hook leads — setup, then the number pays it off */}
+        <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-5 mb-6 text-center max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 leading-relaxed">
+            The cost of your roof isn&rsquo;t just what you pay the roofer — it&rsquo;s what you&rsquo;ll pay in{' '}
+            <strong className="text-white">insurance premiums every year after</strong>. Two homeowners on the same
+            street can pay <strong className="text-amber-400">thousands apart</strong> in annual premiums based on
+            how their roof was installed.
+          </p>
+        </div>
+
         {/* The big reveal */}
         <div className="bg-gradient-to-br from-green-900/20 to-slate-800/40 border-2 border-green-600/20 rounded-2xl p-8 mb-6 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-green-500 mb-3">Your Estimated Insurance Savings</p>
@@ -419,13 +429,8 @@ export default function RoofCalculator() {
           </div>
         </div>
 
-        {/* The cliffhanger */}
-        <div className="bg-amber-600/5 border border-amber-600/15 rounded-xl p-5 mb-2 text-center">
-          <p className="text-base text-gray-300 leading-relaxed">
-            The cost of your roof isn't just what you pay the roofer — it's what you'll pay in <strong className="text-white">insurance premiums every year after</strong>. Two homeowners on the same street can pay <strong className="text-amber-400">thousands apart</strong> in annual premiums based on how their roof was installed.
-          </p>
-          <p className="text-base text-gray-500 mt-3">Want to see exactly why — and how the math actually works?</p>
-        </div>
+        {/* Teaser — hands off to the CTA */}
+        <p className="text-base text-gray-400 text-center mb-3">Want to see exactly why — and how the math actually works?</p>
 
         <NavButtons back={3} next={5} nextLabel="Show Me the Full Breakdown" nextGlow />
       </div>
