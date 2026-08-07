@@ -336,7 +336,11 @@ export default function RoofCalculator() {
             <span className="text-sm font-semibold text-gray-300">{selectedSize.sqft.toLocaleString()} sq ft &middot; {selectedType.name}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">Your Roof Estimate</h2>
-          <p className="text-base text-gray-400">Three tiers — from code-minimum to insurance-optimized.</p>
+          <p className="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto leading-snug">
+            Every range below runs from a <span className="text-red-400 font-bold">code-minimum build</span> (low end)
+            to an <span className="text-green-400 font-bold">insurance-optimized build</span> (high end) &mdash; same
+            roof, <span className="text-white font-semibold">very different insurance bills</span>.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-5 mb-6">
@@ -370,8 +374,9 @@ export default function RoofCalculator() {
 
         {/* Pricing footnote */}
         <div className="bg-slate-900/40 border border-slate-700/40 rounded-xl p-4 text-center mb-2">
-          <p className="text-sm text-gray-500">
-            <strong className="text-gray-400">Why the range?</strong> Low end = code-minimum. High end = insurance-optimized with HVHZ compliance & full wind mitigation. Your free inspection tells you which approach is right.
+          <p className="text-base text-gray-300">
+            Your <span className="text-white font-semibold">free inspection</span> tells you exactly where on the range{' '}
+            <em>your</em> roof lands &mdash; and which upgrades earn the insurance discounts.
           </p>
         </div>
 
