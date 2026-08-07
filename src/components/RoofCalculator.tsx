@@ -857,8 +857,40 @@ export default function RoofCalculator() {
             <span className="text-red-500 text-sm font-semibold uppercase tracking-wide">Free South Florida Roof Estimate Tool</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3">South Florida Roof Cost Calculator</h1>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-2">Get a free roof replacement estimate for Broward &amp; Palm Beach County, Florida in under 30 seconds — no signup required.</p>
-          <p className="text-sm text-gray-500 max-w-2xl mx-auto">2026 Florida roofing calculator with HVHZ-compliant pricing for shingle, tile, metal &amp; flat roof systems across South Florida.</p>
+          {/* PR-190: step-aware header — sell ease before the price, frame the
+              range at the price, never repeat the pitch after it. */}
+          {step <= 2 ? (
+            <>
+              <p className="text-xl sm:text-2xl font-bold text-white max-w-2xl mx-auto mb-2">
+                Get a free roof replacement estimate for Broward &amp; Palm Beach County in{' '}
+                <span className="text-green-400">under 30 seconds</span> —{' '}
+                <span className="text-green-400">no signup required</span>.
+              </p>
+              <p className="text-sm text-gray-500 max-w-2xl mx-auto">2026 Florida roofing calculator with HVHZ-compliant pricing for shingle, tile, metal &amp; flat roof systems across South Florida.</p>
+            </>
+          ) : step === 3 ? (
+            <>
+              <p className="text-xl sm:text-2xl font-bold text-amber-400 max-w-2xl mx-auto mb-2">
+                Here&rsquo;s your range below — real 2026 Broward &amp; Palm Beach pricing.
+              </p>
+              <p className="text-base text-gray-300 max-w-2xl mx-auto">
+                Want an exact number? We&rsquo;ll come out for a{' '}
+                <span className="text-white font-semibold">free, no-obligation inspection</span>. Keep going to
+                see how much the right upgrades can save you on insurance.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-xl sm:text-2xl font-bold text-emerald-400 max-w-2xl mx-auto mb-2">
+                You&rsquo;ve got your range — now see what it can save you.
+              </p>
+              <p className="text-base text-gray-300 max-w-2xl mx-auto">
+                Insurance savings, financing math, and a{' '}
+                <span className="text-white font-semibold">free, no-obligation inspection</span> whenever
+                you&rsquo;re ready.
+              </p>
+            </>
+          )}
         </div>
 
         {/* Progress Bar */}
