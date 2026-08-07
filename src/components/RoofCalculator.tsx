@@ -186,7 +186,6 @@ export default function RoofCalculator() {
           <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
             {phaseLabels[phase - 1]}
           </span>
-          <span className="text-xs text-gray-600 ml-2">Step {step} of 10</span>
         </div>
 
         {/* Progress track */}
@@ -411,7 +410,7 @@ export default function RoofCalculator() {
           <p className="text-5xl sm:text-6xl font-extrabold text-white mb-2">
             {formatPrice(saveLo)} – {formatPrice(saveHi)}
           </p>
-          <p className="text-lg text-gray-400">over the life of your roof</p>
+          <p className="text-xl sm:text-2xl font-semibold text-white">over the next 20&ndash;25 years of your roof&rsquo;s life</p>
 
           <div className="mt-6 pt-6 border-t border-white/5">
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
@@ -609,7 +608,7 @@ export default function RoofCalculator() {
         <div className="h-1.5 rounded-full bg-gradient-to-r from-red-500 via-amber-500 to-green-500 mb-4" />
         <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-4 text-center mb-2">
           <span className="text-xl font-extrabold text-green-400">{formatPrice(saveLo)} – {formatPrice(saveHi)} saved</span>
-          <span className="text-base text-gray-400 ml-2">over the life of your roof</span>
+          <span className="text-base text-gray-300 ml-2">over the next 20&ndash;25 years</span>
         </div>
 
         <NavButtons back={5} next={7} nextLabel="What Do Insurers Actually Check?" nextGlow />
