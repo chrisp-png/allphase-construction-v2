@@ -168,7 +168,7 @@ export default function RoofCalculator() {
     { num: 5, label: 'Unlock', icon: gateUnlocked ? Check : Lock },
     { num: 6, label: 'Compare', icon: Eye },
     { num: 7, label: 'Insurers', icon: Shield },
-    { num: 8, label: 'Financing', icon: Zap },
+    { num: 8, label: 'Easy Payments', icon: Zap },
     { num: 9, label: 'Inspection', icon: ClipboardCheck },
     { num: 10, label: 'Next Steps', icon: Calendar },
   ];
@@ -485,7 +485,7 @@ export default function RoofCalculator() {
             { icon: ClipboardCheck, label: 'Your exact price — free on-site inspection' },
             { icon: Eye, label: 'Basic vs. Optimized side-by-side' },
             { icon: Shield, label: 'The 4 factors that set your premium' },
-            { icon: DollarSign, label: 'Monthly financing math' },
+            { icon: DollarSign, label: 'Easy payments math' },
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-3 bg-slate-800/40 border border-slate-700/30 rounded-lg px-4 py-3">
               <item.icon className="w-5 h-5 text-red-400 flex-shrink-0" />
@@ -661,7 +661,7 @@ export default function RoofCalculator() {
         </p>
       </div>
 
-      <NavButtons back={6} next={8} nextLabel="See the Financing Math" nextGlow />
+      <NavButtons back={6} next={8} nextLabel="See the Easy-Payments Math" nextGlow />
     </div>
   );
 
@@ -696,13 +696,13 @@ export default function RoofCalculator() {
 
       <div className="bg-slate-800/40 border border-slate-700/30 rounded-xl p-5 max-w-lg mx-auto mb-6">
         <p className="text-base text-gray-300 leading-relaxed text-center">
-          <strong className="text-white">The insurance savings are larger than the extra monthly payment.</strong> That means an upgraded roof with financing actually puts money back in your pocket from month one. And as Florida rates keep climbing, those savings only grow.
+          <strong className="text-white">The insurance savings are larger than the extra monthly payment.</strong> That means an upgraded roof on an easy payment plan actually puts money back in your pocket from month one. And as Florida rates keep climbing, those savings only grow.
         </p>
       </div>
 
       <div className="flex justify-center mb-2">
         <a href="/easy-payments/" className="inline-flex items-center gap-1.5 px-6 py-3 border border-blue-500/40 text-blue-400 rounded-xl font-semibold text-sm hover:bg-blue-600/10 hover:text-white transition-all">
-          Explore Financing Options <ArrowRight className="w-4 h-4" />
+          Explore Easy Payment Options <ArrowRight className="w-4 h-4" />
         </a>
       </div>
 
@@ -902,7 +902,7 @@ export default function RoofCalculator() {
                 You&rsquo;ve got your range — now see what it can save you.
               </p>
               <p className="text-base text-gray-300 max-w-2xl mx-auto">
-                Insurance savings, financing math, and a{' '}
+                Insurance savings, easy-payments math, and a{' '}
                 <span className="text-white font-semibold">free, no-obligation inspection</span> whenever
                 you&rsquo;re ready.
               </p>
