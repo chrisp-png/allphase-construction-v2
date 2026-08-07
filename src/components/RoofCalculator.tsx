@@ -883,13 +883,13 @@ export default function RoofCalculator() {
             </>
           ) : step === 3 ? (
             <>
-              <p className="text-xl sm:text-2xl font-bold text-amber-400 max-w-2xl mx-auto mb-2">
+              <p className="text-lg font-semibold text-white max-w-2xl mx-auto mb-2">
                 Here&rsquo;s your range below — real 2026 Broward &amp; Palm Beach pricing.
               </p>
-              <p className="text-base text-gray-300 max-w-2xl mx-auto">
+              <p className="text-xl sm:text-2xl font-bold text-amber-400 max-w-2xl mx-auto leading-snug">
                 Want an exact number? We&rsquo;ll come out for a{' '}
-                <span className="text-white font-semibold">free, no-obligation inspection</span>. Keep going to
-                see how much the right upgrades can save you on insurance.
+                <span className="underline decoration-amber-500/60 underline-offset-4">free, no-obligation inspection</span>
+                {' '}&mdash; and keep going to see what the right upgrades save you on insurance.
               </p>
             </>
           ) : (
