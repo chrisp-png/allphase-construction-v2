@@ -88,6 +88,7 @@ export default function RoofCalculator() {
   const [leadSubmitted, setLeadSubmitted] = useState(false);
   const [leadError, setLeadError] = useState('');
   const [gateUnlocked, setGateUnlocked] = useState(false);
+  const [wantsInspection, setWantsInspection] = useState(true);
 
   // ---- calculations ----
   const getBasicPrice = () => {
@@ -446,7 +447,7 @@ export default function RoofCalculator() {
               <Check className="w-10 h-10 text-green-500" />
             </div>
             <h2 className="text-3xl font-extrabold text-white mb-3">You're in!</h2>
-            <p className="text-gray-400 text-lg mb-2">Your full insurance analysis is unlocked.</p>
+            <p className="text-gray-400 text-lg mb-2">{wantsInspection ? 'Your analysis is unlocked — and your free inspection request is in.' : 'Your full insurance analysis is unlocked.'}</p>
             <p className="text-gray-500 text-base">During business hours we respond right away; after hours, within the first 60 minutes of the next business day.</p>
             <div className="mt-6">
               <button onClick={() => goTo(6)} className="px-8 py-4 rounded-xl bg-green-600 text-white font-bold text-lg hover:bg-green-500 transition-all shadow-lg flex items-center gap-2 mx-auto">
@@ -465,20 +466,22 @@ export default function RoofCalculator() {
             <Lock className="w-8 h-8 text-red-400" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
-            Unlock Your Full Insurance Analysis
+            Unlock Your Full Analysis &mdash; and Your Exact Price
           </h2>
           <p className="text-gray-400 text-base max-w-lg mx-auto">
-            See the detailed side-by-side comparison, the 4 factors insurers check, financing math, and what a forensic inspection reveals about <em>your</em> home.
+            The range above is math. Your <span className="text-white font-semibold">exact number</span> takes a free
+            30-minute inspection of <em>your</em> roof &mdash; no obligation, no pressure. Unlock the analysis below
+            and we&rsquo;ll set it up.
           </p>
         </div>
 
         {/* What's behind the gate - preview */}
         <div className="grid sm:grid-cols-2 gap-3 mb-8 max-w-lg mx-auto">
           {[
+            { icon: ClipboardCheck, label: 'Your exact price — free on-site inspection' },
             { icon: Eye, label: 'Basic vs. Optimized side-by-side' },
             { icon: Shield, label: 'The 4 factors that set your premium' },
             { icon: DollarSign, label: 'Monthly financing math' },
-            { icon: ClipboardCheck, label: 'What we inspect (that others skip)' },
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-3 bg-slate-800/40 border border-slate-700/30 rounded-lg px-4 py-3">
               <item.icon className="w-5 h-5 text-red-400 flex-shrink-0" />
@@ -493,7 +496,8 @@ export default function RoofCalculator() {
             <div className="mb-4 p-3 bg-red-900/20 border border-red-600/50 rounded-lg text-red-400 text-sm text-center">{leadError}</div>
           )}
           <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleLeadSubmit}>
-            <input type="hidden" name="_subject" value="Calculator Lead — Unlocked Insurance Analysis" />
+            <input type="hidden" name="_subject" value={wantsInspection ? 'INSPECTION REQUESTED — Calculator Lead' : 'Calculator Lead — analysis only'} />
+            <input type="hidden" name="inspection_requested" value={wantsInspection ? 'YES — homeowner asked for a free inspection' : 'no — analysis only'} />
             <input type="hidden" name="form_source" value="Roof Calculator Wizard — Step 5 Gate" />
             <input type="hidden" name="roof_type" value={selectedType.name} />
             <input type="hidden" name="roof_size" value={selectedSize.label} />
@@ -512,11 +516,20 @@ export default function RoofCalculator() {
                 onChange={(e) => setLeadForm({ ...leadForm, phone: e.target.value })}
                 className="w-full px-4 py-3.5 bg-slate-900/80 border border-slate-600/60 rounded-xl text-white placeholder-gray-500 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all" />
             </div>
+            <label className="flex items-start gap-3 mb-4 cursor-pointer select-none bg-green-900/10 border border-green-600/25 rounded-xl px-4 py-3">
+              <input type="checkbox" checked={wantsInspection} onChange={(e) => setWantsInspection(e.target.checked)}
+                className="mt-0.5 w-5 h-5 accent-green-500 flex-shrink-0" />
+              <span className="text-sm text-gray-300 text-left leading-snug">
+                <span className="text-white font-semibold">Yes</span> &mdash; schedule my{' '}
+                <span className="text-green-400 font-semibold">free, no-obligation roof inspection</span> for an exact
+                quote. We&rsquo;ll call to pick a time that works.
+              </span>
+            </label>
             <button type="submit" disabled={leadSubmitting}
               className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${
                 leadSubmitting ? 'bg-gray-700 text-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-red-600 to-red-500 text-white shadow-lg shadow-red-600/25 hover:shadow-xl hover:scale-[1.01]'
               }`}>
-              {leadSubmitting ? 'Unlocking...' : 'Unlock Full Analysis'}
+              {leadSubmitting ? 'Unlocking...' : wantsInspection ? 'Unlock & Book My Free Inspection' : 'Unlock Full Analysis'}
             </button>
           </form>
 
