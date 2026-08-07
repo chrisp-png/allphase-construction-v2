@@ -402,6 +402,11 @@ export default function RoofCalculator() {
             street can pay <strong className="text-amber-400">thousands apart</strong> in annual premiums based on
             how their roof was installed.
           </p>
+          <p className="text-base text-gray-400 leading-relaxed mt-3">
+            And every Floridian knows what happens after a big storm season: premiums jump &mdash; and they almost
+            never come back down. <span className="text-white font-semibold">Your roof decides which side of that
+            increase you live on.</span>
+          </p>
         </div>
 
         {/* The big reveal */}
@@ -606,9 +611,30 @@ export default function RoofCalculator() {
         </div>
 
         <div className="h-1.5 rounded-full bg-gradient-to-r from-red-500 via-amber-500 to-green-500 mb-4" />
-        <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-4 text-center mb-2">
+        <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-4 text-center mb-6">
           <span className="text-xl font-extrabold text-green-400">{formatPrice(saveLo)} – {formatPrice(saveHi)} saved</span>
           <span className="text-base text-gray-300 ml-2">over the next 20&ndash;25 years</span>
+        </div>
+
+        {/* PR-196: the core argument — the lowest bid is the expensive roof */}
+        <div className="bg-amber-600/5 border border-amber-600/20 rounded-2xl p-6 sm:p-7 mb-2 text-center">
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3 leading-tight">
+            The lowest bid is the <span className="text-amber-400">most expensive roof you can own</span>.
+          </h3>
+          <p className="text-base text-gray-300 leading-relaxed max-w-2xl mx-auto mb-3">
+            Save {formatPrice(upgradedPrice - basicPrice)} on install day with a code-minimum roof, and you hand it
+            right back to your insurance company &mdash; then keep overpaying{' '}
+            <strong className="text-white">every year, for the next 20&ndash;25 years</strong>. And after every major
+            hurricane season, premiums jump again. They almost never come back down.
+          </p>
+          <p className="text-base text-gray-300 leading-relaxed max-w-2xl mx-auto mb-4">
+            At your numbers, the difference typically pays for itself in about{' '}
+            <strong className="text-green-400">{Math.max(1, Math.ceil((upgradedPrice - basicPrice) / Math.max(1, ((insBasicLo + insBasicHi) / 2) - ((insUpLo + insUpHi) / 2))))} years</strong>
+            {' '}&mdash; everything after that is money you keep.
+          </p>
+          <p className="text-lg font-bold text-white">
+            Pay a little more once. <span className="text-green-400">Pay less every year after.</span>
+          </p>
         </div>
 
         <NavButtons back={5} next={7} nextLabel="What Do Insurers Actually Check?" nextGlow />
