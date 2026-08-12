@@ -2618,6 +2618,12 @@ function homepageContent() {
 
   <p><strong>Call (754) 227-5605 for a free professional roof inspection and estimate.</strong></p>
 
+  <h2>Frequently Asked Questions</h2>
+  <p><strong>Are you licensed and insured?</strong><br>Yes — twice over. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), and we carry full general liability and workers' compensation coverage. Dual licensing means we can handle the roof and any structural repairs under one agreement.</p>
+  <p><strong>What areas do you serve?</strong><br>We serve more than 50 cities across Broward County and Palm Beach County from our Deerfield Beach headquarters, including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Delray Beach, Boynton Beach, West Palm Beach, and Wellington.</p>
+  <p><strong>Do you offer free roof inspections and estimates?</strong><br>Yes. Every project starts with a free roof inspection with photo documentation, followed by a written, line-item estimate — no charge and no obligation. Call (754) 227-5605 or use our roof cost calculator for an instant ballpark.</p>
+  <p><strong>Do you handle emergency roof repairs?</strong><br>Yes. A real person answers our line 24 hours a day, and we provide emergency tarping, leak mitigation, and storm damage assessment throughout Broward and Palm Beach County.</p>
+
   ${companyAuthorityFooter()}
 </section>
 `.trim();
@@ -3378,7 +3384,15 @@ async function generateStaticFiles() {
         'Roof replacement in Broward & Palm Beach County. Dual-licensed, HVHZ-certified. Tile, metal, shingle, flat & commercial. Free estimates. (754) 227-5605.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
-    {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+    [
+      {"@context":"https://schema.org","@type":"WebSite","@id":"https://allphaseconstructionfl.com/#website","name":"All Phase Construction USA","url":"https://allphaseconstructionfl.com","description":"HVHZ-certified, dual-licensed roofing contractor serving Broward and Palm Beach County","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://allphaseconstructionfl.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
+      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"Are you licensed and insured?","acceptedAnswer":{"@type":"Answer","text":"Yes — twice over. All Phase Construction USA holds both a Florida State Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), and we carry full general liability and workers' compensation coverage. Dual licensing means we can handle the roof and any structural repairs under one agreement."}},
+        {"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve more than 50 cities across Broward County and Palm Beach County from our Deerfield Beach headquarters, including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Delray Beach, Boynton Beach, West Palm Beach, and Wellington."}},
+        {"@type":"Question","name":"Do you offer free roof inspections and estimates?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every project starts with a free roof inspection with photo documentation, followed by a written, line-item estimate — no charge and no obligation. Call (754) 227-5605 or use our roof cost calculator for an instant ballpark."}},
+        {"@type":"Question","name":"Do you handle emergency roof repairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. A real person answers our line 24 hours a day, and we provide emergency tarping, leak mitigation, and storm damage assessment throughout Broward and Palm Beach County."}}
+      ]}
+    ]
   );
   // HOMEPAGE SAFETY: Write to dist/index.html (was public/, now changed for deployment)
   // This WILL overwrite the Vite shell, which is intentional for prerendering
