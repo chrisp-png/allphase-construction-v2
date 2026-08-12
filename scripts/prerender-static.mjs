@@ -2239,7 +2239,7 @@ function generateFreeRoofEstimateContent() {
   <h2>How to Get Your Roof Estimate</h2>
   <p>Getting a roofing estimate from us is simple, and there is never a charge or obligation:</p>
   <ul style="line-height:1.75;margin-bottom:1.5rem;">
-    <li><strong>1. Request your estimate.</strong> Call or text <strong>(754) 227-5605</strong>, or request one online. A live person answers 24/7.</li>
+    <li><strong>1. Request your estimate.</strong> Call <strong>(754) 227-5605</strong>, or request one online. A live person answers 24/7.</li>
     <li><strong>2. We measure and inspect.</strong> A licensed estimator visits your home, usually within a few business days, and evaluates the full roof system.</li>
     <li><strong>3. You get a written quote.</strong> We deliver a clear, line-item estimate you can actually compare &mdash; no high-pressure sales pitch.</li>
   </ul>
@@ -2254,7 +2254,7 @@ function generateFreeRoofEstimateContent() {
   <p>If you would like a rough number before scheduling an in-person estimate, use our <a href="/roof-cost-calculator" style="color:#dc2626;text-decoration:underline;">free roof cost calculator</a> for an instant range, or read our <a href="/roof-replacement-cost-florida" style="color:#dc2626;text-decoration:underline;">Florida roof replacement cost guide</a>. When you are ready for real numbers, a written estimate is the only way to know exactly what your roof will cost. Need a repair scoped? See our <a href="/roof-repair" style="color:#dc2626;text-decoration:underline;">roof repair services</a>.</p>
 
   <h2>Request Your Free Roof Estimate</h2>
-  <p>All Phase Construction USA serves Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Boynton Beach, Delray Beach, West Palm Beach, Wellington, and every community across Broward and Palm Beach County. Call or text <strong>(754) 227-5605</strong> for your free, no-obligation roof estimate, or <a href="/contact" style="color:#dc2626;text-decoration:underline;">request one online</a>.</p>
+  <p>All Phase Construction USA serves Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Boynton Beach, Delray Beach, West Palm Beach, Wellington, and every community across Broward and Palm Beach County. Call <strong>(754) 227-5605</strong> for your free, no-obligation roof estimate, or <a href="/contact" style="color:#dc2626;text-decoration:underline;">request one online</a>.</p>
 
   ${companyAuthorityFooter()}
 </section>
@@ -3402,7 +3402,7 @@ async function generateStaticFiles() {
     '/free-roof-estimate': {
       faqs: [
         { question: 'Is a roof estimate really free?', answer: 'Yes. All Phase Construction USA provides free, no-obligation roof estimates throughout Broward County and Palm Beach County. There is no charge for the inspection, the measurement, or the written quote, and no obligation to move forward.' },
-        { question: 'How long does it take to get a roof estimate?', answer: 'After you call or text (754) 227-5605, a licensed estimator typically visits your home within a few business days. You receive a written, line-item estimate you can compare, usually within a day or two of the visit.' },
+        { question: 'How long does it take to get a roof estimate?', answer: 'After you call (754) 227-5605, a licensed estimator typically visits your home within a few business days. You receive a written, line-item estimate you can compare, usually within a day or two of the visit.' },
         { question: 'Do you give written roof estimates?', answer: 'Yes. Every estimate is delivered in writing with materials, labor, tear-off, permits, and code components itemized, so you can see exactly what drives the price rather than a single vague number.' },
         { question: 'Can I get an estimate for a roof repair, not just a replacement?', answer: 'Yes. We provide both roof repair estimates and roof replacement estimates. If a targeted repair will solve the problem, we will tell you so honestly rather than push a full replacement.' },
         { question: 'What areas do you provide free roof estimates in?', answer: 'We provide free roof estimates across Broward County and Palm Beach County from our Deerfield Beach headquarters, including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Boynton Beach, Delray Beach, West Palm Beach, and Wellington.' }

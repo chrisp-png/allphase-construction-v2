@@ -12,7 +12,7 @@ export default function FreeRoofEstimatePage() {
 
   const faqs = [
     { q: 'Is a roof estimate really free?', a: 'Yes. All Phase Construction USA provides free, no-obligation roof estimates throughout Broward and Palm Beach County. There is no charge for the inspection, the measurement, or the written quote, and no obligation to move forward.' },
-    { q: 'How long does it take to get a roof estimate?', a: 'After you call or text (754) 227-5605, a licensed estimator typically visits your home within a few business days, and you receive a written, line-item estimate shortly after.' },
+    { q: 'How long does it take to get a roof estimate?', a: 'After you call (754) 227-5605, a licensed estimator typically visits your home within a few business days, and you receive a written, line-item estimate shortly after.' },
     { q: 'Do you give written roof estimates?', a: 'Yes. Every estimate is written and itemized — materials, labor, tear-off, permits, and code components broken out — so you can see exactly what drives the price.' },
     { q: 'Can I get an estimate for a roof repair, not just a replacement?', a: 'Yes. We provide both roof repair estimates and roof replacement estimates, and we give an honest repair-or-replace recommendation rather than pushing a full replacement.' },
     { q: 'What areas do you provide free roof estimates in?', a: 'Across Broward and Palm Beach County from our Deerfield Beach headquarters — including Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, Boynton Beach, Delray Beach, West Palm Beach, and Wellington.' },
@@ -145,7 +145,7 @@ export default function FreeRoofEstimatePage() {
             <h2 className="text-3xl font-bold mb-4">Request Your Free Roof Estimate</h2>
             <p className="text-lg text-zinc-300 mb-8 max-w-2xl mx-auto">Serving Deerfield Beach, Boca Raton, Fort Lauderdale, and every community across Broward &amp; Palm Beach County. No charge, no obligation.</p>
             <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
-              <Phone className="w-6 h-6" /> Call or Text (754) 227-5605
+              <Phone className="w-6 h-6" /> Call (754) 227-5605
             </a>
           </div>
         </section>
