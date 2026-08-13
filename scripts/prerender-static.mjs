@@ -2961,6 +2961,18 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       addressCountry: 'US'
     },
     geo: { '@type': 'GeoCoordinates', latitude: 26.3184, longitude: -80.0998 },
+    sameAs: [
+      'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640',
+      'https://www.fixr.com/contractors/all-phase-construction',
+      'https://business.ftlchamber.com/directory/Details/all-phase-construction-usa-4910593',
+      'https://www.facebook.com/AllPhaseConstructionUsA',
+      'https://www.instagram.com/all_phase_construction_usa/',
+      'https://www.youtube.com/@allphaseconstructionusa5626',
+      'https://www.linkedin.com/company/all-phase-construction-usa-llc',
+      'https://www.tiktok.com/@allphaseusa',
+      'https://x.com/AllPhaseUSALLC',
+      'https://www.pinterest.com/allphasesfl/'
+    ],
     areaServed: { '@type': 'AdministrativeArea', name: 'Broward and Palm Beach County, Florida' },
     priceRange: '$$',
     openingHoursSpecification: [
