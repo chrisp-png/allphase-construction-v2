@@ -3106,8 +3106,16 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
 
           const rootStart = html.indexOf('<div id="root">');
     const bodyEnd = html.indexOf('</body>');
+    // PR-203: preserve the trailing third-party scripts (gtag/GA4 loader and
+    // CallRail swap.js loader) that sit between the root div and </body> in
+    // the Vite template. The previous slice went straight from the root div
+    // to </body>, silently deleting them from every prerendered page — which
+    // killed CallRail number swapping AND Google Ads / GA4 tracking site-wide
+    // (window.gtag never existed, so trackLeadConversion() no-opped).
+    const scriptsTailMarker = html.indexOf('<!-- Third-party scripts', rootStart);
+    const tailStart = (scriptsTailMarker !== -1 && scriptsTailMarker < bodyEnd) ? scriptsTailMarker : bodyEnd;
     if (rootStart !== -1 && bodyEnd !== -1) {
-      html = html.slice(0, rootStart) + `<div id="root">${seoContent}</div>` + html.slice(bodyEnd);
+      html = html.slice(0, rootStart) + `<div id="root">${seoContent}</div>\n    ` + html.slice(tailStart);
     } else {
       throw new Error('✅ Could not find root div or closing body tag in template.');
     }
