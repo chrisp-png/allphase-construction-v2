@@ -2782,7 +2782,7 @@ function generateDeerfieldBeachSchema() {
     },
     "sameAs": [
       "https://www.allphaseconstructionfl.com/",
-      "https://www.youtube.com/@allphaseconstructionusa5626",
+      "https://www.youtube.com/@allphaseconstructionFL",
       "https://share.google/GoLG8dytlgHgXVjKK"
     ]
   };
@@ -2967,7 +2967,7 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       'https://business.ftlchamber.com/directory/Details/all-phase-construction-usa-4910593',
       'https://www.facebook.com/AllPhaseConstructionUsA',
       'https://www.instagram.com/all_phase_construction_usa/',
-      'https://www.youtube.com/@allphaseconstructionusa5626',
+      'https://www.youtube.com/@allphaseconstructionFL',
       'https://www.linkedin.com/company/all-phase-construction-usa-llc',
       'https://www.tiktok.com/@allphaseusa',
       'https://x.com/AllPhaseUSALLC',
