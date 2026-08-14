@@ -70,7 +70,7 @@ export function generateLocalBusinessSchema(pageUrl: string) {
       'https://www.facebook.com/AllPhaseConstructionUsA',
       'https://www.instagram.com/all_phase_construction_usa/',
       'https://www.linkedin.com/company/all-phase-construction-usa-llc',
-      'https://www.youtube.com/@allphaseconstructionusa5626',
+      'https://www.youtube.com/@allphaseconstructionFL',
       'https://maps.app.goo.gl/VgpBphe5vYY8yuow7',
       'https://www.yelp.com/biz/all-phase-construction-usa-deerfield-beach-2',
       'https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640',
