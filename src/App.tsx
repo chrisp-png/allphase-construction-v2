@@ -9,6 +9,7 @@ import { AssessmentModalProvider, useAssessmentModal } from './context/Assessmen
 import NuclearMetadata from './components/NuclearMetadata';
 import ErrorBoundary from './components/ErrorBoundary';
 import StaticContentPage from './pages/StaticContentPage';
+import { captureClickIds } from './utils/clickId';
 
 // PR-50: defer the three components that aren't visible on first paint
 // (AccessibilityWidget panel, ExitIntentPopup, AssessmentModal). They cost
@@ -436,6 +437,12 @@ function AppContent() {
 }
 
 function App() {
+  // PR-205: capture Google Ads click IDs (gclid/gbraid/wbraid) from the
+  // landing URL once per mount, so every lead form can attach them.
+  useEffect(() => {
+    captureClickIds();
+  }, []);
+
   return (
     <Router>
       <ErrorBoundary>

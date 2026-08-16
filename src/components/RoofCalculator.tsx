@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { appendClickIds } from '../utils/clickId';
 import { trackLeadConversion } from '../utils/leadConversion';
 import { Phone, Calendar, Check, Layers, Grid3X3, Wrench, Minus, Shield, Home, Ruler, ClipboardCheck, ArrowRight, ArrowLeft, ChevronRight, Sparkles, TrendingDown, Lock, Eye, DollarSign, FileText, Zap } from 'lucide-react';
 import ChecklistDownloadForm from './ChecklistDownloadForm';
@@ -142,7 +143,7 @@ export default function RoofCalculator() {
       const formElement = e.target as HTMLFormElement;
       const response = await fetch(formElement.action, {
         method: 'POST',
-        body: new FormData(formElement),
+        body: appendClickIds(new FormData(formElement)),
         headers: { 'Accept': 'application/json' }
       });
       if (!response.ok) { setLeadError('Something went wrong. Please try again.'); setLeadSubmitting(false); return; }
