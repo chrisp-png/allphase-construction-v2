@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { appendClickIds } from '../utils/clickId';
 import { trackLeadConversion } from '../utils/leadConversion';
 import { Check, FileText, Shield, HelpCircle, AlertTriangle, DollarSign, MessageSquare } from 'lucide-react';
 
@@ -23,7 +24,7 @@ export default function ChecklistDownloadForm({ roofType, roofSize, roofSqft }: 
       const formElement = e.target as HTMLFormElement;
       const response = await fetch(formElement.action, {
         method: 'POST',
-        body: new FormData(formElement),
+        body: appendClickIds(new FormData(formElement)),
         headers: { 'Accept': 'application/json' }
       });
 

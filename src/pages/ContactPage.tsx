@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { appendClickIds } from '../utils/clickId';
 import { trackLeadConversion } from '../utils/leadConversion';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowLeft, CheckCircle, Wrench, Home, Layers, Grid3X3, Minus } from 'lucide-react';
@@ -59,7 +60,7 @@ export default function ContactPage() {
       const formElement = e.target as HTMLFormElement;
       const response = await fetch(formElement.action, {
         method: 'POST',
-        body: new FormData(formElement),
+        body: appendClickIds(new FormData(formElement)),
         headers: {
           'Accept': 'application/json'
         }

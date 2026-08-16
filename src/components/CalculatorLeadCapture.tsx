@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { appendClickIds } from '../utils/clickId';
 import { trackLeadConversion } from '../utils/leadConversion';
 
 interface CalculatorLeadCaptureProps {
@@ -48,7 +49,7 @@ export default function CalculatorLeadCapture({
       const formElement = e.target as HTMLFormElement;
       const response = await fetch(formElement.action, {
         method: 'POST',
-        body: new FormData(formElement),
+        body: appendClickIds(new FormData(formElement)),
         headers: {
           'Accept': 'application/json'
         }

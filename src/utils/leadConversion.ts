@@ -5,6 +5,7 @@
  * lead-form submission. gtag itself is installed globally in index.html.
  */
 import type { FormEvent } from 'react';
+import { appendClickIds } from './clickId';
 
 const CONVERSION_SEND_TO = 'AW-10809361088/cbljCMCBvvUaEMCFp6Io';
 
@@ -39,7 +40,7 @@ export async function interceptLeadSubmit(
   try {
     const response = await fetch(form.action, {
       method: 'POST',
-      body: new FormData(form),
+      body: appendClickIds(new FormData(form)),
       headers: { Accept: 'application/json' },
     });
     if (!response.ok) throw new Error(`Formspree ${response.status}`);
