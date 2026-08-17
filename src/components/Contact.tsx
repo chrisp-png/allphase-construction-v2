@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { appendClickIds } from '../utils/clickId';
-import { trackLeadConversion } from '../utils/leadConversion';
+import { trackLeadConversion, extractLeadUserData } from '../utils/leadConversion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
@@ -30,7 +30,7 @@ export default function Contact() {
       }
     });
 
-    if (response.ok) trackLeadConversion('contact-section');
+    if (response.ok) trackLeadConversion('contact-section', extractLeadUserData(formElement));
 
     setSubmitted(true);
     setTimeout(() => {

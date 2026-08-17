@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { appendClickIds } from '../utils/clickId';
-import { trackLeadConversion } from '../utils/leadConversion';
+import { trackLeadConversion, extractLeadUserData } from '../utils/leadConversion';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowLeft, CheckCircle, Wrench, Home, Layers, Grid3X3, Minus } from 'lucide-react';
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
         throw new Error('Form submission failed');
       }
 
-      trackLeadConversion('contact-page');
+      trackLeadConversion('contact-page', extractLeadUserData(formElement));
       setCurrentStep(4);
     } catch (error) {
       console.error('Error submitting form:', error);

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { appendClickIds } from '../utils/clickId';
-import { trackLeadConversion } from '../utils/leadConversion';
+import { trackLeadConversion, extractLeadUserData } from '../utils/leadConversion';
 import { Check, FileText, Shield, HelpCircle, AlertTriangle, DollarSign, MessageSquare } from 'lucide-react';
 
 interface ChecklistDownloadFormProps {
@@ -34,7 +34,7 @@ export default function ChecklistDownloadForm({ roofType, roofSize, roofSqft }: 
         return;
       }
 
-      trackLeadConversion('checklist-download');
+      trackLeadConversion('checklist-download', extractLeadUserData(formElement));
 
       // Trigger the download immediately
       const link = document.createElement('a');
