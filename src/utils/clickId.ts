@@ -53,8 +53,15 @@ export function getStoredClickIds(): Record<string, string> {
  * Safe to call on every submit; no-op for organic leads.
  */
 export function appendClickIds(fd: FormData): FormData {
-  for (const [k, v] of Object.entries(getStoredClickIds())) {
+  const ids = getStoredClickIds();
+  for (const [k, v] of Object.entries(ids)) {
     if (!fd.has(k)) fd.append(k, v);
+  }
+  // PR-207: plain-English label so the lead email is readable without
+  // interpreting a raw gclid. Only added when a click ID exists — organic
+  // leads must not claim an ad source we didn't measure.
+  if (Object.keys(ids).length > 0 && !fd.has('lead_source')) {
+    fd.append('lead_source', 'Google Ads (paid click)');
   }
   return fd;
 }
