@@ -26,7 +26,7 @@ export default function PembrokePinesMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Pembroke Pines, FL | All Phase USA</title>
-        <meta name="description" content="Pembroke Pines, FL roofer for west-side gated communities & east-side homes — aging 1990s roofs, HVHZ-code tile & shingle, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Pembroke Pines, FL roofer for gated communities & east-side homes — aging 1990s roofs, HVHZ-code tile & shingle, dual-licensed. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/pembroke-pines" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

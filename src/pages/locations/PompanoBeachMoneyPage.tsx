@@ -26,7 +26,7 @@ export default function PompanoBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Pompano Beach, FL | All Phase USA</title>
-        <meta name="description" content="Pompano Beach, FL roofer from Harbor Village dock estates to Palm Aire condos — HVHZ-code tile, metal, shingle & flat roofs, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Pompano Beach, FL roofer from Harbor Village estates to Palm Aire condos — HVHZ-code tile, metal, shingle & flat, dual-licensed. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/pompano-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
