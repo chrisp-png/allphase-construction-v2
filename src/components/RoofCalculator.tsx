@@ -838,7 +838,7 @@ export default function RoofCalculator() {
         <div className="border-t border-b border-slate-800 py-6 mb-6">
           <div className="flex flex-wrap justify-center gap-8 sm:gap-12">
             {[
-              { val: '4.8+ \u2605', label: 'Google Reviews' },
+              { val: '4.9 \u2605', label: 'Google Reviews' },
               { val: '20+', label: 'Years in Business' },
               { val: '2,500+', label: 'Roofs Completed' },
               { val: 'Dual Licensed', label: 'CGC + CCC' },

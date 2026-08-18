@@ -47,8 +47,8 @@ export default function LighthousePointMoneyPage() {
     latitude: coordinates?.latitude,
     longitude: coordinates?.longitude,
     aggregateRating: {
-      ratingValue: '4.8',
-      reviewCount: '150'
+      ratingValue: '4.9',
+      reviewCount: '160'
     }
   });
 
@@ -82,7 +82,7 @@ export default function LighthousePointMoneyPage() {
                 </h1>
               </div>
               <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
-                <span className="text-yellow-400">★ 4.8 Google</span>
+                <span className="text-yellow-400">★ 4.9 Google</span>
                 <span className="text-red-400">·</span>
                 <span>2,500+ Roofs</span>
                 <span className="text-red-400">·</span>

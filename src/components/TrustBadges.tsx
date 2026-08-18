@@ -35,7 +35,7 @@ export default function TrustBadges() {
             <div className="w-7 h-7 flex items-center justify-center bg-blue-600 rounded">
               <span className="text-white font-bold text-base">f</span>
             </div>
-            <span className="text-white font-bold text-lg">4.8</span>
+            <span className="text-white font-bold text-lg">4.9</span>
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
@@ -53,7 +53,7 @@ export default function TrustBadges() {
             <div className="w-7 h-7 flex items-center justify-center bg-white rounded-sm">
               <span className="text-blue-500 font-bold text-base">G</span>
             </div>
-            <span className="text-white font-bold text-lg">4.8</span>
+            <span className="text-white font-bold text-lg">4.9</span>
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />

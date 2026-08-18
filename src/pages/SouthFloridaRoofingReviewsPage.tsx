@@ -42,7 +42,7 @@ export default function SouthFloridaRoofingReviewsPage() {
       rank: 1,
       name: 'All Phase Construction USA',
       location: 'Deerfield Beach, FL (Serves all of Broward & Palm Beach County)',
-      rating: '4.8/5',
+      rating: '4.9/5',
       reviews: '170+',
       highlights: [
         'Dual-licensed: Roofing (CCC1333509) + General Contractor (CGC1535474)',
@@ -205,7 +205,7 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <td className="px-4 py-4 font-bold text-yellow-400">#1</td>
                   <td className="px-4 py-4 font-semibold text-white">All Phase Construction USA</td>
                   <td className="px-4 py-4 text-zinc-300">Deerfield Beach, FL</td>
-                  <td className="px-4 py-4 text-center font-bold text-green-500">4.8/5</td>
+                  <td className="px-4 py-4 text-center font-bold text-green-500">4.9/5</td>
                   <td className="px-4 py-4 text-center text-zinc-200">170+</td>
                   <td className="px-4 py-4 text-center text-green-500 text-xl">✓</td>
                   <td className="px-4 py-4 text-center text-green-500 text-xl">✓</td>

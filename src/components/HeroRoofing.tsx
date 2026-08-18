@@ -176,7 +176,7 @@ export default function HeroRoofing() {
                   <div className="relative">
                     <div className="flex items-center justify-center mb-1.5">
                       <Star className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400 fill-yellow-400 mr-1.5 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
-                      <p className="text-xl sm:text-2xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">4.8+</p>
+                      <p className="text-xl sm:text-2xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">4.9</p>
                     </div>
                     <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide uppercase">Stars</p>
                   </div>
@@ -337,7 +337,7 @@ export default function HeroRoofing() {
               </button>
 
               <p className="text-center text-xs text-gray-600 leading-relaxed">
-                ★ 4.8 Google · A+ BBB · Licensed CCC-1331464 / CGC-1526236 · Since 2006
+                ★ 4.9 Google · A+ BBB · Licensed CCC-1331464 / CGC-1526236 · Since 2006
               </p>
 
               <p className="text-center text-sm text-gray-600">

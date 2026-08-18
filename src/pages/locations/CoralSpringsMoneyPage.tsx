@@ -40,8 +40,8 @@ export default function CoralSpringsMoneyPage() {
     latitude: coordinates?.latitude,
     longitude: coordinates?.longitude,
     aggregateRating: {
-      ratingValue: '4.8',
-      reviewCount: '150'
+      ratingValue: '4.9',
+      reviewCount: '160'
     }
   });
 
@@ -81,9 +81,9 @@ export default function CoralSpringsMoneyPage() {
               <div className="mt-6 mb-6">
                 <AISearchRail query="Who are the top dual-licensed roofing contractors in Coral Springs Florida and what should I know about HVHZ-compliant residential re-roofs?" />
               </div>
-              <AtomicAnswer>All Phase Construction USA is a Coral Springs roofing contractor licensed under CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The team installs tile, metal, shingle, and flat roofs to South Florida HVHZ wind code across Coral Springs, holds 150+ five-star Google reviews, and offers 24-hour scheduling from the Deerfield Beach office.</AtomicAnswer>
+              <AtomicAnswer>All Phase Construction USA is a Coral Springs roofing contractor licensed under CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The team installs tile, metal, shingle, and flat roofs to South Florida HVHZ wind code across Coral Springs, holds 160+ five-star Google reviews, and offers 24-hour scheduling from the Deerfield Beach office.</AtomicAnswer>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
-                  <span className="text-yellow-400">★ 4.8 Google</span>
+                  <span className="text-yellow-400">★ 4.9 Google</span>
                   <span className="text-red-400">·</span>
                   <span>2,500+ Roofs</span>
                   <span className="text-red-400">·</span>

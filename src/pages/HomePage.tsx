@@ -39,7 +39,7 @@ export default function HomePage() {
       {/* PR-74: AI Overview atomic answer */}
       <section className="bg-[#0a0a0a] border-b border-gray-800/50 py-8">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AtomicAnswer>All Phase Construction USA is a dual-licensed roofing and general contracting firm based in Deerfield Beach, FL serving Broward and Palm Beach County since 2006. Holding state licenses CCC-1331464 and CGC-1526236, the team has completed over 2,500 roofs across tile, metal, shingle, flat, and commercial systems, with a 4.8-star Google rating from 150+ verified reviews.</AtomicAnswer>
+          <AtomicAnswer>All Phase Construction USA is a dual-licensed roofing and general contracting firm based in Deerfield Beach, FL serving Broward and Palm Beach County since 2006. Holding state licenses CCC-1331464 and CGC-1526236, the team has completed over 2,500 roofs across tile, metal, shingle, flat, and commercial systems, with a 4.9-star Google rating from 160+ verified reviews.</AtomicAnswer>
         </div>
       </section>
       {/* Social Proof Trust Bar — visible without scrolling on most screens */}
@@ -48,7 +48,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white text-sm sm:text-base">
             <a href={EXTERNAL_LINKS.GOOGLE_REVIEWS} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-yellow-200 transition-colors">
               <Star className="w-5 h-5 text-yellow-300 fill-yellow-300" />
-              <span className="font-bold">4.8 Stars</span>
+              <span className="font-bold">4.9 Stars</span>
               <span className="text-red-100">on Google</span>
             </a>
             <div className="hidden sm:block w-px h-5 bg-red-400/50" />
@@ -604,7 +604,7 @@ export default function HomePage() {
 
             <div className="text-center mb-6">
               <p className="text-xl text-yellow-400 font-semibold mb-2">
-                ⭐ 4.8+ out of 5 — Based on 100+ verified Google reviews
+                ⭐ 4.9 out of 5 — Based on 160+ verified Google reviews
               </p>
               <p className="text-gray-300 text-lg">
                 Our customers consistently highlight the same things: clear communication, professional crews, clean job sites, and a process that takes the stress out of roofing.
@@ -846,7 +846,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-3 sm:gap-4 text-sm">
                   <div className="flex items-center gap-1 text-yellow-400">
                     <Star className="w-4 h-4 fill-current" />
-                    <span className="text-white font-semibold">4.8</span>
+                    <span className="text-white font-semibold">4.9</span>
                     <span className="text-gray-300 sm:text-gray-400">Google Reviews</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-gray-200">

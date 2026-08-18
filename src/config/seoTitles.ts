@@ -247,7 +247,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/about-us': {
     title: 'About All Phase Construction | Expert Roofing Specialist',
-    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2006. 2,500+ roofs installed. HVHZ certified. 4.8 stars across 150+ reviews.',
+    description: 'Dual-licensed roofer (CCC & CGC) serving South Florida since 2006. 2,500+ roofs installed. HVHZ certified. 4.9 stars across 160+ reviews.',
     canonical: 'https://allphaseconstructionfl.com/about-us'
   },
   '/team/chris-porosky': {
@@ -285,8 +285,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/blog/the-pros-and-cons-of-flat-roofs-for-florida-homes'
   },
   '/reviews': {
-    title: 'Roofing Reviews | 4.8 Stars, 150+ Verified | All Phase',
-    description: '4.8 stars from 150+ verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.',
+    title: 'Roofing Reviews | 4.9 Stars, 160+ Verified | All Phase',
+    description: '4.9 stars from 160+ verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.',
     canonical: 'https://allphaseconstructionfl.com/reviews'
   },
   '/projects': {
@@ -478,7 +478,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
         '/locations/deerfield-beach': {
     title: 'Deerfield Beach Roofing Contractor (HQ Since 2006)',
-    description: "Deerfield Beach local roofing HQ since 2006. 2,500+ roofs, dual-licensed (CCC + CGC), 150+ five-star Google reviews. Free inspection (754) 227-5605.",
+    description: "Deerfield Beach local roofing HQ since 2006. 2,500+ roofs, dual-licensed (CCC + CGC), 160+ five-star Google reviews. Free inspection (754) 227-5605.",
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {
