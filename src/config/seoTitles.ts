@@ -57,7 +57,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/dania-beach': {
     title: 'Roofing Contractor in Dania Beach, FL | All Phase USA',
-    description: 'Dania Beach, FL roofer for Broward's oldest city — coastal homes, condos & bungalows. HVHZ-code tile, shingle & flat, dual-licensed. (754) 227-5605.',
+    description: 'Dania Beach, FL roofer for Broward\u2019s oldest city — coastal homes, condos & bungalows. HVHZ-code tile, shingle & flat, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/dania-beach'
   },
   '/locations/weston': {
@@ -177,7 +177,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/hillsboro-beach': {
     title: 'Roofing Contractor in Hillsboro Beach, FL | All Phase USA',
-    description: 'Hillsboro Beach, FL roofer for Millionaires' Mile estates & oceanfront condos — premium tile, metal & flat, coastal-grade, HVHZ. (754) 227-5605.',
+    description: 'Hillsboro Beach, FL roofer for Millionaires\u2019 Mile estates & oceanfront condos — premium tile, metal & flat, coastal-grade, HVHZ. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/hillsboro-beach'
   },
   '/locations/sea-ranch-lakes': {
