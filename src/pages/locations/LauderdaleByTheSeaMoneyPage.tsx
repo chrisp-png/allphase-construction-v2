@@ -25,7 +25,7 @@ export default function LauderdaleByTheSeaMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Roofing Contractor in Lauderdale-by-the-Sea, FL | All Phase USA</title>
+        <title>Roofing Contractor in Lauderdale-by-the-Sea | All Phase USA</title>
         <meta name="description" content="Lauderdale-by-the-Sea, FL barrier-island roofer — coastal-grade tile & standing-seam metal built for salt air and Atlantic wind, HVHZ code, dual-licensed. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/lauderdale-by-the-sea" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>

@@ -26,7 +26,7 @@ export default function LoxahatcheeGrovesMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Loxahatchee Groves, FL | All Phase USA</title>
-        <meta name="description" content="Loxahatchee Groves, FL roofer for rural homesteads, ranches, barns & ag structures on acreage — metal, shingle & tile, HVHZ-spec, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Loxahatchee Groves, FL roofer for rural homes, barns & ag structures — metal, shingle & tile, HVHZ-spec, dual-licensed. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/loxahatchee-groves" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

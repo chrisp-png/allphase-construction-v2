@@ -25,7 +25,7 @@ export default function JupiterInletColonyMoneyPage() {
   return (
     <>
       <Helmet>
-        <title>Roofing Contractor in Jupiter Inlet Colony, FL | All Phase USA</title>
+        <title>Roofing Contractor in Jupiter Inlet Colony | All Phase USA</title>
         <meta name="description" content="Jupiter Inlet Colony, FL roofer for this gated oceanfront island town — coastal-grade tile & standing-seam metal, HVHZ-spec, discreet. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/jupiter-inlet-colony" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>

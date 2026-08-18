@@ -26,7 +26,7 @@ export default function WiltonManorsMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Wilton Manors, FL | All Phase USA</title>
-        <meta name="description" content="Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/wilton-manors" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

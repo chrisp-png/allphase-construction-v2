@@ -26,7 +26,7 @@ export default function DaniaBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Dania Beach, FL | All Phase USA</title>
-        <meta name="description" content="Dania Beach, FL roofer for Broward's oldest city — coastal homes, condos & aging bungalows, HVHZ-code tile, shingle & flat, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Dania Beach, FL roofer for Broward's oldest city — coastal homes, condos & bungalows. HVHZ-code tile, shingle & flat, dual-licensed. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/dania-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

@@ -26,7 +26,7 @@ export default function HollywoodMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Hollywood, FL | All Phase USA</title>
-        <meta name="description" content="Hollywood, FL roofer for beach condos, historic Hollywood Lakes homes & Emerald Hills estates — tile, flat, shingle & metal, HVHZ-code. (754) 227-5605." />
+        <meta name="description" content="Hollywood, FL roofer for beach condos, Hollywood Lakes homes & Emerald Hills estates — tile, flat, shingle & metal, HVHZ-code. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/hollywood" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

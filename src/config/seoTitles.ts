@@ -52,12 +52,12 @@ export interface SEOMetadata {
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/locations/cooper-city': {
     title: 'Roofing Contractor in Cooper City, FL | All Phase USA',
-    description: 'Cooper City, FL roofer for family suburbs \u0026 gated communities — HVHZ-code tile \u0026 shingle, HOA review handled, dual-licensed since 2006. (754) 227-5605.',
+    description: 'Cooper City, FL roofer for family suburbs & gated communities — HVHZ-code tile & shingle, HOA review handled, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/cooper-city'
   },
   '/locations/dania-beach': {
     title: 'Roofing Contractor in Dania Beach, FL | All Phase USA',
-    description: 'Dania Beach, FL roofer for Broward\u2019s oldest city — coastal homes, condos \u0026 aging bungalows, HVHZ-code tile, shingle \u0026 flat, dual-licensed. (754) 227-5605.',
+    description: 'Dania Beach, FL roofer for Broward\u2019s oldest city — coastal homes, condos & bungalows. HVHZ-code tile, shingle & flat, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/dania-beach'
   },
   '/locations/weston': {
@@ -81,7 +81,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/hypoluxo'
   },
   '/locations/jupiter-inlet-colony': {
-    title: 'Roofing Contractor in Jupiter Inlet Colony, FL | All Phase USA',
+    title: 'Roofing Contractor in Jupiter Inlet Colony | All Phase USA',
     description: 'Jupiter Inlet Colony, FL roofer for this gated oceanfront island town — coastal-grade tile \u0026 standing-seam metal, HVHZ-spec, discreet. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/jupiter-inlet-colony'
   },
@@ -112,7 +112,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/southwest-ranches': {
     title: 'Roofing Contractor in Southwest Ranches, FL | All Phase USA',
-    description: 'Southwest Ranches, FL roofer for luxury estates, ranches \u0026 barns on acreage \u2014 premium tile, metal \u0026 shingle, HVHZ-code, dual-licensed. (754) 227-5605.',
+    description: 'Southwest Ranches, FL roofer for estates, ranches & barns on acreage — premium tile, metal & shingle, HVHZ-code, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/southwest-ranches'
   },
   '/locations/hallandale-beach': {
@@ -122,7 +122,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/pembroke-pines': {
     title: 'Roofing Contractor in Pembroke Pines, FL | All Phase USA',
-    description: 'Pembroke Pines, FL roofer for west-side gated communities \u0026 east-side homes \u2014 aging 1990s roofs, HVHZ-code tile \u0026 shingle, dual-licensed. (754) 227-5605.',
+    description: 'Pembroke Pines, FL roofer for gated communities & east-side homes — aging 1990s roofs, HVHZ-code tile & shingle, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-pines'
   },
   '/locations/palm-beach-gardens': {
@@ -132,7 +132,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/hollywood': {
     title: 'Roofing Contractor in Hollywood, FL | All Phase USA',
-    description: 'Hollywood, FL roofer for beach condos, historic Hollywood Lakes homes \u0026 Emerald Hills estates \u2014 tile, flat, shingle \u0026 metal, HVHZ-code. (754) 227-5605.',
+    description: 'Hollywood, FL roofer for beach condos, Hollywood Lakes homes & Emerald Hills estates — tile, flat, shingle & metal, HVHZ-code. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/hollywood'
   },
   '/locations/davie': {
@@ -142,7 +142,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/wilton-manors': {
     title: 'Roofing Contractor in Wilton Manors, FL | All Phase USA',
-    description: 'Wilton Manors, FL roofer for mid-century flat roofs \u0026 canal-front homes \u2014 TPO/PVC flat, shingle, tile \u0026 metal, HVHZ-code, dual-licensed. (754) 227-5605.',
+    description: 'Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/wilton-manors'
   },
   '/locations/parkland': {
@@ -152,12 +152,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/pompano-beach': {
     title: 'Roofing Contractor in Pompano Beach, FL | All Phase USA',
-    description: 'Pompano Beach, FL roofer from Harbor Village dock estates to Palm Aire condos \u2014 HVHZ-code tile, metal, shingle \u0026 flat roofs, dual-licensed. (754) 227-5605.',
+    description: 'Pompano Beach, FL roofer from Harbor Village estates to Palm Aire condos — HVHZ-code tile, metal, shingle & flat, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/pompano-beach'
   },
   '/locations/loxahatchee-groves': {
     title: 'Roofing Contractor in Loxahatchee Groves, FL | All Phase USA',
-    description: 'Loxahatchee Groves, FL roofer for rural homes, barns \u0026 ag structures on acreage \u2014 metal, shingle \u0026 tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    description: 'Loxahatchee Groves, FL roofer for rural homes, barns & ag structures — metal, shingle & tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves'
   },
   '/locations/royal-palm-beach': {
@@ -177,7 +177,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/hillsboro-beach': {
     title: 'Roofing Contractor in Hillsboro Beach, FL | All Phase USA',
-    description: 'Hillsboro Beach, FL roofer for Millionaires\u2019 Mile estates \u0026 oceanfront condos \u2014 premium tile, metal \u0026 flat roofs, coastal-grade, HVHZ code. (754) 227-5605.',
+    description: 'Hillsboro Beach, FL roofer for Millionaires\u2019 Mile estates & oceanfront condos — premium tile, metal & flat, coastal-grade, HVHZ. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/hillsboro-beach'
   },
   '/locations/sea-ranch-lakes': {
@@ -191,7 +191,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park'
   },
   '/locations/lauderdale-by-the-sea': {
-    title: 'Roofing Contractor in Lauderdale-by-the-Sea, FL | All Phase USA',
+    title: 'Roofing Contractor in Lauderdale-by-the-Sea | All Phase USA',
     description: 'Lauderdale-by-the-Sea barrier-island roofer \u2014 coastal-grade tile \u0026 standing-seam metal for salt air \u0026 Atlantic wind, HVHZ. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderdale-by-the-sea'
   },

@@ -26,7 +26,7 @@ export default function SouthwestRanchesMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Southwest Ranches, FL | All Phase USA</title>
-        <meta name="description" content="Southwest Ranches, FL roofer for luxury estates, ranches & barns on acreage — premium tile, metal & shingle, HVHZ-code, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Southwest Ranches, FL roofer for estates, ranches & barns on acreage — premium tile, metal & shingle, HVHZ-code, dual-licensed. (754) 227-5605." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/southwest-ranches" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
