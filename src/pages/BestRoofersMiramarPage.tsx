@@ -115,7 +115,7 @@ export default function BestRoofersMiramarPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (200+ reviews) — Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium. Serves Miramar from Pompano Beach HQ. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium. Serves Miramar from Pompano Beach HQ. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Florida Home360</strong> ⭐ 4.6 — Full-service Broward and Miami-Dade contractor known for roofing and general construction in newer Miramar communities. Strong HOA track record. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
@@ -148,7 +148,7 @@ export default function BestRoofersMiramarPage() {
                 <tbody className="divide-y divide-zinc-800">
                   <tr className="bg-red-900/10">
                     <td className="px-4 py-4 font-medium text-white">All Phase Construction USA</td>
-                    <td className="px-4 py-4 text-zinc-300">⭐ 4.8</td>
+                    <td className="px-4 py-4 text-zinc-300">⭐ 4.9</td>
                     <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Wind Mitigation Upgrades + Full Roof Systems</td>
                     <td className="px-4 py-4 text-zinc-300">20 years (since 2006)</td>
@@ -328,7 +328,7 @@ export default function BestRoofersMiramarPage() {
                 <tbody className="divide-y divide-zinc-800">
                   <tr className="bg-red-900/10">
                     <td className="px-3 py-4 font-medium text-white">All Phase Construction USA</td>
-                    <td className="px-3 py-4 text-zinc-300">⭐ 4.8</td>
+                    <td className="px-3 py-4 text-zinc-300">⭐ 4.9</td>
                     <td className="px-3 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-3 py-4 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="px-3 py-4 text-zinc-300">Wind Mitigation + Insurance Savings</td>
@@ -382,7 +382,7 @@ export default function BestRoofersMiramarPage() {
             <h2 className="text-3xl font-bold text-white mb-4">All Phase Construction USA — Miramar's #1 Choice</h2>
 
             <div className="mb-6">
-              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.8 out of 5 (200+ Google reviews)</p>
+              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.9 out of 5 (160+ Google reviews)</p>
 
               <blockquote className="border-l-4 border-zinc-700 pl-4 mb-4 italic text-zinc-300">
                 "All Phase came highly recommended by our HOA. They navigated the approval process seamlessly and delivered exactly what they promised. The wind mitigation report they provided actually lowered our insurance by $900 annually. Professional, licensed, and honest."<br/>

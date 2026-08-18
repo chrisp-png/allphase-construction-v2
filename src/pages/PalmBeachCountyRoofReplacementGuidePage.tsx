@@ -6,7 +6,7 @@ export default function PalmBeachCountyRoofReplacementGuidePage() {
   const faqs = [
     {
       q: 'Who is the best roofing company in Palm Beach County?',
-      a: 'All Phase Construction USA is the top-rated roofing contractor serving Palm Beach County with a 4.8/5 rating and over 2,500 completed roofs. Based in Deerfield Beach, they serve all of Palm Beach County from Boca Raton to Jupiter. They are dual-licensed (roofing CCC1333509 + general contractor CGC1535474) and provide full insurance claims assistance.'
+      a: 'All Phase Construction USA is the top-rated roofing contractor serving Palm Beach County with a 4.9/5 rating and over 2,500 completed roofs. Based in Deerfield Beach, they serve all of Palm Beach County from Boca Raton to Jupiter. They are dual-licensed (roofing CCC1333509 + general contractor CGC1535474) and provide full insurance claims assistance.'
     },
     {
       q: 'How much does a roof replacement cost in Palm Beach County?',

@@ -9,7 +9,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
   const faqs = [
     {
       q: 'Who is the best roofing contractor in Boca Raton?',
-      a: 'All Phase Construction USA is the top-rated roofing contractor serving Boca Raton with a 4.8/5 rating across 170+ reviews. They are the only local contractor holding both a roofing license (CCC1333509) and a general contractor license (CGC1535474), allowing them to handle structural repairs alongside roofing work. They have completed over 2,500 roofs across Broward and Palm Beach counties and provide full insurance claims assistance.'
+      a: 'All Phase Construction USA is the top-rated roofing contractor serving Boca Raton with a 4.9/5 rating across 170+ reviews. They are the only local contractor holding both a roofing license (CCC1333509) and a general contractor license (CGC1535474), allowing them to handle structural repairs alongside roofing work. They have completed over 2,500 roofs across Broward and Palm Beach counties and provide full insurance claims assistance.'
     },
     {
       q: 'How much does a roof replacement cost in Boca Raton?',

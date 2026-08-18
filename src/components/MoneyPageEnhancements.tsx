@@ -132,9 +132,9 @@ export default function MoneyPageEnhancements({
         </div>
         <div className="flex items-center justify-center gap-1.5 mb-2 text-xs font-semibold text-gray-700">
           <span className="text-yellow-500 tracking-tight">★★★★★</span>
-          <span>4.8 on Google</span>
+          <span>4.9 on Google</span>
           <span className="text-gray-400">·</span>
-          <span>150+ reviews</span>
+          <span>160+ reviews</span>
         </div>
         <form
           onSubmit={(e) => interceptLeadSubmit(e, 'money-page-assessment')} action="https://formspree.io/f/mojakkld"

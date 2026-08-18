@@ -115,7 +115,7 @@ export default function BestRoofersJupiterPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.8 (200+ reviews) — Dual-licensed roofer + general contractor with 20 years serving Palm Beach County. Specializes in wind mitigation upgrades that lower insurance premiums on luxury homes. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer + general contractor with 20 years serving Palm Beach County. Specializes in wind mitigation upgrades that lower insurance premiums on luxury homes. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Embick Enterprises</strong> ⭐ 4.7 — Northern Palm Beach County roofer with established reputation for residential and commercial work. Proven experience with complex roofing systems in Jupiter's upscale communities. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
@@ -148,7 +148,7 @@ export default function BestRoofersJupiterPage() {
                 <tbody className="divide-y divide-zinc-800">
                   <tr className="bg-red-900/10">
                     <td className="px-4 py-4 font-medium text-white">All Phase Construction USA</td>
-                    <td className="px-4 py-4 text-zinc-300">⭐ 4.8</td>
+                    <td className="px-4 py-4 text-zinc-300">⭐ 4.9</td>
                     <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Wind Mitigation Upgrades + Full Roof Systems</td>
                     <td className="px-4 py-4 text-zinc-300">20 years (est. 2006)</td>
@@ -329,7 +329,7 @@ export default function BestRoofersJupiterPage() {
             <h2 className="text-3xl font-bold text-white mb-4">#1 — All Phase Construction USA</h2>
 
             <div className="mb-6">
-              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.8 out of 5 | 200+ Google Reviews | 21 Years in Business</p>
+              <p className="text-xl text-yellow-500 font-semibold mb-4">⭐ 4.9 out of 5 | 160+ Google Reviews | 21 Years in Business</p>
 
               <blockquote className="border-l-4 border-zinc-700 pl-4 mb-4 italic text-zinc-300">
                 "All Phase Construction transformed our roof project from stressful to seamless. Their professionalism with our HOA and their attention to wind mitigation details saved us thousands on insurance. Highly recommend for Jupiter's luxury homes."<br/>

@@ -40,8 +40,8 @@ export default function WestPalmBeachMoneyPage() {
     latitude: coordinates?.latitude,
     longitude: coordinates?.longitude,
     aggregateRating: {
-      ratingValue: '4.8',
-      reviewCount: '150'
+      ratingValue: '4.9',
+      reviewCount: '160'
     }
   });
 
@@ -82,10 +82,10 @@ export default function WestPalmBeachMoneyPage() {
                 <AISearchRail query="Who are the top dual-licensed roofing contractors in West Palm Beach Florida and what should I know about HVHZ-compliant residential re-roofs?" />
               </div>
               <div className="mt-6 mb-6">
-                <AtomicAnswer>All Phase Construction USA serves West Palm Beach, FL under dual state licenses CCC-1331464 (Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor). The Deerfield Beach-based team installs tile, metal, shingle, and flat roofing built to South Florida HVHZ wind code, with 150+ five-star Google reviews and 24-hour scheduling availability.</AtomicAnswer>
+                <AtomicAnswer>All Phase Construction USA serves West Palm Beach, FL under dual state licenses CCC-1331464 (Certified Roofing Contractor) and CGC-1526236 (Certified General Contractor). The Deerfield Beach-based team installs tile, metal, shingle, and flat roofing built to South Florida HVHZ wind code, with 160+ five-star Google reviews and 24-hour scheduling availability.</AtomicAnswer>
               </div>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
-                  <span className="text-yellow-400">★ 4.8 Google</span>
+                  <span className="text-yellow-400">★ 4.9 Google</span>
                   <span className="text-red-400">·</span>
                   <span>2,500+ Roofs</span>
                   <span className="text-red-400">·</span>

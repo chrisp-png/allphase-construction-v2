@@ -41,8 +41,8 @@ export default function FreeRoofEstimatePage() {
               A licensed estimator comes to your home, inspects and measures the roof, and gives you a written, line-item quote — for a roof replacement or a roof repair. No charge, no obligation. Dual-licensed (CCC-1331464 &amp; CGC-1526236), serving South Florida since 2006.
             </p>
             <div className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 bg-black/40 border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold mb-8">
-              <span className="text-yellow-400">★ 4.8 Google</span><span className="text-red-400">·</span>
-              <span>150+ Reviews</span><span className="text-red-400">·</span>
+              <span className="text-yellow-400">★ 4.9 Google</span><span className="text-red-400">·</span>
+              <span>160+ Reviews</span><span className="text-red-400">·</span>
               <span>Dual-Licensed Since 2006</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

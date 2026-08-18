@@ -144,10 +144,10 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-white hover:text-red-400 transition-colors font-medium text-xs"
-                aria-label="Read our 4.8 star Google reviews"
+                aria-label="Read our 4.9 star Google reviews"
               >
-                <span className="hidden sm:inline">4.8 <span className="text-yellow-400">★</span> Google Reviews</span>
-                <span className="sm:hidden">4.8<span className="text-yellow-400">★</span> Reviews</span>
+                <span className="hidden sm:inline">4.9 <span className="text-yellow-400">★</span> Google Reviews</span>
+                <span className="sm:hidden">4.9<span className="text-yellow-400">★</span> Reviews</span>
               </a>
               {/* PR-67: Swapped from "Get Directions" (0 clicks per GBP analytics)
                   to "Google Guaranteed" trust badge. All Phase is Google
@@ -568,9 +568,9 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-1 px-4 py-3 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 focus:ring-offset-black"
-                  aria-label="Read our 4.8 star Google reviews"
+                  aria-label="Read our 4.9 star Google reviews"
                 >
-                  4.8<span className="text-yellow-400">★</span> Reviews
+                  4.9<span className="text-yellow-400">★</span> Reviews
                 </a>
                 <a
                   href={EXTERNAL_LINKS.GOOGLE_MAPS}

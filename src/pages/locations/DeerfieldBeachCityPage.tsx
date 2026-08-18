@@ -197,7 +197,7 @@ export default function DeerfieldBeachCityPage() {
               </h1>
 
               <p className="text-xl text-gray-400 mb-8">
-                All Phase Construction USA has been the Deerfield Beach local roofing HQ since 2006 — 2,500+ completed roofs, dual state licenses (CCC-1331464 & CGC-1526236), and 150+ five-star Google reviews. We diagnose before we quote: every project starts with a free inspection-first assessment.
+                All Phase Construction USA has been the Deerfield Beach local roofing HQ since 2006 — 2,500+ completed roofs, dual state licenses (CCC-1331464 & CGC-1526236), and 160+ five-star Google reviews. We diagnose before we quote: every project starts with a free inspection-first assessment.
               </p>
 
               {/* PR-71: AI Search Rail — Deerfield Beach city query */}
@@ -206,7 +206,7 @@ export default function DeerfieldBeachCityPage() {
                 className="mb-6"
               />
 
-              <AtomicAnswer>All Phase Construction USA is a Deerfield Beach roofing contractor headquartered in the city since 2006, licensed under CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The team installs tile, metal, shingle, and flat roofing for Deerfield Beach homes, holds 4.8 stars across 150+ Google reviews, and answers calls 24 hours a day.</AtomicAnswer>
+              <AtomicAnswer>All Phase Construction USA is a Deerfield Beach roofing contractor headquartered in the city since 2006, licensed under CCC-1331464 (Certified Roofing) and CGC-1526236 (Certified General Contractor). The team installs tile, metal, shingle, and flat roofing for Deerfield Beach homes, holds 4.9 stars across 160+ Google reviews, and answers calls 24 hours a day.</AtomicAnswer>
                             {/* Credential Box */}
               <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">
                 <div className="flex items-center gap-2 mb-3">
@@ -257,7 +257,7 @@ export default function DeerfieldBeachCityPage() {
               <div className="flex flex-wrap items-center gap-6 text-gray-300 text-sm md:text-base mb-8">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                  <span className="font-medium">4.8 Rating • 150+ Reviews</span>
+                  <span className="font-medium">4.9 Rating • 160+ Reviews</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-red-600" />
