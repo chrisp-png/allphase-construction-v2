@@ -2220,6 +2220,8 @@ function generateHoaRoofFinancingContent() {
     <h1>Condo & HOA Roof Financing in South Florida | All Phase USA</h1>
     <p><strong>Your association needs a new roof. Nobody wants a five-figure special assessment.</strong> All Phase Construction USA replaces association roofs — dual-licensed (CCC-1331464 & CGC-1526236), with $1M–$2.4M community projects completed — and our financing partner <strong>TuCielo</strong> funds the work with a fixed-rate association loan repaid monthly. Call <strong>(754) 227-5605</strong> for a free association roof assessment.</p>
 
+    <img src="/projects/deerfield-beach-condo-hoa-roof-completed-by-all-phase-usa-1200.webp" alt="Completed white flat roof system on a Deerfield Beach condominium building by All Phase Construction USA, with rooftop HVAC units" width="1200" height="675" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;" />
+
     <h2>The Math Every Board Should See</h2>
     <p>A $1M roof replacement for a 100-unit association means a <strong>$10,000 per-unit special assessment due up front</strong> — owner pushback, recall threats, and delayed work. The same roof financed over 25 years at a fixed rate works out to roughly <strong>$92 per unit per month</strong>. At $2.5M, the lender's illustrative example is about <strong>$210 per unit per month</strong> instead of $25,000 per unit up front. (Illustrative figures at 8.99% fixed with closing fees and debt-service coverage financed; actual terms set by underwriting.)</p>
 

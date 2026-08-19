@@ -54,6 +54,20 @@ export default function HoaRoofFinancingPage() {
                 <ClipboardList className="w-6 h-6" /> Request an Association Roof Assessment
               </Link>
             </div>
+            <figure className="rounded-xl overflow-hidden border border-zinc-800 shadow-2xl mt-10">
+              <img
+                src="/projects/deerfield-beach-condo-hoa-roof-completed-by-all-phase-usa-1200.webp"
+                srcSet="/projects/deerfield-beach-condo-hoa-roof-completed-by-all-phase-usa-600.webp 600w, /projects/deerfield-beach-condo-hoa-roof-completed-by-all-phase-usa-1200.webp 1200w"
+                sizes="(max-width: 768px) 100vw, 896px"
+                alt="Completed white flat roof system on a Deerfield Beach condominium building by All Phase Construction USA, with rooftop HVAC units"
+                width={1200}
+                height={675}
+                className="w-full h-auto object-cover"
+              />
+              <figcaption className="bg-zinc-900/80 px-4 py-2 text-sm text-zinc-400">
+                A completed association flat-roof system in Deerfield Beach — the scale of work TuCielo financing covers.
+              </figcaption>
+            </figure>
           </div>
         </section>
 
