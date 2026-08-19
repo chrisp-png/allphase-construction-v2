@@ -2064,6 +2064,9 @@ function generateCalculatorHubContent() {
 
   <p><strong>Use the calculator to get a preliminary roof replacement cost for any home in Broward or Palm Beach County.</strong> The estimate is based on the inputs you provide and 2026 South Florida material and labor rates. It is not a proposal — every real proposal is written line-item after an in-person inspection — but it gives you a defensible budget number before you call anyone.</p>
 
+  <h2>Metal Roof Cost in South Florida (2026)</h2>
+  <p>Searching for a straight answer on metal roof cost? Here it is. Metal roofing in Broward and Palm Beach County runs <strong>$8 to $25 per square foot installed</strong>, depending on the system: snap-lock steel panels at roughly <strong>$8–$13/sq ft</strong>, mechanically seamed steel or aluminum with a Kynar finish at roughly <strong>$12–$19/sq ft</strong>, and premium mechanically seamed aluminum at roughly <strong>$18–$25/sq ft</strong>. For most South Florida homes that puts a complete metal roof between <strong>$15,000 and $45,000 installed</strong> — larger homes and premium aluminum systems run higher. Near the coast, aluminum is worth the step up: it will not rust in salt air the way steel can. The calculator below prices metal side-by-side with shingle, tile, and flat systems for your actual roof size, and our <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">metal roofing guide</a> covers the engineering — seam types, clip spacing, gauge, and HVHZ requirements — behind those numbers.</p>
+
   <h2>What the Calculator Asks For</h2>
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>Square footage</strong> — roof area, not house footprint. The calculator can convert from house square footage if you don't know roof area.</li>
@@ -2079,7 +2082,7 @@ function generateCalculatorHubContent() {
     <li><strong>Asphalt shingle</strong> — roughly $14,000 to $22,000.</li>
     <li><strong>Concrete tile</strong> — roughly $28,000 to $45,000 (full replacement). A <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile lift-and-relay</a> that reuses the existing tile typically lands meaningfully lower.</li>
     <li><strong>Clay tile</strong> — roughly $40,000 to $70,000+.</li>
-    <li><strong>Standing-seam metal</strong> — roughly $30,000 to $55,000.</li>
+    <li><strong>Metal</strong> — roughly $16,000 to $50,000, from snap-lock steel at the entry level to mechanically seamed premium aluminum at the top.</li>
     <li><strong>Flat roof recover (TPO/PVC)</strong> — roughly $9 to $14 per square foot of flat area.</li>
   </ul>
 
