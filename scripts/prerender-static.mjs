@@ -2221,15 +2221,15 @@ function generateRoofReplacementCostFloridaContent() {
 function generateHoaRoofFinancingContent() {
   return `
     <h1>Condo & HOA Roof Financing in South Florida | All Phase USA</h1>
-    <p><strong>Your association needs a new roof. Nobody wants a five-figure special assessment.</strong> All Phase Construction USA replaces association roofs — dual-licensed (CCC-1331464 & CGC-1526236), with community projects completed up to $5M — and our financing partner <strong>TuCielo</strong> funds the work with a fixed-rate association loan repaid monthly. Call <strong>(754) 227-5605</strong> for a free association roof assessment.</p>
+    <p><strong>Your association needs a new roof. Nobody wants a five-figure special assessment.</strong> All Phase Construction USA replaces association roofs — dual-licensed (CCC-1331464 & CGC-1526236), with community projects completed up to $5M — and our financing partner funds the work with a fixed-rate association loan your owners repay monthly. Call <strong>(754) 227-5605</strong> for a free association roof assessment.</p>
 
     <h2>The Math Every Board Should See</h2>
     <p>A $1M roof replacement for a 100-unit association means a <strong>$10,000 per-unit special assessment due up front</strong> — owner pushback, recall threats, and delayed work. The same roof financed over 25 years at a fixed rate works out to roughly <strong>$92 per unit per month</strong>. At $2.5M, the lender's illustrative example is about <strong>$210 per unit per month</strong> instead of $25,000 per unit up front. (Illustrative figures at 8.99% fixed with closing fees and debt-service coverage financed; actual terms set by underwriting.)</p>
 
     <h2>How Association Roof Financing Works</h2>
     <p><strong>1. Free association roof assessment.</strong> We inspect, document, and deliver a written, line-item scope and price your board can present to owners.</p>
-    <p><strong>2. We introduce your board to TuCielo.</strong> One referral from All Phase and TuCielo's Florida association-financing team handles the entire money conversation.</p>
-    <p><strong>3. TuCielo underwrites the association, not a checklist.</strong> Decisions in weeks, loans from $500K to $15M+, terms to 25 years — including associations banks have declined, and SIRS-mandated reserve funding alongside the capital project.</p>
+    <p><strong>2. We introduce your board to our financing partner.</strong> One introduction from All Phase and their Florida association-financing team handles the entire money conversation.</p>
+    <p><strong>3. The lender underwrites the association, not a checklist.</strong> Decisions in weeks, loans from $500K to $15M+, terms to 25 years — including associations banks have declined, and SIRS-mandated reserve funding alongside the capital project.</p>
     <p><strong>4. Funding matches our contract milestones.</strong> Disbursements follow the payment schedule in our roofing agreement, so crews are paid on time and the project never stalls waiting on money.</p>
 
     <h2>Why Boards Choose All Phase for Association Roofs</h2>
@@ -2241,21 +2241,21 @@ function generateHoaRoofFinancingContent() {
     <p>Associations with <strong>15 or more units</strong>; projects from roughly <strong>$500K to $15M+</strong>. Roofing and waterproofing are primary qualifying project types, alongside concrete restoration, impact windows and doors, and other common-area capital improvements. Existing association loans can be refinanced and new scope added in one transaction.</p>
 
     <h2>Straight Talk: What Financing Really Costs</h2>
-    <p>Financing is not free money. Closing fees (about 5%) and a debt-service coverage reserve are financed into the loan, rates are fixed but real (illustrative examples use 8.99%), and a special assessment still exists legally — it is converted into manageable monthly payments, not eliminated. What financing buys is the ability to do mandatory work now, at today's construction prices, without a five-figure demand on every owner. All Phase Construction USA is a roofing and general contractor, not a lender; financing is provided by TuCielo (powered by Ygrene Energy Fund Inc.) and all terms are determined solely by TuCielo underwriting.</p>
+    <p>Financing is not free money. Closing fees (about 5%) and a debt-service coverage reserve are financed into the loan, rates are fixed but real (illustrative examples use 8.99%), and a special assessment still exists legally — it is converted into manageable monthly payments, not eliminated. What financing buys is the ability to do mandatory work now, at today's construction prices, without a five-figure demand on every owner. All Phase Construction USA is a roofing and general contractor, not a lender; financing is provided by a licensed third-party lending partner and all terms are determined solely by the lender's underwriting.</p>
 
     <h2>Frequently Asked Questions</h2>
     <h3>Can our condo association finance a roof replacement instead of a special assessment?</h3>
-    <p>Yes. Through our financing partner TuCielo, Florida condo and homeowner associations can fund a full roof replacement with a fixed-rate association loan and repay it monthly — converting a large lump-sum special assessment into a manageable per-unit monthly payment.</p>
+    <p>Yes. Through our financing partner, Florida condo and homeowner associations can fund a full roof replacement with a fixed-rate association loan and repay it monthly — converting a large lump-sum special assessment into a manageable per-unit monthly payment.</p>
     <h3>Who repays the loan — are board members or unit owners personally liable?</h3>
     <p>The association is the borrower. Board members are not personally liable, no liens are placed on individual units, and the loan does not affect individual unit owners' credit scores.</p>
     <h3>How much does association roof financing cost per unit?</h3>
     <p>Illustrative lender example: a $2.5M project over 25 years at 8.99% fixed for a 100-unit association is roughly $210 per unit per month, versus a $25,000 lump-sum assessment per unit. Actual figures depend on underwriting.</p>
     <h3>Does association financing cover SIRS-mandated reserves?</h3>
-    <p>Yes. TuCielo finances required reserves, including SIRS-mandated funding, alongside the capital improvement itself.</p>
+    <p>Yes. Our financing partner funds required reserves, including SIRS-mandated funding, alongside the capital improvement itself.</p>
     <h3>What size projects qualify?</h3>
     <p>Associations with 15+ units, with financing from roughly $500K to $15M+.</p>
     <h3>Does financing slow the roof project down?</h3>
-    <p>No. TuCielo targets a decision in weeks, and funding is disbursed to match the payment milestones in our roofing agreement, so the work never stalls.</p>
+    <p>No. Our financing partner targets a decision in weeks, and funding is disbursed to match the payment milestones in our roofing agreement, so the work never stalls.</p>
 
     <p><strong>Bring your board a roof and a way to pay for it. Call (754) 227-5605</strong> for a free association roof assessment — or see our <a href="/commercial-roofing" style="color:#dc2626;text-decoration:underline;">commercial roofing services</a> and <a href="/tile-roofing" style="color:#dc2626;text-decoration:underline;">tile roofing systems</a>.</p>
   `;
@@ -3494,12 +3494,12 @@ async function generateStaticFiles() {
   const SERVICE_PAGE_SCHEMAS = {
     '/hoa-condo-roof-financing': {
       faqs: [
-        { question: 'Can our condo association finance a roof replacement instead of a special assessment?', answer: 'Yes. Through our financing partner TuCielo, Florida condo and homeowner associations can fund a full roof replacement with a fixed-rate association loan and repay it monthly \u2014 converting a large lump-sum special assessment into a manageable per-unit monthly payment. All Phase Construction USA performs the roofing work; TuCielo provides and underwrites the financing.' },
+        { question: 'Can our condo association finance a roof replacement instead of a special assessment?', answer: 'Yes. Through our financing partner, Florida condo and homeowner associations can fund a full roof replacement with a fixed-rate association loan and repay it monthly \u2014 converting a large lump-sum special assessment into a manageable per-unit monthly payment. All Phase Construction USA performs the roofing work; our licensed lending partner provides and underwrites the financing.' },
         { question: 'Who repays the loan \u2014 are board members or unit owners personally liable?', answer: 'The association is the borrower. Board members are not personally liable, no liens are placed on individual units, and the loan does not affect individual unit owners\u2019 credit scores. Owners contribute through regular monthly payments instead of a one-time assessment.' },
         { question: 'How much does association roof financing cost per unit?', answer: 'As an illustrative example from the lender: a $2.5M project financed over 25 years at a fixed rate of 8.99% for a 100-unit association works out to roughly $210 per unit per month, versus a $25,000 lump-sum special assessment per unit. Actual rates and payments depend on project size, term, unit count, and underwriting.' },
-        { question: 'Does association financing cover SIRS-mandated reserves?', answer: 'Yes. TuCielo finances required reserves, including SIRS-mandated funding, alongside the capital improvement itself \u2014 so an association facing both a roof replacement and a reserve shortfall can address both in one transaction.' },
+        { question: 'Does association financing cover SIRS-mandated reserves?', answer: 'Yes. Our financing partner funds required reserves, including SIRS-mandated funding, alongside the capital improvement itself \u2014 so an association facing both a roof replacement and a reserve shortfall can address both in one transaction.' },
         { question: 'What size projects qualify for association roof financing?', answer: 'Associations with 15 or more units qualify, with project financing from roughly $500K to $15M+. Roofing and waterproofing are among the primary qualifying project types, along with concrete restoration, impact windows and doors, and other common-area capital improvements.' },
-        { question: 'Does financing slow the roof project down?', answer: 'No. TuCielo targets a financing decision in weeks, not the months a bank approval can take, and funding is disbursed to match the payment milestones in our roofing agreement \u2014 so crews are paid on schedule and the work never stalls waiting on money.' }
+        { question: 'Does financing slow the roof project down?', answer: 'No. Our financing partner targets a decision in weeks, not the months a bank approval can take, and funding is disbursed to match the payment milestones in our roofing agreement \u2014 so crews are paid on schedule and the work never stalls waiting on money.' }
       ],
       breadcrumbs: [
         { name: 'Home', url: 'https://allphaseconstructionfl.com/' },

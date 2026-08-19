@@ -1290,7 +1290,7 @@ export default function CommercialRoofingPage() {
                   Condo &amp; HOA Roof Financing
                 </h3>
               </div>
-              <p className="text-zinc-400 text-sm">Replace your association&apos;s roof with monthly payments instead of a lump-sum special assessment — financing introduced by All Phase, funded by TuCielo.</p>
+              <p className="text-zinc-400 text-sm">Replace your association&apos;s roof with monthly payments instead of a lump-sum special assessment — financing arranged through our licensed lending partner.</p>
             </Link>
             <Link to="/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
               <div className="flex items-start gap-3 mb-3">
