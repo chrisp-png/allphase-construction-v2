@@ -39,7 +39,7 @@ export default function HoaRoofFinancingPage() {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Condo &amp; HOA Roof Financing in South Florida</h1>
             <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-              Your association needs a new roof. Nobody wants a five-figure special assessment. We solve both: All Phase Construction USA replaces the roof — dual-licensed (CCC-1331464 &amp; CGC-1526236), with $1M–$2.4M association projects completed — and our financing partner <span className="text-white font-semibold">TuCielo</span> funds it with a fixed-rate association loan your owners repay monthly.
+              Your association needs a new roof. Nobody wants a five-figure special assessment. We solve both: All Phase Construction USA replaces the roof — dual-licensed (CCC-1331464 &amp; CGC-1526236), with association projects completed up to $5M — and our financing partner <span className="text-white font-semibold">TuCielo</span> funds it with a fixed-rate association loan your owners repay monthly.
             </p>
             <div className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 bg-black/40 border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold mb-8">
               <span className="text-yellow-400">★ 4.9 Google</span><span className="text-red-400">·</span>
@@ -93,7 +93,7 @@ export default function HoaRoofFinancingPage() {
             <h2 className="text-3xl font-bold mb-8">Why Boards Choose All Phase for Association Roofs</h2>
             <div className="space-y-5 text-lg text-zinc-300">
               <div className="flex items-start gap-4"><Shield className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">Dual-licensed, which matters more on association work.</span> We hold both the roofing license (CCC-1331464) and a general contractor license (CGC-1526236) — so structural conditions uncovered during tear-off, from decking to trusses, are handled in-house under one agreement instead of stopping the job.</p></div>
-              <div className="flex items-start gap-4"><Building2 className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">Association-scale track record.</span> Completed community roof replacements at $2.4M and $1.2M, plus commercial work for institutional clients — with HOA boards, property managers, and engineering-report requirements as part of the normal workflow, not a surprise.</p></div>
+              <div className="flex items-start gap-4"><Building2 className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">Association-scale track record.</span> Completed community roof replacements up to $5M, plus commercial work for institutional clients — with HOA boards, property managers, and engineering-report requirements as part of the normal workflow, not a surprise.</p></div>
               <div className="flex items-start gap-4"><CheckCircle2 className="w-6 h-6 text-red-500 shrink-0 mt-1" /><p><span className="text-white font-semibold">Built for Florida&apos;s new reality.</span> Milestone inspections and SIRS reserve requirements are forcing roof decisions boards didn&apos;t budget for. We document everything for your engineer, your insurer, and your owners&apos; meeting.</p></div>
             </div>
           </div>

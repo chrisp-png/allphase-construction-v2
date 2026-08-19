@@ -2221,7 +2221,7 @@ function generateRoofReplacementCostFloridaContent() {
 function generateHoaRoofFinancingContent() {
   return `
     <h1>Condo & HOA Roof Financing in South Florida | All Phase USA</h1>
-    <p><strong>Your association needs a new roof. Nobody wants a five-figure special assessment.</strong> All Phase Construction USA replaces association roofs — dual-licensed (CCC-1331464 & CGC-1526236), with $1M–$2.4M community projects completed — and our financing partner <strong>TuCielo</strong> funds the work with a fixed-rate association loan repaid monthly. Call <strong>(754) 227-5605</strong> for a free association roof assessment.</p>
+    <p><strong>Your association needs a new roof. Nobody wants a five-figure special assessment.</strong> All Phase Construction USA replaces association roofs — dual-licensed (CCC-1331464 & CGC-1526236), with community projects completed up to $5M — and our financing partner <strong>TuCielo</strong> funds the work with a fixed-rate association loan repaid monthly. Call <strong>(754) 227-5605</strong> for a free association roof assessment.</p>
 
     <h2>The Math Every Board Should See</h2>
     <p>A $1M roof replacement for a 100-unit association means a <strong>$10,000 per-unit special assessment due up front</strong> — owner pushback, recall threats, and delayed work. The same roof financed over 25 years at a fixed rate works out to roughly <strong>$92 per unit per month</strong>. At $2.5M, the lender's illustrative example is about <strong>$210 per unit per month</strong> instead of $25,000 per unit up front. (Illustrative figures at 8.99% fixed with closing fees and debt-service coverage financed; actual terms set by underwriting.)</p>
@@ -2234,7 +2234,7 @@ function generateHoaRoofFinancingContent() {
 
     <h2>Why Boards Choose All Phase for Association Roofs</h2>
     <p><strong>Dual-licensed where it matters.</strong> Holding both the Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) licenses means structural conditions uncovered during tear-off — decking, trusses, roof-to-wall connections — are handled in-house under one agreement instead of stopping the job.</p>
-    <p><strong>Association-scale track record.</strong> Completed community roof replacements at $2.4M and $1.2M plus institutional commercial work, with boards, property managers, and engineering-report requirements part of the normal workflow.</p>
+    <p><strong>Association-scale track record.</strong> Completed community roof replacements up to $5M plus institutional commercial work, with boards, property managers, and engineering-report requirements part of the normal workflow.</p>
     <p><strong>Built for Florida's new reality.</strong> Milestone inspections and SIRS reserve requirements are forcing roof decisions associations didn't budget for. We document everything for your engineer, your insurer, and your owners' meeting — and every installation meets HVHZ requirements in Broward County and Palm Beach County wind-code requirements.</p>
 
     <h2>What Qualifies</h2>
