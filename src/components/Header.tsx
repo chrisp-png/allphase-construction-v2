@@ -48,6 +48,7 @@ export default function Header() {
 
   // Material-based services that appear under Commercial
   const materialBasedServices = [
+    { name: 'Condo & HOA Roof Financing', path: '/hoa-condo-roof-financing/' },
     { name: 'Tile Roofing', path: '/tile-roofing/' },
     { name: 'Metal Roofing', path: '/metal-roofing/' },
     { name: 'Shingle Roofing', path: '/shingle-roofing/' },
