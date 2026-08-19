@@ -9,7 +9,7 @@
 
 ## TL;DR
 
-**Florida condo and homeowner associations no longer have to fund a roof replacement with a painful lump-sum special assessment.** Association financing lets the association itself borrow the full project cost — typically $500K to $15M+, over terms up to 25 years — and repay it monthly from association funds. The association is the borrower, so board members are not personally liable, no liens are placed on individual units, and individual owners' credit scores are never touched. The math is what changes board votes: a $1M roof replacement for a 100-unit community means a $10,000 special assessment per unit due up front, versus roughly $92 per unit per month when financed (illustrative lender example at a 25-year term and 8.99% fixed). With Florida's milestone inspections and SIRS reserve requirements now forcing roof decisions that many communities never budgeted for, financing has become the difference between a project that passes at the owners' meeting and one that stalls for years while the roof gets worse and construction prices climb. All Phase Construction USA performs the roof work — dual-licensed (CCC-1331464 & CGC-1526236), with $1M–$2.4M association roof replacements completed — and our financing partner TuCielo handles the lending conversation directly with your board, with funding disbursed to match our contract's payment milestones so the work never stalls waiting on money.
+**Florida condo and homeowner associations no longer have to fund a roof replacement with a painful lump-sum special assessment.** Association financing lets the association itself borrow the full project cost — typically $500K to $15M+, over terms up to 25 years — and repay it monthly from association funds. The association is the borrower, so board members are not personally liable, no liens are placed on individual units, and individual owners' credit scores are never touched. The math is what changes board votes: a $1M roof replacement for a 100-unit community means a $10,000 special assessment per unit due up front, versus roughly $92 per unit per month when financed (illustrative lender example at a 25-year term and 8.99% fixed). With Florida's milestone inspections and SIRS reserve requirements now forcing roof decisions that many communities never budgeted for, financing has become the difference between a project that passes at the owners' meeting and one that stalls for years while the roof gets worse and construction prices climb. All Phase Construction USA performs the roof work — dual-licensed (CCC-1331464 & CGC-1526236), with association roof replacements completed up to $5M — and our financing partner handles the lending conversation directly with your board, with funding disbursed to match our contract's payment milestones so the work never stalls waiting on money.
 
 ---
 
@@ -53,7 +53,7 @@ Association financing is a loan made to the association itself — not to the in
 
 Owners still contribute — legally, a special assessment still exists — but instead of a five-figure lump sum due in weeks, it's converted into a manageable monthly payment spread over the life of the loan.
 
-The financing our clients use, through our partner TuCielo, covers projects from roughly **$500K to $15M+** for associations with **15 or more units**, on terms up to **25 years** — and it can fund **SIRS-mandated reserves alongside the roof itself**, so a community facing both a replacement and a reserve shortfall can solve both in one transaction. Associations that banks have already declined are approved regularly, because the underwriting looks at the whole association rather than a bank's checklist.
+The financing our clients use, through our lending partner, covers projects from roughly **$500K to $15M+** for associations with **15 or more units**, on terms up to **25 years** — and it can fund **SIRS-mandated reserves alongside the roof itself**, so a community facing both a replacement and a reserve shortfall can solve both in one transaction. Associations that banks have already declined are approved regularly, because the underwriting looks at the whole association rather than a bank's checklist.
 
 ---
 
@@ -78,9 +78,9 @@ We've built this into a simple sequence for boards:
 
 **1. Free association roof assessment.** A licensed estimator inspects and documents the roof, and your board receives a written, line-item scope and price — the kind of documentation your engineer, your insurer, and your owners' meeting all need.
 
-**2. We introduce your board to TuCielo.** One referral from us, and their Florida association-financing team handles the entire money conversation. Your board never has to shop lenders.
+**2. We introduce your board to our financing partner.** One introduction from us, and their Florida association-financing team handles the entire money conversation. Your board never has to shop lenders.
 
-**3. TuCielo underwrites the association.** Decisions typically come in weeks, not the months a bank takes — including for associations with deferred maintenance or reserve shortfalls that banks decline.
+**3. The lender underwrites the association.** Decisions typically come in weeks, not the months a bank takes — including for associations with deferred maintenance or reserve shortfalls that banks decline.
 
 **4. Funding follows our contract milestones.** Disbursements match the payment schedule in our roofing agreement, so crews are paid on time and the project never stalls mid-tear-off waiting on money.
 
@@ -88,7 +88,7 @@ We've built this into a simple sequence for boards:
 
 *A completed association flat-roof system in Deerfield Beach — dual-licensed work at association scale.*
 
-And on the roofing side: we hold both the Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), which matters more on association work than anywhere else. When tear-off reveals structural conditions — decking, trusses, roof-to-wall connections — we handle them in-house under one agreement instead of stopping a multi-building project to bring in a second contractor. Our completed association projects include community roof replacements at $2.4M and $1.2M.
+And on the roofing side: we hold both the Certified Roofing Contractor license (CCC-1331464) and a Certified General Contractor license (CGC-1526236), which matters more on association work than anywhere else. When tear-off reveals structural conditions — decking, trusses, roof-to-wall connections — we handle them in-house under one agreement instead of stopping a multi-building project to bring in a second contractor. Our completed association projects include community roof replacements up to $5M.
 
 ---
 
@@ -100,7 +100,7 @@ Closing fees (about 5%) and a debt-service coverage reserve are financed into th
 
 What financing buys is the ability to do **mandatory work now, at today's construction prices**, without a five-figure demand on every owner — and without the board wearing the liability of another deferred year. In a market where costs rise annually and insurers won't wait, that trade is usually worth making. But it's your board's call to make with clear numbers, and we'd rather you have them all.
 
-(For clarity: All Phase Construction USA is a roofing and general contractor, not a lender. Financing is provided by TuCielo, and all terms, approvals, and rates are determined solely by their underwriting.)
+(For clarity: All Phase Construction USA is a roofing and general contractor, not a lender. Financing is provided by a licensed third-party lending partner, and all terms, approvals, and rates are determined solely by their underwriting.)
 
 ---
 
@@ -112,7 +112,7 @@ Boards that move fast through financing tend to arrive with the same short stack
 
 ## Bring Your Board a Roof and a Way to Pay for It
 
-If your community is staring down a roof decision — because of a milestone inspection, a SIRS study, an insurance ultimatum, or just an honest look at the roof — start with the free association roof assessment. You'll get a written scope your owners can understand, and if financing makes sense, we'll make the TuCielo introduction the same day.
+If your community is staring down a roof decision — because of a milestone inspection, a SIRS study, an insurance ultimatum, or just an honest look at the roof — start with the free association roof assessment. You'll get a written scope your owners can understand, and if financing makes sense, we'll make the lender introduction the same day.
 
 **Learn more on our [Condo & HOA Roof Financing page](/hoa-condo-roof-financing), or call (754) 227-5605.** A real person answers 24/7.
 
