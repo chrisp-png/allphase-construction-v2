@@ -354,6 +354,11 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
         description: 'Reach a live person 24/7 for emergency roof repair in Broward & Palm Beach County. Leaks booked any hour, technician out fast. (754) 227-5605.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
+    '/hoa-condo-roof-financing': {
+    title: 'Condo & HOA Roof Financing in South Florida | All Phase USA',
+    description: "Condo & HOA roof financing in Broward & Palm Beach — replace your association's roof with monthly payments, not a lump-sum special assessment. (754) 227-5605.",
+    canonical: 'https://allphaseconstructionfl.com/hoa-condo-roof-financing'
+  },
     '/licensed-roofing-contractor': {
     title: 'Licensed & Certified Roofing Contractor | Verify FL License',
     description: "Licensed & certified roofing contractor for Broward & Palm Beach (CCC-1331464, CGC-1526236). How to verify any Florida roofer's license, plus red flags.",

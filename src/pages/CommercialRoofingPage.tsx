@@ -1283,6 +1283,15 @@ export default function CommercialRoofingPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/hoa-condo-roof-financing" className="bg-zinc-900 border border-red-900/60 rounded-lg p-6 hover:border-red-600 transition-all group">
+              <div className="flex items-start gap-3 mb-3">
+                <DollarSign className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <h3 className="font-bold text-lg group-hover:text-red-500 transition-colors">
+                  Condo &amp; HOA Roof Financing
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm">Replace your association&apos;s roof with monthly payments instead of a lump-sum special assessment — financing introduced by All Phase, funded by TuCielo.</p>
+            </Link>
             <Link to="/blog/my-safe-florida-condo-program-prepare-for-the-2025-reopening-with-all-phase-construction-usa" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all group">
               <div className="flex items-start gap-3 mb-3">
                 <DollarSign className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
