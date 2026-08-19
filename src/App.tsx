@@ -28,6 +28,7 @@ const AssessmentModal = lazy(() => import('./components/AssessmentModal'));
 const HomePage = lazy(() => import('./pages/HomePage'));
 const CalculatorPage = lazy(() => import('./pages/CalculatorPage'));
 const FreeRoofEstimatePage = lazy(() => import('./pages/FreeRoofEstimatePage'));
+const LpRoofRepairPage = lazy(() => import('./pages/LpRoofRepairPage'));
 const HoaRoofFinancingPage = lazy(() => import('./pages/HoaRoofFinancingPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -213,6 +214,9 @@ const PageLoadingFallback = () => (
 
 function AppContent() {
   const { isOpen, closeModal } = useAssessmentModal();
+  // PR-213: PPC landing pages under /lp/ render without global chrome
+  const location = useLocation();
+  const isLpRoute = location.pathname.startsWith('/lp/');
 
   return (
     <>
@@ -233,13 +237,14 @@ function AppContent() {
       <div className="flex flex-col min-h-screen bg-gray-50">
         <LowercaseRedirect />
         <ScrollToTop />
-      <Header />
+      {!isLpRoute && <Header />}
       <main className="flex-grow">
         <Suspense fallback={<PageLoadingFallback />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/roof-cost-calculator" element={<CalculatorPage />} />
             <Route path="/free-roof-estimate" element={<FreeRoofEstimatePage />} />
+            <Route path="/lp/roof-repair" element={<LpRoofRepairPage />} />
             <Route path="/hoa-condo-roof-financing" element={<HoaRoofFinancingPage />} />
             <Route path="/calculator" element={<Navigate to="/roof-cost-calculator/" replace />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -426,11 +431,11 @@ function AppContent() {
           </Routes>
         </Suspense>
       </main>
-      <Footer />
-      <StickyMobileCTA />
+      {!isLpRoute && <Footer />}
+      {!isLpRoute && <StickyMobileCTA />}
       <Suspense fallback={null}>
         <AccessibilityWidget />
-        <ExitIntentPopup />
+        {!isLpRoute && <ExitIntentPopup />}
         <AssessmentModal isOpen={isOpen} onClose={closeModal} />
       </Suspense>
       </div>

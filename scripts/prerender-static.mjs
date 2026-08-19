@@ -2258,6 +2258,17 @@ function generateHoaRoofFinancingContent() {
   `;
 }
 
+function generateLpRoofRepairContent() {
+  return `
+    <h1>Need a Roofer Near You? Leak Repair & Free Inspections | All Phase USA</h1>
+    <p><strong>Roof leak repairs and free inspections across Broward & Palm Beach County</strong> from a dual-licensed contractor (CCC-1331464 & CGC-1526236), dispatched daily from our Deerfield Beach headquarters. A real person answers our phone 24/7. Call <strong>(754) 227-5605</strong>.</p>
+    <h2>Why Is My Roof Leaking?</h2>
+    <p>In South Florida, four culprits cause most of the leaks we repair — and all four are usually repairs, not full replacements: cracked rubber boots around vent pipes, wind-lifted shingles or slipped tiles, failed flashing at walls and valleys, and ponding water on flat roofs.</p>
+    <h2>What Happens When You Call</h2>
+    <p>A licensed pro performs a free inspection with photo documentation, you receive a written line-item price, and the repair is completed to Florida code with permits handled. Rated 4.9 out of 5 across 160+ Google reviews. Serving Deerfield Beach, Boca Raton, Pompano Beach, Fort Lauderdale, Coral Springs, Delray Beach and 50+ South Florida cities since 2006.</p>
+  `;
+}
+
 function generateFreeRoofEstimateContent() {
   return `
 <section id="seo-static-content">
@@ -2895,6 +2906,7 @@ function blogPostingSchema({ slug, title, description, image, published, modifie
 
 // Paths to noindex in prerendered HTML (reversible — remove a slug to re-index). PR-167.
 const NOINDEX_PATHS = new Set([
+  '/lp/roof-repair',
   '/palm-beach-county-roof-insurance-claim',
 ]);
 
@@ -3987,6 +3999,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/florida-roof-insurance-claims-guide', title: 'Florida Roof Insurance Claims Guide' },
     { path: '/roof-replacement-cost-florida', title: 'Roof Replacement Cost in Florida' },
     { path: '/free-roof-estimate', title: 'Free Roof Estimate' },
+    { path: '/lp/roof-repair', title: 'Roofer Near You — Leak Repair & Free Inspections' },
     { path: '/hoa-condo-roof-financing', title: 'Condo & HOA Roof Financing' },
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
@@ -4092,6 +4105,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateRoofReplacementCostFloridaContent();
     } else if (pagePath === '/hoa-condo-roof-financing') {
       pageContent = generateHoaRoofFinancingContent();
+    } else if (pagePath === '/lp/roof-repair') {
+      pageContent = generateLpRoofRepairContent();
     } else if (pagePath === '/free-roof-estimate') {
       pageContent = generateFreeRoofEstimateContent();
     } else if (pagePath === '/licensed-roofing-contractor') {
