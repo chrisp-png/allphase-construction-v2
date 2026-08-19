@@ -197,6 +197,18 @@ export default function BlogPostPage() {
   // Hoisted so the static-synthesis path can be reached from multiple branches
   // (Supabase returned null OR Supabase threw).
   const staticPostMeta: Record<string, Partial<BlogPost>> = {
+    'florida-condo-hoa-roof-financing-without-special-assessments': {
+      title: 'HOA Roof Financing: Skip the Special Assessment',
+      excerpt: 'Florida condo and HOA boards can finance a full roof replacement with manageable monthly payments instead of a lump-sum special assessment. The per-unit math, how association financing works, and what your board should prepare.',
+      author: 'All Phase Construction USA Team',
+      published_date: '2026-08-19',
+      categories: ['Roofing Education'],
+      tags: ['HOA', 'Condo Association', 'Roof Financing', 'Special Assessment', 'SIRS', 'Commercial Roofing', 'South Florida'],
+      featured_image: '/projects/pompano-beach-loading-materials-onto-this-condo-hoa-roof-all-phase-usa-1200.webp',
+      meta_title: 'Condo & HOA Roof Financing in FL | No Huge Special Assessment',
+      meta_description: 'Florida condo & HOA boards can finance a full roof replacement with monthly payments instead of a lump-sum special assessment. How it works, real per-unit math, and what boards should prepare.',
+      faqs: [],
+    },
     'understanding-roof-change-orders-hidden-wood-damage': {
       title: "Why Your Roof Change Order Cost More Than You Expected (And Why That's Actually Good News)",
       excerpt: 'Hidden truss rot and termite damage often appear only after tear-off. Here is why roofing change orders run high, why we replace bad wood instead of covering it up, and how we photograph and number every board you pay for.',
