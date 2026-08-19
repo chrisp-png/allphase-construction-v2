@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
 import { Phone, Building2, Landmark, ClipboardList, CheckCircle2, Shield, Scale } from 'lucide-react';
+import { interceptLeadSubmit } from '../utils/leadConversion';
 
 export default function HoaRoofFinancingPage() {
   useEffect(() => {
@@ -50,9 +50,9 @@ export default function HoaRoofFinancingPage() {
               <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
                 <Phone className="w-6 h-6" /> (754) 227-5605
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
+              <a href="#association-assessment" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
                 <ClipboardList className="w-6 h-6" /> Request an Association Roof Assessment
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -73,6 +73,119 @@ export default function HoaRoofFinancingPage() {
               </div>
             </div>
             <p className="text-zinc-400 text-sm">Illustrative example from the lender (25-year term, 8.99% fixed, 100 units, closing fees and debt-service coverage financed). Actual rates, terms, and payments are set by the lender's underwriting and will vary.</p>
+          </div>
+        </section>
+
+        <section id="association-assessment" className="py-16 px-4 bg-[#09090b]">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 md:p-10 shadow-2xl">
+              <h2 className="text-3xl font-bold mb-2">Request Your Free Association Roof Assessment</h2>
+              <p className="text-zinc-400 mb-8">Researching this after the board meeting, at 10 PM? Perfect — tell us about the project and a licensed estimator will call you back the next business day. No obligation, and nothing goes to your owners until you decide it should.</p>
+              <form
+                action="https://formspree.io/f/mojakkld"
+                method="POST"
+                onSubmit={(e) => interceptLeadSubmit(e, 'hoa-financing-page')}
+                className="grid md:grid-cols-2 gap-5"
+              >
+                <input type="hidden" name="_subject" value="ASSOCIATION FINANCING LEAD — HOA/Condo Roof Financing page" />
+                <div>
+                  <label htmlFor="hoa-name" className="block text-sm font-semibold text-zinc-300 mb-1">Your name *</label>
+                  <input id="hoa-name" type="text" name="full_name" required className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label htmlFor="hoa-role" className="block text-sm font-semibold text-zinc-300 mb-1">Your role</label>
+                  <select id="hoa-role" name="role" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
+                    <option>Board President</option>
+                    <option>Board Member</option>
+                    <option>Property Manager / CAM</option>
+                    <option>Unit Owner</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="hoa-phone" className="block text-sm font-semibold text-zinc-300 mb-1">Phone *</label>
+                  <input id="hoa-phone" type="tel" name="phone" required className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label htmlFor="hoa-email" className="block text-sm font-semibold text-zinc-300 mb-1">Email *</label>
+                  <input id="hoa-email" type="email" name="email" required className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label htmlFor="hoa-community" className="block text-sm font-semibold text-zinc-300 mb-1">Association / community name *</label>
+                  <input id="hoa-community" type="text" name="association_name" required className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label htmlFor="hoa-city" className="block text-sm font-semibold text-zinc-300 mb-1">City *</label>
+                  <input id="hoa-city" type="text" name="city" required placeholder="e.g., Boca Raton" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:border-red-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label htmlFor="hoa-units" className="block text-sm font-semibold text-zinc-300 mb-1">Number of units</label>
+                  <input id="hoa-units" type="text" name="number_of_units" inputMode="numeric" placeholder="e.g., 120" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:border-red-500 focus:outline-none" />
+                </div>
+                <div>
+                  <label htmlFor="hoa-rooftype" className="block text-sm font-semibold text-zinc-300 mb-1">Roof type</label>
+                  <select id="hoa-rooftype" name="roof_type" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
+                    <option>Tile</option>
+                    <option>Flat / low-slope (TPO, PVC, BUR)</option>
+                    <option>Shingle</option>
+                    <option>Metal</option>
+                    <option>Mixed / multiple buildings</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="hoa-timing" className="block text-sm font-semibold text-zinc-300 mb-1">Timing</label>
+                  <select id="hoa-timing" name="timing" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
+                    <option>Urgent — active leaks or insurance deadline</option>
+                    <option>Next 3 months</option>
+                    <option>3–6 months</option>
+                    <option>6–12 months</option>
+                    <option>Planning / budgeting stage</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="hoa-sirs" className="block text-sm font-semibold text-zinc-300 mb-1">SIRS or engineering report?</label>
+                  <select id="hoa-sirs" name="sirs_report" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
+                    <option>Yes — completed</option>
+                    <option>In progress</option>
+                    <option>Not yet</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="hoa-financing" className="block text-sm font-semibold text-zinc-300 mb-1">Interested in financing?</label>
+                  <select id="hoa-financing" name="financing_interest" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
+                    <option>Yes</option>
+                    <option>Possibly — want to see the numbers</option>
+                    <option>No — association has funds</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="hoa-budget" className="block text-sm font-semibold text-zinc-300 mb-1">Estimated project size</label>
+                  <select id="hoa-budget" name="estimated_project_size" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
+                    <option>Not sure yet</option>
+                    <option>Under $500K</option>
+                    <option>$500K – $1M</option>
+                    <option>$1M – $1.5M</option>
+                    <option>$1.5M – $2M</option>
+                    <option>$2M – $2.5M</option>
+                    <option>$2.5M – $3M</option>
+                    <option>$3M – $5M</option>
+                    <option>$5M+</option>
+                  </select>
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="hoa-message" className="block text-sm font-semibold text-zinc-300 mb-1">Anything else we should know?</label>
+                  <textarea id="hoa-message" name="message" rows={3} placeholder="Milestone inspection deadline, insurance situation, prior bids, number of buildings..." className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:border-red-500 focus:outline-none" />
+                </div>
+                <div className="md:col-span-2">
+                  <button type="submit" className="w-full bg-red-600 text-white py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
+                    Request My Free Assessment — We&apos;ll Call You Back Next Business Day
+                  </button>
+                  <p className="text-xs text-zinc-500 text-center mt-3">No spam, no obligation, and nothing shared with your owners. Prefer to talk now? <a href="tel:754-227-5605" className="text-red-400 underline">(754) 227-5605</a> — a real person answers 24/7.</p>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
 
@@ -133,9 +246,9 @@ export default function HoaRoofFinancingPage() {
               <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
                 <Phone className="w-6 h-6" /> (754) 227-5605
               </a>
-              <Link to="/commercial-roofing" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
-                <Building2 className="w-6 h-6" /> Our Commercial Roofing Services
-              </Link>
+              <a href="#association-assessment" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
+                <ClipboardList className="w-6 h-6" /> Request Your Free Assessment
+              </a>
             </div>
           </div>
         </section>
