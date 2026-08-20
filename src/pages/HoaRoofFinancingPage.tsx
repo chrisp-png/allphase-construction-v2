@@ -84,7 +84,7 @@ export default function HoaRoofFinancingPage() {
               <form
                 action="https://formspree.io/f/mojakkld"
                 method="POST"
-                onSubmit={(e) => interceptLeadSubmit(e, 'hoa-financing-page')}
+                onSubmit={(e) => interceptLeadSubmit(e, 'hoa-financing-page', '/association-thank-you.html')}
                 className="grid md:grid-cols-2 gap-5"
               >
                 <input type="hidden" name="_subject" value="ASSOCIATION FINANCING LEAD — HOA/Condo Roof Financing page" />

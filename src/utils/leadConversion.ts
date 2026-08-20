@@ -89,7 +89,8 @@ export function trackLeadConversion(formId: string, userData?: LeadUserData): vo
  */
 export async function interceptLeadSubmit(
   e: FormEvent<HTMLFormElement>,
-  formId: string
+  formId: string,
+  thankYouUrl: string = '/roof-calculator-thank-you.html'
 ): Promise<void> {
   const form = e.currentTarget;
   e.preventDefault();
@@ -104,7 +105,7 @@ export async function interceptLeadSubmit(
     });
     if (!response.ok) throw new Error(`Formspree ${response.status}`);
     trackLeadConversion(formId, extractLeadUserData(payload));
-    window.location.assign('/roof-calculator-thank-you.html');
+    window.location.assign(thankYouUrl);
   } catch {
     form.dataset.submitting = 'false';
     form.submit(); // native fallback — never lose the lead to tracking
