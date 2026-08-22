@@ -8,6 +8,24 @@
 import type { VideoMeta } from '../utils/videoObjectSchema';
 
 export const VIDEOS: Record<string, VideoMeta> = {
+  HENRY_TESTIMONIAL_METAL: {
+    videoId: 'IrXnyKtU4YQ',
+    title: 'Customer Review: Dark Bronze Metal Roof | All Phase Construction USA',
+    description:
+      'Henry shares his experience with All Phase Construction USA after his dark bronze standing-seam metal roof installation in South Florida — from neighbor recommendations to clear communication throughout the project.',
+    uploadDate: '2026-08-22T12:00:00-04:00',
+    duration: 'PT1M30S',
+    city: 'Deerfield Beach',
+  },
+  METAL_ENERGY_EFFICIENCY: {
+    videoId: 'AIob7xN5v8Y',
+    title: 'Do Metal Roofs Really Lower Your Energy Bill in Florida? | All Phase USA',
+    description:
+      'How a metal roof reduces cooling costs in the South Florida heat — reflectivity, ventilation, and what it means for your electric bill.',
+    uploadDate: '2026-08-22T12:00:00-04:00',
+    duration: 'PT29S',
+    city: 'Deerfield Beach',
+  },
   CHRIS_POROSKY_STORY: {
     videoId: 'dZVkhyNRXnk',
     title: 'All Phase Construction | Chris Porosky Story',

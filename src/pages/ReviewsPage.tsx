@@ -295,10 +295,18 @@ export default function ReviewsPage() {
         {/* PR-92: Customer testimonial video */}
         <section className="py-16 bg-zinc-950 border-t border-zinc-800/50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 text-center">Hear From a Real Customer</h2>
-            <p className="text-zinc-300 mb-8 text-center">Janine Lutz on her experience with All Phase Construction USA.</p>
-            <YouTubeEmbed videoId={VIDEOS.JANINE_LUTZ_TESTIMONIAL.videoId} title={VIDEOS.JANINE_LUTZ_TESTIMONIAL.title} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.JANINE_LUTZ_TESTIMONIAL)) }} />
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 text-center">Hear From Real Customers</h2>
+            <p className="text-zinc-300 mb-8 text-center">Henry on his dark bronze metal roof, and Janine Lutz on her experience with All Phase Construction USA.</p>
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div>
+                <YouTubeEmbed videoId={VIDEOS.HENRY_TESTIMONIAL_METAL.videoId} title={VIDEOS.HENRY_TESTIMONIAL_METAL.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.HENRY_TESTIMONIAL_METAL)) }} />
+              </div>
+              <div>
+                <YouTubeEmbed videoId={VIDEOS.JANINE_LUTZ_TESTIMONIAL.videoId} title={VIDEOS.JANINE_LUTZ_TESTIMONIAL.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.JANINE_LUTZ_TESTIMONIAL)) }} />
+              </div>
+            </div>
           </div>
         </section>
       
