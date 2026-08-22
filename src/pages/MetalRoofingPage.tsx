@@ -124,6 +124,18 @@ export default function MetalRoofingPage() {
                 <YouTubeEmbed videoId={VIDEOS.METAL_ROOF_RESTORATION.videoId} title={VIDEOS.METAL_ROOF_RESTORATION.title} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.METAL_ROOF_RESTORATION)) }} />
               </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Customer Review: Dark Bronze Metal Roof</h3>
+                <p className="text-zinc-300 text-sm mb-4">Henry on his standing-seam metal roof — why he chose us and how the project went.</p>
+                <YouTubeEmbed videoId={VIDEOS.HENRY_TESTIMONIAL_METAL.videoId} title={VIDEOS.HENRY_TESTIMONIAL_METAL.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.HENRY_TESTIMONIAL_METAL)) }} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Do Metal Roofs Lower Your Energy Bill?</h3>
+                <p className="text-zinc-300 text-sm mb-4">Reflectivity, ventilation, and what a metal roof means for your cooling costs in the Florida heat.</p>
+                <YouTubeEmbed videoId={VIDEOS.METAL_ENERGY_EFFICIENCY.videoId} title={VIDEOS.METAL_ENERGY_EFFICIENCY.title} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateVideoObjectSchema(VIDEOS.METAL_ENERGY_EFFICIENCY)) }} />
+              </div>
             </div>
           </div>
         </section>
