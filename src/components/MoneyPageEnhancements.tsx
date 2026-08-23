@@ -137,11 +137,12 @@ export default function MoneyPageEnhancements({
           <span>160+ reviews</span>
         </div>
         <form
-          onSubmit={(e) => interceptLeadSubmit(e, 'money-page-assessment')} action="https://formspree.io/f/mojakkld"
+          onSubmit={(e) => interceptLeadSubmit(e, 'money-page-assessment', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mojakkld')}
           method="POST"
           className="space-y-2"
         >
           <input type="hidden" name="source" value={`money-page-sticky-${slug}`} />
+          <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
           <input type="hidden" name="state" value="FL" />
           <input type="hidden" name="city" value={cityName} />
           <input type="hidden" name="_replyto" value="leads@allphaseusa.com" />

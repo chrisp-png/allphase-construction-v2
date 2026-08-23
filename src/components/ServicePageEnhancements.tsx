@@ -123,7 +123,8 @@ export default function ServicePageEnhancements({
           <span className="text-gray-400">·</span>
           <span>160+ reviews</span>
         </div>
-        <form onSubmit={(e) => interceptLeadSubmit(e, 'service-page-assessment')} action="https://formspree.io/f/mojakkld" method="POST" className="space-y-2">
+        <form onSubmit={(e) => interceptLeadSubmit(e, 'service-page-assessment', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mojakkld')} method="POST" className="space-y-2">
+          <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
           <input type="hidden" name="source" value={`service-page-sticky-${serviceSlug}`} />
           <input type="hidden" name="state" value="FL" />
           <input type="hidden" name="service" value={serviceName} />
