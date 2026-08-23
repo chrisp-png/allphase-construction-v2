@@ -287,7 +287,7 @@
     },
     "/lp/roof-repair": {
       "title": "Roofer Near You | Leak Repair & Free Inspections | All Phase",
-      "description": "Local roofer for Broward & Palm Beach \u2014 roof leak repair and free inspections from a dual-licensed contractor. Real person answers 24/7. (754) 227-5605.",
+      "description": "Local roofer for Broward & Palm Beach — roof leak repair and free inspections from a dual-licensed contractor. Real person answers 24/7. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/lp/roof-repair"
     },
     "/free-roof-estimate": {
@@ -394,6 +394,11 @@
       "title": "Roof Emergency & Hurricane Help South Florida | All Phase",
       "description": "South Florida roof emergency response + hurricane-season preparation. Same-day inspection from Deerfield Beach HQ. HVHZ-spec. (754) 227-5605.",
       "canonical": "https://allphaseconstructionfl.com/hurricane-help"
+    },
+    "/lp/roof-cost-calculator": {
+      "title": "South Florida Roof Cost Estimate | Free in 60 Seconds",
+      "description": "Get real 2026 South Florida roof pricing for shingle, tile, metal & flat systems — free estimate from a dual-licensed Broward & Palm Beach contractor.",
+      "canonical": "https://allphaseconstructionfl.com/lp/roof-cost-calculator"
     }
   },
   "cityNames": {
