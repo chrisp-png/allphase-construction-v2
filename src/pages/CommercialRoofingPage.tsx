@@ -37,11 +37,11 @@ import { generateLocalBusinessSchema, generateServiceSchema } from '../utils/seo
 export default function CommercialRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Commercial Roofing Broward & Palm Beach | All Phase';
+    document.title = "Commercial Roofing South Florida | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Commercial roofing for condos, HOAs & property managers in Broward & Palm Beach Counties. HVHZ code experts. My Safe Florida Condo grant assistance.');
+      metaDescription.setAttribute('content', "TPO, PVC, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.");
     }
 
     const pageUrl = 'https://allphaseconstructionfl.com/commercial-roofing';

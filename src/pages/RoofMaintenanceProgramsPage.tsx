@@ -17,11 +17,11 @@ import {
 export default function RoofMaintenanceProgramsPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Roof Maintenance Programs | All Phase';
+    document.title = "Roof Maintenance Programs South Florida | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Preventative commercial roof maintenance programs that extend roof life, reduce repairs, improve storm readiness, and support insurance documentation.');
+      metaDescription.setAttribute('content', "Extend your roof's life with a proactive maintenance plan. Prevent leaks, maintain warranties, stay code-compliant in South Florida.");
     }
 
     const script = document.createElement('script');

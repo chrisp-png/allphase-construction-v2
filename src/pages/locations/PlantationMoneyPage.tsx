@@ -24,7 +24,7 @@ export default function PlantationMoneyPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = `Plantation FL Roofer | Shingle & Tile Roofing | All Phase`;
+    document.title = "Roof Replacement Plantation, FL | All Phase USA";
   }, []);
 
   const coordinates = getCityCoordinates(cityName);

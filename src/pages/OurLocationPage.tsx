@@ -7,11 +7,11 @@ export default function OurLocationPage() {
   const { openModal } = useAssessmentModal();
 
   useEffect(() => {
-    document.title = 'Our Office | Deerfield Beach Roofing Contractor Location';
+    document.title = "Our Deerfield Beach Location | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Visit us at 590 Goolsby Blvd, Deerfield Beach, FL. Serving Broward & Palm Beach counties. Call (754) 227-5605 for free roof inspection.');
+      metaDescription.setAttribute('content', "All Phase Construction USA - 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 227-5605.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';

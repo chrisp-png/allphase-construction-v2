@@ -27,11 +27,11 @@ import {
 export default function SinglePlyRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Single-Ply Roofing Systems | TPO, PVC, EPDM | All Phase';
+    document.title = "Single-Ply Roofing Systems | TPO & PVC | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Commercial single-ply roofing in South Florida. TPO, PVC & EPDM membrane systems. Certified installers for IB Roof, Fibertite & more.');
+      metaDescription.setAttribute('content', "TPO & PVC single-ply roofing for South Florida commercial properties. HVHZ-compliant, energy-efficient. Dual-licensed. (754) 227-5605.");
     }
 
     const serviceScript = document.createElement('script');

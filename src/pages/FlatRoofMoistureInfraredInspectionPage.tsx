@@ -24,11 +24,11 @@ import InspectionCTA from '../components/InspectionCTA';
 export default function FlatRoofMoistureInfraredInspectionPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Flat Roof Infrared Inspection South Florida';
+    document.title = "Flat Roof Moisture & Infrared Inspection | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional infrared thermography and moisture detection for flat roofing systems. Non-invasive diagnostic imaging reveals concealed water intrusion, saturated insulation, and membrane failure in commercial and low-slope roofs.');
+      metaDescription.setAttribute('content', "Flat roof moisture intrusion & infrared thermal inspection in South Florida. Detects hidden leaks before reroofing. Dual-licensed contractor. (754) 227-5605.");
     }
 
     const script = document.createElement('script');

@@ -4,11 +4,11 @@ import { DollarSign, Calculator, TrendingUp, ExternalLink, Lightbulb, Award } fr
 
 export default function EasyPaymentsPage() {
   useEffect(() => {
-    document.title = 'Easy Payments for Roofing Projects | All Phase Construction';
+    document.title = "Easy Payments & Financing Options | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Explore payment options for your roofing project. Calculate monthly payments with flexible terms and learn about available providers in South Florida.');
+      metaDescription.setAttribute('content', "Financing available for your South Florida roofing project. Major credit cards accepted and payment plans to fit any budget.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';

@@ -10,7 +10,7 @@ export default function TermsPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Terms of Service for All Phase Construction USA. Read our terms and conditions for using our website and services.');
+      metaDescription.setAttribute('content', "Terms of service governing the use of the All Phase Construction USA website and the terms under which we provide roofing services in South Florida.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
