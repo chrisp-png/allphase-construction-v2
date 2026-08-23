@@ -2261,6 +2261,24 @@ function generateHoaRoofFinancingContent() {
   `;
 }
 
+
+// PR-225: gated PPC calculator LP — noindexed, paid traffic only. Served copy
+// describes the tool and honest 2026 ranges; the interactive gate is hydrated.
+function generateLpRoofCalculatorContent() {
+  return `
+  <h1>See Real South Florida Roof Pricing — Free Estimate in 60 Seconds</h1>
+  <p>Answer two quick questions — roof size and material — and see the real 2026 price range for your roof in Broward or Palm Beach County, built from actual All Phase Construction USA jobs and priced to High-Velocity Hurricane Zone code. Then request your exact line-item estimate and a team member will confirm it against your actual roof.</p>
+  <h2>2026 Installed Ranges We Price Against</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Asphalt shingle</strong> — roughly $4.50 to $14 per square foot installed.</li>
+    <li><strong>Concrete &amp; clay tile</strong> — roughly $12 to $30 per square foot installed.</li>
+    <li><strong>Metal (snap-lock to premium aluminum)</strong> — roughly $8 to $25 per square foot installed.</li>
+    <li><strong>Flat / low-slope systems</strong> — roughly $5 to $18 per square foot installed.</li>
+  </ul>
+  <p>All Phase Construction USA is dual-licensed (CCC-1331464 roofing &amp; CGC-1526236 general contractor), serving Broward and Palm Beach County from Deerfield Beach since 2006 — 4.9 stars across 160+ Google reviews. Call <strong>(754) 227-5605</strong> — a real person answers 24/7.</p>
+`;
+}
+
 function generateLpRoofRepairContent() {
   return `
     <h1>Need a Roofer Near You? Leak Repair & Free Inspections | All Phase USA</h1>
@@ -2910,6 +2928,7 @@ function blogPostingSchema({ slug, title, description, image, published, modifie
 // Paths to noindex in prerendered HTML (reversible — remove a slug to re-index). PR-167.
 const NOINDEX_PATHS = new Set([
   '/lp/roof-repair',
+  '/lp/roof-cost-calculator',
   '/palm-beach-county-roof-insurance-claim',
 ]);
 
@@ -4003,6 +4022,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/roof-replacement-cost-florida', title: 'Roof Replacement Cost in Florida' },
     { path: '/free-roof-estimate', title: 'Free Roof Estimate' },
     { path: '/lp/roof-repair', title: 'Roofer Near You — Leak Repair & Free Inspections' },
+    { path: '/lp/roof-cost-calculator', title: 'South Florida Roof Cost Estimate' },
     { path: '/hoa-condo-roof-financing', title: 'Condo & HOA Roof Financing' },
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
@@ -4110,6 +4130,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateHoaRoofFinancingContent();
     } else if (pagePath === '/lp/roof-repair') {
       pageContent = generateLpRoofRepairContent();
+    } else if (pagePath === '/lp/roof-cost-calculator') {
+      pageContent = generateLpRoofCalculatorContent();
     } else if (pagePath === '/free-roof-estimate') {
       pageContent = generateFreeRoofEstimateContent();
     } else if (pagePath === '/licensed-roofing-contractor') {

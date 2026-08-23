@@ -8,12 +8,12 @@ import ChecklistDownloadForm from './ChecklistDownloadForm';
 /*  DATA                                                              */
 /* ------------------------------------------------------------------ */
 
-interface RoofSize { label: string; sqft: number; desc: string }
-interface RoofType { name: string; icon: string; tagline: string }
-interface PricingTier { tier: 'Good' | 'Better' | 'Best'; product: string; warranty: string; minPrice: number; maxPrice: number; features: string[] }
-interface PricingData { [key: string]: PricingTier[] }
+export interface RoofSize { label: string; sqft: number; desc: string }
+export interface RoofType { name: string; icon: string; tagline: string }
+export interface PricingTier { tier: 'Good' | 'Better' | 'Best'; product: string; warranty: string; minPrice: number; maxPrice: number; features: string[] }
+export interface PricingData { [key: string]: PricingTier[] }
 
-const roofSizes: RoofSize[] = [
+export const roofSizes: RoofSize[] = [
   { label: 'Smaller', sqft: 1500, desc: '~1,500 sq ft' },
   { label: 'Average', sqft: 2000, desc: '~2,000 sq ft' },
   { label: 'Mid-Size', sqft: 2500, desc: '~2,500 sq ft' },
@@ -21,14 +21,14 @@ const roofSizes: RoofSize[] = [
   { label: 'Estate', sqft: 5000, desc: '~5,000 sq ft' },
 ];
 
-const roofTypes: RoofType[] = [
+export const roofTypes: RoofType[] = [
   { name: 'Shingle', icon: 'shingle', tagline: 'Most popular in FL' },
   { name: 'Tile', icon: 'tile', tagline: 'Classic South Florida' },
   { name: 'Metal', icon: 'metal', tagline: 'Maximum longevity' },
   { name: 'Flat', icon: 'flat', tagline: 'Low-slope systems' },
 ];
 
-const pricingData: PricingData = {
+export const pricingData: PricingData = {
   Shingle: [
     { tier: 'Good', product: 'Standard 3-Tab', warranty: '20-25 Year Warranty', minPrice: 4.5, maxPrice: 7.5, features: ['Cost-effective solution', 'Proven durability', 'Quick installation'] },
     { tier: 'Better', product: 'Architectural', warranty: '30-40 Year Warranty', minPrice: 7, maxPrice: 11, features: ['Enhanced curb appeal', 'Better wind resistance', 'Dimensional look'] },
