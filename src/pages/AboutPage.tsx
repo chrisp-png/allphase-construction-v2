@@ -123,11 +123,11 @@ const teamMembers: TeamMember[] = [
 
 export default function AboutPage() {
   useEffect(() => {
-    document.title = 'About Us | Licensed Roofer Deerfield Beach FL';
+    document.title = "About All Phase Construction | Expert Roofing Specialist";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Meet the All Phase Construction USA team — dual-licensed roofing & general contractors (CCC-1331464, CGC-1526236) serving Broward & Palm Beach since 2006.');
+      metaDescription.setAttribute('content', "Dual-licensed roofer (CCC & CGC) serving South Florida since 2006. 2,500+ roofs installed. HVHZ certified. 4.9 stars across 160+ reviews.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';

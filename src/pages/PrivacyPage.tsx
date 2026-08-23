@@ -10,7 +10,7 @@ export default function PrivacyPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Privacy Policy for All Phase Construction USA. Learn how we collect, use, and protect your personal information.');
+      metaDescription.setAttribute('content', "All Phase Construction USA privacy policy. How we collect, use, and protect personal information from website visitors and customers in Broward & Palm");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';

@@ -65,11 +65,11 @@ export default function ReviewsPage() {
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    document.title = 'Reviews & Testimonials | All Phase Construction';
+    document.title = "Roofing Reviews | 4.9 Stars, 160+ Verified | All Phase";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Read hundreds of 5-star reviews from satisfied customers across Broward & Palm Beach Counties.');
+      metaDescription.setAttribute('content', "4.9 stars from 160+ verified South Florida homeowners. See why Broward & Palm Beach County residents choose All Phase Construction USA.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';

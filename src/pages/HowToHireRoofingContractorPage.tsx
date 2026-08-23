@@ -21,11 +21,11 @@ export default function HowToHireRoofingContractorPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = 'How to Hire a Roofer Deerfield Beach FL | All Phase';
+    document.title = "How to Hire a Roofing Contractor in Florida | Expert Guide";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'A complete guide to hiring a roofing contractor in Deerfield Beach and South Florida.');
+      metaDescription.setAttribute('content', "How to hire a roofing contractor in Florida - licenses to verify, questions to ask, red flags to avoid. Free guide from a licensed contractor.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';

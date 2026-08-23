@@ -6,11 +6,11 @@ import { Phone, ArrowLeft, CheckCircle, Wrench, Home, Layers, Grid3X3, Minus } f
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = 'Contact All Phase | Free Roof Inspection';
+    document.title = "Contact Our Roofing Team | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Schedule free roof inspection in Broward or Palm Beach County. 60-minute response during business hours. Trusted contractor. Call (754) 227-5605');
+      metaDescription.setAttribute('content', "Call (754) 227-5605 or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
