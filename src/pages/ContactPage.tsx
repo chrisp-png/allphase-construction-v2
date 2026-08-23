@@ -58,7 +58,7 @@ export default function ContactPage() {
 
     try {
       const formElement = e.target as HTMLFormElement;
-      const response = await fetch(formElement.action, {
+      const response = await fetch('https://formspree.io/f/mvzodbwp', {
         method: 'POST',
         body: appendClickIds(new FormData(formElement)),
         headers: {
@@ -225,7 +225,8 @@ export default function ContactPage() {
                     Back
                   </button>
                   <h2 className="text-2xl font-bold text-white mb-6">Let's get your inspection scheduled</h2>
-                  <form action="https://formspree.io/f/mvzodbwp" method="POST" onSubmit={handleSubmit} className="space-y-6">
+                  <form method="POST" onSubmit={handleSubmit} className="space-y-6">
+                    <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
                     <input type="hidden" name="_subject" value="📋 New Contact Page Submission" />
                     <input type="hidden" name="form_source" value="Contact Page Multi-Step Form" />
                     <input type="hidden" name="projectType" value={`${jobType} - ${roofType}`} />

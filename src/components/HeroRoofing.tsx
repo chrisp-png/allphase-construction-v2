@@ -265,10 +265,11 @@ export default function HeroRoofing() {
             </div>
 
             <form
-              onSubmit={(e) => interceptLeadSubmit(e, 'hero-roof-inspection')} action="https://formspree.io/f/mojakkld"
+              onSubmit={(e) => interceptLeadSubmit(e, 'hero-roof-inspection', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mojakkld')}
               method="POST"
               className="space-y-4"
             >
+              <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
               <input type="hidden" name="source" value="main-website-homepage" />
               <input type="hidden" name="state" value="FL" />
               <input type="hidden" name="_replyto" value="leads@allphaseusa.com" />

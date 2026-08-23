@@ -82,11 +82,11 @@ export default function HoaRoofFinancingPage() {
               <h2 className="text-3xl font-bold mb-2">Request Your Free Association Roof Assessment</h2>
               <p className="text-zinc-400 mb-8">Researching this after the board meeting, at 10 PM? Perfect — tell us about the project and a licensed estimator will call you back the next business day. No obligation, and nothing goes to your owners until you decide it should.</p>
               <form
-                action="https://formspree.io/f/mojakkld"
                 method="POST"
-                onSubmit={(e) => interceptLeadSubmit(e, 'hoa-financing-page', '/association-thank-you.html')}
+                onSubmit={(e) => interceptLeadSubmit(e, 'hoa-financing-page', '/association-thank-you.html', 'https://formspree.io/f/mojakkld')}
                 className="grid md:grid-cols-2 gap-5"
               >
+                <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
                 <input type="hidden" name="_subject" value="ASSOCIATION FINANCING LEAD — HOA/Condo Roof Financing page" />
                 <div>
                   <label htmlFor="hoa-name" className="block text-sm font-semibold text-zinc-300 mb-1">Your name *</label>

@@ -141,7 +141,7 @@ export default function RoofCalculator() {
     setLeadSubmitting(true);
     try {
       const formElement = e.target as HTMLFormElement;
-      const response = await fetch(formElement.action, {
+      const response = await fetch('https://formspree.io/f/mzdbydvv', {
         method: 'POST',
         body: appendClickIds(new FormData(formElement)),
         headers: { 'Accept': 'application/json' }
@@ -505,7 +505,8 @@ export default function RoofCalculator() {
           {leadError && (
             <div className="mb-4 p-3 bg-red-900/20 border border-red-600/50 rounded-lg text-red-400 text-sm text-center">{leadError}</div>
           )}
-          <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleLeadSubmit}>
+          <form method="POST" onSubmit={handleLeadSubmit}>
+            <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
             <input type="hidden" name="_subject" value={wantsInspection ? 'INSPECTION REQUESTED — Calculator Lead' : 'Calculator Lead — analysis only'} />
             <input type="hidden" name="inspection_requested" value={wantsInspection ? 'YES — homeowner asked for a free inspection' : 'no — analysis only'} />
             <input type="hidden" name="form_source" value="Roof Calculator Wizard — Step 5 Gate" />

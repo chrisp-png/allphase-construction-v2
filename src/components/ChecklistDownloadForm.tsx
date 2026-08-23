@@ -22,7 +22,7 @@ export default function ChecklistDownloadForm({ roofType, roofSize, roofSqft }: 
 
     try {
       const formElement = e.target as HTMLFormElement;
-      const response = await fetch(formElement.action, {
+      const response = await fetch('https://formspree.io/f/mzdbydvv', {
         method: 'POST',
         body: appendClickIds(new FormData(formElement)),
         headers: { 'Accept': 'application/json' }
@@ -128,11 +128,11 @@ export default function ChecklistDownloadForm({ roofType, roofSize, roofSqft }: 
           )}
 
           <form
-            action="https://formspree.io/f/mzdbydvv"
             method="POST"
             onSubmit={handleSubmit}
             className="space-y-2"
           >
+            <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
             <input type="hidden" name="_subject" value="📋 Insider's Guide Download" />
             <input type="hidden" name="form_source" value="Calculator Checklist Download" />
             {roofType && <input type="hidden" name="roof_type" value={roofType} />}

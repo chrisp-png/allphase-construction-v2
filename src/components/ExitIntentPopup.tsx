@@ -116,10 +116,11 @@ export default function ExitIntentPopup() {
           </div>
 
           <form
-            onSubmit={(e) => interceptLeadSubmit(e, 'exit-intent-popup')} action="https://formspree.io/f/mregrayb"
+            onSubmit={(e) => interceptLeadSubmit(e, 'exit-intent-popup', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mregrayb')}
             method="POST"
             className="space-y-4"
           >
+            <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
             <input type="hidden" name="source" value="exit-intent-popup" />
 
             <div className="grid grid-cols-2 gap-4">

@@ -64,11 +64,11 @@ export default function LpRoofRepairPage() {
               <h2 className="text-2xl font-bold mb-1">Get Your Free Roof Inspection</h2>
               <p className="text-zinc-400 mb-5">Tell us where the roof is. We&apos;ll call you back fast.</p>
               <form
-                action="https://formspree.io/f/mojakkld"
                 method="POST"
-                onSubmit={(e) => interceptLeadSubmit(e, 'lp-roof-repair')}
+                onSubmit={(e) => interceptLeadSubmit(e, 'lp-roof-repair', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mojakkld')}
                 className="space-y-4"
               >
+                <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
                 <input type="hidden" name="_subject" value="PPC Landing Page Lead — Roof Repair (/lp/roof-repair)" />
                 <input type="text" name="full_name" required placeholder="Your name" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:border-red-500 focus:outline-none" />
                 <input type="tel" name="phone" required placeholder="Phone number" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:border-red-500 focus:outline-none" />
