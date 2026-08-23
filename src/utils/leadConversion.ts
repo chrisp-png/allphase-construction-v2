@@ -90,7 +90,10 @@ export function trackLeadConversion(formId: string, userData?: LeadUserData): vo
 export async function interceptLeadSubmit(
   e: FormEvent<HTMLFormElement>,
   formId: string,
-  thankYouUrl: string = '/roof-calculator-thank-you.html'
+  thankYouUrl: string = '/roof-calculator-thank-you.html',
+  // PR-221: endpoint passed in JS instead of a scrapeable action attribute.
+  // Bots that scrape the DOM for formspree URLs find nothing to POST to.
+  endpoint?: string
 ): Promise<void> {
   const form = e.currentTarget;
   e.preventDefault();
@@ -98,7 +101,8 @@ export async function interceptLeadSubmit(
   form.dataset.submitting = 'true';
   try {
     const payload = appendClickIds(new FormData(form));
-    const response = await fetch(form.action, {
+    const target = endpoint || form.action;
+    const response = await fetch(target, {
       method: 'POST',
       body: payload,
       headers: { Accept: 'application/json' },
@@ -108,6 +112,7 @@ export async function interceptLeadSubmit(
     window.location.assign(thankYouUrl);
   } catch {
     form.dataset.submitting = 'false';
+    if (endpoint) form.action = endpoint; // restore target for the native fallback
     form.submit(); // native fallback — never lose the lead to tracking
   }
 }
