@@ -307,7 +307,8 @@ export default function DeerfieldBeachCityPage() {
                 HVHZ-compliant roof repair and replacement in Broward & Palm Beach Counties.
               </p>
 
-              <form onSubmit={(e) => interceptLeadSubmit(e, 'deerfield-city-form')} action="https://formspree.io/f/mzdbydvv" method="POST" className="space-y-4">
+              <form onSubmit={(e) => interceptLeadSubmit(e, 'deerfield-city-form', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mzdbydvv')} method="POST" className="space-y-4">
+              <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
               <input type="hidden" name="source_page" value="Deerfield Beach Location Page" />
               <input type="hidden" name="_subject" value="🏠 Deerfield Beach Hero Form Submission" />
 

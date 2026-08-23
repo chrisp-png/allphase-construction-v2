@@ -94,10 +94,11 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
             </div>
 
             <form
-              onSubmit={(e) => interceptLeadSubmit(e, 'assessment-modal')} action="https://formspree.io/f/mojakkld"
+              onSubmit={(e) => interceptLeadSubmit(e, 'assessment-modal', '/roof-calculator-thank-you.html', 'https://formspree.io/f/mojakkld')}
               method="POST"
               className="space-y-4"
             >
+              <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
               <input type="hidden" name="source" value="main-website-modal" />
 
               <div className="grid grid-cols-2 gap-4">

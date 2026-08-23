@@ -47,7 +47,7 @@ export default function CalculatorLeadCapture({
 
     try {
       const formElement = e.target as HTMLFormElement;
-      const response = await fetch(formElement.action, {
+      const response = await fetch('https://formspree.io/f/mzdbydvv', {
         method: 'POST',
         body: appendClickIds(new FormData(formElement)),
         headers: {
@@ -85,7 +85,8 @@ export default function CalculatorLeadCapture({
         </div>
       )}
 
-      <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleSubmit} className="space-y-4" style={{ scrollMarginTop: '120px' }}>
+      <form method="POST" onSubmit={handleSubmit} className="space-y-4" style={{ scrollMarginTop: '120px' }}>
+        <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
         <input type="hidden" name="_subject" value="🏠 New Roof Calculator Lead" />
         <input type="hidden" name="form_source" value="Roof Cost Calculator" />
         <input type="hidden" name="estimated_price" value={estimatedPrice} />

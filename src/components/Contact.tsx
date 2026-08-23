@@ -22,7 +22,7 @@ export default function Contact() {
     e.preventDefault();
 
     const formElement = e.target as HTMLFormElement;
-    const response = await fetch(formElement.action, {
+    const response = await fetch('https://formspree.io/f/mzdbydvv', {
       method: 'POST',
       body: appendClickIds(new FormData(formElement)),
       headers: {
@@ -109,7 +109,8 @@ export default function Contact() {
                 <p className="text-gray-300">We'll get back to you within 24 hours.</p>
               </div>
             ) : (
-              <form action="https://formspree.io/f/mzdbydvv" method="POST" onSubmit={handleSubmit} className="space-y-6 overflow-visible" style={{ scrollMarginTop: '120px' }}>
+              <form method="POST" onSubmit={handleSubmit} className="space-y-6 overflow-visible" style={{ scrollMarginTop: '120px' }}>
+                <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
                 <input type="hidden" name="_subject" value="📧 New Contact Form Submission" />
                 <input type="hidden" name="form_source" value="Contact Us Form" />
                 <div className="grid grid-cols-2 gap-4">
