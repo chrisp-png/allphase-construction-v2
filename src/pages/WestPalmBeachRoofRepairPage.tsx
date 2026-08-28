@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, AlertTriangle, ChevronRight, Plus, Minus } from 'lucide-react';
 import Header from '../components/Header';
 import Contact from '../components/Contact';
+import CityRepairLeadForm from '../components/CityRepairLeadForm';
 
 export default function WestPalmBeachRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -105,6 +106,9 @@ export default function WestPalmBeachRoofRepairPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-227: above-the-fold lead capture for paid traffic */}
+        <CityRepairLeadForm city="West Palm Beach" citySlug="west-palm-beach" />
 
         {/* Common West Palm Beach Repair Problems */}
         <section className="py-20 bg-zinc-900">
