@@ -1221,7 +1221,45 @@ function generateRoofRepairHubContent() {
  * SILO 2: Roof Repair Page - /roof-repair/[city]
  * High-intent repair leads with emergency response focus
  */
+// PR-228: the 11 paid-ads city routes show the CallRail static-fallback
+// tracking number (754) 258-6135 in their prerendered (no-JS) view instead
+// of the untracked office landline. Both numbers are registered swap
+// targets in CallRail (verified 2026-08-28), so hydrated visits still swap
+// to pool numbers normally. All OTHER routes keep (754) 227-5605 -- it is
+// the primary swap hook and must remain in the CallRail swap-target list.
+// JSON-LD telephone stays the landline everywhere for NAP consistency.
+const AD_TARGET_REPAIR_SLUGS = new Set([
+  'deerfield-beach', 'boca-raton', 'pompano-beach', 'fort-lauderdale',
+  'boynton-beach', 'wellington', 'parkland', 'coral-springs',
+  'coconut-creek', 'west-palm-beach', 'delray-beach',
+]);
+
+// PR-228: swap the office landline for the CallRail static-fallback number
+// in the BODY of a prerendered page only — head (meta/JSON-LD) untouched so
+// NAP schema and meta parity keep the real business number. Script blocks
+// inside the body are excluded for the same reason.
+function applyStaticFallbackPhone(html) {
+  const bodyStart = html.indexOf('<body');
+  if (bodyStart === -1) return html;
+  const head = html.slice(0, bodyStart);
+  const body = html.slice(bodyStart);
+  const swapped = body
+    .split(/(<script[\s\S]*?<\/script>)/)
+    .map((part) =>
+      part.startsWith('<script')
+        ? part
+        : part
+            .replaceAll('tel:7542275605', 'tel:7542586135')
+            .replaceAll('tel:754-227-5605', 'tel:754-258-6135')
+            .replaceAll('(754) 227-5605', '(754) 258-6135')
+            .replaceAll('754-227-5605', '754-258-6135')
+    )
+    .join('');
+  return head + swapped;
+}
+
 function generateRoofRepairContent(cityName, citySlug) {
+  const phoneDisplay = AD_TARGET_REPAIR_SLUGS.has(citySlug) ? '(754) 258-6135' : '(754) 227-5605';
   return `
 <section id="seo-static-content">
   <h1>Roof Repair in ${cityName}, FL | Emergency Response Available</h1>
@@ -1230,7 +1268,7 @@ function generateRoofRepairContent(cityName, citySlug) {
 
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.5rem; margin: 2rem 0;">
     <h3 style="font-size: 1.25rem; font-weight: bold; color: #991b1b; margin-bottom: 0.75rem;">Emergency Roof Repair in ${cityName}</h3>
-    <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">🔍 Call (754) 227-5605 for Same-Day Emergency Service</p>
+    <p style="margin-bottom: 0.5rem; color: #7f1d1d; font-weight: bold;">🔍 Call ${phoneDisplay} for Same-Day Emergency Service</p>
     <p style="margin-bottom: 1rem; color: #7f1d1d;">Active leaks, storm damage, missing shingles, and emergency tarping available throughout ${cityName}.</p>
     <p style="margin-bottom: 0; color: #7f1d1d;">
       🔎 <strong>Not sure if you need a repair?</strong> Start with our <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline; font-weight: bold;">professional ${cityName} roof inspection</a> ✅ free estimates included.
@@ -1274,7 +1312,7 @@ function generateRoofRepairContent(cityName, citySlug) {
   <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing consistent, reliable roof repair services throughout ${cityName} and surrounding Broward and Palm Beach County communities. Our central location enables rapid emergency response and efficient project coordination.</p>
 
   <h2>Schedule Your ${cityName} Roof Repair</h2>
-  <p><strong>Call (754) 227-5605</strong> to speak with a licensed roofing specialist. We provide same-day emergency service and free professional inspections for all ${cityName} roof repair needs.</p>
+  <p><strong>Call ${phoneDisplay}</strong> to speak with a licensed roofing specialist. We provide same-day emergency service and free professional inspections for all ${cityName} roof repair needs.</p>
 
   <div style="margin-top: 1.5rem; padding: 1.5rem; background: #f3f4f6; border-radius: 0.5rem;">
     <p><strong>Explore More Services:</strong> <a href="/locations/${citySlug}" style="color: #dc2626; text-decoration: underline;">Complete ${cityName} roofing services</a> | <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Professional ${cityName} roof inspection</a> | <a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></p>
@@ -5543,12 +5581,16 @@ ${companyAuthorityFooter()}
     // SILO 2: Roof Repair - /roof-repair/[city]
     const repairPath = `/roof-repair/${citySlug}`;
     const repairMetadata = getSEOMetadata(repairPath, cityName);
-    const repairHTML = createHTMLTemplate(
+    let repairHTML = createHTMLTemplate(
       repairMetadata.title,
       repairMetadata.description,
       repairMetadata.canonical,
       generateRoofRepairContent(cityName, citySlug)
     );
+    // PR-228: paid-ads routes show the tracked static-fallback number no-JS
+    if (AD_TARGET_REPAIR_SLUGS.has(citySlug)) {
+      repairHTML = applyStaticFallbackPhone(repairHTML);
+    }
     const repairDir = path.join(publicDir, 'roof-repair', citySlug);
     fs.mkdirSync(repairDir, { recursive: true });
     fs.writeFileSync(path.join(repairDir, 'index.html'), repairHTML);

@@ -192,6 +192,26 @@ export default function FortLauderdaleRoofRepairPage() {
           </div>
         </section>
 
+        {/* PR-228: FTL condo corridor + insurance depth */}
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">The Condo Corridor, and Why Roof Repairs Now Carry Insurance Weight</h2>
+              <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+                <p>
+                  Fort Lauderdale&apos;s beachfront tells a different roofing story than its neighborhoods. Along the Galt Ocean Mile and the barrier island from Harbor Beach north, condo buildings face the double squeeze of Florida&apos;s milestone-inspection and SIRS reserve requirements on one side and hardening insurance carriers on the other. For associations, a documented roof repair program — with photos, scopes, and dated reports — is now part of staying insurable, not just staying dry. We work with boards and property managers on exactly that documentation, and when a building&apos;s roof has reached replacement scale, our <Link to="/hoa-condo-roof-financing" className="text-red-400 underline hover:text-red-300">association financing page</Link> covers how communities fund it without a five-figure special assessment.
+                </p>
+                <p>
+                  For single-family homeowners the insurance math has changed too. Carriers across Broward increasingly decline or non-renew roofs past the 15-year mark unless an inspection shows remaining life. A properly documented repair — with a roof-condition report from a licensed contractor — is often the difference between keeping coverage and scrambling for it. When we inspect a Fort Lauderdale roof, the written report we leave behind is built to serve that purpose: your insurer, your future buyer, and your own planning all read from the same set of photos.
+                </p>
+                <p>
+                  It is also why we tell homeowners not to wait out small leaks. In this insurance market, interior water damage claims draw scrutiny onto the roof itself — and a $600 flashing repair done this month is a very different conversation with your carrier than a stained ceiling next hurricane season.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="py-20 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
