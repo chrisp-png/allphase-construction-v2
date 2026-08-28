@@ -296,6 +296,26 @@ export default function BoyntonBeachRoofRepairPage() {
           </div>
         </section>
 
+        {/* PR-228: Boynton-specific local depth */}
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">What We See on Boynton Beach Roofs, East to West</h2>
+              <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+                <p>
+                  Boynton Beach roofs split into two distinct populations, and they fail differently. East of I-95 — the older grid between Federal Highway and the Intracoastal — the housing stock runs heavily to 1960s and 70s single-story homes, many carrying shingle roofs on their third or fourth cycle and flat-roof additions from decades of expansions. Salt air off the Intracoastal accelerates fastener and flashing corrosion here the same way it does in coastal Delray, and the repair calls we get are leaks at aging flashing, rusted valley metal, and flat-section seams.
+                </p>
+                <p>
+                  West of Congress Avenue is a different roofscape: the planned communities — Aberdeen, Hunters Run, Leisureville, and the golf-course neighborhoods around Jog Road — built largely in the 1980s and 90s with concrete tile. Those tile roofs are now 30 to 40 years old, which usually means the tile itself is fine but the underlayment beneath it is at end of life. That is exactly the situation where an honest inspection matters most: a slipped-tile repair, an underlayment repair under a small area, or a lift-and-relay can each be the right answer, and they differ by tens of thousands of dollars.
+                </p>
+                <p>
+                  Palm Beach County is not inside the High-Velocity Hurricane Zone the way Broward is, but it sits in Florida&apos;s wind-borne debris region, and we build repairs here to the same standard we use on our HVHZ work — because the wind that arrives in Boynton Beach does not read code maps. Permits, when a repair scope requires one, go through the City of Boynton Beach Building Division, and we handle that paperwork as part of the job.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* HOA & Insurance Considerations */}
         <section className="py-20 bg-black">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
