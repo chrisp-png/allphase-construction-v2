@@ -417,6 +417,7 @@ export default function RoofCalculator() {
             {formatPrice(saveLo)} – {formatPrice(saveHi)}
           </p>
           <p className="text-xl sm:text-2xl font-semibold text-white">over the next 20&ndash;25 years of your roof&rsquo;s life</p>
+          <p className="text-xs text-gray-400 mt-3 max-w-xl mx-auto">Illustrative projection comparing example South Florida premiums for a code-minimum roof ($6,800&ndash;$9,200/yr) against an insurance-optimized roof ($3,800&ndash;$5,400/yr), scaled to your roof size. Actual premiums, credits, and savings vary by carrier, home, and documented wind-mitigation features.</p>
 
           <div className="mt-6 pt-6 border-t border-white/5">
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
@@ -888,7 +889,7 @@ export default function RoofCalculator() {
               <p className="text-xl sm:text-2xl font-bold text-white max-w-2xl mx-auto mb-2">
                 Get a free roof replacement estimate for Broward &amp; Palm Beach County in{' '}
                 <span className="text-green-400">under 30 seconds</span> —{' '}
-                <span className="text-green-400">no signup required</span>.
+                <span className="text-green-400">no signup to see your price range</span>.
               </p>
               <p className="text-sm text-gray-500 max-w-2xl mx-auto">2026 Florida roofing calculator with HVHZ-compliant pricing for shingle, tile, metal &amp; flat roof systems across South Florida.</p>
             </>

@@ -14,10 +14,23 @@ function isMobileDevice(): boolean {
   return isTouch || isNarrow;
 }
 
+// PR-231: routes where the popup must NEVER appear — pages whose own
+// conversion form is the point. Nothing may cover a conversion form.
+const EXCLUDED_PREFIXES = ['/roof-cost-calculator', '/roof-calculator-thank-you', '/association-thank-you'];
+const SESSION_KEY = 'apc_exit_intent_shown';
+
+function alreadyShownThisSession(): boolean {
+  try { return window.sessionStorage.getItem(SESSION_KEY) === '1'; } catch { return false; }
+}
+function markShown(): void {
+  try { window.sessionStorage.setItem(SESSION_KEY, '1'); } catch { /* storage unavailable */ }
+}
+
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
   const location = useLocation();
+  const isExcludedRoute = EXCLUDED_PREFIXES.some((p) => location.pathname.startsWith(p));
 
   // ---- scroll-lock helpers (with scrollbar compensation to prevent CLS) ----
   const lockScroll = useCallback(() => {
@@ -59,11 +72,16 @@ export default function ExitIntentPopup() {
     // HARD MOBILE GUARD: never attach listeners on mobile / touch
     if (isMobileDevice()) return;
     if (hasShown) return;
+    // PR-231: once per visitor per session, site-wide — survives reloads
+    if (alreadyShownThisSession()) return;
+    // PR-231: never on pages whose own conversion form is the point
+    if (isExcludedRoute) return;
 
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0 && !hasShown) {
         setIsVisible(true);
         setHasShown(true);
+        markShown();
       }
     };
 
@@ -74,7 +92,7 @@ export default function ExitIntentPopup() {
       document.removeEventListener('mouseleave', handleMouseLeave);
       document.body.style.overflow = '';
     };
-  }, [hasShown]);
+  }, [hasShown, isExcludedRoute]);
 
   // ---- final safety: reset overflow on unmount no matter what ----
   useEffect(() => {
@@ -121,6 +139,7 @@ export default function ExitIntentPopup() {
             className="space-y-4"
           >
             <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
+            <input type="hidden" name="_subject" value="Insider&#39;s Guide Request &#8212; Exit Intent Popup" />
             <input type="hidden" name="source" value="exit-intent-popup" />
 
             <div className="grid grid-cols-2 gap-4">
