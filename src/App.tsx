@@ -51,6 +51,7 @@ const BocaRatonRoofRepairPage = lazy(() => import('./pages/BocaRatonRoofRepairPa
 const BoyntonBeachRoofRepairPage = lazy(() => import('./pages/BoyntonBeachRoofRepairPage'));
 const BrowardCountyRoofRepairPage = lazy(() => import('./pages/BrowardCountyRoofRepairPage'));
 const CoralSpringsRoofRepairPage = lazy(() => import('./pages/CoralSpringsRoofRepairPage'));
+const FortLauderdaleRoofRepairPage = lazy(() => import('./pages/FortLauderdaleRoofRepairPage'));
 const CoconutCreekRoofRepairPage = lazy(() => import('./pages/CoconutCreekRoofRepairPage'));
 const CooperCityRoofRepairPage = lazy(() => import('./pages/CooperCityRoofRepairPage'));
 const DaniaBeachRoofRepairPage = lazy(() => import('./pages/DaniaBeachRoofRepairPage'));
@@ -271,6 +272,7 @@ function AppContent() {
             <Route path="/roof-repair/coconut-creek" element={<CoconutCreekRoofRepairPage />} />
             <Route path="/roof-repair/cooper-city" element={<CooperCityRoofRepairPage />} />
             <Route path="/roof-repair/coral-springs" element={<CoralSpringsRoofRepairPage />} />
+            <Route path="/roof-repair/fort-lauderdale" element={<FortLauderdaleRoofRepairPage />} />
             <Route path="/roof-repair/dania-beach" element={<DaniaBeachRoofRepairPage />} />
             <Route path="/roof-repair/davie" element={<DavieRoofRepairPage />} />
             <Route path="/roof-repair/deerfield-beach" element={<DeerfieldBeachRoofRepairPage />} />

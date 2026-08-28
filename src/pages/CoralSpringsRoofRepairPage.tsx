@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
 import SEO from '../components/SEO';
+import CityRepairLeadForm from '../components/CityRepairLeadForm';
 
 export default function CoralSpringsRoofRepairPage() {
   useEffect(() => {
@@ -106,6 +107,9 @@ export default function CoralSpringsRoofRepairPage() {
               </div>
             </div>
       </section>
+
+      {/* PR-227: above-the-fold lead capture for paid traffic */}
+      <CityRepairLeadForm city="Coral Springs" citySlug="coral-springs" />
 
       <section id="common-issues" className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">

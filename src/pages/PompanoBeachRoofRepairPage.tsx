@@ -4,6 +4,7 @@ import { CheckCircle2, AlertTriangle, FileCheck, Shield, ChevronRight, Plus, Min
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 import SEO from '../components/SEO';
+import CityRepairLeadForm from '../components/CityRepairLeadForm';
 
 export default function PompanoBeachRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -105,6 +106,9 @@ export default function PompanoBeachRoofRepairPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-227: above-the-fold lead capture for paid traffic */}
+        <CityRepairLeadForm city="Pompano Beach" citySlug="pompano-beach" />
 
         {/* Roof Replacement Cost Section */}
         <section className="py-20 bg-zinc-900">

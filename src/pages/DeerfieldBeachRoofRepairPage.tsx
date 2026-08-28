@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import NearbyServiceAreas from '../components/NearbyServiceAreas';
 import cities from '../data/cities.json';
 import { getNearbyCities } from '../data/nearbyRoofRepairCities';
+import CityRepairLeadForm from '../components/CityRepairLeadForm';
 
 export default function DeerfieldBeachRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -109,6 +110,9 @@ export default function DeerfieldBeachRoofRepairPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-227: above-the-fold lead capture for paid traffic */}
+        <CityRepairLeadForm city="Deerfield Beach" citySlug="deerfield-beach" />
 
         {/* Why Deerfield Beach Is Our Home City */}
         <section className="py-20 bg-zinc-950">

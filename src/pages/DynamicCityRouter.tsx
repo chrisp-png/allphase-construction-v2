@@ -23,6 +23,7 @@ const CoralSpringsRoofRepairPage = lazy(() => import('./CoralSpringsRoofRepairPa
 const DaniaBeachRoofRepairPage = lazy(() => import('./DaniaBeachRoofRepairPage'));
 const DavieRoofRepairPage = lazy(() => import('./DavieRoofRepairPage'));
 const DeerfieldBeachRoofRepairPage = lazy(() => import('./DeerfieldBeachRoofRepairPage'));
+const FortLauderdaleRoofRepairPage = lazy(() => import('./FortLauderdaleRoofRepairPage'));
 const DelrayBeachRoofRepairPage = lazy(() => import('./DelrayBeachRoofRepairPage'));
 const GreenacresRoofRepairPage = lazy(() => import('./GreenacresRoofRepairPage'));
 const HallandaleBeachRoofRepairPage = lazy(() => import('./HallandaleBeachRoofRepairPage'));
@@ -122,6 +123,7 @@ const roofRepairPageMap: Record<string, React.LazyExoticComponent<() => JSX.Elem
   'dania-beach': DaniaBeachRoofRepairPage,
   'davie': DavieRoofRepairPage,
   'deerfield-beach': DeerfieldBeachRoofRepairPage,
+  'fort-lauderdale': FortLauderdaleRoofRepairPage,
   'delray-beach': DelrayBeachRoofRepairPage,
   'greenacres': GreenacresRoofRepairPage,
   'hallandale-beach': HallandaleBeachRoofRepairPage,

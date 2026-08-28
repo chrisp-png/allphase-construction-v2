@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import NearbyServiceAreas from '../components/NearbyServiceAreas';
 import cities from '../data/cities.json';
 import { getNearbyCities } from '../data/nearbyRoofRepairCities';
+import CityRepairLeadForm from '../components/CityRepairLeadForm';
 
 export default function BocaRatonRoofRepairPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -108,6 +109,9 @@ export default function BocaRatonRoofRepairPage() {
             </div>
           </div>
         </section>
+
+        {/* PR-227: above-the-fold lead capture for paid traffic */}
+        <CityRepairLeadForm city="Boca Raton" citySlug="boca-raton" />
 
         {/* Common Boca Raton Repair Problems */}
         <section className="py-20 bg-zinc-900">
