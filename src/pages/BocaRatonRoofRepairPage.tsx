@@ -299,6 +299,26 @@ export default function BocaRatonRoofRepairPage() {
           </div>
         </section>
 
+        {/* PR-229: Boca-specific local depth */}
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">Boca Raton Roofs: Mizner Tile East, Master-Planned West</h2>
+              <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+                <p>
+                  Boca Raton&apos;s roofing identity starts with its architecture. East of Federal Highway — Old Floresta, Por La Mar, Royal Palm Yacht &amp; Country Club, and the estates off Camino Real — the Mizner-inspired Mediterranean style means barrel tile, and a lot of it is clay on homes that have been standing since long before modern wind codes. Repairs there are as much craft as construction: source-matching discontinued tile profiles, re-bedding hips and ridges, and repairing underlayment beneath tile that is worth preserving. Add the salt exposure along A1A and the Intracoastal, and flashing and fastener corrosion joins the list on the coastal blocks.
+                </p>
+                <p>
+                  West Boca is a different generation of roof. The master-planned communities that filled in during the 1970s and 80s — Boca del Mar, Loggers&apos; Run, Boca West, and the neighborhoods along Glades Road and Palmetto Park west of the Turnpike — carry concrete tile and shingle systems now 30 to 45 years old. The pattern we see there is underlayment reaching end of life beneath tile that still looks fine from the street, which is exactly the case where an inspection-first approach saves real money: a targeted underlayment repair or a lift-and-relay costs a fraction of the full replacement a drive-by quote will recommend.
+                </p>
+                <p>
+                  Palm Beach County sits in Florida&apos;s wind-borne debris region rather than the High-Velocity Hurricane Zone, but we build Boca Raton repairs to the same standard as our Broward HVHZ work — the storms do not honor the county line. When a repair scope requires a permit, it runs through the City of Boca Raton&apos;s Development Services (or Palm Beach County for the unincorporated west), and we handle that paperwork as part of the job, including the documentation your HOA architectural review board may want to see before work begins.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* HOA & Insurance Considerations */}
         <section className="py-20 bg-black">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
