@@ -3074,18 +3074,29 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Roofing Services',
+      // PR-226: full service catalog (was a single free-inspection offer).
+      // Machine-readable service list for search engines and AI assistants.
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
             name: 'Free Roof Inspection',
-            description: 'Complimentary 21-point roof inspection for South Florida homeowners'
+            description: 'Complimentary 21-point roof inspection for South Florida homeowners',
+            url: 'https://allphaseconstructionfl.com/roof-inspection'
           },
           price: '0',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock'
-        }
+        },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Roof Replacement', description: 'Complete tear-off and roof replacement — shingle, tile, metal and flat systems, built to HVHZ code.', url: 'https://allphaseconstructionfl.com/roof-replacement' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Roof Repair', description: 'Leak detection and roof repair with 24/7 phone answering across Broward and Palm Beach County.', url: 'https://allphaseconstructionfl.com/roof-repair' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tile Roofing', description: 'Concrete and clay tile roof replacement, repair and lift-and-relay.', url: 'https://allphaseconstructionfl.com/tile-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Metal Roofing', description: 'Standing-seam steel and aluminum metal roofing, snap-lock to mechanically seamed premium systems.', url: 'https://allphaseconstructionfl.com/metal-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Shingle Roofing', description: 'Architectural and designer asphalt shingle roof installation and replacement.', url: 'https://allphaseconstructionfl.com/shingle-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flat & Low-Slope Roofing', description: 'TPO, PVC and modified bitumen flat roof replacement and repair for homes and businesses.', url: 'https://allphaseconstructionfl.com/flat-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Roofing', description: 'Commercial and condo/HOA roof replacement for property managers and association boards.', url: 'https://allphaseconstructionfl.com/commercial-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Condo & HOA Roof Financing', description: 'Association roof replacement with fixed-rate financing — monthly payments instead of lump-sum special assessments.', url: 'https://allphaseconstructionfl.com/hoa-condo-roof-financing' } }
       ]
     }
   };
