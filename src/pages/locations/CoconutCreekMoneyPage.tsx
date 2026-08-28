@@ -73,8 +73,9 @@ export default function CoconutCreekMoneyPage() {
               <div className="flex items-center gap-3 mb-6">
                 <MapPin className="w-8 h-8 text-red-600" />
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  Expert Roofing Contractor in {cityName}, FL
+                  Roof Replacement in {cityName}, FL
                 </h1>
+                <p className="text-lg md:text-xl text-red-500 font-semibold mt-3">Expert Roofing Contractor in {cityName}, FL</p>
                 <div data-marker="above-fold-proof" className="mt-4 mb-6 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-black/40 backdrop-blur-sm border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold text-white">
                   <span className="text-yellow-400">★ 4.9 Google</span>
                   <span className="text-red-400">·</span>

@@ -77,8 +77,9 @@ export default function FortLauderdaleMoneyPage() {
               <div className="flex items-center gap-3 mb-6">
                 <MapPin className="w-8 h-8 text-red-600" />
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  Expert Roofing Contractor in {cityName}, FL
+                  Roof Replacement in {cityName}, FL
                 </h1>
+                <p className="text-lg md:text-xl text-red-500 font-semibold mt-3">Expert Roofing Contractor in {cityName}, FL</p>
 
               {/* PR-72: AI Search Rail */}
               <div className="mt-6 mb-6">
