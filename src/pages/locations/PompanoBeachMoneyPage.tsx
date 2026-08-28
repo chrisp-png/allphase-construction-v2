@@ -10,6 +10,7 @@ import Contact from '../../components/Contact';
 import StickyConversionBar from '../../components/StickyConversionBar';
 import { MapPin, Phone, Clock, CheckCircle2 } from 'lucide-react';
 import { generateLocalBusinessSchema } from '../../utils/localBusinessSchema';
+import MoneyPageEnhancements from '../../components/MoneyPageEnhancements';
 import { getCityCoordinates } from '../../data/cityCoordinates';
 
 export default function PompanoBeachMoneyPage() {
@@ -35,7 +36,8 @@ export default function PompanoBeachMoneyPage() {
         <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
-              <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Pompano Beach, FL</h1></div>
+              <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roof Replacement in Pompano Beach, FL</h1></div>
+              <p className="text-lg md:text-xl text-red-500 font-semibold mb-4">Your Dual-Licensed Roofing Contractor in Pompano Beach, FL</p>
               <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor in Pompano Beach Florida for waterfront, family, and condo homes?" /></div>
               <AtomicAnswer>Pompano Beach, FL is a big, diverse Broward County beach city — ’the Wreck Capital of Florida,’ with 18 sunken ships offshore and a fishing pier shaped like a fish. It runs from Intracoastal dock estates in Harbor Village to family ranch neighborhoods and west-side golf communities. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that roofs coastal, family, and condo homes to Miami-Dade HVHZ code — legally required here in Broward. Roof replacements run $11,000 to $40,000 and up.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -80,6 +82,40 @@ export default function PompanoBeachMoneyPage() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">{['Hillsboro Shores', 'Harbor Village', 'Cresthaven', 'Highlands', 'Palm Aire', 'Old Pompano'].map(n => (<div key={n} className="bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-4 text-center text-zinc-200 font-semibold">{n}</div>))}</div>
           </div>
         </section>
+        {/* PR-230: Pompano local depth — housing stock */}
+        <section className="py-20 bg-zinc-900">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">What Pompano Beach Roofs Are Up Against</h2>
+            <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+              <p>
+                Most of Pompano Beach was built in one great push between the 1950s and the 1970s, and the roofs tell that story. In Cresthaven, Kendall Green, and the Highlands, the concrete-block ranches are on their third or fourth shingle cycle, and the original decking under those shingles has lived through every one of them. When we tear off in these neighborhoods we plan for decking surprises — it is why being dual-licensed matters here, because structural repairs happen under the same contract instead of stopping the job.
+              </p>
+              <p>
+                East of Federal Highway the enemy is salt. Harbor Village and Hillsboro Shores sit between the Intracoastal and the ocean, and the dock estates near the Hillsboro Inlet take salt air off two sides. Fasteners corrode, valley metal rusts, and flashing fails years before the roof field around it. On coastal replacements we spec corrosion-resistant metals and stainless or hot-dipped fasteners as a matter of course — the upgrade costs little at install and decides how the roof looks in year twelve.
+              </p>
+              <p>
+                West of I-95, Palm Aire is its own roofscape: 1970s golf-course condos and villas with tile mains and flat sections over Florida rooms and walkways. Tile out there is often original — the tile itself still sound, the underlayment beneath it at end of life. That is the classic case where a lift-and-relay, reusing your existing tile over new underlayment, delivers a code-current roof for tens of thousands less than full replacement. And along the beach, the redevelopment around the new pier district means condo boards juggling milestone inspections and insurance renewals — work we document to the standard engineers and carriers expect.
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* PR-230: Pompano local depth — process & economics */}
+        <section className="py-20 bg-zinc-950">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">How a Pompano Beach Roof Replacement Actually Runs</h2>
+            <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
+              <p>
+                Pompano Beach sits inside Broward County&apos;s High-Velocity Hurricane Zone, so every system we install carries Miami-Dade or Florida product approvals and HVHZ attachment schedules — that is the legal floor here, not an upgrade. Permits run through the City of Pompano Beach Building Division, with in-progress and final inspections along the way. We handle the paperwork, the inspection scheduling, and the NOA documentation that proves your roof is what the permit says it is.
+              </p>
+              <p>
+                The number most homeowners actually care about: a typical Pompano Beach replacement lands between $11,000 for a modest shingle ranch and $40,000-plus for large tile and metal systems, with the drivers being roof size, material tier, tear-off findings, and how much of the roof is flat. Most single-family jobs take two to five days on the roof once materials land, plus the permit lead time up front.
+              </p>
+              <p>
+                Then there is the insurance math, which in Broward now matters as much as the roof itself. Carriers increasingly non-renew roofs past 15 years, and a new HVHZ-spec roof with a wind mitigation inspection (the OIR-B1-1802 form) typically earns premium credits that claw back a meaningful slice of the project cost every single year. We build to the credit checklist — sealed roof deck, enhanced roof-to-wall attachment where accessible, documented secondary water barrier — and we tell you before the job which credits your home can and cannot earn.
+              </p>
+            </div>
+          </div>
+        </section>
         <section className="py-20 bg-zinc-950">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Pompano Beach Roofing FAQs</h2>
@@ -117,6 +153,7 @@ export default function PompanoBeachMoneyPage() {
             </div>
           </div>
         </section>
+        <MoneyPageEnhancements cityName="Pompano Beach" county="Broward" hvhz={true} />
         <Contact />
         <StickyConversionBar />
       </div>

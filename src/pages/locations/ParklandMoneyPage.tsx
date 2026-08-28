@@ -35,7 +35,8 @@ export default function ParklandMoneyPage() {
         <section className="relative bg-gradient-to-b from-black via-zinc-950 to-zinc-900 pt-44 pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
-              <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Parkland, FL</h1></div>
+              <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roof Replacement in Parkland, FL</h1></div>
+              <p className="text-lg md:text-xl text-red-500 font-semibold mb-4">Your Dual-Licensed Roofing Contractor in Parkland, FL</p>
               <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor in Parkland Florida for luxury golf estates, gated communities, and equestrian ranches?" /></div>
               <AtomicAnswer>Parkland, FL is Broward County’s upscale, equestrian family suburb — founded in 1963 as a rural sanctuary that famously had no traffic lights or stores until the 1990s, where horses once outnumbered people. Its housing runs from Greg Norman golf estates to no-HOA horse ranches. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs premium tile, standing-seam metal, and shingle to Miami-Dade HVHZ code — legally required here in Broward. Roof replacements run $14,000 to $60,000 and up.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
