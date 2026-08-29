@@ -416,7 +416,7 @@ export default function RoofCalculator() {
           <p className="text-5xl sm:text-6xl font-extrabold text-white mb-2">
             {formatPrice(saveLo)} – {formatPrice(saveHi)}
           </p>
-          <p className="text-xl sm:text-2xl font-semibold text-white">over the next 20&ndash;25 years of your roof&rsquo;s life</p>
+          <p className="text-xl sm:text-2xl font-semibold text-white">over the 25 to 30 years a roof we install is built to last</p>
           <p className="text-xs text-gray-400 mt-3 max-w-xl mx-auto">Illustrative projection comparing example South Florida premiums for a code-minimum roof ($6,800&ndash;$9,200/yr) against an insurance-optimized roof ($3,800&ndash;$5,400/yr), scaled to your roof size. Actual premiums, credits, and savings vary by carrier, home, and documented wind-mitigation features.</p>
 
           <div className="mt-6 pt-6 border-t border-white/5">
@@ -616,7 +616,7 @@ export default function RoofCalculator() {
         <div className="h-1.5 rounded-full bg-gradient-to-r from-red-500 via-amber-500 to-green-500 mb-4" />
         <div className="bg-green-600/8 border border-green-600/20 rounded-xl p-4 text-center mb-2">
           <span className="text-xl font-extrabold text-green-400">{formatPrice(saveLo)} – {formatPrice(saveHi)} saved</span>
-          <span className="text-base text-gray-300 ml-2">over the next 20&ndash;25 years</span>
+          <span className="text-base text-gray-300 ml-2">over the life of the roof</span>
         </div>
 
         <NavButtons back={5} next={7} nextLabel="What Do Insurers Actually Check?" nextGlow />
