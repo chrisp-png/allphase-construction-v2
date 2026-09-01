@@ -2300,6 +2300,23 @@ function generateHoaRoofFinancingContent() {
 }
 
 
+
+// PR-233: general roof-replacement PPC LP — noindexed, paid traffic only.
+function generateLpRoofReplacementContent() {
+  return `
+  <h1>Roof Replacement in Broward &amp; Palm Beach County</h1>
+  <p>Complete tear-off and roof replacement — tile, metal, shingle and flat systems — built to South Florida&#39;s hurricane wind code by All Phase Construction USA, a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236). Free inspection with photo documentation and a written, line-item estimate. Over 2,500 roofs since 2006, 4.9 stars across 160+ Google reviews.</p>
+  <h2>Typical Installed Ranges (2026, HVHZ-spec)</h2>
+  <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
+    <li><strong>Asphalt shingle</strong> — roughly $14,000 to $22,000.</li>
+    <li><strong>Concrete tile</strong> — roughly $28,000 to $45,000.</li>
+    <li><strong>Metal</strong> — roughly $16,000 to $50,000.</li>
+    <li><strong>Flat / low-slope</strong> — roughly $9 to $14 per square foot.</li>
+  </ul>
+  <p>Call <strong>(754) 227-5605</strong> — a real person answers 24/7.</p>
+`;
+}
+
 // PR-225: gated PPC calculator LP — noindexed, paid traffic only. Served copy
 // describes the tool and honest 2026 ranges; the interactive gate is hydrated.
 function generateLpRoofCalculatorContent() {
@@ -2967,6 +2984,7 @@ function blogPostingSchema({ slug, title, description, image, published, modifie
 const NOINDEX_PATHS = new Set([
   '/lp/roof-repair',
   '/lp/roof-cost-calculator',
+  '/lp/roof-replacement',
   '/palm-beach-county-roof-insurance-claim',
 ]);
 
@@ -4072,6 +4090,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/free-roof-estimate', title: 'Free Roof Estimate' },
     { path: '/lp/roof-repair', title: 'Roofer Near You — Leak Repair & Free Inspections' },
     { path: '/lp/roof-cost-calculator', title: 'South Florida Roof Cost Estimate' },
+    { path: '/lp/roof-replacement', title: 'Roof Replacement — Broward & Palm Beach' },
     { path: '/hoa-condo-roof-financing', title: 'Condo & HOA Roof Financing' },
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
@@ -4181,6 +4200,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateLpRoofRepairContent();
     } else if (pagePath === '/lp/roof-cost-calculator') {
       pageContent = generateLpRoofCalculatorContent();
+    } else if (pagePath === '/lp/roof-replacement') {
+      pageContent = generateLpRoofReplacementContent();
     } else if (pagePath === '/free-roof-estimate') {
       pageContent = generateFreeRoofEstimateContent();
     } else if (pagePath === '/licensed-roofing-contractor') {
