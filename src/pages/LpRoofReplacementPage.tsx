@@ -98,7 +98,7 @@ export default function LpRoofReplacementPage() {
 
             <div className="bg-zinc-900 border border-zinc-700 rounded-xl p-6">
               <p className="text-white font-bold text-xl mb-1">Get Your Free Replacement Estimate</p>
-              <p className="text-zinc-400 text-sm mb-4">30 seconds. A licensed estimator responds the same business day.</p>
+              <p className="text-zinc-400 text-sm mb-4">30 seconds. A real person answers every call, 24/7 &mdash; your inspection is scheduled within 24 hours.</p>
               <form onSubmit={handleSubmit} method="POST" className="space-y-3">
                 <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
                 <input type="hidden" name="_subject" value="REPLACEMENT LEAD — /lp/roof-replacement" />
@@ -147,6 +147,24 @@ export default function LpRoofReplacementPage() {
                 <ClipboardCheck className="w-8 h-8 text-red-500 mb-4" />
                 <h3 className="text-xl font-bold mb-3">A Written Line-Item Scope</h3>
                 <p className="text-zinc-300 leading-relaxed">Material, tier, and price in writing before work starts — the document your insurer, your HOA, and your own planning can all read from. No surprises at the final invoice.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PR-234: insurance section — message-matches the 'Insurance Requiring
+            New Roof?' and 'New Roof, Lower Insurance' ads pointing here */}
+        <section className="py-14 px-4 bg-[#09090b]">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">Is Your Insurance Company Forcing the Issue?</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-3 text-red-400">Insurance requiring a new roof?</h3>
+                <p className="text-zinc-300 leading-relaxed">Florida carriers increasingly decline or non-renew homes with roofs past the 15-year mark. If you&apos;ve received that letter, the clock is real &mdash; but the first step is free: our inspection documents your roof&apos;s actual condition with photos and a written report. Sometimes that report satisfies the carrier. When it doesn&apos;t, you&apos;ll have a line-item replacement scope the same week, and we build to the deadline your policy gives you.</p>
+              </div>
+              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-3 text-green-400">A new roof can lower what you pay</h3>
+                <p className="text-zinc-300 leading-relaxed">Every roof we install is built to hurricane wind code with the features Florida insurers grant premium credits for &mdash; sealed roof deck, enhanced attachment, secondary water barrier &mdash; and we document them. After installation, a wind mitigation inspection (the OIR-B1-1802 form) is what turns those features into discounts on your renewal, and many homeowners recover a meaningful slice of the project cost year after year over the 25 to 30 years a roof we install is built to last.</p>
               </div>
             </div>
           </div>
