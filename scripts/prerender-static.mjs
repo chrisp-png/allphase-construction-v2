@@ -4222,13 +4222,19 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = defaultServicePageContent(title);
     }
 
-    const html = createHTMLTemplate(
+    let html = createHTMLTemplate(
       metadata.title || title,
       metadata.description || `Professional ${title.toLowerCase()} from All Phase Construction USA`,
       metadata.canonical || `https://allphaseconstructionfl.com${pagePath}`,
       pageContent,
       jsonLdSchema
     );
+    // PR-235: ad landing pages must never render the untracked landline,
+    // even no-JS — same treatment as the PR-228 city routes. Body-only;
+    // head/JSON-LD keep the real business number.
+    if (pagePath.startsWith('/lp/')) {
+      html = applyStaticFallbackPhone(html);
+    }
 
     const dir = path.join(publicDir, pagePath.substring(1));
     const filePath = path.join(dir, 'index.html');

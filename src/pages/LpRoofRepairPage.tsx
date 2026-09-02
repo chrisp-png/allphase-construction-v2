@@ -21,7 +21,7 @@ export default function LpRoofRepairPage() {
     <>
       <Helmet>
         <title>Roofer Near You | Leak Repair &amp; Free Inspections | All Phase</title>
-        <meta name="description" content="Local roofer for Broward & Palm Beach — roof leak repair and free inspections from a dual-licensed contractor. Real person answers 24/7. (754) 227-5605." />
+        <meta name="description" content="Local roofer for Broward & Palm Beach — roof leak repair and free inspections from a dual-licensed contractor. Real person answers 24/7. (754) 258-6135." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/lp/roof-repair" />
       </Helmet>
@@ -34,8 +34,8 @@ export default function LpRoofRepairPage() {
               <p className="font-bold text-lg leading-tight">All Phase Construction USA</p>
               <p className="text-xs text-red-500 font-semibold">Dual-Licensed Roofing Contractor</p>
             </div>
-            <a href="tel:754-227-5605" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all">
-              <Phone className="w-5 h-5" /><span className="hidden sm:inline">(754) 227-5605</span><span className="sm:hidden">Call Now</span>
+            <a href="tel:754-258-6135" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all">
+              <Phone className="w-5 h-5" /><span className="hidden sm:inline">(754) 258-6135</span><span className="sm:hidden">Call Now</span>
             </a>
           </div>
         </header>
@@ -78,7 +78,7 @@ export default function LpRoofRepairPage() {
                 <button type="submit" className="w-full bg-red-600 text-white py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
                   Request My Free Inspection
                 </button>
-                <p className="text-xs text-zinc-500 text-center">No spam, no obligation. Prefer to talk? <a href="tel:754-227-5605" className="text-red-400 underline">(754) 227-5605</a></p>
+                <p className="text-xs text-zinc-500 text-center">No spam, no obligation. Prefer to talk? <a href="tel:754-258-6135" className="text-red-400 underline">(754) 258-6135</a></p>
               </form>
             </div>
           </div>
@@ -144,8 +144,8 @@ export default function LpRoofRepairPage() {
           <div className="max-w-5xl mx-auto text-center">
             <p className="inline-flex items-center gap-2 text-lg text-zinc-300 mb-4"><MapPin className="w-5 h-5 text-red-500" /> Serving Deerfield Beach, Boca Raton, Pompano Beach, Fort Lauderdale, Coral Springs, Delray Beach &amp; 50+ South Florida cities</p>
             <h2 className="text-3xl font-bold mb-6">A Leak Never Gets Cheaper by Waiting</h2>
-            <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-10 py-4 rounded-lg text-xl font-bold hover:bg-red-700 transition-all">
-              <Phone className="w-6 h-6" /> (754) 227-5605
+            <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-10 py-4 rounded-lg text-xl font-bold hover:bg-red-700 transition-all">
+              <Phone className="w-6 h-6" /> (754) 258-6135
             </a>
             <p className="text-zinc-500 mt-3 text-sm">A real person answers 24/7. After-hours calls get a call back within the first hour of the next business day.</p>
           </div>

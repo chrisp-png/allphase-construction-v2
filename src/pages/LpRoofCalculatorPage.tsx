@@ -61,7 +61,7 @@ export default function LpRoofCalculatorPage() {
         headers: { Accept: 'application/json' },
       });
       if (!response.ok) {
-        setError('Something went wrong. Please try again — or call (754) 227-5605 for your estimate.');
+        setError('Something went wrong. Please try again — or call (754) 258-6135 for your estimate.');
         setSubmitting(false);
         return;
       }
@@ -70,7 +70,7 @@ export default function LpRoofCalculatorPage() {
       trackLeadConversion(FORM_ID, extractLeadUserData(form));
       setUnlocked(true);
     } catch {
-      setError('An unexpected error occurred. Please try again — or call (754) 227-5605.');
+      setError('An unexpected error occurred. Please try again — or call (754) 258-6135.');
       setSubmitting(false);
     }
   };
@@ -92,8 +92,8 @@ export default function LpRoofCalculatorPage() {
               <p className="font-bold text-lg leading-tight">All Phase Construction USA</p>
               <p className="text-xs text-red-500 font-semibold">Dual-Licensed Roofing Contractor</p>
             </div>
-            <a href="tel:754-227-5605" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all">
-              <Phone className="w-5 h-5" /><span className="hidden sm:inline">(754) 227-5605</span><span className="sm:hidden">Call Now</span>
+            <a href="tel:754-258-6135" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all">
+              <Phone className="w-5 h-5" /><span className="hidden sm:inline">(754) 258-6135</span><span className="sm:hidden">Call Now</span>
             </a>
           </div>
         </header>
@@ -231,8 +231,8 @@ export default function LpRoofCalculatorPage() {
                     <div className="bg-zinc-800/60 border border-zinc-700 rounded-xl p-5 mb-6">
                       <p className="text-zinc-300 leading-relaxed"><ClipboardCheck className="w-5 h-5 text-red-500 inline mr-2" />A team member from our Deerfield Beach office will call you the next business day to confirm your estimate and schedule a <strong className="text-white">free roof inspection</strong> — the written, line-item number based on your actual roof.</p>
                     </div>
-                    <a href="tel:754-227-5605" className="w-full inline-flex items-center justify-center gap-2 bg-red-600 text-white py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
-                      <Phone className="w-5 h-5" /> Want it sooner? Call (754) 227-5605
+                    <a href="tel:754-258-6135" className="w-full inline-flex items-center justify-center gap-2 bg-red-600 text-white py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
+                      <Phone className="w-5 h-5" /> Want it sooner? Call (754) 258-6135
                     </a>
                   </div>
                 )}

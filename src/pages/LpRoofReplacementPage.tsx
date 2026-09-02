@@ -48,7 +48,7 @@ export default function LpRoofReplacementPage() {
       window.location.assign('/roof-calculator-thank-you.html');
     } catch {
       setSubmitting(false);
-      alert('Something went wrong. Please try again — or call (754) 227-5605.');
+      alert('Something went wrong. Please try again — or call (754) 258-6135.');
     }
   };
 
@@ -56,7 +56,7 @@ export default function LpRoofReplacementPage() {
     <>
       <Helmet>
         <title>Roof Replacement — Broward &amp; Palm Beach | All Phase USA</title>
-        <meta name="description" content="Full roof replacement by a dual-licensed Broward & Palm Beach contractor — tile, metal, shingle & flat, built to HVHZ code. Free inspection and written line-item estimate. (754) 227-5605." />
+        <meta name="description" content="Full roof replacement by a dual-licensed Broward & Palm Beach contractor — tile, metal, shingle & flat, built to HVHZ code. Free inspection and written line-item estimate. (754) 258-6135." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/lp/roof-replacement" />
       </Helmet>
@@ -69,8 +69,8 @@ export default function LpRoofReplacementPage() {
               <p className="font-bold text-lg leading-tight">All Phase Construction USA</p>
               <p className="text-xs text-red-500 font-semibold">Dual-Licensed Roofing Contractor</p>
             </div>
-            <a href="tel:754-227-5605" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all">
-              <Phone className="w-5 h-5" /><span className="hidden sm:inline">(754) 227-5605</span><span className="sm:hidden">Call Now</span>
+            <a href="tel:754-258-6135" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all">
+              <Phone className="w-5 h-5" /><span className="hidden sm:inline">(754) 258-6135</span><span className="sm:hidden">Call Now</span>
             </a>
           </div>
         </header>
@@ -211,8 +211,8 @@ export default function LpRoofReplacementPage() {
             <h2 className="text-3xl font-bold mb-4">Start With the Free Inspection</h2>
             <p className="text-zinc-300 text-lg mb-8">Photos of what we find, a straight repair-or-replace answer, and a written line-item estimate. No pressure at any step.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
-                <Phone className="w-6 h-6" /> (754) 227-5605
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
+                <Phone className="w-6 h-6" /> (754) 258-6135
               </a>
               <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
                 Get My Free Estimate
