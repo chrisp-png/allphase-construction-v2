@@ -31,6 +31,7 @@ const FreeRoofEstimatePage = lazy(() => import('./pages/FreeRoofEstimatePage'));
 const LpRoofRepairPage = lazy(() => import('./pages/LpRoofRepairPage'));
 const LpRoofCalculatorPage = lazy(() => import('./pages/LpRoofCalculatorPage'));
 const LpRoofReplacementPage = lazy(() => import('./pages/LpRoofReplacementPage'));
+const LpRoofingCompanyPage = lazy(() => import('./pages/LpRoofingCompanyPage'));
 const HoaRoofFinancingPage = lazy(() => import('./pages/HoaRoofFinancingPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -250,6 +251,7 @@ function AppContent() {
             <Route path="/lp/roof-repair" element={<LpRoofRepairPage />} />
             <Route path="/lp/roof-cost-calculator" element={<LpRoofCalculatorPage />} />
             <Route path="/lp/roof-replacement" element={<LpRoofReplacementPage />} />
+            <Route path="/lp/roofing-company" element={<LpRoofingCompanyPage />} />
             <Route path="/hoa-condo-roof-financing" element={<HoaRoofFinancingPage />} />
             <Route path="/calculator" element={<Navigate to="/roof-cost-calculator/" replace />} />
             <Route path="/contact" element={<ContactPage />} />

@@ -16,7 +16,7 @@ function isMobileDevice(): boolean {
 
 // PR-231: routes where the popup must NEVER appear — pages whose own
 // conversion form is the point. Nothing may cover a conversion form.
-const EXCLUDED_PREFIXES = ['/roof-cost-calculator', '/roof-calculator-thank-you', '/association-thank-you'];
+const EXCLUDED_PREFIXES = ['/roof-cost-calculator', '/roof-calculator-thank-you', '/association-thank-you', '/roof-repair'];
 const SESSION_KEY = 'apc_exit_intent_shown';
 
 function alreadyShownThisSession(): boolean {
