@@ -2301,6 +2301,16 @@ function generateHoaRoofFinancingContent() {
 
 
 
+
+// PR-236: 'roofer near me' company-shopper PPC LP — noindexed, paid only.
+function generateLpRoofingCompanyContent() {
+  return `
+  <h1>Top-Rated Roofing Company in Broward &amp; Palm Beach County</h1>
+  <p>All Phase Construction USA, LLC is a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), GAF Gold Certified, with more than 2,500 roofs installed and repaired across Broward and Palm Beach County since 2006 &#8212; 4.9 stars across 160+ Google reviews and an A+ BBB rating. Headquarters: 590 Goolsby Blvd, Deerfield Beach, FL 33442. A live person answers every call, 24/7, and scheduling is guaranteed within 24 hours.</p>
+  <p>Repairs, replacements, and inspections for tile, metal, shingle and flat roofs. Free inspection with photo documentation and a written, line-item estimate.</p>
+`;
+}
+
 // PR-233: general roof-replacement PPC LP — noindexed, paid traffic only.
 function generateLpRoofReplacementContent() {
   return `
@@ -2985,6 +2995,7 @@ const NOINDEX_PATHS = new Set([
   '/lp/roof-repair',
   '/lp/roof-cost-calculator',
   '/lp/roof-replacement',
+  '/lp/roofing-company',
   '/palm-beach-county-roof-insurance-claim',
 ]);
 
@@ -4091,6 +4102,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/lp/roof-repair', title: 'Roofer Near You — Leak Repair & Free Inspections' },
     { path: '/lp/roof-cost-calculator', title: 'South Florida Roof Cost Estimate' },
     { path: '/lp/roof-replacement', title: 'Roof Replacement — Broward & Palm Beach' },
+    { path: '/lp/roofing-company', title: 'Top-Rated Roofing Company — Broward & Palm Beach' },
     { path: '/hoa-condo-roof-financing', title: 'Condo & HOA Roof Financing' },
     { path: '/single-ply-roofing', title: 'Single-Ply Roofing Systems' },
     { path: '/licensed-roofing-contractor', title: 'Licensed Roofing Contractor' },
@@ -4202,6 +4214,8 @@ const CITY_PAGE_SCHEMAS = {
       pageContent = generateLpRoofCalculatorContent();
     } else if (pagePath === '/lp/roof-replacement') {
       pageContent = generateLpRoofReplacementContent();
+    } else if (pagePath === '/lp/roofing-company') {
+      pageContent = generateLpRoofingCompanyContent();
     } else if (pagePath === '/free-roof-estimate') {
       pageContent = generateFreeRoofEstimateContent();
     } else if (pagePath === '/licensed-roofing-contractor') {

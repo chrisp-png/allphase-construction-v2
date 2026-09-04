@@ -44,14 +44,15 @@ export default function LpRoofRepairPage() {
         <section className="pt-28 pb-14 px-4 bg-gradient-to-b from-[#09090b] via-zinc-950 to-[#27272a]">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">Need a Roofer Near You? We&apos;re Already in Your Neighborhood.</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">Roof Leak? We Repair First &mdash; and Fix It Right.</h1>
               <p className="text-xl text-zinc-300 leading-relaxed mb-5">
-                Roof leak repairs and free inspections across Broward &amp; Palm Beach County — from a dual-licensed contractor (CCC-1331464 &amp; CGC-1526236), dispatched daily from our Deerfield Beach headquarters. A real person answers our phone 24/7.
+                Water stain on the ceiling? Drip you can hear but can&apos;t find? We trace the actual leak and repair it &mdash; emergency tarping when it can&apos;t wait &mdash; across Broward &amp; Palm Beach County, from a dual-licensed contractor (CCC-1331464 &amp; CGC-1526236) dispatched daily out of Deerfield Beach. A live person answers every call, 24/7 &mdash; scheduling guaranteed within 24 hours.
               </p>
               <div className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 bg-black/40 border border-red-600/30 rounded-full px-4 py-2 text-sm sm:text-base font-semibold mb-6">
                 <span className="text-yellow-400 inline-flex items-center gap-1"><Star className="w-4 h-4 fill-yellow-400" /> 4.9 Google</span>
                 <span className="text-red-400">·</span><span>160+ Reviews</span>
                 <span className="text-red-400">·</span><span>Since 2006</span>
+                <span className="text-red-400">·</span><span>GAF Gold Certified</span>
               </div>
               <div className="space-y-3 text-lg text-zinc-300">
                 <p className="flex items-start gap-3"><CheckCircle2 className="w-6 h-6 text-red-500 shrink-0 mt-0.5" /> Free inspection with photo documentation — see what we see</p>
@@ -154,7 +155,7 @@ export default function LpRoofRepairPage() {
         {/* Slim footer: trust essentials only */}
         <footer className="py-8 px-4 bg-black border-t border-zinc-800 text-center text-sm text-zinc-500">
           <p className="mb-1 font-semibold text-zinc-400">All Phase Construction USA, LLC</p>
-          <p className="mb-1">Licensed &amp; Insured — CCC-1331464 (Roofing) · CGC-1526236 (General Contractor)</p>
+          <p className="mb-1">Licensed &amp; Insured — CCC-1331464 (Roofing) · CGC-1526236 (General Contractor) · GAF Gold Certified</p>
           <p className="mb-1">590 Goolsby Blvd, Deerfield Beach, FL 33442 · <a href="https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">BBB A+ Accredited</a></p>
           <p>© {new Date().getFullYear()} All Phase Construction USA. All rights reserved.</p>
         </footer>
