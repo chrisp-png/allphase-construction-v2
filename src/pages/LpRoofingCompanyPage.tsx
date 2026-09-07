@@ -7,7 +7,7 @@ import { interceptLeadSubmit } from '../utils/leadConversion';
  * PPC landing page for the "Roofer Near Me" ad group (PR-236) — keywords
  * like "roofing companies near me" / "roofer near me". This searcher is
  * shopping for a CONTRACTOR, not pricing a specific job, so the page sells
- * the company: dual licenses, GAF Gold certification, reviews, service
+ * the company: dual licenses, GAF certification, reviews, service
  * area, response commitment, real project photos.
  *
  * Same /lp/ discipline as its siblings: noindex,follow + self-canonical,
@@ -26,7 +26,7 @@ export default function LpRoofingCompanyPage() {
     <>
       <Helmet>
         <title>Top-Rated Roofing Company — Broward &amp; Palm Beach | All Phase</title>
-        <meta name="description" content="Dual-licensed, GAF Gold Certified roofing company in Deerfield Beach — 4.9 stars, 160+ reviews, 2,500+ roofs across Broward & Palm Beach since 2006. A real person answers 24/7." />
+        <meta name="description" content="Dual-licensed, GAF Certified Contractor roofing company in Deerfield Beach — 4.9 stars, 160+ reviews, 2,500+ roofs across Broward & Palm Beach since 2006. A real person answers 24/7." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/lp/roofing-company" />
       </Helmet>
@@ -57,7 +57,7 @@ export default function LpRoofingCompanyPage() {
                 <span className="text-yellow-400 inline-flex items-center gap-1"><Star className="w-4 h-4 fill-yellow-400" /> 4.9 Google</span>
                 <span className="text-red-400">·</span><span>160+ Reviews</span>
                 <span className="text-red-400">·</span><span>A+ BBB</span>
-                <span className="text-red-400">·</span><span>GAF Gold Certified</span>
+                <span className="text-red-400">·</span><span>GAF Certified Contractor</span>
               </div>
               <div className="space-y-3 text-lg text-zinc-300">
                 <p className="flex items-start gap-3"><Shield className="w-6 h-6 text-red-500 shrink-0 mt-0.5" /> Dual state licenses — CCC-1331464 (roofing) &amp; CGC-1526236 (general contractor)</p>
@@ -105,8 +105,8 @@ export default function LpRoofingCompanyPage() {
                 <p className="text-zinc-300 leading-relaxed">Most roofers hold one license. We hold the state roofing license and a general contractor license — so when tear-off reveals rotted decking or structural damage, we fix it in-house under the same agreement instead of stopping your job to find a second contractor.</p>
               </div>
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-3">GAF Gold Certified</h3>
-                <p className="text-zinc-300 leading-relaxed">Factory certification from North America&apos;s largest shingle manufacturer — covering residential systems as well as flat and low-slope — which qualifies our installations for enhanced manufacturer warranties most companies can&apos;t offer.</p>
+                <h3 className="text-xl font-bold mb-3">GAF Certified Contractor</h3>
+                <p className="text-zinc-300 leading-relaxed">Factory-certified by GAF, North America&apos;s largest roofing manufacturer. For commercial and low-slope work, All Phase holds the GAF GoldElite&trade; Commercial Contractor designation &mdash; a tier able to offer GAF&apos;s Diamond Pledge&trade; NDL guarantee of up to 25 years on qualifying systems.</p>
               </div>
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">Everything in Writing</h3>
@@ -171,7 +171,7 @@ export default function LpRoofingCompanyPage() {
         {/* Slim footer */}
         <footer className="py-8 px-4 bg-black border-t border-zinc-800 text-center text-sm text-zinc-500">
           <p className="mb-1 font-semibold text-zinc-400">All Phase Construction USA, LLC</p>
-          <p className="mb-1">Licensed &amp; Insured — CCC-1331464 (Roofing) · CGC-1526236 (General Contractor) · GAF Gold Certified</p>
+          <p className="mb-1">Licensed &amp; Insured — CCC-1331464 (Roofing) · CGC-1526236 (General Contractor) · GAF Certified Contractor</p>
           <p className="mb-1">590 Goolsby Blvd, Deerfield Beach, FL 33442 · <a href="https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">BBB A+ Accredited</a></p>
           <p>© {new Date().getFullYear()} All Phase Construction USA. All rights reserved.</p>
         </footer>

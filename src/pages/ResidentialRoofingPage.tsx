@@ -547,7 +547,7 @@ export default function ResidentialRoofingPage() {
               </div>
               <h3 className="text-lg font-bold mb-3">Manufacturer Certified</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Platinum and Master certifications from Tamko, Owens Corning, CertainTeed, GAF, and more.
+                Factory certifications from TAMKO, Owens Corning, CertainTeed, GAF, and more — including top-tier designations with several manufacturers.
               </p>
             </div>
 

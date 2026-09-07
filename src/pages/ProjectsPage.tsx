@@ -151,7 +151,7 @@ export default function ProjectsPage() {
               </div>
               <div className="bg-zinc-900 rounded-lg p-4 text-center">
                 <Shield className="w-6 h-6 text-red-500 mx-auto mb-2" />
-                <p className="text-white text-sm font-semibold">GAF Certified</p>
+                <p className="text-white text-sm font-semibold">GAF Certified Contractor</p>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4 text-center">
                 <MapPin className="w-6 h-6 text-red-500 mx-auto mb-2" />
