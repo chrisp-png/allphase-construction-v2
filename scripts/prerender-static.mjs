@@ -2306,7 +2306,7 @@ function generateHoaRoofFinancingContent() {
 function generateLpRoofingCompanyContent() {
   return `
   <h1>Top-Rated Roofing Company in Broward &amp; Palm Beach County</h1>
-  <p>All Phase Construction USA, LLC is a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), GAF Gold Certified, with more than 2,500 roofs installed and repaired across Broward and Palm Beach County since 2006 &#8212; 4.9 stars across 160+ Google reviews and an A+ BBB rating. Headquarters: 590 Goolsby Blvd, Deerfield Beach, FL 33442. A live person answers every call, 24/7, and scheduling is guaranteed within 24 hours.</p>
+  <p>All Phase Construction USA, LLC is a dual-licensed roofing and general contractor (CCC-1331464 &amp; CGC-1526236), a GAF Certified Contractor &#8212; GAF GoldElite&#8482; Commercial Contractor for commercial and low-slope systems &#8212;, with more than 2,500 roofs installed and repaired across Broward and Palm Beach County since 2006 &#8212; 4.9 stars across 160+ Google reviews and an A+ BBB rating. Headquarters: 590 Goolsby Blvd, Deerfield Beach, FL 33442. A live person answers every call, 24/7, and scheduling is guaranteed within 24 hours.</p>
   <p>Repairs, replacements, and inspections for tile, metal, shingle and flat roofs. Free inspection with photo documentation and a written, line-item estimate.</p>
 `;
 }
