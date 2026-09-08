@@ -56,7 +56,7 @@ export default function LpRoofReplacementPage() {
     <>
       <Helmet>
         <title>Roof Replacement — Broward &amp; Palm Beach | All Phase USA</title>
-        <meta name="description" content="Full roof replacement by a dual-licensed Broward & Palm Beach contractor — tile, metal, shingle & flat, built to HVHZ code. Free inspection and written line-item estimate. (754) 258-6135." />
+        <meta name="description" content="Full roof replacement by a dual-licensed Broward & Palm Beach contractor — tile, metal, shingle & flat, built to HVHZ code. Free inspection & written estimate." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/lp/roof-replacement" />
       </Helmet>
