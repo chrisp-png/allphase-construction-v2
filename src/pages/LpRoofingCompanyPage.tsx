@@ -26,7 +26,7 @@ export default function LpRoofingCompanyPage() {
     <>
       <Helmet>
         <title>Top-Rated Roofing Company — Broward &amp; Palm Beach | All Phase</title>
-        <meta name="description" content="Dual-licensed, GAF Certified Contractor roofing company in Deerfield Beach — 4.9 stars, 160+ reviews, 2,500+ roofs across Broward & Palm Beach since 2006. A real person answers 24/7." />
+        <meta name="description" content="Dual-licensed, GAF Certified Contractor in Deerfield Beach — 4.9 stars, 160+ reviews, 2,500+ roofs across Broward & Palm Beach since 2006. Answered 24/7." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://allphaseconstructionfl.com/lp/roofing-company" />
       </Helmet>
