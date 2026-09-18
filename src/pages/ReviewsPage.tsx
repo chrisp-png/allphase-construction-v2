@@ -130,20 +130,20 @@ export default function ReviewsPage() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            5-Star Rated Across Broward and Palm Beach Counties
+            Rated 4.9 Stars Across Broward and Palm Beach Counties
           </h1>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto">
-            Don't just take our word for it — see why over 100 homeowners trust All Phase Construction with their roofs.
+            Don't just take our word for it — see why more than 160 homeowners trust All Phase Construction with their roofs.
           </p>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">Hundreds</div>
-            <div className="text-gray-400">of 5-Star Reviews</div>
+            <div className="text-2xl lg:text-3xl font-bold text-red-600 mb-2">160+</div>
+            <div className="text-gray-400">Verified Google Reviews</div>
           </div>
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-red-600 mb-2">5-Star</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">4.9-Star</div>
             <div className="text-gray-400">Average Rating</div>
           </div>
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
@@ -285,7 +285,7 @@ export default function ReviewsPage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-green-500" />
-              <span>5-Star Rated</span>
+              <span>4.9-Star Rated</span>
             </div>
           </div>
         </div>
