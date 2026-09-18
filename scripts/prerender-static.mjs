@@ -2170,7 +2170,7 @@ function generateCalculatorHubContent() {
 function generateTileRoofingHubContent() {
   return `
 <section id="seo-static-content">
-  <h1>Tile Roof Replacement, Installation &amp; Lift-and-Relay in South Florida</h1>
+  <h1>Tile Roof Replacement in South Florida &mdash; Why Most Tile Roofs Fail Early</h1>
 
   <p><strong>Tile is the signature roof of South Florida.</strong> All Phase Construction USA installs, repairs, and re-roofs concrete and clay tile systems throughout Broward County and Palm Beach County — from new tile replacements to lift-and-relay underlayment renewals that reuse the original tile.</p>
 
@@ -2462,7 +2462,7 @@ function generateLicensedRoofingContractorContent() {
 function generateMetalRoofingContent() {
   return `
 <section id="seo-static-content">
-  <h1>Metal Roof Replacement &amp; Installation in South Florida</h1>
+  <h1>Metal Roof Replacement, Actually Engineered for South Florida Hurricanes</h1>
 
   <p><strong>Metal is the fastest-growing roof choice in South Florida</strong>, and for good reason: a properly installed standing-seam system carries a 40-to-70-year service life and some of the highest wind ratings available. All Phase Construction USA installs and repairs metal roofing across Broward County and Palm Beach County, engineered to High-Velocity Hurricane Zone (HVHZ) specification on every job.</p>
 
@@ -4083,7 +4083,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/commercial-roofing', title: 'Commercial Roofing Services' },
     { path: '/metal-roofing', title: 'Metal Roofing Installation & Repair' },
     { path: '/tile-roofing', title: 'Tile Roofing Installation & Repair' },
-    { path: '/shingle-roofing', title: 'Shingle Roof Replacement & Installation' },
+    { path: '/shingle-roofing', title: 'Shingle Roof Replacement — With Documentation That Saves You Money on Insurance' },
     { path: '/flat-roofing', title: 'Flat Roofing Systems (TPO & PVC)' },
     { path: '/roof-inspection', title: 'Professional Roof Inspection Services' },
     { path: '/roof-repair', title: 'Emergency Roof Repair Services' },
@@ -4288,7 +4288,7 @@ ${companyAuthorityFooter()}
   // PR-239: /roof-replacement is an ad destination — fallback number in body
   fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), applyStaticFallbackPhone(createHTMLTemplate(
     'Roof Replacement South Florida (2026 Cost) | All Phase',
-    'Roof replacement in South Florida. Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. (754) 227-5605.',
+    'Roof replacement in South Florida. Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. (754) 258-6135.',
     'https://allphaseconstructionfl.com/roof-replacement',
     roofReplacementContent
   )));

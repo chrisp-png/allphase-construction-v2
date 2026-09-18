@@ -70,7 +70,7 @@ export default function ShingleRoofingPage() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Shingle Roofing Done Right — With Documentation That{' '}
+            Shingle Roof Replacement — With Documentation That{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
               Saves You Money on Insurance
             </span>

@@ -81,9 +81,9 @@ export default function TileRoofingPage() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Tile Roofs in South Florida:{' '}
+            Tile Roof Replacement in South Florida &mdash;{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
-              Why Most Fail Early
+              Why Most Tile Roofs Fail Early
             </span>
           </h1>
 

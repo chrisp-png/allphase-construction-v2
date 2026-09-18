@@ -77,7 +77,7 @@ export default function MetalRoofingPage() {
 
           {/* H1 */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Metal Roofing That's{' '}
+            Metal Roof Replacement,{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
               Actually Engineered
             </span>
