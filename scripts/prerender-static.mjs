@@ -1238,6 +1238,16 @@ const AD_TARGET_REPAIR_SLUGS = new Set([
 // in the BODY of a prerendered page only — head (meta/JSON-LD) untouched so
 // NAP schema and meta parity keep the real business number. Script blocks
 // inside the body are excluded for the same reason.
+// PR-239: organic pages used as Google Ads sitelink/final-URL destinations.
+// Their prerendered bodies show the tracked fallback number instead of the
+// landline (which stays the swap hook everywhere else).
+const AD_DESTINATION_PATHS = new Set([
+  '/roof-cost-calculator', '/roof-replacement-process', '/tile-roofing',
+  '/metal-roofing', '/shingle-roofing', '/easy-payments', '/projects',
+  '/reviews', '/licensed-roofing-contractor', '/flat-roofing',
+  '/roof-replacement-cost-florida', '/free-roof-estimate', '/roof-replacement',
+]);
+
 function applyStaticFallbackPhone(html) {
   const bodyStart = html.indexOf('<body');
   if (bodyStart === -1) return html;
@@ -2160,7 +2170,7 @@ function generateCalculatorHubContent() {
 function generateTileRoofingHubContent() {
   return `
 <section id="seo-static-content">
-  <h1>Tile Roofing Installation, Repair, and Lift-and-Relay in South Florida</h1>
+  <h1>Tile Roof Replacement, Installation &amp; Lift-and-Relay in South Florida</h1>
 
   <p><strong>Tile is the signature roof of South Florida.</strong> All Phase Construction USA installs, repairs, and re-roofs concrete and clay tile systems throughout Broward County and Palm Beach County — from new tile replacements to lift-and-relay underlayment renewals that reuse the original tile.</p>
 
@@ -2452,7 +2462,7 @@ function generateLicensedRoofingContractorContent() {
 function generateMetalRoofingContent() {
   return `
 <section id="seo-static-content">
-  <h1>Metal Roofing Installation &amp; Repair in South Florida</h1>
+  <h1>Metal Roof Replacement &amp; Installation in South Florida</h1>
 
   <p><strong>Metal is the fastest-growing roof choice in South Florida</strong>, and for good reason: a properly installed standing-seam system carries a 40-to-70-year service life and some of the highest wind ratings available. All Phase Construction USA installs and repairs metal roofing across Broward County and Palm Beach County, engineered to High-Velocity Hurricane Zone (HVHZ) specification on every job.</p>
 
@@ -4073,7 +4083,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/commercial-roofing', title: 'Commercial Roofing Services' },
     { path: '/metal-roofing', title: 'Metal Roofing Installation & Repair' },
     { path: '/tile-roofing', title: 'Tile Roofing Installation & Repair' },
-    { path: '/shingle-roofing', title: 'Shingle Roofing Installation & Repair' },
+    { path: '/shingle-roofing', title: 'Shingle Roof Replacement & Installation' },
     { path: '/flat-roofing', title: 'Flat Roofing Systems (TPO & PVC)' },
     { path: '/roof-inspection', title: 'Professional Roof Inspection Services' },
     { path: '/roof-repair', title: 'Emergency Roof Repair Services' },
@@ -4246,7 +4256,7 @@ const CITY_PAGE_SCHEMAS = {
     // PR-235: ad landing pages must never render the untracked landline,
     // even no-JS — same treatment as the PR-228 city routes. Body-only;
     // head/JSON-LD keep the real business number.
-    if (pagePath.startsWith('/lp/')) {
+    if (pagePath.startsWith('/lp/') || AD_DESTINATION_PATHS.has(pagePath)) {
       html = applyStaticFallbackPhone(html);
     }
 
@@ -4275,12 +4285,13 @@ const CITY_PAGE_SCHEMAS = {
 
 ${companyAuthorityFooter()}
 `.trim();
-  fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), createHTMLTemplate(
+  // PR-239: /roof-replacement is an ad destination — fallback number in body
+  fs.writeFileSync(path.join(roofReplacementDir, 'index.html'), applyStaticFallbackPhone(createHTMLTemplate(
     'Roof Replacement South Florida (2026 Cost) | All Phase',
     'Roof replacement in South Florida. Broward & Palm Beach County. HVHZ-compliant. Tile, metal, shingle & flat. (754) 227-5605.',
     'https://allphaseconstructionfl.com/roof-replacement',
     roofReplacementContent
-  ));
+  )));
   console.log('✅ Prerendered: roof-replacement/index.html');
   totalPages++;
   // 2.3. Generate Additional Location Pages (not in main LOCATIONS array)
