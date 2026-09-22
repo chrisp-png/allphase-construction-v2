@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Phone, Star, CheckCircle2, Lock, ArrowLeft, ClipboardCheck } from 'lucide-react';
-import { appendClickIds } from '../utils/clickId';
+import { appendClickIds, getStoredClickIds } from '../utils/clickId';
 import { trackLeadConversion, extractLeadUserData } from '../utils/leadConversion';
 import { roofSizes, roofTypes, pricingData } from '../components/RoofCalculator';
 import type { RoofSize, RoofType } from '../components/RoofCalculator';
@@ -27,6 +27,48 @@ import type { RoofSize, RoofType } from '../components/RoofCalculator';
 // Endpoint lives only in JS (PR-221/224 pattern) — never in scrapeable markup.
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mzdbydvv';
 const FORM_ID = 'lp-roof-cost-calculator-gated';
+// PR-241: CRM intake — Zapier Catch Hook (Zap: gated calculator -> JobNimbus).
+// The Formspree-side webhook to this same hook was DISABLED 2026-09-22 so
+// each lead reaches Zapier exactly once, in this flat shape. Fire-and-forget:
+// never blocks the reveal, never re-throws.
+const ZAPIER_HOOK = 'https://hooks.zapier.com/hooks/catch/25764716/uwbw9tc/';
+
+function postToZapier(form: HTMLFormElement): void {
+  try {
+    const fd = new FormData(form);
+    const get = (k: string): string => {
+      const v = fd.get(k);
+      return typeof v === 'string' ? v.trim() : '';
+    };
+    const full = get('full_name');
+    const sp = full.indexOf(' ');
+    // Flat object, exactly the keys the Zap maps — no nesting, no wrapper.
+    const payload = {
+      display_name: full || 'Calculator Lead',
+      first_name: sp === -1 ? full : full.slice(0, sp),
+      last_name: sp === -1 ? '' : full.slice(sp + 1),
+      phone: get('phone'),
+      email: get('email'),
+      zip_code: get('zip_code'),
+      state: get('state'),
+      roof_size: get('roof_size'),
+      roof_material: get('roof_material'),
+      estimated_range: get('estimated_range'),
+      form_source: get('source') || FORM_ID,
+      subject: get('_subject'),
+      landing_page: '/lp/roof-cost-calculator',
+      // Stored first-touch click ID (covers return visits within the 90-day
+      // window); equals the URL gclid whenever one is present.
+      gclid: getStoredClickIds().gclid || '',
+    };
+    fetch(ZAPIER_HOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    }).catch(() => { /* silent — CRM intake must never break the lead */ });
+  } catch { /* silent */ }
+}
 
 const fmt = (n: number): string => `$${n.toLocaleString()}`;
 const round1k = (n: number): number => Math.round(n / 1000) * 1000;
@@ -68,6 +110,8 @@ export default function LpRoofCalculatorPage() {
       // 2xx confirmed: fire the existing conversion action exactly once
       // (trackLeadConversion has a per-form-id double-fire guard).
       trackLeadConversion(FORM_ID, extractLeadUserData(form));
+      // PR-241: CRM intake after confirmed success; fire-and-forget
+      postToZapier(form);
       setUnlocked(true);
     } catch {
       setError('An unexpected error occurred. Please try again — or call (754) 258-6135.');
