@@ -1126,6 +1126,16 @@ export default function TileRoofingPage() {
         </div>
       </section>
 
+      {/* Recent Work (content program: job-story link graph) */}
+      <section className="py-16 px-4 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-6 text-center">Recent Tile Work in West Palm Beach</h2>
+          <p className="text-zinc-300 text-lg max-w-3xl mx-auto text-center">
+            See how a real job runs: <Link to="/projects/clay-tile-valley-repair-west-palm-beach" className="text-yellow-400 underline">a clay tile valley repair in West Palm Beach</Link> where the leak could not be seen from the attic — so we opened the roof at the suspect gooseneck, replaced the rotted decking, and rebuilt the valley with Miami-Dade-approved Polyglass Polystick TU Max.
+          </p>
+        </div>
+      </section>
+
       {/* Related Services */}
       <section className="py-16 px-4 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
