@@ -138,6 +138,7 @@ const CoralSpringsRoofPermitGuidePage = lazy(() => import('./pages/CoralSpringsR
 const ProjectShingleInspectionSolarFanLauderdaleByTheSeaPage = lazy(() => import('./pages/ProjectShingleInspectionSolarFanLauderdaleByTheSeaPage'));
 const RoofPermitsBrowardPalmBeachPage = lazy(() => import('./pages/RoofPermitsBrowardPalmBeachPage'));
 const ProjectClayTileValleyRepairWestPalmBeachPage = lazy(() => import('./pages/ProjectClayTileValleyRepairWestPalmBeachPage'));
+const ProjectFlatTileRepairBocaRatonPage = lazy(() => import('./pages/ProjectFlatTileRepairBocaRatonPage'));
 const PompanoBeachRoofInspectionPage = lazy(() => import('./pages/PompanoBeachRoofInspectionPage'));
 const DelrayBeachRoofOverlayVsTearOffPage = lazy(() => import('./pages/DelrayBeachRoofOverlayVsTearOffPage'));
 // Pillar 2: Roofing Materials & Systems
@@ -263,6 +264,7 @@ function AppContent() {
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/projects/clay-tile-valley-repair-west-palm-beach" element={<ProjectClayTileValleyRepairWestPalmBeachPage />} />
+            <Route path="/projects/flat-tile-roof-repair-boca-raton" element={<ProjectFlatTileRepairBocaRatonPage />} />
             <Route path="/admin" element={<AdminPage />} />
             <Route path="/residential-roofing" element={<ResidentialRoofingPage />} />
             <Route path="/commercial-roofing" element={<CommercialRoofingPage />} />
