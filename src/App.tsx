@@ -135,6 +135,7 @@ const PalmBeachCountyRoofReplacementGuidePage = lazy(() => import('./pages/PalmB
 const RoofReplacementCostDeerfieldBeachPage = lazy(() => import('./pages/RoofReplacementCostDeerfieldBeachPage'));
 const BocaRatonRoofReplacementTimelinePage = lazy(() => import('./pages/BocaRatonRoofReplacementTimelinePage'));
 const CoralSpringsRoofPermitGuidePage = lazy(() => import('./pages/CoralSpringsRoofPermitGuidePage'));
+const RoofPermitsBrowardPalmBeachPage = lazy(() => import('./pages/RoofPermitsBrowardPalmBeachPage'));
 const PompanoBeachRoofInspectionPage = lazy(() => import('./pages/PompanoBeachRoofInspectionPage'));
 const DelrayBeachRoofOverlayVsTearOffPage = lazy(() => import('./pages/DelrayBeachRoofOverlayVsTearOffPage'));
 // Pillar 2: Roofing Materials & Systems
@@ -328,6 +329,7 @@ function AppContent() {
             <Route path="/roof-replacement-cost-deerfield-beach" element={<RoofReplacementCostDeerfieldBeachPage />} />
             <Route path="/boca-raton-roof-replacement-timeline" element={<BocaRatonRoofReplacementTimelinePage />} />
             <Route path="/coral-springs-roof-permit-guide" element={<CoralSpringsRoofPermitGuidePage />} />
+            <Route path="/roof-permits-broward-palm-beach-county" element={<RoofPermitsBrowardPalmBeachPage />} />
             <Route path="/pompano-beach-roof-inspection" element={<PompanoBeachRoofInspectionPage />} />
             <Route path="/delray-beach-roof-overlay-vs-tear-off" element={<DelrayBeachRoofOverlayVsTearOffPage />} />
             <Route path="/metal-roofing-cost-fort-lauderdale" element={<MetalRoofingCostFortLauderdalePage />} />
