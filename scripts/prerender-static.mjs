@@ -8607,6 +8607,38 @@ ${companyAuthorityFooter()}
       county: 'Palm Beach'
     },
     {
+      slug: 'projects/flat-tile-roof-repair-boca-raton',
+      body: `<p>A flat concrete tile roof in Boca Raton with leaks starting at its penetrations. This one was a set of targeted repairs rather than anything dramatic &mdash; tile lifted in a few spots, the areas underneath opened up and reworked, and the same tile set back down when we were finished.</p>
+<h2>What We Found</h2>
+<p>Penetrations are usually where these start, and this roof was no exception. Every vent stack, pipe, and flashing on a tile roof is a hole in the waterproofing that someone sealed &mdash; and sealant is the shortest-lived thing up there. That does not mean the roof failed. It means a maintenance item came due, and catching it at that stage is the difference between a repair and a ceiling.</p>
+<h2>How We Fixed It</h2>
+<p>At each repair area the tile was lifted and stacked, the waterproofing underneath was opened up and reworked at the penetration, and the same tile went back down when the work was finished. No drama, no upsell &mdash; the roof had years left in it; it needed its weak points serviced. We stack what we pull, we reuse what we can, and we leave the roof the way we found it apart from the part that needed fixing.</p>
+<h2>Why This Matters on a South Florida Roof</h2>
+<p>The other thing worth saying about flat concrete tile is that it breaks. A roof like this punishes anyone who walks it carelessly, and plenty of homeowners have had someone come fix one leak and leave a dozen cracked tiles behind. Knowing where to step &mdash; on the tile's supported edges, never mid-span &mdash; is not a small part of this job.</p>
+<p>It is also why "just send someone up to look" is not free on a tile roof. The wrong someone costs tiles. A tile-experienced crew treats the roof surface as part of what they were hired to protect, not just the path to the leak.</p>
+<h2>The Job in Photos</h2>
+<p><img src="/images/boca-raton-tile-roof-repair-in-progress-all-phase-usa.webp" alt="Flat concrete tile lifted and stacked around a pipe penetration during a roof repair in Boca Raton, FL" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>Tile lifted and stacked at one of the repair areas &mdash; the penetration beneath is why this spot was opened.</p>
+<p><img src="/images/tile-roof-repair-boca-raton-all-phase-usa.webp" alt="Opened section of a flat tile roof in Boca Raton showing the underlayment exposed with tiles stacked for re-use" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>The area underneath opened and reworked; the same tiles, stacked beside the opening, go back down when the work is done.</p>
+<p><img src="/images/boca-raton-roof-tile-repair-all-phase-usa.webp" alt="All Phase Construction USA crew and trucks at a flat tile roof repair in Boca Raton, FL" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>On site in Boca Raton &mdash; targeted repairs, not a tear-off.</p>
+<h2>Related</h2>
+<ul style="line-height:1.75;">
+<li><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a></li>
+<li><a href="/roof-repair/boca-raton" style="color: #dc2626; text-decoration: underline;">Roof Repair in Boca Raton</a></li>
+<li><a href="/locations/boca-raton" style="color: #dc2626; text-decoration: underline;">Roof Replacement in Boca Raton</a></li>
+<li><a href="/projects" style="color: #dc2626; text-decoration: underline;">All Our Projects</a></li>
+</ul>`,
+      title: 'Flat Tile Roof Repair in Boca Raton | Job Story',
+      description: 'Targeted flat tile repairs in Boca Raton: tile lifted at the penetrations, the waterproofing underneath reworked, the same tile reset — and why careless foot traffic is this roof type\u2019s enemy.',
+      h1: 'Flat Tile Roof Repair in Boca Raton — Why Knowing Where to Step Is Half the Job',
+      summary: 'A set of targeted flat concrete tile repairs in Boca Raton: tile lifted and stacked at the penetrations, the waterproofing underneath opened and reworked, and the same tile set back down.',
+      hubSlug: 'boca-raton',
+      hubName: 'Boca Raton',
+      county: 'Palm Beach'
+    },
+    {
       slug: 'projects/clay-tile-valley-repair-west-palm-beach',
       body: `<p>A West Palm Beach clay tile roof with a leak that could not be traced from inside the attic. The job became a textbook example of why a tile roof leak is almost never where the drip is &mdash; and why sometimes the only honest move is to open the roof.</p>
 <h2>What We Found</h2>
