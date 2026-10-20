@@ -8669,6 +8669,34 @@ ${companyAuthorityFooter()}
       summary: 'Essentially every roof replacement in Broward or Palm Beach County requires a permit, the contractor pulls it, and the honest timeline is a range that depends on the municipality, the roof system, and submittal completeness.'
     },
     {
+      slug: 'projects/shingle-inspection-solar-fan-lauderdale-by-the-sea',
+      body: `<p>A shingle roof inspection in Lauderdale-by-the-Sea, a block from the ocean. The inspection produced exactly what an inspection should: a short list of what was actually wrong and what it takes to fix it &mdash; not a push toward a roof the homeowner does not need yet.</p>
+<h2>What We Found</h2>
+<p>Two items. The flashing needed resealing, and the attic needed real exhaust ventilation. The flashing is the part that matters most here. A block from the ocean, salt air works on metal and sealant far harder than it does five miles inland. Flashing is where the roof meets everything that interrupts it &mdash; walls, chimneys, vents &mdash; and the sealant at those joints is a wear item, not a permanent part of the roof. On a coastal home it comes due sooner. Resealing it is a small job. Finding out the hard way is not.</p>
+<h2>How We Fixed It</h2>
+<p>The flashing was resealed where the inspection flagged it. For the ventilation, we installed a <strong>ClimaSense RM 2400 solar attic fan</strong> &mdash; and the detail worth explaining is where it went. The fan was installed at the location of an existing gooseneck vent, which means we used an opening that was already in the roof instead of cutting a new one. Every new penetration is a new place for water to eventually find its way in, so when a roof already has a hole in the right spot, the right move is to use it. The attic gets real exhaust; the roof gets no extra holes.</p>
+<h2>Why This Matters on a South Florida Roof</h2>
+<p>Coastal exposure changes maintenance math. Salt air accelerates corrosion on every metal component and dries out sealant joints years ahead of schedule, so a roof a block from the Atlantic is on a shorter inspection cycle than the same roof inland &mdash; not because the shingles fail faster, but because the small wear items at the edges and joints do.</p>
+<p>And the no-new-holes principle travels to every roof type: penetrations are where leaks start, so a contractor who reuses a sound existing opening &mdash; instead of cutting another because it is faster &mdash; is protecting the roof's future, not just finishing the day's install.</p>
+<h2>The Job in Photos</h2>
+<p><img src="/images/lauderdale-by-the-sea-shingle-roof-repair-all-phase-usa.webp" alt="Shingle roof inspection in Lauderdale-by-the-Sea, FL with the flashing reseal location and the gooseneck vent chosen for a solar attic fan both marked" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>The inspection findings, marked on the job photo: the flashing run due for resealing, and the existing gooseneck vent whose opening the new fan would reuse.</p>
+<p><img src="/images/climasense-rm-2400-solar-attic-fan-all-phase-usa.webp" alt="ClimaSense RM 2400 solar attic fan installed by All Phase Construction USA, shown on another completed South Florida roof" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>The unit itself: a ClimaSense RM 2400 solar attic fan &mdash; shown here on another completed All Phase installation.</p>
+<h2>Related</h2>
+<ul style="line-height:1.75;">
+<li><a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">Shingle Roofing</a></li>
+<li><a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">Roof Inspections</a></li>
+<li><a href="/locations/lauderdale-by-the-sea" style="color: #dc2626; text-decoration: underline;">Roofing in Lauderdale-by-the-Sea</a></li>
+<li><a href="/projects" style="color: #dc2626; text-decoration: underline;">All Our Projects</a></li>
+</ul>`,
+      title: 'Shingle Roof Inspection, Lauderdale-by-the-Sea | Job Story',
+      description: 'A shingle roof inspection a block from the ocean: salt-aged flashing resealed, and a ClimaSense RM 2400 solar attic fan installed at an existing gooseneck — no new holes in the roof.',
+      h1: 'Shingle Roof Inspection in Lauderdale-by-the-Sea — Two Findings, No New Holes',
+      summary: 'A Lauderdale-by-the-Sea shingle inspection produced two findings: salt-aged flashing due for resealing, and a ClimaSense RM 2400 solar attic fan installed at an existing gooseneck opening so no new penetration was cut.',
+      county: 'Broward'
+    },
+    {
       slug: 'coral-springs-roof-permit-guide',
       body: `<p>Coral Springs requires a permit for any roof replacement covering more than 25% of the roof surface, any change of material, and any structural work. Here is how the process actually runs.</p>
 <h2>What Triggers a Permit</h2>

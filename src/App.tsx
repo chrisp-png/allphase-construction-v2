@@ -135,6 +135,7 @@ const PalmBeachCountyRoofReplacementGuidePage = lazy(() => import('./pages/PalmB
 const RoofReplacementCostDeerfieldBeachPage = lazy(() => import('./pages/RoofReplacementCostDeerfieldBeachPage'));
 const BocaRatonRoofReplacementTimelinePage = lazy(() => import('./pages/BocaRatonRoofReplacementTimelinePage'));
 const CoralSpringsRoofPermitGuidePage = lazy(() => import('./pages/CoralSpringsRoofPermitGuidePage'));
+const ProjectShingleInspectionSolarFanLauderdaleByTheSeaPage = lazy(() => import('./pages/ProjectShingleInspectionSolarFanLauderdaleByTheSeaPage'));
 const RoofPermitsBrowardPalmBeachPage = lazy(() => import('./pages/RoofPermitsBrowardPalmBeachPage'));
 const ProjectClayTileValleyRepairWestPalmBeachPage = lazy(() => import('./pages/ProjectClayTileValleyRepairWestPalmBeachPage'));
 const PompanoBeachRoofInspectionPage = lazy(() => import('./pages/PompanoBeachRoofInspectionPage'));
@@ -331,6 +332,7 @@ function AppContent() {
             <Route path="/roof-replacement-cost-deerfield-beach" element={<RoofReplacementCostDeerfieldBeachPage />} />
             <Route path="/boca-raton-roof-replacement-timeline" element={<BocaRatonRoofReplacementTimelinePage />} />
             <Route path="/coral-springs-roof-permit-guide" element={<CoralSpringsRoofPermitGuidePage />} />
+            <Route path="/projects/shingle-inspection-solar-fan-lauderdale-by-the-sea" element={<ProjectShingleInspectionSolarFanLauderdaleByTheSeaPage />} />
             <Route path="/roof-permits-broward-palm-beach-county" element={<RoofPermitsBrowardPalmBeachPage />} />
             <Route path="/pompano-beach-roof-inspection" element={<PompanoBeachRoofInspectionPage />} />
             <Route path="/delray-beach-roof-overlay-vs-tear-off" element={<DelrayBeachRoofOverlayVsTearOffPage />} />
