@@ -7404,6 +7404,7 @@ ${companyAuthorityFooter()}
     <li><a href="/boca-raton-tile-re-roof" style="color: #dc2626; text-decoration: underline;">Boca Raton Tile Re-Roof</a></li>
     <li><a href="/boca-raton-metal-roofing" style="color: #dc2626; text-decoration: underline;">Boca Raton Metal Roofing</a></li>
     <li><a href="/coral-springs-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Permit Guide</a> (Broward HVHZ comparison)</li>
+    <li><a href="/roof-permits-broward-palm-beach-county" style="color: #dc2626; text-decoration: underline;">Roof Permits in Broward &amp; Palm Beach County</a> (who pulls it, timelines, inspections)</li>
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
   </ul>
   ${companyAuthorityFooter('Palm Beach')}
@@ -7507,6 +7508,7 @@ ${companyAuthorityFooter()}
     <li><a href="/pompano-beach-commercial-roofing" style="color: #dc2626; text-decoration: underline;">Pompano Beach Commercial Roofing</a></li>
     <li><a href="/palm-aire-pompano-beach-roofing" style="color: #dc2626; text-decoration: underline;">Palm-Aire Pompano Beach Roofing</a></li>
     <li><a href="/coral-springs-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Permit Guide</a> (Broward HVHZ comparison)</li>
+    <li><a href="/roof-permits-broward-palm-beach-county" style="color: #dc2626; text-decoration: underline;">Roof Permits in Broward &amp; Palm Beach County</a> (who pulls it, timelines, inspections)</li>
     <li><a href="/boca-raton-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Boca Raton Roof Permit Guide</a> (PBC voluntary HVHZ comparison)</li>
     <li><a href="/roof-cost-calculator" style="color: #dc2626; text-decoration: underline;">Free Roof Cost Calculator</a></li>
   </ul>
@@ -8599,6 +8601,33 @@ ${companyAuthorityFooter()}
       hubSlug: 'boca-raton',
       hubName: 'Boca Raton',
       county: 'Palm Beach'
+    },
+    {
+      slug: 'roof-permits-broward-palm-beach-county',
+      body: `<p><strong>Essentially every roof replacement in Broward or Palm Beach County requires a permit, your contractor &mdash; not you &mdash; should pull it, and the honest timeline is a range</strong> that depends on the municipality, the roof system, and how complete the application is on day one. The job is inspected at least twice (dry-in and final), and the permit closes when the final inspection passes. While it is in review, your contractor should be telling you what is happening every week.</p>
+<h2>Who Pulls the Permit &mdash; and Why It Should Never Be You</h2>
+<p>The licensed contractor pulls the roofing permit under the contractor's own license, which makes the contractor the party responsible for code compliance, inspections, and corrections. Florida allows an owner-occupant to pull an owner-builder permit, but that disclosure transfers full legal responsibility for the work onto the homeowner. A roofer who asks you to pull your own permit is waving a red flag &mdash; it usually means the company cannot pull it. All Phase Construction USA pulls every permit under our own state roofing license (CCC-1331464), with our general contractor license (CGC-1526236) covering structural work like decking and truss repair under the same job.</p>
+<h2>What a Roofing Permit Application Actually Includes</h2>
+<p>A complete submittal generally includes the signed application, a copy of the signed contract, proof of the contractor's active license and local registration, a recorded Notice of Commencement once the contract value crosses the statutory threshold, and the product approval package: a Florida Product Approval or Miami-Dade Notice of Acceptance for every component of the roof system &mdash; underlayment, fasteners, and the shingle, tile, or metal panel itself. Tile and metal roofs usually also require engineered uplift calculations. An incomplete package is the most common reason an application bounces.</p>
+<h2>How Long It Takes &mdash; and Why an Honest Answer Is a Range</h2>
+<p>Broward and Palm Beach counties contain dozens of municipalities, each with its own building department, review queue, and workload. A clean, complete residential reroof submittal is often issued in a matter of days to a few weeks; tile and metal roofs can take longer because the engineered attachment details route through structural review. What drives the timeline is completeness on day one, how fast reviewer comments get answered, and the department's seasonal volume. We monitor our permit queues daily so a reviewer's question costs a day, not a review cycle.</p>
+<h2>The Inspection Sequence, From Tear-Off to Final</h2>
+<p>First is the dry-in inspection: after tear-off, the inspector verifies the deck, the re-nailing pattern, and the fully adhered secondary water barrier before any covering goes on. Tile and metal systems usually add an in-progress inspection of the attachment. Last comes the final inspection of the completed system, flashings, and penetrations. Inspections ride on the municipal inspector's schedule &mdash; one more reason day-level promises are not honest.</p>
+<h2>What Commonly Causes Delays</h2>
+<p>In order: incomplete submittals (most often a missing product approval), reviewer comment cycles where a question sits unanswered, structural review on tile and metal systems, seasonal volume when a storm has the whole county reroofing at once, and surprises attached to the property itself &mdash; like an old open or expired permit that must be resolved first. HOA approvals run on a separate clock from the building department.</p>
+<h2>What You Should Hear From Your Contractor While You Wait</h2>
+<p>Permitting is the one phase where the contractor is waiting on someone else, and it is where communication usually dies. Our standard: the application goes in promptly after the contract is signed, and you hear from us every week while the permit is in review &mdash; the status, what the department is reviewing, and what, if anything, is holding it. Silence during permitting is not a sign that things are fine; it is a sign that nobody is watching the queue.</p>
+<h2>Go Deeper</h2>
+<ul style="line-height:1.75;">
+<li><a href="/coral-springs-roof-permit-guide" style="color: #dc2626; text-decoration: underline;">Coral Springs Roof Permit Guide</a> (city-specific detail)</li>
+<li><a href="/broward-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Broward County Roof Replacement Guide</a></li>
+<li><a href="/palm-beach-county-roof-replacement-guide" style="color: #dc2626; text-decoration: underline;">Palm Beach County Roof Replacement Guide</a></li>
+<li><a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">Our 10-Step Roof Replacement Process</a></li>
+</ul>`,
+      title: 'Roof Permits in Broward & Palm Beach County: How It Works',
+      description: "Who pulls your roofing permit, what's in the application, realistic timelines, the inspection sequence & common delays in Broward & Palm Beach County.",
+      h1: 'Roof Permits in Broward and Palm Beach County — What Actually Happens and How Long It Takes',
+      summary: 'Essentially every roof replacement in Broward or Palm Beach County requires a permit, the contractor pulls it, and the honest timeline is a range that depends on the municipality, the roof system, and submittal completeness.'
     },
     {
       slug: 'coral-springs-roof-permit-guide',
