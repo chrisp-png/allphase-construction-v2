@@ -2207,6 +2207,10 @@ function generateTileRoofingHubContent() {
   <p>Call <strong>(754) 227-5605</strong> for a free in-person tile inspection. We document underlayment condition, count broken or displaced tiles, and provide a written report with both lift-and-relay and full-replacement options. See our <a href="/blog/tile-roof-cost-florida-2026" style="color:#dc2626;text-decoration:underline;">2026 tile roof cost guide</a> for a full pricing breakdown.</p>
 
   ${companyAuthorityFooter()}
+
+  <h2>Recent Tile Work in West Palm Beach</h2>
+  <p>See how a real job runs: <a href="/projects/clay-tile-valley-repair-west-palm-beach" style="color: #dc2626; text-decoration: underline;">a clay tile valley repair in West Palm Beach</a> where the leak could not be seen from the attic &mdash; so we opened the roof at the suspect gooseneck, replaced the rotted decking, and rebuilt the valley with Miami-Dade-approved Polyglass Polystick TU Max.</p>
+
 </section>
 `.trim();
 }
@@ -8600,6 +8604,41 @@ ${companyAuthorityFooter()}
       summary: 'Most Boca Raton shingle roof replacements are completed in 2 to 4 working days once the Palm Beach County permit is issued, while concrete tile homes typically take 5 to 7 days. The full timeline from contract to final inspection runs 2 to 6 weeks. We schedule tear-off and dry-in on the same day so your home is protected overnight.',
       hubSlug: 'boca-raton',
       hubName: 'Boca Raton',
+      county: 'Palm Beach'
+    },
+    {
+      slug: 'projects/clay-tile-valley-repair-west-palm-beach',
+      body: `<p>A West Palm Beach clay tile roof with a leak that could not be traced from inside the attic. The job became a textbook example of why a tile roof leak is almost never where the drip is &mdash; and why sometimes the only honest move is to open the roof.</p>
+<h2>What We Found</h2>
+<p>From the attic, nothing conclusive &mdash; the leak could not be seen from below. On top of the roof, the inspection told two stories: a scatter of cracked and slipped clay tiles across the field, and a long valley whose underlayment was well past its service life. The nearest suspect to the interior damage was a gooseneck vent, but there was no way to confirm that without opening the roof. So we said exactly that, and opened the roof at the gooseneck rather than sealing a guess and hoping.</p>
+<h2>How We Fixed It</h2>
+<p>Opening the tile at the gooseneck settled it: the plywood decking at the penetration was rotted &mdash; the kind of slow damage that never shows its face in the attic. We cut the rotted section out, replaced it with new decking, and resealed the penetration. The tile repair itself covered roughly one square &mdash; about a hundred square feet.</p>
+<p>The valley got the full treatment rather than a patch: tiles lifted and stacked, the old underlayment stripped down a run of up to 25 feet, and the channel rebuilt with <strong>Polyglass Polystick TU Max</strong>, a self-adhered wind-and-water tile underlayment carrying Miami-Dade County approval. The membrane bonds directly to the deck, so there are no fastener penetrations through the waterproofing in the one place on the roof that handles the most water. The tiles were then relaid over the new membrane.</p>
+<h2>Why This Matters on a South Florida Roof</h2>
+<p>On a tile roof, the tile is the rain screen &mdash; the underlayment underneath is the actual waterproofing, and it ages out first. That is why a tile roof can look fine from the driveway and still leak, and why the honest diagnosis sometimes requires lifting tile instead of smearing sealant where the stain is. Valleys deserve special respect: a valley is where two slopes dump into one channel, which makes it the hardest-working spot on the roof and the first place an aging underlayment gives up.</p>
+<p>The other lesson is about chasing leaks. Water travels along decking and framing before it shows up on a ceiling, so the drip and the entry point are rarely in the same place. Sealing the nearest visible target treats the symptom. Opening the roof at the actual suspect takes more honesty up front &mdash; and it is the difference between ending a leak and postponing it.</p>
+<h2>The Job in Photos</h2>
+<p><img src="/images/west-palm-clay-tile-repair-all-phase-usa.webp" alt="Cracked and slipped clay roof tiles found during a roof inspection in West Palm Beach, FL" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>What the inspection found: cracked and slipped tiles scattered across the field &mdash; and a leak that did not line up with any of them.</p>
+<p><img src="/images/replace-rotted-plywood-on-this-clay-tile-roof-all-phase-usa.webp" alt="Rotted plywood decking cut out and removed at a gooseneck vent on a clay tile roof in West Palm Beach" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>The answer was under the tile: the deck opened at the gooseneck, the rotted plywood cutout beside it &mdash; damage that never showed from the attic.</p>
+<p><img src="/images/west-palm-beach-clay-tile-repair-in-progress-all-phase-usa.webp" alt="Clay tile valley opened for repair in West Palm Beach with tiles stacked aside and aged underlayment exposed" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>The valley opened up: tiles stacked aside for re-use, aged underlayment exposed down the full run.</p>
+<p><img src="/images/valley-repair-in-progress-all-phase-usa.webp" alt="Polyglass Polystick TU Max self-adhered tile underlayment installed in a clay tile roof valley in West Palm Beach" loading="lazy" style="max-width:100%;height:auto;" width="600" /></p>
+<p>The rebuilt valley mid-install: Polyglass Polystick TU Max self-adhered underlayment bonded down the channel before the tile goes back.</p>
+<h2>Related</h2>
+<ul style="line-height:1.75;">
+<li><a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">Tile Roofing</a></li>
+<li><a href="/roof-repair/west-palm-beach" style="color: #dc2626; text-decoration: underline;">Roof Repair in West Palm Beach</a></li>
+<li><a href="/locations/west-palm-beach" style="color: #dc2626; text-decoration: underline;">Roof Replacement in West Palm Beach</a></li>
+<li><a href="/projects" style="color: #dc2626; text-decoration: underline;">All Our Projects</a></li>
+</ul>`,
+      title: 'Clay Tile Valley Repair in West Palm Beach | Job Story',
+      description: 'How we found a West Palm Beach tile roof leak that was invisible from the attic: opened the roof at the gooseneck, replaced rotted decking, rebuilt the valley with Polyglass Polystick TU Max.',
+      h1: "Clay Tile Valley Repair in West Palm Beach — Finding a Leak We Couldn't See From the Attic",
+      summary: 'A West Palm Beach clay tile repair: a hidden gooseneck leak confirmed by opening the roof, rotted decking replaced, roughly one square of tile repaired, and a valley rebuilt with Miami-Dade-approved Polyglass Polystick TU Max.',
+      hubSlug: 'west-palm-beach',
+      hubName: 'West Palm Beach',
       county: 'Palm Beach'
     },
     {

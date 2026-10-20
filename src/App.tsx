@@ -136,6 +136,7 @@ const RoofReplacementCostDeerfieldBeachPage = lazy(() => import('./pages/RoofRep
 const BocaRatonRoofReplacementTimelinePage = lazy(() => import('./pages/BocaRatonRoofReplacementTimelinePage'));
 const CoralSpringsRoofPermitGuidePage = lazy(() => import('./pages/CoralSpringsRoofPermitGuidePage'));
 const RoofPermitsBrowardPalmBeachPage = lazy(() => import('./pages/RoofPermitsBrowardPalmBeachPage'));
+const ProjectClayTileValleyRepairWestPalmBeachPage = lazy(() => import('./pages/ProjectClayTileValleyRepairWestPalmBeachPage'));
 const PompanoBeachRoofInspectionPage = lazy(() => import('./pages/PompanoBeachRoofInspectionPage'));
 const DelrayBeachRoofOverlayVsTearOffPage = lazy(() => import('./pages/DelrayBeachRoofOverlayVsTearOffPage'));
 // Pillar 2: Roofing Materials & Systems
@@ -260,6 +261,7 @@ function AppContent() {
             <Route path="/community" element={<CommunityPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/clay-tile-valley-repair-west-palm-beach" element={<ProjectClayTileValleyRepairWestPalmBeachPage />} />
             <Route path="/admin" element={<AdminPage />} />
             <Route path="/residential-roofing" element={<ResidentialRoofingPage />} />
             <Route path="/commercial-roofing" element={<CommercialRoofingPage />} />
