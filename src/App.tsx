@@ -1,3 +1,4 @@
+import React from 'react';
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
@@ -16,9 +17,16 @@ import { captureClickIds } from './utils/clickId';
 // roughly 25 KB combined on the homepage critical path. Lazy-loaded behind
 // the existing Suspense boundary so the homepage hydrates without waiting
 // for them.
-const AccessibilityWidget = lazy(() => import('./components/AccessibilityWidget'));
-const ExitIntentPopup = lazy(() => import('./components/ExitIntentPopup'));
-const AssessmentModal = lazy(() => import('./components/AssessmentModal'));
+// PR-248: if a non-critical widget chunk fails to fetch (flaky network,
+// Googlebot skipping resources, stale CDN object), render nothing instead of
+// throwing. Before this, ONE failed cosmetic chunk bubbled to the top-level
+// ErrorBoundary and replaced the entire page with "Something Went Wrong" —
+// which Googlebot's live test flagged as a Soft 404 and refused to index.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const nullFallback = { default: (() => null) as React.ComponentType<any> };
+const AccessibilityWidget = lazy(() => import('./components/AccessibilityWidget').catch(() => nullFallback));
+const ExitIntentPopup = lazy(() => import('./components/ExitIntentPopup').catch(() => nullFallback));
+const AssessmentModal = lazy(() => import('./components/AssessmentModal').catch(() => nullFallback));
 
 // Lazy load all page components for code splitting
 // PR-53 reverted: HomePage stays lazy. The eager-load attempt cut mobile
