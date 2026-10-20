@@ -4,6 +4,7 @@ import { Phone, ArrowRight, Shield, Award, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 import Lightbox from '../components/Lightbox';
+import { GALLERY_PHOTOS } from '../data/galleryPhotos';
 
 interface Project {
   id: string;
@@ -18,6 +19,23 @@ interface Project {
   featured: boolean;
   completed_date: string;
 }
+
+
+// PR-247: repo-based photo library. These render alongside the Supabase
+// projects; add photos via PR (public/images webp + galleryPhotos.ts entry).
+const STATIC_PROJECTS: Project[] = GALLERY_PHOTOS.map((g) => ({
+  id: `static-${g.slug}`,
+  title: g.title,
+  slug: g.slug,
+  city: g.city,
+  county: g.county,
+  roof_type: g.roof_type,
+  project_type: g.project_type,
+  description: g.alt_text,
+  image_url: g.image_url,
+  featured: false,
+  completed_date: g.completed_date,
+}));
 
 export default function ProjectsPage() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -46,9 +64,12 @@ export default function ProjectsPage() {
         .order('completed_date', { ascending: false });
 
       if (error) throw error;
-      setProjects(data || []);
+      const merged = [...STATIC_PROJECTS, ...(data || [])];
+      merged.sort((a, b) => (b.completed_date || '').localeCompare(a.completed_date || ''));
+      setProjects(merged);
     } catch (error) {
       console.error('Error fetching projects:', error);
+      setProjects(STATIC_PROJECTS); // library still renders if Supabase is down
     } finally {
       setLoading(false);
     }
