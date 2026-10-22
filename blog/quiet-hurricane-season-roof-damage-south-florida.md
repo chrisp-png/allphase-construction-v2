@@ -49,7 +49,7 @@ The third job is the short one. A home in [Coral Springs](/locations/coral-sprin
 
 ![Fully adhered PVC membrane being installed on the flat section of a planned metal-and-PVC roof replacement in Coral Springs, FL](/projects/metal-and-pvc-roof-replacement-in-progress-coral-springs-all-phase-usa.webp)
 
-*Standing seam metal with a fully adhered PVC flat section in Coral Springs, scheduled on the homeowner's calendar rather than a leak's.*
+*The PVC flat section going down in Coral Springs, pitched slopes dried in behind it — a replacement scheduled on the homeowner's calendar rather than a leak's.*
 
 No tarps, no emergency call, no scrambling for a crew in the one week every roofer in the county is booked. The difference between this job and an emergency replacement is not the roof. It is who chose the timing.
 
