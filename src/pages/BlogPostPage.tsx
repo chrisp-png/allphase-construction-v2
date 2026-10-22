@@ -197,6 +197,18 @@ export default function BlogPostPage() {
   // Hoisted so the static-synthesis path can be reached from multiple branches
   // (Supabase returned null OR Supabase threw).
   const staticPostMeta: Record<string, Partial<BlogPost>> = {
+    'quiet-hurricane-season-roof-damage-south-florida': {
+      title: "The Quiet Hurricane Season Didn't Save Your Roof",
+      excerpt: '2026 was the quietest Atlantic hurricane season in a century, and South Florida roofs aged anyway. Three October jobs show what heat, salt air and trapped humidity did while nobody was looking.',
+      author: 'All Phase Construction USA Team',
+      published_date: '2026-10-22',
+      categories: ['Roofing Education'],
+      tags: ['Hurricane Season', 'Roof Inspection', 'Tile Roof', 'Flashing', 'Attic Ventilation', 'Repair vs Replace', 'South Florida'],
+      featured_image: '/projects/tile-roof-tear-off-at-chimney-lighthouse-point-all-phase-usa.webp',
+      meta_title: "The Quiet Hurricane Season Didn't Save Your Roof | All Phase",
+      meta_description: 'The quietest hurricane season in a century did not spare South Florida roofs. Three October jobs show what heat, salt air and trapped humidity did unseen.',
+      faqs: [],
+    },
     'florida-condo-hoa-roof-financing-without-special-assessments': {
       title: 'HOA Roof Financing: Skip the Special Assessment',
       excerpt: 'Florida condo and HOA boards can finance a full roof replacement with manageable monthly payments instead of a lump-sum special assessment. The per-unit math, how association financing works, and what your board should prepare.',

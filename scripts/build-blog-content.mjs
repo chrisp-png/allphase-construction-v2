@@ -144,6 +144,31 @@ function stripMetaComments(markdown) {
 }
 
 /**
+ * Parse the leading meta comments into structured post metadata.
+ * Only posts that declare `<!-- Meta Published: YYYY-MM-DD -->` get a `meta`
+ * object in blog-content.json; older posts without it are emitted exactly as
+ * before ({ title, content }) so their prerendered output does not change.
+ *
+ * Recognized keys: Title, Description, Published, Modified, Image.
+ */
+function parseMetaComments(markdown) {
+  const meta = {};
+  const re = /^<!--\s*Meta\s+(\w+):\s*(.*?)\s*-->\s*$/gm;
+  let m;
+  while ((m = re.exec(markdown)) !== null) {
+    meta[m[1].toLowerCase()] = m[2].trim();
+  }
+  if (!meta.published) return null;
+  return {
+    title: meta.title || '',
+    description: meta.description || '',
+    published: meta.published,
+    modified: meta.modified || meta.published,
+    image: meta.image || '',
+  };
+}
+
+/**
  * Convert filename to slug
  * Special case: long roofer filename maps to shorter slug
  */
@@ -248,6 +273,10 @@ async function buildBlogContent() {
         // BlogIndexPage, and prerender-static.mjs can pull a canonical title
         // from the markdown rather than slug-casing it.
         blogContent[slug] = { title, content: html };
+        // Posts that declare a real publish date carry structured meta so the
+        // prerender can emit datePublished / og:image / an authored description.
+        const meta = parseMetaComments(markdown);
+        if (meta) blogContent[slug].meta = meta;
         totalSize += html.length;
 
         console.log(`✓ ${file} (${slug}) - title="${title}" - ${html.length} bytes`);
