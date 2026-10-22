@@ -3138,6 +3138,12 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' }
     ],
+    // State license numbers on the base entity (mirrors the two license
+    // credentials already carried by the /team/chris-porosky Person schema).
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', name: 'Florida Certified Roofing Contractor', identifier: 'CCC-1331464', credentialCategory: 'license', recognizedBy: { '@type': 'GovernmentOrganization', name: 'Florida Department of Business and Professional Regulation' } },
+      { '@type': 'EducationalOccupationalCredential', name: 'Florida Certified General Contractor', identifier: 'CGC-1526236', credentialCategory: 'license', recognizedBy: { '@type': 'GovernmentOrganization', name: 'Florida Department of Business and Professional Regulation' } }
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
@@ -4505,6 +4511,17 @@ ${companyAuthorityFooter()}
               blogDescription = excerpt.replace(/[\s,;:\-–—]+$/, '').trim() + '…';
             }
           }
+          // Posts whose markdown declares `Meta Published` carry a structured
+          // `meta` object (see build-blog-content.mjs). Prefer the authored
+          // description, and surface the real publish date + featured image
+          // in BlogPosting / og:image / article:published_time. Older posts
+          // without `meta` keep the excerpt-derived description above.
+          const postMeta = (entry && typeof entry === 'object' && entry.meta) ? entry.meta : null;
+          if (postMeta && postMeta.description) {
+            let authored = String(postMeta.description).replace(/\s+/g, ' ').trim();
+            if (authored.length > 160) authored = authored.substring(0, 157).replace(/\s+\S*$/, '').trim() + '...';
+            if (authored.length >= 70) blogDescription = authored;
+          }
           if (!blogDescription) {
             blogDescription = `${blogTitle} — expert roofing insights from All Phase Construction USA, your dual-licensed South Florida roofer.`;
             if (blogDescription.length > 155) {
@@ -4584,9 +4601,12 @@ ${companyAuthorityFooter()}
             `.trim();
           }
 
+          const bpPublished = (postMeta && postMeta.published) ? postMeta.published : null;
+          const bpModified = (postMeta && postMeta.modified) ? postMeta.modified : bpPublished;
+          const bpImage = (postMeta && postMeta.image) ? postMeta.image : null;
           const bpSchema = blogPostingSchema({
             slug, title: blogTitle, description: blogDescription,
-            image: null, published: null, modified: null,
+            image: bpImage, published: bpPublished, modified: bpModified,
             content: finalBlogContent, tags: [], categories: [],
           });
           const blogHTML = createHTMLTemplate(
@@ -4596,8 +4616,8 @@ ${companyAuthorityFooter()}
             finalBlogContent,
             bpSchema,
             null,
-            null,
-            { published: null, modified: null }
+            bpImage,
+            { published: bpPublished, modified: bpModified }
           );
 
           const blogDir = path.join(publicDir, 'blog', slug);
