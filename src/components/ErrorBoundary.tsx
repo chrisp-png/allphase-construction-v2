@@ -11,6 +11,13 @@ interface State {
   error?: Error;
 }
 
+// Matches chunk-load failures across browsers/bundlers.
+function isChunkLoadError(err?: Error): boolean {
+  if (!err) return false;
+  const msg = `${err.name || ''} ${err.message || ''}`;
+  return /Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module|ChunkLoadError|Loading chunk [\w-]+ failed|Unable to preload CSS/i.test(msg);
+}
+
 class ErrorBoundary extends Component<Props, State> {
   public state: State = {
     hasError: false
@@ -30,6 +37,17 @@ class ErrorBoundary extends Component<Props, State> {
 
   public render() {
     if (this.state.hasError) {
+      // PR-252: when the failure is a code-split chunk that didn't load
+      // (Googlebot's renderer routinely skips some JS fetches; flaky mobile
+      // networks do too), show the prerendered page content main.tsx saved
+      // before React mounted — NOT the error screen. The error screen was
+      // being indexed by Google as a Soft 404 on real pages (/about-us,
+      // /reviews, job stories, blogs: 35 URLs as of Oct 25, 2026).
+      const prerendered =
+        typeof window !== 'undefined' ? (window as any).__PRERENDERED_HTML__ : '';
+      if (prerendered && isChunkLoadError(this.state.error)) {
+        return <div id="seo-static-fallback" dangerouslySetInnerHTML={{ __html: prerendered }} />;
+      }
       return (
         <div className="min-h-screen bg-[#09090b] flex items-center justify-center px-4">
           <div className="max-w-2xl w-full text-center">
