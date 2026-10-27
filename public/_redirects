@@ -708,6 +708,11 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 /*.svg    /index.html   404
 /*.pdf    /index.html   404
 /*.ico    /index.html   404
+# PR-252: missing hashed JS/CSS chunks (old builds referenced by cached HTML)
+# must 404 — serving the HTML shell as JavaScript with a 1-year immutable cache
+# header breaks the page and poisons caches.
+/assets/*.js    /index.html   404
+/assets/*.css   /index.html   404
 
 # SPA fallback — MUST remain the LAST rule (Netlify processes top-to-bottom, first match wins)
 /* /index.html 200
