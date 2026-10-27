@@ -697,22 +697,16 @@ http://www.allphaseconstructionfl.com/* https://allphaseconstructionfl.com/:spla
 # (moved ABOVE the SPA catch-all so it actually fires — first match wins in Netlify) (PR-143)
 /blog/allphase-blog-roof-replacement-cost-broward-2026    /blog/roof-replacement-cost-broward-county-2026    301!
 
-# Missing static assets return a real 404 instead of the SPA HTML shell (was a soft-404 that
-# Google dislikes). Existing files still serve normally — Netlify checks for a real file
-# BEFORE applying these non-forced rules, so only truly-missing assets hit them. (PR-143)
-/*.jpg    /index.html   404
-/*.jpeg   /index.html   404
-/*.png    /index.html   404
-/*.webp   /index.html   404
-/*.gif    /index.html   404
-/*.svg    /index.html   404
-/*.pdf    /index.html   404
-/*.ico    /index.html   404
-# PR-252: missing hashed JS/CSS chunks (old builds referenced by cached HTML)
-# must 404 — serving the HTML shell as JavaScript with a 1-year immutable cache
-# header breaks the page and poisons caches.
-/assets/*.js    /index.html   404
-/assets/*.css   /index.html   404
+# Missing static assets return a real 404 instead of the SPA HTML shell.
+# PR-253: Netlify only supports a splat (*) at the END of a path, so the old
+# PR-143/PR-252 extension rules (/*.png, /assets/*.js) never matched anything —
+# missing files were served the homepage HTML with 200 (and, under /assets,
+# a 1-year immutable cache header). Folder-level rules work. They are
+# non-forced, so Netlify serves any file that really exists first; only truly
+# missing files hit these. (/projects/* deliberately excluded: page routes live
+# there too, e.g. /projects/<job-story>.)
+/assets/*     /index.html   404
+/images/*     /index.html   404
 
 # SPA fallback — MUST remain the LAST rule (Netlify processes top-to-bottom, first match wins)
 /* /index.html 200
