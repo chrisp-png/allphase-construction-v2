@@ -82,7 +82,7 @@ export function generateDeerfieldBeachSchema(): object {
     "@id": "https://allphaseconstructionfl.com/locations/deerfield-beach#roofingcontractor",
     "name": "All Phase Construction USA",
     "url": "https://allphaseconstructionfl.com/locations/deerfield-beach",
-    "telephone": "+1-754-227-5605",
+    "telephone": "+1-954-778-2654",
     "priceRange": "$$",
     "foundingDate": "2006",
     "address": {

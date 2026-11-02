@@ -63,7 +63,7 @@ function generateStructuredData(cityName, citySlug, pageType) {
     name: 'All Phase Construction USA',
     alternateName: ['All Phase USA', 'All Phase Roofing'],
     url: `https://allphaseconstructionfl.com/${pageType}/${citySlug}/`,
-    telephone: '754-227-5605',
+    telephone: '954-778-2654',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '590 Goolsby Blvd',

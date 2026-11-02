@@ -119,7 +119,7 @@ export function generateOrganizationSchema(): object {
     'description': 'Licensed roofing contractor serving Broward County and Palm Beach County, Florida. Dual-licensed (CCC1331464 & CGC1526236) with 22+ years experience and 2,500+ roofs installed.',
     'url': 'https://allphaseconstructionfl.com',
     'logo': 'https://allphaseconstructionfl.com/allphase-logo-white.svg',
-    'telephone': '+1-754-227-5605',
+    'telephone': '+1-954-778-2654',
     'email': 'info@allphaseusa.com',
     'priceRange': '$$$$',
     'address': {
@@ -234,7 +234,7 @@ export function generateLocalBusinessSchema(city: string, county: string): objec
         'name': county
       }
     },
-    'telephone': '+1-754-227-5605',
+    'telephone': '+1-954-778-2654',
     'url': `https://allphaseconstructionfl.com/${city.toLowerCase().replace(/\s+/g, '-')}`,
     'priceRange': '$$$$'
   };

@@ -15,7 +15,7 @@ export default function RoofReplacementPage() {
         "@id": "https://allphaseconstructionfl.com/#roofingcontractor",
         "name": "All Phase Construction USA",
         "url": "https://allphaseconstructionfl.com",
-        "telephone": "+1-754-227-5605",
+        "telephone": "+1-954-778-2654",
         "priceRange": "$$-$$$",
         "address": {
           "@type": "PostalAddress",

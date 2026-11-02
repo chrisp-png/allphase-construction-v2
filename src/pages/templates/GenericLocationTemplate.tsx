@@ -42,7 +42,7 @@ export default function GenericLocationTemplate() {
       "latitude": 26.3184,
       "longitude": -80.0998
     },
-    "telephone": "+1-754-227-5605",
+    "telephone": "+1-954-778-2654",
     "priceRange": "$$",
     "areaServed": {
       "@type": "City",
