@@ -1,6 +1,9 @@
 [build]
 publish = "dist"
-command = "npx vite build && node scripts/prerender-static.mjs && node scripts/submit-indexnow.mjs"
+# SSR (PR: real React markup in initial HTML). The server bundle build is
+# non-fatal: if it fails, ssr-inject finds no bundle and every page ships its
+# static prerender exactly as before. ssr-inject itself always exits 0.
+command = "npx vite build && (npx vite build --config vite.config.ssr.ts || echo 'SSR bundle build failed - shipping static prerender only') && node scripts/prerender-static.mjs && node scripts/ssr-inject.mjs && node scripts/submit-indexnow.mjs"
 
 [build.environment]
 NODE_VERSION = "20"

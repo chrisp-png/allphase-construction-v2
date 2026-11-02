@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx';
 import './index.css';
@@ -57,10 +57,20 @@ if (typeof window !== 'undefined' && typeof MutationObserver !== 'undefined') {
   });
 }
 
-createRoot(rootElement).render(
+const app = (
   <StrictMode>
     <HelmetProvider>
       <App />
     </HelmetProvider>
   </StrictMode>
 );
+
+// SSR: pages whose #root was filled with server-rendered React markup by
+// scripts/ssr-inject.mjs carry data-ssr="1". Hydrate those in place (no
+// flash, no re-render of the whole page). Every other page mounts exactly as
+// before.
+if (rootElement.dataset.ssr === '1') {
+  hydrateRoot(rootElement, app);
+} else {
+  createRoot(rootElement).render(app);
+}

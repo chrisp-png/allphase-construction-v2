@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-blog-content && npm run optimize-images && vite build && npm run prerender && npm run generate-sitemap && npm run generate-html-sitemap",
+    "build": "npm run build-blog-content && npm run optimize-images && vite build && npm run build:ssr && npm run prerender && npm run ssr-inject && npm run generate-sitemap && npm run generate-html-sitemap",
+    "build:ssr": "vite build --config vite.config.ssr.ts",
+    "ssr-inject": "node scripts/ssr-inject.mjs",
     "build-blog-content": "node scripts/build-blog-content.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
