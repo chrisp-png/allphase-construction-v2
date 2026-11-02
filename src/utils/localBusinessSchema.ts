@@ -38,7 +38,7 @@ export function generateLocalBusinessSchema(props: LocalBusinessSchemaProps) {
     url: `https://allphaseconstructionfl.com/locations/${cityName.toLowerCase().replace(/\s+/g, '-')}`,
     logo: 'https://allphaseconstructionfl.com/logo.png',
     image: 'https://allphaseconstructionfl.com/og-image.jpg',
-    telephone: '+1-754-227-5605',
+    telephone: '+1-954-778-2654',
     priceRange,
 
     // Service Area - Critical for "near me" searches
@@ -243,7 +243,7 @@ export function generateRoofRepairServiceSchema(cityName: string) {
     provider: {
       '@type': 'RoofingContractor',
       name: 'All Phase Construction USA',
-      telephone: '+1-754-227-5605'
+      telephone: '+1-954-778-2654'
     },
     areaServed: {
       '@type': 'City',

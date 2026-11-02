@@ -114,7 +114,7 @@ export default function ProjectsPage() {
       "provider": {
         "@type": "LocalBusiness",
         "name": "All Phase Construction USA",
-        "telephone": "(754) 227-5605"
+        "telephone": "(954) 778-2654"
       },
       "areaServed": {
         "@type": "City",
