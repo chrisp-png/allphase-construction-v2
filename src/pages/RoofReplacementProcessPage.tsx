@@ -219,7 +219,7 @@ export default function RoofReplacementProcessPage() {
     <>
       <SEO
         title="10-Step Roof Replacement Process | All Phase Construction USA"
-        description="See our 10-step roof replacement process in South Florida. Know exactly what happens from inspection to final cleanup. Call (754) 227-5605."
+        description="See our 10-step roof replacement process in South Florida. Know exactly what happens from inspection to final cleanup."
         canonical="https://allphaseconstructionfl.com/roof-replacement-process"
         schema={howToSchema}
       />

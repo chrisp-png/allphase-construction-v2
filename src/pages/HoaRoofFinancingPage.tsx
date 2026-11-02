@@ -29,7 +29,7 @@ export default function HoaRoofFinancingPage() {
     <>
       <Helmet>
         <title>Condo &amp; HOA Roof Financing in South Florida | All Phase USA</title>
-        <meta name="description" content="Condo & HOA roof financing in Broward & Palm Beach — replace your association's roof with monthly payments, not a lump-sum special assessment. (754) 227-5605." />
+        <meta name="description" content="Condo & HOA roof financing in Broward & Palm Beach — replace your association's roof with monthly payments, not a lump-sum special assessment." />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>

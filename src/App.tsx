@@ -451,7 +451,7 @@ function AppContent() {
             <Route path="/roof-repair/:city" element={<DynamicRoofRepairPage />} />
             <Route path="/roof-inspection/:city" element={<DynamicRoofInspectionPage />} />
             <Route path="/qa/sitemap-audit" element={<SitemapAuditPage />} />
-            <Route path="*" element={(window as any).__PRERENDERED_HTML__ ? <StaticContentPage /> : <NotFoundPage />} />
+            <Route path="*" element={typeof window !== 'undefined' && (window as any).__PRERENDERED_HTML__ ? <StaticContentPage /> : <NotFoundPage />} />
           </Routes>
         </Suspense>
       </main>
@@ -467,6 +467,19 @@ function AppContent() {
   );
 }
 
+// SSR: everything inside the router. The browser wraps it in BrowserRouter
+// (App below); the build-time server render (src/entry-server.tsx) wraps it
+// in StaticRouter so crawlers get the full page HTML without running JS.
+export function AppShell() {
+  return (
+    <ErrorBoundary>
+      <AssessmentModalProvider>
+        <AppContent />
+      </AssessmentModalProvider>
+    </ErrorBoundary>
+  );
+}
+
 function App() {
   // PR-205: capture Google Ads click IDs (gclid/gbraid/wbraid) from the
   // landing URL once per mount, so every lead form can attach them.
@@ -476,11 +489,7 @@ function App() {
 
   return (
     <Router>
-      <ErrorBoundary>
-        <AssessmentModalProvider>
-          <AppContent />
-        </AssessmentModalProvider>
-      </ErrorBoundary>
+      <AppShell />
     </Router>
   );
 }

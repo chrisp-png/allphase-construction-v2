@@ -38,7 +38,7 @@ export default function WellingtonPage() {
 
   // SEO metadata
   const seoTitle = 'Wellington Roof Replacement | Tile & Metal Roofing | All Phase USA';
-  const seoDescription = 'Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. HVHZ-certified, dual-licensed. Free estimate. (754) 227-5605.';
+  const seoDescription = 'Wellington roof replacement specialist. Tile & metal roofing for estates & equestrian communities. HVHZ-certified, dual-licensed. Free estimate.';
 
   // FAQ data for the page
   const faqData = [

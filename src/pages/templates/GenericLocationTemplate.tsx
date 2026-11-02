@@ -63,7 +63,7 @@ export default function GenericLocationTemplate() {
     <>
       <SEO
         title={`${cityName} Roofing Contractor | Licensed Roofing Services`}
-        description={`Professional roofing services in ${cityName}, FL. Licensed ${county} contractor specializing in residential & commercial roofing. Free inspection: (754) 227-5605.`}
+        description={`Professional roofing services in ${cityName}, FL. Licensed ${county} contractor specializing in residential & commercial roofing. Free inspection.`}
         schema={localBusinessSchema}
         noindex={false}
       />

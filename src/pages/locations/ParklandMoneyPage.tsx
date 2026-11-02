@@ -26,7 +26,7 @@ export default function ParklandMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Parkland, FL | All Phase USA</title>
-        <meta name="description" content="Parkland, FL roofer for golf estates, gated communities & equestrian ranches — premium tile, metal & shingle, HOA review handled, HVHZ-code. (754) 227-5605." />
+        <meta name="description" content="Parkland, FL roofer for golf estates, gated communities & equestrian ranches — premium tile, metal & shingle, HOA review handled, HVHZ-code." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/parkland" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

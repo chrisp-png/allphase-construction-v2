@@ -26,7 +26,7 @@ export default function HaverhillMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Haverhill, FL | All Phase USA</title>
-        <meta name="description" content="Haverhill, FL roofer for this small central Palm Beach County town — aging single-family homes, shingle & tile, HVHZ-spec, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Haverhill, FL roofer for this small central Palm Beach County town — aging single-family homes, shingle & tile, HVHZ-spec, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/haverhill" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

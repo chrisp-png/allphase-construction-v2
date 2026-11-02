@@ -26,7 +26,7 @@ export default function HypoluxoMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Hypoluxo, FL | All Phase USA</title>
-        <meta name="description" content="Hypoluxo, FL roofer for this small Intracoastal town — modest homes to island waterfront, shingle, tile & metal, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Hypoluxo, FL roofer for this small Intracoastal town — modest homes to island waterfront, shingle, tile & metal, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/hypoluxo" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

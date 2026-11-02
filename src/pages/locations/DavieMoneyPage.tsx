@@ -26,7 +26,7 @@ export default function DavieMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Davie, FL | All Phase USA</title>
-        <meta name="description" content="Davie, FL roofer for equestrian ranches, gated estates & family suburbs — tile, metal, shingle, HOA review handled, HVHZ-code, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Davie, FL roofer for equestrian ranches, gated estates & family suburbs — tile, metal, shingle, HOA review handled, HVHZ-code, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/davie" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

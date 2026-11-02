@@ -109,14 +109,14 @@ function getSEOMetadata(urlPath, cityName = null) {
     if (normalizedPath.includes('/roof-repair/')) {
       return {
         title: `Roof Repair in ${cityName}, FL | Emergency Service Available`,
-        description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services. Dual-licensed CCC/CGC contractor. Call (754) 227-5605.`,
+        description: `Need roof repair in ${cityName}? Emergency leak repair, storm damage, and professional roofing services. Dual-licensed CCC/CGC contractor.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}/`
       };
     }
     if (normalizedPath.includes('/roof-inspection/')) {
       return {
         title: `${cityName} Roof Inspection | 21-Point Professional Assessment`,
-        description: `Professional roof inspection in ${cityName}, FL. Free 21-point assessment with photo documentation. Pre-purchase, insurance, storm damage inspections. Call (754) 227-5605.`,
+        description: `Professional roof inspection in ${cityName}, FL. Free 21-point assessment with photo documentation. Pre-purchase, insurance, storm damage inspections.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}/`
       };
     }
@@ -124,13 +124,13 @@ function getSEOMetadata(urlPath, cityName = null) {
       if (normalizedPath === '/locations/deerfield-beach') {
         return {
           title: `Deerfield Beach Roofing Contractor | All Phase Construction USA HQ`,
-          description: `All Phase Construction USA headquarters in Deerfield Beach, FL. Dual-licensed roofing contractor (CCC-1331464 & CGC-1526236). 590 Goolsby Blvd. Call (754) 227-5605 for emergency repairs & inspections.`,
+          description: `All Phase Construction USA headquarters in Deerfield Beach, FL. Dual-licensed roofing contractor (CCC-1331464 & CGC-1526236). 590 Goolsby Blvd.`,
           canonical: `https://allphaseconstructionfl.com${normalizedPath}/`
         };
       }
       return {
         title: `${cityName} Roofing Services | All Phase Construction USA`,
-        description: `Professional roofing services in ${cityName}, FL. Dual-licensed CCC/CGC contractor. Roof repair, inspection, replacement. HVHZ certified. Call (754) 227-5605.`,
+        description: `Professional roofing services in ${cityName}, FL. Dual-licensed CCC/CGC contractor. Roof repair, inspection, replacement. HVHZ certified.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}/`
       };
     }

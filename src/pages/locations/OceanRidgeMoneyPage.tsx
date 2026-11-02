@@ -26,7 +26,7 @@ export default function OceanRidgeMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Ocean Ridge, FL | All Phase USA</title>
-        <meta name="description" content="Ocean Ridge, FL roofer for barrier-island oceanfront & Intracoastal estates — coastal-grade tile, metal & flat roofs, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Ocean Ridge, FL roofer for barrier-island oceanfront & Intracoastal estates — coastal-grade tile, metal & flat roofs, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/ocean-ridge" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

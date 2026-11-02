@@ -26,7 +26,7 @@ export default function LauderhillMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Lauderhill, FL | All Phase USA</title>
-        <meta name="description" content="Lauderhill, FL roofer for 1960s homes, Inverrary condos & gated communities — HVHZ-code shingle, tile & metal, HOA review handled, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Lauderhill, FL roofer for 1960s homes, Inverrary condos & gated communities — HVHZ-code shingle, tile & metal, HOA review handled, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/lauderhill" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

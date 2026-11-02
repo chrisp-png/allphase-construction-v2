@@ -26,7 +26,7 @@ export default function RoyalPalmBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Royal Palm Beach, FL | All Phase USA</title>
-        <meta name="description" content="Royal Palm Beach, FL roofer for gated, golf-course & no-HOA neighborhoods — tile, shingle & metal, HOA review handled, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Royal Palm Beach, FL roofer for gated, golf-course & no-HOA neighborhoods — tile, shingle & metal, HOA review handled, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/royal-palm-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

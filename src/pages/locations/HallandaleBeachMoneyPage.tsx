@@ -26,7 +26,7 @@ export default function HallandaleBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Hallandale Beach, FL | All Phase USA</title>
-        <meta name="description" content="Hallandale Beach, FL roofer for oceanfront condos, Golden Isles estates & West Hallandale homes — flat, tile & shingle, HVHZ-code, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Hallandale Beach, FL roofer for oceanfront condos, Golden Isles estates & West Hallandale homes — flat, tile & shingle, HVHZ-code, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/hallandale-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

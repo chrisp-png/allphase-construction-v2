@@ -54,7 +54,7 @@ export default function OaklandParkMoneyPage() {
     <>
       <Helmet>
         <title>Roof Replacement Oakland Park, FL | All Phase USA</title>
-        <meta name="description" content="Oakland Park roof replacement by a dual-licensed, HVHZ-certified contractor. Flat-roof specialists for mid-century homes plus shingle, tile, and metal across 33308 and 33334. Free inspection. (754) 227-5605." />
+        <meta name="description" content="Oakland Park roof replacement by a dual-licensed, HVHZ-certified contractor. Flat-roof specialists for mid-century homes plus shingle, tile, and metal across 33308 and 33334. Free inspection." />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

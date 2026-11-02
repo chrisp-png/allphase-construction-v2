@@ -35,8 +35,10 @@ This is the **only** canonical codebase. An abandoned Bolt.new duplicate ("All P
 ### Netlify build command (the one that actually ships)
 
 ```
-npx vite build && node scripts/prerender-static.mjs && node scripts/submit-indexnow.mjs
+npx vite build && (npx vite build --config vite.config.ssr.ts || echo ...) && node scripts/prerender-static.mjs && node scripts/ssr-inject.mjs && node scripts/submit-indexnow.mjs
 ```
+
+(SSR steps added 2026-11 — see §18.)
 
 Defined in `netlify.toml`. **Publish dir:** `dist/`. Node 20.
 
@@ -609,3 +611,26 @@ SPA_SHELL_VERIFIER=warn
 
 Default is fail. Use sparingly.
 
+
+
+---
+
+## 18. SSR prerender — real React markup in the initial HTML (2026-11)
+
+Why: AI crawlers (GPTBot, PerplexityBot, ClaudeBot…) mostly don't run JS. Before this, the initial HTML held only the hand-written `#seo-static` summary; now ~230 public pages ship the actual React page (H1, every section) in `<div id="root">`.
+
+How:
+1. `vite build --config vite.config.ssr.ts` → `dist-ssr/entry-server.mjs` (never published). Entry: `src/entry-server.tsx` renders `<StaticRouter><AppShell/></StaticRouter>` with `renderToPipeableStream` + `onAllReady` (waits for lazy routes).
+2. `scripts/prerender-static.mjs` runs unchanged (owns `<head>`: title/meta/canonical/JSON-LD).
+3. `scripts/ssr-inject.mjs` renders each `dist/**/index.html` URL and replaces `#root` contents, adding `data-ssr="1"`. **`<head>` is byte-checked identical or the page is refused.**
+4. `src/main.tsx` hydrates (`hydrateRoot`) when `data-ssr="1"`, else `createRoot` as before.
+
+Per-page gate (otherwise the page keeps its static prerender): has `<h1>`, isn't the React 404, ≥80% of the static block's word count, no nested `<a>` (breaks hydration — `/locations/plantation` currently skipped for this). Excluded: `/blog`, `/lp/`, `/admin`, `/qa`, thank-you pages. Catch-all (SPA-shell-victim) URLs render 404 in React, so they keep their `#seo-static` content — that content IS their page.
+
+Rules:
+- **Never read `window`/`document`/`localStorage` during render** in components — guard with `typeof window !== 'undefined'` or move into `useEffect`. A render-time `window` access makes that page fall back to static (build still passes; check the `SSR INJECT` block in the Netlify log).
+- Render output must be deterministic (no `Math.random()`/`Date.now()` in JSX) or hydration mismatches (React #418) → full client re-render.
+- Inline `<script type="application/ld+json">{JSON.stringify(x)}</script>` in JSX gets HTML-escaped by React SSR; `ssr-inject` decodes it. Prefer schema in `prerender-static.mjs` anyway (§6).
+- A pre-hydration guard script blocks native submit on forms React hasn't hydrated yet (prevents a lead being lost to a native GET).
+- `SSR_INJECT=strict` env makes render errors fail the build (default: skip page, keep static).
+- Locally: `npm run build` runs both. Never re-run `prerender-static.mjs` on an already-injected `dist/` — it uses `dist/index.html` as its template. Rebuild from `vite build`.
