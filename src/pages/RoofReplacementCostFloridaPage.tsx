@@ -73,7 +73,7 @@ export default function RoofReplacementCostFloridaPage() {
     <>
       <SEO
             title="Florida Roof Replacement Cost 2026: $6,500–$38,000 Guide"
-            description="Florida roof replacement cost 2026: shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K. HVHZ premium 15-25%. Free quote: (754) 227-5605."
+            description="Florida roof replacement cost 2026: shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K. HVHZ premium 15-25%. Free quote."
             canonicalPath="/roof-replacement-cost-florida"
           />
           <InlineSchema schemas={[pageSchema1, pageSchema2, pageSchema3]} />

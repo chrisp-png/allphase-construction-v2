@@ -26,7 +26,7 @@ export default function PalmBeachGardensMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Palm Beach Gardens, FL | All Phase USA</title>
-        <meta name="description" content="Palm Beach Gardens, FL roofer for country-club estates, master-planned homes & acreage — tile, metal & shingle, HOA review handled, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Palm Beach Gardens, FL roofer for country-club estates, master-planned homes & acreage — tile, metal & shingle, HOA review handled, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/palm-beach-gardens" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

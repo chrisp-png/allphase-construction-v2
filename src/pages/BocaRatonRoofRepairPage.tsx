@@ -61,7 +61,7 @@ export default function BocaRatonRoofRepairPage() {
     <>
       <SEO
         title="Boca Raton Roof Repair | Licensed Contractor | All Phase USA"
-        description="Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. Licensed & insured. Free inspection. (754) 227-5605."
+        description="Professional roof repair in Boca Raton. Tile, shingle & flat roof leaks, storm damage, flashing failures. Licensed & insured. Free inspection."
         schema={faqSchema}
       />
       <div className="bg-zinc-950 text-white min-h-screen">

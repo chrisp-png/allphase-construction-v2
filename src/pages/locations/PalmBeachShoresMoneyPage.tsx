@@ -26,7 +26,7 @@ export default function PalmBeachShoresMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Palm Beach Shores, FL | All Phase USA</title>
-        <meta name="description" content="Palm Beach Shores, FL roofer on Singer Island — beach homes, condos & marina waterfront, coastal-grade tile, metal & flat, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Palm Beach Shores, FL roofer on Singer Island — beach homes, condos & marina waterfront, coastal-grade tile, metal & flat, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/palm-beach-shores" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

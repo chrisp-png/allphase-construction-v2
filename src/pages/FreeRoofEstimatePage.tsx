@@ -28,7 +28,7 @@ export default function FreeRoofEstimatePage() {
     <>
       <Helmet>
         <title>Free Roof Estimate | Broward & Palm Beach | All Phase USA</title>
-        <meta name="description" content="Get a free, no-obligation roof estimate in Broward & Palm Beach County — a written, line-item quote from a dual-licensed roofer. Same week. (754) 227-5605." />
+        <meta name="description" content="Get a free, no-obligation roof estimate in Broward & Palm Beach County — a written, line-item quote from a dual-licensed roofer. Same week." />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>

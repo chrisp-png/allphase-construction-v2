@@ -26,7 +26,7 @@ export default function GreenacresMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Greenacres, FL | All Phase USA</title>
-        <meta name="description" content="Greenacres, FL roofer. Re-roofing the aging homes across this planned Palm Beach County city, dual-licensed and built to HVHZ spec for insurance savings. (754) 227-5605." />
+        <meta name="description" content="Greenacres, FL roofer. Re-roofing the aging homes across this planned Palm Beach County city, dual-licensed and built to HVHZ spec for insurance savings." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/greenacres" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

@@ -26,7 +26,7 @@ export default function PalmBeachCountyHubPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Palm Beach County, FL | All Phase USA</title>
-        <meta name="description" content="Palm Beach County, FL roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coastal to inland, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Palm Beach County, FL roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coastal to inland, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/palm-beach-county" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

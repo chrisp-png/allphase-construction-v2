@@ -53,197 +53,197 @@ export interface SEOMetadata {
 export const SEO_TITLES: Record<string, SEOMetadata> = {
   '/locations/cooper-city': {
     title: 'Roofing Contractor in Cooper City, FL | All Phase USA',
-    description: 'Cooper City, FL roofer for family suburbs & gated communities — HVHZ-code tile & shingle, HOA review handled, dual-licensed. (754) 227-5605.',
+    description: 'Cooper City, FL roofer for family suburbs & gated communities — HVHZ-code tile & shingle, HOA review handled, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/cooper-city'
   },
   '/locations/dania-beach': {
     title: 'Roofing Contractor in Dania Beach, FL | All Phase USA',
-    description: 'Dania Beach, FL roofer for Broward\u2019s oldest city — coastal homes, condos & bungalows. HVHZ-code tile, shingle & flat, dual-licensed. (754) 227-5605.',
+    description: 'Dania Beach, FL roofer for Broward\u2019s oldest city — coastal homes, condos & bungalows. HVHZ-code tile, shingle & flat, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/dania-beach'
   },
   '/locations/weston': {
     title: 'Roofing Contractor in Weston, FL | All Phase USA',
-    description: 'Weston, FL roofer for master-planned gated communities — aging 1990s tile roofs, HVHZ-code, HOA review handled, dual-licensed. (754) 227-5605.',
+    description: 'Weston, FL roofer for master-planned gated communities — aging 1990s tile roofs, HVHZ-code, HOA review handled, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/weston'
   },
   '/locations/haverhill': {
     title: 'Roofing Contractor in Haverhill, FL | All Phase USA',
-    description: 'Haverhill, FL roofer for this small central Palm Beach County town — aging single-family homes, shingle \u0026 tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    description: 'Haverhill, FL roofer for this small central Palm Beach County town — aging single-family homes, shingle \u0026 tile, HVHZ-spec, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/haverhill'
   },
   '/locations/highland-beach': {
     title: 'Roofing Contractor in Highland Beach, FL | All Phase USA',
-    description: 'Highland Beach, FL roofer for oceanfront condos \u0026 barrier-island estates — coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec. (754) 227-5605.',
+    description: 'Highland Beach, FL roofer for oceanfront condos \u0026 barrier-island estates — coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/highland-beach'
   },
   '/locations/hypoluxo': {
     title: 'Roofing Contractor in Hypoluxo, FL | All Phase USA',
-    description: 'Hypoluxo, FL roofer for this small Intracoastal town — modest homes to island waterfront, shingle, tile \u0026 metal, HVHZ-spec. (754) 227-5605.',
+    description: 'Hypoluxo, FL roofer for this small Intracoastal town — modest homes to island waterfront, shingle, tile \u0026 metal, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/hypoluxo'
   },
   '/locations/jupiter-inlet-colony': {
     title: 'Roofing Contractor in Jupiter Inlet Colony | All Phase USA',
-    description: 'Jupiter Inlet Colony, FL roofer for this gated oceanfront island town — coastal-grade tile \u0026 standing-seam metal, HVHZ-spec, discreet. (754) 227-5605.',
+    description: 'Jupiter Inlet Colony, FL roofer for this gated oceanfront island town — coastal-grade tile \u0026 standing-seam metal, HVHZ-spec, discreet.',
     canonical: 'https://allphaseconstructionfl.com/locations/jupiter-inlet-colony'
   },
   '/locations/ocean-ridge': {
     title: 'Roofing Contractor in Ocean Ridge, FL | All Phase USA',
-    description: 'Ocean Ridge, FL roofer for barrier-island oceanfront \u0026 Intracoastal estates — coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec. (754) 227-5605.',
+    description: 'Ocean Ridge, FL roofer for barrier-island oceanfront \u0026 Intracoastal estates — coastal-grade tile, metal \u0026 flat roofs, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/ocean-ridge'
   },
   '/locations/palm-beach-shores': {
     title: 'Roofing Contractor in Palm Beach Shores, FL | All Phase USA',
-    description: 'Palm Beach Shores, FL roofer on Singer Island — beach homes, condos \u0026 marina waterfront, coastal-grade tile, metal \u0026 flat, HVHZ-spec. (754) 227-5605.',
+    description: 'Palm Beach Shores, FL roofer on Singer Island — beach homes, condos \u0026 marina waterfront, coastal-grade tile, metal \u0026 flat, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-shores'
   },
   '/locations/westlake': {
     title: 'Roofing Contractor in Westlake, FL | All Phase USA',
-    description: 'Westlake, FL roofer for Palm Beach County\u2019s newest city — new-construction repairs, storm damage \u0026 tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    description: 'Westlake, FL roofer for Palm Beach County\u2019s newest city — new-construction repairs, storm damage \u0026 tile, HVHZ-spec, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/westlake'
   },
   '/locations/greenacres': {
     title: 'Roofing Contractor in Greenacres, FL | All Phase USA',
-    description: 'Greenacres, FL roofer re-roofing this planned PBC city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, insurance savings. (754) 227-5605.',
+    description: 'Greenacres, FL roofer re-roofing this planned PBC city\u2019s 17,000+ aging homes \u2014 dual-licensed, HVHZ-spec, insurance savings.',
     canonical: 'https://allphaseconstructionfl.com/locations/greenacres'
   },
   '/locations/palm-beach': {
     title: 'Roofing Contractor in Palm Beach, FL | All Phase USA',
-    description: 'Palm Beach, FL roofer for historic Mediterranean tile estates \u2014 clay \u0026 concrete tile, coastal-grade, architectural review handled. (754) 227-5605.',
+    description: 'Palm Beach, FL roofer for historic Mediterranean tile estates \u2014 clay \u0026 concrete tile, coastal-grade, architectural review handled.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach'
   },
   '/locations/southwest-ranches': {
     title: 'Roofing Contractor in Southwest Ranches, FL | All Phase USA',
-    description: 'Southwest Ranches, FL roofer for estates, ranches & barns on acreage — premium tile, metal & shingle, HVHZ-code, dual-licensed. (754) 227-5605.',
+    description: 'Southwest Ranches, FL roofer for estates, ranches & barns on acreage — premium tile, metal & shingle, HVHZ-code, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/southwest-ranches'
   },
   '/locations/hallandale-beach': {
     title: 'Roofing Contractor in Hallandale Beach, FL | All Phase USA',
-    description: 'Hallandale Beach, FL roofer for oceanfront condos, Golden Isles estates \u0026 older homes \u2014 flat, tile \u0026 shingle, HVHZ-code. (754) 227-5605.',
+    description: 'Hallandale Beach, FL roofer for oceanfront condos, Golden Isles estates \u0026 older homes \u2014 flat, tile \u0026 shingle, HVHZ-code.',
     canonical: 'https://allphaseconstructionfl.com/locations/hallandale-beach'
   },
   '/locations/pembroke-pines': {
     title: 'Roofing Contractor in Pembroke Pines, FL | All Phase USA',
-    description: 'Pembroke Pines, FL roofer for gated communities & east-side homes — aging 1990s roofs, HVHZ-code tile & shingle, dual-licensed. (754) 227-5605.',
+    description: 'Pembroke Pines, FL roofer for gated communities & east-side homes — aging 1990s roofs, HVHZ-code tile & shingle, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-pines'
   },
   '/locations/palm-beach-gardens': {
     title: 'Roofing Contractor in Palm Beach Gardens, FL | All Phase USA',
-    description: 'Palm Beach Gardens roofer for country-club estates, master-planned homes \u0026 acreage \u2014 tile, metal \u0026 shingle, HOA review. (754) 227-5605.',
+    description: 'Palm Beach Gardens roofer for country-club estates, master-planned homes \u0026 acreage \u2014 tile, metal \u0026 shingle, HOA review.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-gardens'
   },
   '/locations/hollywood': {
     title: 'Roofing Contractor in Hollywood, FL | All Phase USA',
-    description: 'Hollywood, FL roofer for beach condos, Hollywood Lakes homes & Emerald Hills estates — tile, flat, shingle & metal, HVHZ-code. (754) 227-5605.',
+    description: 'Hollywood, FL roofer for beach condos, Hollywood Lakes homes & Emerald Hills estates — tile, flat, shingle & metal, HVHZ-code.',
     canonical: 'https://allphaseconstructionfl.com/locations/hollywood'
   },
   '/locations/davie': {
     title: 'Roofing Contractor in Davie, FL | All Phase USA',
-    description: 'Davie, FL roofer for equestrian ranches, gated estates \u0026 family suburbs \u2014 tile, metal, shingle, HOA review, HVHZ-code. (754) 227-5605.',
+    description: 'Davie, FL roofer for equestrian ranches, gated estates \u0026 family suburbs \u2014 tile, metal, shingle, HOA review, HVHZ-code.',
     canonical: 'https://allphaseconstructionfl.com/locations/davie'
   },
   '/locations/wilton-manors': {
     title: 'Roofing Contractor in Wilton Manors, FL | All Phase USA',
-    description: 'Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code. (754) 227-5605.',
+    description: 'Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code.',
     canonical: 'https://allphaseconstructionfl.com/locations/wilton-manors'
   },
   '/locations/parkland': {
     title: 'Roofing Contractor in Parkland, FL | All Phase USA',
-    description: 'Parkland, FL roofer for golf estates, gated communities \u0026 equestrian ranches \u2014 premium tile, metal \u0026 shingle, HOA review. (754) 227-5605.',
+    description: 'Parkland, FL roofer for golf estates, gated communities \u0026 equestrian ranches \u2014 premium tile, metal \u0026 shingle, HOA review.',
     canonical: 'https://allphaseconstructionfl.com/locations/parkland'
   },
   '/locations/pompano-beach': {
     title: 'Roofing Contractor in Pompano Beach, FL | All Phase USA',
-    description: 'Pompano Beach, FL roofer from Harbor Village estates to Palm Aire condos — HVHZ-code tile, metal, shingle & flat, dual-licensed. (754) 227-5605.',
+    description: 'Pompano Beach, FL roofer from Harbor Village estates to Palm Aire condos — HVHZ-code tile, metal, shingle & flat, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/pompano-beach'
   },
   '/locations/loxahatchee-groves': {
     title: 'Roofing Contractor in Loxahatchee Groves, FL | All Phase USA',
-    description: 'Loxahatchee Groves, FL roofer for rural homes, barns & ag structures — metal, shingle & tile, HVHZ-spec, dual-licensed. (754) 227-5605.',
+    description: 'Loxahatchee Groves, FL roofer for rural homes, barns & ag structures — metal, shingle & tile, HVHZ-spec, dual-licensed.',
     canonical: 'https://allphaseconstructionfl.com/locations/loxahatchee-groves'
   },
   '/locations/royal-palm-beach': {
     title: 'Roofing Contractor in Royal Palm Beach, FL | All Phase USA',
-    description: 'Royal Palm Beach, FL roofer for gated, golf-course \u0026 no-HOA neighborhoods \u2014 tile, shingle \u0026 metal, HOA review handled, HVHZ-spec. (754) 227-5605.',
+    description: 'Royal Palm Beach, FL roofer for gated, golf-course \u0026 no-HOA neighborhoods \u2014 tile, shingle \u0026 metal, HOA review handled, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/royal-palm-beach'
   },
   '/locations/lantana': {
     title: 'Roofing Contractor in Lantana, FL | All Phase USA',
-    description: 'Lantana, FL roofer for this historic fishing village \u2014 aging mainland homes to Hypoluxo Island waterfront, tile \u0026 metal. (754) 227-5605.',
+    description: 'Lantana, FL roofer for this historic fishing village \u2014 aging mainland homes to Hypoluxo Island waterfront, tile \u0026 metal.',
     canonical: 'https://allphaseconstructionfl.com/locations/lantana'
   },
   '/locations/north-palm-beach': {
     title: 'Roofing Contractor in North Palm Beach, FL | All Phase USA',
-    description: 'North Palm Beach roofer for waterfront estates, gated communities \u0026 Intracoastal condos \u2014 coastal-grade tile, metal \u0026 flat. (754) 227-5605.',
+    description: 'North Palm Beach roofer for waterfront estates, gated communities \u0026 Intracoastal condos \u2014 coastal-grade tile, metal \u0026 flat.',
     canonical: 'https://allphaseconstructionfl.com/locations/north-palm-beach'
   },
   '/locations/hillsboro-beach': {
     title: 'Roofing Contractor in Hillsboro Beach, FL | All Phase USA',
-    description: 'Hillsboro Beach, FL roofer for Millionaires\u2019 Mile estates & oceanfront condos — premium tile, metal & flat, coastal-grade, HVHZ. (754) 227-5605.',
+    description: 'Hillsboro Beach, FL roofer for Millionaires\u2019 Mile estates & oceanfront condos — premium tile, metal & flat, coastal-grade, HVHZ.',
     canonical: 'https://allphaseconstructionfl.com/locations/hillsboro-beach'
   },
   '/locations/sea-ranch-lakes': {
     title: 'Roofing Contractor in Sea Ranch Lakes, FL | All Phase USA',
-    description: 'Sea Ranch Lakes roofer for gated oceanfront \u0026 lakeside estates \u2014 premium tile, standing-seam metal \u0026 flat, coastal-grade. (754) 227-5605.',
+    description: 'Sea Ranch Lakes roofer for gated oceanfront \u0026 lakeside estates \u2014 premium tile, standing-seam metal \u0026 flat, coastal-grade.',
     canonical: 'https://allphaseconstructionfl.com/locations/sea-ranch-lakes'
   },
   '/locations/pembroke-park': {
     title: 'Roofing Contractor in Pembroke Park, FL | All Phase USA',
-    description: 'Pembroke Park, FL roofer for homes, townhomes \u0026 commercial/warehouse flat roofs \u2014 HVHZ-code, dual-licensed roofing + GC. (754) 227-5605.',
+    description: 'Pembroke Park, FL roofer for homes, townhomes \u0026 commercial/warehouse flat roofs \u2014 HVHZ-code, dual-licensed roofing + GC.',
     canonical: 'https://allphaseconstructionfl.com/locations/pembroke-park'
   },
   '/locations/lauderdale-by-the-sea': {
     title: 'Roofing Contractor in Lauderdale-by-the-Sea | All Phase USA',
-    description: 'Lauderdale-by-the-Sea barrier-island roofer \u2014 coastal-grade tile \u0026 standing-seam metal for salt air \u0026 Atlantic wind, HVHZ. (754) 227-5605.',
+    description: 'Lauderdale-by-the-Sea barrier-island roofer \u2014 coastal-grade tile \u0026 standing-seam metal for salt air \u0026 Atlantic wind, HVHZ.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderdale-by-the-sea'
   },
   '/locations/north-lauderdale': {
     title: 'Roofing Contractor in North Lauderdale, FL | All Phase USA',
-    description: 'North Lauderdale roofer for the Morris Lapidus \u2018City of Tomorrow\u2019 \u2014 aging 1970s homes, HVHZ-code shingle, tile \u0026 metal. (754) 227-5605.',
+    description: 'North Lauderdale roofer for the Morris Lapidus \u2018City of Tomorrow\u2019 \u2014 aging 1970s homes, HVHZ-code shingle, tile \u0026 metal.',
     canonical: 'https://allphaseconstructionfl.com/locations/north-lauderdale'
   },
   '/locations/lauderdale-lakes': {
     title: 'Roofing Contractor in Lauderdale Lakes, FL | All Phase USA',
-    description: 'Lauderdale Lakes, FL roofer for 1960s homes \u0026 condo communities \u2014 HVHZ-code shingle, tile \u0026 flat, association approvals. (754) 227-5605.',
+    description: 'Lauderdale Lakes, FL roofer for 1960s homes \u0026 condo communities \u2014 HVHZ-code shingle, tile \u0026 flat, association approvals.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderdale-lakes'
   },
   '/locations/lauderhill': {
     title: 'Roofing Contractor in Lauderhill, FL | All Phase USA',
-    description: 'Lauderhill, FL roofer for 1960s homes, Inverrary condos \u0026 gated communities \u2014 HVHZ-code shingle, tile \u0026 metal. (754) 227-5605.',
+    description: 'Lauderhill, FL roofer for 1960s homes, Inverrary condos \u0026 gated communities \u2014 HVHZ-code shingle, tile \u0026 metal.',
     canonical: 'https://allphaseconstructionfl.com/locations/lauderhill'
   },
   '/locations/margate': {
     title: 'Roofing Contractor in Margate, FL | All Phase USA',
-    description: 'Margate, FL roofer for canal homes, gated \u0026 55+ communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled. (754) 227-5605.',
+    description: 'Margate, FL roofer for canal homes, gated \u0026 55+ communities \u2014 HVHZ-code shingle, tile \u0026 metal, HOA review handled.',
     canonical: 'https://allphaseconstructionfl.com/locations/margate'
   },
   '/locations/miramar': {
     title: 'Roofing Contractor in Miramar, FL | All Phase USA',
-    description: 'Miramar, FL roofer for the City of Lakes \u2014 master-planned lake communities \u0026 older homes, HVHZ-code tile, shingle \u0026 metal. (754) 227-5605.',
+    description: 'Miramar, FL roofer for the City of Lakes \u2014 master-planned lake communities \u0026 older homes, HVHZ-code tile, shingle \u0026 metal.',
     canonical: 'https://allphaseconstructionfl.com/locations/miramar'
   },
   '/locations/jupiter': {
     title: 'Roofing Contractor in Jupiter, FL | All Phase USA',
-    description: 'Jupiter, FL coastal \u0026 waterfront roofer \u2014 tile \u0026 standing-seam metal built for Atlantic salt air, HVHZ-spec. (754) 227-5605.',
+    description: 'Jupiter, FL coastal \u0026 waterfront roofer \u2014 tile \u0026 standing-seam metal built for Atlantic salt air, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/jupiter'
   },
   '/locations/lake-worth-beach': {
     title: 'Roofing Contractor in Lake Worth, FL (Lake Worth Beach)',
-    description: 'Roofer in Lake Worth (Lake Worth Beach), FL \u2014 historic-district re-roofs, coastal tile, shingle \u0026 metal, HVHZ-spec. (754) 227-5605.',
+    description: 'Roofer in Lake Worth (Lake Worth Beach), FL \u2014 historic-district re-roofs, coastal tile, shingle \u0026 metal, HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/locations/lake-worth-beach'
   },
   '/': {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    description: 'Free roof inspection in 48 hours. Dual-licensed South Florida roofer since 2006. 2,500+ roofs, A+ BBB, HVHZ-certified. Call (754) 227-5605.',
+    description: 'Free roof inspection in 48 hours. Dual-licensed South Florida roofer since 2006. 2,500+ roofs, A+ BBB, HVHZ-certified.',
     canonical: 'https://allphaseconstructionfl.com/'
   },
   '/contact': {
     title: 'Contact Our Roofing Team | All Phase USA',
-    description: 'Call (754) 227-5605 or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.',
+    description: 'Call or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.',
     canonical: 'https://allphaseconstructionfl.com/contact'
   },
   '/hurricane-help': {
     title: 'Roof Emergency & Hurricane Help South Florida | All Phase',
-    description: 'South Florida roof emergency response + hurricane-season preparation. Same-day inspection from Deerfield Beach HQ. HVHZ-spec. (754) 227-5605.',
+    description: 'South Florida roof emergency response + hurricane-season preparation. Same-day inspection from Deerfield Beach HQ. HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/hurricane-help'
   },
   '/about-us': {
@@ -258,7 +258,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-cost-calculator': {
     title: 'Florida Roof Cost Calculator — $6.5K to $45K Range (2026)',
-    description: 'Florida roof cost calculator 2026. 60-second estimate for shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K, flat $9K–$22K. Free quote (754) 227-5605.',
+    description: 'Florida roof cost calculator 2026. 60-second estimate for shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K, flat $9K–$22K. Free quote.',
     canonical: 'https://allphaseconstructionfl.com/roof-cost-calculator'
   },
   '/pricing-guide': {
@@ -307,17 +307,17 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-inspection': {
     title: 'Free Roof Inspection South Florida | All Phase Construction',
-    description: 'Free 21-point roof inspections in South Florida. Storm damage, insurance docs & pre-purchase reports. Dual-licensed, HVHZ-certified. Call (754) 227-5605.',
+    description: 'Free 21-point roof inspections in South Florida. Storm damage, insurance docs & pre-purchase reports. Dual-licensed, HVHZ-certified.',
     canonical: 'https://allphaseconstructionfl.com/roof-inspection'
   },
   '/roof-replacement-process': {
     title: 'Roof Replacement Process: 10 Steps + Timeline (2026)',
-    description: '10-step roof replacement process: inspection, permits, tear-off, install, warranty. Realistic 2–4 week timeline. Free South FL quote (754) 227-5605.',
+    description: '10-step roof replacement process: inspection, permits, tear-off, install, warranty. Realistic 2–4 week timeline. Free South FL quote.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-process'
   },
   '/roof-replacement': {
     title: 'Roof Replacement South Florida | Free Estimate | All Phase',
-    description: 'South Florida dual-licensed, HVHZ-certified roof replacement. Free inspection + easy financing. Tile, metal, shingle & flat. Call (754) 227-5605.',
+    description: 'South Florida dual-licensed, HVHZ-certified roof replacement. Free inspection + easy financing. Tile, metal, shingle & flat.',
     canonical: 'https://allphaseconstructionfl.com/roof-replacement'
   },
   '/roof-maintenance-programs': {
@@ -327,7 +327,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/tile-roofing': {
     title: 'Concrete & Clay Tile Roofing South Florida (HVHZ-Certified)',
-    description: 'South Florida tile roofing — concrete & clay installation, repair, re-roof. HVHZ-compliant, 175+ mph wind ratings. (754) 227-5605.',
+    description: 'South Florida tile roofing — concrete & clay installation, repair, re-roof. HVHZ-compliant, 175+ mph wind ratings.',
     canonical: 'https://allphaseconstructionfl.com/tile-roofing'
   },
   '/metal-roofing': {
@@ -337,7 +337,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/shingle-roofing': {
     title: 'Shingle Roofing South Florida | HVHZ-Certified | All Phase',
-    description: 'South Florida shingle roofing: architectural, 3-tab & impact-rated. HVHZ-certified, free estimate. Broward & Palm Beach County. Call (754) 227-5605.',
+    description: 'South Florida shingle roofing: architectural, 3-tab & impact-rated. HVHZ-certified, free estimate. Broward & Palm Beach County.',
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
@@ -352,12 +352,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
     '/roof-repair': {
     title: 'Emergency Roof Repair South Florida | 24/7 Line',
-        description: 'Reach a live person 24/7 for emergency roof repair in Broward & Palm Beach County. Leaks booked any hour, technician out fast. (754) 227-5605.',
+        description: 'Reach a live person 24/7 for emergency roof repair in Broward & Palm Beach County. Leaks booked any hour, technician out fast.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair'
   },
     '/hoa-condo-roof-financing': {
     title: 'Condo & HOA Roof Financing in South Florida | All Phase USA',
-    description: "Condo & HOA roof financing in Broward & Palm Beach — replace your association's roof with monthly payments, not a lump-sum special assessment. (754) 227-5605.",
+    description: "Condo & HOA roof financing in Broward & Palm Beach — replace your association's roof with monthly payments, not a lump-sum special assessment.",
     canonical: 'https://allphaseconstructionfl.com/hoa-condo-roof-financing'
   },
     '/licensed-roofing-contractor': {
@@ -377,12 +377,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // render. Canonical matches the policy: no trailing slash.
   '/locations/palm-beach-county': {
     title: 'Roofing Contractor in Palm Beach County, FL | All Phase USA',
-    description: 'Palm Beach County roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coast to inland. (754) 227-5605.',
+    description: 'Palm Beach County roofer serving all 21 cities \u2014 voluntarily HVHZ-spec tile, shingle, metal \u0026 flat roofs, coast to inland.',
     canonical: 'https://allphaseconstructionfl.com/locations/palm-beach-county'
   },
   '/locations/broward-county': {
     title: 'Roofing Contractor in Broward County, FL | All Phase USA',
-    description: 'Broward County roofer serving all 28 cities from our Deerfield Beach office \u2014 HVHZ-code tile, shingle, metal \u0026 flat roofs. (754) 227-5605.',
+    description: 'Broward County roofer serving all 28 cities from our Deerfield Beach office \u2014 HVHZ-code tile, shingle, metal \u0026 flat roofs.',
     canonical: 'https://allphaseconstructionfl.com/locations/broward-county'
   },
   '/locations/service-areas': {
@@ -429,37 +429,37 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/roof-repair/fort-lauderdale': {
     title: 'Fort Lauderdale Roof Repair | Fast Response | All Phase USA',
-    description: 'Roof repair in Fort Lauderdale, FL. Storm damage, leaks, tile & shingle repairs. HVHZ-certified, dual-licensed. Free inspection. (754) 227-5605.',
+    description: 'Roof repair in Fort Lauderdale, FL. Storm damage, leaks, tile & shingle repairs. HVHZ-certified, dual-licensed. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/fort-lauderdale'
   },
     '/roof-repair/deerfield-beach': {
     title: 'Deerfield Beach Roof Repair | All Phase USA',
-    description: 'Emergency roof repair in Deerfield Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.',
+    description: 'Emergency roof repair in Deerfield Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/deerfield-beach'
   },
     '/roof-repair/pompano-beach': {
     title: 'Pompano Beach Roof Repair | All Phase USA',
-    description: 'Emergency roof repair in Pompano Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor. Call (754) 227-5605.',
+    description: 'Emergency roof repair in Pompano Beach. HVHZ-compliant, inspection-first diagnostics, insurance coordination. Licensed contractor.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/pompano-beach'
   },
   '/roof-repair/west-palm-beach': {
     title: 'West Palm Beach Roof Repair | Fast Response | All Phase USA',
-    description: 'Expert roof repair in West Palm Beach, FL \u2014 tile, shingle, metal \u0026 flat repairs, storm damage. Licensed \u0026 insured. (754) 227-5605.',
+    description: 'Expert roof repair in West Palm Beach, FL \u2014 tile, shingle, metal \u0026 flat repairs, storm damage. Licensed \u0026 insured.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/west-palm-beach'
   },
   '/roof-repair/boca-raton': {
     title: 'Boca Raton Roof Repair | Licensed Contractor | All Phase USA',
-    description: 'Professional roof repair in Boca Raton \u2014 tile, shingle \u0026 flat leaks, storm damage, flashing. Licensed \u0026 insured. (754) 227-5605.',
+    description: 'Professional roof repair in Boca Raton \u2014 tile, shingle \u0026 flat leaks, storm damage, flashing. Licensed \u0026 insured.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/boca-raton'
   },
   '/roof-repair/coral-springs': {
     title: 'Coral Springs Roof Repair | HVHZ-Certified | All Phase USA',
-    description: 'Roof repair in Coral Springs, FL. Leaks, storm damage, tile & shingle repairs by a dual-licensed HVHZ contractor. Free inspection. (754) 227-5605.',
+    description: 'Roof repair in Coral Springs, FL. Leaks, storm damage, tile & shingle repairs by a dual-licensed HVHZ contractor. Free inspection.',
     canonical: 'https://allphaseconstructionfl.com/roof-repair/coral-springs'
   },
     '/frequently-asked-questions': {
     title: 'Roofing FAQ South Florida | All Phase USA',
-    description: 'South Florida roofing FAQs - repair vs replacement, HVHZ, insurance, materials & costs. Licensed contractor answers. Call (754) 227-5605.',
+    description: 'South Florida roofing FAQs - repair vs replacement, HVHZ, insurance, materials & costs. Licensed contractor answers.',
     canonical: 'https://allphaseconstructionfl.com/frequently-asked-questions'
   },
     '/easy-payments': {
@@ -469,12 +469,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/our-location': {
     title: 'Our Deerfield Beach Location | All Phase USA',
-    description: 'All Phase Construction USA - 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 227-5605.',
+    description: 'All Phase Construction USA - 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County.',
     canonical: 'https://allphaseconstructionfl.com/our-location'
   },
   '/learning-center': {
     title: 'Learning Center | Roofing Guides & Resources | All Phase USA',
-    description: 'Roofing guides, cost breakdowns, and homeowner tips for South Florida. Hurricane prep, materials, inspections - all in one place. Call (754) 227-5605.',
+    description: 'Roofing guides, cost breakdowns, and homeowner tips for South Florida. Hurricane prep, materials, inspections - all in one place.',
     canonical: 'https://allphaseconstructionfl.com/learning-center'
   },
   '/locations/deerfield-beach/service-area': {
@@ -484,7 +484,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
         '/locations/deerfield-beach': {
     title: 'Deerfield Beach Roofing Contractor (HQ Since 2006)',
-    description: "Deerfield Beach local roofing HQ since 2006. 2,500+ roofs, dual-licensed (CCC + CGC), 160+ five-star Google reviews. Free inspection (754) 227-5605.",
+    description: "Deerfield Beach local roofing HQ since 2006. 2,500+ roofs, dual-licensed (CCC + CGC), 160+ five-star Google reviews. Free inspection.",
     canonical: 'https://allphaseconstructionfl.com/locations/deerfield-beach'
   },
   '/how-to-hire-roofing-contractor': {
@@ -514,12 +514,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/broward-county-roof-replacement-guide': {
     title: 'Broward County Roof Replacement Guide (2026)',
-    description: 'Complete Broward County roof replacement guide for 2026. HVHZ requirements, 25% rule, costs by material, insurance claims help. Call (754) 227-5605.',
+    description: 'Complete Broward County roof replacement guide for 2026. HVHZ requirements, 25% rule, costs by material, insurance claims help.',
     canonical: 'https://allphaseconstructionfl.com/broward-county-roof-replacement-guide'
   },
   '/roof-replacement-cost-florida': {
     title: 'Florida Roof Replacement Cost 2026: $6,500–$38,000 Guide',
-    description: "Florida roof replacement cost 2026: shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K. HVHZ premium 15-25%. Free quote: (754) 227-5605.",
+    description: "Florida roof replacement cost 2026: shingle $6.5K–$16K, tile $12K–$38K, metal $15K–$45K. HVHZ premium 15-25%. Free quote.",
     canonical: 'https://allphaseconstructionfl.com/roof-replacement-cost-florida'
   },
   '/florida-roof-insurance-claims-guide': {
@@ -652,7 +652,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   // from prerender-static.mjs keeps both code paths in sync.
   '/boca-raton-roof-permit-guide': {
     title: 'Boca Raton Roof Permit Guide (2026) | All Phase USA',
-    description: 'Boca Raton roof permit guide — 4–5 week timeline, flat-roof uplift engineering, hurricane-strap verification for pre-2002 homes. (754) 227-5605.',
+    description: 'Boca Raton roof permit guide — 4–5 week timeline, flat-roof uplift engineering, hurricane-strap verification for pre-2002 homes.',
     canonical: 'https://allphaseconstructionfl.com/boca-raton-roof-permit-guide'
   },
   '/boca-raton-luxury-estate-roofing': {
@@ -682,7 +682,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/boynton-beach-roof-replacement-guide': {
     title: 'Boynton Beach Roof Replacement Cost (2026) | All Phase',
-    description: 'Boynton Beach FL roof replacement cost guide (2026): $13K–$22K shingle, $22K–$40K tile, full permit + HOA timeline. (754) 227-5605.',
+    description: 'Boynton Beach FL roof replacement cost guide (2026): $13K–$22K shingle, $22K–$40K tile, full permit + HOA timeline.',
     canonical: 'https://allphaseconstructionfl.com/boynton-beach-roof-replacement-guide'
   },
   '/boynton-beach-55-plus-community-roofing': {
@@ -782,12 +782,12 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/fort-lauderdale-commercial-roofing': {
     title: 'Fort Lauderdale Commercial Roofing | All Phase USA',
-    description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail. (754) 227-5605.',
+    description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail.',
     canonical: 'https://allphaseconstructionfl.com/fort-lauderdale-commercial-roofing'
   },
   '/lake-worth-corridor-roofing': {
     title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
-    description: 'Roof replacement in Lake Worth Corridor — the unincorporated CDP south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code. (754) 227-5605.',
+    description: 'Roof replacement in Lake Worth Corridor — the unincorporated CDP south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code.',
     canonical: 'https://allphaseconstructionfl.com/lake-worth-corridor-roofing'
   },
   '/lake-worth-beach-roof-insurance-claim': {
@@ -817,7 +817,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/pompano-beach-roof-permit-guide': {
     title: 'Pompano Beach Roof Permit Guide (2026) | All Phase USA',
-    description: 'Pompano Beach roof permit guide \u2014 legally HVHZ Broward, NOA documentation, 2\u20133 week timeline, secondary water barrier. (754) 227-5605.',
+    description: 'Pompano Beach roof permit guide \u2014 legally HVHZ Broward, NOA documentation, 2\u20133 week timeline, secondary water barrier.',
     canonical: 'https://allphaseconstructionfl.com/pompano-beach-roof-permit-guide'
   },
   '/palm-aire-pompano-beach-roofing': {
@@ -1064,7 +1064,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     // Fallback if location not found in locations.ts
     return {
       title: `${CITY_NAMES[slug] || slug} Roofing Contractor | All Phase Construction USA`,
-      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. ${getComplianceLabel(slug)}, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection. (754) 227-5605.`,
+      description: `Licensed roofing in ${CITY_NAMES[slug] || slug}, FL. ${getComplianceLabel(slug)}, dual-licensed CCC/CGC. Tile, metal, shingle & flat. Free inspection.`,
       canonical: `https://allphaseconstructionfl.com/locations/${slug}`
     };
   }
@@ -1082,8 +1082,8 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     // "Same-Day" was the original PR-64 draft but overpromised the
     // workflow: actual repair is scheduled after the inspection visit.
     const title = `Roof Repair ${cityName} FL | Free Inspection`;
-    const description = `Fast, licensed roof repair in ${cityName}. ${getComplianceLabel(slug)} dual-licensed contractor. Free inspection. (754) 227-5605.`;
-    const ogDescription = `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. Dual-licensed CCC/CGC. (754) 227-5605.`;
+    const description = `Fast, licensed roof repair in ${cityName}. ${getComplianceLabel(slug)} dual-licensed contractor. Free inspection.`;
+    const ogDescription = `Emergency roof repair in ${cityName}, FL. Leaks, storm damage & flashing failures. Dual-licensed CCC/CGC.`;
     return {
       title,
       description,
@@ -1098,7 +1098,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Without this the dynamic handler below stomps the prerendered title at runtime.
   if (normalizedPath === '/roof-inspection/deerfield-beach') {
     const title = 'Free Deerfield Beach Roof Inspection — Same-Day Report';
-    const description = 'Free same-day roof inspection in Deerfield Beach, FL. 21-point report with photos. Dual-licensed contractor since 2006. Call (754) 227-5605.';
+    const description = 'Free same-day roof inspection in Deerfield Beach, FL. 21-point report with photos. Dual-licensed contractor since 2006.';
     return {
       title,
       description,
@@ -1115,10 +1115,10 @@ export function generateSEOMetadata(path: string): SEOMetadata {
     const cityName = CITY_NAMES[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${cityName} Roof Inspection | All Phase USA`,
-            description: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.`,
+            description: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor.`,
       canonical: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
       ogTitle: `${cityName} Roof Inspection | All Phase USA`,
-            ogDescription: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.`,
+            ogDescription: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor.`,
       ogUrl: `https://allphaseconstructionfl.com/roof-inspection/${slug}`,
     };
   }
@@ -1148,7 +1148,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
       description = `${blogTitle} — expert insights from All Phase USA, South Florida's dual-licensed roofer.`;
     }
     if (description.length > 155) {
-      description = `${blogTitle.substring(0, 90).replace(/\s+\S*$/, '').trim()} — roofing tips from All Phase USA. Call (754) 227-5605.`;
+      description = `${blogTitle.substring(0, 90).replace(/\s+\S*$/, '').trim()} — roofing tips from All Phase USA.`;
     }
     if (description.length > 155) {
       description = description.substring(0, 152).replace(/\s+\S*$/, '').trim() + '...';
@@ -1170,7 +1170,7 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   const cleanPath = normalizedPath === '/' ? '/' : normalizedPath.replace(/\/+$/, '');
   return {
     title: 'Roofing Contractor | Broward & Palm Beach | All Phase USA',
-    description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection. (754) 227-5605.',
+    description: 'Licensed roofing contractor in South Florida. HVHZ-certified, dual-licensed CCC/CGC. Tile, metal, shingle & flat roofing. Free inspection.',
     canonical: `https://allphaseconstructionfl.com${cleanPath}`,
     isFallback: true
   };

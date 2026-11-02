@@ -57,7 +57,7 @@ export const landmarks: Landmark[] = [
     approxServiceRadiusMiles: 2,
     nearbyAreas: ["Old Floresta", "Spanish Village", "Royal Palm Yacht and Country Club", "Downtown Boca Raton"],
     titleOverride: "Roofing Near Mizner Park, Boca Raton FL | All Phase",
-    descriptionOverride: "Roof replacement near Mizner Park, Boca Raton. Barrel tile, TPO flat, condo coordination. Dual-licensed CCC + CGC. Free estimate (754) 227-5605.",
+    descriptionOverride: "Roof replacement near Mizner Park, Boca Raton. Barrel tile, TPO flat, condo coordination. Dual-licensed CCC + CGC. Free estimate.",
     faqs: [
       {
         question: "Do you replace tile roofs on historic Mediterranean Revival homes near Mizner Park?",
@@ -84,7 +84,7 @@ export const landmarks: Landmark[] = [
     approxServiceRadiusMiles: 3,
     nearbyAreas: ["Boca Del Mar", "Boca Pointe", "Boca West", "Del Mar Village", "Yamato Road corridor"],
     titleOverride: "Roofing Near Town Center, Boca Raton FL | All Phase",
-    descriptionOverride: "Roof replacement near Town Center at Boca Raton. Concrete tile, underlayment, HOA architectural review handled. Dual-licensed. (754) 227-5605.",
+    descriptionOverride: "Roof replacement near Town Center at Boca Raton. Concrete tile, underlayment, HOA architectural review handled. Dual-licensed.",
     faqs: [
       {
         question: "Do you work with HOAs in the Boca West and Boca Pointe communities?",
@@ -111,7 +111,7 @@ export const landmarks: Landmark[] = [
     approxServiceRadiusMiles: 2,
     nearbyAreas: ["University Park", "Boca Square", "Palms at Boca Pointe", "NW 2nd Avenue corridor"],
     titleOverride: "Roofing Near FAU, Boca Raton FL | All Phase",
-    descriptionOverride: "Roof replacement serving the FAU corridor and University Park. Investor/landlord turnkey reroofs, HVHZ-grade systems, dual-licensed. (754) 227-5605.",
+    descriptionOverride: "Roof replacement serving the FAU corridor and University Park. Investor/landlord turnkey reroofs, HVHZ-grade systems, dual-licensed.",
     faqs: [
       {
         question: "Do you work with absentee landlords on rental properties near FAU?",

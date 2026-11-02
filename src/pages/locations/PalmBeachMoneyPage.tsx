@@ -26,7 +26,7 @@ export default function PalmBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Palm Beach, FL | All Phase USA</title>
-        <meta name="description" content="Palm Beach, FL roofer for historic Mediterranean tile estates on the island — clay/concrete tile & metal, coastal-grade, architectural review handled, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Palm Beach, FL roofer for historic Mediterranean tile estates on the island — clay/concrete tile & metal, coastal-grade, architectural review handled, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/palm-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

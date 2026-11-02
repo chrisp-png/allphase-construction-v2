@@ -26,7 +26,7 @@ export default function LantanaMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Lantana, FL | All Phase USA</title>
-        <meta name="description" content="Lantana, FL roofer for this historic fishing village — aging mainland homes to Hypoluxo Island waterfront, shingle, tile & metal, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Lantana, FL roofer for this historic fishing village — aging mainland homes to Hypoluxo Island waterfront, shingle, tile & metal, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/lantana" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

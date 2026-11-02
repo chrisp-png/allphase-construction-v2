@@ -37,7 +37,7 @@ export default function LakeWorthBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Lake Worth, FL (Lake Worth Beach)</title>
-        <meta name="description" content="Roofer in Lake Worth (officially Lake Worth Beach), FL. Historic-district re-roofs, coastal tile, shingle & metal — dual-licensed, HVHZ-spec since 2006. (754) 227-5605." />
+        <meta name="description" content="Roofer in Lake Worth (officially Lake Worth Beach), FL. Historic-district re-roofs, coastal tile, shingle & metal — dual-licensed, HVHZ-spec since 2006." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/lake-worth-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

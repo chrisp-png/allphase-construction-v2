@@ -26,7 +26,7 @@ export default function SeaRanchLakesMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Sea Ranch Lakes, FL | All Phase USA</title>
-        <meta name="description" content="Sea Ranch Lakes, FL roofer for gated oceanfront & lakeside estates — premium tile, standing-seam metal & flat roofs, coastal-grade, HVHZ code. (754) 227-5605." />
+        <meta name="description" content="Sea Ranch Lakes, FL roofer for gated oceanfront & lakeside estates — premium tile, standing-seam metal & flat roofs, coastal-grade, HVHZ code." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/sea-ranch-lakes" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

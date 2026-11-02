@@ -3362,14 +3362,14 @@ function getSEOMetadata(urlPath, cityName = null) {
       // PR-64 CTR rewrite: "Free Inspection" hook (accurate to workflow).
       return {
         title: `Roof Repair ${cityName} FL | Free Inspection`,
-        description: `Roof repair in ${cityName}, FL — booked within 24–48 hrs. Leaks, storm damage & flashing fixes. Dual-licensed (CCC + CGC). (754) 227-5605.`,
+        description: `Roof repair in ${cityName}, FL — booked within 24–48 hrs. Leaks, storm damage & flashing fixes. Dual-licensed (CCC + CGC).`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
     if (normalizedPath.includes('/roof-inspection/')) {
       return {
         title: `${cityName} Roof Inspection | All Phase USA`,
-        description: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor. Call (754) 227-5605.`,
+        description: `Free 21-point roof inspection in ${cityName}, FL. Insurance docs, storm damage & pre-purchase reports. Licensed contractor.`,
         canonical: `https://allphaseconstructionfl.com${normalizedPath}`
       };
     }
@@ -3577,7 +3577,7 @@ async function generateStaticFiles() {
   // This ensures title is controlled by index.html + runtime metadata
   const homeHTML = createHTMLTemplate(
     'Roof Replacement in Broward & Palm Beach | All Phase',
-        'Roof replacement in Broward & Palm Beach County. Dual-licensed, HVHZ-certified. Tile, metal, shingle, flat & commercial. Free estimates. (754) 227-5605.',
+        'Roof replacement in Broward & Palm Beach County. Dual-licensed, HVHZ-certified. Tile, metal, shingle, flat & commercial. Free estimates.',
     'https://allphaseconstructionfl.com',
     homepageContent(),
     [
@@ -4317,7 +4317,7 @@ ${companyAuthorityFooter()}
 
   additionalLocations.forEach(({ path: pagePath, title, city }) => {
     const canonical = `https://allphaseconstructionfl.com${pagePath}`;
-    const description = `Roofing services in ${city}, FL. Roof installation, repair & maintenance. All Phase Construction USA. Licensed & insured. (754) 227-5605.`;
+    const description = `Roofing services in ${city}, FL. Roof installation, repair & maintenance. All Phase Construction USA. Licensed & insured.`;
 
     const content = `
 <section id="seo-static-content" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
@@ -4528,7 +4528,7 @@ ${companyAuthorityFooter()}
               blogDescription = `${blogTitle} — expert insights from All Phase USA, South Florida's dual-licensed roofer.`;
             }
             if (blogDescription.length > 155) {
-              blogDescription = `${blogTitle.substring(0, 90)} — roofing tips from All Phase USA. Call (754) 227-5605.`;
+              blogDescription = `${blogTitle.substring(0, 90)} — roofing tips from All Phase USA.`;
             }
           }
 
@@ -7273,7 +7273,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'lake-worth-corridor-roofing',
       title: 'Lake Worth Corridor Roof Replacement | All Phase USA',
-      description: 'Roof replacement in Lake Worth Corridor — the unincorporated CDP south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code. (754) 227-5605.',
+      description: 'Roof replacement in Lake Worth Corridor — the unincorporated CDP south of Lake Worth Beach. Tile, metal, shingle, flat. PBC wind-code.',
       h1: 'Roof Replacement in Lake Worth Corridor, FL',
       intro: `Lake Worth Corridor is the unincorporated Census-Designated Place that sits south of Lake Worth Beach in Palm Beach County — about 28,000 residents across roughly four square miles between Federal Highway and the Florida Turnpike. Most homeowners here Google "Lake Worth" and end up on Lake Worth Beach pages that don't actually serve them, because the Corridor is a different jurisdiction with different permitting. All Phase Construction USA replaces roofs throughout the Corridor with assemblies built to Palm Beach County wind-code requirements rated for 170+ mph design wind speeds.`,
       sections: `
@@ -7359,7 +7359,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'boca-raton-roof-permit-guide',
       title: 'Boca Raton Roof Permit Guide (2026) | All Phase USA',
-      description: 'Boca Raton roof permit guide — 4–5 week timeline, flat-roof uplift engineering, hurricane-strap verification for pre-2002 homes. (754) 227-5605.',
+      description: 'Boca Raton roof permit guide — 4–5 week timeline, flat-roof uplift engineering, hurricane-strap verification for pre-2002 homes.',
       h1: 'Boca Raton Roof Permit Guide (2026)',
       intro: `Boca Raton runs one of the strictest residential roof permit reviews in Palm Beach County. Three things set Boca apart from neighboring cities: flat-roof systems require sealed engineering for wind uplift before the city will issue a permit, hurricane-strap verification is required for older homes (often involving an engineer entering the attic to physically inspect what is there), and the typical permit timeline runs 4 to 5 weeks rather than the 2 to 3 weeks common elsewhere in Palm Beach County. All Phase Construction USA pulls Boca permits weekly and knows exactly what the city looks for at each stage of the review.`,
       sections: `
@@ -7462,7 +7462,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'pompano-beach-roof-permit-guide',
       title: 'Pompano Beach Roof Permit Guide (2026) | All Phase USA',
-      description: 'Pompano Beach roof permit guide — legally HVHZ Broward jurisdiction, NOA documentation, 2–3 week timeline, secondary water barrier mandated. (754) 227-5605.',
+      description: 'Pompano Beach roof permit guide — legally HVHZ Broward jurisdiction, NOA documentation, 2–3 week timeline, secondary water barrier mandated.',
       h1: 'Pompano Beach Roof Permit Guide (2026)',
       intro: `Pompano Beach sits in Broward County, which means Pompano roof permits run under Florida's High Velocity Hurricane Zone (HVHZ) code — the strictest residential wind-load standard in the state. Three things drive every Pompano roof permit decision: each component of the roof assembly must carry a Florida Notice of Acceptance (NOA), secondary water barrier underlayment is mandated by code on every system, and the enhanced fastening schedule is non-negotiable. Typical permit timeline is 2 to 3 weeks for a straightforward residential re-roof. All Phase Construction USA pulls Pompano permits weekly and knows the building department's specific review cadence at every stage.`,
       sections: `
@@ -7565,7 +7565,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'fort-lauderdale-commercial-roofing',
       title: 'Fort Lauderdale Commercial Roofing | All Phase USA',
-      description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail. (754) 227-5605.',
+      description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail.',
       h1: 'Commercial Roofing in Fort Lauderdale, FL',
       intro: `Fort Lauderdale runs one of the most diverse commercial roof markets in South Florida — Las Olas Boulevard mixed-use, downtown high-rise, the marine industry along the New River and 17th Street Causeway, hospitality on A1A, medical plazas along Andrews Avenue and Commercial Boulevard, light industrial near the airport, and multi-family throughout the city. Every commercial roof in Fort Lauderdale falls under Florida's High Velocity Hurricane Zone (HVHZ) code by law — the same legal baseline as Pompano Beach and the rest of Broward County. All Phase Construction USA installs and replaces commercial roof systems across all of these contexts with HVHZ-compliant TPO, PVC, modified-bitumen, built-up, and metal assemblies, fully documented through Florida Notice of Acceptance.`,
       sections: `
@@ -7672,7 +7672,7 @@ ${companyAuthorityFooter()}
     {
       slug: 'boynton-beach-roof-replacement-guide',
       title: 'Boynton Beach Roof Replacement Cost (2026) | All Phase',
-      description: 'Boynton Beach FL roof replacement cost guide (2026): $13K–$22K shingle, $22K–$40K tile, full permit + HOA timeline. (754) 227-5605.',
+      description: 'Boynton Beach FL roof replacement cost guide (2026): $13K–$22K shingle, $22K–$40K tile, full permit + HOA timeline.',
       h1: 'Boynton Beach Roof Replacement Cost Guide (2026)',
       intro: `Boynton Beach has one of Palm Beach County's most concentrated 55+ community markets, and it shows up in every roof project we quote here. Over half the residential re-roofs we book in Boynton are in HOA-managed communities — Aberdeen, Hunters Run, Indian Spring, Valencia Reserve, Valencia Bay, Canyon Lakes, Palm Isles, Cascade Lakes, Coral Lakes — where the association board drives the timing, the approved-material list, and the work-hour windows. Outside the gates, Boynton's 1980s and early-2000s single-family housing wave has roofs hitting end-of-life right now. This guide explains what a Boynton roof replacement actually looks like in 2026: cost, materials, permit timeline, and the HOA reality every Boynton homeowner navigates.`,
       sections: `

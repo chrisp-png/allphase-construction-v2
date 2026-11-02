@@ -26,7 +26,7 @@ export default function HighlandBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Highland Beach, FL | All Phase USA</title>
-        <meta name="description" content="Highland Beach, FL roofer for oceanfront condos & barrier-island estates — coastal-grade tile, metal & flat roofs, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Highland Beach, FL roofer for oceanfront condos & barrier-island estates — coastal-grade tile, metal & flat roofs, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/highland-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

@@ -26,7 +26,7 @@ export default function WestonMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Weston, FL | All Phase USA</title>
-        <meta name="description" content="Weston, FL roofer for master-planned gated communities — aging 1990s tile roofs, HVHZ-code, HOA review handled, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Weston, FL roofer for master-planned gated communities — aging 1990s tile roofs, HVHZ-code, HOA review handled, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/weston" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

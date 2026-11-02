@@ -26,7 +26,7 @@ export default function MiramarMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Miramar, FL | All Phase USA</title>
-        <meta name="description" content="Miramar, FL roofer for the City of Lakes — master-planned lake communities & older Broward homes, HVHZ-code tile, shingle & metal, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Miramar, FL roofer for the City of Lakes — master-planned lake communities & older Broward homes, HVHZ-code tile, shingle & metal, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/miramar" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

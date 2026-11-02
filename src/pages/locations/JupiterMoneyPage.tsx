@@ -26,7 +26,7 @@ export default function JupiterMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Jupiter, FL | All Phase USA</title>
-        <meta name="description" content="Jupiter, FL coastal & waterfront roofer. Tile & standing-seam metal built for Atlantic salt air and the wind at Florida's farthest-east point, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="Jupiter, FL coastal & waterfront roofer. Tile & standing-seam metal built for Atlantic salt air and the wind at Florida's farthest-east point, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/jupiter" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

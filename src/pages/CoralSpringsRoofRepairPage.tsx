@@ -60,7 +60,7 @@ export default function CoralSpringsRoofRepairPage() {
     <>
       <SEO
         title="Coral Springs Roof Repair | Licensed Roofer in Coral Springs FL"
-        description="Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection: (754) 227-5605."
+        description="Expert roof repair in Coral Springs, Florida. Tile, shingle, metal & flat roof repairs. Licensed Broward/Palm Beach contractor. Free inspection."
         schema={faqSchema}
       />
       <main className="flex-grow pt-20">

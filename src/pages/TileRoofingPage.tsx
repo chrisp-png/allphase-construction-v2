@@ -65,7 +65,7 @@ export default function TileRoofingPage() {
       {/* Schema is injected by prerender-static.mjs at build time — do NOT pass schema here */}
       <SEO
         title="Tile Roofing Broward & Palm Beach | Free Inspection | All Phase"
-        description="Tile roof installation & repair in South Florida. Clay & concrete tile with proper flashings. Free inspection. Call (754) 227-5605."
+        description="Tile roof installation & repair in South Florida. Clay & concrete tile with proper flashings. Free inspection."
         canonical="https://allphaseconstructionfl.com/tile-roofing"
       />
       <div className="min-h-screen bg-zinc-950 text-white">

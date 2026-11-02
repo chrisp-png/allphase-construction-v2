@@ -26,7 +26,7 @@ export default function LauderdaleLakesMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Lauderdale Lakes, FL | All Phase USA</title>
-        <meta name="description" content="Lauderdale Lakes, FL roofer for 1960s homes & condo communities — HVHZ-code shingle, tile & flat roofs, association approvals handled, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Lauderdale Lakes, FL roofer for 1960s homes & condo communities — HVHZ-code shingle, tile & flat roofs, association approvals handled, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/lauderdale-lakes" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

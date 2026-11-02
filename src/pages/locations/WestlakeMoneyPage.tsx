@@ -26,7 +26,7 @@ export default function WestlakeMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Westlake, FL | All Phase USA</title>
-        <meta name="description" content="Westlake, FL roofer for Palm Beach County's newest city — new-construction repairs, storm damage & tile, HVHZ-spec, dual-licensed. (754) 227-5605." />
+        <meta name="description" content="Westlake, FL roofer for Palm Beach County's newest city — new-construction repairs, storm damage & tile, HVHZ-spec, dual-licensed." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/westlake" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

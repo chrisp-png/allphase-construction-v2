@@ -56,7 +56,7 @@ export default function LighthousePointMoneyPage() {
     <>
       <Helmet>
         <title>Roof Replacement Lighthouse Point, FL | All Phase USA</title>
-        <meta name="description" content="Lighthouse Point roof replacement by a dual-licensed, HVHZ-certified contractor. Spanish tile and standing-seam metal specialists for waterfront 33064 homes off Cap\u2019s Place and the Hillsboro Inlet. Free inspection. (754) 227-5605." />
+        <meta name="description" content="Lighthouse Point roof replacement by a dual-licensed, HVHZ-certified contractor. Spanish tile and standing-seam metal specialists for waterfront 33064 homes off Cap\u2019s Place and the Hillsboro Inlet. Free inspection." />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

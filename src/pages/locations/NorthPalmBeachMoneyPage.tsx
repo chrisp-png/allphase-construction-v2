@@ -26,7 +26,7 @@ export default function NorthPalmBeachMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in North Palm Beach, FL | All Phase USA</title>
-        <meta name="description" content="North Palm Beach, FL roofer for waterfront estates, gated communities & Intracoastal condos — coastal-grade tile, metal & flat roofs, HVHZ-spec. (754) 227-5605." />
+        <meta name="description" content="North Palm Beach, FL roofer for waterfront estates, gated communities & Intracoastal condos — coastal-grade tile, metal & flat roofs, HVHZ-spec." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/north-palm-beach" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

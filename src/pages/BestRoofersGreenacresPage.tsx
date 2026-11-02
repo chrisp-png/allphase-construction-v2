@@ -10,7 +10,7 @@ export default function BestRoofersGreenacresPage() {
     <div className="min-h-screen bg-zinc-950">
       <Helmet>
         <title>5 Best Roofers in Greenacres, FL (2026 Reviewed)</title>
-        <meta name="description" content="Top 5 best-rated roofers in Greenacres, FL for 2026 — licensed, HVHZ-certified, and reviewed. See who made the list. Free quote: (754) 227-5605." />
+        <meta name="description" content="Top 5 best-rated roofers in Greenacres, FL for 2026 — licensed, HVHZ-certified, and reviewed. See who made the list. Free quote." />
       </Helmet>
 
       {/* Hero Section */}
