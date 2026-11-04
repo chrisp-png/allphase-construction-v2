@@ -4,7 +4,9 @@ import { Menu, X, ChevronDown, ChevronRight, MapPin, ShieldCheck } from 'lucide-
 import { useAssessmentModal } from '../context/AssessmentModalContext';
 import { EXTERNAL_LINKS } from '../config/links';
 
+import { useCtaPhone } from '../utils/ctaPhone';
 export default function Header() {
+  const cta = useCtaPhone(); // PR-256: route-aware CTA number
   const { openModal } = useAssessmentModal();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -168,12 +170,12 @@ export default function Header() {
               <div className="flex items-center gap-2">
                 <span className="text-white font-medium">Call Now:</span>
                 <a
-                  href="tel:+17542275605"
+                  href={cta.href}
                   onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'header' }); }}
                   className="text-white hover:text-red-400 transition-colors font-bold text-sm"
-                  aria-label="Call us at 754-227-5605"
+                  aria-label={`Call us at ${cta.dashed}`}
                 >
-                  (754) 227-5605
+                  {cta.display}
                 </a>
               </div>
             </div>

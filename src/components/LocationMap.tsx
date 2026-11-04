@@ -1,6 +1,8 @@
 import { MapPin, Phone, Building2 } from 'lucide-react';
 
+import { useCtaPhone } from '../utils/ctaPhone';
 export default function LocationMap() {
+  const cta = useCtaPhone(); // PR-256: route-aware CTA number
   return (
     <section className="py-20 px-6 bg-[#09090b]">
       <div className="max-w-7xl mx-auto">
@@ -133,10 +135,10 @@ export default function LocationMap() {
             </a>
 
             <a
-              href="tel:+17542275605"
+              href={cta.href}
               className="text-gray-300 hover:text-red-400 transition-colors text-lg font-semibold"
             >
-              Call (754) 227-5605
+              Call {cta.display}
             </a>
 
             <p className="text-gray-400 text-sm mt-2">

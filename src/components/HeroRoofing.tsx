@@ -5,6 +5,7 @@ import AISearchRail from './AISearchRail';
 import { useAssessmentModal } from '../context/AssessmentModalContext';
 import { EXTERNAL_LINKS } from '../config/links';
 
+import { useCtaPhone } from '../utils/ctaPhone';
 const urgencyMessages = [
   'Only 3 inspection slots remaining this week',
   'Only 4 inspection slots remaining this week',
@@ -13,6 +14,7 @@ const urgencyMessages = [
 ];
 
 export default function HeroRoofing() {
+  const cta = useCtaPhone(); // PR-256: route-aware CTA number
   // Use a fixed default message to prevent hydration mismatch and CLS
   const [urgencyMessage] = useState('Limited inspection slots available this week');
   const { openModal } = useAssessmentModal();
@@ -183,7 +185,7 @@ export default function HeroRoofing() {
                 </a>
 
                 <a
-                  href="tel:+17542275605"
+                  href={cta.href}
                   onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'hero_trust_bar' }); }}
                   className="p-4 sm:p-5 text-center relative group overflow-hidden transition-all duration-300 hover:bg-red-950/30"
                 >
@@ -193,7 +195,7 @@ export default function HeroRoofing() {
                     <div className="flex items-center justify-center mb-1.5">
                       <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide group-hover:text-red-400 transition-colors duration-300">(754) 227-5605</p>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide group-hover:text-red-400 transition-colors duration-300">{cta.display}</p>
                   </div>
                 </a>
 
@@ -344,10 +346,10 @@ export default function HeroRoofing() {
               <p className="text-center text-sm text-gray-600">
                 Or call{' '}
                 <a
-                  href="tel:+17542275605"
+                  href={cta.href}
                   className="text-red-700 hover:text-red-800 font-semibold"
                 >
-                  (754) 227-5605
+                  {cta.display}
                 </a>
               </p>
             </form>
