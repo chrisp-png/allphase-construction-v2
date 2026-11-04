@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, ArrowRight } from 'lucide-react';
 
+import { useCtaPhone } from '../utils/ctaPhone';
 interface MidPageCTAProps {
   headline?: string;
   subtext?: string;
@@ -10,6 +11,7 @@ export default function MidPageCTA({
   headline = 'Ready to Get Started?',
   subtext = 'Schedule your free 21-point roof inspection with a dual-licensed contractor.',
 }: MidPageCTAProps) {
+  const cta = useCtaPhone(); // PR-256: route-aware CTA number
   return (
     <div className="my-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-2xl border border-gray-700/60 p-8 md:p-10">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -19,11 +21,11 @@ export default function MidPageCTA({
         </div>
         <div className="flex flex-col sm:flex-row gap-3 shrink-0">
           <a
-            href="tel:+17542275605"
+            href={cta.href}
             className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
           >
             <Phone className="w-5 h-5" />
-            (754) 227-5605
+            {cta.display}
           </a>
           <Link
             to="/contact/"

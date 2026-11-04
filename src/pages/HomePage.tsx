@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import HeroRoofing from '../components/HeroRoofing';
 import { EXTERNAL_LINKS } from '../config/links';
 
+import { useCtaPhone } from '../utils/ctaPhone';
 // Lazy-load below-the-fold components to reduce initial JS bundle on mobile
 const HowItWorks = lazy(() => import('../components/HowItWorks'));
 const TrustBadges = lazy(() => import('../components/TrustBadges'));
@@ -23,6 +24,7 @@ const ChamberBadges = lazy(() => import('../components/ChamberBadges'));
 const LocationMap = lazy(() => import('../components/LocationMap'));
 
 export default function HomePage() {
+  const cta = useCtaPhone(); // PR-256: route-aware CTA number
   // Static SEO metadata controlled by NuclearMetadata component
   // FAQPage schema handled at build-time by prerender-static.mjs (no runtime duplicate)
 
@@ -873,7 +875,7 @@ export default function HomePage() {
                   Get Directions
                 </a>
                 <a
-                  href="tel:+17542275605"
+                  href={cta.href}
                   className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-red-600 text-white rounded-lg font-semibold text-sm hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <Phone className="w-4 h-4" />
