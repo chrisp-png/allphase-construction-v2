@@ -40,7 +40,7 @@ export default function JupiterInletColonyMoneyPage() {
               <AtomicAnswer>Jupiter Inlet Colony, FL is a tiny, exclusive town of about 230 homes on the southern tip of Jupiter Island, wrapped by the Atlantic, the Jupiter Inlet, and the Intracoastal, and served by its own police force. Incorporated in 1959, it’s all single-family, all waterfront-adjacent, and all salt air. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs coastal-grade tile and standing-seam metal, voluntarily built to Miami-Dade HVHZ spec, with the discretion a private town expects. Estate roof projects typically start around $20,000.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
-                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
+                <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 258-6135</a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function JupiterInletColonyMoneyPage() {
             <p className="text-zinc-300 mb-8">Free inspection and honest guidance. Serving Jupiter Inlet Colony and all of Palm Beach County.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 258-6135</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving Jupiter Inlet Colony &amp; All of Palm Beach County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>

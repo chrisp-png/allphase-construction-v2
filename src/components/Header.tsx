@@ -168,12 +168,12 @@ export default function Header() {
               <div className="flex items-center gap-2">
                 <span className="text-white font-medium">Call Now:</span>
                 <a
-                  href="tel:+17542275605"
+                  href="tel:+17542586135"
                   onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'header' }); }}
                   className="text-white hover:text-red-400 transition-colors font-bold text-sm"
-                  aria-label="Call us at 754-227-5605"
+                  aria-label="Call us at 754-258-6135"
                 >
-                  (754) 227-5605
+                  (754) 258-6135
                 </a>
               </div>
             </div>

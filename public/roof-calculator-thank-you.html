@@ -46,5 +46,27 @@
     <p class="finance-fine">No credit check to explore options. Takes about 60 seconds.</p>
   </div>
 </div>
+    <!-- PR-254: Meta pixel (dataset 2901809730000637). Re-sends the Lead
+         stashed by trackLeadConversion() with the SAME eventID so Meta
+         dedupes it; direct visits (no stash) fire PageView only. -->
+    <script>
+      window.addEventListener('load', function() {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', '2901809730000637');
+        window.fbq('track', 'PageView');
+        try {
+          var raw = sessionStorage.getItem('apc_meta_lead');
+          if (raw) {
+            var d = JSON.parse(raw);
+            sessionStorage.removeItem('apc_meta_lead');
+            window.fbq('track', 'Lead', { content_name: d.formId }, { eventID: d.eventID });
+          }
+        } catch (e) {}
+      });
+    </script>
 </body>
 </html>

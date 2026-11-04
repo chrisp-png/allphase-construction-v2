@@ -40,7 +40,7 @@ export default function DaniaBeachMoneyPage() {
               <AtomicAnswer>Dania Beach, FL is the oldest city in Broward County — incorporated in 1904, once the ’Tomato Capital of the World,’ and today known for its antique row, fishing pier, and the new Dania Pointe. Its housing runs from century-old bungalows to beachfront condos. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs shingle, tile, metal, and flat roofs to Miami-Dade HVHZ code, legally required here in Broward. Roof replacements run $11,000 to $35,000.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
-                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
+                <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 258-6135</a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function DaniaBeachMoneyPage() {
             <p className="text-zinc-300 mb-8">Free inspection and honest guidance. Serving Dania Beach and all of Broward County.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 258-6135</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving Dania Beach &amp; All of Broward County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>

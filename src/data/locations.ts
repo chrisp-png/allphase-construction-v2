@@ -24,13 +24,13 @@
  * be corrupted before JSON.parse, breaking the Netlify build at ~23s.
  *
  * Do NOT write inside titleOverride / descriptionOverride values:
- *   ❌ "Free inspection: (754) 227-5605"     (broke build 2026-04-06 AND 2026-06-25)
+ *   ❌ "Free inspection: (754) 258-6135"     (broke build 2026-04-06 AND 2026-06-25)
  *   ❌ "Open today: 9 AM"
  *   ❌ "Hours: 24/7"
  *   ❌ "Tip: install metal early"
  *   ❌ "9:00 AM"                              (time strings)
- *   ✅ "Free inspection (754) 227-5605"      (no colon)
- *   ✅ "Free inspection — (754) 227-5605"    (em-dash separator)
+ *   ✅ "Free inspection (754) 258-6135"      (no colon)
+ *   ✅ "Free inspection — (754) 258-6135"    (em-dash separator)
  *
  * Also: use DOUBLE-QUOTED strings only. Single quotes will not parse.
  */

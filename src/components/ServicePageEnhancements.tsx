@@ -165,8 +165,8 @@ export default function ServicePageEnhancements({
           </button>
           <p className="text-center text-[10px] text-gray-500">
             Or call{' '}
-            <a href="tel:+17542275605" className="text-red-600 font-semibold">
-              (754) 227-5605
+            <a href="tel:+17542586135" className="text-red-600 font-semibold">
+              (754) 258-6135
             </a>
           </p>
         </form>

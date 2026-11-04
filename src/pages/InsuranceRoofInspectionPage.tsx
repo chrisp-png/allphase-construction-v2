@@ -82,11 +82,11 @@ export default function InsuranceRoofInspectionPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                (754) 227-5605
+                (754) 258-6135
               </a>
               <Link
                 to="/contact/"
@@ -673,11 +673,11 @@ export default function InsuranceRoofInspectionPage() {
                 </div>
               </div>
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="block text-center bg-white text-slate-900 px-6 py-4 rounded-lg font-semibold hover:bg-slate-100 transition-colors mb-4"
               >
                 <Phone className="w-5 h-5 inline mr-2" />
-                (754) 227-5605
+                (754) 258-6135
               </a>
               <Link
                 to="/contact/"

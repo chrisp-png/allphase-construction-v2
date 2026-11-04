@@ -165,7 +165,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-8 max-w-4xl">
-            Based in Deerfield Beach with 20+ years of experience, we serve Boca Raton, Fort Lauderdale, Coral Springs, Delray Beach, Pompano Beach, Margate, and surrounding communities throughout South Florida. Call (754) 227-5605 to schedule a free roof inspection.
+            Based in Deerfield Beach with 20+ years of experience, we serve Boca Raton, Fort Lauderdale, Coral Springs, Delray Beach, Pompano Beach, Margate, and surrounding communities throughout South Florida. Call (754) 258-6135 to schedule a free roof inspection.
           </p>
 
           {/* CTA Buttons */}
@@ -177,11 +177,11 @@ export default function RoofInspectionPage() {
               Schedule Free Inspection
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2"
             >
               <Phone className="w-6 h-6" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
 
@@ -1665,11 +1665,11 @@ export default function RoofInspectionPage() {
               Schedule Free Inspection
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="px-10 py-5 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-xl flex items-center justify-center gap-2"
             >
               <Phone className="w-6 h-6" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
 

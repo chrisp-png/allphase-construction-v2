@@ -9,11 +9,11 @@ export default function SunriseRoofInspectionPage() {
     document.title = 'Roof Inspection Sunrise FL | All Phase Construction USA';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional roof inspection in Sunrise FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 227-5605.');
+      metaDescription.setAttribute('content', 'Professional roof inspection in Sunrise FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 258-6135.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Professional roof inspection in Sunrise FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 227-5605.';
+      meta.content = 'Professional roof inspection in Sunrise FL. Catch hidden damage before it becomes an emergency. Licensed & insured. Free inspection. Call (754) 258-6135.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -91,8 +91,8 @@ export default function SunriseRoofInspectionPage() {
             All Phase Construction USA offers complimentary, professional roof inspections for homeowners throughout Sunrise, FL &mdash; tailored to the storm, heat, and high humidity conditions that affect roofs in Broward County.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
-              <Phone size={20} /> (754) 227-5605
+            <a href="tel:+17542586135" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              <Phone size={20} /> (754) 258-6135
             </a>
             <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
               Schedule Free Inspection
@@ -410,8 +410,8 @@ export default function SunriseRoofInspectionPage() {
             We serve all Sunrise neighborhoods including Sunrise Golf Village, Inverrary, Sawgrass Mills corridor, and communities throughout western Broward County near Amerant Bank Arena, home of the Florida Panthers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
-              <Phone size={20} /> (754) 227-5605
+            <a href="tel:+17542586135" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              <Phone size={20} /> (754) 258-6135
             </a>
             <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
               Request Free Inspection

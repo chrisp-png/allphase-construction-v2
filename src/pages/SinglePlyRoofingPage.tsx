@@ -31,7 +31,7 @@ export default function SinglePlyRoofingPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "TPO & PVC single-ply roofing for South Florida commercial properties. HVHZ-compliant, energy-efficient. Dual-licensed. (754) 227-5605.");
+      metaDescription.setAttribute('content', "TPO & PVC single-ply roofing for South Florida commercial properties. HVHZ-compliant, energy-efficient. Dual-licensed. (754) 258-6135.");
     }
 
     const serviceScript = document.createElement('script');
@@ -196,7 +196,7 @@ export default function SinglePlyRoofingPage() {
           </p>
 
           <p className="text-lg text-zinc-300 mb-10 leading-relaxed max-w-4xl">
-            Based in Deerfield Beach, our certified installers provide professional TPO and PVC installation with verified quality control — from warehouses and retail centers to condominiums and government facilities. Call (754) 227-5605 for a free single-ply roofing assessment.
+            Based in Deerfield Beach, our certified installers provide professional TPO and PVC installation with verified quality control — from warehouses and retail centers to condominiums and government facilities. Call (754) 258-6135 for a free single-ply roofing assessment.
           </p>
 
           {/* CTAs */}
@@ -208,11 +208,11 @@ export default function SinglePlyRoofingPage() {
               Request Roof Assessment
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-zinc-900 text-white rounded-lg font-semibold hover:bg-zinc-800 transition-all duration-300 border border-zinc-800 text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
         </div>
@@ -970,11 +970,11 @@ export default function SinglePlyRoofingPage() {
               Request Free Assessment
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-zinc-900 text-white rounded-lg font-semibold hover:bg-zinc-800 transition-all duration-300 border border-zinc-800 text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
 

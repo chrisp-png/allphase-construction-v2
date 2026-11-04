@@ -100,10 +100,10 @@ export default function BocaRatonRoofRepairPage() {
                   Schedule a Free Roof Inspection
                 </a>
                 <a
-                  href="tel:+17542275605"
+                  href="tel:+17542586135"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg"
                 >
-                  Call (754) 227-5605
+                  Call (754) 258-6135
                 </a>
               </div>
             </div>
@@ -523,10 +523,10 @@ export default function BocaRatonRoofRepairPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
               >
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
               <a
                 href="#contact"

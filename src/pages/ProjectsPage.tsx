@@ -180,7 +180,7 @@ export default function ProjectsPage() {
               </div>
               <div className="bg-zinc-900 rounded-lg p-4 text-center">
                 <Phone className="w-6 h-6 text-red-500 mx-auto mb-2" />
-                <p className="text-white text-sm font-semibold">(754) 227-5605</p>
+                <p className="text-white text-sm font-semibold">(754) 258-6135</p>
               </div>
             </div>
 
@@ -323,7 +323,7 @@ export default function ProjectsPage() {
                     Ready to Start Your Project?
                   </h2>
                   <p className="text-xl text-white mb-8">
-                    Call <a href="tel:+17542275605" className="font-bold hover:underline">(754) 227-5605</a> for a Free Estimate
+                    Call <a href="tel:+17542586135" className="font-bold hover:underline">(754) 258-6135</a> for a Free Estimate
                   </p>
                   <a
                     href="/contact/"

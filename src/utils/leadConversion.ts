@@ -77,6 +77,19 @@ export function trackLeadConversion(formId: string, userData?: LeadUserData): vo
   // GA4 mirror so leads appear as standard lead events in Analytics
   // (G-PBMBD8QKK7), not only in Google Ads.
   window.gtag('event', 'generate_lead', { form_id: formId });
+  // PR-254: Meta pixel Lead, AFTER the Google calls above (which are
+  // unchanged). Same per-form-id guard, same confirmed-2xx gating.
+  try {
+    // The visitor is redirected to the thank-you page right after this call,
+    // which can cancel the pixel request. Stash an eventID; the thank-you page
+    // re-sends Lead with the SAME eventID and Meta deduplicates the pair.
+    const eventID = `lead-${formId}-${Date.now()}`;
+    try { sessionStorage.setItem('apc_meta_lead', JSON.stringify({ eventID, formId })); } catch { /* storage blocked */ }
+    const fbq = (window as unknown as { fbq?: (...a: unknown[]) => void }).fbq;
+    if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: formId }, { eventID });
+  } catch {
+    /* Meta pixel must never affect lead handling */
+  }
 }
 
 /**

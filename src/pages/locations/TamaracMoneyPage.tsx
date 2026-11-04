@@ -249,11 +249,11 @@ export default function TamaracMoneyPage() {
                 Schedule Free Inspection in Tamarac
               </Link>
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
               >
                 <Phone className="w-5 h-5" />
-                (754) 227-5605
+                (754) 258-6135
               </a>
             </div>
           </div>
@@ -434,12 +434,12 @@ export default function TamaracMoneyPage() {
           </div>
 
           <div className="bg-gradient-to-r from-red-600/10 to-red-500/10 border border-red-600/20 rounded-2xl p-8 sm:p-12 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Call (754) 227-5605 or Request Free Estimate</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Call (754) 258-6135 or Request Free Estimate</h2>
             <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">Serving all of Tamarac from our Deerfield Beach headquarters since 2006. Licenses CCC-1331464 | CGC-1526236.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Link to="/contact/" className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg">Request Free Estimate</Link>
-              <a href="tel:+17542275605" className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700">
-                <Phone className="w-5 h-5" />(754) 227-5605
+              <a href="tel:+17542586135" className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700">
+                <Phone className="w-5 h-5" />(754) 258-6135
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">
