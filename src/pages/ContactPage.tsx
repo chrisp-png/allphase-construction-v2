@@ -10,11 +10,11 @@ export default function ContactPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "Call (754) 227-5605 or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.");
+      metaDescription.setAttribute('content', "Call (754) 258-6135 or request a free estimate online. All Phase Construction USA serves all of Broward & Palm Beach County.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Schedule free roof inspection in Broward or Palm Beach County. 60-minute response during business hours. Trusted contractor. Call (754) 227-5605';
+      meta.content = 'Schedule free roof inspection in Broward or Palm Beach County. 60-minute response during business hours. Trusted contractor. Call (754) 258-6135';
       document.head.appendChild(meta);
     }
   }, []);
@@ -395,11 +395,11 @@ export default function ContactPage() {
                     Need immediate assistance? Call us now.
                   </p>
                   <a
-                    href="tel:+17542275605"
+                    href="tel:+17542586135"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600"
                   >
                     <Phone className="w-5 h-5" />
-                    Call (754) 227-5605
+                    Call (754) 258-6135
                   </a>
                 </div>
               )}
@@ -413,11 +413,11 @@ export default function ContactPage() {
                 Give us a call and speak directly with a roofing expert.
               </p>
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-600 text-lg mb-6"
               >
                 <Phone className="w-6 h-6" />
-                (754) 227-5605
+                (754) 258-6135
               </a>
               <div className="space-y-2 text-gray-400">
                 <div className="flex justify-between border-b border-zinc-800 pb-2">

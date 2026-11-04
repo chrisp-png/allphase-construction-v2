@@ -47,8 +47,8 @@ export default function HoaRoofFinancingPage() {
               <span>Dual-Licensed Since 2006</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
-                <Phone className="w-6 h-6" /> (754) 227-5605
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
+                <Phone className="w-6 h-6" /> (754) 258-6135
               </a>
               <a href="#association-assessment" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
                 <ClipboardList className="w-6 h-6" /> Request an Association Roof Assessment
@@ -182,7 +182,7 @@ export default function HoaRoofFinancingPage() {
                   <button type="submit" className="w-full bg-red-600 text-white py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
                     Request My Free Assessment — We&apos;ll Call You Back Next Business Day
                   </button>
-                  <p className="text-xs text-zinc-500 text-center mt-3">No spam, no obligation, and nothing shared with your owners. Prefer to talk now? <a href="tel:754-227-5605" className="text-red-400 underline">(754) 227-5605</a> — a real person answers 24/7.</p>
+                  <p className="text-xs text-zinc-500 text-center mt-3">No spam, no obligation, and nothing shared with your owners. Prefer to talk now? <a href="tel:754-258-6135" className="text-red-400 underline">(754) 258-6135</a> — a real person answers 24/7.</p>
                 </div>
               </form>
             </div>
@@ -243,8 +243,8 @@ export default function HoaRoofFinancingPage() {
             <h2 className="text-3xl font-bold mb-4">Bring Your Board a Roof and a Way to Pay for It</h2>
             <p className="text-xl text-zinc-300 mb-8">Free association roof assessment, a written scope your owners can understand, and a financing introduction that turns $10,000 up front into a monthly payment.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
-                <Phone className="w-6 h-6" /> (754) 227-5605
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">
+                <Phone className="w-6 h-6" /> (754) 258-6135
               </a>
               <a href="#association-assessment" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700">
                 <ClipboardList className="w-6 h-6" /> Request Your Free Assessment

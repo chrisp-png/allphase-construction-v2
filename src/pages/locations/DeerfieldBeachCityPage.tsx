@@ -249,7 +249,7 @@ export default function DeerfieldBeachCityPage() {
 
               {/* Gold Phone Number */}
               <div className="mt-5">
-                <a href="tel:7542275605" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">(754) 227-5605</a>
+                <a href="tel:7542586135" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">(754) 258-6135</a>
                 <p className="text-gray-400 text-sm mt-1">24/7 Emergency Service Available • Free Estimates</p>
               </div>
 
@@ -289,11 +289,11 @@ export default function DeerfieldBeachCityPage() {
                   Request a Free Roof Assessment
                 </a>
                 <a
-                  href="tel:+17542275605"
+                  href="tel:+17542586135"
                   className="inline-flex items-center justify-center gap-2 border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Call (754) 227-5605
+                  Call (754) 258-6135
                 </a>
               </div>
             </div>
@@ -336,7 +336,7 @@ export default function DeerfieldBeachCityPage() {
                   name="phone"
                   required
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                  placeholder="(754) 227-5605"
+                  placeholder="(754) 258-6135"
                 />
               </div>
 
@@ -763,11 +763,11 @@ export default function DeerfieldBeachCityPage() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:7542275605"
+                href="tel:7542586135"
                 className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
             </div>
           </div>
@@ -1026,10 +1026,10 @@ export default function DeerfieldBeachCityPage() {
                     <h4 className="font-semibold text-white">Phone</h4>
                   </div>
                   <a
-                    href="tel:+17542275605"
+                    href="tel:+17542586135"
                     className="text-gray-400 hover:text-red-600 transition-colors"
                   >
-                    (754) 227-5605
+                    (754) 258-6135
                   </a>
                 </div>
 
@@ -1053,8 +1053,8 @@ export default function DeerfieldBeachCityPage() {
             {/* CTA Line */}
             <p className="text-gray-400 text-center mt-6 text-sm">
               Need directions or want to schedule an inspection? Call{' '}
-              <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-semibold transition-colors">
-                (754) 227-5605
+              <a href="tel:+17542586135" className="text-red-600 hover:text-red-500 font-semibold transition-colors">
+                (754) 258-6135
               </a>{' '}
               or{' '}
               <a href="/roof-inspection/" className="text-red-600 hover:text-red-500 font-semibold transition-colors">

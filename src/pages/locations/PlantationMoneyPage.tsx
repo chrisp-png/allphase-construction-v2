@@ -81,7 +81,7 @@ export default function PlantationMoneyPage() {
         <title>Roof Replacement Plantation, FL | All Phase USA</title>
         <meta
           name="description"
-          content="Experienced roofer in Plantation, FL. Shingle tear-offs, tile re-roofs & flat roof systems. HVHZ-compliant, dual-licensed contractor. (754) 227-5605."
+          content="Experienced roofer in Plantation, FL. Shingle tear-offs, tile re-roofs & flat roof systems. HVHZ-compliant, dual-licensed contractor. (754) 258-6135."
         />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -149,11 +149,11 @@ export default function PlantationMoneyPage() {
                   Schedule Free Inspection in Plantation
                 </Link>
                 <a
-                  href="tel:754-227-5605"
+                  href="tel:754-258-6135"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  (754) 227-5605
+                  (754) 258-6135
                 </a>
               </div>
             </div>
@@ -589,11 +589,11 @@ export default function PlantationMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:+17542275605"
+                  href="tel:+17542586135"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
                 >
                   <Phone className="w-5 h-5" />
-                  (754) 227-5605
+                  (754) 258-6135
                 </a>
               </div>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">

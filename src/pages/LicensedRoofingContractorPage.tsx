@@ -84,11 +84,11 @@ export default function LicensedRoofingContractorPage() {
                 Request Free Roof Assessment
               </Link>
               <a
-                href="tel:7542275605"
+                href="tel:7542586135"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-zinc-800 border border-zinc-700 rounded-lg hover:bg-zinc-700 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
             </div>
           </div>
@@ -382,11 +382,11 @@ export default function LicensedRoofingContractorPage() {
                 Request Free Assessment
               </Link>
               <a
-                href="tel:7542275605"
+                href="tel:7542586135"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-red-800 border-2 border-white rounded-lg hover:bg-red-900 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
             </div>
           </div>

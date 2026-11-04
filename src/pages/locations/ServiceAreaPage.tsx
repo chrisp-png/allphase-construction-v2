@@ -321,11 +321,11 @@ export default function ServiceAreaPage() {
         <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 mb-16">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="flex items-center gap-3 text-white hover:text-red-500 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span className="font-semibold">(754) 227-5605</span>
+              <span className="font-semibold">(754) 258-6135</span>
             </a>
             <div className="hidden md:block w-px h-6 bg-gray-700"></div>
             <Link
@@ -483,8 +483,8 @@ export default function ServiceAreaPage() {
                 </div>
                 <div className="text-center md:text-right">
                   <div className="text-gray-400 text-sm mb-2">Contact Direct</div>
-                  <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-bold text-2xl block transition-colors">
-                    (754) 227-5605
+                  <a href="tel:+17542586135" className="text-red-600 hover:text-red-500 font-bold text-2xl block transition-colors">
+                    (754) 258-6135
                   </a>
                   <div className="text-gray-400 text-sm mt-1">Click to Call</div>
                 </div>
@@ -653,11 +653,11 @@ export default function ServiceAreaPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              Call (754) 227-5605
+              Call (754) 258-6135
             </a>
             <Link
               to="/contact/"

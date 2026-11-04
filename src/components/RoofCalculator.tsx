@@ -552,8 +552,8 @@ export default function RoofCalculator() {
           </div>
 
           <div className="flex justify-center mt-4">
-            <a href="tel:+17542275605" className="text-gray-500 hover:text-white text-sm transition-colors flex items-center gap-1.5">
-              <Phone className="w-4 h-4" /> Prefer to call? (754) 227-5605
+            <a href="tel:+17542586135" className="text-gray-500 hover:text-white text-sm transition-colors flex items-center gap-1.5">
+              <Phone className="w-4 h-4" /> Prefer to call? (754) 258-6135
             </a>
           </div>
         </div>
@@ -797,8 +797,8 @@ export default function RoofCalculator() {
             <a href="/contact/" className="px-10 py-4 bg-red-600 text-white rounded-xl font-bold text-lg hover:bg-red-500 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
               <Calendar className="w-5 h-5" />Schedule My Free Inspection
             </a>
-            <a href="tel:+17542275605" className="px-8 py-4 border-2 border-slate-600 text-gray-300 rounded-xl font-semibold hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
-              <Phone className="w-5 h-5" />Call (754) 227-5605
+            <a href="tel:+17542586135" className="px-8 py-4 border-2 border-slate-600 text-gray-300 rounded-xl font-semibold hover:border-gray-400 hover:text-white transition-all flex items-center justify-center gap-2">
+              <Phone className="w-5 h-5" />Call (754) 258-6135
             </a>
           </div>
           <p className="text-base text-gray-500">During business hours we respond right away; after hours, within the first 60 minutes of the next business day.</p>

@@ -40,7 +40,7 @@ export default function NorthLauderdaleMoneyPage() {
               <AtomicAnswer>North Lauderdale, FL is a five-square-mile Broward County city with an unusual pedigree: it was laid out as ’The City of Tomorrow’ in 1963 by Morris Lapidus, the legendary architect behind Miami Beach’s Fontainebleau. Built out during a 1970s development boom, its affordable single-family neighborhoods are now full of roofs pushing 50 years old. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that builds every North Lauderdale roof to Miami-Dade HVHZ code — legally required here in Broward County. Roof replacements run $10,000 to $28,000.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
-                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
+                <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 258-6135</a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function NorthLauderdaleMoneyPage() {
             <p className="text-zinc-300 mb-8">Free inspection and honest guidance. Serving North Lauderdale and all of Broward County.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 258-6135</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving North Lauderdale &amp; All of Broward County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>

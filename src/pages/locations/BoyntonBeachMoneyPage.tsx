@@ -51,7 +51,7 @@ export default function BoyntonBeachMoneyPage() {
         <title>Roof Replacement Boynton Beach, FL | All Phase USA</title>
         <meta
           name="description"
-          content="Boynton Beach roofing contractor. Dual-licensed Palm Beach & Broward Counties (CCC-1331464, CGC-1526236). Hunters Run, Aberdeen, Leisureville specialist. Since 2006. (754) 227-5605"
+          content="Boynton Beach roofing contractor. Dual-licensed Palm Beach & Broward Counties (CCC-1331464, CGC-1526236). Hunters Run, Aberdeen, Leisureville specialist. Since 2006. (754) 258-6135"
         />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -114,11 +114,11 @@ export default function BoyntonBeachMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-227-5605"
+                  href="tel:754-258-6135"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 227-5605
+                  Call (754) 258-6135
                 </a>
               </div>
 
@@ -533,11 +533,11 @@ export default function BoyntonBeachMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-227-5605"
+                  href="tel:754-258-6135"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-800 transition-all"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 227-5605
+                  Call (754) 258-6135
                 </a>
               </div>
             </div>

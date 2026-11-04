@@ -103,7 +103,7 @@
           <a href="/about-us">About Us</a>
           <a href="/contact">Contact</a>
         </nav>
-        <p>Call <a href="tel:7542275605">(754) 227-5605</a> for a free roof assessment.</p>
+        <p>Call <a href="tel:7542586135">(754) 258-6135</a> for a free roof assessment.</p>
       </div>
     </div>
     <script type="module" src="/src/main.tsx"></script>
@@ -149,6 +149,41 @@
         s.async = true;
         document.body.appendChild(s);
       });
+    </script>
+
+    <!-- PR-254: Meta (Facebook/Instagram) pixel — EXISTING dataset
+         "All Phase USA Dataset" (2901809730000637). Do NOT install the
+         server-side "FaceBook Lead Gen" dataset (1214757956671073) here.
+         Deferred to window.load like gtag + CallRail so it never competes
+         with first paint / hydration. Lead fires on (a) tel: link clicks
+         (here, once per page view) and (b) confirmed form submissions via
+         trackLeadConversion() in src/utils/leadConversion.ts. -->
+    <script>
+      window.addEventListener('load', function() {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', '2901809730000637');
+        window.fbq('track', 'PageView');
+        // SPA route changes: one PageView per client-side navigation.
+        var lastPath = location.pathname;
+        var onNav = function() {
+          if (location.pathname !== lastPath) { lastPath = location.pathname; telLeadSent = false; window.fbq('track', 'PageView'); }
+        };
+        var _push = history.pushState;
+        history.pushState = function() { var r = _push.apply(this, arguments); setTimeout(onNav, 0); return r; };
+        window.addEventListener('popstate', onNav);
+      });
+      // tel: clicks -> Lead (listener is free; fbq only exists after load).
+      var telLeadSent = false;
+      document.addEventListener('click', function(e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+        if (!a || telLeadSent || typeof window.fbq !== 'function') return;
+        telLeadSent = true;
+        window.fbq('track', 'Lead', { content_name: 'Phone Click' });
+      }, true);
     </script>
 
     <!-- Conversion Event Tracking — deferred via requestIdleCallback -->

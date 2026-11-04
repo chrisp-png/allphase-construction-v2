@@ -165,11 +165,11 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               Schedule Inspection
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2"
             >
               <Phone className="w-6 h-6" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
 
@@ -303,11 +303,11 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 Schedule Diagnostic Inspection
               </Link>
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="px-10 py-5 bg-zinc-800 text-white rounded-lg font-bold hover:bg-zinc-700 transition-all duration-300 text-xl flex items-center justify-center gap-3 shadow-xl"
               >
                 <Phone className="w-6 h-6" />
-                (754) 227-5605
+                (754) 258-6135
               </a>
             </div>
             <p className="mt-6 text-sm text-zinc-400">
@@ -656,11 +656,11 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 Schedule Diagnostic Inspection
               </Link>
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="px-12 py-5 bg-zinc-800 text-white rounded-lg font-bold hover:bg-zinc-700 transition-all duration-300 text-xl flex items-center justify-center gap-3 shadow-xl"
               >
                 <Phone className="w-6 h-6" />
-                (754) 227-5605
+                (754) 258-6135
               </a>
             </div>
             <p className="mt-8 text-sm text-zinc-400 max-w-2xl mx-auto">
@@ -1400,11 +1400,11 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               Schedule Inspection
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="px-10 py-5 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-xl flex items-center justify-center gap-2"
             >
               <Phone className="w-6 h-6" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
 

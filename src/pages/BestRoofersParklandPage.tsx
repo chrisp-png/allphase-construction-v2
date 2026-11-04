@@ -62,11 +62,11 @@ export default function BestRoofersParklandPage() {
                 </p>
                 <div className="flex flex-wrap gap-4 mt-4">
                   <a
-                    href="tel:+17542275605"
+                    href="tel:+17542586135"
                     className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition"
                   >
                     <Phone className="w-5 h-5" />
-                    <span>(754) 227-5605</span>
+                    <span>(754) 258-6135</span>
                   </a>
                   <Link
                     to="/locations/parkland"

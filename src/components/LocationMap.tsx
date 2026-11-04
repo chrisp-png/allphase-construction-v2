@@ -94,10 +94,10 @@ export default function LocationMap() {
                   Contact Information
                 </h4>
                 <a
-                  href="tel:+17542275605"
+                  href="tel:+17542586135"
                   className="text-white hover:text-red-400 transition-colors font-semibold text-xl block mb-2"
                 >
-                  (754) 227-5605
+                  (754) 258-6135
                 </a>
                 <p className="text-zinc-400 text-sm">Same-day inspections available</p>
                 <p className="text-zinc-400 text-sm">Serving Broward & Palm Beach Counties</p>
@@ -133,10 +133,10 @@ export default function LocationMap() {
             </a>
 
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="text-gray-300 hover:text-red-400 transition-colors text-lg font-semibold"
             >
-              Call (754) 227-5605
+              Call (754) 258-6135
             </a>
 
             <p className="text-gray-400 text-sm mt-2">

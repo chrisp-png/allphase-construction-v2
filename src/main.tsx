@@ -10,6 +10,12 @@ const rootElement = document.getElementById('root')!;
 // static content so the catch-all route can re-inject it inside
 // the full site layout (Header, Footer, Nav) instead of showing 404.
 const seoStatic = rootElement.querySelector('#seo-static');
+// PR-254: SSR pages (data-ssr="1") no longer carry #seo-static — the full
+// server-rendered page IS the root content. Save it as the chunk-failure
+// fallback too, or PR-252's Soft 404 protection silently stops working.
+if (!seoStatic && rootElement.dataset.ssr === '1' && rootElement.innerHTML.length > 500) {
+  (window as any).__PRERENDERED_HTML__ = rootElement.innerHTML;
+}
 if (seoStatic) {
   (window as any).__PRERENDERED_HTML__ = seoStatic.innerHTML;
   (window as any).__PRERENDERED_TITLE__ = document.title;

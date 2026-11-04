@@ -130,11 +130,11 @@ export default function RoofReplacementPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:7542275605"
+                  href="tel:7542586135"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  (754) 227-5605
+                  (754) 258-6135
                 </a>
                 <a
                   href="/contact"
@@ -669,11 +669,11 @@ export default function RoofReplacementPage() {
                       Professional inspection, detailed written estimate, material recommendations, and HVHZ compliance review.
                     </p>
                     <a
-                      href="tel:7542275605"
+                      href="tel:7542586135"
                       className="block w-full bg-white text-red-600 text-center py-4 px-6 rounded-lg font-bold text-lg mb-4 hover:bg-gray-100 transition-colors"
                     >
                       <Phone className="w-5 h-5 inline mr-2" />
-                      (754) 227-5605
+                      (754) 258-6135
                     </a>
                     <a
                       href="/contact"
@@ -902,11 +902,11 @@ export default function RoofReplacementPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:7542275605"
+                href="tel:7542586135"
                 className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
               <a
                 href="/contact"

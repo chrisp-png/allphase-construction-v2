@@ -40,7 +40,7 @@ export default function PalmBeachCountyHubPage() {
               <AtomicAnswer>Palm Beach County, FL is the second-largest county in Florida by land area — bigger than Rhode Island and Delaware combined — spanning inland ranchland to 47 miles of Atlantic coastline, and home to more than 50 billionaires. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) serving all 21 Palm Beach County municipalities. Palm Beach County isn’t legally in the High-Velocity Hurricane Zone, but we voluntarily build every roof to Miami-Dade HVHZ spec. Roof replacements run $11,000 to $55,000 and up.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
-                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
+                <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 258-6135</a>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function PalmBeachCountyHubPage() {
             <p className="text-zinc-300 mb-8">Free inspection and honest guidance, from our Deerfield Beach office to your door.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
-              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
+              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 258-6135</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving all of Palm Beach County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>

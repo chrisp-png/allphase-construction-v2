@@ -525,10 +525,10 @@ export default function TopRooferPageTemplate({ data }: TopRooferPageTemplatePro
                 Request a Roof Evaluation
               </Link>
               <a
-                href="tel:+17542275605"
+                href="tel:+17542586135"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
               >
-                (754) 227-5605
+                (754) 258-6135
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-300">

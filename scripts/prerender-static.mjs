@@ -1259,10 +1259,14 @@ function applyStaticFallbackPhone(html) {
       part.startsWith('<script')
         ? part
         : part
+            .replaceAll('tel:+17542275605', 'tel:+17542586135')
+            .replaceAll('tel:+1-754-227-5605', 'tel:+1-754-258-6135')
             .replaceAll('tel:7542275605', 'tel:7542586135')
             .replaceAll('tel:754-227-5605', 'tel:754-258-6135')
             .replaceAll('(754) 227-5605', '(754) 258-6135')
             .replaceAll('754-227-5605', '754-258-6135')
+            .replaceAll('754.227.5605', '754.258.6135')
+            .replaceAll('754 227-5605', '754 258-6135')
     )
     .join('');
   return head + swapped;
@@ -3013,7 +3017,17 @@ const NOINDEX_PATHS = new Set([
   '/palm-beach-county-roof-insurance-claim',
 ]);
 
-function createHTMLTemplate(title, description, canonical, content, jsonLdSchema = null, ogDescription = null, ogImage = null, articleMeta = null) {
+// PR-254: every page body gets the textable static fallback number. (754)
+// 227-5605 cannot receive texts and must not be published as a contact
+// number; it stays ONLY in <head> JSON-LD (NAP must match the Google Business
+// Profile) and as a CallRail swap target. applyStaticFallbackPhone is
+// body-only and skips <script> blocks, so schema is never touched. CallRail
+// DNI still swaps (754) 258-6135 at runtime (registered swap target).
+function createHTMLTemplate(...args) {
+  return applyStaticFallbackPhone(createHTMLTemplateRaw(...args));
+}
+
+function createHTMLTemplateRaw(title, description, canonical, content, jsonLdSchema = null, ogDescription = null, ogImage = null, articleMeta = null) {
   const ogDesc = ogDescription || description;
 
   // Load the production template

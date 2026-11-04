@@ -34,7 +34,7 @@ export function buildLandmarkSeo(landmark: Landmark): LandmarkSEO {
 
   // Default templates (POST-April-6 pivot: roof replacement positioning)
   const defaultTitle = `Roof Replacement Near ${name} | ${cityDisplay}, FL | All Phase USA`;
-  const defaultDescription = `Roof replacement serving ${name} and the surrounding ${cityDisplay}, FL area. Tile, metal, shingle & flat. ${complianceLanguage}, dual-licensed CCC + CGC. Free estimate. (754) 227-5605.`;
+  const defaultDescription = `Roof replacement serving ${name} and the surrounding ${cityDisplay}, FL area. Tile, metal, shingle & flat. ${complianceLanguage}, dual-licensed CCC + CGC. Free estimate. (754) 258-6135.`;
   const canonical = `https://allphaseconstructionfl.com/locations/${citySlug}/${slug}`;
 
   const title = landmark.titleOverride || defaultTitle;

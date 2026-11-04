@@ -56,7 +56,7 @@ export default function SouthFloridaRoofingReviewsPage() {
       ],
       why: 'All Phase stands out as the only contractor on this list holding both a roofing license AND a general contractor license, giving them the ability to handle structural repairs, fascia/soffit work, and interior water damage restoration alongside the roof itself. Their insurance claims expertise is unmatched — they walk homeowners through every step of the process. With over 2,500 completed roofs and a focus on Broward and Palm Beach counties, they have deep local knowledge of building department requirements, HOA processes, and the specific challenges of HVHZ construction.',
       website: 'https://allphaseconstructionfl.com',
-      phone: '(754) 227-5605'
+      phone: '(754) 258-6135'
     },
     {
       rank: 2,
@@ -324,8 +324,8 @@ export default function SouthFloridaRoofingReviewsPage() {
                   <Link to="/contact" className="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-500 transition-colors">
                     Get a Free Estimate
                   </Link>
-                  <a href="tel:+17542275605" className="inline-flex items-center px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
-                    Call (754) 227-5605
+                  <a href="tel:+17542586135" className="inline-flex items-center px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg hover:bg-zinc-900 transition-colors">
+                    Call (754) 258-6135
                   </a>
                 </div>
               )}
@@ -469,8 +469,8 @@ export default function SouthFloridaRoofingReviewsPage() {
             <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">
               Schedule Free Inspection
             </Link>
-            <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
-              Call (754) 227-5605
+            <a href="tel:+17542586135" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">
+              Call (754) 258-6135
             </a>
           </div>
           <p className="text-sm text-zinc-300 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>

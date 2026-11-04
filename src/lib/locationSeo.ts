@@ -39,7 +39,7 @@ export function buildLocationSeo(location: Location): LocationSEO {
 
   // Generate defaults from templates (POST-April-6 pivot: roof replacement positioning)
   const defaultTitle = `Roof Replacement ${city}, FL | All Phase USA`;
-  const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. ${complianceLanguage}, 2,500+ projects. Free estimate. (754) 227-5605.`;
+  const defaultDescription = `Roofer in ${city}, FL. Tile, metal, shingle & flat roof replacement. ${complianceLanguage}, 2,500+ projects. Free estimate. (754) 258-6135.`;
   const defaultCanonical = `https://allphaseconstructionfl.com/locations/${slug}`;
   const defaultRobots = 'index, follow';
 

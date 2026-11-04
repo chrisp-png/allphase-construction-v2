@@ -28,7 +28,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "Flat roof moisture intrusion & infrared thermal inspection in South Florida. Detects hidden leaks before reroofing. Dual-licensed contractor. (754) 227-5605.");
+      metaDescription.setAttribute('content', "Flat roof moisture intrusion & infrared thermal inspection in South Florida. Detects hidden leaks before reroofing. Dual-licensed contractor. (754) 258-6135.");
     }
 
     const script = document.createElement('script');
@@ -99,11 +99,11 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
               Schedule Infrared Inspection
             </Link>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2"
             >
               <Phone className="w-6 h-6" />
-              (754) 227-5605
+              (754) 258-6135
             </a>
           </div>
 

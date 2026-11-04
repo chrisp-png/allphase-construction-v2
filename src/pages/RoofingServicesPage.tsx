@@ -138,7 +138,7 @@ const faqData = [
   },
   {
     question: 'How much does a new roof cost in South Florida in 2026?',
-    answer: 'Roof replacement costs in South Florida depend on material, roof size, and code requirements. Typical ranges per square foot: asphalt shingles $5-$8, concrete tile $10-$18, metal standing seam $12-$20, and flat roof systems $8-$15. A standard 2,000 sq ft home usually falls between $12,000 and $35,000 depending on the material chosen. Use our free online roof cost calculator for a quick estimate, or call (754) 227-5605 for a no-obligation assessment.'
+    answer: 'Roof replacement costs in South Florida depend on material, roof size, and code requirements. Typical ranges per square foot: asphalt shingles $5-$8, concrete tile $10-$18, metal standing seam $12-$20, and flat roof systems $8-$15. A standard 2,000 sq ft home usually falls between $12,000 and $35,000 depending on the material chosen. Use our free online roof cost calculator for a quick estimate, or call (754) 258-6135 for a no-obligation assessment.'
   },
   {
     question: 'Is All Phase Construction licensed for hurricane zone roofing?',
@@ -183,11 +183,11 @@ export default function RoofingServicesPage() {
                 Request Free Roof Assessment
               </Link>
               <a
-                href="tel:7542275605"
+                href="tel:7542586135"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-zinc-800 border border-zinc-700 rounded-lg hover:bg-zinc-700 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
             </div>
           </div>
@@ -481,11 +481,11 @@ export default function RoofingServicesPage() {
                 Request Free Assessment
               </Link>
               <a
-                href="tel:7542275605"
+                href="tel:7542586135"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-red-800 border-2 border-white rounded-lg hover:bg-red-900 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call (754) 227-5605
+                Call (754) 258-6135
               </a>
             </div>
           </div>

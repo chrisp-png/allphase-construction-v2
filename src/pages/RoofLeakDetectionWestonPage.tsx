@@ -120,7 +120,7 @@ export default function RoofLeakDetectionWestonPage() {
             <p className="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">Have an active leak? An All Phase project manager will find the actual source and give you a written repair plan within 24 hours.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">Schedule Free Inspection</Link>
-              <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 227-5605</a>
+              <a href="tel:+17542586135" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 258-6135</a>
             </div>
             <p className="text-sm text-zinc-300 mt-4">Serving Weston & All of Broward County | Licensed & Insured | CCC1333509 | CGC1535474</p>
           </section>

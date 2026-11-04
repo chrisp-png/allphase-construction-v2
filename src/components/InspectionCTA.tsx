@@ -46,7 +46,7 @@ export default function InspectionCTA() {
               Request Inspection
             </button>
             <a
-              href="tel:+17542275605"
+              href="tel:+17542586135"
               className="px-6 py-3 bg-zinc-800 text-zinc-200 rounded border border-zinc-700 hover:bg-zinc-750 flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4" />
