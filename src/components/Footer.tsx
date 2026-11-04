@@ -24,11 +24,11 @@ export default function Footer() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'footer_cta' }); }}
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-red-600 hover:bg-red-700 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              Call (754) 258-6135
+              Call (754) 227-5605
             </a>
             <Link
               to="/contact/"
@@ -102,10 +102,10 @@ export default function Footer() {
               <p>Deerfield Beach, FL 33442</p>
               <p>
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="hover:text-red-600 transition-colors"
                 >
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </p>
               <p>

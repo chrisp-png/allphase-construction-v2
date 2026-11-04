@@ -34,7 +34,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'How much does roof replacement cost in Pompano Beach?',
-        answer: 'Roof replacement in Pompano Beach typically ranges from $8,000 to $15,000 for a standard residential home, depending on square footage and material. Homes near Harbor Village and the Intracoastal may cost more due to salt-air-rated material requirements. Call (754) 258-6135 for a free estimate.'
+        answer: 'Roof replacement in Pompano Beach typically ranges from $8,000 to $15,000 for a standard residential home, depending on square footage and material. Homes near Harbor Village and the Intracoastal may cost more due to salt-air-rated material requirements. Call (754) 227-5605 for a free estimate.'
       },
       {
         question: 'What\'s the best roofing material for Pompano Beach\'s salt air?',
@@ -126,7 +126,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'How much does roof replacement cost in Sunrise?',
-        answer: 'Sunrise roof replacement ranges from $8,500 to $14,000 for most residential homes. Sunrise Lakes 55+ community homes tend to be on the lower end due to smaller footprints. Contact All Phase Construction USA at (754) 258-6135 for a free, no-obligation quote.'
+        answer: 'Sunrise roof replacement ranges from $8,500 to $14,000 for most residential homes. Sunrise Lakes 55+ community homes tend to be on the lower end due to smaller footprints. Contact All Phase Construction USA at (754) 227-5605 for a free, no-obligation quote.'
       },
       {
         question: 'What roofing material works best in Sunrise\'s hot, humid climate?',
@@ -218,7 +218,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'How much does roof replacement cost in Davie?',
-        answer: 'Davie roof replacement typically costs $7,500 to $14,000 depending on roof size and material. Equestrian estate properties with barn structures and complex roof lines may run higher. Contact All Phase Construction USA at (754) 258-6135 for a free estimate that includes flood-zone assessment.'
+        answer: 'Davie roof replacement typically costs $7,500 to $14,000 depending on roof size and material. Equestrian estate properties with barn structures and complex roof lines may run higher. Contact All Phase Construction USA at (754) 227-5605 for a free estimate that includes flood-zone assessment.'
       },
       {
         question: 'What\'s the best roofing material for Davie\'s flood-prone areas?',
@@ -356,7 +356,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'What does roof replacement cost in Delray Beach?',
-        answer: 'Delray Beach roof replacement typically costs $8,500 to $17,000 depending on property size, material, and proximity to the coast. Historic district properties near Old School Square may require specialty materials. Call All Phase Construction USA at (754) 258-6135 for a free assessment.'
+        answer: 'Delray Beach roof replacement typically costs $8,500 to $17,000 depending on property size, material, and proximity to the coast. Historic district properties near Old School Square may require specialty materials. Call All Phase Construction USA at (754) 227-5605 for a free assessment.'
       },
       {
         question: 'Which roofing material is best for Delray Beach\'s coastal climate?',
@@ -402,7 +402,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'How much does a new roof cost in Boynton Beach?',
-        answer: 'Boynton Beach roof replacement ranges from $8,000 to $16,500 depending on home size and material. Canyon Lakes and Hunters Run estate homes with complex tile systems cost more. Contact All Phase Construction USA at (754) 258-6135 for a detailed proposal.'
+        answer: 'Boynton Beach roof replacement ranges from $8,000 to $16,500 depending on home size and material. Canyon Lakes and Hunters Run estate homes with complex tile systems cost more. Contact All Phase Construction USA at (754) 227-5605 for a detailed proposal.'
       },
       {
         question: 'Which roofing material performs best in Boynton Beach?',
@@ -448,7 +448,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'What does roof replacement cost in Jupiter, FL?',
-        answer: 'Jupiter roof replacement typically costs $9,000 to $18,000 depending on property size and material. Jonathan\'s Landing estate homes with complex tile systems run higher. Contact All Phase Construction USA at (754) 258-6135 for a free assessment.'
+        answer: 'Jupiter roof replacement typically costs $9,000 to $18,000 depending on property size and material. Jonathan\'s Landing estate homes with complex tile systems run higher. Contact All Phase Construction USA at (754) 227-5605 for a free assessment.'
       },
       {
         question: 'What roofing material is best for Jupiter\'s coastal exposure?',
@@ -540,7 +540,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'How much does roof replacement cost in Royal Palm Beach?',
-        answer: 'Royal Palm Beach roof replacement ranges from $8,000 to $15,000 for most homes. Bella Terra and Bella Sera gated community properties may cost more due to HOA material requirements. Contact All Phase Construction USA at (754) 258-6135 for a free estimate.'
+        answer: 'Royal Palm Beach roof replacement ranges from $8,000 to $15,000 for most homes. Bella Terra and Bella Sera gated community properties may cost more due to HOA material requirements. Contact All Phase Construction USA at (754) 227-5605 for a free estimate.'
       },
       {
         question: 'What roofing material performs best in Royal Palm Beach?',
@@ -586,7 +586,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'What does roof replacement cost in Greenacres?',
-        answer: 'Greenacres roof replacement typically costs $7,500 to $14,000 depending on home size and material. Nautica Isles and River Bridge homes with tile systems tend toward the higher end. Contact All Phase Construction USA at (754) 258-6135 for a free assessment.'
+        answer: 'Greenacres roof replacement typically costs $7,500 to $14,000 depending on home size and material. Nautica Isles and River Bridge homes with tile systems tend toward the higher end. Contact All Phase Construction USA at (754) 227-5605 for a free assessment.'
       },
       {
         question: 'Which roofing material is best for Greenacres\' climate?',
@@ -632,7 +632,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'What does roof replacement cost in Lake Worth Beach?',
-        answer: 'Lake Worth Beach roof replacement ranges from $8,500 to $16,000 depending on roof size and material selection. Historic district properties in College Park may require specialty materials affecting cost. Contact All Phase Construction USA at (754) 258-6135 for a detailed assessment.'
+        answer: 'Lake Worth Beach roof replacement ranges from $8,500 to $16,000 depending on roof size and material selection. Historic district properties in College Park may require specialty materials affecting cost. Contact All Phase Construction USA at (754) 227-5605 for a detailed assessment.'
       },
       {
         question: 'Which roofing material is best for Lake Worth Beach\'s coastal exposure?',
@@ -678,7 +678,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'What does roof replacement cost in Parkland, FL?',
-        answer: 'Parkland roof replacement typically ranges from $18,000 to $45,000+ because of larger estate footprints and premium material specifications. Heron Bay and Parkland Golf & Country Club tile roofs often exceed $30,000 due to tile cost, fastening requirements, and HOA-specified manufacturers. Contact All Phase Construction USA at (754) 258-6135 for a detailed estate-level assessment.'
+        answer: 'Parkland roof replacement typically ranges from $18,000 to $45,000+ because of larger estate footprints and premium material specifications. Heron Bay and Parkland Golf & Country Club tile roofs often exceed $30,000 due to tile cost, fastening requirements, and HOA-specified manufacturers. Contact All Phase Construction USA at (754) 227-5605 for a detailed estate-level assessment.'
       },
       {
         question: 'Do Parkland HOAs like Heron Bay and Parkland Golf & Country Club require approval before roof replacement?',
@@ -724,7 +724,7 @@ export const BEST_ROOFERS_DATA: Record<string, BestRoofersCity> = {
     faqs: [
       {
         question: 'How much does roof replacement cost in Boca Raton?',
-        answer: 'Roof replacement in Boca Raton typically ranges from $12,000 to $35,000 for a standard residential home, depending on square footage, material (tile, metal, or shingle), and HOA requirements. Waterfront properties in Royal Palm or along the Intracoastal may cost more due to salt-air-rated material requirements. Call (754) 258-6135 for a free estimate.'
+        answer: 'Roof replacement in Boca Raton typically ranges from $12,000 to $35,000 for a standard residential home, depending on square footage, material (tile, metal, or shingle), and HOA requirements. Waterfront properties in Royal Palm or along the Intracoastal may cost more due to salt-air-rated material requirements. Call (754) 227-5605 for a free estimate.'
       },
       {
         question: 'What roofing materials work best in Boca Raton?',

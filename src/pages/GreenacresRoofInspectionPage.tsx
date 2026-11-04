@@ -83,8 +83,8 @@ export default function GreenacresRoofInspectionPage() {
             Get the facts about your roof's condition before spending thousands on repairs or replacement you may not need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:+17542586135" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
-              <Phone size={20} /> 754 258-6135
+            <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              <Phone size={20} /> 754 227-5605
             </a>
             <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
               Schedule Free Inspection
@@ -397,8 +397,8 @@ export default function GreenacresRoofInspectionPage() {
             We serve all Greenacres neighborhoods including Chapel Trail, Pembroke Falls, Silver Lakes, Nautica, Pines City Center, and properties along the Pembroke Road corridor near the western Broward edge.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:+17542586135" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
-              <Phone size={20} /> 754 258-6135
+            <a href="tel:+17542275605" className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+              <Phone size={20} /> 754 227-5605
             </a>
             <Link to="/contact" className="flex items-center justify-center gap-2 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors">
               Request Free Inspection

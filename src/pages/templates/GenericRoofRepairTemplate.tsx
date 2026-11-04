@@ -109,10 +109,10 @@ export default function GenericRoofRepairTemplate() {
                   Schedule a Free Roof Inspection
                 </a>
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg"
                 >
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </div>
             </div>

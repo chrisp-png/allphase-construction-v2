@@ -158,6 +158,15 @@ async function main() {
     const html = fs.readFileSync(file, 'utf-8');
     const root = findRoot(html);
     if (!root) { skipped.push([url, 'no #root']); continue; }
+    // PR-255: ad landing pages carry the static fallback number (754) 258-6135
+    // (applyStaticFallbackPhone in prerender-static) instead of the main line,
+    // per the agreement with the ads team. SSR markup comes from the React
+    // components, which use the main number — injecting it would put
+    // (754) 227-5605 back on ad destinations. Keep those pages static.
+    if (/258[-. ]?6135|7542586135/.test(html.slice(root.innerStart, root.innerEnd))) {
+      skipped.push([url, 'ad destination (static fallback number) — kept static']);
+      continue;
+    }
 
     let ssr;
     try {

@@ -177,7 +177,7 @@ export default function TermsPage() {
             <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
               <p className="font-semibold text-white mb-2">All Phase Construction USA, LLC</p>
               <p className="text-zinc-300">Email: <a href="mailto:info@allphaseusa.com" className="text-red-500 hover:text-red-400">info@allphaseusa.com</a></p>
-              <p className="text-zinc-300">Phone: <a href="tel:+17542586135" className="text-red-500 hover:text-red-400">(754) 258-6135</a></p>
+              <p className="text-zinc-300">Phone: <a href="tel:+17542275605" className="text-red-500 hover:text-red-400">(754) 227-5605</a></p>
             </div>
           </section>
         </div>

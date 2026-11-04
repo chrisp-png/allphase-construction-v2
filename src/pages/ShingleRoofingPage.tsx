@@ -38,7 +38,7 @@ export default function ShingleRoofingPage() {
   }, []);
 
   const pageUrl = 'https://allphaseconstructionfl.com/shingle-roofing';
-  const pageDescription = 'Asphalt shingle roofing in South Florida. Premium underlayments, Class 4 impact resistance. Free inspection. Call (754) 258-6135.';
+  const pageDescription = 'Asphalt shingle roofing in South Florida. Premium underlayments, Class 4 impact resistance. Free inspection. Call (754) 227-5605.';
 
   const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
   const serviceSchema = generateServiceSchema(
@@ -90,11 +90,11 @@ export default function ShingleRoofingPage() {
               Schedule Free Shingle Roof Consultation
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
         </div>
@@ -1200,11 +1200,11 @@ export default function ShingleRoofingPage() {
               Schedule Free Consultation
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
 

@@ -15,11 +15,11 @@ export default function StickyConversionBar() {
               <span className="text-white font-semibold text-sm">
                 Need an Expert? Call{' '}
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'sticky_bar_desktop' }); }}
                   className="font-bold hover:text-yellow-300 transition-colors"
                 >
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </span>
             </div>
@@ -38,12 +38,12 @@ export default function StickyConversionBar() {
         <div className="px-3 py-2.5">
           <div className="flex items-center justify-between gap-2">
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'sticky_bar_mobile' }); }}
               className="flex items-center gap-2 bg-white text-red-600 px-4 py-2.5 rounded-lg font-bold text-sm hover:bg-yellow-400 transition-all flex-shrink-0"
             >
               <Phone className="w-4 h-4" />
-              <span>(754) 258-6135</span>
+              <span>(754) 227-5605</span>
             </a>
             <button
               onClick={openModal}

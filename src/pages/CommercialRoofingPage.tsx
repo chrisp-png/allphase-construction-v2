@@ -172,7 +172,7 @@ export default function CommercialRoofingPage() {
             </p>
 
             <p>
-              Based in Deerfield Beach with 20+ years of experience, All Phase has earned the trust of government agencies and institutional clients — including completing a roof coating project for the Fort Lauderdale Building Department itself. When the people who inspect roofs choose us for their own building, it speaks to the quality and code compliance we deliver on every commercial project. Call (754) 258-6135 for a free commercial roof assessment.
+              Based in Deerfield Beach with 20+ years of experience, All Phase has earned the trust of government agencies and institutional clients — including completing a roof coating project for the Fort Lauderdale Building Department itself. When the people who inspect roofs choose us for their own building, it speaks to the quality and code compliance we deliver on every commercial project. Call (754) 227-5605 for a free commercial roof assessment.
             </p>
           </div>
 
@@ -185,11 +185,11 @@ export default function CommercialRoofingPage() {
               Schedule Free Roof Assessment
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-zinc-900 text-white rounded-lg font-semibold hover:bg-zinc-800 transition-all duration-300 border border-zinc-800 text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
         </div>
@@ -1192,11 +1192,11 @@ export default function CommercialRoofingPage() {
               Schedule Free Assessment
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-zinc-900 text-white rounded-lg font-semibold hover:bg-zinc-800 transition-all duration-300 border border-zinc-800 text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
 

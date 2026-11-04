@@ -156,7 +156,7 @@ export default function BestRoofersPompanoBeachPage() {
                   <tr className="bg-red-900/10">
                     <td className="px-4 py-4 font-medium text-white">All Phase Construction USA</td>
                     <td className="px-4 py-4 text-zinc-300">⭐ 4.9</td>
-                    <td className="px-4 py-4 text-zinc-300">(754) 258-6135</td>
+                    <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Coastal Corrosion + Wind Mitigation</td>
                     <td className="px-4 py-4 text-zinc-300">20 years (est. 2006)</td>
                   </tr>
@@ -341,7 +341,7 @@ export default function BestRoofersPompanoBeachPage() {
                   <tr className="bg-red-900/10">
                     <td className="px-3 py-4 font-medium text-white">All Phase Construction USA</td>
                     <td className="px-3 py-4 text-zinc-300">⭐ 4.9</td>
-                    <td className="px-3 py-4 text-zinc-300">(754) 258-6135</td>
+                    <td className="px-3 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-3 py-4 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="px-3 py-4 text-zinc-300">21</td>
                     <td className="px-3 py-4 text-zinc-300">OC Platinum, GAF Gold, IB, TRI, MySafeFloridaHome</td>
@@ -439,7 +439,7 @@ export default function BestRoofersPompanoBeachPage() {
             <div className="flex flex-wrap gap-4 items-center text-zinc-300">
               <span className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-red-500" />
-                <strong>(754) 258-6135</strong>
+                <strong>(754) 227-5605</strong>
               </span>
               <span>|</span>
               <a href="https://allphaseconstructionfl.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">allphaseconstructionfl.com</a>
@@ -996,11 +996,11 @@ export default function BestRoofersPompanoBeachPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+17542586135"
+              href="tel:(754)227-5605"
               className="inline-flex items-center justify-center gap-2 bg-white text-red-900 px-8 py-4 rounded-lg font-bold hover:bg-zinc-100 transition"
             >
               <Phone className="w-5 h-5" />
-              Call All Phase (754) 258-6135
+              Call All Phase (754) 227-5605
             </a>
             <button className="inline-block bg-red-950 text-white px-8 py-4 rounded-lg font-bold hover:bg-red-900 transition border border-red-700">
               Request a Free Estimate

@@ -429,7 +429,7 @@ const faqData: FAQItem[] = [
     question: 'Do you work in Miami-Dade County?',
     answer: (
       <>
-        Our primary service area covers Broward County and Palm Beach County, where we're headquartered in <Link to="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500">Deerfield Beach</Link>. We do not currently service Miami-Dade County. For projects in Broward or Palm Beach, call <a href="tel:+17542586135" className="text-red-600 hover:text-red-500">(754) 258-6135</a> for a free estimate.
+        Our primary service area covers Broward County and Palm Beach County, where we're headquartered in <Link to="/locations/deerfield-beach/" className="text-red-600 hover:text-red-500">Deerfield Beach</Link>. We do not currently service Miami-Dade County. For projects in Broward or Palm Beach, call <a href="tel:+17542275605" className="text-red-600 hover:text-red-500">(754) 227-5605</a> for a free estimate.
       </>
     )
   }
@@ -694,10 +694,10 @@ export default function FrequentlyAskedQuestionsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17542586135"
+                href="tel:+17542275605"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 inline-block"
               >
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
               <Link
                 to="/contact/"

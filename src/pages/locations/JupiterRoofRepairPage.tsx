@@ -6,7 +6,7 @@ export default function JupiterRoofRepairPage() {
   useEffect(() => {
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Roof repair in Jupiter FL — Admiral\'s Cove, The Bear\'s Club, Ranch Colony. Coastal salt-air assemblies. Free inspection (754) 258-6135.');
+      metaDesc.setAttribute('content', 'Roof repair in Jupiter FL — Admiral\'s Cove, The Bear\'s Club, Ranch Colony. Coastal salt-air assemblies. Free inspection (754) 227-5605.');
     }
   }, []);
 
@@ -78,7 +78,7 @@ export default function JupiterRoofRepairPage() {
         <p className="text-gray-300 mb-8">Here is what many Jupiter homeowners do not realize: 60–70% of roof damage cases do not require complete replacement. A quality repair restores your roofing system to its original protective capacity, saving you $8,000 to $17,000 compared to full replacement while extending your roof's service life by 5 to 15 years.</p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link to="/contact" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded font-semibold text-center">Schedule Free Inspection</Link>
-          <a href="tel:7542586135" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded font-semibold text-center">754-258-6135</a>
+          <a href="tel:7542275605" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded font-semibold text-center">754-227-5605</a>
         </div>
       </section>
 
@@ -188,12 +188,12 @@ export default function JupiterRoofRepairPage() {
         <p className="text-gray-300 mb-8">Every day you wait, small problems grow into expensive emergencies. Salt air continues corroding fasteners, small leaks spread into wood rot, and that minor flashing gap becomes a major water intrusion event during the next storm.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Link to="/contact" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded font-semibold">Schedule Free Inspection</Link>
-          <a href="tel:7542586135" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded font-semibold">754-258-6135</a>
+          <a href="tel:7542275605" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded font-semibold">754-227-5605</a>
         </div>
         <div className="text-sm text-gray-400">
           <p className="font-semibold text-white">All Phase Construction USA</p>
           <p>590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
-          <p>📞 <a href="tel:7542586135" className="text-red-400 hover:text-red-300">754-258-6135</a></p>
+          <p>📞 <a href="tel:7542275605" className="text-red-400 hover:text-red-300">754-227-5605</a></p>
           <p>✉️ <a href="mailto:leads@allphaseusa.com" className="text-red-400 hover:text-red-300">leads@allphaseusa.com</a></p>
         </div>
         <p className="mt-6 text-xs text-gray-500">🔒 Fully Licensed | Insured | Family Owned | Serving Jupiter and Palm Beach County</p>

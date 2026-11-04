@@ -19,11 +19,11 @@ export default function MidPageCTA({
         </div>
         <div className="flex flex-col sm:flex-row gap-3 shrink-0">
           <a
-            href="tel:+17542586135"
+            href="tel:+17542275605"
             className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
           >
             <Phone className="w-5 h-5" />
-            (754) 258-6135
+            (754) 227-5605
           </a>
           <Link
             to="/contact/"

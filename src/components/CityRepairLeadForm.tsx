@@ -37,8 +37,8 @@ export default function CityRepairLeadForm({ city, citySlug }: { city: string; c
             <p className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-red-500 shrink-0 mt-0.5" /> 4.9 stars across 160+ Google reviews</p>
             <p className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-red-500 shrink-0 mt-0.5" /> A real person answers 24/7</p>
           </div>
-          <a href="tel:+17542586135" className="mt-5 inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-all">
-            <Phone className="w-5 h-5" /> (754) 258-6135
+          <a href="tel:+17542275605" className="mt-5 inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-all">
+            <Phone className="w-5 h-5" /> (754) 227-5605
           </a>
           <p className="text-zinc-500 text-xs mt-4">Last updated: {LAST_UPDATED}</p>
         </div>

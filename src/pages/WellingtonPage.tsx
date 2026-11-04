@@ -136,7 +136,7 @@ export default function WellingtonPage() {
                 Get a Free Estimate
               </Link>
               <a
-                href="tel:+17542586135"
+                href="tel:+17542275605"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
               >
                 <Phone className="w-5 h-5" />
@@ -393,7 +393,7 @@ export default function WellingtonPage() {
                   Get Your Free Estimate
                 </Link>
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-lg flex items-center justify-center gap-2 border border-zinc-700"
                 >
                   <Phone className="w-5 h-5" />

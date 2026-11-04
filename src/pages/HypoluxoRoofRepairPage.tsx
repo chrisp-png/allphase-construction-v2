@@ -141,11 +141,11 @@ export default function HypoluxoRoofRepairPage() {
               Schedule Free Inspection
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
         </div>
@@ -522,8 +522,8 @@ export default function HypoluxoRoofRepairPage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-red-600 flex-shrink-0" />
-                  <a href="tel:+17542586135" className="text-zinc-300 hover:text-red-500 transition-colors">
-                    (754) 258-6135
+                  <a href="tel:+17542275605" className="text-zinc-300 hover:text-red-500 transition-colors">
+                    (754) 227-5605
                   </a>
                 </div>
 
@@ -596,11 +596,11 @@ export default function HypoluxoRoofRepairPage() {
               Schedule an Inspection
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
           <p className="text-zinc-400">

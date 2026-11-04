@@ -362,10 +362,10 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
               </div>
 
               <a
-                href="tel:+17542586135"
+                href="tel:+17542275605"
                 className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg mb-4"
               >
-                Can't Wait? Call Now: (754) 258-6135
+                Can't Wait? Call Now: (754) 227-5605
               </a>
             </div>
 
@@ -461,7 +461,7 @@ export default function EmbeddedRoofCalculator({ city, county, isHVHZ }: Embedde
                   Schedule Free Roof Inspection in {city}
                 </a>
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="px-8 py-4 bg-slate-700 text-white rounded-lg font-semibold text-lg hover:bg-slate-600 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
                 >
                   <Phone className="w-5 h-5" />

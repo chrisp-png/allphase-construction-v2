@@ -88,11 +88,11 @@ export default function DynamicLandmarkPage() {
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:7542586135"
+                  href="tel:7542275605"
                   className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  <span>Call (754) 258-6135</span>
+                  <span>Call (754) 227-5605</span>
                 </a>
                 <Link
                   to={`/locations/${citySlug}`}

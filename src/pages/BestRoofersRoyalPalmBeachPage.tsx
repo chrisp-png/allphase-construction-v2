@@ -149,7 +149,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
                   <tr className="bg-red-900/10">
                     <td className="px-4 py-4 font-medium text-white">All Phase Construction USA</td>
                     <td className="px-4 py-4 text-zinc-300">⭐ 4.9</td>
-                    <td className="px-4 py-4 text-zinc-300">(754) 258-6135</td>
+                    <td className="px-4 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-4 py-4 text-zinc-300">Wind Mitigation Upgrades + Full Roof Systems</td>
                     <td className="px-4 py-4 text-zinc-300">20 years (est. 2006)</td>
                   </tr>
@@ -330,7 +330,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
                   <tr className="bg-red-900/10">
                     <td className="px-3 py-4 font-medium text-white">All Phase Construction USA</td>
                     <td className="px-3 py-4 text-zinc-300">⭐ 4.9</td>
-                    <td className="px-3 py-4 text-zinc-300">(754) 258-6135</td>
+                    <td className="px-3 py-4 text-zinc-300">(754) 227-5605</td>
                     <td className="px-3 py-4 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="px-3 py-4 text-zinc-300">21</td>
                     <td className="px-3 py-4 text-zinc-300">OC Platinum, GAF Gold, IB, Soprema, TRI</td>
@@ -428,7 +428,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
             <div className="flex flex-wrap gap-4 items-center text-zinc-300">
               <span className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-red-500" />
-                <strong>(754) 258-6135</strong>
+                <strong>(754) 227-5605</strong>
               </span>
               <span>|</span>
               <a href="https://allphaseconstructionfl.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">allphaseconstructionfl.com</a>

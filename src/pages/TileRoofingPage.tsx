@@ -37,7 +37,7 @@ export default function TileRoofingPage() {
   }, []);
 
   const pageUrl = 'https://allphaseconstructionfl.com/tile-roofing';
-  const pageDescription = 'Tile roof installation & repair in South Florida. Clay & concrete tile with proper flashings. Free inspection. Call (754) 258-6135.';
+  const pageDescription = 'Tile roof installation & repair in South Florida. Clay & concrete tile with proper flashings. Free inspection. Call (754) 227-5605.';
 
   // Local Business Schema with AggregateRating
   const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
@@ -108,11 +108,11 @@ export default function TileRoofingPage() {
               Schedule Free Tile Roof Inspection
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
         </div>
@@ -1196,11 +1196,11 @@ export default function TileRoofingPage() {
               Schedule Free Tile Roof Inspection
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
 

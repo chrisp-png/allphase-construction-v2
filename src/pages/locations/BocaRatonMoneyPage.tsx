@@ -126,7 +126,7 @@ export default function BocaRatonMoneyPage() {
                   All Phase Construction USA is a top-rated roofing company in {cityName}, FL — dual-licensed as both a roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236). We provide expert roof replacement, <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">roof repair</Link>, and roof inspection services throughout {cityName} and Palm Beach County. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to South Florida's demanding wind codes for {cityName} homes, estates, and commercial properties.
                 </p>
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  As local experts familiar with {cityName}'s regional roofing styles, HOA requirements, and building codes, our dual-license advantage allows us to handle both roofing systems and underlying structural work that standard roofing-only contractors cannot touch. All Phase Construction USA is fully licensed, bonded, and insured — exceeding Florida's minimum coverage requirements — and provides full documentation upon request. Call (754) 258-6135 for a free roof inspection in {cityName}.
+                  As local experts familiar with {cityName}'s regional roofing styles, HOA requirements, and building codes, our dual-license advantage allows us to handle both roofing systems and underlying structural work that standard roofing-only contractors cannot touch. All Phase Construction USA is fully licensed, bonded, and insured — exceeding Florida's minimum coverage requirements — and provides full documentation upon request. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -138,11 +138,11 @@ export default function BocaRatonMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
               <div className="flex items-center gap-6 text-sm text-zinc-400">
@@ -572,11 +572,11 @@ export default function BocaRatonMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-800 transition-all"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
             </div>

@@ -118,11 +118,11 @@ export default function WestPalmBeachMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </div>
             </div>
@@ -534,11 +534,11 @@ export default function WestPalmBeachMoneyPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:754-258-6135"
+                href="tel:754-227-5605"
                 className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
               >
                 <Phone className="w-6 h-6" />
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
               <Link
                 to="/contact"

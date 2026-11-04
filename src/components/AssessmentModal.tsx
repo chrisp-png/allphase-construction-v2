@@ -276,10 +276,10 @@ export default function AssessmentModal({ isOpen, onClose }: AssessmentModalProp
               <p className="text-center text-sm text-gray-600">
                 Or call{' '}
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="text-red-600 hover:text-red-700 font-semibold"
                 >
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </p>
             </form>
