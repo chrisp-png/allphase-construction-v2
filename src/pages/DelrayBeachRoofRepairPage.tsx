@@ -40,7 +40,7 @@ export default function DelrayBeachRoofRepairPage() {
     },
     {
       question: "How quickly can you respond to emergency roof repairs in Delray Beach?",
-      answer: "We offer 24/7 emergency response with same-day dispatching from our Deerfield Beach headquarters. For active leaks or storm damage, call (754) 258-6135 immediately."
+      answer: "We offer 24/7 emergency response with same-day dispatching from our Deerfield Beach headquarters. For active leaks or storm damage, call (754) 227-5605 immediately."
     },
     {
       question: "How often should I have my roof inspected in Delray Beach?",
@@ -52,7 +52,7 @@ export default function DelrayBeachRoofRepairPage() {
     },
     {
       question: "What should I do if I find a roof leak during a storm?",
-      answer: "Place containers under active drips, move valuables away from affected areas, and call us at (754) 258-6135 for emergency tarping service. Do not attempt to access your roof during active weather. Document damage with photos for your insurance claim."
+      answer: "Place containers under active drips, move valuables away from affected areas, and call us at (754) 227-5605 for emergency tarping service. Do not attempt to access your roof during active weather. Document damage with photos for your insurance claim."
     },
     {
       question: "Can roof repairs help lower my insurance premiums?",
@@ -161,10 +161,10 @@ export default function DelrayBeachRoofRepairPage() {
                   Schedule a Free Roof Inspection
                 </a>
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg"
                 >
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
             </div>
@@ -494,7 +494,7 @@ export default function DelrayBeachRoofRepairPage() {
             </div>
 
             <p className="text-lg text-zinc-300 leading-relaxed">
-              Delaying emergency repairs risks mold growth, electrical hazards, ceiling collapse, and exponentially higher restoration costs. If your roof is actively leaking or has sustained storm damage, call us immediately at <a href="tel:+17542586135" className="text-red-600 hover:text-red-500 font-semibold transition-colors">(754) 258-6135</a>.
+              Delaying emergency repairs risks mold growth, electrical hazards, ceiling collapse, and exponentially higher restoration costs. If your roof is actively leaking or has sustained storm damage, call us immediately at <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 font-semibold transition-colors">(754) 227-5605</a>.
             </p>
           </div>
         </section>
@@ -874,8 +874,8 @@ export default function DelrayBeachRoofRepairPage() {
                 <p className="text-white font-semibold text-lg">All Phase Construction USA</p>
                 <p className="text-zinc-300">590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
                 <p className="text-zinc-300">
-                  <a href="tel:+17542586135" className="text-red-600 hover:text-red-500 transition-colors">
-                    (754) 258-6135
+                  <a href="tel:+17542275605" className="text-red-600 hover:text-red-500 transition-colors">
+                    (754) 227-5605
                   </a>
                 </p>
                 <p className="text-zinc-300">
@@ -893,10 +893,10 @@ export default function DelrayBeachRoofRepairPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17542586135"
+                href="tel:+17542275605"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg shadow-lg shadow-red-600/20"
               >
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
               <a
                 href="#contact"

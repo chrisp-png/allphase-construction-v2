@@ -97,7 +97,7 @@ export default function LighthousePointMoneyPage() {
                   All Phase Construction USA is a top-rated roofing contractor serving {cityName}, FL — a 2.4-square-mile waterfront city of roughly 10,500 residents bounded by the Hillsboro Inlet to the north, the Intracoastal Waterway to the east, Pompano Beach to the south, and Federal Highway to the west, contained entirely within ZIP code 33064. We're dual-licensed as both a Florida State Certified Roofing Contractor (CCC-1331464) and a Certified General Contractor (CGC-1526236), and our crews work in Lighthouse Point regularly — with the bulk of our work being Spanish tile re-roofs, standing-seam metal installations, and high-end repair work on waterfront homes along the city's intricate network of finger canals.
                 </p>
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  Lighthouse Point sits inside Florida's High Velocity Hurricane Zone (HVHZ) and takes the direct brunt of Atlantic wind events with no inland buffer — every roof we install here is engineered to the HVHZ standard with 175+ mph wind ratings, sealed roof decks, enhanced fastening schedules, and Miami-Dade NOA-approved materials, plus the tile underlayment systems and ridge attachment details that hold up in concentrated salt air. Based 3 miles north in Deerfield Beach, we know the Lighthouse Point Building Department workflow on NE 24th Court, the high finish-quality expectations of waterfront homeowners, and exactly how to coordinate a tear-off and re-roof around boat lifts, docks, and the tight setbacks of a 5,000-square-foot home on a 70-foot canal-front lot. Call (754) 258-6135 for a free roof inspection in {cityName}.
+                  Lighthouse Point sits inside Florida's High Velocity Hurricane Zone (HVHZ) and takes the direct brunt of Atlantic wind events with no inland buffer — every roof we install here is engineered to the HVHZ standard with 175+ mph wind ratings, sealed roof decks, enhanced fastening schedules, and Miami-Dade NOA-approved materials, plus the tile underlayment systems and ridge attachment details that hold up in concentrated salt air. Based 3 miles north in Deerfield Beach, we know the Lighthouse Point Building Department workflow on NE 24th Court, the high finish-quality expectations of waterfront homeowners, and exactly how to coordinate a tear-off and re-roof around boat lifts, docks, and the tight setbacks of a 5,000-square-foot home on a 70-foot canal-front lot. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -109,11 +109,11 @@ export default function LighthousePointMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
               <div className="flex items-center gap-6 text-sm text-zinc-400">
@@ -447,11 +447,11 @@ export default function LighthousePointMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-800 transition-all"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
             </div>

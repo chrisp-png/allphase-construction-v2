@@ -43,7 +43,7 @@ export default function RoofRepairPage() {
     window.scrollTo(0, 0);
 
     const pageUrl = 'https://allphaseconstructionfl.com/roof-repair';
-      const pageDescription = 'Expert roof repair in South Florida — hurricane roof damage repair, leak diagnosis, emergency tarping, flashing failures & wind uplift. Dual-licensed. (754) 258-6135.';
+      const pageDescription = 'Expert roof repair in South Florida — hurricane roof damage repair, leak diagnosis, emergency tarping, flashing failures & wind uplift. Dual-licensed. (754) 227-5605.';
 
     // Local Business Schema with AggregateRating
     const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
@@ -269,7 +269,7 @@ export default function RoofRepairPage() {
               All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464, CGC-1526236) providing expert roof repair in South Florida for storm damage, active leaks, wind uplift, and aging roofing systems across Broward and Palm Beach Counties. We don't just patch — we restore your entire roof system to its original intent.
             </p>
             <p className="text-lg text-zinc-300 mb-10 leading-relaxed">
-              From hurricane roof damage repair and emergency tarping to flashing failures and tile cracks, our team diagnoses the root cause and delivers permanent solutions — extending your roof's life, protecting your home, and keeping your insurance coverage intact. Call (754) 258-6135 for a free inspection.
+              From hurricane roof damage repair and emergency tarping to flashing failures and tile cracks, our team diagnoses the root cause and delivers permanent solutions — extending your roof's life, protecting your home, and keeping your insurance coverage intact. Call (754) 227-5605 for a free inspection.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -280,11 +280,11 @@ export default function RoofRepairPage() {
                 Schedule Free Roof Inspection
               </Link>
               <a
-                href="tel:+17542586135"
+                href="tel:+17542275605"
                 className="px-8 py-4 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-center text-lg flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
-                (754) 258-6135
+                (754) 227-5605
               </a>
             </div>
           </div>
@@ -1001,11 +1001,11 @@ export default function RoofRepairPage() {
               Schedule Free Inspection
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="px-10 py-5 bg-zinc-800 text-white rounded-lg font-semibold hover:bg-zinc-700 transition-all duration-300 text-xl flex items-center justify-center gap-2"
             >
               <Phone className="w-6 h-6" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
 

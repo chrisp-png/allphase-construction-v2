@@ -140,8 +140,8 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
 
           {/* Quick Contact */}
           <div className="text-center">
-            <a href="tel:754-258-6135" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">
-              (754) 258-6135
+            <a href="tel:754-227-5605" className="text-2xl font-bold text-[#C5A572] hover:text-white transition-colors">
+              (754) 227-5605
             </a>
             <p className="text-gray-300 mt-2">
               24/7 Emergency Service Available • Free Estimates
@@ -266,9 +266,9 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                   <div className="bg-gray-900 rounded-xl p-6 mt-6 not-prose text-center">
                     <p className="text-white font-semibold text-lg mb-1">Ready to talk to a local Boca Raton roofer?</p>
                     <p className="text-gray-400 text-sm mb-4">Free inspection — no obligation. We answer 24/7.</p>
-                    <a href="tel:754-258-6135" className="inline-flex items-center gap-3 bg-[#C5A572] text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-[#B08D5B] transition-colors">
+                    <a href="tel:754-227-5605" className="inline-flex items-center gap-3 bg-[#C5A572] text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-[#B08D5B] transition-colors">
                       <Phone className="w-6 h-6" />
-                      (754) 258-6135
+                      (754) 227-5605
                     </a>
                   </div>
                 </>
@@ -341,11 +341,11 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="tel:754-258-6135"
+                    href="tel:754-227-5605"
                     className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    Call (754) 258-6135
+                    Call (754) 227-5605
                   </a>
                   <Link
                     to="/contact/"

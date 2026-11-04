@@ -11,11 +11,11 @@ export default function OurLocationPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "All Phase Construction USA - 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 258-6135.");
+      metaDescription.setAttribute('content', "All Phase Construction USA - 590 Goolsby Blvd, Deerfield Beach, FL 33442. Serving all of Broward & Palm Beach County. Call (754) 227-5605.");
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Visit us at 590 Goolsby Blvd, Deerfield Beach, FL. Serving Broward & Palm Beach counties. Call (754) 258-6135 for free roof inspection.';
+      meta.content = 'Visit us at 590 Goolsby Blvd, Deerfield Beach, FL. Serving Broward & Palm Beach counties. Call (754) 227-5605 for free roof inspection.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -82,8 +82,8 @@ export default function OurLocationPage() {
                   <Phone className="w-6 h-6 text-red-600 flex-shrink-0" />
                   <div>
                     <span className="text-gray-400">Phone: </span>
-                    <a href="tel:+17542586135" className="text-white hover:text-red-600 transition-colors font-semibold">
-                      (754) 258-6135
+                    <a href="tel:+17542275605" className="text-white hover:text-red-600 transition-colors font-semibold">
+                      (754) 227-5605
                     </a>
                   </div>
                 </div>
@@ -285,11 +285,11 @@ export default function OurLocationPage() {
               Request Assessment
             </button>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-zinc-700 text-white rounded-lg font-semibold hover:bg-zinc-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-zinc-600"
             >
               <Phone className="w-5 h-5" />
-              Call (754) 258-6135
+              Call (754) 227-5605
             </a>
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function ParklandMoneyPage() {
               <AtomicAnswer>Parkland, FL is Broward County’s upscale, equestrian family suburb — founded in 1963 as a rural sanctuary that famously had no traffic lights or stores until the 1990s, where horses once outnumbered people. Its housing runs from Greg Norman golf estates to no-HOA horse ranches. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs premium tile, standing-seam metal, and shingle to Miami-Dade HVHZ code — legally required here in Broward. Roof replacements run $14,000 to $60,000 and up.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
-                <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 258-6135</a>
+                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function ParklandMoneyPage() {
             <p className="text-zinc-300 mb-8">Free inspection and honest guidance. Serving Parkland and all of Broward County.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
-              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 258-6135</a>
+              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving Parkland &amp; All of Broward County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>

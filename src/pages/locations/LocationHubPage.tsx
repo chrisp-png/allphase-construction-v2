@@ -315,10 +315,10 @@ export default function LocationHubPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-[#C5A572] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#B08D5B] transition-colors"
             >
-              Call (754) 258-6135
+              Call (754) 227-5605
             </a>
             <Link
               to="/contact/"

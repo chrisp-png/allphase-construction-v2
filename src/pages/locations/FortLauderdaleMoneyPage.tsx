@@ -52,7 +52,7 @@ export default function FortLauderdaleMoneyPage() {
         <title>Roof Replacement Fort Lauderdale, FL | All Phase USA</title>
         <meta
           name="description"
-          content="Expert roofing contractor in Fort Lauderdale, FL. Free roof inspection, hurricane damage repair, tile, metal & shingle replacement. Dual-licensed, HVHZ-certified. (754) 258-6135."
+          content="Expert roofing contractor in Fort Lauderdale, FL. Free roof inspection, hurricane damage repair, tile, metal & shingle replacement. Dual-licensed, HVHZ-certified. (754) 227-5605."
         />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -130,7 +130,7 @@ export default function FortLauderdaleMoneyPage() {
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  With a strong reputation throughout {cityName} and South Florida, we also install impact windows and doors for properties seeking complete storm protection upgrades. Call (754) 258-6135 for a free roof inspection in {cityName}.
+                  With a strong reputation throughout {cityName} and South Florida, we also install impact windows and doors for properties seeking complete storm protection upgrades. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
 
@@ -143,11 +143,11 @@ export default function FortLauderdaleMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </div>
             </div>
@@ -679,11 +679,11 @@ export default function FortLauderdaleMoneyPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:754-258-6135"
+                href="tel:754-227-5605"
                 className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
               >
                 <Phone className="w-6 h-6" />
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
               <Link
                 to="/contact"

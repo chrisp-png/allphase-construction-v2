@@ -263,10 +263,10 @@ export default function ServiceAreasHubPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17542586135"
+                href="tel:+17542275605"
                 className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 text-lg"
               >
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
               <Link
                 to="/contact/"

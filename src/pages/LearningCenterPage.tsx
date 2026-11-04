@@ -583,10 +583,10 @@ export default function LearningCenterPage() {
                 Request Free Assessment
               </Link>
               <a
-                href="tel:7542586135"
+                href="tel:7542275605"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-zinc-800 border border-zinc-700 rounded-lg hover:bg-zinc-700 transition-colors"
               >
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
             </div>
           </div>

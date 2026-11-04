@@ -92,11 +92,11 @@ export default function CoralSpringsRoofRepairPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:7542586135"
+                  href="tel:7542275605"
                   className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
                 <Link
                   to="/contact/"
@@ -426,7 +426,7 @@ export default function CoralSpringsRoofRepairPage() {
                   </p>
                   <p className="flex items-center">
                     <Phone className="w-5 h-5 mr-3 text-red-600" />
-                    <a href="tel:7542586135" className="hover:text-red-600 transition-colors">(754) 258-6135</a>
+                    <a href="tel:7542275605" className="hover:text-red-600 transition-colors">(754) 227-5605</a>
                   </p>
                   <p className="flex items-center">
                     <Mail className="w-5 h-5 mr-3 text-red-600" />
@@ -437,7 +437,7 @@ export default function CoralSpringsRoofRepairPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:7542586135"
+                  href="tel:7542275605"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-red-600 font-semibold rounded-lg hover:bg-zinc-100 transition-colors"
                 >
                   <Phone className="w-5 h-5 mr-2" />

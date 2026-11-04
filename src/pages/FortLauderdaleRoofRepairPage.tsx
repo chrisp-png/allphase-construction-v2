@@ -97,11 +97,11 @@ export default function FortLauderdaleRoofRepairPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
                 >
                   <Phone className="w-5 h-5" />
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
                 <Link
                   to="/contact"
@@ -249,11 +249,11 @@ export default function FortLauderdaleRoofRepairPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
                 >
                   <Phone className="w-5 h-5" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
                 <Link
                   to="/contact"

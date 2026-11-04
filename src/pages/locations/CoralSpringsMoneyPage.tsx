@@ -103,7 +103,7 @@ export default function CoralSpringsMoneyPage() {
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  As a family-owned business with deep roots in the {cityName} community, our team was actively replacing tile roofs destroyed throughout {cityName} neighborhoods following Hurricane Wilma in 2005, earning the trust of homeowners across the city during one of South Florida's most challenging recovery periods. Our dual-license advantage means we handle both roofing and structural work that standard roofing-only contractors cannot touch. Call (754) 258-6135 for a free roof inspection in {cityName}.
+                  As a family-owned business with deep roots in the {cityName} community, our team was actively replacing tile roofs destroyed throughout {cityName} neighborhoods following Hurricane Wilma in 2005, earning the trust of homeowners across the city during one of South Florida's most challenging recovery periods. Our dual-license advantage means we handle both roofing and structural work that standard roofing-only contractors cannot touch. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
 
@@ -116,11 +116,11 @@ export default function CoralSpringsMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </div>
             </div>
@@ -555,11 +555,11 @@ export default function CoralSpringsMoneyPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:754-258-6135"
+                href="tel:754-227-5605"
                 className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"
               >
                 <Phone className="w-6 h-6" />
-                Call (754) 258-6135
+                Call (754) 227-5605
               </a>
               <Link
                 to="/contact"

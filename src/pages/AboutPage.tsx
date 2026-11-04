@@ -712,12 +712,12 @@ export default function AboutPage() {
               Schedule Free Inspection
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'about_page_cta' }); }}
               className="flex items-center gap-2 px-8 py-4 bg-zinc-700 text-white rounded-lg font-semibold hover:bg-zinc-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-zinc-600"
             >
               <Phone className="w-5 h-5" />
-              Call (754) 258-6135
+              Call (754) 227-5605
             </a>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 text-gray-400 pt-8 border-t border-zinc-700">

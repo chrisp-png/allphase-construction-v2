@@ -13,13 +13,13 @@ export default function StickyMobileCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-[50] lg:hidden bg-white border-t-2 border-red-600 shadow-2xl pointer-events-auto safe-area-bottom" style={{ touchAction: 'manipulation', paddingBottom: 'env(safe-area-inset-bottom)' }}>
       <div className="flex items-center justify-between px-4 py-3 gap-3">
         <a
-          href="tel:+17542586135"
+          href="tel:+17542275605"
           onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'sticky_mobile_cta' }); }}
           className="flex items-center justify-center gap-2 flex-1 bg-red-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg active:scale-95 cursor-pointer"
           style={{ touchAction: 'manipulation' }}
         >
           <Phone className="w-5 h-5" />
-          <span className="text-sm">Call: 754-258-6135</span>
+          <span className="text-sm">Call: 754-227-5605</span>
         </a>
         <button
           onClick={handleQuoteClick}

@@ -40,7 +40,7 @@ export default function HighlandBeachMoneyPage() {
               <AtomicAnswer>Highland Beach, FL is an exclusive barrier-island town between Delray Beach and Boca Raton — a narrow strip of oceanfront condos and luxury estates between the Atlantic and the Intracoastal, incorporated in 1949. Its homes take salt air on two sides. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs coastal-grade tile, standing-seam metal, and flat roofs, voluntarily built to Miami-Dade HVHZ spec. Roof replacements run $16,000 to $50,000, with condo roofs priced by the building.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
-                <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 258-6135</a>
+                <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function HighlandBeachMoneyPage() {
             <p className="text-zinc-300 mb-8">Free inspection and honest guidance. Serving Highland Beach and all of Palm Beach County.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all">Schedule Free Inspection</a>
-              <a href="tel:754-258-6135" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 258-6135</a>
+              <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-900/40 transition-all">Call (754) 227-5605</a>
             </div>
             <p className="text-sm text-zinc-500 mt-6">Serving Highland Beach &amp; All of Palm Beach County | Licensed &amp; Insured | CCC-1331464 | CGC-1526236</p>
           </div>

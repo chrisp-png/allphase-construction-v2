@@ -198,7 +198,7 @@ function generateServiceHubContent(cityName, citySlug) {
 
     <h2>Get Started Today</h2>
     <p>
-      Ready to schedule a free roof inspection or get an estimate for your ${cityName} roofing project? Call us at <a href="tel:+17542586135">(754) 258-6135</a> or visit our office at 590 Goolsby Blvd, Deerfield Beach, FL 33442.
+      Ready to schedule a free roof inspection or get an estimate for your ${cityName} roofing project? Call us at <a href="tel:+17542275605">(754) 227-5605</a> or visit our office at 590 Goolsby Blvd, Deerfield Beach, FL 33442.
     </p>`;
 }
 
@@ -261,7 +261,7 @@ function generateRoofRepairContent(cityName, citySlug) {
 
     <h2>Emergency Roof Repair in ${cityName}</h2>
     <p>
-      Don't wait when you have a roofing emergency. Call <a href="tel:+17542586135">(754) 258-6135</a> now for immediate assistance. We provide 24/7 emergency roof repair services throughout ${cityName} and surrounding areas.
+      Don't wait when you have a roofing emergency. Call <a href="tel:+17542275605">(754) 227-5605</a> now for immediate assistance. We provide 24/7 emergency roof repair services throughout ${cityName} and surrounding areas.
     </p>`;
 }
 
@@ -317,7 +317,7 @@ function generateRoofInspectionContent(cityName, citySlug) {
 
     <h2>Schedule Your ${cityName} Roof Inspection</h2>
     <p>
-      Get peace of mind with a professional roof inspection. Call <a href="tel:+17542586135">(754) 258-6135</a> to schedule your ${cityName} roof inspection today. Most inspections can be scheduled within 48 hours.
+      Get peace of mind with a professional roof inspection. Call <a href="tel:+17542275605">(754) 227-5605</a> to schedule your ${cityName} roof inspection today. Most inspections can be scheduled within 48 hours.
     </p>`;
 }
 
@@ -413,7 +413,7 @@ function createHybridHTMLPage(title, description, canonical, seoContent, cityNam
 
       <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 0.5rem;">
         <h3>Contact All Phase Construction USA</h3>
-        <p><strong>Phone:</strong> <a href="tel:+17542586135">(754) 258-6135</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+17542275605">(754) 227-5605</a></p>
         <p><strong>Email:</strong> <a href="mailto:leads@allphaseusa.com">leads@allphaseusa.com</a></p>
         <p><strong>Address:</strong> 590 Goolsby Blvd, Deerfield Beach, FL 33442</p>
         <p><strong>Licenses:</strong> CCC-1331464 (Roofing) • CGC-1526236 (General Contractor)</p>

@@ -144,7 +144,7 @@ export default function HeroRoofing() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-200 sm:text-gray-300 mb-6 leading-[1.6] sm:leading-relaxed">
-              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 / CGC-1526236) protecting South Florida homes and businesses since 2006 — tile, metal, shingle, flat and commercial systems, all installed to HVHZ wind code. Call <a href="tel:+17542586135" className="text-white underline hover:text-red-400">(754) 258-6135</a> or request your free assessment.
+              All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 / CGC-1526236) protecting South Florida homes and businesses since 2006 — tile, metal, shingle, flat and commercial systems, all installed to HVHZ wind code. Call <a href="tel:+17542275605" className="text-white underline hover:text-red-400">(754) 227-5605</a> or request your free assessment.
             </p>
 
             {/* PR-71: AI Search Rail — deep-links into ChatGPT, Google AI Mode, Bing Copilot
@@ -183,7 +183,7 @@ export default function HeroRoofing() {
                 </a>
 
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'click_to_call', { event_category: 'engagement', event_label: 'hero_trust_bar' }); }}
                   className="p-4 sm:p-5 text-center relative group overflow-hidden transition-all duration-300 hover:bg-red-950/30"
                 >
@@ -193,7 +193,7 @@ export default function HeroRoofing() {
                     <div className="flex items-center justify-center mb-1.5">
                       <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-1.5 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide group-hover:text-red-400 transition-colors duration-300">(754) 258-6135</p>
+                    <p className="text-xs sm:text-sm text-gray-300 leading-tight font-semibold tracking-wide group-hover:text-red-400 transition-colors duration-300">(754) 227-5605</p>
                   </div>
                 </a>
 
@@ -344,10 +344,10 @@ export default function HeroRoofing() {
               <p className="text-center text-sm text-gray-600">
                 Or call{' '}
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="text-red-700 hover:text-red-800 font-semibold"
                 >
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
               </p>
             </form>

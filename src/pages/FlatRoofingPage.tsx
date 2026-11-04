@@ -158,11 +158,11 @@ export default function FlatRoofingPage() {
               Schedule Free Roof Assessment
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
         </div>
@@ -775,11 +775,11 @@ export default function FlatRoofingPage() {
               Schedule Free Roof Assessment
             </Link>
             <a
-              href="tel:+17542586135"
+              href="tel:+17542275605"
               className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
-              (754) 258-6135
+              (754) 227-5605
             </a>
           </div>
 

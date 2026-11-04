@@ -357,7 +357,7 @@ export default function BlogPostPage() {
       <p>As a dual-licensed South Florida roofing contractor
       (CCC-1331464 &amp; CGC-1526236) serving Broward and Palm Beach Counties,
       we're happy to answer questions about roof replacement, repair, inspection,
-      or maintenance. Call <a href="tel:7542586135">(754) 258-6135</a> or
+      or maintenance. Call <a href="tel:7542275605">(754) 227-5605</a> or
       <a href="/roof-cost-calculator">estimate your roof cost</a> online.</p>
     `;
     return {

@@ -8,7 +8,7 @@ export function trackPhoneClick(location: string) {
     window.gtag('event', 'click_to_call', {
       event_category: 'engagement',
       event_label: location,
-      phone_number: '(754) 258-6135',
+      phone_number: '(754) 227-5605',
     });
   }
 }

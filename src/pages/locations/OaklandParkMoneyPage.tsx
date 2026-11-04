@@ -95,7 +95,7 @@ export default function OaklandParkMoneyPage() {
                   All Phase Construction USA is a top-rated roofing contractor serving {cityName}, FL — a Broward County city of roughly 46,000 residents bordered by Fort Lauderdale to the south, Wilton Manors to the west, and unincorporated Broward to the north, spanning ZIP codes 33308, 33309, 33311, 33334, 33305, and 33306. We're dual-licensed as both a Florida State Certified Roofing Contractor (CCC-1331464) and a Certified General Contractor (CGC-1526236), and our crews work in {cityName} every week — with a particular focus on the city's substantial flat-roof inventory across mid-century single-family homes off NE 38th Street, the small-commercial corridor along the Cypress Creek industrial cluster, and the older shingle and tile stock through Coral Heights and Lake Estates.
                 </p>
                 <p className="text-xl text-zinc-300 leading-relaxed">
-                  {cityName} sits inside Florida's High Velocity Hurricane Zone (HVHZ), so every roof we install here is engineered to the HVHZ standard with 175+ mph wind ratings, sealed roof decks, enhanced fastening schedules, and Miami-Dade NOA-approved materials. The city's heavier-than-average concentration of low-slope and flat roofs means we run TPO, PVC, and modified bitumen jobs in {cityName} alongside the steep-slope tile and shingle replacements — and that mix has shaped our crew training around tapered insulation, internal drainage, and edge metal NOA documentation specifically. Based 7 miles north in Deerfield Beach with 20+ years in the South Florida market, we know the Oakland Park building department workflow at City Hall on NE 12th Avenue and the typical decking conditions on the city's 1950s and 1960s housing stock. Call (754) 258-6135 for a free roof inspection in {cityName}.
+                  {cityName} sits inside Florida's High Velocity Hurricane Zone (HVHZ), so every roof we install here is engineered to the HVHZ standard with 175+ mph wind ratings, sealed roof decks, enhanced fastening schedules, and Miami-Dade NOA-approved materials. The city's heavier-than-average concentration of low-slope and flat roofs means we run TPO, PVC, and modified bitumen jobs in {cityName} alongside the steep-slope tile and shingle replacements — and that mix has shaped our crew training around tapered insulation, internal drainage, and edge metal NOA documentation specifically. Based 7 miles north in Deerfield Beach with 20+ years in the South Florida market, we know the Oakland Park building department workflow at City Hall on NE 12th Avenue and the typical decking conditions on the city's 1950s and 1960s housing stock. Call (754) 227-5605 for a free roof inspection in {cityName}.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -107,11 +107,11 @@ export default function OaklandParkMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
               <div className="flex items-center gap-6 text-sm text-zinc-400">
@@ -445,11 +445,11 @@ export default function OaklandParkMoneyPage() {
                   Schedule Free Inspection
                 </Link>
                 <a
-                  href="tel:754-258-6135"
+                  href="tel:754-227-5605"
                   className="inline-flex items-center justify-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-800 transition-all"
                 >
                   <Phone className="w-6 h-6" />
-                  Call (754) 258-6135
+                  Call (754) 227-5605
                 </a>
               </div>
             </div>

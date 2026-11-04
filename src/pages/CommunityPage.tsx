@@ -190,11 +190,11 @@ export default function CommunityPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  (754) 258-6135
+                  (754) 227-5605
                 </a>
                 <Link
                   to="/about-us"

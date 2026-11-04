@@ -873,7 +873,7 @@ export default function HomePage() {
                   Get Directions
                 </a>
                 <a
-                  href="tel:+17542586135"
+                  href="tel:+17542275605"
                   className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-red-600 text-white rounded-lg font-semibold text-sm hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <Phone className="w-4 h-4" />
