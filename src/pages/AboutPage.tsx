@@ -89,6 +89,7 @@ const teamMembers: TeamMember[] = [
     title: 'Service Manager',
     bio: 'Carlos started as a laborer with All Phase and worked his way up through hard work and dedication. Sponsored by All Phase to obtain his work visa, Carlos is now a proud American citizen. His detailed approach, hands-on experience, and relentless work ethic have made him one of the best in the industry when it comes to diagnosing and stopping roof leaks. Carlos continuously advances his roofing knowledge through manufacturer training and certifications.',
     photoPlaceholder: 'CM',
+    photo: '/team/carlos.webp',
   },
   {
     name: 'Charley Israel',
