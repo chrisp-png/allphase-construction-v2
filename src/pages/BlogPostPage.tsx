@@ -199,7 +199,7 @@ export default function BlogPostPage() {
   const staticPostMeta: Record<string, Partial<BlogPost>> = {
     'my-safe-florida-home-roof-grant-guide': {
       title: 'Is There a Free Roof Replacement Grant in Florida? What My Safe Florida Home Actually Covers',
-      excerpt: 'There is no free roof grant in Florida, but My Safe Florida Home can pay up to $10,000 toward deck attachment, secondary water resistance and roof-to-wall connections done during a re-roof. Who qualifies and how the process works.',
+      excerpt: 'There is no free roof grant in Florida. My Safe Florida Home is a 2-for-1 matching grant up to $10,000 for hurricane-hardening roof work, and the new roof covering can count when it has to come off to do that work. Who qualifies and how it works.',
       author: 'All Phase Construction USA Team',
       published_date: '2026-11-09',
       categories: ['Roofing Education'],
