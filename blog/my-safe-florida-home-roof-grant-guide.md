@@ -20,7 +20,7 @@ If you searched "free roof replacement grant," you have probably already landed 
 - **My Safe Florida Home (MSFH)** is a state program run by the Florida Department of Financial Services. It funds hurricane mitigation improvements on eligible homes, subject to money the Legislature appropriates each year.
 - **The grant is capped at $10,000.**
 - **For most applicants it is a matching grant, not free money.** The state reimburses $2 for every $1 the homeowner pays, up to the $10,000 cap. Low-income homeowners can qualify for a grant of up to $10,000 with no match required.
-- **It pays only for improvements recommended in your program inspection,** and the program lists exactly four. The roof covering itself, the tile, shingles or metal, is not one of them.
+- **It pays only for improvements recommended in your program inspection.** Three of the four are roof work: deck attachment, roof-to-wall connections and a secondary water barrier. When the roof covering has to come off to do that work, the cost of the new covering can count toward the project too, but only if the entire roof section is replaced. Patching and partial repairs never qualify.
 - **Applications open in phases,** starting with the highest-priority groups. Check current status at [mysafeflhome.com](https://mysafeflhome.com) before you plan around a grant.
 
 All Phase Construction USA was one of the original My Safe Florida Home contractors, and we still do program work today. That is why this guide is direct about what the grant will and will not do.
@@ -56,7 +56,13 @@ The fourth is **opening protection**: impact-rated windows, doors, garage doors 
 
 *Secondary water resistance going down over the deck in Boynton Beach, one of the grant-eligible roof improvements.*
 
-Here is why a roof replacement and an MSFH grant so often go together. Once the old roof comes off, the deck is exposed, and deck nailing, the secondary water barrier and roof-to-wall connections are all reachable at the same time. The grant can help pay for those parts of the job. The new roof covering itself is still the homeowner's cost, and the program is explicit that no other construction work is funded.
+Here is why a roof replacement and an MSFH grant so often go together. Once the old roof comes off, the deck is exposed, and deck nailing, the secondary water barrier and roof-to-wall connections are all reachable at the same time.
+
+**Can the grant pay for the new roof itself?** It can, within limits. If the roof covering has to come off to complete a recommended roof improvement, the program counts the cost of replacing it as part of the project, and you choose the covering: tile, metal or shingle. Three conditions apply:
+
+- **The whole roof section has to be replaced,** meaning the entire pitched roof, the entire flat roof, or both, with a qualifying secondary water barrier underneath. Patching or partial repairs are never eligible.
+- **It has to be tied to a recommended improvement.** Replacing the covering on its own, without improving deck attachment or roof-to-wall connections or adding the water barrier, is not eligible.
+- **The $10,000 cap still applies.** On a matching grant the state pays $2 for every $1 you pay, up to $10,000. A full roof replacement usually costs more than that, so the grant reduces the bill rather than replacing it.
 
 Roof-to-wall strapping is structural work. All Phase holds both a roofing license (CCC-1331464) and a general contractor license (CGC-1526236), so one company can handle both the roof and the structural connections.
 
@@ -79,7 +85,7 @@ The program has a set order, and doing things out of order can cost you the gran
 Once a homeowner brings us in, our part of the process looks like this:
 
 - **A site visit and attic assessment come first.** We look at the roof from above and the structure from inside the attic, because roof-to-wall connections and deck attachment cannot be judged from the street.
-- **You get a line-item proposal.** Every grant-eligible improvement is listed separately from the roof covering, so it is clear which items match your inspection report and which are your cost.
+- **You get a line-item proposal.** Every grant-eligible improvement is listed separately, so it is clear which items match your inspection report, and the full project cost is laid out before you apply.
 - **The payment schedule follows milestones,** not one lump sum up front.
 - **The work follows our [10-step roof replacement process](/roof-replacement-process).**
 
@@ -101,13 +107,13 @@ Many homeowners searching for a roof grant will find their home is too new, thei
 ## Frequently Asked Questions
 
 **Is there a free roof replacement grant in Florida?**
-Not in the sense most people mean. My Safe Florida Home is the main state program. For most applicants it is a matching grant capped at $10,000, and it pays for specific hurricane-hardening items, not the roof covering. Low-income homeowners can qualify for up to $10,000 with no match.
+Not in the sense most people mean. My Safe Florida Home is the main state program. For most applicants it is a matching grant capped at $10,000: the state pays $2 for every $1 you pay, and reimburses you after the final inspection. Low-income homeowners can qualify for up to $10,000 with no match.
 
 **How much does My Safe Florida Home pay?**
 Up to $10,000. For matching grants, the state pays $2 for every $1 the homeowner pays, until it reaches $10,000.
 
 **Will the grant pay for my whole new roof?**
-No. The roof covering is not an eligible improvement. The grant can help pay for deck re-nailing, secondary water resistance and roof-to-wall connections, which are done during a replacement. You can estimate your total with our [roof cost calculator](/roof-cost-calculator).
+It can help pay for one, but rarely all of it. When the covering has to come off to complete a recommended roof improvement, the replacement can count toward the project, as long as the entire pitched or flat roof is replaced with a secondary water barrier. The grant still tops out at $10,000, and a full replacement usually costs more. You can estimate your total with our [roof cost calculator](/roof-cost-calculator).
 
 **Can I start the work and apply afterward?**
 No. Work started before written grant approval is disqualified from reimbursement.
@@ -144,4 +150,4 @@ Whether you are waiting on a My Safe Florida Home inspection, holding an approve
 
 ---
 
-*Program details in this guide come from the My Safe Florida Home program's published rules and FAQ as of November 2026. Rules and funding change with each legislative session; confirm current requirements at [mysafeflhome.com](https://mysafeflhome.com).*
+*Program details in this guide come from the My Safe Florida Home program's published rules, FAQ and 2025-2026 Homeowner's Guide as of November 2026. Updated November 9, 2026 to correct how roof covering replacement is treated. Rules and funding change with each legislative session; confirm current requirements at [mysafeflhome.com](https://mysafeflhome.com).*
