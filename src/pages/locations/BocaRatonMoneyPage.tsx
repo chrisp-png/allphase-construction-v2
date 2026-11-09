@@ -39,11 +39,7 @@ export default function BocaRatonMoneyPage() {
     cityName,
     stateName: 'Florida',
     latitude: coordinates?.latitude,
-    longitude: coordinates?.longitude,
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '160'
-    }
+    longitude: coordinates?.longitude
   });
   // Expertise.com (Forbes) award as a structured credential — Boca-specific
   const localBusinessSchema = {

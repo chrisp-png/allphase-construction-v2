@@ -34,11 +34,7 @@ export default function DelrayBeachMoneyPage() {
       cityName: 'Delray Beach',
       stateName: 'Florida',
       latitude: coordinates?.latitude,
-      longitude: coordinates?.longitude,
-      aggregateRating: {
-        ratingValue: '4.9',
-        reviewCount: '160'
-      }
+      longitude: coordinates?.longitude
     });
 
     // Breadcrumb Schema
