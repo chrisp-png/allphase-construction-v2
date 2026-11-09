@@ -197,6 +197,18 @@ export default function BlogPostPage() {
   // Hoisted so the static-synthesis path can be reached from multiple branches
   // (Supabase returned null OR Supabase threw).
   const staticPostMeta: Record<string, Partial<BlogPost>> = {
+    'my-safe-florida-home-roof-grant-guide': {
+      title: 'Is There a Free Roof Replacement Grant in Florida? What My Safe Florida Home Actually Covers',
+      excerpt: 'There is no free roof grant in Florida, but My Safe Florida Home can pay up to $10,000 toward deck attachment, secondary water resistance and roof-to-wall connections done during a re-roof. Who qualifies and how the process works.',
+      author: 'All Phase Construction USA Team',
+      published_date: '2026-11-09',
+      categories: ['Roofing Education'],
+      tags: ['My Safe Florida Home', 'Roof Grants', 'Hurricane Mitigation', 'Secondary Water Resistance', 'Roof-to-Wall Connections', 'Florida'],
+      featured_image: '/projects/secondary-water-resistance-underlayment-over-roof-deck-boynton-beach-all-phase-usa.webp',
+      meta_title: "My Safe Florida Home Grants: A Roofer's 2026 Guide",
+      meta_description: 'Is there a free roof replacement grant in Florida? What My Safe Florida Home actually pays for, who qualifies, and how the roof process works.',
+      faqs: [],
+    },
     'quiet-hurricane-season-roof-damage-south-florida': {
       title: "The Quiet Hurricane Season Didn't Save Your Roof",
       excerpt: '2026 was the quietest Atlantic hurricane season in a century, and South Florida roofs aged anyway. Three October jobs show what heat, salt air and trapped humidity did while nobody was looking.',

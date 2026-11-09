@@ -4489,6 +4489,16 @@ ${companyAuthorityFooter()}
             pageTitle = trimmedTitle.replace(/[\s\-–—:,]+$/, '').replace(/\s+(?:the|a|an|and|or|of|in|to|for|with|on|at|by|vs)$/i, '').replace(/[\s\-–—:,]+$/, '').trim() + suffix;
           }
 
+          // PR-258: an authored `Meta Title` (markdown posts with structured
+          // meta, see build-blog-content.mjs) wins over the H1-derived title.
+          // Appends the brand suffix only if it still fits in 60 chars.
+          const authoredTitle = (entry && typeof entry === 'object' && entry.meta && entry.meta.title)
+            ? String(entry.meta.title).replace(/\s+/g, ' ').trim() : '';
+          if (authoredTitle && authoredTitle.length <= 65) {
+            pageTitle = (/\|\s*All Phase/i.test(authoredTitle) || (authoredTitle + suffix).length > 60)
+              ? authoredTitle : authoredTitle + suffix;
+          }
+
           const blogCanonical = `https://allphaseconstructionfl.com/blog/${slug}`;
           // Build blog description: prefer a real excerpt from the article body
           // (first text, tags stripped) so markdown posts get a unique meta
