@@ -41,6 +41,39 @@ export default function BlogIndexPage() {
     setPage(1);
   }, [selectedCategory, posts]);
 
+  // PR-260: posts published from the repo (blog/*.md with a `Meta Published`
+  // date, compiled into /blog-content.json) are not in Supabase, so the index
+  // never listed them (e.g. the Oct 22 hurricane post and the MSFH guide).
+  // Merge them in; Supabase wins on any slug collision.
+  const fetchRepoPosts = async (): Promise<BlogPost[]> => {
+    try {
+      const res = await fetch('/blog-content.json');
+      if (!res.ok) return [];
+      const json = (await res.json()) as Record<string, { title?: string; meta?: { title?: string; description?: string; published?: string; image?: string } }>;
+      return Object.entries(json)
+        .filter(([, e]) => e && e.meta && e.meta.published)
+        .map(([slug, e]) => ({
+          id: `repo-${slug}`,
+          title: e.title || (e.meta!.title || slug).replace(/\s*\|\s*All Phase.*$/i, ''),
+          slug,
+          excerpt: e.meta!.description || '',
+          featured_image: e.meta!.image || '',
+          author: 'All Phase Construction USA Team',
+          published_date: e.meta!.published!,
+          categories: ['Roofing Education'],
+          tags: [],
+        }));
+    } catch {
+      return [];
+    }
+  };
+
+  const mergePosts = (db: BlogPost[], repo: BlogPost[]): BlogPost[] => {
+    const seen = new Set(db.map(p => p.slug));
+    return [...db, ...repo.filter(p => !seen.has(p.slug))]
+      .sort((a, b) => (b.published_date || '').localeCompare(a.published_date || ''));
+  };
+
   const fetchPosts = async () => {
     try {
       const { data, error } = await supabase
@@ -55,11 +88,12 @@ export default function BlogIndexPage() {
       }
 
       if (data) {
-        setPosts(data);
-        setFilteredPosts(data);
+        const merged = mergePosts(data as BlogPost[], await fetchRepoPosts());
+        setPosts(merged);
+        setFilteredPosts(merged);
 
         const allCategories = new Set<string>();
-        data.forEach(post => {
+        merged.forEach(post => {
           if (Array.isArray(post.categories)) {
             post.categories.forEach(cat => allCategories.add(cat));
           }
@@ -70,7 +104,15 @@ export default function BlogIndexPage() {
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error occurred';
       console.error('Error fetching blog posts:', err);
-      setError(errorMessage);
+      // Supabase down: still show the repo-published posts rather than an error.
+      const repo = await fetchRepoPosts();
+      if (repo.length) {
+        setPosts(repo);
+        setFilteredPosts(repo);
+        setCategories(['Roofing Education']);
+      } else {
+        setError(errorMessage);
+      }
     } finally {
       setLoading(false);
     }
