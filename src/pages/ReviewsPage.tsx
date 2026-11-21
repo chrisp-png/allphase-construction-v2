@@ -5,6 +5,7 @@ import { VIDEOS } from '../data/videos';
 import { generateVideoObjectSchema } from '../utils/videoObjectSchema';
 import { Helmet } from 'react-helmet-async';
 import { Star, ChevronLeft, ChevronRight, Phone, CheckCircle } from 'lucide-react';
+import PreferredSourceButton from '../components/PreferredSourceButton';
 
 const reviews = [
   {
@@ -246,6 +247,17 @@ export default function ReviewsPage() {
           >
             Request Customer References
           </Link>
+        </div>
+
+        {/* PR-263: Google Preferred Sources (past customers). Housekeeping, not a ranking play. */}
+        <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 lg:p-10 text-center mb-16">
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-3">
+            Already an All Phase Customer?
+          </h2>
+          <p className="text-lg text-gray-400 mb-6 max-w-2xl mx-auto">
+            Add us as a preferred source on Google, and our roofing guides get a “preferred” label when they show up in your Google results.
+          </p>
+          <PreferredSourceButton />
         </div>
 
         <div className="bg-gradient-to-r from-zinc-900 to-zinc-800 border border-zinc-800 rounded-xl p-8 lg:p-12 text-center">
