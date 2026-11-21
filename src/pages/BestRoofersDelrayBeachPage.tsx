@@ -92,7 +92,7 @@ export default function BestRoofersDelrayBeachPage() {
                     <td className="px-6 py-4 text-sm text-zinc-400">Verbal quote only, no paperwork</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-zinc-300">Dual-licensed (Roofing + General Contractor)</td>
+                    <td className="px-6 py-4 text-sm text-zinc-300">Dual-licensed: roofing + roof structural (CCC + CGC)</td>
                     <td className="px-6 py-4 text-sm text-zinc-400">Single-scope operator with no structural authority</td>
                   </tr>
                   <tr>
@@ -122,7 +122,7 @@ export default function BestRoofersDelrayBeachPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — #1 pick. Dual-licensed roofer + general contractor specializing in coastal salt-air protection and wind mitigation upgrades that lower your insurance premium. 20 years serving Delray Beach from Pompano Beach HQ.
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — #1 pick. Dual-licensed roofer specializing in coastal salt-air protection and wind mitigation upgrades that lower your insurance premium. 20 years serving Delray Beach from Pompano Beach HQ.
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">SK Quality Roofing</strong> ⭐ Strong Palm Beach County reputation — Trusted residential and commercial roofer in Delray Beach with focus on quality materials and craftsmanship in coastal conditions.
@@ -350,7 +350,7 @@ export default function BestRoofersDelrayBeachPage() {
                     <td className="px-3 py-4 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="px-3 py-4 text-zinc-300">21</td>
                     <td className="px-3 py-4 text-zinc-300">Marine-grade fasteners, galvanic corrosion prevention</td>
-                    <td className="px-3 py-4 text-zinc-300">Dual-licensed GC + roofer; lowers insurance premiums</td>
+                    <td className="px-3 py-4 text-zinc-300">Dual-licensed roofer (CCC + CGC); lowers insurance premiums</td>
                   </tr>
                   <tr>
                     <td className="px-3 py-4 font-medium text-white">SK Quality Roofing</td>

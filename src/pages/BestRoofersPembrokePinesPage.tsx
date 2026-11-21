@@ -88,7 +88,7 @@ export default function BestRoofersPembrokePinesPage() {
                     <td className="px-6 py-4 text-sm text-zinc-400">Verbal quote only, no paperwork</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-zinc-300">Dual-licensed (Roofing + General Contractor)</td>
+                    <td className="px-6 py-4 text-sm text-zinc-300">Dual-licensed: roofing + roof structural (CCC + CGC)</td>
                     <td className="px-6 py-4 text-sm text-zinc-400">Single-scope operator with no structural authority</td>
                   </tr>
                   <tr>
@@ -122,7 +122,7 @@ export default function BestRoofersPembrokePinesPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium. 20 years serving Pembroke Pines from Pompano Beach HQ. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer (roof structural work in-house) with wind mitigation upgrades that lower your insurance premium. 20 years serving Pembroke Pines from Pompano Beach HQ. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Air Force Roofing</strong> ⭐ Established Broward/Miami-Dade roofer — Residential and commercial expertise with quality installations and strong local reputation. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
@@ -341,7 +341,7 @@ export default function BestRoofersPembrokePinesPage() {
                     <td className="px-3 py-4 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="px-3 py-4 text-zinc-300">21</td>
                     <td className="px-3 py-4 text-zinc-300">OC Platinum, GAF Gold, IB, TRI, MySafeFloridaHome</td>
-                    <td className="px-3 py-4 text-zinc-300">Dual-licensed GC + roofer; lowers insurance premiums</td>
+                    <td className="px-3 py-4 text-zinc-300">Dual-licensed roofer (CCC + CGC); lowers insurance premiums</td>
                   </tr>
                   <tr>
                     <td className="px-3 py-4 font-medium text-white">Air Force Roofing</td>

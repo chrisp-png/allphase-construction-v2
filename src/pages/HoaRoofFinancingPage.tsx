@@ -219,7 +219,7 @@ export default function HoaRoofFinancingPage() {
               Financing is not free money, and boards deserve the honest version. Closing fees (about 5%) and a debt-service coverage reserve are financed into the loan, rates are fixed but real (illustrative examples use 8.99%), and a special assessment still exists legally — it is converted into manageable monthly payments rather than eliminated. What financing buys is the ability to do mandatory work now, at today&apos;s construction prices, without a five-figure demand on every owner.
             </p>
             <p className="text-zinc-400 text-sm">
-              All Phase Construction USA is a roofing and general contractor, not a lender. Financing is provided by a licensed third-party lending partner; all loan terms, approvals, rates, and payments are determined solely by the lender's underwriting.
+              All Phase Construction USA is a roofing contractor, not a lender. Financing is provided by a licensed third-party lending partner; all loan terms, approvals, rates, and payments are determined solely by the lender's underwriting.
             </p>
           </div>
         </section>

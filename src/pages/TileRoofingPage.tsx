@@ -171,7 +171,7 @@ export default function TileRoofingPage() {
           </div>
           <div className="flex items-center gap-3">
             <BadgeCheck className="w-6 h-6 text-red-500 flex-shrink-0" />
-            <span className="text-sm md:text-base text-zinc-300">Dual Licensed (GC + CCC)</span>
+            <span className="text-sm md:text-base text-zinc-300">Dual Licensed (CCC + CGC)</span>
           </div>
           <div className="flex items-center gap-3">
             <Camera className="w-6 h-6 text-red-500 flex-shrink-0" />
@@ -1003,7 +1003,7 @@ export default function TileRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <BadgeCheck className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Dual Licensed (GC + CCC)</h3>
+              <h3 className="text-xl font-bold mb-3">Dual Licensed (CCC + CGC)</h3>
               <p className="text-zinc-400 text-sm">
                 We can address roof-to-wall transitions completely — including cutting and repairing stucco. Most roofers legally can't.
               </p>

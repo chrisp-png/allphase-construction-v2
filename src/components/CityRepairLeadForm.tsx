@@ -28,7 +28,7 @@ export default function CityRepairLeadForm({ city, citySlug }: { city: string; c
             Get a Free Roof Inspection in {city}
           </h2>
           <p className="text-zinc-300 leading-relaxed mb-4">
-            Same-day response on active leaks. We repair before we ever try to sell you a new
+            A live person answers every call, and we guarantee scheduling within 24 hours. We repair before we ever try to sell you a new
             roof — most {city} leaks are repairs, not replacements. Free inspection with photo
             documentation, and an honest repair-or-replace answer.
           </p>

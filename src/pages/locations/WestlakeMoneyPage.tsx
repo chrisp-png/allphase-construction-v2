@@ -37,7 +37,7 @@ export default function WestlakeMoneyPage() {
             <div className="max-w-4xl">
               <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Westlake, FL</h1></div>
               <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor in Westlake Florida for new-construction homes and storm damage?" /></div>
-              <AtomicAnswer>Westlake, FL is the newest city in Palm Beach County — incorporated in 2016 and master-planned by Minto Communities on former Callery-Judge citrus-grove land in the western part of the county. It’s a fast-growing community of brand-new homes. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that handles new-construction repairs, storm damage, and tile and metal roofing, voluntarily built to Miami-Dade HVHZ spec. Roof projects run $12,000 to $40,000.</AtomicAnswer>
+              <AtomicAnswer>Westlake, FL is the newest city in Palm Beach County — incorporated in 2016 and master-planned by Minto Communities on former Callery-Judge citrus-grove land in the western part of the county. It’s a fast-growing community of brand-new homes. All Phase Construction USA is a licensed roofing contractor (CCC-1331464, with CGC-1526236 for roof structural work) that handles new-construction repairs, storm damage, and tile and metal roofing, voluntarily built to Miami-Dade HVHZ spec. Roof projects run $12,000 to $40,000.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
                 <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
@@ -61,7 +61,7 @@ export default function WestlakeMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">New-Construction Repairs, Storm Damage, and Tile</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">In Westlake we handle the roofing a new community actually needs: storm and wind damage after a Florida summer, repairs to tile that was cracked during construction or a satellite or solar install, and inspections for homeowners who want to know their roof was done right. We also serve the established homes throughout the surrounding western communities.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing and general contractor, we can address structural and flashing issues a builder-grade roof sometimes hides, and when the time comes for a full replacement, we build it to last.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing contractor, we can address structural and flashing issues a builder-grade roof sometimes hides, and when the time comes for a full replacement, we build it to last.</p>
           </div>
         </section>
 

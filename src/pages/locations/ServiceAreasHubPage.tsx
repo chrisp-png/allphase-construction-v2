@@ -191,7 +191,7 @@ export default function ServiceAreasHubPage() {
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-white font-semibold mb-1">Response Time</h3>
-                    <p className="text-zinc-400 text-sm">Same-day inspections available</p>
+                    <p className="text-zinc-400 text-sm">Scheduling guaranteed within 24 hours</p>
                   </div>
                 </div>
               </div>

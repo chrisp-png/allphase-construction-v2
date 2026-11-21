@@ -43,7 +43,7 @@ export default function FortLauderdaleRoofRepairPage() {
     },
     {
       question: 'How fast can you get to a roof leak in Fort Lauderdale?',
-      answer: 'A real person answers our phone 24/7, and we dispatch from our Deerfield Beach headquarters about 20 minutes up I-95. Active leaks get same-day response during business hours, including emergency tarping and leak mitigation to stop interior damage while the permanent repair is scheduled.'
+      answer: 'A real person answers our phone 24/7, and we dispatch from our Deerfield Beach headquarters about 20 minutes up I-95. A live person answers every call, and we guarantee scheduling within 24 hours for active leaks, including emergency tarping and leak mitigation to stop interior damage while the permanent repair is scheduled.'
     }
   ];
 
@@ -157,7 +157,7 @@ export default function FortLauderdaleRoofRepairPage() {
                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                   <Wind className="w-8 h-8 text-red-500 mb-4" />
                   <h3 className="text-xl font-bold mb-3">Storm &amp; Wind Damage</h3>
-                  <p className="text-zinc-300 leading-relaxed">Lifted shingles, displaced tile, and wind-driven rain intrusion after summer storms. Written assessment with photo documentation — the paperwork your insurer will ask for — and emergency tarping the same day on active leaks.</p>
+                  <p className="text-zinc-300 leading-relaxed">Lifted shingles, displaced tile, and wind-driven rain intrusion after summer storms. Written assessment with photo documentation — the paperwork your insurer will ask for — and emergency tarping on active leaks, scheduled within 24 hours.</p>
                 </div>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                   <Building2 className="w-8 h-8 text-red-500 mb-4" />

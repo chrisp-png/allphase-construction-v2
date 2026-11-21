@@ -101,7 +101,7 @@ export default function LocationMap() {
                 >
                   (754) 227-5605
                 </a>
-                <p className="text-zinc-400 text-sm">Same-day inspections available</p>
+                <p className="text-zinc-400 text-sm">Scheduling guaranteed within 24 hours</p>
                 <p className="text-zinc-400 text-sm">Serving Broward & Palm Beach Counties</p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function LocationMap() {
             </a>
 
             <p className="text-gray-400 text-sm mt-2">
-              Same-day inspections available when scheduling permits.
+              A live person answers every call, and we guarantee scheduling within 24 hours.
             </p>
           </div>
         </div>

@@ -493,7 +493,7 @@ export default function RoofReplacementPage() {
                         you liable for injuries and code violations.
                       </p>
                       <p className="text-sm text-gray-600 italic">
-                        All Phase Construction USA: CCC-1331464 (Roofing) & CGC-1526236 (General Contractor)
+                        All Phase Construction USA: CCC-1331464 (Roofing) & CGC-1526236 (Certified General Contractor, roof structural work)
                       </p>
                     </div>
 
@@ -917,7 +917,7 @@ export default function RoofReplacementPage() {
             </div>
             <p className="mt-8 text-gray-400 text-sm">
               All Phase Construction USA | 590 Goolsby Blvd, Deerfield Beach, FL 33442<br />
-              Licensed CCC-1331464 (Roofing Contractor) & CGC-1526236 (General Contractor)
+              Licensed CCC-1331464 (Roofing Contractor) & CGC-1526236 (Certified General Contractor, roof structural work)
             </p>
           </div>
         </section>

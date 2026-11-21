@@ -685,7 +685,7 @@ export default function FlatRoofingPage() {
             </p>
 
             <p className="text-xl font-semibold text-white">
-              Because we hold both a General Contractor license (CGC-1526236) and a Roofing Contractor license (CCC-1331464), we handle it all in one scope. One permit. One timeline. One contractor accountable for the complete job.
+              Because we hold both a Roofing Contractor license (CCC-1331464) and a General Contractor license (CGC-1526236), we handle it all in one scope. One permit. One timeline. One contractor accountable for the complete job.
             </p>
           </div>
 

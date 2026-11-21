@@ -106,7 +106,7 @@ export default function EmergencyRoofTarpLighthousePointPage() {
 
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-6">Why Choose All Phase for Lighthouse Point Emergency Service</h2>
-            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida (CCC1333509 and CGC1535474), headquartered five minutes from Lighthouse Point in Deerfield Beach, and on-call 24/7 during declared storm events. After the tarp is on, our project managers walk the full damage scope with your insurance adjuster at no cost to you. For the broader picture of how we handle Florida roof claims, see our <Link to="/florida-roof-insurance-claims-guide" className="text-yellow-400 underline">Florida roof insurance claims guide</Link>.</p>
+            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida (CCC-1331464 and CGC-1526236), headquartered five minutes from Lighthouse Point in Deerfield Beach, and on-call 24/7 during declared storm events. After the tarp is on, our project managers walk the full damage scope with your insurance adjuster at no cost to you. For the broader picture of how we handle Florida roof claims, see our <Link to="/florida-roof-insurance-claims-guide" className="text-yellow-400 underline">Florida roof insurance claims guide</Link>.</p>
           </section>
 
           <section className="mb-16">
@@ -128,7 +128,7 @@ export default function EmergencyRoofTarpLighthousePointPage() {
               <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">Request Emergency Service</Link>
               <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 227-5605</a>
             </div>
-            <p className="text-sm text-zinc-300 mt-4">Serving Lighthouse Point & All of East Broward County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+            <p className="text-sm text-zinc-300 mt-4">Serving Lighthouse Point & All of East Broward County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
           </section>
         </div>
       </div>

@@ -243,7 +243,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/hurricane-help': {
     title: 'Roof Emergency & Hurricane Help South Florida | All Phase',
-    description: 'South Florida roof emergency response + hurricane-season preparation. Same-day inspection from Deerfield Beach HQ. HVHZ-spec.',
+    description: 'South Florida roof emergency response + hurricane-season preparation. Scheduling within 24 hours from Deerfield Beach HQ. HVHZ-spec.',
     canonical: 'https://allphaseconstructionfl.com/hurricane-help'
   },
   '/about-us': {
@@ -1097,8 +1097,8 @@ export function generateSEOMetadata(path: string): SEOMetadata {
   // Static override for /roof-inspection/deerfield-beach (PR-60 CTR rewrite)
   // Without this the dynamic handler below stomps the prerendered title at runtime.
   if (normalizedPath === '/roof-inspection/deerfield-beach') {
-    const title = 'Free Deerfield Beach Roof Inspection — Same-Day Report';
-    const description = 'Free same-day roof inspection in Deerfield Beach, FL. 21-point report with photos. Dual-licensed contractor since 2006.';
+    const title = 'Free Deerfield Beach Roof Inspection — 21-Point Report';
+    const description = 'Free roof inspection in Deerfield Beach, FL, scheduled within 24 hours. 21-point report with photos. Licensed roofer since 2006.';
     return {
       title,
       description,

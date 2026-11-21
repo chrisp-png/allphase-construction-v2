@@ -153,7 +153,7 @@ export default function ShingleRoofingPage() {
           </div>
           <div className="flex items-center gap-3">
             <BadgeCheck className="w-6 h-6 text-red-500 flex-shrink-0" />
-            <span className="text-sm md:text-base text-zinc-300">Dual Licensed (GC + CCC)</span>
+            <span className="text-sm md:text-base text-zinc-300">Dual Licensed (CCC + CGC)</span>
           </div>
           <div className="flex items-center gap-3">
             <FileText className="w-6 h-6 text-red-500 flex-shrink-0" />
@@ -1029,7 +1029,7 @@ export default function ShingleRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <BadgeCheck className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Dual Licensed (GC + CCC)</h3>
+              <h3 className="text-xl font-bold mb-3">Dual Licensed (CCC + CGC)</h3>
               <p className="text-zinc-400 text-sm">
                 Structural repairs, stucco work, ventilation upgrades — we handle everything without subcontractors.
               </p>

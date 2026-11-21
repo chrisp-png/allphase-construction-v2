@@ -37,7 +37,7 @@ export default function HypoluxoMoneyPage() {
             <div className="max-w-4xl">
               <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Hypoluxo, FL</h1></div>
               <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor in Hypoluxo Florida for homes near the Intracoastal?" /></div>
-              <AtomicAnswer>Hypoluxo, FL is a small Palm Beach County town on the Intracoastal near Lantana and Lake Worth Beach, incorporated in 1955. Its name comes from a Seminole phrase meaning ’water all around, no way out,’ and its housing runs from modest mainland homes to waterfront properties near Hypoluxo Island. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs shingle, tile, and coastal-grade metal, voluntarily built to Miami-Dade HVHZ spec. Roof replacements run $10,000 to $32,000.</AtomicAnswer>
+              <AtomicAnswer>Hypoluxo, FL is a small Palm Beach County town on the Intracoastal near Lantana and Lake Worth Beach, incorporated in 1955. Its name comes from a Seminole phrase meaning ’water all around, no way out,’ and its housing runs from modest mainland homes to waterfront properties near Hypoluxo Island. All Phase Construction USA is a licensed roofing contractor (CCC-1331464, with CGC-1526236 for roof structural work) that installs shingle, tile, and coastal-grade metal, voluntarily built to Miami-Dade HVHZ spec. Roof replacements run $10,000 to $32,000.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
                 <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
@@ -61,7 +61,7 @@ export default function HypoluxoMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Mainland Homes and Waterfront Properties</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">On Hypoluxo’s mainland streets, most jobs are architectural-shingle or tile replacements on established single-family homes. Near the water, we shift to coastal-grade detailing — marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment — because on the Intracoastal it’s the metal components that corrode first.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing and general contractor, we handle whatever a tear-off uncovers on an older Hypoluxo home, decking and framing included, on the same permit.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing contractor, we handle whatever a tear-off uncovers on an older Hypoluxo home, decking and framing included, on the same permit.</p>
           </div>
         </section>
 

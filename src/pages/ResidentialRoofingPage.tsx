@@ -525,7 +525,7 @@ export default function ResidentialRoofingPage() {
               <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
                 <BadgeCheck className="w-6 h-6 text-red-500" />
               </div>
-              <h3 className="text-lg font-bold mb-3">Dual Licensed (GC + CCC)</h3>
+              <h3 className="text-lg font-bold mb-3">Dual Licensed (CCC + CGC)</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
                 We can do structural upgrades that roofing-only contractors cannot — opening doors to insurance savings.
               </p>

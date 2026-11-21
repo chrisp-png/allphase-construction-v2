@@ -131,7 +131,7 @@ export default function RoofRepairPage() {
             <li>If your roof is 15 years or older, you have the right to an inspection before they can require replacement</li>
             <li>If that inspection shows 5+ years of useful life remaining, they cannot non-renew your policy based on roof age</li>
           </ul>
-          <p>As a <Link to="/licensed-roofing-contractor" className="text-red-600 hover:text-red-500 underline transition-colors">licensed roofing and general contractor</Link>, we're authorized under the statute to perform this inspection and provide the certification letter. A comprehensive roof restoration that addresses vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage and buying you time before a full replacement.</p>
+          <p>As a <Link to="/licensed-roofing-contractor" className="text-red-600 hover:text-red-500 underline transition-colors">dual-licensed roofing contractor (CCC + CGC)</Link>, we're authorized under the statute to perform this inspection and provide the certification letter. A comprehensive roof restoration that addresses vulnerable areas can bring your roof up to the standard needed for certification — protecting your coverage and buying you time before a full replacement.</p>
           <a
             href="https://www.flsenate.gov/Laws/Statutes/2022/0627.7011"
             target="_blank"
@@ -167,7 +167,7 @@ export default function RoofRepairPage() {
             <li>Professional engineers</li>
             <li>Professional architects</li>
           </ul>
-          <p>As holders of both a General Contractor license (CGC-1526236) and a Roofing Contractor license (CCC-1331464), we're fully authorized to inspect your roof and provide the certification documentation your insurance company requires.</p>
+          <p>As holders of both a Roofing Contractor license (CCC-1331464) and a General Contractor license (CGC-1526236), we're fully authorized to inspect your roof and provide the certification documentation your insurance company requires.</p>
         </div>
       )
     },
@@ -492,7 +492,7 @@ export default function RoofRepairPage() {
               </p>
 
               <p>
-                As a licensed roofing and general contractor (CCC-1331464 / CGC-1526236), we're legally qualified under Florida Statute 627.7011(5)(a) to inspect your roof and provide the certification your insurance company must accept.
+                As a dual-licensed roofing contractor (CCC + CGC) (CCC-1331464 / CGC-1526236), we're legally qualified under Florida Statute 627.7011(5)(a) to inspect your roof and provide the certification your insurance company must accept.
               </p>
 
               <p>
@@ -896,7 +896,7 @@ export default function RoofRepairPage() {
                 Most roofing contractors hit these problems and have to stop. They're not licensed to fix them.
               </p>
               <p className="text-xl font-semibold text-white">
-                Because we hold both a General Contractor license (CGC-1526236) and a Roofing Contractor license (CCC-1331464), we handle it all. One contractor. One permit. One scope of work. No delays waiting for someone else to fix what we found.
+                Because we hold both a Roofing Contractor license (CCC-1331464) and a General Contractor license (CGC-1526236), we handle it all. One contractor. One permit. One scope of work. No delays waiting for someone else to fix what we found.
               </p>
             </div>
 

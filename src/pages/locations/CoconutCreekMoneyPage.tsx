@@ -83,7 +83,7 @@ export default function CoconutCreekMoneyPage() {
 
               <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
 
               <div className="prose prose-invert max-w-none mb-8">
@@ -190,7 +190,7 @@ export default function CoconutCreekMoneyPage() {
 
             <div className="space-y-6 text-lg text-zinc-300 leading-relaxed">
               <p>
-                Operating from our Deerfield Beach headquarters just 8 miles from {cityName}, we serve the community with intimate knowledge of {county} building codes, permit requirements, and inspection procedures. Our proximity means faster response times, quicker permit pulls, and same-day availability for inspections and emergency repairs — an advantage that out-of-area contractors simply cannot match.
+                Operating from our Deerfield Beach headquarters just 8 miles from {cityName}, we serve the community with intimate knowledge of {county} building codes, permit requirements, and inspection procedures. Our proximity means faster response times, quicker permit pulls, and inspection and emergency-repair scheduling within 24 hours — an advantage that out-of-area contractors simply cannot match.
               </p>
 
               <p>
@@ -254,7 +254,7 @@ export default function CoconutCreekMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Emergency Repairs</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      24/7 emergency <Link to="/roof-repair/coconut-creek" className="text-red-600 hover:text-red-500 underline transition-colors">roof repair</Link> service for {cityName}, responding quickly to any roof leak emergencies. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response. Our proximity to {cityName} — just 8 miles from our Deerfield Beach HQ — means faster emergency response than competitors across the county. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link>.
+                      24/7 emergency <Link to="/roof-repair/coconut-creek" className="text-red-600 hover:text-red-500 underline transition-colors">roof repair</Link> service for {cityName}, responding quickly to any roof leak emergencies. Active leaks, storm damage, missing shingles, and emergency tarping with scheduling guaranteed within 24 hours. Our proximity to {cityName} — just 8 miles from our Deerfield Beach HQ — means faster emergency response than competitors across the county. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link>.
                     </p>
                   </div>
                 </div>
@@ -569,7 +569,7 @@ export default function CoconutCreekMoneyPage() {
                   <Clock className="w-12 h-12 text-red-600" />
                 </div>
                 <h3 className="font-bold text-white mb-2">24/7 Emergency</h3>
-                <p className="text-sm text-zinc-400">Same-Day Response Available</p>
+                <p className="text-sm text-zinc-400">Scheduling Within 24 Hours</p>
               </div>
               <div>
                 <div className="flex justify-center mb-3">

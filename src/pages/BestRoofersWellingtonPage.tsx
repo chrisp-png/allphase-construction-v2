@@ -92,7 +92,7 @@ export default function BestRoofersWellingtonPage() {
                     'A+ BBB rating and accreditation',
                     'Manufacturer certifications (GAF, Owens Corning, etc.)',
                     'Written estimate with itemized scope',
-                    'Dual-licensed (Roofing + General Contractor)',
+                    'Dual-licensed: roofing + roof structural (CCC + CGC)',
                     'Wind-Borne Debris Region compliance experience',
                     'Local Wellington / Palm Beach County office',
                     'Manufacturer-backed warranties',
@@ -149,7 +149,7 @@ export default function BestRoofersWellingtonPage() {
                   <div>
                     <h3 className="text-xl font-bold text-white">All Phase Construction USA</h3>
                     <p className="text-yellow-400 font-semibold mt-1">⭐ 4.9 (160+ reviews)</p>
-                    <p className="text-zinc-400 mt-2">Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium.</p>
+                    <p className="text-zinc-400 mt-2">Dual-licensed roofer (roof structural work in-house) with wind mitigation upgrades that lower your insurance premium.</p>
                   </div>
                   <div className="flex gap-3">
                     <a href="https://www.google.com/maps/place/All+Phase+Construction+USA" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm">Google</a>
@@ -374,7 +374,7 @@ export default function BestRoofersWellingtonPage() {
                     <td className="py-3 px-3 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="py-3 px-3 text-zinc-300">20</td>
                     <td className="py-3 px-3 text-zinc-300">Owens Corning Platinum, GAF Gold, IB, Soprema, Conklin</td>
-                    <td className="py-3 px-3 text-zinc-300">Dual-licensed GC + roofer; lowers insurance premiums</td>
+                    <td className="py-3 px-3 text-zinc-300">Dual-licensed roofer (CCC + CGC); lowers insurance premiums</td>
                   </tr>
                   <tr className="border-b border-zinc-800">
                     <td className="py-3 px-3 text-white font-semibold">Altec Roofing</td>

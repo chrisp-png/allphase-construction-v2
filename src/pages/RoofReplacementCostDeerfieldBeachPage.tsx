@@ -138,7 +138,7 @@ export default function RoofReplacementCostDeerfieldBeachPage() {
 
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-6">Why an All Phase Quote Is Fixed and All-Inclusive</h2>
-            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida as a Certified Roofing Contractor (CCC1333509) and a Certified General Contractor (CGC1535474), with more than 30 years of combined building-science experience. Every quote includes the full HVHZ scope, permit, deck repair allowance, and manufacturer warranty registration up front — no surprises, no change-order games. We schedule tear-off and dry-in on the same day so your home is never exposed to a South Florida afternoon storm. For a high-level overview of how we handle every Broward County replacement, see our <Link to="/broward-county-roof-replacement-guide" className="text-yellow-400 underline">Broward County roof replacement guide</Link>.</p>
+            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida as a Certified Roofing Contractor (CCC-1331464) and a Certified General Contractor (CGC-1526236), with more than 30 years of combined building-science experience. Every quote includes the full HVHZ scope, permit, deck repair allowance, and manufacturer warranty registration up front — no surprises, no change-order games. We schedule tear-off and dry-in on the same day so your home is never exposed to a South Florida afternoon storm. For a high-level overview of how we handle every Broward County replacement, see our <Link to="/broward-county-roof-replacement-guide" className="text-yellow-400 underline">Broward County roof replacement guide</Link>.</p>
           </section>
 
           <section className="mb-16">
@@ -160,7 +160,7 @@ export default function RoofReplacementCostDeerfieldBeachPage() {
               <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">Schedule Free Inspection</Link>
               <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 227-5605</a>
             </div>
-            <p className="text-sm text-zinc-300 mt-4">Serving Deerfield Beach & All of Broward County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+            <p className="text-sm text-zinc-300 mt-4">Serving Deerfield Beach & All of Broward County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
           </section>
         </div>
       </div>

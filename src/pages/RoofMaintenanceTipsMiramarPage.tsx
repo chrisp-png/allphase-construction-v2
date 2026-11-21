@@ -123,7 +123,7 @@ export default function RoofMaintenanceTipsMiramarPage() {
               <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">Schedule Maintenance</Link>
               <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 227-5605</a>
             </div>
-            <p className="text-sm text-zinc-300 mt-4">Serving Miramar & All of Broward County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+            <p className="text-sm text-zinc-300 mt-4">Serving Miramar & All of Broward County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
           </section>
         </div>
       </div>

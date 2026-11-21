@@ -113,7 +113,7 @@ export default function TreeDamageRoofRepairParklandPage() {
 
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-6">Why Choose All Phase After a Parkland Tree Strike</h2>
-            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida (CCC1333509 and CGC1535474), which means we can handle both the roofing scope and any associated structural truss or deck repair under a single permit and a single point of contact. Our post-strike inspections are free, our photo reports are insurance-grade, and our project managers attend every adjuster meeting at no cost to the homeowner. For the broader picture of how we handle Florida roof claims, see our <Link to="/florida-roof-insurance-claims-guide" className="text-yellow-400 underline">Florida roof insurance claims guide</Link>.</p>
+            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida (CCC-1331464 and CGC-1526236), which means we can handle both the roofing scope and any associated structural truss or deck repair under a single permit and a single point of contact. Our post-strike inspections are free, our photo reports are insurance-grade, and our project managers attend every adjuster meeting at no cost to the homeowner. For the broader picture of how we handle Florida roof claims, see our <Link to="/florida-roof-insurance-claims-guide" className="text-yellow-400 underline">Florida roof insurance claims guide</Link>.</p>
           </section>
 
           <section className="mb-16">
@@ -135,7 +135,7 @@ export default function TreeDamageRoofRepairParklandPage() {
               <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">Schedule Free Inspection</Link>
               <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 227-5605</a>
             </div>
-            <p className="text-sm text-zinc-300 mt-4">Serving Parkland & All of Broward County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+            <p className="text-sm text-zinc-300 mt-4">Serving Parkland & All of Broward County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
           </section>
         </div>
       </div>

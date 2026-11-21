@@ -386,7 +386,7 @@ export default function HowToHireRoofingContractorPage() {
 
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-              Many homeowners don't realize there's a critical difference between a roofing-only contractor and a dual-licensed roofing and general contractor. Here's why it matters:
+              Many homeowners don't realize there's a critical difference between a roofing-only contractor and a dual-licensed roofing contractor. Here's why it matters:
             </p>
 
             <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-8 mb-8">
@@ -447,7 +447,7 @@ export default function HowToHireRoofingContractorPage() {
             </div>
 
             <p className="text-lg text-zinc-300 leading-relaxed">
-              <strong className="text-white">All Phase Construction USA holds both a General Contractor license (CGC-1526236) and a Roofing Contractor license (CCC-1331464).</strong> This means we can handle the entire scope of work under one permit, with faster inspections, clearer accountability, and reduced overall project risk.
+              <strong className="text-white">All Phase Construction USA holds both a Roofing Contractor license (CCC-1331464) and a General Contractor license (CGC-1526236).</strong> This means we can handle the entire scope of work under one permit, with faster inspections, clearer accountability, and reduced overall project risk.
             </p>
           </div>
         </div>
@@ -843,7 +843,7 @@ export default function HowToHireRoofingContractorPage() {
                 Proper attic ventilation is not a standalone upgrade or optional accessory. It is a fundamental component of a well-designed roofing system that directly impacts long-term performance, energy efficiency, and code compliance in South Florida's demanding HVHZ environment.
               </p>
               <p className="text-lg text-zinc-300 leading-relaxed">
-                <strong className="text-white">All Phase Construction USA evaluates attic ventilation as part of every roof replacement project.</strong> Our dual-licensed roofing and general contracting team assesses your attic's ventilation needs, recommends HVHZ-rated solar attic fan solutions when appropriate, and ensures proper installation that integrates seamlessly with your new roof system. This comprehensive approach protects your investment, extends system lifespan, reduces energy costs, and ensures your roof performs as intended for decades to come.
+                <strong className="text-white">All Phase Construction USA evaluates attic ventilation as part of every roof replacement project.</strong> Our dual-licensed roofing team assesses your attic's ventilation needs, recommends HVHZ-rated solar attic fan solutions when appropriate, and ensures proper installation that integrates seamlessly with your new roof system. This comprehensive approach protects your investment, extends system lifespan, reduces energy costs, and ensures your roof performs as intended for decades to come.
               </p>
             </div>
           </div>

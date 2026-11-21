@@ -491,7 +491,7 @@ export default function TileRoofInspectionPalmBeachCountyPage() {
             </p>
 
             <p>
-              All Phase Construction USA holds both General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) licenses. Our tile roof inspections are performed by personnel with direct installation experience in tile roofing systems, familiarity with HVHZ requirements applicable throughout coastal Palm Beach County, and the statutory authorization to provide insurance certification under Florida Statute 627.7011(5). For properties requiring insurance-compliant certification for Citizens Property Insurance or private carriers, our <Link to="/insurance-roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Insurance Roof Inspection & Certification Services</Link> provide carrier-accepted documentation and remaining useful life attestation.
+              All Phase Construction USA holds both Roofing Contractor (CCC-1331464) and General Contractor (CGC-1526236) licenses. Our tile roof inspections are performed by personnel with direct installation experience in tile roofing systems, familiarity with HVHZ requirements applicable throughout coastal Palm Beach County, and the statutory authorization to provide insurance certification under Florida Statute 627.7011(5). For properties requiring insurance-compliant certification for Citizens Property Insurance or private carriers, our <Link to="/insurance-roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Insurance Roof Inspection & Certification Services</Link> provide carrier-accepted documentation and remaining useful life attestation.
             </p>
           </div>
         </div>

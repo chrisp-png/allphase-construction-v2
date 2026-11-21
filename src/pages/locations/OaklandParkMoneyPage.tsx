@@ -84,7 +84,7 @@ export default function OaklandParkMoneyPage() {
               </div>
               <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing &amp; General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
@@ -146,7 +146,7 @@ export default function OaklandParkMoneyPage() {
                     Most roofing contractors in {cityName} hold only a Certified Roofing Contractor (CCC) license. All Phase Construction USA holds both CCC-1331464 and CGC-1526236, which means we can repair the deck, fascia, and any structural condition we uncover on an Oakland Park tear-off without subbing it out or stopping the job. On a flat-roof project that's especially common — the dual license lets us cut bad decking, re-sister rotted rafter tails, and rebuild edge metal in the same trip, instead of paying a structural sub to come back later.
                   </p>
                   <p>
-                    That matters in {cityName} because the housing stock skews older than the Broward average — a heavy mix of 1950s and 1960s construction with original tongue-and-groove decking, narrow rafter centers, and dimensional roof framing that doesn't pencil out the same way as 1980s+ truss assemblies. When we open up an older shingle or flat roof in Coral Heights, Lake Estates, or Royal Palm Acres and find decking that's been quietly absorbing moisture for decades, we have the legal authority to fix it the same day rather than handing your project off to a structural sub.
+                    That matters in {cityName} because the housing stock skews older than the Broward average — a heavy mix of 1950s and 1960s construction with original tongue-and-groove decking, narrow rafter centers, and dimensional roof framing that doesn't pencil out the same way as 1980s+ truss assemblies. When we open up an older shingle or flat roof in Coral Heights, Lake Estates, or Royal Palm Acres and find decking that's been quietly absorbing moisture for decades, we have the legal authority to fix it on the spot rather than handing your project off to a structural sub.
                   </p>
                   <p>
                     Each {cityName} roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> varies depending on roof size, material grade, structural repairs needed, and access. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
@@ -336,7 +336,7 @@ export default function OaklandParkMoneyPage() {
                   <h3 className="text-2xl font-bold">Storm &amp; Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Our roofers in {cityName} are available 24/7 for <Link to={`/roof-repair/${slug}`} className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, lifted shingles, and storm-displaced flashing after a Broward thunderstorm or named system. We do storm work and we will be on your roof even if you have an open insurance claim. We do not act as a public adjuster and we do not deal with insurance carriers on your behalf.
+                  Our roofers in {cityName} are available 24/7 for <Link to={`/roof-repair/${slug}`} className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — scheduling guaranteed within 24 hours for active leaks, lifted shingles, and storm-displaced flashing after a Broward thunderstorm or named system. We do storm work and we will be on your roof even if you have an open insurance claim. We do not act as a public adjuster and we do not deal with insurance carriers on your behalf.
                 </p>
               </div>
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">

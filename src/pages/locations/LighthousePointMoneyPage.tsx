@@ -86,7 +86,7 @@ export default function LighthousePointMoneyPage() {
               </div>
               <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing &amp; General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
@@ -148,7 +148,7 @@ export default function LighthousePointMoneyPage() {
                     Most roofing contractors in Lighthouse Point hold only a Certified Roofing Contractor (CCC) license. All Phase Construction USA holds both CCC-1331464 and CGC-1526236, which means on a waterfront tile tear-off we can rebuild the chimney crown, re-fit a fireplace cap, replace rotted parapet decking, and re-flash a skylight or chase — all within the same project and the same permit — rather than calling in a structural sub mid-job.
                   </p>
                   <p>
-                    That matters in Lighthouse Point because the housing stock is dominated by 1960s and 1970s waterfront construction with reinforced masonry walls, concrete tile roofs, exposed wood ceiling planks, and second-story owner's suites that complicate any structural intervention. When we pull a 35-year-old concrete tile roof off a home on NE 27th Avenue or Cap's Drive and find compromised decking around a roof penetration or rotted ridge framing under a hip cap, we have the legal authority to fix it the same day rather than handing your project off to a structural sub.
+                    That matters in Lighthouse Point because the housing stock is dominated by 1960s and 1970s waterfront construction with reinforced masonry walls, concrete tile roofs, exposed wood ceiling planks, and second-story owner's suites that complicate any structural intervention. When we pull a 35-year-old concrete tile roof off a home on NE 27th Avenue or Cap's Drive and find compromised decking around a roof penetration or rotted ridge framing under a hip cap, we have the legal authority to fix it on the spot rather than handing your project off to a structural sub.
                   </p>
                   <p>
                     Each {cityName} roofing job is unique in scope, size, and complexity. The cost of <Link to="/roof-replacement" className="text-red-500 hover:text-red-400 underline">roof replacement</Link> varies depending on roof size, material grade, structural repairs needed, and access. Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 underline">Roof Cost Calculator</Link> for a preliminary estimate.
@@ -338,7 +338,7 @@ export default function LighthousePointMoneyPage() {
                   <h3 className="text-2xl font-bold">Storm &amp; Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Our roofers in {cityName} are available 24/7 for <Link to={`/roof-repair/${slug}`} className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, lifted shingles, and storm-displaced flashing after a Broward thunderstorm or named system. We do storm work and we will be on your roof even if you have an open insurance claim. We do not act as a public adjuster and we do not deal with insurance carriers on your behalf.
+                  Our roofers in {cityName} are available 24/7 for <Link to={`/roof-repair/${slug}`} className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — scheduling guaranteed within 24 hours for active leaks, lifted shingles, and storm-displaced flashing after a Broward thunderstorm or named system. We do storm work and we will be on your roof even if you have an open insurance claim. We do not act as a public adjuster and we do not deal with insurance carriers on your behalf.
                 </p>
               </div>
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8">

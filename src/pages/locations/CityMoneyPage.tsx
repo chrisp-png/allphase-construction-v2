@@ -295,7 +295,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                   <p className="text-gray-700">
                     24/7 emergency {city.slug === 'boca-raton' ? (
                       <Link to="/roof-repair/boca-raton" className="text-red-600 hover:text-red-700 underline font-semibold">roof repair</Link>
-                    ) : 'roof repair'} service for {city.name}. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response.
+                    ) : 'roof repair'} service for {city.name}. Active leaks, storm damage, missing shingles, and emergency tarping with scheduling guaranteed within 24 hours.
                   </p>
                 </div>
 
@@ -380,7 +380,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                 <Clock className="w-12 h-12 text-[#C5A572]" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">24/7 Emergency</h3>
-              <p className="text-sm text-gray-400">Same-Day Response Available</p>
+              <p className="text-sm text-gray-400">Scheduling Within 24 Hours</p>
             </div>
             <div>
               <div className="flex justify-center mb-3">

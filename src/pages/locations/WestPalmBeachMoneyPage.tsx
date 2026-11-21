@@ -92,7 +92,7 @@ export default function WestPalmBeachMoneyPage() {
 
               <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
 
               <div className="prose prose-invert max-w-none mb-8">
@@ -266,7 +266,7 @@ export default function WestPalmBeachMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Emergency Repairs</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      24/7 <Link to="/roof-repair/west-palm-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">emergency roof repair service</Link> for {cityName}. Experienced in dealing with active leaks, storm damage, missing shingles, and emergency tarping, we provide same-day response even in challenging weather conditions. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link> before they become expensive problems.
+                      24/7 <Link to="/roof-repair/west-palm-beach/" className="text-red-600 hover:text-red-500 underline transition-colors">emergency roof repair service</Link> for {cityName}. Experienced in dealing with active leaks, storm damage, missing shingles, and emergency tarping, we guarantee scheduling within 24 hours, even in challenging weather conditions. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link> before they become expensive problems.
                     </p>
                   </div>
                 </div>
@@ -570,7 +570,7 @@ export default function WestPalmBeachMoneyPage() {
                   <Clock className="w-12 h-12 text-red-600" />
                 </div>
                 <h3 className="font-bold text-white mb-2">24/7 Emergency</h3>
-                <p className="text-sm text-zinc-400">Same-Day Response Available</p>
+                <p className="text-sm text-zinc-400">Scheduling Within 24 Hours</p>
               </div>
               <div>
                 <div className="flex justify-center mb-3">
