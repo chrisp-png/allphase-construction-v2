@@ -1064,7 +1064,7 @@ export default function BestRoofersMiramarPage() {
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roofing (commercial/residential)</td>
                     <td className="px-4 py-4 text-zinc-300">$8,500 – $28,000</td>
-                    <td className="px-4 py-4 text-zinc-300">System type (TPO/PVC/modified) affects pricing</td>
+                    <td className="px-4 py-4 text-zinc-300">System type (PVC/TPO/modified) affects pricing</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Repair (minor)</td>

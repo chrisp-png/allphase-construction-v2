@@ -349,7 +349,7 @@ export default function PlantationMoneyPage() {
               <Link to="/flat-roofing" className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-6 hover:border-red-600 transition-all group">
                 <h3 className="text-xl font-bold mb-3 group-hover:text-red-500 transition-colors">Flat Roofs</h3>
                 <p className="text-zinc-400 leading-relaxed">
-                  TPO, PVC, and modified bitumen systems for <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial properties</Link> along University Drive and Broward Boulevard, and modern residential designs. Precise installation with proper drainage engineering for South Florida's heavy rainfall.
+                  PVC, TPO, and modified bitumen systems for <Link to="/commercial-roofing" className="text-red-500 hover:text-red-400 underline transition-colors">commercial properties</Link> along University Drive and Broward Boulevard, and modern residential designs. Precise installation with proper drainage engineering for South Florida's heavy rainfall.
                 </p>
               </Link>
             </div>

@@ -465,7 +465,7 @@ export default function BestRoofersPlantationPage() {
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Residential and commercial roof replacement, repair and maintenance, asphalt shingle roofing, concrete and clay tile roofing, metal roofing, flat roof systems (TPO, PVC, EPDM, modified bitumen), roof inspections, leak detection and repair, storm damage assessment and restoration, insurance claim coordination, gutter services, skylights, ventilation systems, HOA-compliant installations.
+              Residential and commercial roof replacement, repair and maintenance, asphalt shingle roofing, concrete and clay tile roofing, metal roofing, flat roof systems (PVC, TPO, EPDM, modified bitumen), roof inspections, leak detection and repair, storm damage assessment and restoration, insurance claim coordination, gutter services, skylights, ventilation systems, HOA-compliant installations.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Standouts:</h3>
@@ -617,7 +617,7 @@ export default function BestRoofersPlantationPage() {
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Residential roof replacement and repair, commercial roofing (TPO, PVC, EPDM, modified bitumen), asphalt shingle roofing, metal roofing, tile roofing, flat roof systems, emergency repairs, roof inspections, maintenance programs, gutter services, coating systems.
+              Residential roof replacement and repair, commercial roofing (PVC, TPO, EPDM, modified bitumen), asphalt shingle roofing, metal roofing, tile roofing, flat roof systems, emergency repairs, roof inspections, maintenance programs, gutter services, coating systems.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Standouts:</h3>
@@ -787,7 +787,7 @@ export default function BestRoofersPlantationPage() {
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roofing (commercial/residential)</td>
                     <td className="px-4 py-4 text-zinc-300">$8,500 – $28,000</td>
-                    <td className="px-4 py-4 text-zinc-300">System type (TPO/PVC/modified) affects pricing</td>
+                    <td className="px-4 py-4 text-zinc-300">System type (PVC/TPO/modified) affects pricing</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Repair (minor leak, tile replacement)</td>

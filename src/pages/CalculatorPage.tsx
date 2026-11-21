@@ -859,7 +859,7 @@ export default function CalculatorPage() {
 
             <Link to="/flat-roofing/" className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-colors group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">Flat Roofing</h3>
-              <p className="text-zinc-400 mb-4">TPO, PVC, and modified bitumen membrane systems</p>
+              <p className="text-zinc-400 mb-4">PVC, TPO, and modified bitumen membrane systems</p>
               <div className="flex items-center text-red-600 font-medium">
                 Learn More <ArrowRight className="w-4 h-4 ml-2" />
               </div>

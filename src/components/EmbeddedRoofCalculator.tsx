@@ -147,7 +147,7 @@ const pricingData: PricingData = {
     },
     {
       tier: 'Better',
-      product: 'TPO/PVC Membrane',
+      product: 'PVC/TPO Membrane',
       warranty: '25-30 Year Warranty',
       minPrice: 8,
       maxPrice: 14,
@@ -155,7 +155,7 @@ const pricingData: PricingData = {
     },
     {
       tier: 'Best',
-      product: 'Enhanced Fastening TPO/PVC',
+      product: 'Enhanced Fastening PVC/TPO',
       warranty: '30+ Year Warranty',
       minPrice: 12,
       maxPrice: 20,

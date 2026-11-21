@@ -1151,7 +1151,7 @@ export default function TileRoofingPage() {
             </Link>
             <Link to="/flat-roofing/" className="bg-zinc-800 p-6 rounded-xl hover:bg-zinc-700 transition-colors group">
               <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-2">Flat Roofing</h3>
-              <p className="text-sm text-zinc-400">TPO, PVC & modified bitumen for low-slope applications.</p>
+              <p className="text-sm text-zinc-400">PVC, TPO & modified bitumen for low-slope applications.</p>
             </Link>
             <Link to="/roof-replacement-process/" className="bg-zinc-800 p-6 rounded-xl hover:bg-zinc-700 transition-colors group">
               <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-2">Replacement Process</h3>

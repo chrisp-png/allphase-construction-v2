@@ -41,7 +41,7 @@ export default function CommercialRoofingPage() {
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "TPO, PVC, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.");
+      metaDescription.setAttribute('content', "PVC, TPO, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.");
     }
 
     const pageUrl = 'https://allphaseconstructionfl.com/commercial-roofing';
@@ -104,7 +104,7 @@ export default function CommercialRoofingPage() {
       question: "How long does a commercial roof last in Florida?",
       answer: (
         <>
-          It depends on the system and maintenance. TPO/PVC membranes typically last 15-30 years, modified bitumen 15-25 years, metal roofs 40-70 years, and tile roofs 30-50+ years. Florida's intense sun, humidity, and hurricane exposure can shorten these lifespans without proper maintenance. <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">Regular inspections</Link> and <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">preventive repairs</Link> significantly extend roof life.
+          It depends on the system and maintenance. PVC/TPO membranes typically last 15-30 years, modified bitumen 15-25 years, metal roofs 40-70 years, and tile roofs 30-50+ years. Florida's intense sun, humidity, and hurricane exposure can shorten these lifespans without proper maintenance. <Link to="/roof-inspection" className="text-red-500 hover:text-red-400 underline">Regular inspections</Link> and <Link to="/roof-maintenance-programs" className="text-red-500 hover:text-red-400 underline">preventive repairs</Link> significantly extend roof life.
         </>
       )
     },
@@ -881,7 +881,7 @@ export default function CommercialRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">
                 <Link to="/flat-roofing" className="hover:text-red-500 transition-colors">
-                  TPO & PVC Membrane
+                  PVC & TPO Membrane
                 </Link>
               </h3>
               <ul className="space-y-2 text-zinc-400 text-sm mb-4">

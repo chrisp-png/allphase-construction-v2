@@ -19,7 +19,7 @@ export default function PompanoBeachMoneyPage() {
   const faqs = [
     { q: 'How much does a roof replacement cost in Pompano Beach?', a: 'A roof replacement in Pompano Beach typically runs $11,000 to $40,000 or more in 2026. Family ranch homes in shingle sit at the lower end; waterfront tile and standing-seam metal run higher, and condo-association roofs are priced by the building.' },
     { q: 'How do you protect a Pompano Beach waterfront roof from salt air?', a: 'For waterfront homes in Hillsboro Shores and Harbor Village, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt corrodes the metal components long before the tile or panel wears out.' },
-    { q: 'Do you do condo and golf-community roofing in Pompano Beach?', a: 'Yes. Palm Aire and other Pompano communities include condo and golf-course associations. We handle large low-slope association roofs in TPO, PVC, and modified bitumen, and coordinate the board approvals.' },
+    { q: 'Do you do condo and golf-community roofing in Pompano Beach?', a: 'Yes. Palm Aire and other Pompano communities include condo and golf-course associations. We handle large low-slope association roofs in PVC, TPO, and modified bitumen, and coordinate the board approvals.' },
     { q: 'Is Pompano Beach in the High-Velocity Hurricane Zone?', a: 'Yes. Pompano Beach is in Broward County, which is legally within the High-Velocity Hurricane Zone, so every roof must meet Miami-Dade HVHZ code — the strictest wind standard in the country. We build to it on every job.' }
   ];
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
@@ -63,7 +63,7 @@ export default function PompanoBeachMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Waterfront, Family, and Golf-Community Roofs</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">On the water — Hillsboro Shores and Harbor Village — you’ve got Spanish Revival homes, bungalows, and dock estates that live in salt air, so we install marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, and lean toward tile and standing-seam metal. Cresthaven and Highlands are classic ranch-home neighborhoods where a clean architectural-shingle replacement is usually the right call.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">West in Palm Aire, it’s a mix of golf-course condos and Spanish-tile homes — meaning both condo-association low-slope roofs (TPO, PVC, modified bitumen) and single-family tile. As a dual-licensed roofing contractor, we cover all of it, and handle any decking or structural work a tear-off uncovers on the same permit.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">West in Palm Aire, it’s a mix of golf-course condos and Spanish-tile homes — meaning both condo-association low-slope roofs (PVC, TPO, modified bitumen) and single-family tile. As a dual-licensed roofing contractor, we cover all of it, and handle any decking or structural work a tear-off uncovers on the same permit.</p>
           </div>
         </section>
 

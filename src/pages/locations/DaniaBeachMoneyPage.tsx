@@ -61,7 +61,7 @@ export default function DaniaBeachMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Historic Bungalows, Canal Homes, and Beach Condos</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">Inland, Dania Beach is older single-family homes — bungalows and mid-century houses where architectural shingle or tile replacement is usually the right call, often over decking that needs attention after decades. Near the water, canal and beachfront homes face direct salt air, so we install marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">The city’s condos add low-slope association roofs in TPO, PVC, and modified bitumen. As a dual-licensed roofing contractor, we cover all of it and handle any structural or decking work an older Dania Beach tear-off uncovers on the same permit.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">The city’s condos add low-slope association roofs in PVC, TPO, and modified bitumen. As a dual-licensed roofing contractor, we cover all of it and handle any structural or decking work an older Dania Beach tear-off uncovers on the same permit.</p>
           </div>
         </section>
 

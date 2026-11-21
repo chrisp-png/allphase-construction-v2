@@ -82,7 +82,7 @@ export default function RoofReplacementPage() {
             "name": "What is HVHZ certification and why does it matter for roof replacement?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "HVHZ (High Velocity Hurricane Zone) certification means roofing systems are engineered and tested to withstand 175+ mph wind speeds. All roof replacements in Broward and Palm Beach Counties must meet HVHZ standards including enhanced fastening schedules, secondary water barriers, and approved materials. Only licensed contractors like All Phase Construction USA (CCC-1331464) can pull permits and install HVHZ-compliant roof systems that protect your home during hurricanes and maintain insurance eligibility."
+              "text": "HVHZ (High Velocity Hurricane Zone) certification means roofing systems are engineered and tested to withstand 175+ mph wind speeds. Roof replacements in Broward County must meet HVHZ standards, including enhanced fastening schedules, secondary water barriers, and approved materials. Palm Beach County is outside the HVHZ, but its wind code requirements are very similar. Only licensed contractors like All Phase Construction USA (CCC-1331464) can pull permits and install HVHZ-compliant roof systems that protect your home during hurricanes and maintain insurance eligibility."
             }
           },
           {
@@ -273,7 +273,7 @@ export default function RoofReplacementPage() {
                     <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
                       <h3 className="text-xl font-bold text-gray-900 mb-3">Flat Roof Systems</h3>
                       <div className="text-3xl font-bold text-red-600 mb-2">$8-$15<span className="text-lg text-gray-600">/sq ft</span></div>
-                      <p className="text-gray-600 text-sm mb-4">TPO, PVC, or modified bitumen</p>
+                      <p className="text-gray-600 text-sm mb-4">PVC, TPO, or modified bitumen</p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li className="flex items-start gap-2">
                           <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -444,10 +444,10 @@ export default function RoofReplacementPage() {
                     HVHZ Compliance for South Florida Roof Replacement
                   </h2>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    All roof replacements in Broward and Palm Beach Counties must meet High Velocity Hurricane Zone (HVHZ)
-                    building code requirements. HVHZ certification ensures your new roof system can withstand 175+ mph wind
-                    speeds during hurricane events—a critical requirement that affects insurance coverage, property value,
-                    and occupant safety.
+                    Roof replacements in Broward County must meet High Velocity Hurricane Zone (HVHZ) building code
+                    requirements. Palm Beach County is outside the HVHZ, but its wind code requirements are very similar.
+                    HVHZ certification ensures your new roof system can withstand 175+ mph wind speeds during hurricane
+                    events—a critical requirement that affects insurance coverage, property value, and occupant safety.
                   </p>
 
                   <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-6">
@@ -810,8 +810,9 @@ export default function RoofReplacementPage() {
                 </h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   HVHZ (High Velocity Hurricane Zone) certification means roofing systems are engineered and tested to withstand
-                  175+ mph wind speeds. All roof replacements in Broward and Palm Beach Counties must meet HVHZ standards
-                  including enhanced fastening schedules, secondary water barriers, and approved materials. Only licensed
+                  175+ mph wind speeds. Roof replacements in Broward County must meet HVHZ standards,
+                  including enhanced fastening schedules, secondary water barriers, and approved materials. Palm Beach County
+                  is outside the HVHZ, but its wind code requirements are very similar. Only licensed
                   contractors like All Phase Construction USA (CCC-1331464) can pull permits and install HVHZ-compliant roof
                   systems that protect your home during hurricanes and maintain insurance eligibility.
                 </p>

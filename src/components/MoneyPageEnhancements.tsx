@@ -10,24 +10,7 @@ interface FaqItem {
   answer: string;
 }
 
-const TESTIMONIAL_POOL = [
-  {
-    name: 'Mike R.',
-    text: "All Phase replaced our roof in four days flat. Crew was clean, the foreman walked the job with me twice a day, and the final invoice matched the quote to the dollar."
-  },
-  {
-    name: 'Linda S.',
-    text: "We got three bids before calling All Phase. They were the only ones who actually got on the roof, photographed everything, and explained what we were paying for. Easy decision."
-  },
-  {
-    name: 'Carlos M.',
-    text: "Old tile roof, new concrete tile roof, zero surprises. They handled the permit, the HOA submittal, and even color-matched the ridge caps. Highly recommend."
-  },
-  {
-    name: 'Jennifer P.',
-    text: "Honest pricing and a real warranty. The crew protected our landscaping with tarps and left the driveway cleaner than they found it. We'd hire them again tomorrow."
-  }
-];
+// PR-266: unverified testimonial pool removed (Chris, 11/21/26).
 
 function buildFaqs(cityName: string, county: string, hvhz: boolean, neighborhoods?: string[]): FaqItem[] {
   const nbList = neighborhoods && neighborhoods.length ? neighborhoods.slice(0, 4).join(', ') : null;
@@ -41,7 +24,7 @@ function buildFaqs(cityName: string, county: string, hvhz: boolean, neighborhood
     },
     {
       question: `What roofing materials do you install on ${cityName} homes?`,
-      answer: `All Phase Construction USA installs architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat-roof systems on ${cityName} properties. Material selection depends on your roof pitch, structural capacity, neighborhood architecture, and long-term plans for the home. We walk every option with you before you sign anything.`
+      answer: `All Phase Construction USA installs architectural shingles, concrete and clay tile, standing seam metal, and PVC/TPO flat-roof systems on ${cityName} properties. Material selection depends on your roof pitch, structural capacity, neighborhood architecture, and long-term plans for the home. We walk every option with you before you sign anything.`
     },
     {
       question: `Are you licensed to replace roofs in ${cityName}?`,
@@ -73,14 +56,6 @@ export default function MoneyPageEnhancements({
   const faqs = buildFaqs(cityName, county, hvhz, neighborhoods);
   const slug = cityName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
-  // Pick two stable testimonials based on city name hash so each city is consistent
-  const idx = Math.abs(
-    cityName.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
-  ) % TESTIMONIAL_POOL.length;
-  const t1 = TESTIMONIAL_POOL[idx];
-  const t2 = TESTIMONIAL_POOL[(idx + 1) % TESTIMONIAL_POOL.length];
-  const nb1 = (neighborhoods && neighborhoods[0]) || cityName;
-  const nb2 = (neighborhoods && neighborhoods[1]) || cityName;
 
   // NOTE: FAQPage + BreadcrumbList + AggregateRating are all owned by the
   // prerender script (scripts/prerender-static.mjs) which auto-injects them
@@ -205,31 +180,6 @@ export default function MoneyPageEnhancements({
           <p className="text-center text-xs text-zinc-400">
             <time dateTime="2026-04">Updated April 2026</time> · Free roof inspections throughout {cityName}.
           </p>
-        </div>
-      </section>
-
-      {/* Local proof / testimonials */}
-      <section className="py-16 bg-zinc-900">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">
-            What {cityName} Homeowners Say
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { t: t1, nb: nb1 },
-              { t: t2, nb: nb2 }
-            ].map(({ t, nb }, i) => (
-              <blockquote
-                key={i}
-                className="bg-zinc-950 border-l-4 border-red-600 rounded-r-lg p-6"
-              >
-                <p className="text-zinc-200 italic leading-relaxed mb-4">"{t.text}"</p>
-                <footer className="text-sm font-semibold text-zinc-400 not-italic">
-                  — {t.name}, {nb === cityName ? cityName : `${nb}, ${cityName}`}
-                </footer>
-              </blockquote>
-            ))}
-          </div>
         </div>
       </section>
 

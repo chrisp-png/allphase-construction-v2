@@ -127,16 +127,7 @@ export default function LpRoofRepairPage() {
         <section className="py-14 px-4 bg-[#27272a]">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">South Florida Homeowners Rate Us 4.9 out of 5</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <blockquote className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-zinc-300">
-                <p className="mb-3">&ldquo;Honest pricing and a real warranty. The crew protected our landscaping and left the driveway cleaner than they found it.&rdquo;</p>
-                <footer className="text-zinc-500 font-semibold">— Jennifer P.</footer>
-              </blockquote>
-              <blockquote className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-zinc-300">
-                <p className="mb-3">&ldquo;The foreman walked the job with me twice a day, and the final invoice matched the quote to the dollar.&rdquo;</p>
-                <footer className="text-zinc-500 font-semibold">— Mike R.</footer>
-              </blockquote>
-            </div>
+            <p className="text-zinc-300 text-lg">4.9 stars across 160+ Google reviews.</p>
           </div>
         </section>
 

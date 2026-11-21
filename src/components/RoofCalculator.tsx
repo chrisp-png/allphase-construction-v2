@@ -46,8 +46,8 @@ export const pricingData: PricingData = {
   ],
   Flat: [
     { tier: 'Good', product: 'Modified Bitumen', warranty: '15-20 Year Warranty', minPrice: 5, maxPrice: 9, features: ['Reliable protection', 'Cost-effective', 'Easy repairs'] },
-    { tier: 'Better', product: 'TPO/PVC Membrane', warranty: '25-30 Year Warranty', minPrice: 8, maxPrice: 14, features: ['Energy efficient', 'UV resistant', 'Seamless coverage'] },
-    { tier: 'Best', product: 'Enhanced Fastening TPO/PVC', warranty: '30+ Year Warranty', minPrice: 12, maxPrice: 18, features: ['Superior attachment system', 'Maximum wind uplift resistance', 'Best long-term performance'] },
+    { tier: 'Better', product: 'PVC/TPO Membrane', warranty: '25-30 Year Warranty', minPrice: 8, maxPrice: 14, features: ['Energy efficient', 'UV resistant', 'Seamless coverage'] },
+    { tier: 'Best', product: 'Enhanced Fastening PVC/TPO', warranty: '30+ Year Warranty', minPrice: 12, maxPrice: 18, features: ['Superior attachment system', 'Maximum wind uplift resistance', 'Best long-term performance'] },
   ],
 };
 

@@ -126,7 +126,7 @@ export default function HoaRoofFinancingPage() {
                   <label htmlFor="hoa-rooftype" className="block text-sm font-semibold text-zinc-300 mb-1">Roof type</label>
                   <select id="hoa-rooftype" name="roof_type" className="w-full bg-zinc-800 border border-zinc-600 rounded-lg px-4 py-3 text-white focus:border-red-500 focus:outline-none">
                     <option>Tile</option>
-                    <option>Flat / low-slope (TPO, PVC, BUR)</option>
+                    <option>Flat / low-slope (PVC, TPO, BUR)</option>
                     <option>Shingle</option>
                     <option>Metal</option>
                     <option>Mixed / multiple buildings</option>

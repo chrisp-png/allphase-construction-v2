@@ -189,20 +189,8 @@ export default function LpRoofReplacementPage() {
         {/* Reviews */}
         <section className="py-14 px-4 bg-[#27272a]">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">What Homeowners Say</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <blockquote className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-                <div className="flex gap-1 mb-3">{[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}</div>
-                <p className="text-zinc-300 leading-relaxed mb-3">&ldquo;Honest pricing and a real warranty. The crew protected our landscaping and left the driveway cleaner than they found it.&rdquo;</p>
-                <footer className="text-zinc-500 font-semibold">&mdash; Jennifer P.</footer>
-              </blockquote>
-              <blockquote className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-                <div className="flex gap-1 mb-3">{[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}</div>
-                <p className="text-zinc-300 leading-relaxed mb-3">&ldquo;The foreman walked the job with me twice a day, and the final invoice matched the quote to the dollar.&rdquo;</p>
-                <footer className="text-zinc-500 font-semibold">&mdash; Mike R.</footer>
-              </blockquote>
-            </div>
-            <p className="text-center text-zinc-400 mt-6">4.9 stars across 160+ Google reviews · A real person answers 24/7</p>
+            <h2 className="text-3xl font-bold mb-4 text-center">What Homeowners Say</h2>
+            <p className="text-center text-zinc-300 text-lg">4.9 stars across 160+ Google reviews · A real person answers 24/7</p>
           </div>
         </section>
 

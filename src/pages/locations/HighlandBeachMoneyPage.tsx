@@ -18,7 +18,7 @@ export default function HighlandBeachMoneyPage() {
   const faqs = [
     { q: 'How much does a roof replacement cost in Highland Beach?', a: 'A roof replacement in Highland Beach typically runs $16,000 to $50,000 in 2026 for homes, with premium tile and metal at the higher end. Oceanfront condo-association roofs are priced by the building.' },
     { q: 'How do you protect a Highland Beach roof from salt air?', a: 'Highland Beach sits between the ocean and the Intracoastal, so we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt corrodes the metal components long before the tile or panel wears out.' },
-    { q: 'Do you do oceanfront condo roofing in Highland Beach?', a: "Yes. We handle large low-slope association roofs in TPO, PVC, and modified bitumen on Highland Beach's condo communities, with marine-grade detailing for the salt exposure, and coordinate board approvals." },
+    { q: 'Do you do oceanfront condo roofing in Highland Beach?', a: "Yes. We handle large low-slope association roofs in PVC, TPO, and modified bitumen on Highland Beach's condo communities, with marine-grade detailing for the salt exposure, and coordinate board approvals." },
     { q: 'Is Highland Beach in the High-Velocity Hurricane Zone?', a: 'Palm Beach County is not legally HVHZ, but on an exposed barrier island we voluntarily build every roof to Miami-Dade HVHZ spec, the strictest wind standard in the country, for maximum protection and insurance eligibility.' }
   ];
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
@@ -60,7 +60,7 @@ export default function HighlandBeachMoneyPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Oceanfront Condos and Intracoastal Estates</h2>
-            <p className="text-zinc-300 leading-relaxed mb-4">Highland Beach is a mix of luxury single-family estates on the Intracoastal — think Bel Lido Isle and the A1A oceanfront homes — and condominium communities like Toscana and Boca Highland. The estates call for premium tile and standing-seam metal; the condos need large, code-compliant low-slope roofs in TPO, PVC, or modified bitumen.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">Highland Beach is a mix of luxury single-family estates on the Intracoastal — think Bel Lido Isle and the A1A oceanfront homes — and condominium communities like Toscana and Boca Highland. The estates call for premium tile and standing-seam metal; the condos need large, code-compliant low-slope roofs in PVC, TPO, or modified bitumen.</p>
             <p className="text-zinc-300 leading-relaxed mb-4">On a barrier island, the metal fails before the roof surface does, so we install marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment on every job, and coordinate with condo associations and seasonal owners as needed.</p>
           </div>
         </section>

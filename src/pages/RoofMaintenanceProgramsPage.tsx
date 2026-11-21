@@ -517,7 +517,7 @@ export default function RoofMaintenanceProgramsPage() {
             </Link>
             <Link to="/flat-roofing/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
               <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Flat Roofing</h3>
-              <p className="text-sm text-zinc-400">TPO, PVC & modified bitumen systems we maintain.</p>
+              <p className="text-sm text-zinc-400">PVC, TPO & modified bitumen systems we maintain.</p>
             </Link>
             <Link to="/roof-replacement-process/" className="bg-zinc-800 p-5 rounded-xl hover:bg-zinc-700 transition-colors group">
               <h3 className="font-semibold text-white group-hover:text-red-500 transition-colors mb-1">Replacement Process</h3>

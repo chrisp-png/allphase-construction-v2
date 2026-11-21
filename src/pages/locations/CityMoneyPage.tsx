@@ -317,7 +317,7 @@ export default function CityMoneyPage({ city }: CityMoneyPageProps) {
                     All Roof Types
                   </h4>
                   <p className="text-gray-700">
-                    Tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC), and {city.slug === 'boca-raton' ? (
+                    Tile roofing, metal roofing, shingle roofing, flat roofing (PVC/TPO), and {city.slug === 'boca-raton' ? (
                       <Link to="/commercial-roofing" className="text-red-600 hover:text-red-700 underline font-semibold">commercial roofing</Link>
                     ) : 'commercial roofing'}. Expert installation and repair for all roofing systems in {city.name}.
                   </p>

@@ -551,7 +551,7 @@ export default function HomePage() {
                         <a href="/flat-roofing/" className="text-red-400 hover:text-red-300 font-semibold hover:underline transition-colors">
                           Flat Roofing
                         </a>
-                        <span className="text-gray-400 text-sm block mt-1">(TPO/PVC/EPDM)</span>
+                        <span className="text-gray-400 text-sm block mt-1">(PVC/TPO/EPDM)</span>
                       </td>
                       <td className="px-6 py-4 text-gray-300">
                         Commercial and modern residential

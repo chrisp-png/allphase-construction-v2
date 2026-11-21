@@ -143,7 +143,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/locations/wilton-manors': {
     title: 'Roofing Contractor in Wilton Manors, FL | All Phase USA',
-    description: 'Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code.',
+    description: 'Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — PVC/TPO flat, shingle, tile & metal, HVHZ-code.',
     canonical: 'https://allphaseconstructionfl.com/locations/wilton-manors'
   },
   '/locations/parkland': {
@@ -302,7 +302,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/commercial-roofing': {
     title: 'Commercial Roofing South Florida | All Phase USA',
-    description: 'TPO, PVC, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.',
+    description: 'PVC, TPO, modified bitumen & metal roofing for South Florida businesses. Dual-licensed CCC/CGC. Free commercial roof assessment.',
     canonical: 'https://allphaseconstructionfl.com/commercial-roofing'
   },
   '/roof-inspection': {
@@ -341,8 +341,8 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
     canonical: 'https://allphaseconstructionfl.com/shingle-roofing'
   },
   '/flat-roofing': {
-    title: 'Flat Roofing South Florida | TPO, PVC & EPDM | All Phase',
-    description: 'TPO, PVC, EPDM & modified bitumen flat roofing in South Florida. Residential & commercial. Dual-licensed CCC/CGC. Free assessment.',
+    title: 'Flat Roofing South Florida | PVC, TPO & EPDM | All Phase',
+    description: 'PVC, TPO, EPDM & modified bitumen flat roofing in South Florida. Residential & commercial. Dual-licensed CCC/CGC. Free assessment.',
     canonical: 'https://allphaseconstructionfl.com/flat-roofing'
   },
     '/community': {
@@ -782,7 +782,7 @@ export const SEO_TITLES: Record<string, SEOMetadata> = {
   },
   '/fort-lauderdale-commercial-roofing': {
     title: 'Fort Lauderdale Commercial Roofing | All Phase USA',
-    description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail.',
+    description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant PVC, TPO, modified bitumen, metal. Las Olas, downtown, marine, medical, retail.',
     canonical: 'https://allphaseconstructionfl.com/fort-lauderdale-commercial-roofing'
   },
   '/lake-worth-corridor-roofing': {

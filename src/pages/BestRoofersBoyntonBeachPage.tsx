@@ -1078,7 +1078,7 @@ export default function BestRoofersBoyntonBeachPage() {
                     <td className="px-4 py-4 text-zinc-300">Excellent coastal performance; marine-grade coating; strong insurance benefits</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roof (TPO/PVC)</td>
+                    <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roof (PVC/TPO)</td>
                     <td className="px-4 py-4 text-zinc-300">$12,000 – $35,000+</td>
                     <td className="px-4 py-4 text-zinc-300">Condos and commercial; proper underlayment critical in coastal climate</td>
                   </tr>
