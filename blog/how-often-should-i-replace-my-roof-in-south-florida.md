@@ -695,7 +695,7 @@ Why not:
 
 ✓ **Full Permitting** — We handle all engineering and inspections
 
-✓ **Licensed & Insured** — CGC-1526236 | CCC-1331464
+✓ **Licensed & Insured** — CCC-1331464 | CGC-1526236
 
 ✓ **No Surprises** — Clear written estimates, no hidden fees
 
@@ -801,4 +801,4 @@ The homeowners who struggle:
 
 *Serving Broward & Palm Beach Counties | Licensed & Insured*
 
-CGC-1526236 | CCC-1331464
+CCC-1331464 | CGC-1526236

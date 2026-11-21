@@ -1387,7 +1387,7 @@ export default function RoofInspectionPage() {
 
           <div className="mt-12 bg-zinc-950 border-l-4 border-red-600 p-8 rounded-r-lg">
             <p className="text-lg text-zinc-300 leading-relaxed">
-              Regional code requirements, coastal exposure conditions, and insurance documentation standards vary between Broward County and Palm Beach County. Our dual-licensed contractors (CGC-1526236 and CCC-1331464) maintain current knowledge of jurisdiction-specific provisions and perform inspections appropriate for the property's location, construction date, and roofing system type.
+              Regional code requirements, coastal exposure conditions, and insurance documentation standards vary between Broward County and Palm Beach County. Our dual-licensed contractors (CCC-1331464 and CGC-1526236) maintain current knowledge of jurisdiction-specific provisions and perform inspections appropriate for the property's location, construction date, and roofing system type.
             </p>
           </div>
         </div>

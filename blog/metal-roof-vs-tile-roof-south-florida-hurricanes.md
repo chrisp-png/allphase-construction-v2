@@ -219,7 +219,7 @@ All Phase Construction USA installs both metal and tile roofing systems througho
 
 As a Metal Alliance certified contractor, we work with all major metal coil manufacturers including Englert, Drexel Metals, and NB Handy. We're also experienced tile installers with thousands of concrete and clay tile roofs completed across Broward and Palm Beach Counties.
 
-**Dual-Licensed:** General Contractor (CGC-1526236) + Roofing Contractor (CCC-1331464) — we handle structural upgrades, hurricane straps, and complete code compliance under one contract.
+**Dual-Licensed:** Roofing Contractor (CCC-1331464) + General Contractor (CGC-1526236) for roof structural work — we handle structural upgrades, hurricane straps, and complete code compliance under one contract.
 
 **Certifications:** Metal Alliance Certified, Owens Corning Platinum Preferred, CertainTeed Master, Tamko Pro Platinum, Certified Wind Mitigation Inspector
 

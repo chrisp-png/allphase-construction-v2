@@ -914,4 +914,4 @@ No, dark-colored and light-colored shingles cost exactly the same when comparing
 
 *Licensed CCC & CGC Contractor | ENERGY STAR Partner | HVHZ Specialists*
 
-CGC-1526236 | CCC-1331464
+CCC-1331464 | CGC-1526236

@@ -90,7 +90,7 @@ export default function JupiterRoofRepairPage() {
           <li><span className="text-white font-semibold">Local Jupiter Expertise</span> — Decades of experience understanding Florida Building Code requirements, salt air corrosion patterns, and the specific challenges facing coastal roofing systems in communities like Admiral's Cove, The Bear's Club, Ranch Colony, and Jonathan's Landing.</li>
           <li><span className="text-white font-semibold">Cost Effective Solutions</span> — Repairs typically cost $2,000 to $8,000 compared to $10,000 to $25,000 for complete replacement — saving you 60–80% while achieving the same protective result.</li>
           <li><span className="text-white font-semibold">Emergency Leak Repair</span> — Scheduling guaranteed within 24 hours for Jupiter area homes, because water intrusion costs far more when ignored.</li>
-          <li><span className="text-white font-semibold">Fully Licensed and Insured</span> — Licenses CGC-1526236 and CCC-1331464. Serving Palm Beach County with all required certifications, protecting you from liability and ensuring insurance claim eligibility.</li>
+          <li><span className="text-white font-semibold">Fully Licensed and Insured</span> — Licenses CCC-1331464 and CGC-1526236. Serving Palm Beach County with all required certifications, protecting you from liability and ensuring insurance claim eligibility.</li>
         </ul>
       </section>
 

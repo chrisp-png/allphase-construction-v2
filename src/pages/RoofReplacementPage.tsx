@@ -74,7 +74,7 @@ export default function RoofReplacementPage() {
             "name": "How long does roof replacement take in South Florida?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Most residential roof replacements in South Florida take 3-7 days from tear-off to completion. Timeline varies by roof size, material type, weather conditions, and permit inspection schedules. Asphalt shingle roofs typically take 2-4 days, tile roofs require 4-7 days, metal roofs take 3-5 days, and flat roofs need 3-6 days. Permit processing adds 1-3 weeks before work begins."
+              "text": "The hands-on work usually takes 3-7 working days: asphalt shingle roofs typically take 2-4 days, tile roofs 4-7 days, metal roofs 3-5 days, and flat roofs 3-6 days. The waiting around the work is what stretches the timeline. If you have an HOA, its approval comes first and can take anywhere from 2 weeks to 60 days, and the permit can't be submitted until it comes back. Lately most building departments issue permits in about 30 days, longer around the holidays. Tile roofs also need an engineer's uplift test, which adds about a week, and material delivery and inspection scheduling can add time as well."
             }
           },
           {
@@ -318,9 +318,9 @@ export default function RoofReplacementPage() {
                     How Long Does Roof Replacement Take?
                   </h2>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Most residential roof replacement projects in South Florida take 3-7 days from tear-off to final
-                    inspection, though timeline varies based on roof size, material complexity, weather conditions, and
-                    permit inspection schedules. Here's what to expect:
+                    The hands-on work of a residential roof replacement in South Florida usually takes 3-7 working
+                    days. What stretches a project out is the waiting around that work: HOA approval, the building
+                    department issuing the permit, material delivery, and inspection scheduling. Here's what to expect:
                   </p>
 
                   <div className="space-y-4 mb-8">
@@ -342,10 +342,11 @@ export default function RoofReplacementPage() {
                         <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-900 mb-2">Permit Processing (1-3 Weeks)</h4>
+                        <h4 className="font-bold text-gray-900 mb-2">HOA Approval (2 Weeks to 60 Days, If You Have an HOA)</h4>
                         <p className="text-gray-700 text-sm">
-                          Building permit application, engineering drawings (if required), NOA documentation submission,
-                          and permit approval from local building department. We handle all permitting.
+                          If your home is in a homeowners association, the HOA has to approve the new roof after the
+                          contract is signed. We can't prepare or submit the permit until that approval comes back, and
+                          how long it takes depends entirely on the HOA: anywhere from about 2 weeks to 60 days.
                         </p>
                       </div>
                     </div>
@@ -355,10 +356,12 @@ export default function RoofReplacementPage() {
                         <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-900 mb-2">Material Delivery & Staging (1 Day)</h4>
+                        <h4 className="font-bold text-gray-900 mb-2">Permit Processing (About 30 Days)</h4>
                         <p className="text-gray-700 text-sm">
-                          Roofing materials delivered to job site, staging area prepared with property protection,
-                          dumpster placement for tear-off debris, and crew mobilization.
+                          Building permit application, engineering drawings (if required), and NOA documentation, submitted
+                          once HOA approval is in hand (or right after signing if there's no HOA). Lately most building
+                          departments are issuing permits in about 30 days; the holidays slow that down. We handle all
+                          permitting.
                         </p>
                       </div>
                     </div>
@@ -368,10 +371,11 @@ export default function RoofReplacementPage() {
                         <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-900 mb-2">Tear-Off & Decking Inspection (1-2 Days)</h4>
+                        <h4 className="font-bold text-gray-900 mb-2">Material Delivery & Staging (1 Day on Site)</h4>
                         <p className="text-gray-700 text-sm">
-                          Complete removal of existing roofing materials, disposal of debris, structural decking
-                          inspection, and replacement of damaged plywood or OSB sheathing.
+                          Roofing materials delivered to job site, staging area prepared with property protection,
+                          dumpster placement for tear-off debris, and crew mobilization. Waiting on material delivery
+                          can push the start date.
                         </p>
                       </div>
                     </div>
@@ -379,6 +383,20 @@ export default function RoofReplacementPage() {
                     <div className="flex gap-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900 mb-2">Tear-Off & Decking Inspection (1-2 Days)</h4>
+                        <p className="text-gray-700 text-sm">
+                          Complete removal of existing roofing materials, disposal of debris, structural decking
+                          inspection, and replacement of damaged plywood or OSB sheathing. The city's in-progress
+                          inspection depends on the inspector's schedule.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
+                      <div className="flex-shrink-0">
+                        <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">6</div>
                       </div>
                       <div>
                         <h4 className="font-bold text-gray-900 mb-2">Underlayment & Flashing Installation (1 Day)</h4>
@@ -391,26 +409,28 @@ export default function RoofReplacementPage() {
 
                     <div className="flex gap-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">6</div>
+                        <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">7</div>
                       </div>
                       <div>
                         <h4 className="font-bold text-gray-900 mb-2">Roof System Installation (2-5 Days)</h4>
                         <p className="text-gray-700 text-sm">
                           New roofing material installation following manufacturer specifications and HVHZ fastening
-                          requirements. Timeline varies: shingles 2-3 days, tile 4-5 days, metal 3-4 days.
+                          requirements. Timeline varies: shingles 2-3 days, tile 4-5 days, metal 3-4 days. Tile roofs
+                          also need an engineer's uplift test on the installed tile, which adds about a week.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex gap-4 bg-gray-50 p-6 rounded-lg border border-gray-200">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">7</div>
+                        <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">8</div>
                       </div>
                       <div>
                         <h4 className="font-bold text-gray-900 mb-2">Final Inspection & Closeout (1-2 Days)</h4>
                         <p className="text-gray-700 text-sm">
-                          Building department final inspection, correction of any noted deficiencies, site cleanup,
-                          warranty registration, and documentation delivery to homeowner.
+                          Building department final inspection (scheduled around the inspector's availability),
+                          correction of any noted deficiencies, site cleanup, warranty registration, and documentation
+                          delivery to homeowner.
                         </p>
                       </div>
                     </div>
@@ -780,10 +800,7 @@ export default function RoofReplacementPage() {
                   How long does roof replacement take in South Florida?
                 </h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Most residential roof replacements in South Florida take 3-7 days from tear-off to completion. Timeline
-                  varies by roof size, material type, weather conditions, and permit inspection schedules. Asphalt shingle
-                  roofs typically take 2-4 days, tile roofs require 4-7 days, metal roofs take 3-5 days, and flat roofs need
-                  3-6 days. Permit processing adds 1-3 weeks before work begins.
+                  The hands-on work usually takes 3-7 working days: asphalt shingle roofs typically take 2-4 days, tile roofs 4-7 days, metal roofs 3-5 days, and flat roofs 3-6 days. The waiting around the work is what stretches the timeline. If you have an HOA, its approval comes first and can take anywhere from 2 weeks to 60 days, and the permit can't be submitted until it comes back. Lately most building departments issue permits in about 30 days, longer around the holidays. Tile roofs also need an engineer's uplift test, which adds about a week, and material delivery and inspection scheduling can add time as well.
                 </p>
               </div>
 
