@@ -140,7 +140,7 @@ export default function MetalRoofingCostFortLauderdalePage() {
 
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-6">Why Choose All Phase for a Fort Lauderdale Metal Roof</h2>
-            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida as a Certified Roofing Contractor (CCC1333509) and a Certified General Contractor (CGC1535474), with deep experience installing every NOA-approved metal system in Broward and Palm Beach County. Every quote includes the full HVHZ scope, custom-fabricated flashing, the wind-mitigation report, and manufacturer paint warranty registration up front. For the full picture of your panel options, see our <Link to="/metal-roofing" className="text-yellow-400 underline">metal roofing service overview</Link>.</p>
+            <p className="text-lg text-zinc-300">All Phase Construction USA is dual-licensed in Florida as a Certified Roofing Contractor (CCC-1331464) and a Certified General Contractor (CGC-1526236), with deep experience installing every NOA-approved metal system in Broward and Palm Beach County. Every quote includes the full HVHZ scope, custom-fabricated flashing, the wind-mitigation report, and manufacturer paint warranty registration up front. For the full picture of your panel options, see our <Link to="/metal-roofing" className="text-yellow-400 underline">metal roofing service overview</Link>.</p>
           </section>
 
           <section className="mb-16">
@@ -162,7 +162,7 @@ export default function MetalRoofingCostFortLauderdalePage() {
               <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-lg">Schedule Free Inspection</Link>
               <a href="tel:+17542275605" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-zinc-900/10 transition-colors text-lg">Call (754) 227-5605</a>
             </div>
-            <p className="text-sm text-zinc-300 mt-4">Serving Fort Lauderdale & All of Broward County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+            <p className="text-sm text-zinc-300 mt-4">Serving Fort Lauderdale & All of Broward County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
           </section>
         </div>
       </div>

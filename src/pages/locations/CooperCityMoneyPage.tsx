@@ -37,7 +37,7 @@ export default function CooperCityMoneyPage() {
             <div className="max-w-4xl">
               <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Cooper City, FL</h1></div>
               <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor in Cooper City Florida for family homes and gated communities?" /></div>
-              <AtomicAnswer>Cooper City, FL is a tightly-knit Broward County family suburb — its slogan is literally ’Someplace Special’ — founded in 1959 by developer Morris Cooper and known for top-rated schools and master-planned neighborhoods. Much of its housing dates to the 1970s through 1990s and is now reaching roof end-of-life. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs shingle, tile, and metal to Miami-Dade HVHZ code, legally required here in Broward. Roof replacements run $11,000 to $30,000.</AtomicAnswer>
+              <AtomicAnswer>Cooper City, FL is a tightly-knit Broward County family suburb — its slogan is literally ’Someplace Special’ — founded in 1959 by developer Morris Cooper and known for top-rated schools and master-planned neighborhoods. Much of its housing dates to the 1970s through 1990s and is now reaching roof end-of-life. All Phase Construction USA is a licensed roofing contractor (CCC-1331464, with CGC-1526236 for roof structural work) that installs shingle, tile, and metal to Miami-Dade HVHZ code, legally required here in Broward. Roof replacements run $11,000 to $30,000.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
                 <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
@@ -61,7 +61,7 @@ export default function CooperCityMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Family Homes and HOA Communities</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">Most Cooper City roofs are architectural shingle or concrete tile on single-family homes, and many of the city’s neighborhoods sit inside HOAs with guidelines on roof profile and color. We manage that architectural-review process end to end so your replacement gets approved without delays.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing and general contractor, when a tear-off on a 1970s or 80s Cooper City home reveals worn decking or fascia, we handle it on the same permit instead of stopping the job.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing contractor, when a tear-off on a 1970s or 80s Cooper City home reveals worn decking or fascia, we handle it on the same permit instead of stopping the job.</p>
           </div>
         </section>
 

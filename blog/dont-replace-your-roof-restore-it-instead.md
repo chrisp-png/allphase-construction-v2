@@ -145,7 +145,7 @@ When you call us after getting a non-renewal notice, here's what happens:
 
 ✓ **Why Trust Us?**
 
-All Phase Construction USA holds both a General Contractor license (CGC-1526236) and a Roofing Contractor license (CCC-1331464). We've completed over 2,500 projects in Broward and Palm Beach Counties. We're not storm chasers — we're your neighbors, and we'll be here long after the job is done.
+All Phase Construction USA holds both a Roofing Contractor license (CCC-1331464) and a General Contractor license (CGC-1526236). We've completed over 2,500 projects in Broward and Palm Beach Counties. We're not storm chasers — we're your neighbors, and we'll be here long after the job is done.
 
 ---
 

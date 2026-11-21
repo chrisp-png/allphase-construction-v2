@@ -409,7 +409,7 @@ export default function DavieRoofInspectionPage() {
             </Link>
           </div>
           <p className="text-zinc-500 text-sm">
-            Dual Licensed: CGC-1526236 &amp; CCC-1331464 &nbsp;&nbsp;|&nbsp;&nbsp; Fully Insured &nbsp;&nbsp;|&nbsp;&nbsp; Serving Davie, FL and Broward County
+            Dual Licensed: CCC-1331464 &amp; CGC-1526236 &nbsp;&nbsp;|&nbsp;&nbsp; Fully Insured &nbsp;&nbsp;|&nbsp;&nbsp; Serving Davie, FL and Broward County
           </p>
         </div>
       </section>

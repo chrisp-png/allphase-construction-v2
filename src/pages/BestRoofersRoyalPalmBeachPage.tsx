@@ -81,7 +81,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
                     <td className="px-6 py-4 text-sm text-zinc-400">Verbal quote only, no paperwork</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-zinc-300">Dual-licensed (Roofing + General Contractor)</td>
+                    <td className="px-6 py-4 text-sm text-zinc-300">Dual-licensed: roofing + roof structural (CCC + CGC)</td>
                     <td className="px-6 py-4 text-sm text-zinc-400">Single-scope operator with no structural authority</td>
                   </tr>
                   <tr>
@@ -115,7 +115,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer + general contractor with wind mitigation upgrades that lower your insurance premium. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer (roof structural work in-house) with wind mitigation upgrades that lower your insurance premium. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Ranger Roofing Corporation</strong> ⭐ 4.7 (150+ reviews) — Established Palm Beach County contractor with 25+ years of residential and commercial roofing expertise. <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
@@ -334,7 +334,7 @@ export default function BestRoofersRoyalPalmBeachPage() {
                     <td className="px-3 py-4 text-zinc-300">Full replacement, repair, wind mitigation, commercial</td>
                     <td className="px-3 py-4 text-zinc-300">21</td>
                     <td className="px-3 py-4 text-zinc-300">OC Platinum, GAF Gold, IB, Soprema, TRI</td>
-                    <td className="px-3 py-4 text-zinc-300">Dual-licensed GC + roofer; insurance premium reduction</td>
+                    <td className="px-3 py-4 text-zinc-300">Dual-licensed roofer (CCC + CGC); insurance premium reduction</td>
                   </tr>
                   <tr>
                     <td className="px-3 py-4 font-medium text-white">Ranger Roofing Corporation</td>

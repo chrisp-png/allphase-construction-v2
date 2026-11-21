@@ -100,7 +100,7 @@ Closing fees (about 5%) and a debt-service coverage reserve are financed into th
 
 What financing buys is the ability to do **mandatory work now, at today's construction prices**, without a five-figure demand on every owner — and without the board wearing the liability of another deferred year. In a market where costs rise annually and insurers won't wait, that trade is usually worth making. But it's your board's call to make with clear numbers, and we'd rather you have them all.
 
-(For clarity: All Phase Construction USA is a roofing and general contractor, not a lender. Financing is provided by a licensed third-party lending partner, and all terms, approvals, and rates are determined solely by their underwriting.)
+(For clarity: All Phase Construction USA is a roofing contractor, not a lender. Financing is provided by a licensed third-party lending partner, and all terms, approvals, and rates are determined solely by their underwriting.)
 
 ---
 
@@ -118,4 +118,4 @@ If your community is staring down a roof decision — because of a milestone ins
 
 ---
 
-*All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 & CGC-1526236) headquartered in Deerfield Beach, serving Broward and Palm Beach County since 2006. Rated 4.9 stars across 160+ Google reviews.*
+*All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464 & CGC-1526236) headquartered in Deerfield Beach, serving Broward and Palm Beach County since 2006. Rated 4.9 stars across 160+ Google reviews.*

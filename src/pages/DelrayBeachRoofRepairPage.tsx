@@ -40,7 +40,7 @@ export default function DelrayBeachRoofRepairPage() {
     },
     {
       question: "How quickly can you respond to emergency roof repairs in Delray Beach?",
-      answer: "We offer 24/7 emergency response with same-day dispatching from our Deerfield Beach headquarters. For active leaks or storm damage, call (754) 227-5605 immediately."
+      answer: "A live person answers every call, and we guarantee scheduling within 24 hours, dispatching from our Deerfield Beach headquarters. For active leaks or storm damage, call (754) 227-5605 immediately."
     },
     {
       question: "How often should I have my roof inspected in Delray Beach?",
@@ -475,7 +475,7 @@ export default function DelrayBeachRoofRepairPage() {
                 <li className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <span className="font-semibold">Active leak response</span> with same-day dispatching from our Deerfield Beach headquarters
+                    <span className="font-semibold">Active leak response</span> with scheduling guaranteed within 24 hours from our Deerfield Beach headquarters
                   </div>
                 </li>
                 <li className="flex items-start gap-3">

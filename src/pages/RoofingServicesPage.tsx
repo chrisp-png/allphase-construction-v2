@@ -146,7 +146,7 @@ const faqData = [
   },
   {
     question: 'Do you offer financing for roof replacement?',
-    answer: 'Yes. We partner with Service Finance Company, LLC, an FHA Title I lender, to offer flexible payment plans for roof replacement projects. Homeowners can finance their new roof with competitive rates and manageable monthly payments. We handle the application process during your free roof assessment — most approvals come back the same day.'
+    answer: 'Yes. We partner with Service Finance Company, LLC, an FHA Title I lender, to offer flexible payment plans for roof replacement projects. Homeowners can finance their new roof with competitive rates and manageable monthly payments. We handle the application process during your free roof assessment — most approvals come back quickly.'
   },
   {
     question: 'How long does a roof replacement take in Broward or Palm Beach County?',
@@ -173,7 +173,7 @@ export default function RoofingServicesPage() {
               Roofing Services — Residential & Commercial Solutions for South Florida
             </h1>
             <p className="text-xl text-zinc-300 mb-8 max-w-4xl mx-auto">
-              All Phase Construction USA is a <Link to="/licensed-roofing-contractor" className="text-red-400 hover:text-red-300 underline">dual-licensed roofing and general contractor</Link> serving Broward and Palm Beach Counties since 2006. With over 2,500 completed projects and certifications from Owens Corning, CertainTeed, and Tamko, we specialize in HVHZ-compliant roofing built to South Florida's 146 mph wind load requirements. From single-family homes to commercial properties and HOA communities — every project is permitted, inspected, and backed by manufacturer warranty documentation.
+              All Phase Construction USA is a <Link to="/licensed-roofing-contractor" className="text-red-400 hover:text-red-300 underline">dual-licensed roofing contractor</Link> serving Broward and Palm Beach Counties since 2006. With over 2,500 completed projects and certifications from Owens Corning, CertainTeed, and Tamko, we specialize in HVHZ-compliant roofing built to South Florida's 146 mph wind load requirements. From single-family homes to commercial properties and HOA communities — every project is permitted, inspected, and backed by manufacturer warranty documentation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

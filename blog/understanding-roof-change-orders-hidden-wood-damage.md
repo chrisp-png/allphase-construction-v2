@@ -58,7 +58,7 @@ One path is to stop, document it, explain it to the homeowner, and replace the b
 
 A lot of companies take the second path. It's faster, it avoids the awkward conversation, and the problem won't surface until long after their workmanship warranty has expired — if they offered one at all. The homeowner finds out the hard way, usually during a hurricane.
 
-We don't do business that way. When we find compromised wood, we replace it. Period. As a [dual-licensed roofing and general contractor](https://allphaseconstructionfl.com/about-us), we're held to a structural standard, not just a surface one. It means we sometimes have to come to you with a change order you weren't expecting, and that can be a tough conversation. But we'd rather have it now than have your roof fail when you need it most. Fixing it right the first time is the entire point.
+We don't do business that way. When we find compromised wood, we replace it. Period. As a [dual-licensed roofing contractor](https://allphaseconstructionfl.com/about-us), we're held to a structural standard, not just a surface one. It means we sometimes have to come to you with a change order you weren't expecting, and that can be a tough conversation. But we'd rather have it now than have your roof fail when you need it most. Fixing it right the first time is the entire point.
 
 ---
 

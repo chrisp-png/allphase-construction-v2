@@ -45,7 +45,7 @@ export default function SouthFloridaRoofingReviewsPage() {
       rating: '4.9/5',
       reviews: '170+',
       highlights: [
-        'Dual-licensed: Roofing (CCC1333509) + General Contractor (CGC1535474)',
+        'Dual-licensed: Roofing (CCC-1331464) + General Contractor (CGC-1526236)',
         '2,500+ roofs completed across Broward & Palm Beach County',
         'Full insurance claims assistance — from documentation to supplements',
         'In-house crews (no subcontractors) for quality control',
@@ -473,7 +473,7 @@ export default function SouthFloridaRoofingReviewsPage() {
               Call (754) 227-5605
             </a>
           </div>
-          <p className="text-sm text-zinc-300 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-300 mt-4">Serving Broward County & Palm Beach County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
         </section>
       </div>
       </div>

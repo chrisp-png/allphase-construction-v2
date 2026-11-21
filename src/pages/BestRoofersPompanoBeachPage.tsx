@@ -122,7 +122,7 @@ export default function BestRoofersPompanoBeachPage() {
 
             <ol className="space-y-4 list-decimal list-inside text-zinc-300">
               <li className="leading-relaxed">
-                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer + general contractor specializing in coastal corrosion, marine-grade fasteners, and HVHZ compliance. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
+                <strong className="text-white">All Phase Construction USA</strong> ⭐ 4.9 (160+ reviews) — Dual-licensed roofer specializing in coastal corrosion, marine-grade fasteners, and HVHZ compliance. <a href="https://maps.google.com/?cid=allphaseconstructionfl" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Google</a> | <a href="https://www.bbb.org" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">BBB</a>
               </li>
               <li className="leading-relaxed">
                 <strong className="text-white">Distinctive Roofing</strong> ⭐ 4.9 (90+ reviews) — Family-owned, GAF Certified, services tile, metal, shingle, and flat roofing. Phone: (954) 846-7663. <a href="https://www.distinctiveroofing.net" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline">Website</a>

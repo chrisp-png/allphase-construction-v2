@@ -157,7 +157,7 @@ export default function ProjectsPage() {
                 Roofing Project Portfolio
               </h1>
               <p className="text-lg text-gray-300 max-w-4xl">
-                All Phase Construction USA is a dual-licensed roofing and general contractor serving Broward County, Palm Beach County, and the surrounding South Florida region. This portfolio showcases our completed residential and commercial roofing projects — including tile, shingle, metal, and flat roof systems — across cities like Fort Lauderdale, Boca Raton, Coral Springs, and Pompano Beach.
+                All Phase Construction USA is a dual-licensed roofing contractor serving Broward County, Palm Beach County, and the surrounding South Florida region. This portfolio showcases our completed residential and commercial roofing projects — including tile, shingle, metal, and flat roof systems — across cities like Fort Lauderdale, Boca Raton, Coral Springs, and Pompano Beach.
               </p>
               <p className="text-gray-400 mt-4 max-w-4xl">
                 Each project reflects our commitment to manufacturer-certified installation, Florida Building Code compliance, and long-term roof performance in the High Velocity Hurricane Zone. Looking for a specific roof type or city? Use the filters below to browse our work.

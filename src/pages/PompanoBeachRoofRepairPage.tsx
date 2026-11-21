@@ -80,7 +80,7 @@ export default function PompanoBeachRoofRepairPage() {
               </h1>
 
               <p className="text-xl text-zinc-400 mb-8">
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </p>
 
               <div className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed space-y-4">

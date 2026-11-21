@@ -211,7 +211,7 @@ export default function DeerfieldBeachCityPage() {
               <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-5 max-w-md">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[#C5A572] text-lg">🛡</span>
-                  <span className="text-white font-bold text-base">Dual-Licensed Roofing & General Contractor</span>
+                  <span className="text-white font-bold text-base">Dual-Licensed Roofing Contractor</span>
                 </div>
                 <div className="text-[#C5A572] text-sm font-medium mb-1">CCC-1331464 - Florida Certified Roofing Contractor</div>
                 <div className="text-[#C5A572] text-sm font-medium mb-3">CGC-1526236 - Certified General Contractor</div>
@@ -265,7 +265,7 @@ export default function DeerfieldBeachCityPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5 text-red-600" />
-                  <span className="font-medium">Same-day inspections when scheduling permits</span>
+                  <span className="font-medium">Scheduling guaranteed within 24 hours</span>
                 </div>
               </div>
 

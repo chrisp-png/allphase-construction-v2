@@ -259,7 +259,7 @@ export default function BestRoofersBocaRatonPage() {
                   <div>
                     <p className="font-semibold text-slate-900 mb-1">License:</p>
                     <p>CCC-1331464 (Roofing)</p>
-                    <p>CGC-1526236 (General Contractor)</p>
+                    <p>CGC-1526236 (Certified General Contractor, roof structural work)</p>
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900 mb-1">Service area:</p>
@@ -551,7 +551,7 @@ export default function BestRoofersBocaRatonPage() {
           <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-xl p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Why Boca Raton Homeowners Choose All Phase Construction USA</h2>
             <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-              Dual-licensed roofing and general contractor serving Boca Raton with comprehensive HVHZ-compliant installations, full permitting, and wind mitigation documentation.
+              Dual-licensed roofing contractor serving Boca Raton with comprehensive HVHZ-compliant installations, full permitting, and wind mitigation documentation.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a

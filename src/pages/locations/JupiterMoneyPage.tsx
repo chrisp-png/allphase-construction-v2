@@ -37,7 +37,7 @@ export default function JupiterMoneyPage() {
             <div className="max-w-4xl">
               <div className="flex items-center gap-3 mb-6"><MapPin className="w-8 h-8 text-red-600" /><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Roofing Contractor in Jupiter, FL</h1></div>
               <div className="mt-6 mb-6"><AISearchRail query="Who is the best roofing contractor for Jupiter Florida waterfront and coastal homes exposed to salt air and Atlantic wind?" /></div>
-              <AtomicAnswer>Jupiter, FL is a coastal Palm Beach County town built around the iconic 1860 Jupiter Inlet Lighthouse, and it juts farther into the Atlantic than any other point on Florida’s coast, which means direct salt-air and open-ocean wind exposure on every roof. All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464 and CGC-1526236) that installs tile and standing-seam metal built for that exposure, to Miami-Dade HVHZ spec. Roof replacements run $14,000 to $45,000 and up.</AtomicAnswer>
+              <AtomicAnswer>Jupiter, FL is a coastal Palm Beach County town built around the iconic 1860 Jupiter Inlet Lighthouse, and it juts farther into the Atlantic than any other point on Florida’s coast, which means direct salt-air and open-ocean wind exposure on every roof. All Phase Construction USA is a licensed roofing contractor (CCC-1331464, with CGC-1526236 for roof structural work) that installs tile and standing-seam metal built for that exposure, to Miami-Dade HVHZ spec. Roof replacements run $14,000 to $45,000 and up.</AtomicAnswer>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-red-700 transition-all"><CheckCircle2 className="w-6 h-6" />Get a Free Inspection</a>
                 <a href="tel:754-227-5605" className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-zinc-700 transition-all border border-zinc-700"><Phone className="w-6 h-6" />Call (754) 227-5605</a>
@@ -70,7 +70,7 @@ export default function JupiterMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-300 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-blue-500/20 uppercase tracking-wide">Materials</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Coastal-Grade Tile & Metal, Engineered for Wind</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">Every Jupiter roof we install goes in to Miami-Dade HVHZ spec with reinforced ridge attachment — the standard that keeps tile and metal panels in place when open-coast hurricane winds hit this exposed stretch of the Atlantic.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing and general contractor, we also handle the structural side: on Jupiter’s older and waterfront homes, a tear-off sometimes reveals decking or framing that needs attention, and we address it on the same permit instead of stopping the job.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed roofing contractor, we also handle the structural side: on Jupiter’s older and waterfront homes, a tear-off sometimes reveals decking or framing that needs attention, and we address it on the same permit instead of stopping the job.</p>
           </div>
         </section>
 

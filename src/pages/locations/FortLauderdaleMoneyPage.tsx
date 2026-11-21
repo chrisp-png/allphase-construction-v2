@@ -93,7 +93,7 @@ export default function FortLauderdaleMoneyPage() {
 
               <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
 
               <a
@@ -118,7 +118,7 @@ export default function FortLauderdaleMoneyPage() {
 
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) serving {cityName}, FL with comprehensive roof replacement, roof repair, and roof inspection services. As a family-owned business based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to HVHZ wind code standards for {cityName} homes and commercial properties.
+                  All Phase Construction USA is a licensed roofing contractor (CCC-1331464, with CGC-1526236 for roof structural work) serving {cityName}, FL with comprehensive roof replacement, roof repair, and roof inspection services. As a family-owned business based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems built to HVHZ wind code standards for {cityName} homes and commercial properties.
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
@@ -356,7 +356,7 @@ export default function FortLauderdaleMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Emergency Repairs</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      24/7 emergency roof repair service for {cityName}. Whether you have a roof leak or a leaky roof, our skilled team can quickly fix any issue, no matter the cause. We specialize in storm damage repair for roofs affected by severe weather, providing prompt service for active leaks, storm damage, missing shingles, and emergency tarping with same-day response.
+                      24/7 emergency roof repair service for {cityName}. Whether you have a roof leak or a leaky roof, our skilled team can quickly fix any issue, no matter the cause. We specialize in storm damage repair for roofs affected by severe weather, providing prompt service for active leaks, storm damage, missing shingles, and emergency tarping with scheduling guaranteed within 24 hours.
                     </p>
                   </div>
                 </div>
@@ -715,7 +715,7 @@ export default function FortLauderdaleMoneyPage() {
                   <Clock className="w-12 h-12 text-red-600" />
                 </div>
                 <h3 className="font-bold text-white mb-2">24/7 Emergency</h3>
-                <p className="text-sm text-zinc-400">Same-Day Response Available</p>
+                <p className="text-sm text-zinc-400">Scheduling Within 24 Hours</p>
               </div>
               <div>
                 <div className="flex justify-center mb-3">

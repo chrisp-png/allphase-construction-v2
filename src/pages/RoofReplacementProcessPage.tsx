@@ -110,7 +110,7 @@ export default function RoofReplacementProcessPage() {
     },
     {
       question: 'Do you offer financing for roof replacement?',
-      answer: 'Yes, we work with multiple financing partners to offer flexible payment options including zero-interest promotional periods, extended terms up to 20 years, same-day credit decisions, and no prepayment penalties. Many homeowners use insurance proceeds combined with <Link to="/easy-payments" className="text-zinc-500 hover:text-red-500 underline transition-colors">financing</Link> to upgrade to premium materials or cover deductibles.'
+      answer: 'Yes, we work with multiple financing partners to offer flexible payment options including zero-interest promotional periods, extended terms up to 20 years, quick credit decisions, and no prepayment penalties. Many homeowners use insurance proceeds combined with <Link to="/easy-payments" className="text-zinc-500 hover:text-red-500 underline transition-colors">financing</Link> to upgrade to premium materials or cover deductibles.'
     },
     {
       question: 'What warranties come with a new roof?',

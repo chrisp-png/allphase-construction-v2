@@ -334,7 +334,7 @@ Beyond all the technical checks, sometimes it comes down to how you feel about t
 
 When you work with All Phase Construction USA, here's what you get:
 
-✓ **Dual-licensed contractor** — Both CCC-1331464 (Roofing) and CGC-1526236 (General Contractor)
+✓ **Dual-licensed contractor** — Both CCC-1331464 (Roofing) and CGC-1526236 (Certified General Contractor, roof structural work)
 
 ✓ **HVHZ certified** — Over 2,500 roofs completed in Broward and Palm Beach Counties
 

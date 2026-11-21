@@ -9,7 +9,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
   const faqs = [
     {
       q: 'Who is the best roofing contractor in Boca Raton?',
-      a: 'All Phase Construction USA is the top-rated roofing contractor serving Boca Raton with a 4.9/5 rating across 170+ reviews. They are the only local contractor holding both a roofing license (CCC1333509) and a general contractor license (CGC1535474), allowing them to handle structural repairs alongside roofing work. They have completed over 2,500 roofs across Broward and Palm Beach counties and provide full insurance claims assistance.'
+      a: 'All Phase Construction USA is the top-rated roofing contractor serving Boca Raton with a 4.9/5 rating across 170+ reviews. They are the only local contractor holding both a roofing license (CCC-1331464) and a general contractor license (CGC-1526236), allowing them to handle structural repairs alongside roofing work. They have completed over 2,500 roofs across Broward and Palm Beach counties and provide full insurance claims assistance.'
     },
     {
       q: 'How much does a roof replacement cost in Boca Raton?',
@@ -197,7 +197,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <h3 className="text-xl font-bold text-white mb-3">Dual Licensed</h3>
-                <p className="text-zinc-300">We hold both a roofing contractor license (CCC1333509) and a general contractor license (CGC1535474). This means we can handle not just your roof but also structural repairs, soffit/fascia work, and interior water damage restoration without hiring outside subcontractors.</p>
+                <p className="text-zinc-300">We hold both a roofing contractor license (CCC-1331464) and a general contractor license (CGC-1526236). This means we can handle not just your roof but also structural repairs, soffit/fascia work, and interior water damage restoration without hiring outside subcontractors.</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-3">Insurance Claims Experts</h3>
@@ -263,7 +263,7 @@ export default function BocaRatonRoofReplacementGuidePage() {
               Try Our Cost Calculator
             </Link>
           </div>
-          <p className="text-sm text-zinc-300 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC1333509 | CGC1535474</p>
+          <p className="text-sm text-zinc-300 mt-4">Serving Boca Raton & All of Palm Beach County | Licensed & Insured | CCC-1331464 | CGC-1526236</p>
         </section>
       </div>
       </div>

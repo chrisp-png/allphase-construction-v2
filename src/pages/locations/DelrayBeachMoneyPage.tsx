@@ -297,7 +297,7 @@ export default function DelrayBeachMoneyPage() {
                 <div className="bg-[#27272a] border border-zinc-800 rounded-lg p-6 hover:border-red-600 transition-all duration-300">
                   <h3 className="text-xl font-bold text-white mb-3">Emergency Repairs</h3>
                   <p className="text-zinc-300 leading-relaxed">
-                    24/7 emergency roof repair service for Delray Beach. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response. Delaying repairs can lead to mold growth, structural damage, and higher costs. Contact us immediately when you notice any <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline transition-colors">signs of roof damage</Link>.
+                    24/7 emergency roof repair service for Delray Beach. Active leaks, storm damage, missing shingles, and emergency tarping with scheduling guaranteed within 24 hours. Delaying repairs can lead to mold growth, structural damage, and higher costs. Contact us immediately when you notice any <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-500 hover:text-red-400 underline transition-colors">signs of roof damage</Link>.
                   </p>
                 </div>
 

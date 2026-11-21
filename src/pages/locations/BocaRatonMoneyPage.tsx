@@ -96,7 +96,7 @@ export default function BocaRatonMoneyPage() {
               </div>
               <div className="inline-flex items-center gap-2 bg-[#C5A572]/10 text-[#C5A572] px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-[#C5A572]/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing &amp; General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
 
               {/* Expertise.com Award — Best Roofers in Boca Raton 2026 (free program; badge links to Expertise award page) */}
@@ -442,7 +442,7 @@ export default function BocaRatonMoneyPage() {
                   <h3 className="text-2xl font-bold">Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — same-day response for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
+                  Our experienced roofers in {cityName} are available 24/7 for <Link to="/roof-repair/boca-raton" className="text-red-500 hover:text-red-400 underline">emergency roof repair</Link> — scheduling guaranteed within 24 hours for active leaks, storm damage, and missing shingles. Prompt repair prevents mold growth, structural issues, and further deterioration. Learn <Link to="/blog/how-to-file-a-roof-insurance-claim-after-storm-damage" className="text-red-500 hover:text-red-400 underline">how to file a roof insurance claim</Link> after storm damage.
                 </p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-8">

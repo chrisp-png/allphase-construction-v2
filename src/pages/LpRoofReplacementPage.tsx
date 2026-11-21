@@ -225,7 +225,7 @@ export default function LpRoofReplacementPage() {
         {/* Slim footer */}
         <footer className="py-8 px-4 bg-black border-t border-zinc-800 text-center text-sm text-zinc-500">
           <p className="mb-1 font-semibold text-zinc-400">All Phase Construction USA, LLC</p>
-          <p className="mb-1">Licensed &amp; Insured — CCC-1331464 (Roofing) · CGC-1526236 (General Contractor) · GAF Certified Contractor</p>
+          <p className="mb-1">Licensed &amp; Insured — CCC-1331464 (Roofing) · CGC-1526236 (Certified General Contractor, roof structural work) · GAF Certified Contractor</p>
           <p className="mb-1">590 Goolsby Blvd, Deerfield Beach, FL 33442 · <a href="https://www.bbb.org/us/fl/deerfield-bch/profile/roofing-contractors/all-phase-construction-usa-llc-0633-90537640" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">BBB A+ Accredited</a></p>
           <p>© {new Date().getFullYear()} All Phase Construction USA. All rights reserved.</p>
         </footer>

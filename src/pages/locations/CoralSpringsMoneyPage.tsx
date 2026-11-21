@@ -90,12 +90,12 @@ export default function CoralSpringsMoneyPage() {
 
               <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
 
               <div className="prose prose-invert max-w-none mb-8">
                 <p className="text-xl text-zinc-300 leading-relaxed mb-6">
-                  All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464) and certified general contractor (CGC-1526236) serving {cityName}, FL with expert roof replacement, roof repair, and roof inspection services. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems for {cityName} residential and <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial properties</Link>, all built to HVHZ wind code standards.
+                  All Phase Construction USA is a licensed roofing contractor (CCC-1331464, with CGC-1526236 for roof structural work) serving {cityName}, FL with expert roof replacement, roof repair, and roof inspection services. Based in Deerfield Beach with 20+ years of experience, we specialize in tile, metal, shingle, and flat roofing systems for {cityName} residential and <Link to="/commercial-roofing" className="text-red-600 hover:text-red-500 underline transition-colors">commercial properties</Link>, all built to HVHZ wind code standards.
                 </p>
 
                 <p className="text-xl text-zinc-300 leading-relaxed">
@@ -144,7 +144,7 @@ export default function CoralSpringsMoneyPage() {
               </p>
 
               <p>
-                Our CGC license (Certified General Contractor) authorizes us to evaluate and repair the complete structural system supporting your roof. During every {cityName} roof replacement project, we inspect roof deck fastening, assess truss integrity, verify proper connections between the roof structure and exterior walls, and ensure the entire system meets current Florida Building Code requirements. Having a roofing professional with both general contractor and roofing licenses ensures the highest standards of safety and quality for every project. When we identify structural deficiencies, we repair them immediately — keeping your project on schedule under one comprehensive warranty.
+                Our CGC license (Certified General Contractor) authorizes us to evaluate and repair the complete structural system supporting your roof. During every {cityName} roof replacement project, we inspect roof deck fastening, assess truss integrity, verify proper connections between the roof structure and exterior walls, and ensure the entire system meets current Florida Building Code requirements. Having a roofing professional with both roofing and general contractor licenses ensures the highest standards of safety and quality for every project. When we identify structural deficiencies, we repair them immediately — keeping your project on schedule under one comprehensive warranty.
               </p>
 
               <p>
@@ -264,7 +264,7 @@ export default function CoralSpringsMoneyPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Emergency Repairs</h3>
                     <p className="text-zinc-300 leading-relaxed">
-                      24/7 emergency roof repair service for {cityName}. Active leaks, storm damage, missing shingles, and emergency tarping with same-day response. Our team is experienced in quickly diagnosing and repairing roof leaks and addressing issues like a sagging roof to prevent further damage. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link>.
+                      24/7 emergency roof repair service for {cityName}. Active leaks, storm damage, missing shingles, and emergency tarping with scheduling guaranteed within 24 hours. Our team is experienced in quickly diagnosing and repairing roof leaks and addressing issues like a sagging roof to prevent further damage. Learn to recognize <Link to="/blog/how-to-spot-early-signs-of-roof-damage-before-it-gets-expensive" className="text-red-600 hover:text-red-500 underline transition-colors">early signs of roof damage</Link>.
                     </p>
                   </div>
                 </div>
@@ -591,7 +591,7 @@ export default function CoralSpringsMoneyPage() {
                   <Clock className="w-12 h-12 text-red-600" />
                 </div>
                 <h3 className="font-bold text-white mb-2">24/7 Emergency</h3>
-                <p className="text-sm text-zinc-400">Same-Day Response Available</p>
+                <p className="text-sm text-zinc-400">Scheduling Within 24 Hours</p>
               </div>
               <div>
                 <div className="flex justify-center mb-3">

@@ -92,7 +92,7 @@ export default function BoyntonBeachMoneyPage() {
 
               <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-500 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20">
                 <Shield className="w-4 h-4" />
-                Dual-Licensed Roofing & General Contractors (CCC-1331464, CGC-1526236)
+                Licensed Roofing Contractor (CCC-1331464 · CGC-1526236 for roof structural work)
               </div>
 
               <div className="prose prose-invert max-w-none mb-8">
@@ -298,7 +298,7 @@ export default function BoyntonBeachMoneyPage() {
                   <h3 className="text-2xl font-bold">Emergency Repairs</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed mb-4">
-                  Our experienced roofers in {cityName} are available 24/7 to get your roof fixed quickly, providing same-day response for active leaks, storm damage, missing shingles, and <Link to="/roof-repair/boynton-beach" className="text-red-500 hover:text-red-400">emergency roof repair</Link>. Prompt repair of any roof leak is essential to prevent further deterioration and significant damage, including mold growth and structural issues. Delaying roof repairs can lead to more severe problems such as structural damage and health risks. Contact us immediately when noticing any roof damage.
+                  Our experienced roofers in {cityName} are available 24/7 to get your roof fixed quickly, with scheduling guaranteed within 24 hours for active leaks, storm damage, missing shingles, and <Link to="/roof-repair/boynton-beach" className="text-red-500 hover:text-red-400">emergency roof repair</Link>. Prompt repair of any roof leak is essential to prevent further deterioration and significant damage, including mold growth and structural issues. Delaying roof repairs can lead to more severe problems such as structural damage and health risks. Contact us immediately when noticing any roof damage.
                 </p>
               </div>
 

@@ -192,7 +192,7 @@ export default function SinglePlyRoofingPage() {
 
           {/* Direct-Answer Opening for AI Extraction */}
           <p className="text-xl md:text-2xl text-zinc-300 mb-6 leading-relaxed max-w-4xl">
-            All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) specializing in single-ply TPO and PVC roofing systems for commercial buildings across Broward County, Palm Beach County, and South Florida. With 20+ years of experience installing heat-welded membrane systems engineered for HVHZ wind code compliance, we deliver long-term durability for flat and low-slope commercial roofs.
+            All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464, CGC-1526236) specializing in single-ply TPO and PVC roofing systems for commercial buildings across Broward County, Palm Beach County, and South Florida. With 20+ years of experience installing heat-welded membrane systems engineered for HVHZ wind code compliance, we deliver long-term durability for flat and low-slope commercial roofs.
           </p>
 
           <p className="text-lg text-zinc-300 mb-10 leading-relaxed max-w-4xl">

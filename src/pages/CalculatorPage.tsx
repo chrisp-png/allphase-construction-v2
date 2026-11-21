@@ -820,7 +820,7 @@ export default function CalculatorPage() {
                   All Phase Construction USA provides licensed roofing services throughout South Florida, including Boca Raton, Deerfield Beach, Pompano Beach, Fort Lauderdale, Coral Springs, Delray Beach, Boynton Beach, West Palm Beach, Plantation, and surrounding communities in Broward and Palm Beach Counties.
                 </p>
                 <p className="text-zinc-300 leading-relaxed">
-                  CCC-1331464 (Roofing Contractor) –– CGC-1526236 (General Contractor)
+                  CCC-1331464 (Roofing Contractor) –– CGC-1526236 (Certified General Contractor, roof structural work)
                 </p>
               </div>
             </div>

@@ -164,7 +164,7 @@ export default function ServiceAreaPage() {
     },
     {
       question: `What roofing licenses are required in ${cleanCityName}, Florida?`,
-      answer: `${countyName || 'Florida law'} requires roofing contractors to hold either a Florida Certified Roofing Contractor (CCC) license or Florida Certified General Contractor (CGC) license. All Phase Construction USA holds both licenses: CCC-1331464 (Roofing Contractor) and CGC-1526236 (General Contractor). Dual licensing is significant because CCC-only contractors cannot repair structural components like trusses, decking, or roof-to-wall connections—requiring separate contractors and creating delays. Our CGC license authorizes complete structural evaluation and repair, eliminating these problems. Verify any contractor's license at MyFloridaLicense.com before hiring.`
+      answer: `${countyName || 'Florida law'} requires roofing contractors to hold either a Florida Certified Roofing Contractor (CCC) license or Florida Certified General Contractor (CGC) license. All Phase Construction USA holds both licenses: CCC-1331464 (Roofing Contractor) and CGC-1526236 (Certified General Contractor, roof structural work). Dual licensing is significant because CCC-only contractors cannot repair structural components like trusses, decking, or roof-to-wall connections—requiring separate contractors and creating delays. Our CGC license authorizes complete structural evaluation and repair, eliminating these problems. Verify any contractor's license at MyFloridaLicense.com before hiring.`
     }
   ] : [];
 

@@ -161,7 +161,7 @@ export default function RoofInspectionPage() {
 
           {/* Direct-Answer Opening for AI Extraction */}
           <p className="text-xl text-zinc-300 leading-relaxed mb-6 max-w-4xl">
-            All Phase Construction USA is a dual-licensed roofing and general contractor (CCC-1331464, CGC-1526236) providing professional roof inspection services across Broward County and Palm Beach County, Florida. Our diagnostic roof evaluations are performed by licensed roofing contractors who deliver evidence-based assessments to determine roof condition, identify deficiencies, and provide the information homeowners and businesses need to make informed repair-versus-replacement decisions.
+            All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464, CGC-1526236) providing professional roof inspection services across Broward County and Palm Beach County, Florida. Our diagnostic roof evaluations are performed by licensed roofing contractors who deliver evidence-based assessments to determine roof condition, identify deficiencies, and provide the information homeowners and businesses need to make informed repair-versus-replacement decisions.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-8 max-w-4xl">
@@ -1021,7 +1021,7 @@ export default function RoofInspectionPage() {
               Florida Statute 627.7011(5) authorizes specific license classifications to certify remaining roof life for insurance purposes. Licensed roofing contractors (CCC), general contractors (CGC), building contractors (CBC), and residential contractors (CRC) all qualify under the statute. Home inspectors and unlicensed individuals do not. Insurance carriers typically require certification from statutorily authorized inspectors.
             </p>
             <p>
-              All Phase Construction USA holds both General Contractor (CGC-1526236) and Roofing Contractor (CCC-1331464) licenses. Our inspections are performed by personnel with direct installation experience across all common roofing systems used in South Florida, familiarity with HVHZ requirements, and the statutory authorization to provide insurance certification letters when conditions warrant.
+              All Phase Construction USA holds both Roofing Contractor (CCC-1331464) and General Contractor (CGC-1526236) licenses. Our inspections are performed by personnel with direct installation experience across all common roofing systems used in South Florida, familiarity with HVHZ requirements, and the statutory authorization to provide insurance certification letters when conditions warrant.
             </p>
           </div>
 
