@@ -371,7 +371,7 @@ export const locations: Location[] = [
     neighborhoods:["Coral Heights","Lake Estates","Royal Palm Acres","Bayview"],
     zips:["33304","33306","33308","33309","33311","33334"],
     landmarks:["Cypress Creek industrial corridor","Oakland Park Boulevard","NE 38th Street"],
-    localHook:"Oakland Park has a heavier-than-average flat-roof inventory because of its mid-century housing stock. We run TPO PVC and modified bitumen here alongside the steep-slope replacements." },
+    localHook:"Oakland Park has a heavier-than-average flat-roof inventory because of its mid-century housing stock. We run PVC, TPO and modified bitumen here alongside the steep-slope replacements." },
   { slug:"wilton-manors", city:"Wilton Manors", state:"FL", county:"Broward", hvhz:true,
     titleOverride:"Wilton Manors Mid-Century Roof Replacement | All Phase",
     descriptionOverride:"Wilton Manors roof replacement. Mid-century, ranch & MiMo home specialists. HVHZ-certified. Free inspection.",

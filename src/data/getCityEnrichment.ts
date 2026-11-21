@@ -308,7 +308,7 @@ const ENRICHMENT: Record<string, Omit<CityEnrichment, 'slug'>> = {
     neighborhoods: ['Coral Heights', 'Lake Estates', 'Royal Palm Acres', 'Bayview'],
     zips: ['33304', '33306', '33308', '33309', '33311', '33334'],
     landmarks: ['Cypress Creek industrial corridor', 'Oakland Park Boulevard', 'NE 38th Street'],
-    localHook: 'Oakland Park has a heavier-than-average flat-roof inventory because of its mid-century housing stock. We run TPO PVC and modified bitumen here alongside the steep-slope replacements.',
+    localHook: 'Oakland Park has a heavier-than-average flat-roof inventory because of its mid-century housing stock. We run PVC, TPO and modified bitumen here alongside the steep-slope replacements.',
   },
   'ocean-ridge': {
     city: 'Ocean Ridge', county: 'Palm Beach', hvhz: false,

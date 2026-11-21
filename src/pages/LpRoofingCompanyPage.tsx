@@ -140,18 +140,6 @@ export default function LpRoofingCompanyPage() {
             <p className="text-zinc-300 text-lg text-center max-w-3xl mx-auto mb-8">
               Deerfield Beach, Boca Raton, Pompano Beach, Fort Lauderdale, Coral Springs, Parkland, Coconut Creek, Delray Beach, Boynton Beach, Wellington, West Palm Beach — and 40+ more cities, dispatched daily from our Deerfield Beach headquarters.
             </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <blockquote className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-zinc-300">
-                <div className="flex gap-1 mb-3">{[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}</div>
-                <p className="mb-3">&ldquo;Honest pricing and a real warranty. The crew protected our landscaping and left the driveway cleaner than they found it.&rdquo;</p>
-                <footer className="text-zinc-500 font-semibold">&mdash; Jennifer P.</footer>
-              </blockquote>
-              <blockquote className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-zinc-300">
-                <div className="flex gap-1 mb-3">{[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}</div>
-                <p className="mb-3">&ldquo;The foreman walked the job with me twice a day, and the final invoice matched the quote to the dollar.&rdquo;</p>
-                <footer className="text-zinc-500 font-semibold">&mdash; Mike R.</footer>
-              </blockquote>
-            </div>
             <p className="text-center text-zinc-400 mt-6">4.9 stars across 160+ Google reviews</p>
           </div>
         </section>

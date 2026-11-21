@@ -63,7 +63,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
     {
       icon: <Layers className="w-8 h-8 text-red-600" />,
       title: "Membrane Condition Assessment",
-      description: "Material-specific evaluation of TPO, PVC, EPDM, modified bitumen, or built-up roofing systems for punctures, shrinkage, delamination, and UV degradation"
+      description: "Material-specific evaluation of PVC, TPO, EPDM, modified bitumen, or built-up roofing systems for punctures, shrinkage, delamination, and UV degradation"
     },
     {
       icon: <Shield className="w-8 h-8 text-red-600" />,
@@ -153,7 +153,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
 
           {/* Subhead */}
           <p className="text-xl text-zinc-300 leading-relaxed mb-8 max-w-4xl">
-            <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic evaluation</Link> of commercial and low-slope residential roofing systems. Material-specific inspection protocols for <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">TPO, PVC, EPDM, modified bitumen, and built-up roofing</Link> assemblies. Licensed contractor analysis focused on drainage performance, fastening integrity, and code compliance in High Velocity Hurricane Zone jurisdictions.
+            <Link to="/roof-inspection/" className="text-red-500 hover:text-red-400 underline transition-colors">Diagnostic evaluation</Link> of commercial and low-slope residential roofing systems. Material-specific inspection protocols for <Link to="/flat-roofing/" className="text-red-500 hover:text-red-400 underline transition-colors">PVC, TPO, EPDM, modified bitumen, and built-up roofing</Link> assemblies. Licensed contractor analysis focused on drainage performance, fastening integrity, and code compliance in High Velocity Hurricane Zone jurisdictions.
           </p>
 
           {/* CTA Buttons */}
@@ -231,7 +231,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-3">Seam Fatigue Without Symptoms</h3>
                   <p className="text-zinc-300 leading-relaxed text-lg">
-                    Heat-welded seams on TPO and PVC membranes separate due to incomplete fusion, thermal stress, or contamination during installation. Adhesive seams on EPDM degrade from UV exposure. These failures admit wind-driven rain that accumulates in the roofing assembly—with no visible surface indicators.
+                    Heat-welded seams on PVC and TPO membranes separate due to incomplete fusion, thermal stress, or contamination during installation. Adhesive seams on EPDM degrade from UV exposure. These failures admit wind-driven rain that accumulates in the roofing assembly—with no visible surface indicators.
                   </p>
                   <p className="text-red-400 font-semibold mt-4">
                     Seam failure is invisible from above until the membrane pulls apart under stress.
@@ -590,7 +590,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-3">Seam Failure Without Symptoms</h3>
                   <p className="text-zinc-300 leading-relaxed text-lg">
-                    Heat-welded seams on TPO and PVC membranes can separate due to incomplete fusion, contamination during installation, or thermal stress—without producing visible surface indicators. Adhesive seams on EPDM degrade from UV exposure and thermal cycling. These failures admit wind-driven rain that accumulates in the roofing assembly before interior evidence appears.
+                    Heat-welded seams on PVC and TPO membranes can separate due to incomplete fusion, contamination during installation, or thermal stress—without producing visible surface indicators. Adhesive seams on EPDM degrade from UV exposure and thermal cycling. These failures admit wind-driven rain that accumulates in the roofing assembly before interior evidence appears.
                   </p>
                 </div>
               </div>
@@ -825,7 +825,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                     Seam and Membrane Integrity Evaluation
                   </h3>
                   <p className="text-zinc-300 text-lg leading-relaxed">
-                    Systematic probing of heat-welded seams on TPO and PVC systems. Adhesion testing of tape-seamed EPDM joints. Visual examination for membrane shrinkage, punctures, and surface degradation.
+                    Systematic probing of heat-welded seams on PVC and TPO systems. Adhesion testing of tape-seamed EPDM joints. Visual examination for membrane shrinkage, punctures, and surface degradation.
                   </p>
                 </div>
               </div>
@@ -1020,7 +1020,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
                 <h3 className="text-2xl font-bold text-white">High UV Degradation</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed text-lg mb-4">
-                South Florida receives among the highest annual UV radiation exposure in the continental United States. Ultraviolet degradation affects all membrane materials—causing polymer chain scission, surface chalking, and loss of plasticizer content. TPO and PVC membranes become brittle and prone to cracking; modified bitumen oxidizes and loses flexibility.
+                South Florida receives among the highest annual UV radiation exposure in the continental United States. Ultraviolet degradation affects all membrane materials—causing polymer chain scission, surface chalking, and loss of plasticizer content. PVC and TPO membranes become brittle and prone to cracking; modified bitumen oxidizes and loses flexibility.
               </p>
               <p className="text-zinc-300 leading-relaxed text-lg">
                 UV damage accelerates at edges, seams, and high-stress areas. Inspection establishes the degree of UV-induced deterioration and determines whether membrane replacement or surface coating provides appropriate intervention.

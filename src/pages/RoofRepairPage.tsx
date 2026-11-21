@@ -702,7 +702,7 @@ export default function RoofRepairPage() {
 
                 <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-5">
                   <h3 className="text-lg font-bold text-white mb-2">Flat Roof Membrane Damage</h3>
-                  <p className="text-zinc-400">TPO, PVC, and modified bitumen flat roofs on commercial buildings and Florida-style homes develop seam separations, punctures from debris, and ponding issues. Our dual license (CGC/CCC) means we can address both the membrane and any structural drainage issues in one scope of work.</p>
+                  <p className="text-zinc-400">PVC, TPO, and modified bitumen flat roofs on commercial buildings and Florida-style homes develop seam separations, punctures from debris, and ponding issues. Our dual license (CGC/CCC) means we can address both the membrane and any structural drainage issues in one scope of work.</p>
                 </div>
               </div>
 

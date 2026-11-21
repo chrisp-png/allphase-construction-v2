@@ -1,4 +1,4 @@
-# Florida Flat Roof Cost 2026: $9K-$22K (TPO, PVC, EPDM Guide)
+# Florida Flat Roof Cost 2026: $9K-$22K (PVC, TPO, EPDM Guide)
 
 **Updated May 7, 2026.** Flat roofs are a real category in Florida residential roofing — not just a commercial system pressed into service. Modern architecture, mid-century homes, screened-porch additions, and second-story rooftop decks all rely on flat-roof construction. This guide walks through the four membrane systems used on Florida homes in 2026, the HVHZ rules that govern them in Broward County, the prevailing voluntary HVHZ-spec standard in Palm Beach County, current 2026 cost ranges, and the decision logic for when a flat roof is the right call versus a sloped alternative.
 
@@ -86,7 +86,7 @@ A properly installed flat roof in Florida needs annual inspection — twice a ye
 
 Most issues are caught and fixed at this maintenance level for a few hundred dollars; left ignored, the same issue becomes a leak that requires partial membrane replacement at the cost of a few thousand dollars.
 
-**Most flat-roof manufacturer warranties** (10 to 20 years for TPO and PVC) require documented annual inspections. Skipping the inspections doesn't just risk leaks — it can void the warranty.
+**Most flat-roof manufacturer warranties** (10 to 20 years for PVC and TPO) require documented annual inspections. Skipping the inspections doesn't just risk leaks — it can void the warranty.
 
 ---
 
@@ -98,7 +98,7 @@ Call **(754) 227-5605** for a free in-person flat-roof inspection. We document m
 
 ## Related reading
 
-- [Single-Ply Commercial Roofing — TPO, PVC, EPDM](/single-ply-roofing) — the commercial deep dive that complements this residential guide
+- [Single-Ply Commercial Roofing — PVC, TPO, EPDM](/single-ply-roofing) — the commercial deep dive that complements this residential guide
 - [Tile Roofing Installation, Repair, and Lift-and-Relay](/tile-roofing) — when a flat roof isn't the right answer for the main roof area
 - [Roof Cost Calculator](/roof-cost-calculator) — preliminary 2026 estimate by material and pitch
 - [Frequently Asked Questions](/frequently-asked-questions) — 12 plain-English answers including the NOA verification flow

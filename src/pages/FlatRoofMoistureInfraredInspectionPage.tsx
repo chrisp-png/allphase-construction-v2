@@ -276,7 +276,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
                   terminates at perimeter walls or parapets.
                 </p>
                 <p className="text-zinc-300 text-lg leading-relaxed">
-                  Single-ply membranes (TPO, PVC, EPDM) are impermeable when intact—but a 1-inch seam
+                  Single-ply membranes (PVC, TPO, EPDM) are impermeable when intact—but a 1-inch seam
                   separation or quarter-sized puncture provides sufficient entry for gallons of water during
                   a typical South Florida thunderstorm. The membrane surface may appear completely intact
                   except at the specific 2-3 inch failure zone.
@@ -1588,7 +1588,7 @@ export default function FlatRoofMoistureInfraredInspectionPage() {
                 Flat Roof Inspection — Broward County
               </h3>
               <p className="text-zinc-400">
-                Comprehensive diagnostic evaluation for TPO, PVC, EPDM, and modified bitumen systems
+                Comprehensive diagnostic evaluation for PVC, TPO, EPDM, and modified bitumen systems
               </p>
             </Link>
 

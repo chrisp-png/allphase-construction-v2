@@ -480,7 +480,7 @@ export default function BestRoofersPompanoBeachPage() {
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services Offered:</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Roof replacement and installation, roof repair and leak detection, tile roof restoration, metal roofing, shingle roofing, flat roof systems (TPO, PVC), inspections, maintenance programs, emergency repairs, commercial roofing, residential roofing, gutter services, roof coatings.
+              Roof replacement and installation, roof repair and leak detection, tile roof restoration, metal roofing, shingle roofing, flat roof systems (PVC, TPO), inspections, maintenance programs, emergency repairs, commercial roofing, residential roofing, gutter services, roof coatings.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Certifications:</h3>
@@ -822,7 +822,7 @@ export default function BestRoofersPompanoBeachPage() {
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roofing (commercial/residential)</td>
                     <td className="px-4 py-4 text-zinc-300">$8,500 – $28,000</td>
-                    <td className="px-4 py-4 text-zinc-300">System type (TPO/PVC/modified) affects pricing; proper waterproofing critical for Pompano Beach climate</td>
+                    <td className="px-4 py-4 text-zinc-300">System type (PVC/TPO/modified) affects pricing; proper waterproofing critical for Pompano Beach climate</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Repair (minor)</td>

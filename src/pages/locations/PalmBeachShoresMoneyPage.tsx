@@ -18,7 +18,7 @@ export default function PalmBeachShoresMoneyPage() {
   const faqs = [
     { q: 'How much does a roof replacement cost in Palm Beach Shores?', a: 'A roof replacement in Palm Beach Shores typically runs $12,000 to $40,000 in 2026 for homes, with coastal tile and metal at the higher end. Condo-association roofs are priced by the building.' },
     { q: 'How do you protect a Palm Beach Shores roof from salt air?', a: 'With water on three sides of the island, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt corrodes the metal components long before the roofing surface wears out.' },
-    { q: 'Do you do condo roofing in Palm Beach Shores?', a: "Yes. We handle low-slope association roofs in TPO, PVC, and modified bitumen on Palm Beach Shores' condos, with marine-grade detailing for the salt, and coordinate board approvals and seasonal-owner schedules." },
+    { q: 'Do you do condo roofing in Palm Beach Shores?', a: "Yes. We handle low-slope association roofs in PVC, TPO, and modified bitumen on Palm Beach Shores' condos, with marine-grade detailing for the salt, and coordinate board approvals and seasonal-owner schedules." },
     { q: 'Is Palm Beach Shores in the High-Velocity Hurricane Zone?', a: 'Palm Beach County is not legally HVHZ, but on the tip of a barrier island we voluntarily build every roof to Miami-Dade HVHZ spec, the strictest wind standard in the country, for maximum protection and insurance eligibility.' }
   ];
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
@@ -60,7 +60,7 @@ export default function PalmBeachShoresMoneyPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Beach Homes, Condos, and Marina Waterfront</h2>
-            <p className="text-zinc-300 leading-relaxed mb-4">Palm Beach Shores mixes single-family beach homes with low- and mid-rise condos. The homes call for tile, metal, and flat roofs built for salt; the condos need code-compliant low-slope association roofs in TPO, PVC, or modified bitumen. On all of them we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">Palm Beach Shores mixes single-family beach homes with low- and mid-rise condos. The homes call for tile, metal, and flat roofs built for salt; the condos need code-compliant low-slope association roofs in PVC, TPO, or modified bitumen. On all of them we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment.</p>
             <p className="text-zinc-300 leading-relaxed mb-4">As a dual-licensed general contractor, we coordinate with condo associations and seasonal owners and handle any decking or structural work an older island home uncovers on the same permit.</p>
           </div>
         </section>

@@ -17,7 +17,7 @@ export default function PembrokeParkMoneyPage() {
   const businessSchema = generateLocalBusinessSchema({ cityName: 'Pembroke Park', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude });
   const faqs = [
     { q: 'How much does a roof replacement cost in Pembroke Park?', a: 'A roof replacement on a site-built Pembroke Park home typically runs $10,000 to $28,000 in 2026, depending on size and material. Commercial and warehouse flat roofs are priced by the building and square footage.' },
-    { q: 'Do you do commercial and warehouse roofing in Pembroke Park?', a: "Yes. Pembroke Park has one of Broward's densest concentrations of warehouses and distribution centers, and commercial flat roofing — TPO, PVC, and modified bitumen — is a core service. We handle re-roofs and full replacements on industrial and commercial buildings." },
+    { q: 'Do you do commercial and warehouse roofing in Pembroke Park?', a: "Yes. Pembroke Park has one of Broward's densest concentrations of warehouses and distribution centers, and commercial flat roofing — PVC, TPO, and modified bitumen — is a core service. We handle re-roofs and full replacements on industrial and commercial buildings." },
     { q: 'Is Pembroke Park in the High-Velocity Hurricane Zone?', a: 'Yes. Pembroke Park is in Broward County, which is legally within the High-Velocity Hurricane Zone, so every roof — residential or commercial — must meet Miami-Dade HVHZ code, the strictest wind standard in the country. We build to it on every job.' },
     { q: 'My Pembroke Park home is older — should I replace the roof?', a: "Many Pembroke Park site-built homes date to the town's mid-century origins. If yours is still on an original or second roof, it is very likely past service life — and roof age is now the top reason Florida insurers issue non-renewals. A free inspection tells you exactly where you stand." }
   ];
@@ -61,7 +61,7 @@ export default function PembrokeParkMoneyPage() {
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Site-Built Homes, Townhomes, and Commercial Flat Roofs</h2>
             <p className="text-zinc-300 leading-relaxed mb-4">While Pembroke Park is known for its mobile-home parks, it’s also full of the work we do best. Trinity and Holiday Village are established neighborhoods of affordable, site-built starter homes; the Western Edge is newer townhomes and villas; and the town’s industrial core is one of Broward’s densest concentrations of warehouse and distribution buildings.</p>
-            <p className="text-zinc-300 leading-relaxed mb-4">That mix means we handle single-family shingle and tile replacements, townhome and villa roofs with HOA coordination, and — a specialty here — large commercial and warehouse flat roofs in TPO, PVC, and modified bitumen. As a dual-licensed roofing contractor, we’re built for both the house and the distribution center.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">That mix means we handle single-family shingle and tile replacements, townhome and villa roofs with HOA coordination, and — a specialty here — large commercial and warehouse flat roofs in PVC, TPO, and modified bitumen. As a dual-licensed roofing contractor, we’re built for both the house and the distribution center.</p>
           </div>
         </section>
 

@@ -42,7 +42,7 @@ export default function FlatRoofingPage() {
   }, []);
 
   const pageUrl = 'https://allphaseconstructionfl.com/flat-roofing';
-  const pageDescription = 'Flat roofing installation and repair services in South Florida. TPO, PVC, modified bitumen, and EPDM systems for residential and commercial properties. HVHZ compliant installations.';
+  const pageDescription = 'Flat roofing installation and repair services in South Florida. PVC, TPO, modified bitumen, and EPDM systems for residential and commercial properties. HVHZ compliant installations.';
 
   const localBusinessSchema = generateLocalBusinessSchema(pageUrl);
   const serviceSchema = generateServiceSchema(
@@ -54,7 +54,7 @@ export default function FlatRoofingPage() {
   const faqs = [
     {
       q: "How long does a flat roof last in Florida?",
-      a: "With proper installation and materials, TPO and PVC systems last 20-30 years, and modified bitumen 15-20 years. However, poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation."
+      a: "With proper installation and materials, PVC and TPO systems last 20-30 years, and modified bitumen 15-20 years. However, poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation."
     },
     {
       q: "What causes flat roof leaks?",
@@ -117,7 +117,7 @@ export default function FlatRoofingPage() {
     <>
       {/* Schema is injected by prerender-static.mjs at build time — do NOT pass schema here */}
       <SEO
-        title="Flat Roofing Broward & Palm Beach | TPO & PVC | All Phase"
+        title="Flat Roofing Broward & Palm Beach | PVC & TPO | All Phase"
         description={pageDescription}
         canonical={pageUrl}
       />
@@ -142,7 +142,7 @@ export default function FlatRoofingPage() {
 
           {/* Subhead */}
           <p className="text-xl md:text-2xl text-zinc-300 mb-4 max-w-4xl leading-relaxed">
-            Most flat roof problems aren't material failures — they're installation failures. We install TPO, PVC, and modified bitumen systems with the precision that South Florida's hurricane zone demands.
+            Most flat roof problems aren't material failures — they're installation failures. We install PVC, TPO, and modified bitumen systems with the precision that South Florida's hurricane zone demands.
           </p>
 
           <p className="text-lg text-zinc-400 mb-8 max-w-4xl">
@@ -318,7 +318,7 @@ export default function FlatRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Seam Failures</h3>
               <p className="text-zinc-400 text-sm">
-                TPO and PVC roofs are only as strong as their heat-welded seams. If the welder runs too hot, you burn the stabilizers. Too cold, and the seam looks fine but fails within years. Most contractors don't calibrate their equipment for Florida's conditions.
+                PVC and TPO roofs are only as strong as their heat-welded seams. If the welder runs too hot, you burn the stabilizers. Too cold, and the seam looks fine but fails within years. Most contractors don't calibrate their equipment for Florida's conditions.
               </p>
             </div>
 

@@ -343,12 +343,12 @@ export default function BestRoofersHollywoodPage() {
             </div>
 
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Rainbow Roofing Solutions has served South Florida since 1985 — 35+ years of experience in the most challenging roofing environment in America. Member of the Roofing Contractors Association of South Florida, GAF Authorized Roofing Contractor, and holder of Florida license CCC1329656, Rainbow specializes in commercial flat roofs, TPO, PVC, spray foam coatings, and emergency post-hurricane repair services. Their 24/7 emergency availability is critical in an HVHZ zone — when storms hit, Rainbow answers the phone.
+              Rainbow Roofing Solutions has served South Florida since 1985 — 35+ years of experience in the most challenging roofing environment in America. Member of the Roofing Contractors Association of South Florida, GAF Authorized Roofing Contractor, and holder of Florida license CCC1329656, Rainbow specializes in commercial flat roofs, PVC, TPO, spray foam coatings, and emergency post-hurricane repair services. Their 24/7 emergency availability is critical in an HVHZ zone — when storms hit, Rainbow answers the phone.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Services:</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Commercial flat roof replacement and repair (TPO, PVC, modified bitumen, spray foam), residential shingle and tile repair, emergency tarping and stabilization, preventive maintenance programs, roof coatings and restoration, 24/7 post-hurricane emergency services, insurance claim coordination.
+              Commercial flat roof replacement and repair (PVC, TPO, modified bitumen, spray foam), residential shingle and tile repair, emergency tarping and stabilization, preventive maintenance programs, roof coatings and restoration, 24/7 post-hurricane emergency services, insurance claim coordination.
             </p>
 
             <h3 className="text-xl font-bold text-white mt-6 mb-3">Standouts:</h3>
@@ -745,7 +745,7 @@ export default function BestRoofersHollywoodPage() {
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roofing (commercial/residential)</td>
                     <td className="px-4 py-4 text-zinc-300">$8,000 – $25,000</td>
-                    <td className="px-4 py-4 text-zinc-300">System type (TPO/PVC/modified) affects pricing; Broadwalk area premium</td>
+                    <td className="px-4 py-4 text-zinc-300">System type (PVC/TPO/modified) affects pricing; Broadwalk area premium</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Repair (minor)</td>

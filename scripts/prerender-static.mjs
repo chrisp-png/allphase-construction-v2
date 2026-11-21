@@ -150,7 +150,7 @@ function companyAuthorityFooter(county = null) {
 
   <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Complete Roofing Services</h3>
   <p style="color: #374151; line-height: 1.75; margin-bottom: 1rem;">
-    All Phase Construction USA provides comprehensive residential and commercial roofing services including roof replacement, emergency roof repair, professional roof inspections, tile roofing, metal roofing, shingle roofing, flat roofing (TPO/PVC), roof maintenance programs, and storm damage restoration. We work with all major roofing materials and provide manufacturer-backed warranties on every installation.
+    All Phase Construction USA provides comprehensive residential and commercial roofing services including roof replacement, emergency roof repair, professional roof inspections, tile roofing, metal roofing, shingle roofing, flat roofing (PVC/TPO), roof maintenance programs, and storm damage restoration. We work with all major roofing materials and provide manufacturer-backed warranties on every installation.
   </p>
 
   <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 0.75rem;">Our Service Area</h3>
@@ -213,7 +213,7 @@ function generateDeerfieldBeachHQContent() {
   <p>Our comprehensive 21-point roof inspection protocol evaluates every critical roofing system component from our Deerfield Beach base. We inspect exterior roofing materials (shingles, tiles, membranes), flashing integrity at all penetrations and transitions, valley condition, ridge cap installation, soffit and fascia condition, interior attic ventilation, insulation adequacy, structural decking soundness, and evidence of water intrusion or biological growth. Every Deerfield Beach inspection includes detailed photo documentation, written professional reports, cost estimates for recommended repairs, and lifespan assessments for budget planning. Perfect for pre-purchase evaluations, insurance documentation, storm damage assessment, and proactive maintenance planning. <a href="/roof-inspection/deerfield-beach" style="color: #dc2626; text-decoration: underline;">Schedule a free Deerfield Beach roof inspection</a>.</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Roof Replacement & New Construction</h3>
-  <p>All Phase Construction USA installs all major roofing systems throughout Deerfield Beach including architectural asphalt shingles, concrete and clay tile roofing, standing seam and corrugated metal roofing, TPO and PVC single-ply membranes, and modified bitumen systems. Every installation includes manufacturer-backed warranties, building department permitting and inspections, HVHZ compliance where required, and comprehensive project documentation. Our dual-licensing (CCC & CGC) enables us to handle complex structural modifications, load-bearing assessments, and integrated building envelope improvements that standard roofing contractors cannot perform.</p>
+  <p>All Phase Construction USA installs all major roofing systems throughout Deerfield Beach including architectural asphalt shingles, concrete and clay tile roofing, standing seam and corrugated metal roofing, PVC and TPO single-ply membranes, and modified bitumen systems. Every installation includes manufacturer-backed warranties, building department permitting and inspections, HVHZ compliance where required, and comprehensive project documentation. Our dual-licensing (CCC & CGC) enables us to handle complex structural modifications, load-bearing assessments, and integrated building envelope improvements that standard roofing contractors cannot perform.</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Commercial Roofing Services</h3>
   <p>We serve Deerfield Beach commercial properties including multi-family buildings, retail centers, office buildings, industrial facilities, and HOA communities with specialized commercial roofing expertise. Our services include flat roof restoration, cool roof coatings, preventative maintenance programs, emergency repairs, and complete roof replacement. Our CGC license provides authority to handle structural modifications, parapet repairs, and comprehensive building envelope projects.</p>
@@ -324,7 +324,7 @@ function generateBocaRatonServiceHubContent() {
         <div style="display: flex; align-items: center; gap: 0.5rem;">
           <span style="color: #fbbf24; font-size: 1.25rem;">⭐⭐⭐⭐⭐</span>
           <span style="color: #e5e7eb; font-weight: 600;">4.9 Google Rating</span>
-          <span style="color: #9ca3af;">(137 reviews)</span>
+          <span style="color: #9ca3af;">(160+ reviews)</span>
         </div>
       </div>
     </div>
@@ -450,7 +450,7 @@ function generateBocaRatonServiceHubContent() {
 
         <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
           <div style="color: #fbbf24; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">4.9⭐</div>
-          <div style="color: #e5e7eb; font-weight: 600;">Google Rating (137 reviews)</div>
+          <div style="color: #e5e7eb; font-weight: 600;">Google Rating (160+ reviews)</div>
         </div>
 
         <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
@@ -972,7 +972,7 @@ function generateEnhancedServiceHubContent(cityName, citySlug, location = null) 
   <p>Our comprehensive inspection protocol evaluates every critical roofing system component for ${cityName} properties: exterior material condition, flashing integrity, valley and ridge condition, soffit and fascia health, structural decking soundness, attic ventilation adequacy, and moisture intrusion evidence. Every inspection includes detailed photo documentation, written professional reports, and maintenance recommendations. <a href="/roof-inspection/${citySlug}" style="color: #dc2626; text-decoration: underline;">Schedule a free roof inspection in ${cityName}</a>.</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Complete Roof Replacement</h3>
-  <p>We install all major roofing systems throughout ${cityName}: architectural asphalt shingles, concrete and clay tile, standing seam and corrugated metal, TPO and PVC single-ply membranes, and modified bitumen systems. Every replacement includes removal and disposal of existing materials, thorough decking inspection and repair, code-compliant underlayment and flashing, and ${complianceLabel} installation methods.</p>
+  <p>We install all major roofing systems throughout ${cityName}: architectural asphalt shingles, concrete and clay tile, standing seam and corrugated metal, PVC and TPO single-ply membranes, and modified bitumen systems. Every replacement includes removal and disposal of existing materials, thorough decking inspection and repair, code-compliant underlayment and flashing, and ${complianceLabel} installation methods.</p>
 
   <h2>About ${cityName}</h2>
   <p>${data.localFact}</p>
@@ -1124,7 +1124,7 @@ function generateServiceHubContent(cityName, citySlug, location = null) {
   <p>Our comprehensive 21-point roof inspection covers every critical component including underlayment condition, flashing integrity, ventilation adequacy, and structural soundness. Perfect for pre-purchase evaluations, insurance documentation, and maintenance planning.${inlineInspectCta}</p>
 
   <h3 style="font-size: 1.15rem; font-weight: bold; margin-top: 1.5rem;">Roof Replacement Systems</h3>
-  <p>We install all major roof replacement systems in ${cityName} including architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat roofing. ${replacementSentence}</p>
+  <p>We install all major roof replacement systems in ${cityName} including architectural shingles, concrete and clay tile, standing seam metal, and PVC/TPO flat roofing. ${replacementSentence}</p>
 
   <h2>Serving ${cityName} from Our Deerfield Beach Headquarters</h2>
   <p>All Phase Construction USA operates from 590 Goolsby Blvd in Deerfield Beach, providing consistent, reliable roofing services throughout ${cityName} and surrounding South Florida communities. Our central location enables rapid response times and efficient project coordination across Broward and Palm Beach Counties.</p>
@@ -1716,7 +1716,7 @@ function generatePricingGuideHubContent() {
     <li><strong>Concrete tile (lift-and-relay, reusing original tile)</strong> — typically meaningfully less than full replacement.</li>
     <li><strong>Clay tile</strong> — roughly $40,000 to $70,000+.</li>
     <li><strong>Standing-seam metal</strong> — roughly $30,000 to $55,000.</li>
-    <li><strong>Flat roof recover (TPO/PVC)</strong> — roughly $9 to $14 per square foot of flat area.</li>
+    <li><strong>Flat roof recover (PVC/TPO)</strong> — roughly $9 to $14 per square foot of flat area.</li>
   </ul>
 
   <h2>The four cost drivers that actually move the number</h2>
@@ -1744,16 +1744,16 @@ function generatePricingGuideHubContent() {
 /**
  * /single-ply-roofing hub content (PR-47)
  *
- * Commercial flat-roof landing — TPO, PVC, EPDM. Sub-service of /flat-roofing
+ * Commercial flat-roof landing — PVC, TPO, EPDM. Sub-service of /flat-roofing
  * but kept as its own URL because of standing search demand for the
  * material name.
  */
 function generateSinglePlyRoofingHubContent() {
   return `
 <section id="seo-static-content">
-  <h1>Single-Ply Commercial Roofing — TPO, PVC, EPDM</h1>
+  <h1>Single-Ply Commercial Roofing — PVC, TPO, EPDM</h1>
 
-  <p><strong>Single-ply membrane roofing is the dominant commercial flat-roof category in South Florida.</strong> All Phase Construction USA installs and recovers TPO, PVC, and EPDM single-ply systems on commercial buildings, condominium associations, and modern flat-roof residential homes throughout Broward County and Palm Beach County.</p>
+  <p><strong>Single-ply membrane roofing is the dominant commercial flat-roof category in South Florida.</strong> All Phase Construction USA installs and recovers PVC, TPO, and EPDM single-ply systems on commercial buildings, condominium associations, and modern flat-roof residential homes throughout Broward County and Palm Beach County.</p>
 
   <h2>The three single-ply systems and where each fits</h2>
 
@@ -1774,7 +1774,7 @@ function generateSinglePlyRoofingHubContent() {
     <li><strong>Modern flat-roof residential homes</strong> in Fort Lauderdale, Boca Raton, Wilton Manors — typically TPO with full tapered insulation for proper drainage.</li>
     <li><strong>Strip-mall and small-office commercial</strong> — TPO is the default; PVC if the tenant mix includes restaurants.</li>
     <li><strong>Condominium common-area roofs</strong> — TPO recover over the existing modified-bitumen system, staged building-by-building so residents keep using the parking and walkways.</li>
-    <li><strong>Industrial / warehouse</strong> — TPO or PVC depending on rooftop exposure profile.</li>
+    <li><strong>Industrial / warehouse</strong> — PVC or TPO depending on rooftop exposure profile.</li>
     <li><strong>HVAC / equipment-heavy roofs</strong> — PVC for chemical resistance around exhaust stacks.</li>
   </ul>
 
@@ -1782,7 +1782,7 @@ function generateSinglePlyRoofingHubContent() {
   <p>Modified-bitumen (mod-bit, hot-applied or cold-process) is the older flat-roof category and still in service on a large number of South Florida buildings. Modern single-ply systems generally offer easier installation, better seam reliability (heat-welded vs. torch-down), and lighter weight. A common path forward on aging mod-bit roofs is a TPO recover with new tapered insulation, rather than a full tear-off.</p>
 
   <h2>Schedule a commercial flat-roof inspection</h2>
-  <p>Call <strong>(754) 227-5605</strong> for a free in-person commercial flat-roof inspection. We document membrane condition, drainage performance, edge-metal integrity, and existing penetration detail. Written recover-vs-replace recommendations with photos. Companion service: <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing systems</a> (TPO/PVC) for residential applications.</p>
+  <p>Call <strong>(754) 227-5605</strong> for a free in-person commercial flat-roof inspection. We document membrane condition, drainage performance, edge-metal integrity, and existing penetration detail. Written recover-vs-replace recommendations with photos. Companion service: <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing systems</a> (PVC/TPO) for residential applications.</p>
 
   ${companyAuthorityFooter()}
 </section>
@@ -2119,7 +2119,7 @@ function generateCalculatorHubContent() {
   <ul style="line-height: 1.75; margin-bottom: 1.5rem;">
     <li><strong>Square footage</strong> — roof area, not house footprint. The calculator can convert from house square footage if you don't know roof area.</li>
     <li><strong>Roof pitch</strong> — flat, low-slope, conventional, or steep. Pitch directly affects labor cost and underlayment requirements.</li>
-    <li><strong>Material</strong> — asphalt shingle, concrete tile, clay tile, metal standing seam, or flat-roof TPO/PVC.</li>
+    <li><strong>Material</strong> — asphalt shingle, concrete tile, clay tile, metal standing seam, or flat-roof PVC/TPO.</li>
     <li><strong>Tear-off layers</strong> — single-layer tear-off, double-layer, or recover. Disposal cost compounds with each layer.</li>
     <li><strong>Decking condition</strong> — whether you want a budget assuming the deck is sound, or with a contingency for partial deck replacement.</li>
   </ul>
@@ -2131,7 +2131,7 @@ function generateCalculatorHubContent() {
     <li><strong>Concrete tile</strong> — roughly $28,000 to $45,000 (full replacement). A <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile lift-and-relay</a> that reuses the existing tile typically lands meaningfully lower.</li>
     <li><strong>Clay tile</strong> — roughly $40,000 to $70,000+.</li>
     <li><strong>Metal</strong> — roughly $16,000 to $50,000, from snap-lock steel at the entry level to mechanically seamed premium aluminum at the top.</li>
-    <li><strong>Flat roof recover (TPO/PVC)</strong> — roughly $9 to $14 per square foot of flat area.</li>
+    <li><strong>Flat roof recover (PVC/TPO)</strong> — roughly $9 to $14 per square foot of flat area.</li>
   </ul>
 
   <h2>What Actually Moves the Number</h2>
@@ -2235,7 +2235,7 @@ function generateRoofReplacementCostFloridaContent() {
       <tr><td style="padding:8px;border:1px solid #e5e7eb;">Asphalt shingle</td><td style="padding:8px;border:1px solid #e5e7eb;">$4.50–$9.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$6,500–$16,000</td><td style="padding:8px;border:1px solid #e5e7eb;">15–25 years</td></tr>
       <tr><td style="padding:8px;border:1px solid #e5e7eb;">Concrete / clay tile</td><td style="padding:8px;border:1px solid #e5e7eb;">$8.00–$21.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$12,000–$38,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40–75+ years</td></tr>
       <tr><td style="padding:8px;border:1px solid #e5e7eb;">Metal (standing seam / exposed fastener)</td><td style="padding:8px;border:1px solid #e5e7eb;">$7.00–$23.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$15,000–$45,000</td><td style="padding:8px;border:1px solid #e5e7eb;">40–70 years</td></tr>
-      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Flat / low-slope (TPO, PVC)</td><td style="padding:8px;border:1px solid #e5e7eb;">$4.00–$10.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$8,000–$20,000</td><td style="padding:8px;border:1px solid #e5e7eb;">20–30 years</td></tr>
+      <tr><td style="padding:8px;border:1px solid #e5e7eb;">Flat / low-slope (PVC, TPO)</td><td style="padding:8px;border:1px solid #e5e7eb;">$4.00–$10.00</td><td style="padding:8px;border:1px solid #e5e7eb;">$8,000–$20,000</td><td style="padding:8px;border:1px solid #e5e7eb;">20–30 years</td></tr>
     </tbody>
   </table>
   <p>These totals include tear-off of the old roof, new underlayment, code-required components, labor, and permits. They do not include structural repairs that only become visible once the old roof is removed — more on that below.</p>
@@ -2515,7 +2515,7 @@ function generateProjectsContent() {
     <li><strong>Tile</strong> — concrete and clay replacements plus lift-and-relay underlayment renewals across Boca Raton, Delray Beach, Parkland, and Wellington.</li>
     <li><strong>Metal</strong> — standing-seam aluminum and steel on coastal and estate homes, engineered to HVHZ spec.</li>
     <li><strong>Shingle</strong> — architectural asphalt re-roofs throughout Broward and Palm Beach neighborhoods.</li>
-    <li><strong>Flat / low-slope</strong> — TPO and PVC single-ply systems for modern homes and additions.</li>
+    <li><strong>Flat / low-slope</strong> — PVC and TPO single-ply systems for modern homes and additions.</li>
   </ul>
 
   <h2>What We Document on Every Job</h2>
@@ -2757,7 +2757,7 @@ function homepageContent() {
   </ul>
 
   <h2>Comprehensive Roofing Services</h2>
-  <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">emergency roof repairs</a>, <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">professional roof inspections</a>, <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">complete roof replacements</a>, <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile roofing</a>, <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">metal roofing</a>, <a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">shingle roofing</a>, <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing (TPO/PVC)</a>, <a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">roof maintenance programs</a>, and storm damage restoration.</p>
+  <p>All Phase Construction USA provides complete residential and commercial roofing solutions throughout South Florida including <a href="/roof-repair" style="color: #dc2626; text-decoration: underline;">emergency roof repairs</a>, <a href="/roof-inspection" style="color: #dc2626; text-decoration: underline;">professional roof inspections</a>, <a href="/roof-replacement-process" style="color: #dc2626; text-decoration: underline;">complete roof replacements</a>, <a href="/tile-roofing" style="color: #dc2626; text-decoration: underline;">tile roofing</a>, <a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">metal roofing</a>, <a href="/shingle-roofing" style="color: #dc2626; text-decoration: underline;">shingle roofing</a>, <a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">flat roofing (PVC/TPO)</a>, <a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">roof maintenance programs</a>, and storm damage restoration.</p>
   <p style="color: #374151; line-height: 1.75;">Owner-led service from <a href="/team/chris-porosky" style="color: #dc2626; text-decoration: underline;">Chris Porosky</a>, Florida State Certified Roofing Contractor (CCC-1331464) and Certified General Contractor (CGC-1526236) — appointed member of the Professional Roofers Advisory Council (PRAC) and the National Roofing Contractors Association (NRCA).</p>
 
   <div style="background: #fef2f2; border-left: 4px solid #dc2626; padding: 1.25rem; margin: 1.5rem 0;">
@@ -3169,7 +3169,7 @@ function createHTMLTemplate(title, description, canonical, content, jsonLdSchema
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tile Roofing', description: 'Concrete and clay tile roof replacement, repair and lift-and-relay.', url: 'https://allphaseconstructionfl.com/tile-roofing' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Metal Roofing', description: 'Standing-seam steel and aluminum metal roofing, snap-lock to mechanically seamed premium systems.', url: 'https://allphaseconstructionfl.com/metal-roofing' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Shingle Roofing', description: 'Architectural and designer asphalt shingle roof installation and replacement.', url: 'https://allphaseconstructionfl.com/shingle-roofing' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flat & Low-Slope Roofing', description: 'TPO, PVC and modified bitumen flat roof replacement and repair for homes and businesses.', url: 'https://allphaseconstructionfl.com/flat-roofing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flat & Low-Slope Roofing', description: 'PVC, TPO and modified bitumen flat roof replacement and repair for homes and businesses.', url: 'https://allphaseconstructionfl.com/flat-roofing' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Roofing', description: 'Commercial and condo/HOA roof replacement for property managers and association boards.', url: 'https://allphaseconstructionfl.com/commercial-roofing' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Condo & HOA Roof Financing', description: 'Association roof replacement with fixed-rate financing — monthly payments instead of lump-sum special assessments.', url: 'https://allphaseconstructionfl.com/hoa-condo-roof-financing' } }
       ]
@@ -3695,7 +3695,7 @@ async function generateStaticFiles() {
             'Roof-to-Wall Connector (Hurricane Strap) Retrofits',
             'SBS-Modified Peel-and-Stick Underlayment',
             'Tile Lift-and-Relay',
-            'Single-Ply Commercial Roofing (TPO, PVC, EPDM)',
+            'Single-Ply Commercial Roofing (PVC, TPO, EPDM)',
             'Wind Loss Mitigation',
             'Roof Forensics and Expert-Witness Assessment'
           ]
@@ -3783,7 +3783,7 @@ async function generateStaticFiles() {
     },
     '/flat-roofing': {
       faqs: [
-        { question: "How long does a flat roof last in Florida?", answer: "With proper installation and materials, TPO and PVC systems last 20-30 years, and modified bitumen 15-20 years. Poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation." },
+        { question: "How long does a flat roof last in Florida?", answer: "With proper installation and materials, PVC and TPO systems last 20-30 years, and modified bitumen 15-20 years. Poor installation or drainage problems can cut that lifespan in half. The key factors are seam quality, drainage design, and proper HVHZ-compliant installation." },
         { question: "What causes flat roof leaks?", answer: "The most common causes are seam failures from improper heat welding, flashing failures around penetrations such as HVAC units, vents, and pipes, and ponding water that breaks down the membrane over time. In Florida, UV exposure and thermal cycling also accelerate wear if the system is not designed for our climate." },
         { question: "What's the real difference between TPO and PVC?", answer: "When TPO is heat-welded, the seam bonds through adhesion and can be separated with enough force. TPO also requires chalk fillers for fire ratings, which bleed to the surface over time making repairs harder. When PVC is heat-welded, the material molecularly fuses into one continuous piece \u2014 the seam becomes the strongest part of the roof. PVC is naturally Class A fire rated with no fillers, so repairs decades later weld just as cleanly as day one." },
         { question: "How do you prevent ponding water on flat roofs?", answer: "We design drainage into every system \u2014 tapered insulation to create slope toward drains, properly sized primary drains, and secondary overflow scuppers as code requires. Florida Building Code defines positive drainage as water clearing within 48 hours. We engineer for complete drainage, not good enough." },
@@ -3891,7 +3891,7 @@ async function generateStaticFiles() {
   },
   '/commercial-roofing': {
     faqs: [
-      { question: 'What commercial roofing systems do you install?', answer: 'We install TPO, PVC, modified bitumen, metal panel, and built-up roofing systems for flat and low-slope commercial buildings throughout Broward and Palm Beach County.' },
+      { question: 'What commercial roofing systems do you install?', answer: 'We install PVC, TPO, modified bitumen, metal panel, and built-up roofing systems for flat and low-slope commercial buildings throughout Broward and Palm Beach County.' },
       { question: 'Do you handle commercial roofing in HVHZ zones?', answer: 'Yes. All our commercial installations meet Florida Building Code HVHZ requirements. We carry Florida General Contractor license CGC-1526236 in addition to our roofing license.' },
       { question: 'Can commercial roofing be done without disrupting business operations?', answer: 'In most cases yes. We schedule commercial work around your operating hours and can phase large projects to minimize disruption to tenants and customers.' },
       { question: 'How long does a commercial roof installation take?', answer: 'A typical commercial roof replacement takes 3-7 days depending on square footage and system type. We provide a detailed project schedule before work begins.' }
@@ -4082,7 +4082,7 @@ const CITY_PAGE_SCHEMAS = {
     { path: '/metal-roofing', title: 'Metal Roofing Installation & Repair' },
     { path: '/tile-roofing', title: 'Tile Roofing Installation & Repair' },
     { path: '/shingle-roofing', title: 'Shingle Roof Replacement — With Documentation That Saves You Money on Insurance' },
-    { path: '/flat-roofing', title: 'Flat Roofing Systems (TPO & PVC)' },
+    { path: '/flat-roofing', title: 'Flat Roofing Systems (PVC & TPO)' },
     { path: '/roof-inspection', title: 'Professional Roof Inspection Services' },
     { path: '/roof-repair', title: 'Emergency Roof Repair Services' },
     { path: '/roof-maintenance-programs', title: 'Roof Maintenance Programs' },
@@ -4393,7 +4393,7 @@ ${companyAuthorityFooter()}
   <h2 style="color: #111827; font-size: 1.75rem; font-weight: 600; margin: 2rem 0 1rem;">Comprehensive Roofing Services</h2>
 
   <p style="color: #374151; font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
-    From emergency roof repairs to complete roof replacements, All Phase Construction USA delivers superior workmanship on every project. We specialize in all roofing systems including asphalt shingles, metal roofing, tile roofing, and flat roof systems (TPO & PVC).
+    From emergency roof repairs to complete roof replacements, All Phase Construction USA delivers superior workmanship on every project. We specialize in all roofing systems including asphalt shingles, metal roofing, tile roofing, and flat roof systems (PVC & TPO).
   </p>
 
   <div style="background: #111827; color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
@@ -4991,7 +4991,7 @@ ${companyAuthorityFooter()}
       },
       {
         question: `What roofing materials do you install on ${cityName} homes?`,
-        answer: `All Phase Construction USA installs architectural shingles, concrete and clay tile, standing seam metal, and TPO/PVC flat-roof systems on ${cityName} properties. Material selection depends on your roof pitch, structural capacity, neighborhood architecture, and long-term plans for the home. We walk every option with you before you sign anything.`
+        answer: `All Phase Construction USA installs architectural shingles, concrete and clay tile, standing seam metal, and PVC/TPO flat-roof systems on ${cityName} properties. Material selection depends on your roof pitch, structural capacity, neighborhood architecture, and long-term plans for the home. We walk every option with you before you sign anything.`
       },
       {
         question: `Are you licensed to replace roofs in ${cityName}?`,
@@ -5054,34 +5054,9 @@ ${companyAuthorityFooter()}
   </div>`;
   };
 
-  const TESTIMONIAL_POOL = [
-    { name: 'Mike R.', text: "All Phase replaced our roof in four days flat. Crew was clean, the foreman walked the job with me twice a day, and the final invoice matched the quote to the dollar." },
-    { name: 'Linda S.', text: "We got three bids before calling All Phase. They were the only ones who actually got on the roof, photographed everything, and explained what we were paying for. Easy decision." },
-    { name: 'Carlos M.', text: "Old tile roof, new concrete tile roof, zero surprises. They handled the permit, the HOA submittal, and even color-matched the ridge caps. Highly recommend." },
-    { name: 'Jennifer P.', text: "Honest pricing and a real warranty. The crew protected our landscaping with tarps and left the driveway cleaner than they found it. We'd hire them again tomorrow." }
-  ];
-
-  const buildTestimonialsHtml = (cityName, location) => {
-    const idx = Math.abs(cityName.split('').reduce((a,c)=>a+c.charCodeAt(0),0)) % TESTIMONIAL_POOL.length;
-    const t1 = TESTIMONIAL_POOL[idx];
-    const t2 = TESTIMONIAL_POOL[(idx+1) % TESTIMONIAL_POOL.length];
-    const neighborhood = (location.neighborhoods && location.neighborhoods[0]) || cityName;
-    const neighborhood2 = (location.neighborhoods && location.neighborhoods[1]) || cityName;
-    const loc1 = neighborhood === cityName ? cityName : `${neighborhood}, ${cityName}`;
-    const loc2 = neighborhood2 === cityName ? cityName : `${neighborhood2}, ${cityName}`;
-    return `
-  <h2>What ${cityName} Homeowners Say</h2>
-  <div class="seo-location-testimonials" style="display: grid; gap: 1rem; margin: 1rem 0;">
-    <blockquote style="margin: 0; padding: 1rem 1.25rem; border-left: 4px solid #dc2626; background: #fff; font-style: italic;">
-      <p style="margin: 0 0 0.5rem;">"${t1.text}"</p>
-      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t1.name}, ${loc1}</footer>
-    </blockquote>
-    <blockquote style="margin: 0; padding: 1rem 1.25rem; border-left: 4px solid #dc2626; background: #fff; font-style: italic;">
-      <p style="margin: 0 0 0.5rem;">"${t2.text}"</p>
-      <footer style="font-style: normal; font-weight: bold; color: #555;">— ${t2.name}, ${loc2}</footer>
-    </blockquote>
-  </div>`;
-  };
+  // PR-266: unverified testimonial pool removed (Chris, 11/21/26). Kept as a no-op so
+  // existing call sites render nothing until real Google reviews are supplied.
+  const buildTestimonialsHtml = () => '';
 
   // ─── Orphan-fix: inbound links to geo / HOA / community / niche pages ───
   // Every standalone slug page generated elsewhere in this script (hoaCommunityPages,
@@ -5421,7 +5396,7 @@ ${companyAuthorityFooter()}
       },
       {
         question: `What roofing materials do you install on ${hub.name} homes?`,
-        answer: `All Phase Construction USA installs concrete and clay tile, architectural and 3-tab shingles, standing-seam and ribbed metal, and TPO/PVC flat-roof systems throughout ${hub.name}. Material choice is driven by roof pitch, structural capacity, neighborhood architectural guidelines, and long-term insurance economics — we walk every realistic option with the homeowner before anyone signs.`
+        answer: `All Phase Construction USA installs concrete and clay tile, architectural and 3-tab shingles, standing-seam and ribbed metal, and PVC/TPO flat-roof systems throughout ${hub.name}. Material choice is driven by roof pitch, structural capacity, neighborhood architectural guidelines, and long-term insurance economics — we walk every realistic option with the homeowner before anyone signs.`
       }
     ];
   };
@@ -5741,7 +5716,7 @@ ${companyAuthorityFooter()}
   <p>Fort Lauderdale is home to the world-famous Las Olas Boulevard, a vibrant commercial and cultural hub, and the New River, which winds through historic neighborhoods featuring Mediterranean revival and tropical contemporary architecture. The city's waterfront properties &mdash; from the 6-mile beach to the scenic Intracoastal &mdash; face relentless salt spray and storm surge exposure. Victoria Park's tree-lined streets house vintage homes with aging roof systems, while Coral Ridge represents one of South Florida's most prestigious residential enclaves with complex architectural roofing requirements. Las Olas Beach Park and Harbor Branch provide landmarks for understanding storm exposure patterns. Fort Lauderdale's entire jurisdiction falls within Broward County's High Velocity Hurricane Zone, with design wind speeds exceeding 175 mph. Every roofing contractor operating in Fort Lauderdale must carry HVHZ certification and understand the advanced fastening and flashing systems required.</p>
   <h2>Your List of the Top 5 Best Roofers in Fort Lauderdale, FL</h2>
   <ol>
-    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ completed roofs, 4.9/5 rating from 138+ reviews. Headquartered at 590 Goolsby Blvd in nearby Deerfield Beach for rapid response. Tamko Pro Platinum certified, in business since 2006.</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ completed roofs, 4.9/5 rating from 160+ reviews. Headquartered at 590 Goolsby Blvd in nearby Deerfield Beach for rapid response. Tamko Pro Platinum certified, in business since 2006.</li>
     <li><strong>Allied Roofing &amp; Sheet Metal</strong> &mdash; Established Broward contractor specializing in HVHZ-compliant metal, tile, and shingle systems across Fort Lauderdale's diverse neighborhoods.</li>
     <li><strong>Tiger Team Roofing</strong> &mdash; Local installer with extensive portfolio in coastal Fort Lauderdale properties, waterfront estates, and Las Olas residential projects.</li>
     <li><strong>Nast Roofing</strong> &mdash; Licensed contractor with decades of experience in Fort Lauderdale roof replacement, repair, and HVHZ compliance certification.</li>
@@ -5789,7 +5764,7 @@ ${companyAuthorityFooter()}
   <p>West Palm Beach is home to Norton Museum of Art, the vibrant downtown arts district, and the scenic Lake Worth Lagoon, but its location in Palm Beach County's wind-borne debris region presents unique roofing challenges. Flamingo Park, built in the 1950s-1970s, features predominantly concrete tile and barrel tile systems now 50+ years old and approaching replacement cycles. The Northwood Historic District preserves Mediterranean revival and period revival architecture requiring specialized contractors experienced with historic roof profiles and materials. El Cid represents the city's established residential market with diverse roof age and condition. According to <a href="https://www.noaa.gov/education/resource-collections/weather-atmosphere/hurricanes" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">NOAA's hurricane research</a>, West Palm Beach experiences design wind speeds of 140+ mph in the wind-borne debris region. Every roofing contractor must understand enhanced fastening systems and impact-resistant materials required by Florida Building Code.</p>
   <h2>Your List of the Top 5 Best Roofers in West Palm Beach, FL</h2>
   <ol>
-    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.9/5 rating from 138+ reviews. Serves Palm Beach County with expertise in historic preservation and modern impact-resistant systems. In business since 2006, Tamko Pro Platinum certified.</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.9/5 rating from 160+ reviews. Serves Palm Beach County with expertise in historic preservation and modern impact-resistant systems. In business since 2006, Tamko Pro Platinum certified.</li>
     <li><strong>Kelly Roofing</strong> &mdash; Established Palm Beach County contractor specializing in tile and metal roofing systems across West Palm Beach's diverse neighborhoods.</li>
     <li><strong>Roof Top Services</strong> &mdash; Licensed installer with extensive experience in residential roof repair and replacement across West Palm Beach's historic districts.</li>
     <li><strong>Altec Roofing</strong> &mdash; Palm Beach roofer known for quality installations and professionalism in coastal and inland communities.</li>
@@ -5837,7 +5812,7 @@ ${companyAuthorityFooter()}
   <p>Boca Raton is home to Mizner Park, a European-inspired architectural showcase, and a reputation for premium residential communities with sophisticated design standards and strict HOA enforcement. The Royal Palm Yacht Club area features waterfront estates with complex roof lines and premium architectural requirements. Boca West, a golf course-centered community, hosts numerous homes with tile and specialty roofing systems. Properties near the Intracoastal face salt-air exposure, while inland communities benefit from proximity to established golf courses and championship play. Located on the cusp of Broward and Palm Beach County borders, Boca Raton experiences wind-borne debris region conditions with 140+ mph design wind speeds. According to <a href="https://www.britannica.com/place/Boca-Raton" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Britannica's Boca Raton guide</a>, the city's upscale character reflects strict architectural governance and meticulous community standards. Every roofing contractor must understand impact-resistant materials, sophisticated fastening systems, and HOA architectural review requirements.</p>
   <h2>Your List of the Top 5 Best Roofers in Boca Raton, FL</h2>
   <ol>
-    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.9/5 rating from 138+ reviews. Serves Palm Beach County with expertise in upscale residential and HOA-governed communities. In business since 2006, Tamko Pro Platinum certified.</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.9/5 rating from 160+ reviews. Serves Palm Beach County with expertise in upscale residential and HOA-governed communities. In business since 2006, Tamko Pro Platinum certified.</li>
     <li><strong>Kelly Roofing</strong> &mdash; Palm Beach County specialist with extensive portfolio in Boca Raton's premium residential communities and golf course estates.</li>
     <li><strong>Roof Top Services</strong> &mdash; Licensed contractor with proven expertise in high-end residential roofing and HOA coordination across Boca Raton neighborhoods.</li>
     <li><strong>Neal Roofing &amp; Waterproofing</strong> &mdash; Established Boca Raton roofer specializing in complex architectural systems and waterproofing solutions for luxury homes.</li>
@@ -5885,7 +5860,7 @@ ${companyAuthorityFooter()}
   <p>Coral Springs was designed as a master-planned community with 80+ distinct neighborhoods, each with its own HOA board and architectural guidelines. Eagle Trace, one of Broward County's most prominent golf course communities, features sophisticated architecture and strict design standards. Heron Bay combines upscale residential with a championship golf course anchoring the community. Ramblewood offers family-oriented suburban living with diverse architectural styles. While Coral Springs is inland and not subject to direct salt-air exposure, it falls entirely within Broward County's High Velocity Hurricane Zone with design wind speeds exceeding 175 mph. According to <a href="https://www.britannica.com/place/Coral-Springs-Florida" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Britannica's Coral Springs profile</a>, the city's planned community structure creates unique coordination requirements for roofing contractors. Every roofer must be HVHZ-certified and experienced in HOA architectural review processes.</p>
   <h2>Your List of the Top 5 Best Roofers in Coral Springs, FL</h2>
   <ol>
-    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ completed roofs, 4.9/5 rating from 138+ reviews. Extensive experience coordinating with Coral Springs HOA boards across Eagle Trace, Heron Bay, and Ramblewood. In business since 2006, Tamko Pro Platinum certified.</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), HVHZ-certified, 2,500+ completed roofs, 4.9/5 rating from 160+ reviews. Extensive experience coordinating with Coral Springs HOA boards across Eagle Trace, Heron Bay, and Ramblewood. In business since 2006, Tamko Pro Platinum certified.</li>
     <li><strong>Allied Roofing &amp; Sheet Metal</strong> &mdash; Broward County specialist with deep experience in HOA-governed communities and HVHZ-compliant systems.</li>
     <li><strong>Tiger Team Roofing</strong> &mdash; Local installer known for metal and tile roofing in Coral Springs master-planned communities.</li>
     <li><strong>Nast Roofing</strong> &mdash; Licensed contractor with extensive portfolio in Coral Springs neighborhoods and HOA coordination.</li>
@@ -5933,7 +5908,7 @@ ${companyAuthorityFooter()}
   <p>Wellington is home to dozens of world-class equestrian facilities and hundreds of horse properties, making it a unique roofing market with sophisticated HOA governance. The Olympia neighborhood anchors Wellington's equestrian identity with premium estates on large lots surrounding riding facilities. Sugar Pond Manor offers more affordable family-oriented living with its own HOA standards. The Aero Club area represents Wellington's master-planned communities with upscale amenities and strict architectural guidelines. Wellington Falls to the east provides another major residential area with numerous HOA communities. The entire city falls within Palm Beach County's wind-borne debris region with design wind speeds of 140+ mph. According to <a href="https://www.britannica.com/place/Wellington-Florida" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: underline;">Britannica's Wellington guide</a>, the city's equestrian reputation and master-planned community structure require contractors with specialized expertise in both hurricane protection and HOA coordination. Every roofing contractor must understand wind-borne debris region compliance and HOA architectural review processes.</p>
   <h2>Your List of the Top 5 Best Roofers in Wellington, FL</h2>
   <ol>
-    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.9/5 rating from 138+ reviews. Extensive experience coordinating with Wellington HOA boards and understanding equestrian estate requirements. In business since 2006, Tamko Pro Platinum certified.</li>
+    <li><strong>All Phase Construction USA</strong> &mdash; Dual-licensed (CCC-1331464 &amp; CGC-1526236), wind-borne debris region certified, 2,500+ completed roofs, 4.9/5 rating from 160+ reviews. Extensive experience coordinating with Wellington HOA boards and understanding equestrian estate requirements. In business since 2006, Tamko Pro Platinum certified.</li>
     <li><strong>Altec Roofing</strong> &mdash; Palm Beach County specialist with proven portfolio in Wellington's equestrian estates and master-planned communities.</li>
     <li><strong>Kelly Roofing</strong> &mdash; Established Palm Beach roofer with extensive experience in Wellington neighborhoods and HOA compliance coordination.</li>
     <li><strong>Neal Roofing &amp; Waterproofing</strong> &mdash; Licensed contractor specializing in high-end residential roofing and waterproofing solutions for Wellington estates.</li>
@@ -7359,7 +7334,7 @@ ${companyAuthorityFooter()}
   <p>The City of Boca Raton voluntarily applies an HVHZ-equivalent review standard even though the city sits in Palm Beach County and is not legally classified as High Velocity Hurricane Zone. That voluntary upgrade means the building department reviews each application with the same rigor as Broward and Miami-Dade — Notice of Acceptance documentation on every product, sealed engineering on flat systems, and verification of secondary water barrier underlayment. The trade-off is timeline. A residential roof permit in Boca typically takes 4 to 5 weeks from submittal to issued permit. Plan-checked permits sometimes move faster; permits that trigger structural review or HOA architectural board involvement run longer.</p>
 
   <h2>Flat Roof Uplift Engineering</h2>
-  <p>For any flat or low-slope roof system in Boca Raton — TPO, PVC, modified bitumen, or built-up — the building department requires sealed engineering calculations for wind uplift before issuing the permit. The engineer must demonstrate the roof assembly's resistance to design-load wind speeds (170+ mph in PBC, with Boca specifically applying enhanced safety factors) and document the fastening pattern, edge metal attachment, and substrate preparation. This is in addition to the manufacturer's NOA. Submitting a flat-roof permit in Boca without engineering on the package guarantees a permit denial — we include the engineering scope in every Boca flat-roof quote so there is no surprise mid-project.</p>
+  <p>For any flat or low-slope roof system in Boca Raton — PVC, TPO, modified bitumen, or built-up — the building department requires sealed engineering calculations for wind uplift before issuing the permit. The engineer must demonstrate the roof assembly's resistance to design-load wind speeds (170+ mph in PBC, with Boca specifically applying enhanced safety factors) and document the fastening pattern, edge metal attachment, and substrate preparation. This is in addition to the manufacturer's NOA. Submitting a flat-roof permit in Boca without engineering on the package guarantees a permit denial — we include the engineering scope in every Boca flat-roof quote so there is no surprise mid-project.</p>
 
   <h2>Hurricane Strap Verification — The Pre-2002 Cutoff</h2>
   <p>Boca Raton requires verification that hurricane straps — the metal connectors tying roof framing to the wall plate — are present and properly installed before issuing a roof permit. The cutoff year that matters is 2002. Florida Building Code 2001 went into effect on March 1, 2002 and standardized hurricane-strap installation across new residential construction.</p>
@@ -7557,9 +7532,9 @@ ${companyAuthorityFooter()}
     {
       slug: 'fort-lauderdale-commercial-roofing',
       title: 'Fort Lauderdale Commercial Roofing | All Phase USA',
-      description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant TPO, PVC, modified bitumen, metal. Las Olas, downtown, marine, medical, retail.',
+      description: 'Commercial roofing in Fort Lauderdale — HVHZ-compliant PVC, TPO, modified bitumen, metal. Las Olas, downtown, marine, medical, retail.',
       h1: 'Commercial Roofing in Fort Lauderdale, FL',
-      intro: `Fort Lauderdale runs one of the most diverse commercial roof markets in South Florida — Las Olas Boulevard mixed-use, downtown high-rise, the marine industry along the New River and 17th Street Causeway, hospitality on A1A, medical plazas along Andrews Avenue and Commercial Boulevard, light industrial near the airport, and multi-family throughout the city. Every commercial roof in Fort Lauderdale falls under Florida's High Velocity Hurricane Zone (HVHZ) code by law — the same legal baseline as Pompano Beach and the rest of Broward County. All Phase Construction USA installs and replaces commercial roof systems across all of these contexts with HVHZ-compliant TPO, PVC, modified-bitumen, built-up, and metal assemblies, fully documented through Florida Notice of Acceptance.`,
+      intro: `Fort Lauderdale runs one of the most diverse commercial roof markets in South Florida — Las Olas Boulevard mixed-use, downtown high-rise, the marine industry along the New River and 17th Street Causeway, hospitality on A1A, medical plazas along Andrews Avenue and Commercial Boulevard, light industrial near the airport, and multi-family throughout the city. Every commercial roof in Fort Lauderdale falls under Florida's High Velocity Hurricane Zone (HVHZ) code by law — the same legal baseline as Pompano Beach and the rest of Broward County. All Phase Construction USA installs and replaces commercial roof systems across all of these contexts with HVHZ-compliant PVC, TPO, modified-bitumen, built-up, and metal assemblies, fully documented through Florida Notice of Acceptance.`,
       sections: `
   <h2>Fort Lauderdale Commercial Corridors We Serve</h2>
   <ul style="line-height: 1.75;">
@@ -7594,7 +7569,7 @@ ${companyAuthorityFooter()}
   <p><strong>Hospitality.</strong> Hotels, restaurants, rooftop bars, event venues. The constraints are scheduling (occupancy and noise), equipment staging (limited rooftop staging area), and the visibility of the assembly to guests. PVC is often the default choice on hospitality membrane roofs.</p>
   <p><strong>Medical office plazas.</strong> Medical office buildings (MOBs) and outpatient clinics along Andrews Avenue, Commercial Boulevard, and the Holy Cross / Broward Health corridors. HVAC-heavy rooftops, sensitive building occupancy (no tear-off dust into HVAC intakes), and patient-care scheduling that constrains noisy work hours.</p>
   <p><strong>Strip retail.</strong> The standard FTL commercial use case. Single-tenant or multi-tenant retail with low-slope membrane roofs aging out at 20–25 years. Tear-off, deck condition assessment, new insulation, new membrane, new flashing — straight-line scope when the deck is sound; deck repair scope added when it is not.</p>
-  <p><strong>Light industrial and warehouse.</strong> Cypress Creek and FXE airport vicinity. Large-area flat roofs (often 20,000+ sq ft) where energy efficiency matters. White TPO or PVC reflects solar gain and reduces cooling load measurably; we model the energy savings in the proposal so building owners can see the payback math.</p>
+  <p><strong>Light industrial and warehouse.</strong> Cypress Creek and FXE airport vicinity. Large-area flat roofs (often 20,000+ sq ft) where energy efficiency matters. White PVC or TPO reflects solar gain and reduces cooling load measurably; we model the energy savings in the proposal so building owners can see the payback math.</p>
   <p><strong>Multi-family.</strong> Condo associations and apartment buildings throughout FTL with shared roof structures. Coordination with the association board, owner notification, and access control are part of the project plan from day one. We provide the association with the documentation package the association needs for its records.</p>
 
   <h2>Commercial Repair vs Replace Decision</h2>
@@ -7619,7 +7594,7 @@ ${companyAuthorityFooter()}
   <ul style="line-height: 1.75;">
     <li><a href="/locations/fort-lauderdale" style="color: #dc2626; text-decoration: underline;">Fort Lauderdale Roof Replacement (residential + commercial overview)</a></li>
     <li><a href="/commercial-roofing" style="color: #dc2626; text-decoration: underline;">Commercial Roofing — full system + service overview</a></li>
-    <li><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing (TPO, PVC, EPDM)</a></li>
+    <li><a href="/flat-roofing" style="color: #dc2626; text-decoration: underline;">Flat Roofing (PVC, TPO, EPDM)</a></li>
     <li><a href="/single-ply-roofing" style="color: #dc2626; text-decoration: underline;">Single-Ply Roofing Systems</a></li>
     <li><a href="/metal-roofing" style="color: #dc2626; text-decoration: underline;">Metal Roofing</a></li>
     <li><a href="/roof-maintenance-programs" style="color: #dc2626; text-decoration: underline;">Roof Maintenance Programs (commercial)</a></li>
@@ -8805,7 +8780,7 @@ ${companyAuthorityFooter()}
     },
     {
       slug: 'flat-roof-tpo-vs-pvc-west-palm-beach',
-      body: `<p>For a low-slope or flat roof in West Palm Beach, the choice usually comes down to two single-ply membranes: TPO and PVC. Both perform well in the Florida sun; the right one depends on your building and budget.</p>
+      body: `<p>For a low-slope or flat roof in West Palm Beach, the choice usually comes down to two single-ply membranes: PVC and TPO. Both perform well in the Florida sun; the right one depends on your building and budget.</p>
 <h2>TPO vs. PVC at a Glance</h2>
 <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
   <thead><tr style="background:#f3f4f6;"><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">Factor</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">TPO</th><th style="text-align:left;padding:8px;border:1px solid #e5e7eb;">PVC</th></tr></thead>

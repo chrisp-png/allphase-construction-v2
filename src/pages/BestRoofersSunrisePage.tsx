@@ -894,7 +894,7 @@ export default function BestRoofersSunrisePage() {
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Flat Roofing (commercial/residential)</td>
                     <td className="px-4 py-4 text-zinc-300">$9,000 – $28,000</td>
-                    <td className="px-4 py-4 text-zinc-300">System type (TPO/PVC/modified) affects pricing; HOA approval required for some communities</td>
+                    <td className="px-4 py-4 text-zinc-300">System type (PVC/TPO/modified) affects pricing; HOA approval required for some communities</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-4 text-zinc-300 font-medium">Repair (minor)</td>

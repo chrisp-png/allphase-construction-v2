@@ -17,7 +17,7 @@ export default function WiltonManorsMoneyPage() {
   const businessSchema = generateLocalBusinessSchema({ cityName: 'Wilton Manors', stateName: 'Florida', latitude: coordinates?.latitude, longitude: coordinates?.longitude });
   const faqs = [
     { q: 'How much does a roof replacement cost in Wilton Manors?', a: 'A roof replacement in Wilton Manors typically runs $11,000 to $32,000 in 2026. Mid-century flat roofs and shingle sit at the lower-to-middle range; canal-front tile and metal run higher, and condo-association roofs are priced by the building.' },
-    { q: 'Do you do flat roofs on Wilton Manors mid-century homes?', a: "Yes. Wilton Manors' mid-century homes often have flat or low-slope roofs, and flat roofing is a core service. We install TPO, PVC, and modified bitumen to HVHZ spec, with proper attachment and a fully adhered membrane." },
+    { q: 'Do you do flat roofs on Wilton Manors mid-century homes?', a: "Yes. Wilton Manors' mid-century homes often have flat or low-slope roofs, and flat roofing is a core service. We install PVC, TPO, and modified bitumen to HVHZ spec, with proper attachment and a fully adhered membrane." },
     { q: 'How do you protect a Wilton Manors canal-front roof from salt air?', a: 'For canal-front homes in East Wilton Manors and Jenada Isles, we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment, because the salt and brackish water corrode the metal components long before the roofing surface wears out.' },
     { q: 'Is Wilton Manors in the High-Velocity Hurricane Zone?', a: 'Yes. Wilton Manors is in Broward County, which is legally within the High-Velocity Hurricane Zone, so every roof — flat, tile, or shingle — must meet Miami-Dade HVHZ code, the strictest wind standard in the country. We build to it on every job.' }
   ];
@@ -26,7 +26,7 @@ export default function WiltonManorsMoneyPage() {
     <>
       <Helmet>
         <title>Roofing Contractor in Wilton Manors, FL | All Phase USA</title>
-        <meta name="description" content="Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — TPO/PVC flat, shingle, tile & metal, HVHZ-code." />
+        <meta name="description" content="Wilton Manors, FL roofer for mid-century flat roofs & canal-front homes — PVC/TPO flat, shingle, tile & metal, HVHZ-code." />
         <link rel="canonical" href="https://allphaseconstructionfl.com/locations/wilton-manors" />
         <script type="application/ld+json">{JSON.stringify(businessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -60,7 +60,7 @@ export default function WiltonManorsMoneyPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 bg-red-600/10 text-red-400 px-4 py-2 rounded-lg text-sm font-semibold mb-6 border border-red-600/20 uppercase tracking-wide">What We Roof</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Mid-Century Flat Roofs and Canal-Front Homes</h2>
-            <p className="text-zinc-300 leading-relaxed mb-4">Central Wilton Manors and the Wilton Drive corridor are full of mid-century single-family homes, modern townhomes, and condos — and mid-century design means a lot of flat and low-slope roofs. We install and replace flat roofs in TPO, PVC, and modified bitumen, alongside architectural shingle and tile for the pitched homes.</p>
+            <p className="text-zinc-300 leading-relaxed mb-4">Central Wilton Manors and the Wilton Drive corridor are full of mid-century single-family homes, modern townhomes, and condos — and mid-century design means a lot of flat and low-slope roofs. We install and replace flat roofs in PVC, TPO, and modified bitumen, alongside architectural shingle and tile for the pitched homes.</p>
             <p className="text-zinc-300 leading-relaxed mb-4">East Wilton Manors and gated pockets like Jenada Isles sit right on the Middle River and its canals, where salt and brackish water go to work on a roof’s metal first. On those waterfront homes we use marine-grade stainless fasteners, corrosion-resistant flashing, and fully sealed underlayment. And as a dual-licensed general contractor, we handle any decking or structural work a mid-century tear-off uncovers on the same permit.</p>
           </div>
         </section>

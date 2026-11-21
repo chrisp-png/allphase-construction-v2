@@ -134,7 +134,7 @@ const whyChooseUs = [
 const faqData = [
   {
     question: 'What roofing services does All Phase Construction offer in South Florida?',
-    answer: 'All Phase Construction USA provides full-service residential and commercial roofing across Broward and Palm Beach Counties. Our services include roof replacement, roof repair, emergency leak repair, roof inspections (insurance, real estate, and preventive), and ongoing maintenance programs. We work with all major roofing materials — concrete tile, clay tile, metal standing seam, architectural shingles, TPO, PVC, modified bitumen, and built-up roofing (BUR) systems.'
+    answer: 'All Phase Construction USA provides full-service residential and commercial roofing across Broward and Palm Beach Counties. Our services include roof replacement, roof repair, emergency leak repair, roof inspections (insurance, real estate, and preventive), and ongoing maintenance programs. We work with all major roofing materials — concrete tile, clay tile, metal standing seam, architectural shingles, PVC, TPO, modified bitumen, and built-up roofing (BUR) systems.'
   },
   {
     question: 'How much does a new roof cost in South Florida in 2026?',

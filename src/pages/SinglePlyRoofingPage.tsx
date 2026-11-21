@@ -27,11 +27,11 @@ import {
 export default function SinglePlyRoofingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Single-Ply Roofing Systems | TPO & PVC | All Phase USA";
+    document.title = "Single-Ply Roofing Systems | PVC & TPO | All Phase USA";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "TPO & PVC single-ply roofing for South Florida commercial properties. HVHZ-compliant, energy-efficient. Dual-licensed. (754) 227-5605.");
+      metaDescription.setAttribute('content', "PVC & TPO single-ply roofing for South Florida commercial properties. HVHZ-compliant, energy-efficient. Dual-licensed. (754) 227-5605.");
     }
 
     const serviceScript = document.createElement('script');
@@ -41,7 +41,7 @@ export default function SinglePlyRoofingPage() {
       "@type": "Service",
       "name": "Single-Ply Roofing Services",
       "serviceType": "Single-Ply Roofing",
-      "description": "TPO and PVC single-ply roofing systems for commercial buildings in South Florida. HVHZ compliant installations with heat-welded seams for superior wind resistance and long-term performance.",
+      "description": "PVC and TPO single-ply roofing systems for commercial buildings in South Florida. HVHZ compliant installations with heat-welded seams for superior wind resistance and long-term performance.",
       "url": "https://allphaseconstructionfl.com/single-ply-roofing",
       "provider": {
         "@id": "https://allphaseconstructionfl.com/#business"
@@ -84,7 +84,7 @@ export default function SinglePlyRoofingPage() {
   const faqs = [
     {
       question: "What is single-ply roofing?",
-      answer: "Single-ply roofing is a commercial-grade flat roof system made from one waterproof membrane layer—most commonly TPO or PVC—that's heat-welded to create a sealed, durable roof surface."
+      answer: "Single-ply roofing is a commercial-grade flat roof system made from one waterproof membrane layer—most commonly PVC or TPO—that's heat-welded to create a sealed, durable roof surface."
     },
     {
       question: "What's the difference between TPO and PVC roofing?",
@@ -192,11 +192,11 @@ export default function SinglePlyRoofingPage() {
 
           {/* Direct-Answer Opening for AI Extraction */}
           <p className="text-xl md:text-2xl text-zinc-300 mb-6 leading-relaxed max-w-4xl">
-            All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464, CGC-1526236) specializing in single-ply TPO and PVC roofing systems for commercial buildings across Broward County, Palm Beach County, and South Florida. With 20+ years of experience installing heat-welded membrane systems engineered for HVHZ wind code compliance, we deliver long-term durability for flat and low-slope commercial roofs.
+            All Phase Construction USA is a dual-licensed roofing contractor (CCC-1331464, CGC-1526236) specializing in single-ply PVC and TPO roofing systems for commercial buildings across Broward County, Palm Beach County, and South Florida. With 20+ years of experience installing heat-welded membrane systems engineered for HVHZ wind code compliance, we deliver long-term durability for flat and low-slope commercial roofs.
           </p>
 
           <p className="text-lg text-zinc-300 mb-10 leading-relaxed max-w-4xl">
-            Based in Deerfield Beach, our certified installers provide professional TPO and PVC installation with verified quality control — from warehouses and retail centers to condominiums and government facilities. Call (754) 227-5605 for a free single-ply roofing assessment.
+            Based in Deerfield Beach, our certified installers provide professional PVC and TPO installation with verified quality control — from warehouses and retail centers to condominiums and government facilities. Call (754) 227-5605 for a free single-ply roofing assessment.
           </p>
 
           {/* CTAs */}
@@ -262,7 +262,7 @@ export default function SinglePlyRoofingPage() {
               Single-ply membrane roofing systems provide waterproofing in a single flexible sheet, typically installed over commercial flat or low-slope roofs. Unlike built-up roofing or modified bitumen (which use multiple layers), single-ply systems achieve complete weather protection in one membrane layer.
             </p>
             <p>
-              The most common single-ply systems are <strong className="text-white">TPO (thermoplastic polyolefin)</strong>, <strong className="text-white">PVC (polyvinyl chloride)</strong>, and <strong className="text-white">EPDM (rubber)</strong>. In South Florida, TPO and PVC dominate the commercial roofing market due to their heat-welded seam technology, reflective surfaces, and proven performance in high wind and high heat environments.
+              The most common single-ply systems are <strong className="text-white">TPO (thermoplastic polyolefin)</strong>, <strong className="text-white">PVC (polyvinyl chloride)</strong>, and <strong className="text-white">EPDM (rubber)</strong>. In South Florida, PVC and TPO dominate the commercial roofing market due to their heat-welded seam technology, reflective surfaces, and proven performance in high wind and high heat environments.
             </p>
             <p>
               Single-ply membranes are mechanically fastened or fully adhered to the roof deck, with seams heat-welded to create continuous waterproof coverage. When properly installed, these systems provide excellent durability, energy efficiency, and hurricane resistance for commercial buildings throughout Broward and Palm Beach Counties.
@@ -391,7 +391,7 @@ export default function SinglePlyRoofingPage() {
               </ul>
               <div className="mt-6 p-4 bg-zinc-950 border border-zinc-800 rounded-lg">
                 <p className="text-sm text-zinc-500">
-                  <strong className="text-zinc-400">Why we don't recommend EPDM:</strong> Glued seams don't hold up well in Florida's demanding climate. TPO and PVC outperform EPDM in this region.
+                  <strong className="text-zinc-400">Why we don't recommend EPDM:</strong> Glued seams don't hold up well in Florida's demanding climate. PVC and TPO outperform EPDM in this region.
                 </p>
               </div>
             </div>
@@ -411,7 +411,7 @@ export default function SinglePlyRoofingPage() {
           </h2>
 
           <p className="text-xl text-zinc-300 mb-12 max-w-4xl">
-            TPO and PVC can look nearly identical once installed—both are white, reflective, and heat-welded. But they are molecularly different products with distinct performance characteristics.
+            PVC and TPO can look nearly identical once installed—both are white, reflective, and heat-welded. But they are molecularly different products with distinct performance characteristics.
           </p>
 
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
@@ -985,7 +985,7 @@ export default function SinglePlyRoofingPage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-red-500" />
-              <span>TPO & PVC Options</span>
+              <span>PVC & TPO Options</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-red-500" />

@@ -107,7 +107,7 @@ Flat roofing systems face unique challenges in Florida.
 - **Hurricane debris** — Flat roofs collect debris that can puncture membranes
 - **Seam failure** — Thermal cycling causes seams to separate over time
 
-**TPO and PVC membranes typically last 20-25 years with proper maintenance.**
+**PVC and TPO membranes typically last 20-25 years with proper maintenance.**
 
 **Modified bitumen and built-up roofs average 15-20 years** in South Florida's climate.
 
@@ -678,7 +678,7 @@ Why not:
 ### Flat Roofs
 
 - **Average commercial/flat (2,000 sq ft):** $10,000-$20,000
-- **Includes:** Tear-off, insulation, TPO or PVC membrane, mechanically fastened
+- **Includes:** Tear-off, insulation, PVC or TPO membrane, mechanically fastened
 - **Lifespan:** 15-25 years
 
 **Use our [Roof Cost Calculator](/roof-cost-calculator) for a personalized estimate based on your home.**

@@ -543,7 +543,7 @@ export default function TileRoofInspectionBrowardCountyPage() {
                 Flat & Single-Ply Roof Inspection — Broward County
               </h3>
               <p className="text-zinc-400">
-                TPO, PVC, EPDM, and modified bitumen membrane inspection for commercial and low-slope systems
+                PVC, TPO, EPDM, and modified bitumen membrane inspection for commercial and low-slope systems
               </p>
             </Link>
 

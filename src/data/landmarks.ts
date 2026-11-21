@@ -65,7 +65,7 @@ export const landmarks: Landmark[] = [
       },
       {
         question: "Can you handle condominium reroofs in the downtown Mizner Park area?",
-        answer: "Yes. Condominium projects near Mizner Park require commercial-scale flat-roof systems (TPO, PVC, or modified bitumen), coordinated HOA approvals, and staged material delivery for downtown access constraints. We have completed multi-building condominium reroofs throughout downtown Boca and handle the HOA submittal package, engineering letters, and permit coordination as part of every proposal."
+        answer: "Yes. Condominium projects near Mizner Park require commercial-scale flat-roof systems (PVC, TPO, or modified bitumen), coordinated HOA approvals, and staged material delivery for downtown access constraints. We have completed multi-building condominium reroofs throughout downtown Boca and handle the HOA submittal package, engineering letters, and permit coordination as part of every proposal."
       },
       {
         question: "How fast can you respond to a roof leak near Mizner Park?",

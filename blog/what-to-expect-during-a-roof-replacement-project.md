@@ -361,7 +361,7 @@ Once permit is approved:
 **Typical timeline: 2-4 days**
 
 - **Day 1:** Tear-off, deck inspection
-- **Day 2:** Insulation, TPO/PVC membrane installation
+- **Day 2:** Insulation, PVC/TPO membrane installation
 - **Day 3-4:** Seam welding, flashing, completion
 
 ---

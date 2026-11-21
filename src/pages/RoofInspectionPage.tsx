@@ -516,7 +516,7 @@ export default function RoofInspectionPage() {
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-            <strong className="text-white">Flat & Single-Ply Roof Inspection:</strong> Flat and single-ply roofing systems on commercial properties and low-slope residential structures require diagnostic protocols that differ fundamentally from steep-slope inspections. Membrane condition, seam integrity, drainage performance, and concealed moisture detection are critical evaluation components. Our commercial roof inspection services include infrared thermography, systematic probing, and substrate evaluation for TPO, PVC, EPDM, modified bitumen, and built-up roofing systems across Broward County and Palm Beach County.
+            <strong className="text-white">Flat & Single-Ply Roof Inspection:</strong> Flat and single-ply roofing systems on commercial properties and low-slope residential structures require diagnostic protocols that differ fundamentally from steep-slope inspections. Membrane condition, seam integrity, drainage performance, and concealed moisture detection are critical evaluation components. Our commercial roof inspection services include infrared thermography, systematic probing, and substrate evaluation for PVC, TPO, EPDM, modified bitumen, and built-up roofing systems across Broward County and Palm Beach County.
           </p>
 
           <p className="text-lg text-zinc-300 leading-relaxed mb-8">

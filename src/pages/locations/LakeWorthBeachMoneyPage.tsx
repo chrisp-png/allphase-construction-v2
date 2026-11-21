@@ -129,7 +129,7 @@ export default function LakeWorthBeachMoneyPage() {
                 { t: 'Roof Replacement', d: 'Full tear-offs and re-roofs for Lake Worth homes — tile, metal, shingle, and flat — built to HVHZ spec.' },
                 { t: 'Roof Repair', d: 'Leak detection and repair for older cottages, historic homes, and coastal properties.' },
                 { t: 'Roof Inspection', d: 'Free inspection-first assessments, including 4-point and pre-listing certifications.' },
-                { t: 'All Roof Types', d: 'Concrete and clay tile, standing-seam and metal, architectural shingle, and TPO/PVC flat roofs.' },
+                { t: 'All Roof Types', d: 'Concrete and clay tile, standing-seam and metal, architectural shingle, and PVC/TPO flat roofs.' },
               ].map(s => (
                 <div key={s.t} className="bg-zinc-950 border border-zinc-800 rounded-xl p-6">
                   <Shield className="w-8 h-8 text-red-600 mb-4" />

@@ -29,13 +29,13 @@ const services = [
   {
     icon: Building2,
     title: 'Commercial Roofing',
-    description: 'TPO, PVC, modified bitumen, and built-up roofing systems for warehouses, retail centers, HOAs, and multi-family properties.',
+    description: 'PVC, TPO, modified bitumen, and built-up roofing systems for warehouses, retail centers, HOAs, and multi-family properties.',
     link: '/commercial-roofing',
   },
   {
     icon: Square,
     title: 'Flat Roofing',
-    description: "TPO, PVC, modified bitumen, and built-up flat roof systems. Expert drainage solutions for South Florida's heavy rainfall.",
+    description: "PVC, TPO, modified bitumen, and built-up flat roof systems. Expert drainage solutions for South Florida's heavy rainfall.",
     link: '/flat-roofing',
   },
 ];

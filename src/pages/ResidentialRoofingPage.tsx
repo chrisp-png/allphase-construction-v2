@@ -457,7 +457,7 @@ export default function ResidentialRoofingPage() {
               </div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-red-500 transition-colors">Flat Roofing</h3>
               <p className="text-zinc-400 text-sm">
-                TPO, PVC, and modified bitumen for low-slope applications.
+                PVC, TPO, and modified bitumen for low-slope applications.
               </p>
             </Link>
           </div>

@@ -986,7 +986,7 @@ export default function BestRoofersWellingtonPage() {
                     ['Concrete/Clay Tile (replacement)', '$16,000 – $45,000+', 'Most common in Wellington HOA communities; material + labor intensive'],
                     ['Asphalt Shingle (replacement)', '$9,000 – $22,000', 'Wind-rated shingles required in Palm Beach County'],
                     ['Metal Roofing (standing seam/panel)', '$18,000 – $55,000+', 'Highest durability; strong insurance benefits; increasingly HOA-approved'],
-                    ['Flat Roofing (commercial/residential)', '$8,000 – $25,000', 'System type (TPO/PVC/modified) affects pricing'],
+                    ['Flat Roofing (commercial/residential)', '$8,000 – $25,000', 'System type (PVC/TPO/modified) affects pricing'],
                     ['Repair (minor)', '$350 – $2,500', 'Leak repair, tile replacement, flashing issues'],
                     ['Wind Mitigation Inspection', '$75 – $150', 'Potential to save $500–$2,000+ annually on insurance']
                   ].map(([type, range, notes], i) => (
