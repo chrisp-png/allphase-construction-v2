@@ -263,6 +263,20 @@ export function buildSourceBlock(
  * Safe to call on every submit; degrades to "Direct / Bookmark" for organic.
  */
 export function appendClickIds(fd: FormData): FormData {
+  // PR-267: Formspree rejects a submission (422 REQUIRED_FIELD_EMPTY on
+  // "email") when an "Email (optional)" field is sent EMPTY. That silently cost
+  // leads on /lp/roof-replacement and other optional-email forms (e.g. 11 Nov).
+  // Drop a blank email field and fall back to the same hidden _replyto the
+  // hero/sticky forms already use, so the lead always goes through.
+  try {
+    const em = fd.get('email');
+    if (typeof em === 'string' && em.trim() === '') {
+      fd.delete('email');
+      if (!fd.has('_replyto')) fd.append('_replyto', 'leads@allphaseusa.com');
+    }
+  } catch {
+    /* never block a lead */
+  }
   const ids = getStoredClickIds();
   for (const [k, v] of Object.entries(ids)) {
     if (!fd.has(k)) fd.append(k, v);
