@@ -3967,7 +3967,7 @@ async function generateStaticFiles() {
       },
       {
         question: 'How long does a roof replacement take in South Florida?',
-        answer: 'Most residential roof replacements in Broward and Palm Beach Counties take 1–3 days depending on roof size, pitch, and material. We work efficiently to minimize disruption to your household.'
+        answer: 'The hands-on work usually takes 3-7 working days: asphalt shingle roofs typically take 2-4 days, tile roofs 4-7 days, metal roofs 3-5 days, and flat roofs 3-6 days. The waiting around the work is what stretches the timeline. If you have an HOA, its approval comes first and can take anywhere from 2 weeks to 60 days, and the permit can\'t be submitted until it comes back. Lately most building departments issue permits in about 30 days, longer around the holidays. Tile roofs also need an engineer\'s uplift test, which adds about a week, and material delivery and inspection scheduling can add time as well.'
       },
       {
         question: 'What roofing materials are best for South Florida homes?',

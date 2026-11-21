@@ -388,7 +388,7 @@ export default function FlatRoofInspectionBrowardCountyPage() {
               </a>
             </div>
             <p className="mt-8 text-sm text-zinc-400 max-w-2xl mx-auto">
-              Licensed General Contractor CGC-1526236 | Roofing Contractor CCC-1331464 | Broward County HVHZ-compliant inspection protocols
+              Licensed Roofing Contractor CCC-1331464 | CGC-1526236 for roof structural work | Broward County HVHZ-compliant inspection protocols
             </p>
           </div>
         </div>

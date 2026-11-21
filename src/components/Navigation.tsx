@@ -31,7 +31,7 @@ export default function Navigation() {
                 className="w-auto"
                 style={{ width: '250px' }}
               />
-              <p className="text-xs text-gray-400 mt-1 whitespace-nowrap">CGC-1526236 • CCC-1331464</p>
+              <p className="text-xs text-gray-400 mt-1 whitespace-nowrap">CCC-1331464 • CGC-1526236</p>
             </div>
           </Link>
 

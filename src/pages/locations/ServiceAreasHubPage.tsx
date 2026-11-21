@@ -166,7 +166,7 @@ export default function ServiceAreasHubPage() {
                 </h2>
                 <p className="text-zinc-400">
                   The dual-licensed roofing specialist serving Broward & Palm Beach Counties from the Deerfield Beach headquarters at 590 Goolsby Blvd.
-                  Leveraging General Contracting expertise (CGC-1526236) and Roofing License (CCC-1331464) to provide superior HVHZ-compliant roofing solutions throughout South Florida.
+                  Leveraging our Roofing License (CCC-1331464) and General Contractor license (CGC-1526236) for roof structural work to provide superior HVHZ-compliant roofing solutions throughout South Florida.
                 </p>
               </div>
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>

@@ -601,4 +601,4 @@ Denials typically occur when homeowners:
 
 *Licensed CCC & CGC Contractor | HOA-Approved Installations*
 
-CGC-1526236 | CCC-1331464
+CCC-1331464 | CGC-1526236

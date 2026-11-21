@@ -311,7 +311,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               </a>
             </div>
             <p className="mt-6 text-sm text-zinc-400">
-              Licensed General Contractor CGC-1526236 | Roofing Contractor CCC-1331464 | Palm Beach County
+              Licensed Roofing Contractor CCC-1331464 | CGC-1526236 for roof structural work | Palm Beach County
             </p>
           </div>
         </div>
@@ -664,7 +664,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               </a>
             </div>
             <p className="mt-8 text-sm text-zinc-400 max-w-2xl mx-auto">
-              Licensed General Contractor CGC-1526236 | Roofing Contractor CCC-1331464 | Palm Beach County HVHZ-compliant inspection protocols
+              Licensed Roofing Contractor CCC-1331464 | CGC-1526236 for roof structural work | Palm Beach County HVHZ-compliant inspection protocols
             </p>
           </div>
         </div>
@@ -919,7 +919,7 @@ export default function FlatRoofInspectionPalmBeachCountyPage() {
               Schedule Comprehensive Roof Inspection
             </Link>
             <p className="mt-6 text-zinc-400">
-              Licensed General Contractor CGC-1526236 | Roofing Contractor CCC-1331464
+              Licensed Roofing Contractor CCC-1331464 | CGC-1526236 for roof structural work
             </p>
           </div>
         </div>

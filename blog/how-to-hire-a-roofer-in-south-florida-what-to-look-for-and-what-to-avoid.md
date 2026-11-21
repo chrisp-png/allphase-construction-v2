@@ -512,4 +512,4 @@ At All Phase Construction USA, we make this easy: we're licensed (CCC-1331464 & 
 **✉️ Email:** [info@allphaseusa.com](mailto:info@allphaseusa.com)
 
 *Serving Broward & Palm Beach Counties | Licensed & Insured*
-CGC-1526236 | CCC-1331464
+CCC-1331464 | CGC-1526236

@@ -135,7 +135,7 @@ export default function Header() {
             <div className="flex items-center gap-4 md:gap-6">
               <span className="text-gray-300 font-medium">Talk to a real person 24/7</span>
               <span className="hidden md:inline text-gray-400">
-                Dual Licensed Certified Roofing Contractor — CGC-1526236 | CCC-1331464
+                Licensed Roofing Contractor — CCC-1331464 | CGC-1526236
               </span>
               <span className="hidden sm:inline md:hidden text-gray-400">
                 Dual Licensed Contractor

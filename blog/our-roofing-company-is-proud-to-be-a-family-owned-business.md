@@ -1,5 +1,5 @@
 <!-- Meta Title: Family-Owned Roofing Company in South Florida | All Phase Construction -->
-<!-- Meta Description: All Phase Construction is a family-owned roofing company since 2005. Dual licensed CGC-1526236 and CCC-1331464, serving Broward and Palm Beach Counties with 20+ years experience. -->
+<!-- Meta Description: All Phase Construction is a family-owned roofing company since 2005. Dual licensed CCC-1331464 and CGC-1526236, serving Broward and Palm Beach Counties with 20+ years experience. -->
 
 # Why We're Proud to Be a Family-Owned Roofing Company
 
@@ -122,7 +122,7 @@ When you choose All Phase Construction, you're choosing a roofing company built 
 We'd be honored to earn your business. Whether you need a free roof inspection, a storm damage assessment, a complete roof replacement, or routine maintenance, contact us today for a consultation with someone who actually makes decisions about your project.
 
 **All Phase Construction USA**
-- Licensed Contractor: CGC-1526236, CCC-1331464
+- Licensed Contractor: CCC-1331464, CGC-1526236
 - Serving Broward and Palm Beach Counties since 2005
 - Based in Deerfield Beach, Florida
 - 20+ years of South Florida roofing expertise
