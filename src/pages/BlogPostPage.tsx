@@ -197,6 +197,18 @@ export default function BlogPostPage() {
   // Hoisted so the static-synthesis path can be reached from multiple branches
   // (Supabase returned null OR Supabase threw).
   const staticPostMeta: Record<string, Partial<BlogPost>> = {
+    'i-need-a-new-roof-but-cant-afford-it': {
+      title: "I Need a New Roof but Can't Afford It: Real Options for Broward and Palm Beach Homeowners",
+      excerpt: 'Real options when a new roof feels out of reach: our $750 senior discount for homeowners 65+, My Safe Florida Home, city and county repair programs, USDA Section 504, financing, co-signers, PACE, and the "free senior roof" ads to avoid.',
+      author: 'All Phase Construction USA Team',
+      published_date: '2026-11-23',
+      categories: ['Roofing Education'],
+      tags: ['Roof Financing', 'Senior Discount', 'My Safe Florida Home', 'Roof Grants', 'Broward County', 'Palm Beach County'],
+      featured_image: '/projects/fort-lauderdale-shingle-roof-inspection-all-phase-usa.webp',
+      meta_title: "Can't Afford a New Roof? Real Options in South Florida",
+      meta_description: "Need a new roof but can't afford it? Real options for Broward and Palm Beach homeowners: senior discount, My Safe Florida Home, local programs, financing.",
+      faqs: [],
+    },
     'my-safe-florida-home-roof-grant-guide': {
       title: 'Is There a Free Roof Replacement Grant in Florida? What My Safe Florida Home Actually Covers',
       excerpt: 'There is no free roof grant in Florida. My Safe Florida Home is a 2-for-1 matching grant up to $10,000 for hurricane-hardening roof work, and the new roof covering can count when it has to come off to do that work. Who qualifies and how it works.',
