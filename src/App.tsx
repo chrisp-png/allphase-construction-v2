@@ -101,6 +101,7 @@ const WellingtonPage = lazy(() => import('./pages/WellingtonPage'));
 const EasyPaymentsPage = lazy(() => import('./pages/EasyPaymentsPage'));
 const PricingGuidePage = lazy(() => import('./pages/PricingGuidePage'));
 const LearningCenterPage = lazy(() => import('./pages/LearningCenterPage'));
+const SeniorRoofDiscountPage = lazy(() => import('./pages/SeniorRoofDiscountPage'));
 const RoofingServicesPage = lazy(() => import('./pages/RoofingServicesPage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
@@ -344,6 +345,7 @@ function AppContent() {
             <Route path="/coral-springs-roof-permit-guide" element={<CoralSpringsRoofPermitGuidePage />} />
             <Route path="/projects/shingle-inspection-solar-fan-lauderdale-by-the-sea" element={<ProjectShingleInspectionSolarFanLauderdaleByTheSeaPage />} />
             <Route path="/roof-permits-broward-palm-beach-county" element={<RoofPermitsBrowardPalmBeachPage />} />
+            <Route path="/senior-roof-discount" element={<SeniorRoofDiscountPage />} />
             <Route path="/pompano-beach-roof-inspection" element={<PompanoBeachRoofInspectionPage />} />
             <Route path="/delray-beach-roof-overlay-vs-tear-off" element={<DelrayBeachRoofOverlayVsTearOffPage />} />
             <Route path="/metal-roofing-cost-fort-lauderdale" element={<MetalRoofingCostFortLauderdalePage />} />

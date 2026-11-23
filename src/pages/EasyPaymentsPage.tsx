@@ -136,6 +136,9 @@ export default function EasyPaymentsPage() {
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
             Explore flexible payment options to fit your budget. Calculate your potential monthly payments and understand the upgrade costs for premium roofing solutions.
           </p>
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+            Homeowners 65 and older: <a href="/senior-roof-discount" className="text-[#C5A572] underline font-semibold">$750 off roof projects of $25,000 or more</a>, and it works with financing.
+          </p>
 
           {/* Dual-License Badge */}
           <div className="max-w-3xl mx-auto">

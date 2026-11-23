@@ -8688,6 +8688,26 @@ ${companyAuthorityFooter()}
       summary: 'Essentially every roof replacement in Broward or Palm Beach County requires a permit, the contractor pulls it, and the honest timeline is a range that depends on the municipality, the roof system, and submittal completeness.'
     },
     {
+      slug: 'senior-roof-discount',
+      body: `<p><strong>Homeowners 65 and older automatically receive $750 off any roofing project of $25,000 or more</strong> in Broward and Palm Beach County. No coupon or promo code, no deadline, and it works together with our financing and with My Safe Florida Home projects.</p>
+<h2>The Discount at a Glance</h2>
+<ul style="line-height:1.75;">
+<li><strong>Who:</strong> homeowners age 65 and older</li>
+<li><strong>How much:</strong> $750 off any project of $25,000 or more, measured before the discount</li>
+<li><strong>How to get it:</strong> applied automatically &mdash; mention it when you request your assessment and it appears as its own line on your proposal</li>
+<li><strong>Works with:</strong> <a href="/easy-payments" style="color: #dc2626; text-decoration: underline;">financing</a> and <a href="/blog/my-safe-florida-home-roof-grant-guide" style="color: #dc2626; text-decoration: underline;">My Safe Florida Home</a> projects</li>
+<li><strong>Proof of age:</strong> the photo ID you already show us at signing, since every permit application needs a notarized signature</li>
+</ul>
+<h2>Start With an Honest Answer</h2>
+<p>Not every older roof needs replacing yet. Sometimes a targeted repair keeps a roof watertight while you plan and save, and we will tell you when that is the smarter move. For every option we know of &mdash; programs, financing and repair &mdash; read <a href="/blog/i-need-a-new-roof-but-cant-afford-it" style="color: #dc2626; text-decoration: underline;">I Need a New Roof but Can't Afford It</a>.</p>
+<h2>Watch Out for "Free Senior Roof" Ads</h2>
+<p>A real government program has published rules, an official application, and a named agency that runs it. If an ad promises a free roof to anyone over a certain age or pushes you to sign quickly, check it on an official .gov website first, and never sign anything to "lock in" a grant.</p>`,
+      title: 'Senior Roof Discount: $750 Off for Homeowners 65+ | All Phase',
+      description: 'Homeowners 65 and older get $750 off roof projects of $25,000 or more in Broward & Palm Beach. Applied automatically, works with financing and MSFH.',
+      h1: 'Senior Roof Discount: $750 Off for Homeowners 65 and Older',
+      summary: 'Homeowners 65 and older automatically receive $750 off any roofing project of $25,000 or more in Broward and Palm Beach County, combinable with financing and My Safe Florida Home.',
+    },
+    {
       slug: 'projects/shingle-inspection-solar-fan-lauderdale-by-the-sea',
       body: `<p>A shingle roof inspection in Lauderdale-by-the-Sea, a block from the ocean. The inspection produced exactly what an inspection should: a short list of what was actually wrong and what it takes to fix it &mdash; not a push toward a roof the homeowner does not need yet.</p>
 <h2>What We Found</h2>
