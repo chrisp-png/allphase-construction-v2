@@ -96,7 +96,7 @@ The USDA Section 504 Home Repair program offers loans of up to $40,000, and gran
 
 For many homeowners, financing is the most realistic way to replace a failing roof before it causes damage inside the house. Instead of waiting until you've saved the full amount and risking ceiling, drywall and flooring damage in the meantime, you can get the work done now and pay over time.
 
-All Phase Construction USA offers flexible financing options for qualified homeowners, and the senior discount works with financing too. Use our [financing calculator](/easy-payments) to see what a monthly payment could look like, and our [roof cost calculator](/roof-cost-calculator) to get a city-specific price range before you talk to anyone.
+All Phase Construction USA offers flexible financing options for qualified homeowners, and the senior discount works with financing too. A co-signer is also an option, which can make sense when a family member plans to inherit the home and wants to help keep it in good shape. Use our [financing calculator](/easy-payments) to see what a monthly payment could look like, and our [roof cost calculator](/roof-cost-calculator) to get a city-specific price range before you talk to anyone.
 
 | Option | Best fit for | What to know |
 |---|---|---|
@@ -104,10 +104,29 @@ All Phase Construction USA offers flexible financing options for qualified homeo
 | My Safe Florida Home | Homesteaded homes built before 2008 that pass the program inspection | Up to $10,000, usually a 2:1 match; opens in phases |
 | City / county repair programs | Income-qualified homeowners | Funding opens in rounds; waitlists are common |
 | USDA Section 504 | Very low-income homeowners in USDA-rural areas (grants: 62+) | Most of urban Broward and Palm Beach won't qualify |
-| Roof financing | Homeowners who need the roof done now | Monthly payments instead of a lump sum; approval required |
+| Roof financing | Homeowners who need the roof done now | Monthly payments instead of a lump sum; approval required; a co-signer can help |
+| PACE financing | Homeowners with equity who don't fit regular financing | Repaid on the property tax bill; capped at 20% of just value; not allowed with a reverse mortgage |
 | Repair now, replace later | Roofs with localized problems | Only makes sense if the roof is otherwise sound |
 
-## Option 5: Repair Now, Plan the Replacement
+## Option 5: PACE Financing (In Some Cases)
+
+PACE (Property Assessed Clean Energy) financing is a less common option that occasionally fits. Instead of a regular loan, the cost of a qualifying improvement is repaid through a special assessment added to your property tax bill. Florida law lists roof repair and replacement, including roof hardening work like deck attachment, secondary water barriers and roof-to-wall connections, as qualifying improvements for homes. In our area, PACE providers include Ygrene and Home Run Financing.
+
+PACE is a loan, not a grant, and it comes with real tradeoffs. Under Florida law (section 163.081, Florida Statutes):
+
+- **Your city or county has to have authorized PACE,** and each provider has its own rules. Ygrene, for example, says you need at least 10% equity in your home.
+- **The total PACE assessment can't exceed 20% of your home's just value** as set by the property appraiser, unless your mortgage lender agrees in writing to more.
+- **The yearly payment can't be more than 10% of your household income,** and income has to be verified.
+- **You must be current on your mortgage and property taxes,** with no involuntary liens on the property.
+- **PACE isn't available if the home has a reverse mortgage.** Many seniors do, so check this first.
+- **The repayment term can't exceed 20 years,** and there are no balloon payments or prepayment penalties.
+- **The assessment becomes a lien on the property,** collected with your property taxes. If you sell or refinance, the lender may require you to pay it off. If it goes unpaid, it is treated like unpaid property taxes, which can ultimately put the home at risk.
+- **If you plan to leave the home to family,** any remaining balance stays with the property.
+- **You have 3 business days to cancel** after signing, and the provider must go over the terms with you on a recorded phone call before approval.
+
+Because the payment rides on your tax bill, compare the total cost with regular financing before you choose PACE, and never let anyone rush you into signing. We'll walk you through both if PACE looks like a fit.
+
+## Option 6: Repair Now, Plan the Replacement
 
 If your assessment shows the roof has localized problems rather than widespread failure, a professional repair may buy you time to apply for a program or save up. The key word is "professional": a patch that hides the problem until the next heavy rain only pushes the cost onto your ceilings and walls.
 
@@ -147,7 +166,10 @@ A professional assessment. Age is one factor, but the condition of the underlaym
 Yes. All Phase offers flexible financing options for qualified homeowners. Use our [financing calculator](/easy-payments) to estimate payments.
 
 **What if I can't qualify for financing?**
-Ask about local housing repair programs, and ask your contractor whether a repair can safely buy you time while you apply.
+Ask about adding a co-signer, such as a family member who plans to inherit the home. You can also look at local housing repair programs, PACE financing in some cases, and whether a repair can safely buy you time while you apply.
+
+**What is PACE financing, and can it pay for a roof?**
+PACE lets you repay a qualifying improvement, including a roof replacement, through an assessment on your property tax bill. In Florida, the total can't exceed 20% of your home's just value, the yearly payment can't exceed 10% of your household income, and it isn't available with a reverse mortgage. It places a lien on the property, so compare it carefully with regular financing.
 
 **Is it smart to keep repairing an old roof?**
 For a few small problems, often yes. When problems are widespread, repeated repairs can add up past the cost of replacement. An honest assessment will tell you which applies.
@@ -172,4 +194,4 @@ Not being able to afford a roof right now doesn't mean you're out of options. St
 
 ---
 
-*Program details in this guide come from the My Safe Florida Home program's published rules, USDA Rural Development, the City of Fort Lauderdale, Broward County and Palm Beach County as of November 2026. Programs, funding rounds and limits change often; confirm current details with the agency before you apply.*
+*Program details in this guide come from the My Safe Florida Home program's published rules, USDA Rural Development, the City of Fort Lauderdale, Broward County and Palm Beach County as of November 2026. PACE rules come from section 163.081, Florida Statutes, and provider websites. Programs, funding rounds and limits change often; confirm current details with the agency before you apply.*

@@ -21,6 +21,7 @@ export default function SeniorRoofDiscountPage() {
     { q: 'Do I need a coupon or a promo code?', a: 'No. The discount is applied automatically for homeowners 65 and older. Mentioning it when you call helps us make sure it shows on your proposal.' },
     { q: 'How do you confirm my age?', a: 'From the photo ID you already show us at signing. Every permit application needs a notarized signature, so we ask for ID from every customer anyway.' },
     { q: 'Can I combine the senior discount with financing?', a: 'Yes. The senior discount works together with our financing options for qualified homeowners.' },
+    { q: 'Can a family member co-sign the financing?', a: 'Yes. A co-signer is an option with our financing, and it often makes sense when a son or daughter plans to inherit the home and wants to help keep it protected.' },
     { q: 'Can I use it on a My Safe Florida Home project?', a: 'Yes. The senior discount can be combined with a My Safe Florida Home project.' },
     { q: 'Does the discount expire?', a: 'It does not expire at the end of the month, and there is no deadline to sign. We will never pressure you to decide on the spot.' },
     { q: 'Is there a free roof replacement program for seniors?', a: 'We are not aware of any program that gives every senior a free roof. Some programs offer grants or low-interest loans to homeowners who meet age and income rules. Check any "free roof" ad against an official .gov source before you share personal information.' },
